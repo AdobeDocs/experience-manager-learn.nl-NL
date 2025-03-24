@@ -1,8 +1,8 @@
 ---
-title: Asset compute-workers integreren met AEM verwerkingsprofielen
-description: AEM as a Cloud Service integreert met Asset compute werknemers die via AEM Assets Processing Profiles naar Adobe I/O Runtime worden gestuurd. Verwerkingsprofielen worden geconfigureerd in de service Auteur om specifieke elementen te verwerken met behulp van aangepaste workers en de bestanden die door de workers worden gegenereerd, op te slaan als elementuitvoeringen.
+title: Asset Compute-workers integreren met AEM-verwerkingsprofielen
+description: AEM as a Cloud Service kan worden geïntegreerd met Asset Compute-workers die via AEM Assets-verwerkingsprofielen naar Adobe I/O Runtime worden gestuurd. Verwerkingsprofielen worden geconfigureerd in de service Auteur om specifieke elementen te verwerken met behulp van aangepaste workers en de bestanden die door de workers worden gegenereerd, op te slaan als elementuitvoeringen.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6287
 thumbnail: KT-6287.jpg
@@ -11,16 +11,16 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 1b398c8c-6b4e-4046-b61e-b44c45f973ef
 duration: 126
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
 
 ---
 
-# Integreren met AEM verwerkingsprofielen
+# Integreren met AEM-verwerkingsprofielen
 
-Workers van Asset computen kunnen alleen aangepaste uitvoeringen genereren in AEM as a Cloud Service als ze zijn geregistreerd in de AEM as a Cloud Service Author-service via het verwerken van profielen. Op alle elementen die onder dat verwerkingsprofiel vallen, wordt de worker geactiveerd tijdens het uploaden of opnieuw verwerken en wordt de aangepaste uitvoering gegenereerd en beschikbaar gesteld via de uitvoeringen van het element.
+Asset Compute-workers kunnen alleen aangepaste uitvoeringen genereren in AEM as a Cloud Service als ze zijn geregistreerd in de AEM as a Cloud Service Author-service via het verwerken van profielen. Op alle elementen die onder dat verwerkingsprofiel vallen, wordt de worker geactiveerd tijdens het uploaden of opnieuw verwerken en wordt de aangepaste uitvoering gegenereerd en beschikbaar gesteld via de uitvoeringen van het element.
 
 ## Een verwerkingsprofiel definiëren
 
@@ -28,7 +28,7 @@ Maak eerst een nieuw verwerkingsprofiel dat de worker aanroept met de configuree
 
 ![ Profiel van de Verwerking ](./assets/processing-profiles/new-processing-profile.png)
 
-1. Login aan de dienst van de Auteur van AEM as a Cloud Service als __AEM Beheerder__. Aangezien dit een leerprogramma is adviseren wij het gebruiken van een ontwikkelomgeving of een milieu in een Sandbox.
+1. Login aan de dienst van de Auteur van AEM as a Cloud Service als __Beheerder van AEM__. Aangezien dit een leerprogramma is adviseren wij het gebruiken van een ontwikkelomgeving of een milieu in een Sandbox.
 1. Navigeer aan __Hulpmiddelen > Assets > de Profielen van de Verwerking__
 1. Tik __creeer__ knoop
 1. Geef het verwerkingsprofiel een naam, `WKND Asset Renditions`
@@ -51,7 +51,7 @@ Maak eerst een nieuw verwerkingsprofiel dat de worker aanroept met de configuree
       + Tik __voeg Parameter__ toe
          + Sleutel: `brightness`
          + Waarde: `0.10`
-      + Deze sleutel-/waardeparen worden doorgegeven aan de Asset compute-worker en zijn beschikbaar via het JavaScript-object `rendition.instructions` .
+      + Deze sleutel-/waardeparen worden doorgegeven aan de Asset Compute-worker en zijn beschikbaar via het JavaScript-object `rendition.instructions` .
    + __MIME Types__
       + __omvat:__ `image/jpeg`, `image/png`, `image/gif`, `image/bmp`, `image/tiff`
          + Deze MIME-typen zijn de enige typen van de npm-modules van de worker. Deze lijst bevat limieten die worden verwerkt door de aangepaste worker.
@@ -75,11 +75,11 @@ Maak eerst een nieuw verwerkingsprofiel dat de worker aanroept met de configuree
 
 ## Voltooid!
 
-Gefeliciteerd! U hebt het [ leerprogramma ](../overview.md) geëindigd op hoe te om de microdiensten van de Asset compute van AEM as a Cloud Service uit te breiden! U moet nu de mogelijkheid hebben om aangepaste Asset compute-workers voor gebruik door uw AEM as a Cloud Service Author-service in te stellen, te ontwikkelen, te testen, op te sporen en te implementeren.
+Gefeliciteerd! U hebt het [ leerprogramma ](../overview.md) geëindigd op hoe te om de microdiensten van AEM as a Cloud Service Asset Compute uit te breiden! U moet nu de mogelijkheid hebben om aangepaste Asset Compute-workers in te stellen, te ontwikkelen, te testen, te debuggen en te implementeren voor gebruik door uw AEM as a Cloud Service Author-service.
 
 ### Bekijk de volledige broncode van het project op Github
 
-Het definitieve project voor de Asset compute is beschikbaar op Github op:
+Het uiteindelijke Asset Compute-project is beschikbaar op Github op:
 
 + [ aem-guides-wknd-asset-compute ](https://github.com/adobe/aem-guides-wknd-asset-compute)
 

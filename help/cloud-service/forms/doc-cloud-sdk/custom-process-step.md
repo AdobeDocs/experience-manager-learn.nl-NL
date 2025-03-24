@@ -1,17 +1,17 @@
 ---
 title: Aangepaste processtap maken
-description: Kies een aangepaste processtap om woorden om te zetten, voeg bijlagen met behulp van Document Cloud uit naar PDF.
+description: Met de stap Aangepast proces kunt u woorden en bijlagen met Document Cloud naar PDF converteren.
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 thumbnail: 7837.jpg
 jira: KT-7837
 exl-id: 24a788bb-f0dc-4774-91ab-26fde2de098f
 duration: 55
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Hieronder volgt de volledige code van de stap voor aangepast proces waarmee de native bestanden worden geconverteerd en vervangen door de geconverteerde pdf&#39;s.
 Deze aangepaste stap zoekt naar alle bijlagen onder de mapnaam die als een procesargument in de workflow wordt opgegeven.
-Deze aangepaste processtap gebruikt de methoden van de aangepaste DocumentCloudSDKS-service om PDF te maken.
+Deze aangepaste processtap gebruikt de methoden van de aangepaste DocumentCloudSDKService om PDF te maken.
 
 
 ```java

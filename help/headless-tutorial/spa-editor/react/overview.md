@@ -1,7 +1,7 @@
 ---
 title: Aan de slag met de AEM SPA Editor en Reageren
 description: Maak uw eerste React Single Page Application (SPA) die in Adobe Experience Manager AEM met de WKND-SPA kan worden bewerkt. Leer hoe u een SPA maakt met het React JS-framework met AEM SPA Editor. Deze meerdelige tutorial doorloopt de implementatie van een React-toepassing voor een fictief lifestylemerk, de WKND. In de tutorial wordt het end-to-end maken van de SPA en de integratie met AEM besproken.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5912
 thumbnail: 5912-spa-react.jpg
 feature: SPA Editor
@@ -12,22 +12,22 @@ doc-type: Tutorial
 exl-id: 38802296-8988-4300-a04a-fcbbe98ac810
 last-substantial-update: 2022-08-25T00:00:00Z
 duration: 71
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 16%
 
 ---
 
-# Uw eerste SPA Reageren in AEM maken {#overview}
+# Uw eerste React SPA in AEM maken {#overview}
 
 {{edge-delivery-services}}
 
-Onthaal aan een meerdelige zelfstudie die voor ontwikkelaars wordt ontworpen nieuw aan de **SPA** eigenschap van de Redacteur in Adobe Experience Manager (AEM). In deze zelfstudie wordt de implementatie besproken van een React-toepassing voor een fictief levensstijlmerk, de WKND. De React app wordt ontwikkeld en ontworpen om met AEM SPA Redacteur worden opgesteld, die React componenten aan AEM componenten in kaart brengt. De voltooide SPA, die aan AEM worden opgesteld, kan dynamisch met traditionele in-line het uitgeven hulpmiddelen van AEM worden ontworpen.
+Onthaal aan een multi-part leerprogramma dat voor ontwikkelaars nieuw aan de **eigenschap van de Redacteur van het KUUROORD** in Adobe Experience Manager (AEM) wordt ontworpen. In deze zelfstudie wordt de implementatie besproken van een React-toepassing voor een fictief levensstijlmerk, de WKND. De React app wordt ontwikkeld en ontworpen om met de Redacteur van het KUUROORD van AEM worden opgesteld, die React componenten aan de componenten van AEM in kaart brengt. De voltooide SPA, die aan AEM wordt opgesteld, kan dynamisch worden ontworpen met traditionele in-line het uitgeven hulpmiddelen van AEM.
 
-![ Geïmplementeerde definitieve SPA ](assets/wknd-spa-implementation.png)
+![ Definitief Uitgevoerde SPA ](assets/wknd-spa-implementation.png)
 
-*WKND SPA Implementatie*
+*WKND de Implementatie van het KUUROORD*
 
 ## Info
 
@@ -37,7 +37,7 @@ Het leerprogramma wordt ontworpen om met **AEM as a Cloud Service** te werken en
 
 Al leerprogramma code kan op [ GitHub ](https://github.com/adobe/aem-guides-wknd-spa) worden gevonden.
 
-De [ recentste codebasis ](https://github.com/adobe/aem-guides-wknd-spa/releases) is beschikbaar als downloadbare AEM Pakketten.
+De [ recentste codebasis ](https://github.com/adobe/aem-guides-wknd-spa/releases) is beschikbaar als downloadbare Pakketten van AEM.
 
 ## Vereisten
 
@@ -67,4 +67,4 @@ Er is een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. De sch
 
 ## Volgende stappen {#next-steps}
 
-Waar wacht u op?! Begin het leerprogramma door aan [ te navigeren creeer het hoofdstuk van het Project ](create-project.md) en leer hoe te om een SPA Redacteur te produceren toegelaten project gebruikend het Archetype van het AEM Project.
+Waar wacht u op?! Begin het leerprogramma door aan [ te navigeren creeer het hoofdstuk van het Project ](create-project.md) en leer hoe te om een redacteur van het KUUROORD toegelaten project te produceren gebruikend het Archetype van het Project van AEM.

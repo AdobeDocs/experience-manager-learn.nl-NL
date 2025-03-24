@@ -1,16 +1,16 @@
 ---
-title: Zet PDF om in PDF/A.
+title: PDF converteren naar PDF/A.
 description: PDF/A-bestanden maken en valideren in Forms CA met de HTTP-eindpunten
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-10105
 exl-id: a4955104-8a87-4add-85c7-c3e3395f5f1a
 duration: 65
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # PDF/A-documenten maken en valideren
 
-PDF/A is een ISO-gestandaardiseerde versie van het Portable Document Format (PDF), die speciaal is ontworpen voor gebruik bij het archiveren en langdurig bewaren van elektronische documenten. PDF/A verschilt van PDF door functies die ongeschikt zijn voor langetermijnarchivering te verbieden, zoals lettertype-koppeling (in tegenstelling tot lettertype-insluiting) en codering.
+PDF/A is een ISO-gestandaardiseerde versie van het Portable Document Format (PDF), die speciaal is ontwikkeld voor gebruik bij het archiveren en langdurig bewaren van elektronische documenten. PDF/A verschilt van PDF door het verbieden van functies die ongeschikt zijn voor langetermijnarchivering, zoals lettertype-koppeling (in tegenstelling tot lettertype-insluiting) en codering.
 
-## Omzetten in PDF/A
+## Converteren naar PDF/A
 
 De volgende code is gebruikt om PDF om te zetten in PDF/A
 
@@ -95,7 +95,7 @@ public class PDFAUtilities {
 
 ## PDF/A valideren
 
-Met de volgende code wordt een bepaalde PDF voor een PDF/A-conformiteit gevalideerd.
+De volgende code wordt gebruikt om een bepaalde PDF for PDF/A-conformiteit te valideren.
 
 ```java
 public void validatePDFA(String postURL) {

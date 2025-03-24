@@ -1,8 +1,8 @@
 ---
 title: Widgets toevoegen aan Rich Text Editor (RTE)
-description: Leer hoe u widgets kunt toevoegen aan de Rich Text Editor (RTE) in de AEM Content Fragment Editor
+description: Leer hoe u widgets kunt toevoegen aan Rich Text Editor (RTE) in de AEM Content Fragment Editor
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 167a4b11-1202-4c7a-b022-f3f996348a4e
 duration: 476
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 0%
@@ -33,13 +33,13 @@ De widgets worden doorgaans gebruikt om de dynamische inhoud in te voegen die af
 
 Dit voorbeeld toont hoe te om een widget toe te voegen genoemd _Lijst van de Code van de Korting_ om, de adventure-specifieke de disconteringscode van WKND binnen een inhoud te vinden te selecteren en toe te voegen RTE. Deze kortingscodes kunnen worden beheerd in een extern systeem, zoals Order Management System (OMS), Product Information Management (PIM), een toepassing die op het thuisniveau wordt ontwikkeld of een Adobe AppBuilder-actie.
 
-Om dingen eenvoudig te houden, gebruikt dit voorbeeld het ](https://react-spectrum.adobe.com/react-spectrum/index.html) kader van het Spectrum van het Reageren van de Adobe [ om widget of dialoog UI en hard-gecodeerde WKND adventure naam, de gegevens van de kortingscode te ontwikkelen.
+Om dingen eenvoudig te houden, gebruikt dit voorbeeld [ Adobe React Spectrum ](https://react-spectrum.adobe.com/react-spectrum/index.html) kader om widget of dialoog UI en hard-gecodeerde WKND adventure naam, kortingscodegegevens te ontwikkelen.
 
 ## Extensiepunt
 
 Dit voorbeeld breidt zich tot uitbreidingspunt `rte` uit om een widget aan RTE in de Redacteur van het Fragment van de Inhoud toe te voegen.
 
-| AEM UI uitgebreid | Extensiepunt |
+| AEM-gebruikersinterface uitgebreid | Extensiepunt |
 | ------------------------ | --------------------- | 
 | [ de Redacteur van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [ Rich Text Editor Widgets ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
 
@@ -51,7 +51,7 @@ De auteurs van de inhoud WKND kunnen, huidige Adventure-specifieke kortingscode 
 
 ### Registratie van extensies
 
-`ExtensionRegistration.js` , toegewezen aan de route index.html, is het ingangspunt voor de AEM uitbreiding en bepaalt:
+`ExtensionRegistration.js` , toegewezen aan de route index.html, is het ingangspunt voor de uitbreiding van AEM en bepaalt:
 
 + De widgetdefinitie in `getWidgets()` functie met `id, label and url` attributen.
 + De waarde van het kenmerk `url` , een relatief URL-pad ( `/index.html#/discountCodes` ) om de interface van het dialoogvenster te laden.
@@ -116,13 +116,13 @@ Voeg in de hoofdcomponent React `App.js` de `discountCodes` -route toe om de geb
 
 ### Component `DiscountCodes` React maken{#create-widget-react-component}
 
-De widget of de dialoog UI wordt gecreeerd gebruikend het [ React Spectrum van de Adobe ](https://react-spectrum.adobe.com/react-spectrum/index.html) kader. De componentcode `DiscountCodes` ziet er als volgt uit:
+De widget of de dialoog UI wordt gecreeerd gebruikend het [ React Spectrum van Adobe ](https://react-spectrum.adobe.com/react-spectrum/index.html) kader. De componentcode `DiscountCodes` ziet er als volgt uit:
 
 + UI wordt teruggegeven gebruikend React de componenten van het Spectrum, als [ ComboBox ](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ ButtonGroup ](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [ Knoop ](https://react-spectrum.adobe.com/react-spectrum/Button.html)
-+ De array `adventureDiscountCodes` heeft een hardcoded mapping van adventure-naam en kortingscode. In echt scenario, kunnen deze gegevens van de actie van Adobe AppBuilder of externe systemen zoals PIM, OMS of huisgeteelde of op wolkenleverancier-gebaseerde API gateway worden teruggewonnen.
-+ `guestConnection` wordt geïnitialiseerd gebruikend `useEffect` [ Reageer haak ](https://react.dev/reference/react/useEffect) en geleid als componentenstaat. Het wordt gebruikt om met de AEM gastheer te communiceren.
++ De array `adventureDiscountCodes` heeft een hardcoded mapping van adventure-naam en kortingscode. In werkelijkheid kunnen deze gegevens worden opgehaald uit een Adobe AppBuilder-actie of externe systemen zoals PIM, OMS of home grow of API-gateway op basis van een cloud provider.
++ `guestConnection` wordt geïnitialiseerd gebruikend `useEffect` [ Reageer haak ](https://react.dev/reference/react/useEffect) en geleid als componentenstaat. Deze wordt gebruikt om te communiceren met de AEM-host.
 + De functie `handleDiscountCodeChange` krijgt de kortingscode voor de geselecteerde avontuurnaam en werkt de staatsvariabele bij.
-+ De functie `addDiscountCode` die `guestConnection` gebruikt, biedt RTE-instructie die moet worden uitgevoerd. In dit geval moeten `insertContent` instructiecode en HTML codefragment van de werkelijke disconteringscode worden ingevoegd in de RTE.
++ De functie `addDiscountCode` die `guestConnection` gebruikt, biedt RTE-instructie die moet worden uitgevoerd. In dit geval moeten `insertContent` instructie en HTML-codefragment met de werkelijke kortingscode die in de RTE moet worden ingevoegd.
 
 `src/aem-cf-editor-1/web-src/src/components/DiscountCodes.js`
 

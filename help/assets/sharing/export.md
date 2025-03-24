@@ -2,7 +2,7 @@
 title: Elementen exporteren
 description: Leer hoe u elementen bulksgewijs kunt exporteren en downloaden naar uw lokale computer.
 feature: Asset Management
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 role: Developer
 level: Experienced
@@ -12,7 +12,7 @@ jira: KT-15313
 thumbnail: KT-15313.jpeg
 exl-id: d04c3316-6f8f-4fd1-9df1-3fe09d44f735
 duration: 256
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 # Elementen exporteren
 
-Leer hoe u elementen naar uw lokale computer exporteert met een aanpasbaar Node.js-script. Dit de uitvoermanuscript verstrekt een voorbeeld van hoe te om activa van AEM programmatically te downloaden gebruikend [ HTTP APIs van AEM Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), specifiek het concentreren op de originele vertoningen om de hoogste kwaliteit te verzekeren. Deze is ontworpen om de mapstructuur van AEM Assets op uw lokale station te repliceren, zodat u eenvoudig back-ups kunt maken van middelen of deze kunt migreren.
+Leer hoe u elementen naar uw lokale computer exporteert met een aanpasbaar Node.js-script. Dit de uitvoermanuscript verstrekt een voorbeeld van hoe te om activa van AEM programmatically te downloaden gebruikend [ AEM Assets HTTP APIs ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), specifiek het concentreren op de originele vertoningen om de hoogste kwaliteit te verzekeren. Deze is ontworpen om de mapstructuur van AEM Assets op uw lokale station te repliceren, zodat u eenvoudig back-ups kunt maken van middelen of deze kunt migreren.
 
-Het script downloadt alleen de oorspronkelijke uitvoeringen van het element, zonder de bijbehorende metagegevens, tenzij die metagegevens als XMP in het element zijn ingesloten. Dit betekent dat beschrijvende informatie, categorieën of tags die zijn opgeslagen in AEM maar niet zijn geïntegreerd in de elementbestanden, niet zijn opgenomen in de download. Andere vertoningen kunnen ook worden gedownload door het manuscript te wijzigen om hen te omvatten. Zorg ervoor dat u voldoende ruimte hebt om de geëxporteerde elementen op te slaan.
+Het script downloadt alleen de oorspronkelijke uitvoeringen van het element, zonder de bijbehorende metagegevens, tenzij die metagegevens als XMP in het element zijn ingesloten. Dit betekent dat beschrijvende informatie, categorieën of tags die in AEM zijn opgeslagen maar niet in de elementbestanden zijn geïntegreerd, niet in de download zijn opgenomen. Andere vertoningen kunnen ook worden gedownload door het manuscript te wijzigen om hen te omvatten. Zorg ervoor dat u voldoende ruimte hebt om de geëxporteerde elementen op te slaan.
 
-Het script wordt doorgaans uitgevoerd tegen AEM Auteur, maar kan ook worden uitgevoerd tegen AEM Publish, zolang de eindpunten van de HTTP-API van AEM Assets en elementenuitvoeringen toegankelijk zijn via Dispatcher.
+Het script wordt doorgaans uitgevoerd tegen AEM Author, maar kan ook worden uitgevoerd tegen AEM Publish, zolang de eindpunten en elementenvertoningen van de AEM Assets HTTP API toegankelijk zijn via Dispatcher.
 
-Voordat u het script uitvoert, moet u het configureren met de URL van de AEM instantie, de gebruikersgegevens (toegangstoken) en het pad naar de map die u wilt exporteren.
+Voordat u het script uitvoert, moet u het configureren met de URL van de AEM-instantie, de gebruikersgegevens (toegangstoken) en het pad naar de map die u wilt exporteren.
 
 ## Script exporteren
 
@@ -294,6 +294,6 @@ Downloaded asset: exported-assets/wknd-shared/en/magazine/western-australia/adob
 Download AEM assets: 24.770s
 ```
 
-De geëxporteerde elementen bevinden zich in de lokale map die is opgegeven in de configuratie `LOCAL_DOWNLOAD_FOLDER` . De mappenstructuur weerspiegelt de AEM Assets-mappenstructuur, waarbij de elementen naar de juiste submappen worden gedownload. Deze dossiers kunnen aan [ gesteunde leveranciers van de wolkenopslag ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view), voor [ bulkinvoer ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/bulk-import) in andere AEM instanties, of voor reservedoeleinden worden geupload.
+De geëxporteerde elementen bevinden zich in de lokale map die is opgegeven in de configuratie `LOCAL_DOWNLOAD_FOLDER` . De mappenstructuur weerspiegelt de AEM Assets-mappenstructuur, waarbij de elementen naar de juiste submappen worden gedownload. Deze dossiers kunnen aan [ gesteunde leveranciers van de wolkenopslag ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view), voor [ bulkinvoer ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/bulk-import) in andere instanties van AEM, of voor reservedoeleinden worden geupload.
 
 ![ Uitgevoerde activa ](./assets/export/exported-assets.png)

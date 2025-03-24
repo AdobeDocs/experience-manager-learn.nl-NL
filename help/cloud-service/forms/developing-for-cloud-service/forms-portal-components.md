@@ -4,13 +4,13 @@ description: Een AEM Forms Portal maken met behulp van kerncomponenten
 solution: Experience Manager
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Core Components
 jira: KT-10373
 exl-id: ab01573a-e95f-4041-8ccf-16046d723aba
 duration: 78
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -31,7 +31,7 @@ AEM Forms biedt de volgende poortcomponenten uit de verpakking:
 
 Start IntelliJ en open het BankingApplication-project dat in de [ vroegere stap is gemaakt.](./getting-started.md) De ui.apps->src->main->content->jcr_root->apps.bankingapplication->componenten uitbreiden
 
-Als u een kerncomponent (inclusief de onderdelen van de out-of-the-box portal) wilt gebruiken op een Adobe Experience Manager-site (AEM), moet u een proxycomponent maken en deze inschakelen voor uw site.
+Als u een kerncomponent (inclusief de componenten van de out-of-the-box portal) wilt gebruiken op een Adobe Experience Manager-site (AEM), moet u een proxycomponent maken en deze inschakelen voor uw site.
 De nieuwe proxycomponent moet naar de uitpunt van de box form component verwijzen, zodat deze alles van de component overerft. Dit wordt gedaan door resourceSuperType in content.xml van de volmachtscomponent te veranderen. In content.xml geven we ook de titel en de componentgroep op.
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ Vervang de inhoud in de `.content.xml` door de volgende XML:
           componentGroup="BankingApplication - Content"/>
 ```
 
-Zodra uw project wordt opgesteld zou u deze componenten in uw AEM pagina moeten kunnen gebruiken om het portaal van Forms tot stand te brengen.
+Nadat uw project is geïmplementeerd, kunt u deze componenten op uw AEM-pagina gebruiken om een Forms-portal te maken.
 
 ## Volgende stappen
 

@@ -1,7 +1,7 @@
 ---
 title: Angular-app filteren
 description: Een eenvoudige Angular-app die WKND-avonturen filtert die zijn gemodelleerd met Content Fragments.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
@@ -13,7 +13,7 @@ hide: true
 hidefromtoc: true
 exl-id: c238dd83-65d3-4b04-b90e-19ed250b8e36
 duration: 26
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 # Angular-app filteren
 
-Onderzoek AEM de capaciteit van GraphQL APIs zonder hoofd om gegevens te filtreren gebruikend app van de a [ Angular ](https://angular.io/). Deze Angular-app maakt een lijst met WKND-avonturen die kunnen worden gefilterd op Type activiteit.
+Onderzoek AEM Headless GraphQL APIs capaciteit om gegevens te filtreren gebruikend a [ Angular ](https://angular.io/) app. Deze Angular-app maakt een lijst met WKND-avonturen die kunnen worden gefilterd op Type activiteit.
 
-Deze code toont het gebruiken van Adobe [ AEM Koploze Cliënt voor JavaScript ](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) aan om voortgeduurde vragen van GraphQL van Angular aan te halen. Deze app gebruikt de `wknd-shared/adventures-all` aanhoudend vraag om alle avonturen te verzamelen, en een lijst van beschikbare Types van Activiteit af te leiden. Wanneer een gebruiker een Type van Activiteit selecteert, wordt het geselecteerde type overgegaan tot de `wknd-shared/adventures-by-activity` persisted vraag en wint de avontuurdetails voor slechts die avonturen van het gespecificeerde Type van Activiteit terug.
+Deze code toont het gebruiken van de Hoofdloze Cliënt van Adobe [ AEM voor JavaScript ](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) aan om voortgeduurde vragen van GraphQL van Angular aan te halen. Deze app gebruikt de `wknd-shared/adventures-all` aanhoudend vraag om alle avonturen te verzamelen, en een lijst van beschikbare Types van Activiteit af te leiden. Wanneer een gebruiker een Type van Activiteit selecteert, wordt het geselecteerde type overgegaan tot de `wknd-shared/adventures-by-activity` persisted vraag en wint de avontuurdetails voor slechts die avonturen van het gespecificeerde Type van Activiteit terug.
 
 Deze code:
 
-+ Maakt verbinding met een AEM Publish-service en vereist geen verificatie
++ Maakt verbinding met een AEM-publicatieservice en vereist geen verificatie
 + Gebruikt de aanhoudend vragen van WKND: `wknd-shared/adventures-all` en `wknd-shared/adventures-by-activity`

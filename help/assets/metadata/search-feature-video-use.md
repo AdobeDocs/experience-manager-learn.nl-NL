@@ -1,10 +1,10 @@
 ---
 title: Zoeken in AEM Assets gebruiken
-description: In deze video's bekijken we een aantal verbeteringen in de zoekfunctie van Assets die in AEM zijn geïntroduceerd. Auteurs kunnen bepaalde elementen in zoekresultaten met trefwoorden verhogen door de desbetreffende metagegevenseigenschappen bij te werken. We bekijken ook enkele geavanceerde configuraties voor Assets OmniSearch voorspellingen.
-version: 6.4, 6.5
+description: In deze video's bekijken we een aantal verbeteringen aan de zoekactie van Assets die in AEM is geïntroduceerd. Auteurs kunnen bepaalde elementen in zoekresultaten met trefwoorden verhogen door de desbetreffende metagegevenseigenschappen bij te werken. We bekijken ook enkele geavanceerde configuraties voor Assets OmniSearch voorspellingen.
+version: Experience Manager 6.4, Experience Manager 6.5
 doc-type: Feature Video
 duration: 373
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Zoeken in AEM Assets gebruiken{#using-search-in-aem-assets}
 
-In deze video&#39;s bekijken we een aantal verbeteringen in de zoekfunctie van Assets die in AEM zijn geïntroduceerd. Auteurs kunnen bepaalde elementen in zoekresultaten met trefwoorden verhogen door de desbetreffende metagegevenseigenschappen bij te werken. We bekijken ook enkele geavanceerde configuraties voor Assets OmniSearch voorspellingen.
+In deze video&#39;s bekijken we een aantal verbeteringen aan de zoekactie van Assets die in AEM is geïntroduceerd. Auteurs kunnen bepaalde elementen in zoekresultaten met trefwoorden verhogen door de desbetreffende metagegevenseigenschappen bij te werken. We bekijken ook enkele geavanceerde configuraties voor Assets OmniSearch voorspellingen.
 
 ## Zoeken in Books met metagegevens van element {#search-boost-asset}
 

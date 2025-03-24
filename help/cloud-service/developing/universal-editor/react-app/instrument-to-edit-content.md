@@ -1,7 +1,7 @@
 ---
 title: Instrument Reageren app om inhoud te bewerken met Universal Editor
 description: Leer hoe u React-app kunt gebruiken om de inhoud te bewerken met de Universal Editor.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developer Tools, Headless
 topic: Development, Content Management
 role: Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 2a25cd44-cbd1-465e-ae3f-d3876e915114
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1606'
 ht-degree: 0%
@@ -129,7 +129,7 @@ export default App;
 
 ## Metagegevens toevoegen - lokale Universal Editor-serviceconfiguratie
 
-In plaats van de Adobe-ontvangen Universele dienst van de Redacteur, wordt een lokale kopie van de Universele dienst van de Redacteur gebruikt voor lokale ontwikkeling. De lokale dienst bindt de Universele Redacteur en AEM SDK, zodat voegen de lokale Universele dienst meta-gegevens van de Redacteur aan de Reactie app van de Teams WKND toe.
+In plaats van de door Adobe gehoste Universal Editor-service wordt een lokale kopie van de Universal Editor-service gebruikt voor lokale ontwikkeling. De lokale service bindt de Universal Editor en de AEM SDK, dus laten we de lokale metagegevens van de Universal Editor-service toevoegen aan de React-app voor WKND-teams.
 
 Deze configuratie-instellingen worden ook opgeslagen als `<meta>` -tags in het HTML-bestand. De syntaxis voor de lokale Universal Editor-metagegevens is als volgt:
 
@@ -178,7 +178,7 @@ export default App;
 
 ## Instrueer de React-componenten
 
-Om de inhoud van de Teams uit te geven WKND Reageer app zoals _teamtitel en teambeschrijving_, moet u de componenten van het Antwoord van instrumenten voorzien. De instrumentatie betekent het toevoegen van relevante gegevensattributen (`data-aue-*`) aan de elementen van de HTML die u editable gebruikend de Universele Redacteur wilt maken. Voor meer informatie over gegevensattributen, zie [ Attributen en Types ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types).
+Om de inhoud van de Teams uit te geven WKND Reageer app zoals _teamtitel en teambeschrijving_, moet u de componenten van het Antwoord van instrumenten voorzien. De instrumentatie betekent het toevoegen van relevante gegevensattributen (`data-aue-*`) aan de elementen van HTML die u editable wilt maken gebruikend de Universele Redacteur. Voor meer informatie over gegevensattributen, zie [ Attributen en Types ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types).
 
 ### Bewerkbare elementen definiëren
 
@@ -212,17 +212,17 @@ Instrueer de component `Teams` Reageren om de teamtitel en beschrijving bewerkba
 
    ![ Universele Redacteur - WKND de Titel van Teams en Desc editable ](./assets/universal-editor-wknd-teams-title-desc-editable.png)
 
-1. Als u de teamtitel of beschrijving probeert te bewerken via inline bewerken of de eigenschappencontrole, wordt een spinner weergegeven die wordt geladen, maar kunt u de inhoud niet bewerken. Omdat de Universele Redacteur zich niet van de AEM middeldetails voor het laden van en het bewaren van de inhoud bewust is.
+1. Als u de teamtitel of beschrijving probeert te bewerken via inline bewerken of de eigenschappencontrole, wordt een spinner weergegeven die wordt geladen, maar kunt u de inhoud niet bewerken. Omdat de Universal Editor zich niet bewust is van de AEM-brongegevens voor het laden en opslaan van de inhoud.
 
    ![ Universele Redacteur - het laden van de Titel en van het Bureau van de Teams van WKND ](./assets/universal-editor-wknd-teams-title-desc-editable-loading.png)
 
-Samengevat, merken de bovengenoemde veranderingen de teamtitel en beschrijvingselementen zoals editable in de Universele Redacteur. Nochtans, **kunt u niet (via gealigneerde of eigenschappen spoorstaaf) uitgeven en de veranderingen nog opslaan**, voor dat moet u de AEM middeldetails toevoegen gebruikend het `data-aue-resource` attribuut. Laten we dat in de volgende stap doen.
+Samengevat, merken de bovengenoemde veranderingen de teamtitel en beschrijvingselementen zoals editable in de Universele Redacteur. Nochtans, **kunt u niet (via gealigneerde of eigenschappen spoorstaaf) uitgeven en de veranderingen nog opslaan**, voor dat moet u de het middeldetails van AEM toevoegen gebruikend het `data-aue-resource` attribuut. Laten we dat in de volgende stap doen.
 
-### Brondetails AEM definiëren
+### AEM-brongegevens definiëren
 
-Als u de bewerkte inhoud wilt opslaan in AEM en ook als u de inhoud in de eigenschappenrails wilt laden, moet u de AEM-brongegevens opgeven voor de Universal Editor.
+Als u de bewerkte inhoud wilt opslaan naar AEM en ook als u de inhoud in de eigenschappenrails wilt laden, moet u de AEM-brongegevens opgeven voor de Universal Editor.
 
-In dit geval, is het AEM middel de weg van het Fragment van de Inhoud van het Team, zodat voegen de middeldetails aan de `Teams` component van het Reageren op het hoogste niveau `<div>` element.
+In dit geval is de AEM-bron het pad van het Team Content Fragment, dus laten we de brondetails toevoegen aan de `Teams` React-component op het hoogste niveau `<div>` -element.
 
 1. Werk het `src/components/Teams.js` -bestand bij om de kenmerken `data-aue-resource` , `data-aue-type` en `data-aue-label` toe te voegen aan het element op hoofdniveau `<div>` .
 
@@ -250,13 +250,13 @@ In dit geval, is het AEM middel de weg van het Fragment van de Inhoud van het Te
    export default Teams;
    ```
 
-   De waarde van het `data-aue-resource` attribuut is de AEM middelweg van het Fragment van de Inhoud van het Team. Het voorvoegsel `urn:aemconnection:` gebruikt de korte naam van de inhoudsbron die is gedefinieerd in de verbindingsmetagegevens.
+   De waarde van het attribuut `data-aue-resource` is de het middelweg van AEM van het Fragment van de Inhoud van het Team. Het voorvoegsel `urn:aemconnection:` gebruikt de korte naam van de inhoudsbron die is gedefinieerd in de verbindingsmetagegevens.
 
-1. Vernieuw de pagina Universal Editor in de browser die de React-app voor WKND-teams laadt. U kunt nu zien dat het top-level element van het Team editable is maar de eigenschappen spoorstaaf laadt nog niet de inhoud. Op het netwerktabblad van de browser ziet u de fout 401 Niet-geautoriseerde voor de `details` -aanvraag waarmee de inhoud wordt geladen. Het probeert het IMS-token te gebruiken voor verificatie, maar de lokale AEM SDK ondersteunt IMS-verificatie niet.
+1. Vernieuw de pagina Universal Editor in de browser die de React-app voor WKND-teams laadt. U kunt nu zien dat het top-level element van het Team editable is maar de eigenschappen spoorstaaf laadt nog niet de inhoud. Op het netwerktabblad van de browser ziet u de fout 401 Niet-geautoriseerde voor de `details` -aanvraag waarmee de inhoud wordt geladen. De toepassing probeert het IMS-token te gebruiken voor verificatie, maar de lokale AEM SDK ondersteunt IMS-verificatie niet.
 
    ![ Universele Redacteur - WKND Team editable van Teams ](./assets/universal-editor-wknd-teams-team-editable.png)
 
-1. Om de 401 Onbevoegde fout te bevestigen, moet u de lokale AEM SDK authentificatiedetails aan de Universele Redacteur verstrekken gebruikend de **kopballen van de Authentificatie** optie in de Universele Redacteur. Als lokale AEM-SDK stelt u de waarde in op `Basic YWRtaW46YWRtaW4=` voor `admin:admin` -referenties.
+1. Om de 401 onbevoegde fout te bevestigen, moet u de lokale de authentificatiedetails van AEM SDK aan de Universele Redacteur verstrekken gebruikend de **kopballen van de Authentificatie** optie in de Universele Redacteur. Als lokale AEM SDK stelt u de waarde in op `Basic YWRtaW46YWRtaW4=` for `admin:admin` credentials.
 
    ![ Universele Redacteur - voeg de Kopballen van de Authentificatie ](./assets/universal-editor-wknd-teams-team-editable-auth.png) toe
 
@@ -266,9 +266,9 @@ In dit geval, is het AEM middel de weg van het Fragment van de Inhoud van het Te
 
 #### Onder de kap
 
-De eigenschappen per spoor laden de inhoud van de AEM bron met behulp van de lokale Universal Editor-service. Gebruikend het netwerklusje van browser, kunt u het verzoek van de POST aan de lokale Universele dienst van de Redacteur (`https://localhost:8001/details`) zien om de inhoud te laden.
+De eigenschappen per spoor laden de inhoud uit de AEM-bron met behulp van de lokale Universal Editor-service. Gebruikend het netwerklusje van browser, kunt u het POST- verzoek aan de lokale Universele dienst van de Redacteur (`https://localhost:8001/details`) zien om de inhoud te laden.
 
-Wanneer u de inhoud bewerkt met inline bewerken of eigenschappenrails, worden de wijzigingen met de lokale Universal Editor-service weer opgeslagen in de AEM. Met het netwerktabblad van de browser kunt u de aanvraag van de POST voor het opslaan van de inhoud bekijken bij de lokale Universal Editor-service ( `https://localhost:8001/update` of `https://localhost:8001/patch` ).
+Wanneer u de inhoud bewerkt met inline bewerken of eigenschappenrails, worden de wijzigingen weer opgeslagen in de AEM-bron met behulp van de lokale Universal Editor-service. Met het netwerktabblad van de browser kunt u de POST-aanvraag naar de lokale Universal Editor-service (`https://localhost:8001/update` of `https://localhost:8001/patch` ) bekijken om de inhoud op te slaan.
 
 ![ Universele Redacteur - WKND Team editable van Teams ](./assets/universal-editor-under-the-hood-request.png)
 
@@ -311,7 +311,7 @@ Laten we, net als hierboven, de relevante `data-aue-*` -kenmerken toevoegen aan 
    export default Teams;
    ```
 
-   De waarde van het kenmerk `data-aue-type` is `component` omdat de teamleden worden opgeslagen als `Person` Inhoudsfragmenten in AEM en u kunt hiermee de beweegbare/verwijderbare delen van de inhoud aangeven.
+   De waarde van het kenmerk `data-aue-type` is `component` omdat de teamleden worden opgeslagen als `Person` Inhoudsfragmenten in AEM en helpt bij het aangeven van de beweegbare/delbare delen van de inhoud.
 
 1. Vernieuw de pagina Universal Editor in de browser die de React-app voor WKND-teams laadt. U kunt nu zien dat de teamleden bewerkbaar zijn met de eigenschappen rail.
 
@@ -325,7 +325,7 @@ Zoals hierboven, worden de inhoudsherwinning en het bewaren gedaan door de lokal
 
 Tot nu toe hebt u de bestaande inhoud bewerkbaar gemaakt, maar wat als u nieuwe inhoud wilt toevoegen? Laten wij de capaciteit toevoegen om teamleden aan het team toe te voegen of te schrappen WKND gebruikend de Universele Redacteur. De auteurs van de inhoud hoeven dus niet naar de AEM te gaan om teamleden toe te voegen of te verwijderen.
 
-Nochtans, een snelle rechthoek, worden de leden van het Team WKND opgeslagen als `Person` Fragments van de Inhoud in AEM en met het Fragment van de Inhoud van het Team gebruikend het `teamMembers` bezit geassocieerd. Om de modeldefinitie in AEM bezoek [ mijn-project ](http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf/my-project) te herzien.
+Nochtans, snel worden de leden van het Team WKND opgeslagen als `Person` Fragments van de Inhoud in AEM en met het Fragment van de Inhoud van het Team geassocieerd gebruikend het `teamMembers` bezit. Om de modeldefinitie in AEM te herzien bezoek [ my-project ](http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf/my-project).
 
 1. Maak eerst het componentdefinitiebestand `/public/static/component-definition.json` . Dit bestand bevat de componentdefinitie voor het `Person` Content Fragment. Met de insteekmodule `aem/cf` kunt u inhoudsfragmenten invoegen op basis van een model en een sjabloon met de standaardwaarden die u wilt toepassen.
 
@@ -413,7 +413,7 @@ Nochtans, een snelle rechthoek, worden de leden van het Team WKND opgeslagen als
 
 #### Onder de kap
 
-De inhoud voegt en schrapt verrichtingen toe worden gedaan door de lokale Universele dienst van de Redacteur. De POST van `/add` of `/remove` met een gedetailleerde lading wordt gemaakt aan de lokale Universele dienst van de Redacteur voor het toevoegen van of het schrappen van de inhoud aan de AEM.
+De inhoud voegt en schrapt verrichtingen toe worden gedaan door de lokale Universele dienst van de Redacteur. De POST-aanvraag bij `/add` of `/remove` met een gedetailleerde lading wordt uitgevoerd naar de lokale Universal Editor-service voor het toevoegen of verwijderen van inhoud aan de AEM.
 
 ## Oplossingsbestanden
 

@@ -1,7 +1,7 @@
 ---
 title: Aan de slag met de AEM SPA Editor en Angular
-description: Maak uw eerste Angular Single Page Application (SPA) die in Adobe Experience Manager kan worden bewerkt, AEM met de WKND-SPA.
-version: Cloud Service
+description: Maak uw eerste Angular Single Page Application (SPA) die in Adobe Experience Manager en AEM met de WKND SPA kan worden bewerkt.
+version: Experience Manager as a Cloud Service
 jira: KT-5913
 thumbnail: 5913-spa-angular.jpg
 feature: SPA Editor
@@ -11,31 +11,31 @@ level: Beginner
 doc-type: Tutorial
 exl-id: f2cf4063-0b08-4b4f-91e6-70e5a148f931
 duration: 123
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
 
 ---
 
-# Uw eerste Angular SPA in AEM maken {#introduction}
+# Maak je eerste Angular SPA in AEM {#introduction}
 
 {{edge-delivery-services}}
 
-Onthaal aan een meerdelige zelfstudie die voor ontwikkelaars wordt ontworpen nieuw aan de **SPA** eigenschap van de Redacteur in Adobe Experience Manager (AEM). In deze zelfstudie wordt de implementatie besproken van een Angular-aanvraag voor een fictieve levensstijl, de WKND. De Angular-app is ontwikkeld en ontworpen voor implementatie met AEM SPA Editor, die Angular-componenten aan AEM componenten toewijst. De voltooide SPA, die aan AEM worden opgesteld, kan dynamisch met traditionele in-line het uitgeven hulpmiddelen van AEM worden ontworpen.
+Onthaal aan een multi-part leerprogramma dat voor ontwikkelaars nieuw aan de **eigenschap van de Redacteur van het KUUROORD** in Adobe Experience Manager (AEM) wordt ontworpen. In deze zelfstudie wordt de implementatie besproken van een Angular-toepassing voor een fictief levensstijlmerk, de WKND. De Angular-app is ontwikkeld en ontworpen voor implementatie met de AEM SPA Editor, die Angular-componenten toewijst aan AEM-componenten. De voltooide SPA, die aan AEM wordt opgesteld, kan dynamisch worden ontworpen met traditionele in-line het uitgeven hulpmiddelen van AEM.
 
-![ Geïmplementeerde definitieve SPA ](assets/wknd-spa-implementation.png)
+![ Definitief Uitgevoerde SPA ](assets/wknd-spa-implementation.png)
 
-*WKND SPA Implementatie*
+*WKND de Implementatie van het KUUROORD*
 
 ## Info
 
-Het doel voor deze meerdelige zelfstudie is om een ontwikkelaar te leren hoe te om een toepassing van de Angular uit te voeren om met de eigenschap van de SPARedacteur van AEM te werken. In een real-world scenario worden de ontwikkelingsactiviteiten onderverdeeld door persona, vaak het impliceren van de ontwikkelaar van het Voorste Eind van a **** en a **Achterste ontwikkelaar van het Eind**. Wij geloven het voor om het even welke ontwikkelaar die bij een project van de SPA van de AEM betrokken is om deze zelfstudie te voltooien.
+Het doel voor dit meerdelige leerprogramma is een ontwikkelaar te leren hoe te om een toepassing van Angular uit te voeren om met de eigenschap van de Redacteur van het KUUROORD van AEM te werken. In een real-world scenario worden de ontwikkelingsactiviteiten onderverdeeld door persona, vaak het impliceren van de ontwikkelaar van het Voorste Eind van a **** en a **Achterste ontwikkelaar van het Eind**. Wij geloven het voor om het even welke ontwikkelaar die bij een project van de Redacteur van AEM SPA betrokken is om deze zelfstudie te voltooien.
 
-Het leerprogramma wordt ontworpen om met **AEM as a Cloud Service** te werken en is achterwaarts compatibel met **AEM 6.5.4+** en **AEM 6.4.8+**. De SPA wordt geïmplementeerd met:
+Het leerprogramma wordt ontworpen om met **AEM as a Cloud Service** te werken en is achterwaarts compatibel met **AEM 6.5.4+** en **AEM 6.4.8+**. Het SPA wordt uitgevoerd gebruikend:
 
-* [ Gemaakt AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
-* [AEM SPA Editor ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-walkthrough.html#content-editing-experience-with-spa)
+* [ Gemaakt AEM Project Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [ de Redacteur van AEM SPA ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-walkthrough.html#content-editing-experience-with-spa)
 * [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [ Angular ](https://angular.io/)
 
@@ -45,7 +45,7 @@ Het leerprogramma wordt ontworpen om met **AEM as a Cloud Service** te werken en
 
 Al leerprogramma code kan op [ GitHub ](https://github.com/adobe/aem-guides-wknd-spa) worden gevonden.
 
-De [ recentste codebasis ](https://github.com/adobe/aem-guides-wknd-spa/releases) is beschikbaar als downloadbare AEM Pakketten.
+De [ recentste codebasis ](https://github.com/adobe/aem-guides-wknd-spa/releases) is beschikbaar als downloadbare Pakketten van AEM.
 
 ## Vereisten
 
@@ -72,7 +72,7 @@ Er is een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. De sch
 
 ## Volgende stappen {#next-steps}
 
-Waar wacht u op?! Begin het leerprogramma door aan het [ SPA hoofdstuk van het Project van de Redacteur te navigeren ](create-project.md) en te leren hoe te om een SPA Redacteur toegelaten project te produceren gebruikend het Archetype van het Project van de AEM.
+Waar wacht u op?! Begin het leerprogramma door aan het [ hoofdstuk van het Project van de Redacteur van het KUUROORD ](create-project.md) te navigeren en te leren hoe te om een Redacteur van het KUUROORD toegelaten project te produceren gebruikend het Archetype van het Project van AEM.
 
 ## Achterwaartse compatibiliteit {#compatibility}
 
@@ -91,7 +91,7 @@ De projectcode voor deze zelfstudie is gemaakt voor AEM as a Cloud Service. Om d
 </dependency>
 ```
 
-Er is een extra Maven-profiel met de naam `classic` toegevoegd om de build aan te passen aan AEM 6.x-omgevingen:
+Er is een extra Maven-profiel met de naam `classic` toegevoegd om de build aan te passen aan de AEM 6.x-omgevingen:
 
 ```xml
   <!-- AEM 6.x Profile to include Core Components-->
@@ -111,4 +111,4 @@ Het profiel `classic` is standaard uitgeschakeld. Als u de zelfstudie met AEM 6.
 $ mvn clean install -PautoInstallSinglePackage -Pclassic
 ```
 
-Wanneer het produceren van een nieuw project voor een AEM implementatie altijd gebruik de recentste versie van [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype) en werk `aemVersion` bij om uw voorgenomen versie van AEM te richten.
+Wanneer het produceren van een nieuw project voor een implementatie van AEM gebruikt altijd de recentste versie van [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) en werkt `aemVersion` bij om uw voorgenomen versie van AEM te richten.

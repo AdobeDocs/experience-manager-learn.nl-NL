@@ -1,7 +1,7 @@
 ---
-title: UI-planning met Adobe XD | Snel site maken AEM
+title: UI-planning met Adobe XD | AEM Quick Site Creation
 description: Leer hoe u met Adobe XD UI-kits uw Adobe Experience Manager Sites-implementatie kunt ontwerpen en versnellen.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 feature: Core Components
 role: Developer
@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
 recommendations: noDisplay, noCatalog
 duration: 646
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # UI-planning met Adobe XD {#ui-planning-adobe-xd}
 
-In de meeste gevallen begint de planning voor een nieuwe website met modellen en statische ontwerpen. [ Adobe XD ](https://www.adobe.com/products/xd.html) is een best-in-klasse ontwerphulpmiddel om gebruikerservaring op te bouwen. Adobe raadt u aan uw Sites-implementatie te plannen met behulp van UI-modellen voor het gebruik van Adobe XD of een ander hulpprogramma.
+In de meeste gevallen begint de planning voor een nieuwe website met modellen en statische ontwerpen. [ Adobe XD ](https://www.adobe.com/products/xd.html) is een best-in-klasse ontwerphulpmiddel om gebruikerservaring op te bouwen. Adobe raadt u aan de implementatie van Sites te plannen met behulp van UI-modellen die Adobe XD of een ander hulpprogramma gebruiken.
 
 ## Vereisten {#prerequisites}
 
@@ -45,8 +45,8 @@ In dit hoofdstuk worden twee dossiers van Adobe XD geïnspecteerd, voor het [ St
 
 Stappen op hoog niveau:
 
-1. Download het [ StandaardMalplaatje van de Plaats XD Dossier ](https://github.com/adobe/aem-site-template-standard/raw/main/files/wireframe.xd).
-1. Inspect the UI Kit in Adobe XD.
+1. Download het [ StandaardDossier van XD van het Sjabloon van de Plaats ](https://github.com/adobe/aem-site-template-standard/raw/main/files/wireframe.xd).
+1. Controleer de UI Kit in Adobe XD.
 1. Simuleer het afleveren van de ontwerpen aan een front-end ontwikkelaar.
 
 ## WKND-UI-kit {#wknd-ui-kit}
@@ -55,8 +55,8 @@ Stappen op hoog niveau:
 
 Stappen op hoog niveau:
 
-1. Download het [ WKND Artikel XD Dossier ](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd).
-1. Inspect the designs for the WKND Article template.
+1. Download het [ WKND Dossier van XD van het Artikel ](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd).
+1. Inspecteer de ontwerpen voor het WKND-artikelmodel.
 
 ## Gefeliciteerd! {#congratulations}
 

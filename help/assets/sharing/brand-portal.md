@@ -1,8 +1,8 @@
 ---
 title: Brand Portal gebruiken
-description: Videodoorlopen van de integratie AEM Auteur en AEM Assets Brand Portal.
+description: Videodoorloop van de integratie van AEM Author en AEM Assets Brand Portal.
 feature: Brand Portal
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
@@ -10,9 +10,9 @@ last-substantial-update: 2022-06-15T00:00:00Z
 doc-type: Feature Video
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
 duration: 2460
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1702'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ Videohulplijnen voor de integratie van Adobe Experience Manager (AEM) Assets Bra
 
 ## Functies en verbeteringen in Brand Portal september 2019
 
-Brand Portal, september 2019, introduceert met name Asset Sourcing, die de snelheid van de inhoud verhoogt en een gemakkelijke en snelle uitwisseling van activa tussen auteurs van Experience Managers en derden-creatieven en contribuanten mogelijk maakt.
+Brand Portal, september 2019, introduceert met name Asset Sourcing, die de snelheid van de inhoud verhoogt en een gemakkelijke en snelle uitwisseling van activa tussen auteurs van Experience Manager en derde creatieven en contribuanten mogelijk maakt.
 
 ### Brand Portal Asset Sourting{#asset-sourcing}
 
-Brand Portal Asset Sourcing wordt gebruikt om middelen te verzamelen van externe organisaties en teams, waardoor deze naadloos worden gesynchroniseerd naar de Experience Manager Auteur voor controle en gebruik.
+Brand Portal Asset Sourcing wordt gebruikt om middelen te verzamelen van externe agentschappen en teams, waardoor deze naadloos worden gesynchroniseerd naar Experience Manager Author voor controle en gebruik.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29365?quality=12&learn=on)
 
-{6.5 SP2 (6.5.2) van de Auteur van 0} Experience Manager of groter wordt vereist om Activa te gebruiken die **
+{6.5 SP2 (6.5.2) van de Auteur 6.5 van Experience Manager of groter wordt vereist om Activa te gebruiken die **
 
-Het overzicht [ laat de Auteur van de Experience Manager voor de Levering van Activa ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) voor instructies op toe om de Levering van Activa op de Auteur van de Experience Manager te vormen en te plaatsen.
+Het overzicht [ laat de Auteur van Experience Manager voor Activa toe die ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) voor instructies op hoe te om de Levering van Activa op de Auteur van Experience Manager te vormen en te plaatsen.
 
 ## Functies en verbeteringen in Brand Portal februari 2019{#brand-portal-features-and-enhancements-644}
 
@@ -82,19 +82,19 @@ De gedeelde mappen worden in de desbetreffende directory&#39;s in virtuele mappe
 
 De standaardminiatuur van de virtuele mappen is de miniatuurafbeelding van de eerste gedeelde map.
 
-### Ondersteuning voor Dynamic Media-video-uitvoeringen
+### Ondersteuning voor dynamische media-video-uitvoeringen
 
-Gebruikers van wie de AEM Author-instantie zich in de hybride Dynamic Media-modus bevindt, kunnen naast de originele videobestanden ook een voorvertoning van de dynamische media-uitvoeringen weergeven en deze downloaden.
+Gebruikers van wie de AEM Author-instantie zich in de hybride modus Dynamische media bevindt, kunnen naast de originele videobestanden ook een voorvertoning van de dynamische media-uitvoeringen weergeven en deze downloaden.
 
-Om voorproef en download van dynamische media vertoningen op specifieke huurdersrekeningen toe te staan, moeten de beheerders de Configuratie van Dynamic Media (videodienst URL (DM-Gateway URL) en registratie identiteitskaart specificeren om de dynamische video) in Videoconfiguratie van admin hulpmiddelenpaneel te halen.
+Om voorproef en download van dynamische media vertoningen op specifieke huurdersrekeningen toe te staan, moeten de beheerders Dynamische Configuratie van Media (videodienst URL (DM-Gateway URL) en registratie identiteitskaart specificeren om de dynamische video) in Videoconfiguratie van admin hulpmiddelenpaneel te halen.
 
-Dynamic Media-video&#39;s kunnen worden voorvertoond op:
+Dynamische mediavideo&#39;s kunnen worden voorvertoond op:
 
 * Pagina met elementgegevens
 * Weergave van de kaart van het element
 * Voorvertoningspagina voor delen koppelen
 
-Dynamic Media Video-coderingen kunnen worden gedownload van:
+Dynamische videocodes voor media kunnen worden gedownload van:
 
 * Brand Portal
 * Gedeelde koppeling
@@ -107,12 +107,12 @@ Gepubliceerde middelen kunnen ook op een latere datum (tijd) uit het portaal wor
 
 ### Configureerbare alias van huurder in URL
 
-Organisaties kunnen hun portaal-URL aanpassen door een alternatief voorvoegsel in de URL te hebben. Om een alias voor huurdersnaam in hun bestaande portaal URL te krijgen, moeten de organisaties Adobe steun contacteren.
+Organisaties kunnen hun portaal-URL aanpassen door een alternatief voorvoegsel in de URL te hebben. Om een alias voor huurdersnaam in hun bestaande portaal URL te krijgen, moeten de organisaties de steun van Adobe contacteren.
 
 Merk op dat alleen het voorvoegsel van de Brand Portal URL kan worden aangepast en niet de volledige URL.
 Zo kan een organisatie met een bestaand domein `wknd.brand-portal.adobe.com` op verzoek `wkndinc.brand-portal.adobe.com` maken.
 
-Nochtans, AEM de instantie van de Auteur kan [ worden gevormd ](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) slechts met huurder identiteitskaart URL en niet met huurder alias (afwisselend) URL.
+Nochtans, kan de instantie van de Auteur van AEM [ worden gevormd ](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) slechts met huurder identiteitskaart URL en niet met huurder alias (afwisselend) URL.
 
 **Geval van het Gebruik** : De organisaties kunnen aan hun brandingsbehoeften voldoen door portaal URL te krijgen aangepast, in plaats van aan URL te kleven die door Adobe wordt verstrekt.
 
@@ -122,7 +122,7 @@ Nochtans, AEM de instantie van de Auteur kan [ worden gevormd ](https://helpx.ad
 
 ### Toegang voor gasten
 
-AEM Brand-portaal biedt gasten toegang tot het portaal. Een gastgebruiker vereist geen geloofsbrieven om het portaal in te gaan en kan tot alle openbare omslagen en inzamelingen toegang hebben en downloaden. Gastgebruikers kunnen elementen toevoegen aan hun lichtbak (privéverzameling) en deze downloaden. Ze kunnen ook zoeken naar slimme tags en voorspelden van zoekopdrachten weergeven die door beheerders zijn ingesteld. De gastzitting staat gebruikers niet toe om inzamelingen tot stand te brengen en bewaarde onderzoeken of hen verder te delen, tot omslag en inzamelingsmontages toegang te hebben, en activa als verbindingen te delen.
+AEM Brand Portal biedt gasttoegang tot het portaal. Een gastgebruiker vereist geen geloofsbrieven om het portaal in te gaan en kan tot alle openbare omslagen en inzamelingen toegang hebben en downloaden. Gastgebruikers kunnen elementen toevoegen aan hun lichtbak (privéverzameling) en deze downloaden. Ze kunnen ook zoeken naar slimme tags en voorspelden van zoekopdrachten weergeven die door beheerders zijn ingesteld. De gastzitting staat gebruikers niet toe om inzamelingen tot stand te brengen en bewaarde onderzoeken of hen verder te delen, tot omslag en inzamelingsmontages toegang te hebben, en activa als verbindingen te delen.
 
 ### Versnelde download
 
@@ -157,7 +157,7 @@ Er worden zes nieuwe configuraties toegevoegd voor beheerders om de volgende fun
 * *de hiërarchieweg van de Omslag op kaart en lijstmeningen* - laat gebruikers toe om de plaats van de omslagen te kennen die binnen een instantie van Brand Portal worden opgeslagen. Hiermee kunnen gebruikers mappen met dezelfde naam onderscheiden in verschillende maphiërarchie.
 * *optie van het Overzicht* — verstrekt niet-admin gebruikersmeta-gegevens over de activa/de omslag door de activa/de omslag te selecteren en dan de overzichtsoptie van de toolbar te selecteren. Op dit moment worden titel, datum en pad weergegeven
 
-### Adobe I/O Gastheren UI om Auth Integrations te vormen
+### Adobe I/O Hosts-gebruikersinterface voor het configureren van Auth-integratie
 
 Brand Portal gebruikt Adobe I/O [ https://legacy-oauth.cloud.adobe.io/ ](https://legacy-oauth.cloud.adobe.io/) interface om toepassing tot stand te brengen JWT, die het vormen de integratie van Auth toelaat om de integratie van AEM Assets met Brand Portal toe te staan. Eerder werd de interface voor het configureren van OAuth-integratie gehost in `https://marketing.adobe.com/developer/` . Meer over het integreren van AEM Assets met Brand Portal voor het publiceren van activa en inzamelingen aan Brand Portal verwijs [ de integratie van AEM Assets met Brand Portal ](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html) vormen.
 
@@ -169,8 +169,8 @@ Nieuwe functies verbeteren de functionaliteit die gericht is op het uitlijnen va
 
 ### Navigatieverbeteringen
 
-* Bijgewerkte gebruikersinterface die zich op de AEM richt en Coral3 UI gebruikt.
-* Snelle en eenvoudige toegang tot beheertools via het logo van de nieuwe Adobe.
+* Bijgewerkte gebruikersinterface die wordt uitgelijnd op de AEM en gebruikmaakt van de interface van Coral3.
+* Snelle en eenvoudige toegang tot beheertools via het nieuwe Adobe-logo.
 * Productnavigatie door middel van een bedekking
 * Snelle navigatie naar bovenliggende mappen vanuit een onderliggende map.
 * Optie voor Omnzoekopdrachten om naar beheergereedschappen en inhoud te navigeren.
@@ -184,7 +184,7 @@ Nieuwe functies verbeteren de functionaliteit die gericht is op het uitlijnen va
 * Automatische trefwoordsuggesties maken het zoeken gemakkelijker
 * Verbeter uw algemene zoekopdracht met extra filters. Optie om het onderzoeksresultaat in een Slimme Inzameling te bewaren voor u om uw onderzoek in een recentere tijd opnieuw te bezoeken.
 * Ondersteunt zoeken naar slimme tags voor elementen
-* AEM Slimme gelabelde elementen kunnen worden gedeeld van AEM naar Brand Portal en worden gebruikt voor het zoeken naar elementen in Brand Portal.
+* AEM Smart gelabelde middelen kunnen worden gedeeld van AEM naar Brand Portal en slimme tags gebruiken voor het zoeken naar middelen in Brand Portal.
 
 ### Verbeteringen voor het delen van bestanden
 
@@ -206,9 +206,9 @@ Nieuwe functies verbeteren de functionaliteit die gericht is op het uitlijnen va
 ## Aanvullende bronnen{#additional-resources}
 
 * [ wat in Brand Portal ](https://helpx.adobe.com/experience-manager/brand-portal/using/whats-new.html) nieuw is
-* [ AEM de replicatieagenten van de Auteur ](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
+* [ de replicatieagenten van de Auteur van AEM ](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [ Gids aan Versnelde Download ](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
-* [ Dokken van de Adobe van AEM Assets Brand Portal ](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
-* [ de AdobeDocs van Dynamic Media van AEM Assets ](https://experienceleague.adobe.com/docs/)
+* [ AEM Assets Brand Portal Adobe Docs ](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
+* [ AEM Assets Dynamic Media Adobe Docs ](https://experienceleague.adobe.com/docs/)
 * [ download Aspera verbindt ](https://downloads.asperasoft.com/connect2/)
 * [ de Server van de Test van Aspera Connect ](https://test-connect.asperasoft.com/)

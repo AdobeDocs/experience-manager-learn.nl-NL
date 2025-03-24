@@ -1,8 +1,8 @@
 ---
-title: Adobe I/O Runtime-acties AEM UI-extensie
-description: Leer hoe u een modaal AEM UI-extensie maakt.
+title: AEM UI-extensie Adobe I/O Runtime-handelingen
+description: Leer hoe u een modaal extensiemodel voor de AEM UI maakt.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-11603
 last-substantial-update: 2024-01-26T00:00:00Z
 exl-id: 3062900a-0461-4c6f-81e6-c76a7f613804
 duration: 240
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 1%
@@ -20,11 +20,11 @@ ht-degree: 1%
 
 # Adobe I/O Runtime-actie
 
-![ AEM UI van de uitbreidingsruntime acties ](./assets/runtime-action/action-runtime-flow.png){align="center"}
+![ de uitbreidingsruntime van AEM UI acties ](./assets/runtime-action/action-runtime-flow.png){align="center"}
 
-AEM uitbreidingen UI kunnen naar keuze om het even welk aantal [ acties van Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/) omvatten.
+De uitbreidingen van AEM UI kunnen naar keuze om het even welk aantal [ acties van Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/) omvatten.
 
-Adobe I/O Runtime-handelingen zijn serverloze functies die door de extensie kunnen worden aangeroepen. Handelingen zijn handig voor het uitvoeren van werk waarvoor interactie met AEM of andere webservices van de Adobe vereist is. Handelingen zijn meestal handig voor het uitvoeren van langdurige (iets langer dan een paar seconden) taken of voor het indienen van HTTP-aanvragen bij AEM of andere webservices.
+Adobe I/O Runtime-handelingen zijn serverloze functies die door de extensie kunnen worden aangeroepen. Handelingen zijn handig voor het uitvoeren van werkzaamheden die interactie vereisen met AEM of andere Adobe-webservices. Handelingen zijn doorgaans het meest nuttig voor het uitvoeren van langdurige (iets langer dan een paar seconden) taken of het indienen van HTTP-aanvragen bij AEM of andere webservices.
 
 De voordelen van Adobe I/O Runtime-handelingen voor het uitvoeren van bewerkingen zijn:
 
@@ -32,13 +32,13 @@ De voordelen van Adobe I/O Runtime-handelingen voor het uitvoeren van bewerkinge
 + Handelingen kunnen niet worden onderbroken door de gebruiker (bijvoorbeeld de browser vernieuwen)
 + Handelingen zijn asynchroon, zodat ze zo lang als nodig kunnen worden uitgevoerd zonder de gebruiker te blokkeren
 
-In de context van AEM UI-extensies worden handelingen vaak gebruikt om rechtstreeks met AEM as a Cloud Service te communiceren:
+In de context van AEM UI-extensies worden handelingen vaak gebruikt om rechtstreeks te communiceren met AEM as a Cloud Service:
 
-+ Verwante gegevens verzamelen van AEM over de geselecteerde of huidige inhoud
++ Verwante gegevens van AEM verzamelen over de geselecteerde of huidige inhoud
 + Aangepaste bewerkingen op inhoud uitvoeren
 + Aanmaken van inhoud overnemen
 
-Terwijl de AEM UI-extensie wordt weergegeven in specifieke AEM UI&#39;s, kunnen extensies en hun ondersteunende acties elke beschikbare AEM HTTP API aanroepen, inclusief de eindpunten van de aangepaste AEM API.
+Terwijl de AEM UI-extensie wordt weergegeven in specifieke UI&#39;s van AEM, kunnen extensies en hun ondersteunende acties alle beschikbare AEM HTTP-API aanroepen, inclusief de eindpunten van de aangepaste AEM API.
 
 ## Een handeling aanroepen
 
@@ -110,9 +110,9 @@ export default ExtensionRegistration;
 
 ### Van modaal
 
-Adobe I/O Runtime-acties kunnen rechtstreeks via modals worden aangeroepen om meer betrokken taken uit te voeren, met name werk dat afhankelijk is van communicatie met AEM as a Cloud Service, Adobe webservice of zelfs services van derden.
+Adobe I/O Runtime-acties kunnen rechtstreeks vanuit een modaal systeem worden aangeroepen om meer betrokken taken uit te voeren, met name werk dat afhankelijk is van communicatie met AEM as a Cloud Service, Adobe-webservices of zelfs services van derden.
 
-Adobe I/O Runtime-acties zijn JavaScript-toepassingen die zijn gebaseerd op Node.js en die worden uitgevoerd in de Adobe I/O Runtime-omgeving zonder server. Deze handelingen kunnen via HTTP worden uitgevoerd via de SPA extensie.
+Adobe I/O Runtime-acties zijn JavaScript-toepassingen die zijn gebaseerd op Node.js en die worden uitgevoerd in de Adobe I/O Runtime-omgeving zonder server. Deze acties zijn adresseerbaar via HTTP door de uitbreiding SPA.
 
 + `./src/aem-ui-extension/web-src/src/components/MyModal.js`
 
@@ -302,9 +302,9 @@ async function main (params) {
 }
 ```
 
-## HTTP-API&#39;s AEM
+## AEM HTTP-API&#39;s
 
-De volgende AEM HTTP-API&#39;s worden vaak gebruikt voor interactie met AEM van extensies:
+De volgende AEM HTTP-API&#39;s worden vaak gebruikt voor interactie met AEM vanuit extensies:
 
 + [ AEM GraphQL APIs ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 + [ HTTP API van AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html)
@@ -313,7 +313,7 @@ De volgende AEM HTTP-API&#39;s worden vaak gebruikt voor interactie met AEM van 
 + [ Volledige verwijzing van AEM as a Cloud Service API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/reference-materials.html)
 
 
-## Npm-modules voor Adobe
+## Adobe npm-modules
 
 Hieronder vindt u nuttige npm-modules voor het ontwikkelen van Adobe I/O Runtime-acties:
 
@@ -324,8 +324,8 @@ Hieronder vindt u nuttige npm-modules voor het ontwikkelen van Adobe I/O Runtime
    + [ de Bibliotheek van Adobe Target ](https://github.com/adobe/aio-lib-target)
    + [ de Bibliotheek van Adobe Analytics ](https://github.com/adobe/aio-lib-analytics)
    + [ de Bibliotheek van Adobe Campaign Standard ](https://github.com/adobe/aio-lib-campaign-standard)
-   + [ Bibliotheek van het Profiel van de Klant van de Adobe ](https://github.com/adobe/aio-lib-customer-profile)
+   + [ de Bibliotheek van het Profiel van de Klant van Adobe ](https://github.com/adobe/aio-lib-customer-profile)
    + [ de Bibliotheek van de Gegevens van de Klant van Adobe Audience Manager ](https://github.com/adobe/aio-lib-audience-manager-cd)
-   + [ Adobe I/O Gebeurtenissen ](https://github.com/adobe/aio-lib-events)
+   + [ Adobe I/O Events ](https://github.com/adobe/aio-lib-events)
 + [@adobe/aio-lib-core-networking ](https://github.com/adobe/aio-lib-core-networking)
 + [@adobe/node-httptransfer ](https://github.com/adobe/node-httptransfer)

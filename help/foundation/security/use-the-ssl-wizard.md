@@ -1,7 +1,7 @@
 ---
 title: De SSL-wizard in AEM gebruiken
-description: Adobe Experience Manager SSL opstellingstovenaar om het gemakkelijker te maken om een AEM instantie te plaatsen om over HTTPS te lopen.
-version: 6.5, Cloud Service
+description: Adobe Experience Manager SSL opstellingstovenaar om het gemakkelijker te maken om een instantie van AEM op te zetten om over HTTPS te lopen.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-13839
 doc-type: Technical Video
 topic: Security
@@ -10,7 +10,7 @@ level: Beginner
 exl-id: 4e69e115-12a6-4a57-90da-b91e345c6723
 last-substantial-update: 2023-08-08T00:00:00Z
 duration: 564
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Leer hoe u SSL in Adobe Experience Manager instelt om deze via HTTPS uit te voer
 
 ## De wizard SSL-configuratie gebruiken
 
-Navigeer aan __AEM Auteur > Hulpmiddelen > Veiligheid > SSL Configuratie__, en open de __SSL Tovenaar van de Configuratie__.
+Navigeer aan __de Auteur van AEM > Hulpmiddelen > Veiligheid > SSL Configuratie__, en open de __SSL Tovenaar van de Configuratie__.
 
 ![ SSL de Tovenaar van de Configuratie ](assets/use-the-ssl-wizard/ssl-config-wizard.png)
 
@@ -88,7 +88,7 @@ Deze localhost - persoonlijke sleutel en zelfondertekend certificate.zip (verloo
 
 ### Persoonlijke sleutel en zelfondertekende certificaatgeneratie
 
-In de video hierboven worden de installatie en configuratie van SSL op een AEM auteurinstantie met zelfondertekende certificaten weergegeven. Met de onderstaande opdrachten in [[!DNL OpenSSL] ](https://www.openssl.org/) kunt u een persoonlijke sleutel en certificaat genereren voor gebruik in Stap 2 van de wizard.
+In de bovenstaande video ziet u de installatie en configuratie van SSL op een AEM-auteurinstantie met behulp van zelfondertekende certificaten. Met de onderstaande opdrachten in [[!DNL OpenSSL] ](https://www.openssl.org/) kunt u een persoonlijke sleutel en certificaat genereren voor gebruik in Stap 2 van de wizard.
 
 ```shell
 ### Create Private Key

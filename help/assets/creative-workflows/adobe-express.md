@@ -1,7 +1,7 @@
 ---
 title: AEM Assets en Adobe Express
-description: Ontdek hoe u in AEM Assets inhoud kunt maken en bewerken met behulp van Adobe Express.
-version: Cloud Service
+description: Ontdek hoe u in AEM Assets inhoud kunt maken en bewerken met Adobe Express.
+version: Experience Manager as a Cloud Service
 feature: Integrations
 topic: Integrations, Content Management, Content Supply Chain
 role: Admin, User
@@ -11,7 +11,7 @@ duration: 510
 last-substantial-update: 2024-05-07T00:00:00Z
 jira: KT-14645
 exl-id: d73c4bdc-c1ff-498c-9584-93e6e39f5e39
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # AEM Assets en Adobe Express
 
-Ontdek hoe u eenvoudig inhoud kunt maken en bewerken in Adobe Experience Manager Assets met behulp van Adobe Express. Deze video begeleidt u bij het verbeteren van de workflows voor inhoud, waarbij zowel het bewerken van bestaande middelen als het maken van nieuwe elementen worden getoond, allemaal gestroomlijnd voor efficiëntie en gebruiksvriendelijkheid.
+Ontdek hoe u eenvoudig inhoud kunt maken en bewerken in Adobe Experience Manager Assets met Adobe Express. Deze video begeleidt u bij het verbeteren van de workflows voor inhoud, waarbij zowel het bewerken van bestaande middelen als het maken van nieuwe elementen worden getoond, allemaal gestroomlijnd voor efficiëntie en gebruiksvriendelijkheid.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425972/?learn=on)
 

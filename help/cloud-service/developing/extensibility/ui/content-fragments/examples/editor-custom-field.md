@@ -2,7 +2,7 @@
 title: Content Fragment Console - Aangepaste velden
 description: Leer hoe u een aangepast veld maakt in de AEM Content Fragment Editor.
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 role: Developer
 level: Intermediate
 doc-type: Tutorial
@@ -11,7 +11,7 @@ last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-14903
 thumbnail: KT-14903.jpeg
 exl-id: 563bab0e-21e3-487c-9bf3-de15c3a81aba
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -24,13 +24,13 @@ Leer hoe u aangepaste velden maakt in de AEM Content Fragment Editor.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
 
-AEM uitbreidingen UI zouden moeten worden ontwikkeld gebruikend het ](https://react-spectrum.adobe.com/react-spectrum/index.html) kader van het Spectrum van de Reactie van de Adobe [, aangezien dit een verenigbare blik en gevoel met de rest van AEM handhaaft, en ook een uitgebreide bibliotheek van pre-gebouwde functionaliteit heeft, dalende ontwikkelingstijd.
+De uitbreidingen UI van AEM zouden moeten worden ontwikkeld gebruikend het ](https://react-spectrum.adobe.com/react-spectrum/index.html) kader van het Spectrum van de Reactie van Adobe [, aangezien dit een verenigbaar blik en gevoel met de rest van AEM handhaaft, en ook een uitgebreide bibliotheek van pre-gebouwde functionaliteit heeft, dalende ontwikkelingstijd.
 
 ## Extensiepunt
 
 In dit voorbeeld wordt een bestaand veld in de Inhoudsfragmenteditor vervangen door een aangepaste implementatie.
 
-| AEM UI uitgebreid | Extensiepunt |
+| AEM-gebruikersinterface uitgebreid | Extensiepunt |
 | ------------------------ | --------------------- | 
 | [ de Redacteur van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [ het vormelement teruggeven van de Douane ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/) |
 
@@ -89,7 +89,7 @@ Deze douaneroute van `/sku-field` kaarten aan de `SkuField` component wordt gebr
 
 ### Registratie van extensies
 
-`ExtensionRegistration.js` , toegewezen aan de route index.html, is het ingangspunt voor de AEM uitbreiding en bepaalt:
+`ExtensionRegistration.js` , toegewezen aan de route index.html, is het ingangspunt voor de uitbreiding van AEM en bepaalt:
 
 + De widgetdefinitie in de functie `getDefinitions()` met `fieldNameExp` - en `url` -kenmerken. De volledige lijst van beschikbare attributen is beschikbaar in [ het Element dat van de Vorm van de Douane API Verwijzing teruggeeft ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/#api-reference).
 + De waarde van het kenmerk `url` , een relatief URL-pad ( `/index.html#/skuField` ) om de interface van het veld te laden.
@@ -132,10 +132,10 @@ export default ExtensionRegistration;
 
 ### Aangepast veld
 
-De component `SkuField` React werkt de Inhoudsfragmenteditor bij met een aangepaste UI en gebruikt Adobe React Spectrum voor de kiezervorm. Tot de hooglichten behoren:
+De component `SkuField` React werkt de Content Fragment Editor bij met een aangepaste UI en gebruikt daarbij Adobe React Spectrum voor de kiezervorm. Tot de hooglichten behoren:
 
-+ `useEffect` gebruiken voor initialisatie en verbinding met AEM Content Fragment Editor, met een laadstatus weergegeven totdat de installatie is voltooid.
-+ Bij weergave binnen een iFrame wordt de hoogte van de iFrame dynamisch aangepast via de functie `onOpenChange` om ruimte te maken voor het vervolgkeuzemenu van de Adobe Spectrum Picker React.
++ `useEffect` gebruiken voor initialisatie en verbinding met de AEM Content Fragment Editor, met een laadstatus weergegeven totdat de installatie is voltooid.
++ Bij weergave binnen een iFrame wordt de hoogte van de iFrame dynamisch aangepast via de functie `onOpenChange` om ruimte te maken voor het vervolgkeuzemenu van de Adobe React Spectrum Picker.
 + Hiermee geeft u veldselecties via `connection.host.field.onChange(value)` in de `onSelectionChange` -functie weer aan de host, zodat de geselecteerde waarde wordt gevalideerd en automatisch wordt opgeslagen volgens de richtlijnen van het Content Fragment Model.
 
 Aangepaste velden worden gerenderd binnen een iFrame dat wordt geïnjecteerd in de Content Fragment Editor. Communicatie tussen de aangepaste veldcode en de Content Fragment Editor vindt uitsluitend plaats via het `connection` -object dat is ingesteld door de `attach` -functie van het `@adobe/uix-guest` -pakket.

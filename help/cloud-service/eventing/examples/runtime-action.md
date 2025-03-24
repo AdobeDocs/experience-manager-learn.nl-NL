@@ -1,7 +1,7 @@
 ---
 title: Adobe I/O Runtime Action and AEM Events
-description: Leer hoe u AEM gebeurtenissen kunt ontvangen met de Adobe I/O Runtime-actie en bekijk de gebeurtenisdetails zoals payload, headers en metagegevens.
-version: Cloud Service
+description: Leer hoe u AEM Events kunt ontvangen met de Adobe I/O Runtime-actie en bekijk de gebeurtenisdetails zoals payload, headers en metadata.
+version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
 role: Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-01-29T00:00:00Z
 jira: KT-14878
 thumbnail: KT-14878.jpeg
 exl-id: b1c127a8-24e7-4521-b535-60589a1391bf
-source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 0%
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 # Adobe I/O Runtime Action and AEM Events
 
-Leer hoe te om AEM Gebeurtenissen te ontvangen gebruikend [ Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) Actie en de gebeurtenisdetails zoals nuttige lading, kopballen, en meta-gegevens te herzien.
+Leer hoe te om de Gebeurtenissen van AEM te ontvangen gebruikend [ Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) Actie en de gebeurtenisdetails zoals nuttige lading, kopballen, en meta-gegevens te herzien.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427053?quality=12&learn=on)
 
-Adobe I/O Runtime is een serverloos platform dat code-uitvoering toestaat als reactie op Adobe I/O-gebeurtenissen. Zo kunt u gebeurtenisgestuurde toepassingen maken zonder dat u zich zorgen hoeft te maken over de infrastructuur.
+De Adobe I/O Runtime is een serverloos platform dat code-uitvoering toestaat als reactie op Adobe I/O Events. Zo kunt u gebeurtenisgestuurde toepassingen maken zonder dat u zich zorgen hoeft te maken over de infrastructuur.
 
-In dit voorbeeld, creeert u een Adobe I/O Runtime [ Actie ](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) die AEM Gebeurtenissen ontvangt en de gebeurtenisdetails registreert.
+In dit voorbeeld, creeert u een Adobe I/O Runtime [ Actie ](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) die de Gebeurtenissen van AEM ontvangt en de gebeurtenisdetails registreert.
 https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/
 
 De stappen op hoog niveau zijn:
@@ -35,13 +35,13 @@ De stappen op hoog niveau zijn:
 - Project maken in Adobe Developer Console
 - Project initialiseren voor lokale ontwikkeling
 - Project configureren in Adobe Developer Console
-- Trigger AEM gebeurtenis en verifieer uitvoering van handeling
+- AEM-gebeurtenis activeren en uitvoering van handeling controleren
 
 ## Vereisten
 
 U hebt het volgende nodig om deze zelfstudie te voltooien:
 
-- Het milieu van AEM as a Cloud Service met [ toegelaten AEM Gebeurtenis ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
+- Het milieu van AEM as a Cloud Service met [ toegelaten de Gebeurtenis van AEM ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
 
 - Toegang tot [ Adobe Developer Console ](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
 
@@ -80,7 +80,7 @@ Als u Adobe I/O Runtime Action aan het project wilt toevoegen, moet u het projec
 
 - Open project in uw favoriete winde, bijvoorbeeld VSCode.
 
-- Het geselecteerde _malplaatje van de Rekbaarheid_ (`@adobe/generator-app-excshell`) verstrekt een generische runtime actie, is de code in `src/dx-excshell-1/actions/generic/index.js` dossier. Laten we het bijwerken om het eenvoudig te houden, de gebeurtenisdetails vast te leggen en een succesreactie te retourneren. In het volgende voorbeeld wordt het echter uitgebreid om de ontvangen AEM Events te verwerken.
+- Het geselecteerde _malplaatje van de Rekbaarheid_ (`@adobe/generator-app-excshell`) verstrekt een generische runtime actie, is de code in `src/dx-excshell-1/actions/generic/index.js` dossier. Laten we het bijwerken om het eenvoudig te houden, de gebeurtenisdetails vast te leggen en een succesreactie te retourneren. In het volgende voorbeeld wordt het echter uitgebreid om de ontvangen AEM-gebeurtenissen te verwerken.
 
   ```javascript
   const fetch = require("node-fetch");
@@ -133,7 +133,7 @@ Als u Adobe I/O Runtime Action aan het project wilt toevoegen, moet u het projec
 
 ## Project configureren in Adobe Developer Console
 
-Als u AEM gebeurtenissen wilt ontvangen en de Adobe I/O Runtime-actie wilt uitvoeren die in de vorige stap is gemaakt, configureert u het project in Adobe Developer Console.
+Als u AEM Events wilt ontvangen en de Adobe I/O Runtime-actie wilt uitvoeren die u in de vorige stap hebt gemaakt, configureert u het project in Adobe Developer Console.
 
 - In Adobe Developer Console, navigeer aan het [ project ](https://developer.adobe.com/console/projects) dat in de vorige stap wordt gecreeerd en klik om het te openen. Selecteer de werkruimte van `Stage` . Hier is de handeling geïmplementeerd.
 
@@ -141,7 +141,7 @@ Als u AEM gebeurtenissen wilt ontvangen en de Adobe I/O Runtime-actie wilt uitvo
 
   ![ voegt de Dienst toe - vorm project ](../assets/examples/runtime-action/add-io-management-api.png)
 
-- Eveneens, klik **toevoegen de knoop van de Dienst** en selecteren **de optie van de Gebeurtenis**. In **voeg Gebeurtenissen** dialoog toe, uitgezocht **Experience Cloud** > **AEM Sites**, en klik **daarna**. Voer aanvullende configuratiestappen uit en selecteer AEMCS-instantie, gebeurtenistypen en andere details.
+- Eveneens, klik **toevoegen de knoop van de Dienst** en selecteren **de optie van de Gebeurtenis**. In **voeg Gebeurtenissen** dialoog toe, selecteer **Experience Cloud** > **AEM Sites**, en klik **daarna**. Voer aanvullende configuratiestappen uit en selecteer AEMCS-instantie, gebeurtenistypen en andere details.
 
 - Tot slot in **hoe te om gebeurtenissen** stap te ontvangen, breid **Runtime actie** optie uit en selecteer de _generische_ actie die in de vorige stap wordt gecreeerd. Klik **sparen gevormde gebeurtenissen**.
 
@@ -152,9 +152,9 @@ Als u AEM gebeurtenissen wilt ontvangen en de Adobe I/O Runtime-actie wilt uitvo
   ![ Gegevens van de Registratie van de Gebeurtenis ](../assets/examples/runtime-action/debug-tracing-challenge-probe.png)
 
 
-## Triggergebeurtenissen AEM
+## AEM-gebeurtenissen activeren
 
-Ga als volgt te werk om AEM gebeurtenissen vanuit uw AEM as a Cloud Service-omgeving te activeren die zijn geregistreerd in het bovenstaande Adobe Developer Console-project:
+Ga als volgt te werk om AEM-gebeurtenissen vanuit uw AEM as a Cloud Service-omgeving te activeren die zijn geregistreerd in het bovenstaande Adobe Developer Console-project:
 
 - De toegang en login aan uw het auteursmilieu van AEM as a Cloud Service via [ Cloud Manager ](https://my.cloudmanager.adobe.com/).
 
@@ -162,13 +162,13 @@ Ga als volgt te werk om AEM gebeurtenissen vanuit uw AEM as a Cloud Service-omge
 
 ## Gebeurtenisdetails controleren
 
-Nadat u de bovenstaande stappen hebt uitgevoerd, ziet u de AEM Events die aan de algemene actie worden geleverd.
+Nadat u de bovenstaande stappen hebt uitgevoerd, ziet u dat de AEM Events worden geleverd aan de algemene actie.
 
 U kunt de gebeurtenisdetails in **herzien zuivert het Vinden** lusje van de details van de Registratie van de Gebeurtenis.
 
-![ AEM de Details van de Gebeurtenis ](../assets/examples/runtime-action/aem-event-details.png)
+![ de Details van de Gebeurtenis van AEM ](../assets/examples/runtime-action/aem-event-details.png)
 
 
 ## Volgende stappen
 
-In het volgende voorbeeld verbeteren wij deze actie om AEM Gebeurtenissen te verwerken, AEM de auteursdienst terug te roepen om inhouddetails te krijgen, details in de opslag van Adobe I/O Runtime op te slaan, en hen te tonen via de Toepassing van de Enige Pagina (SPA).
+In het volgende voorbeeld verbeteren wij deze actie om de Gebeurtenissen van AEM te verwerken, de auteursdienst van terugbellen AEM om inhoudsdetails te krijgen, details in de opslag van Adobe I/O Runtime op te slaan, en hen te tonen via de Toepassing van de Enige Pagina (SPA).

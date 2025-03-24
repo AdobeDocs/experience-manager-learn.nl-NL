@@ -4,14 +4,14 @@ description: Download servicegegevens van AEM Developer Console.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-8192
 thumbnail: 330519.jpg
 exl-id: 74cb8c30-4c41-426c-a1b5-fc595a3167c8
 duration: 453
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # AEM Forms Service Credentials
 
-Integraties met AEM as a Cloud Service moeten veilig kunnen worden geverifieerd op AEM. AEM Developer Console genereert Service Credentials, die door externe toepassingen, systemen en services worden gebruikt om via HTTP programmatisch te communiceren met AEM auteur- of Publish-services.
+Integraties met AEM as a Cloud Service moeten veilig op AEM kunnen worden geverifieerd. AEM Developer Console genereert Service Credentials. Deze worden gebruikt door externe toepassingen, systemen en services om programmatisch te communiceren met AEM Author of Publish-services via HTTP.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 

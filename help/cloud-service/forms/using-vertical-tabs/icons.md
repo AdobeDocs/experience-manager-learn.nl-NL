@@ -5,14 +5,14 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 thumbnail: 331891.jpg
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16418
 exl-id: 20e44be0-5490-4414-9183-bb2d2a80bdf0
-source-git-commit: faa859897b6b9fbb0acff02000611de216ddda3e
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Als u dit artikel volgt, kunt u de pictogrammen zoals hieronder weergegeven plaa
 
 ## Vereisten
 
-Om dit artikel te volgen, moet u vertrouwd zijn met Git, creërend en plaatsend een AEM project gebruikend wolkenmanager, vestiging een front-end pijpleiding in AEM wolkenbeheer, en een beetje van CSS. Als u niet vertrouwd met de bovengenoemde onderwerpen bent, te volgen gelieve [ gebruikend thema&#39;s aan de componenten van de stijlkern ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components#rename-env-file-theme-folder) artikel.
+Als u dit artikel wilt volgen, moet u vertrouwd zijn met Git, een AEM-project maken en implementeren met cloud Manager, een front-end-pijplijn instellen in AEM Cloud Manager en een beetje CSS. Als u niet vertrouwd met de bovengenoemde onderwerpen bent, te volgen gelieve [ gebruikend thema&#39;s aan de componenten van de stijlkern ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components#rename-env-file-theme-folder) artikel.
 
 ## Pictogrammen toevoegen aan het thema
 

@@ -1,7 +1,7 @@
 ---
-title: De functie URL's van Dispatcher vanity AEM
+title: AEM Dispatcher vanity URL's, functie
 description: Begrijp hoe AEM omgaat met vanity URLs en extra technieken gebruikend herschrijf regels om inhoud dichter aan de rand van levering in kaart te brengen.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration, Performance
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 53baef9c-aa4e-4f18-ab30-ef9f4f5513ee
 duration: 244
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1159'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## Overzicht
 
-Dit document helpt u begrijpen hoe AEM omgaat met ijdelheidsURL&#39;s en enkele extra technieken die regels herschrijven gebruiken om inhoud dichter bij de rand van levering in kaart te brengen
+Dit document helpt u begrijpen hoe AEM omgaat met ijdelheidsURL&#39;s en enkele aanvullende technieken met behulp van herschrijfregels om inhoud dichter bij de rand van levering in kaart te brengen
 
 ## Wat zijn Vanity URL&#39;s
 
@@ -33,7 +33,7 @@ Wanneer u inhoud hebt die in een omslagstructuur leeft die steek houdt het niet 
 
 Een voorbeeld: `/aboutus` punst bij `/content/we-retail/us/en/about-us.html`
 
-AEM Auteurs hebben een optie om URL-eigenschappen van het type vanity in te stellen voor inhoud in AEM en deze te publiceren.
+AEM-auteurs hebben een optie om URL-eigenschappen van het type vanity in te stellen voor inhoud in AEM en deze te publiceren.
 
 Deze functie werkt alleen als u de Dispatcher-filters aanpast zodat de ijdelheid erdoor heen kan. Dit wordt onredelijk om met het aanpassen van de de configuratiedossiers van Dispatcher aan het tarief te doen dat de auteurs deze punten van de ijdelheidspagina zouden moeten plaatsen.
 
@@ -50,13 +50,13 @@ De auteurs kunnen _Redirect van de Vanheid URL_ checkbox ook selecteren wanneer 
 
 #### Aanraakinterface:
 
-![ drop-down dialoogmenu voor AEM auteursUI op het scherm van de plaatsredacteur ](assets/disp-vanity-url/aem-page-properties-drop-down.png " aem-pagina-eigenschappen-drop-down ")
+![ drop-down dialoogmenu voor AEM authoring UI op het scherm van de plaatsredacteur ](assets/disp-vanity-url/aem-page-properties-drop-down.png " aem-page-properties-drop-down ")
 
 ![ naam pagina eigenschappen de pagina van de de dialoog pagina ](assets/disp-vanity-url/aem-page-properties.png " a-page-properties ")
 
 #### Klassieke inhoudszoeker:
 
-![ AEM plaatsAdmin klassieke ui sidekick paginaeigenschappen ](assets/disp-vanity-url/aem-page-properties-sidekick.png " aem-page-properties-sidekick ")
+![ AEM siteAdmin klassieke ui sidekick paginaeigenschappen ](assets/disp-vanity-url/aem-page-properties-sidekick.png " aem-page-properties-sidekick ")
 
 ![ Klassieke UI de paginaeigenschappen dialoogdoos ](assets/disp-vanity-url/aem-page-properties-classic.png " aem-pagina-eigenschappen-klassieke ")
 
@@ -70,7 +70,7 @@ De auteurs kunnen _Redirect van de Vanheid URL_ checkbox ook selecteren wanneer 
 
 Elk ijdelingitem is een sling map-item voor een interne omleiding.
 
-De kaarten zijn zichtbaar door de AEM instanties van de console van Felix ( `/system/console/jcrresolver`) te bezoeken
+De kaarten zijn zichtbaar door de AEM instances Felix console te bezoeken ( `/system/console/jcrresolver` )
 
 Hier volgt een schermafbeelding van een kaartitem dat is gemaakt door een ijdelingvermelding:
 ![ consolescherm van een ijdelheidsingang in het middel die regels ](assets/disp-vanity-url/vanity-resource-resolver-entry.png " oplossen vanity-middel-resolver-ingang ")
@@ -85,7 +85,7 @@ Het is belangrijk om ervoor te zorgen dat uitgevers alleen inhoud van `/content`
 
 Hier ziet u de rub, ijdelheid-URL&#39;s die zich bevinden in de basismap van `/` , dus hoe kunnen we ze toestaan om de uitgevers te bereiken terwijl ze veilig blijven?
 
-Eenvoudige Dispatcher heeft een mechanisme voor automatisch filteren. U moet een AEM installeren en vervolgens de Dispatcher zodanig configureren dat deze naar die pakketpagina wijst.
+Eenvoudige Dispatcher heeft een mechanisme voor automatisch filteren. U moet een AEM-pakket installeren en vervolgens de Dispatcher zodanig configureren dat deze naar die pakketpagina wijst.
 
 [ https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components)
 
@@ -118,7 +118,7 @@ Deze benadering dwingt de Dispatcher om `/file` bij te werken, op voorwaarde dat
 
 De cache van de reactie wordt opgeslagen in het argument `/file` , dus in dit voorbeeld `/tmp/vanity_urls`
 
-Dus als u de AEM-instantie in de URI bezoekt, ziet u wat deze ophaalt:
+Dus als u de AEM-instantie op de URI bezoekt, ziet u wat deze ophaalt:
 
 ![ het schermschot van de inhoud die van /libs/granite/dispatcher/content/vanityUrls.html ](assets/disp-vanity-url/vanity-url-component.png " wordt teruggegeven vanity-url-component ")
 
@@ -126,7 +126,7 @@ Het is letterlijk een lijst, super simpel
 
 ## Regels herschrijven als Vanity Rules
 
-Waarom zouden wij het gebruiken van herschrijven regels in plaats van het standaardmechanisme noemen dat in AEM zoals hierboven beschreven wordt gebouwd?
+Waarom zouden we het gebruik van herschrijfregels noemen in plaats van het standaardmechanisme dat in AEM is ingebouwd, zoals hierboven beschreven?
 
 Uitgelicht eenvoudig, namespace kwesties, prestaties, en hoger-vlakke logica die beter kunnen worden behandeld.
 
@@ -140,7 +140,7 @@ Deze regel zoekt naar de ijdelheid `/aboutus` en haalt de volledige weg van rend
 
 Het houdt ook op met het verwerken van alle andere regels L-markering (Last), wat betekent dat het niet nodig is om een enorme lijst regels te doorlopen, zoals JCR Resolving.
 
-Samen met het moeten niet volmacht het verzoek, en wachten op de AEM uitgever om deze twee elementen van deze methode te antwoorden maakt het veel uitvoerbaarder.
+De AEM-uitgever hoeft geen proxy voor de aanvraag op te geven en moet wachten tot deze twee elementen van deze methode op de aanvraag reageren. Hierdoor werkt de toepassing veel beter.
 
 Dan is het icing op de cake hier de markering NC (Geen case-Sensitive) die betekent als een klant URI met `/AboutUs` in plaats van `/aboutus` typt het nog werkt.
 
@@ -164,7 +164,7 @@ Hier volgt een voorbeeld van een codefragment of include-bestand in `/etc/httpd/
 
 ## Welke methode en waar
 
-Het gebruik van AEM om ijdelingangen te controleren heeft de volgende voordelen
+Het gebruik van AEM om items met een ijdelheid te besturen, heeft de volgende voordelen
 
 - Auteurs kunnen ze direct maken
 - Ze leven met de inhoud en kunnen worden verpakt met de inhoud
@@ -178,12 +178,12 @@ Het gebruik van `mod_rewrite` om items met een ijdelheid te besturen, heeft de v
 
 Gebruik beide methoden, maar u kunt de volgende adviezen en criteria gebruiken:
 
-- Als de ijdelheid tijdelijk is en lage geplande niveaus van verkeer heeft dan gebruik de AEM ingebouwde eigenschap
+- Als de ijdelheid tijdelijk is en lage geplande niveaus van verkeer heeft, dan gebruik de ingebouwde eigenschap van AEM
 - Als de ijdelheid een nietszeggend eindpunt is dat niet vaak verandert en vaak gebruikt dan gebruik een `mod_rewrite` regel.
-- Als de naamruimte vanity (bijvoorbeeld: `/aboutus` ) opnieuw moet worden gebruikt voor een groot aantal merken op dezelfde AEM, gebruikt u herschrijfregels.
+- Als de naamruimte vanity (bijvoorbeeld: `/aboutus` ) opnieuw moet worden gebruikt voor veel merken op dezelfde AEM-instantie, gebruikt u herschrijfregels.
 
 >[!NOTE]
 >
->Als u de functie AEM ijdelheid wilt gebruiken en naamruimte wilt vermijden, kunt u een naamgevingsconventie maken. Met ijdeloze URL&#39;s die zijn genest als `/brand1/aboutus` , `brand2/aboutus` , `brand3/aboutus` .
+>U kunt een naamgevingsconventie maken als u de functie AEM-ijdelheid wilt gebruiken en naamruimte wilt vermijden. Met ijdeloze URL&#39;s die zijn genest als `/brand1/aboutus` , `brand2/aboutus` , `brand3/aboutus` .
 
 [Volgende -> Gemeenschappelijke Logboekregistratie](./common-logs.md)

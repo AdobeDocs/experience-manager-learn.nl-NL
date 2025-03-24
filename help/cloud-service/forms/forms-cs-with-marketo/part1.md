@@ -2,7 +2,7 @@
 title: AEM Forms as a Cloud Service en Marketo integreren
 description: Leer hoe u AEM Forms en Marketo kunt integreren met het AEM Forms-formuliergegevensmodel.
 feature: Form Data Model,Integration
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 last-substantial-update: 2024-07-24T00:00:00Z
 jira: KT-15876
 exl-id: c3145149-bfa4-4dcb-acde-c359e9348f99
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 # AEM Forms en Marketo integreren
 
-Marketo, een onderdeel van de Adobe, beschikt over software voor marketingautomatisering die is gericht op marketing op basis van account, zoals e-mail, mobiele, sociale, digitale advertenties, webbeheer en analyses.
+Marketo, een onderdeel van Adobe, beschikt over software voor marketingautomatisering die is gericht op marketing op basis van account, zoals e-mail, mobiele, sociale, digitale advertenties, webbeheer en analyses.
 
-Met het formuliergegevensmodel van AEM Forms kunnen we nu AEM formulier naadloos integreren met Marketo.
+Met het formuliergegevensmodel van AEM Forms kunnen we nu AEM-formulieren naadloos integreren met Marketo.
 
 [ leer meer over het Model van de Gegevens van de Vorm ](https://helpx.adobe.com/experience-manager/6-5/forms/using/data-integration.html)
 
@@ -34,7 +34,7 @@ Om te beginnen wordt het hoogst geadviseerd dat u met de volgende onderwerpen ve
 
 ## Vereiste
 
-1. Toegang tot AEM Forms as a Cloud Service
+1. Toegang tot AEM Forms as a Cloud Service-instantie
 1. Kennis hebben van formuliergegevensmodel
 1. Basiskennis van wagerbestanden
 1. Adaptieve Forms maken

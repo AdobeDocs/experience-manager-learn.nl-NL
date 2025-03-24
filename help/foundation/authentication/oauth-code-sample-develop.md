@@ -1,7 +1,7 @@
 ---
-title: OAuth-bereiken ontwikkelen in AEM
+title: OAuth-oppervlakken ontwikkelen in AEM
 description: Adobe Experience Manager die verlengbare OAuth Scopes toestaat voor toegangsbeheer voor middelen van een cliënttoepassing die door een eind - gebruiker wordt toegelaten. Het onderstaande diagram illustreert de aanvraagstroom in de context van AEM.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: User and Groups
 topic: Development
 role: Developer
@@ -9,7 +9,7 @@ level: Experienced
 doc-type: Article
 exl-id: dd37355e-cfc7-4581-ac22-d89c951c22cf
 duration: 27
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
@@ -22,14 +22,14 @@ Het uitbreidbare OAuth werkingsgebied van Adobe Experience Manager staat voor to
 
 ![ Oauth Scopes Flow ](./assets/oauth-code-sample-develop/oauth-scopes-flow.png)
 
-AEM biedt drie bereik:
+AEM biedt drie bereikregels:
 
 * Profiel
 * Offline toegang
 * Repliceren
 
-AEM uitbreidbaar OAuth-bereik kunnen andere aangepaste bereiken worden gedefinieerd. Een aangepast bereik kan bijvoorbeeld worden ontwikkeld en geïmplementeerd voor AEM waarmee een via OAuth geautoriseerde mobiele app kan worden beperkt tot lezen, maar geen elementen mag schrijven.
+Door het uitbreidbare OAuth-bereik van AEM kunnen andere aangepaste bereiken worden gedefinieerd. Een aangepast bereik kan bijvoorbeeld worden ontwikkeld en geïmplementeerd in AEM, zodat een mobiele app die via OAuth is geautoriseerd, alleen kan worden gelezen, maar geen elementen kan schrijven.
 
-OAuth is de aangewezen methode om een cliënttoepassing toe te laten aangezien het een toegangstoken in plaats van het vereisen van de geloofsbrieven van een AEM wordt verstrekt aan die toepassing gebruikt.
+OAuth is de voorkeursmethode voor het autoriseren van een clienttoepassing, aangezien deze een toegangstoken gebruikt in plaats van dat de referenties van een AEM-gebruiker naar die toepassing moeten worden verzonden.
 
 * [ Mening de code ](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/legacy/bundle/src/main/java/com/adobe/acs/samples/authentication/oauth/impl/SampleScopeWithPrivileges.java)

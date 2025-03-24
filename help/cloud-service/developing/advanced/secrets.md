@@ -1,14 +1,14 @@
 ---
 title: Je geheimen in AEM as a Cloud Service beheren
 description: Leer beste praktijken voor het beheren van geheimen binnen AEM as a Cloud Service, gebruikend hulpmiddelen en technieken die door AEM worden verstrekt om uw gevoelige informatie te beschermen, ervoor zorgen uw toepassing veilig en vertrouwelijk blijft.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development, Security
 feature: OSGI, Cloud Manager
 role: Developer
 jira: KT-15880
 level: Intermediate, Experienced
 exl-id: 856b7da4-9ee4-44db-b245-4fdd220e8a4e
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # Beheren van geheimen in AEM as a Cloud Service
 
-Het beheren van geheimen, zoals API sleutels en wachtwoorden, is essentieel voor het handhaven van toepassingsveiligheid. Adobe Experience Manager (AEM) as a Cloud Service biedt robuuste gereedschappen om geheimen veilig af te handelen.
+Het beheren van geheimen, zoals API sleutels en wachtwoorden, is essentieel voor het handhaven van toepassingsveiligheid. Adobe Experience Manager (AEM) as a Cloud Service biedt robuuste tools om geheimen veilig te verwerken.
 
-In deze zelfstudie leert u de beste praktijken voor het beheren van geheimen binnen AEM. Wij zullen de hulpmiddelen en de technieken behandelen die door AEM worden verstrekt om uw gevoelige informatie te beschermen, ervoor zorgen dat uw toepassing veilig en vertrouwelijk blijft.
+In deze zelfstudie leert u de beste praktijken voor het beheren van geheimen in AEM. Wij zullen de hulpmiddelen en de technieken behandelen die door AEM worden verstrekt om uw gevoelige informatie te beschermen, ervoor zorgen uw toepassing veilig en vertrouwelijk blijft.
 
 Deze zelfstudie gaat uit van een praktische kennis van AEM Java-ontwikkeling, OSGi-services, Sling Models en Adobe Cloud Manager.
 
@@ -82,7 +82,7 @@ public interface SecretsManager {
 
 Om geheime waarden in de dienst bloot te stellen OSGi, hen in kaart brengen aan configuraties OSGi gebruikend [ OSGi geheime configuratiewaarden ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values). Definieer de eigenschapnaam OSGi als sleutel om de geheime waarde van de `SecretsManager.getSecret()` methode terug te winnen.
 
-Bepaal de geheimen in het OSGi configuratiedossier `/apps/example/osgiconfig/config/com.example.core.util.impl.SecretsManagerImpl.cfg.json` in uw AEM Maven project. Elke eigenschap vertegenwoordigt een geheim dat in AEM wordt weergegeven, met de waarde ingesteld via Cloud Manager. De sleutel is de OSGi bezitsnaam, die wordt gebruikt om de geheime waarde van de `SecretsManager` dienst terug te winnen.
+Definieer de geheimen in het OSGi-configuratiebestand `/apps/example/osgiconfig/config/com.example.core.util.impl.SecretsManagerImpl.cfg.json` in uw AEM Maven-project. Elke eigenschap vertegenwoordigt een geheim dat in AEM wordt weergegeven, met de waarde ingesteld via Cloud Manager. De sleutel is de OSGi bezitsnaam, die wordt gebruikt om de geheime waarde van de `SecretsManager` dienst terug te winnen.
 
 ```json
 {
@@ -99,7 +99,7 @@ De geheimen kunnen van de dienst worden verbruikt OSGi op diverse manieren, zoal
 
 ### Van verkoopmodel
 
-Sling Models verstrekken vaak bedrijfslogica voor AEM plaatscomponenten. De service `SecretsManager` OSGi kan worden gebruikt via de `@OsgiService` -annotatie en worden gebruikt in het Sling-model om de geheime waarde op te halen.
+Sling Models bieden vaak bedrijfslogica voor AEM-sitecomponenten. De service `SecretsManager` OSGi kan worden gebruikt via de `@OsgiService` -annotatie en worden gebruikt in het Sling-model om de geheime waarde op te halen.
 
 ```java
 import com.example.core.util.SecretsManager;
@@ -127,7 +127,7 @@ public class ExampleDatabaseModelImpl implements ExampleDatabaseModel {
 
 ### Van OSGi-service
 
-De diensten OSGi stellen vaak herbruikbare bedrijfslogica binnen AEM bloot, die door het Verschilderen Modellen, AEM de diensten zoals Werkstromen, of andere douaneOSGi diensten worden gebruikt. De service `SecretsManager` OSGi kan via de `@Reference` -annotatie worden gebruikt en binnen de OSGi-service worden gebruikt om de geheime waarde op te halen.
+De diensten OSGi stellen vaak herbruikbare bedrijfslogica binnen AEM bloot, die door het Verschilderen Modellen, de diensten van AEM zoals Workflows, of andere douaneOSGi diensten wordt gebruikt. De service `SecretsManager` OSGi kan via de `@Reference` -annotatie worden gebruikt en binnen de OSGi-service worden gebruikt om de geheime waarde op te halen.
 
 ```java
 import com.example.core.util.SecretsManager;
@@ -156,15 +156,15 @@ De waarden voor geheimen kunnen via [ Cloud Manager API ](https://developer.adob
 ![ Cloud Manager Secrets Configuratie ](./assets/secrets/cloudmanager-configuration.png)
 
 1. Login aan [ Adobe Cloud Manager ](https://my.cloudmanager.adobe.com).
-1. Selecteer het AEM Programma en het Milieu waarvoor u het geheim wilt plaatsen.
+1. Selecteer het AEM-programma en -omgeving waarvoor u het geheim wilt instellen.
 1. In de mening van de Details van het Milieu, selecteer het **1} lusje van de Configuratie {.**
 1. Selecteer **toevoegen**.
 1. In het dialoogvenster Omgevingsconfiguratie:
    - Ga de geheime veranderlijke naam (b.v., `api_key`) in die in de configuratie OSGi van verwijzingen wordt voorzien.
    - Voer de geheime waarde in.
-   - Selecteer op welke AEM dienst het geheim van toepassing is.
+   - Selecteer op welke AEM-service het geheim van toepassing is.
    - Selecteer **Geheim** als type.
 1. Selecteer **toevoegen** om het geheim voort te zetten.
-1. Voeg zoveel geheimen toe als nodig zijn. Wanneer volledig, uitgezocht **sparen** om de veranderingen onmiddellijk op het AEM milieu toe te passen.
+1. Voeg zoveel geheimen toe als nodig zijn. Wanneer volledig, uitgezocht **sparen** om de veranderingen onmiddellijk op het milieu van AEM toe te passen.
 
-Het gebruiken van configuraties van Cloud Manager voor geheimen verstrekt het voordeel om verschillende waarden voor verschillende milieu&#39;s of de diensten toe te passen en geheimen te roteren zonder de AEM toepassing opnieuw op te stellen.
+Het gebruiken van configuraties van Cloud Manager voor geheimen verstrekt het voordeel om verschillende waarden voor verschillende milieu&#39;s of de diensten toe te passen en geheimen te roteren zonder de toepassing van AEM opnieuw op te stellen.

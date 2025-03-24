@@ -1,7 +1,7 @@
 ---
-title: Carousel-sets maken met AEM Dynamic Media
-description: Carousel-set configureren met Dynamic Media
-version: Cloud Service
+title: Carrouselsets maken met AEM Dynamic Media
+description: Carrousel-set configureren met Dynamic Media
+version: Experience Manager as a Cloud Service
 role: Developer
 level: Intermediate
 topic: Development
@@ -10,15 +10,15 @@ index: y
 doc-type: Tutorial
 exl-id: 4816c688-abec-4bd5-9215-59c16d8fe65d
 duration: 82
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '35'
 ht-degree: 0%
 
 ---
 
-# Carousel-sets maken met AEM Dynamic Media
+# Carrouselsets maken met AEM Dynamic Media
 
-Deze video doorloopt het proces om een Carousel-set te maken met AEM Dynamic Media.
+In deze video wordt het maken van een Carousel-set met AEM Dynamic Media besproken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335380?quality=12&learn=on)

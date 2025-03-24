@@ -1,14 +1,14 @@
 ---
-title: Ontdek de AEM GraphQL API - Geavanceerde concepten van AEM headless - GraphQL
+title: Ontdek de AEM GraphQL API - Geavanceerde concepten van AEM Headless - GraphQL
 description: Verzend GraphQL-query's met behulp van GraphiQL IDE. Leer over geavanceerde vragen gebruikend filters, variabelen, en richtlijnen. Vraag naar fragment- en inhoudsverwijzingen, inclusief verwijzingen uit tekstvelden met meerdere regels.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: bd7916be-8caa-4321-add0-4c9031306d60
 duration: 438
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1307'
 ht-degree: 0%
@@ -38,11 +38,11 @@ In dit hoofdstuk leert u hoe te:
 ## De GraphiQL Explorer gebruiken
 
 
-Het ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) hulpmiddel van de Ontdekkingsreiziger 0} GraphiQL laat ontwikkelaars toe om, en testvragen tegen inhoud op het huidige AEM milieu tot stand te brengen. [ Het hulpmiddel GraphiQL laat ook gebruikers toe om **voort te zetten of** vragen te bewaren die door cliënttoepassingen in een productie het plaatsen moeten worden gebruikt.
+Het ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) hulpmiddel van de Ontdekkingsreiziger 0} GraphiQL laat ontwikkelaars toe om, en testvragen tegen inhoud op het huidige milieu van AEM tot stand te brengen. [ Het hulpmiddel GraphiQL laat ook gebruikers toe om **voort te zetten of** vragen te bewaren die door cliënttoepassingen in een productie het plaatsen moeten worden gebruikt.
 
-Verken vervolgens de kracht van het AEM van de GraphQL API met behulp van de ingebouwde GraphiQL Explorer.
+Verken vervolgens de kracht van de AEM GraphQL API met behulp van de ingebouwde GraphiQL Explorer.
 
-1. Van het AEM scherm van het Begin, navigeer aan **Hulpmiddelen** > **Algemeen** > **de Redacteur van de Vraag van GraphQL**.
+1. Van het scherm van het Begin van AEM, navigeer aan **Hulpmiddelen** > **Algemeen** > **de Redacteur van de Vraag van GraphQL**.
 
    ![ navigeer aan GrahiQL winde ](assets/explore-graphql-api/navigate-graphql-query-editor.png)
 
@@ -61,7 +61,7 @@ Dit zal werkingsgebied alle vragen aan modellen die in het **Gedeelde WKND** pro
 
 In het vorige [ multi-step GraphQL leerprogramma ](../multi-step/explore-graphql-api.md), bepaalde u, en gebruikte, fundamentele voortgeduurde vragen om de gegevens van Fragments van de Inhoud te krijgen. Hier, breidt u deze kennis uit en de gegevens van de Fragmenten van de filterinhoud door variabelen tot de persisted query over te gaan.
 
-Wanneer het ontwikkelen van cliënttoepassingen, gewoonlijk moet u de Fragmenten van de Inhoud filtreren die op dynamische argumenten worden gebaseerd. Met de AEM GraphQL API kunt u deze argumenten als variabelen in een query doorgeven om te voorkomen dat tekenreeksen op de client worden gemaakt tijdens runtime. Voor meer informatie over de variabelen van GraphQL, zie de [ documentatie van GraphQL ](https://graphql.org/learn/queries/#variables).
+Wanneer het ontwikkelen van cliënttoepassingen, gewoonlijk moet u de Fragmenten van de Inhoud filtreren die op dynamische argumenten worden gebaseerd. Met de AEM GraphQL-API kunt u deze argumenten doorgeven als variabelen in een query om te voorkomen dat tekenreeksconstructies op de client worden uitgevoerd. Voor meer informatie over de variabelen van GraphQL, zie de [ documentatie van GraphQL ](https://graphql.org/learn/queries/#variables).
 
 Voor dit voorbeeld, vraag alle Instructeurs die een bepaalde vaardigheid hebben.
 
@@ -603,7 +603,7 @@ Herinner dat in het vorige hoofdstuk op het ontwerpen van de Fragmenten van de I
 
 ## Query uitvoeren voor alle inhoud tegelijk
 
-Tot nu toe zijn er meerdere query&#39;s uitgevoerd om de mogelijkheden van de AEM GraphQL API te illustreren.
+Tot dusver zijn meerdere query&#39;s uitgevoerd om de mogelijkheden van de AEM GraphQL API te illustreren.
 
 De zelfde gegevens konden met slechts één enkele vraag worden teruggewonnen en deze vraag wordt later gebruikt in de cliënttoepassing om extra informatie zoals plaats, teamnaam, teamleden van een avontuur terug te winnen:
 

@@ -1,21 +1,21 @@
 ---
-title: Variabelen in AEM workflow[Deel1]
-description: Variabelen van het type XML, JSON, ArrayList en Document gebruiken in een AEM workflow
+title: Variabelen in AEM Workflow[Deel1]
+description: Variabelen van het type XML, JSON, ArrayList en Document gebruiken in een AEM-workflow
 feature: Adaptive Forms, Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: f9782684-3a74-4080-9680-589d3f901617
 duration: 561
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
 
 ---
 
-# XML-variabelen in AEM workflow
+# XML-variabelen in AEM-workflow
 
 Variabelen van het type XML worden doorgaans gebruikt wanneer u een op XSD gebaseerd adaptief formulier hebt en waarden wilt extraheren uit de verzending van het adaptieve formulier in uw workflow.
 
@@ -55,7 +55,7 @@ De adaptieve formuliergegevens worden opgeslagen onder het gegevenselement, zoal
 
 Voer de volgende stappen uit om de middelen op uw systeem te laten werken:
 
-* [Elementen downloaden en importeren in AEM met pakketbeheer](assets/xmlandstringvariable.zip)
+* [De middelen downloaden en importeren naar AEM met behulp van pakketbeheer](assets/xmlandstringvariable.zip)
 * [ Onderzoek het werkschemamodel ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) om de variabelen te begrijpen die in het werkschema worden gebruikt
 * [ vorm de E-maildienst ](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [ open de Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)

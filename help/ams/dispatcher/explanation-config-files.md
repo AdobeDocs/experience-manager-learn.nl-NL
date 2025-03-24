@@ -1,7 +1,7 @@
 ---
 title: Uitleg van Dispatcher-configuratiebestanden
 description: Begrijp configuratiedossiers, noemende overeenkomsten en meer.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: ec8e2804-1fd6-4e95-af6d-07d840069c8b
 duration: 379
-source-git-commit: ef9c70e7895176e3cd535141a5de3c49886e666e
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 [&lt;- Vorige: basisbestandsindeling](./basic-file-layout.md)
 
-Dit document zal onderbreken en elk van de configuratiedossiers verklaren die in een standaard gebouwde server van Dispatcher worden opgesteld die in Adobe Managed Services wordt voorzien. Het gebruik ervan, de naamgevingsconventie, enz.
+In dit document worden de configuratiebestanden die zijn geïmplementeerd op een standaard ingebouwde Dispatcher-server die is ingericht in Adobe Managed Services, uitgesplitst en toegelicht. Het gebruik ervan, de naamgevingsconventie, enz.
 
 ## Naamgevingsconventie
 
@@ -42,14 +42,14 @@ Apache Web Server geeft eigenlijk niet om wat de bestandsextensie is van een bes
 
 | Bestand | Bestandsbestemming | Beschrijving |
 | --- | --- | --- |
-| BESTANDSNAAM `.any` | `/etc/httpd/conf.dispatcher.d/` | De AEM Dispatcher Apache Module biedt de instellingen van `*.any` bestanden. Het standaard bovenliggende include-bestand is `conf.dispatcher.d/dispatcher.any` |
+| BESTANDSNAAM `.any` | `/etc/httpd/conf.dispatcher.d/` | De AEM Dispatcher Apache Module biedt de instellingen van `*.any` -bestanden. Het standaard bovenliggende include-bestand is `conf.dispatcher.d/dispatcher.any` |
 | BESTANDSNAAM `_farm.any` | Staand: `/etc/httpd/conf.dispatcher.d/available_farms/`<br> Actief: `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><b> Nota:</b> deze landbouwbedrijfdossiers moeten niet in de `enabled_farms` omslag worden gekopieerd maar gebruik `symlinks` aan een relatieve weg aan de `available_farms/*_farm.any` dossier <br/>`*_farm.any` dossiers zijn inbegrepen binnen het `conf.dispatcher.d/dispatcher.any` dossier. Deze ouderlandbouwbedrijfdossiers bestaan om modulegedrag voor elk terug te geven of websitetype te controleren. Bestanden worden gemaakt in de map `available_farms` en ingeschakeld met een `symlink` in de map `enabled_farms` .  <br/> het auto-omvat hen door naam van het `dispatcher.any` dossier.</b> de landbouwbedrijfdossiers van 0} Basislijn {beginnen met `000_` om ervoor te zorgen zij eerst worden geladen.<br/><b></b> het landbouwbedrijfdossiers van de Douane <br><b> zouden na door hun aantalregeling bij `100_` te beginnen moeten worden geladen om behoorlijk te verzekeren omvat gedrag. |
 | BESTANDSNAAM `_filters.any` | `/etc/httpd/conf.dispatcher.d/filters/` | `*_filters.any` -bestanden worden opgenomen vanuit de `conf.dispatcher.d/enabled_farms/*_farm.any` -bestanden. Elk landbouwbedrijf heeft een reeks regels die veranderen welk verkeer uit zou moeten worden gefiltreerd en niet het aan renderers maken. |
 | BESTANDSNAAM `_vhosts.any` | `/etc/httpd/conf.dispatcher.d/vhosts/` | `*_vhosts.any` -bestanden worden opgenomen vanuit de `conf.dispatcher.d/enabled_farms/*_farm.any` -bestanden. Deze bestanden zijn een lijst met hostnamen of uri-paden die door blob-overeenkomsten moeten worden aangepast om te bepalen welke renderer moet worden gebruikt om die aanvraag te bedienen |
 | BESTANDSNAAM `_cache.any` | `/etc/httpd/conf.dispatcher.d/cache/` | `*_cache.any` -bestanden worden opgenomen vanuit de `conf.dispatcher.d/enabled_farms/*_farm.any` -bestanden. Deze bestanden geven aan welke items in cache worden geplaatst en welke niet |
 | BESTANDSNAAM `_invalidate_allowed.any` | `/etc/httpd/conf.dispatcher.d/cache/` | `*_invalidate_allowed.any` -bestanden worden opgenomen in de `conf.dispatcher.d/enabled_farms/*_farm.any` -bestanden. Zij specificeren welke IP adressen worden toegestaan om gelijke en ongeldigingsverzoeken te verzenden. |
 | BESTANDSNAAM `_clientheaders.any` | `/etc/httpd/conf.dispatcher.d/clientheaders/` | `*_clientheaders.any` -bestanden worden opgenomen in de `conf.dispatcher.d/enabled_farms/*_farm.any` -bestanden. Zij specificeren welke cliëntkopballen tot elke renderer zouden moeten worden overgegaan. |
-| BESTANDSNAAM `_renders.any` | `/etc/httpd/conf.dispatcher.d/renders/` | `*_renders.any` -bestanden worden opgenomen in de `conf.dispatcher.d/enabled_farms/*_farm.any` -bestanden. Zij specificeren IP, haven, en onderbrekingsmontages voor elke renderer. Een juiste renderer kan een livecycle-server of een AEM zijn waar de Dispatcher de aanvragen van |
+| BESTANDSNAAM `_renders.any` | `/etc/httpd/conf.dispatcher.d/renders/` | `*_renders.any` -bestanden worden opgenomen in de `conf.dispatcher.d/enabled_farms/*_farm.any` -bestanden. Zij specificeren IP, haven, en onderbrekingsmontages voor elke renderer. Een juiste renderer kan een livecycle-server of een AEM-systeem zijn waar de Dispatcher de aanvragen van |
 
 ## Vermijde problemen
 

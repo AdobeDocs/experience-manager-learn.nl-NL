@@ -1,7 +1,7 @@
 ---
 title: AEM API's op basis van OpenAPI aanroepen met OAuth Web App-verificatie
 description: Leer hoe u op OpenAPI gebaseerde AEM API's op AEM as a Cloud Service oproept met gebruikersgebaseerde verificatie van een aangepaste webapp die gebruikmaakt van OAuth Web App.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
 role: Architect, Developer, Leader
@@ -11,7 +11,8 @@ jira: KT-16718
 thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
-source-git-commit: e4cf47e14fa7dfc39ab4193d35ba9f604eabf99f
+exl-id: 9cf7c318-2be4-4b26-bd6f-0c80d002db45
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2245'
 ht-degree: 0%
@@ -655,4 +656,3 @@ U kunt de zelfstudie gebruiken als referentie om de op OpenAPI gebaseerde AEM AP
 - [ machtigt Verzoek ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/#authorize-request)
 - [ het Ophalen tokens van de Toegang ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/#fetching-access-tokens)
 - [ het Verfrissen van de tokens van de Toegang ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/#refreshing-access-tokens)
-

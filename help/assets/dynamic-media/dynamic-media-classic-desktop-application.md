@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media Classic Desktop-toepassing gebruiken
-description: Adobe introduceert een bureaubladtoepassing voor Dynamic Media Classic-gebruikers die niet langer afhankelijk zijn van de technologie van Adobe Flash in de browser.
+description: Adobe introduceert een bureaubladtoepassing voor Dynamic Media Classic-gebruikers die in de browser niet langer afhankelijk zijn van Adobe Flash-technologie.
 feature: Dynamic Media Classic
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-5808
 thumbnail: 36645.jpg
 topic: Content Management
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 1600c0c0-0054-49ce-9b99-f8e6e29d6132
 duration: 189
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 # Dynamic Media Classic Desktop-toepassing gebruiken{#using-dynamic-media-desktop-application}
 
-Adobe introduceert een desktoptoepassing voor Dynamic Media Classic die een vergelijkbare ervaring biedt als een browser en een functioneel equivalente interface die niet afhankelijk is van de speler van de Adobe Flash.
+Adobe introduceert een bureaubladtoepassing voor Dynamic Media Classic die een vergelijkbare ervaring biedt als een browser en een functioneel equivalente interface die niet afhankelijk is van Adobe Flash Player.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36645?quality=12&learn=on)
 
 >[!NOTE]
 >
-> We raden u aan de nieuwe Adobe Dynamic Media Classic-bureaubladtoepassing uiterlijk op 1 oktober 2020 te installeren. Als u dit doet, hebt u een soepele overgang voordat de Flash Player van de Adobe op 31 december 2020 wordt afgekeurd. Op die datum kunt u zich niet meer aanmelden bij de browserversie van de Adobe Dynamic Media Classic-gebruikersinterface met het label Scene7 Publishing System in het product.
+> We raden u aan de nieuwe Adobe Dynamic Media Classic-bureaubladtoepassing uiterlijk op 1 oktober 2020 te installeren. Zo hebt u een vloeiende overgang voordat Adobe Flash Player op 31 december 2020 wordt vervangen. Op die datum, zult u niet meer aan de browser versie van Adobe Dynamic Media Classic kunnen het programma openen gebruikersinterface, die als het Publiceren Scene7 Systeem in het product wordt geëtiketteerd.
 
 ## Systeemvereisten
 
@@ -38,5 +38,5 @@ De Adobe Dynamic Media Classic-bureaubladtoepassing is compatibel met de volgend
 ## Ondersteunende materialen
 
 * [ de documentatie van de Toepassing van de Desktop van Adobe Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
-* [ Adobe Dynamic Media vaak Gestelde Vragen ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
+* [ Dynamische Media van Adobe Veelgestelde Vragen ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
 * [ Download Dynamic Media Classic Desktop app ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)

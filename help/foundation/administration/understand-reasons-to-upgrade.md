@@ -1,7 +1,7 @@
 ---
 title: Redenen voor upgrade begrijpen
 description: Een uitsplitsing op hoog niveau van de belangrijkste functies voor klanten die een upgrade naar de nieuwste versie van Adobe Experience Manager 6 overwegen.
-version: 6.5
+version: Experience Manager 6.5
 topic: Upgrade
 feature: Release Information
 role: Leader, Architect, Developer, Admin, User
@@ -9,7 +9,7 @@ level: Beginner
 doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
 duration: 538
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2588'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Een uitsplitsing op hoog niveau van de belangrijkste functies voor klanten die een upgrade naar de nieuwste versie van Adobe Experience Manager 6 overwegen.
 
-## Belangrijke functies voor upgrades naar AEM 6.5
+## Belangrijke functies voor de upgrade naar AEM 6.5
 
 + [ Adobe Experience Manager 6.5 de Nota&#39;s van de Versie ](https://helpx.adobe.com/experience-manager/6-5/release-notes.html)
 
@@ -34,38 +34,38 @@ Adobe Experience Manager 6.5 blijft de stabiliteit, prestaties en draagbaarheid 
 
 AEM Sites introduceert een aantal functies die zijn ontworpen om het maken en ontwikkelen van websites te versnellen:
 
-+ **SPA de steun van de Redacteur** laat SPA (enig-paginatoepassingen) toe om volledig in AEM worden ontworpen, ondersteunend een rijke, Markering-vriendschappelijke auteurservaring.
-+_ **SDK van JavaScript**, een Uitrusting van het Begin van het SPA en het steunen bouwt hulpmiddelen, staan front-end ontwikkelaars toe om SPA Redacteur-compatibele enige pagina-toepassingen onafhankelijk van AEM te ontwikkelen.
++ **steun van de Redacteur van het KUUROORD** {staat KUUROORD (enig-paginatoepassingen) toe om volledig in AEM worden ontworpen, ondersteunend een rijke, Marketer-vriendschappelijke auteurservaring.
++_ **JavaScript SDK**, een Uitrusting van het Begin van het Project van het KUUROORD en het steunen bouwt hulpmiddelen, staan front-end ontwikkelaars toe om SPA Redacteur-Compatibele enige pagina-toepassingen onafhankelijk van AEM te ontwikkelen.
 + **Componenten van de Kern** voegt een veelheid van nieuwe componenten, de Bibliotheek van de a **Component** evenals een verscheidenheid van verhogingen aan bestaande Componenten van de Kern toe.
 + Verdere **verbeteringen van de Vertalingen** stroomlijnen vertaling van AEM Sites.
 
 ### Vloeiende ervaringen
 
-AEM blijft Fluid Ervaring omarmen met nieuwe en verbeterde gereedschappen die het gebruik van inhoud buiten AEM vergemakkelijken.
+AEM blijft Fluid Experience met nieuwe en verbeterde gereedschappen die het gebruik van inhoud buiten AEM vergemakkelijken.
 
 + {de Fragmenten van de Inhoud **de Vergelijking/Diff van de steunversie en Annotaties van 0}.**
-+ **AEM Assets HTTP API** steunt het blootstellen van **de Fragmenten van de Inhoud** direct in DAM als **JSON**.
-  {de Fragmenten van de Ervaring 1} steunen **fullText Onderzoek** en **AEM de Invalidatie van het Geheime voorgeheugen van Dispatcher** voor het van verwijzingen voorzien **Pagina&#39;s**.****
++ **AEM HTTP API** steunt het blootstellen van **de Fragmenten van de Inhoud** direct in DAM als **JSON**.
+  **steun van Fragmenten van de Ervaring** Fulltext Onderzoek **en** de Invalidatie van het Geheime voorgeheugen van AEM Dispatcher **voor het van verwijzingen voorzien** Pagina&#39;s **.**
 
 ### Beheer van bedrijfsmiddelen
 
 AEM Assets blijft voortbouwen op zijn rijke reeks mogelijkheden voor vermogensbeheer om het gebruik, het beheer en het begrip van het DAM te verbeteren. AEM 6.5 blijft de integratie tussen Adobe Creative Cloud en creatieve workflows verbeteren.
 
-+ **de Verbinding van Activa van de Adobe** verbindt direct creatieve producten met AEM Assets van de hulpmiddelen van Adobe Creative Cloud.
++ **de Verbinding van de Activa van Adobe** verbindt direct creatieve producten met AEM Assets van de hulpmiddelen van Adobe Creative Cloud.
 + **Adobe Stock** de integratie staat directe toegang tot beelden van Adobe Stock direct van de ervaring van AEM Assets toe, die tot een naadloze ervaring van de inhoudsontdekking leidt.
-+ **AEM de App van de Desktop** geeft versie 2.0 vrij en herziet zichzelf terwijl het verbeteren van prestaties en stabiliteit.
++ **de Desktop App van AEM** geeft versie 2.0 vrij en herziet zichzelf terwijl het verbeteren van prestaties en stabiliteit.
 + **Verbonden Assets** steunt afzonderlijke instanties van AEM Sites om tot activa van een verschillende instantie van AEM Assets foutloos toegang te hebben en te gebruiken.
-+ Bijgewerkte videosteun in **Dynamic Media**, met inbegrip van **360 Video** en **Douane Videominiaturen**.
++ Bijgewerkte videosteun in **Dynamische Media**, met inbegrip van **360 Video** en **Douane Videominiaturen**.
 
 ### Inhoudsinformatie
 
-AEM blijft bouwen aan zijn integratie met slimme technologieën, door gebruik te maken van machinaal leren en kunstmatige intelligentie om alle ervaringen te verbeteren.
+AEM blijft zijn integratie met slimme technologieën opbouwen, door gebruik te maken van machinaal leren en kunstmatige intelligentie om alle ervaringen te verbeteren.
 
-+ **voegt de Vermogensverbinding van de Adobe** Visueel Onderzoek van de Gelijkwaardigheid **toe, toestaand voor gelijkaardige beelden om gemakkelijk worden ontdekt en binnen** hulpmiddelen van Adobe Creative Cloud **worden gebruikt.**
++ **voegt de Vermogensverbinding van Adobe** toe **Visueel Onderzoek van de Gelijksgelijkenis**, dat voor gelijkaardige beelden toestaat gemakkelijk worden ontdekt en binnen **hulpmiddelen van Adobe Creative Cloud** worden gebruikt.
 
 ### Integrations
 
-AEM groeit zijn vermogen om met andere diensten van Adobe te integreren:
+AEM is beter in staat om te integreren met andere Adobe-services:
 
 + **Fragmenten van de Ervaring** verdiept hun integratie met **Adobe Target** door **Uitvoer als JSON** aan Adobe Target en de capaciteit te steunen om de op fragment-Gebaseerde aanbiedingen van de Ervaring **van** Adobe Target **te schrappen.**
 
@@ -73,8 +73,8 @@ AEM groeit zijn vermogen om met andere diensten van Adobe te integreren:
 
 [ Cloud Manager ](https://adobe.ly/2HODmsv), exclusief aan Adobe Managed Services (AMS) klanten, biedt de volgende eigenschappen aan:
 
-+ Cloud Manager steunt breidt AEM plaatsingssteun van AEM Sites tot **AEM Assets** uit, met inbegrip van **geautomatiseerde prestaties het testen van activa verwerking**.
-+ **auto-schrapt** van de AEM rij van Publish bij vooraf bepaalde drempels, verzekert een optimale eindgebruikerervaring.
++ Cloud Manager steunt breidt de plaatsingssteun van AEM van AEM Sites tot **AEM Assets** uit, met inbegrip van **geautomatiseerde prestaties het testen van activa verwerking**.
++ **auto-schrapt** van AEM publiceer rij bij vooraf bepaalde drempels, verzekert een optimale eindgebruikerervaring.
 + **niet-productiepijpleidingen** staan ontwikkelingsteams toe om hefboomwerking Cloud Manager onophoudelijk code-kwaliteit te controleren en aan lagere milieu&#39;s (Ontwikkeling en QA) op te stellen.
 + **CI/CD de Pijpleiding APIs** staat klanten toe om met Cloud Manager programmatically in werking te stellen, die integratiemogelijkheden met de infrastructuur van de on-premise ontwikkeling verdiepen.
 
@@ -82,7 +82,7 @@ AEM groeit zijn vermogen om met andere diensten van Adobe te integreren:
 
 Hieronder ziet u een matrix van de belangrijkste basisfuncties die AEM biedt. Sommige van deze functies zijn geïntroduceerd in oudere versies van incrementele verbeteringen die in elke versie zijn toegevoegd.
 
-+ [ AEM de versienota&#39;s van de Stichting ](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html)
++ [ de versienota&#39;s van de Stichting van AEM ](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html)
 
 ***✔ <sup> + </sup> significante verhogingen aan de eigenschap in deze versie.***
 
@@ -171,7 +171,7 @@ Hieronder ziet u een matrix van de belangrijkste basisfuncties die AEM biedt. So
         </tr>
         <tr>
             <td><strong> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/aem-with-mongodb.html" target="_blank"> prestaties en stabiliteit MongoMK </a>:</strong>
-            Sinds de introductie van MongoMK met AEM 6.0 zijn er verdere verbeteringen aangebracht.</td>
+            Sinds de introductie in AEM 6.0 zijn er verdere verbeteringen aangebracht in MongoMK.</td>
             <td> </td>
             <td> </td>
             <td>✔</td>
@@ -226,7 +226,7 @@ Hieronder ziet u een matrix van de belangrijkste basisfuncties die AEM biedt. So
         </tr>
         <tr>
             <td><strong> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/upgrade.html" target="_blank"> Verbeteringen van de Verbetering </a>:</strong>
-            Verbeteringen voor upgrades maken het mogelijk AEM eenvoudiger en sneller te upgraden.</td>
+            Verbeteringen voor upgrades maken upgrades van AEM eenvoudiger en sneller op locatie mogelijk.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -274,7 +274,7 @@ Hieronder ziet u een matrix van de belangrijkste basisfuncties die AEM biedt. So
 
 ## Beveiligingsfuncties
 
-Hieronder ziet u een matrix van de belangrijkste beveiligingsfuncties die AEM biedt. Sommige van deze functies zijn geïntroduceerd in oudere versies van incrementele verbeteringen die in elke versie zijn toegevoegd.
+Hieronder vindt u een matrix met belangrijke beveiligingsfuncties die door AEM worden aangeboden. Sommige van deze functies zijn geïntroduceerd in oudere versies van incrementele verbeteringen die in elke versie zijn toegevoegd.
 
 + [ de versienota&#39;s van de Veiligheid van de Veiligheid ](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html#Security)
 
@@ -410,7 +410,7 @@ Hieronder ziet u een matrix van de belangrijkste beveiligingsfuncties die AEM bi
     </tr>
     <tr>
         <td><strong> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank"> Steun van de Authentificatie van Adobe IMS </a><br>
- </strong> Exclusief aan Adobe Managed Services (AMS), beheer centraal toegang tot AEM instanties van de Auteur via het Systeem van Adobe IMS (Identity Management).</td>
+ </strong> Uitsluitend aan Adobe Managed Services (AMS), beheer centraal toegang tot de instanties van de Auteur van AEM via het Systeem van Adobe IMS (Identity Management).</td>
         <td> </td>
         <td> </td>
         <td> </td>
@@ -424,7 +424,7 @@ Hieronder ziet u een matrix van de belangrijkste beveiligingsfuncties die AEM bi
 
 ## Sitefuncties
 
-Hieronder ziet u een matrix van belangrijke Sites-functies die AEM biedt. Sommige van deze functies zijn geïntroduceerd in oudere versies van incrementele verbeteringen die in elke versie zijn toegevoegd.
+Hieronder ziet u een matrix van belangrijke Sites-functies die door AEM worden aangeboden. Sommige van deze functies zijn geïntroduceerd in oudere versies van incrementele verbeteringen die in elke versie zijn toegevoegd.
 
 + [ de versienota&#39;s van AEM Sites ](https://helpx.adobe.com/experience-manager/6-5/release-notes/sites.html)
 
@@ -491,8 +491,8 @@ Hieronder ziet u een matrix van belangrijke Sites-functies die AEM biedt. Sommig
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/spa-overview.html" target="_blank"> SPA Redacteur </a>:</strong>
-            Creëer authorable, enaging Web Experience using Single-Page Application (SPA) frameworks die gebaseerd zijn op React.</td>
+            <td><strong> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/spa-overview.html" target="_blank"> Redacteur van het KUUROORD </a>:</strong>
+            Creëer authorable, enaging Webervaringen gebruikend het kader van de Toepassing van de enig-Pagina (SPA) die op React wordt voortgebouwd.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -503,7 +503,7 @@ Hieronder ziet u een matrix van belangrijke Sites-functies die AEM biedt. Sommig
         </tr>
         <tr>
             <td><strong> Systeem van de Stijl:</strong>
-            Verhoog het hergebruik van AEM component door de visuele weergave te definiëren met behulp van het in-context-stijlsysteem.</td>
+            Verhoog het hergebruik van AEM-componenten door hun visuele weergave te definiëren met behulp van het in-context-stijlsysteem.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -580,7 +580,7 @@ Hieronder ziet u een matrix van belangrijke Sites-functies die AEM biedt. Sommig
         </tr>
         <tr>
             <td><strong> de Diensten van de Inhoud:</strong>
-            Exporteer inhoud van AEM als JSON voor gebruik op verschillende apparaten en toepassingen.</td>
+            Exporteer inhoud uit AEM als JSON voor gebruik op verschillende apparaten en toepassingen.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -624,7 +624,7 @@ Hieronder ziet u een matrix van belangrijke Sites-functies die AEM biedt. Sommig
         </tr>
         <tr>
             <td><strong> <a href="https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html" target="_blank"> Markeringen in de Integratie van Adobe Experience Platform </a>:</strong>
-            Integreer met de volgende generatie cloudservice voor tagbeheer van de Adobe.</td>
+            Integreer met de Adobe-service voor het beheer van tags van de volgende generatie.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -672,7 +672,7 @@ Hieronder ziet u een matrix van belangrijke Sites-functies die AEM biedt. Sommig
 
 ## Assets-functies
 
-Hieronder ziet u een matrix van belangrijke Assets-functies die AEM biedt. Sommige van deze functies zijn geïntroduceerd in oudere versies van incrementele verbeteringen die in elke versie zijn toegevoegd.
+Hieronder vindt u een matrix met belangrijke Assets-functies die AEM biedt. Sommige van deze functies zijn geïntroduceerd in oudere versies van incrementele verbeteringen die in elke versie zijn toegevoegd.
 
 + [ de versienota&#39;s van AEM Assets ](https://helpx.adobe.com/experience-manager/6-5/release-notes/assets.html)
 
@@ -784,7 +784,7 @@ Hieronder ziet u een matrix van belangrijke Assets-functies die AEM biedt. Sommi
         </tr>
         <tr>
             <td><strong> <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/touch-ui-asset-insights.html" target="_blank"> Inzichten van Activa </a>:</strong>
-            Gebruik Adobe Analytics om de interactie van klanten met digitale middelen en de weergave in AEM vast te leggen.</td>
+            Gebruik Adobe Analytics om de interactie van klanten met digitale middelen en weergave in AEM vast te leggen.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -828,7 +828,7 @@ Hieronder ziet u een matrix van belangrijke Assets-functies die AEM biedt. Sommi
         </tr>
         <tr>
             <td><strong> <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/indesign.html" target="_blank"> de Integratie van Adobe InDesign Server </a>:</strong>
-            Produccatalogi genereren. Maak brochures, flyers en druk advertenties op basis van sjablonen voor InDesigns.</td>
+            Produccatalogi genereren. Maak brochures, flyers en druk advertenties op basis van InDesign-sjablonen.</td>
             <td> </td>
             <td> </td>
             <td>✔</td>
@@ -838,8 +838,8 @@ Hieronder ziet u een matrix van belangrijke Assets-functies die AEM biedt. Sommi
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong> <a href="https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html" target="_blank"> AEM Desktop App </a>:</strong>
-            Synchroniseer middelen met het lokale bureaublad voor bewerking met Creative Suite producten.
+            <td><strong> <a href="https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html" target="_blank"> App van de Desktop van AEM </a>:</strong>
+            Synchroniseer middelen met het lokale bureaublad voor bewerking met Creative Suite-producten.
             </td>
             <td> </td>
             <td> </td>
@@ -850,8 +850,8 @@ Hieronder ziet u een matrix van belangrijke Assets-functies die AEM biedt. Sommi
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong> <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank"> de Bibliotheek van het Beelden van de Adobe </a>:</strong>
-                <br> Photoshop- en Acrobat-PDF-bibliotheken die worden gebruikt voor bestanden van hoge kwaliteit.</td>
+            <td><strong> <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank"> de Bibliotheek van de Beelden van Adobe </a>:</strong>
+                <br> Photoshop- en Acrobat PDF-bibliotheken die worden gebruikt voor het manipuleren van bestanden van hoge kwaliteit.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -861,8 +861,8 @@ Hieronder ziet u een matrix van belangrijke Assets-functies die AEM biedt. Sommi
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong> <a href="https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html" target="_blank"> de Verbinding van Activa van de Adobe </a>:</strong>
-            Open AEM Assets rechtstreeks vanuit de Adobe Cloud-toepassingen maken.</td>
+            <td><strong> <a href="https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html" target="_blank"> de Verbinding van Activa van Adobe </a>:</strong>
+            Open AEM Assets rechtstreeks vanuit Adobe Create Cloud-toepassingen.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -873,7 +873,7 @@ Hieronder ziet u een matrix van belangrijke Assets-functies die AEM biedt. Sommi
         </tr>
         <tr>
             <td><strong> <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/aem-assets-adobe-stock.html" target="_blank"> de Integratie van Adobe Stock </a>:</strong>
-            Toegang tot en gebruik Adobe Stock-beelden naadloos rechtstreeks vanuit AEM.</td>
+            Toegang tot en gebruik Adobe Stock-afbeeldingen naadloos rechtstreeks vanuit AEM.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -895,7 +895,7 @@ Hieronder ziet u een matrix van belangrijke Assets-functies die AEM biedt. Sommi
 <table>
     <thead>
         <tr>
-            <td>Dynamic Media-functie</td>
+            <td>Dynamische mediafunctie</td>
             <td>5,6 x</td>
             <td>6,0</td>
             <td>6,1</td>
@@ -964,7 +964,7 @@ Hieronder ziet u een matrix van belangrijke Assets-functies die AEM biedt. Sommi
         </tr>
         <tr>
             <td><strong> <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/delivering-dynamic-media-assets.html" target="_blank"> Levering </a>:</strong>
-            Flexibele opties voor het koppelen of insluiten van Dynamic Media-inhoud en levering via HTTP/2-protocol.</td>
+            Flexibele opties voor het koppelen of insluiten van dynamische media-inhoud en levering via HTTP/2-protocol.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -974,7 +974,7 @@ Hieronder ziet u een matrix van belangrijke Assets-functies die AEM biedt. Sommi
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong> Verbetering van Scene7 aan Dynamic Media:</strong>
+            <td><strong> Verbetering van Scene7 aan Dynamische Media:</strong>
             Mogelijkheid om hoofdelementen te migreren en door te gaan met het gebruik van bestaande S7-URL's.</td>
             <td> </td>
             <td> </td>

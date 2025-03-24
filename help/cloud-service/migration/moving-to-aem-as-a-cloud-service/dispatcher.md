@@ -1,7 +1,7 @@
 ---
 title: Dispatcher configureren bij overgang naar AEM as a Cloud Service
-description: Meer informatie over belangrijke wijzigingen in AEM Dispatcher for AEM as a Cloud Service, het Dispatcher-conversieprogramma en het gebruik van de Dispatcher Tools SDK.
-version: Cloud Service
+description: Meer informatie over opmerkelijke wijzigingen in AEM Dispatcher for AEM as a Cloud Service, het Dispatcher-conversieprogramma en het gebruik van Dispatcher Tools SDK.
+version: Experience Manager as a Cloud Service
 feature: Dispatcher
 topic: Migration, Upgrade
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8633
 thumbnail: 336962.jpeg
 exl-id: 81397b21-b4f3-4024-a6da-a9b681453eff
 duration: 1618
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Dispatcher
 
-Meer informatie over AEM Dispatcher for AEM as a Cloud Service, waarbij u zich richt op opmerkelijke wijzigingen van Dispatcher voor AEM 6, het Dispatcher-conversieprogramma en het gebruik van de SDK van Dispatcher Tools.
+Meer informatie over AEM Dispatcher for AEM as a Cloud Service, waarbij u zich richt op opmerkelijke wijzigingen ten opzichte van Dispatcher for AEM 6, het Dispatcher conversion tool en het gebruik van Dispatcher Tools SDK.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336962?quality=12&learn=on)
 
@@ -28,13 +28,13 @@ Meer informatie over AEM Dispatcher for AEM as a Cloud Service, waarbij u zich r
 
 ![Dispatcher Converter](./assets/dispatcher-converter-diagram.png)
 
-Als deel van het refactoring van uw codebasis, gebruik [ AEM de Convertor van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html) om bestaande configuraties op-gebouw of van de Adobe Managed Services Dispatcher aan AEM as a Cloud Service compatibele configuratie van Dispatcher te bekrachtigen.
+Als deel van het refactoring van uw codebasis, gebruik de [ Convertor van AEM Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html) aan refactor bestaande op-gebouw of Dispatcher van Adobe configuraties aan de compatibele configuratie van Dispatcher van AEM as a Cloud Service.
 
 ## Belangrijkste activiteiten
 
 + Gebruik het [ hulpmiddel van de Convertor van Adobe I/O Dispatcher ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#aio-aem-migrationdispatcher-converter) om een bestaande configuratie van Dispatcher te migreren.
-+ Verwijs de module van Dispatcher van [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud) als beste praktijken.
-+ [ Opstelling lokale Hulpmiddelen van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) om verzender te bevestigen, alvorens in een milieu van de Cloud Service te testen.
++ Verwijs de module van Dispatcher van het [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud) als beste praktijken.
++ [ Opstelling lokale Hulpmiddelen van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) om verzender te bevestigen, alvorens in een milieu van Cloud Service te testen.
 
 ## Handbeweging
 
@@ -61,7 +61,7 @@ Zorg er ook voor dat u de vorige hands-on oefening hebt uitgevoerd:
         <td style="width:100%;margin-bottom:1rem;">
             <div style="font-size:1.25rem;font-weight:400;">Handmatig aan met Dispatcher Tools</div>
             <p style="margin:1rem 0">
-                Ontdek het gebruik van de Dispatcher Tools van de AEM SDK om Dispatcher-configuraties te valideren en AEM Dispatcher lokaal uit te voeren met Docker.
+                Ontdek het gebruik van de AEM SDK Dispatcher Tools om Dispatcher-configuraties te valideren en AEM Dispatcher lokaal uit te voeren met Docker.
             </p>
             <a  rel="noreferrer"
                 target="_blank"

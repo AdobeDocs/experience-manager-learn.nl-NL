@@ -1,7 +1,7 @@
 ---
 title: Werk volledig-stapel AEM project bij om front-end pijpleiding te gebruiken
 description: Leer hoe te om volledig-stapel AEM project bij te werken om het voor de front-end pijpleiding toe te laten, zodat bouwt het slechts en stelt de front-end artefacten op.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: c4a961fb-e440-4f78-b40d-e8049078b3c0
 duration: 307
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -28,7 +28,7 @@ In dit hoofdstuk, maken wij config veranderingen in het __project van Plaatsen W
 
 * Werk volledig-stapelproject bij om de front-end pijpleiding te gebruiken
 
-## Overzicht van configuratieveranderingen in het full-stack AEM project
+## Overzicht van configuratieveranderingen in het full-stack AEM-project
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409419?quality=12&learn=on)
 
@@ -37,7 +37,7 @@ In dit hoofdstuk, maken wij config veranderingen in het __project van Plaatsen W
 Dit is een meerdelig leerprogramma en men veronderstelt dat u [ &quot;ui.frontend&quot;Module ](./review-uifrontend-module.md) hebt herzien.
 
 
-## Veranderingen in het full-stack AEM project
+## Wijzigingen in het AEM-project met volledige stapel
 
 Er zijn drie project-verwante config veranderingen en een stijlverandering om voor een testlooppas op te stellen, zo in totaal vier specifieke veranderingen in het project WKND om het voor het front-end pijpleidingscontract toe te laten.
 
@@ -158,7 +158,7 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
 
    >[!TIP]
    >
-   >    Zie volledige [ HtmlPageItemsConfig ](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/.content.xml) in het __AEM WKND project van Plaatsen__.
+   >    Zie volledige [ HtmlPageItemsConfig ](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/.content.xml) in het __project van de Plaatsen van AEM WKND__.
 
 
    * Vervolgens wordt de waarde van `com.adobe.aem.wcm.site.manager.config.SiteConfig` met de waarde van `themePackageName` gelijk aan de waarde van de eigenschap `package.json` en `name` en `siteTemplatePath` gewijzigd, waarbij wordt verwezen naar de waarde van een `/libs/wcm/core/site-templates/aem-site-template-stub-2.0.0` stub-pad.
@@ -176,7 +176,7 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
 
    >[!TIP]
    >
-   >    Zie, volledige [ SiteConfig ](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.aem.wcm.site.manager.config.SiteConfig/.content.xml) in het __AEM WKND project van Plaatsen__.
+   >    Zie, volledige [ SiteConfig ](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.aem.wcm.site.manager.config.SiteConfig/.content.xml) in het __project van de Plaatsen van AEM WKND__.
 
 1. Als een thema of stijlen worden gewijzigd en via een front-end pijplijn voor een testrun worden geïmplementeerd, veranderen we `text-color` in Adobe rood (of u kunt uw eigen stijl kiezen) door de `ui.frontend/src/main/webpack/base/sass/_variables.scss` bij te werken.
 
@@ -185,12 +185,12 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
        ...
    ```
 
-Zet deze wijzigingen tot slot door in de git-opslagplaats voor Adoben van uw programma.
+Breng deze wijzigingen tot slot door naar de Adobe Git-opslagplaats van uw programma.
 
 
 >[!AVAILABILITY]
 >
-> Deze veranderingen zijn beschikbaar op GitHub binnen de [__front-end pijpleiding__ ](https://github.com/adobe/aem-guides-wknd/tree/feature/frontend-pipeline) tak van het __AEM WKND project van Plaatsen__.
+> Deze veranderingen zijn beschikbaar op GitHub binnen de [__front-end pijpleiding__ ](https://github.com/adobe/aem-guides-wknd/tree/feature/frontend-pipeline) tak van het __project van de Plaatsen van AEM WKND__.
 
 
 ## De voorzichtigheid - _laat Voorste Pijl van het Eind_ knoop toe

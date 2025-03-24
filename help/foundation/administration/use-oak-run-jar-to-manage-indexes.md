@@ -1,7 +1,7 @@
 ---
 title: Gebruik oak-run.jar om indexen te beheren
-description: De indexbevel van oak-run.jar consolideert een aantal eigenschappen om de indexen van Oak in AEM te beheren, van het verzamelen van indexstatistieken, het runnen van indexconsistentiecontroles, en het re/indexeren van indexen zelf.
-version: 6.4, 6.5
+description: Met de opdracht index van oak-run.jar wordt een aantal functies geconsolideerd voor het beheer van Oak-indexen in AEM, variërend van het verzamelen van indexstatistieken, het uitvoeren van indexconsistentiecontroles en het opnieuw/indexeren van indexen zelf.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Search
 doc-type: Technical Video
 topic: Performance
@@ -9,7 +9,7 @@ role: Developer
 level: Experienced
 exl-id: be49718e-f1f5-4ab2-9c9d-6430a52bb439
 duration: 726
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Het indexbevel van [!DNL oak-run.jar] consolideert een aantal eigenschappen om [
 
 >[!VIDEO](https://video.tv.adobe.com/v/21475?quality=12&learn=on)
 
-* De gebruikte versie van [[!DNL oak-run.jar] ](https://repository.apache.org/service/local/artifact/maven/redirect?r=releases&amp;g=org.apache.jackrabbit&amp;a=oak-run&amp;v=1.8.0) moet de versie van Oak aanpassen die op de AEM instantie wordt gebruikt.
+* De gebruikte versie van [[!DNL oak-run.jar] ](https://repository.apache.org/service/local/artifact/maven/redirect?r=releases&amp;g=org.apache.jackrabbit&amp;a=oak-run&amp;v=1.8.0) moet de versie van Oak aanpassen die op de instantie van AEM wordt gebruikt.
 * Als u indexen beheert met [!DNL oak-run.jar], gebruikt u de opdracht **[!DNL index]** met verschillende markeringen om verschillende bewerkingen te ondersteunen.
 
    * `java -jar oak-run*.jar index ...`
@@ -38,14 +38,14 @@ Het indexbevel van [!DNL oak-run.jar] consolideert een aantal eigenschappen om [
 >[!VIDEO](https://video.tv.adobe.com/v/21477?quality=12&learn=on)
 
 * In `oak-run.jar` worden alle indexdefinities, belangrijke indexstatussen en indexinhoud voor offline analyse verwijderd.
-* Het verzamelen van indexstatistieken is veilig om op in-use AEM instanties uit te voeren.
+* De verzameling van indexstatistieken kan veilig worden uitgevoerd op AEM-instanties in gebruik.
 
 ## Consistentiecontrole index
 
 >[!VIDEO](https://video.tv.adobe.com/v/21476?quality=12&learn=on)
 
 * `oak-run.jar` bepaalt snel of de indexen van lucene Oak corrupt zijn.
-* De consistentiecontrole kan veilig worden uitgevoerd op AEM instantie voor consistentiecontroleniveaus 1 en 2.
+* De consistentiecontrole kan veilig worden uitgevoerd op in-use AEM-instantie voor consistentiecontroleniveaus 1 en 2.
 
 ## TarMK Online indexeren met [!DNL oak-run.jar] {#tarmkonlineindexingwithoakrunjar}
 
@@ -53,26 +53,26 @@ Het indexbevel van [!DNL oak-run.jar] consolideert een aantal eigenschappen om [
 
 * Het online indexeren van [!DNL TarMK] met [!DNL oak-run.jar] is sneller dan het instellen van `reindex=true` op het knooppunt `oak:queryIndexDefinition` . Ondanks deze prestatieverhoging, vereist online indexeren gebruikend [!DNL oak-run.jar] nog een onderhoudsvenster om het indexeren uit te voeren.
 
-* Het online indexeren van [!DNL TarMK] het gebruiken [!DNL oak-run.jar] zou **niet** tegen AEM instanties buiten het AEM van het instantieonderhoud venster moeten worden uitgevoerd.
+* Het online indexeren van [!DNL TarMK] het gebruiken [!DNL oak-run.jar] zou **niet** tegen de instanties van AEM buiten het venster van het de instantieonderhoud van AEM moeten worden uitgevoerd.
 
 ## TarMK Offline indexeren met eiken-run.jar
 
 >[!VIDEO](https://video.tv.adobe.com/v/21478?quality=12&learn=on)
 
-* Offlineindexering van [!DNL TarMK] using [!DNL oak-run.jar] is de eenvoudigste [!DNL oak-run.jar] gebaseerde indexeringsmethode voor [!DNL TarMK] omdat hiervoor één [!DNL oak-run.jar] -opdracht is vereist. De AEM-instantie moet echter worden afgesloten.
+* Offlineindexering van [!DNL TarMK] using [!DNL oak-run.jar] is de eenvoudigste [!DNL oak-run.jar] gebaseerde indexeringsmethode voor [!DNL TarMK] omdat hiervoor één [!DNL oak-run.jar] -opdracht vereist is. Hiervoor moet de AEM-instantie echter worden afgesloten.
 
 ## TarMK out-of-band indexering met eak-run.jar
 
 >[!VIDEO](https://video.tv.adobe.com/v/21480?quality=12&learn=on)
 
-* out-of-band indexering bij [!DNL TarMK] gebruik van [!DNL oak-run.jar] minimaliseert het effect van indexering op in-use AEM instanties.
-* De out-of-band indexering is de geadviseerde het indexeren benadering voor AEM installaties waar de tijd aan re/index de beschikbare onderhoudstijden overschrijdt.
+* out-of-band indexering bij [!DNL TarMK] gebruik van [!DNL oak-run.jar] minimaliseert het effect van indexering op AEM-instanties in gebruik.
+* De out-of-band indexering is de geadviseerde het indexeren benadering voor de installaties van AEM waar de tijd aan re/index de beschikbare onderhoudstijden overschrijdt.
 
 ## MongoMK online indexeren met eikenrun.jar
 
-* Online-index met [!DNL oak-run.jar] on [!DNL MongoMK] en [!DNL RDBMK] is de aanbevolen methode voor het opnieuw indexeren van [!DNL MongoMK] (en [!DNL RDBMK] ) AEM installaties. **geen andere methode zou voor [!DNL MongoMK] of [!DNL RDBMK] moeten worden gebruikt.**
-* Deze indexering hoeft alleen te worden uitgevoerd op één AEM in de cluster.
-* Het online indexeren van [!DNL MongoMK] kan veilig worden uitgevoerd met een actieve AEM cluster, aangezien de dataopslag-verplaatsing slechts op één [!DNL MongoDB] -knooppunt plaatsvindt, zodat de andere knooppunten aanvragen kunnen blijven verzenden zonder dat dit van invloed is op de prestaties.
+* Online index met [!DNL oak-run.jar] on [!DNL MongoMK] en [!DNL RDBMK] is de aanbevolen methode voor het opnieuw indexeren/opnieuw indexeren van AEM-installaties met [!DNL MongoMK] (en [!DNL RDBMK] ). **geen andere methode zou voor [!DNL MongoMK] of [!DNL RDBMK] moeten worden gebruikt.**
+* Deze indexering hoeft alleen te worden uitgevoerd voor één AEM-instantie in de cluster.
+* Het online indexeren van [!DNL MongoMK] kan veilig worden uitgevoerd in combinatie met een actief AEM-cluster, aangezien de dataopslag slechts op één [!DNL MongoDB] -knooppunt wordt doorlopen, zodat de andere knooppunten aanvragen kunnen blijven doorgeven zonder dat dit van invloed is op de prestaties.
 
 Het [!DNL oak-run.jar] indexbevel om online het indexeren van [!DNL MongoMK] uit te voeren is het [ zelfde als  [!DNL TarMK]  Online het indexeren met  [!DNL oak-run.jar]](#tarmkonlineindexingwithoakrunjar) met het verschil dat de parameter van de segmentopslag aan de [!DNL MongoDB] instantie richt die de opslag van de Knoop bevat.
 
@@ -87,5 +87,5 @@ java -jar oak-run*.jar index
 ## Ondersteunende materialen
 
 * [ Download  [!DNL oak-run.jar] ](https://repository.apache.org/#nexus-search;gav~org.apache.jackrabbit~oak-run~~~~kw,versionexpand)
-   * *verzeker de gedownloade versie de versie van Oak die op AEM zoals hierboven beschreven wordt geïnstalleerd*
+   * *verzeker de gedownloade versie de versie van Oak aanpast die op AEM zoals hierboven beschreven wordt geïnstalleerd*
 * [ Apache Jackrabbit Oak oak-run.jar de Documentatie van het Bevel van de Index ](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html)

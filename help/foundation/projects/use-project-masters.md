@@ -1,7 +1,7 @@
 ---
-title: In AEM gebruiken van Projectstramienen
-description: De Masters van het project vereenvoudigen zeer gebruiker en teambeheer met AEM Projecten.
-version: 6.4, 6.5, Cloud Service
+title: Projectstramienen in AEM gebruiken
+description: De Masters van het project vereenvoudigen zeer gebruiker en teambeheer met de Projecten van AEM.
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Content Management, Collaboration
 feature: Projects
 level: Intermediate
@@ -11,7 +11,7 @@ thumbnail: 17740.jpg
 doc-type: Feature Video
 exl-id: 78ff62ad-1017-4a02-80e9-81228f9e01eb
 duration: 260
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
@@ -33,13 +33,13 @@ Beheerders kunnen nu een **[!DNL Master Project]** maken en gebruikers toewijzen
 
 [!DNL Master Projects] kan worden gemaakt onder de map [!UICONTROL Masters] onder [!UICONTROL AEM Projects] . Zodra een HoofdProject wordt gecreeerd, toont het als optie naast beschikbare malplaatjes in de tovenaar wanneer de nieuwe Projecten worden gecreeerd.
 
-[!DNL Project Masters] URL (lokale AEM instantie van de Auteur): [ http://localhost:4502/projects.html/content/projects/masters ](http://localhost:4502/projects.html/content/projects/masters)
+[!DNL Project Masters] URL (lokale instantie van de Auteur van AEM): [ http://localhost:4502/projects.html/content/projects/masters ](http://localhost:4502/projects.html/content/projects/masters)
 
 ## Verwijderen [!DNL Project Masters]
 
 Het schrappen van een hoofdproject resulteert in onbruikbaar afgeleide projecten.
 
-Alvorens een hoofdproject te schrappen, zorg ervoor dat alle afgeleide projecten worden gebeëindigd en uit AEM verwijderd. Zorg ervoor om het even welke vereiste projectgegevens te bewaren alvorens de afgeleide projecten te verwijderen. Zodra alle afgeleide projecten uit AEM worden verwijderd, kan het hoofdproject veilig worden geschrapt.
+Alvorens een hoofdproject te schrappen, zorg ervoor dat alle afgeleide projecten worden gebeëindigd en uit AEM worden verwijderd. Zorg ervoor om het even welke vereiste projectgegevens te bewaren alvorens de afgeleide projecten te verwijderen. Zodra alle afgeleide projecten uit AEM worden verwijderd, kan het hoofdproject veilig worden geschrapt.
 
 ## [!DNL Project Masters] markeren als inactief
 
@@ -51,6 +51,6 @@ Om inactieve hoofdprojecten te tonen, knevel de &quot;show actieve&quot;filterkn
 
 ![ de meesters van het Project technische mening ](assets/use-project-masters/project-masters-architecture.png)
 
-[!DNL Project Masters] werkt door een set AEM gebruikersgroepen (eigenaren, redacteuren en waarnemers) te definiëren en afgeleide projecten toe te staan die centraal gedefinieerde gebruikersgroepen te raadplegen en te hergebruiken.
+[!DNL Project Masters] definieert een set AEM-gebruikersgroepen (eigenaren, redacteuren en waarnemers) en staat afgeleide projecten toe om naar die centraal gedefinieerde gebruikersgroepen te verwijzen en deze opnieuw te gebruiken.
 
-Dit vermindert het totale aantal gebruikersgroepen die in AEM worden vereist. Vóór [!DNL Project Masters], leidde elk project tot 3 gebruikersgroepen met begeleidende Azen om toestemming-ing af te dwingen, zo 100 projecten die 300 gebruikersgroepen voortbrachten. Projectstramienen staan een willekeurig aantal projecten toe om dezelfde drie groepen opnieuw te gebruiken, ervan uitgaande dat het gedeelde lidmaatschap is afgestemd op de zakelijke vereisten in het hele project.
+Hierdoor wordt het totale aantal gebruikersgroepen dat in AEM is vereist, verminderd. Vóór [!DNL Project Masters], leidde elk project tot 3 gebruikersgroepen met begeleidende Azen om toestemming-ing af te dwingen, zo 100 projecten die 300 gebruikersgroepen voortbrachten. Projectstramienen staan een willekeurig aantal projecten toe om dezelfde drie groepen opnieuw te gebruiken, ervan uitgaande dat het gedeelde lidmaatschap is afgestemd op de zakelijke vereisten in het hele project.

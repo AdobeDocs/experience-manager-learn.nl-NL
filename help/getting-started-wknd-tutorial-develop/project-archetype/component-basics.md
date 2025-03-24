@@ -1,7 +1,7 @@
 ---
 title: Aan de slag met AEM Sites - Basisprincipes van componenten
 description: Begrijp de onderliggende technologie van een Component van de Plaatsen van Adobe Experience Manager (AEM) door een eenvoudig "HelloWorld"voorbeeld. De onderwerpen van HTML, het Verdelen Modellen, cliënt-zijbibliotheken en auteursdialogen worden onderzocht.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Core Components, Developer Tools
 topic: Content Management, Development
 role: Developer
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
 duration: 1715
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -28,21 +28,21 @@ In dit hoofdstuk, onderzoeken wij de onderliggende technologie van een Component
 
 Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikkelomgeving ](./overview.md#local-dev-environment).
 
-IDE die in de video wordt gebruikt is [ Code van Visual Studio ](https://code.visualstudio.com/) en [ VSCode AEM de stop van de Synchronisatie ](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync).
+winde in de video&#39;s wordt gebruikt is [ Code van Visual Studio ](https://code.visualstudio.com/) en de [ VSCode AEM 3} insteekmodule die van de Synchronisatie {.](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync)
 
 ## Doelstelling {#objective}
 
-1. Leer de rol van malplaatjes HTML en het Verdelen Modellen om HTML dynamisch terug te geven.
+1. Leer de rol van HTML-sjablonen en -modellen om HTML dynamisch te renderen.
 1. Begrijp hoe Dialoogvensters worden gebruikt om het schrijven van inhoud te vergemakkelijken.
 1. Leer de basisbeginselen zelf van Client-side bibliotheken om CSS en JavaScript op te nemen om een component te steunen.
 
 ## Wat u gaat bouwen {#what-build}
 
-In dit hoofdstuk voert u verschillende wijzigingen uit in een eenvoudige `HelloWorld` -component. Wanneer u updates uitvoert naar de component `HelloWorld` , krijgt u meer informatie over de belangrijkste gebieden van AEM componentontwikkeling.
+In dit hoofdstuk voert u verschillende wijzigingen uit in een eenvoudige `HelloWorld` -component. Wanneer u updates uitvoert naar de component `HelloWorld` , krijgt u meer informatie over de belangrijkste gebieden van de ontwikkeling van AEM-componenten.
 
 ## Hoofdstukstartproject {#starter-project}
 
-Dit hoofdstuk bouwt op een generisch project voort dat door [ wordt geproduceerd AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype). Bekijk de hieronder video en herzie de [ eerste vereisten ](#prerequisites) om begonnen te worden!
+Dit hoofdstuk bouwt op een generisch project voort dat door het [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) wordt geproduceerd. Bekijk de hieronder video en herzie de [ eerste vereisten ](#prerequisites) om begonnen te worden!
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ Open een nieuwe opdrachtregelterminal en voer de volgende handelingen uit.
 
 ## Componentontwerp {#component-authoring}
 
-Componenten kunnen worden beschouwd als kleine modulaire bouwstenen van een webpagina. Om componenten opnieuw te gebruiken, moeten de componenten configureerbaar zijn. Dit gebeurt via het dialoogvenster van de auteur. Laten we nu de auteur van een eenvoudige component bekijken en controleren hoe waarden uit het dialoogvenster in AEM blijven.
+Componenten kunnen worden beschouwd als kleine modulaire bouwstenen van een webpagina. Om componenten opnieuw te gebruiken, moeten de componenten configureerbaar zijn. Dit gebeurt via het dialoogvenster van de auteur. Laten we nu een eenvoudige component schrijven en controleren hoe waarden uit het dialoogvenster in AEM worden gepresteerd.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330986?quality=12&learn=on)
 
@@ -98,9 +98,9 @@ Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden 
 1. Schakel in naar de modus Ontwikkelaar en bekijk het inhoudspad in CRXDE-Lite en controleer de eigenschappen van de componentinstantie.
 1. Gebruik CRXDE-Lite om het `cq:dialog` en `helloworld.html` script van `/apps/wknd/components/content/helloworld` weer te geven.
 
-## HTL (Sjabloontaal HTML) en dialoogvensters {#htl-dialogs}
+## HTML (HTML Template Language) en dialoogvensters {#htl-dialogs}
 
-De Taal van het Malplaatje van de HTML of **[HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html)** is een licht-gewicht, server-zijhet bemonsteren taal die door AEM componenten wordt gebruikt om inhoud terug te geven.
+De Taal van het Malplaatje van HTML of **[HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html)** is een licht-gewicht, server-zijhet bemonsteren taal die door de componenten van AEM wordt gebruikt om inhoud terug te geven.
 
 **de Dialogen** bepalen de beschikbare configuraties die voor een component kunnen worden gemaakt.
 
@@ -111,8 +111,8 @@ Vervolgens werkt u het HTML-script van `HelloWorld` bij om een extra begroeting 
 Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden uitgevoerd.
 
 1. Ga naar winde en open het project aan de `ui.apps` module.
-1. Open het bestand `helloworld.html` en werk de HTML Markup bij.
-1. Gebruik de hulpmiddelen van winde zoals [ VSCode AEM Synchronisatie ](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) om de dossierverandering met de lokale AEM instantie te synchroniseren.
+1. Open het `helloworld.html` -bestand en werk de HTML Markup bij.
+1. Gebruik de hulpmiddelen van winde zoals [ de Synchronisatie van AEM VSCode ](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) om de dossierverandering met de lokale instantie van AEM te synchroniseren.
 1. Ga terug naar de browser en bekijk hoe de component is gerenderd.
 1. Open het bestand `.content.xml` dat het dialoogvenster voor de `HelloWorld` -component definieert op:
 
@@ -172,7 +172,7 @@ Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden 
 
 ## Verkoopmodellen {#sling-models}
 
-Sling-modellen zijn annotaties die worden aangedreven door Java™ &quot;POJO&#39;s&quot; (gewone oude Java™-objecten) en die het gemakkelijker maken gegevens van de JCR aan Java™-variabelen toe te wijzen. Ze bieden ook diverse andere genootschappen bij het ontwikkelen in het kader van AEM.
+Sling-modellen zijn annotaties die worden aangedreven door Java™ &quot;POJO&#39;s&quot; (gewone oude Java™-objecten) en die het gemakkelijker maken gegevens van de JCR aan Java™-variabelen toe te wijzen. Ze bieden ook diverse andere genootschappen bij het ontwikkelen in de context van AEM.
 
 Laten we nu enkele updates uitvoeren op het `HelloWorldModel` Sling-model om enige bedrijfslogica toe te passen op de waarden die zijn opgeslagen in de JCR voordat we deze op de pagina uitvoeren.
 
@@ -279,11 +279,11 @@ Laten we nu enkele updates uitvoeren op het `HelloWorldModel` Sling-model om eni
    </div>
    ```
 
-1. Implementeer de wijzigingen in een lokale versie van AEM met de Eclipse Developer-plug-in of met behulp van uw Maven-vaardigheden.
+1. Implementeer de wijzigingen in een lokale versie van AEM met de plug-in Eclipse Developer of met behulp van uw Maven-vaardigheden.
 
 ## Client-Side bibliotheken {#client-side-libraries}
 
-Client-Side Libraries, `clientlibs` for short, biedt een mechanisme voor het organiseren en beheren van CSS- en JavaScript-bestanden die nodig zijn voor een AEM Sites-implementatie. Bibliotheken aan de clientzijde zijn de standaardmanier om CSS en JavaScript op een pagina in AEM op te nemen.
+Client-Side Libraries, `clientlibs` for short, biedt een mechanisme voor het organiseren en beheren van CSS- en JavaScript-bestanden die nodig zijn voor een AEM Sites-implementatie. Bibliotheken op de client zijn de standaardmanier om CSS en JavaScript op een pagina in AEM op te nemen.
 
 De {](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) module 0} ui.frontend is een ontkoppelde [ webpack ](https://webpack.js.org/) project dat in het bouwstijlproces wordt geïntegreerd. [ Hiermee kunt u populaire front-end bibliotheken gebruiken, zoals Sass, LESS en TypeScript. De `ui.frontend` module wordt verkend in meer diepte in het [ Client-Side hoofdstuk van Bibliotheken ](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
 
@@ -295,7 +295,7 @@ Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden 
 
 1. Open een terminalvenster en navigeer in de map `ui.frontend`
 
-1. Het zijn in `ui.frontend` folder stelt het `npm install npm-run-all --save-dev` bevel in werking om [ npm-looppas-alle ](https://www.npmjs.com/package/npm-run-all) knoopmodule te installeren. Deze stap wordt vereist op Archetype 39 geproduceerd AEM project **, in de komende versie van Archetype dit niet wordt vereist.**
+1. Het zijn in `ui.frontend` folder stelt het `npm install npm-run-all --save-dev` bevel in werking om [ npm-looppas-alle ](https://www.npmjs.com/package/npm-run-all) knoopmodule te installeren. Deze stap wordt **vereist op Archetype 39 geproduceerd AEM project**, in de aanstaande versie van Archetype dit wordt niet vereist.
 
 1. Voer vervolgens de opdracht `npm run watch` uit:
 

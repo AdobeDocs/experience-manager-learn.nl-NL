@@ -1,7 +1,7 @@
 ---
 title: Implementeren met behulp van de front-end pijplijn
 description: Leer hoe te om een front-end pijpleiding tot stand te brengen en in werking te stellen die front-end middelen bouwt en aan ingebouwde CDN in AEM as a Cloud Service opstelt.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: d6da05e4-bd65-4625-b9a4-cad8eae3c9d7
 duration: 225
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -36,7 +36,7 @@ In dit hoofdstuk, creëren en leiden wij een front-end pijpleiding in Adobe Clou
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelig leerprogramma en het wordt verondersteld dat de stappen in de [ Standaard AEM van de Update Project ](./update-project.md) worden geschetst zijn voltooid.
+Dit is een meerdelig leerprogramma en men veronderstelt dat de stappen in het [ StandaardProject van AEM van de Update ](./update-project.md) worden geschetst zijn voltooid.
 
 Verzeker u [ voorrechten hebt om, pijpleidingen in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) te creëren en op te stellen en [ toegang tot een milieu van AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
 
@@ -70,7 +70,7 @@ En __het belangrijkst__ voor het __gebied van de Plaats van de Code__ is de waar
 
 ## Implementatiereeks
 
-* Eerst in werking stelt nieuw anders genoemd __FullStack WKND opstelt om__ pijpleiding te ontwikkelen om de KND clientlib dossiers uit de AEM bewaarplaats te verwijderen. En het belangrijkst bereidt de AEM voor het front-end pijpleidingscontract voor door __het Sling config__ dossiers (`SiteConfig`, `HtmlPageItemsConfig`) toe te voegen.
+* Eerst in werking stelt nieuw anders genoemd __FullStack WKND opstelt om__ pijpleiding te ontwikkelen om de KND clientlib dossiers uit de bewaarplaats van AEM te verwijderen. En het belangrijkst bereidt AEM voor het front-end pijpleidingscontract voor door __het Sling config__ dossiers (`SiteConfig`, `HtmlPageItemsConfig`) toe te voegen.
 
 ![ Unstyled WKND Plaats ](assets/unstyled-wknd-site.png)
 
@@ -87,7 +87,7 @@ En __het belangrijkst__ voor het __gebied van de Plaats van de Code__ is de waar
 
 ## Stijlwijzigingen en nieuw leveringsparadigma controleren
 
-* Open de Plaats WKND om het even welke pagina en u kunt de tekstkleur zien gebruiken __Rode Adobe__ en de front-end middelen (CSS, JS) dossiers worden geleverd van CDN. De hostnaam van de bronaanvraag begint met `https://static-pXX-eYY.p123-e456.adobeaemcloud.com/$HASH_VALUE$/theme/site.css` en op dezelfde manier met site.js of andere statische bronnen waarnaar u verwijst in het `HtmlPageItemsConfig` -bestand.
+* Open om het even welke pagina van de Plaats WKND en u kunt de tekstkleur zien ons __Rood Adobe__ en de front-end middelen (CSS, JS) dossiers worden geleverd van CDN. De hostnaam van de bronaanvraag begint met `https://static-pXX-eYY.p123-e456.adobeaemcloud.com/$HASH_VALUE$/theme/site.css` en op dezelfde manier met site.js of andere statische bronnen waarnaar u verwijst in het `HtmlPageItemsConfig` -bestand.
 
 
 ![ Nieuw gestileerde WKND Plaats ](assets/newly-styled-wknd-site.png)
@@ -105,7 +105,7 @@ En __het belangrijkst__ voor het __gebied van de Plaats van de Code__ is de waar
 
 ## Gefeliciteerd! {#congratulations}
 
-Gefeliciteerd, creeerde u, in werking stelde, en verifieerde de voorste-Eind pijpleiding die slechts bouwt en de module &quot;ui.frontend&quot;van het project van Plaatsen WKND opstelt. Nu kan uw front-end team snel het ontwerp en het gedrag van de site doorlopen, buiten de levenscyclus van het volledige AEM project.
+Gefeliciteerd, creeerde u, in werking stelde, en verifieerde de voorste-Eind pijpleiding die slechts bouwt en de module &quot;ui.frontend&quot;van het project van Plaatsen WKND opstelt. Nu kan uw front-end team snel het ontwerp en front-end gedrag van de site doorlopen, buiten de volledige levenscyclus van het AEM-project.
 
 ## Volgende stappen {#next-steps}
 

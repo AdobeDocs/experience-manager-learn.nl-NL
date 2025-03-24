@@ -1,14 +1,14 @@
 ---
-title: Modellen voor inhoudsfragmenten maken - Geavanceerde concepten van AEM headless - GraphQL
-description: In dit hoofdstuk van Geavanceerde concepten van Adobe Experience Manager (AEM) Headless leert u hoe u een Content Fragment Model kunt bewerken door tabplaatsaanduidingen, datum en tijd, JSON-objecten, fragmentverwijzingen en inhoudsverwijzingen toe te voegen.
-version: Cloud Service
+title: Modellen voor inhoudsfragmenten maken - Geavanceerde concepten van AEM Headless - GraphQL
+description: In dit hoofdstuk van de Geavanceerde concepten van Adobe Experience Manager (AEM) Headless, leer hoe te om een Model van het Fragment van de Inhoud uit te geven door lusjeplaceholders, datum en tijd, voorwerpen JSON, fragmentverwijzingen, en inhoudsverwijzingen toe te voegen.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
 duration: 757
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 0%
@@ -236,5 +236,5 @@ Gefeliciteerd! U hebt nu tabbladen toegevoegd, de gegevenstypen date en time voo
 
 Het volgende hoofdstuk in deze reeks zal [ auteursinhoudsfragmenten ](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md) van de modellen behandelen u in dit hoofdstuk creeerde. Leer hoe u de gegevenstypen gebruikt die in dit hoofdstuk zijn geïntroduceerd en mapbeleid maakt om te beperken welke modellen van inhoudsfragmenten in een elementenmap kunnen worden gemaakt.
 
-Hoewel dit optioneel is voor deze zelfstudie, dient u alle inhoud te publiceren in situaties waarin de inhoud in de praktijk wordt geproduceerd. Raadpleeg voor een overzicht van de auteur- en Publish-omgevingen in AEM de
-[ AEM de videoreeks van de Zwaartepunt en van GraphQL ](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md).
+Hoewel dit optioneel is voor deze zelfstudie, dient u alle inhoud te publiceren in situaties waarin de inhoud in de praktijk wordt geproduceerd. Raadpleeg voor een overzicht van auteur- en publicatieomgevingen in AEM de
+[ AEM Headless en GraphQL videoreeks ](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md).

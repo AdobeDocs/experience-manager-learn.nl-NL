@@ -1,7 +1,7 @@
 ---
-title: Inleiding tot ontwerpen en publiceren | Snel site maken AEM
-description: Gebruik de pagina-editor in Adobe Experience Manager AEM om de inhoud van de website bij te werken. Leer hoe Componenten worden gebruikt om ontwerpen te vergemakkelijken. Begrijp het verschil tussen AEM auteur- en Publish-omgevingen en leer hoe u wijzigingen op de livesite publiceert.
-version: Cloud Service
+title: Inleiding tot ontwerpen en publiceren | AEM Quick Site Creation
+description: Gebruik de Pagina-editor in Adobe Experience Manager, AEM, om de inhoud van de website bij te werken. Leer hoe Componenten worden gebruikt om ontwerpen te vergemakkelijken. Begrijp het verschil tussen een AEM-auteur- en -publicatieomgeving en leer hoe u wijzigingen in de livesite publiceert.
+version: Experience Manager as a Cloud Service
 topic: Content Management
 feature: Core Components, Page Editor
 role: Developer
@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
 recommendations: noDisplay, noCatalog
 duration: 263
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1285'
 ht-degree: 0%
@@ -35,10 +35,10 @@ Dit is een meerdelig leerprogramma en men veronderstelt dat de stappen die in [ 
 
 ## Een nieuwe pagina maken {#create-page}
 
-Een website wordt doorgaans opgedeeld in pagina&#39;s en vormt zo een ervaring van meerdere pagina&#39;s. AEM de inhoud van structuren op dezelfde manier. Maak vervolgens een nieuwe pagina voor de site.
+Een website wordt doorgaans opgedeeld in pagina&#39;s en vormt zo een ervaring van meerdere pagina&#39;s. AEM structureert inhoud op dezelfde manier. Maak vervolgens een nieuwe pagina voor de site.
 
-1. Login aan de AEM **Dienst van de Auteur** die in het vorige hoofdstuk wordt gebruikt.
-1. Van het AEM scherm van het Begin klik **Plaatsen** > **Plaats WKND** > **Engels** > **Artikel**
+1. Login aan de dienst van de Auteur van AEM **** die in het vorige hoofdstuk wordt gebruikt.
+1. Van het scherm van het Begin van AEM klik **Plaatsen** > **Plaats WKND** > **Engels** > **Artikel**
 1. In de hogere rechterhoek klikt **** > **Pagina** creëren.
 
    ![ creeer Pagina ](assets/author-content-publish/create-page-button.png)
@@ -58,11 +58,11 @@ Een website wordt doorgaans opgedeeld in pagina&#39;s en vormt zo een ervaring v
 
 ## Auteur een component {#author-component}
 
-AEM Componenten kunnen worden beschouwd als kleine modulaire bouwstenen van een webpagina. Door UI in logische brokken of Componenten te breken, maakt het het veel gemakkelijker te beheren. Om componenten opnieuw te gebruiken, moeten de componenten configureerbaar zijn. Dit gebeurt via het dialoogvenster van de auteur.
+AEM Components kan worden beschouwd als kleine modulaire bouwstenen van een webpagina. Door UI in logische brokken of Componenten te breken, maakt het het veel gemakkelijker te beheren. Om componenten opnieuw te gebruiken, moeten de componenten configureerbaar zijn. Dit gebeurt via het dialoogvenster van de auteur.
 
-AEM verstrekt een reeks [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) die productie klaar om zijn te gebruiken. De **Componenten van de Kern** waaier van basiselementen zoals [ Tekst ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) en [ Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) aan complexere elementen UI zoals a [ Carrousel ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html).
+AEM verstrekt een reeks [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) die productie klaar zijn te gebruiken. De **Componenten van de Kern** waaier van basiselementen zoals [ Tekst ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) en [ Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) aan complexere elementen UI zoals a [ Carrousel ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html).
 
-Vervolgens maakt u enkele componenten met de AEM Pagina-editor.
+Vervolgens maakt u enkele componenten met de AEM Page Editor.
 
 1. Navigeer aan de **Wereld van Hello** pagina die in de vorige oefening wordt gecreeerd.
 1. Zorg ervoor dat u op **uitgeeft** wijze bent en op de linkerkant-spoor klikt het **pictogram van Componenten**.
@@ -92,9 +92,9 @@ Vervolgens maakt u enkele componenten met de AEM Pagina-editor.
 
 Voel u vrij om te experimenteren met enkele andere componenten. De documentatie over elke [ Component van de Kern kan hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) worden gevonden. Een gedetailleerde videoreeks over [ het auteursrecht van de Pagina kan hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html) worden gevonden.
 
-## Publish-updates {#publish-updates}
+## Updates publiceren {#publish-updates}
 
-AEM de milieu&#39;s worden verdeeld tussen de Dienst van de Auteur **en de Dienst van a** Publish **.** In dit hoofdstuk hebben wij verscheidene wijzigingen aan de plaats op de **Dienst van de Auteur** aangebracht. Opdat plaatsbezoekers om de veranderingen te bekijken moeten wij hen aan de **Dienst van Publish** publiceren.
+De milieu&#39;s van AEM zijn gespleten tussen de Dienst van de Auteur **en a** publiceren de Dienst **.** In dit hoofdstuk hebben wij verscheidene wijzigingen aan de plaats op de **Dienst van de Auteur** aangebracht. Opdat plaatsbezoekers om de veranderingen te bekijken moeten wij hen aan de **publiceren de Dienst** publiceren.
 
 ![ Hoog niveaudiagram ](assets/author-content-publish/author-publish-high-level-flow.png)
 
@@ -104,67 +104,67 @@ AEM de milieu&#39;s worden verdeeld tussen de Dienst van de Auteur **en de Diens
 
 **2.** Inhoud wordt gepubliceerd. Publicatie kan op aanvraag worden uitgevoerd of voor een toekomstige datum worden gepland.
 
-**3.** De wijzigingen worden door bezoekers van de site weerspiegeld in de Publish-service.
+**3.** Site-bezoekers zien de wijzigingen die worden weerspiegeld in de service Publiceren.
 
-### Publish de wijzigingen
+### Wijzigingen publiceren
 
 Laten we nu de wijzigingen publiceren.
 
-1. Van het AEM scherm van het Begin navigeert aan **Plaatsen** en selecteert de **Plaats WKND**.
+1. Van het scherm van het Begin van AEM navigeert aan **Plaatsen** en selecteert de **Plaats WKND**.
 1. Klik **leiden Publicatie** in de menubar.
 
    ![ beheer publicatie ](assets/author-content-publish/click-manage-publiciation.png)
 
    Aangezien dit een gloednieuwe site is, willen we alle pagina&#39;s publiceren en kunnen we met de wizard Publicatie beheren precies bepalen wat er moet worden gepubliceerd.
 
-1. Onder **Opties** verlaat de standaardmontages aan **Publish** en plant het voor **nu**. Klik op **Next**.
+1. Onder **Opties** verlaat de standaardmontages aan **publiceren** en het voor **nu** plannen. Klik op **Next**.
 1. Onder **Reikwijdte**, selecteer de **Plaats WKND** en klik **omvat de Montages van Kinderen**. In de dialoog, controle **omvat kinderen**. Schakel de overige selectievakjes uit om ervoor te zorgen dat de hele site wordt gepubliceerd.
 
    ![ Update publiceert werkingsgebied ](assets/author-content-publish/update-scope-publish.png)
 
 1. Klik de **Gepubliceerde knoop van Verwijzingen**. Controleer in het dialoogvenster of alles is gecontroleerd. Dit zal het **StandaardMalplaatje van de Plaats** en verscheidene configuraties omvatten die door het Malplaatje van de Plaats worden geproduceerd. Klik **Gedaan** om bij te werken.
 
-   ![ verwijzingen van Publish ](assets/author-content-publish/publish-references.png)
+   ![ publiceer verwijzingen ](assets/author-content-publish/publish-references.png)
 
 1. Tot slot controleer de doos naast **Plaats WKND** en klik **daarna** in de hogere rechterhoek.
-1. In de **stap van de Werkstromen**, ga de titel van het a **Werkschema** in. Dit kan om het even welke tekst zijn en als deel van een controletraject later nuttig. Ga &quot;Aanvankelijke publiceren&quot;in en klik **Publish**.
+1. In de **stap van de Werkstromen**, ga de titel van het a **Werkschema** in. Dit kan om het even welke tekst zijn en als deel van een controletraject later nuttig. Ga &quot;Aanvankelijke publiceren&quot;in en klik **publiceren**.
 
 ![ De stap eerste van het Werkschema publiceert ](assets/author-content-publish/workflow-step-publish.png)
 
 ## Gepubliceerde inhoud weergeven {#publish}
 
-Navigeer vervolgens naar de Publish-service om de wijzigingen weer te geven.
+Navigeer vervolgens naar de service Publiceren om de wijzigingen weer te geven.
 
-1. U kunt de URL van de Publish Service eenvoudig ophalen door de Auteur-URL te kopiëren en het woord `author` te vervangen door `publish` . Bijvoorbeeld:
+1. U kunt de URL van de publicatieservice eenvoudig ophalen door de auteur-URL te kopiëren en het woord `author` te vervangen door `publish` . Bijvoorbeeld:
 
    * **Auteur URL** - `https://author-pYYYY-eXXXX.adobeaemcloud.com/`
-   * **Publish URL** - `https://publish-pYYYY-eXXXX.adobeaemcloud.com/`
+   * **publiceer URL** - `https://publish-pYYYY-eXXXX.adobeaemcloud.com/`
 
-1. Voeg `/content/wknd.html` toe aan de Publish-URL, zodat de uiteindelijke URL er als volgt uitziet: `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd.html` .
+1. Voeg `/content/wknd.html` toe aan de URL voor publiceren, zodat de uiteindelijke URL er als volgt uitziet: `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd.html` .
 
    >[!NOTE]
    >
    > Verandering `wknd.html` om de naam van uw plaats aan te passen, als u een unieke naam tijdens [ plaatsverwezenlijking ](create-site.md) verstrekte.
 
-1. Als u naar de Publish-URL navigeert, wordt de site weergegeven, zonder enige AEM ontwerpfunctionaliteit.
+1. Als u naar de publicatie-URL navigeert, wordt de site weergegeven zonder enige AEM-ontwerpfunctionaliteit.
 
    ![ Gepubliceerde plaats ](assets/author-content-publish/publish-url-update.png)
 
 1. Gebruikend het **menu van de Navigatie** klikt **Artikel** > **Wereld van Hello** om aan de vroeger gemaakte pagina van de Wereld van Hello te navigeren.
-1. Keer terug naar de **AEM Dienst van de Auteur** en maak sommige extra inhoudsveranderingen in de Redacteur van de Pagina.
-1. Publish deze veranderingen direct van binnen de paginaredacteur door het **pictogram van de Eigenschappen van de Pagina** te klikken > **Publish Pagina**
+1. Keer terug naar de **Dienst van de Auteur van AEM** en maak sommige extra inhoudsveranderingen in de Redacteur van de Pagina.
+1. Publiceer direct deze veranderingen van binnen de paginaredacteur door het **pictogram van de Eigenschappen van de Pagina** te klikken > **publiceert Pagina**
 
    ![ publiceer direct ](assets/author-content-publish/page-editor-publish.png)
 
-1. Terugkeer aan de **AEM Dienst van Publish** om de veranderingen te bekijken. Waarschijnlijk zult u **** niet onmiddellijk de updates zien. Dit is omdat de **AEM Dienst van Publish** [ caching via een Apache Webserver en CDN ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html) omvat. Standaard wordt HTML-inhoud gedurende ~5 minuten in cache geplaatst.
+1. Terugkeer aan **AEM publiceer Dienst** om de veranderingen te bekijken. Waarschijnlijk zult u **** niet onmiddellijk de updates zien. Dit is omdat **AEM de Publish Dienst** [ caching via een Apache Webserver en CDN ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html) omvat. Standaard wordt HTML-inhoud gedurende ~5 minuten in cache geplaatst.
 
 1. Als u de cache wilt overslaan voor test- en foutopsporingsdoeleinden, voegt u gewoon een queryparameter toe, zoals `?nocache=true` . De URL zou er als `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd/en/article/hello-world.html?nocache=true` uitzien. Meer details over de caching strategie en beschikbare configuraties [ kunnen hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/overview.html) worden gevonden.
 
-1. U kunt ook de URL naar de Publish Service in Cloud Manager vinden. Navigeer aan het **Programma van Cloud Manager** > **Milieu** > **Milieu**.
+1. U kunt ook de URL naar de publicatieservice in Cloud Manager vinden. Navigeer aan het **Programma van Cloud Manager** > **Milieu** > **Milieu**.
 
-   ![ de Dienst van Publish van de Mening ](assets/author-content-publish/view-environment-segments.png)
+   ![ de Publish Dienst van de Mening ](assets/author-content-publish/view-environment-segments.png)
 
-   Onder **Segmenten van het Milieu** kunt u verbindingen aan de **Auteur** en **Publish** diensten vinden.
+   Onder **Segmenten van het Milieu** kunt u verbindingen aan de **Auteur** vinden en **publiceren** diensten.
 
 ## Gefeliciteerd! {#congratulations}
 

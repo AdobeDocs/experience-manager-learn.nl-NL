@@ -2,7 +2,7 @@
 title: Een doelaanroep laden en in werking stellen
 description: Leer hoe te om te laden, parameters tot paginaverzoek over te gaan, en een vraag van het Doel van uw plaatspagina in werking te stellen gebruikend een etikettenRegel.
 feature: Core Components, Adobe Client Data Layer
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-6133
 thumbnail: 41243.jpg
 topic: Integrations
@@ -13,7 +13,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
 duration: 588
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 0%
@@ -22,13 +22,13 @@ ht-degree: 0%
 
 # Een doelaanroep laden en in werking stellen {#load-fire-target}
 
-Leer hoe te om te laden, parameters tot paginaverzoek over te gaan, en een vraag van het Doel van uw plaatspagina in werking te stellen gebruikend een etikettenRegel. De informatie van de Web-pagina wordt teruggewonnen en overgegaan als parameters gebruikend de Laag van de Gegevens van de Cliënt van de Adobe die u gegevens over de ervaring van bezoekers op een webpagina laat verzamelen en opslaan en dan het gemakkelijk maken om tot deze gegevens toegang te hebben.
+Leer hoe te om te laden, parameters tot paginaverzoek over te gaan, en een vraag van het Doel van uw plaatspagina in werking te stellen gebruikend een etikettenRegel. De informatie van de Web-pagina wordt teruggewonnen en overgegaan als parameters gebruikend de Laag van Gegevens van de Cliënt van Adobe die u gegevens over de ervaring van bezoekers op een webpagina laat verzamelen en opslaan en dan het gemakkelijk maken om tot deze gegevens toegang te hebben.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41243?quality=12&learn=on)
 
 ## Regel bij laden van pagina
 
-De gegevenslaag van de Cliënt van de Adobe is een gebeurtenis-gedreven gegevenslaag. Wanneer de gegevenslaag AEM pagina is geladen, wordt een gebeurtenis `cmp:show` geactiveerd. In de video wordt de regel `tags Library Loaded` aangeroepen met behulp van een aangepaste gebeurtenis. Hieronder vindt u de codefragmenten die worden gebruikt in de video voor de aangepaste gebeurtenis en voor de gegevenselementen.
+De gegevenslaag van de Adobe-client is een gebeurtenisgestuurde gegevenslaag. Wanneer de gegevenslaag AEM Page is geladen, wordt een gebeurtenis `cmp:show` geactiveerd. In de video wordt de regel `tags Library Loaded` aangeroepen met behulp van een aangepaste gebeurtenis. Hieronder vindt u de codefragmenten die worden gebruikt in de video voor de aangepaste gebeurtenis en voor de gegevenselementen.
 
 ### Aangepaste weergegeven pagina-gebeurtenis{#page-event}
 
@@ -80,7 +80,7 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Een douanefunctie bepaalt `pageShownEventHandler`, en luistert naar gebeurtenissen die door AEM Componenten van de Kern worden uitgegeven, leidt de relevante informatie tot de Component van de Kern af, verpakt het in een gebeurtenisvoorwerp, en brengt de etikettenGebeurtenis met de afgeleide gebeurtenisinfo bij zijn lading teweeg.
+Een douanefunctie bepaalt `pageShownEventHandler`, en luistert naar gebeurtenissen die door de Componenten van de Kern van AEM worden uitgegeven, leidt de relevante informatie tot de Component van de Kern af, verpakt het in een gebeurtenisvoorwerp, en activeert de etikettenGebeurtenis met de afgeleide gebeurtenisinfo bij zijn lading.
 
 De markeringsregel wordt teweeggebracht gebruikend de functie van de markeringen `trigger(...)` die __slechts__ beschikbaar van binnen de de codefragmentdefinitie van de Code van de Gebeurtenis van een Regel is.
 
@@ -115,7 +115,7 @@ if (event && event.component && event.component.hasOwnProperty('repo:path')) {
 }
 ```
 
-Deze code retourneert het pad van de AEM pagina.
+Deze code retourneert het pad van de AEM-pagina.
 
 ![ Pad van de Pagina ](assets/pagepath.png)
 
@@ -127,7 +127,7 @@ if (event && event.component && event.component.hasOwnProperty('dc:title')) {
 }
 ```
 
-Deze code retourneert de titel van de AEM pagina.
+Deze code retourneert de titel van de AEM-pagina.
 
 ![ Titel van de Pagina ](assets/pagetitle.png)
 
@@ -160,7 +160,7 @@ window.targetGlobalSettings = {
 
 ## Ondersteunende koppelingen
 
-+ [ de Documentatie van de Laag van Gegevens van de Cliënt van de Adobe ](https://github.com/adobe/adobe-client-data-layer/wiki)
++ [ de Documentatie van de Laag van Gegevens van de Cliënt van Adobe ](https://github.com/adobe/adobe-client-data-layer/wiki)
 + [ Foutopsporing van Adobe Experience Cloud - Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-+ [ Gebruikend de Laag van Gegevens van de Cliënt van de Adobe en de Documentatie van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
-+ [ Inleiding aan het Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [ Gebruikend de Laag van Gegevens van de Cliënt van Adobe en de Documentatie van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
++ [ Inleiding aan Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

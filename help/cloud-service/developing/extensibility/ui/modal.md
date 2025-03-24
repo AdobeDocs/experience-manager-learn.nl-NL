@@ -1,8 +1,8 @@
 ---
-title: AEM UI-extensie, modaal
-description: Leer hoe u een modaal AEM UI-extensie maakt.
+title: AEM UI-extensie modal
+description: Leer hoe u een modaal extensiemodel voor de AEM UI maakt.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: e7376eaf-f7d7-48fe-9387-a0e4089806c2
 duration: 127
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 # Extensie, modaal
 
-![ AEM UI uitbreiding modaal ](./assets/modal/modal.png){align="center"}
+![ de extensie van AEM UI modaal ](./assets/modal/modal.png){align="center"}
 
-AEM de extensiemodel UI biedt een manier om aangepaste UI aan AEM UI-extensies te koppelen.
+Met de uitbreidingsmodus van AEM UI kunt u een aangepaste UI koppelen aan AEM UI-extensies.
 
 De modules zijn React toepassingen, die op [ worden gebaseerd Reageer Spectrum ](https://react-spectrum.adobe.com/react-spectrum/), en kunnen om het even welke douaneUI tot stand brengen die door de uitbreiding wordt vereist, die, maar niet beperkt tot:
 
@@ -185,7 +185,7 @@ export default function MyModal() {
 
 ## Het modaal sluiten
 
-![ AEM UI uitbreiding modaal dichte knoop ](./assets/modal/close.png){align="center"}
+![ de extensie van AEM UI modaal sluiten knoop ](./assets/modal/close.png){align="center"}
 
 Modals moeten hun eigen dichte controle verstrekken. Dit gebeurt door `guestConnection.host.modal.close()` aan te roepen.
 

@@ -2,7 +2,7 @@
 title: Aangepaste formulierbijlagen verzenden
 description: Aangepaste formulierbijlagen verzenden met e-mailcomponent
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ kt: kt-8049
 exl-id: bd9e1fc1-2fc7-452c-9a4a-2e16f6821760
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 28
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 
 
-De gebruikelijke methode is om de adaptieve formulierbijlagen te verzenden met de functie E-mail verzenden in een AEM workflow.
+De gebruikelijke methode is om de adaptieve formulierbijlagen te verzenden met de functie E-mail verzenden in een AEM-workflow.
 Klanten zouden de formulierbijlagen meestal comprimeren of de bijlagen als afzonderlijke bestanden verzenden met de component E-mail verzenden.
 
 ## De formulierbijlagen verzenden in een ZIP-bestand

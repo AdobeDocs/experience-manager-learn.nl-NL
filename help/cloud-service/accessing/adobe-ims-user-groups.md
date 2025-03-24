@@ -1,7 +1,7 @@
 ---
-title: Adobe IMS gebruikersgroepen en AEM
-description: Adobe IMS-gebruikersgroepen stellen logische gebruikersgroepen in die worden blootgesteld aan AEM, waar ze kunnen worden gebruikt om machtigingen voor afstemmen voor AEM gebruikers te definiëren.
-version: Cloud Service
+title: Adobe IMS-gebruikersgroepen en AEM
+description: Adobe IMS-gebruikersgroepen stellen logische sets met gebruikers samen die aan AEM worden blootgesteld. Deze gebruikers kunnen hiermee de machtigingen voor AEM-gebruikers afstemmen.
+version: Experience Manager as a Cloud Service
 topic: Administration, Security
 feature: User and Groups
 role: Admin
@@ -11,7 +11,7 @@ thumbnail: 39150.jpg
 last-substantial-update: 2023-05-19T00:00:00Z
 exl-id: 40ba2368-edb7-4348-9aff-91194200092e
 duration: 160
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%
@@ -23,8 +23,8 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_usergroups"
 >title="Adobe IMS-gebruikersgroepen"
->abstract="Adobe IMS-gebruikersgroepen stellen logische gebruikersgroepen in die worden blootgesteld aan AEM, waar ze kunnen worden gebruikt om machtigingen voor afstemmen voor AEM gebruikers te definiëren."
+>abstract="Adobe IMS-gebruikersgroepen stellen logische sets met gebruikers samen die aan AEM worden blootgesteld. Deze gebruikers kunnen hiermee de machtigingen voor AEM-gebruikers afstemmen."
 
- Adobe IMS-gebruikersgroepen stellen logische gebruikersgroepen in die worden blootgesteld aan AEM, waar ze kunnen worden gebruikt om machtigingen voor afstemmen voor AEM gebruikers te definiëren.
+ Adobe IMS-gebruikersgroepen stellen logische sets met gebruikers samen die aan AEM worden blootgesteld. Deze gebruikers kunnen hiermee de machtigingen voor AEM-gebruikers afstemmen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39150?quality=12&learn=on)

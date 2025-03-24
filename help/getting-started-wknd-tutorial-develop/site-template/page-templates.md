@@ -1,7 +1,7 @@
 ---
 title: Paginasjablonen
 description: Leer hoe u paginasjablonen maakt en wijzigt. Begrijp de verhouding tussen een Malplaatje van de Pagina en een Pagina. Leer hoe u beleid van een paginasjabloon configureert voor korrelig beheer en consistentie van merken voor inhoud.  Een goed gestructureerde sjabloon voor artikel van het tijdschrift wordt gemaakt op basis van een model van Adobe XD.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 feature: Core Components, Editable Templates, Page Editor
 role: Developer
@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
 recommendations: noDisplay, noCatalog
 duration: 1561
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Er zijn 3 belangrijke gebieden van [ Malplaatjes van de Pagina ](https://experie
 1. **Aanvankelijke Inhoud** - bepaalt componenten die het malplaatje met begint, kunnen deze worden uitgegeven en/of door inhoudauteurs worden geschrapt
 1. **Beleid** - bepaalt configuraties op hoe de componenten zich gedragen en welke optiesauteurs beschikbaar zullen hebben.
 
-Maak vervolgens een nieuwe sjabloon in AEM die overeenkomt met de structuur van de modellen. Dit zal in een lokale instantie van AEM voorkomen. Voer de stappen in de onderstaande video uit:
+Maak vervolgens een nieuwe sjabloon in AEM die overeenkomt met de structuur van de modellen. Dit gebeurt in een lokale versie van AEM. Voer de stappen in de onderstaande video uit:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332915?quality=12&learn=on)
 

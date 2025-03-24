@@ -2,14 +2,14 @@
 title: Een formulier selecteren in een lijst met beschikbare formulieren
 description: De API voor lijsten gebruiken om de vervolgkeuzelijst te vullen
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-13346
 topic: Development
 role: User
 level: Intermediate
 exl-id: 49b6a172-8c96-4fc6-8d31-c2109f65faac
 duration: 88
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -129,7 +129,7 @@ De volgende twee API-aanroepen zijn gebruikt bij het maken van deze gebruikersin
 * [ ListForm ](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms). De aanroep om de formulieren op te halen wordt slechts eenmaal gedaan wanneer de component wordt gegenereerd. De resultaten van de API-aanroep worden opgeslagen in de variabele afForms.
 In de bovenstaande code doorlopen we de afForms met behulp van de kaartfunctie en voor elk item in de afForms-array wordt een MenuItem-component gemaakt en toegevoegd aan de Select-component.
 
-* De Vorm van de vangst - A krijgt vraag wordt gemaakt aan [ getForm ](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition), waar identiteitskaart identiteitskaart identiteitskaart van de geselecteerde adaptieve vorm door de gebruiker in de drop-down lijst is. Het resultaat van deze aanroep van GET wordt opgeslagen in selectedForm.
+* De Vorm van de vangst - A krijgt vraag wordt gemaakt aan [ getForm ](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition), waar identiteitskaart identiteitskaart identiteitskaart van de geselecteerde adaptieve vorm door de gebruiker in de drop-down lijst is. Het resultaat van deze GET-aanroep wordt opgeslagen in selectedForm.
 
 ```
 const resp = await fetch(`/adobe/forms/af/${formID}`);

@@ -2,14 +2,14 @@
 title: Best practices voor stijlsystemen met AEM Sites
 description: Een gedetailleerd artikel waarin de beste werkwijzen worden uitgelegd voor het implementeren van het stijlsysteem met Adobe Experience Manager Sites.
 feature: Style System
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate, Experienced
 doc-type: Article
 exl-id: c51da742-5ce7-499a-83da-227a25fb78c9
 duration: 328
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1512'
 ht-degree: 0%
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Gelieve te herzien de inhoud bij [ Begrijpend hoe te voor het Systeem van de Stijl ](style-system-technical-video-understand.md) te coderen, om een begrip van de BEM-als overeenkomsten te verzekeren die door AEM Systeem van de Stijl worden gebruikt.
+>Gelieve te herzien de inhoud bij [ Begrip hoe te voor het Systeem van de Stijl ](style-system-technical-video-understand.md) te coderen, om een inzicht in de BEM-als overeenkomsten te verzekeren die door het Systeem van de Stijl van AEM worden gebruikt.
 
-Er zijn twee hoofdstijlen of stijlen die voor het Systeem van de Stijl van de AEM worden uitgevoerd:
+Er zijn twee hoofdstijlen of stijlen die voor het Systeem van de Stijl van AEM worden uitgevoerd:
 
 * **de stijlen van de Lay-out**
 * **de stijlen van de Vertoning**
@@ -33,7 +33,7 @@ Er zijn twee hoofdstijlen of stijlen die voor het Systeem van de Stijl van de AE
 
 ## Best practices voor organisatie {#style-organization-best-practices}
 
-Wanneer u de stijlnamen definieert die beschikbaar zijn voor AEM auteurs, kunt u het beste:
+Wanneer u de stijlnamen definieert die beschikbaar zijn voor AEM-auteurs, kunt u het beste:
 
 * Stijlen benoemen met behulp van een woordenlijst die de auteurs begrijpen
 * Het aantal stijlopties minimaliseren
@@ -41,17 +41,17 @@ Wanneer u de stijlnamen definieert die beschikbaar zijn voor AEM auteurs, kunt u
 * Alleen stijlcombinaties met een effect beschikbaar maken
    * Als ineffectieve combinaties worden blootgesteld, moet u ervoor zorgen dat deze ten minste geen slecht effect hebben
 
-Aangezien het aantal mogelijke stijlcombinaties beschikbaar aan AEM auteurs stijgt, bestaan de meer permutaties die QA&#39;d moeten zijn en tegen merknormen moeten worden bevestigd. Te veel opties kunnen auteurs ook verwarren, omdat het onduidelijk kan worden welke optie of combinatie nodig is om het gewenste effect te verkrijgen.
+Naarmate het aantal mogelijke stijlcombinaties waarover AEM-auteurs beschikken toeneemt, zijn er meer permutaties die QA&#39;d moeten zijn en moeten worden gevalideerd volgens de merkstandaarden. Te veel opties kunnen auteurs ook verwarren, omdat het onduidelijk kan worden welke optie of combinatie nodig is om het gewenste effect te verkrijgen.
 
 ### Stijlnamen versus CSS-klassen {#style-names-vs-css-classes}
 
-Stijlnamen, of de opties die aan AEM auteurs worden voorgesteld, en de het uitvoeren CSS klassennamen worden ontkoppeld in AEM.
+Stijlnamen, of de opties die aan AEM-auteurs worden gepresenteerd, en de namen van de implementerende CSS-klassen worden in AEM ontkoppeld.
 
-Hierdoor kunnen stijlopties worden gelabeld in een woordenschat die duidelijk is en door de AEM auteurs wordt begrepen, maar kunnen CSS-ontwikkelaars de CSS-klassen op een semantische manier een naam geven die toekomstbestendig is. Bijvoorbeeld:
+Hiermee kunnen Stijlopties worden gelabeld in een woordenlijst die duidelijk is en door de AEM-auteurs wordt begrepen, maar CSS-ontwikkelaars kunnen de CSS-klassen op een semantische manier een naam geven die toekomstbestendig is. Bijvoorbeeld:
 
-Een component moet de opties hebben om met het merk **worden gekleurd primaire** en **secundaire** kleuren, echter, de AEM auteurs de kleuren als **groen** en **geel**, eerder dan de ontwerptaal van primair en secundair.
+Een component moet de opties hebben om met het merk **worden gekleurd primaire** en **secundaire** kleuren, echter, de auteurs van AEM kennen de kleuren als **groen** en **geel**, eerder dan de ontwerptaal van primair en secundair.
 
-Het systeem van de Stijl van de AEM kan deze het kleuren stijlen van de Vertoning blootstellen gebruikend auteursvriendelijke etiketten **Groen** en **Geel**, terwijl het toestaan van de CSS ontwikkelaars om semantische het noemen van `.cmp-component--primary-color` en `.cmp-component--secondary-color` te gebruiken om de daadwerkelijke stijlimplementatie in CSS te bepalen.
+Het Systeem van de Stijl van AEM kan deze het kleuren stijlen van de Vertoning blootstellen gebruikend auteursvriendelijke etiketten **Groen** en **Geel**, terwijl het toestaan van de CSS ontwikkelaars om semantische het noemen van `.cmp-component--primary-color` en `.cmp-component--secondary-color` te gebruiken om de daadwerkelijke stijlimplementatie in CSS te bepalen.
 
 De naam van de Stijl van **Groen** wordt in kaart gebracht aan `.cmp-component--primary-color`, en **Geel** aan `.cmp-component--secondary-color`.
 
@@ -93,7 +93,7 @@ Het is zelfs mogelijk om een stijl &quot;benoemd&quot; als de standaardstijl toe
 
 >[!NOTE]
 >
->De standaardlay-outstijl heeft GEEN weergavestijlnaam, maar de auteur kan een weergaveoptie selecteren in het selectiegereedschap AEM Stijl.
+>De standaardlay-outstijl heeft GEEN weergavestijlnaam, maar de auteur kan een weergaveoptie selecteren in het selectiegereedschap van het AEM-stijlsysteem.
 >
 >Dit is in strijd met de beste praktijken:
 >
@@ -117,7 +117,7 @@ Het is zelfs mogelijk om een stijl &quot;benoemd&quot; als de standaardstijl toe
 
 De **stijl van de lay-out van de Promo** wordt gebruikt om hoog-waardeinhoud op de plaats te bevorderen en horizontaal geplaatst om een band van ruimte op de Web-pagina op te nemen en moet stijl-geschikt door merkkleuren, met de standaard de lay-outstijl van Promo gebruikend zwarte tekst zijn.
 
-Dit bereiken, a **lay-outstijl** van **Promo** en de **vertoningsstijlen** van **Groene** en **Geel** wordt gevormd in het Systeem van de Stijl van de AEM voor de component van het Taser.
+Dit bereiken, a **lay-outstijl** van **Promo** en de **vertoningsstijlen** van **Groene** en **Geel** wordt gevormd in het Systeem van de Stijl van AEM voor de component van het Taser.
 
 #### Standaardwaarde voor aanbieding
 
@@ -158,7 +158,7 @@ Dit bereiken, a **lay-outstijl** van **Promo** en de **vertoningsstijlen** van *
 
 De **Bevordering rechts-gerichte** lay-outstijl is een variatie van de stijl van de Bodemstijl die de stijl de plaats van het beeld en de tekst (beeld op recht, tekst op linkerzijde) omkeert.
 
-De juiste uitlijning, in de kern, is een weergavestijl die u in het AEM Stijlsysteem kunt invoeren als een weergavestijl die u samen met de stijl van de Promo-lay-out selecteert. Dit is in strijd met de beste praktijken van:
+De juiste uitlijning, in de kern, is een weergavestijl die u in het AEM Style System kunt invoeren als een weergavestijl die u samen met de Promo-lay-outstijl hebt geselecteerd. Dit is in strijd met de beste praktijken van:
 
 **stelt slechts stijlcombinaties bloot die een effect** hebben
 
@@ -273,7 +273,7 @@ CSS voor het kleuren van de tekst van de **Hero** lay-outstijl met de primaire (
 ## Aanvullende bronnen {#additional-resources}
 
 * [ Documentatie van het Systeem van de Stijl ](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html)
-* [ Creërend AEM de bibliotheken van de Cliënt ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [ Creërend de bibliotheken van de Cliënt van AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [ BEM (de Modifier van het Element van het Blok) documentatiewebsite ](https://getbem.com/)
 * [ LESS de website van de Documentatie ](https://lesscss.org/)
 * [ jQuery website ](https://jquery.com/)

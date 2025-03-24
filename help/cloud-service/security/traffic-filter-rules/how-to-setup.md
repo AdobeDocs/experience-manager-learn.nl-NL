@@ -1,7 +1,7 @@
 ---
-title: Hoe te de regels van de Filter van het opstellingenverkeer met inbegrip van de regels van WAF
-description: Leer hoe te opstelling om, de resultaten van de regels van de Filter van het Verkeer met inbegrip van de regels van WAF tot stand te brengen, op te stellen te testen en te analyseren.
-version: Cloud Service
+title: Hoe te de regels van de Filter van het Opstelling van het Verkeer met inbegrip van de regels van WAF
+description: Leer hoe te opstelling om, de resultaten van de regels van de Filter van het Verkeer tot stand te brengen, op te stellen te testen en te analyseren met inbegrip van de regels van WAF.
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
 role: Admin, Architect
@@ -12,16 +12,16 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: b67bf642-3341-48d0-8ea9-5f262febf414
 duration: 292
-source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 0%
 
 ---
 
-# Hoe te de regels van de Filter van het opstellingenverkeer met inbegrip van de regels van WAF
+# Hoe te de regels van de Filter van het Opstelling van het Verkeer met inbegrip van de regels van WAF
 
-Leer **hoe te opstellings** regels van de verkeersfilter, met inbegrip van de regels van WAF. Lees over het maken, implementeren, testen en analyseren van resultaten.
+Leer **hoe te opstelling** de regels van de verkeersfilter, met inbegrip van de regels van WAF. Lees over het maken, implementeren, testen en analyseren van resultaten.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425407?quality=12&learn=on)
 
@@ -29,16 +29,16 @@ Leer **hoe te opstellings** regels van de verkeersfilter, met inbegrip van de re
 
 Het installatieproces omvat het volgende:
 
-- _creërend regels_ met een aangewezen AEM projectstructuur en configuratiedossier.
-- _het opstellen van regels_ gebruikend de configuratiepijplijn van Cloud Manager van de Adobe.
+- _creërend regels_ met een aangewezen het projectstructuur en configuratiedossier van AEM.
+- _het opstellen van regels_ gebruikend de configuratiepijplijn van Adobe Cloud Manager.
 - _testende regels_ gebruikend diverse hulpmiddelen om verkeer te produceren.
 - _analyserend de resultaten_ gebruikend de logboeken van AEMCS CDN en dashboardtooling.
 
-### Regels maken in uw AEM project
+### Regels maken in uw AEM-project
 
 Ga als volgt te werk om regels te maken:
 
-1. Maak een map `config` op het hoofdniveau van uw AEM project.
+1. Maak een map `config` op het hoofdniveau van uw AEM-project.
 
 1. Maak in de map `config` een nieuw bestand met de naam `cdn.yaml` .
 
@@ -59,7 +59,7 @@ data:
 
 Zie een voorbeeld van het `cdn.yaml` -bestand in het AEM Guides WKND Sites Project:
 
-![ WKND AEM het dossier en de omslag van projectregels ](./assets/wknd-rules-file-and-folder.png){width="800" zoomable="yes"}
+![ WKND het dossier en de omslag van de het projectregels van AEM ](./assets/wknd-rules-file-and-folder.png){width="800" zoomable="yes"}
 
 ### Regels implementeren via Cloud Manager {#deploy-rules-through-cloud-manager}
 
@@ -119,9 +119,9 @@ Om regels te testen, zijn er verschillende hulpmiddelen van derden beschikbaar e
 
 ### Resultaten analyseren met de dashboardgereedschappen
 
-Na het creëren van, het opstellen van, en het testen van de regels, kunt u de resultaten analyseren gebruikend **CDN** logboeken en **AEMCS-CDN-Logboek-Analyse-Tooling**. Het hulpmiddel verstrekt een reeks dashboards om de resultaten voor Splunk en de stapel van ELK (Elasticsearch, Logstash, en Kibana) te visualiseren.
+Na het creëren van, het opstellen van, en het testen van de regels, kunt u de resultaten analyseren gebruikend **CDN** logboeken en **AEMCS-CDN-Logboek-Analyse-Tooling**. Het gereedschap biedt een set dashboards om de resultaten voor de stapel Splunk en ELK (Elasticsearch, Logstash en Kibana) te visualiseren.
 
-Gereedschap kan van de [ AEMCS-CDN-Logboek-Analyse-Tooling ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) bewaarplaats worden gekloond GitHub. Dan, volg de instructies om het **dashboard van het Verkeer CDN** en **dashboards van het Dashboard van WAF** voor uw aangewezen observatiehulpmiddel te installeren en te laden.
+Gereedschap kan van de [ AEMCS-CDN-Logboek-Analyse-Tooling ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) bewaarplaats worden gekloond GitHub. Dan, volg de instructies om het **dashboard van het Verkeer CDN** en **dashboards van WAF** voor uw aangewezen observatiehulpmiddel te installeren en te laden.
 
 In deze zelfstudie gebruiken we de ELK-stapel. Volg de [ ELK container van het Dok voor de Analyse van het Logboek van AEMCS CDN ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) instructies aan opstelling de stapel van ELK.
 
@@ -136,4 +136,4 @@ In deze zelfstudie gebruiken we de ELK-stapel. Volg de [ ELK container van het D
 
 ## Volgende stap
 
-Leer hoe te om de regels van de verkeersfilter met inbegrip van de regels van WAF in het [ Voorbeelden en hoofdstuk van de resultaatanalyse ](./examples-and-analysis.md) te verklaren, gebruikend het AEM Project van Plaatsen WKND.
+Leer hoe te om de regels van de verkeersfilter met inbegrip van de regels van WAF in het [ Voorbeelden en hoofdstuk van de resultaatanalyse ](./examples-and-analysis.md) te verklaren, gebruikend het Project van de Plaatsen van AEM WKND.

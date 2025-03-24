@@ -1,25 +1,25 @@
 ---
-title: Variabelen in AEM workflow[Deel4]
-description: Variabelen van het type XML, JSON, ArrayList en Document gebruiken in een AEM workflow
-version: 6.5
+title: Variabelen in AEM Workflow[Part4]
+description: Variabelen van het type XML, JSON, ArrayList en Document gebruiken in een AEM-workflow
+version: Experience Manager 6.5
 topic: Development
 feature: Adaptive Forms, Workflow
 role: Developer
 level: Beginner
 exl-id: 269e43f7-24cf-4786-9439-f51bfe91d39c
 duration: 102
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
-# ArrayList-variabele in AEM workflow
+# ArrayList-variabele in AEM Workflow
 
 Variabelen van het type ArrayList zijn geïntroduceerd in AEM Forms 6.5. Een gemeenschappelijk gebruiksgeval voor het gebruiken van variabele ArrayList moet douaneroutes bepalen die in AssignTask moeten worden gebruikt.
 
-Als u de variabele ArrayList in een AEM workflow wilt gebruiken, moet u een adaptief formulier maken dat herhalende elementen in de verzonden gegevens genereert. Een veel voorkomende praktijk is het definiëren van een schema dat een arrayelement bevat. In het kader van dit artikel heb ik een eenvoudig JSON-schema met arrayelementen gemaakt. Het gebruiksgeval is van een werknemer die een uitgavenrapport invult. In het onkostenrapport leggen we de naam van de manager van de verzender en de naam van de manager vast. De namen van de manager worden opgeslagen in een serie genoemd managerchain. In de onderstaande screenshot ziet u het formulier met het onkostenrapport en de gegevens van de Adaptive Forms-verzending.
+Als u de variabele ArrayList in een AEM-workflow wilt gebruiken, moet u een adaptief formulier maken dat herhalende elementen in de verzonden gegevens genereert. Een veel voorkomende praktijk is het definiëren van een schema dat een arrayelement bevat. In het kader van dit artikel heb ik een eenvoudig JSON-schema met arrayelementen gemaakt. Het gebruiksgeval is van een werknemer die een uitgavenrapport invult. In het onkostenrapport leggen we de naam van de manager van de verzender en de naam van de manager vast. De namen van de manager worden opgeslagen in een serie genoemd managerchain. In de onderstaande screenshot ziet u het formulier met het onkostenrapport en de gegevens van de Adaptive Forms-verzending.
 
 ![ expensereport ](assets/expensereport.jpg)
 
@@ -73,7 +73,7 @@ Zodra de variabele CustomRoutes ArrayList met de waarden van de voorgelegde gege
 Voer de volgende stappen uit om deze workflow op uw systeem te testen
 
 * Download en sla het bestand ArrayListVariable.zip op in uw bestandssysteem
-* [ voer het ZIP dossier ](assets/arraylistvariable.zip) in gebruikend de Manager van het Pakket van de AEM
+* [ voer het ZIP dossier ](assets/arraylistvariable.zip) in gebruikend de Manager van het Pakket van AEM
 * [ open de vorm TravelExpenseReport ](http://localhost:4502/content/dam/formsanddocuments/helpx/travelexpensereport/jcr:content?wcmmode=disabled)
 * Voer een paar kosten en de namen van de twee managers in
 * De verzendknop

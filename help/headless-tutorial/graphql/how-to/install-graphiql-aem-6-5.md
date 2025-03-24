@@ -1,7 +1,7 @@
 ---
 title: GraphiQL IDE installeren op AEM 6.5
-description: Leer hoe te installeren en te vormen GraphiQL winde op AEM 6.5
-version: 6.5
+description: Leer hoe u de GraphiQL IDE op AEM 6.5 installeert en configureert
+version: Experience Manager 6.5
 topic: Headless
 feature: GraphQL API
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-11614
 thumbnail: KT-10253.jpeg
 exl-id: 04fcc24c-7433-4443-a109-f01840ef1a89
 duration: 41
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
@@ -27,9 +27,9 @@ In AEM 6.5 moet het hulpmiddel GraphiQL IDE manueel worden geïnstalleerd.
 
    ![ Pakket GraphiQL van de Download {](assets/graphiql/software-distribution.png)
 
-   Het ZIP-bestand is een AEM pakket dat rechtstreeks kan worden geïnstalleerd.
+   Het ZIP-bestand is een AEM-pakket dat rechtstreeks kan worden geïnstalleerd.
 
-1. Van het AEM menu van het Begin, navigeer aan **Hulpmiddelen** > **Plaatsing** > **Pakketten**.
+1. Van het menu van het Begin van AEM, navigeer aan **Hulpmiddelen** > **Plaatsing** > **Pakketten**.
 1. Klik **Upload Pakket** en kies het pakket in de vroegere stap wordt gedownload dat. Klik **installeren** om het pakket te installeren.
 
    ![ installeer GrahiQL Pakket ](assets/graphiql/install-graphiql-package.png)

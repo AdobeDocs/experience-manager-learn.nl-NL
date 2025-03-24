@@ -1,8 +1,8 @@
 ---
-title: Asset compute ontwikkelen
-description: Het Hulpmiddel van de Ontwikkeling van de Asset compute is een lokaal Webkanaal dat ontwikkelaars toestaat om de arbeiders van de Computer van Activa plaatselijk, buiten de context van AEM SDK tegen de middelen van de Asset compute in Adobe I/O Runtime te vormen en uit te voeren.
+title: Asset Compute Development Tool
+description: Het Asset Compute Development Tool is een lokaal webkanaal waarmee ontwikkelaars Asset Computer-workers lokaal kunnen configureren en uitvoeren, buiten de context van de AEM SDK en tegen de Asset Compute-bronnen in Adobe I/O Runtime.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6283
 thumbnail: 40241.jpg
@@ -11,20 +11,20 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: cbe08570-e353-4daf-94d1-a91a8d63406d
 duration: 171
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
 
 ---
 
-# Asset compute ontwikkelen
+# Asset Compute Development Tool
 
-Het Hulpmiddel van de Ontwikkeling van de Asset compute is een lokaal Webkanaal dat ontwikkelaars toestaat om de arbeiders van de Computer van Activa plaatselijk, buiten de context van AEM SDK tegen de middelen van de Asset compute in Adobe I/O Runtime te vormen en uit te voeren.
+Het Asset Compute Development Tool is een lokaal webkanaal waarmee ontwikkelaars Asset Computer-workers lokaal kunnen configureren en uitvoeren, buiten de context van de AEM SDK en tegen de Asset Compute-bronnen in Adobe I/O Runtime.
 
-## Het Asset compute Development Tool uitvoeren
+## Asset Compute Development Tool uitvoeren
 
-Het Hulpmiddel van de Ontwikkeling van de Asset compute kan van de wortel van het project van de Asset compute via het eindbevel worden in werking gesteld:
+Het Asset Compute Development Tool kan vanaf de basis van het Asset Compute-project worden uitgevoerd via de terminalopdracht:
 
 ```
 $ aio app run
@@ -32,32 +32,32 @@ $ aio app run
 
 Dit zal het Hulpmiddel van de Ontwikkeling in __http://localhost:9000__ beginnen, en zal het automatisch in een browser venster openen. Voor het Te lopen Hulpmiddel van de Ontwikkeling, [ een geldig, auto-geproduceerde devToolToken moet via een vraagparameter ](#troubleshooting__devtooltoken) worden verstrekt.
 
-## Begrijp de interface van de Hulpmiddelen van de Ontwikkeling van de Asset compute{#interface}
+## De interface Asset Compute Development Tools begrijpen{#interface}
 
-![ het Hulpmiddel van de Ontwikkeling van de Asset compute ](./assets/development-tool/asset-compute-dev-tool.png)
+![ Asset Compute Development Tool ](./assets/development-tool/asset-compute-dev-tool.png)
 
 1. __het dossier van Source:__ de selectie van het brondossier wordt gebruikt om:
-   + Geselecteerd het element binair dat fungeert als het `source` binaire getal dat aan de Asset compute worker is doorgegeven
+   + Geselecteerd het element binair dat fungeert als het `source` binaire getal dat aan de Asset Compute-worker wordt doorgegeven
    + Bronbestanden uploaden
-1. __Asset compute profiel(en) definitie:__ bepaalt de worker van de Asset compute om met inbegrip van parameters in werking te stellen: met inbegrip van het eindpunt URL van de worker, de resulterende vertoningsnaam, en om het even welke parameters
-1. __Looppas:__ de knoop van de Looppas voert het profiel van de Asset compute uit zoals die in de redacteur van het de configuratieprofiel van de Asset compute wordt bepaald
+1. __Asset Compute profiel(en) definitie:__ bepaalt de worker van Asset Compute om met inbegrip van parameters in werking te stellen: met inbegrip van het eindpunt URL van de worker, de resulterende vertoningsnaam, en om het even welke parameters
+1. __Looppas:__ de knoop van de Looppas voert het profiel van Asset Compute uit zoals die in de redacteur van het de configuratieprofiel van Asset Compute wordt bepaald
 1. __Afbreken:__ de knoop van de Afbreking annuleert een uitvoering die van het tikken van de knoop van de Looppas in werking wordt gesteld
-1. __Verzoek/Reactie:__ verstrekt het verzoek van HTTP en antwoord aan/van de Asset compute worker die in Adobe I/O Runtime loopt. Dit kan nuttig zijn voor foutopsporing
-1. __Logboeken van de Activering:__ De logboeken die de uitvoering van de Asset compute worker, samen met om het even welke fouten beschrijven. Deze informatie is ook beschikbaar in de `aio app run` standaard out
-1. __Vertoningen:__ toont alle vertoningen die door de uitvoering van de Asset compute worker worden geproduceerd
-1. __devToolToken vraagparameter:__ het teken van het Hulpmiddel van de Ontwikkeling van de Asset compute vereist een geldige `devToolToken` vraagparameter aanwezig te zijn. Deze token wordt automatisch gegenereerd wanneer een nieuw ontwikkelingsprogramma wordt gemaaid
+1. __Verzoek/Reactie:__ verstrekt het verzoek van HTTP en antwoord aan/van de worker van Asset Compute die in Adobe I/O Runtime loopt. Dit kan nuttig zijn voor foutopsporing
+1. __Logboeken van de Activering:__ De logboeken die de uitvoering van de worker van Asset Compute, samen met om het even welke fouten beschrijven. Deze informatie is ook beschikbaar in de `aio app run` standaard out
+1. __Vertoningen:__ toont alle vertoningen die door de uitvoering van de worker van Asset Compute worden geproduceerd
+1. __devToolToken vraagparameter:__ het teken van het Hulpmiddel van de Ontwikkeling van Asset Compute vereist een geldige `devToolToken` vraagparameter aanwezig te zijn. Deze token wordt automatisch gegenereerd wanneer een nieuw ontwikkelingsprogramma wordt gemaaid
 
 ### Een aangepaste worker uitvoeren
 
 >[!VIDEO](https://video.tv.adobe.com/v/40241?quality=12&learn=on)
 
-_klik-door van het runnen van een Asset compute werk in het Hulpmiddel van de Ontwikkeling (Geen audio)_
+_klik-door van het runnen van een werk van Asset Compute in het Hulpmiddel van de Ontwikkeling (Geen audio)_
 
-1. Zorg ervoor dat het hulpprogramma voor de ontwikkeling van Asset computen is gestart vanuit de hoofdmap van het project met de opdracht `aio app run` .
-1. In het Hulpmiddel van de Ontwikkeling van de Asset compute, upload of selecteer het dossier van het a [ steekproefbeeld ](../assets/samples/sample-file.jpg)
+1. Zorg ervoor dat Asset Compute Development Tool is gestart vanuit de hoofdmap van het project met de opdracht `aio app run` .
+1. In het Hulpmiddel van de Ontwikkeling van Asset Compute, upload of selecteer het dossier van het a [ steekproefbeeld ](../assets/samples/sample-file.jpg)
    + Zorg ervoor het dossier in het __dossier van Source__ dropdown wordt geselecteerd
-1. Herzie het __tekstgebied van de het profieldefinitie van de Asset compute 0} {__
-   + Met de toets `worker` wordt de URL voor de geïmplementeerde Asset compute-worker gedefinieerd
+1. Herzie het __het profieldefinitie van Asset Compute__ tekstgebied
+   + De sleutel `worker` definieert de URL voor de geïmplementeerde Asset Compute-worker
    + De toets `name` definieert de naam van de vertoning die moet worden gegenereerd
    + In dit JSON-object kunnen andere sleutel/waarden worden opgegeven. Deze zijn beschikbaar in de worker onder het `rendition.instructions` -object
       + Voeg desgewenst waarden toe voor `size` , `contrast` en `brightness` :

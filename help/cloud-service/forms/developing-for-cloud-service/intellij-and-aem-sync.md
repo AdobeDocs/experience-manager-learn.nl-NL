@@ -1,16 +1,16 @@
 ---
 title: IntelliJ instellen met het gereedschap Repo
-description: Uw IntelliJ voorbereiden om te synchroniseren met AEM cloudinstantie
+description: Uw IntelliJ voorbereiden op synchronisatie met AEM Cloud Ready-instantie
 solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 jira: KT-8844
 exl-id: 9a7ed792-ca0d-458f-b8dd-9129aba37df6
 duration: 92
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
@@ -64,14 +64,14 @@ Voeg het volgende toe aan de omgevingsvariabele Pad C:\cygwin64\bin;C:\CloudMana
 **Werkmap**: \$ProjectFileDir\$
 ![ diff-bevel ](assets/diff-command.png)
 
-Extraheer het .repo- dossier van [ repo.zip ](assets/repo.zip) en plaats het in uw AEM de omslag van de projectenwortel. (C:\CloudManager\aem-banking-application) Open het .repo-bestand en zorg ervoor dat de server en de aanmeldingsinstellingen overeenkomen met uw omgeving.
+Extraheer het .repo- dossier van [ repo.zip ](assets/repo.zip) en plaats het in uw de projectwortelomslag van AEM. (C:\CloudManager\aem-banking-application) Open het .repo-bestand en zorg ervoor dat de server en de aanmeldingsinstellingen overeenkomen met uw omgeving.
 Open het .gitignore-bestand en voeg het volgende toe onder aan het bestand en sla de wijzigingen op
 \# repo
 .repo
 
 Selecteer elk project in uw em-bank-toepassingsproject, zoals ui.content en klik met de rechtermuisknop, en u ziet de optie Repo en onder de optie Repo ziet u de vier opdrachten die we eerder hebben toegevoegd.
 
-## Instellen AEM instantie van auteur{#set-up-aem-author-instance}
+## AEM Auteur-instantie instellen{#set-up-aem-author-instance}
 
 U kunt de volgende stappen volgen om snel een cloudinstantie op uw lokale systeem in te stellen.
 * [ Download recentste AEM SDK ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
@@ -81,7 +81,7 @@ U kunt de volgende stappen volgen om snel een cloudinstantie op uw lokale systee
 * De volgende mapstructuur maken
 c:\aemformscs\aem-sdk\author
 
-* Extraheer het bestand aem-sdk-quickstart-xxxxxxxxx.jar uit het ZIP-bestand van de AEM SDK en plaats dit in de map c:\aemformscs\aem-sdk\author.Wijzig de naam van het jar-bestand in aem-auteur-p4502.jar
+* Extraheer het bestand aem-sdk-quickstart-xxxxxxxxx.jar uit het ZIP-bestand voor AEM SDK en plaats dit in de map c:\aemformscs\aem-sdk\author.Wijzig de naam van het jar-bestand in aem-auteur-p4502.jar
 
 * Opdrachtprompt openen en naar c:\aemformscs\aem-sdk\author gaan
 Voer de volgende opdracht java -jar aem-auteur-p4502.jar -gui in. Hiermee wordt de installatie van AEM gestart.
@@ -90,8 +90,8 @@ Voer de volgende opdracht java -jar aem-auteur-p4502.jar -gui in. Hiermee wordt 
 * Maak de volgende mapstructuur.C:\aemformscs\aem-sdk\author\crx-quickstart\install
 * Kopieer aem-forms-addon-xxxxxx.far in installatiemap
 * Opdrachtprompt openen en naar c:\aemformscs\aem-sdk\author gaan
-Voer de volgende opdracht java -jar aem-auteur-p4502.jar -gui in. Hiermee implementeert u de formulieren die u toevoegt aan het pakket in uw AEM.
+Voer de volgende opdracht java -jar aem-auteur-p4502.jar -gui in. Hiermee worden de formulieren die u toevoegt in een pakket in uw AEM-exemplaar geïmplementeerd.
 
 ## Volgende stappen
 
-[Synchroniseer uw AEM formulieren en sjablonen met AEM project](./deploy-your-first-form.md)
+[AEM-formulieren en -sjablonen synchroniseren met AEM-project](./deploy-your-first-form.md)

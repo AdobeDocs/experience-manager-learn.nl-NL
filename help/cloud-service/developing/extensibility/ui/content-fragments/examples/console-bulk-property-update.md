@@ -1,8 +1,8 @@
 ---
-title: Bulkeigenschapupdate voorbeeld AEM extensie van Content Fragment Console
-description: Een voorbeeld AEM de uitbreiding van de Console van Fragmenten van de Inhoud die bulksgewijs een bezit van Inhoudsfragmenten bijwerkt.
+title: Bulkeigenschap bijwerken voorbeeld AEM Content Fragment Console-extensie
+description: Een voorbeeld van een AEM Content Fragments Console-extensie die bulksgewijs een eigenschap van Content Fragments bijwerkt.
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2024-01-26T00:00:00Z
 exl-id: fbfb5c10-95f8-4875-88dd-9a941d7a16fd
 duration: 1362
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 0%
@@ -31,9 +31,9 @@ De functionele stroom van de voorbeeldextensie is als volgt:
 
 1. Selecteer de Fragmenten van de Inhoud en het klikken van de knoop van de uitbreiding in de [ actiebar ](#extension-registration) opent [ modaal ](#modal).
 2. [ modaal ](#modal) toont een vorm van de douanetoevoer die met [ wordt gebouwd Reageer Spectrum ](https://react-spectrum.adobe.com/react-spectrum/).
-3. Het voorleggen van de vorm verzendt de lijst van geselecteerde Fragmenten van de Inhoud, en de AEM gastheer aan de [ actie van douaneAdobe I/O Runtime ](#adobe-io-runtime-action).
-4. De [ actie van Adobe I/O Runtime ](#adobe-io-runtime-action) bevestigt de input en doet de verzoeken van de PUT van HTTP om de geselecteerde Fragments van de Inhoud bij te werken.
-5. Een reeks HTTP-PUTTEN voor elk inhoudsfragment om de opgegeven eigenschap bij te werken.
+3. Het voorleggen van de vorm verzendt de lijst van geselecteerde Fragmenten van de Inhoud, en de gastheer van AEM naar de [ actie van douaneAdobe I/O Runtime ](#adobe-io-runtime-action).
+4. De [ actie van Adobe I/O Runtime ](#adobe-io-runtime-action) bevestigt de input en doet de verzoeken van HTTP PUT aan AEM om de geselecteerde Fragmenten van de Inhoud bij te werken.
+5. Een reeks HTTP PUTs voor elk Inhoudsfragment om het gespecificeerde bezit bij te werken.
 6. AEM as a Cloud Service gaat door met de eigenschappenupdates voor het inhoudsfragment en retourneert een geslaagde of mislukte reactie op de Adobe I/O Runtime-actie.
 7. Het modaal ontving de reactie van de actie van Adobe I/O Runtime, en toont een lijst van succesvolle bulkupdates.
 
@@ -41,7 +41,7 @@ De functionele stroom van de voorbeeldextensie is als volgt:
 
 In dit voorbeeld wordt het uitbreidingspunt `actionBar` uitgebreid om een aangepaste knop toe te voegen aan de Content Fragment Console.
 
-| AEM UI uitgebreid | Extensiepunt |
+| AEM-gebruikersinterface uitgebreid | Extensiepunt |
 | ------------------------ | --------------------- | 
 | [ de Console van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [ de Bar van de Actie ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) |
 
@@ -89,9 +89,9 @@ Er zijn twee logische reeksen routes:
 
 ### Registratie van extensies
 
-`ExtensionRegistration.js` , toegewezen aan de `index.html` -route, is het ingangspunt voor de AEM extensie en definieert:
+`ExtensionRegistration.js` , toegewezen aan de `index.html` -route, is het ingangspunt voor de AEM-extensie en definieert:
 
-1. De locatie van de extensieknop wordt weergegeven in de AEM (`actionBar` of `headerMenu`)
+1. De locatie van de extensieknop wordt weergegeven in de AEM-ontwerpervaring (`actionBar` of `headerMenu`)
 1. De definitie van de extensieknop in de functie `getButtons()`
 1. De klikhandler voor de knop, in de functie `onClick()`
 
@@ -169,9 +169,9 @@ In deze voorbeeld-app is er een modale React-component (`BulkPropertyUpdateModal
 1. De reactie van de bulkeigenschapsupdate-bewerking, waarin de inhoudsfragmenten worden vermeld die zijn bijgewerkt en de fragmenten die niet konden worden bijgewerkt
 
 Belangrijk, zou om het even welke interactie met AEM van de uitbreiding aan een [ actie van Adobe I/O Runtime AppBuilder ](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) moeten worden gedelegeerd, die een afzonderlijk serverless proces is dat in [ Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/) loopt.
-Het gebruik van Adobe I/O Runtime-acties om te communiceren met AEM is om problemen met de connectiviteit tussen bronnen van verschillende oorsprong (CORS) te voorkomen.
+Het gebruik van Adobe I/O Runtime-acties om met AEM te communiceren, is om problemen met de connectiviteit van het delen van bronnen van verschillende oorsprong (CORS) te voorkomen.
 
-Wanneer het BulkVorm van de Update van het Bezit wordt voorgelegd, roept een douane `onSubmitHandler()` de actie van Adobe I/O Runtime aan, die de huidige AEM (domein) en het AEM van de gebruiker toegangstoken overgaat, die beurtelings [ AEM het Fragment API van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) roept om de inhoudsfragmenten bij te werken.
+Wanneer de vorm van de Update van het Bezit van het Bulk wordt voorgelegd, roept een douane `onSubmitHandler()` de actie van Adobe I/O Runtime aan, die de huidige gastheer van AEM (domein) en het toegangstoken van AEM van de gebruiker overgaat, die beurtelings [ het Fragment API van de Inhoud van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) roept om de inhoudsfragmenten bij te werken.
 
 Wanneer de reactie van de actie van Adobe I/O Runtime wordt ontvangen, wordt modal bijgewerkt om de resultaten van de bulkbezitsupdate verrichting te tonen.
 
@@ -433,8 +433,8 @@ export default function BulkPropertyUpdateModal() {
 
 ### Adobe I/O Runtime-actie
 
-Een App Builder-app met AEM extensie kan 0 of veel Adobe I/O Runtime-acties definiëren of gebruiken.
-De acties van de Adobe Runtime zouden verantwoordelijk werk moeten zijn dat interactie met AEM, of andere de Webdiensten van de Adobe vereist.
+Een AEM-extensie App Builder-app kan 0 of veel Adobe I/O Runtime-acties definiëren of gebruiken.
+Adobe Runtime-acties moeten verantwoordelijk werk zijn dat interactie met AEM of andere Adobe-webservices vereist.
 
 In deze voorbeeldapp is de Adobe I/O Runtime-actie - die de standaardnaam `generic` gebruikt - verantwoordelijk voor:
 

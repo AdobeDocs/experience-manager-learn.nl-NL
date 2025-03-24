@@ -1,16 +1,16 @@
 ---
 title: De Asset Viewer begrijpen met AEM Dynamic Media
-description: Dankzij AEM verbeteringen in de Dynamic Media Viewer kunnen AEM auteurs definiëren en aanpassen hoe elementen aan de websitegebruiker worden gepresenteerd.
+description: Dankzij de verbeteringen in AEM Dynamic Media Viewer kunnen AEM-auteurs definiëren en aanpassen hoe elementen aan de websitegebruiker worden gepresenteerd.
 sub-product: Experience Manager Assets
 feature: Viewer Presets, Image Profiles
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
 doc-type: Feature Video
 exl-id: db4fc561-2368-4df8-9b02-fc08afa00805
 duration: 254
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # De Asset Viewer begrijpen met AEM Dynamic Media{#understanding-the-asset-viewer-with-aem-dynamic-media}
 
-Dankzij AEM verbeteringen in de Dynamic Media Viewer kunnen AEM auteurs definiëren en aanpassen hoe elementen aan de websitegebruiker worden gepresenteerd.
+Dankzij de verbeteringen in AEM Dynamic Media Viewer kunnen AEM-auteurs definiëren en aanpassen hoe elementen aan de websitegebruiker worden gepresenteerd.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17783?quality=12&learn=on)
 

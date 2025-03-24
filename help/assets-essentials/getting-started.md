@@ -1,7 +1,7 @@
 ---
-title: Aan de slag met Assets Essentials
-description: Leer hoe u toegang krijgt tot Assets Essentials en de belangrijkste aspecten van de gebruikersinterface van de toepassing verkent.
-version: Cloud Service
+title: Aan de slag met Elementen
+description: Leer hoe u toegang krijgt tot de Elementen en de belangrijkste facetten van de gebruikersinterface van de Elementen.
+version: Experience Manager as a Cloud Service
 feature: Assets Essentials
 topic: Content Management
 role: User
@@ -12,7 +12,7 @@ last-substantial-update: 2022-10-03T00:00:00Z
 doc-type: Feature Video
 exl-id: a0accb94-ceef-4ecf-b1f6-f47751114242
 duration: 251
-source-git-commit: 54509339ee8e538daf432b329ddebb55e98bb6d9
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '37'
 ht-degree: 0%

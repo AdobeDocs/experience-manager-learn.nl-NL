@@ -5,12 +5,13 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16517
-source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
+exl-id: e1e5745e-96fb-46c6-aa7f-43cdf2dfddbc
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%
@@ -23,7 +24,7 @@ De component Landen overerft de dialoogstructuur van de vervolgkeuzelijst, maar 
 
 De eenvoudigste manier om dit dialoogvenster te maken is als volgt:
 
-1. In uw AEM project, creeer een omslag genoemd _cq_dialog onder de omslag van de landencomponent.
+1. Maak in uw AEM-project een map met de naam _cq_dialog in de map countries component.
 2. Maak in de map _cq_dialog een bestand met de naam .content.xml.
 3. Plak de hieronder opgegeven XML-code in dit bestand.
 4. Sla uw wijzigingen op en synchroniseer uw project met AEM.

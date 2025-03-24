@@ -1,8 +1,8 @@
 ---
-title: Foutopsporing AEM SDK met de OSGi-webconsole
-description: De lokale QuickStart van de AEM SDK heeft een OSGi-webconsole die een verscheidenheid aan informatie en introspecties in de lokale AEM runtime biedt die nuttig zijn om te begrijpen hoe uw toepassing door, en functies binnen AEM wordt erkend.
+title: Fouten opsporen in AEM SDK met de OSGi-webconsole
+description: De lokale QuickStart van AEM SDK heeft een OSGi-webconsole die verschillende informatie en introspecties in de lokale AEM-runtime biedt die handig zijn om te begrijpen hoe uw toepassing wordt herkend door en werkt binnen AEM.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 kt: 5265, 5366, 5267
 topic: Development
@@ -10,16 +10,16 @@ role: Developer
 level: Beginner, Intermediate
 exl-id: 0929bc1a-376c-4e16-a540-a276fd5af164
 duration: 486
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
 
 ---
 
-# Foutopsporing AEM SDK met de OSGi-webconsole
+# Fouten opsporen in AEM SDK met de OSGi-webconsole
 
-De lokale QuickStart van de AEM SDK heeft een OSGi-webconsole die een verscheidenheid aan informatie en introspecties in de lokale AEM runtime biedt die nuttig zijn om te begrijpen hoe uw toepassing door, en functies binnen AEM wordt erkend.
+De lokale QuickStart van AEM SDK heeft een OSGi-webconsole die verschillende informatie en introspecties in de lokale AEM-runtime biedt die handig zijn om te begrijpen hoe uw toepassing wordt herkend door en werkt binnen AEM.
 
 AEM verstrekt vele consoles OSGi, elk die zeer belangrijke inzichten in verschillende aspecten van AEM verstrekken, nochtans zijn het volgende typisch het nuttigst in het zuiveren van uw toepassing.
 
@@ -27,7 +27,7 @@ AEM verstrekt vele consoles OSGi, elk die zeer belangrijke inzichten in verschil
 
 >[!VIDEO](https://video.tv.adobe.com/v/34335?quality=12&learn=on)
 
-De bundelconsole is een catalogus van de bundels OSGi, en hun details, opgesteld aan AEM, samen met de ad hoc capaciteit om hen te beginnen en tegen te houden.
+De bundelconsole is een catalogus van de OSGi-bundels en hun gegevens, geïmplementeerd op AEM, samen met de ad-hocmogelijkheid om ze te starten en te stoppen.
 
 De bundelconsole bevindt zich in:
 
@@ -44,7 +44,7 @@ Klik in elke bundel, verstrekt details die met het zuiveren uw toepassing helpen
 
 >[!VIDEO](https://video.tv.adobe.com/v/34336?quality=12&learn=on)
 
-De console van Componenten is een catalogus van alle componenten OSGi die aan AEM worden opgesteld, en verstrekt alle informatie over hen, van hun bepaalde cyclus van het componentenleven OSGi, aan welke diensten OSGi zij kunnen verwijzen naar
+De console van Componenten is een catalogus van alle componenten OSGi die aan AEM worden opgesteld, en verstrekt alle informatie over hen, van hun bepaalde cyclus van het de componentenleven OSGi, aan welke diensten OSGi zij kunnen verwijzen naar
 
 De console van Componenten wordt gevestigd bij:
 

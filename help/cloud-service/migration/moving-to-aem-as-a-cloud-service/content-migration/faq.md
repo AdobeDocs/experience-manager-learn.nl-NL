@@ -1,7 +1,7 @@
 ---
 title: Veelgestelde vragen over migratie van AEM as a Cloud Service-inhoud
 description: Antwoorden op veelgestelde vragen over de migratie van inhoud naar AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: article
 topic: Migration
 feature: Migration
@@ -11,7 +11,7 @@ jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
 duration: 399
-source-git-commit: e29eaefb20d466126d0d31ad8eb598b63a0cebcd
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
@@ -29,25 +29,25 @@ Antwoorden op veelgestelde vragen over de migratie van inhoud naar AEM as a Clou
 + **CTT**: [ Het Hulpmiddel van de Overdracht van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
 + **CAM**: [ Cloud Acceleration Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)
 + **IMS**: [ Systeem van Identity Management ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)
-+ **DM**: [ Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1.html)
++ **DM**: [ Dynamische Media ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1.html)
 
-Gebruik de onderstaande sjabloon voor het opgeven van meer informatie tijdens het maken van CTT-gerelateerde ondersteuningstickets voor Adoben.
+Gebruik de onderstaande sjabloon voor meer informatie wanneer u CTT-gerelateerde Adobe-ondersteuningstickets maakt.
 
-](../../assets/faq/adobe-support-ticket-template.png) { align=&quot;center&quot;} het Malplaatje van het Ticket van de Steun van de Migratie van de Inhoud ![
+![ de Malplaatje van het Ticket van de Steun van Adobe van de Migratie van de Inhoud ](../../assets/faq/adobe-support-ticket-template.png) { align= &quot;centrum&quot;}
 
 ## Algemene vragen over migratie van inhoud
 
-### Q: Wat zijn de verschillende methodes om inhoud in AEM als Cloud Servicen te migreren?
+### V: Wat zijn de verschillende methoden om inhoud als Cloud Services naar AEM te migreren?
 
 Er zijn drie verschillende methoden beschikbaar
 
 + Het gereedschap Inhoud overbrengen gebruiken (AEM 6.3+ → AEMaaCS)
-+ Via pakketbeheer (AEM → AEMaaCS)
++ Via Package Manager (AEM → AEMaaCS)
 + Buiten de box Bulk Import Service voor Assets (S3/Azure → AEMaaCS)
 
 ### Q: Is er een grens op de hoeveelheid inhoud die kan worden overgebracht gebruikend CTT?
 
-Nee. CTT als gereedschap kan uit AEM bron worden gehaald en in AEMaaCS worden opgenomen. Er zijn echter specifieke limieten voor het AEMaaCS-platform die vóór de migratie in overweging moeten worden genomen.
+Nee. CTT als een gereedschap kan uit AEM-bron worden geëxtraheerd en in AEMaaCS worden opgenomen. Er zijn echter specifieke limieten voor het AEMaaCS-platform die vóór de migratie in overweging moeten worden genomen.
 
 Voor meer info, verwijs naar [ de eerste vereisten van de wolkenmigratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html).
 
@@ -61,17 +61,17 @@ Controleer de evaluatie van de complexiteit van de code en inhoud die door het g
 
 Het wordt altijd aangeraden een-op-een-uitname uit te voeren tussen auteur- en publicatielagen. Desalniettemin is het acceptabel om de auteur van de bronproductie uit te pakken en die in Dev, Stage en Production CS in te voeren.
 
-### Q: Is er een manier om de tijd te schatten, het vergt om de inhoud van bron AEM in AEMaaCS gebruikend CTT te migreren?
+### Q: Is er een manier om de tijd te schatten, het neemt om de inhoud van bron AEM in AEMaaCS te migreren gebruikend CTT?
 
 Aangezien het migratieproces afhankelijk is van internetbandbreedte, voor het CTT-proces toegewezen heap, beschikbaar vrij geheugen en schijf-IO die aan elk bronsysteem zijn onderworpen, wordt aanbevolen om het bewijs van migratie in een vroeg stadium uit te voeren en die gegevenspunten te extrapoleren om schattingen te maken.
 
-### Q: Hoe wordt mijn bron AEM prestaties beïnvloed als ik het CTT-extractieproces start?
+### V: Hoe wordt mijn AEM-bronprestatie beïnvloed als ik het CTT-extractieproces start?
 
 Het hulpmiddel CTT loopt in zijn eigen proces Java™ dat tot 4gb heap neemt, die door configuratie OSGi configureerbaar is. Dit getal kan veranderen, maar u kunt het Java™-proces opzoeken en daar achter komen.
 
-Als AZCopy is geïnstalleerd en/of optie / validatiefunctie voor kopiëren is ingeschakeld, verbruikt het AZCopy-proces CPU-cycli.
+Als AZCopy is geïnstalleerd en/of optie / validatiefunctie voor kopiëren is ingeschakeld, verbruikt AZCopy-proces CPU-cycli.
 
-Naast jvm gebruikt het gereedschap ook schijf-IO om de gegevens op te slaan op een tijdelijke tijdelijke ruimte en die na de extractiecyclus worden opgeschoond. Naast RAM, cpu en Schijf IO, gebruikt het hulpmiddel CTT ook de netwerkbandbreedte van het bronsysteem om gegevens in Azure blob store te uploaden.
+Naast jvm gebruikt het gereedschap ook schijf-IO om de gegevens op te slaan op een tijdelijke tijdelijke ruimte en die na de extractiecyclus worden opgeschoond. Naast RAM, CPU en Schijf IO, gebruikt het hulpmiddel CTT ook de netwerkbandbreedte van het bronsysteem om gegevens in Azure blob store te uploaden.
 
 De hoeveelheid middelen die het CTT-extractieproces nodig heeft, is afhankelijk van het aantal knooppunten, het aantal lobs en de geaggregeerde grootte ervan. Het is moeilijk om een formule te verstrekken en daarom wordt het geadviseerd om een klein Bewijs van migratie uit te voeren om de vereisten van de bronserver te bepalen upsize.
 
@@ -101,7 +101,7 @@ Ja. Eindgebruikersverkeer wordt niet onderbroken door de activiteit van de inhou
 
 ### Q: Het BPA rapport toont punten met betrekking tot ontbrekende originele vertoningen. Moet ik ze eerst opruimen aan de bron voordat ze worden geëxtraheerd?
 
-Ja. De ontbrekende oorspronkelijke vertoning betekent dat het binaire element niet correct is geüpload. Beschouw het als slechte gegevens, gelieve te herzien, steun gebruikend de Manager van het Pakket (zoals vereist) en hen te verwijderen uit bron AEM alvorens extractie in werking te stellen. De onjuiste gegevens hebben negatieve resultaten bij de verwerking van de elementen.
+Ja. De ontbrekende oorspronkelijke vertoning betekent dat het binaire element niet correct is geüpload. Beschouw het als slechte gegevens, bekijk, maak een reservekopie met gebruik van Package Manager (zoals vereist) en verwijder ze uit bron-AEM voordat u extractie uitvoert. De onjuiste gegevens hebben negatieve resultaten bij de verwerking van de elementen.
 
 ### Q: Het BPA-rapport bevat items die verwant zijn aan het ontbrekende `jcr:content` knooppunt voor mappen. Wat moet ik met hen doen?
 
@@ -117,7 +117,7 @@ Ja, is er a [ bevestiging ](https://experienceleague.adobe.com/docs/experience-m
 
 ### Q: Mijn klant heeft de vereiste om inhoud te verplaatsen tussen AEMaaCS-omgevingen, zoals van AEMaaCS Dev naar AEMaaCS Stage of naar AEMaaCS Prod. Kan ik het hulpmiddel van de inhoudoverdracht voor deze gebruiksgevallen gebruiken?
 
-Helaas, nee. De gebruikscase van CTT is om inhoud van op-gebouw/AMS-ontvangen bron AEM 6.3+ aan AEMaaCS wolkenmilieu&#39;s te migreren. [ gelieve te lezen CTT documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html).
+Helaas, nee. De gebruikscase van CTT is het migreren van inhoud van Op-gebouw/AMS-ontvangen bron van AEM 6.3+ aan AEMaaCS wolmilieu&#39;s. [ gelieve te lezen CTT documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html).
 
 ### V: Welke problemen worden verwacht tijdens de extractie?
 
@@ -148,7 +148,7 @@ Het proces CTT vereist connectiviteit aan de hieronder middelen:
 
 Verwijs naar de documentatie voor meer informatie over [ bronconnectiviteit ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#source-environment-connectivity).
 
-## Dynamic Media-gerelateerde vragen over verwerking van bedrijfsmiddelen
+## Middelverwerking Dynamische vragen over media
 
 ### V: Zullen middelen automatisch worden herverwerkt na opname in AEMaaCS?
 
@@ -158,15 +158,15 @@ Nee. Om de activa te verwerken, moet het verzoek om opnieuw te verwerken in werk
 
 Ja. De elementen worden opnieuw geïndexeerd op basis van de indexdefinities die beschikbaar zijn in AEMaaCS.
 
-### Q: De bron AEM is geïntegreerd met Dynamic Media. Zijn er specifieke zaken die in overweging moeten worden genomen vóór de migratie van inhoud?
+### Q: De bron-AEM is geïntegreerd met Dynamic Media. Zijn er specifieke zaken die in overweging moeten worden genomen vóór de migratie van inhoud?
 
-Ja, bedenk het volgende wanneer de bron AEM Dynamic Media Integration heeft.
+Ja, overweeg het volgende wanneer de bron AEM Dynamic Media Integration heeft.
 
-+ AEMaaCS ondersteunt alleen de Dynamic Media Scene7-modus. Als het bronsysteem op Hybride Wijze is, dan wordt de migratie DM aan de wijzen van Scene7 vereist.
++ AEMaaCS steunt slechts Dynamische Wijze Scene7 van Media. Als het bronsysteem op Hybride Wijze is, dan wordt de migratie DM aan wijzen Scene7 vereist.
 + Als de benadering uit bronklooninstanties moet migreren, dan is het veilig om integratie DM op kloon onbruikbaar te maken die voor CTT zou worden gebruikt. Deze stap is puur om het even welk schrijven aan DM te vermijden of lading op verkeer te vermijden DM.
-+ Houd er rekening mee dat CTT knooppunten, metagegevens van een migratieset van bron-AEM naar AEMaaCS migreert. Het zal geen handelingen op DM direct uitvoeren.
++ Houd er rekening mee dat CTT knooppunten, metagegevens van een migratieset van AEM naar AEMaaCS migreert. Het zal geen handelingen op DM direct uitvoeren.
 
-### Q: Wat zijn verschillende migratiebenaderingen wanneer de integratie van DM op Source AEM?
+### V: Wat zijn verschillende migratiemethoden wanneer DM-integratie aanwezig is op Source AEM?
 
 Lees de bovenstaande vraag en beantwoord deze eerder
 
@@ -184,8 +184,8 @@ Als het aantal elementen/knooppunten in de bronomgeving zich op een lager niveau
    + Merk op deze verrichting migreert volledige knooppuntenopslag, maar slechts gewijzigde vlekken in tegenstelling tot volledige vlekken. De vorige set lobs is te vinden in de Azure blob store van de AEMaaCS-doelinstantie.
    + Gebruik dit bewijs van migraties voor het meten van de migratieduur, het testen en valideren van alle andere functies
 + Tot slot, vóór de week van go-live, voer vepe=ware migratie uit
-   + De Dynamic Media aansluiten op AEMaaCS
-   + Verbinding met DM-config van AEM bron op locatie verbreken
+   + De dynamische media aansluiten op AEMaaCS
+   + DM config van AEM op-gebouwbron losmaken
 
 Met deze optie kunt u migratie één voor één uitvoeren, wat On-prem Dev → AEMaaCS Dev, etc. betekent. en verplaatst de DM-configuraties vanuit de respectieve omgevingen
 

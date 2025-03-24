@@ -1,7 +1,7 @@
 ---
-title: Een complexe component Image List maken - AEM eerste zelfstudie zonder kop
+title: Een complexe component Image List maken - eerste zelfstudie voor AEM Headless
 description: Leer hoe u met inhoudsfragment, inhoudsverwijzingen en afbeeldingen werkt.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: ad06b0f3-afa7-4661-aa66-0674d2e6bb43
 duration: 732
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 0%
@@ -422,4 +422,4 @@ export default Home;
 
 ## Gefeliciteerd!
 
-U hebt met succes een AEM headless ervaring gecreeerd die volledig aangedreven door AEM Headless APIs is en met Universele Redacteur editable.
+U hebt met succes een AEM Headless-ervaring gemaakt die volledig wordt aangedreven door AEM Headless API&#39;s en die kan worden bewerkt met Universal Editor.

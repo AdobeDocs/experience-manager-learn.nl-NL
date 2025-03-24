@@ -1,14 +1,14 @@
 ---
-title: Inhoudsfragmenten auteur - Geavanceerde concepten van AEM headless - GraphQL
+title: Inhoudsfragmenten auteur - Geavanceerde concepten van AEM Headless - GraphQL
 description: In dit hoofdstuk van Geavanceerde concepten van Adobe Experience Manager (AEM) Headless leert u werken met tabbladen, datum en tijd, JSON-objecten en fragmentverwijzingen in inhoudsfragmenten. Stel mapbeleid in om te beperken welke modellen van inhoudsfragmenten kunnen worden opgenomen.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 998d3678-7aef-4872-bd62-0e6ea3ff7999
 duration: 609
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2931'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Leer in dit hoofdstuk hoe te:
 
 ## Voorbeeldinhoud installeren {#sample-content}
 
-Installeer een AEM pakket dat meerdere mappen en voorbeeldafbeeldingen bevat die worden gebruikt om de zelfstudie te versnellen.
+Installeer een AEM-pakket dat meerdere mappen en voorbeeldafbeeldingen bevat die worden gebruikt om de zelfstudie te versnellen.
 
 1. Download [ geavanceerd-GraphQL-Tutorial-Starter-Pakket-1.1.zip ](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip)
 1. In AEM, navigeer aan **Hulpmiddelen** > **Plaatsing** > **Pakketten** om tot **de Manager van het Pakket** toegang te hebben.
@@ -46,7 +46,7 @@ Installeer een AEM pakket dat meerdere mappen en voorbeeldafbeeldingen bevat die
 
 ## Mappen maken en limieten instellen met behulp van mapbeleid
 
-Van de AEM homepage, uitgezochte **Assets** > **Dossiers** > **Gedeelde WKND** > **Engels**. Hier ziet u de verschillende categorieën van het Fragment van de Inhoud, met inbegrip van avonturen en Medewerkers.
+Van de homepage van AEM, uitgezochte **Assets** > **Dossiers** > **Gedeelde WKND** > **Engels**. Hier ziet u de verschillende categorieën van het Fragment van de Inhoud, met inbegrip van avonturen en Medewerkers.
 
 ### Mappen maken {#create-folders}
 
@@ -66,7 +66,7 @@ Creeer een omslag voor de Fragmenten van de Inhoud van Instructeurs die op het M
 
 ### Limieten instellen met behulp van mapbeleid
 
-AEM kunt u machtigingen en beleid voor de mappen met inhoudsfragmenten definiëren. Door toestemmingen te gebruiken, kunt u slechts bepaalde gebruikers (auteurs) of groepen auteurs toegang tot bepaalde omslagen verlenen. Met behulp van mapbeleid kunt u beperken welke modellen van inhoudsfragmenten auteurs in die mappen kunnen gebruiken. In dit voorbeeld, beperken wij een omslag tot de Persoon en de modellen van Info van het Contact. Een mapbeleid configureren:
+Met AEM kunt u machtigingen en beleid voor mappen met inhoudsfragmenten definiëren. Door toestemmingen te gebruiken, kunt u slechts bepaalde gebruikers (auteurs) of groepen auteurs toegang tot bepaalde omslagen verlenen. Met behulp van mapbeleid kunt u beperken welke modellen van inhoudsfragmenten auteurs in die mappen kunnen gebruiken. In dit voorbeeld, beperken wij een omslag tot de Persoon en de modellen van Info van het Contact. Een mapbeleid configureren:
 
 1. Selecteer de **omslag van Instructeurs** die u hebt gecreeerd, dan selecteren **Eigenschappen** van de hoogste navigatiebar.
 
@@ -114,7 +114,7 @@ Laten we vier mensen maken die aan een team van Adventure-instructeurs kunnen wo
 
 ### Een fragmentverwijzing maken met de editor voor fragmentfragmenten {#fragment-reference-from-editor}
 
-AEM kunt u een fragmentverwijzing rechtstreeks vanuit de editor voor inhoudsfragmenten maken. Laten we een verwijzing naar de contactgegevens van Jacob maken.
+Met AEM kunt u rechtstreeks vanuit de Inhoudsfragmenteditor een fragmentverwijzing maken. Laten we een verwijzing naar de contactgegevens van Jacob maken.
 
 1. Selecteer **Nieuw Fragment van de Inhoud** onder het **Info van het Contact** gebied.
 
@@ -213,7 +213,7 @@ Navigeer in de **omslag van het Nationaal Park van 0} Yosemite.** Op dit moment 
 
 ### Plaatsaanduidingen voor tabbladen
 
-AEM kunt u tabplaceholders gebruiken om verschillende types van inhoud te groeperen en uw Fragments van de Inhoud te maken gemakkelijker te lezen en te beheren. In het vorige hoofdstuk hebt u tabplaatsaanduidingen toegevoegd aan het locatiemodel. Dientengevolge, heeft het Fragment van de Inhoud van de Plaats nu twee lusjesecties: **Details van de Plaats** en **Adres van de Plaats**.
+Met AEM kunt u plaatsaanduidingen op tabbladen gebruiken om verschillende typen inhoud te groeperen en uw inhoudsfragmenten leesbaarder en eenvoudiger te beheren. In het vorige hoofdstuk hebt u tabplaatsaanduidingen toegevoegd aan het locatiemodel. Dientengevolge, heeft het Fragment van de Inhoud van de Plaats nu twee lusjesecties: **Details van de Plaats** en **Adres van de Plaats**.
 
 ![ placeholders van het Lusje ](assets/author-content-fragments/tabs.png)
 
@@ -318,7 +318,7 @@ Laten we een inhoudsfragment maken met behulp van het model voor het fragment me
 
 ### Inhoud- en fragmentverwijzingen in de teksteditor met meerdere regels
 
-AEM kunt u inhoud en fragmentverwijzingen rechtstreeks toevoegen aan de teksteditor met meerdere regels en deze later ophalen met GraphQL-query&#39;s. Laten wij zowel inhoud als fragmentverwijzingen in het **gebied van de Beschrijving** toevoegen.
+Met AEM kunt u inhoud en fragmentverwijzingen rechtstreeks toevoegen aan de teksteditor met meerdere regels en deze later ophalen met GraphQL-query&#39;s. Laten wij zowel inhoud als fragmentverwijzingen in het **gebied van de Beschrijving** toevoegen.
 
 1. Eerst, voeg de volgende tekst in het **gebied van de Beschrijving** toe: &quot;Het team van professionele avonturers en het trekken instructeurs die in het Nationale Park van Josemite werken.&quot;
 

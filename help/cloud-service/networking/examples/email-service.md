@@ -1,7 +1,7 @@
 ---
 title: E-mailservice
 description: Leer hoe u AEM as a Cloud Service configureert voor verbinding met een e-mailservice met behulp van egress-poorten.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9353
 thumbnail: KT-9353.jpeg
 exl-id: 5f919d7d-e51a-41e5-90eb-b1f6a9bf77ba
 duration: 76
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Aangezien de geheimen niet in code moeten worden opgeslagen, worden de gebruiker
 
 Typisch, [ flexibel havenuitgang ](../flexible-port-egress.md) wordt gebruikt om het integreren met de e-maildienst tevreden te stellen tenzij het aan `allowlist` Adobe IP noodzakelijk is, waarin [ specifiek adres van de uitgang ](../dedicated-egress-ip-address.md) kan worden gebruikt.
 
-Bovendien, herzie AEM documentatie op [ verzendend e-mail ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+Bovendien, herzie de documentatie van AEM op [ verzendend e-mail ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 ## Geavanceerde netwerkondersteuning
 
@@ -47,7 +47,7 @@ Verzeker [ aangewezen ](../advanced-networking.md#advanced-networking) geavancee
 
 ## OSGi-configuratie
 
-Dit OSGi configuratievoorbeeld vormt AEM de Dienst van Mail OSGi om een externe postdienst, als volgende Cloud Manager `portForwards` regel van de [ enableEnvironmentAdvancedNetworkingConfiguration ](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) verrichting te gebruiken.
+Dit OSGi- configuratievoorbeeld vormt de Dienst van de Post OSGi van AEM om een externe postdienst, als volgende Cloud Manager `portForwards` regel van de [ enableEnvironmentAdvancedNetworkingConfiguration ](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) verrichting te gebruiken.
 
 ```json
 ...

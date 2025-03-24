@@ -1,7 +1,7 @@
 ---
 title: Cloud 5 AEM Dispatcher Validator
 description: Deze uitzending is iets dieper op de validator van de verzender en de nuances die deze biedt.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 role: Admin, Developer
 level: Intermediate
 jira: KT-10271
@@ -10,7 +10,7 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: e95e7530-100d-4495-abae-4c568e7978b3
 duration: 310
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 0%
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 # Cloud 5 AEM Dispatcher Validator
 
-Een kort voorbeeld van hoe u de dispatchervalidator in uw AEM ontwikkelingswerkstromen kunt gebruiken.
+Een kort voorbeeld van hoe u de dispatchervalidator kunt gebruiken in uw AEM-ontwikkelingsworkflows.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342358?quality=12&learn=on)
 
 ## Inhoud die in deze video wordt behandeld
 
-+ Overzicht van verzender en SDK
++ Overzicht van dispatcher &amp; SDK
 + [ de Hulpmiddelen van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html)
 + Problemen met fouten oplossen
 + De logboeken en runmodi van de verzender gebruiken voor foutopsporing

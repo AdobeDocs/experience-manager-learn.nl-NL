@@ -4,33 +4,33 @@ description: Gegevens samenvoegen met XDP-sjabloon om niet-interactieve PDF te g
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-16384
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
-source-git-commit: a0de7eaa391749b6b0d90e7cf3e363c2d5a232b5
+exl-id: 8a5a4d11-12a2-462d-8684-a0c6ec0cac0e
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
 
 ---
 
-
 # PDF-documenten genereren met behulp van uitvoerservice
 
-De [ dienst van de Output ](https://javadoc.io/static/com.adobe.aem/aem-forms-sdk-api/2024.07.31.00-240800/com/adobe/fd/output/api/OutputService.html) is de dienst OSGi die deel van AEM Diensten van het Document uitmaakt. Deze biedt ondersteuning voor verschillende uitvoerindelingen en ontwerpfuncties van AEM Forms Designer. De service Uitvoer converteert XFA-sjablonen en XML-gegevens om afdrukdocumenten in verschillende indelingen te genereren.
+De [ dienst van de Output ](https://javadoc.io/static/com.adobe.aem/aem-forms-sdk-api/2024.07.31.00-240800/com/adobe/fd/output/api/OutputService.html) is de dienst OSGi die deel van de Diensten van het Document van AEM uitmaakt. Deze biedt ondersteuning voor verschillende uitvoerindelingen en ontwerpfuncties van AEM Forms Designer. De service Uitvoer converteert XFA-sjablonen en XML-gegevens om afdrukdocumenten in verschillende indelingen te genereren.
 
-De Output-service in AEM Forms lijkt sterk op die in AEM Forms 6.5. Als u dus bekend bent met de Output-service in AEM Forms 6.5, is de overgang naar AEM Forms-as a Cloud Service eenvoudig.
+De Output-service in AEM Forms as a Cloud Service lijkt sterk op die in AEM Forms 6.5. Als u dus bekend bent met de Output-service in AEM Forms 6.5, is de overgang naar AEM Forms as a Cloud Service eenvoudig.
 
 Met de service Uitvoer kunt u toepassingen maken waarmee u:
 
 + Definitieve formulierdocumenten genereren door sjabloonbestanden te vullen met XML-gegevens.
 + Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-, PostScript-, PCL- en ZPL-afdrukstromen.
-+ Afdruk-PDF genereren op basis van XFA-formulier-PDF.
-+ Genereer PDF-, PostScript-, PCL- en ZPL-documenten bulksgewijs door meerdere gegevenssets samen te voegen met de meegeleverde sjablonen.
++ Afdruk-PDF&#39;s genereren van XFA-formulier-PDF&#39;s.
++ Genereer grote hoeveelheden PDF-, PostScript-, PCL- en ZPL-documenten door meerdere gegevenssets samen te voegen met de meegeleverde sjablonen.
 
-Deze service is ontworpen voor gebruik binnen de context van een as a Cloud Service AEM Forms-instantie. Het volgende codefragment genereert een PDF-document in een servlet met behulp van `OutputService` .
+Deze service is ontworpen voor gebruik binnen de context van een AEM Forms as a Cloud Service-instantie. Het volgende codefragment genereert een PDF-document in een servlet met behulp van `OutputService` .
 
 ```java
 import com.adobe.fd.output.api.OutputService;

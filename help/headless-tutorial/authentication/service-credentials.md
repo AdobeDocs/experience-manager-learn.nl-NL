@@ -1,7 +1,7 @@
 ---
 title: Servicegegevens
-description: Leer hoe u Service Credentials kunt gebruiken om externe toepassingen, systemen en services te vereenvoudigen en via HTTP programmatisch te communiceren met de services van Auteur of Publish.
-version: Cloud Service
+description: Leer hoe te om de Referenties van de Dienst te gebruiken die worden gebruikt om externe toepassingen, systemen, en de diensten te vergemakkelijken om programmatically met de auteur of de Publish diensten over HTTP in wisselwerking te staan.
+version: Experience Manager as a Cloud Service
 feature: APIs
 jira: KT-6785
 thumbnail: 330519.jpg
@@ -12,7 +12,7 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 duration: 881
-source-git-commit: 1a745f4b11007df5636c2fc0bea05d56393ef9c6
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1963'
 ht-degree: 0%
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 # Servicegegevens
 
-Integraties met Adobe Experience Manager (AEM) as a Cloud Service moeten veilig kunnen worden geverifieerd voor AEM service. AEM Developer Console verleent toegang tot Service Credentials, die worden gebruikt om externe toepassingen, systemen en diensten te vergemakkelijken om programmatically met AEM de diensten van de Auteur of van Publish over HTTP in wisselwerking te staan.
+Integraties met Adobe Experience Manager (AEM) as a Cloud Service moeten veilig kunnen worden geverifieerd voor de AEM-service. AEM Developer Console verleent toegang tot Service Credentials, die worden gebruikt om externe toepassingen, systemen en diensten te vergemakkelijken om programmatically met de Auteur van AEM of de Publicatie diensten over HTTP in wisselwerking te staan.
 
-AEM integreert met andere producten van de Adobe gebruikend [ S2S OAuth die via Adobe Developer Console ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) wordt beheerd. Voor douaneintegratie met de dienstrekeningen, worden de geloofsbrieven van JWT gebruikt en beheerd in de AEM Developer Console.
+AEM integreert met andere producten van Adobe gebruikend [ S2S OAuth die via Adobe Developer Console ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) wordt beheerd. Voor aangepaste integratie met serviceaccounts worden JWT-referenties gebruikt en beheerd in de AEM Developer Console.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
@@ -32,8 +32,8 @@ De Referenties van de dienst kunnen gelijkaardige [ Lokale Tokens van de Toegang
 + Servicekredieten zijn gekoppeld aan technische accounts. De veelvoudige de dienstgeloofsbrieven kunnen voor een Technische Rekening actief zijn.
 + De Verantwoordelijkheden van de dienst zijn _niet_ toegangstokens, eerder zijn zij geloofsbrieven die worden gebruikt om __ toegangstokens te verkrijgen.
 + De geloofsbrieven van de dienst zijn duurder (hun certificaat verloopt om de 365 dagen), en veranderen niet tenzij ingetrokken, terwijl de Lokale Tokens van de Toegang van de Ontwikkeling dagelijks verlopen.
-+ De Verantwoordelijkheden van de dienst voor een milieu van AEM as a Cloud Service kaart aan één enkele AEM technische rekeningsgebruiker, terwijl de Tokens van de Toegang van de Toegang van de Lokale Ontwikkeling voor authentiek verklaren als AEM gebruiker die het toegangstoken produceerde.
-+ Een AEM as a Cloud Service-omgeving kan maximaal tien technische accounts hebben, elk met hun eigen servicekredieten, waarbij elke account wordt toegewezen aan een aparte technische account AEM gebruiker.
++ De geloofsbrieven van de dienst voor een milieu van AEM as a Cloud Service kaart aan één enkele gebruiker van de technische rekening van AEM, terwijl de Tokens van de Toegang van de Toegang van de Lokale Ontwikkeling voor authentiek verklaren als de gebruiker van AEM die het toegangstoken produceerde.
++ Een AEM as a Cloud Service-omgeving kan maximaal tien technische accounts hebben, elk met hun eigen servicekredieten, waarbij elke account wordt toegewezen aan een afzonderlijke AEM-gebruiker.
 
 Zowel dienen de Geloofsbrieven van de Dienst als de toegangstoken zij produceren, en de Lokale Tokens van de Toegang van de Ontwikkeling, geheim worden gehouden. Aangezien alle drie kunnen worden gebruikt om, toegang tot hun respectieve milieu van AEM as a Cloud Service te verkrijgen.
 
@@ -46,7 +46,7 @@ Het genereren van servicekredieten wordt in twee stappen opgedeeld:
 
 ### Een technische account maken
 
-In tegenstelling tot Local Development Access Tokens, vereisen servicerecertificaten dat een technische account wordt aangemaakt door een Adobe of IMS-beheerder voordat deze kunnen worden gedownload. De afzonderlijke Technische Rekeningen zouden voor elke cliënt moeten worden gecreeerd die programmatic toegang tot AEM vereist.
+In tegenstelling tot tokens voor lokale ontwikkelingstoegang moet een technische account worden aangemaakt door een Adobe Org IMS-beheerder voordat deze kunnen worden gedownload. Voor elke klant die programmatische toegang tot AEM nodig heeft, moeten aparte technische accounts worden aangemaakt.
 
 ![ creeer een Technische Rekening ](assets/service-credentials/initialize-service-credentials.png)
 
@@ -54,7 +54,7 @@ De technische Rekeningen worden gecreeerd eens, nochtans het gebruik van Privé 
 
 1. Controleer of u bent aangemeld als een:
    + __Beheerder van het Systeem van Adobe IMS Org__
-   + Lid van de __AEM Beheerders__ het Profiel van het Product IMS op __AEM Auteur__
+   + Lid van de __Beheerders van AEM__ IMS Profiel van het Product op __Auteur van AEM__
 1. Login aan [ Adobe Cloud Manager ](https://my.cloudmanager.adobe.com)
 1. Open het programma dat de AEM as a Cloud Service-omgeving bevat om de instelling van de servicekredieten voor
 1. Tik de ellips naast het milieu in de __sectie van Milieu__, en selecteer __Developer Console__
@@ -65,7 +65,7 @@ De technische Rekeningen worden gecreeerd eens, nochtans het gebruik van Privé 
 
 ![ AEM Developer Console - Integraties - krijg de Referenties van de Dienst ](./assets/service-credentials/developer-console.png)
 
-Nadat de AEM als servicegegevens van de Cloud Service-omgeving zijn geïnitialiseerd, kunnen andere AEM ontwikkelaars van uw Adobe IMS-organisatie deze downloaden.
+Nadat de AEM as Cloud Service environment&#39;s Service Credentials is geïnitialiseerd, kunnen andere AEM-ontwikkelaars in uw Adobe IMS Org deze downloaden.
 
 ### Referenties van service downloaden
 
@@ -75,7 +75,7 @@ Het downloaden van de Referentieformals van de Dienst volgt de gelijkaardige sta
 
 1. Controleer of u bent aangemeld als een:
    + __Beheerder van IMS van Adobe van Org__
-   + Lid van de __AEM Beheerders__ het Profiel van het Product IMS op __AEM Auteur__
+   + Lid van de __Beheerders van AEM__ IMS Profiel van het Product op __Auteur van AEM__
 1. Login aan [ Adobe Cloud Manager ](https://my.cloudmanager.adobe.com)
 1. Open het programma dat de AEM as a Cloud Service-omgeving bevat om mee te integreren
 1. Tik de ellips naast het milieu in de __sectie van Milieu__, en selecteer __Developer Console__
@@ -88,7 +88,7 @@ Het downloaden van de Referentieformals van de Dienst volgt de gelijkaardige sta
 
 ## De servicereferenties installeren
 
-De servicekredieten bevatten de gegevens die nodig zijn om een JWT te genereren, die wordt uitgewisseld voor een toegangstoken dat wordt gebruikt voor verificatie met AEM as a Cloud Service. De servicekredieten moeten worden opgeslagen op een beveiligde locatie die toegankelijk is voor externe toepassingen, systemen of services die deze gebruiken voor toegang tot AEM. Hoe en waar de Credentials van de Dienst worden beheerd zijn uniek per klant.
+De servicekredieten bevatten de gegevens die nodig zijn om een JWT te genereren, die wordt uitgewisseld voor een toegangstoken dat wordt gebruikt voor verificatie met AEM as a Cloud Service. De servicekredieten moeten worden opgeslagen op een beveiligde locatie die toegankelijk is voor externe toepassingen, systemen of services die deze gebruiken om toegang te krijgen tot AEM. Hoe en waar de Credentials van de Dienst worden beheerd zijn uniek per klant.
 
 Voor eenvoud, gaat dit leerprogramma de Credentials van de Dienst binnen via de bevellijn over. Werk echter samen met uw IT-beveiligingsteam om te begrijpen hoe deze gegevens moeten worden opgeslagen en geopend in overeenstemming met de beveiligingsrichtlijnen van uw organisatie.
 
@@ -101,7 +101,7 @@ De servicekredieten, een volledig samengesteld JSON-object, zijn niet hetzelfde 
 
 ![ Referenties van de Dienst - Externe Toepassing ](assets/service-credentials/service-credentials-external-application.png)
 
-1. Download de servicekredieten van AEM Developer Console naar een beveiligde locatie
+1. Download de servicekredieten van AEM Developer Console naar een veilige locatie
 1. De externe toepassing moet programmatisch communiceren met de AEM as a Cloud Service-omgeving
 1. De externe toepassing leest in de Referenties van de Dienst van een veilige plaats
 1. De externe toepassing gebruikt informatie van de Referenties van de Dienst om een Token te construeren JWT
@@ -124,7 +124,7 @@ Als u AEM as a Cloud Service wilt benaderen met de servicekredieten, moet de ext
 
 + Wanneer Service Credentials aanwezig is, gebruikt de externe toepassing dit toegangstoken in plaats van het token Local Development Access (Lokale ontwikkelingstoken) bij de toegang tot AEM as a Cloud Service
 
-In deze zelfstudie wordt de `@adobe/jwt-auth` npm-module van Adobe gebruikt om (1) de JWT te genereren op basis van de servicereferentials en (2) deze te ruilen voor een toegangstoken, in één functieaanroep. Als uw toepassing niet JavaScript gebaseerd is, te herzien gelieve de [ steekproefcode in andere talen ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) voor hoe te om JWT van de Referenties van de Dienst tot stand te brengen, en het voor een toegangstoken met Adobe IMS te ruilen.
+In deze zelfstudie wordt de Adobe `@adobe/jwt-auth` npm-module gebruikt om (1) de JWT te genereren op basis van de servicereferentials en (2) deze te ruilen voor een toegangstoken, in één functieaanroep. Als uw toepassing niet JavaScript gebaseerd is, te herzien gelieve de [ steekproefcode in andere talen ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) voor hoe te om JWT van de Referenties van de Dienst tot stand te brengen, en het voor een toegangstoken met Adobe IMS te ruilen.
 
 ## Lees de Referenties van de Dienst
 
@@ -186,7 +186,7 @@ Deze voorbeeldtoepassing is gebaseerd op Node.js, dus het is beter om [@adobe/jw
     
      Herinner me, dat terwijl de Referenties van de Dienst elke 365 dagen verlopen, JWT en het overeenkomstige toegangstoken vaak verlopen, en moeten worden verfrist alvorens zij verlopen. Dit kan worden gedaan door ` te gebruiken verfrist_token ` [verstrekt door Adobe IMS] (https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens).
 
-1. Als deze wijzigingen zijn aangebracht, is de Service Credentials JSON gedownload van de AEM Developer Console en voor de eenvoud opgeslagen als `service_token.json` in dezelfde map als deze `index.js` . Laten we nu de toepassing uitvoeren, waarbij de opdrachtregelparameter `file` wordt vervangen door `service_token.json` , en de `propertyValue` wordt bijgewerkt naar een nieuwe waarde, zodat de effecten zichtbaar zijn in AEM.
+1. Als deze wijzigingen zijn aangebracht, is Service Credentials JSON gedownload van de AEM Developer Console en voor de eenvoud opgeslagen als `service_token.json` in dezelfde map als deze `index.js` . Laten we nu de toepassing uitvoeren, waarbij de opdrachtregelparameter `file` wordt vervangen door `service_token.json` , en de `propertyValue` wordt bijgewerkt naar een nieuwe waarde, zodat de effecten zichtbaar zijn in AEM.
 
    ```shell
    $ node index.js \
@@ -209,25 +209,25 @@ Deze voorbeeldtoepassing is gebaseerd op Node.js, dus het is beter om [@adobe/jw
 
    __403 - de verboden__ lijnen, wijzen op fouten in de vraag van HTTP API aan AEM as a Cloud Service. Deze 403 Verboden fouten treden op wanneer wordt geprobeerd de metagegevens van de elementen bij te werken.
 
-   De reden voor dit is het de toegangstoken van Credentials-Afgeleide van de Dienst verklaart het verzoek om AEM gebruikend een auto-gecreeerde technische rekening AEM gebruiker voor authentiek, die door gebrek, slechts gelezen toegang heeft. Om de toepassing te verstrekken schrijf toegang tot AEM, moet de technische rekening AEM gebruiker verbonden aan het toegangstoken toestemming in AEM worden verleend.
+   De reden hiervoor is het toegangstoken dat is afgeleid van servicekredieten, verifieert de aanvraag aan AEM met behulp van een automatisch aangemaakte AEM-gebruiker van een technische account, die standaard alleen leestoegang heeft. Om de toepassing te verlenen schrijf toegang tot AEM, moet de gebruiker van technische rekening AEM verbonden aan het toegangstoken toestemming in AEM worden verleend.
 
 ## Toegang configureren in AEM
 
-Het de toegangstoken van Credentials-afgeleide van de Dienst gebruikt een technische rekening AEM Gebruiker die lidmaatschap in de __Medewerkers__ AEM gebruikersgroep heeft.
+Het de toegangsteken van de Dienst van Credentials-afgeleide gebruik een technische rekeningAEM Gebruiker die lidmaatschap in de __Medewerkers__ gebruikersgroep van AEM heeft.
 
-![ Referenties van de Dienst - Technische Rekening AEM Gebruiker ](./assets/service-credentials/technical-account-user.png)
+![ Referenties van de Dienst - de Gebruiker van AEM van de Technische Rekening ](./assets/service-credentials/technical-account-user.png)
 
-Zodra de technische rekening AEM gebruiker in AEM (na eerste HTTP- verzoek met het toegangstoken) bestaat, kunnen de toestemmingen van deze AEM gebruiker het zelfde als andere AEM gebruikers worden beheerd.
+Zodra de gebruiker van de technische rekening AEM in AEM (na eerste HTTP- verzoek met het toegangstoken) bestaat, kunnen de toestemmingen van deze gebruiker van AEM het zelfde als andere gebruikers van AEM worden beheerd.
 
-1. Zoek eerst de aanmeldnaam van de AEM van de technische account door Service Credentials te openen die JSON van AEM Developer Console heeft gedownload en zoek de waarde `integration.email` , die er ongeveer als volgt moet uitzien: `12345678-abcd-9000-efgh-0987654321c@techacct.adobe.com` .
-1. Meld u als AEM beheerder aan bij de bijbehorende AEM-service Auteur.
+1. Zoek eerst de AEM-aanmeldnaam van de technische account door de Service Credentials te openen die JSON van AEM Developer Console heeft gedownload en zoek de `integration.email` -waarde, die er ongeveer als volgt moet uitzien: `12345678-abcd-9000-efgh-0987654321c@techacct.adobe.com` .
+1. Meld u aan bij de corresponderende AEM-service Auteur als AEM Administrator
 1. Ga aan __Hulpmiddelen__ > __Veiligheid__ > __Gebruikers__
-1. Plaats de AEM gebruiker met de __Login Naam__ die in Stap 1 wordt geïdentificeerd, en open zijn __Eigenschappen__
+1. Plaats de gebruiker van AEM met de __Login Naam__ die in Stap 1 wordt geïdentificeerd, en open zijn __Eigenschappen__
 1. Navigeer aan de __Groepen__ tabel, en voeg de __Gebruikers DAM__ groep toe (die als toegang tot activa schrijven)
-   + [ zie de lijst van AEM verstrekte gebruikersgroepen ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups) om de de dienstgebruiker aan voor de optimale toestemmingen toe te voegen. Als geen AEM opgegeven gebruikersgroep voldoende is, maakt u uw eigen gebruikersgroep en voegt u de juiste machtigingen toe.
+   + [ zie de lijst van AEM verstrekte gebruikersgroepen ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups) om de de dienstgebruiker aan voor de optimale toestemmingen toe te voegen. Als geen door AEM opgegeven gebruikersgroep voldoende is, maakt u uw eigen gebruikersgroep en voegt u de juiste machtigingen toe.
 1. Tik __sparen en Sluiten__
 
-Voer de toepassing opnieuw uit terwijl de technische account in AEM schrijfmachtigingen voor elementen mag hebben:
+Voer de toepassing opnieuw uit terwijl de technische account in AEM schrijfmachtigingen voor middelen toestaat:
 
 ```shell
 $ node index.js \

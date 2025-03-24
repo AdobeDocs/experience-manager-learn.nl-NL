@@ -1,8 +1,8 @@
 ---
-title: Problemen met uitbreidbaarheid van Asset compute voor AEM Assets oplossen
-description: Hieronder ziet u een index met veelvoorkomende problemen en fouten, samen met de resoluties, die kunnen optreden bij het ontwikkelen en implementeren van aangepaste Asset compute-workers voor AEM Assets.
+title: Problemen met Asset Compute-uitbreidbaarheid voor AEM Assets oplossen
+description: Hieronder volgt een index met veelvoorkomende problemen en fouten, samen met de resoluties, die kunnen optreden bij het ontwikkelen en implementeren van aangepaste Asset Compute-workers voor AEM Assets.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-5802
 thumbnail: KT-5802.jpg
@@ -11,16 +11,16 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
 duration: 260
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 0%
 
 ---
 
-# Problemen met uitbreidbaarheid van Asset compute oplossen
+# Problemen met de uitbreidbaarheid van Asset Compute oplossen
 
-Hieronder ziet u een index met veelvoorkomende problemen en fouten, samen met de resoluties, die kunnen optreden bij het ontwikkelen en implementeren van aangepaste Asset compute-workers voor AEM Assets.
+Hieronder volgt een index met veelvoorkomende problemen en fouten, samen met de resoluties, die kunnen optreden bij het ontwikkelen en implementeren van aangepaste Asset Compute-workers voor AEM Assets.
 
 ## Ontwikkelen{#develop}
 
@@ -35,14 +35,14 @@ Hieronder ziet u een index met veelvoorkomende problemen en fouten, samen met de
 
 ## Ontwikkelingsinstrument{#development-tool}
 
-### Het bestand Console.json ontbreekt in het project Asset compute{#missing-console-json}
+### Het bestand Console.json ontbreekt in het Asset Compute-project{#missing-console-json}
 
 + __Fout:__ Fout: Ontbrekende vereiste dossiers bij bevestigt (`.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY`) bij async setupAssetCompute (`.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY`)
-+ __Oorzaak:__ het `console.json` dossier mist van de wortel van het project van de Asset compute
-+ __Resolutie:__ Download een nieuw `console.json` van uw Adobe I/O project
-   1. In console.adobe.io, open het project van Adobe I/O het project van de Asset compute wordt gevormd om te gebruiken
++ __Oorzaak:__ het `console.json` dossier mist van de wortel van het project van Asset Compute
++ __Resolutie:__ Download een nieuw `console.json` van uw project van Adobe I/O
+   1. Open in console.adobe.io het Adobe I/O-project waarvoor het Asset Compute-project is geconfigureerd
    1. Tik de __knoop van de Download__ in het hoogste recht
-   1. Sla het gedownloade bestand met de bestandsnaam op in de hoofdmap van het Asset compute-project `console.json`
+   1. Sla het gedownloade bestand met de bestandsnaam op in de hoofdmap van het Asset Compute-project `console.json`
 
 ### Onjuiste YAML-inspringing in manifest.yml{#incorrect-yaml-indentation}
 
@@ -52,7 +52,7 @@ Hieronder ziet u een index met veelvoorkomende problemen en fouten, samen met de
 
 ### memorySize limit is set to low{#memorysize-limit-is-set-too-low}
 
-+ __Fout:__ Lokale Dev Server OpenWhiskError: PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true Keerde HTTP 400 terug (Slecht Verzoek) —> &quot;De verzoekinhoud werd misvormd:vereiste ontbrak: geheugen 64 MB onder toegestane drempel van 134217728 B&quot;
++ __Fout:__ Lokale Dev Server OpenWhiskError: PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true Geretourneerde HTTP 400 (Slecht Verzoek) —> &quot;De verzoekinhoud werd misvormd:vereiste ontbrak: geheugen 64 MB onder toegestane drempel van 134217728 B&quot;
 + __Oorzaak:__ A `memorySize` grens voor de worker in `manifest.yml` werd geplaatst onder de minimum toegestane drempel zoals die door het foutenbericht in bytes wordt gemeld.
 + __Resolutie:__ herzie de `memorySize` grenzen in `manifest.yml` en zorg ervoor zij allen groot zijn dan de minimaal toegestane drempel.
 
@@ -64,7 +64,7 @@ Hieronder ziet u een index met veelvoorkomende problemen en fouten, samen met de
 
 ### Vervolgkeuzelijst Source-bestanden is onjuist{#source-files-dropdown-incorrect}
 
-Het Hulpmiddel van de Ontwikkeling van de asset compute kan een staat ingaan waar het stapelgegevens trekt, en is het meest merkbaar in het __dossier van Source__ dropdown tonend onjuiste punten.
+Het Hulpmiddel van de Ontwikkeling van Asset Compute kan een staat ingaan waar het stapelgegevens trekt, en is het meest merkbaar in het __dossier van Source__ dropdown tonend onjuiste punten.
 
 + __Fout:__ het dossierdropdown van Source toont onjuiste punten.
 + __Oorzaak:__ de de browser van de Stale in het voorgeheugen ondergebrachte staat veroorzaakt
@@ -72,9 +72,9 @@ Het Hulpmiddel van de Ontwikkeling van de asset compute kan een staat ingaan waa
 
 ### Ontbrekende of ongeldige devToolToken-queryparameter{#missing-or-invalid-devtooltoken-query-parameter}
 
-+ __Fout:__ &quot;Onbevoegd&quot;bericht in het Hulpmiddel van de Ontwikkeling van de Asset compute
++ __Fout:__ &quot;Onbevoegd&quot;bericht in het Hulpmiddel van de Ontwikkeling van Asset Compute
 + __Oorzaak:__ `devToolToken` mist of ongeldig
-+ __Resolutie:__ sluit het browser venster van het Hulpmiddel van de Ontwikkeling van de Asset compute, beëindigt om het even welke lopende processen van het Hulpmiddel van de Ontwikkeling die via het `aio app run` bevel worden in werking gesteld, en herstart het Hulpmiddel van de Ontwikkeling (gebruikend `aio app run`).
++ __Resolutie:__ sluit het browser venster van het Hulpmiddel van de Ontwikkeling van Asset Compute, beëindigt om het even welke lopende processen van het Hulpmiddel van de Ontwikkeling die via het `aio app run` bevel worden in werking gesteld, en herstart het Hulpmiddel van de Ontwikkeling (gebruikend `aio app run`).
 
 ### Kan bronbestanden niet verwijderen{#unable-to-remove-source-files}
 
@@ -98,7 +98,7 @@ Het Hulpmiddel van de Ontwikkeling van de asset compute kan een staat ingaan waa
 
 + __Fout:__ Mislukking: Vertoning &quot;rendition.xxx&quot;niet zoals verwacht.
 + __Oorzaak:__ de arbeidersoutput een vertoning die niet het zelfde als `rendition.<extension>` in het testgeval verstrekte was.
-   + Als het verwachte `rendition.<extension>` -bestand niet op dezelfde manier wordt gemaakt als de lokaal gegenereerde uitvoering in het testgeval, kan de test mislukken omdat er een verschil in de bits kan zijn. Als de Asset compute worker bijvoorbeeld het contrast wijzigt met behulp van API&#39;s en het verwachte resultaat wordt gemaakt door het contrast in Adobe Photoshop CC aan te passen, kunnen de bestanden er hetzelfde uitzien, maar kleine variaties in de bits kunnen verschillend zijn.
+   + Als het verwachte `rendition.<extension>` -bestand niet op dezelfde manier wordt gemaakt als de lokaal gegenereerde uitvoering in het testgeval, kan de test mislukken omdat er een verschil in de bits kan zijn. Als de Asset Compute-worker bijvoorbeeld het contrast wijzigt met behulp van API&#39;s en het verwachte resultaat wordt bereikt door het contrast aan te passen in Adobe Photoshop CC, kunnen de bestanden er hetzelfde uitzien, maar kleine variaties in de bits kunnen verschillen.
 + __Resolutie:__ de uitvoeringen van de vertoning van de Overzicht van de test door aan `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>` te navigeren, en het te vergelijken met het verwachte vertoningsdossier in het testgeval. Om een exact verwacht actief te maken:
    + Gebruik het gereedschap Ontwikkeling om een vertoning te genereren, te valideren dat deze correct is en te gebruiken als het verwachte vertoningsbestand
    + U kunt ook het bestand dat tijdens de test is gegenereerd op `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>` valideren, controleren of het bestand juist is en gebruiken als het verwachte renderingsbestand
@@ -113,7 +113,7 @@ Het Hulpmiddel van de Ontwikkeling van de asset compute kan een staat ingaan waa
 
 ### Onderbrekingspunten worden niet gepauzeerd{#breakpoints-no-pausing}
 
-+ __Fout__: Wanneer het runnen van de worker van de Asset compute van het zuivert-able Hulpmiddel van de Ontwikkeling, pauzeert de Code van VS niet bij breekpunten.
++ __Fout__: Wanneer het runnen van de worker van Asset Compute van het zuivert-able Hulpmiddel van de Ontwikkeling, pauzeert de Code van VS niet bij breekpunten.
 
 #### Foutopsporing VS-code niet gekoppeld{#vs-code-debugger-not-attached}
 
@@ -123,11 +123,11 @@ Het Hulpmiddel van de Ontwikkeling van de asset compute kan een staat ingaan waa
 #### Foutopsporing voor VS-code gekoppeld nadat uitvoering van worker is gestart{#vs-code-debugger-attached-after-worker-execution-began}
 
 + __Oorzaak:__ de debugger van de Code van VS maakte niet vast voorafgaand aan het tappen __Looppas__ in het Hulpmiddel van de Ontwikkeling.
-+ __Resolutie:__ verzeker debugger door de Foutopsporingsconsole van de Code van VS te herzien (Mening > zuivert Console), en dan de Asset compute worker van het Hulpmiddel van de Ontwikkeling opnieuw in werking te stellen.
++ __Resolutie:__ verzeker debugger door de Foutopsporingsconsole van de Code van VS te herzien (Mening > zuivert Console), en dan de worker van Asset Compute van het Hulpmiddel van de Ontwikkeling opnieuw in werking te stellen.
 
 ### Worker-time-out tijdens foutopsporing{#worker-times-out-while-debugging}
 
-+ __Fout__: Zuiver de rapporten van de Console &quot;Actie zal onderbreking in -XXX milliseconden&quot;of ](./develop/development-tool.md) de vertoningsvoorproef van de vertoning van het Hulpmiddel van de Ontwikkeling van de Asset compute [ eindeloos of
++ __Fout__: Zuiver de rapporten van de Console &quot;Actie zal onderbreking in -XXX milliseconden&quot;of ](./develop/development-tool.md) de vertoningsvoorproef van de vertoningen van het Hulpmiddel van de Ontwikkeling van Asset Compute [ voor onbepaalde tijd of
 + __Oorzaak__: De arbeidersonderbreking zoals bepaald in [ manifest.yml ](./develop/manifest.md) wordt overschreden tijdens het zuiveren.
 + __Resolutie__: Verhoog tijdelijk de onderbreking van de worker in [ manifest.yml ](./develop/manifest.md) of versnelt het zuiveren activiteiten.
 

@@ -1,16 +1,16 @@
 ---
 title: IntelliJ Community Edition installeren
-description: Installeer en voer het AEM project in IntelliJ in
+description: Installeer en importeer het AEM-project in IntelliJ
 solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 jira: KT-8843
 exl-id: 34840d28-ad47-4a69-b15d-cd9593626527
 duration: 43
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -21,10 +21,10 @@ ht-degree: 0%
 
 Installeer [ IntelliJ communautaire uitgave ](https://www.jetbrains.com/idea/download/#section=windows). U kunt de standaardinstellingen accepteren terwijl u dit tijdens de installatie aanbeveelt.
 
-## Het AEM project importeren
+## AEM-project importeren
 
 * Start IntelliJ
-* Importeer het AEM project dat u in de vorige stap hebt gemaakt. Nadat het project wordt ingevoerd zou uw scherm iets als dit ![ a-bank-app ](assets/aem-banking-app.png) moeten kijken. U zult typisch met kern,ui.apps, ui.config en ui.content subprojecten werken.
+* Importeer het AEM-project dat u in de vorige stap hebt gemaakt. Nadat het project wordt ingevoerd zou uw scherm iets als dit ![ a-bank-app ](assets/aem-banking-app.png) moeten kijken. U zult typisch met kern,ui.apps, ui.config en ui.content subprojecten werken.
 * Als u het gemaakte en terminalvenster niet ziet, gaat u naar view->Tools Window en selecteert u Maven en Terminal
 
 ## De module Lettertypen toevoegen

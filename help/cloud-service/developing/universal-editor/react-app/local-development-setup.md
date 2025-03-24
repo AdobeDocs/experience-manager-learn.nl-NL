@@ -1,7 +1,7 @@
 ---
 title: Instelling voor lokale ontwikkeling
 description: Leer hoe u een lokale ontwikkelomgeving instelt voor de Universal Editor, zodat u de inhoud van een voorbeeld van de React-app kunt bewerken.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developer Tools, Headless
 topic: Development, Content Management
 role: Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 47bef697-5253-493a-b9f9-b26c27d2db56
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 0%
@@ -33,7 +33,7 @@ U hebt het volgende nodig om deze zelfstudie te volgen:
    - [ Git ](https://git-scm.com/downloads)
    - Een winde of coderedacteur, zoals [ Code van Visual Studio ](https://code.visualstudio.com/)
 - Download en installeer het volgende:
-   - [ SDK van AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): Het bevat QuickStart Jar die wordt gebruikt om AEM Auteur en Publish plaatselijk voor ontwikkelingsdoeleinden in werking te stellen.
+   - [ AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): Het bevat QuickStart Jar die wordt gebruikt om de Auteur van AEM in werking te stellen en plaatselijk voor ontwikkelingsdoeleinden te publiceren.
    - [ Universele dienst van de Redacteur ](https://experienceleague.adobe.com/en/docs/experience-cloud/software-distribution/home): Een lokaal exemplaar van de Universele dienst van de Redacteur, heeft het een ondergroep van eigenschappen en kan van het portaal van de Distributie van de Software worden gedownload.
    - [ lokaal-ssl-volmacht ](https://www.npmjs.com/package/local-ssl-proxy#local-ssl-proxy): Een eenvoudige lokale SSL HTTP- volmacht die een zelf-ondertekend certificaat voor lokale ontwikkeling gebruikt. De AEM Universal Editor heeft de HTTPS-URL van de React-app nodig om deze in de editor te laden.
 
@@ -43,10 +43,10 @@ Voer de onderstaande stappen uit om de lokale ontwikkelomgeving in te stellen:
 
 ### AEM SDK
 
-Installeer de volgende pakketten in de lokale AEM SDK om de inhoud voor de React-app van de WKND-teams op te geven.
+Installeer de volgende pakketten in de lokale AEM SDK om de inhoud voor de React-app voor WKND-teams op te geven.
 
 - [ de Teams van WKND - het Pakket van de Inhoud ](./assets/basic-tutorial-solution.content.zip): Bevat de Modellen van het Fragment van de Inhoud, de Fragmenten van de Inhoud, en voortgeduurde vragen van GraphQL.
-- [ de Teams van WKND - Pakket Config ](./assets/basic-tutorial-solution.ui.config.zip): bevat het Middel dat van de Cross-Origin (CORS) deelt en de Mantelbeveiliger van de Authentificatie van Symbolische. CORS vergemakkelijkt niet-AEM Web-eigenschappen om op browser-gebaseerde cliënt-zijvraag aan AEM GraphQL APIs te maken en de Symbolische Handler van de Authentificatie wordt gebruikt om elk verzoek aan AEM voor authentiek te verklaren.
+- [ de Teams van WKND - Pakket Config ](./assets/basic-tutorial-solution.ui.config.zip): bevat het Middel dat van de Cross-Origin (CORS) deelt en de Mantelbeveiliger van de Authentificatie van Symbolische. CORS vergemakkelijkt niet-AEM wegeigenschappen om op browser-gebaseerde cliënt-zijvraag aan AEM te maken GraphQL APIs en de Symbolische Handler van de Authentificatie wordt gebruikt om elke aanvraag aan AEM voor authentiek te verklaren.
 
   ![ de Teams van WKND - Pakketten ](./assets/wknd-teams-packages.png)
 
@@ -74,7 +74,7 @@ Voer de onderstaande stappen uit om de React-app voor WKND-teams in te stellen:
    $ npm start
    ```
 
-1. Open de WKND Teams Reageer app in uw browser in [ http://localhost:3000 ](http://localhost:3000). Het toont een lijst van teamleden en hun details. De inhoud voor de React-app wordt geleverd door de lokale AEM SDK met behulp van GraphQL API&#39;s (`/graphql/execute.json/my-project/all-teams`), die u kunt verifiëren met het netwerktabblad van de browser.
+1. Open de WKND Teams Reageer app in uw browser in [ http://localhost:3000 ](http://localhost:3000). Het toont een lijst van teamleden en hun details. De inhoud voor de React-app wordt geleverd door de lokale AEM SDK met GraphQL API&#39;s (`/graphql/execute.json/my-project/all-teams`). U kunt deze controleren via het netwerktabblad van de browser.
 
    ![ WKND Teams - Reageer app ](./assets/wknd-teams-react-app.png)
 
@@ -121,7 +121,7 @@ Universal Editor Service listening on port 8000 as HTTP Server
 
 De AEM Universal Editor vereist dat de React-app via HTTPS wordt aangeboden. Stel een lokale SSL HTTP-proxy in die een zelfondertekend certificaat gebruikt voor lokale ontwikkeling.
 
-Voer de onderstaande stappen uit om de lokale SSL HTTP-proxy in te stellen en de AEM SDK en Universal Editor-service via HTTPS te bedienen:
+Voer de onderstaande stappen uit om de lokale SSL HTTP-proxy in te stellen en de AEM SDK- en Universal Editor-service via HTTPS uit te voeren:
 
 1. Installeer het `local-ssl-proxy` -pakket globaal.
 
@@ -131,7 +131,7 @@ Voer de onderstaande stappen uit om de lokale SSL HTTP-proxy in te stellen en de
 
 1. Start twee instanties van de lokale SSL HTTP-proxy voor de volgende services:
 
-   - AEM lokale SSL HTTP-proxy van SDK op poort `8443` .
+   - Lokale SSL HTTP-proxy van AEM SDK op poort `8443` .
    - Universal Editor service local SSL HTTP proxy on port `8001` .
 
    ```bash

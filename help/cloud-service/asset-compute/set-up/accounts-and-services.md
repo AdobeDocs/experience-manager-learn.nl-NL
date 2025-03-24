@@ -1,8 +1,8 @@
 ---
-title: Rekeningen en diensten voor uitbreidbaarheid van de Asset compute instellen
-description: Ontwikkelaars van Asset computen hebben toegang nodig tot accounts en services, waaronder AEM as a Cloud Service, App Builder en cloudopslag die door Microsoft of Amazon worden geleverd.
+title: Accounts en services voor Asset Compute-uitbreidbaarheid instellen
+description: Voor het ontwikkelen van Asset Compute-workers hebt u toegang nodig tot accounts en services, waaronder AEM as a Cloud Service, App Builder en cloudopslag die door Microsoft of Amazon worden geleverd.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6264
 thumbnail: 40377.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
 duration: 212
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Deze zelfstudie vereist dat de volgende services worden geleverd en toegankelijk zijn via de Adobe ID van de leerling.
 
-Alle Adobe-services moeten toegankelijk zijn via dezelfde Adobe, met dezelfde Adobe ID.
+Alle Adobe-services moeten toegankelijk zijn via dezelfde Adobe Org, die uw Adobe ID gebruikt.
 
 + [AEM as a Cloud Service](#aem-as-a-cloud-service)
 + [ App Builder ](#app-builder)
@@ -39,15 +39,15 @@ Alle Adobe-services moeten toegankelijk zijn via dezelfde Adobe, met dezelfde Ad
 
 ## AEM as a Cloud Service{#aem-as-a-cloud-service}
 
-Toegang tot een AEM as a Cloud Service-omgeving is vereist om AEM Assets-verwerkingsprofielen te configureren voor het aanroepen van de aangepaste Asset compute-worker.
+Toegang tot een AEM as a Cloud Service-omgeving is vereist om AEM Assets-verwerkingsprofielen te configureren voor het aanroepen van de aangepaste Asset Compute-worker.
 
 In het ideale geval is een sandboxprogramma of een ontwikkelomgeving zonder sandbox beschikbaar voor gebruik.
 
-Merk op dat een lokale AEM SDK ontoereikend is om deze zelfstudie te voltooien, aangezien de lokale AEM SDK niet kan communiceren met Asset compute microservices, is in plaats daarvan een echte AEM as a Cloud Service-omgeving vereist.
+Een lokale AEM SDK is onvoldoende om deze zelfstudie te voltooien, omdat de lokale AEM SDK niet kan communiceren met Asset Compute-microservices, maar een echte AEM as a Cloud Service-omgeving is vereist.
 
 ## App Builder{#app-builder}
 
-Het [ App Builder ](https://developer.adobe.com/app-builder/) kader wordt gebruikt voor de bouw van en het opstellen van douaneacties aan Adobe I/O Runtime, Adobe serverless platform. AEM Asset compute projecten zijn speciaal gebouwde App Builder-projecten die met AEM Assets integreren via Process Profiles, en die de mogelijkheid bieden om toegang te krijgen tot en gebruik te maken van asset binaries.
+Het [ App Builder ](https://developer.adobe.com/app-builder/) kader wordt gebruikt voor de bouw van en het opstellen van douaneacties aan Adobe I/O Runtime, Adobe serverless platform. AEM Asset Compute-projecten zijn speciaal gebouwde App Builder-projecten die met AEM Assets integreren via Process Profiles, en die toegang bieden tot en verwerking van asset binaries.
 
 Meld u aan voor de voorvertoning om toegang te krijgen tot App Builder.
 
@@ -57,9 +57,9 @@ Meld u aan voor de voorvertoning om toegang te krijgen tot App Builder.
 
 ## Cloud-opslag
 
-Opslag in de cloud is vereist voor lokale ontwikkeling van Asset compute-projecten.
+Opslag in de cloud is vereist voor lokale ontwikkeling van Asset Compute-projecten.
 
-Wanneer medewerkers van de Asset compute naar de Adobe I/O Runtime worden geïmplementeerd voor rechtstreeks gebruik door AEM as a Cloud Service, is deze cloudopslag niet strikt vereist, aangezien AEM de cloudopslag biedt van waaruit het middel wordt gelezen en waarnaar wordt geschreven.
+Wanneer Asset Compute-workers naar de Adobe I/O Runtime worden geïmplementeerd voor rechtstreeks gebruik door AEM as a Cloud Service, is deze cloudopslag niet strikt vereist, aangezien AEM de cloudopslag biedt van waaruit het middel wordt gelezen en waarnaar wordt geschreven.
 
 ### Microsoft Azure Blob-opslag{#azure-blob-storage}
 
@@ -76,7 +76,7 @@ _klik-door van levering Azure BlobOpslag (Geen audio)_
 1. Tik op __+ Toevoegen__ om een nieuwe Blob Storage-account te maken
 1. Creeer een nieuwe __groep van het Middel__ zoals nodig, bijvoorbeeld: `aem-as-a-cloud-service`
 1. Verstrek de naam van de a __rekening van de Opslag__, bijvoorbeeld: `aemguideswkndassetcomput`
-   + De __naam van de de rekeningsrekening van de Opslag__ die voor [ wordt gebruikt vormend wolkenopslag ](../develop/environment-variables.md) in het lokale Hulpmiddel van de Ontwikkeling van de Asset compute
+   + De __naam van de de rekeningsrekening van de Opslag__ die voor [ wordt gebruikt vormend wolkenopslag ](../develop/environment-variables.md) in het lokale Hulpmiddel van de Ontwikkeling van Asset Compute
    + De __sleutels van de Toegang__ verbonden aan de opslagrekening worden ook vereist wanneer [ vormend wolkenopslag ](../develop/environment-variables.md).
 1. Laat alles anders als gebrek, en tik __Overzicht + creeer__ knoop
    + Naar keuze, selecteer de __plaats__ dicht bij u.

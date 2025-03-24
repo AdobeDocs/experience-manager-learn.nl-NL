@@ -1,27 +1,27 @@
 ---
 title: PDF-bestanden samenstellen met behulp van de DDX-bewerking aanroepen
-description: Maak een verzoek van de POST om eindpunt DDX met de noodzakelijke parameters aan te halen
+description: Maak een POST- verzoek om eindpunt DDX met de noodzakelijke parameters aan te halen
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-9980
 exl-id: 693dac88-84f3-4051-8e46-3105093711a3
 duration: 56
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 0%
 
 ---
 
-# De POST aanroepen
+# Maak de POST vraag
 
 
-De volgende stap is een vraag van de POST van HTTP aan het eindpunt met de noodzakelijke parameters te maken. De DDX- en de pdf-bestanden worden als bronbestanden geleverd. Het eindpunt heeft symbolische gebaseerde authentificatie wij overgaan het Token van de Toegang in de verzoekkopbal.
-Wanneer het gebruiken van de dienst van de Assembler, gebruik een op XML-Gebaseerde taal genoemd XML van de Beschrijving van het Document (DDX) om de output te beschrijven u wilt. DDX is een verklarende prijsverhogingstaal de waarvan elementen bouwstenen van documenten vertegenwoordigen.Het volgende DDX werd gebruikt om de twee die documenten samen te voegen pdf in de PDF bronelementen worden geïdentificeerd.
+De volgende stap is een POST van HTTP vraag aan het eindpunt met de noodzakelijke parameters te maken. De DDX- en de pdf-bestanden worden als bronbestanden geleverd. Het eindpunt heeft symbolische gebaseerde authentificatie wij overgaan het Token van de Toegang in de verzoekkopbal.
+Wanneer het gebruiken van de dienst van de Assembler, gebruik een op XML-Gebaseerde taal genoemd XML van de Beschrijving van het Document (DDX) om de output te beschrijven u wilt. DDX is een verklarende prijsverhogingstaal de waarvan elementen bouwstenen van documenten vertegenwoordigen.Het volgende DDX werd gebruikt om de twee die documenten samen te voegen pdf in de bronelementen van PDF worden geïdentificeerd.
 
 ```xml
 <DDX xmlns="http://ns.adobe.com/DDX/1.0/">

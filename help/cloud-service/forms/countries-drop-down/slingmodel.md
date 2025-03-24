@@ -5,23 +5,23 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16517
-source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
+exl-id: f4a18f02-61a2-4fa3-bfbb-41bf696cd2a8
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
-
 # Een model voor bloeden maken voor de component
 
-Een Sling Model in AEM is een op Java gebaseerd kader dat wordt gebruikt om de ontwikkeling van achterste-eindlogica voor componenten te vereenvoudigen. Ontwikkelaars kunnen gegevens uit AEM bronnen (JCR-knooppunten) met behulp van annotaties toewijzen aan Java-objecten, zodat ze dynamische gegevens voor componenten op een schone en efficiënte manier kunnen verwerken.
-Deze klasse, CountriesDropDownImpl, is een implementatie van de interface CountriesDropDown in een AEM (Adobe Experience Manager) project. Het geeft een vervolgkeuzemogelijkheid waarbij gebruikers een land kunnen selecteren op basis van het geselecteerde continent. De vervolgkeuzemenu&#39;s worden dynamisch geladen vanuit een JSON-bestand dat is opgeslagen in de AEM DAM (Digital Asset Manager).
+Een Sling Model in AEM is een op Java gebaseerd kader dat wordt gebruikt om de ontwikkeling van achterste-eindlogica voor componenten te vereenvoudigen. Ontwikkelaars kunnen gegevens uit AEM-bronnen (JCR-knooppunten) met behulp van annotaties toewijzen aan Java-objecten, zodat ze dynamische gegevens voor componenten op een schone en efficiënte manier kunnen verwerken.
+Deze klasse, CountriesDropDownImpl, is een implementatie van de interface CountriesDropDown in een AEM-project (Adobe Experience Manager). Het geeft een vervolgkeuzemogelijkheid waarbij gebruikers een land kunnen selecteren op basis van het geselecteerde continent. De vervolgkeuzemenu&#39;s worden dynamisch geladen vanuit een JSON-bestand dat is opgeslagen in de AEM DAM (Digital Asset Manager).
 
 **Gebieden in de Klasse**
 
@@ -30,7 +30,7 @@ Wordt vanuit de componenteigenschappen geïnjecteerd met @ValueMapValue met de s
 * **verzoek**: Vertegenwoordigt het huidige verzoek van HTTP. Nuttig voor toegang tot contextspecifieke informatie.
 * **continent**: Slaat het geselecteerde continent voor dropdown (b.v., &quot;azië&quot;, &quot;europa&quot;) op.
 Wordt geïnjecteerd vanuit het eigenschappendialoogvenster van de component, met de standaardwaarde &quot;azia&quot; als er geen waarde is opgegeven.
-* **resourceResolver**:Gebruikt om tot middelen in de AEM bewaarplaats toegang te hebben en te manipuleren.
+* **resourceResolver**:Gebruikt om tot middelen in de bewaarplaats van AEM toegang te hebben en te manipuleren.
 * **jsonData**: Een JSONObject dat de geparseerde gegevens van het JSON- dossier opslaat die aan het geselecteerde continent beantwoorden.
 
 **Methoden in de Klasse**

@@ -2,14 +2,14 @@
 title: Github.com
 description: Leer hoe u een webhaverzoek van Github.com kunt verifiëren in een App Builder-actie.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate
 jira: KT-15714
 last-substantial-update: 2023-06-06T00:00:00Z
 exl-id: 5492dc7b-f034-4a7f-924d-79e083349e26
-source-git-commit: 8f64864658e521446a91bb4c6475361d22385dc1
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Github.com
 
-Met webhooks kunt u integraties maken of instellen die zich abonneren op bepaalde gebeurtenissen op GitHub.com. Wanneer één van die gebeurtenissen wordt teweeggebracht, verzendt GitHub een nuttige lading van de POST van HTTP naar de gevormde URL van Webhaak. Nochtans, voor veiligheidsredenen, is het belangrijk om te verifiëren dat het inkomende webhaverzoek eigenlijk van GitHub en niet van een kwaadwillige actor is. Deze zelfstudie begeleidt u door de stappen om een GitHub.com webshverzoek in een Adobe App Builder actie te verifiëren gebruikend een gedeeld geheim.
+Met webhooks kunt u integraties maken of instellen die zich abonneren op bepaalde gebeurtenissen op GitHub.com. Wanneer één van die gebeurtenissen wordt teweeggebracht, verzendt GitHub een nuttige lading van HTTP POST naar de gevormde URL van de webhaak. Nochtans, voor veiligheidsredenen, is het belangrijk om te verifiëren dat het inkomende webhaverzoek eigenlijk van GitHub en niet van een kwaadwillige actor is. Deze zelfstudie begeleidt u door de stappen om een GitHub.com webshverzoek in een Adobe App Builder-actie te verifiëren met behulp van een gedeeld geheim.
 
 ## Cadeaugeheim instellen in AppBuilder
 
@@ -39,7 +39,7 @@ Met webhooks kunt u integraties maken of instellen die zich abonneren op bepaald
 
    - Stel de configuratie van de handeling AppBuilder `web` in op `raw` om de onbewerkte aanvraaginstantie van GitHub.com te ontvangen.
    - Voeg onder `inputs` in de actieconfiguratie AppBuilder de `GITHUB_SECRET` -toets toe en wijs deze toe aan het `.env` -veld dat het geheim bevat. De waarde van deze toets is de veldnaam `.env` die vooraf is ingesteld door `$` .
-   - Stel de `require-adobe-auth` -annotatie in de actieconfiguratie AppBuilder in op `false` zodat de handeling kan worden aangeroepen zonder dat verificatie van de Adobe vereist is.
+   - Stel de `require-adobe-auth` -annotatie in de actieconfiguratie AppBuilder in op `false` zodat de handeling kan worden aangeroepen zonder dat Adobe-verificatie vereist is.
 
    Het resulterende `ext.config.yaml` -bestand moet er ongeveer als volgt uitzien:
 

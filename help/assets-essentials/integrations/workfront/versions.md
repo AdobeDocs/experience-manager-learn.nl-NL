@@ -1,7 +1,7 @@
 ---
-title: Versiehistorie onderhouden met Adobe Workfront en Assets Essentials
-description: Leer hoe u met Adobe Workfront en Experience Manager Assets Essentials versies van Workfront-documenten en -Assets Essentials kunt onderhouden.
-version: Cloud Service
+title: Versiehistorie onderhouden met Adobe Workfront en Elementen
+description: Leer hoe u met Adobe Workfront en Experience Manager Assets Essentials versies van Workfront-documenten en Elementen Essentiële elementen kunt onderhouden.
+version: Experience Manager as a Cloud Service
 feature: Assets Essentials
 topic: Content Management, Integrations
 role: User
@@ -13,7 +13,7 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Assets Essentials" before-title="false"
 doc-type: Catalog
 exl-id: 42c0e51d-abb2-4445-98bd-65d813f580ca
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 0%
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 # Versiehistorie onderhouden
 
-Leer hoe u met Adobe Workfront en Experience Manager Assets Essentials versies van Workfront-documenten en -Assets Essentials kunt onderhouden.
+Leer hoe u met Adobe Workfront en Experience Manager Assets Essentials versies van Workfront-documenten en Elementen Essentiële elementen kunt onderhouden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336314?quality=12&learn=on)

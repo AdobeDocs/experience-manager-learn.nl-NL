@@ -5,7 +5,7 @@ solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-7428
@@ -14,7 +14,7 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: a55773a5-0486-413f-ada6-bb589315f0b1
 duration: 222
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 # Acrobat Sign Cloud-configuratie maken
 
-Met de configuratie van cloudservices in AEM kunt u integratie tussen AEM en andere cloudtoepassingen maken.
+Met de configuratie van cloudservices in AEM kunt u integratie tot stand brengen tussen AEM en andere cloudtoepassingen.
 
-In de volgende video worden de stappen doorlopen die nodig zijn om de configuratie van cloudservices te maken voor de integratie van AEM met Acrobat Sign
+In de volgende video ziet u de stappen die nodig zijn om de configuratie van cloudservices te maken voor de integratie van AEM met Acrobat Sign
 
 >[!VIDEO](https://video.tv.adobe.com/v/332437?quality=12&learn=on)
 

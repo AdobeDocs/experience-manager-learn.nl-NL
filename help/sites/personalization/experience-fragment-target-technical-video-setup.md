@@ -1,8 +1,8 @@
 ---
 title: Maak ervaringsfragmenten en Adobe Target-integratie in AEM
-description: Adobe Experience Manager 6.4 herstelt de personalisatieworkflow tussen AEM en Target. Ervaringen die in AEM zijn gemaakt, kunnen nu rechtstreeks aan Adobe Target worden aangeboden als HTML-aanbiedingen. Op deze manier kunnen marketers inhoud op verschillende kanalen naadloos testen en aanpassen.
+description: In Adobe Experience Manager 6.4 kunt u zich de personalisatieworkflow tussen AEM en Target opnieuw voorstellen. Ervaringen die in AEM zijn gemaakt, kunnen nu rechtstreeks aan Adobe Target worden geleverd als HTML-aanbiedingen. Op deze manier kunnen marketers inhoud op verschillende kanalen naadloos testen en aanpassen.
 feature: Experience Fragments
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 16cb0b92-9398-4fd2-b8c3-f4b7675ef72c
 topic: Personalization
 role: Admin, Developer
@@ -10,7 +10,7 @@ level: Intermediate
 doc-type: Technical Video
 exl-id: 9c139a36-e3c5-407e-af5d-b4fb8860f5a2
 duration: 238
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Fragmenten voor Adobe Target-integratie instellen{#set-up-experience-fragments-and-adobe-target-integration}
 
-Adobe Experience Manager 6.4 herstelt de personalisatieworkflow tussen AEM en Target. Ervaringen die in AEM zijn gemaakt, kunnen nu rechtstreeks aan Adobe Target worden aangeboden als HTML-aanbiedingen. Op deze manier kunnen marketers inhoud op verschillende kanalen naadloos testen en aanpassen.
+In Adobe Experience Manager 6.4 kunt u zich de personalisatieworkflow tussen AEM en Target opnieuw voorstellen. Ervaringen die in AEM zijn gemaakt, kunnen nu rechtstreeks aan Adobe Target worden geleverd als HTML-aanbiedingen. Op deze manier kunnen marketers inhoud op verschillende kanalen naadloos testen en aanpassen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22380?quality=12&learn=on)
 

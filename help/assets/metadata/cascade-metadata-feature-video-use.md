@@ -1,7 +1,7 @@
 ---
 title: Cascading Metadata in AEM Assets gebruiken
 description: Met geavanceerd metagegevensbeheer kunnen gebruikers trapsgewijze veldregels maken om contextuele relaties tussen metagegevens in AEM Assets te vormen. In de onderstaande video ziet u nieuwe dynamische regels voor veldvereisten, zichtbaarheid en contextuele keuzes. In de video worden ook de stappen beschreven die een beheerder nodig heeft om deze regels toe te passen op een aangepast metagegevensschema.
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Content Management
 feature: Metadata
 role: User
@@ -12,7 +12,7 @@ last-substantial-update: 2022-06-08T00:00:00Z
 doc-type: Feature Video
 exl-id: 73e793e0-a20e-4954-ba1a-471b2cd85120
 duration: 345
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%

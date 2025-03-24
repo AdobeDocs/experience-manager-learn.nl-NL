@@ -1,23 +1,23 @@
 ---
 title: Uw formulieren en thema's synchroniseren met het AEM-project
-description: De AEM Forms-elementen synchroniseren met het AEM-project
+description: AEM Forms-elementen synchroniseren met AEM-project
 solution: Experience Manager
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Code Deployment
 jira: KT-8852
 exl-id: 81a53f52-2a6c-44ef-a13f-ac372b4a33b9
 duration: 310
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
 
 ---
 
-# Adaptieve Forms synchroniseren met AEM project
+# Adaptieve Forms synchroniseren met AEM-project
 
 ## Thema maken
 
@@ -27,7 +27,7 @@ Om aan de slag te gaan werd een thema met de naam BankingApplication gemaakt in 
 
 Maak twee mappen met de naam FormTemplates en BankingApplication. U kunt een willekeurig aantal xdp-sjablonen toevoegen aan de map FormTemplates en ten minste één formulier maken in de map BankingApplication met het thema BankingApplication.
 
-Om deze activa in uw AEM project te synchroniseren gebruikend IntelliJ en het hulpmiddel van de Repo, gelieve de volgende video te letten
+Als u deze elementen wilt synchroniseren met uw AEM-project met IntelliJ en Repo, bekijkt u de volgende video
 
 >[!VIDEO](https://video.tv.adobe.com/v/336937?quality=12&learn=on)
 

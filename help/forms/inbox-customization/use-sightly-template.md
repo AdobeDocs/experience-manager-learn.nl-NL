@@ -3,14 +3,14 @@ title: Het gebruiken van sightmalplaatje om inbox gegevens te tonen
 description: Aangepaste kolommen toevoegen om aanvullende gegevens van de workflow weer te geven met een hevige sjabloon
 feature: Adaptive Forms
 doc-type: article
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-5830
 topic: Development
 role: Developer
 level: Experienced
 exl-id: d09b46ed-3516-44cf-a616-4cb6e9dfdf41
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -26,7 +26,7 @@ U kunt een hechte sjabloon gebruiken om de gegevens op te maken die in kolommen 
 
 ## Correcte sjabloon
 
-Na is het sibleke malplaatje. De code in het malplaatje toont pictogram afhankelijk van het inkomen. De pictogrammen zijn beschikbaar als deel van de [ koraal ui pictogrambibliotheek ](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) die met AEM komt.
+Na is het sibleke malplaatje. De code in het malplaatje toont pictogram afhankelijk van het inkomen. De pictogrammen zijn beschikbaar als deel van de [ koral ui pictogrambibliotheek ](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) die met AEM komt.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -84,7 +84,7 @@ return val;
 
 * [ Login aan crx als admin gebruiker ](http://localhost:4502/crx/de/index.jsp)
 * [sightsjabloon importeren](assets/sightly-template.zip)
-* [ Login aan AEM Webconsole ](http://localhost:4502/system/console/bundles)
+* [ Login aan de Webconsole van AEM ](http://localhost:4502/system/console/bundles)
 * [Aanpassingsbundel inbox implementeren en starten](assets/income-column-customization.jar)
 * [ Open uw inbox ](http://localhost:4502/aem/inbox)
 * Beheer beheren openen door te klikken op Lijstweergave naast de knop Maken

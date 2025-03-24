@@ -1,7 +1,7 @@
 ---
 title: Wolk 5 - Mysteries van Cloud Manager - Functionele tests
 description: Hoe en waarom aangepaste functionele tests maken
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 role: Admin, Developer
 level: Intermediate
 thumbnail: 343624.jpeg
@@ -9,7 +9,7 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 5d9d70ab-3aaa-4e88-b0f8-e8cfe73cc617
 duration: 310
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 0%
@@ -25,8 +25,8 @@ AEM as a Cloud Service voert standaard veel functionele tests uit met uw toepass
 ## Inhoud die in deze video wordt behandeld
 
 + [ Functioneel het Testen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/functional-testing.html)
-+ [ AEM de Tests van de Rook ](https://github.com/adobe/aem-test-samples/)
-+ [ AEM het testen van Cliënten ](https://github.com/adobe/aem-testing-clients/)
++ [ de Rooktests van AEM ](https://github.com/adobe/aem-test-samples/)
++ [ het Testen van AEM Clients ](https://github.com/adobe/aem-testing-clients/)
 
 ## Aanvullende bronnen
 

@@ -1,8 +1,8 @@
 ---
-title: SPA Editor-project | Aan de slag met de AEM SPA Editor en Angular
-description: Leer hoe u een Adobe Experience Manager (AEM) Maven-project gebruikt als beginpunt voor een Angular-toepassing die is geïntegreerd met de AEM SPA Editor.
+title: SPA-editor-project | Aan de slag met de AEM SPA Editor en Angular
+description: Leer hoe te om een Adobe Experience Manager (AEM) Gemaakt project als uitgangspunt voor een toepassing van Angular te gebruiken die met de Redacteur van het KUUROORD van AEM wordt geïntegreerd.
 feature: SPA Editor, AEM Project Archetype
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5309
 thumbnail: 5309-spa-angular.jpg
 topic: SPA
@@ -11,27 +11,27 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 49fcd603-ab1a-4f1e-ae1f-49d3ff373439
 duration: 252
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 0%
 
 ---
 
-# SPA Editor-project {#create-project}
+# SPA-editor-project {#create-project}
 
-Leer hoe u een Adobe Experience Manager (AEM) Maven-project gebruikt als beginpunt voor een Angular-toepassing die is geïntegreerd met de AEM SPA Editor.
+Leer hoe te om een Adobe Experience Manager (AEM) Gemaakt project als uitgangspunt voor een toepassing van Angular te gebruiken die met de Redacteur van het KUUROORD van AEM wordt geïntegreerd.
 
 ## Doelstelling
 
-1. Begrijp de structuur van een nieuw AEM SPA van de Redacteur project dat van een Maven archetype wordt gebouwd.
-2. Implementeer het startproject naar een lokale instantie van AEM.
+1. Begrijp de structuur van een nieuw project van de Redacteur van AEM SPA dat van een Maven archetype wordt gebouwd.
+2. Implementeer het startproject in een lokale instantie van AEM.
 
 ## Wat u gaat maken
 
-In dit hoofdstuk, wordt een nieuw AEM project opgesteld, dat op [ wordt gebaseerd AEM Project Archetype ](https://github.com/adobe/aem-project-archetype). Het AEM project wordt opgestart met een heel eenvoudig startpunt voor de SPA Angular. Het in dit hoofdstuk gebruikte project zal als basis dienen voor de tenuitvoerlegging van de WKND-SPA en is in toekomstige hoofdstukken gebaseerd.
+In dit hoofdstuk, wordt een nieuw project van AEM opgesteld, dat op [ wordt gebaseerd Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype). Het AEM-project wordt opgestart met een eenvoudig startpunt voor de Angular SPA. Het in dit hoofdstuk gebruikte project zal als basis voor een implementatie van de KND SPA dienen en is voortgebouwd op in toekomstige hoofdstukken.
 
-![ WKND SPA het Project van de Aanzet van de Angular ](./assets/create-project/what-you-will-build.png)
+![ WKND SPA Angular Starter Project ](./assets/create-project/what-you-will-build.png)
 
 *een klassiek bericht van de Wereld van Hello.*
 
@@ -41,11 +41,11 @@ Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikke
 
 ## Het project ophalen
 
-Er zijn verscheidene opties om een Maven Multi-module project voor AEM tot stand te brengen. Dit leerprogramma gebruikte het recentste [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype) als basis voor de leerlingencode. De projectcode is gewijzigd om veelvoudige versies van AEM te steunen. Gelieve te herzien [ de nota over achterwaartse verenigbaarheid ](overview.md#compatibility).
+Er zijn verschillende opties voor het maken van een Maven Multi-Module-project voor AEM. Dit leerprogramma gebruikte het recentste [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) als basis voor de zelfstudiecode. De projectcode is gewijzigd om meerdere versies van AEM te ondersteunen. Gelieve te herzien [ de nota over achterwaartse verenigbaarheid ](overview.md#compatibility).
 
 >[!CAUTION]
 >
->Het is beste praktijken om de **recentste** versie van [ archetype ](https://github.com/adobe/aem-project-archetype) te gebruiken om een nieuw project voor een implementatie in de praktijk te produceren. AEM projecten dienen gericht te zijn op één versie van AEM met behulp van de eigenschap `aemVersion` van het archetype.
+>Het is beste praktijken om de **recentste** versie van [ archetype ](https://github.com/adobe/aem-project-archetype) te gebruiken om een nieuw project voor een implementatie in de praktijk te produceren. AEM-projecten dienen zich te richten op één versie van AEM met behulp van de eigenschap `aemVersion` van het archetype.
 
 1. Download het beginpunt voor deze zelfstudie via Git:
 
@@ -55,7 +55,7 @@ Er zijn verscheidene opties om een Maven Multi-module project voor AEM tot stand
    $ git checkout Angular/create-project-start
    ```
 
-2. De volgende map en bestandsstructuur vertegenwoordigen het AEM Project dat is gegenereerd door het Maven-archetype op het lokale bestandssysteem:
+2. De volgende map en bestandsstructuur vertegenwoordigen het AEM-project dat is gegenereerd door het Maven-archetype op het lokale bestandssysteem:
 
    ```plain
    |--- aem-guides-wknd-spa
@@ -73,21 +73,21 @@ Er zijn verscheidene opties om een Maven Multi-module project voor AEM tot stand
        |--- archetype.properties
    ```
 
-3. De volgende eigenschappen werden gebruikt toen het produceren van het AEM project van [ AEM archetype van het Project ](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases/tag/aem-project-archetype-14):
+3. De volgende eigenschappen werden gebruikt toen het produceren van het project van AEM van het [ archetype van het Project van AEM ](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases/tag/aem-project-archetype-14):
 
    | Eigenschap | Waarde |
    |-----------------|---------------------------------------|
    | aemVersion | wolk |
    | appTitle | WKND SPA Angular |
-   | appId | wknd-angular |
+   | appId | wknd-spa-angulair |
    | groupId | com.adobe.aem.guides |
-   | frontendModule | angular |
+   | frontendModule | hoekig |
    | package | com.adobe.aem.guides.wknd.spa.angular |
    | includeExamples | n |
 
    >[!NOTE]
    >
-   > Let op de eigenschap `frontendModule=angular` . Dit vertelt het AEM Archetype van het Project om het project met een starter [ basis van de code van de Angular ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) te laarzen die met de AEM SPA Redacteur moet worden gebruikt.
+   > Let op de eigenschap `frontendModule=angular` . Dit vertelt het Archetype van het Project van AEM om het project met een starter [ de codebasis van Angular ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) met de Redacteur van AEM te laarzen SPA.
 
 ## Het project bouwen
 
@@ -103,7 +103,7 @@ Daarna, compileert, bouwt, en stelt de projectcode aan een lokale instantie van 
    Java version: 11.0.4, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home
    ```
 
-3. Voer de onderstaande opdracht Maven uit vanuit de map `aem-guides-wknd-spa` om het project te bouwen en te implementeren in AEM:
+3. Voer de onderstaande opdracht Maven uit vanuit de map `aem-guides-wknd-spa` om het project te maken en te implementeren in AEM:
 
    ```shell
    $ mvn -PautoInstallSinglePackage clean install
@@ -136,25 +136,25 @@ Daarna, compileert, bouwt, en stelt de projectcode aan een lokale instantie van 
    [INFO] ------------------------------------------------------------------------
    ```
 
-   Het Gemaakt profiel ***autoInstallSinglePackage*** compileert de individuele modules van het project en stelt één enkel pakket aan de AEM instantie op. Door gebrek wordt dit pakket opgesteld aan een AEM instantie die plaatselijk op haven **4502** loopt en met de geloofsbrieven van **admin:admin**.
+   Het Gemaakt profiel ***autoInstallSinglePackage*** compileert de individuele modules van het project en stelt één enkel pakket aan de instantie van AEM op. Door gebrek wordt dit pakket opgesteld aan een instantie van AEM die plaatselijk op haven **4502** loopt en met de geloofsbrieven van **admin:admin**.
 
-4. Navigeer aan **[!UICONTROL Package Manager]** op uw lokale AEM instantie: [ http://localhost:4502/crx/packmgr/index.jsp ](http://localhost:4502/crx/packmgr/index.jsp).
+4. Navigeer aan **[!UICONTROL Package Manager]** op uw lokale instantie van AEM: [ http://localhost:4502/crx/packmgr/index.jsp ](http://localhost:4502/crx/packmgr/index.jsp).
 
 5. Er moeten drie pakketten worden weergegeven voor `wknd-spa-angular.all` , `wknd-spa-angular.ui.apps` en `wknd-spa-angular.ui.content` .
 
-   ![ WKND SPA Pakketten ](./assets/create-project/package-manager.png)
+   ![ WKND de Pakketten van het KUUROORD ](./assets/create-project/package-manager.png)
 
-   Alle aangepaste code die nodig is voor het project, wordt in deze pakketten gebundeld en op de AEM-runtime geïnstalleerd.
+   Alle aangepaste code die nodig is voor het project, wordt in deze pakketten gebundeld en in de AEM-runtime geïnstalleerd.
 
-6. Er moeten ook verschillende pakketten worden weergegeven voor `spa.project.core` en `core.wcm.components` . Dit zijn gebiedsdelen automatisch inbegrepen door archetype. Meer informatie over [ AEM de Componenten van de Kern kan hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) worden gevonden.
+6. Er moeten ook verschillende pakketten worden weergegeven voor `spa.project.core` en `core.wcm.components` . Dit zijn gebiedsdelen automatisch inbegrepen door archetype. Meer informatie over [ de Componenten van de Kern van AEM kan hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) worden gevonden.
 
 ## Inhoud auteur
 
-Open vervolgens de SPA die is gegenereerd door het archetype en werk een deel van de inhoud bij.
+Vervolgens opent u de starter-SPA die is gegenereerd door het archetype en werkt u een gedeelte van de inhoud bij.
 
 1. Navigeer aan de **[!UICONTROL Sites]** console: [ http://localhost:4502/sites.html/content ](http://localhost:4502/sites.html/content).
 
-   De WKND-SPA bevat een basissitestructuur met een land, taal en homepage. Deze hiërarchie is gebaseerd op de standaardwaarden van het archetype voor `language_country` en `isSingleCountryWebsite` . Deze waarden kunnen worden beschreven door de [ beschikbare eigenschappen ](https://github.com/adobe/aem-project-archetype#available-properties) bij te werken wanneer het produceren van een project.
+   De WKND SPA omvat een basissitestructuur met een land, taal en homepage. Deze hiërarchie is gebaseerd op de standaardwaarden van het archetype voor `language_country` en `isSingleCountryWebsite` . Deze waarden kunnen worden beschreven door de [ beschikbare eigenschappen ](https://github.com/adobe/aem-project-archetype#available-properties) bij te werken wanneer het produceren van een project.
 
 2. Open de pagina **[!DNL us]** > **[!DNL en]** > **[!DNL WKND SPA Angular Home Page]** door de pagina te selecteren en op de knop **[!UICONTROL Edit]** op de menubalk te klikken:
 
@@ -168,7 +168,7 @@ Open vervolgens de SPA die is gegenereerd door het archetype en werk een deel va
 
    U ziet dat de ontwerpervaring vergelijkbaar is met die van een traditionele AEM Sites-pagina. Momenteel is een beperkt aantal componenten beschikbaar die kunnen worden gebruikt. Tijdens de zelfstudie wordt meer toegevoegd.
 
-## Inspect de toepassing Eén pagina
+## De toepassing Eén pagina controleren
 
 Controleer vervolgens of dit een toepassing voor één pagina is met gebruik van de ontwikkelaars van uw browser.
 
@@ -176,7 +176,7 @@ Controleer vervolgens of dit een toepassing voor één pagina is met gebruik van
 
    ![ Mening als Gepubliceerde knoop ](./assets/create-project/view-as-published.png)
 
-   Dit zal een nieuw lusje met de vraagparameter `?wcmmode=disabled` openen die effectief de AEM redacteur uitzet: [ http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled ](http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled)
+   Dit zal een nieuw lusje met de vraagparameter `?wcmmode=disabled` openen die effectief de redacteur van AEM uitzet: [ http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled ](http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled)
 
 2. Bekijk de bron van de pagina. U ziet dat de tekstinhoud **[!DNL Hello World]** of een van de andere inhoud niet is gevonden. In plaats daarvan ziet u HTML als volgt:
 
@@ -200,11 +200,11 @@ Controleer vervolgens of dit een toepassing voor één pagina is met gebruik van
 
    ![ XHR Verzoeken ](./assets/create-project/xhr-requests.png)
 
-   Er zou een verzoek aan [ http://localhost:4502/content/wknd-spa-angular/us/en.model.json ](http://localhost:4502/content/wknd-spa-angular/us/en.model.json) moeten zijn. Dit bevat alle inhoud, geformatteerd in JSON, die de SPA zal drijven.
+   Er zou een verzoek aan [ http://localhost:4502/content/wknd-spa-angular/us/en.model.json ](http://localhost:4502/content/wknd-spa-angular/us/en.model.json) moeten zijn. Dit bevat alle inhoud, die in JSON wordt geformatteerd, die SPA zal drijven.
 
 5. In een nieuw lusje, open [ http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json)
 
-   De aanvraag `en.model.json` vertegenwoordigt het inhoudsmodel waarop de toepassing wordt gebaseerd. Inspect de JSON-uitvoer en u moet het fragment kunnen vinden dat de **[!UICONTROL Text]** -component(en) vertegenwoordigt.
+   De aanvraag `en.model.json` vertegenwoordigt het inhoudsmodel waarop de toepassing wordt gebaseerd. Controleer de JSON-uitvoer en u moet het fragment kunnen vinden dat de **[!UICONTROL Text]** -component(en) vertegenwoordigt.
 
    ```json
    ...
@@ -222,7 +222,7 @@ Controleer vervolgens of dit een toepassing voor één pagina is met gebruik van
    ...
    ```
 
-   In het volgende hoofdstuk zullen wij inspecteren hoe de inhoud JSON van AEM Componenten aan SPA Componenten wordt in kaart gebracht om de basis van de AEM SPA Ervaring te vormen.
+   In het volgende hoofdstuk zullen wij inspecteren hoe de inhoud JSON van de Componenten van AEM aan de Componenten van het KUUROORD wordt in kaart gebracht om de basis van de ervaring van de Redacteur van AEM te vormen SPA.
 
    >[!NOTE]
    >
@@ -230,10 +230,10 @@ Controleer vervolgens of dit een toepassing voor één pagina is met gebruik van
 
 ## Gefeliciteerd! {#congratulations}
 
-Gefeliciteerd, u hebt zojuist uw eerste AEM SPA Editor Project gemaakt!
+U hebt zojuist uw eerste AEM SPA Editor Project gemaakt.
 
 Het is nu heel eenvoudig, maar in de volgende hoofdstukken wordt meer functionaliteit toegevoegd.
 
 ### Volgende stappen {#next-steps}
 
-[ integreer de SPA ](integrate-spa.md) - leer hoe de SPA broncode met het AEM Project wordt geïntegreerd en de middelen begrijpt beschikbaar om de SPA snel te ontwikkelen.
+[ integreer het KUUROORD ](integrate-spa.md) - leer hoe de broncode van het KUUROORD met het Project van AEM wordt geïntegreerd en hulpmiddelen begrijpt beschikbaar om het KUUROORD snel te ontwikkelen.

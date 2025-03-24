@@ -2,14 +2,14 @@
 title: De opgehaalde formulieren weergeven in de kaartweergave
 description: De API voor lijsten gebruiken om de formulieren weer te geven
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-13311
 topic: Development
 role: User
 level: Intermediate
 exl-id: c01ad68e-23c9-4564-8e3e-1924af34a493
 duration: 91
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -27,7 +27,7 @@ In dit artikel, zullen wij [ lijsten API ](https://opensource.adobe.com/aem-form
 
 ## Kaartsjabloon
 
-De volgende code is gebruikt om de kaartsjabloon te ontwerpen. De kaartsjabloon toont de titel en beschrijving van het adaptieve formulier samen met het logo van de Adobe. {de componenten van 0} Materiaal UI ](https://mui.com/) zijn gebruikt in het creëren van deze lay-out.[
+De volgende code is gebruikt om de kaartsjabloon te ontwerpen. De kaartsjabloon toont de titel en beschrijving van het adaptieve formulier samen met het Adobe-logo. {de componenten van 0} Materiaal UI ](https://mui.com/) zijn gebruikt in het creëren van deze lay-out.[
 
 
 
@@ -85,7 +85,7 @@ De volgende route werd bepaald in Main.js om aan DisplayForm.js te navigeren
 
 ## De formulieren ophalen
 
-De API voor lijsten is gebruikt om de formulieren op te halen van de AEM. De API retourneert een array met JSON-objecten, elk JSON-object dat een formulier vertegenwoordigt.
+De API voor lijsten is gebruikt om de formulieren op te halen van de AEM-server. De API retourneert een array met JSON-objecten, elk JSON-object dat een formulier vertegenwoordigt.
 
 ```javascript
 import { useState,useEffect } from "react";

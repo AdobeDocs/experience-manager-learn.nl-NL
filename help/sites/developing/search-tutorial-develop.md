@@ -1,7 +1,7 @@
 ---
 title: Eenvoudige gids voor implementatie van zoekopdrachten
-description: De Eenvoudige onderzoeksimplementatie is de materialen van het laboratorium van de Top van 2017 AEM Gedetailleerd Onderzoek. Deze pagina bevat de materialen van dit laboratorium. Voor een geleide rondleiding van het laboratorium, te bekijken gelieve het werkboek van het Laboratorium in de sectie van de Presentatie van deze pagina.
-version: 6.4, 6.5
+description: De Eenvoudige onderzoeksimplementatie is de materialen van het het laboratorium van de Top van AEM van 2017 Gedemystificeerde Onderzoek. Deze pagina bevat de materialen van dit laboratorium. Voor een geleide rondleiding van het laboratorium, te bekijken gelieve het werkboek van het Laboratorium in de sectie van de Presentatie van deze pagina.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Search
 topic: Development
 role: Developer
@@ -11,7 +11,7 @@ exl-id: aa268c5f-d29e-4868-a58b-444379cb83be
 last-substantial-update: 2022-08-10T00:00:00Z
 thumbnail: 32090.jpg
 duration: 138
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Eenvoudige gids voor implementatie van zoekopdrachten{#simple-search-implementation-guide}
 
-De Eenvoudige onderzoeksimplementatie is de materialen van het **laboratorium van de Adobe Summit AEM Gedetailleerd Onderzoek**. Deze pagina bevat de materialen van dit laboratorium. Voor een geleide rondleiding van het laboratorium, te bekijken gelieve het werkboek van het Laboratorium in de sectie van de Presentatie van deze pagina.
+De Eenvoudige onderzoeksimplementatie is de materialen van het **gedemystificeerde het laboratoriumAEM van Adobe Summit Onderzoek**. Deze pagina bevat de materialen van dit laboratorium. Voor een geleide rondleiding van het laboratorium, te bekijken gelieve het werkboek van het Laboratorium in de sectie van de Presentatie van deze pagina.
 
 ![ Overzicht van de Architectuur van het Onderzoek ](assets/l4080/simple-search-application.png)
 
@@ -42,7 +42,7 @@ De Eenvoudige onderzoeksimplementatie is de materialen van het **laboratorium va
 
 ### Hoofdstukken {#chapters}
 
-*de verbindingen van het Hoofdstuk hieronder veronderstellen de [ Aanvankelijke Pakketten ](#initialpackages) op AEM Auteur bij`http://localhost:4502`* geïnstalleerd zijn
+*de verbindingen van het Hoofdstuk hieronder veronderstellen de [ Aanvankelijke Pakketten ](#initialpackages) op de Auteur van AEM bij`http://localhost:4502`* geïnstalleerd zijn
 
 * [ Hoofdstuk 1 ](http://localhost:4502/editor.html/content/summit/l4080/chapter-1.html)
 * [ Hoofdstuk 2 ](http://localhost:4502/editor.html/content/summit/l4080/chapter-2.html)
@@ -78,7 +78,7 @@ De Eenvoudige onderzoeksimplementatie is de materialen van het **laboratorium va
 * [ Sling Models ](https://sling.apache.org/documentation/bundles/models.html)
 * [ het Verdelen ModelExporter ](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
 * [ QueryBuilder API ](https://experienceleague.adobe.com/docs/)
-* [ AEM Plug-in Chrome ](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) ([ pagina van de Documentatie ](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
+* [ AEM Chrome Plug-in ](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) ([ pagina van de Documentatie ](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## Correcties en follow-up {#corrections-and-follow-up}
 
@@ -86,7 +86,7 @@ Correcties en verduidelijkingen uit de laboratoriumdiscussies en antwoorden op v
 
 1. **hoe te ophouden opnieuw indexerend?**
 
-   Het opnieuw indexeren kan via IndexStats MBean beschikbaar via [ AEM de Console van het Web > JMX ](http://localhost:4502/system/console/jmx) worden tegengehouden
+   Het opnieuw indexeren kan via IndexStats MBean beschikbaar via [ de Console van het Web van AEM > JMX ](http://localhost:4502/system/console/jmx) worden tegengehouden
 
    * [ http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
       * Voer `abortAndPause()` uit om het opnieuw indexeren af te breken. Hierdoor wordt de index vergrendeld om opnieuw te indexeren totdat `resume()` wordt aangeroepen.
@@ -107,7 +107,7 @@ Correcties en verduidelijkingen uit de laboratoriumdiscussies en antwoorden op v
    * De vragen MOETEN een wegbeperking specificeren die aan het werkingsgebied van de de vraagweg van de index gelijk is, of daar een nakomeling van zijn.
    * Met bredere bereikindexen (bijvoorbeeld `/oak:index/cqPageLucene`) worden de gegevens ook geïndexeerd, wat leidt tot dubbele invoer en kosten voor schijfgebruik.
    * Mogelijk is dubbel configuratiebeheer vereist (bijvoorbeeld het toevoegen van zelfde indexRules over veelvoudige huurdersindexen als zij de zelfde vraagreeksen moeten voldoen)
-   * Deze benadering wordt het best gediend op de AEM Publish rij voor het onderzoek van de douaneplaats, aangezien op AEM Auteur, het voor vragen gemeenschappelijk is dat bij hoog de inhoudsboom voor verschillende huurders (bijvoorbeeld, via OmniSearch) worden uitgevoerd - de verschillende indexdefinities in verschillend gedrag kunnen resulteren dat slechts op de wegbeperking wordt gebaseerd.
+   * Deze benadering wordt het best gediend op de AEM Publish rij voor het onderzoek van de douanesite, aangezien op de Auteur van AEM, het voor vragen gemeenschappelijk is om bij hoog de inhoudsboom voor verschillende huurders (bijvoorbeeld, via OmniSearch) te worden uitgevoerd - de verschillende indexdefinities kunnen in verschillend gedrag resulteren die slechts op de wegbeperking wordt gebaseerd.
 
 3. **waar is een lijst van alle beschikbare Analysatoren?**
 
@@ -138,7 +138,7 @@ Correcties en verduidelijkingen uit de laboratoriumdiscussies en antwoorden op v
    PLAN: [cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* */ union [dam:Asset] as [a] /* lucene:damAssetLucene(/oak:index/damAssetLucene) *:* */
    ```
 
-   Onderzoek de vraag en de resultaten via [ Debugger QueryBuilder ](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) en [ AEM Insteekmodule van Chrome ](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   Onderzoek de vraag en de resultaten via [ Debugger QueryBuilder ](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) en [ AEM Chrome Plug-in ](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
 
 5. **hoe te over veelvoudige wegen in de zelfde vraag te zoeken?**
 
@@ -162,4 +162,4 @@ Correcties en verduidelijkingen uit de laboratoriumdiscussies en antwoorden op v
    PLAN: [cq:Page] as [a] /* traverse "/content/docs/en/6-2//*" where isdescendantnode([a], [/content/docs/en/6-2]) */ union [cq:Page] as [a] /* traverse "/content/docs/en/6-3//*" where isdescendantnode([a], [/content/docs/en/6-3]) */
    ```
 
-   Onderzoek de vraag en de resultaten via [ Debugger QueryBuilder ](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) en [ AEM Insteekmodule van Chrome ](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   Onderzoek de vraag en de resultaten via [ Debugger QueryBuilder ](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) en [ AEM Chrome Plug-in ](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).

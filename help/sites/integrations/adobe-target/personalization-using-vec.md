@@ -1,7 +1,7 @@
 ---
 title: Personalization die Visual Experience Composer gebruikt
 description: Leer hoe te om een Activiteit van Adobe Target tot stand te brengen gebruikend Visual Experience Composer.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-6352
 thumbnail: 6352-personalization-using-vec.jpg
 topic: Integrations
@@ -13,7 +13,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
 duration: 101
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%
@@ -26,9 +26,9 @@ Leer hoe te om een Activiteit van het Doel van de Test te creëren A/B gebruiken
 
 ## Vereisten
 
-Als u VEC op een AEM website wilt gebruiken, moet u de volgende installatie uitvoeren:
+Als u VEC op een AEM-website wilt gebruiken, moet u de volgende installatie uitvoeren:
 
-1. [Adobe Target toevoegen aan uw AEM website](./add-target-launch-extension.md)
+1. [Adobe Target toevoegen aan uw AEM-website](./add-target-launch-extension.md)
 1. [Een Adobe Target-aanroep vanuit tags activeren](./load-and-fire-target.md)
 
 ## Overzicht van scenario
@@ -39,7 +39,7 @@ Op de homepage van de WKND-site worden lokale activiteiten of de beste dingen di
 
 1. Login aan [ Adobe Experience Cloud ](https://experience.adobe.com/), ontvang op __Doel__, navigeer aan het __Activiteiten__ lusje
 
-   + Als u niet __Doel__ op het dashboard van het Experience Cloud ziet, zorg ervoor dat de correcte organisatie van de Adobe in de organisatieschakelaar in het hoogste recht wordt geselecteerd, en dat de gebruiker toegang tot Doel in [ Adobe Admin Console ](https://adminconsole.adobe.com/) is verleend.
+   + Als u niet __Doel__ op het dashboard van Experience Cloud ziet, zorg ervoor dat de correcte organisatie van Adobe in de organisatieschakelaar in het hoogste recht wordt geselecteerd, en dat de gebruiker toegang tot Doel in [ Adobe Admin Console ](https://adminconsole.adobe.com/) is verleend.
 
 1. Klik **creëren de knoop van de Activiteit** en kies dan **A/B de Activiteit van de Test**
 
@@ -53,7 +53,7 @@ Op de homepage van de WKND-site worden lokale activiteiten of de beste dingen di
 
    ![ Ervaring A ](assets/experience.png)
 
-1. Selecteer een afbeelding of tekst op de pagina die u wilt wijzigen of gebruik de code-editor om het element te selecteren en te HTML.
+1. Selecteer een afbeelding of tekst op de pagina die u wilt wijzigen of gebruik de code-editor om het HTML-element te selecteren en te selecteren.
 
    ![ Element ](assets/select-element.png)
 

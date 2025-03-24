@@ -4,13 +4,13 @@ description: Creeer en vorm dynamisch rekening met Azure Actieve Folder
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms, Integrations
 topic: Development
 jira: KT-9839
 exl-id: ec4ed3e1-98ae-41ce-9891-09da3321edd5
 duration: 407
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%
@@ -19,12 +19,12 @@ ht-degree: 0%
 
 # Account voor dynamiek maken en configureren
 
-[ Login ](https://dynamics.microsoft.com/en-us/) aan uw rekening van de Dynamica van Microsoft. U kunt a [ vrije proefrekening ](https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/) tot stand brengen als u geen rekening van de Dynamiek hebt.
+[ Login ](https://dynamics.microsoft.com/en-us/) aan uw rekening van Microsoft Dynamics. U kunt a [ vrije proefrekening ](https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/) tot stand brengen als u geen rekening van de Dynamiek hebt.
 
 >[!NOTE]
 >Vervang de server- en poortnummers in de URI hieronder om URI opnieuw te proberen. U zult dit opnieuw proberen URI nodig hebben wanneer het vormen van uw toepassing met Azure Actieve Folder.
 >https://[ server ]:[ haven ] /libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
 
-De volgende video begeleidt u door de stappen om de Dynamica van Microsoft met Azure Actieve Folder te registreren.
+De volgende video begeleidt u door de stappen om Microsoft Dynamics met Azure Actieve Folder te registreren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340743?quality=12&learn=on)

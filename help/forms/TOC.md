@@ -6,9 +6,9 @@ user-guide-description: Verzameling van AEM Forms-bronnen voor beginners en erva
 solution: Experience Manager, Experience Manager Forms
 breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 index: y
-source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2101'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 + [Overzicht](overview.md)
 + [Aanbevolen procedures](adaptive-forms/best-practices-adaptive-forms.md)
-+ [OKTA-verificatie instellen met AEM auteur](adaptive-forms/single-sign-on-with-okta.md)
++ [OKTA-verificatie instellen met AEM-auteur](adaptive-forms/single-sign-on-with-okta.md)
 + Uw eerste adaptieve formulier maken {#creating-your-first-adaptive-form}
    + [1 - Inleiding en installatie](creating-your-first-adaptive-form/introduction-and-setup.md)
    + [2 - Een adaptieve formuliersjabloon maken](creating-your-first-adaptive-form/create-adaptive-form-template.md)
@@ -39,7 +39,7 @@ ht-degree: 1%
    + [Verzenden naar extern eindpunt](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
    + [E-mail verzenden](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
    + [Werkstroom voor betaalde tijd uit aanvraag](handling-form-submissions/paid-time-off-request-workflow.md)
-   + [Adaptief formulier configureren om AEM workflow te activeren - video](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
+   + [Adaptief formulier configureren om AEM-workflow te activeren - video](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
    + [Taakmelding toewijzen aanpassen](handling-form-submissions/customize-assign-task-notification.md)
 + Nuttige integratie {#some-useful-integrations}
    + [Verificatie met twee factoren](some-useful-integrations/two-factor-authentication.md)
@@ -91,19 +91,19 @@ ht-degree: 1%
    + [Formulierbijlage invoegen in DB](adaptive-forms/inserting-form-attachment-in-db.md)
    + [Source-configuratie gegevens wijzigen](adaptive-forms/modify-data-source-configuration-settings-article.md)
    + [Eigenschappen van formuliergegevensmodel overschrijven](adaptive-forms/override-fdm-values.md)
-   + [Formuliergegevensmodelservice in AEM 6.4-workflow](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
+   + [Formuliergegevensmodelservice in AEM 6.4 Workflow](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
    + [Foutberichten verwerken in de stap Service Model van formuliergegevens](adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)
-   + [Formuliergegevensmodelservice in AEM 6.5.1-workflow](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
+   + [Formuliergegevensmodelservice in AEM 6.5.1 Workflow](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
    + [Formuliergegevensmodel zonder gegevens-Source](adaptive-forms/form-data-model-without-data-source-feature-video-use.md)
    + [Model-element voor berekende formuliergegevens](adaptive-forms/computed-form-data-model-elements-aem-forms-feature-video.md)
    + [JDBC Data Source instellen in AEM Forms](adaptive-forms/data-integration-technical-video-setup.md)
    + [Op JDBC gebaseerd formuliergegevensmodel](adaptive-forms/jdbc-data-model-technical-video-use.md)
    + [Koppelingen maken tussen 2 entiteiten in formuliergegevensmodel](adaptive-forms/association-data-model-technical-video-use.md)
    + [De aanroepservice van het formuliergegevensmodel gebruiken in de regeleditor](adaptive-forms/service-data-model-technical-video-use.md)
-   + [Binaire gegevens naar DAM AEM met formuliergegevensmodel](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
+   + [Binaire gegevens naar AEM DAM verzenden met formuliergegevensmodel](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
    + [Opnieuw bruikbare workflowmodellen maken](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
-   + [Aangepaste processtap AEM workflow](adaptive-forms/custom-process-step-aem-workflow.md)
-   + [HTML5-Forms vooraf vullen](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
+   + [AEM-workflow voor aangepaste processtappen](adaptive-forms/custom-process-step-aem-workflow.md)
+   + [HTML5 Forms vooraf vullen](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Formuliergegevensmodel met Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Items dynamisch aan keuzeselectie-component toevoegen](adaptive-forms/choice-group-items-adding-dynamically-article.md)
 + Een PDF-formulier vullen met ChatBot {#chatbot-and-aem-forms}
@@ -175,7 +175,7 @@ ht-degree: 1%
    + [Adaptief formulier maken en configureren](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [Adaptief formulier configureren voor één ondertekenaar](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
    + [Adaptief formulier configureren voor twee ondertekenaars](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
-   + [Automatede form conversion-service configureren](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+   + [Automated Forms Conversion Service configureren](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
    + [PDF-formulier converteren naar adaptief formulier](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Geconverteerd adaptief formulier configureren](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [XDP-sjablonen gebruiken met Acrobat Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
@@ -201,14 +201,14 @@ ht-degree: 1%
    + [1-Inleiding](custom-workflow-component/introduction.md)
    + [Java-code met 2 schrijven](custom-workflow-component/custom-process-step-aem-workflow.md)
    + [3-workflowcomponent maken](custom-workflow-component/custom-workflow-component.md)
-+ Variabelen in AEM workflow {#variables-aem-workflow}
++ Variabelen in de Werkstroom van AEM {#variables-aem-workflow}
    + [Inleiding - Variabelen in workflow](variables-aem-workflow/introduction.md)
    + [XML-variabelen](variables-aem-workflow/part1.md)
    + [JSON-variabelen](variables-aem-workflow/part2.md)
    + [Documentvariabelen](variables-aem-workflow/part3.md)
    + [ArrayList-variabele](variables-aem-workflow/part4.md)
    + [Formuliergegevensmodelvariabele](variables-aem-workflow/form-data-model.md)
-   + [Regeleditor in AEM workflow](variables-aem-workflow/part5.md)
+   + [Rule Editor in AEM Workflow](variables-aem-workflow/part5.md)
    + [Logwerkstroomvariabelen](variables-aem-workflow/part6.md)
 + Formuliergegevens controleren {#review-form-data}
    + [1 - Inleiding](review-form-data/introduction.md)
@@ -222,14 +222,14 @@ ht-degree: 1%
    + [Clientbibliotheek](storing-retrieving-form-data/part4.md)
    + [Adaptief formuliersjabloon](storing-retrieving-form-data/part5.md)
    + [Voorbeeldelementen implementeren](storing-retrieving-form-data/part6.md)
-+ Het teweegbrengen AEM Workflow op de verzending van de Vorm van de PDF {#offline-mobile-form-submission}
++ AEM-workflow activeren bij het verzenden van PDF-formulieren {#offline-mobile-form-submission}
    + [Deel 1](offline-mobile-form-submission/introduction.md)
    + [Deel 2](offline-mobile-form-submission/custom-profile.md)
    + [Deel 3](offline-mobile-form-submission/handle-form-submission.md)
    + [Deel 4](offline-mobile-form-submission/author-servlet.md)
    + [Deel 5](offline-mobile-form-submission/review-workflow.md)
    + [Deel 6](offline-mobile-form-submission/deploy-assets.md)
-+ De AEM van de trekker op Mobiele Verzending van het Vorm {#trigger-aem-workflow-on-mobile-form-submission}
++ De AEM-workflow activeren bij het verzenden van mobiele formulieren {#trigger-aem-workflow-on-mobile-form-submission}
    + [Deel 1](trigger-aem-workflow-on-mobile-form-submission/introduction.md)
    + [Deel 2](trigger-aem-workflow-on-mobile-form-submission/handle-form-submission.md)
    + [Deel 3](trigger-aem-workflow-on-mobile-form-submission/author-servlet.md)
@@ -281,7 +281,7 @@ ht-degree: 1%
 + Document Services {#document-services}
    + [Typen PDF forms](document-services/pdf-forms-and-documents.md)
    + [PDF insluiten in adaptieve vorm](document-services/embed-pdf-inline.md)
-   + [PDF](document-services/display-pdf-in-carousel.md)
+   + [PDF in carrouselcomponent](document-services/display-pdf-in-carousel.md)
    + [Assembler Service gebruiken in AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
    + [XDP Stitching met de Dienst van de Assembler](document-services/xdp-stitching-using-assembler-service.md)
    + [Controlemap gebruiken in AEM Forms](document-services/watched-folders-document-services-article-use.md)
@@ -293,11 +293,11 @@ ht-degree: 1%
    + [ECMA-script voor het genereren van pdf met fragmenten](document-services/using-fragments-in-output-service-watched-folder.md)
    + [Meerdere PDF&#39;s genereren op basis van één gegevensbestand](document-services/generate-multi-record-pdf.md)
    + [PDF genereren op mobiele formulieren](document-services/generate-pdf-from-mobile-form-submission-article.md)
-   + [Op basis van een formulier verzonden PDF op basis van kerncomponent genereren](document-services/generate-pdf-from-core-component-form-submission.md)
-   + [Interactieve PDF uit mobiel formulier genereren](document-services/render-interactive-form-using-api.md)
+   + [Op basis van PDF op Core Component gebaseerde formulierverzending genereren](document-services/generate-pdf-from-core-component-form-submission.md)
+   + [Interactieve PDF genereren op basis van mobiel formulier](document-services/render-interactive-form-using-api.md)
    + [Interactieve DoR genereren uit adaptief formulier](document-services/generate-interactive-dor.md)
-   + [Credentiële Reader extensies configureren](document-services/configuring-reader-extension-osgi.md)
-   + [Gebruiksrechten toepassen op PDF bij XDP-uitvoering](document-services/rendering-and-reader-extending-xdp-templates-article.md)
+   + [Credentiële Reader-extensies configureren](document-services/configuring-reader-extension-osgi.md)
+   + [Gebruiksrechten toepassen op PDF op XDP-uitvoering](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [Gebruiksrechten toepassen op geüploade PDF](document-services/apply-reader-extension-rights-to-pdf.md)
    + [Documenten certificeren](document-services/certifying-documents-aem-forms-tutorial.md)
    + [Formulierbijlagen samenstellen](document-services/assemble-form-attachments.md)
@@ -311,7 +311,7 @@ ht-degree: 1%
    + [Databasebinding](forms-designer/binding-to-mysql-db.md)
    + [Scripthandtekening gebruiken](forms-designer/scribble-signature-form.md)
    + [Digitale handtekening gebruiken](forms-designer/adding-dig-signature-field.md)
-   + [Reader, formulier uitbreiden](forms-designer/reader-extending-j2ee.md)
+   + [Reader-verlengformulier](forms-designer/reader-extending-j2ee.md)
 + AEM Forms Workbench {#forms-workbench}
    + [Inleiding tot Workbench](aem-forms-workbench/workbench-introduction.md)
    + [Formulierproces maken](aem-forms-workbench/workbench-creating-a-process.md)
@@ -400,8 +400,8 @@ ht-degree: 1%
    + [Workbench: hoe u de parameters voor werkbankgeheugen kunt afstemmen](troubleshooting/how-to-tweak-workbench-memory-parameters.md)
    + [Workbench: hoe u de prestatieparameters van de werkbank kunt afstemmen](troubleshooting/how-to-tweak-workbench-performance-parameters.md)
    + [Designer: Afhankelijkheid van Designer op C++ herdistribueerbaar](troubleshooting/dependency-of-vc-on-designer.md)
-   + [Designer: HTML-voorvertoning inschakelen](troubleshooting/how-to-enable-html-preview.md)
-   + [Designer: PDF-voorvertoning inschakelen](troubleshooting/how-to-enable-pdf-preview.md)
+   + [Designer: HTML Preview inschakelen](troubleshooting/how-to-enable-html-preview.md)
+   + [Designer: PDF Preview inschakelen](troubleshooting/how-to-enable-pdf-preview.md)
    + [Designer: Designer Patches installeren](troubleshooting/how-to-install-designer-patches.md)
    + [JEE Foundation: de waarde van entropie wijzigen](troubleshooting/how-to-change-the-value-of-entropy.md)
    + [JEE Foundation: hoe u de time-out van transacties voor een service in AEM Forms JEE wijzigt](troubleshooting/how-to-change-transaction-timeout-of-any-service-in-aem-forms-jee.md)
@@ -418,13 +418,13 @@ ht-degree: 1%
    + [Algemeen: Hoe kan ik Verbindingspompen van een JVM vastleggen op een unix-server?](troubleshooting/how-to-capture-thread-dumps-of-a-jvm-on-a-unix-server.md)
    + [Algemeen: Hoe kan ik Verbindingsvoorbeelden van een JVM vastleggen op een Windows-server](troubleshooting/how-to-capture-thread-dumps-of-a-jvm-on-a-windows-server.md)
    + [Algemeen: Een zelfondertekend certificaat genereren](troubleshooting/how-to-generate-a-self-signed-certificate.md)
-   + [Algemeen: Webservice-aanroep maken vanuit HTML5-formulier](troubleshooting/how-to-make-web-service-call-from-html5-form.md)
+   + [Algemeen: Webservices bellen vanuit HTML5-formulier](troubleshooting/how-to-make-web-service-call-from-html5-form.md)
    + [Algemeen: Stappen om het registreren van fouten voor om het even welke klassen in AEM Forms OSGI toe te laten](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-aem-forms-osgi.md)
    + [Algemeen: De stappen om het zuiveren registreren voor om het even welke klassen in de Server van de Toepassing toe te laten JBOSS](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-jboss-application-server.md)
    + [Algemeen: De stappen om het zuiveren registreren voor om het even welke klassen in de Server van de Toepassing toe te laten Websphere](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-websphere-application-server.md)
    + [Algemeen: stappen om SSL in te schakelen voor AEM Forms OSGi](troubleshooting/steps-to-enable-ssl-for-aem-forms-osgi.md)
    + [Algemeen: Stappen om sleutelarchiefwachtwoord te coderen dat in lc_turnkey.xml moet worden gebruikt](troubleshooting/steps-to-encrypt-keystore-password-to-be-used-in-lc-turnkey-xml.md)
-   + [Algemeen: Stappen-aan-terugstellen-gebrek-wachtwoord-voor-gebruikers-in-AEM-Forms-JEE](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-jee.md)
+   + [Algemeen: Stappen-aan-reset-default-password-for-users-in-AEM-Forms-JEE](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-jee.md)
    + [Algemeen: Stappen-aan-terugstellen-gebrek-wachtwoord-voor-gebruikers-in-AEM-Forms-OSGI](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-osgi.md)
    + [Algemeen: Stappen aan opstellings gemfire locators in een cluster en voeren verwante configuratie uit](troubleshooting/steps-to-set-up-gemfire-locators-in-a-cluster-and-perform-related-configuration.md)
 

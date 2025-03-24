@@ -1,7 +1,7 @@
 ---
 title: Adobe Managed Services Dispatcher Handleiding
 description: AMS-processen voor de juiste ondersteuning bij de Dispatcher-installatie.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration, Performance, Security
 feature: Dispatcher
 role: Admin
@@ -9,7 +9,7 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Catalog
 exl-id: 4f72d010-f488-490a-83fb-38ff1b1e8183
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Handleiding Adobe Managed Services Dispatcher
 
-Als uw AEM op Adobe Beheerde Dienst wordt ontvangen dan zult u door deze handleiding willen lezen.
+Als uw AEM-installatie wordt gehost op de door Adobe beheerde service, kunt u deze handleiding lezen.
 Hieronder staan de documenten die betrekking hebben op AMS-processen voor het op de juiste wijze aanpassen en werken met de meegeleverde Dispatcher-installatie.
 
 ## Inhoudsopgave

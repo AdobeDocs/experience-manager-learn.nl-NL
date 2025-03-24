@@ -1,40 +1,40 @@
 ---
 title: Overzicht van Dynamic Media met AEM Assets
-description: Deze videoreeks geeft u een overzicht van hoe media inhoud wordt beheerd en betreden gebruikend Adobe Experience Manager Dynamic Media als inhoud dienende dienst. Met Dynamic Media kunt u dynamische digitale ervaringen beheren en publiceren. Dit is een unieke functie voor Experience Manager Assets. Met ons framework en onze reeks componenten kunnen marketers interactieve multimedia-ervaringen op alle apparaten aanpassen en leveren.
+description: Deze videoreeks geeft u een overzicht van hoe media inhoud wordt beheerd en betreden gebruikend Adobe Experience Manager Dynamic Media als inhoud dienende dienst. Met Dynamic Media kunt u dynamische digitale ervaringen beheren en publiceren. Dit is een unieke functie van Experience Manager Assets. Met ons framework en onze reeks componenten kunnen marketers interactieve multimedia-ervaringen op alle apparaten aanpassen en leveren.
 feature: Smart Crop, Video Profiles, Image Profiles, Viewer Presets, 360 VR Video, Image Sets, Spin Sets
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
 duration: 2516
-source-git-commit: fd372c7ee387504e4316a6ca657a77fe0a0c511e
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 0%
 
 ---
 
-# Dynamic Media gebruiken met AEM Assets {#understanding-aem-dynamic-media}
+# Dynamische media gebruiken met AEM Assets {#understanding-aem-dynamic-media}
 
-Deze videoreeks met meerdere delen geeft u een overzicht van hoe media-inhoud wordt beheerd en geopend met Adobe Experience Manager Dynamic Media als een service voor inhoud. Met Dynamic Media kunt u dynamische digitale ervaringen beheren en publiceren. Dit is een unieke functie voor Experience Manager Assets. Met ons framework en onze reeks componenten kunnen marketers interactieve multimedia-ervaringen op alle apparaten aanpassen en leveren.
+Deze videoreeks met meerdere delen geeft u een overzicht van hoe media-inhoud wordt beheerd en geopend met behulp van Adobe Experience Manager Dynamic Media als een service voor inhoud. Met Dynamic Media kunt u dynamische digitale ervaringen beheren en publiceren. Dit is een unieke functie van Experience Manager Assets. Met ons framework en onze reeks componenten kunnen marketers interactieve multimedia-ervaringen op alle apparaten aanpassen en leveren.
 
-## Live demo van Dynamic Media
+## Live demo over dynamische media
 
-[![ AEM Assets Dynamic Media levende demo ](./assets/overview/live-demo.png) ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+[![ AEM Assets Dynamic Media live demo ](./assets/overview/live-demo.png) ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
 
-Onderzoek de mogelijkheden van Adobe Dynamic Media met onze [**Levende Demo** ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), waar de meest geavanceerde oplossingen aan het leven komen. Leer hoe [**Dynamische Assets** ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/dynamic-assets.html) werkschema&#39;s stroomlijnt en inhoudsbeheer opheft, en [**Interactieve Ervaringen** ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/interactive-experiences.html) ontdekt die publiek over elk kanaal fascineren. [ zie hoe Dynamic Media uw inhoudsstrategie ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) kan transformeren!
+Verken de mogelijkheden van de Dynamische Media van Adobe met onze [**Levende Demo** ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), waar de meest geavanceerde oplossingen aan het leven komen. Leer hoe [**Dynamische Assets** ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/dynamic-assets.html) werkschema&#39;s stroomlijnt en inhoudsbeheer opheft, en [**Interactieve Ervaringen** ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/interactive-experiences.html) ontdekt die publiek over elk kanaal fascineren. [ zie hoe de Dynamische Media uw inhoudsstrategie ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) kunnen omzetten.
 
-## Dynamic Media-overzicht
+## Dynamisch mediaoverzicht
 
 >[!VIDEO](https://video.tv.adobe.com/v/27144?quality=12&learn=on)
 
 >[!NOTE]
 >
->De hier getoonde functionaliteit is beschikbaar met Dynamic Media DMS7 loopwijze, onze momenteel gesteunde looppas wijze, niet noodzakelijk DMHybrid looppas wijze, die DMS7 heeft vervangen.
+>De functionaliteit die hier wordt getoond is beschikbaar met Dynamische Media DMS7 loopwijze, onze momenteel gesteunde looppas wijze, niet noodzakelijk DMHybrid looppas wijze, die DMS7 heeft vervangen.
 
-In deze video wordt beschreven hoe media-inhoud wordt beheerd en geopend met Adobe Experience Manager Dynamic Media als een service voor inhoud. Dynamic Media werkt op basis van één methodiek voor basiselementen, waarbij u een afbeeldingselement of video-element uploadt waarvoor u een verzoek kunt indienen om te voldoen aan een onbeperkt aantal benodigde verbruiksvariaties of afgeleide uitvoeringen. Inbegrepen:
+In deze video wordt beschreven hoe media-inhoud wordt beheerd en geopend met behulp van Adobe Experience Manager Dynamic Media als een service voor inhoud. Dynamic Media werkt op basis van één methodiek voor Master Asset, waarbij u een afbeeldingselement of video-element uploadt die kan worden aangevraagd om te voldoen aan een onbeperkt aantal benodigde verbruiksvariaties of afgeleide uitvoeringen. Inbegrepen:
 
 * Single Master-element naar URL-product leverbaar, uitgelegd
 * Opties voor afbeeldingsverwerking
@@ -48,7 +48,7 @@ In deze video wordt beschreven hoe media-inhoud wordt beheerd en geopend met Ado
 
 >[!NOTE]
 >
->De hier getoonde functionaliteit is beschikbaar met Dynamic Media DMS7 loopwijze, onze momenteel gesteunde looppas wijze, niet noodzakelijk DMHybrid looppas wijze, die DMS7 heeft vervangen. Deze videoverwijzingsconcepten die in Deel 1 video (het Overzicht van Dynamic Media) worden beschreven.
+>De functionaliteit die hier wordt getoond is beschikbaar met Dynamische Media DMS7 loopwijze, onze momenteel gesteunde looppas wijze, niet noodzakelijk DMHybrid looppas wijze, die DMS7 heeft vervangen. Deze videoverwijzingsconcepten die in Deel 1 video (Dynamisch Overzicht van Media) worden beschreven.
 
 In deze video wordt beschreven hoe media-inhoud wordt beheerd in Adobe Experience Manager Dynamic Media en eenvoudig kan worden gebruikt in AEM Sites, met een component, voor eenvoudige en automatisch bijgesneden optimalisatie op basis van responsieve paginabreedte. Maak eenvoudig een interactieve afbeeldingsbanner en genereer een kopie-URL die u kunt gebruiken in een systeem voor inhoudsbeheer.
 
@@ -62,7 +62,7 @@ In deze video wordt beschreven hoe media-inhoud wordt beheerd in Adobe Experienc
 
 >[!NOTE]
 >
->De hier getoonde functionaliteit is beschikbaar met Dynamic Media DMS7 loopwijze, onze momenteel gesteunde looppas wijze, niet noodzakelijk DMHybrid looppas wijze, die DMS7 heeft vervangen. Deze videoverwijzingsconcepten die in Deel 1 video (het Overzicht van Dynamic Media) worden beschreven.
+>De functionaliteit die hier wordt getoond is beschikbaar met Dynamische Media DMS7 loopwijze, onze momenteel gesteunde looppas wijze, niet noodzakelijk DMHybrid looppas wijze, die DMS7 heeft vervangen. Deze videoverwijzingsconcepten die in Deel 1 video (Dynamisch Overzicht van Media) worden beschreven.
 
 In deze video wordt het eenvoudige proces beschreven voor het maken van een collectie media-elementen in een gemengde mediascherm, zoals een reeks scènes, video en verzameling van productafbeeldingen. Voeg inhoud toe aan de gemengde mediaset en maak een aangepaste viewer waaruit u kunt kiezen in de uiteindelijke kopie van de URL of de AEM Sites-component.
 
@@ -86,15 +86,15 @@ In deze video wordt beschreven hoe Voorinstellingen afbeelding worden gemaakt en
 
 >[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
-In deze video wordt beschreven hoe u afbeeldingen kunt vergroten of verkleinen om gebruik te maken van functies van het bronbestand zelf, zoals achtergrondtransparantie, ingebouwde uitknippaden en uitsnijdpaden en tekst als variabelen, met de URL-modifiers van Dynamic Media.
+In deze video wordt beschreven hoe u afbeeldingen kunt vergroten of verkleinen om gebruik te maken van functies van het bronbestand zelf, zoals achtergrondtransparantie, ingebouwde uitknippaden en uitsnijdpaden en tekst als variabelen, met de URL-opties van Dynamic Media.
 
-* URL-wijzigingstoetsen gebruiken in het veld Dynamic Media Modifier
+* URL-wijzigingstoetsen gebruiken in het veld Dynamische mediawijziging
 * Achtergrondkleur wijzigen voor afbeeldingen met transparantie
 * Uitknippen naar een afbeeldingspad
 * Uitsnijden naar een afbeeldingspad
 * Een tekstsjabloon maken van een Photoshop-bestand
 
-## Bestandsgroottebeheer JPEG
+## JPEG-bestandsgroottebeheer
 
 >[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
@@ -103,13 +103,13 @@ In deze video wordt beschreven hoe u afbeeldingen kunt vergroten of verkleinen o
 >
 >De kwaliteit van de afbeelding wordt gemeten in percentages van omgekeerde compressie, waarbij de kwaliteit van 100% het minst wordt gecomprimeerd, wat resulteert in afbeeldingen van hoge kwaliteit maar relatief grote bestanden. JPEG-compressie is een compressieschema met verlies waarbij compressie-instellingen de afbeeldingskwaliteit en de bestandsgrootte bepalen.
 
-Vergelijk de kwaliteit van de JPEG-afbeelding met de resulterende bestandsgrootte (in kilobytes) om de snelheid van het laden van de pagina te verhogen met behulp van twee opdrachten om de instellingen voor JPEG-compressie aan te passen. QLT definieert de afbeeldingskwaliteit door de kwaliteitsinstellingen voor JPEG-compressie aan te passen. Met de opdracht Grootte JPEG kunt u aangeven welke bestandsgrootte moet worden bereikt met compressie.
+Vergelijk de kwaliteit van de JPEG-afbeelding met de resulterende bestandsgrootte (in kilobytes) om de snelheid van het laden van de pagina te verhogen met behulp van twee opdrachten om de instellingen voor JPEG-compressie aan te passen. QLT definieert de afbeeldingskwaliteit door de kwaliteitsinstellingen voor JPEG-compressie aan te passen. Met de opdracht JPEG Size kunt u aangeven welke bestandsgrootte moet worden bereikt met compressie.
 
 ## Ondertiteling
 
 >[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
-U kunt eenvoudig Closed Captioning toevoegen aan Dynamic Media-video door de URL van Kopiëren toe te voegen om te wijzen naar een extra Closed Captioning-bestandsdocument, een secundair bestand web.VTT dat de CC-informatie voor elke video bevat.
+U kunt eenvoudig Closed Captioning toevoegen aan dynamische media-video door de URL van Kopiëren toe te voegen om te wijzen naar een extra Closed Captioning-bestandsdocument, een secundair bestand web.VTT dat de CC-informatie voor elke video bevat.
 
 ## Afbeelding verscherpen
 

@@ -1,7 +1,7 @@
 ---
 title: Asset Templates gebruiken met AEM Assets en InDesign Server
-description: Met AEM Assets Template kunnen marketers digitale middelen maken, beheren en leveren voor digitale doeleinden en afdrukken. Het maken van markeringsbrochures, visitekaartjes, vliegers, advertenties en postkaarten is veel gemakkelijker met Assets Templates wanneer deze zijn geïntegreerd met de server van het InDesign.
-version: 6.4, 6.5
+description: Met AEM Assets Template kunnen marketers digitale middelen maken, beheren en leveren voor digitale doeleinden en afdrukken. Het maken van markeringsbrochures, visitekaartjes, vliegers, advertenties en postkaarten is veel eenvoudiger met Assets Templates wanneer deze zijn geïntegreerd met de InDesign-server.
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 feature: Templates
 role: User
@@ -11,7 +11,7 @@ thumbnail: 25170.jpg
 doc-type: Feature Video
 exl-id: 45e0f3d5-db56-44e7-ad68-4d60991a6d77
 duration: 737
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # Asset Templates gebruiken met AEM Assets en InDesign Server{#using-asset-templates-with-aem-assets-and-indesign-server}
 
-Met AEM Assets Template kunnen marketers digitale middelen maken, beheren en leveren voor digitale doeleinden en afdrukken. Het maken van markeringsbrochures, visitekaartjes, vliegers, advertenties en postkaarten is veel gemakkelijker met Assets Templates wanneer deze zijn geïntegreerd met de server van het InDesign.
+Met AEM Assets Template kunnen marketers digitale middelen maken, beheren en leveren voor digitale doeleinden en afdrukken. Het maken van markeringsbrochures, visitekaartjes, vliegers, advertenties en postkaarten is veel eenvoudiger met Assets Templates wanneer deze zijn geïntegreerd met de InDesign-server.
 
 >[!NOTE]
 >
->Voor stappen bij het vormen van InDesign Server gelieve te herzien {de Malplaatjes van Assets van 0} opstelling met InDesign Server ](asset-templates-technical-video-setup.md).[
+>Voor stappen bij het vormen van InDesign Server gelieve te herzien [ de Malplaatjes van Assets van de Opstelling met InDesign Server ](asset-templates-technical-video-setup.md).
 
 ## Overzicht {#overview}
 

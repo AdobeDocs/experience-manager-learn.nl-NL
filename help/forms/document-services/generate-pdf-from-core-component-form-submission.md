@@ -1,7 +1,7 @@
 ---
 title: PDF genereren met gegevens uit het op kerncomponenten gebaseerde adaptieve formulier
 description: Gegevens uit op kerncomponenten gebaseerde formulierverzending samenvoegen met XDP-sjabloon in workflow
-version: 6.5
+version: Experience Manager 6.5
 feature: Forms Service
 topic: Development
 role: Developer
@@ -10,18 +10,18 @@ jira: KT-15025
 last-substantial-update: 2024-02-26T00:00:00Z
 exl-id: cae160f2-21a5-409c-942d-53061451b249
 duration: 97
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
-# PDF genereren met gegevens uit de op kerncomponenten gebaseerde formulierverzending
+# PDF genereren met gegevens uit de basiscomponentgebaseerde formulierverzending
 
 Hier is de herziene tekst met &quot;Core Components&quot; met hoofdletters:
 
-Een typisch scenario is het genereren van een PDF op basis van gegevens die zijn ingediend via een adaptief formulier op basis van kerncomponenten. Deze gegevens hebben altijd de JSON-indeling. Als u een PDF wilt genereren met de API voor het renderen van de PDF, is het nodig dat u de JSON-gegevens omzet in XML-indeling. De `toString` -methode van `org.json.XML` wordt gebruikt voor deze conversie. Voor meer details, verwijs naar de [ documentatie van `org.json.XML.toString` methode ](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-).
+Een typisch scenario is dat een PDF wordt gegenereerd op basis van gegevens die zijn ingediend via een adaptief formulier op basis van kerncomponenten. Deze gegevens hebben altijd de JSON-indeling. Als u een PDF wilt genereren met de Render PDF API, moet u de JSON-gegevens converteren naar XML-indeling. De `toString` -methode van `org.json.XML` wordt gebruikt voor deze conversie. Voor meer details, verwijs naar de [ documentatie van `org.json.XML.toString` methode ](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-).
 
 ## Adaptief, op basis van JSON-schema
 
@@ -119,10 +119,10 @@ Als u formulierverzendingen wilt verwerken, maakt u een workflow die twee stappe
 
 Voer de volgende gestroomlijnde stappen uit om dit op uw lokale server te testen:
 
-1. [ Download en installeer de douanebundel via de AEM OSGi Webconsole ](assets/convertJsonToXML.core-1.0.0-SNAPSHOT.jar).
+1. [ Download en installeer de douanebundel via de het Webconsole van AEM OSGi ](assets/convertJsonToXML.core-1.0.0-SNAPSHOT.jar).
 1. [ voer het werkschemapakket ](assets/workflow_to_render_pdf.zip) in.
 1. [ voer de steekproef Aangepaste Vorm en het malplaatje XDP ](assets/adaptive_form_and_xdp_template.zip) in.
 1. [ Voorproef de Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/f23/jcr:content?wcmmode=disabled).
 1. Vul een aantal formuliervelden in.
-1. Verzend het formulier om de AEM te starten.
+1. Verzend het formulier om de AEM-workflow te starten.
 1. Zoek de gerenderde PDF in de payload-map van de workflow.

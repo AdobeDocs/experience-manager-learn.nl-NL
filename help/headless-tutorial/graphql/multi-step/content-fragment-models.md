@@ -1,7 +1,7 @@
 ---
-title: Modellen voor inhoudsfragmenten definiëren - Aan de slag met AEM headless - GraphQL
-description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Leer hoe u inhoud modelleert en een schema samenstelt met Content Fragment Models in AEM. Beoordeel bestaande modellen en maak een model. Leer over de verschillende gegevenstypes die kunnen worden gebruikt om een schema te bepalen.
-version: Cloud Service
+title: Modellen voor inhoudsfragmenten definiëren - Aan de slag met AEM Headless - GraphQL
+description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Leer hoe u inhoud modelleert en een schema bouwt met Content Fragment Models in AEM. Beoordeel bestaande modellen en maak een model. Leer over de verschillende gegevenstypes die kunnen worden gebruikt om een schema te bepalen.
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 jira: KT-6712
 thumbnail: 22452.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
 duration: 228
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1110'
 ht-degree: 0%
@@ -28,7 +28,7 @@ U kunt ook uw eigen model maken aan de hand van de basisstappen en de respectiev
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelig leerprogramma en het wordt verondersteld dat een [ AEM auteursmilieu ](./overview.md#prerequisites) beschikbaar is.
+Dit is een meerdelig leerprogramma en het wordt verondersteld dat een [ het auteursmilieu van AEM ](./overview.md#prerequisites) beschikbaar is.
 
 ## Doelstellingen {#objectives}
 
@@ -40,8 +40,8 @@ Dit is een meerdelig leerprogramma en het wordt verondersteld dat een [ AEM aute
 
 Een projectconfiguratie bevat alle modellen van het Fragment van de Inhoud verbonden aan een bepaald project en verstrekt een middel om modellen te organiseren. Minstens één project moet worden gecreeerd **alvorens** het creëren van het Model van het Fragment van de Inhoud.
 
-1. Login aan het AEM **milieu van de Auteur** (zoals `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
-1. Van het AEM scherm van het Begin, navigeer aan **Hulpmiddelen** > **Algemeen** > **Browser van de Configuratie**.
+1. Login aan het milieu van de Auteur van AEM **** (zoals `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
+1. Van het scherm van het Begin van AEM, navigeer aan **Hulpmiddelen** > **Algemeen** > **Browser van de Configuratie**.
 
    ![ ga aan Browser van de Configuratie ](assets/content-fragment-models/navigate-config-browser.png)
 1. Klik **creëren**, in de hoger-juiste hoek
@@ -62,7 +62,7 @@ Daarna, creeer twee modellen voor a **Team** en a **Persoon**.
 
 Creeer een model voor a **Persoon**, dat het gegevensmodel is dat een persoon vertegenwoordigt die deel van een team uitmaakt.
 
-1. Van het AEM scherm van het Begin, navigeer aan **Hulpmiddelen** > **Algemeen** > **Modellen van het Fragment van de Inhoud**.
+1. Van het scherm van het Begin van AEM, navigeer aan **Hulpmiddelen** > **Algemeen** > **Modellen van het Fragment van de Inhoud**.
 
    ![ ga aan de Modellen van het Fragment van de Inhoud ](assets/content-fragment-models/navigate-cf-models.png)
 
@@ -163,23 +163,23 @@ Creeer een model voor a **Team**, dat het gegevensmodel voor een team van mensen
 
    ![ Twee Modellen ](assets/content-fragment-models/two-new-models.png)
 
-## Publish-modellen voor projectconfiguratie en inhoudsfragmenten
+## Projectconfiguratie en modellen voor inhoudsfragmenten publiceren
 
 Publiceer na revisie en verificatie de `Project Configuration` &amp; `Content Fragment Model`
 
-1. Van het AEM scherm van het Begin, navigeer aan **Hulpmiddelen** > **Algemeen** > **Browser van de Configuratie**.
+1. Van het scherm van het Begin van AEM, navigeer aan **Hulpmiddelen** > **Algemeen** > **Browser van de Configuratie**.
 
-1. Tik checkbox naast **Mijn Project** en tik **Publish**
+1. Tik checkbox naast **Mijn Project** en de Tik **publiceren**
 
-   ![ Config van het Project van Publish ](assets/content-fragment-models/publish-project-config.png)
+   ![ publiceer Project Config ](assets/content-fragment-models/publish-project-config.png)
 
-1. Van het AEM scherm van het Begin, navigeer aan **Hulpmiddelen** > **Algemeen** > **Modellen van het Fragment van de Inhoud**.
+1. Van het scherm van het Begin van AEM, navigeer aan **Hulpmiddelen** > **Algemeen** > **Modellen van het Fragment van de Inhoud**.
 
 1. Navigeer in de **Mijn omslag van het Project**.
 
-1. Tik **Persoon** en **Team** modellen en tik **Publish**
+1. Tik **Persoon** en **Team** modellen en tik **publiceren**
 
-   ![ Modellen van het Fragment van de Inhoud van Publish ](assets/content-fragment-models/publish-content-fragment-model.png)
+   ![ publiceer de Modellen van het Fragment van de Inhoud ](assets/content-fragment-models/publish-content-fragment-model.png)
 
 ## Gefeliciteerd! {#congratulations}
 

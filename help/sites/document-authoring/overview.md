@@ -1,7 +1,7 @@
 ---
 title: Documenten maken, video's
-description: Leer hoe u het ontwerpen van documenten in AEM instelt en configureert.
-version: Cloud Service
+description: Leer hoe u in AEM documentauthoring kunt instellen en configureren.
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User
@@ -11,7 +11,7 @@ doc-type: Catalog
 duration: 40
 last-substantial-update: 2023-12-01T00:00:00Z
 exl-id: 172a477f-d277-43c1-8e47-68870b02203c
-source-git-commit: 6a22f523c5cf997a59a5b8579c168b641c009b20
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Documenten maken, video&#39;s
 
-Begrijp hoe te om document auteursrecht te vormen die AEM auteurs toestaan om documenten uit te geven en te publiceren gebruikend Microsoft Word of de Dokken van Google.
+Begrijp hoe te om document auteursrecht te vormen die auteurs van AEM toestaan om documenten uit te geven en te publiceren gebruikend Microsoft Word of Google Docs.
 
 Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html) voor volledige details van vestiging document creatie.
 
@@ -580,11 +580,11 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/using-dynamic-media.md" title="Dynamic Media"
+            <a href="./how-to/using-dynamic-media.md" title="Dynamische media"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3429593/?format=jpeg"
-                alt="Dynamic Media">
+                alt="Dynamische media">
             </a>
           </figure>
         </div>
@@ -593,9 +593,9 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/using-dynamic-media.md" title="Dynamic Media"> Dynamic Media </a>
+              <a href="./how-to/using-dynamic-media.md" title="Dynamische media"> Dynamische Media </a>
             </p>
-            <p class="is-size-6">Ontdek hoe u Dynamic Media kunt gebruiken voor geoptimaliseerde afbeeldingslevering.</p>
+            <p class="is-size-6">Ontdek hoe u Dynamic Media kunt gebruiken voor optimale beeldlevering.</p>
             <a href="./how-to/using-dynamic-media.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -627,7 +627,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/migration-using-importer.md" title="Sitemigratie met Importer"> migratie van de Plaats gebruikend Importeur </a>
             </p>
-            <p class="is-size-6">Ontdek hoe u sites kunt migreren naar Edge Delivery Services met AEM gereedschap Importeren.</p>
+            <p class="is-size-6">Ontdek hoe u sites kunt migreren naar Edge Delivery Services met het gereedschap AEM Importer.</p>
             <a href="./how-to/migration-using-importer.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -659,7 +659,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/customizing-importer.md" title="De importmodule aanpassen"> het Aanpassen van de Importeur </a>
             </p>
-            <p class="is-size-6">Ontdek hoe u het gereedschap AEM importmodule kunt aanpassen voor sitemigratie.</p>
+            <p class="is-size-6">Ontdek hoe u het AEM Importer-gereedschap kunt aanpassen voor sitemigratie.</p>
             <a href="./how-to/customizing-importer.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -691,7 +691,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/bulk-importing-using-importer.md" title="Bulk importeren met behulp van importmodule"> Bulk die het gebruiken van de Importeur </a> invoert
             </p>
-            <p class="is-size-6">Ontdek hoe u bij het migreren van sites webpagina's voor grote hoeveelheden kunt importeren met het gereedschap AEM importmodule.</p>
+            <p class="is-size-6">Ontdek hoe u bij het migreren van sites een grote hoeveelheid webpagina's kunt importeren met het gereedschap AEM Importer.</p>
             <a href="./how-to/bulk-importing-using-importer.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -760,7 +760,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/generate-variations/configure-sidekick.md" title="Variaties genereren - Sidekick configureren"> produceer Variaties - vorm Sidekick </a>
             </p>
-            <p class="is-size-6">Onderzoek hoe te om hulp te vormen voor Generate Variaties in het document van Edge Delivery Services creatie.</p>
+            <p class="is-size-6">Ontdek hoe u sidekick kunt configureren voor het genereren van variaties in Edge Delivery Services-documentontwerp.</p>
             <a href="./how-to/generate-variations/configure-sidekick.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -950,9 +950,9 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Variaties genereren - Adobe Firefly gebruiken"> produceer Variaties - de Adobe Firefly van het Gebruik </a>
+              <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Variaties genereren - Adobe Firefly gebruiken"> produceer Variaties - Gebruik Adobe Firefly </a>
             </p>
-            <p class="is-size-6">Onderzoek hoe te om Adobe Firefly te gebruiken om beelden tot stand te brengen die in de inhoudvariaties worden gebruikt.</p>
+            <p class="is-size-6">Ontdek hoe u Adobe Firefly kunt gebruiken om afbeeldingen te maken die worden gebruikt in de verschillende inhoud.</p>
             <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -1016,7 +1016,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/generate-variations/trust-privacy.md" title="Variaties genereren - Vertrouwen en privacy"> produceer Variaties - Vertrouwen en Privacy </a>
             </p>
-            <p class="is-size-6">Het onderzoeken hoe de Adobe vertrouwen en privacy voor produceert Variaties behandelt.</p>
+            <p class="is-size-6">Ontdek hoe Adobe omgaat met vertrouwen en privacy bij het genereren van variaties.</p>
             <a href="./how-to/generate-variations/trust-privacy.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -1080,7 +1080,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/setup-experimentation-framework.md" title="Vaststelling van een kader voor experimenten"> het kader van de experimentatie van de Opstelling </a>
             </p>
-            <p class="is-size-6">Ontdek hoe u het kader voor experimenten kunt instellen bij het ontwerpen van documenten in Edge Delivery Services.</p>
+            <p class="is-size-6">Ontdek hoe u het kader voor experimenten kunt instellen in Edge Delivery Services-documentontwerp.</p>
             <a href="./how-to/setup-experimentation-framework.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">

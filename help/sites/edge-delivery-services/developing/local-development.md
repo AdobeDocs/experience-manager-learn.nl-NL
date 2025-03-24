@@ -1,7 +1,7 @@
 ---
 title: Een lokale ontwikkelomgeving instellen voor Edge Delivery Services
-description: Hoe te opstelling een lokale ontwikkelomgeving voor Edge Delivery Services.
-version: 6.5, Cloud Service
+description: Een lokale ontwikkelomgeving instellen voor Edge Delivery Services.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-14483
 thumbnail: 3425717.jpeg
 duration: 169
 exl-id: 0f3e50f0-88d8-46be-be8b-0f547c3633a6
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 0%
@@ -21,14 +21,14 @@ ht-degree: 0%
 
 # Een lokale ontwikkelomgeving instellen
 
-Hoe te om een lokale ontwikkelomgeving voor ontwikkeling voor Edge Delivery Services te vestigen.
+Een lokale ontwikkelomgeving instellen voor ontwikkeling voor Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425717/?learn=on)
 
 
 ## Stappen die in video worden beschreven
 
-1. De AEM CLI installeren
+1. AEM CLI installeren
 
    ```
    $ sudo npm install -g @adobe/aem-cli
@@ -41,7 +41,7 @@ Hoe te om een lokale ontwikkelomgeving voor ontwikkeling voor Edge Delivery Serv
    $ cd my-project
    ```
 
-1. Voer de AEM CLI uit om de lokale AEM te starten.
+1. Voer de AEM CLI uit om de lokale AEM-instantie te starten.
 
    ```
    $ pwd
@@ -60,4 +60,4 @@ Hoe te om een lokale ontwikkelomgeving voor ontwikkeling voor Edge Delivery Serv
    opening default browser: http://localhost:3000/
    ```
 
-1. Open http://localhost:3000/ uw webbrowser om uw AEM website te bekijken.
+1. Open http://localhost:3000/ uw webbrowser om uw AEM-website te bekijken.

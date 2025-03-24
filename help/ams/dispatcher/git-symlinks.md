@@ -1,7 +1,7 @@
 ---
 title: Symlinks correct toevoegen aan GIT
 description: Instructies over hoe en waar u symlinks wilt toevoegen wanneer u werkt aan uw Dispatcher-configuraties.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 6e751586-e92e-482d-83ce-6fcae4c1102c
 duration: 295
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1231'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Nadat u het eerste `.vhost` -bestand of het bovenste `farm.any` -bestand hebt ge
 
 ## Dispatcher Archetype
 
-De AEM ontwikkelaar begint typisch hun project van [ AEM archetype ](https://github.com/adobe/aem-project-archetype)
+De ontwikkelaar van AEM begint typisch hun project van [ AEM archetype ](https://github.com/adobe/aem-project-archetype)
 
 Hier volgt een voorbeeld van het gebied van de broncode waar u de gebruikte symlinks kunt zien:
 
@@ -176,7 +176,7 @@ Het gebrek is waar, behalve `git-clone[1]` of `git-init[1] will probe and set co
 
 Het gedrag van Git op Vensters wordt duidelijk hier: Symbolische Verbindingen ・ git-for-windows/git Wiki ・ GitHub
 
-> `Info`: De veronderstellingen die in de documentatie verbonden hierboven worden vermeld lijken O.K. met een mogelijke opstelling van AEM Ontwikkelaar op Vensters, met name NTFS en het feit dat wij slechts dossiersymlinks vs. de symlinks van de Folder hebben
+> `Info`: De veronderstellingen die worden vermeld in de documentatie verbonden hierboven lijken o.k. met een mogelijke opstelling van de Ontwikkelaar van AEM op Vensters, met name NTFS en het feit dat wij slechts dossiersymlinks vs. de symlinks van de Folder hebben
 
 Hier is het goede nieuws, aangezien [ Git voor versie 2.10.2 van Vensters ](https://github.com/git-for-windows/git/releases/tag/v2.10.2.windows.1) de installateur een [ expliciete optie heeft om symbolische verbindingssteun toe te laten.](https://github.com/git-for-windows/git/issues/921)
 
@@ -228,7 +228,7 @@ MSYS=winsymlinks:nativestrict ln -s test_vhost_symlink ../dispatcher/src/conf.d/
 
 #### Samenvatting
 
-Als u de symlinks voor de verwerking van de it correct wilt hebben (ten minste voor het bereik van de huidige AEM Dispatcher Configuration-basislijn) op een Microsoft Windows-besturingssysteem, hebt u het volgende nodig:
+Voor een correcte verwerking van de Git (minstens voor het werkingsgebied van de huidige de configuratiebasislijn van AEM dispatcher) op Microsoft Windows OS, zult u nodig hebben:
 
 | Item | Minimale versie / configuratie | Aanbevolen versie / configuratie |
 |------|---------------------------------|-------------------------------------|

@@ -1,30 +1,30 @@
 ---
-title: Panorama en Vertical Image Viewer gebruiken met AEM Assets Dynamic Media
-description: De Dynamic Media Viewer-verbeteringen in AEM 6.4 omvatten de toevoeging van Panorama Image Viewer, Panoramische Virtual Reality Image Viewer en Vertical Image Viewer. Panoramische Viewer biedt een eenvoudige manier om een boeiende, meeslepende ervaring met de ruimte, eigenschap, locatie of landschap te bieden, zonder dat er aangepaste ontwikkeling nodig is.
+title: Panorama en Verticale afbeeldingsviewer gebruiken met AEM Assets Dynamic Media
+description: Dynamische media Viewer-verbeteringen in AEM 6.4 zijn onder andere de toevoeging van Panoramische Image Viewer, Panoramische Virtual Reality Image Viewer en Vertical Image Viewer. Panoramische Viewer biedt een eenvoudige manier om een boeiende, meeslepende ervaring met de ruimte, eigenschap, locatie of landschap te bieden, zonder dat er aangepaste ontwikkeling nodig is.
 feature: Video Profiles, Video Profiles, 360 VR Video
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 6b2f7533-8ce0-4134-b1ae-b3c5d15a05e6
 duration: 535
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 0%
 
 ---
 
-# Panorama en Vertical Image Viewer gebruiken met AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
+# Panorama en Verticale afbeeldingsviewer gebruiken met AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
 
-De Dynamic Media Viewer-verbeteringen in AEM 6.4 omvatten de toevoeging van Panorama Image Viewer, Panoramische Virtual Reality Image Viewer en Vertical Image Viewer. Panoramische Viewer biedt een eenvoudige manier om een boeiende, meeslepende ervaring met de ruimte, eigenschap, locatie of landschap te bieden, zonder dat er aangepaste ontwikkeling nodig is.
+Dynamische media Viewer-verbeteringen in AEM 6.4 zijn onder andere de toevoeging van Panoramische Image Viewer, Panoramische Virtual Reality Image Viewer en Vertical Image Viewer. Panoramische Viewer biedt een eenvoudige manier om een boeiende, meeslepende ervaring met de ruimte, eigenschap, locatie of landschap te bieden, zonder dat er aangepaste ontwikkeling nodig is.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24156?quality=12&learn=on)
 
 >[!NOTE]
 >
->De video veronderstelt dat uw AEM instantie op Dynamic Media S7 wijze loopt. [ de Instructies bij vestiging AEM met Dynamic Media kunnen hier worden gevonden.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>Video gaat ervan uit dat uw AEM-instantie wordt uitgevoerd in de Dynamic Media S7-modus. [ de Instructies bij vestiging AEM met Dynamische Media kunnen hier worden gevonden.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## Panoramische en panoramische VR-viewer
 
@@ -48,9 +48,9 @@ Bij horizontale stalen zijn de stalen soms pas zichtbaar wanneer de gebruiker de
    <td>Verticale afbeeldingsviewer</td>
   </tr>
   <tr>
-   <td>Dynamic Media Run-modus</td>
-   <td>Alleen Dynamic Media Scene7-modus</td>
-   <td>DMS7 en Dynamic Media</td>
+   <td>Dynamische modus voor mediatoets</td>
+   <td>Alleen dynamische Media Scene7-modus</td>
+   <td>DMS7 en dynamische media</td>
   </tr>
   <tr>
    <td>Hoofdletters gebruiken</td>
@@ -65,9 +65,9 @@ Bij horizontale stalen zijn de stalen soms pas zichtbaar wanneer de gebruiker de
  </tbody>
 </table>
 
-[ het Vormen Dynamic Media op de wijze van Scene7 ](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[ Vormend Dynamische Media op wijze Scene7 ](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
 
-[ het Vormen Dynamic Media op Hybride wijze ](https://helpx.adobe.com/nl/experience-manager/6-5/assets/using/config-dynamic.html)
+[ Vormend Dynamische Media op Hybride wijze ](https://helpx.adobe.com/nl/experience-manager/6-5/assets/using/config-dynamic.html)
 
 >[!NOTE]
 >

@@ -3,7 +3,7 @@ title: HTML5 Forms maken
 description: HTML5-formulieren maken en configureren
 feature: Mobile Forms
 doc-type: article
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-4419
 thumbnail: kt-4419.jpg
 topic: Development
@@ -12,7 +12,7 @@ level: Beginner
 exl-id: 67a01c41-d284-4518-adb5-21702e22ccfa
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 101
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -36,12 +36,12 @@ Controleer of je een werkende versie van AEM Forms hebt. Gelieve te volgen de [ 
 
 ## Voorvertonen als HTML
 
-De xdp kan worden voorvertoond in de indeling HTML5 of PDF. Voer de volgende stappen uit om een voorvertoning van de xdp in HTML5-indeling te bekijken.
+U kunt een voorvertoning van de xdp weergeven in de HTML5-indeling of in de PDF-indeling. Ga als volgt te werk om een voorvertoning van het xdp-bestand in HTML5-indeling weer te geven
 
 * Tik op onlangs geupload xdp en klik _Voorproef -> Voorproef als HTML_. De xdp wordt weergegeven als HTML5
 
 >[!NOTE]
->Wanneer u _Voorproef als PDF_ optie selecteert zal de teruggegeven PDF niet in browser worden getoond omdat AEM Forms dynamische pdf&#39;s teruggeeft die de stop van Acrobat vereisen.U zult de PDF moeten downloaden en het openen gebruikend Adobe Acrobat/Reader om te bekijken
+>Wanneer u _Voorproef als PDF_ optie selecteert zal teruggegeven PDF niet in browser worden getoond omdat AEM Forms dynamische pdf&#39;s teruggeeft die de stop van Acrobat vereisen.U zult PDF moeten downloaden en het openen gebruikend Adobe Acrobat/Reader om te bekijken
 
 
 ## Voorvertonen met gegevens
@@ -57,6 +57,6 @@ Met de geavanceerde eigenschappen van de xdp-sjabloon kunt u de publicatiedatum 
 
 **legt URL** voor - dit is URL die uw HTML5 vormvoorlegging zal behandelen. In de volgende les zullen we dit behandelen. Als hier geen verzendURL is opgegeven, wordt de standaardverzendhandler aangeroepen die de formuliergegevens retourneert naar de browser.
 
-**HTML geeft Profiel** terug - de vormen van HTML5 hebben het begrip van Profielen die als Eindpunten van REST worden blootgesteld om Mobiele Rendering van de Malplaatjes van de Vorm toe te laten. De meeste keren dat het standaardrenderprofiel voldoende is om het formulier te genereren. Als het gebrek teruggeeft profiel niet aan uw behoeften voldoet, kan het a [ douaneprofiel ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/custom-profile.html) worden gecreeerd en met de vorm worden geassocieerd.
+**HTML geeft Profiel** terug - de vormen HTML5 hebben het begrip van Profielen die als Eindpunten van REST worden blootgesteld om Mobiele Rendering van de Malplaatjes van de Vorm toe te laten. De meeste keren dat het standaardrenderprofiel voldoende is om het formulier te genereren. Als het gebrek teruggeeft profiel niet aan uw behoeften voldoet, kan het a [ douaneprofiel ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/custom-profile.html) worden gecreeerd en met de vorm worden geassocieerd.
 
 **de Vooraf ingevulde Dienst** - de Prefill dienst wordt typisch gebruikt om uw vorm met gegevens te bevolken die van een achterste gegevensbron worden gehaald.

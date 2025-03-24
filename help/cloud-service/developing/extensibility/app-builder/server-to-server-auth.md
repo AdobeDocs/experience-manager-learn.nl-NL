@@ -2,7 +2,7 @@
 title: Toegangstoken server-naar-server genereren in App Builder-actie
 description: Leer hoe te om een toegangstoken te produceren door Server-aan-Server geloofsbrieven OAuth voor gebruik in een actie van App Builder te gebruiken.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ jira: KT-14724
 last-substantial-update: 2024-02-29T00:00:00Z
 duration: 122
 exl-id: 919cb9de-68f8-4380-940a-17274183298f
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 # Toegangstoken server-naar-server genereren in App Builder-actie
 
-De acties van App Builder kunnen met Adobe APIs moeten in wisselwerking staan die **Server-aan-Server geloofsbrieven** steunen en met de projecten van Adobe Developer Console verbonden zijn App Builder app wordt opgesteld.
+De acties van App Builder kunnen met Adobe APIs moeten in wisselwerking staan die **OAuth Server-aan-Server geloofsbrieven** steunen en met de projecten van Adobe Developer Console verbonden zijn App Builder app wordt opgesteld.
 
 Deze gids verklaart hoe te om een toegangstoken te produceren door _Server-aan-Server geloofsbrieven_ voor gebruik in een actie van App Builder te gebruiken.
 
 >[!IMPORTANT]
 >
-> De geloofsbrieven van de Rekening van de Dienst (JWT) zijn afgekeurd ten gunste van de geloofsbrieven van de Server-aan-Server OAuth. Nochtans, zijn er nog sommige Adobe APIs die slechts de geloofsbrieven van de Rekening van de Dienst (JWT) en migratie aan OAuth server-aan-Server steunen aan de gang is. Controleer de Adobe API documentatie om te begrijpen welke geloofsbrieven worden gesteund.
+> De geloofsbrieven van de Rekening van de Dienst (JWT) zijn afgekeurd ten gunste van de geloofsbrieven van de Server-aan-Server OAuth. Er zijn echter nog steeds enkele Adobe API&#39;s die alleen JWT-referenties (Service Account) ondersteunen en de migratie naar OAuth Server-to-Server wordt uitgevoerd. Raadpleeg de Adobe API-documentatie om te begrijpen welke referenties worden ondersteund.
 
 ## Adobe Developer Console-projectconfiguraties
 
@@ -87,9 +87,9 @@ De sleutels die onder `inputs` worden gedefinieerd, zijn beschikbaar voor het `p
 
 ## OAuth Server-aan-Server geloofsbrieven aan toegangstoken
 
-In de App Builder-actie zijn de OAuth Server-to-Server-referenties beschikbaar in het `params` -object. Gebruikend deze geloofsbrieven kan het toegangstoken worden geproduceerd gebruikend [ OAuth 2.0 bibliotheken ](https://oauth.net/code/). Of u kunt de [ bibliotheek van de Vetch van de Knoop ](https://www.npmjs.com/package/node-fetch) gebruiken om een verzoek van de POST aan het symbolische eindpunt van Adobe te maken IMS om het toegangstoken te krijgen.
+In de App Builder-actie zijn de OAuth Server-to-Server-referenties beschikbaar in het `params` -object. Gebruikend deze geloofsbrieven kan het toegangstoken worden geproduceerd gebruikend [ OAuth 2.0 bibliotheken ](https://oauth.net/code/). Of u kunt de [ bibliotheek van de Vetch van de Knoop ](https://www.npmjs.com/package/node-fetch) gebruiken om een POST- verzoek aan het symbolische eindpunt van Adobe te maken IMS om het toegangstoken te krijgen.
 
-In het volgende voorbeeld wordt getoond hoe u de `node-fetch` -bibliotheek kunt gebruiken om een POST aan te vragen bij het Adobe IMS-tokeneindpunt om het toegangstoken op te halen.
+In het volgende voorbeeld wordt getoond hoe u de `node-fetch` -bibliotheek kunt gebruiken om een POST-aanvraag in te dienen bij het Adobe IMS-tokeneindpunt om het toegangstoken op te halen.
 
 ```javascript
 const fetch = require("node-fetch");

@@ -1,7 +1,7 @@
 ---
 title: SQL-verbindingen met JDBC DataSourcePool
-description: Leer hoe u verbinding maakt met SQL-databases vanuit AEM as a Cloud Service met behulp van AEM JDBC DataSourcePool- en egress-poorten.
-version: Cloud Service
+description: Leer hoe u verbinding maakt met SQL-databases vanuit AEM as a Cloud Service met behulp van AEM JDBC DataSourcePool en egress-poorten.
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9355
 thumbnail: KT-9355.jpeg
 exl-id: c1a26dcb-b2ae-4015-b865-2ce32f4fa869
 duration: 117
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # SQL-verbindingen met JDBC DataSourcePool
 
-Verbindingen met SQL gegevensbestanden (en andere niet-HTTP/HTTPS diensten) moeten uit AEM worden proxied, met inbegrip van die gemaakt gebruikend de AEM dienst DataSourcePool OSGi om de verbindingen te beheren.
+Verbindingen met SQL gegevensbestanden (en andere niet-HTTP/HTTPS diensten) moeten uit AEM worden proxied, met inbegrip van die gemaakt gebruikend de dienst van AEM DataSourcePool OSGi om de verbindingen te beheren.
 
 ## Geavanceerde netwerkondersteuning
 
@@ -60,7 +60,7 @@ $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONME
 
 ## Codevoorbeeld
 
-Dit Java™ codevoorbeeld is van de dienst OSGi die een verbinding met een extern gegevensbestand MySQL via AEM de dienst van DataSourcePool OSGi maakt.
+Dit Java™ codevoorbeeld is van de dienst OSGi die een verbinding met een extern gegevensbestand MySQL via de dienst van AEM DataSourcePool OSGi maakt.
 De DataSourcePool OSGi fabrieksconfiguratie specificeert beurtelings een haven (`30001`) die door de `portForwards` regel in de [ enableEnvironmentAdvancedNetworkingConfiguration ](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) verrichting aan de externe gastheer en haven, `mysql.example.com:3306` in kaart wordt gebracht.
 
 ```json
@@ -134,7 +134,7 @@ public class JdbcExternalServiceImpl implements ExternalService {
 
 ## MySQL-stuurprogramma-afhankelijkheden
 
-AEM as a Cloud Service vereist vaak dat u Java™ databasestuurprogramma&#39;s aanbiedt ter ondersteuning van de verbindingen. De stuurprogramma&#39;s kunt u het beste leveren door de OSGi-bundelartefacten met deze stuurprogramma&#39;s in te sluiten in het AEM project via het `all` -pakket.
+AEM as a Cloud Service vereist vaak dat u Java™ databasestuurprogramma&#39;s aanbiedt ter ondersteuning van de verbindingen. De stuurprogramma&#39;s kunnen het beste worden geleverd door de OSGi-bundelartefacten met deze stuurprogramma&#39;s in te sluiten in het AEM-project via het `all` -pakket.
 
 ### Reactor pom.xml
 

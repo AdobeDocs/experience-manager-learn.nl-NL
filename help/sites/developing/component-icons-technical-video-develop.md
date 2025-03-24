@@ -1,7 +1,7 @@
 ---
 title: Componentpictogrammen aanpassen in Adobe Experience Manager Sites
 description: Met componentpictogrammen kunnen auteurs snel een component met pictogrammen of betekenisvolle afkortingen identificeren. Auteurs kunnen nu de Componenten vinden die nodig zijn om hun webervaringen sneller dan ooit uit te bouwen.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Core Components
 topic: Development
 role: User
@@ -9,7 +9,7 @@ level: Intermediate
 doc-type: Technical Video
 exl-id: 37dc26aa-0773-4749-8c8b-4544bd4d5e5f
 duration: 379
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%
@@ -49,7 +49,7 @@ De afkorting kan via **[worden aangepast cq:Component ]@abbrelayback** bezit. Ho
 
 ### CoralUI-pictogrammen {#coralui-icons}
 
-Pictogrammen van CoralUI, opgegeven door AEM, kunnen worden gebruikt voor componentpictogrammen. Om een pictogram te vormen CoralUI, plaats a **[cq:Component ]@cq:pictogram** bezit aan de gewenste het pictogramkenmerkwaarde van de HTML van het pictogram CoralUI (opgesomd in de [ documentatie CoralUI ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
+CoralUI-pictogrammen, geleverd door AEM, kunnen worden gebruikt voor componentpictogrammen. Om een pictogram CoralUI te vormen, plaats a **[cq:Component ]@cq:pictogram** bezit aan de gewenste het pictogramkenmerkwaarde van HTML van het pictogram CoralUI (die in de [ documentatie CoralUI ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) wordt opgesomd.
 
 ```plain
 /apps/.../components/content/my-component
@@ -74,7 +74,7 @@ De beelden PNG worden geschraapt aan **20px door 20px**. Nochtans om netvliesver
 
 ### SVG-afbeeldingen {#svg-images}
 
-SVG-afbeeldingen (op basis van vectoren) kunnen worden gebruikt voor componentpictogrammen. Om een beeld van SVG als componentenpictogram te vormen, voeg de gewenste SVG als a **niet toe:dossier** genoemd **cq:icon.svg** onder **[cq:Component]**.
+SVG-afbeeldingen (op basis van vectoren) kunnen worden gebruikt voor componentpictogrammen. Om een beeld van SVG als componentenpictogram te vormen, voeg gewenste SVG als a **toe:dossier** genoemd **cq:icon.svg** onder **[cq:Component]**.
 
 De beelden van SVG zouden een achtergrondkleur moeten hebben die aan **wordt geplaatst#707070** en een grootte van **20px door 20px.**
 

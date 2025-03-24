@@ -1,8 +1,8 @@
 ---
-title: Een Asset compute-worker testen
-description: Het project van de Asset compute bepaalt een patroon voor gemakkelijk het creëren van en het uitvoeren van tests van de arbeiders van de Asset compute.
+title: Een Asset Compute-worker testen
+description: Het Asset Compute-project definieert een patroon waarmee eenvoudig tests van Asset Compute-workers kunnen worden gemaakt en uitgevoerd.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6284
 thumbnail: KT-6284.jpg
@@ -11,22 +11,22 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 04992caf-b715-4701-94a8-6257e9bd300c
 duration: 142
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 0%
 
 ---
 
-# Een Asset compute-worker testen
+# Een Asset Compute-worker testen
 
-Het project van de Asset compute bepaalt een patroon voor gemakkelijk het creëren van en het uitvoeren van [ tests van de arbeiders van de Asset compute ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html).
+Het project van Asset Compute bepaalt een patroon voor gemakkelijk het creëren van en het uitvoeren van [ tests van de arbeiders van Asset Compute ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html).
 
 ## Anatomie van een arbeiderstest
 
-De tests van de werknemers van de asset compute worden opgesplitst in testreeksen, en binnen elke testreeks, één of meerdere testgevallen die een voorwaarde aan test bevestigen.
+Asset Compute Workers&#39; tests worden opgedeeld in testreeksen en binnen elke testreeks worden een of meer testcase uitgevoerd waarin een testvoorwaarde wordt bevestigd.
 
-De opzet van de tests in een Asset compute is als volgt:
+De opzet van de tests in een Asset Compute-project is als volgt:
 
 ```
 /actions/<worker-name>/index.js
@@ -78,7 +78,7 @@ Deze testcase stelt de parameterized input (`params.json`) voor het inputdossier
    }
    ```
 
-   Dit zijn de zelfde sleutel/de waarden die in de [ het profieldefinitie van de Asset compute van het Hulpmiddel van de Ontwikkeling ](../develop/development-tool.md) worden overgegaan, minus de `worker` sleutel.
+   Dit zijn de zelfde sleutel/de waarden die in de [ het profieldefinitie van Asset Compute van het Hulpmiddel van de Ontwikkeling ](../develop/development-tool.md) worden overgegaan, minus de `worker` sleutel.
 
 1. Voeg het verwachte [ vertoningsdossier ](./assets/test/success-parameterized/rendition.png) aan dit testgeval toe en noem het `rendition.png`. Dit bestand vertegenwoordigt de verwachte uitvoer van de worker voor de opgegeven invoer `file.jpg` .
 1. Voer vanaf de opdrachtregel de tests van de projectbasis uit door `aio app test` uit te voeren

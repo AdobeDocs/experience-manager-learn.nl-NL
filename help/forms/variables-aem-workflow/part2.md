@@ -1,14 +1,14 @@
 ---
-title: Variabelen in AEM workflow[Deel2]
-description: Variabelen van het type XML, JSON, ArrayList en Document gebruiken in een AEM workflow
-version: 6.5
+title: Variabelen in AEM Workflow[Deel2]
+description: Variabelen van het type XML, JSON, ArrayList en Document gebruiken in een AEM-workflow
+version: Experience Manager 6.5
 topic: Development
 feature: Adaptive Forms, Workflow
 role: Developer
 level: Beginner
 exl-id: e7d3e0be-5194-47c2-a668-ce78e727986e
 duration: 354
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Variabelen van het type JSON in AEM Workflow
 
-Vanaf AEM Forms 6.5 kunnen we nu variabelen van het type JSON in AEM Workflow maken. Gewoonlijk zult u variabelen van type JSON tot stand brengen als u Adaptief Forms op basis van het schema JSON aan een AEMWerkstroom indient of u de resultaten van een de Invoke verrichting van het Model van de Gegevens van het Vorm wilt opslaan. In de volgende video worden de stappen doorlopen die nodig zijn om een variabele van het type JSON te maken en te gebruiken in AEM workflow
+Vanaf AEM Forms 6.5 kunnen we nu variabelen van het type JSON maken in AEM Workflow. Gewoonlijk zult u variabelen van type JSON tot stand brengen als u Adaptive Forms die op schema JSON wordt gebaseerd aan een Workflow van AEM indient of u de resultaten van een de aanroepverrichting van het ModelGegevens van het Vorm wilt opslaan. In de volgende video worden de stappen doorlopen die nodig zijn voor het maken en gebruiken van een variabele van het type JSON in de AEM-workflow
 
 **als het gebruiken van AEM Forms 6.5.0**
 
@@ -34,7 +34,7 @@ U kunt het schema met de variabele van type JSON in uw werkschemamodel in kaart 
 
 Voer de volgende stappen uit om de middelen op uw systeem te laten werken:
 
-* [Elementen downloaden en importeren in AEM met pakketbeheer](assets/jsonandstringvariable.zip)
+* [De middelen downloaden en importeren naar AEM met behulp van pakketbeheer](assets/jsonandstringvariable.zip)
 * [ Onderzoek het werkschemamodel ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) om de variabelen te begrijpen die in het werkschema worden gebruikt
 * [ vorm de E-maildienst ](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [ open de Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/afbasedonjson/jcr:content?wcmmode=disabled)

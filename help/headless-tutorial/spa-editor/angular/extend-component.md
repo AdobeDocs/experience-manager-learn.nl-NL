@@ -1,8 +1,8 @@
 ---
 title: Een component uitbreiden | Aan de slag met de AEM SPA Editor en Angular
-description: Leer hoe te om een bestaande Component van de Kern uit te breiden die met de Redacteur van de SPA van de AEM moet worden gebruikt. Het begrip hoe te om eigenschappen en inhoud aan een bestaande component toe te voegen is een krachtige techniek om de mogelijkheden van een implementatie van AEM SPARedacteur uit te breiden. Leer om het delegatiepatroon te gebruiken voor het uitbreiden van Sling Models en eigenschappen van het Verkopen van Middel.
+description: Leer hoe te om een bestaande Component van de Kern uit te breiden die met de Redacteur van AEM SPA moet worden gebruikt. Het begrip hoe te om eigenschappen en inhoud aan een bestaande component toe te voegen is een krachtige techniek om de mogelijkheden van een implementatie van de Redacteur van AEM uit te breiden SPA. Leer om het delegatiepatroon te gebruiken voor het uitbreiden van Sling Models en eigenschappen van het Verkopen van Middel.
 feature: SPA Editor, Core Components
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5871
 thumbnail: 5871-spa-angular.jpg
 topic: SPA
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 0265d3df-3de8-4a25-9611-ddf73d725f6e
 duration: 435
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1713'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Een kerncomponent uitbreiden {#extend-component}
 
-Leer hoe te om een bestaande Component van de Kern uit te breiden die met de Redacteur van de SPA van de AEM moet worden gebruikt. Begrijpen hoe een bestaande component wordt uitgebreid is een krachtige techniek om de mogelijkheden van een AEM SPA de implementatie van de Redacteur aan te passen en uit te breiden.
+Leer hoe te om een bestaande Component van de Kern uit te breiden die met de Redacteur van AEM SPA moet worden gebruikt. Begrijpen hoe te om een bestaande component uit te breiden is een krachtige techniek om de mogelijkheden van een implementatie van de Redacteur van AEM aan te passen en uit te breiden SPA.
 
 ## Doelstelling
 
@@ -30,7 +30,7 @@ Leer hoe te om een bestaande Component van de Kern uit te breiden die met de Red
 
 ## Wat u gaat maken
 
-In dit hoofdstuk wordt een nieuwe component `Card` gemaakt. De `Card` component breidt de [ Component van de Kern van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) uit toevoegend extra inhoudsgebieden zoals een Titel en een Vraag aan de knoop van de Actie om de rol van een meetapparaat voor andere inhoud binnen de SPA uit te voeren.
+In dit hoofdstuk wordt een nieuwe component `Card` gemaakt. De `Card` component breidt de [ Component van de Kern van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) uit toevoegend extra inhoudsgebieden zoals een Titel en een Vraag aan de knoop van de Actie om de rol van een meetapparaat voor andere inhoud binnen het KUUROORD uit te voeren.
 
 ![ Definitief Authoring van de Component van de Kaart ](assets/extend-component/final-authoring-card.png)
 
@@ -52,32 +52,32 @@ Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikke
    $ git checkout Angular/extend-component-start
    ```
 
-2. Implementeer de basis van de code op een lokale AEM met Maven:
+2. Implementeer de codebasis naar een lokale AEM-instantie met Maven:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   Als het gebruiken van [ AEM 6.x ](overview.md#compatibility) het `classic` profiel toevoegt:
+   Als het gebruiken van [ AEM 6.x ](overview.md#compatibility) voeg het `classic` profiel toe:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-3. Installeer het gebeëindigde pakket voor de traditionele [ WKND verwijzingsplaats ](https://github.com/adobe/aem-guides-wknd/releases/tag/aem-guides-wknd-2.1.0). De beelden die door [ worden verstrekt WKND verwijzingsplaats ](https://github.com/adobe/aem-guides-wknd/releases/latest) wordt opnieuw gebruikt op de SPA WKND. Het pakket kan worden geïnstalleerd gebruikend [ AEM de Manager van het Pakket ](http://localhost:4502/crx/packmgr/index.jsp).
+3. Installeer het gebeëindigde pakket voor de traditionele [ WKND verwijzingsplaats ](https://github.com/adobe/aem-guides-wknd/releases/tag/aem-guides-wknd-2.1.0). De beelden die door [ worden verstrekt WKND verwijzingsplaats ](https://github.com/adobe/aem-guides-wknd/releases/latest) wordt opnieuw gebruikt op WKND SPA. Het pakket kan worden geïnstalleerd gebruikend [ de Manager van het Pakket van AEM ](http://localhost:4502/crx/packmgr/index.jsp).
 
    ![ Manager van het Pakket installeert wknd.all ](./assets/map-components/package-manager-wknd-all.png)
 
 U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution) altijd bekijken of de code plaatselijk controleren door aan de tak `Angular/extend-component-solution` te schakelen.
 
-## Inspect - initiële kaartimplementatie
+## Eerste kaartimplementatie controleren
 
-De begincode van het hoofdstuk bevat een eerste kaartcomponent. Inspect het beginpunt voor de implementatie van de Kaart.
+De begincode van het hoofdstuk bevat een eerste kaartcomponent. Inspecteer het beginpunt voor de implementatie van de Kaart.
 
 1. Open de module `ui.apps` in de IDE van uw keuze.
 2. Navigeer naar `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components/card` en bekijk het `.content.xml` -bestand.
 
-   ![ Component van de Kaart AEM definitiebegin ](assets/extend-component/aem-card-cmp-start-definition.png)
+   ![ de definitieBegin van de Component van de Kaart AEM ](assets/extend-component/aem-card-cmp-start-definition.png)
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -88,9 +88,9 @@ De begincode van het hoofdstuk bevat een eerste kaartcomponent. Inspect het begi
        componentGroup="WKND SPA Angular - Content"/>
    ```
 
-   De eigenschap `sling:resourceSuperType` verwijst naar `wknd-spa-angular/components/image` die aangeeft dat de component `Card` de functionaliteit overerft van de WKND-SPA Image-component.
+   De eigenschap `sling:resourceSuperType` verwijst naar `wknd-spa-angular/components/image` die aangeeft dat de component `Card` de functionaliteit overerft van de component WKND SPA Image.
 
-3. Inspect het bestand `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components/image/.content.xml` :
+3. Controleer het bestand `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components/image/.content.xml` :
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -101,11 +101,11 @@ De begincode van het hoofdstuk bevat een eerste kaartcomponent. Inspect het begi
        componentGroup="WKND SPA Angular - Content"/>
    ```
 
-   De `sling:resourceSuperType` verwijst naar `core/wcm/components/image/v2/image` . Dit geeft aan dat de WKND SPA Image-component de functionaliteit overerft van de Core Component Image.
+   De `sling:resourceSuperType` verwijst naar `core/wcm/components/image/v2/image` . Dit wijst erop dat de component van het Beeld WKND SPA de functionaliteit van het Beeld van de Component van de Kern erft.
 
    Ook gekend als het [ patroon van de Volmacht ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#proxy-component-pattern) Verschuivende middelovererving is een krachtig ontwerppatroon voor het toestaan van kindcomponenten om functionaliteit te erven en gedrag uit te breiden/met voeten te treden wanneer gewenst. De overerving van de verkoop steunt veelvoudige niveaus van overerving, zodat erft de nieuwe `Card` component uiteindelijk functionaliteit van het Beeld van de Component van de Kern.
 
-   Veel ontwikkelingsteams streven ernaar om D.R.Y. te zijn (herhaal jezelf niet). Dit is mogelijk met AEM.
+   Veel ontwikkelingsteams streven ernaar om D.R.Y. te zijn (herhaal jezelf niet). Dit is mogelijk met AEM als gevolg van het verkopen van erfenis.
 
 4. Open het bestand `_cq_dialog/.content.xml` onder de map `card` .
 
@@ -113,7 +113,7 @@ De begincode van het hoofdstuk bevat een eerste kaartcomponent. Inspect het begi
 
    Met eigenschappen als `sling:orderBefore` kan een ontwikkelaar kiezen waar nieuwe tabbladen of formuliervelden moeten worden ingevoegd. In dit geval wordt de tab `Text` ingevoegd vóór de tab `asset` . Om volledig gebruik van de Verschuivende Fusie van het Middel te maken, is het belangrijk om de originele structuur van de dialoogknoop voor de [ de componentendialoog van het Beeld ](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/image/v2/image/_cq_dialog/.content.xml) te kennen.
 
-5. Open het bestand `_cq_editConfig.xml` onder de map `card` . Dit bestand dicteert het gedrag van slepen en neerzetten in de AEM-ontwerpinterface. Wanneer het uitbreiden van de component van het Beeld, is het belangrijk dat het middeltype de component zelf aanpast. Controleer het knooppunt `<parameters>` :
+5. Open het bestand `_cq_editConfig.xml` onder de map `card` . Dit bestand schrijft het gedrag voor slepen en neerzetten voor in de AEM-ontwerpinterface. Wanneer het uitbreiden van de component van het Beeld, is het belangrijk dat het middeltype de component zelf aanpast. Controleer het knooppunt `<parameters>` :
 
    ```xml
    <parameters
@@ -128,9 +128,9 @@ De begincode van het hoofdstuk bevat een eerste kaartcomponent. Inspect het begi
 
 6. In de schakelaar IDE aan de `ui.frontend` module, navigerend aan `ui.frontend/src/app/components/card`:
 
-   ![ Begin van de Component van de Angular ](assets/extend-component/angular-card-component-start.png)
+   ![ het Begin van de Component van Angular ](assets/extend-component/angular-card-component-start.png)
 
-7. Inspect het bestand `card.component.ts` .
+7. Controleer het bestand `card.component.ts` .
 
    De component is al uitgestald om met behulp van de standaardfunctie `MapTo` toe te wijzen aan de AEM `Card` -component.
 
@@ -138,7 +138,7 @@ De begincode van het hoofdstuk bevat een eerste kaartcomponent. Inspect het begi
    MapTo('wknd-spa-angular/components/card')(CardComponent, CardEditConfig);
    ```
 
-   Controleer de drie parameters `@Input` in de klasse voor `src` , `alt` en `title` . Deze worden JSON-waarden van de AEM component verwacht die aan de component Angular worden toegewezen.
+   Controleer de drie parameters `@Input` in de klasse voor `src` , `alt` en `title` . Deze worden JSON-waarden van de AEM-component verwacht die worden toegewezen aan de Angular-component.
 
 8. Open het bestand `card.component.html` :
 
@@ -152,7 +152,7 @@ De begincode van het hoofdstuk bevat een eerste kaartcomponent. Inspect het begi
 
 ## Sjabloonbeleid bijwerken
 
-Met deze eerste `Card` -implementatie evalueert u de functionaliteit in de AEM SPA Editor. Als u de eerste `Card` -component wilt zien, moet het sjabloonbeleid worden bijgewerkt.
+Met deze eerste `Card` -implementatie controleert u de functionaliteit in de AEM SPA Editor. Als u de eerste `Card` -component wilt zien, moet het sjabloonbeleid worden bijgewerkt.
 
 1. Implementeer de startcode naar een lokale instantie van AEM, als u dat nog niet hebt gedaan:
 
@@ -161,7 +161,7 @@ Met deze eerste `Card` -implementatie evalueert u de functionaliteit in de AEM S
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-2. Navigeer aan het Malplaatje van de SPA Pagina in [ http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html ](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html).
+2. Navigeer aan het Malplaatje van de Pagina van het KUUROORD in [ http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html ](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html).
 3. Werk het beleid van de container voor lay-out bij om de nieuwe component `Card` toe te voegen als een toegestane component:
 
    ![ het beleid van de Container van de Lay-out van de Update ](assets/extend-component/card-component-allowed.png)
@@ -172,7 +172,7 @@ Met deze eerste `Card` -implementatie evalueert u de functionaliteit in de AEM S
 
 ## Aanvankelijke kaartcomponent van auteur
 
-Maak vervolgens de component `Card` met de AEM SPA Editor.
+Vervolgens ontwerpt u de component `Card` met gebruik van de AEM SPA Editor.
 
 1. Navigeer aan [ http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html ](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html).
 2. Voeg in de modus `Edit` de component `Card` toe aan de component `Layout Container` :
@@ -188,9 +188,9 @@ Maak vervolgens de component `Card` met de AEM SPA Editor.
 
    ![ Component tabel van de Tekst ](assets/extend-component/card-component-text.png)
 
-   **Weg van de Kaart** - kies een pagina onder de SPA homepage.
+   **Weg van de Kaart** - kies een pagina onder de homepage van het KUUROORD.
 
-   **Tekst CTA** - &quot;Lees meer&quot;
+   **Tekst van CTA** - &quot;Lees meer&quot;
 
    **Titel van de Kaart** - verlaten leeg
 
@@ -198,9 +198,9 @@ Maak vervolgens de component `Card` met de AEM SPA Editor.
 
 6. Werk het **lusje van Metagegevens van Activa** bij om waarden voor **Alternatieve Tekst** en **Titel** toe te voegen.
 
-   Er worden momenteel geen aanvullende wijzigingen weergegeven na het bijwerken van het dialoogvenster. Om de nieuwe gebieden aan de Component van de Angular bloot te stellen, moeten wij het het Verdelen Model voor de component `Card` bijwerken.
+   Er worden momenteel geen aanvullende wijzigingen weergegeven na het bijwerken van het dialoogvenster. Als u de nieuwe velden toegankelijk wilt maken voor de Angular-component, moet het Sling-model voor de `Card` -component worden bijgewerkt.
 
-7. Open een nieuw lusje en navigeer aan [ CRXDE-Lite ](http://localhost:4502/crx/de/index.jsp#/content/wknd-spa-angular/us/en/home/jcr%3Acontent/root/responsivegrid/card). Inspect de inhoudsknooppunten onder `/content/wknd-spa-angular/us/en/home/jcr:content/root/responsivegrid` om de inhoud van de component `Card` te zoeken.
+7. Open een nieuw lusje en navigeer aan [ CRXDE-Lite ](http://localhost:4502/crx/de/index.jsp#/content/wknd-spa-angular/us/en/home/jcr%3Acontent/root/responsivegrid/card). Controleer de inhoudsknooppunten onder `/content/wknd-spa-angular/us/en/home/jcr:content/root/responsivegrid` om de inhoud van de component `Card` te zoeken.
 
    ![ CRXDE-Lite componenteneigenschappen ](assets/extend-component/crxde-lite-properties.png)
 
@@ -208,7 +208,7 @@ Maak vervolgens de component `Card` met de AEM SPA Editor.
 
 ## Model voor kaartverkoop bijwerken
 
-Als u uiteindelijk de waarden uit het dialoogvenster met componenten toegankelijk wilt maken voor de component Angular, moet u het Sling-model bijwerken dat de JSON voor de component `Card` vult. Wij hebben ook de kans om twee stukken bedrijfslogica uit te voeren:
+Als u uiteindelijk de waarden uit het dialoogvenster met componenten toegankelijk wilt maken voor de Angular-component, moet u het Sling-model bijwerken dat de JSON voor de `Card` -component vult. Wij hebben ook de kans om twee stukken bedrijfslogica uit te voeren:
 
 * Als `titleFromPage` aan **waar**, de titel van de pagina terugkeert die door `cardPath` anders wordt gespecificeerd de waarde van `cardTitle` textfield terugkeren.
 * Retourneer de laatste gewijzigde datum van de pagina die is opgegeven door `cardPath` .
@@ -217,7 +217,7 @@ Ga terug naar de IDE van uw keuze en open de module `core` .
 
 1. Open het bestand `Card.java` om `core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/Card.java` .
 
-   Merk op dat de interface `Card` momenteel `com.adobe.cq.wcm.core.components.models.Image` uitbreidt en daarom de methoden van de interface `Image` overerft. De interface `Image` is al een uitbreiding van de interface `ComponentExporter` , waarmee het Sling-model kan worden geëxporteerd als JSON en toegewezen door de SPA-editor. Daarom te hoeven wij niet uitdrukkelijk om `ComponentExporter` interface uit te breiden zoals wij in het [ hoofdstuk van de Component van de Douane ](custom-component.md) deden.
+   Merk op dat de interface `Card` momenteel `com.adobe.cq.wcm.core.components.models.Image` uitbreidt en daarom de methoden van de interface `Image` overerft. De interface `Image` breidt reeds de `ComponentExporter` interface uit die het het Verdelen Model om als JSON toelaat worden uitgevoerd en door de redacteur van het KUUROORD in kaart gebracht. Daarom te hoeven wij niet uitdrukkelijk om `ComponentExporter` interface uit te breiden zoals wij in het [ hoofdstuk van de Component van de Douane ](custom-component.md) deden.
 
 2. Voeg de volgende methodes aan de interface toe:
 
@@ -257,7 +257,7 @@ Ga terug naar de IDE van uw keuze en open de module `core` .
    }
    ```
 
-   Deze methoden worden beschikbaar gemaakt via de JSON-model-API en doorgegeven aan de Angular-component.
+   Deze methoden worden beschikbaar gesteld via de JSON-model-API en doorgegeven aan de Angular-component.
 
 3. Openen `CardImpl.java` . Dit is de implementatie van `Card.java` interface. Deze implementatie is gedeeltelijk stopgezet om de zelfstudie te versnellen.  Let op het gebruik van de `@Model` - en `@Exporter` -aantekeningen om ervoor te zorgen dat het Sling-model via de Sling Model Exporter met serienummering kan worden gecodeerd als JSON.
 
@@ -293,7 +293,7 @@ Ga terug naar de IDE van uw keuze en open de module `core` .
    }
    ```
 
-   `@PostConstruct initModel()` wordt geroepen wanneer het het Verdelen Model wordt geïnitialiseerd, daarom is het een goede gelegenheid om voorwerpen te initialiseren die door andere methodes in het model kunnen worden gebruikt. `pageManager` is één van verscheidene [ Java™ gesteunde globale voorwerpen ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html) ter beschikking gesteld aan het Schuiven Modellen via de `@ScriptVariable` aantekening. De [ getPage ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) methode neemt in een weg en keert een AEM [ pagina ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) voorwerp of ongeldig terug als de weg niet aan een geldige pagina richt.
+   `@PostConstruct initModel()` wordt geroepen wanneer het het Verdelen Model wordt geïnitialiseerd, daarom is het een goede gelegenheid om voorwerpen te initialiseren die door andere methodes in het model kunnen worden gebruikt. `pageManager` is één van verscheidene [ Java™ gesteunde globale voorwerpen ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html) ter beschikking gesteld aan het Schuiven Modellen via de `@ScriptVariable` aantekening. De [ getPage ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) methode neemt in een weg en keert een voorwerp van de Pagina van AEM [ ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) terug of ongeldig als de weg niet aan een geldige pagina richt.
 
    Hierdoor wordt de variabele `cardPage` geïnitialiseerd, die door de andere nieuwe methoden wordt gebruikt om gegevens over de onderliggende gekoppelde pagina te retourneren.
 
@@ -380,7 +380,7 @@ Ga terug naar de IDE van uw keuze en open de module `core` .
 
 ## Angular-component bijwerken
 
-Nu het JSON-model is gevuld met nieuwe eigenschappen voor `ctaLinkURL` , `ctaText` , `cardTitle` en `cardLastModified` , kunnen we de component Angular bijwerken en deze weergeven.
+Nu het JSON-model is gevuld met nieuwe eigenschappen voor `ctaLinkURL` , `ctaText` , `cardTitle` en `cardLastModified` , kunnen we de Angular-component bijwerken en deze weergeven.
 
 1. Keer terug naar winde en open de `ui.frontend` module. Start eventueel de webpack-ontwikkelserver vanuit een nieuw terminalvenster om de wijzigingen in real-time te zien:
 
@@ -448,9 +448,9 @@ Nu het JSON-model is gevuld met nieuwe eigenschappen voor `ctaLinkURL` , `ctaTex
 
    >[!NOTE]
    >
-   > U kunt de gebeëindigde [ de componentencode van de kaart van de Angular hier bekijken ](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution/ui.frontend/src/app/components/card).
+   > U kunt de gebeëindigde [ code van de kaartcomponent van Angular hier bekijken ](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution/ui.frontend/src/app/components/card).
 
-5. Implementeer de volledige wijzigingen in AEM vanuit de hoofdmap van het project met Maven:
+5. Implementeer de volledige wijzigingen in AEM vanaf de basis van het project met Maven:
 
    ```shell
    $ cd aem-guides-wknd-spa
@@ -467,6 +467,6 @@ Nu het JSON-model is gevuld met nieuwe eigenschappen voor `ctaLinkURL` , `ctaTex
 
 ## Gefeliciteerd! {#congratulations}
 
-Gefeliciteerd, hebt u geleerd hoe u een AEM component kunt uitbreiden en hoe het Verdelen Modellen en dialoogvensters met het JSON-model werken.
+Gefeliciteerd, u leerde hoe te om een component van AEM uit te breiden en hoe het Verdelen Modellen en dialogen met het model JSON werken.
 
 U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution) altijd bekijken of de code plaatselijk controleren door aan de tak `Angular/extend-component-solution` te schakelen.

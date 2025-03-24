@@ -1,7 +1,7 @@
 ---
 title: Inhoud migreren met het gereedschap Inhoud overbrengen
-description: Leer hoe u met Content Transfer Tool inhoud van AEM 6 naar AEM as a Cloud Service kunt migreren.
-version: Cloud Service
+description: Leer hoe u met Content Transfer Tool inhoud kunt migreren naar AEM as a Cloud Service vanaf AEM 6.
+version: Experience Manager as a Cloud Service
 topic: Migration, Upgrade
 feature: Migration
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8919
 thumbnail: 336970.jpeg
 exl-id: c51ce8e3-e83c-4f8b-a835-70335ed3a5b9
 duration: 1362
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 1%
@@ -28,16 +28,16 @@ Leer hoe u met Content Transfer Tool inhoud van AEM 6.3+ naar AEM as a Cloud Ser
 
 ![ Levenscyclus van het Hulpmiddel van de Overdracht van de Inhoud ](../assets/content-transfer-tool.png)
 
-Het gereedschap Inhoud overbrengen is geïnstalleerd op AEM 6.3+ en verzendt inhoud naar AEM as a Cloud Service.
+De Content Transfer Tool is geïnstalleerd op AEM 6.3+ en verzendt inhoud naar AEM as a Cloud Service.
 
 ## Belangrijkste activiteiten
 
 + Download het [ recentste Hulpmiddel van de Overdracht van de Inhoud ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list p.offset=0&amp;p.limit=2).
-+ Breng AEM auteur 6.3+ definitieve inhoud over naar de AEM as a Cloud Service Author-service.
-   + Installeer het gereedschap Inhoud overbrengen op AEM 6.3+-auteur die de uiteindelijke inhoud bevat die u wilt overbrengen.
++ Breng de uiteindelijke AEM Author 6.3+-inhoud over naar de AEM as a Cloud Service Author-service.
+   + Installeer het gereedschap Inhoud overbrengen op de AEM 6.3+-auteur met de uiteindelijke inhoud die u wilt overbrengen.
    + Voer het gereedschap Inhoud overbrengen in batches uit en breng sets inhoud over.
-+ Breng AEM Publish 6.3+ definitieve inhoud over aan de dienst van AEM as a Cloud Service Publish.
-   + Installeer het gereedschap Inhoud overbrengen op AEM 6.3+ Publish met de uiteindelijke inhoud die u wilt overbrengen.
++ Breng AEM Publish 6.3+ definitieve inhoud naar de publicatieservice van AEM as a Cloud Service over.
+   + Installeer het gereedschap Inhoud overbrengen op AEM 6.3+ Publiceren met de uiteindelijke inhoud die u wilt overbrengen.
    + Voer het gereedschap Inhoud overbrengen in batches uit en breng sets inhoud over.
 + Optioneel &#39;top-up&#39;-inhoud op AEM as a Cloud Service, door nieuwe inhoud over te brengen sinds de laatste inhoudsoverdracht
 

@@ -1,7 +1,7 @@
 ---
 title: Flexibele poortuitgang
 description: Leer hoe u flexibele poorttoegang instelt en gebruikt om externe verbindingen van AEM as a Cloud Service naar externe services te ondersteunen.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 870
-source-git-commit: 29ac030f3774da2c514525f7cb85f6f48b84369f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 0%
@@ -174,7 +174,7 @@ Met het flexibele gemaakte poortegres kunt u nu de regels voor het doorsturen va
    |---------------------------------|----------|----------------|------------------|----------|
    | `AEM_PROXY_HOST` | `portForwards.portOrig` | → | `portForwards.name` | `portForwards.portDest` |
 
-   Als uw AEM plaatsing __slechts__ verbindingen HTTP/HTTPS (haven 80/443) aan externe dienst vereist, verlaat de `portForwards` serie leeg, aangezien deze regels slechts voor niet-HTTP/HTTPS verzoeken worden vereist.
+   Als uw plaatsing van AEM __slechts__ verbindingen HTTP/HTTPS (haven 80/443) aan externe dienst vereist, verlaat de `portForwards` serie leeg, aangezien deze regels slechts voor niet-HTTP/HTTPS verzoeken worden vereist.
 
 1. Voor elk milieu, bevestig de spelregels in feite gebruikend Cloud Manager API [ getEnvironmentAdvancedNetworkingConfiguration ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting.
 
@@ -190,12 +190,12 @@ Met het flexibele gemaakte poortegres kunt u nu de regels voor het doorsturen va
 
 1. De flexibele configuraties van de havenuitgang kunnen worden bijgewerkt gebruikend Cloud Manager API [ enableEnvironmentAdvancedNetworkingConfiguration ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting. Vergeet niet dat `enableEnvironmentAdvancedNetworkingConfiguration` een `PUT` -bewerking is. Alle regels moeten daarom bij elke aanroep van deze bewerking worden opgegeven.
 
-1. Nu, kunt u de flexibele configuratie van de havenuitgang in uw douane AEM code en configuratie gebruiken.
+1. Nu kunt u de flexibele configuratie van de poortuitgang gebruiken in uw aangepaste AEM-code en -configuratie.
 
 
 ## Verbinding maken met externe services via flexibele poortuitgang
 
-Met de flexibele toegelaten volmacht van de havenuitgang, AEM code en configuratie kunnen hen gebruiken om vraag aan externe diensten te maken. Er zijn twee vlotten van externe vraag die AEM verschillend behandelt:
+Met de flexibele toegelaten volmacht van de havenuitgang, kan de code en de configuratie van AEM hen gebruiken om vraag aan externe diensten te maken. Er zijn twee flavors van externe vraag die AEM verschillend behandelt:
 
 1. HTTP/HTTPS-aanroepen naar externe services op niet-standaard poorten
    + Omvat HTTP/HTTPS vraag die aan de diensten wordt gemaakt die op havens buiten standaard 80 of 443 havens lopen.
@@ -207,7 +207,7 @@ HTTP/HTTPS-aanvragen van AEM op standaardpoorten (80/443) zijn standaard toegest
 
 ### HTTP/HTTPS op niet-standaardpoorten
 
-Bij het maken van HTTP/HTTPS-verbindingen met niet-standaardpoorten (niet-80/443) vanaf AEM, moeten de verbindingen tot stand worden gebracht via speciale host en poorten, die via plaatsaanduidingen worden geleverd.
+Wanneer u HTTP/HTTPS-verbindingen maakt met niet-standaardpoorten (niet-80/443) vanuit AEM, moeten de verbindingen tot stand worden gebracht via speciale host en poorten, die via plaatsaanduidingen worden geleverd.
 
 AEM biedt twee sets speciale Java™-systeemvariabelen die zijn toegewezen aan AEM HTTP/HTTPS-proxy&#39;s.
 
@@ -248,7 +248,7 @@ Bij het maken van niet-HTTP/HTTPS-verbindingen (bijvoorbeeld SQL, SMTP, etc.) va
 | `AEM_PROXY_HOST` | Proxyhost voor niet-HTTP/HTTPS-verbindingen | `System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel")` | `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` |
 
 
-De verbindingen aan externe diensten worden dan geroepen door `AEM_PROXY_HOST` en de in kaart gebrachte haven (`portForwards.portOrig`), die dan aan toegewezen externe hostname (`portForwards.name`) en haven AEM (`portForwards.portDest`).
+Verbindingen met externe diensten worden dan geroepen door `AEM_PROXY_HOST` en de in kaart gebrachte haven (`portForwards.portOrig`), die AEM dan aan toegewezen externe hostname (`portForwards.name`) en haven (`portForwards.portDest`) leidt.
 
 | Proxyhost | Proxypoort |  | Externe host | Externe poort |
 |---------------------------------|----------|----------------|------------------|----------|
@@ -261,7 +261,7 @@ De verbindingen aan externe diensten worden dan geroepen door `AEM_PROXY_HOST` e
       <a  href="./examples/sql-datasourcepool.md"><img alt="SQL-verbinding met JDBC DataSourcePool" src="./assets/code-examples__sql-osgi.png"/></a>
       <div><strong><a href="./examples/sql-datasourcepool.md"> SQL verbinding gebruikend JDBC DataSourcePool </a></strong></div>
       <p>
-            Java™ codevoorbeeld die met externe SQL gegevensbestanden verbinden door AEM JDBC datasource pool te vormen.
+            Java™ codevoorbeeld die met externe SQL gegevensbestanden verbinden door AEM te vormen JDBC datasource pool.
       </p>
     </td>   
    <td>
@@ -275,7 +275,7 @@ De verbindingen aan externe diensten worden dan geroepen door `AEM_PROXY_HOST` e
       <a  href="./examples/email-service.md"><img alt="Virtual Private Network (VPN)" src="./assets/code-examples__email.png"/></a>
       <div><strong><a href="./examples/email-service.md"> E-maildienst </a></strong></div>
       <p>
-        OSGi configuratievoorbeeld dat AEM gebruikt om met externe e-maildiensten te verbinden.
+        OSGi-configuratievoorbeeld dat AEM gebruikt om verbinding te maken met externe e-mailservices.
       </p>
     </td>   
 </tr></table>

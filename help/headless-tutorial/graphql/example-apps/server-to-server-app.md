@@ -1,7 +1,7 @@
 ---
-title: Server-naar-server Node.js app - AEM Voorbeeld zonder kop
-description: Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze server-side toepassing Node.js toont aan hoe te om inhoud te vragen gebruikend AEM GraphQL APIs gebruikend persisted vragen.
-version: Cloud Service
+title: Server-naar-server Node.js app - AEM Headless Voorbeeld
+description: Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze server-side toepassing Node.js toont hoe te om inhoud te vragen gebruikend AEM GraphQL APIs gebruikend persisted vragen.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
@@ -9,10 +9,10 @@ level: Beginner
 jira: KT-10798
 thumbnail: KT-10798.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
-badgeVersions: label="AEM, hoofdloos as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 39b21a29-a75f-4a6c-ba82-377cf5cc1726
 duration: 135
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -34,14 +34,14 @@ De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 + [ Node.js v18 ](https://nodejs.org/en)
 + [ Git ](https://git-scm.com/)
 
-## AEM
+## AEM-vereisten
 
-De toepassing Node.js werkt met de volgende AEM plaatsingsopties. Alle plaatsingen vereisen de [ Plaats van WKND v3.0.0+ ](https://github.com/adobe/aem-guides-wknd/releases/latest) om worden geïnstalleerd.
+De toepassing Node.js werkt met de volgende AEM-implementatieopties. Alle plaatsingen vereisen de [ Plaats van WKND v3.0.0+ ](https://github.com/adobe/aem-guides-wknd/releases/latest) om worden geïnstalleerd.
 
 + [ AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ Naar keuze, [ de dienstgeloofsbrieven ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) als het machtigen van verzoeken (bijvoorbeeld, die met de dienst van de Auteur AEM verbinden).
++ Naar keuze, [ de dienstgeloofsbrieven ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) als het machtigen van verzoeken (bijvoorbeeld, die met de dienst van de Auteur van AEM verbinden).
 
-Deze toepassing Node.js kan met AEM Auteur of AEM Publish verbinden die op de bevel-lijn parameters wordt gebaseerd.
+Deze Node.js-toepassing kan verbinding maken met AEM Author of AEM Publish op basis van opdrachtregelparameters.
 
 ## Hoe wordt het gebruikt
 
@@ -64,13 +64,13 @@ Deze toepassing Node.js kan met AEM Auteur of AEM Publish verbinden die op de be
    $ node index.js <AEM_HOST> <OPTIONAL_SERVICE_CONFIG_FILE_PATH>
    ```
 
-   Zo kunt u de app bijvoorbeeld zonder toestemming uitvoeren op AEM Publish:
+   Zo kunt u de app bijvoorbeeld uitvoeren op AEM Publish zonder toestemming:
 
    ```shell
    $ node index.js https://publish-p123-e789.adobeaemcloud.com
    ```
 
-   De app uitvoeren tegen AEM auteur met toestemming:
+   De app uitvoeren tegen AEM Author met machtiging:
 
    ```shell
    $ node index.js https://author-p123-e456.adobeaemcloud.com ./service-config.json
@@ -80,15 +80,15 @@ Deze toepassing Node.js kan met AEM Auteur of AEM Publish verbinden die op de be
 
 ## De code
 
-Hieronder volgt een overzicht van hoe de server-aan-server toepassing Node.js wordt gebouwd, hoe het met AEM Headless verbindt om inhoud terug te winnen gebruikend GraphQL persisted vragen, en hoe die gegevens worden voorgesteld. De volledige code kan op [ GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server) worden gevonden.
+Hieronder volgt een overzicht van hoe de toepassing server-naar-server Node.js wordt gebouwd, hoe het met AEM Headless verbindt om inhoud terug te winnen gebruikend GraphQL persisted vragen, en hoe die gegevens worden voorgesteld. De volledige code kan op [ GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server) worden gevonden.
 
-De meest gebruikte methode voor server-naar-server-AEM Headless-toepassingen is het synchroniseren van gegevens van inhoudsfragmenten van AEM naar andere systemen. Deze toepassing is echter opzettelijk eenvoudig en drukt de JSON-resultaten af van de hardnekkige query.
+AEM Headless-apps voor servers worden vaak gebruikt voor het synchroniseren van gegevens van inhoudsfragmenten van AEM naar andere systemen. Deze toepassing is echter opzettelijk eenvoudig en drukt de JSON-resultaten af van de hardnekkige query.
 
 ### Blijvende query&#39;s
 
-Na AEM Beste praktijken zonder hoofd, gebruikt de toepassing AEM GraphQL persisted query&#39;s om avontuurgegevens te vragen. De toepassing gebruikt twee voortgeduurde vragen:
+Na de beste praktijken van AEM Headless, gebruikt de toepassing AEM GraphQL voortgezette vragen om avontuurgegevens te vragen. De toepassing gebruikt twee voortgeduurde vragen:
 
-+ `wknd/adventures-all` persisted query, die alle avonturen in AEM met een verkorte set eigenschappen retourneert. Deze hardnekkige vraag drijft de aanvankelijke lijst van het avontuur van de mening.
++ `wknd/adventures-all` bleef query uitvoeren, die alle avonturen in AEM retourneert met een verkorte set eigenschappen. Deze hardnekkige vraag drijft de aanvankelijke lijst van het avontuur van de mening.
 
 ```
 # Retrieves a list of all Adventures
@@ -130,7 +130,7 @@ query ($offset: Int, $limit: Int, $sort: String, $imageFormat: AssetTransformFor
 }
 ```
 
-### AEM headless-client maken
+### AEM Headless-client maken
 
 ```javascript
 const { AEMHeadless, getToken } = require('@adobe/aem-headless-client-nodejs');
@@ -163,7 +163,7 @@ async function run() {
 
 ### GraphQL-query uitgevoerd
 
-AEM voortgeduurde vragen worden uitgevoerd over de GET van HTTP en zo, wordt de [ AEM Draadloze cliënt voor Node.js ](https://github.com/adobe/aem-headless-client-nodejs) gebruikt om [ de voortgeduurde vragen van GraphQL ](https://github.com/adobe/aem-headless-client-nodejs#within-asyncawait) tegen AEM uit te voeren en de avontuurinhoud terug te winnen.
+AEM voortgeduurde vragen worden uitgevoerd over HTTP GET en zo, wordt de [ Hoofdloze cliënt van AEM voor Node.js ](https://github.com/adobe/aem-headless-client-nodejs) gebruikt om [ de voortgeduurde vragen van GraphQL ](https://github.com/adobe/aem-headless-client-nodejs#within-asyncawait) tegen AEM uit te voeren en de avontuurinhoud terug te winnen.
 
 De voortgezette query wordt aangeroepen door `aemHeadlessClient.runPersistedQuery(...)` aan te roepen en de naam van de voortgezette GraphQL-query door te geven. Wanneer de GraphQL de gegevens heeft geretourneerd, geeft u deze door aan de vereenvoudigde functie `doSomethingWithDataFromAEM(..)` , die de resultaten afdrukt. De gegevens worden echter doorgaans naar een ander systeem verzonden of er wordt uitvoer gegenereerd op basis van de opgehaalde gegevens.
 

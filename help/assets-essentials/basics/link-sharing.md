@@ -1,7 +1,7 @@
 ---
-title: Assets Essentials delen van openbare koppelingen
-description: Leer hoe gebruikers met de Share Link van Assets Essentials elementen kunnen delen met interne en externe belanghebbenden en hoe het risico op het delen van verkeerde elementen tot een minimum wordt beperkt... (Beschrijvingen moeten tussen 60 en 160 tekens lang zijn)
-version: Cloud Service
+title: Essentiële elementen openbare koppelingen delen
+description: Leer hoe gebruikers met de Share Link van de Hoofdzaak van Elementen middelen kunnen delen met interne en externe belanghebbenden en hoe het risico van het delen van verkeerde elementen tot een minimum wordt beperkt ... (Beschrijvingen moeten tussen 60 en 160 tekens lang zijn)
+version: Experience Manager as a Cloud Service
 feature: Assets Essentials
 topic: Content Management
 role: User
@@ -12,7 +12,7 @@ last-substantial-update: 2022-10-08T00:00:00Z
 doc-type: Feature Video
 exl-id: 719d3101-2c27-4165-a9d7-97e6f637d71f
 duration: 161
-source-git-commit: 54509339ee8e538daf432b329ddebb55e98bb6d9
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%

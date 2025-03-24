@@ -1,7 +1,7 @@
 ---
 title: Websitemarkering toevoegen
-description: Definieer algemene CSS-, CSS-variabelen en weblettertypen voor een site Edge Delivery Services.
-version: Cloud Service
+description: Definieer algemene CSS, CSS-variabelen en weblettertypen voor een Edge Delivery Services-site.
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: a5cd9906-7e7a-43dd-a6b2-e80f67d37992
-source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 0%
@@ -48,7 +48,7 @@ $ git checkout -b wknd-styles
 
 ## Algemene CSS
 
-Edge Delivery Services gebruiken een algemeen CSS-bestand, dat zich bevindt op `styles/styles.css` , om de algemene stijlen voor de gehele website in te stellen. Met `styles.css` kunt u aspecten zoals kleuren, lettertypen en spatiëring beheren, zodat alles er op de hele site consistent uitziet.
+Edge Delivery Services gebruikt een algemeen CSS-bestand op `styles/styles.css` om de algemene stijlen voor de gehele website in te stellen. Met `styles.css` kunt u aspecten zoals kleuren, lettertypen en spatiëring beheren, zodat alles er op de hele site consistent uitziet.
 
 Globale CSS zou agnostisch aan laag-vlakke concepten zoals blokken moeten zijn, die zich op de algemene blik en het gevoel van de plaats, en gedeelde visuele behandelingen concentreren.
 
@@ -96,7 +96,7 @@ Als u een website ontwikkelt en dezelfde CSS-waarden herhaalt, kunt u overwegen 
 
 Bare-elementen worden rechtstreeks via hun elementnaam opgemaakt in plaats van via een CSS-klasse. In plaats van bijvoorbeeld een `.page-heading` CSS-klasse op te maken, worden stijlen op het `h1` -element toegepast met `h1 { ... }` .
 
-In het `styles/styles.css` -bestand wordt een set basisstijlen toegepast op elementen met blote HTML. Websites van Edge Delivery Services geven prioriteit aan het gebruik van onbewerkte elementen, omdat deze zich richten op de native semantische HTML van Edge Delivery Service.
+In het `styles/styles.css` -bestand wordt een set basisstijlen toegepast op blote HTML-elementen. Edge Delivery Services-websites geven prioriteit aan het gebruik van onbewerkte elementen, omdat deze zich richten op de native semantische HTML van Edge Delivery Service.
 
 Als u wilt uitlijnen met WKND-branding, kunt u enkele blote elementen opmaken in `styles.css` :
 
@@ -123,7 +123,7 @@ Deze stijlen zorgen ervoor dat `h2` -elementen, tenzij overschreven, consistent 
 
 ### Overgenomen elementen
 
-In Edge Delivery Services verbeteren de code `scripts.js` en `aem.js` van het project automatisch specifieke blote HTML-elementen op basis van hun context binnen de HTML.
+In Edge Delivery Services worden met de code `scripts.js` en `aem.js` van het project automatisch bepaalde, niet-afgewerkte HTML-elementen verbeterd op basis van hun context binnen de HTML.
 
 Ankerelementen (`<a>`) die bijvoorbeeld op een eigen regel zijn gemaakt (in plaats van inline met omringende tekst) worden als knoppen op basis van deze context beschouwd. Deze ankers worden automatisch voorzien van een container `div` met een CSS-klasse `button-container` en het ankerelement heeft een `button` CSS-klasse toegevoegd.
 
@@ -174,7 +174,7 @@ Dit CSS definieert de basisknopstijlen en bevat WKND-specifieke behandelingen, z
 
 ## Weblettertypen
 
-Met Edge Delivery Services worden projecten geoptimaliseerd voor het gebruik van weblettertypen om hoge prestaties te behouden en de impact op Lighthouse-scores tot een minimum te beperken. Deze methode zorgt voor snelle rendering zonder de visuele identiteit van de site in gevaar te brengen. Hieronder wordt beschreven hoe u weblettertypen efficiënt kunt implementeren voor optimale prestaties.
+Edge Delivery Services-projecten optimaliseren het gebruik van weblettertypen om hoge prestaties te behouden en de impact op Lighthouse-scores tot een minimum te beperken. Deze methode zorgt voor snelle rendering zonder de visuele identiteit van de site in gevaar te brengen. Hieronder wordt beschreven hoe u weblettertypen efficiënt kunt implementeren voor optimale prestaties.
 
 ### Lettertypen
 
@@ -289,9 +289,9 @@ Werk ten slotte de CSS-variabelen van `styles/styles.css` bij om de nieuwe lette
 
 ### Alternatieve lettertypen
 
-Weblettertypen zijn vaak van invloed op de prestaties vanwege hun grootte, waardoor Cumulatieve CLS-scores (Layout Shift) worden verhoogd en de totale Lightroom-scores afnemen. Voor directe tekstweergave tijdens het laden van weblettertypen gebruiken Edge Delivery Services voor projecten browsereigen fallback-lettertypen. Deze aanpak zorgt voor een vloeiende gebruikerservaring terwijl het gewenste lettertype van toepassing is.
+Weblettertypen zijn vaak van invloed op de prestaties vanwege hun grootte, waardoor Cumulatieve CLS-scores (Layout Shift) worden verhoogd en de totale Lightroom-scores afnemen. Edge Delivery Services-projecten gebruiken browsereigen fallback-lettertypen om ervoor te zorgen dat de tekst direct wordt weergegeven terwijl weblettertypen worden geladen. Deze aanpak zorgt voor een vloeiende gebruikerservaring terwijl het gewenste lettertype van toepassing is.
 
-Om de beste fallback doopvont te selecteren, de uitbreiding van Chrome van de Doopvont van de gebruiksAdobe [ Hallback ](https://www.aem.live/developer/font-fallback), die een dicht passende doopvont voor browsers bepaalt om te gebruiken alvorens de ladingen van de douanedoopvont. De resulterende fontdeclaraties voor fallback moeten aan het `styles/styles.css` -bestand worden toegevoegd om de prestaties te verbeteren en gebruikers een naadloze ervaring te bieden.
+Om de beste fallback doopvont te selecteren, gebruik Adobe [ de uitbreiding van Chrome van de Fallback van de Doopvont ](https://www.aem.live/developer/font-fallback), die een dicht passende doopvont voor browsers bepaalt om te gebruiken alvorens de douanedoopvont laadt. De resulterende fontdeclaraties voor fallback moeten aan het `styles/styles.css` -bestand worden toegevoegd om de prestaties te verbeteren en gebruikers een naadloze ervaring te bieden.
 
 ![ de uitbreiding van Chrome van de Fallback van de Doopvont 1} {align=center}](./assets/4-website-branding/font-fallback-chrome-plugin.png)
 
@@ -385,10 +385,10 @@ Zodra de veranderingen aan de `wknd-styles` tak worden geduwd, creeer een trekkr
    ```
 
    * De `Fix #1` verwijst naar de eerder gemaakte GitHub-kwestie.
-   * De test URLs vertelt AEM de Synchronisatie van de Code welke takken voor bevestiging en vergelijking te gebruiken. De URL &quot;Na&quot; gebruikt de werkvertakking `wknd-styles` om te controleren hoe de wijzigingen in de code van invloed zijn op de prestaties van de website.
+   * De test URLs vertelt de Synchronisatie van de Code van AEM welke takken voor bevestiging en vergelijking te gebruiken. De URL &quot;Na&quot; gebruikt de werkvertakking `wknd-styles` om te controleren hoe de wijzigingen in de code van invloed zijn op de prestaties van de website.
 
 6. Klik **creëren trektrekverzoek**.
-7. Wacht op de [ AEM app GitHub van de Synchronisatie van de Code ](./1-new-code-project.md) aan **volledige kwaliteitscontroles**. Als ze mislukken, lost u de fouten op en voert u de controles opnieuw uit.
+7. Wacht op de [ app van GitHub van de Synchronisatie van de Code van AEM ](./1-new-code-project.md) aan **volledige kwaliteitscontroles**. Als ze mislukken, lost u de fouten op en voert u de controles opnieuw uit.
 8. Zodra de controles overgaan, **voegt het trektrekkingsverzoek** in `main` samen.
 
 Als de wijzigingen zijn samengevoegd in `main`, worden ze niet beschouwd als geïmplementeerd voor de productie en kan de nieuwe ontwikkeling op basis van deze updates plaatsvinden.

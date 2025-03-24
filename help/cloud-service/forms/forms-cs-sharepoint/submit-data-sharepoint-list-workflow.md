@@ -5,13 +5,13 @@ feature: Adaptive Forms
 type: Documentation
 role: Developer
 level: Beginner
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations
 jira: KT-15126
 exl-id: b369ed05-ba25-4b0e-aa3b-e7fc1621067d
 duration: 52
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 # Gegevens in SharePoint-lijst invoegen met FDM-workflowstap aanroepen
 
 
-In dit artikel worden de stappen beschreven die nodig zijn om gegevens in te voegen in de SharePoint-lijst met de FDM-stap opvragen in AEM workflow.
+In dit artikel worden de stappen beschreven die nodig zijn om gegevens in te voegen in de SharePoint-lijst met de FDM-stap opvragen in de AEM-workflow.
 
 Dit artikel veronderstelt u [ met succes gevormd adaptieve vorm hebt om gegevens naar de lijst van SharePoint voor te leggen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
 
@@ -92,7 +92,7 @@ De ingediende gegevens hebben de volgende indeling. Extraheer het ContactUS JSON
 
 ![ stichting-gebaseerd-vorm ](assets/foundation-based-form.png)
 
-## Adaptief formulier configureren om AEM workflow te activeren
+## Adaptief formulier configureren om de AEM-workflow te activeren
 
 * Maak een adaptief formulier met het formuliergegevensmodel dat u eerder hebt gemaakt.
 * Sleep enkele velden van de gegevensbron naar het formulier.

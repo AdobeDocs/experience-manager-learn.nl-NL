@@ -1,7 +1,7 @@
 ---
 title: Source File Translation gebruiken met AEM Assets
 description: Met Adobe Experience Manager (AEM) Assets kunt u elementen identificeren die gemeenschappelijke kenmerken delen en ze markeren als verwant met de nieuwe functie Verwante Assets. Het laat gebruikers ook een bron/afgeleide verhouding tussen activa bepalen, die het voor gebruikers gemakkelijk maken om de oorsprong van een activa te identificeren. Als u een vertaalworkflow uitvoert op een afgeleid element, worden alle elementen opgehaald waarnaar het bronbestand verwijst en dat dit element bevat voor vertaling, waardoor de inspanningen om meerdere sites te behouden, afnemen.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 feature: Translation
 role: User
@@ -12,7 +12,7 @@ thumbnail: 18331.jpg
 doc-type: Feature Video
 exl-id: 19155d51-18a7-42ca-9a73-1b5fa1355d58
 duration: 248
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%

@@ -1,7 +1,7 @@
 ---
-title: Exporteurs van verkoopmodellen ontwikkelen in AEM
-description: Deze technische wandeling door het instellen van AEM voor gebruik met Sling Model Exporter, het verbeteren van een bestaand Sling Model met behulp van het Exporter-framework voor uitvoering als JSON, en hoe u Exporter-opties en Jackson-annotaties gebruikt om de uitvoer verder aan te passen.
-version: 6.4, 6.5
+title: Exporteurs van verkoopmodellen in AEM ontwikkelen
+description: Deze technische wandeling door het opzetten van AEM voor gebruik met Sling Model Exporter, het verbeteren van een bestaand Sling Model gebruikend het kader van de Exporter aan vertoning als JSON, en hoe te om de opties van de Exporter en de aantekeningen van Jackson te gebruiken om de output verder aan te passen.
+version: Experience Manager 6.4, Experience Manager 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
 doc-type: Technical Video
@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: fc321ed1-5cf7-4bbe-adc6-c4905af7b43c
 duration: 932
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -19,23 +19,23 @@ ht-degree: 0%
 
 # Exporteurs van verkoopmodellen ontwikkelen
 
-Deze technische wandeling door het instellen van AEM voor gebruik met Sling Model Exporter, het verbeteren van een bestaand Sling Model met behulp van het Exporter-framework voor uitvoering als JSON, en hoe u Exporter-opties en Jackson-annotaties gebruikt om de uitvoer verder aan te passen.
+Deze technische wandeling door het opzetten van AEM voor gebruik met Sling Model Exporter, het verbeteren van een bestaand Sling Model gebruikend het kader van de Exporter aan vertoning als JSON, en hoe te om de opties van de Exporter en de aantekeningen van Jackson te gebruiken om de output verder aan te passen.
 
 Sling Model Exporter werd geïntroduceerd in Sling Models v1.3.0. Met deze nieuwe functie kunnen nieuwe annotaties worden toegevoegd aan Sling Models die definiëren hoe het model kan worden geëxporteerd als een ander Java-object, of meer algemeen, in een andere indeling, zoals JSON.
 
 Apache Sling biedt een Jackson JSON-exporter die het meest voorkomende geval van het exporteren van Sling Models als JSON-objecten voor gebruik door programmatische webconsumenten, zoals andere webservices en JavaScript-toepassingen, behandelt.
 
-## AEM configureren voor Verkoopmodel-exportfunctie
+## AEM for Sling Model Exporter configureren
 
 >[!VIDEO](https://video.tv.adobe.com/v/16862?quality=12&learn=on)
 
-[!DNL Sling Model Exporter] is een functie van het [!DNL Apache Sling] -project en is niet rechtstreeks gebonden aan de AEM productreleasecyclus. [!DNL Sling Model Exporter] is compatibel met AEM 6.3 en hoger.
+[!DNL Sling Model Exporter] is een functie van het [!DNL Apache Sling] -project en is niet rechtstreeks gekoppeld aan de AEM-productreleasecyclus. [!DNL Sling Model Exporter] is compatibel met AEM 6.3 en hoger.
 
 ## De use-case voor [!DNL Sling Model Exporter]
 
 >[!VIDEO](https://video.tv.adobe.com/v/16863?quality=12&learn=on)
 
-[!DNL Sling Model Exporter] is ideaal voor het leveraging van het Verkopen Modellen die reeds bedrijfslogica bevatten die HTML vertoningen via HTML (of vroeger JSP) steunen, en de zelfde bedrijfsvertegenwoordiging zoals JSON voor consumptie door de programmatic diensten van het Web of de toepassingen van JavaScript blootstellen.
+[!DNL Sling Model Exporter] is ideaal voor het leveraging Sling Models die reeds bedrijfslogica bevatten die HTML vertoningen via HTML (of vroeger JSP) steunen, en de zelfde bedrijfsvertegenwoordiging zoals JSON voor consumptie door de programmatic diensten van het Web of de toepassingen van JavaScript blootstellen.
 
 ## Een Verkoopmodel-exportfunctie maken
 

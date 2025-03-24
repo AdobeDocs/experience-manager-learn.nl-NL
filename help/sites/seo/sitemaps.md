@@ -1,7 +1,7 @@
 ---
 title: Sitemaps
 description: Leer hoe u uw SEO kunt verhogen door sitemaps voor AEM Sites te maken.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Core Components
 topic: Content Management
 role: Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2022-10-03T00:00:00Z
 doc-type: Technical Video
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
 duration: 937
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Leer hoe u uw SEO kunt verhogen door sitemaps voor AEM Sites te maken.
 
 ### Absolute sitemap-URL&#39;s{#absolute-sitemap-urls}
 
-AEM sitemap steunt absolute URL&#39;s door [ het Verdelen afbeelding ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) te gebruiken. Dit wordt gedaan door toewijzingsknopen op de AEM diensten te creëren die sitemaps (typisch de dienst van AEM Publish) produceren.
+De sitemap van AEM steunt absolute URL&#39;s door [ het Verdelen afbeelding ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) te gebruiken. Dit gebeurt door toewijzingsknooppunten te maken op de AEM-services die sitemaps genereren (doorgaans de AEM-publicatieservice).
 
 Een voorbeelddefinitie van het toewijzingsknooppunt voor `https://wknd.com` kan onder `/etc/map/https` als volgt worden gedefinieerd:
 
@@ -50,7 +50,7 @@ De onderstaande schermafbeelding illustreert een vergelijkbare configuratie, maa
 
 ### OSGi-configuratie Sitemap-planner
 
-Bepaalt de [ OSGi fabrieksconfiguratie ](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) voor de frequentie (gebruikend [ cron uitdrukkingen ](https://cron.help/)) sitemaps wordt re/geproduceerd en in AEM in het voorgeheugen ondergebracht.
+Bepaalt de [ OSGi fabrieksconfiguratie ](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) voor de frequentie (gebruikend [ cron uitdrukkingen ](https://cron.help/)) sitemaps wordt re/geproduceerd en in het voorgeheugen ondergebracht in AEM.
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 
@@ -77,7 +77,7 @@ HTTP-aanvragen voor de sitemapindex en sitemapbestanden toestaan.
 
 ### Herschrijfregel voor Apache-webserver
 
-Zorg ervoor dat de HTTP-aanvragen voor `.xml` sitemap naar de juiste onderliggende AEM pagina worden gerouteerd. Als er geen URL-kortere weg wordt gebruikt of Sling Mappings wordt gebruikt om URL-kortere weg te bereiken, is deze configuratie niet nodig.
+Zorg ervoor dat `.xml` sitemap HTTP-aanvragen naar de juiste onderliggende AEM-pagina worden gerouteerd. Als er geen URL-kortere weg wordt gebruikt of Sling Mappings wordt gebruikt om URL-kortere weg te bereiken, is deze configuratie niet nodig.
 
 `dispatcher/src/conf.d/rewrites/rewrite.rules`
 
@@ -89,7 +89,7 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## Bronnen
 
-+ [ AEM de Documentatie van de Sitemap ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
++ [ de Documentatie van AEM Sitemap ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
 + [ Apache Sling Sitemap documentatie ](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
 + [ Sitemap.org de documentatie van de Sitemap ](https://www.sitemaps.org/protocol.html)
 + [ Sitemap.org de documentatie van het de indexdossier van de Sitemap ](https://www.sitemaps.org/protocol.html#index)

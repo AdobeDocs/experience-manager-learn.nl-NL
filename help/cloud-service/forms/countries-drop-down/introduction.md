@@ -5,12 +5,13 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16517
-source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
+exl-id: aef151bc-daf1-4abd-914a-6299f3fb58e4
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%
@@ -35,10 +36,10 @@ Laten we induiken en deze dynamische en krachtige component maken!
 
 Voor het ontwikkelen van een nieuwe kerncomponent in Adobe Experience Manager (AEM) moet aan verschillende voorwaarden worden voldaan om een soepel ontwikkelingsproces te garanderen. Dit is wat u nodig hebt voordat u aan de slag gaat:
 
-* AEM ontwikkelomgeving: een functionele installatie in de cloud die lokaal wordt uitgevoerd
-* Toegang tot AEM hulpmiddelen van de Ontwikkeling zoals de Code van Visual Studio of IntelliJ
-* MAven instellen en AEM project met nieuwste archetype
-* Basiskennis van AEM concepten
+* AEM Development Environment: een functionele, voor de cloud geschikte installatie die lokaal wordt uitgevoerd
+* Toegang tot de hulpmiddelen van de Ontwikkeling van AEM zoals de Code van Visual Studio of IntelliJ
+* MAven-installatie en AEM-project met nieuwste archetype
+* Basiskennis van AEM-concepten
 * Basisgereedschappen en -instellingen zoals de Git-opslagplaats, rechterversie van JDK
 
 

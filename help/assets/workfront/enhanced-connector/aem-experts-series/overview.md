@@ -1,7 +1,7 @@
 ---
 title: Workfront en AEM Assets integreren met behulp van de verbeterde connector
 description: Leer over de grondbeginselen van de verbeterde schakelaarintegratie van Adobe Workfront en Experience Manager Assets.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management, Integrations
 feature: Asset Management
 role: Admin, User
@@ -13,7 +13,7 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 4f279c0d-270f-433e-b047-88c02f5b1e78
 duration: 49
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -22,16 +22,16 @@ ht-degree: 0%
 
 # Workfront en AEM Assets integreren met de verbeterde connector
 
-![ AEM de Reeks van Deskundigen ](./assets/banner.png)
+![ de DeskundigenReeks van AEM ](./assets/banner.png)
 
-Deelnemen aan de Workfront- en Experience Manager Assets-experts van Adobe in deze videoreeks van vier delen, aangezien ze de in- en uitgangen van de integratie van Workfront en AEM Assets met behulp van de verbeterde connector demonstreren en bespreken.
+Sluit u aan bij de Adobe Workfront en Experience Manager Assets-experts in deze videoreeks met vier delen, omdat ze de voordelen en uitgangen van de integratie van Workfront en AEM Assets met behulp van de verbeterde connector demonstreren en bespreken.
 
-Deze vier deeldeskundigenreeksen volgen op een groep deskundigen van de Adobe - van productmanagers, adviseurs, en Adobe partners - die discussiëren over:
+Deze vier deeldeskundigenreeksen volgen op een groep van Adobe-experts - van productmanagers, consultants en Adobe-partners - die discussiëren over:
 
-1. [De eerste configuratie uitvoeren in Workfront en AEM](./setup.md)
+1. [De initiële setup-configuraties uitvoeren in Workfront en AEM](./setup.md)
 2. [Synchronisatie van metagegevens configureren tussen aangepaste Workfront-formulieren en AEM](./custom-forms.md)
-3. [Het gebruiken van AEM Markeringen, project verbonden omslagen, de Verbinding van Activa van de Adobe en de omslagmeta-gegevensschema&#39;s om waarde te maximaliseren](./aem-tags-project-linked-folders-and-folder-metadata.md)
-4. [Geavanceerde AEM gebruiken om bedrijfsprocessen in AEM en Workfront en andere geavanceerde instellingen te stroomlijnen](./advanced-settings-and-workflows.md)
+3. [AEM-tags gebruiken, gekoppelde mappen in een project, Adobe Asset Link en metagegevensschema&#39;s voor mappen om de waarde te maximaliseren](./aem-tags-project-linked-folders-and-folder-metadata.md)
+4. [Geavanceerde AEM-workflow gebruiken om bedrijfsprocessen in AEM en Workfront en andere geavanceerde instellingen te stroomlijnen](./advanced-settings-and-workflows.md)
 
 <table>
   <td>
@@ -66,16 +66,16 @@ Deze vier deeldeskundigenreeksen volgen op een groep deskundigen van de Adobe - 
     <!-- AEM Tags, project linked folders, and folder metadata -->
     <td>
       <a href="./aem-tags-project-linked-folders-and-folder-metadata.md">
-        <img alt="AEM tags, aan een project gekoppelde mappen en mapmetagegevens" 
+        <img alt="AEM-tags, aan een project gekoppelde mappen en mapmetagegevens" 
              src="./assets/aem-tags.png">
       </a>
       <div>
-         <a href="./aem-tags-project-linked-folders-and-folder-metadata.md"><strong> AEM Markeringen, project verbonden omslagen, en omslagmeta-gegevens </strong></a>
+         <a href="./aem-tags-project-linked-folders-and-folder-metadata.md"><strong> de Markeringen van AEM, project verbonden omslagen, en omslagmeta-gegevens </strong></a>
          <br/><em> Deel 3/4 </em> 
       </div>
       <p>
         <br/>
-            Leer hoe u AEM taxonomie vanuit Workfront kunt besturen, gekoppelde projectmappen kunt gebruiken en gegevens kunt AEM naar metagegevens van de elementenmap.
+            Leer hoe u de AEM-taxonomie vanuit Workfront kunt besturen, gekoppelde projectmappen kunt gebruiken en gegevens kunt koppelen aan de metagegevens van de AEM-middelenmap.
       </p>
    </td>   
    <!-- Advanced workflows -->
@@ -90,7 +90,7 @@ Deze vier deeldeskundigenreeksen volgen op een groep deskundigen van de Adobe - 
       </div>
       <p>
         <br/>
-            Leer hoe u geavanceerde instellingen voor de Workfront for AEM verbeterde connector kunt gebruiken om gegevenssynchronisatie te beheren met behulp van geavanceerde workflows.
+            Leer hoe u geavanceerde instellingen voor de verbeterde connector van Workfront for AEM kunt gebruiken voor het beheren van gegevenssynchronisatie met behulp van geavanceerde workflows.
       </p>
    </td>
   </tr>  

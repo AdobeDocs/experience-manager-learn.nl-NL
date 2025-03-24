@@ -1,7 +1,7 @@
 ---
-title: Mobiele implementaties zonder koptelefoon AEM
+title: AEM Headless mobile-implementaties
 description: Meer informatie over implementatieoverwegingen voor mobiele AEM Headless-implementaties.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
@@ -10,28 +10,28 @@ jira: KT-10796
 thumbnail: KT-10796.jpg
 exl-id: 1f536079-b3ce-4807-be88-804378e75d37
 duration: 31
-source-git-commit: 23ea95cfdf7e4c9fde4b53e9f68079b4d267ca20
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
 
 ---
 
-# Mobiele implementaties zonder koptelefoon AEM
+# AEM Headless mobile-implementaties
 
-AEM mobiele implementaties zonder koptelefoon zijn systeemeigen mobiele apps voor iOS, Android™, enz. die op een krantenloze manier inhoud verbruiken en interageren AEM.
+Mobiele AEM Headless-implementaties zijn systeemeigen mobiele apps voor iOS, Android™, enz. die inhoud in AEM op een krantenloze manier verbruiken en interageren.
 
-Mobiele implementaties vereisen een minimale configuratie, aangezien HTTP-verbindingen met AEM headless API&#39;s niet in de context van een browser worden gestart.
+Mobiele implementaties vereisen een minimale configuratie, aangezien HTTP-verbindingen met AEM Headless API&#39;s niet worden geïnitieerd in de context van een browser.
 
 ## Implementatieconfiguraties
 
 De volgende implementatieconfiguratie moet op zijn plaats zijn voor mobiele apps.
 
-| Mobiele app maakt verbinding met → | AEM auteur | AEM Publish | Voorvertoning AEM |
+| Mobiele app maakt verbinding met → | AEM-auteur | AEM Publiceren | AEM Preview |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [ de filters van Dispatcher ](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Delen van bronnen van oorsprong (CORS) | ✘ | ✘ | ✘ |
-| [ AEM gastheren ](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| [ de gastheren van AEM ](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Voorbeeld van mobiele apps
 
@@ -72,7 +72,7 @@ Adobe biedt voorbeelden van mobiele apps voor iOS en Android™.
            <div class="card-content is-padded-small">
                <div class="content">
                    <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/android-app.md" title="Android™-app">Android™-app</a></p>
-                   <p class="is-size-6">Een voorbeeld van een Java™ Android™-app die inhoud van AEM GraphQL-API's zonder koppen gebruikt.</p>
+                   <p class="is-size-6">Een voorbeeld van een Java™ Android™-app die inhoud van AEM Headless GraphQL-API's gebruikt.</p>
                    <a href="../example-apps/android-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Voorbeeld van de Mening </span>
                    </a>

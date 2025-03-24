@@ -1,14 +1,14 @@
 ---
-title: Gebruik de Mening van de Kalender met AEM Projecten en Inbox
-description: AEM de Mening van de Kalender projecten en taken in een kalendermening volgt voor gemakkelijker projectbeheer en het plannen. In de kalenderweergave zou de gebruiker over het geheel genomen inzicht hebben in projecten en taken die momenteel in uitvoering zijn, gepland zijn en binnenkort en achterstallig zijn.
-version: 6.4, 6.5
+title: De kalenderweergave gebruiken met AEM Projecten en Postvak In
+description: In de AEM Calendar-weergave worden projecten en taken bijgehouden in een kalenderweergave, zodat u projecten eenvoudiger kunt beheren en plannen. In de kalenderweergave zou de gebruiker over het geheel genomen inzicht hebben in projecten en taken die momenteel in uitvoering zijn, gepland zijn en binnenkort en achterstallig zijn.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Workflow, Projects
 doc-type: Feature Video
 topic: Collaboration
 role: User
 level: Beginner
 duration: 478
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 0%
@@ -16,9 +16,9 @@ ht-degree: 0%
 ---
 
 
-# Gebruik de Mening van de Kalender met AEM Projecten en Inbox
+# De kalenderweergave gebruiken met AEM Projecten en Postvak In
 
-AEM de Mening van de Kalender projecten en taken in een kalendermening volgt voor gemakkelijker projectbeheer en het plannen. In de kalenderweergave zou de gebruiker over het geheel genomen inzicht hebben in projecten en taken die momenteel in uitvoering zijn, gepland zijn en binnenkort en achterstallig zijn.
+In de AEM Calendar-weergave worden projecten en taken bijgehouden in een kalenderweergave, zodat u projecten eenvoudiger kunt beheren en plannen. In de kalenderweergave zou de gebruiker over het geheel genomen inzicht hebben in projecten en taken die momenteel in uitvoering zijn, gepland zijn en binnenkort en achterstallig zijn.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16804?quality=12&learn=on)
 

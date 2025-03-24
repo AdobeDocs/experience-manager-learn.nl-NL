@@ -2,7 +2,7 @@
 title: Workflows automatisch starten
 description: Workflows voor automatisch opstarten breiden de verwerking van bedrijfsmiddelen uit door automatisch een aangepaste workflow aan te roepen bij het uploaden of opnieuw verwerken.
 feature: Asset Compute Microservices, Workflow
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-4994
 thumbnail: 37323.jpg
 topic: Development
@@ -12,7 +12,7 @@ last-substantial-update: 2023-05-14T00:00:00Z
 doc-type: Feature Video
 exl-id: 5e423f2c-90d2-474f-8bdc-fa15ae976f18
 duration: 385
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -29,16 +29,16 @@ Workflows voor automatisch opstarten breiden de verwerking van bedrijfsmiddelen 
 >
 >Gebruik Workflows automatisch starten voor het aanpassen van elementen na verwerking in plaats van Workflowopstartsters te gebruiken. Auto-begin werkschema&#39;s worden _slechts_ aangehaald zodra een activa volledige verwerking in plaats van draagraketten is die veelvoudige tijden tijdens activaverwerking kunnen worden aangehaald.
 
-## De Post-verwerkingsworkflow aanpassen
+## De naverwerkingsworkflow aanpassen
 
-Om het Post-Verwerkingswerkschema aan te passen, kopieer het standaardPost-Verwerkingsmodel van de Wolk Assets [ werkschema ](../../foundation/workflow/use-the-workflow-editor.md).
+Om het nabewerkingswerkschema aan te passen, kopieer het standaardAssets Cloud naverwerkings [ werkschemamodel ](../../foundation/workflow/use-the-workflow-editor.md).
 
 1. Begin bij het scherm van de Modellen van het Werkschema door aan _Hulpmiddelen_ te navigeren > _Werkschema_ > _Modellen_
-2. Vind en selecteer het _Assets Cloud Post-Verwerkingsende_ werkschemamodel <br/>
-   ![ selecteer het Assets Cloud Post-Verwerkingsmodel van het Werkschema ](assets/auto-start-workflow-select-workflow.png)
+2. Vind en selecteer _Assets Cloud na-Verwerking_ werkschemamodel <br/>
+   ![ selecteer het model van het Werkschema van de naverwerking van de Wolk van Assets ](assets/auto-start-workflow-select-workflow.png)
 3. Selecteer de _knoop van het Exemplaar_ om uw douanewerkschema te creëren
-4. Selecteer uw nu werkschemamodel (dat _Assets Cloud Post-Processing1_ zal worden genoemd) en klik _uitgeven_ knoop om het werkschema uit te geven
-5. Van de Eigenschappen van het Werkschema, geef uw douane Post-Verwerkingswerkschema een betekenisvolle naam <br/>
+4. Selecteer uw nu werkschemamodel (dat _Assets Cloud na-Processing1_ zal worden genoemd) en klik _uitgeven_ knoop om het werkschema uit te geven
+5. Van de Eigenschappen van het Werkschema, geef uw douane het werkschema na-Verwerking een betekenisvolle naam <br/>
    ![ Veranderend de Naam ](assets/auto-start-workflow-change-name.png)
 6. Voeg de stappen toe om aan uw bedrijfsvereisten te voldoen. Voeg in dit geval een taak toe wanneer de activa volledige verwerking zijn. Zorg ervoor dat de laatste stap van het werkschema altijd de _Volledige 1} stap van het Werkschema <br/> is_
    ![ voegt de Stappen van het Werkschema ](assets/auto-start-workflow-customize-steps.png) toe
@@ -49,14 +49,14 @@ Om het Post-Verwerkingswerkschema aan te passen, kopieer het standaardPost-Verwe
 
 7. Selecteer de _knoop van de Synchronisatie_ om uw veranderingen te bewaren en het model van het Werkschema te synchroniseren
 
-## Een aangepaste Post-verwerkingsworkflow gebruiken
+## Een aangepaste naverwerkingsworkflow gebruiken
 
-Aangepaste Post-verwerking is geconfigureerd in mappen. Een aangepaste Post-verwerkingsworkflow configureren voor een map:
+Aangepaste naverwerking wordt geconfigureerd in mappen. Een aangepaste naverwerkingsworkflow voor een map configureren:
 
 1. Selecteer de map waarvoor u de workflow wilt configureren en bewerk de eigenschappen van de map
 2. Schakelaar aan het _Verwerking van Activa_ lusje
-3. Selecteer uw douane Post-Verwerkingswerkschema in het _auto-begin van het Werkschema_ selectievak <br/>
-   ![ plaats het Post-Verwerkingswerkschema ](assets/auto-start-workflow-set-workflow.png)
+3. Selecteer uw werkschema van de Douane na-Verwerking in het _auto-begin Werkschema_ selectievak <br/>
+   ![ plaats het naverwerken Werkschema ](assets/auto-start-workflow-set-workflow.png)
 4. Uw wijzigingen opslaan
 
-De aangepaste Post-Processing Workflow wordt nu uitgevoerd voor alle elementen die in die map zijn geüpload of opnieuw verwerkt.
+De aangepaste naverwerkingsworkflow wordt nu uitgevoerd voor alle elementen die in die map zijn geüpload of opnieuw verwerkt.

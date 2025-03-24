@@ -2,7 +2,7 @@
 title: JWT-toegangstoken genereren in App Builder-actie
 description: Leer hoe u een toegangstoken genereert door JWT-referenties te gebruiken voor gebruik in een App Builder-handeling.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ jira: KT-11743
 last-substantial-update: 2023-01-17T00:00:00Z
 exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
 duration: 151
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # JWT-toegangstoken genereren in App Builder-actie
 
-App Builder-acties moeten mogelijk communiceren met Adobe-API&#39;s die zijn gekoppeld aan Adobe Developer Console-projecten die de App Builder-app ook implementeert.
+App Builder-acties moeten mogelijk communiceren met Adobe API&#39;s die zijn gekoppeld aan Adobe Developer Console-projecten waaraan de App Builder-app is toegewezen.
 
 Dit kan de actie van App Builder vereisen om zijn eigen toegangstoken JWT verbonden aan het gewenste project van Adobe Developer Console te produceren.
 
@@ -50,7 +50,7 @@ De waarden voor `JWT_CLIENT_ID` , `JWT_CLIENT_SECRET` , `JWT_TECHNICAL_ACCOUNT_I
 
 ### Metaretten
 
-Bepaal de Adobe-API&#39;s en de bijbehorende metafoons met de App Builder-actie. U kunt metatomen met komma&#39;s als scheidingsteken weergeven in de `JWT_METASCOPES` -toets. De geldige metarealen zijn vermeld in [ JWT van de Adobe documentatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/).
+Bepaal de Adobe API&#39;s en de bijbehorende metatomen waarmee de App Builder-actie communiceert. U kunt metatomen met komma&#39;s als scheidingsteken weergeven in de `JWT_METASCOPES` -toets. De geldige metarealen zijn vermeld in [ Adobe JWT Metascope documentatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/).
 
 
 De volgende waarde kan bijvoorbeeld worden toegevoegd aan de `JWT_METASCOPES` -toets in de `.env` :
@@ -136,7 +136,7 @@ De sleutels die onder `inputs` worden gedefinieerd, zijn beschikbaar voor het `p
 
 ## JWT-referenties voor toegang tot token
 
-In de actie van App Builder, zijn de geloofsbrieven JWT beschikbaar in het `params` voorwerp, en bruikbaar door [`@adobe/jwt-auth` ](https://www.npmjs.com/package/@adobe/jwt-auth) om een toegangstoken te produceren, die beurtelings tot andere Adobe APIs en de diensten kan toegang hebben.
+In de actie van App Builder, zijn de geloofsbrieven JWT beschikbaar in het `params` voorwerp, en door [`@adobe/jwt-auth` kunnen worden gebruikt ](https://www.npmjs.com/package/@adobe/jwt-auth) om een toegangstoken te produceren, die beurtelings tot andere Adobe APIs en de diensten kan toegang hebben.
 
 ```javascript
 const fetch = require("node-fetch");

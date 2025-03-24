@@ -2,14 +2,14 @@
 title: Afbeeldingen verscherpen gebruiken met AEM Dynamic Media
 description: In deze video wordt uitgelegd waarom het verscherpen van een afbeelding van essentieel belang is voor het behouden van de beeldkwaliteit en voor het gebruik van geavanceerde instellingen voor het maken van het perfecte beeld.
 feature: Image Profiles, Viewer Presets
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 3b3002db-f739-486c-b25f-6b7918a9d9a4
 duration: 8
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 0%

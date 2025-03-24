@@ -2,14 +2,14 @@
 title: Aangepaste processtap implementeren
 description: Aangepaste formulierbijlagen naar het bestandssysteem schrijven met behulp van een aangepaste processtap
 feature: Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 879518db-3f05-4447-86e8-5802537584e5
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 203
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Deze zelfstudie is bedoeld voor AEM Forms-klanten die een aangepaste processtap moeten implementeren. Een processtap kan een ECMA-script uitvoeren of aangepaste Java™-code aanroepen om bewerkingen uit te voeren. Dit leerprogramma zal de stappen verklaren nodig om WorkflowProcess uit te voeren dat door de processtap wordt uitgevoerd.
 
-De belangrijkste reden voor het uitvoeren van een stap van het douaneproces is het uitbreiden van het AEMWerkschema. Als u bijvoorbeeld AEM Forms-componenten in uw workflowmodel gebruikt, kunt u de volgende bewerkingen uitvoeren
+De belangrijkste reden voor het implementeren van een stap voor een aangepast proces is het uitbreiden van de AEM-workflow. Als u bijvoorbeeld AEM Forms-componenten in uw workflowmodel gebruikt, kunt u de volgende bewerkingen uitvoeren
 
 * De adaptieve formulierbijlage(s) opslaan naar het bestandssysteem
 * De ingediende gegevens bewerken
@@ -29,7 +29,7 @@ Om het bovengenoemde gebruikscase te verwezenlijken, zult u typisch een dienst O
 
 ## Maven Project maken
 
-De eerste stap bestaat uit het maken van een gemodelleerd project met de juiste Adobe Maven Archetype. De gedetailleerde stappen worden vermeld in dit [ artikel ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Zodra u uw Geweven project hebt die in Eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
+De eerste stap bestaat uit het maken van een gemaven project met behulp van het juiste Adobe Maven Archetype. De gedetailleerde stappen worden vermeld in dit [ artikel ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Zodra u uw Geweven project hebt die in Eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
 
 
 ### Klasse maken die WorkflowProcess implementeert
@@ -48,7 +48,7 @@ De methode execute geeft toegang tot de volgende drie variabelen:
 
 **MetaDataMap**: Alle meta-gegevens verbonden aan het werkschema. Alle procesargumenten die aan de processtap worden doorgegeven, zijn beschikbaar via het object MetaDataMap.[ API Documentatie ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
-In deze zelfstudie gaan we de bijlagen die zijn toegevoegd aan Adaptief formulier naar het bestandssysteem schrijven als onderdeel van de AEM workflow.
+In deze zelfstudie schrijven we de bijlagen die zijn toegevoegd aan Adaptief formulier naar het bestandssysteem als onderdeel van de AEM-workflow.
 
 Voor dit gebruik is de volgende Java™-klasse geschreven
 
@@ -137,7 +137,7 @@ Regel 1 - bepaalt de eigenschappen voor onze component. De eigenschap `process.l
 
 Lijnen 13-15 - De procesargumenten die tot deze component OSGi worden overgegaan zijn verdeeld gebruikend &quot;,&quot;separator. De waarden voor attachPath en saveToLocation worden dan gehaald uit de koordserie.
 
-* BijlagePath - Dit is de zelfde plaats die u in de AanpassingsVorm hebt gespecificeerd toen u de verzendactie van Aangepast Vorm vormde om AEM Workflow aan te halen. Dit is een naam van de map waarvan u wilt dat de bijlagen worden opgeslagen in AEM ten opzichte van de lading van de workflow.
+* BijlagePath - Dit is de zelfde plaats die u in het Aangepaste Vorm hebt gespecificeerd toen u de verzendactie van Aangepast Vorm vormde om de Workflow van AEM aan te halen. Dit is een naam van de map waarvan u wilt dat de bijlagen in AEM worden opgeslagen ten opzichte van de lading van de workflow.
 
 * saveToLocation - dit is de plaats die u de gehechtheid wilt worden bewaard op het dossiersysteem van uw AEM server.
 

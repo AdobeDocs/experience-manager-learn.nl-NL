@@ -1,7 +1,7 @@
 ---
 title: Ontwikkelen met het Stijlsysteem
-description: Leer hoe te om individuele stijlen uit te voeren en de Componenten van de Kern te hergebruiken gebruikend het Systeem van de Stijl van de Experience Manager. Deze zelfstudie behandelt het ontwikkelen voor het Systeem van de Stijl om de Componenten van de Kern met merkspecifieke CSS en geavanceerde beleidsconfiguraties van de Redacteur van het Malplaatje uit te breiden.
-version: 6.5, Cloud Service
+description: Leer hoe u afzonderlijke stijlen implementeert en Core Components opnieuw gebruikt met Experience Manager Style System. Deze zelfstudie behandelt het ontwikkelen voor het Systeem van de Stijl om de Componenten van de Kern met merkspecifieke CSS en geavanceerde beleidsconfiguraties van de Redacteur van het Malplaatje uit te breiden.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Core Components, Style System
 topic: Content Management, Development
 role: Developer
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
 recommendations: noDisplay, noCatalog
 duration: 358
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 0%
@@ -22,13 +22,13 @@ ht-degree: 0%
 
 # Ontwikkelen met het Stijlsysteem {#developing-with-the-style-system}
 
-Leer hoe te om individuele stijlen uit te voeren en de Componenten van de Kern te hergebruiken gebruikend het Systeem van de Stijl van de Experience Manager. Deze zelfstudie behandelt het ontwikkelen voor het Systeem van de Stijl om de Componenten van de Kern met merkspecifieke CSS en geavanceerde beleidsconfiguraties van de Redacteur van het Malplaatje uit te breiden.
+Leer hoe u afzonderlijke stijlen implementeert en Core Components opnieuw gebruikt met Experience Manager Style System. Deze zelfstudie behandelt het ontwikkelen voor het Systeem van de Stijl om de Componenten van de Kern met merkspecifieke CSS en geavanceerde beleidsconfiguraties van de Redacteur van het Malplaatje uit te breiden.
 
 ## Vereisten {#prerequisites}
 
 Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikkelomgeving ](overview.md#local-dev-environment).
 
-Het wordt ook geadviseerd om de [ cliënt-zijBibliotheken en het 1} leerprogramma van het Voorste-Eind van het Werkschema te herzien {om de grondbeginselen van cliënt-zijbibliotheken en de diverse front-end hulpmiddelen te begrijpen die in het AEM project worden gebouwd.](client-side-libraries.md)
+Het wordt ook geadviseerd om de [ cliënt-zijBibliotheken en het 1} leerprogramma van het Voorste-Eind van het Werkschema te herzien {om de grondbeginselen van cliënt-zijbibliotheken en de diverse front-end hulpmiddelen te begrijpen die in het project van AEM worden gebouwd.](client-side-libraries.md)
 
 ### Starter-project
 
@@ -45,7 +45,7 @@ Bekijk de basislijncode waarop de zelfstudie is gebaseerd:
    $ git checkout tutorial/style-system-start
    ```
 
-1. Stel codebasis aan een lokale AEM instantie op gebruikend uw Maven vaardigheden:
+1. Stel codebasis aan een lokale instantie van AEM op gebruikend uw Maven vaardigheden:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -63,7 +63,7 @@ U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-w
 
 ## Doelstelling
 
-1. Begrijp hoe te om het Systeem van de Stijl te gebruiken om merkspecifieke CSS op AEM Componenten van de Kern toe te passen.
+1. Begrijp hoe u het Stijlsysteem kunt gebruiken om merkspecifieke CSS toe te passen op AEM Core Components.
 1. Leer meer over BEM-notatie en hoe u deze kunt gebruiken om stijlen zorgvuldig in bereik te brengen.
 1. Geavanceerde beleidsconfiguraties toepassen met bewerkbare sjablonen.
 
@@ -93,7 +93,7 @@ De [ ontwerpen van het Artikel van WKND ](assets/pages-templates/wknd-article-de
 
 ### Titelbeleid toevoegen
 
-Voeg een beleid voor de componenten van de Titel toe om inhoudsauteurs toe te staan om de onderstreepte stijl te kiezen om op specifieke componenten toe te passen. Dit wordt gedaan gebruikend de Redacteur van het Malplaatje binnen AEM.
+Voeg een beleid voor de componenten van de Titel toe om inhoudsauteurs toe te staan om de onderstreepte stijl te kiezen om op specifieke componenten toe te passen. Dit doet u met de Sjablooneditor in AEM.
 
 1. Navigeer aan het **malplaatje van de Pagina van het Artikel** van: [ http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html ](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)
 
@@ -115,7 +115,7 @@ Voeg een beleid voor de componenten van de Titel toe om inhoudsauteurs toe te st
 
    >[!NOTE]
    >
-   > Met de waarde `cmp-title--underline` wordt de CSS-klasse gevuld op de buitenste div van de markering HTML van de component.
+   > Met de waarde `cmp-title--underline` wordt de CSS-klasse gevuld op de buitenste div van de HTML-opmaak van de component.
 
 ### De stijl Onderstrepen toepassen
 
@@ -130,7 +130,7 @@ Laten we als auteur de onderstrepingsstijl toepassen op bepaalde titelcomponente
    >
    > Op dit punt vindt geen zichtbare wijziging plaats omdat de `underline` -stijl niet is geïmplementeerd. In de volgende oefening, wordt deze stijl uitgevoerd.
 
-1. Klik het **pictogram van de Informatie van de Pagina** > **Mening zoals Gepubliceerd** om de pagina buiten AEM redacteur te inspecteren.
+1. Klik het **pictogram van de Informatie van de Pagina** > **Mening zoals Gepubliceerd** om de pagina buiten de redacteur van AEM te inspecteren.
 1. Gebruik de browsergereedschappen om te controleren of de CSS-klasse `cmp-title--underline` is toegepast op de buitenste div van de markering rondom de component Title.
 
    ![ Div met onderstreepte toegepaste klasse ](assets/style-system/div-underline-class-applied.png)
@@ -146,7 +146,7 @@ Laten we als auteur de onderstrepingsstijl toepassen op bepaalde titelcomponente
 
 ### Implementeer de onderstrepingsstijl - ui.frontend
 
-Daarna, voer de onderstreepte stijl uit gebruikend de {**module 0} ui.frontend van het AEM project.** De webpack ontwikkelingsserver die met de {**module 0} ui.frontend {wordt gebundeld om de stijlen *voor* het opstellen aan een lokale instantie van AEM voor te vertonen wordt gebruikt.**
+Daarna, voer de onderstreepte stijl uit gebruikend de {**module 0} ui.frontend van het project van AEM.** De webpack ontwikkelingsserver die met de {**module 0} ui.frontend {wordt gebundeld om de stijlen *voor* het opstellen aan een lokale instantie van AEM te voorproef wordt gebruikt.**
 
 1. Begin het `watch` proces van binnen de **ui.frontend** module:
 
@@ -155,7 +155,7 @@ Daarna, voer de onderstreepte stijl uit gebruikend de {**module 0} ui.frontend v
    $ npm run watch
    ```
 
-   Dit begint een proces dat veranderingen in de module `ui.frontend` controleert en de veranderingen in de AEM instantie synchroniseert.
+   Hiermee wordt een proces gestart dat de wijzigingen in de module `ui.frontend` controleert en de wijzigingen in de instantie AEM synchroniseert.
 
 
 1. Retourneer uw IDE en open het bestand `_title.scss` van: `ui.frontend/src/main/webpack/components/_title.scss` .
@@ -185,13 +185,13 @@ Daarna, voer de onderstreepte stijl uit gebruikend de {**module 0} ui.frontend v
    >
    >Het wordt beschouwd als beste praktijken om werkingsgebiedstijlen aan de doelcomponent altijd strak te maken. Dit zorgt ervoor dat extra stijlen andere gebieden van de pagina niet beïnvloeden.
    >
-   >Alle Componenten van de Kern houden zich aan **[BEM aantekening ](https://github.com/adobe/aem-core-wcm-components/wiki/css-coding-conventions)** aan. Het wordt aanbevolen de buitenste CSS-klasse als doel in te stellen wanneer u een standaardstijl voor een component maakt. Een andere beste manier is om klassennamen te richten die door de aantekening van de Component van de Kern worden gespecificeerd BEM eerder dan HTML elementen.
+   >Alle Componenten van de Kern houden zich aan **[BEM aantekening ](https://github.com/adobe/aem-core-wcm-components/wiki/css-coding-conventions)** aan. Het wordt aanbevolen de buitenste CSS-klasse als doel in te stellen wanneer u een standaardstijl voor een component maakt. Een andere beste manier is om klassennamen te richten die door de notatie van de Component BEM van de Kern eerder dan de elementen van HTML worden gespecificeerd.
 
 1. Ga terug naar de browser en de AEM pagina. De stijl Onderstrepen wordt toegevoegd:
 
    ![ onderstreepte stijl zichtbaar in webpack dev server ](assets/style-system/underline-implemented-webpack.png)
 
-1. In de Redacteur van de AEM, zou u nu in en van **moeten kunnen van de Onderstreping** stijl van een knevel voorzien en zien dat de veranderingen visueel weerspiegeld.
+1. In de Redacteur van AEM, zou u nu in en van **moeten kunnen van de Onderstreping** stijl van een knevel voorzien en zien dat de veranderingen visueel weerspiegeld.
 
 ## Stijl prijsblok - Tekst {#text-component}
 
@@ -252,7 +252,7 @@ Voeg vervolgens een beleid toe voor de tekstcomponenten.
 
 ### Implementeer de stijl voor het aanhalingsteken - ui.frontend
 
-Volgende implementeren de stijl van het Blok van het Citaat met behulp van de **module 0} ui.frontend van het AEM project.**
+Daarna implementeren we de stijl van het Blok van het Citaat met behulp van de **module** ui.frontend van het AEM-project.
 
 1. Als niet reeds lopend, begin het `watch` proces van binnen de **ui.frontend** module:
 
@@ -334,17 +334,17 @@ main.container {
 }
 ```
 
-In plaats van het richten van het `main` element van de HTML, zou het Systeem van de Stijl kunnen worden gebruikt om a **Vaste breedte** stijl als deel van het beleid van de Container tot stand te brengen. Het Systeem van de Stijl kon gebruikers de optie geven om tussen **Vaste breedte** en **Dynamische breedte** containers van een knevel te voorzien.
+In plaats van het richten van het `main` element van HTML, zou het Systeem van de Stijl kunnen worden gebruikt om a **Vaste breedte** stijl als deel van het beleid van de Container tot stand te brengen. Het Systeem van de Stijl kon gebruikers de optie geven om tussen **Vaste breedte** en **Dynamische breedte** containers van een knevel te voorzien.
 
 1. **Uitdaging van de Bonen** - gebruiks lessen die van de vorige oefeningen worden geleerd en gebruik het Systeem van de Stijl om a **Vaste breedte** en **Fluid breedte** stijlen voor de component van de Container uit te voeren.
 
 ## Gefeliciteerd! {#congratulations}
 
-Gefeliciteerd, de artikelpagina is bijna opgemaakt en u hebt praktijkervaring opgedaan met het systeem AEM stijl.
+Gefeliciteerd, de artikelpagina is bijna opgemaakt en u hebt praktijkervaring opgedaan met het AEM Style System.
 
 ### Volgende stappen {#next-steps}
 
-Leer de stappen van begin tot eind om a [ douanecomponent AEM ](custom-component.md) tot stand te brengen die inhoud authored in een Dialoog toont, en verkent het ontwikkelen van een het Verkopen Model om bedrijfslogica in te kapselen die HTML van de component bevolkt.
+Leer de stappen van begin tot eind om de Component van a [ douaneAEM ](custom-component.md) tot stand te brengen die inhoud toont die in een Dialoog wordt geschreven, en verkent het ontwikkelen van een het Verkopen Model om bedrijfslogica in te kapselen die HTML van de component bevolkt.
 
 Bekijk de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd) of herzie en stel plaatselijk de code bij de tak van het Git `tutorial/style-system-solution` op.
 

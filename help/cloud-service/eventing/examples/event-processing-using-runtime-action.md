@@ -1,7 +1,7 @@
 ---
-title: AEM Gebeurtenissen verwerken met Adobe I/O Runtime Action
-description: Leer hoe u ontvangen AEM Gebeurtenissen verwerkt met Adobe I/O Runtime Action.
-version: Cloud Service
+title: AEM Events processing using Adobe I/O Runtime Action
+description: Leer hoe u ontvangen AEM-gebeurtenissen verwerkt met Adobe I/O Runtime Action.
+version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
 role: Architect, Developer
@@ -12,44 +12,44 @@ last-substantial-update: 2024-01-30T00:00:00Z
 jira: KT-14879
 thumbnail: KT-14879.jpeg
 exl-id: c362011e-89e4-479c-9a6c-2e5caa3b6e02
-source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
 
 ---
 
-# AEM Gebeurtenissen verwerken met Adobe I/O Runtime Action
+# AEM Events processing using Adobe I/O Runtime Action
 
-Leer hoe te om ontvangen AEM Gebeurtenissen te verwerken gebruikend [ Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) Actie. Dit voorbeeld verbetert het vroegere voorbeeld [ Actie van Adobe I/O Runtime en AEM Gebeurtenissen ](runtime-action.md), zorg ervoor u het alvorens met dit hebt voltooid.
+Leer hoe te om ontvangen Gebeurtenissen van AEM te verwerken gebruikend [ Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) Actie. Dit voorbeeld verbetert het vroegere voorbeeld [ Actie van Adobe I/O Runtime en de Gebeurtenissen van AEM ](runtime-action.md), zorg ervoor u het alvorens met dit hebt voltooid.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427054?quality=12&learn=on)
 
-In dit voorbeeld worden de oorspronkelijke gebeurtenisgegevens en de ontvangen gebeurtenis opgeslagen als een activiteitenbericht in Adobe I/O Runtime-opslag. Nochtans, als de gebeurtenis van _Gewijzigd het Fragment van de Inhoud_ type is, dan roept het ook AEM auteursdienst om de wijzigingsdetails te vinden. Tot slot worden de gebeurtenisdetails weergegeven in één paginatoepassing (SPA).
+In dit voorbeeld worden de oorspronkelijke gebeurtenisgegevens en de ontvangen gebeurtenis opgeslagen als een activiteitenbericht in Adobe I/O Runtime-opslag. Nochtans, als de gebeurtenis van _Gewijzigd het Fragment van de Inhoud_ type is, dan roept het ook de auteursdienst van AEM om de wijzigingsdetails te vinden. Tot slot toont het de gebeurtenisdetails in één enkele paginatoepassing (SPA).
 
 ## Voorwaarden
 
 U hebt het volgende nodig om deze zelfstudie te voltooien:
 
-- Het milieu van AEM as a Cloud Service met [ toegelaten AEM Gebeurtenis ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Ook, moet het steekproef ](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) project van de Plaatsen WKND [ worden opgesteld aan het.
+- Het milieu van AEM as a Cloud Service met [ toegelaten de Gebeurtenis van AEM ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Ook, moet het steekproef ](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) project van de Plaatsen WKND [ worden opgesteld aan het.
 
 - Toegang tot [ Adobe Developer Console ](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
 
 - [ Adobe Developer CLI ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) geïnstalleerd op uw lokale machine.
 
-- Lokaal geïnitialiseerd project van het vroegere voorbeeld [ de Actie van Adobe I/O Runtime en AEM Gebeurtenissen ](./runtime-action.md#initialize-project-for-local-development).
+- Lokaal geïnitialiseerd project van het vroegere voorbeeld [ de Actie van Adobe I/O Runtime en de Gebeurtenissen van AEM ](./runtime-action.md#initialize-project-for-local-development).
 
-## Actie AEM Events-processor
+## AEM Events Processor, actie
 
 In dit voorbeeld, voert de actie van de gebeurtenisbewerker [ ](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) volgende taken uit:
 
 - Parseert ontvangen gebeurtenis in een activiteitenbericht.
-- Als de ontvangen gebeurtenis van _Gewijzigd het Fragment van de Inhoud_ type is, vraag terug naar AEM auteursdienst om de wijzigingsdetails te vinden.
+- Als de ontvangen gebeurtenis van _Gewijzigd van het Fragment van de Inhoud_ type is, vraag terug naar de auteursdienst van AEM om de wijzigingsdetails te vinden.
 - Hiermee worden de oorspronkelijke gebeurtenisgegevens, het activiteitenbericht en eventuele wijzigingsgegevens in Adobe I/O Runtime-opslag gehandhaafd.
 
 Om bovengenoemde taken uit te voeren, laten wij beginnen door een actie aan het project toe te voegen, JavaScript modules te ontwikkelen om de bovengenoemde taken uit te voeren, en tenslotte de actiecode bij te werken om de ontwikkelde modules te gebruiken.
 
-Verwijs naar het in bijlage [ WKND-AEM-Eventing-Runtime-Action.zip ](../assets/examples/event-processing-using-runtime-action/WKND-AEM-Eventing-Runtime-Action.zip) dossier voor de volledige code, en onder sectie benadrukt de belangrijkste dossiers.
+Verwijs naar het in bijlage [ WKND-AEM-Event-Runtime-Action.zip ](../assets/examples/event-processing-using-runtime-action/WKND-AEM-Eventing-Runtime-Action.zip) dossier voor de volledige code, en onder sectie benadrukt de belangrijkste dossiers.
 
 ### Handeling toevoegen
 
@@ -94,7 +94,7 @@ Om de hierboven vermelde taken uit te voeren, ontwikkelen de volgende modules va
   module.exports = needsAEMCallback;
   ```
 
-- De module `src/dx-excshell-1/actions/aem-event-processor/loadEventDetailsFromAEM.js` roept AEM auteurservice aan om de wijzigingsdetails te vinden.
+- De module `src/dx-excshell-1/actions/aem-event-processor/loadEventDetailsFromAEM.js` roept de AEM-auteurservice op om de wijzigingsdetails te zoeken.
 
   ```javascript
   ...
@@ -162,7 +162,7 @@ Om de hierboven vermelde taken uit te voeren, ontwikkelen de volgende modules va
   ...
   ```
 
-  Verwijs naar [ AEM de zelfstudie van de Referenties van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en) om meer over het te leren. Ook, de [ Dossiers van de Configuratie van App Builder ](https://developer.adobe.com/app-builder/docs/guides/configuration/) voor het beheren van geheimen en actieparameters.
+  Verwijs naar [ zelfstudie van de Referenties van de Dienst van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en) om meer over het te leren. Ook, de [ Dossiers van de Configuratie van App Builder ](https://developer.adobe.com/app-builder/docs/guides/configuration/) voor het beheren van geheimen en actieparameters.
 
 - In de module `src/dx-excshell-1/actions/aem-event-processor/storeEventData.js` worden de oorspronkelijke gebeurtenisgegevens, het activiteitenbericht en eventuele wijzigingsgegevens opgeslagen in Adobe I/O Runtime.
 
@@ -248,8 +248,8 @@ if (params.challenge) {
 ## Aanvullende bronnen
 
 - De map `src/dx-excshell-1/actions/model` bevat `aemEvent.js` - en `errors.js` -bestanden, die door de handeling worden gebruikt om respectievelijk de ontvangen gebeurtenis te parseren en fouten af te handelen.
-- De map `src/dx-excshell-1/actions/load-processed-aem-events` bevat actiecode. Deze handeling wordt door de SPA gebruikt om de verwerkte AEM Events vanuit de Adobe I/O Runtime-opslag te laden.
-- De map `src/dx-excshell-1/web-src` bevat de SPA code waarmee de verwerkte AEM Events wordt weergegeven.
+- De map `src/dx-excshell-1/actions/load-processed-aem-events` bevat actiecode. Deze handeling wordt door de SPA gebruikt om de verwerkte AEM-gebeurtenissen te laden vanuit de Adobe I/O Runtime-opslag.
+- De map `src/dx-excshell-1/web-src` bevat de SPA-code waarmee de verwerkte AEM Events wordt weergegeven.
 - Het bestand `src/dx-excshell-1/ext.config.yaml` bevat actieconfiguratie en parameters.
 
 ## Concept en toetsaanslagen
@@ -257,5 +257,5 @@ if (params.challenge) {
 De vereisten voor gebeurtenisverwerking verschillen van project tot project, maar de belangrijkste taken in dit voorbeeld zijn:
 
 - De gebeurtenisverwerking kan worden uitgevoerd met Adobe I/O Runtime Action.
-- De Runtime Actie kan met systemen zoals uw interne toepassingen, derdeoplossingen, en Adobe oplossingen communiceren.
+- De Runtime Actie kan met systemen zoals uw interne toepassingen, derdeoplossingen, en de oplossingen van Adobe communiceren.
 - De runtimeactie dient als ingangspunt voor een bedrijfsproces dat rond een inhoudsverandering wordt ontworpen.

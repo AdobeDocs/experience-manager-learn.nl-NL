@@ -2,7 +2,7 @@
 title: Badges toevoegen aan Rich Text Editor (RTE)
 description: Leer hoe u badges aan de Rich Text Editor (RTE) toevoegt in de AEM Content Fragment Editor
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 83acbddb-9168-4d8b-84b5-97577d8a1ead
 duration: 538
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 0%
@@ -37,13 +37,13 @@ Dit voorbeeld toont hoe te om een widget toe te voegen genoemd _de Grote Dienst 
 
 Ook, wordt het **Aantal van de Telefoon** gestileerd verschillend (blauw) dat een extra gebruiksgeval van de bandenfunctionaliteit is.
 
-Om dingen eenvoudig te houden, gebruikt dit voorbeeld het ](https://react-spectrum.adobe.com/react-spectrum/index.html) kader van het Spectrum van het Reageren van de Adobe [ om widget of dialoog UI en hard-gecodeerde de telefoonaantallen van de Klantendienst van WKND te ontwikkelen. Als u het niet-bewerken en verschillende stijlkenmerken van de inhoud wilt bepalen, wordt het teken `#` gebruikt in het kenmerk `prefix` en `suffix` van de definitie van badges.
+Om dingen eenvoudig te houden, gebruikt dit voorbeeld [ Adobe React Spectrum ](https://react-spectrum.adobe.com/react-spectrum/index.html) kader om widget of dialoog UI en hard-gecodeerde de telefoonaantallen van de Dienst van de Klanten WKND te ontwikkelen. Als u het niet-bewerken en verschillende stijlkenmerken van de inhoud wilt bepalen, wordt het teken `#` gebruikt in het kenmerk `prefix` en `suffix` van de definitie van badges.
 
 ## Extensiepunten
 
 Dit voorbeeld breidt zich tot uitbreidingspunt `rte` uit om een badge aan RTE in de Redacteur van het Fragment van de Inhoud toe te voegen.
 
-| AEM UI uitgebreid | Extensiepunten |
+| AEM-gebruikersinterface uitgebreid | Extensiepunten |
 | ------------------------ | --------------------- | 
 | [ de Redacteur van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) en [ Rich Text Editor Widgets ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) van de Redacteur van de Tekst[ |
 
@@ -55,7 +55,7 @@ Zodra het gewenste aantal van de klantendienst van modaal wordt toegevoegd, make
 
 ### Registratie van extensies
 
-`ExtensionRegistration.js` , toegewezen aan de `index.html` -route, is het ingangspunt voor de AEM extensie en definieert:
+`ExtensionRegistration.js` , toegewezen aan de `index.html` -route, is het ingangspunt voor de AEM-extensie en definieert:
 
 + De definitie van de badge wordt in `getBadges()` gedefinieerd met de configuratiekenmerken `id` , `prefix` , `suffix` , `backgroundColor` en `textColor` .
 + In dit voorbeeld wordt het teken `#` gebruikt om de grenzen van deze badge te definiëren. Dit houdt in dat elke tekenreeks in de RTE die door `#` wordt omringd, wordt behandeld als een instantie van deze badge.
@@ -137,17 +137,17 @@ Voeg in de hoofdcomponent React `App.js` de `largeBookingsCustomerService` -rout
 
 ### Component `LargeBookingsCustomerService` React maken{#create-widget-react-component}
 
-De widget of de dialoog UI wordt gecreeerd gebruikend het [ React Spectrum van de Adobe ](https://react-spectrum.adobe.com/react-spectrum/index.html) kader.
+De widget of de dialoog UI wordt gecreeerd gebruikend het [ React Spectrum van Adobe ](https://react-spectrum.adobe.com/react-spectrum/index.html) kader.
 
 De componentencode React wanneer het toevoegen van de details van de klantendienst, omring de variabele van het telefoonaantal met het `#` geregistreerde badges karakter om het in badges, zoals `#${phoneNumber}#` om te zetten, zo maakt het niet-editable.
 
 Hier volgen enkele belangrijke markeringen van de code van `LargeBookingsCustomerService` :
 
 + UI wordt teruggegeven gebruikend React de componenten van het Spectrum, als [ ComboBox ](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ ButtonGroup ](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [ Knoop ](https://react-spectrum.adobe.com/react-spectrum/Button.html)
-+ De array `largeGroupCustomerServiceList` heeft een hardcoded toewijzing van een representatieve naam en telefoonnummer. In echt scenario, kunnen deze gegevens uit Adobe AppBuilder actie of externe systemen of huis worden teruggewonnen uitgegroeid of op wolk leverancier-gebaseerde API gateway.
-+ `guestConnection` wordt geïnitialiseerd gebruikend `useEffect` [ Reageer haak ](https://react.dev/reference/react/useEffect) en geleid als componentenstaat. Het wordt gebruikt om met de AEM gastheer te communiceren.
++ De array `largeGroupCustomerServiceList` heeft een hardcoded toewijzing van een representatieve naam en telefoonnummer. In werkelijkheid kunnen deze gegevens worden opgehaald uit een Adobe AppBuilder-actie of externe systemen, of uit thuisgroei of een API-gateway op basis van een cloud-provider.
++ `guestConnection` wordt geïnitialiseerd gebruikend `useEffect` [ Reageer haak ](https://react.dev/reference/react/useEffect) en geleid als componentenstaat. Deze wordt gebruikt om te communiceren met de AEM-host.
 + De functie `handleCustomerServiceChange` krijgt representatieve naam en telefoonaantal en werkt de variabelen van de componentenstaat bij.
-+ De functie `addCustomerServiceDetails` die `guestConnection` gebruikt, biedt RTE-instructie die moet worden uitgevoerd. In dit geval `insertContent` instructiecodefragment en HTML-codefragment.
++ De functie `addCustomerServiceDetails` die `guestConnection` gebruikt, biedt RTE-instructie die moet worden uitgevoerd. In dit geval `insertContent` instructie en HTML-codefragment.
 + Om het **telefoonaantal niet-editable** te maken gebruikend badges, wordt het `#` speciale karakter toegevoegd vóór en na de `phoneNumber` variabele, als `...<div><p>Phone Number: #${phoneNumber}#</strong></p></div>`.
 
 `src/aem-cf-editor-1/web-src/src/components/LargeBookingsCustomerService.js`

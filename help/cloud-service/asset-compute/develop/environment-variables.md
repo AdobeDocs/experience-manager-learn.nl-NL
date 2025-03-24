@@ -1,8 +1,8 @@
 ---
-title: De omgevingsvariabelen configureren voor uitbreidbaarheid van de Asset compute
-description: Omgevingsvariabelen worden in het .env-bestand bewaard voor lokale ontwikkeling en worden gebruikt om gegevens over Adobe I/O en cloudopslag te verstrekken die vereist zijn voor lokale ontwikkeling.
+title: Omgevingsvariabelen configureren voor Asset Compute-uitbreidbaarheid
+description: Omgevingsvariabelen worden in het .env-bestand bewaard voor lokale ontwikkeling en worden gebruikt om Adobe I/O-referenties en gegevens voor cloudopslag te verstrekken die vereist zijn voor lokale ontwikkeling.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6270
 thumbnail: KT-6270.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: c63c5c75-1deb-4c16-ba33-e2c338ef6251
 duration: 121
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -22,18 +22,18 @@ ht-degree: 0%
 
 ![ dot env- dossier ](assets/environment-variables/dot-env-file.png)
 
-Voordat u begint met de ontwikkeling van workers in de Asset compute, moet u ervoor zorgen dat het project is geconfigureerd met informatie over Adobe I/O- en cloudopslag. Deze informatie wordt opgeslagen in het project `.env` dat alleen wordt gebruikt voor lokale ontwikkeling en niet in Git. Het bestand `.env` biedt een handige manier om sleutel-/waardeparen toegankelijk te maken voor de lokale ontwikkelomgeving van de Asset compute. Wanneer [ het opstellen van ](../deploy/runtime.md) de arbeiders van de Asset compute aan Adobe I/O Runtime, wordt het `.env` dossier niet gebruikt, maar eerder een ondergroep van waarden worden overgegaan binnen via omgevingsvariabelen. Andere aangepaste parameters en geheimen kunnen ook in het `.env` -bestand worden opgeslagen, zoals ontwikkelingsgegevens voor externe webservices.
+Voordat u begint met de ontwikkeling van Asset Compute-workers, moet u controleren of het project is geconfigureerd met Adobe I/O en informatie over cloudopslag. Deze informatie wordt opgeslagen in het project `.env` dat alleen wordt gebruikt voor lokale ontwikkeling en niet in Git. Het bestand `.env` biedt een handige manier om sleutel-/waardeparen beschikbaar te maken voor de lokale Asset Compute-ontwikkelomgeving. Wanneer [ opstellend ](../deploy/runtime.md) de arbeiders van Asset Compute aan Adobe I/O Runtime, wordt het `.env` dossier niet gebruikt, maar eerder wordt een ondergroep van waarden overgegaan binnen via omgevingsvariabelen. Andere aangepaste parameters en geheimen kunnen ook in het `.env` -bestand worden opgeslagen, zoals ontwikkelingsgegevens voor externe webservices.
 
 ## Verwijzen naar de `private.key`
 
 ![ privé sleutel ](assets/environment-variables/private-key.png)
 
-Open het bestand `.env` , verwijder de commentaarmarkering voor de `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` -toets en geef het absolute pad op uw bestandssysteem op naar het `private.key` -bestand dat het openbare certificaat bevat dat aan uw Adobe I/O App Builder-project is toegevoegd.
+Open het `.env` -bestand, verwijder de commentaarmarkering voor de `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` -toets en geef het absolute pad op uw bestandssysteem op naar het `private.key` -bestand dat het openbare certificaat bevat dat aan uw Adobe I/O App Builder-project is toegevoegd.
 
 + Als uw sleutelpaar door Adobe I/O werd geproduceerd, werd het auto-gedownload als deel van `config.zip`.
-+ Als u de openbare sleutel aan Adobe I/O verstrekte, dan zou u ook in het bezit van de passende privé sleutel moeten zijn.
++ Als je Adobe I/O de openbare sleutel hebt gegeven, dan zou je ook in het bezit moeten zijn van de overeenkomende persoonlijke sleutel.
 + Als u deze sleutelparen niet hebt, kunt u nieuwe zeer belangrijke paren produceren of nieuwe openbare sleutels bij de bodem van uploaden:
-  [ https://console.adobe.com ](https://console.adobe.io) > Uw Asset compute App Builder project > Werkruimten @ Ontwikkeling > de Rekening van de Dienst (JWT).
+  [ https://console.adobe.com ](https://console.adobe.io) > Uw project van Asset Compute App Builder > Werkruimten @ Ontwikkeling > de Rekening van de Dienst (JWT).
 
 Herinner het `private.key` dossier niet in Git zou moeten worden gecontroleerd aangezien het geheimen bevat, eerder het op een veilige plaats buiten het project zou moeten worden opgeslagen.
 
@@ -47,7 +47,7 @@ ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=/Users/example-user/credentials/aem-guides-w
 
 ## Inloggegevens voor cloudopslag configureren
 
-De lokale ontwikkeling van de arbeiders van de Asset compute vereist toegang tot [ wolkenopslag ](../set-up/accounts-and-services.md#cloud-storage). De referenties voor cloudopslag die worden gebruikt voor lokale ontwikkeling, staan in het `.env` -bestand.
+De lokale ontwikkeling van de arbeiders van Asset Compute vereist toegang tot [ wolkenopslag ](../set-up/accounts-and-services.md#cloud-storage). De referenties voor cloudopslag die worden gebruikt voor lokale ontwikkeling, staan in het `.env` -bestand.
 
 Deze zelfstudie geeft de voorkeur aan het gebruik van Azure Blob Storage, maar Amazon S3 en de bijbehorende sleutels in het `.env` -bestand kunnen in plaats daarvan worden gebruikt.
 
@@ -94,22 +94,22 @@ AWS_REGION=us-east-1
 
 ## De projectconfiguratie valideren
 
-Zodra het geproduceerde project van de Asset compute is gevormd, bevestig de configuratie alvorens codeveranderingen aan te brengen om de ondersteunende diensten te verzekeren, in de `.env` dossiers worden geleverd.
+Nadat het gegenereerde Asset Compute-project is geconfigureerd, valideert u de configuratie voordat u codewijzigingen aanbrengt om ervoor te zorgen dat de ondersteunende services worden geleverd in de `.env` -bestanden.
 
-Om het Hulpmiddel van de Ontwikkeling van de Asset compute voor het project van de Asset compute te beginnen:
+Asset Compute Development Tool starten voor het Asset Compute-project:
 
-1. Open een bevellijn in de het projectwortel van de Asset compute (in de Code van VS kan dit direct in winde via Terminal > Nieuwe Terminal) worden geopend, en voer het bevel uit:
+1. Open een bevellijn in de het projectwortel van Asset Compute (in VS Code kan dit direct in winde via Terminal > Nieuwe Terminal worden geopend), en voer het bevel uit:
 
    ```
    $ aio app run
    ```
 
-1. Het lokale Hulpmiddel van de Ontwikkeling van de Asset compute zal in uw standaardbrowser van het Web in __http://localhost:9000__ openen.
+1. Het lokale Hulpmiddel van de Ontwikkeling van Asset Compute zal in uw standaardbrowser van het Web in __http://localhost:9000__ openen.
 
    ![ de looppas van de audio app ](assets/environment-variables/aio-app-run.png)
 
 1. Bekijk de uitvoer van de opdrachtregel en de webbrowser voor foutberichten terwijl het hulpprogramma Ontwikkeling wordt geïnitialiseerd.
-1. Tik op `Ctrl-C` in het venster dat `aio app run` heeft uitgevoerd om het Asset compute Development Tool te beëindigen.
+1. Tik op `Ctrl-C` in het venster dat `aio app run` heeft uitgevoerd om het Asset Compute Development Tool te stoppen.
 
 ## Problemen oplossen
 

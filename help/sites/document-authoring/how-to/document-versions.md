@@ -1,7 +1,7 @@
 ---
-title: Versiedocumenten met AEM document ontwerpen
-description: Inhoud versieren met het ontwerpen van AEM document.
-version: 6.5, Cloud Service
+title: Versiedocumenten met AEM-documenten maken
+description: Inhoud versieren met AEM-documentontwerpen.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User, Developer
@@ -12,7 +12,7 @@ jira: KT-14494
 thumbnail: 3425728.jpeg
 duration: 105
 exl-id: 0ef31876-5813-4219-b356-cc581544bac3
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '26'
 ht-degree: 0%
@@ -23,6 +23,6 @@ ht-degree: 0%
 
 {{edge-delivery-services}}
 
-Leer hoe u documenten versieert die zijn gemaakt met AEM documentontwerp.
+Leer hoe u documenten versieert die zijn gemaakt met AEM-documentontwerpen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425728/?learn=on)

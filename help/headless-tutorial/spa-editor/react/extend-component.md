@@ -1,8 +1,8 @@
 ---
 title: Een kerncomponent uitbreiden | Aan de slag met de AEM SPA Editor en Reageren
-description: Leer hoe u het JSON-model kunt uitbreiden voor een bestaande Core Component die u wilt gebruiken met de AEM SPA Editor. Het begrip hoe te om eigenschappen en inhoud aan een bestaande component toe te voegen is een krachtige techniek om de mogelijkheden van een implementatie van AEM SPARedacteur uit te breiden. Leer om het delegatiepatroon te gebruiken voor het uitbreiden van Sling Models en eigenschappen van de Verzameling van Middel.
+description: Leer hoe te om het Model JSON voor een bestaande Component van de Kern uit te breiden die met de Redacteur van AEM SPA moet worden gebruikt. Het begrip hoe te om eigenschappen en inhoud aan een bestaande component toe te voegen is een krachtige techniek om de mogelijkheden van een implementatie van de Redacteur van AEM uit te breiden SPA. Leer om het delegatiepatroon te gebruiken voor het uitbreiden van Sling Models en eigenschappen van de Verzameling van Middel.
 feature: SPA Editor, Core Components
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5879
 thumbnail: 5879-spa-react.jpg
 topic: SPA
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
 duration: 316
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Een kerncomponent uitbreiden {#extend-component}
 
-Leer hoe te om een bestaande Component van de Kern uit te breiden die met de Redacteur van de SPA van de AEM moet worden gebruikt. Begrijpen hoe een bestaande component wordt uitgebreid is een krachtige techniek om de mogelijkheden van een AEM SPA de implementatie van de Redacteur aan te passen en uit te breiden.
+Leer hoe te om een bestaande Component van de Kern uit te breiden die met de Redacteur van AEM SPA moet worden gebruikt. Begrijpen hoe te om een bestaande component uit te breiden is een krachtige techniek om de mogelijkheden van een implementatie van de Redacteur van AEM aan te passen en uit te breiden SPA.
 
 ## Doelstelling
 
@@ -36,11 +36,11 @@ In dit hoofdstuk wordt de aanvullende code weergegeven die nodig is om een extra
 
 ## Vereisten
 
-Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikkelomgeving ](overview.md#local-dev-environment). Op dit punt wordt aangenomen dat gebruikers van de zelfstudie een goed inzicht hebben in de functie AEM SPA Editor.
+Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikkelomgeving ](overview.md#local-dev-environment). Het wordt verondersteld op dit punt in de zelfstudie hebben de gebruikers een stevig inzicht in de eigenschap van de Redacteur van AEM SPA.
 
 ## Overerving met Sling Resource Super Type {#sling-resource-super-type}
 
-Als u een bestaande component wilt uitbreiden, stelt u een eigenschap met de naam `sling:resourceSuperType` in voor de definitie van de component.  `sling:resourceSuperType` is a [ bezit ](https://sling.apache.org/documentation/the-sling-engine/resources.html#resource-properties) dat op de definitie van een AEM component kan worden geplaatst die aan een andere component richt. Hiermee wordt de component expliciet ingesteld om alle functionaliteit over te nemen van de component die wordt aangeduid als de `sling:resourceSuperType` .
+Als u een bestaande component wilt uitbreiden, stelt u een eigenschap met de naam `sling:resourceSuperType` in voor de definitie van de component.  `sling:resourceSuperType` is a [ bezit ](https://sling.apache.org/documentation/the-sling-engine/resources.html#resource-properties) dat op de definitie van een component van AEM kan worden geplaatst die aan een andere component richt. Hiermee wordt de component expliciet ingesteld om alle functionaliteit over te nemen van de component die wordt aangeduid als de `sling:resourceSuperType` .
 
 Als we de component `Image` in `wknd-spa-react/components/image` willen uitbreiden, moeten we de code in de module `ui.apps` bijwerken.
 
@@ -239,11 +239,11 @@ De component `Banner` vereist een extra tekstveld in het dialoogvenster om het `
 
    Merk op dat wij niet de lusjes voor **Activa** of **Meta-gegevens** moesten bepalen. Deze worden overgeërfd via de eigenschap `sling:resourceSuperType` .
 
-   Voordat we een voorvertoning van het dialoogvenster kunnen weergeven, moeten we de SPA Component en de functie `MapTo` implementeren.
+   Voordat we een voorvertoning van het dialoogvenster kunnen weergeven, moeten we de SPA-component en de functie `MapTo` implementeren.
 
-## SPA implementeren {#implement-spa-component}
+## SPA-component implementeren {#implement-spa-component}
 
-Als u de component Banner wilt gebruiken met de SPA Editor, moet u een nieuwe SPA maken die wordt toegewezen aan `wknd-spa-react/components/banner` . Dit gebeurt in de module `ui.frontend` .
+Om de component van de Banner met de Redacteur van het KUUROORD te gebruiken, moet een nieuwe component van het KUUROORD worden gecreeerd die aan `wknd-spa-react/components/banner` in kaart zal brengen. Dit gebeurt in de module `ui.frontend` .
 
 1. Maak in de module `ui.frontend` een nieuwe map voor `Banner` at `ui.frontend/src/components/Banner` .
 1. Maak een nieuw bestand met de naam `Banner.js` onder de map `Banner` . Vul de selectie met de volgende code:
@@ -296,9 +296,9 @@ Als u de component Banner wilt gebruiken met de SPA Editor, moet u een nieuwe SP
    MapTo('wknd-spa-react/components/banner')(Banner, BannerEditConfig);
    ```
 
-   Deze SPA component verwijst naar de AEM component `wknd-spa-react/components/banner` die u eerder hebt gemaakt.
+   Deze SPA-component verwijst naar de eerder gemaakte AEM-component `wknd-spa-react/components/banner` .
 
-1. Werk `import-components.js` bij `ui.frontend/src/components/import-components.js` bij om de nieuwe `Banner` SPA component op te nemen:
+1. Werk `import-components.js` bij `ui.frontend/src/components/import-components.js` bij om de nieuwe `Banner` SPA-component op te nemen:
 
    ```diff
      import './ExperienceFragment/ExperienceFragment';
@@ -306,26 +306,26 @@ Als u de component Banner wilt gebruiken met de SPA Editor, moet u een nieuwe SP
    + import './Banner/Banner';
    ```
 
-1. Op dit punt kan het project worden opgesteld aan AEM en de dialoog kan worden getest. Implementeer het project met behulp van uw Maven-vaardigheden:
+1. Op dit punt kan het project worden opgesteld aan AEM en kan de dialoog worden getest. Implementeer het project met behulp van uw Maven-vaardigheden:
 
    ```shell
    $ cd aem-guides-wknd-spa.react
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. Werk het beleid van het SPA van het Malplaatje bij om de `Banner` component als **toe te voegen toegestane component**.
+1. Werk het beleid van het Malplaatje van het KUUROORD bij om de `Banner` component als **toegestane component** toe te voegen.
 
-1. Navigeer naar een SPA pagina en voeg de component `Banner` toe aan een van de SPA pagina&#39;s:
+1. Navigeer naar een pagina van het KUUROORD en voeg de `Banner` component aan één van de pagina&#39;s van het KUUROORD toe:
 
    ![ voeg component Banner ](assets/extend-component/add-banner-component.png) toe
 
    >[!NOTE]
    >
-   > De dialoog zal u toestaan om een waarde voor **Tekst van de Banner** te bewaren maar deze waarde wordt niet weerspiegeld in de SPA component. Om toe te laten, moeten wij het het Verkopen Model voor de component uitbreiden.
+   > De dialoog zal u toestaan om een waarde voor **Tekst van de Banner** te bewaren maar deze waarde wordt niet weerspiegeld in de component van het KUUROORD. Om toe te laten, moeten wij het het Verkopen Model voor de component uitbreiden.
 
 ## Java-interface toevoegen {#java-interface}
 
-Als u uiteindelijk de waarden uit het dialoogvenster Component toegankelijk wilt maken voor de component React, moet u het Sling-model bijwerken dat de JSON voor de component `Banner` vult. Dit wordt gedaan in de `core` module die alle code van Java voor ons SPA project bevat.
+Als u uiteindelijk de waarden uit het dialoogvenster Component toegankelijk wilt maken voor de component React, moet u het Sling-model bijwerken dat de JSON voor de component `Banner` vult. Dit wordt gedaan in de `core` module die alle code van Java voor ons project van het KUUROORD bevat.
 
 Eerst maken we een nieuwe Java-interface voor `Banner` die de Java-interface van `Image` uitbreidt.
 
@@ -461,7 +461,7 @@ Implementeer vervolgens het Sling Model voor de interface `BannerModel` .
 
 ## Alles samenvoegen {#put-together}
 
-1. Ga terug naar AEM en open de SPA pagina met de component `Banner` .
+1. Ga terug naar AEM en open de pagina van het KUUROORD die de `Banner` component heeft.
 1. Werk de `Banner` component bij om **Tekst van de Banner** te omvatten:
 
    ![ de Tekst van de Banner ](assets/extend-component/banner-text-dialog.png)
@@ -491,4 +491,4 @@ Implementeer vervolgens het Sling Model voor de interface `BannerModel` .
 
 ## Gefeliciteerd! {#congratulations}
 
-Gefeliciteerd, hebt u geleerd hoe u een AEM component kunt uitbreiden met de code en hoe de Sling-modellen en -dialoogvensters werken met het JSON-model.
+Gefeliciteerd, hebt u geleerd hoe u een AEM-component kunt uitbreiden met de code en hoe modellen en dialoogvensters voor verkopers werken met het JSON-model.

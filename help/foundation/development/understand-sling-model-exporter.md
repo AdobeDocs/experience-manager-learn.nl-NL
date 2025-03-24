@@ -1,7 +1,7 @@
 ---
-title: Uitgever van verkoopmodel begrijpen in AEM
+title: Uitgever van verkoopmodel in AEM begrijpen
 description: Apache Sling Models 1.3.0 introduceert Sling Model Exporter, een elegante manier om Sling Model voorwerpen in douaneabstracties uit te voeren of in series te vervaardigen. In dit artikel wordt naast het traditionele gebruik van Sling Models de HTML-scripts gevuld met behulp van het Sling Model Exporter-framework om een Sling Model in JSON te serialiseren.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
 doc-type: Article
@@ -10,7 +10,7 @@ role: Developer
 level: Beginner
 exl-id: 03cdf5d1-3253-44c9-ae1f-ec5d3c562427
 duration: 133
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 0%
@@ -25,13 +25,13 @@ Apache [!DNL Sling Models] 1.3.0 introduceert [!DNL Sling Model Exporter] , een 
 
 Het traditionele gebruik-geval voor [!DNL Sling Models] is een bedrijfsabstractie voor een middel of een verzoek te verstrekken, dat de manuscripten van HTML (of, eerder JSPs) een interface voor de toegang tot van bedrijfsfuncties verstrekt.
 
-Er ontwikkelen zich gemeenschappelijke patronen [!DNL Sling Models] die AEM Componenten of Pagina&#39;s vertegenwoordigen, en het gebruiken van de [!DNL Sling Model] voorwerpen om de manuscripten van HTML met gegevens te voorzien, met een eindresultaat van HTML die in browser wordt getoond.
+Er worden algemene patronen ontwikkeld in [!DNL Sling Models] die staan voor AEM-componenten of -pagina&#39;s. Met de [!DNL Sling Model] -objecten kunt u de HTML-scripts voorzien van gegevens, met als eindresultaat HTML dat in de browser wordt weergegeven.
 
 ### Verzendmodel HTTP-aanvraagstroom
 
 ![ het Verkopen ModelStroom van het Verzoek ](./assets/understand-sling-model-exporter/sling-model-request-flow.png)
 
-1. [!DNL HTTP GET] Er wordt een aanvraag ingediend voor een resource in AEM.
+1. [!DNL HTTP GET] Aanvraag wordt gedaan voor een resource in AEM.
 
    Voorbeeld: `HTTP GET /content/my-resource.html`
 
@@ -41,21 +41,21 @@ Er ontwikkelen zich gemeenschappelijke patronen [!DNL Sling Models] die AEM Comp
 
 1. Het script gebruikt het [!DNL Sling Model] -object om de HTML-uitvoering te genereren.
 
-1. De HTML die door het Manuscript wordt geproduceerd is teruggekeerd in de Reactie van HTTP.
+1. De HTML die door het script wordt gegenereerd, wordt geretourneerd in de HTTP Response.
 
-Dit traditionele patroon werkt goed bij het genereren van HTML, aangezien de [!DNL Sling Model] eenvoudig via HTML kan worden gebruikt. Het maken van meer gestructureerde gegevens, zoals JSON of XML, is een veel lastiger zaak, omdat HTML zich niet automatisch leent aan de definitie van deze indelingen.
+Dit traditionele patroon werkt goed in de context van het genereren van HTML, aangezien de [!DNL Sling Model] gemakkelijk kan worden gebruikt via HTML. Het maken van meer gestructureerde gegevens, zoals JSON of XML, is een veel lastiger zaak, omdat HTML zich niet automatisch leent aan de definitie van deze indelingen.
 
 ## [!DNL Sling Model Exporter] HTTP-aanvraagstroom
 
 Apache [!DNL Sling Model Exporter] wordt geleverd met een bij Sling geleverde Jackson Exporter die een &quot;gewoon&quot; [!DNL Sling Model] -object automatisch serialiseert in JSON. De Jackson Exporter, die behoorlijk configureerbaar is, inspecteert bij zijn kern het [!DNL Sling Model] voorwerp, en produceert JSON gebruikend om het even welke &quot;getter&quot;methodes als sleutels JSON, en de getter terugkeerwaarden als waarden JSON.
 
-Door de directe serialisatie van [!DNL Sling Models] kunnen ze zowel normale webverzoeken uitvoeren met hun HTML-reacties die zijn gemaakt met de traditionele [!DNL Sling Model] request-flow (zie boven), als JSON-uitvoeringen die kunnen worden gebruikt door webservices of JavaScript-toepassingen, beschikbaar maken.
+Door de directe serialisatie van [!DNL Sling Models] kunnen ze zowel normale webverzoeken uitvoeren met hun HTML-antwoorden die zijn gemaakt met de traditionele [!DNL Sling Model] request-flow (zie boven), als JSON-uitvoeringen die kunnen worden gebruikt door webservices of JavaScript-toepassingen, beschikbaar maken.
 
 ![ het Verdelen van de stroom van het Verzoek van HTTP van de ModelExporter ](./assets/understand-sling-model-exporter/sling-model-exporter-request-flow.png)
 
 *Deze stroom beschrijft de stroom gebruikend verstrekt Jackson Exporter om output te produceren JSON. Het gebruik van douaneExporteurs volgt de zelfde stroom maar met hun outputformaat.*
 
-1. HTTP-GET-aanvraag wordt ingediend voor een bron in AEM met de kiezer en de extensie die zijn geregistreerd bij de Exporter van [!DNL Sling Model] .
+1. HTTP GET Request is gemaakt voor een resource in AEM met de kiezer en de extensie die zijn geregistreerd bij de Exporter van [!DNL Sling Model] .
 
    Voorbeeld: `HTTP GET /content/my-resource.model.json`
 

@@ -1,7 +1,7 @@
 ---
 title: Verificatie in AEM as a Cloud Service
 description: Meer informatie over verificatie in AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Integrations, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-10436.png
 last-substantial-update: 2022-10-14T00:00:00Z
 exl-id: 4dba6c09-2949-4153-a9bc-d660a740f8f7
 duration: 28
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 AEM as a Cloud Service ondersteunt meerdere verificatieopties en varieert per servicetype.
 
-|                       | AEM auteur | AEM Publish |
+|                       | AEM-auteur | AEM Publiceren |
 |-----------------------|:----------:|:-----------:|
 | [ IMS van Adobe ](../accessing/overview.md) | ✔ | ✘ |
 | ・ [ SAML 2.0 via Adobe IMS ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#how-to-set-up) | ✔ | ✘ |
@@ -42,21 +42,21 @@ Klik in de overeenkomstige verbinding hieronder aan voor details over opstelling
       <a  href="../accessing/overview.md"><img alt="Adobe IMS" src="./assets/card--adobe-ims.png"/></a>
       <div><strong><a href="../accessing/overview.md"> IMS van Adobe </a></strong></div>
       <p>
-          Toegang tot AEM auteur beheren met Adobe IMS via de Adobe Admin Console.
+          Toegang tot AEM-auteurs beheren met Adobe IMS via de Adobe Admin Console.
       </p>
     </td>   
    <td>
       <a  href="./saml-2-0.md"><img alt="SAML 2.0" src="./assets/card--saml-2-0.png"/></a>
       <div><strong><a href="./saml-2-0.md"> SAML 2.0 </a></strong></div>
       <p>
-        Verifieer de gebruiker van uw website aan IDP gebruikend AEM de integratie van SAML 2.0 van de dienst van Publish.
+        Verifieer de gebruiker van uw website aan IDP gebruikend de integratie van SAML 2.0 van de Dienst van de Publicatie van AEM.
       </p>
     </td>   
    <td>
       <a  href="../../headless-tutorial/authentication/overview.md"><img alt="Token" src="./assets/card--token.png"/></a>
       <div><strong><a href="../../headless-tutorial/authentication/overview.md"> Symbolische authentificatie </a></strong></div>
       <p>
-        Toepassingen en middleware kunnen worden geverifieerd voor AEM met behulp van een API-servicetoken.
+        Toepassingen en middleware kunnen met een API-servicetoken worden geverifieerd op AEM.
       </p>
     </td>   
   </tr>

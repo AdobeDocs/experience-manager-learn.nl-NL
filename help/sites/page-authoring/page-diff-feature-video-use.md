@@ -1,7 +1,7 @@
 ---
 title: Paginaverschil gebruiken met AEM Sites
 description: De mogelijkheden van AEM Sites voor het wijzigen van pagina's geven een snelle, kleurgecodeerde weergave van de inhoud die in een pagina is gewijzigd (versie, live kopie, lanceringen, taalkopie).
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-4633
 thumbnail: 32152.jpg
 topic: Content Management
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 4d365957-9a5a-44f8-a117-95c1c0dd757d
 duration: 502
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
@@ -28,7 +28,7 @@ De mogelijkheden van AEM Sites voor het wijzigen van pagina&#39;s geven een snel
 
 >[!VIDEO](https://video.tv.adobe.com/v/32152?quality=12&learn=on)
 
-**de veranderingen van de HTML**
+**verandert HTML**
 
 * **Groen**: Nieuwe inhoud
 * **Rood**: Verwijderde inhoud

@@ -1,7 +1,7 @@
 ---
 title: Dispatcher Tools instellen voor AEM as a Cloud Service Development
-description: AEM SDK Dispatcher Tools vergemakkelijkt de lokale ontwikkeling van Adobe Experience Manager (AEM) projecten door het gemakkelijk te maken om, Dispatcher plaatselijk te installeren in werking te stellen en problemen op te lossen.
-version: Cloud Service
+description: AEM SDK Dispatcher Tools maakt de lokale ontwikkeling van Adobe Experience Manager (AEM)-projecten mogelijk door het gemakkelijk te maken om Dispatcher lokaal te installeren, uit te voeren en problemen op te lossen.
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Dispatcher, Developer Tools
 role: Developer
@@ -11,9 +11,9 @@ thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
 duration: 624
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1620'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_dispatcher"
 >title="Lokale Dispatcher-gereedschappen"
->abstract="Dispatcher is een integraal onderdeel van de algehele architectuur van de Experience Manager en moet deel uitmaken van de plaatselijke ontwikkelingsstructuur. De AEM as a Cloud Service SDK bevat de aanbevolen versie van Dispatcher Tools waarmee u het valideren en het lokaal simuleren van Dispatcher kunt configureren."
+>abstract="Dispatcher is een integraal onderdeel van de algemene Experience Manager-architectuur en moet deel uitmaken van de plaatselijke ontwikkelingsinstellingen. De AEM as a Cloud Service SDK bevat de aanbevolen versie van Dispatcher Tools waarmee u het valideren en het lokaal simuleren van Dispatcher kunt configureren."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html" text="Dispatcher in de cloud"
 >additional-url="https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html" text="AEM as a Cloud Service SDK downloaden"
 
-Dispatcher van Adobe Experience Manager (AEM) is een Apache HTTP Web server module die een veiligheid en prestatieslaag tussen CDN en AEM Publish rij verstrekt. Dispatcher is een integraal onderdeel van de algehele architectuur van de Experience Manager en moet deel uitmaken van de plaatselijke ontwikkelingsstructuur.
+Adobe Experience Manager (AEM)&#39;s Dispatcher is een Apache HTTP Web server module die een veiligheid en prestatieslaag tussen CDN en AEM Publish rij verstrekt. Dispatcher is een integraal onderdeel van de algemene Experience Manager-architectuur en moet deel uitmaken van de plaatselijke ontwikkelingsinstellingen.
 
 De AEM as a Cloud Service SDK bevat de aanbevolen versie van Dispatcher Tools waarmee u het valideren en het lokaal simuleren van Dispatcher kunt configureren. Dispatcher Tools bestaat uit:
 
@@ -47,29 +47,29 @@ De AEM as a Cloud Service SDK bevat de aanbevolen versie van Dispatcher Tools wa
 ## Vereisten
 
 1. Windows-gebruikers moeten Windows 10 Professional gebruiken (of een versie die Docker ondersteunt)
-1. Installeer [ Experience Manager Publish QuickStart Jar ](./aem-runtime.md) op de lokale ontwikkelingsmachine.
+1. Installeer [ Experience Manager publiceert QuickStart Jar ](./aem-runtime.md) op de lokale ontwikkelingsmachine.
 
-+ Naar keuze, installeer de recentste [ AEM verwijzingsWebsite ](https://github.com/adobe/aem-guides-wknd/releases) op de lokale dienst van AEM Publish. Deze website wordt in deze zelfstudie gebruikt om een werkende Dispatcher te visualiseren.
++ Naar keuze, installeer de recentste [ de verwijzingsWebsite van AEM ](https://github.com/adobe/aem-guides-wknd/releases) op de lokale publicatiedienst van AEM. Deze website wordt in deze zelfstudie gebruikt om een werkende Dispatcher te visualiseren.
 
-1. Installeer en begin de recentste versie van [ Docker ](https://www.docker.com/) (Desktop 2.2.0.5+/de Motor van de Docker v19.03.9+) op de lokale ontwikkelingsmachine.
+1. Installeer en begin de recentste versie van [ Docker ](https://www.docker.com/) (de Desktop van de Docker 2.2.0.5 +/de Motor van de Docker v19.03.9+) op de lokale ontwikkelingsmachine.
 
 ## Download de Dispatcher Tools (als onderdeel van de AEM SDK)
 
-AEM as a Cloud Service SDK, of AEM SDK, bevat de Dispatcher Tools die worden gebruikt om Apache HTTP Web-server met de module Dispatcher plaatselijk voor ontwikkeling in werking te stellen, en compatibele Jar QuickStart.
+AEM as a Cloud Service SDK, of AEM SDK, bevat de Dispatcher Tools die worden gebruikt om Apache HTTP Web-server met de module van Dispatcher plaatselijk voor ontwikkeling in werking te stellen, en compatibele Jar QuickStart.
 
-Als AEM as a Cloud Service SDK reeds aan [ opstelling lokale AEM runtime ](./aem-runtime.md) is gedownload, te hoeven het niet opnieuw worden gedownload.
+Als AEM as a Cloud Service SDK reeds aan [ opstelling lokale runtime van AEM ](./aem-runtime.md) is gedownload, te hoeven het niet opnieuw worden gedownload.
 
 1. Meld u aan bij [ experience.adobe.com/#/downloads ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list p.offset=0&amp;p.limit=1) met uw Adobe ID
-   + Uw Organisatie van de Adobe __moet__ voor AEM as a Cloud Service worden provisioned om AEM as a Cloud Service SDK te downloaden
+   + Uw Adobe-organisatie __moet__ zijn ingericht voor AEM as a Cloud Service om de AEM as a Cloud Service SDK te downloaden
 1. Klik op de recentste __AEM SDK__ resultaatrij om te downloaden
 
-## De Dispatcher-gereedschappen extraheren uit het AEM SDK zip
+## De Dispatcher-gereedschappen extraheren uit het zip van AEM SDK
 
 >[!TIP]
 >
 > Windows-gebruikers kunnen geen spaties of speciale tekens gebruiken in het pad naar de map met de lokale Dispatcher-gereedschappen. Als het pad spaties bevat, mislukt `docker_run.cmd` .
 
-De versie van Dispatcher Tools verschilt van die van de AEM SDK. Zorg ervoor dat de versie van Dispatcher Tools beschikbaar is via de versie van AEM SDK die overeenkomt met de AEM as a Cloud Service-versie.
+De versie van Dispatcher Tools verschilt van die van AEM SDK. Zorg ervoor dat de versie van Dispatcher Tools beschikbaar is via de AEM SDK-versie die overeenkomt met de AEM as a Cloud Service-versie.
 
 1. Het gedownloade `aem-sdk-xxx.zip` bestand uitpakken
 1. Pak de Dispatcher-gereedschappen uit in `~/aem-sdk/dispatcher`
@@ -105,11 +105,11 @@ Alle hieronder uitgegeven bevelen veronderstellen dat de huidige het werk folder
 ## De Dispatcher-configuratiebestanden begrijpen
 
 >[!TIP]
-> De projecten van de Experience Manager die van het [ AEM Project Maven Archetype ](https://github.com/adobe/aem-project-archetype) worden gecreeerd zijn pre-bevolkt deze reeks van de configuratiedossiers van Dispatcher, zodat is er geen behoefte om over van de omslag van Dispatcher Tools te kopiëren src.
+> De projecten van Experience Manager die van het [ Project van AEM worden gecreeerd Maven Archetype ](https://github.com/adobe/aem-project-archetype) zijn pre-bevolkte deze reeks van de configuratiedossiers van Dispatcher, zodat is er geen behoefte om over van de omslag te kopiëren van Dispatcher Tools src.
 
 De Dispatcher Tools biedt een set Apache HTTP Web server- en Dispatcher-configuratiebestanden die gedrag voor alle omgevingen, inclusief lokale ontwikkeling, definiëren.
 
-Deze bestanden zijn bedoeld om naar een Experience Manager Maven-project naar de map `dispatcher/src` te worden gekopieerd, als ze niet bestaan in het Experience Manager Maven-project.
+Deze bestanden zijn bedoeld om naar een Experience Manager Maven-project naar de map `dispatcher/src` te worden gekopieerd als ze niet bestaan in het Experience Manager Maven-project.
 
 Een volledige beschrijving van de configuratiebestanden is beschikbaar in de onverpakte Dispatcher Tools als `dispatcher-sdk-x.x.x/docs/Config.html` .
 
@@ -142,7 +142,7 @@ $ ./bin/validate.sh ./src
 
 ## Dispatcher lokaal uitvoeren
 
-AEM Dispatcher lokaal wordt uitgevoerd met Docker op basis van de configuratiebestanden van de Dispatcher- en Apache-webserver. `src`
+AEM Dispatcher wordt lokaal uitgevoerd met Docker op basis van de configuratiebestanden van de Dispatcher- en Apache-webserver. `src`
 
 
 >[!BEGINTABS]
@@ -199,9 +199,9 @@ $ ./bin/docker_run_hot_reload.sh ./src host.docker.internal:4503 8080
 
 >[!ENDTABS]
 
-De Publish Service van AEM as a Cloud Service SDK, die lokaal wordt uitgevoerd op poort 4503, is beschikbaar via Dispatcher op `http://localhost:8080` .
+De publicatieservice van AEM as a Cloud Service SDK, die lokaal wordt uitgevoerd op poort 4503, is beschikbaar via Dispatcher op `http://localhost:8080` .
 
-Om Dispatcher Tools tegen de configuratie van Dispatcher van een project van de Experience Manager in werking te stellen, richt aan de omslag van uw project `dispatcher/src`.
+Als u Dispatcher Tools wilt uitvoeren in combinatie met de Dispatcher-configuratie van een Experience Manager-project, wijst u naar de map `dispatcher/src` van uw project.
 
 >[!BEGINTABS]
 
@@ -275,26 +275,26 @@ Apache-webserver en AEM Dispatcher-logbestanden zijn rechtstreeks toegankelijk i
 
 ## Wanneer moet u Dispatcher Tools bijwerken?{#dispatcher-tools-version}
 
-De versies van de Hulpmiddelen van Dispatcher stijgen minder vaak dan de Experience Manager, en daarom vereisen de Hulpmiddelen van Dispatcher minder updates in de lokale ontwikkelomgeving.
+De versies van Dispatcher Tools stijgen minder vaak dan de Experience Manager, en daarom vereisen de Hulpmiddelen van Dispatcher minder updates in de lokale ontwikkelomgeving.
 
-De aanbevolen versie van Dispatcher Tools is de versie die wordt meegeleverd bij de AEM as a Cloud Service SDK die overeenkomt met de as a Cloud Service versie van de Experience Manager. De versie van AEM as a Cloud Service kan via [ Cloud Manager ](https://my.cloudmanager.adobe.com/) worden gevonden.
+De aanbevolen versie van Dispatcher Tools is de versie die wordt meegeleverd bij de AEM as a Cloud Service SDK die overeenkomt met de Experience Manager as a Cloud Service-versie. De versie van AEM as a Cloud Service kan via [ Cloud Manager ](https://my.cloudmanager.adobe.com/) worden gevonden.
 
-+ __Cloud Manager > Milieu&#39;s__, per milieu dat door het __wordt gespecificeerd AEM 3} etiket van de Versie__
++ __Cloud Manager > Milieu&#39;s__, per milieu dat door het __wordt gespecificeerd van de Versie van AEM__ etiket
 
-![ Versie van de Experience Manager ](./assets/dispatcher-tools/aem-version.png)
+![ Versie van Experience Manager ](./assets/dispatcher-tools/aem-version.png)
 
-*Merk op dat de versie van de Hulpmiddelen van Dispatcher niet de versie van de Experience Manager aanpast.*
+*Merk op dat de versie van de Hulpmiddelen van Dispatcher niet de versie van Experience Manager aanpast.*
 
 ## De basislijnset van Apache- en Dispatcher-configuraties bijwerken
 
-De basisset van Apache- en Dispatcher-configuratie wordt regelmatig verbeterd en vrijgegeven met de AEM as a Cloud Service SDK-versie. Het is beste praktijken om de verhogingen van de basislijnconfiguratie in uw AEM project op te nemen en [ lokale bevestiging ](#validate-configurations) en de pijpleidingsmislukkingen van Cloud Manager te vermijden. Werk deze bij met het script `update_maven.sh` in de map `.../dispatcher-sdk-x.x.x/bin` .
+De basisset van Apache- en Dispatcher-configuratie wordt regelmatig verbeterd en vrijgegeven met de AEM as a Cloud Service SDK-versie. Het is beste praktijken om de verhogingen van de basislijnconfiguratie in uw project van AEM op te nemen en [ lokale bevestiging ](#validate-configurations) en de pijpleidingsmislukkingen van Cloud Manager te vermijden. Werk deze bij met het script `update_maven.sh` in de map `.../dispatcher-sdk-x.x.x/bin` .
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416744?quality=12&learn=on)
 
 *Deze video gebruikt macOS voor illustratieve doeleinden. De gelijkwaardige bevelen Windows/Linux kunnen worden gebruikt om gelijkaardige resultaten te bereiken.*
 
 
-Laten we veronderstellen u een AEM project in het verleden gebruikend [ creeerde AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype), waren de basislijn Apache en de configuraties van Dispatcher huidig. Met behulp van deze basislijnconfiguraties zijn uw projectspecifieke configuraties gemaakt door de bestanden als `*.vhost` , `*.conf` , `*.farm` en `*.any` uit de mappen `dispatcher/src/conf.d` en `dispatcher/src/conf.dispatcher.d` opnieuw te gebruiken en te kopiëren. Je lokale Dispatcher-validatie en Cloud Manager-pijpleidingen werkten prima.
+Laten we veronderstellen u een project van AEM in het verleden gebruikend [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) creeerde, waren de basislijn Apache en de configuraties van Dispatcher huidig. Met behulp van deze basislijnconfiguraties zijn uw projectspecifieke configuraties gemaakt door de bestanden als `*.vhost` , `*.conf` , `*.farm` en `*.any` uit de mappen `dispatcher/src/conf.d` en `dispatcher/src/conf.dispatcher.d` opnieuw te gebruiken en te kopiëren. Je lokale Dispatcher-validatie en Cloud Manager-pijpleidingen werkten prima.
 
 Ondertussen werden de basislijnconfiguraties Apache en Dispatcher verbeterd om verschillende redenen, zoals nieuwe functies, beveiligingsoplossingen en optimalisatie. Ze worden vrijgegeven via een nieuwere versie van Dispatcher Tools als onderdeel van de AEM as a Cloud Service-release.
 
@@ -395,5 +395,5 @@ Waiting until host.docker.internal is available
 + [ Download AEM SDK ](https://experience.adobe.com/#/downloads)
 + [ Adobe Cloud Manager ](https://my.cloudmanager.adobe.com/)
 + [ Docker van de Download ](https://www.docker.com/)
-+ [ Download de Website van de Verwijzing van de AEM (WKND) ](https://github.com/adobe/aem-guides-wknd/releases)
-+ [ de Documentatie van Dispatcher van de Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
++ [ Download de Website van de Verwijzing van AEM (WKND) ](https://github.com/adobe/aem-guides-wknd/releases)
++ [ de Documentatie van Experience Manager Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)

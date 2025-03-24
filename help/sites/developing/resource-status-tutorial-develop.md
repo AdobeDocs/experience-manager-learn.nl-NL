@@ -1,10 +1,10 @@
 ---
 title: Bronstatussen ontwikkelen in AEM Sites
-description: De status API's van de Adobe Experience Manager Resource Status, zijn een pluggable raamwerk voor het toegankelijk maken van statusberichten in AEM verschillende redacteursWeb UIs.
+description: De status API's van de Adobe Experience Manager Resource Status, is een pluggable raamwerk voor het toegankelijk maken van statusberichten in AEM die verschillende redacteursWeb UIs .
 doc-type: Tutorial
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 duration: 88
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # Bronstatussen ontwikkelen {#developing-resource-statuses-in-aem-sites}
 
-De status API&#39;s van de Adobe Experience Manager Resource Status, zijn een pluggable raamwerk voor het toegankelijk maken van statusberichten in AEM verschillende redacteursWeb UIs.
+De status API&#39;s van de Adobe Experience Manager Resource Status, is een pluggable raamwerk voor het toegankelijk maken van statusberichten in AEM die verschillende redacteursWeb UIs .
 
 ## Overzicht {#overview}
 
 Het kader van de Status van het Middel voor Editors verstrekt server-kant en cliënt-kant APIs voor het tonen van en het in wisselwerking staan met redacteurstatussen, op een standaard en eenvormige manier.
 
-De statusbalken van de editor zijn standaard beschikbaar in de editors Pagina, Ervaar fragment en Sjabloon van AEM.
+De statusbalken van de editor zijn standaard beschikbaar in de editors Pagina, Experience Fragment en Sjabloon van AEM.
 
 Voorbeelden van gebruiksgevallen voor aangepaste Resource Status Providers zijn:
 
@@ -28,7 +28,7 @@ Voorbeelden van gebruiksgevallen voor aangepaste Resource Status Providers zijn:
 * Auteurs ervan op de hoogte stellen dat een pagina in de afgelopen 15 minuten is geactiveerd
 * Auteurs ervan in kennis stellen dat een pagina in de laatste 5 minuten is bewerkt en door wie
 
-![ overzicht van de het middelstatus van AEM redacteur ](assets/sample-editor-resource-status-screenshot.png)
+![ overzicht van het de redacteursmiddel van AEM ](assets/sample-editor-resource-status-screenshot.png)
 
 ## Resource Status Provider Framework {#resource-status-provider-framework}
 

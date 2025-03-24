@@ -1,8 +1,8 @@
 ---
-title: Extensies voor inhoudsfragmenten AEM
+title: Extensies voor AEM Content Fragments
 description: Leer hoe u AEM as a Cloud Service Content Fragment-extensies kunt maken en implementeren
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,16 +12,16 @@ thumbnail: KT-11603.png
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 9164423b-a609-4bc5-9777-112d229ae748
 duration: 126
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 0%
 
 ---
 
-# Uitbreidbaarheid AEM inhoudfragmenten
+# Uitbreidbaarheid van AEM-inhoudsfragmenten
 
-AEM de UI van de Fragmenten van de Inhoud is een krachtige verlengbare UI voor het beheren van het creëren van, het beheren van, en het uitgeven van de Fragmenten van de Inhoud. Er zijn verschillende extensiepunten beschikbaar waarmee u de interface naar wens kunt aanpassen. Verschillende extensiepunten zijn beschikbaar op basis van de interface die u uitbreidt.
+De gebruikersinterface van AEM Content Fragments is een krachtige uitbreidbare gebruikersinterface voor het beheren van het maken, beheren en bewerken van Content Fragments. Er zijn verschillende extensiepunten beschikbaar waarmee u de interface naar wens kunt aanpassen. Verschillende extensiepunten zijn beschikbaar op basis van de interface die u uitbreidt.
 
 ## Extensiepunten van de console van inhoudsfragmenten
 
@@ -29,7 +29,7 @@ De Content Fragment Console in AEM (Adobe Experience Manager) is een gebruikersi
 
 ![ de Console van Fragmenten van de Inhoud ](./assets/overview/cfc.png)
 
-[ AEM de Console van de Fragmenten van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) is verlengbare UI voor het lijst van en het beheren van inhoudsfragmenten. [ AEM de uitbreidingen van de Console van het Fragment van de Inhoud worden gecreeerd ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) gebruikend het `@adobe/aem-cf-admin-ui-ext-tpl` malplaatje van App Builder.
+[ de Console van de Fragmenten van de Inhoud van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) is verlengbare UI voor het van een lijst maken van en het beheren van inhoudsfragmenten. [ de uitbreidingen van de Console van het Fragment van de Inhoud van AEM worden gecreeerd ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) gebruikend het `@adobe/aem-cf-admin-ui-ext-tpl` malplaatje van App Builder.
 
 De volgende extensiepunten voor de Content Fragments Console zijn beschikbaar:
 
@@ -102,7 +102,7 @@ De Content Fragment Editor in AEM (Adobe Experience Manager) is een gebruikersin
 
 ![ de Redacteur van Fragmenten van de Inhoud ](./assets/overview/cfe.png)
 
-AEM de Inhoudsfragmenteditor is de uitbreidbare UI voor het bewerken van inhoudsfragmenten. [ AEM de uitbreidingen van de Redacteur van het Fragment van de Inhoud worden gecreeerd ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) gebruikend het `@adobe/aem-cf-editor-ui-ext-tpl` malplaatje van App Builder.
+De AEM Content Fragments Editor is de uitbreidbare UI voor het bewerken van inhoudsfragmenten. [ de uitbreidingen van de Redacteur van het Fragment van de Inhoud van AEM worden gecreeerd ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) gebruikend het `@adobe/aem-cf-editor-ui-ext-tpl` malplaatje van App Builder.
 
 De volgende extensiepunten van de Content Fragments Editor zijn beschikbaar:
 
@@ -192,7 +192,7 @@ De volgende extensiepunten van de Content Fragments Editor zijn beschikbaar:
 
 ## Voorbeelden van extensies
 
-Welkom bij een verzameling AEM voorbeelden van UI-uitbreidingscodes! Deze bron is ontworpen om u praktische demonstraties en inzichten te bieden bij het uitbreiden van de Adobe Experience Manager-gebruikersinterface (AEM). Of u nu een ontwikkelaar bent die de functionaliteit van AEM wil verbeteren, deze codevoorbeelden dienen als waardevolle referentie.
+Welkom bij een verzameling voorbeelden van AEM UI-uitbreidingscodes! Deze bron is ontworpen om u praktische demonstraties en inzichten te bieden bij het uitbreiden van de gebruikersinterface van Adobe Experience Manager (AEM). Of u nu ontwikkelaars bent die de functionaliteit van AEM willen verbeteren, deze codevoorbeelden dienen als waardevolle referentie.
 
 <div class="columns is-multiline">
   <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Bulk property update">
@@ -219,14 +219,14 @@ Welkom bij een verzameling AEM voorbeelden van UI-uitbreidingscodes! Deze bron i
         <div class="card" style="height: 100%">
             <div class="card-image">
                 <figure class="image is-16by9">
-                    <a href="./examples/console-image-generation-and-image-upload.md" title="Op OpenAI gebaseerde afbeelding genereren en uploaden naar AEM extensie" tabindex="-1">
-                        <img class="is-bordered-r-small" src="./examples/assets/digital-image-generation/card.png" alt="Op OpenAI gebaseerde afbeelding genereren en uploaden naar AEM extensie">
+                    <a href="./examples/console-image-generation-and-image-upload.md" title="Afbeeldingen genereren en uploaden naar AEM-extensie op basis van OpenAI" tabindex="-1">
+                        <img class="is-bordered-r-small" src="./examples/assets/digital-image-generation/card.png" alt="Afbeeldingen genereren en uploaden naar AEM-extensie op basis van OpenAI">
                     </a>
                 </figure>
             </div>
             <div class="card-content is-padded-small">
                 <div class="content">
-                    <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/console-image-generation-and-image-upload.md" title="Op OpenAI gebaseerde afbeelding genereren en uploaden naar AEM extensie">OpenAPI-afbeelding genereren</a></p>
+                    <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/console-image-generation-and-image-upload.md" title="Afbeeldingen genereren en uploaden naar AEM-extensie op basis van OpenAI">OpenAPI-afbeelding genereren</a></p>
                     <p class="is-size-6">Onderzoek een uitbreiding van de voorbeeldactie die een beeld gebruikend OpenAI produceert, uploadt het aan AEM en werkt beeldbezit op het geselecteerde Inhoudsfragment bij.</p>
                     <a href="./examples/console-image-generation-and-image-upload.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Mening het voorbeeld </span>

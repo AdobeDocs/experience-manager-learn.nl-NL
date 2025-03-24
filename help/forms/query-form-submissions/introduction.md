@@ -3,7 +3,7 @@ title: Formulierverzending aanvragen
 description: Multi-part zelfstudie om u door de stappen te leiden die betrokken zijn bij het opvragen van formulierverzendingen die zijn opgeslagen in Azure Portal
 feature: Adaptive Forms
 doc-type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ jira: KT-14884
 last-substantial-update: 2024-03-03T00:00:00Z
 exl-id: 08c97626-73a9-43d2-955c-b97fbb5f2e9a
 duration: 185
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -27,13 +27,13 @@ In de volgende video wordt het gebruiksscenario beschreven
 
 Als u deze zelfstudie wilt volgen, kunt u het beste het volgende doen:
 
-* AEM 6.5.20 of hoger met de juiste toedieningspakketten voor formulieren
+* AEM 6.5.20 of hoger met de juiste formulieraddon-verpakking
 
 * Toegang tot Azure Portal-opslag
 
 
 
-Als u een ontwikkelaar bent en de code en andere details van deze implementatie van het gebruiksgeval wilt begrijpen, gelieve dit [ AEM project in of VSCode of IntelliJ in te voeren.](assets/azuredemoproject.zip)
+Als u een ontwikkelaar bent en de code en andere details van dit gebruiksgeval implementatie wilt begrijpen, gelieve dit [ project van AEM in of VSCode of IntelliJ in te voeren.](assets/azuredemoproject.zip)
 
 Als u enkel deze steekproef die aan uw lokaal systeem werkt wilt krijgen, te volgen gelieve de vermelde stappen [ part5 van dit leerprogramma ](./part5.md)
 

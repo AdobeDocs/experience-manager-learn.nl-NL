@@ -4,14 +4,14 @@ description: Start het genereren van het document door de batch uit te voeren
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-9674
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 17f91f81-96d8-49d6-b1e3-53d8899695ae
 duration: 219
-source-git-commit: 426020f59c7103829b7b7b74acb0ddb7159b39fa
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Batchconfiguratie uitvoeren
 
-Als u de batch wilt uitvoeren, vraagt u een POST naar de volgende API
+Als u de batch wilt uitvoeren, moet u een POST-aanvraag indienen bij de volgende API
 
 ```xml
 <baseURL>/confi/<configName>/execution

@@ -2,7 +2,7 @@
 title: De snelle ontwikkelomgeving instellen
 description: Leer hoe u Rapid Development Environment voor AEM as a Cloud Service instelt.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ thumbnail: KT-11861.png
 last-substantial-update: 2024-06-04T00:00:00Z
 exl-id: ab9ee81a-176e-4807-ba39-1ea5bebddeb2
 duration: 485
-source-git-commit: f714adaa9bb637c0c7b17837c1d4b9f2be737c5c
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%
@@ -58,7 +58,7 @@ De AIR CLI moet geïnstalleerde insteekmodules en opstelling met de identiteitsk
 
 >[!TAB  Interactieve wijze ]
 
-Installeer en stel de AEM RDE-plug-ins in met de opdracht `aio cli`&#39;s `plugins:install` .
+Installeer de AEM RDE-plug-ins en stel deze in met de opdracht `aio cli` s `plugins:install` .
 
 1. Installeer de AEM RDE-plug-in van de AIR CLI met de opdracht `aio cli` &#39;&#39;s `plugins:install` .
 
@@ -69,7 +69,7 @@ Installeer en stel de AEM RDE-plug-ins in met de opdracht `aio cli`&#39;s `plugi
 
    Met de AEM RDE-insteekmodule kunnen ontwikkelaars code en inhoud van de lokale computer implementeren.
 
-2. Login aan de Verlengbare CLI van Adobe I/O Runtime door het volgende bevel in werking te stellen om het toegangstoken te krijgen. Meld u aan bij dezelfde Adobe als uw Cloud Manager.
+2. Login aan de Verlengbare CLI van Adobe I/O Runtime door het volgende bevel in werking te stellen om het toegangstoken te krijgen. Meld u aan bij dezelfde Adobe Org als uw Cloud Manager.
 
    ```shell
    $ aio login
@@ -154,13 +154,13 @@ De insteekmodules van airCLI moeten worden gevormd om met uw RDE in wisselwerkin
 
 ## RDE-toegang verifiëren
 
-Verifieer de de insteekinstallatie en configuratie van AEMRDE door het volgende bevel in werking te stellen.
+Controleer de installatie en configuratie van de AEM RDE-insteekmodule met de volgende opdracht.
 
 ```shell
 $ aio aem:rde:status
 ```
 
-De RDE statusinformatie wordt getoond als milieustatus, de lijst van _uw AEM_ bundels en configuraties van het project op auteur en publiceer de dienst.
+De RDE statusinformatie wordt getoond als milieustatus, de lijst van _uw het projectbundels en configuraties van AEM_ op auteur en publiceer de dienst.
 
 ## Volgende stap
 
@@ -175,6 +175,6 @@ Opstelling van [ Extensible CLI van Adobe I/O Runtime ](https://developer.adobe.
 
 [ het gebruik en bevelen van ATM CLI ](https://github.com/adobe/aio-cli#usage)
 
-[ Adobe I/O Runtime CLI stop voor interactie met AEM Snelle Milieu&#39;s van de Ontwikkeling ](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
+[ de stop van Adobe I/O Runtime CLI voor interactie met de Milieu&#39;s van de Snelle Ontwikkeling van AEM ](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
 [ de insteekmodule van Cloud Manager CLI ](https://github.com/adobe/aio-cli-plugin-cloudmanager)

@@ -1,7 +1,7 @@
 ---
-title: Projecten ontwikkelen in AEM
-description: Een zelfstudie over de ontwikkeling van AEM projecten. In deze zelfstudie maken we een aangepaste projectsjabloon die kan worden gebruikt om nieuwe projecten te maken binnen AEM voor het beheer van workflows en taken voor het schrijven van inhoud.
-version: 6.4, 6.5
+title: Ontwikkelprojecten in AEM
+description: Een zelfstudie over de ontwikkeling van AEM-projecten. In deze zelfstudie maken we een aangepaste projectsjabloon die kan worden gebruikt om nieuwe projecten te maken in AEM voor het beheer van workflows en taken voor het schrijven van inhoud.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Projects, Workflow
 doc-type: Tutorial
 topic: Development
@@ -9,16 +9,16 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1417
-source-git-commit: 54a7f93637545a4467c4c587bbc3d1d0de5c64a1
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '4441'
 ht-degree: 0%
 
 ---
 
-# Projecten ontwikkelen in AEM
+# Ontwikkelprojecten in AEM
 
-Dit is een zelfstudie over ontwikkeling die laat zien hoe u [!DNL AEM Projects] kunt ontwikkelen. In deze zelfstudie maken we een aangepaste projectsjabloon die kan worden gebruikt om projecten te maken binnen AEM voor het beheer van workflows en taken voor het schrijven van inhoud.
+Dit is een zelfstudie over ontwikkeling die laat zien hoe u [!DNL AEM Projects] kunt ontwikkelen. In deze zelfstudie maken we een aangepaste projectsjabloon die kan worden gebruikt om projecten te maken in AEM voor het beheer van workflows en taken voor het schrijven van inhoud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16904?quality=12&learn=on)
 
@@ -26,9 +26,9 @@ Dit is een zelfstudie over ontwikkeling die laat zien hoe u [!DNL AEM Projects] 
 
 ## Inleiding {#introduction}
 
-[[!DNL AEM Projects] ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) is een eigenschap van AEM wordt ontworpen om het gemakkelijker te maken om alle werkschema&#39;s en taken verbonden aan inhoudsverwezenlijking als deel van een implementatie van AEM Sites of van Assets te beheren en te groeperen.
+[[!DNL AEM Projects] ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) is een eigenschap van AEM wordt ontworpen om het gemakkelijker te maken om alle werkschema&#39;s en taken te beheren en te groeperen verbonden aan inhoudsverwezenlijking als deel van een implementatie van AEM Sites of van Assets.
 
-AEM Projecten komen met verscheidene [ OOTB projectmalplaatjes ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects). Wanneer het creëren van een project, kunnen de auteurs van deze beschikbare malplaatjes kiezen. De grote AEM implementaties met unieke bedrijfsvereisten zullen de malplaatjes van het douaneProject willen tot stand brengen, die aan hun behoeften worden aangepast. Door een malplaatje van het douaneproject tot stand te brengen kunnen de ontwikkelaars het projectdashboard vormen, in douanewerkschema&#39;s, koppelen en extra bedrijfsrollen voor een project tot stand brengen. We zullen de structuur van een projectsjabloon bekijken en een voorbeeldsjabloon maken.
+De Projecten van AEM komen met verscheidene [ OOTB projectmalplaatjes ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects). Wanneer het creëren van een project, kunnen de auteurs van deze beschikbare malplaatjes kiezen. Grote AEM-implementaties met unieke bedrijfsvereisten willen aangepaste projectsjablonen maken die zijn afgestemd op hun behoeften. Door een malplaatje van het douaneproject tot stand te brengen kunnen de ontwikkelaars het projectdashboard vormen, in douanewerkschema&#39;s, koppelen en extra bedrijfsrollen voor een project tot stand brengen. We zullen de structuur van een projectsjabloon bekijken en een voorbeeldsjabloon maken.
 
 ![ Kaart van het Project van de Douane ](./assets/develop-aem-projects/custom-project-card.png)
 
@@ -39,7 +39,7 @@ Deze zelfstudie doorloopt de code die nodig is om een aangepaste projectsjabloon
 * [Pakket met voltooide zelfstudies](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [ Volledige Bewaarplaats van de Code op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Dit leerprogramma veronderstelt wat basiskennis van [ AEM ontwikkelingspraktijken ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) en wat vertrouwdheid met [ AEM Maven projectopstelling ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html). Alle vermelde code is bedoeld om als verwijzing worden gebruikt en zou slechts aan a [ lokale AEM instantie ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy) moeten worden opgesteld.
+Dit leerprogramma veronderstelt sommige basiskennis van [ de ontwikkelingspraktijken van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) en wat vertrouwdheid met [ AEM Maven projectopstelling ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html). Alle vermelde code is bedoeld om als verwijzing worden gebruikt en zou slechts aan de instantie van AEM van de a [ lokale ontwikkeling ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy) moeten worden opgesteld.
 
 ## Structuur van een projectsjabloon
 
@@ -63,7 +63,7 @@ De volledige nodestructuur:
 
 De wortelknoop van het projectmalplaatje is van type **cq:Malplaatje**. Op deze knoop kunt u eigenschappen **jcr vormen:titel** en **jcr:beschrijving** die in de Create Tovenaar van het Project wordt getoond. Er is ook een bezit genoemd **tovenaar** dat aan een vorm richt die de Eigenschappen van het project zal bevolken. De standaardwaarde van: **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** zou in de meeste gevallen fijn moeten werken, aangezien het de gebruiker toestaat om de basiseigenschappen van het Project te bevolken en groepsleden toe te voegen.
 
-*&#42;Nota creeert de Create Tovenaar van het Project gebruikt niet Sling POST servlet. In plaats daarvan worden de waarden gepost aan een douane servlet:**com.adobe.cq.projects.impl.servlet.ProjectServlet**. Hiermee moet u rekening houden bij het toevoegen van aangepaste velden.*
+*&#42;Merk op de Create Tovenaar van het Project niet Sling POST servlet gebruikt. In plaats daarvan worden de waarden gepost aan een douane servlet:**com.adobe.cq.projects.impl.servlet.ProjectServlet**. Hiermee moet u rekening houden bij het toevoegen van aangepaste velden.*
 
 Een voorbeeld van een douanetovenaar kan voor het Malplaatje van het Project van de Vertaling worden gevonden: **/libs/cq/core/content/projects/wizard/translationproject/default project**.
 
@@ -90,7 +90,7 @@ Er zijn drie [ standaardrollen ](https://experienceleague.adobe.com/en/docs/expe
 
 ## Een projectsjabloon maken {#creating-project-template}
 
-Omdat wij hoofdzakelijk knopen kopiëren/vormen, zullen wij CRXDE Lite gebruiken. In uw lokale AEM instantie, open omhoog [ CRXDE Lite ](http://localhost:4502/crx/de/index.jsp).
+Aangezien wij hoofdzakelijk knopen kopiëren/vormen, zullen wij CRXDE Lite gebruiken. In uw lokale instantie van AEM, open omhoog [ CRXDE Lite ](http://localhost:4502/crx/de/index.jsp).
 
 1. Maak eerst een map onder `/apps/&lt;your-app-folder&gt;` genaamd `projects` . Maak een andere map onder de naam `templates` .
 
@@ -177,7 +177,7 @@ Omdat wij hoofdzakelijk knopen kopiëren/vormen, zullen wij CRXDE Lite gebruiken
    ```
 
 1. Om het voor inhoudsauteurs gemakkelijk te maken om het Malplaatje van het Project te identificeren kunt u een douaneminiatuur toevoegen. De aanbevolen grootte is 319x319 pixels.
-   1. In CRXDE Lite creeer een dossier als sibling van gadgets, rollen, en werkstroomknopen genoemd **thumbnail.png**.
+   1. In CRXDE Lite creeert een dossier als sibling van gadgets, rollen, en werkstroomknopen genoemd **thumbnail.png**.
    1. Sla het knooppunt op, navigeer naar het knooppunt `jcr:content` en dubbelklik op de eigenschap `jcr:data` (klik niet op &#39;view&#39;).
       1. Hiermee wordt u gevraagd een dialoogvenster voor het bewerken van `jcr:data` -bestanden te openen en kunt u een aangepaste miniatuur uploaden.
 
@@ -264,7 +264,7 @@ Nu kunnen wij ons Malplaatje van het Project testen door een Project te creëren
 
 ## Waarom workflow?
 
-Traditioneel AEM workflows die rond een goedkeuringsproces worden gecentreerd, hebben workflowstappen van deelnemers gebruikt. AEM Inbox omvat details rond Taken en Werkschema en verbeterde integratie met AEM Projecten. Deze eigenschappen maken het gebruiken van de het processtappen van de Taak van Projecten creëren een aantrekkelijkere optie.
+Traditioneel hebben AEM-workflows die zich rond een goedkeuringsproces bevinden, gebruikgemaakt van workflowstappen voor deelnemers. AEM Inbox omvat details rond Taken en Werkschema en verbeterde integratie met de Projecten van AEM. Deze eigenschappen maken het gebruiken van de het processtappen van de Taak van Projecten creëren een aantrekkelijkere optie.
 
 ### Waarom taken?
 
@@ -302,7 +302,7 @@ In de laatste stap van de workflow wordt gebruikgemaakt van de processtap Pagina
 
 ## Het workflowmodel maken
 
-1. Navigeer in het menu Start AEM naar Extra -> Workflow -> Modellen. Klik op &#39;Maken&#39; in de rechterbovenhoek om een workflowmodel te maken.
+1. Navigeer in het menu Start van AEM naar Extra -> Workflow -> Modellen. Klik op &#39;Maken&#39; in de rechterbovenhoek om een workflowmodel te maken.
 
    Geef het nieuwe model een titel: &quot;Workflow voor inhoudsgoedkeuring&quot; en een URL-naam: &quot;workflow voor inhoudsgoedkeuring&quot;.
 
@@ -320,9 +320,9 @@ In de laatste stap van de workflow wordt gebruikgemaakt van de processtap Pagina
 
    >[!NOTE]
    >
-   >Als AEM 6.4+ wordt gebruikt, is de locatie van de workflow gewijzigd. Zie [ hier voor meer details.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
+   >Als u AEM 6.4+ gebruikt, is de locatie van Workflow gewijzigd. Zie [ hier voor meer details.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
 
-   Als u AEM 6.4+ gebruikt, wordt het workflowmodel onder `/conf/global/settings/workflow/models` gemaakt. Herhaal bovenstaande stappen met de map /conf en voeg een submap met de naam `aem-guides` toe en verplaats de map `content-approval-workflow` eronder.
+   Als u AEM 6.4+ gebruikt, wordt het workflowmodel gemaakt onder `/conf/global/settings/workflow/models` . Herhaal bovenstaande stappen met de map /conf en voeg een submap met de naam `aem-guides` toe en verplaats de map `content-approval-workflow` eronder.
 
    ![ Moderne plaats van de werkschemadefinitie ](./assets/develop-aem-projects/modern-workflow-definition-location.png)
 Locatie van workflowmodel in 6.4+
@@ -333,7 +333,7 @@ Locatie van workflowmodel in 6.4+
 
    1. Inhoud bewerken
    1. Goedkeuring
-   1. Publish
+   1. Publiceren
 
    ![ configuratie van werkschemaframes ](./assets/develop-aem-projects/workflow-model-stage-properties.png)
 
@@ -341,13 +341,13 @@ Locatie van workflowmodel in 6.4+
 
    ![ bar van de werkschemavooruitgang ](./assets/develop-aem-projects/workflow-info-progress.png)
 
-   De werkstroomvoortgangsbalk zoals deze wordt weergegeven in het AEM Inbox.
+   De voortgangsbalk van de workflow zoals deze wordt weergegeven in het AEM Inbox.
 
    Naar keuze kunt u een **Beeld** aan de Eigenschappen van de Pagina uploaden die als duimnagel van het Werkschema wordt gebruikt wanneer de gebruikers het selecteren. Afbeeldingsafmetingen moeten 319x319 pixels zijn. Het toevoegen van a **Beschrijving** aan de Eigenschappen van de Pagina zal ook verschijnen wanneer een gebruiker het werkschema gaat selecteren.
 
 1. Het workflowproces Projecttaak maken is ontworpen om een taak te maken als een stap in de workflow. Pas na het voltooien van de taak gaat de workflow verder. Een krachtig aspect van de stap van de Taak van het Project creëren is dat het werkschema meta-gegevens waarden kan lezen en die gebruiken om de taak dynamisch tot stand te brengen.
 
-   Verwijder eerst de Stap van de Deelnemer die standaard wordt gemaakt. Van de Sidekick in het componentenmenu breidt **uit &quot;Projecten&quot;** onderverdeling en sleep + laat vallen **&quot;creëren de Taak van het Project&quot;** op het model.
+   Verwijder eerst de Stap van de Deelnemer die standaard wordt gemaakt. Van Sidekick in het componentenmenu breidt **uit &quot;Projecten&quot;** subrubriek en sleep + laat vallen **&quot;de Taak van het Project van het Project&quot;creëren** op het model.
 
    Dubbelklik op de stap Projecttaak maken om het workflowdialoogvenster te openen. Configureer de volgende eigenschappen:
 
@@ -416,7 +416,7 @@ Locatie van workflowmodel in 6.4+
    task.setProperty("taskPriority", taskPriority);
    ```
 
-1. Navigeer terug naar de workflow voor goedkeuring van inhoud. Sleep+Daling **OF Splitste** component (die in de Sidekick onder de &quot;categorie van het Werkschema&quot;wordt gevonden) onder de **3} Stap van de Taak van het Begin {.** Selecteer in het dialoogvenster Algemeen het keuzerondje voor 3 vertakkingen. OR Splitst zal de waarde van werkschemameta-gegevens **&quot;lastTaskAction&quot;** lezen om de route van het werkschema te bepalen. Het **&quot;lastTaskAction&quot;** bezit wordt geplaatst aan één van de waarden van het Verpletterende Lusje dat in Stap 4 wordt gevormd. Voor elk van de lusjes van de Tak vult het **1} de tekstgebied van het Manuscript {met de volgende waarden uit:**
+1. Navigeer terug naar de workflow voor goedkeuring van inhoud. Sleep+Daling **OF Splitste** component (die in Sidekick onder de &quot;categorie van het Werkschema&quot;wordt gevonden) onder de **3} Stap van de Taak van het Begin {.** Selecteer in het dialoogvenster Algemeen het keuzerondje voor 3 vertakkingen. OR Splitst zal de waarde van werkschemameta-gegevens **&quot;lastTaskAction&quot;** lezen om de route van het werkschema te bepalen. Het **&quot;lastTaskAction&quot;** bezit wordt geplaatst aan één van de waarden van het Verpletterende Lusje dat in Stap 4 wordt gevormd. Voor elk van de lusjes van de Tak vult het **1} de tekstgebied van het Manuscript {met de volgende waarden uit:**
 
    ```
    function check() {
@@ -478,7 +478,7 @@ Locatie van workflowmodel in 6.4+
        "Send Back for Revision"
    ```
 
-   Aangezien dit de Normale route van de Goedkeuring is wordt de prioriteit van de taak geplaatst aan Medium. Daarnaast geven we de groep fiatteurs vijf dagen om de taak te voltooien. De toegewezen persoon wordt leeg gelaten op het tabblad Taak aangezien wij dit dynamisch zullen toewijzen op het tabblad Geavanceerde instellingen. Wij geven de Approvers groep twee mogelijke routes wanneer het voltooien van deze taak: **&quot;keur en Publish&quot;** goed als zij de inhoud goedkeuren en het kan worden gepubliceerd en **&quot;verzend terug voor Herziening&quot;** als er kwesties zijn die de originele redacteur moet verbeteren. De fiatteur kan commentaren verlaten die de originele redacteur zal zien of is het werkschema teruggekeerd aan hem/haar.
+   Aangezien dit de Normale route van de Goedkeuring is wordt de prioriteit van de taak geplaatst aan Medium. Daarnaast geven we de groep fiatteurs vijf dagen om de taak te voltooien. De toegewezen persoon wordt leeg gelaten op het tabblad Taak aangezien wij dit dynamisch zullen toewijzen op het tabblad Geavanceerde instellingen. Wij geven de Approvers groep twee mogelijke routes wanneer het voltooien van deze taak: **&quot;keur goed en publiceer&quot;** als zij de inhoud goedkeuren en het kan worden gepubliceerd en **&quot;verzend terug voor Herziening&quot;** als er kwesties zijn die de originele redacteur moet verbeteren. De fiatteur kan commentaren verlaten die de originele redacteur zal zien of is het werkschema teruggekeerd aan hem/haar.
 
 Eerder in deze zelfstudie hebben we een projectsjabloon gemaakt dat een rol van fiatteurs bevatte. Telkens als een nieuw Project van dit Malplaatje wordt gecreeerd wordt een project-specifieke Groep gecreeerd voor de rol Approvers. Enkel als een Stap van de Deelnemer kan een Taak slechts aan een Gebruiker of een Groep worden toegewezen. We willen deze taak toewijzen aan de projectgroep die overeenkomt met de groep fiatteurs. Alle werkschema&#39;s die van binnen een Project worden gelanceerd zullen meta-gegevens hebben die de Rollen van het Project aan de specifieke groep van het Project in kaart brengen.
 
@@ -539,7 +539,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
 1. Aangezien de Approvers groep de optie heeft om het werkschema terug naar de originele redacteur voor verdere revisies te verzenden zullen wij op de **Goto** stap vertrouwen om de laatste genomen actie te lezen en het werkschema aan het begin te leiden of het te laten verdergaan.
 
-   Sleep en zet de component Goto Step (gevonden in de Sidekick onder Workflow) onder OF spleet waar deze opnieuw wordt samengevoegd. Dubbelklik op de volgende eigenschappen en configureer deze in het dialoogvenster:
+   Sleep en zet de component Goto Step (gevonden in de Sidekick onder Workflow) onder OF splitst op de plaats waar deze opnieuw wordt samengevoegd. Dubbelklik op de volgende eigenschappen en configureer deze in het dialoogvenster:
 
    ```
    Common Tab
@@ -572,7 +572,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
 1. Om te publiceren zullen wij de nuttige lading gebruiken de weg **pagina/activa** stap van het Proces activeren. Deze processtap vereist weinig configuratie en zal de nuttige lading van het werkschema aan de replicatierij voor activering toevoegen. Wij zullen de stap onder de stap van de Goto toevoegen en op deze manier kan het slechts worden bereikt als de groep Approver de inhoud voor publicatie heeft goedgekeurd of de originele redacteur de route van de Goedkeuring van de Bypass koos.
 
-   Sleep+Daling **activeer de stap van het het Proces van de Pagina/van Activa** (die in de Sidekick onder Werkschema WCM) onder de Stap van het Goto in het model wordt gevonden.
+   Sleep+Daling **activeer de stap van het het Proces van de Pagina/van Activa** (die in Sidekick onder Werkschema WCM) onder de Stap van het Goto in het model wordt gevonden.
 
    ![ volledig werkschemamodel ](assets/develop-aem-projects/workflow-model-final.png)
 
@@ -735,7 +735,7 @@ De configuratie van het Werkschema is een gebied van een Malplaatje van het Proj
 
    >[!NOTE]
    >
-   >Als AEM 6.4 wordt gebruikt, is de locatie van de workflow gewijzigd. Wijs de eigenschap `modelId` onder `/var/workflow/models/aem-guides/content-approval-workflow` toe aan de locatie van het workflowmodel van de runtime.
+   >Als u AEM 6.4 gebruikt, is de locatie van Workflow gewijzigd. Wijs de eigenschap `modelId` onder `/var/workflow/models/aem-guides/content-approval-workflow` toe aan de locatie van het workflowmodel van de runtime.
    >
    >
    >Zie [ hier voor meer details over de verandering in plaats van werkschema.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
@@ -754,4 +754,4 @@ De configuratie van het Werkschema is een gebied van een Malplaatje van het Proj
 
 * [Voltooid lespakket downloaden](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [ Volledige Bewaarplaats van de Code op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
-* [ AEM Documentatie van Projecten ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects)
+* [ de Documentatie van de Projecten van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects)

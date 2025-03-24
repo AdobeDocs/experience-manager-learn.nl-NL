@@ -1,7 +1,7 @@
 ---
 title: HTTP/HTTPS-verbindingen op niet-standaardpoorten voor flexibel poortcontact
 description: Leer hoe u HTTP/HTTPS-aanvragen van AEM as a Cloud Service naar externe webservices kunt uitvoeren op niet-standaard poorten voor Flexible Port Egress.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9354
 thumbnail: KT-9354.jpeg
 exl-id: c8cc0385-9e94-4120-9fb1-aeccbfcc8aa4
 duration: 86
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # HTTP/HTTPS-verbindingen op niet-standaardpoorten voor flexibel poortcontact
 
-HTTP/HTTPS-verbindingen op niet-standaardpoorten (niet 80/443) moeten vanuit AEM as a Cloud Service worden vernieuwd, maar ze hebben geen speciale `portForwards` -regels nodig en kunnen gebruikmaken van AEM geavanceerde netwerkfuncties `AEM_PROXY_HOST` en een gereserveerde proxypoort `AEM_HTTP_PROXY_PORT` of `AEM_HTTPS_PROXY_PORT` , afhankelijk van de bestemming is HTTP/HTTPS.
+HTTP/HTTPS-verbindingen op niet-standaardpoorten (niet 80/443) moeten vanuit AEM as a Cloud Service worden vernieuwd, maar ze hebben geen speciale `portForwards` -regels nodig en kunnen gebruik maken van de geavanceerde AEM-netwerkvoorzieningen `AEM_PROXY_HOST` en een gereserveerde proxypoort `AEM_HTTP_PROXY_PORT` of `AEM_HTTPS_PROXY_PORT` , afhankelijk van de bestemming is HTTP/HTTPS.
 
 ## Geavanceerde netwerkondersteuning
 
@@ -37,7 +37,7 @@ Verzeker [ aangewezen ](../advanced-networking.md#advanced-networking) geavancee
 
 ## Codevoorbeeld
 
-Dit Java™ codevoorbeeld is van de dienst OSGi die in AEM as a Cloud Service kan lopen die een verbinding van HTTP met een externe Webserver op 8080 maakt. Verbindingen met HTTPS-webservers gebruiken de omgevingsvariabelen `AEM_PROXY_HOST` en `AEM_HTTPS_PROXY_PORT` (standaard `proxy.tunnel:3128` in AEM releases &lt; 6094).
+Dit Java™ codevoorbeeld is van de dienst OSGi die in AEM as a Cloud Service kan lopen die een verbinding van HTTP met een externe Webserver op 8080 maakt. Verbindingen met HTTPS-webservers gebruiken de omgevingsvariabelen `AEM_PROXY_HOST` en `AEM_HTTPS_PROXY_PORT` (standaard `proxy.tunnel:3128` in AEM-releases &lt; 6094).
 
 >[!NOTE]
 > Het wordt geadviseerd [ Java™ 11 HTTP APIs ](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) wordt gebruikt om HTTP/HTTPS vraag van AEM te maken.

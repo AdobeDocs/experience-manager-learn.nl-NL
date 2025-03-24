@@ -1,7 +1,7 @@
 ---
 title: Adobe CDN - Geavanceerde functies naast caching
-description: Leer over geavanceerde eigenschappen van Adobe CDN voorbij caching, zoals het vormen van verkeer bij CDN, vestiging tokens en geloofsbrieven, CDN foutenpagina's en meer.
-version: Cloud Service
+description: Leer over geavanceerde eigenschappen van Adobe CDN voorbij caching, zoals het vormen van verkeer bij CDN, het plaatsen van tekenen en geloofsbrieven, CDN foutenpagina's en meer.
+version: Experience Manager as a Cloud Service
 feature: Website Performance, CDN Cache
 topic: Architecture, Performance, Content Management
 role: Developer, Architect, User, Leader
@@ -12,7 +12,7 @@ last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
 exl-id: 8948a900-01e9-49ed-9ce5-3a057f5077e4
-source-git-commit: 0e8b76b6e870978c6db9c9e7a07a6259e931bdcc
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -21,15 +21,15 @@ ht-degree: 0%
 
 # Adobe CDN - Geavanceerde functies naast caching
 
-Leer over geavanceerde eigenschappen van het Netwerk van de Levering van de Inhoud van de Adobe (CDN) voorbij caching, zoals het vormen van verkeer bij CDN, vestiging tokens en geloofsbrieven, CDN foutenpagina&#39;s en meer.
+Leer over geavanceerde eigenschappen van het Netwerk van de Levering van de Inhoud van Adobe (CDN) voorbij caching, zoals het vormen van verkeer bij CDN, vestiging tokens en geloofsbrieven, CDN foutenpagina&#39;s en meer.
 
-Naast het in cache plaatsen van inhoud, biedt Adobe CDN verschillende geavanceerde functies die u kunnen helpen uw websiteprestaties te optimaliseren. Deze functies zijn onder andere:
+De Adobe CDN is niet alleen bedoeld voor het in cache plaatsen van inhoud, maar biedt ook diverse geavanceerde functies die u kunnen helpen de prestaties van uw website te optimaliseren. Deze functies zijn onder andere:
 
 - Het vormen verkeer bij CDN
 - CDN-referenties en verificatie configureren
 - CDN-foutpagina&#39;s
 
-Deze eigenschappen zijn **zelfbediening** eigenschappen. Gevormd in het `cdn.yaml` dossier van uw AEM project en opgesteld gebruikend de configuratiepijpleiding van Cloud Manager.
+Deze eigenschappen zijn **zelfbediening** eigenschappen. Gevormd in het `cdn.yaml` dossier van uw project van AEM en opgesteld gebruikend de configuratiepijpleiding van Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
 
@@ -51,19 +51,19 @@ Begrijp de belangrijkste mogelijkheden met betrekking tot _het Vormen CDN geloof
 
 - **zuiveren API Token**: Laat u toe om uw eigen zuiveringssleutel tot stand te brengen voor het zuiveren van enige of groep of alle middelen van het geheime voorgeheugen.
 - **Basisauthentificatie**: Een lichtgewichtauthentificatiemechanisme wanneer u toegang tot uw website of een deel van het wilt beperken. Meestal vereist als onderdeel van verschillende evaluatieprocessen voordat u live gaat.
-- **bevestiging van de Kopbal van HTTP**: Gebruikt wanneer een klant beheerde CDN verkeer aan Adobe CDN verplettert. De Adobe-CDN valideert de binnenkomende aanvraag op basis van de headerwaarde `X-AEM-Edge-Key` . Hiermee kunt u uw eigen waarde voor de koptekst van `X-AEM-Edge-Key` maken.
+- **bevestiging van de Kopbal van HTTP**: Gebruikt wanneer een klant beheerde CDN verkeer aan Adobe CDN verplettert. De Adobe CDN valideert de binnenkomende aanvraag op basis van de headerwaarde `X-AEM-Edge-Key` . Hiermee kunt u uw eigen waarde voor de koptekst van `X-AEM-Edge-Key` maken.
 
 ## CDN-foutpagina&#39;s
 
 Laten wij de belangrijkste mogelijkheden met betrekking tot _CDN foutenpagina&#39;s_ begrijpen:
 
-- **Gemarkeerde foutenpagina&#39;s**: Vertoning een brandde foutenpagina aan uw gebruikers in het _onwaarschijnlijke scenario_ wanneer Adobe CDN uw oorsprongsserver niet kan bereiken.
+- **Gemarkeerde foutenpagina&#39;s**: Vertoning een brandde foutenpagina aan uw gebruikers in het _onwaarschijnlijke scenario_ wanneer Adobe CDN uw oorspronkelijke server niet kan bereiken.
 
 ## Uitvoeren
 
 De implementatie van deze geavanceerde functies omvat twee stappen:
 
-1. **CDN config- dossier van de Update**: Werk het `cdn.yaml` dossier in uw AEM project met de vereiste configuraties bij. De configuraties worden toegevoegd als regels en zij volgen een regelsyntaxis. De regel drie hoofdcomponenten: `name`, `when` en `action` .
+1. **CDN config- dossier van de Update**: Werk het `cdn.yaml` dossier in uw project van AEM met de vereiste configuraties bij. De configuraties worden toegevoegd als regels en zij volgen een regelsyntaxis. De regel drie hoofdcomponenten: `name`, `when` en `action` .
 
 2. **stel CDN config- dossier** op: stel het bijgewerkte `cdn.yaml` dossier op gebruikend de Cloud Manager config pijpleiding. Voor meer informatie, zie [ regels opstellen door Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
 
@@ -87,7 +87,7 @@ data:
           location: /us/en/top3.html
 ```
 
-## Verwante Tutorials
+## Verwante zelfstudies
 
 [ Beschermend websites met de regels van de verkeersfilter ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
 

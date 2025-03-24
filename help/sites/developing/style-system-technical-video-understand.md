@@ -1,15 +1,15 @@
 ---
-title: Begrijpen hoe u code kunt schrijven voor het systeem AEM
-description: In deze video bekijken we de anatomie van de CSS (of LESS) en JavaScript die worden gebruikt om de component van de Titel van de Titel van de Adobe te stijleren van het Beheer van de Kern gebruikend het Systeem van de Stijl, evenals hoe deze stijlen op de HTML en DOM worden toegepast.
+title: Code voor het AEM Style System
+description: In deze video bekijken we de anatomie van de CSS (of LESS) en JavaScript die worden gebruikt om de component Core Title van Adobe Experience Manage te stijleren met behulp van het Stijlsysteem, en hoe deze stijlen worden toegepast op de HTML en DOM.
 feature: Style System
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate, Experienced
 doc-type: Technical Video
 exl-id: 8fbc3819-3214-4c58-8629-a27eb6f0c545
 duration: 1005
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 0%
@@ -18,14 +18,14 @@ ht-degree: 0%
 
 # Begrijpen hoe u code kunt gebruiken voor het Stijlsysteem{#understanding-how-to-code-for-the-aem-style-system}
 
-In deze video bekijken we de anatomie van de CSS (of [!DNL LESS]) en JavaScript die worden gebruikt om de component van de Titel van de Kern van het Beheer van de Ervaring te stileren gebruikend het Systeem van de Stijl, evenals hoe deze stijlen worden toegepast op de HTML en DOM.
+In deze video bekijken we de anatomie van de CSS (of [!DNL LESS] ) en JavaScript die worden gebruikt om de component Core Title van Experience Manage te stijlen met behulp van het Stijlsysteem, en hoe deze stijlen worden toegepast op de HTML en DOM.
 
 
 ## Begrijpen hoe u code kunt gebruiken voor het Stijlsysteem {#understanding-how-to-code-for-the-style-system}
 
 >[!VIDEO](https://video.tv.adobe.com/v/21538?quality=12&learn=on)
 
-Het verstrekte AEM Pakket (**technisch-review.sites.style-system-1.0.0.zip**) installeert de stijl van de voorbeeldtitel, steekproefbeleid voor de de container en de componenten van de Titel van de Lay-out Wij.Retail, en een steekproefpagina.
+Het verstrekte Pakket van AEM (**technisch-review.sites.style-system-1.0.0.zip**) installeert de stijl van de voorbeeldtitel, steekproefbeleid voor de componenten van de Lay-out Wij.Retail en van de Titel, en een steekproefpagina.
 
 [technical-review.sites.style-system-1.0.0.zip](assets/technical-review.sites.style-system-1.0.0.zip)
 
@@ -63,7 +63,7 @@ Voor diegenen die liever CSS gebruiken, wordt onder dit codefragment de CSS weer
 }
 ```
 
-Het bovenstaande [!DNL LESS] wordt native gecompileerd door Experience Manager naar de volgende CSS.
+Het bovenstaande [!DNL LESS] wordt door Experience Manager native gecompileerd naar de volgende CSS.
 
 ```css
 /* CSS */
@@ -146,9 +146,9 @@ jQuery(function ($) {
 
 ## Best practices voor ontwikkeling {#development-best-practices}
 
-### Aanbevolen werkwijzen HTML {#html-best-practices}
+### Aanbevolen procedures voor HTML {#html-best-practices}
 
-* HTML (gegenereerd via HTL) moet zo structureel mogelijk semantisch zijn; onnodige groepering/nesting van elementen moet worden vermeden.
+* HTML (gegenereerd via HTL) moet zo structureel mogelijk semantisch zijn; onnodige groepering/nesting van elementen vermijden.
 * HTML-elementen moeten kunnen worden benaderd via CSS-klassen in BEM-stijl.
 
 **Goed** - Alle elementen in de component zijn adresseerbaar via aantekening BEM:
@@ -175,7 +175,7 @@ jQuery(function ($) {
 
 * Het is beter om meer gegevens bloot te stellen en het te verbergen dan te weinig gegevens bloot te stellen die toekomstige achterste-eindontwikkeling vereisen om het bloot te stellen.
 
-   * Het uitvoeren van de auteur-able inhoudsknevels kan helpen in het houden van deze HTML mager, waarbij de auteurs kunnen selecteren welke inhoudselementen aan de HTML worden geschreven. De optie kan vooral belangrijk zijn wanneer u afbeeldingen naar de HTML schrijft die niet voor alle stijlen worden gebruikt.
+   * Door het implementeren van inhoudskeuzelijsten die geschikt zijn voor de auteur, kunt u deze HTML slanken, waarbij auteurs kunnen selecteren welke inhoudselementen naar de HTML worden geschreven. De optie kan vooral belangrijk zijn bij het schrijven van afbeeldingen naar de HTML die mogelijk niet voor alle stijlen worden gebruikt.
    * De uitzondering op deze regel is wanneer dure bronnen, bijvoorbeeld afbeeldingen, standaard beschikbaar worden gemaakt, aangezien gebeurtenisafbeeldingen die door CSS worden verborgen, in dit geval onnodig worden opgehaald.
 
       * Moderne afbeeldingscomponenten gebruiken vaak JavaScript om de meest geschikte afbeelding voor het gebruikscase (viewport) te selecteren en te laden.
@@ -194,7 +194,7 @@ jQuery(function ($) {
 
 * Houd het gewicht/de specificiteit van de kiezer gelijk. Hiermee voorkomt en lost u conflicten met CSS-trapsgewijze opmaak op.
 * Elke stijl indelen in een afzonderlijk bestand.
-   * Deze bestanden kunnen worden gecombineerd met behulp van LESS/SCSS `@imports` of als onbewerkte CSS is vereist, via het opnemen van bestanden in de HTML-clientbibliotheek of aangepaste front-end systemen voor het bouwen van elementen.
+   * Deze bestanden kunnen worden gecombineerd met behulp van LESS/SCSS `@imports` of als onbewerkte CSS is vereist, via het opnemen van bestanden in de HTML Client Library of aangepaste front-end systemen voor het bouwen van elementen.
 * Vermijd het mengen van vele complexe stijlen.
    * Hoe meer stijlen tegelijk op een component kunnen worden toegepast, hoe groter de variatie aan permutaties. Dit kan moeilijk te handhaven/QA/verzekeren merkgroepering worden.
 * Gebruik altijd CSS-klassen (na BEM-notatie) om CSS-regels te definiëren.
@@ -240,11 +240,11 @@ De in deze sectie gedefinieerde aanbevolen procedures hebben betrekking op &quot
 * Style-JavaScript moet vooral worden gebruikt voor het manipuleren van het DOM van de component ter ondersteuning van opmaakmethoden door CSS.
 * Evalueer het gebruik van JavaScript opnieuw als componenten meerdere keren op een pagina worden weergegeven en begrijp de kosten voor berekeningen en opnieuw tekenen.
 * Evalueer het gebruik van Javascript opnieuw als deze asynchroon (via AJAX) nieuwe gegevens/inhoud invoegt wanneer de component meerdere keren op een pagina wordt weergegeven.
-* Verwerk zowel Publish- als Authoring-ervaringen.
+* Verwerk zowel de publicatie- als de ontwerpervaring.
 * Gebruik style-JavaScript waar mogelijk opnieuw.
    * Als bijvoorbeeld voor meerdere stijlen van een component de afbeelding naar een achtergrondafbeelding moet worden verplaatst, kan de stijl-JavaScript één keer worden geïmplementeerd en aan meerdere `BLOCK--MODIFIERs` worden gekoppeld.
 * Scheid stijl-JavaScript waar mogelijk van functionele JavaScript.
-* Evalueer de kosten van JavaScript tegenover het direct via HTML laten zien van deze DOM-wijzigingen in de HTML.
+* Evalueer de kosten van JavaScript versus het direct via HTML zichtbaar maken van deze DOM-wijzigingen in de HTML.
    * Wanneer voor een component die style-JavaScript gebruikt, serverwijzigingen nodig zijn, moet u nagaan of de JavaScript-manipulatie op dit moment kan worden geïntroduceerd en wat de effecten/vertakkingen zijn voor de prestaties en de ondersteuning van de component.
 
 #### Prestatieoverwegingen {#performance-considerations}
@@ -257,7 +257,7 @@ De in deze sectie gedefinieerde aanbevolen procedures hebben betrekking op &quot
 ## Aanvullende bronnen {#additional-resources}
 
 * [ Documentatie van het Systeem van de Stijl ](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html)
-* [ Creërend AEM de bibliotheken van de Cliënt ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [ Creërend de bibliotheken van de Cliënt van AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [ BEM (de Modifier van het Element van het Blok) documentatiewebsite ](https://getbem.com/)
 * [ LESS de website van de Documentatie ](https://lesscss.org/)
 * [ jQuery website ](https://jquery.com/)

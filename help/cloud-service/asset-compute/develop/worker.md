@@ -1,8 +1,8 @@
 ---
-title: Een Asset compute-worker ontwikkelen
-description: De arbeiders van de asset compute zijn de kern van een Asset compute projecten zoals verstrekt douanefunctionaliteit die, of orkest, het werk uitvoert dat op activa wordt uitgevoerd om een nieuwe vertoning tot stand te brengen.
+title: Een Asset Compute-worker ontwikkelen
+description: Asset Compute-workers vormen de kern van een Asset Compute-project en bieden aangepaste functionaliteit die het werk dat met een element wordt uitgevoerd uitvoert of georkestreerd om een nieuwe uitvoering te maken.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6282
 thumbnail: KT-6282.jpg
@@ -11,43 +11,43 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 7d51ec77-c785-4b89-b717-ff9060d8bda7
 duration: 451
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1386'
 ht-degree: 0%
 
 ---
 
-# Een Asset compute-worker ontwikkelen
+# Een Asset Compute-worker ontwikkelen
 
-De arbeiders van de asset compute zijn de kern van een project van de Asset compute zoals verstrekt douanefunctionaliteit die, of orkest, het werk uitvoert dat op activa wordt uitgevoerd om een nieuwe vertoning tot stand te brengen.
+Asset Compute-workers vormen de kern van een Asset Compute-project en bieden aangepaste functionaliteit waarmee het werk dat met een element wordt uitgevoerd, wordt uitgevoerd of georkestreerd om een nieuwe uitvoering te maken.
 
-In het project Asset compute wordt automatisch een eenvoudige worker gegenereerd die het oorspronkelijke binaire getal van het element kopieert naar een benoemde uitvoering, zonder transformaties. In deze zelfstudie zullen we deze worker aanpassen om een interessantere uitvoering te maken, om de kracht van Asset compute workers te illustreren.
+Het Asset Compute-project genereert automatisch een eenvoudige worker die het oorspronkelijke binaire getal van het element kopieert naar een benoemde uitvoering, zonder transformaties. In deze zelfstudie zullen we deze worker aanpassen om een interessantere uitvoering te maken, om de kracht van Asset Compute-workers te illustreren.
 
-We maken een Asset compute-worker die een nieuwe horizontale afbeeldingsuitvoering genereert die lege ruimte links en rechts van de uitvoering van het element dekt met een vervaagde versie van het element. De breedte, de hoogte en de vervaging van de uiteindelijke uitvoering worden geparametereerd.
+We maken een Asset Compute-worker die een nieuwe horizontale afbeeldingsuitvoering genereert die lege ruimte links en rechts van de uitvoering van het element dekt met een vervaagde versie van het element. De breedte, de hoogte en de vervaging van de uiteindelijke uitvoering worden geparametereerd.
 
-## Logische stroom van een aanroep van een Asset compute-worker
+## Logische stroom van een aanroep van een Asset Compute-worker
 
-Workers van asset computen implementeren het Asset compute SDK worker API-contract, in de functie `renditionCallback(...)` , die conceptueel is:
+Asset Compute Workers implementeren het Asset Compute SDK worker API-contract in de functie `renditionCallback(...)` , wat conceptueel is:
 
-+ __Input:__ de originele binaire en parameters van het Profiel van een AEM activa
-+ __Output:__ Één of meerdere vertoningen die aan de AEM activa moeten worden toegevoegd
++ __Input:__ de originele binaire parameters en van het Profiel van een AEM-element
++ __Output:__ Één of meerdere vertoningen die aan de activa van AEM moeten worden toegevoegd
 
-![ Asset compute werker logische stroom ](./assets/worker/logical-flow.png)
+![ de arbeids logische stroom van Asset Compute ](./assets/worker/logical-flow.png)
 
-1. AEM de dienst van de Auteur haalt de Asset compute worker aan, die de activa __(1a)__ originele binaire (`source` parameter) verstrekt, en __(1b)__ om het even welke die parameters in het Profiel van de Verwerking (`rendition.instructions` parameter) worden bepaald.
-1. De Asset compute SDK organiseert de uitvoering van de functie van de meta-gegevens van de douaneAsset compute `renditionCallback(...)`, die een nieuwe binaire vertoning produceert, op het originele binaire binaire element __(1a)__ en om het even welke parameters __(1b)__ wordt gebaseerd.
+1. De dienst van de Auteur van AEM roept de worker van Asset Compute aan, die de activa __(1a) verstrekt__ origineel binair (`source` parameter), en __(1b)__ om het even welke parameters die in het Profiel van de Verwerking (`rendition.instructions` parameter) worden bepaald.
+1. Asset Compute SDK organiseert de uitvoering van de functie van de meta-gegevensarbeider van douaneAsset Compute `renditionCallback(...)`, die een nieuwe binaire vertoning produceert, op het originele binaire element van activa __(1a)__ en om het even welke parameters __(1b)__ wordt gebaseerd.
 
    + In dit leerprogramma wordt de vertoning &quot;in proces&quot;gecreeerd, betekenend de worker de vertoning samenstelt, nochtans kan het bronbinaire getal naar andere dienst APIs van het Web voor vertoningsgeneratie eveneens worden verzonden.
 
-1. De worker Asset compute slaat de binaire gegevens van de nieuwe uitvoering op in `rendition.path` .
-1. De binaire gegevens die aan `rendition.path` worden geschreven worden vervoerd via de Asset compute SDK aan AEM de Dienst van de Auteur en als __worden blootgesteld (4a)__ een tekstvertoning en __(4b)__ voortgeduurd aan de de meta-gegevensknoop van de activa die.
+1. De Asset Compute-worker slaat de binaire gegevens van de nieuwe vertoning op in `rendition.path` .
+1. De binaire gegevens die aan `rendition.path` worden geschreven worden vervoerd via Asset Compute SDK naar de Dienst van de Auteur van AEM en als __(4a)__ een tekstvertoning en __(4b)__ voortgeduurd aan de de meta-gegevensknoop van de activa worden blootgesteld die.
 
-In het bovenstaande diagram worden de problemen beschreven die de Asset compute ontwikkelaar onder ogen ziet en wordt een logische stroom weergegeven naar de aanroep van de Asset compute worker. Voor nieuwsgierig, zijn de [ interne details van de uitvoering van de Asset compute ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html) beschikbaar, nochtans slechts kunnen de openbare Asset compute SDK API contracten worden afgelost.
+In het bovenstaande diagram worden de zorgen van de Asset Compute-ontwikkelaar en de logische doorstroming naar de aanroeping van Asset Compute-workers uitgelegd. Voor nieuwsgierig, zijn de [ interne details van de uitvoering van Asset Compute ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html) beschikbaar, nochtans slechts kunnen de openbare contracten van Asset Compute SDK API van afhangen.
 
 ## Anatomie van een worker
 
-Alle Asset compute werknemers volgen dezelfde basisstructuur en input/output contract.
+Alle Asset Compute-workers volgen dezelfde basisstructuur en invoer-/uitvoercontract.
 
 ```javascript
 'use strict';
@@ -102,7 +102,7 @@ function customHelperFunctions() { ... }
 
 ![ auto-geproduceerde index.js ](./assets/worker/autogenerated-index-js.png)
 
-1. Zorg ervoor dat het Asset compute-project is geopend in VS-code
+1. Zorg ervoor dat het Asset Compute-project is geopend in VS-code
 1. Ga naar de map `/actions/worker`
 1. Het `index.js` -bestand openen
 
@@ -110,15 +110,15 @@ Dit is het JavaScript-bestand van de worker dat we in deze zelfstudie zullen wij
 
 ## Ondersteunende npm-modules installeren en importeren
 
-Het zijn gebaseerd Node.js, profiteren de projecten van de Asset compute van het robuuste [ npm modulecosysteem ](https://npmjs.com). Om npm modules te gebruiken moeten wij hen eerst in ons project van de Asset compute installeren.
+Als Gebaseerd op Node.js, profiteren de projecten van Asset Compute van het robuuste [ npm moduleecosysteem ](https://npmjs.com). Als u npm-modules wilt gebruiken, moeten we ze eerst in ons Asset Compute-project installeren.
 
 In deze worker, hefboomwerking wij [ jimp ](https://www.npmjs.com/package/jimp) om het vertoningsbeeld in de code te creëren en direct te manipuleren Node.js.
 
 >[!WARNING]
 >
->Niet alle npm-modules voor het manipuleren van elementen worden ondersteund door Asset compute. npm-modules die afhankelijk zijn van het bestaan van toepassingen zoals ImageMagick of andere OS-afhankelijke bibliotheken, worden niet ondersteund. Het is het beste om het gebruik van npm-modules die alleen voor JavaScript bestemd zijn, te beperken.
+>Asset Compute biedt geen ondersteuning voor alle npm-modules voor het manipuleren van bedrijfsmiddelen. npm-modules die afhankelijk zijn van het bestaan van toepassingen zoals ImageMagick of andere OS-afhankelijke bibliotheken, worden niet ondersteund. Het is het beste om het gebruik van npm-modules die alleen voor JavaScript bestemd zijn, te beperken.
 
-1. Open de bevellijn in de wortel van uw project van de Asset compute (dit kan in de Code van VS via __Eind worden gedaan > Nieuwe Eind__) en voer het bevel uit:
+1. Open de bevellijn in de wortel van uw project van Asset Compute (dit kan in de Code van VS via __Terminal > Nieuwe Terminal__ worden gedaan) en voer het bevel uit:
 
    ```
    $ npm install jimp
@@ -147,7 +147,7 @@ Werk de `require` instructies boven aan de `index.js` -worker bij om het `Jimp` 
 
 ## Parameters lezen
 
-Workers van asset computen kunnen lezen in parameters die kunnen worden doorgegeven via verwerkingsprofielen die zijn gedefinieerd in de AEM as a Cloud Service Author-service. De parameters worden via het `rendition.instructions` -object aan de worker doorgegeven.
+Asset Compute-workers kunnen parameters lezen die kunnen worden doorgegeven via de verwerkingsprofielen die zijn gedefinieerd in de AEM as a Cloud Service Author-service. De parameters worden via het `rendition.instructions` -object aan de worker doorgegeven.
 
 Deze kunnen worden gelezen door `rendition.instructions.<parameterName>` in de arbeiderscode te openen.
 
@@ -178,7 +178,7 @@ exports.main = worker(async (source, rendition, params) => {
 
 ## Fouten genereren{#errors}
 
-Workers van asset computen kunnen situaties tegenkomen die tot fouten leiden. De Asset compute SDK van de Adobe verstrekt [ een reeks van vooraf bepaalde fouten ](https://github.com/adobe/asset-compute-commons#asset-compute-errors) die kunnen worden geworpen wanneer dergelijke situaties worden ontmoet. Als er geen specifiek fouttype van toepassing is, kan `GenericError` worden gebruikt of kan specifieke aangepaste `ClientErrors` worden gedefinieerd.
+Asset Compute-workers kunnen situaties tegenkomen die tot fouten leiden. Adobe Asset Compute SDK verstrekt [ een reeks van vooraf bepaalde fouten ](https://github.com/adobe/asset-compute-commons#asset-compute-errors) die kunnen worden geworpen wanneer dergelijke situaties worden ontmoet. Als er geen specifiek fouttype van toepassing is, kan `GenericError` worden gebruikt of kan specifieke aangepaste `ClientErrors` worden gedefinieerd.
 
 Voordat u begint met het verwerken van de uitvoering, moet u controleren of alle parameters geldig zijn en worden ondersteund in de context van deze worker:
 
@@ -250,7 +250,7 @@ Wanneer de parameters worden gelezen, ontsmet en gevalideerd, wordt code geschre
 
 Deze code past [ Jimp APIs ](https://github.com/oliver-moran/jimp#jimp) aan om deze beeldtransformaties uit te voeren.
 
-Workers van asset computen moeten hun werk synchroon voltooien en de `rendition.path` moet volledig zijn teruggeschreven naar voordat de `renditionCallback` van de worker is voltooid. Dit vereist dat asynchrone functieaanroepen synchroon worden gemaakt met de operator `await` . Als u niet vertrouwd met JavaScript asynchrone functies bent en hoe te om hen te hebben op een synchrone manier uitvoeren, vertrouwt u met [ JavaScript wachtende exploitant ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await).
+Asset Compute Workers moeten hun werk synchroon voltooien en `rendition.path` moet volledig zijn teruggeschreven naar voordat de `renditionCallback` van de worker is voltooid. Dit vereist dat asynchrone functieaanroepen synchroon worden gemaakt met de operator `await` . Als u niet vertrouwd met JavaScript asynchrone functies bent en hoe te om hen te hebben op een synchrone manier uitvoeren, vertrouwt u met [ JavaScript wachtende exploitant ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await).
 
 De voltooide worker `index.js` moet er als volgt uitzien:
 
@@ -316,11 +316,11 @@ class RenditionInstructionsError extends ClientError {
 
 ## De worker uitvoeren
 
-Nu de arbeiderscode volledig is, en eerder in [ manifest.yml ](./manifest.md) werd geregistreerd en gevormd, kan het worden uitgevoerd gebruikend het lokale Hulpmiddel van de Ontwikkeling van de Asset compute om de resultaten te zien.
+Nu de arbeiderscode volledig is, en eerder in [ manifest.yml ](./manifest.md) werd geregistreerd en gevormd, kan het worden uitgevoerd gebruikend het lokale Hulpmiddel van de Ontwikkeling van Asset Compute om de resultaten te zien.
 
-1. Van de wortel van het project van de Asset compute
+1. Van de basis van het Asset Compute-project
 1. Uitvoeren `aio app run`
-1. Wacht tot Asset compute Development Tool in een nieuw venster wordt geopend
+1. Wacht tot Asset Compute Development Tool in een nieuw venster wordt geopend
 1. In __selecteer een dossier...__ drop down, selecteer een steekproefbeeld om te verwerken
    + Selecteer een voorbeeldafbeeldingsbestand dat u wilt gebruiken als binair bronelement
    + Als niets nog bestaat, tik __(+)__ aan de linkerzijde, en upload a [ steekproefbeeld ](../assets/samples/sample-file.jpg) dossier, en vernieuw het browser venster van Hulpmiddelen van de Ontwikkeling
@@ -345,11 +345,11 @@ Nu de arbeiderscode volledig is, en eerder in [ manifest.yml ](./manifest.md) we
 
 ### De worker uitvoeren met parameters
 
-De parameters, die via de configuraties van het Profiel van de Verwerking worden overgegaan, kunnen in de Hulpmiddelen van de Ontwikkeling van de Asset compute worden gesimuleerd door hen als sleutel/waardeparen op de vertoningsparameter JSON te verstrekken.
+De parameters, die via de configuraties van het Profiel van de Verwerking worden overgegaan, kunnen in de Hulpmiddelen van de Ontwikkeling van Asset Compute worden gesimuleerd door hen als sleutel/waardeparen op de vertoningsparameter JSON te verstrekken.
 
 >[!WARNING]
 >
->Tijdens lokale ontwikkeling, kunnen de waarden binnen worden overgegaan gebruikend diverse gegevenstypes, wanneer overgegaan van AEM als de Profielen van de Verwerking van de Cloud Service als koorden, zodat ervoor zorgen de correcte gegevenstypes indien nodig worden geparseerd.
+>Tijdens lokale ontwikkeling, kunnen de waarden binnen worden overgegaan gebruikend diverse gegevenstypes, wanneer overgegaan van AEM als de Profielen van de Verwerking van Cloud Service als koorden, zodat ervoor zorgen de correcte gegevenstypes indien nodig worden geparseerd.
 > De functie `crop(width, height)` van Jimp vereist bijvoorbeeld dat de parameters van Jimp `int` &#39;s zijn. Wanneer `parseInt(rendition.instructions.size)` niet aan een int wordt geparseerd, mislukt de aanroep van `jimp.crop(SIZE, SIZE)` omdat de parameters het type String niet incompatibel zijn.
 
 Onze code accepteert parameters voor:

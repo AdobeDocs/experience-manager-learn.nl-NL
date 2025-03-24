@@ -5,13 +5,13 @@ feature: Adaptive Forms
 type: Documentation
 role: Developer
 level: Beginner
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations
 jira: KT-14795
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 duration: 46
 exl-id: 9abe9f9d-8fb3-4e01-a830-1dad1c27274d
-source-git-commit: 426020f59c7103829b7b7b74acb0ddb7159b39fa
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Aangepast formulier vooraf invullen met gegevens uit de deelpuntlijst
 
-In de vorige versie van AEM formulier(6.5) moest aangepaste code worden geschreven naar het vooraf ingevulde formuliergegevensmodel met ondersteuning voor adaptief formulier met behulp van aanvraagkenmerk. In AEM Forms als cloudservice is het niet langer nodig aangepaste code te schrijven.
+In de vorige versie van AEM Form(6.5) moest aangepaste code worden geschreven naar het vooraf ingevulde formuliergegevensmodel met ondersteuning voor adaptief formulier met behulp van aanvraagkenmerk. In AEM Forms als cloudservice is het niet langer nodig aangepaste code te schrijven.
 
 In dit artikel worden de stappen beschreven die nodig zijn om een adaptief formulier vooraf in te vullen of in te vullen met gegevens die uit de SharePoint-lijst zijn opgehaald met de service voor het vooraf invullen van het formuliergegevensmodel.
 

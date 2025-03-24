@@ -5,13 +5,13 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: AEM Project Archetype
 jira: KT-9534
 exl-id: c2cd9c52-6f00-4cfe-a972-665093990e5d
 duration: 67
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
@@ -55,4 +55,4 @@ Nadat u alle code naar uw nieuwe project hebt gekopieerd, kunt u dit project naa
 
 >[!NOTE]
 >
->Om de inhoud (Aangepast Forms, Model van de Gegevens van de Vorm, enz.,) in uw nieuw project te synchroniseren zult u de aangewezen omslagstructuur in uw project moeten creëren IntelliJ en dan uw project IntelliJ met uw AEM instantie synchroniseren gebruikend het krijgen bevel van het repo hulpmiddel.
+>Om de inhoud (Aangepast Forms, Model van de Gegevens van de Vorm, enz.,) in uw nieuw project te synchroniseren zult u de aangewezen omslagstructuur in uw project moeten creëren IntelliJ en dan uw project IntelliJ met uw instantie van AEM synchroniseren gebruikend het krijgen bevel van het repo hulpmiddel.

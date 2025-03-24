@@ -4,12 +4,12 @@ description: Voer Main.java uit om de oplossing te testen
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 exl-id: f6536af2-e4b8-46ca-9b44-a0eb8f4fdca9
 duration: 43
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Het project bevat de volgende bestanden in de bronnenmap:
 * DataFile1, DataFile2 en DataFile3 - Voorbeeld van XML-gegevensbestanden die met de sjabloon moeten worden samengevoegd om het uiteindelijke PDF-bestand te genereren
 * custom_fonts.xdp - XDP-sjabloon.
 * service_token.json - U moet de inhoud van dit bestand vervangen door uw accountspecifieke gegevens
-* options.json - De opties die in dit bestand worden opgegeven, worden gebruikt om de eigenschappen in te stellen van het PDF-bestand dat door de API wordt gegenereerd
+* options.json - De opties die in dit bestand worden opgegeven, worden gebruikt om de eigenschappen in te stellen van het PDF-bestand dat wordt gegenereerd door de API
 
 ![ middelen-dossier ](./assets/resource-files.png)
 

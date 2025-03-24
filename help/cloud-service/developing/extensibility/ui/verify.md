@@ -1,8 +1,8 @@
 ---
 title: Een AEM UI-extensie verifiëren
-description: Leer hoe te om, een uitbreiding van de AEM UI te voorproef te testen en te verifiëren alvorens aan productie op te stellen.
+description: Leer hoe u een AEM UI-extensie kunt voorvertonen, testen en verifiëren voordat u deze implementeert in productie.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-11603, KT-13382
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: c5c1df23-1c04-4c04-b0cd-e126c31d5acc
 duration: 600
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -20,21 +20,21 @@ ht-degree: 0%
 
 # Een extensie verifiëren
 
-AEM UI-extensies kunnen worden geverifieerd voor elke AEM as a Cloud Service-omgeving in de Adobe of de extensie behoort tot.
+AEM UI-extensies kunnen worden gecontroleerd op elke AEM as a Cloud Service-omgeving in de Adobe Org waartoe de extensie behoort.
 
-Het testen van een extensie wordt uitgevoerd via een speciaal gemaakte URL die AEM de instructie geeft de extensie alleen voor die aanvraag te laden.
+Het testen van een extensie gebeurt via een speciaal gemaakte URL die AEM de instructie geeft de extensie alleen voor die aanvraag te laden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3412877?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
-> In de bovenstaande video ziet u het gebruik van een extensie van Content Fragment Console om de voorvertoning en verificatie van de App Builder-extensie-app te illustreren. Nochtans, is het belangrijk om op te merken dat de behandelde concepten op alle AEM uitbreidingen kunnen worden toegepast UI.
+> In de bovenstaande video ziet u het gebruik van een extensie van Content Fragment Console om de voorvertoning en verificatie van de App Builder-extensie-app te illustreren. Nochtans, is het belangrijk om op te merken dat de behandelde concepten op alle uitbreidingen van de gebruikersinterface van AEM kunnen worden toegepast.
 
-## URL AEM
+## URL AEM-interface
 
-![ AEM de Console URL van het Fragment van de Inhoud ](./assets/verify/content-fragment-console-url.png){align="center"}
+![ URL van de Console van het Fragment van AEM Inhoud ](./assets/verify/content-fragment-console-url.png){align="center"}
 
-Als u een URL wilt maken die de extensie non-production in AEM koppelt, moet de URL van de AEM UI waarin de extensie wordt geïnjecteerd, worden verkregen. Navigeer naar de AEM as a Cloud Service-omgeving om de extensie te controleren en open de gebruikersinterface waarin de extensie moet worden voorvertoond.
+Als u een URL wilt maken die de extensie non-production in AEM koppelt, moet de URL van de AEM-interface waarin de extensie wordt geïnjecteerd, worden verkregen. Navigeer naar de AEM as a Cloud Service-omgeving om de extensie te controleren en open de gebruikersinterface waarin de extensie moet worden voorvertoond.
 
 Als u bijvoorbeeld een extensie wilt voorvertonen voor de Content Fragment-console:
 
@@ -47,12 +47,12 @@ Als u bijvoorbeeld een extensie wilt voorvertonen voor de Content Fragment-conso
    https://experience.adobe.com/?repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
    ```
 
-Deze URL wordt hieronder gebruikt bij het maken van de URL&#39;s voor ontwikkeling en werkgebiedverificatie. Als u de extensie verifieert aan de hand van andere AEM UI&#39;s, vraagt u deze URL&#39;s op en past u onderstaande dezelfde stappen toe.
+Deze URL wordt hieronder gebruikt bij het maken van de URL&#39;s voor ontwikkeling en werkgebiedverificatie. Als u de extensie verifieert aan de hand van andere gebruikersinterface van AEM, vraagt u deze URL&#39;s op en past u onderstaande dezelfde stappen toe.
 
 ## Builds voor lokale ontwikkeling controleren
 
 1. Open een opdrachtregel naar de hoofdmap van het extensieproject.
-1. De extensie AEM UI uitvoeren als een lokale App Builder-toepassing
+1. De AEM UI-extensie uitvoeren als een lokale App Builder-app
 
    ```shell
    $ aio app run
@@ -68,11 +68,11 @@ Deze URL wordt hieronder gebruikt bij het maken van de URL&#39;s voor ontwikkeli
 Noteer de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> https://localhost:9080`
 
 1. Aanvankelijk (en wanneer u een Fout van de Verbinding ziet) open `https://localhost:9080` (of wat uw lokale toepassings URL) in uw Webbrowser is, en keurt manueel [ het HTTPS certificaat ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) goed.
-1. Voeg de volgende twee vraagparams aan [ toe AEM URL van UI ](#aem-ui-url)
+1. Voeg de volgende twee vraagparams aan [ toe AEM UI URL ](#aem-ui-url)
    + `&devMode=true`
    + `&ext=<LOCAL APPLICATION URL>` , meestal `&ext=https://localhost:9080` .
 
-   Voeg de twee bovengenoemde vraagparameters (`devMode` en `ext`) als __eerste__ vraagparameters in URL toe. AEM uitbreidbare UI gebruiken hash routes (`#/@wknd/aem/...`), zo verkeerd post-fixeert de parameters nadat `#` niet werkt.
+   Voeg de twee bovengenoemde vraagparameters (`devMode` en `ext`) als __eerste__ vraagparameters in URL toe. AEM die verlengbare UI gebruikshash routes (`#/@wknd/aem/...`), zo verkeerd post-bevestigend de parameters nadat `#` niet werkt.
 
    De voorbeeld-URL moet er als volgt uitzien:
 
@@ -84,11 +84,11 @@ Noteer de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> 
 
    + U kunt moeten aanvankelijk, en dan periodiek, [ het certificaat HTTPS ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) voor de gastheer van de lokale toepassing (`https://localhost:9080`) goedkeuren.
 
-1. De AEM-interface wordt geladen met de lokale versie van de extensie die in de interface is geïnjecteerd voor verificatie.
+1. De gebruikersinterface van AEM wordt geladen met de lokale versie van de extensie die in de interface is geïnjecteerd voor verificatie.
 
 >[!IMPORTANT]
 >
->Houd er rekening mee dat bij het gebruik van deze benadering de extensie die momenteel wordt ontwikkeld alleen invloed heeft op uw ervaring en dat alle andere gebruikers van de AEM interface de interface zonder de geïnjecteerde extensie ervaren.
+>Houd er rekening mee dat bij het gebruik van deze benadering de extensie die wordt ontwikkeld alleen van invloed is op uw ervaring. Alle andere gebruikers van de gebruikersinterface van AEM ervaren de gebruikersinterface zonder de geïnjecteerde extensie.
 
 ## Werkgebiedbuilds verifiëren
 
@@ -117,11 +117,11 @@ Noteer de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> 
    Successful deployment 🏄
    ```
 
-1. Voeg de volgende twee vraagparams aan [ toe AEM URL van UI ](#aem-ui-url)
+1. Voeg de volgende twee vraagparams aan [ toe AEM UI URL ](#aem-ui-url)
    + `&devMode=true`
    + `&ext=<DEPLOYED APPLICATION URL>`
 
-   Voeg de twee bovengenoemde vraagparameters (`devMode` en `ext`) als __eerste__ vraagparameters in URL toe, aangezien uitbreidbare AEM UIs een knoeiboelroute (`#/@wknd/aem/...`) gebruiken, zo verkeerd post-bevestigend de parameters nadat `#` niet werkt.
+   Voeg de twee bovengenoemde vraagparameters (`devMode` en `ext`) als __eerste__ vraagparameters in URL toe, aangezien verlengbare AEM UIs een knoeiboelroute (`#/@wknd/aem/...`) gebruikt, zo verkeerd post-bevestigend de parameters nadat `#` niet werkt.
 
    De voorbeeld-URL moet er als volgt uitzien:
 
@@ -130,9 +130,9 @@ Noteer de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> 
    ```
 
 1. Kopieer en plak de URL van de voorvertoning in uw browser.
-1. Met de AEM Content Fragment Console wordt de versie van de extensie geïnjecteerd die is geïmplementeerd in de werkruimte van het werkgebied. Deze werkgebied-URL kan ter verificatie worden gedeeld met een kwaliteitscontrole of zakelijke gebruikers.
+1. Met de AEM Content Fragment Console wordt de versie van de extensie geïnjecteerd naar de werkruimte van het werkgebied. Deze werkgebied-URL kan ter verificatie worden gedeeld met een kwaliteitscontrole of zakelijke gebruikers.
 
-Houd er rekening mee dat wanneer u deze methode gebruikt, de extensie Staged alleen wordt geïnjecteerd op AEM Content Fragment Console&#39;s wanneer u toegang hebt tot de URL van het werkgebied van het vaartuig.
+Wanneer u deze methode gebruikt, wordt de extensie Staged alleen geïnjecteerd in AEM Content Fragment Console wanneer u toegang hebt tot de URL van het werkgebied.
 
 1. Geïmporteerde extensies kunnen worden bijgewerkt door `aio app deploy` opnieuw uit te voeren. Deze wijzigingen worden automatisch doorgevoerd wanneer u de URL van de voorvertoning gebruikt.
 1. Voer `aio app undeploy` uit om een extensie voor verificatie te verwijderen.

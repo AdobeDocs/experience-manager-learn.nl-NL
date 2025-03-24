@@ -5,13 +5,13 @@ topic: Development
 feature: Core Components
 role: Developer
 level: Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-243
 thumbnail: 25173.jpg
 doc-type: Technical Video
 exl-id: 500f4e07-2686-42a2-8e44-d96dde02a112
 duration: 488
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
@@ -32,4 +32,4 @@ U kunt het verstrekte [ pakket van de de paginaaigenschappen van de steekproefWK
 
 Nochtans voor het leren doeleinden, kunt u de component van de Pagina WKND aan V2 versie van de Componenten van de Kern van WCM richten gebruikend de `sling:resourceSuperType` bezitswaarde en bedekking de [ Sociale Media ](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/page/v2/page/_cq_dialog/.content.xml#L95) tabel. Voor meer informatie, zie [ Vormend uw Eigenschappen van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/page-properties-views.html#configuring-your-page-properties)
 
-Dit voorbeeldpakket moet worden geïnstalleerd op de lokale AEM SDK of AEM 6.X.X-instantie voor leerdoeleinden.
+Dit voorbeeldpakket moet voor leerdoeleinden worden geïnstalleerd op de lokale AEM SDK- of AEM 6.X.X-instantie.

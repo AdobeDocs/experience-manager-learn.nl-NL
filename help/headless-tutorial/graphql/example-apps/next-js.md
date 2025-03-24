@@ -1,7 +1,7 @@
 ---
-title: Next.js - Voorbeeld AEM zonder kop
-description: Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze toepassing Next.js toont aan hoe te om inhoud te vragen gebruikend AEM GraphQL APIs gebruikend persisted query's.
-version: Cloud Service
+title: Next.js - Voorbeeld van AEM Headless
+description: Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze toepassing Next.js demonstreert hoe u query's kunt uitvoeren op inhoud met AEM GraphQL API's met behulp van doorlopende query's.
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -10,10 +10,10 @@ level: Beginner
 jira: KT-10721
 thumbnail: KT-10721.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
-badgeVersions: label="AEM, hoofdloos as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 4f67bb37-416a-49d9-9d7b-06c3573909ca
 duration: 210
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '744'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Next.js-app
 
-Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze toepassing Next.js toont aan hoe te om inhoud te vragen gebruikend AEM GraphQL APIs gebruikend persisted query&#39;s. De AEM Headless-client voor JavaScript wordt gebruikt om de GraphQL-doorlopende query&#39;s uit te voeren die de toepassing van stroom voorzien.
+Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze toepassing Next.js demonstreert hoe u query&#39;s kunt uitvoeren op inhoud met AEM GraphQL API&#39;s met behulp van doorlopende query&#39;s. De AEM Headless-client voor JavaScript wordt gebruikt om de GraphQL-query&#39;s uit te voeren die de toepassing blijven activeren.
 
 ![ Next.js app met AEM Headless ](./assets/next-js/next-js.png)
 
@@ -35,15 +35,15 @@ De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 + [ Node.js v18 ](https://nodejs.org/)
 + [ Git ](https://git-scm.com/)
 
-## AEM
+## AEM-vereisten
 
-De app Next.js werkt met de volgende AEM implementatieopties. Alle plaatsingen vereisen [ Gedeelde v3.0.0+ ](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) WKND van de Plaats v3.0.0+ ](https://github.com/adobe/aem-guides-wknd/releases/latest) om op het milieu van AEM as a Cloud Service worden geïnstalleerd.[
+De app Next.js werkt met de volgende AEM-implementatieopties. Alle plaatsingen vereisen [ Gedeelde v3.0.0+ ](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) WKND van de Plaats v3.0.0+ ](https://github.com/adobe/aem-guides-wknd/releases/latest) om op het milieu van AEM as a Cloud Service worden geïnstalleerd.[
 
-Dit voorbeeld Next.js app wordt ontworpen om met __AEM de dienst van Publish__ te verbinden.
+Dit voorbeeld Next.js app wordt ontworpen om met __AEM te verbinden publiceert__ dienst.
 
-### Vereisten AEM auteur
+### AEM-autorisatievereisten
 
-Next.js wordt ontworpen om met __AEM de dienst van Publish__ te verbinden, en tot onbeschermde inhoud toegang te hebben. Next.js kan worden gevormd om met AEM Auteur via de `.env` hieronder beschreven eigenschappen te verbinden. Voor afbeeldingen die worden aangeboden door AEM auteur is verificatie vereist. De gebruiker die de Next.js-app opent, moet daarom ook zijn aangemeld bij AEM auteur.
+Next.js wordt ontworpen om met __te verbinden AEM publiceer__ dienst, en toegang onbeschermde inhoud. Next.js kan worden gevormd om met de Auteur van AEM via de `.env` hieronder beschreven eigenschappen te verbinden. Voor afbeeldingen die worden aangeboden via de AEM-auteur is verificatie vereist. De gebruiker die de Next.js-app opent, moet zich dus ook aanmelden bij de AEM-auteur.
 
 ## Hoe wordt het gebruikt
 
@@ -61,9 +61,9 @@ Next.js wordt ontworpen om met __AEM de dienst van Publish__ te verbinden, en to
    ...
    ```
 
-   Als u verbinding maakt met AEM service Auteur, moet de verificatie worden opgegeven omdat AEM service Auteur standaard is beveiligd.
+   Als u verbinding maakt met de AEM Author-service, moet verificatie worden opgegeven omdat de AEM Author-service standaard is beveiligd.
 
-   Een lokale AEM gebruiken `AEM_AUTH_METHOD=basic` en de gebruikersnaam en het wachtwoord opgeven in de eigenschappen `AEM_AUTH_USER` en `AEM_AUTH_PASSWORD` .
+   Een lokale AEM-accountset gebruiken `AEM_AUTH_METHOD=basic` en de gebruikersnaam en het wachtwoord opgeven in de eigenschappen `AEM_AUTH_USER` en `AEM_AUTH_PASSWORD` .
 
    ```plain
    ...
@@ -105,13 +105,13 @@ Next.js wordt ontworpen om met __AEM de dienst van Publish__ te verbinden, en to
 
 ## De code
 
-Hieronder volgt een overzicht van de manier waarop de toepassing Next.js is gemaakt, hoe deze verbinding maakt met AEM Headless om inhoud op te halen met behulp van GraphQL persisted query&#39;s en hoe deze gegevens worden gepresenteerd. De volledige code kan op [ GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js) worden gevonden.
+Hieronder vindt u een overzicht van de manier waarop de app Next.js is gemaakt, de manier waarop deze verbinding maakt met AEM Headless om inhoud op te halen met behulp van GraphQL persisted query&#39;s en de manier waarop deze gegevens worden gepresenteerd. De volledige code kan op [ GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js) worden gevonden.
 
 ### Blijvende query&#39;s
 
-Na AEM Beste praktijken zonder hoofd, gebruikt de toepassing Next.js AEM GraphQL voortgezette vragen om avontuurgegevens te vragen. De toepassing gebruikt twee doorlopende query&#39;s:
+Volgens de best practices van AEM Headless gebruikt de app Next.js AEM GraphQL persisted query&#39;s voor query&#39;s op avontuurgegevens. De toepassing gebruikt twee doorlopende query&#39;s:
 
-+ `wknd/adventures-all` persisted query, die alle avonturen in AEM met een verkorte set eigenschappen retourneert. Deze hardnekkige vraag drijft de aanvankelijke lijst van het avontuur van de mening.
++ `wknd/adventures-all` bleef query uitvoeren, die alle avonturen in AEM retourneert met een verkorte set eigenschappen. Deze hardnekkige vraag drijft de aanvankelijke lijst van het avontuur van de mening.
 
 ```
 # Retrieves a list of all Adventures
@@ -224,9 +224,9 @@ query ($slug: String!, $imageFormat:AssetTransformFormat=JPG, $imageSeoName: Str
 
 ### GraphQL-query uitgevoerd
 
-AEM voortgeduurde vragen worden uitgevoerd over de GET van HTTP en zo, wordt de [ AEM Draadloze cliënt voor JavaScript ](https://github.com/adobe/aem-headless-client-js) gebruikt om [ de voortgeduurde vragen van GraphQL ](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) tegen AEM uit te voeren en de avontuurinhoud in app te laden.
+AEM voortgeduurde vragen worden uitgevoerd over HTTP GET en zo, wordt de [ Hoofdloze cliënt van AEM voor JavaScript ](https://github.com/adobe/aem-headless-client-js) gebruikt om [ de voortgeduurde vragen van GraphQL ](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) tegen AEM uit te voeren en de avontuurinhoud in app te laden.
 
-Elke voortgeduurde vraag heeft een overeenkomstige functie in `src/lib//aem-headless-client.js`, die het eindpunt van AEM GraphQL roept, en de avontuurgegevens terugkeert.
+Elke voortgezette query heeft een corresponderende functie in `src/lib//aem-headless-client.js`, die het AEM GraphQL-eindpunt aanroept en de avontuurgegevens retourneert.
 
 Elke functie roept op zijn beurt de `aemHeadlessClient.runPersistedQuery(...)` aan, die de voortgezette GraphQL query uitvoert.
 
@@ -279,4 +279,4 @@ De app Next.js gebruikt twee pagina&#39;s om de avontuurgegevens te presenteren.
 
 Voor Next.js-apps, met name in de context van server-side rendering (SSR) en server-side generation (SSG), zijn geen geavanceerde beveiligingsconfiguraties vereist, zoals Cross-origin Resource Sharing (CORS).
 
-Nochtans, als Next.js HTTP- verzoeken aan AEM van de context van de cliënt doet, kunnen de veiligheidsconfiguraties in AEM worden vereist. Herzie het [ AEM Headless enig-pagina de plaatsingsleerprogramma van de app ](../deployment/spa.md) voor meer details.
+Nochtans, als Next.js HTTP- verzoeken aan AEM van de context van de cliënt doet, kunnen de veiligheidsconfiguraties in AEM worden vereist. Herzie het [ Hoofdloze enige-pagina de plaatsingsleerprogramma van de app van AEM ](../deployment/spa.md) voor meer details.

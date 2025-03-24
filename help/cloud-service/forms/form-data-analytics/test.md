@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Integrations, Development
 jira: KT-12557
@@ -13,7 +13,7 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 43665a1e-4101-4b54-a6e0-d189e825073e
 duration: 38
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Veldvalidatiefouten
 
 ## Foutopsporing
 
-Zorg ervoor dat het Adaptieve formulier dezelfde configuratiecontainer gebruikt die de Adobe Launch Configuration bevat.
+Zorg ervoor dat het Adaptief formulier dezelfde configuratiecontainer gebruikt die de Adobe Launch Configuration bevat.
 
 Ga als volgt te werk om te bevestigen dat het formulier gegevens naar Adobe Analytics verzendt
 
@@ -55,7 +55,7 @@ Communiceer met uw formulier terwijl u het consolevenster open houdt. Je moet zo
 
 ## Adobe Experience Platform Debugger gebruiken
 
-Voeg de [ debugger van AEP uitbreiding ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) aan uw browser (u moet binnen ondertekenen) toe om meer het zuiveren informatie te krijgen
+Voeg de [ debugger van AEP uitbreiding ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) aan uw browser (u wordt vereist om binnen te ondertekenen) toe om meer het zuiveren informatie te krijgen
 
 ![ platform-debugger ](assets/platform-debugger.png)
 

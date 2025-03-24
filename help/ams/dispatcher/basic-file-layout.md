@@ -1,7 +1,7 @@
 ---
 title: AMS Dispatcher Basic-bestandsindeling
 description: Begrijp de basisbestandslay-out van Apache en Dispatcher.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration, Development
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 8a3f2bb9-3895-45c6-8bb5-15a6d2aac50e
 duration: 308
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1130'
 ht-degree: 0%
@@ -86,7 +86,7 @@ AMS voegt een toevoeging toe aan de basisinstallatie van Apache Web Server.
 AMS-standaardachterbasis voor documenten:
 - Auteur:
    - `/mnt/var/www/author/`
-- Publish:
+- Publiceren:
    - `/mnt/var/www/html/`
 - Onderhoud van alle vangsten en de health check
    - `/mnt/var/www/default/`
@@ -145,19 +145,19 @@ Er zijn extra stukken die subsecties zijn van de configuraties van het de landbo
 
 #### Cache Directory
 
-Deze map bevat alle `_cache.any` , `_invalidate.any` -bestanden die u maakt en die uw regels bevatten over de manier waarop de module caching-elementen moet verwerken die afkomstig zijn van AEM en syntaxis van validatieregels.  Meer details op deze sectie zijn hier [ ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Deze map bevat alle `_cache.any` , `_invalidate.any` -bestanden die u maakt en die uw regels bevatten over hoe u wilt dat de module caching-elementen die afkomstig zijn uit AEM, en de syntaxis van validatieregels in beslag neemt.  Meer details op deze sectie zijn hier [ ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
 
 - `/etc/httpd/conf.dispatcher.d/cache/`
 
 #### Map met clientkoppen
 
-Deze map kan alle `_clientheaders.any` bestanden bevatten die u maakt en lijsten met clientkoppen bevatten die u wilt doorgeven aan AEM wanneer een aanvraag wordt ingediend.  Meer details op deze sectie zijn [ hier ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en)
+Deze map kan alle `_clientheaders.any` -bestanden bevatten die u maakt en die lijsten met clientheaders bevatten die u wilt doorgeven aan AEM wanneer een aanvraag wordt ingediend.  Meer details op deze sectie zijn [ hier ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en)
 
 - `/etc/httpd/conf.dispatcher.d/clientheaders/`
 
 #### Filtermap
 
-Deze map kan alle `_filters.any` bestanden bevatten die u maakt en die al uw filterregels bevatten om het verkeer door de Dispatcher te blokkeren of te laten bereiken AEM
+Deze map kan alle `_filters.any` bestanden bevatten die u maakt en die al uw filterregels bevatten om het verkeer door de Dispatcher te blokkeren of om AEM te bereiken
 
 - `/etc/httpd/conf.dispatcher.d/filters/`
 

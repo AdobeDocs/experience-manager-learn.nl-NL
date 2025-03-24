@@ -1,7 +1,7 @@
 ---
 title: IP-adres van specifiek egress
-description: Leer hoe te opstelling en gebruik specifiek uitgangIP adres, dat uitgaande verbindingen van AEM toestaat om uit specifieke IP voort te komen.
-version: Cloud Service
+description: Leer hoe te opstelling en gebruik specifiek uitgangIP adres, dat uitgaande verbindingen van AEM toestaat om van specifieke IP afkomstig te zijn.
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 891
-source-git-commit: 29ac030f3774da2c514525f7cb85f6f48b84369f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # IP-adres van specifiek egress
 
-Leer hoe te opstelling en gebruik specifiek uitgangIP adres, dat uitgaande verbindingen van AEM toestaat om uit specifieke IP voort te komen.
+Leer hoe te opstelling en gebruik specifiek uitgangIP adres, dat uitgaande verbindingen van AEM toestaat om van specifieke IP afkomstig te zijn.
 
 ## Wat is specifiek IP adres van de uitgang?
 
@@ -206,18 +206,18 @@ Met het speciale IP-adres van de uitgang gemaakt, kunt u het nu configureren met
 
    Merk op dat het specifieke IP adres van de uitgang door alle milieu&#39;s van AEM as a Cloud Service in het programma wordt gedeeld.
 
-1. Nu, kunt u het specifieke uitgangIP adres in uw douane AEM code en configuratie gebruiken. Vaak wanneer het gebruiken van specifiek uitgangIP adres, de externe diensten AEM as a Cloud Service verbindt met worden gevormd om verkeer van dit specifieke IP adres slechts toe te staan.
+1. Nu kunt u het speciale IP-adres van de uitgang gebruiken in uw aangepaste AEM-code en -configuratie. Vaak wanneer het gebruiken van specifiek uitgangIP adres, de externe diensten AEM as a Cloud Service verbindt met worden gevormd om verkeer van dit specifieke IP adres slechts toe te staan.
 
 ## Verbinding maken met externe services via toegewezen IP-adres voor uitgang
 
-Met het specifieke toegelaten adres van uitgang IP, AEM code en configuratie kan specifieke uitgang IP gebruiken om vraag aan externe diensten te maken. Er zijn twee vlotten van externe vraag die AEM verschillend behandelt:
+Met het specifieke toegelaten adres van uitgang IP, kan de code en de configuratie van AEM specifieke uitgang IP gebruiken om vraag aan externe diensten te maken. Er zijn twee flavors van externe vraag die AEM verschillend behandelt:
 
 1. HTTP/HTTPS-aanroepen naar externe services
    + Omvat HTTP/HTTPS vraag die aan de diensten wordt gemaakt die op havens buiten standaard 80 of 443 havens lopen.
 1. niet-HTTP/HTTPS-aanroepen naar externe services
    + Omvat om het even welke niet-HTTP vraag, zoals verbindingen met de servers van de Post, SQL gegevensbestanden, of de diensten die op andere niet-HTTP/HTTPS protocollen lopen.
 
-HTTP/HTTPS-verzoeken van AEM op standaardpoorten (80/443) zijn standaard toegestaan, maar gebruiken het toegewezen IP-adres voor egress niet als dit niet op de hieronder beschreven manier is geconfigureerd.
+HTTP/HTTPS-aanvragen van AEM op standaardpoorten (80/443) zijn standaard toegestaan, maar gebruiken het toegewezen IP-adres van de uitgang niet als dit niet op de hieronder beschreven manier is geconfigureerd.
 
 >[!TIP]
 >
@@ -226,7 +226,7 @@ HTTP/HTTPS-verzoeken van AEM op standaardpoorten (80/443) zijn standaard toegest
 
 ### HTTP/HTTPS
 
-Wanneer u HTTP/HTTPS-verbindingen maakt van AEM, worden bij het gebruik van een toegewezen IP-adres voor toegang, HTTP/HTTPS-verbindingen automatisch buiten de AEM geplaatst met behulp van het toegewezen IP-adres voor toegang. Er is geen aanvullende code of configuratie vereist voor ondersteuning van HTTP/HTTPS-verbindingen.
+Wanneer u HTTP/HTTPS-verbindingen maakt vanuit AEM, worden bij gebruik van een toegewezen IP-adres voor toegang, HTTP/HTTPS-verbindingen automatisch vanuit AEM opgehaald met behulp van het toegewezen IP-adres voor toegang. Er is geen aanvullende code of configuratie vereist voor ondersteuning van HTTP/HTTPS-verbindingen.
 
 #### Codevoorbeelden
 
@@ -253,7 +253,7 @@ Bij het maken van niet-HTTP/HTTPS-verbindingen (bijvoorbeeld SQL, SMTP, etc.) va
 | `AEM_PROXY_HOST` | Proxyhost voor niet-HTTP/HTTPS-verbindingen | `System.getenv("AEM_PROXY_HOST")` | `$[env:AEM_PROXY_HOST]` |
 
 
-De verbindingen aan externe diensten worden dan geroepen door `AEM_PROXY_HOST` en de in kaart gebrachte haven (`portForwards.portOrig`), die dan aan toegewezen externe hostname (`portForwards.name`) en haven AEM (`portForwards.portDest`).
+Verbindingen met externe diensten worden dan geroepen door `AEM_PROXY_HOST` en de in kaart gebrachte haven (`portForwards.portOrig`), die AEM dan aan toegewezen externe hostname (`portForwards.name`) en haven (`portForwards.portDest`) leidt.
 
 | Proxyhost | Proxypoort |  | Externe host | Externe poort |
 |---------------------------------|----------|----------------|------------------|----------|
@@ -266,7 +266,7 @@ De verbindingen aan externe diensten worden dan geroepen door `AEM_PROXY_HOST` e
       <a  href="./examples/sql-datasourcepool.md"><img alt="SQL-verbinding met JDBC DataSourcePool" src="./assets//code-examples__sql-osgi.png"/></a>
       <div><strong><a href="./examples/sql-datasourcepool.md"> SQL verbinding gebruikend JDBC DataSourcePool </a></strong></div>
       <p>
-            Java™ codevoorbeeld die met externe SQL gegevensbestanden verbinden door AEM JDBC datasource pool te vormen.
+            Java™ codevoorbeeld die met externe SQL gegevensbestanden verbinden door AEM te vormen JDBC datasource pool.
       </p>
     </td>   
    <td>
@@ -280,7 +280,7 @@ De verbindingen aan externe diensten worden dan geroepen door `AEM_PROXY_HOST` e
       <a  href="./examples/email-service.md"><img alt="Virtual Private Network (VPN)" src="./assets/code-examples__email.png"/></a>
       <div><strong><a href="./examples/email-service.md"> E-maildienst </a></strong></div>
       <p>
-        OSGi configuratievoorbeeld dat AEM gebruikt om met externe e-maildiensten te verbinden.
+        OSGi-configuratievoorbeeld dat AEM gebruikt om verbinding te maken met externe e-mailservices.
       </p>
     </td>   
 </tr></table>

@@ -1,7 +1,7 @@
 ---
-title: De domeinnaam van de douane met Adobe beheerde CDN
-description: Leer hoe te om een naam van het douanedomein aan de website van AEM as a Cloud Service uit te voeren die een Adobe beheerde CDN gebruikt.
-version: Cloud Service
+title: Aangepaste domeinnaam met door Adobe beheerde CDN
+description: Leer hoe u een aangepaste domeinnaam implementeert op de AEM as a Cloud Service-website die een door Adobe beheerde CDN gebruikt.
+version: Experience Manager as a Cloud Service
 feature: Cloud Manager, Operations
 topic: Administration, Architecture
 role: Admin, Architect, Developer
@@ -12,18 +12,18 @@ last-substantial-update: 2024-08-12T00:00:00Z
 jira: KT-15121
 thumbnail: KT-15121.jpeg
 exl-id: 8936c3ae-2daf-4d0f-b260-28376ae28087
-source-git-commit: f92e66d6edc929bff1e8cae6adb7f408352aeb77
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 0%
 
 ---
 
-# Aangepaste domeinnaam met CDN van Adobe
+# Aangepaste domeinnaam met Adobe CDN
 
-Leer hoe te om een naam van het douanedomein voor een website van AEM as a Cloud Service uit te voeren die het Netwerk van de Levering van de Inhoud van de Adobe (CDN) gebruikt.
+Leer hoe u een aangepaste domeinnaam implementeert voor een AEM as a Cloud Service-website die gebruikmaakt van het Adobe Content Delivery Network (CDN).
 
-In dit leerprogramma, wordt het branding van de steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) plaats verbeterd door een HTTPS-Adressable naam van het douanedomein `wknd.enablementadobe.com` met de Veiligheid van de Laag van het Vervoer (TLS) toe te voegen.
+In dit leerprogramma, wordt het branding van de steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) plaats verbeterd door een HTTPS-adresseerbare naam van het douanedomein `wknd.enablementadobe.com` met de Veiligheid van de Laag van het Vervoer (TLS) toe te voegen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427903?quality=12&learn=on)
 
@@ -39,8 +39,8 @@ De stappen op hoog niveau zijn:
 - Toegang tot diensten van derden:
    - De Autoriteit van het certificaat (CA) - om het ondertekende certificaat voor uw plaatsdomein, als [ DigitCert ](https://www.digicert.com/) te verzoeken
    - De het ontvangen dienst van het Systeem van de Naam van het domein (DNS) - om DNS verslagen voor uw douanedomein, zoals Azure DNS, of Route 53 van AWS toe te voegen.
-- De toegang tot [ Cloud Manager van de Adobe ](https://my.cloudmanager.adobe.com/) als **BedrijfsEigenaar** of **rol van de Manager van de Plaatsing**.
-- De steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) plaats wordt opgesteld aan het milieu van AEM as a Cloud Service van [ het type van het productieprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
+- De toegang tot [ Cloud Manager van Adobe ](https://my.cloudmanager.adobe.com/) als **BedrijfsEigenaar** of **rol van de Manager van de Plaatsing**.
+- De plaats van de steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) wordt opgesteld aan het milieu van AEM as a Cloud Service van [ het type van het productieprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
 
 Als u geen toegang tot derdediensten hebt, _samenwerken met uw veiligheid of het ontvangen team om de stappen_ te voltooien.
 
@@ -75,7 +75,7 @@ $ openssl crl2pkcs7 -nocrl -certfile <YOUR-SIGNED-CERT>.crt | openssl pkcs7 -pri
 
 Het ondertekende certificaat kan de certificaatketen bevatten, die de basis- en tussenliggende certificaten bevat, samen met het certificaat van de eindentiteit.
 
-De Adobe Cloud Manager keurt het eindentiteitcertificaat en de certificaatketting _in afzonderlijke vormgebieden_ goed, zodat moet u het eindentiteitcertificaat en de certificaatketting van het ondertekende certificaat halen.
+Adobe Cloud Manager keurt het eindentiteitcertificaat en de certificaatketting _in afzonderlijke vormgebieden_ goed, zodat moet u het eindentiteitcertificaat en de certificaatketting uit het ondertekende certificaat halen.
 
 In dit leerprogramma, wordt het ](https://www.digicert.com/) ondertekende certificaat DigitCert [ dat tegen `*.enablementadobe.com` domein wordt uitgegeven gebruikt als voorbeeld. De eindentiteit- en certificaatketen wordt geëxtraheerd door het ondertekende certificaat te openen in een teksteditor en de inhoud te kopiëren tussen de markeringen `-----BEGIN CERTIFICATE-----` en `-----END CERTIFICATE-----` .
 

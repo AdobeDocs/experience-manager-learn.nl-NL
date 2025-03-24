@@ -1,8 +1,8 @@
 ---
-title: Document extraheren uit lijst met documenten in een AEM werkstroom
+title: Document extraheren uit lijst met documenten in een AEM-workflow
 description: Aangepaste workflowcomponent om een specifiek document uit een lijst met documenten te extraheren
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ kt: kt-13918
 last-substantial-update: 2023-09-12T00:00:00Z
 exl-id: b0baac71-3074-49d5-9686-c9955b096abb
 duration: 56
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Document uit lijst met documenten extraheren
 
-Een veelvoorkomend geval is het verzenden van de formuliergegevens en de formulierbijlage naar een extern systeem met behulp van de stap Formuliergegevensmodel aanroepen in een AEM werkstroom. Bijvoorbeeld, wanneer het creëren van een geval in ServiceNow u case details met een ondersteunend document zou willen voorleggen. De bijlagen die aan het adaptieve formulier worden toegevoegd, worden opgeslagen in een variabele van het type arraylist van documenten. Als u een specifiek document uit deze arraylijst wilt extraheren, moet u aangepaste code schrijven.
+Een veelvoorkomend geval is het verzenden van de formuliergegevens en de formulierbijlage naar een extern systeem met behulp van de stap Formuliergegevensmodel aanroepen in een AEM-workflow. Bijvoorbeeld, wanneer het creëren van een geval in ServiceNow u case details met een ondersteunend document zou willen voorleggen. De bijlagen die aan het adaptieve formulier worden toegevoegd, worden opgeslagen in een variabele van het type arraylist van documenten. Als u een specifiek document uit deze arraylijst wilt extraheren, moet u aangepaste code schrijven.
 
 In dit artikel worden de stappen doorlopen voor het gebruik van de aangepaste workflowcomponent voor het uitpakken en opslaan van het document in een documentvariabele.
 
@@ -35,7 +35,7 @@ Er moet een workflow worden gemaakt voor het verzenden van formulieren. Voor de 
 
 ## Adaptief formulier configureren
 
-* De verzendactie van het aangepaste formulier configureren om de AEM te activeren
+* De verzendactie van het adaptieve formulier configureren om de AEM-workflow te activeren
   ![ voorleggen-actie ](assets/store-attachments.png)
 
 ## De oplossing testen

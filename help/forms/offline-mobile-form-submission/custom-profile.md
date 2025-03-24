@@ -1,9 +1,9 @@
 ---
-title: Trigger-AEM-workflow voor het verzenden van HTML5-formulieren - Aangepast profiel maken
+title: AEM-workflow activeren bij het verzenden van HTML5-formulieren - Aangepast profiel maken
 description: Een aangepast profiel maken om een interactieve PDF te downloaden met de gegevens van het gedeeltelijk gevulde HTML5-formulier
 feature: Mobile Forms
 doc-type: article
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ jira: kt-16133
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: b6e3acee-4a07-4d00-b3a1-f7aedda21e6e
 duration: 102
-source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Aangepast profiel maken
 
-In dit deel zullen wij a [ douaneprofiel tot stand brengen.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Een profiel is verantwoordelijk voor het renderen van de XDP als HTML. Er wordt een standaardprofiel opgegeven in het vak voor het renderen van XDP&#39;s als HTML. Deze vertegenwoordigt een aangepaste versie van de Mobile Forms Rendition-service. Met de service Mobiele formulieruitvoering kunt u de weergave, het gedrag en de interacties van de Mobile Forms aanpassen. In ons aangepaste profiel leggen we de gegevens die in het mobiele formulier zijn ingevuld, vast met de API voor hulplijnen. Deze gegevens worden vervolgens naar een aangepaste servlet verzonden die vervolgens een interactieve PDF genereert en deze terugstuurt naar de aanroepende toepassing.
+In dit deel zullen wij a [ douaneprofiel tot stand brengen.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Een profiel is verantwoordelijk voor het renderen van de XDP als HTML. Er wordt een standaardprofiel opgegeven in het vak voor het renderen van XDP&#39;s als HTML. Deze vertegenwoordigt een aangepaste versie van de Mobile Forms Rendition-service. Met de service Mobiele formulieruitvoering kunt u de weergave, het gedrag en de interacties van de Mobile Forms aanpassen. In ons aangepaste profiel leggen we de gegevens die in het mobiele formulier zijn ingevuld, vast met de API voor hulplijnen. Deze gegevens worden vervolgens verzonden naar een aangepaste servlet die vervolgens een interactieve PDF genereert en deze terugstuurt naar de aanroepende toepassing.
 
 Haal de formuliergegevens op met de `formBridge` JavaScript API. We maken gebruik van de methode `getDataXML()` :
 
@@ -28,7 +28,7 @@ Haal de formuliergegevens op met de `formBridge` JavaScript API. We maken gebrui
 window.formBridge.getDataXML({success:suc,error:err});
 ```
 
-In de methode van de succesmanager maken wij een vraag aan douaneserlet die in AEM loopt. Deze servlet rendert en retourneert interactieve PDF met de gegevens van het mobiele formulier
+In de methode van de succesmanager richten wij een vraag aan douaneserlet die in AEM loopt. Deze servlet rendert en retourneert interactieve PDF met de gegevens van het mobiele formulier
 
 ```javascript
 var suc = function(obj) {
@@ -127,7 +127,7 @@ public class GeneratePDFFromMobileFormData extends SlingAllMethodsServlet implem
 
 ### Interactieve PDF renderen
 
-De volgende code maakt gebruik van [ de Dienst API van Forms ](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) om interactieve PDF met de gegevens van de mobiele vorm terug te geven.
+De volgende code maakt gebruik van [ de Dienst API van Forms ](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) interactieve PDF met de gegevens van de mobiele vorm terug te geven.
 
 ```java
 package com.aemforms.mobileforms.core.documentservices.impl;

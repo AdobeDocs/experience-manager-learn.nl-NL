@@ -1,15 +1,15 @@
 ---
 title: ContextHub instellen voor Personalization met AEM Sites
-description: ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. De JavaScript API van ContextHub laat u toe om tot opslag toegang te hebben om, gegevens tot stand te brengen bij te werken en te schrappen zonodig. Als dusdanig, vertegenwoordigt ContextHub een gegevenslaag op uw pagina's. Deze pagina beschrijft hoe te om contexthub aan uw AEM sitepagina's toe te voegen.
+description: ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. De JavaScript API van ContextHub laat u toe om tot opslag toegang te hebben om, gegevens tot stand te brengen bij te werken en te schrappen zonodig. Als dusdanig, vertegenwoordigt ContextHub een gegevenslaag op uw pagina's. Op deze pagina wordt beschreven hoe u een contexthub kunt toevoegen aan uw AEM-sitepagina's.
 feature: Context Hub
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Personalization
 role: Developer
 level: Intermediate
 doc-type: Technical Video
 exl-id: 89308dd3-a7e5-4fec-bffb-5f0974125c0a
 duration: 357
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 1%
@@ -18,13 +18,13 @@ ht-degree: 1%
 
 # ContextHub instellen voor Personalization {#set-up-contexthub}
 
-ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. De JavaScript API van ContextHub laat u toe om tot opslag toegang te hebben om, gegevens tot stand te brengen bij te werken en te schrappen zonodig. Als dusdanig, vertegenwoordigt ContextHub een gegevenslaag op uw pagina&#39;s. Deze pagina beschrijft hoe te om contexthub aan uw AEM sitepagina&#39;s toe te voegen.
+ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. De JavaScript API van ContextHub laat u toe om tot opslag toegang te hebben om, gegevens tot stand te brengen bij te werken en te schrappen zonodig. Als dusdanig, vertegenwoordigt ContextHub een gegevenslaag op uw pagina&#39;s. Op deze pagina wordt beschreven hoe u een contexthub kunt toevoegen aan uw AEM-sitepagina&#39;s.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23765?quality=12&learn=on)
 
 >[!NOTE]
 >
->We gebruiken de WKND-referentiesite voor deze video en deze maakt geen deel uit van AEM release. U kunt de [ recentste versie hier downloaden ](https://github.com/adobe/aem-guides-wknd/releases).
+>We gebruiken de WKND-referentiesite voor deze video en deze maakt geen deel uit van de AEM-release. U kunt de [ recentste versie hier downloaden ](https://github.com/adobe/aem-guides-wknd/releases).
 
 Voeg ContextHub aan uw pagina&#39;s toe om de eigenschappen ContextHub toe te laten en aan de bibliotheken van JavaScript te verbinden ContextHub. De ContextHub JavaScript API verleent toegang tot de contextgegevens die ContextHub beheert.
 
@@ -43,7 +43,7 @@ ContextHub omvat een segmenteringsmotor die segmenten beheert en bepaalt welke s
 
 ## Segmenten maken {#create-segments}
 
-Maak AEM segmenten die fungeren als regels voor de theers. Met andere woorden, ze definiëren wanneer inhoud binnen een taser op een webpagina wordt weergegeven. De inhoud kan dan specifiek op de behoeften en belangen van de bezoeker worden gericht, afhankelijk van het segment of de segmenten die zij aanpassen.
+Maak AEM-segmenten die fungeren als regels voor de theers. Met andere woorden, ze definiëren wanneer inhoud binnen een taser op een webpagina wordt weergegeven. De inhoud kan dan specifiek op de behoeften en belangen van de bezoeker worden gericht, afhankelijk van het segment of de segmenten die zij aanpassen.
 
 ## Cloud Configuration, Segmentpad en ContextHub-pad toewijzen aan uw site {#assigning-cloud-configuration-segment-path-and-contexthub-path-to-your-site}
 

@@ -1,7 +1,7 @@
 ---
-title: De SDK AEM Headless gebruiken
-description: Leer hoe u GraphQL-query's maakt met de AEM Headless SDK.
-version: Cloud Service
+title: De AEM Headless SDK gebruiken
+description: Leer hoe u GraphQL-query's kunt maken met de AEM Headless SDK.
+version: Experience Manager as a Cloud Service
 topic: Headless
 feature: GraphQL API
 role: Developer
@@ -10,32 +10,32 @@ jira: KT-10269
 thumbnail: KT-10269.jpeg
 exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
 duration: 200
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
 
 ---
 
-# AEM headless SDK
+# AEM Headless SDK
 
 De AEM Headless SDK is een verzameling bibliotheken die door clients kunnen worden gebruikt om via HTTP snel en eenvoudig te communiceren met AEM Headless API&#39;s.
 
 De AEM Headless SDK is beschikbaar voor verschillende platforms:
 
-+ [ AEM Koploze SDK voor cliënt-zijbrowsers (JavaScript) ](https://github.com/adobe/aem-headless-client-js)
++ [ AEM Headless SDK voor cliënt-zijbrowsers (JavaScript) ](https://github.com/adobe/aem-headless-client-js)
 + [ AEM Headless SDK voor server-side/Node.js (JavaScript) ](https://github.com/adobe/aem-headless-client-nodejs)
 + [ AEM Headless SDK voor Java™ ](https://github.com/adobe/aem-headless-client-java)
 
 ## Blijvende GraphQL-query&#39;s
 
-Het vragen van AEM het gebruiken van GraphQL die voortgeduurde vragen (in tegenstelling tot [ cliënt-bepaalde vragen van GraphQL ](#graphl-queries)) gebruiken staat ontwikkelaars toe om een vraag (maar niet zijn resultaten) in AEM voort te zetten, en dan de vraag te verzoeken om door naam worden uitgevoerd. De aangehouden vragen zijn gelijkaardig aan het concept opgeslagen procedures in SQL gegevensbestanden.
+Het vragen van AEM die GraphQL gebruiken die persisted vragen (in tegenstelling tot [ cliënt-bepaalde vragen van GraphQL ](#graphl-queries)) gebruikt staat ontwikkelaars toe om een vraag (maar niet zijn resultaten) in AEM voort te zetten, en dan de vraag te verzoeken om door naam worden uitgevoerd. De aangehouden vragen zijn gelijkaardig aan het concept opgeslagen procedures in SQL gegevensbestanden.
 
-Persisted query&#39;s zijn krachtiger dan door de client gedefinieerde GraphQL query&#39;s, aangezien persisted query&#39;s worden uitgevoerd met HTTP-GET, die in cache kunnen worden opgeslagen op de CDN- en AEM Dispatcher-lagen. Blijvende query&#39;s zijn ook van kracht, definiëren een API en ontkoppelen de noodzaak voor de ontwikkelaar om de details van elk Content Fragment Model te begrijpen.
+Persisted query&#39;s zijn krachtiger dan door de client gedefinieerde GraphQL query&#39;s, aangezien persisted query&#39;s worden uitgevoerd met HTTP GET, dat in cache kan worden geplaatst op de CDN- en AEM Dispatcher-lagen. Blijvende query&#39;s zijn ook van kracht, definiëren een API en ontkoppelen de noodzaak voor de ontwikkelaar om de details van elk Content Fragment Model te begrijpen.
 
 ### Codevoorbeelden{#persisted-graphql-queries-code-examples}
 
-Hieronder volgen voorbeelden van code voor het uitvoeren van een GraphQL-query die wordt uitgevoerd tegen AEM.
+Hieronder volgen voorbeelden van code voor het uitvoeren van een GraphQL-query op AEM.
 
 +++ JavaScript-voorbeeld
 
@@ -45,9 +45,9 @@ Installeer [@adobe/aem-headless-client-js ](https://github.com/adobe/aem-headles
 $ npm i @adobe/aem-headless-client-js
 ```
 
-Dit codevoorbeeld toont hoe te om AEM te vragen gebruikend [@adobe/aem-headless-cliënt-js ](https://github.com/adobe/aem-headless-client-js) npm module gebruikend `async/await` syntaxis. De AEM Zwaartepunt SDK voor JavaScript steunt ook [ Promise syntaxis ](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
+In dit codevoorbeeld ziet u hoe u een query op AEM kunt uitvoeren met de syntaxis [@adobe/aem-headless-client-js ](https://github.com/adobe/aem-headless-client-js) npm. `async/await` AEM Headless SDK voor JavaScript steunt ook [ Promise syntaxis ](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
 
-Deze code gaat ervan uit dat er een voortgezette query met de naam `wknd/adventureNames` is gemaakt op AEM auteur en gepubliceerd naar AEM Publish.
+Deze code gaat ervan uit dat er een voortgezette query met de naam `wknd/adventureNames` is gemaakt op AEM Author en gepubliceerd naar AEM Publish.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';
@@ -88,7 +88,7 @@ let { data, errors } = executePersistedQuery('wknd-shared/adventures-by-slug', {
 
 +++
 
-+++ UseEffect(..) Reageren voorbeeld
++++ Voorbeeld van React useEffect(..)
 
 Installeer [@adobe/aem-headless-cliënt-js ](https://github.com/adobe/aem-headless-client-js) door het `npm install` bevel van de wortel van uw React project in werking te stellen.
 
@@ -101,9 +101,9 @@ Dit codevoorbeeld toont hoe te om [ React useEffect (..) te gebruiken haak ](htt
 Het gebruik van `useEffect` om de asynchrone GraphQL-aanroep in React te maken is nuttig omdat:
 
 1. Het verstrekt synchrone omslag voor de asynchrone vraag aan AEM.
-1. Het vermindert onnodig AEM.
+1. Het vermindert onnodig het vereisen van AEM.
 
-Deze code gaat ervan uit dat er een voortgezette query met de naam `wknd-shared/adventure-by-slug` is gemaakt op AEM auteur en gepubliceerd naar AEM Publish met behulp van GraphiQL.
+Deze code gaat ervan uit dat er een voortgezette query met de naam `wknd-shared/adventure-by-slug` is gemaakt op AEM Author en gepubliceerd naar AEM Publish met behulp van GraphiQL.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';
@@ -202,7 +202,7 @@ U kunt nieuwe `useEffect` haken maken voor elke doorlopende query die de React-a
 
 ## GraphQL-query&#39;s
 
-AEM steunt cliënt-bepaalde vragen van GraphQL, nochtans is het AEM beste praktijken om [ voortgeduurde vragen van GraphQL ](#persisted-graphql-queries) te gebruiken.
+AEM steunt cliënt-bepaalde vragen van GraphQL, nochtans is het de beste praktijken van AEM om [ voortgeduurde vragen van GraphQL ](#persisted-graphql-queries) te gebruiken.
 
 ## Webpack 5+
 

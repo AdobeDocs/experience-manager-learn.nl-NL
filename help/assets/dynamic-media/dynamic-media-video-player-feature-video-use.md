@@ -1,15 +1,15 @@
 ---
-title: De videospeler in AEM Dynamic Media gebruiken
-description: AEM Dynamic Media-videospeler die gebruikmaakte van Flash-runtime voor ondersteuning van adaptieve videostreaming op desktopclients en browsers, werd agressiever bij het streamen van inhoud op basis van flash. Met de introductie van HLS (Apple Live HTTP Streaming video Delivery Protocol) kan inhoud nu worden gestreamd zonder dat Flash nodig is.
+title: De videospeler gebruiken in AEM Dynamic Media
+description: AEM Dynamic Media-videospeler die gebruikmaakte van Flash-runtime voor de ondersteuning van adaptieve videostreaming op desktopclients en browsers werd agressiever bij het streamen van inhoud op basis van flash. Met de introductie van HLS (Apple Live HTTP Streaming video delivery protocol) kan inhoud nu worden gestreamd zonder dat Flash nodig is.
 feature: Video Profiles
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
 duration: 568
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -17,17 +17,17 @@ ht-degree: 0%
 ---
 
 
-# De videospeler in AEM Dynamic Media gebruiken{#using-the-video-player-in-aem-dynamic-media}
+# De videospeler gebruiken in AEM Dynamic Media{#using-the-video-player-in-aem-dynamic-media}
 
-AEM Dynamic Media-videospeler die gebruikmaakte van Flash-runtime voor ondersteuning van adaptieve videostreaming op desktopclients en browsers, werd agressiever bij het streamen van inhoud op basis van flash. Met de introductie van HLS (Apple Live HTTP Streaming video Delivery Protocol) kan inhoud nu worden gestreamd zonder dat Flash nodig is.
+AEM Dynamic Media-videospeler die gebruikmaakte van Flash-runtime voor de ondersteuning van adaptieve videostreaming op desktopclients en browsers werd agressiever bij het streamen van inhoud op basis van flash. Met de introductie van HLS (Apple Live HTTP Streaming video delivery protocol) kan inhoud nu worden gestreamd zonder dat Flash nodig is.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16791?quality=12&learn=on)
 
-## Snel zoeken naar niet-Flash videospeler {#quick-look-into-non-flash-video-player}
+## Snel zoeken naar niet-Flash Video Player {#quick-look-into-non-flash-video-player}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17429?quality=12&learn=on)
 
-De browserondersteuning van HLS is als volgt: voor niet-ondersteunde browsers kunnen we terugvallen op progressieve videoverstrekking
+De browserondersteuning van HLS is als volgt: voor niet-ondersteunde browsers kunnen we terugvallen op progressieve videoweergave
 
 >[!NOTE]
 >
@@ -50,8 +50,8 @@ De browserondersteuning van HLS is als volgt: voor niet-ondersteunde browsers ku
   <tr>
    <td> <p>Desktop</p> </td>
    <td> <p>Internet Explorer 11+</p> </td>
-   <td> <p>Dynamic Media - Scene 7-modus: HLS-videostreaming</p> 
-        <p>Dynamic Media - Hybride modus: progressief downloaden</p>
+   <td> <p>Dynamische media - modus Scene 7: HLS-videostreaming</p> 
+        <p>Dynamische media - hybride modus: progressief downloaden</p>
    </td>
   </tr>
   <tr>
@@ -62,17 +62,17 @@ De browserondersteuning van HLS is als volgt: voor niet-ondersteunde browsers ku
   <tr> 
    <td> <p>Desktop</p> </td>
    <td> <p>Firefox 45 of hoger</p> </td>
-   <td> <p>HLS-videostreaming</p> </td>
+   <td> <p>HLS video streaming</p> </td>
   </tr>
   <tr> 
    <td> <p>Desktop</p> </td>
    <td> <p>Chrome</p> </td>
-   <td> <p>HLS-videostreaming</p> </td>
+   <td> <p>HLS video streaming</p> </td>
   </tr>
   <tr> 
    <td> <p>Desktop</p> </td>
    <td> <p>Safari (Mac)</p> </td>
-   <td> <p>HLS-videostreaming</p> </td>
+   <td> <p>HLS video streaming</p> </td>
   </tr>
   <tr> 
    <td> <p>Mobiel</p> </td>
@@ -82,7 +82,7 @@ De browserondersteuning van HLS is als volgt: voor niet-ondersteunde browsers ku
   <tr> 
    <td> <p>Mobiel</p> </td>
    <td> <p>Chrome (Android 7 of hoger)</p> </td>
-   <td> <p>HLS-videostreaming</p> </td>
+   <td> <p>HLS video streaming</p> </td>
   </tr>
   <tr> 
    <td> <p>Mobiel</p> </td>
@@ -92,17 +92,17 @@ De browserondersteuning van HLS is als volgt: voor niet-ondersteunde browsers ku
   <tr> 
    <td> <p>Mobiel</p> </td>
    <td> <p>Safari (iOS)</p> </td>
-   <td> <p>HLS-videostreaming</p> </td>
+   <td> <p>HLS video streaming</p> </td>
   </tr>
   <tr> 
    <td> <p>Mobiel</p> </td>
    <td> <p>Chrome (iOS)</p> </td>
-   <td> <p>HLS-videostreaming</p> </td>
+   <td> <p>HLS video streaming</p> </td>
   </tr>
   <tr> 
    <td> <p>Mobiel</p> </td>
    <td> <p>Blackberry</p> </td>
-   <td> <p>HLS-videostreaming</p> </td>
+   <td> <p>HLS video streaming</p> </td>
   </tr>
  </tbody>
 </table>

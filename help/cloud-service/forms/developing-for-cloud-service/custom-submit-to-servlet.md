@@ -5,13 +5,13 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Developer Tools
 jira: KT-8852
 exl-id: 983e0394-7142-481f-bd5e-6c9acefbfdd0
 duration: 52
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -53,7 +53,7 @@ De volgende code in post.POST.jsp door:sturen eenvoudig het verzoek aan servlet 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/formstutorial",null,null);
 ```
 
-Klik in uw AEM project in IntelliJ met de rechtermuisknop op de map `apps/bankingapplication` en selecteer Nieuw | Verpak en typ in SubmitToAEMServlet na apps.bankingapplication in het nieuwe de pakketdialoogvakje. Klik met de rechtermuisknop op het knooppunt VerzendenToAEMServlet en selecteer Opnieuw | Krijg Bevel om het AEM project met de AEM serverbewaarplaats te synchroniseren.
+Klik in uw AEM-project in IntelliJ met de rechtermuisknop op de map `apps/bankingapplication` en selecteer Nieuw | Verpak en typ in SubmitToAEMServlet na apps.bankingapplication in het nieuwe de pakketdialoogvakje. Klik met de rechtermuisknop op het knooppunt VerzendenToAEMServlet en selecteer Opnieuw | Opdracht ophalen om het AEM-project te synchroniseren met de AEM-serveropslagplaats.
 
 
 ## Adaptief formulier configureren

@@ -2,7 +2,7 @@
 title: Interne API's met persoonlijke certificaten aanroepen
 description: Leer hoe u interne API's met persoonlijke of zelfondertekende certificaten aanroept.
 feature: Security
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Security, Development
 role: Admin, Architect, Developer
 level: Experienced
@@ -12,7 +12,7 @@ doc-type: Article
 last-substantial-update: 2023-08-25T00:00:00Z
 exl-id: c88aa724-9680-450a-9fe8-96e14c0c6643
 duration: 332
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Interne API&#39;s met persoonlijke certificaten aanroepen
 
-Leer hoe te om vraag HTTPS van AEM aan Web APIs te maken gebruikend privé of zelf-ondertekende certificaten.
+Leer hoe u HTTPS-aanroepen vanuit AEM naar web-API&#39;s kunt maken met behulp van persoonlijke of zelfondertekende certificaten.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424853?quality=12&learn=on)
 
@@ -60,20 +60,20 @@ CloseableHttpResponse closeableHttpResponse = httpClient.execute(new HttpGet(API
 De code gebruikt [ Apache HttpComponent ](https://hc.apache.org/) [ HttpClient ](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) bibliotheekklassen en hun methodes.
 
 
-## HttpClient en load AEM TrustStore-materiaal
+## HttpClient en laad AEM TrustStore-materiaal
 
-Om een API eindpunt te roepen dat _privé of zelf-ondertekend certificaat_ heeft, moet [ HttpClient ](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) `SSLContextBuilder` met AEM TrustStore worden geladen, en worden gebruikt om de verbinding te vergemakkelijken.
+Om een API eindpunt te roepen dat _privé of zelf-ondertekend certificaat_ heeft, [ HttpClient ](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) `SSLContextBuilder` moet met AEM TrustStore worden geladen, en worden gebruikt om de verbinding te vergemakkelijken.
 
 Voer de volgende stappen uit:
 
-1. Login aan **AEM Auteur** als **beheerder**.
-1. Navigeer aan **AEM Auteur > Hulpmiddelen > Veiligheid > de Opslag van het Vertrouwen**, en open de **Globale Opslag van het Vertrouwen**. Als u voor het eerst een account opent, stelt u een wachtwoord in voor de Global Trust Store.
+1. Login aan **de Auteur van AEM** als **beheerder**.
+1. Navigeer aan **de Auteur van AEM > Hulpmiddelen > Veiligheid > de Opslag van het Vertrouwen**, en open de **Globale Opslag van het Vertrouwen**. Als u voor het eerst een account opent, stelt u een wachtwoord in voor de Global Trust Store.
 
    ![ Globale opslag van het Vertrouwen ](assets/internal-api-call/global-trust-store.png)
 
 1. Om een privé certificaat in te voeren, klik **Uitgezochte de knoop van het Dossier van het Certificaat** en selecteer gewenst certificaatdossier met `.cer` uitbreiding. Importeer het door te klikken op **Verzenden** knop.
 
-1. Java™-code bijwerken zoals hieronder. Als u `@Reference` wilt gebruiken om `KeyStoreService` AEM te krijgen, moet de aanroepende code een OSGi-component/service zijn of een Sling Model (en wordt `@OsgiService` daar gebruikt).
+1. Java™-code bijwerken zoals hieronder. Als u `@Reference` wilt gebruiken om AEM `KeyStoreService` op te halen, moet de aanroepende code een OSGi-component/service zijn of een Sling Model (en wordt `@OsgiService` daar gebruikt).
 
    ```java
    ...
@@ -136,13 +136,13 @@ Voer de volgende stappen uit:
    * Injecteer de OOTB `com.adobe.granite.keystore.KeyStoreService` OSGi-service in uw OSGi-component.
    * Haal de algemene AEM TrustStore op met `KeyStoreService` en `ResourceResolver` , de methode `getAEMTrustStore(...)` doet dat.
    * Creeer een voorwerp van `SSLContextBuilder`, zie Java™ [ API details ](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html).
-   * Laad de globale AEM TrustStore in `SSLContextBuilder` gebruikend `loadTrustMaterial(KeyStore truststore,TrustStrategy trustStrategy)` methode.
-   * Als u `null` doorgeeft voor `TrustStrategy` in de bovenstaande methode, zorgt deze ervoor dat alleen AEM vertrouwde certificaten slagen tijdens het uitvoeren van de API.
+   * Laad de algemene AEM TrustStore in `SSLContextBuilder` met de methode `loadTrustMaterial(KeyStore truststore,TrustStrategy trustStrategy)` .
+   * Geef `null` door voor `TrustStrategy` in de bovenstaande methode, zodat alleen de door AEM vertrouwde certificaten slagen tijdens de uitvoering van de API.
 
 
 >[!CAUTION]
 >
->API-aanroepen met geldige certificaten die door CA zijn uitgegeven, mislukken wanneer ze worden uitgevoerd met de vermelde aanpak. Alleen API-aanroepen met AEM vertrouwde certificaten zijn toegestaan wanneer deze methode wordt gevolgd.
+>API-aanroepen met geldige certificaten die door CA zijn uitgegeven, mislukken wanneer ze worden uitgevoerd met de vermelde aanpak. Alleen API-aanroepen met vertrouwde AEM-certificaten zijn toegestaan wanneer deze methode wordt gevolgd.
 >
 >Gebruik de [ standaardbenadering ](#prototypical-api-invocation-code-using-httpclient) voor het uitvoeren van API vraag van geldige CA-Uitgegeven certificaten, betekenend dat slechts APIs verbonden aan privé certificaten gebruikend de eerder genoemde methode zou moeten worden uitgevoerd.
 
@@ -157,4 +157,4 @@ Nochtans, wordt deze methode niet gericht op veiligheid beste praktijken en AEM 
 
 Het steekproefproject Node.js dat in de video wordt gedemoed kan van [ hier ](assets/internal-api-call/REST-APIs.zip) worden gedownload.
 
-De AEM servlet code is beschikbaar in de 0} tak van het Project van Plaatsen WKND {, [ zie ](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).`tutorial/web-api-invocation`
+De servletcode van AEM is beschikbaar in de 0} tak van het Project van Plaatsen WKND {, [ zie ](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).`tutorial/web-api-invocation`

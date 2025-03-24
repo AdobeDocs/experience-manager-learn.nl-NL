@@ -1,15 +1,15 @@
 ---
 title: Werken met kleurbeheer met AEM Dynamic Media
-description: In deze video bekijken we Dynamic Media Color Management en hoe deze kan worden gebruikt om voorvertoningsmogelijkheden voor kleurcorrectie te bieden in AEM Assets.
+description: In deze video bekijken we Dynamic Media Color Management en hoe u deze kunt gebruiken om kleurcorrectievoorvertoningsmogelijkheden voor AEM Assets te bieden.
 feature: Image Profiles, Video Profiles
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
 doc-type: Feature Video
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
 duration: 274
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -18,19 +18,19 @@ ht-degree: 0%
 
 # Werken met kleurbeheer met AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
 
-In deze video bekijken we Dynamic Media Color Management en hoe deze kan worden gebruikt om voorvertoningsmogelijkheden voor kleurcorrectie te bieden in AEM Assets.
+In deze video bekijken we Dynamic Media Color Management en hoe u deze kunt gebruiken om kleurcorrectievoorvertoningsmogelijkheden voor AEM Assets te bieden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16792?quality=12&learn=on)
 
 >[!NOTE]
 >
->[ laat Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) in AEM toe om deze eigenschap te gebruiken.
+>[ laat Dynamische Media ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) in AEM toe om deze eigenschap te gebruiken.
 
 Deze functie is beschikbaar voor AEM 6.1- en 6.2-versies als een Feature Pack.
 
 ## XML-sjabloon voor het configuratieknooppunt voor kleurbeheer {#xml-template-for-the-color-management-configuration-node}
 
-Hier volgt de XML-sjabloon voor het configuratieknooppunt voor kleurbeheer. Dit malplaatje van XML kan in het AEM ontwikkelingsproject worden gekopieerd en met de project-aangewezen configuraties worden gevormd.
+Hier volgt de XML-sjabloon voor het configuratieknooppunt voor kleurbeheer. Dit malplaatje van XML kan in het de ontwikkelingsproject van AEM worden gekopieerd en met project-aangewezen configuraties worden gevormd.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -86,7 +86,7 @@ Hier volgt de XML-sjabloon voor het configuratieknooppunt voor kleurbeheer. Dit 
 />
 ```
 
-### Lijst met standaardkleurprofielen voor Adoben wordt hieronder weergegeven {#list-of-default-adobe-color-profiles-are-listed-below}
+### Lijst met standaard Adobe-kleurprofielen wordt hieronder weergegeven {#list-of-default-adobe-color-profiles-are-listed-below}
 
 | Naam | Kleurruimte | Beschrijving |
 | ------------------- | ---------- | ------------------------------------- |
@@ -121,8 +121,8 @@ Hier volgt de XML-sjabloon voor het configuratieknooppunt voor kleurbeheer. Dit 
 | WebCoatedGrade3 | CMYK | Web Coated SWOP 2006 Grade 3 Paper |
 | WebCoatedGrade5 | CMYK | Web Coated SWOP 2006 Grade 5 Paper |
 | WebUncoated | CMYK | U.S. Web Uncoated v2 |
-| WideGamutRGB | RGB | Brede kleuromvang RGB |
+| WideGamutRGB | RGB | Brede kleuromvang, RGB |
 
 ## Aanvullende bronnen{#additional-resources}
 
-* [ Vormend het Beheer van de Kleur van Dynamic Media ](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
+* [ Vormend Dynamisch Beheer van de Kleur van Media ](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)

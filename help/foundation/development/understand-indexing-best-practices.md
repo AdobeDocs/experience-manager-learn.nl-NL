@@ -1,7 +1,7 @@
 ---
-title: Indexeren van beste praktijken in AEM
-description: Leer over het indexeren van beste praktijken in AEM.
-version: 6.4, 6.5, Cloud Service
+title: Best practices indexeren in AEM
+description: Meer informatie over het indexeren van beste praktijken in AEM.
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 sub-product: Experience Manager, Experience Manager Sites
 feature: Search
 doc-type: Article
@@ -13,27 +13,27 @@ last-substantial-update: 2024-01-04T00:00:00Z
 jira: KT-14745
 thumbnail: KT-14745.jpeg
 exl-id: 3fd4c404-18e9-44e5-958f-15235a3091d5
-source-git-commit: 54a7f93637545a4467c4c587bbc3d1d0de5c64a1
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 0%
 
 ---
 
-# Indexeren van beste praktijken in AEM
+# Best practices indexeren in AEM
 
-Leer meer over het indexeren van beste praktijken in Adobe Experience Manager (AEM). Apache [ Jackrabbit Oak ](https://jackrabbit.apache.org/oak/docs/query/query.html) bevoegdheden het inhoudsonderzoek in AEM en het volgende zijn zeer belangrijke punten:
+Meer informatie over het indexeren van beste praktijken in Adobe Experience Manager (AEM). Apache [ Jackrabbit Oak ](https://jackrabbit.apache.org/oak/docs/query/query.html) bevoegdheden het inhoudsonderzoek in AEM en het volgende zijn zeer belangrijke punten:
 
 - AEM biedt verschillende indexen om de zoek- en queryfunctionaliteit te ondersteunen, bijvoorbeeld `damAssetLucene` , `cqPageLucene` en meer.
 - Alle indexdefinities worden opgeslagen in de gegevensopslagruimte onder het knooppunt `/oak:index` .
 - AEM as a Cloud Service ondersteunt alleen Oak Lucene-indexen.
-- De configuratie van de index zou in de AEM projectcodebase moeten worden beheerd en worden opgesteld gebruikend de pijpleidingen van Cloud Manager CI/CD.
+- De configuratie van de index zou in de het projectcodebase van AEM moeten worden beheerd en gebruikend Cloud Manager CI/CD pijpleidingen worden opgesteld.
 - Als de veelvoudige indexen voor een bepaalde vraag beschikbaar zijn, wordt de **index met de laagste geschatte kosten gebruikt**.
 - Als er geen index beschikbaar is voor een bepaalde query, wordt de inhoudsstructuur doorlopen om de overeenkomende inhoud te zoeken. De standaardlimiet via `org.apache.jackrabbit.oak.query.QueryEngineSettingsService` is echter slechts 10.000 knooppunten te doorlopen.
 - De resultaten van een vraag worden **gefiltreerd minstens** om ervoor te zorgen dat de huidige gebruiker toegang heeft gelezen. Dit betekent dat de vraagresultaten kleiner kunnen zijn dan het aantal geïndexeerde knopen.
 - Het opnieuw indexeren van de repository na wijzigingen in de indexdefinitie vergt tijd en hangt af van de grootte van de repository.
 
-Om een efficiënte en correcte onderzoeksfunctionaliteit te hebben die niet de prestaties van de AEM instantie beïnvloedt, is het belangrijk om de het indexeren beste praktijken te begrijpen.
+Om een efficiënte en correcte onderzoeksfunctionaliteit te hebben die niet de prestaties van de instantie van AEM beïnvloedt, is het belangrijk om de het indexeren beste praktijken te begrijpen.
 
 ## Aangepaste versus OTB-index
 
@@ -53,15 +53,15 @@ Soms moet u aangepaste indexen maken ter ondersteuning van uw zoekvereisten. Vol
 
 - In **AEM 6.X**, werkt het bovengenoemde noemen _niet_, echter werkt eenvoudig de index OTB met noodzakelijke eigenschappen in de `indexRules` knoop bij.
 
-- Kopieer altijd de nieuwste OOTB-indexdefinitie van de AEM-instantie met behulp van CRX DE Package Manager (/crx/packmgr/), wijzig de naam en voeg aanpassingen toe in het XML-bestand.
+- Kopieer altijd de nieuwste OOTB-indexdefinitie van de AEM-instantie met CRX DE Package Manager (/crx/packmgr/), wijzig de naam en voeg aanpassingen toe in het XML-bestand.
 
-- Sla indexdefinitie op in het AEM project op `ui.apps/src/main/content/jcr_root/_oak_index` en implementeer deze met Cloud Manager CI/CD-leidingen. Zie [ het Opstellen van de Definities van de Index van de Douane ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing) voor meer details.
+- Sla indexdefinitie op in het AEM-project op `ui.apps/src/main/content/jcr_root/_oak_index` en implementeer deze met Cloud Manager CI/CD-leidingen. Zie [ het Opstellen van de Definities van de Index van de Douane ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing) voor meer details.
 
 ### Volledig aangepaste index
 
 Het maken van een volledig aangepaste index moet de laatste optie zijn en alleen als de bovenstaande optie niet werkt.
 
-- Gebruik **\&lt;prefix> wanneer u een volledig aangepaste index maakt.\&lt;customIndexName>-\&lt;version>-douane- \ &lt;customVersion>** noemende overeenkomst. Bijvoorbeeld `wknd.adventures-1-custom-1` . Zo voorkomt u naamconflicten. Hier is `wknd` het voorvoegsel en `adventures` de aangepaste indexnaam. Deze conventie is zowel van toepassing op AEM 6.X als op AEMCS en helpt bij de voorbereiding op toekomstige migratie naar AEMCS.
+- Gebruik **\&lt;prefix> wanneer u een volledig aangepaste index maakt.\&lt;customIndexName>-\&lt;version>-douane- \ &lt;customVersion>** noemende overeenkomst. Bijvoorbeeld `wknd.adventures-1-custom-1` . Zo voorkomt u naamconflicten. Hier is `wknd` het voorvoegsel en `adventures` de aangepaste indexnaam. Deze conventie geldt voor zowel AEM 6.X als AEMCS en helpt bij de voorbereiding op toekomstige migratie naar AEMCS.
 
 - AEMCS steunt slechts indexen van Lucene, zodat om voor toekomstige migratie aan AEMCS voor te bereiden, gebruik altijd indexen van Lucene. Zie [ Indexen van Lucene vs Indexen van het Bezit ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing) voor meer details.
 
@@ -185,7 +185,7 @@ Soms hebben gebruikers de mogelijkheid om te zoeken binnen de inhoud van een bes
 
 Ga als volgt te werk om Apache Tika op mime-type uit te schakelen:
 
-- Voeg het knooppunt `tika` van `nt:unstructured` type toe onder de definitie van een aangepaste index of OOBT-index. In het volgende voorbeeld is het mime-type PDF uitgeschakeld voor OOTB `damAssetLucene` -index.
+- Voeg het knooppunt `tika` van `nt:unstructured` type toe onder de definitie van een aangepaste index of OOBT-index. In het volgende voorbeeld is het PDF-mime-type uitgeschakeld voor OOTB `damAssetLucene` -index.
 
 ```xml
 /oak:index/damAssetLucene

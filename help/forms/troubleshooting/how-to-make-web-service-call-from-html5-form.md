@@ -1,24 +1,24 @@
 ---
-title: Webservice-aanroep vanuit HTML5-formulier maken
-description: stappen voor het configureren van webservice vanuit het HTML5-formulier
+title: Webservices bellen vanuit HTML5-formulier
+description: stappen voor het configureren van webservices vanuit het HTML5-formulier
 type: Troubleshooting
 role: Developer
 level: Intermediate
-version: 6.5
+version: Experience Manager 6.5
 feature: Mobile Forms
 topic: Development
 index: y
 exl-id: 28fa5597-bab5-4fb9-8d30-e9fd41820749
 duration: 56
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '41'
 ht-degree: 0%
 
 ---
 
-# Webservice-aanroep vanuit HTML5-formulier maken
+# Webservices bellen vanuit HTML5-formulier
 
-*Deze video loopt door het proces om de dienstvraag van het Web van vorm te maken HTML5.*
+*Deze video loopt door het proces om de Webdienst vraag van vorm te maken HTML5.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335505?quality=12&learn=on)

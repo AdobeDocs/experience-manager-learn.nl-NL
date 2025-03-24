@@ -1,7 +1,7 @@
 ---
 title: Toegangstoken lokale ontwikkeling
-description: AEM de Tokens van de Toegang van de Lokale Ontwikkeling worden gebruikt om de ontwikkeling van integratie met AEM as a Cloud Service te versnellen die programmatically met AEM de diensten van de Auteur of van Publish over HTTP interactie aangaan.
-version: Cloud Service
+description: AEM Local Development Access Tokens worden gebruikt om de ontwikkeling te versnellen van integraties met AEM as a Cloud Service die programmatisch communiceren met AEM Author of Publish services via HTTP.
+version: Experience Manager as a Cloud Service
 feature: APIs
 jira: KT-6785
 thumbnail: 330477.jpg
@@ -12,7 +12,7 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
 duration: 572
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Toegangstoken lokale ontwikkeling
 
-Ontwikkelaars die integraties bouwen die programmatische toegang tot AEM as a Cloud Service vereisen, hebben een eenvoudige, snelle manier nodig om tijdelijke toegangstokens voor AEM te verkrijgen om lokale ontwikkelingsactiviteiten te vergemakkelijken. Om aan deze behoefte te voldoen, staat AEM Developer Console ontwikkelaars toe om tijdelijke toegangstokens zelf te produceren die aan programmatically tot AEM kunnen worden gebruikt toegang te hebben.
+Ontwikkelaars die integraties bouwen die programmatische toegang tot AEM as a Cloud Service vereisen, hebben een eenvoudige, snelle manier nodig om tijdelijke toegangstokens voor AEM te verkrijgen om lokale ontwikkelingsactiviteiten te vergemakkelijken. Om aan deze behoefte te voldoen, staat AEM Developer Console ontwikkelaars toe om tijdelijke toegangstokens zelf te produceren die kunnen worden gebruikt om tot AEM programmatically toegang te hebben.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330477?quality=12&learn=on)
 
@@ -29,12 +29,12 @@ Ontwikkelaars die integraties bouwen die programmatische toegang tot AEM as a Cl
 
 ![ het krijgen van een Lokaal Token van de Toegang van de Ontwikkeling ](assets/local-development-access-token/getting-a-local-development-access-token.png)
 
-Het lokale Token van de Toegang van de Ontwikkeling verleent toegang tot AEM Auteur en de diensten van Publish als gebruiker die het teken, samen met hun toestemmingen produceerde. Ondanks dat dit een ontwikkelingstoken is, deel dit teken niet, of opslag in broncontrole.
+Het token Local Development Access biedt toegang tot de services AEM Author and Publish als de gebruiker die het token heeft gegenereerd, samen met zijn machtigingen. Ondanks dat dit een ontwikkelingstoken is, deel dit teken niet, of opslag in broncontrole.
 
 1. In [ Adobe Admin Console ](https://adminconsole.adobe.com/) verzekert u, de ontwikkelaar, een lid van zijn:
    + __Cloud Manager - het Profiel van het Product IMS van de Ontwikkelaar__ (verleent toegang tot AEM Developer Console)
-   + Of de __AEM Beheerders__ of __AEM het Profiel van het Product van Gebruikers__ IMS voor de dienst van het AEM milieu het toegangstoken integreert met
-   + Het milieu van de zandbak AEM as a Cloud Service vereist slechts lidmaatschap in of __AEM Beheerders__ of __AEM Gebruikers__ Profiel van het Product
+   + Of de __Beheerders van AEM__ of __Gebruikers van AEM__ IMS Profiel van het Product voor de dienst van het milieu van AEM de toegangstoken integreert met
+   + Het milieu van zandbak AEM as a Cloud Service vereist slechts lidmaatschap in of __de Beheerders van AEM__ of __de Gebruikers van AEM__ Profiel van het Product
 1. Login aan [ Adobe Cloud Manager ](https://my.cloudmanager.adobe.com)
 1. Open het programma dat de AEM as a Cloud Service-omgeving bevat om mee te integreren
 1. Tik de __ellips__ naast het milieu in de __sectie van Milieu__, en selecteer __Developer Console__
@@ -61,14 +61,14 @@ Het lokale Token van de Toegang van de Ontwikkeling verleent toegang tot AEM Aut
 
 Wij zullen een eenvoudige externe toepassing van JavaScript tot stand brengen om te illustreren hoe te om tot AEM as a Cloud Service over HTTPS programmatically toegang te hebben gebruikend het lokale toegangstoken van de ontwikkelaar. Dit illustreert hoe _om het even welke_ toepassing of systeem dat buiten AEM, ongeacht kader of taal loopt, het toegangstoken kan gebruiken programmatically voor authentiek te verklaren aan, en toegang te hebben, AEM as a Cloud Service. In de [ volgende sectie ](./service-credentials.md), zullen wij deze toepassingscode bijwerken om de benadering te steunen voor het produceren van een teken voor productiegebruik.
 
-Deze voorbeeldtoepassing wordt uitgevoerd vanaf de opdrachtregel en werkt metagegevens AEM elementen bij met behulp van AEM Assets HTTP-API&#39;s. Hierbij wordt de volgende stroom gebruikt:
+Deze voorbeeldtoepassing wordt uitgevoerd vanaf de opdrachtregel en werkt de metagegevens van AEM-elementen bij met behulp van AEM Assets HTTP API&#39;s. Hierbij wordt de volgende stroom gebruikt:
 
 1. Leest in parameters van de bevellijn (`getCommandLineParams()`)
 1. Verkrijgt het toegangstoken dat wordt gebruikt om aan AEM as a Cloud Service (`getAccessToken(...)`) voor authentiek te verklaren
-1. Maakt een lijst van alle activa in een AEM middelomslag die in een bevel-lijn parameters wordt gespecificeerd (`listAssetsByFolder(...)`)
+1. Hiermee geeft u alle elementen in een AEM-elementmap weer die zijn opgegeven in een opdrachtregelparameter (`listAssetsByFolder(...)`)
 1. De meta-gegevens van de vermelde activa met waarden bijwerken die in bevel-lijn parameters worden gespecificeerd (`updateMetadata(...)`)
 
-Het belangrijkste element in programmatically het voor authentiek verklaren aan AEM gebruikend het toegangstoken voegt een de verzoekkopbal van HTTP van de Vergunning aan alle HTTP- verzoeken toe die aan AEM worden gemaakt, in het volgende formaat:
+Het belangrijkste element in programmatically het voor authentiek verklaren aan AEM gebruikend het toegangstoken is toevoegend een de verzoekkopbal van HTTP van de Vergunning aan alle HTTP- verzoeken die aan AEM worden gemaakt, in het volgende formaat:
 
 + `Authorization: Bearer ACCESS_TOKEN`
 
@@ -254,7 +254,7 @@ Het belangrijkste element in programmatically het voor authentiek verklaren aan 
    200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting/AdobeStock_286664352.jpg.json
    ```
 
-### Metagegevens bijwerken in AEM controleren
+### Update van metagegevens in AEM controleren
 
 Controleer of de metagegevens zijn bijgewerkt door u aan te melden bij de AEM as a Cloud Service-omgeving (zorg ervoor dat dezelfde host die is doorgegeven aan de opdrachtregelparameter `aem` wordt benaderd).
 

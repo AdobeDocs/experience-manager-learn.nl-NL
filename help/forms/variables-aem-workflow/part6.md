@@ -1,7 +1,7 @@
 ---
-title: Variabelen registreren in AEM workflow[Deel6]
-description: De waarde van AEM workflowvariabelen vastleggen
-version: 6.5
+title: Variabelen registreren in AEM Workflow[Deel6]
+description: De waarde van AEM-workflowvariabelen vastleggen
+version: Experience Manager 6.5
 topic: Development
 feature: Adaptive Forms, Workflow
 role: Developer
@@ -9,16 +9,16 @@ level: Beginner
 jira: KT-13783
 exl-id: 6afb3a52-9879-4393-8efd-ec3e5c303063
 duration: 84
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%
 
 ---
 
-# Log de waarde van de variabelen in AEM workflow
+# Log de waarde variables in AEM Workflow
 
-Het registreren van de waarde van variabelen is een gemeenschappelijke praktijk in softwareontwikkeling. Het helpt ontwikkelaars om te volgen en te begrijpen hoe een AEM werkschema uitvoert, kwesties diagnostiseren en de stroom van de gegevens binnen een AEM werkschema controleren.
+Het registreren van de waarde van variabelen is een gemeenschappelijke praktijk in softwareontwikkeling. Ontwikkelaars kunnen zo bijhouden en begrijpen hoe een AEM-workflow wordt uitgevoerd, problemen vaststellen en de gegevensstroom in een AEM-workflow controleren.
 
 
 
@@ -175,9 +175,9 @@ public class LogWorkflowVariables implements WorkflowProcess {
 
 >[!NOTE]
 >
->De documenten worden opgeslagen in de hoofdmap van de AEM serverinstallatie.
+>De documenten worden opgeslagen in de hoofdmap van de AEM-serverinstallatie.
 
 ## De voorbeeldbundel implementeren
 
 [ stel de veranderlijke logboekbundel ](assets/VariableLogger.core-1.0.0-SNAPSHOT.jar) op gebruikend de het Webconsole van Felix.
-Koppel deze bundel aan een processtap in uw AEM workflow om de waarde van de variabele String en Document te registreren.
+Koppel deze bundel aan een processtap in uw AEM-workflow om de waarde van de variabele String en Document te registreren.

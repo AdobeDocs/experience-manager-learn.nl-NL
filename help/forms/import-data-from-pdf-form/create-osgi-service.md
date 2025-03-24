@@ -2,14 +2,14 @@
 title: OSGi-service maken om gegevens uit een PDF-formulier te exporteren
 description: De gegevens vanuit een PDF-formulier exporteren met FormsService API
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 jira: KT-14196
 exl-id: c3032669-154c-4565-af6e-32d94e975e37
 duration: 52
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Gegevens exporteren
 
-De eerste stap om een adaptief formulier te vullen vanuit een PDF-bestand is het exporteren van de gegevens uit het opgegeven PDF-bestand en het opslaan in de AEM opslagplaats.
+De eerste stap voor het invullen van een adaptief formulier uit een PDF-bestand is het exporteren van de gegevens uit het opgegeven PDF-bestand en het opslaan in de AEM-opslagplaats.
 
 De volgende code is geschreven om de gegevens uit de geüploade pdf te extraheren en om de juiste indeling te krijgen dan kan worden gebruikt om het adaptieve formulier te vullen.
 

@@ -1,12 +1,12 @@
 ---
-user-guide-title: Adobe Experience Manager Managed Services Tutorials
+user-guide-title: Zelfstudies voor Adobe Experience Manager Managed Services
 user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manager Managed Services.
-breadcrumb-title: Managed Services-Tutorials AEM
+breadcrumb-title: Zelfstudies voor AEM Managed Services
 sub-product: Experience Manager
-version: 6.5
+version: Experience Manager 6.5
 feature: Dispatcher
 team: TM
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 0%

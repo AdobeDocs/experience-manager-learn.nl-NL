@@ -3,11 +3,11 @@ title: Transformaties met AEM Forms
 description: Deel 3 van een zelfstudie waarin Acroforms worden geïntegreerd met AEM Forms. Test de workflow en het adaptieve formulier op uw systeem.
 feature: adaptive-forms
 doc-type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 45
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 1%
@@ -32,10 +32,10 @@ Dit pakket bevat de voorbeeldworkflow en de HTML-pagina waarmee u het schema kun
 
 1. Maak een adaptief formulier met het schema dat u in de vorige stap hebt gemaakt.
 2. Sleep een aantal schemaelementen naar het adaptieve formulier.
-3. Configureer de verzendactie van het adaptieve formulier voor verzending naar AEM workflow (MergeAcroformData).
+3. Configureer de verzendactie van het adaptieve formulier voor verzending naar de AEM-workflow (MergeAcroformData).
 4. **zorg ervoor u de het dossierweg van Gegevens als &quot;Data.xml&quot;specificeert. Dit is zeer belangrijk aangezien de steekproefcode naar een dossier genoemd Data.xml in het werkschemalading zoekt.**
 5. Geef een voorbeeld van een adaptief formulier weer en vul het formulier in en verzend het.
-6. U moet PDF zien met de samengevoegde gegevens die zijn opgeslagen in de map die is opgegeven in stap 4 onder de configuratieworkflow
+6. PDF wordt weergegeven met de gegevens die zijn samengevoegd en die zijn opgeslagen in de map die is opgegeven in stap 4 onder de configuratieworkflow
 
 >[!NOTE]
 >

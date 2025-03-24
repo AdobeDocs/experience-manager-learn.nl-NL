@@ -1,7 +1,7 @@
 ---
 title: Aan de slag met AEM Sites - Project Archetype
-description: Aan de slag met AEM Sites - Project Archetype. De WKND-zelfstudie is een meerdelige zelfstudie die is ontworpen voor ontwikkelaars die nog geen ervaring hebben met Adobe Experience Manager. De zelfstudie doorloopt de implementatie van een AEM site voor een fictieve levensstijl, de WKND. De zelfstudie behandelt fundamentele onderwerpen zoals projectopstelling, gemaakte archetypes, de Componenten van de Kern, Bewerkbare Malplaatjes, cliëntbibliotheken, en componentenontwikkeling.
-version: 6.5, Cloud Service
+description: Aan de slag met AEM Sites - Project Archetype. De WKND-zelfstudie is een meerdelige zelfstudie die is ontworpen voor ontwikkelaars die nog geen ervaring hebben met Adobe Experience Manager. De zelfstudie doorloopt de implementatie van een AEM-site voor een fictieve levensstijl, de WKND. De zelfstudie behandelt fundamentele onderwerpen zoals projectopstelling, gemaakte archetypes, de Componenten van de Kern, Bewerkbare Malplaatjes, cliëntbibliotheken, en componentenontwikkeling.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
 topic: Content Management, Development
 role: Developer
@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
 recommendations: disable
 duration: 74
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 {{edge-delivery-services-and-page-editor}}
 
-Welkom bij een meerdelige zelfstudie die is ontworpen voor nieuwe ontwikkelaars in Adobe Experience Manager (AEM). In deze zelfstudie wordt de implementatie besproken van een AEM site voor een fictieve levensstijl, de WKND.
+Welkom bij een meerdelige zelfstudie die is ontworpen voor nieuwe ontwikkelaars in Adobe Experience Manager (AEM). In deze zelfstudie wordt de implementatie besproken van een AEM-site voor een fictieve levensstijl, de WKND.
 
-Dit leerprogramma begint door [ AEM Archetype van het Project te gebruiken ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) om een nieuw project te produceren.
+Dit leerprogramma begint door het [ Archetype van het Project van AEM te gebruiken ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) om een nieuw project te produceren.
 
 Het leerprogramma wordt ontworpen om met **AEM as a Cloud Service** te werken en is achterwaarts compatibel met **AEM 6.5.14+**. De site wordt geïmplementeerd met:
 
-* [ Gemaakt AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [ Gemaakt AEM Project Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html)
 * [ Sling Models ](https://sling.apache.org/documentation/bundles/models.html)
@@ -53,7 +53,7 @@ Het volgende moet lokaal worden geïnstalleerd:
 * [ npm 6+ ](https://www.npmjs.com/)
 * [ Git ](https://git-scm.com/)
 * [ Code van Visual Studio ](https://code.visualstudio.com/) of gelijkwaardige winde
-   * [ VSCode AEM Synchronisatie ](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) - Hulpmiddel dat door leerprogramma wordt gebruikt
+   * [ Sync van VSCode AEM ](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) - Hulpmiddel dat door leerprogramma wordt gebruikt
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Het volgende moet lokaal worden geïnstalleerd:
 
 ## GitHub {#github}
 
-De code van dit leerprogramma kan op GitHub in het AEM antwoord van de Gids worden gevonden:
+De code van dit leerprogramma kan op GitHub in het antwoord van de Gids van AEM worden gevonden:
 
 **[GitHub: Het Project van Plaatsen van WKND ](https://github.com/adobe/aem-guides-wknd)**
 
@@ -71,4 +71,4 @@ Bovendien heeft elk deel van het leerprogramma zijn eigen tak in GitHub. Een geb
 
 ## Volgende stappen {#next-steps}
 
-Waar wacht u op? Begin het leerprogramma door aan het [ hoofdstuk van de Opstelling van het Project ](project-setup.md) te navigeren en te leren hoe te om een nieuw project van Adobe Experience Manager te produceren gebruikend het Archetype van het Project van de AEM.
+Waar wacht u op? Begin het leerprogramma door aan het [ hoofdstuk van de Opstelling van het Project ](project-setup.md) te navigeren en te leren hoe te om een nieuw project van Adobe Experience Manager te produceren gebruikend het Archetype van het Project van AEM.

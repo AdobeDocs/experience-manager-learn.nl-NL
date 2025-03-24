@@ -1,7 +1,7 @@
 ---
-title: Gemeenschappelijke logbestanden voor Dispatcher AEM
+title: AEM Dispatcher Common Logs
 description: Bekijk de gemeenschappelijke logboekingangen van Dispatcher en leer wat zij betekenen en hoe te om hen te richten.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration, Performance
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7fe1b4a5-6813-4ece-b3da-40af575ea0ed
 duration: 229
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 0%
@@ -109,7 +109,7 @@ Fri Jul 20 22:31:15 2018 W pid 3648 Unable to connect socket to 10.43.3.40:4502:
 Fri Jul 20 22:31:15 2018 W pid 3648 Unable to connect to any backend in farm authorfarm
 ```
 
-Dit komt voor wanneer u het verkeerde IP adres hebt dat in de renderensectie van uw landbouwbedrijf wordt gevormd. Die of AEM instantie reageerde of luisterde niet meer en de Dispatcher kan het niet bereiken.
+Dit komt voor wanneer u het verkeerde IP adres hebt dat in de renderensectie van uw landbouwbedrijf wordt gevormd. Dat of de AEM-instantie reageerde of luisterde niet meer en de Dispatcher kan het niet bereiken.
 
 Controleer uw firewallregels en of de AEM-instantie actief en gezond is.
 
@@ -120,7 +120,7 @@ Fri Jul 20 22:32:42 2018 I pid 3648 "GET /favicon.ico" 502 - 54034ms authorfarm/
 Fri Jul 20 22:35:45 2018 I pid 3648 "GET /favicon.ico" 503 - 54234ms authorfarm/-
 ```
 
-Dit betekent dat de AEM instantie een open socket had die het met de reactie kon bereiken en er een time-out voor kon maken. Dit betekent uw AEM instantie te langzaam of ongezond was en Dispatcher bereikte het gevormde onderbrekingsmontages in teruggeeft sectie van het landbouwbedrijf. Verhoog de time-outinstelling of zorg dat de AEM gezond is.
+Dit betekent dat de AEM-instantie een open socket had die het met de reactie kon bereiken en er een time-out voor kon maken. Dit betekent dat uw AEM-instantie te langzaam of ongezond was en Dispatcher de geconfigureerde time-outinstellingen in de rendersectie van het farm heeft bereikt. Verhoog de time-outinstelling of zorg dat uw AEM-instantie gezond is.
 
 ## Cacheniveau
 
@@ -167,9 +167,9 @@ Thu Sep 27 17:35:11 2018 D pid 18936 Vanity URL file (/tmp/vanity_urls) not foun
 Thu Sep 27 17:35:11 2018 W pid 18936 Unable to fetch vanity URLs from 10.43.0.42:4503/libs/granite/dispatcher/content/vanityUrls.html: remote server returned: HTTP/1.1 404 Not Found
 ```
 
-Deze fout komt voor wanneer u uw Dispatcher hebt gevormd om dynamisch auto-filter te gebruiken staat vanity URLs toe, maar voltooit niet de opstelling door het pakket op AEM renderer te installeren.
+Deze fout treedt op wanneer u de Dispatcher zodanig hebt geconfigureerd dat deze gebruikmaakt van de dynamische URL&#39;s met automatische filters. De installatie is echter nog niet voltooid door het pakket op de AEM-renderer te installeren.
 
-Om dit te bevestigen, installeer gelieve het eigenschappak van de ijdelheid url op de AEM instantie en het toe te staan om door de anonieme gebruiker klaar te zijn. Details [ hier ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
+Als u dit wilt verhelpen, installeert u het URL-functiepakket voor ijdelheid op de AEM-instantie en laat u deze klaar zijn voor de anonieme gebruiker. Details [ hier ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
 
 Een werkende vanity URL opstelling kijkt als dit:
 
@@ -201,6 +201,6 @@ Voorbeeldlogbestandvermelding:
 Tue Nov 26 16:41:34 2019 I pid 9208 (tid 140112092391168) "GET /content/we-retail/us/en.html" - + 24034ms publishfarm/0
 ```
 
-De pagina is opgehaald via de http-methode van de GET voor de inhoud `/content/we-retail/us/en.html` en het duurde 24034 milliseconden. Het deel waar we aandacht aan wilden besteden is helemaal aan het eind `publishfarm/0` . U zult zien dat het doelt en `publishfarm` aanpast. Het verzoek werd opgehaald van render 0. Dit betekende dat deze pagina moest worden opgevraagd van AEM toen caching. Nu vragen wij deze pagina opnieuw en zien wat met het logboek gebeurt.
+De pagina is opgehaald via de GET http-methode voor de inhoud `/content/we-retail/us/en.html` en het duurde 24034 milliseconden. Het deel waar we aandacht aan wilden besteden is helemaal aan het eind `publishfarm/0` . U zult zien dat het doelt en `publishfarm` aanpast. Het verzoek werd opgehaald van render 0. Dit betekende dat deze pagina moest worden opgevraagd bij AEM en vervolgens in cache moest worden geplaatst. Nu vragen wij deze pagina opnieuw en zien wat met het logboek gebeurt.
 
 [Volgende -> Alleen-lezen bestanden](./immutable-files.md)

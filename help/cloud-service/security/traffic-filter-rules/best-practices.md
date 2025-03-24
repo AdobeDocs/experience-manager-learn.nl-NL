@@ -1,7 +1,7 @@
 ---
 title: Aanbevolen werkwijzen voor verkeersfilterregels, inclusief WAF-regels
 description: Leer geadviseerde beste praktijken voor de regels van de Filter van het Verkeer met inbegrip van de regels van WAF.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
 role: Admin, Architect
@@ -12,14 +12,14 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
 duration: 170
-source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
 
 ---
 
-# Beste praktijken voor de regels van het verkeersfilter met inbegrip van de regels van WAF
+# Aanbevolen werkwijzen voor verkeersfilterregels, inclusief WAF-regels
 
 Leer geadviseerde beste praktijken voor de regels van de verkeersfilter, met inbegrip van de regels van WAF. Het is belangrijk om op te merken dat de beste praktijken die in dit artikel worden beschreven niet uitputtend zijn en niet bedoeld zijn om uw eigen veiligheidsbeleid en procedures te vervangen.
 
@@ -38,7 +38,7 @@ Leer geadviseerde beste praktijken voor de regels van de verkeersfilter, met inb
 
 ## Beste werkwijzen voor verkeersfilterregels
 
-Laat de hieronder regels van de verkeersfilter voor uw AEM project toe. De gewenste waarden voor de eigenschappen `rateLimit` en `clientCountry` moeten echter worden bepaald in samenwerking met uw beveiligingsteam.
+Schakel de onderstaande regels voor verkeersfilters in voor uw AEM-project. De gewenste waarden voor de eigenschappen `rateLimit` en `clientCountry` moeten echter worden bepaald in samenwerking met uw beveiligingsteam.
 
 ```yaml
 kind: CDN
@@ -91,9 +91,9 @@ data:
 
 ## Aanbevolen procedures voor WAF-regels
 
-Zodra WAF vergunning en toegelaten voor uw programma wordt gegeven, verschijnen de vlaggen van WAF van het verkeer passende in grafieken en verzoeklogboeken, zelfs als u hen niet in een regel verklaarde. Zo, bent u zich altijd bewust van potentieel nieuw kwaadwillig verkeer en kan regels tot stand brengen zoals nodig. Bekijk de vlaggen van WAF die niet in de verklaarde regels worden weerspiegeld en denk na verklarend hen.
+Zodra de WAF vergunning en toegelaten voor uw programma is, verkeer die de vlaggen van WAF aanpassen verschijnen in grafieken en verzoeklogboeken, zelfs als u hen niet in een regel verklaarde. Zo, bent u zich altijd bewust van potentieel nieuw kwaadwillig verkeer en kan regels tot stand brengen zoals nodig. Kijk naar WAF-vlaggen die niet worden weerspiegeld in de gedeclareerde regels en denk eraan ze te declareren.
 
-Overweeg de WAF regels hieronder voor uw AEM project. De gewenste waarden voor de eigenschappen `action` en `wafFlags` moeten echter worden bepaald in samenwerking met uw beveiligingsteam.
+Houd rekening met de onderstaande WAF-regels voor uw AEM-project. De gewenste waarden voor de eigenschappen `action` en `wafFlags` moeten echter worden bepaald in samenwerking met uw beveiligingsteam.
 
 ```yaml
 kind: CDN

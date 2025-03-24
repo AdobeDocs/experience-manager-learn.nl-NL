@@ -1,7 +1,7 @@
 ---
 title: Gereedschap voor CDN-loganalyse
-description: Leer over de Tooling van de Analyse van het Logboek van AEM Cloud Service CDN die de Adobe verstrekt en hoe het helpt om inzicht in zowel uw prestaties CDN als AEM implementatie te krijgen.
-version: Cloud Service
+description: Meer informatie over de CDN-logboekanalyse van de AEM Cloud Service die Adobe biedt en over de manier waarop u inzicht krijgt in zowel de CDN-prestaties als de AEM-implementatie.
+version: Experience Manager as a Cloud Service
 feature: Developer Tools
 topic: Development
 role: Developer, Architect, Admin
@@ -12,7 +12,7 @@ last-substantial-update: 2024-05-17T00:00:00Z
 jira: KT-15505
 thumbnail: KT-15505.jpeg
 exl-id: 830c2486-099b-454f-bc07-6bf36e81ac8d
-source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -21,8 +21,8 @@ ht-degree: 0%
 
 # Gereedschap voor CDN-loganalyse
 
-Leer over de _Tooling van de Analyse van het Logboek van AEM Cloud Service CDN_ die de Adobe verstrekt en hoe het helpt om inzichten in zowel uw CDN prestaties als AEM implementatie te krijgen.
- 
+Leer over de _Tooling van de Analyse van het Logboek van de Dienst CDN van de Wolk AEM Cloud die Adobe verstrekt en hoe het helpt om inzicht in zowel uw CDN prestaties als implementatie van AEM te krijgen.
+ _
 >[!VIDEO](https://video.tv.adobe.com/v/3429177?quality=12&learn=on)
 
 ## Overzicht
@@ -42,7 +42,7 @@ Met dit gereedschap kunt u real-time controle en proactieve probleemdetectie uit
 
 ## Overzicht van dashboard
 
-Om de logboekanalyse snel te beginnen, verstrekt de Adobe pre-gebouwde dashboards voor zowel Splunk als de stapel van ELK.
+Om de logboekanalyse snel te beginnen, verstrekt Adobe prebuilt dashboards voor zowel Splunk als stapel ELK.
 
 - **CDN de Verhouding van het Actief van het Geheime voorgeheugen CDN**: verstrekt inzichten in de totale verhouding van de geheim voorgeheugenslag en het totale aantal verzoeken door HIT, PASS, en status MISS. Het verstrekt ook hoogste HIT, PASS, en MISS URLs.
 
@@ -52,13 +52,13 @@ Om de logboekanalyse snel te beginnen, verstrekt de Adobe pre-gebouwde dashboard
 
   ![ Dashboard van het Verkeer CDN ](assets/Traffic-dashboard.png)
 
-- **het Dashboard van WAF**: verstrekt inzichten via geanalyseerde, gemarkeerde, en geblokkeerde verzoeken. Het verstrekt ook hoogste aanvallen door identiteitskaart van de Vlag van WAF, hoogste 100 aanvallers door cliëntIP, land, en gebruikersagent en meer inzichten om de configuraties van WAF te optimaliseren.
+- **WAF Dashboard**: verstrekt inzichten via geanalyseerde, gemarkeerde, en geblokkeerde verzoeken. Het verstrekt ook hoogste aanvallen door identiteitskaart van de Vlag van WAF, hoogste 100 aanvallers door cliënt IP, land, en gebruikersagent en meer inzichten om de configuraties van WAF te optimaliseren.
 
-  ![ Dashboard van WAF ](assets/WAF-Dashboard.png)
+  ![ WAF Dashboard ](assets/WAF-Dashboard.png)
 
 ## Splunk-integratie
 
-Voor organisaties die [ Splunk ](https://www.splunk.com/en_us/products/observability-cloud.html) leveraging en die het logboek van AEMCS door:sturen aan hun instanties van de Splunk hebben toegelaten kunnen prebuilt dashboards snel invoeren. Deze opstelling vergemakkelijkt versnelde logboekanalyse, die actionable inzichten verstrekt om AEM implementaties te optimaliseren en veiligheidsbedreigingen zoals DOS aanvallen te verlichten.
+Voor organisaties die [ Splunk ](https://www.splunk.com/en_us/products/observability-cloud.html) leveraging en die het logboek van AEMCS door:sturen aan hun instanties van de Splunk hebben toegelaten kunnen prebuilt dashboards snel invoeren. Deze opstelling vergemakkelijkt versnelde logboekanalyse, die actionable inzichten verstrekt om de implementaties van AEM te optimaliseren en veiligheidsbedreigingen zoals DOS aanvallen te verlichten.
 
 U kunt begonnen worden gebruikend [ Splunk dashboards voor de Analyse van het Logboek AEMCS CDN ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis) gids.
 

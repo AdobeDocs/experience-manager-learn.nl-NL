@@ -1,7 +1,7 @@
 ---
-title: Het dashboard Systeemoverzicht in AEM gebruiken
-description: In vorige versies van AEM beheerders moesten verschillende locaties bekijken om een volledig beeld van de AEM te krijgen. Het overzicht van het Systeem streeft ernaar dit op te lossen door een mening op hoog niveau van de configuratie, de hardware, en de gezondheid van de AEM instantie allen van één enkel dashboard te verstrekken.
-version: 6.4, 6.5
+title: Het systeemoverzichtdashboard in AEM gebruiken
+description: In eerdere versies van AEM moesten beheerders naar verschillende locaties kijken om een volledig beeld te krijgen van het AEM-exemplaar. Het overzicht van het Systeem streeft ernaar dit op te lossen door een mening op hoog niveau van de configuratie, de hardware, en de gezondheid van de instantie van AEM allen van één enkel dashboard te verstrekken.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Operations
 doc-type: Technical Video
 topic: Administration
@@ -9,7 +9,7 @@ role: Admin
 level: Beginner
 exl-id: af8f499c-4955-44b5-8f21-085263ca31a3
 duration: 357
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 0%
@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Het dashboard Systeemoverzicht gebruiken
 
-Adobe Experience Manager (AEM) [!UICONTROL System Overview] biedt een weergave op hoog niveau van de configuratie, hardware en status van de AEM-instantie vanuit één dashboard.
+Adobe Experience Manager (AEM) [!UICONTROL System Overview] biedt vanaf één dashboard een weergave op hoog niveau van de configuratie, hardware en status van de AEM-instantie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
 
-1. Het systeemoverzicht kan worden betreden van: **AEM Start** > **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL System Overview]**
+1. Het Overzicht van het Systeem kan van worden betreden: **Start AEM** > **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL System Overview]**
 
    Direct bij **`<server-host>/libs/granite/operations/content/systemoverview.html`**
 

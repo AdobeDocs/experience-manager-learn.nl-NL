@@ -1,14 +1,14 @@
 ---
 title: Sling-modellen parametereren op basis van HTML
-description: Leer hoe u parameters van HTML aan een Sling Model in AEM kunt doorgeven.
-version: Cloud Service
+description: Leer hoe u parameters kunt doorgeven van HTML naar een Sling-model in AEM.
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Sling Model
 role: Developer
 jira: KT-15923
 level: Intermediate, Experienced
 exl-id: 5d852617-720a-4a00-aecd-26d0ab77d9b3
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Sling-modellen parametereren op basis van HTML
 
-Adobe Experience Manager (AEM) biedt een robuust raamwerk voor het bouwen van dynamische en aanpasbare webtoepassingen. Een van de krachtige functies is de mogelijkheid om de parameters van Sling Models te bepalen, waardoor de flexibiliteit en herbruikbaarheid van deze modellen worden verbeterd. Deze zelfstudie begeleidt u bij het maken van een geparametriseerd Sling Model en het gebruik ervan in HTML (Sjabloontaal HTML) voor het renderen van dynamische inhoud.
+Adobe Experience Manager (AEM) biedt een robuust raamwerk voor het bouwen van dynamische en aanpasbare webtoepassingen. Een van de krachtige functies is de mogelijkheid om de parameters van Sling Models te bepalen, waardoor de flexibiliteit en herbruikbaarheid van deze modellen worden verbeterd. Deze zelfstudie begeleidt u bij het maken van een geparametriseerd Sling-model en het gebruik ervan in HTML (HTML Template Language) voor het renderen van dynamische inhoud.
 
 ## HTML-script
 
@@ -126,4 +126,4 @@ Met de parameters `"Hello"` en `"World"` genereert het HTML-script de volgende u
 </p>
 ```
 
-Dit toont aan hoe geparameterized het Verzamelen Modellen in AEM kunnen worden beïnvloed gebaseerd op inputparameters die via HTML worden verstrekt.
+Dit toont aan hoe geparameterized Verzamelmodellen in AEM kunnen worden beïnvloed gebaseerd op inputparameters die via HTML worden verstrekt.

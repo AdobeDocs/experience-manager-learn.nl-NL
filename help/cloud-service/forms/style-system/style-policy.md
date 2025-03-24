@@ -5,12 +5,13 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
-source-git-commit: 86d282b426402c9ad6be84e9db92598d0dc54f85
+exl-id: 52205a93-d03c-430c-a707-b351ab333939
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 # De stijl definiëren in het beleid voor de component
 
-* Meld u aan bij uw lokale, voor de cloud geschikte AEM en ga naar Tools | Algemeen | Sjablonen | uw projectnaam.
+* Meld u aan bij uw lokale AEM-exemplaar voor cloud en navigeer naar Tools | Algemeen | Sjablonen | uw projectnaam.
 
 * Selecteer en open **Leeg met het malplaatje van de Componenten van de Kern** op geef wijze uit.
 * Klik op het beleidspictogram van de knoopcomponent om de beleidsredacteur te openen.

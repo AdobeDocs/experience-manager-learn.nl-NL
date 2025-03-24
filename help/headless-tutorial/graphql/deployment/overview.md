@@ -1,7 +1,7 @@
 ---
-title: Implementaties zonder kop AEM
+title: AEM Headless-implementaties
 description: Meer informatie over de verschillende implementatieoverwegingen voor AEM Headless-apps.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
@@ -11,32 +11,32 @@ thumbnail: kt-10794.jpg
 last-substantial-update: 2022-08-26T00:00:00Z
 exl-id: 6de58ca0-9444-4272-9487-15a9e3c89231
 duration: 59
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
-# Implementaties zonder kop AEM
+# AEM Headless-implementaties
 
-AEM Clientimplementaties zonder koptelefoon hebben vele vormen: SPA, externe SPA, websites, mobiele apps of zelfs server-naar-server processen die door AEM worden gehost.
+AEM Headless-clientimplementaties hebben vele vormen: door AEM gehoste SPA, externe SPA, website, mobiele app of zelfs server-naar-server proces.
 
-Afhankelijk van de client en hoe deze wordt geïmplementeerd, hebben AEM headless-implementaties verschillende overwegingen.
+Afhankelijk van de client en de manier waarop deze wordt geïmplementeerd, hebben AEM Headless-implementaties verschillende overwegingen.
 
-## AEM
+## AEM-servicesarchitectuur
 
-Alvorens plaatsingsoverwegingen te onderzoeken, is het noodzakelijk om AEM AEM as a Cloud Service logische architectuur, en de scheiding en de rollen van de de dienstrijen van te begrijpen. AEM as a Cloud Service bestaat uit twee logische services:
+Alvorens plaatsingsoverwegingen te onderzoeken, is het noodzakelijk om de logische architectuur van AEM, en de scheiding en de rollen van de de dienstrijen van AEM as a Cloud Service te begrijpen. AEM as a Cloud Service bestaat uit twee logische services:
 
-+ __AEM de Auteur__ is de dienst waar de teams creeren, samenwerken, en de Fragmenten van de Inhoud (en andere activa) publiceren.
-+ __AEM Publish__ is de dienst die de gepubliceerde Fragmenten van de Inhoud (en andere activa) voor algemeen gebruik worden herhaald.
-+ __AEM de Voorproef__ is de dienst die Publish in gedrag nabootst, maar inhoud heeft die aan het voor voorproef of overzichtsdoeleinden wordt gepubliceerd. AEM Voorvertoning is bedoeld voor intern publiek en niet voor de algemene levering van inhoud. Het gebruik van AEM voorvertoning is optioneel op basis van de gewenste workflow.
++ __de Auteur van AEM__ is de dienst waar de teams creeren, samenwerken, en de Fragmenten van de Inhoud (en andere activa) publiceren.
++ __AEM publiceert__ is de dienst die de gepubliceerde Fragmenten van de Inhoud (en andere activa) voor algemene consumptie worden herhaald.
++ __de Voorproef van AEM__ is de dienst die AEM in gedrag mimiteert, maar inhoud heeft die aan het voor voorproef of overzichtsdoeleinden wordt gepubliceerd. AEM Preview is bedoeld voor intern publiek en niet voor de algemene levering van inhoud. Het gebruik van AEM Preview is optioneel op basis van de gewenste workflow.
 
-![ AEM de dienstarchitectuur ](./assets/overview/aem-service-architecture.png)
+![ de dienstarchitectuur van AEM ](./assets/overview/aem-service-architecture.png)
 
 Typische AEM as a Cloud Service-implementatie zonder kop_
 
-AEM Koploze klanten die in een productiecapaciteit werken, werken doorgaans samen met AEM Publish, dat de goedgekeurde, gepubliceerde inhoud bevat. Clients die met AEM auteur werken, moeten speciale aandacht besteden, aangezien AEM auteur standaard veilig is en toestemming voor alle aanvragen vereist, en kunnen ook werk in uitvoering of niet-goedgekeurde inhoud bevatten.
+AEM Headless-clients die in een productiecapaciteit werken, communiceren doorgaans met AEM Publish, dat de goedgekeurde, gepubliceerde inhoud bevat. Clients die met AEM Author communiceren, moeten speciale aandacht besteden, aangezien de AEM Author standaard veilig is, waarbij toestemming voor alle aanvragen vereist is, en kunnen ook werk in uitvoering of niet-goedgekeurde inhoud bevatten.
 
 ## Hoofdloze clientimplementaties
 
@@ -46,15 +46,15 @@ AEM Koploze klanten die in een productiecapaciteit werken, werken doorgaans same
        <div class="card">
            <div class="card-image">
                <figure class="image is-16by9">
-                   <a href="./spa.md" title="App van één pagina (SPA)" tabindex="-1">
+                   <a href="./spa.md" title="Single-page App (SPA)" tabindex="-1">
                        <img class="is-bordered-r-small" src="./assets/spa/spa-card.png" alt="Apps van één pagina (SPA)">
                    </a>
                </figure>
            </div>
            <div class="card-content is-padded-small">
                <div class="content">
-                   <p class="headline is-size-6 has-text-weight-bold"><a href="./spa.md" title="App van één pagina (SPA)">App van één pagina (SPA)</a></p>
-                   <p class="is-size-6">Meer informatie over implementatieoverwegingen voor apps van één pagina (SPA).</p>
+                   <p class="headline is-size-6 has-text-weight-bold"><a href="./spa.md" title="Single-page App (SPA)">App van één pagina (SPA)</a></p>
+                   <p class="is-size-6">Leer over plaatsingsoverwegingen voor enig-pagina apps (SPA).</p>
                    <a href="./spa.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leren </span>
                    </a>

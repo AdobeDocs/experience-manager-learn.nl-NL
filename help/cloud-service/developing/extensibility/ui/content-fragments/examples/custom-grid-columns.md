@@ -2,7 +2,7 @@
 title: Kolommen met het aangepaste raster in de inhoudsfragmentconsole
 description: Leer hoe u een aangepaste rasterkolom kunt toevoegen aan de Content Fragment Console.
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-07T00:00:00Z
 exl-id: 87143cf9-e932-4ad6-afe2-cce093c520f4
 duration: 198
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -29,7 +29,7 @@ U kunt aangepaste rasterkolommen toevoegen aan de Content Fragment Console met h
 
 In dit voorbeeld wordt het uitbreidingspunt `contentFragmentGrid` uitgebreid om een aangepaste kolom toe te voegen aan de Content Fragment Console.
 
-| AEM UI uitgebreid | Extensiepunt |
+| AEM-gebruikersinterface uitgebreid | Extensiepunt |
 | ------------------------ | --------------------- | 
 | [ de Console van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [ Kolommen van het Net ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/) |
 
@@ -43,9 +43,9 @@ Dit voorbeeld gebruikt de [ ](https://moment.github.io/luxon/) bibliotheek van d
 
 ### Registratie van extensies
 
-`ExtensionRegistration.js` , toegewezen aan de route index.html, is het ingangspunt voor de AEM uitbreiding en bepaalt:
+`ExtensionRegistration.js` , toegewezen aan de route index.html, is het ingangspunt voor de uitbreiding van AEM en bepaalt:
 
-+ De locatie van de extensie injecteert zichzelf (`contentFragmentGrid`) in de AEM ontwerpervaring
++ De locatie van de extensie injecteert zichzelf (`contentFragmentGrid`) in de AEM-ontwerpervaring
 + De definitie van de aangepaste kolom in de functie `getColumns()`
 + De waarden voor elke aangepaste kolom, op rij
 
@@ -204,13 +204,13 @@ Voorbeeld van een JSON-inhoudsfragment dat beschikbaar is als element van de par
 }
 ```
 
-Als andere gegevens nodig zijn om de aangepaste kolom te vullen, kunnen HTTP-aanvragen worden ingediend bij AEM auteur om de gegevens op te halen.
+Als er andere gegevens nodig zijn om de aangepaste kolom te vullen, kunnen HTTP-aanvragen worden ingediend bij AEM Author om de gegevens op te halen.
 
 >[!IMPORTANT]
 >
-> Zorg ervoor dat de AEM instantie van de Auteur wordt gevormd om [ dwars-oorsprong verzoeken ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) van de oorsprong toe te staan app AppBuilder loopt. Tot de toegestane oorsprong behoren `https://localhost:9080`, de oorsprong van het werkgebied van AppBuilder en de oorsprong van de AppBuilder-productie.
+> Zorg ervoor dat de instantie van de Auteur van AEM wordt gevormd om [ verzoeken van de dwars-oorsprong ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) van de oorsprong toe te staan app AppBuilder loopt. Tot de toegestane oorsprong behoren `https://localhost:9080`, de oorsprong van het werkgebied van AppBuilder en de oorsprong van de AppBuilder-productie.
 >
-> Alternatief, kan de uitbreiding een actie van douane [ AppBuilder ](../../runtime-action.md) roepen die het verzoek om Auteur namens de uitbreiding AEM.
+> Alternatief, kan de uitbreiding een actie van douane [ AppBuilder ](../../runtime-action.md) roepen die het verzoek aan de Auteur van AEM namens de uitbreiding doet.
 
 
 ```javascript

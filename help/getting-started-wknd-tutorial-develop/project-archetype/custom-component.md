@@ -1,7 +1,7 @@
 ---
 title: Aangepaste component
 description: Omvat de verwezenlijking van begin tot eind van een component van de douanebylijn die authored inhoud toont. Omvat het ontwikkelen van een het Verschuiven Model om bedrijfslogica in te kapselen om de bylinecomponent en overeenkomstige HTML te bevolken om de component terug te geven.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Core Components, APIs
 topic: Content Management, Development
 role: Developer
@@ -12,7 +12,7 @@ thumbnail: 30181.jpg
 doc-type: Tutorial
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
 duration: 1039
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '3869'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Aangepaste component {#custom-component}
 
-Deze zelfstudie behandelt het maken van begin tot eind van een aangepaste `Byline` AEM Component die inhoud toont die in een Dialoog wordt geschreven, en verkent het ontwikkelen van een Sling Model om bedrijfslogica in te kapselen die HTML van de component bevolkt.
+In deze zelfstudie wordt uitgelegd hoe u een aangepaste `Byline` AEM-component maakt die inhoud weergeeft die is geschreven in een dialoogvenster, en wordt uitgelegd hoe u een Sling-model ontwikkelt om bedrijfslogica in te kapselen die de HTML van de component vult.
 
 ## Vereisten {#prerequisites}
 
@@ -42,7 +42,7 @@ Bekijk de basislijncode waarop de zelfstudie is gebaseerd:
    $ git checkout tutorial/custom-component-start
    ```
 
-1. Stel codebasis aan een lokale AEM instantie op gebruikend uw Maven vaardigheden:
+1. Stel codebasis aan een lokale instantie van AEM op gebruikend uw Maven vaardigheden:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -60,7 +60,7 @@ U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-w
 
 ## Doelstelling
 
-1. Begrijp hoe te om een douane AEM component te bouwen
+1. Begrijp hoe u een aangepaste AEM-component maakt
 1. Leer om bedrijfslogica met het Verkopen Modellen in te kapselen
 1. Begrijp hoe te om een het Verdelen Model van binnen een Manuscript van HTML te gebruiken
 
@@ -82,7 +82,7 @@ De implementatie van de component Byline bevat een dialoogvenster waarin de inho
 
 Maak eerst de knooppuntstructuur van de component Byline en definieer een dialoogvenster. Dit vertegenwoordigt de Component in AEM en bepaalt impliciet het middeltype van de component door zijn plaats in JCR.
 
-In het dialoogvenster wordt de interface weergegeven waarmee auteurs van inhoud de interface kunnen bieden. Voor deze implementatie, wordt de AEM **component van het Beeld van de Kern WCM** gebruikt om het auteursrecht en het teruggeven van het beeld van de Band te behandelen, zodat moet het als 2} worden geplaatst van deze component.`sling:resourceSuperType`
+In het dialoogvenster wordt de interface weergegeven waarmee auteurs van inhoud de interface kunnen bieden. Voor deze implementatie, wordt de component van het Beeld van de Component van de Kern van AEM WCM **** gebruikt om het auteursrecht en het teruggeven van het beeld van de Band te behandelen, zodat moet het als 2} worden geplaatst van deze component.`sling:resourceSuperType`
 
 ### Componentdefinitie maken {#create-component-definition}
 
@@ -284,11 +284,11 @@ Na de zelfde benadering zoals met de verwezenlijking van de Dialoog, creeer een 
 
 1. Synchroniseer de wijzigingen in `ui.apps` met uw IDE of met gebruik van uw Maven vaardigheden.
 
-   ![ Uitvoer naar AEM server byline component ](assets/custom-component/export-byline-component-aem.png)
+   ![ Uitvoer naar de server van AEM byline component ](assets/custom-component/export-byline-component-aem.png)
 
 ## De component aan een pagina toevoegen {#add-the-component-to-a-page}
 
-Om dingen eenvoudig te houden en zich op AEM componentenontwikkeling te concentreren, laten wij de component Byline in zijn huidige staat aan een pagina van het Artikel toevoegen om te verifiëren de `cq:Component` knoopdefinitie correct is. Ook om te verifiëren dat de AEM de nieuwe componentendefinitie en de de dialoogwerken van de component voor creatie erkent.
+Als u de ontwikkeling van AEM-componenten eenvoudig wilt houden en de focus op de ontwikkeling ervan wilt houden, moet u de Byline-component in de huidige toestand toevoegen aan een artikelpagina om te controleren of de nodedefinitie van `cq:Component` correct is. Ook om te controleren of de AEM de definitie van de nieuwe component herkent en of het dialoogvenster van de component werkt voor ontwerpen.
 
 ### Een afbeelding toevoegen aan de AEM Assets
 
@@ -326,9 +326,9 @@ Voeg vervolgens de component Byline toe aan een pagina in AEM. Omdat de componen
 
    ![ bevolkt eigenschappen van byline component ](assets/custom-component/add-properties.png)
 
-   AEM auteurs configureren componenten en schrijven ze samen via de dialoogvensters. Op dit punt, in de ontwikkeling van de component Byline zijn de dialogen inbegrepen voor het verzamelen van de gegevens, nochtans is de logica om de geschreven inhoud terug te geven nog niet toegevoegd. Daarom wordt alleen de tijdelijke aanduiding weergegeven.
+   AEM-auteurs configureren componenten en schrijven ze samen via de dialoogvensters. Op dit punt, in de ontwikkeling van de component Byline zijn de dialogen inbegrepen voor het verzamelen van de gegevens, nochtans is de logica om de geschreven inhoud terug te geven nog niet toegevoegd. Daarom wordt alleen de tijdelijke aanduiding weergegeven.
 
-1. Na het bewaren van de dialoog, navigeer aan [ CRXDE Lite ](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent/root/container/container/byline) en herzie hoe de inhoud van de component op de de inhoudsknoop van de bylinecomponent onder de AEM pagina wordt opgeslagen.
+1. Na het bewaren van de dialoog, navigeer aan [ CRXDE Lite ](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent/root/container/container/byline) en herzie hoe de inhoud van de component op de de inhoudsknoop van de bylinecomponent onder de pagina van AEM wordt opgeslagen.
 
    Zoek het inhoudknooppunt van de component Byline onder de pagina LA Skate Parks, d.w.z. `/content/wknd/us/en/magazine/guide-la-skateparks/jcr:content/root/container/container/byline` .
 
@@ -342,11 +342,11 @@ Voeg vervolgens de component Byline toe aan een pagina in AEM. Omdat de componen
 
 Daarna, creëren wij een het Verdelen Model om als gegevensmodel te handelen en de bedrijfslogica voor de component van de Byline te huisvesten.
 
-Sling-modellen zijn annotatiegestuurde Java™ POJO&#39;s (Plain Old Java™ Objects) die het gemakkelijker maken gegevens van de JCR aan Java™-variabelen toe te wijzen en die efficiëntie bieden bij het ontwikkelen in de AEM context.
+Sling-modellen zijn door annotaties aangedreven Java™ POJO&#39;s (Plain Old Java™ Objects) die het gemakkelijker maken gegevens van de JCR aan Java™-variabelen toe te wijzen en die efficiëntie bieden bij het ontwikkelen in de AEM-context.
 
 ### GeMaven afhankelijkheden controleren {#maven-dependency}
 
-Het Byline Sling-model is gebaseerd op verschillende Java™ API&#39;s van AEM. Deze API&#39;s worden beschikbaar gesteld via de `dependencies` die in het POM-bestand van de module `core` wordt vermeld. Het project dat voor deze zelfstudie wordt gebruikt, is gemaakt voor AEM as a Cloud Service. Nochtans is het uniek aangezien het achterwaarts compatibel met AEM 6.5/6.4 is. Daarom zijn zowel gebiedsdelen voor Cloud Service als AEM 6.x inbegrepen.
+Het Byline Sling-model is gebaseerd op verschillende Java™ API&#39;s van AEM. Deze API&#39;s worden beschikbaar gesteld via de `dependencies` die in het POM-bestand van de module `core` wordt vermeld. Het project dat voor deze zelfstudie wordt gebruikt, is gemaakt voor AEM as a Cloud Service. Het is echter uniek omdat het compatibel is met AEM 6.5/6.4. Daarom zijn zowel afhankelijkheden voor Cloud Service als AEM 6.x opgenomen.
 
 1. Open het bestand `pom.xml` onder `<src>/aem-guides-wknd/core/pom.xml` .
 1. Vind het gebiedsdeel voor `aem-sdk-api` - **slechts AEM as a Cloud Service**
@@ -360,7 +360,7 @@ Het Byline Sling-model is gebaseerd op verschillende Java™ API&#39;s van AEM. 
 
    [ aem-sdk-api ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en) bevat alle openbare Java™ APIs die door AEM worden blootgesteld. `aem-sdk-api` wordt standaard gebruikt bij het bouwen van dit project. De versie blijft behouden in de bovenliggende reactorpom vanaf de basis van het project in `aem-guides-wknd/pom.xml` .
 
-1. Vind de gebiedsdeel voor `uber-jar` - **AEM 6.5/6.4 slechts**
+1. Vind het gebiedsdeel voor `uber-jar` - **AEM 6.5/6.4 slechts**
 
    ```xml
    ...
@@ -372,7 +372,7 @@ Het Byline Sling-model is gebaseerd op verschillende Java™ API&#39;s van AEM. 
    ...
    ```
 
-   `uber-jar` wordt alleen opgenomen wanneer het `classic` -profiel wordt aangeroepen, dat wil zeggen `mvn clean install -PautoInstallSinglePackage -Pclassic` . Nogmaals, dit is uniek voor dit project. In een echt project, dat van het AEM Archieftype van het Project wordt geproduceerd is `uber-jar` het gebrek als de gespecificeerde versie van AEM 6.5 of 6.4 is.
+   `uber-jar` wordt alleen opgenomen wanneer het `classic` -profiel wordt aangeroepen, dat wil zeggen `mvn clean install -PautoInstallSinglePackage -Pclassic` . Nogmaals, dit is uniek voor dit project. In een echt project, dat van het Archetype van het Project van AEM wordt geproduceerd is `uber-jar` het gebrek als de gespecificeerde versie van AEM 6.5 of 6.4 is.
 
    [ uber-jar ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) bevat alle openbare Java™ APIs die door AEM 6.x worden blootgesteld. De versie blijft behouden in de bovenliggende reactorpom vanaf de basis van het project `aem-guides-wknd/pom.xml` .
 
@@ -386,7 +386,7 @@ Het Byline Sling-model is gebaseerd op verschillende Java™ API&#39;s van AEM. 
        </dependency>
    ```
 
-   Dit zijn de volledige openbare Java™ API&#39;s die worden weergegeven door AEM Core Components. AEM Core Components is een project dat buiten AEM wordt onderhouden en heeft daarom een aparte releasecyclus. Om deze reden, is het een gebiedsdeel dat afzonderlijk moet omvatten en **niet** inbegrepen met `uber-jar` of `aem-sdk-api` is.
+   Dit zijn de volledige openbare Java™ API&#39;s die door AEM Core Components worden weergegeven. AEM Core Components is een project dat buiten AEM wordt onderhouden en heeft daarom een aparte releasecyclus. Om deze reden, is het een gebiedsdeel dat afzonderlijk moet omvatten en **niet** inbegrepen met `uber-jar` of `aem-sdk-api` is.
 
    Net als de uber-jar blijft de versie voor deze afhankelijkheid behouden in het Parent-reactorpomabestand van `aem-guides-wknd/pom.xml` .
 
@@ -508,7 +508,7 @@ Wanneer een verandering in de dossiers in dit pakket wordt aangebracht, moet de 
 
    Laten we deze annotatie en de bijbehorende parameters bekijken:
 
-   * De `@Model` -annotatie registreert BylineImpl als een Sling-model wanneer deze wordt geïmplementeerd op AEM.
+   * De `@Model` -annotatie registreert BylineImpl als een Sling-model wanneer deze wordt geïmplementeerd in AEM.
    * Met de parameter `adaptables` wordt opgegeven dat dit model door de aanvraag kan worden aangepast.
    * Met de parameter `adapters` kan de implementatieklasse worden geregistreerd onder de interface Byline. Hierdoor kan het HTML-script het Sling Model via de interface aanroepen (in plaats van de implementatie rechtstreeks). [ Meer details over adapters kunnen hier ](https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110) worden gevonden.
    * `resourceType` verwijst naar het brontype van de component Byline (eerder gecreeerd) en helpt om het correcte model op te lossen als er veelvoudige implementaties zijn. [ Meer details over het associëren van een modelklasse met een middeltype kunnen hier ](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130) worden gevonden.
@@ -845,7 +845,7 @@ Laten wij de **tweede** benadering gebruiken. De eerste aanpak is waarschijnlijk
 
 ## Naamregel HTL {#byline-htl}
 
-Open in de module `ui.apps` `/apps/wknd/components/byline/byline.html` die is gemaakt in de eerdere setup van de AEM Component.
+Open in de module `ui.apps` `/apps/wknd/components/byline/byline.html` die is gemaakt in de eerdere setup van de AEM-component.
 
 ```html
 <div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
@@ -923,7 +923,7 @@ Expressies worden toegevoegd via de operator `@` in de HTML-expressie.
 
 ### De tijdelijke aanduiding voorwaardelijk weergeven {#conditionally-displaying-the-placeholder}
 
-De meeste manuscripten HTML voor AEM Componenten gebruiken het **placeholder paradigm** om visuele richtsnoer aan auteurs **te verstrekken die op een component wijzen verkeerd wordt geschreven en het wordt niet getoond op AEM Publish**. De conventie die deze beslissing aanstuurt, is het implementeren van een methode op het back-upmodel van de component, in dit geval: `Byline.isEmpty()` .
+De meeste manuscripten HTML voor de Componenten van AEM gebruiken het **placeholder paradigm** om visuele richtsnoer aan auteurs **te verstrekken die op een component wijzen verkeerd wordt geschreven en het wordt niet getoond op AEM publiceren**. De conventie die deze beslissing aanstuurt, is het implementeren van een methode op het back-upmodel van de component, in dit geval: `Byline.isEmpty()` .
 
 De methode `isEmpty()` wordt aangeroepen op het Byline Sling-model en het resultaat (of liever gezegd negatief, via de operator `!` ) wordt opgeslagen naar een HTML-variabele met de naam `hasContent` :
 
@@ -1009,7 +1009,7 @@ Voor dit, laten wij het huidige bylinemiddel omvatten, maar dwingen het middelty
 
 ### De naamloze component Byline bekijken {#reviewing-the-unstyled-byline-component}
 
-1. Na het opstellen van de update, navigeer aan de [ Uiteindelijke Gids aan LA Skateparks ](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) pagina, of waar u de component van de Byline vroeger in het hoofdstuk toevoegde.
+1. Na het opstellen van de update, navigeer aan de [ Gids van Ultimate aan LA Skateparks ](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) pagina, of waar u de component van de Byline vroeger in het hoofdstuk toevoegde.
 
 1. Het **beeld**, **naam**, en **bezettingen** verschijnen nu en unstyled, maar het werken de component van de Byline is aanwezig.
 
@@ -1017,7 +1017,7 @@ Voor dit, laten wij het huidige bylinemiddel omvatten, maar dwingen het middelty
 
 ### De registratie van het verkoopmodel bekijken {#reviewing-the-sling-model-registration}
 
-De [ AEM het Verdelen van Modellen van de Console van het Web mening ](http://localhost:4502/system/console/status-slingmodels) toont alle geregistreerde het Verdelen Modellen in AEM. Het Byline Sling-model kan worden gevalideerd als geïnstalleerd en herkend door deze lijst te herzien.
+De [ het Verdelen van Modellen van de Console van het Web van AEM ](http://localhost:4502/system/console/status-slingmodels) toont alle geregistreerde het Verdelen Modellen in AEM. Het Byline Sling-model kan worden gevalideerd als geïnstalleerd en herkend door deze lijst te herzien.
 
 Als **BylineImpl** niet in deze lijst wordt getoond, is het waarschijnlijk een kwestie met de het Schipen van Model annotaties of het Model werd niet toegevoegd aan het correcte pakket (`com.adobe.aem.guides.wknd.core.models`) in het kernproject.
 
@@ -1096,9 +1096,9 @@ Gefeliciteerd, u hebt een volledig nieuw aangepast onderdeel gemaakt met Adobe E
 
 ### Volgende stappen {#next-steps}
 
-Ga verder met de ontwikkeling van AEM Component door te verkennen hoe u JUnit-tests voor de Byline Java™-code schrijft om ervoor te zorgen dat alles op de juiste wijze is ontwikkeld en dat de geïmplementeerde bedrijfslogica juist en volledig is.
+Ga verder met de ontwikkeling van AEM Component door te verkennen hoe u JUnit-tests voor de Byline Java™-code schrijft om te controleren of alles goed is ontwikkeld en of de geïmplementeerde bedrijfslogica correct en volledig is.
 
-* [Eenheidstests of AEM-onderdelen schrijven](unit-testing.md)
+* [Eenheidstests of AEM-componenten schrijven](unit-testing.md)
 
 Bekijk de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd) of herzie en stel plaatselijk de code bij de tak van het Git `tutorial/custom-component-solution` op.
 

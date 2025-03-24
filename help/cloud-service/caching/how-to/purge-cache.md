@@ -1,7 +1,7 @@
 ---
 title: De CDN-cache leegmaken
 description: Leer hoe u de HTTP-respons in de cache kunt leegmaken of verwijderen uit de AEM as a Cloud Service CDN.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
 role: Admin, Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-08-13T00:00:00Z
 jira: KT-15963
 thumbnail: KT-15963.jpeg
 exl-id: 5d81f6ee-a7df-470f-84b9-12374c878a1b
-source-git-commit: 0639217a3bab7799eec3bbcc40c1a69ed1b12682
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Leer hoe u de HTTP-respons in de cache kunt leegmaken of verwijderen uit de AEM as a Cloud Service CDN. Gebruikend de zelfbediening eigenschap genoemd **zuiveren API Token**, kunt u het geheime voorgeheugen voor een specifiek middel, een groep middelen, en het volledige geheime voorgeheugen ontruimen.
 
-In dit leerprogramma, leert u hoe te opstelling en het Schrappen API Token te gebruiken om het CDN geheime voorgeheugen van de steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) plaats te zuiveren gebruikend de zelfbediening eigenschap.
+In dit leerprogramma, leert u hoe te opstelling en de Schrapping API Token te gebruiken om het CDN geheime voorgeheugen van de steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) plaats te zuiveren gebruikend de zelfbediening eigenschap.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432948?quality=12&learn=on)
 
@@ -43,9 +43,9 @@ Leer hoe u het token voor de zuiverings-API instelt voor het leegmaken van de CD
 
 ### De CDN-regel configureren
 
-Het token van de zuiverings-API wordt gemaakt door de CDN-regel in uw AEM projectcode te configureren.
+Het token van de zuiverings-API wordt gemaakt door de CDN-regel in uw AEM-projectcode te configureren.
 
-1. Open het bestand `cdn.yaml` vanuit de hoofdmap `config` van het AEM project. Bijvoorbeeld, het {](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) dossier 1} van cdn.yaml van het 0} WKND-project.[
+1. Open het bestand `cdn.yaml` vanuit de hoofdmap van uw AEM-project van `config` . Bijvoorbeeld, het {](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) dossier 1} van cdn.yaml van het 0} WKND-project.[
 
 1. Voeg de volgende CDN-regel toe aan het `cdn.yaml` -bestand:
 
@@ -71,7 +71,7 @@ data:
 
 In de bovenstaande regel worden zowel `purgeKey1` als `purgeKey2` vanaf het begin toegevoegd ter ondersteuning van de rotatie van geheimen zonder onderbrekingen. U kunt echter alleen met `purgeKey1` beginnen en `purgeKey2` later toevoegen wanneer u de geheimen roteert.
 
-1. Sla de wijzigingen op, wijs deze toe en duw de wijzigingen naar de Adobe upstream in de opslagplaats.
+1. Sla de wijzigingen op, wijs deze toe en duw ze door naar de Adobe upstream-opslagplaats.
 
 ### Cloud Manager-omgevingsvariabele maken
 
@@ -112,7 +112,7 @@ Tot slot stel de gevormde CDN regel aan het milieu van AEM as a Cloud Service op
 
 ## De token voor de wisse-API gebruiken
 
-Als u de CDN-cache wilt leegmaken, roept u de URL van het AEM servicespecifieke domein aan met het token voor de zuiverings-API. De syntaxis voor het leegmaken van de cache is als volgt:
+Als u de CDN-cache wilt leegmaken, roept u de AEM-service-specifieke domein-URL aan met het token voor de zuiverings-API. De syntaxis voor het leegmaken van de cache is als volgt:
 
 ```
 PURGE <URL> HTTP/1.1
@@ -125,8 +125,8 @@ Surrogate-Key: <SURROGATE_KEY>
 Waarbij:
 
 - **PURGE`<URL>`**: De `PURGE` methode wordt gevolgd door de weg URL van het middel dat u wilt zuiveren.
-- **Gastheer:`<AEM_SERVICE_SPECIFIC_DOMAIN>`**: Het specificeert het domein van de AEM dienst.
-- **x-AEM-paars-Sleutel:`<PURGE_API_TOKEN>`**: Een douanekopbal die de het Symbolische waarde van de Schrapping API bevat.
+- **Gastheer:`<AEM_SERVICE_SPECIFIC_DOMAIN>`**: Het specificeert het domein van de dienst van AEM.
+- **x-AEM-zuivering-Sleutel:`<PURGE_API_TOKEN>`**: Een douanekop die de het symbolische waarde van het Symbolisch van de Schrapping API bevat.
 - **x-AEM-Leegmaken:`<PURGE_TYPE>`**: Een douanekopbal die het type van zuiveringsverrichting specificeert. De waarde kan `hard`, `soft` of `all` zijn. In de volgende tabel wordt elk type zuivering beschreven:
 
   | Type wissen | Beschrijving |

@@ -1,7 +1,7 @@
 ---
 title: AEM Sites en Adobe Analytics integreren met Platform Web SDK
-description: Integreer AEM Sites en Adobe Analytics met de moderne Web SDK-benadering van het Platform.
-version: Cloud Service
+description: Integreer AEM Sites en Adobe Analytics met behulp van de moderne Web SDK-benadering van het Platform.
+version: Experience Manager as a Cloud Service
 feature: Integrations
 topic: Integrations, Architecture
 role: Admin, Architect, Data Architect, Developer
@@ -14,7 +14,7 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
 duration: 2252
-source-git-commit: 774267b4f4c65c79f185fa3b33383ce9ddd136cb
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # AEM Sites en Adobe Analytics integreren met Platform Web SDK
 
-Leer de **moderne benadering** op hoe te om Adobe Experience Manager (AEM) en Adobe Analytics te integreren gebruikend het Web SDK van het Platform. Deze uitvoerige zelfstudie begeleidt u door het proces om [ WKND ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) paageview en CTA naadloos te verzamelen klikt gegevens. Vergroot waardevolle inzichten door de verzamelde gegevens te visualiseren in Adobe Analysis Workspace, waar u verschillende meeteenheden en dimensies kunt verkennen. Ook, verken de Dataset van het Platform om de gegevens te verifiëren en te analyseren. Doe mee aan deze reis om de kracht van AEM en Adobe Analytics te benutten voor gegevensgestuurde besluitvorming.
+Leer de **moderne benadering** op hoe te om Adobe Experience Manager (AEM) en Adobe Analytics te integreren gebruikend SDK van het Web van het Platform. Deze uitvoerige zelfstudie begeleidt u door het proces om [ WKND ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) paageview en CTA naadloos te verzamelen klikt gegevens. Vergroot waardevolle inzichten door de verzamelde gegevens te visualiseren in Adobe Analysis Workspace, waar u verschillende maatstaven en dimensies kunt verkennen. Ook, verken de Dataset van het Platform om de gegevens te verifiëren en te analyseren. Doe mee aan deze reis om de kracht van AEM en Adobe Analytics te benutten voor gegevensgestuurde besluitvorming.
 
 ## Overzicht
 
@@ -36,13 +36,13 @@ Door pagina&#39;s bij te houden, kan het team analyseren welke pagina&#39;s de m
 
 ## Vereisten
 
-Het volgende wordt vereist wanneer het integreren van Adobe Analytics gebruikend het Web SDK van het Platform.
+Voor de integratie van Adobe Analytics met Platform Web SDK is het volgende vereist.
 
-U hebt de opstellingsstappen van **[voltooid integreer het Web SDK van het Experience Platform](./web-sdk.md)** leerprogramma.
+U hebt de opstellingsstappen van **[voltooid integreren het Web SDK van Experience Platform](./web-sdk.md)** leerprogramma.
 
 In **AEM als Cloud Service**:
 
-+ [ AEM de toegang van de Beheerder tot het milieu van AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html)
++ [ toegang van de Beheerder van AEM tot het milieu van AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html)
 + Toegang tot Cloud Manager via Deployment Manager
 + Kloon en stel [ WKND - het project van steekproefAdobe Experience Manager ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) aan uw milieu van AEM as a Cloud Service op.
 
@@ -61,11 +61,11 @@ In **Experience Platform**:
 
 Voor het geval u noodzakelijke toestemmingen niet hebt, kan uw systeembeheerder die [ Adobe Admin Console ](https://adminconsole.adobe.com/) gebruiken noodzakelijke toestemmingen verlenen.
 
-Alvorens in het integratieproces van AEM en Analytics het gebruiken van het Web SDK van het Platform te delven, laat _de essentiële componenten en de belangrijkste elementen_ opnieuw samenvatten die in het [ ](./web-sdk.md) leerprogramma van het Web SDK van het Experience Platform {werden gevestigd. Het biedt een solide basis voor de integratie.
+Alvorens in het integratieproces van AEM en Analytics te delving die het Web SDK van het Platform gebruiken, laten _de essentiële componenten en de belangrijkste elementen_ opnieuw samenvatten die in [ werden gevestigd integreren SDK van het Web van Experience Platform ](./web-sdk.md) leerprogramma. Het biedt een solide basis voor de integratie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419873?quality=12&learn=on)
 
-Na het overzicht van het XDM-schema, DataStream, Dataset, Tag-eigenschap en, AEM en tageigenschapsverbinding, gaan we aan de integratietraject.
+Na de hervatting van het Schema XDM, DataStream, Dataset, het bezit van de Markering en, AEM en de verbinding van het markeringsbezit, laten wij aan de integratietraject beginnen.
 
 ## Document Analytics Solution Design Reference (SDR) definiëren
 
@@ -97,15 +97,15 @@ Om meer over de opstelling en de concepten van Analytics te leren, worden de vol
 
 ## DataStream bijwerken - Analyseservice toevoegen
 
-Een DataStream instrueert de Edge Network van het Platform waar te om de verzamelde gegevens te verzenden. In het [ vorige leerprogramma ](./web-sdk.md), wordt een DataStream gevormd om de gegevens naar het Experience Platform te verzenden. Deze DataStream wordt bijgewerkt om de gegevens naar de het rapportreeks van Analytics te verzenden die in [ hierboven ](#setup-analytics---report-suite-analysis-workspace) stap werd gevormd.
+Een DataStream instrueert het Platform Edge Network waar te om de verzamelde gegevens te verzenden. In het [ vorige leerprogramma ](./web-sdk.md), wordt een DataStream gevormd om de gegevens naar Experience Platform te verzenden. Deze DataStream wordt bijgewerkt om de gegevens naar de het rapportreeks van Analytics te verzenden die in [ hierboven ](#setup-analytics---report-suite-analysis-workspace) stap werd gevormd.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419876?quality=12&learn=on)
 
 ## XDM-schema maken
 
-Met het XDM-schema (Experience Data Model) kunt u de verzamelde gegevens standaardiseren. In het [ vorige leerprogramma ](./web-sdk.md), wordt een schema XDM met `AEP Web SDK ExperienceEvent` een gebiedsgroep gecreeerd. Ook, gebruikend dit schema XDM wordt een Dataset gecreeerd om de verzamelde gegevens in het Experience Platform op te slaan.
+Met het XDM-schema (Experience Data Model) kunt u de verzamelde gegevens standaardiseren. In het [ vorige leerprogramma ](./web-sdk.md), wordt een schema XDM met `AEP Web SDK ExperienceEvent` een gebiedsgroep gecreeerd. Bovendien wordt met dit XDM-schema een Dataset gemaakt waarin de verzamelde gegevens worden opgeslagen in de Experience Platform.
 
-Nochtans, heeft dat Schema XDM geen Adobe Analytics-Specifieke gebiedsgroepen om de eVar, gebeurtenisgegevens te verzenden. Er wordt een nieuw XDM-schema gemaakt in plaats van het bestaande schema bij te werken om te voorkomen dat de eVar, gebeurtenisgegevens in het platform worden opgeslagen.
+Dat XDM-schema echter geen Adobe Analytics-specifieke veldgroepen heeft om de eVar, gebeurtenisgegevens te verzenden. Er wordt een nieuw XDM-schema gemaakt in plaats van het bestaande schema bij te werken om te voorkomen dat de eVar, gebeurtenisgegevens in het platform worden opgeslagen.
 
 Het nieuwe XDM-schema heeft `AEP Web SDK ExperienceEvent` - en `Adobe Analytics ExperienceEvent Full Extension` -veldgroepen.
 
@@ -118,7 +118,7 @@ In het [ vorige leerprogramma ](./web-sdk.md), wordt een markeringsbezit gecreee
 
 + De paginanaam toewijzen aan `eVar5`
 + Het teweegbrengen van de **paginaView** vraag van Analytics (of verzend baken)
-+ CTA-gegevens verzamelen met de gegevenslaag voor Adobe client
++ CTA-gegevens verzamelen met de Adobe Client Data Layer
 + Wijs de CTA-id en -naam toe aan respectievelijk `eVar6` en `eVar7` . Ook, klikt CTA tellen aan `event7`
 + Het teweegbrengen van de **verbinding klikt** vraag van Analytics (of verzendt baken)
 
@@ -127,7 +127,7 @@ In het [ vorige leerprogramma ](./web-sdk.md), wordt een markeringsbezit gecreee
 
 >[!TIP]
 >
->Het Element van Gegevens en regel-Gebeurtenis code in de video wordt getoond is beschikbaar voor uw verwijzing, **breidt hieronder accordeonelement** uit. Nochtans, als u NIET de Laag van Gegevens van de Cliënt van de Adobe gebruikt, moet u de hieronder code wijzigen maar het concept van het bepalen van de Elementen van Gegevens en het gebruiken van hen in de definitie van de Regel blijft van toepassing.
+>Het Element van Gegevens en regel-Gebeurtenis code in de video wordt getoond is beschikbaar voor uw verwijzing, **breidt hieronder accordeonelement** uit. Nochtans, als u NIET de Laag van Gegevens van de Cliënt van Adobe gebruikt, moet u de hieronder code wijzigen maar het concept van het bepalen van de Elementen van Gegevens en het gebruiken van hen in de definitie van de Regel blijft van toepassing.
 
 +++ Gegevenselement en code voor regelgebeurtenissen
 
@@ -214,7 +214,7 @@ In het [ vorige leerprogramma ](./web-sdk.md), wordt een markeringsbezit gecreee
 
 +++
 
-Voor extra informatie bij het integreren AEM de Componenten van de Kern met de Laag van de Gegevens van de Cliënt van de Adobe, verwijs naar [ Gebruikend de Laag van de Gegevens van de Cliënt van de Adobe met de gids van de Componenten van de Kern AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html).
+Voor extra informatie bij het integreren van de Componenten van de Kern van AEM met de Laag van Gegevens van de Cliënt van Adobe, verwijs naar [ Gebruikend de Laag van Gegevens van de Cliënt van Adobe met de gids van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html).
 
 
 >[!INFO]
@@ -225,11 +225,11 @@ Voor extra informatie bij het integreren AEM de Componenten van de Kern met de L
 
 ## De bijgewerkte eigenschap Tag op WKND verifiëren
 
-Om ervoor te zorgen dat de bijgewerkte markeringseigenschap op de WKND-sitepagina&#39;s wordt gebouwd, gepubliceerd en correct werkt. Gebruik de van het Webbrowser van Google Chrome [ uitbreiding van het Adobe Experience Platform Debugger ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob):
+Om ervoor te zorgen dat de bijgewerkte markeringseigenschap op de WKND-sitepagina&#39;s wordt gebouwd, gepubliceerd en correct werkt. Gebruik de de Webbrowser van Google Chrome [ uitbreiding van Adobe Experience Platform Debugger ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob):
 
 + Om ervoor te zorgen dat het markeringsbezit de recentste versie is, controleer de bouwstijldatum.
 
-+ Om de XDM gebeurtenisgegevens voor zowel PageView als HomePage CTA Click te verifiëren, gebruik de het menuoptie van SDK van het Web van het Experience Platform binnen de uitbreiding.
++ Als u de XDM-gebeurtenisgegevens voor PageView en HomePage CTA Click wilt controleren, gebruikt u de menuoptie Experience Platform Web SDK in de extensie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419883?quality=12&learn=on)
 
@@ -241,7 +241,7 @@ Om een betekenisvolle hoeveelheid verkeer voor testdoeleinden te produceren, wor
 
 ## Dataset-verificatie - WKND-voorvertoning, CTA-gegevens
 
-De dataset is een opslag en beheersconstructie voor een inzameling van gegevens zoals een gegevensbestandlijst die een schema volgt. De Dataset die in het [ vorige leerprogramma ](./web-sdk.md) wordt gecreeerd wordt opnieuw gebruikt om te verifiëren dat de voorproef en CTA klikgegevens in de Dataset van het Experience Platform worden opgenomen. Binnen de Dataset UI, worden diverse details zoals totale verslagen, grootte, en ingebedde partijen getoond samen met een visueel aantrekkelijke balkgrafiek.
+De dataset is een opslag en beheersconstructie voor een inzameling van gegevens zoals een gegevensbestandlijst die een schema volgt. De Dataset die in het [ vorige leerprogramma ](./web-sdk.md) wordt gecreeerd wordt opnieuw gebruikt om te verifiëren dat de voorproef en CTA klikgegevens in de Dataset van Experience Platform wordt opgenomen. Binnen de Dataset UI, worden diverse details zoals totale verslagen, grootte, en ingebedde partijen getoond samen met een visueel aantrekkelijke balkgrafiek.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419885?quality=12&learn=on)
 
@@ -257,7 +257,7 @@ Om gebruikersreizen visualiseren, gebruik de visualisatie van de Stroom, die met
 
 ## Samenvatting
 
-Geweldig werk! U hebt de installatie van AEM en Adobe Analytics voltooid met de Platform Web SDK voor het verzamelen, analyseren van de paginaweergave en het klikken op CTA-gegevens.
+Geweldig werk! U hebt de installatie van AEM en Adobe Analytics voltooid met Platform Web SDK voor het verzamelen, analyseren van de gegevens voor de voorvertoning en CTA click.
 
 Het implementeren van Adobe Analytics is van cruciaal belang voor marketingteams om inzicht te krijgen in gebruikersgedrag, geïnformeerde beslissingen te nemen, zodat ze hun inhoud kunnen optimaliseren en gegevensgestuurde beslissingen kunnen nemen.
 
@@ -273,9 +273,9 @@ Door de geadviseerde stappen uit te voeren en de verstrekte middelen, zoals het 
 
 ## Aanvullende bronnen
 
-+ [ integreer het Web SDK van het Experience Platform ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html)
-+ [ Gebruikend de Laag van de Gegevens van de Cliënt van de Adobe met de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
-+ [ het Integreren de Markeringen en de AEM van de Inzameling van de Gegevens van het Experience Platform ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
-+ [ SDK van het Web van Adobe Experience Platform en overzicht van de Edge Network ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
++ [ integreren Experience Platform Web SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html)
++ [ Gebruikend de Laag van Gegevens van de Cliënt van Adobe met de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
++ [ Integrating Experience Platform de Markeringen van de Inzameling van Gegevens en AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
++ [ het Web SDK van Adobe Experience Platform en het overzicht van Edge Network ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
 + [ leerprogramma&#39;s van de Inzameling van Gegevens ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
-+ [ overzicht van het Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [ overzicht van Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

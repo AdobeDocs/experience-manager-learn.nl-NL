@@ -5,13 +5,13 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-13520
 exl-id: c23275d7-daf7-4a42-83b6-4d04b297c470
 duration: 115
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
@@ -24,9 +24,9 @@ AEM Forms bevat een aantal verzendopties uit het vak die voldoen aan de meeste g
 
 Om een douane te schrijven verzend de dienst, werden de volgende stappen gevolgd
 
-## AEM project maken
+## AEM-project maken
 
-Als u reeds een bestaand as a Cloud Service project van AEM Forms hebt kunt u [ springen aan het schrijven van douane voorlegt dienst ](#Write-the-custom-submit-service)
+Als u reeds een bestaand project van AEM Forms as a Cloud Service hebt kunt u [ springen aan het schrijven van douane voorlegt dienst ](#Write-the-custom-submit-service)
 
 * Maak een map met de naam cloudmanager op het station C.
 * Naar deze nieuwe map navigeren
@@ -107,7 +107,7 @@ De waarde van het **submitService** element moet **serviceName = &quot;Eigen AF 
 ## De code naar uw lokale AEM Forms-instantie implementeren
 
 Voordat u de wijzigingen doorvoert naar de gegevensopslagruimte voor cloudbeheer, wordt aanbevolen de code te implementeren in de ontwerpinstantie van uw lokale cloud om de code te testen. Zorg ervoor dat de instantie van de auteur wordt uitgevoerd.
-Als u de code wilt implementeren naar de ontwerpinstantie in de cloud, navigeert u naar de hoofdmap van uw AEM project en voert u de volgende opdracht uit
+Als u de code wilt implementeren naar de ontwerpinstantie in de cloud, navigeert u naar de hoofdmap van uw AEM-project en voert u de volgende opdracht uit
 
 ```
 mvn clean install -PautoInstallSinglePackage
@@ -118,7 +118,7 @@ Hiermee wordt de code als één pakket geïmplementeerd op uw auteurinstantie
 ## Push the code to cloud manager and Deploy the code
 
 Nadat u de code op uw lokale instantie hebt gecontroleerd, drukt u op de code naar uw cloudinstantie.
-Breng de wijzigingen aan in uw lokale opslagplaats voor it en vervolgens aan het cloudbeheerprogramma. U kunt naar de [ opstelling van het Git ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git.html) verwijzen, [ duwend AEM project in de bewaarplaats van de wolkenmanager ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git.html) en [ plaatsend aan de artikelen van het ontwikkelomgeving ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/deploy-to-dev-environment.html).
+Breng de wijzigingen aan in uw lokale opslagplaats voor it en vervolgens aan het cloudbeheerprogramma. U kunt naar de [ opstelling van het Git ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git.html) verwijzen, [ duwend het project van AEM in de bewaarplaats van de wolkenmanager ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git.html) en [ plaatsend aan de artikelen van het ontwikkelomgeving ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/deploy-to-dev-environment.html).
 
 Zodra de pijplijn met succes is uitgevoerd, zou u de verzendactie van uw vorm aan de douane moeten kunnen associëren voorlegt manager zoals aangetoond in het hieronder ontsproten scherm.
 ![ voorleggen-actie ](./assets/configure-submit-action.png)

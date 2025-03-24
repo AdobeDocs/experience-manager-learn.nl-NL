@@ -1,15 +1,15 @@
 ---
-title: Inhoudsfragmenten in AEM ontwerpen
-description: Inhoudsfragmenten zijn een inhoudsabstractie in AEM waarmee op tekst gebaseerde inhoud onafhankelijk van de kanalen die deze ondersteunt kan worden gemaakt en beheerd.
+title: Inhoudsfragmenten ontwerpen in AEM
+description: Inhoudsfragmenten zijn een abstractie van inhoud in AEM waarbij op tekst gebaseerde inhoud onafhankelijk van de kanalen die deze ondersteunt, kan worden gemaakt en beheerd.
 feature: Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: d33c033a-9577-4d4e-99be-f3c7e2a4ce73
 duration: 665
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Inhoudsfragmenten ontwerpen {#authoring-content-fragments}
 
-Inhoudsfragmenten zijn een inhoudsabstractie in AEM waarmee op tekst gebaseerde inhoud onafhankelijk van de kanalen die deze ondersteunt kan worden gemaakt en beheerd.
+Inhoudsfragmenten zijn een abstractie van inhoud in AEM waarbij op tekst gebaseerde inhoud onafhankelijk van de kanalen die deze ondersteunt, kan worden gemaakt en beheerd.
 
-AEM Inhoudsfragmenten zijn tekstgebaseerde redactionele inhoud die bepaalde gestructureerde gegevenselementen kan bevatten die zijn gekoppeld, maar die wordt beschouwd als zuivere inhoud zonder ontwerp- of layoutinformatie. Inhoudsfragmenten worden doorgaans gemaakt als agnostische inhoud voor kanalen, die bestemd is voor gebruik en hergebruik via kanalen, waardoor de inhoud zelf wordt verpakt in een contextspecifieke ervaring.
+AEM Content Fragments zijn tekstgebaseerde redactionele inhoud die mogelijk bepaalde gestructureerde gegevenselementen bevat die zijn gekoppeld, maar die wordt beschouwd als zuivere inhoud zonder ontwerp- of layoutinformatie. Inhoudsfragmenten worden doorgaans gemaakt als agnostische inhoud voor kanalen, die bestemd is voor gebruik en hergebruik via kanalen, waardoor de inhoud zelf wordt verpakt in een contextspecifieke ervaring.
 
 Deze videoreeks bestrijkt de levenscyclus van inhoudsfragmenten in AEM. De details over [ leverend de Fragments van de Inhoud kunnen hier ](content-fragments-delivery-feature-video-use.md) worden gevonden.
 
@@ -38,13 +38,13 @@ Deze videoreeks bestrijkt de levenscyclus van inhoudsfragmenten in AEM. De detai
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452?quality=12&learn=on)
 
-AEM de Modellen van de Fragmenten van de Inhoud, de gegevensschema&#39;s van de Fragmenten van de Inhoud, moeten via AEM [[!UICONTROL Configuration Browser] worden toegelaten ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html), die toestaat de Modellen van het Fragment van de Inhoud om op een per configuratiebasis worden bepaald.
+AEM Content Fragments Models, de gegevensschema&#39;s van Content Fragments, moet via AEM [[!UICONTROL Configuration Browser] ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html) worden toegelaten, die toestaat dat de Modellen van het Fragment van de Inhoud op een per configuratiebasis worden bepaald.
 
 ## Inhoudsfragmenten maken {#creating-content-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22451?quality=12&learn=on)
 
-AEM configuraties worden toegepast op AEM Assets-maphiërarchieën zodat de bijbehorende modellen van inhoudsfragmenten kunnen worden gemaakt als inhoudsfragmenten. Inhoudsfragmenten bieden ondersteuning voor een rijke, op formulieren gebaseerde ontwerpervaring, zodat inhoud kan worden gemodelleerd als een verzameling elementen.
+AEM-configuraties worden toegepast op AEM Assets-maphiërarchieën zodat de bijbehorende modellen van inhoudsfragmenten kunnen worden gemaakt als inhoudsfragmenten. Inhoudsfragmenten bieden ondersteuning voor een rijke, op formulieren gebaseerde ontwerpervaring, zodat inhoud kan worden gemodelleerd als een verzameling elementen.
 
 Inhoudsfragmenten kunnen meerdere varianten hebben, waarbij elke variant een ander gebruik (dus niet noodzakelijkerwijs een kanaal) voor de inhoud aanwijst.
 
@@ -55,7 +55,7 @@ Inhoudsfragmenten kunnen meerdere varianten hebben, waarbij elke variant een and
 
 >[!VIDEO](https://video.tv.adobe.com/v/22450?quality=12&learn=on)
 
-AEM Inhoudsfragmenten kunnen van AEM auteur worden gedownload als een ZIP-bestand met varianten, elementen en metagegevens.
+AEM-inhoudsfragmenten kunnen van de AEM-auteur worden gedownload als een ZIP-bestand met varianten, elementen en metagegevens.
 
 *dossier van het de downloadZIP van het Fragment van de Inhoud van het Voorbeeld:*\
 **[daniel_schreder.zip](assets/daniel_schreder.zip)**
@@ -75,9 +75,9 @@ Leer over [ leverend de Fragmenten van de Inhoud ](content-fragments-delivery-fe
 ## Aanvullende bronnen {#additional-resources}
 
 * [Inhoudsfragmenten leveren](content-fragments-delivery-feature-video-use.md)
-* [ AEM de Componenten van de Kern WCM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [ AEM de Component van het Fragment van de Inhoud van WCM Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [ AEM WCM de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [ AEM WCM de Component van het Fragment van de Inhoud van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
-U kunt als volgt het pakket hieronder downloaden en installeren op een AEM 6.4+-instantie voor de uiteindelijke status van de videoreeks:
+U kunt als volgt het pakket downloaden en installeren op een AEM 6.4+-instantie voor de uiteindelijke status van de videoreeks:
 
 **[aem_demo_liquid-ExperienceContent-fragments-100.zip](assets/aem_demo_fluid-experiencescontent-fragments-100.zip)**

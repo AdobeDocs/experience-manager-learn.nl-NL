@@ -1,8 +1,8 @@
 ---
-title: Gebruik ModSecurity om uw AEM te beschermen tegen DoS-aanval
-description: Leer hoe te om ModSecurity toe te laten om uw plaats tegen Ontkenning van de aanval van de Dienst (Dos) te beschermen gebruikend de Reeks van de Regel van de Kern van de WASPIS ModSecurity (CRS).
+title: Gebruik ModSecurity om uw AEM-site te beschermen tegen DoS-aanval
+description: Leer hoe te om ModSecurity toe te laten om uw plaats tegen Ontkenning van de aanval van de Dienst (Dos) te beschermen gebruikend de Reeks van de Regel van de Kern van OWASP ModSecurity (CRS).
 feature: Security
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Security, Development
 role: Admin, Architect
 level: Experienced
@@ -12,27 +12,27 @@ doc-type: Article
 last-substantial-update: 2023-08-18T00:00:00Z
 exl-id: 9f689bd9-c846-4c3f-ae88-20454112cf9a
 duration: 783
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
 
-# Gebruik ModSecurity om uw AEM site te beschermen tegen DoS-aanvallen
+# Gebruik ModSecurity om uw AEM-site te beschermen tegen DoS-aanvallen
 
-Leer hoe te om ModSecurity toe te laten om uw plaats tegen Ontkenning van de aanvallen van de Dienst (Dos) te beschermen gebruikend de **Reeks van de Regel van de Kern ModSecurity ModSecurity (CRS)** op Adobe Experience Manager (AEM) Publish Dispatcher.
+Leer hoe te om ModSecurity toe te laten om uw plaats tegen Ontkenning van de aanvallen van de Dienst (Dos) te beschermen gebruikend de **Reeks van de Regel van de Kern van OWASP ModSecurity (CRS)** op Adobe Experience Manager (AEM) publiceer Dispatcher.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422976?quality=12&learn=on)
 
 ## Overzicht
 
-De [ Open stichting van de Veiligheid Project® van de Toepassing van het Web van de Toepassing (OWASP) ](https://owasp.org/) verstrekt de [**Hoogste 10 van de ASPIS** ](https://owasp.org/www-project-top-ten/) schetterend de tien meest kritieke veiligheidszorgen voor Webtoepassingen.
+De [ Open stichting van de Veiligheid Project® van de Toepassing van het Web (OWASP) ](https://owasp.org/) verstrekt de [**Hoogste 10 van OWASP** ](https://owasp.org/www-project-top-ten/) schetterend de tien meest kritieke veiligheidszorgen voor Webtoepassingen.
 
 ModSecurity is een open-source oplossing voor meerdere platforms die bescherming biedt tegen een reeks aanvallen op webtoepassingen. Het staat ook voor het verkeer van HTTP controle, registreren, en analyse in real time toe.
 
-OWSAP® verstrekt ook de [ Reeks van de Regel van de Kern OWASP® ModSecurity (CRS) ](https://github.com/coreruleset/coreruleset). CRS is een reeks generische **aanvalsopsporing** regels voor gebruik met ModSecurity. CRS is er dus op gericht webtoepassingen te beschermen tegen een breed scala aan aanvallen, waaronder de OWASP Top Tien, met een minimum aan valse waarschuwingen.
+OWSAP® verstrekt ook de [ Reeks van de Regel van de Kern OWASP® ModSecurity (CRS) ](https://github.com/coreruleset/coreruleset). CRS is een reeks generische **aanvalsopsporing** regels voor gebruik met ModSecurity. CRS is er dus op gericht webtoepassingen te beschermen tegen een breed scala van aanvallen, waaronder de Top Ten van OWASP, met een minimum aan foute waarschuwingen.
 
 Dit leerprogramma toont aan hoe te om **DOS-BESCHERMING** regel van CRS toe te laten en te vormen om uw plaats tegen een potentiële aanval van Dos te beschermen.
 
@@ -55,9 +55,9 @@ Dit leerprogramma toont aan hoe te om **DOS-BESCHERMING** regel van CRS toe te l
    $ tar -xvzf coreruleset-3.3.5.tar.gz
    ```
 
-1. Maak de `modsec/crs` mappen binnen `dispatcher/src/conf.d/` in de code van uw AEM project. Bijvoorbeeld, in het lokale exemplaar van het [ AEM WKND project van Plaatsen ](https://github.com/adobe/aem-guides-wknd).
+1. Maak de `modsec/crs` mappen in `dispatcher/src/conf.d/` in de code van uw AEM-project. Bijvoorbeeld, in het lokale exemplaar van het [ project van de Plaatsen van AEM WKND ](https://github.com/adobe/aem-guides-wknd).
 
-   ![ omslag CRS binnen AEM projectcode - ModSecurity ](assets/modsecurity-crs/crs-folder-in-aem-dispatcher-module.png){width="200" zoomable="yes"}
+   ![ omslag CRS binnen het projectcode van AEM - ModSecurity ](assets/modsecurity-crs/crs-folder-in-aem-dispatcher-module.png){width="200" zoomable="yes"}
 
 1. Kopieer de map `coreruleset-X.Y.Z/rules` van het gedownloade CRS-releasepakket naar de map `dispatcher/src/conf.d/modsec/crs` .
 1. Kopieer het `coreruleset-X.Y.Z/crs-setup.conf.example` -bestand van het gedownloade CRS-releasepakket naar de `dispatcher/src/conf.d/modsec/crs` -map en geef het bestand een andere naam in `crs-setup.conf` .
@@ -73,7 +73,7 @@ Dit leerprogramma toont aan hoe te om **DOS-BESCHERMING** regel van CRS toe te l
 
    Zie anders genoemd regels CRS en configuratiedossier in de WKND projectcode.
 
-   ![ Gehandicapte regels CRS binnen AEM projectcode - ModSecurity ](assets/modsecurity-crs/disabled-crs-rules.png){width="200" zoomable="yes"}
+   ![ Gehandicapte regels CRS binnen het projectcode van AEM - ModSecurity ](assets/modsecurity-crs/disabled-crs-rules.png){width="200" zoomable="yes"}
 
 ## De de beschermingsregel van de Ontkenning van de Dienst (Dos) toelaten en vormen
 
@@ -112,8 +112,8 @@ Om CRS te initialiseren, verwijder gemeenschappelijke valse positieven, en voeg 
 
 1. Om CRS te initialiseren, verwijder `.disabled` uit het **VERZOEK-901-INITIALIZATION** dossier. Met andere woorden, wijzig de naam van het `REQUEST-901-INITIALIZATION.conf.disabled` -bestand in `REQUEST-901-INITIALIZATION.conf` .
 1. Om gemeenschappelijke valse positieven zoals lokale IP (127.0.0.1) te verwijderen pingelt, verwijder `.disabled` uit het **VERZOEK-905-COMMON-UITZONDERINGEN** dossier.
-1. Als u lokale uitzonderingen wilt toevoegen, zoals het AEM platform of uw sitespecifieke paden, wijzigt u de naam `REQUEST-900-EXCLUSION-RULES-BEFORE-CRS.conf.example` in `REQUEST-900-EXCLUSION-RULES-BEFORE-CRS.conf`
-   1. Voeg AEM platformspecifieke weguitzonderingen aan het onlangs anders genoemde dossier toe.
+1. Als u lokale uitzonderingen wilt toevoegen, zoals het AEM-platform of uw sitespecifieke paden, wijzigt u de naam `REQUEST-900-EXCLUSION-RULES-BEFORE-CRS.conf.example` in `REQUEST-900-EXCLUSION-RULES-BEFORE-CRS.conf`
+   1. Voeg platformspecifieke weguitzonderingen van AEM aan het onlangs anders genoemde dossier toe.
 
    ```
    ########################################################
@@ -152,7 +152,7 @@ Om CRS te initialiseren, verwijder gemeenschappelijke valse positieven, en voeg 
 
 >[!TIP]
 >
->Wanneer het vormen op AEM 6.5 zorg ervoor om de bovengenoemde wegen met respectieve AMS of op-prem wegen te vervangen die de gezondheid van de AEM (alias hartslagwegen) verifiëren.
+>Zorg er bij de configuratie op AEM 6.5 voor dat u de bovenstaande paden vervangt door de respectievelijke AMS- of on-prem-paden die de status van de AEM (ook wel bekend als hartslagpaden) controleren.
 
 ## ModSecurity Apache-configuratie toevoegen
 
@@ -208,7 +208,7 @@ Voer de volgende stappen uit om ModSecurity (ook wel `mod_security` Apache-modul
    SecDataDir /tmp
    ```
 
-1. Selecteer de gewenste `.vhost` in de Dispatcher-module van uw AEM project `dispatcher/src/conf.d/available_vhosts` , `wknd.vhost` bijvoorbeeld, en voeg de onderstaande vermelding buiten het `<VirtualHost>` -blok toe.
+1. Selecteer de gewenste `.vhost` in de Dispatcher-module van uw AEM-project `dispatcher/src/conf.d/available_vhosts` , `wknd.vhost` bijvoorbeeld, en voeg de onderstaande vermelding toe buiten het `<VirtualHost>` -blok.
 
    ```
    # Enable the ModSecurity and OWASP CRS
@@ -224,11 +224,11 @@ Voer de volgende stappen uit om ModSecurity (ook wel `mod_security` Apache-modul
    </VirtualHost>
    ```
 
-Al bovengenoemde _CRS ModSecurity_ en _DOS-BESCHERMING_ configuraties zijn beschikbaar op de AEM 4} tutorial/enable-modsecurity-crs-bescherming van het Project van de Plaatsen WKND ](https://github.com/adobe/aem-guides-wknd/tree/tutorial/enable-modsecurity-crs-dos-protection) tak voor uw overzicht.[
+Al bovengenoemde _CRS ModSecurity_ en _DOS-BESCHERMING_ configuraties zijn beschikbaar op de 4} tutorial/enable-modsecurity-crs-bescherming van het Project van de Plaatsen van AEM WKND ](https://github.com/adobe/aem-guides-wknd/tree/tutorial/enable-modsecurity-crs-dos-protection) tak voor uw overzicht.[
 
 ### Dispatcher-configuratie valideren
 
-Wanneer het werken met AEM as a Cloud Service, alvorens uw _configuratie van Dispatcher_ veranderingen op te stellen, wordt het geadviseerd om hen plaatselijk te bevestigen gebruikend `validate` manuscript van de [ AEM Dispatcher Tools van SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html).
+Wanneer het werken met AEM as a Cloud Service, alvorens uw _configuratie van Dispatcher_ veranderingen op te stellen, wordt het geadviseerd om hen plaatselijk te bevestigen gebruikend `validate` manuscript van [ AEM SDK Dispatcher Tools ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html).
 
 ```
 # Go inside Dispatcher SDK 'bin' directory
@@ -260,9 +260,9 @@ Volg de onderstaande stappen om een DoS-aanval met JMeter te simuleren:
 
    ![ open steekproefWKND JMX van de Test JMX- ModSecurity ](assets/modsecurity-crs/open-wknd-dos-attack-jmx-test-script.png)
 
-1. Werk de **Naam van de Server of IP** gebiedswaarde in _de Pagina van het Huis_ en _de Steekproef van het Verzoek van de Pagina van het avontuur_ HTTP die uw milieu URL van het AEM aanpassen. Bekijk andere details van het JMeter-voorbeeldscript.
+1. Werk de **Naam van de Server of IP** gebiedswaarde in _de Pagina van het Huis_ en _de monsternemer van het Verzoek van de Pagina van het avontuur_ HTTP bij die uw milieu URL van de testAEM aanpassen. Bekijk andere details van het JMeter-voorbeeldscript.
 
-   ![ AEM de Naam van de Server HTTP- Verzoek JMetere - ModSecurity ](assets/modsecurity-crs/aem-server-name-http-request.png)
+   ![ HTTP- Verzoek JMetere van de Naam van de Server van AEM - ModSecurity ](assets/modsecurity-crs/aem-server-name-http-request.png)
 
 1. Voer het manuscript uit door de **knoop van het Begin** van het hulpmiddelmenu te drukken. Het manuscript verzendt 50 HTTP- verzoeken (5 gebruikers en 10 lijnaantallen) tegen de WebND- plaats _Pagina van het Huis_ en _Pagina van het avontuur_. Aldus een totaal van 100 verzoeken aan niet-statische dossiers, kwalificeert het de aanval van Dos per **DOS-BESCHERMING** de regeldouaneconfiguratie van CRS.
 
@@ -280,7 +280,7 @@ Volg de onderstaande stappen om een DoS-aanval met JMeter te simuleren:
 
 De modSecurity logger configuratie registreert de details van het de aanvalsincident van Dos. Voer de volgende stappen uit om de details weer te geven:
 
-1. Download en open het `httpderror` logboekdossier van **Publish Dispatcher**.
+1. Download en open het `httpderror` logboekdossier van **publiceer Dispatcher**.
 1. Onderzoek naar woord `burst` in het logboekdossier, om de **fout** lijnen te zien
 
    ```

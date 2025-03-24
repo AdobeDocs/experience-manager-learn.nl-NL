@@ -1,7 +1,7 @@
 ---
 title: CDN in cache plaatsen uitschakelen
 description: Leer hoe u het in cache plaatsen van HTTP-reacties in AEM as a Cloud Service CDN uitschakelt.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
 role: Admin, Architect, Developer
@@ -12,7 +12,7 @@ jira: KT-14224
 thumbnail: KT-14224.jpeg
 exl-id: 22b1869e-5bb5-437d-9cb5-2d27f704c052
 duration: 100
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Deze cacheheaders worden doorgaans ingesteld in AEM Dispatcher-hostconfiguraties
 
 ## Standaardgedrag voor caching
 
-Herzie het standaard in het voorgeheugen onderbrengende gedrag voor AEM Publish en Auteur wanneer een [ AEM Project Archetype ](./enable-caching.md#default-caching-behavior) gebaseerd AEM project wordt opgesteld.
+Herzie het standaard in het voorgeheugen onderbrengende gedrag voor AEM publiceren en Auteur wanneer een ](./enable-caching.md#default-caching-behavior) gebaseerd project van de Archetype van het Project van AEM [ wordt opgesteld.
 
 ## Cache uitschakelen
 
@@ -40,14 +40,14 @@ Er zijn echter enkele scenario&#39;s waarin u caching kunt uitschakelen, zoals:
 
 Als u caching wilt uitschakelen, kunt u de cachekoppen op twee manieren bijwerken.
 
-1. **de gastheerconfiguratie van Dispatcher:** slechts beschikbaar voor AEM Publish.
-1. **de code van Java™ van de Douane:** Beschikbaar voor zowel AEM Publish als Auteur.
+1. **de gastheerconfiguratie van Dispatcher:** slechts beschikbaar voor AEM publiceert.
+1. **de code van Java™ van de Douane:** Beschikbaar voor zowel de Publish als Auteur van AEM.
 
 Laten we elk van deze opties bekijken.
 
 ### Dispatcher-hostconfiguratie
 
-Deze optie is de aanbevolen methode voor het uitschakelen van caching, maar is alleen beschikbaar voor AEM Publish. Als u de cachekoppen wilt bijwerken, gebruikt u de instructies `mod_headers` module en `<LocationMatch>` in het hostbestand van Apache HTTP Server. De algemene syntaxis ziet er als volgt uit:
+Deze optie wordt aanbevolen voor het uitschakelen van caching, maar is alleen beschikbaar voor AEM Publish. Als u de cachekoppen wilt bijwerken, gebruikt u de instructies `mod_headers` module en `<LocationMatch>` in het hostbestand van Apache HTTP Server. De algemene syntaxis ziet er als volgt uit:
 
 ```
 <LocationMatch "$URL$ || $URL_REGEX$">
@@ -85,7 +85,7 @@ Als u de bestaande CSS-cache wilt overslaan, moet u het CSS-bestand wijzigen om 
 
 ### Aangepaste Java™-code
 
-Deze optie is zowel beschikbaar voor AEM Publish als voor Auteur. Gebruik het `SlingHttpServletResponse` -object in de aangepaste Java™-code (Sling servlet, Sling servlet filter) om de cacheheaders bij te werken. De algemene syntaxis ziet er als volgt uit:
+Deze optie is zowel beschikbaar voor publiceren in AEM als voor auteur. Gebruik het `SlingHttpServletResponse` -object in de aangepaste Java™-code (Sling servlet, Sling servlet filter) om de cacheheaders bij te werken. De algemene syntaxis ziet er als volgt uit:
 
 ```java
 response.setHeader("Cache-Control", "private");

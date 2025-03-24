@@ -2,14 +2,14 @@
 title: Aangepaste processtap implementeren met dialoogvenster
 description: Aangepaste formulierbijlagen naar bestandssysteem schrijven met behulp van een stap voor aangepast proces
 feature: Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 149d2c8c-bf44-4318-bba8-bec7e25da01b
 duration: 135
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
@@ -24,7 +24,7 @@ De volgende stappen worden vereist om de klasse te schrijven java en de klasse a
 
 ## Maven Project maken
 
-De eerste stap bestaat uit het maken van een gemodelleerd project met de juiste Adobe Maven Archetype. De gedetailleerde stappen worden vermeld in dit [ artikel ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Zodra u uw beproefd die project hebt in eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
+De eerste stap bestaat uit het maken van een gemaven project met behulp van het juiste Adobe Maven Archetype. De gedetailleerde stappen worden vermeld in dit [ artikel ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Zodra u uw beproefd die project hebt in eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
 
 
 ### Klasse maken die WorkflowProcess implementeert
@@ -32,7 +32,7 @@ De eerste stap bestaat uit het maken van een gemodelleerd project met de juiste 
 Open het beproefde project in uw eclipse winde. Breid **projectnaam** > **kern** omslag uit. Vouw de map src/main/java uit. U moet een pakket zien dat eindigt met &quot;core&quot;. Maak een Java-klasse die WorkflowProcess in dit pakket implementeert. U moet de uitvoeringsmethode overschrijven. De handtekening van de uitvoeringsmethode is als volgt
 public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)genereert WorkflowException
 
-In deze zelfstudie gaan we de bijlagen die zijn toegevoegd aan Adaptief formulier naar het bestandssysteem schrijven als onderdeel van de AEM workflow.
+In deze zelfstudie schrijven we de bijlagen die zijn toegevoegd aan Adaptief formulier naar het bestandssysteem als onderdeel van de AEM-workflow.
 
 Voor dit gebruik is de volgende Java-klasse geschreven
 
@@ -118,7 +118,7 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
 ```
 
 
-* attachmentsPath - Dit is de zelfde plaats die u in het Aangepaste Vorm hebt gespecificeerd toen u de verzendactie van Aangepast Vorm vormde om AEM Workflow aan te halen. Dit is een naam van de map waarvan u wilt dat de bijlagen worden opgeslagen in AEM ten opzichte van de lading van de workflow.
+* attachmentsPath - Dit is de zelfde plaats die u in het Aangepaste Vorm hebt gespecificeerd toen u de verzendactie van Aangepast Vorm vormde om de Workflow van AEM aan te halen. Dit is een naam van de map waarvan u wilt dat de bijlagen in AEM worden opgeslagen ten opzichte van de lading van de workflow.
 
 * saveToLocation - dit is de plaats die u de gehechtheid wilt worden bewaard op het dossiersysteem van uw AEM server.
 

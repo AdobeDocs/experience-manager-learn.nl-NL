@@ -5,13 +5,13 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Developer Tools
 jira: KT-14581
 duration: 90
 exl-id: 2a33a9a9-1eef-425d-aec5-465030ee9b74
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
@@ -83,7 +83,7 @@ public class GetFieldChoices extends SlingAllMethodsServlet implements Serializa
 
 ## Bronnen maken in CRX
 
-* Meld u aan bij de lokale AEM SDK.
+* Meld u aan bij uw lokale AEM SDK.
 * Maak een bron met de naam `fetchchoices` (u kunt dit knooppunt desgewenst een naam geven) van het type `cq:Page` onder het inhoudsknooppunt.
 * Uw wijzigingen opslaan
 * Maak een knooppunt met de naam `jcr:content` type `cq:PageContent` en sla de wijzigingen op
@@ -105,15 +105,15 @@ http://localhost:4502/content/fetchchoices/jcr:content.json?formPath=/content/fo
 
 Het pad `/content/fetchchoices/jcr:content` is het pad van de bron en de extensie `.json` is wat is opgegeven in de servlet
 
-## Uw AEM synchroniseren
+## AEM-project synchroniseren
 
-1. Open het AEM project in uw favoriete redacteur. Daar heb ik intelliJ voor gebruikt.
+1. Open het AEM-project in uw favoriete editor. Daar heb ik intelliJ voor gebruikt.
 1. Een map maken met de naam `fetchchoices` onder `\aem-banking-application\ui.content\src\main\content\jcr_root\content`
 1. Klik met de rechtermuisknop op de map `fetchchoices` en selecteer `repo | Get Command` (Dit menu-item is ingesteld in een vorig hoofdstuk van deze zelfstudie).
 
-Dit knooppunt moet worden gesynchroniseerd van AEM naar uw lokale AEM.
+Dit knooppunt moet worden gesynchroniseerd van AEM naar uw lokale AEM-project.
 
-Uw AEM projectstructuur moet er als volgt uitzien
+Uw AEM-projectstructuur moet er als volgt uitzien
 ![ middel-resolver ](assets/mapping-servlet-resource.png)
 Filter.xml bijwerken in de map aem-banking-application\ui.content\src\main\content\META-INF\vault met de volgende vermelding
 

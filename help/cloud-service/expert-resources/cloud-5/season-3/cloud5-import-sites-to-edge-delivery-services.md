@@ -1,7 +1,7 @@
 ---
-title: Sites met Edge Delivery Services importeren in AEM Sites
-description: Leer meer over het gereedschap Importeren, zodat u eenvoudig sites met Edge Delivery Services kunt importeren in AEM Sites.
-version: Cloud Service
+title: Sites importeren in AEM Sites met Edge Delivery Services
+description: Meer informatie over het gereedschap Importeren, zodat u eenvoudig sites kunt importeren in AEM Sites met Edge Delivery Services.
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Admin, Developer, Leader, User
@@ -13,16 +13,16 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 jira: KT-15844
 exl-id: 82b607e9-8f2e-4e81-b3ee-a50a660be9a0
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 0%
 
 ---
 
-# Sites met Edge Delivery Services importeren in AEM Sites
+# Sites importeren in AEM Sites met Edge Delivery Services
 
-In deze video worden de aanbevolen werkwijzen voor het gebruik en aanpassen van het gereedschap Importeren besproken, zodat u met Edge Delivery Services eenvoudig bestaande sites kunt importeren in AEM Sites. Met Varun Mitra, Cloud Architect.
+In deze video worden de aanbevolen werkwijzen besproken voor het gebruik en aanpassen van het gereedschap Importeren, zodat u met Edge Delivery Services eenvoudig bestaande sites kunt importeren in AEM Sites. Met Varun Mitra, Cloud Architect.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3431603/?learn=on)
 

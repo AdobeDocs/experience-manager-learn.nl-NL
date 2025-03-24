@@ -1,8 +1,8 @@
 ---
 title: Formulierbijlage invoegen in database
-description: Voeg formulierbijlage in de database in met behulp van AEM workflow.
+description: Voeg formulierbijlage in de database in met behulp van de AEM-workflow.
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -10,7 +10,7 @@ jira: KT-10488
 exl-id: e8a6cab8-423b-4a8e-b2b7-9b24ebe23834
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 82
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Er is een formuliergegevensmodel gemaakt voor communicatie met de MySQL-database
 
 ## Workflow maken
 
-Als u het Adaptief formulier configureert voor verzending naar een AEM, kunt u de formulierbijlagen opslaan in een workflowvariabele of de bijlagen opslaan in een opgegeven map onder de payload. Voor dit gebruik moeten we de bijlagen opslaan in een workflowvariabele van het type ArrayList of Document. Uit deze ArrayList moeten we het eerste item extraheren en een documentvariabele initialiseren. De werkschemavariabelen riepen **listOfDocuments** en **employeePhoto** werden gecreeerd.
+Als u het Adaptief formulier configureert voor verzending naar een AEM-workflow, kunt u de formulierbijlagen opslaan in een workflowvariabele of de bijlagen opslaan in een opgegeven map onder de payload. Voor dit gebruik moeten we de bijlagen opslaan in een workflowvariabele van het type ArrayList of Document. Uit deze ArrayList moeten we het eerste item extraheren en een documentvariabele initialiseren. De werkschemavariabelen riepen **listOfDocuments** en **employeePhoto** werden gecreeerd.
 Wanneer het adaptieve formulier wordt verzonden om de workflow te activeren, wordt met behulp van het ECMA-script een stap in de workflow de variabele employeePhoto geïnitialiseerd. Hier volgt de ECMA-scriptcode
 
 ```javascript

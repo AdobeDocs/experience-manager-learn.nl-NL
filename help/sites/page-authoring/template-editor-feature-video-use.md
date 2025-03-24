@@ -2,7 +2,7 @@
 title: Bewerkbare paginasjablonen gebruiken met AEM Sites
 description: Met bewerkbare sjablonen kunnen gespecialiseerde auteurs paginasjablonen maken en bijwerken en geavanceerde beleidsconfiguraties met AEM Sites beheren.
 feature: Editable Templates
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-193
 topic: Content Management
 role: User
@@ -10,7 +10,7 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 2213d1f2-37ed-4897-a68d-04ef423395a3
 duration: 369
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 {{edge-delivery-services-and-page-editor}}
 
-Met bewerkbare sjablonen kunnen gespecialiseerde auteurs paginasjablonen maken en bijwerken en geavanceerde beleidsconfiguraties beheren met Adobe Experience Manager-sites (AEM).
+Met bewerkbare sjablonen kunnen gespecialiseerde auteurs paginasjablonen maken en bijwerken en geavanceerde beleidsconfiguraties beheren met Adobe Experience Manager (AEM)-sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/326784?quality=12&learn=on)
 
@@ -36,7 +36,7 @@ Bewerkbare sjablonen zijn de aanbevelingen voor het bouwen van nieuwe AEM Sites.
 * **Component van het Beeld** - capaciteit om eigenschappen zoals het bebouwen, Desktop dossier-upload met een nieuwe UI aan te zetten/uit te zetten en het beleid van het Beeld over malplaatjes opnieuw te gebruiken.
 
 Bewerkbare Malplaatjes kunnen onder **Hulpmiddelen** worden gevonden `>` **Algemene** `>` **Malplaatjes**.\
-Editable Templates URL (lokale AEM instantie): [ http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf ](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+Bewerkbare Templates URL (lokale instantie van AEM): [ http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 ## Aanvullende bronnen {#additional-resources}
 

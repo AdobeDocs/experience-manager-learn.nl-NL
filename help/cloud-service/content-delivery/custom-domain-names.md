@@ -1,7 +1,7 @@
 ---
 title: Opties voor aangepaste domeinnamen
 description: Leer hoe u aangepaste domeinnamen voor uw door AEM as a Cloud Service gehoste website beheert en implementeert.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Cloud Manager, Custom Domain Names
 topic: Architecture, Migration
 role: Admin, Architect, Developer
@@ -12,9 +12,9 @@ last-substantial-update: 2024-08-09T00:00:00Z
 jira: KT-15946
 thumbnail: KT-15946.jpeg
 exl-id: e11ff38c-e823-4631-a5b0-976c2d11353e
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ Voordat u begint met het implementeren van aangepaste domeinnamen, moet u de vol
 
 ### Wat is een domeinnaam
 
-Een domeinnaam is de websitenaam met een mensvriendelijke naam, zoals adobe.com, die verwijst naar een specifieke locatie (IP-adres zoals 170.2.14.16) op internet.
+Een domeinnaam is de websitenaam met een mensvriendelijke naam, bijvoorbeeld adobe.com, die verwijst naar een specifieke locatie (IP-adres zoals 170.2.14.16 ) op internet.
 
 ### Standaarddomeinnamen in AEM as a Cloud Service
 
-AEM as a Cloud Service wordt standaard voorzien van een standaarddomeinnaam, die eindigt in `*.adobeaemcloud.com` . Het SSL-certificaat van de wilde kaart dat is uitgegeven tegen `*.adobeaemcloud.com` wordt automatisch toegepast op alle omgevingen en dit jokertekencertificaat is de verantwoordelijkheid van de Adobe.
+AEM as a Cloud Service wordt standaard voorzien van een standaarddomeinnaam, die eindigt in `*.adobeaemcloud.com` . Het SSL-certificaat van de wilde kaart dat is uitgegeven tegen `*.adobeaemcloud.com` wordt automatisch toegepast op alle omgevingen en dit jokertekencertificaat is de verantwoordelijkheid van Adobe.
 
 Standaarddomeinnamen hebben de `https://<SERVICE-TYPE>-p<PROGRAM-ID>-e<ENVIRONMENT-ID>.adobeaemcloud.com` -indeling.
 
@@ -45,9 +45,9 @@ Standaarddomeinnamen hebben de `https://<SERVICE-TYPE>-p<PROGRAM-ID>-e<ENVIRONME
 
 Samengevat, zodra alle milieu&#39;s van AEM as a Cloud Service provisioned zijn, hebt u **11** (RDE heeft geen voorproefmilieu) unieke URLs die met de standaarddomeinnaam wordt gecombineerd.
 
-### Adobe-beheerde CDN vs klant-beheerde CDN
+### Door Adobe beheerde CDN versus door klant beheerde CDN
 
-Om de latentie te verminderen en de prestaties van de website te verbeteren, is AEM as a Cloud Service geïntegreerd met een Adobe-beheerde Netwerk van de Levering van Inhoud (CDN). Adobe-geleide CDN wordt automatisch toegelaten voor alle milieu&#39;s. Zie [ AEM as a Cloud Service caching ](../caching/overview.md) voor meer details.
+AEM as a Cloud Service is geïntegreerd met een door Adobe beheerde Content Delivery Network (CDN) om de latentie te verminderen en de prestaties van de website te verbeteren. CDN met Adobe-beheer wordt automatisch ingeschakeld voor alle omgevingen. Zie [ AEM as a Cloud Service caching ](../caching/overview.md) voor meer details.
 
 Nochtans, kunnen de klanten hun eigen CDN ook gebruiken, die als **wordt bedoeld klant-geleide CDN**. Het is niet noodzakelijk maar weinig klanten gebruiken het voor collectieve beleid of andere redenen. In dit geval is de klant verantwoordelijk voor het beheer van de CDN-configuraties en -instellingen.
 
@@ -59,11 +59,11 @@ Wanneer u aangepaste domeinnamen toevoegt, moet u een geldig SSL-certificaat opg
 
 Typisch, gebruiken de klanten een naam van het douanedomein voor de milieu&#39;s van Prod (de Website van AEM as a Cloud Service) en soms voor lagere milieu&#39;s zoals **stadium** of **dev**.
 
-| AEM | Aangepast domein ondersteund? |
+| AEM-servicetype | Aangepast domein ondersteund? |
 |---------------------|:-----------------------:|
 | Auteur | ✘ |
 | Voorvertoning | ✔ |
-| Publish | ✔ |
+| Publiceren | ✔ |
 
 ## Domeinnamen implementeren
 
@@ -75,12 +75,12 @@ In de volgende tabel vindt u ook een overzicht van de locaties waarop u de speci
 
 | Aangepaste domeinnaam met | SSL-certificaat toevoegen aan | Domeinnaam toevoegen aan | DNS-records configureren op | Hebt u CDN-regel voor HTTP-headervalidatie nodig? |
 |---------------------|:-----------------------:|-----------------------:|-----------------------:|-----------------------:|
-| CDN met beheerde Adobe | Adobe Cloud Manager | Adobe Cloud Manager | DNS-hostingservice | ✘ |
+| CDN met Adobe-beheer | Adobe Cloud Manager | Adobe Cloud Manager | DNS-hostingservice | ✘ |
 | Door de klant beheerde CDN | CDN-leverancier | CDN-leverancier | DNS-hostingservice | ✔ |
 
 ### Stapsgewijze zelfstudies
 
 Nu u het beheerproces voor domeinnamen begrijpt, kunt u aangepaste domeinnamen voor uw AEM as a Cloud Service-website implementeren door de onderstaande zelfstudies te volgen:
 
-**[Namen van het Domein van de Douane met Adobe-geleide CDN](./custom-domain-name-with-adobe-managed-cdn.md)**: In dit leerprogramma, leert u hoe te om een naam van het douanedomein aan een **website van AEM as a Cloud Service met Adobe-beheerde CDN** toe te voegen.
+**[Namen van het Domein van de Douane met Adobe-Beheerde CDN](./custom-domain-name-with-adobe-managed-cdn.md)**: In dit leerprogramma, leert u hoe te om een naam van het douanedomein aan een **website van AEM as a Cloud Service met Adobe-Beheerde CDN** toe te voegen.
 **[Namen van het Domein van de Douane met klant-geleide CDN](./custom-domain-names-with-customer-managed-cdn.md)**: In dit leerprogramma, leert u hoe te om een naam van het douanedomein aan een **website van AEM as a Cloud Service met klant-beheerde CDN** toe te voegen.

@@ -1,7 +1,7 @@
 ---
-title: Video's over Edge Delivery Services
+title: Edge Delivery Services-video's
 description: Leer hoe u websites snel kunt maken met Edge Delivery Services.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -11,14 +11,14 @@ doc-type: Catalog
 duration: 660
 last-substantial-update: 2024-03-20T00:00:00Z
 exl-id: 4f08bc07-0c9c-42fc-af42-3d51af9f37c4
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
 
 ---
 
-# Video&#39;s over Edge Delivery Services
+# Edge Delivery Services-video&#39;s
 
 Leer hoe u websites snel kunt maken met Edge Delivery Services.
 
@@ -27,7 +27,7 @@ Leer hoe u websites snel kunt maken met Edge Delivery Services.
 Herzie de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) voor volledige details van Edge Delivery Services en zijn mogelijkheden.
 
 
-## Zelfstudies voor ontwikkelaars van Edge Delivery Services
+## Zelfstudies voor Edge Delivery Services-ontwikkelaars
 
 <!-- CARDS 
 
@@ -48,8 +48,8 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" title="Zelfstudie over ontwerpen en Edge Delivery Services op basis van documenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial./media_18d1c2a9ecd6557f129e41b42a03a8dfbff1e27e9.png?width=400&format=png&optimize=medium" alt="Zelfstudie over ontwerpen en Edge Delivery Services op basis van documenten"
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" title="Zelfstudie over schrijven en Edge Delivery Services op basis van documenten" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial./media_18d1c2a9ecd6557f129e41b42a03a8dfbff1e27e9.png?width=400&format=png&optimize=medium" alt="Zelfstudie over schrijven en Edge Delivery Services op basis van documenten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -57,9 +57,9 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" title="Zelfstudie over ontwerpen en Edge Delivery Services op basis van documenten"> op document-Gebaseerde auteurs en Edge Delivery Services leerprogramma </a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" title="Zelfstudie over schrijven en Edge Delivery Services op basis van documenten"> op document-Gebaseerde auteurs en het leerprogramma van Edge Delivery Services </a>
                     </p>
-                    <p class="is-size-6">Leer hoe u websites voor Edge Delivery Services maakt die zijn gemaakt met documentgebaseerde ontwerpfuncties.</p>
+                    <p class="is-size-6">Leer hoe u Edge Delivery Services-websites kunt maken die zijn gemaakt met documentgebaseerde ontwerpfuncties.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Begin het leerprogramma </span>
@@ -80,9 +80,9 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./developing/universal-editor/0-overview.md" target="_blank" rel="referrer" title="Zelfstudie voor Universal Editor en Edge Delivery Services"> Universele Redacteur en Edge Delivery Services leerprogramma </a>
+                        <a href="./developing/universal-editor/0-overview.md" target="_blank" rel="referrer" title="Zelfstudie voor Universal Editor en Edge Delivery Services"> Universele Redacteur en de zelfstudie van Edge Delivery Services </a>
                     </p>
-                    <p class="is-size-6">Leer de grondbeginselen van het creëren van een websites van Edge Delivery Services authored met Universele Redacteur.</p>
+                    <p class="is-size-6">Leer de basisbeginselen van het maken van Edge Delivery Services-websites die zijn gemaakt met Universal Editor.</p>
                 </div>
                 <a href="./developing/universal-editor/0-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Begin het leerprogramma </span>
@@ -120,7 +120,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./developing/prerequisites.md" title="Vereisten"> de eerste vereisten van de Ontwikkelaar </a>
             </p>
-            <p class="is-size-6">Wat je nodig hebt om te ontwikkelen met Edge Delivery Services.</p>
+            <p class="is-size-6">Wat je nodig hebt om te beginnen ontwikkelen met Edge Delivery Services.</p>
             <a href="./developing/prerequisites.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -152,7 +152,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./developing/aem-boilerplate.md" title="Boilerplate-sjabloon gebruiken"> AEM Boilerplate </a>
             </p>
-            <p class="is-size-6">Gebruik het AEM Boilerplate-sjabloon om de gegevensopslagruimte voor code in te stellen.</p>
+            <p class="is-size-6">Gebruik de AEM Boilerplate-sjabloon om de gegevensopslagruimte voor code in te stellen.</p>
             <a href="./developing/aem-boilerplate.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -231,10 +231,10 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./developing/preview-and-publish.md" title="Voorvertonen en Publish-inhoud"
+            <a href="./developing/preview-and-publish.md" title="Inhoud voorvertonen en publiceren"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Voorvertonen en Publish-inhoud">
+                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Inhoud voorvertonen en publiceren">
             </a>
           </figure>
         </div>
@@ -243,7 +243,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/preview-and-publish.md" title="Voorvertonen en Publish-inhoud"> Voorproef en publiceer inhoud </a>
+              <a href="./developing/preview-and-publish.md" title="Inhoud voorvertonen en publiceren"> Voorproef en publiceer inhoud </a>
             </p>
             <p class="is-size-6">Inhoud voorvertonen en publiceren met de AEM Sidekick.</p>
             <a href="./developing/preview-and-publish.md" class="spectrum-Button
@@ -275,7 +275,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/sidekick.md" title="De Sidekick gebruiken"> Gebruik de AEM Sidekick </a>
+              <a href="./developing/sidekick.md" title="De Sidekick gebruiken"> Gebruik AEM Sidekick </a>
             </p>
             <p class="is-size-6">Leer hoe u de AEM Sidekick gebruikt.</p>
             <a href="./developing/sidekick.md" class="spectrum-Button

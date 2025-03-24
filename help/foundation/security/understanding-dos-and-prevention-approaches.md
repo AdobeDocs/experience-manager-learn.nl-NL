@@ -1,7 +1,7 @@
 ---
 title: Inzicht in DoS/DDoS-preventie
-description: Leer hoe te om aanvallen van Dos en van DDoS tegen AEM te verhinderen en te verlichten.
-version: 6.5, Cloud Service
+description: Leer hoe u DoS- en DDoS-aanvallen op AEM kunt voorkomen en beperken.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Development
 role: Admin, Architect, Developer
@@ -11,7 +11,7 @@ duration: 75
 last-substantial-update: 2024-03-30T00:00:00Z
 jira: KT-15219
 exl-id: 1d7dd829-e235-4884-a13f-b6ea8f6b4b0b
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Inzicht in DoS/DDoS-preventie in AEM
 
-Leer over de opties beschikbaar om Dos en aanvallen van Dos en te verlichten op uw AEM milieu te verhinderen en te verlichten. Alvorens in de preventiemechanismen te duiken, een kort overzicht van [ DoS ](https://developer.mozilla.org/en-US/docs/Glossary/DOS_attack) en [ DDoS ](https://developer.mozilla.org/en-US/docs/Glossary/Distributed_Denial_of_Service).
+Leer over de opties beschikbaar om Dos en aanvallen van Dos en van DDoS op uw milieu van AEM te verhinderen en te verlichten. Alvorens in de preventiemechanismen te duiken, een kort overzicht van [ DoS ](https://developer.mozilla.org/en-US/docs/Glossary/DOS_attack) en [ DDoS ](https://developer.mozilla.org/en-US/docs/Glossary/Distributed_Denial_of_Service).
 
 - DoS (Ontkenning van Dienst) en DDoS (Verspreid Ontkenning van de Dienst) aanvallen zijn beide kwaadwillige pogingen om het normale functioneren van een gerichte server, de dienst, of het netwerk te verstoren, die het ontoegankelijk maken voor zijn voorgenomen gebruikers maken.
 - De aanvallen van Dos komen typisch uit één enkele bron voort, terwijl de aanvallen DDoS uit veelvoudige bronnen komen.
@@ -36,19 +36,19 @@ In de volgende tabel wordt beschreven hoe u DoS- en DDoS-aanvallen voorkomt en b
             <td><strong>Beschrijving</strong></td>
             <td><strong>AEM as a Cloud Service</strong></td>
             <td><strong>AEM 6.5 (AMS)</strong></td>
-            <td><strong>AEM 6.5 (op prem)</strong></td>
+            <td><strong>AEM 6.5 (on-prem)</strong></td>
         </tr>
         <tr>
             <td>Web Application Firewall (WAF)</td>
             <td>Een veiligheidsoplossing die wordt ontworpen om Webtoepassingen tegen diverse soorten aanvallen te beschermen.</td>
             <td>
-            <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank"> WAF-DoS de vergunning van de Bescherming </a></td>
+            <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank"> WAF-DDoS de vergunning van de Bescherming </a></td>
             <td><a href="https://docs.aws.amazon.com/waf/" target="_blank"> AWS </a> of <a href="https://azure.microsoft.com/en-us/products/web-application-firewall" target="_blank"> Azure </a> WAF via contract van AMS.</td>
-            <td>UW GEWENSTE WAF</td>
+            <td>WAF van uw voorkeur</td>
         </tr>
         <tr>
             <td>ModSecurity</td>
-            <td>ModSecurity (ook bekend als de Apache-module 'mod_security') is een open-source, platformonafhankelijke oplossing die bescherming biedt tegen een reeks aanvallen op webtoepassingen.<br/> In AEM as a Cloud Service is dit alleen van toepassing op AEM Publish-service, omdat er geen Apache-webserver is en Dispatcher AEM vóór AEM Auteur-service.</td>
+            <td>ModSecurity (ook bekend als de Apache-module 'mod_security') is een open-source, platformonafhankelijke oplossing die bescherming biedt tegen een reeks aanvallen op webtoepassingen.<br/> In AEM as a Cloud Service is dit alleen van toepassing op de AEM Publish-service, omdat er geen Apache-webserver en AEM Dispatcher aanwezig zijn vóór de AEM Author-service.</td>
             <td colspan="3"><a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection" target="_blank">ModSecurity inschakelen </a></td>
         </tr>
         <tr>
@@ -61,7 +61,7 @@ In de volgende tabel wordt beschreven hoe u DoS- en DDoS-aanvallen voorkomt en b
     </tbody>
 </table>
 
-## Analyse van Post-incidenten en voortdurende verbetering
+## Analyse na incidenten en voortdurende verbetering
 
 Terwijl er geen one-size-past-al standaardstroom voor het identificeren van en het verhinderen van aanvallen DoS/DDoS is en het van het veiligheidsproces van uw organisatie afhangt. De **post-inherente analyse en de ononderbroken verbetering** is een cruciale stap in het proces. Hier volgen enkele aanbevolen procedures:
 

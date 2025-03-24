@@ -1,11 +1,11 @@
 ---
 title: AEM Assets - video's en zelfstudies
-description: Bekijk onze video's voor ondersteuning en assistentie van AEM middelen.
+description: Bekijk onze video's voor AEM Asset-ondersteuning en hulp.
 sub-product: Experience Manager Assets
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 doc-type: Catalog
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: d0e1513b4e6ea536b40f3dbb69a0f512f7521164
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 {{edge-delivery-services}}
 
-Adobe Experience Manager (AEM) Assets is een hulpprogramma voor het beheer van digitale middelen op AEM Platform waarmee gebruikers hun digitale middelen (afbeeldingen, video&#39;s, documenten en audioclips) kunnen maken, beheren en delen in een opslagplaats op internet. Deze gebruikershandleiding bevat video&#39;s en zelfstudies over de vele functies en mogelijkheden van AEM Assets.
+Adobe Experience Manager (AEM) Assets is een hulpprogramma voor middelenbeheer op het AEM-platform waarmee gebruikers hun digitale middelen (afbeeldingen, video&#39;s, documenten en audioclips) kunnen maken, beheren en delen in een opslagplaats op internet. Deze gebruikershandleiding bevat video&#39;s en zelfstudies over de vele functies en mogelijkheden van AEM Assets.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_assets_overview"
@@ -61,7 +61,7 @@ Leer wat AEM Assets is en hoe u kunt gebruiken om de zakelijke doelstellingen va
    </a>
    <div>
       <a href="../assets-essentials/overview.md">
-      <strong> Begonnen het worden met Assets Essentials </strong>
+      <strong> Begonnen het worden met de Hoofdzaak van Activa </strong>
       </a>
    </div>
    <p>
@@ -70,15 +70,15 @@ Leer wat AEM Assets is en hoe u kunt gebruiken om de zakelijke doelstellingen va
 </td>
 <td>
    <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-   <img alt="Dynamic Media - Overzicht" src="./assets/overview/dynamic-media.png" />
+   <img alt="Dynamisch mediaoverzicht" src="./assets/overview/dynamic-media.png" />
    </a>
    <div>
       <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-      <strong> Overzicht van Dynamic Media </strong>
+      <strong> Dynamisch Overzicht van Media </strong>
       </a>
    </div>
    <p>
-      <em> beheer en toegang media inhoud gebruikend Dynamic Media </em>
+      <em> beheer en toegang media inhoud gebruikend Dynamische Media </em>
    <p>
 </td>
 </table>
@@ -91,4 +91,4 @@ Leer wat AEM Assets is en hoe u kunt gebruiken om de zakelijke doelstellingen va
 * [AEM as a Cloud Service-zelfstudies](/help/cloud-service/overview.md)
 * [AEM Sites-zelfstudies](/help/sites/overview.md)
 * [AEM Forms-zelfstudies](/help/forms/overview.md)
-* [Zelfstudies AEM Stichting](/help/foundation/overview.md)
+* [Zelfstudies voor AEM Foundation](/help/foundation/overview.md)

@@ -1,7 +1,7 @@
 ---
 title: Responsieve onderbrekingspunten
-description: Leer hoe u nieuwe responsieve onderbrekingspunten configureert voor AEM responsieve paginaeditor.
-version: Cloud Service
+description: Leer hoe u nieuwe responsieve onderbrekingspunten configureert voor de responsieve paginaeditor van AEM.
+version: Experience Manager as a Cloud Service
 feature: Page Editor
 topic: Mobile, Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-11664
 thumbnail: kt-11664.jpeg
 exl-id: 8b48c28f-ba7f-4255-be96-a7ce18ca208b
 duration: 52
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 # Responsieve onderbrekingspunten
 
-Leer hoe u nieuwe responsieve onderbrekingspunten configureert voor AEM responsieve paginaeditor.
+Leer hoe u nieuwe responsieve onderbrekingspunten configureert voor de responsieve paginaeditor van AEM.
 
 ## CSS-onderbrekingspunten maken
 
-Maak eerst mediafuncties in de CSS van het AEM responsieve raster waaraan de responsieve AEM site voldoet.
+Maak eerst mediafrasterpunten in de CSS van het AEM-responsieve raster waar de responsieve AEM-site zich aan houdt.
 
 Maak in het bestand `/ui.apps/src/main/content/jcr_root/apps/[app name]/clientlibs/clientlib-grid/less/grid.less` de onderbrekingspunten die u samen met de mobiele emulator wilt gebruiken. Noteer `max-width` voor elk onderbrekingspunt, aangezien dit de CSS breekpunten aan de AEM responsieve onderbrekingspunten van de Redacteur van de Pagina in kaart brengt.
 
@@ -39,17 +39,17 @@ Open het `ui.content/src/main/content/jcr_root/conf/<app name>/settings/wcm/temp
 
 ## Emulatoren maken
 
-Er moeten AEM emulators zijn gedefinieerd waarmee auteurs de responsieve weergave kunnen selecteren die u wilt bewerken in de Pagina-editor.
+Er moeten AEM-emulators zijn gedefinieerd waarmee auteurs de responsieve weergave kunnen selecteren die u wilt bewerken in de Pagina-editor.
 
 Emulatorknooppunten maken onder `/ui.apps/src/main/content/jcr_root/apps/<app name>/emulators`
 
-Bijvoorbeeld `/ui.apps/src/main/content/jcr_root/apps/wknd-examples/emulators/phone-landscape` . Kopieer een referentie-emulatorknooppunt van `/libs/wcm/mobile/components/emulators` in CRXDE Lite naar en werk de kopie bij om de definitie van het knooppunt te versnellen.
+Bijvoorbeeld `/ui.apps/src/main/content/jcr_root/apps/wknd-examples/emulators/phone-landscape` . Kopieer een referentie-emulatorknooppunt van `/libs/wcm/mobile/components/emulators` in CRXDE Lite naar de kopie en werk deze bij om de definitie van het knooppunt te versnellen.
 
 ![ creeer nieuwe mededingers ](./assets/responsive-breakpoints/create-new-emulators.jpg)
 
 ## Apparaatgroep maken
 
-Groepeer de mededingers om [ hen beschikbaar te maken in AEM Redacteur van de Pagina ](#update-the-templates-device-group).
+Groepeer de mededingers om [ hen beschikbaar te maken in de Redacteur van de Pagina van AEM ](#update-the-templates-device-group).
 
 Maak een knooppuntstructuur van `/apps/settings/mobile/groups/<name of device group>` onder `/ui.apps/src/main/content/jcr_root` .
 

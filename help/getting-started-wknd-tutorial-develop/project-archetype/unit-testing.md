@@ -1,7 +1,7 @@
 ---
 title: Eenheid testen
 description: Voer een eenheidstest uit die het gedrag van het het Verzamelen Model van de component van de Byte bevestigt, dat in het leerprogramma van de Component van de Douane wordt gecreeerd.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: APIs, AEM Project Archetype
 topic: Content Management, Development
 role: Developer
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
 recommendations: noDisplay, noCatalog
 duration: 706
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2923'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Bekijk de basislijncode waarop de zelfstudie is gebaseerd:
    $ git checkout tutorial/unit-testing-start
    ```
 
-1. Stel codebasis aan een lokale AEM instantie op gebruikend uw Maven vaardigheden:
+1. Stel codebasis aan een lokale instantie van AEM op gebruikend uw Maven vaardigheden:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -64,14 +64,14 @@ U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-w
 ## Doelstelling
 
 1. Begrijp de grondbeginselen van eenheidstests.
-1. Leer over kaders en hulpmiddelen algemeen worden gebruikt om AEM code te testen die.
-1. Begrijp opties voor het verplaatsen of simuleren van AEM middelen wanneer het schrijven van eenheidstests.
+1. Meer informatie over raamwerken en gereedschappen die vaak worden gebruikt om AEM-code te testen.
+1. Begrijp opties voor het verplaatsen of simuleren van AEM-bronnen bij het schrijven van eenheidstests.
 
 ## Achtergrond {#unit-testing-background}
 
-In dit leerprogramma, zullen wij onderzoeken hoe te om [ Tests van de Eenheid ](https://en.wikipedia.org/wiki/Unit_testing) voor 2} Sling Model van onze component Byline ](https://sling.apache.org/documentation/bundles/models.html) te schrijven (gecreeerd in [ Creërend een douane AEM Component ](custom-component.md)). [ Eenheidstests zijn in Java™ geschreven ontwikkeltijdstests die het verwachte gedrag van Java™-code controleren. Elke eenheidstest is doorgaans klein en valideert de uitvoer van een methode (of werkeenheden) aan de hand van de verwachte resultaten.
+In dit leerprogramma, zullen wij onderzoeken hoe te om [ Tests van de Eenheid ](https://en.wikipedia.org/wiki/Unit_testing) voor 2} Sling Model van onze component Byline ](https://sling.apache.org/documentation/bundles/models.html) te schrijven (gecreeerd in [ Creërend een Component van douaneAEM ](custom-component.md)). [ Eenheidstests zijn in Java™ geschreven ontwikkeltijdstests die het verwachte gedrag van Java™-code controleren. Elke eenheidstest is doorgaans klein en valideert de uitvoer van een methode (of werkeenheden) aan de hand van de verwachte resultaten.
 
-We gebruiken AEM best practices en gebruiken:
+We gebruiken best practices van AEM en maken gebruik van:
 
 * [ JUnit 5 ](https://junit.org/junit5/)
 * [ Mockito het Testen Kader ](https://site.mockito.org/)
@@ -79,7 +79,7 @@ We gebruiken AEM best practices en gebruiken:
 
 ## Unit Testing and Adobe Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
-[ Adobe Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) integreert de uitvoering van de eenheidstest en [ codedekking rapporterend ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html) in zijn pijpleiding CI/CD helpen de beste praktijken van eenheid het testen AEM code aanmoedigen en bevorderen.
+[ Adobe Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) integreert de uitvoering van de eenheidstest en [ codedekking rapporterend ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html) in zijn pijpleiding CI/CD helpen de beste praktijken van eenheid bevorderen die de code van AEM testen.
 
 Hoewel het testen van eenheden een goede praktijk voor om het even welke codebasis is, is het belangrijk om bij het gebruiken van Cloud Manager uit zijn het testen en rapporteringsfaciliteiten van de codekwaliteit voordeel te halen door eenheidstests voor Cloud Manager te verstrekken om te lopen.
 
@@ -90,11 +90,11 @@ De eerste stap is Geweven gebiedsdelen te inspecteren om het schrijven en het ru
 1. JUnit5
 1. Mockito Test Framework
 1. Apache Sling Mocks
-1. AEM Mocks Test Framework (per io.wcm)
+1. AEM Mocks Test Framework (door io.wcm)
 
-**JUnit5**, **Mockito, en **AEM de testgebiedsdelen** automatisch toegevoegd aan het project tijdens opstelling gebruikend [ AEM Maven archetype ](project-setup.md).
+**JUnit5**, **Mockito, en **AEM Mocks** testgebiedsdelen worden automatisch toegevoegd aan het project tijdens opstelling gebruikend [ AEM Maven archetype ](project-setup.md).
 
-1. Om deze gebiedsdelen te bekijken, open POM van de Bovenliggende Reactor in **aem-guides-wknd/pom.xml**, navigeer aan `<dependencies>..</dependencies>` en bekijk de gebiedsdelen voor JUnit, Mockito, Apache Sling Mocks, en AEM de Tests van het Mock door io.wcm onder `<!-- Testing -->`.
+1. Om deze gebiedsdelen te bekijken, open POM van de Bovenliggende Reactor in **aem-guides-wknd/pom.xml**, navigeer aan `<dependencies>..</dependencies>` en bekijk de gebiedsdelen voor JUnit, Mockito, Apache Sling Mocks, en de Tests van het Mock van AEM door io.wcm onder `<!-- Testing -->`.
 1. Zorg ervoor dat `io.wcm.testing.aem-mock.junit5` aan **4.1.0** wordt geplaatst:
 
    ```xml
@@ -211,17 +211,17 @@ Bij het schrijven van eenheidstests zijn er twee primaire benaderingen:
 * [ TDD of de Gedreven Ontwikkeling van de Test ](https://en.wikipedia.org/wiki/Test-driven_development), die impliceert het schrijven van de eenheidstests incrementeel, onmiddellijk alvorens de implementatie wordt ontwikkeld; schrijf een test, schrijf de implementatie om de testpas te maken.
 * Implementatie-eerste Ontwikkeling, die het ontwikkelen van werkende code eerst en dan het schrijven tests impliceert die genoemde code bevestigen.
 
-In dit leerprogramma, wordt de laatstgenoemde benadering gebruikt (aangezien wij reeds een werkende **BylineImpl.java** in een vorig hoofdstuk hebben gecreeerd). Daarom moeten we het gedrag van de openbare methoden van het systeem, maar ook een aantal van de toepassingsdetails ervan, herzien en begrijpen. Dit kan tegendeel klinken, aangezien een goede test alleen de inputs en outputs moet betreffen, maar wanneer men in AEM werkt, zijn er verschillende implementatieoverwegingen die moeten worden begrepen om werktests te kunnen uitvoeren.
+In dit leerprogramma, wordt de laatstgenoemde benadering gebruikt (aangezien wij reeds een werkende **BylineImpl.java** in een vorig hoofdstuk hebben gecreeerd). Daarom moeten we het gedrag van de openbare methoden van het systeem, maar ook een aantal van de toepassingsdetails ervan, herzien en begrijpen. Dit kan tegendeel klinken, aangezien een goede test alleen de inputs en outputs moet betreffen, maar wanneer men in AEM werkt, zijn er verschillende implementatieoverwegingen die moeten worden begrepen voor het opstellen van werktests.
 
-TDD in de context van AEM vereist een niveau van deskundigheid en kan het best worden aangenomen door AEM ontwikkelaars die deskundig zijn in AEM ontwikkeling en eenheidstests van AEM code.
+TDD in de context van AEM vereist een expertiseniveau en kan het best worden toegepast door AEM-ontwikkelaars die deskundig zijn op het gebied van de ontwikkeling van AEM en het testen van eenheden van AEM-code.
 
-## Opzetten AEM testcontext  {#setting-up-aem-test-context}
+## AEM-testcontext instellen  {#setting-up-aem-test-context}
 
-De meeste code die voor AEM wordt geschreven, is afhankelijk van API&#39;s van het type JCR, Sling of AEM. Deze API&#39;s vereisen dat de context van een actieve AEM correct wordt uitgevoerd.
+De meeste code die voor AEM wordt geschreven, is gebaseerd op JCR-, Sling- of AEM-API&#39;s, waarvoor op hun beurt de context van een AEM die wordt uitgevoerd, correct moet worden uitgevoerd.
 
-Aangezien de eenheidstests bij bouwstijl, buiten de context van een lopende AEM instantie worden uitgevoerd, is er geen dergelijke context. Om dit te vergemakkelijken, [ AEM Mocks van wcm.io ](https://wcm.io/testing/aem-mock/usage.html) creeert mock context die deze APIs __ toestaat dienst alsof zij in AEM lopen.
+Aangezien eenheidstests bij bouwstijl, buiten de context van een lopende instantie van AEM worden uitgevoerd, is er geen dergelijke context. Om dit te vergemakkelijken, ](https://wcm.io/testing/aem-mock/usage.html) van AEM Mocks van 0} wcm.io creeert mock context die deze APIs __ toestaat dienst alsof zij in AEM lopen.[
 
-1. Creeer een AEM context gebruikend **wcm.io `AemContext` in** BylineImplTest.java **door het toe te voegen als uitbreiding JUnit die met `@ExtendWith` aan het {** dossier 6} wordt versierd BylineImplTest.java. **** De extensie zorgt voor alle vereiste initialisatie- en opschoningstaken. Maak een klassevariabele voor `AemContext` die voor alle testmethoden kan worden gebruikt.
+1. Creeer een context van AEM gebruikend **wcm.io `AemContext` in** BylineImplTest.java **door het toe te voegen als uitbreiding JUnit die met `@ExtendWith` aan het {** dossier 6} wordt versierd BylineImplTest.java. **** De extensie zorgt voor alle vereiste initialisatie- en opschoningstaken. Maak een klassevariabele voor `AemContext` die voor alle testmethoden kan worden gebruikt.
 
    ```java
    import org.junit.jupiter.api.extension.ExtendWith;
@@ -235,12 +235,12 @@ Aangezien de eenheidstests bij bouwstijl, buiten de context van een lopende AEM 
        private final AemContext ctx = new AemContext();
    ```
 
-   Met deze variabele, `ctx` , wordt een AEM context belicht die enkele AEM- en Sling-abstracties biedt:
+   Deze variabele, `ctx` , maakt een modelcontext van AEM beschikbaar die enkele abstracties van AEM en Sling biedt:
 
    * Het BylineImpl-opmaakmodel is in deze context geregistreerd
    * In deze context worden structuur voor JCR-inhoud van Mock gemaakt
    * Aangepaste OSGi-services kunnen in deze context worden geregistreerd
-   * Verschillende veelvoorkomende vereiste modelobjecten en hulpelementen, zoals SlingHttpServletRequest-objecten, diverse services voor modelschaling en AEM OSGi, zoals ModelFactory, PageManager, Page, Template, ComponentManager, Component, TagManager, Tag, enzovoort.
+   * Verschillende veelvoorkomende vereiste modelobjecten en hulpfuncties, zoals SlingHttpServletRequest-objecten, diverse modellen Sling en AEM OSGi-services, zoals ModelFactory, PageManager, Page, Template, ComponentManager, Component, TagManager, Tag, enzovoort.
       * *niet alle methodes voor deze voorwerpen worden uitgevoerd!*
    * En [ veel meer ](https://wcm.io/testing/aem-mock/usage.html)!
 
@@ -256,7 +256,7 @@ Aangezien de eenheidstests bij bouwstijl, buiten de context van een lopende AEM 
    }
    ```
 
-   * **`addModelsForClasses`** registreert het te testen Sling Model, in de mock AEM Context, zodat kan het in de `@Test` methodes worden geconcretiseerd.
+   * **`addModelsForClasses`** registreert het te testen Sling Model in de modelcontext van AEM, zodat kan het in de `@Test` methodes worden geconcretiseerd.
    * **`load().json`** laadt bronstructuren in de modelcontext, die de code toestaat om met deze middelen in wisselwerking te staan alsof zij door een echte bewaarplaats werden verstrekt. De middeldefinities in het dossier **`BylineImplTest.json`** worden geladen in de mockJCR context onder **/content**.
    * **`BylineImplTest.json`** bestaat nog niet, dus laten we het maken en de JCR-bronstructuren definiëren die nodig zijn voor de test.
 

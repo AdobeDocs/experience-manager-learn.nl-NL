@@ -1,7 +1,7 @@
 ---
 title: Onboarding van AEM as a Cloud Service
 description: Meer informatie over instaptoegang tot AEM as a Cloud Service, vanaf de contractfase tot aan het instellen van omgevingen met Cloud Manager.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Onboarding
 topic: Migration, Upgrade
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8631
 thumbnail: 336959.jpeg
 exl-id: 9d2004e5-e928-4190-8298-695635c8e92c
 duration: 504
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 5%
@@ -27,13 +27,13 @@ Meer informatie over instaptoegang tot AEM as a Cloud Service vanaf de contractf
 
 ![ op het instappen hoog niveaudiagram ](assets/onboarding-diagram.png)
 
-Een essentieel onderdeel van instapweigering is het maken van AEM as a Cloud Service-programma&#39;s en het bieden van verschillende omgevingen met behulp van Adobe Cloud Manager. De [ Admin Console ](https://adminconsole.adobe.com/) wordt gebruikt om rollen toe te wijzen en toegang voor gebruikers in uw organisatie te verlenen aan AEM milieu&#39;s.
+Een belangrijk onderdeel van instapweigering is het maken van AEM as a Cloud Service-programma&#39;s en het aanbieden van verschillende omgevingen met Adobe Cloud Manager. [ Admin Console ](https://adminconsole.adobe.com/) wordt gebruikt om rollen toe te wijzen en toegang voor gebruikers in uw organisatie aan de milieu&#39;s van AEM te verlenen.
 
 ## Belangrijkste activiteiten
 
-+ Een systeembeheerder gebruikt de [ Admin Console ](https://adminconsole.adobe.com/) om één of meerdere gebruikers aan [ Cloud Manager toe te wijzen - BedrijfsEigenaar ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) productprofiel.
++ Een systeembeheerder gebruikt [ Admin Console ](https://adminconsole.adobe.com/) om één of meerdere gebruikers aan [ Cloud Manager toe te wijzen - BedrijfsEigenaar ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) productprofiel.
 + Gebruiker(s) die aan het Profiel van het Product van de BedrijfsEigenaar worden toegewezen gebruikt de zelfbediening eigenschappen van [ Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) aan [ creeer programma(s) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html) en [ voeg milieu&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) toe
-+ Gebruik de [ Admin Console ](https://adminconsole.adobe.com/) om Ontwikkelaars en gebruikers aan verschillende [ rollen van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) toe te wijzen en toestemming aan diverse AEM milieu&#39;s te verlenen.
++ Gebruik [ Admin Console ](https://adminconsole.adobe.com/) om Ontwikkelaars en gebruikers aan verschillende [ rollen van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) toe te wijzen en toestemming aan diverse milieu&#39;s van AEM te verlenen.
 
 ## Handbeweging
 
@@ -46,7 +46,7 @@ Voordat u de praktische oefening probeert, moet u controleren of u de bovenstaan
 
 Zorg er ook voor dat u de vorige hands-on oefening hebt uitgevoerd:
 
-+ [AEM Moderniseringsgereedschappen, praktische oefening](./aem-modernization-tools.md#hands-on-exercise)
++ [AEM Modernization Tools hands-on oefening](./aem-modernization-tools.md#hands-on-exercise)
 
 <table style="border-width:0">
     <tr>
@@ -59,7 +59,7 @@ Zorg er ook voor dat u de vorige hands-on oefening hebt uitgevoerd:
         <td style="width:100%;margin-bottom:1rem;">
             <div style="font-size:1.25rem;font-weight:400;">Hands-on met onboarding</div>
             <p style="margin:1rem 0">
-                Ontdek het AEM as a Cloud Service-instapproces en hoe u een AEM toepassing kunt implementeren in de AEM SDK.
+                Ontdek het AEM as a Cloud Service-instapproces en hoe u een AEM-toepassing kunt implementeren in de AEM SDK.
             </p>
             <a  rel="noreferrer"
                 target="_blank"

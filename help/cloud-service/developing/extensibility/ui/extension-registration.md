@@ -1,8 +1,8 @@
 ---
-title: Registratie van AEM UI-extensie
+title: AEM UI-extensie registreren
 description: Leer hoe u een AEM UI-extensie registreert.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: ef2290d9-ba40-429b-b10d-e82d6c1c20f6
 duration: 85
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Registratie van extensies
 
-AEM de uitbreidingen UI zijn gespecialiseerde toepassing van App Builder, die op React wordt gebaseerd en het [ React Spectrum ](https://react-spectrum.adobe.com/react-spectrum/) kader UI gebruikt.
+De uitbreidingen UI van AEM zijn gespecialiseerde toepassing van App Builder, die op Reageren wordt gebaseerd en gebruiken het [ React Spectrum ](https://react-spectrum.adobe.com/react-spectrum/) kader UI.
 
 Om te bepalen waar en hoe de AEM UI-extensie wordt weergegeven, zijn twee configuraties vereist in de App Builder-app van de extensie: toepassingsroutering en de registratie van de extensie.
 
@@ -55,25 +55,25 @@ function App(props) {
 
 `ExtensionRegistration.js` moet onmiddellijk worden geladen via de indexroute van de extensie en moet het registratiepunt van de extensie gebruiken.
 
-Gebaseerd op het AEM UI die uitbreidingsmalplaatje wordt geselecteerd wanneer [ de App Builder app uitbreiding ](./app-initialization.md) initialiseert, worden de verschillende uitbreidingspunten gesteund.
+Gebaseerd op het geselecteerde de uitbreidingsmalplaatje van AEM UI wanneer [ initialiseert de de toepassingsuitbreiding van App Builder ](./app-initialization.md), worden de verschillende uitbreidingspunten gesteund.
 
 + [UI-extensiepunten voor inhoudsfragmenten](./content-fragments/overview.md#extension-points)
 
 ## Extensies voorwaardelijk opnemen
 
-AEM UI-extensies kunnen aangepaste logica uitvoeren om de AEM omgevingen waarin de extensie wordt weergegeven, te beperken. Deze controle wordt uitgevoerd vóór de `register` -aanroep in de `ExtensionRegistration` -component en wordt onmiddellijk geretourneerd als de extensie niet moet worden weergegeven.
+AEM UI-extensies kunnen aangepaste logica uitvoeren om de AEM-omgevingen waarin de extensie wordt weergegeven, te beperken. Deze controle wordt uitgevoerd vóór de `register` -aanroep in de `ExtensionRegistration` -component en wordt onmiddellijk geretourneerd als de extensie niet moet worden weergegeven.
 
 Voor deze controle is een beperkte context beschikbaar:
 
-+ De AEM host waarop de extensie wordt geladen.
-+ De AEM toegangstoken van de huidige gebruiker.
++ De AEM-host waarop de extensie wordt geladen.
++ De AEM-toegangstoken van de huidige gebruiker.
 
 De meest gebruikte controles voor het laden van een extensie zijn:
 
-+ Het gebruiken van de AEM (`new URLSearchParams(window.location.search).get('repo')`) om te bepalen als de uitbreiding zou moeten laden.
-   + Alleen de extensie weergeven in AEM omgevingen die deel uitmaken van een specifiek programma (zoals in het onderstaande voorbeeld wordt getoond).
-   + Alleen de extensie weergeven in een specifieke AEM (AEM host).
-+ Gebruikend een [ actie van Adobe I/O Runtime ](./runtime-action.md) om een vraag van HTTP te maken om te AEM te bepalen als de huidige gebruiker de uitbreiding zou moeten zien.
++ Het gebruiken van de gastheer van AEM (`new URLSearchParams(window.location.search).get('repo')`) om te bepalen als de uitbreiding zou moeten laden.
+   + Alleen de extensie weergeven in AEM-omgevingen die deel uitmaken van een specifiek programma (zoals in het onderstaande voorbeeld wordt getoond).
+   + Alleen de extensie weergeven in een specifieke AEM-omgeving (AEM-host).
++ Gebruikend een [ actie van Adobe I/O Runtime ](./runtime-action.md) om een vraag van HTTP aan AEM te maken om te bepalen als de huidige gebruiker de uitbreiding zou moeten zien.
 
 In het onderstaande voorbeeld ziet u hoe u de extensie beperkt tot alle omgevingen in het programma `p12345` .
 

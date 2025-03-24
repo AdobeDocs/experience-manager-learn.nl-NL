@@ -2,14 +2,14 @@
 title: Gegevens uit een PDF-bestand importeren in adaptief formulier
 description: Zelfstudie om een adaptief formulier te vullen door een PDF-bestand te importeren
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 jira: KT-14196
 exl-id: a9ad8f4d-695e-4eb3-8d35-a399d1700f90
 duration: 16
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 1%
@@ -18,15 +18,15 @@ ht-degree: 1%
 
 # Inleiding
 
-Een vaak voorkomend geval is de mogelijkheid om een adaptief formulier in te vullen vanaf een gedeeltelijk ingevuld PDF-formulier.
+Een gebruikelijke manier om een adaptief formulier in te vullen is door een gedeeltelijk ingevuld PDF-formulier.
 
-Om dit gebruiksgeval aan te tonen, gaan wij [ IRS vorm F23 ](./assets/f23.pdf) gebruiken
+Om dit gebruiksgeval aan te tonen, gaan wij [ vorm F23 van IRS ](./assets/f23.pdf) gebruiken
 
 ## Vereisten
 
 U hebt het volgende nodig:
 
-* Een werkende instantie van AEM met het geïnstalleerde pakket van de toe:voegen-op van Forms.
+* Een werkende instantie van AEM met het Forms Add-on pakket geïnstalleerd.
 
 * [ het milieu van de Ontwikkeling opstelling volgens dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
 

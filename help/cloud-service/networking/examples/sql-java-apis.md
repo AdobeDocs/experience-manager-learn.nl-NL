@@ -1,7 +1,7 @@
 ---
 title: SQL-verbindingen met Java™ API's
 description: Leer hoe u verbinding maakt met SQL-databases vanuit AEM as a Cloud Service met Java™ SQL API's en egress-poorten.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9356
 thumbnail: KT-9356.jpeg
 exl-id: ec9d37cb-70b6-4414-a92b-3b84b3f458ab
 duration: 124
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # SQL-verbindingen met Java™ API&#39;s
 
-Verbindingen met SQL-databases (en andere niet-HTTP/HTTPS-services) moeten buiten AEM worden gesteld.
+Verbindingen met SQL-databases (en andere niet-HTTP/HTTPS-services) moeten vanuit AEM worden uitgebreid.
 
 De uitzondering op deze regel is wanneer [ specifiek adres van de uitgang ip ](../dedicated-egress-ip-address.md) in gebruik is, en de dienst op Adobe of Azure is.
 
@@ -151,7 +151,7 @@ public class MySqlExternalServiceImpl implements ExternalService {
 
 ## MySQL-stuurprogramma-afhankelijkheden
 
-AEM as a Cloud Service vereist vaak dat u Java™ databasestuurprogramma&#39;s aanbiedt ter ondersteuning van de verbindingen. De stuurprogramma&#39;s kunt u het beste leveren door de OSGi-bundelartefacten met deze stuurprogramma&#39;s in te sluiten in het AEM project via het `all` -pakket.
+AEM as a Cloud Service vereist vaak dat u Java™ databasestuurprogramma&#39;s aanbiedt ter ondersteuning van de verbindingen. De stuurprogramma&#39;s kunnen het beste worden geleverd door de OSGi-bundelartefacten met deze stuurprogramma&#39;s in te sluiten in het AEM-project via het `all` -pakket.
 
 ### Reactor pom.xml
 

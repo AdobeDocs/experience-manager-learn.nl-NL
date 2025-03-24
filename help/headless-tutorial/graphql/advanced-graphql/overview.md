@@ -1,35 +1,35 @@
 ---
-title: Geavanceerde concepten van AEM headless - GraphQL
+title: Geavanceerde concepten van AEM Headless - GraphQL
 description: Een end-to-end zelfstudie die geavanceerde concepten van Adobe Experience Manager (AEM) GraphQL APIs illustreert.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
 duration: 441
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
 
 ---
 
-# Geavanceerde concepten van AEM headless
+# Geavanceerde concepten van AEM Headless
 
 {{aem-headless-trials-promo}}
 
-Dit leerprogramma van begin tot eind zet het [ basisleerprogramma ](../multi-step/overview.md) voort dat de grondbeginselen van de Hoofdtelefoon van Adobe Experience Manager (AEM) en GraphQL behandelde. Het geavanceerde leerprogramma illustreert diepgaande aspecten van het werken met de Modellen van het Fragment van de Inhoud, de Fragments van de Inhoud, en de AEM GraphQL voortgezette vragen, met inbegrip van het gebruiken van GraphQL voortgeduurde vragen in een cliënttoepassing.
+Dit leerprogramma van begin tot eind zet het [ basisleerprogramma ](../multi-step/overview.md) voort dat de grondbeginselen van de Hoofdtelefoon van Adobe Experience Manager (AEM) en GraphQL behandelde. De geavanceerde zelfstudie illustreert diepgaande aspecten van het werken met Modellen van het Fragment van de Inhoud, de Fragmenten van de Inhoud, en AEM GraphQL persisted vragen, met inbegrip van het gebruiken van GraphQL persisted vragen in een cliënttoepassing.
 
 ## Vereisten
 
 Voltooi de [ snelle opstelling voor AEM as a Cloud Service ](../quick-setup/cloud-service.md) om uw milieu van AEM as a Cloud Service te vormen.
 
-Het wordt hoogst geadviseerd dat u het vorige [ basisleerprogramma ](../multi-step/overview.md) voltooit en [ videoreeks ](../video-series/modeling-basics.md) leerprogramma&#39;s alvorens met dit geavanceerde leerprogramma te werk te gaan. Hoewel u de zelfstudie kunt voltooien met een lokale AEM, wordt deze zelfstudie alleen gebruikt voor de workflow voor AEM as a Cloud Service.
+Het wordt hoogst geadviseerd dat u het vorige [ basisleerprogramma ](../multi-step/overview.md) voltooit en [ videoreeks ](../video-series/modeling-basics.md) leerprogramma&#39;s alvorens met dit geavanceerde leerprogramma te werk te gaan. Hoewel u de zelfstudie kunt voltooien met een lokale AEM-omgeving, is deze zelfstudie alleen van toepassing op de workflow voor AEM as a Cloud Service.
 
 >[!CAUTION]
 >
->Als u geen toegang tot het milieu van AEM as a Cloud Service hebt, kunt u [ voltooien AEM Kop-loze snelle opstelling gebruikend lokale SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html). Het is echter belangrijk om op te merken dat sommige productpagina&#39;s van UI zoals de navigatie van de Fragmenten van de Inhoud verschillend zijn.
+>Als u geen toegang tot het milieu van AEM as a Cloud Service hebt, kunt u [ AEM Hoofdloze snelle opstelling voltooien gebruikend lokale SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html). Het is echter belangrijk om op te merken dat sommige productpagina&#39;s van UI zoals de navigatie van de Fragmenten van de Inhoud verschillend zijn.
 
 
 
@@ -39,29 +39,29 @@ Deze zelfstudie behandelt de volgende onderwerpen:
 
 * Maak modellen van inhoudsfragmenten met behulp van validatieregels en meer geavanceerde gegevenstypen, zoals tijdelijke aanduidingen voor tabbladen, geneste fragmentverwijzingen, JSON-objecten en gegevenstypen voor datum en tijd.
 * Inhoudsfragmenten schrijven terwijl u werkt met geneste inhoud en fragmentverwijzingen, en mapbeleid configureren voor governance voor het schrijven van inhoud.
-* Ontdek AEM GraphQL API-mogelijkheden met behulp van GraphQL-query&#39;s met variabelen en instructies.
-* Blijft GraphQL vragen met parameters in AEM en leer hoe te om cache-controle parameters met voortgezette vragen te gebruiken.
+* Ontdek de AEM GraphQL API-mogelijkheden met behulp van GraphQL-query&#39;s met variabelen en instructies.
+* Blijft GraphQL vragen met parameters in AEM en leer hoe te om cache-controle parameters met persisted query&#39;s te gebruiken.
 * Integreer aanvragen voor doorlopende query&#39;s in de voorbeeldtoepassing WKND GraphQL React met de AEM Headless JavaScript SDK.
 
-## Geavanceerde concepten van AEM overzicht zonder kop
+## Geavanceerde concepten van AEM Headless-overzicht
 
-De volgende video biedt een overzicht op hoog niveau van de concepten die in deze zelfstudie worden behandeld. De zelfstudie bevat het definiëren van modellen van inhoudsfragmenten met geavanceerdere gegevenstypen, het nesten van inhoudsfragmenten en het voortduren van GraphQL-query&#39;s in AEM.
+De volgende video biedt een overzicht op hoog niveau van de concepten die in deze zelfstudie worden behandeld. De zelfstudie bevat het definiëren van modellen van inhoudsfragmenten met meer geavanceerde gegevenstypen, het nesten van inhoudsfragmenten en het voortduren van GraphQL-query&#39;s in AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340035?quality=12&learn=on)
 
 >[!CAUTION]
 >
->In deze video (2:25) wordt gesproken over het installeren van de GraphiQL-query-editor via Package Manager om GraphQL-query&#39;s te verkennen. Nochtans in nieuwere versies van AEM als Cloud Service wordt de ingebouwde **Ontdekkingsreiziger GraphiQL** verstrekt, zo wordt de pakketinstallatie niet vereist. Zie [ Gebruikend GrahiQL winde ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) voor meer informatie.
+>In deze video (2:25) wordt gesproken over het installeren van de GraphiQL-query-editor via Package Manager om GraphQL-query&#39;s te verkennen. Nochtans in nieuwere versies van AEM als Cloud Service wordt de ingebouwde **Ontdekkingsreiziger GraphiQL verstrekt**, zodat wordt de pakketinstallatie niet vereist. Zie [ Gebruikend GrahiQL winde ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) voor meer informatie.
 
 
 ## Projectinstelling
 
-Het project van de Plaats WKND heeft alle noodzakelijke configuraties, zodat kunt u het leerprogramma beginnen net nadat u de [ snelle opstelling ](../quick-setup/cloud-service.md) voltooit. In deze sectie worden alleen enkele belangrijke stappen gemarkeerd die u kunt gebruiken bij het maken van uw eigen AEM Headless-project.
+Het project van de Plaats WKND heeft alle noodzakelijke configuraties, zodat kunt u het leerprogramma beginnen net nadat u de [ snelle opstelling ](../quick-setup/cloud-service.md) voltooit. In deze sectie worden alleen enkele belangrijke stappen beschreven die u kunt gebruiken bij het maken van uw eigen AEM Headless-project.
 
 
 ### Bestaande configuratie controleren
 
-De eerste stap aan aanvang van om het even welk nieuw project in AEM is het creëren van zijn configuratie, als werkruimte en het creëren van GraphQL API eindpunten. Om een configuratie te herzien of tot stand te brengen, navigeer aan **Hulpmiddelen** > **Algemeen** > **Browser van de Configuratie**.
+De eerste stap naar het starten van elk nieuw project in AEM is het maken van de configuratie ervan als werkruimte en het maken van GraphQL API-eindpunten. Om een configuratie te herzien of tot stand te brengen, navigeer aan **Hulpmiddelen** > **Algemeen** > **Browser van de Configuratie**.
 
 ![ ga aan Browser van de Configuratie ](assets/overview/create-configuration.png)
 
@@ -81,13 +81,13 @@ Let op: `WKND Shared Endpoint` is al gemaakt. Om een eindpunt voor uw project to
 
 >[!NOTE]
 >
-> Na het bewaren van het eindpunt, zult u een modaal over het bezoeken van de Console van de Veiligheid zien, die u toestaat om veiligheidsmontages aan te passen als u wenst om toegang tot het eindpunt te vormen. De toestemmingen van de veiligheid zelf zijn buiten het werkingsgebied van dit leerprogramma, echter. Voor meer informatie, verwijs naar de [ AEM documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+> Na het bewaren van het eindpunt, zult u een modaal over het bezoeken van de Console van de Veiligheid zien, die u toestaat om veiligheidsmontages aan te passen als u wenst om toegang tot het eindpunt te vormen. De toestemmingen van de veiligheid zelf zijn buiten het werkingsgebied van dit leerprogramma, echter. Voor meer informatie, verwijs naar de [ documentatie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
 
 ### WKND-inhoudsstructuur en taalhoofdmap controleren
 
-Een goed gedefinieerde inhoudsstructuur is essentieel voor het succes van AEM implementatie zonder kop. Dit is handig voor schaalbaarheid, bruikbaarheid en toegangsbeheer van uw inhoud.
+Een goed gedefinieerde inhoudsstructuur is essentieel voor het succes van de AEM-implementatie zonder kop. Dit is handig voor schaalbaarheid, bruikbaarheid en toegangsbeheer van uw inhoud.
 
-Een hoofdmap voor de taal is een map met als naam de ISO-taalcode EN FR. Het AEM vertaalbeheersysteem gebruikt deze mappen om de primaire taal van uw inhoud en talen voor het vertalen van inhoud te definiëren.
+Een hoofdmap voor de taal is een map met als naam de ISO-taalcode EN FR. Het AEM-vertaalbeheersysteem gebruikt deze mappen om de primaire taal van uw inhoud en talen voor het vertalen van inhoud te definiëren.
 
 Ga naar **Navigatie** > **Assets** > **Dossiers**.
 
@@ -107,7 +107,7 @@ Om de omslag van de taalwortel aan de configuratie toe te wijzen, selecteer de o
 
 ![ Uitgezochte Eigenschappen ](assets/overview/properties.png)
 
-Daarna, navigeer aan het **Cloud Servicen** lusje en selecteer het omslagpictogram op het **gebied van de Configuratie van de Wolk**.
+Daarna, navigeer aan het **lusje van de Diensten van de Wolk** en selecteer het omslagpictogram op het **gebied van de Configuratie van de Wolk**.
 
 ![ Configuratie van de Wolk ](assets/overview/cloud-conf.png)
 
@@ -128,7 +128,7 @@ Twee AEM **pakketten** zijn beschikbaar en kunnen via [ de Manager van het Pakke
 * [ geavanceerd-GraphQL-Tutorial-Oplossing-Pakket-1.2.zip ](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip) bevat de gebeëindigde oplossing voor Hoofdstuk 1-4 met inbegrip van nieuwe Modellen van het Fragment van de Inhoud, de Fragmenten van de Inhoud, en de Gesterfde vragen van GraphQL. Nuttig voor hen die recht in het ](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md) hoofdstuk van de Integratie van de Toepassing van de Cliënt 0} willen overslaan.[
 
 
-Het [ Reageer App - Geavanceerde Leerprogramma - WKND avonturen ](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) project is beschikbaar om de steekproeftoepassing te herzien en te onderzoeken. Deze voorbeeldtoepassing haalt de inhoud van AEM op door de voortgezette GraphQL-query&#39;s aan te roepen en rendert deze in een overweldigende ervaring.
+Het [ Reageer App - Geavanceerde Leerprogramma - WKND avonturen ](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) project is beschikbaar om de steekproeftoepassing te herzien en te onderzoeken. Deze voorbeeldtoepassing haalt de inhoud van AEM op door de voortgezette GraphQL-query&#39;s aan te roepen en rendert deze in een meeslepende ervaring.
 
 ## Aan de slag
 

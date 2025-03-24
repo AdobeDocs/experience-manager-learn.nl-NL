@@ -4,13 +4,13 @@ description: Grote XML-bestanden samenvoegen met een sjabloon in AEM Forms
 type: Troubleshooting
 role: Admin
 level: Intermediate
-version: 6.5
+version: Experience Manager 6.5
 feature: Output Service,Forms Service
 topic: Administration
 jira: KT-11091
 exl-id: 933ec5f6-3e9c-4271-bc35-4ecaf6dbc434
 duration: 37
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
@@ -29,8 +29,8 @@ Ga als volgt te werk om de bovenstaande fout op te lossen
 
 ## De time-out voor het bestand aries wijzigen
 
-* AEM server stoppen
-* Creeer een omslag genoemd **installeer** onder de crx-quickstart omslag van uw AEM installatie
+* AEM-server stoppen
+* Creeer een omslag genoemd **installeer** onder de crx-quickstart omslag van uw installatie van AEM
 * Creeer een dossier genoemd **org.apache.aries.transaction.config** met de volgende inhoud
 aries.transaction.timeout=&quot;1200&quot;
 onder installatiemap. U kunt de time-outwaarde naar wens wijzigen. De time-outwaarde is in seconden

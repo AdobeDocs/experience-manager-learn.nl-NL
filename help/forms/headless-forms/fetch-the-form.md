@@ -2,14 +2,14 @@
 title: De JSON ophalen van het adaptieve formulier dat moet worden ingesloten
 description: Gebruik de API om de zoon van het adaptieve formulier op te halen
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-13285
 topic: Development
 role: User
 level: Intermediate
 exl-id: ee534724-54ea-48e1-8c92-de1c56a928d4
 duration: 50
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # De JSON van het formulier ophalen
 
-Login aan uw de auteurinstantie van AEM Forms en creeer een nieuwe adaptief gebruikend **Leeg met het malplaatje van de Componenten van de Kern**. Publish uw formulier naar uw publicatieexemplaar.
+Login aan uw de auteurinstantie van AEM Forms en creeer een nieuwe adaptief gebruikend **Leeg met het malplaatje van de Componenten van de Kern**. Publiceer het formulier naar uw publicatie-exemplaar.
 
 Als u het formulier wilt insluiten, haalt u eerst de json van het adaptieve formulier op door een get call uit te voeren met onze publicatieserver.
 

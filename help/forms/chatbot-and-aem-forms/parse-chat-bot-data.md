@@ -2,14 +2,14 @@
 title: AEM Forms gebruiken met Chatbot
 description: Parse ChatBot-gegevens
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-15344
 topic: Development
 role: User
 level: Intermediate
 exl-id: 3c304b0a-33f8-49ed-a576-883df4759076
 duration: 22
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Parse ChatBot-gegevens
 
-A [ WebHaak ChatBot ](https://www.chatbot.com/help/webhooks/what-are-webhooks/) werd gebruikt om de gegevens ChatBot naar AEM servlet te verzenden.
+A [ Web-haak ChatBot ](https://www.chatbot.com/help/webhooks/what-are-webhooks/) werd gebruikt om de gegevens ChatBot naar een servlet van AEM te verzenden.
 De gegevens die in de ChatBot worden vastgelegd, hebben de JSON-indeling, waarbij de gebruiker gegevens in het attributenobject heeft ingevoerd, zoals hieronder wordt weergegeven
 ![ chatbot-data ](assets/chat-bot-data.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Opstelling uw project BPA en CAM
 description: Leer hoe de Analysator van Beste praktijken en Cloud Acceleration Manager een aangepaste gids voor het migreren aan AEM as a Cloud Service verstrekt.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developer Tools
 topic: Migration, Upgrade
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8627
 thumbnail: 336957.jpeg
 exl-id: f8289dd4-b293-4b8f-b14d-daec091728c0
 duration: 680
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 2%
@@ -27,12 +27,12 @@ Leer hoe de Analysator van Beste praktijken (BPA) en Cloud Acceleration Manager 
 
 ![ BPA en CAM hoog niveaudiagram ](assets/bpa-cam-diagram.png)
 
-Het BPA-pakket moet worden geïnstalleerd op een kloon van de AEM 6.x-omgeving. Het BPA zal een rapport produceren dat dan in CAM kan worden geupload, dat raad in de belangrijkste activiteiten zal verstrekken die moeten plaatsvinden om naar AEM as a Cloud Service te bewegen.
+Het BPA-pakket moet worden geïnstalleerd op een kloon van de AEM 6.x-productieomgeving. Het BPA zal een rapport produceren dat dan in CAM kan worden geupload, dat raad in de belangrijkste activiteiten zal verstrekken die moeten plaatsvinden om naar AEM as a Cloud Service te bewegen.
 
 ## Belangrijkste activiteiten
 
 + Maak een kloon van uw productie 6.x milieu. Tijdens het migreren van inhoud en refactorcode is het van belang een kloon van een productieomgeving te hebben om verschillende gereedschappen en wijzigingen te testen.
-+ Download het recentste hulpmiddel BPA van het [ Portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) en installeer op uw AEM 6.x gekloonde milieu.
++ Download het recentste BPA hulpmiddel van het [ Portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) en installeer op uw AEM 6.x gekloonde milieu.
 + Gebruik het hulpmiddel BPA om een rapport te produceren dat aan Cloud Acceleration Manager (CAM) kan worden geupload. CAM wordt betreden door [ https://experience.adobe.com/ ](https://experience.adobe.com/) > **Experience Manager** > **Cloud Acceleration Manager**.
 + Gebruik CAM om richtlijnen te geven voor de updates die moeten worden uitgevoerd in de huidige codebasis en -omgeving om naar AEM as a Cloud Service te gaan.
 

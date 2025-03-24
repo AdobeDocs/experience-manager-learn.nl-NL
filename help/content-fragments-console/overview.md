@@ -1,7 +1,7 @@
 ---
 title: Video's van de Console van inhoudsfragmenten
-description: Leer over AEM Console van de Fragmenten van de Inhoud die het beheren en het schrijven van de Fragmenten van de Inhoud gemakkelijk maakt!
-version: Cloud Service
+description: Meer informatie over de AEM Content Fragments Console die het beheren en schrijven van Content Fragments gemakkelijk maakt!
+version: Experience Manager as a Cloud Service
 feature: Content Fragments
 topic: Content Management
 role: User
@@ -10,7 +10,7 @@ jira: KT-14200
 last-substantial-update: 2023-05-12T00:00:00Z
 doc-type: Catalog
 exl-id: d92c36e2-fbfa-43a3-8c5f-0371cc99f352
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Video&#39;s van de Console van inhoudsfragmenten
 
-![ AEM de Redacteur van het Fragment van de Inhoud ](./assets/main.png)
+![ de Redacteur van het Fragment van de Inhoud van AEM ](./assets/main.png)
 
 Met de Adobe Experience Manager Content Fragments Console kunt u heel eenvoudig inhoudsfragmenten beheren en ontwerpen. Leer hoe u de console voor inhoudsfragmenten optimaal kunt benutten met deze video&#39;s.
 

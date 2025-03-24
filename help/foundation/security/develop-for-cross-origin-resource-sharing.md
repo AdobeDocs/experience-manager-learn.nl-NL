@@ -1,7 +1,7 @@
 ---
 title: Ontwikkelen voor het delen van bronnen tussen verschillende bronnen (CORS) met AEM
-description: Een kort voorbeeld van het gebruik van CORS voor toegang tot AEM inhoud van een externe webtoepassing via client-side JavaScript.
-version: 6.4, 6.5
+description: Een kort voorbeeld van het gebruik van CORS voor toegang tot AEM-inhoud vanuit een externe webtoepassing via client-side JavaScript.
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Security, Development
 role: Developer
 level: Beginner
@@ -9,7 +9,7 @@ feature: Security
 doc-type: Technical Video
 exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
 duration: 333
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%
@@ -18,12 +18,12 @@ ht-degree: 0%
 
 # Ontwikkelen voor het delen van bronnen tussen verschillende bronnen (CORS)
 
-Een kort voorbeeld van het gebruik van [!DNL CORS] voor toegang tot AEM inhoud van een externe webtoepassing via client-side JavaScript. Dit voorbeeld gebruikt de configuratie CORS OSGi om de toegang van CORS op AEM toe te laten. De OSGi-configuratiebenadering is levensvatbaar wanneer:
+Een kort voorbeeld van het gebruik van [!DNL CORS] voor toegang tot AEM-inhoud vanuit een externe webtoepassing via client-side JavaScript. Dit voorbeeld gebruikt de configuratie CORS OSGi om de toegang van CORS op AEM toe te laten. De OSGi-configuratiebenadering is levensvatbaar wanneer:
 
-* Eén herkomst heeft toegang tot AEM Publish-inhoud
-* Toegang tot CORS is vereist voor AEM auteur
+* Eén oorsprong benadert AEM Publish-inhoud
+* Voor AEM-auteur is CORS-toegang vereist
 
-Als multi-oorsprongstoegang tot AEM Publish wordt vereist, verwijs naar [ dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
+Als de multi-oorsprongstoegang tot AEM wordt vereist, verwijs naar [ dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837?quality=12&learn=on)
 
@@ -31,11 +31,11 @@ In deze video:
 
 * **www.example.com** kaarten aan localhost via `/etc/hosts`
 * **aem-publish.local** kaarten aan localhost via `/etc/hosts`
-* SimpleHTTPServer (een omslag voor [[!DNL Python] SimpleHTTPServer ](https://docs.python.org/2/library/simplehttpserver.html)) dient de pagina van de HTML via haven 8000.
+* SimpleHTTPServer (een omslag voor [[!DNL Python] SimpleHTTPServer ](https://docs.python.org/2/library/simplehttpserver.html)) dient de HTML-pagina via poort 8000.
    * _niet meer beschikbaar in Mac App Store. Gebruik gelijkaardig zoals [ Jeeves ](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._
 * [!DNL AEM Dispatcher] wordt uitgevoerd op [!DNL Apache HTTP Web Server] 2.4 en omgekeerd-proxying request to `aem-publish.local` to `localhost:4503` .
 
-Voor meer details, herzie [ Begrijpend Middel dat van de Cross-Origin (CORS) in AEM ](./understand-cross-origin-resource-sharing.md) deelt.
+Voor meer details, herzie [ Begrijpend Middel dat van de Cross-Origin (CORS) deelt in AEM ](./understand-cross-origin-resource-sharing.md).
 
 ## www.example.com HTML en JavaScript
 
@@ -116,7 +116,7 @@ Om de vereiste [ HTTP- verzoekkopballen toe te staan om tot AEM voor verwerking 
 
 ### CORS-responsheaders in cache plaatsen
 
-Om het in cache plaatsen en het dienen van kopballen CORS op caching inhoud toe te staan, voeg het volgende [ toe/cache /headers configuratie ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers) aan het AEM Publish `dispatcher.any` dossier.
+Als u het in cache plaatsen en serveren van CORS-headers voor in cache opgeslagen inhoud wilt toestaan, voegt u de volgende [ /cache/headers-configuratie ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers) toe aan het AEM Publish `dispatcher.any` -bestand.
 
 ```
 /publishfarm {
@@ -149,6 +149,6 @@ Het is waarschijnlijk dat het cachegeheugen volledig moet worden gewist om ervoo
 * [ Jeeves voor macOS ](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)
 * [ Python SimpleHTTPServer ](https://docs.python.o:qrg/2/library/simplehttpserver.html) (compatibel Windows/macOS/Linux)
 
-* [Werken met het delen van bronnen tussen verschillende bronnen (CORS) in AEM](./understand-cross-origin-resource-sharing.md)
+* [Werken met het delen van bronnen tussen verschillende oorsprong (CORS) in AEM](./understand-cross-origin-resource-sharing.md)
 * [ het Delen van het Middel van de dwars-Oorsprong (W3C) ](https://www.w3.org/TR/cors/)
 * [ Controle van de Toegang van HTTP (Mozilla MDN) ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)

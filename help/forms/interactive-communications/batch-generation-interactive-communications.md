@@ -3,14 +3,14 @@ title: Batch-API gebruiken voor het genereren van interactieve communicatiedocum
 description: Voorbeeldelementen voor het genereren van documenten voor afdrukkanalen met batch-API
 feature: Interactive Communication
 doc-type: article
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 2cdf37e6-42ad-469a-a6e4-a693ab2ca908
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 77
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Dit artikel bevat voorbeeldelementen voor het genereren van interactieve communi
 * De download en haalt de inhoud van [ zip dossier ](assets/jsonfile.zip). Het ZIP-bestand bevat de map `jsonfile` die het `beneficiaries.json` -bestand bevat. Dit bestand bevat de gegevens die moeten worden gegenereerd in 3 documenten.
 
 * Zet de map `jsonfile` neer in de invoermap van de gecontroleerde map.
-* Als de map is opgepikt voor verwerking, controleert u de resultatenmap van de gecontroleerde map. Gegenereerde 3 PDF-bestanden bekijken
+* Als de map is opgepikt voor verwerking, controleert u de resultatenmap van de gecontroleerde map. Er worden 3 PDF-bestanden gegenereerd
 
 ## Batchgeneratie met REST-verzoeken
 

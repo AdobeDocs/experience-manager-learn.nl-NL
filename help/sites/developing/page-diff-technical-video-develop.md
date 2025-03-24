@@ -2,14 +2,14 @@
 title: Ontwikkelen voor paginaverschil in AEM Sites
 description: In deze video ziet u hoe u aangepaste stijlen voor de functionaliteit Paginaverschil van AEM Sites kunt gebruiken.
 feature: Authoring
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 doc-type: Technical Video
 exl-id: 7d600b16-bbb3-4f21-ae33-4df59b1bb39d
 duration: 281
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -28,7 +28,7 @@ In deze video ziet u hoe u aangepaste stijlen voor de functionaliteit Paginavers
 >
 >In deze video worden aangepaste CSS toegevoegd aan de clientbibliotheek we.Retail, waar deze wijzigingen moeten worden aangebracht in het AEM Sites-project van de klant; in de voorbeeldcode hieronder: `my-project` .
 
-AEM paginaverschil verkrijgt de CSS OOTB via een directe load van `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css` .
+AEM-paginaverschil verkrijgt de OOTB CSS via een directe load van `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css` .
 
 Wegens deze directe lading van CSS eerder dan het gebruiken van een categorie van de cliëntbibliotheek, moeten wij een ander injectiepunt voor de douanestijlen vinden, en dit douaneinjectiepunt is het auteursclientlib van het project.
 
@@ -115,12 +115,12 @@ Deze stijlen moeten worden beperkt tot de modi [!UICONTROL Edit] en [!UICONTROL 
 </head>
 ```
 
-Het eindresultaat van een diff&#39;d pagina met de bovenstaande stijlen toegepast zou er als volgt uitzien (HTML toegevoegd en Component gewijzigd).
+Het eindresultaat van een diff&#39;d-pagina met de bovenstaande stijlen zou er als volgt uitzien (HTML toegevoegd en Component gewijzigd).
 
 ![ verschil van de Pagina ](assets/page-diff.png)
 
 ## Aanvullende bronnen {#additional-resources}
 
 * [ Download de wij.Retail steekproefplaats ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
-* [ Gebruikend AEM de Bibliotheken van de Cliënt ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [ Gebruikend de Bibliotheken van de Cliënt van AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [ Minder CSS Documentatie ](https://lesscss.org/)

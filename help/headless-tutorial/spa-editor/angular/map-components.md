@@ -1,8 +1,8 @@
 ---
-title: SPA componenten toewijzen aan AEM componenten | Aan de slag met de AEM SPA Editor en Angular
-description: Leer hoe u Angulars aan Adobe Experience Manager-componenten (AEM) toewijst met de AEM SPA Editor JS SDK. Met componenttoewijzing kunnen gebruikers dynamische updates uitvoeren naar SPA componenten in de AEM SPA Editor, net als bij traditionele AEM ontwerpen.
+title: SPA-componenten toewijzen aan AEM-componenten | Aan de slag met de AEM SPA Editor en Angular
+description: Leer hoe u Angular-componenten aan Adobe Experience Manager (AEM)-componenten kunt toewijzen met de AEM SPA Editor JS SDK. De afbeelding van de component laat gebruikers toe om dynamische updates aan de componenten van het KUUROORD binnen de Redacteur van AEM te maken SPA, gelijkend op traditionele het auteursrecht van AEM.
 feature: SPA Editor
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5311
 thumbnail: 5311-spa-angular.jpg
 topic: SPA
@@ -11,28 +11,28 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
 duration: 509
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2211'
 ht-degree: 0%
 
 ---
 
-# SPA componenten toewijzen aan AEM componenten {#map-components}
+# SPA-componenten toewijzen aan AEM-componenten {#map-components}
 
-Leer hoe u Angulars aan Adobe Experience Manager-componenten (AEM) toewijst met de AEM SPA Editor JS SDK. Met componenttoewijzing kunnen gebruikers dynamische updates uitvoeren naar SPA componenten in de AEM SPA Editor, net als bij traditionele AEM ontwerpen.
+Leer hoe u Angular-componenten aan Adobe Experience Manager (AEM)-componenten kunt toewijzen met de AEM SPA Editor JS SDK. De afbeelding van de component laat gebruikers toe om dynamische updates aan de componenten van het KUUROORD binnen de Redacteur van AEM te maken SPA, gelijkend op traditionele het auteursrecht van AEM.
 
-In dit hoofdstuk wordt dieper ingegaan op de AEM JSON-model-API en wordt uitgelegd hoe de JSON-inhoud die door een AEM wordt aangeboden, automatisch als props in een Angular-component kan worden geïnjecteerd.
+In dit hoofdstuk wordt dieper ingegaan op de API van het AEM JSON-model en wordt uitgelegd hoe de JSON-inhoud die door een AEM-component wordt aangeboden, automatisch als props in een Angular-component kan worden geïnjecteerd.
 
 ## Doelstelling
 
-1. Leer hoe u AEM componenten kunt toewijzen aan SPA.
+1. Leer hoe te om de componenten van AEM aan Componenten van het KUUROORD in kaart te brengen.
 2. Begrijp het verschil tussen **componenten 0} van de Container {en** Inhoud **componenten.**
-3. Maak een nieuwe Angular die aan een bestaande AEM wordt toegewezen.
+3. Maak een nieuwe Angular-component die wordt toegewezen aan een bestaande AEM-component.
 
 ## Wat u gaat maken
 
-Dit hoofdstuk zal inspecteren hoe de verstrekte `Text` SPA component aan de AEM `Text` component in kaart wordt gebracht. Er wordt een nieuwe SPA `Image` gemaakt die in de SPA kan worden gebruikt en in AEM kan worden ontworpen. Uit de dooseigenschappen van de **Container van de Lay-out** en **Redacteur van het Malplaatje** beleid zal ook worden gebruikt om een mening tot stand te brengen die een weinig gevarieerder in verschijning is.
+Dit hoofdstuk zal inspecteren hoe de verstrekte `Text` component van het KUUROORD aan de AEM `Text` component in kaart wordt gebracht. Er wordt een nieuwe `Image` SPA-component gemaakt die in de SPA kan worden gebruikt en in AEM kan worden geschreven. Uit de dooseigenschappen van de **Container van de Lay-out** en **Redacteur van het Malplaatje** beleid zal ook worden gebruikt om een mening tot stand te brengen die een weinig gevarieerder in verschijning is.
 
 ![ de steekproef definitieve van het Hoofdstuk creatie ](./assets/map-components/final-page.png)
 
@@ -50,13 +50,13 @@ Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikke
    $ git checkout Angular/map-components-start
    ```
 
-2. Implementeer de basis van de code op een lokale AEM met Maven:
+2. Implementeer de codebasis naar een lokale AEM-instantie met Maven:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   Als het gebruiken van [ AEM 6.x ](overview.md#compatibility) het `classic` profiel toevoegt:
+   Als het gebruiken van [ AEM 6.x ](overview.md#compatibility) voeg het `classic` profiel toe:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
@@ -66,32 +66,32 @@ U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-w
 
 ## Toewijzingsmethode
 
-Het basisconcept is om een SPA Component aan een AEM Component in kaart te brengen. AEM componenten, voer server-kant in, voer inhoud als deel van JSON model API uit. De JSON-inhoud wordt door de SPA verbruikt en wordt in de browser op de client uitgevoerd. Er wordt een 1:1-toewijzing gemaakt tussen SPA componenten en een AEM component.
+Het basisconcept is een Component van het KUUROORD aan een Component van AEM in kaart te brengen. AEM-componenten, serveronderdelen uitvoeren, inhoud exporteren als onderdeel van de JSON-model-API. De inhoud JSON wordt verbruikt door het KUUROORD, lopend cliënt-kant in browser. Een afbeelding 1:1 tussen de componenten van het KUUROORD en een component van AEM wordt gecreeerd.
 
-![ overzicht op hoog niveau van afbeelding een AEM Component aan een Component van de Angular ](./assets/map-components/high-level-approach.png)
+![ overzicht op hoog niveau van het in kaart brengen van een Component van AEM aan een Component van Angular ](./assets/map-components/high-level-approach.png)
 
-*overzicht op hoog niveau van afbeelding een AEM Component aan een Component van de Angular*
+*overzicht op hoog niveau van het in kaart brengen van een Component van AEM aan een Component van Angular*
 
-## De tekstcomponent Inspect
+## De tekstcomponent controleren
 
-Het [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype) verstrekt een `Text` component die aan de AEM [ component van de Tekst ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) in kaart wordt gebracht. Dit is een voorbeeld van de component van de a **inhoud**, in die zin dat het *inhoud* van AEM teruggeeft.
+Het [ Archieftype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) verstrekt een `Text` component die aan de component van de Tekst van AEM [ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) in kaart wordt gebracht. Dit is een voorbeeld van de component van de a **inhoud**, in die zin dat het *inhoud* van AEM teruggeeft.
 
 Laten we eens kijken hoe de component werkt.
 
-### Inspect het JSON-model
+### Het JSON-model controleren
 
-1. Voordat u in de SPA code springt, is het belangrijk dat u het JSON-model begrijpt dat AEM biedt. Navigeer aan de [ Bibliotheek van de Component van de Kern ](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html) en bekijk de pagina voor de component van de Tekst. De Core Component Library bevat voorbeelden van alle AEM Core Components.
+1. Alvorens in de code van het KUUROORD te springen, is het belangrijk om het model te begrijpen JSON dat AEM verstrekt. Navigeer aan de [ Bibliotheek van de Component van de Kern ](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html) en bekijk de pagina voor de component van de Tekst. De Core Component Library bevat voorbeelden van alle AEM Core Components.
 2. Selecteer het **JSON** lusje voor één van de voorbeelden:
 
    ![ JSON van de Tekst model ](./assets/map-components/text-json.png)
 
    Er moeten drie eigenschappen worden weergegeven: `text` , `richText` en `:type` .
 
-   `:type` is een gereserveerde eigenschap die de `sling:resourceType` (of het pad) van de AEM Component opsomt. De waarde van `:type` is wat wordt gebruikt om de AEM component aan de SPA toe te wijzen.
+   `:type` is een gereserveerde eigenschap die de `sling:resourceType` (of het pad) van de AEM-component opsomt. De waarde van `:type` is wat wordt gebruikt om de component van AEM aan de component van SPA in kaart te brengen.
 
-   `text` en `richText` zijn extra eigenschappen die aan de SPA component worden blootgesteld.
+   `text` en `richText` zijn extra eigenschappen die aan de component SPA worden blootgesteld.
 
-### De component Text Inspect
+### De tekstcomponent controleren
 
 1. Open een nieuwe terminal en navigeer naar de map `ui.frontend` in het project. Looppas `npm install` en dan `npm start` om de **webpack dev server** te beginnen:
 
@@ -106,9 +106,9 @@ Laten we eens kijken hoe de component werkt.
 
    ![ WebPack dev server met mock inhoud ](assets/map-components/initial-start.png)
 
-3. In winde van uw keus open omhoog het AEM Project voor de SPA WKND. Breid de `ui.frontend` module uit en open het dossier **text.component.ts** onder `ui.frontend/src/app/components/text/text.component.ts`:
+3. In winde van uw keus open omhoog het Project van AEM voor het KND SPA. Breid de `ui.frontend` module uit en open het dossier **text.component.ts** onder `ui.frontend/src/app/components/text/text.component.ts`:
 
-   ![ de Code van Source van de Component van de Angular Text.js ](assets/map-components/vscode-ide-text-js.png)
+   ![ Text.js Angular Component Source Code ](assets/map-components/vscode-ide-text-js.png)
 
 4. Het eerste gebied dat moet worden geïnspecteerd, is de `class TextComponent` bij ~line 35:
 
@@ -131,7 +131,7 @@ Laten we eens kijken hoe de component werkt.
 
    [@Input () ](https://angular.io/api/core/Input) decorator wordt gebruikt om gebieden te verklaren die de waarden via het in kaart gebrachte voorwerp worden geplaatst JSON, eerder herzien.
 
-   `@HostBinding('innerHtml') get content()` is een methode die de geschreven tekstinhoud weergeeft van de waarde van `this.text` . Als de inhoud tekst met opmaak is (bepaald door de markering `this.richText` ), wordt de ingebouwde beveiliging van de Angular omzeild. [ DomSanitizer van angular ](https://angular.io/api/platform-browser/DomSanitizer) wordt gebruikt om de ruwe HTML &quot;te schrobben&quot;en de kwetsbaarheid van Scripting van de dwars-Plaats te verhinderen. De methode is gebonden aan de eigenschap `innerHtml` met de decorator [@HostBinding ](https://angular.io/api/core/HostBinding) .
+   `@HostBinding('innerHtml') get content()` is een methode die de geschreven tekstinhoud weergeeft van de waarde van `this.text` . Als de inhoud tekst met opmaak is (bepaald door de markering `this.richText` ), wordt de ingebouwde beveiliging van Angular omzeild. Angular [ DomSanitizer ](https://angular.io/api/platform-browser/DomSanitizer) wordt gebruikt om &quot;ruwe HTML&quot;te schrobben en de kwetsbaarheid van Scripting van de dwars-Plaats te verhinderen. De methode is gebonden aan de eigenschap `innerHtml` met de decorator [@HostBinding ](https://angular.io/api/core/HostBinding) .
 
 5. Controleer vervolgens de `TextEditConfig` op ~line 24:
 
@@ -143,7 +143,7 @@ Laten we eens kijken hoe de component werkt.
    };
    ```
 
-   De bovenstaande code bepaalt wanneer de tijdelijke aanduiding in de AEM auteursomgeving moet worden weergegeven. Als de `isEmpty` methode **waar** terugkeert dan placeholder wordt teruggegeven.
+   De bovenstaande code bepaalt wanneer de tijdelijke aanduiding in de AEM-auteursomgeving moet worden weergegeven. Als de `isEmpty` methode **waar** terugkeert dan placeholder wordt teruggegeven.
 
 6. Bekijk ten slotte de `MapTo` oproep op ~line 53:
 
@@ -151,7 +151,7 @@ Laten we eens kijken hoe de component werkt.
    MapTo('wknd-spa-angular/components/text')(TextComponent, TextEditConfig );
    ```
 
-   **MapTo** wordt verstrekt door de AEM SPA Redacteur JS SDK (`@adobe/cq-angular-editable-components`). Het pad `wknd-spa-angular/components/text` vertegenwoordigt de `sling:resourceType` van de AEM. Dit pad komt overeen met het pad `:type` dat wordt weergegeven door het JSON-model dat u eerder hebt waargenomen. **MapTo** ontleedt de JSON modelreactie en gaat de correcte waarden tot de `@Input()` variabelen van de SPA over component.
+   **MapTo** wordt verstrekt door de Redacteur JS SDK van AEM SPA (`@adobe/cq-angular-editable-components`). Het pad `wknd-spa-angular/components/text` vertegenwoordigt de `sling:resourceType` van de AEM-component. Dit pad komt overeen met het pad `:type` dat wordt weergegeven door het JSON-model dat u eerder hebt waargenomen. **MapTo** ontleedt de JSON modelreactie en gaat de correcte waarden tot de `@Input()` variabelen van de component van het KUUROORD over.
 
    U kunt de definitie van de AEM `Text` -component vinden op `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components/text` .
 
@@ -173,11 +173,11 @@ Laten we eens kijken hoe de component werkt.
 
    Probeer die het `richText` bezit tussen **** van een knevel voorzien **vals** om terug te zien logica in actie.
 
-8. Inspect **text.component.html** bij `ui.frontend/src/app/components/text/text.component.html`.
+8. Inspecteer **text.component.html** bij `ui.frontend/src/app/components/text/text.component.html`.
 
    Dit bestand is leeg omdat de volledige inhoud van de component wordt ingesteld door de eigenschap `innerHTML` .
 
-9. Inspect **app.module.ts** bij `ui.frontend/src/app/app.module.ts`.
+9. Inspecteer **app.module.ts** bij `ui.frontend/src/app/app.module.ts`.
 
    ```js
    @NgModule({
@@ -194,21 +194,21 @@ Laten we eens kijken hoe de component werkt.
    export class AppModule {}
    ```
 
-   **TextComponent** is niet uitdrukkelijk inbegrepen, maar eerder dynamisch via **AEMResponsiveGridComponent** die door AEM Redacteur JS SDK SPA wordt verstrekt. Daarom moet in **app.module.ts** [ entryComponents ](https://angular.io/guide/entry-components) serie worden vermeld.
+   **TextComponent** is niet uitdrukkelijk inbegrepen, maar eerder dynamisch via **AEMResponsiveGridComponent** die door de Redacteur JS SDK van AEM SPA wordt verstrekt. Daarom moet in **app.module.ts** [ entryComponents ](https://angular.io/guide/entry-components) serie worden vermeld.
 
 ## De afbeeldingscomponent maken
 
-Daarna, creeer een `Image` component van de Angular die aan de AEM [ component van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) in kaart wordt gebracht. De `Image` component is een ander voorbeeld van a **inhoud** component.
+Daarna, creeer een `Image` component van Angular die aan de component van het Beeld van AEM [ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) in kaart wordt gebracht. De `Image` component is een ander voorbeeld van a **inhoud** component.
 
-### Inspect the JSON
+### De JSON inspecteren
 
-Voordat u in de SPA code gaat springen, moet u het JSON-model controleren dat AEM biedt.
+Alvorens in de code van het KUUROORD te springen, inspecteer het model JSON dat door AEM wordt verstrekt.
 
 1. Navigeer aan de [ voorbeelden van het Beeld in de bibliotheek van de Component van de Kern ](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html).
 
    ![ Component JSON van de Kern van het Beeld ](./assets/map-components/image-json.png)
 
-   Eigenschappen van `src` , `alt` en `title` worden gebruikt om de SPA `Image` -component te vullen.
+   Eigenschappen van `src` , `alt` en `title` worden gebruikt om de component SPA `Image` te vullen.
 
    >[!NOTE]
    >
@@ -252,7 +252,7 @@ Voordat u in de SPA code gaat springen, moet u het JSON-model controleren dat AE
 ### De component Image implementeren
 
 1. Stop de **webpack dev server** als begonnen.
-2. Maak een nieuwe component Image door de opdracht Angular CLI `ng generate component` uit te voeren vanuit de map `ui.frontend` :
+2. Maak een nieuwe afbeeldingscomponent door de Angular CLI-opdracht `ng generate component` uit te voeren vanuit de map `ui.frontend` :
 
    ```shell
    $ ng generate component components/image
@@ -293,13 +293,13 @@ Voordat u in de SPA code gaat springen, moet u het JSON-model controleren dat AE
    MapTo('wknd-spa-angular/components/image')(ImageComponent, ImageEditConfig);
    ```
 
-   `ImageEditConfig` is de configuratie waarmee wordt bepaald of de plaatsaanduiding van de auteur AEM moet worden weergegeven, op basis van het feit of de eigenschap `src` is gevuld.
+   `ImageEditConfig` is de configuratie waarmee wordt bepaald of de plaatsaanduiding van de auteur in AEM moet worden weergegeven, op basis van het feit of de eigenschap `src` is gevuld.
 
    `@Input()` van `src` , `alt` en `title` zijn de eigenschappen die zijn toegewezen via de JSON-API.
 
    `hasImage()` is een methode die bepaalt of de afbeelding moet worden gerenderd.
 
-   `MapTo` wijst de SPA component toe aan de AEM component die zich op `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components/image` bevindt.
+   `MapTo` wijst de component SPA toe aan de AEM-component in `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components/image` .
 
 4. Open **image.component.html** en werk het als volgt bij:
 
@@ -327,7 +327,7 @@ Voordat u in de SPA code gaat springen, moet u het JSON-model controleren dat AE
 
    >[!NOTE]
    >
-   > De `:host-context` regel is **kritiek** voor AEM SPA redacteursplaceholder correct te functioneren. Alle SPA componenten die bedoeld zijn om in de AEM paginaredacteur te worden ontworpen zullen deze regel bij een minimum vereisen.
+   > De `:host-context` regel is **kritiek** voor de redacteursplaceholder van AEM SPA correct te functioneren. Alle componenten van het KUUROORD die bestemd zijn om in de AEM paginaredacteur te worden ontworpen zullen deze regel bij een minimum vereisen.
 
 6. Open `app.module.ts` en voeg de `ImageComponent` toe aan de array `entryComponents` :
 
@@ -345,28 +345,28 @@ Voordat u in de SPA code gaat springen, moet u het JSON-model controleren dat AE
 
    ![ Beeld dat aan het mock ](assets/map-components/image-added-mock.png) wordt toegevoegd
 
-   *Beeld dat aan de SPA* wordt toegevoegd
+   *Beeld dat aan het KUUUROORD* wordt toegevoegd
 
    >[!NOTE]
    >
    > **de uitdaging van de Bonus**: Voer een nieuwe methode uit om de waarde van `title` als titel onder het beeld te tonen.
 
-## Beleid bijwerken in AEM
+## Beleid in AEM bijwerken
 
-De `ImageComponent` component is slechts zichtbaar in **webpack dev server**. Implementeer vervolgens de bijgewerkte SPA om het sjabloonbeleid te AEM en bij te werken.
+De `ImageComponent` component is slechts zichtbaar in **webpack dev server**. Daarna, stel het bijgewerkte KUUROORD aan AEM op en werk het malplaatjebeleid bij.
 
-1. Stop de **webpack dev server** en van de **wortel** van het project, stel de veranderingen in AEM gebruikend uw Maven vaardigheden op:
+1. Stop de **webpack dev server** en van de **wortel** van het project, stel de veranderingen in AEM op gebruikend uw Maven vaardigheden:
 
    ```shell
    $ cd aem-guides-wknd-spa
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-2. Van het AEM scherm van het Begin navigeert aan **[!UICONTROL Tools]** > **[!UICONTROL Templates]** > **[Angular van de SPA WKND ](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-angular)**.
+2. Van het scherm van het Begin van AEM navigeert aan **[!UICONTROL Tools]** > **[!UICONTROL Templates]** > **[WKND SPA Angular ](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-angular)**.
 
-   Selecteer en geef **SPA Pagina** uit:
+   Selecteer en geef de **Pagina van het KUUROORD** uit:
 
-   ![ geef SPA het Malplaatje van de Pagina uit ](assets/map-components/edit-spa-page-template.png)
+   ![ geef het Malplaatje van de Pagina van het KUUROORD ](assets/map-components/edit-spa-page-template.png) uit
 
 3. Selecteer de **Container van de Lay-out** en klik het **beleid** pictogram om het beleid uit te geven:
 
@@ -376,7 +376,7 @@ De `ImageComponent` component is slechts zichtbaar in **webpack dev server**. Im
 
    ![ Geselecteerde Component van het Beeld ](assets/map-components/check-image-component.png)
 
-   Onder **StandaardComponenten** > **voeg afbeelding** toe en kies het **Beeld - de Angular van de SPA van WKND - Inhoud** component:
+   Onder **StandaardComponenten** > **voeg afbeelding** toe en kies het **Beeld - WKND SPA Angular - Inhoud** component:
 
    ![ plaats standaardcomponenten ](assets/map-components/default-components.png)
 
@@ -388,7 +388,7 @@ De `ImageComponent` component is slechts zichtbaar in **webpack dev server**. Im
 
    ![ pictogram van het componentenbeleid van de Tekst ](./assets/map-components/edit-text-policy.png)
 
-   Creeer een nieuw beleid genoemd **WKND SPA Tekst**. Onder **Insteekmodules** > **Formatterend** > controleer alle dozen om extra het formatteren opties toe te laten:
+   Creeer een nieuw beleid genoemd **WKND Tekst van het KUUROORD**. Onder **Insteekmodules** > **Formatterend** > controleer alle dozen om extra het formatteren opties toe te laten:
 
    ![ laat RTE het Formatteren ](assets/map-components/enable-formatting-rte.png) toe
 
@@ -408,13 +408,13 @@ De `ImageComponent` component is slechts zichtbaar in **webpack dev server**. Im
 
    ![ belemmering en het beeld van de Daling ](./assets/map-components/drag-drop-image.gif)
 
-8. Voeg uw eigen beelden via [ AEM Assets ](http://localhost:4502/assets.html/content/dam) toe of installeer de gebeëindigde codebasis voor de standaard [ WKND verwijzingsplaats ](https://github.com/adobe/aem-guides-wknd/releases/latest). De [ WKND verwijzingsplaats ](https://github.com/adobe/aem-guides-wknd/releases/latest) omvat vele beelden die op de SPA kunnen worden opnieuw gebruikt WKND. Het pakket kan worden geïnstalleerd gebruikend [ AEM de Manager van het Pakket ](http://localhost:4502/crx/packmgr/index.jsp).
+8. Voeg uw eigen beelden via [ AEM Assets ](http://localhost:4502/assets.html/content/dam) toe of installeer de gebeëindigde codebasis voor de standaard [ WKND verwijzingsplaats ](https://github.com/adobe/aem-guides-wknd/releases/latest). De [ WKND verwijzingsplaats ](https://github.com/adobe/aem-guides-wknd/releases/latest) omvat vele beelden die op het KND KUUROORD kunnen worden opnieuw gebruikt. Het pakket kan worden geïnstalleerd gebruikend [ de Manager van het Pakket van AEM ](http://localhost:4502/crx/packmgr/index.jsp).
 
    ![ Manager van het Pakket installeert wknd.all ](./assets/map-components/package-manager-wknd-all.png)
 
-## Inspect the Layout Container
+## De container voor lay-out controleren
 
-De steun voor de **Container van de Lay-out** wordt automatisch verstrekt door de AEM SPA Redacteur SDK. De **Container van de Lay-out**, zoals die door de naam wordt vermeld, is a **container** component. De componenten van de container zijn componenten die structuren goedkeuren JSON die *andere* componenten vertegenwoordigen en dynamisch hen concretiseren.
+De steun voor de **Container van de Lay-out** wordt automatisch verstrekt door de Redacteur SDK van AEM SPA. De **Container van de Lay-out**, zoals die door de naam wordt vermeld, is a **container** component. De componenten van de container zijn componenten die structuren goedkeuren JSON die *andere* componenten vertegenwoordigen en dynamisch hen concretiseren.
 
 Controleer de container voor lay-out verder.
 
@@ -426,15 +426,15 @@ Controleer de container voor lay-out verder.
    MapTo('wcm/foundation/components/responsivegrid')(AEMResponsiveGridComponent);
    ```
 
-   `AEMResponsiveGridComponent` wordt geïmplementeerd als onderdeel van de AEM SPA Editor SDK en wordt via `import-components` opgenomen in het project.
+   `AEMResponsiveGridComponent` wordt geïmplementeerd als onderdeel van de AEM SPA Editor SDK en is opgenomen in het project via `import-components` .
 
 2. In browser navigeert aan [ http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json)
 
    ![ JSON model API - het Responsieve Net ](./assets/map-components/responsive-grid-modeljson.png)
 
-   De **component van de Container van de Lay-out** heeft a `sling:resourceType` van `wcm/foundation/components/responsivegrid` en door de SPARedacteur gebruikend het `:type` bezit, enkel als `Text` en `Image` componenten erkend.
+   De **component van de Container van de Lay-out** heeft a `sling:resourceType` van `wcm/foundation/components/responsivegrid` en door de Redacteur van het KUUROORD erkend gebruikend het `:type` bezit, enkel als `Text` en `Image` componenten.
 
-   De zelfde mogelijkheden om een component opnieuw te rangschikken gebruikend [ Wijze van de Lay-out ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) zijn beschikbaar met de SPARedacteur.
+   De zelfde mogelijkheden om een component opnieuw te rangschikken gebruikend [ Wijze van de Lay-out ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) zijn beschikbaar met de Redacteur van het KUUROORD.
 
 3. Keer terug naar [ http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html ](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Voeg extra **componenten van het Beeld 0} toe {en probeer re-sizing hen gebruikend de** optie van de Lay-out **:**
 
@@ -456,33 +456,33 @@ Controleer de container voor lay-out verder.
 
 ## Gefeliciteerd! {#congratulations}
 
-U hebt geleerd hoe u SPA componenten kunt toewijzen aan AEM Componenten en hoe u een nieuwe `Image` -component hebt geïmplementeerd. U hebt ook een kans om de ontvankelijke mogelijkheden van de **Container van de Lay-out** te onderzoeken.
+U hebt geleerd hoe u SPA-componenten kunt toewijzen aan AEM Components en een nieuwe `Image` -component hebt geïmplementeerd. U hebt ook een kans om de ontvankelijke mogelijkheden van de **Container van de Lay-out** te onderzoeken.
 
 U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/map-components-solution) altijd bekijken of de code uit controleren plaatselijk door aan de tak `Angular/map-components-solution` te schakelen.
 
 ### Volgende stappen {#next-steps}
 
-[ Navigatie en het Verpletteren ](navigation-routing.md) - leer hoe de veelvoudige meningen in de SPA door afbeelding aan AEM Pagina&#39;s met SPA Redacteur SDK kunnen worden gesteund. De dynamische navigatie wordt uitgevoerd gebruikend de Router van de Angular en toegevoegd aan een bestaande component van de Kopbal.
+[ Navigatie en het Verpletteren ](navigation-routing.md) - leer hoe de veelvoudige meningen in het KUUROORD door afbeelding aan de Pagina&#39;s van AEM met de Redacteur SDK van het KUUROORD kunnen worden gesteund. De dynamische navigatie wordt uitgevoerd gebruikend de Router van Angular en toegevoegd aan een bestaande component van de Kopbal.
 
 ## Bonus - configuraties aan broncontrole blijven {#bonus}
 
-In veel gevallen, vooral aan het begin van een AEM project is het waardevol om configuraties, zoals malplaatjes en verwant inhoudsbeleid, aan broncontrole voort te zetten. Dit zorgt ervoor dat alle ontwikkelaars tegen de zelfde reeks inhoud en configuraties werken en extra consistentie tussen milieu&#39;s kunnen verzekeren. Wanneer een project een bepaald ontwikkelingsniveau heeft bereikt, kan het beheren van sjablonen worden overgedragen aan een speciale groep van energiegebruikers.
+In veel gevallen, vooral aan het begin van een project van AEM is het waardevol om configuraties, zoals malplaatjes en verwant inhoudsbeleid, aan broncontrole voort te zetten. Dit zorgt ervoor dat alle ontwikkelaars tegen de zelfde reeks inhoud en configuraties werken en extra consistentie tussen milieu&#39;s kunnen verzekeren. Wanneer een project een bepaald ontwikkelingsniveau heeft bereikt, kan het beheren van sjablonen worden overgedragen aan een speciale groep van energiegebruikers.
 
-De volgende paar stappen zullen plaatsvinden gebruikend winde van de Code van Visual Studio en [ VSCode AEM Synchronisatie ](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) maar zouden het gebruiken van om het even welk hulpmiddel en om het even welke winde kunnen doen die u aan **trek** of **invoert** inhoud van een lokale instantie van AEM hebt gevormd.
+De volgende weinige stappen zullen plaatsvinden gebruikend winde van de Code van Visual Studio en [ Synchronisatie van VSCode AEM ](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) maar zouden het gebruiken van om het even welk hulpmiddel en om het even welke winde kunnen doen die u aan **trek** of **invoert** inhoud van een lokale instantie van AEM hebt gevormd.
 
-1. In winde van de Code van Visual Studio, zorg ervoor dat u **VSCode AEM Synchronisatie** geïnstalleerd via de uitbreiding van de Marketplace hebt:
+1. In winde van de Code van Visual Studio, zorg ervoor dat u {de Synchronisatie van AEM van 0} VSCode **via de uitbreiding van de Marketplace geïnstalleerd hebt:**
 
-   ![ VSCode AEM Synchronisatie ](./assets/map-components/vscode-aem-sync.png)
+   ![ de Synchronisatie van AEM VSCode ](./assets/map-components/vscode-aem-sync.png)
 
 2. Breid **ui.content** module in de ontdekkingsreiziger van het Project uit en navigeer aan `/conf/wknd-spa-angular/settings/wcm/templates`.
 
-3. **Right+Click** de `templates` omslag en selecteer **Invoer van AEM Server**:
+3. **Right+Click** de `templates` omslag en selecteer **Invoer van de Server van AEM**:
 
    ![ VSCode het invoermalplaatje ](assets/map-components/import-aem-servervscode.png)
 
 4. Herhaal de stappen om inhoud in te voeren maar selecteer de **beleid** omslag die bij `/conf/wknd-spa-angular/settings/wcm/policies` wordt gevestigd.
 
-5. Inspect het `filter.xml` -bestand op `ui.content/src/main/content/META-INF/vault/filter.xml` .
+5. Controleer het `filter.xml` -bestand in `ui.content/src/main/content/META-INF/vault/filter.xml` .
 
    ```xml
    <!--ui.content filter.xml-->

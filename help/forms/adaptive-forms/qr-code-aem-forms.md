@@ -3,14 +3,14 @@ title: QR-code in adaptieve vorm weergeven
 description: QR-code weergeven in een adaptief formulier
 feature: Adaptive Forms
 type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 jira: KT-15603
 last-substantial-update: 2024-05-28T00:00:00Z
 exl-id: 0c6079f4-601e-4a82-976c-71dbb2faa671
-source-git-commit: 1977e5103de72a0db5f446eba539d4ae5b810e74
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Het insluiten van een QR-code in een adaptief formulier kan het voor gebruikers 
 
 De steekproefcomponent maakt gebruik van [ QRCode.js ](https://davidshimjs.github.io/qrcodejs/).
 
-QRCode.js is een bibliotheek javascript voor het maken van QRCode, steunt het dwars-browser met HTML5 Canvas en lijstmarkering in DOM.
+QRCode.js is een javascript bibliotheek voor het maken van QRCode, steunt het dwars-browser met HTML5 Canvas en lijstmarkering in DOM.
 
 De component produceert de code QR die op de waarde wordt gebaseerd in het configuratiebezit van de component wordt gespecificeerd.
 ![afbeelding](assets/qr-code-url.png)

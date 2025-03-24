@@ -1,16 +1,16 @@
 ---
 title: Experience Fragments gebruiken met AEM Assets Dynamic Media
-description: AEM Assets Dynamic Media integreert hotspots voor elementen met Experience Fragments via Interactive Media-viewers. Marketers kunnen het ervaringsfragment samenstellen met tekst, afbeeldingen en koppelingen om het aangepaste pop-upvenster te vullen en dat pop-upfragment koppelen aan hotspots op banners, carrousels of video's.
+description: AEM Assets Dynamic Media integreert hotspots voor elementen met Experience Fragments via Interactieve Media-viewers. Marketers kunnen het ervaringsfragment samenstellen met tekst, afbeeldingen en koppelingen om het aangepaste pop-upvenster te vullen en dat pop-upfragment koppelen aan hotspots op banners, carrousels of video's.
 sub-product: Experience Manager Assets, Experience Manager Sites
 feature: Experience Fragments
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: c4c1ffe2-d4ea-4b31-b5d5-132fba9d2633
 duration: 274
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
@@ -19,14 +19,14 @@ ht-degree: 0%
 
 # Experience Fragments gebruiken met AEM Assets Dynamic Media{#using-experience-fragments-with-aem-assets-dynamic-media}
 
-AEM Assets Dynamic Media integreert hotspots voor elementen met Experience Fragments via Interactive Media-viewers. Marketers kunnen het ervaringsfragment samenstellen met tekst, afbeeldingen en koppelingen om het aangepaste pop-upvenster te vullen en dat pop-upfragment koppelen aan hotspots op banners, carrousels of video&#39;s.
+AEM Assets Dynamic Media integreert hotspots voor elementen met Experience Fragments via Interactieve Media-viewers. Marketers kunnen het ervaringsfragment samenstellen met tekst, afbeeldingen en koppelingen om het aangepaste pop-upvenster te vullen en dat pop-upfragment koppelen aan hotspots op banners, carrousels of video&#39;s.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22115?quality=12&learn=on)
 
 >[!NOTE]
 >
->Het gebruiken van AEM Fragments van de Ervaring met Hotspots van AEM Assets Dynamic Media vereist [ AEM om op de Dynamic Media ](https://experienceleague.adobe.com/docs/) wijze worden in werking gesteld.
+>Het gebruiken van de Fragmenten van de Ervaring van AEM met Hotspots van de Media van AEM Assets Dynamische vereist [ AEM om op de Dynamische 1} wijze van Media worden in werking gesteld.](https://experienceleague.adobe.com/docs/)
 
-De variant van het Fragment van de Pop-up Ervaring die in de video wordt getoond is beschikbaar als AEM hieronder pakket.
+De in de video getoonde variant van het Fragment van de Pop-up Ervaring is beschikbaar als AEM hieronder pakket.
 
-De Fragmenten van de Ervaring van de download [ Dynamic Media Assets ](assets/experience-fragmentsdynamic-mediaassets-100.zip)
+De fragmenten van de Ervaring van de download [ Dynamische Media Assets ](assets/experience-fragmentsdynamic-mediaassets-100.zip)

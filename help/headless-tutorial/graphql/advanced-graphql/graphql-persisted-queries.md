@@ -1,14 +1,14 @@
 ---
-title: Blijvende GraphQL-query's - Geavanceerde concepten van AEM headless - GraphQL
-description: In dit hoofdstuk van Geavanceerde concepten van Adobe Experience Manager (AEM) Headless, leer hoe te om voortgezette vragen van GraphQL met parameters tot stand te brengen en bij te werken. Leer hoe te om cache-controle parameters in persisted query's over te gaan.
-version: Cloud Service
+title: Blijvende GraphQL-query's - Geavanceerde concepten van AEM Headless - GraphQL
+description: In dit hoofdstuk van Geavanceerde concepten van Adobe Experience Manager (AEM) Headless leert u hoe u aanhoudend GraphQL-query's kunt maken en bijwerken met parameters. Leer hoe te om cache-controle parameters in persisted query's over te gaan.
+version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 6a8e90ae-0765-4066-9df4-a3e4d2cda285
 duration: 183
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 0%
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # Blijvende GraphQL-query&#39;s
 
-Blijvende query&#39;s zijn query&#39;s die zijn opgeslagen op de Adobe Experience Manager-server (AEM). Clients kunnen een HTTP-GET-aanvraag met de naam van de query verzenden om deze uit te voeren. Het voordeel van deze aanpak is cacheability. Terwijl client-side GraphQL query&#39;s ook kunnen worden uitgevoerd met HTTP POST request, dat niet in cache kan worden geplaatst, kunnen persisted query&#39;s in cache worden geplaatst door HTTP caches of een CDN, waardoor de prestaties verbeteren. De gepersisteerde vragen staan u toe om uw verzoeken te vereenvoudigen en veiligheid te verbeteren omdat uw vragen op de server worden ingekapseld en de AEM beheerder volledige controle over hen heeft. Het is **beste praktijken en hoogst geadviseerd** om persisted vragen te gebruiken wanneer het werken met AEM GraphQL API.
+Blijvende query&#39;s zijn query&#39;s die zijn opgeslagen op de Adobe Experience Manager (AEM)-server. Clients kunnen een HTTP GET-aanvraag met de naam van de query verzenden om deze uit te voeren. Het voordeel van deze aanpak is cacheability. Terwijl client-side GraphQL query&#39;s ook kunnen worden uitgevoerd met HTTP POST-aanvragen, die niet in cache kunnen worden geplaatst, kunnen persisted query&#39;s in cache worden geplaatst door HTTP-cache of een CDN, waardoor de prestaties verbeteren. De gepersisteerde vragen staan u toe om uw verzoeken te vereenvoudigen en veiligheid te verbeteren omdat uw vragen op de server worden ingekapseld en de beheerder van AEM heeft volledige controle over hen. Het is **beste praktijken en hoogst geadviseerd** om persisted vragen te gebruiken wanneer het werken met AEM GraphQL API.
 
-In het vorige hoofdstuk hebt u enkele geavanceerde GraphQL-query&#39;s onderzocht om gegevens voor de WKND-app te verzamelen. In dit hoofdstuk, blijft u de vragen aan AEM en leert hoe te om geheim voorgeheugencontrole op persisted query te gebruiken.
+In het vorige hoofdstuk hebt u enkele geavanceerde GraphQL-query&#39;s onderzocht om gegevens voor de WKND-app te verzamelen. In dit hoofdstuk, zet u de vragen aan AEM voort en leert hoe te om geheim voorgeheugencontrole op persisted query&#39;s te gebruiken.
 
 ## Vereisten {#prerequisites}
 
@@ -34,7 +34,7 @@ Leer in dit hoofdstuk hoe te:
 
 ## Herzie _GraphQL het Verlengde 1} configuratie plaatsen van Vragen {_
 
-Laat herzien dat _GraphQL de Verlengde Vragen_ voor het project van de Plaats WKND in uw AEM instantie worden toegelaten.
+Laat herzien dat _GraphQL de Verlengde Vragen_ voor het project van de Plaats WKND in uw instantie van AEM worden toegelaten.
 
 1. Navigeer aan **Hulpmiddelen** > **Algemeen** > **Browser van de Configuratie**.
 
@@ -165,7 +165,7 @@ In deze sectie, laten wij de vraag van GraphQL voortzetten die later in de clië
 
 Laten we begrijpen hoe voortgezette query&#39;s met variabelen worden uitgevoerd door de toepassing aan de clientzijde door de speciale tekens te coderen.
 
-Om een voortgezette vraag uit te voeren, doet de cliënttoepassing een verzoek van de GET gebruikend de volgende syntaxis:
+Als u een voortgezette query wilt uitvoeren, doet de clienttoepassing een GET-aanvraag met de volgende syntaxis:
 
 ```
 GET <AEM_HOST>/graphql/execute.json/<Project-Config-Name>/<Persisted-Query-Name>
@@ -207,7 +207,7 @@ Door `getAllAdventureDetailsBySlug` vraag van de bevel-lijn terminal in werking 
 
 >[!TIP]
 >
->    Als het runnen van de bovengenoemde vraag tegen het milieu van de AEM Auteur, moet u de geloofsbrieven verzenden. Zie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) Token van de Toegang van de Lokale Ontwikkeling 1} voor demonstratie van het en [ roepend AEM API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) voor documentatiedetails.[
+>    Als u de bovenstaande query uitvoert tegen de AEM Author-omgeving, moet u de gegevens verzenden. Zie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) Token van de Toegang van de Lokale Ontwikkeling 1} voor demonstratie van het en [ roepend AEM API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) voor documentatiedetails.[
 
 Ook, herzie [ hoe te om een Gepersisteerde vraag ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#execute-persisted-query) uit te voeren, [ Gebruikend vraagvariabelen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#query-variables), en [ Coderend vraag URL voor gebruik door app ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#encoding-query-url) om persisted vraaguitvoering door cliënttoepassingen te leren.
 

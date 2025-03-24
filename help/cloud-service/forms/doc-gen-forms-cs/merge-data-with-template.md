@@ -1,27 +1,27 @@
 ---
 title: Gegevens samenvoegen met de XDP-sjabloon
-description: Breng een verzoek van de POST aan het eindpunt met de noodzakelijke parameters
+description: Een POST-verzoek indienen voor het eindpunt met de benodigde parameters
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-8185
 thumbnail: 332439.jpg
 exl-id: d144b3f6-7c7a-46a7-bc5f-1767895749d0
 duration: 49
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
 
 ---
 
-# De POST aanroepen
+# Maak de POST vraag
 
 
-De volgende stap is een vraag van de POST van HTTP aan het eindpunt met de noodzakelijke parameters te maken. Het malplaatje en de gegevensdossiers worden verstrekt als middeldossiers. Eigenschappen van de gegenereerde PDF worden via de parameter van de optie in de aanvraag opgegeven. De eigenschap embedFonts wordt gebruikt om aangepaste lettertypen in te sluiten in de gegenereerde PDF.[ Gelieve te volgen deze documentatie om douanedoopvonten aan uw de wolkeninstantie van Forms op te stellen.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html?lang=en) De eigenschappen worden opgegeven in het bestand options.json resource. Aangezien, heeft het eindpunt symbolische gebaseerde authentificatie wij het Token van de Toegang in de verzoekkopbal overgaan.
+De volgende stap is een POST van HTTP vraag aan het eindpunt met de noodzakelijke parameters te maken. Het malplaatje en de gegevensdossiers worden verstrekt als middeldossiers. Eigenschappen van de gegenereerde PDF worden via de parameter van de optie in de aanvraag opgegeven. De eigenschap embedFonts wordt gebruikt om aangepaste lettertypen in te sluiten in de gegenereerde PDF.[ Gelieve te volgen deze documentatie om douanedoopvonten aan uw de wolkeninstantie van Forms op te stellen.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html?lang=en) De eigenschappen worden opgegeven in het bestand options.json resource. Aangezien, heeft het eindpunt symbolische gebaseerde authentificatie wij het Token van de Toegang in de verzoekkopbal overgaan.
 
 De volgende code is gebruikt om pdf te genereren door gegevens samen te voegen met de sjabloon
 

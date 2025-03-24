@@ -1,7 +1,7 @@
 ---
 title: Voorvertoning van inhoudsfragment
-description: Leer hoe u de voorvertoning van een inhoudsfragment aan alle auteurs kunt gebruiken om snel te zien hoe de wijzigingen in de inhoud van invloed zijn op de ervaringen AEM Koploos.
-version: Cloud Service
+description: Leer hoe u de voorvertoning van een inhoudsfragment aan alle auteurs kunt gebruiken om snel te zien hoe wijzigingen in de inhoud van invloed zijn op uw AEM Headless-ervaringen.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments
 topic: Headless, Content Management, Development
 role: Architect, Developer
@@ -12,7 +12,7 @@ jira: KT-10841
 thumbnail: 3416906.jpeg
 exl-id: 247d40a3-ff67-4c1f-86bf-3794d7ce3e32
 duration: 463
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -21,14 +21,14 @@ ht-degree: 0%
 
 # Voorvertoning van inhoudsfragment
 
-AEM toepassingen zonder koppen ondersteunen geïntegreerde ontwerpvoorvertoning. De voorvertoning koppelt de AEM Inhoudsfragmenteditor van de auteur aan uw aangepaste app (adresseerbaar via HTTP), zodat er een diepe koppeling ontstaat naar de app die de voorvertoning van het Inhoudsfragment weergeeft.
+AEM Headless-toepassingen ondersteunen geïntegreerde ontwerpvoorvertoning. De voorvertoning koppelt de Inhoudsfragmenteditor van de AEM-auteur aan uw aangepaste app (adresseerbaar via HTTP), zodat een uitgebreide koppeling mogelijk is naar de app die de voorvertoning van het Inhoudsfragment weergeeft.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
 
 Aan verschillende voorwaarden moet zijn voldaan om een voorbeeld van een inhoudsfragment te kunnen gebruiken:
 
 1. De app moet worden geïmplementeerd op een URL die toegankelijk is voor auteurs
-1. De app moet zijn geconfigureerd om verbinding te maken met AEM Auteur-service (in plaats van met de AEM Publish-service)
+1. De app moet zijn geconfigureerd om verbinding te maken met de AEM Author-service (in plaats van de AEM Publish-service)
 1. App moet met URLs of routes worden ontworpen die [ weg of identiteitskaart van het Fragment van de Inhoud ](#url-expressions) kunnen gebruiken om de Fragmenten van de Inhoud te selecteren om voor voorproef in de app ervaring te tonen.
 
 ## Voorvertoning van URL&#39;s
@@ -37,11 +37,11 @@ Voorproef URLs, gebruikend [ uitdrukkingen URL ](#url-expressions), wordt geplaa
 
 ![ het ModelVoorproef URL van het Fragmentmodel van de Inhoud ](./assets/preview/cf-model-preview-url.png)
 
-1. Aanmelden bij AEM Auteur-service als beheerder
+1. Aanmelden bij de AEM Author-service als beheerder
 1. Navigeer aan __Hulpmiddelen > Algemeen > de Modellen van het Fragment van de Inhoud__
 1. Selecteer het __Model van het Fragment van de Inhoud__ en selecteer __Eigenschappen__ van de hoogste actiebar.
 1. Ga voorproef URL voor het Model van het Fragment van de Inhoud in gebruikend [ uitdrukkingen URL ](#url-expressions)
-   + De URL van de voorvertoning moet verwijzen naar een implementatie van de app die verbinding maakt met AEM Auteur-service.
+   + De URL van de voorvertoning moet verwijzen naar een implementatie van de app die verbinding maakt met de AEM Author-service.
 
 ### URL-expressies
 
@@ -70,7 +70,7 @@ Voer hard vernieuwen uit (wissen van de lokale cache van de browser) wanneer u e
 
 ## Voorbeeld Reageren
 
-Laten we eens kijken naar de WKND-app, een eenvoudige React-toepassing die avonturen van AEM weergeeft met behulp van AEM Headless GraphQL API&#39;s.
+Laten we eens kijken naar de WKND-app, een eenvoudige React-toepassing die avonturen van AEM weergeeft met AEM Headless GraphQL API&#39;s.
 
 De voorbeeldcode is beschikbaar op [ Github.com ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/preview-tutorial).
 

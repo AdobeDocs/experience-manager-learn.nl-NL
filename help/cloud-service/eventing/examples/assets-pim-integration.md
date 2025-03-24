@@ -1,7 +1,7 @@
 ---
 title: AEM Assets-gebeurtenissen voor PIM-integratie
 description: Leer hoe u AEM Assets en PIM-systemen (Product Information Management) kunt integreren voor updates van metagegevens van bedrijfsmiddelen.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
 role: Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1517'
 ht-degree: 0%
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Deze zelfstudie gebruikt op OpenAPI gebaseerde AEM API&#39;s. Zij zijn beschikbaar als deel van een vroege toegangsprogramma, als u in de toegang tot van hen geinteresseerd bent, moedigen wij u aan om [ aem-apis@adobe.com ](mailto:aem-apis@adobe.com) met een beschrijving van uw gebruiksgeval te e-mailen.
+>Deze zelfstudie maakt gebruik van AEM API&#39;s die zijn gebaseerd op OpenAPI. Zij zijn beschikbaar als deel van een vroege toegangsprogramma, als u in de toegang tot van hen geinteresseerd bent, moedigen wij u aan om [ aem-apis@adobe.com ](mailto:aem-apis@adobe.com) met een beschrijving van uw gebruiksgeval te e-mailen.
 
-Leer hoe u een AEM gebeurtenis ontvangt en erop reageert om de status van de inhoud bij te werken in AEM met de Assets-auteur-API van OpenAPI.
+Leer hoe u een AEM-gebeurtenis ontvangt en erop reageert om de status van de inhoud in AEM bij te werken met behulp van de op OpenAPI gebaseerde Assets Author API.
 
-Hoe te om de ontvangen gebeurtenis te verwerken hangt van de bedrijfsvereisten af. De gebeurtenisgegevens kunnen bijvoorbeeld worden gebruikt om het systeem van derden bij te werken, of AEM, of beide.
+Hoe te om de ontvangen gebeurtenis te verwerken hangt van de bedrijfsvereisten af. De gebeurtenisgegevens kunnen bijvoorbeeld worden gebruikt om het systeem van derden bij te werken, of AEM of beide.
 
 In dit voorbeeld wordt getoond hoe een systeem van derden, zoals een PIM-systeem (Product Information Management), kan worden geïntegreerd met AEM as a Cloud Service Assets. Als een AEM Assets-gebeurtenis wordt ontvangen, worden aanvullende metagegevens opgehaald van het PIM-systeem en worden de metagegevens van de elementen in AEM bijgewerkt. De bijgewerkte metagegevens voor elementen kunnen aanvullende informatie bevatten, zoals de SKU, de naam van de leverancier of andere productgegevens.
 
@@ -37,9 +37,9 @@ De integratiestroom op hoog niveau is als volgt:
 
 ![ de gebeurtenissen van AEM Assets voor PIM integratie ](../assets/examples/assets-pim-integration/aem-assets-pim-integration.png)
 
-1. De AEM dienst van de Auteur teweegbrengt een _Voltooide gebeurtenis van de Verwerking van Activa_ teweeg wanneer een activa uploadt wordt voltooid en alle activiteiten van de activaverwerking ook worden voltooid. Het wachten op de voltooiing van de verwerking van activa zorgt ervoor dat om het even welke uit-van-de-doosverwerking, zoals meta-gegevensextractie, is voltooid.
-1. De gebeurtenis wordt verzonden naar de [ Adobe I/O Gebeurtenissen ](https://developer.adobe.com/events/) dienst.
-1. De dienst van de Gebeurtenissen van Adobe I/O gaat de gebeurtenis tot de [ Actie van Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) voor verwerking over.
+1. De dienst van de Auteur van AEM teweegbrengt een _Voltooide gebeurtenis van de Verwerking van Activa_ teweeg wanneer een activa uploadt wordt voltooid en alle activiteiten van de activaverwerking ook worden voltooid. Het wachten op de voltooiing van de verwerking van activa zorgt ervoor dat om het even welke uit-van-de-doosverwerking, zoals meta-gegevensextractie, is voltooid.
+1. De gebeurtenis wordt verzonden naar de [ dienst van Adobe I/O Events ](https://developer.adobe.com/events/).
+1. De dienst van Adobe I/O Events gaat de gebeurtenis tot de [ Actie van Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) voor verwerking over.
 1. De actie van Adobe I/O Runtime roept API van het PIM systeem om extra meta-gegevens zoals SKU, leveranciersinformatie, of andere details terug te winnen.
 1. De extra meta-gegevens die van PIM worden teruggewonnen worden dan bijgewerkt in AEM Assets gebruikend op OpenAPI-Gebaseerde [ de Auteur API van Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/).
 
@@ -47,7 +47,7 @@ De integratiestroom op hoog niveau is als volgt:
 
 U hebt het volgende nodig om deze zelfstudie te voltooien:
 
-- Het milieu van AEM as a Cloud Service met [ toegelaten AEM Gebeurtenis ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Ook, moet het steekproef ](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) project van de Plaatsen WKND [ worden opgesteld aan het.
+- Het milieu van AEM as a Cloud Service met [ toegelaten de Gebeurtenis van AEM ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Ook, moet het steekproef ](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) project van de Plaatsen WKND [ worden opgesteld aan het.
 
 - Toegang tot [ Adobe Developer Console ](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
 
@@ -58,18 +58,18 @@ U hebt het volgende nodig om deze zelfstudie te voltooien:
 De ontwikkelingsstappen op hoog niveau zijn:
 
 1. [ Modernisering van het milieu van AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
-1. [ laat AEM APIs toegang ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access) toe
+1. [ laat de toegang van AEM APIs ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access) toe
 1. [Een project maken in de Adobe Developer Console (ADC)](./runtime-action.md#Create-project-in-Adobe-Developer-Console)
 1. [Initialiseer het project voor lokale ontwikkeling](./runtime-action.md#initialize-project-for-local-development)
 1. Vorm het project in ADC
-1. Vorm de AEM dienst van de Auteur om ADC projectmededeling toe te laten
+1. De AEM Author-service configureren om ADC-projectcommunicatie in te schakelen
 1. Een runtimeactie ontwikkelen om te ordenen
    1. metagegevens ophalen uit het PIM-systeem
    1. update van metagegevens in AEM Assets met de Assets Author API
 1. Metagegevensschema voor elementen maken en toepassen
 1. Verificatie van het uploaden van elementen en update van metagegevens
 
-Voor details op stappen 1-2, verwijs naar [ Invoke OpenAPI-Gebaseerde AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) gids en voor stappen 3-4 verwijzen naar de [ Actie van Adobe I/O Runtime en AEM Gebeurtenissen ](./runtime-action.md#) voorbeeld. Raadpleeg de volgende secties voor stappen 5-9.
+Voor details op stappen 1-2, verwijs naar [ OpenAPI-Gebaseerde gids van AEM APIs aanhalen ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) en voor stappen 3-4 verwijzen naar de [ Actie van Adobe I/O Runtime en de Gebeurtenissen van AEM ](./runtime-action.md#) voorbeeld. Raadpleeg de volgende secties voor stappen 5-9.
 
 ### Het project configureren in Adobe Developer Console (ADC)
 
@@ -77,7 +77,7 @@ Als u AEM Assets Events wilt ontvangen en de Adobe I/O Runtime-actie wilt uitvoe
 
 - In ADC, navigeer aan het [ project ](https://developer.adobe.com/console/projects) dat u in stap-3 creeerde. Selecteer in dat project de `Stage` -werkruimte waar de runtimeactie wordt uitgevoerd wanneer u `aio app deploy` uitvoert als onderdeel van de instructies voor stap 4.
 
-- Klik **toevoegen de** knoop van de Dienst {en selecteren de **optie van de Gebeurtenis**. In **voeg Gebeurtenissen** dialoog toe, uitgezocht **Experience Cloud** > **AEM Assets**, en klik **daarna**.
+- Klik **toevoegen de** knoop van de Dienst {en selecteren de **optie van de Gebeurtenis**. In **voeg Gebeurtenissen** dialoog toe, selecteer **Experience Cloud** > **AEM Assets**, en klik **daarna**.
   ![ Gebeurtenis AEM Assets - voeg gebeurtenis ](../assets/examples/assets-pim-integration/add-aem-assets-event.png) toe
 
 - In **vorm gebeurtenisregistratie** stap, selecteer de gewenste instantie AEMCS, toen _Voltooide gebeurtenis van de Verwerking van Activa_, en het Server-aan-Server authentificatietype OAuth.
@@ -88,7 +88,7 @@ Als u AEM Assets Events wilt ontvangen en de Adobe I/O Runtime-actie wilt uitvoe
 
   ![ Gebeurtenis AEM Assets - ontvang gebeurtenis ](../assets/examples/assets-pim-integration/receive-aem-assets-event.png)
 
-- Eveneens, klik **voeg de knoop van de Dienst** toe en selecteer de **API** optie. In **voeg API** modaal toe API, selecteer **Experience Cloud** > **Auteur API van AEM Assets** en klik **daarna**.
+- Eveneens, klik **voeg de knoop van de Dienst** toe en selecteer de **API** optie. In **voeg API** modaal toe, selecteer **Experience Cloud** > **de Auteur API van AEM Assets** en klik **daarna**.
 
   ![ voeg de Auteur API van AEM Assets toe - vorm project ](../assets/examples/assets-pim-integration/add-aem-api.png)
 
@@ -98,15 +98,15 @@ Als u AEM Assets Events wilt ontvangen en de Adobe I/O Runtime-actie wilt uitvoe
 
   ![ voeg de Auteur API van AEM Assets toe - vorm project ](../assets/examples/assets-pim-integration/add-aem-api-product-profile-select.png)
 
-  In mijn geval wordt het _AEM Beheerders - auteur - Programma XXX - Milieu YYY_ productprofiel geselecteerd, heeft het **toegelaten de dienst van de Gebruikers van AEM Assets API**.
+  In mijn geval worden de _Beheerders van AEM - auteur - Programma XXX - Milieu YYY_ productprofiel geselecteerd, heeft het **toegelaten de dienst van de Gebruikers van AEM Assets API**.
 
   ![ voeg AEM Assets Auteur API toe - het Profiel van het Product van het Voorbeeld ](../assets/examples/assets-pim-integration/aem-api-product-profile.png)
 
-## AEM instantie configureren om ADC-projectcommunicatie in te schakelen
+## AEM-instantie configureren om ADC-projectcommunicatie in te schakelen
 
-Om OAuth server-aan-Server van het Project van ADC toe te laten credential ClientID aan communicatie met de AEM instantie, moet u de AEM instantie vormen.
+Om OAuth server-aan-server van het Project van ADC Server-aan-Server referentie ClientID aan communicatie met de instantie van AEM toe te laten, moet u de instantie van AEM vormen.
 
-Hiervoor definieert u de configuratie in het `config.yaml` -bestand in het AEM Project. Implementeer vervolgens het `config.yaml` -bestand met behulp van de Config Pipeline in de Cloud Manager.
+Hiervoor definieert u de configuratie in het `config.yaml` -bestand in het AEM-project. Implementeer vervolgens het `config.yaml` -bestand met behulp van de Config Pipeline in de Cloud Manager.
 
 - Zoek in AEM Project het `config.yaml` -bestand in de map `config` of maak dit.
 
@@ -171,7 +171,7 @@ Verwijs naar het in bijlage [ WKND-Assets-PIM-Integration.zip ](../assets/exampl
   };
   ```
 
-- Het `src/dx-excshell-1/actions/generic/aemCommunicator.js` dossier werkt de activa meta-gegevens in AEM gebruikend [ de Auteur API van Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) bij.
+- Het `src/dx-excshell-1/actions/generic/aemCommunicator.js` dossier werkt de activa meta-gegevens in AEM bij gebruikend [ de Auteur API van Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/).
 
   ```javascript
   const fetch = require('node-fetch');
@@ -312,8 +312,8 @@ Door gebrek, heeft het project van Plaatsen WKND niet het schema van activa meta
 
    | Label | Plaatsaanduiding | Eigenschap Metadata |
    | --- | --- | --- |
-   | SKU | Automatisch gevuld via AEM integratie Eventing | `wknd-skuid` |
-   | Naam leverancier | Automatisch gevuld via AEM integratie Eventing | `wknd-suppliername` |
+   | SKU | Automatisch ingevuld via AEM Event-integratie | `wknd-skuid` |
+   | Naam leverancier | Automatisch ingevuld via AEM Event-integratie | `wknd-suppliername` |
 
 1. Klik **sparen** en **dicht** om de meta-gegevensvorm te bewaren.
 
@@ -331,10 +331,10 @@ Om de integratie van AEM Assets en PIM te verifiëren, upload activa aan de **om
 
 ## Concept en toetsaanslagen
 
-De synchronisatie van de metagegevens van bedrijfsmiddelen tussen AEM en andere systemen, zoals PIM, is vaak vereist in de onderneming. Met AEM Eventing kunnen dergelijke vereisten worden bereikt.
+De synchronisatie van de metagegevens van bedrijfsmiddelen tussen AEM en andere systemen, zoals PIM, is vaak vereist in de onderneming. Met AEM Event kunnen dergelijke vereisten worden bereikt.
 
-- De code voor het ophalen van metagegevens van elementen wordt buiten AEM uitgevoerd, waarbij het laden op de AEM Auteur-service wordt vermeden. Dit is dus een gebeurtenisgestuurde architectuur die onafhankelijk van elkaar wordt geschaald.
-- De nieuwe Assets-auteur-API wordt gebruikt om de metagegevens van de elementen in AEM bij te werken.
+- De code voor het ophalen van metagegevens van elementen wordt buiten AEM uitgevoerd, waardoor het laden op de AEM Author-service wordt vermeden. Dit is een gebeurtenisgestuurde architectuur die onafhankelijk van elkaar wordt geschaald.
+- De nieuwe Assets-auteur-API wordt gebruikt om de metagegevens van elementen in AEM bij te werken.
 - De API authentificatie gebruikt server-aan-server OAuth (de stroom van de cliëntgeloofsbrieven van de alias), zie [ Server-aan-Server de gids van de credentieimplementatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/).
 - In plaats van Adobe I/O Runtime-handelingen kunnen andere websites of Amazon EventBridge worden gebruikt om de AEM Assets-gebeurtenis te ontvangen en de update van de metagegevens te verwerken.
-- Asset Events via AEM Event stellen bedrijven in staat om kritieke processen te automatiseren en te stroomlijnen, waardoor de efficiëntie en de samenhang in het ecosysteem van de inhoud worden bevorderd.
+- Asset Events via AEM Event stelt bedrijven in staat om kritieke processen te automatiseren en te stroomlijnen, waardoor de efficiëntie en de samenhang in het ecosysteem van de inhoud worden bevorderd.

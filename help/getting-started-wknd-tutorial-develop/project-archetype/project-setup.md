@@ -1,7 +1,7 @@
 ---
 title: Aan de slag met AEM Sites - Projectinstellingen
-description: Creeer een Maven Multimoduleproject om de code en de configuraties voor een Plaats van de Experience Manager te beheren.
-version: 6.5, Cloud Service
+description: Maak een Maven Multi Module Project om de code en configuraties voor een Experience Manager Site te beheren.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: AEM Project Archetype
 topic: Content Management, Development
 role: Developer
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
 duration: 502
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1684'
 ht-degree: 0%
@@ -30,23 +30,23 @@ Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikke
 
 ## Doelstelling {#objective}
 
-1. Leer hoe u een nieuw AEM project kunt genereren met een Maven-archetype.
-1. Begrijp de verschillende modules die door het AEM Archetype van het Project worden geproduceerd en hoe zij samenwerken.
-1. Begrijp hoe AEM de Componenten van de Kern in een AEM Project inbegrepen zijn.
+1. Leer hoe u een nieuw AEM-project kunt genereren met een Maven-archetype.
+1. Begrijp de verschillende modules die door het Archetype van het Project van AEM worden geproduceerd en hoe zij samenwerken.
+1. Begrijp hoe AEM Core Components in een AEM Project zijn opgenomen.
 
 ## Wat u gaat bouwen {#what-build}
 
 >[!VIDEO](https://video.tv.adobe.com/v/30152?quality=12&learn=on)
 
-In dit hoofdstuk, produceert u een nieuw project van Adobe Experience Manager gebruikend [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype). Uw AEM project bevat volledige code, inhoud, en configuraties die voor een implementatie van Plaatsen worden gebruikt. Het in dit hoofdstuk gegenereerde project dient als basis voor een implementatie van de WKND-site en wordt in toekomstige hoofdstukken verder ontwikkeld.
+In dit hoofdstuk, produceert u een nieuw project van Adobe Experience Manager gebruikend het [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype). Uw AEM-project bevat volledige code, inhoud en configuraties die worden gebruikt voor een Sites-implementatie. Het in dit hoofdstuk gegenereerde project dient als basis voor een implementatie van de WKND-site en wordt in toekomstige hoofdstukken verder ontwikkeld.
 
 **wat is een Maven project?** - [ Apache Maven ](https://maven.apache.org/) is een hulpmiddel van het softwarebeheer om projecten te bouwen. *Alle Adobe Experience Manager* implementaties gebruiken GeMaven projecten om, douanecode bovenop AEM te bouwen te beheren en op te stellen.
 
-**wat is een Maven archetype?** - A [ Maven archetype ](https://maven.apache.org/archetype/index.html) is een malplaatje of een patroon voor het produceren van nieuwe projecten. Het AEM archetype van het Project helpt om een nieuw project met een douane te produceren namespace en een projectstructuur te omvatten die beste praktijken volgt, zeer versnellend de projectontwikkeling.
+**wat is een Maven archetype?** - A [ Maven archetype ](https://maven.apache.org/archetype/index.html) is een malplaatje of een patroon voor het produceren van nieuwe projecten. Het archetype van het Project van AEM helpt om een nieuw project met een douane te produceren namespace en een projectstructuur te omvatten die beste praktijken volgt, zeer versnellend de projectontwikkeling.
 
 ## Het project maken {#create}
 
-Er zijn een paar opties voor het creëren van een Maven Multi-module project voor AEM. Dit leerprogramma gebruikt [ Gemaakt AEM Archetype van het Project **35** ](https://github.com/adobe/aem-project-archetype). Cloud Manager [ verstrekt ook een tovenaar UI ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/project-creation/using-the-wizard.html) om de verwezenlijking van een AEM toepassingsproject in werking te stellen. Het onderliggende project dat door Cloud Manager UI wordt geproduceerd resulteert in de zelfde structuur zoals direct het gebruiken van archetype.
+Er zijn een paar opties voor het maken van een Maven Multi-module project voor AEM. Dit leerprogramma gebruikt [ Gemaakt Archetype van het Project van AEM **35** ](https://github.com/adobe/aem-project-archetype). Cloud Manager [ verstrekt ook een tovenaar UI ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/project-creation/using-the-wizard.html) om de verwezenlijking van een de toepassingsproject van AEM in werking te stellen. Het onderliggende project dat door Cloud Manager UI wordt geproduceerd resulteert in de zelfde structuur zoals direct het gebruiken van archetype.
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ De volgende reeks stappen zal plaatsvinden gebruikend op UNIX® gebaseerde bevel
    Java version: 11.0.4, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home
    ```
 
-1. Navigeer naar een map waarin u het AEM project wilt genereren. Dit kan om het even welke folder zijn waarin u de broncode van uw project wilt handhaven. Bijvoorbeeld een map met de naam `code` onder de homemap van de gebruiker:
+1. Navigeer naar een map waarin u het AEM-project wilt genereren. Dit kan om het even welke folder zijn waarin u de broncode van uw project wilt handhaven. Bijvoorbeeld een map met de naam `code` onder de homemap van de gebruiker:
 
    ```shell
    $ cd ~/code
@@ -87,7 +87,7 @@ De volgende reeks stappen zal plaatsvinden gebruikend op UNIX® gebaseerde bevel
 
    >[!NOTE]
    >
-   > Vervang `aemVersion="cloud"` door `aemVersion="6.5.14"` als u AEM 6.5.14+ wilt gebruiken.
+   > Als u AEM 6.5.14+ als doel wilt instellen, vervangt u `aemVersion="cloud"` door `aemVersion="6.5.14"` .
    >
    > Ook, gebruik altijd recentste `archetypeVersion` door naar [ te verwijzen AEM Project Archetype > Gebruik ](https://github.com/adobe/aem-project-archetype#usage)
 
@@ -117,14 +117,14 @@ De volgende reeks stappen zal plaatsvinden gebruikend op UNIX® gebaseerde bevel
 
 Bouw en stel de projectcode aan een lokaal geval van AEM op.
 
-1. Verzeker u een auteursgeval van AEM die plaatselijk op haven **4502** lopen.
+1. Verzeker u een auteursgeval van AEM hebt die plaatselijk op haven **4502** lopen.
 1. Navigeer vanaf de opdrachtregel naar de projectmap `aem-guides-wknd` .
 
    ```shell
    $ cd aem-guides-wknd
    ```
 
-1. Stel het volgende bevel in werking om het volledige project te bouwen en op te stellen aan AEM:
+1. Voer het volgende bevel in werking om het volledige project aan AEM te bouwen en op te stellen:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -156,9 +156,9 @@ Bouw en stel de projectcode aan een lokaal geval van AEM op.
    [INFO] ------------------------------------------------------------------------    
    ```
 
-   Het profiel Geweven `autoInstallSinglePackage` compileert de individuele modules van het project en stelt één enkel pakket aan de AEM instantie op. Door gebrek wordt dit pakket opgesteld aan een AEM instantie die plaatselijk op haven **4502** en met de geloofsbrieven van `admin:admin` loopt.
+   Met het profiel Maven `autoInstallSinglePackage` worden de afzonderlijke modules van het project gecompileerd en wordt één pakket geïmplementeerd voor de AEM-instantie. Door gebrek wordt dit pakket opgesteld aan een instantie van AEM die plaatselijk op haven **4502** en met de geloofsbrieven van `admin:admin` loopt.
 
-1. Navigeer aan de Manager van het Pakket op uw lokale AEM instantie: [ http://localhost:4502/crx/packmgr/index.jsp ](http://localhost:4502/crx/packmgr/index.jsp). Pakketten voor `aem-guides-wknd.ui.apps` , `aem-guides-wknd.ui.config` , `aem-guides-wknd.ui.content` en `aem-guides-wknd.all` worden weergegeven.
+1. Navigeer aan de Manager van het Pakket op uw lokale instantie van AEM: [ http://localhost:4502/crx/packmgr/index.jsp ](http://localhost:4502/crx/packmgr/index.jsp). Pakketten voor `aem-guides-wknd.ui.apps` , `aem-guides-wknd.ui.config` , `aem-guides-wknd.ui.content` en `aem-guides-wknd.all` worden weergegeven.
 
 1. Navigeer aan de console van Plaatsen: [ http://localhost:4502/sites.html/content ](http://localhost:4502/sites.html/content). De WKND-site is een van de sites. Het bevat een sitestructuur met een hiërarchie voor Amerikaanse en taalmeesters. Deze sitehiërarchie is gebaseerd op de waarden voor `language_country` en `isSingleCountryWebsite` bij het genereren van het project met het archetype.
 
@@ -172,28 +172,28 @@ Bouw en stel de projectcode aan een lokaal geval van AEM op.
 
    *inhoud van de Steekproef die door Archetype* wordt geproduceerd
 
-## Inspect het project {#project-structure}
+## Het project inspecteren {#project-structure}
 
-Het geproduceerde AEM project bestaat uit individuele Geproduceerde modules, elk met een verschillende rol. Deze zelfstudie en de meeste ontwikkelingsprogramma&#39;s richten zich op deze modules:
+Het gegenereerde AEM-project bestaat uit afzonderlijke Maven-modules, elk met een andere rol. Deze zelfstudie en de meeste ontwikkelingsprogramma&#39;s richten zich op deze modules:
 
 * [ kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html) - de Code van Java, hoofdzakelijk achterste deelontwikkelaars.
 * [ ui.frontend ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) - bevat broncode voor CSS, JavaScript, Sass, TypeScript, hoofdzakelijk voor front-end ontwikkelaars.
 * [ ui.apps ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html) - bevat component en dialoogdefinities, sluit gecompileerde CSS en JavaScript als cliëntbibliotheken in.
 * [ ui.content ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html) - bevat structurele inhoud en configuraties zoals editable malplaatjes, meta-gegevensschema&#39;s (/content, /conf).
 
-* **allen** - dit is een lege Gemaakt module die de bovengenoemde modules in één enkel pakket combineert dat aan een AEM milieu kan worden opgesteld.
+* **allen** - dit is een lege Gemaakt module die de bovengenoemde modules in één enkel pakket combineert dat aan een milieu van AEM kan worden opgesteld.
 
 ![ Gemaakt Diagram van het Project ](assets/project-setup/project-pom-structure.png)
 
-Zie de [ AEM documentatie van het Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) om meer details van **te leren alle** de GeMaven modules.
+Zie de [ documentatie van het Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) om meer details van **te leren alle** de GeMaven modules.
 
 ### Opname van kerncomponenten {#core-components}
 
-[ AEM de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) zijn een reeks gestandaardiseerde componenten van het Beheer van de Inhoud van het Web (WCM) voor AEM. Deze componenten verstrekken een basislijnreeks van een functionaliteit en worden gestileerd, aangepast, en uitgebreid voor individuele projecten.
+[ de Componenten van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) zijn een reeks gestandaardiseerde componenten van het Beheer van de Inhoud van het Web (WCM) voor AEM. Deze componenten verstrekken een basislijnreeks van een functionaliteit en worden gestileerd, aangepast, en uitgebreid voor individuele projecten.
 
-Het milieu van AEM as a Cloud Service omvat de recentste versie van [ AEM de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). Daarom omvatten de projecten die voor AEM as a Cloud Service worden geproduceerd **** geen inbedden van AEM Componenten van de Kern.
+Het milieu van AEM as a Cloud Service omvat de recentste versie van [ de Componenten van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). Daarom omvatten de projecten die voor AEM as a Cloud Service worden geproduceerd **** geen inbedden van de Componenten van de Kern van AEM.
 
-Voor AEM 6.5/6.4 geproduceerde projecten, sluit archetype automatisch [ AEM de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in het project in. Het is aan te raden AEM 6.5/6.4 AEM Core Components in te sluiten om ervoor te zorgen dat de nieuwste versie wordt geïmplementeerd met uw project. Meer informatie over hoe de Componenten van de Kern [ inbegrepen in het project kan worden gevonden hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#core-components).
+Voor AEM 6.5/6.4 produceerde projecten, sluit archetype {de Componenten van de Kern van 0} AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) automatisch in het project in. [ Het is aan te raden om AEM 6.5/6.4 AEM Core Components in te sluiten om ervoor te zorgen dat de nieuwste versie wordt geïmplementeerd met uw project. Meer informatie over hoe de Componenten van de Kern [ inbegrepen in het project kan worden gevonden hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#core-components).
 
 ## Source Control Management {#source-control}
 
@@ -203,11 +203,11 @@ Maven leidt tot een doelomslag wanneer u het codepakket bouwt en installeert. De
 
 In de module `ui.apps` ziet u dat er veel `.content.xml` -bestanden worden gemaakt. Deze XML-bestanden geven de knooppunttypen en eigenschappen weer van inhoud die in de JCR is geïnstalleerd. Deze dossiers zijn kritiek en **kan** niet worden genegeerd.
 
-Het AEM projectarchetype produceert een steekproef `.gitignore` dossier dat als uitgangspunt kan worden gebruikt waarvoor de dossiers veilig kunnen worden genegeerd. Het bestand wordt gegenereerd bij `<src>/aem-guides-wknd/.gitignore` .
+Het AEM-projectarchetype genereert een voorbeeldbestand `.gitignore` dat kan worden gebruikt als beginpunt voor het veilig negeren van bestanden. Het bestand wordt gegenereerd bij `<src>/aem-guides-wknd/.gitignore` .
 
 ## Gefeliciteerd! {#congratulations}
 
-Gefeliciteerd, u hebt uw eerste AEM Project gecreeerd!
+Gefeliciteerd, je hebt je eerste AEM Project gemaakt!
 
 ### Volgende stappen {#next-steps}
 
@@ -215,7 +215,7 @@ Begrijp de onderliggende technologie van een Component van de Plaatsen van Adobe
 
 ## Geavanceerde Maven-opdrachten (Bonus) {#advanced-maven-commands}
 
-Tijdens ontwikkeling, kunt u met enkel één van de modules werken en wilt vermijden bouw het volledige project om tijd te besparen. U kunt ook direct aan een instantie van AEM Publish of misschien aan een geval van AEM willen opstellen die niet op haven 4502 loopt.
+Tijdens ontwikkeling, kunt u met enkel één van de modules werken en wilt vermijden bouw het volledige project om tijd te besparen. U kunt ook rechtstreeks implementeren naar een AEM Publish-instantie of wellicht naar een instantie van AEM die niet wordt uitgevoerd op poort 4502.
 
 Laten we nu enkele extra Maven-profielen en -opdrachten bekijken die u tijdens de ontwikkeling kunt gebruiken voor meer flexibiliteit.
 
@@ -243,7 +243,7 @@ De **[kern ](https://experienceleague.adobe.com/docs/experience-manager-core-com
    [INFO] Total time:  8.558 s
    ```
 
-1. Navigeer aan [ http://localhost:4502/system/console/bundles ](http://localhost:4502/system/console/bundles). Dit is de console OSGi van het Web en bevat informatie over alle bundels die op de AEM instantie worden geïnstalleerd.
+1. Navigeer aan [ http://localhost:4502/system/console/bundles ](http://localhost:4502/system/console/bundles). Dit is de console OSGi van het Web en bevat informatie over alle bundels die op de instantie van AEM worden geïnstalleerd.
 
 1. Wissel de **Identiteitskaart** sorteerkolom in-/uitschakelen en u zou de geïnstalleerde en actieve bundel moeten zien WKND.
 
@@ -255,7 +255,7 @@ De **[kern ](https://experienceleague.adobe.com/docs/experience-manager-core-com
 
 ### UI.apps en modules Ui.content {#apps-content-module}
 
-De ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html) **Gemaakte module 0} ui.apps bevat alle het teruggeven code nodig voor de plaats onder `/apps`.**[ Dit omvat CSS/JS die in een AEM formaat genoemd [ clientlibs ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) wordt opgeslagen. Dit omvat ook [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) manuscripten voor het teruggeven van dynamische HTML. U kunt aan de {**module 0} ui.apps als kaart aan de structuur in JCR maar in een formaat denken dat op een dossiersysteem kan worden opgeslagen en aan broncontrole worden geëngageerd.** De {**module 0} ui.apps bevat slechts code.**
+De ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html) **Gemaakte module 0} ui.apps bevat alle het teruggeven code nodig voor de plaats onder `/apps`.**[ Dit omvat CSS/JS die in een formaat van AEM genoemd [ clientlibs ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) wordt opgeslagen. Dit omvat ook [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) manuscripten voor het teruggeven van dynamische HTML. U kunt aan de {**module 0} ui.apps als kaart aan de structuur in JCR maar in een formaat denken dat op een dossiersysteem kan worden opgeslagen en aan broncontrole worden geëngageerd.** De {**module 0} ui.apps bevat slechts code.**
 
 Alleen deze module samenstellen:
 
@@ -305,7 +305,7 @@ Alleen deze module samenstellen:
    [ERROR] Failed to execute goal com.day.jcr.vault:content-package-maven-plugin:1.0.2:install (install-package-publish) on project aem-guides-wknd.ui.apps: Connection refused (Connection refused) -> [Help 1]
    ```
 
-   Het profiel `autoInstallPackagePublish` is bedoeld om het pakket aan een milieu op te stellen van Publish dat op haven **4503** loopt. De bovenstaande fout wordt verwacht als er geen AEM op http://localhost:4503 wordt uitgevoerd.
+   Het profiel `autoInstallPackagePublish` is bedoeld om het pakket aan een Publish milieu op haven **in werking te stellen 4503**. De bovenstaande fout wordt verwacht als een AEM-instantie die wordt uitgevoerd op http://localhost:4503 niet wordt gevonden.
 
 1. Tot slot stel het volgende bevel in werking om het `ui.apps` pakket op haven **4504** op te stellen:
 
@@ -325,15 +325,15 @@ Alleen deze module samenstellen:
    [INFO] --------------------------------------------------------------------
    ```
 
-   Opnieuw wordt een bouwstijlmislukking verwacht om voor te komen als geen AEM instantie die op haven **loopt 4504** beschikbaar is. De parameter `aem.port` wordt gedefinieerd in het POM-bestand op `aem-guides-wknd/pom.xml` .
+   Opnieuw wordt een bouwstijlmislukking verwacht om voor te komen als geen instantie van AEM die op haven **loopt 4504** beschikbaar is. De parameter `aem.port` wordt gedefinieerd in het POM-bestand op `aem-guides-wknd/pom.xml` .
 
-De ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html) **module 0} ui.content is gestructureerd de zelfde manier zoals de** ui.apps **module.**[ Het enige verschil is dat de {**module 0} ui.content bevat wat als** veranderbare **inhoud wordt bekend.** **Mutable** inhoud verwijst hoofdzakelijk naar niet-codeconfiguraties zoals Malplaatjes, Beleid, of omslagstructuren die in bron-controle **worden opgeslagen maar** kon op een AEM instantie direct worden gewijzigd. Dit wordt meer in detail besproken in het hoofdstuk over Pagina&#39;s en Malplaatjes.
+De ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html) **module 0} ui.content is gestructureerd de zelfde manier zoals de** ui.apps **module.**[ Het enige verschil is dat de {**module 0} ui.content bevat wat als** veranderbare **inhoud wordt bekend.** **Mutable** inhoud verwijst hoofdzakelijk naar niet-codeconfiguraties zoals Malplaatjes, Beleid, of omslagstructuren die in bron-controle **worden opgeslagen maar** kon op een instantie van AEM direct worden gewijzigd. Dit wordt meer in detail besproken in het hoofdstuk over Pagina&#39;s en Malplaatjes.
 
 De zelfde Gemaakte bevelen die worden gebruikt om de {**module te bouwen 0} ui.apps kunnen worden gebruikt om de** module te bouwen 2} ui.content. **** Voel vrij om de bovengenoemde stappen van binnen de {**omslag te herhalen 0} ui.content.**
 
 ## Problemen oplossen
 
-Als er kwestie die het project produceert gebruikend het AEM Archetype van het Project ziet de lijst van [ bekende kwesties ](https://github.com/adobe/aem-project-archetype#known-issues) en lijst van open [ kwesties ](https://github.com/adobe/aem-project-archetype/issues).
+Als er kwestie die het project produceert gebruikend het Archetype van het Project van AEM ziet de lijst van [ bekende kwesties ](https://github.com/adobe/aem-project-archetype#known-issues) en lijst van open [ kwesties ](https://github.com/adobe/aem-project-archetype/issues).
 
 ## Nogmaals gefeliciteerd! {#congratulations-bonus}
 

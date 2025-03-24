@@ -1,8 +1,8 @@
 ---
 title: Project maken | Aan de slag met de AEM SPA Editor en Reageren
-description: Leer hoe u een Adobe Experience Manager (AEM) Maven-project genereert als beginpunt voor een React-toepassing die is geïntegreerd met de AEM SPA Editor.
+description: Leer hoe te om een Adobe Experience Manager (AEM) Gemaakt project als uitgangspunt voor een React toepassing te produceren die met de Redacteur van AEM SPA wordt geïntegreerd.
 feature: SPA Editor, AEM Project Archetype
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-413
 thumbnail: 413-spa-react.jpg
 topic: SPA
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
 duration: 250
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 0%
@@ -20,20 +20,20 @@ ht-degree: 0%
 
 # Project maken {#spa-editor-project}
 
-Leer hoe u een Adobe Experience Manager (AEM) Maven-project genereert als beginpunt voor een React-toepassing die is geïntegreerd met de AEM SPA Editor.
+Leer hoe te om een Adobe Experience Manager (AEM) Gemaakt project als uitgangspunt voor een React toepassing te produceren die met de Redacteur van AEM SPA wordt geïntegreerd.
 
 ## Doelstelling
 
 1. Genereer een SPA Editor ingeschakeld project met behulp van het AEM Project Archetype.
-2. Implementeer het startproject naar een lokale instantie van AEM.
+2. Implementeer het startproject in een lokale instantie van AEM.
 
 ## Wat u gaat maken {#what-build}
 
-In dit hoofdstuk, wordt een nieuw AEM project geproduceerd, dat op [ wordt gebaseerd AEM het Archetype van het Project ](https://github.com/adobe/aem-project-archetype). Het AEM project wordt opgestart met een heel eenvoudig startpunt voor de SPA React.
+In dit hoofdstuk, wordt een nieuw project van AEM geproduceerd, dat op [ wordt gebaseerd Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype). Het project van AEM is bootstrapped met een zeer eenvoudig uitgangspunt voor React SPA.
 
 **wat is een Maven project?** - [ Apache Maven ](https://maven.apache.org/) is een hulpmiddel van het softwarebeheer om projecten te bouwen. *Alle Adobe Experience Manager* implementaties gebruiken GeMaven projecten om douanecode bovenop AEM te bouwen, te beheren en op te stellen.
 
-**wat is een Maven archetype?** - A [ Maven archetype ](https://maven.apache.org/archetype/index.html) is een malplaatje of een patroon voor het produceren van nieuwe projecten. Het AEM archetype van het Project staat ons toe om een nieuw project met een douane te produceren namespace en een projectstructuur te omvatten die beste praktijken volgt, zeer versnellend ons project.
+**wat is een Maven archetype?** - A [ Maven archetype ](https://maven.apache.org/archetype/index.html) is een malplaatje of een patroon voor het produceren van nieuwe projecten. Met het AEM Project archetype kunnen we een nieuw project genereren met een aangepaste naamruimte en een projectstructuur opnemen die de beste werkwijzen volgt en ons project aanzienlijk versnelt.
 
 ## Vereisten
 
@@ -64,7 +64,7 @@ Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikke
    >
    > Als u AEM 6.5.5+ als doel instelt, vervangt u `aemVersion="cloud"` door `aemVersion="6.5.5"` . Gebruik `aemVersion="6.4.8"` als u zich richt op 6.4.8+.
 
-   Let op de eigenschap `frontendModule=react` . Dit vertelt het Archetype van het Project van de AEM om het project met een starter [ Reageer codebasis ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html) te laarzen die met de AEM SPA Redacteur moet worden gebruikt. Eigenschappen zoals `appTitle` , `appId` , `artifactId` en `groupId` worden gebruikt om het project en het doel te identificeren.
+   Let op de eigenschap `frontendModule=react` . Dit vertelt het Archetype van het Project van AEM om het project met een aanzet [ Reageer codebasis ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html) te laarzen die met de Redacteur van AEM SPA moet worden gebruikt. Eigenschappen zoals `appTitle` , `appId` , `artifactId` en `groupId` worden gebruikt om het project en het doel te identificeren.
 
    Een volledige lijst van beschikbare eigenschappen voor het vormen van een project [ kan hier ](https://github.com/adobe/aem-project-archetype#available-properties) worden gevonden.
 
@@ -89,7 +89,7 @@ Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikke
        |--- .gitignore
    ```
 
-   Elke map vertegenwoordigt een afzonderlijke module Maven. In deze zelfstudie werken we vooral met de module `ui.frontend` , de React-app. Meer details over individuele modules kunnen in de [ AEM documentatie van het Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) worden gevonden.
+   Elke map vertegenwoordigt een afzonderlijke module Maven. In deze zelfstudie werken we vooral met de module `ui.frontend` , de React-app. Meer details over individuele modules kunnen in de [ documentatie van het Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) worden gevonden.
 
 ## Het project implementeren en bouwen
 
@@ -102,7 +102,7 @@ Daarna, compileert, bouwt, en stelt de projectcode aan een lokale instantie van 
    $ cd aem-guides-wknd-spa.react
    ```
 
-1. Stel het volgende bevel in werking om het volledige project te bouwen en op te stellen aan AEM:
+1. Voer het volgende bevel in werking om het volledige project aan AEM te bouwen en op te stellen:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -132,27 +132,27 @@ Daarna, compileert, bouwt, en stelt de projectcode aan een lokale instantie van 
    [INFO] ------------------------------------------------------------------------
    ```
 
-   Het profiel Geweven `autoInstallSinglePackage` compileert de individuele modules van het project en stelt één enkel pakket aan de AEM instantie op. Door gebrek wordt dit pakket opgesteld aan een AEM instantie die plaatselijk op haven **4502** en met de geloofsbrieven van `admin:admin` loopt.
+   Met het profiel Maven `autoInstallSinglePackage` worden de afzonderlijke modules van het project gecompileerd en wordt één pakket geïmplementeerd voor de AEM-instantie. Door gebrek wordt dit pakket opgesteld aan een instantie van AEM die plaatselijk op haven **4502** en met de geloofsbrieven van `admin:admin` loopt.
 
-1. Navigeer aan **Manager van het Pakket** op uw lokale AEM instantie: [ http://localhost:4502/crx/packmgr/index.jsp ](http://localhost:4502/crx/packmgr/index.jsp).
+1. Navigeer aan **Manager van het Pakket** op uw lokale instantie van AEM: [ http://localhost:4502/crx/packmgr/index.jsp ](http://localhost:4502/crx/packmgr/index.jsp).
 
 1. Er moeten meerdere pakketten zijn voorgefixeerd met `aem-guides-wknd-spa.react` .
 
-   ![ WKND SPA Pakketten ](assets/create-project/package-manager.png)
+   ![ WKND de Pakketten van het KUUROORD ](assets/create-project/package-manager.png)
 
-   *AEM de Manager van het Pakket*
+   *de Manager van het Pakket van AEM*
 
    Alle aangepaste code die nodig is voor het project, wordt in deze pakketten gebundeld en in de AEM-omgeving geïnstalleerd.
 
 ## Inhoud auteur
 
-Open vervolgens de SPA die is gegenereerd door het archetype en werk een deel van de inhoud bij.
+Vervolgens opent u de starter-SPA die is gegenereerd door het archetype en werkt u een gedeelte van de inhoud bij.
 
 1. Navigeer aan de **console van Plaatsen**: [ http://localhost:4502/sites.html/content ](http://localhost:4502/sites.html/content).
 
-   De WKND-SPA bevat een basissitestructuur met een land, taal en homepage. Deze hiërarchie is gebaseerd op de standaardwaarden van het archetype voor `language_country` en `isSingleCountryWebsite` . Deze waarden kunnen worden beschreven door de [ beschikbare eigenschappen ](https://github.com/adobe/aem-project-archetype#available-properties) bij te werken wanneer het produceren van een project.
+   De WKND SPA omvat een basissitestructuur met een land, taal en homepage. Deze hiërarchie is gebaseerd op de standaardwaarden van het archetype voor `language_country` en `isSingleCountryWebsite` . Deze waarden kunnen worden beschreven door de [ beschikbare eigenschappen ](https://github.com/adobe/aem-project-archetype#available-properties) bij te werken wanneer het produceren van een project.
 
-2. Open de **gebruikers** > **en** > **WKND SPA Reageer de pagina van het Huis** door de pagina te selecteren en **te klikken geef** knoop in de menubar uit:
+2. Open de **gebruikers** > **en** > **WKND SPA Reageer de pagina van het Huis** door de pagina te selecteren en **te klikken geeft** knoop in de menubar uit:
 
    ![ plaatsconsole ](./assets/create-project/open-home-page.png)
 
@@ -164,7 +164,7 @@ Open vervolgens de SPA die is gegenereerd door het archetype en werk een deel va
 
    U ziet dat de ontwerpervaring vergelijkbaar is met die van een traditionele AEM Sites-pagina. Momenteel is een beperkt aantal componenten beschikbaar die kunnen worden gebruikt. Tijdens de zelfstudie wordt meer toegevoegd.
 
-## Inspect de toepassing Eén pagina
+## De toepassing Eén pagina controleren
 
 Controleer vervolgens of dit een toepassing voor één pagina is met gebruik van de ontwikkelaars van uw browser.
 
@@ -172,7 +172,7 @@ Controleer vervolgens of dit een toepassing voor één pagina is met gebruik van
 
    ![ Mening als Gepubliceerde knoop ](./assets/create-project/view-as-published.png)
 
-   Dit zal een nieuw lusje met de vraagparameter `?wcmmode=disabled` openen die effectief de AEM redacteur uitzet: [ http://localhost:4502/content/wknd-spa-react/us/en/home.html?wcmmode=disabled ](http://localhost:4502/content/wknd-spa-react/us/en/home.html?wcmmode=disabled)
+   Dit zal een nieuw lusje met de vraagparameter `?wcmmode=disabled` openen die effectief de redacteur van AEM uitzet: [ http://localhost:4502/content/wknd-spa-react/us/en/home.html?wcmmode=disabled ](http://localhost:4502/content/wknd-spa-react/us/en/home.html?wcmmode=disabled)
 
 2. Bekijk de bron van de pagina. U ziet dat de tekstinhoud **[!DNL Hello World]** of een van de andere inhoud niet is gevonden. In plaats daarvan ziet u HTML als volgt:
 
@@ -186,7 +186,7 @@ Controleer vervolgens of dit een toepassing voor één pagina is met gebruik van
    ...
    ```
 
-   `clientlib-react.min.js` is de SPA React die op de pagina wordt geladen en die verantwoordelijk is voor het renderen van de inhoud.
+   `clientlib-react.min.js` is React SPA die op de pagina wordt geladen en voor het teruggeven van de inhoud verantwoordelijk is.
 
    Nochtans, *waar komt de inhoud uit?*
 
@@ -195,11 +195,11 @@ Controleer vervolgens of dit een toepassing voor één pagina is met gebruik van
 
    ![ XHR Verzoeken ](./assets/create-project/xhr-requests.png)
 
-   Er zou een verzoek aan [ http://localhost:4502/content/wknd-spa-react/us/en.model.json ](http://localhost:4502/content/wknd-spa-react/us/en.model.json) moeten zijn. Dit bevat alle inhoud, geformatteerd in JSON, die de SPA zal drijven.
+   Er zou een verzoek aan [ http://localhost:4502/content/wknd-spa-react/us/en.model.json ](http://localhost:4502/content/wknd-spa-react/us/en.model.json) moeten zijn. Dit bevat alle inhoud, die in JSON wordt geformatteerd, die SPA zal drijven.
 
 5. In een nieuw lusje open [ http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json)
 
-   De aanvraag `en.model.json` vertegenwoordigt het inhoudsmodel waarop de toepassing wordt gebaseerd. Inspect de JSON-uitvoer en u moet het fragment kunnen vinden dat de **[!UICONTROL Text]** -component(en) vertegenwoordigt.
+   De aanvraag `en.model.json` vertegenwoordigt het inhoudsmodel waarop de toepassing wordt gebaseerd. Controleer de JSON-uitvoer en u moet het fragment kunnen vinden dat de **[!UICONTROL Text]** -component(en) vertegenwoordigt.
 
    ```json
    ...
@@ -218,7 +218,7 @@ Controleer vervolgens of dit een toepassing voor één pagina is met gebruik van
    ...
    ```
 
-   In het volgende hoofdstuk zullen we controleren hoe deze JSON-inhoud wordt toegewezen van AEM Componenten aan SPA Componenten om de basis te vormen van de AEM SPA Editor-ervaring.
+   In het volgende hoofdstuk zullen wij inspecteren hoe deze inhoud JSON van de Componenten van AEM aan de Componenten van het KUUROORD wordt in kaart gebracht om de basis van de ervaring van de Redacteur van AEM te vormen SPA.
 
    >[!NOTE]
    >
@@ -226,10 +226,10 @@ Controleer vervolgens of dit een toepassing voor één pagina is met gebruik van
 
 ## Gefeliciteerd! {#congratulations}
 
-Gefeliciteerd, u hebt zojuist uw eerste AEM SPA Editor Project gemaakt!
+U hebt zojuist uw eerste AEM SPA Editor Project gemaakt.
 
-Het SPA is heel eenvoudig. In de volgende hoofdstukken wordt meer functionaliteit toegevoegd.
+De SPA is vrij eenvoudig. In de volgende hoofdstukken wordt meer functionaliteit toegevoegd.
 
 ### Volgende stappen {#next-steps}
 
-[ integreer a SPA ](integrate-spa.md) - leer hoe de SPA broncode met het AEM Project wordt geïntegreerd en de middelen begrijpt beschikbaar om de SPA snel te ontwikkelen.
+[ integreer een KUUROORD ](integrate-spa.md) - leer hoe de broncode van het KUUROORD met het Project van AEM wordt geïntegreerd en hulpmiddelen begrijpt beschikbaar om het KUUROORD snel te ontwikkelen.

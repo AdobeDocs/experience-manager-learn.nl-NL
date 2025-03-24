@@ -1,7 +1,7 @@
 ---
-title: Inhoudsfragmenten ontwerpen - Aan de slag met AEM headless - GraphQL
+title: Inhoudsfragmenten ontwerpen - Aan de slag met AEM Headless - GraphQL
 description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Maak en bewerk een nieuw inhoudsfragment op basis van een inhoudsfragmentmodel. Leer hoe u variaties van inhoudsfragmenten maakt.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 jira: KT-6713
 thumbnail: 22451.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
 duration: 173
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Dit is een meerdelig leerprogramma en het wordt verondersteld dat de stappen die
 
 Inhoudsfragmenten worden opgeslagen in mappen in AEM Assets. Als u inhoudsfragmenten wilt maken op basis van de modellen die u in het vorige hoofdstuk hebt gemaakt, moet u een map maken waarin u de fragmenten kunt opslaan. Er is een configuratie vereist voor de map om het maken van fragmenten van specifieke modellen mogelijk te maken.
 
-1. Van het AEM scherm van het Begin, navigeer aan **Assets** > **Dossiers**.
+1. Van het scherm van het Begin van AEM, navigeer aan **Assets** > **Dossiers**.
 
    ![ ga aan activa dossiers ](assets/author-content-fragments/navigate-assets-files.png)
 
@@ -50,7 +50,7 @@ Inhoudsfragmenten worden opgeslagen in mappen in AEM Assets. Als u inhoudsfragme
 
    ![ Open omslageigenschappen ](assets/author-content-fragments/open-folder-properties.png)
 
-1. Tik de **Cloud Servicen** tabel. Onder het lusje van de Configuratie van de Wolk, gebruik de wegvinder om **Mijn Project** te selecteren configuratie. De waarde moet `/conf/my-project` zijn.
+1. Tik de **Diensten van de Wolk** tabel. Onder het lusje van de Configuratie van de Wolk, gebruik de wegvinder om **Mijn Project** te selecteren configuratie. De waarde moet `/conf/my-project` zijn.
 
    ![ plaats Cloud Config ](assets/author-content-fragments/set-cloud-config-my-project.png)
 
@@ -78,11 +78,11 @@ Inhoudsfragmenten worden opgeslagen in mappen in AEM Assets. Als u inhoudsfragme
 
 >[!TIP]
 >
->Voor lokale AEM SDK-gebruikers: gebruik de interface van AEM Assets om inhoudsfragmenten te maken en te maken in plaats van de hieronder beschreven interface voor inhoudsfragmenten. Voor gedetailleerde instructies, verwijs naar de [ AEM documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html).
+>Voor lokale AEM SDK-gebruikers: gebruik de AEM Assets-interface om inhoudsfragmenten te maken en te maken in plaats van de hieronder beschreven interface voor inhoudsfragmenten. Voor gedetailleerde instructies, verwijs naar de [ documentatie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html).
 
 Volgende verscheidene Fragmenten van de Inhoud worden gecreeerd gebaseerd op het **Team** en **Persoon** modellen.
 
-1. Van het AEM Scherm van het Begin, tik **de Fragmenten van de Inhoud** om de UI van de Fragmenten van de Inhoud te openen.
+1. Van het Scherm van het Begin van AEM, tik **de Fragmenten van de Inhoud** om de UI van de Fragmenten van de Inhoud te openen.
 
    ![ UI van het Fragment van de Inhoud ](assets/author-content-fragments/cf-fragment-ui.png)
 
@@ -105,11 +105,11 @@ Volgende verscheidene Fragmenten van de Inhoud worden gecreeerd gebaseerd op het
 
    Tik **creeer** om het fragment van de Persoon tot stand te brengen.
 
-1. Daarna, herhaal de stappen om a **fragment tot stand te brengen van het Team** dat **Alpha van het Team** vertegenwoordigt:
+1. Daarna, herhaal de stappen om a **fragment tot stand te brengen van het Team** dat **Team Alpha** vertegenwoordigt:
 
    * Locatie: `/content/dam/my-project/en`
    * Het model van het Fragment van de inhoud: **Team**
-   * Titel: **de Alpha van het Team**
+   * Titel: **Team Alpha**
    * Naam: `team-alpha`
 
    Tik **creeer** om het fragment van het Team tot stand te brengen.
@@ -136,7 +136,7 @@ Vervolgens vult u de nieuwe fragmenten met gegevens.
 
 ## Inhoudsfragment team bewerken {#edit-team-content-fragment}
 
-1. Open het **tevreden Fragment van de Alpha van het 0} Team dat de UI van het Fragment van de Inhoud gebruikt.**
+1. Open het **Fragment van de Inhoud van Alpha van het 0} Team {{die de UI van het Fragment van de Inhoud gebruikt.**
 1. Vul de gebieden voor **Titel**, **Korte Naam**, en **Beschrijving**.
 1. Selecteer **Jansen doet** en **Alison Smith** de Fragmenten van de Inhoud om het **5} gebied van de Leden van het Team te bevolken:**
 
@@ -146,22 +146,22 @@ Vervolgens vult u de nieuwe fragmenten met gegevens.
    >
    >U kunt inhoudsfragmenten in-lijn ook tot stand brengen door de **Nieuwe knoop van het Fragment van de Inhoud** te gebruiken.
 
-1. Tik **sparen &amp; sluit** om de veranderingen in het fragment van de Alpha van het Team te bewaren.
+1. Tik **sparen &amp; sluit** om de veranderingen in het fragment van Alpha van het Team op te slaan.
 
-## Publish-inhoudsfragmenten
+## Inhoudsfragmenten publiceren
 
 >[!TIP]
 >
->Voor lokale AEM SDK-gebruikers: gebruik de interface van AEM Assets om inhoudsfragmenten te publiceren in plaats van de hieronder beschreven interface voor inhoudsfragmenten. Voor gedetailleerde instructies, verwijs naar de [ AEM documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html#publishing-and-referencing-a-fragment).
+>Voor lokale AEM SDK-gebruikers: gebruik de AEM Assets-interface om inhoudsfragmenten te publiceren in plaats van de hieronder beschreven interface voor inhoudsfragmenten. Voor gedetailleerde instructies, verwijs naar de [ documentatie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html#publishing-and-referencing-a-fragment).
 
 Publiceer de geautoriseerde `Content Fragments` tijdens revisie en verificatie
 
-1. Van het AEM Scherm van het Begin, tik **de Fragmenten van de Inhoud** om de UI van de Fragmenten van de Inhoud te openen.
+1. Van het Scherm van het Begin van AEM, tik **de Fragmenten van de Inhoud** om de UI van de Fragmenten van de Inhoud te openen.
 
 1. In het linkerspoor, breid **Mijn Project** uit en tik **Engels**.
 
-1. Tik checkbox naast de inhoudsfragmenten en tik **Publish**.
-   ![ het Fragment van de Inhoud van Publish ](assets/author-content-fragments/publish-content-fragment.png)
+1. Tik checkbox naast de inhoudsfragmenten en tik **publiceer**.
+   ![ publiceer het Fragment van de Inhoud ](assets/author-content-fragments/publish-content-fragment.png)
 
 ## Gefeliciteerd! {#congratulations}
 

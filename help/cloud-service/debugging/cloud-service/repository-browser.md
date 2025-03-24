@@ -1,8 +1,8 @@
 ---
 title: Fouten opsporen in AEM met Repository Browser
-description: Browser van de Bewaarplaats is een krachtig hulpmiddel dat zicht in AEM onderliggende gegevensopslag verstrekt, die voor gemakkelijke zuivering van het milieu van AEM as a Cloud Service toestaat.
+description: De Browser van de Bewaarplaats is een krachtig hulpmiddel dat zicht in de onderliggende gegevensopslag van AEM verstrekt, die voor het gemakkelijke zuiveren van het milieu van AEM as a Cloud Service toestaat.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-10004
 thumbnail: 341464.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 exl-id: 88af40fc-deff-4b92-84b1-88df2dbdd90b
 duration: 305
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Fouten opsporen in AEM as a Cloud Service met Repository Browser
 
-Browser van de Bewaarplaats is een krachtig hulpmiddel dat zicht in AEM onderliggende gegevensopslag verstrekt, die voor gemakkelijke zuivering van het milieu van AEM as a Cloud Service toestaat. Browser van de Bewaarplaats steunt een read-only mening van de middelen en de eigenschappen van AEM op Productie, Stadium, en Ontwikkeling, evenals Auteur, Publish, en de diensten van de Voorproef.
+De Browser van de Bewaarplaats is een krachtig hulpmiddel dat zicht in de onderliggende gegevensopslag van AEM verstrekt, die voor het gemakkelijke zuiveren van het milieu van AEM as a Cloud Service toestaat. Browser van de Bewaarplaats steunt een read-only mening van de middelen en de eigenschappen van AEM op Productie, Stadium, en Ontwikkeling, evenals de auteur, de Publish, en de diensten van de Voorproef.
 
 >[!VIDEO](https://video.tv.adobe.com/v/341464?quality=12&learn=on)
 
@@ -35,7 +35,7 @@ Toegang krijgen tot de Repository Browser op AEM as a Cloud Service:
 1. Selecteer het programma met de AEM as a Cloud Service-omgeving waarin u de foutopsporing wilt uitvoeren
 1. Open [ Developer Console ](./developer-console.md) die aan het milieu van AEM as a Cloud Service beantwoorden om te zuiveren
 1. Selecteer Browser van de Bewaarplaats __lusje 0}__
-1. Selecteer de AEM servicelaag om te bladeren
+1. Selecteer de AEM service tier om te bladeren
    + Alle auteurs
    + Alle uitgevers
    + Alle voorvertoningen
@@ -43,6 +43,6 @@ Toegang krijgen tot de Repository Browser op AEM as a Cloud Service:
 
 Browser van de Bewaarplaats opent voor de geselecteerde de dienstrij (Auteur, Publish, of Voorproef) op read-only wijze, tonend middelen en eigenschappen uw gebruiker heeft toegang tot.
 
-## Toegang tot Publish en Voorvertoning
+## Toegang voor publiceren en voorvertonen
 
-Standaard is de toegang tot Publish of Voorvertoning beperkt, waardoor de beschikbare bronnen in de Repository Browser afnemen. [ om alle middelen op Publish (of Voorproef) te bekijken voeg gebruikers aan een rol van de Beheerders van Publish (of van de Voorproef) toe.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#navigate-the-hierarchy)
+Standaard is de toegang tot Publiceren of Voorvertoning beperkt, waardoor de beschikbare bronnen in de Repository Browser afnemen. [ om alle middelen bij te bekijken publiceren (of Voorproef) voegt gebruikers aan toe publiceren (of Voorproef) de rol van Beheerders.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#navigate-the-hierarchy)

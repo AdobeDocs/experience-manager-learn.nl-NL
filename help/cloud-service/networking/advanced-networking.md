@@ -1,7 +1,7 @@
 ---
 title: Geavanceerde netwerken
 description: Meer informatie over geavanceerde netwerkopties van AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Integrations, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-9354.png
 last-substantial-update: 2022-10-13T00:00:00Z
 exl-id: d1c1a3cf-989a-4693-9e0f-c1b545643e41
 duration: 85
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
@@ -27,9 +27,9 @@ AEM as a Cloud Service biedt geavanceerde netwerkfuncties waarmee u verbindingen
 | Ondersteunt geavanceerd netwerken | ✔ | ✘ |
 
 
-AEM geavanceerde voorzien van een netwerk bestaat uit drie opties voor het beheren van connectiviteit met de externe diensten. Een Cloud Manager-programma en zijn AEM as a Cloud Service-omgevingen kunnen slechts één type geavanceerde netwerkconfiguratie tegelijk gebruiken, zodat het meest geschikte type is geselecteerd.
+Geavanceerde netwerken van AEM bestaan uit drie opties voor het beheer van connectiviteit met externe services. Een Cloud Manager-programma en zijn AEM as a Cloud Service-omgevingen kunnen slechts één type geavanceerde netwerkconfiguratie tegelijk gebruiken, zodat het meest geschikte type is geselecteerd.
 
-|                                   | HTTP/HTTPS op standaardpoorten | HTTP/HTTPS op niet-standaardpoorten | Niet-HTTP/HTTPS-verbindingen | Speciale IP-adressen | Lijst met &quot;Geen proxy-hosts&quot; | Verbinding maken met VPN-beveiligde services | Beperk AEM Publish verkeer door IP |
+|                                   | HTTP/HTTPS op standaardpoorten | HTTP/HTTPS op niet-standaardpoorten | Niet-HTTP/HTTPS-verbindingen | Speciale IP-adressen | Lijst met &quot;Geen proxy-hosts&quot; | Verbinding maken met VPN-beveiligde services | AEM-publicatieverkeer beperken tot IP |
 |-----------------------------------|:----------------------------:|:--------------------------------:|:--------------------------:|:-------------------:|:-------------------------------------:|:-------------------------------------:|:----:|
 | __Geen geavanceerd voorzien van een netwerk__ | ✔ | ✘ | ✘ | ✘ | ✘ | ✘ | ✘ |
 | [__Flexibele havenuitgang__](./flexible-port-egress.md) | ✔ | ✔ | ✔ | ✘ | ✘ | ✘ | ✘ |
@@ -94,7 +94,7 @@ Verzeker de aangewezen [ geavanceerde voorzien van een netwerkconfiguratie ](#ad
       <a  href="./examples/sql-datasourcepool.md"><img alt="SQL-verbinding met JDBC DataSourcePool" src="./assets//code-examples__sql-osgi.png"/></a>
       <div><strong><a href="./examples/sql-datasourcepool.md"> SQL verbinding gebruikend JDBC DataSourcePool </a></strong></div>
       <p>
-            Java™ codevoorbeeld die met externe SQL gegevensbestanden verbinden door AEM JDBC datasource pool te vormen.
+            Java™ codevoorbeeld die met externe SQL gegevensbestanden verbinden door AEM te vormen JDBC datasource pool.
       </p>
     </td>   
     </tr><tr>
@@ -114,9 +114,9 @@ Verzeker de aangewezen [ geavanceerde voorzien van een netwerkconfiguratie ](#ad
     </td>
    <td>
       <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="Op pad gebaseerde VPN-toegangsbeperkingen voor AEM Publish" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"> Op weg-Gebaseerde de toegangsbeperkingen van VPN aan AEM Publish </a></strong></div>
+      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"> Op weg-Gebaseerde de toegangsbeperkingen van VPN aan AEM publiceren </a></strong></div>
       <p>
-            Vereis de toegang van VPN voor specifieke wegen op AEM Publish.
+            Vereis de toegang van VPN voor specifieke wegen op AEM publiceren.
       </p>
     </td>
 </tr>

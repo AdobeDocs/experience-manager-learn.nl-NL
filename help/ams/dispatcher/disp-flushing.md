@@ -1,7 +1,7 @@
 ---
 title: AEM Dispatcher Flushing
 description: Begrijp hoe AEM oude cachebestanden van de Dispatcher ongeldig maakt.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
 duration: 520
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2225'
 ht-degree: 0%
@@ -54,11 +54,11 @@ Ten tweede is de reverse agent.  Dit is optioneel en is ingesteld om elke uitge
 ### REPLICATIE-AGENT VOOR PUBLICATIE
 
 Hier is een voorbeeld screenshots van een gevormde standaard flush replicatieagent
-![ het schermschot van standaard flush replicatieagent van AEM Web-pagina /etc/replication.html](assets/disp-flushing/publish-flush-rep-agent-example.png " publish-flush-rep-agent-example ")
+![ schermafbeelding van standaard flush replicatieagent van het Web-pagina van AEM /etc/replication.html](assets/disp-flushing/publish-flush-rep-agent-example.png " publish-flush-rep-agent-example ")
 
 ### DISPATCHER FLUSH REPLICATION ONTVANGT VIRTUELE HOST
 
-De module van Dispatcher zoekt naar bepaalde kopballen om te weten wanneer een POST verzoek iets is om over te gaan tot AEM teruggeeft of als het in series vervaardigd als een spoelverzoek is en door de manager van Dispatcher zelf moet worden behandeld.
+De module van Dispatcher zoekt naar bepaalde kopballen om te weten wanneer een POST- verzoek iets is om tot AEM over te gaan geeft terug of als het in series wordt vervaardigd als flush verzoek en door de manager van Dispatcher zelf moet worden behandeld.
 
 Hier is een schermafbeelding van de configuratiepagina met deze waarden:
 ![ beeld van de belangrijkste montages van het configuratiescherm met het Type van Rangschikking dat wordt getoond om Dispatcher Flush ](assets/disp-flushing/disp-flush-agent1.png " disp-flush-agent1 ") te zijn
@@ -69,15 +69,15 @@ De standaardinstellingspagina toont de `Serialization Type` as `Dispatcher Flush
 
 Op het tabblad `Transport` ziet u dat `URI` is ingesteld om het IP-adres te wijzen van de Dispatcher die de verzoeken om uitspoelen ontvangt.  Het pad `/dispatcher/invalidate.cache` is niet hoe de module bepaalt als het een flush is het slechts een duidelijk eindpunt is u in het toegangslogboek kunt zien om het te weten een flush verzoek is.  Op het tabblad `Extended` bespreken we de dingen die er zijn om te kwalificeren dat dit een aanvraag is om de Dispatcher-module leeg te maken.
 
-![ Schermafbeelding van het Uitgebreide lusje van de replicatieagent.  Noteer de kopballen die met het verzonden verzoek van de POST worden verzonden om Dispatcher te vertellen om ](assets/disp-flushing/disp-flush-agent3.png " disp-flush-agent3 ") te spoelen
+![ Schermafbeelding van het Uitgebreide lusje van de replicatieagent.  Noteer de kopballen die met het POST- verzoek worden verzonden om Dispatcher te vertellen om ](assets/disp-flushing/disp-flush-agent3.png " disp-flush-agent3 ") te spoelen
 
 De `HTTP Method` for flush-aanvragen zijn slechts een `GET` -aanvraag met enkele speciale aanvraagheaders:
 - CQ-actie
-   - Dit gebruikt een AEM variabele die op het verzoek wordt gebaseerd en de waarde is typisch *activeert of schrapt*
+   - Dit gebruikt een variabele van AEM die op het verzoek wordt gebaseerd en de waarde is typisch *activeer of schrap*
 - CQ-handler
-   - Dit gebruikt een AEM variabele die op het verzoek wordt gebaseerd en de waarde is typisch de volledige weg aan het punt dat bijvoorbeeld wordt gespoeld `/content/dam/logo.jpg`
+   - Hierbij wordt een AEM-variabele gebruikt die is gebaseerd op de aanvraag. De waarde is doorgaans het volledige pad naar het item dat bijvoorbeeld wordt leeggemaakt. `/content/dam/logo.jpg`
 - CQ-pad
-   - Dit gebruikt een AEM variabele die op het verzoek wordt gebaseerd en de waarde is typisch de volledige weg aan het punt dat wordt gespoeld bijvoorbeeld `/content/dam`
+   - Hierbij wordt een AEM-variabele gebruikt die is gebaseerd op de aanvraag. De waarde is doorgaans het volledige pad naar het item dat wordt verwijderd, bijvoorbeeld `/content/dam`
 - Host
    - In dit geval wordt de header van `Host` gespoofd om een specifieke `VirtualHost` als doel in te stellen die is geconfigureerd op de Apache-webserver van de verzender (`/etc/httpd/conf.d/enabled_vhosts/aem_flush.vhost` ).  Het is een vaste gecodeerde waarde die overeenkomt met een item in de `aem_flush.vhost` -bestanden `ServerName` of `ServerAlias`
 
@@ -150,7 +150,7 @@ In dit voorbeeld wordt een instelling 4 voor het basisbestandsniveau gebruikt. Z
 Wanneer een verzoek om inhoud in de zelfde routine komt gebeurt
 
 1. Tijdstempel van het bestand `.stat` wordt vergeleken met de tijdstempel van het aangevraagde bestand
-2. Als het `.stat` -bestand nieuwer is dan het gevraagde bestand, wordt de inhoud in de cache verwijderd en wordt er een nieuw bestand opgehaald uit AEM en in cache geplaatst.  Vervolgens wordt de inhoud weergegeven
+2. Als het `.stat` -bestand nieuwer is dan het gevraagde bestand, wordt de inhoud in de cache verwijderd en wordt er een nieuw bestand opgehaald uit AEM en in de cache geplaatst.  Vervolgens wordt de inhoud weergegeven
 3. Als het `.stat` -bestand ouder is dan het gevraagde bestand, weet het dat het bestand vers is en kan het de inhoud leveren.
 
 ### CACHE HANDSHAKE - VOORBEELD 1
@@ -171,7 +171,7 @@ De tijd van het `logo.jpg` -bestand is 2019-10-31 @ 1:13PM
 
 De tijd van het dichtstbijzijnde `.stat` bestand is 2019-11-01 @ 12:22 PM
 
-Zoals u in dit voorbeeld kunt zien, is het bestand ouder dan het `.stat` -bestand en wordt het verwijderd en een nieuw bestand uit AEM verwijderd om het in de cache te vervangen voordat het wordt verzonden naar de eindgebruiker die het heeft aangevraagd.
+Zoals u in dit voorbeeld kunt zien, is het bestand ouder dan het `.stat` -bestand. Het wordt verwijderd en er wordt een nieuw bestand uit AEM opgehaald om het in de cache te vervangen voordat het wordt verzonden naar de eindgebruiker die het heeft aangevraagd.
 
 ## Farm File Settings
 

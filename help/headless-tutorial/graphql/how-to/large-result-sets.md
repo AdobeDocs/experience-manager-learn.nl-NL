@@ -1,7 +1,7 @@
 ---
-title: Hoe te met grote resultaatreeksen in AEM Zwaartepunt werken
+title: Werken met sets met grote resultaten in AEM Headless
 description: Leer hoe u met grote resultaatsets werkt met AEM Headless.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Headless
 feature: GraphQL API
 role: Architect, Developer
@@ -12,18 +12,18 @@ jira: KT-13102
 thumbnail: 3418381.jpeg
 exl-id: 304b4d80-27bd-4336-b2ff-4b613a30f712
 duration: 308
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 0%
 
 ---
 
-# Grote resultaatsets in AEM headless
+# Grote resultaatsets in AEM Headless
 
-AEM GraphQL-query&#39;s zonder koppen kunnen grote resultaten opleveren. In dit artikel wordt beschreven hoe u met grote resultaten kunt werken in AEM Headless voor de beste prestaties voor uw toepassing.
+AEM Headless GraphQL-query&#39;s kunnen grote resultaten opleveren. In dit artikel wordt beschreven hoe u met grote resultaten kunt werken in AEM Headless voor de beste prestaties voor uw toepassing.
 
-AEM Koploze steunen a [ offset/grens ](#list-query) en [ op curseur-gebaseerde paginering ](#paginated-query) vragen aan kleinere ondergroepen van een grotere resultaatreeks. Er kunnen meerdere verzoeken worden ingediend om zoveel resultaten te verzamelen als nodig is.
+De Hoofdloze steunen van AEM a [ verschuiving/grens ](#list-query) en [ op curseur-gebaseerde paginering ](#paginated-query) vragen aan kleinere ondergroepen van een grotere resultaatreeks. Er kunnen meerdere verzoeken worden ingediend om zoveel resultaten te verzamelen als nodig is.
 
 In de onderstaande voorbeelden worden kleine subsets van resultaten (vier records per aanvraag) gebruikt om de technieken aan te tonen. In een echte toepassing zou u een groter aantal records per aanvraag gebruiken om de prestaties te verbeteren. 50 records per verzoek is een goede basislijn.
 

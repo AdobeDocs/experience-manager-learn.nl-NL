@@ -2,7 +2,7 @@
 title: Formulierverzending opslaan in Azure Storage
 description: Formuliergegevens opslaan in Azure Storage met REST API
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ last-substantial-update: 2023-08-14T00:00:00Z
 jira: KT-13781
 exl-id: 2bec5953-2e0c-4ae6-ae98-34492d4cfbe4
 duration: 143
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 0%
@@ -53,12 +53,12 @@ Zorg dat / aan het einde van de opslaguri staat en dat het SAS-token begint met?
 ![ osgi-configuratie ](./assets/azure-portal-osgi-configuration.png)
 
 
-## Aanvraag PUT maken
+## PUT-aanvraag maken
 
-De volgende stap bestaat uit het maken van een verzoek van een PUT om de ingediende formuliergegevens op te slaan in Azure Storage. Elke formulierverzending moet worden geïdentificeerd met een unieke BLOB-id. De unieke BLOB-id wordt gewoonlijk in de code gemaakt en ingevoegd in de URL van het verzoek om PUT.
-Hier volgt de gedeeltelijke URL van het verzoek om PUT. De `aemformstutorial` is de naam van de opslagaccount, de ingevulde gegevens zijn de container waarin de gegevens met een unieke BLOB-id worden opgeslagen. De rest van de URL blijft ongewijzigd.
+De volgende stap bestaat uit het maken van een PUT-aanvraag om de ingediende formuliergegevens op te slaan in Azure Storage. Elke formulierverzending moet worden geïdentificeerd met een unieke BLOB-id. De unieke BLOB-id wordt gewoonlijk in uw code gemaakt en ingevoegd in de URL van de PUT-aanvraag.
+Hier volgt de gedeeltelijke URL van het PUT-verzoek. De `aemformstutorial` is de naam van de opslagaccount, de ingevulde gegevens zijn de container waarin de gegevens met een unieke BLOB-id worden opgeslagen. De rest van de URL blijft ongewijzigd.
 https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken
-Hieronder vindt u een functie die wordt geschreven om de verzonden formuliergegevens op te slaan in Azure Storage met behulp van een aanvraag voor een PUT. Let op het gebruik van de containernaam en de uuid in de URL. U kunt een OSGi-service of een verkoopserver maken met de onderstaande voorbeeldcode en de formulierverzendingen opslaan in Azure Storage.
+Hieronder vindt u een functie die wordt geschreven om de verzonden formuliergegevens op te slaan in Azure Storage met behulp van een PUT-aanvraag. Let op het gebruik van de containernaam en de uuid in de URL. U kunt een OSGi-service of een verkoopserver maken met de onderstaande voorbeeldcode en de formulierverzendingen opslaan in Azure Storage.
 
 ```java
  public String saveFormDatainAzure(String formData) {

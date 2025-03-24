@@ -1,7 +1,7 @@
 ---
 title: Score-optimalisatie voor Lighthouders - Deel 3
 description: Leer over technieken om de Grootste Inhoudelijke Verf (LCP) te verbeteren en de hoogst mogelijke aanstekersscores op uw project van Edge Delivery Services te krijgen.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer, Leader, User
@@ -13,7 +13,7 @@ jira: KT-16300
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 0f74a746-b16e-4b95-97f1-55e3002d7f7f
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%

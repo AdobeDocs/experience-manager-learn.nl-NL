@@ -5,13 +5,13 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Developer Tools
 jira: KT-9006
 exl-id: 77c00a35-43bf-485f-ac12-0fffb307dc16
 duration: 45
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 Een configuratiecontainer met de naam &#39;FormTutorial&#39; maken voor de configuratie van uw cloudservices
 Maak een configuratie voor cloudservices voor Azure Storage met de naam &#39;FormsCSAndAzureBlob&#39; in de container &#39;FormTutorial&#39; door de Azure-opslagaccountgegevens en de Azure-toegangssleutel op te geven.
 
-Open uw AEM project in IntelliJ. Zorg ervoor dat u de map FormTutorial toevoegt zoals hieronder in het project ui.content wordt weergegeven
+Open uw AEM-project in IntelliJ. Zorg ervoor dat u de map FormTutorial toevoegt zoals hieronder in het project ui.content wordt weergegeven
 ![ wolk-diensten-configuratie ](assets/cloud-services-configuration.png)
 
 Zorg ervoor u de volgende ingang in het ui.content- project filter.xml toevoegt

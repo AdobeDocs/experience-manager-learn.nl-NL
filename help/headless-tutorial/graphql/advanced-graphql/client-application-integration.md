@@ -1,14 +1,14 @@
 ---
-title: Integratie van clienttoepassingen - Geavanceerde concepten van AEM headless - GraphQL
+title: Integratie van clienttoepassingen - Geavanceerde concepten van AEM Headless - GraphQL
 description: Voer voortgezette vragen uit en integreer het in app WKND.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: d0576962-a86a-4742-8635-02be1ec3243f
 duration: 241
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 In het vorige hoofdstuk, creeerde en bijwerkte voortgeduurde vragen gebruikend Ontdekkingsreiziger GraphiQL.
 
-Dit hoofdstuk begeleidt u door de stappen om de voortgeduurde vragen met de WKND cliënttoepassing (alias WKND App) te integreren gebruikend de verzoeken van HTTP GET binnen bestaande **componenten van het Reageren**. Het biedt ook een optionele uitdaging om uw AEM headless lessen toe te passen, codeerexpertise om de WKND-clienttoepassing te verbeteren.
+Dit hoofdstuk begeleidt u door de stappen om de voortgeduurde vragen met de WKND cliënttoepassing (alias WKND App) te integreren gebruikend de verzoeken van HTTP GET binnen bestaande **componenten van het Reageren**. Het biedt ook een optionele uitdaging om uw AEM Headless-lessen toe te passen, codeerexpertise om de WKND-clienttoepassing te verbeteren.
 
 ## Vereisten {#prerequisites}
 
-Dit document is onderdeel van een zelfstudie met meerdere onderdelen. Controleer of de vorige hoofdstukken zijn voltooid voordat u verdergaat met dit hoofdstuk. De WKND cliënttoepassing verbindt met AEM publiceer dienst, zodat is het belangrijk dat u **het volgende aan de AEM publicatiedienst** publiceerde.
+Dit document is onderdeel van een zelfstudie met meerdere onderdelen. Controleer of de vorige hoofdstukken zijn voltooid voordat u verdergaat met dit hoofdstuk. De WKND cliënttoepassing verbindt met AEM publiceert dienst, zodat is het belangrijk dat u **het volgende aan AEM publiceert de dienst** publiceert.
 
 * Projectconfiguraties
 * GraphQL-eindpunten
@@ -35,16 +35,16 @@ De _IDE screenshots in dit hoofdstuk komen uit [ Code van Visual Studio ](https:
 
 ### Hoofdstuk 1-4 Oplossingspakket (optioneel) {#solution-package}
 
-Er is een oplossingspakket beschikbaar om te worden geïnstalleerd dat de stappen in AEM UI voor hoofdstukken 1-4 voltooit. Dit pakket is **niet nodig** als de vorige hoofdstukken zijn voltooid.
+Er is een oplossingspakket beschikbaar dat de stappen in de AEM-gebruikersinterface voor hoofdstukken 1-4 voltooit. Dit pakket is **niet nodig** als de vorige hoofdstukken zijn voltooid.
 
 1. Download [ geavanceerd-GraphQL-Tutorial-Oplossing-Pakket-1.2.zip ](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip).
 1. In AEM, navigeer aan **Hulpmiddelen** > **Plaatsing** > **Pakketten** om tot **de Manager van het Pakket** toegang te hebben.
 1. Upload en installeer het pakket (ZIP-bestand) dat u in de vorige stap hebt gedownload.
-1. Repliceer het pakket naar de AEM Publish-service
+1. Repliceer het pakket naar de AEM-publicatieservice
 
 ## Doelstellingen {#objectives}
 
-In dit leerprogramma, leert u hoe te om de verzoeken om voortgeduurde vragen in de steekproefWKND GraphQL React app te integreren gebruikend [ AEM Koploze Cliënt voor JavaScript ](https://github.com/adobe/aem-headless-client-js).
+In dit leerprogramma, leert u hoe te om de verzoeken om voortgezette vragen in de steekproefWKND GraphQL React app te integreren gebruikend de [ Hoofdloze Cliënt van AEM voor JavaScript ](https://github.com/adobe/aem-headless-client-js).
 
 ## De voorbeeldclienttoepassing klonen en uitvoeren {#clone-client-app}
 
@@ -56,7 +56,7 @@ Om de zelfstudie te versnellen, wordt een startapp van React JS geleverd.
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Bewerk het `aem-guides-wknd-graphql/advanced-tutorial/.env.development` -bestand en stel `REACT_APP_HOST_URI` zo in dat het naar uw doel AEM publicatieservice wijst.
+1. Bewerk het `aem-guides-wknd-graphql/advanced-tutorial/.env.development` -bestand en stel `REACT_APP_HOST_URI` zo in dat dit naar de AEM-publicatieservice van uw doel verwijst.
 
    Werk de authentificatiemethode bij als het verbinden met een auteursinstantie.
 
@@ -84,7 +84,7 @@ Om de zelfstudie te versnellen, wordt een startapp van React JS geleverd.
 
    >[!NOTE]
    > 
-   > De bovenstaande instructies moeten Reageren app met de **AEM dienst van Publish** verbinden, nochtans om met de **AEM dienst van de Auteur** een lokaal ontwikkelingstoken voor uw milieu van doelAEM as a Cloud Service te verbinden.
+   > De bovenstaande instructies moeten Reageren app met de **AEM verbinden publiceer dienst**, nochtans om met de **dienst van de Auteur van AEM** te verbinden een lokaal ontwikkelingsteken voor uw milieu van doelAEM as a Cloud Service verkrijgen.
    >
    > Het is ook mogelijk om app met a [ lokale instantie van de Auteur te verbinden gebruikend AEMaaCS SDK ](/help/headless-tutorial/graphql/quick-setup/local-sdk.md) gebruikend basisauthentificatie.
 
@@ -112,16 +112,16 @@ Om de zelfstudie te versnellen, wordt een startapp van React JS geleverd.
 
 >[!IMPORTANT]
 >
->    Als u zich afvraagt waarom het GraphQL API verzoek tegen `http://localhost:3000` en NIET tegen het AEM domein van de Dienst van Publish wordt gemaakt, herzie [ onder het Hood ](../multi-step/graphql-and-react-app.md#under-the-hood) van Basisleerprogramma.
+>    Als u zich afvraagt waarom het GraphQL API verzoek tegen `http://localhost:3000` en NIET tegen AEM wordt gemaakt publiceer het domein van de Dienst, overzicht [ onder het Hood ](../multi-step/graphql-and-react-app.md#under-the-hood) van Basiszelfstudie.
 
 
 ## De code controleren
 
-In het [ Basisleerprogramma - bouw een Reactie app die AEM 1} stap van GraphQL APIs gebruikt hadden wij herzien en enkele zeer belangrijke dossiers verbeterd om hands-on deskundigheid te krijgen. ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#review-the-aemheadless-object) Controleer de belangrijkste bestanden voordat u de WKND-app verbetert.
+In het [ Basisleerprogramma - bouw een Reactie app die AEM APIs ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#review-the-aemheadless-object) stap gebruikt hadden wij herzien en verbeterd weinig zeer belangrijke dossiers om hands-on deskundigheid te krijgen. Controleer de belangrijkste bestanden voordat u de WKND-app verbetert.
 
 * [ herzie het voorwerp AEMHeadless ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#review-the-aemheadless-object)
 
-* [ voert uit om AEM GraphQL gepresteerde vragen in werking te stellen ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#implement-to-run-aem-graphql-persisted-queries)
+* [ Implementeer om AEM GraphQL in werking te stellen persisted query&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#implement-to-run-aem-graphql-persisted-queries)
 
 ### Component redigeren `Adventures` Reageren
 
@@ -133,9 +133,9 @@ De WKND React app belangrijkste mening is de lijst van alle avonturen en u kunt 
 
 * De haak gebruikt de hoofdfunctie `fetchPersistedQuery(..)` die de uitvoering van de query aan `AEMHeadless` via `aemHeadlessClient.js` delegeert.
 
-* De haak retourneert ook alleen de relevante gegevens van de AEM GraphQL-respons op `response.data?.adventureList?.items` , zodat de `Adventures` React view-componenten niet op de hoogte zijn van de bovenliggende JSON-structuren.
+* De haak retourneert ook alleen de relevante gegevens van de AEM GraphQL-respons op `response.data?.adventureList?.items` , zodat de `Adventures` React view-componenten niet op de hoogte zijn van de JSON-bovenliggende structuren.
 
-* Op succesvolle vraaguitvoering, `AdventureListItem(..)` geef functie van `Adventures.js` terug voegt HTML element toe om het _Beeld, de Lengte van de Trip, de Prijs, en de informatie van de Titel_ te tonen.
+* Op succesvolle vraaguitvoering, `AdventureListItem(..)` geef functie van `Adventures.js` terug voegt het element van HTML toe om het _Beeld, de Lengte van de Trip, de Prijs, en de informatie van de Titel_ te tonen.
 
 ### Component redigeren `AdventureDetail` Reageren
 
@@ -145,7 +145,7 @@ De component `AdventureDetail` React geeft de details van het avontuur terug. Hi
 
 * Zoals hierboven wordt de `useAdventureBySlug(slug)` haak gedefinieerd in het `src/api/usePersistedQueries.js` -bestand. `wknd-shared/adventure-by-slug` persisted query wordt aangeroepen door te delegeren aan `AEMHeadless` via `aemHeadlessClient.js` .
 
-* Als de query met succes is uitgevoerd, voegt de renderfunctie `AdventureDetailRender(..)` van `AdventureDetail.js` het element HTML toe om de Adventure-details weer te geven.
+* Als de query met succes is uitgevoerd, voegt de renderfunctie `AdventureDetailRender(..)` van `AdventureDetail.js` het HTML-element toe om de Adventure-details weer te geven.
 
 
 ## De code verbeteren

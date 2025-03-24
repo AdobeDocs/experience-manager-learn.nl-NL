@@ -2,14 +2,14 @@
 title: Werken met multimedia en gelijktijdige ontwikkeling
 description: Leer over de voordelen, de uitdagingen, en de technieken om een multi-huurdersimplementatie met Adobe Experience Manager Assets te beheren.
 feature: Connected Assets
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 doc-type: Article
 exl-id: c9ee29d4-a8a5-4e61-bc99-498674887da5
 duration: 437
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 0%
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Wanneer de veelvoudige teams hun code aan de zelfde AEM milieu&#39;s opstellen, zijn er praktijken zij zouden moeten volgen om ervoor te zorgen dat de teams zo onafhankelijk mogelijk kunnen werken, zonder op de tenen van andere teams te stappen. Hoewel zij nooit volledig kunnen worden geëlimineerd, zullen deze technieken dwars-teamgebiedsdelen minimaliseren. Een gelijktijdig ontwikkelingsmodel kan alleen succesvol zijn als de ontwikkelingsteams goed met elkaar communiceren.
+Wanneer de veelvoudige teams hun code aan de zelfde milieu&#39;s van AEM opstellen, zijn er praktijken zij zouden moeten volgen om ervoor te zorgen dat de teams zo onafhankelijk mogelijk kunnen werken, zonder op de tenen van andere teams te stappen. Hoewel zij nooit volledig kunnen worden geëlimineerd, zullen deze technieken dwars-teamgebiedsdelen minimaliseren. Een gelijktijdig ontwikkelingsmodel kan alleen succesvol zijn als de ontwikkelingsteams goed met elkaar communiceren.
 
-Bovendien, wanneer de veelvoudige ontwikkelingsteams aan het zelfde AEM milieu werken, is er waarschijnlijk één of andere graad van multi-tenancy bij spel. Er is veel geschreven over de praktische overwegingen om te proberen meerdere huurders in een AEM omgeving te ondersteunen, met name wat betreft de uitdagingen die zich voordoen bij het beheer van bestuur, activiteiten en ontwikkeling. In dit document worden enkele technische uitdagingen besproken rond het implementeren van AEM in een omgeving met meerdere huurders, maar veel van deze aanbevelingen zijn van toepassing op elke organisatie met meerdere ontwikkelingsteams.
+Bovendien, wanneer de veelvoudige ontwikkelingsteams aan het zelfde milieu van AEM werken, is er waarschijnlijk één of andere graad van multi-tenancy bij spel. Er is veel geschreven over de praktische overwegingen om te proberen meerdere huurders in een AEM-omgeving te ondersteunen, met name wat betreft de uitdagingen die zich voordoen bij het beheer van bestuur, activiteiten en ontwikkeling. In dit document worden enkele technische uitdagingen besproken rond de implementatie van AEM in een omgeving met meerdere huurders, maar veel van deze aanbevelingen zijn van toepassing op elke organisatie met meerdere ontwikkelingsteams.
 
 Het is belangrijk om op voorhand op te merken dat hoewel AEM veelvoudige plaatsen en zelfs veelvoudige merken kan steunen die op één enkele milieu worden opgesteld, het geen ware multi-huur aanbiedt. Sommige omgevingsconfiguraties en systeembronnen worden altijd gedeeld op alle sites die in een omgeving worden geïmplementeerd. In dit document worden richtsnoeren gegeven om de effecten van deze gedeelde bronnen tot een minimum te beperken en worden suggesties gedaan om de communicatie en de samenwerking op deze gebieden te stroomlijnen.
 
@@ -76,7 +76,7 @@ Enkele voorbeelden van code die algemeen in een kernmodule zijn:
    * Servlet-filters
    * ResourceResolver-toewijzingen
    * Sling Transformer-pijpleidingen
-   * Fouthandlers (of gebruik de fouthandler 1 van de ACS-AEM Commons-pagina)
+   * Fouthandlers (of gebruik de AEM Commons Error Page Handler1)
    * Machtigingsservices voor het in cache plaatsen van gegevens die gevoelig zijn voor machtigingen
 * Hulpprogrammaklassen
 * Core Business Logica
@@ -110,13 +110,13 @@ Omdat het een globaal systeemweg en niet specifiek voor één plaats is, zou de 
 
 ### Bedekkingen {#overlays}
 
-Bedekkingen worden vaak gebruikt om de AEM van het vak uit te breiden of te vervangen, maar het gebruik van een bedekking beïnvloedt de gehele AEM toepassing (dat wil zeggen dat eventuele overlappende wijzigingen in de functionaliteit beschikbaar worden gemaakt voor alle huurders). Dit zou nog ingewikkelder zijn als huurders andere eisen voor de overlay zouden stellen. In het ideale geval zouden bedrijfsgroepen moeten samenwerken om overeenstemming te bereiken over de functionaliteit en de vormgeving van AEM administratieve consoles.
+Bedekkingen worden vaak gebruikt om de functionaliteit van de doos AEM uit te breiden of te vervangen, maar het gebruik van een bedekking beïnvloedt de volledige toepassing van AEM (dat wil zeggen, om het even welke bedekte functieveranderingen worden ter beschikking gesteld voor alle huurders). Dit zou nog ingewikkelder zijn als huurders andere eisen voor de overlay zouden stellen. In het ideale geval zouden bedrijfsgroepen moeten samenwerken om overeenstemming te bereiken over de functionaliteit en de vormgeving van de administratieve consoles van AEM.
 
 Als er geen consensus kan worden bereikt tussen de verschillende bedrijfseenheden, zou een mogelijke oplossing zijn om overlays eenvoudigweg niet te gebruiken. In plaats daarvan, creeer een douaneexemplaar van de functionaliteit en stel het via een verschillende weg voor elke huurder bloot. Dit staat elke huurder toe om een volledig verschillende gebruikerservaring te hebben, maar deze benadering verhoogt de kosten van implementatie en verdere verbeteringsinspanningen eveneens.
 
 ### Workflowstartprogramma&#39;s {#workflow-launchers}
 
-AEM gebruikt werkstroomdraagraketten om werkstroomuitvoering automatisch te starten wanneer opgegeven wijzigingen in de opslagplaats worden aangebracht. AEM biedt verschillende draagraketten uit het vak, bijvoorbeeld om processen voor het genereren van vertoningen en het ophalen van metagegevens uit te voeren voor nieuwe en bijgewerkte elementen. Terwijl het mogelijk is om deze draagraketten zoals-is, in een multi-huurdermilieu te verlaten, als de huurders verschillende lancerings en/of werkschemamodel vereisten hebben, dan is het waarschijnlijk dat individuele draagraketten voor elke huurder zullen moeten worden gecreeerd en worden gehandhaafd. Deze draagraketten zullen moeten worden gevormd om op de updates van hun huurder uit te voeren terwijl het verlaten van inhoud van andere huurders onaangeroerd. Dit kunt u eenvoudig bereiken door draagraketten toe te passen op opgegeven opslagpaden die huurspecifiek zijn.
+AEM gebruikt workflowdraagraketten om de uitvoering van de workflow automatisch te starten wanneer opgegeven wijzigingen in de opslagplaats worden aangebracht. AEM biedt verschillende draagraketten uit het vak, bijvoorbeeld om processen voor het genereren van vertoningen en het ophalen van metagegevens uit te voeren voor nieuwe en bijgewerkte elementen. Terwijl het mogelijk is om deze draagraketten zoals-is, in een multi-huurdermilieu te verlaten, als de huurders verschillende lancerings en/of werkschemamodel vereisten hebben, dan is het waarschijnlijk dat individuele draagraketten voor elke huurder zullen moeten worden gecreeerd en worden gehandhaafd. Deze draagraketten zullen moeten worden gevormd om op de updates van hun huurder uit te voeren terwijl het verlaten van inhoud van andere huurders onaangeroerd. Dit kunt u eenvoudig bereiken door draagraketten toe te passen op opgegeven opslagpaden die huurspecifiek zijn.
 
 ### Vanity URL&#39;s {#vanity-urls}
 
@@ -134,11 +134,11 @@ Hoewel een goede architectuur en open communicatiekanalen de introductie van def
 
 ### Gedeelde bronnen {#shared-resources}
 
-AEM wordt uitgevoerd binnen één JVM; alle geïmplementeerde AEM toepassingen delen bronnen inherent met elkaar, bovenop de bronnen die al worden verbruikt tijdens de normale AEM. Binnen de ruimte JVM zelf, is er geen logische scheiding van draden, en de eindige middelen beschikbaar aan AEM, zoals geheugen, cpu, en schijf I/O wordt ook gedeeld. Om het even welke huurder die middelen verbruikt zal onvermijdelijk andere systeemhuurders beïnvloeden.
+AEM werkt binnen één JVM. Alle geïmplementeerde AEM-toepassingen delen bronnen inherent met elkaar, bovenop de bronnen die al worden verbruikt tijdens de normale werking van AEM. Binnen de ruimte JVM zelf, is er geen logische scheiding van draden, en de eindige middelen beschikbaar aan AEM, zoals geheugen, CPU, en schijf I/O wordt ook gedeeld. Om het even welke huurder die middelen verbruikt zal onvermijdelijk andere systeemhuurders beïnvloeden.
 
 ### Prestaties {#performance}
 
-Als AEM beste praktijken niet volgen, is het mogelijk om toepassingen te ontwikkelen die middelen voorbij gebruiken wat als normaal wordt beschouwd. De voorbeelden van dit leiden tot vele zware werkschemaverrichtingen (zoals DAM Update Asset), het gebruiken van druk-op-wijzigen verrichtingen MSM over vele knopen, of het gebruiken van dure vragen JCR om inhoud in real time terug te geven. Dit zal onvermijdelijk een effect op de prestaties van andere huurderstoepassingen hebben.
+Als de beste praktijken van AEM niet volgen, is het mogelijk om toepassingen te ontwikkelen die middelen voorbij gebruiken wat als normaal wordt beschouwd. De voorbeelden van dit leiden tot vele zware werkschemaverrichtingen (zoals DAM Update Asset), het gebruiken van druk-op-wijzigen verrichtingen MSM over vele knopen, of het gebruiken van dure vragen JCR om inhoud in real time terug te geven. Dit zal onvermijdelijk een effect op de prestaties van andere huurderstoepassingen hebben.
 
 ### Logboekregistratie {#logging}
 

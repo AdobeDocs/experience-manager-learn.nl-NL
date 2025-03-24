@@ -1,7 +1,7 @@
 ---
-title: Werken met het delen van bronnen tussen verschillende bronnen (CORS) met AEM
-description: Met CORS (Cross-Origin Resource Sharing) van Adobe Experience Manager kunnen niet-AEM wegeigenschappen client-side aanroepen maken naar AEM, zowel geverifieerd als niet geverifieerd, om inhoud op te halen of rechtstreeks met AEM te communiceren.
-version: 6.4, 6.5
+title: Werken met het delen van bronnen tussen verschillende oorsprong (CORS) met AEM
+description: Met CORS (Cross-Origin Resource Sharing) van Adobe Experience Manager kunnen niet-AEM-webeigenschappen client-side aanroepen naar AEM uitvoeren, zowel geverifieerd als niet geverifieerd, om inhoud op te halen of rechtstreeks te communiceren met AEM.
+version: Experience Manager 6.4, Experience Manager 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: Security, APIs
 doc-type: Article
@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
 duration: 240
-source-git-commit: 6922d885c25d0864560ab3b8e38907060ff3cc70
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 0%
@@ -19,22 +19,22 @@ ht-degree: 0%
 
 # Werken met het delen van bronnen met verschillende oorsprong ([!DNL CORS])
 
-Het delen van het Middel van het Middel van de Verkomst van Adobe Experience Manager ([!DNL CORS]) vergemakkelijkt niet-AEM Web-eigenschappen om cliënt-zijvraag aan AEM te maken, zowel voor authentiek verklaard als niet voor authentiek verklaard, om inhoud te halen of direct met AEM in wisselwerking te staan.
+Het delen van het Middel van het Middel van de Samenkomst van Adobe Experience Manager ([!DNL CORS]) vergemakkelijkt niet-AEM Web-eigenschappen om cliënt-zijvraag aan AEM te maken, zowel voor authentiek verklaard als niet voor authentiek verklaard, om inhoud te halen of direct met AEM in wisselwerking te staan.
 
 De configuratie OSGI die in dit document wordt beschreven is voldoende voor:
 
-1. Delen van bronnen van één oorsprong op AEM Publish
-2. Toegang van CORS tot AEM auteur
+1. Delen van bronnen van één oorsprong in AEM Publish
+2. Toegang tot AEM-auteur voor CORS
 
-Als de multi-oorsprong toegang van CORS op AEM Publish wordt vereist, verwijs naar [ deze documentatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
+Als de multi-oorsprong toegang van CORS op AEM wordt vereist publiceer, verwijs naar [ deze documentatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
 
-## Adobe Granite Cross-Origin Resource Sharing Policy OSGi configuratie
+## Adobe Granite Cross-Origin Resource Sharing Policy OSGi-configuratie
 
-De configuraties van CORS worden beheerd als OSGi- configuratiefabrieken in AEM, waarbij elk beleid als één geval van de fabriek wordt vertegenwoordigd.
+De configuraties CORS worden beheerd als OSGi- configuratiemachines in AEM, waarbij elk beleid als één geval van de fabriek wordt vertegenwoordigd.
 
 * `http://<host>:<port>/system/console/configMgr > Adobe Granite Cross Origin Resource Sharing Policy`
 
-![ Adobe graniet dwars-Oorsprong Middel dat Beleid OSGi deelt configuratie ](./assets/understand-cross-origin-resource-sharing/cors-osgi-config.png)
+![ Adobe Granite het Middel van de Cross-Origin het Delen van Beleid OSGi configuratie ](./assets/understand-cross-origin-resource-sharing/cors-osgi-config.png)
 
 [!DNL Adobe Granite Cross-Origin Resource Sharing Policy] (`com.adobe.granite.cors.impl.CORSPolicyImpl`)
 
@@ -181,9 +181,9 @@ Over het algemeen kunnen dezelfde overwegingen voor het in cache plaatsen van in
 
 | Cacheable | Omgeving | Status van verificatie | Toelichting |
 |-----------|-------------|-----------------------|-------------|
-| Nee | AEM Publish | Geverifieerd | Dispatcher caching op AEM Auteur is beperkt tot statische, niet-authored activa. Hierdoor is het moeilijk en onpraktisch om de meeste bronnen op AEM auteur, inclusief HTTP-antwoordheaders, in cache te plaatsen. |
-| Nee | AEM Publish | Geverifieerd | Vermijd het in cache plaatsen van CORS-koppen bij geverifieerde aanvragen. Dit richt zich op de gemeenschappelijke begeleiding van niet caching voor authentiek verklaarde verzoeken, aangezien het moeilijk is om te bepalen hoe de authentificatie/vergunningsstatus van de het verzoeken gebruiker de geleverde middel zal beïnvloeden. |
-| Ja | AEM Publish | Anoniem | De anonieme verzoeken cache-able bij verzender kunnen hun antwoordkopballen in het voorgeheugen onder brengen ook, ervoor zorgen de toekomstige verzoeken CORS tot de caching inhoud kunnen toegang hebben. Om het even welke de configuratieverandering van CORS op AEM Publish **moet** door een ongeldigverklaring van beïnvloede caching middelen worden gevolgd. De beste praktijken dicteren op code of configuratieplaatsingen het verzendeergeheime voorgeheugen wordt gezuiverd, aangezien het moeilijk is om te bepalen welke caching inhoud kan worden uitgevoerd. |
+| Nee | AEM Publiceren | Geverifieerd | Dispatcher caching op AEM Author is beperkt tot statische, niet-authored assets. Hierdoor is het moeilijk en onpraktisch om de meeste bronnen op AEM Author in cache te plaatsen, inclusief HTTP-antwoordheaders. |
+| Nee | AEM Publiceren | Geverifieerd | Vermijd het in cache plaatsen van CORS-koppen bij geverifieerde aanvragen. Dit richt zich op de gemeenschappelijke begeleiding van niet caching voor authentiek verklaarde verzoeken, aangezien het moeilijk is om te bepalen hoe de authentificatie/vergunningsstatus van de het verzoeken gebruiker de geleverde middel zal beïnvloeden. |
+| Ja | AEM Publiceren | Anoniem | De anonieme verzoeken cache-able bij verzender kunnen hun antwoordkopballen in het voorgeheugen onder brengen ook, ervoor zorgen de toekomstige verzoeken CORS tot de caching inhoud kunnen toegang hebben. Om het even welke CORS configuratieverandering op AEM publiceert **moet** door een ongeldigverklaring van beïnvloede caching middelen worden gevolgd. De beste praktijken dicteren op code of configuratieplaatsingen het verzendeergeheime voorgeheugen wordt gezuiverd, aangezien het moeilijk is om te bepalen welke caching inhoud kan worden uitgevoerd. |
 
 ### CORS-aanvraagheaders toestaan
 
@@ -200,7 +200,7 @@ Om de vereiste [ HTTP- verzoekkopballen toe te staan om tot AEM voor verwerking 
 
 ### CORS-responsheaders in cache plaatsen
 
-Om het in cache plaatsen en het dienen van kopballen CORS op caching inhoud toe te staan, voeg het volgende [ toe/cache /headers configuratie ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers) aan het AEM Publish `dispatcher.any` dossier.
+Als u het in cache plaatsen en serveren van CORS-headers voor in cache opgeslagen inhoud wilt toestaan, voegt u de volgende [ /cache/headers-configuratie ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers) toe aan het AEM Publish `dispatcher.any` -bestand.
 
 ```
 /publishfarm {
@@ -247,6 +247,6 @@ Logboekregistratie is beschikbaar onder `com.adobe.granite.cors` :
 
 ## Ondersteunende materialen
 
-* [ AEM OSGi de fabriek van de Configuratie voor het Delen van het Middel van de Cross-Origin Beleid ](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
+* [ de fabriek van de Configuratie van AEM OSGi voor het Delen van het Middel van de Cross-Origin Beleid ](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
 * [ het Delen van het Middel van de dwars-Oorsprong (W3C) ](https://www.w3.org/TR/cors/)
 * [ Controle van de Toegang van HTTP (Mozilla MDN) ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)

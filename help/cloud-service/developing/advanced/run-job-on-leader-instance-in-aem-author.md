@@ -1,7 +1,7 @@
 ---
 title: Een taak uitvoeren op een leader-instantie in AEM as a Cloud Service
 description: Leer hoe u een taak uitvoert op de leader-instantie in AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: OSGI, Cloud Manager
 role: Architect, Developer
@@ -11,17 +11,17 @@ duration: 0
 last-substantial-update: 2024-10-23T00:00:00Z
 jira: KT-16399
 thumbnail: KT-16399.jpeg
-source-git-commit: 7dca86137d476418c39af62c3c7fa612635c0583
+exl-id: b8b88fc1-1de1-4b5e-8c65-d94fcfffc5a5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
-
 # Een taak uitvoeren op een leader-instantie in AEM as a Cloud Service
 
-Leer hoe u een taak uitvoert op de leader-instantie in de AEM Auteur-service als onderdeel van AEM as a Cloud Service en hoe u deze zo configureert dat deze slechts één keer wordt uitgevoerd.
+Leer hoe u een taak uitvoert op de instantie leader in de AEM Author-service als onderdeel van AEM as a Cloud Service en hoe u deze zo configureert dat deze slechts eenmaal wordt uitgevoerd.
 
 Het verkopen van Banen zijn asynchrone taken die op de achtergrond werken, die worden ontworpen om systeem of gebruiker-teweeggebrachte gebeurtenissen te behandelen. Deze taken worden standaard gelijkmatig over alle instanties (pods) in de cluster verdeeld.
 
@@ -128,15 +128,15 @@ De belangrijkste punten in de bovenstaande code zijn:
 
 ### Standaardtaakverwerking
 
-Wanneer u de bovenstaande code implementeert in een AEM as a Cloud Service-omgeving en deze uitvoert op de AEM Auteur-service, die fungeert als een cluster met meerdere AEM Auteur-JVM&#39;s, wordt de taak één keer uitgevoerd op elke AEM Auteur-instantie (pod). Dit betekent dat het aantal gemaakte taken overeenkomt met het aantal pods. Het aantal pods zal altijd meer dan één zijn (voor niet-RDE-omgevingen), maar zal fluctueren op basis van het interne bronnenbeheer van AEM as a Cloud Service.
+Wanneer u de bovenstaande code implementeert in een AEM as a Cloud Service-omgeving en deze uitvoert op de AEM Author-service, die fungeert als een cluster met meerdere JVM&#39;s van AEM Author, wordt de taak één keer uitgevoerd op elke AEM Author-instantie (pod). Dit betekent dat het aantal gemaakte taken overeenkomt met het aantal pods. Het aantal pods zal altijd meer dan één zijn (voor niet-RDE-omgevingen), maar zal fluctueren op basis van het interne bronnenbeheer van AEM as a Cloud Service.
 
-De taak wordt uitgevoerd op elke instantie AEM Auteur (pod) omdat de `wknd/simple/job/topic` is gekoppeld aan AEM hoofdwachtrij, die taken over alle beschikbare instanties verdeelt.
+De taak wordt uitgevoerd op elke instantie van AEM Auteur (pod) omdat de `wknd/simple/job/topic` is gekoppeld aan de hoofdwachtrij van AEM, die taken over alle beschikbare instanties verdeelt.
 
 Dit is vaak problematisch als de baan voor het veranderen van staat, zoals het creëren van of het bijwerken van middelen of externe diensten verantwoordelijk is.
 
-Als u de baan slechts één keer op de AEM dienst van de Auteur wilt in werking stellen, voeg de [ configuratie van de baanrij ](#how-to-run-a-job-on-the-leader-instance) toe hieronder beschreven.
+Als u de baan slechts één keer op de dienst van de Auteur van AEM wilt lopen, voeg de [ configuratie van de baanrij ](#how-to-run-a-job-on-the-leader-instance) toe hieronder beschreven.
 
-U kunt het verifiëren door de logboeken van de dienst van de AEMAuteur in [ Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager) te herzien.
+U kunt het verifiëren door de logboeken van de dienst van de Auteur van AEM in [ Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager) te herzien.
 
 ![ Baan die door alle instanties wordt verwerkt ](./assets/run-job-once/job-processed-by-all-instances.png)
 
@@ -151,13 +151,13 @@ U zou moeten zien:
 <DD.MM.YYYY HH:mm:ss.SSS> INFO [com.adobe.aem.guides.wknd.core.sling.jobs.impl.SimpleJobConsumerImpl] Processing WKND Job, and Job metadata is: Created in activate method
 ```
 
-Er zijn twee logitems, één voor elke AEM instantie Auteur (`68775db964-nxxcx` en `68775db964-r4zk7` ), die aangeven dat elke instantie (pod) de taak heeft verwerkt.
+Er zijn twee logitems, één voor elke AEM Auteur-instantie (`68775db964-nxxcx` en `68775db964-r4zk7` ), die aangeven dat elke instantie (pod) de taak heeft verwerkt.
 
 ## Een taak uitvoeren op de leaderinstantie
 
-Om een baan _slechts eenmaal_ op de AEM dienst van de Auteur in werking te stellen, creeer een nieuwe het Verdelen baanrij van het type **** wordt bevolen, en associeer uw baanonderwerp (`wknd/simple/job/topic`) met deze rij. Met deze configuratie kan de leider AEM instantie van de Auteur (pod) de taak alleen verwerken.
+Om een baan _in werking te stellen slechts eenmaal_ op de dienst van de Auteur van AEM, creeer een nieuwe het Verdelen baanrij van het type **** wordt bevolen, en associeer uw baanonderwerp (`wknd/simple/job/topic`) met deze rij. Met deze configuratie kan alleen de AEM Author-instantie (pod) voor leader de taak verwerken.
 
-In de module van uw AEM project `ui.config`, creeer een OSGi- configuratiedossier (`org.apache.sling.event.jobs.QueueConfiguration~wknd.cfg.json`) en bewaar het bij `ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author` omslag.
+Maak in de module `ui.config` van uw AEM-project een OSGi-configuratiebestand ( `org.apache.sling.event.jobs.QueueConfiguration~wknd.cfg.json` ) en sla dit op in de map `ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author` .
 
 ```json
 {
@@ -177,7 +177,7 @@ De belangrijkste punten om in de bovenstaande configuratie te nota te nemen zijn
 - Het type wachtrij is ingesteld op `ORDERED` .
 - Het maximumaantal parallelle taken is ingesteld op `1` .
 
-Zodra u de bovengenoemde configuratie opstelt, zal de baan uitsluitend door de leider instantie worden verwerkt, die ervoor zorgt dat het slechts eenmaal over de volledige AEM dienst van de Auteur loopt.
+Nadat u de bovenstaande configuratie hebt geïmplementeerd, wordt de taak uitsluitend door de instantie leader verwerkt, zodat deze maar één keer door de hele AEM Author-service wordt uitgevoerd.
 
 ```
 <DD.MM.YYYY HH:mm:ss.SSS> [cm-pxxxx-exxxx-aem-author-7475cf85df-qdbq5] *INFO* [FelixLogListener] Events.Service.org.apache.sling.event Service [QueueMBean for queue WKND Queue - ORDERED,7755, [org.apache.sling.event.jobs.jmx.StatisticsMBean]] ServiceEvent REGISTERED

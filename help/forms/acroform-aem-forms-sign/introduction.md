@@ -1,13 +1,13 @@
 ---
 title: Transformaties met AEM Forms
-description: Een zelfstudie die door het maken van een adaptief formulier met Acroform loopt en de gegevens samenvoegt om een PDF te verkrijgen. De PDF met de samengevoegde gegevens kunnen vervolgens worden verzonden voor ondertekening met behulp van Acrobat Sign.
+description: Een zelfstudie die door het maken van een adaptief formulier met Acroform loopt en de gegevens samenvoegt om een PDF te verkrijgen. De PDF met de samengevoegde gegevens kan vervolgens worden verzonden voor ondertekening met behulp van Acrobat Sign.
 feature: adaptive-forms
 doc-type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 45
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # Adaptieve Forms maken van Acrobat-formulieren
 
-Organisaties hebben een grote verscheidenheid aan formulieren. Sommige van deze formulieren worden gemaakt in Microsoft Word en omgezet in PDF. Deze formulieren kunnen standaard niet worden ingevuld met Adobe Reader of Acrobat. Om deze formulieren invulbaar te maken met Acrobat of Reader, moeten we deze formulieren omzetten in Acroform. Acroformulieren zijn formulieren die zijn gemaakt met Acrobat. Dit artikel doorloopt het maken van een adaptief formulier van Acrobat en het samenvoegen van de gegevens in Acroform om de PDF te verkrijgen. De PDF met de samengevoegde gegevens kunnen ook worden verzonden voor ondertekening met behulp van Acrobat Sign.
+Organisaties hebben een grote verscheidenheid aan formulieren. Sommige van deze formulieren worden gemaakt in Microsoft Word en geconverteerd naar PDF. Deze formulieren kunnen standaard niet worden ingevuld met Adobe Reader of Acrobat. Als u deze formulieren invulbaar wilt maken met Acrobat of Reader, moet u deze formulieren converteren naar Acrobat. Acroformulieren zijn formulieren die zijn gemaakt met Acrobat. Dit artikel doorloopt het maken van een adaptief formulier van Acrobat en het samenvoegen van de gegevens in Acrobat om de PDF te verkrijgen. De PDF met de samengevoegde gegevens kan ook worden verzonden voor ondertekening met behulp van Acrobat Sign.
 
 >[!NOTE]
 >
->Als u AEM Forms 6.5 gebruikt, moet u de Automatede form conversion gebruiken.
+>Als u AEM Forms 6.5 gebruikt, moet u de functie voor automatische formulierconversie gebruiken.
 
 ## Vereisten
 

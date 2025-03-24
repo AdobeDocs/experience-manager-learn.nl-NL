@@ -1,7 +1,7 @@
 ---
 title: Dynamische include-bestanden voor AEM instellen
 description: Een videodemo over het installeren en gebruiken van Apache Sling Dynamic Include met AEM Dispatcher die op Apache HTTP Web Server wordt uitgevoerd.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
 doc-type: Technical Video
@@ -10,7 +10,7 @@ role: Developer
 level: Experienced
 exl-id: 6c504710-be8f-4b44-bd8a-aaf480ae6d8a
 duration: 863
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -25,12 +25,12 @@ Een videolooppas-door van het installeren van en het gebruiken van [!DNL Apache 
 
 >[!NOTE]
 >
-> Zorg ervoor dat de nieuwste versie van AEM Dispatcher lokaal is geïnstalleerd.
+> Controleer of de nieuwste versie van AEM Dispatcher lokaal is geïnstalleerd.
 
 1. Download en installeer de [[!DNL Sling Dynamic Include]  bundel ](https://sling.apache.org/downloads.cgi).
 1. Vorm [!DNL Sling Dynamic Include] via [!DNL OSGi Configuration Factory] in **http://&lt;host>:&lt;port>/system/console/configMgr/org.apache.sling.dynamicinclude.Configuration**.
 
-   Of, om aan een AEM code-basis toe te voegen, creeer de aangewezen **gooi:OsgiConfig** knoop bij:
+   Of, om aan een code-basis van AEM toe te voegen, creeer de aangewezen **gooi:OsgiConfig** knoop bij:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>

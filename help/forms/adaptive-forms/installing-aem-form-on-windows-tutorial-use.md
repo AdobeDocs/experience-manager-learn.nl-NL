@@ -3,14 +3,14 @@ title: Vereenvoudigde stappen voor het installeren van AEM Forms in Windows
 description: Snelle en eenvoudige stappen om AEM Forms in vensters te installeren
 feature: Adaptive Forms
 type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 113
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dubbelklik nooit op de AEM Quick Start-jar als u AEM Forms wilt gebruiken.
+>Dubbelklik nooit op de AEM Quick Start jar als u AEM Forms wilt gebruiken.
 >
 >Zorg er ook voor dat het pad naar de installatiemap van AEM Forms geen spaties bevat.
 >
@@ -39,7 +39,7 @@ ht-degree: 0%
 Hoewel wij na de [ officiële documentatie ](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) voor het installeren van AEM Forms adviseren. U kunt de volgende stappen volgen om AEM Forms in Windows-omgeving te installeren en configureren:
 
 * Zorg ervoor dat de juiste JDK is geïnstalleerd
-   * AEM 6.2 hebt u nodig: Oracle SE 8 JDK 1.8.x (64 bits)
+   * AEM 6.2 die u nodig hebt: Oracle SE 8 JDK 1.8.x (64-bits)
    * AEM 6.3 en AEM 6.4 hebt u nodig: Oracle SE 8 JDK 1.8.x (64-bits)
    * AEM 6.5 hebt u JDK 8 of JDK 11 nodig
    * [ Officiële JDK Vereisten ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=en) zijn hier vermeld
@@ -54,7 +54,7 @@ Hoewel wij na de [ officiële documentatie ](https://helpx.adobe.com/experience-
 * Kopieer het bestand license.properties naar deze map van AEMForms
 * Maak een batchbestand met de naam &quot;StartAemForms.bat&quot; met de volgende inhoud:
    * `java -d64 -Xmx2048M -jar AEM_6.5_Quickstart.jar -gui`
-      * Hier AEM_6.5_Quickstart.jar is de naam van mijn AEM quickstart jar.
+      * Hier is AEM_6.5_Quickstart.jar de naam van mijn AEM quickstart jar.
    * U kunt de naam van de jar wijzigen, maar zorg dat de naam wordt weergegeven in het batchbestand. Sla het batchbestand op in de map AEMForms.
 
 * Open een nieuwe bevelherinnering, en navigeer aan _c:\ aemforms_.
@@ -86,4 +86,4 @@ Hoewel wij na de [ officiële documentatie ](https://helpx.adobe.com/experience-
 1. Sla de wijzigingen op.
 
 Gefeliciteerd!! U hebt nu AEM Forms op uw systeem geïnstalleerd en geconfigureerd.
-Afhankelijk van uw behoeften kunt u {de Uitbreidingen van de Reader 0} vormen ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) of [ PDFG ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) op uw server[
+Afhankelijk van uw behoeften kunt u [ Uitbreidingen van Reader ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) vormen of [ PDFG ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) op uw server

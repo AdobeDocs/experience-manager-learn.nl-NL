@@ -4,23 +4,23 @@ description: Gebruik de invokeDDX-bewerking om PDF-bestanden te bewerken.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-9958
 thumbnail: 332439.jpg
 duration: 50
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 0%
 
 ---
 
-# Bewerk PDF-bestanden met behulp van het DDX-eindpunt aanroepen
+# PDF-bestanden manipuleren met het eindpunt van DDX aanroepen
 
 
-De volgende stap is een vraag van de POST van HTTP aan het eindpunt met de noodzakelijke parameters te maken. Het malplaatje en de gegevensdossiers worden verstrekt als middeldossiers. Eigenschappen van de gegenereerde PDF worden via de parameter van de optie in de aanvraag opgegeven. De eigenschap embedFonts wordt gebruikt om aangepaste lettertypen in te sluiten in de gegenereerde PDF. Gelieve te volgen [ deze documentatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html) om douanedoopvonten aan uw de wolkeninstantie van Forms op te stellen. De eigenschappen worden gespecificeerd in het options.json middeldossier. Aangezien, heeft het eindpunt symbolische gebaseerde authentificatie wij het Token van de Toegang in de verzoekkopbal overgaan.
+De volgende stap is een POST van HTTP vraag aan het eindpunt met de noodzakelijke parameters te maken. Het malplaatje en de gegevensdossiers worden verstrekt als middeldossiers. Eigenschappen van de gegenereerde PDF worden via de parameter van de optie in de aanvraag opgegeven. De eigenschap embedFonts wordt gebruikt om aangepaste lettertypen in te sluiten in de gegenereerde PDF. Gelieve te volgen [ deze documentatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html) om douanedoopvonten aan uw de wolkeninstantie van Forms op te stellen. De eigenschappen worden gespecificeerd in het options.json middeldossier. Aangezien, heeft het eindpunt symbolische gebaseerde authentificatie wij het Token van de Toegang in de verzoekkopbal overgaan.
 
 De volgende code is gebruikt om pdf te genereren door gegevens samen te voegen met de sjabloon
 

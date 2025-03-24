@@ -1,7 +1,7 @@
 ---
-title: Inhoud modelleren - AEM eerste zelfstudie zonder hoofd
+title: Inhoud modelleren - eerste zelfstudie voor AEM Headless
 description: Leer hoe u contentfragmenten kunt gebruiken, Fragmentmodellen kunt maken en GraphQL-eindpunten kunt gebruiken in AEM.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: 6e5e3cb4-9a47-42af-86af-da33fd80cb47
 duration: 175
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 0%
@@ -21,19 +21,19 @@ ht-degree: 0%
 
 # Modellering van inhoud
 
-Welkom bij de zelfstudie over inhoudsfragmenten en GraphQL-eindpunten in Adobe Experience Manager (AEM). We zullen het gebruik van Content Fragments, het maken van Fragmentmodellen en het gebruik van GraphQL-eindpunten in AEM behandelen.
+Welkom bij de zelfstudie over inhoudsfragmenten en GraphQL-eindpunten in Adobe Experience Manager (AEM). We zullen het gebruiken van Content Fragments, het creëren van Fragmentmodellen, en het gebruiken van GraphQL eindpunten in AEM behandelen.
 
-Inhoudsfragmenten bieden een gestructureerde aanpak voor het beheer van inhoud tussen kanalen, zodat u over meer flexibiliteit en herbruikbaarheid beschikt. Als u Content Fragments in AEM inschakelt, kunt u modulaire inhoud maken, waardoor de consistentie en het aanpassingsvermogen worden vergroot.
+Inhoudsfragmenten bieden een gestructureerde aanpak voor het beheer van inhoud tussen kanalen, zodat u over meer flexibiliteit en herbruikbaarheid beschikt. Als u Content Fragments inschakelt in AEM, kunt u modulaire inhoud maken, waardoor de consistentie en het aanpassingsvermogen worden vergroot.
 
-Eerst, zullen wij u door het toelaten van de Fragmenten van de Inhoud in AEM begeleiden, die noodzakelijke configuraties en montages voor naadloze integratie behandelen.
+Eerst begeleiden we u door het inschakelen van Content Fragments in AEM, waarbij de benodigde configuraties en instellingen voor naadloze integratie worden behandeld.
 
 Vervolgens gaat het maken van fragmentmodellen, waarmee structuur en kenmerken worden gedefinieerd, aan de orde komen. Leer hoe u modellen ontwerpt die zijn afgestemd op uw inhoudsvereisten en deze effectief beheert.
 
 Dan, zullen wij het creëren van de Fragmenten van de Inhoud van de modellen aantonen, die geleidelijke begeleiding op creatie en het publiceren verstrekken.
 
-Daarnaast zullen we zoeken naar het definiëren van eindpunten voor AEM GraphQL. GraphQL haalt efficiënt gegevens op uit AEM en wij stellen eindpunten in en configureren deze om de gewenste gegevens beschikbaar te maken. Met permanente query&#39;s worden de prestaties en caching geoptimaliseerd.
+Bovendien gaan we verder met het definiëren van AEM GraphQL-eindpunten. GraphQL haalt op efficiënte wijze gegevens op uit AEM en wij stellen eindpunten in en configureren deze om de gewenste gegevens beschikbaar te maken. Met permanente query&#39;s worden de prestaties en caching geoptimaliseerd.
 
-Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips. Tegen het eind, zult u de vaardigheden hebben om de Fragmenten van de Inhoud toe te laten, tot de Modellen van het Fragment te leiden, Fragments te produceren, en AEM eindpunten van GraphQL en voortgezette vragen te bepalen. Laten we beginnen!
+Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips. Tegen het eind, zult u de vaardigheden hebben om de Fragmenten van de Inhoud toe te laten, de Modellen van het Fragment tot stand te brengen, Fragments te produceren, en AEM GraphQL eindpunten en voortgezette vragen te bepalen. Laten we beginnen!
 
 ## Contextbewuste configuratie
 
@@ -89,7 +89,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 1. Nadat de omslag wordt gecreeerd, selecteer de omslag en open zijn __Eigenschappen__.
 1. In het lusje van de Configuraties van de Wolk van de omslag ____, selecteer de configuratie [ vroeger ](#enable-content-fragments-and-graphql) gecreeerd.
 
-   ![ omslag van Activa AEM de Hoofdloze wolkenconfiguratie ](./assets/1/cloud-config.png)
+   ![ de omslag van Activa AEM Headless wolkenconfiguratie ](./assets/1/cloud-config.png)
 
    Klik in de nieuwe map en maak een teaser. Klik __creëren__ en __het Fragment van de Inhoud__ en selecteren het __Taser__ model. Noem het model __Hero__ en klik __creeer__.
 
@@ -111,7 +111,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
 1. Klik __creëren__ en geef het nieuwe eindpunt een naam en kies de pas gecreëerde configuratie.
 
-   ![ AEM het eindpunt van GraphQL zonder hoofd ](./assets/1/endpoint.png)
+   ![ AEM Hoofdloze eindpunt van GraphQL ](./assets/1/endpoint.png)
 
 ## Aangehouden GraphQL-query&#39;s
 
@@ -132,7 +132,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
    U zou een lijst moeten krijgen die het enige gemaakte fragment [ hierboven ](#create-content) bevatten.
 
-   Voor deze oefening, creeer een volledige vraag die de AEM headless app gebruikt. Maak een query die één teaser per pad retourneert. Voer de volgende query in in de query-editor:
+   Voor deze oefening maakt u een volledige query die de AEM-app zonder kop gebruikt. Maak een query die één teaser per pad retourneert. Voer de volgende query in in de query-editor:
 
    ```graphql
    query TeaserByPath($path: String!) {
@@ -193,6 +193,6 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
 ## Volgende stappen
 
-Gefeliciteerd! U hebt AEM as a Cloud Service geconfigureerd om het maken van Content Fragments en GraphQL-eindpunten toe te staan. U hebt ook een model van het Fragment van de Inhoud en een Fragment van de Inhoud, en bepaald een eindpunt van GraphQL en persisted vraag gecreeerd. U bent nu bereid om zich op het volgende zelfstudie- hoofdstuk te bewegen, waar u zult leren hoe te om een AEM toepassing van de Reactie van de Zwaartepunt tot stand te brengen die de Fragments van de Inhoud en het eindpunt van GraphQL verbruikt u in dit hoofdstuk creeerde.
+Gefeliciteerd! U hebt AEM as a Cloud Service geconfigureerd om het maken van Content Fragments en GraphQL-eindpunten toe te staan. U hebt ook een model van het Fragment van de Inhoud en een Fragment van de Inhoud, en bepaald een eindpunt van GraphQL en persisted vraag gecreeerd. U bent nu klaar om naar het volgende zelfstudie- hoofdstuk te gaan, waar u leert hoe u een AEM Headless React-toepassing kunt maken die de Content Fragments en het GraphQL-eindpunt gebruikt die u in dit hoofdstuk hebt gemaakt.
 
-[Volgend hoofdstuk: AEM headless API&#39;s en Reageer](./2-aem-headless-apis-and-react.md)
+[Volgende hoofdstuk: AEM Headless API&#39;s en Reageren](./2-aem-headless-apis-and-react.md)

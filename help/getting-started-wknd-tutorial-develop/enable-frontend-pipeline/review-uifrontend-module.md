@@ -1,7 +1,7 @@
 ---
 title: De module ui.frontend van het volledige-stapelproject van het overzicht
 description: Herzie de front-end ontwikkeling, plaatsing, en leveringslevenscyclus van een op beproefd-gebaseerd volledig-stapel AEM Sites Project.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
@@ -13,25 +13,25 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: 65e8d41e-002a-4d80-a050-5366e9ebbdea
 duration: 364
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
 
 ---
 
-# Bekijk de module &#39;ui.frontend&#39; van het AEM &#39;full-stack&#39; project {#aem-full-stack-ui-frontent}
+# Bekijk de module &#39;ui.frontend&#39; van het AEM-project in volledige stapel {#aem-full-stack-ui-frontent}
 
 In, herziet dit hoofdstuk wij de ontwikkeling, de plaatsing, en de levering van front-end artefacten van een volledig-stapel AEM project, door zich op de module &quot;ui.frontend&quot;van het __project van de Plaatsen WKND__ te concentreren.
 
 
 ## Doelstellingen {#objective}
 
-* Begrijp de bouw en plaatsingsstroom van front-end artefacten in een AEM volledig-stapelproject
-* Herzie de AEM volledig-stapel van het project `ui.frontend` module [ webpack ](https://webpack.js.org/) vormt
-* AEM clientbibliotheekproces (ook clientlibs genoemd)
+* Begrijp de bouw en plaatsingsstroom van front-end artefacten in een volledig-stapelproject van AEM
+* Herzie het volledige-stapelproject van AEM `ui.frontend` module [ webpack ](https://webpack.js.org/) vormt
+* AEM-clientbibliotheekproces (ook clientlibs genoemd)
 
-## Voorste-end plaatsingsstroom voor AEM volledig-stapel en Snelle projecten van de Plaats
+## Voorste-end plaatsingsstroom voor AEM full-stack en Snelle projecten van de Plaats creatie
 
 >[!IMPORTANT]
 >
@@ -42,12 +42,12 @@ In, herziet dit hoofdstuk wij de ontwikkeling, de plaatsing, en de levering van 
 ## Vereisten {#prerequisites}
 
 
-* Kloon het [ AEM WKND project van Plaatsen ](https://github.com/adobe/aem-guides-wknd)
-* Het gekloonde AEM WKND-siteproject is gemaakt en geïmplementeerd in AEM as a Cloud Service.
+* Kloon het [ project van de Plaatsen van AEM WKND ](https://github.com/adobe/aem-guides-wknd)
+* Het gekloonde AEM WKND Sites-project is gemaakt en geïmplementeerd in AEM as a Cloud Service.
 
-Zie het AEM project van de Plaats WKND [ README.md ](https://github.com/adobe/aem-guides-wknd/blob/main/README.md) voor meer details.
+Zie het project van de Plaats van AEM WKND [ README.md ](https://github.com/adobe/aem-guides-wknd/blob/main/README.md) voor meer details.
 
-## AEM volledige-stapel project front-end artefactstroom {#flow-of-frontend-artifacts}
+## AEM full-stack project front-end artefactflow {#flow-of-frontend-artifacts}
 
 Hieronder is een vertegenwoordiging op hoog niveau van de __ontwikkeling, plaatsing, en levering__ stroom van de front-end artefacten in een volledig-stapel AEM project.
 
@@ -58,18 +58,18 @@ Tijdens de ontwikkelingsfase worden front-end wijzigingen zoals opmaak en herbra
 
 Voorste-eindveranderingen worden opgesteld aan het milieu van AEM as a Cloud Service wanneer het runnen van de [__volledig-stapel__ pijpleiding in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html).
 
-De front-end middelen worden geleverd aan Webbrowsers via de wegen van URI die met `/etc.clientlibs/` beginnen, en typisch in het voorgeheugen ondergebracht op AEM Dispatcher en CDN.
+De front-end bronnen worden aan de webbrowsers geleverd via URI-paden die beginnen met `/etc.clientlibs/` en worden doorgaans in cache geplaatst op AEM Dispatcher en CDN.
 
 
 >[!NOTE]
 >
-> Op dezelfde manier in de __AEM Snelle Reis van de Aanmaak van de Plaats__, [ front-end veranderingen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/customize-theme.html) worden opgesteld aan het milieu van AEM as a Cloud Service door de __voor-Eind__ pijpleiding in werking te stellen, zie [ Opstelling Uw Pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup.html)
+> Op dezelfde manier in de __Reis van de Aanmaak van de Plaats van AEM Snelle__, [ front-end veranderingen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/customize-theme.html) worden opgesteld aan het milieu van AEM as a Cloud Service door de __voor-Eind__ pijpleiding in werking te stellen, zie [ Opstelling Uw Pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup.html)
 
 ### Webpack van het overzicht vormt in het project van Plaatsen WKND {#development-frontend-webpack-clientlib}
 
 * Er zijn drie __webpack__ config- dossiers die worden gebruikt om de de plaatsen van WKND front-end middelen te bundelen.
 
-   1. `webpack.common` - dit bevat de __gemeenschappelijke__ configuratie om het middel te instrueren WKND bundelen en optimalisering. Het __output__ bezit vertelt waar te om de geconsolideerde dossiers (die ook als de bundels van JavaScript worden bekend, maar niet om met AEM OSGi- bundels worden verward) uit te geven het leidt. De standaardnaam wordt ingesteld op `clientlib-site/js/[name].bundle.js` .
+   1. `webpack.common` - dit bevat de __gemeenschappelijke__ configuratie om het middel te instrueren WKND bundelen en optimalisering. Het __output__ bezit vertelt waar te om de geconsolideerde dossiers (die ook als de bundels van JavaScript worden bekend, maar niet om met de bundels van AEM OSGi worden verward) uit te geven het leidt. De standaardnaam wordt ingesteld op `clientlib-site/js/[name].bundle.js` .
 
   ```javascript
       ...
@@ -80,7 +80,7 @@ De front-end middelen worden geleverd aan Webbrowsers via de wegen van URI die m
       ...    
   ```
 
-   1. `webpack.dev.js` bevat de __ontwikkelings__ configuratie voor webpack-dev-server en richt aan het malplaatje van HTML aan gebruik. Het bevat ook een proxyconfiguratie voor een AEM instantie die op `localhost:4502` wordt uitgevoerd.
+   1. `webpack.dev.js` bevat de __ontwikkeling__ configuratie voor webpack-dev-server en richt aan het malplaatje van HTML aan gebruik. Het bevat ook een proxyconfiguratie voor een AEM-instantie die op `localhost:4502` wordt uitgevoerd.
 
   ```javascript
       ...
@@ -128,7 +128,7 @@ De front-end middelen worden geleverd aan Webbrowsers via de wegen van URI die m
     ...
 ```
 
-* De __front-maven-stop__ van `ui.frontend/pom.xml` organiseert webpack bundelen en clientlib generatie tijdens AEM project bouwt.
+* De __front-maven-stop__ van `ui.frontend/pom.xml` organiseert webpack bundelen en clientlib generatie tijdens het project van AEM bouwt.
 
 `$ mvn clean install -PautoInstallSinglePackage`
 
@@ -139,7 +139,7 @@ De [__volledig-stapel__ pijpleiding ](https://experienceleague.adobe.com/docs/ex
 
 ### Levering vanuit AEM as a Cloud Service {#delivery-frontend-aemaacs}
 
-De front-end middelen die via de full-stack pijpleiding worden opgesteld worden geleverd van de AEMPlaats aan Webbrowsers als `/etc.clientlibs` dossiers. U kunt dit verifiëren door de [ openbaar ontvangen plaats van WKND ](https://wknd.site/content/wknd/us/en.html) en het bekijken bron van webpage te bezoeken.
+De front-end middelen die via de full-stack pijplijn worden opgesteld worden geleverd van de Plaats van AEM aan Webbrowsers als `/etc.clientlibs` dossiers. U kunt dit verifiëren door de [ openbaar ontvangen plaats van WKND ](https://wknd.site/content/wknd/us/en.html) en het bekijken bron van webpage te bezoeken.
 
 ```html
     ....
@@ -157,4 +157,4 @@ Gefeliciteerd, hebt u de module ui.frontend van het full-stack project gecontrol
 
 ## Volgende stappen {#next-steps}
 
-In het volgende hoofdstuk, [ Update Project om Voorste-eindpijpleiding ](update-project.md) te gebruiken, zult u het AEM Project van Plaatsen WKND bijwerken om het voor het front-end pijpleidingscontract toe te laten.
+In het volgende hoofdstuk, [ Update Project om Voorste-eindpijpleiding ](update-project.md) te gebruiken, zult u het Project van de Plaatsen van AEM WKND bijwerken om het voor het front-end pijpleidingscontract toe te laten.

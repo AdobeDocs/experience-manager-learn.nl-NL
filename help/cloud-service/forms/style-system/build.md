@@ -5,18 +5,18 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
-source-git-commit: 1ed08d7784833b6c49139da525341af5ee587345
+exl-id: 4a02f494-ca0e-42d4-bbb9-6223ff8685e3
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
 
 ---
-
 
 # Wijzigingen testen
 
@@ -39,7 +39,7 @@ Zodra het themaproject met succes wordt gebouwd, zijn uw bereid om de veranderin
 
 * Open het bestand theme.css in de map dist van uw themaproject. Selecteer en kopieer de volledige bestandsinhoud.
 * Bekijk een voorbeeld van het formulier dat u in de vorige stap hebt gemaakt.
-* Klik met de rechtermuisknop op een van de knoppen en selecteer Inspect om de console voor ontwikkelaars te openen.
+* Klik met de rechtermuisknop op een van de knoppen en selecteer Inspecteren om de ontwikkelaarsconsole te openen.
 * Klik in de ontwikkelingsconsole op theme.css om theme.css te openen
 * Selecteer en schrap de volledige inhoud van theme.css door CTR-A te gebruiken en de schrappingsknoop te drukken.
 * Kopieer en plak de inhoud van theme.css die u in de vroegere stap bouwde.
@@ -50,4 +50,3 @@ Zodra het themaproject met succes wordt gebouwd, zijn uw bereid om de veranderin
 ## De wijzigingen verschuiven
 
 Als u met de veranderingen wordt tevredengesteld, kunt u de veranderingen in uw wolkeninstantie duwen gebruikend de [ front-end pijpleiding ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)
-

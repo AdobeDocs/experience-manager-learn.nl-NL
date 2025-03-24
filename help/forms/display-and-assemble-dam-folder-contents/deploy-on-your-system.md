@@ -1,15 +1,15 @@
 ---
 title: De elementen lokaal implementeren
-description: De zelfstudie-elementen implementeren op uw lokale AEM
+description: De lesbestanden op uw lokale AEM-instantie implementeren
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2023-01-04T00:00:00Z
 exl-id: d23b51ba-1efb-4505-b5b3-44a02177e467
 duration: 27
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Implementeren op uw systeem
 
-Volg de onderstaande stappen om deze kwestie te laten werken aan uw lokale AEM.
+Volg de onderstaande stappen om deze kwestie te laten werken aan uw lokale AEM-exemplaar.
 
 * [ stelt de Bundel DevelopingWithServiceUser ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip) in het ZIP dossier op.
 

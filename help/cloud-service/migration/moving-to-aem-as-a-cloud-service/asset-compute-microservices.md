@@ -1,7 +1,7 @@
 ---
 title: AEM Assets Microservices en overstappen naar AEM as a Cloud Service
-description: Leer hoe u met AEM Assets as a Cloud Service asset compute microservices automatisch en efficiënt elke uitvoering voor uw middelen kunt genereren en deze rol van de traditionele AEM Workflow kunt vervangen.
-version: Cloud Service
+description: Leer hoe u met AEM Assets as a Cloud Service Asset Compute-microservices automatisch en efficiënt uitvoering voor uw middelen kunt genereren en deze rol van de traditionele AEM Workflow kunt vervangen.
+version: Experience Manager as a Cloud Service
 feature: Asset Compute Microservices
 topic: Migration, Upgrade
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8635
 thumbnail: 336990.jpeg
 exl-id: 327e8663-086b-4b31-b159-a0cf30480b45
 duration: 973
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # AEM Assets Microservices - Naar AEM as a Cloud Service
 
-Leer hoe u met AEM Assets as a Cloud Service asset compute microservices automatisch en efficiënt elke uitvoering voor uw middelen kunt genereren en deze rol van de traditionele AEM Workflow kunt vervangen.
+Leer hoe u met AEM Assets as a Cloud Service Asset Compute-microservices automatisch en efficiënt uitvoering voor uw middelen kunt genereren en deze rol van de traditionele AEM Workflow kunt vervangen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336990?quality=12&learn=on)
 
@@ -27,11 +27,11 @@ Leer hoe u met AEM Assets as a Cloud Service asset compute microservices automat
 
 ![ Hulpmiddel van de Migratie van het Werkschema van Activa ](./assets/asset-workflow-migration.png)
 
-Als deel van het refactoring van uw codebasis, gebruik het [ hulpmiddel van de Migratie van het Werkschema van Activa ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/asset-workflow-migration-tool.html) om bestaande werkschema&#39;s te migreren om de Asset compute microdiensten in AEM as a Cloud Service te gebruiken.
+Als deel van het refactoring van uw codebasis, gebruik het [ hulpmiddel van de Migratie van het Werkschema van Activa ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/asset-workflow-migration-tool.html) om bestaande werkschema&#39;s te migreren om de microdiensten van Asset Compute in AEM as a Cloud Service te gebruiken.
 
 ## Belangrijkste activiteiten
 
-+ Gebruik het ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationworkflow-migrator) hulpmiddel van de Migrator van het Werkschema 0} Adobe I/O om werkschema&#39;s van de activaverwerking te migreren om de microdiensten van de Asset compute te gebruiken.[
++ Gebruik het ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationworkflow-migrator) hulpmiddel van de Migrator van het Werkschema van 0} Adobe I/O {om werkschema&#39;s van de activaverwerking te migreren om de microdiensten van Asset Compute te gebruiken.[
 + Opstelling a [ lokale ontwikkelomgeving ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) en stel de bijgewerkte werkschema&#39;s op. Mogelijk is een handmatige aanpassing nodig voor complexe workflows.
 + Doorgaan met herhalen in een lokale ontwikkelomgeving met de AEM SDK totdat de bijgewerkte workflow overeenkomt met de pariteit van de functie.
 + Implementeer de bijgewerkte codebasis in een AEM as a Cloud Service-ontwikkelomgeving en blijf valideren.
