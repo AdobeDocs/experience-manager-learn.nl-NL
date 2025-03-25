@@ -1,7 +1,7 @@
 ---
 title: Gebruikersrechten toepassen op geüploade pdf
 description: Gebruiksrechten toepassen op pdf
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Reader Extensions
 topic: Development
 role: Developer
@@ -9,7 +9,7 @@ level: Experienced
 exl-id: ea433667-81db-40f7-870d-b16630128871
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 129
-source-git-commit: f3f5c4c4349c8d02c88e1cf91dbf18f58db1e67e
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 # Reader-extensies toepassen
 
-Met Reader Extensions kunt u gebruiksrechten op PDF-documenten manipuleren. Gebruiksrechten hebben betrekking op functionaliteit die wel beschikbaar is in Acrobat, maar niet in Adobe Reader. De functionaliteit die wordt beheerd door Reader Extensions omvat de mogelijkheid om opmerkingen toe te voegen aan een document, formulieren in te vullen en het document op te slaan. PDF-documenten waaraan gebruiksrechten zijn toegevoegd, worden documenten waarvoor rechten zijn ingeschakeld genoemd. Een gebruiker die een voor rechten geschikt PDF-document in Adobe Reader opent, kan de bewerkingen uitvoeren die voor dat document zijn ingeschakeld.
+Met Reader Extensions kunt u gebruiksrechten op PDF-documenten manipuleren. Gebruiksrechten hebben betrekking op functionaliteit die wel beschikbaar is in Acrobat, maar niet in Adobe Reader. De functionaliteit die wordt beheerd door Reader Extensions omvat de mogelijkheid om opmerkingen toe te voegen aan een document, formulieren in te vullen en het document op te slaan. PDF-documenten waaraan gebruiksrechten zijn toegevoegd, worden documenten met ingeschakelde rechten genoemd. Een gebruiker die een PDF-document met ingeschakelde rechten opent in Adobe Reader, kan de bewerkingen uitvoeren die voor dat document zijn ingeschakeld.
 
 Voor dit gebruiksgeval moeten we het volgende doen:
-* [ voeg het certificaat van de Uitbreidingen van de Reader ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) aan `fd-service` gebruiker toe.
+* [ voeg het certificaat van de Uitbreidingen van Reader ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) aan `fd-service` gebruiker toe.
 
 ## Aangepaste OSGi-service maken
 
@@ -73,7 +73,7 @@ public class ApplyUsageRights implements ReaderExtendPDF {
 
 ## servlet maken om de uitgebreide PDF van de lezer te streamen
 
-De volgende stap is een servlet met een methode van de POST te creëren om de lezer uitgebreide PDF aan de gebruiker terug te keren. In dit geval wordt de gebruiker gevraagd de PDF op te slaan in zijn bestandssysteem. De reden hiervoor is dat de PDF wordt weergegeven als dynamische PDF en dat de PDF-viewers die bij de browsers worden geleverd, geen dynamische PDF&#39;s verwerken.
+De volgende stap bestaat uit het maken van een servlet met een POST-methode om de lezer die PDF voor de gebruiker heeft uitgebreid, terug te sturen. In dit geval wordt de gebruiker gevraagd de PDF op te slaan in zijn bestandssysteem. De reden hiervoor is dat de PDF wordt weergegeven als dynamisch PDF en dat de PDF-viewers die bij de browsers worden geleverd, geen dynamische PDF&#39;s verwerken.
 
 Hier volgt de code voor de servlet. Het servlet-object wordt aangeroepen vanuit de aangepaste verzendactie van het adaptieve formulier.
 Servlet maakt een object UsageRights en stelt dit object in op basis van de waarden die de gebruiker heeft ingevoerd in het adaptieve formulier. servlet roept dan de applyUsageRights methode van de dienst die voor dit doel wordt gecreeerd.
@@ -207,7 +207,7 @@ Voer de volgende stappen uit om dit op uw lokale server te testen:
 1. [ Download en installeer de bundel ares.ares.core-ares ](assets/ares.ares.core-ares.jar). Dit heeft de douanedienst en servlet om gebruiksrechten toe te passen en pdf terug te stromen.
 1. [Clientbibliotheken importeren en naar Aangepast verzenden](assets/applyaresdemo.zip)
 1. [Het adaptieve formulier importeren](assets/applyaresform.zip)
-1. Voeg het certificaat van de Uitbreidingen van de Reader aan &quot;fd-dienst&quot;gebruiker toe. Zorg ervoor alias is &quot;**aren**&quot;.
+1. Voeg het Reader Extensions-certificaat toe aan de gebruiker van de &quot;fd-service&quot;. Zorg ervoor alias is &quot;**aren**&quot;.
 1. [ Voorproef Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
 1. Selecteer de juiste rechten en upload het PDF-bestand
-1. Klik op Verzenden om Reader Extended PDF te verkrijgen
+1. Klik op Verzenden om Reader Extended PDF op te halen

@@ -2,7 +2,7 @@
 title: Clientbibliotheek maken
 description: Clientbibliotheekcode voor het ophalen van het volgende formulier ter ondertekening
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6907
 thumbnail: 6907.jpg
 topic: Development
@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 3c148b30-2c7d-428d-9a3c-f3067ca3a239
 duration: 34
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Een clientbibliotheek maken
 
-Creeer een Bibliotheek van de douaneCliënt, clientlib voor kort, om de url parameters te halen gaat die parameters in de vraag van de GET over. De aanroep van de GET wordt uitgevoerd naar een servlet die is gemonteerd op /bin/getnextformtosign en die de URL retourneert van het volgende formulier dat moet worden ondertekend in het pakket.
+Creeer een Bibliotheek van de douaneCliënt, clientlib voor kort, om de url parameters te halen gaat die parameters in de vraag van GET over. De GET-aanroep wordt uitgevoerd naar een servlet die is gemonteerd op /bin/getnextformtosign en die de URL retourneert van het volgende formulier dat moet worden ondertekend in het pakket.
 
 Het volgende is de code die in de clientlib javascript functie wordt gebruikt
 

@@ -2,7 +2,7 @@
 title: OCR-gegevensextractie
 description: Gegevens uit door de overheid uitgegeven documenten extraheren om formulieren in te vullen.
 feature: Barcoded Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6679
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: 1532a865-4664-40d9-964a-e64463b49587
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 145
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
@@ -98,7 +98,7 @@ De cliëntbibliotheek kan [ van hier worden gedownload.](assets/drivers-license-
 
 ## Adaptief formulier maken
 
-Integreer de aanroepen van de POST van het formuliergegevensmodel met het aangepaste formulier om gegevens uit het geüploade document door de gebruiker in het formulier te extraheren. U kunt zelf een adaptief formulier maken en de POST-aanroep van het formuliergegevensmodel gebruiken om de tekenreeks met base64-codering van het geüploade document te verzenden.
+Integreer de POST-aanroepen van het formuliergegevensmodel met het aangepaste formulier om gegevens uit het geüploade document door de gebruiker in het formulier te extraheren. U kunt zelf een adaptief formulier maken en de POST-aanroep van het formuliergegevensmodel gebruiken om de base64-gecodeerde tekenreeks van het geüploade document te verzenden.
 
 ## Distribueren op uw server
 
@@ -108,7 +108,7 @@ Voer de volgende stappen uit als u de voorbeeldbestanden met uw API-sleutel wilt
 * [ Download het model van vormgegevens ](assets/drivers-license-fdm.zip) en de invoer in AEM gebruikend [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
 * [Clientbibliotheek downloaden](assets/drivers-license-client-lib.zip)
 * Download de steekproef adaptieve vorm kan [ van hier worden gedownload ](assets/adaptive-form-dl.zip). In dit voorbeeldformulier worden de serviceaanroepen van het formuliergegevensmodel gebruikt die als onderdeel van dit artikel worden aangeboden.
-* Importeer de vorm in AEM van [ Forms en Document UI ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* De vorm van de invoer in AEM van [ Forms en Document UI ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Open de vorm op [ geef wijze uit.](http://localhost:4502/editor.html/content/forms/af/driverslicenseandpassport.html)
 * Geef uw API-sleutel op als standaardwaarde in het veld Toepassen en sla uw wijzigingen op
 * Open de regelredacteur voor Basis 64 gebied van het Koord. Let op de service-aanroep wanneer de waarde van dit veld wordt gewijzigd.

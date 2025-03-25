@@ -1,15 +1,15 @@
 ---
 title: Adaptieve formuliergegevens opslaan
-description: Adaptieve formuliergegevens opslaan in DataBase als onderdeel van uw AEM workflow
+description: Adaptieve formuliergegevens opslaan in DataBase als onderdeel van uw AEM-workflow
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 3dd552da-fc7c-4fc7-97ec-f20b6cc33df0
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 146
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 # Aangepaste formulierverzendingen opslaan in database
 
-Er zijn verschillende manieren om de verzonden formuliergegevens op te slaan in de database van uw keuze. Een JDBC-gegevensbron kan worden gebruikt om de gegevens rechtstreeks in de database op te slaan. U kunt een aangepaste OSGI-bundel schrijven om de gegevens in de database op te slaan. Dit artikel gebruikt een aangepaste processtap in AEM workflow om de gegevens op te slaan.
-Het gebruiksscenario is dat een AEM workflow wordt geactiveerd voor het verzenden van een adaptief formulier en dat de verzonden gegevens in de database worden opgeslagen in een stap in de workflow.
+Er zijn verschillende manieren om de verzonden formuliergegevens op te slaan in de database van uw keuze. Een JDBC-gegevensbron kan worden gebruikt om de gegevens rechtstreeks in de database op te slaan. U kunt een aangepaste OSGI-bundel schrijven om de gegevens in de database op te slaan. In dit artikel wordt gebruikgemaakt van een aangepaste processtap in de AEM-workflow om de gegevens op te slaan.
+Het gebruiksscenario bestaat uit het activeren van een AEM-workflow voor het verzenden van een adaptief formulier en het opslaan van de verzonden gegevens in de database in een stap in de workflow.
 
 
 
@@ -213,9 +213,9 @@ public class InsertAfData implements WorkflowProcess {
 * Geef de databasedetails op met behulp van configMgr
 * [Download het Zip-bestand en extraheer de inhoud ervan naar de vaste schijf](assets/article-assets.zip)
 
-   * Stel het jar dossier op gebruikend [ AEM Webconsole ](http://localhost:4502/system/console/bundles). Dit jar-bestand bevat de code waarmee de formuliergegevens in de database worden opgeslagen.
+   * Stel het jar dossier op gebruikend [ het Webconsole van AEM ](http://localhost:4502/system/console/bundles). Dit jar-bestand bevat de code waarmee de formuliergegevens in de database worden opgeslagen.
 
-   * Importeer de twee ZIP dossiers in [ AEM gebruikend pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp). Dit zal u het [ steekproefwerkschema ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) en de [ steekproef aanpassende vorm ](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) krijgen die het werkschema op vormvoorlegging zal teweegbrengen. Let op de procesargumenten in de workflowstap. Deze argumenten verwijzen naar de naam van de indeling en de naam van het gegevensbestand dat de adaptieve formuliergegevens zal bevatten. Het gegevensbestand wordt opgeslagen onder de ladingmap in de crx-opslagplaats. Bericht hoe de [ adaptieve vorm ](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) wordt gevormd om het AEM werkschema op voorlegging en de configuratie van het gegevensdossier (data.xml) teweeg te brengen
+   * Importeer de twee zip dossiers in [ AEM gebruikend pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp). Dit zal u het [ steekproefwerkschema ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) en de [ steekproef aanpassende vorm ](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) krijgen die het werkschema op vormvoorlegging zal teweegbrengen. Let op de procesargumenten in de workflowstap. Deze argumenten verwijzen naar de naam van de indeling en de naam van het gegevensbestand dat de adaptieve formuliergegevens zal bevatten. Het gegevensbestand wordt opgeslagen onder de ladingmap in de crx-opslagplaats. Bericht hoe de [ adaptieve vorm ](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) wordt gevormd om het werkschema van AEM op voorlegging en de configuratie van het gegevensdossier (data.xml) teweeg te brengen
 
    * Bekijk een voorbeeld van het formulier, vul het in en verzend het. Er moet een nieuwe rij in uw database worden gemaakt
 

@@ -1,7 +1,7 @@
 ---
 title: Uw eerste OSGi-bundel maken met AEM Forms
 description: Bouw uw eerste bundel OSGi gebruikend Maven en Eclipse
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Adaptive Forms
 topic: Development
 role: Developer
@@ -9,7 +9,7 @@ level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
 last-substantial-update: 2021-04-23T00:00:00Z
 duration: 145
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
@@ -103,7 +103,7 @@ Vouw `src/main/java` onder de map `mysite.core` uit. Dit is de map waarin u het 
 
 ## AEMFD Client SDK opnemen
 
-U moet de SDK van de AEMFD-client in uw project opnemen om te kunnen profiteren van verschillende services die bij AEM Forms worden geleverd. Gelieve te verwijzen [ AEMFD de Cliënt SDK van SDK ](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) om de aangewezen cliënt SDK in uw Gemaakt project te omvatten. U moet de AEM FD Client SDK opnemen in de sectie voor afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder wordt weergegeven.
+U moet de SDK van de AEMFD-client in uw project opnemen om te kunnen profiteren van verschillende services die bij AEM Forms worden geleverd. Gelieve te verwijzen [ AEMFD Cliënt SDK ](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) om de aangewezen cliëntSDK in uw Gemaakt project te omvatten. U moet de AEM FD Client SDK opnemen in de sectie voor afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder wordt weergegeven.
 
 ```xml
 <dependency>
@@ -118,7 +118,7 @@ Voer de volgende stappen uit om uw project te maken:
 * Open **bevel snel venster**
 * Navigeren naar `c:\aemformsbundles\mysite\core`
 * De opdracht uitvoeren `mvn clean install -PautoInstallBundle`
-De bovenstaande opdracht bouwt en installeert de bundel op de AEM server waarop `http://localhost:4502` wordt uitgevoerd. De bundel is ook beschikbaar in het bestandssysteem op
+De bovenstaande opdracht bouwt en installeert de bundel op de AEM-server waarop `http://localhost:4502` wordt uitgevoerd. De bundel is ook beschikbaar in het bestandssysteem op
   `C:\AEMFormsBundles\mysite\core\target` en kan worden opgesteld gebruikend [ het Webconsole van Felix ](http://localhost:4502/system/console/bundles)
 
 ## Volgende stappen

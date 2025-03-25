@@ -4,13 +4,13 @@ description: Dit is onderdeel 6 van een zelfstudie met meerdere stappen voor het
 discoiquuid: b44ff855-9ead-471e-8f0f-b562b88a5337
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: a0a0c8dc-5302-446c-9fec-e23fe1320e34
 duration: 33
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 In dit deel, zullen wij Interactieve Communicatie voor het Kanaal van het Web tot stand brengen.
 
-1. Meld u aan bij de AEM auteur en navigeer naar Adobe Experience Manager > Forms > Forms &amp; Documents.
+1. Meld u aan bij de AEM-auteur en navigeer naar Adobe Experience Manager > Forms > Forms &amp; Documents.
 1. Open de map 401KStatment.
 1. Tik op Maken en selecteer Interactieve communicatie. De pagina Interactieve communicatie maken wordt weergegeven.
 1. Voer de volgende gegevens in

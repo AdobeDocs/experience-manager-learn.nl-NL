@@ -1,8 +1,8 @@
 ---
 title: De handtekeningstatus van het formulier in de database bijwerken
-description: De handtekeningstatus van het ondertekende formulier in de database bijwerken met behulp van de AEM workflow
+description: De handtekeningstatus van het ondertekende formulier in de database bijwerken met behulp van de AEM-workflow
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6888
 thumbnail: 6888.jpg
 topic: Development
@@ -10,7 +10,7 @@ role: Developer
 level: Experienced
 exl-id: 75852a4b-7008-4c65-bab1-cc5dbf525e20
 duration: 42
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -24,7 +24,7 @@ De workflow UpdateSignatureStatus wordt geactiveerd wanneer de gebruiker de onde
 ![ main-workflow ](assets/update-signature.PNG)
 
 De status van de handtekening bijwerken is een aangepaste processtap.
-De belangrijkste reden voor het uitvoeren van de stap van het douaneproces is een AEMWerkschema uit te breiden. Hieronder ziet u de aangepaste code die wordt gebruikt om de status van de handtekening bij te werken.
+De belangrijkste reden voor het implementeren van een stap in het aangepaste proces is het uitbreiden van een AEM-workflow. Hieronder ziet u de aangepaste code die wordt gebruikt om de status van de handtekening bij te werken.
 De code in deze stap van het douaneproces verwijst naar de dienst SignMultipleForms.
 
 

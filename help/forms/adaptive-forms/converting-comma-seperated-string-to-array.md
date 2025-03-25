@@ -2,7 +2,7 @@
 title: Een door komma's gescheiden tekenreeks omzetten in een array van tekenreeksen in een AEM Forms-workflow
 description: Als uw formuliergegevensmodel een array van tekenreeksen bevat als een van de invoerparameters, moet u de gegevens die zijn gegenereerd door de verzendactie van een adaptief formulier, masseren voordat u de verzendactie van het formuliergegevensmodel aanroept.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ jira: KT-8507
 exl-id: 9ad69407-2413-416f-9cec-43f88989b31d
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 115
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Wanneer uw formulier is gebaseerd op een formuliergegevensmodel met een array va
 
 ## Een processtap maken
 
-Een processtap wordt gebruikt in een AEM werkstroom wanneer wij onze werkschema een bepaalde logica willen uitvoeren. De processtap kan met een manuscript ECMA of een dienst worden geassocieerd OSGi. Onze stap van het douaneproces voert de dienst OSGi uit.
+Een processtap wordt gebruikt in een AEM-workflow als we willen dat onze workflow een bepaalde logica uitvoert. De processtap kan met een manuscript ECMA of een dienst worden geassocieerd OSGi. Onze stap van het douaneproces voert de dienst OSGi uit.
 
 De ingediende gegevens hebben de volgende indeling. De waarde van het element businessUnits is een door komma&#39;s gescheiden tekenreeks, die moet worden omgezet in een array van tekenreeksen.
 

@@ -3,14 +3,14 @@ title: Kanaaldocument afdrukken genereren door gegevens samen te voegen
 description: Leer hoe u een document met een afdrukkanaal genereert door de gegevens in de invoerstroom samen te voegen
 feature: Interactive Communication
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 3bfbb4ef-0c51-445a-8d7b-43543a5fa191
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 151
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
@@ -65,7 +65,7 @@ public PrefillData getPrefillData(DataOptions options) throws FormsException {
 
 ### WorkflowProcess-implementatie maken
 
-Het codefragment voor workflowimplementatie wordt hieronder weergegeven. Deze code wordt uitgevoerd wanneer processtap in de AEM Workflow aan deze implementatie is gekoppeld. Deze implementatie verwacht drie procesargumenten die hieronder worden beschreven:
+Het codefragment voor workflowimplementatie wordt hieronder weergegeven. Deze code wordt uitgevoerd wanneer processtap in de AEM-workflow aan deze implementatie is gekoppeld. Deze implementatie verwacht drie procesargumenten die hieronder worden beschreven:
 
 * Naam van het pad DataFile dat is opgegeven bij het configureren van het adaptieve formulier
 * Naam van de afdruksjabloon
@@ -167,16 +167,16 @@ Voer de volgende stappen uit om dit op uw server te testen:
 * Controleer of u de volgende vermelding hebt toegevoegd in de configuratie van de service Gebruikerskaart van de Apache Sling Service
 * **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
 * [De aan dit artikel gerelateerde elementen downloaden en uitpakken naar uw bestandssysteem](assets/prefillservice.zip)
-* [ de Invoer de volgende pakketten gebruikend de AEM pakketManager ](http://localhost:4502/crx/packmgr/index.jsp)
+* [ voer de volgende pakketten in gebruikend de het pakketManager van AEM ](http://localhost:4502/crx/packmgr/index.jsp)
    1. beneficiaryconfirmationic.zip
    2. changeofbeneficiaryform.zip
    3. generatebeneficiaryworkflow.zip
-* [ stel het volgende op gebruikend AEM de Console van het Web van Felix ](http://localhost:4502/system/console/bundles)
+* [ stel het volgende op gebruikend de Console van het Web van AEM Felix ](http://localhost:4502/system/console/bundles)
 
    * GenerateIC.GenerateIC.core-1.0-SNAPSHOT.jar. Deze bundel bevat de code die in dit artikel wordt vermeld.
 
 * [ Open ChangeOfBeneficiaryForm ](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
-* Zorg ervoor dat het adaptieve formulier is geconfigureerd voor verzending naar AEM workflow, zoals hieronder wordt weergegeven
+* Zorg ervoor dat het adaptieve formulier is geconfigureerd voor verzending naar de AEM Workflow, zoals hieronder wordt weergegeven
   ![afbeelding](assets/generateic.PNG)
 * [ vorm het werkschemamodel.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html) zorg ervoor de processtap en verzend e-mailcomponenten zoals per uw milieu worden gevormd
 * [ voorproef ChangeOfBeneficiaryForm.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) Vul enkele details in en verzend

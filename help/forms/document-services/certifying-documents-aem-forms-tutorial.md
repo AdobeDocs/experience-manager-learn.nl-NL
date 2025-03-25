@@ -1,15 +1,15 @@
 ---
 title: Document certificeren in AEM Forms
-description: De documentatiedienst gebruiken om PDF-documenten te certificeren in AEM Forms
+description: PDF-documenten certificeren in AEM Forms met de documentatieservice
 feature: Document Security
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 1471929f-d269-4adc-88ad-2ad3682305e1
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 75
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Als u documenten wilt certificeren met AEM Forms, moet u de volgende stappen uit
 
 ## Certificaat toevoegen aan vertrouwde winkel {#adding-certificate-to-trust-store}
 
-Volg de onderstaande stappen om het certificaat toe te voegen aan het sleutelarchief in AEM
+Voer de onderstaande stappen uit om het certificaat toe te voegen aan het sleutelarchief in AEM
 
 * [ initialiseer globale vertrouwensopslag ](http://localhost:4502/libs/granite/security/content/truststore.html)
 * [ Onderzoek naar fd-dienst ](http://localhost:4502/security/users.html) gebruiker
@@ -40,7 +40,7 @@ Volg de onderstaande stappen om het certificaat toe te voegen aan het sleutelarc
 
 ## OSGI-service maken
 
-U kunt uw eigen bundel OSGi schrijven en de AEM Forms Cliënt SDK gebruiken om de dienst uit te voeren om de documenten van de PDF te certificeren. De volgende verbindingen zouden nuttig zijn om uw eigen bundel te schrijven OSGi
+U kunt uw eigen OSGi-bundel schrijven en AEM Forms Client SDK gebruiken om een service te implementeren voor de certificering van PDF-documenten. De volgende verbindingen zouden nuttig zijn om uw eigen bundel te schrijven OSGi
 
 * [ Creërend uw eerste bundel OSGi ](https://helpx.adobe.com/experience-manager/using/maven_arch13.html)
 * [ de Dienst API van het Document van het Gebruik ](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
@@ -64,4 +64,4 @@ U kunt de voorbeeldbundel ook gebruiken als onderdeel van deze zelfstudie-elemen
 * PDF-document uploaden dat moet worden gecertificeerd
   **facultatief** - specificeer het handtekeningsgebied dat u in het verklaren van het document wilt gebruiken
 * Klik op Verzenden.
-* Gecertificeerde PDF moet naar u worden teruggestuurd.
+* Gecertificeerde PDF moet naar je worden teruggestuurd.

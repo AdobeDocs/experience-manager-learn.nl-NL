@@ -2,7 +2,7 @@
 title: DAM-afbeeldingen inline weergeven in Adaptive Forms
 description: DAM-afbeeldingen inline weergeven in Adaptive Forms
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ thumbnail: inline-dam.jpg
 kt: kt-11307
 exl-id: 339eb16e-8ad8-4b98-939c-b4b5fd04d67e
 duration: 60
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -83,8 +83,8 @@ async function createFile(imageName){
 
 ### Distribueren op uw server
 
-* Download en installeer de [ cliëntbibliotheek en steekproefbeelden ](assets/InlineDAMImage.zip) op uw AEM instantie gebruikend de Manager van het Pakket AEM.
-* Download en installeer de [ steekproefvorm ](assets/FieldInspectionForm.zip) op u uw AEM instantie gebruikend AEM pakketmanager.
+* Download en installeer de [ cliëntbibliotheek en steekproefbeelden ](assets/InlineDAMImage.zip) op uw instantie van AEM gebruikend de Manager van het Pakket van AEM.
+* Download en installeer de [ steekproefvorm ](assets/FieldInspectionForm.zip) op u uw instantie van AEM gebruikend het pakketmanager van AEM.
 * Punt uw browser aan [ FileInspectionForm ](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)
 * Selecteer een van de correcties
 * De afbeelding moet in het formulier worden weergegeven

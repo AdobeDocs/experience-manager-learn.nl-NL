@@ -3,14 +3,14 @@ title: Een component maken om de formuliergegevens weer te geven
 description: Zelfstudie voor het maken van een overzichtscomponent voor het controleren van formuliergegevens voordat deze worden verzonden.
 feature: Adaptive Forms
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2023-01-22T00:00:00Z
 exl-id: d537a80a-de61-4d43-bdef-f7d661c43dc8
 duration: 33
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%

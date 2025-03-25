@@ -2,14 +2,14 @@
 title: Geolocatie-API's gebruiken in Adaptive Forms
 description: Adresvelden op uw formulier invullen met de geolocatie-API's
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 50db6155-ee83-4ddb-9e3a-56e8709222db
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 88
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -77,7 +77,7 @@ var url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+position.c
 
 ![ Gebieden bevolken met geoloaction api ](assets/capture-4.gif)
 
-In regel 1 gebruiken we de HTML Geolocation-API om de huidige locatie op te halen. Zodra de huidige plaats wordt verkregen gaan wij de huidige plaats over om functie te tonenPosition.
+In regel 1 gebruiken we de HTML Geolocation API om de huidige locatie op te halen. Zodra de huidige plaats wordt verkregen gaan wij de huidige plaats over om functie te tonenPosition.
 
 In de functie showPosition gebruiken we de Google API om de adresgegevens voor de opgegeven breedte en lengte op te halen.
 
@@ -87,7 +87,7 @@ De JSON die door de API wordt geretourneerd, wordt vervolgens geparseerd om de v
 >
 >Voor testdoeleinden kunt u het HTTP-protocol met localhost gebruiken in de URL.
 >
->Voor de productieserver, zult u SSL voor uw AEMServer moeten toelaten om dit vermogen te krijgen.
+>Voor de productieserver, zult u SSL voor uw Server van AEM moeten toelaten om dit vermogen te krijgen.
 >
 >Het voorbeeld dat aan dit artikel is gekoppeld, is getest met het adres van de VS. Als u deze mogelijkheid wilt gebruiken op andere geografische locaties, moet u mogelijk de JSON-parsering afstellen.
 

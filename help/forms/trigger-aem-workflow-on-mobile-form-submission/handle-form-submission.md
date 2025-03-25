@@ -1,15 +1,16 @@
 ---
-title: Trigger-AEM-workflow voor het verzenden van HTML5-formulieren
-description: De verzending van HTML5-formulieren afhandelen
+title: AEM-workflow activeren op HTML5-formulierverzending
+description: De verzending van HTML5-formulieren verwerken
 feature: Mobile Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 jira: kt-16215
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 level: Experienced
-source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
+exl-id: 5fbc0cb9-5b55-4269-9172-039414db89cc
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 0%
@@ -18,9 +19,9 @@ ht-degree: 0%
 
 # Formulierverzending verwerken
 
-In dit deel maken we een eenvoudige servlet die op AEM Publish wordt uitgevoerd om de HTML5-formulierverzending af te handelen. Deze servlet, doet een verzoek van de POST van HTTP aan servlet die in een AEM auteursinstantie loopt verantwoordelijk voor het opslaan van de voorgelegde gegevens als a `nt:file` knoop in AEM bewaarplaats van de Auteur.
+In dit deel maken we een eenvoudige servlet die wordt uitgevoerd op AEM Publish en die de verzending van HTML5-formulieren afhandelt. Deze servlet, doet een HTTP POST-aanvraag aan een servlet die in een AEM auteur-instantie wordt uitgevoerd en verantwoordelijk is voor het opslaan van de verzonden gegevens als een `nt:file` -knooppunt in de gegevensopslagruimte van AEM Author.
 
-Hier volgt de code van de servlet die de HTML5-formulierverzending afhandelt. In deze servlet maken wij een POST vraag aan servlet op **wordt opgezet/bin/startworkflow** in een AEM instantie van de Auteur die. Deze server slaat de formuliergegevens op in de opslagplaats van de AEM auteur.
+Hier volgt de code van de servlet die de verzending van het HTML5-formulier afhandelt. In deze servlet maken wij een POST vraag aan een servlet op **/bin/startworkflow** in een instantie van de Auteur van AEM wordt opgezet. Deze server slaat de formuliergegevens op in de gegevensopslagruimte van de AEM-auteur.
 
 
 ## AEM Publish servlet

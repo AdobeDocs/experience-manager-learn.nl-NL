@@ -2,14 +2,14 @@
 title: XDP-stitching met assemblerservice
 description: De Assembler-service in AEM Forms gebruiken om xdp aan te hechten
 feature: Assembler
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2022-12-19T00:00:00Z
 exl-id: e116038f-7d86-41ee-b1b0-7b8569121d6d
 duration: 91
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
@@ -19,9 +19,9 @@ ht-degree: 0%
 # XDP Stitching using assembler Service
 
 In dit artikel vindt u de elementen waarmee u kunt aantonen dat u xdp-documenten kunt naaien met gebruik van de assembleerservice.
-De volgende jsp code werd geschreven om een subformulier genoemd **adres** van xdp- document genoemd address.xdp in een toevoegingspunt op te nemen genoemd **adres** in master.xdp- document. De resulterende xdp is opgeslagen in de hoofdmap van de AEM-installatie.
+De volgende jsp code werd geschreven om een subformulier genoemd **adres** van xdp- document genoemd address.xdp in een toevoegingspunt op te nemen genoemd **adres** in master.xdp- document. De resulterende xdp is opgeslagen in de hoofdmap van uw AEM-installatie.
 
-De vergaderingsdienst baseert zich op een geldige DX- documenten om de manipulatie van de documenten van de PDF te beschrijven. U kunt naar het [ Dx- verwijzingsdocument hier ](assets/ddxRef.pdf) verwijzen.Pagina 40 heeft informatie over xdp het stitching.
+De vergaderingsdienst baseert zich op een geldige DX- documenten om de manipulatie van de documenten van PDF te beschrijven. U kunt naar het [ Dx- verwijzingsdocument hier ](assets/ddxRef.pdf) verwijzen.Pagina 40 heeft informatie over xdp het stitching.
 
 ```java
     javax.servlet.http.Part ddxFile = request.getPart("xdpstitching.ddx");
@@ -66,21 +66,21 @@ Het DDX-bestand dat fragmenten moet invoegen in een andere xdp, wordt hieronder 
 </DDX>
 ```
 
-Om deze functie te laten werken op uw AEM
+Om deze functie te laten werken op uw AEM-server
 
 * Download [ XDP het Plaatsen pakket ](assets/xdp-stitching.zip) aan uw lokaal systeem.
 * Upload en installeer het pakket gebruikend de [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
 * [ Extraheer de inhoud van dit ZIP dossier ](assets/xdp-and-ddx.zip) om het steekproef xdp en Dx- dossier te krijgen
 
-**nadat u het pakket installeert zult u volgende URLs in de Filter van de Adobe moeten lijsten van gewenste personen Granite CSRF.**
+**nadat u het pakket installeert zult u volgende URLs in de Filter van Adobe moeten lijsten van gewenste personen Granite CSRF.**
 
 1. Volg de onderstaande stappen om de hierboven vermelde paden te lijsten van gewenste personen.
 1. [ Login aan configMgr ](http://localhost:4502/system/console/configMgr)
-1. Zoeken naar graniet-CSRF-filter voor Adobe
+1. Zoeken naar Adobe Granite CSRF-filter
 1. Voeg het volgende pad toe aan de uitgesloten secties en sla het op `/content/AemFormsSamples/assemblerservice`
 1. Zoeken naar het filter Verticale verwijzing
 1. Schakel het selectievakje Lege toestaan in. (Deze instelling mag alleen voor testdoeleinden worden gebruikt)
-U kunt de voorbeeldcode op verschillende manieren testen. De snelste en eenvoudigste manier is om Postman-app te gebruiken. Met Postman kunt u POSTEN aanvragen bij uw server. Installeer de Postman-toepassing op uw systeem.
+U kunt de voorbeeldcode op verschillende manieren testen. De snelste en eenvoudigste manier is om Postman-app te gebruiken. Met Postman kunt u POST-aanvragen indienen bij uw server. Installeer de Postman-toepassing op uw systeem.
 Start de app en voer de volgende URL in om de API voor exportgegevens te testen
 http://localhost:4502/content/AemFormsSamples/assemblerservice.html
 

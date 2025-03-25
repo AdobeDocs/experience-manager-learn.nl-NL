@@ -1,7 +1,7 @@
 ---
 title: Document inline van record weergeven
-description: Voeg adaptieve formuliergegevens samen met XDP-sjabloon en geef de PDF inline weer met gebruik van PDF-API in de documentcloud.
-version: 6.4,6.5
+description: Aangepaste formuliergegevens samenvoegen met XDP-sjabloon en de PDF inline weergeven met de PDF-API van de documentcloud.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Forms Service
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-9411
 exl-id: 327ffe26-e88e-49f0-9f5a-63e2a92e1c8a
 last-substantial-update: 2021-07-07T00:00:00Z
 duration: 165
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
@@ -27,7 +27,7 @@ De volgende stappen zijn uitgevoerd om de integratie te voltooien
 
 ## Aangepaste component maken om de PDF inline weer te geven
 
-Er is een aangepaste component (embed-pdf) gemaakt om de PDF in te sluiten die door de aanroep van de POST wordt geretourneerd.
+Er is een aangepaste component (embed-pdf) gemaakt om de PDF in te sluiten die door de POST-aanroep wordt geretourneerd.
 
 ## Clientbibliotheek
 
@@ -108,13 +108,13 @@ Geef het selectievakje de naam van de weergave-PDF.
 De component embed-pdf configureren, zoals hieronder in de schermafbeelding wordt weergegeven
 ![ embed-pdf ](assets/embed-pdf-configuration.png)
 
-**bed PDF API Sleutel** in - dit is de sleutel die u kunt gebruiken om pdf in te bedden. Deze sleutel werkt alleen met localhost. U kunt [ uw eigen sleutel ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) tot stand brengen en het associëren met ander domein.
+**bedt Sleutel PDF API** in - dit is de sleutel die u kunt gebruiken om pdf in te bedden. Deze sleutel werkt alleen met localhost. U kunt [ uw eigen sleutel ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) tot stand brengen en het associëren met ander domein.
 
 **Eindpunt die pdf** terugkeren - dit is douaneserlet die de gegevens met het xdp malplaatje zal samenvoegen en pdf terugkeren.
 
 **naam van het Malplaatje** - dit is de weg aan xdp. Doorgaans wordt het bestand opgeslagen in de map formsanddocuments.
 
-**de Naam van het Dossier van de PDF** - dit is het koord dat in ingebedde pdf component zal verschijnen.
+**de Naam van het Dossier van PDF** - dit is het koord dat in ingebed pdf component zal verschijnen.
 
 ## Aangepaste servlet maken
 
@@ -230,9 +230,9 @@ Voer de volgende stappen uit om dit op uw lokale server te testen:
 
 1. [ Download en installeer de ingebedde pdf- bundel ](assets/embedpdf.core-1.0-SNAPSHOT.jar).
 Dit heeft servlet om de gegevens met het malplaatje XDP samen te voegen en pdf terug te stromen.
-1. Voeg de weg /bin/getPDFToEmbed in de uitgesloten wegensectie van de Filter van de Adobe toe Granite CSRF gebruikend [ AEM ConfigMgr ](http://localhost:4502/system/console/configMgr). In uw productiemilieu wordt het geadviseerd om het [ CSRF beschermingskader ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en) te gebruiken
+1. Voeg de weg /bin/getPDFToEmbed in de uitgesloten wegensectie van de Filter toe van Adobe Granite CSRF gebruikend [ AEM ConfigMgr ](http://localhost:4502/system/console/configMgr). In uw productiemilieu wordt het geadviseerd om het [ CSRF beschermingskader ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en) te gebruiken
 1. [De clientbibliotheek en de aangepaste component importeren](assets/embed-pdf.zip)
 1. [Het adaptieve formulier en de sjabloon importeren](assets/embed-pdf-form-and-xdp.zip)
 1. [ Voorproef Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)
 1. Enkele formuliervelden invullen
-1. Tab naar het tabblad PDF weergeven. Schakel het selectievakje PDF weergeven in. Er wordt een PDF weergegeven in het formulier dat is gevuld met de aangepaste formuliergegevens
+1. Tab naar het tabblad View PDF. Schakel het selectievakje PDF weergeven in. Er wordt een PDF weergegeven in het formulier dat is gevuld met de aangepaste formuliergegevens

@@ -1,15 +1,15 @@
 ---
 title: Waarde van Json-gegevenselement instellen in AEM Forms Workflow
-description: Aangezien een adaptief formulier naar verschillende gebruikers wordt gerouteerd in AEM workflow, zijn er vereisten voor het verbergen of uitschakelen van bepaalde velden of deelvensters afhankelijk van de persoon die het formulier controleert. Om aan deze gebruiksgevallen te voldoen, stellen wij typisch een waarde van een verborgen gebied in. Op basis van de waarde van dit verborgen veld kunnen bedrijfsregels worden ontworpen om de juiste deelvensters of velden te verbergen/uitschakelen.
+description: Aangezien een adaptief formulier naar verschillende gebruikers wordt gerouteerd in de AEM-workflow, zijn er vereisten voor het verbergen of uitschakelen van bepaalde velden of deelvensters afhankelijk van de persoon die het formulier reviseert. Om aan deze gebruiksgevallen te voldoen, stellen wij typisch een waarde van een verborgen gebied in. Op basis van de waarde van dit verborgen veld kunnen bedrijfsregels worden ontworpen om de juiste deelvensters of velden te verbergen/uitschakelen.
 feature: Adaptive Forms
-version: 6.4
+version: Experience Manager 6.4
 topic: Development
 role: Developer
 level: Experienced
 exl-id: fbe6d341-7941-46f5-bcd8-58b99396d351
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 126
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 0%
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Waarde van JSON-gegevenselement instellen in AEM Forms-workflow {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
-Aangezien een adaptief formulier naar verschillende gebruikers wordt gerouteerd in AEM workflow, zijn er vereisten voor het verbergen of uitschakelen van bepaalde velden of deelvensters afhankelijk van de persoon die het formulier controleert. Om aan deze gebruiksgevallen te voldoen, stellen wij typisch een waarde van een verborgen gebied in. Op basis van de waarde van dit verborgen veld kunnen bedrijfsregels worden ontworpen om de juiste deelvensters of velden te verbergen/uitschakelen.
+Aangezien een adaptief formulier naar verschillende gebruikers wordt gerouteerd in de AEM-workflow, zijn er vereisten voor het verbergen of uitschakelen van bepaalde velden of deelvensters afhankelijk van de persoon die het formulier reviseert. Om aan deze gebruiksgevallen te voldoen, stellen wij typisch een waarde van een verborgen gebied in. Op basis van de waarde van dit verborgen veld kunnen bedrijfsregels worden ontworpen om de juiste deelvensters of velden te verbergen/uitschakelen.
 
 ![ Plaatsende waarde van een element in jsgegevens ](assets/capture-3.gif)
 
 In AEM Forms OSGi - moeten we een aangepaste OSGi-bundel maken om de waarde van het JSON-gegevenselement in te stellen. De bundel wordt geleverd als onderdeel van deze zelfstudie.
 
-We gebruiken processtap in AEM workflow. Wij associëren de &quot;Vastgestelde Waarde van Element in Json&quot;OSGi bundel met deze processtap.
+We gebruiken Processtap in de AEM-workflow. Wij associëren de &quot;Vastgestelde Waarde van Element in Json&quot;OSGi bundel met deze processtap.
 
 We moeten twee argumenten doorgeven aan de set value bundle. Het eerste argument is het pad naar het element waarvan de waarde moet worden ingesteld. Het tweede argument is de waarde die moet worden ingesteld.
 

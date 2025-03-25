@@ -3,13 +3,13 @@ title: Formuliergegevens opslaan en ophalen vanuit MySQL Database - Clientbiblio
 description: Zelfstudie met meerdere onderdelen om door de stappen te bladeren die nodig zijn voor het opslaan en ophalen van formuliergegevens
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: eef98a55-80d0-4598-abf2-02a6c5247b64
 duration: 90
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Clientbibliotheek maken
 
-AEM Client Library beheert al uw JavaScript-code aan de clientzijde. Voor dit artikel heb ik een eenvoudige JavaScript gemaakt om de Adaptief-formuliergegevens op te halen met behulp van de bridge-API. Nadat de Adaptief-formuliergegevens zijn opgehaald, wordt de POST naar het servlet aangeroepen om de adaptieve formuliergegevens in de database in te voegen of bij te werken. De functie getALLUrlParams retourneert de parameters in de URL. Als de guid-parameter aanwezig is in de URL, moeten we de updatebewerking uitvoeren als dit geen invoegbewerking is. De rest van de functionaliteit wordt afgehandeld in de code die is gekoppeld aan de klikgebeurtenis van de klasse .savebutton.
+AEM Client Library beheert al uw JavaScript-code aan de clientzijde. Voor dit artikel heb ik een eenvoudige JavaScript gemaakt om de Adaptief-formuliergegevens op te halen met behulp van de bridge-API. Nadat de Adaptief-formuliergegevens zijn opgehaald, wordt de POST-aanroep naar het servlet uitgevoerd om de adaptieve formuliergegevens in de database in te voegen of bij te werken. De functie getALLUrlParams retourneert de parameters in de URL. Als de guid-parameter aanwezig is in de URL, moeten we de updatebewerking uitvoeren als dit geen invoegbewerking is. De rest van de functionaliteit wordt afgehandeld in de code die is gekoppeld aan de klikgebeurtenis van de klasse .savebutton.
 
 >[!NOTE]
 >

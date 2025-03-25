@@ -2,7 +2,7 @@
 title: Campagneprofiel maken bij het verzenden van adaptieve formulieren
 description: In dit artikel worden de stappen beschreven die nodig zijn om een profiel te maken in Adobe Campaign Standard op basis van een Adaptief formulier-verzending. Bij dit proces wordt gebruikgemaakt van een aangepast verzendmechanisme voor de verzending van het adaptieve formulier.
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -10,7 +10,7 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: deef09d9-82ec-4e61-b7ee-e72d1cd4e9e0
 duration: 182
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -23,13 +23,13 @@ In dit artikel worden de stappen beschreven die nodig zijn om een profiel te mak
 
 In deze zelfstudie worden de stappen doorlopen voor het maken van een Campagneprofiel bij het aanpassen van het verzenden van formulieren. Voor dit gebruiksgeval moeten we het volgende doen:
 
-* Maak een AEM Service (CampaignService) om een Adobe Campaign Standard-profiel te maken met REST API
+* Een AEM Service (CampaignService) maken om een Adobe Campaign Standard-profiel te maken met behulp van REST API
 * Een aangepaste verzendactie maken voor de verwerking van Aangepaste formulierverzendingen
 * Roep de createProfile-methode van CampaignService aan
 
-## AEM maken {#create-aem-service}
+## AEM-service maken {#create-aem-service}
 
-Maak AEM service om een Adobe Campaign-profiel te maken. Deze AEM dienst zal de geloofsbrieven van Adobe Campaign van de configuratie ophalen OSGI. Zodra de campagnegeloofsbrieven worden verkregen wordt het toegangstoken geproduceerd en het gebruiken van het toegangstoken wordt de vraag van HTTP Post gemaakt om het profiel in Adobe Campaign tot stand te brengen. Hier volgt de code voor het maken van profielen.
+Maak AEM Service om een Adobe Campaign-profiel te maken. Deze dienst van AEM zal de geloofsbrieven van Adobe Campaign van de configuratie ophalen OSGI. Zodra de campagnegeloofsbrieven worden verkregen wordt het toegangstoken geproduceerd en het gebruiken van het toegangstoken de vraag van HTTP Post gemaakt om het profiel in Adobe Campaign tot stand te brengen. Hier volgt de code voor het maken van profielen.
 
 ```java
 package aemformwithcampaign.core.services.impl;

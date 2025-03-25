@@ -2,7 +2,7 @@
 title: Meerdere PDF's genereren op basis van één gegevensbestand
 description: OutputService biedt een aantal methoden om documenten te maken met behulp van een formulierontwerp en gegevens om samen te voegen met het formulierontwerp. Leer om veelvoudige pdf's van één grote xml te produceren die veelvoudige individuele verslagen bevatten.
 feature: Output Service
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ last-substantial-update: 2020-01-07T00:00:00Z
 duration: 138
 jira: KT-16142
 badgeVersions: label="AEM Forms 6.5" before-title="false"
-source-git-commit: 8cadbe92a7a2f47c33b0ca0fcf7313dc418ae7a4
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Voor de handtekening van de methode generatePDFOutputBatch worden de volgende pa
 
 ## Details kwestie gebruiken{#use-case-details}
 
-In dit geval zullen we een eenvoudige webinterface beschikbaar stellen om de sjabloon en het bestand data(xml) te uploaden. Nadat het uploaden van de bestanden is voltooid en het verzoek van de POST naar AEM servlet is verzonden. Deze servlet haalt de documenten uit en roept de methode generatePDFOutputBatch van OutputService aan. De gegenereerde PDF&#39;s worden gecomprimeerd in een ZIP-bestand en beschikbaar gesteld aan de eindgebruiker om te downloaden vanuit de webbrowser.
+In dit geval zullen we een eenvoudige webinterface beschikbaar stellen om de sjabloon en het bestand data(xml) te uploaden. Zodra het uploaden van de bestanden is voltooid en het POST-verzoek naar AEM servlet wordt verzonden. Deze servlet haalt de documenten uit en roept de methode generatePDFOutputBatch van OutputService aan. De gegenereerde PDF&#39;s worden gecomprimeerd in een ZIP-bestand en beschikbaar gesteld aan de eindgebruiker om te downloaden vanuit de webbrowser.
 
 ## Servlet-code{#servlet-code}
 

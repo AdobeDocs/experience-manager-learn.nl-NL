@@ -2,7 +2,7 @@
 title: Hoofdwerkstroom maken om het ondertekeningsproces te activeren
 description: Workflow maken om de formulieren voor ondertekening in de database op te slaan
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 thumbnail: 6887.jpg
 jira: KT-6887
 topic: Development
@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 338d9522-f6da-4aa7-b5d8-b9fff39ea94b
 duration: 70
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Het belangrijkste werkschema wordt teweeggebracht wanneer de gebruiker de aanvan
 
 **Opslag Forms aan Ondertekenen** is een stap van het douaneproces.
 
-De motivatie voor het uitvoeren van een stap van het douaneproces is een AEMWerkschema uit te breiden. De volgende code implementeert een aangepaste processtap. De code extraheert de namen van de formulieren om te ondertekenen en geeft de verzonden formuliergegevens door aan de methode `insertData` in de service SignMultipleForms. De `insertData` methode neemt dan de rijen in het gegevensbestand op dat door de gegevensbron **wordt geïdentificeerd aemformstutorial**.
+De motivatie voor het implementeren van een stap in een aangepast proces is het uitbreiden van een AEM-workflow. De volgende code implementeert een aangepaste processtap. De code extraheert de namen van de formulieren om te ondertekenen en geeft de verzonden formuliergegevens door aan de methode `insertData` in de service SignMultipleForms. De `insertData` methode neemt dan de rijen in het gegevensbestand op dat door de gegevensbron **wordt geïdentificeerd aemformstutorial**.
 
 Code in deze stap voor aangepast proces verwijst naar de service `SignMultipleForms` .
 

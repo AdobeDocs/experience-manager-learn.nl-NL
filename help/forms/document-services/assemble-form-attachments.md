@@ -2,7 +2,7 @@
 title: Formulierbijlagen samenstellen
 description: Formulierbijlagen samenstellen in de opgegeven volgorde
 feature: Assembler
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6406
 thumbnail: kt-6406.jpg
 topic: Development
@@ -11,7 +11,7 @@ level: Experienced
 exl-id: a5df8780-b7ab-4b91-86f6-a24392752107
 last-substantial-update: 2021-07-07T00:00:00Z
 duration: 150
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -26,9 +26,9 @@ Bij het verzenden van een formulier stelt u in dat de formulierbijlagen één PD
 
 ## Creeer component OSGi die WorkflowProcess interface uitvoert
 
-Creeer een component OSGi die de {](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html) interface 0} com.adobe.granite.workflow.exec.WorkflowProcess uitvoert. [ De code in deze component kan aan de component van de processtap in het AEM werkschema worden geassocieerd. De methode execute van de interface com.adobe.granite.workflow.exec.WorkflowProcess wordt geïmplementeerd in deze component.
+Creeer een component OSGi die de {](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html) interface 0} com.adobe.granite.workflow.exec.WorkflowProcess uitvoert. [ De code in deze component kan worden gekoppeld aan de processtapcomponent in de AEM-workflow. De methode execute van de interface com.adobe.granite.workflow.exec.WorkflowProcess wordt geïmplementeerd in deze component.
 
-Wanneer een adaptief formulier wordt verzonden om een AEM workflow te activeren, worden de verzonden gegevens opgeslagen in het opgegeven bestand onder de payload-map. Dit is bijvoorbeeld het ingediende gegevensbestand. We moeten de bijlagen samenstellen die in de tag idcard en bankstatements zijn gespecificeerd.
+Wanneer een adaptief formulier wordt verzonden om een AEM-workflow te activeren, worden de verzonden gegevens opgeslagen in het opgegeven bestand onder de payload-map. Dit is bijvoorbeeld het ingediende gegevensbestand. We moeten de bijlagen samenstellen die in de tag idcard en bankstatements zijn gespecificeerd.
 ![ voorgelegde-gegevens ](assets/submitted-data.JPG).
 
 ### De tagnamen ophalen
@@ -45,7 +45,7 @@ String  []attachmentNames  = arg2.get("PROCESS_ARGS","string").toString().split(
 
 ### DDX maken van de bijlagenamen
 
-Wij moeten dan [ XML van de Beschrijving van het Document tot stand brengen (DDX) ](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) document dat door de dienst van de Assembler wordt gebruikt om documenten samen te stellen. Het volgende is DDX die van de procesargumenten werd gecreeerd. Met het element NoForms kunt u op XFA gebaseerde documenten samenvoegen. Merk op de PDF bronelementen in de juiste orde zoals die in de procesargumenten worden gespecificeerd zijn.
+Wij moeten dan [ XML van de Beschrijving van het Document tot stand brengen (DDX) ](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) document dat door de dienst van de Assembler wordt gebruikt om documenten samen te stellen. Het volgende is DDX die van de procesargumenten werd gecreeerd. Met het element NoForms kunt u op XFA gebaseerde documenten samenvoegen. De PDF-bronelementen hebben de juiste volgorde, zoals is opgegeven in de procesargumenten.
 
 ![ ddx-xml ](assets/ddx.PNG)
 
@@ -132,11 +132,11 @@ Hier volgt de structuur van de payload-map nadat de formulierbijlagen zijn samen
 
 ![ lading-structuur ](assets/payload-structure.JPG)
 
-### Om deze functie te laten werken op uw AEM
+### Om deze functie te laten werken op uw AEM-server
 
 * Download de [ Vorm van de Bijlagen van de Vorm van de Vorm van de Vorm ](assets/assemble-form-attachments-af.zip) aan uw lokaal systeem.
 * Importeer de vorm van [ Forms en de pagina van Documenten ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-* De download [ werkschema ](assets/assemble-form-attachments.zip) en de invoer in AEM gebruikend pakketmanager.
+* Download [ werkschema ](assets/assemble-form-attachments.zip) en de invoer in AEM gebruikend pakketmanager.
 * Download de [ douanebundel ](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
 * Stel en begin de bundel op gebruikend de [ Webconsole ](http://localhost:4502/system/console/bundles)
 * Punt uw browser aan [ Vorm AssembleAttachments ](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
@@ -145,4 +145,4 @@ Hier volgt de structuur van de payload-map nadat de formulierbijlagen zijn samen
 * Controle de van het werkschema [ nuttige lading omslag in crx ](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) voor geassembleerde pdf
 
 >[!NOTE]
-> Als u registreerapparaat voor de douanebundel hebt toegelaten wordt DDX en het geassembleerde dossier geschreven aan de omslag van uw AEM installatie.
+> Als u een logger hebt ingeschakeld voor de aangepaste bundel, wordt de DDX en het geassembleerde bestand naar de map van uw AEM-installatie geschreven.

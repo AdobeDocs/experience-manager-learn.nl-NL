@@ -1,16 +1,16 @@
 ---
-title: Source voor AEM gegevens configureren
+title: AEM Data Source configureren
 description: Door MySQL ondersteunde gegevensbron configureren om formuliergegevens op te slaan en op te halen
 feature: Adaptive Forms
 topic: Development
 role: Developer
 level: Beginner
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6899
 thumbnail: 6899.jpg
 exl-id: 2e851ae5-6caa-42e3-8af2-090766a6f36a
 duration: 39
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Gegevensbron configureren
 
-Er zijn vele manieren waarmee AEM integratie met een externe gegevensbestand toelaat. Één van de gemeenschappelijkste manieren om een gegevensbestand te integreren is door Apache het Schipen Verbinding Gepoolde eigenschappen van de Configuratie DataSource door [ configMgr ](http://localhost:4502/system/console/configMgr) te gebruiken.
+Er zijn vele manieren waarmee AEM integratie met een externe database mogelijk maakt. Één van de gemeenschappelijkste manieren om een gegevensbestand te integreren is door Apache het Schipen Verbinding Gepoolde eigenschappen van de Configuratie DataSource door [ configMgr ](http://localhost:4502/system/console/configMgr) te gebruiken.
 De eerste stap is de aangewezen [ bestuurders MySql ](https://mvnrepository.com/artifact/mysql/mysql-connector-java) in AEM te downloaden en op te stellen.
 Maak Apache Sling Connection Pooled DataSource en geef de eigenschappen op die zijn opgegeven in de onderstaande schermafbeelding. Het databaseschema wordt als onderdeel van deze zelfstudie-elementen aan u verstrekt.
 

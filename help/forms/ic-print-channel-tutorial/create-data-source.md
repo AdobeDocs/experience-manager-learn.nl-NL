@@ -3,7 +3,7 @@ title: Gegevensbronconfiguratie maken in AEM Forms
 description: Dit is deel 2 van de zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel maken we een REST-gegevensbron.  De volgende video doorloopt de stappen om de gegevensbron tot stand te brengen.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 targetaudience: target-audience ongoing
 thumbnail: 27765.jpg
 jira: KT-5954
@@ -12,7 +12,7 @@ role: Developer
 level: Beginner
 exl-id: 1f4d88ad-ace1-4f78-be40-da80b3b4d40c
 duration: 168
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 0%

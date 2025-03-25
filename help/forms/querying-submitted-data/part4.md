@@ -3,13 +3,13 @@ title: AEM Forms met JSON-schema en -gegevens[Deel4]
 description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het maken van een adaptief formulier met JSON-schema en het opvragen van de verzonden gegevens.
 feature: Adaptive Forms
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: a8d8118d-f4a1-483f-83b4-77190f6a42a4
 duration: 99
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -35,7 +35,7 @@ De steekproef UI om de voorgelegde gegevens te vragen gebruikt niet alle geavanc
 >
 >De huidige versie van deze zelfstudie ondersteunt het opvragen van meerdere kolommen niet.
 
-Wanneer u een formulier selecteert om uw query uit te voeren, wordt een GET-aanroep uitgevoerd naar **/bin/getdatakeysfromschema** . Deze aanroep van GET retourneert de vereiste velden die zijn gekoppeld aan het schema van het formulier. De vereiste gebieden worden dan bevolkt in de drop-down lijst van QueryBuilder voor u om de vraag te bouwen.
+Wanneer u een formulier selecteert om uw query uit te voeren, wordt een GET-aanroep uitgevoerd naar **/bin/getdatakeysfromschema** . Deze GET-aanroep retourneert de vereiste velden die zijn gekoppeld aan het schema van het formulier. De vereiste gebieden worden dan bevolkt in de drop-down lijst van QueryBuilder voor u om de vraag te bouwen.
 
 Het volgende codefragment maakt een vraag aan de methode getRequiredColumnsFromSchema van de dienst JSONSchemaOperations. Wij gaan de eigenschappen en de vereiste elementen van het schema tot deze methodevraag over. De serie die door deze functievraag is teruggekeerd wordt dan gebruikt om de drop-down lijst van de vraagbouwer te bevolken
 
@@ -69,7 +69,7 @@ Het resultaat van deze query wordt vervolgens geretourneerd om de tabel in de ge
 Voer de volgende stappen uit om dit voorbeeld op uw lokale systeem uit te voeren
 
 1. [ zorg ervoor u alle hier vermelde stappen hebt gevolgd ](part2.md)
-1. [ voer Dashboardv2.zip in gebruikend de Manager van het Pakket AEM.](assets/dashboardv2.zip) Dit pakket bevat alle benodigde bundels, configuratie-instellingen, aangepaste verzendpagina en voorbeeldpagina voor querygegevens.
+1. [ voer Dashboardv2.zip in gebruikend de Manager van het Pakket van AEM.](assets/dashboardv2.zip) Dit pakket bevat alle benodigde bundels, configuratie-instellingen, aangepaste verzendpagina en voorbeeldpagina voor querygegevens.
 1. Een adaptief formulier maken met het JSON-voorbeeldschema
 1. Configureer het adaptieve formulier voor verzending naar de aangepaste verzendactie &quot;custom submit&quot;
 1. Het formulier invullen en verzenden

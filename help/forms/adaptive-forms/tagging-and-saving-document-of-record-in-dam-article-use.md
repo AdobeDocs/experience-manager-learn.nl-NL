@@ -1,15 +1,15 @@
 ---
 title: AEM Forms DoR coderen en opslaan in DAM
-description: Dit artikel zal door het gebruik geval lopen van het opslaan en etiketteren van DoR die door AEM Forms in AEM DAM wordt geproduceerd. Het document wordt gelabeld op basis van de verzonden formuliergegevens.
+description: Dit artikel zal door het gebruik geval lopen van het opslaan en etiketteren van het DoR geproduceerd door AEM Forms in AEM DAM. Het document wordt gelabeld op basis van de verzonden formuliergegevens.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 191
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -18,14 +18,14 @@ ht-degree: 0%
 
 # AEM Forms DoR coderen en opslaan in DAM {#tagging-and-storing-aem-forms-dor-in-dam}
 
-Dit artikel zal door het gebruik geval lopen van het opslaan en etiketteren van DoR die door AEM Forms in AEM DAM wordt geproduceerd. Het document wordt gelabeld op basis van de verzonden formuliergegevens.
+Dit artikel zal door het gebruik geval lopen van het opslaan en etiketteren van het DoR geproduceerd door AEM Forms in AEM DAM. Het document wordt gelabeld op basis van de verzonden formuliergegevens.
 
-Een veelvoorkomende vraag van klanten is het opslaan en labelen van het Document of Record (DoR) dat door AEM Forms in AEM DAM wordt gegenereerd. De codering van het document moet gebaseerd zijn op de door Adaptive Forms ingediende gegevens. Als de werkgelegenheidsstatus in de verzonden gegevens bijvoorbeeld &quot;In ruste&quot; is, willen we het document labelen met de tag &quot;In ruste&quot; en het document opslaan in DAM.
+Een veelvoorkomende vraag van klanten is om het Document of Record (DoR) dat door AEM Forms is gegenereerd, op te slaan en te labelen in AEM DAM. De codering van het document moet gebaseerd zijn op de door Adaptive Forms ingediende gegevens. Als de werkgelegenheidsstatus in de verzonden gegevens bijvoorbeeld &quot;In ruste&quot; is, willen we het document labelen met de tag &quot;In ruste&quot; en het document opslaan in DAM.
 
 Het gebruiksgeval is als volgt:
 
 * Een gebruiker vult het adaptieve formulier in. In het adaptieve formulier worden de huwelijkse staat (ex Single) en de arbeidsstatus (Ex Reensioen) van de gebruiker vastgelegd.
-* Bij het verzenden van formulieren wordt een AEM workflow geactiveerd. Met deze workflow wordt het document gelabeld met de burgerlijke staat (Single) en de werkgelegenheidsstatus (In ruste) en wordt het document opgeslagen in DAM.
+* Bij het verzenden van formulieren wordt een AEM Workflow geactiveerd. Met deze workflow wordt het document gelabeld met de burgerlijke staat (Single) en de werkgelegenheidsstatus (In ruste) en wordt het document opgeslagen in DAM.
 * Nadat het document is opgeslagen in DAM, kan de beheerder het document op basis van deze codes doorzoeken. Bijvoorbeeld, zou het onderzoek op Enige of In ruste de aangewezen Dor&#39;s halen.
 
 Om aan dit gebruiksgeval te voldoen is een stap van het douaneproces geschreven. In deze stap halen wij de waarden van de aangewezen gegevenselementen uit de voorgelegde gegevens. Vervolgens wordt de labeltegel gemaakt met deze waarde. Als bijvoorbeeld de waarde van het element van de burgerlijke staat &#39;Single&#39; is, wordt de titel van de tag **Peak:EmploymentStatus/Single. **Met behulp van de API TagManager vinden we de tag en passen we de tag toe op de DoR.
@@ -168,7 +168,7 @@ Volg onderstaande stappen om dit voorbeeld op uw systeem te laten werken:
 
 * Klik op Maken | Bestand uploaden en uploaden van de tag-and-store-in-dam-adaptive-form.zip
 
-* [ voer de artikelactiva ](assets/tag-and-store-in-dam-assets.zip) in gebruikend AEM pakketmanager
+* [ voer de artikelactiva ](assets/tag-and-store-in-dam-assets.zip) in gebruikend het pakketmanager van AEM
 * Open de [ steekproefvorm op voorproefwijze ](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Vul alle gebieden** in en verzend de vorm.
 * [ navigeer aan de omslag van de Hoogte in DAM ](http://localhost:4502/assets.html/content/dam/Peak). U zou DoR in de Piekomslag moeten zien. Controleer de eigenschappen van het document. Het moet op passende wijze worden gelabeld.
 Gefeliciteerd! U hebt het voorbeeld op uw systeem geïnstalleerd

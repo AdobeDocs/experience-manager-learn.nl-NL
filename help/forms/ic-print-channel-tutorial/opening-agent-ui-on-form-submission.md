@@ -1,9 +1,9 @@
 ---
-title: Gebruikersinterface van POST openen bij verzenden
+title: Gebruikersinterface van agent openen bij verzending na verzending
 description: Dit is onderdeel 11 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument voor het afdrukkanaal. In dit deel starten we de gebruikersinterface van de agent voor het maken van ad-hoccorrespondentie over het verzenden van formulieren.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6168
 thumbnail: 40122.jpg
 topic: Development
@@ -11,14 +11,14 @@ role: Developer
 level: Intermediate
 exl-id: 509b4d0d-9f3c-46cb-8ef7-07e831775086
 duration: 170
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
 
 ---
 
-# Gebruikersinterface van POST openen bij verzenden
+# Gebruikersinterface van agent openen bij verzending na verzending
 
 In dit deel starten we de gebruikersinterface van de agent voor het maken van ad-hoccorrespondentie over het verzenden van formulieren.
 
@@ -58,7 +58,7 @@ Deze mogelijkheid testen op uw server
 
 * [Importeer en installeer de aan dit artikel gerelateerde elementen met gebruik van pakketbeheer.](assets/launch-agent-ui.zip)
 * [ Login aan configMgr ](http://localhost:4502/system/console/configMgr)
-* Onderzoek naar _de Filter van Granite CSRF van de Adobe_
+* Onderzoek naar _Granite CSRF Filter van Adobe_
 * _/content/getprintchannel_ toevoegen aan de uitgesloten paden
 * Sla uw wijzigingen op.
 * [ Open POST.jsp ](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp). Zorg ervoor dat de tekenreeks die aan FormFieldRequestParameter is doorgegeven, geldig documentId is.(regel 19).
@@ -67,4 +67,4 @@ Deze mogelijkheid testen op uw server
 
 >[!NOTE]
 >
->Zorg ervoor dat de de inputparameter van de verrichting van de Gegevens van uw Model van de Vorm wordt gebonden aan het Attribuut van het Verzoek genoemd &quot;accountnumber&quot;voor dit om te werken. Als u de naam van de bindingwaarde in een andere naam verandert, zorg ervoor de verandering op lijn 25 van POST.jsp wordt weerspiegeld
+>Zorg ervoor dat de de inputparameter van de verrichting van de Gegevens van uw Model van de Vorm wordt gebonden aan het Attribuut van het Verzoek genoemd &quot;accountnumber&quot;voor dit om te werken. Als u de naam van de bindingwaarde in een andere naam wijzigt, zorgt u ervoor dat de wijziging wordt doorgevoerd in regel 25 van POST.jsp

@@ -2,7 +2,7 @@
 title: Hiermee wordt een eindpunt beschikbaar gemaakt dat kan worden aangeroepen om de URL van het webformulier te retourneren
 description: AEM servlet maken om URL van webformulier te retourneren
 feature: Adaptive Forms,Acrobat Sign
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ jira: KT-13099
 last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: 3b7632bd-3820-4c1e-aa3f-8a6a4fc26847
 duration: 38
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # URL van Acrobat Sign-webformulier maken
 
-De volgende code werd geschreven om een eindpunt van de POST bloot te stellen. Dit eindpunt haalt icTemplateName uit de voorgelegde gegevens uit en keert een Acrobat Sign Webvorm URL voor de eindgebruiker terug om te ondertekenen.
+De volgende code is geschreven om een POST-eindpunt beschikbaar te maken. Dit eindpunt haalt icTemplateName uit de voorgelegde gegevens uit en keert een Acrobat Sign Webvorm URL voor de eindgebruiker terug om te ondertekenen.
 
 
 ```java

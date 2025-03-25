@@ -2,14 +2,14 @@
 title: Aflevering van interactief communicatiedocument - Web Channel AEM Forms
 description: Het webkanaaldocument via de koppeling in e-mail verzenden
 feature: Interactive Communication
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 50858100-3d0c-42bd-87b8-f626212669e2
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 60
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Nadat u het interactieve document met webkanalen hebt gedefinieerd en getest, he
 
 In dit artikel bekijken we e-mail als een leveringsmechanisme voor webkanaaldocumenten. De ontvanger krijgt via e-mail een koppeling naar het webkanaaldocument. Wanneer de gebruiker op de koppeling klikt, wordt de gebruiker gevraagd om verificatie en wordt het webkanaaldocument gevuld met de gegevens die specifiek zijn voor de aangemelde gebruiker.
 
-Laten we eens kijken naar het volgende codefragment. Deze code maakt deel uit van GET.jsp die wordt geactiveerd wanneer de gebruiker op de koppeling in de e-mail klikt om het document met het webkanaal weer te geven. We krijgen de aangemelde gebruiker met behulp van de GoogleBbit UserManager. Zodra wij de het programma geopende gebruiker krijgen, krijgen wij de waarde van het accountNumber bezit verbonden aan het profiel van de gebruiker.
+Laten we eens kijken naar het volgende codefragment. Deze code maakt deel uit van GET.jsp die wordt geactiveerd wanneer de gebruiker op de koppeling in de e-mail klikt om het webkanaaldocument te bekijken. We krijgen de aangemelde gebruiker met behulp van de GoogleBbit UserManager. Zodra wij de het programma geopende gebruiker krijgen, krijgen wij de waarde van het accountNumber bezit verbonden aan het profiel van de gebruiker.
 
 Vervolgens koppelen we de waarde accountNumber aan een sleutel met de naam accountnummer op de kaart. Het belangrijkste **accountnummer** wordt bepaald in het modaal vormgegeven als Attribuut van het Verzoek. De waarde van dit kenmerk wordt als een invoerparameter doorgegeven aan de leesservicemethode Formuliergegevensmodule.
 
@@ -46,4 +46,4 @@ Visuele weergave van regel 7-code
 
 Aanvraagkenmerk gedefinieerd voor leesservice van het modaal formulier voor gegevensverwerking
 
-[ Steekproef AEM Pakket ](assets/webchanneldelivery.zip).
+[ Voorbeeld van het Pakket van AEM ](assets/webchanneldelivery.zip).

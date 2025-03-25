@@ -2,14 +2,14 @@
 title: API gebruiken om een document met records te genereren met AEM Forms
 description: Document met opnamen (DOR) programmatisch genereren
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 9a3b2128-a383-46ea-bcdc-6015105c70cc
 last-substantial-update: 2023-01-26T00:00:00Z
 duration: 67
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Voer de volgende stappen uit om dit op uw lokale systeem te proberen
 1. Zoeken naar Apache Sling Service User Mapper Service
 1. Zorg ervoor u de volgende ingang _DevelopingWithServiceUser.core:getformsresourceresolver=fd-dienst_ in de sectie van de Toewijzingen van de Dienst
 1. [ open de vorm ](http://localhost:4502/content/dam/formsanddocuments/sandbox/1201-borrower-payments/jcr:content?wcmmode=disabled)
-1. Vul het formulier in en klik op PDF weergeven
+1. Vul het formulier in en klik op &#39; View PDF &#39;
 1. U moet DOR zien op een nieuw tabblad in uw browser
 
 
@@ -80,6 +80,6 @@ Voer de volgende stappen uit om dit op uw lokale systeem te proberen
 PDF wordt niet weergegeven op het tabblad Nieuwe browser:
 
 1. Let erop dat u pop-ups in uw browser niet blokkeert
-1. Zorg ervoor u AEM server als beheerder (minstens op vensters) begint
+1. Zorg ervoor dat u de AEM-server als beheerder start (tenminste in vensters)
 1. Zorg ervoor de &quot;DevelopingWithServiceUser&quot;bundel in *actieve staat* is
 1. [ zorg ervoor de systeemgebruiker ](http://localhost:4502/useradmin) &quot; fd-dienst&quot;gelezen heeft, wijzigt, en leidt toestemmingen op de volgende knoop `/content/usergenerated/content/aemformsenablement`

@@ -4,12 +4,12 @@ description: AEM Forms-workflowtaak toewijzen aan de manager van de verzender
 feature: Adaptive Forms, Workflow
 topic: Integrations
 role: Developer
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 level: Intermediate
 exl-id: 2e9754ff-49fe-4260-b911-796bcc4fd266
 last-substantial-update: 2021-09-18T00:00:00Z
 duration: 111
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%
@@ -20,21 +20,21 @@ ht-degree: 0%
 
 AEM Forms-workflowtaak toewijzen aan de manager van de verzender.
 
-Als u Adaptief formulier gebruikt in AEM workflow, wilt u dynamisch een taak toewijzen aan de manager van de verzender van het formulier. Om dit gebruiksgeval te verwezenlijken, zullen wij AEM met Ldap moeten vormen.
+Als u Adaptief formulier gebruikt in de AEM-workflow, wilt u een taak dynamisch toewijzen aan de manager van de verzender van het formulier. Voor dit gebruiksgeval moeten we AEM configureren met LDAP.
 
 De stappen nodig om AEM met LDAP te vormen worden verklaard hier in [ detail.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
 
-Voor dit artikel, maak ik configuratiedossiers vast die in het vormen AEM met Adobe Ldap worden gebruikt. Deze bestanden worden opgenomen in het pakket dat u kunt importeren met pakketbeheer.
+Voor dit artikel, maak ik configuratiedossiers vast die in het vormen van AEM met Adobe LDAP worden gebruikt. Deze bestanden worden opgenomen in het pakket dat u kunt importeren met pakketbeheer.
 
 In de onderstaande schermafbeelding halen we alle gebruikers op die tot een bepaalde kostenplaats behoren. Als u alle gebruikers in de LDAP wilt ophalen, kunt u het extra filter niet gebruiken.
 
 ![ Configuratie LDAP ](assets/costcenterldap.gif)
 
-In de onderstaande schermafbeelding wijzen we de groepen toe aan de gebruikers die van LDAP in AEM zijn opgehaald. U ziet welke groep met formulieren gebruikers is toegewezen aan de geïmporteerde gebruikers. De gebruiker moet lid zijn van deze groep voor interactie met AEM Forms. We slaan de eigenschap manager ook op onder het profiel/manager-knooppunt in AEM.
+In de onderstaande schermafbeelding wijzen we de groepen toe aan de gebruikers die van LDAP naar AEM zijn opgehaald. U ziet welke groep met formulieren gebruikers is toegewezen aan de geïmporteerde gebruikers. De gebruiker moet lid zijn van deze groep voor interactie met AEM Forms. We slaan de manager-eigenschap ook op onder het profiel/manager-knooppunt in AEM.
 
 ![ Synchandler ](assets/synchandler.gif)
 
-Nadat u LDAP hebt geconfigureerd en gebruikers in AEM hebt geïmporteerd, kunnen we een workflow maken die de taak toewijst aan de manager van de verzenders. In het kader van dit artikel hebben we een eenvoudige goedkeuringsworkflow in één stap ontwikkeld.
+Nadat u LDAP hebt geconfigureerd en gebruikers naar AEM hebt geïmporteerd, kunnen we een workflow maken die de taak toewijst aan de manager van de verzenders. In het kader van dit artikel hebben we een eenvoudige goedkeuringsworkflow in één stap ontwikkeld.
 
 De eerste stap in de workflow stelt de waarde van de eerste stap in op Nee. De bedrijfsregel in het adaptieve formulier schakelt het venster &quot;Details verzenden&quot; uit en geeft het deelvenster &quot;Goedgekeurd door&quot; weer op basis van de beginwaarde.
 
@@ -64,7 +64,7 @@ Afhankelijk van hoe het managerbezit in uw LDAP wordt opgeslagen, kunt u wat koo
 
 Gelieve te lezen dit artikel om uw eigen [ ParticipantChooser uit te voeren.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
-Om dit op uw systeem te testen (Voor de Medewerkers van de Adobe kunt u dit steekproef uit de doos gebruiken)
+Om dit op uw systeem te testen (Voor Adobe-werknemers kunt u dit voorbeeld uit de doos gebruiken)
 
 * [ Download en stel de setvalue bundel ](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) op. Dit is de aangepaste OSGI-bundel voor het instellen van de eigenschap van de manager.
 * [Download en installeer de DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)

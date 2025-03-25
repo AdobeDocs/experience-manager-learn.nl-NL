@@ -2,14 +2,14 @@
 title: Prefill-service in adaptieve Forms
 description: Aangepaste formulieren vooraf invullen door gegevens op te halen uit achterwaartse gegevensbronnen.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: f2c324a3-cbfa-4942-b3bd-dc47d8a3f7b5
 last-substantial-update: 2021-11-27T00:00:00Z
 duration: 129
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
@@ -141,12 +141,12 @@ Voer het volgende uit om deze mogelijkheid op uw server te testen
 
 * Zorg ervoor het het programma geopende ](http://localhost:4502/security/users.html) het profiel van de gebruiker [ informatie wordt ingevuld. Het voorbeeld zoekt naar de eigenschappen FirstName, LastName en Email van de aangemelde gebruiker.
 * [Download en extraheer de inhoud van het ZIP-bestand naar uw computer](assets/prefillservice.zip)
-* Stel de prefill.core-1.0.0-SNAPSHOT bundel op gebruikend de [ AEM Webconsole ](http://localhost:4502/system/console/bundles)
+* Stel de prefill.core-1.0.0-SNAPSHOT bundel op gebruikend de [ het Webconsole van AEM ](http://localhost:4502/system/console/bundles)
 * Het adaptieve formulier importeren met het dialoogvenster Maken | Het dossier uploadt van de [ sectie FormsAndDocuments ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Zorg ervoor de [ vorm ](http://localhost:4502/editor.html/content/forms/af/prefill.html) **&quot;De Dienst van de Prevulling van AEM Forms van de Douane&quot;** als prefill dienst gebruikt. Dit kan van de configuratieeigenschappen van de **sectie van de Container van de Vorm** worden geverifieerd.
 * [ voorproef de vorm ](http://localhost:4502/content/dam/formsanddocuments/prefill/jcr:content?wcmmode=disabled). Het formulier moet de juiste waarden bevatten.
 
 >[!NOTE]
 >
->Als u foutopsporing hebt ingeschakeld voor com.aem.prefill.core.PrefillAdaptiveForm, wordt het gegenereerde XML-gegevensbestand geschreven naar de installatiemap van de AEM server.
+>Als u foutopsporing hebt ingeschakeld voor com.aem.prefill.core.PrefillAdaptiveForm, wordt het gegenereerde XML-gegevensbestand geschreven naar de installatiemap van de AEM-server.
 

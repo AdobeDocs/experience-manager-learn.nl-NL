@@ -2,14 +2,14 @@
 title: Streepjescodeservice met adaptieve Forms
 description: Streepjescodeservice gebruiken om streepjescode te decoderen en formuliervelden te vullen met de geëxtraheerde gegevens.
 feature: Barcoded Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: f89cd02d-3ffe-42c6-b547-c0445f912ee8
 last-substantial-update: 2020-02-07T00:00:00Z
 duration: 115
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Dit artikel toont het gebruik van de streepjescodeservice voor het invullen van een adaptief formulier. Het gebruiksgeval is als volgt:
 
-1. De gebruiker voegt PDF met streepjescode toe als adaptieve formulierbijlage
+1. De gebruiker voegt PDF met streepjescode als adaptieve formulierbijlage toe
 1. Het pad van de bijlage wordt naar de servlet verzonden
 1. De servlet decodeerde de streepjescode en retourneert de gegevens in JSON-indeling
 1. Het adaptieve formulier wordt vervolgens ingevuld met de gedecodeerde gegevens
@@ -132,7 +132,7 @@ $(document).ready(function()
 
 >[!NOTE]
 >
->Het adaptieve formulier dat bij dit pakket is geleverd, is gemaakt met AEM Forms 6.4. Als u dit pakket wilt gebruiken in de AEM Forms 6.3-omgeving, maakt u het adaptieve formulier in AEM formulier 6.3
+>Het adaptieve formulier dat bij dit pakket is geleverd, is gemaakt met AEM Forms 6.4. Als u dit pakket wilt gebruiken in de AEM Forms 6.3-omgeving, maakt u het adaptieve formulier in AEM Form 6.3
 
 Regel 12 - de code van de douane om de dienstoplosser te krijgen. Deze bundel is opgenomen als onderdeel van deze artikelen.
 
@@ -143,7 +143,7 @@ Voer de volgende stappen uit om dit op uw systeem uit te voeren:
 1. [ Download BarcodeService.zip ](assets/barcodeservice.zip) en de invoer in AEM gebruikend pakketmanager
 1. [De aangepaste DocumentServices-bundel downloaden en installeren](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Download en installeer de DevelopingWithServiceUser Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [Het voorbeeldformulier PDF downloaden](assets/barcode.pdf)
+1. [Het voorbeeld van het PDF-formulier downloaden](assets/barcode.pdf)
 1. Punt uw browser aan de [ steekproef adaptieve vorm ](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
-1. De meegeleverde PDF van het voorbeeld uploaden
+1. Upload het voorbeeld dat PDF heeft opgegeven
 1. De formulieren worden gevuld met gegevens

@@ -2,7 +2,7 @@
 title: Adaptief formulier vooraf invullen met ACS-profiel
 description: Aangepaste Forms vooraf vullen met ACS-profiel
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -10,7 +10,7 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 502f4bdf-d4af-409f-a611-62b7a1a6065a
 duration: 144
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -23,7 +23,7 @@ In dit deel, vullen wij Adaptief Vorm met profielinformatie die van ACS wordt ge
 
 Meer over het vooraf invullen van adaptieve vormen te lezen gelieve dit [ leerprogramma ](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
-Om Aangepast Vorm vooraf in te vullen door gegevens van ACS te halen, veronderstellen wij dat er profiel in ACS is dat de zelfde e-mail zoals het programma geopende AEM gebruiker heeft. Bijvoorbeeld, als e-mailidentiteitskaart van de persoon die in AEM wordt geregistreerd csimms@adobe.com is, verwachten wij om een profiel in ACS te vinden waarvan e-mail csimms@adobe.com is.
+Om Aangepast Formulier vooraf in te vullen door gegevens van ACS te halen, veronderstellen wij dat er profiel in ACS is dat de zelfde e-mail zoals het programma geopende gebruiker van AEM heeft. Als de e-mailadres van de persoon die zich heeft aangemeld bij AEM bijvoorbeeld csimms@adobe.com is, verwachten we dat we een profiel in ACS vinden waarvan de e-mail csimms@adobe.com is.
 
 De volgende stappen zijn nodig om profielinformatie van ACS te halen gebruikend REST API
 
@@ -39,7 +39,7 @@ Prefill-service koppelen aan adaptief formulier
 
 Hier volgt de code voor het ophalen en retourneren van profielgegevens uit ACS.
 
-In regel 68 halen we de e-mailid van de AEM gebruiker op. De profieldetails worden gehaald door een REST vraag aan Adobe Campaign Standard te maken. Aan de hand van de opgehaalde profieldetails wordt het XML-document samengesteld op een manier die door AEM Forms wordt begrepen. De invoerstroom van dit document wordt geretourneerd voor gebruik door AEM Forms.
+In regel 68 halen we de e-mailadres van de AEM-gebruiker op. De profieldetails worden gehaald door een REST vraag aan Adobe Campaign Standard te maken. Aan de hand van de opgehaalde profieldetails wordt het XML-document samengesteld op een manier die door AEM Forms wordt begrepen. De invoerstroom van dit document wordt geretourneerd voor gebruik door AEM Forms.
 
 ```java
 package aemforms.campaign.core;
@@ -234,8 +234,8 @@ return "Pre Fill Forms Using Campaign Profile";
 Volg de volgende instructies om dit op uw systeem te laten werken:
 
 * [ zorg ervoor u de hier beschreven stappen hebt gevolgd ](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Voorbeeld van adaptief formulier in AEM importeren met pakketbeheer](assets/pre-fill-af-from-campaign.zip)
-* Meld u aan bij AEM met een gebruiker wiens e-mailadres wordt gedeeld door een profiel in Adobe Campaign. Bijvoorbeeld, als e-mailidentiteitskaart van de AEM gebruiker johndoe@adobe.com is, moet u een profiel in ACS hebben de waarvan e-mail johndoe@adobe.com is.
+* [Voorbeeld van adaptief formulier importeren naar AEM met pakketbeheer](assets/pre-fill-af-from-campaign.zip)
+* Meld u aan bij AEM met een gebruiker wiens e-mailadres wordt gedeeld door een profiel in Adobe Campaign. Als de e-mailadres van de AEM-gebruiker bijvoorbeeld johndoe@adobe.com is, hebt u een profiel nodig in ACS waarvan de e-mail johndoe@adobe.com is.
 * [ voorproef de vorm ](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
 
 ## Volgende stappen

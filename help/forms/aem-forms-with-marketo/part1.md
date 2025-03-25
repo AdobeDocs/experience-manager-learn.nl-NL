@@ -2,7 +2,7 @@
 title: AEM Forms en Marketo integreren
 description: Leer hoe u AEM Forms en Marketo kunt integreren met het AEM Forms-formuliergegevensmodel.
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 77
-source-git-commit: e02c3f66787c78152700b24236c29e9796f721de
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
@@ -21,9 +21,9 @@ ht-degree: 0%
 # AEM Forms en Marketo integreren
 
 
-Marketo, een onderdeel van de Adobe, beschikt over software voor marketingautomatisering die is gericht op marketing op basis van account, zoals e-mail, mobiele, sociale, digitale advertenties, webbeheer en analyses.
+Marketo, een onderdeel van Adobe, beschikt over software voor marketingautomatisering die is gericht op marketing op basis van account, zoals e-mail, mobiele, sociale, digitale advertenties, webbeheer en analyses.
 
-Met het formuliergegevensmodel van AEM Forms kunnen we nu AEM formulier naadloos integreren met Marketo.
+Met het formuliergegevensmodel van AEM Forms kunnen we nu AEM-formulieren naadloos integreren met Marketo.
 
 [ leer meer over het Model van de Gegevens van de Vorm ](https://helpx.adobe.com/experience-manager/6-5/forms/using/data-integration.html)
 
@@ -39,8 +39,8 @@ Om te beginnen wordt het hoogst geadviseerd dat u met de volgende onderwerpen ve
 
 ## Vereiste
 
-1. [AEM server met AEM Forms Add op pakket geïnstalleerd](/help/forms/adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
-1. Lokale AEM ontwikkelomgeving
+1. [AEM-server met AEM Forms Add on-pakket geïnstalleerd](/help/forms/adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
+1. Local AEM Development Environment
 1. Kennis hebben van formuliergegevensmodel
 1. Basiskennis van wagerbestanden
 1. Adaptieve Forms maken

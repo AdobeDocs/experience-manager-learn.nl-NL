@@ -1,30 +1,30 @@
 ---
-title: Formuliergegevensmodel gebruiken voor binaire gegevens van Post
+title: Binaire gegevens verzenden met het formuliergegevensmodel
 description: Binaire gegevens via het formuliergegevensmodel naar AEM DAM verzenden
 feature: Workflow
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 9c62a7d6-8846-424c-97b8-2e6e3c1501ec
 last-substantial-update: 2021-01-09T00:00:00Z
 duration: 95
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
 
 ---
 
-# Formuliergegevensmodel gebruiken voor binaire gegevens van Post{#using-form-data-model-to-post-binary-data}
+# Binaire gegevens verzenden met het formuliergegevensmodel{#using-form-data-model-to-post-binary-data}
 
-Vanaf AEM Forms 6.4 kunnen we nu de service Formuliergegevensmodel aanroepen als een stap in AEM workflow. In dit artikel wordt een voorbeeld van een gebruiksgeval getoond voor het posten van een document met gebruik van de service Formuliergegevensmodel.
+Vanaf AEM Forms 6.4 kunnen we nu de service Form Data Model aanroepen als een stap in de AEM-workflow. In dit artikel wordt een voorbeeld van een gebruiksgeval getoond voor het posten van een document met gebruik van de service Formuliergegevensmodel.
 
 Het gebruiksgeval is als volgt:
 
 1. Een gebruiker vult het adaptieve formulier en verzendt het.
 1. Het adaptieve formulier is geconfigureerd om een document met records te genereren.
-1. Bij het indienen van deze adaptieve formulieren wordt AEM workflow geactiveerd die de Invoke Form Data Model Service gebruikt om het Document of Record te POSTEN naar AEM DAM.
+1. Bij het indienen van deze adaptieve formulieren wordt de AEM-workflow geactiveerd, die de Invoke Form Data Model Service gebruikt om het Document of Record naar AEM DAM te verzenden.
 
 ![ posttodam ](assets/posttodamshot1.png)
 
@@ -42,7 +42,7 @@ Service-invoer
 
 >[!NOTE]
 >
->Het oplossen van problemen Tips - als om een of andere reden DOR.pdf niet in DAM wordt gecreeerd, stel de montages van de gegevensbronauthentificatie terug door [ hier ](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam) te klikken. Dit zijn de instellingen voor AEM verificatie, die standaard admin/admin zijn.
+>Het oplossen van problemen Tips - als om een of andere reden DOR.pdf niet in DAM wordt gecreeerd, stel de montages van de gegevensbronauthentificatie terug door [ hier ](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam) te klikken. Dit zijn de AEM-verificatie-instellingen, die standaard admin/admin zijn.
 
 Volg de onderstaande stappen om deze mogelijkheid op uw server te testen:
 
@@ -50,7 +50,7 @@ Volg de onderstaande stappen om deze mogelijkheid op uw server te testen:
 
 1. [ Download en stel de setvalue bundel ](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) op. Deze bundel van douaneOSGI wordt gebruikt om meta-gegevensbezit tot stand te brengen en zijn waarde van de voorgelegde vormgegevens te plaatsen.
 
-1. [ voer de activa ](assets/postdortodam.zip) verbonden aan dit artikel in AEM gebruikend pakketmanager.U zult het volgende krijgen
+1. [ voer de activa ](assets/postdortodam.zip) verbonden aan dit artikel in AEM in gebruikend pakketmanager.U zult het volgende krijgen
 
    1. Workflowmodel
    1. Adaptief formulier geconfigureerd voor verzending naar de AEM-workflow

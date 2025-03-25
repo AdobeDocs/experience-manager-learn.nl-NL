@@ -1,8 +1,8 @@
 ---
 title: Een webformulier maken dat voor ondertekening aan de gebruiker moet worden getoond
-description: Maak AEM bundel om de Acrobat-tekenmethoden beschikbaar te maken die nodig zijn voor het gebruik van het hoofdlettergebruik.
+description: Maak een AEM-bundel om de Acrobat-tekenmethoden beschikbaar te maken die nodig zijn voor het gebruik van het hoofdlettergebruik.
 feature: Adaptive Forms,Acrobat Sign
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ jira: KT-13099
 last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: 15364571-070c-4497-a256-f0483d6f9585
 duration: 118
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Een wrapper maken voor Acrobat Sign REST API
 
-Er is een aangepaste AEM ontwikkeld om het webformulier te maken en terug te sturen naar de eindgebruiker
+Er is een aangepaste AEM-bundel ontwikkeld om het webformulier te maken en terug te sturen naar de eindgebruiker
 
 * [ creeer Overgaand Document ](https://secure.na1.echosign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument). Het document dat via deze oproep wordt geüpload, wordt tijdelijk genoemd omdat het slechts 7 dagen na het uploaden beschikbaar is. De geretourneerde tijdelijke document-id kan worden gebruikt in de API-aanroepen waar naar het geüploade bestand moet worden verwezen. De tijdelijke documentaanvraag bestaat uit drie delen: bestandsnaam, mime-type en de bestandsstroom. In deze aanvraag kunt u slechts één bestand tegelijk uploaden.
 * [ creeer Webvorm ](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget).Dit is een primair eindpunt dat wordt gebruikt om een nieuwe Webvorm tot stand te brengen. Het webformulier is gemaakt met de status AcTIVE om het webformulier direct te hosten.

@@ -1,7 +1,7 @@
 ---
 title: Interactieve DoR genereren met adaptieve formuliergegevens
 description: Aangepaste formuliergegevens samenvoegen met XDP-sjabloon om downloadbare pdf te genereren
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Forms Service
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-9226
 exl-id: d9618cc8-d399-4850-8714-c38991862045
 last-substantial-update: 2020-02-07T00:00:00Z
 duration: 177
-source-git-commit: 2625a9127c36ee191eb67128546864c9f6901663
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Interactieve DoR downloaden
 
-Een veelvoorkomend geval is het downloaden van een interactieve DoR met de Adaptief-formuliergegevens. Het gedownloade DoR wordt dan voltooid met Adobe Acrobat of Adobe Reader.
+Een veelvoorkomend geval is het downloaden van een interactieve DoR met de Adaptief-formuliergegevens. Het gedownloade DoR wordt vervolgens voltooid met Adobe Acrobat of Adobe Reader.
 
 ## Adaptief formulier is niet gebaseerd op XSD-schema
 
@@ -82,8 +82,8 @@ U kunt om het even welke vrije online hulpmiddelen gebruiken om [ XSD ](https://
 
 ### Adaptief formulier maken
 
-Maak een adaptief formulier op basis van de XSD van de vorige stap. Koppel het formulier aan het gebruik van de clientbibliotheek &quot;irs&quot;. Deze cliëntbibliotheek heeft de code om een POST te maken vraag aan servlet die de PDF aan de roepende toepassing terugkeert.
-De volgende code wordt teweeggebracht wanneer de _PDF van de Download_ wordt geklikt
+Maak een adaptief formulier op basis van de XSD van de vorige stap. Koppel het formulier aan het gebruik van de clientbibliotheek &quot;irs&quot;. Deze clientbibliotheek heeft de code om een POST-aanroep te maken naar de servlet die de PDF terugstuurt naar de aanroepende toepassing.
+De volgende code wordt teweeggebracht wanneer de _Download PDF_ wordt geklikt
 
 ```javascript
 $(document).ready(function() {
@@ -225,7 +225,7 @@ DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 1. [Het artikel Assets (Adaptief formulier,XDP-sjablonen en XSD) importeren](assets/generate-interactive-dor-sample-assets.zip)
 1. [ Voorproef Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Vul slechts enkele formuliervelden in.
-1. Klik op PDF downloaden om de PDF op te halen. U moet mogelijk een paar seconden wachten voordat de PDF kan worden gedownload.
+1. Klik op PDF downloaden om de PDF op te halen. Mogelijk moet u een paar seconden wachten voordat de PDF wordt gedownload.
 
 >[!NOTE]
 >

@@ -2,7 +2,7 @@
 title: Fragmenten in uitvoerservice gebruiken met gecontroleerde map
 description: PDF-documenten genereren met fragmenten die zich in de crx-opslagplaats bevinden
 feature: Output Service
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ last-substantial-update: 2022-09-07T00:00:00Z
 thumbnail: ecma-fragments.jpg
 exl-id: 6b0bd2f1-b8ee-4f96-9813-8c11aedd3621
 duration: 84
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 # PDF-document met fragmenten genereren met behulp van ECMA-script{#developing-with-output-and-forms-services-in-aem-forms}
 
 
-In dit artikel gebruiken we de uitvoerservice om PDF-bestanden te genereren met xdp-fragmenten. De hoofd xdp en de fragmenten verblijven in de crx bewaarplaats. Het is belangrijk dat u de mapstructuur van het bestandssysteem in AEM nabootst. Bijvoorbeeld als u een fragment in fragmentomslag in uw xdp gebruikt moet u een omslag creëren genoemd **fragmenten** onder uw basisomslag in AEM. De basismap bevat uw basis-xdp-sjabloon. Bijvoorbeeld, als u de volgende structuur op uw dossiersysteem hebt
+In dit artikel gebruiken we de uitvoerservice om PDF-bestanden te genereren met xdp-fragmenten. De hoofd xdp en de fragmenten verblijven in de crx bewaarplaats. Het is belangrijk om de mapstructuur van het bestandssysteem in AEM na te bootsen. Bijvoorbeeld als u een fragment in fragmentomslag in uw xdp gebruikt moet u een omslag creëren genoemd **fragmenten** onder uw basisomslag in AEM. De basismap bevat uw basis-xdp-sjabloon. Bijvoorbeeld, als u de volgende structuur op uw dossiersysteem hebt
 * c:\xdptemplates - Deze bevat uw basis-xdp-sjabloon
 * c:\xdptemplates\fragments - Deze map bevat fragmenten en de hoofdsjabloon verwijst naar het fragment zoals hieronder wordt weergegeven
   ![ fragment-xdp ](assets/survey-fragment.png).

@@ -2,7 +2,7 @@
 title: AEM Forms integreren met SendGrid
 description: Gebruik van AEM Forms het op de cloud gebaseerde e-mailleveringsplatform van SengGrid.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-13605
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Intermediate
 last-substantial-update: 2023-07-14T00:00:00Z
 exl-id: 62b73f4b-69d8-4ede-9d57-3d6472d25d5a
 duration: 118
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Voer de volgende stappen uit om de in deze handleiding beschreven functionalitei
 1. Download het [ die} kwikdossier ](assets/SendGridWithDynamicTemplate.yaml) in de activa omslag wordt verstrekt.
 2. Maak een herstelbare gegevensbron met behulp van het gedownloade wagerbestand en uw SendGrid-referenties.
 3. Maak een formuliergegevensmodel op basis van de herstelde gegevensbron.
-4. Roep de `mail/send` -POST aan om het formuliergegevensmodel naar wens te gebruiken. U kunt bijvoorbeeld de e-mail activeren door erop te klikken of deze opnemen in de AEM Forms-workflow.
+4. Roep de `mail/send` POST-bewerking van het formuliergegevensmodel aan volgens uw vereisten. U kunt bijvoorbeeld de e-mail activeren door erop te klikken of deze opnemen in de AEM Forms-workflow.
 
 De steekproeflading voor de dienst is als volgt. Vervang de waarden van de plaatsaanduiding door uw eigen gegevens:
 

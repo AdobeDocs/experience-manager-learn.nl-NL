@@ -3,7 +3,7 @@ title: Kanaaldocumenten afdrukken met gecontroleerde map
 description: Dit is onderdeel van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument voor het afdrukkanaal. In dit deel genereren we afdrukkanaaldocumenten aan de hand van het mechanisme voor gecontroleerde mappen.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 contentOwner: gbedekar
 discoiquuid: 23fbada3-d776-4b77-b381-22d3ec716ae9
 topic: Development
@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 exl-id: 9bb05c94-2a7b-4149-b567-186eb08b1c66
 duration: 70
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -24,7 +24,7 @@ In dit deel genereren we afdrukkanaaldocumenten aan de hand van het mechanisme v
 
 Nadat u het afdrukkanaaldocument hebt gemaakt en getest, hebt u een mechanisme nodig om dit document in batchmodus of op verzoek te genereren. Dit soort documenten wordt doorgaans gegenereerd in de batchmodus en het meest gebruikte mechanisme is het gebruik van controlemappen.
 
-Wanneer u een gecontroleerde omslag in AEM vormt, associeert u een manuscript ECMA of Java code die wordt uitgevoerd wanneer een dossier in de gelete op omslag wordt gelaten vallen. In dit artikel richten we ons op het ECMA-script dat afdrukkanaaldocumenten genereert en opslaat in het bestandssysteem.
+Wanneer u een controlemap in AEM configureert, koppelt u een ECMA-script of Java-code die wordt uitgevoerd wanneer een bestand in de controlemap wordt neergezet. In dit artikel richten we ons op het ECMA-script dat afdrukkanaaldocumenten genereert en opslaat in het bestandssysteem.
 
 De gecontroleerde omslagconfiguratie en het manuscript ECMA maken deel uit van de activa u bij het [ begin van dit leerprogramma ](introduction.md) invoerde
 

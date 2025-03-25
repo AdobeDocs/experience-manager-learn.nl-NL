@@ -2,7 +2,7 @@
 title: AEM Forms met Marketo (Deel 2)
 description: Zelfstudie voor de integratie van AEM Forms met Marketo met behulp van het AEM Forms-formuliergegevensmodel.
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -10,7 +10,7 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: f8ba3d5c-0b9f-4eb7-8609-3e540341d5c2
 duration: 137
-source-git-commit: 7e0d7e87d72aa1e4450649afa6a962099ceb2db4
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Marketo REST API&#39;s worden geverifieerd met OAuth 2.0 met twee poten. We kunn
 
 ## Configuratiecontainer maken
 
-* Meld u aan bij AEM.
+* Aanmelden bij AEM.
 * Klik op het hulpmiddelenmenu en dan **Browser van de Configuratie** zoals hieronder getoond
 
 * ![ hulpmiddelmenu ](assets/datasource3.png)

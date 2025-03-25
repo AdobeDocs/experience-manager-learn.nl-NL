@@ -5,10 +5,10 @@ feature: Adaptive Forms
 topic: Development
 role: Developer
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 last-substantial-update: 2019-06-09T00:00:00Z
 duration: 711
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 0%
@@ -277,7 +277,7 @@ public class AemformWithDB implements AemFormsAndDB {
 
 ## Clientbibliotheek maken {#create-client-library}
 
-AEM Clientbibliotheek beheert al uw JavaScript-code aan de clientzijde. Voor dit artikel heb ik een eenvoudige javascript gemaakt om de Adaptieve formuliergegevens op te halen met behulp van de bridge-API voor handleidingen. Nadat de Adaptief-formuliergegevens zijn opgehaald, wordt de POST naar het servlet aangeroepen om de adaptieve formuliergegevens in de database in te voegen of bij te werken. De functie getALLUrlParams retourneert de parameters in de URL. Dit wordt gebruikt wanneer u de gegevens wilt bijwerken. De rest van de functionaliteit wordt behandeld in de code verbonden aan de klikgebeurtenis van.savebutton klasse. Als de guid-parameter aanwezig is in de URL, moeten we de updatebewerking uitvoeren als dit geen invoegbewerking is.
+AEM Client Library beheert al uw JavaScript-code aan de clientzijde. Voor dit artikel heb ik een eenvoudige javascript gemaakt om de Adaptieve formuliergegevens op te halen met behulp van de bridge-API voor handleidingen. Nadat de Adaptief-formuliergegevens zijn opgehaald, wordt de POST-aanroep naar het servlet uitgevoerd om de adaptieve formuliergegevens in de database in te voegen of bij te werken. De functie getALLUrlParams retourneert de parameters in de URL. Dit wordt gebruikt wanneer u de gegevens wilt bijwerken. De rest van de functionaliteit wordt behandeld in de code verbonden aan de klikgebeurtenis van.savebutton klasse. Als de guid-parameter aanwezig is in de URL, moeten we de updatebewerking uitvoeren als dit geen invoegbewerking is.
 
 ```javascript
 function getAllUrlParams(url) {
@@ -419,7 +419,7 @@ Voer de volgende stappen uit om deze mogelijkheid te testen op uw AEM Forms-exem
 * [Download en decomprimeer de DemoAssets.zip naar uw lokale systeem](assets/demoassets.zip)
 * Implementeer en start de bundels techmarketingdemos.jar en mysqldriver.jar met behulp van de Felix-webconsole.
 *** Importeer het bestand aemformstutorial.sql met MYSQL Workbench. Hierdoor worden het benodigde schema en de benodigde tabellen in uw database gemaakt
-* Importeer StoreAndRetrieve.zip met AEM pakketbeheer. Dit pakket bevat de adaptieve formuliersjabloon, de client lib van de paginacomponent en een voorbeeldconfiguratie voor adaptieve formulieren en gegevensbronnen.
+* Import StoreAndRetrieve.zip using AEM package manager. Dit pakket bevat de adaptieve formuliersjabloon, de client lib van de paginacomponent en een voorbeeldconfiguratie voor adaptieve formulieren en gegevensbronnen.
 * Aanmelden bij configMgr. Zoek naar &quot;Apache Sling Connection Pooled DataSource. Open de gegevensbroningang verbonden aan een modelstudie en ga de gebruikersbenaming en het wachtwoord in specifiek voor uw gegevensbestandinstantie.
 * Het adaptieve formulier openen
 * Vul enkele details in en klik op de knop &quot;Opslaan en verdergaan&quot;

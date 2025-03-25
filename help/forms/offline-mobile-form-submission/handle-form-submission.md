@@ -1,15 +1,16 @@
 ---
-title: Trigger AEM workflow voor het verzenden van HTML5-formulieren - PDF verwerken
-description: De verzending van het HTML5/PDF-formulier afhandelen
+title: AEM-workflow activeren bij het verzenden van HTML5-formulieren - PDF verwerken
+description: De verzending van HTML5/PDF-formulieren verwerken
 feature: Mobile Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 jira: kt-16133
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 level: Experienced
-source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
+exl-id: ef8ed87d-37c1-4d01-8df6-7a78c328703d
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%
@@ -18,14 +19,14 @@ ht-degree: 0%
 
 # Formulierverzending verwerken
 
-In dit deel maken we een eenvoudige servlet die op AEM Publish wordt uitgevoerd voor het verwerken van het PDF-formulier of het verzenden van het HTML5-formulier. Deze servlet, doet een verzoek van de POST van HTTP aan servlet die in een AEM auteursinstantie loopt verantwoordelijk voor het opslaan van de voorgelegde gegevens als a `nt:file` knoop in AEM bewaarplaats van de Auteur.
+In dit deel maken we een eenvoudige servlet die wordt uitgevoerd op AEM Publish om het PDF-formulier of het HTML5-formulier te verzenden. Deze servlet, doet een HTTP POST-aanvraag aan een servlet die in een AEM auteur-instantie wordt uitgevoerd en verantwoordelijk is voor het opslaan van de verzonden gegevens als een `nt:file` -knooppunt in de gegevensopslagruimte van AEM Author.
 
-Hier volgt de code van de servlet die de PDF/HTML5-formulierverzending afhandelt. In deze servlet maken wij een POST vraag aan servlet op **wordt opgezet/bin/startworkflow** in een AEM instantie van de Auteur die. Deze server slaat de formuliergegevens op in de opslagplaats van de AEM auteur.
+Hier volgt de code van de servlet die de verzending van het PDF/HTML5-formulier afhandelt. In deze servlet maken wij een POST vraag aan een servlet op **/bin/startworkflow** in een instantie van de Auteur van AEM wordt opgezet. Deze server slaat de formuliergegevens op in de gegevensopslagruimte van de AEM-auteur.
 
 
 ## AEM Publish servlet
 
-De volgende code handelt de PDF/HTML5 formulierverzending af. Deze code wordt uitgevoerd op de publicatie-instantie.
+De volgende code handelt de verzending van het PDF/HTML5-formulier af. Deze code wordt uitgevoerd op de publicatie-instantie.
 
 ```java
 package com.aemforms.mobileforms.core.servlets;

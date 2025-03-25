@@ -2,14 +2,14 @@
 title: Fragmenten in uitvoerservice gebruiken
 description: PDF-documenten genereren met fragmenten die zich in de crx-opslagplaats bevinden
 feature: Output Service
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2022-07-09T00:00:00Z
 exl-id: d7887e2e-c2d4-4f0c-b117-ba7c41ea539a
 duration: 106
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 # PDF-documenten genereren met fragmenten{#developing-with-output-and-forms-services-in-aem-forms}
 
 
-In dit artikel gebruiken we de uitvoerservice om PDF-bestanden te genereren met xdp-fragmenten. De hoofd xdp en de fragmenten verblijven in de crx bewaarplaats. Het is belangrijk dat u de mapstructuur van het bestandssysteem in AEM nabootst. Bijvoorbeeld als u een fragment in fragmentomslag in uw xdp gebruikt moet u een omslag creëren genoemd **fragmenten** onder uw basisomslag in AEM. De basismap bevat uw basis-xdp-sjabloon. Bijvoorbeeld, als u de volgende structuur op uw dossiersysteem hebt
+In dit artikel gebruiken we de uitvoerservice om PDF-bestanden te genereren met xdp-fragmenten. De hoofd xdp en de fragmenten verblijven in de crx bewaarplaats. Het is belangrijk om de mapstructuur van het bestandssysteem in AEM na te bootsen. Bijvoorbeeld als u een fragment in fragmentomslag in uw xdp gebruikt moet u een omslag creëren genoemd **fragmenten** onder uw basisomslag in AEM. De basismap bevat uw basis-xdp-sjabloon. Bijvoorbeeld, als u de volgende structuur op uw dossiersysteem hebt
 * c:\xdptemplates - Deze bevat uw basis-xdp-sjabloon
 * c:\xdptemplates\fragments - Deze map bevat fragmenten en de hoofdsjabloon verwijst naar het fragment zoals hieronder wordt weergegeven
   ![ fragment-xdp ](assets/survey-fragment.png).
@@ -66,24 +66,24 @@ out.println("Document genreated and saved to " + filePath);
 
 **om het steekproefpakket op uw systeem** te testen
 
-* [Download en importeer de voorbeeld-xdp-bestanden in AEM](assets/xdp-templates-fragments.zip)
-* [Download en installeer het pakket met AEM pakketbeheer](assets/using-fragments-assets.zip)
+* [Download en importeer de xdp-voorbeeldbestanden naar AEM](assets/xdp-templates-fragments.zip)
+* [Download en installeer het pakket met behulp van AEM package Manager](assets/using-fragments-assets.zip)
 * [De voorbeeld-xdp en -fragmenten kunnen hier worden gedownload](assets/xdptemplates.zip)
 
-**nadat u het pakket installeert zult u volgende URLs in de Filter van de Adobe moeten lijsten van gewenste personen Granite CSRF.**
+**nadat u het pakket installeert zult u volgende URLs in de Filter van Adobe moeten lijsten van gewenste personen Granite CSRF.**
 
 1. Volg de onderstaande stappen om de hierboven vermelde paden te lijsten van gewenste personen.
 1. [ Login aan configMgr ](http://localhost:4502/system/console/configMgr)
-1. Zoeken naar graniet-CSRF-filter voor Adobe
+1. Zoeken naar Adobe Granite CSRF-filter
 1. Het volgende pad toevoegen aan de uitgesloten secties en opslaan
 1. /content/AemFormsSamples/usingfragments
 
-U kunt de voorbeeldcode op verschillende manieren testen. De snelste en eenvoudigste manier is om Postman-app te gebruiken. Met Postman kunt u POSTEN aanvragen bij uw server. Installeer de Postman-toepassing op uw systeem.
+U kunt de voorbeeldcode op verschillende manieren testen. De snelste en eenvoudigste manier is om Postman-app te gebruiken. Met Postman kunt u POST-aanvragen indienen bij uw server. Installeer de Postman-toepassing op uw systeem.
 Start de app en voer de volgende URL in om de API voor exportgegevens te testen
 
 Controleer of u &quot;POST&quot; hebt geselecteerd in de vervolgkeuzelijst
 http://localhost:4502/content/AemFormsSamples/usingfragments.html
-Zorg ervoor dat u &quot;Autorisatie&quot; opgeeft als &quot;Basic Auth&quot;. Geef de gebruikersnaam en het wachtwoord voor AEM server op
+Zorg ervoor dat u &quot;Autorisatie&quot; opgeeft als &quot;Basic Auth&quot;. Geef de gebruikersnaam en het wachtwoord voor de AEM Server op
 Navigeer naar het tabblad Body en geef de aanvraagparameters op, zoals in de onderstaande afbeelding wordt getoond
 ![ uitvoer ](assets/using-fragment-postman.png)
 Klik vervolgens op Verzenden

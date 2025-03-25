@@ -1,7 +1,7 @@
 ---
 title: Inclusief jars van derden
-description: Leer jar-bestand van derden te gebruiken in uw AEM-project
-version: 6.4,6.5
+description: Leer JAR-bestand van derden te gebruiken in uw AEM-project
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Adaptive Forms
 topic: Development
 role: Developer
@@ -11,16 +11,16 @@ last-substantial-update: 2022-10-15T00:00:00Z
 thumbnail: third-party.jpg
 exl-id: e8841c63-3159-4f13-89a1-d8592af514e3
 duration: 53
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
-# Het opnemen van bundels van derden in uw AEM project
+# Bundels van derden opnemen in uw AEM-project
 
-In dit artikel zullen wij door de stappen betrokken bij het omvatten van de bundel van 3de partij OSGi in uw AEM project lopen.Voor het doel van dit artikel gaan wij [ jsch-0.1.55.jar ](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) in ons AEM project omvatten.  ALS OSGi in een bepaalde bewaarplaats beschikbaar is omvat de gebiedsafhankelijkheid van de bundel in het POM.xml- dossier van het project.
+In dit artikel zullen wij door de stappen betrokken bij het omvatten van de bundel van derde partij OSGi in uw project van AEM lopen.Voor dit artikel gaan wij [ jsch-0.1.55.jar ](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) in ons project van AEM omvatten.  ALS OSGi in een bepaalde bewaarplaats beschikbaar is omvat de gebiedsafhankelijkheid van de bundel in het POM.xml- dossier van het project.
 
 >[!NOTE]
 > Aangenomen wordt dat de derde-partijpot een OSGi-bundel is
@@ -48,7 +48,7 @@ Als uw bundel OSGi op uw dossiersysteem is, creeer een omslag genoemd **localjar
 
 ## De mapstructuur maken
 
-Wij voegen deze bundel aan ons AEM project **AEMFormsProcessStep** toe die in **c verblijft:\aemformsbundles** omslag
+Wij voegen deze bundel aan ons AEM project **AEMFormsProcessStep** toe die in **c verblijft:\ aemformsbundles** omslag
 
 * Open **filter.xml** van de C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\META-INF\vault omslag van uw project
 Noteer het basiskenmerk van het filterelement.
@@ -62,5 +62,5 @@ Noteer het basiskenmerk van het filterelement.
 mvn clean install -PautoInstallSinglePackage
 ```
 
-Als alles goed gaat, wordt het pakket samen met de bundel van derden in uw AEM geïnstalleerd. U kunt voor de bundel controleren gebruikend [ felix Webconsole ](http://localhost:4502/system/console/bundles). De bundel van derden is beschikbaar in de map /apps van de `crx` -opslagplaats, zoals hieronder wordt weergegeven
+Als alles goed gaat, wordt het pakket samen met de bundel van derden in uw AEM-instantie geïnstalleerd. U kunt voor de bundel controleren gebruikend [ felix Webconsole ](http://localhost:4502/system/console/bundles). De bundel van derden is beschikbaar in de map /apps van de `crx` -opslagplaats, zoals hieronder wordt weergegeven
 ![ derde ](assets/custom-bundle1.png)

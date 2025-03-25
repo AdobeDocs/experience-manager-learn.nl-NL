@@ -2,7 +2,7 @@
 title: Verificatie van SMS Twee factoren
 description: Voeg een extra laag van veiligheid toe helpen de identiteit van een gebruiker bevestigen wanneer zij bepaalde activiteiten willen uitvoeren
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6317
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Experienced
 exl-id: c2c55406-6da6-42be-bcc0-f34426b3291a
 last-substantial-update: 2021-07-07T00:00:00Z
 duration: 115
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
@@ -59,13 +59,13 @@ Het voltooide model van vormgegevens kan [ van hier worden gedownload ](assets/s
 
 ## Adaptief formulier maken
 
-Integreer de aanroepen van de POST van het formuliergegevensmodel met het aangepaste formulier om te controleren welk mobiele telefoonnummer de gebruiker in het formulier heeft ingevoerd. U kunt zelf een adaptief formulier maken en de POST-aanroeping van het formuliergegevensmodel gebruiken om OTP-code te verzenden en te verifiëren naar wens.
+Integreer de POST-aanroepen van het formuliergegevensmodel met het aangepaste formulier om te controleren welk mobiele telefoonnummer de gebruiker in het formulier heeft ingevoerd. U kunt zelf een adaptief formulier maken en de POST-aanroep van het formuliergegevensmodel gebruiken om OTP-code naar wens te verzenden en te verifiëren.
 
 Voer de volgende stappen uit als u de voorbeeldbestanden met uw API-toetsen wilt gebruiken:
 
 * [ Download het model van vormgegevens ](assets/sms-2fa-fdm.zip) en de invoer in AEM gebruikend [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
 * Download de steekproef adaptieve vorm kan [ van hier worden gedownload ](assets/sms-2fa-verification-af.zip). In dit voorbeeldformulier worden de serviceaanroepen van het formuliergegevensmodel gebruikt die als onderdeel van dit artikel worden aangeboden.
-* Importeer de vorm in AEM van [ Forms en Document UI ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* De vorm van de invoer in AEM van [ Forms en Document UI ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Open het formulier in de bewerkingsmodus. De regeleditor voor het volgende veld openen
 
 ![ sms-send ](assets/check-sms.PNG)

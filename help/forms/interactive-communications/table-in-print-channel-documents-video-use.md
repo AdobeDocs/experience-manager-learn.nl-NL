@@ -3,14 +3,14 @@ title: Tabelcomponent gebruiken in AEM Forms Print Channel-document
 description: In de volgende video worden de stappen doorlopen die zijn vereist om tabelcomponent te gebruiken in Interactieve communicatie voor documenten met afdrukkanalen.
 feature: Interactive Communication
 doc-type: technical video
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 54afd047-c6e6-4557-9336-39420f30df88
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 277
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Tabellen worden gebruikt om gegevens in tabelvorm weer te geven. De rijen in de 
 
 * [Download en decomprimeer het bestand assets op de vaste schijf](assets/usingtablesinprintchannel.zip)
 
-* De twee ZIP-bestanden importeren in AEM met pakketbeheer
+* De twee ZIP-bestanden met pakketbeheer importeren in AEM
 
 * De volgende elementen zijn opgenomen in de elementen die aan dit artikel zijn gekoppeld:
 

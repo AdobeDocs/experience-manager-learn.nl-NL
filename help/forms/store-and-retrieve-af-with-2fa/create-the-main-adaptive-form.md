@@ -3,7 +3,7 @@ title: Het belangrijkste adaptieve formulier maken
 description: De adaptieve formulieren maken om informatie van de aanvrager en het adaptieve formulier op te nemen om het opgeslagen adaptieve formulier op te halen
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6552
 thumbnail: 6552.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: User
 level: Beginner
 exl-id: 73de0ac4-ada6-4b8e-90a8-33b976032135
 duration: 41
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
@@ -24,14 +24,14 @@ De vorm **StoreAFWithAttachments** is de belangrijkste adaptieve vorm. Dit adapt
 
 ![ belangrijkste toepassingsvorm ](assets/6552.JPG)
 
-Deze vorm wordt geassocieerd met **bootboxjs540, storeAFWithAttachments** cliëntbibliotheken die vroeger in de cursus en een AEM worden gecreeerd die op vormvoorlegging teweeggebracht.
+Deze vorm wordt geassocieerd met **bootboxjs540, storeAFWithAttachments** cliëntbibliotheken die vroeger in de cursus en een werkschema van AEM worden gecreeerd die op vormvoorlegging teweeggebracht.
 
 
 * De steekproefvormen zijn gebaseerd op [ douane adaptieve vormmalplaatje ](assets/custom-template-with-page-component.zip) dat in AEM voor de steekproefvormen moet worden ingevoerd om correct terug te geven.
 
-* De voltooide [ Vorm StoreAfWithAttachments ](assets/store-af-with-attachments-form.zip) kan in uw AEM instantie worden gedownload en worden ingevoerd.
+* De voltooide [ Vorm StoreAfWithAttachments ](assets/store-af-with-attachments-form.zip) kan in uw instantie van AEM worden gedownload en worden ingevoerd.
 
-* Het [ AEM werkschema verbonden aan deze vorm ](assets/workflow-model-store-af-with-attachments.zip) moet in uw AEM instantie worden ingevoerd opdat de vorm werkt.
+* Het [ werkschema van AEM verbonden aan deze vorm ](assets/workflow-model-store-af-with-attachments.zip) moet in uw instantie van AEM voor de vorm worden ingevoerd om te werken.
 
 
 ## Volgende stappen

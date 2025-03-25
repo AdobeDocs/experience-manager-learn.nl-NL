@@ -1,25 +1,25 @@
 ---
 title: Reader-extensies configureren in AEM Forms OSGi
-description: Voeg de credentie van de Uitbreidingen van de Reader aan de vertrouwensopslag in AEM Forms OSGi toe
+description: Reader Extensions-referentie toevoegen aan de vertrouwde opslag in AEM Forms OSGi
 feature: Reader Extensions
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Administration
 role: Admin
 level: Beginner
 exl-id: 1f16acfd-e8fd-4b0d-85c4-ed860def6d02
 last-substantial-update: 2020-08-01T00:00:00Z
 duration: 308
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
 
 ---
 
-# Credentials voor extensies voor Readers toevoegen{#configuring-reader-extension-osgi}
+# Reader Extensions-referentie toevoegen{#configuring-reader-extension-osgi}
 
-De dienst DocAssurance kan gebruiksrechten toepassen op PDF documenten. Als u gebruiksrechten wilt toepassen op PDF-documenten, configureert u de certificaten.
+De DocAssurance-service kan gebruiksrechten toepassen op PDF-documenten. Als u gebruiksrechten wilt toepassen op PDF-documenten, configureert u de certificaten.
 
 ## Keystore maken voor Ffd-service-gebruiker
 

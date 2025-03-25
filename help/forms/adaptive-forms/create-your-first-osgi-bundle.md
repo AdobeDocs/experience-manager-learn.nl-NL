@@ -1,15 +1,15 @@
 ---
-title: Uw eerste OSGi-bundel maken met AEM formulieren
+title: Uw eerste OSGi-bundel maken met AEM-formulieren
 description: Bouw uw eerste bundel OSGi gebruikend maven en eclipse
 feature: Adaptive Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 177
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
@@ -118,7 +118,7 @@ Vouw `src/main/java` onder de map `learningaemforms.core` uit. Dit is de map waa
 
 ## Uw project samenstellen
 
-Zodra u uw dienst OSGi, of servlet hebt geschreven, moet u uw project bouwen om de bundel te produceren OSGi die kan worden opgesteld gebruikend de het Webconsole van Felix. Gelieve te verwijzen [ AEMFD de Cliënt SDK van SDK ](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) om de aangewezen cliënt SDK in uw Gemaakt project te omvatten. U moet de AEM FD Client SDK opnemen in de sectie voor afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder wordt weergegeven.
+Zodra u uw dienst OSGi, of servlet hebt geschreven, moet u uw project bouwen om de bundel te produceren OSGi die kan worden opgesteld gebruikend de het Webconsole van Felix. Gelieve te verwijzen [ AEMFD Cliënt SDK ](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) om de aangewezen cliëntSDK in uw Gemaakt project te omvatten. U moet de AEM FD Client SDK opnemen in de sectie voor afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder wordt weergegeven.
 
 ```xml
 <dependency>

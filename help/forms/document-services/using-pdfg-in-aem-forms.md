@@ -2,14 +2,14 @@
 title: PDFG gebruiken in AEM Forms
 description: Mogelijkheid voor slepen en neerzetten demonstreren om PDF te maken met AEM Forms
 feature: PDF Generator
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: bc79fcbf-b8b3-4d3a-9cd6-0bcd9321c7d5
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 52
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%
@@ -20,10 +20,10 @@ ht-degree: 0%
 
 Mogelijkheid voor slepen en neerzetten demonstreren om PDF te maken met AEM Forms
 
-PDFG staat voor het genereren van PDF. Dit betekent dat u verschillende bestandsindelingen kunt omzetten in PDF. De meest voorkomende zijn Microsoft Office-documenten. PDFG maakt sinds 6.1 deel uit van AEM Forms.
+PDFG staat voor PDF Generation. Dit betekent dat u verschillende bestandsindelingen kunt converteren naar PDF. De meest voorkomende zijn Microsoft Office-documenten. PDFG maakt sinds 6.1 deel uit van AEM Forms.
 [ javadoc voor PDFG API is hier vermeld ](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)
 
-Met de elementen die aan dit artikel zijn gekoppeld, kunt u MS Office-documenten of JPG bestand naar de neerzetzone van de pagina HTML slepen. Zodra het document wordt gelaten vallen, roept het de dienst PDFG aan en zet het document in PDF om en bewaar het op het dossiersysteem van AEM Server.
+Met de elementen die aan dit artikel zijn gekoppeld, kunt u MS Office-documenten of JPG-bestanden naar de neerzetzone van de HTML-pagina slepen. Nadat het document is neergezet, wordt de PDFG-service geactiveerd en wordt het document naar PDF geconverteerd en opgeslagen in het bestandssysteem van AEM Server.
 
 Voer de volgende stappen uit om de demo-elementen te installeren
 
@@ -37,7 +37,7 @@ Voer de volgende stappen uit om de demo-elementen te installeren
 1. Zet een tekstbestand of JPG neer in de neerzetzone.
 1. Het invoerdocument wordt geconverteerd naar PDF en opgeslagen op dezelfde locatie als in punt 4.
 
-Het volgende codefragment toont het gebruik van de PDFG-service om bestanden om te zetten in PDF
+Het volgende codefragment toont het gebruik van de PDFG-service voor het converteren van bestanden naar PDF
 
 ```java
 com.adobe.pdfg.service.api.GeneratePDFService pdfService = sling.getService(com.adobe.pdfg.service.api.GeneratePDFService.class);

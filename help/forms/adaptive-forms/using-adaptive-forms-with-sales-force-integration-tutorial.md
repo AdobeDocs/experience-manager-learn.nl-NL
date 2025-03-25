@@ -1,26 +1,26 @@
 ---
-title: Gegevensbron configureren met Salesforce in AEM Forms 6.3 en 6.4
+title: DataSource configureren met Salesforce in AEM Forms 6.3 en 6.4
 description: AEM Forms integreren met Salesforce met behulp van formuliergegevensmodel
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 7a4fd109-514a-41a8-a3fe-53c1de32cb6d
 last-substantial-update: 2020-02-14T00:00:00Z
 duration: 175
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
 
 ---
 
-# Gegevensbron configureren met Salesforce in AEM Forms 6.3 en 6.4{#configuring-datasource-with-salesforce-in-aem-forms-and}
+# DataSource configureren met Salesforce in AEM Forms 6.3 en 6.4{#configuring-datasource-with-salesforce-in-aem-forms-and}
 
 ## Vereisten {#prerequisites}
 
-In dit artikel doorlopen we het proces van het maken van Data Source met Salesforce
+In dit artikel doorlopen we het proces voor het maken van Data Source met Salesforce
 
 Vereisten voor deze zelfstudie:
 
@@ -30,8 +30,8 @@ Vereisten voor deze zelfstudie:
    * [ Officiële Documentatie voor het toelaten van SSL op AEM 6.3 ](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
    * [ Officiële Documentatie voor het toelaten van SSL op AEM 6.4 ](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
-* U moet een Salesforce-account hebben
-* U moet een verbonden app maken. De officiële documentatievorm Salesforce voor het creëren van app wordt vermeld [ hier ](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
+* Je hebt een Salesforce-account nodig
+* U moet een verbonden app maken. De officiële documentatie van Salesforce voor het creëren van app is vermeld [ hier ](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
 * Geef de juiste OAuth-oppervlakken op voor de app (ik heb alle beschikbare OAuth-oppervlakken geselecteerd voor testdoeleinden)
 * Geef de URL voor de callback op. De callback-URL in mijn geval was
 
@@ -75,7 +75,7 @@ De volgende stap is het maken van Data Source in AEM Forms. Voer de volgende sta
 
 Nadat u het formuliergegevensmodel hebt gemaakt met Salesforce, kunt u vervolgens de formuliergegevensintegratie maken met de Data Source die u zojuist hebt gemaakt. De officiële documentatie voor het creëren van de Integratie van de Gegevens van de Vorm is [ hier ](https://helpx.adobe.com/aem-forms/6-3/data-integration.html).
 
-Zorg ervoor u het Model van de Gegevens van de Vorm vormt om de dienst van de POST te omvatten om een Lood voorwerp in SFDC tot stand te brengen.
+Zorg ervoor dat u het formuliergegevensmodel zo configureert dat de POST-service wordt gebruikt om een Lead-object in SFDC te maken.
 
 U zult ook Lees en schrijven de Dienst voor het voorwerp van de Lood moeten vormen. Raadpleeg de schermafbeeldingen onder aan deze pagina.
 
@@ -106,9 +106,9 @@ Nadat u het formuliergegevensmodel hebt gemaakt, kunt u op dit model gebaseerde 
    * Verificatiehandler: houder van autorisatie
    * Klik op &quot;Verbinding maken met OAuth&quot;. Als er fouten optreden, controleert u de voorgaande stappen om ervoor te zorgen dat alle gegevens correct zijn ingevoerd.
 
-Zodra u gegevens-Source hebt gemaakt met behulp van SalesForce, kunt u vervolgens de functie voor integratie van formuliergegevens maken met behulp van de Data Source die u zojuist hebt gemaakt. De documentatieverbinding voor dat is [ hier ](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
+Nadat u de Data Source met Salesforce hebt gemaakt, kunt u vervolgens de Form Data Integration maken met de Data Source die u zojuist hebt gemaakt. De documentatieverbinding voor dat is [ hier ](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
 
-Zorg ervoor u het Model van de Gegevens van de Vorm vormt om de dienst van de POST te omvatten om een Lood voorwerp in SFDC tot stand te brengen.
+Zorg ervoor dat u het formuliergegevensmodel zo configureert dat de POST-service wordt gebruikt om een Lead-object in SFDC te maken.
 
 U zult ook Lees en schrijven de Dienst voor het voorwerp van de Lood moeten vormen. Raadpleeg de schermafbeeldingen onder aan deze pagina.
 

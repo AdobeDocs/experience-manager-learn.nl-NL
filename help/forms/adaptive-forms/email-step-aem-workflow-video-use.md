@@ -2,14 +2,14 @@
 title: E-mailstap verzenden van Forms Workflow gebruiken
 description: De stap E-mail verzenden is geïntroduceerd in AEM Forms 6.4. Met deze stap kunnen we bedrijfsprocessen of een workflow maken waarmee u e-mailberichten met of zonder bijlagen kunt verzenden. De volgende video doorloopt de stappen voor het vormen verzendt e-mailcomponent
 feature: Workflow
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 21e58bbc-c1d6-4d41-a4d4-f522a3a5d4a7
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 314
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -25,8 +25,8 @@ De stap E-mail verzenden is geïntroduceerd in AEM Forms 6.4. Met deze stap kunn
 Als onderdeel van dit artikel doorlopen we de volgende gebruikszaak:
 
 1. Een gebruiker vult het aanvraagformulier in
-1. Bij het verzenden van formulieren wordt AEM workflow geactiveerd
-1. De AEM-workflow gebruikt de component E-mail verzenden om een e-mail met de servicevoorwaarden als bijlage te verzenden
+1. Bij het verzenden van formulieren wordt de AEM Workflow geactiveerd
+1. De AEM Workflow gebruikt de Send E-mailcomponent om een e-mail met het DoR als bijlage te verzenden
 
 Alvorens u gebruikt verzend E-mail stap zorg ervoor u de Dienst van de Post van Dag CQ van [ configMgr ](http://localhost:4502/system/console/configMgr) vormt. Geef de waarden op die specifiek zijn voor uw omgeving
 
@@ -54,7 +54,7 @@ Bekijk de processtap van de workflow. De aangepaste code die aan de processtap i
 
 >[!NOTE]
 >
->In AEM Forms 6.5 en hoger hebt u deze aangepaste code niet nodig om eigenschappen van metagegevens te maken. Gebruik de functie voor variabelen in AEM workflow
+>In AEM Forms 6.5 en hoger hebt u deze aangepaste code niet nodig om eigenschappen van metagegevens te maken. Gebruik de functie voor variabelen in de AEM-workflow
 
 Controleer of het tabblad Bijlagen van de component E-mail verzenden is geconfigureerd volgens de onderstaande schermopname
 ![ verzendt E-mail het Lusje van de Bijlage van de Bijlage ](assets/sendemailcomponentconfigure.jpg) &quot;DOR.pdf&quot;waarde moet de waarde aanpassen die in het Document van de Weg van het Verslag wordt gespecificeerd in de voorleggingsopties van uw adaptieve vorm.

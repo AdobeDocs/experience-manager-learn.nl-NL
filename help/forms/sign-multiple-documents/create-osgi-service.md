@@ -2,7 +2,7 @@
 title: OSGi-service maken
 description: OSGi-service maken om de formulieren op te slaan ter ondertekening
 feature: Workflow
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 thumbnail: 6886.jpg
 jira: KT-6886
 topic: Development
@@ -10,7 +10,7 @@ role: Developer
 level: Experienced
 exl-id: 49e7bd65-33fb-44d4-aaa2-50832dffffb0
 duration: 150
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -131,7 +131,7 @@ public String getFormData(String guid) {
 
 ## Handtekeningstatus bijwerken
 
-Als de ondertekeningsceremonie met succes is voltooid, wordt een AEM workflow geactiveerd die aan het formulier is gekoppeld. De eerste stap in de workflow is een processtap waarmee de status in de database wordt bijgewerkt voor de rij die door de id en de id van de klant wordt geïdentificeerd. De waarde van het ondertekende element in de formuliergegevens wordt ook ingesteld op Y om aan te geven dat het formulier is ingevuld en ondertekend. Het adaptieve formulier wordt gevuld met deze gegevens en de waarde van het ondertekende gegevenselement in de XML-gegevens wordt gebruikt om het juiste bericht weer te geven. De code updateSignatureStatus wordt aangeroepen vanuit de stap voor het aangepaste proces.
+Als de ondertekeningsceremonie met succes is voltooid, wordt een AEM-workflow geactiveerd die aan het formulier is gekoppeld. De eerste stap in de workflow is een processtap waarmee de status in de database wordt bijgewerkt voor de rij die door de id en de id van de klant wordt geïdentificeerd. De waarde van het ondertekende element in de formuliergegevens wordt ook ingesteld op Y om aan te geven dat het formulier is ingevuld en ondertekend. Het adaptieve formulier wordt gevuld met deze gegevens en de waarde van het ondertekende gegevenselement in de XML-gegevens wordt gebruikt om het juiste bericht weer te geven. De code updateSignatureStatus wordt aangeroepen vanuit de stap voor het aangepaste proces.
 
 
 ```java

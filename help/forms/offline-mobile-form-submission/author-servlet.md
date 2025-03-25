@@ -1,16 +1,16 @@
 ---
-title: Trigger AEM workflow voor het verzenden van HTML5-formulieren - Formulier verwerken
-description: Leer hoe u AEM workflow kunt activeren wanneer het HTML5-formulier wordt verzonden en de verzonden gegevens in de gegevensopslagruimte kunt opslaan.
+title: AEM-workflow activeren bij het verzenden van HTML5-formulieren - Formulier verwerken
+description: Leer hoe u de AEM-workflow kunt activeren wanneer het HTML5-formulier wordt verzonden en de verzonden gegevens in de gegevensopslagruimte kunt opslaan.
 feature: Mobile Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 level: Experienced
 exl-id: eafeafe1-7a72-4023-b5bb-d83b056ba207
 duration: 116
-source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%
@@ -20,8 +20,8 @@ ht-degree: 0%
 
 # Verzonden gegevens opslaan
 
-De volgende stap bestaat uit het opslaan van de verzonden gegevens in de opslagplaats van de AEM auteur. De server die op `/bin/startworkflow` is gekoppeld, slaat de verzonden gegevens op.
-Een AEM werkstroomlanceerprogramma wordt gevormd om teweeg te brengen telkens als een nieuwe middel van type `nt:file` onder de &lt;node_to_store_submitted_data> knoop wordt gecreeerd. Met deze workflow worden niet-interactieve of statische PDF gemaakt door de verzonden gegevens samen te voegen met de xdp-sjabloon. Het gegenereerde PDF-bestand wordt vervolgens ter controle en goedkeuring aan een gebruiker toegewezen.
+De volgende stap bestaat uit het opslaan van de verzonden gegevens in de gegevensopslagruimte van de AEM Auteur. De server die op `/bin/startworkflow` is gekoppeld, slaat de verzonden gegevens op.
+Een AEM-workflowstartprogramma is geconfigureerd om elke keer dat een nieuwe resource van het type `nt:file` wordt gemaakt onder het knooppunt &lt;node_to_store_submitted_data> te activeren. Met deze workflow worden niet-interactieve of statische PDF gemaakt door de verzonden gegevens samen te voegen met de xdp-sjabloon. Het gegenereerde PDF-bestand wordt vervolgens ter controle en goedkeuring aan een gebruiker toegewezen.
 
 Als u de verzonden gegevens wilt opslaan onder het knooppunt &lt;node_to_store_submitted_data>, maken we gebruik van de `GetResolver` OSGi-service, waarmee we de verzonden gegevens kunnen opslaan met de `fd-service` -systeemgebruiker die beschikbaar is in elke AEM Forms-installatie.
 

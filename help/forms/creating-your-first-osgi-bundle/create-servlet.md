@@ -2,14 +2,14 @@
 title: Uw eerste servlet maken in AEM Forms
 description: Stel uw eerste slingerservlet samen om gegevens samen te voegen met een formuliersjabloon.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 72728ed7-80a2-48b5-ae7f-d744db8a524d
 last-substantial-update: 2021-04-23T00:00:00Z
 duration: 55
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Voer de volgende stappen uit om uw project te maken:
 * Open **bevel snel venster**
 * Navigeren naar `c:\aemformsbundles\mysite\core`
 * De opdracht uitvoeren `mvn clean install -PautoInstallBundle`
-* Het bovenstaande bevel bouwt automatisch de bundel aan uw AEM instantie die op localhost loopt op en stelt op:4502
+* De bovenstaande opdracht bouwt de bundel automatisch op en implementeert deze op uw AEM-instantie die wordt uitgevoerd op localhost:4502
 
 De bundel is ook beschikbaar op de volgende locatie `C:\AEMFormsBundles\mysite\core\target` . De bundel kan ook in AEM worden opgesteld gebruikend de [ het Webconsole van de Felix.](http://localhost:4502/system/console/bundles)
 

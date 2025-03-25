@@ -3,14 +3,14 @@ title: Het vormen lijngrafiek voor uw eerste interactieve communicatie document 
 description: Dit is onderdeel 8 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel, zullen wij een grafiek van de Lijn aan het paneel van de rekeningsvooruitgang toevoegen.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 4292303c-3ef4-4df2-b537-fdb011412670
 topic: Development
 role: Developer
 level: Beginner
 exl-id: ba9ce6a2-f6e8-4e84-a23a-f4803879f635
 duration: 37
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%

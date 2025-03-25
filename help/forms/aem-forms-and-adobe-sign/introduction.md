@@ -2,7 +2,7 @@
 title: AEM Forms integreren met Acrobat Sign
 description: Integreer Acrobat Sign en AEM Forms om complexe transacties te automatiseren en juridische e-handtekeningen op te nemen als onderdeel van een naadloze digitale ervaring.
 feature: Adaptive Forms, Acrobat Sign
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 31
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # AEM Forms integreren met Acrobat Sign
 
-Leer hoe u AEM formulieren kunt integreren met Acrobat Sign, waardoor workflows voor e-handtekeningen mogelijk zijn voor adaptieve formulieren. E-handtekeningen verbeteren workflows om documenten te verwerken voor juridische documenten, verkoop, salarisadministratie, personeelsbeheer en nog veel meer gebieden.
+Leer hoe u AEM-formulieren kunt integreren met Acrobat Sign, waardoor workflows voor e-handtekeningen mogelijk zijn voor adaptieve formulieren. E-handtekeningen verbeteren workflows om documenten te verwerken voor juridische documenten, verkoop, salarisadministratie, personeelsbeheer en nog veel meer gebieden.
 
 De integratie tussen AEM Forms en Acrobat Sign maakt het volgende mogelijk:
 

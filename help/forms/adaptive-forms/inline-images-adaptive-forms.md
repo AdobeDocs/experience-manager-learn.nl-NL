@@ -2,14 +2,14 @@
 title: Inline-afbeeldingen weergeven in Adaptive Forms
 description: Geüploade afbeeldingen inline weergeven in Adaptive Forms
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 4a69513d-992c-435a-a520-feb9085820e7
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 58
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -65,7 +65,7 @@ function consumeImage (file) {
 
 ### Distribueren op uw server
 
-* Download en installeer de [ cliëntbibliotheek ](assets/inline-image-client-library.zip) op uw AEM instantie gebruikend AEM pakketmanager.
-* Download en installeer de [ steekproefvorm ](assets/inline-image-af.zip) op u uw AEM instantie gebruikend AEM pakketmanager.
+* Download en installeer de [ cliëntbibliotheek ](assets/inline-image-client-library.zip) op uw instantie van AEM gebruikend het pakketmanager van AEM.
+* Download en installeer de [ steekproefvorm ](assets/inline-image-af.zip) op u uw instantie van AEM gebruikend het pakketmanager van AEM.
 * Punt uw browser aan [ voegt het Beeld Inline ](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled) toe
 * Klik op de knop &quot;Foto koppelen&quot; om een afbeelding toe te voegen

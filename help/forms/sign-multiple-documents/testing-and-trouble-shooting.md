@@ -2,7 +2,7 @@
 title: Problemen oplossen met het ondertekenen van meerdere documenten
 description: De oplossing testen en problemen oplossen
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6960
 thumbnail: 6960.jpg
 topic: Development
@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 99cba29e-4ae3-4160-a4c7-a5b6579618c0
 duration: 81
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -38,7 +38,7 @@ De e-mailmelding wordt verzonden door de component E-mail verzenden in de workfl
 
 ### De koppeling in de e-mailmelding werkt niet
 
-De koppelingen in de e-mailmeldingen worden dynamisch gegenereerd. Als uw AEM server niet op localhost wordt uitgevoerd:4502, geef dan de juiste servernaam en poort op in de argumenten van de stap Ondertekenen door Forms van winkel van de workflow Meerdere Forms ondertekenen
+De koppelingen in de e-mailmeldingen worden dynamisch gegenereerd. Als uw AEM-server niet wordt uitgevoerd op localhost:4502, geeft u de juiste servernaam en poort op in de argumenten van de stap Ondertekenen bij meerdere Forms-workflows van Store Forms
 
 ### Kan het formulier niet ondertekenen
 

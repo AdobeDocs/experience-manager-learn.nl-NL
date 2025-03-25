@@ -2,7 +2,7 @@
 title: Inleiding
 description: Videodemonstratie van het gebruik van meerdere formulieren ondertekenen
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 thumbnail: 330165.jpg
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Experienced
 exl-id: 0260d4b6-8615-4d78-a920-b36766a0f8e9
 last-substantial-update: 2021-07-07T00:00:00Z
 duration: 211
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 1%
@@ -28,10 +28,10 @@ In de volgende video wordt uitgelegd hoe u meerdere formulieren kunt ondertekene
 
 Deze cursus gaat uit van het volgende:
 
-* U hebt toegang tot AEM 6.4- of 6.5-server met Forms Add on-package geïnstalleerd en geconfigureerd
+* U hebt toegang tot de AEM 6.4- of 6.5-server met Forms Add on-package geïnstalleerd en geconfigureerd
 * AEM geconfigureerd met Acrobat Sign
 * Toegang tot SMTP-server
-* Enige ervaring met AEM/AEM Forms
+* Ervaring met AEM/AEM Forms
 
 Door deze zelfstudie te volgen en de meegeleverde middelen te installeren, hebt u een werkoplossing om meerdere formulieren te ondertekenen.
 

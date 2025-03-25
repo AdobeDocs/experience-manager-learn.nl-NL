@@ -2,7 +2,7 @@
 title: Het produceren van het Token van het Web JSON en het Token van de Toegang
 description: In dit artikel wordt uitgelegd welke code nodig is om JWT en Access Token te genereren die nodig zijn voor het uitvoeren van REST-oproepen naar Adobe Campaign Standard
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -10,7 +10,7 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: a5e5aad4-064f-4638-a53a-88dfb1d27c8f
 duration: 151
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 0%
@@ -244,7 +244,7 @@ public class CampaignServiceImpl implements CampaignService {
 
 ## Toegangstoken genereren {#generate-access-token}
 
-Wij ruilen dan geproduceerde JWT voor een Token van de Toegang door een vraag van de POST te maken. Dit Token van de Toegang zal dan als sleutel van de Vergunning in de Kopbal van HTTP voor verdere vraag REST worden verzonden
+Wij ruilen dan geproduceerde JWT voor een Token van de Toegang door een POST vraag te maken. Dit Token van de Toegang zal dan als sleutel van de Vergunning in de Kopbal van HTTP voor verdere vraag REST worden verzonden
 
 ## Volgende stappen
 

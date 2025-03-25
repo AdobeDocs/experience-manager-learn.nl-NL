@@ -3,7 +3,7 @@ title: Formulierbijlagen opslaan
 description: Pak de formulierbijlagen uit en sla deze op een nieuwe locatie op in de CRX-opslagplaats.
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6537
 thumbnail: 6537.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: Developer
 level: Experienced
 exl-id: ec50b9b1-e28c-4d84-ae90-6a21c9700688
 duration: 65
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 Wanneer u bijlagen toevoegt aan een adaptief formulier, worden de bijlagen opgeslagen op een tijdelijke locatie in de CRX-opslagplaats. Als u het gebruik van hoofdletters en kleine letters wilt gebruiken, moeten we de formulierbijlagen opslaan op een nieuwe locatie in de CRX-opslagplaats.
 
 De dienst OSGi wordt gecreeerd om de vormgehechtheid in een nieuwe plaats in de bewaarplaats van CRX op te slaan. Er wordt een nieuwe bestandstoewijzing gemaakt met de nieuwe locatie van de bijlagen in de CRX en geretourneerd naar de aanroepende toepassing.
-Hier volgt de FileMap die naar de servlet wordt verzonden. De sleutel is het adaptieve formulierveld en de waarde is de tijdelijke locatie van de bijlage. In onze servlet zullen wij de gehechtheid halen en het opslaan in nieuwe plaats in de AEM bewaarplaats en het FileMap met de nieuwe plaats bijwerken
+Hier volgt de FileMap die naar de servlet wordt verzonden. De sleutel is het adaptieve formulierveld en de waarde is de tijdelijke locatie van de bijlage. In onze servlet zullen wij de gehechtheid halen en het opslaan in nieuwe plaats in de bewaarplaats van AEM en bijwerken FileMap met de nieuwe plaats
 
 ```java
 {

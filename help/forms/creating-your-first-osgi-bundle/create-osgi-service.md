@@ -2,14 +2,14 @@
 title: Uw eerste OSGi-service met AEM Forms maken
 description: Bouw uw eerste OSGi-service met AEM Forms
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 2f15782e-b60d-40c6-b95b-6c7aa8290691
 last-substantial-update: 2021-04-23T00:00:00Z
 duration: 87
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -88,7 +88,7 @@ De `@Reference` aantekening maakt deel uit van de verklarende diensten OSGi, en 
 * Open **bevel snel venster**
 * Navigeren naar `c:\aemformsbundles\mysite\core`
 * De opdracht uitvoeren `mvn clean install -PautoInstallBundle`
-* Het bovenstaande bevel zal automatisch de bundel aan uw AEM instantie bouwen en opstellen die op localhost loopt:4502
+* Met de bovenstaande opdracht wordt de bundel automatisch gegenereerd en geïmplementeerd op uw AEM-instantie die wordt uitgevoerd op localhost:4502
 
 De bundel is ook beschikbaar op de volgende locatie `C:\AEMFormsBundles\mysite\core\target` . De bundel kan ook in AEM worden opgesteld gebruikend de [ het Webconsole van de Felix.](http://localhost:4502/system/console/bundles)
 
@@ -107,9 +107,9 @@ Het steekproefpakket dat de JSP pagina bevat kan [ van hier worden gedownload ](
 
 ## De verpakking testen
 
-De invoer en installeert het pakket in AEM gebruikend [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
+Invoer en installeer het pakket in AEM gebruikend de [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
 
-Gebruik postman om een POST aan te roepen en de invoerparameters te verstrekken zoals hieronder getoond in het scherm ontsproten
+Gebruik postman om een POST-aanroep te maken en de invoerparameters op te geven, zoals hieronder in de schermafbeelding wordt getoond
 ![ postman ](assets/test-service-postman.JPG)
 
 ## Volgende stappen

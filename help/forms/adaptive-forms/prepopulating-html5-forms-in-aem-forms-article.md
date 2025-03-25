@@ -1,31 +1,31 @@
 ---
-title: PrePopulate HTML5 Forms die gegevensattribuut gebruikt.
-description: Vul HTML5-formulieren door gegevens op te halen van de achterste bron.
+title: HTML5 Forms vooraf vullen met gegevenskenmerk.
+description: U kunt HTML5-formulieren vullen door gegevens op te halen van de eindbron.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: ab0f5282-383b-4be6-9c57-cded6ab37528
 last-substantial-update: 2020-01-09T00:00:00Z
 duration: 94
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
 
 ---
 
-# HTML5 Forms met gegevenskenmerk prePopulate {#prepopulate-html-forms-using-data-attribute}
+# HTML5 Forms vooraf vullen met gegevenskenmerk {#prepopulate-html-forms-using-data-attribute}
 
 
-XDP-sjablonen die worden gerenderd in de HTML-indeling met AEM Forms, worden HTML5 of Mobile Forms genoemd. Deze formulieren worden vaak ingevuld wanneer ze worden gegenereerd.
+XDP-sjablonen die worden gerenderd in de HTML-indeling, worden HTML5 of Mobile Forms genoemd. Deze formulieren worden vaak ingevuld wanneer ze worden gegenereerd.
 
-Er zijn twee manieren om gegevens met het xdp malplaatje samen te voegen wanneer het als HTML wordt teruggegeven.
+Er zijn twee manieren om gegevens samen te voegen met de xdp-sjabloon wanneer deze worden gerenderd als HTML.
 
 **dataRef**: U kunt de parameter dataRef in URL gebruiken. Deze parameter geeft het absolute pad aan van het gegevensbestand dat met de sjabloon wordt samengevoegd. Deze parameter kan een URL zijn naar een andere service die de gegevens retourneert in XML-indeling.
 
-**gegevens**: Deze parameter specificeert UTF-8 gecodeerde gegevensbytes die met het malplaatje worden samengevoegd. Als deze parameter wordt opgegeven, negeert de HTML5-vorm de parameter dataRef. Als beste praktijken, adviseren wij het gebruiken van de gegevensbenadering.
+**gegevens**: Deze parameter specificeert UTF-8 gecodeerde gegevensbytes die met het malplaatje worden samengevoegd. Als deze parameter wordt opgegeven, negeert het HTML5-formulier de parameter dataRef. Als beste praktijken, adviseren wij het gebruiken van de gegevensbenadering.
 
 De aanbevolen methode is om het gegevenskenmerk in de aanvraag in te stellen met de gegevens die u vooraf in het formulier wilt invullen.
 
@@ -49,7 +49,7 @@ Het pakket installeert het volgende
 
    * CustomProfile
    * Voorbeeld XDP
-   * Het eindpunt van de POST van de steekproef dat gegevens zal terugkeren om uw vorm te bevolken
+   * Voorbeeld van POST-eindpunt dat gegevens retourneert om het formulier te vullen
 
 >[!NOTE]
 >

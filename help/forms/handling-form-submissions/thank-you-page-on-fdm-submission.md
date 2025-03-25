@@ -3,7 +3,7 @@ title: Indienings-id weergeven bij het verzenden van het formulier
 description: De reactie van een verzonden formuliergegevensmodel weergeven op de pagina Hartelijk dank
 feature: Adaptive Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-13900
 last-substantial-update: 2023-09-09T00:00:00Z
 exl-id: 18648914-91cc-470d-8f27-30b750eb2f32
 duration: 72
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # De pagina Hartelijk dank aanpassen
 
-Wanneer u een adaptief formulier verzendt naar een REST-eindpunt, wilt u een bevestigingsbericht weergeven waarmee de gebruiker weet dat het verzenden van het formulier is geslaagd. De reactie van de POST bevat informatie over de verzending, zoals de verzendings-id, en een goed ontworpen bevestigingsbericht bevat de verzendings-id die bijdraagt tot een betere gebruikerservaring. Dit antwoord kan worden weergegeven op de pagina &quot;Bedankt&quot; die is geconfigureerd met het aangepaste formulier.
+Wanneer u een adaptief formulier verzendt naar een REST-eindpunt, wilt u een bevestigingsbericht weergeven waarmee de gebruiker weet dat het verzenden van het formulier is geslaagd. De POST-reactie bevat details over de verzending, zoals de verzendings-id, en een goed ontworpen bevestigingsbericht bevat de verzendings-id die bijdraagt aan een betere gebruikerservaring. Dit antwoord kan worden weergegeven op de pagina &quot;Bedankt&quot; die is geconfigureerd met het aangepaste formulier.
 
 De volgende het schermschot toont een vorm wordt voorgelegd gebruikend het Model van de Gegevens van de Vorm verzendt actie met een dank u gevormde pagina
 

@@ -2,14 +2,14 @@
 title: Ontwikkelen met Output and Forms Services in AEM Forms
 description: Meer informatie over het ontwikkelen met Output en Forms Service API in AEM Forms.
 feature: Output Service
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2024-01-29T00:00:00Z
 exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
 duration: 122
-source-git-commit: 12af84e3d9be24fabb01a64eced6279749668599
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
@@ -43,20 +43,20 @@ Line2 haalt saveLocation uit het verzoek uit
 
 Regel 5 krijgt greep van FormsService
 
-Regel 6 voert xmlData uit het Dossier van PDF uit
+Regel 6 exporteert xmlData uit het PDF-bestand
 
 **om het steekproefpakket op uw systeem** te testen
 
-[Download en installeer het pakket met AEM pakketbeheer](assets/using-output-and-form-service-api.zip)
+[Download en installeer het pakket met behulp van AEM package Manager](assets/using-output-and-form-service-api.zip)
 
 
 
 
-**nadat u het pakket installeert zult u volgende URLs in de Filter van de Adobe moeten lijsten van gewenste personen Granite CSRF.**
+**nadat u het pakket installeert zult u volgende URLs in de Filter van Adobe moeten lijsten van gewenste personen Granite CSRF.**
 
 1. Volg de onderstaande stappen om de hierboven vermelde paden te lijsten van gewenste personen.
 1. [ Login aan configMgr ](http://localhost:4502/system/console/configMgr)
-1. Zoeken naar graniet-CSRF-filter voor Adobe
+1. Zoeken naar Adobe Granite CSRF-filter
 1. Voeg de volgende drie paden toe aan de uitgesloten secties en sla deze op
 1. /content/AemFormsSamples/mergedata
 1. /content/AemFormsSamples/exportdata
@@ -67,12 +67,12 @@ Regel 6 voert xmlData uit het Dossier van PDF uit
 
 ## De monsters testen
 
-U kunt de voorbeeldcode op verschillende manieren testen. De snelste en eenvoudigste manier is om Postman-app te gebruiken. Met Postman kunt u POSTEN aanvragen bij uw server.
+U kunt de voorbeeldcode op verschillende manieren testen. De snelste en eenvoudigste manier is om Postman-app te gebruiken. Met Postman kunt u POST-aanvragen indienen bij uw server.
 
 * Installeer de Postman-toepassing op uw systeem.
 * Start de app en voer de juiste URL in
 * Controleer of u &quot;POST&quot; hebt geselecteerd in de vervolgkeuzelijst
-* Zorg ervoor dat u &quot;Autorisatie&quot; opgeeft als &quot;Basic Auth&quot;. Geef de gebruikersnaam en het wachtwoord voor AEM server op
+* Zorg ervoor dat u &quot;Autorisatie&quot; opgeeft als &quot;Basic Auth&quot;. Geef de gebruikersnaam en het wachtwoord voor de AEM Server op
 * Geef de aanvraagparameters op op het tabblad body
 * Klik op Verzenden
 
@@ -103,7 +103,7 @@ De verpakking bevat 4 monsters. De volgende paragrafen verklaren wanneer om de o
 
 #### Gegevens exporteren
 
-* FormsService-API voor exportData gebruiken om gegevens uit PDF File te exporteren
+* FormsService-API voor exportData gebruiken om gegevens uit PDF-bestand te exporteren
 * **POST URL** - http://localhost:4502/content/AemFormsSamples/exportdata.html
 * **Parameters van het Verzoek:**
 

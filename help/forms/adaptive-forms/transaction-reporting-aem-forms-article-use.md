@@ -2,14 +2,14 @@
 title: Transactierapportage in AEM Forms gebruiken
 description: Met transactierapporten in AEM Forms kunt u een telling bijhouden van alle transacties die sinds een opgegeven datum op uw AEM Forms-implementatie zijn uitgevoerd.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -45,7 +45,7 @@ In de schermafbeelding boven Document verwerkt is het aantal documenten dat met 
 
 Een transactie blijft in de buffer voor een gespecificeerde periode (de tijd van de Buffer van de Duw + omgekeerde replicatietijd). Door gebrek, vergt het ongeveer 90 seconden voor de transactietelling om in het transactierapport te weerspiegelen.
 
-Handelingen zoals het verzenden van een PDF-formulier, het gebruik van de gebruikersinterface van de om een voorvertoning van een interactieve communicatie weer te geven of het gebruik van niet-standaardmethoden voor het verzenden van formulieren worden niet als transacties beschouwd. AEM Forms biedt een API om dergelijke transacties op te nemen. Roep API van uw douaneimplementaties aan om een transactie te registreren.
+Handelingen als het verzenden van een PDF-formulier, het gebruik van de gebruikersinterface van de Agent voor het weergeven van een voorvertoning van een interactieve communicatie of het gebruik van niet-standaardmethoden voor het verzenden van formulieren worden niet als transacties beschouwd. AEM Forms biedt een API om dergelijke transacties op te nemen. Roep API van uw douaneimplementaties aan om een transactie te registreren.
 
 Als u het transactierapport over de auteursinstantie bekijkt, zorg ervoor de omgekeerde replicatie op alle publiceer instanties wordt gevormd.
 

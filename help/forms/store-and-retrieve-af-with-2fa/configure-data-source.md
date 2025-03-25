@@ -3,7 +3,7 @@ title: Source van gegevens configureren
 description: Gegevensbron maken die naar de MySQL-database verwijst
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6541
 thumbnail: 6541.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 exl-id: a87ff428-15f7-43c9-ad03-707eab6216a9
 duration: 64
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -20,8 +20,8 @@ ht-degree: 0%
 
 # Source van gegevens configureren
 
-Er zijn vele manieren waarin AEM integratie met een externe gegevensbestand toelaat. Één van de gemeenschappelijkste &amp; standaardpraktijken van gegevensbestandintegratie is door Apache Te gebruiken die Verbinding Gepoolde eigenschappen van de Configuratie DataSource door [ configMgr ](http://localhost:4502/system/console/configMgr) ruilt.
-De eerste stap moet de aangewezen [ bestuurders MySQL ](https://mvnrepository.com/artifact/mysql/mysql-connector-java) downloaden en opstellen om te AEM.
+Er zijn veel manieren waarop AEM integratie met een externe database mogelijk maakt. Één van de gemeenschappelijkste &amp; standaardpraktijken van gegevensbestandintegratie is door Apache Te gebruiken die Verbinding Gepoolde eigenschappen van de Configuratie DataSource door [ configMgr ](http://localhost:4502/system/console/configMgr) ruilt.
+De eerste stap is de aangewezen [ bestuurders MySQL ](https://mvnrepository.com/artifact/mysql/mysql-connector-java) aan AEM te downloaden en op te stellen.
 Vervolgens stelt u de specifieke eigenschappen voor de gegevensbron van uw database in voor de verzamelverbinding. In de volgende schermafbeelding ziet u de instellingen die voor deze zelfstudie worden gebruikt. Het databaseschema wordt als onderdeel van deze zelfstudie-elementen aan u verstrekt.
 
 >[!NOTE]
