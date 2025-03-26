@@ -11,9 +11,9 @@ thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
 last-substantial-update: 2024-04-27T00:00:00Z
 duration: 919
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: e1bea4320ed7a8b6d45f674649ba9ba946054b17
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1556'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,13 @@ ht-degree: 0%
 
 Leer hoe te om AEM as a Cloud Service met uw VPN te verbinden om veilige communicatie kanalen tussen AEM en de interne diensten tot stand te brengen.
 
-## Wat is Virtual Private Network?
+>[!IMPORTANT]
+>
+>U kunt VPNs en haven vormen door:sturen of door Cloud Manager UI of het gebruiken van API vraag. Deze zelfstudie richt zich op de API-methode.
+>
+>Als u verkiest gebruikend UI, zie [ Geavanceerd Voorzien van een netwerk voor AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) vormen.
+
+## Wat is een Virtueel Privé Netwerk?
 
 Het virtuele Privé Netwerk (VPN) staat een klant van AEM as a Cloud Service toe om **de milieu&#39;s van AEM** binnen een Programma van Cloud Manager aan bestaand, [ gesteund ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) VPN te verbinden. VPN staat veilige en gecontroleerde verbindingen tussen AEM as a Cloud Service en de diensten binnen het netwerk van de klant toe.
 
@@ -51,7 +57,11 @@ Voor het instellen van een Virtual Private Network met Cloud Manager API&#39;s i
 
 Voor meer details [ overzicht hoe te opstelling, vorm, en verkrijg de geloofsbrieven van de Manager van de Wolk API ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), om hen te gebruiken om een Cloud Manager API vraag te maken.
 
-Deze zelfstudie gebruikt `curl` om de Cloud Manager API-configuraties te maken. De opgegeven `curl` -opdrachten nemen een Linux/macOS-syntaxis aan. Als u de Windows-opdrachtregel gebruikt, vervangt u het teken voor het `\` regeleinde door `^` .
+>[!IMPORTANT]
+>
+>Dit leerprogramma gebruikt `curl` om de configuraties van Cloud Manager API te maken - *als u een programmatic benadering* verkiest. Voor de geleverde `curl` opdrachten wordt uitgegaan van een Linux®- of macOS-syntaxis. Als u de Windows-opdrachtregel gebruikt, vervangt u het teken voor het `\` regeleinde door `^` .
+>
+>U kunt dezelfde taak ook uitvoeren via de gebruikersinterface van Cloud Manager. *als u de UI benadering* verkiest, zie [ Geavanceerd Voorzien van een netwerk voor AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) vormen.
 
 ## Virtuele privénetwerk per programma inschakelen
 
@@ -71,7 +81,7 @@ Flexibele poortuitgang kan worden ingeschakeld met Cloud Manager. In de volgende
 
    ![ voeg netwerkinfrastructuur ](./assets/cloud-manager__add-network-infrastructure.png) toe
 
-1. In __voeg de dialoog van de netwerkinfrastructuur__ toe, selecteer de __Virtuele privé netwerk__ optie. Vul de gebieden uit en selecteer __verdergaan__. Werk met de netwerkbeheerder van uw organisatie om de correcte waarden te verkrijgen.
+1. In __voeg de dialoogdoos van de netwerkinfrastructuur__ toe, selecteer de __Virtuele privé netwerk__ optie. Vul de gebieden uit en selecteer __verdergaan__. Werk met de netwerkbeheerder van uw organisatie om de correcte waarden te verkrijgen.
 
    ![ voeg VPN ](./assets/vpn/select-type.png) toe
 
@@ -128,7 +138,7 @@ Virtual Private Network kan worden ingeschakeld met Cloud Manager API&#39;s. In 
        -d @./vpn-create.json
    ```
 
-   Definieer de JSON-parameters in een `vpn-create.json` en opgegeven voor krullen via `... -d @./vpn-create.json` .
+   Definieer de JSON-parameters in een `vpn-create.json` -instructie en geef deze als `... -d @./vpn-create.json` op.
 
    [ Download het voorbeeld vpn-create.json ](./assets/vpn-create.json).  Dit bestand is slechts een voorbeeld. Vorm uw dossier zoals vereist gebaseerd op de facultatieve/vereiste gebieden die bij [ worden gedocumenteerd enableEnvironmentAdvancedNetworkingConfiguration ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
@@ -215,7 +225,7 @@ Met VPN gecreeerd, kunt u het nu vormen gebruikend Cloud Manager APIs zoals hier
        -d @./vpn-configure.json
    ```
 
-   Definieer de JSON-parameters in een `vpn-configure.json` en opgegeven voor krullen via `... -d @./vpn-configure.json` .
+   Definieer de JSON-parameters in een `vpn-configure.json` -instructie en geef deze als `... -d @./vpn-configure.json` op.
 
 [Download het voorbeeld vpn-configure.json](./assets/vpn-configure.json)
 
@@ -240,7 +250,7 @@ Met VPN gecreeerd, kunt u het nu vormen gebruikend Cloud Manager APIs zoals hier
    }
    ```
 
-   `nonProxyHosts` verklaart een reeks gastheren waarvoor haven 80 of 443 door de standaard gedeelde IP adreswaaiers eerder dan specifieke uitgang IP zou moeten worden verpletterd. `nonProxyHosts` kan nuttig zijn aangezien het verkeer dat door gedeelde IPs wordt behandeld automatisch door Adobe wordt geoptimaliseerd.
+   `nonProxyHosts` verklaart een reeks gastheren waarvoor haven 80 of 443 door de standaard gedeelde IP adreswaaiers eerder dan specifieke uitgang IP zou moeten worden verpletterd. `nonProxyHosts` kan nuttig zijn als verkeer dat zich door gedeelde IPs verwijdert die Adobe automatisch optimaliseert.
 
    Voor elke `portForwards` afbeelding, bepaalt het geavanceerde voorzien van een netwerk de volgende het door:sturen regel:
 
@@ -263,18 +273,18 @@ Met VPN gecreeerd, kunt u het nu vormen gebruikend Cloud Manager APIs zoals hier
        -H 'Content-Type: application/json'
    ```
 
-3. De virtuele privé configuraties van de netwerkvolmacht kunnen worden bijgewerkt gebruikend de 1} verrichting van Cloud Manager API [ enableEnvironmentAdvancedNetworkingConfiguration. ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) Vergeet niet dat `enableEnvironmentAdvancedNetworkingConfiguration` een `PUT` -bewerking is. Alle regels moeten daarom bij elke aanroep van deze bewerking worden opgegeven.
+3. De virtuele Privé de volmachtsconfiguraties van het Netwerk kunnen worden bijgewerkt gebruikend Cloud Manager API [ enableEnvironmentAdvancedNetworkingConfiguration ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting. Vergeet niet dat `enableEnvironmentAdvancedNetworkingConfiguration` een `PUT` -bewerking is. Alle regels moeten daarom bij elke aanroep van deze bewerking worden opgegeven.
 
 4. Nu, kunt u de Virtuele Privé configuratie van de uitgang van het Netwerk in uw code en configuratie van douaneAEM gebruiken.
 
 ## Verbinding maken met externe services via het Virtual Private Network
 
-Met het Virtuele Privé Toegelaten Netwerk, kunnen de code en de configuratie van AEM hen gebruiken om vraag aan externe diensten via VPN te maken. Er zijn twee flavors van externe vraag die AEM verschillend behandelt:
+Met het Virtuele Privé Toegelaten Netwerk, kunnen de code en de configuratie van AEM hen gebruiken om vraag aan externe diensten door VPN te maken. Er zijn twee flavors van externe vraag die AEM verschillend behandelt:
 
 1. HTTP/HTTPS-aanroepen naar externe services
-   + Omvat HTTP/HTTPS vraag die aan de diensten wordt gemaakt die op havens buiten standaard 80 of 443 havens lopen.
-1. niet-HTTP/HTTPS-aanroepen naar externe services
-   + Omvat om het even welke niet-HTTP vraag, zoals verbindingen met de servers van de Post, SQL gegevensbestanden, of de diensten die op andere niet-HTTP/HTTPS protocollen lopen.
+   + Deze externe services omvatten HTTP/HTTPS-aanroepen naar services die worden uitgevoerd op andere poorten dan de standaardpoorten 80 of 443.
+1. Niet-HTTP/HTTPS-aanroepen naar externe services
+   + Deze externe services omvatten alle niet-HTTP-aanroepen, zoals verbindingen met mailservers, SQL-databases of services die andere protocollen gebruiken dan HTTP/HTTPS.
 
 HTTP/HTTPS-aanvragen van AEM op standaardpoorten (80/443) zijn standaard toegestaan, maar gebruiken de VPN-verbinding niet als deze niet op de hieronder beschreven manier is geconfigureerd.
 
