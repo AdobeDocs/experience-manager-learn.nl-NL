@@ -12,9 +12,9 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
-source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
+source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '1015'
 ht-degree: 0%
 
 ---
@@ -59,15 +59,18 @@ De op OpenAPI gebaseerde AEM API&#39;s ondersteunen OAuth 2.0-verificatie, inclu
 
 - **Voor één enkele Pagina App credential**: Ontworpen voor SPAs die in browser lopen, die tot APIs namens een gebruiker zonder een achtergrondserver moet toegang hebben. Het gebruikt _authentication_code_ verlenen type en baseert zich op cliënt-zijveiligheidsmechanismen gebruikend PKCE (Sleutel van het Bewijs voor de Uitwisseling van de Code) om de stroom van de vergunningscode te beveiligen. Voor meer informatie, zie [ OAuth Enige de credentie van de Pagina App ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/#oauth-single-page-app-credential).
 
-## Verschil tussen OAuth Server-aan-Server en OAuth Web App/Single Page App geloofsbrieven{#difference-between-oauth-server-to-server-and-oauth-web-app-single-page-app-credentials}
+## Verschil tussen OAuth Server-aan-Server vs Web App vs Single Page App geloofsbrieven{#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials}
 
-| | OAuth server-aan-server | OAuth-gebruikersverificatie (web-app) |
-| --- | --- | --- |
-| Verificatiedoel | Ontworpen voor machine-aan-machine interactie. | Ontworpen voor gebruikersgestuurde interacties. |
-| Gedrag token | Geeft toegangstokens uit die de cliënttoepassing zelf vertegenwoordigen. | Geeft toegangstokens uit namens een geverifieerde gebruiker. |
-| Gevallen gebruiken | Ondersteuningsservices die API-toegang zonder gebruikersinteractie nodig hebben. | Webtoepassingen met front-end en backendcomponenten die API&#39;s benaderen namens gebruikers. |
-| Beveiligingsoverwegingen | Sla gevoelige gegevens (`client_id`, `client_secret` ) veilig op in back-endsystemen. | De gebruiker verklaart voor authentiek en wordt verleend hun eigen tijdelijk toegangstoken. Sla gevoelige gegevens (`client_id`, `client_secret` ) veilig op in back-endsystemen. |
-| Type subsidie | _client_credentials_ | _authentication_code_ |
+De volgende tabel geeft een overzicht van de verschillen tussen de drie OAuth-verificatiemethoden die worden ondersteund door AEM API&#39;s die zijn gebaseerd op OpenAPI:
+
+|  | OAuth Server-to-Server | OAuth Web App | OAuth Single Page App (SPA) |
+| --- | --- | --- | --- |
+| **Doelstelling van de Authentificatie** | Ontworpen voor machine-aan-machine interactie. | Ontworpen voor gebruiker-gedreven interactie in een Web app met a _achterste deel_. | Ontworpen voor gebruiker-gedreven interactie in a _cliënt-kant toepassing van JavaScript_. |
+| **Symbolisch Gedrag** | Geeft toegangstokens uit die de cliënttoepassing zelf vertegenwoordigen. | De toegangstokens van kwesties namens een voor authentiek verklaarde gebruiker _via een achtereind_. | De tokens van de toegang van kwesties namens een voor authentiek verklaarde gebruiker _via een voorwaarts-slechts stroom_. |
+| **Gevallen van het Gebruik** | Ondersteuningsservices die API-toegang zonder gebruikersinteractie nodig hebben. | Webtoepassingen met front-end en backendcomponenten die API&#39;s benaderen namens gebruikers. | Pure front-end (JavaScript)-toepassingen die API&#39;s benaderen namens gebruikers zonder back-end. |
+| **Overwegingen van de Veiligheid** | Sla gevoelige gegevens (`client_id`, `client_secret` ) veilig op in back-endsystemen. | Na gebruikersauthentificatie, worden zij verleend hun eigen _tijdelijk toegangstoken via een achterste vraag_. Sla gevoelige gegevens (`client_id`, `client_secret` ) veilig op in back-endsystemen om machtigingscode voor toegangstoken uit te wisselen. | Na gebruikersauthentificatie, worden zij verleend hun eigen _tijdelijk toegangstoken via een frontend vraag_. Hierbij wordt `client_secret` niet gebruikt, omdat het onveilig is om deze in frontend-apps op te slaan. Verantwoordt op PKCE om vergunningscode voor toegangstoken uit te wisselen. |
+| **Type van Verlening** | _client_credentials_ | _authentication_code_ | _authentication_code_ met **PKCE** |
+| **het Referentietype van Adobe Developer Console** | OAuth Server-to-Server | OAuth Web App | OAuth-app met één pagina |
 
 ## Toegang tot Adobe API&#39;s en verwante concepten{#accessing-adobe-apis-and-related-concepts}
 

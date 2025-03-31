@@ -11,13 +11,13 @@ jira: KT-17430
 thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
-source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
+exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
+source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
 workflow-type: tm+mt
-source-wordcount: '2103'
+source-wordcount: '2104'
 ht-degree: 0%
 
 ---
-
 
 # AEM-API&#39;s op basis van OpenAPI aanroepen met OAuth-app met één pagina
 
@@ -25,7 +25,7 @@ Leer hoe te om op OpenAPI-Gebaseerde AEM APIs op AEM as a Cloud Service aan te h
 
 App-verificatie met één pagina is ideaal voor JavaScript-toepassingen die in de browser worden uitgevoerd. Of ze nu geen back-endserver hebben of toegangstokens moeten ophalen om namens een gebruiker te kunnen communiceren met AEM API&#39;s.
 
-De stroom PKCE breidt OAuth 2.0 _verlenen type van autorisatie_code uit, verbeterend veiligheid door de interceptie van de vergunningscode te verhinderen._ Voor meer informatie, zie het [ Verschil tussen Server-aan-Server OAuth en Web App/Één enkele geloofsbrieven van de PaginaApp ](../overview.md#difference-between-oauth-server-to-server-and-oauth-web-appsingle-page-app-credentials).
+De stroom PKCE breidt OAuth 2.0 _verlenen type van autorisatie_code uit, verbeterend veiligheid door de interceptie van de vergunningscode te verhinderen._ Voor meer informatie, zie het [ Verschil tussen Server-aan-Server vs Web App vs Één enkele sectie van de Toepassing van de Pagina ](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
 
 >[!AVAILABILITY]
 >

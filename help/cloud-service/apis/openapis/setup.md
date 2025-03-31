@@ -12,7 +12,7 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
+source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
@@ -123,7 +123,7 @@ Nadat u het ADC-project hebt gemaakt, moet u de gewenste AEM API&#39;s toevoegen
 
    ![ Uitgezochte authentificatie ](./assets/s2s/select-authentication.png)
 
-   De server-aan-server authentificatie is ideaal voor de backenddiensten die API toegang zonder gebruikersinteractie vereisen. De opties Web App en Single Page App voor verificatie zijn geschikt voor toepassingen die API-toegang nodig hebben namens gebruikers. Zie [ Verschil tussen Server-aan-Server OAuth en de Server App van het Web App/Één enkele Pagina App geloofsbrieven ](./overview.md#difference-between-oauth-server-to-server-and-oauth-web-app-single-page-app-credentials) voor meer informatie.
+   De server-aan-server authentificatie is ideaal voor de backenddiensten die API toegang zonder gebruikersinteractie vereisen. De opties Web App en Single Page App voor verificatie zijn geschikt voor toepassingen die API-toegang nodig hebben namens gebruikers. Zie [ Verschil tussen Server-aan-Server van OAuth vs Web App vs Één enkele geloofsbrieven van de Toepassing van de Pagina ](./overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials) voor meer informatie.
 
 1. Indien nodig kunt u de naam van de API wijzigen om deze gemakkelijker te kunnen identificeren. Voor demo-doeleinden wordt de standaardnaam gebruikt.
 
