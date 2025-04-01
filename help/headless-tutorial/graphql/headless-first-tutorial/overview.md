@@ -12,7 +12,7 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: b0ac4b50-5fe5-41a1-9530-8e593d7000c9
 duration: 89
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: bd0f42fa37b7bbe19bf0d7fc65801198e64cbcd9
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 1%
@@ -20,8 +20,6 @@ ht-degree: 1%
 ---
 
 # AEM Headless, eerste zelfstudie
-
-{{aem-headless-trials-promo}}
 
 Welkom bij de zelfstudie over het ontwikkelen van een webervaring met React, volledig aangedreven door AEM Headless API&#39;s en GraphQL. In deze zelfstudie begeleiden we u door het proces van het maken van een dynamische en interactieve webtoepassing door de kracht van React, Adobe Experience Manager (AEM) Headless API&#39;s en GraphQL te combineren.
 

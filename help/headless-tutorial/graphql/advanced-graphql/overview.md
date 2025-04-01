@@ -8,7 +8,7 @@ role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
 duration: 441
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: bd0f42fa37b7bbe19bf0d7fc65801198e64cbcd9
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
@@ -16,8 +16,6 @@ ht-degree: 0%
 ---
 
 # Geavanceerde concepten van AEM Headless
-
-{{aem-headless-trials-promo}}
 
 Dit leerprogramma van begin tot eind zet het [ basisleerprogramma ](../multi-step/overview.md) voort dat de grondbeginselen van de Hoofdtelefoon van Adobe Experience Manager (AEM) en GraphQL behandelde. De geavanceerde zelfstudie illustreert diepgaande aspecten van het werken met Modellen van het Fragment van de Inhoud, de Fragmenten van de Inhoud, en AEM GraphQL persisted vragen, met inbegrip van het gebruiken van GraphQL persisted vragen in een cliënttoepassing.
 

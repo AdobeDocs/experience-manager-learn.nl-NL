@@ -1,6 +1,6 @@
 ---
-title: Tutorials voor headless in AEM
-description: Een verzameling CMS-zelfstudies zonder koptekst voor Adobe Experience Manager. Lesbestanden verkennen via API, framework en voorbeeldtoepassingen.
+title: Zelfstudies voor headless in AEM
+description: Een verzameling Headless CMS-zelfstudies voor Adobe Experience Manager. Lesbestanden verkennen via API, framework en voorbeeldtoepassingen.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
@@ -8,24 +8,22 @@ level: Beginner
 doc-type: Catalog
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: bd0f42fa37b7bbe19bf0d7fc65801198e64cbcd9
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
 
 ---
 
-# Tutorials voor headless in AEM{#aem-headless-tutorials}
+# Zelfstudies voor headless in AEM{#aem-headless-tutorials}
 
-{{aem-headless-trials-promo}}
-
-Adobe Experience Manager (AEM) heeft meerdere opties om eindpunten zonder kop te definiëren en de inhoud ervan als JSON te leveren. Gebruik praktische zelfstudies om te verkennen hoe u de verschillende opties kunt gebruiken en te kiezen wat bij u past.
+Adobe Experience Manager (AEM) beschikt over meerdere opties om eindpunten zonder kop te definiëren en de inhoud ervan als JSON te leveren. Gebruik praktische zelfstudies om te verkennen hoe u de verschillende opties kunt gebruiken en te kiezen wat bij u past.
 
 >[!TIP]
 >
->Deze inzameling van leerprogramma&#39;s wordt ontworpen voor hen die verkiezen **te leren door** te doen. Als u het leren van concepten van de grond omhoog verkiest, controleer de [ AEM Zwaardeloze Reis van de Ontwikkelaar ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Deze set zelfstudies en de reis vullen elkaar aan.
+>Deze inzameling van leerprogramma&#39;s wordt ontworpen voor hen die verkiezen **te leren door** te doen. Als u het leren concepten van de grond omhoog verkiest, controleer de [ Hoofdloze Reis van de Ontwikkelaar van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Deze set zelfstudies en de reis vullen elkaar aan.
 
-## Tutorials via API
+## Zelfstudies per API
 
 <table>
 <tr>
@@ -87,7 +85,7 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
     </a>
     </div>
     <p>
-    <em> een toepassing van iOS die door GraphQL APIs wordt aangedreven AEM.</em>
+    <em> een toepassing van iOS die door AEM wordt aangedreven GraphQL APIs.</em>
     <p>
   </td>
   <td>
@@ -100,7 +98,7 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
     </a>
     </div>
     <p>
-    <em> een toepassing Android™ die door GraphQL APIs wordt aangedreven te AEM.</em>
+    <em> Een toepassing Android™ die door AEM wordt aangedreven GraphQL APIs.</em>
     </p>
   </td>
   <td>
@@ -119,9 +117,9 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
 </tr>
 </table>
 
-## Tutorials per kader
+## Zelfstudies per kader
 
-Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer hoe AEM meer kan betekenen dan alleen een hoofdloze kwestie, met opties voor in-context authoring en ervaringsbeheer.
+Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer hoe AEM verder kan gaan dan een echte headless use case, met opties voor in-context authoring en ervaringsbeheer.
 
 <table>
 <tr>
@@ -153,15 +151,15 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
-      <img alt="Reageren - SPA Editor" src="./assets/react-spa-editor.png" />
+      <img alt="Reageren - SPA-editor" src="./assets/react-spa-editor.png" />
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
-        <strong> Reageren - SPA Redacteur </strong>
+        <strong> Reageren - de Redacteur van het KUUROORD </strong>
       </a>
     </div>
     <p>
-    <em> gebruik de AEM SPA redacteur om volledige React te leiden app ervaring.</em>
+    <em> gebruik de redacteur van AEM SPA om volledige React te beheren app ervaring.</em>
     <p>
   </td>
 </tr>
