@@ -12,9 +12,9 @@ thumbnail: KT-17428.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 277b4789-b035-4904-b489-c827c970fb55
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: f125cffc72a6f0eb558492f8dde6f4f30bc074ec
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -93,24 +93,25 @@ Bijvoorbeeld, wanneer de aanroeping van de Auteur van AEM Assets API [ 403 fout 
 
 Om de Profielen van het Product voor een AEM API toe te voegen, klik **productprofielen** in de **APIs** sectie van het project ADC, selecteer het gewenste Profiel van het Product in **vorm API** dialoog, en sparen uw veranderingen.
 
-    ![Productprofielen bewerken](../assets/how-to/edit-product-profiles.png)
+![ geef productprofielen ](../assets/how-to/edit-product-profiles.png) uit
 
 Selecteer het gewenste Profiel van het Product (b.v., **de Beheerders van AEM - auteur - Programma XXX - Milieu XXX**) verbonden aan de vereiste diensten, dan sparen uw veranderingen.
 
-    ![Productprofiel selecteren](../assets/how-to/select-product-profile.png)
+![ Uitgezochte Profiel van het Product ](../assets/how-to/select-product-profile.png)
 
 Merk op dat de **Beheerders van AEM - auteur - Programma XXX - het Profiel van het Product van het Milieu XXX** met zowel de **dienst van de Beheerders van AEM** als de **gebruikers van AEM Assets API** dienst wordt geassocieerd. Zonder deze laatste optie wordt het productprofiel niet weergegeven in de lijst met beschikbare productprofielen.
 
-    ![Product Profile Services](../assets/how-to/product-profile-services.png)
+{de Diensten van het Profiel van 0} Product ](../assets/how-to/product-profile-services.png)![
 
 Het **PATCH** verzoek om de activa meta-gegevens bij te werken zou nu zonder kwesties moeten werken.
 
-    ![PATCH-verzoek](../assets/how-to/patch-request.png)
+![ PATCH Verzoek ](../assets/how-to/patch-request.png)
 
 
 >[!TAB  verwijder de Profielen van het Product ]
 
 Om de Profielen van het Product voor een AEM API te verwijderen, **te klikken geef productprofielen** in de **APIs** sectie van het project ADC uit, schrap het gewenste Profiel van het Product in **API** dialoog vormen, en sparen uw veranderingen.
+
 ![ schrap het Profiel van het Product ](../assets/how-to/deselect-product-profile.png)
 
 >[!ENDTABS]
