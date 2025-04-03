@@ -12,7 +12,7 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: 22d3c0058c04a1d812a95a47472f96efaa597513
+source-git-commit: 7212bec910320847e9375dd1956a8cf76df1d579
 workflow-type: tm+mt
 source-wordcount: '2104'
 ht-degree: 0%
@@ -62,7 +62,9 @@ Het project van Adobe Developer Console (ADC) wordt gevormd om de authentificati
 >
 >Het project ADC verstrekt niet a _client_geheime_. In plaats daarvan, produceert het KUUROORD a _code_verifier_ en _code_challenge_ om de vergunningscode voor een _toegangstoken_ veilig uit te wisselen. Het elimineert de behoefte om een cliëntgeheim op de cliëntkant op te slaan, die veiligheid verbetert.
 
+
 >[!VIDEO](https://video.tv.adobe.com/v/3456964?quality=12&learn=on)
+
 
 
 Het volgende diagram illustreert de functionele stroom van het KND KUUROORD _die gebruikerspecifieke toegangstoken krijgt om op OpenAPI-Gebaseerde AEM APIs_ aan te halen:
