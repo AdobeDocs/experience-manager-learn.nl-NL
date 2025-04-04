@@ -1,6 +1,6 @@
 ---
 title: CDN in cache plaatsen uitschakelen
-description: Leer hoe u het in cache plaatsen van HTTP-reacties in AEM as a Cloud Service CDN uitschakelt.
+description: Leer hoe u het cachen van HTTP-antwoorden in het CDN van AEM as a Cloud Service kunt uitschakelen.
 version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
@@ -12,14 +12,14 @@ jira: KT-14224
 thumbnail: KT-14224.jpeg
 exl-id: 22b1869e-5bb5-437d-9cb5-2d27f704c052
 duration: 100
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: a98ca7ddc155190b63664239d604d11ad470fdf5
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
 
-# CDN in cache plaatsen uitschakelen
+# Hoe CDN-caching uit te schakelen
 
 Leer hoe u het in cache plaatsen van HTTP-reacties in AEM as a Cloud Service CDN uitschakelt. Het in cache plaatsen van reacties wordt geregeld door `Cache-Control` -, `Surrogate-Control` - of `Expires` HTTP-antwoordcache-headers.
 
@@ -27,16 +27,19 @@ Deze cacheheaders worden doorgaans ingesteld in AEM Dispatcher-hostconfiguraties
 
 ## Standaardgedrag voor caching
 
-Herzie het standaard in het voorgeheugen onderbrengende gedrag voor AEM publiceren en Auteur wanneer een ](./enable-caching.md#default-caching-behavior) gebaseerd project van de Archetype van het Project van AEM [ wordt opgesteld.
+Het in cache plaatsen van HTTP-reacties in de CDN van AEM as a Cloud Service wordt bestuurd door de volgende HTTP-antwoordheaders vanaf de oorsprong `Cache-Control`, `Surrogate-Control` of `Expires` .  Oorspronkelijke reacties die `private` , `no-cache` of `no-store` in `Cache-Control` bevatten, worden niet in de cache geplaatst.
+
+Herzie het [ standaardcaching gedrag ](./enable-caching.md#default-caching-behavior) voor AEM publiceren en Auteur wanneer een project van de Archetype van het Project van AEM gebaseerd AEM wordt opgesteld.
+
 
 ## Cache uitschakelen
 
 Als u caching uitschakelt, kan dit negatieve gevolgen hebben voor de prestaties van uw AEM as a Cloud Service-instantie. Wees daarom voorzichtig bij het uitschakelen van het standaardcachegedrag.
 
-Er zijn echter enkele scenario&#39;s waarin u caching kunt uitschakelen, zoals:
+Er zijn echter enkele scenario&#39;s waarin u caching wilt uitschakelen, zoals:
 
-- Een nieuwe functie ontwikkelen en de wijzigingen direct bekijken.
-- Inhoud is beveiligd (alleen bedoeld voor geverifieerde gebruikers) of dynamisch (winkelwagentje, bestelgegevens) en mag niet in de cache worden opgeslagen.
+- Ben je een nieuwe functie aan het ontwikkelen en wil je de veranderingen direct zien.
+- Inhoud is veilig (alleen bedoeld voor geverifieerde gebruikers) of dynamisch (winkelwagentje, bestelgegevens) en mag niet in de cache worden opgeslagen.
 
 Als u caching wilt uitschakelen, kunt u de cachekoppen op twee manieren bijwerken.
 
@@ -53,20 +56,24 @@ Deze optie wordt aanbevolen voor het uitschakelen van caching, maar is alleen be
 <LocationMatch "$URL$ || $URL_REGEX$">
     # Removes the response header of this name, if it exists. If there are multiple headers of the same name, all will be removed.
     Header unset Cache-Control
+    Header unset Surroagate-Control
     Header unset Expires
 
-    # Instructs the CDN to not cache the response.
-    Header set Cache-Control "private"
+    # Instructs the Browser and the CDN to not cache the response.
+    Header always set Cache-Control "private"
+
+    # Instructs only the CDN to not cache the response.
+    Header always set Surrogate-Control "private"
 </LocationMatch>
 ```
 
 #### Voorbeeld
 
-Om CDN caching van de **CSS inhoudstypes** voor sommige het oplossen van problemendoeleinden onbruikbaar te maken, volg deze stappen.
+Ga als volgt te werk om de CDN-caching van de **CSS-inhoudstypen** uit te schakelen voor bepaalde probleemoplossingsdoeleinden.
 
-Als u de bestaande CSS-cache wilt overslaan, moet u het CSS-bestand wijzigen om een nieuwe cachemoets voor het CSS-bestand te genereren.
+Houd er rekening mee dat, om de bestaande CSS-cache te omzeilen, een wijziging in het CSS-bestand vereist is om een nieuwe cachesleutel voor het CSS-bestand te genereren.
 
-1. Zoek in uw AEM-project het gewenste vhst-bestand in de map `dispatcher/src/conf.d/available_vhosts` .
+1. Zoek in uw AEM-project het gewenste vhsot-bestand uit `dispatcher/src/conf.d/available_vhosts` de map.
 1. Werk het vhost-bestand (bijvoorbeeld `wknd.vhost` ) als volgt bij:
 
    ```
@@ -75,8 +82,8 @@ Als u de bestaande CSS-cache wilt overslaan, moet u het CSS-bestand wijzigen om 
        Header unset Cache-Control
        Header unset Expires
    
-       # Instructs the CDN to not cache the response.
-       Header set Cache-Control "private"
+       # Instructs the Browser and the CDN to not cache the response.
+       Header always set Cache-Control "private"
    </LocationMatch>
    ```
 
