@@ -12,7 +12,7 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: b17e228c33ff2e3f2ee2d7e13da65a648c5df79d
+source-git-commit: 7ec2db883ba485b4062db84630cf94c8ed0967ee
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 0%
@@ -27,6 +27,9 @@ Leer hoe u uw AEM as a Cloud Service-omgeving instelt om toegang tot de op OpenA
 >
 >AEM API&#39;s die zijn gebaseerd op OpenAPI zijn beschikbaar als onderdeel van een vroegtijdig toegangsprogramma. Als u in de toegang tot van hen geinteresseerd bent, moedigen wij u aan om [ aem-apis@adobe.com ](mailto:aem-apis@adobe.com) met een beschrijving van uw gebruiksgeval te e-mailen.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
+
+
 Het installatieproces op hoog niveau omvat de volgende stappen:
 
 1. Modernisering van de AEM as a Cloud Service-omgeving.
@@ -35,14 +38,14 @@ Het installatieproces op hoog niveau omvat de volgende stappen:
 1. ADC-project configureren
 1. Vorm de instantie van AEM om de mededeling van het Project van ADC toe te laten.
 
-## Modernisering van de AEM as a Cloud Service-omgeving
+## Modernisering van de AEM as a Cloud Service-omgeving{#modernization-of-aem-as-a-cloud-service-environment}
 
 De modernisering van het milieu van AEM as a Cloud Service is een eenmalige milieuactiviteit die de volgende stappen omvat:
 
 - Update aan de Versie van AEM **2024.10.18459.20241031T210302Z** of later.
 - Voeg er nieuwe productprofielen aan toe als de omgeving is gemaakt vóór de release 2024.10.18459.20241031T210302Z.
 
-### AEM-instantie bijwerken
+### AEM-instantie bijwerken{#update-aem-instance}
 
 Om de instantie van AEM bij te werken, in de Adobe [ Cloud Manager _van de Milieu_ sectie van 1} {, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **optie van de Update**.](https://my.cloudmanager.adobe.com/)
 
@@ -54,7 +57,7 @@ Dan klik **voorleggen** knoop en stel _gesuggereerde_ FullstackPipeline in werki
 
 In mijn geval, wordt de FullstackPipeline genoemd **Dev:: Fullstack-Deploy**, en het milieu van AEM wordt genoemd **wknd-programma-dev**. Uw namen kunnen verschillen.
 
-### Nieuwe productprofielen toevoegen
+### Nieuwe productprofielen toevoegen{#add-new-product-profiles}
 
 Om nieuwe Profielen van het Product aan de instantie van AEM toe te voegen, in de 2} sectie van de Milieu&#39;s ](https://my.cloudmanager.adobe.com/) van Adobe __, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **toevoegen de optie van de Profielen van het Product**.[
 
@@ -88,7 +91,7 @@ Door gebrek, wordt de **AEM Assets API Gebruikers** Dienst niet geassocieerd met
 >
 >De bovenstaande stap is van essentieel belang om de Server-to-Server-verificatie voor de AEM Assets API in te schakelen. Zonder deze koppeling kan de AEM Assets API niet worden gebruikt met de Server-to-Server verificatiemethode.
 
-## Adobe Developer Console-project (ADC) maken
+## Adobe Developer Console-project (ADC) maken{#adc-project}
 
 Het ADC-project wordt gebruikt om de gewenste API&#39;s toe te voegen, de verificatie ervan in te stellen en de verificatieaccount aan het productprofiel te koppelen.
 
@@ -110,7 +113,7 @@ Een ADC-project maken:
 
    ![ geef projectnaam ](./assets/setup/edit-project-name.png) uit
 
-## ADC-project configureren
+## ADC-project configureren{#configure-adc-project}
 
 Nadat u het ADC-project hebt gemaakt, moet u de gewenste AEM API&#39;s toevoegen, de verificatie ervan instellen en de verificatieaccount aan het productprofiel koppelen.
 
@@ -144,7 +147,7 @@ Nadat u het ADC-project hebt gemaakt, moet u de gewenste AEM API&#39;s toevoegen
 
 Als u **of** OAuth App **authentificatiemethode van de Toepassing van de Toepassing van de enig-Pagina** kiest, wordt de vereniging van het Profiel van het Product niet veroorzaakt maar de toepassing richt URI wordt vereist. De URI voor omleiding van de toepassing wordt gebruikt om de gebruiker na verificatie met een machtigingscode om te leiden naar de toepassing. In de relevante zelfstudies voor gebruiksgevallen worden dergelijke configuraties beschreven die specifiek zijn voor verificatie.
 
-## De AEM-instantie configureren om ADC-projectcommunicatie in te schakelen
+## De AEM-instantie configureren om ADC-projectcommunicatie in te schakelen{#configure-aem-instance}
 
 Om de ClientID van het Project van ADC aan communicatie met de instantie van AEM toe te laten, moet u de instantie van AEM vormen.
 
