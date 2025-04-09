@@ -11,9 +11,9 @@ role: Developer
 level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
 duration: 229
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 0363505b426d6e4733c57409e17e9d69f7a567c7
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
@@ -167,14 +167,7 @@ __Pod cm-p12345-e56789-aem-auteur-abcdefg-2222__
 
 ## Aanbevolen logniveaus{#log-levels}
 
-De algemene Adobe-richtlijnen voor logniveaus per AEM as a Cloud Service-omgeving zijn:
-
-+ Lokale ontwikkeling (AEM SDK): `DEBUG`
-+ Ontwikkeling: `DEBUG`
-+ Werkgebied: `WARN`
-+ Productie: `ERROR`
-
-Het plaatsen van het meest aangewezen logboekniveau voor elk milieutype is met AEM as a Cloud Service, de logboekniveaus worden gehandhaafd in code
+De algemene richtlijnen van Adobe voor logniveaus per AEM as a Cloud Service-omgeving moeten worden nageleefd met de standaardloginstellingen van AEM (met het standaardlogniveau `INFO`). Adobe raadt aan dat ook de aangepaste code van instrumenten wordt voorzien met loginstructies, waardoor deze kan worden uitgevoerd met het logniveau van `INFO` . De logboekniveaus worden gehandhaafd in code
 
 + Java-logconfiguraties worden onderhouden in OSGi-configuraties
 + Apache-webserver en Dispatcher-logniveaus in het verzendingsproject
