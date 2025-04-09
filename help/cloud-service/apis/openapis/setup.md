@@ -12,9 +12,9 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
+source-git-commit: b17e228c33ff2e3f2ee2d7e13da65a648c5df79d
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -68,12 +68,11 @@ Het _Admin Console_ venster toont de onlangs toegevoegde Profielen van het Produ
 
 Met de bovenstaande stappen wordt de modernisering van de AEM as a Cloud Service-omgeving voltooid.
 
-## Toegang tot AEM API&#39;s inschakelen
+## Toegang tot AEM API&#39;s inschakelen{#enable-aem-apis-access}
 
 De aanwezigheid van de _nieuwe Profielen van het Product_ laat op OpenAPI-Gebaseerde toegang van AEM API in Adobe Developer Console (ADC) toe. Rappel dat [ Adobe Developer Console (ADC) ](./overview.md#accessing-adobe-apis-and-related-concepts) de ontwikkelaarshub voor de toegang tot van Adobe APIs, SDKs, gebeurtenissen in real time, serverless functies, en meer is.
 
-De onlangs toegevoegde Profielen van het Product worden geassocieerd met de _Diensten_ die _gebruikersgroepen van AEM met vooraf bepaalde Lijsten van het Toegangsbeheer (ACLs)_ vertegenwoordigen.
-De _Diensten_ worden gebruikt om het niveau van toegang tot AEM APIs te controleren.
+De onlangs toegevoegde Profielen van het Product worden geassocieerd met de _Diensten_ die _gebruikersgroepen van AEM met vooraf bepaalde Lijsten van het Toegangsbeheer (ACLs)_ vertegenwoordigen. De _Diensten_ worden gebruikt om het niveau van toegang tot AEM APIs te controleren.
 
 U kunt de _Diensten_ ook selecteren of schrappen verbonden aan het Profiel van het Product om het niveau van toegang te verminderen of te verhogen.
 
@@ -81,9 +80,13 @@ Herzie de vereniging door op het _pictogram van de Details van de Mening_ naast 
 
 {de diensten van het 0} Overzicht verbonden aan het Profiel van het Product ](./assets/setup/review-services-associated-with-product-profile.png)![
 
-Door gebrek, wordt de **AEM Assets API Gebruikers** Dienst niet geassocieerd met om het even welk Profiel van het Product. Laat ons het met de onlangs toegevoegde **Gebruikers van de Medewerker van AEM Assets associëren - auteur - Programma XXX - Milieu XXX** Profiel van het Product. Na deze vereniging, kan de 20} ActivaAuteur API van het Project ADC _opstelling de gewenste authentificatie en de authentificatierekening associëren met het Profiel van het Product._
+Door gebrek, wordt de **AEM Assets API Gebruikers** Dienst niet geassocieerd met om het even welk Profiel van het Product. Laat ons het met de onlangs toegevoegde **Gebruikers van de Medewerker van AEM Assets associëren - auteur - Programma XXX - Milieu XXX** Profiel van het Product. Na deze vereniging, kan de 20} ActivaAuteur API van het Project ADC _opstelling de gewenste Server-aan-Server authentificatie en de authentificatierekening van het project associëren ADC (die in volgende stap) met het Profiel van het Product wordt gecreeerd._
 
 ![ associeerde de Dienst van de Gebruikers van AEM Assets API met het Profiel van het Product ](./assets/setup/associate-aem-assets-api-users-service-with-product-profile.png)
+
+>[!IMPORTANT]
+>
+>De bovenstaande stap is van essentieel belang om de Server-to-Server-verificatie voor de AEM Assets API in te schakelen. Zonder deze koppeling kan de AEM Assets API niet worden gebruikt met de Server-to-Server verificatiemethode.
 
 ## Adobe Developer Console-project (ADC) maken
 
