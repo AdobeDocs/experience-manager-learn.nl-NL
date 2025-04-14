@@ -11,9 +11,9 @@ thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 891
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 24d634fd1e62e873bc1dbb3ac0cd18f70129ee86
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1370'
 ht-degree: 0%
 
 ---
@@ -214,7 +214,7 @@ Met het specifieke toegelaten adres van uitgang IP, kan de code en de configurat
 
 1. HTTP/HTTPS-aanroepen naar externe services
    + Omvat HTTP/HTTPS vraag die aan de diensten wordt gemaakt die op havens buiten standaard 80 of 443 havens lopen.
-1. niet-HTTP/HTTPS-aanroepen naar externe services
+1. non-HTTP/HTTPS calls to external services
    + Omvat om het even welke niet-HTTP vraag, zoals verbindingen met de servers van de Post, SQL gegevensbestanden, of de diensten die op andere niet-HTTP/HTTPS protocollen lopen.
 
 HTTP/HTTPS-aanvragen van AEM op standaardpoorten (80/443) zijn standaard toegestaan, maar gebruiken het toegewezen IP-adres van de uitgang niet als dit niet op de hieronder beschreven manier is geconfigureerd.
@@ -226,7 +226,7 @@ HTTP/HTTPS-aanvragen van AEM op standaardpoorten (80/443) zijn standaard toegest
 
 ### HTTP/HTTPS
 
-Wanneer u HTTP/HTTPS-verbindingen maakt vanuit AEM, worden bij gebruik van een toegewezen IP-adres voor toegang, HTTP/HTTPS-verbindingen automatisch vanuit AEM opgehaald met behulp van het toegewezen IP-adres voor toegang. Er is geen aanvullende code of configuratie vereist voor ondersteuning van HTTP/HTTPS-verbindingen.
+Wanneer u HTTP/HTTPS-verbindingen maakt vanuit AEM, worden bij gebruik van een toegewezen IP-adres voor toegang, HTTP/HTTPS-verbindingen automatisch vanuit AEM opgehaald met behulp van het toegewezen IP-adres voor toegang. Er is geen aanvullende code of configuratie vereist voor ondersteuning van HTTP/HTTPS-verbindingen, behalve het instellen van een specifiek IP-adres voor toegang tot geavanceerde netwerken.
 
 #### Codevoorbeelden
 
