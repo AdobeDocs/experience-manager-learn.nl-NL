@@ -9,7 +9,7 @@ role: Developer
 level: Experienced
 exl-id: c588bdca-b8a8-4de2-97e0-ba08b195699f
 duration: 50
-source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
+source-git-commit: ed8749f312dc5ad18e047163bcae28d6753b6f8c
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -17,7 +17,6 @@ ht-degree: 0%
 ---
 
 # Adaptief formulier maken op basis van JSON-schema
-
 
 De mogelijkheid om adaptieve Forms te maken op basis van JSON-schema is geïntroduceerd met AEM Forms 6.3-release. De details bij het creëren van Adaptieve Forms met schema JSON worden verklaard in detail in dit [ artikel ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html).
 
@@ -31,8 +30,6 @@ De volgende schermafbeelding toont de verzonden formuliergegevens die zijn opges
 >
 >Zorg ervoor dat het json-schemabestand een juiste naam heeft. De naam van het bestand moet bijvoorbeeld de volgende notatie &lt;name>schema.json hebben. Uw schemabestand kan dus hypotheek.schema.json of credit.schema.json zijn.
 
-
 ![ datastored ](assets/datastored.gif)
-
 
 [ Voorbeeld JSON Schemas die kan worden gebruikt om Aangepaste Forms tot stand te brengen.](assets/samplejsonschemas.zip). Download en decomprimeer het ZIP-bestand om de JSON-schema&#39;s op te halen
