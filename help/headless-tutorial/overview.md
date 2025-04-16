@@ -8,9 +8,9 @@ level: Beginner
 doc-type: Catalog
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: bd0f42fa37b7bbe19bf0d7fc65801198e64cbcd9
+source-git-commit: 46d65df60ce7a4cda7ff3aa3fb21c1ee60f59bc6
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
 </tr>
 </table>
 
-## Zelfstudies per kader
+## Tutorials
 
 Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer hoe AEM verder kan gaan dan een echte headless use case, met opties voor in-context authoring en ervaringsbeheer.
 
@@ -137,6 +137,19 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
     <p>
   </td>
   <td>
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview">
+      <img alt="Reageren - Inhoud bewerken via Universal Editor" src="./assets/react-universal-editor.png" />
+    </a>
+     <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview">
+        <strong> Reageren - geef Inhoud via Universele Redacteur </strong> uit
+      </a>
+    </div>
+    <p>
+    <em> Gebruik de Universele Redacteur om inhoud van een toepassing van het Reageren uit te geven.</em>
+    <p>
+  </td>  
+  <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html">
     <img alt="Reageren - Externe editor" src="./assets/react-remote.png" />
     </a>
@@ -149,6 +162,8 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
     <em> Auteur in-context een gedeelte van ver ontvangen toepassing van het Reageren.</em>
     </p>
   </td>
+</tr>
+<tr>  
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
       <img alt="Reageren - SPA-editor" src="./assets/react-spa-editor.png" />
@@ -162,8 +177,6 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
     <em> gebruik de redacteur van AEM SPA om volledige React te beheren app ervaring.</em>
     <p>
   </td>
-</tr>
-<tr>  
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
     <img alt="Andriod - Inhoudsservices" src="./assets/android.png" />
@@ -190,6 +203,5 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
     <em> bouwt een toepassing Node.js gebruikend ontwikkelaar en de diensttokens voor authentiek te verklaren.</em>
     <p>
   </td>
-  <td></td>
 </tr>
 </table>
