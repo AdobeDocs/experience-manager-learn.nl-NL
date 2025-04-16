@@ -12,7 +12,7 @@ index: y
 doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 62887c6251b09ac22664cfeb9c5513363efb555e
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Hieronder volgen opties voor de oplossing in de volgorde waarin deze dichter bij
 
 Deze optie is alleen beschikbaar voor AEM as a Cloud Service-klanten.
 
-[ AEM-Beheerde CDN ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn) verstrekt een omleidingsoplossing op het niveau van Edge waarbij ronde reizen aan de oorsprong worden verminderd. De [ cliënt-kant richt ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors) eigenschap opnieuw richt staat u toe om de omleidingsregels in de het projectcode van AEM te vormen en op te stellen gebruikend de [ Pijpleiding Config ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager). De grootte van het CDN-configuratiebestand (`cdn.yaml`) mag niet groter zijn dan 100KB.
+[ AEM-Beheerde CDN ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn) verstrekt een omleidingsoplossing op het niveau van Edge waarbij ronde reizen aan de oorsprong worden verminderd. De [ server-kant richt ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#server-side-redirectors) eigenschap opnieuw richt staat u toe om de omleidingsregels in de het projectcode van AEM te vormen en op te stellen gebruikend de [ Pijpleiding Config ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager). De grootte van het CDN-configuratiebestand (`cdn.yaml`) mag niet groter zijn dan 100KB.
 
 Het beheren van omleidingen op Edge- of CDN-niveau heeft prestatievoordelen.
 
