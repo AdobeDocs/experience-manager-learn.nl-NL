@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: ebc609ae621ea5d4d0eba0e28202448b6eaeb8cc
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 6%
+source-wordcount: '454'
+ht-degree: 7%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 6%
 
 + [Overzicht](overview.md)
 
-+ Afspeellijsten met video&#39;s {#video-playlists}
++ Videoafspeellijsten{#video-playlists}
    + [Assets-weergave](playlists/assets-view.md)
    + [Admin-weergave](playlists/admin-view.md)
 
-+ Configureren {#configuring}
++ Configureren{#configuring}
    + [Basislijnmappen](configuring/baseline-folders.md)
    + [Machtigingen basislijn](configuring/baseline-permissions.md)
    + [Tags](configuring/tagging.md)
@@ -34,7 +34,7 @@ ht-degree: 6%
    + [Profielen verwerken](configuring/processing-profiles.md)
    + [Workflows automatisch starten](configuring/auto-start-workflows.md)
 
-+ Authoring {#authoring}
++ Authoring{#authoring}
    + [Weergaven wijzigen](./authoring/switch-views.md)
    + [Navigatie](./authoring/navigation.md)
    + [Basisbewerkingen](./authoring/basic-operations.md)
@@ -50,7 +50,7 @@ ht-degree: 6%
    + [Versies](./collaboration/versions.md)
    + [Taak controleren](./collaboration/review-task.md)
 
-+ Zoeken en detecteren {#search-and-discovery}
++ Zoeken en detecteren{#search-and-discovery}
    + [Zoeken](./search-and-discovery/search.md)
    + [ Contextueel onderzoek ](./search-and-discovery/contextual-search.md)
    + [Adobe Firefly-integratie](./search-and-discovery/adobe-firefly.md)
@@ -58,7 +58,7 @@ ht-degree: 6%
    + [Zoekfunctie](./search-and-discovery/search-boost.md)
    + [Vergelijkbare afbeeldingen zoeken](./search-and-discovery/find-similar-images.md)
 
-+ Geavanceerde mogelijkheden {#advanced}
++ Geavanceerde mogelijkheden{#advanced}
    + [ 3D activa ](./advanced/3d-assets.md)
    + [Annotaties PDF-uitvoer](./advanced/customizing-annotations-pdf-output.md)
    + [Assets-rapporten](./advanced/asset-reports.md)
@@ -70,7 +70,7 @@ ht-degree: 6%
    + [Video gesloten bijschriften](./advanced/video-closed-captions.md)
    + [Watermerken](./advanced/watermarks.md)
 
-+ Geavanceerd metagegevensbeheer {#metadata}
++ Geavanceerd metagegevensbeheer{#metadata}
    + [Trapsgewijze metagegevens](metadata/cascade-metadata-feature-video-use.md)
    + [Slimme tags voor afbeeldingen](metadata/image-smart-tags.md)
    + [Aangepaste slimme tags voor afbeeldingen](metadata/custom-smart-tags.md)
@@ -86,6 +86,8 @@ ht-degree: 6%
    + [Afbeeldingsvarianten met Adobe Express](./content-hub/image-variants.md)
    + [Verzamelingen](./content-hub/collections.md)
    + [Delen](./content-hub/share.md)
+   + Gebruik hoofdletters{#use-cases}
+      + [Elementen beheren](./content-hub/use-cases/manage-assets.md)
 
 + Edge Delivery Services{#edge-delivery-services}
    + [Sidekick-insteekmodule](./edge-delivery-services/sidekick-plugin.md)
@@ -93,7 +95,7 @@ ht-degree: 6%
 + Adobe GenStudio{#adobe-genstudio}
    + [ AEM Assets en GenStudio for Performance Marketing ](https://experienceleague.adobe.com/en/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
 
-+ Delen en distributie {#sharing}
++ Delen en distributie{#sharing}
    + [Elementen downloaden](./sharing/download.md)
    + [Elementen exporteren](./sharing/export.md)
    + [Elementen publiceren](./sharing/publish.md)
@@ -103,20 +105,20 @@ ht-degree: 6%
       + [Asset sourcing configureren](brand-portal/configure-asset-sourcing.md)
       + [Downloads voor uitvoering inschakelen](brand-portal/enable-renditions-download.md)
 
-   + Elementaandeel {#assets-share}
+   + Aandeel in activa{#assets-share}
       + [Commentaar voor het delen van bedrijfsmiddelen](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
       + [Commentaar voor het delen van bedrijfsmiddelen instellen op lokale AEM](./sharing/asset-share-commons-technical-video-setup.md)
       + [Commentaar voor het delen van elementen](./sharing/asset-share-commons-feature-video-theming.md)
       + [Asset Share Commons-assetsets](./sharing/asset-share/asset-share-commons-asset-kits.md)
 
-+ Creative-workflows {#creative-workflows}
++ Creative-workflows{#creative-workflows}
    + [Adobe Express-integratie](./creative-workflows/adobe-express.md)
    + [Adobe Express en AEM Assets](./creative-workflows/adobe-express-aem-assets.md)
    + [AEM Desktop App](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
-+ Adobe Asset Link {#adobe-asset-link}
++ Adobe Asset Link{#adobe-asset-link}
    + [Instellen](./adobe-asset-link/setup.md)
    + [Koppeling met Adobe-middelen openen](./adobe-asset-link/launch-adobe-asset-link.md)
    + [Overzicht van deelvensters](./adobe-asset-link/panel-overview.md)
@@ -129,12 +131,12 @@ ht-degree: 6%
    + [Alleen voor stages (FPO)](./adobe-asset-link/for-placement-only.md)
    + [Zoeken in middelen](./adobe-asset-link/asset-search.md)
 
-+ Inhoud automatiseren {#content-automation}
++ Inhoud automatiseren{#content-automation}
    + [Overzicht](./content-automation/overview.md)
    + [Creative-bewerkingen](./content-automation/creative-operations.md)
    + [Photoshop-acties](./content-automation/photoshop-actions.md)
 
-+ Dynamische media {#dynamic-media}
++ Dynamische media{#dynamic-media}
    + [Dynamisch mediaoverzicht](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Dynamic Media Classic Desktop-toepassing](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Afbeeldingen {#images}
@@ -159,7 +161,7 @@ ht-degree: 6%
       + [Ervaar fragmenten](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Dynamische Media Core-componenten](dynamic-media/dynamic-media-core-components.md)
 
-   + Zelfstudies {#tutorials}
+   + Tutorials {#tutorials}
       + [Carousel-sets maken](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
       + [Afbeeldingssets maken](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
       + [Voorinstellingen voor afbeeldingen maken](dynamic-media/tutorials/creating-image-presets.md)
@@ -175,11 +177,11 @@ ht-degree: 6%
       + [Assets downloaden in Dynamic Media Classic App](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [Dynamic Media Classic IPS-API&#39;s](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
-+ Workfront-integratie {#workfront}
-   + Verbeterde connector {#enhanced-connector}
++ Workfront-integratie{#workfront}
+   + Verbeterde aansluiting{#enhanced-connector}
       + [Verbeterde verbindingsgrondbeginselen](./workfront/enhanced-connector/basics.md)
       + [Projectmappen](./workfront/enhanced-connector/project-folders.md)
-      + AEM Experts-reeks {#aem-experts-series}
+      + AEM Expert-reeks{#aem-experts-series}
          + [Overzicht](./workfront/enhanced-connector/aem-experts-series/overview.md)
          + [Instellen](./workfront/enhanced-connector/aem-experts-series/setup.md)
          + [Workfront-formulieren en AEM-metagegevens](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
@@ -189,13 +191,13 @@ ht-degree: 6%
 + Vertaling {#translation}
    + [Source-bestandsvertaling](translation/source-file-translation-feature-video-use.md)
 
-+ Elementsjablonen {#asset-templates}
++ Elementsjablonen{#asset-templates}
    + [Elementsjablonen](asset-templates/asset-templates-tutorial-understand.md)
    + [Elementsjablonen gebruiken](asset-templates/asset-templates-feature-video-use.md)
    + [Elementsjablonen instellen](asset-templates/asset-templates-technical-video-setup.md)
    + [Elementcatalogi gebruiken](asset-templates/asset-catalog-template-feature-video-use.md)
 
-+ Implementatie {#deployment}
++ Implementatie{#deployment}
    + [Meerdere huurders en gelijktijdige ontwikkeling](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [ Hoofdzaak van Activa ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html) {target=_blank}
++ [ Hoofdzaak van Activa ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html){target=_blank}
