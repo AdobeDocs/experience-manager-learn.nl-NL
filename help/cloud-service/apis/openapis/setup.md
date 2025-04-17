@@ -12,9 +12,9 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 4cdab2b243af74a8075ae65e8f24e7f56ef2a23b
+source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -23,12 +23,7 @@ ht-degree: 0%
 
 Leer hoe u uw AEM as a Cloud Service-omgeving instelt om toegang tot de op OpenAPI gebaseerde AEM API&#39;s mogelijk te maken.
 
->[!AVAILABILITY]
->
->AEM API&#39;s die zijn gebaseerd op OpenAPI zijn beschikbaar als onderdeel van een vroegtijdig toegangsprogramma. Als u in de toegang tot van hen geinteresseerd bent, moedigen wij u aan om [ aem-apis@adobe.com ](mailto:aem-apis@adobe.com) met een beschrijving van uw gebruiksgeval te e-mailen.
-
 >[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
-
 
 Het installatieproces op hoog niveau omvat de volgende stappen:
 
@@ -151,14 +146,13 @@ Als u **of** OAuth App **authentificatiemethode van de Toepassing van de Toepass
 
 Om de ClientID van het Project van ADC aan communicatie met de instantie van AEM toe te laten, moet u de instantie van AEM vormen.
 
-Hiervoor definieert u de API-configuratie in het `config.yaml` -bestand van
-het AEM-project en de implementatie ervan met behulp van de Config Pipeline in de Cloud Manager.
+Het wordt gedaan door de API configuratie in een dossier te bepalen YAML en het op te stellen gebruikend de Pijpleiding Config in Cloud Manager. Het dossier YAML bepaalt toegestane ClientIDs van het Project ADC dat met de instantie van AEM kan communiceren.
 
-1. Zoek in AEM Project het `config.yaml` -bestand in de map `config` of maak dit.
+1. Zoek in AEM Project het `api.yaml` -bestand in de map `config` of maak dit.
 
-   ![ plaats config YAML ](./assets/setup/locate-config-yaml.png)
+   ![ plaats API YAML ](./assets/setup/locate-api-yaml.png){width="500" zoomable="no"}
 
-1. Voeg de volgende configuratie toe aan het `config.yaml` dossier.
+1. Voeg de volgende configuratie toe aan het `api.yaml` dossier.
 
    ```yaml
    kind: "API"
@@ -179,9 +173,9 @@ het AEM-project en de implementatie ervan met behulp van de Config Pipeline in d
 
 1. Leg de configuratiewijzigingen vast en duw de wijzigingen naar de externe Git-opslagplaats waar de Cloud Manager-pijplijn op is aangesloten.
 
-1. Implementeer de bovenstaande wijzigingen met behulp van de configuratiegids in de Cloud Manager. Het `config.yaml` -bestand kan ook worden geïnstalleerd in een RDE met behulp van opdrachtregelprogramma&#39;s.
+1. Implementeer de bovenstaande wijzigingen met behulp van de configuratiegids in de Cloud Manager. Het `api.yaml` -bestand kan ook worden geïnstalleerd in een RDE met behulp van opdrachtregelprogramma&#39;s.
 
-   ![ stel config.yaml ](./assets/setup/config-pipeline.png) op
+   ![ stel YAML ](./assets/setup/config-pipeline.png) op
 
 ## Volgende stappen
 

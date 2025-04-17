@@ -12,9 +12,9 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
 workflow-type: tm+mt
-source-wordcount: '1517'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -106,13 +106,13 @@ Als u AEM Assets Events wilt ontvangen en de Adobe I/O Runtime-actie wilt uitvoe
 
 Om OAuth server-aan-server van het Project van ADC Server-aan-Server referentie ClientID aan communicatie met de instantie van AEM toe te laten, moet u de instantie van AEM vormen.
 
-Hiervoor definieert u de configuratie in het `config.yaml` -bestand in het AEM-project. Implementeer vervolgens het `config.yaml` -bestand met behulp van de Config Pipeline in de Cloud Manager.
+Hiervoor definieert u de configuratie in het `api.yaml` -bestand in het AEM-project. Implementeer vervolgens het `api.yaml` -bestand met behulp van de Config Pipeline in de Cloud Manager.
 
-- Zoek in AEM Project het `config.yaml` -bestand in de map `config` of maak dit.
+- Zoek in AEM Project het `api.yaml` -bestand in de map `config` of maak dit.
 
-  ![ plaats config YAML ](../assets/examples/assets-pim-integration/locate-config-yaml.png)
+  ![ plaats API YAML ](../assets/examples/assets-pim-integration/locate-api-yaml.png)
 
-- Voeg de volgende configuratie toe aan het `config.yaml` dossier.
+- Voeg de volgende configuratie toe aan het `api.yaml` dossier.
 
   ```yaml
   kind: "API"
@@ -134,9 +134,9 @@ Hiervoor definieert u de configuratie in het `config.yaml` -bestand in het AEM-p
 
 - Leg de configuratiewijzigingen vast in de Git-opslagplaats en duw op de wijzigingen in de externe opslagplaats.
 
-- Implementeer de bovenstaande wijzigingen met behulp van de configuratiegids in de Cloud Manager. Het `config.yaml` -bestand kan ook worden geïnstalleerd in een RDE met behulp van opdrachtregelprogramma&#39;s.
+- Implementeer de bovenstaande wijzigingen met behulp van de configuratiegids in de Cloud Manager. Het `api.yaml` -bestand kan ook worden geïnstalleerd in een RDE met behulp van opdrachtregelprogramma&#39;s.
 
-  ![ stel config.yaml ](../assets/examples/assets-pim-integration/config-pipeline.png) op
+  ![ opstellen API YAML ](../assets/examples/assets-pim-integration/config-pipeline.png)
 
 ### Handeling bij uitvoering ontwikkelen
 

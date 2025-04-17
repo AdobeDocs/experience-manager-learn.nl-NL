@@ -12,9 +12,9 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: 3d42029f193f293631585314983956618d707244
+source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2081'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,6 @@ Leer hoe te om op OpenAPI-Gebaseerde AEM APIs op AEM as a Cloud Service aan te h
 App-verificatie met één pagina is ideaal voor JavaScript-toepassingen die in de browser worden uitgevoerd. Of ze nu geen back-endserver hebben of toegangstokens moeten ophalen om namens een gebruiker te kunnen communiceren met AEM API&#39;s.
 
 De stroom PKCE breidt OAuth 2.0 _verlenen type van autorisatie_code uit, verbeterend veiligheid door de interceptie van de vergunningscode te verhinderen._ Voor meer informatie, zie het [ Verschil tussen Server-aan-Server vs Web App vs Één enkele sectie van de Toepassing van de Pagina ](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
-
->[!AVAILABILITY]
->
->AEM API&#39;s die zijn gebaseerd op OpenAPI zijn beschikbaar als onderdeel van een vroegtijdig toegangsprogramma. Als u in de toegang tot van hen geinteresseerd bent, moedigen wij u aan om [ aem-apis@adobe.com ](mailto:aem-apis@adobe.com) met een beschrijving van uw gebruiksgeval te e-mailen.
 
 ## Wat u leert{#what-you-learn}
 

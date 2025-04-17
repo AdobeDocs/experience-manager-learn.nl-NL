@@ -12,9 +12,9 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 9cf7c318-2be4-4b26-bd6f-0c80d002db45
-source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
+source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
 workflow-type: tm+mt
-source-wordcount: '2245'
+source-wordcount: '2213'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,6 @@ ht-degree: 0%
 Leer hoe u op OpenAPI gebaseerde AEM API&#39;s op AEM as a Cloud Service oproept met gebruikersgebaseerde verificatie van een aangepaste webapp die gebruikmaakt van OAuth Web App.
 
 De authentificatie van de Toepassing van het Web OAuth is ideaal voor Webtoepassingen met vooruitstrevende en _achterste_ componenten die **toegang moeten hebben tot AEM APIs namens een gebruiker**. Het gebruikt OAuth 2.0 _authentication_code_ verlenen type om een toegangstoken namens de gebruiker te verkrijgen om tot AEM APIs toegang te hebben. Voor meer informatie, zie [ Verschil tussen Server-aan-Server van OAuth vs Web App geloofsbrieven van de Enige Pagina App ](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
-
->[!AVAILABILITY]
->
->AEM API&#39;s die zijn gebaseerd op OpenAPI zijn beschikbaar als onderdeel van een vroegtijdig toegangsprogramma. Als u in de toegang tot van hen geinteresseerd bent, moedigen wij u aan om [ aem-apis@adobe.com ](mailto:aem-apis@adobe.com) met een beschrijving van uw gebruiksgeval te e-mailen.
 
 ## Wat u leert{#what-you-learn}
 

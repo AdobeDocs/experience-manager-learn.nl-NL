@@ -1,5 +1,5 @@
 ---
-title: Invoke OpenAPI-based AEM APIs using OAuth Server-to-Server authentication
+title: AEM API's op basis van OpenAPI aanroepen met OAuth Server-to-Server-verificatie
 description: Leer hoe u op OpenAPI gebaseerde AEM API's op AEM as a Cloud Service aanroept vanuit aangepaste toepassingen met OAuth Server-to-Server-verificatie.
 version: Experience Manager as a Cloud Service
 feature: Developing
@@ -12,9 +12,9 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: b17e228c33ff2e3f2ee2d7e13da65a648c5df79d
+source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1687'
 ht-degree: 0%
 
 ---
@@ -25,15 +25,11 @@ Leer hoe te om op OpenAPI-Gebaseerde AEM APIs op AEM as a Cloud Service van doua
 
 De verificatie van server-naar-server OAuth is ideaal voor back-endservices die API-toegang zonder gebruikersinteractie nodig hebben. Het gebruikt OAuth 2.0 _client_credentials_ giftype om de cliënttoepassing voor authentiek te verklaren.
 
->[!AVAILABILITY]
->
->AEM API&#39;s die zijn gebaseerd op OpenAPI zijn beschikbaar als onderdeel van een vroegtijdig toegangsprogramma. Als u in de toegang tot van hen geinteresseerd bent, moedigen wij u aan om [ aem-apis@adobe.com ](mailto:aem-apis@adobe.com) met een beschrijving van uw gebruiksgeval te e-mailen.
-
 ## Wat u leert{#what-you-learn}
 
 In deze zelfstudie leert u hoe u:
 
-- Configure an Adobe Developer Console (ADC) project to access the Assets Author API using _OAuth Server-to-Server authentication_.
+- Vorm een project van Adobe Developer Console (ADC) om tot de Auteur API van Assets toegang te hebben gebruikend _Server-aan-Server authentificatie_.
 
 - Ontwikkelen van een voorbeeldtoepassing NodeJS die de Assets-auteur-API aanroept om metagegevens voor een bepaald element op te halen.
 
@@ -137,13 +133,13 @@ De `assetId` is de JCR-UUID van het element met het voorvoegsel `urn:aaid:aem:` 
 
   ![ inspecteer activa ](../assets/s2s/inspect-asset.png)
 
-### Invoke the API using the browser
+### De API aanroepen met de browser
 
-Before developing the application, let&#39;s invoke the API using the **Try it** feature in the [API documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/).
+Alvorens de toepassing te ontwikkelen, laten wij API gebruiken aanhalen gebruikend **het** eigenschap in de [ API documentatie ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) uitproberen.
 
 1. Open de [ documentatie van de AuteurAPI van Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) in browser.
 
-1. Expand the _Metadata_ section and click on the **Delivers the specified asset&#39;s metadata** option.
+1. Vouw de _sectie van Meta-gegevens_ uit en klik op **levert de gespecificeerde meta-gegevens van activa** optie.
 
 1. In de juiste ruit, klik op **probeer het** knoop.
    ![ API documentatie ](../assets/s2s/api-documentation.png)
@@ -172,11 +168,11 @@ De bovenstaande stappen bevestigen de modernisering van de AEM as a Cloud Servic
 
 Laten we een voorbeeld-NodeJS-toepassing ontwikkelen.
 
-To develop the application, you can either use the _Run-the-sample-application_ or the _Step-by-step-development_ instructions.
+Om de toepassing te ontwikkelen, kunt u of de _in werking stellen-steekproef-toepassing_ of de _Stap-door-stap-ontwikkeling_ instructies gebruiken.
 
 >[!BEGINTABS]
 
->[!TAB Run-the-sample-application]
+>[!TAB  looppas-de-steekproef-toepassing ]
 
 1. Download het steekproef [ demo-nodejs-app-to-invoke-aem-openapi ](../assets/s2s/demo-nodejs-app-to-invoke-aem-openapi.zip) toepassingsZIP dossier en haal het uit.
 
@@ -378,7 +374,7 @@ De belangrijkste callouts van de code van de steekproeftoepassing NodeJS zijn:
    ...
    ```
 
-1. **API Invocation**: Invokes the Assets Author API to retrieve metadata for a specific asset by providing the access token for authorization.
+1. **API Oproepen**: Roept de auteur API van Assets aan om meta-gegevens voor een specifiek middel terug te winnen door het toegangstoken voor vergunning te verstrekken.
 
    ```javascript
    // Function to retrieve metadata for a specific asset from AEM
@@ -422,9 +418,9 @@ Voer de volgende stappen uit om te controleren of de technische gebruiker en geb
 
 - In de dienst van de Auteur van AEM, navigeer aan **Hulpmiddelen** > **Veiligheid** > **Gebruikers** en onderzoek naar de **Technische waarde van de Rekening E-mail**.
 
-  ![Technical Account User](../assets/s2s/technical-account-user.png)
+  ![ Gebruiker van de Technische Rekening ](../assets/s2s/technical-account-user.png)
 
-- Click on the technical account user to view the user details, like **Groups** membership. As shown below, the technical account user is associated with the **AEM Assets Collaborator Users - author - Program XXX - Environment XXX** and **AEM Assets Collaborator Users - Service** user groups.
+- Klik op de technische rekeningsgebruiker om de gebruikersdetails, als **Groepen** lidmaatschap te bekijken. Zoals hieronder getoond, wordt de technische rekeningsgebruiker geassocieerd met de **Gebruikers van de Medewerker van AEM Assets - auteur - Programma XXX - Milieu XXX** en **Gebruikers van de Medewerker van AEM Assets - de gebruikersgroepen van de Dienst**.
 
   ![ Technisch Lidmaatschap van de Gebruiker van de Rekening ](../assets/s2s/technical-account-user-membership.png)
 
@@ -440,7 +436,7 @@ Voer de volgende stappen uit om te controleren of de technische gebruiker en geb
 
 _LEZEN_ de activa meta-gegevens, heeft de technische rekeningsgebruiker die voor de referentie van Server-aan-Server OAuth wordt gecreeerd de noodzakelijke toestemmingen via de gebruikersgroep van de Diensten (bijvoorbeeld, de Gebruikers van de Medewerker van AEM Assets - Dienst).
 
-However, to _Create, Update, Delete_ (CUD) the asset metadata, the technical account user requires additional permissions. U kunt dit controleren door de API aan te roepen met een niet-GET-aanvraag (bijvoorbeeld PATCH, DELETE) en de 403-foutreactie te bekijken.
+Nochtans, om _te creëren, bij te werken, schrapt_ (CUD) de activa meta-gegevens, vereist de technische rekeningsgebruiker extra toestemmingen. U kunt dit controleren door de API aan te roepen met een niet-GET-aanvraag (bijvoorbeeld PATCH, DELETE) en de 403-foutreactie te bekijken.
 
 Laten wij het _PATCH_ verzoek aanhalen om de activa meta-gegevens bij te werken en de 403 foutenreactie waar te nemen.
 
