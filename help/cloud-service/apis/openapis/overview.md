@@ -12,9 +12,9 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
-source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
+source-git-commit: 182d7b76411ab885ab93b7724b97bf75cc52323c
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -45,10 +45,6 @@ De [ Specificatie OpenAPI ](https://swagger.io/specification/) (die vroeger als 
 
 In toekomstige versies worden meer op OpenAPI gebaseerde AEM API&#39;s toegevoegd ter ondersteuning van extra gebruiksgevallen.
 
->[!AVAILABILITY]
->
->AEM API&#39;s die zijn gebaseerd op OpenAPI zijn beschikbaar als onderdeel van een vroegtijdig toegangsprogramma. Als u in de toegang tot van hen geinteresseerd bent, moedigen wij u aan om [ aem-apis@adobe.com ](mailto:aem-apis@adobe.com) met een beschrijving van uw gebruiksgeval te e-mailen.
-
 ## Verificatieondersteuning{#authentication-support}
 
 De op OpenAPI gebaseerde AEM API&#39;s ondersteunen OAuth 2.0-verificatie, inclusief de volgende typen subsidies:
@@ -71,6 +67,7 @@ De volgende tabel geeft een overzicht van de verschillen tussen de drie OAuth-ve
 | **Overwegingen van de Veiligheid** | Sla gevoelige gegevens (`client_id`, `client_secret` ) veilig op in back-endsystemen. | Na gebruikersauthentificatie, worden zij verleend hun eigen _tijdelijk toegangstoken via een achterste vraag_. Sla gevoelige gegevens (`client_id`, `client_secret` ) veilig op in back-endsystemen om machtigingscode voor toegangstoken uit te wisselen. | Na gebruikersauthentificatie, worden zij verleend hun eigen _tijdelijk toegangstoken via een frontend vraag_. Hierbij wordt `client_secret` niet gebruikt, omdat het onveilig is om deze in frontend-apps op te slaan. Verantwoordt op PKCE om vergunningscode voor toegangstoken uit te wisselen. |
 | **Type van Verlening** | _client_credentials_ | _authentication_code_ | _authentication_code_ met **PKCE** |
 | **het Referentietype van Adobe Developer Console** | OAuth Server-to-Server | OAuth Web App | OAuth-app met één pagina |
+| **Leerprogramma** | [ Oproep API gebruikend Server-aan-Server authentificatie ](./use-cases/invoke-api-using-oauth-s2s.md) | [ Oproep API gebruikend de authentificatie van de App van het Web ](./use-cases/invoke-api-using-oauth-web-app.md) | [ Oproep API gebruikend de Enige authentificatie van de Toepassing van de Pagina ](./use-cases/invoke-api-using-oauth-single-page-app.md) |
 
 ## Toegang tot Adobe API&#39;s en verwante concepten{#accessing-adobe-apis-and-related-concepts}
 
