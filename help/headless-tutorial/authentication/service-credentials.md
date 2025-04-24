@@ -12,7 +12,7 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 duration: 881
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '1963'
 ht-degree: 0%
@@ -149,7 +149,7 @@ function getCommandLineParams() {
 
 Nadat de servicekredieten zijn gelezen, worden deze gebruikt om een JWT te genereren die vervolgens wordt uitgewisseld met Adobe IMS API&#39;s voor een toegangstoken. Dit toegangstoken kan dan worden gebruikt om tot AEM as a Cloud Service toegang te hebben.
 
-Deze voorbeeldtoepassing is gebaseerd op Node.js, dus het is beter om [@adobe/jwt-auth ](https://www.npmjs.com/package/@adobe/jwt-auth) npm module te gebruiken om de (1) productie van JWT en (20 uitwisseling met Adobe IMS te vergemakkelijken. Als uw toepassing gebruikend een andere taal wordt ontwikkeld, te herzien gelieve [ de aangewezen codesteekproeven ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) op hoe te om het verzoek van HTTP aan Adobe IMS te construeren gebruikend andere programmeertalen.
+Deze voorbeeldtoepassing is gebaseerd op Node.js, dus het is beter om [@adobe/jwt-auth ](https://www.npmjs.com/package/@adobe/jwt-auth) npm module te gebruiken om de (1) productie van JWT en (20 uitwisseling met Adobe IMS te vergemakkelijken. Als uw toepassing gebruikend een andere taal wordt ontwikkeld, te herzien gelieve [ de aangewezen codesteekproeven ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples) op hoe te om het verzoek van HTTP aan Adobe IMS te construeren gebruikend andere programmeertalen.
 
 1. Werk `getAccessToken(..)` bij om de inhoud van het JSON-bestand te inspecteren en te bepalen of dit een token of servicerecertificaat voor lokale ontwikkelingstoegang vertegenwoordigt. Dit kan eenvoudig worden bereikt door te controleren op het bestaan van de eigenschap `.accessToken` , die alleen bestaat voor Local Development Access Token JSON.
 
