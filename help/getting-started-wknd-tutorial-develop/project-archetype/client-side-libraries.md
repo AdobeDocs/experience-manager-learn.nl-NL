@@ -12,9 +12,9 @@ doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
 duration: 557
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 3ad201aad77e71b42d46d69fdda50bcc77316151
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2432'
 ht-degree: 0%
 
 ---
@@ -394,14 +394,6 @@ Deze techniek is handig als de meeste stijlen en front-end code worden uitgevoer
    > De afbeeldingsbron van de statische markering verwijst naar een live-afbeeldingscomponent op een lokale AEM-instantie. Afbeeldingen worden verbroken weergegeven als het pad naar de afbeelding verandert, als AEM niet wordt gestart of als de browser zich niet heeft aangemeld bij de lokale AEM-instantie. Als u de afbeelding naar een externe bron afgeeft, is het ook mogelijk de afbeeldingen te vervangen door statische verwijzingen.
 
 1. U kunt **tegenhouden** de webpack server van de bevellijn door `CTRL+C` te typen.
-
-### geaëerd {#develop-aemfed}
-
-**[geaemfed ](https://aemfed.io/)** is een open-bron, bevel-lijn hulpmiddel dat kan worden gebruikt om front-end ontwikkeling te versnellen. Het wordt aangedreven door [ aemsync ](https://www.npmjs.com/package/aemsync), [ BrowserSync ](https://browsersync.io/), en [ het Sling Logtrekker ](https://sling.apache.org/documentation/bundles/log-tracers.html).
-
-Op een hoog niveau, wordt `aemfed` ontworpen om aan dossierveranderingen binnen de **ui.apps** module te luisteren en hen automatisch te synchroniseren direct aan een lopende instantie van AEM. Op basis van de wijzigingen wordt een lokale browser automatisch vernieuwd, waardoor de ontwikkeling aan de voorkant sneller gaat. Het wordt ook gebouwd om met de Traceur van het Logboek van het Sling te werken om het even welke server-zijfouten direct in de terminal automatisch te tonen.
-
-Als u veel werk binnen de {**module 0} ui.apps doet, wijzigend manuscripten HTML, en creërend douanecomponenten,** geaëerd **kan een krachtig hulpmiddel zijn om te gebruiken.** [ Volledige documentatie kan hier ](https://github.com/abmaonline/aemfed) worden gevonden.
 
 ### Fouten opsporen in clientbibliotheken {#debugging-clientlibs}
 

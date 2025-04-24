@@ -11,9 +11,9 @@ last-substantial-update: 2022-07-20T00:00:00Z
 doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
 duration: 4537
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 3ad201aad77e71b42d46d69fdda50bcc77316151
 workflow-type: tm+mt
-source-wordcount: '2394'
+source-wordcount: '2379'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,6 @@ Wanneer u een IDE gebruikt, moet u `classic` controleren op het tabblad Geweven 
 
 * [**Download** ](https://code.visualstudio.com/Download) **Code van Visual Studio**
 * **[repo ](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)** - FTP-als hulpmiddel voor inhoud JCR
-* **[geaemfed ](https://aemfed.io/)** - versneller uw voorste-eindwerkschema van AEM
 * **[de Synchronisatie van AEM ](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - Communautaire gesteunde &#42; uitbreiding voor de Code van Visual Studio
 * **[WKND project ](https://github.com/adobe/aem-guides-wknd)** - het project van AEM van het voorbeeld dat in deze video wordt getoond.
 
@@ -189,8 +188,7 @@ Wanneer u een IDE gebruikt, moet u `classic` controleren op het tabblad Geweven 
 * 00:53 - bouw en stel broncode met Maven op
 * 04:03 - Push code changes with Repo command-line tool
 * 08:29 - Pull code changes with Repo command-line tool
-* 10:40 - Push code changes with aemfed tool
-* 14:24 - Problemen oplossen, Clientbibliotheken opnieuw samenstellen
+* 10:32 - Problemen oplossen, Clientbibliotheken opnieuw samenstellen
 
 ### [!DNL CRXDE Lite]
 
