@@ -11,9 +11,9 @@ jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 2e37165d-c003-4206-8133-54e37ca35b8e
 duration: 166
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 1049f605eb1c3b68e70e34d4cdad31858b076858
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -94,6 +94,22 @@ Als u een nieuwe versie van een extensie wilt implementeren, moet u deze eerst i
 1. Login aan [ Adobe Exchange ](https://exchange.adobe.com/)
 1. Navigeer aan __leidt__ > __de Apps van App Builder__
 1. __trekt__ de bij te werken Uitbreiding in
+
+Na het intrekken van de extensie is deze nog steeds zichtbaar met de ingetrokken status in Extensiebeheer. Om het volledig te verwijderen moet u het project verwijderen.
+
+De knoop om project te verwijderen is op hoogste recht:
+
+![ knoop van de Schrapping ](./assets/deploy/extension-delete-button.png){align="center"}
+
+Zolang de extensie niet is ingetrokken, kan het project niet worden verwijderd:
+
+![ Project kan niet worden geschrapt ](./assets/deploy/extension-can-not-delete-project.png){align="center"}
+
+Wanneer de extensie wordt ingetrokken, kan het project worden verwijderd:
+
+![ Project kan niet worden geschrapt ](./assets/deploy/extension-delete-procject.png){align="center"}
+
+Nadat u het project hebt verwijderd, is de extensie niet meer zichtbaar in Extension Manager.
 
 ### De extensie implementeren
 
