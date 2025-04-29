@@ -12,9 +12,9 @@ level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
 duration: 54
-source-git-commit: bd0f42fa37b7bbe19bf0d7fc65801198e64cbcd9
+source-git-commit: 888b00396f1d5d0b2dcb6895affdadf2907162fa
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ U hebt het volgende nodig om deze zelfstudie te volgen:
 
 ### AEM-omgeving
 
-Als u deze zelfstudie wilt voltooien, kunt u het beste AEM Administrator-toegang tot een AEM as a Cloud Service-omgeving geven. Als u geen toegang tot een milieu van AEM as a Cloud Service hebt, gelieve [ omhoog voor de Hoofdloze proef van AEM ](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en) te ondertekenen om AEM te onderzoeken zonder hoofd mogelijkheden.
+Als u deze zelfstudie wilt voltooien, kunt u het beste AEM Administrator-toegang tot een AEM as a Cloud Service-omgeving geven.
 
 ## Laten we beginnen!
 
