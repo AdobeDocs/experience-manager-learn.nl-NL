@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: Experience Manager 6.4, Experience Manager 6.5
 index: y
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: c4b5a015f1c0d5e3877886052476871548ec9b0e
 workflow-type: tm+mt
-source-wordcount: '2101'
+source-wordcount: '2104'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 1%
    + [Werkstroom voor betaalde tijd uit aanvraag](handling-form-submissions/paid-time-off-request-workflow.md)
    + [Adaptief formulier configureren om AEM-workflow te activeren - video](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
    + [Taakmelding toewijzen aanpassen](handling-form-submissions/customize-assign-task-notification.md)
-+ Nuttige integratie {#some-useful-integrations}
++ Nuttige integratie{#some-useful-integrations}
    + [Verificatie met twee factoren](some-useful-integrations/two-factor-authentication.md)
    + [OCR-gegevensextractie](some-useful-integrations/ocr-data-extraction.md)
    + [Cascading drop-down lijsten](some-useful-integrations/geonames-org.md)
@@ -106,44 +106,44 @@ ht-degree: 1%
    + [HTML5 Forms vooraf vullen](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Formuliergegevensmodel met Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Items dynamisch aan keuzeselectie-component toevoegen](adaptive-forms/choice-group-items-adding-dynamically-article.md)
-+ Een PDF-formulier vullen met ChatBot {#chatbot-and-aem-forms}
++ Een PDF-formulier vullen met ChatBot{#chatbot-and-aem-forms}
    + [1 - Inleiding](chatbot-and-aem-forms/introduction.md)
    + [2 - Parse ChatBot-gegevens](chatbot-and-aem-forms/parse-chat-bot-data.md)
    + [3 - PDF maken](chatbot-and-aem-forms/merge-data-with-template.md)
-+ Op kerncomponenten gebaseerde formulieren {#core-component-based-forms}
++ Op kerncomponenten gebaseerde formulieren{#core-component-based-forms}
    + [Toegang tot formuliergegevens via GuideBridge API](core-components/submit-data-using-guidebridge-api.md)
-+ DAM-mapinhoud selecteren en samenstellen {#select-dam-folder-content}
++ DAM-mapinhoud selecteren en samenstellen{#select-dam-folder-content}
    + [1- Inleiding](display-and-assemble-dam-folder-contents/introduction.md)
    + [2 - Formaat keuzegroep](display-and-assemble-dam-folder-contents/populating-choice-group-with-dam-folder-content.md)
    + [3 - Geselecteerde elementen samenstellen](display-and-assemble-dam-folder-contents/assemble-selected-newsletters.md)
    + [4 - De elementen lokaal implementeren](display-and-assemble-dam-folder-contents/deploy-on-your-system.md)
-+ Aangepast formulier vooraf invullen met formuliergegevensmodel {#prefill-fdm-db}
++ Aangepast formulier vooraf invullen met formuliergegevensmodel{#prefill-fdm-db}
    + [1 - Inleiding](prefill-fdm-db/introduction.md)
    + [2 - Databasetabellen maken](prefill-fdm-db/create-database-tables.md)
    + [3 - Formuliergegevensmodel configureren](prefill-fdm-db/configuring-form-data-model.md)
    + [4 - Aanvraagparameter ophalen](prefill-fdm-db/get-request-parameter.md)
    + [5 - Een adaptief formulier maken](prefill-fdm-db/create-adaptive-form.md)
-+ UI Tips and Tricks {#ui-tips-and-tricks}
++ UI-tips en -trucs{#ui-tips-and-tricks}
    + [Tekst van wachtwoordveld in-/uitschakelen](ui-tips-tricks/toggle-password.md)
    + [Ruimte, werkbalkknoppen](ui-tips-tricks/toolbar-buttons.md)
    + [Navigeren door tabbladen met geneste deelvensters](ui-tips-tricks/nested-panels.md)
    + [Pictogrammen toevoegen aan navigatievensters](ui-tips-tricks/active-complete.md)
    + [Velden automatisch aanvullen](ui-tips-tricks/auto-complete.md)
-+ Het aanpassen inbox {#inbox-customization}
++ Postvak IN aanpassen{#inbox-customization}
    + [1 - Inleiding](inbox-customization/introduction.md)
    + [2 - Aangepaste kolom toevoegen](inbox-customization/add-married-column.md)
    + [3 - Soortgelijke sjabloon gebruiken](inbox-customization/use-sightly-template.md)
-+ E-mailformulierbijlagen {#zipping-form-attachments}
++ E-mailformulierbijlagen{#zipping-form-attachments}
    + [1 - Inleiding](zipping-form-attachments/introduction.md)
    + [2 - Zip-formulierbijlagen](zipping-form-attachments/custom-process-step.md)
    + [3 - E-mailformulierbijlagen](zipping-form-attachments/populating-list-of-documents.md)
    + [4 - Test de oplossing](zipping-form-attachments/test.md)
-+ Formulier vooraf invullen met gegevens en bijlagen {#prefill-form-with-data-attachments}
++ Formulier vooraf invullen met gegevens en bijlagen{#prefill-form-with-data-attachments}
    + [1 - Inleiding](prefill-form-with-data-attachments/introduction.md)
    + [2 - Aangepaste verzending maken](prefill-form-with-data-attachments/create-custom-submit.md)
    + [3 - OSGi-configuratie maken](prefill-form-with-data-attachments/create-osgi-configuration.md)
    + [4 - Prefill-service maken](prefill-form-with-data-attachments/create-prefill-service.md)
-+ Adaptief formulier opslaan en ophalen {#store-and-retrieve-af-with-2fa}
++ Adaptief formulier opslaan en ophalen{#store-and-retrieve-af-with-2fa}
    + [1 - Inleiding](store-and-retrieve-af-with-2fa/introduction.md)
    + [2 - Data Source configureren](store-and-retrieve-af-with-2fa/configure-data-source.md)
    + [3 - Formulierbijlagen opslaan](store-and-retrieve-af-with-2fa/store-form-attachments.md)
@@ -155,18 +155,18 @@ ht-degree: 1%
    + [9 - Het hoofdformulier maken](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
    + [10 - Het MyAccount-formulier maken](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
    + [11 - Het voorbeeld implementeren](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
-+ Gegevens importeren uit PDF-bestand {#import-data-from-pdf-form}
++ Gegevens importeren uit PDF-bestand{#import-data-from-pdf-form}
    + [1 - Inleiding](import-data-from-pdf-form/introduction.md)
    + [2 - Adaptief formulier maken](import-data-from-pdf-form/create-adaptive-form.md)
    + [3 - OSGi-service maken](import-data-from-pdf-form/create-osgi-service.md)
    + [4 - Aangepast formulier vullen](import-data-from-pdf-form/populate-adaptive-form.md)
    + [5 - Test de oplossing](import-data-from-pdf-form/test-the-solution.md)
-+ Voorgelegde gegevens exporteren in CSV-indeling {#export-submitted-data-csv-format}
++ Verzendgegevens exporteren in CSV-indeling{#export-submitted-data-csv-format}
    + [Verzonden gegevens exporteren](export-submitted-data-csv-format/export-submitted-data-csv.md)
-+ HTML5 Forms {#html5-forms}
++ HTML5 Forms{#html5-forms}
    + [HTML5-formulier maken](html5-forms/create-html5-form.md)
    + [HTML5-formulierverzending verwerken](html5-forms/handle-html5-form-submission.md)
-+ AEM Forms en Acrobat Sign {#forms-and-sign}
++ AEM Forms en Acrobat Sign{#forms-and-sign}
    + [Inleiding](aem-forms-and-adobe-sign/introduction.md)
    + [SSL instellen](aem-forms-and-adobe-sign/set-up-ssl.md)
    + [Acrobat Sign API-toepassing maken](aem-forms-and-adobe-sign/create-adobe-sign-api-application.md)
@@ -180,7 +180,7 @@ ht-degree: 1%
    + [Geconverteerd adaptief formulier configureren](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [XDP-sjablonen gebruiken met Acrobat Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
    + [Acrobat Sign-helpermethoden gebruiken](aem-forms-and-adobe-sign/send-documents-signing-using-sign-api.md)
-+ Meerdere Forms ondertekenen {#sign-multiple-documents}
++ Meerdere Forms ondertekenen{#sign-multiple-documents}
    + [1 - Inleiding](sign-multiple-documents/introduction.md)
    + [2 - Gegevensbron configureren](sign-multiple-documents/configure-data-source.md)
    + [3 - OSGi-service maken](sign-multiple-documents/create-osgi-service.md)
@@ -192,16 +192,16 @@ ht-degree: 1%
    + [9 - Een eerste formulier maken](sign-multiple-documents/create-initial-form.md)
    + [10 - Formulieren maken voor ondertekening](sign-multiple-documents/create-forms-for-signing.md)
    + [11 - De oplossing testen](sign-multiple-documents/testing-and-trouble-shooting.md)
-+ Aangepaste workflowstappen {#custom-workflow-steps}
++ Aangepaste workflowstappen{#custom-workflow-steps}
    + [Knooppunt extraheren uit XML-document](custom-workflow-steps/extract-xml-node.md)
    + [Document opslaan naar bestandssysteem](custom-workflow-steps/write-payload-document.md)
    + [Verzonden gegevens opslaan in tekenreeksvariabele](custom-workflow-steps/save-submitted-data-in-string-variable.md)
    + [Document uitnemen uit lijst met documenten](custom-workflow-steps/extract-document-from-list.md)
-+ Aangepaste workflowcomponent {#custom-workflow-component}
++ Aangepaste workflowcomponent{#custom-workflow-component}
    + [1-Inleiding](custom-workflow-component/introduction.md)
    + [Java-code met 2 schrijven](custom-workflow-component/custom-process-step-aem-workflow.md)
    + [3-workflowcomponent maken](custom-workflow-component/custom-workflow-component.md)
-+ Variabelen in de Werkstroom van AEM {#variables-aem-workflow}
++ Variabelen in AEM Workflow{#variables-aem-workflow}
    + [Inleiding - Variabelen in workflow](variables-aem-workflow/introduction.md)
    + [XML-variabelen](variables-aem-workflow/part1.md)
    + [JSON-variabelen](variables-aem-workflow/part2.md)
@@ -210,11 +210,11 @@ ht-degree: 1%
    + [Formuliergegevensmodelvariabele](variables-aem-workflow/form-data-model.md)
    + [Rule Editor in AEM Workflow](variables-aem-workflow/part5.md)
    + [Logwerkstroomvariabelen](variables-aem-workflow/part6.md)
-+ Formuliergegevens controleren {#review-form-data}
++ Formuliergegevens controleren{#review-form-data}
    + [1 - Inleiding](review-form-data/introduction.md)
    + [2 - Component maken](review-form-data/create-component.md)
    + [3 - Elementen implementeren](review-form-data/deploy-on-your-system.md)
-+ Het opslaan van en het Ophalen van de Gegevens van de Vorm in DB MySQL {#storing-and-retrieving-form-data}
++ Formuliergegevens opslaan en ophalen in MySQL DB{#storing-and-retrieving-form-data}
    + [Inleiding](storing-retrieving-form-data/introduction.md)
    + [Source van gegevens configureren](storing-retrieving-form-data/part1.md)
    + [Service voor het opslaan van gegevens](storing-retrieving-form-data/part3.md)
@@ -222,36 +222,36 @@ ht-degree: 1%
    + [Clientbibliotheek](storing-retrieving-form-data/part4.md)
    + [Adaptief formuliersjabloon](storing-retrieving-form-data/part5.md)
    + [Voorbeeldelementen implementeren](storing-retrieving-form-data/part6.md)
-+ AEM-workflow activeren bij het verzenden van PDF-formulieren {#offline-mobile-form-submission}
++ AEM-workflow activeren bij het verzenden van PDF-formulieren{#offline-mobile-form-submission}
    + [Deel 1](offline-mobile-form-submission/introduction.md)
    + [Deel 2](offline-mobile-form-submission/custom-profile.md)
    + [Deel 3](offline-mobile-form-submission/handle-form-submission.md)
    + [Deel 4](offline-mobile-form-submission/author-servlet.md)
    + [Deel 5](offline-mobile-form-submission/review-workflow.md)
    + [Deel 6](offline-mobile-form-submission/deploy-assets.md)
-+ De AEM-workflow activeren bij het verzenden van mobiele formulieren {#trigger-aem-workflow-on-mobile-form-submission}
++ De AEM-workflow voor het verzenden van mobiele formulieren activeren{#trigger-aem-workflow-on-mobile-form-submission}
    + [Deel 1](trigger-aem-workflow-on-mobile-form-submission/introduction.md)
    + [Deel 2](trigger-aem-workflow-on-mobile-form-submission/handle-form-submission.md)
    + [Deel 3](trigger-aem-workflow-on-mobile-form-submission/author-servlet.md)
    + [Deel 4](trigger-aem-workflow-on-mobile-form-submission/review-workflow.md)
    + [Deel 5](trigger-aem-workflow-on-mobile-form-submission/deploy-assets.md)
-+ Formulierverzendingen aanvragen {#query-form-submissions}
++ Formulierverzendingen aanvragen{#query-form-submissions}
    + [Inleiding](query-form-submissions/introduction.md)
    + [Doorzoekbare velden maken](query-form-submissions/part1.md)
    + [Aangepaste verzending maken](query-form-submissions/part2.md)
    + [Query-interface samenstellen](query-form-submissions/part3.md)
    + [Prefill-service schrijven](query-form-submissions/part4.md)
    + [Het voorbeeld implementeren](query-form-submissions/part5.md)
-+ Aangepaste elementtypen weergeven in Forms Portal {#listing-custom-asset-types}
++ Aangepaste elementtypen weergeven in Forms Portal{#listing-custom-asset-types}
    + [Deel 1-Aangepaste elementtypen registreren](listing-custom-asset-types/part1.md)
    + [Part2 - Aangepaste sjabloon maken](listing-custom-asset-types/part2.md)
-+ AEM Forms met Marketo {#aem-forms-with-marketo}
++ AEM Forms met Marketo{#aem-forms-with-marketo}
    + [Deel 1 - Inleiding](aem-forms-with-marketo/part1.md)
    + [Deel 2 - Data Source](aem-forms-with-marketo/part2.md)
    + [Deel 3 - Formuliergegevensmodel](aem-forms-with-marketo/part3.md)
    + [Deel4 - Alles bijeenbrengen](aem-forms-with-marketo/part4.md)
 
-+ AEM Forms met Adobe Campaign Standard {#aem-forms-with-adobe-campaign}
++ AEM Forms met Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
    + [1 - Inleiding](aem-forms-with-adobe-campaign/aem-forms-with-campaign-standard-getting-started-tutorial.md)
    + [2 - Tokens genereren](aem-forms-with-adobe-campaign/partone.md)
    + [3 - ACS-profiel maken op formulierverzending](aem-forms-with-adobe-campaign/parttwo.md)
@@ -263,7 +263,7 @@ ht-degree: 1%
    + [welkomstkit-component maken](welcome-kit/create-welcomekit-component.md)
    + [Workflowcomponent maken](welcome-kit/create-workflow-component.md)
    + [De oplossing testen](welcome-kit/testing-the-solution.md)
-+ Forms-API zonder koppen {#embed-form-spa}
++ Forms API zonder koppen {#embed-form-spa}
    + [1 - Inleiding](headless-forms/introduction.md)
    + [2 - Afhankelijkheden installeren](headless-forms/install-af-react-libraries.md)
    + [3 - Het formulier ophalen](headless-forms/fetch-the-form.md)
@@ -302,7 +302,7 @@ ht-degree: 1%
    + [Documenten certificeren](document-services/certifying-documents-aem-forms-tutorial.md)
    + [Formulierbijlagen samenstellen](document-services/assemble-form-attachments.md)
    + [Nuttige hulpprogramma&#39;s](document-services/useful-utility-services.md)
-+ Forms Designer {#forms-designer}
++ Forms Designer{#forms-designer}
    + [Ontwerpweergave](forms-designer/design-view.md)
    + [Uw eerste formulier maken](forms-designer/create-simple-form.md)
    + [Formuliersjabloon maken](forms-designer/creating-form-template.md)
@@ -312,11 +312,11 @@ ht-degree: 1%
    + [Scripthandtekening gebruiken](forms-designer/scribble-signature-form.md)
    + [Digitale handtekening gebruiken](forms-designer/adding-dig-signature-field.md)
    + [Reader-verlengformulier](forms-designer/reader-extending-j2ee.md)
-+ AEM Forms Workbench {#forms-workbench}
++ AEM Forms Workbench{#forms-workbench}
    + [Inleiding tot Workbench](aem-forms-workbench/workbench-introduction.md)
    + [Formulierproces maken](aem-forms-workbench/workbench-creating-a-process.md)
    + [Foutopsporingsproces](aem-forms-workbench/workbench-recording-and-testing-process.md)
-+ Interactieve communicatie voor afdrukkanaal
++ Interactieve communicatie voor afdrukkanaal 
 {#ic-print-channel-tutorial}
    + [1 - Inleiding](ic-print-channel-tutorial/introduction.md)
    + [2 - Tomcat instellen](ic-print-channel-tutorial/set-up-tomcat.md)
@@ -343,7 +343,8 @@ ht-degree: 1%
    + [Tabelcomponent gebruiken in AEM Forms Print Channel-document](interactive-communications/table-in-print-channel-documents-video-use.md)
    + [Interactief communicatiedocument voor afdrukkanaal genereren met controlemappen](interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
    + [Teksteditor aanpassen](interactive-communications/customize-text-editor.md)
-
++ ExL NewsLetters{#exl-newsletters}
+   + [Archieven](./newsletters/archives.md)
 + Interactieve communicatie voor webkanaal {#ic-web-channel-tutorial}
    + [1 - Inleiding](ic-web-channel-tutorial/introduction.md)
    + [2 - Tomcat instellen](ic-web-channel-tutorial/partone.md)
