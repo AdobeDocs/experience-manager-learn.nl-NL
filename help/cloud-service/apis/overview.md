@@ -12,9 +12,9 @@ thumbnail: KT-17425.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 7cd9efb62d1afdcc089e1e6260d6cf2fc5495afe
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '999'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ AEM biedt de volgende API&#39;s aan voor interactie met de auteur en voor het pu
 
 | AEM API-type | Beschrijving | Beschikbaarheid | Hoofdletters gebruiken | API-voorbeelden |
 | --- | --- | --- | --- | --- |
-| AEM API&#39;s die zijn gebaseerd op OpenAPI | Gestandaardiseerde, machineleesbare API&#39;s voor Assets, Sites en Forms. | **slechts AEM as a Cloud Service** | API-eerste ontwikkeling, moderne toepassingen | [ de Auteur API van Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/), [ Omslagen API ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/), [ AEM Sites API ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/), [ Forms Acrobat Services ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) en anderen |
+| AEM API&#39;s die zijn gebaseerd op OpenAPI | Gestandaardiseerde, machineleesbare API&#39;s voor Assets, Sites en Forms. | **slechts AEM as a Cloud Service** | API-eerste ontwikkeling, moderne toepassingen | [ de Auteur API van Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/), [ Omslagen API ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/), [ AEM Sites API ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/), [ de Diensten API van het Document van Forms ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) en anderen |
 | RESTful-API&#39;s | Traditionele REST-eindpunten voor interactie met AEM-bronnen. | AEM 6.X, AEM as a Cloud Service | CRUD-bewerkingen, moderne toepassingen | [ HTTP API van Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), [ het REST API van het Werkschema ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-program-interaction#using-the-workflow-rest-api), [ Exporter JSON voor de Diensten van de Inhoud ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter) en anderen |
 | GraphQL API&#39;s | Geoptimaliseerd voor het efficiënt ophalen van gestructureerde inhoud met flexibele query&#39;s. | AEM 6.X, AEM as a Cloud Service | CMS, SPA&#39;s, mobiele apps zonder koppen | [ GraphQL API ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments) |
 | Traditionele (niet-RESTful) API&#39;s | Oudere API&#39;s zoals JCR, Sling Models, Query Builder en andere. | AEM 6.X, AEM as a Cloud Service | Verouderde integratie, achterwaartse compatibiliteit | [ de Bouwer API van de Vraag ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api) en anderen |
