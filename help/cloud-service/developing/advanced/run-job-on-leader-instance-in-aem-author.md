@@ -136,7 +136,7 @@ Dit is vaak problematisch als de baan voor het veranderen van staat, zoals het c
 
 Als u de baan slechts één keer op de dienst van de Auteur van AEM wilt lopen, voeg de [ configuratie van de baanrij ](#how-to-run-a-job-on-the-leader-instance) toe hieronder beschreven.
 
-U kunt het verifiëren door de logboeken van de dienst van de Auteur van AEM in [ Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager) te herzien.
+U kunt het verifiëren door de logboeken van de dienst van de Auteur van AEM in [ Cloud Manager ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager) te herzien.
 
 ![ Baan die door alle instanties wordt verwerkt ](./assets/run-job-once/job-processed-by-all-instances.png)
 

@@ -34,7 +34,7 @@ In deze zelfstudie implementeren we een eenvoudig gebruik waarbij de invullers v
 
 Voor het implementeren van het bovenstaande gebruiksgeval in AEM Forms CS hebt u het volgende nodig
 
-* [ AEM Forms CS wolk klaar instantie ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=en#set-up-aem-author-instance)
+* [ AEM Forms CS wolk klaar instantie ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=nl-NL#set-up-aem-author-instance)
 * [ Azure poortrekening ](https://portal.azure.com/)
 * [ SendGrid Rekening ](https://sendgrid.com/)
 

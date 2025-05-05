@@ -90,7 +90,7 @@ Voer de volgende stappen uit om de machtigingen van de gebruikersgroep services 
 
 - Leg de wijzigingen vast en duw deze naar de opslagplaats.
 
-- Stel de veranderingen in de instantie van AEM op gebruikend de [ volledig-stapelpijpleiding van Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline).
+- Stel de veranderingen in de instantie van AEM op gebruikend de [ volledig-stapelpijpleiding van Cloud Manager ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline).
 
 - U kunt de toestemmingen van de gebruikersgroep ook verifiëren gebruikend de **mening van Toestemmingen**. Navigeer aan de **Hulpmiddelen** > **Veiligheid** > **Toestemmingen** in de instantie van AEM.
 

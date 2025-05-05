@@ -23,7 +23,7 @@ Dit artikel laat zien hoe u REST-oproepen kunt maken om verzonden AEM Forms-gege
 Als u verzonden formuliergegevens wilt opslaan in Azure Storage, moet u de volgende stappen uitvoeren.
 
 >[!NOTE]
->De code in dit artikel werkt niet met op kerncomponenten gebaseerde adaptieve formulieren. [ het gelijkwaardige artikel voor kern op component gebaseerde adaptieve vorm is hier beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+>De code in dit artikel werkt niet met op kerncomponenten gebaseerde adaptieve formulieren. [ het gelijkwaardige artikel voor kern op component gebaseerde adaptieve vorm is hier beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=nl-NL)
 
 
 ## Azure Storage-account maken
@@ -104,7 +104,7 @@ Hieronder vindt u een functie die wordt geschreven om de verzonden formuliergege
 
 * [Het adaptieve voorbeeldformulier importeren](./assets/bank-account-sample-form.zip)
 
-* [ specificeer de aangewezen waarden in de Azure Portal Configuratie gebruikend de OSGi configuratieconsole ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
+* [ specificeer de aangewezen waarden in de Azure Portal Configuratie gebruikend de OSGi configuratieconsole ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=nl-NL#provide-the-blob-sas-token-and-storage-uri)
 
 * [ Voorproef en voorlegt de vorm BankAccount ](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 

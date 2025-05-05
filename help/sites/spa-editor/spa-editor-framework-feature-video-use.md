@@ -40,4 +40,4 @@ De download en installeert het aangewezen [ pakket van het KND SPA ](https://git
 
 Voor een gedetailleerde zelfstudie bij het ontwikkelen met de Redacteur van het KUUROORD zie:
 
-* [ Begonnen het Worden met de Redacteur van AEM SPA en Reageer ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+* [ Begonnen het Worden met de Redacteur van AEM SPA en Reageer ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=nl-NL)

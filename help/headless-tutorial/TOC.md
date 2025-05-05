@@ -20,7 +20,7 @@ ht-degree: 7%
 
 + [Overzicht van AEM Headless](./overview.md)
 + GraphQL {#graphql}
-   + [ AEM Headless Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html){target=_blank}
+   + [ AEM Headless Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL){target=_blank}
    + [Overzicht](./graphql/overview.md)
    + Snelle installatie {#quick-setup}
       + [Cloud Service](./graphql/quick-setup/cloud-service.md)

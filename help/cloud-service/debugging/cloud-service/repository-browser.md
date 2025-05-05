@@ -30,7 +30,7 @@ Browser van de Bewaarplaats is __slechts__ beschikbaar op de milieu&#39;s van AE
 
 Toegang krijgen tot de Repository Browser op AEM as a Cloud Service:
 
-1. Zorg ervoor dat uw gebruiker [ de vereiste toegang ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#access-prerequisites) heeft
+1. Zorg ervoor dat uw gebruiker [ de vereiste toegang ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html?lang=nl-NL#access-prerequisites) heeft
 1. Login aan [ Cloud Manager ](https://my.cloudmanager.adobe.com)
 1. Selecteer het programma met de AEM as a Cloud Service-omgeving waarin u de foutopsporing wilt uitvoeren
 1. Open [ Developer Console ](./developer-console.md) die aan het milieu van AEM as a Cloud Service beantwoorden om te zuiveren
@@ -45,4 +45,4 @@ Browser van de Bewaarplaats opent voor de geselecteerde de dienstrij (Auteur, Pu
 
 ## Toegang voor publiceren en voorvertonen
 
-Standaard is de toegang tot Publiceren of Voorvertoning beperkt, waardoor de beschikbare bronnen in de Repository Browser afnemen. [ om alle middelen bij te bekijken publiceren (of Voorproef) voegt gebruikers aan toe publiceren (of Voorproef) de rol van Beheerders.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#navigate-the-hierarchy)
+Standaard is de toegang tot Publiceren of Voorvertoning beperkt, waardoor de beschikbare bronnen in de Repository Browser afnemen. [ om alle middelen bij te bekijken publiceren (of Voorproef) voegt gebruikers aan toe publiceren (of Voorproef) de rol van Beheerders.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html?lang=nl-NL#navigate-the-hierarchy)

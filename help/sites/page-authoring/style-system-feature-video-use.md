@@ -34,4 +34,4 @@ De getoonde stijlen worden verstrekt door de [ toepassing WKND ](https://github.
 
 Wilt u leren hoe u met het Stijlsysteem kunt ontwikkelen? Bekijk de volgende zelfstudies:
 
-* [ het Ontwikkelen met het Systeem van de Stijl ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
+* [ het Ontwikkelen met het Systeem van de Stijl ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html?lang=nl-NL)

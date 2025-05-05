@@ -30,7 +30,7 @@ Leer hoe de veelvoudige meningen in het KUUROORD door aan de Pagina&#39;s van AE
 
 ## Wat u gaat maken
 
-Dit hoofdstuk zal navigatie aan een KUUROORD in AEM toevoegen. Het navigatiemenu wordt gedreven door de de paginahiërarchie van AEM en zal gebruik maken van het model JSON dat door de [ Component van de Kern van de Navigatie ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html) wordt verstrekt.
+Dit hoofdstuk zal navigatie aan een KUUROORD in AEM toevoegen. Het navigatiemenu wordt gedreven door de de paginahiërarchie van AEM en zal gebruik maken van het model JSON dat door de [ Component van de Kern van de Navigatie ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=nl-NL) wordt verstrekt.
 
 ![ toegevoegde Navigatie ](assets/navigation-routing/navigation-added.png)
 

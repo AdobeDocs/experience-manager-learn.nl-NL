@@ -38,11 +38,11 @@ Bekijk deze video&#39;s over hoe u Assets Essentials kunt gebruiken om uw middel
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html">
+   <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=nl-NL">
    <img alt="Documentatie Assets Essentials" src="./assets/overview/assets-essentials-docs.png"/>
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=nl-NL">
       <strong> documentatie van Assets Essentials </strong>
       </a>
    </div>
@@ -51,11 +51,11 @@ Bekijk deze video&#39;s over hoe u Assets Essentials kunt gebruiken om uw middel
    <p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html">
+   <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=nl-NL">
    <img alt="Adobe Journey Optimizer en Assets Essentials" src="./assets/overview/adobe-journey-optimizer.png" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html">
+      <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=nl-NL">
       <strong> de integratie van Adobe Journey Optimizer </strong>
       </a>
    </div>

@@ -256,8 +256,8 @@ De in deze sectie gedefinieerde aanbevolen procedures hebben betrekking op &quot
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ Documentatie van het Systeem van de Stijl ](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html)
-* [ Creërend de bibliotheken van de Cliënt van AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [ Documentatie van het Systeem van de Stijl ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/authoring/using/style-system.html)
+* [ Creërend de bibliotheken van de Cliënt van AEM ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [ BEM (de Modifier van het Element van het Blok) documentatiewebsite ](https://getbem.com/)
 * [ LESS de website van de Documentatie ](https://lesscss.org/)
 * [ jQuery website ](https://jquery.com/)

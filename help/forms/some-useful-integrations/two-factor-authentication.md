@@ -48,11 +48,11 @@ Gebruik de [ kwikredacteur ](https://editor.swagger.io/) om uw kwikdossier tot s
 
 ## Source voor gegevens maken
 
-Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [ gegevensbron ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) in de configuratie van de wolkendiensten tot stand brengen.
+Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [ gegevensbron ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=nl-NL) in de configuratie van de wolkendiensten tot stand brengen.
 
 ## Formuliergegevensmodel maken
 
-De gegevensintegratie van AEM Forms verstrekt een intuïtief gebruikersinterface om tot stand te brengen en met [ modellen van vormgegevens ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) te werken. Een formuliergegevensmodel is gebaseerd op gegevensbronnen voor gegevensuitwisseling.
+De gegevensintegratie van AEM Forms verstrekt een intuïtief gebruikersinterface om tot stand te brengen en met [ modellen van vormgegevens ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=nl-NL) te werken. Een formuliergegevensmodel is gebaseerd op gegevensbronnen voor gegevensuitwisseling.
 Het voltooide model van vormgegevens kan [ van hier worden gedownload ](assets/sms-2fa-fdm.zip)
 
 ![ fdm ](assets/2FA-fdm.PNG)

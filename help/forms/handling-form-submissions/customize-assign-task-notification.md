@@ -22,14 +22,14 @@ ht-degree: 0%
 # Taakmelding toewijzen aanpassen
 
 De taakcomponent toewijzen wordt gebruikt om taken toe te wijzen aan workflowdeelnemers. Wanneer een taak aan een gebruiker of een groep wordt toegewezen, wordt een e-mailbericht verzonden naar de bepaalde gebruiker of groepsleden.
-Dit e-mailbericht bevat meestal dynamische gegevens die betrekking hebben op de taak. Dit dynamische gegeven wordt opgehaald gebruikend het systeem [ geproduceerde meta-gegevenseigenschappen ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification).
+Dit e-mailbericht bevat meestal dynamische gegevens die betrekking hebben op de taak. Dit dynamische gegeven wordt opgehaald gebruikend het systeem [ geproduceerde meta-gegevenseigenschappen ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html?lang=nl-NL#using-system-generated-metadata-in-an-email-notification).
 Als u waarden uit de verzonden formuliergegevens wilt opnemen in het e-mailbericht, moet u een eigenschap voor aangepaste metagegevens maken en deze eigenschappen voor aangepaste metagegevens in de e-mailsjabloon gebruiken
 
 
 
 ## Aangepaste metagegevenseigenschap maken
 
-De geadviseerde benadering is een component tot stand te brengen OSGI die de methode getUserMetadata van [ WorkitemUserMetadataService ](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--) uitvoert
+De geadviseerde benadering is een component tot stand te brengen OSGI die de methode getUserMetadata van [ WorkitemUserMetadataService ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--) uitvoert
 
 De volgende code leidt tot 4 meta-gegevenseigenschappen (_firstName_, _lastName_, _reden_ en _amountRequested_) en plaatst zijn waarde van de voorgelegde gegevens. Bijvoorbeeld wordt de waarde van het meta-gegevensbezit _firstName_ geplaatst aan de waarde van het element riep firstName van de voorgelegde gegevens. De volgende code gaat ervan uit dat de verzonden gegevens van het adaptieve formulier de XML-indeling hebben. Adaptieve Forms op basis van JSON-schema of formuliergegevensmodel genereert gegevens in JSON-indeling.
 
@@ -128,7 +128,7 @@ Nadat de component OSGi wordt gebouwd en in de server van AEM wordt opgesteld, v
 
 ## Om dit op uw server te proberen
 
-* [ vorm de Dienst van de Post van de Dag CQ ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
+* [ vorm de Dienst van de Post van de Dag CQ ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=nl-NL#configuring-the-mail-service)
 * Koppel een geldige e-mailidentiteitskaart met [ admin gebruiker ](http://localhost:4502/security/users.html)
 * De download en installeert [ werkschema-en-bericht-malplaatje ](assets/workflow-and-task-notification-template.zip) gebruikend [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
 * Download [ Aangepaste Vorm ](assets/request-travel-authorization.zip) en de invoer in AEM van de [ vormen en documenten ui ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).

@@ -23,7 +23,7 @@ ht-degree: 0%
 >id="aemcloud_devops_testresult"
 >title="Testresultaten analyseren"
 >abstract="Bekijk eventuele compilatiefouten in uw code en bepaal of deze code de beste praktijken voor AEM as a Cloud Service volgt"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use" text="De testresultaten begrijpen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=nl-NL#how-to-use" text="De testresultaten begrijpen"
 
 Verken eventuele compilatiefouten in uw code en bepaal of deze code de beste praktijken voor AEM as a Cloud Service volgt
 

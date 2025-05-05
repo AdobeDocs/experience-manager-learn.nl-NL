@@ -25,12 +25,12 @@ Op de AEM-site wordt de inhoud van de website opgeslagen en geschreven. De defin
 
 ![ Nieuwe Plaats van AEM voor Edge Delivery Services en Universele Redacteur ](./assets/2-new-aem-site/new-site.png)
 
-Volg de [ gedetailleerde stappen die in documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-aem-site) worden geschetst om een nieuwe plaats van AEM tot stand te brengen.  Hieronder vindt u een overzicht van de stappen, inclusief de waarden die in deze zelfstudie worden gebruikt.
+Volg de [ gedetailleerde stappen die in documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-aem-site) worden geschetst om een nieuwe plaats van AEM tot stand te brengen.  Hieronder vindt u een overzicht van de stappen, inclusief de waarden die in deze zelfstudie worden gebruikt.
 1. **creeer een nieuwe plaats** in de Auteur van AEM. In deze zelfstudie wordt de volgende sitenaam gebruikt:
    * Titel van site: `WKND (Universal Editor)`
    * Sitenaam: `aem-wknd-eds-ue`
 
-      * De waarde van de plaatsnaam moet de naam van de plaatsweg [ aanpassen die aan `paths.json` ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/path-mapping) wordt toegevoegd.
+      * De waarde van de plaatsnaam moet de naam van de plaatsweg [ aanpassen die aan `paths.json` ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/path-mapping) wordt toegevoegd.
 
 2. **de Invoer het recentste malplaatje** van [ Edge Delivery Services met AEM creërend plaatsmalplaatje ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 3. **Naam de plaats** om de naam van de bewaarplaats aan te passen GitHub en plaats GitHub URL als URL van de bewaarplaats.

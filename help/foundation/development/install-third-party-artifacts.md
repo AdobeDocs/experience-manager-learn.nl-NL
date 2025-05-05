@@ -27,7 +27,7 @@ De **derdeartefacten** kunnen zijn:
 
 - [ OSGi bundel ](https://www.osgi.org/resources/architecture/): Een bundel OSGi is een Java™ archiefdossier dat de klassen, de middelen van Java bevat, en manifest die de bundel en zijn gebiedsdelen beschrijft.
 - [ Java jar ](https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html): Een Java™ archiefdossier dat de klassen en de middelen van Java bevat.
-- [ Pakket ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#what-are-packages): Een pakket is een zip dossier dat bewaarplaats inhoud in dossier-systeem rangschikkingsvorm bevat.
+- [ Pakket ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#what-are-packages): Een pakket is een zip dossier dat bewaarplaats inhoud in dossier-systeem rangschikkingsvorm bevat.
 
 ## Standaardscenario
 
@@ -57,7 +57,7 @@ De redenen hiervoor zouden kunnen zijn:
 
 Voor het volgen van deze zelfstudie hebt u het volgende nodig:
 
-- De [ lokale ontwikkelomgeving van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) of [ Snelle Milieu van de Ontwikkeling (RDE) ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview) opstelling.
+- De [ lokale ontwikkelomgeving van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) of [ Snelle Milieu van de Ontwikkeling (RDE) ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/overview) opstelling.
 
 - Het [ project van AEM WKND ](https://github.com/adobe/aem-guides-wknd) _om de derdebundel of jar of pakket_ toe te voegen en de veranderingen te verifiëren.
 

@@ -26,7 +26,7 @@ U kunt een hechte sjabloon gebruiken om de gegevens op te maken die in kolommen 
 
 ## Correcte sjabloon
 
-Na is het sibleke malplaatje. De code in het malplaatje toont pictogram afhankelijk van het inkomen. De pictogrammen zijn beschikbaar als deel van de [ koral ui pictogrambibliotheek ](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) die met AEM komt.
+Na is het sibleke malplaatje. De code in het malplaatje toont pictogram afhankelijk van het inkomen. De pictogrammen zijn beschikbaar als deel van de [ koral ui pictogrambibliotheek ](https://helpx.adobe.com/nl/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) die met AEM komt.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -80,7 +80,7 @@ return val;
 
 >[!NOTE]
 >
->Dit artikel veronderstelt u het [ steekproefwerkschema ](assets/review-workflow.zip) en [ steekproefvorm ](assets/snap-form.zip) van [ vorig artikel ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html) in deze reeks hebt geïnstalleerd.
+>Dit artikel veronderstelt u het [ steekproefwerkschema ](assets/review-workflow.zip) en [ steekproefvorm ](assets/snap-form.zip) van [ vorig artikel ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html?lang=nl-NL) in deze reeks hebt geïnstalleerd.
 
 * [ Login aan crx als admin gebruiker ](http://localhost:4502/crx/de/index.jsp)
 * [sightsjabloon importeren](assets/sightly-template.zip)

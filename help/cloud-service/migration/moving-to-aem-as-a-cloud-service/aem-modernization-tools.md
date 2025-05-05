@@ -71,7 +71,7 @@ Voordat u de praktische oefening probeert, moet u controleren of u de bovenstaan
 + [AEM as a Cloud Service anders denken](./introduction.md)
 + [Modernisering opslagplaats](./repository-modernization.md)
 + [Meerdere en onveranderlijke inhoud](../../developing/basics/mutable-immutable.md)
-+ [ het projectstructuur van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
++ [ het projectstructuur van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL)
 
 Zorg er ook voor dat u de vorige hands-on oefening hebt uitgevoerd:
 
@@ -103,7 +103,7 @@ Zorg er ook voor dat u de vorige hands-on oefening hebt uitgevoerd:
 
 + [ de Hulpmiddelen van de Modernisaties van AEM van de Download ](https://github.com/adobe/aem-modernize-tools/releases/latest)
 + [ documentatie van Hulpmiddelen van de Modernisering van AEM ](https://opensource.adobe.com/aem-modernize-tools/)
-+ [ AEM Gems - Introducerend de Reeks van de Modernisering van AEM ](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
++ [ AEM Gems - Introducerend de Reeks van de Modernisering van AEM ](https://helpx.adobe.com/nl/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
 
 1. Implementeer de onlangs gemoderniseerde wint-legacy site op de lokale AEM SDK. AEM ASK kan hier worden gedownload:
    + [ Portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).

@@ -306,11 +306,11 @@ async function main (params) {
 
 De volgende AEM HTTP-API&#39;s worden vaak gebruikt voor interactie met AEM vanuit extensies:
 
-+ [ AEM GraphQL APIs ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-+ [ HTTP API van AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html)
-   + [Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html)
-+ [ AEM QueryBuilder API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html)
-+ [ Volledige verwijzing van AEM as a Cloud Service API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/reference-materials.html)
++ [ AEM GraphQL APIs ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
++ [ HTTP API van AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=nl-NL)
+   + [Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=nl-NL)
++ [ AEM QueryBuilder API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=nl-NL)
++ [ Volledige verwijzing van AEM as a Cloud Service API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/reference-materials.html?lang=nl-NL)
 
 
 ## Adobe npm-modules

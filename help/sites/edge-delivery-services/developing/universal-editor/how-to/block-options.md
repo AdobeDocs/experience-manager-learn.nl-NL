@@ -792,4 +792,4 @@ De wijzigingen zijn nu zichtbaar in de Universal Editor wanneer u de query-param
 
 U hebt nu blokopties onderzocht in Edge Delivery Services en de Universele Redacteur, die u de hulpmiddelen geven om inhoud het uitgeven met grotere flexibiliteit aan te passen en te stroomlijnen. Begin deze opties in uw projecten toe te passen om efficiency te verbeteren en consistentie te handhaven.
 
-Voor meer beste praktijken en geavanceerde technieken, controleer de [ Universele documentatie van de Redacteur ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).
+Voor meer beste praktijken en geavanceerde technieken, controleer de [ Universele documentatie van de Redacteur ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).

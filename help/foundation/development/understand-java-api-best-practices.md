@@ -85,20 +85,20 @@ Nieuwe abstracties zoals [!DNL Content Fragments] en [!DNL Experience Fragments]
 
 ### Query-API&#39;s
 
-AEM ondersteunt meerdere querytalen. De drie belangrijkste talen zijn [ JCR-SQL2 ](https://docs.jboss.org/jbossdna/0.7/manuals/reference/html/jcr-query-and-search.html), XPath, en [ de Bouwer van de Vraag van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
+AEM ondersteunt meerdere querytalen. De drie belangrijkste talen zijn [ JCR-SQL2 ](https://docs.jboss.org/jbossdna/0.7/manuals/reference/html/jcr-query-and-search.html), XPath, en [ de Bouwer van de Vraag van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=nl-NL).
 
 De belangrijkste zorg is het handhaven van een verenigbare vraagtaal over de codebasis, om ingewikkeldheid en kosten te verminderen om te begrijpen.
 
 Alle vraagtalen hebben in feite de zelfde prestatiesprofielen, aangezien [!DNL Apache Oak] hen aan JCR-SQL2 voor definitieve vraaguitvoering overstapt, en de omzettingstijd aan JCR-SQL2 verwaarloosbaar in vergelijking met de vraagtijd zelf is.
 
-De aangewezen API is [ de Bouwer van de Vraag van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html), die de hoogste niveauabstractie is en robuuste API voor het construeren, het uitvoeren van, en het terugwinnen van resultaten voor vragen verstrekt, en het volgende verstrekt:
+De aangewezen API is [ de Bouwer van de Vraag van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=nl-NL), die de hoogste niveauabstractie is en robuuste API voor het construeren, het uitvoeren van, en het terugwinnen van resultaten voor vragen verstrekt, en het volgende verstrekt:
 
 * Eenvoudige, parameterized vraagbouw (vraagparams die als Kaart worden gemodelleerd)
-* Eigen [ Java™ API en HTTP APIs ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
-* [ Debugger van de Vraag van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html)
-* [ AEM voorspelt ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-predicate-reference.html) ondersteunend gemeenschappelijke vraagvereisten
+* Eigen [ Java™ API en HTTP APIs ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL)
+* [ Debugger van de Vraag van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=nl-NL)
+* [ AEM voorspelt ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-predicate-reference.html?lang=nl-NL) ondersteunend gemeenschappelijke vraagvereisten
 
-* Uitbreidbare API, die voor de ontwikkeling van douane [ vraagpredikaten ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) toestaat
+* Uitbreidbare API, die voor de ontwikkeling van douane [ vraagpredikaten ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) toestaat
 * JCR-SQL2 en XPath kunnen direct via [[!DNL Sling] worden uitgevoerd ](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) en [ JCR APIs ](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), terugkerend resultaten a [[!DNL Sling]  Middelen ](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) of [ Knooppunten JCR ](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html), respectievelijk.
 
 >[!CAUTION]
@@ -132,7 +132,7 @@ API&#39;s van [!DNL Sling] hebben het extra voordeel dat ze kunnen worden gemaak
    * [ Planner ](https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html)
    * [ Sling Models ](https://sling.apache.org/documentation/bundles/models.html)
 
-* [ de gebruikers van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html)
+* [ de gebruikers van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=nl-NL)
 
 ## JCR-API&#39;s
 
@@ -154,7 +154,7 @@ Hoewel de JCR een AEM-opslagplaats voor inhoud is, hebben de API&#39;s NIET de v
 
 ### Veelvoorkomende toepassingen van JCR API&#39;s
 
-* [ Toegangsbeheer ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html)
+* [ Toegangsbeheer ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=nl-NL)
 * [ Toegelaten beheer (gebruikers/groepen) ](https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/user/package-summary.html)
 * JCR-observatie (luisteren naar JCR-gebeurtenissen)
 * Diepknoopstructuren maken

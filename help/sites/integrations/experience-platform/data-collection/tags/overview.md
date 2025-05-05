@@ -51,6 +51,6 @@ Het volgende wordt vereist wanneer het integreren van de Markeringen van de Inza
 
 ## Aanvullende bronnen {#additional-resources}
 
-+ [ Integraties van het Experience Platform met de Toepassingen van het Experience Cloud ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
-+ [ Overzicht van Markeringen ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [ Uitvoerend het Experience Cloud in Websites met Markeringen ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html)
++ [ Integraties van het Experience Platform met de Toepassingen van het Experience Cloud ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html?lang=nl-NL)
++ [ Overzicht van Markeringen ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl-NL)
++ [ Uitvoerend het Experience Cloud in Websites met Markeringen ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=nl-NL)

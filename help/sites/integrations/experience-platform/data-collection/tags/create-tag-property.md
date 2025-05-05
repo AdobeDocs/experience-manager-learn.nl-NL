@@ -42,7 +42,7 @@ Voer de volgende stappen uit om een eigenschap Tag te maken.
 
 ## Een nieuwe regel maken
 
-Open het onlangs gecreeerde bezit van de Markering door zijn naam in de **mening van de Eigenschappen van de Markering** te klikken. Ook onder _Mijn Recente rubriek van de Activiteit_ zou u moeten zien dat de uitbreiding van de Kern aan het werd toegevoegd. De de markeringsuitbreiding van de Kern is de standaarduitbreiding en het verstrekt fundamentele gebeurtenistypen zoals pagina-lading, browser, vorm, en andere gebeurtenistypen, zie [ de uitbreidingsoverzicht van de Kern ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html) voor meer informatie.
+Open het onlangs gecreeerde bezit van de Markering door zijn naam in de **mening van de Eigenschappen van de Markering** te klikken. Ook onder _Mijn Recente rubriek van de Activiteit_ zou u moeten zien dat de uitbreiding van de Kern aan het werd toegevoegd. De de markeringsuitbreiding van de Kern is de standaarduitbreiding en het verstrekt fundamentele gebeurtenistypen zoals pagina-lading, browser, vorm, en andere gebeurtenistypen, zie [ de uitbreidingsoverzicht van de Kern ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=nl-NL) voor meer informatie.
 
 Met regels kunt u opgeven wat er moet gebeuren als de bezoeker communiceert met uw AEM site. Om dingen eenvoudig te houden, laten wij twee berichten aan de browser console registreren om aan te tonen hoe de integratie van de Markering van de gegevensverzameling JavaScript code in uw AEM plaats kan injecteren zonder AEM de code van het Project bij te werken.
 
@@ -93,4 +93,4 @@ Met de bovenstaande stap wordt het maken van de eenvoudige eigenschap Tag met ee
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ creeer een Bezit van de Markering ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html)
+* [ creeer een Bezit van de Markering ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=nl-NL)

@@ -60,6 +60,6 @@ In deze video worden de volgende pagina-eigenschapelementen behandeld:
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ het uitgeven Documentatie van de Eigenschappen van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html)
-* [ het uitgeven Documentatie van de Inhoud van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [Handleiding Snel aan de slag met de authoring van pagina&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
+* [ het uitgeven Documentatie van de Eigenschappen van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html?lang=nl-NL)
+* [ het uitgeven Documentatie van de Inhoud van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html?lang=nl-NL)
+* [Handleiding Snel aan de slag met de authoring van pagina&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=nl-NL)

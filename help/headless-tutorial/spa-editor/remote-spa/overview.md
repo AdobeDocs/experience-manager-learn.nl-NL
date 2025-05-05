@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Welkom bij de meerdelige zelfstudie voor ontwikkelaars die een bestaande, op React gebaseerde (of Next.js) externe SPA willen uitbreiden met bewerkbare AEM met AEM SPA Editor.
 
-Dit leerprogramma bouwt op [ WKND GraphQL App ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) voort, een React app die AEM inhoud van het Fragment van de Inhoud over AEM GraphQL APIs verbruikt, nochtans verstrekt geen in-context authoring van SPA inhoud.
+Dit leerprogramma bouwt op [ WKND GraphQL App ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL) voort, een React app die AEM inhoud van het Fragment van de Inhoud over AEM GraphQL APIs verbruikt, nochtans verstrekt geen in-context authoring van SPA inhoud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
@@ -47,7 +47,7 @@ Het leerprogramma wordt ontworpen om met **AEM as a Cloud Service** te werken en
 
 Voor deze zelfstudie is het volgende vereist:
 
-+ [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en)
++ [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL)
 + [ Node.js v18 ](https://nodejs.org/en/)
 + [ Java™ 11 ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [ Gemaakt 3.6+ ](https://maven.apache.org/)
@@ -65,7 +65,7 @@ Deze zelfstudie gaat uit van:
 
 >[!NOTE]
 >
-> **Heb hulp bij vestiging uw lokale ontwikkelomgeving nodig?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+> **Heb hulp bij vestiging uw lokale ontwikkelomgeving nodig?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL).
 
 ## 1. Configureer AEM voor SPA Editor
 

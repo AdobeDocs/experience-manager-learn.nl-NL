@@ -79,7 +79,7 @@ We gebruiken best practices van AEM en maken gebruik van:
 
 ## Unit Testing and Adobe Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
-[ Adobe Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) integreert de uitvoering van de eenheidstest en [ codedekking rapporterend ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html) in zijn pijpleiding CI/CD helpen de beste praktijken van eenheid bevorderen die de code van AEM testen.
+[ Adobe Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=nl-NL) integreert de uitvoering van de eenheidstest en [ codedekking rapporterend ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html?lang=nl-NL) in zijn pijpleiding CI/CD helpen de beste praktijken van eenheid bevorderen die de code van AEM testen.
 
 Hoewel het testen van eenheden een goede praktijk voor om het even welke codebasis is, is het belangrijk om bij het gebruiken van Cloud Manager uit zijn het testen en rapporteringsfaciliteiten van de codekwaliteit voordeel te halen door eenheidstests voor Cloud Manager te verstrekken om te lopen.
 

@@ -41,7 +41,7 @@ De stappen op hoog niveau zijn:
    - CDN van de klant - aan opstelling CDN van de klant en voeg SSL certificaten en domeindetails toe, zoals AWS CloudFront, Azure CDN, of Akamai.
    - De het ontvangen dienst van het Systeem van de Naam van het domein (DNS) - om DNS verslagen voor uw douanedomein, zoals Azure DNS, of Route 53 van AWS toe te voegen.
 - De toegang tot [ Cloud Manager van Adobe ](https://my.cloudmanager.adobe.com/) om de bevestigingsregel CDN van de Kopbal van HTTP op te stellen aan het milieu van AEM as a Cloud Service.
-- De plaats van de steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) wordt opgesteld aan het milieu van AEM as a Cloud Service van [ het type van het productieprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
+- De plaats van de steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) wordt opgesteld aan het milieu van AEM as a Cloud Service van [ het type van het productieprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
 
 Als u geen toegang tot derdediensten hebt, _samenwerken met uw veiligheid of het ontvangen team om de stappen_ te voltooien.
 

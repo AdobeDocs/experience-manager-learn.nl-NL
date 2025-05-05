@@ -29,11 +29,11 @@ Leer over **regels van de verkeersfilter**, met inbegrip van zijn subcategorie v
 
 Het verminderen van het risico van inbreuken op de beveiliging is een topprioriteit voor elke organisatie. AEMCS biedt de eigenschap van de het verkeersfilterregels, met inbegrip van de regels van WAF, aan om websites en toepassingen te beschermen.
 
-De filterregels van het verkeer worden opgesteld aan [ ingebouwde CDN ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) en worden geëvalueerd alvorens het verzoek de infrastructuur van AEM bereikt. Met deze functie kunt u de beveiliging van uw website aanzienlijk verbeteren, zodat alleen legitieme verzoeken toegang hebben tot de AEM-infrastructuur.
+De filterregels van het verkeer worden opgesteld aan [ ingebouwde CDN ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=nl-NL) en worden geëvalueerd alvorens het verzoek de infrastructuur van AEM bereikt. Met deze functie kunt u de beveiliging van uw website aanzienlijk verbeteren, zodat alleen legitieme verzoeken toegang hebben tot de AEM-infrastructuur.
 
 Deze zelfstudie begeleidt u door het proces om de resultaten van verkeersfilterregels, waaronder WAF-regels, te maken, te implementeren, te testen en te analyseren.
 
-U kunt meer over de regels van de verkeersfilter in [ dit artikel ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en) lezen.
+U kunt meer over de regels van de verkeersfilter in [ dit artikel ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=nl-NL) lezen.
 
 >[!IMPORTANT]
 >

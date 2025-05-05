@@ -39,8 +39,8 @@ De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 
 De iOS-toepassing werkt met de volgende AEM-implementatieopties. Alle plaatsingen vereisen de [ Plaats van WKND v3.0.0+ ](https://github.com/adobe/aem-guides-wknd/releases/latest) om worden geïnstalleerd.
 
-+ [ AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ De lokale opstelling die [ AEM Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) gebruikt
++ [ AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=nl-NL)
++ De lokale opstelling die [ AEM Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL) gebruikt
 
 De toepassing van iOS wordt ontworpen om met __AEM te verbinden publiceert__ milieu, nochtans kan het inhoud van de Auteur van AEM als de authentificatie in de configuratie van de toepassing van iOS wordt verstrekt.
 
@@ -76,7 +76,7 @@ De toepassing van iOS wordt ontworpen om met __AEM te verbinden publiceert__ mil
 
    __Symbolische authentificatie__
 
-   `AEM_TOKEN` is een [ toegangstoken ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html) dat aan een gebruiker van AEM met toegang tot de inhoud van GraphQL WKND voor authentiek verklaart.
+   `AEM_TOKEN` is een [ toegangstoken ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=nl-NL) dat aan een gebruiker van AEM met toegang tot de inhoud van GraphQL WKND voor authentiek verklaart.
 
    ```plain
    AEM_AUTH_TYPE = token
@@ -333,5 +333,5 @@ Een gelijkaardige benadering kan met SwiftUI-inheemse [ AsyncImage ](https://dev
 
 ## Aanvullende bronnen
 
-+ [ Begonnen het Worden met de Zetel van AEM - Zelfstudie van GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)
++ [ Begonnen het Worden met de Zetel van AEM - Zelfstudie van GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=nl-NL)
 + [ Lijsten SwiftUI en het Leerprogramma van de Navigatie ](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation)

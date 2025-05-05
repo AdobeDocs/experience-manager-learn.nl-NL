@@ -25,7 +25,7 @@ De werkschema&#39;s worden typisch gebruikt om voorgelegde gegevens voor overzic
 
 ## Vereiste
 
-Controleer of je een werkende versie van AEM Forms hebt. Gelieve te volgen de [ installatiegids ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) om AEM Forms te installeren en te vormen
+Controleer of je een werkende versie van AEM Forms hebt. Gelieve te volgen de [ installatiegids ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html?lang=nl-NL) om AEM Forms te installeren en te vormen
 
 In de volgende video wordt uitgelegd hoe u de workflow Revisie en Goedkeuring kunt maken met AEM Forms Components
 >[!VIDEO](https://video.tv.adobe.com/v/40242?quality=12&learn=on)

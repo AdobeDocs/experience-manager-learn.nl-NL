@@ -42,7 +42,7 @@ In deze handleiding bespreken we de volgende kernmogelijkheden van Dynamic Media
 - **Video.** Upload definitieve video&#39;s, publiceer ze en download ze progressief naar configureerbare videoviewers.
 - **Slimme Beeldvorming.** Technologie die gebruikmaakt van Adobe Sensei AI-mogelijkheden en met bestaande &quot;Voorinstellingen afbeelding&quot; werkt om de prestaties van de afbeeldingslevering te verbeteren door de afbeeldingsindeling, -grootte en -kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser.
 
-Om extra mogelijkheden van de oplossing te ontdekken, bezoek de [ Documentatie voor Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
+Om extra mogelijkheden van de oplossing te ontdekken, bezoek de [ Documentatie voor Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html?lang=nl-NL).
 
 ## De gebruikersinterface van Dynamic Media Classic (UI)
 
@@ -72,4 +72,4 @@ _UI van Dynamic Media Classic_
 >
 >Selecteer **Publish na het Uploaden** checkbox in de Upload dialoog om activa op upload automatisch te publiceren.
 
-Leer meer over [ Navigerend UI van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).
+Leer meer over [ Navigerend UI van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html?lang=nl-NL).

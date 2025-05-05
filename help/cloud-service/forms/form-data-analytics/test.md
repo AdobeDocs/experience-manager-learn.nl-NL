@@ -55,7 +55,7 @@ Communiceer met uw formulier terwijl u het consolevenster open houdt. Je moet zo
 
 ## Adobe Experience Platform Debugger gebruiken
 
-Voeg de [ debugger van AEP uitbreiding ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) aan uw browser (u wordt vereist om binnen te ondertekenen) toe om meer het zuiveren informatie te krijgen
+Voeg de [ debugger van AEP uitbreiding ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=nl-NL) aan uw browser (u wordt vereist om binnen te ondertekenen) toe om meer het zuiveren informatie te krijgen
 
 ![ platform-debugger ](assets/platform-debugger.png)
 

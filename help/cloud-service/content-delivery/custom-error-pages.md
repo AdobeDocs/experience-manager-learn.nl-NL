@@ -80,7 +80,7 @@ De volgende opties zijn beschikbaar om foutpagina&#39;s aan te passen:
 
 In dit leerprogramma, leert u hoe te om foutenpagina&#39;s aan te passen gebruikend de _ErrorDocument_ richtlijn, de _ACS de Handler van de Pagina van de Fout van AEM_ en de _CDN pagina&#39;s van de Fout_ opties. Voor het volgen van deze zelfstudie hebt u het volgende nodig:
 
-- De [ lokale ontwikkelomgeving van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) of het milieu van AEM as a Cloud Service. De _CDN optie van de Pagina&#39;s van de Fout_ is toepasselijk op het milieu van AEM as a Cloud Service.
+- De [ lokale ontwikkelomgeving van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) of het milieu van AEM as a Cloud Service. De _CDN optie van de Pagina&#39;s van de Fout_ is toepasselijk op het milieu van AEM as a Cloud Service.
 
 - Het [ project van AEM WKND ](https://github.com/adobe/aem-guides-wknd) om foutenpagina&#39;s aan te passen.
 
@@ -95,7 +95,7 @@ In dit leerprogramma, leert u hoe te om foutenpagina&#39;s aan te passen gebruik
   $ mvn clean install -PautoInstallSinglePackage -PautoInstallSinglePackagePublish
   ```
 
-- Voor het milieu van AEM as a Cloud Service, stel het project van AEM WKND door de [ volledig-stapelpijpleiding ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) in werking te stellen, zie de [ niet-productiepijpleiding ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-non-production-pipeline) voorbeeld.
+- Voor het milieu van AEM as a Cloud Service, stel het project van AEM WKND door de [ volledig-stapelpijpleiding ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) in werking te stellen, zie de [ niet-productiepijpleiding ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-non-production-pipeline) voorbeeld.
 
 - Controleer of de WKND-sitepagina&#39;s correct worden weergegeven.
 
@@ -375,7 +375,7 @@ Tot slot stel de gevormde CDN regel aan het milieu van AEM as a Cloud Service op
 
 1. In Cloud Manager, navigeer aan de **sectie van de Pijpleidingen**.
 
-1. Creeer een nieuwe pijpleiding of selecteer de bestaande pijpleiding die slechts de **Config** dossiers opstelt. Voor gedetailleerde stappen, zie [ een config pijpleiding ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager) creëren.
+1. Creeer een nieuwe pijpleiding of selecteer de bestaande pijpleiding die slechts de **Config** dossiers opstelt. Voor gedetailleerde stappen, zie [ een config pijpleiding ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager) creëren.
 
 1. Klik de **looppas** knoop om de CDN regel op te stellen.
 
@@ -401,6 +401,6 @@ In deze zelfstudie hebt u meer geleerd over standaardfoutpagina&#39;s, waar de f
 
 ## Aanvullende bronnen
 
-- [ Vormend CDN de Pagina&#39;s van de Fout ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
+- [ Vormend CDN de Pagina&#39;s van de Fout ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
 
-- [ Cloud Manager - Config pijpleidingen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)
+- [ Cloud Manager - Config pijpleidingen ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)

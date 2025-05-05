@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Aangepaste Cloud Manager-machtigingen
 
-Leer hoe te om de douanetoestemmingen van Cloud Manager [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/custom-permissions.html) in AEM te gebruiken om toegang voor verschillende teams strategisch te beheren, efficiënt en veilig projectbeheer en plaatsing te verzekeren.
+Leer hoe te om de douanetoestemmingen van Cloud Manager [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/custom-permissions.html?lang=nl-NL) in AEM te gebruiken om toegang voor verschillende teams strategisch te beheren, efficiënt en veilig projectbeheer en plaatsing te verzekeren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425892/?learn=on)

@@ -38,4 +38,4 @@ Leer hoe u de training voor slimme tags in AEM Assets configureert met de Smart 
 
 ## Aanvullende bronnen
 
-* AEM 6.4 vereist het [ recentste Pak van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
+* AEM 6.4 vereist het [ recentste Pak van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=nl-NL#aem-64).

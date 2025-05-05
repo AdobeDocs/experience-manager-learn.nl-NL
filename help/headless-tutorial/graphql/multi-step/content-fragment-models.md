@@ -191,5 +191,5 @@ In het volgende hoofdstuk, [ het Authoring Modellen van het Fragment van de Inho
 
 ## Verwante documentatie
 
-* [Modellen van contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html)
+* [Modellen van contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html?lang=nl-NL)
 

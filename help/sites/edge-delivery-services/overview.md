@@ -24,14 +24,14 @@ Leer hoe u websites snel kunt maken met Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
 
-Herzie de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) voor volledige details van Edge Delivery Services en zijn mogelijkheden.
+Herzie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/overview) voor volledige details van Edge Delivery Services en zijn mogelijkheden.
 
 
 ## Zelfstudies voor Edge Delivery Services-ontwikkelaars
 
 <!-- CARDS 
 
-* https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial
+* https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial
   {title = Document-based authoring and Edge Delivery Services tutorial}
   {description = Learn how to create Edge Delivery Services web sites authored using Document-based authoring.}
   {cta = Start the tutorial}
@@ -48,8 +48,8 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" title="Zelfstudie over schrijven en Edge Delivery Services op basis van documenten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial./media_18d1c2a9ecd6557f129e41b42a03a8dfbff1e27e9.png?width=400&format=png&optimize=medium" alt="Zelfstudie over schrijven en Edge Delivery Services op basis van documenten"
+                    <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" title="Zelfstudie over schrijven en Edge Delivery Services op basis van documenten" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial./media_18d1c2a9ecd6557f129e41b42a03a8dfbff1e27e9.png?width=400&format=png&optimize=medium" alt="Zelfstudie over schrijven en Edge Delivery Services op basis van documenten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -57,11 +57,11 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" title="Zelfstudie over schrijven en Edge Delivery Services op basis van documenten"> op document-Gebaseerde auteurs en het leerprogramma van Edge Delivery Services </a>
+                        <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" title="Zelfstudie over schrijven en Edge Delivery Services op basis van documenten"> op document-Gebaseerde auteurs en het leerprogramma van Edge Delivery Services </a>
                     </p>
                     <p class="is-size-6">Leer hoe u Edge Delivery Services-websites kunt maken die zijn gemaakt met documentgebaseerde ontwerpfuncties.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Begin het leerprogramma </span>
                 </a>
             </div>

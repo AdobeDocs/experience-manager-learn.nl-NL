@@ -30,7 +30,7 @@ Een programma van Cloud Manager kan het type van a __enige__ netwerkinfrastructu
 
 >[!MORELIKETHIS]
 >
-> Lees de AEM as a Cloud Service [ geavanceerde documentatie van de netwerkconfiguratie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) voor meer details op specifiek uitgangIP adres.
+> Lees de AEM as a Cloud Service [ geavanceerde documentatie van de netwerkconfiguratie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) voor meer details op specifiek uitgangIP adres.
 
 ## Vereisten
 
@@ -44,7 +44,7 @@ Het volgende is vereist voor het instellen van een toegewezen IP-adres voor toeg
 + Cloud Manager-programma-id
 + De milieu-id&#39;s van Cloud Manager
 
-Voor meer details [ overzicht hoe te opstelling, vorm, en verkrijg de geloofsbrieven van de Manager van de Wolk API ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), om hen te gebruiken om een Cloud Manager API vraag te maken.
+Voor meer details [ overzicht hoe te opstelling, vorm, en verkrijg de geloofsbrieven van de Manager van de Wolk API ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), om hen te gebruiken om een Cloud Manager API vraag te maken.
 
 Deze zelfstudie gebruikt `curl` om de Cloud Manager API-configuraties te maken. De opgegeven `curl` -opdrachten nemen een Linux/macOS-syntaxis aan. Als u de Windows-opdrachtregel gebruikt, vervangt u het teken voor het `\` regeleinde door `^` .
 
@@ -86,7 +86,7 @@ Een specifiek IP-adres voor egress kan worden ingeschakeld met Cloud Manager API
 
 1. Eerst, bepaal het gebied waarin het Geavanceerde Voorzien van een netwerk nodig is, door de Cloud Manager API [ listRegions ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting te gebruiken. `region name` is vereist om volgende Cloud Manager API-aanroepen te kunnen uitvoeren. Doorgaans wordt de regio waarin de productieomgeving zich bevindt, gebruikt.
 
-   Vind het gebied van uw milieu van AEM as a Cloud Service in [ Cloud Manager ](https://my.cloudmanager.adobe.com) onder de [ details van het milieu ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). De gebiedsnaam die in Cloud Manager wordt getoond kan [ aan de gebiedscode ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) worden in kaart gebracht die in Cloud Manager API wordt gebruikt.
+   Vind het gebied van uw milieu van AEM as a Cloud Service in [ Cloud Manager ](https://my.cloudmanager.adobe.com) onder de [ details van het milieu ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). De gebiedsnaam die in Cloud Manager wordt getoond kan [ aan de gebiedscode ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) worden in kaart gebracht die in Cloud Manager API wordt gebruikt.
 
    __listRegions HTTP- verzoek__
 
@@ -221,7 +221,7 @@ HTTP/HTTPS-aanvragen van AEM op standaardpoorten (80/443) zijn standaard toegest
 
 >[!TIP]
 >
-> Zie AEM as a Cloud Service het specifieke IP van de uitgang adresdocumentatie voor [ de volledige reeks het verpletteren van regels ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
+> Zie AEM as a Cloud Service het specifieke IP van de uitgang adresdocumentatie voor [ de volledige reeks het verpletteren van regels ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 
 ### HTTP/HTTPS

@@ -26,9 +26,9 @@ Dit is een zelfstudie over ontwikkeling die laat zien hoe u [!DNL AEM Projects] 
 
 ## Inleiding {#introduction}
 
-[[!DNL AEM Projects] ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) is een eigenschap van AEM wordt ontworpen om het gemakkelijker te maken om alle werkschema&#39;s en taken te beheren en te groeperen verbonden aan inhoudsverwezenlijking als deel van een implementatie van AEM Sites of van Assets.
+[[!DNL AEM Projects] ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/authoring/projects/projects) is een eigenschap van AEM wordt ontworpen om het gemakkelijker te maken om alle werkschema&#39;s en taken te beheren en te groeperen verbonden aan inhoudsverwezenlijking als deel van een implementatie van AEM Sites of van Assets.
 
-De Projecten van AEM komen met verscheidene [ OOTB projectmalplaatjes ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects). Wanneer het creëren van een project, kunnen de auteurs van deze beschikbare malplaatjes kiezen. Grote AEM-implementaties met unieke bedrijfsvereisten willen aangepaste projectsjablonen maken die zijn afgestemd op hun behoeften. Door een malplaatje van het douaneproject tot stand te brengen kunnen de ontwikkelaars het projectdashboard vormen, in douanewerkschema&#39;s, koppelen en extra bedrijfsrollen voor een project tot stand brengen. We zullen de structuur van een projectsjabloon bekijken en een voorbeeldsjabloon maken.
+De Projecten van AEM komen met verscheidene [ OOTB projectmalplaatjes ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/authoring/projects/projects). Wanneer het creëren van een project, kunnen de auteurs van deze beschikbare malplaatjes kiezen. Grote AEM-implementaties met unieke bedrijfsvereisten willen aangepaste projectsjablonen maken die zijn afgestemd op hun behoeften. Door een malplaatje van het douaneproject tot stand te brengen kunnen de ontwikkelaars het projectdashboard vormen, in douanewerkschema&#39;s, koppelen en extra bedrijfsrollen voor een project tot stand brengen. We zullen de structuur van een projectsjabloon bekijken en een voorbeeldsjabloon maken.
 
 ![ Kaart van het Project van de Douane ](./assets/develop-aem-projects/custom-project-card.png)
 
@@ -39,7 +39,7 @@ Deze zelfstudie doorloopt de code die nodig is om een aangepaste projectsjabloon
 * [Pakket met voltooide zelfstudies](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [ Volledige Bewaarplaats van de Code op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Dit leerprogramma veronderstelt sommige basiskennis van [ de ontwikkelingspraktijken van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) en wat vertrouwdheid met [ AEM Maven projectopstelling ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html). Alle vermelde code is bedoeld om als verwijzing worden gebruikt en zou slechts aan de instantie van AEM van de a [ lokale ontwikkeling ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy) moeten worden opgesteld.
+Dit leerprogramma veronderstelt sommige basiskennis van [ de ontwikkelingspraktijken van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) en wat vertrouwdheid met [ AEM Maven projectopstelling ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=nl-NL). Alle vermelde code is bedoeld om als verwijzing worden gebruikt en zou slechts aan de instantie van AEM van de a [ lokale ontwikkeling ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/deploying/deploy) moeten worden opgesteld.
 
 ## Structuur van een projectsjabloon
 
@@ -69,11 +69,11 @@ Een voorbeeld van een douanetovenaar kan voor het Malplaatje van het Project van
 
 ### Gadgets {#gadgets}
 
-Er zijn geen extra eigenschappen op deze knoop maar de kinderen van de gadget knoopcontrole die de Tegels van het Project het dashboard van het Project bevolken wanneer een nieuw Project wordt gecreeerd. [ de Tegels van het Project ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) (ook genoemd geworden gadgets of peul) zijn eenvoudige kaarten die de werkplaats van een Project bevolken. Een volledige lijst met voetbtegels vindt u onder: **/libs/cq/gui/components/projects/admin/pod. &#x200B;** Projecteigenaars kunnen altijd tegels toevoegen/verwijderen nadat een project is gemaakt.
+Er zijn geen extra eigenschappen op deze knoop maar de kinderen van de gadget knoopcontrole die de Tegels van het Project het dashboard van het Project bevolken wanneer een nieuw Project wordt gecreeerd. [ de Tegels van het Project ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/authoring/projects/projects) (ook genoemd geworden gadgets of peul) zijn eenvoudige kaarten die de werkplaats van een Project bevolken. Een volledige lijst met voetbtegels vindt u onder: **/libs/cq/gui/components/projects/admin/pod. &#x200B;** Projecteigenaars kunnen altijd tegels toevoegen/verwijderen nadat een project is gemaakt.
 
 ### Rollen {#roles}
 
-Er zijn drie [ standaardrollen ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) voor elk project: **Waarnemers**, **Redacteurs**, en **Eigenaars**. Door kindknopen onder de rolknoop toe te voegen, kunt u extra zaken-specifieke Rollen van het Project voor het malplaatje toevoegen. U kunt deze rollen aan specifieke werkschema&#39;s dan verbinden verbonden aan het project.
+Er zijn drie [ standaardrollen ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/authoring/projects/projects) voor elk project: **Waarnemers**, **Redacteurs**, en **Eigenaars**. Door kindknopen onder de rolknoop toe te voegen, kunt u extra zaken-specifieke Rollen van het Project voor het malplaatje toevoegen. U kunt deze rollen aan specifieke werkschema&#39;s dan verbinden verbonden aan het project.
 
 ### Workflows {#workflows}
 
@@ -129,7 +129,7 @@ Aangezien wij hoofdzakelijk knopen kopiëren/vormen, zullen wij CRXDE Lite gebru
    1. Voeg een nieuwe **niet toe:ongestructureerde** knoop onder authoring-project/gadgets geroepen **taken**.
    1. Voeg de eigenschappen van het Koord aan de takenknoop voor **cardWeight** toe = &quot;100&quot;, **jcr:title**= &quot;Taken&quot;, en **het sling:resourceType**= &quot;cq/gui/components/projects/admin/pod/taskpod&quot;.
 
-   Nu zal de [ tegel van Taken ](https://experienceleague.adobe.com/en/docs) door gebrek tonen wanneer een nieuw project wordt gecreeerd.
+   Nu zal de [ tegel van Taken ](https://experienceleague.adobe.com/nl/docs) door gebrek tonen wanneer een nieuw project wordt gecreeerd.
 
    ```shell
    ../projects/templates/authoring-project
@@ -152,7 +152,7 @@ Aangezien wij hoofdzakelijk knopen kopiëren/vormen, zullen wij CRXDE Lite gebru
    1. Voeg een andere **niet toe:ongestructureerde** knoop geëtiketteerd goedkeurt als kind van de rolknoop.
    1. Voeg de eigenschappen van het Koord **jcr toe:titel** = &quot;**Approvers**&quot;, **roleclass** =&quot;**eigenaar**&quot;, **roleid**=&quot;**goedkeurt**&quot;.
       1. De naam van het knooppunt fiatteurs en jcr:title en roleid kunnen elke tekenreekswaarde zijn (zolang roleid uniek is).
-      1. **roleclass** regeert de toestemmingen die voor die rol worden toegepast op de [ drie rollen OTB ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) worden gebaseerd: **eigenaar**, **redacteur**, en **waarnemer**.
+      1. **roleclass** regeert de toestemmingen die voor die rol worden toegepast op de [ drie rollen OTB ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/authoring/projects/projects) worden gebaseerd: **eigenaar**, **redacteur**, en **waarnemer**.
       1. In het algemeen als de douanerol meer van een beheerdersrol dan is kan de roleclass **eigenaar zijn;** als het een specifiekere auteursrol zoals Fotograaf of Designer dan **redacteursklasse** roleclass zou moeten volstaan. Het grote verschil tussen **eigenaar** en **redacteur** is dat de projecteigenaars de projecteigenschappen kunnen bijwerken en nieuwe gebruikers aan het project toevoegen.
 
    ```shell
@@ -308,7 +308,7 @@ In de laatste stap van de workflow wordt gebruikgemaakt van de processtap Pagina
 
    ![ Werkschema creeert dialoog ](./assets/develop-aem-projects/workflow-create-dialog.png)
 
-   [ voor meer informatie met betrekking tot het creëren van werkschema&#39;s, lees hier ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-models).
+   [ voor meer informatie met betrekking tot het creëren van werkschema&#39;s, lees hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-models).
 
 1. Aangepaste workflows kunt u het beste groeperen in een eigen map onder /etc/workflow/modellen. In CRXDE Lite, creeer a **&quot;niet:omslag&quot;** onder /etc/workflow/modellen genoemd **&quot;aem-gidsen&quot;**. Als u een submap toevoegt, zorgt u ervoor dat aangepaste workflows niet per ongeluk worden overschreven tijdens upgrades of Service Pack-installaties.
 
@@ -320,7 +320,7 @@ In de laatste stap van de workflow wordt gebruikgemaakt van de processtap Pagina
 
    >[!NOTE]
    >
-   >Als u AEM 6.4+ gebruikt, is de locatie van Workflow gewijzigd. Zie [ hier voor meer details.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
+   >Als u AEM 6.4+ gebruikt, is de locatie van Workflow gewijzigd. Zie [ hier voor meer details.](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
 
    Als u AEM 6.4+ gebruikt, wordt het workflowmodel gemaakt onder `/conf/global/settings/workflow/models` . Herhaal bovenstaande stappen met de map /conf en voeg een submap met de naam `aem-guides` toe en verplaats de map `content-approval-workflow` eronder.
 
@@ -629,13 +629,13 @@ Het maken van een aangepaste wizard kan zeer krachtig zijn, omdat u essentiële 
 
 1. In CRXDE-Lite zullen wij een subomslag onder `/apps/aem-guides/projects-tasks/projects` omslag creëren genoemd &quot;tovenaars&quot;. Kopieer de standaardtovenaar van: `/libs/cq/core/content/projects/workflowwizards/default_workflow` onder de pas gecreëerde tovenaarsomslag en noem het aan **tevreden-goedkeuring-begin** anders. Het volledige pad moet nu zijn: `/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start` .
 
-   De standaardwizard is een wizard met twee kolommen en de eerste kolom bevat Titel, Beschrijving en Miniatuur van het workflowmodel geselecteerd. De tweede kolom bevat velden voor de titel van de workflow, Opmerking starten en Pad loonbelasting. De tovenaar is een standaard vorm van de Aanraking UI en maakt gebruik van de standaard [ componenten van de Vorm van de Vorm UI van Granite ](https://experienceleague.adobe.com/en/docs) om de gebieden te bevolken.
+   De standaardwizard is een wizard met twee kolommen en de eerste kolom bevat Titel, Beschrijving en Miniatuur van het workflowmodel geselecteerd. De tweede kolom bevat velden voor de titel van de workflow, Opmerking starten en Pad loonbelasting. De tovenaar is een standaard vorm van de Aanraking UI en maakt gebruik van de standaard [ componenten van de Vorm van de Vorm UI van Granite ](https://experienceleague.adobe.com/nl/docs) om de gebieden te bevolken.
 
    ![ tovenaar van het het werkschema van de inhoudsgoedkeuring ](./assets/develop-aem-projects/content-approval-start-wizard.png)
 
 1. Wij zullen een extra gebied aan de tovenaar toevoegen dat wordt gebruikt om de ontvanger van de eerste taak in het werkschema (zie [ tot het Model van het Werkschema ](#create-workflow-model) leiden: Stap 5) te plaatsen.
 
-   Beneath `../content-approval-start/jcr:content/items/column2/items` creeer een nieuwe knoop van type `nt:unstructured` genoemd **&quot;wijs&quot;** toe. Wij zullen de component van de Plukker van de Gebruiker van Projecten gebruiken (die uit de [ Component van de Plukker van de Gebruiker van de Graniet ](https://experienceleague.adobe.com/en/docs)) wordt gebaseerd. Met dit formulierveld kunt u eenvoudig de selectie van gebruikers en groepen beperken tot gebruikers die tot het huidige project behoren.
+   Beneath `../content-approval-start/jcr:content/items/column2/items` creeer een nieuwe knoop van type `nt:unstructured` genoemd **&quot;wijs&quot;** toe. Wij zullen de component van de Plukker van de Gebruiker van Projecten gebruiken (die uit de [ Component van de Plukker van de Gebruiker van de Graniet ](https://experienceleague.adobe.com/nl/docs)) wordt gebaseerd. Met dit formulierveld kunt u eenvoudig de selectie van gebruikers en groepen beperken tot gebruikers die tot het huidige project behoren.
 
    Hieronder is de vertegenwoordiging van XML van **toewijzen** knoop:
 
@@ -655,7 +655,7 @@ Het maken van een aangepaste wizard kan zeer krachtig zijn, omdat u essentiële 
 
 1. Wij zullen ook een prioritair selectiegebied toevoegen dat de prioriteit van de eerste taak in het werkschema zal bepalen (zie [ tot het Model van het Werkschema ](#create-workflow-model) leiden: Stap 5).
 
-   Onder `/content-approval-start/jcr:content/items/column2/items` creeer een nieuwe knoop van type `nt:unstructured` genoemd **prioriteit**. Wij zullen de [ Uitgezochte component van UI van de Graniet ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions) gebruiken om het vormgebied te bevolken.
+   Onder `/content-approval-start/jcr:content/items/column2/items` creeer een nieuwe knoop van type `nt:unstructured` genoemd **prioriteit**. Wij zullen de [ Uitgezochte component van UI van de Graniet ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions) gebruiken om het vormgebied te bevolken.
 
    Onder de **prioritaire** knoop zullen wij een **punten** knoop van **toevoegen niet:ongestructureerde**. Onder de **punten** knoop voeg 3 meer knopen toe om de selectieopties voor Hoog, Medium, en Laag te bevolken. Elke knoop is van type **niet:ongestructureerde** en zou a **tekst** en **waarde** bezit moeten hebben. Zowel de tekst als de waarde moeten dezelfde waarde hebben:
 
@@ -691,7 +691,7 @@ Het maken van een aangepaste wizard kan zeer krachtig zijn, omdat u essentiële 
    </priority>
    ```
 
-1. De aanvrager van de workflow kan de vervaldatum van de eerste taak instellen. Wij zullen het [ granite UI DatePicker ](https://experienceleague.adobe.com/en/docs) vormgebied gebruiken om deze input te vangen. Wij zullen ook een verborgen gebied met a [ TypeHint ](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) toevoegen om ervoor te zorgen dat de input als het typebezit van de Datum in JCR wordt opgeslagen.
+1. De aanvrager van de workflow kan de vervaldatum van de eerste taak instellen. Wij zullen het [ granite UI DatePicker ](https://experienceleague.adobe.com/nl/docs) vormgebied gebruiken om deze input te vangen. Wij zullen ook een verborgen gebied met a [ TypeHint ](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) toevoegen om ervoor te zorgen dat de input als het typebezit van de Datum in JCR wordt opgeslagen.
 
    Voeg twee **niet toe:ongestructureerde** knopen met de volgende eigenschappen die hieronder in XML worden vertegenwoordigd:
 
@@ -738,7 +738,7 @@ De configuratie van het Werkschema is een gebied van een Malplaatje van het Proj
    >Als u AEM 6.4 gebruikt, is de locatie van Workflow gewijzigd. Wijs de eigenschap `modelId` onder `/var/workflow/models/aem-guides/content-approval-workflow` toe aan de locatie van het workflowmodel van de runtime.
    >
    >
-   >Zie [ hier voor meer details over de verandering in plaats van werkschema.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
+   >Zie [ hier voor meer details over de verandering in plaats van werkschema.](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
 
    ```xml
    <contentapproval
@@ -754,4 +754,4 @@ De configuratie van het Werkschema is een gebied van een Malplaatje van het Proj
 
 * [Voltooid lespakket downloaden](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [ Volledige Bewaarplaats van de Code op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
-* [ de Documentatie van de Projecten van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects)
+* [ de Documentatie van de Projecten van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/authoring/projects/projects)

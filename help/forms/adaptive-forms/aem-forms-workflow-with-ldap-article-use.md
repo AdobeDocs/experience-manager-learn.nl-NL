@@ -22,7 +22,7 @@ AEM Forms-workflowtaak toewijzen aan de manager van de verzender.
 
 Als u Adaptief formulier gebruikt in de AEM-workflow, wilt u een taak dynamisch toewijzen aan de manager van de verzender van het formulier. Voor dit gebruiksgeval moeten we AEM configureren met LDAP.
 
-De stappen nodig om AEM met LDAP te vormen worden verklaard hier in [ detail.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
+De stappen nodig om AEM met LDAP te vormen worden verklaard hier in [ detail.](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/ldap-config.html)
 
 Voor dit artikel, maak ik configuratiedossiers vast die in het vormen van AEM met Adobe LDAP worden gebruikt. Deze bestanden worden opgenomen in het pakket dat u kunt importeren met pakketbeheer.
 

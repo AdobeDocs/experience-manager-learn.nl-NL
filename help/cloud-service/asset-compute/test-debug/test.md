@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Een Asset Compute-worker testen
 
-Het project van Asset Compute bepaalt een patroon voor gemakkelijk het creëren van en het uitvoeren van [ tests van de arbeiders van Asset Compute ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html).
+Het project van Asset Compute bepaalt een patroon voor gemakkelijk het creëren van en het uitvoeren van [ tests van de arbeiders van Asset Compute ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html?lang=nl-NL).
 
 ## Anatomie van een arbeiderstest
 

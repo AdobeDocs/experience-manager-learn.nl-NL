@@ -24,7 +24,7 @@ De volgende middelen/configuraties zijn geïmplementeerd op een AEM Forms-public
 * [Adobe-bundel voor omsluitend ondertekenen](assets/AcrobatSign.core-1.0.0-SNAPSHOT.jar)
 
 * [Voorbeeld van interactieve communicatiesjabloon](assets/waiver-interactive-communication.zip)
-* [ stel de bundel DevelopingWithServiceUser ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip) op
+* [ stel de bundel DevelopingWithServiceUser ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=nl-NL) op
 * Voeg de volgende ingang in de Dienst van het Mapper van de Gebruiker van de Dienst Apache Sling toe gebruikend OSGi configMgr
   **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
 
@@ -61,4 +61,4 @@ Als u POST-aanroepen naar het AEM-eindpunt van uw REACT-app wilt inschakelen, mo
 
 ![ cors-setting ](assets/cors-settings.png)
 
-Zie [ het begrip CORS met AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) voor meer details over de configuratieopties van CORS.
+Zie [ het begrip CORS met AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=nl-NL) voor meer details over de configuratieopties van CORS.

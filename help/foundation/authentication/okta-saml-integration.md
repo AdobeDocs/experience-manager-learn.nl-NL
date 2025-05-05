@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Verifiëren voor AEM-auteur met OKTA
 
-> Zie [ SAML 2.0 authentificatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html) voor instructies op hoe te opstelling OKTA met AEM as a Cloud Service.
+> Zie [ SAML 2.0 authentificatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=nl-NL) voor instructies op hoe te opstelling OKTA met AEM as a Cloud Service.
 
 De eerste stap bestaat uit het configureren van uw app op de OKTA-portal. Nadat uw app is goedgekeurd door uw OKTA-beheerder, hebt u toegang tot het IdP-certificaat en een Single Sign on URL. Hieronder ziet u de instellingen die gewoonlijk worden gebruikt voor de registratie van nieuwe toepassingen.
 

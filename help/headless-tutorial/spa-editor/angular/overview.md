@@ -34,9 +34,9 @@ Het doel voor dit meerdelige leerprogramma is een ontwikkelaar te leren hoe te o
 
 Het leerprogramma wordt ontworpen om met **AEM as a Cloud Service** te werken en is achterwaarts compatibel met **AEM 6.5.4+** en **AEM 6.4.8+**. Het SPA wordt uitgevoerd gebruikend:
 
-* [ Gemaakt AEM Project Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
-* [ de Redacteur van AEM SPA ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-walkthrough.html#content-editing-experience-with-spa)
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [ Gemaakt AEM Project Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL)
+* [ de Redacteur van AEM SPA ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-walkthrough.html?lang=nl-NL#content-editing-experience-with-spa)
+* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
 * [ Angular ](https://angular.io/)
 
 *schat 1-2 uren om door elk deel van het leerprogramma te krijgen.*
@@ -53,12 +53,12 @@ Voordat u deze zelfstudie start, hebt u het volgende nodig:
 
 * Basiskennis van HTML, CSS en JavaScript
 * Basis vertrouwdheid met [ Angular ](https://angular.io/)
-* [ AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk), [ AEM 6.5.4+ ](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#65) of [ AEM 6.4.8+ ](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#64)
+* [ AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL#download-the-aem-as-a-cloud-service-sdk), [ AEM 6.5.4+ ](https://helpx.adobe.com/nl/experience-manager/aem-releases-updates.html#65) of [ AEM 6.4.8+ ](https://helpx.adobe.com/nl/experience-manager/aem-releases-updates.html#64)
 * [ Java ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [ Apache Maven ](https://maven.apache.org/) (3.3.9 of nieuwer)
 * [ Node.js ](https://nodejs.org/en/) en [ npm ](https://www.npmjs.com/)
 
-*terwijl niet vereist, is het nuttig om een basisbegrip van [ het ontwikkelen van traditionele componenten van AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) te hebben.*
+*terwijl niet vereist, is het nuttig om een basisbegrip van [ het ontwikkelen van traditionele componenten van AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) te hebben.*
 
 ## Lokale ontwikkelomgeving {#local-dev-environment}
 
@@ -66,9 +66,9 @@ Er is een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. De sch
 
 >[!NOTE]
 >
-> **Nieuw aan AEM as a Cloud Service?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+> **Nieuw aan AEM as a Cloud Service?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL).
 >
-> **Nieuw aan AEM 6.5?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+> **Nieuw aan AEM 6.5?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=nl-NL).
 
 ## Volgende stappen {#next-steps}
 
@@ -78,7 +78,7 @@ Waar wacht u op?! Begin het leerprogramma door aan het [ hoofdstuk van het Proje
 
 De projectcode voor deze zelfstudie is gemaakt voor AEM as a Cloud Service. Om de projectcode achterwaarts compatibel te maken voor **6.5.4+** en **6.4.8+** zijn verscheidene wijzigingen aangebracht.
 
-[ UberJar ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#what-is-the-uberjar) **v6.4.4** is inbegrepen als gebiedsdeel:
+[ UberJar ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=nl-NL#what-is-the-uberjar) **v6.4.4** is inbegrepen als gebiedsdeel:
 
 ```xml
 <!-- Adobe AEM 6.x Dependencies -->

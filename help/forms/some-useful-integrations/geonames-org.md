@@ -53,13 +53,13 @@ Gebruik de [ kwikredacteur ](https://editor.swagger.io/) om uw kwikdossier tot s
 
 ## Gegevensbronnen maken
 
-Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [ gegevensbron ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) in de configuratie van de wolkendiensten tot stand brengen. Gelieve te gebruiken de [ kwikdossiers ](assets/geonames-swagger-files.zip) om uw gegevensbronnen tot stand te brengen.
+Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [ gegevensbron ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=nl-NL) in de configuratie van de wolkendiensten tot stand brengen. Gelieve te gebruiken de [ kwikdossiers ](assets/geonames-swagger-files.zip) om uw gegevensbronnen tot stand te brengen.
 U moet twee gegevensbronnen maken (één om alle landen en andere op te halen om onderliggende elementen op te halen)
 
 
 ## Formuliergegevensmodel maken
 
-De gegevensintegratie van AEM Forms verstrekt een intuïtief gebruikersinterface om tot stand te brengen en met [ modellen van vormgegevens ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) te werken. Baseer het model van vormgegevens op de gegevensbronnen die in de vroegere stap worden gecreeerd. Formuliergegevensmodel met twee gegevensbronnen
+De gegevensintegratie van AEM Forms verstrekt een intuïtief gebruikersinterface om tot stand te brengen en met [ modellen van vormgegevens ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=nl-NL) te werken. Baseer het model van vormgegevens op de gegevensbronnen die in de vroegere stap worden gecreeerd. Formuliergegevensmodel met twee gegevensbronnen
 
 ![ fdm ](assets/geonames-fdm.png)
 

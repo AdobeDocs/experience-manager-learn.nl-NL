@@ -49,4 +49,4 @@ Handelingen als het verzenden van een PDF-formulier, het gebruik van de gebruike
 
 Als u het transactierapport over de auteursinstantie bekijkt, zorg ervoor de omgekeerde replicatie op alle publiceer instanties wordt gevormd.
 
-Meer over transactie het melden [ te leren gelieve te klikken hier ](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
+Meer over transactie het melden [ te leren gelieve te klikken hier ](https://helpx.adobe.com/nl/experience-manager/6-4/forms/using/transaction-reports-overview.html)

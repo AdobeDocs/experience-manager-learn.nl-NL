@@ -32,7 +32,7 @@ Als u dit artikel volgt, kunt u de pictogrammen zoals hieronder weergegeven plaa
 
 ## Vereisten
 
-Als u dit artikel wilt volgen, moet u vertrouwd zijn met Git, een AEM-project maken en implementeren met cloud Manager, een front-end-pijplijn instellen in AEM Cloud Manager en een beetje CSS. Als u niet vertrouwd met de bovengenoemde onderwerpen bent, te volgen gelieve [ gebruikend thema&#39;s aan de componenten van de stijlkern ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components#rename-env-file-theme-folder) artikel.
+Als u dit artikel wilt volgen, moet u vertrouwd zijn met Git, een AEM-project maken en implementeren met cloud Manager, een front-end-pijplijn instellen in AEM Cloud Manager en een beetje CSS. Als u niet vertrouwd met de bovengenoemde onderwerpen bent, te volgen gelieve [ gebruikend thema&#39;s aan de componenten van de stijlkern ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components#rename-env-file-theme-folder) artikel.
 
 ## Pictogrammen toevoegen aan het thema
 

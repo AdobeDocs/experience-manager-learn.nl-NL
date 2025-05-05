@@ -28,7 +28,7 @@ In `manifest.yml`, dat zich in de hoofdmap van het Asset Compute-project bevindt
 
 Workers worden gedefinieerd als Adobe I/O Runtime-handelingangen onder `actions` en bestaan uit een set configuraties.
 
-De arbeiders die tot andere integratie van Adobe I/O toegang hebben moeten het `annotations -> require-adobe-auth` bezit aan `true` plaatsen aangezien dit [ de geloofsbrieven van Adobe I/O van de worker ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) via het `params.auth` voorwerp blootstelt. Dit is doorgaans vereist wanneer de worker API&#39;s van Adobe I/O, zoals de API&#39;s van Adobe Photoshop, Lightroom of Sensei, aanroept en per worker in- en uitschakelen kan worden uitgevoerd.
+De arbeiders die tot andere integratie van Adobe I/O toegang hebben moeten het `annotations -> require-adobe-auth` bezit aan `true` plaatsen aangezien dit [ de geloofsbrieven van Adobe I/O van de worker ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=nl-NL#access-adobe-apis) via het `params.auth` voorwerp blootstelt. Dit is doorgaans vereist wanneer de worker API&#39;s van Adobe I/O, zoals de API&#39;s van Adobe Photoshop, Lightroom of Sensei, aanroept en per worker in- en uitschakelen kan worden uitgevoerd.
 
 1. Open en bekijk de automatisch gegenereerde worker `manifest.yml` . Voor projecten die meerdere Asset Compute-workers bevatten, moet een vermelding voor elke worker onder de array `actions` worden gedefinieerd.
 
@@ -51,7 +51,7 @@ packages:
 
 Elke worker kan de [ grenzen ](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) voor zijn uitvoeringscontext in Adobe I/O Runtime vormen. Deze waarden moeten zodanig worden ingesteld dat de worker een optimale grootte krijgt op basis van het volume, de snelheid en het type elementen dat de worker berekent, en het type werk dat de worker uitvoert.
 
-Herzie [ Adobe rangschikkend begeleiding ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) alvorens grenzen te plaatsen. Asset Compute-workers hebben onvoldoende geheugen tijdens het verwerken van middelen, wat tot gevolg heeft dat de Adobe I/O Runtime-executie wordt gedood. Zo weet u zeker dat de grootte van de worker correct is aangepast aan de afhandeling van alle kandidaatmiddelen.
+Herzie [ Adobe rangschikkend begeleiding ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=nl-NL#sizing-workers) alvorens grenzen te plaatsen. Asset Compute-workers hebben onvoldoende geheugen tijdens het verwerken van middelen, wat tot gevolg heeft dat de Adobe I/O Runtime-executie wordt gedood. Zo weet u zeker dat de grootte van de worker correct is aangepast aan de afhandeling van alle kandidaatmiddelen.
 
 1. Voeg een sectie `inputs` toe aan het nieuwe item voor `wknd-asset-compute` -handelingen. Hierdoor kunnen de algemene prestaties en de toewijzing van bronnen van de Asset Compute-worker worden afgestemd.
 

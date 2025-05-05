@@ -43,7 +43,7 @@ Ga als volgt te werk om het voorbeeld op uw systeem uit te voeren:
 1. [De gebruikersbundel DevelopingWithService implementeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
 1. [ Download en installeer setvalue bundel ](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) Deze bundel bevat de code voor het creëren van de meta-gegevenseigenschappen als deel van de processtap van het werkschema.
-1. [ vorm de Dienst van de Post van de Dag CQ ](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html)
+1. [ vorm de Dienst van de Post van de Dag CQ ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/notification.html)
 1. [De aan dit artikel gekoppelde elementen importeren en installeren met pakketbeheer in CRX](assets/emaildoraemformskt.zip)
 1. Lanceer de [ adaptieve vorm ](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled). Vul de vereiste velden in en verzend deze.
 1. U moet een e-mail ontvangen met DocumentOfRecord als bijlage

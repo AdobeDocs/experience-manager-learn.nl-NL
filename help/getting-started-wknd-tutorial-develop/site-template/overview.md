@@ -31,7 +31,7 @@ Leer hoe u een low-code aanpak gebruikt om uw eerste site te maken in Adobe Expe
 
 ## AEM as a Cloud Service-omgeving {#environment}
 
-De stappen in deze zelfstudie vinden plaats in een Adobe Experience Manager as a Cloud Service-omgeving. Zorg ervoor dat u beheertoegang hebt tot de AEM-omgeving. Het wordt geadviseerd om het programma van de a [ Sandbox ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) en [ Ontwikkeling milieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) te gebruiken wanneer de voltooiing van dit leerprogramma.
+De stappen in deze zelfstudie vinden plaats in een Adobe Experience Manager as a Cloud Service-omgeving. Zorg ervoor dat u beheertoegang hebt tot de AEM-omgeving. Het wordt geadviseerd om het programma van de a [ Sandbox ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html?lang=nl-NL) en [ Ontwikkeling milieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL) te gebruiken wanneer de voltooiing van dit leerprogramma.
 
 ## Volgende stappen {#next-steps}
 

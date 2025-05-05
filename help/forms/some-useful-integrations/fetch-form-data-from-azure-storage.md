@@ -22,7 +22,7 @@ ht-degree: 0%
 In dit artikel wordt uitgelegd hoe u een adaptief formulier kunt vullen met de gegevens die in Azure-opslag zijn opgeslagen.
 Aangenomen wordt dat u de adaptieve formuliergegevens in Azure-opslag hebt opgeslagen en nu uw adaptieve formulier met die gegevens wilt vooraf invullen.
 >[!NOTE]
->De code in dit artikel werkt niet met op kerncomponenten gebaseerde adaptieve formulieren.[ het gelijkwaardige artikel voor kern op component gebaseerde adaptieve vorm is hier beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+>De code in dit artikel werkt niet met op kerncomponenten gebaseerde adaptieve formulieren.[ het gelijkwaardige artikel voor kern op component gebaseerde adaptieve vorm is hier beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=nl-NL)
 
 
 ## GET-aanvraag maken
@@ -86,7 +86,7 @@ if(guid!=null&&!guid.isEmpty())
 
 * [Het adaptieve voorbeeldformulier importeren](./assets/bank-account-sample-form.zip)
 
-* [ specificeer de aangewezen waarden in de Azure PortalConfiguratie gebruikend de OSGi configuratieconsole.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
+* [ specificeer de aangewezen waarden in de Azure PortalConfiguratie gebruikend de OSGi configuratieconsole.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=nl-NL#provide-the-blob-sas-token-and-storage-uri)
 
 * [ Voorproef en voorlegt de vorm BankAccount ](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 

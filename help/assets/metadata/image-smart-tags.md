@@ -46,4 +46,4 @@ In de video worden de volgende taken beschreven die vereist zijn om de service m
 
 ## Aanvullende bronnen
 
-* [ de Slimme documentatie van Markeringen van AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/smart-tags.html)
+* [ de Slimme documentatie van Markeringen van AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/smart-tags.html?lang=nl-NL)

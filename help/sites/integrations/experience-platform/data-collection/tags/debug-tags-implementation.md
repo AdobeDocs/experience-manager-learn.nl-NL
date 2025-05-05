@@ -54,6 +54,6 @@ Adobe verstrekt de uitbreiding van Chrome van het Adobe Experience Platform Debu
 
 ## Aanvullende bronnen {#additional-resources}
 
-+ [ Inleiding aan het Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [ Inleiding aan het Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=nl-NL)
 
-+ [ Satellite objecten verwijzing ](https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html)
++ [ Satellite objecten verwijzing ](https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html?lang=nl-NL)

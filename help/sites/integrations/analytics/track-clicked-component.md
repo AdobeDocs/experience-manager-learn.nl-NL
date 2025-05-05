@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Aangeklikte component bijhouden met Adobe Analytics
 
-Gebruik de gebeurtenis-gedreven [ Laag van de Gegevens van de Cliënt van Adobe met de Componenten van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) om kliks van specifieke componenten op een plaats van Adobe Experience Manager te volgen. Leer hoe u regels in de eigenschap tag gebruikt om te luisteren naar klikgebeurtenissen, deze te filteren op component en de gegevens te verzenden naar een Adobe Analytics met een spoorkoppelingsbaken.
+Gebruik de gebeurtenis-gedreven [ Laag van de Gegevens van de Cliënt van Adobe met de Componenten van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL) om kliks van specifieke componenten op een plaats van Adobe Experience Manager te volgen. Leer hoe u regels in de eigenschap tag gebruikt om te luisteren naar klikgebeurtenissen, deze te filteren op component en de gegevens te verzenden naar een Adobe Analytics met een spoorkoppelingsbaken.
 
 ## Wat u gaat bouwen {#what-build}
 
@@ -39,13 +39,13 @@ Het WKND-marketingteam is geïnteresseerd in de vraag welke `Call to Action (CTA
 
 Dit leerprogramma is een voortzetting van [ verzamel paginagegevens met Adobe Analytics ](./collect-data-analytics.md) en veronderstelt dat u hebt:
 
-* A **bezit van de Markering** met de [ toegelaten uitbreiding van Adobe Analytics ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html)
-* **Adobe Analytics** test/dev- rapportreeks identiteitskaart en volgende server. Zie de volgende documentatie voor [ het creëren van een rapportreeks ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
-* [ Debugger van Experience Platform ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) browser uitbreiding die met uw markeringsbezit wordt gevormd op de [ wordt geladen plaats WKND ](https://wknd.site/us/en.html) of een plaats van AEM met de toegelaten Laag van Gegevens van Adobe.
+* A **bezit van de Markering** met de [ toegelaten uitbreiding van Adobe Analytics ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=nl-NL)
+* **Adobe Analytics** test/dev- rapportreeks identiteitskaart en volgende server. Zie de volgende documentatie voor [ het creëren van een rapportreeks ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html?lang=nl-NL).
+* [ Debugger van Experience Platform ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=nl-NL) browser uitbreiding die met uw markeringsbezit wordt gevormd op de [ wordt geladen plaats WKND ](https://wknd.site/us/en.html) of een plaats van AEM met de toegelaten Laag van Gegevens van Adobe.
 
 ## Het knop- en teasschema controleren
 
-Alvorens regels in het markeringsbezit tot stand te brengen, is het nuttig om het [ schema voor de Knoop en het Taser ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item) te herzien en hen in de implementatie van de gegevenslaag te inspecteren.
+Alvorens regels in het markeringsbezit tot stand te brengen, is het nuttig om het [ schema voor de Knoop en het Taser ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL#item) te herzien en hen in de implementatie van de gegevenslaag te inspecteren.
 
 1. Navigeer aan [ WKND Homepage ](https://wknd.site/us/en.html)
 1. Open de de ontwikkelaarshulpmiddelen van browser en navigeer aan de **Console**. Voer de volgende opdracht uit:
@@ -81,7 +81,7 @@ Alvorens regels in het markeringsbezit tot stand te brengen, is het nuttig om he
        xdm:linkURL: "/content/wknd/us/en/magazine/san-diego-surf.html"
    ```
 
-   Boven gegevensdetails zijn gebaseerd op het [ Schema van het Punt van de Component/van de Container ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item). De nieuwe tagregel gebruikt dit schema.
+   Boven gegevensdetails zijn gebaseerd op het [ Schema van het Punt van de Component/van de Container ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL#item). De nieuwe tagregel gebruikt dit schema.
 
 ## Een op CTA geklikte regel maken
 
@@ -147,11 +147,11 @@ De Laag van Gegevens van de Cliënt van Adobe is een **gebeurtenis** gedreven ge
 
    Het object `event` wordt doorgegeven via de methode `trigger()` die in de aangepaste gebeurtenis wordt aangeroepen. Het `component` -object is de huidige status van de component die is afgeleid van de methode data layer `getState()` en is het element dat de klik heeft geactiveerd.
 
-1. Sparen de veranderingen en stel a [ in werking bouwt ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) in het markeringsbezit om de code aan het [ milieu ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) te bevorderen dat op uw Plaats van AEM wordt gebruikt.
+1. Sparen de veranderingen en stel a [ in werking bouwt ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html?lang=nl-NL) in het markeringsbezit om de code aan het [ milieu ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=nl-NL) te bevorderen dat op uw Plaats van AEM wordt gebruikt.
 
    >[!NOTE]
    >
-   > Het kan nuttig zijn om [ Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) te gebruiken om de ingebedde code aan het milieu van de a **Ontwikkeling** te schakelen.
+   > Het kan nuttig zijn om [ Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=nl-NL) te gebruiken om de ingebedde code aan het milieu van de a **Ontwikkeling** te schakelen.
 
 1. Navigeer aan de [ Plaats WKND ](https://wknd.site/us/en.html) en open de ontwikkelaarshulpmiddelen om de console te bekijken. Ook, selecteer het **Logboek van het Behoud** checkbox.
 

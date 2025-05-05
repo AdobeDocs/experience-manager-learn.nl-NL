@@ -23,7 +23,7 @@ ht-degree: 0%
 
 {{edge-delivery-services-and-page-editor}}
 
-In dit hoofdstuk, onderzoeken wij de verhouding tussen een component van de basispagina en editable malplaatjes. Leer om een ongestileerd malplaatje van het Artikel te bouwen dat op sommige modellen van [ wordt gebaseerd Adobe XD ](https://helpx.adobe.com/support/xd.html). In het proces om het malplaatje uit te bouwen, zijn de Componenten van de Kern en de geavanceerde beleidsconfiguraties van de Bewerkbare Malplaatjes behandeld.
+In dit hoofdstuk, onderzoeken wij de verhouding tussen een component van de basispagina en editable malplaatjes. Leer om een ongestileerd malplaatje van het Artikel te bouwen dat op sommige modellen van [ wordt gebaseerd Adobe XD ](https://helpx.adobe.com/nl/support/xd.html). In het proces om het malplaatje uit te bouwen, zijn de Componenten van de Kern en de geavanceerde beleidsconfiguraties van de Bewerkbare Malplaatjes behandeld.
 
 ## Vereisten {#prerequisites}
 
@@ -74,7 +74,7 @@ In dit gedeelte van de zelfstudie maakt u een nieuwe artikelpaginasjabloon die u
 
 ## UI-planning met Adobe XD {#adobexd}
 
-Gewoonlijk begint het plannen voor een nieuwe website met modellen en statische ontwerpen. [ Adobe XD ](https://helpx.adobe.com/support/xd.html) is een ontwerphulpmiddel bouwend gebruikerservaring. Vervolgens inspecteren we een UI-kit en -modellen om de structuur van het sjabloon voor artikelpagina te plannen.
+Gewoonlijk begint het plannen voor een nieuwe website met modellen en statische ontwerpen. [ Adobe XD ](https://helpx.adobe.com/nl/support/xd.html) is een ontwerphulpmiddel bouwend gebruikerservaring. Vervolgens inspecteren we een UI-kit en -modellen om de structuur van het sjabloon voor artikelpagina te plannen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
@@ -82,13 +82,13 @@ Gewoonlijk begint het plannen voor een nieuwe website met modellen en statische 
 
 >[!NOTE]
 >
-> Een generische [ AEM Kit UI van de Componenten van de Kern is ook beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) als uitgangspunt voor douaneprojecten.
+> Een generische [ AEM Kit UI van de Componenten van de Kern is ook beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd?lang=nl-NL) als uitgangspunt voor douaneprojecten.
 
 ## De sjabloon voor artikelpagina maken
 
 Wanneer u een pagina maakt, moet u een sjabloon selecteren die wordt gebruikt als basis voor het maken van de pagina. De sjabloon definieert de structuur van de resulterende pagina, de initiële inhoud en de toegestane componenten.
 
-Er zijn drie belangrijkste gebieden van [ Bewerkbare Malplaatjes ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html):
+Er zijn drie belangrijkste gebieden van [ Bewerkbare Malplaatjes ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=nl-NL):
 
 1. **Structuur** - bepaalt componenten die een deel van het malplaatje zijn. Deze kunnen niet worden bewerkt door de auteurs van de inhoud.
 1. **Aanvankelijke Inhoud** - bepaalt componenten die het malplaatjebegin met, deze kan worden uitgegeven en/of door inhoudauteurs worden geschrapt
@@ -160,7 +160,7 @@ Stappen op hoog niveau voor de bovenstaande video:
 
 ## Koptekst en voettekst bijwerken met ervaringsfragmenten {#experience-fragments}
 
-Een gemeenschappelijke praktijk wanneer het creëren van globale inhoud, zoals een kopbal of footer, moet een [ Fragment van de Ervaring gebruiken ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Met de functie Fragmenten van ervaring kunnen gebruikers meerdere componenten combineren om één component te maken die geschikt is voor referentie. De Fragmenten van de ervaring hebben het voordeel om multi-site beheer en [ localisatie ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=en) te steunen.
+Een gemeenschappelijke praktijk wanneer het creëren van globale inhoud, zoals een kopbal of footer, moet een [ Fragment van de Ervaring gebruiken ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=nl-NL). Met de functie Fragmenten van ervaring kunnen gebruikers meerdere componenten combineren om één component te maken die geschikt is voor referentie. De Fragmenten van de ervaring hebben het voordeel om multi-site beheer en [ localisatie ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=nl-NL) te steunen.
 
 Het AEM Projectarchetype produceerde een Kopbal en Voettekst. Werk vervolgens de Experience Fragments bij zodat deze overeenkomen met de modellen. Voer de stappen in de onderstaande video uit:
 
@@ -262,7 +262,7 @@ Gebruik het hulpmiddel CRXDE-Lite op een lokale AEM instantie om de onderliggend
 
    Er staan slechts twee HTML-scripts, `customfooterlibs.html` en `customheaderlibs.html` onder de paginacomponent. *zo hoe geeft deze component de pagina terug?*
 
-   De eigenschap `sling:resourceSuperType` verwijst naar `core/wcm/components/page/v2/page` . Dit bezit staat de de paginacomponent van WKND toe om **alle** de functionaliteit van de de paginacomponent van de Component van de Kern te erven. Dit is het eerste voorbeeld van iets genoemd het [ Patroon van de Component van de Volmacht ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Meer informatie kan [ hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html) worden gevonden.
+   De eigenschap `sling:resourceSuperType` verwijst naar `core/wcm/components/page/v2/page` . Dit bezit staat de de paginacomponent van WKND toe om **alle** de functionaliteit van de de paginacomponent van de Component van de Kern te erven. Dit is het eerste voorbeeld van iets genoemd het [ Patroon van de Component van de Volmacht ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=nl-NL#ProxyComponentPattern). Meer informatie kan [ hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=nl-NL) worden gevonden.
 
 1. Inspect een andere component binnen de WKND-componenten, de `Breadcrumb` -component van: `/apps/wknd/components/breadcrumb` . Dezelfde eigenschap `sling:resourceSuperType` kan worden gevonden, maar deze keer verwijst deze naar `core/wcm/components/breadcrumb/v2/breadcrumb` . Dit is een ander voorbeeld van het gebruiken van het de componentenpatroon van de Volmacht om een Component van de Kern te omvatten. In feite, zijn alle componenten in de WKND codebasis volmachten van AEMComponenten van de Kern (behalve de component van douane demo HelloWorld). Het is beste praktijken om zoveel mogelijk van de functionaliteit van de Componenten van de Kern te hergebruiken *alvorens* douanecode te schrijven.
 
@@ -312,7 +312,7 @@ Gebruik het hulpmiddel CRXDE-Lite op een lokale AEM instantie om de onderliggend
 
    De andere reden om HTML in veelvoudige manuscripten uit te breken is de volmachtscomponenten toe te staan om individuele manuscripten met voeten te treden om douanebedrijfslogica uit te voeren. De HTML-scripts `customfooterlibs.html` en `customheaderlibs.html` worden gemaakt voor het expliciete doel dat moet worden overschreven door het implementeren van projecten.
 
-   U kunt meer over leren hoe de Bewerkbare factoren van het Malplaatje in het teruggeven van de [ inhoudspagina door dit artikel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html) te lezen.
+   U kunt meer over leren hoe de Bewerkbare factoren van het Malplaatje in het teruggeven van de [ inhoudspagina door dit artikel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=nl-NL) te lezen.
 
 1. Inspect nog een Core-component, zoals de Breadcrumb op `/libs/core/wcm/components/breadcrumb/v2/breadcrumb` . Bekijk het `breadcrumb.html` manuscript om te begrijpen hoe de prijsverhoging voor de component Breadcrumb uiteindelijk wordt geproduceerd.
 

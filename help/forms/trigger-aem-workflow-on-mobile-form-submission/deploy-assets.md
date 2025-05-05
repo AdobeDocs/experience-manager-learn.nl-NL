@@ -29,7 +29,7 @@ Ga als volgt te werk om deze kwestie van het gebruik op uw lokale systeem te lat
 
 * [De MobileFormToWorkflow-bundel installeren](assets/MobileFormToWorkflow.core-1.0.0-SNAPSHOT.jar)
 
-* [ stel het Ontwikkelen met de bundel van de Gebruiker van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=en) op
+* [ stel het Ontwikkelen met de bundel van de Gebruiker van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=nl-NL) op
 Voeg de volgende ingang in de Dienst van het Mapper van de Gebruiker van de Dienst van Apache Sling toe gebruikend configMgr
 
 ```
@@ -49,7 +49,7 @@ DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 * Specificeer de gebruikersbenaming/het wachtwoord voor de auteursinstantie en een **bestaande plaats in uw bewaarplaats van AEM** om de voorgelegde gegevens in de geloofsbrieven op te slaan van de Server van AEM gebruikend [ configMgr ](http://localhost:4503/system/console/configMgr). U kunt URL van het eindpunt op de Server van het Werkschema van AEM verlaten zoals is. Dit is het eindpunt dat de gegevens uit de voorlegging in gespecificeerde knoop haalt en opslaat.
   ![ publiceren-config ](assets/publish-config.png)
 
-* [ stel het Ontwikkelen met de bundel van de Gebruiker van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=en) op
+* [ stel het Ontwikkelen met de bundel van de Gebruiker van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=nl-NL) op
 * [ open de configuratie van osgi ](http://localhost:4503/system/console/configMgr).
 * Onderzoek naar **Apache het Verdelen Filter van de Verwijzing**. Controleer of het selectievakje Lege waarden toestaan is ingeschakeld.
 

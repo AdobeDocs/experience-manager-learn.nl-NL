@@ -27,7 +27,7 @@ Het wordt hoogst geadviseerd dat u het vorige [ basisleerprogramma ](../multi-st
 
 >[!CAUTION]
 >
->Als u geen toegang tot het milieu van AEM as a Cloud Service hebt, kunt u [ AEM Hoofdloze snelle opstelling voltooien gebruikend lokale SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html). Het is echter belangrijk om op te merken dat sommige productpagina&#39;s van UI zoals de navigatie van de Fragmenten van de Inhoud verschillend zijn.
+>Als u geen toegang tot het milieu van AEM as a Cloud Service hebt, kunt u [ AEM Hoofdloze snelle opstelling voltooien gebruikend lokale SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html?lang=nl-NL). Het is echter belangrijk om op te merken dat sommige productpagina&#39;s van UI zoals de navigatie van de Fragmenten van de Inhoud verschillend zijn.
 
 
 
@@ -49,7 +49,7 @@ De volgende video biedt een overzicht op hoog niveau van de concepten die in dez
 
 >[!CAUTION]
 >
->In deze video (2:25) wordt gesproken over het installeren van de GraphiQL-query-editor via Package Manager om GraphQL-query&#39;s te verkennen. Nochtans in nieuwere versies van AEM als Cloud Service wordt de ingebouwde **Ontdekkingsreiziger GraphiQL verstrekt**, zodat wordt de pakketinstallatie niet vereist. Zie [ Gebruikend GrahiQL winde ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) voor meer informatie.
+>In deze video (2:25) wordt gesproken over het installeren van de GraphiQL-query-editor via Package Manager om GraphQL-query&#39;s te verkennen. Nochtans in nieuwere versies van AEM als Cloud Service wordt de ingebouwde **Ontdekkingsreiziger GraphiQL verstrekt**, zodat wordt de pakketinstallatie niet vereist. Zie [ Gebruikend GrahiQL winde ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html?lang=nl-NL) voor meer informatie.
 
 
 ## Projectinstelling
@@ -79,7 +79,7 @@ Let op: `WKND Shared Endpoint` is al gemaakt. Om een eindpunt voor uw project to
 
 >[!NOTE]
 >
-> Na het bewaren van het eindpunt, zult u een modaal over het bezoeken van de Console van de Veiligheid zien, die u toestaat om veiligheidsmontages aan te passen als u wenst om toegang tot het eindpunt te vormen. De toestemmingen van de veiligheid zelf zijn buiten het werkingsgebied van dit leerprogramma, echter. Voor meer informatie, verwijs naar de [ documentatie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+> Na het bewaren van het eindpunt, zult u een modaal over het bezoeken van de Console van de Veiligheid zien, die u toestaat om veiligheidsmontages aan te passen als u wenst om toegang tot het eindpunt te vormen. De toestemmingen van de veiligheid zelf zijn buiten het werkingsgebied van dit leerprogramma, echter. Voor meer informatie, verwijs naar de [ documentatie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=nl-NL).
 
 ### WKND-inhoudsstructuur en taalhoofdmap controleren
 

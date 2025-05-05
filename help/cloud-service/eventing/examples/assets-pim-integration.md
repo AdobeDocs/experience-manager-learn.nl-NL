@@ -57,8 +57,8 @@ U hebt het volgende nodig om deze zelfstudie te voltooien:
 
 De ontwikkelingsstappen op hoog niveau zijn:
 
-1. [ Modernisering van het milieu van AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
-1. [ laat de toegang van AEM APIs ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access) toe
+1. [ Modernisering van het milieu van AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
+1. [ laat de toegang van AEM APIs ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access) toe
 1. [Een project maken in de Adobe Developer Console (ADC)](./runtime-action.md#Create-project-in-Adobe-Developer-Console)
 1. [Initialiseer het project voor lokale ontwikkeling](./runtime-action.md#initialize-project-for-local-development)
 1. Vorm het project in ADC
@@ -69,7 +69,7 @@ De ontwikkelingsstappen op hoog niveau zijn:
 1. Metagegevensschema voor elementen maken en toepassen
 1. Verificatie van het uploaden van elementen en update van metagegevens
 
-Voor details op stappen 1-2, verwijs naar [ OpenAPI-Gebaseerde gids van AEM APIs aanhalen ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) en voor stappen 3-4 verwijzen naar de [ Actie van Adobe I/O Runtime en de Gebeurtenissen van AEM ](./runtime-action.md#) voorbeeld. Raadpleeg de volgende secties voor stappen 5-9.
+Voor details op stappen 1-2, verwijs naar [ OpenAPI-Gebaseerde gids van AEM APIs aanhalen ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) en voor stappen 3-4 verwijzen naar de [ Actie van Adobe I/O Runtime en de Gebeurtenissen van AEM ](./runtime-action.md#) voorbeeld. Raadpleeg de volgende secties voor stappen 5-9.
 
 ### Het project configureren in Adobe Developer Console (ADC)
 
@@ -293,7 +293,7 @@ Verwijs naar het in bijlage [ WKND-Assets-PIM-Integration.zip ](../assets/exampl
 
 Door gebrek, heeft het project van Plaatsen WKND niet het schema van activa meta-gegevens om de specifieke meta-gegevens PIM zoals SKU, de Naam van de Leverancier, enz. te tonen. Laten we het metagegevensschema voor elementen maken en toepassen op een elementenmap in de AEM-instantie.
 
-1. Login aan de instantie van Activa van AEM as a Cloud Service en is in de [ mening van Activa ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views).
+1. Login aan de instantie van Activa van AEM as a Cloud Service en is in de [ mening van Activa ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/authoring/switch-views).
 
    ![ de mening van AEM Assets ](../assets/examples/assets-pim-integration/aem-assets-view.png)
 

@@ -24,7 +24,7 @@ AEM as a Cloud Service voert standaard veel functionele tests uit met uw toepass
 
 ## Inhoud die in deze video wordt behandeld
 
-+ [ Functioneel het Testen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/functional-testing.html)
++ [ Functioneel het Testen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/functional-testing.html?lang=nl-NL)
 + [ de Rooktests van AEM ](https://github.com/adobe/aem-test-samples/)
 + [ het Testen van AEM Clients ](https://github.com/adobe/aem-testing-clients/)
 

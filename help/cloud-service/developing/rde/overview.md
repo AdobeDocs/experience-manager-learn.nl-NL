@@ -35,8 +35,8 @@ Leer [ hoe te opstelling ](./how-to-setup.md) RDE in AEM as a Cloud Service.
 
 ## Aanvullende bronnen
 
-[ Inleiding aan de documentatie van RDE ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#introduction)
+[ Inleiding aan de documentatie van RDE ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html?lang=nl-NL#introduction)
 
-[ Cloud Manager CI/CD Pijpleidingen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html)
+[ Cloud Manager CI/CD Pijpleidingen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=nl-NL)
 
-[ opstelling ontwikkelingswinde ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html)
+[ opstelling ontwikkelingswinde ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL)

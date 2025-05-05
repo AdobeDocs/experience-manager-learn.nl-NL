@@ -24,7 +24,7 @@ In dit artikel bekijken we de volgende service
 
 * FormsService - Dit is een zeer veelzijdige service waarmee u gegevens kunt exporteren/importeren vanuit en naar een PDF-bestand en waarmee u ook interactieve pdf-bestanden kunt genereren door XML-gegevens samen te voegen in een xdp-sjabloon
 
-Officiële [ javadoc voor AEM Forms API is hier vermeld ](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
+Officiële [ javadoc voor AEM Forms API is hier vermeld ](https://helpx.adobe.com/nl/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
 Het volgende codefragment geeft interactief pdf terug gebruikend de renderPDFForm verrichting van FormsService. Het bestand schengen.xdp wordt gebruikt om de XML-gegevens samen te voegen.
 

@@ -86,7 +86,7 @@ Voordat u Adobe API&#39;s opent, is het van essentieel belang dat u de volgende 
 
 - **[Project van Adobe Developer Console ](https://developer.adobe.com/developer-console/docs/guides/projects/)**: Centrale plaats voor het beheren van API integratie, gebeurtenissen, en runtime functies. Hier, vormt u APIs, plaatst authentificatie, en produceert vereiste geloofsbrieven.
 
-- **[Profielen van het Product ](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)**: De Profielen van het product verstrekken een toestemmingsvooraf ingesteld die u toestaat om gebruiker of toepassingstoegang tot de producten van Adobe zoals AEM, Adobe Target, Adobe Analytics, en anderen te controleren. Elk Adobe-product heeft vooraf gedefinieerde productprofielen.
+- **[Profielen van het Product ](https://helpx.adobe.com/nl/enterprise/using/manage-product-profiles.html)**: De Profielen van het product verstrekken een toestemmingsvooraf ingesteld die u toestaat om gebruiker of toepassingstoegang tot de producten van Adobe zoals AEM, Adobe Target, Adobe Analytics, en anderen te controleren. Elk Adobe-product heeft vooraf gedefinieerde productprofielen.
 
 - **de Diensten**: De diensten bepalen de daadwerkelijke toestemmingen en worden geassocieerd met het Profiel van het Product. Als u de voorinstelling voor machtigingen wilt beperken of vergroten, kunt u de services die aan het productprofiel zijn gekoppeld, deselecteren of selecteren. Zo kunt u het toegangsniveau voor het product en de bijbehorende API&#39;s bepalen. In AEM as a Cloud Service, vertegenwoordigen de diensten gebruikersgroepen met vooraf bepaalde Lijsten van het Toegangsbeheer (ACLs) voor bewaargegevensopslagknopen, die korrelig toestemmingsbeheer toestaan.
 

@@ -27,8 +27,8 @@ Vereisten voor deze zelfstudie:
 * Blader naar de onderkant van deze pagina en download het wagerbestand en sla het op de vaste schijf op.
 * AEM Forms met SSL ingeschakeld
 
-   * [ Officiële Documentatie voor het toelaten van SSL op AEM 6.3 ](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
-   * [ Officiële Documentatie voor het toelaten van SSL op AEM 6.4 ](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
+   * [ Officiële Documentatie voor het toelaten van SSL op AEM 6.3 ](https://helpx.adobe.com/nl/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
+   * [ Officiële Documentatie voor het toelaten van SSL op AEM 6.4 ](https://helpx.adobe.com/nl/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
 * Je hebt een Salesforce-account nodig
 * U moet een verbonden app maken. De officiële documentatie van Salesforce voor het creëren van app is vermeld [ hier ](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
@@ -73,7 +73,7 @@ De volgende stap is het maken van Data Source in AEM Forms. Voer de volgende sta
 * Verificatiehandler: houder van autorisatie
 * Klik op &quot;Verbinding maken met OAUTH&quot;. Als alles goed gaat, worden geen fouten weergegeven
 
-Nadat u het formuliergegevensmodel hebt gemaakt met Salesforce, kunt u vervolgens de formuliergegevensintegratie maken met de Data Source die u zojuist hebt gemaakt. De officiële documentatie voor het creëren van de Integratie van de Gegevens van de Vorm is [ hier ](https://helpx.adobe.com/aem-forms/6-3/data-integration.html).
+Nadat u het formuliergegevensmodel hebt gemaakt met Salesforce, kunt u vervolgens de formuliergegevensintegratie maken met de Data Source die u zojuist hebt gemaakt. De officiële documentatie voor het creëren van de Integratie van de Gegevens van de Vorm is [ hier ](https://helpx.adobe.com/nl/aem-forms/6-3/data-integration.html).
 
 Zorg ervoor dat u het formuliergegevensmodel zo configureert dat de POST-service wordt gebruikt om een Lead-object in SFDC te maken.
 
@@ -106,7 +106,7 @@ Nadat u het formuliergegevensmodel hebt gemaakt, kunt u op dit model gebaseerde 
    * Verificatiehandler: houder van autorisatie
    * Klik op &quot;Verbinding maken met OAuth&quot;. Als er fouten optreden, controleert u de voorgaande stappen om ervoor te zorgen dat alle gegevens correct zijn ingevoerd.
 
-Nadat u de Data Source met Salesforce hebt gemaakt, kunt u vervolgens de Form Data Integration maken met de Data Source die u zojuist hebt gemaakt. De documentatieverbinding voor dat is [ hier ](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
+Nadat u de Data Source met Salesforce hebt gemaakt, kunt u vervolgens de Form Data Integration maken met de Data Source die u zojuist hebt gemaakt. De documentatieverbinding voor dat is [ hier ](https://helpx.adobe.com/nl/experience-manager/6-4/forms/using/create-form-data-models.html)
 
 Zorg ervoor dat u het formuliergegevensmodel zo configureert dat de POST-service wordt gebruikt om een Lead-object in SFDC te maken.
 

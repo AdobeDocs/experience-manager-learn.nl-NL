@@ -78,4 +78,4 @@ Adobe Experience Manager (AEM) is nu as a Cloud Service beschikbaar. AEM as a Cl
 
 ## Aanvullende bronnen
 
-* [ documentatie van Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
+* [ documentatie van Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=nl-NL)

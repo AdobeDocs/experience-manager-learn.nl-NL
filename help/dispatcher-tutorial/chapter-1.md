@@ -1302,11 +1302,11 @@ Als u een AEM Auteur en Publish uit de doos installeert, is de topologie een bee
 
 Als een klant ondertussen om die inhoud verzoekt, zal de Dispatcher om de inhoud van de schaal vragen en opslaan.
 
-Een meer betrouwbare opstelling verzendt het ongeldigingsverzoek van de systemen van Publish _nadat_ zij de inhoud hebben ontvangen. Het artikel &quot;[ het Invalideren van het Geheime voorgeheugen van Dispatcher van een het Publiceren Instantie ](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot;beschrijft de details.
+Een meer betrouwbare opstelling verzendt het ongeldigingsverzoek van de systemen van Publish _nadat_ zij de inhoud hebben ontvangen. Het artikel &quot;[ het Invalideren van het Geheime voorgeheugen van Dispatcher van een het Publiceren Instantie ](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot;beschrijft de details.
 
 **Verwijzingen**
 
-[ helpx.adobe.com - het Valideren van het Geheime voorgeheugen van Dispatcher van een het Publiceren Instantie ](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)
+[ helpx.adobe.com - het Valideren van het Geheime voorgeheugen van Dispatcher van een het Publiceren Instantie ](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)
 
 ### HTTP-koptekst en -koptekstcache
 
@@ -1454,7 +1454,7 @@ Het hebben van één gemeenschappelijke docroot had ook een andere aardige eigen
 
 * [ apache.org - Mod herschrijven ](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
 
-* [ helpx.adobe.com - de Afbeelding van het Middel ](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/resource-mapping.html)
+* [ helpx.adobe.com - de Afbeelding van het Middel ](https://helpx.adobe.com/nl/experience-manager/6-4/sites/deploying/using/resource-mapping.html)
 
 ### Foutafhandeling
 
@@ -1506,11 +1506,11 @@ En natuurlijk kun je je eigen mix van alle drie benaderingen toepassen.
 
 **Optie 2**. &quot;Niet in cache plaatsen&quot; is over het algemeen een slecht idee. Als u zo gaat, zorg ervoor de hoeveelheid verkeer en het aantal gevoelige middelen die worden uitgesloten klein zijn. Of zorg ervoor dat er een cache in het geheugen in het Publish-systeem is geïnstalleerd, dat de Publish-systemen de resulterende belasting kunnen verwerken - meer in die in deel III van deze reeks.
 
-**Optie 3**. &#39;Machtigingsgevoelige caching&#39; is een interessante aanpak. De Dispatcher slaat een bron in de cache op - maar voordat het wordt geleverd, vraagt het het AEM of het dat kan. Dit leidt tot een extra verzoek van Dispatcher aan de Publish - maar het spaart het systeem van Publish gewoonlijk om een pagina opnieuw terug te geven als het reeds in caching is. Deze aanpak vereist echter enige aangepaste implementatie. Vind details hier in het artikel [ Vertrouwelijke caching van de Toestemming ](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html).
+**Optie 3**. &#39;Machtigingsgevoelige caching&#39; is een interessante aanpak. De Dispatcher slaat een bron in de cache op - maar voordat het wordt geleverd, vraagt het het AEM of het dat kan. Dit leidt tot een extra verzoek van Dispatcher aan de Publish - maar het spaart het systeem van Publish gewoonlijk om een pagina opnieuw terug te geven als het reeds in caching is. Deze aanpak vereist echter enige aangepaste implementatie. Vind details hier in het artikel [ Vertrouwelijke caching van de Toestemming ](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/permissions-cache.html).
 
 **Verwijzingen**
 
-* [ helpx.adobe.com - de Bevoegdheden gevoelige caching ](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html)
+* [ helpx.adobe.com - de Bevoegdheden gevoelige caching ](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/permissions-cache.html)
 
 ### De respijtperiode instellen
 
@@ -1576,7 +1576,7 @@ Deze aanpak zou kunnen helpen bij het definiëren van langere aflossingsvrije pe
 
 **Verwijzingen**
 
-[ helpx.adobe.com - de Configuratie van Dispatcher ](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)
+[ helpx.adobe.com - de Configuratie van Dispatcher ](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/dispatcher-configuration.html)
 
 ### Automatisch opnieuw ophalen
 
@@ -1635,7 +1635,7 @@ Als u de cachemap van Dispatcher bekijkt, ziet u tijdelijke bestanden gemarkeerd
 
 **Verwijzingen**
 
-[ helpx.adobe.com - het ongeldig maken van Cached Pagina&#39;s van AEM ](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)
+[ helpx.adobe.com - het ongeldig maken van Cached Pagina&#39;s van AEM ](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/page-invalidate.html)
 
 ### Het Publish-systeem afschermen
 
@@ -1690,7 +1690,7 @@ Maar we stellen voor dat u overweegt de URL-ruimte zo vroeg mogelijk in de keten
 
 [ apache.org- sethandler richtlijn ](https://httpd.apache.org/docs/2.4/mod/core.html#sethandler)
 
-[ helpx.adobe.com - het Vormen Toegang tot de Filter van de Inhoud ](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#ConfiguringAccesstoContentfilter)
+[ helpx.adobe.com - het Vormen Toegang tot de Filter van de Inhoud ](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/dispatcher-configuration.html#ConfiguringAccesstoContentfilter)
 
 ### Filteren met reguliere expressies en algemene weergaven
 
@@ -1843,7 +1843,7 @@ U zult waarschijnlijk een nieuwe regel toevoegen aan een van de groepen - of mis
 
 **Verwijzingen**
 
-[ helpx.adobe.com - het ontwerpen van Patronen voor globale Eigenschappen ](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#DesigningPatternsforglobProperties)
+[ helpx.adobe.com - het ontwerpen van Patronen voor globale Eigenschappen ](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/dispatcher-configuration.html#DesigningPatternsforglobProperties)
 
 ### Protocol Specificatie
 
@@ -1906,17 +1906,17 @@ Geef een lijst weer van de URL&#39;s die u na de validatie direct opnieuw wilt o
 
 ## Aanvullende bronnen
 
-Een goed overzicht en inleiding aan Dispatcher caching: [ https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
+Een goed overzicht en inleiding aan Dispatcher caching: [ https://helpx.adobe.com/nl/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/dispatcher.html)
 
-De documentatie van Dispatcher met alle verklaarde richtlijnen: [ https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)
+De documentatie van Dispatcher met alle verklaarde richtlijnen: [ https://helpx.adobe.com/nl/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/dispatcher-configuration.html)
 
-Sommige vaak gestelde vragen: [ https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html)
+Sommige vaak gestelde vragen: [ https://helpx.adobe.com/nl/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/nl/experience-manager/using/dispatcher-faq.html)
 
 Opname van een webinar over Dispatcher optimalisering - hoogst geadviseerd: [ https://my.adobeconnect.com/p7th2gf8k43?proto=true ](https://my.adobeconnect.com/p7th2gf8k43?proto=true)
 
 Presentatie &quot;de ondergewaardeerde macht van inhoudsafschrijving&quot;, &quot;adjustTo ()&quot;conferentie in Potsdam 2018 [ https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html ](https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html)
 
-Het ongeldig maken van Cached Pagina&#39;s van AEM: [ https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)
+Het ongeldig maken van Cached Pagina&#39;s van AEM: [ https://helpx.adobe.com/nl/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/page-invalidate.html)
 
 ## Volgende stap
 

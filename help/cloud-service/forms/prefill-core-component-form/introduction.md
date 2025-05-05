@@ -30,7 +30,7 @@ In deze zelfstudie behandelen we het gebruik van een adaptief formulier dat is g
 
 Voor het implementeren van het bovenstaande gebruiksgeval in AEM Forms CS hebt u het volgende nodig
 
-* [ AEM Forms CS wolk klaar instantie ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=en#set-up-aem-author-instance)
+* [ AEM Forms CS wolk klaar instantie ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=nl-NL#set-up-aem-author-instance)
 
 ### Volgende stappen
 

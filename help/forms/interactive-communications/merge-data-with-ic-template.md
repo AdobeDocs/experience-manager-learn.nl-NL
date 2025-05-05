@@ -162,7 +162,7 @@ String params = arg2.get("PROCESS_ARGS","string").toString();
 
 Voer de volgende stappen uit om dit op uw server te testen:
 
-* [ vorm de Dienst van de Post van de Dag CQ.](https://helpx.adobe.com/experience-manager/6-5/communities/using/email.html) Dit is nodig om e-mail te verzenden met het document dat als bijlage is gegenereerd.
+* [ vorm de Dienst van de Post van de Dag CQ.](https://helpx.adobe.com/nl/experience-manager/6-5/communities/using/email.html) Dit is nodig om e-mail te verzenden met het document dat als bijlage is gegenereerd.
 * [Implementeer de Developing with Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * Controleer of u de volgende vermelding hebt toegevoegd in de configuratie van de service Gebruikerskaart van de Apache Sling Service
 * **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**

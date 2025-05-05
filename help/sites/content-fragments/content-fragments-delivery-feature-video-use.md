@@ -32,7 +32,7 @@ Deze videoreeks behandelt de leveringsopties voor het gebruiken van de Fragmente
 
 >[!VIDEO](https://video.tv.adobe.com/v/22449?quality=12&learn=on)
 
-De Fragmenten van de inhoud kunnen op de pagina&#39;s van AEM Sites, of op een gelijkaardige manier, de Fragmenten van de Ervaring worden gebruikt, gebruikend de component van het Fragment van de Componenten van de Kern van AEM WCM [ Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html).
+De Fragmenten van de inhoud kunnen op de pagina&#39;s van AEM Sites, of op een gelijkaardige manier, de Fragmenten van de Ervaring worden gebruikt, gebruikend de component van het Fragment van de Componenten van de Kern van AEM WCM [ Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=nl-NL).
 
 Componenten van inhoudsfragmenten kunnen zo nodig worden opgemaakt met het AEM-stijlsysteem om de inhoud weer te geven.
 
@@ -42,7 +42,7 @@ Componenten van inhoudsfragmenten kunnen zo nodig worden opgemaakt met het AEM-s
 
 AEM Content Services vereenvoudigt het maken van op AEM gebaseerde HTTP-eindpunten waarmee inhoud wordt weergegeven in een genormaliseerde JSON-indeling.
 
-De bovenstaande video gebruikt de [ Component van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) om individuele Fragmenten van de Inhoud bloot te stellen. De [ Component van de Lijst van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) is een nieuwe component die een auteur toestaat om een vraag te bepalen die dynamisch de pagina met een lijst van de Fragmenten van de Inhoud zal bevolken. De component Lijst met inhoudsfragmenten heeft de voorkeur wanneer meerdere inhoudsfragmenten moeten worden weergegeven.
+De bovenstaande video gebruikt de [ Component van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=nl-NL) om individuele Fragmenten van de Inhoud bloot te stellen. De [ Component van de Lijst van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html?lang=nl-NL) is een nieuwe component die een auteur toestaat om een vraag te bepalen die dynamisch de pagina met een lijst van de Fragmenten van de Inhoud zal bevolken. De component Lijst met inhoudsfragmenten heeft de voorkeur wanneer meerdere inhoudsfragmenten moeten worden weergegeven.
 
 *Eind-punt JSON nuttige load van de Diensten van de Inhoud van het Voorbeeld:*\
 **[atletes.json](assets/athletes.json)**
@@ -73,8 +73,8 @@ Er zijn twee opties om Content Fragment toegankelijk te maken als JSON voor onde
 ## Aanvullende bronnen {#additional-resources}
 
 * [Inhoudsfragmenten ontwerpen](content-fragments-feature-video-use.md)
-* [ AEM WCM de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [ AEM WCM de Component van het Fragment van de Inhoud van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [ AEM WCM de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+* [ AEM WCM de Component van het Fragment van de Inhoud van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=nl-NL)
 
 U kunt als volgt het pakket downloaden en installeren op een AEM 6.4+-instantie voor de uiteindelijke status van de videoreeks:\
 **[aem_demo_liquid-ExperienceContent-fragments-100.zip](assets/aem_demo_fluid-experiencescontent-fragments-100.zip)**

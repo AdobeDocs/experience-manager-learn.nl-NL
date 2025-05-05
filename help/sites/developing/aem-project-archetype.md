@@ -27,4 +27,4 @@ Het AEM-project bevat alle code en configuraties voor een implementatie. Met [!D
 ## Aanvullende bronnen {#additional-resources}
 
 * [ Project GitHub ](https://github.com/adobe/aem-project-archetype)
-* [ de Documentatie van Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [ de Documentatie van Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL)

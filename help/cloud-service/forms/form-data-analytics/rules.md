@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # De regel definiëren
 
-In het bezit van Markeringen creeerden wij 2 nieuwe [ regels ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html) (**de Fout van de Bevestiging van het Gebied en FormSubmit**).
+In het bezit van Markeringen creeerden wij 2 nieuwe [ regels ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html?lang=nl-NL) (**de Fout van de Bevestiging van het Gebied en FormSubmit**).
 
 ![ adaptive-form ](assets/rules.png)
 
@@ -54,7 +54,7 @@ In de Vorm legt regel voor, wordt de waarde van het gegevenselement _&#x200B;**A
 De variabelen Adobe Analytics - Set zijn als volgt geconfigureerd.
 ![ vorm-voorlegt-regel-reeks-variabelen ](assets/form-submit-set-variable.png)
 
-Wanneer u bereid bent om uw code van Markeringen te testen, [ publiceer uw veranderingen die aan de markeringen ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html) worden aangebracht gebruikend de het publiceren stroom.
+Wanneer u bereid bent om uw code van Markeringen te testen, [ publiceer uw veranderingen die aan de markeringen ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html?lang=nl-NL) worden aangebracht gebruikend de het publiceren stroom.
 
 ## Volgende stappen
 

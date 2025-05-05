@@ -39,7 +39,7 @@ while ((line = reader.readLine()) != null) {
 System.out.println("The submitted form data is " + stringBuffer.toString());
 ```
 
-Verzeker u de [ Configuratie van SDK van de Cliënt LiveCycle van Adobe ](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) hebt gevormd als u van plan bent om de code te gebruiken om een proces aan te halen J2EE.
+Verzeker u de [ Configuratie van SDK van de Cliënt LiveCycle van Adobe ](https://helpx.adobe.com/nl/aem-forms/6/submit-form-data-livecycle-process.html) hebt gevormd als u van plan bent om de code te gebruiken om een proces aan te halen J2EE.
 
 ## De verzendURL van het HTML5-formulier configureren
 
@@ -65,5 +65,5 @@ Verzeker u de [ Configuratie van SDK van de Cliënt LiveCycle van Adobe ](https:
 
 ### Extra lezingen
 
-Voor meer informatie bij het produceren van PDFs van HTML5 vormvoorlegging, verwijs naar dit [ artikel ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html).
+Voor meer informatie bij het produceren van PDFs van HTML5 vormvoorlegging, verwijs naar dit [ artikel ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html?lang=nl-NL).
 

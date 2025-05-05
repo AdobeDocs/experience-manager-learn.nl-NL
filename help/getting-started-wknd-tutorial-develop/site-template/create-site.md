@@ -25,13 +25,13 @@ Als onderdeel van Snel maken kunt u een nieuwe website genereren met de wizard S
 
 ## Vereisten {#prerequisites}
 
-De stappen in dit hoofdstuk vinden plaats in een Adobe Experience Manager as a Cloud Service-omgeving. Zorg ervoor dat u beheertoegang hebt tot de AEM-omgeving. Het wordt geadviseerd om het programma van de a [ Sandbox ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) en [ Ontwikkeling milieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) te gebruiken wanneer de voltooiing van dit leerprogramma.
+De stappen in dit hoofdstuk vinden plaats in een Adobe Experience Manager as a Cloud Service-omgeving. Zorg ervoor dat u beheertoegang hebt tot de AEM-omgeving. Het wordt geadviseerd om het programma van de a [ Sandbox ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html?lang=nl-NL) en [ Ontwikkeling milieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL) te gebruiken wanneer de voltooiing van dit leerprogramma.
 
-[ het programma van de Productie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) milieu&#39;s kunnen voor dit leerprogramma eveneens worden gebruikt; nochtans, zorg ervoor dat de activiteiten van dit leerprogramma niet het werk zullen beïnvloeden dat op de doelmilieu&#39;s wordt uitgevoerd, aangezien dit leerprogramma inhoud en code aan het milieu van doelAEM opstelt.
+[ het programma van de Productie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html?lang=nl-NL) milieu&#39;s kunnen voor dit leerprogramma eveneens worden gebruikt; nochtans, zorg ervoor dat de activiteiten van dit leerprogramma niet het werk zullen beïnvloeden dat op de doelmilieu&#39;s wordt uitgevoerd, aangezien dit leerprogramma inhoud en code aan het milieu van doelAEM opstelt.
 
-[ AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html) kan voor delen van dit leerprogramma worden gebruikt. De aspecten van dit leerprogramma die zich op de wolkendiensten baseren, zoals [ opstellend thema&#39;s met Cloud Manager front-end pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html), kunnen niet op AEM SDK worden uitgevoerd.
+[ AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL) kan voor delen van dit leerprogramma worden gebruikt. De aspecten van dit leerprogramma die zich op de wolkendiensten baseren, zoals [ opstellend thema&#39;s met Cloud Manager front-end pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html?lang=nl-NL), kunnen niet op AEM SDK worden uitgevoerd.
 
-Herzie [ op het instappen documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) voor meer details.
+Herzie [ op het instappen documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=nl-NL) voor meer details.
 
 ## Doelstelling {#objective}
 
@@ -76,7 +76,7 @@ Een meerderheid van het leerprogramma zal plaatsvinden gebruikend de **Dienst va
 
 >[!NOTE]
 >
-> Heb je problemen met Experience Manager? Herzie [ onboarding documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html)
+> Heb je problemen met Experience Manager? Herzie [ onboarding documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=nl-NL)
 
 ## De sjabloon Basissite downloaden
 

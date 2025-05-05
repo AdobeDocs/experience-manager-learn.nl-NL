@@ -230,7 +230,7 @@ Voer de volgende stappen uit om dit op uw lokale server te testen:
 
 1. [ Download en installeer de ingebedde pdf- bundel ](assets/embedpdf.core-1.0-SNAPSHOT.jar).
 Dit heeft servlet om de gegevens met het malplaatje XDP samen te voegen en pdf terug te stromen.
-1. Voeg de weg /bin/getPDFToEmbed in de uitgesloten wegensectie van de Filter toe van Adobe Granite CSRF gebruikend [ AEM ConfigMgr ](http://localhost:4502/system/console/configMgr). In uw productiemilieu wordt het geadviseerd om het [ CSRF beschermingskader ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en) te gebruiken
+1. Voeg de weg /bin/getPDFToEmbed in de uitgesloten wegensectie van de Filter toe van Adobe Granite CSRF gebruikend [ AEM ConfigMgr ](http://localhost:4502/system/console/configMgr). In uw productiemilieu wordt het geadviseerd om het [ CSRF beschermingskader ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=nl-NL) te gebruiken
 1. [De clientbibliotheek en de aangepaste component importeren](assets/embed-pdf.zip)
 1. [Het adaptieve formulier en de sjabloon importeren](assets/embed-pdf-form-and-xdp.zip)
 1. [ Voorproef Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)

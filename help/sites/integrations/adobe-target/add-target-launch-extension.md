@@ -35,4 +35,4 @@ Leer hoe u Adobe Target kunt inschakelen op uw AEM-website met tags.
 ## Ondersteunende koppelingen
 
 + [ Foutopsporing van Adobe Experience Cloud - Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-+ [ Inleiding aan Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [ Inleiding aan Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=nl-NL)

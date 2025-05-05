@@ -40,7 +40,7 @@ De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 
 De Android-toepassing werkt met de volgende AEM-implementatieopties. Alle plaatsingen vereisen de [ Plaats van WKND v3.0.0+ ](https://github.com/adobe/aem-guides-wknd/releases/latest) om worden geïnstalleerd.
 
-+ [ AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
++ [ AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=nl-NL)
 
 De toepassing van Android wordt ontworpen om met __AEM te verbinden publiceert__ milieu, nochtans kan het inhoud van de Auteur van AEM als de authentificatie in de configuratie van de toepassing van Android wordt verstrekt.
 
@@ -75,7 +75,7 @@ De toepassing van Android wordt ontworpen om met __AEM te verbinden publiceert__
 
 ### Verbinding maken met AEM-omgevingen
 
-Als het verbinden met een het auteursmilieu van AEM [ vergunning ](https://github.com/adobe/aem-headless-client-java#using-authorization) wordt vereist. [ AEMHeadlessClientBuilder ](https://github.com/adobe/aem-headless-client-java/blob/main/client/src/main/java/com/adobe/aem/graphql/client/AEMHeadlessClientBuilder.java) verstrekt de capaciteit om [ op teken-gebaseerde authentificatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html) te gebruiken. Om op een token gebaseerde verificatie-update-clientbuilder te gebruiken in `AdventureLoader.java` en `AdventuresLoader.java` :
+Als het verbinden met een het auteursmilieu van AEM [ vergunning ](https://github.com/adobe/aem-headless-client-java#using-authorization) wordt vereist. [ AEMHeadlessClientBuilder ](https://github.com/adobe/aem-headless-client-java/blob/main/client/src/main/java/com/adobe/aem/graphql/client/AEMHeadlessClientBuilder.java) verstrekt de capaciteit om [ op teken-gebaseerde authentificatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=nl-NL) te gebruiken. Om op een token gebaseerde verificatie-update-clientbuilder te gebruiken in `AdventureLoader.java` en `AdventuresLoader.java` :
 
 ```java
 /* Comment out basicAuth
@@ -229,5 +229,5 @@ De Android-toepassing gebruikt twee weergaven om de avontuurgegevens in de mobie
 
 ## Aanvullende bronnen
 
-+ [ Begonnen het Worden met de Zetel van AEM - Zelfstudie van GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)
++ [ Begonnen het Worden met de Zetel van AEM - Zelfstudie van GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=nl-NL)
 + [ Hoofdloze Cliënt van AEM voor Java ](https://github.com/adobe/aem-headless-client-java)

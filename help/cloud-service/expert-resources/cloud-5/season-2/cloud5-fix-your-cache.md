@@ -24,7 +24,7 @@ In een tweedelige seizoen, twee reeksen, verkennen we enkele dingen die je kunt 
 
 ## Inhoud die in deze video wordt behandeld
 
-+ [ Caching &amp; de Levering van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html)
++ [ Caching &amp; de Levering van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=nl-NL)
 + [ Lighthouse van Google ](https://developers.google.com/web/tools/lighthouse)
 
 ## Aanvullende bronnen

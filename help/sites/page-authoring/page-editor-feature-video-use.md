@@ -29,10 +29,10 @@ In de volgende video worden enkele van de bovenste functies van de Pagina-editor
 >[!VIDEO](https://video.tv.adobe.com/v/32011?quality=12&learn=on)
 
 
-Zie de [ documentatie van AEM voor een volledig overzicht van de mogelijkheden van de Redacteur van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html).
+Zie de [ documentatie van AEM voor een volledig overzicht van de mogelijkheden van de Redacteur van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=nl-NL).
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ de documentatie van de Redacteur van de Pagina van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html)
-* [ het Uitgeven van documentatie van de paginacontent ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [ Plaatsen creërend gebruikersgids ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [ de documentatie van de Redacteur van de Pagina van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=nl-NL)
+* [ het Uitgeven van documentatie van de paginacontent ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html?lang=nl-NL)
+* [ Plaatsen creërend gebruikersgids ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html?lang=nl-NL)

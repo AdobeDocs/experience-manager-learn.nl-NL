@@ -163,7 +163,7 @@ Nochtans, zou dit keer u de **Geblokkeerde verzoeken** en overeenkomstige waarde
 
 Laat **aanvallen van Dos** verhinderen door verzoeken van een IP adres te blokkeren die 100 verzoeken per seconde maken, die het veroorzaken om voor 5 minuten worden geblokkeerd.
 
-- Voeg de volgende [ regel van de de filterfilter van de tariefgrens ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#ratelimit-structure) in het 2&rbrace; dossier van het WKND project &lbrace;toe.`/config/cdn.yaml`
+- Voeg de volgende [ regel van de de filterfilter van de tariefgrens ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=nl-NL#ratelimit-structure) in het 2&rbrace; dossier van het WKND project &lbrace;toe.`/config/cdn.yaml`
 
 ```yaml
 kind: CDN
@@ -227,7 +227,7 @@ De de regelvoorbeelden van de verkeersfilter tot nu toe kunnen door alle Sites e
 
 Daarna, onderzoeken wij de ervaring voor een klant die een vergunning van de Bescherming van de Verbeterde Veiligheid of van WAF-DDoS heeft verworven, die hen geavanceerde regels laat vormen om websites tegen verfijnde aanvallen te beschermen.
 
-Alvorens verder te gaan, laat de bescherming van WAF-DDoS voor uw programma toe, zoals die in de documentatie van de verkeersfilterregels [ opstellingsstappen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup) wordt beschreven.
+Alvorens verder te gaan, laat de bescherming van WAF-DDoS voor uw programma toe, zoals die in de documentatie van de verkeersfilterregels [ opstellingsstappen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=nl-NL#setup) wordt beschreven.
 
 #### Zonder WAFFlags
 
@@ -264,7 +264,7 @@ Merk op hoe de **distributie van de Vlaggen van WAF** en **Hoogste aanvallen** p
 
 Voeg nu een regel van WAF toe die `wafFlags` bezit als deel van het `action` bezit bevat en **blokkeer de gesimuleerde aanvalsverzoeken**.
 
-Vanuit syntaxisoogpunt zijn de WAF-regels vergelijkbaar met die van eerdere versies, maar de eigenschap `action` verwijst naar een of meer `wafFlags` -waarden. Meer over `wafFlags` leren, herzie de [ sectie van de Lijst van de Vlaggen van WAF ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#waf-flags-list).
+Vanuit syntaxisoogpunt zijn de WAF-regels vergelijkbaar met die van eerdere versies, maar de eigenschap `action` verwijst naar een of meer `wafFlags` -waarden. Meer over `wafFlags` leren, herzie de [ sectie van de Lijst van de Vlaggen van WAF ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=nl-NL#waf-flags-list).
 
 - Voeg de volgende regel toe in het WKND-projectbestand `/config/cdn.yaml` . De regel `block-waf-flags` bevat enkele wafFlags die in de dashboardwerkset waren weergegeven toen deze met gesimuleerd kwaadaardig verkeer werden aangevallen. Het is inderdaad een goede praktijk om logboeken te analyseren om te bepalen welke nieuwe regels moeten worden verklaard, aangezien het bedreigingslandschap evolueert.
 
@@ -352,7 +352,7 @@ Krijg vertrouwd met geadviseerde [ beste praktijken ](./best-practices.md) om he
 
 ## Aanvullende bronnen
 
-[ Syntaxis van de Regels van de Filter van het Verkeer ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#rules-syntax)
+[ Syntaxis van de Regels van de Filter van het Verkeer ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=nl-NL#rules-syntax)
 
-[ CDN het Formaat van het Logboek ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#cdn-log-format)
+[ CDN het Formaat van het Logboek ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=nl-NL#cdn-log-format)
 

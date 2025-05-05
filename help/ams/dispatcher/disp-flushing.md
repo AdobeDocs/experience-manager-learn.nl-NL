@@ -175,7 +175,7 @@ Zoals u in dit voorbeeld kunt zien, is het bestand ouder dan het `.stat` -bestan
 
 ## Farm File Settings
 
-De documentatie is allen hier voor de volledige reeks configuratieopties: [ https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en)
+De documentatie is allen hier voor de volledige reeks configuratieopties: [ https://docs.adobe.com/content/help/nl-NL/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL)
 
 We willen er een paar benadrukken die betrekking hebben op het leegmaken van de cache
 

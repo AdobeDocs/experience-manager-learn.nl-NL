@@ -27,7 +27,7 @@ AEM GraphQL API biedt een robuuste mogelijkheid om RTF-tekst te retourneren als 
 
 >[!VIDEO](https://video.tv.adobe.com/v/342104?quality=12&learn=on)
 
-In de Redacteur van het Fragment van de Inhoud, verstrekt de het menubar van het multi-line tekstgebied auteurs van standaard rijke tekst het formatteren mogelijkheden, zoals **gewaagd**, *cursief*, en onderstreept. Het openen van het multi-lijngebied op het volledige schermwijze laat [ extra het formatteren hulpmiddelen zoals het type van Paragraaf toe, vinden en vervangen, spellingcontrole, en meer ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
+In de Redacteur van het Fragment van de Inhoud, verstrekt de het menubar van het multi-line tekstgebied auteurs van standaard rijke tekst het formatteren mogelijkheden, zoals **gewaagd**, *cursief*, en onderstreept. Het openen van het multi-lijngebied op het volledige schermwijze laat [ extra het formatteren hulpmiddelen zoals het type van Paragraaf toe, vinden en vervangen, spellingcontrole, en meer ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html?lang=nl-NL).
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Controleer het **Vertaalbare** vakje, als de inhoud moet worden gelokaliseerd. A
 
 Wanneer ontwikkelaars een GraphQL-query maken, kunnen ze verschillende antwoordtypen kiezen in `html` , `plaintext` , `markdown` en `json` in een veld met meerdere regels.
 
-De ontwikkelaars kunnen de [ Voorproef JSON ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html) in de redacteur van het Fragment van de Inhoud gebruiken om alle waarden van het huidige Fragment van de Inhoud te tonen dat kan worden teruggekeerd gebruikend GraphQL API.
+De ontwikkelaars kunnen de [ Voorproef JSON ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=nl-NL) in de redacteur van het Fragment van de Inhoud gebruiken om alle waarden van het huidige Fragment van de Inhoud te tonen dat kan worden teruggekeerd gebruikend GraphQL API.
 
 ## GraphQL-query voortgezet
 

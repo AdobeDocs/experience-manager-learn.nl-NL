@@ -48,7 +48,7 @@ Een AEM-component wordt gedefinieerd als een knooppunt en eigenschappen. In het 
 
 >[!NOTE]
 >
-> Een snelle verfrisser op de [ grondbeginselen van de componenten van AEM kan nuttig zijn ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
+> Een snelle verfrisser op de [ grondbeginselen van de componenten van AEM kan nuttig zijn ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=nl-NL).
 
 1. Open de map `ui.apps` in de IDE van uw keuze.
 2. Ga naar `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components` en maak een nieuwe map met de naam `open-weather` .
@@ -144,13 +144,13 @@ Een AEM-component wordt gedefinieerd als een knooppunt en eigenschappen. In het 
    >
    > U kunt veel meer [ voorbeelden van dialogen bekijken door de definities van de Component van de Kern te bekijken ](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components). U kunt extra vormgebieden, zoals `select`, `textarea`, `pathfield` ook bekijken, beschikbaar onder `/libs/granite/ui/components/coral/foundation/form` in [ CRXDE-Lite ](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form).
 
-   Met een traditionele component van AEM, wordt een [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) manuscript typisch vereist. Aangezien SPA de component zal teruggeven, is geen manuscript van HTML nodig.
+   Met een traditionele component van AEM, wordt een [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=nl-NL) manuscript typisch vereist. Aangezien SPA de component zal teruggeven, is geen manuscript van HTML nodig.
 
 ## Het verkoopmodel maken
 
-Sling-modellen zijn annotaties die worden aangedreven door Java &quot;POJO&#39;s&quot; (Plain Old Java Objects) en die het gemakkelijker maken gegevens van de JCR aan Java-variabelen toe te wijzen. [ het Sling Modellen ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=en#sling-models) functioneren typisch om complexe server-kant bedrijfslogica voor de Componenten van AEM in te kapselen.
+Sling-modellen zijn annotaties die worden aangedreven door Java &quot;POJO&#39;s&quot; (Plain Old Java Objects) en die het gemakkelijker maken gegevens van de JCR aan Java-variabelen toe te wijzen. [ het Sling Modellen ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=nl-NL#sling-models) functioneren typisch om complexe server-kant bedrijfslogica voor de Componenten van AEM in te kapselen.
 
-In de context van de Redacteur van het KUUROORD, blootstellen het Verdelen Modellen de inhoud van een component door het model JSON door een eigenschap gebruikend [ het Verdelen ModelExporter ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
+In de context van de Redacteur van het KUUROORD, blootstellen het Verdelen Modellen de inhoud van een component door het model JSON door een eigenschap gebruikend [ het Verdelen ModelExporter ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=nl-NL).
 
 1. Open in IDE van uw keuze de module `core` op `aem-guides-wknd-spa.react/core` .
 1. Maak een bestand met de naam `OpenWeatherModel.java` at `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models` .

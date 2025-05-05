@@ -24,8 +24,8 @@ Gebeurtenissen maken en weergeven in [!DNL ServiceNow] met gebruik van het formu
 ## Vereisten
 
 * [!DNL ServiceNow] account.
-* Vertrouwd met [ het creëren van gegevensbronnen ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)
-* Vertrouwd met [ Model van de Gegevens van de Vorm ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html)
+* Vertrouwd met [ het creëren van gegevensbronnen ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=nl-NL)
+* Vertrouwd met [ Model van de Gegevens van de Vorm ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=nl-NL)
 
 ## Voorbeeld-Assets
 

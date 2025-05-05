@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Structuurpakket voor opslagplaats
 
-Onderzoek het de structuurpakket van de Opslagplaats van een AEM toepassing [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/repository-structure-package.html), zijn belang en hoe te om het optimaal te bepalen.
+Onderzoek het de structuurpakket van de Opslagplaats van een AEM toepassing [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/repository-structure-package.html?lang=nl-NL), zijn belang en hoe te om het optimaal te bepalen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330550?quality=12&learn=on)

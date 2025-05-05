@@ -23,7 +23,7 @@ De nieuwste versie van AEM en AEM WCM Core Components wordt altijd aanbevolen.
 * AEM WCM Core Components 2.4.0 of hoger
    * Omvat in het [ Mobiele Pakket van de Inhoud van de AEM van de Toepassing hieronder ](#wknd-mobile-application-packages)
 
-Voorafgaand aan de aanvang van dit leerprogramma zorgt ervoor dat de volgende AEM instanties [ geïnstalleerd en lopend op uw lokale machine ](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install) zijn:
+Voorafgaand aan de aanvang van dit leerprogramma zorgt ervoor dat de volgende AEM instanties [ geïnstalleerd en lopend op uw lokale machine ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install) zijn:
 
 * **AEM Auteur** op **haven 4502**
 * **AEM Publish** op **haven 4503**

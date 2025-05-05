@@ -44,4 +44,4 @@ Adrescomponent kan nu worden gebruikt in een adaptief formulier
 
 ## Het project implementeren in een cloud-omgeving
 
-Als alles goed op uw lokale ontwikkelomgeving kijkt, is de volgende stap aan de [ wolkeninstantie op te stellen gebruikend wolkenmanager.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git)
+Als alles goed op uw lokale ontwikkelomgeving kijkt, is de volgende stap aan de [ wolkeninstantie op te stellen gebruikend wolkenmanager.](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git)

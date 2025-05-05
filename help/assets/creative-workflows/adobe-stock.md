@@ -25,7 +25,7 @@ Met AEM 6.4.2 kunnen gebruikers Adobe Stock-middelen rechtstreeks vanuit AEM zoe
 
 >[!NOTE]
 >
->De integratie vereist een [ ondernemingsAdobe Stock plan ](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) en AEM 6.4 met minstens opgesteld Service Pack 2. Voor AEM 6.4 de details van het de dienstpak, zie deze [ versienota&#39;s ](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html).
+>De integratie vereist een [ ondernemingsAdobe Stock plan ](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) en AEM 6.4 met minstens opgesteld Service Pack 2. Voor AEM 6.4 de details van het de dienstpak, zie deze [ versienota&#39;s ](https://helpx.adobe.com/nl/experience-manager/6-4/release-notes/sp-release-notes.html).
 
 Dankzij de Adobe Stock- en AEM Assets-integratie kunnen auteurs en marketers van content eenvoudig een licentie voor en gebruik van stock assets maken voor creatieve of marketingdoeleinden. U kunt een zoekopdracht voor Stock-elementen uitvoeren met Omni Search, door het locatiefilter toe te voegen als Adobe Stock of door door de belangrijkste navigatie van AEM Assets te navigeren en op het UI-pictogram Zoeken in Adobe Stock Coral te klikken.
 
@@ -75,7 +75,7 @@ Met AEM 6.4.2 kunnen gebruikers Adobe Stock-middelen rechtstreeks vanuit AEM zoe
 
 >[!NOTE]
 >
->De integratie vereist een [ ondernemingsAdobe Stock plan ](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) en AEM 6.4 met minstens [ Geïmplementeerde Service Pack 2 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=AEM*+6*+4*+Service*+Pack*&amp;2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aem%2F6-4&amp;3_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;3_group.propertyvalues.operation=equals&amp;3_group.propertyvalues.0_values=software-type%3Aservice-and-cumulation&amp;fix=%40jcr%3Acontent%2Fmetadata%2Fdc%3Atitle&amp;orderby.sort=asc &amp;layout=list&amp;p.offset=0&amp;p.limit=24). Voor AEM 6.4 de details van het de dienstpak, zie deze [ versienota&#39;s ](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html). U zou ook beheerdertoestemmingen aan [ Console van Adobe I/O ](https://console.adobe.io/), [ Adobe Admin Console ](https://adminconsole.adobe.com/) en Adobe Experience Manager aan opstelling de integratie nodig hebben.
+>De integratie vereist een [ ondernemingsAdobe Stock plan ](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) en AEM 6.4 met minstens [ Geïmplementeerde Service Pack 2 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=AEM*+6*+4*+Service*+Pack*&amp;2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aem%2F6-4&amp;3_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;3_group.propertyvalues.operation=equals&amp;3_group.propertyvalues.0_values=software-type%3Aservice-and-cumulation&amp;fix=%40jcr%3Acontent%2Fmetadata%2Fdc%3Atitle&amp;orderby.sort=asc &amp;layout=list&amp;p.offset=0&amp;p.limit=24). Voor AEM 6.4 de details van het de dienstpak, zie deze [ versienota&#39;s ](https://helpx.adobe.com/nl/experience-manager/6-4/release-notes/sp-release-notes.html). U zou ook beheerdertoestemmingen aan [ Console van Adobe I/O ](https://console.adobe.io/), [ Adobe Admin Console ](https://adminconsole.adobe.com/) en Adobe Experience Manager aan opstelling de integratie nodig hebben.
 
 ### Installatie {#installations}
 
@@ -109,7 +109,7 @@ Met AEM 6.4.2 kunnen gebruikers Adobe Stock-middelen rechtstreeks vanuit AEM zoe
 ### Aanvullende bronnen
 
 * [ Plan van de Voorraad van de Onderneming ](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html)
-* [ AEM 6.4 Service Pack 2 de nota&#39;s van de Versie ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
-* [ integreer AEM en Adobe Stock ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html)
+* [ AEM 6.4 Service Pack 2 de nota&#39;s van de Versie ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=nl-NL)
+* [ integreer AEM en Adobe Stock ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=nl-NL)
 * [ de Integratie API van de Console van Adobe I/O ](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)
 * [ Adobe Stock API Docs ](https://www.adobe.io/apis/creativecloud/stock/docs.html)

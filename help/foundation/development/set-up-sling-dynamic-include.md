@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Instellen [!DNL Sling Dynamic Include]
 
-Een videolooppas-door van het installeren van en het gebruiken van [!DNL Apache Sling Dynamic Include] met [ AEM Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) lopend op [!DNL Apache HTTP Web Server].
+Een videolooppas-door van het installeren van en het gebruiken van [!DNL Apache Sling Dynamic Include] met [ AEM Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) lopend op [!DNL Apache HTTP Web Server].
 
 >[!VIDEO](https://video.tv.adobe.com/v/17040?quality=12&learn=on)
 
@@ -54,7 +54,7 @@ Een videolooppas-door van het installeren van en het gebruiken van [!DNL Apache 
    -->
    ```
 
-1. (Facultatief) herhaal de laatste stap om voor componenten op [ gesloten (aanvankelijke) inhoud van editable malplaatjes ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) toe te staan om via [!DNL SDI] eveneens te worden gediend. De reden voor de extra configuratie is dat vergrendelde inhoud van bewerkbare sjablonen wordt aangeboden vanuit `/conf` in plaats van `/content` .
+1. (Facultatief) herhaal de laatste stap om voor componenten op [ gesloten (aanvankelijke) inhoud van editable malplaatjes ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/page-templates-editable.html) toe te staan om via [!DNL SDI] eveneens te worden gediend. De reden voor de extra configuratie is dat vergrendelde inhoud van bewerkbare sjablonen wordt aangeboden vanuit `/conf` in plaats van `/content` .
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -148,7 +148,7 @@ Een videolooppas-door van het installeren van en het gebruiken van [!DNL Apache 
 
 >[!NOTE]
 >
->Als u [!DNL Sling Dynamic Includes] voor het dienen van rand-zij omvat (ESI) gebruikt, dan zorg ervoor om relevante [ reactiekopballen in het berichtchermgeheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders) in het voorgeheugen onder te brengen. Mogelijke kopteksten zijn onder andere:
+>Als u [!DNL Sling Dynamic Includes] voor het dienen van rand-zij omvat (ESI) gebruikt, dan zorg ervoor om relevante [ reactiekopballen in het berichtchermgeheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#CachingHTTPResponseHeaders) in het voorgeheugen onder te brengen. Mogelijke kopteksten zijn onder andere:
 >
 >* &quot;Cache-control&quot;
 >* &quot;Content-Disposition&quot;

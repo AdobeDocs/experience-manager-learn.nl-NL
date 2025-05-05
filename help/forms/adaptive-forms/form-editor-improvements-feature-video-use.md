@@ -24,16 +24,16 @@ AEM 6.3 introduceert verschillende nieuwe functies en verbeteringen in deze vers
 
 **enkele belangrijke verbeteringen voor de Adaptieve Redacteur van de Vorm omvatten:**
 
-* [ Verbeterde eindgebruikerervaring ](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
+* [ Verbeterde eindgebruikerervaring ](https://helpx.adobe.com/nl/aem-forms/6-3/introduction-forms-authoring.html)
 
 * Formuliervelden automatisch invullen
 * RTF-tekst voor een tekstvakcomponent
 * Gespecialiseerde invoertypen voor formuliervelden
 
-* [ Inline het uitgeven van componententitel ](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
-* [ Standaardbevestiging in componenten ](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
-* [ kortere weg van het Toetsenbord voor snellere inhoud het auteurservaring ](https://helpx.adobe.com/aem-forms/6-3/keyboard-shortcuts.html#AdaptiveFormEditor)
-* [ Steun voor schema JSON voor het creëren van adaptieve vormen ](https://helpx.adobe.com/aem-forms/6-3/adaptive-form-json-schema-form-model.html)
-* [ CAPTCHA in adaptieve vormen ](https://helpx.adobe.com/aem-forms/6-3/captcha-adaptive-forms.html)
-* [ Verbeterde Integratie van Acrobat Sign ](https://helpx.adobe.com/aem-forms/6-3/working-with-adobe-sign.html)
-* [ Asynchrone voorlegging van vormen ](https://helpx.adobe.com/aem-forms/6-3/asynchronous-submissions-adaptive-forms.html)
+* [ Inline het uitgeven van componententitel ](https://helpx.adobe.com/nl/aem-forms/6-3/introduction-forms-authoring.html)
+* [ Standaardbevestiging in componenten ](https://helpx.adobe.com/nl/aem-forms/6-3/introduction-forms-authoring.html)
+* [ kortere weg van het Toetsenbord voor snellere inhoud het auteurservaring ](https://helpx.adobe.com/nl/aem-forms/6-3/keyboard-shortcuts.html#AdaptiveFormEditor)
+* [ Steun voor schema JSON voor het creëren van adaptieve vormen ](https://helpx.adobe.com/nl/aem-forms/6-3/adaptive-form-json-schema-form-model.html)
+* [ CAPTCHA in adaptieve vormen ](https://helpx.adobe.com/nl/aem-forms/6-3/captcha-adaptive-forms.html)
+* [ Verbeterde Integratie van Acrobat Sign ](https://helpx.adobe.com/nl/aem-forms/6-3/working-with-adobe-sign.html)
+* [ Asynchrone voorlegging van vormen ](https://helpx.adobe.com/nl/aem-forms/6-3/asynchronous-submissions-adaptive-forms.html)

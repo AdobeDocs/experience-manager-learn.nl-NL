@@ -39,7 +39,7 @@ In deze videozelfstudie worden een InDesign-bestand en alle bijbehorende overweg
 
    * **klik met de rechtermuisknop** en selecteer **Aanpassen > Opties voor aanpassen aan kader.. > Inhoud aanpassen > Kader proportioneel vullen**
 
-   [ Leer meer over Kader het Aanpassen opties ](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames), en die voor uw gebruiksgeval juist is.
+   [ Leer meer over Kader het Aanpassen opties ](https://helpx.adobe.com/nl/indesign/using/frames-objects.html#fitting_objects_to_frames), en die voor uw gebruiksgeval juist is.
 
 5. Kopieer de koptekst (Logo en bedrijfsnaam) van de hoofdsjabloon naar Pagina en Pagina via Op plaats plakken.
 

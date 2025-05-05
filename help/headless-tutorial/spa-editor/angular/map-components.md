@@ -74,7 +74,7 @@ Het basisconcept is een Component van het KUUROORD aan een Component van AEM in 
 
 ## De tekstcomponent controleren
 
-Het [ Archieftype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) verstrekt een `Text` component die aan de component van de Tekst van AEM [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) in kaart wordt gebracht. Dit is een voorbeeld van de component van de a **inhoud**, in die zin dat het *inhoud* van AEM teruggeeft.
+Het [ Archieftype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) verstrekt een `Text` component die aan de component van de Tekst van AEM [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=nl-NL) in kaart wordt gebracht. Dit is een voorbeeld van de component van de a **inhoud**, in die zin dat het *inhoud* van AEM teruggeeft.
 
 Laten we eens kijken hoe de component werkt.
 
@@ -198,7 +198,7 @@ Laten we eens kijken hoe de component werkt.
 
 ## De afbeeldingscomponent maken
 
-Daarna, creeer een `Image` component van Angular die aan de component van het Beeld van AEM [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) in kaart wordt gebracht. De `Image` component is een ander voorbeeld van a **inhoud** component.
+Daarna, creeer een `Image` component van Angular die aan de component van het Beeld van AEM [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=nl-NL) in kaart wordt gebracht. De `Image` component is een ander voorbeeld van a **inhoud** component.
 
 ### De JSON inspecteren
 
@@ -434,7 +434,7 @@ Controleer de container voor lay-out verder.
 
    De **component van de Container van de Lay-out** heeft a `sling:resourceType` van `wcm/foundation/components/responsivegrid` en door de Redacteur van het KUUROORD erkend gebruikend het `:type` bezit, enkel als `Text` en `Image` componenten.
 
-   De zelfde mogelijkheden om een component opnieuw te rangschikken gebruikend [ Wijze van de Lay-out ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) zijn beschikbaar met de Redacteur van het KUUROORD.
+   De zelfde mogelijkheden om een component opnieuw te rangschikken gebruikend [ Wijze van de Lay-out ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=nl-NL#defining-layouts-layout-mode) zijn beschikbaar met de Redacteur van het KUUROORD.
 
 3. Keer terug naar [ http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html ](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Voeg extra **componenten van het Beeld 0&rbrace; toe &lbrace;en probeer re-sizing hen gebruikend de** optie van de Lay-out **:**
 

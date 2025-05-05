@@ -471,4 +471,4 @@ U hebt nu onderzocht hoe kop- en voetteksten worden beheerd en ontwikkeld in Edg
 
 Dit patroon biedt een flexibele en onderhoudsvriendelijke aanpak voor het implementeren van voor de hele site geldende navigatiecomponenten.
 
-Voor meer beste praktijken en geavanceerde technieken, controleer de [ Universele documentatie van de Redacteur ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).
+Voor meer beste praktijken en geavanceerde technieken, controleer de [ Universele documentatie van de Redacteur ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).

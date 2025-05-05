@@ -55,7 +55,7 @@ In de de basislijnconfiguratielandbouwbedrijven van AMS, zult u onze hieronder g
 ```
 
 
-Wanneer het creëren van de regels voor wat om al dan niet in het voorgeheugen onder te brengen, gelieve te verwijzen naar de documentatie [ hier ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Wanneer het creëren van de regels voor wat om al dan niet in het voorgeheugen onder te brengen, gelieve te verwijzen naar de documentatie [ hier ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#configuring-the-dispatcher-cache-cache)
 
 
 ## Auteur in cache
@@ -336,6 +336,6 @@ Hier is een voorbeeld van een basislijnconfiguratie waarvoor elementen op een ui
 
 We willen onze gepubliceerde site zo hebzuchtig mogelijk maken en alles in de cache plaatsen.
 
-Als er elementen zijn die de ervaring breken wanneer caching u regels kunt toevoegen om de optie te verwijderen om dat punt in het voorgeheugen onder te brengen. Zoals u in het voorbeeld hierboven ziet, mogen de csrf-tokens nooit in de cache worden geplaatst en zijn deze uitgesloten. De verdere details bij het schrijven van deze regels kunnen [ hier worden gevonden ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Als er elementen zijn die de ervaring breken wanneer caching u regels kunt toevoegen om de optie te verwijderen om dat punt in het voorgeheugen onder te brengen. Zoals u in het voorbeeld hierboven ziet, mogen de csrf-tokens nooit in de cache worden geplaatst en zijn deze uitgesloten. De verdere details bij het schrijven van deze regels kunnen [ hier worden gevonden ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#configuring-the-dispatcher-cache-cache)
 
 [Volgende -> Variabelen gebruiken en begrijpen](./variables.md)

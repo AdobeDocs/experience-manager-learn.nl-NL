@@ -28,7 +28,7 @@ Leer hoe u Content Fragments kunt lokaliseren en vertalen met Adobe Experience M
 
 Inhoudsfragmenten zijn een herkend inhoudstype dat door AEM wordt geëxtraheerd voor verzending naar een externe vertaalservice. Verschillende gebruiksgevallen worden vanuit het vak ondersteund:
 
-1. Een tevreden Fragment kan [ direct in de console van Assets voor taalexemplaar en vertaling ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html) worden geselecteerd.
+1. Een tevreden Fragment kan [ direct in de console van Assets voor taalexemplaar en vertaling ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=nl-NL) worden geselecteerd.
 2. Inhoudsfragmenten waarnaar op een sitepagina wordt verwezen, worden naar de juiste taalmap gekopieerd en voor vertaling uitgepakt wanneer de sitepagina is geselecteerd voor een taalkopie.
 3. Inline media-elementen die zijn ingesloten in een inhoudsfragment, kunnen worden geëxtraheerd en vertaald.
 4. Verzamelingen van middelen die aan een inhoudsfragment zijn gekoppeld, kunnen worden uitgepakt en vertaald.

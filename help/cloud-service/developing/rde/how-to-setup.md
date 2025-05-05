@@ -169,7 +169,7 @@ Leer [ hoe te om ](./how-to-use.md) RDE te gebruiken om code en inhoud van uw fa
 
 ## Aanvullende bronnen
 
-[ toelatend RDE in een programmadocumentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#enabling-rde-in-a-program)
+[ toelatend RDE in een programmadocumentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html?lang=nl-NL#enabling-rde-in-a-program)
 
 Opstelling van [ Extensible CLI van Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) ook gekend als `aio CLI`
 

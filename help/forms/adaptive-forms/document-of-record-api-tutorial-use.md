@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Document met opnamen (DOR) programmatisch genereren
 
-Dit artikel illustreert het gebruik van `com.adobe.aemds.guide.addon.dor.DoRService API` om **Document van Verslag** programmatically te produceren. [ Document van Verslag ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) is een versie van PDF van de gegevens die in AanpassingsVorm worden gevangen.
+Dit artikel illustreert het gebruik van `com.adobe.aemds.guide.addon.dor.DoRService API` om **Document van Verslag** programmatically te produceren. [ Document van Verslag ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=nl-NL) is een versie van PDF van de gegevens die in AanpassingsVorm worden gevangen.
 
 1. Hier volgt het codefragment. De eerste regel krijgt de DOR-service.
 1. Stel de DoROptions in.

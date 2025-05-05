@@ -34,7 +34,7 @@ Hieronder ziet u de stroom van het gebruiksgeval
 U hebt het volgende nodig om het gebruik van hoofdletters en kleine letters te laten werken:
 
 * Een AEM-server met Forms-add-on
-* Een [ integratiesleutel voor een toepassing van Acrobat Sign ](https://helpx.adobe.com/sign/kb/how-to-create-an-integration-key.html)
+* Een [ integratiesleutel voor een toepassing van Acrobat Sign ](https://helpx.adobe.com/nl/sign/kb/how-to-create-an-integration-key.html)
 
 ## Volgende stappen
 

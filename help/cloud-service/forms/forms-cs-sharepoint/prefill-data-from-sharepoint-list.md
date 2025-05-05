@@ -24,7 +24,7 @@ In de vorige versie van AEM Form(6.5) moest aangepaste code worden geschreven na
 
 In dit artikel worden de stappen beschreven die nodig zijn om een adaptief formulier vooraf in te vullen of in te vullen met gegevens die uit de SharePoint-lijst zijn opgehaald met de service voor het vooraf invullen van het formuliergegevensmodel.
 
-Dit artikel veronderstelt u [ met succes gevormd adaptieve vorm hebt om gegevens naar de lijst van SharePoint voor te leggen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
+Dit artikel veronderstelt u [ met succes gevormd adaptieve vorm hebt om gegevens naar de lijst van SharePoint voor te leggen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=nl-NL#connect-af-sharepoint-list)
 
 Hier volgt een overzicht van de gegevens in de SharePoint-lijst
 ![ sharepoint-list ](assets/list-data.png)

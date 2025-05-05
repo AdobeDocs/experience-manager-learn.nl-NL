@@ -69,7 +69,7 @@ U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-w
 
 ## Wat u gaat bouwen {#what-build}
 
-Dit hoofdstuk gebruikt de [ eigenschap van het Systeem van de Stijl ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) om variaties van de **Titel** tot stand te brengen en **Tekst** componenten die op de pagina van het Artikel worden gebruikt.
+Dit hoofdstuk gebruikt de [ eigenschap van het Systeem van de Stijl ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=nl-NL) om variaties van de **Titel** tot stand te brengen en **Tekst** componenten die op de pagina van het Artikel worden gebruikt.
 
 ![ Stijlen beschikbaar voor Titel ](assets/style-system/styles-added-title.png)
 
@@ -77,15 +77,15 @@ Dit hoofdstuk gebruikt de [ eigenschap van het Systeem van de Stijl ](https://ex
 
 ## Achtergrond {#background}
 
-Het [ Systeem van de Stijl ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) staat ontwikkelaars en malplaatjeredacteurs toe om veelvoudige visuele variaties van een component tot stand te brengen. Auteurs kunnen vervolgens bepalen welke stijl moet worden gebruikt bij het samenstellen van een pagina. Het Stijlsysteem wordt gebruikt door de rest van de zelfstudie om verscheidene unieke stijlen te bereiken terwijl het gebruiken van de Componenten van de Kern in een lage codebenadering.
+Het [ Systeem van de Stijl ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=nl-NL) staat ontwikkelaars en malplaatjeredacteurs toe om veelvoudige visuele variaties van een component tot stand te brengen. Auteurs kunnen vervolgens bepalen welke stijl moet worden gebruikt bij het samenstellen van een pagina. Het Stijlsysteem wordt gebruikt door de rest van de zelfstudie om verscheidene unieke stijlen te bereiken terwijl het gebruiken van de Componenten van de Kern in een lage codebenadering.
 
 Het algemene idee met het Stijlsysteem is dat ontwerpers verschillende stijlen kunnen kiezen van hoe een component eruit moet zien. De &quot;stijlen&quot; worden ondersteund door extra CSS-klassen die in de buitenste div van een component worden geïnjecteerd. In de clientbibliotheken worden CSS-regels toegevoegd op basis van deze stijlklassen, zodat de vormgeving van de component verandert.
 
-U kunt [ gedetailleerde documentatie voor het Systeem van de Stijl hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html) vinden. Er is ook een grote [ technische video voor het begrip van het Systeem van de Stijl ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
+U kunt [ gedetailleerde documentatie voor het Systeem van de Stijl hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=nl-NL) vinden. Er is ook een grote [ technische video voor het begrip van het Systeem van de Stijl ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html?lang=nl-NL).
 
 ## Onderstrepingsstijl - Titel {#underline-style}
 
-De [ Component van de Titel ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html) is proxied in het project onder `/apps/wknd/components/title` als deel van de **ui.apps** module. De standaardstijlen van de elementen van de Kop (`H1`, `H2`, `H3`..) zijn reeds uitgevoerd in **ui.frontend** module.
+De [ Component van de Titel ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html?lang=nl-NL) is proxied in het project onder `/apps/wknd/components/title` als deel van de **ui.apps** module. De standaardstijlen van de elementen van de Kop (`H1`, `H2`, `H3`..) zijn reeds uitgevoerd in **ui.frontend** module.
 
 De [ ontwerpen van het Artikel van WKND ](assets/pages-templates/wknd-article-design.xd) bevatten een unieke stijl voor de component van de Titel met onderstrepen. In plaats van twee componenten te maken of het dialoogvenster van de component te wijzigen, kunt u het Stijlsysteem gebruiken om auteurs de optie toe te staan een onderstrepingsstijl toe te voegen.
 
@@ -195,7 +195,7 @@ Daarna, voer de onderstreepte stijl uit gebruikend de {**module 0} ui.frontend v
 
 ## Stijl prijsblok - Tekst {#text-component}
 
-Daarna, herhaal gelijkaardige stappen om een unieke stijl op de [ Component van de Tekst ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html) toe te passen. De component van de Tekst is proxied in het project onder `/apps/wknd/components/text` als deel van de {**module 1} ui.apps.** De standaardstijlen van paragraafelementen zijn reeds uitgevoerd in **ui.frontend**.
+Daarna, herhaal gelijkaardige stappen om een unieke stijl op de [ Component van de Tekst ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=nl-NL) toe te passen. De component van de Tekst is proxied in het project onder `/apps/wknd/components/text` als deel van de {**module 1} ui.apps.** De standaardstijlen van paragraafelementen zijn reeds uitgevoerd in **ui.frontend**.
 
 De [ ontwerpen van het Artikel van WKND ](assets/pages-templates/wknd-article-design.xd) bevatten een unieke stijl voor de component van de Tekst met een citaatblok:
 

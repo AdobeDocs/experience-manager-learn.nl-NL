@@ -43,7 +43,7 @@ Asset Compute Workers implementeren het Asset Compute SDK worker API-contract in
 1. De Asset Compute-worker slaat de binaire gegevens van de nieuwe vertoning op in `rendition.path` .
 1. De binaire gegevens die aan `rendition.path` worden geschreven worden vervoerd via Asset Compute SDK naar de Dienst van de Auteur van AEM en als __(4a)__ een tekstvertoning en __(4b)__ voortgeduurd aan de de meta-gegevensknoop van de activa worden blootgesteld die.
 
-In het bovenstaande diagram worden de zorgen van de Asset Compute-ontwikkelaar en de logische doorstroming naar de aanroeping van Asset Compute-workers uitgelegd. Voor nieuwsgierig, zijn de [ interne details van de uitvoering van Asset Compute ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html) beschikbaar, nochtans slechts kunnen de openbare contracten van Asset Compute SDK API van afhangen.
+In het bovenstaande diagram worden de zorgen van de Asset Compute-ontwikkelaar en de logische doorstroming naar de aanroeping van Asset Compute-workers uitgelegd. Voor nieuwsgierig, zijn de [ interne details van de uitvoering van Asset Compute ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html?lang=nl-NL) beschikbaar, nochtans slechts kunnen de openbare contracten van Asset Compute SDK API van afhangen.
 
 ## Anatomie van een worker
 

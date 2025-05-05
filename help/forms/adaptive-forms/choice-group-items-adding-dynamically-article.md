@@ -89,7 +89,7 @@ U kunt dit als volgt op uw systeem testen:
 **Gebruikend de visuele redacteur om punten** toe te voegen
 
 * [De middelen downloaden](assets/usingthevisualeditor.zip)
-* Installeer Tomcat als u dit nog niet hebt. [ Instructies om te installeren zijn hier beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
+* Installeer Tomcat als u dit nog niet hebt. [ Instructies om te installeren zijn hier beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html?lang=nl-NL)
 * [Het bestand SampleRest.war uit dit ZIP-bestand in uw Tomcat-bestand implementeren](assets/sample-rest.zip)
 * [ open Forms en documenten ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Klik op &quot;Maken | Bestand uploaden&quot; en het bestand uploaden dat u in de vorige stap hebt gedownload

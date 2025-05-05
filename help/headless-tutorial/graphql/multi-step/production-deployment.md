@@ -61,7 +61,7 @@ Uiteindelijk worden drie lokale servers uitgevoerd:
 
 Momenteel hebben wij een lopende geval van SDK op **Auteur** wijze. SDK kan ook op **zijn begonnen publiceert** wijze om een AEM te simuleren publiceer milieu.
 
-Een meer gedetailleerde gids voor vestiging een lokale ontwikkelomgeving [ kan hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up) worden gevonden.
+Een meer gedetailleerde gids voor vestiging een lokale ontwikkelomgeving [ kan hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL#local-development-environment-set-up) worden gevonden.
 
 1. Maak in uw lokale bestandssysteem een specifieke map voor de installatie van de instantie Publiceren, met de naam `~/aem-sdk/publish` .
 1. Kopieer het QuickStart-jar-bestand dat in vorige hoofdstukken voor de instantie Auteur is gebruikt en plak het in de map `publish` . Alternatief navigeer aan het [ Portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) en download recentste SDK en extraheer het Jar dossier van QuickStart.
@@ -312,7 +312,7 @@ Vervolgens kunt u het publiceren van inhoud simuleren tussen de lokale auteur- e
 1. Begin de instantie van de Auteur (als niet reeds begonnen) en navigeer aan de Manager van het Pakket in [ http://localhost:4502/crx/packmgr/index.jsp ](http://localhost:4502/crx/packmgr/index.jsp)
 1. Download het pakket [ EnableReplicationAgent.zip ](./assets/publish-deployment/EnableReplicationAgent.zip) en installeer het gebruikend de Manager van het Pakket.
 
-   Met dit pakket wordt een configuratie geïnstalleerd waarmee de instantie Auteur inhoud kan publiceren naar de instantie Publiceren. De handstappen voor [ deze configuratie kunnen hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#content-distribution) worden gevonden.
+   Met dit pakket wordt een configuratie geïnstalleerd waarmee de instantie Auteur inhoud kan publiceren naar de instantie Publiceren. De handstappen voor [ deze configuratie kunnen hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL#content-distribution) worden gevonden.
 
    >[!NOTE]
    >
@@ -408,7 +408,7 @@ Gefeliciteerd! U hebt nu een volledige productieplaatsing gesimuleerd gebruikend
 
 Zie de volgende bronnen voor meer informatie over Content Fragments en GraphQL:
 
-* [ Hoofdloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
-* [ AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
-* [ symbolisch-Gebaseerde Authentificatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)
-* [ het Opstellen van code aan AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=en#cloud-manager)
+* [ Hoofdloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html?lang=nl-NL)
+* [ AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=nl-NL)
+* [ symbolisch-Gebaseerde Authentificatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=nl-NL#authentication)
+* [ het Opstellen van code aan AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=nl-NL#cloud-manager)

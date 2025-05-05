@@ -35,7 +35,7 @@ Verzeker [ aangewezen ](../advanced-networking.md#advanced-networking) geavancee
 
 Het verbindingskoord van de configuratie OSGi gebruikt:
 
-+ `AEM_PROXY_HOST` waarde via de [ OSGi variabele van het configuratiemilieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` als gastheer van de verbinding
++ `AEM_PROXY_HOST` waarde via de [ OSGi variabele van het configuratiemilieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=nl-NL#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` als gastheer van de verbinding
 + `30001` dat de `portOrig` waarde is voor de voorwaartse toewijzing van de Cloud Manager-poort `30001` → `mysql.example.com:3306`
 
 Aangezien geheimen niet in code moeten worden opgeslagen, zijn de gebruikersbenaming en het wachtwoord van de SQL verbinding best verstrekt via OSGi configuratievariabelen, plaatsen gebruikend AIO CLI, of Cloud Manager APIs.

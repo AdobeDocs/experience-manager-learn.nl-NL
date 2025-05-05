@@ -60,7 +60,7 @@ Implementeer updates van een thema in een AEM-omgeving met behulp van Cloud Mana
 
 Stappen op hoog niveau voor de video:
 
-1. Creeer een nieuwe git [ bewaarplaats in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html)
+1. Creeer een nieuwe git [ bewaarplaats in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html?lang=nl-NL)
 1. Voeg uw project met themabronnen toe aan de Cloud Manager Git-opslagplaats:
 
    ```shell
@@ -71,7 +71,7 @@ Stappen op hoog niveau voor de video:
    $ git remote add origin <CLOUD_MANAGER_GIT_REPOSITORY_URL>
    ```
 
-1. Vorm a [ Voorste Pijpleiding van het Eind ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html) in Cloud Manager om de front eindcode op te stellen.
+1. Vorm a [ Voorste Pijpleiding van het Eind ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=nl-NL) in Cloud Manager om de front eindcode op te stellen.
 1. Voer de Front End Pipeline uit om updates aan het doelAEM milieu op te stellen.
 
 ### Voorbeeldrepo&#39;s

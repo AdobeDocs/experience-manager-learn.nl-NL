@@ -21,11 +21,11 @@ ht-degree: 0%
 
 Om AEM websites voor Edge Delivery Services en Universele Redacteur te bouwen, gebruik Adobe [ AEM Boilerplate XWalk projectmalplaatje ](https://github.com/adobe-rnd/aem-boilerplate-xwalk). Met deze sjabloon maakt u een nieuw codeproject dat de CSS en JavaScript bevat die worden gebruikt voor het maken van de ervaring met websites. Deze sjabloon maakt een nieuwe GitHub-opslagplaats en laadt deze met Adobe boilerplate-code en -configuratie, die een solide basis voor uw AEM-websiteproject bieden.
 
-Herinner me, [ AEM websites die door Edge Delivery Services ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/edge-delivery-services/overview) worden geleverd hebben slechts cliënt-kant (browser) code. Websitecode wordt niet uitgevoerd in de AEM-auteur- of -publicatieservices.
+Herinner me, [ AEM websites die door Edge Delivery Services ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/sites/edge-delivery-services/overview) worden geleverd hebben slechts cliënt-kant (browser) code. Websitecode wordt niet uitgevoerd in de AEM-auteur- of -publicatieservices.
 
 ![ Nieuw project van Edge Delivery Services ](./assets/1-new-project/new-project.png)
 
-Volg de [ gedetailleerde stappen die in documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) worden geschetst voor het creëren van een de codeproject van Edge Delivery Services de waarvan inhoud in Universele Redacteur editable is.  Hieronder vindt u een overzicht van de stappen, inclusief de waarden die in deze zelfstudie worden gebruikt.
+Volg de [ gedetailleerde stappen die in documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) worden geschetst voor het creëren van een de codeproject van Edge Delivery Services de waarvan inhoud in Universele Redacteur editable is.  Hieronder vindt u een overzicht van de stappen, inclusief de waarden die in deze zelfstudie worden gebruikt.
 
 1. **opstelling een rekening GitHub.** Als u een project voor uw organisatie creeert, zorg ervoor dat de organisatie een rekening GitHub heeft, en u bent een lid.
 2. **creeer een nieuw codeproject** gebruikend het [ AEM Boilerplate XWalk projectmalplaatje ](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
@@ -36,4 +36,4 @@ Volg de [ gedetailleerde stappen die in documentatie ](https://experienceleague.
 
 5. **geef het nieuwe project`paths.json`** uit om de de dienstweg van de Auteur van AEM aan de wortel van uw website in kaart te brengen.
 
-Deze bewaarplaats van Git wordt gekloond in het [ lokale hoofdstuk van de ontwikkelomgeving ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/edge-delivery-services/developing/universal-editor/3-local-development-environment), en waar de code wordt ontwikkeld.
+Deze bewaarplaats van Git wordt gekloond in het [ lokale hoofdstuk van de ontwikkelomgeving ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/sites/edge-delivery-services/developing/universal-editor/3-local-development-environment), en waar de code wordt ontwikkeld.

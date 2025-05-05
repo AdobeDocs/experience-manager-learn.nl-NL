@@ -103,7 +103,7 @@ In het dialoogvenster wordt de interface weergegeven waarmee auteurs van inhoud 
        sling:resourceSuperType="core/wcm/components/image/v2/image"/>
    ```
 
-   Het bovenstaande XML-bestand bevat de definitie voor de component, inclusief de titel, beschrijving en groep. `sling:resourceSuperType` richt aan `core/wcm/components/image/v2/image`, die de [ Component van het Beeld van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) is.
+   Het bovenstaande XML-bestand bevat de definitie voor de component, inclusief de titel, beschrijving en groep. `sling:resourceSuperType` richt aan `core/wcm/components/image/v2/image`, die de [ Component van het Beeld van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=nl-NL) is.
 
 ### HTML-script maken {#create-the-htl-script}
 
@@ -358,7 +358,7 @@ Het Byline Sling-model is gebaseerd op verschillende Java™ API&#39;s van AEM. 
    </dependency>
    ```
 
-   [ aem-sdk-api ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en) bevat alle openbare Java™ APIs die door AEM worden blootgesteld. `aem-sdk-api` wordt standaard gebruikt bij het bouwen van dit project. De versie blijft behouden in de bovenliggende reactorpom vanaf de basis van het project in `aem-guides-wknd/pom.xml` .
+   [ aem-sdk-api ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=nl-NL) bevat alle openbare Java™ APIs die door AEM worden blootgesteld. `aem-sdk-api` wordt standaard gebruikt bij het bouwen van dit project. De versie blijft behouden in de bovenliggende reactorpom vanaf de basis van het project in `aem-guides-wknd/pom.xml` .
 
 1. Vind het gebiedsdeel voor `uber-jar` - **AEM 6.5/6.4 slechts**
 
@@ -374,7 +374,7 @@ Het Byline Sling-model is gebaseerd op verschillende Java™ API&#39;s van AEM. 
 
    `uber-jar` wordt alleen opgenomen wanneer het `classic` -profiel wordt aangeroepen, dat wil zeggen `mvn clean install -PautoInstallSinglePackage -Pclassic` . Nogmaals, dit is uniek voor dit project. In een echt project, dat van het Archetype van het Project van AEM wordt geproduceerd is `uber-jar` het gebrek als de gespecificeerde versie van AEM 6.5 of 6.4 is.
 
-   [ uber-jar ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) bevat alle openbare Java™ APIs die door AEM 6.x worden blootgesteld. De versie blijft behouden in de bovenliggende reactorpom vanaf de basis van het project `aem-guides-wknd/pom.xml` .
+   [ uber-jar ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=nl-NL#experience-manager-api-dependencies) bevat alle openbare Java™ APIs die door AEM 6.x worden blootgesteld. De versie blijft behouden in de bovenliggende reactorpom vanaf de basis van het project `aem-guides-wknd/pom.xml` .
 
 1. De afhankelijkheid van `core.wcm.components.core` zoeken:
 

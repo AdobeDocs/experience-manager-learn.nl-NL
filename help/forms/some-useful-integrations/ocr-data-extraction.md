@@ -83,11 +83,11 @@ Het volgende wordt ondersteund met een verwijzing naar requestBody-definitie
 
 ## Source voor gegevens maken
 
-Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [ gegevensbron ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) in de configuratie van de wolkendiensten tot stand brengen. Gelieve te gebruiken het [ wagerdossier ](assets/drivers-license-swagger.zip) om uw gegevensbron tot stand te brengen.
+Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [ gegevensbron ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=nl-NL) in de configuratie van de wolkendiensten tot stand brengen. Gelieve te gebruiken het [ wagerdossier ](assets/drivers-license-swagger.zip) om uw gegevensbron tot stand te brengen.
 
 ## Formuliergegevensmodel maken
 
-De gegevensintegratie van AEM Forms verstrekt een intuïtief gebruikersinterface om tot stand te brengen en met [ modellen van vormgegevens ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) te werken. Baseer het model van vormgegevens op de gegevensbron die in de vroegere stap wordt gecreeerd.
+De gegevensintegratie van AEM Forms verstrekt een intuïtief gebruikersinterface om tot stand te brengen en met [ modellen van vormgegevens ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=nl-NL) te werken. Baseer het model van vormgegevens op de gegevensbron die in de vroegere stap wordt gecreeerd.
 
 ![ fdm ](assets/test-dl-fdm.PNG)
 

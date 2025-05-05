@@ -21,7 +21,7 @@ ht-degree: 0%
 
 U kunt de batch-API gebruiken om meerdere interactieve communicatie van een sjabloon te maken. De sjabloon is een interactieve communicatie zonder gegevens. De batch-API combineert gegevens met een sjabloon voor interactieve communicatie. De API is nuttig bij de massaproductie van interactieve communicatie. Bijvoorbeeld telefoonrekeningen, creditcardoverzichten voor meerdere klanten.
 
-[ Leer meer op de Generatie API van de Partij ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html)
+[ Leer meer op de Generatie API van de Partij ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html?lang=nl-NL)
 
 Dit artikel bevat voorbeeldelementen voor het genereren van interactieve communicatiedocumenten met de Batch-API.
 
@@ -45,7 +45,7 @@ Dit artikel bevat voorbeeldelementen voor het genereren van interactieve communi
 
 ## Batchgeneratie met REST-verzoeken
 
-U kunt de [ Partij API ](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) door REST verzoeken aanhalen. U kunt REST-eindpunten voor andere toepassingen toegankelijk maken om de API aan te roepen om documenten te genereren.
+U kunt de [ Partij API ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/index.html) door REST verzoeken aanhalen. U kunt REST-eindpunten voor andere toepassingen toegankelijk maken om de API aan te roepen om documenten te genereren.
 De verstrekte steekproefactiva stellen REST eindpunt voor het produceren van Interactieve Communicatie documenten bloot. De servlet accepteert de volgende parameters:
 
 * fileName - Locatie van het gegevensbestand op het dossiersysteem.

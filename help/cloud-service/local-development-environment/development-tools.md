@@ -24,8 +24,8 @@ ht-degree: 0%
 >id="aemcloud_localdev_devtools"
 >title="Gereedschappen voor ontwikkelingstools instellen"
 >abstract="Voor de ontwikkeling van Adobe Experience Manager (AEM) is een minimale set ontwikkelingstools vereist die op de ontwikkelcomputer moet worden geïnstalleerd en ingesteld. Tot deze gereedschappen behoren Java, Maven, Adobe I/O CLI, Development IDE en meer."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines" text="Richtlijnen voor ontwikkeling"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk" text="Grondbeginselen van ontwikkeling"
+>additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines" text="Richtlijnen voor ontwikkeling"
+>additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk" text="Grondbeginselen van ontwikkeling"
 
 Voor de ontwikkeling van Adobe Experience Manager (AEM) is een minimale set ontwikkelingstools vereist die op de ontwikkelcomputer moet worden geïnstalleerd en ingesteld. Deze instrumenten ondersteunen de ontwikkeling en de bouw van AEM-projecten.
 
@@ -100,7 +100,7 @@ Als u Homebrew gebruikt, volg __installeer gebruikend 1&rbrace; instructies Home
 
 ## Installatiegit
 
-[ Git ](https://git-scm.com/) is het bronbeheersysteem dat door [ Adobe Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/source-code-repository.html) wordt gebruikt, en zo wordt vereist voor ontwikkeling.
+[ Git ](https://git-scm.com/) is het bronbeheersysteem dat door [ Adobe Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/source-code-repository.html?lang=nl-NL) wordt gebruikt, en zo wordt vereist voor ontwikkeling.
 
 >[!BEGINTABS]
 
@@ -180,7 +180,7 @@ Apache Maven is het opensource Java-opdrachtregelprogramma dat wordt gebruikt om
 
 + Logbestanden van AEM als Cloud Services-services tikken
 + Cloud Manager-pijpleidingen beheren vanuit de CLI
-+ Stel aan [ de Snelle Milieu&#39;s van de Ontwikkeling van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html) op
++ Stel aan [ de Snelle Milieu&#39;s van de Ontwikkeling van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html?lang=nl-NL) op
 
 ### Adobe I/O CLI installeren
 
@@ -217,7 +217,7 @@ Begin [ uitvoerend bevelen ](https://github.com/adobe/aio-cli-plugin-cloudmanage
 
 ### De insteekmodule AEM Rapid Development Environment instellen{#rde}
 
-De insteekmodule van het Milieu van de Ontwikkelomgeving van AEM Rapid staat de interface CLI toe om met AEM as a Cloud Service [ in wisselwerking te staan Snelle Milieu&#39;s van de Ontwikkeling ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html) via het `aio aem:rde` bevel.
+De insteekmodule van het Milieu van de Ontwikkelomgeving van AEM Rapid staat de interface CLI toe om met AEM as a Cloud Service [ in wisselwerking te staan Snelle Milieu&#39;s van de Ontwikkeling ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html?lang=nl-NL) via het `aio aem:rde` bevel.
 
 1. Voer `aio plugins:install @adobe/aio-cli-plugin-aem-rde` uit om de [ insteekmodule van de Milieu&#39;s van de Snelle Ontwikkeling van AEM ](https://github.com/adobe/aio-cli-plugin-aem-rde) te installeren.
 
@@ -254,9 +254,9 @@ De Code van Visual Studio is de ideale keus voor front-end ontwikkelaars hoofdza
 
 ### Eclipse
 
-__[winde van de Verduistering ](https://www.eclipse.org/ide/)__ is populaire IDEs voor de ontwikkeling van Java, en steunt het __[AEM ontwikkelaarshulpmiddel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)__ verstrekt door Adobe, verstrekkend een in-IDE GUI voor creatie en om inhoud JCR met een lokale instantie van AEM te synchroniseren.
+__[winde van de Verduistering ](https://www.eclipse.org/ide/)__ is populaire IDEs voor de ontwikkeling van Java, en steunt het __[AEM ontwikkelaarshulpmiddel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html?lang=nl-NL)__ verstrekt door Adobe, verstrekkend een in-IDE GUI voor creatie en om inhoud JCR met een lokale instantie van AEM te synchroniseren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
 + [ Eclipse van de Download ](https://www.eclipse.org/ide/)
-+ [ Eclipse Dev Tools van de Download &lbrace;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)
++ [ Eclipse Dev Tools van de Download &lbrace;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html?lang=nl-NL)

@@ -60,7 +60,7 @@ Een website wordt doorgaans opgedeeld in pagina&#39;s en vormt zo een ervaring v
 
 AEM Components kan worden beschouwd als kleine modulaire bouwstenen van een webpagina. Door UI in logische brokken of Componenten te breken, maakt het het veel gemakkelijker te beheren. Om componenten opnieuw te gebruiken, moeten de componenten configureerbaar zijn. Dit gebeurt via het dialoogvenster van de auteur.
 
-AEM verstrekt een reeks [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) die productie klaar zijn te gebruiken. De **Componenten van de Kern** waaier van basiselementen zoals [ Tekst ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) en [ Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) aan complexere elementen UI zoals a [ Carrousel ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html).
+AEM verstrekt een reeks [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) die productie klaar zijn te gebruiken. De **Componenten van de Kern** waaier van basiselementen zoals [ Tekst ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=nl-NL) en [ Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=nl-NL) aan complexere elementen UI zoals a [ Carrousel ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=nl-NL).
 
 Vervolgens maakt u enkele componenten met de AEM Page Editor.
 
@@ -90,7 +90,7 @@ Vervolgens maakt u enkele componenten met de AEM Page Editor.
 
 1. Merk op dat er componenten op de pagina zijn, als de **Titel**, **Navigatie**, **Onderzoek** die vast zijn. Deze gebieden zijn geconfigureerd als onderdeel van het paginasjabloon en kunnen niet worden gewijzigd op een afzonderlijke pagina. Dit wordt meer onderzocht in het volgende hoofdstuk.
 
-Voel u vrij om te experimenteren met enkele andere componenten. De documentatie over elke [ Component van de Kern kan hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) worden gevonden. Een gedetailleerde videoreeks over [ het auteursrecht van de Pagina kan hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html) worden gevonden.
+Voel u vrij om te experimenteren met enkele andere componenten. De documentatie over elke [ Component van de Kern kan hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) worden gevonden. Een gedetailleerde videoreeks over [ het auteursrecht van de Pagina kan hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html?lang=nl-NL) worden gevonden.
 
 ## Updates publiceren {#publish-updates}
 
@@ -156,9 +156,9 @@ Navigeer vervolgens naar de service Publiceren om de wijzigingen weer te geven.
 
    ![ publiceer direct ](assets/author-content-publish/page-editor-publish.png)
 
-1. Terugkeer aan **AEM publiceer Dienst** om de veranderingen te bekijken. Waarschijnlijk zult u **&#x200B;**&#x200B;niet onmiddellijk de updates zien. Dit is omdat **AEM de Publish Dienst** [ caching via een Apache Webserver en CDN ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html) omvat. Standaard wordt HTML-inhoud gedurende ~5 minuten in cache geplaatst.
+1. Terugkeer aan **AEM publiceer Dienst** om de veranderingen te bekijken. Waarschijnlijk zult u **&#x200B;**&#x200B;niet onmiddellijk de updates zien. Dit is omdat **AEM de Publish Dienst** [ caching via een Apache Webserver en CDN ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html?lang=nl-NL) omvat. Standaard wordt HTML-inhoud gedurende ~5 minuten in cache geplaatst.
 
-1. Als u de cache wilt overslaan voor test- en foutopsporingsdoeleinden, voegt u gewoon een queryparameter toe, zoals `?nocache=true` . De URL zou er als `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd/en/article/hello-world.html?nocache=true` uitzien. Meer details over de caching strategie en beschikbare configuraties [ kunnen hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/overview.html) worden gevonden.
+1. Als u de cache wilt overslaan voor test- en foutopsporingsdoeleinden, voegt u gewoon een queryparameter toe, zoals `?nocache=true` . De URL zou er als `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd/en/article/hello-world.html?nocache=true` uitzien. Meer details over de caching strategie en beschikbare configuraties [ kunnen hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/overview.html?lang=nl-NL) worden gevonden.
 
 1. U kunt ook de URL naar de publicatieservice in Cloud Manager vinden. Navigeer aan het **Programma van Cloud Manager** > **Milieu** > **Milieu**.
 

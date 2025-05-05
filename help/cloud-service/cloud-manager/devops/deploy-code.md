@@ -23,8 +23,8 @@ ht-degree: 0%
 >id="aemcloud_devops_deploycode"
 >title="Code implementeren"
 >abstract="Integreer de git-opslagplaats voor cloudbeheer met een externe git-opslagplaats en implementeer een project naar AEM as a Cloud Service"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/merge-projects.html?lang=en#cloud-manager" text="Projecten samenvoegen"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=en" text="Code implementeren met Cloud Manager"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/merge-projects.html?lang=nl-NL#cloud-manager" text="Projecten samenvoegen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=nl-NL" text="Code implementeren met Cloud Manager"
 
 Integreer de git-opslagplaats voor cloudbeheer met een externe git-opslagplaats en implementeer een project naar AEM as a Cloud Service
 

@@ -39,4 +39,4 @@ AEM Sites biedt verschillende methoden voor het publiceren en niet publiceren va
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ het Publiceren de Documentatie van Pagina&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/publishing-pages.html)
+* [ het Publiceren de Documentatie van Pagina&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/publishing-pages.html?lang=nl-NL)

@@ -27,7 +27,7 @@ De extensie Adobe Asset Link voor Adobe Creative Cloud voor ondernemingen breidt
 
 >[!TIP]
 >
-> Leer meer over hoe het [ Premium van Adobe XD Opleiding Programma ](https://helpx.adobe.com/support/xd.html) u kan helpen de Verbinding van Activa met uw werkschema van Adobe Experience Manager integreren.
+> Leer meer over hoe het [ Premium van Adobe XD Opleiding Programma ](https://helpx.adobe.com/nl/support/xd.html) u kan helpen de Verbinding van Activa met uw werkschema van Adobe Experience Manager integreren.
 
 ## Creatieve workflows voor Adobe Asset Link en AEM
 
@@ -68,7 +68,7 @@ Adobe Asset Link biedt InDesign direct linkondersteuning tussen Adobe Asset Link
 
 >[!NOTE]
 >
->Gebruik alleen Adobe Creative Cloud Enterprise ID of Federated ID. Zorg ervoor u [ AEM voor de Verbinding van Activa van Adobe ](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) vormt.
+>Gebruik alleen Adobe Creative Cloud Enterprise ID of Federated ID. Zorg ervoor u [ AEM voor de Verbinding van Activa van Adobe ](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html) vormt.
 
 U kunt een element op een van de volgende manieren in uw InDesign-lay-out plaatsen:
 

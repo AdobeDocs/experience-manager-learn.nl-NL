@@ -45,6 +45,6 @@ Zowel worden de Gesloten Groepen van de Gebruiker (CUG) als de Lijsten van het T
 
 ## Ondersteunende koppelingen {#supporting-links}
 
-* [ het Leiden Assets en Gesloten Gebruikersgroepen ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en#closed-user-group)
-* [ Creërend een Gesloten Groep van de Gebruiker ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html)
+* [ het Leiden Assets en Gesloten Gebruikersgroepen ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=nl-NL#closed-user-group)
+* [ Creërend een Gesloten Groep van de Gebruiker ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=nl-NL)
 * [ Oak Gesloten Documentatie van de Groep van de Gebruiker ](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html)

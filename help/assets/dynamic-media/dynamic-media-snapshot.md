@@ -30,5 +30,5 @@ Dynamic Media Snapshot is een visueel demonstratieprogramma dat is ontworpen om 
 
 ## Aanvullende bronnen
 
-* [ het protocolbevelen van HTTP ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)
-* [Smart Imaging](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq.html)
+* [ het protocolbevelen van HTTP ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=nl-NL)
+* [Smart Imaging](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq.html?lang=nl-NL)

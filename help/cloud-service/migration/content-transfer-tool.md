@@ -26,4 +26,4 @@ Het gereedschap Inhoud overbrengen is de aanbevolen manier om inhoud van een op 
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ het Overzicht van het Hulpmiddel van de Overdracht van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
+* [ het Overzicht van het Hulpmiddel van de Overdracht van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=nl-NL)

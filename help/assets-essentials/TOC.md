@@ -45,6 +45,6 @@ ht-degree: 1%
    + [Documenten verzenden en elementen koppelen](./integrations/workfront/link-send.md)
    + [Versiehistorie](./integrations/workfront/versions.md)
 
-+ [ de integratie van Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html){target=_blank}
++ [ de integratie van Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=nl-NL){target=_blank}
 
-+ [ Documentatie](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target=_blank}
++ [ Documentatie](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=nl-NL){target=_blank}

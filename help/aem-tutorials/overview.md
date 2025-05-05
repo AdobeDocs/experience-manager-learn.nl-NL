@@ -18,18 +18,18 @@ Adobe Experience Manager (AEM) is het toonaangevende platform voor ervaringsbehe
 
 ## Zelfstudies AEM
 
-+ [AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
-+ [AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
-+ [ AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html)
-+ [ AEM als Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
-+ [ AEM Stichting ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/overview.html)
-+ [ Tutorials voor AEM Guides ](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html)
++ [AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=nl-NL)
++ [AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=nl-NL)
++ [ AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html?lang=nl-NL)
++ [ AEM als Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=nl-NL)
++ [ AEM Stichting ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/overview.html?lang=nl-NL)
++ [ Tutorials voor AEM Guides ](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html?lang=nl-NL)
 
 ## Zelfstudies met meerdere stappen AEM
 
-+ [ Begonnen het worden met AEM Sites - WKND Leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-+ [ Begonnen het worden met AEM Titel ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
-+ [ Begonnen het Worden met AEM Redacteur SPA en Reageer ](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
-+ [ Begonnen het worden met AEM en Adobe Target ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
-+ [ AEM 6.x Dispatcher Cachezelfstudie ](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html)
-+ [ AEM 6.x Dynamic Media Classic Zelfstudie ](https://experienceleague.adobe.com/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview.html)
++ [ Begonnen het worden met AEM Sites - WKND Leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL)
++ [ Begonnen het worden met AEM Titel ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)
++ [ Begonnen het Worden met AEM Redacteur SPA en Reageer ](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html?lang=nl-NL)
++ [ Begonnen het worden met AEM en Adobe Target ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html?lang=nl-NL)
++ [ AEM 6.x Dispatcher Cachezelfstudie ](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html?lang=nl-NL)
++ [ AEM 6.x Dynamic Media Classic Zelfstudie ](https://experienceleague.adobe.com/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview.html?lang=nl-NL)

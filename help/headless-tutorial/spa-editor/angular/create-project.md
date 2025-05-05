@@ -87,7 +87,7 @@ Er zijn verschillende opties voor het maken van een Maven Multi-Module-project v
 
    >[!NOTE]
    >
-   > Let op de eigenschap `frontendModule=angular` . Dit vertelt het Archetype van het Project van AEM om het project met een starter [ de codebasis van Angular ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) met de Redacteur van AEM te laarzen SPA.
+   > Let op de eigenschap `frontendModule=angular` . Dit vertelt het Archetype van het Project van AEM om het project met een starter [ de codebasis van Angular ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=nl-NL) met de Redacteur van AEM te laarzen SPA.
 
 ## Het project bouwen
 
@@ -146,7 +146,7 @@ Daarna, compileert, bouwt, en stelt de projectcode aan een lokale instantie van 
 
    Alle aangepaste code die nodig is voor het project, wordt in deze pakketten gebundeld en in de AEM-runtime geïnstalleerd.
 
-6. Er moeten ook verschillende pakketten worden weergegeven voor `spa.project.core` en `core.wcm.components` . Dit zijn gebiedsdelen automatisch inbegrepen door archetype. Meer informatie over [ de Componenten van de Kern van AEM kan hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) worden gevonden.
+6. Er moeten ook verschillende pakketten worden weergegeven voor `spa.project.core` en `core.wcm.components` . Dit zijn gebiedsdelen automatisch inbegrepen door archetype. Meer informatie over [ de Componenten van de Kern van AEM kan hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) worden gevonden.
 
 ## Inhoud auteur
 

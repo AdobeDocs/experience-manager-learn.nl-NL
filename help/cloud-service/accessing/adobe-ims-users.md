@@ -23,8 +23,8 @@ ht-degree: 0%
 >id="aemcloud_adobeims_users"
 >title="Adobe IMS-gebruikers"
 >abstract="Gebruikers die toegang tot de AEM Author-service nodig hebben, worden in Adobe Admin Console beheerd als gebruikers van Adobe IMS. Leer wat Adobe IMS-gebruikers zijn en hoe ze in Admin Console worden benaderd en beheerd."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#how-to-set-up" text="Gebruikers aan boord in Admin Console"
->additional-url="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html" text="Adobe Admin Console-identiteitsoverzicht"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=nl-NL#how-to-set-up" text="Gebruikers aan boord in Admin Console"
+>additional-url="https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/identity.ug.html" text="Adobe Admin Console-identiteitsoverzicht"
 
 De gebruikers die toegang tot de dienst van de Auteur van AEM vereisen worden beheerd als [ gebruikers van Adobe IMS ](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html) in [ Adobe Admin Console ](https://adminconsole.adobe.com). Leer wat Adobe IMS-gebruikers zijn en hoe ze in Admin Console worden benaderd en beheerd.
 
@@ -32,5 +32,5 @@ De gebruikers die toegang tot de dienst van de Auteur van AEM vereisen worden be
 
 ## Aanvullende bronnen
 
-+ [ Onboarding Gebruikers in de documentatie van Admin Console ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#onboarding-users-in-admin-console)
-+ [ het overzichtsdocumentatie van de Identiteit van Adobe Admin Console ](https://helpx.adobe.com/enterprise/using/identity.html)
++ [ Onboarding Gebruikers in de documentatie van Admin Console ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=nl-NL#onboarding-users-in-admin-console)
++ [ het overzichtsdocumentatie van de Identiteit van Adobe Admin Console ](https://helpx.adobe.com/nl/enterprise/using/identity.html)

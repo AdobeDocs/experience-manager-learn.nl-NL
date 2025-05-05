@@ -176,9 +176,9 @@ De algemene richtlijnen van Adobe voor logniveaus per AEM as a Cloud Service-omg
 
 ### Omgevingsspecifieke variabelen om Java-logniveaus in te stellen
 
-Een alternatief aan het plaatsen van statische bekende het logboekniveaus van Java voor elk milieu moet AEM gebruiken als Cloud Service [ milieu specifieke variabelen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values) om logboekniveaus van parameters te bepalen, toestaand de waarden om dynamisch via [ Adobe I/O CLI met de stop van Cloud Manager ](#aio-cli) worden veranderd.
+Een alternatief aan het plaatsen van statische bekende het logboekniveaus van Java voor elk milieu moet AEM gebruiken als Cloud Service [ milieu specifieke variabelen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=nl-NL#environment-specific-configuration-values) om logboekniveaus van parameters te bepalen, toestaand de waarden om dynamisch via [ Adobe I/O CLI met de stop van Cloud Manager ](#aio-cli) worden veranderd.
 
-Dit vereist het bijwerken van de registrerenconfiguraties OSGi om de milieu specifieke veranderlijke placeholders te gebruiken. [ Standaardwaarden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#default-values) voor logboekniveaus zouden moeten worden geplaatst zoals per [ aanbevelingen van Adobe ](#log-levels). Bijvoorbeeld:
+Dit vereist het bijwerken van de registrerenconfiguraties OSGi om de milieu specifieke veranderlijke placeholders te gebruiken. [ Standaardwaarden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=nl-NL#default-values) voor logboekniveaus zouden moeten worden geplaatst zoals per [ aanbevelingen van Adobe ](#log-levels). Bijvoorbeeld:
 
 `/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json`
 
@@ -193,8 +193,8 @@ Dit vereist het bijwerken van de registrerenconfiguraties OSGi om de milieu spec
 
 Deze aanpak heeft nadelen waarmee rekening moet worden gehouden:
 
-+ [ Een beperkt aantal milieuvariabelen wordt toegestaan ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#number-of-variables), en het creëren van een variabele om het logboekniveau te beheren zal gebruiken.
-+ De variabelen van het milieu kunnen programmatically via [ Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html), [ CLI van Adobe I/O ](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid), en [ HTTP APIs van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties) worden beheerd.
++ [ Een beperkt aantal milieuvariabelen wordt toegestaan ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=nl-NL#number-of-variables), en het creëren van een variabele om het logboekniveau te beheren zal gebruiken.
++ De variabelen van het milieu kunnen programmatically via [ Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=nl-NL), [ CLI van Adobe I/O ](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid), en [ HTTP APIs van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=nl-NL#cloud-manager-api-format-for-setting-properties) worden beheerd.
 + Wijzigingen in omgevingsvariabelen moeten handmatig worden hersteld met een ondersteund gereedschap. Het vergeten om een hoog verkeersmilieu, zoals Productie, aan een minder uitgebreid logboekniveau terug te stellen kan de logboeken overstromen en de prestaties van AEM beïnvloeden.
 
 _Milieu specifieke variabelen werken niet voor Apache Webserver of het logboekconfiguraties van Dispatcher aangezien deze niet via configuratie OSGi worden gevormd._

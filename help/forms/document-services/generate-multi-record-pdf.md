@@ -25,7 +25,7 @@ Hier volgt een schermafbeelding van een XML-bestand dat meerdere records bevat.
 
 ![ multi-record-xml ](assets/multi-record-xml.PNG)
 
-Data xml heeft 2 records. Elke record wordt vertegenwoordigd door het form1-element. Dit xml wordt overgegaan tot de methode OutputService [ generatePDFOutputBatch ](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) wij krijgen lijst van pdf- documenten (één per verslag)
+Data xml heeft 2 records. Elke record wordt vertegenwoordigd door het form1-element. Dit xml wordt overgegaan tot de methode OutputService [ generatePDFOutputBatch ](https://helpx.adobe.com/nl/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) wij krijgen lijst van pdf- documenten (één per verslag)
 Voor de handtekening van de methode generatePDFOutputBatch worden de volgende parameters gebruikt
 
 * sjablonen - kaart met de sjabloon, geïdentificeerd door een sleutel

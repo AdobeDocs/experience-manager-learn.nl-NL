@@ -50,7 +50,7 @@ aemFormsUtilities.saveDocumentInCrx("/content/xmlfiles",".xml",xmlStringDoc);
 ## Vereisten
 
 
-U zult [ DevelopingWithServiceUserBundle ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) moeten opstellen en de bundel beginnen.
+U zult [ DevelopingWithServiceUserBundle ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar?lang=nl-NL) moeten opstellen en de bundel beginnen.
 
 
-Als u documenten in de bewaarplaats van CRX gebruikend deze nutsdienst gaat bewaren, te volgen gelieve het [ ontwikkelen met het artikel van de de dienstgebruiker ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Zorg ervoor u de [ vereiste toestemmingen ](http://localhost:4502/useradmin) op de aangewezen omslagen van CRX aan de fd-dienst gebruiker verstrekt.
+Als u documenten in de bewaarplaats van CRX gebruikend deze nutsdienst gaat bewaren, te volgen gelieve het [ ontwikkelen met het artikel van de de dienstgebruiker ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=nl-NL#adaptive-forms). Zorg ervoor u de [ vereiste toestemmingen ](http://localhost:4502/useradmin) op de aangewezen omslagen van CRX aan de fd-dienst gebruiker verstrekt.

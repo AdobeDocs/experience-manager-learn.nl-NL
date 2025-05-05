@@ -195,7 +195,7 @@ Breng deze wijzigingen tot slot door naar de Adobe Git-opslagplaats van uw progr
 
 ## De voorzichtigheid - _laat Voorste Pijl van het Eind_ knoop toe
 
-De [ Selector van het Spoorspoor ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) &quot;s [ optie van de Plaats ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) toont **toelaten Voorste Pijpleiding van het Eind** op het selecteren van uw plaatswortel of plaatspagina. Het klikken **laat de Voorste knoop van het Eind toe** hierboven **het Schuiven vormt**, zorg ervoor **u** deze knoop na het opstellen boven veranderingen via de pijpleidingsuitvoering van Cloud Manager niet klikt.
+De [ Selector van het Spoorspoor ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=nl-NL) &quot;s [ optie van de Plaats ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=nl-NL) toont **toelaten Voorste Pijpleiding van het Eind** op het selecteren van uw plaatswortel of plaatspagina. Het klikken **laat de Voorste knoop van het Eind toe** hierboven **het Schuiven vormt**, zorg ervoor **u** deze knoop na het opstellen boven veranderingen via de pijpleidingsuitvoering van Cloud Manager niet klikt.
 
 ![ laat Voorste knoop van de Pijl van het Eind toe ](assets/enable-front-end-Pipeline-button.png)
 

@@ -28,7 +28,7 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
 
 Bekijk de [ broncode op GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app)
 
-A [ volledig geleidelijke leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) beschrijvend hoe React app bouwde beschikbaar is.
+A [ volledig geleidelijke leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=nl-NL) beschrijvend hoe React app bouwde beschikbaar is.
 
 ## Vereisten {#prerequisites}
 
@@ -41,8 +41,8 @@ De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 
 De toepassing React werkt met de volgende AEM-implementatieopties. Alle plaatsingen vereisen de [ Plaats van WKND v3.0.0+ ](https://github.com/adobe/aem-guides-wknd/releases/latest) om worden geïnstalleerd.
 
-+ [ AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ De lokale opstelling die [ AEM Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) gebruikt
++ [ AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=nl-NL)
++ De lokale opstelling die [ AEM Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL) gebruikt
    + Vereist [ JDK 11 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2fx jcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
 
 De React toepassing wordt ontworpen om met __AEM te verbinden publiceert__ milieu, nochtans kan het inhoud van de Auteur van AEM als de authentificatie in de configuratie van de toepassing van het Reageren wordt verstrekt.
@@ -314,4 +314,4 @@ Als het verbinden met een het auteursmilieu van AEM, moet de overeenkomstige [ a
 
 ### Delen van bronnen van oorsprong (CORS)
 
-Deze React-toepassing is gebaseerd op een op AEM gebaseerde CORS-configuratie die wordt uitgevoerd in de AEM-doelomgeving en gaat ervan uit dat de React-toepassing wordt uitgevoerd in `http://localhost:3000` in de ontwikkelingsmodus.  Herzie de [ Hoofdloze de plaatsingsdocumentatie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa.html) voor meer informatie hoe te opstelling en CORS te vormen.
+Deze React-toepassing is gebaseerd op een op AEM gebaseerde CORS-configuratie die wordt uitgevoerd in de AEM-doelomgeving en gaat ervan uit dat de React-toepassing wordt uitgevoerd in `http://localhost:3000` in de ontwikkelingsmodus.  Herzie de [ Hoofdloze de plaatsingsdocumentatie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa.html?lang=nl-NL) voor meer informatie hoe te opstelling en CORS te vormen.

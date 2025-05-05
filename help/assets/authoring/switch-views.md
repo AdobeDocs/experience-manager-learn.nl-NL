@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Weergaven omwisselen
 
-Leer hoe te tussen de [ mening van Assets en Admin mening ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/overview.html#persona-based-experiences) in AEM Assets as a Cloud Service efficiënt om te schakelen, die naadloos activabeheer verzekeren.
+Leer hoe te tussen de [ mening van Assets en Admin mening ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/overview.html?lang=nl-NL#persona-based-experiences) in AEM Assets as a Cloud Service efficiënt om te schakelen, die naadloos activabeheer verzekeren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426806/?learn=on)

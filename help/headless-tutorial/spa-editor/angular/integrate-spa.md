@@ -74,13 +74,13 @@ De `ui.frontend` module is a [ webpack ](https://webpack.js.org/) project dat al
 
 *A high-level afbeelding van de integratie van het KUUROORD.*
 
-De extra informatie over het front-end bouwt kan [ hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) worden gevonden.
+De extra informatie over het front-end bouwt kan [ hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=nl-NL) worden gevonden.
 
 ## Inspecteer de integratie van SPA {#inspect-spa-integration}
 
-Daarna, inspecteer de `ui.frontend` module om het KUUROORD te begrijpen dat door het [ archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) auto-geproduceerd is.
+Daarna, inspecteer de `ui.frontend` module om het KUUROORD te begrijpen dat door het [ archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=nl-NL) auto-geproduceerd is.
 
-1. In winde van uw keus open omhoog het Project van AEM voor het KND SPA. Dit leerprogramma zal [ winde van de Code van Visual Studio ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code) gebruiken.
+1. In winde van uw keus open omhoog het Project van AEM voor het KND SPA. Dit leerprogramma zal [ winde van de Code van Visual Studio ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#microsoft-visual-studio-code) gebruiken.
 
    ![ VSCode - AEM WKND Project van het KUUROORD ](./assets/integrate-spa/vscode-ide-openproject.png)
 
@@ -109,7 +109,7 @@ Daarna, inspecteer de `ui.frontend` module om het KUUROORD te begrijpen dat door
    "@adobe/cq-spa-page-model-manager": "^1.1.3",
    ```
 
-   De bovengenoemde modules maken omhoog de [ Redacteur JS SDK van AEM SPA ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html) en verstrekken de functionaliteit om het mogelijk te maken om de Componenten van het KUUROORD aan de Componenten van AEM in kaart te brengen.
+   De bovengenoemde modules maken omhoog de [ Redacteur JS SDK van AEM SPA ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html?lang=nl-NL) en verstrekken de functionaliteit om het mogelijk te maken om de Componenten van het KUUROORD aan de Componenten van AEM in kaart te brengen.
 
 5. In het `package.json` -bestand zijn verschillende `scripts` gedefinieerd:
 
@@ -129,7 +129,7 @@ Daarna, inspecteer de `ui.frontend` module om het KUUROORD te begrijpen dat door
 
    `build` - compileert de Angular-app voor productiedistributie. De toevoeging van `&& clientlib` is de oorzaak van het kopiëren van gecompileerde SPA in de `ui.apps` module als cliënt-zijbibliotheek tijdens een bouwstijl. De npm module [ aem-clientlib-generator ](https://github.com/wcm-io-frontend/aem-clientlib-generator) wordt gebruikt om dit te vergemakkelijken.
 
-   Meer details over de beschikbare manuscripten kunnen [ hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) worden gevonden.
+   Meer details over de beschikbare manuscripten kunnen [ hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=nl-NL) worden gevonden.
 
 6. Controleer het bestand `ui.frontend/clientlib.config.js` . Dit configuratiedossier wordt gebruikt door [ aem-clientlib-generator ](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) om te bepalen hoe te om de cliëntbibliotheek te produceren.
 

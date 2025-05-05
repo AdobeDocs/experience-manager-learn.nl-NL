@@ -61,7 +61,7 @@ Dynamische XFA PDF&#39;s kunnen hun indeling tijdens runtime wijzigen, zodat de 
 * Dynamische formulieren ondersteunen clientscripts die de indeling en paginering van het formulier wijzigen. Zo wordt Purchase Order.xdp uitgevouwen en gepagineerd voor een eindeloze hoeveelheid gegevens als u deze opslaat als een dynamisch formulier
 * Dynamische formulieren ondersteunen alle eigenschappen van het formulier tijdens runtime, terwijl statische formulieren alleen een subset ondersteunen
 
-* [ verwijs naar dit document om de verschillen tussen statische en dynamische pdf- vormen te begrijpen ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents.html#:~:text=Dynamic%20forms%20support%20all%20the,forms%20support%20only%20a%20subset)
+* [ verwijs naar dit document om de verschillen tussen statische en dynamische pdf- vormen te begrijpen ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents.html?lang=nl-NL#:~:text=Dynamic%20forms%20support%20all%20the,forms%20support%20only%20a%20subset)
 
 >[!NOTE]
 >

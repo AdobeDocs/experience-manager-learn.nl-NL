@@ -34,7 +34,7 @@ Het volgende schermschot toont een vorm van contactons die in SPA wordt ingebed
 
 * Running instance of AEM Forms 6.5.16
 
-* [ laat hoofdloze vormen op uw auteur toe en publiceer instantie ](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en)
+* [ laat hoofdloze vormen op uw auteur toe en publiceer instantie ](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=nl-NL)
 
 ## Volgende stappen
 

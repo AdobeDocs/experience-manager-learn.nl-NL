@@ -40,5 +40,5 @@ Bewerkbare Templates URL (lokale instantie van AEM): [ http://localhost:4502/lib
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ Bewerkbare Malplaatjes van de Pagina - Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)
-* [ Creërend de Malplaatjes van de Pagina - Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html)
+* [ Bewerkbare Malplaatjes van de Pagina - Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=nl-NL)
+* [ Creërend de Malplaatjes van de Pagina - Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html?lang=nl-NL)

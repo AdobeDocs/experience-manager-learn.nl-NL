@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Met de Adobe Experience Manager Content Fragments Console kunt u heel eenvoudig inhoudsfragmenten beheren en ontwerpen. Leer hoe u de console voor inhoudsfragmenten optimaal kunt benutten met deze video&#39;s.
 
-Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) voor volledige details van de Console en zijn mogelijkheden van de Fragmenten van de Inhoud.
+Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=nl-NL) voor volledige details van de Console en zijn mogelijkheden van de Fragmenten van de Inhoud.
 
 ## Video&#39;s
 

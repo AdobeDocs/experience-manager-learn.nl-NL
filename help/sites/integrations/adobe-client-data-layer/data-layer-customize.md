@@ -21,13 +21,13 @@ ht-degree: 0%
 
 # De Adobe Client Data Layer aanpassen met AEM Components {#customize-data-layer}
 
-Leer hoe u de Adobe Client Data Layer kunt aanpassen met inhoud van aangepaste AEM Components. Leer hoe te om APIs te gebruiken die door [ worden verstrekt de Componenten van de Kern van AEM om ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html) uit te breiden en de gegevenslaag aan te passen.
+Leer hoe u de Adobe Client Data Layer kunt aanpassen met inhoud van aangepaste AEM Components. Leer hoe te om APIs te gebruiken die door [ worden verstrekt de Componenten van de Kern van AEM om ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html?lang=nl-NL) uit te breiden en de gegevenslaag aan te passen.
 
 ## Wat u gaat bouwen
 
 ![ de Laag van Gegevens van de Naamregel ](assets/adobe-client-data-layer/byline-data-layer-html.png)
 
-In dit leerprogramma, onderzoeken wij diverse opties om de Laag van Gegevens van de Cliënt van Adobe uit te breiden door de WKND [ component van de Byline ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html) bij te werken. De _component van 0&rbrace; Byline &lbrace;is a **douanecomponent**&#x200B;en de lessen die in dit leerprogramma worden geleerd kunnen op andere douanecomponenten worden toegepast._
+In dit leerprogramma, onderzoeken wij diverse opties om de Laag van Gegevens van de Cliënt van Adobe uit te breiden door de WKND [ component van de Byline ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html?lang=nl-NL) bij te werken. De _component van 0&rbrace; Byline &lbrace;is a **douanecomponent**&#x200B;en de lessen die in dit leerprogramma worden geleerd kunnen op andere douanecomponenten worden toegepast._
 
 ### Doelstellingen {#objective}
 
@@ -39,9 +39,9 @@ In dit leerprogramma, onderzoeken wij diverse opties om de Laag van Gegevens van
 
 A **lokale ontwikkelomgeving** is noodzakelijk om dit leerprogramma te voltooien. Screenshots en video worden vastgelegd met de AEM as a Cloud Service SDK die op een macOS wordt uitgevoerd. Opdrachten en code zijn onafhankelijk van het lokale besturingssysteem, tenzij anders aangegeven.
 
-**Nieuw aan AEM as a Cloud Service?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+**Nieuw aan AEM as a Cloud Service?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL).
 
-**Nieuw aan AEM 6.5?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+**Nieuw aan AEM 6.5?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=nl-NL).
 
 ## De WKND-referentiesite downloaden en implementeren {#set-up-wknd-site}
 
@@ -173,7 +173,7 @@ Als u gegevens over de component in de gegevenslaag wilt injecteren, moet u eers
 
 ## De HTML voor naamregel bijwerken {#htl}
 
-Daarna, werk `Byline` [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=en) bij. HTML (HTML Template Language) is de sjabloon die wordt gebruikt om de HTML van de component te renderen.
+Daarna, werk `Byline` [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=nl-NL) bij. HTML (HTML Template Language) is de sjabloon die wordt gebruikt om de HTML van de component te renderen.
 
 Een speciaal gegevenskenmerk `data-cmp-data-layer` op elke AEM-component wordt gebruikt om de gegevenslaag ervan zichtbaar te maken. JavaScript dat wordt geleverd door AEM Core Components zoekt naar dit gegevenskenmerk. De waarde van dit gegevenskenmerk wordt gevuld met de JSON-tekenreeks die wordt geretourneerd door de methode `getData()` van het Byline Sling Model en wordt ingespoten in de gegevenslaag van de Adobe-client.
 
@@ -434,4 +434,4 @@ U hebt zojuist enkele manieren verkend om de Adobe Client Data Layer uit te brei
 
 * [ de Documentatie van de Laag van Gegevens van de Cliënt van Adobe ](https://github.com/adobe/adobe-client-data-layer/wiki)
 * [ Integratie van de Laag van Gegevens met de Componenten van de Kern ](https://github.com/adobe/aem-core-wcm-components/blob/main/DATA_LAYER_INTEGRATION.md)
-* [ Gebruikend de Laag van Gegevens van de Cliënt van Adobe en de Documentatie van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
+* [ Gebruikend de Laag van Gegevens van de Cliënt van Adobe en de Documentatie van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL)

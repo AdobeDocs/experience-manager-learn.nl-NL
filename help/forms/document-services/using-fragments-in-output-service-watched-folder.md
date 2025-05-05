@@ -32,7 +32,7 @@ Hier volgt de mapstructuur voor de voorbeeld-xdp die 2 fragmenten gebruikt
 ![ vormen&amp;document ](assets/fragment-folder-structure-ui.png)
 
 
-* Uitvoerservice - Deze service wordt doorgaans gebruikt om XML-gegevens samen te voegen met de xdp-sjabloon of pdf om samengevoegde pdf te genereren. Voor meer details, gelieve te verwijzen naar [ javadoc ](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) voor de dienst van de Output. In dit voorbeeld gebruiken we fragmenten die zich in de crx-opslagplaats bevinden.
+* Uitvoerservice - Deze service wordt doorgaans gebruikt om XML-gegevens samen te voegen met de xdp-sjabloon of pdf om samengevoegde pdf te genereren. Voor meer details, gelieve te verwijzen naar [ javadoc ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) voor de dienst van de Output. In dit voorbeeld gebruiken we fragmenten die zich in de crx-opslagplaats bevinden.
 
 
 Het volgende ECMA-script is gebruikt om PDF te genereren. Bericht het gebruik van ResourceResolver en ResourceResolverHelper in de code. ResourceReolver is nodig aangezien deze code buiten om het even welke gebruikerscontext loopt.

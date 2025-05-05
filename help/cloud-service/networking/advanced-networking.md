@@ -22,7 +22,7 @@ ht-degree: 0%
 
 AEM as a Cloud Service biedt geavanceerde netwerkfuncties waarmee u verbindingen met en van AEM as a Cloud Service-programma&#39;s nauwkeurig kunt beheren.
 
-|                                                   | [ Programma&#39;s van de Productie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) | [Sandbox-programma&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) |
+|                                                   | [ Programma&#39;s van de Productie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html?lang=nl-NL) | [Sandbox-programma&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=nl-NL) |
 |---------------------------------------------------|:-----------------------:|:---------------------:|
 | Ondersteunt geavanceerd netwerken | ✔ | ✘ |
 
@@ -37,7 +37,7 @@ Geavanceerde netwerken van AEM bestaan uit drie opties voor het beheer van conne
 | [__Virtueel Privé Netwerk__](./vpn.md) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 
 
-Voor meer details op de betrokken overwegingen wanneer het selecteren van het aangewezen geavanceerde voorzien van een netwerktype, zie [ geavanceerde voorzien van een netwerkdocumentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html).
+Voor meer details op de betrokken overwegingen wanneer het selecteren van het aangewezen geavanceerde voorzien van een netwerktype, zie [ geavanceerde voorzien van een netwerkdocumentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html?lang=nl-NL).
 
 ## Geavanceerde zelfstudies voor netwerken
 
@@ -106,15 +106,15 @@ Verzeker de aangewezen [ geavanceerde voorzien van een netwerkconfiguratie ](#ad
       </p>
     </td>   
     <td>
-      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html"><img alt="Een IP-lijst van gewenste personen toepassen" src="./assets/code_examples__vpn-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html"> Toepassend een IP lijst van gewenste personen </a></strong></div>
+      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html?lang=nl-NL"><img alt="Een IP-lijst van gewenste personen toepassen" src="./assets/code_examples__vpn-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html?lang=nl-NL"> Toepassend een IP lijst van gewenste personen </a></strong></div>
       <p>
             Vorm een IP lijst van gewenste personen dusdanig dat slechts het verkeer van VPN tot AEM kan toegang hebben.
       </p>
     </td>
    <td>
-      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="Op pad gebaseerde VPN-toegangsbeperkingen voor AEM Publish" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"> Op weg-Gebaseerde de toegangsbeperkingen van VPN aan AEM publiceren </a></strong></div>
+      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html?lang=nl-NL#restrict-vpn-to-ingress-connections"><img alt="Op pad gebaseerde VPN-toegangsbeperkingen voor AEM Publish" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html?lang=nl-NL#restrict-vpn-to-ingress-connections"> Op weg-Gebaseerde de toegangsbeperkingen van VPN aan AEM publiceren </a></strong></div>
       <p>
             Vereis de toegang van VPN voor specifieke wegen op AEM publiceren.
       </p>

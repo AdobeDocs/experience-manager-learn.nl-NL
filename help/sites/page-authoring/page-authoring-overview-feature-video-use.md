@@ -47,5 +47,5 @@ In deze video worden de volgende mogelijkheden of functies behandeld:
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ het uitgeven Documentatie van de Inhoud van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
-* [Handleiding Snel aan de slag met de authoring van pagina&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
+* [ het uitgeven Documentatie van de Inhoud van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=nl-NL)
+* [Handleiding Snel aan de slag met de authoring van pagina&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=nl-NL)

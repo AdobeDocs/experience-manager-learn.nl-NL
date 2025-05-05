@@ -24,7 +24,7 @@ In deze video bekijken we Dynamic Media Color Management en hoe u deze kunt gebr
 
 >[!NOTE]
 >
->[ laat Dynamische Media ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) in AEM toe om deze eigenschap te gebruiken.
+>[ laat Dynamische Media ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) in AEM toe om deze eigenschap te gebruiken.
 
 Deze functie is beschikbaar voor AEM 6.1- en 6.2-versies als een Feature Pack.
 
@@ -125,4 +125,4 @@ Hier volgt de XML-sjabloon voor het configuratieknooppunt voor kleurbeheer. Dit 
 
 ## Aanvullende bronnen{#additional-resources}
 
-* [ Vormend Dynamisch Beheer van de Kleur van Media ](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
+* [ Vormend Dynamisch Beheer van de Kleur van Media ](https://helpx.adobe.com/nl/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)

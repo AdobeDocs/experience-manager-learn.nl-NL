@@ -22,7 +22,7 @@ ht-degree: 0%
 ## Vereisten
 
 * Laatste exemplaar van AEM Forms as a Cloud Service.
-* Alle noodzakelijke [ productprofielen worden toegevoegd aan het milieu.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)
+* Alle noodzakelijke [ productprofielen worden toegevoegd aan het milieu.](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)
 
 * AEM API-toegang tot het productprofiel inschakelen, zoals hieronder wordt weergegeven
   ![ product_profile1 ](assets/product-profiles1.png)
@@ -53,9 +53,9 @@ Kopieer de client-id, clientgeheim en segmenten
 
 ## AEM-instantie configureren om ADC-projectcommunicatie in te schakelen
 
-Als u reeds een project van AEM Forms hebt, [ gelieve deze instructies ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) te volgen om OAuth van het Project van Adobe Developer Console Server-aan-Server referentie ClientID toe te laten om met de instantie van AEM te communiceren
+Als u reeds een project van AEM Forms hebt, [ gelieve deze instructies ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) te volgen om OAuth van het Project van Adobe Developer Console Server-aan-Server referentie ClientID toe te laten om met de instantie van AEM te communiceren
 
-Als u geen project van AEM Forms hebt, te creëren gelieve een [ Project van AEM Forms door deze documentatie te volgen.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started) en laat dan OAuth van het Project van Adobe Developer Console Server-aan-Server referentie ClientID toe om met de instantie van AEM [ te communiceren gebruikend deze documentatie.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)
+Als u geen project van AEM Forms hebt, te creëren gelieve een [ Project van AEM Forms door deze documentatie te volgen.](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started) en laat dan OAuth van het Project van Adobe Developer Console Server-aan-Server referentie ClientID toe om met de instantie van AEM [ te communiceren gebruikend deze documentatie.](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)
 
 
 ## Volgende stappen

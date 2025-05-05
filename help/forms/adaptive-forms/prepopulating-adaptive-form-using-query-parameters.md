@@ -27,7 +27,7 @@ https://forms.enablementadobe.com/content/forms/af/testingxml.html?FirstName=Joh
 
 Hiervoor is een nieuwe aangepaste formuliersjabloon gemaakt en gekoppeld aan een pagina-component. In deze paginacomponent hebben wij jsp om greep van de vraagparameters te krijgen en een xml structuur tot stand te brengen die kan worden gebruikt om de adaptieve vorm te bevolken.
 
-De details bij het creëren van een nieuw Adaptief malplaatje van de Vorm en paginacomponent worden [ verklaard in deze video.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en)
+De details bij het creëren van een nieuw Adaptief malplaatje van de Vorm en paginacomponent worden [ verklaard in deze video.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=nl-NL)
 
 Hier volgt de code die is gebruikt op de JSP-pagina
 

@@ -26,4 +26,4 @@ Ontdek deze tips van uw technische collega, Rakesh Pasupuleti. Rakesh is een Ado
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ Inleiding aan Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html) - Documentatie bij het gebruiken van Cloud Manager in AEM as a Cloud Service
+* [ Inleiding aan Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html?lang=nl-NL) - Documentatie bij het gebruiken van Cloud Manager in AEM as a Cloud Service

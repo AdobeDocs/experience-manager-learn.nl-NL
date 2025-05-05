@@ -34,4 +34,4 @@ De Console URL van de component (lokale Auteur van AEM): [ http://localhost:4502
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ Documentatie van de Console van Componenten ](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/default-components-console.html)
+* [ Documentatie van de Console van Componenten ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/authoring/using/default-components-console.html)

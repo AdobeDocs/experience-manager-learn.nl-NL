@@ -36,4 +36,4 @@ Gebruik AEM Desktop App om de toegang tot middelen te vereenvoudigen die in AEM 
 
 ## Aanvullende bronnen
 
-+ [ Download de recentste App van de Desktop van AEM ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)
++ [ Download de recentste App van de Desktop van AEM ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=nl-NL)

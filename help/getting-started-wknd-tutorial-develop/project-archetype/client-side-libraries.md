@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Clientbibliotheken en front-end workflow {#client-side-libraries}
 
-Leer hoe Client-Side Libraries of clientlibs worden gebruikt om CSS en JavaScript voor een implementatie van Adobe Experience Manager (AEM) Plaatsen op te stellen en te beheren. Dit leerprogramma behandelt ook hoe de {[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) module 0} ui.frontend, een ontkoppelde [ webpack ](https://webpack.js.org/) project, in het bouwstijlproces van begin tot eind kan worden geïntegreerd.
+Leer hoe Client-Side Libraries of clientlibs worden gebruikt om CSS en JavaScript voor een implementatie van Adobe Experience Manager (AEM) Plaatsen op te stellen en te beheren. Dit leerprogramma behandelt ook hoe de {[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=nl-NL) module 0} ui.frontend, een ontkoppelde [ webpack ](https://webpack.js.org/) project, in het bouwstijlproces van begin tot eind kan worden geïntegreerd.
 
 ## Vereisten {#prerequisites}
 
@@ -82,7 +82,7 @@ Client-Side Libraries bieden een mechanisme voor het organiseren en beheren van 
 1. Afhankelijkheden van externe frameworks op georganiseerde wijze beheren
 1. Minimaliseer het aantal cliënt-zijverzoeken door CSS/JS in één of twee verzoeken samen te voegen.
 
-Meer informatie over het gebruiken van [ cliënt-Kant Bibliotheken kan hier worden gevonden.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)
+Meer informatie over het gebruiken van [ cliënt-Kant Bibliotheken kan hier worden gevonden.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=nl-NL)
 
 Bibliotheken aan de clientzijde hebben enkele beperkingen. Het meest in het bijzonder is een beperkte ondersteuning voor populaire front-end talen zoals Sass, LESS en TypeScript. In het leerprogramma, kijken hoe de {**module 0} ui.frontend dit kan helpen oplossen.**
 
@@ -90,7 +90,7 @@ Stel de basis van de startcode aan een lokale instantie van AEM op en navigeer a
 
 ## Client-Side Libraries-organisatie {#organization}
 
-Daarna onderzoeken wij de organisatie van clientlibs die door het [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) worden geproduceerd.
+Daarna onderzoeken wij de organisatie van clientlibs die door het [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) worden geproduceerd.
 
 ![ Clientlibrary van hoog niveau organisatie ](./assets/client-side-libraries/high-level-clientlib-organization.png)
 
@@ -107,12 +107,12 @@ Daarna onderzoeken wij de organisatie van clientlibs die door het [ Archetype va
 
    In de onderstaande sectie worden deze clientlibs nader bekeken.
 
-1. De volgende tabel geeft een overzicht van de clientbibliotheken. Meer details over [ met inbegrip van de Bibliotheken van de Cliënt kunnen hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=en#developing) worden gevonden.
+1. De volgende tabel geeft een overzicht van de clientbibliotheken. Meer details over [ met inbegrip van de Bibliotheken van de Cliënt kunnen hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=nl-NL#developing) worden gevonden.
 
    | Naam | Beschrijving | Notities |
    |-------------------| ------------| ------|
    | `clientlib-base` | Basisniveau van CSS en JavaScript vereist voor WKND-site om te kunnen functioneren | Sluit de clientbibliotheken van de Core Component in |
-   | `clientlib-grid` | Produceert CSS noodzakelijk voor [ Wijze van de Lay-out ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html) om te werken. | Mobiele/tabletonderbrekingspunten kunnen hier worden geconfigureerd |
+   | `clientlib-grid` | Produceert CSS noodzakelijk voor [ Wijze van de Lay-out ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=nl-NL) om te werken. | Mobiele/tabletonderbrekingspunten kunnen hier worden geconfigureerd |
    | `clientlib-site` | Bevat site-specifiek thema voor de WKND-site | Gegenereerd door de module `ui.frontend` |
    | `clientlib-dependencies` | Sluit om het even welke derdegebiedsdelen in | Gegenereerd door de module `ui.frontend` |
 
@@ -120,7 +120,7 @@ Daarna onderzoeken wij de organisatie van clientlibs die door het [ Archetype va
 
 ## Basisstijlen bijwerken {#base-styles}
 
-Daarna, werk de basisstijlen bij die in **[worden bepaald ui.frontend ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)** module. De bestanden in de module `ui.frontend` genereren de bibliotheken `clientlib-site` en `clientlib-dependecies` met het thema Site en eventuele afhankelijkheden van derden.
+Daarna, werk de basisstijlen bij die in **[worden bepaald ui.frontend ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=nl-NL)** module. De bestanden in de module `ui.frontend` genereren de bibliotheken `clientlib-site` en `clientlib-dependecies` met het thema Site en eventuele afhankelijkheden van derden.
 
 De cliënt-zijbibliotheken steunen geen geavanceerdere talen zoals [ Sass ](https://sass-lang.com/) of [ TypeScript ](https://www.typescriptlang.org/). Er zijn verscheidene open-bronhulpmiddelen zoals [ NPM ](https://www.npmjs.com/) en [ webpack ](https://webpack.js.org/) die vooruitstrevende ontwikkeling versnellen en optimaliseren. Het doel van de {**module 0} ui.frontend moet deze hulpmiddelen kunnen gebruiken om de meeste front-end brondossiers te beheren.**
 
@@ -143,7 +143,7 @@ De cliënt-zijbibliotheken steunen geen geavanceerdere talen zoals [ Sass ](http
 
    ![ de dossiers van de Klasse van de Component ](assets/client-side-libraries/component-sass-files.png)
 
-   Elk dossier brengt aan een Component van de Kern zoals de [ Component van de Accordeon ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/accordion.html?lang=en) in kaart. Elke Component van de Kern wordt gebouwd met [ Modifier van het Element van het Blok ](https://getbem.com/) of BEM aantekening om het gemakkelijker te maken om specifieke CSS klassen met stijlregels te richten. De bestanden onder `/components` zijn door het AEM Project Archetype uitgesneden met de verschillende BEM-regels voor elke component.
+   Elk dossier brengt aan een Component van de Kern zoals de [ Component van de Accordeon ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/accordion.html?lang=nl-NL) in kaart. Elke Component van de Kern wordt gebouwd met [ Modifier van het Element van het Blok ](https://getbem.com/) of BEM aantekening om het gemakkelijker te maken om specifieke CSS klassen met stijlregels te richten. De bestanden onder `/components` zijn door het AEM Project Archetype uitgesneden met de verschillende BEM-regels voor elke component.
 
 1. Download de Stijlen van de Basis WKND **[wknd-base-styles-src-v3.zip](/help/getting-started-wknd-tutorial-develop/project-archetype/assets/client-side-libraries/wknd-base-styles-src-v3.zip)** en **unzip** het dossier.
 
@@ -220,7 +220,7 @@ Deze integratie wordt automatisch ingesteld door het AEM Project Archetype. Ga v
 
    >[!NOTE]
    >
-   >Er is ook een `npm run prod` -profiel dat de JS en CSS minieme waarden geeft. Dit is de standaardcompilatie wanneer de webpack-build wordt geactiveerd via Maven. Meer details over de {[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) kunnen worden gevonden module 0} ui.frontend.
+   >Er is ook een `npm run prod` -profiel dat de JS en CSS minieme waarden geeft. Dit is de standaardcompilatie wanneer de webpack-build wordt geactiveerd via Maven. Meer details over de {[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=nl-NL) kunnen worden gevonden module 0} ui.frontend.
 
 1. Controleer het bestand `site.css` onder `ui.frontend/dist/clientlib-site/site.css` . Dit is gecompileerde CSS die op de brondossiers van de Klasse wordt gebaseerd.
 
@@ -324,11 +324,11 @@ Laten we nu bekijken hoe naar de clientlibs wordt verwezen in de AEM-pagina. Bij
 
    >[!NOTE]
    >
-   > Voor AEM 6.5/6.4 worden de bibliotheken aan de clientzijde niet automatisch geminiateerd. Zie de documentatie op de [ Manager van de Bibliotheek van HTML om (geadviseerde) minificatie toe te laten ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors).
+   > Voor AEM 6.5/6.4 worden de bibliotheken aan de clientzijde niet automatisch geminiateerd. Zie de documentatie op de [ Manager van de Bibliotheek van HTML om (geadviseerde) minificatie toe te laten ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=nl-NL#using-preprocessors).
 
    >[!WARNING]
    >
-   >Het is kritiek op publiceer kant dat de cliëntbibliotheken **niet** van **worden gediend/apps** aangezien deze weg om veiligheidsredenen zou moeten worden beperkt gebruikend de [ de filtersectie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#example-filter-section). Het [ allowProxy bezit ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) van de cliëntbibliotheek verzekert CSS en JS van **/etc.clientlibs** worden gediend.
+   >Het is kritiek op publiceer kant dat de cliëntbibliotheken **niet** van **worden gediend/apps** aangezien deze weg om veiligheidsredenen zou moeten worden beperkt gebruikend de [ de filtersectie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#example-filter-section). Het [ allowProxy bezit ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=nl-NL#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) van de cliëntbibliotheek verzekert CSS en JS van **/etc.clientlibs** worden gediend.
 
 ### Volgende stappen {#next-steps}
 

@@ -42,9 +42,9 @@ Om tot Developer Console toegang te hebben en te gebruiken moeten de volgende to
 
 1. Zorg ervoor dat de Adobe Org in de Adobe Org-switch staat en dat de Org gerelateerd is aan de omgevingen die u wilt inspecteren in de Developer Console.
 1. Als u zich wilt aanmelden bij de Developer Console, moet de ontwikkelaar lid zijn van een van de volgende rollen:
-   + __Ontwikkelaar 1&rbrace; van het Product van 0&rbrace; Cloud Manager - het Profiel van het Product van Cloud Service__ [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer): In dit geval, zal de ontwikkelaar de volledige lijst van milieu&#39;s zien beschikbaar onder geselecteerde Developer Console URL; als een milieu of RDE van de Ontwikkeling in Cloud Manager, andere milieu of RDEs in dat zelfde Programma zou kunnen worden geselecteerd.
-   + __Profiel van het Product van de Beheerders van AEM 1&rbrace; op__ de Auteur van AEM __[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles): In dit geval, zal de lijst van milieu&#39;s die in het vorige opsommingsteken worden beschreven tot de verwante productprofielen worden beperkt waar deze rol wordt toegewezen.__
-1. De ontwikkelaar moet een lid van de [__Gebruikers van AEM__ zijn of __AEM Beheerders__ Profiel van het Product op de Auteur van AEM en/of publiceren ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles).
+   + __Ontwikkelaar 1&rbrace; van het Product van 0&rbrace; Cloud Manager - het Profiel van het Product van Cloud Service__ [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html?lang=nl-NL#assign-developer): In dit geval, zal de ontwikkelaar de volledige lijst van milieu&#39;s zien beschikbaar onder geselecteerde Developer Console URL; als een milieu of RDE van de Ontwikkeling in Cloud Manager, andere milieu of RDEs in dat zelfde Programma zou kunnen worden geselecteerd.
+   + __Profiel van het Product van de Beheerders van AEM 1&rbrace; op__ de Auteur van AEM __[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=nl-NL#aem-product-profiles): In dit geval, zal de lijst van milieu&#39;s die in het vorige opsommingsteken worden beschreven tot de verwante productprofielen worden beperkt waar deze rol wordt toegewezen.__
+1. De ontwikkelaar moet een lid van de [__Gebruikers van AEM__ zijn of __AEM Beheerders__ Profiel van het Product op de Auteur van AEM en/of publiceren ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=nl-NL#aem-product-profiles).
    + Als dit lidmaatschap niet bestaat, zullen de [ status ](#status) dumps onderbreking met een 401 Onbevoegde fout.
 
 ### Problemen met Developer Console-toegang oplossen
@@ -54,7 +54,7 @@ Om tot Developer Console toegang te hebben en te gebruiken moeten de volgende to
 Zorg voor het volgende:
 
 + U hebt de juiste Developer Console URL geselecteerd door op de drie stippen voor de geselecteerde omgeving via Cloud Manager te klikken en Developer Console te selecteren.
-+ U of hebt __Ontwikkelaar 1&rbrace; van het Product van 0&rbrace; Cloud Manager - het Profiel van het Product van Cloud Service__ [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer) om de volledige lijst van milieu&#39;s te zien of u maakt deel uit van het [__Profiel van het Product van de Beheerders van AEM__ op __de Auteur van AEM__ ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles) voor het milieu u niet vindt.
++ U of hebt __Ontwikkelaar 1&rbrace; van het Product van 0&rbrace; Cloud Manager - het Profiel van het Product van Cloud Service__ [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html?lang=nl-NL#assign-developer) om de volledige lijst van milieu&#39;s te zien of u maakt deel uit van het [__Profiel van het Product van de Beheerders van AEM__ op __de Auteur van AEM__ ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=nl-NL#aem-product-profiles) voor het milieu u niet vindt.
 
 #### 401 Ongeoorloofde fout bij de status van dumping
 
@@ -110,7 +110,7 @@ Componenten helpen bij het opsporen van fouten door:
 + Het verstrekken van de staat van elke component OSGi; met inbegrip van als zij actief of ontevreden zijn
 + Het verstrekken van details in ontevreden de dienstverwijzingen kan componenten OSGi veroorzaken om actief te worden
 + OSGi-eigenschappen vermelden en hun waarden koppelen aan de OSGi-component.
-   + Dit zal daadwerkelijke die waarden tonen via [ worden ingespoten OSGi de variabelen van de milieuconfiguratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values).
+   + Dit zal daadwerkelijke die waarden tonen via [ worden ingespoten OSGi de variabelen van de milieuconfiguratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=nl-NL#environment-specific-configuration-values).
 
 ### Configuraties
 
@@ -119,7 +119,7 @@ De configuraties maken een lijst van alle configuraties van de component OSGi (e
 Configuraties helpen bij het opsporen van fouten door:
 
 + OSGi-eigenschappen en hun waarden per OSGi-component vermelden
-   + Dit zal geen daadwerkelijke die waarden tonen via [ worden ingespoten OSGi de variabelen van de milieuconfiguratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values). Zie [ Componenten ](#components) hierboven, voor de geïnjecteerde waarden.
+   + Dit zal geen daadwerkelijke die waarden tonen via [ worden ingespoten OSGi de variabelen van de milieuconfiguratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=nl-NL#environment-specific-configuration-values). Zie [ Componenten ](#components) hierboven, voor de geïnjecteerde waarden.
 + Onjuist geconfigureerde eigenschappen zoeken en identificeren
 
 ### Oak-indexen

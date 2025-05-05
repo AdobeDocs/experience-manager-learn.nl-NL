@@ -31,12 +31,12 @@ De workflow in Dynamic Media Classic-oplossingen bestaat uit drie hoofdstappen:
 
 Dit is het begin van de workflow. In deze stap verzamelt of maakt u de broninhoud die past in de workflow die u gebruikt en uploadt u deze naar Dynamic Media Classic. Het systeem ondersteunt meerdere bestandstypen voor afbeeldingen, video en lettertypen, maar ook voor PDF, Adobe Illustrator en Adobe InDesign.
 
-Zie de volledige lijst van [ Gesteunde Types van Dossier ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
+Zie de volledige lijst van [ Gesteunde Types van Dossier ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=nl-NL#supported-asset-file-formats).
 
 U kunt broninhoud op verschillende manieren uploaden:
 
-- Direct vanaf uw bureaublad of lokaal netwerk. [ leer hoe ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-sps-desktop-application).
-- Van een Dynamic Media Classic FTP-server. [ leer hoe ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
+- Direct vanaf uw bureaublad of lokaal netwerk. [ leer hoe ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=nl-NL#upload-files-using-sps-desktop-application).
+- Van een Dynamic Media Classic FTP-server. [ leer hoe ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=nl-NL#upload-files-using-via-ftp).
 
 De standaardmodus is Van bureaublad, waar u naar bestanden op uw lokale netwerk bladert en het uploaden start.
 
@@ -64,11 +64,11 @@ Vereist dat de vervangende afbeelding dezelfde bestandsnaamextensie heeft als de
 - **beschrijft in om het even welke omslag, de zelfde naam van de basisactiva ongeacht uitbreiding**.
 Deze optie is de meest inclusieve vervangingsregel. U kunt een vervangende afbeelding uploaden naar een andere map dan het origineel, een bestand met een andere bestandsnaamextensie uploaden en het oorspronkelijke bestand vervangen. Als het oorspronkelijke bestand zich in een andere map bevindt, bevindt de vervangende afbeelding zich in de nieuwe map waarnaar het is geüpload.
 
-Leer meer over de [ Optie van Beelden beschrijven ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
+Leer meer over de [ Optie van Beelden beschrijven ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=nl-NL#using-the-overwrite-images-option).
 
 Hoewel dit niet verplicht is, kunt u tijdens het uploaden met een van de twee bovenstaande methoden taakopties voor die specifieke upload opgeven, bijvoorbeeld om een terugkerende upload te plannen, opties voor uitsnijden bij het uploaden instellen en vele andere. Deze kunnen voor sommige werkschema&#39;s waardevol zijn, zodat is het de moeite waard om te overwegen of zij voor van u kunnen zijn.
 
-Leer meer over [ Opties van de Baan ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
+Leer meer over [ Opties van de Baan ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=nl-NL#upload-options).
 
 Uploaden is de eerste noodzakelijke stap in een workflow, omdat Dynamic Media Classic niet kan werken met inhoud die nog niet in het systeem staat. Achter de schermen tijdens het uploaden registreert het systeem elk geüpload element bij de gecentraliseerde Dynamic Media Classic-database, wijst het een id toe en kopieert het naar opslag. Bovendien zet het systeem afbeeldingsbestanden om in een indeling waarmee u op dynamische wijze kunt vergroten/verkleinen en zoomen en zet het videobestanden om in de webvriendelijke indeling van MP4.
 
@@ -97,7 +97,7 @@ Op dezelfde manier kunt u de hoofdbronvideo uploaden naar Dynamic Media Classic 
 
 **terwijl er geen minimum voor beeldgrootte is, adviseren wij het uploaden van reuze beelden niet.** Een gigantische afbeelding kan worden beschouwd als meer dan 4000 pixels. Het uploaden van afbeeldingen van deze grootte kan mogelijke onvolkomenheden zoals stofkorrels of haren in de afbeelding laten zien. Dergelijke afbeeldingen nemen meer ruimte in op de Dynamic Media Classic-server, waardoor u uw contractueel vastgelegde opslaglimiet kunt overschrijden.
 
-Leer meer over [ Uploading Dossiers ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
+Leer meer over [ Uploading Dossiers ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=nl-NL#uploading-your-files).
 
 ## Stap 2: Auteur (en Publish)
 
@@ -139,14 +139,14 @@ Nieuw geüploade en gepubliceerde elementen worden meteen zichtbaar, terwijl bij
 
 Dit is doorgaans geen probleem, tenzij er een fout is opgetreden en de afbeelding/het element dezelfde naam heeft als de eerder gepubliceerde versie, maar er is een probleem met de afbeelding. U hebt bijvoorbeeld per ongeluk een versie met een lage resolutie geüpload of uw art director heeft de afbeelding niet goedgekeurd. In dit geval wilt u de oorspronkelijke afbeelding terugroepen en deze vervangen door een nieuwe versie met dezelfde element-id.
 
-Leer hoe te [ manueel het Geheime voorgeheugen voor URLs ontruimen die ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=en) moet worden bijgewerkt.
+Leer hoe te [ manueel het Geheime voorgeheugen voor URLs ontruimen die ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=nl-NL) moet worden bijgewerkt.
 
 >[!TIP]
 >
 >Om problemen met caching vertraging te vermijden, werk altijd vooruit — een avond, een dag, twee weken, enz. Stel uw werk in op tijd voor QA/acceptatie voor interne partijen voordat u het openbaar maakt. Zelfs als je een avond eerder werkt, kun je wijzigingen aanbrengen en die avond opnieuw publiceren. &#39;s Ochtends is de 10 uur verstreken en wordt de cache bijgewerkt met de juiste afbeelding.
 
-- Leer meer over [ Creërend een het Publiceren Baan ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
-- Leer meer over [ het Publiceren ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html).
+- Leer meer over [ Creërend een het Publiceren Baan ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html?lang=nl-NL#creating-a-publish-job).
+- Leer meer over [ het Publiceren ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html?lang=nl-NL).
 
 ## Stap 3: Leveren
 
@@ -184,4 +184,4 @@ U kunt voorproef uw beelden in veelvoudige grootte gebruiken **Grootte** voorpro
 
 U kunt de **optie van het Gezoem** ook gebruiken om uw beeld in één van vele vooraf gebouwde gezoemvoorinstellingen voor te vertonen, die op verschillende inbegrepen gezoemkijkers gebaseerd zijn.
 
-Leer meer over [ Previewing Assets ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/previewing-asset.html).
+Leer meer over [ Previewing Assets ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/previewing-asset.html?lang=nl-NL).

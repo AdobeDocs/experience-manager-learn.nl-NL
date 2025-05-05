@@ -253,7 +253,7 @@ RewriteRule ^/logo.jpg$ /content/dam/weretail/general/logo.jpg [NC,PT]
 
 Wanneer om het even welke FILENAME_farm.om het even welke dossiers van `/etc/httpd/conf.dispatcher.d/available_farms/` folder in de `/etc/httpd/conf.dispatcher.d/enabled_farms/` folder worden gesymboliseerd zullen zij in de lopende configuratie worden gebruikt.
 
-De landbouwbedrijfdossiers hebben sub omvat gebaseerd op [ hoogste niveausecties van het landbouwbedrijf ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#defining-farms-farms) als geheime voorgeheugen, klantheaders, filters, teruggeeft, en gastheren.
+De landbouwbedrijfdossiers hebben sub omvat gebaseerd op [ hoogste niveausecties van het landbouwbedrijf ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#defining-farms-farms) als geheime voorgeheugen, klantheaders, filters, teruggeeft, en gastheren.
 
 De `FILENAME_farm.any` -bestanden bevatten instructies voor elk bestand op basis van de locatie waar de bestanden in het landbouwbedrijfsbestand moeten worden opgenomen.  Hier volgt een voorbeeld van de syntaxis van een `FILENAME_farm.any` -bestand als een goede referentie:
 

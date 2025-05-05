@@ -26,7 +26,7 @@ De configuratie OSGI die in dit document wordt beschreven is voldoende voor:
 1. Delen van bronnen van één oorsprong in AEM Publish
 2. Toegang tot AEM-auteur voor CORS
 
-Als de multi-oorsprong toegang van CORS op AEM wordt vereist publiceer, verwijs naar [ deze documentatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
+Als de multi-oorsprong toegang van CORS op AEM wordt vereist publiceer, verwijs naar [ deze documentatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=nl-NL#dispatcher-configuration).
 
 ## Adobe Granite Cross-Origin Resource Sharing Policy OSGi-configuratie
 
@@ -187,7 +187,7 @@ Over het algemeen kunnen dezelfde overwegingen voor het in cache plaatsen van in
 
 ### CORS-aanvraagheaders toestaan
 
-Om de vereiste [ HTTP- verzoekkopballen toe te staan om tot AEM voor verwerking ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) over te gaan, moeten zij in de Dispatcher `/clientheaders` configuratie worden toegestaan.
+Om de vereiste [ HTTP- verzoekkopballen toe te staan om tot AEM voor verwerking ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#specifying-the-http-headers-to-pass-through-clientheaders) over te gaan, moeten zij in de Dispatcher `/clientheaders` configuratie worden toegestaan.
 
 ```
 /clientheaders {
@@ -200,7 +200,7 @@ Om de vereiste [ HTTP- verzoekkopballen toe te staan om tot AEM voor verwerking 
 
 ### CORS-responsheaders in cache plaatsen
 
-Als u het in cache plaatsen en serveren van CORS-headers voor in cache opgeslagen inhoud wilt toestaan, voegt u de volgende [ /cache/headers-configuratie ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers) toe aan het AEM Publish `dispatcher.any` -bestand.
+Als u het in cache plaatsen en serveren van CORS-headers voor in cache opgeslagen inhoud wilt toestaan, voegt u de volgende [ /cache/headers-configuratie ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#caching-http-response-headers) toe aan het AEM Publish `dispatcher.any` -bestand.
 
 ```
 /publishfarm {

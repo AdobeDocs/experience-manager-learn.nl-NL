@@ -28,4 +28,4 @@ Aangepaste AEM Assets-videominiaturen bieden auteurs de mogelijkheid een geschik
 
 >[!NOTE]
 >
->U zou uw [ instantie van AEM op Dynamische Media ](https://experienceleague.adobe.com/docs/) wijze in werking moeten stellen
+>U zou uw [ instantie van AEM op Dynamische Media ](https://experienceleague.adobe.com/docs/?lang=nl-NL) wijze in werking moeten stellen

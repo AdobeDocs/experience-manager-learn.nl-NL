@@ -38,6 +38,6 @@ Het project bevat de volgende bestanden in de bronnenmap:
 * De toepassing Main.java uitvoeren als Java
 
 >[!NOTE]
-> De allereerste keer dat u het Java-programma uitvoert, wordt een HTTP 403-fout gegenereerd. Om voorbij dit te krijgen zorg u de [ aangewezen toestemmingen aan de technische rekeningsgebruiker in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem) geeft.
+> De allereerste keer dat u het Java-programma uitvoert, wordt een HTTP 403-fout gegenereerd. Om voorbij dit te krijgen zorg u de [ aangewezen toestemmingen aan de technische rekeningsgebruiker in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=nl-NL#configure-access-in-aem) geeft.
 
 **de Gebruikers van AEM Forms** is de rol ik voor deze cursus heb gebruikt.

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Volg de onderstaande stappen om deze kwestie te laten werken aan uw lokale AEM-exemplaar.
 
-* [ stelt de Bundel DevelopingWithServiceUser ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip) in het ZIP dossier op.
+* [ stelt de Bundel DevelopingWithServiceUser ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=nl-NL) in het ZIP dossier op.
 
 * Voeg de volgende ingang in de Dienst van het Mapper van de Gebruiker van de Dienst Apache Sling **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** toe gebruikend [ configMgr ](http://localhost:4502/system/console/configMgr).
 

@@ -26,7 +26,7 @@ De gegevenslaag van de Cliënt van de Adobe introduceert een standaardmethode om
 
 >[!NOTE]
 >
-> Wilt u de Laag van Gegevens van de Cliënt van de Adobe op uw AEM plaats toelaten? [ zie hier de instructies ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
+> Wilt u de Laag van Gegevens van de Cliënt van de Adobe op uw AEM plaats toelaten? [ zie hier de instructies ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL#installation-activation).
 
 ## De gegevenslaag verkennen
 
@@ -179,4 +179,4 @@ Er zijn twee opties om het leren te houden, eerste, controle uit [ paginagegegev
 ## Aanvullende bronnen {#additional-resources}
 
 * [ de Documentatie van de Laag van Gegevens van de Cliënt van de Adobe ](https://github.com/adobe/adobe-client-data-layer/wiki)
-* [ Gebruikend de Laag van Gegevens van de Cliënt van de Adobe en de Documentatie van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
+* [ Gebruikend de Laag van Gegevens van de Cliënt van de Adobe en de Documentatie van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL)

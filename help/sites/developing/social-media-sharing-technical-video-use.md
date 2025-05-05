@@ -22,7 +22,7 @@ Ontdek het instellen en gebruiken van de component voor sociale media delen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18897?quality=12&learn=on)
 
-Deze video onderzoekt de volgende faciliteiten van de Sociale Media die component (deel van [ de Componenten van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)) delen gebruikend [ Wij.Retail ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail) steekproefwebsite.
+Deze video onderzoekt de volgende faciliteiten van de Sociale Media die component (deel van [ de Componenten van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)) delen gebruikend [ Wij.Retail ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail) steekproefwebsite.
 
 * 0:00 - De component voor sociale media delen toevoegen en configureren
 * 1:00 - Delen op Facebook
@@ -35,12 +35,12 @@ Deze video onderzoekt de volgende faciliteiten van de Sociale Media die componen
 
 [ http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl](http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl)
 
-[ externalizer van AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) zou opstelling op zowel de Auteur van AEM als AEM moeten zijn publiceren, om publiceer runmode aan het openbaar toegankelijke domein in kaart te brengen dat wordt gebruikt om tot AEM toegang te hebben publiceer.
+[ externalizer van AEM ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/externalizer.html) zou opstelling op zowel de Auteur van AEM als AEM moeten zijn publiceren, om publiceer runmode aan het openbaar toegankelijke domein in kaart te brengen dat wordt gebruikt om tot AEM toegang te hebben publiceer.
 
-In deze video gebruiken wij `/etc/hosts` aan spoof *www.example.com* om aan localhost op te lossen, en de configuratie van a [ basisAEM Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) gebruiken om www.example.com toe te staan om AEM te publiceren.
+In deze video gebruiken wij `/etc/hosts` aan spoof *www.example.com* om aan localhost op te lossen, en de configuratie van a [ basisAEM Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=nl-NL) gebruiken om www.example.com toe te staan om AEM te publiceren.
 
 ## Ondersteunende materialen {#supporting-materials}
 
 * [ Download de Componenten van de Kern van AEM ](https://github.com/adobe/aem-core-wcm-components/releases)
 * [ Download wij.Retail ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
-* [ Installerend Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
+* [ Installerend Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=nl-NL)

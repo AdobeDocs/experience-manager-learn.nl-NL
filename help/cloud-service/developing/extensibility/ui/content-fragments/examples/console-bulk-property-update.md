@@ -171,7 +171,7 @@ In deze voorbeeld-app is er een modale React-component (`BulkPropertyUpdateModal
 Belangrijk, zou om het even welke interactie met AEM van de uitbreiding aan een [ actie van Adobe I/O Runtime AppBuilder ](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) moeten worden gedelegeerd, die een afzonderlijk serverless proces is dat in [ Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/) loopt.
 Het gebruik van Adobe I/O Runtime-acties om met AEM te communiceren, is om problemen met de connectiviteit van het delen van bronnen van verschillende oorsprong (CORS) te voorkomen.
 
-Wanneer de vorm van de Update van het Bezit van het Bulk wordt voorgelegd, roept een douane `onSubmitHandler()` de actie van Adobe I/O Runtime aan, die de huidige gastheer van AEM (domein) en het toegangstoken van AEM van de gebruiker overgaat, die beurtelings [ het Fragment API van de Inhoud van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) roept om de inhoudsfragmenten bij te werken.
+Wanneer de vorm van de Update van het Bezit van het Bulk wordt voorgelegd, roept een douane `onSubmitHandler()` de actie van Adobe I/O Runtime aan, die de huidige gastheer van AEM (domein) en het toegangstoken van AEM van de gebruiker overgaat, die beurtelings [ het Fragment API van de Inhoud van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=nl-NL) roept om de inhoudsfragmenten bij te werken.
 
 Wanneer de reactie van de actie van Adobe I/O Runtime wordt ontvangen, wordt modal bijgewerkt om de resultaten van de bulkbezitsupdate verrichting te tonen.
 

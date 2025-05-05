@@ -134,4 +134,4 @@ Hieronder volgen voorbeelden van rollen voor een licht en zwaar clientscenario:
 
 Voor een meer diepgaande bespreking van Governance en het Personelen Modellen &amp; Archetypes, luister aan deze één-uurpaneelbespreking: [ De Archetypes van de Rol en het Creëren van een Operationeel Kader voor  [!DNL AEM Assets]  en  [!DNL Sites] ](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
 
-Leer meer over strategie en gedachte leiderschap bij de [ hub van het Succes van de Klant ](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html).
+Leer meer over strategie en gedachte leiderschap bij de [ hub van het Succes van de Klant ](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html?lang=nl-NL).

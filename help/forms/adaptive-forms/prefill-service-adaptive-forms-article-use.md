@@ -20,7 +20,7 @@ ht-degree: 0%
 
 U kunt de velden van een adaptief formulier vooraf invullen met bestaande gegevens. Wanneer een gebruiker een formulier opent, worden de waarden voor die velden vooraf ingevuld. Er zijn meerdere manieren om aangepaste formuliervelden vooraf in te vullen. In dit artikel bekijken we het vooraf ingevulde adaptieve formulier met de AEM Forms Prefill-service.
 
-Om meer over diverse methodes te leren om adaptieve vormen vooraf in te vullen, [ te volgen gelieve deze documentatie ](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
+Om meer over diverse methodes te leren om adaptieve vormen vooraf in te vullen, [ te volgen gelieve deze documentatie ](https://helpx.adobe.com/nl/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
 Als u een adaptief formulier wilt vooraf invullen met de Prefill-service, moet u een klasse maken die de interface `com.adobe.forms.common.service.DataXMLProvider` implementeert. De methode `getDataXMLForDataRef` bevat de logica voor het samenstellen en retourneren van gegevens die het aangepaste formulier gebruikt om de velden vooraf in te vullen. Met deze methode kunt u de gegevens van elke bron ophalen en de invoerstream van het gegevensdocument retourneren. De volgende voorbeeldcode haalt de gebruikersprofielinformatie van de aangemelde gebruiker op en maakt een XML-document waarvan de invoerstream wordt geretourneerd voor gebruik door de adaptieve formulieren.
 

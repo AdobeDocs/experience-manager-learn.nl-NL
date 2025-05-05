@@ -45,7 +45,7 @@ Creeer een ontwikkelaarrekening met [ Nexmo ](https://dashboard.nexmo.com/) voor
 ## De volgende OSGi-bundels implementeren
 
 Stel de bundel op die de [ code heeft om gegevens van gegevensbestand op te slaan en te halen ](assets/SaveAndResume.core-1.0.0-SNAPSHOT.jar)
-Download en decomprimeer [ het ontwikkelen withServiceUser.zip ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip).
+Download en decomprimeer [ het ontwikkelen withServiceUser.zip ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=nl-NL).
 Implementeer het bestand DevelopingWithServiceUser.jar met behulp van de Felix-webconsole.
 
 ## De clientbibliotheek implementeren

@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Begrijp hoe te om document auteursrecht te vormen die auteurs van AEM toestaan om documenten uit te geven en te publiceren gebruikend Microsoft Word of Google Docs.
 
-Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html) voor volledige details van vestiging document creatie.
+Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=nl-NL) voor volledige details van vestiging document creatie.
 
 ## Aan de slag met het ontwerpen van documenten
 

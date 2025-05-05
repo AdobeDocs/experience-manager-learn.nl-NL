@@ -21,7 +21,7 @@ ht-degree: 0%
 Met Reader Extensions kunt u gebruiksrechten op PDF-documenten manipuleren. Gebruiksrechten hebben betrekking op functionaliteit die wel beschikbaar is in Acrobat, maar niet in Adobe Reader. De functionaliteit die wordt beheerd door Reader Extensions omvat de mogelijkheid om opmerkingen toe te voegen aan een document, formulieren in te vullen en het document op te slaan. PDF-documenten waaraan gebruiksrechten zijn toegevoegd, worden documenten met ingeschakelde rechten genoemd. Een gebruiker die een PDF-document met ingeschakelde rechten opent in Adobe Reader, kan de bewerkingen uitvoeren die voor dat document zijn ingeschakeld.
 
 Voor dit gebruiksgeval moeten we het volgende doen:
-* [ voeg het certificaat van de Uitbreidingen van Reader ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) aan `fd-service` gebruiker toe.
+* [ voeg het certificaat van de Uitbreidingen van Reader ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=nl-NL) aan `fd-service` gebruiker toe.
 
 ## Aangepaste OSGi-service maken
 

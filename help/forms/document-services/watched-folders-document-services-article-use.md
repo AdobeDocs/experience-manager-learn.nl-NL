@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Een beheerder kan een netwerkmap, ook wel een gecontroleerde map genoemd, zo configureren dat wanneer een gebruiker een bestand (zoals een PDF-bestand) in de Gecontroleerde map plaatst, een vooraf geconfigureerde workflow, service of scriptbewerking wordt gestart om het toegevoegde bestand te verwerken. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het resulterende bestand opgeslagen in een opgegeven uitvoermap. Voor meer informatie over werkschema, de dienst, en manuscript.
 
-Meer over het creëren van een gelete op omslag leren, [ klik hier ](https://helpx.adobe.com/experience-manager/6-4/forms/using/Creating-Configure-watched-folder.html)
+Meer over het creëren van een gelete op omslag leren, [ klik hier ](https://helpx.adobe.com/nl/experience-manager/6-4/forms/using/Creating-Configure-watched-folder.html)
 
 Gecontroleerde mappen worden gebruikt om documenten te genereren in de batchmodus. Met het gecontroleerde mapmechanisme kunt u interactieve communicatie voor het afdrukkanaal genereren of de uitvoerservice gebruiken om gegevens samen te voegen met de sjabloon.
 
@@ -28,7 +28,7 @@ In dit artikel wordt beschreven hoe gegevens via het mechanisme voor gecontrolee
 
 De dienst van de output is de dienst OSGi die deel van de Diensten van het Document van AEM uitmaakt. De uitvoerservice ondersteunt verschillende uitvoerindelingen en functies voor uitvoerontwerp van AEM Forms Designer. De uitvoerservice kan XFA-sjablonen en XML-gegevens converteren om afdrukdocumenten in verschillende indelingen te genereren.
 
-Meer over de outputdienst leren, [ gelieve te klikken hier ](https://helpx.adobe.com/aem-forms/6/output-service.html).
+Meer over de outputdienst leren, [ gelieve te klikken hier ](https://helpx.adobe.com/nl/aem-forms/6/output-service.html).
 Volg onderstaande stappen om een gecontroleerde map op uw systeem in te stellen:
 * [ Download en haal de inhoud van het ZIP dossier ](assets/outputservicewatchedfolderkt.zip) uit.Dit ZIP dossier bevat pakket voor het creëren van gecontroleerde omslag en steekproefdossiers om de outputdienst te testen gebruikend gecontroleerd omslagmechanisme
    * Windows-systeem

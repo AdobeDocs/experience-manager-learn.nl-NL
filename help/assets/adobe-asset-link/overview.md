@@ -55,7 +55,7 @@ Adobe Asset Link biedt InDesign direct linkondersteuning tussen Adobe Asset Link
 
 >[!NOTE]
 >
->Gebruik alleen Adobe Creative Cloud Enterprise ID of Federated ID. Zorg ervoor u [ AEM voor de Verbinding van Activa van Adobe ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) vormt.
+>Gebruik alleen Adobe Creative Cloud Enterprise ID of Federated ID. Zorg ervoor u [ AEM voor de Verbinding van Activa van Adobe ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) vormt.
 
 U kunt een element op een van de volgende manieren in uw InDesign-lay-out plaatsen:
 

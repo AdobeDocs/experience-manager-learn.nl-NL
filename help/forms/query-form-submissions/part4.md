@@ -24,7 +24,7 @@ Wanneer de **Beheerder** op ViewLink in de lijst van onderzoeksresultaten klikt,
 
 Er is een Prefill-service gebruikt om de gegevens die aan de BlobId zijn gekoppeld, op te halen van de Azure-portal.
 
-[ een afzonderlijk artikel op het prefilling van vorm met gegevens en gehechtheid is hier beschikbaar.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html)
+[ een afzonderlijk artikel op het prefilling van vorm met gegevens en gehechtheid is hier beschikbaar.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=nl-NL)
 
 ## Volgende stappen
 

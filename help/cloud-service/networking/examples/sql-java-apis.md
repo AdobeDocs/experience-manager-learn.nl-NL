@@ -35,7 +35,7 @@ Verzeker [ aangewezen ](../advanced-networking.md#advanced-networking) geavancee
 
 ## OSGi-configuratie
 
-Aangezien de geheimen niet in code moeten worden opgeslagen, zijn de SQL gebruikersbenaming en het wachtwoord van de verbinding best verstrekt via [ geheime OSGi configuratievariabelen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), plaats gebruikend AIO CLI, of Cloud Manager APIs.
+Aangezien de geheimen niet in code moeten worden opgeslagen, zijn de SQL gebruikersbenaming en het wachtwoord van de verbinding best verstrekt via [ geheime OSGi configuratievariabelen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=nl-NL#secret-configuration-values), plaats gebruikend AIO CLI, of Cloud Manager APIs.
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/com.adobe.aem.wknd.examples.core.connections.impl.MySqlExternalServiceImpl.cfg.json`
 

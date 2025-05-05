@@ -28,7 +28,7 @@ Volg onderstaande instructies om deze mogelijkheid op uw server te testen
 * [ Download en stel de setvalue bundel ](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) op. Dit is de aangepaste OSGI-bundel waarmee eigenschappen van metagegevens worden ingesteld.
 > in AEM Forms 6.5 en boven dit vermogen is beschikbaar uit de doos zoals [ hier ](form-data-model-service-as-step-in-aem65-workflow-video-use.md) beschrijft
 
-* Opstelling tomcat met het dossier SampleRest.war zoals die [ hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html) wordt beschreven.Het oorlogsdossier in Tomcat wordt opgesteld heeft de code om de het creditscore van de aanvrager terug te keren. De creditscore is een willekeurig getal tussen 200 en 800
+* Opstelling tomcat met het dossier SampleRest.war zoals die [ hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html?lang=nl-NL) wordt beschreven.Het oorlogsdossier in Tomcat wordt opgesteld heeft de code om de het creditscore van de aanvrager terug te keren. De creditscore is een willekeurig getal tussen 200 en 800
 
 * [ de Invoer de activa in AEM gebruikend pakketmanager ](assets/invoke-fdm-as-service-step.zip).Het pakket bevat het volgende:
 

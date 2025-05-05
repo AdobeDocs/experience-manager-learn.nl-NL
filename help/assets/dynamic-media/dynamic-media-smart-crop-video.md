@@ -26,4 +26,4 @@ Dynamic Media Smart Crop voor video gebruikt Adobe Sensei om op intelligente wij
 
 >[!NOTE]
 >
->In de bovenstaande video wordt ervan uitgegaan dat uw AEM-service wordt uitgevoerd in de Dynamic Media S7-modus. [ de Instructies bij vestiging AEM met Dynamische Media kunnen hier worden gevonden.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)
+>In de bovenstaande video wordt ervan uitgegaan dat uw AEM-service wordt uitgevoerd in de Dynamic Media S7-modus. [ de Instructies bij vestiging AEM met Dynamische Media kunnen hier worden gevonden.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=nl-NL)

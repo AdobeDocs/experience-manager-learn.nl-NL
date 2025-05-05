@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Deze gids zal u door het creëren van een stap van het douaneproces lopen om lijstvariabelen van het typeLijst van de Serie met gehechtheid en gehechtheidsnamen in Adobe Experience Manager te bevolken. Deze variabelen zijn essentieel voor de workflowcomponent E-mail verzenden.
 
-Als u met het creëren van een bundel OSGi onbekend bent, volg deze [ instructies ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en).
+Als u met het creëren van een bundel OSGi onbekend bent, volg deze [ instructies ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=nl-NL).
 
 De code in de stap van het douaneproces voert de volgende acties uit:
 

@@ -93,4 +93,4 @@ Tot slot is het gebruik van Stijlsystemen meer kunst dan wetenschap. Zoals wij h
 
 Voor meer informatie, controleer ons [ Succes Webinar van de Klant ](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) met Will Brisbane en Joseph Van Buskirk.
 
-Leer meer over strategie en gedachte leiderschap bij de [ hub van het Succes van de Klant ](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html).
+Leer meer over strategie en gedachte leiderschap bij de [ hub van het Succes van de Klant ](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html?lang=nl-NL).

@@ -31,7 +31,7 @@ Wanneer aangepaste configuraties NIET aanwezig zijn, worden de standaardwaarden 
 
 ![ Standaard caching gedrag ](../assets/how-to/aem-publish-default-cache-headers.png){width="800" zoomable="yes"}
 
-Herzie [ AEM publiceren - Het leven van het standaardgeheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/publish.html#cdn-cache-life) en [ Auteur van AEM - Het leven van het standaardgeheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/author.html?#default-cache-life) voor meer informatie.
+Herzie [ AEM publiceren - Het leven van het standaardgeheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/publish.html?lang=nl-NL#cdn-cache-life) en [ Auteur van AEM - Het leven van het standaardgeheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/author.html?lang=nl-NL&#default-cache-life) voor meer informatie.
 
 Samengevat plaatst AEM as a Cloud Service de meeste inhoudstypen (HTML, JSON, JS, CSS en Assets) in AEM Publish en een aantal inhoudstypen (JS, CSS) in AEM Author.
 
@@ -99,7 +99,7 @@ Om het Webbrowser en CDN geheim voorgeheugenleven van het **inhoudstype van HTML
    ```
 
    De gastheerdossiers in `dispatcher/src/conf.d/enabled_vhosts` folder zijn **symlinks** aan de dossiers in `dispatcher/src/conf.d/available_vhosts` folder, zodat zorg ervoor om tot symlinks te leiden als niet aanwezig.
-1. Stel de vhost veranderingen in het gewenste milieu van AEM as a Cloud Service op gebruikend [ Cloud Manager - de Pijpleiding van Config van de Rij van het Web ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) of [ RDE bevelen ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
+1. Stel de vhost veranderingen in het gewenste milieu van AEM as a Cloud Service op gebruikend [ Cloud Manager - de Pijpleiding van Config van de Rij van het Web ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=nl-NL&#web-tier-config-pipelines) of [ RDE bevelen ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=nl-NL#deploy-apache-or-dispatcher-configuration).
 
 Als u echter verschillende waarden wilt hebben voor de webbrowser en de levensduur van de CDN-cache, kunt u de header `Surrogate-Control` in het bovenstaande voorbeeld gebruiken. Op dezelfde manier kunt u de header `Expires` gebruiken om de cache op een bepaalde datum en tijd te laten verlopen. Met de kenmerken `stale-while-revalidate` en `stale-if-error` kunt u ook de manier bepalen waarop de status van de reactie-inhoud in de schaal wordt verwerkt. Het project van AEM WKND heeft de de staatsbehandeling van de a [ verwijzingssteen ](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L150-L155) CDN geheim voorgeheugenconfiguratie.
 

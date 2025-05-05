@@ -24,7 +24,7 @@ Dynamische media Viewer-verbeteringen in AEM 6.4 zijn onder andere de toevoeging
 
 >[!NOTE]
 >
->Video gaat ervan uit dat uw AEM-instantie wordt uitgevoerd in de Dynamic Media S7-modus. [ de Instructies bij vestiging AEM met Dynamische Media kunnen hier worden gevonden.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>Video gaat ervan uit dat uw AEM-instantie wordt uitgevoerd in de Dynamic Media S7-modus. [ de Instructies bij vestiging AEM met Dynamische Media kunnen hier worden gevonden.](https://helpx.adobe.com/nl/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## Panoramische en panoramische VR-viewer
 
@@ -65,7 +65,7 @@ Bij horizontale stalen zijn de stalen soms pas zichtbaar wanneer de gebruiker de
  </tbody>
 </table>
 
-[ Vormend Dynamische Media op wijze Scene7 ](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[ Vormend Dynamische Media op wijze Scene7 ](https://helpx.adobe.com/nl/experience-manager/6-5/assets/using/config-dms7.html)
 
 [ Vormend Dynamische Media op Hybride wijze ](https://helpx.adobe.com/nl/experience-manager/6-5/assets/using/config-dynamic.html)
 

@@ -31,7 +31,7 @@ In deze zelfstudie leert u hoe u een eenvoudig gebruik van het opslaan van formu
 
 Voor het implementeren van het bovenstaande gebruiksgeval in AEM Forms CS hebt u het volgende nodig
 
-* [ AEM Forms CS wolk klaar instantie ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=en#set-up-aem-author-instance)
+* [ AEM Forms CS wolk klaar instantie ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=nl-NL#set-up-aem-author-instance)
 * [ Azure poortrekening ](https://portal.azure.com/)
 
 

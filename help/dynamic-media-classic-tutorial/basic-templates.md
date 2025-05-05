@@ -63,8 +63,8 @@ Omdat de BasisMalplaatjes typisch in Photoshop worden ontworpen maar via een URL
 
 De projecten van het malplaatje kunnen vrij eenvoudig of uiterst complex afhankelijk van de bedrijfsregels en de behoeften van de toepassing zijn. De basis Malplaatjes worden geroepen van de Server van het Beeld, echter wegens de flexibiliteit van het milieu van Dynamic Media Classic, kunt u malplaatjes binnen andere malplaatjes zelfs nesten, toestaand u om vrij complexe beelden tot stand te brengen die door algemeen genoemde variabelen kunnen worden verbonden.
 
-- Leer meer over [ Basisprincipes van het Malplaatje ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html).
-- Leer hoe te om a [ BasisMalplaatje ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template) tot stand te brengen.
+- Leer meer over [ Basisprincipes van het Malplaatje ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html?lang=nl-NL).
+- Leer hoe te om a [ BasisMalplaatje ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html?lang=nl-NL#creating_a_template) tot stand te brengen.
 
 ## Een basissjabloon maken
 
@@ -186,7 +186,7 @@ Om een effect toe te voegen, klik **voeg Effect** toe, en kies een effect van he
 
 Schaduweffecten worden horizontaal of verticaal buiten de laag verschoven, terwijl de gloedeffecten in alle richtingen gelijkmatig worden toegepast. De binneneffecten worden toegepast op de dekkende gedeelten van de laag, terwijl de buiteneffecten alleen van toepassing zijn op de transparante gebieden.
 
-Leer meer over [ het Toevoegen van de Gevolgen van de Laag ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#using-shadow-and-glow-effects-on-layers).
+Leer meer over [ het Toevoegen van de Gevolgen van de Laag ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html?lang=nl-NL#using-shadow-and-glow-effects-on-layers).
 
 ### Parameters toevoegen
 
@@ -223,7 +223,7 @@ Dit is de workflow voor het maken van parameters:
 >
 >Kan geen parameter toevoegen omdat u het bezit niet ziet? Verander enkel het bezit van de laag van zijn gebrek (door zich te bewegen, resizing, te verbergen, enz.). Nu moet u die eigenschap zichtbaar maken.
 
-Leer meer over [ Parameters van het Malplaatje ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html).
+Leer meer over [ Parameters van het Malplaatje ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html?lang=nl-NL).
 
 ## Een sjabloon maken met tekstlagen
 
@@ -312,7 +312,7 @@ Je kunt de uitdrukking Chocolate Mint Sandal zien — dat is de tekst zelf.
 - U ziet een RGB-waarde: \red56\green53\blue4 — dit is de tekstkleur.
 - Hoewel de tekengrootte 20 is, ziet u het getal 20 niet. U ziet echter wel een opdracht \fs40 — om een of andere oneven reden meet RTF lettertypen als halve punten. \fs40 is dus de tekengrootte!
 
-U hebt genoeg informatie om uw parameters tot stand te brengen, nochtans is er een volledige verwijzing van alle RTF bevelen in de documentatie van de Serving van het Beeld. Bezoek het [ Beeld Serend Documentatie ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html#concept-0d3136db7f6f49668274541cd4b6364c).
+U hebt genoeg informatie om uw parameters tot stand te brengen, nochtans is er een volledige verwijzing van alle RTF bevelen in de documentatie van de Serving van het Beeld. Bezoek het [ Beeld Serend Documentatie ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html?lang=nl-NL#concept-0d3136db7f6f49668274541cd4b6364c).
 
 #### Parameters toevoegen aan tekstlagen
 
@@ -330,7 +330,7 @@ Hier volgen de stappen voor het toevoegen van parameters aan tekstlagen.
 >
 >Als u parameters wilt toevoegen aan de tekstkleur, voegt u afzonderlijk parameters voor rood, groen en blauw toe. Als de RTF bijvoorbeeld `\red56\green53\blue46` is, voegt u afzonderlijke parameters rood, groen en blauw toe voor de waarden 56, 53 en 46. In URL, zou u de kleur veranderen door alle drie te roepen: `&$red=56&$green=53&$blue=46`.
 
-Leer hoe te [ Dynamische Parameters van de Tekst ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html#creating-dynamic-text-parameters) creëren.
+Leer hoe te [ Dynamische Parameters van de Tekst ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html?lang=nl-NL#creating-dynamic-text-parameters) creëren.
 
 ## Sjabloon-URL&#39;s publiceren en maken
 
@@ -344,7 +344,7 @@ Er is niets bijzonders aan een Voorinstelling voor afbeelding voor een sjabloon.
 
 U zult moeten in werking stellen publiceert om uw veranderingen te zien die levend aan de Server van het Beeld worden gebracht. Houd rekening met wat u moet publiceren: de verschillende lagen met afbeeldingselementen, de lettertypen voor dynamische tekst en de sjabloon zelf. Net als andere rijke media-elementen van Dynamic Media Classic, zoals Afbeeldingssets en Draaisets, is een standaardsjabloon een kunstmatige constructie. Het is een regelitem in de database dat verwijst naar de afbeeldingen en fonts met behulp van een reeks opdrachten in de afbeeldingsservice. Zo wanneer u het malplaatje publiceert, allen u doet bijwerkt gegevens over de Server van het Beeld.
 
-Leer meer over [ het Publiceren van Uw Malplaatje ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/publishing-templates.html).
+Leer meer over [ het Publiceren van Uw Malplaatje ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/publishing-templates.html?lang=nl-NL).
 
 ### Sjabloon-URL-constructie
 

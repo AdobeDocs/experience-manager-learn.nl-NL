@@ -30,7 +30,7 @@ ht-degree: 0%
       * [ Adobe Developer Console ](https://developer.adobe.com/console/)
 
      >[!NOTE]
-     >U moet over de juiste machtigingen beschikken om omgevingen in gegevensverzameling te ontwikkelen, goed te keuren, te Publish, te beheren en te beheren. Als u geen van deze stappen kunt uitvoeren omdat de gebruikersinterfaceopties niet beschikbaar zijn, vraagt u de beheerder van het Experience Cloud om toegang. Voor meer informatie over markeringen toestemmingen, [ zie de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+     >U moet over de juiste machtigingen beschikken om omgevingen in gegevensverzameling te ontwikkelen, goed te keuren, te Publish, te beheren en te beheren. Als u geen van deze stappen kunt uitvoeren omdat de gebruikersinterfaceopties niet beschikbaar zijn, vraagt u de beheerder van het Experience Cloud om toegang. Voor meer informatie over markeringen toestemmingen, [ zie de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=nl-NL).
 
 * **browser van Chrome uitbreidingen**
    * Adobe Experience Cloud-foutopsporing (https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
@@ -75,7 +75,7 @@ Een eigenschap is een container die u vult met extensies, regels, gegevenselemen
 1. Zorg ervoor dat u zich in de juiste organisatie bevindt en ga verder met het maken van een eigenschap voor tags.
    ![ Experience Cloud - markeringen ](assets/using-launch-adobe-io/launch-create-property.png)
 
-   *voor meer informatie bij het creëren van eigenschappen, zie [ een Bezit ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property) in de productdocumentatie creëren.*
+   *voor meer informatie bij het creëren van eigenschappen, zie [ een Bezit ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=nl-NL#create-or-configure-a-property) in de productdocumentatie creëren.*
 1. Klik op het **Nieuwe Bezit** knoop
 1. Verstrek een naam voor uw bezit (bijvoorbeeld, *AEM Zelfstudie van het Doel*)
 1. Als domein, ga *localhost.com* in aangezien dit het domein is waar de WKND demo plaats op loopt. Hoewel het &quot;*gebied van het Domein*&quot;wordt vereist, zal het markeringsbezit op om het even welk domein werken waar het wordt uitgevoerd. Het primaire doel van dit gebied is menuopties in de Bouwer van de Regel vooraf in te vullen.
@@ -87,7 +87,7 @@ Een eigenschap is een container die u vult met extensies, regels, gegevenselemen
 
 #### Doelextensie toevoegen
 
-De Adobe Target-extensie ondersteunt client-side implementaties met de Target JavaScript SDK voor het moderne web, `at.js` . De klanten nog die de oudere bibliotheek van het Doel gebruiken, `mbox.js`, [ zouden aan at.js ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/upgrading-from-atjs-1x-to-atjs-20.html) moeten bevorderen om markeringen te gebruiken.
+De Adobe Target-extensie ondersteunt client-side implementaties met de Target JavaScript SDK voor het moderne web, `at.js` . De klanten nog die de oudere bibliotheek van het Doel gebruiken, `mbox.js`, [ zouden aan at.js ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/upgrading-from-atjs-1x-to-atjs-20.html?lang=nl-NL) moeten bevorderen om markeringen te gebruiken.
 
 De doelextensie bestaat uit twee hoofdonderdelen:
 
@@ -137,7 +137,7 @@ De doelextensie bestaat uit twee hoofdonderdelen:
 
 >[!NOTE]
 >
-> Verleen de integratie van Adobe Developer de toegang tot uitgezochte werkruimten met de aangewezen [ rol om een centraal team toe te staan om API-gedreven veranderingen in slechts een paar werkruimten ](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html) aan te brengen.
+> Verleen de integratie van Adobe Developer de toegang tot uitgezochte werkruimten met de aangewezen [ rol om een centraal team toe te staan om API-gedreven veranderingen in slechts een paar werkruimten ](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html?lang=nl-NL) aan te brengen.
 
 1. Maak IMS-integratie in AEM met behulp van referenties van Adobe Developer. (01:12 t/m 03:55)
 2. Maak een eigenschap in Gegevensverzameling. (Bedekte [ hierboven ](#create-launch-property))

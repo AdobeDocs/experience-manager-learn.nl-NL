@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Aangepaste processtap
 
-Er is een aangepaste processtap geïmplementeerd om het ZIP-bestand te maken dat de formulierbijlagen bevat. Als u niet vertrouwd met het creëren van een bundel OSGi bent, gelieve [ deze instructies ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en) te volgen.
+Er is een aangepaste processtap geïmplementeerd om het ZIP-bestand te maken dat de formulierbijlagen bevat. Als u niet vertrouwd met het creëren van een bundel OSGi bent, gelieve [ deze instructies ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=nl-NL) te volgen.
 
 De code in de stap van het douaneproces doet het volgende:
 

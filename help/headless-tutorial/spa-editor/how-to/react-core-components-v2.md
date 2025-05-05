@@ -26,7 +26,7 @@ AEM verstrekt [ AEM React Bewerkbare Componenten v2 ](https://www.npmjs.com/pack
 
 + [ npm module ](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 + [ het project van Github ](https://github.com/adobe/aem-react-editable-components)
-+ [ documentatie van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html)
++ [ documentatie van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html?lang=nl-NL)
 
 
 Raadpleeg de technische documentatie voor meer informatie en codevoorbeelden voor AEM React Editable Components v2:
@@ -37,7 +37,7 @@ Raadpleeg de technische documentatie voor meer informatie en codevoorbeelden voo
 
 ## AEM-pagina&#39;s
 
-AEM React Editable Components werkt met zowel de Redacteur van het KUUROORD als de Verre Reactie apps van het KUUROORD. De inhoud die de editable componenten bevolkt van het Reageren, moet via de pagina&#39;s van AEM worden blootgesteld die de [ component van de Pagina van het KUUROORD ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html) uitbreiden. De componenten van AEM, die kaarten aan editable componenten van het Reageren, moeten AEM [ kader van de Exporteur van de Component ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) uitvoeren - zoals [ de Componenten van WCM van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
+AEM React Editable Components werkt met zowel de Redacteur van het KUUROORD als de Verre Reactie apps van het KUUROORD. De inhoud die de editable componenten bevolkt van het Reageren, moet via de pagina&#39;s van AEM worden blootgesteld die de [ component van de Pagina van het KUUROORD ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html?lang=nl-NL) uitbreiden. De componenten van AEM, die kaarten aan editable componenten van het Reageren, moeten AEM [ kader van de Exporteur van de Component ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html?lang=nl-NL) uitvoeren - zoals [ de Componenten van WCM van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL).
 
 
 ## Afhankelijkheden

@@ -29,7 +29,7 @@ In AEM as a Cloud Service biedt het beheren van geheimen via OSGi-services een s
 
 ### OSGi service implementation
 
-Wij zullen door de ontwikkeling van de douaneOSGi dienst lopen die [ geheimen van configuraties OSGi ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values) blootstelt.
+Wij zullen door de ontwikkeling van de douaneOSGi dienst lopen die [ geheimen van configuraties OSGi ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values) blootstelt.
 
 De implementatie leest geheimen van de configuratie OSGi via de `@Activate` methode en stelt hen door de `getSecret(String secretName)` methode bloot. U kunt ook discrete methoden maken, zoals `getApiKey()` voor elk geheim, maar voor deze aanpak is meer onderhoud vereist omdat geheimen worden toegevoegd of verwijderd.
 
@@ -80,7 +80,7 @@ public interface SecretsManager {
 
 ## Toewijzing van geheimen aan configuratie OSGi
 
-Om geheime waarden in de dienst bloot te stellen OSGi, hen in kaart brengen aan configuraties OSGi gebruikend [ OSGi geheime configuratiewaarden ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values). Definieer de eigenschapnaam OSGi als sleutel om de geheime waarde van de `SecretsManager.getSecret()` methode terug te winnen.
+Om geheime waarden in de dienst bloot te stellen OSGi, hen in kaart brengen aan configuraties OSGi gebruikend [ OSGi geheime configuratiewaarden ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values). Definieer de eigenschapnaam OSGi als sleutel om de geheime waarde van de `SecretsManager.getSecret()` methode terug te winnen.
 
 Definieer de geheimen in het OSGi-configuratiebestand `/apps/example/osgiconfig/config/com.example.core.util.impl.SecretsManagerImpl.cfg.json` in uw AEM Maven-project. Elke eigenschap vertegenwoordigt een geheim dat in AEM wordt weergegeven, met de waarde ingesteld via Cloud Manager. De sleutel is de OSGi bezitsnaam, die wordt gebruikt om de geheime waarde van de `SecretsManager` dienst terug te winnen.
 
@@ -151,7 +151,7 @@ public class ExampleSecretConsumerImpl implements ExampleSecretConsumer {
 
 Met de dienst OSGi en configuratie op zijn plaats, is de definitieve stap de geheime waarden in Cloud Manager te plaatsen.
 
-De waarden voor geheimen kunnen via [ Cloud Manager API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables) of, meer algemeen, via [ Cloud Manager UI ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables#overview) worden geplaatst. Een geheime variabele toepassen via de gebruikersinterface van Cloud Manager:
+De waarden voor geheimen kunnen via [ Cloud Manager API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables) of, meer algemeen, via [ Cloud Manager UI ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables#overview) worden geplaatst. Een geheime variabele toepassen via de gebruikersinterface van Cloud Manager:
 
 ![ Cloud Manager Secrets Configuratie ](./assets/secrets/cloudmanager-configuration.png)
 

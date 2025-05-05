@@ -29,7 +29,7 @@ De Content Fragment Console in AEM (Adobe Experience Manager) is een gebruikersi
 
 ![ de Console van Fragmenten van de Inhoud ](./assets/overview/cfc.png)
 
-[ de Console van de Fragmenten van de Inhoud van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) is verlengbare UI voor het van een lijst maken van en het beheren van inhoudsfragmenten. [ de uitbreidingen van de Console van het Fragment van de Inhoud van AEM worden gecreeerd ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) gebruikend het `@adobe/aem-cf-admin-ui-ext-tpl` malplaatje van App Builder.
+[ de Console van de Fragmenten van de Inhoud van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=nl-NL) is verlengbare UI voor het van een lijst maken van en het beheren van inhoudsfragmenten. [ de uitbreidingen van de Console van het Fragment van de Inhoud van AEM worden gecreeerd ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) gebruikend het `@adobe/aem-cf-admin-ui-ext-tpl` malplaatje van App Builder.
 
 De volgende extensiepunten voor de Content Fragments Console zijn beschikbaar:
 

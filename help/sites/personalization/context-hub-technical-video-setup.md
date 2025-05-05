@@ -39,7 +39,7 @@ Als u de ContextHub-functies wilt inschakelen en een koppeling wilt maken naar d
 
 ## De Configuratie van de plaats en Segmenten ContextHub {#site-configuration-and-contexthub-segments}
 
-ContextHub omvat een segmenteringsmotor die segmenten beheert en bepaalt welke segmenten voor de huidige context worden opgelost. Verschillende segmenten zijn gedefinieerd. U kunt Javascript API gebruiken om [ bepaalde opgeloste segmenten ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments) te bepalen. Laat de segmenten ContextHub voor uw plaats onder [[!UICONTROL Configuration Browser] toe ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html).
+ContextHub omvat een segmenteringsmotor die segmenten beheert en bepaalt welke segmenten voor de huidige context worden opgelost. Verschillende segmenten zijn gedefinieerd. U kunt Javascript API gebruiken om [ bepaalde opgeloste segmenten ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments) te bepalen. Laat de segmenten ContextHub voor uw plaats onder [[!UICONTROL Configuration Browser] toe ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=nl-NL).
 
 ## Segmenten maken {#create-segments}
 
@@ -53,7 +53,7 @@ Het toewijzen van de de configuratiepad van de Wolk, segmentatiepad en weg Conte
 
 U kunt meer over ContextHub en segmentatie hieronder lezen:
 
-* [ ContextHub ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub.html)
-* [ Toevoegend de Hub van de Context aan pagina en het Toegang hebben tot Sporen ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html)
-* [Inzicht in segmentering](https://helpx.adobe.com/experience-manager/6-5/sites/classic-ui-authoring/using/classic-personalization-campaigns-segmentation.html)
-* [ het Vormen Segmentatie met ContextHub ](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/segmentation.html)
+* [ ContextHub ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/contexthub.html)
+* [ Toevoegend de Hub van de Context aan pagina en het Toegang hebben tot Sporen ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/ch-adding.html)
+* [Inzicht in segmentering](https://helpx.adobe.com/nl/experience-manager/6-5/sites/classic-ui-authoring/using/classic-personalization-campaigns-segmentation.html)
+* [ het Vormen Segmentatie met ContextHub ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/segmentation.html)

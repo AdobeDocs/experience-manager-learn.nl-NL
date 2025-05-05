@@ -83,7 +83,7 @@ Verklaar de Vraag wordt gevestigd bij:
 
 ![ Foutopsporing QueryBuilder ](./assets/other-tools/query-debugger.png)
 
-Foutopsporing van QueryBuilder is web-based hulpmiddel dat u helpt onderzoeksvragen zuiveren en begrijpen gebruikend de syntaxis van AEM [ QueryBuilder ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
+Foutopsporing van QueryBuilder is web-based hulpmiddel dat u helpt onderzoeksvragen zuiveren en begrijpen gebruikend de syntaxis van AEM [ QueryBuilder ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=nl-NL).
 
 Foutopsporing van QueryBuilder bevindt zich in:
 

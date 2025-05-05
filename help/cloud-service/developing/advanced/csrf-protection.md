@@ -34,7 +34,7 @@ Als een CSRF-token niet wordt verzonden met een POST-, PUT- of DELETE-aanvraag, 
 [INFO][POST /path/to/aem/endpoint HTTP/1.1][com.adobe.granite.csrf.impl.CSRFFilter] doFilter: the provided CSRF token is invalid
 ```
 
-Zie de [ documentatie voor meer details over de bescherming van CSRF van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html).
+Zie de [ documentatie voor meer details over de bescherming van CSRF van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=nl-NL).
 
 
 ## CSRF-clientbibliotheek

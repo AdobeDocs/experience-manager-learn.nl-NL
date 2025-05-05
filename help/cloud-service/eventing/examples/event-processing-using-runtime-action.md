@@ -162,7 +162,7 @@ Om de hierboven vermelde taken uit te voeren, ontwikkelen de volgende modules va
   ...
   ```
 
-  Verwijs naar [ zelfstudie van de Referenties van de Dienst van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en) om meer over het te leren. Ook, de [ Dossiers van de Configuratie van App Builder ](https://developer.adobe.com/app-builder/docs/guides/configuration/) voor het beheren van geheimen en actieparameters.
+  Verwijs naar [ zelfstudie van de Referenties van de Dienst van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=nl-NL) om meer over het te leren. Ook, de [ Dossiers van de Configuratie van App Builder ](https://developer.adobe.com/app-builder/docs/guides/configuration/) voor het beheren van geheimen en actieparameters.
 
 - In de module `src/dx-excshell-1/actions/aem-event-processor/storeEventData.js` worden de oorspronkelijke gebeurtenisgegevens, het activiteitenbericht en eventuele wijzigingsgegevens opgeslagen in Adobe I/O Runtime.
 

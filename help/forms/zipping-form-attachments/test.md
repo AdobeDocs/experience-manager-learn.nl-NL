@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Benodigde stappen om de twee naderingen te testen
 
-* Vorm [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=en#configuring-the-mail-service) de Dienst van de Post van 0&rbrace; Dag CQ om e-mail van de server van AEM Forms te verzenden
+* Vorm [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=nl-NL#configuring-the-mail-service) de Dienst van de Post van 0&rbrace; Dag CQ om e-mail van de server van AEM Forms te verzenden
 * Stel de [ formattachments ](assets/formattachments.formattachments.core-1.0-SNAPSHOT.jar) bundel op gebruikend [ felix Webconsole ](http://localhost:4502/system/console/bundles)
 
 ## ZIP-bestand verzenden als e-mailbijlage

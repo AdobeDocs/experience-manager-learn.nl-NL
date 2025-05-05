@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Geoptimaliseerde afbeeldingen met AEM Headless {#images-with-aem-headless}
 
-De beelden zijn een kritisch aspect van [ het ontwikkelen van rijke, dwingende AEM headless ervaringen ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html). AEM Headless ondersteunt het beheer van afbeeldingselementen en de geoptimaliseerde levering ervan.
+De beelden zijn een kritisch aspect van [ het ontwikkelen van rijke, dwingende AEM headless ervaringen ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=nl-NL). AEM Headless ondersteunt het beheer van afbeeldingselementen en de geoptimaliseerde levering ervan.
 
 Inhoudsfragmenten die worden gebruikt in AEM Headless-inhoudsmodellering, verwijzen vaak naar afbeeldingselementen die zijn bedoeld voor weergave in de headless-ervaring. AEM GraphQL-query&#39;s kunnen worden geschreven om URL&#39;s aan te bieden voor afbeeldingen op basis van de locatie waar naar de afbeelding wordt verwezen.
 
@@ -30,9 +30,9 @@ Het type `ImageRef` heeft vier URL-opties voor inhoudsverwijzingen:
 + `_dynamicUrl` is de URL voor levering van afbeeldingselementen die voor het web zijn geoptimaliseerd.
    + `_dynamicUrl` bevat geen AEM-oorsprong. Het domein (AEM-auteur of AEM-publicatieservice) moet daarom door de clienttoepassing worden opgegeven.
 + `_authorUrl` is de volledige URL naar het afbeeldingselement op AEM Author
-   + [ de Auteur van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) kan worden gebruikt om een voorproefervaring van de hoofdloze toepassing te verstrekken.
+   + [ de Auteur van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=nl-NL) kan worden gebruikt om een voorproefervaring van de hoofdloze toepassing te verstrekken.
 + `_publishUrl` is de volledige URL naar het afbeeldingselement in AEM Publish
-   + [ AEM publiceert ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) is typisch waar de productieleiding van de hoofdloze toepassing beelden van toont.
+   + [ AEM publiceert ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=nl-NL) is typisch waar de productieleiding van de hoofdloze toepassing beelden van toont.
 
 `_dynamicUrl` is de aanbevolen URL voor het leveren van afbeeldingselementen en moet, waar mogelijk, het gebruik van `_path` , `_authorUrl` en `_publishUrl` vervangen.
 
@@ -50,7 +50,7 @@ Het type `ImageRef` heeft vier URL-opties voor inhoudsverwijzingen:
 
 Verzeker het gebied van het Fragment van de Inhoud dat de beeldverwijzing bevat van het __gegevenstype van de inhoudsverwijzing__ is.
 
-De types van gebied worden herzien in het [ Model van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html), door het gebied te selecteren, en het __3&rbrace; lusje van Eigenschappen &lbrace;op het recht te inspecteren.__
+De types van gebied worden herzien in het [ Model van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html?lang=nl-NL), door het gebied te selecteren, en het __3&rbrace; lusje van Eigenschappen &lbrace;op het recht te inspecteren.__
 
 ![ Model van het Fragment van de Inhoud met inhoudsverwijzing naar een beeld ](./assets/images/content-fragment-model.jpeg)
 

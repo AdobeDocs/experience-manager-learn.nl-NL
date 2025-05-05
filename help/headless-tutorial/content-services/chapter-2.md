@@ -28,7 +28,7 @@ In dit hoofdstuk wordt beschreven hoe u modellen van inhoudsfragmenten kunt insc
 
 ## Modellen van inhoudsfragmenten inschakelen
 
-De Modellen van het Fragment van de inhoud **moeten** worden toegelaten via **[AEM [!UICONTROL Configuration Browser] ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)**.
+De Modellen van het Fragment van de inhoud **moeten** worden toegelaten via **[AEM [!UICONTROL Configuration Browser] ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=nl-NL)**.
 
 Als de Modellen van het Fragment van de Inhoud **&#x200B;**&#x200B;niet &lbrace;voor een configuratie worden toegelaten, **[!UICONTROL Create]>[!UICONTROL Content Fragment]** knoop zal niet voor de relevante AEM configuratie verschijnen.
 
@@ -40,7 +40,7 @@ Als de Modellen van het Fragment van de Inhoud **&#x200B;**&#x200B;niet &lbrace;
 >
 >Wanneer de `global` -configuratie wordt gebruikt, geldt de configuratie voor alle inhoud en hoeft `cq:conf` niet te worden ingesteld.
 >
->Zie de [[!UICONTROL Configuration Browser] documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html) voor meer informatie.
+>Zie de [[!UICONTROL Configuration Browser] documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=nl-NL) voor meer informatie.
 
 1. Meld u aan bij AEM auteur als een gebruiker met de juiste machtigingen om de relevante configuratie te wijzigen.
    * Voor dit leerprogramma, kan de **admin** gebruiker worden gebruikt.

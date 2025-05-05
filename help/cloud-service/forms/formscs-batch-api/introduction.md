@@ -29,4 +29,4 @@ Als u de AEM Forms CS-batchbewerking-API wilt gebruiken, hebt u de volgende conf
 1. Batchgegevensopslagconfiguratie maken
 1. De batch-API uitvoeren
 
-Het wordt geadviseerd u vertrouwd met de [ API documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/batch-api.yaml?lang=en) alvorens te werk te gaan om dit leerprogramma te gebruiken.
+Het wordt geadviseerd u vertrouwd met de [ API documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/batch-api.yaml?lang=nl-NL) alvorens te werk te gaan om dit leerprogramma te gebruiken.

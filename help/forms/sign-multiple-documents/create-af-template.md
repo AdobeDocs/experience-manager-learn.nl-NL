@@ -25,7 +25,7 @@ Voor deze zelfstudie maken we een nieuwe adaptieve formuliersjabloon. Er is ook 
 
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=12&learn=on)
 
-[ u kunt dit artikel volgen om het proces te begrijpen om een adaptief vormmalplaatje en een paginacomponent tot stand te brengen ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en#storing-and-retrieving-form-data)
+[ u kunt dit artikel volgen om het proces te begrijpen om een adaptief vormmalplaatje en een paginacomponent tot stand te brengen ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=nl-NL#storing-and-retrieving-form-data)
 
 
 ## Assets

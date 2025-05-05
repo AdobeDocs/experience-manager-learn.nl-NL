@@ -49,4 +49,4 @@ Zodra het themaproject met succes wordt gebouwd, zijn uw bereid om de veranderin
 
 ## De wijzigingen verschuiven
 
-Als u met de veranderingen wordt tevredengesteld, kunt u de veranderingen in uw wolkeninstantie duwen gebruikend de [ front-end pijpleiding ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)
+Als u met de veranderingen wordt tevredengesteld, kunt u de veranderingen in uw wolkeninstantie duwen gebruikend de [ front-end pijpleiding ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)

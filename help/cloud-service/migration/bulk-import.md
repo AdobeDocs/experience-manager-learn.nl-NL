@@ -27,7 +27,7 @@ Met het gereedschap Bulk importeren in AEM as a Cloud Service kunnen beheerders 
 
 >[!TAB  de mening van Assets ]
 
-Leer hoe te om talrijke dossiers in AEM Assets in te voeren gebruikend de [ mening van Activa ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html) [ BulkInvoer ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html), met Dropbox die als leverancier van de de voorbeeldwolkenopslag voor een duidelijk en gemakkelijk-aan-volgt integratieproces dient.
+Leer hoe te om talrijke dossiers in AEM Assets in te voeren gebruikend de [ mening van Activa ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html?lang=nl-NL) [ BulkInvoer ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html?lang=nl-NL), met Dropbox die als leverancier van de de voorbeeldwolkenopslag voor een duidelijk en gemakkelijk-aan-volgt integratieproces dient.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on)
 
@@ -37,7 +37,7 @@ Leer hoe te om talrijke dossiers in AEM Assets in te voeren gebruikend de [ meni
 
 >[!TIP]
 >
-> De inputbronnen in deze video tonen slechts Azure Blob Storage en Amazon S3; nochtans blijven de beschikbare bronnen in tijd groeien. Voor een volledige lijst van gesteunde inputbronnen, te verwijzen gelieve naar de beschikbare opties in product, of [ documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
+> De inputbronnen in deze video tonen slechts Azure Blob Storage en Amazon S3; nochtans blijven de beschikbare bronnen in tijd groeien. Voor een volledige lijst van gesteunde inputbronnen, te verwijzen gelieve naar de beschikbare opties in product, of [ documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=nl-NL#bulk-upload).
 
 ## Bulkimport plannen
 

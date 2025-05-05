@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # AEM Headless en Target integreren
 
-Leer hoe u AEM Headless kunt integreren met Adobe Target door AEM Content Fragments te exporteren naar Adobe Target en deze te gebruiken voor het aanpassen van ervaringen zonder kop met Adobe Experience Platform Web SDK alloy.js. [ Reageer WKND App ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) wordt gebruikt om te onderzoeken hoe een gepersonaliseerde activiteit van het Doel gebruikend de Aanbiedingen van de Fragmenten van de Inhoud aan de ervaring kan worden toegevoegd, om een avontuur te bevorderen WKND.
+Leer hoe u AEM Headless kunt integreren met Adobe Target door AEM Content Fragments te exporteren naar Adobe Target en deze te gebruiken voor het aanpassen van ervaringen zonder kop met Adobe Experience Platform Web SDK alloy.js. [ Reageer WKND App ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=nl-NL) wordt gebruikt om te onderzoeken hoe een gepersonaliseerde activiteit van het Doel gebruikend de Aanbiedingen van de Fragmenten van de Inhoud aan de ervaring kan worden toegevoegd, om een avontuur te bevorderen WKND.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416585/?quality=12&learn=on)
 
@@ -42,13 +42,13 @@ In de zelfstudie worden de stappen beschreven die nodig zijn voor het instellen 
 
 Een Adobe IMS-configuratie die verificatie tussen AEM en Adobe Target vergemakkelijkt.
 
-Herzie [ de documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/integrations/target#adobe-target-cloud-service) voor geleidelijke instructies op hoe te om een configuratie van Adobe te creëren IMS.
+Herzie [ de documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/integrations/target#adobe-target-cloud-service) voor geleidelijke instructies op hoe te om een configuratie van Adobe te creëren IMS.
 
 ## Adobe Target Cloud Service{#adobe-target-cloud-service}
 
 In AEM wordt een Adobe Target Cloud Service gemaakt om het exporteren van inhoudsfragmenten naar Adobe Target te vergemakkelijken.
 
-Herzie [ de documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html) voor geleidelijke instructies op hoe te om een Adobe Target Cloud Service tot stand te brengen.
+Herzie [ de documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html?lang=nl-NL) voor geleidelijke instructies op hoe te om een Adobe Target Cloud Service tot stand te brengen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416499/?quality=12&learn=on)
 
@@ -164,7 +164,7 @@ De Adobe Target-activiteit die gericht is op de `wknd-adventure-promo` -locatie 
 
 ## Experience Platform DataStream-id{#datastream-id}
 
-Een [ identiteitskaart van Adobe Experience Platform DataStream ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html) wordt vereist voor AEM Headless apps om met Adobe Target in wisselwerking te staan gebruikend [ SDK van het Web van Adobe ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
+Een [ identiteitskaart van Adobe Experience Platform DataStream ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html?lang=nl-NL) wordt vereist voor AEM Headless apps om met Adobe Target in wisselwerking te staan gebruikend [ SDK van het Web van Adobe ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=nl-NL).
 
 +++Vergroten voor geleidelijke instructies
 
@@ -184,7 +184,7 @@ Een [ identiteitskaart van Adobe Experience Platform DataStream ](https://experi
       + Het milieu van het Doel kan in Adobe Target bij __Beleid > Gastheren__ worden geplaatst.
    + De Namespace van identiteitskaart van de Derde van het doel: __verlaten leeg__
 1. Selecteer __sparen__
-1. Op de rechterkant, kopieer identiteitskaart van 0&rbrace; Datastream __voor gebruik in [ Adobe Web SDK ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) configuratievraag.__
+1. Op de rechterkant, kopieer identiteitskaart van 0&rbrace; Datastream __voor gebruik in [ Adobe Web SDK ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=nl-NL) configuratievraag.__
 
 +++
 
@@ -194,7 +194,7 @@ Een [ identiteitskaart van Adobe Experience Platform DataStream ](https://experi
 
 ## Aanpassing toevoegen aan een AEM Headless-app{#code}
 
-Dit leerprogramma verkent het personaliseren van een eenvoudige Reactie app gebruikend de Aanbiedingen van het Fragment van de Inhoud in Adobe Target via [ SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html). Deze aanpak kan worden gebruikt om elke JavaScript-webbeleving aan te passen.
+Dit leerprogramma verkent het personaliseren van een eenvoudige Reactie app gebruikend de Aanbiedingen van het Fragment van de Inhoud in Adobe Target via [ SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=nl-NL). Deze aanpak kan worden gebruikt om elke JavaScript-webbeleving aan te passen.
 
 De mobiele ervaringen van Android™ en van iOS kunnen na gelijkaardige patronen worden gepersonaliseerd gebruikend [ Adobe Mobiele SDK ](https://developer.adobe.com/client-sdks/documentation/).
 
@@ -230,7 +230,7 @@ De mobiele ervaringen van Android™ en van iOS kunnen na gelijkaardige patronen
    $ npm run start
    ```
 
-1. Installeer het [ Web SDK van Adobe ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html#option-3%3A-using-the-npm-package) als pakket NPM.
+1. Installeer het [ Web SDK van Adobe ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=nl-NL#option-3%3A-using-the-npm-package) als pakket NPM.
 
    ```shell
    $ cd ~/Code/aem-guides-wknd-graphql/personalization-tutorial

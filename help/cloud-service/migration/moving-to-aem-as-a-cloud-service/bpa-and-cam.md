@@ -43,10 +43,10 @@ Pas je kennis toe door uit te proberen wat je geleerd hebt met deze praktische o
 Voordat u de praktische oefening probeert, moet u controleren of u de bovenstaande video en de volgende materialen hebt bekeken en begrepen:
 
 + [AEM as a Cloud Service anders denken](./introduction.md)
-+ [ wat is AEM as a Cloud Service?](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html?lang=en)
-+ [Architectuur van AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=en)
-+ [ Mutable en onveranderlijke inhoud ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/mutable-immutable.html?lang=en)
-+ [ Verschillen in het ontwikkelen voor AEM as a Cloud Service en AEM 6.x ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#developing)
++ [ wat is AEM as a Cloud Service?](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html?lang=nl-NL)
++ [Architectuur van AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=nl-NL)
++ [ Mutable en onveranderlijke inhoud ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/mutable-immutable.html?lang=nl-NL)
++ [ Verschillen in het ontwikkelen voor AEM as a Cloud Service en AEM 6.x ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=nl-NL#developing)
 
 <table style="border-width:0">
     <tr>

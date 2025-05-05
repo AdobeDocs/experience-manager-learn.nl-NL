@@ -33,5 +33,5 @@ In Adobe Experience Manager 6.4 kunt u zich de personalisatieworkflow tussen AEM
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ de Documentatie van Fragmenten van de Ervaring ](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html)
+* [ de Documentatie van Fragmenten van de Ervaring ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/authoring/using/experience-fragments.html)
 * [Beleidsfragmenten gebruiken](/help/sites/experience-fragments/experience-fragments-feature-video-use.md)

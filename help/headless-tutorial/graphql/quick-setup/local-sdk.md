@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # AEM Headless, snelle installatie met de lokale AEM SDK {#setup}
 
-Met de snelle installatie van AEM Headless kunt u in de praktijk werken met AEM Headless via inhoud van het WKND-sitevoorbeeldproject en een voorbeeldtoepassing React (een SPA) die de inhoud gebruikt via AEM Headless GraphQL API&#39;s. Deze gids gebruikt [ AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html).
+Met de snelle installatie van AEM Headless kunt u in de praktijk werken met AEM Headless via inhoud van het WKND-sitevoorbeeldproject en een voorbeeldtoepassing React (een SPA) die de inhoud gebruikt via AEM Headless GraphQL API&#39;s. Deze gids gebruikt [ AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=nl-NL).
 
 ## Vereisten {#prerequisites}
 
@@ -32,7 +32,7 @@ De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 
 ## 1. Installeer de AEM SDK {#aem-sdk}
 
-Deze opstelling gebruikt [ AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?#aem-as-a-cloud-service-sdk) om AEM te onderzoeken GraphQL APIs. In deze sectie vindt u een snelle handleiding voor het installeren van de AEM SDK en het uitvoeren ervan in de modus Auteur. Een meer gedetailleerde gids voor vestiging een lokale ontwikkelomgeving [ kan hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html#local-development-environment-set-up) worden gevonden.
+Deze opstelling gebruikt [ AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=nl-NL&#aem-as-a-cloud-service-sdk) om AEM te onderzoeken GraphQL APIs. In deze sectie vindt u een snelle handleiding voor het installeren van de AEM SDK en het uitvoeren ervan in de modus Auteur. Een meer gedetailleerde gids voor vestiging een lokale ontwikkelomgeving [ kan hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL#local-development-environment-set-up) worden gevonden.
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Deze opstelling gebruikt [ AEM as a Cloud Service SDK ](https://experienceleague
 
 De inhoud van de steekproef van de **plaats van de Verwijzing WKND** wordt gebruikt om het leerprogramma te versnellen. De WKND is een fictief levensstijl, vaak gebruikt bij AEM training.
 
-De plaats WKND omvat configuraties die worden vereist om a [ eindpunt van GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html) bloot te stellen. In een implementatie in de praktijk, volg de gedocumenteerde stappen om [ de eindpunten van GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html) in uw klantenproject te omvatten. A [ CORS ](#cors-config) is ook verpakt als deel van de Plaats WKND. Een configuratie CORS wordt vereist om toegang tot een externe toepassing te verlenen, kan meer informatie over [ CORS ](#cors-config) hieronder worden gevonden.
+De plaats WKND omvat configuraties die worden vereist om a [ eindpunt van GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html?lang=nl-NL) bloot te stellen. In een implementatie in de praktijk, volg de gedocumenteerde stappen om [ de eindpunten van GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html?lang=nl-NL) in uw klantenproject te omvatten. A [ CORS ](#cors-config) is ook verpakt als deel van de Plaats WKND. Een configuratie CORS wordt vereist om toegang tot een externe toepassing te verlenen, kan meer informatie over [ CORS ](#cors-config) hieronder worden gevonden.
 
 1. Download het recentste gecompileerde Pakket van AEM voor Plaats WKND: [ aem-guides-wknd.all-x.x.x.zip ](https://github.com/adobe/aem-guides-wknd/releases/latest).
 
@@ -98,7 +98,7 @@ De plaats WKND omvat configuraties die worden vereist om a [ eindpunt van GraphQ
 
 >[!NOTE]
 >
-> Als het gebruiken van een milieu van Cloud Service de documentatie voor ziet hoe te [ een codebasis zoals de plaats van de Verwijzing WKND aan een milieu van Cloud Service opstellen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#coding-against-the-right-aem-version).
+> Als het gebruiken van een milieu van Cloud Service de documentatie voor ziet hoe te [ een codebasis zoals de plaats van de Verwijzing WKND aan een milieu van Cloud Service opstellen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=nl-NL#coding-against-the-right-aem-version).
 
 ## 3. Download en voer de WKND React-app uit {#sample-app}
 

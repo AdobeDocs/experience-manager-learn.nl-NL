@@ -71,14 +71,14 @@ Inhoudsfragmenten worden opgeslagen in mappen in AEM Assets. Als u inhoudsfragme
    * Titel*: **Engels**
    * Naam: **nl**
 
-   De beste praktijken zijn het opzetten van projecten voor meertalige ondersteuning. Zie [ de volgende documentenpagina voor meer informatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
+   De beste praktijken zijn het opzetten van projecten voor meertalige ondersteuning. Zie [ de volgende documentenpagina voor meer informatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=nl-NL).
 
 
 ## Een inhoudsfragment maken {#create-content-fragment}
 
 >[!TIP]
 >
->Voor lokale AEM SDK-gebruikers: gebruik de AEM Assets-interface om inhoudsfragmenten te maken en te maken in plaats van de hieronder beschreven interface voor inhoudsfragmenten. Voor gedetailleerde instructies, verwijs naar de [ documentatie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html).
+>Voor lokale AEM SDK-gebruikers: gebruik de AEM Assets-interface om inhoudsfragmenten te maken en te maken in plaats van de hieronder beschreven interface voor inhoudsfragmenten. Voor gedetailleerde instructies, verwijs naar de [ documentatie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html?lang=nl-NL).
 
 Volgende verscheidene Fragmenten van de Inhoud worden gecreeerd gebaseerd op het **Team** en **Persoon** modellen.
 
@@ -152,7 +152,7 @@ Vervolgens vult u de nieuwe fragmenten met gegevens.
 
 >[!TIP]
 >
->Voor lokale AEM SDK-gebruikers: gebruik de AEM Assets-interface om inhoudsfragmenten te publiceren in plaats van de hieronder beschreven interface voor inhoudsfragmenten. Voor gedetailleerde instructies, verwijs naar de [ documentatie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html#publishing-and-referencing-a-fragment).
+>Voor lokale AEM SDK-gebruikers: gebruik de AEM Assets-interface om inhoudsfragmenten te publiceren in plaats van de hieronder beschreven interface voor inhoudsfragmenten. Voor gedetailleerde instructies, verwijs naar de [ documentatie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html?lang=nl-NL#publishing-and-referencing-a-fragment).
 
 Publiceer de geautoriseerde `Content Fragments` tijdens revisie en verificatie
 
@@ -173,5 +173,5 @@ In het volgende hoofdstuk, [ ontdekken GraphQL APIs ](explore-graphql-api.md), z
 
 ## Verwante documentatie
 
-* [Contentfragmenten beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html)
-* [Variaties - Authoring van content voor fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html)
+* [Contentfragmenten beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html?lang=nl-NL)
+* [Variaties - Authoring van content voor fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html?lang=nl-NL)

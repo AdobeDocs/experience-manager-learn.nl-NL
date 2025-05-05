@@ -127,7 +127,7 @@ public class GeneratePDFFromMobileFormData extends SlingAllMethodsServlet implem
 
 ### Interactieve PDF renderen
 
-De volgende code maakt gebruik van [ de Dienst API van Forms ](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) interactieve PDF met de gegevens van de mobiele vorm terug te geven.
+De volgende code maakt gebruik van [ de Dienst API van Forms ](https://helpx.adobe.com/nl/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) interactieve PDF met de gegevens van de mobiele vorm terug te geven.
 
 ```java
 package com.aemforms.mobileforms.core.documentservices.impl;

@@ -202,8 +202,8 @@ Na elke stap vernieuwt u de Mobile-app en controleert u de update van de mobiele
 
 Voor meer informatie over AEM Content Services en AEM als een Headless CMS raadpleegt u de andere documentatie en materialen voor activering van de Adobe:
 
-* [ Gebruikend Inhoudsfragmenten ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
-* [ AEM WCM de Gids van de Gebruiker van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [ Gebruikend Inhoudsfragmenten ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=nl-NL)
+* [ AEM WCM de Gids van de Gebruiker van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
 * [ AEM WCM de Bibliotheek van de Component van de Kern van Componenten ](https://opensource.adobe.com/aem-core-wcm-components/library.html)
 * [ AEM het Project van GitHub van de Componenten van de Kern WCM ](https://github.com/adobe/aem-core-wcm-components)
 * [ Steekproef van de Code van de Exporteur van de Component ](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/models/SampleComponentExporter.java)

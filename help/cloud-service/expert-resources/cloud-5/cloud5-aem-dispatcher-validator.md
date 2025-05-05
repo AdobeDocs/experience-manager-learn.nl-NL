@@ -26,7 +26,7 @@ Een kort voorbeeld van hoe u de dispatchervalidator kunt gebruiken in uw AEM-ont
 ## Inhoud die in deze video wordt behandeld
 
 + Overzicht van dispatcher &amp; SDK
-+ [ de Hulpmiddelen van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html)
++ [ de Hulpmiddelen van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html?lang=nl-NL)
 + Problemen met fouten oplossen
 + De logboeken en runmodi van de verzender gebruiken voor foutopsporing
 

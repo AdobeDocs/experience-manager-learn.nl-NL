@@ -147,7 +147,7 @@ Hieronder vindt u een aantal Adobe-bronnen die aanvullende informatie en nuttige
 
 ### Documentatie
 
-+ [ de documentatie van de Dienst van Asset Compute ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)
++ [ de documentatie van de Dienst van Asset Compute ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=nl-NL)
 + [ het Hulpmiddel van de Ontwikkeling van Asset Compute readme ](https://github.com/adobe/asset-compute-devtool)
 + [ Asset Compute voorbeeldarbeiders ](https://github.com/adobe/asset-compute-example-workers)
 

@@ -25,10 +25,10 @@ Als een gebruiker bijvoorbeeld op XDP klikt in het formulierportaal van AEM Form
 
 Voor dit gebruiksgeval moeten we het volgende doen.
 
-* Voeg het Reader Extensions-certificaat toe aan de gebruiker &quot;fd-service&quot;. De stappen om de credentie van de Uitbreidingen van Reader toe te voegen zijn vermeld [ hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
+* Voeg het Reader Extensions-certificaat toe aan de gebruiker &quot;fd-service&quot;. De stappen om de credentie van de Uitbreidingen van Reader toe te voegen zijn vermeld [ hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=nl-NL)
 
 
-* U kunt ook naar de video verwijzen bij [ het vormen van de geloofsbrieven van de Uitbreidingen van Reader ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
+* U kunt ook naar de video verwijzen bij [ het vormen van de geloofsbrieven van de Uitbreidingen van Reader ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=nl-NL)
 
 
 * Creeer de douanedienst OSGi die teruggeeft en gebruiksrechten toepast. De code om dit te bereiken wordt hieronder vermeld

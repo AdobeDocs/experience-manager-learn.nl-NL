@@ -117,11 +117,11 @@ Om de zelfstudie te versnellen, wordt een startapp van React JS geleverd.
 
 ## De code controleren
 
-In het [ Basisleerprogramma - bouw een Reactie app die AEM APIs ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#review-the-aemheadless-object) stap gebruikt hadden wij herzien en verbeterd weinig zeer belangrijke dossiers om hands-on deskundigheid te krijgen. Controleer de belangrijkste bestanden voordat u de WKND-app verbetert.
+In het [ Basisleerprogramma - bouw een Reactie app die AEM APIs ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html?lang=nl-NL#review-the-aemheadless-object) stap gebruikt hadden wij herzien en verbeterd weinig zeer belangrijke dossiers om hands-on deskundigheid te krijgen. Controleer de belangrijkste bestanden voordat u de WKND-app verbetert.
 
-* [ herzie het voorwerp AEMHeadless ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#review-the-aemheadless-object)
+* [ herzie het voorwerp AEMHeadless ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html?lang=nl-NL#review-the-aemheadless-object)
 
-* [ Implementeer om AEM GraphQL in werking te stellen persisted query&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#implement-to-run-aem-graphql-persisted-queries)
+* [ Implementeer om AEM GraphQL in werking te stellen persisted query&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html?lang=nl-NL#implement-to-run-aem-graphql-persisted-queries)
 
 ### Component redigeren `Adventures` Reageren
 

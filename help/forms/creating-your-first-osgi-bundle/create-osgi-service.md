@@ -80,7 +80,7 @@ public class MyfirstInterfaceImpl implements MyfirstInterface {
 
 De aantekening `@Component(...)` op regel 10 maakt deze Java-klasse gemarkeerd als een OSGi-component en registreert deze als een OSGi-service.
 
-De `@Reference` aantekening maakt deel uit van de verklarende diensten OSGi, en wordt gebruikt om een verwijzing van [ OutputService ](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) in veranderlijk `outputService` te injecteren.
+De `@Reference` aantekening maakt deel uit van de verklarende diensten OSGi, en wordt gebruikt om een verwijzing van [ OutputService ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) in veranderlijk `outputService` te injecteren.
 
 
 ## De bundel maken en implementeren

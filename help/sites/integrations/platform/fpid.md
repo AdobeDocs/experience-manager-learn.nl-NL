@@ -26,7 +26,7 @@ Als u Adobe Experience Manager (AEM)-sites die via AEM Publish worden geleverd, 
 
 Het FPID-cookie moet worden ingesteld door de server (AEM Publish) in plaats van JavaScript te gebruiken om een client-side cookie te maken. Dit komt omdat moderne browsers, zoals Safari en Firefox, cookies die door JavaScript zijn gegenereerd, kunnen blokkeren of snel verlopen.
 
-Lees de ondersteunende documentatie aan [ leren over de details van hoe eerste-deel apparaat IDs en Experience Cloud IDs samenwerken ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=en).
+Lees de ondersteunende documentatie aan [ leren over de details van hoe eerste-deel apparaat IDs en Experience Cloud IDs samenwerken ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=nl-NL).
 
 Hieronder vindt u een overzicht van de werking van FPID&#39;s wanneer u AEM als webhost gebruikt.
 
@@ -163,8 +163,8 @@ Een aangepaste client-side JavaScript moet aan de pagina worden toegevoegd om de
 
 Dit JavaScript-script wordt doorgaans op een van de volgende manieren aan de pagina toegevoegd:
 
-+ [ Markeringen in Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [ de Bibliotheek van de Cliënt van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/clientlibs.html?lang=en)
++ [ Markeringen in Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl-NL)
++ [ de Bibliotheek van de Cliënt van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/clientlibs.html?lang=nl-NL)
 
 De XHR-aanroep naar de aangepaste AEM FPID-server is snel, maar asynchroon, zodat een gebruiker een webpagina kan bezoeken die door AEM wordt aangeboden en kan wegnavigeren voordat het verzoek kan worden voltooid.
 Als dit gebeurt, wordt hetzelfde proces opnieuw gestart bij het laden van de volgende pagina van een webpagina vanuit AEM.
@@ -172,9 +172,9 @@ Als dit gebeurt, wordt hetzelfde proces opnieuw gestart bij het laden van de vol
 HTTP GET aan de server van AEM FPID (`/bin/aep/fpid`) wordt parameters bepaald met een willekeurige vraagparameter om ervoor te zorgen dat om het even welke infrastructuur tussen browser en de dienst van de Publicatie van AEM niet de reactie van het verzoek in het voorgeheugen onderbrengt.
 Op dezelfde manier wordt de aanvraagheader van `Cache-Control: no-store` toegevoegd om caching te voorkomen.
 
-Op een aanroeping van AEM FPID servlet, wordt FPID teruggewonnen van de reactie JSON en door het [ Web SDK van het Platform ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/tags-configuration/install-web-sdk.html?lang=en) gebruikt om het naar Experience Platform APIs te verzenden.
+Op een aanroeping van AEM FPID servlet, wordt FPID teruggewonnen van de reactie JSON en door het [ Web SDK van het Platform ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/tags-configuration/install-web-sdk.html?lang=nl-NL) gebruikt om het naar Experience Platform APIs te verzenden.
 
-Zie de documentatie van Experience Platform voor meer informatie over [ gebruikend FPIDs in identityMap ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html#identityMap)
+Zie de documentatie van Experience Platform voor meer informatie over [ gebruikend FPIDs in identityMap ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=nl-NL#identityMap)
 
 ```javascript
 ...
@@ -239,6 +239,6 @@ Als deze Dispatcher-configuratie niet correct is geïmplementeerd, resulteert de
 
 Bekijk de volgende Experience Platform-documentatie voor FPID&#39;s (First-Party Device ID&#39;s) en het beheer van identiteitsgegevens met Platform Web SDK.
 
-+ [ produceer eerste-partijapparaat IDs ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html)
-+ [ Eerste-partij apparaat IDs in het Web SDK van het Platform ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html)
-+ [ Gegevens van de Identiteit in het Web SDK van het Platform ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html)
++ [ produceer eerste-partijapparaat IDs ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=nl-NL)
++ [ Eerste-partij apparaat IDs in het Web SDK van het Platform ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=nl-NL)
++ [ Gegevens van de Identiteit in het Web SDK van het Platform ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=nl-NL)

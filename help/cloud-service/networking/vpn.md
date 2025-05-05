@@ -26,21 +26,21 @@ Leer hoe u AEM as a Cloud Service verbindt met uw VPN om veilige communicatiekan
 >
 >U kunt VPN&#39;s en port forwarding configureren via de Cloud Manager-gebruikersinterface of met behulp van API-aanroepen. Deze tutorial richt zich op de API-methode.
 >
->Als u verkiest gebruikend UI, zie [ Geavanceerd Voorzien van een netwerk voor AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) vormen.
+>Als u verkiest gebruikend UI, zie [ Geavanceerd Voorzien van een netwerk voor AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) vormen.
 
 ## Wat is een Virtueel Privé Netwerk?
 
-Het virtuele Privé Netwerk (VPN) staat een klant van AEM as a Cloud Service toe om **de milieu&#39;s van AEM** binnen een Programma van Cloud Manager aan bestaand, [ gesteund ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) VPN te verbinden. VPN staat veilige en gecontroleerde verbindingen tussen AEM as a Cloud Service en de diensten binnen het netwerk van de klant toe.
+Het virtuele Privé Netwerk (VPN) staat een klant van AEM as a Cloud Service toe om **de milieu&#39;s van AEM** binnen een Programma van Cloud Manager aan bestaand, [ gesteund ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) VPN te verbinden. VPN staat veilige en gecontroleerde verbindingen tussen AEM as a Cloud Service en de diensten binnen het netwerk van de klant toe.
 
-Een programma van Cloud Manager kan het type van a __enige__ netwerkinfrastructuur slechts hebben. Zorg ervoor dat het Virtuele Privé Netwerk het meest [ aangewezen type van netwerkinfrastructuur ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) voor uw AEM as a Cloud Service is alvorens de volgende bevelen uit te voeren.
+Een programma van Cloud Manager kan het type van a __enige__ netwerkinfrastructuur slechts hebben. Zorg ervoor dat het Virtuele Privé Netwerk het meest [ aangewezen type van netwerkinfrastructuur ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) voor uw AEM as a Cloud Service is alvorens de volgende bevelen uit te voeren.
 
 >[!NOTE]
 >
->Gelieve te merken op, wordt het verbinden van het bouwstijlmilieu van Cloud Manager met VPN niet gesteund. Als u binaire artefacten moet openen vanuit een privéopslagplaats, moet u een beveiligde en met een wachtwoord beveiligde opslagplaats instellen met een URL die beschikbaar is op het openbare internet [, zoals hier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project) wordt beschreven.
+>Gelieve te merken op, wordt het verbinden van het bouwstijlmilieu van Cloud Manager met VPN niet gesteund. Als u binaire artefacten moet openen vanuit een privéopslagplaats, moet u een beveiligde en met een wachtwoord beveiligde opslagplaats instellen met een URL die beschikbaar is op het openbare internet [, zoals hier](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project) wordt beschreven.
 
 >[!MORELIKETHIS]
 >
-> Lees de documentatie over[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) de geavanceerde netwerkconfiguratie van AEM as a Cloud Service voor meer informatie over Virtual Private Network.
+> Lees de documentatie over[&#128279;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) de geavanceerde netwerkconfiguratie van AEM as a Cloud Service voor meer informatie over Virtual Private Network.
 
 ## Vereisten
 
@@ -55,13 +55,13 @@ Voor het instellen van een Virtual Private Network met Cloud Manager API&#39;s i
 + De omgevings-ID&#39;s van Cloud Manager
 + A **route-Gebaseerd** Virtueel Privé Netwerk, met toegang tot alle noodzakelijke verbindingsparameters.
 
-Voor meer details [ overzicht hoe te opstelling, vorm, en verkrijg de geloofsbrieven van de Manager van de Wolk API ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), om hen te gebruiken om een Cloud Manager API vraag te maken.
+Voor meer details [ overzicht hoe te opstelling, vorm, en verkrijg de geloofsbrieven van de Manager van de Wolk API ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), om hen te gebruiken om een Cloud Manager API vraag te maken.
 
 >[!IMPORTANT]
 >
 >Dit leerprogramma gebruikt `curl` om de configuraties van Cloud Manager API te maken - *als u een programmatic benadering* verkiest. Voor de geleverde `curl` opdrachten wordt uitgegaan van een Linux®- of macOS-syntaxis. Als u de Windows-opdrachtregel gebruikt, vervangt u het teken voor het `\` regeleinde door `^` .
 >
->U kunt dezelfde taak ook uitvoeren via de gebruikersinterface van Cloud Manager. *als u de UI benadering* verkiest, zie [ Geavanceerd Voorzien van een netwerk voor AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) vormen.
+>U kunt dezelfde taak ook uitvoeren via de gebruikersinterface van Cloud Manager. *als u de UI benadering* verkiest, zie [ Geavanceerd Voorzien van een netwerk voor AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) vormen.
 
 ## Virtuele privénetwerk per programma inschakelen
 
@@ -113,7 +113,7 @@ Virtual Private Network kan worden ingeschakeld met Cloud Manager API&#39;s. In 
 
 1. Eerst, bepaal het gebied waarin het Geavanceerde Voorzien van een netwerk nodig is door de Cloud Manager API [ listRegions ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting te gebruiken. `region name` is vereist om volgende Cloud Manager API-aanroepen te kunnen uitvoeren. Doorgaans wordt de regio waarin de productieomgeving zich bevindt, gebruikt.
 
-   Vind het gebied van uw milieu van AEM as a Cloud Service in [ Cloud Manager ](https://my.cloudmanager.adobe.com) onder de [ details van het milieu ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). De gebiedsnaam die in Cloud Manager wordt getoond kan [ aan de gebiedscode ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) worden in kaart gebracht die in Cloud Manager API wordt gebruikt.
+   Vind het gebied van uw milieu van AEM as a Cloud Service in [ Cloud Manager ](https://my.cloudmanager.adobe.com) onder de [ details van het milieu ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). De gebiedsnaam die in Cloud Manager wordt getoond kan [ aan de gebiedscode ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) worden in kaart gebracht die in Cloud Manager API wordt gebruikt.
 
    __listRegions HTTP- verzoek__
 
@@ -294,7 +294,7 @@ Bij het maken van HTTP/HTTPS-verbindingen van AEM, wanneer u VPN gebruikt, worde
 
 >[!TIP]
 >
-> Zie de Virtuele documentatie Privé van het Netwerk van AEM as a Cloud Service voor [ de volledige reeks het verpletteren van regels ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
+> Zie de Virtuele documentatie Privé van het Netwerk van AEM as a Cloud Service voor [ de volledige reeks het verpletteren van regels ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 #### Codevoorbeelden
 
@@ -362,8 +362,8 @@ De Virtual Private Network-configuratie beperkt de toegang tot AEM as a Cloud Se
 
 <table><tr>
    <td>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list"><img alt="Een IP-lijst van gewenste personen toepassen" src="./assets/code_examples__vpn-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list"> Toepassend een IP lijst van gewenste personen </a></strong></div>
+      <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list"><img alt="Een IP-lijst van gewenste personen toepassen" src="./assets/code_examples__vpn-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list"> Toepassend een IP lijst van gewenste personen </a></strong></div>
       <p>
             Vorm een IP lijst van gewenste personen dusdanig dat slechts het verkeer van VPN tot AEM kan toegang hebben.
       </p>

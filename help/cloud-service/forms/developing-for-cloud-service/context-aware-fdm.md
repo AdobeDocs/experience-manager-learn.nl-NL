@@ -27,7 +27,7 @@ De volgende stappen zijn nodig om een contextbewuste cloudconfiguratie te maken
 
 ## Omgevingsvariabelen maken
 
-Standaardomgevingsvariabelen kunnen worden geconfigureerd en beheerd via Cloud Manager. Zij worden verstrekt aan het runtime milieu en kunnen in configuraties worden gebruikt OSGi. [ de variabelen van het Milieu kunnen of milieu-specifieke waarden of milieu geheimen zijn, die op worden gebaseerd wat wordt veranderd.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en)
+Standaardomgevingsvariabelen kunnen worden geconfigureerd en beheerd via Cloud Manager. Zij worden verstrekt aan het runtime milieu en kunnen in configuraties worden gebruikt OSGi. [ de variabelen van het Milieu kunnen of milieu-specifieke waarden of milieu geheimen zijn, die op worden gebaseerd wat wordt veranderd.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=nl-NL)
 
 
 

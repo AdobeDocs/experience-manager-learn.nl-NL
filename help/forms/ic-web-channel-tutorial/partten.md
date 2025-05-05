@@ -55,7 +55,7 @@ ht-degree: 0%
 
 * Klik op het Assets-pictogram en pas het filter toe om elementen van het type &quot;Documentfragmenten&quot; weer te geven. Sleep RetirementIncomeOutlook-documentfragment naar het doelgebied van het linkerdeelvenster.
 
-* U kunt [ naar deze pagina ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) bij het toevoegen van documentfragment aan inhoudsgebieden verwijzen.
+* U kunt [ naar deze pagina ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html?lang=nl-NL) bij het toevoegen van documentfragment aan inhoudsgebieden verwijzen.
 
 ## Geschatte maandelijkse inkomensgrafiek toevoegen {#adding-estimated-monthly-income-chart}
 

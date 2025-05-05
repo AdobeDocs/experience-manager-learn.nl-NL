@@ -77,7 +77,7 @@ De Eenvoudige onderzoeksimplementatie is de materialen van het **gedemystificeer
 * [ Github bewaarplaats ](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/master/simple-search-guide)
 * [ Sling Models ](https://sling.apache.org/documentation/bundles/models.html)
 * [ het Verdelen ModelExporter ](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
-* [ QueryBuilder API ](https://experienceleague.adobe.com/docs/)
+* [ QueryBuilder API ](https://experienceleague.adobe.com/docs/?lang=nl-NL)
 * [ AEM Chrome Plug-in ](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) ([ pagina van de Documentatie ](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## Correcties en follow-up {#corrections-and-follow-up}

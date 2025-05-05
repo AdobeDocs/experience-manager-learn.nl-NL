@@ -65,7 +65,7 @@ Een eindpunt van GraphQL moet worden gevormd om GraphQL API vragen voor de Fragm
 
 ## GraphiQL IDE gebruiken
 
-Het [ GraphiQL ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) hulpmiddel laat ontwikkelaars toe om vragen tegen inhoud op het huidige milieu van AEM tot stand te brengen en te testen. Het hulpmiddel GraphiQL laat ook gebruikers toe om **voort te zetten of** vragen te bewaren die door cliënttoepassingen in een productie het plaatsen moeten worden gebruikt.
+Het [ GraphiQL ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html?lang=nl-NL) hulpmiddel laat ontwikkelaars toe om vragen tegen inhoud op het huidige milieu van AEM tot stand te brengen en te testen. Het hulpmiddel GraphiQL laat ook gebruikers toe om **voort te zetten of** vragen te bewaren die door cliënttoepassingen in een productie het plaatsen moeten worden gebruikt.
 
 Verken vervolgens de kracht van de AEM GraphQL API met behulp van de ingebouwde GraphiQL IDE.
 
@@ -216,7 +216,7 @@ Daarna, kijken hoe het mogelijk is om de resultaten aan een ondergroep van Inhou
 
    ![ de Variabelen van de Vraag van het Gebruik aan filter ](assets/explore-graphql-api/using-query-variables-filter.png)
 
-   Er zijn vele andere opties voor het filtreren en het creëren van complexe vragen, zie [ Lerend om GraphQL met AEM te gebruiken - de Inhoud van de Steekproef en Vragen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
+   Er zijn vele andere opties voor het filtreren en het creëren van complexe vragen, zie [ Lerend om GraphQL met AEM te gebruiken - de Inhoud van de Steekproef en Vragen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html?lang=nl-NL).
 
 1. Verbeter bovenstaande query om profielafbeelding op te halen
 
@@ -280,7 +280,7 @@ Het is ook mogelijk rechtstreeks een query uit te voeren op één inhoudsfragmen
 
 ## Zoekopdrachten behouden {#persist-queries}
 
-Zodra een ontwikkelaar met de vraag en resultaatgegevens tevreden is die van de vraag zijn teruggekeerd, moet de volgende stap de vraag opslaan of voortzetten aan AEM. De [ Verlengde vragen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) zijn het aangewezen mechanisme om GraphQL API aan cliënttoepassingen bloot te stellen. Zodra een vraag is voortgeduurd, kan het worden gevraagd gebruikend een verzoek van GET en caching bij de lagen van Dispatcher en CDN. De prestaties van de gepresteerde vragen zijn veel beter. Naast prestatievoordelen zorgen permanente query&#39;s ervoor dat extra gegevens niet per ongeluk aan clienttoepassingen worden blootgesteld. Meer details over [ Verblijfsde vragen kunnen hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) worden gevonden.
+Zodra een ontwikkelaar met de vraag en resultaatgegevens tevreden is die van de vraag zijn teruggekeerd, moet de volgende stap de vraag opslaan of voortzetten aan AEM. De [ Verlengde vragen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=nl-NL) zijn het aangewezen mechanisme om GraphQL API aan cliënttoepassingen bloot te stellen. Zodra een vraag is voortgeduurd, kan het worden gevraagd gebruikend een verzoek van GET en caching bij de lagen van Dispatcher en CDN. De prestaties van de gepresteerde vragen zijn veel beter. Naast prestatievoordelen zorgen permanente query&#39;s ervoor dat extra gegevens niet per ongeluk aan clienttoepassingen worden blootgesteld. Meer details over [ Verblijfsde vragen kunnen hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=nl-NL) worden gevonden.
 
 Daarna, persisteert twee eenvoudige vragen, worden zij gebruikt in het volgende hoofdstuk.
 
@@ -396,7 +396,7 @@ Download de inhoud, de modellen, en de voortgezette vragen die in de laatste dri
 
 ## Aanvullende bronnen
 
-Leer meer over de vragen van GraphQL bij [ het Leren om GraphQL met AEM te gebruiken - de Inhoud en Vragen van de Steekproef ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
+Leer meer over de vragen van GraphQL bij [ het Leren om GraphQL met AEM te gebruiken - de Inhoud en Vragen van de Steekproef ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html?lang=nl-NL).
 
 ## Gefeliciteerd! {#congratulations}
 

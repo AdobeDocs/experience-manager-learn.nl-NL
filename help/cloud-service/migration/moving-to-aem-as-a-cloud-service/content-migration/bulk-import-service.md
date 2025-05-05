@@ -33,7 +33,7 @@ De Bulk Import Service wordt gebruikt om bestanden die zijn opgeslagen in Azure 
 
 >[!TIP]
 >
-> De inputbronnen in deze video tonen slechts Azure Blob Storage en Amazon S3; nochtans blijven de beschikbare bronnen in tijd groeien. Voor een volledige lijst van gesteunde inputbronnen, te verwijzen gelieve naar de beschikbare opties in product, of [ documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
+> De inputbronnen in deze video tonen slechts Azure Blob Storage en Amazon S3; nochtans blijven de beschikbare bronnen in tijd groeien. Voor een volledige lijst van gesteunde inputbronnen, te verwijzen gelieve naar de beschikbare opties in product, of [ documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=nl-NL#bulk-upload).
 
 ## Belangrijkste activiteiten
 
@@ -43,6 +43,6 @@ De Bulk Import Service wordt gebruikt om bestanden die zijn opgeslagen in Azure 
 
 ## Overige bronnen
 
-+ [ Bulk de configuratieopties van de de invoerdienst ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#configure-bulk-ingestor-tool)
-+ [ de zitting van Adobe Developers Live op de Ingestie van Activa ](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html)
++ [ Bulk de configuratieopties van de de invoerdienst ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=nl-NL#configure-bulk-ingestor-tool)
++ [ de zitting van Adobe Developers Live op de Ingestie van Activa ](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html?lang=nl-NL)
 

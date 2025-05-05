@@ -30,5 +30,5 @@ AEM 6.3 Forms introduceert de mogelijkheid om gebruikers in AEM testgevallen te 
 >
 >**Nuttige Verbindingen**
 >
->* [ Calvin SDK Namespace ](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
->* [ documentatie Hobbes.js ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
+>* [ Calvin SDK Namespace ](https://helpx.adobe.com/nl/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
+>* [ documentatie Hobbes.js ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL)

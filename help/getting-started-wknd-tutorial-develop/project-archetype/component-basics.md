@@ -100,7 +100,7 @@ Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden 
 
 ## HTML (HTML Template Language) en dialoogvensters {#htl-dialogs}
 
-De Taal van het Malplaatje van HTML of **[HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html)** is een licht-gewicht, server-zijhet bemonsteren taal die door de componenten van AEM wordt gebruikt om inhoud terug te geven.
+De Taal van het Malplaatje van HTML of **[HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html?lang=nl-NL)** is een licht-gewicht, server-zijhet bemonsteren taal die door de componenten van AEM wordt gebruikt om inhoud terug te geven.
 
 **de Dialogen** bepalen de beschikbare configuraties die voor een component kunnen worden gemaakt.
 
@@ -262,7 +262,7 @@ Laten we nu enkele updates uitvoeren op het `HelloWorldModel` Sling-model om eni
 
    De modelinstantie `HelloWorld` is nu beschikbaar in de HTML via de variabele `model` met behulp van `HelloWord` . Deze methodeaanroepen kunnen bijvoorbeeld gebruik maken van een verkorte syntaxis: `${model.getTitle()}` kan worden ingekort tot `${model.title}` .
 
-   Op dezelfde manier worden alle manuscripten HTML geïnjecteerd met [ globale voorwerpen ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html) die kunnen worden betreden gebruikend de zelfde syntaxis zoals de het Verdelen Modelvoorwerpen.
+   Op dezelfde manier worden alle manuscripten HTML geïnjecteerd met [ globale voorwerpen ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html?lang=nl-NL) die kunnen worden betreden gebruikend de zelfde syntaxis zoals de het Verdelen Modelvoorwerpen.
 
    ```html
    <div class="cmp-helloworld" data-cmp-is="helloworld" 
@@ -285,7 +285,7 @@ Laten we nu enkele updates uitvoeren op het `HelloWorldModel` Sling-model om eni
 
 Client-Side Libraries, `clientlibs` for short, biedt een mechanisme voor het organiseren en beheren van CSS- en JavaScript-bestanden die nodig zijn voor een AEM Sites-implementatie. Bibliotheken op de client zijn de standaardmanier om CSS en JavaScript op een pagina in AEM op te nemen.
 
-De {[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) module 0} ui.frontend is een ontkoppelde [ webpack ](https://webpack.js.org/) project dat in het bouwstijlproces wordt geïntegreerd.  Hiermee kunt u populaire front-end bibliotheken gebruiken, zoals Sass, LESS en TypeScript. De `ui.frontend` module wordt verkend in meer diepte in het [ Client-Side hoofdstuk van Bibliotheken ](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
+De {[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=nl-NL) module 0} ui.frontend is een ontkoppelde [ webpack ](https://webpack.js.org/) project dat in het bouwstijlproces wordt geïntegreerd.  Hiermee kunt u populaire front-end bibliotheken gebruiken, zoals Sass, LESS en TypeScript. De `ui.frontend` module wordt verkend in meer diepte in het [ Client-Side hoofdstuk van Bibliotheken ](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
 
 Werk vervolgens de CSS-stijlen voor de component `HelloWorld` bij.
 

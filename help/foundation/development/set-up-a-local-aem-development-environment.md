@@ -35,7 +35,7 @@ Het opzetten van een lokale ontwikkelomgeving is de eerste stap bij het ontwikke
 
 Als we naar een lokale AEM-instantie verwijzen, hebben we het over een kopie van Adobe Experience Manager die op de persoonlijke machine van een ontwikkelaar draait. ***allen*** de ontwikkeling van AEM zou moeten beginnen door code tegen een lokale instantie van AEM te schrijven en in werking te stellen.
 
-Als u aan AEM nieuw bent, zijn er twee basis in werking gestelde wijzen kunnen worden geïnstalleerd: ***Auteur*** en ***publiceren***. De ***Auteur*** [ runmode ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configure-runmodes.html?lang=en) is het milieu dat de digitale marketers gebruiken om inhoud tot stand te brengen en te beheren. Wanneer het ontwikkelen van het grootste deel van de tijd, stelt u code aan een instantie van de Auteur op. Zo kunt u pagina&#39;s maken en componenten toevoegen en configureren. AEM Sites is een WYSIWYG-ontwerpversie van CMS en daarom kunnen de meeste CSS en JavaScript worden getest op basis van een ontwerpinstantie.
+Als u aan AEM nieuw bent, zijn er twee basis in werking gestelde wijzen kunnen worden geïnstalleerd: ***Auteur*** en ***publiceren***. De ***Auteur*** [ runmode ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configure-runmodes.html?lang=nl-NL) is het milieu dat de digitale marketers gebruiken om inhoud tot stand te brengen en te beheren. Wanneer het ontwikkelen van het grootste deel van de tijd, stelt u code aan een instantie van de Auteur op. Zo kunt u pagina&#39;s maken en componenten toevoegen en configureren. AEM Sites is een WYSIWYG-ontwerpversie van CMS en daarom kunnen de meeste CSS en JavaScript worden getest op basis van een ontwerpinstantie.
 
 Het is ook *kritieke* testcode tegen een lokale ***publiceer*** instantie. ***publiceer*** instantie is het milieu van AEM dat de bezoekers aan uw website met in wisselwerking staan. Terwijl ***publiceert*** instantie de zelfde technologiestapel zoals de **&#x200B;**&#x200B;**&#x200B; instantie van de Auteur is, zijn er één of ander belangrijk onderscheid met configuraties en toestemmingen. De code moet tegen een lokale &#x200B;***worden getest publiceert*** instantie alvorens aan milieu&#39;s op hoger niveau wordt bevorderd.
 
@@ -44,7 +44,7 @@ Het is ook *kritieke* testcode tegen een lokale ***publiceer*** instantie. ***pu
 1. Zorg ervoor dat Java™ is geïnstalleerd.
    * Voorkeur [ Java™ JDK 11 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list p.offset=0&amp;p.limit=14) voor AEM 6.5+
    * [ Java™ JDK 8 ](https://www.oracle.com/java/technologies/downloads/) voor de versies van AEM vóór AEM 6.5
-1. Krijg een exemplaar van [ AEM QuickStart Jar en a  [!DNL license.properties] ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html).
+1. Krijg een exemplaar van [ AEM QuickStart Jar en a  [!DNL license.properties] ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=nl-NL).
 1. Maak als volgt een mapstructuur op uw computer:
 
 ```plain
@@ -83,7 +83,7 @@ U kunt ook dubbelklikken op het JAR-bestand door AEM te starten vanaf de opdrach
 $ java -Xmx2048M -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=30303 -jar aem-author-p4502.jar -gui -r"author,localdev"
 ```
 
-Hier, zijn `-X` opties JVM en `-D` zijn extra kadereigenschappen, voor meer informatie, zie [ het Opstellen en het Onderhouden van een instantie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html) en [ Verdere opties beschikbaar van het dossier van QuickStart ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/custom-standalone-install.html#further-options-available-from-the-quickstart-file).
+Hier, zijn `-X` opties JVM en `-D` zijn extra kadereigenschappen, voor meer informatie, zie [ het Opstellen en het Onderhouden van een instantie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=nl-NL) en [ Verdere opties beschikbaar van het dossier van QuickStart ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/custom-standalone-install.html?lang=nl-NL#further-options-available-from-the-quickstart-file).
 
 ## Apache Maven installeren
 
@@ -137,12 +137,12 @@ Wanneer u een IDE gebruikt, moet u `classic` controleren op het tabblad Geweven 
 
 ### [!DNL Eclipse] IDE
 
-**[[!DNL Eclipse] winde ](https://www.eclipse.org/ide/)** is één van populairdere IDEs voor ontwikkeling Java™, in het grootste deel omdat het open bron en ***vrij*** is! Adobe verstrekt een stop, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)**, voor [!DNL Eclipse] om gemakkelijkere ontwikkeling met een aardige GUI toe te staan om code met een lokale instantie van AEM te synchroniseren. De [!DNL Eclipse] IDE wordt aanbevolen voor ontwikkelaars die AEM voor een groot deel niet kennen vanwege de GUI-ondersteuning door [!DNL AEM Developer Tools] .
+**[[!DNL Eclipse] winde ](https://www.eclipse.org/ide/)** is één van populairdere IDEs voor ontwikkeling Java™, in het grootste deel omdat het open bron en ***vrij*** is! Adobe verstrekt een stop, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html?lang=nl-NL)**, voor [!DNL Eclipse] om gemakkelijkere ontwikkeling met een aardige GUI toe te staan om code met een lokale instantie van AEM te synchroniseren. De [!DNL Eclipse] IDE wordt aanbevolen voor ontwikkelaars die AEM voor een groot deel niet kennen vanwege de GUI-ondersteuning door [!DNL AEM Developer Tools] .
 
 #### Installatie en installatie
 
 1. Download en installeer [!DNL Eclipse] winde voor [!DNL Java™ EE Developers]: [ https://www.eclipse.org ](https://www.eclipse.org/)
-1. Volg de instructies om de [!DNL AEM Developer Tools] stop te installeren: [ https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)
+1. Volg de instructies om de [!DNL AEM Developer Tools] stop te installeren: [ https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html?lang=nl-NL ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html?lang=nl-NL)
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
@@ -192,7 +192,7 @@ Wanneer u een IDE gebruikt, moet u `classic` controleren op het tabblad Geweven 
 
 ### [!DNL CRXDE Lite]
 
-[ CRXDE Lite ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) is een op browser-gebaseerde mening van de bewaarplaats van AEM. [!DNL CRXDE Lite] is ingesloten in AEM en stelt een ontwikkelaar in staat standaardontwikkelingstaken uit te voeren, zoals het bewerken van bestanden, het definiëren van componenten, dialoogvensters en sjablonen. [!DNL CRXDE Lite] is ***niet*** bedoeld om een volledig ontwikkelomgeving te zijn maar is efficiënt als het zuiveren hulpmiddel. [!DNL CRXDE Lite] is nuttig wanneer het uitbreiden van of eenvoudig begrip van productcode buiten uw codebasis. [!DNL CRXDE Lite] biedt een krachtige weergave van de opslagplaats en een manier om machtigingen effectief te testen en te beheren.
+[ CRXDE Lite ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/developing-with-crxde-lite.html?lang=nl-NL) is een op browser-gebaseerde mening van de bewaarplaats van AEM. [!DNL CRXDE Lite] is ingesloten in AEM en stelt een ontwikkelaar in staat standaardontwikkelingstaken uit te voeren, zoals het bewerken van bestanden, het definiëren van componenten, dialoogvensters en sjablonen. [!DNL CRXDE Lite] is ***niet*** bedoeld om een volledig ontwikkelomgeving te zijn maar is efficiënt als het zuiveren hulpmiddel. [!DNL CRXDE Lite] is nuttig wanneer het uitbreiden van of eenvoudig begrip van productcode buiten uw codebasis. [!DNL CRXDE Lite] biedt een krachtige weergave van de opslagplaats en een manier om machtigingen effectief te testen en te beheren.
 
 [!DNL CRXDE Lite] zou met andere IDEs moeten worden gebruikt om code te testen en te zuiveren maar nooit als primair ontwikkelingshulpmiddel. Er is beperkte syntaxisondersteuning, geen automatische functionaliteit en beperkte integratie met bronbeheersystemen.
 

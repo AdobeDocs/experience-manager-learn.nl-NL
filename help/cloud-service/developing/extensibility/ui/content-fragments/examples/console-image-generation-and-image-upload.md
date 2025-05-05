@@ -223,7 +223,7 @@ In deze voorbeeld-app is er een modale React-component (`GenerateImageModal.js`)
 Belangrijk, zou om het even welke interactie met AEM van de uitbreiding aan een [ actie van Adobe I/O Runtime AppBuilder ](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) moeten worden gedelegeerd, die een afzonderlijk serverless proces is dat in [ Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/) loopt.
 Het gebruik van Adobe I/O Runtime-acties om met AEM te communiceren, en is bedoeld om problemen met de connectiviteit van het delen van bronnen van verschillende oorsprong (CORS) te voorkomen.
 
-Wanneer _produceer de vorm van het Beeld_ wordt voorgelegd, haalt een douane `onSubmitHandler()` de actie van Adobe I/O Runtime aan, die de beeldbeschrijving, de huidige gastheer van AEM (domein), en het toegangstoken van AEM van de gebruiker overgaat. De actie roept dan OpenAI [ generatie van het Beeld ](https://beta.openai.com/docs/guides/images/image-generation-beta) API om een beeld te produceren gebruikend de voorgelegde beeldbeschrijving. Daarna die [ AEM gebruiken uploadt `DirectBinaryUpload` klasse van de knoopmodule ](https://github.com/adobe/aem-upload) &lbrace;het geüpload geproduceerd beeld aan AEM en gebruikt [ AEM Content Fragment API ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) definitief om de inhoudsfragmenten bij te werken.
+Wanneer _produceer de vorm van het Beeld_ wordt voorgelegd, haalt een douane `onSubmitHandler()` de actie van Adobe I/O Runtime aan, die de beeldbeschrijving, de huidige gastheer van AEM (domein), en het toegangstoken van AEM van de gebruiker overgaat. De actie roept dan OpenAI [ generatie van het Beeld ](https://beta.openai.com/docs/guides/images/image-generation-beta) API om een beeld te produceren gebruikend de voorgelegde beeldbeschrijving. Daarna die [ AEM gebruiken uploadt `DirectBinaryUpload` klasse van de knoopmodule ](https://github.com/adobe/aem-upload) &lbrace;het geüpload geproduceerd beeld aan AEM en gebruikt [ AEM Content Fragment API ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=nl-NL) definitief om de inhoudsfragmenten bij te werken.
 
 Wanneer de reactie van de Adobe I/O Runtime-actie wordt ontvangen, wordt het modaal bijgewerkt om de resultaten van de afbeeldingsgeneratiebewerking weer te geven.
 
@@ -482,7 +482,7 @@ export default function GenerateImageModal() {
 
 >[!NOTE]
 >
->In de `buildAssetDetailsURL()` functie, veronderstelt de `aemAssetdetailsURL` veranderlijke waarde dat [ Verenigde Shell ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html#overview) wordt toegelaten. Als u Verenigde Shell hebt onbruikbaar gemaakt, moet u `/ui#/aem` uit de veranderlijke waarde verwijderen.
+>In de `buildAssetDetailsURL()` functie, veronderstelt de `aemAssetdetailsURL` veranderlijke waarde dat [ Verenigde Shell ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=nl-NL#overview) wordt toegelaten. Als u Verenigde Shell hebt onbruikbaar gemaakt, moet u `/ui#/aem` uit de veranderlijke waarde verwijderen.
 
 
 ### Adobe I/O Runtime-actie

@@ -51,7 +51,7 @@ AEM as a Cloud Service CDN slaat het volgende in cache op:
 + HTTP-responsinstantie
 + HTTP-antwoordheaders
 
-Een HTTP-aanvraag/reactie voor één URL wordt doorgaans als één object in de cache opgeslagen. De CDN kan echter meerdere objecten voor één URL in cache plaatsen wanneer de header `Vary` wordt ingesteld op het HTTP-antwoord. Vermijd het opgeven van `Vary` op headers waarvan de waarden geen strak gecontroleerde reeks waarden hebben, aangezien dit kan leiden tot veel cachevervallen, waardoor de hit-verhouding van de cache afneemt. Om caching van variërende verzoeken bij AEM Dispatcher te steunen, [ herzie de variant caching documentatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/variant-caching.html).
+Een HTTP-aanvraag/reactie voor één URL wordt doorgaans als één object in de cache opgeslagen. De CDN kan echter meerdere objecten voor één URL in cache plaatsen wanneer de header `Vary` wordt ingesteld op het HTTP-antwoord. Vermijd het opgeven van `Vary` op headers waarvan de waarden geen strak gecontroleerde reeks waarden hebben, aangezien dit kan leiden tot veel cachevervallen, waardoor de hit-verhouding van de cache afneemt. Om caching van variërende verzoeken bij AEM Dispatcher te steunen, [ herzie de variant caching documentatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/variant-caching.html?lang=nl-NL).
 
 ### Levensduur cache{#cdn-cache-life}
 
@@ -71,15 +71,15 @@ Als een reactie van HTTP voor AEM Dispatcher in het voorgeheugen onderbrengend [
 
 | Inhoudstype | Standaardlevensduur van CDN-cache |
 |:------------ |:---------- |
-| [ HTML/JSON/XML ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#html-text) | 5 minuten |
-| [ Assets (beelden, video&#39;s, documenten, etc.) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#images) | 10 minuten |
-| [ Blijven vragen (JSON) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?publish-instances) | 2 uur |
-| [ de bibliotheken van de Cliënt (JS/CSS) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#client-side-libraries) | dertig dagen |
-| [ Andere ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content) | Niet in cache geplaatst |
+| [ HTML/JSON/XML ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=nl-NL#html-text) | 5 minuten |
+| [ Assets (beelden, video&#39;s, documenten, etc.) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=nl-NL#images) | 10 minuten |
+| [ Blijven vragen (JSON) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=nl-NL&publish-instances) | 2 uur |
+| [ de bibliotheken van de Cliënt (JS/CSS) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=nl-NL#client-side-libraries) | dertig dagen |
+| [ Andere ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=nl-NL#other-content) | Niet in cache geplaatst |
 
 ### Cacheregels aanpassen
 
-[ Vormend hoe CDN inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#disp) in het voorgeheugen onderbrengt beperkt is tot het plaatsen van geheim voorgeheugenkopballen op de reacties van HTTP. Deze cacheheaders worden doorgaans ingesteld in AEM Dispatcher `vhost` -configuraties met `mod_headers` , maar kunnen ook worden ingesteld in aangepaste Java™-code die wordt uitgevoerd in AEM Publish zelf.
+[ Vormend hoe CDN inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=nl-NL#disp) in het voorgeheugen onderbrengt beperkt is tot het plaatsen van geheim voorgeheugenkopballen op de reacties van HTTP. Deze cacheheaders worden doorgaans ingesteld in AEM Dispatcher `vhost` -configuraties met `mod_headers` , maar kunnen ook worden ingesteld in aangepaste Java™-code die wordt uitgevoerd in AEM Publish zelf.
 
 ## AEM Dispatcher
 
@@ -95,10 +95,10 @@ HTTP-reacties voor corresponderende HTTP-aanvragen worden in de cache geplaatst 
 + De reactie van HTTP is NIET voor een binair dossier.
 + Het URL-pad van de HTTP-aanvraag eindigt met een extensie, bijvoorbeeld: `.html` , `.json` , `.css` , `.js` , enzovoort.
 + HTTP-aanvraag bevat geen autorisatie en wordt niet geverifieerd door AEM.
-   + Nochtans, kan het caching van voor authentiek verklaarde verzoeken [ globaal ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-when-authentication-is-used) of selectief via [ toestemming worden toegelaten gevoelig caching ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html).
+   + Nochtans, kan het caching van voor authentiek verklaarde verzoeken [ globaal ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#caching-when-authentication-is-used) of selectief via [ toestemming worden toegelaten gevoelig caching ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=nl-NL).
 + HTTP-aanvraag bevat geen queryparameters.
-   + Nochtans, het vormen [ Genegeerde vraagparameters ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters) staat HTTP- verzoeken met de genegeerde vraagparameters toe om van het geheime voorgeheugen worden in cache worden opgeslagen/worden gediend.
-+ De weg van HTTP- verzoek [ past een regel van Dispatcher toe, en past geen ontkent regel ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache) aan.
+   + Nochtans, het vormen [ Genegeerde vraagparameters ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#ignoring-url-parameters) staat HTTP- verzoeken met de genegeerde vraagparameters toe om van het geheime voorgeheugen worden in cache worden opgeslagen/worden gediend.
++ De weg van HTTP- verzoek [ past een regel van Dispatcher toe, en past geen ontkent regel ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#specifying-the-documents-to-cache) aan.
 + HTTP-respons heeft geen van de volgende HTTP-responsheaders die door AEM Publish zijn ingesteld:
 
    + `no-cache`
@@ -110,7 +110,7 @@ HTTP-reacties voor corresponderende HTTP-aanvragen worden in de cache geplaatst 
 AEM Dispatcher plaatst het volgende in cache:
 
 + HTTP-responsinstantie
-+ De de reactiekopballen van HTTP die in de Dispatcher [ configuratie van de geheim voorgeheugenkopballen ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-http-response-headers) worden gespecificeerd. Zie de standaardconfiguratie die schepen met het [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/available_farms/default.farm#L106-L113).
++ De de reactiekopballen van HTTP die in de Dispatcher [ configuratie van de geheim voorgeheugenkopballen ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#caching-http-response-headers) worden gespecificeerd. Zie de standaardconfiguratie die schepen met het [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/available_farms/default.farm#L106-L113).
    + `Cache-Control`
    + `Content-Disposition`
    + `Content-Type`
@@ -123,7 +123,7 @@ AEM Dispatcher plaatst het volgende in cache:
 AEM Dispatcher plaatst HTTP-reacties in cache met de volgende methoden:
 
 + Totdat de validatie wordt geactiveerd door mechanismen zoals het publiceren of ongedaan maken van de publicatie van de inhoud.
-+ TTL (tijd-aan-levende) wanneer uitdrukkelijk [ in de configuratie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) wordt gevormd. Zie de standaardconfiguratie in het [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/available_farms/default.farm#L122-L127) door de `enableTTL` configuratie te herzien.
++ TTL (tijd-aan-levende) wanneer uitdrukkelijk [ in de configuratie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#configuring-time-based-cache-invalidation-enablettl) wordt gevormd. Zie de standaardconfiguratie in het [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/available_farms/default.farm#L122-L127) door de `enableTTL` configuratie te herzien.
 
 #### Standaardcache-levensduur
 
@@ -131,15 +131,15 @@ Als een reactie van HTTP voor AEM Dispatcher in het voorgeheugen onderbrengend [
 
 | Inhoudstype | Standaardlevensduur van CDN-cache |
 |:------------ |:---------- |
-| [ HTML/JSON/XML ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#html-text) | Tot ongeldigmaking |
-| [ Assets (beelden, video&#39;s, documenten, etc.) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#images) | Nooit |
-| [ Blijven vragen (JSON) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?publish-instances) | 1 minuut |
-| [ de bibliotheken van de Cliënt (JS/CSS) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#client-side-libraries) | dertig dagen |
-| [ Andere ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content) | Tot ongeldigmaking |
+| [ HTML/JSON/XML ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=nl-NL#html-text) | Tot ongeldigmaking |
+| [ Assets (beelden, video&#39;s, documenten, etc.) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=nl-NL#images) | Nooit |
+| [ Blijven vragen (JSON) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=nl-NL&publish-instances) | 1 minuut |
+| [ de bibliotheken van de Cliënt (JS/CSS) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=nl-NL#client-side-libraries) | dertig dagen |
+| [ Andere ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=nl-NL#other-content) | Tot ongeldigmaking |
 
 ### Cacheregels aanpassen
 
-Het geheime voorgeheugen van AEM Dispatcher kan via de [ configuratie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache) met inbegrip van worden gevormd:
+Het geheime voorgeheugen van AEM Dispatcher kan via de [ configuratie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#configuring-the-dispatcher-cache-cache) met inbegrip van worden gevormd:
 
 + Wat is in cache geplaatst
 + Welke delen van de cache ongeldig worden gemaakt bij publiceren/verwijderen

@@ -24,8 +24,8 @@ ht-degree: 0%
 >id="aemcloud_localdev_dispatcher"
 >title="Lokale Dispatcher-gereedschappen"
 >abstract="Dispatcher is een integraal onderdeel van de algemene Experience Manager-architectuur en moet deel uitmaken van de plaatselijke ontwikkelingsinstellingen. De AEM as a Cloud Service SDK bevat de aanbevolen versie van Dispatcher Tools waarmee u het valideren en het lokaal simuleren van Dispatcher kunt configureren."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html" text="Dispatcher in de cloud"
->additional-url="https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html" text="AEM as a Cloud Service SDK downloaden"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=nl-NL" text="Dispatcher in de cloud"
+>additional-url="https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL" text="AEM as a Cloud Service SDK downloaden"
 
 Adobe Experience Manager (AEM)&#39;s Dispatcher is een Apache HTTP Web server module die een veiligheid en prestatieslaag tussen CDN en AEM Publish rij verstrekt. Dispatcher is een integraal onderdeel van de algemene Experience Manager-architectuur en moet deel uitmaken van de plaatselijke ontwikkelingsinstellingen.
 
@@ -115,7 +115,7 @@ Een volledige beschrijving van de configuratiebestanden is beschikbaar in de onv
 
 ## Configuraties valideren
 
-Optioneel kunnen de Dispatcher- en Apache Web-serverconfiguraties (via `httpd -t`) worden gevalideerd met behulp van het `validate` -script (niet te verwarren met het `validator` -uitvoerbare bestand). Het `validate` manuscript verstrekt een geschikte manier om de [ drie fasen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html?lang=en) van `validator` in werking te stellen.
+Optioneel kunnen de Dispatcher- en Apache Web-serverconfiguraties (via `httpd -t`) worden gevalideerd met behulp van het `validate` -script (niet te verwarren met het `validator` -uitvoerbare bestand). Het `validate` manuscript verstrekt een geschikte manier om de [ drie fasen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html?lang=nl-NL) van `validator` in werking te stellen.
 
 
 >[!BEGINTABS]
@@ -396,4 +396,4 @@ Waiting until host.docker.internal is available
 + [ Adobe Cloud Manager ](https://my.cloudmanager.adobe.com/)
 + [ Docker van de Download ](https://www.docker.com/)
 + [ Download de Website van de Verwijzing van AEM (WKND) ](https://github.com/adobe/aem-guides-wknd/releases)
-+ [ de Documentatie van Experience Manager Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
++ [ de Documentatie van Experience Manager Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL)

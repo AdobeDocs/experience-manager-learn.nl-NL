@@ -28,7 +28,7 @@ U hebt het volgende nodig:
 
 * Een werkende instantie van AEM met het Forms Add-on pakket geïnstalleerd.
 
-* [ het milieu van de Ontwikkeling opstelling volgens dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+* [ het milieu van de Ontwikkeling opstelling volgens dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=nl-NL)
 
 * AEM Forms Designer
 

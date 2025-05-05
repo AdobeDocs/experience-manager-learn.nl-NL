@@ -83,7 +83,7 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL">
       <img alt= "Captch in AEM Forms" src="./assets/captcha1.png" />
     </a>
     <div>
@@ -175,11 +175,11 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 
 ## Aanvullende bronnen
 
-* [ Experience League - onderzoek AEM ](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [ de Authoring Documentatie van AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
-* [ AEM Sites het Ontwikkelen Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
-* [ AEM Sites die Documentatie beheren ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
-* [ AEM Sites die Documentatie opstelt ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
+* [ Experience League - onderzoek AEM ](https://experienceleague.adobe.com/nl#recommended/solutions/experience-manager)
+* [ de Authoring Documentatie van AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html?lang=nl-NL)
+* [ AEM Sites het Ontwikkelen Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html?lang=nl-NL)
+* [ AEM Sites die Documentatie beheren ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html?lang=nl-NL)
+* [ AEM Sites die Documentatie opstelt ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html?lang=nl-NL)
 * [Tutorials voor AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutorials voor AEM Assets](/help/assets/overview.md)
 * [Tutorials voor AEM Forms](/help/forms/overview.md)

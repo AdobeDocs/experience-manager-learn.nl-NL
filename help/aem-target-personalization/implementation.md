@@ -22,7 +22,7 @@ ht-degree: 0%
 In deze sectie zullen we bespreken hoe we Adobe Experience Manager Sites voor verschillende scenario&#39;s kunnen instellen met Adobe Target. Gebaseerd op uw scenario en organisatorische vereisten.
 
 * **voeg de Bibliotheek van Adobe Target JavaScript (die voor alle scenario&#39;s wordt vereist) toe**
-Voor plaatsen die op AEM worden ontvangen, kunt u de bibliotheken van het Doel aan uw plaats toevoegen gebruikend, [ markeringen in Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). Tags bieden een eenvoudige manier om alle tags te implementeren en te beheren die nodig zijn om relevante ervaringen van klanten te benutten.
+Voor plaatsen die op AEM worden ontvangen, kunt u de bibliotheken van het Doel aan uw plaats toevoegen gebruikend, [ markeringen in Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl-NL). Tags bieden een eenvoudige manier om alle tags te implementeren en te beheren die nodig zijn om relevante ervaringen van klanten te benutten.
 * **voeg de Cloud Servicen van Adobe Target (die voor het scenario van de Fragmenten van de Ervaring worden vereist) toe**
 Voor AEM klanten, die de aanbiedingen van het Fragment van de Ervaring willen gebruiken om een activiteit binnen Adobe Target tot stand te brengen, zult u Adobe Target met AEM moeten integreren gebruikend de Verouderde Cloud Servicen. Deze integratie is vereist om Experience Fragments van AEM naar Target te duwen als HTML/JSON aanbiedingen en om de aanbiedingen gelijk te houden met AEM. *Deze integratie wordt vereist voor het uitvoeren van scenario 1.*
 
@@ -58,7 +58,7 @@ AEM auteur- en publicatieexemplaar is nodig om deze zelfstudie te voltooien. De 
 
 #### Auteur- en Publish-instanties instellen
 
-1. Krijg een exemplaar van [ AEM Quickstart Jar en een vergunning.](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware)
+1. Krijg een exemplaar van [ AEM Quickstart Jar en een vergunning.](https://helpx.adobe.com/nl/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware)
 2. Maak als volgt een mapstructuur op uw computer:
    ![ de Structuur van de Omslag ](assets/implementation/aem-setup-1.png)
 3. Wijzig de naam van de QuickStart-jar in `aem-author-p4502.jar` en plaats deze onder de `/author` -map. Voeg het bestand `license.properties` toe onder de map `/author` .

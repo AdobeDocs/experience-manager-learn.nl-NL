@@ -34,7 +34,7 @@ Acroformulieren zijn formulieren die zijn gemaakt met Acrobat. U kunt een geheel
 >
 >Als u een XFA-document verzendt, moet u het document afvlakken en moeten de Acrobat Sign-handtekeningcodes aanwezig zijn als statische tekst in het document.
 
-[ het Document van de Markeringen van de Tekst van Acrobat Sign ](https://helpx.adobe.com/sign/using/text-tag.html)
+[ het Document van de Markeringen van de Tekst van Acrobat Sign ](https://helpx.adobe.com/nl/sign/using/text-tag.html)
 
 >[!NOTE]
 >

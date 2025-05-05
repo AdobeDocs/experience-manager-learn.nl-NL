@@ -38,7 +38,7 @@ In dit hoofdstuk leert u hoe te:
 ## De GraphiQL Explorer gebruiken
 
 
-Het [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) hulpmiddel van de Ontdekkingsreiziger 0&rbrace; GraphiQL laat ontwikkelaars toe om, en testvragen tegen inhoud op het huidige milieu van AEM tot stand te brengen.  Het hulpmiddel GraphiQL laat ook gebruikers toe om **voort te zetten of** vragen te bewaren die door cliënttoepassingen in een productie het plaatsen moeten worden gebruikt.
+Het [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html?lang=nl-NL) hulpmiddel van de Ontdekkingsreiziger 0&rbrace; GraphiQL laat ontwikkelaars toe om, en testvragen tegen inhoud op het huidige milieu van AEM tot stand te brengen.  Het hulpmiddel GraphiQL laat ook gebruikers toe om **voort te zetten of** vragen te bewaren die door cliënttoepassingen in een productie het plaatsen moeten worden gebruikt.
 
 Verken vervolgens de kracht van de AEM GraphQL API met behulp van de ingebouwde GraphiQL Explorer.
 

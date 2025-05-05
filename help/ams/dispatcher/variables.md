@@ -178,7 +178,7 @@ Define WERETAIL_DOMAIN www.weretail.com
 Define WERETAIL_ALT_DOMAIN www..weretail.net
 ```
 
-Wanneer het creëren van uw eigen variabelendossiers noemen hen volgens hun inhoud en om de het noemen normen te volgen die in het handboek [ hier ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17477.html#naming-convention) worden verstrekt.  In het bovenstaande voorbeeld ziet u dat het variabelenbestand de verschillende DNS-vermeldingen bevat als variabelen die in de configuratiebestanden moeten worden gebruikt.
+Wanneer het creëren van uw eigen variabelendossiers noemen hen volgens hun inhoud en om de het noemen normen te volgen die in het handboek [ hier ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17477.html?lang=nl-NL#naming-convention) worden verstrekt.  In het bovenstaande voorbeeld ziet u dat het variabelenbestand de verschillende DNS-vermeldingen bevat als variabelen die in de configuratiebestanden moeten worden gebruikt.
 
 ## Variabelen gebruiken
 

@@ -21,7 +21,7 @@ In dit artikel wordt u door het proces geleid voor het maken van een servicegebr
 
 In vorige versies van Adobe Experience Manager (AEM) werd de beheerresourceoplosser gebruikt voor back-end verwerking, waarvoor toegang tot de opslagplaats was vereist. Het gebruik van de oplossing van de administratieve bron is afgekeurd in AEM 6.3. In plaats daarvan wordt een systeemgebruiker met specifieke machtigingen in de opslagplaats gebruikt.
 
-Leer meer over de details van [ het creëren van en het gebruiken van de dienstgebruikers in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
+Leer meer over de details van [ het creëren van en het gebruiken van de dienstgebruikers in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html?lang=nl-NL).
 
 Dit artikel doorloopt de verwezenlijking van een systeemgebruiker en het vormen van de eigenschappen van de gebruikerskaart.
 

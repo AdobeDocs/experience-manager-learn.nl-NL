@@ -24,7 +24,7 @@ Waarom doet elk artikel in de context van AEM in de Admin Console? Het team prob
 
 ## Inhoud die in deze video wordt behandeld
 
-+ [ Begrijp Admin Console ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html)
++ [ Begrijp Admin Console ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html?lang=nl-NL)
 + [ het Overzicht van Admin Console ](https://helpx.adobe.com/nl/enterprise/using/admin-console.html)
 
 ## Aanvullende bronnen

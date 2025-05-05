@@ -70,11 +70,11 @@ De fouten die in deze fase zijn vastgesteld, moeten de lokale opbouw van het pro
 
 Met codescannen wordt een statische codeanalyse uitgevoerd met behulp van een combinatie van Java- en AEM-specifieke aanbevolen procedures.
 
-Het aftasten van de code resulteert in een bouwstijlmislukking als de Kritieke kwetsbaarheid van de Veiligheid in de code bestaat. Minder overtredingen kunnen worden overschreven, maar het wordt aanbevolen dat deze worden gecorrigeerd. Merk op dat het codescannen onvolledig is en in [ valse positieven ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html#dealing-with-false-positives) kan resulteren.
+Het aftasten van de code resulteert in een bouwstijlmislukking als de Kritieke kwetsbaarheid van de Veiligheid in de code bestaat. Minder overtredingen kunnen worden overschreven, maar het wordt aanbevolen dat deze worden gecorrigeerd. Merk op dat het codescannen onvolledig is en in [ valse positieven ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=nl-NL#dealing-with-false-positives) kan resulteren.
 
 Om code die kwesties aftasten op te lossen, download het CSV-Geformatteerde rapport door Cloud Manager via de **knoop van de Details van de Download** wordt verstrekt en herzie om het even welke ingangen die.
 
-Voor meer details zie AEM specifieke regels, zie de documentaties van Cloud Manager [ douane AEM-specifieke regels van het codescannen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html).
+Voor meer details zie AEM specifieke regels, zie de documentaties van Cloud Manager [ douane AEM-specifieke regels van het codescannen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html?lang=nl-NL).
 
 ## Afbeeldingen samenstellen
 
@@ -102,7 +102,7 @@ set the 'mergeConfigurations' flag to 'true' if you want to merge multiple confi
 #### Oorzaak 2
 
 + __Oorzaak:__ het project van AEM omvat verkeerd het zelfde codepakket tweemaal, resulterend in de duplicatie van om het even welke configuratie OSGi in genoemd pakket.
-+ __Resolutie:__ herzie alle pom.xml- pakketten ingebed in het al project, en zorg ervoor zij de `filevault-package-maven-plugin` [ configuratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#cloud-manager-target) hebben die aan `<cloudManagerTarget>none</cloudManagerTarget>` wordt geplaatst.
++ __Resolutie:__ herzie alle pom.xml- pakketten ingebed in het al project, en zorg ervoor zij de `filevault-package-maven-plugin` [ configuratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL#cloud-manager-target) hebben die aan `<cloudManagerTarget>none</cloudManagerTarget>` wordt geplaatst.
 
 ### Onjuist geformuleerd script voor opnieuw aanwijzen
 
@@ -230,8 +230,8 @@ Om deze kwestie te bevestigen is de oorzaak van het falende gedrag:
 + __Oorzaak:__ de gebruiker van de replicatieservice van AEM die wordt gebruikt om inhoudspakketten aan de publicatieservice van AEM op te stellen kan niet aan `/var` op AEM publiceren schrijven. Dit betekent dat de implementatie van het inhoudspakket voor de AEM-publicatieservice mislukt.
 + __Resolutie:__ De volgende manieren om deze kwesties op te lossen zijn vermeld in de orde van voorkeur:
    1. Als de `/var` -bronnen niet nodig zijn, verwijdert u onder `/var` bronnen uit inhoudspakketten die als onderdeel van uw toepassing worden geïmplementeerd.
-   2. Als de `/var` middelen noodzakelijk zijn, bepaal de knoopstructuren gebruikend [ repoinit ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit). Scripts voor opnieuw aanwijzen kunnen worden gericht op AEM Author, AEM Publish of beide via OSGi runmodes.
-   3. Als de `/var` middelen slechts op de auteur van AEM worden vereist en redelijkerwijs niet kunnen worden gemodelleerd gebruikend [ repoinit ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit), hen naar een discrete inhoudspakket verplaatsen, dat slechts geïnstalleerd op de Auteur van AEM door [ inbeddend ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#embeddeds) het in het `all` pakket in een de runmode omslag van de Auteur van AEM (`<target>/apps/example-packages/content/install.author</target>`) is.
+   2. Als de `/var` middelen noodzakelijk zijn, bepaal de knoopstructuren gebruikend [ repoinit ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=nl-NL#repoinit). Scripts voor opnieuw aanwijzen kunnen worden gericht op AEM Author, AEM Publish of beide via OSGi runmodes.
+   3. Als de `/var` middelen slechts op de auteur van AEM worden vereist en redelijkerwijs niet kunnen worden gemodelleerd gebruikend [ repoinit ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=nl-NL#repoinit), hen naar een discrete inhoudspakket verplaatsen, dat slechts geïnstalleerd op de Auteur van AEM door [ inbeddend ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL#embeddeds) het in het `all` pakket in een de runmode omslag van de Auteur van AEM (`<target>/apps/example-packages/content/install.author</target>`) is.
    4. Verstrek aangewezen ACLs aan de `sling-distribution-importer` dienstgebruiker zoals die in dit [ wordt beschreven Adobe KB ](https://helpx.adobe.com/in/experience-manager/kb/cm/cloudmanager-deploy-fails-due-to-sling-distribution-aem.html).
 
 ### Een Adobe-ondersteuningsgeval maken

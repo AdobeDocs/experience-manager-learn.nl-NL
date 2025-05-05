@@ -29,4 +29,4 @@ Dankzij deze integratie kan de AEM Auteur rechtstreeks communiceren met Adobe Ta
 
 >[!CAUTION]
 >
->Er is een bekend probleem met de configuratie van Adobe Target-Cloud Servicen die in de video wordt weergegeven. Tot dit probleem wordt opgelost, volg de zelfde stappen in de video maar gebruik de [ Cloud Servicen van erfenisAdobe Target configuratie ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).
+>Er is een bekend probleem met de configuratie van Adobe Target-Cloud Servicen die in de video wordt weergegeven. Tot dit probleem wordt opgelost, volg de zelfde stappen in de video maar gebruik de [ Cloud Servicen van erfenisAdobe Target configuratie ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html?lang=nl-NL).

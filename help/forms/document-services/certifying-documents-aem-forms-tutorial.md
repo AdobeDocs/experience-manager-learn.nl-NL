@@ -22,7 +22,7 @@ Een gecertificeerd document biedt ontvangers van PDF-documenten en formulieren e
 
 Als u een document wilt certificeren, kunt u Acrobat DC op het bureaublad of AEM Forms Document Services gebruiken als onderdeel van een geautomatiseerd proces op een server.
 
-Dit artikel verstrekt u steekproefOSGI bundel om pdf- documenten te certificeren gebruikend het Document Services van AEM Forms.De code die in de steekproef wordt gebruikt is [ hier beschikbaar ](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
+Dit artikel verstrekt u steekproefOSGI bundel om pdf- documenten te certificeren gebruikend het Document Services van AEM Forms.De code die in de steekproef wordt gebruikt is [ hier beschikbaar ](https://helpx.adobe.com/nl/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
 
 Als u documenten wilt certificeren met AEM Forms, moet u de volgende stappen uitvoeren
 
@@ -43,7 +43,7 @@ Voer de onderstaande stappen uit om het certificaat toe te voegen aan het sleute
 U kunt uw eigen OSGi-bundel schrijven en AEM Forms Client SDK gebruiken om een service te implementeren voor de certificering van PDF-documenten. De volgende verbindingen zouden nuttig zijn om uw eigen bundel te schrijven OSGi
 
 * [ Creërend uw eerste bundel OSGi ](https://helpx.adobe.com/experience-manager/using/maven_arch13.html)
-* [ de Dienst API van het Document van het Gebruik ](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
+* [ de Dienst API van het Document van het Gebruik ](https://helpx.adobe.com/nl/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
 
 U kunt de voorbeeldbundel ook gebruiken als onderdeel van deze zelfstudie-elementen.
 

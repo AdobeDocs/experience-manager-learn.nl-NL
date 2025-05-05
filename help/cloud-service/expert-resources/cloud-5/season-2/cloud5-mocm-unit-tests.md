@@ -25,7 +25,7 @@ Een vaak over het hoofd gezien stap in de ontwikkeling van software, zijn eenhei
 ## Inhoud die in deze video wordt behandeld
 
 + Overzicht geautomatiseerde controles
-+ [ de Regels van de Kwaliteit van de Code van de Douane ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html)
++ [ de Regels van de Kwaliteit van de Code van de Douane ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=nl-NL)
 
 ## Aanvullende bronnen
 

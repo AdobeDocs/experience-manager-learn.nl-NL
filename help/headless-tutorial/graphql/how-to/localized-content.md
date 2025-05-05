@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Gelokaliseerde inhoud met AEM Headless
 
-AEM verstrekt het Kader van de Integratie van de a [ Vertaling ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) voor hoofdloze inhoud, toestaand de Fragmenten van de Inhoud en het steunen van activa om voor gebruik over scènes gemakkelijk worden vertaald. Dit is hetzelfde framework dat wordt gebruikt voor het vertalen van andere AEM-inhoud, zoals Pagina&#39;s, Experience Fragments, Assets en Forms. Zodra [ hoofdloze inhoud is vertaald ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html), en gepubliceerd, is het klaar voor consumptie door hoofdloze toepassingen.
+AEM verstrekt het Kader van de Integratie van de a [ Vertaling ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html?lang=nl-NL) voor hoofdloze inhoud, toestaand de Fragmenten van de Inhoud en het steunen van activa om voor gebruik over scènes gemakkelijk worden vertaald. Dit is hetzelfde framework dat wordt gebruikt voor het vertalen van andere AEM-inhoud, zoals Pagina&#39;s, Experience Fragments, Assets en Forms. Zodra [ hoofdloze inhoud is vertaald ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=nl-NL), en gepubliceerd, is het klaar voor consumptie door hoofdloze toepassingen.
 
 ## Assets-mapstructuur{#assets-folder-structure}
 
-Zorg ervoor dat de gelokaliseerde Fragments van de Inhoud in AEM de [ geadviseerde localisatiestructuur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure) volgen.
+Zorg ervoor dat de gelokaliseerde Fragments van de Inhoud in AEM de [ geadviseerde localisatiestructuur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html?lang=nl-NL#recommended-structure) volgen.
 
 ![ Gelokaliseerde de activaomslagen van AEM ](./assets/localized-content/asset-folders.jpg)
 

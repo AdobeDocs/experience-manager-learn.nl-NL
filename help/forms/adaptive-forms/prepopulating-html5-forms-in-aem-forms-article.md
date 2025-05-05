@@ -33,7 +33,7 @@ slingRequest.setAttribute(&quot;data&quot;, content);
 
 In dit voorbeeld stellen we het gegevenskenmerk in met de inhoud. De inhoud vertegenwoordigt de gegevens waarmee u het formulier vooraf wilt invullen. Typisch zou u de &quot;inhoud&quot;door een REST vraag aan de interne dienst halen.
 
-Voor dit gebruiksgeval moet u een aangepast profiel maken. De details bij het creëren van douaneprofiel worden duidelijk gedocumenteerd in [ documentatie van AEM Forms hier ](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html).
+Voor dit gebruiksgeval moet u een aangepast profiel maken. De details bij het creëren van douaneprofiel worden duidelijk gedocumenteerd in [ documentatie van AEM Forms hier ](https://helpx.adobe.com/nl/aem-forms/6/html5-forms/custom-profile.html).
 
 Zodra u uw douaneprofiel creeert, zult u dan een JSP dossier creëren dat de gegevens door vraag aan uw achterste deelsysteem zal halen. Nadat de gegevens zijn opgehaald, gebruikt u de slingRequest.setAttribute(&quot;data&quot;, inhoud); om het formulier vooraf in te vullen
 

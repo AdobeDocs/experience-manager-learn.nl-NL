@@ -37,7 +37,7 @@ Zorg ervoor dat het volgende is geïnstalleerd voordat u deze zelfstudie gaat vo
 
 ## Overzicht van externe toepassing
 
-Dit leerprogramma gebruikt a [ eenvoudige toepassing Node.js ](./assets/aem-guides_token-authentication-external-application.zip) looppas van de bevellijn om activa meta-gegevens op AEM as a Cloud Service bij te werken gebruikend [ HTTP API van Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html).
+Dit leerprogramma gebruikt a [ eenvoudige toepassing Node.js ](./assets/aem-guides_token-authentication-external-application.zip) looppas van de bevellijn om activa meta-gegevens op AEM as a Cloud Service bij te werken gebruikend [ HTTP API van Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=nl-NL).
 
 De uitvoeringsstroom van de toepassing Node.js is als volgt:
 

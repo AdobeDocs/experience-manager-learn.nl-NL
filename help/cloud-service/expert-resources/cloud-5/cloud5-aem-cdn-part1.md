@@ -26,7 +26,7 @@ Dit is een diepe duik in CDN die als deel van AEM as a Cloud Service wordt verst
 
 ## Inhoud van deel 1 van deze reeks
 
-+ AEM CDN [ Overzicht ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)
++ AEM CDN [ Overzicht ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=nl-NL)
 + Mogelijkheden van Web Application Firewall (WAF)
 + IP-beperkingen
 + DDOS-beveiliging

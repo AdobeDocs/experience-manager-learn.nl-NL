@@ -122,5 +122,5 @@ Het eindresultaat van een diff&#39;d-pagina met de bovenstaande stijlen zou er a
 ## Aanvullende bronnen {#additional-resources}
 
 * [ Download de wij.Retail steekproefplaats ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
-* [ Gebruikend de Bibliotheken van de Cliënt van AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [ Gebruikend de Bibliotheken van de Cliënt van AEM ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [ Minder CSS Documentatie ](https://lesscss.org/)

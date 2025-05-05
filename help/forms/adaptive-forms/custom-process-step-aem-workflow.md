@@ -29,7 +29,7 @@ Om het bovengenoemde gebruikscase te verwezenlijken, zult u typisch een dienst O
 
 ## Maven Project maken
 
-De eerste stap bestaat uit het maken van een gemaven project met behulp van het juiste Adobe Maven Archetype. De gedetailleerde stappen worden vermeld in dit [ artikel ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Zodra u uw Geweven project hebt die in Eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
+De eerste stap bestaat uit het maken van een gemaven project met behulp van het juiste Adobe Maven Archetype. De gedetailleerde stappen worden vermeld in dit [ artikel ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=nl-NL). Zodra u uw Geweven project hebt die in Eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
 
 
 ### Klasse maken die WorkflowProcess implementeert
@@ -42,9 +42,9 @@ public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaData
 
 De methode execute geeft toegang tot de volgende drie variabelen:
 
-**WorkItem**: De variabele workItem zal toegang tot gegevens verlenen met betrekking tot werkschema. De openbare API documentatie is beschikbaar [ hier.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkItem**: De variabele workItem zal toegang tot gegevens verlenen met betrekking tot werkschema. De openbare API documentatie is beschikbaar [ hier.](https://helpx.adobe.com/nl/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession**: Deze variabele workflowSession zal u de capaciteit geven om het werkschema te controleren. De openbare API documentatie is beschikbaar [ hier ](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html).
+**WorkflowSession**: Deze variabele workflowSession zal u de capaciteit geven om het werkschema te controleren. De openbare API documentatie is beschikbaar [ hier ](https://helpx.adobe.com/nl/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html).
 
 **MetaDataMap**: Alle meta-gegevens verbonden aan het werkschema. Alle procesargumenten die aan de processtap worden doorgegeven, zijn beschikbaar via het object MetaDataMap.[ API Documentatie ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
@@ -154,7 +154,7 @@ De dienst QueryBuilder wordt gebruikt aan vraagknopen van type `nt:file` onder d
 
 #### Samenstellen en implementeren
 
-[ bouwt de bundel zoals hier beschreven ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+[ bouwt de bundel zoals hier beschreven ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=nl-NL)
 [ zorg ervoor de bundel wordt opgesteld en in actieve staat ](http://localhost:4502/system/console/bundles)
 
 Maak een workflowmodel. De stap van het proces van de belemmering en van het dalingsproces in het werkschemamodel. Koppel de processtap aan &quot;Aangepaste formulierbijlagen opslaan naar bestandssysteem&quot;.

@@ -38,8 +38,8 @@ De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 
 De toepassing Node.js werkt met de volgende AEM-implementatieopties. Alle plaatsingen vereisen de [ Plaats van WKND v3.0.0+ ](https://github.com/adobe/aem-guides-wknd/releases/latest) om worden geïnstalleerd.
 
-+ [ AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ Naar keuze, [ de dienstgeloofsbrieven ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) als het machtigen van verzoeken (bijvoorbeeld, die met de dienst van de Auteur van AEM verbinden).
++ [ AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=nl-NL)
++ Naar keuze, [ de dienstgeloofsbrieven ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=nl-NL) als het machtigen van verzoeken (bijvoorbeeld, die met de dienst van de Auteur van AEM verbinden).
 
 Deze Node.js-toepassing kan verbinding maken met AEM Author of AEM Publish op basis van opdrachtregelparameters.
 

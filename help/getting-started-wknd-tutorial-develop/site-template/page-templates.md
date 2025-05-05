@@ -41,7 +41,7 @@ In dit gedeelte van de zelfstudie maakt u een nieuwe sjabloon voor de artikelpag
 
 Wanneer u een pagina maakt, moet u een sjabloon selecteren die wordt gebruikt als basis voor het maken van de nieuwe pagina. De sjabloon definieert de structuur van de resulterende pagina, de initiële inhoud en de toegestane componenten.
 
-Er zijn 3 belangrijke gebieden van [ Malplaatjes van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html):
+Er zijn 3 belangrijke gebieden van [ Malplaatjes van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=nl-NL):
 
 1. **Structuur** - bepaalt componenten die een deel van het malplaatje zijn. Deze kunnen niet worden bewerkt door de auteurs van de inhoud.
 1. **Aanvankelijke Inhoud** - bepaalt componenten die het malplaatje met begint, kunnen deze worden uitgegeven en/of door inhoudauteurs worden geschrapt
@@ -62,7 +62,7 @@ Een gebeëindigde [ oplossing van het Malplaatje van het Tijdschrift ](assets/pa
 
 ## Koptekst en voettekst bijwerken met ervaringsfragmenten {#experience-fragments}
 
-Een gemeenschappelijke praktijk wanneer het creëren van globale inhoud, zoals een kopbal of footer, moet een [ Fragment van de Ervaring gebruiken ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Met de functie Fragmenten van ervaring kunnen gebruikers meerdere componenten combineren om één component te maken die geschikt is voor referentie. De Fragmenten van de ervaring hebben het voordeel om multi-site beheer en [ localisatie ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure) te steunen.
+Een gemeenschappelijke praktijk wanneer het creëren van globale inhoud, zoals een kopbal of footer, moet een [ Fragment van de Ervaring gebruiken ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=nl-NL). Met de functie Fragmenten van ervaring kunnen gebruikers meerdere componenten combineren om één component te maken die geschikt is voor referentie. De Fragmenten van de ervaring hebben het voordeel om multi-site beheer en [ localisatie ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=nl-NL#localized-site-structure) te steunen.
 
 De Sitesjabloon genereerde een kop- en voettekst. Werk vervolgens de Experience Fragments bij zodat deze overeenkomen met de modellen. Voer de stappen in de onderstaande video uit:
 

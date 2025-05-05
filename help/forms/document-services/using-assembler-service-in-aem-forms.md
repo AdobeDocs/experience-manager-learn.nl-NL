@@ -115,7 +115,7 @@ Om deze functie te laten werken op uw AEM-server
 >
 >Zorg ervoor dat de AEM Forms-installatie is voltooid. Alle bundels moeten actief zijn.
 >
->Zorg ervoor u hebt toegevoegd - de bibliotheken van de afgevaardigde van de Laars RSA en BouncyCastle zoals vermeld in dit [ Installerend AEM Forms ](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>Zorg ervoor u hebt toegevoegd - de bibliotheken van de afgevaardigde van de Laars RSA en BouncyCastle zoals vermeld in dit [ Installerend AEM Forms ](https://helpx.adobe.com/nl/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
 >**Beveats voor deze Demo**
 >
