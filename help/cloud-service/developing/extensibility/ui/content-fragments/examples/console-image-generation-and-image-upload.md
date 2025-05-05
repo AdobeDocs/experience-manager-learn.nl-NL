@@ -41,8 +41,8 @@ De functionele stroom van de voorbeeldextensie is als volgt:
 1. [ modaal ](#modal) toont een vorm van de douanetoevoer die met [ wordt gebouwd Reageer Spectrum ](https://react-spectrum.adobe.com/react-spectrum/).
 1. Het voorleggen van de vorm verzendt de gebruiker verstrekte `Image Description` tekst, het geselecteerde Fragment van de Inhoud, en de gastheer van AEM naar de [ douaneactie van Adobe I/O Runtime ](#adobe-io-runtime-action).
 1. De [ actie van Adobe I/O Runtime ](#adobe-io-runtime-action) bevestigt de input.
-1. Daarna roept het de generatie van het Beeld OpenAI [ ](https://beta.openai.com/docs/guides/images/image-generation-beta) API en het gebruikt `Image Description` tekst om te specificeren welk beeld zou moeten worden geproduceerd.
-1. Het ](https://beta.openai.com/docs/guides/images/image-generation-beta) eindpunt van de beeldgeneratie van 0} {leidt tot een origineel beeld van grootte _1024x1024_ pixel gebruikend de waarde van de vraagparameter en keert het geproduceerde beeld URL als reactie terug.[
+1. Daarna roept het de generatie van het Beeld OpenAI [&#128279;](https://beta.openai.com/docs/guides/images/image-generation-beta) API en het gebruikt `Image Description` tekst om te specificeren welk beeld zou moeten worden geproduceerd.
+1. Het [&#128279;](https://beta.openai.com/docs/guides/images/image-generation-beta) eindpunt van de beeldgeneratie van 0&rbrace; &lbrace;leidt tot een origineel beeld van grootte _1024x1024_ pixel gebruikend de waarde van de vraagparameter en keert het geproduceerde beeld URL als reactie terug.
 1. De [ actie van Adobe I/O Runtime ](#adobe-io-runtime-action) downloadt het geproduceerde beeld aan runtime van App Builder.
 1. Vervolgens wordt het uploaden van de afbeelding vanuit de App Builder-runtime naar AEM DAM gestart onder een vooraf gedefinieerd pad.
 1. De AEM as a Cloud Service slaat de afbeelding op naar de DAM en retourneert een geslaagde of mislukte reactie op de Adobe I/O Runtime-actie. Met de voltooide upload-reactie wordt de waarde van de afbeeldingseigenschap van het geselecteerde inhoudsfragment bijgewerkt aan de hand van een andere HTTP-aanvraag naar AEM vanuit de Adobe I/O Runtime-actie.
@@ -223,7 +223,7 @@ In deze voorbeeld-app is er een modale React-component (`GenerateImageModal.js`)
 Belangrijk, zou om het even welke interactie met AEM van de uitbreiding aan een [ actie van Adobe I/O Runtime AppBuilder ](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) moeten worden gedelegeerd, die een afzonderlijk serverless proces is dat in [ Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/) loopt.
 Het gebruik van Adobe I/O Runtime-acties om met AEM te communiceren, en is bedoeld om problemen met de connectiviteit van het delen van bronnen van verschillende oorsprong (CORS) te voorkomen.
 
-Wanneer _produceer de vorm van het Beeld_ wordt voorgelegd, haalt een douane `onSubmitHandler()` de actie van Adobe I/O Runtime aan, die de beeldbeschrijving, de huidige gastheer van AEM (domein), en het toegangstoken van AEM van de gebruiker overgaat. De actie roept dan OpenAI [ generatie van het Beeld ](https://beta.openai.com/docs/guides/images/image-generation-beta) API om een beeld te produceren gebruikend de voorgelegde beeldbeschrijving. Daarna die [ AEM gebruiken uploadt `DirectBinaryUpload` klasse van de knoopmodule ](https://github.com/adobe/aem-upload) {het geüpload geproduceerd beeld aan AEM en gebruikt [ AEM Content Fragment API ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) definitief om de inhoudsfragmenten bij te werken.
+Wanneer _produceer de vorm van het Beeld_ wordt voorgelegd, haalt een douane `onSubmitHandler()` de actie van Adobe I/O Runtime aan, die de beeldbeschrijving, de huidige gastheer van AEM (domein), en het toegangstoken van AEM van de gebruiker overgaat. De actie roept dan OpenAI [ generatie van het Beeld ](https://beta.openai.com/docs/guides/images/image-generation-beta) API om een beeld te produceren gebruikend de voorgelegde beeldbeschrijving. Daarna die [ AEM gebruiken uploadt `DirectBinaryUpload` klasse van de knoopmodule ](https://github.com/adobe/aem-upload) &lbrace;het geüpload geproduceerd beeld aan AEM en gebruikt [ AEM Content Fragment API ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) definitief om de inhoudsfragmenten bij te werken.
 
 Wanneer de reactie van de Adobe I/O Runtime-actie wordt ontvangen, wordt het modaal bijgewerkt om de resultaten van de afbeeldingsgeneratiebewerking weer te geven.
 
@@ -492,7 +492,7 @@ Adobe Runtime-actie is verantwoordelijk voor werk dat interactie met AEM, Adobe 
 
 In deze voorbeeldapp is de `generate-image` Adobe I/O Runtime-actie verantwoordelijk voor:
 
-1. Het produceren van een beeld gebruikend ](https://beta.openai.com/docs/guides/images/image-generation-beta) de dienst van de Generatie van het Beeld OpenAI API[
+1. Het produceren van een beeld gebruikend [&#128279;](https://beta.openai.com/docs/guides/images/image-generation-beta) de dienst van de Generatie van het Beeld OpenAI API
 1. Het uploaden van het geproduceerde beeld in instantie AEM-CS die [ AEM gebruikt uploadt ](https://github.com/adobe/aem-upload) bibliotheek
 1. Een HTTP-aanvraag indienen bij de AEM Content Fragment API om de afbeeldingseigenschap van het inhoudsfragment bij te werken.
 1. Terugkerend de belangrijkste informatie van successen en mislukking voor vertoning door modal (`GenerateImageModal.js`)
@@ -595,7 +595,7 @@ exports.main = main;
 
 #### Afbeelding genereren
 
-Deze module is verantwoordelijk voor het roepen van het 1} eindpunt van de Generatie van het Beeld van OpenAI [ gebruikend [ open ](https://github.com/openai/openai-node) bibliotheek. ](https://beta.openai.com/docs/guides/images/image-generation-beta) Als u de OpenAI API-geheimhoudingssleutel wilt definiëren in het `.env` -bestand, wordt `params.OPENAI_API_KEY` gebruikt.
+Deze module is verantwoordelijk voor het roepen van het 1&rbrace; eindpunt van de Generatie van het Beeld van OpenAI [&#128279;](https://beta.openai.com/docs/guides/images/image-generation-beta) gebruikend [ open ](https://github.com/openai/openai-node) bibliotheek.  Als u de OpenAI API-geheimhoudingssleutel wilt definiëren in het `.env` -bestand, wordt `params.OPENAI_API_KEY` gebruikt.
 
 + `src/aem-cf-console-admin-1/actions/generate-image/generate-image-using-openai.js`
 
@@ -653,7 +653,7 @@ module.exports = {
 
 #### Uploaden naar AEM
 
-Deze module is de oorzaak van het uploaden van het OpenAI geproduceerde beeld aan AEM gebruikend [ AEM uploadt ](https://github.com/adobe/aem-upload) bibliotheek. Het geproduceerde beeld wordt eerst gedownload aan runtime van App Builder gebruikend de bibliotheek van het Systeem van het Dossier Node.js ](https://nodejs.org/api/fs.html) en zodra uploadt aan AEM wordt voltooid wordt het geschrapt.[
+Deze module is de oorzaak van het uploaden van het OpenAI geproduceerde beeld aan AEM gebruikend [ AEM uploadt ](https://github.com/adobe/aem-upload) bibliotheek. Het geproduceerde beeld wordt eerst gedownload aan runtime van App Builder gebruikend de bibliotheek van het Systeem van het Dossier Node.js [&#128279;](https://nodejs.org/api/fs.html) en zodra uploadt aan AEM wordt voltooid wordt het geschrapt.
 
 In het onderstaande voorbeeld organiseert de functie `uploadGeneratedImageToAEM` het gedownloade image naar de runtime, uploadt u het bestand naar AEM en verwijdert het uit de runtime. Het beeld wordt geupload aan de `/content/dam/wknd-shared/en/generated` weg, zorg ervoor alle omslagen in DAM bestaan, zijn voorwaarde om [ AEM te gebruiken uploadt ](https://github.com/adobe/aem-upload) bibliotheek.
 

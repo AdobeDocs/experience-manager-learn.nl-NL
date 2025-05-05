@@ -53,7 +53,7 @@ De gebruikers die tot de dienst van de Auteur van AEM toegang hebben zouden in l
 [ de productprofielen van Adobe IMS ](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html), die in [ Adobe AdminConsole ](https://adminconsole.adobe.com) worden beheerd, is het mechanisme dat [ gebruikers IMS van Adobe ](#adobe-ims-users) toegang tot login aan de dienst van de Auteur van AEM met een basisniveau van toegang verleent.
 
 + Het __gebruikers van AEM__ productprofiel verleent gebruikers read-only toegang tot AEM via lidmaatschap in de groep van Medewerkers van AEM.
-+ Het __productprofiel van de Beheerders van AEM van 0} {verleent gebruikers volledige, administratieve toegang tot AEM.__
++ Het __productprofiel van de Beheerders van AEM van 0&rbrace; &lbrace;verleent gebruikers volledige, administratieve toegang tot AEM.__
 
 [Meer informatie over Adobe IMS-productprofielen](./adobe-ims-product-profiles.md)
 
@@ -71,7 +71,7 @@ Een verkorte procedure voor het configureren van Adobe IMS-gebruikers, gebruiker
 
 ## Aanvullende Adobe Admin Console-bronnen
 
-De volgende documentatie behandelt ](https://adminconsole.adobe.com) - specifieke details van Adobe Admin Console [ {die in een beter inzicht in Adobe Admin Console kunnen helpen en het gebruiken om gebruikers en toegang over de producten van Experience Cloud te beheren.
+De volgende documentatie behandelt [&#128279;](https://adminconsole.adobe.com) - specifieke details van Adobe Admin Console  &lbrace;die in een beter inzicht in Adobe Admin Console kunnen helpen en het gebruiken om gebruikers en toegang over de producten van Experience Cloud te beheren.
 
 + [ Overzicht van de Identiteit van Adobe Admin Console ](https://helpx.adobe.com/enterprise/using/identity.html)
 + [ Adobe Admin Console Admin rollen ](https://helpx.adobe.com/enterprise/using/admin-roles.html)

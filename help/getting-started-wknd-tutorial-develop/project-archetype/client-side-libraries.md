@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Clientbibliotheken en front-end workflow {#client-side-libraries}
 
-Leer hoe Client-Side Libraries of clientlibs worden gebruikt om CSS en JavaScript voor een implementatie van Adobe Experience Manager (AEM) Plaatsen op te stellen en te beheren. Dit leerprogramma behandelt ook hoe de {](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) module 0} ui.frontend, een ontkoppelde [ webpack ](https://webpack.js.org/) project, in het bouwstijlproces van begin tot eind kan worden geïntegreerd.[
+Leer hoe Client-Side Libraries of clientlibs worden gebruikt om CSS en JavaScript voor een implementatie van Adobe Experience Manager (AEM) Plaatsen op te stellen en te beheren. Dit leerprogramma behandelt ook hoe de {[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) module 0} ui.frontend, een ontkoppelde [ webpack ](https://webpack.js.org/) project, in het bouwstijlproces van begin tot eind kan worden geïntegreerd.
 
 ## Vereisten {#prerequisites}
 
@@ -220,7 +220,7 @@ Deze integratie wordt automatisch ingesteld door het AEM Project Archetype. Ga v
 
    >[!NOTE]
    >
-   >Er is ook een `npm run prod` -profiel dat de JS en CSS minieme waarden geeft. Dit is de standaardcompilatie wanneer de webpack-build wordt geactiveerd via Maven. Meer details over de {](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) kunnen worden gevonden module 0} ui.frontend.[
+   >Er is ook een `npm run prod` -profiel dat de JS en CSS minieme waarden geeft. Dit is de standaardcompilatie wanneer de webpack-build wordt geactiveerd via Maven. Meer details over de {[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) kunnen worden gevonden module 0} ui.frontend.
 
 1. Controleer het bestand `site.css` onder `ui.frontend/dist/clientlib-site/site.css` . Dit is gecompileerde CSS die op de brondossiers van de Klasse wordt gebaseerd.
 

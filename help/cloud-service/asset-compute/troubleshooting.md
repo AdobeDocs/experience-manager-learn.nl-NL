@@ -90,7 +90,7 @@ Het Hulpmiddel van de Ontwikkeling van Asset Compute kan een staat ingaan waar h
 
 + __Fout:__ Mislukking: Geen geproduceerde vertoning.
 + __Oorzaak:__ de worker slaagde erin om een vertoning te produceren wegens een onverwachte fout zoals een de syntaxisfout van JavaScript.
-+ __Resolutie:__ herzie de 2} van de testuitvoering bij `/build/test-results/test-worker/test.log`. `test.log` Zoek de sectie in dit bestand die overeenkomt met de testcase voor mislukken en controleer of er fouten zijn opgetreden.
++ __Resolutie:__ herzie de 2&rbrace; van de testuitvoering bij `/build/test-results/test-worker/test.log`. `test.log` Zoek de sectie in dit bestand die overeenkomt met de testcase voor mislukken en controleer of er fouten zijn opgetreden.
 
   ![ het Oplossen van problemen - Geen vertoning produceerde ](./assets/troubleshooting/test__no-rendition-generated.png)
 
@@ -127,7 +127,7 @@ Het Hulpmiddel van de Ontwikkeling van Asset Compute kan een staat ingaan waar h
 
 ### Worker-time-out tijdens foutopsporing{#worker-times-out-while-debugging}
 
-+ __Fout__: Zuiver de rapporten van de Console &quot;Actie zal onderbreking in -XXX milliseconden&quot;of ](./develop/development-tool.md) de vertoningsvoorproef van de vertoningen van het Hulpmiddel van de Ontwikkeling van Asset Compute [ voor onbepaalde tijd of
++ __Fout__: Zuiver de rapporten van de Console &quot;Actie zal onderbreking in -XXX milliseconden&quot;of [&#128279;](./develop/development-tool.md) de vertoningsvoorproef van de vertoningen van het Hulpmiddel van de Ontwikkeling van Asset Compute  voor onbepaalde tijd of
 + __Oorzaak__: De arbeidersonderbreking zoals bepaald in [ manifest.yml ](./develop/manifest.md) wordt overschreden tijdens het zuiveren.
 + __Resolutie__: Verhoog tijdelijk de onderbreking van de worker in [ manifest.yml ](./develop/manifest.md) of versnelt het zuiveren activiteiten.
 

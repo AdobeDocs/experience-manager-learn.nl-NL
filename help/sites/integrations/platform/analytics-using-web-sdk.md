@@ -219,7 +219,7 @@ Voor extra informatie bij het integreren van de Componenten van de Kern van AEM 
 
 >[!INFO]
 >
->Voor een uitvoerig begrip van het **Variabele 1} dossier van het het lusjebezit details in het document van de Verwijzing van het Ontwerp van de Oplossing (SDR), heb toegang tot de voltooide WKND-Specifieke versie voor download [ ](./assets/Final-WKND-WebSDK-BRD-SDR.xlsx) hier.**
+>Voor een uitvoerig begrip van het **Variabele 1&rbrace; dossier van het het lusjebezit details in het document van de Verwijzing van het Ontwerp van de Oplossing (SDR), heb toegang tot de voltooide WKND-Specifieke versie voor download [&#128279;](./assets/Final-WKND-WebSDK-BRD-SDR.xlsx) hier.**
 
 
 

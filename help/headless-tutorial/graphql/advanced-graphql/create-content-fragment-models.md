@@ -101,7 +101,7 @@ Maak vervolgens een model voor een adres.
 
 Maak vervolgens een model dat informatie over een persoon bevat.
 
-1. In de hoger-juiste hoek, creeert de uitgezochte ****.
+1. In de hoger-juiste hoek, creeert de uitgezochte **&#x200B;**.
 
 1. Geef het model een titel van &quot;Persoon&quot;, dan uitgezocht **creeer**. In het succesmodaal dat verschijnt, uitgezochte **Open** om het pas gecreëerde model uit te geven.
 
@@ -152,7 +152,7 @@ Selecteer **sparen** om uw veranderingen te bevestigen en de Redacteur van het M
 
 In het volgende inhoudsfragmentmodel wordt een fysieke locatie beschreven. Dit model gebruikt tabplaatsaanduidingen. Met tabplaatsaanduidingen kunt u de gegevenstypen in respectievelijk de modeleditor en de inhoud in de fragmenteditor ordenen door de inhoud te categoriseren. Elke plaatsaanduiding maakt een tabblad in de Content Fragment-editor, vergelijkbaar met een tabblad in een internetbrowser. Het locatiemodel moet twee tabbladen hebben: Locatiedetails en Locatie-adres.
 
-1. Zoals eerder, creeer de uitgezochte **** om een ander Model van het Fragment van de Inhoud tot stand te brengen. Voer bij Modeltitel &quot;Locatie&quot; in. Selecteer **creeer** dat door **wordt gevolgd Open** in het succesmodaal dat verschijnt.
+1. Zoals eerder, creeer de uitgezochte **&#x200B;**&#x200B;om een ander Model van het Fragment van de Inhoud tot stand te brengen. Voer bij Modeltitel &quot;Locatie&quot; in. Selecteer **creeer** dat door **wordt gevolgd Open** in het succesmodaal dat verschijnt.
 
 1. Voeg het gebied van Placeholder van het a **Lusje** aan het model toe en etiketteer het &quot;Details van de Plaats.&quot;
 
@@ -162,7 +162,7 @@ In het volgende inhoudsfragmentmodel wordt een fysieke locatie beschreven. Dit m
 
 1. Voeg het gebied van de Verwijzing van de a **Inhoud** onder &quot;Info van het Contact&quot; toe. Geef het label &quot;Locatieafbeelding&quot;. Het **Weg van de Weg van de Wortel** zou `/content/dam/wknd-shared.` onder **moeten zijn goedkeurt slechts gespecificeerde inhoudstypes**, selecteert &quot;Beeld&quot;.
 
-1. Laten wij ook a **gebied van Objecten JSON** {onder het Beeld van de Plaats toevoegen.&quot; Aangezien dit gegevenstype flexibel is, kan het worden gebruikt om het even welke gegevens te tonen u in uw inhoud wilt omvatten. In dit geval wordt het JSON-object gebruikt om informatie over het weer weer weer te geven. Geef het JSON-object het label &#39;Weer op seizoen&#39;. In het **lusje van Eigenschappen**, voeg a **Beschrijving** toe zodat is het duidelijk aan de gebruiker welke gegevens hier zouden moeten zijn ingegaan: &quot;JSON- gegevens betreffende het weerweer van de gebeurtenisplaats door seizoen (Lente, Zomer, Herfst, Winter).&quot;
+1. Laten wij ook a **gebied van Objecten JSON** &lbrace;onder het Beeld van de Plaats toevoegen.&quot; Aangezien dit gegevenstype flexibel is, kan het worden gebruikt om het even welke gegevens te tonen u in uw inhoud wilt omvatten. In dit geval wordt het JSON-object gebruikt om informatie over het weer weer weer te geven. Geef het JSON-object het label &#39;Weer op seizoen&#39;. In het **lusje van Eigenschappen**, voeg a **Beschrijving** toe zodat is het duidelijk aan de gebruiker welke gegevens hier zouden moeten zijn ingegaan: &quot;JSON- gegevens betreffende het weerweer van de gebeurtenisplaats door seizoen (Lente, Zomer, Herfst, Winter).&quot;
 
    ![ opties van Objecten JSON ](assets/define-content-fragment-models/json-object.png)
 
@@ -178,11 +178,11 @@ In het volgende inhoudsfragmentmodel wordt een fysieke locatie beschreven. Dit m
 
 Tot slot creeer een model dat een team van mensen beschrijft.
 
-1. Van de **Gedeelde WKND** pagina, uitgezocht **creeer** om een ander Model van het Fragment van de Inhoud te maken. Voer voor de modeltitel &quot;Team&quot; in. Zoals eerder, creeer uitgezochte **** die door **wordt gevolgd Open** in het succesmodaal dat verschijnt.
+1. Van de **Gedeelde WKND** pagina, uitgezocht **creeer** om een ander Model van het Fragment van de Inhoud te maken. Voer voor de modeltitel &quot;Team&quot; in. Zoals eerder, creeer uitgezochte **&#x200B;**&#x200B;die door **wordt gevolgd Open** in het succesmodaal dat verschijnt.
 
 1. Voeg a **Meerdere lijntekst** gebied aan de vorm toe. Onder **Etiket van het Gebied**, ga &quot;Beschrijving&quot;in.
 
-1. Voeg het gebied van de Datum en van de Tijd van de a **** aan het model toe en etiketteer het &quot;Team die Datum&quot;stichten. In dit geval, houd het standaard **Type** geplaatst aan &quot;Datum&quot;, maar merk op dat het ook mogelijk is om &quot;Datum &amp; Tijd&quot;of &quot;Tijd&quot;te gebruiken.
+1. Voeg het gebied van de Datum en van de Tijd van de a **&#x200B;**&#x200B;aan het model toe en etiketteer het &quot;Team die Datum&quot;stichten. In dit geval, houd het standaard **Type** geplaatst aan &quot;Datum&quot;, maar merk op dat het ook mogelijk is om &quot;Datum &amp; Tijd&quot;of &quot;Tijd&quot;te gebruiken.
 
    ![ de opties van de Datum en van de tijd ](assets/define-content-fragment-models/date-and-time.png)
 
@@ -204,15 +204,15 @@ Gelijkaardig aan hoe het model van het Team een fragmentverwijzing naar het mode
 
    ![ Adventure geeft weg uit ](assets/define-content-fragment-models/adventure-edit-path.png)
 
-1. Bij de bodem van de vorm, onder &quot;wat om&quot;te brengen, voeg het gebied van de Verwijzing van het a **Fragment** toe. Ga het Etiket van het a **Gebied** van &quot;Plaats in&quot;. Onder **Toegestane Modellen van het Fragment van de Inhoud**, selecteer het **3} model van de Plaats {.**
+1. Bij de bodem van de vorm, onder &quot;wat om&quot;te brengen, voeg het gebied van de Verwijzing van het a **Fragment** toe. Ga het Etiket van het a **Gebied** van &quot;Plaats in&quot;. Onder **Toegestane Modellen van het Fragment van de Inhoud**, selecteer het **3&rbrace; model van de Plaats &lbrace;.**
 
    ![ het fragmentverwijzingsopties van de Plaats ](assets/define-content-fragment-models/location-fragment-reference.png)
 
-1. Voeg één meer **gebied van de Verwijzing van het 0} fragment toe {en etiketteer het &quot;Team van de Instructeur&quot;.** Onder **Toegestane Modellen van het Fragment van de Inhoud**, selecteer het **Team** model.
+1. Voeg één meer **gebied van de Verwijzing van het 0&rbrace; fragment toe &lbrace;en etiketteer het &quot;Team van de Instructeur&quot;.** Onder **Toegestane Modellen van het Fragment van de Inhoud**, selecteer het **Team** model.
 
    ![ de verwijzingsopties van het fragment van het Team ](assets/define-content-fragment-models/team-fragment-reference.png)
 
-1. Voeg een ander **gebied van de Verwijzing van het 1} fragment toe** en etiketteer het &quot;Beheerder.&quot;
+1. Voeg een ander **gebied van de Verwijzing van het 1&rbrace; fragment toe** en etiketteer het &quot;Beheerder.&quot;
 
    ![ de verwijzingsopties van het fragment van de Beheerder ](assets/define-content-fragment-models/administrator-fragment-reference.png)
 

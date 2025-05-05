@@ -37,7 +37,7 @@ Vereisten voor deze zelfstudie:
 
    * Als u **AEM Forms 6.3** gebruikt, is callback URL https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. In dit URL-createlead is de naam van mijn formuliergegevensmodel.
 
-   * Als u** AEM Forms 6.4** gebruikt, is de callback-URL https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+   * Als u **&#x200B; AEM Forms 6.4** gebruikt, is de callback-URL https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
 
 In dit voorbeeld is gbedekar -w7-1:6443 de naam van mijn server en de poort waarop AEM wordt uitgevoerd.
 
@@ -61,7 +61,7 @@ De volgende stap is het maken van Data Source in AEM Forms. Voer de volgende sta
 
 * Klik op Maken
 
-**In het volgende scherm **
+**In het volgende scherm &#x200B;**
 
 * Selecteer &quot;Bestand&quot; als optie voor het bronbestand van de computer. Bladeren naar het bestand dat u eerder hebt gedownload
 * Verificatietype selecteren als OAuth2.0
@@ -102,7 +102,7 @@ Nadat u het formuliergegevensmodel hebt gemaakt, kunt u op dit model gebaseerde 
    * OAuth Url is - **https://login.salesforce.com/services/oauth2/authorize**
    * Vernieuw Symbolische Url - **https://na5.salesforce.com/services/oauth2/token**
    * Token Ur van de toegang **l - https://na5.salesforce.com/services/oauth2/token**
-   * Autorisatiebereik: ** api chatter_api full id open id refresh_token visualforce web**
+   * Autorisatiebereik: **&#x200B; api chatter_api full id open id refresh_token visualforce web**
    * Verificatiehandler: houder van autorisatie
    * Klik op &quot;Verbinding maken met OAuth&quot;. Als er fouten optreden, controleert u de voorgaande stappen om ervoor te zorgen dat alle gegevens correct zijn ingevoerd.
 

@@ -95,7 +95,7 @@ Denk vooruit en bekijk wat opnieuw gebruikt kan worden. Voettekst? Een disclaime
 
 ## Algemeen
 
-Blijf op de hoogte van veranderingen AEM door voortdurend leren - blijf niet vastzitten in het verleden. Het Experience League van het gebruik ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) en [ Digitale het Leren van de Adobe de Diensten (ADLS) ](https://learning.adobe.com/) om uw vaardigheden te kweken.[
+Blijf op de hoogte van veranderingen AEM door voortdurend leren - blijf niet vastzitten in het verleden. Het Experience League van het gebruik [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) en [ Digitale het Leren van de Adobe de Diensten (ADLS) ](https://learning.adobe.com/) om uw vaardigheden te kweken.
 
 ## Conclusie
 

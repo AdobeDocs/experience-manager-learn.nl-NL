@@ -134,7 +134,7 @@ Op dit moment hebben we met succes een publiek gemaakt voor alle bezoekers van d
 
 1. Van uw venster van Adobe Target, navigeer aan **Activiteiten** tabel.
 1. Klik **creeer Activiteit** en selecteer de **Ervaring richtend** activiteitstype.
-1. Selecteer het **kanaal van het 0} Web {en kies** Visuele Composer van de Ervaring **.**
+1. Selecteer het **kanaal van het 0&rbrace; Web &lbrace;en kies** Visuele Composer van de Ervaring **.**
 1. Ga **Activiteit URL** in en klik **daarna** om de Visuele Composer van de Ervaring te openen.
 
    WKND-startpagina Publish-URL: http://localhost:4503/content/wknd/en.html

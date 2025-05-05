@@ -369,7 +369,7 @@ Wanneer `bin/docker_run src host.docker.internal:4503 8080` in het bericht __het
 
 >[!TAB  Vensters ]
 
-+ Van de Herinnering van het Bevel, voer `ipconfig` uit, en registreer het 1} IPv4 Adres van de gastheer __van de gastheermachine.__
++ Van de Herinnering van het Bevel, voer `ipconfig` uit, en registreer het 1&rbrace; IPv4 Adres van de gastheer __van de gastheermachine.__
 + Voer vervolgens `docker_run` uit met behulp van dit IP-adres: `$ bin\docker_run src <HOST IP>:4503 8080`
 
 >[!TAB  Linux® ]

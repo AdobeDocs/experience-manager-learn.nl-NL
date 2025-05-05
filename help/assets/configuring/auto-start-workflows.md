@@ -40,7 +40,7 @@ Om het nabewerkingswerkschema aan te passen, kopieer het standaardAssets Cloud n
 4. Selecteer uw nu werkschemamodel (dat _Assets Cloud na-Processing1_ zal worden genoemd) en klik _uitgeven_ knoop om het werkschema uit te geven
 5. Van de Eigenschappen van het Werkschema, geef uw douane het werkschema na-Verwerking een betekenisvolle naam <br/>
    ![ Veranderend de Naam ](assets/auto-start-workflow-change-name.png)
-6. Voeg de stappen toe om aan uw bedrijfsvereisten te voldoen. Voeg in dit geval een taak toe wanneer de activa volledige verwerking zijn. Zorg ervoor dat de laatste stap van het werkschema altijd de _Volledige 1} stap van het Werkschema <br/> is_
+6. Voeg de stappen toe om aan uw bedrijfsvereisten te voldoen. Voeg in dit geval een taak toe wanneer de activa volledige verwerking zijn. Zorg ervoor dat de laatste stap van het werkschema altijd de _Volledige 1&rbrace; stap van het Werkschema <br/> is_
    ![ voegt de Stappen van het Werkschema ](assets/auto-start-workflow-customize-steps.png) toe
 
    >[!NOTE]

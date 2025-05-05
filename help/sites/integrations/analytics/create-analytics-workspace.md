@@ -103,7 +103,7 @@ Gebeurtenissen met succes zijn handelingen die kunnen worden bijgehouden. U bepa
 
 Laten we nu een gebeurtenis maken om de klik op de CTA Button bij te houden.
 
-1. Van het **venster van de Manager van de Reeks van het 0} Rapport {, selecteer** Identiteitskaart van de Reeks van het Rapport **en klik** uitgeven Montages **.**
+1. Van het **venster van de Manager van de Reeks van het 0&rbrace; Rapport &lbrace;, selecteer** Identiteitskaart van de Reeks van het Rapport **en klik** uitgeven Montages **.**
 1. Klik **Omzetting** > **Gebeurtenissen van het Succes**
 1. Gebruikend **voeg Nieuwe** optie toe, creeer een gebeurtenis van het douanesucces om de Knoop van CTA te volgen en dan **sparen** uw veranderingen.
    * `Event` : `event8`
@@ -144,7 +144,7 @@ Daarna, bouwt een lijst om een visuele vertegenwoordiging van te creëren hoe de
 * `event8` - `CTA Button Click event`
 * `prop8` - `CTA Button Id`
 
-1. Sleep-daling de **dimensiecomponent van de Pagina** {op de Vrije Lijst van de Vorm. U moet nu een visualisatie kunnen bekijken waarin de paginanaam (eVar9) en de bijbehorende paginaweergaven (Voorvallen) worden weergegeven in de tabel.
+1. Sleep-daling de **dimensiecomponent van de Pagina** &lbrace;op de Vrije Lijst van de Vorm. U moet nu een visualisatie kunnen bekijken waarin de paginanaam (eVar9) en de bijbehorende paginaweergaven (Voorvallen) worden weergegeven in de tabel.
 
    ![ pagina Dimension ](assets/create-analytics-workspace/evar9-dimension.png)
 
@@ -155,9 +155,11 @@ Daarna, bouwt een lijst om een visuele vertegenwoordiging van te creëren hoe de
 1. Laten we de pagina onderverdelen op basis van het sjabloontype. Selecteer de metrische waarde van de paginasjabloon uit componenten en sleep de metrische waarde van het paginasjabloon naar de dimensie Paginanaam. U kunt de paginanaam nu bekijken, uitgesplitst naar het sjabloontype.
 
    * **vóór**
+
      ![ eVar5 ](assets/create-analytics-workspace/evar5.png)
 
    * **na**
+
      ![ Metriek eVar5 ](assets/create-analytics-workspace/evar5-metrics.png)
 
 1. Om te begrijpen hoe de gebruikers met de Knopen van CTA wanneer zij op de pagina&#39;s van de Plaats WKND zijn in wisselwerking staan, is de verdere verdeling door de metrische metrisch van Knoop ID (eVar8) toe te voegen nodig.
@@ -245,8 +247,10 @@ Vervolgens downloaden we de classificatiesjabloon voor de variabele Button Id (e
 1. Van de componentenvinder, onderzoek naar **de Knopen van CTA van WKND** en belemmering-daling de **Knopen van CTA WKND (Identiteitskaart van de Knoop)** dimensie op metrische identiteitskaart van de Knoop en vervang het.
 
    * **vóór**
+
      ![ Knop van Workspace vóór ](assets/create-analytics-workspace/wknd-button-before.png)
    * **na**
+
      ![ Knop van Workspace na ](assets/create-analytics-workspace/wknd-button-after.png)
 
 1. U kunt zien dat metrisch van identiteitskaart van de Knoop die knoopidentiteitskaart van een Vraag aan de knoop van de Actie (CTA) bevatte nu met een overeenkomstige naam die in het Malplaatje van de Indeling wordt verstrekt wordt vervangen.

@@ -27,7 +27,7 @@ Leer hoe u de Adobe Client Data Layer kunt aanpassen met inhoud van aangepaste A
 
 ![ de Laag van Gegevens van de Naamregel ](assets/adobe-client-data-layer/byline-data-layer-html.png)
 
-In dit leerprogramma, onderzoeken wij diverse opties om de Laag van Gegevens van de Cliënt van Adobe uit te breiden door de WKND [ component van de Byline ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html) bij te werken. De _component van 0} Byline {is a **douanecomponent**en de lessen die in dit leerprogramma worden geleerd kunnen op andere douanecomponenten worden toegepast._
+In dit leerprogramma, onderzoeken wij diverse opties om de Laag van Gegevens van de Cliënt van Adobe uit te breiden door de WKND [ component van de Byline ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html) bij te werken. De _component van 0&rbrace; Byline &lbrace;is a **douanecomponent**&#x200B;en de lessen die in dit leerprogramma worden geleerd kunnen op andere douanecomponenten worden toegepast._
 
 ### Doelstellingen {#objective}
 
@@ -47,7 +47,7 @@ A **lokale ontwikkelomgeving** is noodzakelijk om dit leerprogramma te voltooien
 
 Deze zelfstudie breidt de component Byline in de WKND-verwijzingssite uit. Klonen en de WKND-codebasis installeren in uw lokale omgeving.
 
-1. Begin een lokale auteur van Quickstart **** instantie van AEM die in [ http://localhost:4502 ](http://localhost:4502) loopt.
+1. Begin een lokale auteur van Quickstart **&#x200B;**&#x200B;instantie van AEM die in [ http://localhost:4502 ](http://localhost:4502) loopt.
 1. Open een eindvenster en kloon de WKND codebasis gebruikend Git:
 
    ```shell
@@ -242,7 +242,7 @@ Aanklikbare elementen zijn doorgaans een CTA-knop of een navigatiekoppeling. Jam
 1. Open de module `ui.apps` in uw winde
 1. Open het bestand `byline.html` om `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/byline.html` .
 
-1. Update `byline.html` om het `data-cmp-clickable` attribuut op het 2} naam **element van de Byline {te omvatten:**
+1. Update `byline.html` om het `data-cmp-clickable` attribuut op het 2&rbrace; naam **element van de Byline &lbrace;te omvatten:**
 
    ```diff
      <h2 class="cmp-byline__name" 
@@ -290,7 +290,7 @@ Aanklikbare elementen zijn doorgaans een CTA-knop of een navigatiekoppeling. Jam
    >
    > Het is belangrijk **niet** browser door deze oefening te verfrissen, anders wordt de console JavaScript verloren.
 
-1. In browser, met de **open Console van 0} {, klik de naam van de auteur in de component van de Naamregel:**
+1. In browser, met de **open Console van 0&rbrace; &lbrace;, klik de naam van de auteur in de component van de Naamregel:**
 
    ![ klikte Component Byline ](assets/adobe-client-data-layer/byline-component-clicked.png)
 
@@ -300,7 +300,7 @@ Aanklikbare elementen zijn doorgaans een CTA-knop of een navigatiekoppeling. Jam
 
 ## Het hulpprogramma DataLayerBuilder gebruiken {#data-layer-builder}
 
-Toen het het Verdelen Model [ ](#sling-model) vroeger in het hoofdstuk werd bijgewerkt, kozen wij om het Koord te creëren JSON door a `HashMap` te gebruiken en elk van de eigenschappen manueel te plaatsen. Deze methode werkt prima voor kleine eenmalige componenten, maar voor componenten die de AEM Core-componenten uitbreiden kan dit leiden tot veel extra code.
+Toen het het Verdelen Model [&#128279;](#sling-model) vroeger in het hoofdstuk werd bijgewerkt, kozen wij om het Koord te creëren JSON door a `HashMap` te gebruiken en elk van de eigenschappen manueel te plaatsen. Deze methode werkt prima voor kleine eenmalige componenten, maar voor componenten die de AEM Core-componenten uitbreiden kan dit leiden tot veel extra code.
 
 Een hulpprogrammaklasse, `DataLayerBuilder`, bestaat om het grootste deel van het zware heffen uit te voeren. Hierdoor kunnen implementaties alleen de gewenste eigenschappen uitbreiden. Werk het verkoopmodel bij om `DataLayerBuilder` te gebruiken.
 

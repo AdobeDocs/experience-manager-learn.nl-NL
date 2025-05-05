@@ -55,9 +55,9 @@ In deze zelfstudie wordt getoond hoe u een invoertype `select` (vervolgkeuzelijs
 
 #### Blokmodel
 
-De **Standaard** optie wordt vertegenwoordigd door een leeg koord (`""`), terwijl **zij aan zij** optie gebruikt `"side-by-side"`. De naam van de optie **** en **waarde** moet niet het zelfde zijn, maar de **waarde** bepaalt de CSS klasse(n) die op HTML van het blok worden toegepast. Bijvoorbeeld, kon de **zij aan zij** waarde van de optie `layout-10` in plaats van `side-by-side` zijn. Het is echter het beste om semantisch betekenisvolle namen te gebruiken voor CSS-klassen, zodat de optiewaarden duidelijk en consistent zijn.
+De **Standaard** optie wordt vertegenwoordigd door een leeg koord (`""`), terwijl **zij aan zij** optie gebruikt `"side-by-side"`. De naam van de optie **&#x200B;**&#x200B;en **waarde** moet niet het zelfde zijn, maar de **waarde** bepaalt de CSS klasse(n) die op HTML van het blok worden toegepast. Bijvoorbeeld, kon de **zij aan zij** waarde van de optie `layout-10` in plaats van `side-by-side` zijn. Het is echter het beste om semantisch betekenisvolle namen te gebruiken voor CSS-klassen, zodat de optiewaarden duidelijk en consistent zijn.
 
-[!BADGE  /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```json{highlight="4,8,9-18"}
 ...
@@ -118,7 +118,7 @@ Met het invoertype `select` kunnen auteurs één blokoptie kiezen, die optioneel
 
 Bijvoorbeeld, kan de **zij aan zij** optie variaties steunen waar het beeld op de linkerzijde (`side-by-side left`) of het recht (`side-by-side right`) verschijnt.
 
-[!BADGE  /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```json{highlight="4,8,9-21"}
 ...
@@ -191,7 +191,7 @@ Met het invoertype van `"component": "multiselect"` kan de auteur meerdere optie
 
 Bijvoorbeeld, kan het **zij aan zij**, **Beeld op linkerzijde**, en **Beeld op recht** variaties steunen waar het beeld op de linkerzijde (`side-by-side left`) of op het recht (`side-by-side right`) wordt geplaatst.
 
-[!BADGE  /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```json{highlight="4,6,8,10-21"}
 ...
@@ -264,7 +264,7 @@ In het voorbeeld hieronder, wordt de standaardoptie geplaatst aan **zij aan zij*
 
 U kunt ook meerdere items voor hetzelfde blok definiëren, elk met een andere naam en klasse. Dit staat Universele Redacteur toe om verschillende blokingangen te tonen, elk pre-gevormd met een specifieke blokoptie. Terwijl deze als afzonderlijke blokken in de redacteur verschijnen, bevat codebase één enkel blok dat dynamisch teruggeeft gebaseerd op de geselecteerde optie.
 
-[!BADGE  /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```json{highlight="12"}
 {
@@ -302,7 +302,7 @@ In dit leerprogramma, zullen wij selecteren met één enkele hierboven beschreve
 
 Voeg in de modeldefinitie in het JSON-fragment van het blok één selectieveld voor blokopties toe. In dit veld kunnen auteurs kiezen tussen de standaardlay-out en een lay-out Naast elkaar.
 
-[!BADGE  /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```json{highlight="7-24"}
 {
@@ -451,7 +451,7 @@ Het volgende is DOM van het blok van het Taser, met de **zij aan zij** geselecte
 ...
 ```
 
->[!TAB  hoe te om DOM ] te vinden
+>[!TAB hoe te om DOM  te vinden]
 
 Als u het DOM voor decoratie wilt zoeken, opent u de pagina met het blok in uw lokale ontwikkelomgeving, selecteert u het blok met de ontwikkelaarsgereedschappen van uw webbrowser en inspecteert u het DOM. Zo kunt u de relevante elementen identificeren die u wilt versieren.
 
@@ -484,7 +484,7 @@ U kunt ook CSS Nesten gebruiken voor een beknoptere versie:
 Voeg binnen de regel `&.side-by-side` de benodigde CSS-eigenschappen toe om het blok op te maken wanneer de klasse `side-by-side` wordt toegepast.
 
 Een veelgebruikte methode is om standaardstijlen opnieuw in te stellen door `all: initial` toe te passen op gedeelde kiezers en vervolgens de vereiste stijlen voor de `side-by-side` -variant toe te voegen. Als de meeste stijlen worden gedeeld door meerdere opties, is het misschien gemakkelijker om bepaalde eigenschappen te overschrijven. Als er echter wijzigingen moeten worden aangebracht in meerdere kiezers, kunt u de code helderder en onderhoudsvriendelijker maken door alle stijlen opnieuw in te stellen en alleen de vereiste stijlen opnieuw toe te passen.
-[!BADGE  /blocks/teaser/teaser.css]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/teaser/teaser.css]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```css
 /* /blocks/teaser/teaser.css */
@@ -687,7 +687,7 @@ if (getOptions(block).includes('side-by-side')) {
 
 Het volledig bijgewerkte JavaScript-bestand voor het teasblok met de opties Standaard en Naast elkaar ziet er als volgt uit:
 
-[!BADGE  /blocks/teaser/teaser.js]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/teaser/teaser.js]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```javascript
 /* /blocks/teaser/teaser.js */

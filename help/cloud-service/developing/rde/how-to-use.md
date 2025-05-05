@@ -34,7 +34,7 @@ Gebruikend [ AEM WKND Project van Plaatsen ](https://github.com/adobe/aem-guides
 
 ## Vereiste
 
-Kloon het [ WKND 1} project van Plaatsen {en open het in uw favoriete winde om de artefacten van AEM op RDE op te stellen.](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project)
+Kloon het [ WKND 1&rbrace; project van Plaatsen &lbrace;en open het in uw favoriete winde om de artefacten van AEM op RDE op te stellen.](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project)
 
 ```shell
 $ git clone git@github.com:adobe/aem-guides-wknd.git

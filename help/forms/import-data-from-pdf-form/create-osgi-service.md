@@ -63,7 +63,7 @@ public String getFormData(Document pdfForm) {
 }
 ```
 
-Het volgende is de nutsfunctie die wordt geschreven om _**topSubForm**_ met aangewezen namespaces te halen
+Het volgende is de nutsfunctie die wordt geschreven om _&#x200B;**topSubForm**&#x200B;_ met aangewezen namespaces te halen
 
 ```java
 private static org.w3c.dom.Node getChildByTagName(org.w3c.dom.Node parent, String tagName) {

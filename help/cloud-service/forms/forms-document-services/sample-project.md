@@ -28,6 +28,7 @@ ht-degree: 0%
    * Het bestand zoeken `resources/credentials/server_credentials.json`
    * Open het en **werk de geloofsbrieven** specifiek voor uw milieu bij.
    * Zorg ervoor dat het geldige waarden bevat voor:
+
      `clientId` , `clientSecret`, `adobeIMSV3TokenEndpointURL`, en
      `scopes`
 

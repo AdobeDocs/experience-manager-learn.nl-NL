@@ -220,6 +220,7 @@ Soms hebt u een speciale voorinstelling voor video nodig die niet overeenkomt me
 
    - Elk streaming videoaccount heeft tientallen voorinstellingen uit het vak. Als u uw eigen aangepaste voorinstellingen maakt, worden deze ook hier weergegeven.
    - U kunt filteren op type gebruikend het drop-down menu. De voorinstellingen zijn onderverdeeld in Computer, Mobiel en Tablet.
+
      ![afbeelding](assets/video-overview/video-overview-4.jpg)
 
 2. In de kolom Actief kunt u kiezen of u alle voorinstellingen tijdens het uploaden wilt weergeven, of alleen de voorinstellingen die u kiest. Als u in de VS werkt, wilt u mogelijk de Europese PAL-voorinstellingen uitschakelen en in het VK/EMEA schakelt u de NTSC-voorinstellingen uit.
@@ -232,7 +233,7 @@ Soms hebt u een speciale voorinstelling voor video nodig die niet overeenkomt me
 
    ![afbeelding](assets/video-overview/video-overview-5.jpg)
 
-9. Plaats de Verhouding van de Aspect van uw brondossier ****. Deze instelling is rechtstreeks gekoppeld aan de onderstaande grootte. Als u _Douane_ kiest, zult u zowel breedte als hoogte manueel moeten ingaan.
+9. Plaats de Verhouding van de Aspect van uw brondossier **&#x200B;**. Deze instelling is rechtstreeks gekoppeld aan de onderstaande grootte. Als u _Douane_ kiest, zult u zowel breedte als hoogte manueel moeten ingaan.
 10. Als u een aspectverhouding kiest, dan plaats één waarde voor **Grootte van de Resolutie**, en Dynamic Media Classic zal automatisch de andere waarde vullen. Voor een aangepaste hoogte-breedteverhouding moet u beide waarden echter invullen. De grootte moet overeenkomen met de gegevenssnelheid. Als u een lage gegevenssnelheid en een grote grootte instelt, is de kwaliteit waarschijnlijk slecht.
 11. Klik **sparen** om uw vooraf ingesteld te bewaren. In tegenstelling tot elke andere voorinstelling hoeft u op dit punt geen voorinstellingen te publiceren, omdat deze alleen zijn bedoeld voor het uploaden van bestanden. Later moet u de gecodeerde video&#39;s publiceren, maar de voorinstellingen zijn alleen bedoeld voor intern gebruik door Dynamic Media Classic.
 12. Om uw video vooraf ingesteld te verifiëren is op uploadt lijst, ga **uploaden**. Kies **Opties van de Baan** en breid **VideoOpties** uit. De voorinstelling wordt vermeld in de categorie voor het afspeelapparaat dat u hebt gekozen (Computer, Mobiel of Tablet).
@@ -322,7 +323,7 @@ Nadat de metagegevens zijn gevuld, kunt u deze weergeven in de Gedetailleerde we
 Als u Video-SEO instelt, begint u met het kiezen van het gewenste type indeling, de generatiemethode en de metagegevensvelden die u in het bestand wilt opnemen.
 
 1. Ga naar **Opstelling > de Opstelling van de Toepassing > Video SEO > Montages**.
-2. Voor het **menu van de Wijze van de Generatie 0} {, kies een dossierformaat.** De standaardwaarde is Uit, zodat om het in te schakelen, kiest u Video Sitemap, mRSS of Beide.
+2. Voor het **menu van de Wijze van de Generatie 0&rbrace; &lbrace;, kies een dossierformaat.** De standaardwaarde is Uit, zodat om het in te schakelen, kiest u Video Sitemap, mRSS of Beide.
 3. Kies of u automatisch of handmatig wilt genereren. Voor eenvoud, adviseren wij u het aan **Automatische Wijze** plaatst. Als u Automatisch kiest, dan plaats ook het **Teken voor de optie van Publish**, of anders zal het dossier(s) niet levend gaan. De Sitemap- en RSS-bestanden zijn typen in een XML-document en moeten net als andere elementen worden gepubliceerd. Gebruik een van de modi Handmatig als u niet alle informatie nu klaar hebt of slechts een eenmalige generatie wilt uitvoeren.
 4. Vul de metagegevenstags in die in de bestanden worden gebruikt. Deze stap is niet optioneel. Bij een minimum, moet u de drie gebieden duidelijk met een asterisk (\*) omvatten: **het Bestaan Pagina**, **Titel**, en **Beschrijving**. Als u de metagegevens voor deze taken wilt gebruiken, sleept u de velden vanuit het deelvenster Metagegevens aan de rechterkant naar een bijbehorend veld op het formulier. Dynamic Media Classic vult het veld voor plaatsaanduidingen automatisch met de feitelijke gegevens van elke video. U hoeft geen metagegevensvelden te gebruiken. In plaats daarvan kunt u hier statische tekst typen, maar voor elke video wordt dezelfde tekst weergegeven.
 5. Zodra u informatie op de drie vereiste gebieden hebt ingegaan, zal Dynamic Media Classic **sparen** toelaten en **sparen &amp; produceert** knopen. Klik op een pictogram om de instellingen op te slaan. Het gebruik **sparen** als u op Automatische Wijze bent en Dynamic Media Classic wilt hebben produceert de dossiers later. Het gebruik **sparen &amp; produceert** om het dossier onmiddellijk tot stand te brengen.

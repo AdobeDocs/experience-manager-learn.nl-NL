@@ -55,7 +55,7 @@ Hiervoor is het volgende vereist:
 In plaats van vestiging een milieu van AEM en het installeren van de WKND codebasis, kunt u debugger van Experience Platform aan **schakelaar** de levende [ Plaats WKND ](https://wknd.site/us/en.html) aan *gebruiken uw* markeringsbezit. Nochtans, kunt u uw eigen plaats van AEM gebruiken als het reeds de [ toegelaten Laag van Gegevens van de Cliënt van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) heeft.
 
 1. Login aan Experience Platform en [ creeer een bezit van de Markering ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) (als u niet reeds hebt).
-1. Zorg ervoor dat een aanvankelijke markering JavaScript [ bibliotheek ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) is gecreeerd en aan het milieu van de markering [ ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) bevorderd.
+1. Zorg ervoor dat een aanvankelijke markering JavaScript [ bibliotheek ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) is gecreeerd en aan het milieu van de markering [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) bevorderd.
 1. Kopieer de JavaScript-insluitcode vanuit de tagomgeving waarin uw bibliotheek is gepubliceerd.
 
    ![ het Bezit van de Markering van het Exemplaar bedt Code ](assets/collect-data-analytics/launch-environment-copy.png) in
@@ -120,7 +120,7 @@ De Laag van Gegevens van de Cliënt van Adobe is een **gebeurtenis-gedreven** ge
    ![ creeer Regel ](assets/collect-data-analytics/analytics-create-rule.png)
 
 1. Noem de regel **Geladen Pagina**.
-1. In de **subsection van Gebeurtenissen**, voegt de klik **** toe om de **tovenaar van de Configuratie van de Gebeurtenis** te openen.
+1. In de **subsection van Gebeurtenissen**, voegt de klik **&#x200B;**&#x200B;toe om de **tovenaar van de Configuratie van de Gebeurtenis** te openen.
 1. Voor **het Type van Gebeurtenis** gebied, uitgezochte **Code van de Douane**.
 
    ![ Naam de regel en voeg de gebeurtenis van de douanecode toe ](assets/collect-data-analytics/custom-code-event.png)
@@ -161,8 +161,8 @@ De Laag van Gegevens van de Cliënt van Adobe is een **gebeurtenis-gedreven** ge
    Tot slot wordt de functie `trigger(event)` aangeroepen. De `trigger()` functie is een gereserveerde naam in het markeringsbezit en het **brengt** de regel teweeg. Het `event` -object wordt doorgegeven als een parameter die vervolgens weer wordt weergegeven door een andere gereserveerde naam in de eigenschap tag. Gegevenselementen in de eigenschap tag kunnen nu verwijzen naar verschillende eigenschappen met behulp van een codefragment, zoals `event.component['someKey']` .
 
 1. Sla de wijzigingen op.
-1. Daarna onder **Acties** klik **** toevoegen om de **tovenaar van de Configuratie van de Actie** te openen.
-1. Voor **gebied van het Type van Actie 0} {, kies** de Code van de Douane **.**
+1. Daarna onder **Acties** klik **&#x200B;**&#x200B;toevoegen om de **tovenaar van de Configuratie van de Actie** te openen.
+1. Voor **gebied van het Type van Actie 0&rbrace; &lbrace;, kies** de Code van de Douane **.**
 
    ![ Type van de Actie van de Code van de Douane ](assets/collect-data-analytics/action-custom-code.png)
 
@@ -196,9 +196,9 @@ Gegevenselementen worden toegewezen aan de eigenschappen `@type` , `dc:title` en
 ### Type componentbron
 
 1. Navigeer naar Experience Platform en naar de tageigenschap die is geïntegreerd met de AEM-site.
-1. Navigeer aan de **sectie van de Elementen van Gegevens 0} {en klik** creeer Nieuw Element van Gegevens **.**
+1. Navigeer aan de **sectie van de Elementen van Gegevens 0&rbrace; &lbrace;en klik** creeer Nieuw Element van Gegevens **.**
 1. Voor het **gebied van de Naam**, ga het **Type van Middel van de Component** in.
-1. Voor het **gebied van het Type van Gegevens 0} {, uitgezochte** Code van de Douane **.**
+1. Voor het **gebied van het Type van Gegevens 0&rbrace; &lbrace;, uitgezochte** Code van de Douane **.**
 
    ![ Type van Middel van Component ](assets/collect-data-analytics/component-resource-type-form.png)
 
@@ -214,13 +214,13 @@ Gegevenselementen worden toegewezen aan de eigenschappen `@type` , `dc:title` en
 
    >[!NOTE]
    >
-   > Rappel dat het `event` voorwerp beschikbaar wordt gemaakt en scoped gebaseerd op de gebeurtenis die de **Regel** in markeringsbezit teweegbracht. De waarde van een Element van Gegevens wordt niet geplaatst tot het Element van Gegevens ** binnen een Regel van verwijzingen wordt voorzien. Daarom is het veilig om dit Element van Gegevens binnen een Regel als de **Geladen Pagina** regel te gebruiken die in de vorige stap *wordt gecreeerd maar* zou niet veilig zijn om in andere contexten te gebruiken.
+   > Rappel dat het `event` voorwerp beschikbaar wordt gemaakt en scoped gebaseerd op de gebeurtenis die de **Regel** in markeringsbezit teweegbracht. De waarde van een Element van Gegevens wordt niet geplaatst tot het Element van Gegevens **&#x200B; binnen een Regel van verwijzingen wordt voorzien. Daarom is het veilig om dit Element van Gegevens binnen een Regel als de &#x200B;** Geladen Pagina** regel te gebruiken die in de vorige stap *wordt gecreeerd maar* zou niet veilig zijn om in andere contexten te gebruiken.
 
 ### Paginanaam
 
 1. Klik **toevoegen het Element van Gegevens** knoop
 1. Voor het **gebied van de Naam**, ga **Naam van de Pagina** in.
-1. Voor het **gebied van het Type van Gegevens 0} {, uitgezochte** Code van de Douane **.**
+1. Voor het **gebied van het Type van Gegevens 0&rbrace; &lbrace;, uitgezochte** Code van de Douane **.**
 1. Klik **Open de knoop van de Redacteur**, en ga het volgende in de redacteur van de douanecode in:
 
    ```js
@@ -235,7 +235,7 @@ Gegevenselementen worden toegewezen aan de eigenschappen `@type` , `dc:title` en
 
 1. Klik **toevoegen het Element van Gegevens** knoop
 1. Voor het **gebied van de Naam**, ga **Malplaatje van de Pagina** in.
-1. Voor het **gebied van het Type van Gegevens 0} {, uitgezochte** Code van de Douane **.**
+1. Voor het **gebied van het Type van Gegevens 0&rbrace; &lbrace;, uitgezochte** Code van de Douane **.**
 1. Klik **Open de knoop van de Redacteur**, en ga het volgende in de redacteur van de douanecode in:
 
    ```js
@@ -287,8 +287,8 @@ Voeg vervolgens de extensie Analytics toe aan de eigenschap Tag om gegevens naar
 Daarna, werk de **Geladen Pagina** regel bij om het **het gegevenselement van het Type van Middel van de Component** te gebruiken om ervoor te zorgen dat de regel slechts brandt wanneer de `cmp:show` gebeurtenis voor de **Pagina** is. Andere componenten kunnen de gebeurtenis `cmp:show` starten, bijvoorbeeld de component Carousel, activeert de gebeurtenis wanneer de dia&#39;s veranderen. Daarom is het belangrijk om een voorwaarde voor deze regel toe te voegen.
 
 1. In het Bezit van de Markering UI, navigeer aan de **Geladen Pagina** regel eerder gecreeerd.
-1. Onder **Voorwaarden** klik **** toevoegen om de **tovenaar van de Configuratie van de Voorwaarde** te openen.
-1. Voor **gebied van het Type van Voorwaarde 0} {, de uitgezochte** optie van de Vergelijking van de Waarde **.**
+1. Onder **Voorwaarden** klik **&#x200B;**&#x200B;toevoegen om de **tovenaar van de Configuratie van de Voorwaarde** te openen.
+1. Voor **gebied van het Type van Voorwaarde 0&rbrace; &lbrace;, de uitgezochte** optie van de Vergelijking van de Waarde **.**
 1. Stel de eerste waarde in het formulierveld in op `%Component Resource Type%` . U kunt het Pictogram van het Element van Gegevens gebruiken ![ gegeven-element pictogram ](assets/collect-data-analytics/cylinder-icon.png) om het **het gegevenselement van het Type van Middel van de Component** te selecteren. Laat het comparator ingesteld staan op `Equals` .
 1. Stel de tweede waarde in op `wknd/components/page` .
 
@@ -308,13 +308,13 @@ Momenteel voert de **Geladen Pagina** regel eenvoudig een consoleverklaring uit.
 
    ![ verwijder de actie van de douanecode ](assets/collect-data-analytics/remove-console-statements.png)
 
-1. Onder de onderafdeling van Acties, voegt de klik **** toe om een nieuwe actie toe te voegen.
+1. Onder de onderafdeling van Acties, voegt de klik **&#x200B;**&#x200B;toe om een nieuwe actie toe te voegen.
 
 1. Plaats het **type van Uitbreiding** aan **Adobe Analytics** en plaats het **Type van Actie** aan **Vastgestelde Variabelen**
 
    ![ plaats de Uitbreiding van de Actie aan Analytics plaatste Variabelen ](assets/collect-data-analytics/analytics-set-variables-action.png)
 
-1. In het belangrijkste paneel, selecteer een beschikbare **eVar** en reeks als waarde van het Malplaatje van de Pagina van het Element van Gegevens ****. Gebruik het pictogram van de Elementen van Gegevens ![ het elementenpictogram van Gegevens ](assets/collect-data-analytics/cylinder-icon.png) om het **element van het Malplaatje van de Pagina** te selecteren.
+1. In het belangrijkste paneel, selecteer een beschikbare **eVar** en reeks als waarde van het Malplaatje van de Pagina van het Element van Gegevens **&#x200B;**. Gebruik het pictogram van de Elementen van Gegevens ![ het elementenpictogram van Gegevens ](assets/collect-data-analytics/cylinder-icon.png) om het **element van het Malplaatje van de Pagina** te selecteren.
 
    ![ Reeks als Malplaatje van de Pagina van eVar ](assets/collect-data-analytics/set-evar-page-template.png)
 
@@ -328,7 +328,7 @@ Momenteel voert de **Geladen Pagina** regel eenvoudig een consoleverklaring uit.
 
    ![ voeg een extra Actie van de Regel van de Markering toe ](assets/collect-data-analytics/add-additional-launch-action.png)
 
-1. Plaats het **type van de Uitbreiding 0} {aan** Adobe Analytics **en plaats het** Type van Actie **aan** verzendt Baken **.** Aangezien deze handeling als een paginaweergave wordt beschouwd, laat u de standaardtekstspatiëring ingesteld op **`s.t()`** .
+1. Plaats het **type van de Uitbreiding 0&rbrace; &lbrace;aan** Adobe Analytics **en plaats het** Type van Actie **aan** verzendt Baken **.** Aangezien deze handeling als een paginaweergave wordt beschouwd, laat u de standaardtekstspatiëring ingesteld op **`s.t()`** .
 
    ![ verzendt de actie van Adobe Analytics Beacon ](assets/track-clicked-component/send-page-view-beacon-config.png)
 

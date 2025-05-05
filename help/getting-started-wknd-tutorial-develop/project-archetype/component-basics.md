@@ -28,7 +28,7 @@ In dit hoofdstuk, onderzoeken wij de onderliggende technologie van een Component
 
 Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikkelomgeving ](./overview.md#local-dev-environment).
 
-winde in de video&#39;s wordt gebruikt is [ Code van Visual Studio ](https://code.visualstudio.com/) en de [ VSCode AEM 3} insteekmodule die van de Synchronisatie {.](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync)
+winde in de video&#39;s wordt gebruikt is [ Code van Visual Studio ](https://code.visualstudio.com/) en de [ VSCode AEM 3&rbrace; insteekmodule die van de Synchronisatie &lbrace;.](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync)
 
 ## Doelstelling {#objective}
 
@@ -92,7 +92,7 @@ Componenten kunnen worden beschouwd als kleine modulaire bouwstenen van een webp
 
 Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden uitgevoerd.
 
-1. Creeer een pagina genoemd **Grondbeginselen van de Component** onder **Plaats WKND** `>` **VS** `>` ****.
+1. Creeer een pagina genoemd **Grondbeginselen van de Component** onder **Plaats WKND** `>` **VS** `>` **&#x200B;**.
 1. Voeg de **Component van de Wereld van Hello** aan de pas gecreëerde pagina toe.
 1. Open het dialoogvenster voor de component en voer tekst in. Sla de wijzigingen op om het bericht op de pagina weer te geven.
 1. Schakel in naar de modus Ontwikkelaar en bekijk het inhoudspad in CRXDE-Lite en controleer de eigenschappen van de componentinstantie.
@@ -285,7 +285,7 @@ Laten we nu enkele updates uitvoeren op het `HelloWorldModel` Sling-model om eni
 
 Client-Side Libraries, `clientlibs` for short, biedt een mechanisme voor het organiseren en beheren van CSS- en JavaScript-bestanden die nodig zijn voor een AEM Sites-implementatie. Bibliotheken op de client zijn de standaardmanier om CSS en JavaScript op een pagina in AEM op te nemen.
 
-De {](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) module 0} ui.frontend is een ontkoppelde [ webpack ](https://webpack.js.org/) project dat in het bouwstijlproces wordt geïntegreerd. [ Hiermee kunt u populaire front-end bibliotheken gebruiken, zoals Sass, LESS en TypeScript. De `ui.frontend` module wordt verkend in meer diepte in het [ Client-Side hoofdstuk van Bibliotheken ](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
+De {[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) module 0} ui.frontend is een ontkoppelde [ webpack ](https://webpack.js.org/) project dat in het bouwstijlproces wordt geïntegreerd.  Hiermee kunt u populaire front-end bibliotheken gebruiken, zoals Sass, LESS en TypeScript. De `ui.frontend` module wordt verkend in meer diepte in het [ Client-Side hoofdstuk van Bibliotheken ](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
 
 Werk vervolgens de CSS-stijlen voor de component `HelloWorld` bij.
 

@@ -96,15 +96,15 @@ _Screencast van stappen_
    1. Selecteer __Pijpleidingen__ in de hoogste navigatie
    1. Selecteer __toevoegen Pijpleiding__ van de hoogste actiebar
    1. Op het __lusje van de Configuratie__
-      1. Selecteer __optie van de Pijl van de Plaatsing 0}__
+      1. Selecteer __optie van de Pijl van de Plaatsing 0&rbrace;__
       1. Plaats de __Naam van de niet-Productie Pijpleiding__ aan `Dev Deployment pipeline`
       1. Selecteer __Trigger van de Plaatsing > op de Veranderingen van de it__
       1. Selecteer __Belangrijk Metrisch Gedrag van Mislukt > ga onmiddellijk__
       1. Selecteer __verdergaan__
    1. Op het __Source Code__ lusje
-      1. Selecteer __de Volledige optie van de Code van de Stapel 0}__
+      1. Selecteer __de Volledige optie van de Code van de Stapel 0&rbrace;__
       1. Selecteer het __de ontwikkelomgeving van AEM as a Cloud Service__ van de __In aanmerking komende Milieu&#39;s van de Plaatsing__ uitgezochte doos
-      1. Selecteer `aem-headless-quick-setup-wknd` in de __2} uitgezochte doos van de Bewaarplaats {__
+      1. Selecteer `aem-headless-quick-setup-wknd` in de __2&rbrace; uitgezochte doos van de Bewaarplaats &lbrace;__
       1. Selecteer `main` van de __Tak van het Git__ uitgezochte doos
       1. Selecteer __sparen__
 1. Stel de __Dev Pipeline van de Plaatsing in werking__
@@ -166,7 +166,7 @@ _Screencast van stappen_
 
 1. Aanmelden bij AEM as a Cloud Service Author-service
 1. Navigeer aan __Assets > Dossiers > Gedeelde WKND > Engels > avonturen__
-1. Open de __Omslag van 0} Cycli Zuidelijke Utah {__
+1. Open de __Omslag van 0&rbrace; Cycli Zuidelijke Utah &lbrace;__
 1. Selecteer het __Cyclische Zuidelijke Fragment van de Inhoud__, en selecteer __uitgeven__ van de hoogste actiebar
 1. Werk enkele velden van het inhoudsfragment bij, bijvoorbeeld:
    + Titel: `Cycling Utah's National Parks`

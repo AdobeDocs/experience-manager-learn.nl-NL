@@ -33,4 +33,4 @@ ht-degree: 0%
    + [Verwijzingen naar niet-elementaire inhoud](editor/non-asset-content-references.md)
    + [RTE-variant vergelijken](editor/rte-variant-compare.md)
 + [ Uitbreidbaarheid ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/extensibility/content-fragments/overview.html)
-+ [ Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) {target=_blank}
++ [ Documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html){target=_blank}

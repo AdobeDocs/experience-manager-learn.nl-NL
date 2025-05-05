@@ -50,45 +50,59 @@ Voor deze oefening, moeten de volgende gebruikers worden betrokken en om sommige
 1. De Marketer maakt een A/B-doelactiviteit in Adobe Target.
    1. Van uw venster van Adobe Target, navigeer aan **Activiteiten** tabel.
    2. Klik **creeer de knoop van de Activiteit** en selecteer het activiteitstype als **Test A/B**
+
       ![ Adobe Target - creeer Activiteit ](assets/personalization-use-case-2/create-ab-activity.png)
-   3. Selecteer het **kanaal van het 0} Web {en kies** Visuele Composer van de Ervaring **.**
+   3. Selecteer het **kanaal van het 0&rbrace; Web &lbrace;en kies** Visuele Composer van de Ervaring **.**
    4. Ga **Activiteit URL** in en klik **daarna** om de Visuele Composer van de Ervaring te openen.
+
       ![ Adobe Target - creeer Activiteit ](assets/personalization-use-case-2/create-activity-ab-name.png)
    5. Voor **Visuele Composer van de Ervaring** om te laden, laat **toe Lading Onveilige manuscripten** op uw browser en herlaad uw pagina.
+
       ![ Ervaring richtend Activiteit ](assets/personalization-use-case-1/load-unsafe-scripts.png)
    6. Merk op de WKND homepage van de Plaats open in de redacteur van Composer van de Visuele Ervaring.
+
       ![ VEC ](assets/personalization-use-case-2/vec.png)
    7. **Ervaring A** verstrekt de standaardWKND Homepage, en laat de inhoudslay-out voor **Ervaring B** uitgeven.
+
       ![ Ervaring B ](assets/personalization-use-case-3/use-case3-experience-b.png)
    8. Klik op één van de container van de kaartlay-out (*Beste Roasters*) en selecteer **herschikt** optie.
+
       ![ Selectie van de Container ](assets/personalization-use-case-3/container-selection.png)
    9. Klik op de container die u opnieuw wilt rangschikken en sleep deze naar de gewenste locatie. Laat de *Beste Roasters* container van 1st rij 1st kolom aan 1st rij 3de kolom opnieuw rangschikken. Nu is de *Beste container van Roasters* naast *container van de Extracties van de Fotografie*.
+
       ![ het Wisselen van de Container ](assets/personalization-use-case-3/container-swap.png)
       **na Wisselen**
       ![ Gewisselde Container ](assets/personalization-use-case-3/after-swap-1-3.png)
    10. Op dezelfde manier wijzigt u de rangschikking van posities voor de andere kaartcontainers.
-      ![ Gewisselde Container ](assets/personalization-use-case-3/after-swap-all.png)
+
+       ![ Gewisselde Container ](assets/personalization-use-case-3/after-swap-all.png)
    11. Voeg ook een koptekst toe onder de carrouselcomponent en boven de kaartlay-out.
    12. Klik op de carrouselcontainer en selecteer **Inzet na > HTML** optie om HTML toe te voegen.
-      ![ voeg Tekst ](assets/personalization-use-case-3/add-text.png) toe
 
-      ```html
-      <h1 style="text-align:center">Check Out the Hot Spots in Town</h1>
-      ```
+       ![ voeg Tekst ](assets/personalization-use-case-3/add-text.png) toe
 
-      ![ voeg Tekst ](assets/personalization-use-case-3/after-changes.png) toe
+       ```html
+       <h1 style="text-align:center">Check Out the Hot Spots in Town</h1>
+       ```
+
+       ![ voeg Tekst ](assets/personalization-use-case-3/after-changes.png) toe
    13. Klik **daarna** om met uw activiteit verder te gaan.
    14. Selecteer de **Methode van de Toewijzing van het Verkeer** als hand en wijs 100% verkeer aan **Ervaring B** toe.
-      ![ Ervaring B Verkeer ](assets/personalization-use-case-2/traffic.png)
+
+       ![ Ervaring B Verkeer ](assets/personalization-use-case-2/traffic.png)
    15. Klik op **Next**.
    16. Verstrek **Goal Metrics** voor uw Activiteit en sparen en sluit uw Test A/B.
-      ![ Metrisch van het Doel van de Test A/B ](assets/personalization-use-case-2/goal-metric.png)
+
+       ![ Metrisch van het Doel van de Test A/B ](assets/personalization-use-case-2/goal-metric.png)
    17. Verstrek een naam (**WKND Vernieuwen de Homepage van het Huis**) voor uw Activiteit en sparen uw veranderingen.
    18. Van het scherm van de Details van de Activiteit, zorg ervoor **activeer** uw activiteit.
-      ![ activeer Activiteit ](assets/personalization-use-case-3/save-activity.png)
+
+       ![ activeer Activiteit ](assets/personalization-use-case-3/save-activity.png)
    19. Navigeer naar de startpagina van WKND (http://localhost:4503/content/wknd/en.html) en u merkt de wijzigingen die we hebben toegevoegd aan de testactiviteit A/B van de WKND-startpagina vernieuwen.
-      ![ Vernieuwde de Homepage van WKND ](assets/personalization-use-case-3/activity-result.png)
+
+       ![ Vernieuwde de Homepage van WKND ](assets/personalization-use-case-3/activity-result.png)
    20. Open uw browser console, en inspecteer het netwerklusje om doelreactie voor de Pagina van het Huis te zoeken WKND verfrist A/B de activiteit van de Test van de Test A.
+
       ![ Activiteit van het Netwerk ](assets/personalization-use-case-3/activity-result.png)
 
 ## Samenvatting

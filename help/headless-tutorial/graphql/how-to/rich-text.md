@@ -69,7 +69,7 @@ De ontwikkelaars kunnen de [ Voorproef JSON ](https://experienceleague.adobe.com
 
 Als u de responsindeling `json` voor het veld met meerdere regels selecteert, hebt u de meeste flexibiliteit bij het werken met RTF-inhoud. De rijke tekstinhoud wordt geleverd als een serie van JSON knooptypes die uniek op het cliëntplatform kunnen worden verwerkt.
 
-Hieronder is een JSON reactietype van een multi-line genoemd gebied `main` dat een paragraaf bevat: &quot;*Dit is een paragraaf die **belangrijke**inhoud omvat.*&quot;waar &quot;belangrijk&quot;als **gewaagd** duidelijk is.
+Hieronder is een JSON reactietype van een multi-line genoemd gebied `main` dat een paragraaf bevat: &quot;*Dit is een paragraaf die **belangrijke**&#x200B;inhoud omvat.*&quot;waar &quot;belangrijk&quot;als **gewaagd** duidelijk is.
 
 ```graphql
 query ($path: String!) {

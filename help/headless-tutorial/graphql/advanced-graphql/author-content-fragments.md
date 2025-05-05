@@ -54,7 +54,7 @@ Navigeer in de **omslag Adventures**. U ziet dat er al mappen voor teams en loca
 
 Creeer een omslag voor de Fragmenten van de Inhoud van Instructeurs die op het Model van het Fragment van de Inhoud van de Persoon gebaseerd zijn.
 
-1. Van de pagina van avonturen, creeer **** > **Omslag** in de hoger-juiste hoek.
+1. Van de pagina van avonturen, creeer **&#x200B;**&#x200B;> **Omslag** in de hoger-juiste hoek.
 
    ![ creeer omslag ](assets/author-content-fragments/create-folder.png)
 
@@ -110,7 +110,7 @@ Laten we vier mensen maken die aan een team van Adventure-instructeurs kunnen wo
    * **Vaardigheden**: Klimmen van de steen, Surfen, Achterverpakking
    * **Details van de Beheerder**: Jacob Wester heeft backpackaging avventures voor drie jaar gecoördineerd.
 
-1. Op het **gebied van het Beeld van het 1} Profiel van 0}, voeg een inhoudsverwijzing naar een beeld toe.** Blader aan **Gedeelde WKND** > **Engels** > **Medewerkers** > **jacob_wester.jpg** om een weg aan het beeld tot stand te brengen.
+1. Op het **gebied van het Beeld van het 1&rbrace; Profiel van 0&rbrace;, voeg een inhoudsverwijzing naar een beeld toe.** Blader aan **Gedeelde WKND** > **Engels** > **Medewerkers** > **jacob_wester.jpg** om een weg aan het beeld tot stand te brengen.
 
 ### Een fragmentverwijzing maken met de editor voor fragmentfragmenten {#fragment-reference-from-editor}
 
@@ -209,7 +209,7 @@ Navigeer in de **omslag van Plaatsen**. Hier ziet u twee geneste mappen die al z
 
 Negeer de map Yosemite Valley Lodge voorlopig. Wij keren aan het later in deze sectie terug wanneer wij een plaats creëren die als Basis van het Huis voor ons team van instructeurs dienst doet.
 
-Navigeer in de **omslag van het Nationaal Park van 0} Yosemite.** Op dit moment bevat het slechts een foto van het Yosemite National Park. Laten we een inhoudsfragment maken met behulp van het Locatie-inhoudsfragmentmodel en dit &#39;Yosemite National Park&#39; noemen.
+Navigeer in de **omslag van het Nationaal Park van 0&rbrace; Yosemite.** Op dit moment bevat het slechts een foto van het Yosemite National Park. Laten we een inhoudsfragment maken met behulp van het Locatie-inhoudsfragmentmodel en dit &#39;Yosemite National Park&#39; noemen.
 
 ### Plaatsaanduidingen voor tabbladen
 
@@ -360,7 +360,7 @@ De datums in het verleden of in de toekomst kunnen worden ingesteld met de pijle
 
 Laten wij Instructeurs aan de het fragmentverwijzing van de Leden van het Team toevoegen.
 
-1. Selecteer **toevoegen** op het **3} gebied van de Leden van het Team {.**
+1. Selecteer **toevoegen** op het **3&rbrace; gebied van de Leden van het Team &lbrace;.**
 
    ![ voeg knoop ](assets/author-content-fragments/add-button.png) toe
 
@@ -382,7 +382,7 @@ Tot slot voegen onze pas gecreëerde Fragments van de Inhoud aan een Avontuur to
 
 1. Voeg de fragmentverwijzing op het **gebied van de Plaats** toe. Het Locatiepad verwijst naar het Yosemite National Park Content Fragment dat u hebt gemaakt: `/content/dam/wknd-shared/en/adventures/locations/yosemite-national-park/yosemite-national-park` .
 
-1. Voeg de fragmentverwijzing op het **gebied van het Team van de Instructeur 1} toe.** Het pad Team moet verwijzen naar het Content Fragment Yosemite Team dat u hebt gemaakt: `/content/dam/wknd-shared/en/adventures/teams/yosemite-team/yosemite-team` . Dit is een geneste fragmentverwijzing. Het fragment van de Inhoud van het Team bevat een verwijzing naar het model van de Persoon dat verwijzingenInfo en de modellen van het Adres van het Contact. Daarom hebt u geneste inhoudsfragmenten drie niveaus omlaag.
+1. Voeg de fragmentverwijzing op het **gebied van het Team van de Instructeur 1&rbrace; toe.** Het pad Team moet verwijzen naar het Content Fragment Yosemite Team dat u hebt gemaakt: `/content/dam/wknd-shared/en/adventures/teams/yosemite-team/yosemite-team` . Dit is een geneste fragmentverwijzing. Het fragment van de Inhoud van het Team bevat een verwijzing naar het model van de Persoon dat verwijzingenInfo en de modellen van het Adres van het Contact. Daarom hebt u geneste inhoudsfragmenten drie niveaus omlaag.
 
 1. Voeg de fragmentverwijzing op het **gebied van de Beheerder** toe. Laten we zeggen dat Jacob Wester een beheerder is voor het Yosemite Backpackaging Adventure. Het pad moet leiden naar het Jacob Wester-inhoudsfragment en er als volgt uitzien: `/content/dam/wknd-shared/en/adventures/instructors/jacob-wester` .
 

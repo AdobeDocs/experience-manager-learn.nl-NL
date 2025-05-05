@@ -27,7 +27,7 @@ Deze cacheheaders worden doorgaans ingesteld in AEM Dispatcher-hostconfiguraties
 
 ## Standaardgedrag voor caching
 
-Wanneer aangepaste configuraties NIET aanwezig zijn, worden de standaardwaarden gebruikt. In het volgende schermafbeelding, kunt u het standaardcaching gedrag voor AEM zien publiceren en Auteur wanneer een ](https://github.com/adobe/aem-project-archetype) gebaseerd `mynewsite` AEM-project van de Archetype van het Project van AEM [ wordt opgesteld.
+Wanneer aangepaste configuraties NIET aanwezig zijn, worden de standaardwaarden gebruikt. In het volgende schermafbeelding, kunt u het standaardcaching gedrag voor AEM zien publiceren en Auteur wanneer een [&#128279;](https://github.com/adobe/aem-project-archetype) gebaseerd `mynewsite` AEM-project van de Archetype van het Project van AEM  wordt opgesteld.
 
 ![ Standaard caching gedrag ](../assets/how-to/aem-publish-default-cache-headers.png){width="800" zoomable="yes"}
 

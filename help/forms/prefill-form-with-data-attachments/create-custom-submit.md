@@ -40,7 +40,7 @@ Om aan het gebruiksgeval te voldoen, werd een douane verzend dienst gecreeerd om
 }
 ```
 
-Het element _**contractexemplaar**_ vertegenwoordigt een component van de dossiergehechtheid en wordt gebruikt om gehechtheid te vangen die met de vorm wordt voorgelegd.
+Het element _&#x200B;**contractexemplaar**&#x200B;_ vertegenwoordigt een component van de dossiergehechtheid en wordt gebruikt om gehechtheid te vangen die met de vorm wordt voorgelegd.
 Als u het adaptieve formulier vooraf wilt kunnen invullen met de gegevens en de bijlagen, worden de verzonden bijlagen opgeslagen in het Azure-portaal en wordt het gegevenselement van het contractkopieobject bijgewerkt met de URL van de opgeslagen bijlage.
 De aangepaste verzendservice extraheert en slaat de bijlagen op in het Azure-portaal.  De bijgewerkte ingediende gegevens zien er als volgt uit
 

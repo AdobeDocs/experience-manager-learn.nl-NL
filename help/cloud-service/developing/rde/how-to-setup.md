@@ -40,7 +40,7 @@ Het volgende moet lokaal worden geïnstalleerd:
 
 ## Lokale instellingen
 
-Om de ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) code en inhoud van het Project van de Plaatsen van 0} WKND {op te stellen RDE van uw lokale machine, voltooi de volgende stappen.[
+Om de [&#128279;](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) code en inhoud van het Project van de Plaatsen van 0&rbrace; WKND &lbrace;op te stellen RDE van uw lokale machine, voltooi de volgende stappen.
 
 ### Adobe I/O Runtime Extensible CLI
 
@@ -90,7 +90,7 @@ Installeer de AEM RDE-plug-ins en stel deze in met de opdracht `aio cli` s `plug
 
    - Kies __Nr__ als u slechts met één enkele RDE werkt, en uw configuratie van RDE globaal op uw lokale machine wilt opslaan.
 
-   - Kies __ja__ als u met veelvoudige RDEs werkt, of uw configuratie van RDE, in het 2} dossier van de huidige omslag {, voor elk project lokaal wilt opslaan.`.aio`
+   - Kies __ja__ als u met veelvoudige RDEs werkt, of uw configuratie van RDE, in het 2&rbrace; dossier van de huidige omslag &lbrace;, voor elk project lokaal wilt opslaan.`.aio`
 
 5. Selecteer de organisatie-id, de programma-id en de RDE-omgeving-id in de lijst met beschikbare opties.
 

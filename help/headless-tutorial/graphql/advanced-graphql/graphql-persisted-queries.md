@@ -32,7 +32,7 @@ Leer in dit hoofdstuk hoe te:
 * GraphQL-query&#39;s met parameters blijven gebruiken
 * De cache-control parameters van het gebruik met persistente vragen
 
-## Herzie _GraphQL het Verlengde 1} configuratie plaatsen van Vragen {_
+## Herzie _GraphQL het Verlengde 1&rbrace; configuratie plaatsen van Vragen &lbrace;_
 
 Laat herzien dat _GraphQL de Verlengde Vragen_ voor het project van de Plaats WKND in uw instantie van AEM worden toegelaten.
 
@@ -207,7 +207,7 @@ Door `getAllAdventureDetailsBySlug` vraag van de bevel-lijn terminal in werking 
 
 >[!TIP]
 >
->    Als u de bovenstaande query uitvoert tegen de AEM Author-omgeving, moet u de gegevens verzenden. Zie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) Token van de Toegang van de Lokale Ontwikkeling 1} voor demonstratie van het en [ roepend AEM API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) voor documentatiedetails.[
+>    Als u de bovenstaande query uitvoert tegen de AEM Author-omgeving, moet u de gegevens verzenden. Zie [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) Token van de Toegang van de Lokale Ontwikkeling 1&rbrace; voor demonstratie van het en [ roepend AEM API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) voor documentatiedetails.
 
 Ook, herzie [ hoe te om een Gepersisteerde vraag ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#execute-persisted-query) uit te voeren, [ Gebruikend vraagvariabelen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#query-variables), en [ Coderend vraag URL voor gebruik door app ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#encoding-query-url) om persisted vraaguitvoering door cliënttoepassingen te leren.
 
@@ -226,7 +226,7 @@ Gebruik de query `adventures-all` om de cache-besturingsparameters bij te werken
    ![ handhaaft de Optie van de Kopbal van GraphQL ](assets/graphql-persisted-queries/persist-graphql-header-option.png)
 
 
-1. In de **modaal van de Configuratie van het 0} Geheime voorgeheugen, werk de `max-age` kopbalwaarde aan `600 ` seconden (10 mins) bij, dan klik** sparen ****
+1. In de **modaal van de Configuratie van het 0&rbrace; Geheime voorgeheugen, werk de `max-age` kopbalwaarde aan `600 ` seconden (10 mins) bij, dan klik** sparen **&#x200B;**
 
    ![ handhaaft de Configuratie van het Geheime voorgeheugen van GraphQL ](assets/graphql-persisted-queries/persist-graphql-cache-config.png)
 

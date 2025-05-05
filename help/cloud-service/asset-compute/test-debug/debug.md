@@ -28,7 +28,7 @@ De meest elementaire vorm van foutopsporing voor Asset Compute-workers gebruikt 
 
 Deze loginstructies zijn beschikbaar voor review op een andere manier, afhankelijk van de manier waarop de Asset Compute-worker wordt uitgevoerd:
 
-+ Van `aio app run`, drukken de logboeken aan standaard uit en de ](../develop/development-tool.md) Logboeken van de Activering van het 1} Hulpmiddel van de Ontwikkeling {[
++ Van `aio app run`, drukken de logboeken aan standaard uit en de [&#128279;](../develop/development-tool.md) Logboeken van de Activering van het 1&rbrace; Hulpmiddel van de Ontwikkeling &lbrace;
   ![ de looppasconsole.log van de AIR app (...) ](./assets/debug/console-log__aio-app-run.png)
 + Vanuit `aio app test` worden logbestanden afgedrukt naar `/build/test-results/test-worker/test.log`
   ![ Ao app test console.log (...) ](./assets/debug/console-log__aio-app-test.png)
@@ -49,7 +49,7 @@ Deze loginstructies zijn beschikbaar voor review op een andere manier, afhankeli
 _klik-door van het zuiveren van een arbeider van Asset Compute die (Geen audio) gebruiken wskdebug_
 
 1. Verzeker [ wskdebug ](../set-up/development-environment.md#wskdebug) en [ ngrok ](../set-up/development-environment.md#ngork) npm modules worden geïnstalleerd
-1. Verzeker {de Desktop van 0} Docker en de ondersteunende beelden van Docker ](../set-up/development-environment.md#docker) geïnstalleerd en lopend zijn[
+1. Verzeker {de Desktop van 0} Docker en de ondersteunende beelden van Docker [&#128279;](../set-up/development-environment.md#docker) geïnstalleerd en lopend zijn
 1. Sluit alle actieve actieve actieve uitvoeringsinstanties van Development Tool.
 1. Implementeer de nieuwste code met `aio app deploy` en neem de naam van de geïmplementeerde actie op (naam tussen de `[...]` ). Hiermee werkt u de `launch.json` in stap 8 bij.
 
@@ -98,6 +98,7 @@ _klik-door van het zuiveren van een arbeider van Asset Compute die (Geen audio) 
 1. Verzeker de [ werkruimte-specifieke milieuvariabelen ](../deploy/runtime.md) via `AIO_runtime_namespace` en `AIO_runtime_auth` worden geplaatst, die op de werkruimte wordt gebaseerd die het zuiveren vereisen.
 1. Uitvoeren vanaf de opdrachtregel `aio app logs`
    + Als er veel verkeer is in de werkruimte, vouwt u het aantal activeringslogboeken uit via de markering `--limit` :
+
      `$ aio app logs --limit=25`
 1. De meest recente (tot en met de meegeleverde `--limit` ) activeringslogboeken worden geretourneerd als uitvoer van de opdracht ter controle.
 

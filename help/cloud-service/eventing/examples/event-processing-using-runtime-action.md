@@ -31,7 +31,7 @@ In dit voorbeeld worden de oorspronkelijke gebeurtenisgegevens en de ontvangen g
 
 U hebt het volgende nodig om deze zelfstudie te voltooien:
 
-- Het milieu van AEM as a Cloud Service met [ toegelaten de Gebeurtenis van AEM ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Ook, moet het steekproef ](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) project van de Plaatsen WKND [ worden opgesteld aan het.
+- Het milieu van AEM as a Cloud Service met [ toegelaten de Gebeurtenis van AEM ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Ook, moet het steekproef [&#128279;](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) project van de Plaatsen WKND  worden opgesteld aan het.
 
 - Toegang tot [ Adobe Developer Console ](https://developer.adobe.com/developer-console/docs/guides/getting-started).
 
@@ -41,7 +41,7 @@ U hebt het volgende nodig om deze zelfstudie te voltooien:
 
 ## AEM Events Processor, actie
 
-In dit voorbeeld, voert de actie van de gebeurtenisbewerker [ ](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) volgende taken uit:
+In dit voorbeeld, voert de actie van de gebeurtenisbewerker [&#128279;](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) volgende taken uit:
 
 - Parseert ontvangen gebeurtenis in een activiteitenbericht.
 - Als de ontvangen gebeurtenis van _Gewijzigd van het Fragment van de Inhoud_ type is, vraag terug naar de auteursdienst van AEM om de wijzigingsdetails te vinden.

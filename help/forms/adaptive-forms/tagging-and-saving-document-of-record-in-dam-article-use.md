@@ -28,7 +28,7 @@ Het gebruiksgeval is als volgt:
 * Bij het verzenden van formulieren wordt een AEM Workflow geactiveerd. Met deze workflow wordt het document gelabeld met de burgerlijke staat (Single) en de werkgelegenheidsstatus (In ruste) en wordt het document opgeslagen in DAM.
 * Nadat het document is opgeslagen in DAM, kan de beheerder het document op basis van deze codes doorzoeken. Bijvoorbeeld, zou het onderzoek op Enige of In ruste de aangewezen Dor&#39;s halen.
 
-Om aan dit gebruiksgeval te voldoen is een stap van het douaneproces geschreven. In deze stap halen wij de waarden van de aangewezen gegevenselementen uit de voorgelegde gegevens. Vervolgens wordt de labeltegel gemaakt met deze waarde. Als bijvoorbeeld de waarde van het element van de burgerlijke staat &#39;Single&#39; is, wordt de titel van de tag **Peak:EmploymentStatus/Single. **Met behulp van de API TagManager vinden we de tag en passen we de tag toe op de DoR.
+Om aan dit gebruiksgeval te voldoen is een stap van het douaneproces geschreven. In deze stap halen wij de waarden van de aangewezen gegevenselementen uit de voorgelegde gegevens. Vervolgens wordt de labeltegel gemaakt met deze waarde. Als bijvoorbeeld de waarde van het element van de burgerlijke staat &#39;Single&#39; is, wordt de titel van de tag **Peak:EmploymentStatus/Single. &#x200B;** Met behulp van de API TagManager vinden we de tag en passen we de tag toe op de DoR.
 
 Hier volgt de volledige code voor het coderen en opslaan van het Document of Record in AEM DAM.
 

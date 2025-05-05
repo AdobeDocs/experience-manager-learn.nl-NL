@@ -356,7 +356,7 @@ Resource resource = asset.adaptTo(Resource.class);
 
 ### Eigenschappen schrijven met de functie ModisibleValueMap van [!DNL Sling]
 
-Het gebruik [ ModifyingValueMap ](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ModifiableValueMap.html) van [!DNL Sling] {om eigenschappen aan knopen te schrijven. Dit kan alleen naar het huidige knooppunt worden geschreven (relatieve paden van eigenschappen worden niet ondersteund).
+Het gebruik [ ModifyingValueMap ](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ModifiableValueMap.html) van [!DNL Sling] &lbrace;om eigenschappen aan knopen te schrijven. Dit kan alleen naar het huidige knooppunt worden geschreven (relatieve paden van eigenschappen worden niet ondersteund).
 
 De aanroep van `.adaptTo(ModifiableValueMap.class)` vereist schrijfmachtigingen naar de bron, anders wordt null geretourneerd.
 

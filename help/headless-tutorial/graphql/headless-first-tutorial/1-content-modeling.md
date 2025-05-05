@@ -50,7 +50,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
    ![ Modelomslag ](./assets/1/model-folder.png)
 
-1. Binnen de omslag, creeert de uitgezochte ____ en noemt het model __Taser__. Voeg de volgende datatypes aan het __1} model van het Taser {toe.__
+1. Binnen de omslag, creeert de uitgezochte ____ en noemt het model __Taser__. Voeg de volgende datatypes aan het __1&rbrace; model van het Taser &lbrace;toe.__
 
    | Datatype | Naam | Vereist | Opties |
    |----------|------|----------|---------|

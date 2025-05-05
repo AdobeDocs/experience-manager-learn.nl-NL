@@ -34,7 +34,7 @@ Adobe Experience Manager 6.5 blijft de stabiliteit, prestaties en draagbaarheid 
 
 AEM Sites introduceert een aantal functies die zijn ontworpen om het maken en ontwikkelen van websites te versnellen:
 
-+ **steun van de Redacteur van het KUUROORD** {staat KUUROORD (enig-paginatoepassingen) toe om volledig in AEM worden ontworpen, ondersteunend een rijke, Marketer-vriendschappelijke auteurservaring.
++ **steun van de Redacteur van het KUUROORD** &lbrace;staat KUUROORD (enig-paginatoepassingen) toe om volledig in AEM worden ontworpen, ondersteunend een rijke, Marketer-vriendschappelijke auteurservaring.
 +_ **JavaScript SDK**, een Uitrusting van het Begin van het Project van het KUUROORD en het steunen bouwt hulpmiddelen, staan front-end ontwikkelaars toe om SPA Redacteur-Compatibele enige pagina-toepassingen onafhankelijk van AEM te ontwikkelen.
 + **Componenten van de Kern** voegt een veelheid van nieuwe componenten, de Bibliotheek van de a **Component** evenals een verscheidenheid van verhogingen aan bestaande Componenten van de Kern toe.
 + Verdere **verbeteringen van de Vertalingen** stroomlijnen vertaling van AEM Sites.

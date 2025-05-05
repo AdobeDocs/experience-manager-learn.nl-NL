@@ -145,7 +145,7 @@ Er zijn extra stukken die subsecties zijn van de configuraties van het de landbo
 
 #### Cache Directory
 
-Deze map bevat alle `_cache.any` , `_invalidate.any` -bestanden die u maakt en die uw regels bevatten over hoe u wilt dat de module caching-elementen die afkomstig zijn uit AEM, en de syntaxis van validatieregels in beslag neemt.  Meer details op deze sectie zijn hier [ ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Deze map bevat alle `_cache.any` , `_invalidate.any` -bestanden die u maakt en die uw regels bevatten over hoe u wilt dat de module caching-elementen die afkomstig zijn uit AEM, en de syntaxis van validatieregels in beslag neemt.  Meer details op deze sectie zijn hier [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
 
 - `/etc/httpd/conf.dispatcher.d/cache/`
 

@@ -33,7 +33,7 @@ Aangepaste naamruimten zijn het optionele deel van een JCR-eigenschap dat vooraf
 
 Naamruimten kunnen worden gebruikt om het bereik en de intentie van een eigenschap aan te geven. Door een aangepaste naamruimte te maken, vaak uw bedrijfsnaam, kunt u knooppunten of eigenschappen die specifiek zijn voor uw AEM-implementatie duidelijk identificeren en gegevens bevatten die specifiek zijn voor uw bedrijf.
 
-De douane namespaces wordt beheerd in [ het Schipen van de Initialisatie van de Bewaarplaats (opnieuw richt) ](https://sling.apache.org/documentation/bundles/repository-initialization.html) manuscripten, en stelt aan AEM as a Cloud Service als configuraties OSGi op - en toegevoegd aan het ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) `ui.config` project van uw [ AEM project.
+De douane namespaces wordt beheerd in [ het Schipen van de Initialisatie van de Bewaarplaats (opnieuw richt) ](https://sling.apache.org/documentation/bundles/repository-initialization.html) manuscripten, en stelt aan AEM as a Cloud Service als configuraties OSGi op - en toegevoegd aan het [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) `ui.config` project van uw  AEM project.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3412319?quality=12&learn=on)
 

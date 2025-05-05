@@ -25,7 +25,7 @@ In AEM 6.5 moet het hulpmiddel GraphiQL IDE manueel worden geïnstalleerd.
 1. Onderzoek naar &quot;GraphiQL&quot;(ben zeker om **i** in **GraphiQL** te omvatten).
 1. Download het recentste **GrahiQL Pakket van de Inhoud v.x.x.x.x**.
 
-   ![ Pakket GraphiQL van de Download {](assets/graphiql/software-distribution.png)
+   ![ Pakket GraphiQL van de Download &lbrace;](assets/graphiql/software-distribution.png)
 
    Het ZIP-bestand is een AEM-pakket dat rechtstreeks kan worden geïnstalleerd.
 

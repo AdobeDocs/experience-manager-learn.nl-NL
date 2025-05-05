@@ -41,7 +41,7 @@ In deze zelfstudie leert u hoe u:
 Controleer voordat u begint het volgende:
 
 - [ Toegang hebbend tot Adobe APIs en verwante concepten ](../overview.md#accessing-adobe-apis-and-related-concepts) sectie.
-- ](../setup.md) artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.[
+- [&#128279;](../setup.md) artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.
 
 ## WKND SPA-overzicht en functionele stroom{#wknd-spa-overview-and-functional-flow}
 
@@ -385,7 +385,7 @@ Vorm ADC de stap van het Project wordt _herhaald_ van [ OpenAPI-Gebaseerde AEM A
 
    ![ voeg AEM API ](../assets/spa/add-aem-sites-api.png) toe
 
-1. Daarna, in _vorm API_ dialoog, selecteer de **3} authentificatieoptie van de Authentificatie van de Gebruiker {en klik** daarna **.**
+1. Daarna, in _vorm API_ dialoog, selecteer de **3&rbrace; authentificatieoptie van de Authentificatie van de Gebruiker &lbrace;en klik** daarna **.**
 
    ![ vorm AEM API ](../assets/spa/configure-aem-api.png)
 

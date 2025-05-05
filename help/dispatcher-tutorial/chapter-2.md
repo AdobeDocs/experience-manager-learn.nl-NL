@@ -73,7 +73,7 @@ Dat kunt u absoluut doen! En er zijn veel geldige toepassingsscenario&#39;s voor
 
 Elk Publish-systeem is verbonden met een groot aantal Dispatchers. Elk systeem moet ongeldig worden gemaakt wanneer de inhoud is gewijzigd.
 
-####  Onderhoud
+#### Onderhoud
 
 Het spreekt vanzelf dat de eerste configuratie van de Dispatcher- en Publish-systemen wat complexer is. Maar houd ook in mening dat de inspanning van een &quot;het rollen&quot;versie ook een beetje hoger is. AEM systemen kunnen en moeten worden bijgewerkt tijdens de uitvoering. Maar het is verstandig om dat niet te doen terwijl ze actief verzoeken indienen. Meestal wilt u slechts een deel van de Publish-systemen bijwerken - terwijl de andere nog steeds actief het verkeer bedienen en vervolgens - na het testen - overschakelen naar het andere deel. Als u geluk hebt en u tot lading-stabilisator in uw plaatsingsproces kunt toegang hebben, kunt u het verpletteren aan de servers onbruikbaar maken onder onderhoud hier. Als u zich op een gedeeld taakverdelingsmechanisme zonder directe toegang bevindt, sluit u liever de verzenders van de Publish die u wilt bijwerken. Hoe meer er is, hoe meer je moet sluiten. Als er een groot aantal is en u regelmatig updates plant, wordt een zekere automatisering geadviseerd. Als u geen automatiseringsgereedschappen hebt, is schalen toch een slecht idee.
 

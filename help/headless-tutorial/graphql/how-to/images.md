@@ -50,7 +50,7 @@ Het type `ImageRef` heeft vier URL-opties voor inhoudsverwijzingen:
 
 Verzeker het gebied van het Fragment van de Inhoud dat de beeldverwijzing bevat van het __gegevenstype van de inhoudsverwijzing__ is.
 
-De types van gebied worden herzien in het [ Model van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html), door het gebied te selecteren, en het __3} lusje van Eigenschappen {op het recht te inspecteren.__
+De types van gebied worden herzien in het [ Model van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html), door het gebied te selecteren, en het __3&rbrace; lusje van Eigenschappen &lbrace;op het recht te inspecteren.__
 
 ![ Model van het Fragment van de Inhoud met inhoudsverwijzing naar een beeld ](./assets/images/content-fragment-model.jpeg)
 

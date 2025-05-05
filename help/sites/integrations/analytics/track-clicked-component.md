@@ -131,8 +131,8 @@ De Laag van Gegevens van de Cliënt van Adobe is een **gebeurtenis** gedreven ge
    Tot slot wordt de functie `trigger(event)` aangeroepen. De `trigger()` functie is een gereserveerde naam in het markeringsbezit en het **brengt** de regel teweeg. Het `event` -object wordt doorgegeven als een parameter die vervolgens weer wordt weergegeven door een andere gereserveerde naam in de eigenschap tag. Gegevenselementen in de eigenschap tag kunnen nu verwijzen naar verschillende eigenschappen met behulp van een codefragment, zoals `event.component['someKey']` .
 
 1. Sla de wijzigingen op.
-1. Daarna onder **Acties** klik **** toevoegen om de **tovenaar van de Configuratie van de Actie** te openen.
-1. Voor **gebied van het Type van Actie 0} {, kies** de Code van de Douane **.**
+1. Daarna onder **Acties** klik **&#x200B;**&#x200B;toevoegen om de **tovenaar van de Configuratie van de Actie** te openen.
+1. Voor **gebied van het Type van Actie 0&rbrace; &lbrace;, kies** de Code van de Douane **.**
 
    ![ Type van de Actie van de Code van de Douane ](assets/track-clicked-component/action-custom-code.png)
 
@@ -170,7 +170,7 @@ Maak vervolgens gegevenselementen om de component-id en de titel vast te leggen 
 ### Component-id
 
 1. Navigeer naar Experience Platform en naar de tageigenschap die is geïntegreerd met de AEM-site.
-1. Navigeer aan de **sectie van de Elementen van Gegevens 0} {en klik** toevoegen Nieuw Element van Gegevens **.**
+1. Navigeer aan de **sectie van de Elementen van Gegevens 0&rbrace; &lbrace;en klik** toevoegen Nieuw Element van Gegevens **.**
 1. Voor **het gebied van de Naam**, ga **identiteitskaart van de Component** in.
 1. Voor **het Type van Element van Gegevens** gebied, uitgezochte **Code van de Douane**.
 
@@ -189,12 +189,12 @@ Maak vervolgens gegevenselementen om de component-id en de titel vast te leggen 
 
    >[!NOTE]
    >
-   > Rappel dat het `event` voorwerp beschikbaar wordt gemaakt en scoped gebaseerd op de gebeurtenis die de **Regel** in markeringsbezit teweegbracht. De waarde van een Element van Gegevens wordt niet geplaatst tot het Element van Gegevens ** binnen een Regel van verwijzingen wordt voorzien. Daarom is het veilig om dit Element van Gegevens binnen een Regel als de **Geladen Pagina** regel te gebruiken die in de vorige stap *wordt gecreeerd maar* zou niet veilig zijn om in andere contexten te gebruiken.
+   > Rappel dat het `event` voorwerp beschikbaar wordt gemaakt en scoped gebaseerd op de gebeurtenis die de **Regel** in markeringsbezit teweegbracht. De waarde van een Element van Gegevens wordt niet geplaatst tot het Element van Gegevens **&#x200B; binnen een Regel van verwijzingen wordt voorzien. Daarom is het veilig om dit Element van Gegevens binnen een Regel als de &#x200B;** Geladen Pagina** regel te gebruiken die in de vorige stap *wordt gecreeerd maar* zou niet veilig zijn om in andere contexten te gebruiken.
 
 
 ### Componenttitel
 
-1. Navigeer aan de **sectie van de Elementen van Gegevens 0} {en klik** toevoegen Nieuw Element van Gegevens **.**
+1. Navigeer aan de **sectie van de Elementen van Gegevens 0&rbrace; &lbrace;en klik** toevoegen Nieuw Element van Gegevens **.**
 1. Voor **het gebied van de Naam**, ga **Titel van de Component** in.
 1. Voor **het Type van Element van Gegevens** gebied, uitgezochte **Code van de Douane**.
 1. Klik **Open de knoop van de Redacteur** en ga het volgende in de redacteur van de douanecode in:
@@ -212,8 +212,8 @@ Maak vervolgens gegevenselementen om de component-id en de titel vast te leggen 
 Daarna, werk de **CTA geklikte** regel bij om ervoor te zorgen dat de regel slechts in brand steekt wanneer de `cmp:click` gebeurtenis voor a **Taser** of a **Knoop** in brand wordt gestoken. Aangezien de CTA van de Teaser als een afzonderlijk voorwerp in de gegevenslaag wordt beschouwd, is het belangrijk om de ouder te controleren om te verifiëren het uit een Teaser kwam.
 
 1. In het Bezit van de Markering UI, navigeer aan **CTA klikte** regel vroeger gecreeerd.
-1. Onder **Voorwaarden** klik **** toevoegen om de **tovenaar van de Configuratie van de Voorwaarde** te openen.
-1. Voor **gebied van het Type van Voorwaarde 0} {, uitgezochte** Code van de Douane **.**
+1. Onder **Voorwaarden** klik **&#x200B;**&#x200B;toevoegen om de **tovenaar van de Configuratie van de Voorwaarde** te openen.
+1. Voor **gebied van het Type van Voorwaarde 0&rbrace; &lbrace;, uitgezochte** Code van de Douane **.**
 
    ![ CTA klikte Code van de Douane van de Voorwaarde ](assets/track-clicked-component/custom-code-condition.png)
 
@@ -245,7 +245,7 @@ Momenteel klikt de **CTA** regel eenvoudig output een consoleverklaring. Daarna,
 
    ![ verwijder de actie van de douanecode ](assets/track-clicked-component/remove-console-statements.png)
 
-1. Onder Acties, voegt de klik **** toe om een actie tot stand te brengen.
+1. Onder Acties, voegt de klik **&#x200B;**&#x200B;toe om een actie tot stand te brengen.
 1. Plaats het **type van Uitbreiding** aan **Adobe Analytics** en plaats het **Type van Actie** aan **Vastgestelde Variabelen**.
 
 1. Plaats de volgende waarden voor **eVars**, **Props**, en **Gebeurtenissen**:
@@ -264,13 +264,13 @@ Momenteel klikt de **CTA** regel eenvoudig output een consoleverklaring. Daarna,
 
    ![ voeg een Extra Actie aan de Regel van de Markering toe ](assets/track-clicked-component/add-additional-launch-action.png)
 
-1. Plaats het **type van de Uitbreiding 0} {aan** Adobe Analytics **en plaats het** Type van Actie **aan** verzendt Baken **.**
+1. Plaats het **type van de Uitbreiding 0&rbrace; &lbrace;aan** Adobe Analytics **en plaats het** Type van Actie **aan** verzendt Baken **.**
 1. Onder **Volgend** plaatsen het radioknoop aan **`s.tl()`**.
 1. Voor **het Type van Verbinding** gebied, kies **Douane Verbinding** en voor **de Naam van de Verbinding** plaatsen de waarde aan: **`%Component Title%: CTA Clicked`**
 
    ![ Configuratie voor Send het baken van de Verbinding ](assets/track-clicked-component/analytics-send-beacon-link-track.png)
 
-   Bovenstaande config combineert de dynamische variabele van de Titel van de Component van het gegevenselement **** en het statische koord **CTA klikte**.
+   Bovenstaande config combineert de dynamische variabele van de Titel van de Component van het gegevenselement **&#x200B;**&#x200B;en het statische koord **CTA klikte**.
 
 1. Sla de wijzigingen op. De **CTA klikte** regel zou nu de volgende configuratie moeten hebben:
 
@@ -300,7 +300,7 @@ Nu de **CTA klikte** regel het baken van Analytics verzendt, zou u de het volgen
 
 1. Terugkeer aan de Debugger van Experience Platform en rol neer en breid **Verzoeken van het Netwerk** > *Uw Reeks van het Rapport* uit. U zou **eVar**, **prop**, en **gebeurtenis** moeten kunnen vinden reeks.
 
-   {de gebeurtenissen van 0} Analytics, evar, en prop die op klik ](assets/track-clicked-component/evar-prop-link-clicked-tracked-debugger.png) worden gevolgd![
+   {de gebeurtenissen van 0} Analytics, evar, en prop die op klik ![&#128279;](assets/track-clicked-component/evar-prop-link-clicked-tracked-debugger.png) worden gevolgd
 
 1. Ga terug naar de browser en open de ontwikkelaarsconsole. Navigeer naar de voettekst van de site en klik op een van de navigatiekoppelingen:
 

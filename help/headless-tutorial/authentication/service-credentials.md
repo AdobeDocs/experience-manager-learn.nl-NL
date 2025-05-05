@@ -182,7 +182,7 @@ Deze voorbeeldtoepassing is gebaseerd op Node.js, dus het is beter om [@adobe/jw
  }
 ```
 
-     nu, afhankelijk van welk JSON dossier - of het Lokale Token JSON van de Toegang van de Ontwikkeling of de Referentie JSON van de Dienst - binnen via die het bevellijnparameter van file ` wordt overgegaan, zal de toepassing een toegangstoken afleiden.
+     nu, afhankelijk van welk JSON dossier - of het Lokale Token JSON van de Toegang van de Ontwikkeling of de Referentie JSON van de Dienst - binnen via die het bevellijnparameter van file &grave; wordt overgegaan, zal de toepassing een toegangstoken afleiden.
     
      Herinner me, dat terwijl de Referenties van de Dienst elke 365 dagen verlopen, JWT en het overeenkomstige toegangstoken vaak verlopen, en moeten worden verfrist alvorens zij verlopen. Dit kan worden gedaan door ` te gebruiken verfrist_token ` [verstrekt door Adobe IMS] (https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens).
 

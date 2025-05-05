@@ -29,7 +29,7 @@ Op de derde knop wordt de standaardstijl toegepast.
 
 ## Het themaproject samenstellen
 
-De volgende stap is het themaproject te bouwen. Navigeer aan de wortelomslag van uw themaproject en stel in werking bevel _**npm looppas bouwt**_ zoals aangetoond in het hieronder ontsproten scherm.
+De volgende stap is het themaproject te bouwen. Navigeer aan de wortelomslag van uw themaproject en stel in werking bevel _&#x200B;**npm looppas bouwt**&#x200B;_ zoals aangetoond in het hieronder ontsproten scherm.
 
 ![ bouwstijl-thema ](assets/build-theme.png)
 

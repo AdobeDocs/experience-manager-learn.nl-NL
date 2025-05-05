@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Auteur van een blok
 
-Na het duwen van JSON ](./5-new-block.md) van het [ laserblok aan de `teaser` tak, wordt het blok editable in de Universele Redacteur van AEM.
+Na het duwen van JSON [&#128279;](./5-new-block.md) van het  laserblok aan de `teaser` tak, wordt het blok editable in de Universele Redacteur van AEM.
 
 Het ontwerpen van een ontwikkelingsblok is om verschillende redenen belangrijk:
 

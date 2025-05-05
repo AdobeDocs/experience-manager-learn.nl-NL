@@ -125,7 +125,7 @@ Een van de doelstellingen van deze zelfstudie is om te tonen hoe u AEM-inhoud va
 
    >[!NOTE]
    >
-   > In een productiescenario zal App met AEM **verbinden publiceren** milieu. Dit wordt behandeld meer in detail in de _sectie van de Plaatsing van de 0} Productie._
+   > In een productiescenario zal App met AEM **verbinden publiceren** milieu. Dit wordt behandeld meer in detail in de _sectie van de Plaatsing van de 0&rbrace; Productie._
 
 
 1. Installeer en start de React-app:

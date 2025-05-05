@@ -27,14 +27,14 @@ Het gebruik van [ Android ](https://developer.android.com/) is grotendeels onbel
 
 Android wordt gebruikt voor zelfstudie omdat een Android Emulator in Windows, macOs en Linux kan worden uitgevoerd en omdat het populair is en kan worden geschreven als Java, een taal die AEM ontwikkelaars goed begrijpen.
 
-*Android Mobile App van de zelfstudie is **niet**bedoeld om te instrueren hoe te om de Mobiele apps van Android te bouwen of Android ontwikkelingsbeste praktijken over te brengen, maar eerder om te illustreren hoe AEM de Diensten van de Inhoud van een Mobiele Toepassing kunnen worden verbruikt.*
+*Android Mobile App van de zelfstudie is **niet**&#x200B;bedoeld om te instrueren hoe te om de Mobiele apps van Android te bouwen of Android ontwikkelingsbeste praktijken over te brengen, maar eerder om te illustreren hoe AEM de Diensten van de Inhoud van een Mobiele Toepassing kunnen worden verbruikt.*
 
 ### De manier waarop AEM Content Services de Mobile App Experience
 
 ![ Mobiele Toepassing aan de Afbeelding van de Diensten van de Inhoud ](assets/chapter-7/content-services-mapping.png)
 
-1. Het **embleem** zoals die door de [!DNL Events API] component van het Beeld van de pagina **** wordt bepaald.
-1. De **markeringslijn** zoals bepaald op de [!DNL Events API] component van de Tekst van de pagina ****.
+1. Het **embleem** zoals die door de [!DNL Events API] component van het Beeld van de pagina **&#x200B;**&#x200B;wordt bepaald.
+1. De **markeringslijn** zoals bepaald op de [!DNL Events API] component van de Tekst van de pagina **&#x200B;**.
 1. Deze **lijst van de Gebeurtenis** wordt afgeleid uit de rangschikking van de Fragmenten van de Inhoud van de Gebeurtenis, die via de gevormde **component van de Lijst van het Fragment van de Inhoud** worden blootgesteld.
 
 ## Mobiele-toepassingsdemonstratie

@@ -26,5 +26,5 @@ De component Image, die deel uitmaakt van Experience Manager Core Components, bi
 
 ## Aanvullende bronnen
 
-* [ Documentatie van de Component van de Kern van het Beeld 1}](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=en#dynamic-media)
+* [ Documentatie van de Component van de Kern van het Beeld 1&rbrace;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=en#dynamic-media)
 * [ Dynamische Verwijzing van het Bevel van Media ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en#image-serving-api)

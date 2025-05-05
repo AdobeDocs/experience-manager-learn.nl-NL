@@ -35,7 +35,7 @@ Start je aem-banking project in IntelliJ. Maak een servlet met de naam GetFieldC
 
 ## Sample Servlet
 
-De volgende servlet is verbindend aan het het Verspreiden middeltype: _**azure/fetchchoice**_
+De volgende servlet is verbindend aan het het Verspreiden middeltype: _&#x200B;**azure/fetchchoice**&#x200B;_
 
 
 

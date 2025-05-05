@@ -58,8 +58,8 @@ De eerste stap bij het maken van een formulier met RDBMS-ondersteuning is het co
 * ![ get-service ](assets/get-service.png)
 >[!NOTE]
 > De get-service verwacht een waarde die is toegewezen aan de empID-kolom van een nieuwe entiteit. Er zijn meerdere manieren om deze waarde door te geven en in deze zelfstudie wordt de empID doorgegeven via de aanvraagparameter empID.
-* Klik _Gedaan_ om de argumenten voor de get dienst te bewaren
-* Klik _Gereed_ om veranderingen in het model van vormgegevens te bewaren
+>* Klik _Gedaan_ om de argumenten voor de get dienst te bewaren
+>* Klik _Gereed_ om veranderingen in het model van vormgegevens te bewaren
 
 ## Koppeling toevoegen tussen 2 entiteiten
 

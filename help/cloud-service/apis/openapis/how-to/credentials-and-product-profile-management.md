@@ -60,7 +60,7 @@ Alle geloofsbrieven worden beheerd in uw project ADC.
 
 >[!BEGINTABS]
 
->[!TAB  voeg Referenties ] toe
+>[!TAB voeg Referenties  toe]
 
 Om geloofsbrieven voor AEM API toe te voegen, ga naar de **APIs** sectie van uw project ADC en klik **verbind een andere referentie**. Volg vervolgens de instructies voor het specifieke type referentie.
 
@@ -85,11 +85,11 @@ Bijvoorbeeld, wanneer de aanroeping van de Auteur van AEM Assets API [ 403 fout 
 
 >[!CAUTION]
 >
->De **dienst van de Beheerders van AEM 1} verleent _VOLLEDIGE_ administratieve toegang tot Experience Manager.** Alternatief, kunt u {de toestemmingen van de Diensten 0} ](./services-user-group-permission-management.md) bijwerken om slechts de vereiste toestemmingen te verstrekken.[
+>De **dienst van de Beheerders van AEM 1&rbrace; verleent _VOLLEDIGE_ administratieve toegang tot Experience Manager.** Alternatief, kunt u {de toestemmingen van de Diensten 0} [&#128279;](./services-user-group-permission-management.md) bijwerken om slechts de vereiste toestemmingen te verstrekken.
 
 >[!BEGINTABS]
 
->[!TAB  voeg de Profielen van het Product ] toe
+>[!TAB voeg de Profielen van het Product  toe]
 
 Om de Profielen van het Product voor een AEM API toe te voegen, klik **productprofielen** in de **APIs** sectie van het project ADC, selecteer het gewenste Profiel van het Product in **vorm API** dialoog, en sparen uw veranderingen.
 
@@ -101,7 +101,7 @@ Selecteer het gewenste Profiel van het Product (b.v., **de Beheerders van AEM - 
 
 Merk op dat de **Beheerders van AEM - auteur - Programma XXX - het Profiel van het Product van het Milieu XXX** met zowel de **dienst van de Beheerders van AEM** als de **gebruikers van AEM Assets API** dienst wordt geassocieerd. Zonder deze laatste optie wordt het productprofiel niet weergegeven in de lijst met beschikbare productprofielen.
 
-{de Diensten van het Profiel van 0} Product ](../assets/how-to/product-profile-services.png)![
+{de Diensten van het Profiel van 0} Product ![&#128279;](../assets/how-to/product-profile-services.png)
 
 Het **PATCH** verzoek om de activa meta-gegevens bij te werken zou nu zonder kwesties moeten werken.
 

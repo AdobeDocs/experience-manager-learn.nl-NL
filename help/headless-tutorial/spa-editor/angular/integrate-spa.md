@@ -455,7 +455,7 @@ De aanvankelijke opstelling van het model JSON **vereist een lokale instantie va
 
 ## Stijlen met klasse toevoegen
 
-Vervolgens wordt een bijgewerkte stijl toegevoegd aan het project. Dit project zal ](https://sass-lang.com/) steun van de Klasse [ voor een paar nuttige eigenschappen zoals variabelen toevoegen.
+Vervolgens wordt een bijgewerkte stijl toegevoegd aan het project. Dit project zal [&#128279;](https://sass-lang.com/) steun van de Klasse  voor een paar nuttige eigenschappen zoals variabelen toevoegen.
 
 1. Open een eindvenster en stop **webpack dev server** als begonnen. Voer vanuit de `ui.frontend` -map de volgende opdracht in om de Angular-toepassing bij te werken naar **.scss** -bestanden.
 

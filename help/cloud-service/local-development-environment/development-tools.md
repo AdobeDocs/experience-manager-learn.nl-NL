@@ -96,7 +96,7 @@ $ xcode-select --install
 
 ![ Homebrew ](./assets/development-tools/homebrew.png)
 
-Als u Homebrew gebruikt, volg __installeer gebruikend 1} instructies Homebrew in de hieronder secties.__ Als u __niet__ gebruikend Homebrew bent, installeer de hulpmiddelen gebruikend OS-specifieke verbindingen.
+Als u Homebrew gebruikt, volg __installeer gebruikend 1&rbrace; instructies Homebrew in de hieronder secties.__ Als u __niet__ gebruikend Homebrew bent, installeer de hulpmiddelen gebruikend OS-specifieke verbindingen.
 
 ## Installatiegit
 
@@ -146,7 +146,7 @@ Als u Homebrew gebruikt, volg __installeer gebruikend 1} instructies Homebrew in
 
 >[!TIP]
 >
->](https://github.com/adobe/aem-project-archetype) Gebaseerde Projecten van AEM van het Project van AEM 1} installeren een geïsoleerde versie van Node.js in bouwstijltijd. [ Het is goed om de versie van het lokale ontwikkelingssysteem synchroon (of dicht bij) te houden de versies Node.js en npm die in de Reactor pom.xml van uw AEM Maven project worden gespecificeerd.
+>[&#128279;](https://github.com/adobe/aem-project-archetype) Gebaseerde Projecten van AEM van het Project van AEM 1&rbrace; installeren een geïsoleerde versie van Node.js in bouwstijltijd.  Het is goed om de versie van het lokale ontwikkelingssysteem synchroon (of dicht bij) te houden de versies Node.js en npm die in de Reactor pom.xml van uw AEM Maven project worden gespecificeerd.
 >
 >Zie dit voorbeeld [ van de Reactor van het Project van AEM pom.xml ](https://github.com/adobe/aem-guides-wknd/blob/9ac94f3f40c978a53ec88fae79fbc17dd2db72f2/pom.xml#L117-L118) waar te om van Node.js en npm versie te bepalen bouwen.
 
@@ -248,7 +248,7 @@ De Code van Visual Studio is de ideale keus voor front-end ontwikkelaars hoofdza
 
 >[!VIDEO](https://video.tv.adobe.com/v/25907?quality=12&learn=on)
 
-+ [ Code van Visual Studio van de Download {](https://code.visualstudio.com/Download)
++ [ Code van Visual Studio van de Download &lbrace;](https://code.visualstudio.com/Download)
 + [ Download het hulpmiddel van de Repo ](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)
 + [ Download AEM Sync VS de uitbreiding van de Code ](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)
 
@@ -259,4 +259,4 @@ __[winde van de Verduistering ](https://www.eclipse.org/ide/)__ is populaire IDE
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
 + [ Eclipse van de Download ](https://www.eclipse.org/ide/)
-+ [ Eclipse Dev Tools van de Download {](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)
++ [ Eclipse Dev Tools van de Download &lbrace;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)

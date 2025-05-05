@@ -27,7 +27,7 @@ In dit artikel, zullen wij [ lijsten API ](https://opensource.adobe.com/aem-form
 
 ## Kaartsjabloon
 
-De volgende code is gebruikt om de kaartsjabloon te ontwerpen. De kaartsjabloon toont de titel en beschrijving van het adaptieve formulier samen met het Adobe-logo. {de componenten van 0} Materiaal UI ](https://mui.com/) zijn gebruikt in het creëren van deze lay-out.[
+De volgende code is gebruikt om de kaartsjabloon te ontwerpen. De kaartsjabloon toont de titel en beschrijving van het adaptieve formulier samen met het Adobe-logo. {de componenten van 0} Materiaal UI [&#128279;](https://mui.com/) zijn gebruikt in het creëren van deze lay-out.
 
 
 

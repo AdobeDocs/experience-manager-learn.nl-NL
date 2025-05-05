@@ -224,7 +224,7 @@ Voer de volgende stappen uit om ModSecurity (ook wel `mod_security` Apache-modul
    </VirtualHost>
    ```
 
-Al bovengenoemde _CRS ModSecurity_ en _DOS-BESCHERMING_ configuraties zijn beschikbaar op de 4} tutorial/enable-modsecurity-crs-bescherming van het Project van de Plaatsen van AEM WKND ](https://github.com/adobe/aem-guides-wknd/tree/tutorial/enable-modsecurity-crs-dos-protection) tak voor uw overzicht.[
+Al bovengenoemde _CRS ModSecurity_ en _DOS-BESCHERMING_ configuraties zijn beschikbaar op de 4&rbrace; tutorial/enable-modsecurity-crs-bescherming van het Project van de Plaatsen van AEM WKND [&#128279;](https://github.com/adobe/aem-guides-wknd/tree/tutorial/enable-modsecurity-crs-dos-protection) tak voor uw overzicht.
 
 ### Dispatcher-configuratie valideren
 

@@ -36,7 +36,7 @@ Leer hoe u de metagegevensfuncties voor importeren en exporteren van Adobe Exper
 > 1. Microsoft Excel openen
 > 1. Selecteer __Dossier > Nieuw__ om een leeg spreadsheet tot stand te brengen
 > 1. Met het lege open spreadsheet, uitgezochte __Dossier > de Invoer__
-> 1. Selecteer __dossier van de Tekst 0} {en klik__ Invoer ____
+> 1. Selecteer __dossier van de Tekst 0&rbrace; &lbrace;en klik__ Invoer ____
 > 1. Selecteer het uitgevoerde CSV- dossier van het dossiersysteem en klik __krijgt Gegevens__
 > 1. Op stap 1 van de de invoertovenaar, selecteer __Gescheiden__ en plaats __oorsprong van het Dossier__ aan __Unicode (UTF-8)__, en klik __daarna__
 > 1. Op stap 2, plaats de __Scheidingstekens__ aan __komma__, en klik __daarna__

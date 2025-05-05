@@ -31,11 +31,11 @@ De **derdeartefacten** kunnen zijn:
 
 ## Standaardscenario
 
-Typisch zou u de derdebundel installeren, pakket dat ** in de openbare GeMaven bewaarplaats als gebiedsdeel in het 2} dossier van uw AEM project {beschikbaar is.`pom.xml`
+Typisch zou u de derdebundel installeren, pakket dat ** in de openbare GeMaven bewaarplaats als gebiedsdeel in het 2&rbrace; dossier van uw AEM project &lbrace;beschikbaar is.`pom.xml`
 
 Bijvoorbeeld:
 
-- ](https://github.com/adobe/aem-core-wcm-components) **de bundel van de Kern van AEM WCM** wordt toegevoegd als gebiedsdeel in het [ WKND- project ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) `pom.xml` dossier. [ Hier wordt het bereik `provided` gebruikt omdat de AEM WCM Core Components-bundel wordt geleverd door de AEM-runtime. Als de bundel niet door de runtime van AEM wordt verstrekt, zou u het `compile` werkingsgebied gebruiken en het is het standaardwerkingsgebied.
+- [&#128279;](https://github.com/adobe/aem-core-wcm-components) **de bundel van de Kern van AEM WCM** wordt toegevoegd als gebiedsdeel in het [ WKND- project ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) `pom.xml` dossier.  Hier wordt het bereik `provided` gebruikt omdat de AEM WCM Core Components-bundel wordt geleverd door de AEM-runtime. Als de bundel niet door de runtime van AEM wordt verstrekt, zou u het `compile` werkingsgebied gebruiken en het is het standaardwerkingsgebied.
 
 - [ Gedeelde WKND ](https://github.com/adobe/aem-guides-wknd-shared) **pakket** wordt toegevoegd als gebiedsdeel in het [ WKND- project ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773) `pom.xml` dossier.
 
@@ -81,13 +81,13 @@ Laten wij een demo OSGi [ mijn-voorbeeld-bundel ](./assets/install-third-party-a
 
 De **my-example-bundle** voert `HelloWorldService` dienst OSGi uit, zijn `sayHello()` methode keert `Hello Earth!` bericht terug.
 
-Voor meer details, verwijs naar het README.md- dossier in het {](./assets/install-third-party-articafcts/my-example-bundle.zip) dossier 0} my-example-bundle.zip.[
+Voor meer details, verwijs naar het README.md- dossier in het {[&#128279;](./assets/install-third-party-articafcts/my-example-bundle.zip) dossier 0} my-example-bundle.zip.
 
 ### Voeg de bundel toe aan de module `all`
 
 De eerste stap bestaat uit het toevoegen van `my-example-bundle` aan de module `all` van het AEM WKND-project.
 
-- Download en haal het {](./assets/install-third-party-articafcts/my-example-bundle.zip) dossier 0} my-example-bundle.zip.[
+- Download en haal het {[&#128279;](./assets/install-third-party-articafcts/my-example-bundle.zip) dossier 0} my-example-bundle.zip.
 
 - Maak de mappenstructuur van `all/src/main/content/jcr_root/apps/wknd-vendor-packages/container/install` in de module `all` van het AEM WKND-project. De map `/all/src/main/content` bestaat, u hoeft alleen de mappen `jcr_root/apps/wknd-vendor-packages/container/install` te maken.
 
@@ -206,7 +206,7 @@ Voor meer details, verwijs naar het README.md- dossier in het [ my-example-jar.z
 
 De eerste stap bestaat uit het toevoegen van `my-example-jar` aan de module `all` van het AEM WKND-project.
 
-- Download en haal het {](./assets/install-third-party-articafcts/my-example-jar.zip) dossier 0} my-example-jar.zip.[
+- Download en haal het {[&#128279;](./assets/install-third-party-articafcts/my-example-jar.zip) dossier 0} my-example-jar.zip.
 
 - Maak de mappenstructuur van `all/resource/jar` in de module `all` van het AEM WKND-project.
 

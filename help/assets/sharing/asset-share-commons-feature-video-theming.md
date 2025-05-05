@@ -76,7 +76,7 @@ In deze video wordt een nieuw thema gemaakt op basis van het donkere thema Commo
 @msgWarningBackgroundColor: @yellow;
 ```
 
-Het Thema van de Bibliotheek van de Cliënt van de download [ ](assets/asc-theme-demo.zip)
+Het Thema van de Bibliotheek van de Cliënt van de download [&#128279;](assets/asc-theme-demo.zip)
 
 ## Aanvullende bronnen{#additional-resources}
 

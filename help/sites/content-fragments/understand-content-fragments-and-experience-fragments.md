@@ -145,11 +145,11 @@ Adobe Experience Manager Content Fragments and Experience Fragments kunnen er on
 
 Het volgende diagram illustreert de algemene architectuur voor AEM Content Fragments
 
-](./assets/content-fragments-architecture.png) architectuur van de Fragmenten van 0} Inhoud![
+![&#128279;](./assets/content-fragments-architecture.png) architectuur van de Fragmenten van 0&rbrace; Inhoud
 
 + **Modellen van het Fragment van de Inhoud** bepalen de elementen (of gebieden) die bepalen welke inhoud het Fragment van de Inhoud kan vangen en blootstellen.
 + Het **Fragment van de Inhoud** is een geval van een Model van het Fragment van de Inhoud dat een logische inhoudsentiteit vertegenwoordigt.
-+ De veranderingen van het Fragment van de inhoud **** houden zich aan het Model van het Fragment van de Inhoud, echter, hebben variaties in inhoud.
++ De veranderingen van het Fragment van de inhoud **&#x200B;**&#x200B;houden zich aan het Model van het Fragment van de Inhoud, echter, hebben variaties in inhoud.
 + Inhoudsfragmenten kunnen worden belicht/verbruikt door:
    + Gebruikend de Fragmenten van de Inhoud op **AEM Sites** (of AEM Screens) via de component van het Fragment van de Inhoud van de Componenten van de Kern van AEM WCM.
    + Verbruik **het Fragment van de Inhoud** van headless apps gebruikend AEM Headless GraphQL APIs.
@@ -162,7 +162,7 @@ Het volgende diagram illustreert de algemene architectuur voor AEM Content Fragm
 
 + **Bewerkbare Malplaatjes**, die beurtelings door **Bewerkbare Types van Malplaatje** en een **de componentenimplementatie van de Pagina van AEM** worden bepaald, bepalen de toegestane Componenten van AEM die kunnen worden gebruikt om een Fragment van de Ervaring samen te stellen.
 + Het **Fragment van de Ervaring** is een geval van een Bewerkbaar Malplaatje dat een logische ervaring vertegenwoordigt.
-+ De veranderingen van het Fragment van de ervaring **** houden zich aan het Bewerkbare Malplaatje aan, echter, hebben variaties in ervaring (inhoud en ontwerp).
++ De veranderingen van het Fragment van de ervaring **&#x200B;**&#x200B;houden zich aan het Bewerkbare Malplaatje aan, echter, hebben variaties in ervaring (inhoud en ontwerp).
 + De Fragmenten van de ervaring kunnen worden blootgesteld/worden verbruikt door:
    + Het gebruiken van de Fragmenten van de Ervaring op AEM Sites (of AEM Screens) via de component van het Fragment van de Ervaring van AEM.
    + Het blootstellen van een de veranderingsinhoud van het Fragment van de Ervaring als JSON (met ingebedde HTML) via **de Diensten van de Inhoud van AEM** en API Pagina&#39;s.
@@ -175,7 +175,7 @@ Het volgende diagram illustreert de algemene architectuur voor AEM Content Fragm
 + [ Gids van de Gebruiker van de Fragmenten van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
 + [ Inleiding aan Adobe Experience Manager als Headless CMS ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
 + [ Gebruikend Inhoudsfragmenten in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=en)
-+ [ de component van het Fragment van de Inhoud van de Componenten van de Kern van AEM WCM {](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
++ [ de component van het Fragment van de Inhoud van de Componenten van de Kern van AEM WCM &lbrace;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 + [ Gebruikend de Fragmenten van de Inhoud en Hoofdloze AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=en)
 + [ Begonnen het worden met de Diensten van de Inhoud van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en)
 

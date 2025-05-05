@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Implementaties van AEM Headless Web Component
 
-De Plaatsingen van de Component 1}/JS van de Component van het Web van AEM Headless [ zijn zuivere JavaScript apps die in Webbrowser lopen, die op een krantenloze manier verbruiken en met inhoud in AEM in wisselwerking staan. ](https://developer.mozilla.org/en-US/docs/Web/Web_Components) De plaatsingen van de Component/JS van het Web verschillen van [ plaatsingen van het KUUROORD ](./spa.md) in die zin dat zij geen robuust kader van het KUUROORD gebruiken, en worden verwacht om in de context van om het even welke website worden ingebed, leveren, aan oppervlakte inhoud van AEM.
+De Plaatsingen van de Component 1&rbrace;/JS van de Component van het Web van AEM Headless [ zijn zuivere JavaScript apps die in Webbrowser lopen, die op een krantenloze manier verbruiken en met inhoud in AEM in wisselwerking staan. ](https://developer.mozilla.org/en-US/docs/Web/Web_Components) De plaatsingen van de Component/JS van het Web verschillen van [ plaatsingen van het KUUROORD ](./spa.md) in die zin dat zij geen robuust kader van het KUUROORD gebruiken, en worden verwacht om in de context van om het even welke website worden ingebed, leveren, aan oppervlakte inhoud van AEM.
 
 
 ## Implementatieconfiguraties

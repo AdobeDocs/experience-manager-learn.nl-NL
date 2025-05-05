@@ -207,6 +207,7 @@ Om deze kwestie te bevestigen is de oorzaak van het falende gedrag:
 1. Wanneer wordt bepaald dat ten minste één inhoudspakket dat deel uitmaakt van de implementatie, wordt geschreven naar `/var` .
 1. Verifieer de primaire (bolde) distributierij wordt geblokkeerd bij:
    + AEM Author > Tools > Deployment > Distribution
+
      ![ Geblokkeerde distributierij ](./assets/build-and-deployment/deploy-to__var--distribution.png)
 1. Als de volgende implementatie mislukt, downloadt u logboeken van Cloud Manager &quot;Deploto&quot; met de knop Logbestand downloaden:
 

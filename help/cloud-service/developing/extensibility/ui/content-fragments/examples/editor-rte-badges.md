@@ -25,7 +25,7 @@ Leer hoe u badges aan de Rich Text Editor (RTE) toevoegt in de AEM Content Fragm
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420831?quality=12&learn=on)
 
-{het symbool van de Redacteur van de Tekst van 0} Rich ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) is uitbreidingen die tekst in de Rich Text Editor (RTE) niet-editable maken. [ Dit betekent dat een als zodanig gedeclareerde badge alleen volledig kan worden verwijderd en niet gedeeltelijk kan worden bewerkt. Deze badges bieden ook ondersteuning voor speciale kleuren in de RTE, waarbij de auteur van de inhoud duidelijk wordt aangegeven dat de tekst een badge is en dus niet bewerkbaar. Bovendien geven ze visuele aanwijzingen over de betekenis van de badge-tekst.
+{het symbool van de Redacteur van de Tekst van 0} Rich [&#128279;](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) is uitbreidingen die tekst in de Rich Text Editor (RTE) niet-editable maken.  Dit betekent dat een als zodanig gedeclareerde badge alleen volledig kan worden verwijderd en niet gedeeltelijk kan worden bewerkt. Deze badges bieden ook ondersteuning voor speciale kleuren in de RTE, waarbij de auteur van de inhoud duidelijk wordt aangegeven dat de tekst een badge is en dus niet bewerkbaar. Bovendien geven ze visuele aanwijzingen over de betekenis van de badge-tekst.
 
 Het gemeenschappelijkste gebruiksgeval voor RTE badges is hen samen met [ te gebruiken widgets RTE ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/). Hierdoor kan inhoud die door de RTE-widget in de RTE wordt geïnjecteerd, niet-bewerkbaar zijn.
 
@@ -33,7 +33,7 @@ Typisch, worden de badges in verband met widgets gebruikt om de dynamische inhou
 
 De **badges** worden toegevoegd aan **RTE** in de Redacteur van het Fragment van de Inhoud gebruikend het `rte` uitbreidingspunt. Met de methode `getBadges()` van het `rte` extensiepunt worden een of meer badges toegevoegd.
 
-Dit voorbeeld toont hoe te om een widget toe te voegen genoemd _de Grote Dienst van de Klant van de Boekingen van de Groep **om te vinden, te selecteren en, de adventure-specifieke details van de klantendienst van WKND zoals**Naam van de Vertegenwoordiger en **Aantal van de Telefoon**binnen een inhoud van RTE toe te voegen._ Gebruikend de bandenfunctionaliteit wordt het **Aantal van de Telefoon** gemaakt **niet-editable** maar WKND inhoudsauteurs kunnen de Naam van de Vertegenwoordiger uitgeven.
+Dit voorbeeld toont hoe te om een widget toe te voegen genoemd _de Grote Dienst van de Klant van de Boekingen van de Groep **om te vinden, te selecteren en, de adventure-specifieke details van de klantendienst van WKND zoals**&#x200B;Naam van de Vertegenwoordiger en **Aantal van de Telefoon**&#x200B;binnen een inhoud van RTE toe te voegen._ Gebruikend de bandenfunctionaliteit wordt het **Aantal van de Telefoon** gemaakt **niet-editable** maar WKND inhoudsauteurs kunnen de Naam van de Vertegenwoordiger uitgeven.
 
 Ook, wordt het **Aantal van de Telefoon** gestileerd verschillend (blauw) dat een extra gebruiksgeval van de bandenfunctionaliteit is.
 
@@ -45,7 +45,7 @@ Dit voorbeeld breidt zich tot uitbreidingspunt `rte` uit om een badge aan RTE in
 
 | AEM-gebruikersinterface uitgebreid | Extensiepunten |
 | ------------------------ | --------------------- | 
-| [ de Redacteur van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) en [ Rich Text Editor Widgets ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) van de Redacteur van de Tekst[ |
+| [ de Redacteur van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [&#128279;](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) en [ Rich Text Editor Widgets ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) van de Redacteur van de Tekst |
 
 ## Voorbeeldextensie
 

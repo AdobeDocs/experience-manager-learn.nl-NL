@@ -37,9 +37,9 @@ Dit is een meerdelig leerprogramma en men veronderstelt dat de stappen die in [ 
 
 Een website wordt doorgaans opgedeeld in pagina&#39;s en vormt zo een ervaring van meerdere pagina&#39;s. AEM structureert inhoud op dezelfde manier. Maak vervolgens een nieuwe pagina voor de site.
 
-1. Login aan de dienst van de Auteur van AEM **** die in het vorige hoofdstuk wordt gebruikt.
+1. Login aan de dienst van de Auteur van AEM **&#x200B;**&#x200B;die in het vorige hoofdstuk wordt gebruikt.
 1. Van het scherm van het Begin van AEM klik **Plaatsen** > **Plaats WKND** > **Engels** > **Artikel**
-1. In de hogere rechterhoek klikt **** > **Pagina** creëren.
+1. In de hogere rechterhoek klikt **&#x200B;**&#x200B;> **Pagina** creëren.
 
    ![ creeer Pagina ](assets/author-content-publish/create-page-button.png)
 
@@ -156,7 +156,7 @@ Navigeer vervolgens naar de service Publiceren om de wijzigingen weer te geven.
 
    ![ publiceer direct ](assets/author-content-publish/page-editor-publish.png)
 
-1. Terugkeer aan **AEM publiceer Dienst** om de veranderingen te bekijken. Waarschijnlijk zult u **** niet onmiddellijk de updates zien. Dit is omdat **AEM de Publish Dienst** [ caching via een Apache Webserver en CDN ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html) omvat. Standaard wordt HTML-inhoud gedurende ~5 minuten in cache geplaatst.
+1. Terugkeer aan **AEM publiceer Dienst** om de veranderingen te bekijken. Waarschijnlijk zult u **&#x200B;**&#x200B;niet onmiddellijk de updates zien. Dit is omdat **AEM de Publish Dienst** [ caching via een Apache Webserver en CDN ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html) omvat. Standaard wordt HTML-inhoud gedurende ~5 minuten in cache geplaatst.
 
 1. Als u de cache wilt overslaan voor test- en foutopsporingsdoeleinden, voegt u gewoon een queryparameter toe, zoals `?nocache=true` . De URL zou er als `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd/en/article/hello-world.html?nocache=true` uitzien. Meer details over de caching strategie en beschikbare configuraties [ kunnen hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/overview.html) worden gevonden.
 

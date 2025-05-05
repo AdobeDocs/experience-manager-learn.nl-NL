@@ -65,7 +65,7 @@ De afbeelding aan de rechterkant wordt veel prominent gemaakt door de extra ruim
 >
 >Met Verkleinen wordt er geen transparantie rond de afbeelding gemaakt. Voor dat, zou u een het knippen weg op het beeld moeten inbedden en **gebruiken creeer Masker van de Weg van de Clip** uploadt optie.
 >
->Ook, om een beeld aan zijn originele staat te herstellen nadat u het hebt bebouwd wanneer u **sparen** optie hebt gebruikt, toon het beeld in het scherm van de Redacteur van het Gewas en selecteer de **3} knoop van het Terugstellen {.**
+>Ook, om een beeld aan zijn originele staat te herstellen nadat u het hebt bebouwd wanneer u **sparen** optie hebt gebruikt, toon het beeld in het scherm van de Redacteur van het Gewas en selecteer de **3&rbrace; knoop van het Terugstellen &lbrace;.**
 
 ### _het Uitsnijden op Upload_
 

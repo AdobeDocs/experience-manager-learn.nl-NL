@@ -30,8 +30,8 @@ Leer hoe u Adobe Asset Link voor AEM as a Cloud Service instelt, gebruikersrecht
 
 Niet getoond in de video hierboven, kan de Verbinding van het Activa van Adobe via de __Beheerde pakket__ optie van het pakketbeheer van Creative Cloud worden toegevoegd:
 
-1. Kies __CEP van de Activa van Adobe 1} in__ verkies Plugins __stap__
-2. Op de __uitgezochte stap van de Optie 0}__ laat zelfbediening toe installeert __en__ staat niet-admins toe om apps __bij te werken en te installeren om niet-admins toe te laten om voorrechten te hebben om Creative Cloud apps en stop- ins te beheren.__
+1. Kies __CEP van de Activa van Adobe 1&rbrace; in__ verkies Plugins __stap__
+2. Op de __uitgezochte stap van de Optie 0&rbrace;__ laat zelfbediening toe installeert __en__ staat niet-admins toe om apps __bij te werken en te installeren om niet-admins toe te laten om voorrechten te hebben om Creative Cloud apps en stop- ins te beheren.__
 
 ## Asset Link instellen voor Managed Services en On-premise
 

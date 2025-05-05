@@ -109,7 +109,7 @@ Als `jcr:content` ontbreekt op mapniveau, moet u een actie uitvoeren om instelli
 
 ### V: Ik heb een migratieset gemaakt. is het mogelijk de omvang ervan te controleren ?
 
-Ja, is er de eigenschap van de Grootte van de Controle van de a [ ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) die deel van CTT uitmaakt.
+Ja, is er de eigenschap van de Grootte van de Controle van de a [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) die deel van CTT uitmaakt.
 
 ### Q: Ik voer de migratie uit (extractie, inname). Kan worden gecontroleerd of al mijn geëxtraheerde inhoud in het doel is opgenomen?
 
@@ -125,7 +125,7 @@ De Fase van de extractie is een betrokken proces dat veelvoudige aspecten vereis
 
 De openbare documentatie wordt voortdurend verbeterd op basis van de lessen, maar er zijn enkele probleemcategorieën op hoog niveau en mogelijke onderliggende redenen.
 
-](../../assets/faq/extraction-issues.jpg) { align= &quot;center&quot;} de kwesties van de de inhoudsmigratie van AEM as a Cloud Service![
+![&#128279;](../../assets/faq/extraction-issues.jpg) { align= &quot;center&quot;} de kwesties van de de inhoudsmigratie van AEM as a Cloud Service
 
 ### V: Welke problemen worden verwacht tijdens inname?
 

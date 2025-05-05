@@ -22,7 +22,7 @@ ht-degree: 0%
 
 In dit hoofdstuk, leer hoe te om inhoud te modelleren en een schema met **Modellen van het Fragment van de Inhoud te bouwen**. U leert over de verschillende gegevenstypen die kunnen worden gebruikt om een schema als deel van het model te bepalen.
 
-Wij creëren twee eenvoudige modellen, **Team** en **Persoon**. Het **gegevensmodel van het 0} Team {heeft naam, korte naam, en beschrijving en verwijzingen het** Person **gegevensmodel, dat volledige naam, biodetails, profielbeeld, en bezettingenlijst heeft.**
+Wij creëren twee eenvoudige modellen, **Team** en **Persoon**. Het **gegevensmodel van het 0&rbrace; Team &lbrace;heeft naam, korte naam, en beschrijving en verwijzingen het** Person **gegevensmodel, dat volledige naam, biodetails, profielbeeld, en bezettingenlijst heeft.**
 
 U kunt ook uw eigen model maken aan de hand van de basisstappen en de respectieve stappen aanpassen, zoals GraphQL-query&#39;s, en de App-code Reageren of gewoon de stappen volgen die in deze hoofdstukken worden beschreven.
 
@@ -40,7 +40,7 @@ Dit is een meerdelig leerprogramma en het wordt verondersteld dat een [ het aute
 
 Een projectconfiguratie bevat alle modellen van het Fragment van de Inhoud verbonden aan een bepaald project en verstrekt een middel om modellen te organiseren. Minstens één project moet worden gecreeerd **alvorens** het creëren van het Model van het Fragment van de Inhoud.
 
-1. Login aan het milieu van de Auteur van AEM **** (zoals `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
+1. Login aan het milieu van de Auteur van AEM **&#x200B;**&#x200B;(zoals `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
 1. Van het scherm van het Begin van AEM, navigeer aan **Hulpmiddelen** > **Algemeen** > **Browser van de Configuratie**.
 
    ![ ga aan Browser van de Configuratie ](assets/content-fragment-models/navigate-config-browser.png)
@@ -80,13 +80,13 @@ Creeer een model voor a **Persoon**, dat het gegevensmodel is dat een persoon ve
 
    De **Naam van het Bezit** bepaalt de naam van het bezit dat aan AEM wordt voortgeduurd. De **Naam van het Bezit** bepaalt ook de **zeer belangrijke** naam voor dit bezit als deel van het gegevensschema. Deze **sleutel** wordt gebruikt wanneer de gegevens van het Fragment van de Inhoud via GraphQL APIs worden blootgesteld.
 
-1. Tik het **lusje van de Types van Gegevens 0} {en sleep en laat vallen a** Meerdere lijntekst **gebied onder het** Volledige gebied van de Naam **.** Voer de volgende eigenschappen in:
+1. Tik het **lusje van de Types van Gegevens 0&rbrace; &lbrace;en sleep en laat vallen a** Meerdere lijntekst **gebied onder het** Volledige gebied van de Naam **.** Voer de volgende eigenschappen in:
 
    * **Etiket van het Gebied**: **Biografie**
    * **de Naam van het Bezit**: `biographyText`
    * **StandaardType**: **Rijke Tekst**
 
-1. Klik het **lusje van de Types van Gegevens 0} {en belemmering en laat vallen het gebied van de Verwijzing van de a** Inhoud **.** Voer de volgende eigenschappen in:
+1. Klik het **lusje van de Types van Gegevens 0&rbrace; &lbrace;en belemmering en laat vallen het gebied van de Verwijzing van de a** Inhoud **.** Voer de volgende eigenschappen in:
 
    * **Etiket van het Gebied**: **Beeld van het Profiel**
    * **de Naam van het Bezit**: `profilePicture`
@@ -98,7 +98,7 @@ Creeer een model voor a **Persoon**, dat het gegevensmodel is dat een persoon ve
 
    ![ Beperk tot Beelden ](assets/content-fragment-models/picture-reference-content-types.png)
 
-1. Klik het **lusje van de Types van Gegevens 0} {en sleep en laat vallen een** Opsomming **gegevenstype onder het** **gebied van de Verwijzing van het Beeld.** Voer de volgende eigenschappen in:
+1. Klik het **lusje van de Types van Gegevens 0&rbrace; &lbrace;en sleep en laat vallen een** Opsomming **gegevenstype onder het** **gebied van de Verwijzing van het Beeld.** Voer de volgende eigenschappen in:
 
    * **geeft terug als**: **checkboxes**
    * **Etiket van het Gebied**: **Bezetting**
@@ -118,7 +118,7 @@ Creeer een model voor a **Persoon**, dat het gegevensmodel is dat een persoon ve
 
 Creeer een model voor a **Team**, dat het gegevensmodel voor een team van mensen is. Het model van het Team verwijzingen het model van de Persoon om de leden van het team te vertegenwoordigen.
 
-1. In de **Mijn omslag van het Project**, leidt de kraan **** tot in de hogere juiste hoek om **te brengen tot modeltovenaar**.
+1. In de **Mijn omslag van het Project**, leidt de kraan **&#x200B;**&#x200B;tot in de hogere juiste hoek om **te brengen tot modeltovenaar**.
 1. Op **ModelTitel** gebied, ga **Team** in en tik **creeer**.
 
    Tik **Open** in de resulterende dialoog, om het pas gecreëerde model te openen.
@@ -129,7 +129,7 @@ Creeer een model voor a **Team**, dat het gegevensmodel voor een team van mensen
    * **de Naam van het Bezit**: `title`
    * Controle **Vereiste**
 
-1. Tik het **lusje van de Types van Gegevens 0} {en sleep en versleep a** Enige lijntekst **element op het belangrijkste paneel.** Ga de volgende eigenschappen op het **Eigenschappen** lusje in:
+1. Tik het **lusje van de Types van Gegevens 0&rbrace; &lbrace;en sleep en versleep a** Enige lijntekst **element op het belangrijkste paneel.** Ga de volgende eigenschappen op het **Eigenschappen** lusje in:
 
    * **Etiket van het Gebied**: **Korte Naam**
    * **de Naam van het Bezit**: `shortName`
@@ -140,13 +140,13 @@ Creeer een model voor a **Team**, dat het gegevensmodel voor een team van mensen
 
    De eigenschap `shortName` biedt ons een manier om een query uit te voeren voor een afzonderlijk team op basis van een verkort pad. Het **Unieke** plaatsen zorgt ervoor dat de waarde altijd uniek per het Fragment van de Inhoud van dit model is.
 
-1. Tik het **lusje van de Types van Gegevens 0} {en sleep en laat vallen a** Meerdere lijntekst **gebied onder het** Korte Naam **gebied.** Voer de volgende eigenschappen in:
+1. Tik het **lusje van de Types van Gegevens 0&rbrace; &lbrace;en sleep en laat vallen a** Meerdere lijntekst **gebied onder het** Korte Naam **gebied.** Voer de volgende eigenschappen in:
 
    * **Etiket van het Gebied**: **Beschrijving**
    * **de Naam van het Bezit**: `description`
    * **StandaardType**: **Rijke Tekst**
 
-1. Klik het **lusje van de Types van Gegevens 0} {en belemmering en laat vallen het gebied van de Verwijzing van het a** Fragment **.** Voer de volgende eigenschappen in:
+1. Klik het **lusje van de Types van Gegevens 0&rbrace; &lbrace;en belemmering en laat vallen het gebied van de Verwijzing van het a** Fragment **.** Voer de volgende eigenschappen in:
 
    * **geeft terug als**: **Veelvoudig Gebied**
    * **Etiket van het Gebied**: **Leden van het Team**

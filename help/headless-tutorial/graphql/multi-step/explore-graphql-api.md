@@ -118,7 +118,7 @@ Een algemene vereiste is om te zoeken naar meerdere inhoudsfragmenten.
 
 Daarna, experiment met het vragen wint genestelde fragmenten terug, herinner eraan dat het **Team** modelverwijzingen het **Person** model.
 
-1. Werk de query bij om de eigenschap `teamMembers` op te nemen. Rappel dat dit a **gebied van de Verwijzing van het 0} Fragment {aan het Model van de Persoon is.** Eigenschappen van het Person-model kunnen worden geretourneerd:
+1. Werk de query bij om de eigenschap `teamMembers` op te nemen. Rappel dat dit a **gebied van de Verwijzing van het 0&rbrace; Fragment &lbrace;aan het Model van de Persoon is.** Eigenschappen van het Person-model kunnen worden geretourneerd:
 
    ```graphql
    query allTeams {
@@ -175,7 +175,7 @@ Daarna, experiment met het vragen wint genestelde fragmenten terug, herinner era
    }
    ```
 
-   De mogelijkheid om te zoeken op geneste fragmenten is een krachtige functie van de AEM GraphQL API. In dit eenvoudige voorbeeld is het nesten slechts twee niveaus diep. Maar het is mogelijk om fragmenten nog verder te nesten. Bijvoorbeeld, als er een **1} model van het Adres {verbonden aan a** Persoon **was zou het mogelijk zijn om gegevens van alle drie modellen in één enkele vraag terug te keren.**
+   De mogelijkheid om te zoeken op geneste fragmenten is een krachtige functie van de AEM GraphQL API. In dit eenvoudige voorbeeld is het nesten slechts twee niveaus diep. Maar het is mogelijk om fragmenten nog verder te nesten. Bijvoorbeeld, als er een **1&rbrace; model van het Adres &lbrace;verbonden aan a** Persoon **was zou het mogelijk zijn om gegevens van alle drie modellen in één enkele vraag terug te keren.**
 
 ### Een lijst met inhoudsfragmenten filteren {#filter-list-cf}
 

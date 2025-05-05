@@ -25,7 +25,7 @@ Tot nu toe hebben we het volgende gecreëerd:
 * Gevormde Apache Sling Connection Pooled DataSource
 * Op RDBMS gebaseerd formuliergegevensmodel
 
-De volgende stap bestaat uit het maken en configureren van een adaptief formulier voor het gebruik van het formuliergegevensmodel.  Om hoofdbegin te krijgen kunt u ](assets/fdm-demo-af.zip) steekproefvorm downloaden en invoeren [. Het voorbeeldformulier bevat een sectie waarin de werknemersgegevens worden weergegeven en een ander gedeelte waarin de begunstigden van de werknemers worden vermeld.
+De volgende stap bestaat uit het maken en configureren van een adaptief formulier voor het gebruik van het formuliergegevensmodel.  Om hoofdbegin te krijgen kunt u [&#128279;](assets/fdm-demo-af.zip) steekproefvorm downloaden en invoeren . Het voorbeeldformulier bevat een sectie waarin de werknemersgegevens worden weergegeven en een ander gedeelte waarin de begunstigden van de werknemers worden vermeld.
 
 ## Formulier koppelen aan formuliergegevensmodel
 

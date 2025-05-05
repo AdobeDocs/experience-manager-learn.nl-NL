@@ -70,7 +70,7 @@ De AEM as a Cloud Service SDK, of AEM SDK, bevat de Quickstart Jar die wordt geb
    + Merk op dat uw organisatie van Adobe ____ provisioned voor AEM as a Cloud Service moet zijn om AEM as a Cloud Service SDK te downloaden.
 1. Navigeer aan het __AEM as a Cloud Service__ lusje
 1. Soort door __Gepubliceerde Datum__ in __Aflopende__ orde
-1. Klik op de recentste __resultaatrij van AEM SDK van 0} {__
+1. Klik op de recentste __resultaatrij van AEM SDK van 0&rbrace; &lbrace;__
 1. Herzie en keur EULA goed, en tik de __Download__ knoop
 
 ## Quickstart Jar extraheren uit het zip van AEM SDK

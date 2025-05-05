@@ -35,7 +35,7 @@ Als u wilt weten hoe u een blok opmaakt, bekijkt u eerst het DOM dat door Edge D
 
 Hier volgt de DOM van het teaserblok die het doel voor opmaken is.
 
-Merk `<p class="button-container">...` op dat [ ](./4-website-branding.md#inferred-elements) automatisch als afgeleid element door Edge Delivery Services JavaScript wordt uitgebreid.
+Merk `<p class="button-container">...` op dat [&#128279;](./4-website-branding.md#inferred-elements) automatisch als afgeleid element door Edge Delivery Services JavaScript wordt uitgebreid.
 
 ```html
 ...
@@ -71,7 +71,7 @@ Merk `<p class="button-container">...` op dat [ ](./4-website-branding.md#inferr
 ...
 ```
 
->[!TAB  hoe te om DOM ] te vinden
+>[!TAB hoe te om DOM  te vinden]
 
 Als u het DOM wilt zoeken dat u opmaakt, opent u de pagina met het naamloze blok in uw lokale ontwikkelomgeving, selecteert u het blok en inspecteert u het DOM.
 
@@ -85,7 +85,7 @@ Maak een nieuw CSS-bestand in de map van het blok met de naam van het blok als b
 
 Dit CSS-bestand wordt automatisch geladen wanneer de JavaScript van Edge Delivery Services een DOM-element detecteert op de pagina die een teasblok vertegenwoordigt.
 
-[!BADGE  /blocks/teaser/teaser.css]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/teaser/teaser.css]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```css
 /* /blocks/teaser/teaser.css */

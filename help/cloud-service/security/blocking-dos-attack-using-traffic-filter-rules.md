@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Het blokkeren Dos en de aanvallen van DDoS gebruikend de regels van de verkeersfilter
 
-Leer hoe te ontkenning van de Dienst (Dos) en Verspreide Ontkenning van de aanvallen van de Dienst (DDoS) gebruikend **regels van de het verkeersfilter van de tariefgrens 1} en andere strategieën bij AEM as a Cloud Service (AEMCS) beheerde CDN blokkeren.** Deze aanvallen veroorzaken verkeerspikes bij CDN en potentieel bij de de Publish dienst van AEM (alias oorsprong) en kunnen plaatsontvankelijkheid en beschikbaarheid beïnvloeden.
+Leer hoe te ontkenning van de Dienst (Dos) en Verspreide Ontkenning van de aanvallen van de Dienst (DDoS) gebruikend **regels van de het verkeersfilter van de tariefgrens 1&rbrace; en andere strategieën bij AEM as a Cloud Service (AEMCS) beheerde CDN blokkeren.** Deze aanvallen veroorzaken verkeerspikes bij CDN en potentieel bij de de Publish dienst van AEM (alias oorsprong) en kunnen plaatsontvankelijkheid en beschikbaarheid beïnvloeden.
 
 Dit leerprogramma dient als gids op _hoe te om uw verkeerspatronen te analyseren en tariefgrens [ regels van de verkeersfilter ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf) te vormen_ om die aanvallen te verlichten. Het leerprogramma beschrijft ook hoe te om [ alarm ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) te vormen zodat u wordt meegedeeld wanneer er een vermoedelijke aanval is.
 
@@ -85,8 +85,8 @@ Het **Elasticsearch, Logstash, en Kibana (ELK)** dashboardhulpmiddel dat door Ad
 
 - Kloon de [ AEMCS-CDN-Logboek-Analyse-Tooling ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) bewaarplaats GitHub.
 - Opstelling het tooling door [ te volgen hoe te opstelling de de container ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container) stappen van de container van het Docker ELK.
-- Als onderdeel van de instelling importeert u het `traffic-filter-rules-analysis-dashboard.ndjson` -bestand om de gegevens te visualiseren. Het _dashboard van het Verkeer 0} CDN {omvat visualisaties die het maximumaantal verzoeken per IP/POP bij CDN Edge en Oorsprong tonen._
-- Van de [ 2} kaart van de Milieu&#39;s van Cloud Manager ](https://my.cloudmanager.adobe.com/) _, download de AEMCS CDN van de Publish dienst van CDN._
+- Als onderdeel van de instelling importeert u het `traffic-filter-rules-analysis-dashboard.ndjson` -bestand om de gegevens te visualiseren. Het _dashboard van het Verkeer 0&rbrace; CDN &lbrace;omvat visualisaties die het maximumaantal verzoeken per IP/POP bij CDN Edge en Oorsprong tonen._
+- Van de [ 2&rbrace; kaart van de Milieu&#39;s van Cloud Manager ](https://my.cloudmanager.adobe.com/) _, download de AEMCS CDN van de Publish dienst van CDN._
 
   ![ Cloud Manager CDN Logs Downloads ](./assets/cloud-manager-cdn-log-downloads.png)
 
@@ -196,7 +196,7 @@ Voer de volgende stappen uit om de wijzigingen in uw AEMCS-omgeving te implement
 
 - Leg de bovenstaande wijzigingen vast en duw op deze naar uw Cloud Manager Git-opslagplaats.
 - Implementeer de wijzigingen in de AEMCS-omgeving met de Cloud Manager Config-pijplijn. Verwijs [ opstellen regels door Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager) voor meer details.
-- Om de **regel van de het verkeersfilter van de tariefgrens** te verifiëren werkt zoals verwacht, kunt u een aanval simuleren zoals die in de [ 3} sectie van de Simulatie van de Aanval wordt beschreven. ](#attack-simulation) Beperk het aantal aanvragen tot een waarde die hoger is dan de grenswaarde voor het tarief die in de regel is ingesteld.
+- Om de **regel van de het verkeersfilter van de tariefgrens** te verifiëren werkt zoals verwacht, kunt u een aanval simuleren zoals die in de [ 3&rbrace; sectie van de Simulatie van de Aanval wordt beschreven. ](#attack-simulation) Beperk het aantal aanvragen tot een waarde die hoger is dan de grenswaarde voor het tarief die in de regel is ingesteld.
 
 ### Transformatieregels voor aanvragen configureren {#configure-request-transform-rules}
 

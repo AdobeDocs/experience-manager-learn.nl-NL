@@ -64,7 +64,7 @@ Wanneer __Engels__ in de scèneselecteur wordt geselecteerd, dan zijn de Engelse
 
 ### Een `LocaleContext` maken{#locale-context}
 
-Eerst, creeer de context van het Reageren van a [ ](https://reactjs.org/docs/context.html) om de scène toe te staan om over de componenten van de React toepassing worden gebruikt.
+Eerst, creeer de context van het Reageren van a [&#128279;](https://reactjs.org/docs/context.html) om de scène toe te staan om over de componenten van de React toepassing worden gebruikt.
 
 ```javascript
 // src/LocaleContext.js
@@ -83,7 +83,7 @@ export default LocaleContext;
 
 ### Een component `LocaleSwitcher` React maken{#locale-switcher}
 
-Daarna, creeer een component van het Reageren van de scènewisselaar die de ](#locale-context) waarde van 0} LocaleContext aan de selectie van de gebruiker is.[
+Daarna, creeer een component van het Reageren van de scènewisselaar die de [&#128279;](#locale-context) waarde van 0&rbrace; LocaleContext aan de selectie van de gebruiker is.
 
 Deze landinstellingswaarde wordt gebruikt om de GraphQL-query&#39;s aan te sturen, zodat deze alleen inhoud retourneren die overeenkomt met de geselecteerde landinstelling.
 

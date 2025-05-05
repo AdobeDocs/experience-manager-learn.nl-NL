@@ -154,7 +154,7 @@ Onder de afbeelding ziet u een aangepaste index met de eigenschap `tags` en hoe 
 
 ##### Analyse
 
-Toont aan hoe te om niet-tegenstrijdige en correcte `tags` bezitswaarde op de index te plaatsen en het te gebruiken terwijl het vragen. De algemene querysyntaxis is is `<query> option(index tag <tagName>)` . Zie ook {de Markering van de Index van de Optie van 0} Vraag ](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)[
+Toont aan hoe te om niet-tegenstrijdige en correcte `tags` bezitswaarde op de index te plaatsen en het te gebruiken terwijl het vragen. De algemene querysyntaxis is is `<query> option(index tag <tagName>)` . Zie ook {de Markering van de Index van de Optie van 0} Vraag [&#128279;](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)
 
 #### Aangepaste index
 
@@ -245,15 +245,15 @@ Laten we enkele gereedschappen bekijken die u kunnen helpen de indexen te defini
 
 ### Gereedschap Index maken
 
-Het ](https://oakutils.appspot.com/generate/index) hulpmiddelhulp van de Generator van de Definitie van de Index van 0} Oak **om de indexdefinitie** te produceren die op de inputvragen wordt gebaseerd. [ Het is een goed beginpunt om een aangepaste index te maken.
+Het [&#128279;](https://oakutils.appspot.com/generate/index) hulpmiddelhulp van de Generator van de Definitie van de Index van 0&rbrace; Oak **om de indexdefinitie** te produceren die op de inputvragen wordt gebaseerd.  Het is een goed beginpunt om een aangepaste index te maken.
 
 ### Gereedschap Index analyseren
 
-De ](https://oakutils.appspot.com/analyze/index) hulpmiddelhulp van de Analysator van de Definitie van de Index [ **om de indexdefinitie** te analyseren en aanbevelingen te verstrekken om de indexdefinitie te verbeteren.
+De [&#128279;](https://oakutils.appspot.com/analyze/index) hulpmiddelhulp van de Analysator van de Definitie van de Index  **om de indexdefinitie** te analyseren en aanbevelingen te verstrekken om de indexdefinitie te verbeteren.
 
 ### Gereedschap Query-prestaties
 
-Het Hulpmiddel van de Prestaties van de Vraag OTB _beschikbaar bij [ lokale SDK ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) en AEMCS via Developer Console of `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell` hulp **om de vraagprestaties**en [ JCR de Cheat Sheet van de Vraag te analyseren ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en) om de optimale vraag te bepalen._
+Het Hulpmiddel van de Prestaties van de Vraag OTB _beschikbaar bij [ lokale SDK ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) en AEMCS via Developer Console of `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell` hulp **om de vraagprestaties**&#x200B;en [ JCR de Cheat Sheet van de Vraag te analyseren ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en) om de optimale vraag te bepalen._
 
 ### Problemen met gereedschappen en tips oplossen
 

@@ -107,7 +107,7 @@ Het inschakelen van CORS op AEM-services voor publiceren (en voorvertonen) versc
 Bij het configureren van CORS bij AEM-publicatie moet u ervoor zorgen dat:
 
 + De header van de `Origin` HTTP-aanvraag kan niet naar de AEM Publish-service worden verzonden door de `Origin` header (indien eerder toegevoegd) te verwijderen uit het `clientheaders.any` -bestand van het AEM Dispatcher-project. Alle `Access-Control-` -koppen moeten uit het `clientheaders.any` -bestand worden verwijderd en Dispatcher beheert deze, niet de AEM-publicatieservice.
-+ Als u om het even welke [ configuraties CORS OSGi ](#osgi-configuration) hebt die op uw AEM worden toegelaten publiceer dienst, moet u hen verwijderen en hun configuraties aan de [ hieronder geschetste 2} Dispatcher gastheerconfiguratie migreren ](#set-cors-headers-in-vhost).
++ Als u om het even welke [ configuraties CORS OSGi ](#osgi-configuration) hebt die op uw AEM worden toegelaten publiceer dienst, moet u hen verwijderen en hun configuraties aan de [ hieronder geschetste 2&rbrace; Dispatcher gastheerconfiguratie migreren ](#set-cors-headers-in-vhost).
 
 ### Dispatcher-configuratie
 

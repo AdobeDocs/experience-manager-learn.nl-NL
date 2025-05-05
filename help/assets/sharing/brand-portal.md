@@ -31,7 +31,7 @@ Brand Portal Asset Sourcing wordt gebruikt om middelen te verzamelen van externe
 
 >[!VIDEO](https://video.tv.adobe.com/v/29365?quality=12&learn=on)
 
-{6.5 SP2 (6.5.2) van de Auteur 6.5 van Experience Manager of groter wordt vereist om Activa te gebruiken die **
+&lbrace;6.5 SP2 (6.5.2) van de Auteur 6.5 van Experience Manager of groter wordt vereist om Activa te gebruiken die **
 
 Het overzicht [ laat de Auteur van Experience Manager voor Activa toe die ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) voor instructies op hoe te om de Levering van Activa op de Auteur van Experience Manager te vormen en te plaatsen.
 

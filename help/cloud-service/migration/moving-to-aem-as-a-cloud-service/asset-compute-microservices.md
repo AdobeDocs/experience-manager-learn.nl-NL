@@ -31,7 +31,7 @@ Als deel van het refactoring van uw codebasis, gebruik het [ hulpmiddel van de M
 
 ## Belangrijkste activiteiten
 
-+ Gebruik het ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationworkflow-migrator) hulpmiddel van de Migrator van het Werkschema van 0} Adobe I/O {om werkschema&#39;s van de activaverwerking te migreren om de microdiensten van Asset Compute te gebruiken.[
++ Gebruik het [&#128279;](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationworkflow-migrator) hulpmiddel van de Migrator van het Werkschema van 0&rbrace; Adobe I/O &lbrace;om werkschema&#39;s van de activaverwerking te migreren om de microdiensten van Asset Compute te gebruiken.
 + Opstelling a [ lokale ontwikkelomgeving ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) en stel de bijgewerkte werkschema&#39;s op. Mogelijk is een handmatige aanpassing nodig voor complexe workflows.
 + Doorgaan met herhalen in een lokale ontwikkelomgeving met de AEM SDK totdat de bijgewerkte workflow overeenkomt met de pariteit van de functie.
 + Implementeer de bijgewerkte codebasis in een AEM as a Cloud Service-ontwikkelomgeving en blijf valideren.

@@ -191,9 +191,9 @@ Zie de [ documentatie van het Archetype van het Project van AEM ](https://experi
 
 [ de Componenten van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) zijn een reeks gestandaardiseerde componenten van het Beheer van de Inhoud van het Web (WCM) voor AEM. Deze componenten verstrekken een basislijnreeks van een functionaliteit en worden gestileerd, aangepast, en uitgebreid voor individuele projecten.
 
-Het milieu van AEM as a Cloud Service omvat de recentste versie van [ de Componenten van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). Daarom omvatten de projecten die voor AEM as a Cloud Service worden geproduceerd **** geen inbedden van de Componenten van de Kern van AEM.
+Het milieu van AEM as a Cloud Service omvat de recentste versie van [ de Componenten van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). Daarom omvatten de projecten die voor AEM as a Cloud Service worden geproduceerd **&#x200B;**&#x200B;geen inbedden van de Componenten van de Kern van AEM.
 
-Voor AEM 6.5/6.4 produceerde projecten, sluit archetype {de Componenten van de Kern van 0} AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) automatisch in het project in. [ Het is aan te raden om AEM 6.5/6.4 AEM Core Components in te sluiten om ervoor te zorgen dat de nieuwste versie wordt geïmplementeerd met uw project. Meer informatie over hoe de Componenten van de Kern [ inbegrepen in het project kan worden gevonden hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#core-components).
+Voor AEM 6.5/6.4 produceerde projecten, sluit archetype {de Componenten van de Kern van 0} AEM [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) automatisch in het project in.  Het is aan te raden om AEM 6.5/6.4 AEM Core Components in te sluiten om ervoor te zorgen dat de nieuwste versie wordt geïmplementeerd met uw project. Meer informatie over hoe de Componenten van de Kern [ inbegrepen in het project kan worden gevonden hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#core-components).
 
 ## Source Control Management {#source-control}
 
@@ -255,7 +255,7 @@ De **[kern ](https://experienceleague.adobe.com/docs/experience-manager-core-com
 
 ### UI.apps en modules Ui.content {#apps-content-module}
 
-De ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html) **Gemaakte module 0} ui.apps bevat alle het teruggeven code nodig voor de plaats onder `/apps`.**[ Dit omvat CSS/JS die in een formaat van AEM genoemd [ clientlibs ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) wordt opgeslagen. Dit omvat ook [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) manuscripten voor het teruggeven van dynamische HTML. U kunt aan de {**module 0} ui.apps als kaart aan de structuur in JCR maar in een formaat denken dat op een dossiersysteem kan worden opgeslagen en aan broncontrole worden geëngageerd.** De {**module 0} ui.apps bevat slechts code.**
+De [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html) **Gemaakte module 0&rbrace; ui.apps bevat alle het teruggeven code nodig voor de plaats onder `/apps`.** Dit omvat CSS/JS die in een formaat van AEM genoemd [ clientlibs ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) wordt opgeslagen. Dit omvat ook [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) manuscripten voor het teruggeven van dynamische HTML. U kunt aan de {**module 0} ui.apps als kaart aan de structuur in JCR maar in een formaat denken dat op een dossiersysteem kan worden opgeslagen en aan broncontrole worden geëngageerd.** De {**module 0} ui.apps bevat slechts code.**
 
 Alleen deze module samenstellen:
 
@@ -327,9 +327,9 @@ Alleen deze module samenstellen:
 
    Opnieuw wordt een bouwstijlmislukking verwacht om voor te komen als geen instantie van AEM die op haven **loopt 4504** beschikbaar is. De parameter `aem.port` wordt gedefinieerd in het POM-bestand op `aem-guides-wknd/pom.xml` .
 
-De ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html) **module 0} ui.content is gestructureerd de zelfde manier zoals de** ui.apps **module.**[ Het enige verschil is dat de {**module 0} ui.content bevat wat als** veranderbare **inhoud wordt bekend.** **Mutable** inhoud verwijst hoofdzakelijk naar niet-codeconfiguraties zoals Malplaatjes, Beleid, of omslagstructuren die in bron-controle **worden opgeslagen maar** kon op een instantie van AEM direct worden gewijzigd. Dit wordt meer in detail besproken in het hoofdstuk over Pagina&#39;s en Malplaatjes.
+De [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html) **module 0&rbrace; ui.content is gestructureerd de zelfde manier zoals de** ui.apps **module.** Het enige verschil is dat de {**module 0} ui.content bevat wat als** veranderbare **inhoud wordt bekend.** **Mutable** inhoud verwijst hoofdzakelijk naar niet-codeconfiguraties zoals Malplaatjes, Beleid, of omslagstructuren die in bron-controle **worden opgeslagen maar** kon op een instantie van AEM direct worden gewijzigd. Dit wordt meer in detail besproken in het hoofdstuk over Pagina&#39;s en Malplaatjes.
 
-De zelfde Gemaakte bevelen die worden gebruikt om de {**module te bouwen 0} ui.apps kunnen worden gebruikt om de** module te bouwen 2} ui.content. **** Voel vrij om de bovengenoemde stappen van binnen de {**omslag te herhalen 0} ui.content.**
+De zelfde Gemaakte bevelen die worden gebruikt om de {**module te bouwen 0} ui.apps kunnen worden gebruikt om de** module te bouwen 2&rbrace; ui.content. **&#x200B;**&#x200B;Voel vrij om de bovengenoemde stappen van binnen de {**omslag te herhalen 0} ui.content.**
 
 ## Problemen oplossen
 

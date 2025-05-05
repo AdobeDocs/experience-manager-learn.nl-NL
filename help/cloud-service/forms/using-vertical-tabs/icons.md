@@ -134,7 +134,7 @@ Implementeer de bijgewerkte component verticaltabs in uw cloudinstantie.
 Stel het bijgewerkte thema op gebruikend de frontend pijpleiding.
 Maak een stijlvariatie voor de verticale tabcomponenten, zoals hieronder wordt weergegeven
 ![ stijl-variatie ](assets/verticaltab-style-variation.png)
-Wij hebben een stijlvariatie genoemd Marketing gecreeerd die met css klasse _**cmp-verticaltabs-marketing**_ wordt geassocieerd.
+Wij hebben een stijlvariatie genoemd Marketing gecreeerd die met css klasse _&#x200B;**cmp-verticaltabs-marketing**&#x200B;_ wordt geassocieerd.
 Maak een adaptief formulier met een verticale tabcomponent. Koppel de verticale tabcomponent aan de variatie in de marketingstijl.
 Voeg een aantal tabbladen toe aan de verticale tabbladen en geef deze de naam die overeenkomt met de afbeeldingen die zijn gedefinieerd in de pictogramkaart, zoals home,family.
 ![ huis-pictogram ](assets/tab-name.png)

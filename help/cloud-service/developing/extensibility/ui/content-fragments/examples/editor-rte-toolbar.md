@@ -27,7 +27,7 @@ Leer hoe u een aangepaste knop toevoegt aan de Rich Text Editor (RTE)-werkbalk i
 
 De knopen van de douane kunnen aan de **toolbar van RTE** in de Redacteur van het Fragment van de Inhoud worden toegevoegd gebruikend het `rte` uitbreidingspunt. Dit voorbeeld toont hoe te om een douaneknoop toe te voegen genoemd _Uiteinde_ aan de toolbar van RTE en de inhoud binnen RTE te wijzigen.
 
-Het gebruiken van `getCustomButtons()` methode van het 0} uitbreidingspunt van de uitbreiding één of vele douaneknopen kan aan de **toolbar van RTE** worden toegevoegd. `rte` Het is ook mogelijk om standaardRTE knopen zoals _Kopiëren, Deeg, Vet, en Cursief_ toe te voegen of te verwijderen gebruikend `getCoreButtons()` en `removeButtons)` methodes respectievelijk.
+Het gebruiken van `getCustomButtons()` methode van het 0&rbrace; uitbreidingspunt van de uitbreiding één of vele douaneknopen kan aan de **toolbar van RTE** worden toegevoegd. `rte` Het is ook mogelijk om standaardRTE knopen zoals _Kopiëren, Deeg, Vet, en Cursief_ toe te voegen of te verwijderen gebruikend `getCoreButtons()` en `removeButtons)` methodes respectievelijk.
 
 Dit voorbeeld toont hoe te om een benadrukte nota of uiteinde op te nemen gebruikend douane _voeg de toolbarknoop van het Uiteinde_ toe. Voor de gemarkeerde notitie of de inhoud van het uiteinde is een speciale opmaak van toepassing via HTML-elementen en de bijbehorende CSS-klassen. De inhoud van de plaatsaanduiding en de HTML-code worden ingevoegd met de callbackmethode `onClick()` van de `getCustomButtons()` .
 

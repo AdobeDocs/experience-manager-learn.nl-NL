@@ -38,7 +38,7 @@ Navigeer aan __de Auteur van AEM > Hulpmiddelen > Veiligheid > SSL Configuratie_
 
 ### Opslagreferenties maken
 
-Om a _Zeer belangrijke Opslag_ te creëren verbonden aan de `ssl-service` systeemgebruiker en een globale _Opslag van het Vertrouwen_, gebruik de __6} tovenaar van de Credentials van de Opslag {.__
+Om a _Zeer belangrijke Opslag_ te creëren verbonden aan de `ssl-service` systeemgebruiker en een globale _Opslag van het Vertrouwen_, gebruik de __6&rbrace; tovenaar van de Credentials van de Opslag &lbrace;.__
 
 1. Ga het wachtwoord in en bevestig wachtwoord voor de __Zeer belangrijke Opslag__ verbonden aan de `ssl-service` systeemgebruiker.
 1. Ga het wachtwoord in en bevestig wachtwoord voor de globale __Opslag van het Vertrouwen__. Het is een vertrouwde opslag voor het hele systeem. Als dit al gebeurt, wordt het ingevoerde wachtwoord genegeerd.

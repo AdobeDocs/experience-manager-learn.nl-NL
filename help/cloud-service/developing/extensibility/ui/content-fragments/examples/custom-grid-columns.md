@@ -39,7 +39,7 @@ In het volgende voorbeeld wordt een aangepaste kolom `Age` gemaakt waarmee de pa
 
 De code laat zien hoe de metagegevens van het inhoudsfragment kunnen worden verkregen in het registratiebestand van de extensie en hoe de JSON-inhoud van het inhoudsfragment kan worden getransformeerd.
 
-Dit voorbeeld gebruikt de [ ](https://moment.github.io/luxon/) bibliotheek van de Luxon om de leeftijd van het Fragment van de Inhoud te berekenen, die via `npm i luxon` wordt geïnstalleerd.
+Dit voorbeeld gebruikt de [&#128279;](https://moment.github.io/luxon/) bibliotheek van de Luxon om de leeftijd van het Fragment van de Inhoud te berekenen, die via `npm i luxon` wordt geïnstalleerd.
 
 ### Registratie van extensies
 

@@ -63,7 +63,7 @@ De eerste stap naar het starten van elk nieuw project in AEM is het maken van de
 
 ![ ga aan Browser van de Configuratie ](assets/overview/create-configuration.png)
 
-Let erop dat de configuratie van de `WKND Shared` -site al is gemaakt voor de zelfstudie. Om een configuratie voor uw eigen project tot stand te brengen, creeert de uitgezochte **** in de hoger-juiste hoek en voltooit de vorm in Create de modale van de Configuratie die verschijnt.
+Let erop dat de configuratie van de `WKND Shared` -site al is gemaakt voor de zelfstudie. Om een configuratie voor uw eigen project tot stand te brengen, creeert de uitgezochte **&#x200B;**&#x200B;in de hoger-juiste hoek en voltooit de vorm in Create de modale van de Configuratie die verschijnt.
 
 ![ Overzicht WKND Gedeelde Configuratie ](assets/overview/review-wknd-shared-configuration.png)
 
@@ -73,7 +73,7 @@ Vervolgens moet u API-eindpunten configureren om GraphQL-query&#39;s te verzende
 
 ![ vorm eindpunten ](assets/overview/endpoints.png)
 
-Let op: `WKND Shared Endpoint` is al gemaakt. Om een eindpunt voor uw project tot stand te brengen, creeer **** in de hoger-juiste hoek en volg het werkschema.
+Let op: `WKND Shared Endpoint` is al gemaakt. Om een eindpunt voor uw project tot stand te brengen, creeer **&#x200B;**&#x200B;in de hoger-juiste hoek en volg het werkschema.
 
 ![ Gedeeld Eindpunt van het Overzicht WKND ](assets/overview/review-wknd-shared-endpoint.png)
 
@@ -123,7 +123,7 @@ Hier volgt een overzicht van aanbevolen procedures voor het maken van uw eigen p
 Twee AEM **pakketten** zijn beschikbaar en kunnen via [ de Manager van het Pakket ](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md#sample-content) worden geïnstalleerd
 
 * [ geavanceerd-GraphQL-zelfstudie-Starter-Pakket-1.1.zip ](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip) wordt gebruikt later in het leerprogramma en bevat steekproefbeelden en omslagen.
-* [ geavanceerd-GraphQL-Tutorial-Oplossing-Pakket-1.2.zip ](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip) bevat de gebeëindigde oplossing voor Hoofdstuk 1-4 met inbegrip van nieuwe Modellen van het Fragment van de Inhoud, de Fragmenten van de Inhoud, en de Gesterfde vragen van GraphQL. Nuttig voor hen die recht in het ](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md) hoofdstuk van de Integratie van de Toepassing van de Cliënt 0} willen overslaan.[
+* [ geavanceerd-GraphQL-Tutorial-Oplossing-Pakket-1.2.zip ](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip) bevat de gebeëindigde oplossing voor Hoofdstuk 1-4 met inbegrip van nieuwe Modellen van het Fragment van de Inhoud, de Fragmenten van de Inhoud, en de Gesterfde vragen van GraphQL. Nuttig voor hen die recht in het [&#128279;](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md) hoofdstuk van de Integratie van de Toepassing van de Cliënt 0&rbrace; willen overslaan.
 
 
 Het [ Reageer App - Geavanceerde Leerprogramma - WKND avonturen ](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) project is beschikbaar om de steekproeftoepassing te herzien en te onderzoeken. Deze voorbeeldtoepassing haalt de inhoud van AEM op door de voortgezette GraphQL-query&#39;s aan te roepen en rendert deze in een meeslepende ervaring.

@@ -62,7 +62,7 @@ Als u een kwestie met het leerprogramma of de code vindt, gelieve de kwestie van
 
 ## Overslaan naar het einde
 
-Om aan het eind van het leerprogramma over te slaan, kan het {](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) inhoudspakket 0} com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip op **zowel** AEM Auteur als AEM Publish worden geïnstalleerd. [ Houd er rekening mee dat inhoud en configuratie niet worden weergegeven zoals is gepubliceerd in AEM auteur, maar vanwege de handmatige implementatie zijn alle vereiste inhoud en configuratie beschikbaar op AEM Publish, zodat de [!DNL WKND Mobile App] toegang heeft tot de inhoud.
+Om aan het eind van het leerprogramma over te slaan, kan het {[&#128279;](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) inhoudspakket 0} com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip op **zowel** AEM Auteur als AEM Publish worden geïnstalleerd.  Houd er rekening mee dat inhoud en configuratie niet worden weergegeven zoals is gepubliceerd in AEM auteur, maar vanwege de handmatige implementatie zijn alle vereiste inhoud en configuratie beschikbaar op AEM Publish, zodat de [!DNL WKND Mobile App] toegang heeft tot de inhoud.
 
 
 ## Volgende stap

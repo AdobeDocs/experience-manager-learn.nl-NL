@@ -48,7 +48,7 @@ Zorg ervoor dat u de juiste machtigingen en de juiste einddatum opgeeft, zoals i
 
 ## De BLOB SAS-token en opslag-URI opgeven
 
-Om de code generischer te maken, kunnen de twee eigenschappen worden gevormd gebruikend de configuratie OSGi zoals hieronder getoond. _**aemformstutorial**_ is de naam van de opslagrekening, _**formsubmission**_ is de container waarin de gegevens zullen worden opgeslagen.
+Om de code generischer te maken, kunnen de twee eigenschappen worden gevormd gebruikend de configuratie OSGi zoals hieronder getoond. _&#x200B;**aemformstutorial**&#x200B;_ is de naam van de opslagrekening, _&#x200B;**formsubmission**&#x200B;_ is de container waarin de gegevens zullen worden opgeslagen.
 Zorg dat / aan het einde van de opslaguri staat en dat het SAS-token begint met?
 ![ osgi-configuratie ](./assets/azure-portal-osgi-configuration.png)
 

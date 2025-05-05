@@ -25,7 +25,7 @@ Leer hoe u een taak uitvoert op de instantie leader in de AEM Author-service als
 
 Het verkopen van Banen zijn asynchrone taken die op de achtergrond werken, die worden ontworpen om systeem of gebruiker-teweeggebrachte gebeurtenissen te behandelen. Deze taken worden standaard gelijkmatig over alle instanties (pods) in de cluster verdeeld.
 
-Voor meer informatie, zie [ Apache die Gebeurtenis en de Behandeling van de Baan {](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) schikt.
+Voor meer informatie, zie [ Apache die Gebeurtenis en de Behandeling van de Baan &lbrace;](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) schikt.
 
 ## Taken maken en verwerken
 
@@ -155,7 +155,7 @@ Er zijn twee logitems, één voor elke AEM Auteur-instantie (`68775db964-nxxcx` 
 
 ## Een taak uitvoeren op de leaderinstantie
 
-Om een baan _in werking te stellen slechts eenmaal_ op de dienst van de Auteur van AEM, creeer een nieuwe het Verdelen baanrij van het type **** wordt bevolen, en associeer uw baanonderwerp (`wknd/simple/job/topic`) met deze rij. Met deze configuratie kan alleen de AEM Author-instantie (pod) voor leader de taak verwerken.
+Om een baan _in werking te stellen slechts eenmaal_ op de dienst van de Auteur van AEM, creeer een nieuwe het Verdelen baanrij van het type **&#x200B;**&#x200B;wordt bevolen, en associeer uw baanonderwerp (`wknd/simple/job/topic`) met deze rij. Met deze configuratie kan alleen de AEM Author-instantie (pod) voor leader de taak verwerken.
 
 Maak in de module `ui.config` van uw AEM-project een OSGi-configuratiebestand ( `org.apache.sling.event.jobs.QueueConfiguration~wknd.cfg.json` ) en sla dit op in de map `ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author` .
 

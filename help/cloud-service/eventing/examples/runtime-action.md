@@ -147,7 +147,7 @@ Als u AEM Events wilt ontvangen en de Adobe I/O Runtime-actie wilt uitvoeren die
 
   ![ Runtime Actie - vorm project ](../assets/examples/runtime-action/select-runtime-action.png)
 
-- Herzie de details van de Registratie van de Gebeurtenis, ook **zuivert het Vinden** lusje en verifieert het **3} verzoek en de reactie van de Beeldsproef van de Uitdaging.**
+- Herzie de details van de Registratie van de Gebeurtenis, ook **zuivert het Vinden** lusje en verifieert het **3&rbrace; verzoek en de reactie van de Beeldsproef van de Uitdaging.**
 
   ![ Gegevens van de Registratie van de Gebeurtenis ](../assets/examples/runtime-action/debug-tracing-challenge-probe.png)
 

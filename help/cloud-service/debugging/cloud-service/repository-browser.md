@@ -34,7 +34,7 @@ Toegang krijgen tot de Repository Browser op AEM as a Cloud Service:
 1. Login aan [ Cloud Manager ](https://my.cloudmanager.adobe.com)
 1. Selecteer het programma met de AEM as a Cloud Service-omgeving waarin u de foutopsporing wilt uitvoeren
 1. Open [ Developer Console ](./developer-console.md) die aan het milieu van AEM as a Cloud Service beantwoorden om te zuiveren
-1. Selecteer Browser van de Bewaarplaats __lusje 0}__
+1. Selecteer Browser van de Bewaarplaats __lusje 0&rbrace;__
 1. Selecteer de AEM service tier om te bladeren
    + Alle auteurs
    + Alle uitgevers

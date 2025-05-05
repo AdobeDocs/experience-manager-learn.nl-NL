@@ -45,7 +45,7 @@ Leer hoe u het token voor de zuiverings-API instelt voor het leegmaken van de CD
 
 Het token van de zuiverings-API wordt gemaakt door de CDN-regel in uw AEM-projectcode te configureren.
 
-1. Open het bestand `cdn.yaml` vanuit de hoofdmap van uw AEM-project van `config` . Bijvoorbeeld, het {](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) dossier 1} van cdn.yaml van het 0} WKND-project.[
+1. Open het bestand `cdn.yaml` vanuit de hoofdmap van uw AEM-project van `config` . Bijvoorbeeld, het {[&#128279;](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) dossier 1} van cdn.yaml van het 0&rbrace; WKND-project.
 
 1. Voeg de volgende CDN-regel toe aan het `cdn.yaml` -bestand:
 
@@ -85,7 +85,7 @@ Maak vervolgens de Cloud Manager-omgevingsvariabelen om de waarde van het token 
 
 1. Dan selecteer het **lusje van de Configuratie** en klik **voeg Configuratie** knoop toe.
 
-1. In de **dialoog van de Configuratie van het 0} Milieu {, ga de volgende details in:**
+1. In de **dialoog van de Configuratie van het 0&rbrace; Milieu &lbrace;, ga de volgende details in:**
    - **Naam**: Ga de naam van de omgevingsvariabele in. De waarde moet overeenkomen met de waarde `purgeKey1` of `purgeKey2` uit het `cdn.yaml` -bestand.
    - **Waarde**: Ga de Schrapping API Symbolische waarde in.
    - **Toegepaste Dienst**: Selecteer de **Al** optie.

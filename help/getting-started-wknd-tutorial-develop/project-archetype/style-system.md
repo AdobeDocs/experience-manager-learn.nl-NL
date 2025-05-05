@@ -28,7 +28,7 @@ Leer hoe u afzonderlijke stijlen implementeert en Core Components opnieuw gebrui
 
 Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikkelomgeving ](overview.md#local-dev-environment).
 
-Het wordt ook geadviseerd om de [ cliënt-zijBibliotheken en het 1} leerprogramma van het Voorste-Eind van het Werkschema te herzien {om de grondbeginselen van cliënt-zijbibliotheken en de diverse front-end hulpmiddelen te begrijpen die in het project van AEM worden gebouwd.](client-side-libraries.md)
+Het wordt ook geadviseerd om de [ cliënt-zijBibliotheken en het 1&rbrace; leerprogramma van het Voorste-Eind van het Werkschema te herzien &lbrace;om de grondbeginselen van cliënt-zijbibliotheken en de diverse front-end hulpmiddelen te begrijpen die in het project van AEM worden gebouwd.](client-side-libraries.md)
 
 ### Starter-project
 
@@ -97,7 +97,7 @@ Voeg een beleid voor de componenten van de Titel toe om inhoudsauteurs toe te st
 
 1. Navigeer aan het **malplaatje van de Pagina van het Artikel** van: [ http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html ](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)
 
-1. In **wijze van de Structuur 0}, op de belangrijkste** Container van de Lay-out **, selecteer het** pictogram van het Beleid **naast de** Titel **component die onder *wordt vermeld Toegelaten Componenten*:**
+1. In **wijze van de Structuur 0&rbrace;, op de belangrijkste** Container van de Lay-out **, selecteer het** pictogram van het Beleid **naast de** Titel **component die onder *wordt vermeld Toegelaten Componenten*:**
 
    ![ het Beleid van de Titel vormt ](assets/style-system/article-template-title-policy-icon.png)
 
@@ -146,7 +146,7 @@ Laten we als auteur de onderstrepingsstijl toepassen op bepaalde titelcomponente
 
 ### Implementeer de onderstrepingsstijl - ui.frontend
 
-Daarna, voer de onderstreepte stijl uit gebruikend de {**module 0} ui.frontend van het project van AEM.** De webpack ontwikkelingsserver die met de {**module 0} ui.frontend {wordt gebundeld om de stijlen *voor* het opstellen aan een lokale instantie van AEM te voorproef wordt gebruikt.**
+Daarna, voer de onderstreepte stijl uit gebruikend de {**module 0} ui.frontend van het project van AEM.** De webpack ontwikkelingsserver die met de {**module 0} ui.frontend &lbrace;wordt gebundeld om de stijlen *voor* het opstellen aan een lokale instantie van AEM te voorproef wordt gebruikt.**
 
 1. Begin het `watch` proces van binnen de **ui.frontend** module:
 
@@ -207,7 +207,7 @@ Voeg vervolgens een beleid toe voor de tekstcomponenten.
 
 1. Navigeer aan het **Malplaatje van de Pagina van het Artikel** van: [ http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html ](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html).
 
-1. In **wijze van de Structuur 0}, op de belangrijkste** Container van de Lay-out **, selecteer het** pictogram van het Beleid **naast de** **component die van de Tekst onder *wordt vermeld Toegelaten Componenten*:**
+1. In **wijze van de Structuur 0&rbrace;, op de belangrijkste** Container van de Lay-out **, selecteer het** pictogram van het Beleid **naast de** **component die van de Tekst onder *wordt vermeld Toegelaten Componenten*:**
 
    ![ het Beleid van de Tekst vormt ](assets/style-system/article-template-text-policy-icon.png)
 
@@ -232,7 +232,7 @@ Voeg vervolgens een beleid toe voor de tekstcomponenten.
 1. Navigeer aan **La Skateparks** artikel in de redacteur van AEM Sites bij: [ http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html ](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
 1. Op **geef** wijze uit, kies een component van de Tekst. Bewerk de component om een aanhalingsteken te plaatsen:
 
-   {de Configuratie van de Component van 0} Tekst ](assets/style-system/configure-text-component.png)![
+   {de Configuratie van de Component van 0} Tekst ![&#128279;](assets/style-system/configure-text-component.png)
 
 1. Selecteer de tekstcomponent en klik het **pictogram van het schilderpenseel** en selecteer de **stijl van het Blok van het Citaat**:
 

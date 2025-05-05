@@ -31,7 +31,7 @@ Maak de configuratie van de cloudservice met onderstaande stappen.
 1. Van het **menu van Hulpmiddelen**, selecteer **Cloud Servicen** sectie en klik **de Configuraties van de Lancering van de Adobe**
 1. Selecteer de configuratiemap van uw plaats of selecteer **Plaats WKND** (als het gebruiken van het WKND gids project) en klik **creeer**
 1. Van het _Algemene_ lusje, noem uw configuratie gebruikend het **gebied van de Titel**, en selecteer **Lancering van de Adobe** van _Bijbehorende de Configuratie van Adobe IMS_ dropdown. Dan, selecteer uw bedrijfsnaam van _bedrijf_ dropdown en selecteer eerder gecreeerd bezit van het _Bezit_ dropdown.
-1. Van het _Staging_ en _Productie_ lusje houden de standaardconfiguraties. Nochtans wordt het geadviseerd het herzien en de configuraties voor echte productie opstelling, specifiek de _wisselaar van de Lading Asynchroon_ schakelen die op uw prestaties en optimaliseringsvereisten wordt gebaseerd. Merk ook op dat de _waarde van 0} Bibliotheek URI {voor het Opvoeren en de Productie verschillend is._
+1. Van het _Staging_ en _Productie_ lusje houden de standaardconfiguraties. Nochtans wordt het geadviseerd het herzien en de configuraties voor echte productie opstelling, specifiek de _wisselaar van de Lading Asynchroon_ schakelen die op uw prestaties en optimaliseringsvereisten wordt gebaseerd. Merk ook op dat de _waarde van 0&rbrace; Bibliotheek URI &lbrace;voor het Opvoeren en de Productie verschillend is._
 1. Tot slot klik **creeer** om de diensten van de etiketwolk te voltooien.
 
    ![ de Configuratie van Cloud Servicen van markeringen ](assets/launch-cloud-services-config.png)

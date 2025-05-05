@@ -31,7 +31,7 @@ Als deel van het refactoring van uw codebasis, gebruik het [ hulpmiddel van de M
 
 ## Belangrijkste activiteiten
 
-* Gebruik het ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationrepository-modernizer) hulpmiddel van Modernizer van de Bewaarplaats van Adobe I/O [ {om een project te herstructureren om de verwachte structuur van een project van AEM as a Cloud Service aan te passen.
+* Gebruik het [&#128279;](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationrepository-modernizer) hulpmiddel van Modernizer van de Bewaarplaats van Adobe I/O  &lbrace;om een project te herstructureren om de verwachte structuur van een project van AEM as a Cloud Service aan te passen.
 * Pas eventuele constructiefouten in de bijgewerkte codebasis handmatig aan en repareer deze.
 * Opstelling a [ lokale ontwikkelomgeving ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) en stel de bijgewerkte codebasis op. Herhaal dit tot het project in een stabiele staat verkeert.
 * Implementeer de bijgewerkte codebasis in een AEM as a Cloud Service-ontwikkelomgeving en blijf valideren.

@@ -35,7 +35,7 @@ Deze aanpak is met name handig in de volgende scenario&#39;s:
 - **Extra attributen:** wanneer de extra attributen, zoals [ ARIA ](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) voor toegankelijkheid of [ microgegevens ](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata), worden vereist.
 - **de verhogingen van JavaScript:** wanneer de interactieve eigenschappen, zoals gebeurtenisluisteraars, noodzakelijk zijn.
 
-Deze methode is afhankelijk van native JavaScript DOM-manipulatie in de browser, maar vereist voorzichtigheid bij het wijzigen van de DOM, vooral bij het verplaatsen van elementen. Dergelijke wijzigingen kunnen de ontwerpervaring van de Universal Editor verstoren. Ideaal gezien, zou het de inhoudsmodel van het blok [ ](./5-new-block.md#block-model) moeten worden bedacht om de behoefte aan uitgebreide DOM veranderingen te minimaliseren.
+Deze methode is afhankelijk van native JavaScript DOM-manipulatie in de browser, maar vereist voorzichtigheid bij het wijzigen van de DOM, vooral bij het verplaatsen van elementen. Dergelijke wijzigingen kunnen de ontwerpervaring van de Universal Editor verstoren. Ideaal gezien, zou het de inhoudsmodel van het blok [&#128279;](./5-new-block.md#block-model) moeten worden bedacht om de behoefte aan uitgebreide DOM veranderingen te minimaliseren.
 
 ## HTML blokkeren
 
@@ -81,7 +81,7 @@ Hieronder ziet u het DOM van het teaserblok dat als doel heeft het versieren met
 ...
 ```
 
->[!TAB  hoe te om DOM ] te vinden
+>[!TAB hoe te om DOM  te vinden]
 
 Als u het DOM wilt zoeken om te versieren, opent u de pagina met het niet-versierde blok in uw lokale ontwikkelomgeving, selecteert u het blok en inspecteert u het DOM.
 
@@ -108,7 +108,7 @@ In dit voorbeeld voert JavaScript drie hoofdhandelingen uit:
 1. Hiermee voegt u semantische CSS-klassen toe aan de elementen van het blok, wat handig is bij het integreren van bestaande CSS-ontwerpsystemen.
 1. Voegt een speciale CSS-klasse toe aan alinea&#39;s die beginnen met `Terms and conditions:` .
 
-[!BADGE  /blocks/teaser/teaser.js]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/teaser/teaser.js]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```javascript
 /* /blocks/teaser/teaser.js */
@@ -181,7 +181,7 @@ Zeldelementen kunnen nog steeds rechtstreeks worden vormgegeven, of met de aange
 
 [ als vóór ](./7a-block-css.md#develop-a-block-with-css), werkingsgebied CSS aan `.block.teaser` gebruikend [ CSS het nesten ](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting) om conflict met andere blokken te vermijden.
 
-[!BADGE  /blocks/teaser/teaser.css]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/teaser/teaser.css]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```css
 /* /blocks/teaser/teaser.css */

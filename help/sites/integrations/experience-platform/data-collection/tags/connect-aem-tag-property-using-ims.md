@@ -34,8 +34,8 @@ De auto van het overzicht creeerde **markeringen in de configuratie van Adobe Ex
 
 1. In AEM Auteur open het **Hulpmiddelen** menu
 1. Selecteer Adobe IMS Configurations in de sectie Beveiliging.
-1. Selecteer de **kaart van de Lancering van de Adobe 0} {en klik** Eigenschappen **, herzie de details van** Certificaat **en** de lusjes van de Rekening **.** Dan klik **annuleert** om terug te keren zonder om het even welke auto gecreeerde details te wijzigen.
-1. Selecteer de **kaart van de Lancering van de Adobe 0} {en klik deze keer** Gezondheid van de Controle **, zou u het** 5} bericht van het Succes {als hieronder moeten zien.****
+1. Selecteer de **kaart van de Lancering van de Adobe 0&rbrace; &lbrace;en klik** Eigenschappen **, herzie de details van** Certificaat **en** de lusjes van de Rekening **.** Dan klik **annuleert** om terug te keren zonder om het even welke auto gecreeerde details te wijzigen.
+1. Selecteer de **kaart van de Lancering van de Adobe 0&rbrace; {en klik deze keer** Gezondheid van de Controle **, zou u het** 5} bericht van het Succes &lbrace;als hieronder moeten zien.**&#x200B;**
 
    ![ de Gezonde Configuratie IMS van Markeringen ](assets/adobe-launch-healthy-ims-config.png)
 

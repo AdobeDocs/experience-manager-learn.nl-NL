@@ -44,7 +44,7 @@ Als u foutopsporing op de client wilt inschakelen, roept u de methode `setDebug(
 
 ## Foutopsporing via Adobe Experience Platform Debugger
 
-Adobe verstrekt de uitbreiding van Chrome van het Adobe Experience Platform Debugger [ ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) om, inzicht in de integratie te zuiveren te begrijpen en te krijgen.
+Adobe verstrekt de uitbreiding van Chrome van het Adobe Experience Platform Debugger [&#128279;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) om, inzicht in de integratie te zuiveren te begrijpen en te krijgen.
 
 1. Open de extensie Adobe Experience Platform Debugger en open de sitepagina op de Publish-instantie
 

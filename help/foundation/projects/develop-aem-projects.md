@@ -69,7 +69,7 @@ Een voorbeeld van een douanetovenaar kan voor het Malplaatje van het Project van
 
 ### Gadgets {#gadgets}
 
-Er zijn geen extra eigenschappen op deze knoop maar de kinderen van de gadget knoopcontrole die de Tegels van het Project het dashboard van het Project bevolken wanneer een nieuw Project wordt gecreeerd. [ de Tegels van het Project ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) (ook genoemd geworden gadgets of peul) zijn eenvoudige kaarten die de werkplaats van een Project bevolken. Een volledige lijst met voetbtegels vindt u onder: **/libs/cq/gui/components/projects/admin/pod. **Projecteigenaars kunnen altijd tegels toevoegen/verwijderen nadat een project is gemaakt.
+Er zijn geen extra eigenschappen op deze knoop maar de kinderen van de gadget knoopcontrole die de Tegels van het Project het dashboard van het Project bevolken wanneer een nieuw Project wordt gecreeerd. [ de Tegels van het Project ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) (ook genoemd geworden gadgets of peul) zijn eenvoudige kaarten die de werkplaats van een Project bevolken. Een volledige lijst met voetbtegels vindt u onder: **/libs/cq/gui/components/projects/admin/pod. &#x200B;** Projecteigenaars kunnen altijd tegels toevoegen/verwijderen nadat een project is gemaakt.
 
 ### Rollen {#roles}
 
@@ -77,7 +77,7 @@ Er zijn drie [ standaardrollen ](https://experienceleague.adobe.com/en/docs/expe
 
 ### Workflows {#workflows}
 
-Één de meest verleidelijke redenen voor het creëren van een Malplaatje van het douaneproject is dat het u de capaciteit geeft om de beschikbare werkschema&#39;s voor gebruik met het project te vormen. Dit kan OTB-workflows of aangepaste workflows zijn. Onder de **werkschema&#39;s** knoop moet er a **modellen** knoop (ook `nt:unstructured`) zijn en de kindknopen onder specificeren de beschikbare werkschemamodellen. Het bezit **modelId **richt aan het werkschemamodel onder /etc/workflow en de bezit **tovenaar** richt aan de dialoog die wanneer het beginnen van het werkschema wordt gebruikt. Een significant voordeel van Projecten is de capaciteit om een douanedialoog (tovenaar) toe te voegen om zaken-specifieke meta-gegevens bij het begin van het werkschema te vangen die verdere acties binnen het werkschema kunnen drijven.
+Één de meest verleidelijke redenen voor het creëren van een Malplaatje van het douaneproject is dat het u de capaciteit geeft om de beschikbare werkschema&#39;s voor gebruik met het project te vormen. Dit kan OTB-workflows of aangepaste workflows zijn. Onder de **werkschema&#39;s** knoop moet er a **modellen** knoop (ook `nt:unstructured`) zijn en de kindknopen onder specificeren de beschikbare werkschemamodellen. Het bezit **modelId &#x200B;** richt aan het werkschemamodel onder /etc/workflow en de bezit **tovenaar** richt aan de dialoog die wanneer het beginnen van het werkschema wordt gebruikt. Een significant voordeel van Projecten is de capaciteit om een douanedialoog (tovenaar) toe te voegen om zaken-specifieke meta-gegevens bij het begin van het werkschema te vangen die verdere acties binnen het werkschema kunnen drijven.
 
 ```shell
 <projects-template-root> (cq:Template)
@@ -290,7 +290,7 @@ De eerste stap bestaat uit het maken van een taak om het bewerken van een stuk i
 
 Zodra de eerste taak volledig is zal toegewezen drie opties hebben om het werkschema te verpletteren:
 
-**Normaal ** - het normale verpletteren leidt tot een taak die aan de groep van de fiatteur van het Project wordt toegewezen om te herzien en goed te keuren. De prioriteit van de taak is Normaal en de vervaldatum is vijf dagen vanaf het tijdstip waarop deze wordt gecreëerd.
+**Normaal &#x200B;** - het normale verpletteren leidt tot een taak die aan de groep van de fiatteur van het Project wordt toegewezen om te herzien en goed te keuren. De prioriteit van de taak is Normaal en de vervaldatum is vijf dagen vanaf het tijdstip waarop deze wordt gecreëerd.
 
 **kruis** - het snel verpletteren leidt ook tot een taak die aan de groep van de Fiatteur van het Project wordt toegewezen. Prioriteit van de taak is Hoog en de vervaldatum is slechts één dag.
 
@@ -391,7 +391,7 @@ Locatie van workflowmodel in 6.4+
       Pre-Create Task Script = "/apps/aem-guides/projects/scripts/start-task-config.ecma"
    ```
 
-1. In de vorige stap hebben we verwezen naar een Pre-Create Taakscript. Wij zullen dat manuscript nu tot stand brengen waarin wij de Ontvanger van de Taak zullen plaatsen die op de waarde van een waarde van werkschemagegevens &quot;**wordt gebaseerd toegewezen**&quot;. De **&quot;toegewezen&quot;** waarde wordt geplaatst wanneer het werkschema weg wordt geschopt. Wij zullen ook de werkschemameta-gegevens lezen om de prioriteit van de taak dynamisch te kiezen door &quot;**taskPriority&quot;te lezen** waarde van de meta-gegevens van het werkschema evenals **&quot;taskdueDate&quot; **aan dynamisch te plaatsen wanneer de eerste taak wordt vereist.
+1. In de vorige stap hebben we verwezen naar een Pre-Create Taakscript. Wij zullen dat manuscript nu tot stand brengen waarin wij de Ontvanger van de Taak zullen plaatsen die op de waarde van een waarde van werkschemagegevens &quot;**wordt gebaseerd toegewezen**&quot;. De **&quot;toegewezen&quot;** waarde wordt geplaatst wanneer het werkschema weg wordt geschopt. Wij zullen ook de werkschemameta-gegevens lezen om de prioriteit van de taak dynamisch te kiezen door &quot;**taskPriority&quot;te lezen** waarde van de meta-gegevens van het werkschema evenals **&quot;taskdueDate&quot; &#x200B;** aan dynamisch te plaatsen wanneer de eerste taak wordt vereist.
 
    Voor organisatorische doeleinden hebben we onder onze toepassingsmap een map gemaakt voor al onze projectgerelateerde scripts: **/apps/aem-guides/projects-tasks/projects/scripts** . Creeer een dossier onder deze omslag genoemd **&quot;start-task-config.ecma&quot;**. &#42; Nota zorgt ervoor de weg aan uw begin-taak-config.ecma- dossier de weg aanpast die op het Geavanceerde Lusje van Montages in Stap 4 wordt geplaatst.
 
@@ -416,7 +416,7 @@ Locatie van workflowmodel in 6.4+
    task.setProperty("taskPriority", taskPriority);
    ```
 
-1. Navigeer terug naar de workflow voor goedkeuring van inhoud. Sleep+Daling **OF Splitste** component (die in Sidekick onder de &quot;categorie van het Werkschema&quot;wordt gevonden) onder de **3} Stap van de Taak van het Begin {.** Selecteer in het dialoogvenster Algemeen het keuzerondje voor 3 vertakkingen. OR Splitst zal de waarde van werkschemameta-gegevens **&quot;lastTaskAction&quot;** lezen om de route van het werkschema te bepalen. Het **&quot;lastTaskAction&quot;** bezit wordt geplaatst aan één van de waarden van het Verpletterende Lusje dat in Stap 4 wordt gevormd. Voor elk van de lusjes van de Tak vult het **1} de tekstgebied van het Manuscript {met de volgende waarden uit:**
+1. Navigeer terug naar de workflow voor goedkeuring van inhoud. Sleep+Daling **OF Splitste** component (die in Sidekick onder de &quot;categorie van het Werkschema&quot;wordt gevonden) onder de **3&rbrace; Stap van de Taak van het Begin {.** Selecteer in het dialoogvenster Algemeen het keuzerondje voor 3 vertakkingen. OR Splitst zal de waarde van werkschemameta-gegevens **&quot;lastTaskAction&quot;** lezen om de route van het werkschema te bepalen. Het **&quot;lastTaskAction&quot;** bezit wordt geplaatst aan één van de waarden van het Verpletterende Lusje dat in Stap 4 wordt gevormd. Voor elk van de lusjes van de Tak vult het **1} de tekstgebied van het Manuscript &lbrace;met de volgende waarden uit:**
 
    ```
    function check() {
@@ -482,7 +482,7 @@ Locatie van workflowmodel in 6.4+
 
 Eerder in deze zelfstudie hebben we een projectsjabloon gemaakt dat een rol van fiatteurs bevatte. Telkens als een nieuw Project van dit Malplaatje wordt gecreeerd wordt een project-specifieke Groep gecreeerd voor de rol Approvers. Enkel als een Stap van de Deelnemer kan een Taak slechts aan een Gebruiker of een Groep worden toegewezen. We willen deze taak toewijzen aan de projectgroep die overeenkomt met de groep fiatteurs. Alle werkschema&#39;s die van binnen een Project worden gelanceerd zullen meta-gegevens hebben die de Rollen van het Project aan de specifieke groep van het Project in kaart brengen.
 
-Kopieer+plak de volgende code in het **1} de tekstgebied van het Manuscript {van de **Geavanceerde Montages **tab.** Deze code zal de werkschemameta-gegevens lezen en zal de taak aan de groep Approvers van het Project toewijzen. Als het niet de waarde van de fiatversgroep kan vinden zal het terug vallen om de taak aan de groep van Beheerders toe te wijzen.
+Kopieer+plak de volgende code in het **1&rbrace; de tekstgebied van het Manuscript &lbrace;van de &#x200B;** Geavanceerde Montages **tab.** Deze code zal de werkschemameta-gegevens lezen en zal de taak aan de groep Approvers van het Project toewijzen. Als het niet de waarde van de fiatversgroep kan vinden zal het terug vallen om de taak aan de groep van Beheerders toe te wijzen.
 
 ```
 var projectApproverGrp = workflowData.getMetaDataMap().get("project.group.approvers","administrators");
@@ -514,7 +514,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
    Aangezien dit de route van de Goedkeuring van Rusland is wordt de prioriteit van de taak geplaatst aan Hoog. Daarnaast geven we de groep fiatteurs slechts één dag om de taak te voltooien. De toegewezen persoon wordt leeg gelaten op het tabblad Taak aangezien wij dit dynamisch zullen toewijzen op het tabblad Geavanceerde instellingen.
 
-   Wij kunnen het zelfde manuscriptfragment zoals in Stap 7 opnieuw gebruiken om het **manuscript** tekst-gebied op het** Geavanceerde Montages **tab te bevolken. Kopiëren en de onderstaande code plakken:
+   Wij kunnen het zelfde manuscriptfragment zoals in Stap 7 opnieuw gebruiken om het **manuscript** tekst-gebied op het **&#x200B; Geavanceerde Montages &#x200B;** tab te bevolken. Kopiëren en de onderstaande code plakken:
 
    ```
    var projectApproverGrp = workflowData.getMetaDataMap().get("project.group.approvers","administrators");
@@ -522,7 +522,7 @@ task.setCurrentAssignee(projectApproverGrp);
    task.setCurrentAssignee(projectApproverGrp);
    ```
 
-1. Sleep een component** Geen bewerking** naar de vertakking uiterst rechts (vertakking 3). De component Geen bewerking voert geen handeling uit en wordt onmiddellijk uitgevoerd, omdat de oorspronkelijke editor de goedkeuringsstap wil omzeilen. Technisch gezien konden wij deze Tak zonder enige werkschemastappen verlaten, maar als beste praktijken zullen wij een Geen stap van de Verrichting toevoegen. Dit maakt het aan andere ontwikkelaars duidelijk wat het doel van Tak 3 is.
+1. Sleep een component **&#x200B; Geen bewerking** naar de vertakking uiterst rechts (vertakking 3). De component Geen bewerking voert geen handeling uit en wordt onmiddellijk uitgevoerd, omdat de oorspronkelijke editor de goedkeuringsstap wil omzeilen. Technisch gezien konden wij deze Tak zonder enige werkschemastappen verlaten, maar als beste praktijken zullen wij een Geen stap van de Verrichting toevoegen. Dit maakt het aan andere ontwikkelaars duidelijk wat het doel van Tak 3 is.
 
    Dubbelklik op de workflowstap en configureer de titel en beschrijving:
 

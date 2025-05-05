@@ -303,7 +303,7 @@ De toepassing kan worden bijgewerkt en een absolute URL bevatten met behulp van 
 
 ## Publiceren van inhoud simuleren {#content-publish}
 
-Er wordt een GraphQL-fout gegenereerd voor `adventureContributor` wanneer een pagina Adventure Details wordt opgevraagd. Het **Model van het Fragment van de Inhoud 0} Medewerker {bestaat nog niet op de Publish instantie.** De updates die aan het **Model van het Fragment van de Adventure** worden gemaakt van de Inhoud zijn ook niet beschikbaar op de Publish instantie. Deze wijzigingen zijn rechtstreeks aangebracht in de instantie Auteur en moeten worden verspreid naar de instantie Publiceren.
+Er wordt een GraphQL-fout gegenereerd voor `adventureContributor` wanneer een pagina Adventure Details wordt opgevraagd. Het **Model van het Fragment van de Inhoud 0&rbrace; Medewerker &lbrace;bestaat nog niet op de Publish instantie.** De updates die aan het **Model van het Fragment van de Adventure** worden gemaakt van de Inhoud zijn ook niet beschikbaar op de Publish instantie. Deze wijzigingen zijn rechtstreeks aangebracht in de instantie Auteur en moeten worden verspreid naar de instantie Publiceren.
 
 Dit is iets waarmee u rekening moet houden wanneer u nieuwe updates wilt uitvoeren voor een toepassing die afhankelijk is van updates van een inhoudsfragment of een inhoudsfragmentmodel.
 
@@ -326,7 +326,7 @@ Vervolgens kunt u het publiceren van inhoud simuleren tussen de lokale auteur- e
 
    ![ publiceer de Modellen van het Fragment van de Inhoud ](assets/publish-deployment/publish-contentfragment-models.png)
 
-   Een bevestigingsdialoog verschijnt, publiceert de klik ****.
+   Een bevestigingsdialoog verschijnt, publiceert de klik **&#x200B;**.
 
 1. Navigeer aan het Fragment van de Inhoud van de Camp Bali Surf in [ http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp ](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp).
 

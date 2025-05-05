@@ -37,7 +37,7 @@ De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 
 ## AEM-vereisten
 
-De app Next.js werkt met de volgende AEM-implementatieopties. Alle plaatsingen vereisen [ Gedeelde v3.0.0+ ](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) WKND van de Plaats v3.0.0+ ](https://github.com/adobe/aem-guides-wknd/releases/latest) om op het milieu van AEM as a Cloud Service worden geïnstalleerd.[
+De app Next.js werkt met de volgende AEM-implementatieopties. Alle plaatsingen vereisen [ Gedeelde v3.0.0+ ](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) WKND van de Plaats v3.0.0+ [&#128279;](https://github.com/adobe/aem-guides-wknd/releases/latest) om op het milieu van AEM as a Cloud Service worden geïnstalleerd.
 
 Dit voorbeeld Next.js app wordt ontworpen om met __AEM te verbinden publiceert__ dienst.
 

@@ -37,7 +37,7 @@ Als we naar een lokale AEM-instantie verwijzen, hebben we het over een kopie van
 
 Als u aan AEM nieuw bent, zijn er twee basis in werking gestelde wijzen kunnen worden geïnstalleerd: ***Auteur*** en ***publiceren***. De ***Auteur*** [ runmode ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configure-runmodes.html?lang=en) is het milieu dat de digitale marketers gebruiken om inhoud tot stand te brengen en te beheren. Wanneer het ontwikkelen van het grootste deel van de tijd, stelt u code aan een instantie van de Auteur op. Zo kunt u pagina&#39;s maken en componenten toevoegen en configureren. AEM Sites is een WYSIWYG-ontwerpversie van CMS en daarom kunnen de meeste CSS en JavaScript worden getest op basis van een ontwerpinstantie.
 
-Het is ook *kritieke* testcode tegen een lokale ***publiceer*** instantie. ***publiceer*** instantie is het milieu van AEM dat de bezoekers aan uw website met in wisselwerking staan. Terwijl ***publiceert*** instantie de zelfde technologiestapel zoals de ****** instantie van de Auteur is, zijn er één of ander belangrijk onderscheid met configuraties en toestemmingen. De code moet tegen een lokale ***worden getest publiceert*** instantie alvorens aan milieu&#39;s op hoger niveau wordt bevorderd.
+Het is ook *kritieke* testcode tegen een lokale ***publiceer*** instantie. ***publiceer*** instantie is het milieu van AEM dat de bezoekers aan uw website met in wisselwerking staan. Terwijl ***publiceert*** instantie de zelfde technologiestapel zoals de **&#x200B;**&#x200B;**&#x200B; instantie van de Auteur is, zijn er één of ander belangrijk onderscheid met configuraties en toestemmingen. De code moet tegen een lokale &#x200B;***worden getest publiceert*** instantie alvorens aan milieu&#39;s op hoger niveau wordt bevorderd.
 
 ### Stappen
 
@@ -67,9 +67,9 @@ Het is ook *kritieke* testcode tegen een lokale ***publiceer*** instantie. ***pu
         + license.properties
 ```
 
-1. Dubbelklik het {***dossier 0} aem-auteur-p4502.jar om de **instantie van de Auteur**te installeren.*** Dit begint de auteursinstantie, die op haven **4502** op de lokale computer loopt.
+1. Dubbelklik het {***dossier 0} aem-auteur-p4502.jar om de &#x200B;** instantie van de Auteur&#x200B;**te installeren.*** Dit begint de auteursinstantie, die op haven **4502** op de lokale computer loopt.
 
-Dubbelklik het {***dossier 0} aem-publish-p4503.jar om de **te installeren publiceer**instantie.*** Dit begint de Publish instantie, die op haven **4503** op de lokale computer loopt.
+Dubbelklik het {***dossier 0} aem-publish-p4503.jar om de &#x200B;** te installeren publiceer&#x200B;**instantie.*** Dit begint de Publish instantie, die op haven **4503** op de lokale computer loopt.
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ Default locale: en_US, platform encoding: UTF-8
 
 ## Een geïntegreerde ontwikkelomgeving instellen
 
-Een geïntegreerde ontwikkelomgeving of IDE is een toepassing waarin een teksteditor, syntaxisondersteuning en build-tools worden gecombineerd. Afhankelijk van het type van ontwikkeling u doet, zou één winde boven een andere kunnen verkiezen. Ongeacht winde, is het belangrijk om ***druk*** code aan een lokale instantie van AEM periodiek te kunnen {om het te testen. Het is belangrijk om af en toe ****** configuraties van een lokale instantie van AEM in uw project van AEM te trekken om aan een bron-controle beheerssysteem zoals Git voort te zetten.
+Een geïntegreerde ontwikkelomgeving of IDE is een toepassing waarin een teksteditor, syntaxisondersteuning en build-tools worden gecombineerd. Afhankelijk van het type van ontwikkeling u doet, zou één winde boven een andere kunnen verkiezen. Ongeacht winde, is het belangrijk om ***druk*** code aan een lokale instantie van AEM periodiek te kunnen &lbrace;om het te testen. Het is belangrijk om af en toe **&#x200B;**&#x200B;** configuraties van een lokale instantie van AEM in uw project van AEM te trekken om aan een bron-controle beheerssysteem zoals Git voort te zetten.
 
 Hieronder vindt u een aantal populairdere IDE&#39;s die worden gebruikt bij de ontwikkeling van AEM met bijbehorende video&#39;s die de integratie met een lokale AEM-instantie laten zien.
 

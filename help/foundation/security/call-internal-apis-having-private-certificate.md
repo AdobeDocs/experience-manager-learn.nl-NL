@@ -157,4 +157,4 @@ Nochtans, wordt deze methode niet gericht op veiligheid beste praktijken en AEM 
 
 Het steekproefproject Node.js dat in de video wordt gedemoed kan van [ hier ](assets/internal-api-call/REST-APIs.zip) worden gedownload.
 
-De servletcode van AEM is beschikbaar in de 0} tak van het Project van Plaatsen WKND {, [ zie ](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).`tutorial/web-api-invocation`
+De servletcode van AEM is beschikbaar in de 0&rbrace; tak van het Project van Plaatsen WKND &lbrace;, [ zie ](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).`tutorial/web-api-invocation`

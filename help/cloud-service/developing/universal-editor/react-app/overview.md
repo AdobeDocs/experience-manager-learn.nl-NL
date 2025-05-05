@@ -52,7 +52,7 @@ De Universele Redacteur machtigt inhoudsauteurs en ontwikkelaars (front-end en b
 
 Dit leerprogramma gebruikt [**WKND Teams** ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial#react-app---basic-tutorial---teampersons) als steekproef Reageer app. De **Teams van WKND** Reageer app toont een lijst van teamleden en hun details.
 
-De details van het Team zoals titel, beschrijving, en teamleden worden opgeslagen als _de Fragmenten van de Inhoud van 0} Team {in AEM._ Eveneens, worden de Persoon details zoals naam, biografie, en profielbeeld opgeslagen als _Persoon_ de Fragmenten van de Inhoud in AEM.
+De details van het Team zoals titel, beschrijving, en teamleden worden opgeslagen als _de Fragmenten van de Inhoud van 0&rbrace; Team &lbrace;in AEM._ Eveneens, worden de Persoon details zoals naam, biografie, en profielbeeld opgeslagen als _Persoon_ de Fragmenten van de Inhoud in AEM.
 
 De inhoud voor de React-app wordt geleverd door AEM met behulp van GraphQL API&#39;s en de gebruikersinterface is samengesteld met behulp van twee React-componenten, `Teams` en `Person` .
 

@@ -120,7 +120,7 @@ Het is aan te raden om aangepaste code te activeren die is gebaseerd op een gebe
    });
    ```
 
-   De `cmp:show` gebeurtenis wordt teweeggebracht door vele verschillende componenten, als wanneer een nieuwe dia in **Carousel** wordt getoond, of wanneer een nieuw lusje in de **4} component van het Lusje {wordt geselecteerd.**
+   De `cmp:show` gebeurtenis wordt teweeggebracht door vele verschillende componenten, als wanneer een nieuwe dia in **Carousel** wordt getoond, of wanneer een nieuw lusje in de **4&rbrace; component van het Lusje &lbrace;wordt geselecteerd.**
 
 1. Schakel op de pagina de carrouseldia&#39;s in en bekijk de consoleinstructies:
 

@@ -95,12 +95,12 @@ Voer de volgende stappen uit om deze functie op uw server te plaatsen
 
 * AEM Forms-server installeren en starten.
 > Deze functie is getest op AEM Forms 6.3 en hoger
-* [ krijgt Google API Sleutel ](https://developers.google.com/maps/documentation/javascript/get-api-key).
-* [ voer de activa met betrekking tot dit artikel in AEM in.](assets/geolocationapi.zip)
-* [ open het Adaptieve fragment van de Vorm op geef wijze uit.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
-* Open de regeleditor voor de component Afbeeldingskeuze.
-* Vervang &lt;your_api_key> door de Google API Key.
-* Sla uw wijzigingen op.
-* [ voorproef de vorm ](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
-* Klik op het pictogram voor &quot;geolocatie&quot;.
-* Uw formulier moet worden ingevuld met uw huidige locatie.
+>* [ krijgt Google API Sleutel ](https://developers.google.com/maps/documentation/javascript/get-api-key).
+>* [ voer de activa met betrekking tot dit artikel in AEM in.](assets/geolocationapi.zip)
+>* [ open het Adaptieve fragment van de Vorm op geef wijze uit.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
+>* Open de regeleditor voor de component Afbeeldingskeuze.
+>* Vervang &lt;your_api_key> door de Google API Key.
+>* Sla uw wijzigingen op.
+>* [ voorproef de vorm ](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
+>* Klik op het pictogram voor &quot;geolocatie&quot;.
+>* Uw formulier moet worden ingevuld met uw huidige locatie.

@@ -44,4 +44,4 @@ Auteurs kunnen nu snel en gemakkelijk meertalige vertaalprojecten direct van of 
 
 * [ Vertaal Inhoud voor Meertalige Plaatsen ](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html)
 * [ https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html)
-* ](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html) Beste praktijken van de Vertaling 0}[
+* [&#128279;](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html) Beste praktijken van de Vertaling 0&rbrace;

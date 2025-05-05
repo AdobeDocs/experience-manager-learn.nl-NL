@@ -26,7 +26,7 @@ Bij het verzenden van een formulier stelt u in dat de formulierbijlagen één PD
 
 ## Creeer component OSGi die WorkflowProcess interface uitvoert
 
-Creeer een component OSGi die de {](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html) interface 0} com.adobe.granite.workflow.exec.WorkflowProcess uitvoert. [ De code in deze component kan worden gekoppeld aan de processtapcomponent in de AEM-workflow. De methode execute van de interface com.adobe.granite.workflow.exec.WorkflowProcess wordt geïmplementeerd in deze component.
+Creeer een component OSGi die de {[&#128279;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html) interface 0} com.adobe.granite.workflow.exec.WorkflowProcess uitvoert.  De code in deze component kan worden gekoppeld aan de processtapcomponent in de AEM-workflow. De methode execute van de interface com.adobe.granite.workflow.exec.WorkflowProcess wordt geïmplementeerd in deze component.
 
 Wanneer een adaptief formulier wordt verzonden om een AEM-workflow te activeren, worden de verzonden gegevens opgeslagen in het opgegeven bestand onder de payload-map. Dit is bijvoorbeeld het ingediende gegevensbestand. We moeten de bijlagen samenstellen die in de tag idcard en bankstatements zijn gespecificeerd.
 ![ voorgelegde-gegevens ](assets/submitted-data.JPG).

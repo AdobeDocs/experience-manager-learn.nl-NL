@@ -136,9 +136,9 @@ Vervolgens vult u de nieuwe fragmenten met gegevens.
 
 ## Inhoudsfragment team bewerken {#edit-team-content-fragment}
 
-1. Open het **Fragment van de Inhoud van Alpha van het 0} Team {{die de UI van het Fragment van de Inhoud gebruikt.**
+1. Open het **Fragment van de Inhoud van Alpha van het 0&rbrace; Team &lbrace;&lbrace;die de UI van het Fragment van de Inhoud gebruikt.**
 1. Vul de gebieden voor **Titel**, **Korte Naam**, en **Beschrijving**.
-1. Selecteer **Jansen doet** en **Alison Smith** de Fragmenten van de Inhoud om het **5} gebied van de Leden van het Team te bevolken:**
+1. Selecteer **Jansen doet** en **Alison Smith** de Fragmenten van de Inhoud om het **5&rbrace; gebied van de Leden van het Team te bevolken:**
 
    ![ plaats de leden van het Team ](assets/author-content-fragments/select-team-members.png)
 

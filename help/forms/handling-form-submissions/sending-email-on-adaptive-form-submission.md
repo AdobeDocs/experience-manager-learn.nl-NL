@@ -31,7 +31,7 @@ Wanneer het adaptieve formulier wordt verzonden, ontvangt de ontvanger een e-mai
 
 ## Benodigde configuraties {#configurations-needed}
 
-U moet de CQ-mailservice op de dag configureren. Dit kan worden gevormd door uw browser aan {de Manager van de Configuratie van 0} Felix ](http://localhost:4502/system/console/configMgr) te richten[
+U moet de CQ-mailservice op de dag configureren. Dit kan worden gevormd door uw browser aan {de Manager van de Configuratie van 0} Felix [&#128279;](http://localhost:4502/system/console/configMgr) te richten
 
 In de schermafbeelding ziet u de configuratie-eigenschappen voor de Adobe-mailserver.
 

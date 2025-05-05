@@ -293,7 +293,7 @@ Weblettertypen zijn vaak van invloed op de prestaties vanwege hun grootte, waard
 
 Om de beste fallback doopvont te selecteren, gebruik Adobe [ de uitbreiding van Chrome van de Fallback van de Doopvont ](https://www.aem.live/developer/font-fallback), die een dicht passende doopvont voor browsers bepaalt om te gebruiken alvorens de douanedoopvont laadt. De resulterende fontdeclaraties voor fallback moeten aan het `styles/styles.css` -bestand worden toegevoegd om de prestaties te verbeteren en gebruikers een naadloze ervaring te bieden.
 
-![ de uitbreiding van Chrome van de Fallback van de Doopvont 1} {align=center}](./assets/4-website-branding/font-fallback-chrome-plugin.png)
+![ de uitbreiding van Chrome van de Fallback van de Doopvont 1&rbrace; {align=center}](./assets/4-website-branding/font-fallback-chrome-plugin.png)
 
 Om de [ extensie van Chrome van de Fontfallback van de Helix te gebruiken ](https://www.aem.live/developer/font-fallback), zorg ervoor dat de Web-pagina weblettertypen heeft die in de zelfde variaties worden toegepast die op de website van Edge Delivery Services worden gebruikt. Dit leerprogramma toont de uitbreiding op [ wknd.site ](http://wknd.site/us/en.html) aan. Wanneer het ontwikkelen van een website, pas de uitbreiding op de plaats toe die aan eerder dan aan [ wknd.site ](http://wknd.site/us/en.html) wordt gewerkt.
 

@@ -78,7 +78,7 @@ Het ondertekende certificaat kan de certificaatketen bevatten, die de basis- en 
 
 Adobe Cloud Manager keurt het eindentiteitcertificaat en de certificaatketting _in afzonderlijke vormgebieden_ goed, zodat moet u het eindentiteitcertificaat en de certificaatketting van het ondertekende certificaat halen.
 
-In dit leerprogramma, wordt het ](https://www.digicert.com/) ondertekende certificaat DigitCert [ dat tegen `*.enablementadobe.com` domein wordt uitgegeven gebruikt als voorbeeld. De eindentiteit- en certificaatketen wordt geëxtraheerd door het ondertekende certificaat te openen in een teksteditor en de inhoud te kopiëren tussen de markeringen `-----BEGIN CERTIFICATE-----` en `-----END CERTIFICATE-----` .
+In dit leerprogramma, wordt het [&#128279;](https://www.digicert.com/) ondertekende certificaat DigitCert  dat tegen `*.enablementadobe.com` domein wordt uitgegeven gebruikt als voorbeeld. De eindentiteit- en certificaatketen wordt geëxtraheerd door het ondertekende certificaat te openen in een teksteditor en de inhoud te kopiëren tussen de markeringen `-----BEGIN CERTIFICATE-----` en `-----END CERTIFICATE-----` .
 
 ## CDN met klantbeheer instellen
 
@@ -180,7 +180,7 @@ public class VerifyHeadersServlet extends SlingSafeMethodsServlet {
 }
 ```
 
-Als u de servlet wilt testen, werkt u het `../dispatcher/src/conf.dispatcher.d/filters/filters.any` -bestand bij met de volgende configuratie. Zorg ook ervoor dat CDN aan **NIET** `/bin/*` weg {wordt gevormd in het voorgeheugen onderbrengen.
+Als u de servlet wilt testen, werkt u het `../dispatcher/src/conf.dispatcher.d/filters/filters.any` -bestand bij met de volgende configuratie. Zorg ook ervoor dat CDN aan **NIET** `/bin/*` weg &lbrace;wordt gevormd in het voorgeheugen onderbrengen.
 
 ```plaintext
 # Testing purpose bin

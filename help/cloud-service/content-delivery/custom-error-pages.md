@@ -111,7 +111,7 @@ Laat herzien hoe het [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) proj
 
 - Het bestand `wknd.vhost` van de module `dispatcher` bevat:
    - De [ richtlijn ErrorDocument ](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L139-L143) die aan de bovengenoemde [ foutenpagina&#39;s ](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/variables/custom.vars#L7-L8) richt.
-   - De ](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L133) waarde 0} DispatcherPassError wordt geplaatst aan 1 zodat Dispatcher laat Apache alle fouten behandelen.[
+   - De [&#128279;](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L133) waarde 0&rbrace; DispatcherPassError wordt geplaatst aan 1 zodat Dispatcher laat Apache alle fouten behandelen.
 
   ```
   # In `wknd.vhost` file:
@@ -313,7 +313,7 @@ Voor demodoeleinden, laten wij gebruiken [ Reageren ](https://react.dev/), echte
      De statische bestanden worden gegenereerd in de map `build` .
 
 
-Alternatief, kunt u het {](./assets/aem-cdn-error-page.zip) dossier downloaden 0} aem-cdn-error-page.zip dat de bovengenoemde projectdossiers van React bevat.[
+Alternatief, kunt u het {[&#128279;](./assets/aem-cdn-error-page.zip) dossier downloaden 0} aem-cdn-error-page.zip dat de bovengenoemde projectdossiers van React bevat.
 
 Vervolgens host u de bovenstaande statische bestanden op een openbaar toegankelijke locatie.
 
@@ -346,7 +346,7 @@ Vervolgens configureert u de CDN-regel (errorPages) en verwijst u naar de bovens
 
 Configureer de CDN-regel `errorPages` die de bovenstaande statische bestanden gebruikt om de inhoud van de CDN-foutpagina weer te geven.
 
-1. Open het bestand `cdn.yaml` vanuit de hoofdmap van uw AEM-project van `config` . Bijvoorbeeld, het {](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) dossier 1} van cdn.yaml van het 0} WKND-project.[
+1. Open het bestand `cdn.yaml` vanuit de hoofdmap van uw AEM-project van `config` . Bijvoorbeeld, het {[&#128279;](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) dossier 1} van cdn.yaml van het 0&rbrace; WKND-project.
 
 1. Voeg de volgende CDN-regel toe aan het `cdn.yaml` -bestand:
 

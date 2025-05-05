@@ -48,7 +48,7 @@ In het bovenstaande scenario wordt de gebruiker `1323d2...` gemaakt in de AEM Au
 
 Het grootste deel van de _Diensten_ verstrekt _LEZEN_ toestemming aan de middelen van AEM, via de gebruikersgroepen in de instantie van AEM die de zelfde naam zoals de _Dienst_ hebben.
 
-Er zijn tijden wanneer de geloofsbrieven (ook bekend als technische rekeningsgebruiker) extra toestemmingen zoals _creeer, Update, schrap_ (CUD) van de middelen van AEM nodig hebben. In dergelijke gevallen, kunt u de toestemmingen van de _gebruikersgroepen van de Diensten_ {in de instantie van AEM bijwerken.
+Er zijn tijden wanneer de geloofsbrieven (ook bekend als technische rekeningsgebruiker) extra toestemmingen zoals _creeer, Update, schrap_ (CUD) van de middelen van AEM nodig hebben. In dergelijke gevallen, kunt u de toestemmingen van de _gebruikersgroepen van de Diensten_ &lbrace;in de instantie van AEM bijwerken.
 
 Bijvoorbeeld, wanneer de aanroeping van de Auteur van AEM Assets API a [ 403 fout voor niet-GET verzoeken ](../use-cases/invoke-api-using-oauth-s2s.md#403-error-for-non-get-requests) ontvangt, kunt u de toestemmingen van de _Gebruikers van de Medewerker van AEM Assets - de gebruikersgroep van de Dienst_ in de instantie van AEM bijwerken.
 

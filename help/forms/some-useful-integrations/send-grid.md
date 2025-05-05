@@ -49,7 +49,7 @@ U kunt het aangeboden Swagger-bestand gebruiken als referentie of beginpunt voor
 
 Voer de volgende stappen uit om de in deze handleiding beschreven functionaliteit te testen:
 
-1. Download het [ die} kwikdossier ](assets/SendGridWithDynamicTemplate.yaml) in de activa omslag wordt verstrekt.
+1. Download het [ die&rbrace; kwikdossier ](assets/SendGridWithDynamicTemplate.yaml) in de activa omslag wordt verstrekt.
 2. Maak een herstelbare gegevensbron met behulp van het gedownloade wagerbestand en uw SendGrid-referenties.
 3. Maak een formuliergegevensmodel op basis van de herstelde gegevensbron.
 4. Roep de `mail/send` POST-bewerking van het formuliergegevensmodel aan volgens uw vereisten. U kunt bijvoorbeeld de e-mail activeren door erop te klikken of deze opnemen in de AEM Forms-workflow.

@@ -68,7 +68,7 @@ Een meerderheid van het leerprogramma zal plaatsvinden gebruikend de **Dienst va
    >
    >Het wordt geadviseerd om het milieu van de a **Ontwikkeling** voor dit leerprogramma te gebruiken.
 
-1. Een nieuw lusje wordt gelanceerd aan de Dienst van de Auteur van AEM ****. Klik **Teken binnen met Adobe** en u zou automatisch met de zelfde geloofsbrieven van Experience Cloud moeten worden het programma geopend.
+1. Een nieuw lusje wordt gelanceerd aan de Dienst van de Auteur van AEM **&#x200B;**. Klik **Teken binnen met Adobe** en u zou automatisch met de zelfde geloofsbrieven van Experience Cloud moeten worden het programma geopend.
 
 1. Nadat u bent omgeleid en geverifieerd, kunt u nu het AEM-beginscherm weergeven.
 
@@ -99,7 +99,7 @@ Een Sjabloon voor site biedt een beginpunt voor een nieuwe site. Een Sjabloon va
 Daarna, produceer een nieuwe plaats gebruikend het Malplaatje van de Plaats van de vorige oefening.
 
 1. Ga terug naar de AEM-omgeving. Van het scherm van het Begin van AEM navigeert aan **Plaatsen**.
-1. In de hogere rechterhoek klik **** > **Plaats (Malplaatje)** creëren. Dit zal omhoog **creëren de Tovenaar van de Plaats** brengen.
+1. In de hogere rechterhoek klik **&#x200B;**&#x200B;> **Plaats (Malplaatje)** creëren. Dit zal omhoog **creëren de Tovenaar van de Plaats** brengen.
 1. Onder **selecteer een plaatsmalplaatje** klik de **Invoer** knoop.
 
    Upload het **.zip** malplaatjedossier dat van de vorige oefening wordt gedownload.
@@ -126,7 +126,7 @@ Daarna, produceer een nieuwe plaats gebruikend het Malplaatje van de Plaats van 
 
 1. Navigeer naar de AEM Sites-console, als deze nog niet aanwezig is.
 1. Een nieuwe **Plaats WKND** is geproduceerd. Dit omvat een sitestructuur met een meertalige hiërarchie.
-1. Open de **Engelse** > **3} pagina van het Huis door de pagina te selecteren en** te klikken geef **knoop in de menubar uit:**
+1. Open de **Engelse** > **3&rbrace; pagina van het Huis door de pagina te selecteren en** te klikken geef **knoop in de menubar uit:**
 
    ![ de Hiërarchie van de Plaats van WKND ](assets/create-site/wknd-site-starter-hierarchy.png)
 

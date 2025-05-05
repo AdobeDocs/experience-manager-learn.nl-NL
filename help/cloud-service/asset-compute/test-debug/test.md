@@ -82,7 +82,7 @@ Deze testcase stelt de parameterized input (`params.json`) voor het inputdossier
 
 1. Voeg het verwachte [ vertoningsdossier ](./assets/test/success-parameterized/rendition.png) aan dit testgeval toe en noem het `rendition.png`. Dit bestand vertegenwoordigt de verwachte uitvoer van de worker voor de opgegeven invoer `file.jpg` .
 1. Voer vanaf de opdrachtregel de tests van de projectbasis uit door `aio app test` uit te voeren
-   + Verzeker {de Desktop van 0} Docker ](../set-up/development-environment.md#docker) en het steunen van de beelden van Docker geïnstalleerd en begonnen zijn[
+   + Verzeker {de Desktop van 0} Docker [&#128279;](../set-up/development-environment.md#docker) en het steunen van de beelden van Docker geïnstalleerd en begonnen zijn
    + Beëindig alle actieve instanties van het Hulpmiddel voor Ontwikkeling
 
 ![ Test - Succes ](./assets/test/success-parameterized/result.png)
@@ -107,7 +107,7 @@ Met deze test wordt getest of de worker de juiste fout genereert wanneer de para
 
 1. Aangezien er geen uitvoering moet worden gegenereerd tijdens een foutieve uitvoering, is er geen `rendition.<extension>` -bestand nodig.
 1. Voer de opdracht `aio app test` uit om de testsuite uit te voeren vanuit de hoofdmap van het project
-   + Verzeker {de Desktop van 0} Docker ](../set-up/development-environment.md#docker) en het steunen van de beelden van Docker geïnstalleerd en begonnen zijn[
+   + Verzeker {de Desktop van 0} Docker [&#128279;](../set-up/development-environment.md#docker) en het steunen van de beelden van Docker geïnstalleerd en begonnen zijn
    + Beëindig alle actieve instanties van het Hulpmiddel voor Ontwikkeling
 
 ![ Test - het contrast van de Fout ](./assets/test/error-contrast/result.png)

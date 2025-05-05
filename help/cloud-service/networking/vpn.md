@@ -40,7 +40,7 @@ Een programma van Cloud Manager kan het type van a __enige__ netwerkinfrastructu
 
 >[!MORELIKETHIS]
 >
-> Lees de documentatie over](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) de geavanceerde netwerkconfiguratie van AEM as a Cloud Service [voor meer informatie over Virtual Private Network.
+> Lees de documentatie over[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) de geavanceerde netwerkconfiguratie van AEM as a Cloud Service voor meer informatie over Virtual Private Network.
 
 ## Vereisten
 
@@ -261,7 +261,7 @@ Met VPN gecreeerd, kunt u het nu vormen gebruikend Cloud Manager APIs zoals hier
    Als uw plaatsing van AEM __slechts__ verbindingen HTTP/HTTPS aan externe dienst vereist, verlaat de `portForwards` serie leeg, aangezien deze regels slechts voor niet-HTTP/HTTPS verzoeken worden vereist.
 
 
-2. Voor elk milieu, bevestig VPN die regels verplettert in feite gebruikend de Cloud Manager API [ getEnvironmentAdvancedNetworkingConfiguration ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting.
+&#x200B;2. Voor elk milieu, bevestig VPN die regels verplettert in feite gebruikend de Cloud Manager API [ getEnvironmentAdvancedNetworkingConfiguration ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting.
 
    __getEnvironmentAdvancedNetworkingConfiguration HTTP- verzoek__
 
@@ -273,9 +273,9 @@ Met VPN gecreeerd, kunt u het nu vormen gebruikend Cloud Manager APIs zoals hier
        -H 'Content-Type: application/json'
    ```
 
-3. De virtuele Privé de volmachtsconfiguraties van het Netwerk kunnen worden bijgewerkt gebruikend Cloud Manager API [ enableEnvironmentAdvancedNetworkingConfiguration ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting. Vergeet niet dat `enableEnvironmentAdvancedNetworkingConfiguration` een `PUT` -bewerking is. Alle regels moeten daarom bij elke aanroep van deze bewerking worden opgegeven.
+&#x200B;3. De virtuele Privé de volmachtsconfiguraties van het Netwerk kunnen worden bijgewerkt gebruikend Cloud Manager API [ enableEnvironmentAdvancedNetworkingConfiguration ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting. Vergeet niet dat `enableEnvironmentAdvancedNetworkingConfiguration` een `PUT` -bewerking is. Alle regels moeten daarom bij elke aanroep van deze bewerking worden opgegeven.
 
-4. Nu kunt u de configuratie van het Virtual Private Network voor uitgaand verkeer gebruiken in uw aangepaste AEM code en configuratie.
+&#x200B;4. Nu kunt u de configuratie van het Virtual Private Network voor uitgaand verkeer gebruiken in uw aangepaste AEM code en configuratie.
 
 ## Verbinding maken met externe services via het Virtual Private Network
 

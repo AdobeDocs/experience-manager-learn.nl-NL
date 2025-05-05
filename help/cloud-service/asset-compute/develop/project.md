@@ -51,7 +51,7 @@ Gebruik [ Adobe I/O CLI Asset compute stop-in ](../set-up/development-environmen
 
 Voor het hulpprogramma voor ontwikkelaars is een bestand met de naam `console.json` vereist dat de gegevens bevat die nodig zijn om verbinding te maken met Adobe I/O. Dit bestand wordt gedownload vanaf de Adobe I/O-console.
 
-1. Open het Adobe I/O ](https://console.adobe.io) project van de Asset compute arbeider [
+1. Open het Adobe I/O [&#128279;](https://console.adobe.io) project van de Asset compute arbeider 
 1. Selecteer de projectwerkruimte waar u de `console.json` -referenties voor wilt downloaden. Selecteer in dit geval `Development`
 1. Ga naar de wortel van het project van de Adobe I/O en tik __Download allen__ in de hoger-juiste hoek.
 1. Een bestand wordt gedownload als een `.json` -bestand dat vooraf is ingesteld met het project en de werkruimte, bijvoorbeeld: `wkndAemAssetCompute-81368-Development.json`

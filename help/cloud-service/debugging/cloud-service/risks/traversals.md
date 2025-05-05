@@ -108,7 +108,7 @@ Het verminderen van traversale waarschuwingen kan worden aangepakt gebruikend dr
 
 ## 1. Analyseren{#analyze}
 
-Eerst identificeert u welke AEM Publish-services waarschuwingen over de hele wereld tonen. Om dit, van Cloud Manager te doen, `aemerror` logboeken van de diensten van Publish van 0} downloaden ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager) {target="_blank"} van alle milieu&#39;s (Dev, Stadium en Productie) voor het verleden __drie dagen__.[
+Eerst identificeert u welke AEM Publish-services waarschuwingen over de hele wereld tonen. Om dit, van Cloud Manager te doen, `aemerror` logboeken van de diensten van Publish van 0&rbrace; downloaden [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"}  van alle milieu&#39;s (Dev, Stadium en Productie) voor het verleden __drie dagen__.
 
 ![ Logboeken van AEM as a Cloud Service van de Download ](./assets/traversals/download-logs.jpg)
 
@@ -159,14 +159,14 @@ Zodra de beledigende vragen en hun het aanhalen code worden ontdekt, moeten aanp
 
 __verander de vraag__ om nieuwe vraagbeperkingen toe te voegen die aan bestaande indexbeperkingen oplossen. Wijzig indien mogelijk de query liever in indexen.
 
-+ [ leer hoe te om vraagprestaties ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning) te stemmen {target="_blank"}
++ [ leer hoe te om vraagprestaties ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"} te stemmen 
 
 ### De index aanpassen
 
 __Verandering (of creeer) een AEM index__ dusdanig dat de bestaande vraagbeperkingen aan de indexupdates oplosbaar zijn.
 
-+ [ leren hoe te om bestaande indexen ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning) te stemmen {target="_blank"}
-+ [ leren hoe te om indexen ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#create-a-new-index) tot stand te brengen {target="_blank"}
++ [ leren hoe te om bestaande indexen ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"} te stemmen 
++ [ leren hoe te om indexen ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#create-a-new-index){target="_blank"} tot stand te brengen 
 
 ## 3. Verifiëren{#verify}
 
@@ -174,9 +174,9 @@ Aanpassingen aan de query&#39;s, indexen of beide moeten worden geverifieerd om 
 
 ![ verklaart vraag ](./assets/traversals/verify.gif)
 
-Als slechts [ aanpassingen aan de vraag ](#adjust-the-query) worden gemaakt, kan de vraag direct op AEM as a Cloud Service via Developer Console worden getest [ verklaart Vraag ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) {target="_blank"}. Verklaar de looppas van de Vraag tegen de AEM dienst van de Auteur, echter aangezien de indexdefinities het zelfde over de Diensten van de Auteur en van Publish zijn, volstaat het bevestigen van vragen tegen de dienst van de AEMAuteur.
+Als slechts [ aanpassingen aan de vraag ](#adjust-the-query) worden gemaakt, kan de vraag direct op AEM as a Cloud Service via Developer Console worden getest [ verklaart Vraag ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target="_blank"} . Verklaar de looppas van de Vraag tegen de AEM dienst van de Auteur, echter aangezien de indexdefinities het zelfde over de Diensten van de Auteur en van Publish zijn, volstaat het bevestigen van vragen tegen de dienst van de AEMAuteur.
 
-Als [ aanpassingen aan de index ](#adjust-the-index) worden gemaakt, moet de index aan AEM as a Cloud Service worden opgesteld. Met de opgestelde indexaanpassingen, verklaart Developer Console [ Vraag ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) {target="_blank"} kan worden gebruikt om de vraag verder uit te voeren en te stemmen.
+Als [ aanpassingen aan de index ](#adjust-the-index) worden gemaakt, moet de index aan AEM as a Cloud Service worden opgesteld. Met de opgestelde indexaanpassingen, verklaart Developer Console [ Vraag ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target="_blank"}  kan worden gebruikt om de vraag verder uit te voeren en te stemmen.
 
 Uiteindelijk, worden alle veranderingen (vraag en code) geëngageerd aan Git en opgesteld aan AEM as a Cloud Service gebruikend Cloud Manager. Als u de code eenmaal hebt geïmplementeerd, test u de codepaden die aan de oorspronkelijke traversal-waarschuwingen zijn gekoppeld, opnieuw en controleert u of traversal-waarschuwingen niet meer voorkomen in het `aemerror` -logbestand.
 

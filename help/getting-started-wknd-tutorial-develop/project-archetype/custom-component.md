@@ -82,7 +82,7 @@ De implementatie van de component Byline bevat een dialoogvenster waarin de inho
 
 Maak eerst de knooppuntstructuur van de component Byline en definieer een dialoogvenster. Dit vertegenwoordigt de Component in AEM en bepaalt impliciet het middeltype van de component door zijn plaats in JCR.
 
-In het dialoogvenster wordt de interface weergegeven waarmee auteurs van inhoud de interface kunnen bieden. Voor deze implementatie, wordt de component van het Beeld van de Component van de Kern van AEM WCM **** gebruikt om het auteursrecht en het teruggeven van het beeld van de Band te behandelen, zodat moet het als 2} worden geplaatst van deze component.`sling:resourceSuperType`
+In het dialoogvenster wordt de interface weergegeven waarmee auteurs van inhoud de interface kunnen bieden. Voor deze implementatie, wordt de component van het Beeld van de Component van de Kern van AEM WCM **&#x200B;**&#x200B;gebruikt om het auteursrecht en het teruggeven van het beeld van de Band te behandelen, zodat moet het als 2&rbrace; worden geplaatst van deze component.`sling:resourceSuperType`
 
 ### Componentdefinitie maken {#create-component-definition}
 
@@ -610,7 +610,7 @@ public class BylineImpl implements Byline {
 
 #### Het probleem van de &quot;afbeelding&quot; aanpakken {#tackling-the-image-problem}
 
-Het controleren van de naam en bezettingsvoorwaarden zijn triviaal en Apache Commons Lang3 verstrekt de handige ](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html) klasse 0} StringUtils. [ Nochtans, is het onduidelijk hoe de **aanwezigheid van het Beeld** kan worden bevestigd aangezien de component van het Beeld van de Componenten van de Kern aan oppervlakte het beeld wordt gebruikt.
+Het controleren van de naam en bezettingsvoorwaarden zijn triviaal en Apache Commons Lang3 verstrekt de handige [&#128279;](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html) klasse 0&rbrace; StringUtils.  Nochtans, is het onduidelijk hoe de **aanwezigheid van het Beeld** kan worden bevestigd aangezien de component van het Beeld van de Componenten van de Kern aan oppervlakte het beeld wordt gebruikt.
 
 Er zijn twee manieren om dit aan te pakken:
 

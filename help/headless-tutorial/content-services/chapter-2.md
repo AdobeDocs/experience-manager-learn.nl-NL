@@ -30,7 +30,7 @@ In dit hoofdstuk wordt beschreven hoe u modellen van inhoudsfragmenten kunt insc
 
 De Modellen van het Fragment van de inhoud **moeten** worden toegelaten via **[AEM [!UICONTROL Configuration Browser] ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)**.
 
-Als de Modellen van het Fragment van de Inhoud **** niet {voor een configuratie worden toegelaten, **[!UICONTROL Create]>[!UICONTROL Content Fragment]** knoop zal niet voor de relevante AEM configuratie verschijnen.
+Als de Modellen van het Fragment van de Inhoud **&#x200B;**&#x200B;niet &lbrace;voor een configuratie worden toegelaten, **[!UICONTROL Create]>[!UICONTROL Content Fragment]** knoop zal niet voor de relevante AEM configuratie verschijnen.
 
 >[!NOTE]
 >

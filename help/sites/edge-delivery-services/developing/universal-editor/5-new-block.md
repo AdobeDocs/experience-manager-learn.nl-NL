@@ -75,7 +75,7 @@ Het blok JSON definieert drie belangrijke aspecten van het blok:
 
 Maak een nieuw bestand bij `/blocks/teaser/_teaser.json` met de volgende initiële structuur, in de exacte volgorde. Als de toetsen niet op de juiste wijze zijn, kunnen ze niet goed worden gemaakt.
 
-[!BADGE  /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```json
 {
@@ -143,7 +143,7 @@ In het onderstaande voorbeeld:
 - `textContent` is een groepsnaam waarmee velden worden gecategoriseerd. Het zou semantisch moeten zijn, maar kan iets uniek voor dit blok zijn. Hiermee wordt de Universal Editor geïnformeerd alle velden met dit voorvoegsel in hetzelfde `<div>` -element in de uiteindelijke HTML-uitvoer te renderen.
 - Het samenvouwen van velden wordt ook toegepast binnen de `textContent` -groep voor de oproep tot actie (CTA). CTA wordt gecreeerd als a `<a>` via [ typegevolgtrekking ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference). Het veld `cta` wordt gebruikt om het kenmerk `href` van het element `<a>` in te stellen en het veld `ctaText` bevat de tekstinhoud voor de koppeling binnen de tags `<a ...>` .
 
-[!BADGE  /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```json
 {
@@ -227,7 +227,7 @@ Het bepalen van elk gebied als standalone gebied in het blokmodel zonder [ gebie
 
 Bijvoorbeeld, kon het teaser model **zonder** gebiedsondergang of element groepering als volgt worden bepaald:
 
-[!BADGE  /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```json
 {
@@ -322,12 +322,12 @@ De blokdefinitie registreert het blok in Universele Redacteur. Hier volgt een ui
 | `definition.plugins.xwalk.page.resourceType` | Bepaalt het het Verschuiven middeltype voor het teruggeven van de component in de Universele Redacteur. Gebruik altijd een `core/franklin/components/block/v#/block` resource type. |
 | `definition.plugins.xwalk.page.template.name` | De naam van het blok. De naam moet lager zijn en worden afgebroken, zodat deze overeenkomt met de mapnaam van het blok. Deze waarde wordt ook gebruikt om het exemplaar van het blok in de Universele Redacteur te etiketteren. |
 | `definition.plugins.xwalk.page.template.model` | Koppelt deze definitie aan de bijbehorende `model` -definitie, die de ontwerpvelden bepaalt die voor het blok in de Universal Editor worden weergegeven. De waarde hier moet overeenkomen met een `model.id` -waarde. |
-| `definition.plugins.xwalk.page.template.classes` | Optionele eigenschap, waarvan de waarde wordt toegevoegd aan het kenmerk `class` van het blok HTML-element. Dit maakt varianten van hetzelfde blok mogelijk. De `classes` waarde kan worden gemaakt editable door [ toevoegend een klassengebied ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options) aan het 3} model van het blok ](#block-model).[ |
+| `definition.plugins.xwalk.page.template.classes` | Optionele eigenschap, waarvan de waarde wordt toegevoegd aan het kenmerk `class` van het blok HTML-element. Dit maakt varianten van hetzelfde blok mogelijk. De `classes` waarde kan worden gemaakt editable door [ toevoegend een klassengebied ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options) aan het 3&rbrace; model van het blok [&#128279;](#block-model). |
 
 
 Hier is een voorbeeld van JSON voor de blokdefinitie:
 
-[!BADGE  /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```json
 {
@@ -365,7 +365,7 @@ Deze structuur zorgt ervoor dat het blok in de Universele Redacteur met de juist
 
 De serie van het blok `filters` bepaalt, voor [ containerblokken ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container), welke andere blokken aan de container kunnen worden toegevoegd. Filters definiëren een lijst met blok-id&#39;s (`model.id`) die aan de container kunnen worden toegevoegd.
 
-[!BADGE  /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```json
 {
@@ -381,7 +381,7 @@ De lasercomponent is geen a [ containerblok ](https://experienceleague.adobe.com
 
 In door Adobe verschafte blokken, zoals het sectieblok, worden filters opgeslagen in de map `models` van het project. Als u de instellingen wilt aanpassen, zoekt u het JSON-bestand voor het door Adobe opgegeven blok (bijvoorbeeld `/models/_section.json` ) en voegt u de id van het gummetje ( `teaser` ) toe aan de lijst met filters. De configuratie signaleert de Universele Redacteur dat de lasercomponent aan het blok van de sectiecontainer kan worden toegevoegd.
 
-[!BADGE  /models/_section.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /models/_section.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```json
 {
@@ -422,7 +422,7 @@ $ npm run lint:js
 
 Nadat de JSON-blokbestanden (bijvoorbeeld `blocks/teaser/_teaser.json` , `models/_section.json` ) zijn geconfigureerd, worden deze automatisch gecompileerd in de `component-models.json` -, `component-definitions.json` - en `component-filters.json` -bestanden van het project. Deze compilatie wordt automatisch behandeld door a [ Echtgenoot ](https://typicode.github.io/husky/) precommit haak inbegrepen in het [ AEM Boilerplate XWalk projectmalplaatje ](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
 
-Bouwt kan ook manueel of programmatically worden teweeggebracht gebruikend de manuscripten JSON ](./3-local-development-environment.md#build-json-fragments) NPM van het project [ bouwen.
+Bouwt kan ook manueel of programmatically worden teweeggebracht gebruikend de manuscripten JSON [&#128279;](./3-local-development-environment.md#build-json-fragments) NPM van het project  bouwen.
 
 ## Het blok JSON implementeren
 

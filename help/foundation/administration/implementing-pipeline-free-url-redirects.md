@@ -136,7 +136,7 @@ RewriteRule ^(.*)$ ${<MAPALIAS>:$1|/} [L,R=301]
 
 ### Voorbeelden van configuraties
 
-Laten wij de configuraties van Dispatcher voor elk van de hierboven vermelde opties van het omleidingsbeheer URL [ ](#manage-redirects) herzien.
+Laten wij de configuraties van Dispatcher voor elk van de hierboven vermelde opties van het omleidingsbeheer URL [&#128279;](#manage-redirects) herzien.
 
 >[!BEGINTABS]
 
@@ -144,7 +144,7 @@ Laten wij de configuraties van Dispatcher voor elk van de hierboven vermelde opt
 
 Wanneer de URL-omleidingen worden beheerd als sleutelwaardeparen in een tekstbestand en worden geüpload naar de DAM, zijn de configuraties als volgt.
 
-[!BADGE  dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```yaml
 maps:
@@ -152,7 +152,7 @@ maps:
   path: /content/dam/wknd/redirects/skicampaign.txt
 ```
 
-[!BADGE  dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```
 ...
@@ -171,7 +171,7 @@ RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 
 Wanneer de URL-omleidingen worden beheerd met de ACS-opdrachten - Omleiding Kaartbeheer, zijn de configuraties als volgt.
 
-[!BADGE  dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```yaml
 maps:
@@ -179,7 +179,7 @@ maps:
   path: /etc/acs-commons/redirect-maps/skicampaign/jcr:content.redirectmap.txt
 ```
 
-[!BADGE  dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```
 ...
@@ -194,11 +194,11 @@ RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 ...
 ```
 
->[!TAB  ACS Commons - richt Manager ] opnieuw
+>[!TAB ACS Commons - richt Manager  opnieuw]
 
 Wanneer de omleiding URL gebruikend ACS Commons - de Manager van de Omleiding wordt beheerd, zijn de configuraties als volgt.
 
-[!BADGE  dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```yaml
 maps:
@@ -206,7 +206,7 @@ maps:
   path: /conf/wknd/settings/redirects.txt
 ```
 
-[!BADGE  dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```
 ...
@@ -229,7 +229,7 @@ RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 >
 >De *pijpleiding-vrije* termijn wordt gebruikt om te benadrukken dat de configuraties *slechts eenmaal* worden opgesteld en het marketing team kan URL omleiden door het tekstdossier bij te werken.
 
-Om de configuraties op te stellen, gebruik de [ volledig-stapel ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) of [ 3} pijpleiding van de Webrij config {in [ Cloud Manager ](https://my.cloudmanager.adobe.com/).](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines)
+Om de configuraties op te stellen, gebruik de [ volledig-stapel ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) of [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) 3&rbrace; pijpleiding van de Webrij config &lbrace;in [ Cloud Manager ](https://my.cloudmanager.adobe.com/).
 
 ![ Opname via volledig-stapelpijpleiding ](./assets/pipeline-free-redirects/deploy-full-stack-pipeline.png)
 

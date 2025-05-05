@@ -25,7 +25,7 @@ Leer hoe u AEM instelt en gebruikt als cloudservice voor het ondersteunen van pa
 
 ## Overzicht van oplossing
 
-+ Identificeer de variantsleutel en het aantal waarden het kan hebben. In ons voorbeeld variëren we per staat in de VS, dus het maximale aantal is 50. Dit is klein genoeg om geen problemen met de variantgrenzen bij CDN te veroorzaken. [ sectie van de de variantbeperkingen van het Overzicht {](#variant-limitations).
++ Identificeer de variantsleutel en het aantal waarden het kan hebben. In ons voorbeeld variëren we per staat in de VS, dus het maximale aantal is 50. Dit is klein genoeg om geen problemen met de variantgrenzen bij CDN te veroorzaken. [ sectie van de de variantbeperkingen van het Overzicht &lbrace;](#variant-limitations).
 
 + AEM code moet het koekje __&quot;x-aem-variant&quot;__ aan de aangewezen staat van de bezoeker (b.v. `Set-Cookie: x-aem-variant=NY` ) op de initiële HTTP-aanvraag die overeenkomt met de HTTP-respons.
 

@@ -30,7 +30,7 @@ De CDN-logbestanden zijn beschikbaar in de JSON-indeling, die verschillende veld
 
 | Status van cache </br> Mogelijke waarde | Beschrijving |
 |------------------------------------|:-----------------------------------------------------:|
-| HIT | Het gevraagde gegeven wordt gevonden _in het CDN geheime voorgeheugen en vereist het maken van geen 1} verzoek van de haal {aan de server van AEM._ |
+| HIT | Het gevraagde gegeven wordt gevonden _in het CDN geheime voorgeheugen en vereist het maken van geen 1&rbrace; verzoek van de haal &lbrace;aan de server van AEM._ |
 | MISS | Het gevraagde gegeven wordt _gevonden niet in het CDN geheime voorgeheugen en moet_ van de server van AEM worden gevraagd. |
 | PASS | Het gevraagde gegeven is _uitdrukkelijk plaatste om niet_ in het voorgeheugen onder te brengen en altijd van de server van AEM worden teruggewonnen. |
 
@@ -81,7 +81,7 @@ Om de belangrijkste details te identificeren, gebruiken wij het [ AEMCS-CDN-Logb
 
    1. Kopieer het gedownloade CDN-logbestand of de gedownloade CDN-logbestanden bijvoorbeeld naar de map met omgevingsspecifieke logbestanden `ELK/logs/stage` .
 
-   1. Open het **dashboard van de Verhouding van het Bezit van het Geheime voorgeheugen CDN {door het top-linker hoek _Menu van de Navigatie > Analyses > Dashboard > CDN het Verhouding van het Geheime voorgeheugen CDN_ te klikken.**
+   1. Open het **dashboard van de Verhouding van het Bezit van het Geheime voorgeheugen CDN &lbrace;door het top-linker hoek _Menu van de Navigatie > Analyses > Dashboard > CDN het Verhouding van het Geheime voorgeheugen CDN_ te klikken.**
 
       ![ CDN de Verhouding van de Actief van het Geheime voorgeheugen - het Dashboard van Kibana ](assets/cdn-logs-analysis/cdn-cache-hit-ratio-dashboard.png){width="500" zoomable="yes"}
 
@@ -89,7 +89,7 @@ Om de belangrijkste details te identificeren, gebruiken wij het [ AEMCS-CDN-Logb
 
       ![ Waaier van de Tijd - het Dashboard van Kibana ](assets/cdn-logs-analysis/time-range.png){width="500" zoomable="yes"}
 
-   1. Het **dashboard van de Verhouding van het Actief van het Geheime voorgeheugen 0} CDN is duidelijk.**
+   1. Het **dashboard van de Verhouding van het Actief van het Geheime voorgeheugen 0&rbrace; CDN is duidelijk.**
 
    1. De _Totale sectie van de Analyse van het Verzoek_ toont de volgende details:
       - Cacheverhoudingen per cachetype
@@ -186,7 +186,7 @@ Voer vervolgens de Jupyter-laptop in Adobe Experience Platform uit door de volge
 
    ![ Update van de Waarde van het Dossier van het Logboek van het Notitieboekje ](assets/cdn-logs-analysis/notebook-run-cell.png){width="500" zoomable="yes"}
 
-1. Na het in werking stellen van het **Resultaat van de Analyse van de Vertoning voor Totaal, HTML, JS/CSS, en de 1} codecel van de Verzoeken van het Beeld, toont de output het percentage van de geheim voorgeheugenslag, bar, en cirkelgrafieken.**
+1. Na het in werking stellen van het **Resultaat van de Analyse van de Vertoning voor Totaal, HTML, JS/CSS, en de 1&rbrace; codecel van de Verzoeken van het Beeld, toont de output het percentage van de geheim voorgeheugenslag, bar, en cirkelgrafieken.**
 
    ![ Update van de Waarde van het Dossier van het Logboek van het Notitieboekje ](assets/cdn-logs-analysis/output-cache-hit-ratio.png){width="500" zoomable="yes"}
 
@@ -202,4 +202,4 @@ Nadat u de CDN-logboeken hebt geanalyseerd, kunt u de CDN-cacheconfiguratie opti
 
 Voor meer informatie, zie [ Optimize CDN de Configuratie van het Geheime voorgeheugen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching).
 
-Het project van AEM WKND heeft een verwijzingsCDN configuratie, voor meer informatie, zie ](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L137-L190) Configuratie 0} CDN van het `wknd.vhost` dossier.[
+Het project van AEM WKND heeft een verwijzingsCDN configuratie, voor meer informatie, zie [&#128279;](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L137-L190) Configuratie 0&rbrace; CDN van het `wknd.vhost` dossier.

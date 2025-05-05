@@ -98,7 +98,7 @@ Analyseer de resultaten van de `publish-auth-requests` regel door de logboeken A
 
    - Als u het tijdsinterval wilt wijzigen, klikt u op het kalenderpictogram in de rechterbovenhoek en selecteert u het gewenste tijdinterval.
 
-     {het Interval van de Tijd van het Hulpmiddel 0} ELK ](./assets/elk-tool-time-interval.png)![
+     {het Interval van de Tijd van het Hulpmiddel 0} ELK ![&#128279;](./assets/elk-tool-time-interval.png)
 
 - Herzie de bijgewerkte versie van het dashboard **geanalyseerde verzoeken**, **Vervroegingen met vlag**, en **Gegrafeerde verzoeken details** panelen. Voor passende CDN logboekingangen, zou het de waarden van de cliëntIP van elke ingang (cli_ip), gastheer, url, actie (waf_action), en regel-naam (waf_match) moeten tonen.
 
@@ -163,7 +163,7 @@ Nochtans, zou dit keer u de **Geblokkeerde verzoeken** en overeenkomstige waarde
 
 Laat **aanvallen van Dos** verhinderen door verzoeken van een IP adres te blokkeren die 100 verzoeken per seconde maken, die het veroorzaken om voor 5 minuten worden geblokkeerd.
 
-- Voeg de volgende [ regel van de de filterfilter van de tariefgrens ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#ratelimit-structure) in het 2} dossier van het WKND project {toe.`/config/cdn.yaml`
+- Voeg de volgende [ regel van de de filterfilter van de tariefgrens ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#ratelimit-structure) in het 2&rbrace; dossier van het WKND project &lbrace;toe.`/config/cdn.yaml`
 
 ```yaml
 kind: CDN
@@ -341,9 +341,9 @@ In de bovengenoemde _analyse_ secties, leerde u hoe te om de resultaten van spec
 - Bovenste getriggerde verkeersfilter
 - De hoogste 100 aanvallers door cliëntIP, land, en gebruiker-agent
 
-](./assets/elk-tool-dashboard-comprehensive-analysis-1.png) Uitgebreide Analyse van het Dashboard van het Hulpmiddel 0} ELK {![
+![&#128279;](./assets/elk-tool-dashboard-comprehensive-analysis-1.png) Uitgebreide Analyse van het Dashboard van het Hulpmiddel 0&rbrace; ELK &lbrace;
 
-](./assets/elk-tool-dashboard-comprehensive-analysis-2.png) Uitgebreide Analyse van het Dashboard van het Hulpmiddel 0} ELK {![
+![&#128279;](./assets/elk-tool-dashboard-comprehensive-analysis-2.png) Uitgebreide Analyse van het Dashboard van het Hulpmiddel 0&rbrace; ELK &lbrace;
 
 
 ## Volgende stap

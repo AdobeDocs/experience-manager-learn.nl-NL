@@ -182,7 +182,7 @@ function getColorName(colorsFamily, color) {
 
 Als de code van de worker is voltooid, kan deze worden uitgevoerd met het lokale Asset Compute Development Tool.
 
-Omdat ons project van Asset Compute twee arbeiders (de vorige [ cirkelvertoning ](../develop/worker.md) en deze `metadata-colors` worker) bevat, maakt de ](../develop/development-tool.md) profieldefinitie van het Hulpmiddel van de Ontwikkeling van Asset Compute een lijst van uitvoeringsprofielen voor beide arbeiders. [ De tweede profieldefinitie verwijst naar de nieuwe `metadata-colors` worker.
+Omdat ons project van Asset Compute twee arbeiders (de vorige [ cirkelvertoning ](../develop/worker.md) en deze `metadata-colors` worker) bevat, maakt de [&#128279;](../develop/development-tool.md) profieldefinitie van het Hulpmiddel van de Ontwikkeling van Asset Compute een lijst van uitvoeringsprofielen voor beide arbeiders.  De tweede profieldefinitie verwijst naar de nieuwe `metadata-colors` worker.
 
 ![ de meta-gegevensvertoning van XML ](./assets/metadata/metadata-rendition.png)
 
@@ -307,7 +307,7 @@ Als u de metagegevens van kleuren wilt bekijken, wijst u twee nieuwe velden in h
 1. Wanneer de verwerking volledig is, selecteer de activa, en tik __eigenschappen__ in de hoogste actiebar om zijn meta-gegevens te tonen
 1. Herzie `Colors Family` en `Colors` [ meta-gegevensgebieden ](#metadata-schema) voor de meta-gegevens die terug van de de meta-gegevensarbeider van douaneAsset Compute worden geschreven.
 
-Met de kleurenmeta-gegevens die aan de meta-gegevens van de activa worden geschreven, op het `[dam:Asset]/jcr:content/metadata` middel, wordt deze meta-gegevens geïndexeerd verhoogde activa ontdekken-capaciteit gebruikend deze termijnen via onderzoek, en zij kunnen zelfs aan het binaire getal van de activa worden geschreven als toen __DAM het 2} werkschema van Meta-gegevens Writeback {op het wordt aangehaald.__
+Met de kleurenmeta-gegevens die aan de meta-gegevens van de activa worden geschreven, op het `[dam:Asset]/jcr:content/metadata` middel, wordt deze meta-gegevens geïndexeerd verhoogde activa ontdekken-capaciteit gebruikend deze termijnen via onderzoek, en zij kunnen zelfs aan het binaire getal van de activa worden geschreven als toen __DAM het 2&rbrace; werkschema van Meta-gegevens Writeback &lbrace;op het wordt aangehaald.__
 
 ### Metagegevensuitvoering in AEM Assets
 

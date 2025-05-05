@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Eenheid testen {#unit-testing}
 
-Dit leerprogramma behandelt de implementatie van een eenheidstest die het gedrag van het het Schuiven Model van de component van de Byline bevestigt, dat in het ](./custom-component.md) leerprogramma van de Component van de 0} Douane {wordt gecreeerd.[
+Dit leerprogramma behandelt de implementatie van een eenheidstest die het gedrag van het het Schuiven Model van de component van de Byline bevestigt, dat in het [&#128279;](./custom-component.md) leerprogramma van de Component van de 0&rbrace; Douane &lbrace;wordt gecreeerd.
 
 ## Vereisten {#prerequisites}
 
@@ -69,7 +69,7 @@ U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-w
 
 ## Achtergrond {#unit-testing-background}
 
-In dit leerprogramma, zullen wij onderzoeken hoe te om [ Tests van de Eenheid ](https://en.wikipedia.org/wiki/Unit_testing) voor 2} Sling Model van onze component Byline ](https://sling.apache.org/documentation/bundles/models.html) te schrijven (gecreeerd in [ Creërend een Component van douaneAEM ](custom-component.md)). [ Eenheidstests zijn in Java™ geschreven ontwikkeltijdstests die het verwachte gedrag van Java™-code controleren. Elke eenheidstest is doorgaans klein en valideert de uitvoer van een methode (of werkeenheden) aan de hand van de verwachte resultaten.
+In dit leerprogramma, zullen wij onderzoeken hoe te om [ Tests van de Eenheid ](https://en.wikipedia.org/wiki/Unit_testing) voor 2&rbrace; Sling Model van onze component Byline [&#128279;](https://sling.apache.org/documentation/bundles/models.html) te schrijven (gecreeerd in [ Creërend een Component van douaneAEM ](custom-component.md)).  Eenheidstests zijn in Java™ geschreven ontwikkeltijdstests die het verwachte gedrag van Java™-code controleren. Elke eenheidstest is doorgaans klein en valideert de uitvoer van een methode (of werkeenheden) aan de hand van de verwachte resultaten.
 
 We gebruiken best practices van AEM en maken gebruik van:
 
@@ -92,7 +92,7 @@ De eerste stap is Geweven gebiedsdelen te inspecteren om het schrijven en het ru
 1. Apache Sling Mocks
 1. AEM Mocks Test Framework (door io.wcm)
 
-**JUnit5**, **Mockito, en **AEM Mocks** testgebiedsdelen worden automatisch toegevoegd aan het project tijdens opstelling gebruikend [ AEM Maven archetype ](project-setup.md).
+**JUnit5**, **Mockito, en &#x200B;** AEM Mocks** testgebiedsdelen worden automatisch toegevoegd aan het project tijdens opstelling gebruikend [ AEM Maven archetype ](project-setup.md).
 
 1. Om deze gebiedsdelen te bekijken, open POM van de Bovenliggende Reactor in **aem-guides-wknd/pom.xml**, navigeer aan `<dependencies>..</dependencies>` en bekijk de gebiedsdelen voor JUnit, Mockito, Apache Sling Mocks, en de Tests van het Mock van AEM door io.wcm onder `<!-- Testing -->`.
 1. Zorg ervoor dat `io.wcm.testing.aem-mock.junit5` aan **4.1.0** wordt geplaatst:
@@ -219,9 +219,9 @@ TDD in de context van AEM vereist een expertiseniveau en kan het best worden toe
 
 De meeste code die voor AEM wordt geschreven, is gebaseerd op JCR-, Sling- of AEM-API&#39;s, waarvoor op hun beurt de context van een AEM die wordt uitgevoerd, correct moet worden uitgevoerd.
 
-Aangezien eenheidstests bij bouwstijl, buiten de context van een lopende instantie van AEM worden uitgevoerd, is er geen dergelijke context. Om dit te vergemakkelijken, ](https://wcm.io/testing/aem-mock/usage.html) van AEM Mocks van 0} wcm.io creeert mock context die deze APIs __ toestaat dienst alsof zij in AEM lopen.[
+Aangezien eenheidstests bij bouwstijl, buiten de context van een lopende instantie van AEM worden uitgevoerd, is er geen dergelijke context. Om dit te vergemakkelijken, [&#128279;](https://wcm.io/testing/aem-mock/usage.html) van AEM Mocks van 0&rbrace; wcm.io creeert mock context die deze APIs __ toestaat dienst alsof zij in AEM lopen.
 
-1. Creeer een context van AEM gebruikend **wcm.io `AemContext` in** BylineImplTest.java **door het toe te voegen als uitbreiding JUnit die met `@ExtendWith` aan het {** dossier 6} wordt versierd BylineImplTest.java. **** De extensie zorgt voor alle vereiste initialisatie- en opschoningstaken. Maak een klassevariabele voor `AemContext` die voor alle testmethoden kan worden gebruikt.
+1. Creeer een context van AEM gebruikend **wcm.io `AemContext` in** BylineImplTest.java **door het toe te voegen als uitbreiding JUnit die met `@ExtendWith` aan het {** dossier 6} wordt versierd BylineImplTest.java. **&#x200B;**&#x200B;De extensie zorgt voor alle vereiste initialisatie- en opschoningstaken. Maak een klassevariabele voor `AemContext` die voor alle testmethoden kan worden gebruikt.
 
    ```java
    import org.junit.jupiter.api.extension.ExtendWith;
@@ -283,7 +283,7 @@ Aangezien eenheidstests bij bouwstijl, buiten de context van een lopende instant
 
 ## getName() testen {#testing-get-name}
 
-Nu wij een basismodelcontextopstelling hebben, schrijven wij onze eerste test voor **BylineImpl getName ()**. Deze test moet de methode **getName () verzekeren** keert de correct-geschreven naam terug die bij het 2} wordt opgeslagen naam van het middel &quot;**bezit.**
+Nu wij een basismodelcontextopstelling hebben, schrijven wij onze eerste test voor **BylineImpl getName ()**. Deze test moet de methode **getName () verzekeren** keert de correct-geschreven naam terug die bij het 2&rbrace; wordt opgeslagen naam van het middel &quot;**bezit.**
 
 1. Werk **testGetName** () methode in **BylineImplTest.java** als volgt bij:
 

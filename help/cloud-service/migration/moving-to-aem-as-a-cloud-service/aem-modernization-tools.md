@@ -53,7 +53,7 @@ De hulpmiddelen van de Modernisering van AEM zetten automatisch bestaande Pagina
    + Conversieregels definiëren met OSGi-configuratie
    + Paginastructuurconverter uitvoeren op bestaande pagina&#39;s
 
-+ ](https://opensource.adobe.com/aem-modernize-tools/pages/component/about.html) van de Omzetter van de Component van 0} werkt bestaande paginainhoud van statische malplaatje aan een in kaart gebracht editable malplaatje gebruikend lay-outcontainers bij[
++ [&#128279;](https://opensource.adobe.com/aem-modernize-tools/pages/component/about.html) van de Omzetter van de Component van 0&rbrace; werkt bestaande paginainhoud van statische malplaatje aan een in kaart gebracht editable malplaatje gebruikend lay-outcontainers bij
    + Conversieregels definiëren via definities van JCR-knooppunten/XML
    + Het gereedschap Componentconversie uitvoeren op bestaande pagina&#39;s
 

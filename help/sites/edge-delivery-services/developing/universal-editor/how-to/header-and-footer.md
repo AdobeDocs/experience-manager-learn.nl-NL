@@ -33,7 +33,7 @@ Hierdoor kan de koptekst onafhankelijk van pagina-inhoud worden beheerd en worde
 
 Het headerblok is verantwoordelijk voor het aanvragen van het AEM-paginafragment dat de koptekstinhoud bevat, en het renderen ervan in het `<header>` -element.
 
-[!BADGE  /blocks/header/header.js]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/header/header.js]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```javascript
 import { getMetadata } from '../../scripts/aem.js';
@@ -139,7 +139,7 @@ Hier volgt de HTML van de koptekstpagina nadat deze is geladen met behulp van de
 </header>
 ```
 
->[!TAB  hoe te om DOM ] te vinden
+>[!TAB hoe te om DOM  te vinden]
 
 Het element `<header>` van de pagina zoeken en inspecteren in de webbrowser-ontwikkelaarsgereedschappen.
 
@@ -154,7 +154,7 @@ Het `/blocks/header/header.js` dossier van het [ AEM Boilerplate XWalk projectma
 
 Hoewel het script van `header.js` vaak sterk is aangepast aan het ontwerp van een site, is het van essentieel belang dat de eerste regels in `decorate()` worden behouden, die het fragment van de koptekstpagina ophalen en verwerken.
 
-[!BADGE  /blocks/header/header.js]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/header/header.js]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```javascript
 export default async function decorate(block) {
@@ -183,7 +183,7 @@ Als u de afbeelding van het logo wilt koppelen aan de startpagina, werkt u het b
 
 De bijgewerkte code die de logoafbeelding met een koppeling naar de homepage van de site (`/`) verpakt, wordt hieronder weergegeven:
 
-[!BADGE  /blocks/header/header.js]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/header/header.js]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```javascript
 export default async function decorate(block) {
@@ -218,7 +218,7 @@ export default async function decorate(block) {
 
 Hieronder ziet u het origineel `header.js` dat op basis van de sjabloon is gegenereerd:
 
-[!BADGE  /blocks/header/header.js]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/header/header.js]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```javascript
 export default async function decorate(block) {
@@ -258,7 +258,7 @@ We voegen de aangepaste CSS onder aan `header.css` toe om de zelfstudie beter te
 
 Aangezien we onze nieuwe regels toevoegen na de oorspronkelijke set, laten we ze omlopen met een `header .header.block nav` CSS-kiezer om ervoor te zorgen dat ze voorrang hebben op de sjabloonregels.
 
-[!BADGE  /blocks/header/header.css]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/header/header.css]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```css
 /* /blocks/header/header.css */
@@ -385,7 +385,7 @@ Gebruik het kolomblok in de Voettekst om het effect met drie kolommen te maken.
 
 In de CSS hieronder wordt het voettekstblok met een lay-out van drie kolommen, een consistente spatiëring en een typografie gevuld. In de voettekstimplementatie wordt alleen de JavaScript gebruikt die door de sjabloon wordt verschaft.
 
-[!BADGE  /blocks/footer/footer.css]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; /blocks/footer/footer.css]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```css
 /* /blocks/footer/footer.css */

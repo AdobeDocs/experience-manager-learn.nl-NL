@@ -157,7 +157,7 @@ De waarden voor geheimen kunnen via [ Cloud Manager API ](https://developer.adob
 
 1. Login aan [ Adobe Cloud Manager ](https://my.cloudmanager.adobe.com).
 1. Selecteer het AEM-programma en -omgeving waarvoor u het geheim wilt instellen.
-1. In de mening van de Details van het Milieu, selecteer het **1} lusje van de Configuratie {.**
+1. In de mening van de Details van het Milieu, selecteer het **1&rbrace; lusje van de Configuratie &lbrace;.**
 1. Selecteer **toevoegen**.
 1. In het dialoogvenster Omgevingsconfiguratie:
    - Ga de geheime veranderlijke naam (b.v., `api_key`) in die in de configuratie OSGi van verwijzingen wordt voorzien.

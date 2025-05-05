@@ -597,7 +597,7 @@ en het verstrekken van vraagparameters:
 
 | Naam van query-parameter | Parameterwaarde voor query |
 |----------------------|-----------------------|
-| `resource` | Om het even welke weg JCR, of sub-weg, die de authentificatiemanager van SAML is luistert, zoals bepaald in [ Adobe Granite SAML 2.0 de Handler OSGi van de Authentificatie 1} `path` bezit.](#configure-saml-2-0-authentication-handler) |
+| `resource` | Om het even welke weg JCR, of sub-weg, die de authentificatiemanager van SAML is luistert, zoals bepaald in [ Adobe Granite SAML 2.0 de Handler OSGi van de Authentificatie 1&rbrace; `path` bezit.](#configure-saml-2-0-authentication-handler) |
 | `saml_request_path` | Het URL-pad waar de gebruiker naartoe moet gaan nadat de SAML-verificatie is voltooid. |
 
 Deze HTML-koppeling activeert bijvoorbeeld de SAML-aanmeldstroom en als de gebruiker hiermee slaagt, gaat u naar `/content/wknd/us/en/protected/page.html` . Deze vraagparameters kunnen programmatic worden geplaatst zoals nodig.
@@ -618,7 +618,7 @@ en het verstrekken van de formuliergegevens:
 
 | Naam van formuliergegevens | Waarde van formuliergegevens |
 |----------------------|-----------------------|
-| `resource` | Om het even welke weg JCR, of sub-weg, die de authentificatiemanager van SAML is luistert, zoals bepaald in [ Adobe Granite SAML 2.0 de Handler OSGi van de Authentificatie 1} `path` bezit.](#configure-saml-2-0-authentication-handler) |
+| `resource` | Om het even welke weg JCR, of sub-weg, die de authentificatiemanager van SAML is luistert, zoals bepaald in [ Adobe Granite SAML 2.0 de Handler OSGi van de Authentificatie 1&rbrace; `path` bezit.](#configure-saml-2-0-authentication-handler) |
 | `saml_request_path` | Het URL-pad waar de gebruiker naartoe moet gaan nadat de SAML-verificatie is voltooid. |
 
 

@@ -44,7 +44,7 @@ Terwijl de AEM UI-extensie wordt weergegeven in specifieke UI&#39;s van AEM, kun
 
 Adobe I/O Runtime-handelingen worden voornamelijk aangeroepen vanuit twee plaatsen in een AEM UI-extensie:
 
-1. De ](./extension-registration.md) `onClick(..)` manager van de de uitbreidingsregistratie [ uitbreiding
+1. De [&#128279;](./extension-registration.md) `onClick(..)` manager van de de uitbreidingsregistratie  uitbreiding
 1. Binnen a [ modal ](./modal.md)
 
 ### Vanaf uitbreidingsregistratie

@@ -47,7 +47,7 @@ Dit voorbeeld app baseert zich op [ basis-tutorial-solution.content.zip ](../mul
 
 >[!IMPORTANT]
 >
->De Component van het Web wordt ontworpen om met __AEM te verbinden publiceert__ milieu, nochtans kan het inhoud van de Auteur van AEM als de authentificatie in het 2} ](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/web-component/src/person.js#L11) dossier van de Component van het Web {wordt verstrekt.[`person.js`
+>De Component van het Web wordt ontworpen om met __AEM te verbinden publiceert__ milieu, nochtans kan het inhoud van de Auteur van AEM als de authentificatie in het 2&rbrace; [&#128279;](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/web-component/src/person.js#L11) dossier van de Component van het Web &lbrace;wordt verstrekt.`person.js`
 
 ## Hoe wordt het gebruikt
 

@@ -38,7 +38,7 @@ In dit hoofdstuk leert u hoe te:
 ## De GraphiQL Explorer gebruiken
 
 
-Het ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) hulpmiddel van de Ontdekkingsreiziger 0} GraphiQL laat ontwikkelaars toe om, en testvragen tegen inhoud op het huidige milieu van AEM tot stand te brengen. [ Het hulpmiddel GraphiQL laat ook gebruikers toe om **voort te zetten of** vragen te bewaren die door cliënttoepassingen in een productie het plaatsen moeten worden gebruikt.
+Het [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) hulpmiddel van de Ontdekkingsreiziger 0&rbrace; GraphiQL laat ontwikkelaars toe om, en testvragen tegen inhoud op het huidige milieu van AEM tot stand te brengen.  Het hulpmiddel GraphiQL laat ook gebruikers toe om **voort te zetten of** vragen te bewaren die door cliënttoepassingen in een productie het plaatsen moeten worden gebruikt.
 
 Verken vervolgens de kracht van de AEM GraphQL API met behulp van de ingebouwde GraphiQL Explorer.
 
@@ -344,7 +344,7 @@ Met de AEM GraphQL API kunt u zoeken naar inhoud en fragmentverwijzingen binnen 
    }
    ```
 
-   Het `_references` gebied onthult zowel het embleembeeld als het Fragment van de Inhoud van de Inhoud van de Bodge van de Vallei Yosemite dat in het **2} gebied van de Beschrijving werd opgenomen.**
+   Het `_references` gebied onthult zowel het embleembeeld als het Fragment van de Inhoud van de Inhoud van de Bodge van de Vallei Yosemite dat in het **2&rbrace; gebied van de Beschrijving werd opgenomen.**
 
 
 ## Query uitvoeren met instructies
@@ -501,7 +501,7 @@ In de [ vorige sectie ](#query-rte-reference), leerde u hoe te voor gealigneerde
 
 ## Query voor het inhoudstype JSON-object
 
-Herinner dat in het vorige hoofdstuk op het ontwerpen van de Fragmenten van de Inhoud, u een voorwerp JSON in het **Weather door het 1} gebied van de Verraad {toevoegde.** Laten we die gegevens nu ophalen in het locatieinhoudsfragment.
+Herinner dat in het vorige hoofdstuk op het ontwerpen van de Fragmenten van de Inhoud, u een voorwerp JSON in het **Weather door het 1&rbrace; gebied van de Verraad &lbrace;toevoegde.** Laten we die gegevens nu ophalen in het locatieinhoudsfragment.
 
 1. In GrahiQL winde, kleef de volgende vraag in het linkerpaneel:
 

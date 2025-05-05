@@ -31,7 +31,7 @@ In het bezit van Markeringen creeerden wij 2 nieuwe [ regels ](https://experienc
 
 De **regel van de Fout van de Bevestiging van het Gebied** wordt teweeggebracht telkens als er bevestigingsfout op adaptief vormgebied is. Als het telefoonnummer of de e-mail bijvoorbeeld in ons formulier niet de verwachte indeling heeft, wordt een foutbericht voor validatie weergegeven.
 
-De regel van de Fout van de Bevestiging van het Gebied wordt gevormd door de gebeurtenis aan _**Adobe Experience Manager Forms-Fout**_ zoals aangetoond in het het schermschot te plaatsen
+De regel van de Fout van de Bevestiging van het Gebied wordt gevormd door de gebeurtenis aan _&#x200B;**Adobe Experience Manager Forms-Fout**&#x200B;_ zoals aangetoond in het het schermschot te plaatsen
 
 
 
@@ -45,11 +45,11 @@ De Adobe Analytics - de Vastgestelde Variabelen worden gevormd als volgt
 
 De regel Formulier verzenden wordt geactiveerd telkens wanneer een adaptief formulier is verzonden.
 
-De Vorm legt regel voor wordt gevormd gebruikend _**Adobe Experience Manager Forms - voorlegt**_ gebeurtenis
+De Vorm legt regel voor wordt gevormd gebruikend _&#x200B;**Adobe Experience Manager Forms - voorlegt**&#x200B;_ gebeurtenis
 
 ![ vorm-voorlegt-regel ](assets/form-submit-rule.png)
 
-In de Vorm legt regel voor, wordt de waarde van het gegevenselement _**ApplicantsStateOfResidence**_ in kaart gebracht aan prop5 en de waarde van het gegevenselement FormTitle wordt in kaart gebracht aan prop8.
+In de Vorm legt regel voor, wordt de waarde van het gegevenselement _&#x200B;**ApplicantsStateOfResidence**&#x200B;_ in kaart gebracht aan prop5 en de waarde van het gegevenselement FormTitle wordt in kaart gebracht aan prop8.
 
 De variabelen Adobe Analytics - Set zijn als volgt geconfigureerd.
 ![ vorm-voorlegt-regel-reeks-variabelen ](assets/form-submit-set-variable.png)

@@ -62,7 +62,7 @@ Adobe Target Cloud Service, geconfigureerd in een contextbewuste configuratie, m
 1. Login aan __de dienst van de Auteur van AEM__ als beheerder DAM
 1. Navigeer aan __Assets > Dossiers__, bepaal de plaats van de activa omslag die `/conf` heeft toegepast op
 1. Selecteer de activaomslag, en selecteer __Eigenschappen__ van de hoogste actiebar
-1. Selecteer het __lusje van de Diensten van de Wolk 0} {__
+1. Selecteer het __lusje van de Diensten van de Wolk 0&rbrace; &lbrace;__
 1. Zorg ervoor dat de Configuratie van de Wolk aan de context-bewuste config (`/conf`) wordt geplaatst die de configuratie van de Diensten van de Wolk van Adobe Target bevat.
 1. Selecteer __Adobe Target__ van __Cloud Service Configurations__ dropdown.
 1. Selecteer __sparen &amp; Sluiten__ in het hoogste recht
@@ -106,7 +106,7 @@ De Fragmenten van de inhoud die onder de [ gevormde de de de omslaghiërarchie v
    + De volledig gehydrateerde JSON-representatie kan in AEM worden bekeken
       + Selecteer het inhoudsfragment
       + Het zijpaneel uitbreiden
-      + Selecteer __pictogram van de Voorproef 0} {in het linkerzijpaneel__
+      + Selecteer __pictogram van de Voorproef 0&rbrace; &lbrace;in het linkerzijpaneel__
       + De JSON-representatie die naar Adobe Target wordt geëxporteerd, wordt weergegeven in de hoofdweergave
 1. Login aan [ Adobe Experience Cloud ](https://experience.adobe.com) met een gebruiker in de rol van de Redacteur voor Adobe Target
 1. Van [ Experience Cloud ](https://experience.adobe.com), uitgezochte __Doel__ van de productschakelaar in hoogste recht om Adobe Target te openen.
@@ -184,7 +184,7 @@ Een [ identiteitskaart van Adobe Experience Platform DataStream ](https://experi
       + Het milieu van het Doel kan in Adobe Target bij __Beleid > Gastheren__ worden geplaatst.
    + De Namespace van identiteitskaart van de Derde van het doel: __verlaten leeg__
 1. Selecteer __sparen__
-1. Op de rechterkant, kopieer identiteitskaart van 0} Datastream __voor gebruik in [ Adobe Web SDK ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) configuratievraag.__
+1. Op de rechterkant, kopieer identiteitskaart van 0&rbrace; Datastream __voor gebruik in [ Adobe Web SDK ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) configuratievraag.__
 
 +++
 

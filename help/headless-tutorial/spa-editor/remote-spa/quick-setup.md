@@ -152,7 +152,7 @@ Alvorens inhoud te ontwerpen rangschikt uw browser vensters zodanig dat AEM Aute
 
 1. Schakelaar aan __wijze van de Voorproef__ in SPA Redacteur
 1. Tik op de __kaart van de Camp van Surf van Bali__ en navigeer aan zijn dynamische route
-1. Voeg toe, verander, of verwijder componenten uit de containercomponent die plaatsen boven de __rubriek van de 1} Reis__
+1. Voeg toe, verander, of verwijder componenten uit de containercomponent die plaatsen boven de __rubriek van de 1&rbrace; Reis__
 1. De SPA vernieuwen die op `http://localhost:3000` wordt uitgevoerd en controleren of de wijzigingen zijn doorgevoerd
 
 De nieuwe AEM pagina&#39;s onder de __WKND startpagina van de App > Avontuur__ _moeten_ een AEM paginanaam hebben die de naam van het de tevreden Fragment van de Inhoud van het overeenkomstige avontuur aanpast. Dit is omdat de SPA route aan AEM van de Pagina afbeelding van het laatste segment van de route, die de naam van het Fragment van de Inhoud is gebaseerd.

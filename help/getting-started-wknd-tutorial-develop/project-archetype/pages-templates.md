@@ -115,14 +115,14 @@ Stappen op hoog niveau voor de bovenstaande video:
 1. Voeg een **component van het Beeld** aan de **belangrijkste** container toe.
    * Ontgrendel de **component van het Beeld**.
 1. Voeg a **component Breadcrumb** onder de **component van het Beeld** in de belangrijkste container toe.
-   * Creeer een beleid voor de **genoemde component 0} Breadcrumb** Artikel Pagina - Breadcrumb **.** Plaats het **Niveau van het Begin van de Navigatie** aan **4**.
+   * Creeer een beleid voor de **genoemde component 0&rbrace; Breadcrumb** Artikel Pagina - Breadcrumb **.** Plaats het **Niveau van het Begin van de Navigatie** aan **4**.
 1. Voeg de component van de a **Container** onder de **Breadcrumb** component en binnen de **belangrijkste** container toe. Dit doet dienst als **container van de Inhoud** voor het malplaatje.
    * Ontgrendel de **container van de Inhoud**.
    * Plaats het beleid aan **Inhoud van de Pagina**.
 1. Voeg een andere **component van de Container** onder de **container van de Inhoud** toe. Dit doet dienst als **Zijspoor** container voor het malplaatje.
    * Ontgrendel de **container van het Rail van de Kant**.
    * Creeer een beleid genoemd **Pagina van het Artikel - zij Rail**.
-   * Vorm **Toegestane Componenten** onder **Project van de Plaatsen WKND - Inhoud** om te omvatten: **Knoop**, **Download**, **Beeld**, **Lijst**, **Scheidingsteken**, **Sociale Media die** delen, **** Tekst, en **Titel**.
+   * Vorm **Toegestane Componenten** onder **Project van de Plaatsen WKND - Inhoud** om te omvatten: **Knoop**, **Download**, **Beeld**, **Lijst**, **Scheidingsteken**, **Sociale Media die** delen, **&#x200B;**&#x200B;Tekst, en **Titel**.
 1. Werk het beleid van de container van de Wortel van de Pagina bij. Dit is de buitenste container op de sjabloon. Plaats het beleid aan **Wortel van de Pagina**.
    * Onder **de Montages van de Container**, plaats de **Lay-out** aan **Responsieve Net**.
 1. De Wijze van de Lay-out van de Modus van de Modus van de Modus van de Inzameling voor de **container**. Sleep de handgreep van rechts naar links en krimpt de container tot acht kolommen breed.
@@ -135,18 +135,18 @@ Stappen op hoog niveau voor de bovenstaande video:
 ### Aanvankelijke inhoudsconfiguraties
 
 1. Schakelaar aan **Aanvankelijke wijze van de Inhoud**.
-1. Voeg a **component van de Titel 0} {aan de** container van de Inhoud **toe.** Dit is de titel van artikel. Als de pagina leeg blijft, wordt automatisch de titel van de huidige pagina weergegeven.
+1. Voeg a **component van de Titel 0&rbrace; &lbrace;aan de** container van de Inhoud **toe.** Dit is de titel van artikel. Als de pagina leeg blijft, wordt automatisch de titel van de huidige pagina weergegeven.
 1. Voeg een tweede **component van de Titel** onder de eerste component van de Titel toe.
    * Configureer de component met de tekst &quot;Door auteur&quot;. Dit is een tijdelijke aanduiding voor tekst.
    * Stel het type in op `H4` .
 1. Voeg de component van de a **Tekst** onder **door de component van de Titel van de Auteur** toe.
-1. Voeg de component van de Titel van a **** aan de **Zijde Container van het Spoorspoor** toe.
+1. Voeg de component van de Titel van a **&#x200B;**&#x200B;aan de **Zijde Container van het Spoorspoor** toe.
    * Configureer de component met de tekst &quot;Dit artikel delen&quot;.
    * Stel het type in op `H5` .
 1. Voeg a **Sociale Media toe die** component onder **delen deze component van de Titel van het Verhaal** delen.
-1. Voeg de component van de Scheidingsteken van de a **** onder de **Sociale Media toe die** component delen.
+1. Voeg de component van de Scheidingsteken van de a **&#x200B;**&#x200B;onder de **Sociale Media toe die** component delen.
 1. Voeg de component van de a **Download** onder de **Scheidingsteken** component toe.
-1. Voeg de component van de a **Lijst** onder de **3} component van de Download {toe.**
+1. Voeg de component van de a **Lijst** onder de **3&rbrace; component van de Download &lbrace;toe.**
 1. Werk **Aanvankelijke Eigenschappen van de Pagina** voor het malplaatje bij.
    * Onder **Sociale Media** > **Sociale Media die** delen, controleer **Facebook** en **Pinterest**
 
@@ -188,7 +188,7 @@ Stappen op hoog niveau voor de bovenstaande video:
    * Plaats de **Exclude Niveaus van de Wortel** aan **1**.
    * Plaats de **Diepte van de Structuur van de Navigatie** aan **1**.
    * Wijzig de lay-out van de **component van de Navigatie** om **acht** kolommen breed te zijn. Sleep de handgrepen van rechts naar links.
-1. Verwijder de **component van de Navigatie van de Taal 0}.**
+1. Verwijder de **component van de Navigatie van de Taal 0&rbrace;.**
 1. Wijzig de lay-out van de **component van het Onderzoek** om **twee** kolommen breed te zijn. Sleep de handgrepen van rechts naar links. Alle componenten moeten nu horizontaal op één rij worden uitgelijnd.
 
 ### Fragment Voettekstervaring bijwerken
@@ -223,7 +223,7 @@ Stappen op hoog niveau voor de bovenstaande video:
 1. Werk de **component van de Tekst** bij om een paragraaf te omvatten om het artikel te bevolken. U kunt het volgende tekstdossier als exemplaar gebruiken: [ la-skate-parks-copy.txt ](assets/pages-templates/la-skateparks-copy.txt).
 1. Voeg een andere **component van de Tekst** toe.
    * Werk de component bij om het aanhalingsteken op te nemen: &quot;Er is geen betere plaats om te delen dan Los Angeles.&quot;.
-   * Bewerk de Rijke Redacteur van de Tekst op het volledig-schermwijze en wijzig het bovengenoemde citaat om het **element van het Blok van 0} Citaat te gebruiken.**
+   * Bewerk de Rijke Redacteur van de Tekst op het volledig-schermwijze en wijzig het bovengenoemde citaat om het **element van het Blok van 0&rbrace; Citaat te gebruiken.**
 1. Blijf de tekst van het artikel vullen om deze aan te passen aan de modellen.
 1. Vorm de **component van de Download** om een versie van de PDF van het artikel te gebruiken.
    * Onder **Download** > **Eigenschappen**, klik checkbox aan **krijgt de titel van de activa DAM**.
@@ -232,7 +232,7 @@ Stappen op hoog niveau voor de bovenstaande video:
 1. Vorm de **component van de Lijst**.
    * Onder **de Montages van de Lijst** > **Bouwt Lijst Gebruikend**, uitgezochte **Pagina&#39;s van het Kind**.
    * Plaats de **Ouderlijke Pagina** aan `/content/wknd/us/en/magazine`.
-   * Onder, de **controle** van de Montages van het Punt 0} **en controle** tonen datum **.**
+   * Onder, de **controle** van de Montages van het Punt 0&rbrace; **en controle** tonen datum **.**
 
 ## Inspect de nodestructuur {#node-structure}
 
@@ -322,7 +322,7 @@ Vaak, vooral aan het begin van een AEM project is het waardevol om configuraties
 
 
 Voor nu, worden de malplaatjes behandeld als andere stukken van code en synchroniseer neer het **Malplaatje van de Pagina van het Artikel** als deel van het project.
-Tot nu toe wordt de code geduwd van het AEM project aan een lokaal geval van AEM. Het **Malplaatje van de Pagina van het Artikel** werd gecreeerd direct op een lokaal geval van AEM, zodat moet het **** het malplaatje in het AEM project invoeren. De {**module 0} ui.content is inbegrepen in het AEM project voor dit specifieke doel.**
+Tot nu toe wordt de code geduwd van het AEM project aan een lokaal geval van AEM. Het **Malplaatje van de Pagina van het Artikel** werd gecreeerd direct op een lokaal geval van AEM, zodat moet het **&#x200B;**&#x200B;het malplaatje in het AEM project invoeren. De {**module 0} ui.content is inbegrepen in het AEM project voor dit specifieke doel.**
 
 De volgende paar stappen worden gedaan in winde VSCode gebruikend [ VSCode AEM de stop van de Synchronisatie ](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync&amp;ssr=false#overview). Maar zij konden doen gebruikend om het even welke winde die u aan **invoert** of inhoud van een lokale instantie van AEM hebt gevormd.
 
@@ -355,7 +355,7 @@ De volgende paar stappen worden gedaan in winde VSCode gebruikend [ VSCode AEM d
    </workspaceFilter>
    ```
 
-   Het bestand `filter.xml` identificeert de paden van knooppunten die met het pakket zijn geïnstalleerd. Let op `mode="merge"` op elk van de filters die aangeeft dat bestaande inhoud niet moet worden gewijzigd, alleen nieuwe inhoud wordt toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing **** geen inhoud overschrijft. Zie de [ documentatie FileVault ](https://jackrabbit.apache.org/filevault/filter.html) voor meer details bij het werken met filterelementen.
+   Het bestand `filter.xml` identificeert de paden van knooppunten die met het pakket zijn geïnstalleerd. Let op `mode="merge"` op elk van de filters die aangeeft dat bestaande inhoud niet moet worden gewijzigd, alleen nieuwe inhoud wordt toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing **&#x200B;**&#x200B;geen inhoud overschrijft. Zie de [ documentatie FileVault ](https://jackrabbit.apache.org/filevault/filter.html) voor meer details bij het werken met filterelementen.
 
    Vergelijk `ui.content/src/main/content/META-INF/vault/filter.xml` en `ui.apps/src/main/content/META-INF/vault/filter.xml` om inzicht te krijgen in de verschillende knooppunten die door elke module worden beheerd.
 
