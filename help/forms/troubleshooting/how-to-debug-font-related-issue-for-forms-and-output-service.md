@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Deze video loopt door het proces om collaterals te vangen om Doopvonten te zuiveren verwant kwestie met Forms en de dienstomzettingen van de Output.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335487?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439910?quality=12&learn=on&captions=dut)

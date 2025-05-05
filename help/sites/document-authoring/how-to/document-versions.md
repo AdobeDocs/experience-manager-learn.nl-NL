@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Leer hoe u documenten versieert die zijn gemaakt met AEM-documentontwerpen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425728/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438802/?learn=on&captions=dut)

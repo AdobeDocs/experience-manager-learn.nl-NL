@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Maak een Adobe Developer Console-project dat de toegang tot andere Adobe-services definieert en de implementaties ervan beheert.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412875?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3442020?quality=12&learn=on&captions=dut)
 
 >[!IMPORTANT]
 >

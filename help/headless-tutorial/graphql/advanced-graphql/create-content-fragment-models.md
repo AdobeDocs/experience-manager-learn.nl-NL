@@ -43,7 +43,7 @@ Dit is een geavanceerde zelfstudie. Alvorens met dit hoofdstuk te werk te gaan, 
 
 De volgende video biedt een korte inleiding tot Modellen van inhoudsfragmenten en hoe deze in deze zelfstudie worden gebruikt.
 
->[!VIDEO](https://video.tv.adobe.com/v/340037?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449525?quality=12&learn=on&captions=dut)
 
 ## Modellen voor inhoudsfragmenten maken {#create-models}
 

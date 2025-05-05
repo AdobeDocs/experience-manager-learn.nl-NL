@@ -28,4 +28,4 @@ In deze video zult u:
 + Leer hoe u GraphQL-query&#39;s maakt, bijwerkt en uitvoert
 + Begrijp de voordelen van persisted query&#39;s over client-side query&#39;s
 
->[!VIDEO](https://video.tv.adobe.com/v/333429?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447383?quality=12&learn=on&captions=dut)

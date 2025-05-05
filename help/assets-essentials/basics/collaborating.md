@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Leer hoe u kunt samenwerken aan middelenbeheer met opmerkingen, annotaties en taken.
 
->[!VIDEO](https://video.tv.adobe.com/v/335856?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443994?quality=12&learn=on&captions=dut)

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Korte video die het binden van een AEM-formulier aan een MySql-database beschrijft
 
->[!VIDEO](https://video.tv.adobe.com/v/3427624/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439565/?learn=on&captions=dut)

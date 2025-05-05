@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Leer hoe u adaptieve formuliergegevens configureert en opslaat in Microsoft Sharepoint.
 
->[!VIDEO](https://video.tv.adobe.com/v/3415793/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452531/?quality=12&learn=on&captions=dut)

@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Leer hoe u documenten machtigt met AEM-documentontwerpen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425724/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438107/?learn=on&captions=dut)

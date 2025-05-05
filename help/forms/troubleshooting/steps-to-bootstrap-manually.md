@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Deze video loopt door het proces om manueel te laarzen als het gegevensbestand initialiseert niet werkt.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335515?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436275?quality=12&learn=on&captions=dut)

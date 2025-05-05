@@ -66,7 +66,7 @@ Een gemeenschappelijke praktijk wanneer het creëren van globale inhoud, zoals e
 
 De Sitesjabloon genereerde een kop- en voettekst. Werk vervolgens de Experience Fragments bij zodat deze overeenkomen met de modellen. Voer de stappen in de onderstaande video uit:
 
->[!VIDEO](https://video.tv.adobe.com/v/332916?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447805?quality=12&learn=on&captions=dut)
 
 Stappen op hoog niveau voor de onderstaande video:
 

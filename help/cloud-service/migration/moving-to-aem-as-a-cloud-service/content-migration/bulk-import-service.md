@@ -23,7 +23,7 @@ Leer hoe u AEM als Cloud Services Bulk Import Service kunt gebruiken om middelen
 
 
 
->[!VIDEO](https://video.tv.adobe.com/v/336969?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453285?quality=12&learn=on&captions=dut)
 
 ## De service Bulkimport gebruiken
 

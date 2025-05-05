@@ -46,7 +46,7 @@ Als u geen toegang tot derdediensten hebt, _samenwerken met uw veiligheid of het
 
 ## SSL-certificaat genereren
 
->[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441490?quality=12&learn=on&captions=dut)
 
 U hebt twee opties:
 

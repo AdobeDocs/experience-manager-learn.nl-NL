@@ -28,4 +28,4 @@ In deze video zult u:
 + Leer hoe u GraphQL-query&#39;s uitvoert op eindpunten
 + Begrijp hoe u GraphQL-eindpunten publiceert
 
->[!VIDEO](https://video.tv.adobe.com/v/333339?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445029?quality=12&learn=on&captions=dut)

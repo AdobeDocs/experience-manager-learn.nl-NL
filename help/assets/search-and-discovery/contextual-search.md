@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Leer hoe u Contextual Search in Adobe Experience Manager Assets kunt gebruiken om op efficiënte wijze middelen te zoeken met zoekopdrachten in natuurlijke talen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428667/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438958/?learn=on&captions=dut)
 
 ## Contextafhankelijke zoekopdracht in-/uitschakelen
 

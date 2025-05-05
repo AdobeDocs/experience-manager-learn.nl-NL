@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Deze video loopt door de stappen om te vangen zuivert logboeken voor mobiele vormen.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335516?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438593?quality=12&learn=on&captions=dut)

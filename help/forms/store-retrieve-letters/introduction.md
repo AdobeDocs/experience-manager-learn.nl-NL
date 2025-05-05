@@ -26,7 +26,7 @@ Dit artikel gebruikt MySQL-database om de metagegevens van de letter op te slaan
 
 In de volgende video ziet u hoe u het hoofdlettergebruik gebruikt:
 
->[!VIDEO](https://video.tv.adobe.com/v/342129?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441446?quality=12&learn=on&captions=dut)
 
 ## Voorwaarden
 

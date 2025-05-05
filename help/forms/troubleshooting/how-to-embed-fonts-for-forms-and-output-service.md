@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Deze video loopt door de stappen om Doopvonten voor Forms en de omzettingen van de outputdienst in te bedden.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335496?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436480?quality=12&learn=on&captions=dut)

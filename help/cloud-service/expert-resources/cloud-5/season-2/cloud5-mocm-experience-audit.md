@@ -20,7 +20,7 @@ ht-degree: 0%
 
 In deel één van een reeks van drie delen, verkennen we de basisbeginselen van Cloud Manager en gooien we onze tenen in de Experience Audit-mogelijkheden.
 
->[!VIDEO](https://video.tv.adobe.com/v/343620?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449183?quality=12&learn=on&captions=dut)
 
 ## Inhoud die in deze video wordt behandeld
 

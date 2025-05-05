@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Leer hoe het DASH-adaptieve streamingprotocol van AEM Assets Dynamic Media ervoor zorgt dat geleverde video&#39;s worden aangepast aan de beschikbare bandbreedte en dat het afspelen probleemloos verloopt.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429072/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443623/?learn=on&captions=dut)

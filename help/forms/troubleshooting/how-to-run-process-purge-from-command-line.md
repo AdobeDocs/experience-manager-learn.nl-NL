@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Deze video loopt door de stappen om proces in werking te stellen zuiveren hulpmiddel van bevellijn.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335508?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438373?quality=12&learn=on&captions=dut)

@@ -190,7 +190,7 @@ Gebruikend de Adobe Experience Platform Debugger [ Chrome ](https://chrome.googl
 + Platform Web SDK-bibliotheekversie, DataStream-id
 + XDM Object as part `events` -kenmerk in Experience Platform Web SDK
 
->[!VIDEO](https://video.tv.adobe.com/v/3418897?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454503?quality=12&learn=on&captions=dut)
 
 ## Dataset maken - Experience Platform
 

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Met fragmenten kunt u het maken en onderhouden van grote aantallen formulieren vereenvoudigen en versnellen. Bij het maken van een formulier voegt u een verwijzing in naar het gewenste fragment en het fragment wordt in het formulier weergegeven.
 
->[!VIDEO](https://video.tv.adobe.com/v/332231?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438422?quality=12&learn=on&captions=dut)

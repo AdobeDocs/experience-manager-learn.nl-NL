@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Ontdek hoe een Edge Delivery Services-document is samengesteld met secties, standaardinhoud en meer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425716/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445195/?learn=on&captions=dut)

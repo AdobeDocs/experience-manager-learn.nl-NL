@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Leer hoe de gebieden van de Inhoud van het Fragment van de Inhoud het van verwijzingen voorzien van diverse types van inhoud van AEM, zoals de Fragmenten van de Ervaring en Pagina&#39;s steunen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419313/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436768/?learn=on&captions=dut)

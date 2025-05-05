@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Deze video loopt door de stappen om ladingstests van UI in werking te stellen gebruikend steekproeven FormsIVS en OutputIVS.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335507?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441483?quality=12&learn=on&captions=dut)

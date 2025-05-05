@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Leer hoe u verzamelingen maakt en gebruikt in AEM Assets Content Hub om de toegang tot middelen te stroomlijnen en gezamenlijk delen van bronnen te bevorderen, zodat efficiënte en georganiseerde teamwork in verschillende projecten mogelijk is.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445306/?learn=on&captions=dut)

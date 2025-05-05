@@ -23,7 +23,7 @@ Een trapsgewijze drop-down lijst is een reeks afhankelijke controles DropDownLis
 
 ## Bewijs van de gebruikszaak
 
->[!VIDEO](https://video.tv.adobe.com/v/340344?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437314?quality=12&learn=on&captions=dut)
 
 Voor dit leerprogramma, heb ik [ Geonames REST API ](https://www.geonames.org/export/web-services.html) gebruikt om dit vermogen aan te tonen.
 Er zijn een aantal organisaties die dit soort service aanbieden en zolang ze beschikken over goed gedocumenteerde REST API&#39;s kunt u eenvoudig integreren met AEM Forms met behulp van de mogelijkheden voor gegevensintegratie

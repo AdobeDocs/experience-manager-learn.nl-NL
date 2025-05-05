@@ -30,7 +30,7 @@ Vaak voorkomende gevallen van gebruik zijn:
 
 ## Wat u gaat doen
 
->[!VIDEO](https://video.tv.adobe.com/v/327313?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437017?quality=12&learn=on&captions=dut)
 
 In deze zelfstudie maken we een Asset Compute-worker voor metagegevens die de meest gebruikte kleuren in een afbeeldingselement afleidt, en schrijven we de namen van de kleuren terug naar de metagegevens van het element in AEM. Hoewel de worker zelf standaard is, wordt deze zelfstudie gebruikt om te verkennen hoe Asset Compute-workers kunnen worden gebruikt om metagegevens terug te schrijven naar elementen in AEM as a Cloud Service.
 

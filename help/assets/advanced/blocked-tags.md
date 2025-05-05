@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Leer hoe u middelenbeheer in AEM as a Cloud Service kunt verbeteren door geblokkeerde tags te gebruiken om de toepassing van cultureel gevoelige, irrelevante of controversiële slimme tags te voorkomen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426839/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448506/?learn=on&captions=dut)

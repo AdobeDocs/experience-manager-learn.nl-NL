@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Deze video loopt door de stappen om de vereiste informatie te vangen om de Kwesties van de Omzetting en van de Bevestiging van PDF/A in de dienst van de Assembler van Forms problemen op te lossen.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335518?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439198?quality=12&learn=on&captions=dut)

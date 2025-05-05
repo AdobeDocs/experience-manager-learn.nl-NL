@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Met bewerkbare sjablonen kunnen gespecialiseerde auteurs paginasjablonen maken en bijwerken en geavanceerde beleidsconfiguraties beheren met Adobe Experience Manager (AEM)-sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/326784?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449617?quality=12&learn=on&captions=dut)
 
 Bewerkbare sjablonen zijn de aanbevelingen voor het bouwen van nieuwe AEM Sites.
 

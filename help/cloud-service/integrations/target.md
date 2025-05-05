@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Leer hoe u AEM Headless kunt integreren met Adobe Target door AEM Content Fragments te exporteren naar Adobe Target en deze te gebruiken voor het aanpassen van ervaringen zonder kop met Adobe Experience Platform Web SDK alloy.js. [ Reageer WKND App ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=nl-NL) wordt gebruikt om te onderzoeken hoe een gepersonaliseerde activiteit van het Doel gebruikend de Aanbiedingen van de Fragmenten van de Inhoud aan de ervaring kan worden toegevoegd, om een avontuur te bevorderen WKND.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416585/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428899/?quality=12&learn=on&captions=dut)
 
 In de zelfstudie worden de stappen beschreven die nodig zijn voor het instellen van AEM en Adobe Target:
 
@@ -50,7 +50,7 @@ In AEM wordt een Adobe Target Cloud Service gemaakt om het exporteren van inhoud
 
 Herzie [ de documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html?lang=nl-NL) voor geleidelijke instructies op hoe te om een Adobe Target Cloud Service tot stand te brengen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416499/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3432146/?quality=12&learn=on&captions=dut)
 
 
 ## Elementmappen configureren{#configure-asset-folders}
@@ -71,7 +71,7 @@ Adobe Target Cloud Service, geconfigureerd in een contextbewuste configuratie, m
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3416504/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428907/?quality=12&learn=on&captions=dut)
 
 ## Toestemming voor de integratie met AEM Target{#permission}
 
@@ -90,7 +90,7 @@ De integratie van Adobe Target, die zich als developer.adobe.com project manifes
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3416505/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441979/?quality=12&learn=on&captions=dut)
 
 ## Inhoudsfragmenten exporteren naar doel{#export-content-fragments}
 
@@ -121,7 +121,7 @@ De Fragmenten van de inhoud die onder de [ gevormde de de de omslaghiërarchie v
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3416506/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428913/?quality=12&learn=on&captions=dut)
 
 ## Doelactiviteit met Content Fragment-aanbiedingen{#activity}
 
@@ -160,7 +160,7 @@ De Adobe Target-activiteit die gericht is op de `wknd-adventure-promo` -locatie 
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3416507/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444787/?quality=12&learn=on&captions=dut)
 
 ## Experience Platform DataStream-id{#datastream-id}
 
@@ -190,7 +190,7 @@ Een [ identiteitskaart van Adobe Experience Platform DataStream ](https://experi
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3416500/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428902/?quality=12&learn=on&captions=dut)
 
 ## Aanpassing toevoegen aan een AEM Headless-app{#code}
 

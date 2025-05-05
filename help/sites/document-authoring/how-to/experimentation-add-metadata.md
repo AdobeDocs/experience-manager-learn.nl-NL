@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Onderzoek het toevoegen van meta-gegevens voor experimenteren in het document van Edge Delivery Services creatie.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428796/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440113/?learn=on&captions=dut)

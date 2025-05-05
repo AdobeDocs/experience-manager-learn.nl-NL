@@ -26,4 +26,4 @@ Leer hoe u AEM Assets kunt integreren met Adobe Creative Cloud Libraries, zodat:
 + Bestanden van AEM Assets die naadloos kunnen worden geopend via Creative Cloud Libraries
 + Bestanden van Creative Cloud Libraries die naar AEM Assets moeten worden gedeeld
 
->[!VIDEO](https://video.tv.adobe.com/v/3432401?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444014?quality=12&learn=on&captions=dut)

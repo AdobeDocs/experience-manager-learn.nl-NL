@@ -21,7 +21,7 @@ ht-degree: 5%
 
 Meer informatie over instaptoegang tot AEM as a Cloud Service vanaf de contractfase tot aan de installatie van de omgevingen met Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/336959?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431500?quality=12&learn=on&captions=dut)
 
 ## Cloud Manager- en beheerconsole
 

@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Dit is een diepe duik in CDN die als deel van AEM as a Cloud Service wordt verstrekt, met inbegrip van wat het aan en of kan om uw eigen CDN te brengen. Dit is deel 1 van 2.
 
->[!VIDEO](https://video.tv.adobe.com/v/340760?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447843?quality=12&learn=on&captions=dut)
 
 ## Inhoud van deel 1 van deze reeks
 

@@ -28,5 +28,5 @@ In deze video zult u:
 + Leer hoe de variaties in een echt scenario kunnen worden gebruikt
 + Bekijk de GraphQL-syntaxis voor het aanvragen van een specifieke variatie
 
->[!VIDEO](https://video.tv.adobe.com/v/333295?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449326?quality=12&learn=on&captions=dut)
 

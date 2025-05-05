@@ -38,7 +38,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./basics/content-fragments-console.md" title="Overzicht van console"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3409492?format=jpeg"
+                src="https://video.tv.adobe.com/v/3449338?format=jpeg&captions=dut"
                 alt="Overzicht van console">
             </a>
           </figure>
@@ -104,7 +104,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./search/fast-filtering.md" title="Snelle filtering"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419310?format=jpeg" alt="Snel
+                src="https://video.tv.adobe.com/v/3436702?format=jpeg&captions=dut" alt="Snel
                 filteren">
             </a>
           </figure>
@@ -172,7 +172,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./editor/non-asset-content-references.md" title="Niet-actief
               inhoudsverwijzingen" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419313?format=jpeg"
+                src="https://video.tv.adobe.com/v/3436768?format=jpeg&captions=dut"
                 alt="Verwijzingen naar niet-elementaire inhoud">
             </a>
           </figure>
@@ -206,7 +206,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./editor/rte-variant-compare.md" title="RTE-variant vergelijken"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419314?format=jpeg" alt="RTE
+                src="https://video.tv.adobe.com/v/3437553?format=jpeg&captions=dut" alt="RTE
                 variant vergelijken">
             </a>
           </figure>
@@ -240,7 +240,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./editor/language-copies.md" title="Taalkopieën"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419311?format=jpeg"
+                src="https://video.tv.adobe.com/v/3436962?format=jpeg&captions=dut"
                 alt="Taalkopieën">
             </a>
           </figure>
@@ -274,7 +274,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./search/references.md" title="Verwijzingen"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3420950?format=jpeg"
+                src="https://video.tv.adobe.com/v/3432463?format=jpeg&captions=dut"
                 alt="Verwijzingen">
             </a>
           </figure>

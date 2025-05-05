@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Korte video over de ontwerpweergave in AEM Forms Designer
 
->[!VIDEO](https://video.tv.adobe.com/v/3427615/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436823/?learn=on&captions=dut)

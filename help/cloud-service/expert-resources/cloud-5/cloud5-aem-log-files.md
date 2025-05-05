@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Dit is een diepe duik in hoe te om tot logboeken in AEM as a Cloud Service toegang te hebben, met inbegrip van hoe te om tot hen via het gebruikersinterface evenals van APIs toegang te hebben.
 
->[!VIDEO](https://video.tv.adobe.com/v/341156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448484?quality=12&learn=on&captions=dut)
 
 ## Inhoud die in deze video wordt behandeld
 

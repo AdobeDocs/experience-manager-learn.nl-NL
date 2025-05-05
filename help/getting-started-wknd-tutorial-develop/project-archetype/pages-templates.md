@@ -164,7 +164,7 @@ Een gemeenschappelijke praktijk wanneer het creëren van globale inhoud, zoals e
 
 Het AEM Projectarchetype produceerde een Kopbal en Voettekst. Werk vervolgens de Experience Fragments bij zodat deze overeenkomen met de modellen. Voer de stappen in de onderstaande video uit:
 
->[!VIDEO](https://video.tv.adobe.com/v/330992?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447495?quality=12&learn=on&captions=dut)
 
 Stappen op hoog niveau voor de bovenstaande video:
 
@@ -210,7 +210,7 @@ Stappen op hoog niveau voor de bovenstaande video:
 
 Maak vervolgens een pagina met de sjabloon Artikelpagina. Maak de inhoud van de pagina zodat deze overeenkomt met de sitemakken. Voer de stappen in de onderstaande video uit:
 
->[!VIDEO](https://video.tv.adobe.com/v/330993?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446448?quality=12&learn=on&captions=dut)
 
 Stappen op hoog niveau voor de bovenstaande video:
 

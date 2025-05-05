@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Gesloten bijschriften worden automatisch gegenereerd wanneer een videobestand met dynamische media naar AEM Assets wordt geüpload.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432627/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446393/?learn=on&captions=dut)

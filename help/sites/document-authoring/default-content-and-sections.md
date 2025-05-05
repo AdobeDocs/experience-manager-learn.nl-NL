@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Voer een diepgaande duik in de document auteursconcepten standaardinhoud en secties uit, en hoe deze u helpen een betere plaats maken.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425702/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437981/?learn=on&captions=dut)

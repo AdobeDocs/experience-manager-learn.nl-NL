@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Ontdek hoe u AEM Assets kunt integreren met het ontwerpen van documenten en zo buitengewone ervaringen met Edge Delivery Services kunt opdoen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428302/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448946/?quality=12&learn=on&captions=dut)
 
 
 ## Aanvullende bronnen

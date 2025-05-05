@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Leer hoe te om een privé bewaarplaats GitHub aan AEM Cloud Manager voor gestroomlijnd codekwaliteitsbeheer en geautomatiseerde werkschema&#39;s te verbinden. Verbeter uw ontwikkelingsproces met geïntegreerde controles en naadloze samenwerking.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429302/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452421/?learn=on&captions=dut)

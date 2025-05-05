@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Leer hoe u uw inhoud optimaliseert voor delen via sociale media met Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425974/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439443/?learn=on&captions=dut)

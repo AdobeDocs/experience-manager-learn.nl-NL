@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Onderzoek vraagindexen en hoe te om de formules van Excel te schrijven voor het manipuleren van en het sorteren van datasets met Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427787/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453769/?learn=on&captions=dut)
 
 ## Aanvullende bronnen
 

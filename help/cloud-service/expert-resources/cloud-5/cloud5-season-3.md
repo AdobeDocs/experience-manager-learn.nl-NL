@@ -31,7 +31,7 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
     <tr>
         <td>
             <a href="./season-3/cloud5-3rd-party-search.md">
-                <img alt="Zoeken van derden" src="https://video.tv.adobe.com/v/3427040?format=jpeg"/>
+                <img alt="Zoeken van derden" src="https://video.tv.adobe.com/v/3452611?format=jpeg&captions=dut"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-3rd-party-search.md">
@@ -45,7 +45,7 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
         </td>   
         <td>
             <a href="./season-3/cloud5-edge-workers.md">
-                <img alt="Edge Workers" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
+                <img alt="Edge Workers" src="https://video.tv.adobe.com/v/3448130?format=jpeg&captions=dut"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-edge-workers.md">
@@ -59,7 +59,7 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
         </td>   
         <td>
             <a href="./season-3/cloud5-publish-events.md">
-                <img alt="Publish, publiceren van gebeurtenissen in Edge Delivery Services ongedaan maken" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
+                <img alt="Publish, publiceren van gebeurtenissen in Edge Delivery Services ongedaan maken" src="https://video.tv.adobe.com/v/3446662?format=jpeg&captions=dut"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-publish-events.md">
@@ -75,7 +75,7 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
     <tr>
         <td>
             <a href="./season-3/cloud5-query-indexes.md">
-                <img alt="De indexen van de vraag en de formules van Excel in Edge Delivery Services" src="https://video.tv.adobe.com/v/3427787?format=jpeg"/>
+                <img alt="De indexen van de vraag en de formules van Excel in Edge Delivery Services" src="https://video.tv.adobe.com/v/3453769?format=jpeg&captions=dut"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-query-indexes.md">
@@ -89,7 +89,7 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
         </td>  
         <td>
             <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
-                <img alt="Uw eigen CDN van Cloudflare maken" src="https://video.tv.adobe.com/v/3428100?format=jpeg"/>
+                <img alt="Uw eigen CDN van Cloudflare maken" src="https://video.tv.adobe.com/v/3452542?format=jpeg&captions=dut"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
@@ -103,7 +103,7 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
         </td>           
         <td>
             <a href="./season-3/cloud5-integrate-assets.md">
-                <img alt="AEM Assets integreren met het maken van documenten" src="https://video.tv.adobe.com/v/3428302?format=jpeg"/>
+                <img alt="AEM Assets integreren met het maken van documenten" src="https://video.tv.adobe.com/v/3448946?format=jpeg&captions=dut"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-integrate-assets.md">

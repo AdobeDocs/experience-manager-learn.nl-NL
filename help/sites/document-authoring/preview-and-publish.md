@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Een stapsgewijze handleiding voor het maken en publiceren van inhoud met behulp van documentontwerpen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425700/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441347/?learn=on&captions=dut)

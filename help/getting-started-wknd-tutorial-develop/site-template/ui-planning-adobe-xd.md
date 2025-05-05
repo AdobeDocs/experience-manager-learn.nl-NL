@@ -41,7 +41,7 @@ In dit hoofdstuk worden twee dossiers van Adobe XD geïnspecteerd, voor het [ St
 
 ## UI-kit voor standaardsitesjabloon {#standard-site-template-uikit}
 
->[!VIDEO](https://video.tv.adobe.com/v/338680?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448436?quality=12&learn=on&captions=dut)
 
 Stappen op hoog niveau:
 

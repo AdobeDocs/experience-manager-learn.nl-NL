@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Deze video loopt door de stappen om uw douane XDPs en gegevensdossiers in FormsIVS en OutputIVS voor het testen doel bij te werken.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335513?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439743?quality=12&learn=on&captions=dut)

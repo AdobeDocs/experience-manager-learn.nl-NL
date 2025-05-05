@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Short Video, waarin wordt beschreven hoe u digitale handtekeningen aan AEM Forms kunt toevoegen
 
->[!VIDEO](https://video.tv.adobe.com/v/3427623/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439532/?learn=on&captions=dut)

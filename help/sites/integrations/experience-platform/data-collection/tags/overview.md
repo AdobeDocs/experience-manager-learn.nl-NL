@@ -27,7 +27,7 @@ Leer hoe u de tags in Adobe Experience Platform kunt integreren met Adobe Experi
 
 Tags zijn Adobe Experience Platform van de volgende generatie technologie voor tagbeheer. Tags bieden de eenvoudigste manier om Adobe Analytics, Target, Audience Manager en nog veel meer oplossingen te implementeren. Bekijk een overzicht van Tags en de aanbevolen integratie met Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/3417061?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445206?quality=12&learn=on&captions=dut)
 
 ## Vereisten
 

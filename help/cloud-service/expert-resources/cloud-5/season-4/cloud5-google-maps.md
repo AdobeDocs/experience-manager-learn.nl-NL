@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Tales from the trenches - verken hoe u Edge-leveringsservices kunt integreren met Google Maps en hoe u de prestaties kunt optimaliseren met integratie.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440977/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440995/?learn=on&enablevpops&captions=dut)

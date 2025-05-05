@@ -27,7 +27,7 @@ De ontwikkelingstools en -processen voor een Edge Delivery Services-websiteproje
 
 Deze video biedt een overzicht van de ontwikkelingstopologie voor een Edge Delivery Services-websiteproject dat kan worden bewerkt met Universal Editor.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443978/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443984/?learn=on&enablevpops&captions=dut)
 
 +++Zie extra details van de ontwikkelingstopologie
 

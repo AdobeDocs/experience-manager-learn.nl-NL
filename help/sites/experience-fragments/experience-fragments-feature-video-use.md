@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Met Experience Fragments kunnen auteurs van inhoud inhoud inhoud hergebruiken via kanalen, waaronder sitepagina&#39;s en systemen van derden.
 
->[!VIDEO](https://video.tv.adobe.com/v/331785?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445613?quality=12&learn=on&captions=dut)
 
 Een ervaringsfragment is een gegroepeerde set componenten die bij het combineren een ervaring creëert. Bijvoorbeeld, a *Titel*, *Beeld*, *Beschrijving*, en *Vraag aan de Knoop van de Actie* kan worden gecombineerd om een laserervaring te vormen.
 

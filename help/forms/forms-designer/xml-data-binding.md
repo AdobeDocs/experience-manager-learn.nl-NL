@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Short Video, waarin wordt beschreven hoe een AEM-formulier wordt gebonden aan een Source voor XML-gegevens
 
->[!VIDEO](https://video.tv.adobe.com/v/3427625/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439832/?learn=on&captions=dut)

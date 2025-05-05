@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Deze video loopt door de stappen om procesverslagen van de Manager van de Baan te zuiveren.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335577?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437673?quality=12&learn=on&captions=dut)

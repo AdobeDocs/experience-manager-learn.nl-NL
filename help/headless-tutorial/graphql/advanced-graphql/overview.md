@@ -45,7 +45,7 @@ Deze zelfstudie behandelt de volgende onderwerpen:
 
 De volgende video biedt een overzicht op hoog niveau van de concepten die in deze zelfstudie worden behandeld. De zelfstudie bevat het definiëren van modellen van inhoudsfragmenten met meer geavanceerde gegevenstypen, het nesten van inhoudsfragmenten en het voortduren van GraphQL-query&#39;s in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/340035?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446133?quality=12&learn=on&captions=dut)
 
 >[!CAUTION]
 >

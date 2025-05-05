@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Een snelle duik in de diepe wateren van onderzoek en indexering. Een uitdagend onderwerp dat we hopen te helpen u op een effectievere manier te helpen bereiken.
 
->[!VIDEO](https://video.tv.adobe.com/v/342374?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448112?quality=12&learn=on&captions=dut)
 
 ## Inhoud die in deze video wordt behandeld
 

@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Maak een gegevensbron met REST-back-up met het wagerbestand dat u in de vorige stap hebt gemaakt.
 
->[!VIDEO](https://video.tv.adobe.com/v/331755?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447274?quality=12&learn=on&captions=dut)
 
 | Instelling | Waarde |
 |---------------------|-----------------------------------------------------------------|

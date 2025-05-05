@@ -22,6 +22,6 @@ ht-degree: 0%
 
 Ontdek hoe u eenvoudig inhoud kunt maken en bewerken in Adobe Experience Manager Assets met Adobe Express. Deze video begeleidt u bij het verbeteren van de workflows voor inhoud, waarbij zowel het bewerken van bestaande middelen als het maken van nieuwe elementen worden getoond, allemaal gestroomlijnd voor efficiëntie en gebruiksvriendelijkheid.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425972/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444082/?learn=on&captions=dut)
 
 Ook, leer hoe te opstelling de [ inheemse integratie van AEM Assets met Adobe Express ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/integration-adobe-express/native-integration-adobe-express) om tot AEM Assets van Adobe Express foutloos toegang te hebben.

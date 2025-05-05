@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Ontdek hoe u Adobe Firefly kunt gebruiken om afbeeldingen te maken die worden gebruikt in de variaties in de inhoud, zodat u zich op de juiste doelgroep kunt richten in het ontwerpen van Edge Delivery Services-documenten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428794/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438362/?learn=on&captions=dut)

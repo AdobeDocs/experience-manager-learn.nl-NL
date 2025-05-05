@@ -25,7 +25,7 @@ Leer hoe u de HTTP-respons in de cache kunt leegmaken of verwijderen uit de AEM 
 
 In dit leerprogramma, leert u hoe te opstelling en de Schrapping API Token te gebruiken om het CDN geheime voorgeheugen van de steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) plaats te zuiveren gebruikend de zelfbediening eigenschap.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432948?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436934?quality=12&learn=on&captions=dut)
 
 ## Invalidatie van cache versus expliciete verwijdering
 

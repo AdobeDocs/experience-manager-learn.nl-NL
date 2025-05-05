@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Leer hoe Metadata Forms snel en eenvoudig kan worden geconfigureerd om de metagegevens van de middelen die beschikbaar zijn in AEM Assets op maat te maken.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431686?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452053?quality=12&learn=on&captions=dut)

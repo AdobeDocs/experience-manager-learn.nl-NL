@@ -23,7 +23,7 @@ ht-degree: 0%
 
 AEM Headless-toepassingen ondersteunen geïntegreerde ontwerpvoorvertoning. De voorvertoning koppelt de Inhoudsfragmenteditor van de AEM-auteur aan uw aangepaste app (adresseerbaar via HTTP), zodat een uitgebreide koppeling mogelijk is naar de app die de voorvertoning van het Inhoudsfragment weergeeft.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449594?quality=12&learn=on&captions=dut)
 
 Aan verschillende voorwaarden moet zijn voldaan om een voorbeeld van een inhoudsfragment te kunnen gebruiken:
 

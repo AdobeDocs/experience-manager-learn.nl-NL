@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Voeg een tabelcomponent toe aan het paneel Inkomsten om de inkomstenbronnen van de aanvrager weer te geven.
 
->[!VIDEO](https://video.tv.adobe.com/v/332233?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3425125?quality=12&learn=on&captions=dut)

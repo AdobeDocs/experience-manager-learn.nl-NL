@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Ontdek hoe documentauteurs omgaan met metagegevens op paginaniveau en hoe auteurs dit kunnen bijwerken zonder technische expertise.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425706/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438074/?learn=on&captions=dut)

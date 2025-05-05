@@ -18,7 +18,7 @@ In deze video&#39;s bekijken we een aantal verbeteringen aan de zoekactie van As
 
 ## Zoeken in Books met metagegevens van element {#search-boost-asset}
 
->[!VIDEO](https://video.tv.adobe.com/v/16766?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444067?quality=12&learn=on&captions=dut)
 
 ## Geavanceerde configuratie van voorspellingen voor meervoudige waarden en tagzoeken {#multi-value-tag-predicates}
 

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Ontdek de dynamische mediasjablonen, een samen te stellen afbeelding, hun beste werkwijzen en de manier waarop u kunt voldoen aan de vraag naar persoonlijke inhoud. Leer hoe u sjablonen maakt en beheert en hoe u deze kunt gebruiken om gepersonaliseerde inhoud op schaal te leveren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451727/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451733/?learn=on&enablevpops&captions=dut)

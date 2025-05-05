@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Deze video loopt door de stappen om de waarde van entropie te veranderen.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335494?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437684?quality=12&learn=on&captions=dut)

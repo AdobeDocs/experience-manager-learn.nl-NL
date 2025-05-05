@@ -23,14 +23,14 @@ ht-degree: 5%
 
 Met de slimme tags van AEM Assets voor afbeeldingen wordt het zoeken door AEM Assets versterkt door automatisch afgeleide metagegevenstags toe te voegen aan afbeeldingselementen. Hierdoor wordt het eenvoudiger en sneller om de juiste afbeelding te vinden.
 
->[!VIDEO](https://video.tv.adobe.com/v/17019?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444060?quality=12&learn=on&captions=dut)
 
 ## Instellen voor AEM 6.x{#set-up}
 
 >[!NOTE]
 > Slimme tags voor afbeeldingen worden automatisch ingesteld voor AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/17023?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444171?quality=12&learn=on&captions=dut)
 
 Voordat u de Smart Content Service kunt gebruiken, moet u het volgende doen om een integratie te maken in Adobe I/O:
 

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Een adaptieve formuliersjabloon is een speciale AEM-paginasjabloon, met bepaalde eigenschappen en inhoudsstructuur die worden gebruikt om een adaptief formulier te maken. De sjabloon heeft vooraf geconfigureerde lay-outs, stijlen en initiële basisinhoudsstructuur. Elk adaptief formulier is gebaseerd op een sjabloon.
 
->[!VIDEO](https://video.tv.adobe.com/v/332223?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446155?quality=12&learn=on&captions=dut)

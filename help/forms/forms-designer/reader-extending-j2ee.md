@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Short Video, waarin wordt beschreven hoe u AEM Forms Reader Extensions kunt gebruiken zodat eindgebruikers PDF forms kunnen vullen en opslaan vanuit Adobe Acrobat Reader
 
->[!VIDEO](https://video.tv.adobe.com/v/3427629/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439521/?learn=on&captions=dut)

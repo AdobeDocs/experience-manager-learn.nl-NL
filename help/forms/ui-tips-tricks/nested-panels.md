@@ -36,7 +36,7 @@ Standaard worden in dit formulier alle deelvensters aan de linkerkant weergegeve
 
 Om dit standaardgedrag te veranderen, moeten wij het volgende doen
 
->[!VIDEO](https://video.tv.adobe.com/v/338369?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438637?quality=12&learn=on&captions=dut)
 
 
 Voeg de volgende code toe de klikgebeurtenis van de **Volgende** knoop gebruikend de coderedacteur
@@ -57,7 +57,7 @@ Met de bovenstaande code kunt u gemakkelijk navigeren tussen de tabbladen en de 
 
 Met de stijleditor kunt u de titel van de onderliggende tabbladen verbergen.
 
->[!VIDEO](https://video.tv.adobe.com/v/338370?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439134?quality=12&learn=on&captions=dut)
 
 >[!NOTE]
 >

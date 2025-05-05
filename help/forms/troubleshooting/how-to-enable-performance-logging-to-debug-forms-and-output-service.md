@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Deze video loopt door het proces om prestaties het Registreren in AEM Forms toe te laten om kwesties met betrekking tot Forms &amp; de outputdienst te zuiveren.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335499?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439721?quality=12&learn=on&captions=dut)

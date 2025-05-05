@@ -22,4 +22,4 @@ ht-degree: 0%
 
 In de volgende video worden de stappen doorlopen waarmee u Adaptief formulier kunt maken en configureren om hoofdobjecten te maken en weer te geven.
 
->[!VIDEO](https://video.tv.adobe.com/v/340791?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449314?quality=12&learn=on&captions=dut)

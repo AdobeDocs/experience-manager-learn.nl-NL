@@ -533,7 +533,7 @@ Een volledig voorbeeld van het schrijven van een renderer van douaneverwijzingen
 
 ## Voorbeeld van begin tot einde
 
->[!VIDEO](https://video.tv.adobe.com/v/342105?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449706?quality=12&learn=on&captions=dut)
 
 >[!NOTE]
 >

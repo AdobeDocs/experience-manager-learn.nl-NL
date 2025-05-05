@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Leer hoe u een pagina in Edge Delivery Services verwijdert.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425973/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438096/?learn=on&captions=dut)

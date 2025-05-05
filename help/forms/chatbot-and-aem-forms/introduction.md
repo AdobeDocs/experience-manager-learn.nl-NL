@@ -26,7 +26,7 @@ Voor dit leerprogramma zullen wij gegevens samenvoegen die in ChatBot met a [ wo
 
 In de volgende video ziet u hoe u het hoofdlettergebruik gebruikt.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428432?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441798?learn=on&captions=dut)
 
 ## Vereiste
 

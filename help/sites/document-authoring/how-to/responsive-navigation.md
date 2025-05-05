@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Ontdek hoe u responsieve navigatie kunt uitvoeren in het ontwerpen van documenten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425707/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438173/?learn=on&captions=dut)

@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Ontdek hoe Adobe omgaat met vertrouwen en privacy bij het genereren van variaties in het ontwerpen van Edge Delivery Services-documenten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429060/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440020/?learn=on&captions=dut)

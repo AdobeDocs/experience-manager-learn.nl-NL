@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Een diepe duik in hoe het werk in document creatie en hoe de auteurs gemakkelijk omleidingen zonder technische deskundigheid kunnen opzetten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425704/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438549/?learn=on&captions=dut)

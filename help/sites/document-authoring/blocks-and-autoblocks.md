@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Ontdek hoe blokken en autoblokken worden gebruikt bij het ontwerpen van documenten en hoe deze de site en de ontwerpervaring kunnen verbeteren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425703/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439510/?learn=on&captions=dut)

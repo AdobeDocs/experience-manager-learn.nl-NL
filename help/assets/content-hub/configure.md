@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Leer hoe u door de beschikbare tabbladen kunt navigeren en de configuratieopties kunt aanpassen aan de behoeften van uw organisatie. Deze video zal beheerders helpen bij het begrijpen van de verschillende montages en zal instructies op hoog niveau verstrekken om hen voor optimale prestaties en groepering aan organisatorische doelstellingen aan te passen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3439311/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3439317/?learn=on&enablevpops&captions=dut)

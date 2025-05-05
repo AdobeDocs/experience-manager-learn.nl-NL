@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Leer hoe u verificatie van auteurs configureert via de AEM Sidekick in documentontwerpomgeving met Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429594/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438184/?learn=on&captions=dut)

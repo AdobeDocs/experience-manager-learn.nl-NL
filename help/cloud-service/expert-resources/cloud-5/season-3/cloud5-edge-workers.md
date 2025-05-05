@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Ontdek het belang van Edge Workers in AEM Sites en Edge Delivery Services en hoe u deze kunt integreren met uw back-end systemen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427589?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448130?learn=on&captions=dut)
 
 ## Aanvullende bronnen
 

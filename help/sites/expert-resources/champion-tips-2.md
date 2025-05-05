@@ -17,4 +17,4 @@ ht-degree: 0%
 
 # AEM Champion Tips and Tricks: sessie 2
 
->[!VIDEO](https://video.tv.adobe.com/v/3409427?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439843?quality=12&learn=on&captions=dut)

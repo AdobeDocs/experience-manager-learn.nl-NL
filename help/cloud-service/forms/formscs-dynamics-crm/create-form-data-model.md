@@ -22,4 +22,4 @@ ht-degree: 0%
 
 In de volgende video worden de stappen doorlopen waarmee u het gegevensmodel van een formulier kunt maken en configureren.
 
->[!VIDEO](https://video.tv.adobe.com/v/340790?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444798?quality=12&learn=on&captions=dut)

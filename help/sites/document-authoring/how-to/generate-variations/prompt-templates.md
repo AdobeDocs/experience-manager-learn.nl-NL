@@ -24,5 +24,5 @@ ht-degree: 0%
 
 Ontdek hoe u snelle sjablonen kunt gebruiken voor het genereren van variaties in het ontwerpen van Edge Delivery Services-documenten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428307/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441337/?learn=on&captions=dut)
 

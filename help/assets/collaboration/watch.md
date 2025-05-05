@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Leer hoe u meldingen ontvangt wanneer een gecontroleerd middel, controlemap of -verzameling in AEM Assets wordt gewijzigd.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427646/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439631/?learn=on&captions=dut)
 
 >[!TIP]
 >

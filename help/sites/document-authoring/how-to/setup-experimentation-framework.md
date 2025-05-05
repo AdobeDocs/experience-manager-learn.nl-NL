@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Ontdek hoe u het kader voor experimenten kunt instellen in Edge Delivery Services-documentontwerp.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429062/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438934/?learn=on&captions=dut)

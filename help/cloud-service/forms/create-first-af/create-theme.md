@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Een thema bevat opmaakgegevens voor componenten en deelvensters en u kunt een thema opnieuw gebruiken op verschillende formulieren. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u het thema toepast op het formulier, weerspiegelt de opgegeven stijl de overeenkomstige componenten van het formulier.
 
->[!VIDEO](https://video.tv.adobe.com/v/332229?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424881?quality=12&learn=on&captions=dut)

@@ -33,12 +33,12 @@ Er zijn twee gesteunde inhoudsbewaarplaatsen voor [ document authoring ](../../d
 
 Stel SharePoint in als de opslagplaats voor inhoud voor gebruik met Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425712/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446034/?learn=on&captions=dut)
 
 >[!TAB  de Aandrijving van Google ]
 
 Stel Google Drive in als opslagplaats voor inhoud voor gebruik met Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425711/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434726/?learn=on&captions=dut)
 
 >[!ENDTABS]

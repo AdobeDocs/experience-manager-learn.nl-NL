@@ -24,6 +24,6 @@ ht-degree: 0%
 
 Onderzoek hoe te om de malplaatjes van de douaneherinnering voor te bouwen produceerde Variaties in het document van Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428316/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438505/?learn=on&captions=dut)
 
 

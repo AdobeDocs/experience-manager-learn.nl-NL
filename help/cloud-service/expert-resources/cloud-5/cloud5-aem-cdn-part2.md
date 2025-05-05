@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Deel twee van het gebruik van de AEM CDN en duik diep in diverse opties.
 
->[!VIDEO](https://video.tv.adobe.com/v/340994?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448414?quality=12&learn=on&captions=dut)
 
 ## Inhoud van deel 2 van deze reeks
 

@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Verken gebeurtenissen die worden geactiveerd bij het publiceren en ongedaan maken van publicatie in Edge Delivery Services, en gebruik gevallen en voorbeelden voor het gebruik van deze gebeurtenissen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427681?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446662?learn=on&captions=dut)
 
 ## Aanvullende bronnen
 

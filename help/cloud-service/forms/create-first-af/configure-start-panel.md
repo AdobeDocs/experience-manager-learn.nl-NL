@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Stijl de tekst in de statische tekstcomponent gebruikend de rijke tekstredacteur.
 
->[!VIDEO](https://video.tv.adobe.com/v/332235?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440120?quality=12&learn=on&captions=dut)

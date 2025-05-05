@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Leer hoe de Analysator van Beste praktijken (BPA) en Cloud Acceleration Manager (CAM) een aangepaste gids voor het migreren aan AEM as a Cloud Service verstrekt. 
 
->[!VIDEO](https://video.tv.adobe.com/v/336957?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453352?quality=12&learn=on&captions=dut)
 
 ## BPA en CAM gebruiken
 

@@ -22,7 +22,7 @@ ht-degree: 1%
 Of u nu een hypotheek aanvraagt of een nieuwe bankrekening opent, u moet meerdere formulieren invullen en ondertekenen. Dankzij de integratie tussen AEM Forms en Acrobat Sign kunt u gemakkelijk meerdere formulieren invullen en ondertekenen.
 In de volgende video wordt uitgelegd hoe u meerdere formulieren kunt ondertekenen met het gebruik van hoofdletters en kleine letters.
 
->[!VIDEO](https://video.tv.adobe.com/v/330165?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444974?quality=12&learn=on&captions=dut)
 
 ## Vereisten
 

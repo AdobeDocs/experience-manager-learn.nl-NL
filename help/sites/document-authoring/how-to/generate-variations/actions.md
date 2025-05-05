@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Verken de acties die u kunt gebruiken voor een gegenereerde inhoudsvariatie, zoals opslaan, kopiëren, classificeren en meer in Edge Delivery Services-documentontwerpen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428795/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437288/?learn=on&captions=dut)

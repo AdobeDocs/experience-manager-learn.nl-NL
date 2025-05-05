@@ -24,5 +24,5 @@ ht-degree: 0%
 
 Ontdek hoe u sidekick kunt configureren voor het genereren van variaties in Edge Delivery Services-documentontwerp.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428306/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436995/?learn=on&captions=dut)
 

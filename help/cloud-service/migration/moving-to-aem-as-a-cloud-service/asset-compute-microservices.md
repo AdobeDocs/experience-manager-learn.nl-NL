@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Leer hoe u met AEM Assets as a Cloud Service Asset Compute-microservices automatisch en efficiënt uitvoering voor uw middelen kunt genereren en deze rol van de traditionele AEM Workflow kunt vervangen.
 
->[!VIDEO](https://video.tv.adobe.com/v/336990?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454290?quality=12&learn=on&captions=dut)
 
 ## Workflow-migratiehulpprogramma
 

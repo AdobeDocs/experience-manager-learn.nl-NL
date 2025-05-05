@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Leer hoe u alt-tekst toevoegt aan afbeeldingen in pagina&#39;s die zijn gemaakt met behulp van AEM-documenten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425721/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438681/?learn=on&captions=dut)

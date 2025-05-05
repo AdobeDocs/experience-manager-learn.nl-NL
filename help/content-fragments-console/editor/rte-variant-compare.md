@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Leer hoe u met AEM moeiteloos RTE-velden kunt vergelijken en synchroniseren binnen variaties van inhoudsfragmenten. Door deze variaties te vergelijken en te synchroniseren, kunt u consistente berichten over alle kanalen verzekeren die het inhoudsfragment gebruiken.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419314/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437553/?learn=on&captions=dut)

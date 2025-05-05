@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Meer informatie over de basisfuncties en -functies van de AEM as a Cloud Service Content Fragments authoring console.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409492?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449338?quality=12&learn=on&captions=dut)

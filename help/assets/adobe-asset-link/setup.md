@@ -37,11 +37,11 @@ Niet getoond in de video hierboven, kan de Verbinding van het Activa van Adobe v
 
 Leer hoe u Adobe Asset Link voor AEM 6 instelt en uitvoert in Adobe Managed Services of On-premise, gebruikersrechten en AEM as a Cloud Service configureert en hoe u Adobe Asset Link installeert en gebruikt.
 
->[!VIDEO](https://video.tv.adobe.com/v/338823?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434115?quality=12&learn=on&captions=dut)
 
 
 ## Asset Link instellen voor domeinvertrouwen
 
 Leer wat het Vertrouwen van het Domein is, wat het voor het gebruiken van Adobe Asset Link met Experience Manager Assets betekent, en hoe te opstelling het Vertrouwen van het Domein.
 
->[!VIDEO](https://video.tv.adobe.com/v/338825?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454151?quality=12&learn=on&captions=dut)

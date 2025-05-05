@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Leer hoe u de tagtaxonomie beheert in de AEM Assets Assets-weergave.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431081/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447372/?learn=on&captions=dut)

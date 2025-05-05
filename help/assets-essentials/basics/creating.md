@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Leer hoe u elementen kunt uploaden, versies kunt maken en zelfs elementen kunt bewerken met Adobe Photoshop Express.
 
->[!VIDEO](https://video.tv.adobe.com/v/335746?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444006?quality=12&learn=on&captions=dut)

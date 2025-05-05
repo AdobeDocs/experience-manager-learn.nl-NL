@@ -27,7 +27,7 @@ Deze videoomtrek:
 - Wat zijn RDEs?
 - Hoe helpen ze bij een snellere ontwikkeling tot implementatiecycli?
 
->[!VIDEO](https://video.tv.adobe.com/v/3414128?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453604?quality=12&learn=on&captions=dut)
 
 ## Volgende stap
 

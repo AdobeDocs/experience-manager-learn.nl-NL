@@ -21,5 +21,5 @@ ht-degree: 0%
 
 Het gebruik van hoofdletters en kleine letters verbeteren, zoals in deze video wordt getoond
 
->[!VIDEO](https://video.tv.adobe.com/v/335800?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436569?quality=12&learn=on&captions=dut)
 

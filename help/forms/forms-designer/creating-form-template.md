@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Er wordt een aantal sjablonen weergegeven in het vak dat u ongewijzigd kunt gebruiken of aan uw wensen kunt aanpassen. Sjablonen kunnen ook worden gemaakt en beheerd in AEM Forms Designer. U kunt beginnen met een lege pagina, sjabloon, spreadsheet, PDF of Microsoft Word-bestand. Deze video behandelt al deze opties en wat er beschikbaar is in het vak
 
->[!VIDEO](https://video.tv.adobe.com/v/3427678/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439154/?learn=on&captions=dut)

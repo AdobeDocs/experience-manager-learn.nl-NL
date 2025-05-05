@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Leer hoe u voor het web geoptimaliseerde afbeeldingslevering op AEM as a Cloud Service-sites inschakelt met AEM Core Components.
 
->[!VIDEO](https://video.tv.adobe.com/v/346064?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449998?quality=12&learn=on&captions=dut)

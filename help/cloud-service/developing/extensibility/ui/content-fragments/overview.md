@@ -341,7 +341,7 @@ Welkom bij een verzameling voorbeelden van AEM UI-uitbreidingscodes! Deze bron i
       <div class="card-image">
         <figure class="image is-16by9">
           <a href="./examples/editor-custom-field.md" title="Aangepaste velden" tabindex="-1">
-            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3427585?format=jpeg" alt="Aangepaste velden">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3437640?format=jpeg&captions=dut" alt="Aangepaste velden">
           </a>
         </figure>
       </div>

@@ -22,7 +22,7 @@ ht-degree: 0%
 
 In de volgende video wordt het gebruiksscenario beschreven
 
->[!VIDEO](https://video.tv.adobe.com/v/3427096?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443502?learn=on&captions=dut)
 
 
 Als u deze zelfstudie wilt volgen, kunt u het beste het volgende doen:

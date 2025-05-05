@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Leer hoe u met de gebruikersinterface van AEM Content Fragment eenvoudig inhoudsfragmenten kunt vinden met snelle filtering. Met deze functie kunt u snel en moeiteloos specifieke inhoudsfragmenten zoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419310/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436702/?learn=on&captions=dut)

@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Deze video loopt door de stappen om bmc groepsgrootte voor XMLFormService (2 van 2) te tweken.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335553?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439055?quality=12&learn=on&captions=dut)

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Korte video die door de gebruikersinterface van AEM Forms Workbench loopt
 
->[!VIDEO](https://video.tv.adobe.com/v/3429493/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439808/?learn=on&captions=dut)

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Bulkeigenschap bijwerken, voorbeeldextensie
 
->[!VIDEO](https://video.tv.adobe.com/v/3412296?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454459?quality=12&learn=on&captions=dut)
 
 Dit voorbeeld AEM de uitbreiding van de Console van het Fragment van de Inhoud is een [ uitbreiding van de actiebar ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) die bulkupdates een bezit van het Fragment van de Inhoud aan een gemeenschappelijke waarde.
 

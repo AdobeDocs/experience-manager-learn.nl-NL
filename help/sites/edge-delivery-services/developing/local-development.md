@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Een lokale ontwikkelomgeving instellen voor ontwikkeling voor Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425717/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434737/?learn=on&captions=dut)
 
 
 ## Stappen die in video worden beschreven

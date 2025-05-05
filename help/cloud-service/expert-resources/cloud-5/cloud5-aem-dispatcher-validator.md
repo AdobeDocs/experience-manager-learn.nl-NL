@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Een kort voorbeeld van hoe u de dispatchervalidator kunt gebruiken in uw AEM-ontwikkelingsworkflows.
 
->[!VIDEO](https://video.tv.adobe.com/v/342358?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448425?quality=12&learn=on&captions=dut)
 
 ## Inhoud die in deze video wordt behandeld
 

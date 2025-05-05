@@ -22,4 +22,4 @@ ht-degree: 0%
 
 De volgende video begeleidt u door de stappen om de configuratie van de wolkendiensten tot stand te brengen om met Microsoft Dynamics te verbinden.
 
->[!VIDEO](https://video.tv.adobe.com/v/340758?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448304?quality=12&learn=on&captions=dut)

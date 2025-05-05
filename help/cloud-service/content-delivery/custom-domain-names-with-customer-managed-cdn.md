@@ -47,7 +47,7 @@ Als u geen toegang tot derdediensten hebt, _samenwerken met uw veiligheid of het
 
 ## SSL-certificaat genereren
 
->[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441490?quality=12&learn=on&captions=dut)
 
 U hebt twee opties:
 
@@ -222,7 +222,7 @@ Voer de volgende stappen uit om de CDN-regel voor HTTP-headervalidatie te config
 
 ## Geef het geheim door in de X-AEM-Edge-Key HTTP-header
 
->[!VIDEO](https://video.tv.adobe.com/v/3432567?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445051?quality=12&learn=on&captions=dut)
 
 Werk de CDN van de klant bij om het geheim in de `X-AEM-Edge-Key` Kopbal van HTTP over te gaan. Het geheim wordt gebruikt door CDN van Adobe om te bevestigen het verzoek komt van CDN van de klant en zet de `Host` kopbalwaarde in de waarde van `X-Forwarded-Host` om die van CDN van de klant wordt ontvangen.
 

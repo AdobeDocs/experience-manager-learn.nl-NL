@@ -24,7 +24,7 @@ ht-degree: 0%
 Een verbonden app is een framework waarmee een externe toepassing met Salesforce kan integreren via API&#39;s en standaardprotocollen, zoals SAML, OAuth en OpenID Connect. Verbonden apps gebruiken deze protocollen om Single Sign-On (SSO) voor externe apps te verifiëren, autoriseren en beschikbaar te stellen.
 <!--- 331757 was the old video -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3447257?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447263?quality=12&learn=on&captions=dut)
 
 >[!NOTE]
 >Gelieve te zorgen u een rekening in de [ Uitgave van de Ontwikkelaar van Salesforce ](https://developer.salesforce.com/signup) creeert aangezien REST API door gebrek in de ontwikkelaarsuitgave wordt toegelaten.

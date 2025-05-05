@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Configureer uw Edge Delivery Services-ontwikkelomgeving met Git.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425718/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441832/?learn=on&captions=dut)

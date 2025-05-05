@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Ontdek hoe zoekopdrachten van derden het beste kunnen worden geïntegreerd in Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427040?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452611?quality=12&learn=on&captions=dut)
 
 ## Aanvullende bronnen
 

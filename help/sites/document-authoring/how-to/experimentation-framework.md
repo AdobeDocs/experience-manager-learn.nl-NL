@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Onderzoek het experimentatiekader dat marketers toestaat om te testen welke inhoudvariaties het meest effectief zijn in het ontwerpen van Edge Delivery Services-documenten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429061/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437860/?learn=on&captions=dut)

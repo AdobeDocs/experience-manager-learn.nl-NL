@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Leg de elementen van de aanvrager vast met behulp van een herhaalbaar paneel met een accordeonlay-out.
 
->[!VIDEO](https://video.tv.adobe.com/v/336473?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445184?quality=12&learn=on&captions=dut)

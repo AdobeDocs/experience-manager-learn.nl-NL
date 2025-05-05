@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Leer hoe u widgets kunt toevoegen aan de Rich Text Editor (RTE) in de AEM Content Fragment Editor.
 
->[!VIDEO](https://video.tv.adobe.com/v/3420822?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447438?quality=12&learn=on&captions=dut)
 
 Om de dynamische inhoud in de Rijke Redacteur van de Tekst (RTE) toe te voegen, kan de **widgets** functionaliteit worden gebruikt. De widgets helpen om eenvoudige of complexe UI in RTE te integreren en UI kan worden gecreeerd gebruikend het kader JS van uw keus. Ze kunnen worden beschouwd als dialoogvensters die worden geopend door op de speciale toets `{` in de RTE te drukken.
 

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Leer hoe je met AEM Assets Gelijksoortige afbeeldingen kunt vinden, eenvoudig de beste afbeelding voor je behoeften kunt vinden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426796/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438483/?learn=on&captions=dut)

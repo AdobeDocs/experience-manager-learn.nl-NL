@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Leer hoe u efficiënt beheer van digitale middelen in AEM Assets kunt beheren met onze informatieve video, waarin u de functie ZIP extraheren ziet voor het moeiteloos organiseren en uploaden van uw assethiërarchieën rechtstreeks in de DAM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426368/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447148/?learn=on&captions=dut)

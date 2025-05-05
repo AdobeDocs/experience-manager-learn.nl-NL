@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Leer hoe te om de douanetoestemmingen van Cloud Manager [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/custom-permissions.html?lang=nl-NL) in AEM te gebruiken om toegang voor verschillende teams strategisch te beheren, efficiënt en veilig projectbeheer en plaatsing te verzekeren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425892/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449810/?learn=on&captions=dut)

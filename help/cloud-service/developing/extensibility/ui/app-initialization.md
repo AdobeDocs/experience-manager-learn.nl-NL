@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Initialiseer een AEM UI-extensie App Builder-toepassing die definieert waar de extensie wordt weergegeven en welk werk de extensie uitvoert.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412876?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447082?quality=12&learn=on&captions=dut)
 
 >[!IMPORTANT]
 >

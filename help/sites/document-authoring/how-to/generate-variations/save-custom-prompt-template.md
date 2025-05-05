@@ -24,5 +24,5 @@ ht-degree: 0%
 
 Onderzoek hoe te om de malplaatjes van de douaneherinnering voor Generate Variaties in het document van Edge Delivery Services te bewaren creeert.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428317/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437511/?learn=on&captions=dut)
 

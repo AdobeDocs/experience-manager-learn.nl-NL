@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Leer hoe u AEM-gebeurtenissen op een website kunt ontvangen en bekijk de gebeurtenisdetails zoals payload, headers en metagegevens.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449754?quality=12&learn=on&captions=dut)
 
 In dit voorbeeld, die een Adobe-Geleide _ontvangen webhaak_ gebruiken staat u toe om de gebeurtenissen van AEM zonder de behoefte te ontvangen om uw eigen webhaak te vestigen. Deze Adobe-Verstrekte webhaak wordt ontvangen op [ Glitch ](https://glitch.com/), een platform dat voor het aanbieden van een web-based milieu wordt gekend dat aan de bouw van en het opstellen van Webtoepassingen bevordert. De optie voor het gebruik van uw eigen webhaak is echter ook beschikbaar als u dat de voorkeur geeft.
 

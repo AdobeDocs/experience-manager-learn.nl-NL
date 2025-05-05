@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Ontdek hoe u het Adobe Target-publiek kunt gebruiken om de juiste doelgroep te bereiken met de relevante inhoud in Edge Delivery Services-documentontwerp.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428792/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437761/?learn=on&captions=dut)

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Leer hoe u middelen in AEM Assets kunt filteren, zoeken en downloaden.
 
->[!VIDEO](https://video.tv.adobe.com/v/335861?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444000?quality=12&learn=on&captions=dut)

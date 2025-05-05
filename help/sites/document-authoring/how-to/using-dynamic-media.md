@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Leer hoe u Dynamic Media in Edge Delivery Services kunt gebruiken voor geoptimaliseerde aflevering van afbeeldingen en video.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429593/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438909/?learn=on&captions=dut)

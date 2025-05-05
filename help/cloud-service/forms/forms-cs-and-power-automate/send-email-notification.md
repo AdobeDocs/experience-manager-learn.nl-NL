@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Stuur een e-mailmelding naar een aanpasbare formulierafzender met Microsoft Power Automate door veldwaarden uit de formulierverzending te extraheren.
 
->[!VIDEO](https://video.tv.adobe.com/v/345957?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431483?quality=12&learn=on&captions=dut)

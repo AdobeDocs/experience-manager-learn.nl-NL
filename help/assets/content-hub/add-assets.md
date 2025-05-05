@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Leer hoe u elementen kunt uploaden, tags kunt toepassen en de goedkeuringswerkstroom in Adobe Experience Manager Assets Content Hub kunt begrijpen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3450288/?learn=on&captions=dut)

@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Leer hoe u websites snel kunt maken met Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453455/?learn=on&captions=dut)
 
 Herzie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/overview) voor volledige details van Edge Delivery Services en zijn mogelijkheden.
 
@@ -108,7 +108,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience
             <a href="./developing/prerequisites.md" title="Vereisten"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425709/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3434590/?format=jpeg&captions=dut"
                 alt="Vereisten">
             </a>
           </figure>
@@ -140,7 +140,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience
             <a href="./developing/aem-boilerplate.md" title="Boilerplate-sjabloon gebruiken"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="Instellen
+                src="https://video.tv.adobe.com/v/3434617/?format=jpeg&captions=dut" alt="Instellen
                 Boilerplate">
             </a>
           </figure>
@@ -172,7 +172,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience
             <a href="./developing/content-repository.md" title="Google Drive koppelen"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425711/?format=jpeg" alt="Google Drive koppelen">
+                src="https://video.tv.adobe.com/v/3434726/?format=jpeg&captions=dut" alt="Google Drive koppelen">
             </a>
           </figure>
         </div>
@@ -202,7 +202,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience
           <figure class="image is-16by9">
             <a href="./developing/content-repository.md" title="Sharepoint koppelen" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425712/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3446034/?format=jpeg&captions=dut"
                 alt="Sharepoint koppelen">
             </a>
           </figure>
@@ -234,7 +234,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience
             <a href="./developing/preview-and-publish.md" title="Inhoud voorvertonen en publiceren"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Inhoud voorvertonen en publiceren">
+                src="https://video.tv.adobe.com/v/3434715/?format=jpeg&captions=dut" alt="Inhoud voorvertonen en publiceren">
             </a>
           </figure>
         </div>
@@ -265,7 +265,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience
             <a href="./developing/sidekick.md" title="De Sidekick gebruiken"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425715/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441292/?format=jpeg&captions=dut"
                 alt="De Sidekick gebruiken">
             </a>
           </figure>
@@ -297,7 +297,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience
             <a href="./developing/document-structure.md" title="Documentstructuur"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425716/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3445195/?format=jpeg&captions=dut"
                 alt="Documentstructuur">
             </a>
           </figure>
@@ -329,7 +329,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience
             <a href="./developing/local-development.md" title="Lokale ontwikkeling"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425717/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3434737/?format=jpeg&captions=dut"
                 alt="Lokale ontwikkeling">
             </a>
           </figure>
@@ -361,7 +361,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience
             <a href="./developing/git.md" title="Integreren met Git"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425718/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441832/?format=jpeg&captions=dut"
                 alt="Integreren met Git">
             </a>
           </figure>
@@ -398,7 +398,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience
             <a href="./how-to/rss.md" title="RSS-feeds maken"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425725/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438005/?format=jpeg&captions=dut"
                 alt="RSS-feeds maken">
             </a>
           </figure>
@@ -430,7 +430,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience
             <a href="./how-to/social-media-sharing.md" title="Delen van sociale media"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425974/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3439443/?format=jpeg&captions=dut"
                 alt="Delen van sociale media">
             </a>
           </figure>
@@ -462,7 +462,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience
             <a href="./how-to/delete-page.md" title="Pagina&apos;s verwijderen"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425973/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438096/?format=jpeg&captions=dut"
                 alt="Pagina&apos;s verwijderen">
             </a>
           </figure>

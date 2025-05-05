@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Haal de score van uw vuurtoren op tot 100 bij het kopen van query&#39;s en het optimaliseren van zoekopdrachten voor grote aantallen records. Werk met technieken om de query-index te optimaliseren, verbeter de zoekfunctionaliteit en deel query-indexen voor optimale prestaties
 
->[!VIDEO](https://video.tv.adobe.com/v/3440976/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440984/?learn=on&enablevpops&captions=dut)

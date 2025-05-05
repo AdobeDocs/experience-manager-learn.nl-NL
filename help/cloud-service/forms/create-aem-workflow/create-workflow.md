@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Workflowmodel maken met AEM Forms-workflowcomponenten. de component van het gebruik of-Splitsen om het werkschema te vertakken dat op de waarde van de staatsvariabele wordt gebaseerd.
 
->[!VIDEO](https://video.tv.adobe.com/v/332434?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453197?quality=12&learn=on&captions=dut)

@@ -36,7 +36,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="set-up.md" title="Documentontwerpinstellingen"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425699/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438868/?format=jpeg&captions=dut"
                 alt="Overzicht van Document Authoring">
             </a>
           </figure>
@@ -68,7 +68,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="preview-and-publish.md" title="Inhoud voorvertonen en publiceren"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425700/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441347/?format=jpeg&captions=dut"
                 alt="Inhoud voorvertonen en publiceren">
             </a>
           </figure>
@@ -100,7 +100,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="document-structure.md" title="Documentstructuur"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425701/?format=jpeg" alt="Documentstructuur">
+                src="https://video.tv.adobe.com/v/3438817/?format=jpeg&captions=dut" alt="Documentstructuur">
             </a>
           </figure>
         </div>
@@ -131,7 +131,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="default-content-and-sections.md" title="Standaardinhoud en -secties"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425702/?format=jpeg" alt="Standaardinhoud en -secties">
+                src="https://video.tv.adobe.com/v/3437981/?format=jpeg&captions=dut" alt="Standaardinhoud en -secties">
             </a>
           </figure>
         </div>
@@ -161,7 +161,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
           <figure class="image is-16by9">
             <a href="blocks-and-autoblocks.md" title="Blokken en autoblokken" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425703/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3439510/?format=jpeg&captions=dut"
                 alt="Blokken en autoblokken">
             </a>
           </figure>
@@ -194,7 +194,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="redirects.md" title="Omleiding"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425704/?format=jpeg" alt="Omleiding">
+                src="https://video.tv.adobe.com/v/3438549/?format=jpeg&captions=dut" alt="Omleiding">
             </a>
           </figure>
         </div>
@@ -225,7 +225,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="bulk-metadata.md" title="Bulkmetagegevens"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425705/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438424/?format=jpeg&captions=dut"
                 alt="Bulkmetagegevens">
             </a>
           </figure>
@@ -258,7 +258,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="page-metadata.md" title="Metagegevens pagina"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425706/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438074/?format=jpeg&captions=dut"
                 alt="Metagegevens pagina">
             </a>
           </figure>
@@ -290,7 +290,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="author-authentication.md" title="Authentificatie"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429594/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438184/?format=jpeg&captions=dut"
                 alt="Authentificatie">
             </a>
           </figure>
@@ -327,7 +327,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/responsive-navigation.md" title="Responsieve navigatie"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425707/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438173/?format=jpeg&captions=dut"
                 alt="Responsieve navigatie">
             </a>
           </figure>
@@ -359,7 +359,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/document-audit.md" title="Documentcontrole"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425722/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3437717/?format=jpeg&captions=dut"
                 alt="Documentcontrole">
             </a>
           </figure>
@@ -391,7 +391,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/document-permissions.md" title="Documentmachtigingen"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425724/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438107/?format=jpeg&captions=dut"
                 alt="Documentmachtigingen">
             </a>
           </figure>
@@ -423,7 +423,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/document-versions.md" title="Documentversies"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425728/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438802/?format=jpeg&captions=dut"
                 alt="Documentversies">
             </a>
           </figure>
@@ -455,7 +455,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/document-workflows.md" title="Workflows voor documenten"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425720/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438296/?format=jpeg&captions=dut"
                 alt="Workflows voor documenten">
             </a>
           </figure>
@@ -487,7 +487,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/iframes.md" title="iFrames gebruiken"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425719/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438395/?format=jpeg&captions=dut"
                 alt="iFrames gebruiken">
             </a>
           </figure>
@@ -519,7 +519,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/image-alt-text.md" title="Alt-tekst gebruiken"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425721/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438681/?format=jpeg&captions=dut"
                 alt="Alt-tekst gebruiken">
             </a>
           </figure>
@@ -551,7 +551,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/no-index.md" title="Indexering voorkomen"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425726/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438121/?format=jpeg&captions=dut"
                 alt="Indexering voorkomen">
             </a>
           </figure>
@@ -583,7 +583,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/using-dynamic-media.md" title="Dynamische media"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429593/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438909/?format=jpeg&captions=dut"
                 alt="Dynamische media">
             </a>
           </figure>
@@ -615,7 +615,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/migration-using-importer.md" title="Sitemigratie met Importer"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429595/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3443702/?format=jpeg&captions=dut"
                 alt="Sitemigratie met Importer">
             </a>
           </figure>
@@ -647,7 +647,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/customizing-importer.md" title="De importmodule aanpassen"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429596/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3444251/?format=jpeg&captions=dut"
                 alt="De importmodule aanpassen">
             </a>
           </figure>
@@ -679,7 +679,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/bulk-importing-using-importer.md" title="Bulk importeren met behulp van importmodule"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429597/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3445891/?format=jpeg&captions=dut"
                 alt="Bulk importeren met behulp van importmodule">
             </a>
           </figure>
@@ -716,7 +716,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/generate-variations/overview.md" title="Variaties genereren"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428307/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441337/?format=jpeg&captions=dut"
                 alt="Variaties genereren">
             </a>
           </figure>
@@ -748,7 +748,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/generate-variations/configure-sidekick.md" title="Variaties genereren - Sidekick configureren"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428306/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3436995/?format=jpeg&captions=dut"
                 alt="Variaties genereren - Sidekick configureren">
             </a>
           </figure>
@@ -780,7 +780,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/generate-variations/prompt-templates.md" title="Variaties genereren - Sjablonen vragen"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428307/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441337/?format=jpeg&captions=dut"
                 alt="Variaties genereren - Sjablonen vragen">
             </a>
           </figure>
@@ -812,7 +812,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Variaties genereren - Aangepaste snelle sjablonen"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428316/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438505/?format=jpeg&captions=dut"
                 alt="Variaties genereren - Aangepaste snelle sjablonen">
             </a>
           </figure>
@@ -844,7 +844,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Variaties genereren - Aangepaste promptsjablonen opslaan"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428317/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3437511/?format=jpeg&captions=dut"
                 alt="Variaties genereren - Aangepaste promptsjablonen opslaan">
             </a>
           </figure>
@@ -876,7 +876,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/generate-variations/using-target-audiences.md" title="Variaties genereren - Adobe Target-publiek gebruiken"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428792/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3437761/?format=jpeg&captions=dut"
                 alt="Variaties genereren - Adobe Target-publiek gebruiken">
             </a>
           </figure>
@@ -908,7 +908,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="Variaties genereren - CSV-bestandsuitzendingen gebruiken"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428793/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3436893/?format=jpeg&captions=dut"
                 alt="Variaties genereren - CSV-bestandsuitzendingen gebruiken">
             </a>
           </figure>
@@ -940,7 +940,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Variaties genereren - Adobe Firefly gebruiken"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428794/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438362/?format=jpeg&captions=dut"
                 alt="Variaties genereren - Adobe Firefly gebruiken">
             </a>
           </figure>
@@ -972,7 +972,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/generate-variations/actions.md" title="Variaties genereren - Handelingen voor een gegenereerde variatie"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428795/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3437288/?format=jpeg&captions=dut"
                 alt="Variaties genereren - Handelingen voor een gegenereerde variatie">
             </a>
           </figure>
@@ -1004,7 +1004,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/generate-variations/trust-privacy.md" title="Variaties genereren - Vertrouwen en privacy"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429060/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3440020/?format=jpeg&captions=dut"
                 alt="Variaties genereren - Vertrouwen en privacy">
             </a>
           </figure>
@@ -1036,7 +1036,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/experimentation-framework.md" title="Overzicht van het kader voor experimenten"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429061/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3437860/?format=jpeg&captions=dut"
                 alt="Overzicht van het kader voor experimenten">
             </a>
           </figure>
@@ -1068,7 +1068,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/setup-experimentation-framework.md" title="Vaststelling van een kader voor experimenten"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429062/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438934/?format=jpeg&captions=dut"
                 alt="Vaststelling van een kader voor experimenten">
             </a>
           </figure>
@@ -1100,7 +1100,7 @@ Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./how-to/experimentation-add-metadata.md" title="Metagegevens toevoegen voor experimenten"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428796/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3440113/?format=jpeg&captions=dut"
                 alt="Metagegevens toevoegen voor experimenten">
             </a>
           </figure>

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Korte video die het toevoegen van een Krabbelhandtekening aan AEM Forms beschrijft
 
->[!VIDEO](https://video.tv.adobe.com/v/3427626/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437326/?learn=on&captions=dut)

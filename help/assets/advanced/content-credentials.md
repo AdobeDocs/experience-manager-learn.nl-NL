@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Leer hoe de geloofsbrieven van de inhoud van AEM Assets [&#128279;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/content-credentials) verifieerbare meta-gegevens verstrekken om de authenticiteit en de integriteit van digitale activa te verzekeren, die vertrouwen en transparantie in inhoudsverwezenlijking bevorderen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3441700/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441717/?learn=on&enablevpops&captions=dut)

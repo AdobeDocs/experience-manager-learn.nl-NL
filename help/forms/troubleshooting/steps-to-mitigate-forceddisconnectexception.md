@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Deze video loopt door de mogelijke oorzaken en de stappen om ForcedDisconnectException* te verlichten
 
->[!VIDEO](https://video.tv.adobe.com/v/335483?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438725?quality=12&learn=on&captions=dut)

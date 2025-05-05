@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Ontdek hoe u documentworkflows kunt gebruiken met AEM-documentontwerp.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425720/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438296/?learn=on&captions=dut)

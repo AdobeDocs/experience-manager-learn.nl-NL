@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Een dieptehandleiding voor het ophalen van een aanmeldingstoken voor Cloud Service-integratie en enkele gebruiksgevallen daarvoor.
 
->[!VIDEO](https://video.tv.adobe.com/v/341277?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448643?quality=12&learn=on&captions=dut)
 
 ## Inhoud die in deze video wordt behandeld
 

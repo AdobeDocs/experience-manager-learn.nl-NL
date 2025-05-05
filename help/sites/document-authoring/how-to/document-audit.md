@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Leer hoe u documenten die zijn geschreven, kunt controleren met AEM-documenten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425722/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437717/?learn=on&captions=dut)

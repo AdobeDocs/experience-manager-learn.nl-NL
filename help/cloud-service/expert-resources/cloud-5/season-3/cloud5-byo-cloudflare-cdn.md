@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Onderzoek hoe te om uw eigen CDN van het Klantflare in Edge Delivery Services te vormen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428100/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452542/?quality=12&learn=on&captions=dut)
 
 ## Aanvullende bronnen
 

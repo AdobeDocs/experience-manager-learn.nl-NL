@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Korte video waarin het maken en testen van scripts in AEM Forms Designer wordt beschreven
 
->[!VIDEO](https://video.tv.adobe.com/v/3427627/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443713/?learn=on&captions=dut)

@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Leer hoe u met Content Transfer Tool inhoud van AEM 6.3+ naar AEM as a Cloud Service kunt migreren.
 
->[!VIDEO](https://video.tv.adobe.com/v/336970?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454753?quality=12&learn=on&captions=dut)
 
 ## Het gereedschap Inhoud overbrengen gebruiken
 

@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Dynamic Media Snapshot is een visueel demonstratieprogramma dat is ontworpen om de kracht van dynamische media te illustreren voor geoptimaliseerde en dynamische beeldlevering. Experimenteer met testbeelden of Dynamische Media URLs, om de output van diverse Dynamische het beeldbepalingen van Media, en Slimme optimalisaties van het Beeld voor dossiergrootte (met levering WebP en AVIF), netwerk, en de Verhouding van het Pixel van het Apparaat (DPR) visueel waar te nemen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419421/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445569/?learn=on&captions=dut)
 
 <a href="https://snapshot.scene7.com/" class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM">
   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Dynamische Momentopname van Media van de Lancering </span>

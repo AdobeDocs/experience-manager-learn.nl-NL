@@ -26,6 +26,6 @@ ht-degree: 0%
 
 Leer hoe u Workfront en AEM Assets configureert voor het beheren en synchroniseren van metagegevens van elementen met behulp van aangepaste Workfront-formulieren en AEM-metagegevensschema&#39;s.
 
->[!VIDEO](https://video.tv.adobe.com/v/340332?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431497?quality=12&learn=on&captions=dut)
 
 _Deel twee van a [ vier deel deskundige reeksen op Workfront voor Experience Manager verbeterde schakelaar](./overview.md)_

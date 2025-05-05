@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Leer hoe u overerving op een site kunt weergeven of beheren of uitrollingsbewerkingen kunt uitvoeren met de overzichtsconsole van Live kopie.
 
->[!VIDEO](https://video.tv.adobe.com/v/36680?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3432385?quality=12&learn=on&captions=dut)

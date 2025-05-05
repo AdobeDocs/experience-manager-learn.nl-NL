@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Leer hoe Adobe Experience Manager Assets, geïntegreerd met Adobe Firefly, lege zoekresultaten omzet in een productieve ervaring voor het genereren van bedrijfsmiddelen, zodat gebruikers probleemloos middelen kunnen zoeken en uploaden in hun workflow.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429070/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438263/?learn=on&captions=dut)
 
 
 >[!TIP]

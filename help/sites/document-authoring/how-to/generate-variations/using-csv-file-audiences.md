@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Ontdek hoe u het publiek van het CSV-bestand kunt gebruiken om de juiste doelgroep te bereiken met de relevante inhoud in het ontwerpen van Edge Delivery Services-documenten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428793/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436893/?learn=on&captions=dut)

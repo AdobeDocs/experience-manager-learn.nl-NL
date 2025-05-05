@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Leer hoe u problemen met de AEM SDK, AEM as a Cloud Service en het ontwikkelings- en implementatieproces kunt oplossen en er fouten in kunt opsporen.
 
->[!VIDEO](https://video.tv.adobe.com/v/336964?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454665?quality=12&learn=on&captions=dut)

@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Introductie om Variaties in Edge Delivery Services te produceren en het begrijpen hoe het voor marketers nuttig kan zijn.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428304/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438560/?learn=on&captions=dut)

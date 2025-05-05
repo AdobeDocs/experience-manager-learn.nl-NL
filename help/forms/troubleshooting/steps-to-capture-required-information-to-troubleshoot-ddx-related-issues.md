@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Deze video loopt door de stappen om de vereiste informatie te vangen om DX verwante kwesties in de dienst van de Assembler van Forms problemen op te lossen.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335517?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439187?quality=12&learn=on&captions=dut)

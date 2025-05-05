@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Voorproef en publiceer inhoud met Edge Delivery Services gebruikend [ AEM Sidekick ](./sidekick.md).
 
->[!VIDEO](https://video.tv.adobe.com/v/3425714/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434715/?learn=on&captions=dut)

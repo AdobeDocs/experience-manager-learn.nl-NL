@@ -23,4 +23,4 @@ ht-degree: 0%
 
 De werkbalk wordt doorgaans toegevoegd op containerniveau van het formulier. De werkbalk kan knoppen bevatten waarmee u naar de vorige en volgende deelvensters van het formulier kunt navigeren, het formulier kunt verzenden, de formuliergegevens kunt opslaan enzovoort.
 
->[!VIDEO](https://video.tv.adobe.com/v/332236?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424949?quality=12&learn=on&captions=dut)

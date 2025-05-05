@@ -85,4 +85,4 @@ Als u in het creëren van de douanefuncties problemen hebt, voel vrij om [ dit p
 ## De aangepaste functies gebruiken
 
 De volgende video begeleidt u door de stappen betrokken bij het gebruiken van douanefunctie in de regelredacteur van een adaptief vorm
->[!VIDEO](https://video.tv.adobe.com/v/340305?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445847?quality=12&learn=on&captions=dut)

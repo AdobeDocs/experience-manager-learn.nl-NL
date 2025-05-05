@@ -23,13 +23,13 @@ ht-degree: 0%
 
 Deel 1 - Titels, afbeeldingen, tekstvelden en datumvelden toevoegen
 
->[!VIDEO](https://video.tv.adobe.com/v/3427620/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439732/?learn=on&captions=dut)
 
 Deel 2 - Aangepaste objecten en formulierfragmenten toevoegen en maken
 
->[!VIDEO](https://video.tv.adobe.com/v/3427621/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439587/?learn=on&captions=dut)
 
 Toegang tot Help-inhoud
 
->[!VIDEO](https://video.tv.adobe.com/v/3427622/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437239/?learn=on&captions=dut)
 

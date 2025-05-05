@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Voeg onderliggende deelvensters toe aan het hoofddeelvenster en configureer de indeling van de onderliggende deelvensters.
 
->[!VIDEO](https://video.tv.adobe.com/v/332238?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447282?quality=12&learn=on&captions=dut)

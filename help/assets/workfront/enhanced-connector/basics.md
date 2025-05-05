@@ -31,4 +31,4 @@ Leer over de grondbeginselen van de Adobe Workfront en Experience Manager Assets
 + Versiemiddelen
 + Elementen automatisch publiceren
 
->[!VIDEO](https://video.tv.adobe.com/v/337575?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454301?quality=12&learn=on&captions=dut)

@@ -39,7 +39,7 @@ Dit is een meerdelig leerprogramma en men veronderstelt dat de stappen die in he
 
 Breng vervolgens wijzigingen aan in de themabronnen, zodat de site overeenkomt met de vormgeving van het WKND-merk.
 
->[!VIDEO](https://video.tv.adobe.com/v/332918?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453626?quality=12&learn=on&captions=dut)
 
 Stappen op hoog niveau voor de video:
 

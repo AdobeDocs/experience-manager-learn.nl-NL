@@ -22,7 +22,7 @@ ht-degree: 0%
 
 De Browser van de Bewaarplaats is een krachtig hulpmiddel dat zicht in de onderliggende gegevensopslag van AEM verstrekt, die voor het gemakkelijke zuiveren van het milieu van AEM as a Cloud Service toestaat. Browser van de Bewaarplaats steunt een read-only mening van de middelen en de eigenschappen van AEM op Productie, Stadium, en Ontwikkeling, evenals de auteur, de Publish, en de diensten van de Voorproef.
 
->[!VIDEO](https://video.tv.adobe.com/v/341464?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447060?quality=12&learn=on&captions=dut)
 
 Browser van de Bewaarplaats is __slechts__ beschikbaar op de milieu&#39;s van AEM as a Cloud Service (gebruik [ CRXDE Lite ](../aem-sdk-local-quickstart/other-tools.md#crxde-lite) om lokale AEM SDK te zuiveren).
 

@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Verken technieken voor ontwikkeling in Edge Delivery Services met een gekruiste architect. Kiran zal u door veel van de kwesties laten lopen die hij heeft ondervonden met betrekking tot projecten en hoe ze op te lossen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440978/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441006/?learn=on&enablevpops&captions=dut)
