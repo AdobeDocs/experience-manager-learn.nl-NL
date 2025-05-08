@@ -6,22 +6,22 @@ version: Experience Manager as a Cloud Service
 topic: Content Management
 role: Developer
 level: Experienced
-last-substantial-update: 2024-04-08T00:00:00Z
+last-substantial-update: 2025-04-28T00:00:00Z
 doc-type: Tutorial
 jira: KT-15313
 thumbnail: KT-15313.jpeg
 exl-id: d04c3316-6f8f-4fd1-9df1-3fe09d44f735
 duration: 256
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 107a9a77a1bf2337f309d503a4a310d8d0781f0d
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
 
 # Elementen exporteren
 
-Leer hoe u elementen naar uw lokale computer exporteert met een aanpasbaar Node.js-script. Dit de uitvoermanuscript verstrekt een voorbeeld van hoe te om activa van AEM programmatically te downloaden gebruikend [ AEM Assets HTTP APIs ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), specifiek het concentreren op de originele vertoningen om de hoogste kwaliteit te verzekeren. Deze is ontworpen om de mapstructuur van AEM Assets op uw lokale station te repliceren, zodat u eenvoudig back-ups kunt maken van middelen of deze kunt migreren.
+Leer hoe u elementen naar uw lokale computer exporteert met een aanpasbaar Node.js-script. Dit de uitvoermanuscript verstrekt een voorbeeld van hoe te om activa van AEM programmatically te downloaden gebruikend [ AEM Assets HTTP APIs ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), specifiek het concentreren op de originele vertoningen om de hoogste kwaliteit te verzekeren. Deze is ontworpen om de mapstructuur van AEM Assets op uw lokale station te repliceren, zodat u eenvoudig back-ups kunt maken van middelen of deze kunt migreren.
 
 Het script downloadt alleen de oorspronkelijke uitvoeringen van het element, zonder de bijbehorende metagegevens, tenzij die metagegevens als XMP in het element zijn ingesloten. Dit betekent dat beschrijvende informatie, categorieën of tags die in AEM zijn opgeslagen maar niet in de elementbestanden zijn geïntegreerd, niet in de download zijn opgenomen. Andere vertoningen kunnen ook worden gedownload door het manuscript te wijzigen om hen te omvatten. Zorg ervoor dat u voldoende ruimte hebt om de geëxporteerde elementen op te slaan.
 
@@ -31,9 +31,9 @@ Voordat u het script uitvoert, moet u het configureren met de URL van de AEM-ins
 
 ## Script exporteren
 
-Het script, geschreven als een JavaScript-module, maakt deel uit van een Node.js-project, omdat het afhankelijk is van `node-fetch` . U kunt [ het project als zip dossier ](./assets/export/export-aem-assets-script.zip) downloaden, of het manuscript hieronder in een leeg project Node.js van type `module` kopiëren, en `npm install node-fetch` in werking stellen om het gebiedsdeel te installeren.
+Het script, geschreven als een JavaScript-module, maakt deel uit van een Node.js-project omdat het afhankelijk is van `node-fetch` en `p-limit` . U kunt het onderstaande script kopiëren naar een leeg Node.js-project van het type `module` en `npm install node-fetch p-limit` uitvoeren om de afhankelijkheid te installeren.
 
-Met dit script wordt de mappenstructuur van AEM Assets doorlopen en worden elementen en mappen naar een lokale map op uw computer gedownload. Het gebruikt [ HTTP API van AEM Assets ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) om de omslag en activagegevens te halen, en de originele vertoningen van de activa te downloaden.
+Met dit script wordt de mappenstructuur van AEM Assets doorlopen en worden elementen en mappen naar een lokale map op uw computer gedownload. Het gebruikt [ HTTP API van AEM Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) om de omslag en activagegevens te halen, en de originele vertoningen van de activa te downloaden.
 
 ```javascript
 // export-assets.js
@@ -41,6 +41,7 @@ Met dit script wordt de mappenstructuur van AEM Assets doorlopen en worden eleme
 import fetch from 'node-fetch';
 import { promises as fs } from 'fs';
 import path from 'path';
+import pLimit from 'p-limit';
 
 // Do not process the contents of these well-known AEM system folders
 const SKIP_FOLDERS = ['/content/dam/appdata', '/content/dam/projects', '/content/dam/_CSS', '/content/dam/_DMSAMPLE' ];
@@ -54,11 +55,10 @@ const SKIP_FOLDERS = ['/content/dam/appdata', '/content/dam/projects', '/content
  */
 function isValidFolder(entity, aemPath) {
     if (aemPath === '/content/dam') {
-        // Always allow processing /content/dam 
         return true;
     } else if (!entity.class.includes('assets/folder')) {
         return false;
-    } if (SKIP_FOLDERS.find((path) => path === aemPath)) {
+    } else if (SKIP_FOLDERS.find((path) => path === aemPath)) {
         return false;
     } else if (entity.properties.hidden) {
         return false;
@@ -78,7 +78,6 @@ function isDownloadable(entity) {
     } else if (entity.properties.contentFragment) {
         return false;
     }
-
     return true;
 }
 
@@ -86,7 +85,7 @@ function isDownloadable(entity) {
  * Helper function to get the link from the entity based on the relationship name.
  * @param {Object} entity the entity from the AEM Assets HTTP API
  * @param {String} rel the relationship name
- * @returns 
+ * @returns {String} link URL
  */
 function getLink(entity, rel) {
     return entity.links.find(link => link.rel.includes(rel));
@@ -95,7 +94,7 @@ function getLink(entity, rel) {
 /**
  * Helper function to fetch JSON data from the AEM Assets HTTP API.
  * @param {String} url the AEM Assets HTTP API URL to fetch data from
- * @returns the JSON response of the AEM Assets HTTP API
+ * @returns {Object} the JSON response
  */
 async function fetchJSON(url) {
     const response = await fetch(url, {
@@ -107,7 +106,7 @@ async function fetchJSON(url) {
     });
 
     if (!response.ok) {
-        throw new Error(`Error: ${response.status}`);
+        throw new Error(`Error fetching ${url}: ${response.status}`);
     }
 
     return response.json();
@@ -137,16 +136,15 @@ async function downloadFile(url, outputPath) {
 }
 
 /**
- * Main entry
- * @param {Object} options the options for downloading assets
- * @param {String} options.folderUrl the URL of the AEM folder to download
- * @param {String} options.localPath the local path to save the downloaded assets
- * @param {String} options.aemPath the AEM path of the folder to download
+ * Main entry point to download assets from AEM.
+ * 
+ * @param {Object} options 
+ * @param {String} options.apiUrl (optional) the direct AEM Assets HTTP API URL
+ * @param {String} options.localPath local filesystem path to save the assets
+ * @param {String} options.aemPath AEM folder path
  */
-async function downloadAssets({apiUrl, localPath = LOCAL_DOWNLOAD_FOLDER, aemPath = '/content/dam'}) {    
+async function downloadAssets({ apiUrl, localPath = LOCAL_DOWNLOAD_FOLDER, aemPath = '/content/dam' }) {
     if (!apiUrl) {
-        // Handle the initial call to the script, which should just provide the AEM path
-        // Construct the proper AEM Assets HTTP API URL as it uses a truncated AEM path
         const prefix = "/content/dam/";
         let apiPath = aemPath.startsWith(prefix) ? aemPath.substring(prefix.length) : aemPath;    
 
@@ -154,13 +152,13 @@ async function downloadAssets({apiUrl, localPath = LOCAL_DOWNLOAD_FOLDER, aemPat
             apiPath = '/' + apiPath;
         }
 
-        apiUrl = `${AEM_HOST}/api/assets.json${apiPath}`
+        apiUrl = `${AEM_HOST}/api/assets.json${apiPath}`;
     }
     
     const data = await fetchJSON(apiUrl);
     const entities = data.entities || [];
 
-    // Process folders first
+    // First, process folders
     for (const folder of entities.filter(entity => entity.class.includes('assets/folder'))) {
         const newLocalPath = path.join(localPath, folder.properties.name);
         const newAemPath = path.join(aemPath, folder.properties.name);
@@ -170,33 +168,26 @@ async function downloadAssets({apiUrl, localPath = LOCAL_DOWNLOAD_FOLDER, aemPat
         }
 
         await fs.mkdir(newLocalPath, { recursive: true });
-    
+
         await downloadAssets({
-            apiUrl: getLink(folder, 'self')?.href, 
-            localPath: newLocalPath, 
+            apiUrl: getLink(folder, 'self')?.href,
+            localPath: newLocalPath,
             aemPath: newAemPath
         });
     }
 
-    let downloads = [];
+    // Now, process assets with concurrency limit
+    const limit = pLimit(MAX_CONCURRENT_DOWNLOADS);
+    const downloads = [];
 
-    // Process assets
     for (const asset of entities.filter(entity => entity.class.includes('assets/asset'))) {
         const assetLocalPath = path.join(localPath, asset.properties.name);
         if (isDownloadable(asset)) {
-            downloads.push(downloadFile(getLink(asset, 'content')?.href, assetLocalPath));
-        }
-
-        // Process in batches of MAX_CONCURRENT_DOWNLOADS
-        if (downloads.length >= MAX_CONCURRENT_DOWNLOADS) {
-            await Promise.all(downloads);
-            downloads = [];
+            downloads.push(limit(() => downloadFile(getLink(asset, 'content')?.href, assetLocalPath)));
         }
     }
 
-    // Wait for the remaining downloads to finish
     await Promise.all(downloads);
-    downloads = [];
 
     // Handle pagination
     const nextUrl = getLink(data, 'next');
@@ -224,7 +215,7 @@ const AEM_ASSETS_FOLDER = '/content/dam/wknd-shared';
 // The local folder to save the downloaded assets.
 const LOCAL_DOWNLOAD_FOLDER = './exported-assets';
 
-// The number of maximum concurrent downloads to avoid overwhelming the client or server. 10 is typically a good value.
+// The number of maximum concurrent downloads to avoid overwhelming the client or server.
 const MAX_CONCURRENT_DOWNLOADS = 10;
 
 /***** SCRIPT ENTRY POINT *****/
@@ -232,7 +223,7 @@ const MAX_CONCURRENT_DOWNLOADS = 10;
 console.time('Download AEM assets');
 
 await downloadAssets({
-    aemPath: AEM_ASSETS_FOLDER, 
+    aemPath: AEM_ASSETS_FOLDER,
     localPath: LOCAL_DOWNLOAD_FOLDER
 }).catch(console.error);
 
@@ -243,7 +234,7 @@ console.timeEnd('Download AEM assets');
 
 Werk de configuratievariabelen onder aan het script bij terwijl het script is gedownload.
 
-`AEM_ACCESS_TOKEN` kan worden verkregen gebruikend de stappen in de [ op token-gebaseerde authentificatie aan AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview) leerprogramma. Vaak volstaat het token voor ontwikkelaars van 24 uur, zolang het exporteren minder dan 24 uur duurt en de gebruiker die het token genereert leestoegang heeft tot de te exporteren middelen.
+`AEM_ACCESS_TOKEN` kan worden verkregen gebruikend de stappen in de [ op token-gebaseerde authentificatie aan AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview) leerprogramma. Vaak volstaat het token voor ontwikkelaars van 24 uur, zolang het exporteren minder dan 24 uur duurt en de gebruiker die het token genereert leestoegang heeft tot de te exporteren middelen.
 
 ```javascript
 ...
@@ -294,6 +285,6 @@ Downloaded asset: exported-assets/wknd-shared/en/magazine/western-australia/adob
 Download AEM assets: 24.770s
 ```
 
-De geëxporteerde elementen bevinden zich in de lokale map die is opgegeven in de configuratie `LOCAL_DOWNLOAD_FOLDER` . De mappenstructuur weerspiegelt de AEM Assets-mappenstructuur, waarbij de elementen naar de juiste submappen worden gedownload. Deze dossiers kunnen aan [ gesteunde leveranciers van de wolkenopslag ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view), voor [ bulkinvoer ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/migration/bulk-import) in andere instanties van AEM, of voor reservedoeleinden worden geupload.
+De geëxporteerde elementen bevinden zich in de lokale map die is opgegeven in de configuratie `LOCAL_DOWNLOAD_FOLDER` . De mappenstructuur weerspiegelt de AEM Assets-mappenstructuur, waarbij de elementen naar de juiste submappen worden gedownload. Deze dossiers kunnen aan [ gesteunde leveranciers van de wolkenopslag ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view), voor [ bulkinvoer ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/bulk-import) in andere instanties van AEM, of voor reservedoeleinden worden geupload.
 
 ![ Uitgevoerde activa ](./assets/export/exported-assets.png)
