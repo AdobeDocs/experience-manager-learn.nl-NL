@@ -12,9 +12,9 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
+source-git-commit: 34a22580db6dc32b5c4c5945af83600be2e0a852
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1440'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 0%
 # AEM API&#39;s instellen die zijn gebaseerd op OpenAPI
 
 Leer hoe u uw AEM as a Cloud Service-omgeving instelt om toegang tot de op OpenAPI gebaseerde AEM API&#39;s mogelijk te maken.
+
+In dit voorbeeld wordt de AEM Assets API die de Server-to-Server verificatiemethode gebruikt, gebruikt om het installatieproces aan te tonen. Dezelfde stappen kunnen worden gevolgd voor andere op OpenAPI gebaseerde AEM API&#39;s.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
 
@@ -42,7 +44,7 @@ De modernisering van het milieu van AEM as a Cloud Service is een eenmalige mili
 
 ### AEM-instantie bijwerken{#update-aem-instance}
 
-Om de instantie van AEM bij te werken, in de Adobe [ Cloud Manager _van de Milieu_ sectie van 1&rbrace; &lbrace;, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **optie van de Update**.](https://my.cloudmanager.adobe.com/)
+Om de instantie van AEM bij te werken, in de Adobe [ Cloud Manager _van de Milieu_ sectie van 1} {, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **optie van de Update**.](https://my.cloudmanager.adobe.com/)
 
 ![ Update AEM instantie ](./assets/setup/update-aem-instance.png)
 
@@ -54,7 +56,7 @@ In mijn geval, wordt de FullstackPipeline genoemd **Dev:: Fullstack-Deploy**, en
 
 ### Nieuwe productprofielen toevoegen{#add-new-product-profiles}
 
-Om nieuwe Profielen van het Product aan de instantie van AEM toe te voegen, in de 2&rbrace; sectie van de Milieu&#39;s [&#128279;](https://my.cloudmanager.adobe.com/) van Adobe __, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **toevoegen de optie van de Profielen van het Product**.
+Om nieuwe Profielen van het Product aan de instantie van AEM toe te voegen, in de 2} sectie van de Milieu&#39;s ](https://my.cloudmanager.adobe.com/) van Adobe __, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **toevoegen de optie van de Profielen van het Product**.[
 
 ![ voeg nieuwe Profielen van het Product ](./assets/setup/add-new-product-profiles.png) toe
 
@@ -76,15 +78,27 @@ U kunt de _Diensten_ ook selecteren of schrappen verbonden aan het Profiel van h
 
 Herzie de vereniging door op het _pictogram van de Details van de Mening_ naast de naam van het Profiel van het Product te klikken.
 
-{de diensten van het 0} Overzicht verbonden aan het Profiel van het Product ![&#128279;](./assets/setup/review-services-associated-with-product-profile.png)
+{de diensten van het 0} Overzicht verbonden aan het Profiel van het Product ](./assets/setup/review-services-associated-with-product-profile.png)![
 
-Door gebrek, wordt de **AEM Assets API Gebruikers** Dienst niet geassocieerd met om het even welk Profiel van het Product. Laat ons het met de onlangs toegevoegde **Gebruikers van de Medewerker van AEM Assets associëren - auteur - Programma XXX - Milieu XXX** Profiel van het Product. Na deze vereniging, kan de 20&rbrace; ActivaAuteur API van het Project ADC _opstelling de gewenste Server-aan-Server authentificatie en de authentificatierekening van het project associëren ADC (die in volgende stap) met het Profiel van het Product wordt gecreeerd._
+### Toegang tot AEM Assets API&#39;s inschakelen{#enable-aem-assets-apis-access}
+
+Door gebrek, wordt de **AEM Assets API Gebruikers** Dienst niet geassocieerd met om het even welk Profiel van het Product. Laat ons het met de onlangs toegevoegde **Gebruikers van de Medewerker van AEM Assets associëren - auteur - Programma XXX - het Profiel van het Product van het Milieu XXX** of een ander Profiel van het Product dat u voor de toegang van AEM Assets API wilt gebruiken.
 
 ![ associeerde de Dienst van de Gebruikers van AEM Assets API met het Profiel van het Product ](./assets/setup/associate-aem-assets-api-users-service-with-product-profile.png)
 
+### Server-naar-server verificatie inschakelen
+
+Om de server-aan-server authentificatie voor de gewenste AEM APIs toe te laten, moet de gebruikersinstelling die integratie gebruikend Adobe Developer Console (ADC) gebruiken als Ontwikkelaar aan het Profiel van het Product worden toegevoegd waar de Dienst wordt geassocieerd.
+
+Bijvoorbeeld, om de server-aan-server authentificatie voor AEM Assets API toe te laten, moet de gebruiker als Ontwikkelaar aan de **Gebruikers van de Medewerker van AEM Assets - auteur - Programma XXX - het Profiel van het Product van het Milieu XXX** worden toegevoegd.
+
+![ associeerde Ontwikkelaar aan het Profiel van het Product ](./assets/setup/associate-developer-to-product-profile.png)
+
+Na deze vereniging, kan de 20} ActivaAuteur API van het Project ADC _opstelling de gewenste Server-aan-Server authentificatie en de authentificatierekening van het project associëren ADC (die in volgende stap) met het Profiel van het Product wordt gecreeerd._
+
 >[!IMPORTANT]
 >
->De bovenstaande stap is van essentieel belang om de Server-to-Server-verificatie voor de AEM Assets API in te schakelen. Zonder deze koppeling kan de AEM Assets API niet worden gebruikt met de Server-to-Server verificatiemethode.
+>De bovenstaande stap is essentieel om de Server-naar-server verificatie voor de gewenste AEM API in te schakelen. Zonder deze koppeling kan de AEM API niet worden gebruikt met de Server-to-Server verificatiemethode.
 
 ## Adobe Developer Console-project (ADC) maken{#adc-project}
 
@@ -125,6 +139,11 @@ Nadat u het ADC-project hebt gemaakt, moet u de gewenste AEM API&#39;s toevoegen
    ![ Uitgezochte authentificatie ](./assets/s2s/select-authentication.png)
 
    De server-aan-server authentificatie is ideaal voor de backenddiensten die API toegang zonder gebruikersinteractie vereisen. De opties Web App en Single Page App voor verificatie zijn geschikt voor toepassingen die API-toegang nodig hebben namens gebruikers. Zie [ Verschil tussen Server-aan-Server van OAuth vs Web App vs Één enkele geloofsbrieven van de Toepassing van de Pagina ](./overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials) voor meer informatie.
+
+   >[!TIP]
+   >
+   >Als u niet de server-aan-server authentificatieoptie ziet, betekent het dat de gebruiker die opstelling de integratie niet als Ontwikkelaar aan het Profiel van het Product wordt toegevoegd waar de Dienst wordt geassocieerd. Zie [ Server-aan-Server authentificatie ](#enable-server-to-server-authentication) voor meer informatie toelaten.
+
 
 1. Indien nodig kunt u de naam van de API wijzigen om deze gemakkelijker te kunnen identificeren. Voor demo-doeleinden wordt de standaardnaam gebruikt.
 

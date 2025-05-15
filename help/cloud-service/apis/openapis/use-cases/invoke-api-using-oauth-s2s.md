@@ -12,9 +12,9 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 34a22580db6dc32b5c4c5945af83600be2e0a852
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1727'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ In deze zelfstudie leert u hoe u:
 Controleer voordat u begint het volgende:
 
 - [ Toegang hebbend tot Adobe APIs en verwante concepten ](../overview.md#accessing-adobe-apis-and-related-concepts) sectie.
-- [&#128279;](../setup.md) artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.
+- ](../setup.md) artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.[
 
 ## Vereisten
 
@@ -88,6 +88,10 @@ Vorm ADC de stap van het Project wordt _herhaald_ van [ OpenAPI-Gebaseerde AEM A
 1. Daarna, in _vorm API_ dialoog, selecteer de **server-aan-server** authentificatieoptie en klik **daarna**. De server-aan-server authentificatie is ideaal voor de backenddiensten die API toegang zonder gebruikersinteractie vereisen.
 
    ![ Uitgezochte authentificatie ](../assets/s2s/select-authentication.png)
+
+   >[!TIP]
+   >
+   >Als u niet de server-aan-server authentificatieoptie ziet, betekent het dat de gebruiker die opstelling de integratie niet als Ontwikkelaar aan het Profiel van het Product wordt toegevoegd waar de Dienst wordt geassocieerd. Zie [ Server-aan-Server authentificatie ](../setup.md#enable-server-to-server-authentication) voor meer informatie toelaten.
 
 1. Wijzig de naam van de referentie voor gemakkelijkere identificatie (indien nodig) en klik **daarna**. Voor demo-doeleinden wordt de standaardnaam gebruikt.
 
@@ -430,7 +434,7 @@ Voer de volgende stappen uit om te controleren of de technische gebruiker en geb
 
 - De gebruikersvereniging van het Profiel van het Product en de technische rekening kunnen in de **Profiles van het Product** worden geverifieerd **API geloofsbrieven** tabel.
 
-  {de geloofsbrieven van API van het Profiel van 0} Product ![&#128279;](../assets/s2s/product-profile-api-credentials.png)
+  {de geloofsbrieven van API van het Profiel van 0} Product ](../assets/s2s/product-profile-api-credentials.png)![
 
 ## 403-fout voor niet-GET-aanvragen
 
