@@ -44,7 +44,7 @@ De modernisering van het milieu van AEM as a Cloud Service is een eenmalige mili
 
 ### AEM-instantie bijwerken{#update-aem-instance}
 
-Om de instantie van AEM bij te werken, in de Adobe [ Cloud Manager _van de Milieu_ sectie van 1} {, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **optie van de Update**.](https://my.cloudmanager.adobe.com/)
+Om de instantie van AEM bij te werken, in de Adobe [ Cloud Manager _van de Milieu_ sectie van 1&rbrace; &lbrace;, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **optie van de Update**.](https://my.cloudmanager.adobe.com/)
 
 ![ Update AEM instantie ](./assets/setup/update-aem-instance.png)
 
@@ -56,7 +56,7 @@ In mijn geval, wordt de FullstackPipeline genoemd **Dev:: Fullstack-Deploy**, en
 
 ### Nieuwe productprofielen toevoegen{#add-new-product-profiles}
 
-Om nieuwe Profielen van het Product aan de instantie van AEM toe te voegen, in de 2} sectie van de Milieu&#39;s ](https://my.cloudmanager.adobe.com/) van Adobe __, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **toevoegen de optie van de Profielen van het Product**.[
+Om nieuwe Profielen van het Product aan de instantie van AEM toe te voegen, in de 2&rbrace; sectie van de Milieu&#39;s [&#128279;](https://my.cloudmanager.adobe.com/) van Adobe __, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **toevoegen de optie van de Profielen van het Product**.
 
 ![ voeg nieuwe Profielen van het Product ](./assets/setup/add-new-product-profiles.png) toe
 
@@ -78,7 +78,7 @@ U kunt de _Diensten_ ook selecteren of schrappen verbonden aan het Profiel van h
 
 Herzie de vereniging door op het _pictogram van de Details van de Mening_ naast de naam van het Profiel van het Product te klikken.
 
-{de diensten van het 0} Overzicht verbonden aan het Profiel van het Product ](./assets/setup/review-services-associated-with-product-profile.png)![
+{de diensten van het 0} Overzicht verbonden aan het Profiel van het Product ![&#128279;](./assets/setup/review-services-associated-with-product-profile.png)
 
 ### Toegang tot AEM Assets API&#39;s inschakelen{#enable-aem-assets-apis-access}
 
@@ -94,7 +94,7 @@ Bijvoorbeeld, om de server-aan-server authentificatie voor AEM Assets API toe te
 
 ![ associeerde Ontwikkelaar aan het Profiel van het Product ](./assets/setup/associate-developer-to-product-profile.png)
 
-Na deze vereniging, kan de 20} ActivaAuteur API van het Project ADC _opstelling de gewenste Server-aan-Server authentificatie en de authentificatierekening van het project associëren ADC (die in volgende stap) met het Profiel van het Product wordt gecreeerd._
+Na deze vereniging, kan de 20&rbrace; ActivaAuteur API van het Project ADC _opstelling de gewenste Server-aan-Server authentificatie en de authentificatierekening van het project associëren ADC (die in volgende stap) met het Profiel van het Product wordt gecreeerd._
 
 >[!IMPORTANT]
 >
