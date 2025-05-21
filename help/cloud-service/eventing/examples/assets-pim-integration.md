@@ -47,7 +47,7 @@ De integratiestroom op hoog niveau is als volgt:
 
 U hebt het volgende nodig om deze zelfstudie te voltooien:
 
-- Het milieu van AEM as a Cloud Service met [ toegelaten de Gebeurtenis van AEM ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Ook, moet het steekproef ](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) project van de Plaatsen WKND [ worden opgesteld aan het.
+- Het milieu van AEM as a Cloud Service met [ toegelaten de Gebeurtenis van AEM ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Ook, moet het steekproef [&#128279;](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) project van de Plaatsen WKND  worden opgesteld aan het.
 
 - Toegang tot [ Adobe Developer Console ](https://developer.adobe.com/developer-console/docs/guides/getting-started).
 
@@ -77,7 +77,7 @@ Als u AEM Assets Events wilt ontvangen en de Adobe I/O Runtime-actie wilt uitvoe
 
 - In ADC, navigeer aan het [ project ](https://developer.adobe.com/console/projects) dat u in stap-3 creeerde. Selecteer in dat project de `Stage` -werkruimte waar de runtimeactie wordt uitgevoerd wanneer u `aio app deploy` uitvoert als onderdeel van de instructies voor stap 4.
 
-- Klik **toevoegen de** knoop van de Dienst {en selecteren de **optie van de Gebeurtenis**. In **voeg Gebeurtenissen** dialoog toe, selecteer **Experience Cloud** > **AEM Assets**, en klik **daarna**.
+- Klik **toevoegen de** knoop van de Dienst &lbrace;en selecteren de **optie van de Gebeurtenis**. In **voeg Gebeurtenissen** dialoog toe, selecteer **Experience Cloud** > **AEM Assets**, en klik **daarna**.
   ![ Gebeurtenis AEM Assets - voeg gebeurtenis ](../assets/examples/assets-pim-integration/add-aem-assets-event.png) toe
 
 - In **vorm gebeurtenisregistratie** stap, selecteer de gewenste instantie AEMCS, toen _Voltooide gebeurtenis van de Verwerking van Activa_, en het Server-aan-Server authentificatietype OAuth.
