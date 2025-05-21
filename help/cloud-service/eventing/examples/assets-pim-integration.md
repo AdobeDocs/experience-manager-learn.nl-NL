@@ -12,7 +12,7 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: ab499385a1df8c4b0ac58b6a382faa29b262e3ba
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 0%
@@ -47,7 +47,7 @@ De integratiestroom op hoog niveau is als volgt:
 
 U hebt het volgende nodig om deze zelfstudie te voltooien:
 
-- Het milieu van AEM as a Cloud Service met [ toegelaten de Gebeurtenis van AEM ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Ook, moet het steekproef [&#128279;](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) project van de Plaatsen WKND  worden opgesteld aan het.
+- Het milieu van AEM as a Cloud Service met [ toegelaten de Gebeurtenis van AEM ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Ook, moet het steekproef ](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) project van de Plaatsen WKND [ worden opgesteld aan het.
 
 - Toegang tot [ Adobe Developer Console ](https://developer.adobe.com/developer-console/docs/guides/getting-started).
 
@@ -57,8 +57,8 @@ U hebt het volgende nodig om deze zelfstudie te voltooien:
 
 De ontwikkelingsstappen op hoog niveau zijn:
 
-1. [ Modernisering van het milieu van AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
-1. [ laat de toegang van AEM APIs ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access) toe
+1. [ Modernisering van het milieu van AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
+1. [ laat de toegang van AEM APIs ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access) toe
 1. [Een project maken in de Adobe Developer Console (ADC)](./runtime-action.md#Create-project-in-Adobe-Developer-Console)
 1. [Initialiseer het project voor lokale ontwikkeling](./runtime-action.md#initialize-project-for-local-development)
 1. Vorm het project in ADC
@@ -69,7 +69,7 @@ De ontwikkelingsstappen op hoog niveau zijn:
 1. Metagegevensschema voor elementen maken en toepassen
 1. Verificatie van het uploaden van elementen en update van metagegevens
 
-Voor details op stappen 1-2, verwijs naar [ OpenAPI-Gebaseerde gids van AEM APIs aanhalen ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) en voor stappen 3-4 verwijzen naar de [ Actie van Adobe I/O Runtime en de Gebeurtenissen van AEM ](./runtime-action.md#) voorbeeld. Raadpleeg de volgende secties voor stappen 5-9.
+Voor details op stappen 1-2, verwijs naar [ OpenAPI-Gebaseerde gids van AEM APIs aanhalen ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) en voor stappen 3-4 verwijzen naar de [ Actie van Adobe I/O Runtime en de Gebeurtenissen van AEM ](./runtime-action.md#) voorbeeld. Raadpleeg de volgende secties voor stappen 5-9.
 
 ### Het project configureren in Adobe Developer Console (ADC)
 
@@ -77,7 +77,7 @@ Als u AEM Assets Events wilt ontvangen en de Adobe I/O Runtime-actie wilt uitvoe
 
 - In ADC, navigeer aan het [ project ](https://developer.adobe.com/console/projects) dat u in stap-3 creeerde. Selecteer in dat project de `Stage` -werkruimte waar de runtimeactie wordt uitgevoerd wanneer u `aio app deploy` uitvoert als onderdeel van de instructies voor stap 4.
 
-- Klik **toevoegen de** knoop van de Dienst &lbrace;en selecteren de **optie van de Gebeurtenis**. In **voeg Gebeurtenissen** dialoog toe, selecteer **Experience Cloud** > **AEM Assets**, en klik **daarna**.
+- Klik **toevoegen de** knoop van de Dienst {en selecteren de **optie van de Gebeurtenis**. In **voeg Gebeurtenissen** dialoog toe, selecteer **Experience Cloud** > **AEM Assets**, en klik **daarna**.
   ![ Gebeurtenis AEM Assets - voeg gebeurtenis ](../assets/examples/assets-pim-integration/add-aem-assets-event.png) toe
 
 - In **vorm gebeurtenisregistratie** stap, selecteer de gewenste instantie AEMCS, toen _Voltooide gebeurtenis van de Verwerking van Activa_, en het Server-aan-Server authentificatietype OAuth.
@@ -221,7 +221,7 @@ Verwijs naar het in bijlage [ WKND-Assets-PIM-Integration.zip ](../assets/exampl
         'Content-Type': 'application/json-patch+json',
         'If-Match': '*',
         'X-Adobe-Accept-Experimental': '1',
-        'X-Api-Key': 'aem-assets-management-api', // temporary value
+        'X-Api-Key': '12345676', // Use the `ClientID` value from the ADC Project's credentials section
         Authorization: `Bearer ${access_token}`,
       },
       body: JSON.stringify(transformedMetadata),
@@ -293,7 +293,7 @@ Verwijs naar het in bijlage [ WKND-Assets-PIM-Integration.zip ](../assets/exampl
 
 Door gebrek, heeft het project van Plaatsen WKND niet het schema van activa meta-gegevens om de specifieke meta-gegevens PIM zoals SKU, de Naam van de Leverancier, enz. te tonen. Laten we het metagegevensschema voor elementen maken en toepassen op een elementenmap in de AEM-instantie.
 
-1. Login aan de instantie van Activa van AEM as a Cloud Service en is in de [ mening van Activa ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/authoring/switch-views).
+1. Login aan de instantie van Activa van AEM as a Cloud Service en is in de [ mening van Activa ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views).
 
    ![ de mening van AEM Assets ](../assets/examples/assets-pim-integration/aem-assets-view.png)
 
