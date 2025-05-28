@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: ebc609ae621ea5d4d0eba0e28202448b6eaeb8cc
+source-git-commit: 2ffe4706856f0dbf63f2916af010f23bdb7b0045
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '456'
 ht-degree: 7%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 7%
    + [Sidekick-insteekmodule](./edge-delivery-services/sidekick-plugin.md)
 
 + Adobe GenStudio{#adobe-genstudio}
-   + [ AEM Assets en GenStudio for Performance Marketing ](https://experienceleague.adobe.com/nl/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
+   + [ AEM Assets en GenStudio for Performance Marketing ](https://experienceleague.adobe.com/en/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
 
 + Delen en distributie{#sharing}
    + [Elementen downloaden](./sharing/download.md)
@@ -140,6 +140,7 @@ ht-degree: 7%
    + [Dynamisch mediaoverzicht](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Dynamic Media Classic Desktop-toepassing](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Afbeeldingen {#images}
+      + [Afbeeldingsautomatisering](dynamic-media/dynamic-media-image-automation.md)
       + [Dynamische mediasjablonen](dynamic-media/dynamic-media-templates.md)
       + [Dynamische mediaopname](dynamic-media/dynamic-media-snapshot.md)
       + [Slim uitsnijden](dynamic-media/smart-crop-feature-video-use.md)
@@ -200,4 +201,4 @@ ht-degree: 7%
 + Implementatie{#deployment}
    + [Meerdere huurders en gelijktijdige ontwikkeling](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [ Hoofdzaak van Activa](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=nl-NL){target=_blank}
++ [ Hoofdzaak van Activa ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html){target=_blank}
