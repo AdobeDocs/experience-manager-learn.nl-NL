@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: c4a961fb-e440-4f78-b40d-e8049078b3c0
 duration: 307
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: b395b3b84e63fe6c24e597d1628f4aed5ba47469
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -30,7 +30,7 @@ In dit hoofdstuk, maken wij config veranderingen in het __project van Plaatsen W
 
 ## Overzicht van configuratieveranderingen in het full-stack AEM-project
 
->[!VIDEO](https://video.tv.adobe.com/v/3453615?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3409419?quality=12&learn=on)
 
 ## Vereisten {#prerequisites}
 
@@ -94,7 +94,7 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
            }),
        new CopyWebpackPlugin({
            patterns: [
-               { from: path.resolve(__dirname, SOURCE_ROOT + '/resources'), to: './clientlib-site' }
+               { from: path.resolve(__dirname, SOURCE_ROOT + '/resources'), to: './theme' }
            ]
        })
    ...
@@ -195,7 +195,7 @@ Breng deze wijzigingen tot slot door naar de Adobe Git-opslagplaats van uw progr
 
 ## De voorzichtigheid - _laat Voorste Pijl van het Eind_ knoop toe
 
-De [ Selector van het Spoorspoor ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=nl-NL) &quot;s [ optie van de Plaats ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=nl-NL) toont **toelaten Voorste Pijpleiding van het Eind** op het selecteren van uw plaatswortel of plaatspagina. Het klikken **laat de Voorste knoop van het Eind toe** hierboven **het Schuiven vormt**, zorg ervoor **u** deze knoop na het opstellen boven veranderingen via de pijpleidingsuitvoering van Cloud Manager niet klikt.
+De [ Selector van het Spoorspoor ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) &quot;s [ optie van de Plaats ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) toont **toelaten Voorste Pijpleiding van het Eind** op het selecteren van uw plaatswortel of plaatspagina. Het klikken **laat de Voorste knoop van het Eind toe** hierboven **het Schuiven vormt**, zorg ervoor **u** deze knoop na het opstellen boven veranderingen via de pijpleidingsuitvoering van Cloud Manager niet klikt.
 
 ![ laat Voorste knoop van de Pijl van het Eind toe ](assets/enable-front-end-Pipeline-button.png)
 
