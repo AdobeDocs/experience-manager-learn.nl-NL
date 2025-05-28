@@ -60,5 +60,5 @@ Hieronder ziet u de voorbeeld-URL&#39;s van de Dynamic Media Image Server die in
 
 ## Dynamic Media Image Server-API&#39;s
 
-* [ Dynamisch Beeld van Media die en API teruggeven dienen ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference)
+* [ Dynamisch Beeld van Media die en API teruggeven dienen ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference)
 * [ Dynamische voorproef van de Momentopname van Media ](https://snapshot.scene7.com/)
