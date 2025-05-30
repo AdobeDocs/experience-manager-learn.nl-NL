@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Leer hoe BambooHR AI gebruikte om gebroken backs te identificeren en te herstellen, wat leidde tot een 4% toename van het organische verkeer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459238/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461993/?learn=on&enablevpops&captions=dut)

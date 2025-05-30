@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Ontdek hoe verhalen vertellen-principes in landmuziek gerelateerd zijn aan het ontwerp van GenAI-tools voor digitale ervaringen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459229/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462015/?learn=on&enablevpops&captions=dut)

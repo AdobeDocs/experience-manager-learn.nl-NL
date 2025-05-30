@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Ontdek hoe u met Semantische zoekopdrachten in AEM Assets inhoud kunt zoeken die beter aansluit bij uw intentie.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459226/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461894/?learn=on&enablevpops&captions=dut)

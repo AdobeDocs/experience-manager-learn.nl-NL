@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Zie hoe u met Content AI snel en efficiënt aantrekkelijke inhoudvariaties kunt maken.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459227/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461883/?learn=on&enablevpops&captions=dut)

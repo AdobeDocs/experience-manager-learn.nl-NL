@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Emily Kellman laat zien hoe Adobe.com Variaties genereren heeft gebruikt om de snelheid van de inhoud te verhogen, tijdlijnen te reduceren en conversies te stimuleren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459232/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462714/?learn=on&enablevpops&captions=dut)

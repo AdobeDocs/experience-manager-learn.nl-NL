@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Leer hoe de Generatie van de Ervaring marketers toelaat om inhoud voor diverse personen, kanalen, en geografische gebieden aan te passen terwijl het handhaven van controle.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459245/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462408/?learn=on&enablevpops&captions=dut)

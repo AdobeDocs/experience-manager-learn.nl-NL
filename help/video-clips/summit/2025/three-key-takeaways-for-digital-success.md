@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Bekijk de drie basisprincipes voor het optimaliseren van digitale ervaringen: de basisbeginselen vastleggen, AI benutten en strategische leiders meer mogelijkheden bieden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459234/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462048/?learn=on&enablevpops&captions=dut)

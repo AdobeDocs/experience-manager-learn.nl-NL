@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Leer hoe de AEM AI Assistant het zoeken naar productkennis vereenvoudigt en het maken van ondersteuningstickets automatiseert.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459225/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461923/?learn=on&enablevpops&captions=dut)
