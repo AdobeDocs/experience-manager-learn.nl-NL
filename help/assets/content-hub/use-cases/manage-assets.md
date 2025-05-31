@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Leer hoe u AEM Assets Content Hub kunt gebruiken om goedgekeurde merkmiddelen eenvoudig te beheren en te delen, waardoor uw teams sneller dan ooit marketingcampagnes kunnen voeren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3457638/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3463062/?learn=on&enablevpops&captions=dut)

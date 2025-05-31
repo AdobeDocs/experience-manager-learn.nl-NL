@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Leer hoe u Dynamic Media in AEM gebruikt om virtuele uitvoeringen te maken, transparantie te beheren en beeldverwerking te automatiseren voor schaalbaar hergebruik van inhoud.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459589/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3463051/?learn=on&enablevpops&captions=dut)
 
 
 ## Voorbeeld van dynamische media-elementen
