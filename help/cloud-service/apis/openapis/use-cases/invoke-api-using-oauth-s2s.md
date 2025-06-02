@@ -12,7 +12,7 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: 34a22580db6dc32b5c4c5945af83600be2e0a852
+source-git-commit: 9a5d811cf92a09da27057f99e1b6b2ed8df2a414
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 0%
@@ -36,7 +36,7 @@ In deze zelfstudie leert u hoe u:
 Controleer voordat u begint het volgende:
 
 - [ Toegang hebbend tot Adobe APIs en verwante concepten ](../overview.md#accessing-adobe-apis-and-related-concepts) sectie.
-- [&#128279;](../setup.md) artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.
+- ](../setup.md) artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.[
 
 ## Vereisten
 
@@ -139,9 +139,9 @@ De `assetId` is de JCR-UUID van het element met het voorvoegsel `urn:aaid:aem:` 
 
 ### De API aanroepen met de browser
 
-Alvorens de toepassing te ontwikkelen, laten wij API gebruiken aanhalen gebruikend **het** eigenschap in de [ API documentatie ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) uitproberen.
+Alvorens de toepassing te ontwikkelen, laten wij API gebruiken aanhalen gebruikend **het** eigenschap in de [ API documentatie ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/author/) uitproberen.
 
-1. Open de [ documentatie van de AuteurAPI van Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) in browser.
+1. Open de [ documentatie van de AuteurAPI van Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/author/) in browser.
 
 1. Vouw de _sectie van Meta-gegevens_ uit en klik op **levert de gespecificeerde meta-gegevens van activa** optie.
 
@@ -434,7 +434,7 @@ Voer de volgende stappen uit om te controleren of de technische gebruiker en geb
 
 - De gebruikersvereniging van het Profiel van het Product en de technische rekening kunnen in de **Profiles van het Product** worden geverifieerd **API geloofsbrieven** tabel.
 
-  {de geloofsbrieven van API van het Profiel van 0} Product ![&#128279;](../assets/s2s/product-profile-api-credentials.png)
+  {de geloofsbrieven van API van het Profiel van 0} Product ](../assets/s2s/product-profile-api-credentials.png)![
 
 ## 403-fout voor niet-GET-aanvragen
 
