@@ -11,7 +11,7 @@ thumbnail: 333477.jpg
 doc-type: Tutorial
 exl-id: a55c1dda-f74a-4914-aa1b-c4de8ad1253e
 duration: 426
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: dbf63f30ccfd06e4f4d7883c2f7bc4ac78245364
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Aan de slag met AEM Sites - Snel site maken {#site-template}
 
-{{edge-delivery-services}}
+{{traditional-aem}}
 
 Leer hoe u een low-code aanpak gebruikt om uw eerste site te maken in Adobe Experience Manager met Snel site maken en een vooraf gedefinieerde Sjabloon. Gebruik componenten en sjablonen buiten de box om een site snel in bedrijf te stellen. Gebruik een Adobe XD-gedreven themaworkflow om merkspecifieke stijlen en aanpassingen toe te passen met alleen CSS en JavaScript. Aanbevolen voor nieuwe projecten en ontwikkelaars.
 
@@ -31,7 +31,7 @@ Leer hoe u een low-code aanpak gebruikt om uw eerste site te maken in Adobe Expe
 
 ## AEM as a Cloud Service-omgeving {#environment}
 
-De stappen in deze zelfstudie vinden plaats in een Adobe Experience Manager as a Cloud Service-omgeving. Zorg ervoor dat u beheertoegang hebt tot de AEM-omgeving. Het wordt geadviseerd om het programma van de a [ Sandbox ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html?lang=nl-NL) en [ Ontwikkeling milieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL) te gebruiken wanneer de voltooiing van dit leerprogramma.
+De stappen in deze zelfstudie vinden plaats in een Adobe Experience Manager as a Cloud Service-omgeving. Zorg ervoor dat u beheertoegang hebt tot de AEM-omgeving. Het wordt geadviseerd om het programma van de a [ Sandbox ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) en [ Ontwikkeling milieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) te gebruiken wanneer de voltooiing van dit leerprogramma.
 
 ## Volgende stappen {#next-steps}
 

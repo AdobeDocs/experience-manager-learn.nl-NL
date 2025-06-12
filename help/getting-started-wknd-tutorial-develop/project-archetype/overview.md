@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
 recommendations: disable
 duration: 74
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: dbf63f30ccfd06e4f4d7883c2f7bc4ac78245364
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -21,20 +21,20 @@ ht-degree: 0%
 
 # Aan de slag met AEM Sites - Project Archetype {#project-archetype}
 
-{{edge-delivery-services-and-page-editor}}
+{{traditional-aem}}
 
 Welkom bij een meerdelige zelfstudie die is ontworpen voor nieuwe ontwikkelaars in Adobe Experience Manager (AEM). In deze zelfstudie wordt de implementatie besproken van een AEM-site voor een fictieve levensstijl, de WKND.
 
-Dit leerprogramma begint door het [ Archetype van het Project van AEM te gebruiken ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) om een nieuw project te produceren.
+Dit leerprogramma begint door het [ Archetype van het Project van AEM te gebruiken ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) om een nieuw project te produceren.
 
 Het leerprogramma wordt ontworpen om met **AEM as a Cloud Service** te werken en is achterwaarts compatibel met **AEM 6.5.14+**. De site wordt geïmplementeerd met:
 
-* [ Gemaakt AEM Project Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL)
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
-* [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html?lang=nl-NL)
+* [ Gemaakt AEM Project Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html)
 * [ Sling Models ](https://sling.apache.org/documentation/bundles/models.html)
-* [ Bewerkbare Malplaatjes ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=nl-NL)
-* [Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=nl-NL)
+* [ Bewerkbare Malplaatjes ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
+* [Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
 
 *schat 1-2 uren om door elk deel van het leerprogramma te krijgen.*
 
@@ -46,7 +46,7 @@ Er is een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. De sch
 
 Het volgende moet lokaal worden geïnstalleerd:
 
-* [ Lokale AEM **2&rbrace; instantie van de Auteur ](https://experience.adobe.com/#/downloads) (Cloud Service SDK of 6.5.14+)**
+* [ Lokale AEM **2} instantie van de Auteur ](https://experience.adobe.com/#/downloads) (Cloud Service SDK of 6.5.14+)**
 * [ Java™ 11 ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [ Apache Maven ](https://maven.apache.org/) (3.3.9 of nieuwer)
 * [ Node.js ](https://nodejs.org/en/) (LTS - steun op lange termijn)
@@ -57,9 +57,9 @@ Het volgende moet lokaal worden geïnstalleerd:
 
 >[!NOTE]
 >
-> **Nieuw aan AEM as a Cloud Service?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL).
+> **Nieuw aan AEM as a Cloud Service?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 >
-> **Nieuw aan AEM 6.5?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=nl-NL).
+> **Nieuw aan AEM 6.5?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
 ## GitHub {#github}
 

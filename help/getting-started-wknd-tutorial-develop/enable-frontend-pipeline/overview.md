@@ -15,7 +15,7 @@ last-substantial-update: 2022-09-23T00:00:00Z
 doc-type: Tutorial
 exl-id: b795e7e8-f611-4fc3-9846-1d3f1a28ccbc
 duration: 206
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: dbf63f30ccfd06e4f4d7883c2f7bc4ac78245364
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -23,6 +23,8 @@ ht-degree: 0%
 ---
 
 # Open front-end pijpleiding voor standaard AEM project Archetype{#enable-front-end-pipeline-standard-aem-project}
+
+{{traditional-aem}}
 
 Leer hoe te om het [ WebND Project van de Plaatsen van AEM ](https://github.com/adobe/aem-guides-wknd) (alias StandaardProject van AEM) toe te laten gecreeerd gebruikend [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) om front-end middelen zoals CSS, JavaScript, Doopvonten, en Pictogrammen op te stellen gebruikend een front-end pijpleiding voor een snellere ontwikkeling-aan-plaatsingscyclus. De scheiding van front-end ontwikkeling van full-stack back-end ontwikkeling op AEM. U leert ook hoe deze front-end middelen __niet__ van de bewaarplaats van AEM maar van CDN, een verandering in leveringsparadigm worden gediend.
 
@@ -33,10 +35,10 @@ Na de conversie van het WKND-project naar AEM kunnen de front-end ontwikkelaars 
 
 >[!IMPORTANT]
 >
->Over het algemeen, wordt de front-end pijpleiding typisch gebruikt met het [ Snelle Gemaakt van de Plaats van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/overview.html?lang=nl-NL), is er een verwant leerprogramma [ Begonnen het worden met AEM Sites - Snelle Verwezenlijking van de Plaats ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html?lang=nl-NL) om meer over het te leren. In deze zelfstudie en bijbehorende video&#39;s komen verwijzingen ernaar aan de orde, om ervoor te zorgen dat subtiele verschillen worden uitgeroepen en er een directe of indirecte vergelijking is om cruciale concepten uit te leggen.
+>Over het algemeen, wordt de front-end pijpleiding typisch gebruikt met het [ Snelle Gemaakt van de Plaats van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/overview.html?lang=en), is er een verwant leerprogramma [ Begonnen het worden met AEM Sites - Snelle Verwezenlijking van de Plaats ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html) om meer over het te leren. In deze zelfstudie en bijbehorende video&#39;s komen verwijzingen ernaar aan de orde, om ervoor te zorgen dat subtiele verschillen worden uitgeroepen en er een directe of indirecte vergelijking is om cruciale concepten uit te leggen.
 
 
-Een verwant [ multi-step leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html?lang=nl-NL) loopt door het uitvoeren van een plaats van AEM voor een fictieve levensstijlmerk WKND gebruikend de Snelle eigenschap van de Opstelling van de Plaats. Het herzien van het [ Theming werkschema ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html?lang=nl-NL) om de voorste-eind werkingen van de Pijpleiding te begrijpen is ook nuttig.
+Een verwant [ multi-step leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html) loopt door het uitvoeren van een plaats van AEM voor een fictieve levensstijlmerk WKND gebruikend de Snelle eigenschap van de Opstelling van de Plaats. Het herzien van het [ Theming werkschema ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html) om de voorste-eind werkingen van de Pijpleiding te begrijpen is ook nuttig.
 
 ## Overzicht, voordelen, en overwegingen voor front-end pijpleiding
 
@@ -49,9 +51,9 @@ Een verwant [ multi-step leerprogramma ](https://experienceleague.adobe.com/docs
 
 ## Vereisten
 
-De plaatsingsstap in dit leerprogramma vindt in Adobe Cloud Manager plaats, zorg ervoor dat u de rol van de Manager van de a __Plaatsing__ hebt, ziet de Wolk [ Definities van de Rol ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=nl-NL#role-definitions) beheert.
+De plaatsingsstap in dit leerprogramma vindt in Adobe Cloud Manager plaats, zorg ervoor dat u de rol van de Manager van de a __Plaatsing__ hebt, ziet de Wolk [ Definities van de Rol ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) beheert.
 
-Zorg ervoor om het [ programma Sandbox ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=nl-NL) en [ milieu van de Ontwikkeling ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL) te gebruiken wanneer de voltooiing van dit leerprogramma.
+Zorg ervoor om het [ programma Sandbox ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) en [ milieu van de Ontwikkeling ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) te gebruiken wanneer de voltooiing van dit leerprogramma.
 
 ## Volgende stappen {#next-steps}
 

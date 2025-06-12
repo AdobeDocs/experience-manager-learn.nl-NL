@@ -13,7 +13,7 @@ level: Beginner
 doc-type: Catalog
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: dbf63f30ccfd06e4f4d7883c2f7bc4ac78245364
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Aan de slag met AEM Sites - WKND-zelfstudie {#introduction}
 
-{{edge-delivery-services}}
+{{traditional-aem}}
 
 Welkom bij een meerdelige zelfstudie die is ontworpen voor nieuwe ontwikkelaars in Adobe Experience Manager (AEM). In deze zelfstudie wordt de implementatie besproken van een AEM-site voor een fictief levensstijlmerk, de WKND. De zelfstudie behandelt fundamentele onderwerpen zoals projectopstelling, de Componenten van de Kern, Bewerkbare Malplaatjes, cliënt-zijbibliotheken, en componentenontwikkeling met Adobe Experience Manager Sites.
 
