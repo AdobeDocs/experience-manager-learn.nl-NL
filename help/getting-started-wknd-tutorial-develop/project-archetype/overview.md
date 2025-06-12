@@ -46,7 +46,7 @@ Er is een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. De sch
 
 Het volgende moet lokaal worden geïnstalleerd:
 
-* [ Lokale AEM **2} instantie van de Auteur ](https://experience.adobe.com/#/downloads) (Cloud Service SDK of 6.5.14+)**
+* [ Lokale AEM **2&rbrace; instantie van de Auteur ](https://experience.adobe.com/#/downloads) (Cloud Service SDK of 6.5.14+)**
 * [ Java™ 11 ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [ Apache Maven ](https://maven.apache.org/) (3.3.9 of nieuwer)
 * [ Node.js ](https://nodejs.org/en/) (LTS - steun op lange termijn)
