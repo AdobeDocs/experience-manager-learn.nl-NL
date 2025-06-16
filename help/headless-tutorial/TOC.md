@@ -8,10 +8,10 @@ sub-product: Experience Manager Sites
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-2963
 index: y
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 6425188da75f789b0661ec9bfb79624b5704c92b
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 7%
+source-wordcount: '317'
+ht-degree: 8%
 
 ---
 
@@ -20,12 +20,12 @@ ht-degree: 7%
 
 + [Overzicht van AEM Headless](./overview.md)
 + GraphQL {#graphql}
-   + [ AEM Headless Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL){target=_blank}
+   + [ AEM Headless Developer Portal ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html){target=_blank}
    + [Overzicht](./graphql/overview.md)
    + Snelle installatie {#quick-setup}
       + [Cloud Service](./graphql/quick-setup/cloud-service.md)
       + [AEM SDK](./graphql/quick-setup/local-sdk.md)
-   + Videoserie {#video-series}
+   + Videoserie{#video-series}
       + [1 - Grondbeginselen van modellering](./graphql/video-series/modeling-basics.md)
       + [2 - Geavanceerde modellering](./graphql/video-series/advanced-modeling.md)
       + [3 - GraphQL-query&#39;s maken](./graphql/video-series/creating-graphql-queries.md)
@@ -33,31 +33,31 @@ ht-degree: 7%
       + [5 - GraphQL-eindpunten](./graphql/video-series/graphql-endpoints.md)
       + [6 - Auteur- en publicatiearchitectuur](./graphql/video-series/author-publish-architecture.md)
       + [7 - GraphQL blijvende query&#39;s](./graphql/video-series/graphql-persisted-queries.md)
-   + Basiszelfstudie {#multi-step}
+   + Basiszelfstudie{#multi-step}
       + [Overzicht](./graphql/multi-step/overview.md)
       + [1 - Modellen voor inhoudsfragmenten definiëren](./graphql/multi-step/content-fragment-models.md)
       + [2 - Inhoudsfragmenten ontwerpen](./graphql/multi-step/author-content-fragments.md)
       + [3 - GraphQL API&#39;s verkennen](./graphql/multi-step/explore-graphql-api.md)
       + [ 4 - bouw React app ](./graphql/multi-step/graphql-and-react-app.md)
-   + Geavanceerde zelfstudie {#advanced-tutorial}
+   + Geavanceerde zelfstudie{#advanced-tutorial}
       + [Overzicht](/help/headless-tutorial/graphql/advanced-graphql/overview.md)
       + [1 - Modellen voor inhoudsfragmenten maken](/help/headless-tutorial/graphql/advanced-graphql/create-content-fragment-models.md)
       + [2 - Inhoudsfragmenten auteur](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md)
       + [3 - De AEM GraphQL API verkennen](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
       + [4 - Blijvende GraphQL-query&#39;s](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
       + [5 - Integratie van clienttoepassingen](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
-   + Eerste zelfstudie zonder koppen {#headless-first}
+   + Eerste zelfstudie zonder koptekst{#headless-first}
       + [Overzicht](./graphql/headless-first-tutorial/overview.md)
       + [1 - Modellering van inhoud](./graphql/headless-first-tutorial/1-content-modeling.md)
       + [2 - AEM Headless API&#39;s en Reactie](./graphql/headless-first-tutorial/2-aem-headless-apis-and-react.md)
       + [3 - Complexe onderdelen](./graphql/headless-first-tutorial/3-complex-components.md)
-+ Implementaties {#deployments}
++ Inzet{#deployments}
    + [Overzicht](./graphql/deployment/overview.md)
    + [ Enige-pagina app ](./graphql/deployment/spa.md)
    + [Webcomponent](./graphql/deployment/web-component.md)
    + [ Mobiel ](./graphql/deployment/mobile.md)
    + [Server-naar-server](./graphql/deployment/server-to-server.md)
-   + Configuraties {#configurations}
+   + Configuraties{#configurations}
       + [AEM-hosts](./graphql/deployment/configurations/aem-hosts.md)
       + [CORS](./graphql/deployment/configurations/cors.md)
       + [Dispatcher-filters](./graphql/deployment/configurations/dispatcher-filters.md)
@@ -72,20 +72,11 @@ ht-degree: 7%
    + [GraphiQL installeren op AEM 6.5](./graphql/how-to/install-graphiql-aem-6-5.md)
    + Voorbeelden {#example-apps}
       + [Reageren](./graphql/example-apps/react-app.md)
-      + [Next.js](./graphql/example-apps/next-js.md)
       + [Webcomponent](./graphql/example-apps/web-component.md)
       + [iOS](./graphql/example-apps/ios-swiftui-app.md)
       + [Android](./graphql/example-apps/android-app.md)
       + [Node.js](./graphql/example-apps/server-to-server-app.md)
-+ SPA-editor {#spa-editor}
-   + Reageren {#react}
-      + [Overzicht](./spa-editor/react/overview.md)
-      + [1 - Project maken](./spa-editor/react/create-project.md)
-      + [2 - De SPA integreren](./spa-editor/react/integrate-spa.md)
-      + [3 - Kaart SPA-componenten](./spa-editor/react/map-components.md)
-      + [4 - Navigatie en routering](./spa-editor/react/navigation-routing.md)
-      + [5 - Aangepaste component](./spa-editor/react/custom-component.md)
-      + [6 - Component uitbreiden](./spa-editor/react/extend-component.md)
++ SPA-editor{#spa-editor}
    + Angular{#angular}
       + [Overzicht](./spa-editor/angular/overview.md)
       + [1 - SPA Editor-project](./spa-editor/angular/create-project.md)
@@ -93,21 +84,21 @@ ht-degree: 7%
       + [3 - Kaart SPA-componenten](./spa-editor/angular/map-components.md)
       + [4 - Navigatie en routering](./spa-editor/angular/navigation-routing.md)
       + [5 - Aangepaste component](./spa-editor/angular/custom-component.md)
-      + [ 6 - breid component  uit](./spa-editor/angular/extend-component.md)
-   + Remote SPA {#remote-spa}
+      + [ 6 - breid component ](./spa-editor/angular/extend-component.md) uit
+   + Externe SPA{#remote-spa}
       + [Overzicht](./spa-editor/remote-spa/overview.md)
       + [1 - AEM configureren](./spa-editor/remote-spa/aem-configure.md)
       + [2 - Bootstrap de SPA](./spa-editor/remote-spa/spa-bootstrap.md)
       + [3 - Vaste componenten](./spa-editor/remote-spa/spa-fixed-component.md)
       + [4 - Containeronderdelen](./spa-editor/remote-spa/spa-container-component.md)
       + [5 - Dynamische routes](./spa-editor/remote-spa/spa-dynamic-routes.md)
-   + Procedure {#how-to}
+   + Procedure{#how-to}
       + [AEM React Editable Components v2](./spa-editor/how-to/react-core-components-v2.md)
-+ Verificatie op basis van token {#authentication}
++ Op token gebaseerde verificatie {#authentication}
    + [Overzicht](./authentication/overview.md)
    + [1 - Toegangstoken voor lokale ontwikkeling](./authentication/local-development-access-token.md)
    + [2 - Servicereferenties](./authentication/service-credentials.md)
-+ Content Services {#content-services}
++ Inhoudsservices {#content-services}
    + [Overzicht](./content-services/overview.md)
    + [1 - Lesbestanden instellen](./content-services/chapter-1.md)
    + [2 - Fragmentmodellen voor gebeurtenisinhoud definiëren](./content-services/chapter-2.md)
