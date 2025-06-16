@@ -177,7 +177,7 @@ In het `_cq_editConfig.xml` -bestand wordt het gedrag voor slepen en neerzetten 
 
 ## Het dialoogvenster uitbreiden {#extend-dialog}
 
-De component `Banner` vereist een extra tekstveld in het dialoogvenster om het `bannerText` vast te leggen. Aangezien wij het Verdelen overerving gebruiken, kunnen wij eigenschappen van de [ Verschuivende Fusie van het Middel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html) gebruiken om gedeelten van de dialoog met voeten te treden of uit te breiden. In dit voorbeeld is een nieuw tabblad toegevoegd aan het dialoogvenster om aanvullende gegevens van een auteur vast te leggen om de kaartcomponent te vullen.
+De component `Banner` vereist een extra tekstveld in het dialoogvenster om het `bannerText` vast te leggen. Aangezien wij het Verdelen overerving gebruiken, kunnen wij eigenschappen van de [ Verschuivende Fusie van het Middel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html?lang=nl-NL) gebruiken om gedeelten van de dialoog met voeten te treden of uit te breiden. In dit voorbeeld is een nieuw tabblad toegevoegd aan het dialoogvenster om aanvullende gegevens van een auteur vast te leggen om de kaartcomponent te vullen.
 
 1. Maak in de module `ui.apps` onder de map `banner` een map met de naam `_cq_dialog` .
 1. Onder `_cq_dialog` maakt u een definitiebestand voor het dialoogvenster `.content.xml` . Vul de selectie met de volgende code:

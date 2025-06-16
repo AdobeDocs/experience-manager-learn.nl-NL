@@ -70,7 +70,7 @@ Verschillende omgevingsvariabelen moeten worden blootgesteld aan de Remote SPA z
       * Vereist voor gebruik met AEM Author
       * Mogelijk vereist voor gebruik met AEM Publish (als de inhoud is beveiligd)
       * Ontwikkelen tegen de AEM SDK ondersteunt lokale accounts via Basic Auth. Dit is de methode die in deze zelfstudie wordt gebruikt.
-      * Wanneer het integreren met AEM as a Cloud Service, gebruik [ toegangstokens ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
+      * Wanneer het integreren met AEM as a Cloud Service, gebruik [ toegangstokens ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=nl-NL)
    * `REACT_APP_BASIC_AUTH_USER`: de AEM __gebruikersbenaming__ door het KUUROORD voor authentiek te verklaren terwijl het terugwinnen van de inhoud van AEM.
    * `REACT_APP_BASIC_AUTH_PASS`: het AEM __wachtwoord__ door het KUUROORD voor authentiek te verklaren terwijl het terugwinnen van de inhoud van AEM.
 

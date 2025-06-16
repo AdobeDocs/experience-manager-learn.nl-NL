@@ -33,13 +33,13 @@ Leer hoe te om een bestaande Component van de Kern uit te breiden die met de Red
 
 ## Wat u gaat maken
 
-In dit hoofdstuk wordt een nieuwe component `Card` gemaakt. De `Card` component breidt de [ Component van de Kern van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) uit toevoegend extra inhoudsgebieden zoals een Titel en een knoop van Call to action om de rol van een meetapparaat voor andere inhoud binnen het KUUROORD uit te voeren.
+In dit hoofdstuk wordt een nieuwe component `Card` gemaakt. De `Card` component breidt de [ Component van de Kern van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=nl-NL) uit toevoegend extra inhoudsgebieden zoals een Titel en een knoop van Call to action om de rol van een meetapparaat voor andere inhoud binnen het KUUROORD uit te voeren.
 
 ![ Definitief Authoring van de Component van de Kaart ](assets/extend-component/final-authoring-card.png)
 
 >[!NOTE]
 >
-> In een implementatie in de praktijk kan het geschikter zijn om de [ Component van de Taser ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/teaser.html) eenvoudig te gebruiken dan het uitbreiden van de [ Component van de Kern van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) om een `Card` component afhankelijk van projectvereisten te maken. Het wordt altijd geadviseerd om [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) direct te gebruiken wanneer mogelijk.
+> In een implementatie in de praktijk kan het geschikter zijn om de [ Component van de Taser ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/teaser.html?lang=nl-NL) eenvoudig te gebruiken dan het uitbreiden van de [ Component van de Kern van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=nl-NL) om een `Card` component afhankelijk van projectvereisten te maken. Het wordt altijd geadviseerd om [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) direct te gebruiken wanneer mogelijk.
 
 ## Vereisten
 
@@ -106,13 +106,13 @@ De begincode van het hoofdstuk bevat een eerste kaartcomponent. Inspecteer het b
 
    De `sling:resourceSuperType` verwijst naar `core/wcm/components/image/v2/image` . Dit wijst erop dat de component van het Beeld WKND SPA de functionaliteit van het Beeld van de Component van de Kern erft.
 
-   Ook gekend als het [ patroon van de Volmacht ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#proxy-component-pattern) Verschuivende middelovererving is een krachtig ontwerppatroon voor het toestaan van kindcomponenten om functionaliteit te erven en gedrag uit te breiden/met voeten te treden wanneer gewenst. De overerving van de verkoop steunt veelvoudige niveaus van overerving, zodat erft de nieuwe `Card` component uiteindelijk functionaliteit van het Beeld van de Component van de Kern.
+   Ook gekend als het [ patroon van de Volmacht ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=nl-NL#proxy-component-pattern) Verschuivende middelovererving is een krachtig ontwerppatroon voor het toestaan van kindcomponenten om functionaliteit te erven en gedrag uit te breiden/met voeten te treden wanneer gewenst. De overerving van de verkoop steunt veelvoudige niveaus van overerving, zodat erft de nieuwe `Card` component uiteindelijk functionaliteit van het Beeld van de Component van de Kern.
 
    Veel ontwikkelingsteams streven ernaar om D.R.Y. te zijn (herhaal jezelf niet). Dit is mogelijk met AEM als gevolg van het verkopen van erfenis.
 
 4. Open het bestand `_cq_dialog/.content.xml` onder de map `card` .
 
-   Dit bestand is de definitie in het dialoogvenster Component voor de component `Card` . Als het gebruiken van het Verdelen overerving, is het mogelijk om eigenschappen van de [ Verschuivende Fusie van het Middel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html) te gebruiken om gedeelten van de dialoog met voeten te treden of uit te breiden. In dit voorbeeld is een nieuw tabblad toegevoegd aan het dialoogvenster om aanvullende gegevens van een auteur vast te leggen om de kaartcomponent te vullen.
+   Dit bestand is de definitie in het dialoogvenster Component voor de component `Card` . Als het gebruiken van het Verdelen overerving, is het mogelijk om eigenschappen van de [ Verschuivende Fusie van het Middel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html?lang=nl-NL) te gebruiken om gedeelten van de dialoog met voeten te treden of uit te breiden. In dit voorbeeld is een nieuw tabblad toegevoegd aan het dialoogvenster om aanvullende gegevens van een auteur vast te leggen om de kaartcomponent te vullen.
 
    Met eigenschappen als `sling:orderBefore` kan een ontwikkelaar kiezen waar nieuwe tabbladen of formuliervelden moeten worden ingevoegd. In dit geval wordt de tab `Text` ingevoegd vóór de tab `asset` . Om volledig gebruik van de Verschuivende Fusie van het Middel te maken, is het belangrijk om de originele structuur van de dialoogknoop voor de [ de componentendialoog van het Beeld ](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/image/v2/image/_cq_dialog/.content.xml) te kennen.
 
@@ -296,7 +296,7 @@ Ga terug naar de IDE van uw keuze en open de module `core` .
    }
    ```
 
-   `@PostConstruct initModel()` wordt geroepen wanneer het het Verdelen Model wordt geïnitialiseerd, daarom is het een goede gelegenheid om voorwerpen te initialiseren die door andere methodes in het model kunnen worden gebruikt. `pageManager` is één van verscheidene [ Java™ gesteunde globale voorwerpen ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html) ter beschikking gesteld aan het Schuiven Modellen via de `@ScriptVariable` aantekening. De [ getPage ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) methode neemt in een weg en keert een voorwerp van de Pagina van AEM [&#128279;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) terug of ongeldig als de weg niet aan een geldige pagina richt.
+   `@PostConstruct initModel()` wordt geroepen wanneer het het Verdelen Model wordt geïnitialiseerd, daarom is het een goede gelegenheid om voorwerpen te initialiseren die door andere methodes in het model kunnen worden gebruikt. `pageManager` is één van verscheidene [ Java™ gesteunde globale voorwerpen ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html?lang=nl-NL) ter beschikking gesteld aan het Schuiven Modellen via de `@ScriptVariable` aantekening. De [ getPage ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) methode neemt in een weg en keert een voorwerp van de Pagina van AEM [&#128279;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) terug of ongeldig als de weg niet aan een geldige pagina richt.
 
    Hierdoor wordt de variabele `cardPage` geïnitialiseerd, die door de andere nieuwe methoden wordt gebruikt om gegevens over de onderliggende gekoppelde pagina te retourneren.
 
