@@ -333,7 +333,7 @@ Nadat SPA wordt bijgewerkt om `<ResponsiveGrid...>` in te bedden, verpakt voor d
    1. Titel
    1. Afbeelding
    1. Tekst
-1. __Auteur__ de __3 component van de Titel {__
+1. __Auteur__ de __3 component van de Titel &lbrace;__
    1. Tik de component van de Titel, en tik het __moersleutelpictogram__ ____ de component van de Titel uitgeven
    1. Voeg de volgende tekst toe:
       1. Titel: __Zomer komt, laten we het meesten van het maken!__
@@ -358,7 +358,7 @@ Nadat SPA wordt bijgewerkt om `<ResponsiveGrid...>` in te bedden, verpakt voor d
 
 1. Schakelaar aan __Wijze van de Lay-out__ gebruikend de wijze-selecteur in top-right
 1. __vergroot__ de componenten van het Beeld en van de Tekst, dusdanig dat zij zij aan zij zijn
-   1. __de component van het 1} Beeld__ zou 8 kolommen breed __moeten zijn__
+   1. __de component van het 1&rbrace; Beeld__ zou 8 kolommen breed __moeten zijn__
    1. __de component van de Tekst__ __3 kolommen breed__ zou moeten zijn
 
    ![ componenten van de Lay-out ](./assets/spa-container-component/layout-components.png)

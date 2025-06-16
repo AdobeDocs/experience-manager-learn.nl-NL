@@ -9,15 +9,15 @@ ht-degree: 1%
 
 ## Edge Delivery Services{#edge-delivery-services}
 
-[!BADGE  voor het publiceren van AEM Sites die Edge Delivery Services gebruiken, klik hier.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publiceren van AEM naar Edge Delivery Services"}
+[!BADGE &#x200B; voor het publiceren van AEM Sites die Edge Delivery Services gebruiken, klik hier.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publiceren van AEM naar Edge Delivery Services"}
 
 ## Edge Delivery Services en Pagina-editor{#edge-delivery-services-and-page-editor}
 
-[!BADGE  voor het publiceren van AEM Sites die Edge Delivery Services gebruiken, klik hier.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publiceren van AEM naar Edge Delivery Services"}
+[!BADGE &#x200B; voor het publiceren van AEM Sites die Edge Delivery Services gebruiken, klik hier.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publiceren van AEM naar Edge Delivery Services"}
 
 ## Edge Delivery Services en Universal Visual Editor{#edge-delivery-services-and-universal-visual-editor}
 
-[!BADGE  voor het publiceren van AEM Sites die Edge Delivery Services gebruiken, klik hier.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publiceren van AEM naar Edge Delivery Services"}
+[!BADGE &#x200B; voor het publiceren van AEM Sites die Edge Delivery Services gebruiken, klik hier.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publiceren van AEM naar Edge Delivery Services"}
 
 ## Traditioneel AEM{#traditional-aem}
 

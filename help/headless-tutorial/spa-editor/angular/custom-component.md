@@ -149,7 +149,7 @@ Een AEM-component wordt gedefinieerd als een knooppunt en eigenschappen. In het 
    </jcr:root>
    ```
 
-   ](assets/custom-component/dialog-custom-component-defintion.png) de definitie van de Component van 0} Douane![
+   ![&#128279;](assets/custom-component/dialog-custom-component-defintion.png) de definitie van de Component van 0&rbrace; Douane
 
    Het bovenstaande XML-bestand genereert een eenvoudig dialoogvenster voor de `Custom Component` . Het kritieke deel van het bestand is de binnenste `<message>` -node. Dit dialoogvenster bevat een eenvoudige `textfield` naam `Message` en blijft de waarde van het veld textiel bevatten voor een eigenschap met de naam `message` .
 

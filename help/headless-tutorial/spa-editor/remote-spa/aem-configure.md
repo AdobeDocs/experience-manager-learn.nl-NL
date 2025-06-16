@@ -315,7 +315,7 @@ Deze veranderingen staan deze pagina toe, die de wortel van het KUUROORD in AEM 
 
 >[!NOTE]
 >
->Als dit project eerder aan AEM werd opgesteld, zorg ervoor om de pagina van AEM als **Plaatsen > App van WKND > gebruiken > en > WKND App Homepage** te schrappen, aangezien het `ui.content` project aan **** knopen samenvoegt, eerder dan **update** wordt geplaatst.
+>Als dit project eerder aan AEM werd opgesteld, zorg ervoor om de pagina van AEM als **Plaatsen > App van WKND > gebruiken > en > WKND App Homepage** te schrappen, aangezien het `ui.content` project aan **&#x200B;**&#x200B;knopen samenvoegt, eerder dan **update** wordt geplaatst.
 
 Deze pagina kon ook als Verre pagina van het KUUROORD in AEM zelf worden verwijderd en worden opnieuw gecreeerd, echter aangezien deze pagina in het `ui.content` project auto-gecreeerd is het best om het in de codebasis bij te werken.
 

@@ -53,7 +53,7 @@ Het basisconcept is een Component van het KUUROORD aan een Component van AEM in 
 
 ## De tekstcomponent controleren
 
-Het [ Archieftype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) verstrekt een `Text` component die aan de component van de Tekst van AEM [ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) in kaart wordt gebracht. Dit is een voorbeeld van de component van de a **inhoud**, in die zin dat het *inhoud* van AEM teruggeeft.
+Het [ Archieftype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) verstrekt een `Text` component die aan de component van de Tekst van AEM [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) in kaart wordt gebracht. Dit is een voorbeeld van de component van de a **inhoud**, in die zin dat het *inhoud* van AEM teruggeeft.
 
 Laten we eens kijken hoe de component werkt.
 
@@ -178,7 +178,7 @@ Het beleid is een eigenschap van de malplaatjes van AEM geeft ontwikkelaars en m
 
    Klik **Gedaan** om de beleidsupdates te bewaren.
 
-1. In de **Container van de Lay-out** klik het **beleid** pictogram voor de **** component van de Tekst.
+1. In de **Container van de Lay-out** klik het **beleid** pictogram voor de **&#x200B;**&#x200B;component van de Tekst.
 
    Creeer een nieuw beleid genoemd **WKND Tekst van het KUUROORD**. Onder **Insteekmodules** > **Formatterend** > controleer alle dozen om extra het formatteren opties toe te laten:
 
@@ -226,13 +226,13 @@ Controleer de container voor lay-out verder.
 
    De zelfde mogelijkheden om een component opnieuw te rangschikken gebruikend [ Wijze van de Lay-out ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) zijn beschikbaar met de Redacteur van het KUUROORD.
 
-2. Keer terug naar [ http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html ](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Voeg extra **componenten van het Beeld 0} toe {en probeer re-sizing hen gebruikend de** optie van de Lay-out **:**
+2. Keer terug naar [ http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html ](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Voeg extra **componenten van het Beeld 0&rbrace; toe &lbrace;en probeer re-sizing hen gebruikend de** optie van de Lay-out **:**
 
    ![ resize beeld gebruikend de wijze van de Lay-out ](./assets/map-components/responsive-grid-layout-change.gif)
 
 3. Heropen het model JSON [ http://localhost:4502/content/wknd-spa-react/us/en.model.json ](http://localhost:4502/content/wknd-spa-react/us/en.model.json) en bekijk `columnClassNames` als deel van JSON:
 
-   {de namen van de Klasse van 0} Wolk ](./assets/map-components/responsive-grid-classnames.png)![
+   {de namen van de Klasse van 0} Wolk ![&#128279;](./assets/map-components/responsive-grid-classnames.png)
 
    De klassenaam `aem-GridColumn--default--4` geeft aan dat de component 4 kolommen breed moet zijn op basis van een raster van 12 kolommen. Meer details over het [ ontvankelijke net kunnen hier ](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) worden gevonden.
 
@@ -283,13 +283,13 @@ De volgende weinige stappen zullen plaatsvinden gebruikend winde van de Code van
     </workspaceFilter>
    ```
 
-   Het bestand `filter.xml` identificeert de paden van knooppunten die met het pakket zijn geïnstalleerd. Let op `mode="merge"` op elk van de filters die aangeeft dat bestaande inhoud niet wordt gewijzigd, alleen nieuwe inhoud wordt toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing **** geen inhoud overschrijft. Zie de [ documentatie FileVault ](https://jackrabbit.apache.org/filevault/filter.html) voor meer details bij het werken met filterelementen.
+   Het bestand `filter.xml` identificeert de paden van knooppunten die met het pakket zijn geïnstalleerd. Let op `mode="merge"` op elk van de filters die aangeeft dat bestaande inhoud niet wordt gewijzigd, alleen nieuwe inhoud wordt toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing **&#x200B;**&#x200B;geen inhoud overschrijft. Zie de [ documentatie FileVault ](https://jackrabbit.apache.org/filevault/filter.html) voor meer details bij het werken met filterelementen.
 
    Vergelijk `ui.content/src/main/content/META-INF/vault/filter.xml` en `ui.apps/src/main/content/META-INF/vault/filter.xml` om inzicht te krijgen in de verschillende knooppunten die door elke module worden beheerd.
 
 ## (Bonus) Aangepaste afbeeldingscomponent maken {#bonus-image}
 
-Een component van het Beeld van het KUUROORD is reeds verstrekt door de React componenten van de Kern. Nochtans, als u extra praktijk wilt, creeer uw eigen implementatie van het Reageren die kaarten aan de component van het Beeld van AEM [ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html). De `Image` component is een ander voorbeeld van a **inhoud** component.
+Een component van het Beeld van het KUUROORD is reeds verstrekt door de React componenten van de Kern. Nochtans, als u extra praktijk wilt, creeer uw eigen implementatie van het Reageren die kaarten aan de component van het Beeld van AEM [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html). De `Image` component is een ander voorbeeld van a **inhoud** component.
 
 ### De JSON inspecteren
 

@@ -137,7 +137,7 @@ Een AEM-component wordt gedefinieerd als een knooppunt en eigenschappen. In het 
    </jcr:root>
    ```
 
-   ](assets/custom-component/dialog-custom-component-defintion.png) de definitie van de Component van 0} Douane![
+   ![&#128279;](assets/custom-component/dialog-custom-component-defintion.png) de definitie van de Component van 0&rbrace; Douane
 
    Het bovenstaande XML-bestand genereert een heel eenvoudig dialoogvenster voor de `Weather Component` . Het kritieke deel van het bestand zijn de binnenknooppunten `<label>` , `<lat>` en `<lon>` . Dit dialoogvenster bevat twee weergaven `numberfield` en een `textfield` waarmee een gebruiker het weer kan configureren.
 

@@ -155,7 +155,7 @@ Alvorens de auteursinhoud uw browser vensters zo schikt dat de Auteur van AEM (`
 
 1. Schakelaar aan __wijze van de Voorproef__ in de Redacteur van het KUUROORD
 1. Tik op de __kaart van de Camp van Surf van Bali__ en navigeer aan zijn dynamische route
-1. Voeg toe, verander, of verwijder componenten uit de containercomponent die plaatsen boven de __rubriek van de 1} Reis__
+1. Voeg toe, verander, of verwijder componenten uit de containercomponent die plaatsen boven de __rubriek van de 1&rbrace; Reis__
 1. Vernieuw SPA die op `http://localhost:3000` loopt en zie dat de gereflecteerde veranderingen
 
 De nieuwe pagina&#39;s van AEM onder de __WKND startpagina van de App > Avontuur__ _moet_ een de paginanaam hebben van AEM die de naam van het de inhoudsfragment van het overeenkomstige avontuur aanpast. Dit is omdat de route van het KUUROORD aan de afbeelding van de Pagina van AEM van het laatste segment van de route, die de naam van het Fragment van de Inhoud is.

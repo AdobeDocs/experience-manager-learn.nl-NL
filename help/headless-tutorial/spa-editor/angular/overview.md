@@ -31,7 +31,7 @@ Onthaal aan een multi-part leerprogramma dat voor ontwikkelaars nieuw aan de **e
 
 ## Info
 
-Het doel voor dit meerdelige leerprogramma is een ontwikkelaar te leren hoe te om een toepassing van Angular uit te voeren om met de eigenschap van de Redacteur van het KUUROORD van AEM te werken. In een real-world scenario worden de ontwikkelingsactiviteiten onderverdeeld door persona, vaak het impliceren van de ontwikkelaar van het Voorste Eind van a **** en a **Achterste ontwikkelaar van het Eind**. Wij geloven het voor om het even welke ontwikkelaar die bij een project van de Redacteur van AEM SPA betrokken is om deze zelfstudie te voltooien.
+Het doel voor dit meerdelige leerprogramma is een ontwikkelaar te leren hoe te om een toepassing van Angular uit te voeren om met de eigenschap van de Redacteur van het KUUROORD van AEM te werken. In een real-world scenario worden de ontwikkelingsactiviteiten onderverdeeld door persona, vaak het impliceren van de ontwikkelaar van het Voorste Eind van a **&#x200B;**&#x200B;en a **Achterste ontwikkelaar van het Eind**. Wij geloven het voor om het even welke ontwikkelaar die bij een project van de Redacteur van AEM SPA betrokken is om deze zelfstudie te voltooien.
 
 Het leerprogramma wordt ontworpen om met **AEM as a Cloud Service** te werken en is achterwaarts compatibel met **AEM 6.5.4+** en **AEM 6.4.8+**. Het SPA wordt uitgevoerd gebruikend:
 
