@@ -22,4 +22,4 @@ ht-degree: 0%
 
 AEM Champion Brett Birschbach deelt de beste praktijken voor de bouw van een levende auteursgids binnen de Plaatsen van Adobe Experience Manager (AEM).
 
->[!VIDEO](https://video.tv.adobe.com/v/3459572/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3463139/?learn=on&enablevpops&captions=dut)
