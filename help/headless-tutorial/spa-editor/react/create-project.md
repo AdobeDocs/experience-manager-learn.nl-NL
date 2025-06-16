@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
 duration: 250
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # Project maken {#spa-editor-project}
+
+{{spa-editor-deprecation}}
 
 Leer hoe te om een Adobe Experience Manager (AEM) Gemaakt project als uitgangspunt voor een React toepassing te produceren die met de Redacteur van AEM SPA wordt geïntegreerd.
 
@@ -64,7 +67,7 @@ Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikke
    >
    > Als u AEM 6.5.5+ als doel instelt, vervangt u `aemVersion="cloud"` door `aemVersion="6.5.5"` . Gebruik `aemVersion="6.4.8"` als u zich richt op 6.4.8+.
 
-   Let op de eigenschap `frontendModule=react` . Dit vertelt het Archetype van het Project van AEM om het project met een aanzet [ Reageer codebasis ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=nl-NL) te laarzen die met de Redacteur van AEM SPA moet worden gebruikt. Eigenschappen zoals `appTitle` , `appId` , `artifactId` en `groupId` worden gebruikt om het project en het doel te identificeren.
+   Let op de eigenschap `frontendModule=react` . Dit vertelt het Archetype van het Project van AEM om het project met een aanzet [ Reageer codebasis ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html) te laarzen die met de Redacteur van AEM SPA moet worden gebruikt. Eigenschappen zoals `appTitle` , `appId` , `artifactId` en `groupId` worden gebruikt om het project en het doel te identificeren.
 
    Een volledige lijst van beschikbare eigenschappen voor het vormen van een project [ kan hier ](https://github.com/adobe/aem-project-archetype#available-properties) worden gevonden.
 
@@ -89,7 +92,7 @@ Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikke
        |--- .gitignore
    ```
 
-   Elke map vertegenwoordigt een afzonderlijke module Maven. In deze zelfstudie werken we vooral met de module `ui.frontend` , de React-app. Meer details over individuele modules kunnen in de [ documentatie van het Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) worden gevonden.
+   Elke map vertegenwoordigt een afzonderlijke module Maven. In deze zelfstudie werken we vooral met de module `ui.frontend` , de React-app. Meer details over individuele modules kunnen in de [ documentatie van het Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) worden gevonden.
 
 ## Het project implementeren en bouwen
 

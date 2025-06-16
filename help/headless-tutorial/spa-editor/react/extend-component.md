@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
 duration: 316
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # Een kerncomponent uitbreiden {#extend-component}
+
+{{spa-editor-deprecation}}
 
 Leer hoe te om een bestaande Component van de Kern uit te breiden die met de Redacteur van AEM SPA moet worden gebruikt. Begrijpen hoe te om een bestaande component uit te breiden is een krachtige techniek om de mogelijkheden van een implementatie van de Redacteur van AEM aan te passen en uit te breiden SPA.
 
@@ -174,7 +177,7 @@ In het `_cq_editConfig.xml` -bestand wordt het gedrag voor slepen en neerzetten 
 
 ## Het dialoogvenster uitbreiden {#extend-dialog}
 
-De component `Banner` vereist een extra tekstveld in het dialoogvenster om het `bannerText` vast te leggen. Aangezien wij het Verdelen overerving gebruiken, kunnen wij eigenschappen van de [ Verschuivende Fusie van het Middel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html?lang=nl-NL) gebruiken om gedeelten van de dialoog met voeten te treden of uit te breiden. In dit voorbeeld is een nieuw tabblad toegevoegd aan het dialoogvenster om aanvullende gegevens van een auteur vast te leggen om de kaartcomponent te vullen.
+De component `Banner` vereist een extra tekstveld in het dialoogvenster om het `bannerText` vast te leggen. Aangezien wij het Verdelen overerving gebruiken, kunnen wij eigenschappen van de [ Verschuivende Fusie van het Middel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html) gebruiken om gedeelten van de dialoog met voeten te treden of uit te breiden. In dit voorbeeld is een nieuw tabblad toegevoegd aan het dialoogvenster om aanvullende gegevens van een auteur vast te leggen om de kaartcomponent te vullen.
 
 1. Maak in de module `ui.apps` onder de map `banner` een map met de naam `_cq_dialog` .
 1. Onder `_cq_dialog` maakt u een definitiebestand voor het dialoogvenster `.content.xml` . Vul de selectie met de volgende code:

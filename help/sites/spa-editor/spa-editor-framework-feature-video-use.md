@@ -11,14 +11,17 @@ thumbnail: 22229.jpg
 doc-type: Feature Video
 exl-id: 645b6986-830f-4409-b46c-ddf15c33e84c
 duration: 473
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
-# Het gebruiken van de Redacteur van het KUUROORD met AEM Sites {#using-the-spa-editor-with-aem-sites}
+# Het gebruiken van de Redacteur van het KUUROORD met AEM Sites
+
+{{spa-editor-deprecation}}
 
 Video-overzicht van het ontwerpen van inhoud voor een toepassing voor één pagina in AEM Sites.
 
@@ -40,4 +43,4 @@ De download en installeert het aangewezen [ pakket van het KND SPA ](https://git
 
 Voor een gedetailleerde zelfstudie bij het ontwikkelen met de Redacteur van het KUUROORD zie:
 
-* [ Begonnen het Worden met de Redacteur van AEM SPA en Reageer ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=nl-NL)
+* [ Begonnen het Worden met de Redacteur van AEM SPA en Reageer ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)

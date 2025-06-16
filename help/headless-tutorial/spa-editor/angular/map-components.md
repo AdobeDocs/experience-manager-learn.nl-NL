@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
 duration: 509
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '2211'
 ht-degree: 0%
@@ -20,6 +21,8 @@ ht-degree: 0%
 
 # SPA-componenten toewijzen aan AEM-componenten {#map-components}
 
+{{spa-editor-deprecation}}
+
 Leer hoe u Angular-componenten aan Adobe Experience Manager (AEM)-componenten kunt toewijzen met de AEM SPA Editor JS SDK. De afbeelding van de component laat gebruikers toe om dynamische updates aan de componenten van het KUUROORD binnen de Redacteur van AEM te maken SPA, gelijkend op traditionele het auteursrecht van AEM.
 
 In dit hoofdstuk wordt dieper ingegaan op de API van het AEM JSON-model en wordt uitgelegd hoe de JSON-inhoud die door een AEM-component wordt aangeboden, automatisch als props in een Angular-component kan worden geïnjecteerd.
@@ -27,7 +30,7 @@ In dit hoofdstuk wordt dieper ingegaan op de API van het AEM JSON-model en wordt
 ## Doelstelling
 
 1. Leer hoe te om de componenten van AEM aan Componenten van het KUUROORD in kaart te brengen.
-2. Begrijp het verschil tussen **componenten 0&rbrace; van de Container &lbrace;en** Inhoud **componenten.**
+2. Begrijp het verschil tussen **componenten 0} van de Container {en** Inhoud **componenten.**
 3. Maak een nieuwe Angular-component die wordt toegewezen aan een bestaande AEM-component.
 
 ## Wat u gaat maken
@@ -74,7 +77,7 @@ Het basisconcept is een Component van het KUUROORD aan een Component van AEM in 
 
 ## De tekstcomponent controleren
 
-Het [ Archieftype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) verstrekt een `Text` component die aan de component van de Tekst van AEM [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=nl-NL) in kaart wordt gebracht. Dit is een voorbeeld van de component van de a **inhoud**, in die zin dat het *inhoud* van AEM teruggeeft.
+Het [ Archieftype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) verstrekt een `Text` component die aan de component van de Tekst van AEM [ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) in kaart wordt gebracht. Dit is een voorbeeld van de component van de a **inhoud**, in die zin dat het *inhoud* van AEM teruggeeft.
 
 Laten we eens kijken hoe de component werkt.
 
@@ -171,7 +174,7 @@ Laten we eens kijken hoe de component werkt.
 
    ![ Bijgewerkt model van de Tekst ](assets/map-components/updated-text-model.png)
 
-   Probeer die het `richText` bezit tussen **&#x200B;**&#x200B;van een knevel voorzien **vals** om terug te zien logica in actie.
+   Probeer die het `richText` bezit tussen **** van een knevel voorzien **vals** om terug te zien logica in actie.
 
 8. Inspecteer **text.component.html** bij `ui.frontend/src/app/components/text/text.component.html`.
 
@@ -198,7 +201,7 @@ Laten we eens kijken hoe de component werkt.
 
 ## De afbeeldingscomponent maken
 
-Daarna, creeer een `Image` component van Angular die aan de component van het Beeld van AEM [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=nl-NL) in kaart wordt gebracht. De `Image` component is een ander voorbeeld van a **inhoud** component.
+Daarna, creeer een `Image` component van Angular die aan de component van het Beeld van AEM [ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) in kaart wordt gebracht. De `Image` component is een ander voorbeeld van a **inhoud** component.
 
 ### De JSON inspecteren
 
@@ -384,7 +387,7 @@ De `ImageComponent` component is slechts zichtbaar in **webpack dev server**. Da
 
    Klik **Gedaan** om de beleidsupdates te bewaren.
 
-5. In de **Container van de Lay-out** klik het **beleid** pictogram voor de **&#x200B;**&#x200B;component van de Tekst:
+5. In de **Container van de Lay-out** klik het **beleid** pictogram voor de **** component van de Tekst:
 
    ![ pictogram van het componentenbeleid van de Tekst ](./assets/map-components/edit-text-policy.png)
 
@@ -434,15 +437,15 @@ Controleer de container voor lay-out verder.
 
    De **component van de Container van de Lay-out** heeft a `sling:resourceType` van `wcm/foundation/components/responsivegrid` en door de Redacteur van het KUUROORD erkend gebruikend het `:type` bezit, enkel als `Text` en `Image` componenten.
 
-   De zelfde mogelijkheden om een component opnieuw te rangschikken gebruikend [ Wijze van de Lay-out ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=nl-NL#defining-layouts-layout-mode) zijn beschikbaar met de Redacteur van het KUUROORD.
+   De zelfde mogelijkheden om een component opnieuw te rangschikken gebruikend [ Wijze van de Lay-out ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) zijn beschikbaar met de Redacteur van het KUUROORD.
 
-3. Keer terug naar [ http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html ](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Voeg extra **componenten van het Beeld 0&rbrace; toe &lbrace;en probeer re-sizing hen gebruikend de** optie van de Lay-out **:**
+3. Keer terug naar [ http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html ](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Voeg extra **componenten van het Beeld 0} toe {en probeer re-sizing hen gebruikend de** optie van de Lay-out **:**
 
    ![ resize beeld gebruikend de wijze van de Lay-out ](./assets/map-components/responsive-grid-layout-change.gif)
 
 4. Heropen het model JSON [ http://localhost:4502/content/wknd-spa-angular/us/en.model.json ](http://localhost:4502/content/wknd-spa-angular/us/en.model.json) en bekijk `columnClassNames` als deel van JSON:
 
-   {de namen van de Klasse van 0} Wolk ![&#128279;](./assets/map-components/responsive-grid-classnames.png)
+   {de namen van de Klasse van 0} Wolk ](./assets/map-components/responsive-grid-classnames.png)![
 
    De klassenaam `aem-GridColumn--default--4` geeft aan dat de component 4 kolommen breed moet zijn op basis van een raster van 12 kolommen. Meer details over het [ ontvankelijke net kunnen hier ](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) worden gevonden.
 
@@ -495,6 +498,6 @@ De volgende weinige stappen zullen plaatsvinden gebruikend winde van de Code van
     </workspaceFilter>
    ```
 
-   Het bestand `filter.xml` identificeert de paden van knooppunten die met het pakket zijn geïnstalleerd. Let op `mode="merge"` op elk van de filters die aangeeft dat bestaande inhoud niet wordt gewijzigd, alleen nieuwe inhoud wordt toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing **&#x200B;**&#x200B;geen inhoud overschrijft. Zie de [ documentatie FileVault ](https://jackrabbit.apache.org/filevault/filter.html) voor meer details bij het werken met filterelementen.
+   Het bestand `filter.xml` identificeert de paden van knooppunten die met het pakket zijn geïnstalleerd. Let op `mode="merge"` op elk van de filters die aangeeft dat bestaande inhoud niet wordt gewijzigd, alleen nieuwe inhoud wordt toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing **** geen inhoud overschrijft. Zie de [ documentatie FileVault ](https://jackrabbit.apache.org/filevault/filter.html) voor meer details bij het werken met filterelementen.
 
    Vergelijk `ui.content/src/main/content/META-INF/vault/filter.xml` en `ui.apps/src/main/content/META-INF/vault/filter.xml` om inzicht te krijgen in de verschillende knooppunten die door elke module worden beheerd.

@@ -1,6 +1,6 @@
 ---
-title: Bewerkbare vaste componenten toevoegen aan een externe SPA
-description: Leer hoe u bewerkbare vaste componenten aan een externe SPA kunt toevoegen.
+title: Voeg editable vaste componenten aan een Verre SPA toe
+description: Leer hoe te om editable vaste componenten aan een verre KUUROORD toe te voegen.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
@@ -12,7 +12,8 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: edd18f2f-6f24-4299-a31a-54ccc4f6d86e
 duration: 164
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -21,7 +22,9 @@ ht-degree: 0%
 
 # Bewerkbare vaste componenten
 
-Bewerkbare React-componenten kunnen &#39;vast&#39; zijn of hard gecodeerd in de SPA weergaven. Op deze manier kunnen ontwikkelaars SPA met de Editor compatibele componenten in de SPA weergaven plaatsen en kunnen gebruikers de inhoud van de componenten schrijven in AEM SPA Editor.
+{{spa-editor-deprecation}}
+
+Bewerkbare React componenten kunnen &quot;vast&quot;zijn, of hard-gecodeerd in de meningen van het KUUROORD. Dit staat ontwikkelaars toe om SPA Editor-compatibele componenten in de meningen van het KUUROORD te plaatsen, en gebruikers toe te staan om de inhoud van de componenten&#39; in de Redacteur van AEM te schrijven SPA.
 
 ![ Vaste componenten ](./assets/spa-fixed-component/intro.png)
 
@@ -31,12 +34,12 @@ In dit hoofdstuk vervangen we de titel &#39;Huidige avonturen&#39; van de weerga
 
 Om a __Vaste__ component aan de mening van het Huis toe te voegen:
 
-+ Creeer een douane editable component van de Titel en registreer het aan het middeltype van de Titel van het project
-+ Plaats de bewerkbare component Titel in de SPA Home-weergave
+* Creeer een douane editable component van de Titel en registreer het aan het middeltype van de Titel van het project
+* Plaats de editable component van de Titel op de mening van het Huis van SPA
 
 ### Een bewerkbare component React Title maken
 
-Vervang in de SPA Home-weergave de tekst met harde codes `<h2>Current Adventures</h2>` door een aangepaste bewerkbare component Title. Voordat de component Titel kan worden gebruikt, moeten we:
+In de mening van het Huis van het KUUROORD, vervang de hard-gecodeerde tekst `<h2>Current Adventures</h2>` met een douane editable component van de Titel. Voordat de component Titel kan worden gebruikt, moeten we:
 
 1. Een aangepaste component Title React maken
 1. Decoreer de component van de Titel van de douane gebruikend methodes van `@adobe/aem-react-editable-components` om het editable te maken.
@@ -44,7 +47,7 @@ Vervang in de SPA Home-weergave de tekst met harde codes `<h2>Current Adventures
 
 Dit doet u als volgt:
 
-1. Open Verre SPA project bij `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app` in uw winde
+1. Open Verre project van het KUUROORD bij `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app` in uw winde
 1. Een component React maken op `react-app/src/components/editable/core/Title.js`
 1. Voeg de volgende code toe aan `Title.js` .
 
@@ -91,7 +94,7 @@ Dit doet u als volgt:
    export const titleIsEmpty = (props) => props.text == null || props.text.trim().length === 0
    ```
 
-   Deze React-component kan nog niet worden bewerkt met AEM SPA Editor. Deze basiscomponent wordt in de volgende stap bewerkbaar gemaakt.
+   Merk op dat deze React component nog niet editable gebruikend de Redacteur van AEM SPA is. Deze basiscomponent wordt in de volgende stap bewerkbaar gemaakt.
 
    Lees de opmerkingen van de code voor de implementatiedetails.
 
@@ -132,7 +135,7 @@ Dit doet u als volgt:
    export default EditableTitle;
    ```
 
-   Met deze `EditableTitle` React-component wordt de `Title` React-component verpakt, verpakt en decoreert deze zodat deze bewerkbaar is in AEM SPA Editor.
+   Met deze component React van `EditableTitle` wordt de component React van `Title` verpakt, verpakt en decoreert u deze om te kunnen worden bewerkt in de AEM SPA Editor.
 
 ### De component React EditableTitle gebruiken
 
@@ -163,9 +166,9 @@ Het bestand `Home.js` moet er als volgt uitzien:
 
 ![ Home.js ](./assets/spa-fixed-component/home-js-update.png)
 
-## De component Titel in AEM maken
+## De component Title in AEM ontwerpen
 
-1. Aanmelden bij AEM auteur
+1. Aanmelden bij AEM-auteur
 1. Navigeer aan __Plaatsen > app WKND__
 1. Tik __Huis__ en selecteer __uitgeven__ van de hoogste actiebar
 1. Selecteer __uitgeven__ van uitgeeft wijzesselecteur in het hoogste recht van de Redacteur van de Pagina
@@ -175,25 +178,25 @@ Het bestand `Home.js` moet er als volgt uitzien:
    ![ de componentenactiebar van de Titel ](./assets/spa-fixed-component/title-action-bar.png)
 
 1. Auteur van de component Title:
-   + Titel: __WKND avonturen__
-   + Type/Grootte: __H2__
+   1. Titel: __WKND avonturen__
+   1. Type/Grootte: __H2__
 
-     ![ de componentendialoog van de Titel ](./assets/spa-fixed-component/title-dialog.png)
+      ![ de componentendialoog van de Titel ](./assets/spa-fixed-component/title-dialog.png)
 
 1. Tik __Gedaan__ om te bewaren
-1. Wijzigingen voorvertonen in AEM SPA Editor
+1. Voorvertoning van uw wijzigingen weergeven in de AEM SPA Editor
 1. Vernieuw de WKND App die plaatselijk op [ http://localhost:3000 ](http://localhost:3000) loopt en zie de authored onmiddellijk weerspiegelde titelveranderingen.
 
-   ![ component van de Titel in SPA ](./assets/spa-fixed-component/title-final.png)
+   ![ component van de Titel in KUUUROORD ](./assets/spa-fixed-component/title-final.png)
 
 ## Gefeliciteerd!
 
 U hebt een vaste, bewerkbare component toegevoegd aan de WKND-app! Nu weet u hoe:
 
-+ Een vaste, maar bewerkbare component voor de SPA maken
-+ Auteur van de vaste component in AEM
-+ Zie de geschreven inhoud in de Verre SPA
+* Creeerde een vaste, maar editable, component aan SPA
+* Auteur van de vaste component in AEM
+* Zie de authored inhoud in het Verre KUUROORD
 
 ## Volgende stappen
 
-De volgende stappen moeten [ een AEM container ResponsiveGrid component ](./spa-container-component.md) aan de SPA toevoegen die auteur toestaat om en editable componenten aan de SPA toe te voegen!
+De volgende stappen moeten [ een de containercomponent van AEM ResponsiveGrid ](./spa-container-component.md) aan het KUUROORD toevoegen die auteur toestaat om en editable componenten aan het KUUROORD toe te voegen!

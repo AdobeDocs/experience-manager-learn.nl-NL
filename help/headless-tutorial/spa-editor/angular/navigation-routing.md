@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
 duration: 669
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '2454'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # Navigatie en routering toevoegen {#navigation-routing}
+
+{{spa-editor-deprecation}}
 
 Leer hoe de veelvoudige meningen in het KUUROORD gebruikend de Pagina&#39;s van AEM en de Redacteur SDK van het KUUROORD worden gesteund. Dynamische navigatie wordt uitgevoerd gebruikend de routes van Angular en toegevoegd aan een bestaande component van de Kopbal.
 
@@ -30,7 +33,7 @@ Leer hoe de veelvoudige meningen in het KUUROORD gebruikend de Pagina&#39;s van 
 
 ## Wat u gaat maken
 
-In dit hoofdstuk wordt een navigatiemenu toegevoegd aan een bestaande `Header` -component. Het navigatiemenu wordt gedreven door de de paginahiërarchie van AEM en gebruikt het model JSON dat door de [ Component van de Kern van de Navigatie ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=nl-NL) wordt verstrekt.
+In dit hoofdstuk wordt een navigatiemenu toegevoegd aan een bestaande `Header` -component. Het navigatiemenu wordt gedreven door de de paginahiërarchie van AEM en gebruikt het model JSON dat door de [ Component van de Kern van de Navigatie ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html) wordt verstrekt.
 
 ![ uitgevoerde Navigatie ](assets/navigation-routing/final-navigation-implemented.gif)
 
@@ -68,7 +71,7 @@ U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-w
 
 ## HeaderComponent-updates controleren {#inspect-header}
 
-In vorige hoofdstukken werd de component `HeaderComponent` toegevoegd als een zuivere Angular-component die via `app.component.html` werd opgenomen. In dit hoofdstuk, wordt de `HeaderComponent` component verwijderd uit app en via de [ Redacteur van het Malplaatje ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=nl-NL) toegevoegd. Hierdoor kunnen gebruikers het navigatiemenu van de `HeaderComponent` configureren vanuit AEM.
+In vorige hoofdstukken werd de component `HeaderComponent` toegevoegd als een zuivere Angular-component die via `app.component.html` werd opgenomen. In dit hoofdstuk, wordt de `HeaderComponent` component verwijderd uit app en via de [ Redacteur van het Malplaatje ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html) toegevoegd. Hierdoor kunnen gebruikers het navigatiemenu van de `HeaderComponent` configureren vanuit AEM.
 
 >[!NOTE]
 >
@@ -113,7 +116,7 @@ In vorige hoofdstukken werd de component `HeaderComponent` toegevoegd als een zu
        componentGroup="WKND SPA Angular - Structure"/>
    ```
 
-   De AEM `Header` component zal alle functionaliteit van de [ Component van de Kern van de Navigatie ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=nl-NL) via het `sling:resourceSuperType` bezit erven.
+   De AEM `Header` component zal alle functionaliteit van de [ Component van de Kern van de Navigatie ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html) via het `sling:resourceSuperType` bezit erven.
 
 ## Voeg de HeaderComponent aan het malplaatje van SPA toe {#add-header-template}
 
@@ -141,7 +144,7 @@ In vorige hoofdstukken werd de component `HeaderComponent` toegevoegd als een zu
 
    ![ voeg de component van de Kopbal aan malplaatje ](./assets/navigation-routing/add-header-component.gif) toe
 
-6. Selecteer de **[!UICONTROL Header]** component en klik zijn **2&rbrace; pictogram van het Beleid &lbrace;om het beleid uit te geven.**
+6. Selecteer de **[!UICONTROL Header]** component en klik zijn **2} pictogram van het Beleid {om het beleid uit te geven.**
 
    ![ klik het beleid van de Kopbal ](assets/navigation-routing/header-policy-icon.png)
 
@@ -220,7 +223,7 @@ Daarna, creeer extra pagina&#39;s in AEM die als verschillende meningen in het K
 
    ![ open het paginabeleid voor de Wortel van het KUUROORD ](assets/navigation-routing/open-page-policy.png)
 
-8. Het **malplaatje van de Wortel van 0&rbrace; SPA &lbrace;heeft een extra &#x200B;** [!UICONTROL Hierarchical Structure]&#x200B;**lusje om de verzamelde inhoud te controleren JSON.** **[!UICONTROL Structure Depth]** bepaalt hoe diep in de plaatshiërarchie om kindpagina&#39;s onder de **wortel** te verzamelen. U kunt het veld **[!UICONTROL Structure Patterns]** ook gebruiken om extra pagina&#39;s op basis van een reguliere expressie eruit te filteren.
+8. Het **malplaatje van de Wortel van 0} SPA {heeft een extra **[!UICONTROL Hierarchical Structure]**lusje om de verzamelde inhoud te controleren JSON.** **[!UICONTROL Structure Depth]** bepaalt hoe diep in de plaatshiërarchie om kindpagina&#39;s onder de **wortel** te verzamelen. U kunt het veld **[!UICONTROL Structure Patterns]** ook gebruiken om extra pagina&#39;s op basis van een reguliere expressie eruit te filteren.
 
    Werk **[!UICONTROL Structure Depth]** aan **&quot;2&quot;** bij:
 
@@ -310,7 +313,7 @@ Implementeer vervolgens het navigatiemenu met een nieuwe `NavigationComponent` .
    ":type": "wknd-spa-angular/components/header"
    ```
 
-   De hiërarchische aard van de AEM-pagina&#39;s wordt gemodelleerd in de JSON die kan worden gebruikt om een navigatiemenu te vullen. Rappel dat de `Header` component alle functionaliteit van de [ Component van de Kern van de Navigatie ](https://www.aemcomponents.dev/content/core-components-examples/library/core-structure/navigation.html) erft en de inhoud die door JSON wordt blootgesteld wordt automatisch in kaart gebracht aan de 3&rbrace; aantekening van Angular &lbrace;.`@Input`
+   De hiërarchische aard van de AEM-pagina&#39;s wordt gemodelleerd in de JSON die kan worden gebruikt om een navigatiemenu te vullen. Rappel dat de `Header` component alle functionaliteit van de [ Component van de Kern van de Navigatie ](https://www.aemcomponents.dev/content/core-components-examples/library/core-structure/navigation.html) erft en de inhoud die door JSON wordt blootgesteld wordt automatisch in kaart gebracht aan de 3} aantekening van Angular {.`@Input`
 
 2. Open een nieuw eindvenster en navigeer aan de `ui.frontend` omslag van het project van het KUUROORD. Een nieuwe `NavigationComponent` maken met het Angular CLI-gereedschap:
 

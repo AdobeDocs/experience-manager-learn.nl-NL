@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 49fcd603-ab1a-4f1e-ae1f-49d3ff373439
 duration: 252
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # SPA-editor-project {#create-project}
+
+{{spa-editor-deprecation}}
 
 Leer hoe te om een Adobe Experience Manager (AEM) Gemaakt project als uitgangspunt voor een toepassing van Angular te gebruiken die met de Redacteur van het KUUROORD van AEM wordt geïntegreerd.
 
@@ -87,7 +90,7 @@ Er zijn verschillende opties voor het maken van een Maven Multi-Module-project v
 
    >[!NOTE]
    >
-   > Let op de eigenschap `frontendModule=angular` . Dit vertelt het Archetype van het Project van AEM om het project met een starter [ de codebasis van Angular ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=nl-NL) met de Redacteur van AEM te laarzen SPA.
+   > Let op de eigenschap `frontendModule=angular` . Dit vertelt het Archetype van het Project van AEM om het project met een starter [ de codebasis van Angular ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) met de Redacteur van AEM te laarzen SPA.
 
 ## Het project bouwen
 
@@ -146,7 +149,7 @@ Daarna, compileert, bouwt, en stelt de projectcode aan een lokale instantie van 
 
    Alle aangepaste code die nodig is voor het project, wordt in deze pakketten gebundeld en in de AEM-runtime geïnstalleerd.
 
-6. Er moeten ook verschillende pakketten worden weergegeven voor `spa.project.core` en `core.wcm.components` . Dit zijn gebiedsdelen automatisch inbegrepen door archetype. Meer informatie over [ de Componenten van de Kern van AEM kan hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) worden gevonden.
+6. Er moeten ook verschillende pakketten worden weergegeven voor `spa.project.core` en `core.wcm.components` . Dit zijn gebiedsdelen automatisch inbegrepen door archetype. Meer informatie over [ de Componenten van de Kern van AEM kan hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) worden gevonden.
 
 ## Inhoud auteur
 

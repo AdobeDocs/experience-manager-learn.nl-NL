@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
 duration: 337
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '1481'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # Navigatie en routering toevoegen {#navigation-routing}
+
+{{spa-editor-deprecation}}
 
 Leer hoe de veelvoudige meningen in het KUUROORD door aan de Pagina&#39;s van AEM met de Redacteur SDK van het KUUROORD kunnen worden gesteund. De dynamische navigatie wordt uitgevoerd gebruikend React Router en React de Componenten van de Kern.
 
@@ -30,7 +33,7 @@ Leer hoe de veelvoudige meningen in het KUUROORD door aan de Pagina&#39;s van AE
 
 ## Wat u gaat maken
 
-Dit hoofdstuk zal navigatie aan een KUUROORD in AEM toevoegen. Het navigatiemenu wordt gedreven door de de paginahiërarchie van AEM en zal gebruik maken van het model JSON dat door de [ Component van de Kern van de Navigatie ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=nl-NL) wordt verstrekt.
+Dit hoofdstuk zal navigatie aan een KUUROORD in AEM toevoegen. Het navigatiemenu wordt gedreven door de de paginahiërarchie van AEM en zal gebruik maken van het model JSON dat door de [ Component van de Kern van de Navigatie ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html) wordt verstrekt.
 
 ![ toegevoegde Navigatie ](assets/navigation-routing/navigation-added.png)
 
@@ -42,7 +45,7 @@ Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikke
 
 1. Open browser en login aan AEM, [ http://localhost:4502/ ](http://localhost:4502/). De begincodebasis zou reeds moeten worden opgesteld.
 1. Navigeer aan het **Malplaatje van de Pagina van het KUUROORD**: [ http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html ](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html).
-1. Selecteer de buitenste **Container van de Lay-out van de Wortel** en klik zijn **3&rbrace; pictogram van het Beleid &lbrace;.** Wees voorzichtig **niet** om de **Container van de Lay-out** niet-gesloten voor creatie te selecteren.
+1. Selecteer de buitenste **Container van de Lay-out van de Wortel** en klik zijn **3} pictogram van het Beleid {.** Wees voorzichtig **niet** om de **Container van de Lay-out** niet-gesloten voor creatie te selecteren.
 
    ![ selecteer het pictogram van het de containerbeleid van de wortellay-out ](assets/navigation-routing/root-layout-container-policy.png)
 
@@ -52,7 +55,7 @@ Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikke
 
    Onder **Toegestane Componenten** > **Algemene** > selecteer de **component van de Container van de Lay-out**.
 
-   Onder **Toegestane Componenten** > **WKND REACT van het KUUROORD - STRUCTUUR** > selecteer de **5&rbrace; component van de Navigatie &lbrace;:**
+   Onder **Toegestane Componenten** > **WKND REACT van het KUUROORD - STRUCTUUR** > selecteer de **5} component van de Navigatie {:**
 
    ![ Uitgezochte component van de Navigatie ](assets/navigation-routing/select-navigation-component.png)
 
@@ -96,7 +99,7 @@ Daarna, creeer extra pagina&#39;s in AEM die als verschillende meningen in het K
 
    Klik **creëren** en in de dialoog pop-up, klik **Open** om de pagina in de Redacteur van AEM SPA te openen.
 
-1. Voeg een nieuwe **component van de Tekst** &lbrace;aan de belangrijkste **Container van de Lay-out** toe. Bewerk de component en ga de tekst in: **Pagina 1** gebruikend RTE en het **H2** element.
+1. Voeg een nieuwe **component van de Tekst** {aan de belangrijkste **Container van de Lay-out** toe. Bewerk de component en ga de tekst in: **Pagina 1** gebruikend RTE en het **H2** element.
 
    ![ pagina 1 van de de inhoudspagina van de Steekproef ](assets/navigation-routing/page-1-sample-content.png)
 
@@ -160,7 +163,7 @@ Daarna, inspecteer het Model JSON dat de multi-meningservaring van SPA drijft.
 
 1. Het **malplaatje van de Wortel van het KUUROORD** {heeft een extra **Hiërarchische 3} lusje van de Structuur om de verzamelde inhoud te controleren JSON.** De **Diepte van de Structuur** bepaalt hoe diep in de plaatshiërarchie om kindpagina&#39;s onder de **wortel** te verzamelen. U kunt het **gebied van de Patronen van de Structuur** ook gebruiken om extra pagina&#39;s uit te filtreren die op een regelmatige uitdrukking worden gebaseerd.
 
-   Werk de **Diepte van de Structuur** aan **&#x200B;**&#x200B;bij:
+   Werk de **Diepte van de Structuur** aan **** bij:
 
    ![ de structuurdiepte van de Update ](assets/navigation-routing/update-structure-depth.png)
 
@@ -208,9 +211,9 @@ Daarna, inspecteer het Model JSON dat de multi-meningservaring van SPA drijft.
 
 ## React Routing controleren  {#react-routing}
 
-De navigatie en het verpletteren wordt uitgevoerd met [ Reageer Router ](https://reactrouter.com/en/main). Reageer Router is een inzameling van navigatiecomponenten voor React toepassingen. [ AEM React de Componenten van de Kern ](https://github.com/adobe/aem-react-core-wcm-components-base) gebruikt eigenschappen van React Router om de **3&rbrace; component uit te voeren van de Navigatie &lbrace;die in de vorige stappen wordt gebruikt.**
+De navigatie en het verpletteren wordt uitgevoerd met [ Reageer Router ](https://reactrouter.com/en/main). Reageer Router is een inzameling van navigatiecomponenten voor React toepassingen. [ AEM React de Componenten van de Kern ](https://github.com/adobe/aem-react-core-wcm-components-base) gebruikt eigenschappen van React Router om de **3} component uit te voeren van de Navigatie {die in de vorige stappen wordt gebruikt.**
 
-Daarna, inspecteer hoe React de Router met het KUUROORD wordt geïntegreerd en experimenteert gebruikend React de component van de Verbinding van de Router [&#128279;](https://reactrouter.com/en/main/components/link).
+Daarna, inspecteer hoe React de Router met het KUUROORD wordt geïntegreerd en experimenteert gebruikend React de component van de Verbinding van de Router [ ](https://reactrouter.com/en/main/components/link).
 
 1. Open het bestand `index.js` at `ui.frontend/src/index.js` in de IDE.
 
@@ -282,7 +285,7 @@ Daarna, inspecteer hoe React de Router met het KUUROORD wordt geïntegreerd en e
        }
    ```
 
-   In plaats van een standaard `<a>` ankertag te gebruiken, gebruiken we `<Link>` dat wordt geleverd door React Router. Zolang `to=` aan een geldige route richt, zal het KUUROORD aan die route schakelen en **&#x200B;**&#x200B;voert geen volledige pagina uit vernieuwt. Hier kunt u de koppeling naar de startpagina eenvoudig coderen om het gebruik van `Link` te illustreren.
+   In plaats van een standaard `<a>` ankertag te gebruiken, gebruiken we `<Link>` dat wordt geleverd door React Router. Zolang `to=` aan een geldige route richt, zal het KUUROORD aan die route schakelen en **** voert geen volledige pagina uit vernieuwt. Hier kunt u de koppeling naar de startpagina eenvoudig coderen om het gebruik van `Link` te illustreren.
 
 1. Werk de test bij `App.test.js` om `ui.frontend/src/App.test.js` .
 
