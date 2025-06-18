@@ -36,7 +36,7 @@ In deze zelfstudie leert u hoe u:
 Controleer voordat u begint het volgende:
 
 - [ Toegang hebbend tot Adobe APIs en verwante concepten ](../overview.md#accessing-adobe-apis-and-related-concepts) sectie.
-- ](../setup.md) artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.[
+- [&#128279;](../setup.md) artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.
 
 ## Vereisten
 
@@ -438,7 +438,7 @@ Voer de volgende stappen uit om te controleren of de technische gebruiker en geb
 
 - De gebruikersvereniging van het Profiel van het Product en de technische rekening kunnen in de **Profiles van het Product** worden geverifieerd **API geloofsbrieven** tabel.
 
-  {de geloofsbrieven van API van het Profiel van 0} Product ](../assets/s2s/product-profile-api-credentials.png)![
+  {de geloofsbrieven van API van het Profiel van 0} Product ![&#128279;](../assets/s2s/product-profile-api-credentials.png)
 
 ## 403-fout voor niet-GET-aanvragen
 

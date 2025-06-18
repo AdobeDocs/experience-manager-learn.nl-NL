@@ -29,7 +29,7 @@ De authentificatie van de Toepassing van het Web OAuth is ideaal voor Webtoepass
 
 In deze zelfstudie leert u hoe u:
 
-- Vorm een project van Adobe Developer Console (ADC) om tot de Auteur API van Assets toegang te hebben gebruikend _authentificatie van de App van het Web 0} OAuth._
+- Vorm een project van Adobe Developer Console (ADC) om tot de Auteur API van Assets toegang te hebben gebruikend _authentificatie van de App van het Web 0&rbrace; OAuth._
 
 - Implementeer de OAuth Web App-verificatiestroom in een aangepaste web-app.
    - IMS-gebruikersverificatie en -toepassingsautorisatie.
@@ -39,7 +39,7 @@ In deze zelfstudie leert u hoe u:
 Controleer voordat u begint het volgende:
 
 - [ Toegang hebbend tot Adobe APIs en verwante concepten ](../overview.md#accessing-adobe-apis-and-related-concepts) sectie.
-- ](../setup.md) artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.[
+- [&#128279;](../setup.md) artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.
 
 ## Voorbeeld van een web-app: WKND-PIM-overzicht en functionele flow
 
@@ -69,7 +69,7 @@ Andere webstapels (Java, Python, .NET-gebaseerd, enz.) kunnen worden gebruikt om
 
 ## Deze zelfstudie gebruiken{#how-to-use-this-tutorial}
 
-U kunt of [ het Web van het Overzicht app zeer belangrijke codefragmenten ](#review-web-app-key-code-snippets) sectie {om de de authentificatiestroom van de App van het Web te begrijpen OAuth en API codefragmenten roepen die in WKND-PIM Web worden gebruikt app. Of ga direct aan de [ Opstelling te werk en Web app ](#setup-run-web-app) sectie in werking te stellen aan opstelling en WKND-PIM Web app op uw lokale machine in werking te stellen om de OAuth de authentificatiestroom van de App en API vraag te begrijpen.
+U kunt of [ het Web van het Overzicht app zeer belangrijke codefragmenten ](#review-web-app-key-code-snippets) sectie &lbrace;om de de authentificatiestroom van de App van het Web te begrijpen OAuth en API codefragmenten roepen die in WKND-PIM Web worden gebruikt app. Of ga direct aan de [ Opstelling te werk en Web app ](#setup-run-web-app) sectie in werking te stellen aan opstelling en WKND-PIM Web app op uw lokale machine in werking te stellen om de OAuth de authentificatiestroom van de App en API vraag te begrijpen.
 
 ## Codefragmenten voor webapps bekijken{#review-web-app-key-code-snippets}
 
@@ -122,7 +122,7 @@ Bij de allereerste aanmeldingspoging moet de gebruiker toestemming geven om de W
 
 ![ Eerste Login en Toestemming ](../assets/web-app/first-login-consent.png)
 
-1. Het `routes/update-product-attributes.js` dossier verifieert als de 1} Uitdrukkelijke zitting van de gebruiker ](https://www.npmjs.com/package/express-session) een toegangstoken heeft. [ Als dat niet het geval is, leidt het de gebruiker om naar de `/auth` route.
+1. Het `routes/update-product-attributes.js` dossier verifieert als de 1&rbrace; Uitdrukkelijke zitting van de gebruiker [&#128279;](https://www.npmjs.com/package/express-session) een toegangstoken heeft.  Als dat niet het geval is, leidt het de gebruiker om naar de `/auth` route.
 
    ```javascript
    ...
@@ -465,7 +465,7 @@ Vorm ADC de stap van het Project wordt _herhaald_ van [ OpenAPI-Gebaseerde AEM A
    >
    >Als de gewenste **AEM API kaart** wordt onbruikbaar gemaakt en _waarom is dit gehandicapt?_ de informatie toont het **Vereiste Vergunning** bericht één van de redenen zou kunnen zijn dat u uw milieu van AEM as a Cloud Service NIET hebt gemoderniseerd, zie [ Modernisering van het milieu van AEM as a Cloud Service ](../setup.md#modernization-of-aem-as-a-cloud-service-environment) voor meer informatie.
 
-1. Daarna, in _vorm API_ dialoog, selecteer de **3} authentificatieoptie van de Authentificatie van de Gebruiker {en klik** daarna **.**
+1. Daarna, in _vorm API_ dialoog, selecteer de **3&rbrace; authentificatieoptie van de Authentificatie van de Gebruiker &lbrace;en klik** daarna **.**
 
    ![ vorm AEM API ](../assets/web-app/configure-aem-api.png)
 
@@ -577,7 +577,7 @@ Met de bovengenoemde stappen, zijn de activa van de **PIM** omslag klaar om de m
    EXPRESS_SESSION_SECRET=1234554321
    ```
 
-   `AEM_ASSET_IDS` is de `jcr:uuid` bezitswaarde van de geüploade beelden in de **3} omslag van de Camping.** Verwijs naar deze [ sectie ](./invoke-api-using-oauth-s2s.md#review-the-api) voor meer details.
+   `AEM_ASSET_IDS` is de `jcr:uuid` bezitswaarde van de geüploade beelden in de **3&rbrace; omslag van de Camping.** Verwijs naar deze [ sectie ](./invoke-api-using-oauth-s2s.md#review-the-api) voor meer details.
 
 1. Open een terminal en navigeer naar de uitgepakte map. Installeer de vereiste gebiedsdelen gebruikend het volgende bevel.
 
