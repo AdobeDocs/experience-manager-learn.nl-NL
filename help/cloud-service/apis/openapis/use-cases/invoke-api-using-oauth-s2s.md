@@ -12,9 +12,9 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: 9a5d811cf92a09da27057f99e1b6b2ed8df2a414
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1776'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ In deze zelfstudie leert u hoe u:
 Controleer voordat u begint het volgende:
 
 - [ Toegang hebbend tot Adobe APIs en verwante concepten ](../overview.md#accessing-adobe-apis-and-related-concepts) sectie.
-- [&#128279;](../setup.md) artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.
+- ](../setup.md) artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.[
 
 ## Vereisten
 
@@ -84,6 +84,10 @@ Vorm ADC de stap van het Project wordt _herhaald_ van [ OpenAPI-Gebaseerde AEM A
 1. In _voeg API_ dialoog toe, filter door _Experience Cloud_ en selecteer **de Auteur API van AEM Assets** kaart en klik **daarna**.
 
    ![ voeg AEM API ](../assets/s2s/add-aem-api.png) toe
+
+   >[!TIP]
+   >
+   >Als de gewenste **AEM API kaart** wordt onbruikbaar gemaakt en _waarom is dit gehandicapt?_ de informatie toont het **Vereiste Vergunning** bericht één van de redenen zou kunnen zijn dat u uw milieu van AEM as a Cloud Service NIET hebt gemoderniseerd, zie [ Modernisering van het milieu van AEM as a Cloud Service ](../setup.md#modernization-of-aem-as-a-cloud-service-environment) voor meer informatie.
 
 1. Daarna, in _vorm API_ dialoog, selecteer de **server-aan-server** authentificatieoptie en klik **daarna**. De server-aan-server authentificatie is ideaal voor de backenddiensten die API toegang zonder gebruikersinteractie vereisen.
 
@@ -434,7 +438,7 @@ Voer de volgende stappen uit om te controleren of de technische gebruiker en geb
 
 - De gebruikersvereniging van het Profiel van het Product en de technische rekening kunnen in de **Profiles van het Product** worden geverifieerd **API geloofsbrieven** tabel.
 
-  {de geloofsbrieven van API van het Profiel van 0} Product ![&#128279;](../assets/s2s/product-profile-api-credentials.png)
+  {de geloofsbrieven van API van het Profiel van 0} Product ](../assets/s2s/product-profile-api-credentials.png)![
 
 ## 403-fout voor niet-GET-aanvragen
 

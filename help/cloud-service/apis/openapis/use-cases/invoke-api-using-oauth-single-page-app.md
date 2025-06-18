@@ -12,9 +12,9 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
 workflow-type: tm+mt
-source-wordcount: '2081'
+source-wordcount: '2130'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ In deze zelfstudie leert u hoe u:
 Controleer voordat u begint het volgende:
 
 - [ Toegang hebbend tot Adobe APIs en verwante concepten ](../overview.md#accessing-adobe-apis-and-related-concepts) sectie.
-- [&#128279;](../setup.md) artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.
+- ](../setup.md) artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.[
 
 ## WKND SPA-overzicht en functionele stroom{#wknd-spa-overview-and-functional-flow}
 
@@ -59,7 +59,7 @@ Het project van Adobe Developer Console (ADC) wordt gevormd om de authentificati
 >Het project ADC verstrekt niet a _client_geheime_. In plaats daarvan, produceert het KUUROORD a _code_verifier_ en _code_challenge_ om de vergunningscode voor een _toegangstoken_ veilig uit te wisselen. Het elimineert de behoefte om een cliëntgeheim op de cliëntkant op te slaan, die veiligheid verbetert.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3456970?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3456964?quality=12&learn=on)
 
 
 
@@ -385,7 +385,11 @@ Vorm ADC de stap van het Project wordt _herhaald_ van [ OpenAPI-Gebaseerde AEM A
 
    ![ voeg AEM API ](../assets/spa/add-aem-sites-api.png) toe
 
-1. Daarna, in _vorm API_ dialoog, selecteer de **3&rbrace; authentificatieoptie van de Authentificatie van de Gebruiker &lbrace;en klik** daarna **.**
+   >[!TIP]
+   >
+   >Als de gewenste **AEM API kaart** wordt onbruikbaar gemaakt en _waarom is dit gehandicapt?_ de informatie toont het **Vereiste Vergunning** bericht één van de redenen zou kunnen zijn dat u uw milieu van AEM as a Cloud Service NIET hebt gemoderniseerd, zie [ Modernisering van het milieu van AEM as a Cloud Service ](../setup.md#modernization-of-aem-as-a-cloud-service-environment) voor meer informatie.
+
+1. Daarna, in _vorm API_ dialoog, selecteer de **3} authentificatieoptie van de Authentificatie van de Gebruiker {en klik** daarna **.**
 
    ![ vorm AEM API ](../assets/spa/configure-aem-api.png)
 

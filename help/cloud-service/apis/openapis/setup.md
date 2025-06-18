@@ -12,9 +12,9 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 34a22580db6dc32b5c4c5945af83600be2e0a852
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1493'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ De modernisering van het milieu van AEM as a Cloud Service is een eenmalige mili
 
 ### AEM-instantie bijwerken{#update-aem-instance}
 
-Om de instantie van AEM bij te werken, in de Adobe [ Cloud Manager _van de Milieu_ sectie van 1&rbrace; &lbrace;, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **optie van de Update**.](https://my.cloudmanager.adobe.com/)
+Om de instantie van AEM bij te werken, in de Adobe [ Cloud Manager _van de Milieu_ sectie van 1} {, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **optie van de Update**.](https://my.cloudmanager.adobe.com/)
 
 ![ Update AEM instantie ](./assets/setup/update-aem-instance.png)
 
@@ -56,7 +56,7 @@ In mijn geval, wordt de FullstackPipeline genoemd **Dev:: Fullstack-Deploy**, en
 
 ### Nieuwe productprofielen toevoegen{#add-new-product-profiles}
 
-Om nieuwe Profielen van het Product aan de instantie van AEM toe te voegen, in de 2&rbrace; sectie van de Milieu&#39;s [&#128279;](https://my.cloudmanager.adobe.com/) van Adobe __, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **toevoegen de optie van de Profielen van het Product**.
+Om nieuwe Profielen van het Product aan de instantie van AEM toe te voegen, in de 2} sectie van de Milieu&#39;s ](https://my.cloudmanager.adobe.com/) van Adobe __, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **toevoegen de optie van de Profielen van het Product**.[
 
 ![ voeg nieuwe Profielen van het Product ](./assets/setup/add-new-product-profiles.png) toe
 
@@ -78,7 +78,7 @@ U kunt de _Diensten_ ook selecteren of schrappen verbonden aan het Profiel van h
 
 Herzie de vereniging door op het _pictogram van de Details van de Mening_ naast de naam van het Profiel van het Product te klikken.
 
-{de diensten van het 0} Overzicht verbonden aan het Profiel van het Product ![&#128279;](./assets/setup/review-services-associated-with-product-profile.png)
+{de diensten van het 0} Overzicht verbonden aan het Profiel van het Product ](./assets/setup/review-services-associated-with-product-profile.png)![
 
 ### Toegang tot AEM Assets API&#39;s inschakelen{#enable-aem-assets-apis-access}
 
@@ -94,7 +94,7 @@ Bijvoorbeeld, om de server-aan-server authentificatie voor AEM Assets API toe te
 
 ![ associeerde Ontwikkelaar aan het Profiel van het Product ](./assets/setup/associate-developer-to-product-profile.png)
 
-Na deze vereniging, kan de 20&rbrace; ActivaAuteur API van het Project ADC _opstelling de gewenste Server-aan-Server authentificatie en de authentificatierekening van het project associëren ADC (die in volgende stap) met het Profiel van het Product wordt gecreeerd._
+Na deze vereniging, kan de 20} ActivaAuteur API van het Project ADC _opstelling de gewenste server-aan-Server authentificatie en de authentificatierekening van het Project associëren ADC (die in de volgende stap) met het Profiel van het Product wordt gecreeerd._
 
 >[!IMPORTANT]
 >
@@ -134,6 +134,10 @@ Nadat u het ADC-project hebt gemaakt, moet u de gewenste AEM API&#39;s toevoegen
 
    ![ voeg AEM API ](./assets/s2s/add-aem-api.png) toe
 
+   >[!TIP]
+   >
+   >    Als de gewenste **AEM API kaart** wordt onbruikbaar gemaakt en _waarom is dit gehandicapt?_ de informatie toont het **Vereiste Vergunning** bericht één van de redenen zou kunnen zijn dat u uw milieu van AEM as a Cloud Service NIET hebt gemoderniseerd, zie [ Modernisering van het milieu van AEM as a Cloud Service ](#modernization-of-aem-as-a-cloud-service-environment) voor meer informatie.
+
 1. Daarna, in _vorm API_ dialoog, selecteer de gewenste authentificatieoptie. Bijvoorbeeld, in dit geval, wordt de **server-aan-Server** authentificatieoptie geselecteerd.
 
    ![ Uitgezochte authentificatie ](./assets/s2s/select-authentication.png)
@@ -159,7 +163,7 @@ Nadat u het ADC-project hebt gemaakt, moet u de gewenste AEM API&#39;s toevoegen
 
    ![ configuratie van de Authentificatie ](./assets/s2s/authentication-configuration.png)
 
-Als u **of** OAuth App **authentificatiemethode van de Toepassing van de Toepassing van de enig-Pagina** kiest, wordt de vereniging van het Profiel van het Product niet veroorzaakt maar de toepassing richt URI wordt vereist. De URI voor omleiding van de toepassing wordt gebruikt om de gebruiker na verificatie met een machtigingscode om te leiden naar de toepassing. In de relevante zelfstudies voor gebruiksgevallen worden dergelijke configuraties beschreven die specifiek zijn voor verificatie.
+Als u **of** OAuth App **authentificatiemethode van de Toepassing van de Toepassing van de enig-Pagina** kiest, wordt de vereniging van het Profiel van het Product niet veroorzaakt maar de toepassing richt URI wordt vereist. De URI voor omleiding van de toepassing wordt gebruikt om de gebruiker na verificatie met een machtigingscode om te leiden naar de toepassing. In de relevante zelfstudies voor gebruiksgevallen worden dergelijke configuraties beschreven.
 
 ## De AEM-instantie configureren om ADC-projectcommunicatie in te schakelen{#configure-aem-instance}
 
