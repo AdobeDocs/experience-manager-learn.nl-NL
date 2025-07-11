@@ -41,21 +41,21 @@ Soms moet u aangepaste indexen maken ter ondersteuning van uw zoekvereisten. Vol
 
 - Begrijp de onderzoeksvereisten en controleer als de indexen OOTB de onderzoeksvereisten kunnen steunen. Het Hulpmiddel van de Prestaties van de Vraag van het gebruik **, beschikbaar bij** lokale SDK [ en AEMCS via Developer Console of ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html).`https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`
 
-- Bepaal een optimale vraag, gebruik [ optimaliserend vragen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) stroomdiagram en [ JCR de Controle van de Vraag Sheet ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) voor verwijzing.
+- Bepaal een optimale vraag, gebruik [ optimaliserend vragen ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) stroomdiagram en [ JCR de Controle van de Vraag Sheet ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=nl-NL) voor verwijzing.
 
-- Als de OOTB-indexen de zoekvereisten niet ondersteunen, hebt u twee opties. Nochtans, herzie de [ Uiteinden voor het Creëren van Efficiënte Indexen ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
+- Als de OOTB-indexen de zoekvereisten niet ondersteunen, hebt u twee opties. Nochtans, herzie de [ Uiteinden voor het Creëren van Efficiënte Indexen ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
    - Pas de OOTB-index aan: voorkeursoptie omdat u deze eenvoudig kunt onderhouden en upgraden.
    - Volledig aangepaste index: alleen als de bovenstaande optie niet werkt.
 
 ### De OOTB-index aanpassen
 
-- In **AEMCS**, wanneer het aanpassen van het OTB indexgebruik **\ &lt;OOTBIndexName>-\ &lt;productVersion>-douane- \ &lt;customVersion>** noemende overeenkomst. Bijvoorbeeld `cqPageLucene-custom-1` of `damAssetLucene-8-custom-1` . Zo kunt u de aangepaste indexdefinitie samenvoegen wanneer de OTB-index wordt bijgewerkt. Zie [ Veranderingen in uit-van-de-Doos Indexen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing) voor meer details.
+- In **AEMCS**, wanneer het aanpassen van het OTB indexgebruik **\ &lt;OOTBIndexName>-\ &lt;productVersion>-douane- \ &lt;customVersion>** noemende overeenkomst. Bijvoorbeeld `cqPageLucene-custom-1` of `damAssetLucene-8-custom-1` . Zo kunt u de aangepaste indexdefinitie samenvoegen wanneer de OTB-index wordt bijgewerkt. Zie [ Veranderingen in uit-van-de-Doos Indexen ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/indexing) voor meer details.
 
 - In **AEM 6.X**, werkt het bovengenoemde noemen _niet_, echter werkt eenvoudig de index OTB met noodzakelijke eigenschappen in de `indexRules` knoop bij.
 
 - Kopieer altijd de nieuwste OOTB-indexdefinitie van de AEM-instantie met CRX DE Package Manager (/crx/packmgr/), wijzig de naam en voeg aanpassingen toe in het XML-bestand.
 
-- Sla indexdefinitie op in het AEM-project op `ui.apps/src/main/content/jcr_root/_oak_index` en implementeer deze met Cloud Manager CI/CD-leidingen. Zie [ het Opstellen van de Definities van de Index van de Douane ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing) voor meer details.
+- Sla indexdefinitie op in het AEM-project op `ui.apps/src/main/content/jcr_root/_oak_index` en implementeer deze met Cloud Manager CI/CD-leidingen. Zie [ het Opstellen van de Definities van de Index van de Douane ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/indexing) voor meer details.
 
 ### Volledig aangepaste index
 
@@ -63,13 +63,13 @@ Het maken van een volledig aangepaste index moet de laatste optie zijn en alleen
 
 - Gebruik **\&lt;prefix> wanneer u een volledig aangepaste index maakt.\&lt;customIndexName>-\&lt;version>-douane- \ &lt;customVersion>** noemende overeenkomst. Bijvoorbeeld `wknd.adventures-1-custom-1` . Zo voorkomt u naamconflicten. Hier is `wknd` het voorvoegsel en `adventures` de aangepaste indexnaam. Deze conventie geldt voor zowel AEM 6.X als AEMCS en helpt bij de voorbereiding op toekomstige migratie naar AEMCS.
 
-- AEMCS steunt slechts indexen van Lucene, zodat om voor toekomstige migratie aan AEMCS voor te bereiden, gebruik altijd indexen van Lucene. Zie [ Indexen van Lucene vs Indexen van het Bezit ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing) voor meer details.
+- AEMCS steunt slechts indexen van Lucene, zodat om voor toekomstige migratie aan AEMCS voor te bereiden, gebruik altijd indexen van Lucene. Zie [ Indexen van Lucene vs Indexen van het Bezit ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing) voor meer details.
 
 - Maak geen aangepaste index op hetzelfde knooppunttype als de OOTB-index. Pas in plaats daarvan de OOTB-index aan met de benodigde eigenschappen in het knooppunt `indexRules` . Maak bijvoorbeeld geen aangepaste index voor het knooppunttype `dam:Asset` , maar pas de OOTB `damAssetLucene` -index aan. _het is een gemeenschappelijke worteloorzaak van prestaties en functionele kwesties_ geweest.
 
 - Vermijd ook het toevoegen van meerdere knooppunttypen, bijvoorbeeld `cq:Page` en `cq:Tag` onder het knooppunt indexeringsregels (`indexRules` ). Maak in plaats daarvan afzonderlijke indexen voor elk type knooppunt.
 
-- Zoals vermeld in bovenstaande sectie, sla indexdefinitie in het AEM project bij `ui.apps/src/main/content/jcr_root/_oak_index` op en stel het op gebruikend Cloud Manager CI/CD pijpleidingen. Zie [ het Opstellen van de Definities van de Index van de Douane ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing) voor meer details.
+- Zoals vermeld in bovenstaande sectie, sla indexdefinitie in het AEM project bij `ui.apps/src/main/content/jcr_root/_oak_index` op en stel het op gebruikend Cloud Manager CI/CD pijpleidingen. Zie [ het Opstellen van de Definities van de Index van de Douane ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/indexing) voor meer details.
 
 - De richtlijnen voor indexdefinitie zijn:
    - Het knooppunttype (`jcr:primaryType`) zou `oak:QueryIndexDefinition` moeten zijn
@@ -253,7 +253,7 @@ De [ hulpmiddelhulp van de Analysator van de Definitie van de Index ](https://oa
 
 ### Gereedschap Query-prestaties
 
-Het Hulpmiddel van de Prestaties van de Vraag OTB _beschikbaar bij_ lokale SDK [ en AEMCS via Developer Console of ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) hulp `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell` om de vraagprestaties **en** JCR de Cheat Sheet van de Vraag te analyseren [ om de optimale vraag te bepalen.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en)
+Het Hulpmiddel van de Prestaties van de Vraag OTB _beschikbaar bij_ lokale SDK [ en AEMCS via Developer Console of ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) hulp `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell` om de vraagprestaties **en** JCR de Cheat Sheet van de Vraag te analyseren [ om de optimale vraag te bepalen.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=nl-NL)
 
 ### Problemen met gereedschappen en tips oplossen
 
@@ -273,7 +273,7 @@ De meeste van de onderstaande opties zijn van toepassing voor AEM 6.X en lokale 
 
 Raadpleeg de volgende documentatie voor meer informatie:
 
-- [ de Vragen van Oak en het Indexeren ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/queries-and-indexing)
-- [ Vraag en het Indexeren Beste Praktijken ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
-- [ Beste praktijken voor Vragen en het Indexeren ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
+- [ de Vragen van Oak en het Indexeren ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/deploying/queries-and-indexing)
+- [ Vraag en het Indexeren Beste Praktijken ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
+- [ Beste praktijken voor Vragen en het Indexeren ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
 
