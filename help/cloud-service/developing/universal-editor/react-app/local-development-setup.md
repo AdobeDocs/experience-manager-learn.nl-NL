@@ -33,8 +33,8 @@ U hebt het volgende nodig om deze zelfstudie te volgen:
    - [ Git ](https://git-scm.com/downloads)
    - Een winde of coderedacteur, zoals [ Code van Visual Studio ](https://code.visualstudio.com/)
 - Download en installeer het volgende:
-   - [ AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): Het bevat QuickStart Jar die wordt gebruikt om de Auteur van AEM in werking te stellen en plaatselijk voor ontwikkelingsdoeleinden te publiceren.
-   - [ Universele dienst van de Redacteur ](https://experienceleague.adobe.com/en/docs/experience-cloud/software-distribution/home): Een lokaal exemplaar van de Universele dienst van de Redacteur, heeft het een ondergroep van eigenschappen en kan van het portaal van de Distributie van de Software worden gedownload.
+   - [ AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): Het bevat QuickStart Jar die wordt gebruikt om de Auteur van AEM in werking te stellen en plaatselijk voor ontwikkelingsdoeleinden te publiceren.
+   - [ Universele dienst van de Redacteur ](https://experienceleague.adobe.com/nl/docs/experience-cloud/software-distribution/home): Een lokaal exemplaar van de Universele dienst van de Redacteur, heeft het een ondergroep van eigenschappen en kan van het portaal van de Distributie van de Software worden gedownload.
    - [ lokaal-ssl-volmacht ](https://www.npmjs.com/package/local-ssl-proxy#local-ssl-proxy): Een eenvoudige lokale SSL HTTP- volmacht die een zelf-ondertekend certificaat voor lokale ontwikkeling gebruikt. De AEM Universal Editor heeft de HTTPS-URL van de React-app nodig om deze in de editor te laden.
 
 ## Lokale instellingen
