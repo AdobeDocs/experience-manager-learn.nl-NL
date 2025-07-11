@@ -154,7 +154,7 @@ Onder de afbeelding ziet u een aangepaste index met de eigenschap `tags` en hoe 
 
 ##### Analyse
 
-Toont aan hoe te om niet-tegenstrijdige en correcte `tags` bezitswaarde op de index te plaatsen en het te gebruiken terwijl het vragen. De algemene querysyntaxis is is `<query> option(index tag <tagName>)` . Zie ook {de Markering van de Index van de Optie van 0} Vraag [](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)
+Toont aan hoe te om niet-tegenstrijdige en correcte `tags` bezitswaarde op de index te plaatsen en het te gebruiken terwijl het vragen. De algemene querysyntaxis is is `<query> option(index tag <tagName>)` . Zie ook {de Markering van de Index van de Optie van 0} Vraag [&#128279;](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)
 
 #### Aangepaste index
 
@@ -245,7 +245,7 @@ Laten we enkele gereedschappen bekijken die u kunnen helpen de indexen te defini
 
 ### Gereedschap Index maken
 
-Het [ hulpmiddelhulp van de Generator van de Definitie van de Index van 0} Oak ](https://oakutils.appspot.com/generate/index) om de indexdefinitie **te produceren die op de inputvragen wordt gebaseerd.** Het is een goed beginpunt om een aangepaste index te maken.
+Het [ hulpmiddelhulp van de Generator van de Definitie van de Index van 0&rbrace; Oak ](https://oakutils.appspot.com/generate/index) om de indexdefinitie **te produceren die op de inputvragen wordt gebaseerd.** Het is een goed beginpunt om een aangepaste index te maken.
 
 ### Gereedschap Index analyseren
 
