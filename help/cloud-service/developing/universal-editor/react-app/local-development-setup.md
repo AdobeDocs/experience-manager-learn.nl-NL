@@ -12,7 +12,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 47bef697-5253-493a-b9f9-b26c27d2db56
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 7c58c5cb6a3d99a9577206b3e5e0b8dcd55a850e
 workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 0%
@@ -33,8 +33,8 @@ U hebt het volgende nodig om deze zelfstudie te volgen:
    - [ Git ](https://git-scm.com/downloads)
    - Een winde of coderedacteur, zoals [ Code van Visual Studio ](https://code.visualstudio.com/)
 - Download en installeer het volgende:
-   - [ AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): Het bevat QuickStart Jar die wordt gebruikt om de Auteur van AEM in werking te stellen en plaatselijk voor ontwikkelingsdoeleinden te publiceren.
-   - [ Universele dienst van de Redacteur ](https://experienceleague.adobe.com/nl/docs/experience-cloud/software-distribution/home): Een lokaal exemplaar van de Universele dienst van de Redacteur, heeft het een ondergroep van eigenschappen en kan van het portaal van de Distributie van de Software worden gedownload.
+   - [ AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): Het bevat QuickStart Jar die wordt gebruikt om de Auteur van AEM in werking te stellen en plaatselijk voor ontwikkelingsdoeleinden te publiceren.
+   - [ Universele dienst van de Redacteur ](https://experienceleague.adobe.com/en/docs/experience-cloud/software-distribution/home): Een lokaal exemplaar van de Universele dienst van de Redacteur, heeft het een ondergroep van eigenschappen en kan van het portaal van de Distributie van de Software worden gedownload.
    - [ lokaal-ssl-volmacht ](https://www.npmjs.com/package/local-ssl-proxy#local-ssl-proxy): Een eenvoudige lokale SSL HTTP- volmacht die een zelf-ondertekend certificaat voor lokale ontwikkeling gebruikt. De AEM Universal Editor heeft de HTTPS-URL van de React-app nodig om deze in de editor te laden.
 
 ## Lokale instellingen
@@ -98,9 +98,9 @@ Aan opstelling de **lokale** Universele dienst van de Redacteur, volg de stappen
 
    ```bash
    # The port on which the Universal Editor service runs
-   EXPRESS_PORT=8000
+   UES_PORT=8000
    # Disable SSL verification
-   NODE_TLS_REJECT_UNAUTHORIZED=0
+   UES_TLS_REJECT_UNAUTHORIZED=false
    ```
 
 1. Start de lokale Universal Editor-service.
