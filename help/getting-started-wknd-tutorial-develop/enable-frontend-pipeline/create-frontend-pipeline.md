@@ -38,7 +38,7 @@ In dit hoofdstuk, creëren en leiden wij een front-end pijpleiding in Adobe Clou
 
 Dit is een meerdelig leerprogramma en men veronderstelt dat de stappen in het [ StandaardProject van AEM van de Update ](./update-project.md) worden geschetst zijn voltooid.
 
-Verzeker u [ voorrechten hebt om, pijpleidingen in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) te creëren en op te stellen en [ toegang tot een milieu van AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
+Verzeker u [ voorrechten hebt om, pijpleidingen in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=nl-NL#role-definitions) te creëren en op te stellen en [ toegang tot een milieu van AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL).
 
 ## Bestaande pijpleiding hernoemen
 

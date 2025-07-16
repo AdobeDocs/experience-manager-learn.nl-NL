@@ -332,4 +332,4 @@ Buiten de Adobe-geadviseerde standaard verkeersfilter en de regels van WAF, kunt
 
 ## Aanvullende bronnen
 
-- [ Regels van de Filter van het Verkeer met inbegrip van de Regels van WAF ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
+- [ Regels van de Filter van het Verkeer met inbegrip van de Regels van WAF ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
