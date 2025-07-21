@@ -11,7 +11,7 @@ last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18306
 thumbnail: null
 exl-id: 0a738af8-666b-48dc-8187-9b7e6a8d7e1b
-source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
+source-git-commit: b7f567da159865ff04cb7e9bd4dae0b140048e7d
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Leer **hoe te opstelling** de regels van de verkeersfilter met inbegrip van de r
 
 Om het opstellingsproces aan te tonen, gebruikt het leerprogramma het [ Project van de Plaatsen van AEM WKND ](https://github.com/adobe/aem-guides-wknd).
 
->[!VIDEO](https://video.tv.adobe.com/v/3469396/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469395/?quality=12&learn=on)
 
 ## Overzicht van setup
 
@@ -335,4 +335,4 @@ Buiten de Adobe-geadviseerde standaard verkeersfilter en de regels van WAF, kunt
 
 ## Aanvullende bronnen
 
-- [ Regels van de Filter van het Verkeer met inbegrip van de Regels van WAF ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
+- [ Regels van de Filter van het Verkeer met inbegrip van de Regels van WAF ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
