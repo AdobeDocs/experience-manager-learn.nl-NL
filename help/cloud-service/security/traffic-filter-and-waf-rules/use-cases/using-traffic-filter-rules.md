@@ -10,17 +10,20 @@ doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18307
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
+exl-id: 5e235220-82f6-46e4-b64d-315f027a7024
+source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 0%
 
 ---
 
-
 # AEM-websites beveiligen met de standaardregels voor verkeersfilters
 
 Leer hoe te om de websites van AEM tegen Ontkenning van de Dienst (Dos), Verspreid Ontkenning van de Dienst (DDoS) te beschermen, en bot misbruik gebruikend _Adobe-geadviseerde_ **standaardregels van de verkeersfilter** in AEM as a Cloud Service.
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469395/?quality=12&learn=on)
 
 ## Leerdoelstellingen
 
@@ -225,7 +228,7 @@ U kunt andere panelen in het Dashboard van het Verkeer CDN ook gebruiken om de v
 
 ### Splunk-integratie
 
-De klanten die [ Logboek van de Splunk hebben toegelaten ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) kunnen nieuwe dashboards tot stand brengen om de verkeerspatronen te analyseren.
+De klanten die [ Logboek van de Splunk hebben toegelaten ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) kunnen nieuwe dashboards tot stand brengen om de verkeerspatronen te analyseren.
 
 Om dashboards in Splunk tot stand te brengen, volg [ Splunk dashboards voor de Analyse van het Logboek AEMCS CDN ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis) stappen.
 
@@ -388,6 +391,4 @@ Voor meer geavanceerde scenario&#39;s, kunt u de volgende gebruiksgevallen onder
 
 ## Aanvullende bronnen
 
-- [ Aanbevolen starterregels ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)
-
-
+- [ Aanbevolen starterregels ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)
