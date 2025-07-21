@@ -228,7 +228,7 @@ U kunt andere panelen in het Dashboard van het Verkeer CDN ook gebruiken om de v
 
 ### Splunk-integratie
 
-De klanten die [ Logboek van de Splunk hebben toegelaten ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) kunnen nieuwe dashboards tot stand brengen om de verkeerspatronen te analyseren.
+De klanten die [ Logboek van de Splunk hebben toegelaten ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) kunnen nieuwe dashboards tot stand brengen om de verkeerspatronen te analyseren.
 
 Om dashboards in Splunk tot stand te brengen, volg [ Splunk dashboards voor de Analyse van het Logboek AEMCS CDN ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis) stappen.
 
@@ -391,4 +391,4 @@ Voor meer geavanceerde scenario&#39;s, kunt u de volgende gebruiksgevallen onder
 
 ## Aanvullende bronnen
 
-- [ Aanbevolen starterregels ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)
+- [ Aanbevolen starterregels ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)
