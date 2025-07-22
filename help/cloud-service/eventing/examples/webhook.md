@@ -30,8 +30,8 @@ Leer hoe u AEM-gebeurtenissen op een website kunt ontvangen en bekijk de gebeurt
 >[!IMPORTANT]
 >
 >De levende demo eindpunten in dit leerprogramma werden eerder ontvangen op [ Glitch ](https://glitch.com/). Vanaf juli 2025 heeft Glitch zijn hostingservice stopgezet en zijn de eindpunten niet langer toegankelijk.
->>We werken actief aan het migreren van demo&#39;s naar een alternatief platform. De inhoud van de zelfstudie blijft accuraat en de bijgewerkte koppelingen worden binnenkort weergegeven.
->>Dank u voor uw begrip en geduld.
+>&#x200B;>We werken actief aan het migreren van demo&#39;s naar een alternatief platform. De inhoud van de zelfstudie blijft accuraat en de bijgewerkte koppelingen worden binnenkort weergegeven.
+>&#x200B;>Dank u voor uw begrip en geduld.
 
 Gebruik uw eigen webhaak totdat de eindpunten van de live demo weer beschikbaar zijn.
 
@@ -163,4 +163,4 @@ U ziet dat de AEM-gebeurtenisdetails alle benodigde informatie hebben om de gebe
 
 ## Aanvullende bronnen
 
-- [ broncode 0} AEM-Eventing Webhaak {is beschikbaar voor uw verwijzing.](../assets/examples/webhook/aemeventing-webhook.tgz)
+- [ broncode 0&rbrace; AEM-Eventing Webhaak &lbrace;is beschikbaar voor uw verwijzing.](../assets/examples/webhook/aemeventing-webhook.tgz)
