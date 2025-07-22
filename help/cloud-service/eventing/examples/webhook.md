@@ -12,9 +12,9 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14732
 thumbnail: KT-14732.jpeg
 exl-id: 00954d74-c4c7-4dac-8d23-7140c49ae31f
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: e01eb7ff050321a70d84f8a613705799017dbf5d
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,17 @@ ht-degree: 0%
 
 Leer hoe u AEM-gebeurtenissen op een website kunt ontvangen en bekijk de gebeurtenisdetails zoals payload, headers en metagegevens.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449754?quality=12&learn=on&captions=dut)
 
-In dit voorbeeld, die een Adobe-Geleide _ontvangen webhaak_ gebruiken staat u toe om de gebeurtenissen van AEM zonder de behoefte te ontvangen om uw eigen webhaak te vestigen. Deze Adobe-Verstrekte webhaak wordt ontvangen op [ Glitch ](https://glitch.com/), een platform dat voor het aanbieden van een web-based milieu wordt gekend dat aan de bouw van en het opstellen van Webtoepassingen bevordert. De optie voor het gebruik van uw eigen webhaak is echter ook beschikbaar als u dat de voorkeur geeft.
+>[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
+
+
+>[!IMPORTANT]
+>
+>De levende demo eindpunten in dit leerprogramma werden eerder ontvangen op [ Glitch ](https://glitch.com/). Vanaf juli 2025 heeft Glitch zijn hostingservice stopgezet en zijn de eindpunten niet langer toegankelijk.
+>>We werken actief aan het migreren van demo&#39;s naar een alternatief platform. De inhoud van de zelfstudie blijft accuraat en de bijgewerkte koppelingen worden binnenkort weergegeven.
+>>Dank u voor uw begrip en geduld.
+
+Gebruik uw eigen webhaak totdat de eindpunten van de live demo weer beschikbaar zijn.
 
 ## Vereisten
 
@@ -155,4 +163,4 @@ U ziet dat de AEM-gebeurtenisdetails alle benodigde informatie hebben om de gebe
 
 ## Aanvullende bronnen
 
-- [ WebHaakbroncode van de Glitch ](https://glitch.com/edit/#!/nl-heerlijk-eeuwenoude kustgebied) is beschikbaar voor verwijzing.
+- [ broncode 0} AEM-Eventing Webhaak {is beschikbaar voor uw verwijzing.](../assets/examples/webhook/aemeventing-webhook.tgz)

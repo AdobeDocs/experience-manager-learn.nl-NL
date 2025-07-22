@@ -12,9 +12,9 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14734
 thumbnail: KT-14734.jpeg
 exl-id: 33eb0757-f0ed-4c2d-b8b9-fa6648e87640
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: e01eb7ff050321a70d84f8a613705799017dbf5d
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,13 @@ Journaling is een pull-methode om AEM Events te gebruiken, en een dagboek is een
 
 In het Adobe Developer Console-project wordt elke gebeurtenisregistratie automatisch ingeschakeld voor journalistiek, zodat naadloze integratie mogelijk is.
 
-In dit voorbeeld, die een Adobe-Geleverde _ontvangen Webtoepassing_ gebruiken staat u toe om de eerste partij van de Gebeurtenissen van AEM van het dagboek zonder de behoefte te halen aan opstelling uw toepassing. Deze Adobe-Verstrekte Webtoepassing wordt ontvangen op [ Glitch ](https://glitch.com/), een platform gekend voor het aanbieden van een web-based milieu dat aan de bouw van en het opstellen van Webtoepassingen bevordert. De optie voor het gebruik van uw eigen toepassing is echter ook beschikbaar als u daar de voorkeur aan geeft.
+>[!IMPORTANT]
+>
+>De levende demo eindpunten in dit leerprogramma werden eerder ontvangen op [ Glitch ](https://glitch.com/). Vanaf juli 2025 heeft Glitch zijn hostingservice stopgezet en zijn de eindpunten niet langer toegankelijk.
+>>We werken actief aan het migreren van demo&#39;s naar een alternatief platform. De inhoud van de zelfstudie blijft accuraat en de bijgewerkte koppelingen worden binnenkort weergegeven.
+>>Dank u voor uw begrip en geduld.
+
+Gebruik uw eigen toepassing tot de live demo-eindpunten weer beschikbaar zijn.
 
 ## Vereisten
 
@@ -82,7 +88,5 @@ Om de zaken eenvoudig te houden, haalt deze gehoste Webtoepassing slechts de eer
   ![ Volledige Payload van de Gebeurtenis van AEM ](../assets/examples/journaling/complete-journal-data.png)
 
 ## Aanvullende bronnen
-
-- [ WebHaakbroncode van de Glitch ](https://glitch.com/edit/#!/indigo-speckle-antler) is beschikbaar voor verwijzing. Het is een eenvoudige React toepassing die [ Adobe React Spectrum ](https://react-spectrum.adobe.com/react-spectrum/index.html) componenten gebruikt om UI terug te geven.
 
 - [ Adobe I/O Events het Journaling API ](https://developer.adobe.com/events/docs/guides/api/journaling_api/) verstrekt gedetailleerde informatie over API als eerste, volgende, en laatste partij gebeurtenissen, paginering, en meer.
