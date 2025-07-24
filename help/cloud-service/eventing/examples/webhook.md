@@ -182,4 +182,4 @@ U ziet dat de AEM-gebeurtenisdetails alle benodigde informatie hebben om de gebe
 
 ## Aanvullende bronnen
 
-- [ broncode 0} AEM-Eventing Webhaak {is beschikbaar voor uw verwijzing.](../assets/examples/webhook/aemeventing-webhook.tgz)
+- [ broncode 0&rbrace; AEM-Eventing Webhaak &lbrace;is beschikbaar voor uw verwijzing.](../assets/examples/webhook/aemeventing-webhook.tgz)
