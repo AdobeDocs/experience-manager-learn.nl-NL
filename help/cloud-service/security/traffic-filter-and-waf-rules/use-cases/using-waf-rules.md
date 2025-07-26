@@ -30,7 +30,7 @@ De gesofisticeerde aanvallen worden gekenmerkt door hoge vraagtarieven, complexe
 > De regels van de het verkeersfilter van WAF vereisen een extra **bescherming WAF-DDoS** of **Verbeterde vergunning van de Veiligheid**. De standaardregels van de verkeersfilter zijn beschikbaar aan de klanten van Plaatsen en van Forms door gebrek.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469436/?quality=12&learn=on&captions=dut)
 
 ## Leerdoelstellingen
 
