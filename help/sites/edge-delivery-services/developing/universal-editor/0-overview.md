@@ -10,9 +10,9 @@ doc-type: Catalog
 jira: KT-15832
 duration: 88
 exl-id: aeac08a2-75a0-4adb-b32e-0e7f85e7eb1d
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: f0ad5d66549970337118220156d7a6b0fd30fd57
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ Leer hoe u uw lokale ontwikkelomgeving configureert voor een snelle ontwikkeling
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./3-local-development-environment.md" title="Een lokale ontwikkelomgeving instellen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443984/?format=jpeg&nocache=1741027443737&captions=dut" alt="Een lokale ontwikkelomgeving instellen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443978/?format=jpeg&nocache=1753811862249" alt="Een lokale ontwikkelomgeving instellen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -261,6 +261,7 @@ Nu u deze zelfstudie hebt voltooid, bouwt u voort op wat u hebt geleerd met deze
 
 * ./how-to/block-options.md
 * ./how-to/header-and-footer.md
+* ./how-to/local-extension-preview.md {image = ./how-to/assets/local-extension-preview/extension-loaded.png}
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -303,9 +304,32 @@ Nu u deze zelfstudie hebt voltooid, bouwt u voort op wat u hebt geleerd met deze
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./how-to/header-and-footer.md" target="_blank" rel="referrer" title="Koptekst en voettekst"> Kopbal en Voettekst </a>
                     </p>
-                    <p class="is-size-6">Leer hoe kop- en voetteksten worden gebruikt in Edge Delivery Services en Universal Editor.</p>
+                    <p class="is-size-6">Leer hoe kop- en voetteksten zijn ontwikkeld in Edge Delivery Services en Universal Editor.</p>
                 </div>
                 <a href="./how-to/header-and-footer.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leer meer </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Preview a Universal Editor extension">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./how-to/local-extension-preview.md" title="Een voorvertoning weergeven van een extensie van Universal Editor" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="./how-to/assets/local-extension-preview/extension-loaded.png" alt="Een voorvertoning weergeven van een extensie van Universal Editor"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./how-to/local-extension-preview.md" target="_blank" rel="referrer" title="Een voorvertoning weergeven van een extensie van Universal Editor"> Voorproef een Universele uitbreiding van de Redacteur </a>
+                    </p>
+                    <p class="is-size-6">Leer hoe u tijdens de ontwikkeling een voorvertoning kunt weergeven van een extensie van Universal Editor die lokaal wordt uitgevoerd.</p>
+                </div>
+                <a href="./how-to/local-extension-preview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leer meer </span>
                 </a>
             </div>
