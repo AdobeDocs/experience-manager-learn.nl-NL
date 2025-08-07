@@ -127,5 +127,5 @@ Om te bevestigen dat de configuratie van Markeringen correct werkt, kunt u:
 
 ## Aanvullende bronnen
 
-- [ overzicht van Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home)
-- [ Overzicht van Markeringen ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
+- [ overzicht van Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/nl/docs/experience-platform/debugger/home)
+- [ Overzicht van Markeringen ](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/home)

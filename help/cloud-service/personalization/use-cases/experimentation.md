@@ -250,7 +250,7 @@ Om de test A/B in actie te zien, bezoek de [ website van Enablement WKND ](https
 
 ## Aanvullende bronnen
 
-- [ A/B het overzicht van de Test ](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab)
-- [ SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
-- [ Overzicht van gegevensstromen ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
-- [ Visuele Composer van de Ervaring (VEC) ](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer)
+- [ A/B het overzicht van de Test ](https://experienceleague.adobe.com/nl/docs/target/using/activities/abtest/test-ab)
+- [ SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/home)
+- [ Overzicht van gegevensstromen ](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overview)
+- [ Visuele Composer van de Ervaring (VEC) ](https://experienceleague.adobe.com/nl/docs/target/using/experiences/vec/visual-experience-composer)
