@@ -39,7 +39,7 @@ Leer wat AEM Assets is en hoe u kunt gebruiken om de zakelijke doelstellingen va
 
 ## Aanvullende bronnen
 
-* [ documentatie van AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en)
+* [ documentatie van AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=nl-NL)
 * [AEM as a Cloud Service-zelfstudies](/help/cloud-service/overview.md)
 * [AEM Sites-zelfstudies](/help/sites/overview.md)
 * [AEM Forms-zelfstudies](/help/forms/overview.md)
