@@ -52,7 +52,7 @@ Begin door een bezit van Markeringen in Adobe Experience Platform te creëren. M
 
    ![ het Bezit van de Markeringen van Adobe ](../assets/setup/adobe-tags-property.png)
 
-4. Open de nieuwe eigenschap. De **uitbreiding van de Kern** zou reeds moeten worden omvat. Later, gaat u de **uitbreiding van SDK van het 0} Web toevoegen {wanneer vestiging de het gebruiksgeval van de Experimentatie, aangezien het extra configuratie zoals** identiteitskaart van DataStream **vereist.**\
+4. Open de nieuwe eigenschap. De **uitbreiding van de Kern** zou reeds moeten worden omvat. Later, gaat u de **uitbreiding van SDK van het 0&rbrace; Web toevoegen &lbrace;wanneer vestiging de het gebruiksgeval van de Experimentatie, aangezien het extra configuratie zoals** identiteitskaart van DataStream **vereist.**\
    ![ de Uitbreiding van de Kern van de Markeringen van Adobe ](../assets/setup/adobe-tags-core-extension.png)
 
 5. Publiceer het bezit van Markeringen door naar **het Publiceren Stroom** te gaan en **te klikken voeg Bibliotheek** toe om een plaatsingsbibliotheek tot stand te brengen.
@@ -77,7 +77,7 @@ Wanneer een AEMCS-omgeving wordt ingericht, bevat deze automatisch een Adobe IMS
 1. In AEM, navigeer aan **Hulpmiddelen** > **Veiligheid** > **de Configuraties van Adobe IMS**.\
    ![ de Configuraties van Adobe IMS ](../assets/setup/aem-ims-configurations.png)
 
-2. Bepaal de plaats van de **1} configuratie van de Lancering van Adobe.** Indien beschikbaar, selecteer het en klik **Gezondheid van de Controle** om de verbinding te verifiëren. Je zou een succesreactie moeten zien.\
+2. Bepaal de plaats van de **1&rbrace; configuratie van de Lancering van Adobe.** Indien beschikbaar, selecteer het en klik **Gezondheid van de Controle** om de verbinding te verifiëren. Je zou een succesreactie moeten zien.\
    ![ Controle van de Gezondheid van de Configuratie van Adobe IMS ](../assets/setup/aem-ims-configuration-health-check.png)
 
 ## Een tagconfiguratie maken in AEM

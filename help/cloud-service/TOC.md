@@ -38,7 +38,7 @@ ht-degree: 4%
    + [Auteur- en publicatieservices](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Edge Delivery Services {#edge-delivery-services}
-   + [ AEM Assets Sidekick plugin ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
+   + [ AEM Assets Sidekick plugin](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
 + Cloud Manager {#cloud-manager}
    + [Programma&#39;s](./cloud-manager/programs.md)
    + [Omgevingen](./cloud-manager/environments.md)
@@ -46,7 +46,7 @@ ht-degree: 4%
    + [Productiepijpleiding CI/CD](./cloud-manager/cicd-production-pipeline.md)
    + [Niet-productiepijpleiding CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Activiteit](./cloud-manager/activity.md)
-   + [ Namen van het Domein van 0} Douane](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names){target=_blank}
+   + [ Namen van het Domein van 0 Douane](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names){target=_blank}
    + [ Inhoud herstelt ](./cloud-manager/content-restore.md)
    + Dev OPS{#devops}
       + [Code implementeren](./cloud-manager/devops/deploy-code.md)
@@ -124,7 +124,7 @@ ht-degree: 4%
          + [Overzicht](./developing/universal-editor/react-app/overview.md)
          + [Instelling voor lokale ontwikkeling](./developing/universal-editor/react-app/local-development-setup.md)
          + [Instrument React App](./developing/universal-editor/react-app/instrument-to-edit-content.md)
-   + [ AEM SDK API JavaDocs ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
+   + [ AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
 + Foutopsporing in AEM{#debugging}
    + Fouten opsporen in de AEM SDK{#debugging-aem-sdk}
       + [Overzicht](./debugging/aem-sdk-local-quickstart/overview.md)
@@ -163,10 +163,10 @@ ht-degree: 4%
    + [Aangepaste domeinnaam](./content-delivery/custom-domain-names.md)
    + [Aangepaste domeinnaam met door Adobe beheerde CDN](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)
    + [Aangepaste domeinnaam met CDN van klant](./content-delivery/custom-domain-names-with-customer-managed-cdn.md)
-   + [ Caching ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
+   + [ Caching](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
    + [ Adobe CDN - voorbij caching ](./content-delivery/adobe-cdn-beyond-caching.md)
    + [Aangepaste foutpagina&#39;s](./content-delivery/custom-error-pages.md)
-   + [ opnieuw richt URL ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
+   + [ opnieuw richt URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
 + Caching{#caching}
    + [Overzicht](./caching/overview.md)
    + [AEM-publicatieservice](./caching/publish.md)
@@ -428,11 +428,11 @@ ht-degree: 4%
    + [Problemen oplossen](./asset-compute/troubleshooting.md)
 
 + Zelfstudies met meerdere stappen{#multi-step-tutorials}
-   + [ de ontwikkeling van AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
-   + [ GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html){target=_blank}
-   + [ Redacteur van het KUUROORD (Reageren) ](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
-   + [ AEM Sites en Adobe Target ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
-   + [ Op token-gebaseerde authentificatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html){target=_blank}
+   + [ de ontwikkeling van AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
+   + [ GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html){target=_blank}
+   + [ Redacteur van het KUUROORD (Reageren)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
+   + [ AEM Sites en Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
+   + [ Op token-gebaseerde authentificatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html){target=_blank}
 + Expertbronnen {#expert-resources}
    + AEM Champions {#aem-champions}
       + [Cloud Manager on boarding Playbook](./expert-resources/aem-champions/onboarding-playbook.md)
