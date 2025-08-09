@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Leer meer over de beste werkwijzen voor het publiceren en optimaliseren van video in AEM Dynamic Media, zoals adaptief streamen, slim uitsnijden voor verschillende schermgrootten, aangepaste viewer-voorinstellingen en ondersteuning voor bijschriften, audiotracks en hoofdstukmarkeringen. Het benadrukt hoe te om de kijkervaring, de toegankelijkheid, en het marketing effect over apparaten te verbeteren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470634/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470684/?learn=on&enablevpops&captions=dut)
 
 ## Bronnen ondersteunen
 
