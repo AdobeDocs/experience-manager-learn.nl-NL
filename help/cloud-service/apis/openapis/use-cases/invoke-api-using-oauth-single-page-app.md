@@ -1,7 +1,7 @@
 ---
 title: AEM-API's op basis van OpenAPI aanroepen met OAuth-app met één pagina
 description: Leer hoe u op OpenAPI gebaseerde AEM API's op AEM as a Cloud Service aanroept met gebruikersgebaseerde verificatie van een aangepaste Single Page App (SPA) via OAuth 2.0 PKCE-flow.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
 role: Architect, Developer, Leader
@@ -12,7 +12,7 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
+source-git-commit: 7c7c9070bb6061dc59530070dd32ca6b8c78bc8d
 workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 0%
@@ -41,7 +41,7 @@ In deze zelfstudie leert u hoe u:
 Controleer voordat u begint het volgende:
 
 - [ Toegang hebbend tot Adobe APIs en verwante concepten ](../overview.md#accessing-adobe-apis-and-related-concepts) sectie.
-- [&#128279;](../setup.md) artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.
+- [ artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.](../setup.md)
 
 ## WKND SPA-overzicht en functionele stroom{#wknd-spa-overview-and-functional-flow}
 
@@ -59,7 +59,7 @@ Het project van Adobe Developer Console (ADC) wordt gevormd om de authentificati
 >Het project ADC verstrekt niet a _client_geheime_. In plaats daarvan, produceert het KUUROORD a _code_verifier_ en _code_challenge_ om de vergunningscode voor een _toegangstoken_ veilig uit te wisselen. Het elimineert de behoefte om een cliëntgeheim op de cliëntkant op te slaan, die veiligheid verbetert.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3456970?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3456964?quality=12&learn=on)
 
 
 
@@ -389,7 +389,7 @@ Vorm ADC de stap van het Project wordt _herhaald_ van [ OpenAPI-Gebaseerde AEM A
    >
    >Als de gewenste **AEM API kaart** wordt onbruikbaar gemaakt en _waarom is dit gehandicapt?_ de informatie toont het **Vereiste Vergunning** bericht één van de redenen zou kunnen zijn dat u uw milieu van AEM as a Cloud Service NIET hebt gemoderniseerd, zie [ Modernisering van het milieu van AEM as a Cloud Service ](../setup.md#modernization-of-aem-as-a-cloud-service-environment) voor meer informatie.
 
-1. Daarna, in _vorm API_ dialoog, selecteer de **3&rbrace; authentificatieoptie van de Authentificatie van de Gebruiker &lbrace;en klik** daarna **.**
+1. Daarna, in _vorm API_ dialoog, selecteer de **3} authentificatieoptie van de Authentificatie van de Gebruiker {en klik** daarna **.**
 
    ![ vorm AEM API ](../assets/spa/configure-aem-api.png)
 

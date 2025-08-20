@@ -2,7 +2,7 @@
 title: Inhoudactivering versnellen met Adobe Experience Manager
 description: Leer hoe Adobe Experience Manager de activering van inhoud versnelt en tegelijkertijd het vertrouwen, de personalisatie en het rendement van de inhoud behoudt.
 cloud: Experience Cloud
-solution: Experience Manager Assets, Sensei
+solution: Experience Manager Assets
 feature-set: Experience Manager Assets
 role: User, Leader, Admin, Developer, Architect
 level: Beginner, Intermediate, Experienced
@@ -13,13 +13,13 @@ feature: Brand Experiences, Content Personalization, Marketing Campaigns, Multic
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 0d93dab6ccdae1420589a00f3a46eef10bc16ec8
+exl-id: 177150b3-6be3-4594-b1ca-f7f080effdfd
+source-git-commit: 7c7c9070bb6061dc59530070dd32ca6b8c78bc8d
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%
 
 ---
-
 
 # Inhoudactivering versnellen met Adobe Experience Manager
 
