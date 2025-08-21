@@ -12,9 +12,9 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
+source-git-commit: 57da04874cfb37dcccbf605c65fbcba8f12849fb
 workflow-type: tm+mt
-source-wordcount: '1776'
+source-wordcount: '1811'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ In deze zelfstudie leert u hoe u:
 Controleer voordat u begint het volgende:
 
 - [ Toegang hebbend tot Adobe APIs en verwante concepten ](../overview.md#accessing-adobe-apis-and-related-concepts) sectie.
-- [&#128279;](../setup.md) artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.
+- [ artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.](../setup.md)
 
 ## Vereisten
 
@@ -82,6 +82,9 @@ Vorm ADC de stap van het Project wordt _herhaald_ van [ OpenAPI-Gebaseerde AEM A
    ![ voeg API ](../assets/s2s/add-api.png) toe
 
 1. In _voeg API_ dialoog toe, filter door _Experience Cloud_ en selecteer **de Auteur API van AEM Assets** kaart en klik **daarna**.
+Als u verschillende op OpenAPI-Gebaseerde AEM API nodig hebt, verwijs naar de [ Documentatie van Adobe Developer ](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) om te vinden die uw gebruiksgeval aanpast.
+
+   Het voorbeeld hieronder loopt door het toevoegen van **AEM Assets Auteur API**.
 
    ![ voeg AEM API ](../assets/s2s/add-aem-api.png) toe
 
@@ -438,7 +441,7 @@ Voer de volgende stappen uit om te controleren of de technische gebruiker en geb
 
 - De gebruikersvereniging van het Profiel van het Product en de technische rekening kunnen in de **Profiles van het Product** worden geverifieerd **API geloofsbrieven** tabel.
 
-  {de geloofsbrieven van API van het Profiel van 0} Product ![&#128279;](../assets/s2s/product-profile-api-credentials.png)
+  {de geloofsbrieven van API van het Profiel van 0} Product ![](../assets/s2s/product-profile-api-credentials.png)
 
 ## 403-fout voor niet-GET-aanvragen
 
@@ -480,3 +483,4 @@ In het ADC-project hebt u de AEM API&#39;s toegevoegd, het verificatietype van d
 ## Aanvullende bronnen
 
 - [ OAuth Server-aan-Server de gids van de credentieimplementatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
+
