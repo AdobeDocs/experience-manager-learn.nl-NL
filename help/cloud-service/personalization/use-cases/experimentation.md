@@ -64,7 +64,7 @@ Het installatieproces voor A/B-tests omvat zes hoofdstappen voor het maken en co
 
 In dit voorbeeld, gebruikt u **Camping in het Fragment van de Ervaring van West Australië** (XF) van het project van AEM WKND om drie variaties tot stand te brengen, die op de WKND website homepage voor het testen A/B zullen worden gebruikt.
 
-1. In AEM, klik de **kaart van de Fragmenten van de Ervaring 0}, navigeer aan** Camping in West Australië **, en klik** uitgeven **.**
+1. In AEM, klik de **kaart van de Fragmenten van de Ervaring 0&rbrace;, navigeer aan** Camping in West Australië **, en klik** uitgeven **.**
    ![Ervaringsfragmenten](../assets/use-cases/experiment/camping-in-western-australia-xf.png)
 
 1. In de redacteur, onder de **sectie van Variaties**, klik **creeert**, en selecteert **Verandering**.\
@@ -78,7 +78,7 @@ In dit voorbeeld, gebruikt u **Camping in het Fragment van de Ervaring van West 
 
    ![ creeer de Dialoog van de Variatie ](../assets/use-cases/experiment/create-variation-dialog.png)
 
-1. Auteur de variatie door de **1} component van het Teken van de hoofdvariatie te kopiëren, dan de inhoud (b.v., werk de titel en het beeld bij) aan.**\
+1. Auteur de variatie door de **1&rbrace; component van het Teken van de hoofdvariatie te kopiëren, dan de inhoud (b.v., werk de titel en het beeld bij) aan.**\
    ![ Variatie-1 van de Auteur ](../assets/use-cases/experiment/author-variation-1.png)
 
    >[!TIP]
@@ -92,7 +92,7 @@ In dit voorbeeld, gebruikt u **Camping in het Fragment van de Ervaring van West 
 1. Voordat u variaties weergeeft met Adobe Target, moet u het bestaande statische tasje verwijderen van de startpagina. Hiermee voorkomt u dubbele inhoud, aangezien de Experience Fragment-variaties dynamisch via Target worden geïnjecteerd.
 
    - Navigeer aan **Engelse** homepage `/content/wknd/language-masters/en`
-   - In de redacteur, schrap **Camping in de 1} lasercomponent van West Australië {.**\
+   - In de redacteur, schrap **Camping in de 1&rbrace; lasercomponent van West Australië &lbrace;.**\
      ![ Schrap de Component van het Taser ](../assets/use-cases/experiment/delete-teaser-component.png)
 
 1. Leer de veranderingen in de **V.S. > Engelse** homepage (`/content/wknd/us/en`) uit om de updates te verspreiden.\
@@ -217,7 +217,7 @@ Om verpersoonlijkings en gegevensinzamelingsgebeurtenissen van de pagina&#39;s v
 
    ![ vormen verzend de Actie van de Gebeurtenis ](../assets/use-cases/experiment/web-sdk-rule-action.png)
 
-1. In de 1} sectie van Personalization van het juiste paneel **{, controleer** visuele verpersoonlijkingsbesluiten **optie teruggeven.** Dan, klik **houden Veranderingen** om de actie te bewaren.\
+1. In de 1&rbrace; sectie van Personalization van het juiste paneel **&lbrace;, controleer** visuele verpersoonlijkingsbesluiten **optie teruggeven.** Dan, klik **houden Veranderingen** om de actie te bewaren.\
    ![ creeer de Regel van de Actie ](../assets/use-cases/experiment/web-sdk-rule-action.png)
 
    >[!TIP]
