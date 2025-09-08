@@ -12,7 +12,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 2a25cd44-cbd1-465e-ae3f-d3876e915114
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 252d7045ba43c0998e9bb98fa86c399812ce92e9
 workflow-type: tm+mt
 source-wordcount: '1606'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Voor deze zelfstudie gebruiken we de methode Scripttag.
                      Loads the LATEST Universal Editor library
                    */}
                    <script
-                       src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"
+                       src="https://universal-editor-service.adobe.io/cors.js"
                        async
                    />
                </Helmet>
@@ -106,7 +106,7 @@ return (
                     Loads the LATEST Universal Editor library
                 */}
                 <script
-                    src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"
+                    src="https://universal-editor-service.adobe.io/cors.js"
                     async
                 />
                 {/* AEM Universal Editor :: Connection metadata 
@@ -151,7 +151,7 @@ function App() {
               Loads the LATEST Universal Editor library
           */}
           <script
-            src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"
+            src="https://universal-editor-service.adobe.io/cors.js"
             async
           />
           {/* AEM Universal Editor :: Connection metadata 
@@ -178,7 +178,7 @@ export default App;
 
 ## Instrueer de React-componenten
 
-Om de inhoud van de Teams uit te geven WKND Reageer app zoals _teamtitel en teambeschrijving_, moet u de componenten van het Antwoord van instrumenten voorzien. De instrumentatie betekent het toevoegen van relevante gegevensattributen (`data-aue-*`) aan de elementen van HTML die u editable wilt maken gebruikend de Universele Redacteur. Voor meer informatie over gegevensattributen, zie [ Attributen en Types ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types).
+Om de inhoud van de Teams uit te geven WKND Reageer app zoals _teamtitel en teambeschrijving_, moet u de componenten van het Antwoord van instrumenten voorzien. De instrumentatie betekent het toevoegen van relevante gegevensattributen (`data-aue-*`) aan de elementen van HTML die u editable wilt maken gebruikend de Universele Redacteur. Voor meer informatie over gegevensattributen, zie [ Attributen en Types ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types).
 
 ### Bewerkbare elementen definiëren
 
@@ -403,7 +403,7 @@ Nochtans, snel worden de leden van het Team WKND opgeslagen als `Person` Fragmen
    export default Teams;
    ```
 
-1. Vernieuw de pagina Universal Editor in de browser die de React-app voor WKND-teams laadt. U kunt nu zien dat de **sectie 0&rbrace; LEDEN &lbrace;als container dienst doet.** U kunt nieuwe teamleden invoegen met de eigenschappen rail en het pictogram **+** .
+1. Vernieuw de pagina Universal Editor in de browser die de React-app voor WKND-teams laadt. U kunt nu zien dat de **sectie 0} LEDEN {als container dienst doet.** U kunt nieuwe teamleden invoegen met de eigenschappen rail en het pictogram **+** .
 
    ![ Universele Redacteur - de Leden van het Team van Teams van WKND nemen ](./assets/universal-editor-wknd-teams-add-team-members.png) in
 
@@ -419,7 +419,7 @@ De inhoud voegt en schrapt verrichtingen toe worden gedaan door de lokale Univer
 
 Om uw implementatieveranderingen te verifiëren of als u niet de Reageer app die van de Teams WKND met de Universele Redacteur werkt kunt krijgen, verwijs naar [ basis-tutorial-instrumentented-for-UE ](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial-instrumented-for-UE) oplossingstak.
 
-De vergelijking van dossier-door-dossier met de werkende **tak 0&rbrace; basis-tutorial &lbrace;is hier [&#128279;](https://github.com/adobe/aem-guides-wknd-graphql/compare/solution/basic-tutorial...solution/basic-tutorial-instrumented-for-UE?expand=1) beschikbaar.**
+De vergelijking van dossier-door-dossier met de werkende **tak 0} basis-tutorial {is hier** [ beschikbaar.](https://github.com/adobe/aem-guides-wknd-graphql/compare/solution/basic-tutorial...solution/basic-tutorial-instrumented-for-UE?expand=1)
 
 ## Gefeliciteerd
 
