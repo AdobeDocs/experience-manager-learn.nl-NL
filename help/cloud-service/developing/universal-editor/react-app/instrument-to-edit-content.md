@@ -403,7 +403,7 @@ Nochtans, snel worden de leden van het Team WKND opgeslagen als `Person` Fragmen
    export default Teams;
    ```
 
-1. Vernieuw de pagina Universal Editor in de browser die de React-app voor WKND-teams laadt. U kunt nu zien dat de **sectie 0} LEDEN {als container dienst doet.** U kunt nieuwe teamleden invoegen met de eigenschappen rail en het pictogram **+** .
+1. Vernieuw de pagina Universal Editor in de browser die de React-app voor WKND-teams laadt. U kunt nu zien dat de **sectie 0&rbrace; LEDEN &lbrace;als container dienst doet.** U kunt nieuwe teamleden invoegen met de eigenschappen rail en het pictogram **+** .
 
    ![ Universele Redacteur - de Leden van het Team van Teams van WKND nemen ](./assets/universal-editor-wknd-teams-add-team-members.png) in
 
@@ -419,7 +419,7 @@ De inhoud voegt en schrapt verrichtingen toe worden gedaan door de lokale Univer
 
 Om uw implementatieveranderingen te verifiëren of als u niet de Reageer app die van de Teams WKND met de Universele Redacteur werkt kunt krijgen, verwijs naar [ basis-tutorial-instrumentented-for-UE ](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial-instrumented-for-UE) oplossingstak.
 
-De vergelijking van dossier-door-dossier met de werkende **tak 0} basis-tutorial {is hier** [ beschikbaar.](https://github.com/adobe/aem-guides-wknd-graphql/compare/solution/basic-tutorial...solution/basic-tutorial-instrumented-for-UE?expand=1)
+De vergelijking van dossier-door-dossier met de werkende **tak 0&rbrace; basis-tutorial &lbrace;is hier** [ beschikbaar.](https://github.com/adobe/aem-guides-wknd-graphql/compare/solution/basic-tutorial...solution/basic-tutorial-instrumented-for-UE?expand=1)
 
 ## Gefeliciteerd
 
