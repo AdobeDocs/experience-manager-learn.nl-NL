@@ -49,7 +49,7 @@ Bezoek de [ website van Enablement WKND ](https://wknd.enablementadobe.com/us/en
 
 >[!TIP]
 >
->Het eerste publiek gebruikt **Edge** evaluatie voor verpersoonlijking in real time, terwijl het tweede en derde publiek **de 3} evaluatie van de Partij {voor verpersoonlijking gebruiken, die voor het terugkeren van bezoekers ideaal is.**
+>Het eerste publiek gebruikt **Edge** evaluatie voor verpersoonlijking in real time, terwijl het tweede en derde publiek **de 3&rbrace; evaluatie van de Partij &lbrace;voor verpersoonlijking gebruiken, die voor het terugkeren van bezoekers ideaal is.**
 
 ## Vereisten
 
@@ -296,7 +296,7 @@ Maak de volgende gegevenselementen om de belangrijke paginadetails vast te legge
 
   ![ creeer XDM-Variabele Voorproef ](../assets/use-cases/behavioral-targeting/create-xdm-variable-pageview.png)
 
-- In uw **lijst van Elementen van 0} Gegevens {, zou u vier gegevenselementen moeten hebben:**
+- In uw **lijst van Elementen van 0&rbrace; Gegevens &lbrace;, zou u vier gegevenselementen moeten hebben:**
 
   ![ Elementen van Gegevens ](../assets/use-cases/behavioral-targeting/data-elements.png)
 
@@ -304,7 +304,7 @@ Maak de volgende gegevenselementen om de belangrijke paginadetails vast te legge
 
 Regels bepalen wanneer en hoe gegevens worden verzameld en naar Adobe Experience Platform worden verzonden. Ze fungeren als de logische laag die bepaalt wat er gebeurt wanneer specifieke gebeurtenissen op uw website plaatsvinden. Voor gedrag het richten, worden de regels gecreeerd die de gebeurtenissen van de opnamemening vangen en gegevenselementen vullen met de verzamelde informatie alvorens het naar het platform te verzenden.
 
-Creeer een regel om het **XDM-Variabele 1} gegevenselement van de Voorproef te bevolken gebruikend de andere gegevenselementen alvorens het naar Experience Platform te verzenden.** De regel wordt geactiveerd wanneer een gebruiker door de WKND-website bladert.
+Creeer een regel om het **XDM-Variabele 1&rbrace; gegevenselement van de Voorproef te bevolken gebruikend de andere gegevenselementen alvorens het naar Experience Platform te verzenden.** De regel wordt geactiveerd wanneer een gebruiker door de WKND-website bladert.
 
 - Klik **Regels** van de linkernavigatie en klik **creeer Nieuwe knoop van de Regel**.
   ![ creeer Nieuwe Regel ](../assets/use-cases/behavioral-targeting/create-new-rule.png)
@@ -313,7 +313,7 @@ Creeer een regel om het **XDM-Variabele 1} gegevenselement van de Voorproef te b
 
    - **Naam**: alle pagina&#39;s - op lading
 
-   - Voor de **sectie van Gebeurtenissen**, voegt de klik **** toe om de **tovenaar van de Configuratie van de Gebeurtenis** te openen.
+   - Voor de **sectie van Gebeurtenissen**, voegt de klik **&#x200B;**&#x200B;toe om de **tovenaar van de Configuratie van de Gebeurtenis** te openen.
       - **Uitbreiding**: Selecteer **Kern**
       - **Type van Gebeurtenis**: Selecteer **Douane Code**
       - **Open de knoop van de Redacteur** en ga het volgende codefragment in:
@@ -348,7 +348,7 @@ Creeer een regel om het **XDM-Variabele 1} gegevenselement van de Voorproef te b
         });
         ```
 
-   - Voor de **Voorwaarden** sectie, klik **** toevoegen om de **Tovenaar van de Configuratie van de Voorwaarde** te openen.
+   - Voor de **Voorwaarden** sectie, klik **&#x200B;**&#x200B;toevoegen om de **Tovenaar van de Configuratie van de Voorwaarde** te openen.
       - **Logische Type**: Selecteer **Regelmatig**
       - **Uitbreiding**: Selecteer **Kern**
       - **Type van Voorwaarde**: Selecteer **Douane Code**
@@ -364,10 +364,10 @@ Creeer een regel om het **XDM-Variabele 1} gegevenselement van de Voorproef te b
         }            
         ```
 
-   - Voor de **sectie van Acties**, klik **** toevoegen om de **tovenaar van de Configuratie van de Actie** te openen.
+   - Voor de **sectie van Acties**, klik **&#x200B;**&#x200B;toevoegen om de **tovenaar van de Configuratie van de Actie** te openen.
       - **Uitbreiding**: Selecteer **SDK van het Web van Adobe Experience Platform**
       - **Type van Actie**: Selecteer **veranderlijke Update**
-      - Kaart het **Web** > **webPageDetails** > **naam** aan het **7} gegevenselement van de Naam van de Pagina {**
+      - Kaart het **Web** > **webPageDetails** > **naam** aan het **7&rbrace; gegevenselement van de Naam van de Pagina &lbrace;**
 
         ![ Update Veranderlijke Actie ](../assets/use-cases/behavioral-targeting/update-variable-action.png)
 
@@ -378,11 +378,11 @@ Creeer een regel om het **XDM-Variabele 1} gegevenselement van de Voorproef te b
    - Opnieuw, klik **toevoegen** om een andere actie toe te voegen en de **tovenaar van de Configuratie van de Actie** te openen.
       - **Uitbreiding**: Selecteer **SDK van het Web van Adobe Experience Platform**
       - **Type van Actie**: Selecteer **verzenden gebeurtenis**
-      - In de 0} sectie van Gegevens van het juiste paneel **, kaart** XDM-Variabele het gegevenselement van de Voorproef **aan het** Web Web Webpagedetails de Mening van de Pagina **type.**
+      - In de 0&rbrace; sectie van Gegevens van het juiste paneel **, kaart** XDM-Variabele het gegevenselement van de Voorproef **aan het** Web Web Webpagedetails de Mening van de Pagina **type.**
 
      ![ verzendt de Actie van de Gebeurtenis ](../assets/use-cases/behavioral-targeting/send-event-action.png)
 
-      - Ook, in de 1} sectie van Personalization van het juiste paneel **{, controleer** visuele verpersoonlijkingsbesluiten **optie teruggeven.**  Dan, klik **houden Veranderingen** om de actie te bewaren.
+      - Ook, in de 1&rbrace; sectie van Personalization van het juiste paneel **&lbrace;, controleer** visuele verpersoonlijkingsbesluiten **optie teruggeven.**  Dan, klik **houden Veranderingen** om de actie te bewaren.
 
      ![ Sectie van Personalization ](../assets/use-cases/behavioral-targeting/personalization-section.png)
 
@@ -478,7 +478,7 @@ Voer de volgende stappen uit om een publiek te maken:
 
   ![ creeer Publiek ](../assets/use-cases/behavioral-targeting/create-audience-step.png)
 
-- Dan, klik het **lusje van Gebeurtenissen** en navigeer aan het **Web** > **de Details van de Pagina van het Web** en sleep en laat vallen het **** gebied URL aan de **sectie van de Regels van de Gebeurtenis**. Sleep het **URL** gebied twee meer keer aan de **sectie van de Regels van de Gebeurtenis**. Voer de volgende waarden in:
+- Dan, klik het **lusje van Gebeurtenissen** en navigeer aan het **Web** > **de Details van de Pagina van het Web** en sleep en laat vallen het **&#x200B;**&#x200B;gebied URL aan de **sectie van de Regels van de Gebeurtenis**. Sleep het **URL** gebied twee meer keer aan de **sectie van de Regels van de Gebeurtenis**. Voer de volgende waarden in:
    - **URL**: Uitgezocht **bevat** optie en gaat `riverside-camping-australia` in
    - **URL**: Uitgezocht **bevat** optie en gaat `bali-surf-camp` in
    - **URL**: Uitgezocht **bevat** optie en gaat `gastronomic-marais-tour` in
@@ -507,7 +507,7 @@ Hiermee worden de Adobe Experience Platform-stappen voltooid en is het proces ge
 
 ## AEM-stappen
 
-In AEM is de eigenschap Codes geïntegreerd om gegevens van de paginaweergave te verzamelen en naar Experience Platform te verzenden. Adobe Target is ook geïntegreerd en gepersonaliseerde aanbiedingen worden gecreeerd voor het **1} publiek van de Reizigers van de Familie.** Met deze stappen kan AEM werken met de gedraggericht instellen die in Experience Platform zijn gemaakt.
+In AEM is de eigenschap Codes geïntegreerd om gegevens van de paginaweergave te verzamelen en naar Experience Platform te verzenden. Adobe Target is ook geïntegreerd en gepersonaliseerde aanbiedingen worden gecreeerd voor het **1&rbrace; publiek van de Reizigers van de Familie.** Met deze stappen kan AEM werken met de gedraggericht instellen die in Experience Platform zijn gemaakt.
 
 We beginnen met het aanmelden bij de AEM Author-service om de gepersonaliseerde inhoud te maken en te configureren.
 
@@ -556,7 +556,7 @@ Creeer een nieuw Fragment van de Ervaring met gepersonaliseerde inhoud voor het 
 
   ![ creeer het Fragment van de Ervaring ](../assets/use-cases/behavioral-targeting/create-experience-fragment.png)
 
-- In **creeer de dialoog van het Fragment van de Ervaring**, het Malplaatje van de Variatie van het Web en klik daarna ****.
+- In **creeer de dialoog van het Fragment van de Ervaring**, het Malplaatje van de Variatie van het Web en klik daarna **&#x200B;**.
 
   ![ creeer het Fragment van de Ervaring ](../assets/use-cases/behavioral-targeting/create-experience-fragment-dialog.png)
 
@@ -568,7 +568,7 @@ Creeer een nieuw Fragment van de Ervaring met gepersonaliseerde inhoud voor het 
 
   ![ Uitvoer aan Adobe Target ](../assets/use-cases/behavioral-targeting/export-to-adobe-target.png)
 
-Gefeliciteerd! U hebt authored en de **1} publieksaanbiedingen van de Reizigers van de Familie {aan Adobe Target uitgevoerd.** Het Experience Fragment is nu beschikbaar in Adobe Target als een persoonlijke aanbieding die kan worden gebruikt in personalisatieactiviteiten.
+Gefeliciteerd! U hebt authored en de **1&rbrace; publieksaanbiedingen van de Reizigers van de Familie &lbrace;aan Adobe Target uitgevoerd.** Het Experience Fragment is nu beschikbaar in Adobe Target als een persoonlijke aanbieding die kan worden gebruikt in personalisatieactiviteiten.
 
 ## Adobe Target-stappen
 
@@ -598,7 +598,7 @@ Voordat de personalisatieactiviteit wordt gecreëerd, wordt gecontroleerd of het
 
 Een activiteit in Adobe Target is een verpersoonlijkingscampagne die bepaalt wanneer en hoe de gepersonaliseerde inhoud aan specifiek publiek wordt geleverd. Voor het gericht zijn op gedrag, wordt een activiteit gecreeerd die de gepersonaliseerde aanbieding aan gebruikers toont die de het publiekscriteria van de Reizigers van de Familie aanpassen.
 
-Nu, wordt een activiteit gecreeerd om de gepersonaliseerde ervaring aan de homepage voor het **publiek van de Reizigers van de Familie te leveren 0}.**
+Nu, wordt een activiteit gecreeerd om de gepersonaliseerde ervaring aan de homepage voor het **publiek van de Reizigers van de Familie te leveren 0&rbrace;.**
 
 - In Adobe Target, klik **Activiteiten** en klik **creeer de knoop van de Activiteit** en selecteer **Ervaring richtend** activiteitstype.
   ![ creeer Activiteit ](../assets/use-cases/behavioral-targeting/create-activity.png)
@@ -607,7 +607,7 @@ Nu, wordt een activiteit gecreeerd om de gepersonaliseerde ervaring aan de homep
 
   ![ creeer Ervaring richtend Activiteit ](../assets/use-cases/behavioral-targeting/create-experience-targeting-activity.png)
 
-- In de redacteur, selecteer het **publiek van de Familie 1} reizigers en voeg** een Smaakje van Avontuur voor de Hele Familie **aanbieding vóór de** Volgende sectie van het Avontuur **toe.** Zie de onderstaande schermafbeelding ter referentie.
+- In de redacteur, selecteer het **publiek van de Familie 1&rbrace; reizigers en voeg** een Smaakje van Avontuur voor de Hele Familie **aanbieding vóór de** Volgende sectie van het Avontuur **toe.** Zie de onderstaande schermafbeelding ter referentie.
 
   ![ Activiteit met Publiek en Aanbieding ](../assets/use-cases/behavioral-targeting/activity-with-audience-n-offer.png)
 
@@ -615,7 +615,7 @@ Nu, wordt een activiteit gecreeerd om de gepersonaliseerde ervaring aan de homep
 
   ![ activeer met Doelen en Montages ](../assets/use-cases/behavioral-targeting/activate-with-goals-and-settings.png)
 
-Gefeliciteerd! U hebt gecreeerd en de activiteit gelanceerd om de gepersonaliseerde ervaring aan het **1} publiek van de Reizigers van de Familie op de WKND homepage van de plaats te leveren.** De activiteit is nu live en toont gepersonaliseerde inhoud aan gebruikers die aan de gedragscriteria voldoen.
+Gefeliciteerd! U hebt gecreeerd en de activiteit gelanceerd om de gepersonaliseerde ervaring aan het **1&rbrace; publiek van de Reizigers van de Familie op de WKND homepage van de plaats te leveren.** De activiteit is nu live en toont gepersonaliseerde inhoud aan gebruikers die aan de gedragscriteria voldoen.
 
 ## Verifieer de implementatie van het gedrag gericht op uw AEM-pagina&#39;s
 
@@ -633,7 +633,7 @@ Verifieer het gedrag gericht op implementatie op uw AEM pagina&#39;s.
 
   ![ Verzoek van het Netwerk van SDK van het Web ](../assets/use-cases/behavioral-targeting/web-sdk-network-request-on-home-page.png)
 
-- De reactie zou de verpersoonlijkingsbesluiten moeten omvatten die door Adobe Target worden genomen, die u op wijzen in het **1} publiek van de Reizigers van de Familie {zijn.**
+- De reactie zou de verpersoonlijkingsbesluiten moeten omvatten die door Adobe Target worden genomen, die u op wijzen in het **1&rbrace; publiek van de Reizigers van de Familie &lbrace;zijn.**
 
   ![ SDK van het Web Reactie ](../assets/use-cases/behavioral-targeting/web-sdk-response-on-home-page.png)
 
@@ -653,7 +653,7 @@ Om het gedrag te zien richtend in actie, bezoek de [ website van Enablement WKND
 
   ![ Gepersonaliseerde Pagina van het Tijdschrift van het Tijdschrift ](../assets/use-cases/behavioral-targeting/personalized-magazine-page.png)
 
-Het eerste publiek gebruikt **Edge** evaluatie voor verpersoonlijking in real time, terwijl het tweede en derde publiek **de 3} evaluatie van de Partij {voor verpersoonlijking gebruiken, die voor het terugkeren van bezoekers ideaal is.**
+Het eerste publiek gebruikt **Edge** evaluatie voor verpersoonlijking in real time, terwijl het tweede en derde publiek **de 3&rbrace; evaluatie van de Partij &lbrace;voor verpersoonlijking gebruiken, die voor het terugkeren van bezoekers ideaal is.**
 
 
 ## Aanvullende bronnen
