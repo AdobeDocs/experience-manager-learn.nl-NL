@@ -46,7 +46,7 @@ U hebt het volgende nodig om deze zelfstudie te volgen:
 
 ### AEM as a Cloud Service omgeving
 
-Om dit leerprogramma te voltooien, adviseert men dat u **toegang van de Beheerder van 0} AEM tot een milieu van AEM as a Cloud Service hebt.** A **het milieu van de Ontwikkeling**, **Snelle Milieu van de Ontwikkeling**, of een milieu in het Programma van de zandbak van de a **** kan ook worden gebruikt.
+Om dit leerprogramma te voltooien, adviseert men dat u **toegang van de Beheerder van 0&rbrace; AEM tot een milieu van AEM as a Cloud Service hebt.** A **het milieu van de Ontwikkeling**, **Snelle Milieu van de Ontwikkeling**, of een milieu in het Programma van de zandbak van de a **&#x200B;**&#x200B;kan ook worden gebruikt.
 
 ## Laten we beginnen!
 

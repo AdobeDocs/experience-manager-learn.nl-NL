@@ -113,9 +113,9 @@ Zo krijgt u de React-app:
 >   Deze React-app is gedeeltelijk geïmplementeerd. Voer de stappen in deze zelfstudie uit om de implementatie te voltooien. De JavaScript-bestanden die implementatiewerk nodig hebben, hebben de volgende opmerking. Zorg ervoor dat u de code in die bestanden toevoegt/bijwerkt met de code die in deze zelfstudie is opgegeven.
 >
 >
->  //************************************
->  >  // TODO: Implementeer dit door de stappen van de zelfstudie voor AEM Headless te volgen
->  >  //************************************
+>  //**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**
+>  &#x200B;>  // TODO: Implementeer dit door de stappen van de zelfstudie voor AEM Headless te volgen
+>  &#x200B;>  //**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**
 >
 
 ## Anatomie van de React-app
@@ -140,7 +140,7 @@ Zodra de app is voltooid, wordt de hoofdweergave van de app gevuld met de teamge
 
 1. Voer de **component van Teams** uit om de lijst van teams van [ van de Lijst te halen alle Fragmenten API van de Inhoud ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/#operation/fragments/getFragments), en de teaminhoud terug te geven. Dit wordt opgedeeld in de volgende stappen:
 
-1. Creeer a `useEffect` haak die AEM **oproept van alle Fragmenten van de Inhoud {** API een lijst maken en de gegevens in de staat van de component van de Reactie opslaat.
+1. Creeer a `useEffect` haak die AEM **oproept van alle Fragmenten van de Inhoud &lbrace;** API een lijst maken en de gegevens in de staat van de component van de Reactie opslaat.
 1. Voor elk **teruggekeerd de Fragment van de Inhoud van het Team**, haalt **een Fragment van de Inhoud** API aan om volledig gehydrateerde details van het team, met inbegrip van zijn leden en hun `fullNames` te halen.
 1. De teamgegevens renderen met de functie `Team` .
 

@@ -50,7 +50,7 @@ APIs is vermeld op de linkernavigatie onder de **sectie van de Levering van het 
 ## Inhoudsfragmenten weergeven
 
 1. Open de [ Levering van het Fragment van de Inhoud van AEM met ontwikkelaarsdocumenten OpenAPI ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/) in uw browser.
-1. In de linkernavigatie, breid de **sectie van de Levering van het 0} Fragment uit en selecteer** Lijst alle Fragmenten van de Inhoud **API**
+1. In de linkernavigatie, breid de **sectie van de Levering van het 0&rbrace; Fragment uit en selecteer** Lijst alle Fragmenten van de Inhoud **API**
 
 Met deze API kunt u een gepagineerde lijst met alle inhoudsfragmenten van AEM ophalen per map. De eenvoudigste manier om deze API te gebruiken, is het pad naar de map met de inhoudsfragmenten op te geven.
 
@@ -83,7 +83,7 @@ Wanneer het emmertje wordt geplaatst, werkt het **server** gebied van het Doel a
 
    ![ probeer het reactie ](./assets/3/try-it-response.png)
 
-1. De reactie bevat alle Fragmenten van de Inhoud onder de `path` omslag van de parameter 0}, met inbegrip van subfolders, zowel `/content/dam/my-project` Persoon **als** de Fragmenten van de Inhoud van het Team **.**
+1. De reactie bevat alle Fragmenten van de Inhoud onder de `path` omslag van de parameter 0&rbrace;, met inbegrip van subfolders, zowel `/content/dam/my-project` Persoon **als** de Fragmenten van de Inhoud van het Team **.**
 1. Klik door de array `items` en zoek de waarde `Team Alpha` item `id` . De id wordt gebruikt in de volgende sectie om de details van één inhoudsfragment op te halen.
 1. Selecteer **verzoek** in de bovenkant van **uitgeven het** paneel en de diverse parameters in de API vraag om te zien hoe de reactie verandert. U kunt bijvoorbeeld het pad wijzigen in een andere map met Content Fragments of u kunt queryparameters toevoegen om de resultaten te filteren. Wijzig bijvoorbeeld de parameter `path` in `/content/dam/my-project/teams` in alleen inhoudsfragmenten in die map (en submappen).
 

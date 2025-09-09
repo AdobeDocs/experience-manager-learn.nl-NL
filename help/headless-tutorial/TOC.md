@@ -28,7 +28,7 @@ ht-degree: 7%
       + [4 - Een React-app ontwikkelen](./open-api/basic/4-react-app.md)
       + [5 - Integratie van Universal Editor](./open-api/basic/5-universal-editor.md)
 + GraphQL {#graphql}
-   + [ AEM Headless Developer Portal ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html){target=_blank}
+   + [ AEM Headless Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html){target=_blank}
    + [Overzicht](./graphql/overview.md)
    + Snelle installatie {#quick-setup}
       + [Cloud Service](./graphql/quick-setup/cloud-service.md)
@@ -92,7 +92,7 @@ ht-degree: 7%
       + [3 - Kaart SPA-componenten](./spa-editor/angular/map-components.md)
       + [4 - Navigatie en routering](./spa-editor/angular/navigation-routing.md)
       + [5 - Aangepaste component](./spa-editor/angular/custom-component.md)
-      + [ 6 - breid component ](./spa-editor/angular/extend-component.md) uit
+      + [ 6 - breid component  uit](./spa-editor/angular/extend-component.md)
    + Externe SPA{#remote-spa}
       + [Overzicht](./spa-editor/remote-spa/overview.md)
       + [1 - AEM configureren](./spa-editor/remote-spa/aem-configure.md)
