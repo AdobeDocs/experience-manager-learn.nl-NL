@@ -25,7 +25,7 @@ Met Slim uitsnijden verwijdert u de tijdrovende en kostbare taken van het uitsni
 
 >[!NOTE]
 >
->Video gaat ervan uit dat uw AEM-instantie wordt uitgevoerd in de Dynamic Media S7-modus. [ de Instructies bij vestiging AEM met Dynamische Media kunnen hier worden gevonden.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>Video gaat ervan uit dat uw AEM-instantie wordt uitgevoerd in de Dynamic Media S7-modus. [ de Instructies bij vestiging AEM met Dynamische Media kunnen hier worden gevonden.](https://helpx.adobe.com/nl/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## Mogelijkheid tot slim uitsnijden van Adobe Experience Manager Dynamic Media omvat
 

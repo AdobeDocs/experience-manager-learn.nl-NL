@@ -43,7 +43,7 @@ Leer hoe u:
 
 Dit voorbeeld React-app wordt lokaal uitgevoerd (op `http://localhost:3000` ) en maakt verbinding met de AEM Content Fragment Delivery van de AEM Publish-service met OpenAPI&#39;s. Om deze verbinding mogelijk te maken, moet CORS (Cross-Origin Resource Sharing) zijn geconfigureerd op de AEM-service Publiceren (of Voorvertoning).
 
-Volg de [ instructies bij het plaatsen van een KUUROORD die op `http://localhost:3000` loopt om verzoeken CORS aan AEM toe te staan publiceer dienst ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#different-domains).
+Volg de [ instructies bij het plaatsen van een KUUROORD die op `http://localhost:3000` loopt om verzoeken CORS aan AEM toe te staan publiceer dienst ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#different-domains).
 
 ### Lokale CORS-proxy
 

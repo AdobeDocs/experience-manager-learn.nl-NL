@@ -50,7 +50,7 @@ AEM ondersteunt &quot;flat&quot;-maporganisatie. Dit betekent dat Content Fragme
    * Titel: **Engels**
    * Naam: **nl**
 
-   Er wordt een hoofdtaalmap gemaakt om de positie van het project te bepalen en de native lokalisatiefuncties van AEM te ondersteunen. De beste manier is om projecten in te stellen voor meertalige ondersteuning, zelfs als u vandaag geen lokalisatie nodig hebt. Zie [ de volgende documentenpagina voor meer informatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
+   Er wordt een hoofdtaalmap gemaakt om de positie van het project te bepalen en de native lokalisatiefuncties van AEM te ondersteunen. De beste manier is om projecten in te stellen voor meertalige ondersteuning, zelfs als u vandaag geen lokalisatie nodig hebt. Zie [ de volgende documentenpagina voor meer informatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=nl-NL).
 
 1. Creeer twee subfolders onder nieuwe **Mijn Project > Engelse** omslag met de volgende waarden:
 

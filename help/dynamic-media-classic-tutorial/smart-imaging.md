@@ -21,7 +21,7 @@ Een van de belangrijkste aspecten van de klantervaring op uw website of mobiele 
 
 Smart Imaging biedt ook voordelen van de extra prestatieverhoging door volledig te zijn geïntegreerd met de beste hoogwaardige service van Adobe. Deze dienst vindt de optimale Internet route tussen servers, netwerken, en peerpunten die de laagste latentie, en/of pakketverliestarief dan de standaardroute op Internet hebben.
 
-Leer meer over [ Slimme Beeldvorming ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html).
+Leer meer over [ Slimme Beeldvorming ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html?lang=nl-NL).
 
 ## Voordelen van Smart Imaging
 
@@ -33,7 +33,7 @@ Omdat de beelden de meerderheid van de ladingstijd van een pagina vormen, kan de
 
 Zoals eerder is opgemerkt, werkt Slim beeldbeheer met bestaande voorinstellingen voor afbeeldingen om afbeeldingen automatisch om te zetten in optimale afbeeldingsindelingen van de volgende generatie, zoals WebP, terwijl de visuele getrouwheid behouden blijft.
 
-Leer meer over [ hoe de Slimme Beeldvorming werkt ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), met inbegrip van details zoals gesteunde beeldformaten (en wat gebeurt als u die formaten niet gebruikt) en zijn effect op bestaand Beeld vooraf instelt die in gebruik zijn.
+Leer meer over [ hoe de Slimme Beeldvorming werkt ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html?lang=nl-NL#how-does-smart-imaging-work), met inbegrip van details zoals gesteunde beeldformaten (en wat gebeurt als u die formaten niet gebruikt) en zijn effect op bestaand Beeld vooraf instelt die in gebruik zijn.
 
 ## Effecten van slimme beelden
 
@@ -47,11 +47,11 @@ Slimme afbeeldingen werken met afbeeldingen die via HTTP, HTTPS en HTTP/2 worden
 
 Smart Imaging is inbegrepen bij uw bestaande licentie van Dynamic Media Classic. Er zijn geen extra kosten voor deze functie. Om van het voordeel te halen, moet u aan twee vereisten voldoen: hebben een Adobe-Gebundelde CDN en een specifiek domein. Vervolgens moet u deze voor uw account inschakelen, omdat deze functie niet automatisch wordt ingeschakeld.
 
-Als u Smart Imaging inschakelt, begint u met het verzenden van een verzoek om technische ondersteuning door |tot instelling van een steungeval| [ https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De steun zal met u aan opstelling werken een douanedomein dat u met Slimme Beelden zult associëren. U gaat één parameter met betrekking tot caching (Tijd te leven, of TTL) veranderen en de steun zal het geheime voorgeheugen ontruimen. U kunt desgewenst ook een optionele stapsgewijze stap uitvoeren voordat u naar de productie gaat. Als Smart Imaging vervolgens is ingeschakeld, levert u kleinere afbeeldingen op maat voor klanten, maar met dezelfde kwaliteit als u had gevraagd. Dat betekent dat ze sneller bezig zijn met het laden van pagina&#39;s — en dit gebeurt allemaal automatisch.
+Als u Smart Imaging inschakelt, begint u met het verzenden van een verzoek om technische ondersteuning door |tot instelling van een steungeval| [ https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De steun zal met u aan opstelling werken een douanedomein dat u met Slimme Beelden zult associëren. U gaat één parameter met betrekking tot caching (Tijd te leven, of TTL) veranderen en de steun zal het geheime voorgeheugen ontruimen. U kunt desgewenst ook een optionele stapsgewijze stap uitvoeren voordat u naar de productie gaat. Als Smart Imaging vervolgens is ingeschakeld, levert u kleinere afbeeldingen op maat voor klanten, maar met dezelfde kwaliteit als u had gevraagd. Dat betekent dat ze sneller bezig zijn met het laden van pagina&#39;s — en dit gebeurt allemaal automatisch.
 
 Als u Smart Imaging hebt ingeschakeld, wilt u controleren of het werkt zoals u had verwacht.
 
-U hebt waarschijnlijk aanvullende vragen over Smart Imaging. We hebben een lijst met veelgestelde vragen (FAQ&#39;s) met antwoorden samengesteld. Lees [ FAQs ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html).
+U hebt waarschijnlijk aanvullende vragen over Smart Imaging. We hebben een lijst met veelgestelde vragen (FAQ&#39;s) met antwoorden samengesteld. Lees [ FAQs ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html?lang=nl-NL).
 
 ## Aanvullende bronnen
 
