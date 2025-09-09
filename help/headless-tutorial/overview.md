@@ -8,9 +8,9 @@ level: Beginner
 doc-type: Catalog
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 46d65df60ce7a4cda7ff3aa3fb21c1ee60f59bc6
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -21,18 +21,18 @@ Adobe Experience Manager (AEM) beschikt over meerdere opties om eindpunten zonde
 
 >[!TIP]
 >
->Deze inzameling van leerprogramma&#39;s wordt ontworpen voor hen die verkiezen **te leren door** te doen. Als u het leren concepten van de grond omhoog verkiest, controleer de [ Hoofdloze Reis van de Ontwikkelaar van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html?lang=nl-NL). Deze set zelfstudies en de reis vullen elkaar aan.
+>Deze inzameling van leerprogramma&#39;s wordt ontworpen voor hen die verkiezen **te leren door** te doen. Als u het leren concepten van de grond omhoog verkiest, controleer de [ Hoofdloze Reis van de Ontwikkelaar van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Deze set zelfstudies en de reis vullen elkaar aan.
 
 ## Zelfstudies per API
 
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
       <img alt="GRAPHQL API" src="./assets/graphql-icon.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
     <strong> GraphQL API </strong>
     </a>
     </div>
@@ -41,31 +41,31 @@ Adobe Experience Manager (AEM) beschikt over meerdere opties om eindpunten zonde
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=nl-NL">
+    <a href="./open-api/basic/overview.md">
+      <img alt="OpenAPIs" src="./assets/content-services.png" />
+    </a>
+     <div>
+      <a href="./open-api/basic/overview.md">
+        <strong> OpenAPI </strong>
+      </a>
+    </div>
+    <p>
+    <em> leer hoe een toepassing op OpenAPI-Gebaseerde REST APIs kan gebruiken om inhoud te verbruiken.</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
     <img alt="Op token gebaseerde verificatie" src="./assets/token-auth-icon.png" />
     </a>
     <div>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=nl-NL">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
     <strong> Symbolische authentificatie </strong>
     </a>
     </div>
     <p>
     <em> leer hoe een toepassing met AEM veilig voor authentiek kan verklaren.</em>
     </p>
-  </td>
-  <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=nl-NL">
-      <img alt="Inhoudsservices" src="./assets/content-services.png" />
-    </a>
-     <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=nl-NL">
-        <strong> de Diensten van de Inhoud </strong>
-      </a>
-    </div>
-    <p>
-    <em> leer hoe een toepassing REST API kan gebruiken om inhoud te verbruiken.</em>
-    <p>
-  </td>
+  </td>  
 </tr>
 </table>
 
@@ -76,11 +76,11 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html?lang=nl-NL">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html">
       <img alt="iOS-voorbeeld" src="./assets/ios-example.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html?lang=nl-NL">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html">
     <strong> iOS SwiftUI Voorbeeld </strong>
     </a>
     </div>
@@ -89,11 +89,11 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html?lang=nl-NL">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html">
     <img alt="Android-voorbeeld" src="./assets/android-example.png" />
     </a>
     <div>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html?lang=nl-NL">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html">
     <strong> Android™ Voorbeeld </strong>
     </a>
     </div>
@@ -102,11 +102,11 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
     </p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html?lang=nl-NL">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html">
       <img alt="Voorbeeld Reageren" src="./assets/react-example.png" />
     </a>
      <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html?lang=nl-NL">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html">
         <strong> Reageer Voorbeeld </strong>
       </a>
     </div>
@@ -124,11 +124,11 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=nl-NL">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html">
       <img alt="Reageren - Hoofdloos" src="./assets/react-headless.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
     <strong> Reageren - Zwaartepunt </strong>
     </a>
     </div>
@@ -137,11 +137,11 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview">
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview">
       <img alt="Reageren - Inhoud bewerken via Universal Editor" src="./assets/react-universal-editor.png" />
     </a>
      <div>
-      <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview">
         <strong> Reageren - geef Inhoud via Universele Redacteur </strong> uit
       </a>
     </div>
@@ -150,11 +150,11 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
     <p>
   </td>  
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html?lang=nl-NL">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html">
     <img alt="Reageren - Externe editor" src="./assets/react-remote.png" />
     </a>
     <div>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html?lang=nl-NL">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html">
     <strong> Reageren - Verre redacteur </strong>
     </a>
     </div>
@@ -165,11 +165,11 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
 </tr>
 <tr>  
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=nl-NL">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
       <img alt="Reageren - SPA-editor" src="./assets/react-spa-editor.png" />
     </a>
      <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=nl-NL">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
         <strong> Reageren - de Redacteur van het KUUROORD </strong>
       </a>
     </div>
@@ -178,11 +178,11 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=nl-NL">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
     <img alt="Andriod - Inhoudsservices" src="./assets/android.png" />
     </a>
     <div>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=nl-NL">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
     <strong> Android - de Diensten van de Inhoud </strong>
     </a>
     </div>
@@ -191,11 +191,11 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
     </p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=nl-NL">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
       <img alt="Node.js - Authentificatie" src="./assets/node-js.png" />
     </a>
      <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=nl-NL">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
         <strong> Node.js - Authentificatie </strong>
       </a>
     </div>

@@ -9,7 +9,7 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 9ee826cf-389f-4570-bfe1-0d43d3fed3e1
 duration: 574
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%
@@ -31,9 +31,9 @@ Adobe Experience Manager herstelt de personalisatieworkflow tussen AEM en Target
 * Het belangrijkste verschil tussen de HTML-aanbiedingen en de Experience Fragment-aanbiedingen is dat bewerken voor de latere versies alleen mogelijk is in AEM en vervolgens kan worden gesynchroniseerd met Adobe Target
 * De de dienstconfiguratie van de Wolk van het doel die op de omslag van het Fragment van de Ervaring wordt toegepast erft aan alle die Fragments van de Ervaring direct onder de ouderomslag worden gecreeerd. De omslag van het kind erft niet de configuratie van de ouderwolkendiensten.
 * Om een gepersonaliseerde aanbieding te maken, kunnen we nu gemakkelijk gebruikmaken van inhoud die is opgeslagen in AEM.
-* U kunt typen doelactiviteiten maken, waaronder Sensei-activiteiten zoals Automatisch toewijzen, Automatisch doel en Automated Personalization
+* U kunt typen doelactiviteiten maken, waaronder de door AI aangedreven activiteiten zoals Automatisch toewijzen, Automatisch doel en Automated Personalization
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ de Documentatie van Fragmenten van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=nl-NL)
+* [ de Documentatie van Fragmenten van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
 * [Beleidsfragmenten gebruiken](/help/sites/experience-fragments/experience-fragments-feature-video-use.md)

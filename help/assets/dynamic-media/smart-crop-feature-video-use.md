@@ -1,6 +1,6 @@
 ---
 title: Smart Crop gebruiken met AEM Assets Dynamic Media
-description: Slim uitsnijden maakt gebruik van Adobe Sensei om de tijdrovende en kostbare taken van het uitsnijden van inhoud voor een responsief ontwerp te elimineren.
+description: Met Slim uitsnijden verwijdert u de tijdrovende en kostbare taken van het uitsnijden van inhoud voor een responsief ontwerp.
 feature: Smart Crop, Image Profiles
 version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
@@ -10,22 +10,22 @@ jira: KT-784
 doc-type: Feature Video
 exl-id: 295bbfb6-241f-41c0-972d-d9688863cea1
 duration: 443
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
 
 # Smart Crop gebruiken met AEM Assets Dynamic Media{#using-smart-crop-with-aem-assets-dynamic-media}
 
-Slim uitsnijden maakt gebruik van Adobe Sensei om de tijdrovende en kostbare taken van het uitsnijden van inhoud voor een responsief ontwerp te elimineren.
+Met Slim uitsnijden verwijdert u de tijdrovende en kostbare taken van het uitsnijden van inhoud voor een responsief ontwerp.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21519?quality=12&learn=on)
 
 >[!NOTE]
 >
->Video gaat ervan uit dat uw AEM-instantie wordt uitgevoerd in de Dynamic Media S7-modus. [ de Instructies bij vestiging AEM met Dynamische Media kunnen hier worden gevonden.](https://helpx.adobe.com/nl/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>Video gaat ervan uit dat uw AEM-instantie wordt uitgevoerd in de Dynamic Media S7-modus. [ de Instructies bij vestiging AEM met Dynamische Media kunnen hier worden gevonden.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## Mogelijkheid tot slim uitsnijden van Adobe Experience Manager Dynamic Media omvat
 

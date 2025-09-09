@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 766bfaff-ade0-41c8-a395-e79dfb4b3d76
 duration: 115
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 0%
@@ -28,7 +28,7 @@ In `manifest.yml`, dat zich in de hoofdmap van het Asset Compute-project bevindt
 
 Workers worden gedefinieerd als Adobe I/O Runtime-handelingangen onder `actions` en bestaan uit een set configuraties.
 
-De arbeiders die tot andere integratie van Adobe I/O toegang hebben moeten het `annotations -> require-adobe-auth` bezit aan `true` plaatsen aangezien dit [ de geloofsbrieven van Adobe I/O van de worker ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=nl-NL#access-adobe-apis) via het `params.auth` voorwerp blootstelt. Dit is doorgaans vereist wanneer de worker API&#39;s van Adobe I/O, zoals de API&#39;s van Adobe Photoshop, Lightroom of Sensei, aanroept en per worker in- en uitschakelen kan worden uitgevoerd.
+De arbeiders die tot andere integratie van Adobe I/O toegang hebben moeten het `annotations -> require-adobe-auth` bezit aan `true` plaatsen aangezien dit [ de geloofsbrieven van Adobe I/O van de worker ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) via het `params.auth` voorwerp blootstelt. Dit is doorgaans verplicht wanneer de worker API&#39;s van Adobe I/O, zoals de Adobe Photoshop- of Lightroom-API&#39;s, aanroept en per worker in- en uitschakelen kan worden uitgevoerd.
 
 1. Open en bekijk de automatisch gegenereerde worker `manifest.yml` . Voor projecten die meerdere Asset Compute-workers bevatten, moet een vermelding voor elke worker onder de array `actions` worden gedefinieerd.
 
@@ -44,14 +44,14 @@ packages:
         limits:
           concurrency: 10
         annotations:
-          require-adobe-auth: true # set to true, to pass through Adobe I/O access token/client id via params.auth in the worker, typically required when the worker calls out to Adobe I/O APIs such as the Adobe Photoshop, Lightroom or Sensei APIs.
+          require-adobe-auth: true # set to true, to pass through Adobe I/O access token/client id via params.auth in the worker, typically required when the worker calls out to Adobe I/O APIs such as the Adobe Photoshop, or Lightroom.
 ```
 
 ## Limieten definiëren
 
 Elke worker kan de [ grenzen ](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) voor zijn uitvoeringscontext in Adobe I/O Runtime vormen. Deze waarden moeten zodanig worden ingesteld dat de worker een optimale grootte krijgt op basis van het volume, de snelheid en het type elementen dat de worker berekent, en het type werk dat de worker uitvoert.
 
-Herzie [ Adobe rangschikkend begeleiding ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=nl-NL#sizing-workers) alvorens grenzen te plaatsen. Asset Compute-workers hebben onvoldoende geheugen tijdens het verwerken van middelen, wat tot gevolg heeft dat de Adobe I/O Runtime-executie wordt gedood. Zo weet u zeker dat de grootte van de worker correct is aangepast aan de afhandeling van alle kandidaatmiddelen.
+Herzie [ Adobe rangschikkend begeleiding ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) alvorens grenzen te plaatsen. Asset Compute-workers hebben onvoldoende geheugen tijdens het verwerken van middelen, wat tot gevolg heeft dat de Adobe I/O Runtime-executie wordt gedood. Zo weet u zeker dat de grootte van de worker correct is aangepast aan de afhandeling van alle kandidaatmiddelen.
 
 1. Voeg een sectie `inputs` toe aan het nieuwe item voor `wknd-asset-compute` -handelingen. Hierdoor kunnen de algemene prestaties en de toewijzing van bronnen van de Asset Compute-worker worden afgestemd.
 
@@ -113,7 +113,7 @@ Asset Compute Development Tool starten voor het Asset Compute-project:
    $ aio app run
    ```
 
-1. Het lokale Hulpmiddel van de Ontwikkeling van Asset Compute zal in uw standaardbrowser van het Web in __http://localhost:9000__ openen.
+1. Het lokale Hulpmiddel van de Ontwikkeling van Asset Compute zal in uw standaardbrowser van het Web bij __http://localhost :9000__openen.
 
    ![ de looppas van de audio app ](assets/environment-variables/aio-app-run.png)
 

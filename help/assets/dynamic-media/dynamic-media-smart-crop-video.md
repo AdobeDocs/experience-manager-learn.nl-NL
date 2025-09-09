@@ -1,6 +1,6 @@
 ---
 title: Dynamische slimme uitsnijding voor media gebruiken voor video
-description: Dynamic Media Smart Crop voor video gebruikt Adobe Sensei om op intelligente wijze het interessepunt in de video bij te houden, zodat video's er op alle schermgrootten optimaal uitzien.
+description: Dynamische slimme uitsnijding voor media voor video houdt op intelligente wijze het interessepunt in de video bij, zodat video's er optimaal uitzien op alle schermgrootten.
 feature: Smart Crop, Video Profiles, Viewer Presets
 version: Experience Manager as a Cloud Service
 jira: KT-5977
@@ -11,19 +11,19 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 15eb725c-d6f6-4ab9-8d39-dc05fbba1ff3
 duration: 397
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '86'
 ht-degree: 0%
 
 ---
 
 # Dynamische slimme uitsnijding voor media gebruiken voor video {#using-smart-crop-video}
 
-Dynamic Media Smart Crop voor video gebruikt Adobe Sensei om op intelligente wijze het interessepunt in de video bij te houden, zodat video&#39;s er op alle schermgrootten optimaal uitzien.
+Dynamische slimme uitsnijding voor media voor video houdt op intelligente wijze het interessepunt in de video bij, zodat video&#39;s er optimaal uitzien op alle schermgrootten.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37958?quality=12&learn=on)
 
 >[!NOTE]
 >
->In de bovenstaande video wordt ervan uitgegaan dat uw AEM-service wordt uitgevoerd in de Dynamic Media S7-modus. [ de Instructies bij vestiging AEM met Dynamische Media kunnen hier worden gevonden.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=nl-NL)
+>In de bovenstaande video wordt ervan uitgegaan dat uw AEM-service wordt uitgevoerd in de Dynamic Media S7-modus. [ de Instructies bij vestiging AEM met Dynamische Media kunnen hier worden gevonden.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)

@@ -8,10 +8,10 @@ sub-product: Experience Manager Sites
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-2963
 index: y
-source-git-commit: 6425188da75f789b0661ec9bfb79624b5704c92b
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 8%
+source-wordcount: '343'
+ht-degree: 7%
 
 ---
 
@@ -19,8 +19,16 @@ ht-degree: 8%
 # Aan de slag met AEM Headless{#getting-started-with-aem-headless}
 
 + [Overzicht van AEM Headless](./overview.md)
++ OpenAPI {#open-api}
+   + Basiszelfstudies {#basic}
+      + [Overzicht](./open-api/basic/overview.md)
+      + [1 - Modellen voor inhoudsfragmenten definiëren](./open-api/basic/1-content-fragment-models.md)
+      + [2 - Inhoudsfragmenten auteur](./open-api/basic/2-author-content-fragments.md)
+      + [3 - OpenAPI&#39;s verkennen](./open-api/basic/3-explore-openapis.md)
+      + [4 - Een React-app ontwikkelen](./open-api/basic/4-react-app.md)
+      + [5 - Integratie van Universal Editor](./open-api/basic/5-universal-editor.md)
 + GraphQL {#graphql}
-   + [ AEM Headless Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL){target=_blank}
+   + [ AEM Headless Developer Portal ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html){target=_blank}
    + [Overzicht](./graphql/overview.md)
    + Snelle installatie {#quick-setup}
       + [Cloud Service](./graphql/quick-setup/cloud-service.md)
@@ -84,7 +92,7 @@ ht-degree: 8%
       + [3 - Kaart SPA-componenten](./spa-editor/angular/map-components.md)
       + [4 - Navigatie en routering](./spa-editor/angular/navigation-routing.md)
       + [5 - Aangepaste component](./spa-editor/angular/custom-component.md)
-      + [ 6 - breid component  uit](./spa-editor/angular/extend-component.md)
+      + [ 6 - breid component ](./spa-editor/angular/extend-component.md) uit
    + Externe SPA{#remote-spa}
       + [Overzicht](./spa-editor/remote-spa/overview.md)
       + [1 - AEM configureren](./spa-editor/remote-spa/aem-configure.md)

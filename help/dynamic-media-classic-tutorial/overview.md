@@ -1,6 +1,6 @@
 ---
 title: Zelfstudie over best practices voor Dynamic Media Classic
-description: Dynamic Media Classic is het knooppunt waar klanten veelzijdige media-inhoud kunnen maken, schrijven en leveren. Deze zelfstudie over best practices is gemaakt om huidige en nieuwe gebruikers van Dynamic Media Classic te helpen beter te begrijpen wat ze kunnen doen met deze krachtige, rijke mediaoplossing van Adobe. In dit gedeelte van de zelfstudie leert u wat Dynamic Media Classic is en bekijkt u de kernmogelijkheden en gebruikersinterface van.
+description: Dynamic Media Classic is het knooppunt waar klanten veelzijdige media-inhoud kunnen maken, schrijven en leveren. Deze zelfstudie over best practices is gemaakt om huidige en nieuwe gebruikers van Dynamic Media Classic beter te laten begrijpen wat ze kunnen doen met deze krachtige, rijke mediaoplossing van Adobe. In dit gedeelte van de zelfstudie leert u wat Dynamic Media Classic is en bekijkt u de kernmogelijkheden en gebruikersinterface van.
 feature: Dynamic Media Classic
 topic: Content Management
 role: User
@@ -8,9 +8,9 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 975b85af-ca6a-419e-ab2a-6e1781bfee4a
 duration: 173
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,9 @@ In deze handleiding bespreken we de volgende kernmogelijkheden van Dynamic Media
 
 - **Dynamic Imaging.** De overkoepelende term voor real-time bewerken, opmaken en vergroten, en interactief zoomen en pannen, het bekijken van kleuren en structuren, ronddraaien van 360 graden, afbeeldingssjablonen en multimediaminiaturen.
 - **Video.** Upload definitieve video&#39;s, publiceer ze en download ze progressief naar configureerbare videoviewers.
-- **Slimme Beeldvorming.** Technologie die gebruikmaakt van Adobe Sensei AI-mogelijkheden en met bestaande &quot;Voorinstellingen afbeelding&quot; werkt om de prestaties van de afbeeldingslevering te verbeteren door de afbeeldingsindeling, -grootte en -kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser.
+- **Slimme Beeldvorming.** Technologie die met bestaande &quot;Voorinstellingen afbeelding&quot; werkt om de prestaties van de afbeeldingslevering te verbeteren door de indeling, grootte en kwaliteit van de afbeelding automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser.
 
-Om extra mogelijkheden van de oplossing te ontdekken, bezoek de [ Documentatie voor Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html?lang=nl-NL).
+Om extra mogelijkheden van de oplossing te ontdekken, bezoek de [ Documentatie voor Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
 
 ## De gebruikersinterface van Dynamic Media Classic (UI)
 
@@ -70,6 +70,6 @@ _UI van Dynamic Media Classic_
 
 >[!TIP]
 >
->Selecteer **Publish na het Uploaden** checkbox in de Upload dialoog om activa op upload automatisch te publiceren.
+>Selecteer **publiceren na het Uploaden** checkbox in de Upload dialoog om activa op upload automatisch te publiceren.
 
-Leer meer over [ Navigerend UI van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html?lang=nl-NL).
+Leer meer over [ Navigerend UI van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).
