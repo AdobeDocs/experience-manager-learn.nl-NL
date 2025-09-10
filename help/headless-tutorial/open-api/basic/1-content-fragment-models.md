@@ -10,18 +10,18 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 duration: 430
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+source-git-commit: a3d2a88232cae941647464be8e215a47c85bc0ab
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 0%
 
 ---
 
-# Modellen voor inhoudsfragmenten definiëren
+# Modellen voor inhoudsfragmenten maken
 
 In dit hoofdstuk, leer hoe te om inhoud te modelleren en een schema met **Modellen van het Fragment van de Inhoud** te bouwen, en over de verschillende gegevenstypes die een Model van het Fragment van de Inhoud bepalen.
 
-In dit leerprogramma, creeert u twee eenvoudige modellen, **Team** en **Persoon**. Het **gegevensmodel van het 0&rbrace; Team &lbrace;heeft naam, korte naam, en beschrijving en verwijzingen het** Person **gegevensmodel, dat volledige naam, biodetails, profielbeeld, en bezettingenlijst heeft.**
+In dit leerprogramma, creeert u twee eenvoudige modellen, **Team** en **Persoon**. Het **gegevensmodel van het 0} Team {heeft naam, korte naam, en beschrijving en verwijzingen het** Person **gegevensmodel, dat volledige naam, biodetails, profielbeeld, en bezettingenlijst heeft.**
 
 ## Doelstellingen
 
@@ -33,7 +33,7 @@ In dit leerprogramma, creeert u twee eenvoudige modellen, **Team** en **Persoon*
 
 Een projectconfiguratie bevat alle Modellen van het Fragment van de Inhoud verbonden aan een bepaald project en verstrekt een middel om modellen te organiseren. Creeer minstens één project **alvorens** het Model van het Fragment van de Inhoud te creëren.
 
-1. Login aan het milieu van de Auteur van AEM **&#x200B;**&#x200B;(zoals `https://author-p<PROGRAM_ID>-e<ENVIRONMENT_ID>.adobeaemcloud.com/`)
+1. Login aan het milieu van de Auteur van AEM **** (zoals `https://author-p<PROGRAM_ID>-e<ENVIRONMENT_ID>.adobeaemcloud.com/`)
 1. Van het scherm van het Begin van AEM, navigeer aan **Hulpmiddelen** > **Algemeen** > **Browser van de Configuratie**.
 1. Klik **creeer** in de hoogste actiebar en ga de volgende configuratiedetails in:
    * Titel: **Mijn Project**
@@ -70,13 +70,13 @@ Creeer een Model van het Fragment van de Inhoud voor a **Persoon**, dat het gege
 
    De **Naam van het Bezit** bepaalt de naam van het bezit waar de authored waarde in AEM wordt opgeslagen. De **Naam van het Bezit** bepaalt ook de **zeer belangrijke** naam voor dit bezit als deel van het gegevensschema, en gebruikt als sleutel in de reactie JSON wanneer het Fragment van de Inhoud via AEM OpenAPIs wordt geleverd.
 
-1. Selecteer het **lusje van de Types van Gegevens 0&rbrace; &lbrace;en belemmering en laat vallen a** Multi gebied van de lijntekst **onder het** Volledige gebied van de Naam **.** Voer de volgende eigenschappen in:
+1. Selecteer het **lusje van de Types van Gegevens 0} {en belemmering en laat vallen a** Multi gebied van de lijntekst **onder het** Volledige gebied van de Naam **.** Voer de volgende eigenschappen in:
 
    * Het Etiket van het gebied: **Biografie**
    * Eigenschapnaam: `biographyText`
    * Standaardtype: **Rijke Tekst**
 
-1. Klik het **lusje van de Types van Gegevens 0&rbrace; &lbrace;en belemmering en laat vallen het gebied van de Verwijzing van de a** Inhoud **.** Voer de volgende eigenschappen in:
+1. Klik het **lusje van de Types van Gegevens 0} {en belemmering en laat vallen het gebied van de Verwijzing van de a** Inhoud **.** Voer de volgende eigenschappen in:
 
    * Het Etiket van het gebied: **Beeld van het Profiel**
    * Eigenschapnaam: `profilePicture`
@@ -90,7 +90,7 @@ Creeer een Model van het Fragment van de Inhoud voor a **Persoon**, dat het gege
 
    * Toon Duimnagel: **Gecontroleerd**
 
-1. Klik het **lusje van de Types van Gegevens 0&rbrace; &lbrace;en sleep en laat vallen een** Opsomming **gegevenstype onder het** **gebied van de Verwijzing van het Beeld.** Voer de volgende eigenschappen in:
+1. Klik het **lusje van de Types van Gegevens 0} {en sleep en laat vallen een** Opsomming **gegevenstype onder het** **gebied van de Verwijzing van het Beeld.** Voer de volgende eigenschappen in:
 
    * Renderen als: **Checkboxes**
    * Het Etiket van het gebied: **Bezetting**
@@ -126,13 +126,13 @@ Creeer een Model van het Fragment van de Inhoud voor a **Team**, dat het gegeven
    * Eigenschapnaam: `title`
    * Controle **Vereiste**
 
-1. Selecteer het **lusje van de Types van Gegevens 0&rbrace; &lbrace;en belemmering en laat vallen a** Multi gebied van de lijntekst **onder het** Korte gebied van de Naam **.** Voer de volgende eigenschappen in:
+1. Selecteer het **lusje van de Types van Gegevens 0} {en belemmering en laat vallen a** Multi gebied van de lijntekst **onder het** Korte gebied van de Naam **.** Voer de volgende eigenschappen in:
 
    * Het Etiket van het gebied: **Beschrijving**
    * Eigenschapnaam: `description`
    * Standaardtype: **Rijke Tekst**
 
-1. Klik het **lusje van de Types van Gegevens 0&rbrace; &lbrace;en belemmering en laat vallen het gebied van de Verwijzing van het a** Fragment **.** Voer de volgende eigenschappen in:
+1. Klik het **lusje van de Types van Gegevens 0} {en belemmering en laat vallen het gebied van de Verwijzing van het a** Fragment **.** Voer de volgende eigenschappen in:
 
    * Renderen als: **Veelvoudig Gebied**
    * Minimum Aantal Punten: **2**
@@ -160,5 +160,5 @@ In het volgende hoofdstuk, [ het Authoring Modellen van het Fragment van de Inho
 
 ## Gerelateerde documentatie
 
-* [Modellen van contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html?lang=nl-NL)
+* [Modellen van contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html)
 
