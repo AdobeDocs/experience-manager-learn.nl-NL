@@ -10,14 +10,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 duration: 700
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+source-git-commit: 01f51a3556cfbcc22bbe31c4c05c11caaab71708
 workflow-type: tm+mt
 source-wordcount: '1274'
 ht-degree: 0%
 
 ---
 
-# Inhoudsfragmenten ontwerpen
+# Inhoudsfragmenten auteur
 
 In dit hoofdstuk, creeert u en geeft nieuwe die Fragmenten uit van de Inhoud op het [ wordt gebaseerd Team en de Modellen van het Fragment van de Inhoud van de Persoon ](./1-content-fragment-models.md). Deze inhoudsfragmenten zijn de inhoud die wordt gebruikt door de React-app met AEM Content Fragment Delivery with OpenAPIs.
 
@@ -50,11 +50,11 @@ AEM ondersteunt &quot;flat&quot;-maporganisatie. Dit betekent dat Content Fragme
    * Titel: **Engels**
    * Naam: **nl**
 
-   Er wordt een hoofdtaalmap gemaakt om de positie van het project te bepalen en de native lokalisatiefuncties van AEM te ondersteunen. De beste manier is om projecten in te stellen voor meertalige ondersteuning, zelfs als u vandaag geen lokalisatie nodig hebt. Zie [ de volgende documentenpagina voor meer informatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=nl-NL).
+   Er wordt een hoofdtaalmap gemaakt om de positie van het project te bepalen en de native lokalisatiefuncties van AEM te ondersteunen. De beste manier is om projecten in te stellen voor meertalige ondersteuning, zelfs als u vandaag geen lokalisatie nodig hebt. Zie [ de volgende documentenpagina voor meer informatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
 
 1. Creeer twee subfolders onder nieuwe **Mijn Project > Engelse** omslag met de volgende waarden:
 
-   A `teams` omslag die de **2&rbrace; Fragmenten van de Inhoud van het Team &lbrace;bevat**
+   A `teams` omslag die de **2} Fragmenten van de Inhoud van het Team {bevat**
 
    * Titel: **Teams**
    * Naam: **teams**
@@ -74,11 +74,11 @@ AEM ondersteunt &quot;flat&quot;-maporganisatie. Dit betekent dat Content Fragme
    Dit beleid wordt automatisch door submappen overgeërfd, maar kan worden overschreven. Modellen van inhoudsfragmenten kunnen worden toegestaan door tags of door modellen van inhoudsfragmenten van andere projectconfiguraties in te schakelen. Dit mechanisme biedt een krachtige manier om uw inhoudshiërarchie te beheren.
 
 1. Selecteer **sparen &amp; sluit** om de veranderingen in de omslageigenschappen te bewaren.
-1. Werk het **Beleid** voor de **3&rbrace; omslag van Mensen &lbrace;op de zelfde manier bij, maar selecteer in plaats daarvan het** Model van het Fragment van de Inhoud van de Persoon **.**
+1. Werk het **Beleid** voor de **3} omslag van Mensen {op de zelfde manier bij, maar selecteer in plaats daarvan het** Model van het Fragment van de Inhoud van de Persoon **.**
 
 ## Een personeninhoudsfragment maken
 
-Creeer de Fragmenten van de Inhoud die op het **Model van het Fragment van de Persoon &lbrace;in het** Mijn Project > Engels > van Mensen **worden gebaseerd omslag.**
+Creeer de Fragmenten van de Inhoud die op het **Model van het Fragment van de Persoon {in het** Mijn Project > Engels > van Mensen **worden gebaseerd omslag.**
 
 1. Van het Scherm van het Begin van AEM, uitgezochte **Fragments van de Inhoud** om de Console van Fragmenten van de Inhoud te openen.
 1. Selecteer **tonen omslag** knoop om omslagbrowser te openen.
@@ -135,7 +135,7 @@ U kunt desgewenst nog een paar fragmenten voor persoonlijke inhoud maken om extr
 
 ## Een teaminhoudsfragment maken
 
-Gebruikend de zelfde benadering, creeer het fragment van het a **Team** dat op het **&#x200B;**&#x200B;Model van het Fragment van de Inhoud van het Team &lbrace;in **Mijn Project > Engels > de omslag van Teams** wordt gebaseerd.
+Gebruikend de zelfde benadering, creeer het fragment van het a **Team** dat op het **** Model van het Fragment van de Inhoud van het Team {in **Mijn Project > Engels > de omslag van Teams** wordt gebaseerd.
 
 1. Creeer het fragment van het a **Team** dat **Team Alpha** met de volgende eigenschappen vertegenwoordigt:
 
@@ -148,7 +148,7 @@ Gebruikend de zelfde benadering, creeer het fragment van het a **Team** dat op h
 
    * Titel: **Team Alpha**
    * Beschrijving: **Team Alpha is een team van de reisinhoud dat in fotografie en reis het schrijven specialiseert.**
-   * **Leden van het Team**: Selecteer **Jansen doet** en **Alison Smith** de Fragmenten van de Inhoud om het **7&rbrace; gebied van de Leden van het Team te bevolken.**
+   * **Leden van het Team**: Selecteer **Jansen doet** en **Alison Smith** de Fragmenten van de Inhoud om het **7} gebied van de Leden van het Team te bevolken.**
 
    ![ de Inhoud van Alpha van het Team Fragment ](assets/2/team-alpha-content-fragment.png)
 
@@ -187,7 +187,7 @@ U kunt aan de **dienst van de Voorproef** op de zelfde manier publiceren.
 
 ## Gefeliciteerd!
 
-Gefeliciteerd, u hebt inhoudsfragmenten gemaakt die zijn gebaseerd op modellen van inhoudsfragmenten in AEM. U creeerde het Model van het Fragment van de Inhoud van de a **Persoon**, creeerde verscheidene **Fragmenten van de Inhoud van de Persoon &lbrace;, en creeerde het Fragment van de Inhoud van het a** Team **dat de verwijzingen veelvoudige** Inhoudsfragmenten van de Persoon **.**
+Gefeliciteerd, u hebt inhoudsfragmenten gemaakt die zijn gebaseerd op modellen van inhoudsfragmenten in AEM. U creeerde het Model van het Fragment van de Inhoud van de a **Persoon**, creeerde verscheidene **Fragmenten van de Inhoud van de Persoon {, en creeerde het Fragment van de Inhoud van het a** Team **dat de verwijzingen veelvoudige** Inhoudsfragmenten van de Persoon **.**
 
 Met gepubliceerde inhoudsfragmenten kunt u deze nu openen via de AEM Content Fragment Delivery met OpenAPI&#39;s.
 
