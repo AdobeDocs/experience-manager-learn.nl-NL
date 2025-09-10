@@ -54,7 +54,7 @@ AEM ondersteunt &quot;flat&quot;-maporganisatie. Dit betekent dat Content Fragme
 
 1. Creeer twee subfolders onder nieuwe **Mijn Project > Engelse** omslag met de volgende waarden:
 
-   A `teams` omslag die de **2} Fragmenten van de Inhoud van het Team {bevat**
+   A `teams` omslag die de **2&rbrace; Fragmenten van de Inhoud van het Team &lbrace;bevat**
 
    * Titel: **Teams**
    * Naam: **teams**
@@ -74,11 +74,11 @@ AEM ondersteunt &quot;flat&quot;-maporganisatie. Dit betekent dat Content Fragme
    Dit beleid wordt automatisch door submappen overgeërfd, maar kan worden overschreven. Modellen van inhoudsfragmenten kunnen worden toegestaan door tags of door modellen van inhoudsfragmenten van andere projectconfiguraties in te schakelen. Dit mechanisme biedt een krachtige manier om uw inhoudshiërarchie te beheren.
 
 1. Selecteer **sparen &amp; sluit** om de veranderingen in de omslageigenschappen te bewaren.
-1. Werk het **Beleid** voor de **3} omslag van Mensen {op de zelfde manier bij, maar selecteer in plaats daarvan het** Model van het Fragment van de Inhoud van de Persoon **.**
+1. Werk het **Beleid** voor de **3&rbrace; omslag van Mensen &lbrace;op de zelfde manier bij, maar selecteer in plaats daarvan het** Model van het Fragment van de Inhoud van de Persoon **.**
 
 ## Een personeninhoudsfragment maken
 
-Creeer de Fragmenten van de Inhoud die op het **Model van het Fragment van de Persoon {in het** Mijn Project > Engels > van Mensen **worden gebaseerd omslag.**
+Creeer de Fragmenten van de Inhoud die op het **Model van het Fragment van de Persoon &lbrace;in het** Mijn Project > Engels > van Mensen **worden gebaseerd omslag.**
 
 1. Van het Scherm van het Begin van AEM, uitgezochte **Fragments van de Inhoud** om de Console van Fragmenten van de Inhoud te openen.
 1. Selecteer **tonen omslag** knoop om omslagbrowser te openen.
@@ -135,7 +135,7 @@ U kunt desgewenst nog een paar fragmenten voor persoonlijke inhoud maken om extr
 
 ## Een teaminhoudsfragment maken
 
-Gebruikend de zelfde benadering, creeer het fragment van het a **Team** dat op het **** Model van het Fragment van de Inhoud van het Team {in **Mijn Project > Engels > de omslag van Teams** wordt gebaseerd.
+Gebruikend de zelfde benadering, creeer het fragment van het a **Team** dat op het **&#x200B;**&#x200B;Model van het Fragment van de Inhoud van het Team &lbrace;in **Mijn Project > Engels > de omslag van Teams** wordt gebaseerd.
 
 1. Creeer het fragment van het a **Team** dat **Team Alpha** met de volgende eigenschappen vertegenwoordigt:
 
@@ -148,7 +148,7 @@ Gebruikend de zelfde benadering, creeer het fragment van het a **Team** dat op h
 
    * Titel: **Team Alpha**
    * Beschrijving: **Team Alpha is een team van de reisinhoud dat in fotografie en reis het schrijven specialiseert.**
-   * **Leden van het Team**: Selecteer **Jansen doet** en **Alison Smith** de Fragmenten van de Inhoud om het **7} gebied van de Leden van het Team te bevolken.**
+   * **Leden van het Team**: Selecteer **Jansen doet** en **Alison Smith** de Fragmenten van de Inhoud om het **7&rbrace; gebied van de Leden van het Team te bevolken.**
 
    ![ de Inhoud van Alpha van het Team Fragment ](assets/2/team-alpha-content-fragment.png)
 
@@ -187,7 +187,7 @@ U kunt aan de **dienst van de Voorproef** op de zelfde manier publiceren.
 
 ## Gefeliciteerd!
 
-Gefeliciteerd, u hebt inhoudsfragmenten gemaakt die zijn gebaseerd op modellen van inhoudsfragmenten in AEM. U creeerde het Model van het Fragment van de Inhoud van de a **Persoon**, creeerde verscheidene **Fragmenten van de Inhoud van de Persoon {, en creeerde het Fragment van de Inhoud van het a** Team **dat de verwijzingen veelvoudige** Inhoudsfragmenten van de Persoon **.**
+Gefeliciteerd, u hebt inhoudsfragmenten gemaakt die zijn gebaseerd op modellen van inhoudsfragmenten in AEM. U creeerde het Model van het Fragment van de Inhoud van de a **Persoon**, creeerde verscheidene **Fragmenten van de Inhoud van de Persoon &lbrace;, en creeerde het Fragment van de Inhoud van het a** Team **dat de verwijzingen veelvoudige** Inhoudsfragmenten van de Persoon **.**
 
 Met gepubliceerde inhoudsfragmenten kunt u deze nu openen via de AEM Content Fragment Delivery met OpenAPI&#39;s.
 
