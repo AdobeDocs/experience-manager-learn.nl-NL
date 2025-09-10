@@ -1,5 +1,5 @@
 ---
-title: React App bewerkbaar maken met Universal Editor | Koploze zelfstudie, deel 5
+title: De React-app bewerken met de Universal Editor | Koploze zelfstudie, deel 5
 description: Leer hoe u de React-app bewerkbaar kunt maken in AEM Universal Editor door de benodigde instrumentatie en configuratie toe te voegen.
 version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
@@ -8,15 +8,15 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 duration: 800
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+source-git-commit: da3bfa25a424e3176fb7d53189169515db225228
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
 
 
-# De React-app bewerkbaar maken met de Universal Editor
+# De React-app bewerken met de Universal Editor
 
 In dit hoofdstuk, leert u hoe te Reageren app maken die in het [ vorige hoofdstuk ](./4-react-app.md) bewerkbaar wordt gebouwd gebruikend de Universele Redacteur van AEM. Met de Universal Editor kunnen auteurs van inhoud inhoud inhoud rechtstreeks bewerken binnen de context van de React-app-ervaring, terwijl de foutloze ervaring van een toepassing zonder kop behouden blijft.
 
@@ -27,7 +27,7 @@ De Universal Editor biedt een krachtige manier om in-context bewerken in te scha
 ## Vereisten
 
 * De vorige stappen van dit leerprogramma zijn voltooid, specifiek [ bouwt een React app die AEM het Leveren OpenAPIs van het Fragment van de Inhoud gebruikt ](./4-react-app.md)
-* Een het werk kennis van [ om Universele Redacteur ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) te gebruiken en uit te voeren.
+* Een het werk kennis van [ om Universele Redacteur ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) te gebruiken en uit te voeren.
 
 ## Doelstellingen
 
@@ -39,14 +39,14 @@ Leer hoe u:
 
 ## Universal Editor-instrumenten
 
-De universele Redacteur vereist [ attributen van HTML en metatags ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) om editable inhoud te identificeren en de verbinding tussen de inhoud van UI en van AEM te vestigen.
+De universele Redacteur vereist [ attributen van HTML en metatags ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) om editable inhoud te identificeren en de verbinding tussen de inhoud van UI en van AEM te vestigen.
 
 ### Universal Editor-tags toevoegen
 
 Voeg eerst de benodigde metatags toe om te bepalen dat de toepassing Reageren compatibel is met de Universal Editor.
 
 1. Open `public/index.html` in de React-app.
-1. Voeg de [ Universele metatags van de Redacteur en het manuscript van CORS ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) in de `<head>` sectie van React toe app:
+1. Voeg de [ Universele metatags van de Redacteur en het manuscript van CORS ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) in de `<head>` sectie van React toe app:
 
    ```html
    <!DOCTYPE html>
@@ -88,7 +88,7 @@ Voeg eerst de benodigde metatags toe om te bepalen dat de toepassing Reageren co
 Voeg nu Universal Editor-kenmerken toe om de component Teams bewerkbaar te maken.
 
 1. Open `src/components/Teams.js`.
-1. Werk de `Team` component bij om [ Universele de gegevensattributen van de Redacteur ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) te omvatten:
+1. Werk de `Team` component bij om [ Universele de gegevensattributen van de Redacteur ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) te omvatten:
 
    Wanneer u het kenmerk `data-aue-resource` instelt, moet u ervoor zorgen dat het AEM-pad naar het inhoudsfragment, dat wordt geretourneerd door de AEM Content Fragment Delivery with OpenAPIs, wordt gepost met het subpad naar de variatie van het inhoudsfragment; in dit geval `/jcr:content/data/master` .
 
@@ -214,7 +214,7 @@ Voeg nu Universal Editor-kenmerken toe om de component Teams bewerkbaar te maken
 U kunt ook Universal Editor-kenmerken toevoegen aan de component Person.
 
 1. Open `src/components/Person.js`.
-1. Werk de component bij om [ Universele de gegevensattributen van de Redacteur ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) te omvatten:
+1. Werk de component bij om [ Universele de gegevensattributen van de Redacteur ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) te omvatten:
 
    Wanneer u het kenmerk `data-aue-resource` instelt, moet u ervoor zorgen dat het AEM-pad naar het inhoudsfragment, dat wordt geretourneerd door de AEM Content Fragment Delivery with OpenAPIs, wordt gepost met het subpad naar de variatie van het inhoudsfragment; in dit geval `/jcr:content/data/master` .
 
