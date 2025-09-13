@@ -45,7 +45,7 @@ Bezoek de [ website van Enablement WKND ](https://wknd.enablementadobe.com/us/en
 
 - **Pagina van het Tijdschrift**: Wanneer de gebruikers _drie of meer_ artikelen lezen, zijn zij gecategoriseerd als **het publiek van de Lezers van het Tijdschrift** en zien een gepersonaliseerde heldensectie op de tijdschriftpagina.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474001/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3474007/?learn=on&enablevpops&captions=dut)
 
 >[!TIP]
 >
