@@ -94,7 +94,7 @@ ht-degree: 7%
    + [Sidekick-insteekmodule](./edge-delivery-services/sidekick-plugin.md)
 
 + Adobe GenStudio{#adobe-genstudio}
-   + [ AEM Assets en GenStudio for Performance Marketing ](https://experienceleague.adobe.com/en/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
+   + [ AEM Assets en GenStudio for Performance Marketing ](https://experienceleague.adobe.com/nl/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
 
 + Delen en distributie{#sharing}
    + [Elementen downloaden](./sharing/download.md)
@@ -204,4 +204,4 @@ ht-degree: 7%
 + Implementatie{#deployment}
    + [Meerdere huurders en gelijktijdige ontwikkeling](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [ Hoofdzaak van Activa](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html){target=_blank}
++ [ Hoofdzaak van Activa](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=nl-NL){target=_blank}
