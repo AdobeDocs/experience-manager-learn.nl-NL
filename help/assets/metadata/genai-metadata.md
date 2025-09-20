@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Leer hoe AEM Assets as a Cloud Service Adobe GenAI gebruikt om metagegevens over elementen te genereren en uit te breiden voor hulp bij inhoudsbeheer en detectie.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474891/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3474912/?learn=on&enablevpops&captions=dut)

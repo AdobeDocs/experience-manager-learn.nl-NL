@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Leer hoe u middelen en verzamelingen kunt delen met teamleden in AEM Assets Content Hub, waardoor u effectieve teamwork kunt bevorderen en bedrijfsmiddelen veilig kunt delen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3474925/?learn=on&enablevpops=on&captions=dut)
