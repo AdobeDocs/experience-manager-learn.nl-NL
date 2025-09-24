@@ -6,7 +6,7 @@ sub-product: Experience Manager Sites
 topic: Content Management
 doc-type: Catalog
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 14ca2ba3d5b6c116e3fa8b437aa9ed90375ae468
+source-git-commit: 999bbe542e5c71ae537f93a4c89acf6d304a4292
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Adobe Experience Manager (AEM) Sites is een beheerplatform voor Adobe-ervaringen
 
 AEM Sites biedt drie manieren om ervaringen op te bouwen, te schrijven en te leveren. Of u nu websites bouwt, optimaliseert voor de prestaties van de Edge-server of toepassingen zonder koppen gebruikt, AEM Sites biedt flexibele opties die aansluiten bij uw projectbehoeften:
 
-1. **Edge Delivery Services** ervaringen gebruiken Edge Network van Adobe om inhoud met hoge snelheid en lage latentie te leveren. De service optimaliseert automatisch inhoud voor het verbruikende apparaat, zoekmachines en GenAI-agents. Auteurs maken inhoud met Adobe Universal Editor of op documenten gebaseerde authoring.
+1. **Edge Delivery Services** ervaart gebruik Adobe Edge Network om inhoud met hoge snelheid en lage latentie te leveren. De service optimaliseert automatisch inhoud voor het verbruikende apparaat, zoekmachines en GenAI-agents. Auteurs maken inhoud met Adobe Universal Editor of op documenten gebaseerde authoring.
 1. **Koploze/API-eerste** ervaringen gebruiken AEM publiceren om inhoud als JSON over HTTP APIs voor mobiele apps, enig-paginatoepassingen (SPAs), of andere headless cliënten te leveren. Auteurs maken inhoud met de Content Fragment Editor of de Universal Editor.
 1. **Traditionele AEM** ervaringen gebruiken AEM publiceren om inhoud als webpagina&#39;s van HTML te leveren. Auteurs maken inhoud met de paginaeditor van AEM Auteur. Deze optie is het meest geschikt voor bestaande projecten of projecten die al zijn gemigreerd.
 
@@ -31,7 +31,7 @@ Alle drie de opties zijn sterke benaderingen, en de beste keus hangt van uw gebr
 
 >[!IMPORTANT]
 >
-> **Edge Delivery Services** is de nieuwste en meest geavanceerde manier om websites met AEM te leveren. Het combineert de snelheid en schaalbaarheid van de Edge Network van Adobe met moderne ontwerpopties. Hoewel Edge Delivery Services wordt aanbevolen voor nieuwe projecten, blijft AEM Sites ondersteuning bieden voor een aanpak zonder kop en met een traditionele aanpak, zodat u het pad kunt kiezen dat het beste bij uw behoeften past.
+> **Edge Delivery Services** is de nieuwste en meest geavanceerde manier om websites met AEM te leveren. Het combineert de snelheid en schaalbaarheid van Adobe Edge Network met moderne ontwerpopties. Hoewel Edge Delivery Services wordt aanbevolen voor nieuwe projecten, blijft AEM Sites ondersteuning bieden voor een aanpak zonder kop en met een traditionele aanpak, zodat u het pad kunt kiezen dat het beste bij uw behoeften past.
 
 In het volgende diagram worden de verschillende opties weergegeven voor het maken van ervaringen met AEM Sites:
 
@@ -54,7 +54,7 @@ De volgende tabel biedt een vergelijking op hoog niveau van de drie paden. Het r
 
 ## Migreren van AMS of op locatie
 
-Als u van AMS of on-premise (OTP) aan AEM as a Cloud Service migreert, moedigt Adobe u aan om direct het bewegen aan Edge Delivery Services te evalueren. De inspanningen zijn doorgaans niet groter dan het migreren naar AEM as a Cloud Service Publish, terwijl ze snellere prestaties en grotere schaalbaarheid bieden. Als u besluit dat Edge Delivery Services momenteel niet de juiste keuze voor u is, of als de andere oplossingen beter aan uw behoeften voldoen, blijven ze volledig ondersteund en zijn ze geldige opties voor uw project.
+Als u van AMS of on-premise (OTP) aan AEM as a Cloud Service migreert, moedigt Adobe u aan om direct het bewegen aan Edge Delivery Services te evalueren. De inspanningen zijn doorgaans niet groter dan het migreren naar AEM as a Cloud Service Publish, terwijl ze snellere prestaties en grotere schaalbaarheid bieden. Als u besluit dat Edge Delivery Services op dit moment niet de juiste keuze voor u is, of als de andere oplossingen beter aan uw behoeften voldoen, blijven ze volledig ondersteund en geldige opties voor uw project.
 
 ## Tutorials
 
@@ -67,12 +67,12 @@ Ontdek de drie benaderingen om met AEM Sites samen te werken. In de onderstaande
   {description = Explore Edge Delivery Services with comprehensive guides. The Build, Publish, and Launch guides cover everything you need to get started with Edge Delivery Services.}
   {image = ./assets/edge-delivery-services.png}
   {target = _blank}
-* https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview
   {title = Headless/API-First - Tutorials}
   {description = Learn how to build headless applications powered by AEM content. Tutorials cover frameworks like iOS, Android, and React—choose what fits your stack.}
   {image = ./assets/headless.png}
   {target = _self}
-* https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
   {title = Traditional AEM - WKND Tutorial}
   {description = Learn how to build a sample AEM Sites project using the WKND tutorial. This guide walks you through project setup, Core Components, Editable Templates, client-side libraries, and component development.}
   {image = ./assets/aem-wknd-spa-editor-tutorial.png}
@@ -107,7 +107,7 @@ Ontdek de drie benaderingen om met AEM Sites samen te werken. In de onderstaande
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/overview" title="Headless/API-First - Lesbestanden" target="_self" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview" title="Headless/API-First - Lesbestanden" target="_self" rel="referrer">
                         <img class="is-bordered-r-small" src="./assets/headless.png" alt="Headless/API-First - Lesbestanden"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -116,11 +116,11 @@ Ontdek de drie benaderingen om met AEM Sites samen te werken. In de onderstaande
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/overview" target="_self" rel="referrer" title="Headless/API-First - Lesbestanden"> Headless/API-Eerste - Leerprogramma's </a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview" target="_self" rel="referrer" title="Headless/API-First - Lesbestanden"> Headless/API-Eerste - Leerprogramma's </a>
                     </p>
                     <p class="is-size-6">Leer hoe u toepassingen zonder koppen kunt maken met AEM-inhoud. De leerprogramma's behandelen kaders zoals iOS, Android, en React-kiezen wat uw stapel past.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leer meer </span>
                 </a>
             </div>
@@ -130,7 +130,7 @@ Ontdek de drie benaderingen om met AEM Sites samen te werken. In de onderstaande
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview" title="Traditionele AEM - WKND-zelfstudie" target="_self" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview" title="Traditionele AEM - WKND-zelfstudie" target="_self" rel="referrer">
                         <img class="is-bordered-r-small" src="./assets/aem-wknd-spa-editor-tutorial.png" alt="Traditionele AEM - WKND-zelfstudie"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -139,11 +139,11 @@ Ontdek de drie benaderingen om met AEM Sites samen te werken. In de onderstaande
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview" target="_self" rel="referrer" title="Traditionele AEM - WKND-zelfstudie"> Traditionele AEM - WKND Leerprogramma </a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview" target="_self" rel="referrer" title="Traditionele AEM - WKND-zelfstudie"> Traditionele AEM - WKND Leerprogramma </a>
                     </p>
                     <p class="is-size-6">Leer hoe u een voorbeeld-AEM Sites-project maakt aan de hand van de WKND-zelfstudie. Deze gids begeleidt u door projectopstelling, de Componenten van de Kern, Bewerkbare Malplaatjes, cliënt-zijbibliotheken, en componentenontwikkeling.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leer meer </span>
                 </a>
             </div>
@@ -155,10 +155,10 @@ Ontdek de drie benaderingen om met AEM Sites samen te werken. In de onderstaande
 
 ## Aanvullende bronnen
 
-* [ AEM Sites Authoring documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/authoring/essentials/first-steps)
-* [ AEM Sites het Ontwikkelen documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/introduction/getting-started)
-* [ AEM Sites die documentatie beheren ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/administering/home)
-* [ AEM Sites die documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/introduction/platform) opstelt
+* [ AEM Sites Authoring documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/essentials/first-steps)
+* [ AEM Sites het Ontwikkelen documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/getting-started)
+* [ AEM Sites die documentatie beheren ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/home)
+* [ AEM Sites die documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/introduction/platform) opstelt
 * [AEM as a Cloud Service-zelfstudies](/help/cloud-service/overview.md)
 * [AEM Assets-zelfstudies](/help/assets/overview.md)
 * [AEM Forms-zelfstudies](/help/forms/overview.md)
