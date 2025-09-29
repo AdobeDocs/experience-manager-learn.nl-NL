@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Experience Hub is het centrale beginpunt voor het werken met Adobe Experience Manager. Het brengt alle hulpmiddelen, milieu&#39;s, en middelen samen u op één plaats nodig hebt, die het gemakkelijker maken om te navigeren, te beheren, en werk te krijgen sneller gedaan. In plaats van te schakelen tussen meerdere logins of bladwijzers, biedt Experience Hub één gestroomlijnd ingangspunt, waarmee u zich kunt blijven richten op het maken, leveren en optimaliseren van ervaringen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475246/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475252/?learn=on&enablevpops&captions=dut)
 
 Het worden begonnen is eenvoudig: ga naar [ experience.adobe.com ](https://experience.adobe.com), login met uw Adobe ID, en selecteer **Experience Manager** van het navigatiemenu. Vanaf dat moment ga je naar de Experience Hub, waar je snel toegang hebt tot alles wat je nodig hebt om met AEM te werken.
 
