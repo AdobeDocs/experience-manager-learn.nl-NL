@@ -49,7 +49,7 @@ $ mvn clean package
 
 ## AEM-artefacten implementeren met de AEM-RDE-plug-in
 
-Eerst, zorg ervoor u de [ recentste geïnstalleerde `aio` CLI module ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli) hebt.
+Eerst, zorg ervoor u de [ recentste geïnstalleerde `aio` CLI module ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli) hebt.
 
 Gebruik vervolgens de opdracht `aio aem:rde:install` om verschillende AEM-artefacten te implementeren.
 
@@ -191,7 +191,7 @@ Apache of Dispatcher config- dossiers **kunnen niet individueel** worden opgeste
    ...
    ```
 
-1. Verifieer de veranderingen plaatselijk, zie [ Looppas Dispatcher ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) voor meer details.
+1. Verifieer de veranderingen plaatselijk, zie [ Looppas Dispatcher ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) voor meer details.
 1. Stel de veranderingen in RDE op door het volgende bevel in werking te stellen:
 
    ```shell
@@ -204,7 +204,7 @@ Apache of Dispatcher config- dossiers **kunnen niet individueel** worden opgeste
 
 ### Configuratiebestanden (YAML) implementeren
 
-De CDN, onderhoudstaken, het logboek door:sturen en de configuratiedossiers van de AEM API authentificatie kunnen aan RDE worden opgesteld gebruikend het `install` bevel. Deze configuraties worden beheerd als dossiers YAML in de `config` omslag van het project van AEM, zie [ Ondersteunde Configuraties ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations) voor meer details.
+De CDN, onderhoudstaken, het logboek door:sturen en de configuratiedossiers van de AEM API authentificatie kunnen aan RDE worden opgesteld gebruikend het `install` bevel. Deze configuraties worden beheerd als dossiers YAML in de `config` omslag van het project van AEM, zie [ Ondersteunde Configuraties ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations) voor meer details.
 
 Om te leren hoe te om de configuratiedossiers op te stellen, verbeteren wij het `cdn` configuratiedossier en stellen het aan RDE op.
 
@@ -273,8 +273,8 @@ Leer over de [ ontwikkeling/de cyclus van het plaatsingsleven gebruikend RDE ](.
 
 ## Aanvullende bronnen
 
-[ RDE bevelen documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
+[ RDE bevelen documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
 
 [ Adobe I/O Runtime CLI Insteekmodule voor interactie met de Milieu&#39;s van de Snelle Ontwikkeling van AEM ](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[ de opstelling van het Project van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
+[ de opstelling van het Project van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
