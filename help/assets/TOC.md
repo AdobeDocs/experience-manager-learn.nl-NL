@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 16b106d88d51d68819470758abd536ad42b019db
+source-git-commit: 4d17b28ed67d7e5b03caa5fb57701ab7ddbcb77f
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '464'
 ht-degree: 7%
 
 ---
@@ -87,6 +87,7 @@ ht-degree: 7%
    + [Afbeeldingsvarianten met Adobe Express](./content-hub/image-variants.md)
    + [Verzamelingen](./content-hub/collections.md)
    + [Delen](./content-hub/share.md)
+   + [Toegangsbeheer op basis van kenmerken](./content-hub/attribute-based-access-control.md)
    + Gebruik hoofdletters{#use-cases}
       + [Elementen beheren](./content-hub/use-cases/manage-assets.md)
 
@@ -94,7 +95,7 @@ ht-degree: 7%
    + [Sidekick-insteekmodule](./edge-delivery-services/sidekick-plugin.md)
 
 + Adobe GenStudio{#adobe-genstudio}
-   + [ AEM Assets en GenStudio for Performance Marketing ](https://experienceleague.adobe.com/nl/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
+   + [ AEM Assets en GenStudio for Performance Marketing ](https://experienceleague.adobe.com/en/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
 
 + Delen en distributie{#sharing}
    + [Elementen downloaden](./sharing/download.md)
@@ -204,4 +205,4 @@ ht-degree: 7%
 + Implementatie{#deployment}
    + [Meerdere huurders en gelijktijdige ontwikkeling](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [ Hoofdzaak van Activa](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=nl-NL){target=_blank}
++ [ Hoofdzaak van Activa ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html){target=_blank}
