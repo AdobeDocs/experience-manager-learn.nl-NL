@@ -89,7 +89,7 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## Bronnen
 
-+ [&#x200B; de Documentatie van AEM Sitemap &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
++ [&#x200B; de Documentatie van AEM Sitemap &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=nl-NL)
 + [&#x200B; Apache Sling Sitemap documentatie &#x200B;](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
 + [&#x200B; Sitemap.org de documentatie van de Sitemap &#x200B;](https://www.sitemaps.org/protocol.html)
 + [&#x200B; Sitemap.org de documentatie van het de indexdossier van de Sitemap &#x200B;](https://www.sitemaps.org/protocol.html#index)
