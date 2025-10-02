@@ -25,10 +25,10 @@ AEM as a Cloud Service ondersteunt meerdere verificatieopties en varieert per se
 |                       | AEM-auteur | AEM Publiceren |
 |-----------------------|:----------:|:-----------:|
 | [&#x200B; IMS van Adobe &#x200B;](../accessing/overview.md) | ✔ | ✔ |
-| ・ [&#x200B; SAML 2.0 via Adobe IMS &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#how-to-set-up) | ✔ | ✔ |
+| ・ [&#x200B; SAML 2.0 via Adobe IMS &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=nl-NL#how-to-set-up) | ✔ | ✔ |
 | [&#x200B; SAML 2.0 &#x200B;](./saml-2-0.md) | ✘ | ✔ |
-| [&#x200B; enig-teken (SSO) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
-| [&#x200B; OAuth &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
+| [&#x200B; enig-teken (SSO) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html?lang=nl-NL#integration-with-an-idp) | ✘ | ✔ |
+| [&#x200B; OAuth &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html?lang=nl-NL#integration-with-an-idp) | ✘ | ✔ |
 | [&#x200B; Symbolische authentificatie &#x200B;](../../headless-tutorial/authentication/overview.md) | ✔ | ✔ |
 | Basisverificatie | ✘ | ✘ |
 
