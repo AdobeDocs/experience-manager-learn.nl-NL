@@ -12,7 +12,7 @@ last-substantial-update: 2022-10-03T00:00:00Z
 doc-type: Technical Video
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
 duration: 937
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: d2714443fa644ba17afdfbed5e6da8091425aeab
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Leer hoe u uw SEO kunt verhogen door sitemaps voor AEM Sites te maken.
 >
 >Deze video demonstreert het gebruik van relatieve URL&#39;s in de sitemap. Sitemaps [ zou absolute URLs ](https://sitemaps.org/protocol.html) moeten gebruiken. Zie [ Configuraties ](#absolute-sitemap-urls) voor hoe te om absolute URLs toe te laten, aangezien dit niet in de video hieronder wordt behandeld.
 
->[!VIDEO](https://video.tv.adobe.com/v/3454367?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
 
 ## Configuraties
 
@@ -52,7 +52,7 @@ De onderstaande schermafbeelding illustreert een vergelijkbare configuratie, maa
 
 Bepaalt de [ OSGi fabrieksconfiguratie ](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) voor de frequentie (gebruikend [ cron uitdrukkingen ](https://cron.help/)) sitemaps wordt re/geproduceerd en in het voorgeheugen ondergebracht in AEM.
 
-`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
+`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.author`
 
 ```json
 {
@@ -89,7 +89,7 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## Bronnen
 
-+ [ de Documentatie van AEM Sitemap ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=nl-NL)
++ [ de Documentatie van AEM Sitemap ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
 + [ Apache Sling Sitemap documentatie ](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
 + [ Sitemap.org de documentatie van de Sitemap ](https://www.sitemaps.org/protocol.html)
 + [ Sitemap.org de documentatie van het de indexdossier van de Sitemap ](https://www.sitemaps.org/protocol.html#index)
