@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Leer hoe te om andere oplossingen van Adobe aan de nieuwe geloofsbrieven van Server-aan-Server van OAuth van de vervangen Rekening van de Dienst (JWT) te migreren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432960/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449244/?learn=on&captions=dut)
