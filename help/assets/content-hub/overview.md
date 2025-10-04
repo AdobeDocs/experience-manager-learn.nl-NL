@@ -208,7 +208,7 @@ In deze video&#39;s worden de belangrijkste functies van AEM Assets Content Hub 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./attribute-based-access-control.md" title="Toegangsbeheer op basis van kenmerken" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475413/?format=jpeg&nocache=1759339175804" alt="Toegangsbeheer op basis van kenmerken"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475420/?format=jpeg&nocache=1759339175804&captions=dut" alt="Toegangsbeheer op basis van kenmerken"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

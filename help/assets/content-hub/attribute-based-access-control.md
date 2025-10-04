@@ -22,6 +22,6 @@ ht-degree: 0%
 
 Leer hoe u de toegang tot elementen in AEM Assets Content Hhub instelt en beheert met behulp van attribuut-based access control (ABAC).
 
->[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475420/?learn=on&enablevpops&captions=dut)
 
 [&#x200B; Download het op attribuut-gebaseerde spreadsheet van de toegangsbeheerdefinitie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control) van de op Attribuut-Gebaseerde de toegangsbeheerdocumentatie van AEM Assets Content Hub.
