@@ -47,7 +47,7 @@ Nadat alle formulieren in het pakket zijn ingevuld en ondertekend, moeten we het
 
 ## Assets
 
-De steekproefvormen met inbegrip van het gebruikte in dit leerprogramma kunnen [ van hier worden gedownload ](assets/forms-for-signing.zip)
+De steekproefvormen met inbegrip van het gebruikte in dit leerprogramma kunnen [&#x200B; van hier worden gedownload &#x200B;](assets/forms-for-signing.zip)
 
 ## Volgende stappen
 

@@ -27,12 +27,12 @@ Dit artikel helpt u variaties van de knopcomponent te maken en de variaties in u
 De schermafbeelding toont de twee stijlvariaties voor de knopcomponent die beschikbaar zijn voor de auteur van het formulier.
 
 
-![ knoop-variaties ](assets/button-variations.png)
+![&#x200B; knoop-variaties &#x200B;](assets/button-variations.png)
 
 ## Vereisten
 
 * AEM Forms Cloud Ready-instantie met kerncomponenten.
-* Een thema klonen: u moet vertrouwd zijn met het klonen van een thema. Voor dit leerprogramma hebben wij het [ e-mailthema ](https://github.com/adobe/aem-forms-theme-easel) gekloond. U kunt elk beschikbaar thema naar wens klonen.
+* Een thema klonen: u moet vertrouwd zijn met het klonen van een thema. Voor dit leerprogramma hebben wij het [&#x200B; e-mailthema &#x200B;](https://github.com/adobe/aem-forms-theme-easel) gekloond. U kunt elk beschikbaar thema naar wens klonen.
 
 * Installeer de nieuwste versie van Apache Maven. Apache Maven is een tool voor automatisering van build die veel wordt gebruikt voor Java™-projecten. De installatie van de recentste versie verzekert u de noodzakelijke gebiedsdelen voor themaaanpassing.
 * Installeer een teksteditor zonder opmaak. Bijvoorbeeld Microsoft® Visual Studio Code. Het gebruiken van een gewone tekstredacteur zoals de Code van Microsoft® Visual Studio verstrekt een gebruikersvriendelijk milieu voor het uitgeven en het wijzigen van themadossiers.

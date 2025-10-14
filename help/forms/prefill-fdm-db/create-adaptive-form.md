@@ -47,7 +47,7 @@ De eerste stap bestaat uit het koppelen van de vooraf ingevulde service voor het
 * Selecteer _de ModelVooraf ingevulde dienst van de Gegevens van de Vorm_ van de Prefill drop-down lijst van de Dienst
 * Klik op blauwe ☑ om uw wijzigingen op te slaan
 
-* ![ prefill-service ](assets/fdm-prefill.png)
+* ![&#x200B; prefill-service &#x200B;](assets/fdm-prefill.png)
 
 ## Werknemersgegevens configureren
 
@@ -73,7 +73,7 @@ De volgende stap is de begunstigden van de werknemer in tabelvorm te tonen. Het 
 * Plaats de Bindverwijzing aan **/newhire/GetEmployeeBeneficiaries**
 * Stel Herhalingsinstellingen - Minimum aantal in op 1 en Maximum aantal op 5.
 * Uw configuratie Row1 zou als het scherm moeten kijken dat hieronder wordt ontsproten
-  ![ rij-vormt ](assets/configure-row.PNG)
+  ![&#x200B; rij-vormt &#x200B;](assets/configure-row.PNG)
 * Klik op de blauwe ☑ om uw wijzigingen op te slaan
 
 ## Rijcellen binden
@@ -95,8 +95,8 @@ Tot slot moeten wij de cellen van de Rij aan de Modelelementen van de Gegevens v
 ## Uw formulier testen
 
 We moeten het formulier nu openen met de juiste empID in de URL. De volgende twee koppelingen vullen formulieren met informatie uit de database
-[ Vorm met empID=207 ](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)
-[ Vorm met empID=208 ](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
+[&#x200B; Vorm met empID=207 &#x200B;](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)
+[&#x200B; Vorm met empID=208 &#x200B;](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
 
 ## Problemen oplossen
 

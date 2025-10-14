@@ -47,7 +47,7 @@ Ga als volgt te werk om lettertypen aan te passen door het bestand tbxeditor-con
 
       `/libs/fd/cm/config`
 
-      ![ knoop van de Bedekking ](assets/overlay.png)
+      ![&#x200B; knoop van de Bedekking &#x200B;](assets/overlay.png)
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
@@ -57,7 +57,7 @@ Ga als volgt te werk om lettertypen aan te passen door het bestand tbxeditor-con
 
       **de Types van Knoop van de Gelijke:** Geselecteerd
 
-      ![ knoop van de Bedekking ](assets/overlay1.png)
+      ![&#x200B; knoop van de Bedekking &#x200B;](assets/overlay1.png)
 
    1. Klik **OK**. De mapstructuur wordt gemaakt in de map apps.
 
@@ -168,7 +168,7 @@ Ga als volgt te werk om lettertypen aan te passen door het bestand tbxeditor-con
       * Standaardwaarden van lettertypefamilie en -grootte, hoogte, letterspatiëring en datumnotatie
       * Opsommingstekens
 
-      Als u bijvoorbeeld een Japans lettertype met de naam Sazanami Mincho Medium wilt toevoegen, moet u de volgende vermelding in het XML-bestand opnemen: `<font>Sazanami Mincho Medium</font>` . Dit lettertype moet ook op de clientcomputer zijn geïnstalleerd om het lettertype te kunnen aanpassen en er toegang toe te hebben. Voor meer informatie, zie [ douanedoopvonten aan de cliëntcomputer ](#addcustomfonts) toevoegen.
+      Als u bijvoorbeeld een Japans lettertype met de naam Sazanami Mincho Medium wilt toevoegen, moet u de volgende vermelding in het XML-bestand opnemen: `<font>Sazanami Mincho Medium</font>` . Dit lettertype moet ook op de clientcomputer zijn geïnstalleerd om het lettertype te kunnen aanpassen en er toegang toe te hebben. Voor meer informatie, zie [&#x200B; douanedoopvonten aan de cliëntcomputer &#x200B;](#addcustomfonts) toevoegen.
 
       U kunt ook de standaardinstellingen voor verschillende aspecten van tekst wijzigen en de lettertypen uit de teksteditor verwijderen door de items te verwijderen.
 
@@ -180,16 +180,16 @@ Wanneer u tot een doopvont in de Interactieve Communicatie tekstredacteur toegan
 
 Raadpleeg de volgende secties voor meer informatie over het installeren van lettertypen:
 
-* [ installeer of desinstalleer doopvonten op Vensters ](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
-* [ Basisbeginselen van Mac: Boek van de Doopvont ](https://support.apple.com/en-us/HT201749)
+* [&#x200B; installeer of desinstalleer doopvonten op Vensters &#x200B;](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
+* [&#x200B; Basisbeginselen van Mac: Boek van de Doopvont &#x200B;](https://support.apple.com/en-us/HT201749)
 
 ## Lettertypeaanpassingen openen {#access-font-customizations}
 
 Nadat u wijzigingen hebt aangebracht in de lettertypen in het bestand tbxeditor-config.xml in CRX en de vereiste lettertypen hebt geïnstalleerd op de clientcomputer die wordt gebruikt voor toegang tot AEM Forms, worden de wijzigingen weergegeven in de teksteditor.
 
-Bijvoorbeeld, de doopvont van Sazanami Mincho Medium die in [ wordt toegevoegd past doopvonten aan door het tbxeditor-config.xml- dossier in CRX uit te geven ](#customizefonts) procedure verschijnt in de tekstredacteur UI als volgt:
+Bijvoorbeeld, de doopvont van Sazanami Mincho Medium die in [&#x200B; wordt toegevoegd past doopvonten aan door het tbxeditor-config.xml- dossier in CRX uit te geven &#x200B;](#customizefonts) procedure verschijnt in de tekstredacteur UI als volgt:
 
-![ sazanamiminchointext ](assets/sazanamiminchointext.png)
+![&#x200B; sazanamiminchointext &#x200B;](assets/sazanamiminchointext.png)
 
 >[!NOTE]
 >

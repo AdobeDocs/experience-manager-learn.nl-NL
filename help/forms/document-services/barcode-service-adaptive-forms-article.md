@@ -140,10 +140,10 @@ Regel 23 - Roep de methode DocumentServices extractBarCode aan om het JSON-objec
 
 Voer de volgende stappen uit om dit op uw systeem uit te voeren:
 
-1. [ Download BarcodeService.zip ](assets/barcodeservice.zip) en de invoer in AEM gebruikend pakketmanager
+1. [&#x200B; Download BarcodeService.zip &#x200B;](assets/barcodeservice.zip) en de invoer in AEM gebruikend pakketmanager
 1. [De aangepaste DocumentServices-bundel downloaden en installeren](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Download en installeer de DevelopingWithServiceUser Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Het voorbeeld van het PDF-formulier downloaden](assets/barcode.pdf)
-1. Punt uw browser aan de [ steekproef adaptieve vorm ](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
+1. Punt uw browser aan de [&#x200B; steekproef adaptieve vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
 1. Upload het voorbeeld dat PDF heeft opgegeven
 1. De formulieren worden gevuld met gegevens

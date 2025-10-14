@@ -34,7 +34,7 @@ Een lokale ontwikkelomgeving instellen voor ontwikkeling voor Edge Delivery Serv
    $ sudo npm install -g @adobe/aem-cli
    ```
 
-1. De folder van de verandering aan uw projectfolder die een git bewaarplaats is die van het [ AEM boilerplate ](https://github.com/adobe/aem-boilerplate) malplaatje wordt gemaakt.
+1. De folder van de verandering aan uw projectfolder die een git bewaarplaats is die van het [&#x200B; AEM boilerplate &#x200B;](https://github.com/adobe/aem-boilerplate) malplaatje wordt gemaakt.
 
    ```
    $ git clone git@github.com:my-org/my-project.git

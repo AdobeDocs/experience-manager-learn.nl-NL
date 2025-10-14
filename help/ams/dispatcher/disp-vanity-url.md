@@ -50,15 +50,15 @@ De auteurs kunnen _Redirect van de Vanheid URL_ checkbox ook selecteren wanneer 
 
 #### Aanraakinterface:
 
-![ drop-down dialoogmenu voor AEM authoring UI op het scherm van de plaatsredacteur ](assets/disp-vanity-url/aem-page-properties-drop-down.png " aem-page-properties-drop-down ")
+![&#x200B; drop-down dialoogmenu voor AEM authoring UI op het scherm van de plaatsredacteur &#x200B;](assets/disp-vanity-url/aem-page-properties-drop-down.png " aem-page-properties-drop-down ")
 
-![ naam pagina eigenschappen de pagina van de de dialoog pagina ](assets/disp-vanity-url/aem-page-properties.png " a-page-properties ")
+![&#x200B; naam pagina eigenschappen de pagina van de de dialoog pagina &#x200B;](assets/disp-vanity-url/aem-page-properties.png " a-page-properties ")
 
 #### Klassieke inhoudszoeker:
 
-![ AEM siteAdmin klassieke ui sidekick paginaeigenschappen ](assets/disp-vanity-url/aem-page-properties-sidekick.png " aem-page-properties-sidekick ")
+![&#x200B; AEM siteAdmin klassieke ui sidekick paginaeigenschappen &#x200B;](assets/disp-vanity-url/aem-page-properties-sidekick.png " aem-page-properties-sidekick ")
 
-![ Klassieke UI de paginaeigenschappen dialoogdoos ](assets/disp-vanity-url/aem-page-properties-classic.png " aem-pagina-eigenschappen-klassieke ")
+![&#x200B; Klassieke UI de paginaeigenschappen dialoogdoos &#x200B;](assets/disp-vanity-url/aem-page-properties-classic.png " aem-pagina-eigenschappen-klassieke ")
 
 
 >[!NOTE]
@@ -73,7 +73,7 @@ Elk ijdelingitem is een sling map-item voor een interne omleiding.
 De kaarten zijn zichtbaar door de AEM instances Felix console te bezoeken ( `/system/console/jcrresolver` )
 
 Hier volgt een schermafbeelding van een kaartitem dat is gemaakt door een ijdelingvermelding:
-![ consolescherm van een ijdelheidsingang in het middel die regels ](assets/disp-vanity-url/vanity-resource-resolver-entry.png " oplossen vanity-middel-resolver-ingang ")
+![&#x200B; consolescherm van een ijdelheidsingang in het middel die regels &#x200B;](assets/disp-vanity-url/vanity-resource-resolver-entry.png " oplossen vanity-middel-resolver-ingang ")
 
 In het bovenstaande voorbeeld wanneer we de AEM-instantie vragen `/aboutus` te bezoeken, wordt het omgezet in `/content/we-retail/us/en/about-us.html`
 
@@ -87,7 +87,7 @@ Hier ziet u de rub, ijdelheid-URL&#39;s die zich bevinden in de basismap van `/`
 
 Eenvoudige Dispatcher heeft een mechanisme voor automatisch filteren. U moet een AEM-pakket installeren en vervolgens de Dispatcher zodanig configureren dat deze naar die pakketpagina wijst.
 
-[ https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components)
+[&#x200B; https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components)
 
 Dispatcher heeft een configuratiesectie in zijn landbouwbedrijfdossier:
 
@@ -120,7 +120,7 @@ De cache van de reactie wordt opgeslagen in het argument `/file` , dus in dit vo
 
 Dus als u de AEM-instantie op de URI bezoekt, ziet u wat deze ophaalt:
 
-![ het schermschot van de inhoud die van /libs/granite/dispatcher/content/vanityUrls.html ](assets/disp-vanity-url/vanity-url-component.png " wordt teruggegeven vanity-url-component ")
+![&#x200B; het schermschot van de inhoud die van /libs/granite/dispatcher/content/vanityUrls.html &#x200B;](assets/disp-vanity-url/vanity-url-component.png " wordt teruggegeven vanity-url-component ")
 
 Het is letterlijk een lijst, super simpel
 

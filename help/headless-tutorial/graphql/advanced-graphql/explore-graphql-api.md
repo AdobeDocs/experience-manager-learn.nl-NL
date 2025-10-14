@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # De AEM GraphQL API verkennen
 
-Met de GraphQL API in AEM kunt u gegevens van inhoudsfragmenten toegankelijk maken voor downstreamtoepassingen. In het basisleerprogramma [ multi-step zelfstudie van GraphQL ](../multi-step/explore-graphql-api.md), gebruikte u de Ontdekkingsreiziger GraphiQL om de vragen van GraphQL te testen en te raffineren.
+Met de GraphQL API in AEM kunt u gegevens van inhoudsfragmenten toegankelijk maken voor downstreamtoepassingen. In het basisleerprogramma [&#x200B; multi-step zelfstudie van GraphQL &#x200B;](../multi-step/explore-graphql-api.md), gebruikte u de Ontdekkingsreiziger GraphiQL om de vragen van GraphQL te testen en te raffineren.
 
-In dit hoofdstuk, gebruikt u de Ontdekkingsreiziger GraphiQL om geavanceerdere vragen te bepalen om gegevens van de Fragmenten van de Inhoud te verzamelen die u in het [ vorige hoofdstuk ](../advanced-graphql/author-content-fragments.md) creeerde.
+In dit hoofdstuk, gebruikt u de Ontdekkingsreiziger GraphiQL om geavanceerdere vragen te bepalen om gegevens van de Fragmenten van de Inhoud te verzamelen die u in het [&#x200B; vorige hoofdstuk &#x200B;](../advanced-graphql/author-content-fragments.md) creeerde.
 
 ## Vereisten {#prerequisites}
 
@@ -44,24 +44,24 @@ Verken vervolgens de kracht van de AEM GraphQL API met behulp van de ingebouwde 
 
 1. Van het scherm van het Begin van AEM, navigeer aan **Hulpmiddelen** > **Algemeen** > **de Redacteur van de Vraag van GraphQL**.
 
-   ![ navigeer aan GrahiQL winde ](assets/explore-graphql-api/navigate-graphql-query-editor.png)
+   ![&#x200B; navigeer aan GrahiQL winde &#x200B;](assets/explore-graphql-api/navigate-graphql-query-editor.png)
 
 >[!IMPORTANT]
 >
->In, moeten sommige versies van AEM (6.X.X) de Ontdekkingsreiziger GraphiQL (alias GrahiQL winde) hulpmiddel manueel worden geïnstalleerd, [ instructie van hier volgen ](../how-to/install-graphiql-aem-6-5.md).
+>In, moeten sommige versies van AEM (6.X.X) de Ontdekkingsreiziger GraphiQL (alias GrahiQL winde) hulpmiddel manueel worden geïnstalleerd, [&#x200B; instructie van hier volgen &#x200B;](../how-to/install-graphiql-aem-6-5.md).
 
 1. In de hoger-juiste hoek, zorg ervoor dat het Eindpunt aan **WKND Gedeeld Eindpunt** wordt geplaatst. Het veranderen van de _drop-down waarde van het Eindpunt_ toont hier de bestaande _Gepersisteerde Vragen_ in de top-left hoek.
 
-   ![ plaats GraphQL Eindpunt ](assets/explore-graphql-api/set-wknd-shared-endpoint.png)
+   ![&#x200B; plaats GraphQL Eindpunt &#x200B;](assets/explore-graphql-api/set-wknd-shared-endpoint.png)
 
 Dit zal werkingsgebied alle vragen aan modellen die in het **Gedeelde WKND** project worden gecreeerd.
 
 
 ## Een lijst met inhoudsfragmenten filteren met behulp van queryvariabelen
 
-In het vorige [ multi-step GraphQL leerprogramma ](../multi-step/explore-graphql-api.md), bepaalde u, en gebruikte, fundamentele voortgeduurde vragen om de gegevens van Fragments van de Inhoud te krijgen. Hier, breidt u deze kennis uit en de gegevens van de Fragmenten van de filterinhoud door variabelen tot de persisted query over te gaan.
+In het vorige [&#x200B; multi-step GraphQL leerprogramma &#x200B;](../multi-step/explore-graphql-api.md), bepaalde u, en gebruikte, fundamentele voortgeduurde vragen om de gegevens van Fragments van de Inhoud te krijgen. Hier, breidt u deze kennis uit en de gegevens van de Fragmenten van de filterinhoud door variabelen tot de persisted query over te gaan.
 
-Wanneer het ontwikkelen van cliënttoepassingen, gewoonlijk moet u de Fragmenten van de Inhoud filtreren die op dynamische argumenten worden gebaseerd. Met de AEM GraphQL-API kunt u deze argumenten doorgeven als variabelen in een query om te voorkomen dat tekenreeksconstructies op de client worden uitgevoerd. Voor meer informatie over de variabelen van GraphQL, zie de [ documentatie van GraphQL ](https://graphql.org/learn/queries/#variables).
+Wanneer het ontwikkelen van cliënttoepassingen, gewoonlijk moet u de Fragmenten van de Inhoud filtreren die op dynamische argumenten worden gebaseerd. Met de AEM GraphQL-API kunt u deze argumenten doorgeven als variabelen in een query om te voorkomen dat tekenreeksconstructies op de client worden uitgevoerd. Voor meer informatie over de variabelen van GraphQL, zie de [&#x200B; documentatie van GraphQL &#x200B;](https://graphql.org/learn/queries/#variables).
 
 Voor dit voorbeeld, vraag alle Instructeurs die een bepaalde vaardigheid hebben.
 
@@ -147,7 +147,7 @@ Voor dit voorbeeld, vraag alle Instructeurs die een bepaalde vaardigheid hebben.
 
 Druk de **knoop van het Spel** in het hoogste menu om de vraag uit te voeren. De resultaten van de inhoudsfragmenten uit het vorige hoofdstuk worden weergegeven:
 
-![ Persoon door de Resultaten van de Vaardigheid ](assets/explore-graphql-api/person-by-skill.png)
+![&#x200B; Persoon door de Resultaten van de Vaardigheid &#x200B;](assets/explore-graphql-api/person-by-skill.png)
 
 ## Filter voor inhoud binnen een fragmentverwijzing
 
@@ -349,9 +349,9 @@ Met de AEM GraphQL API kunt u zoeken naar inhoud en fragmentverwijzingen binnen 
 
 ## Query uitvoeren met instructies
 
-Soms moet u bij het ontwikkelen van clienttoepassingen de structuur van uw query&#39;s voorwaardelijk wijzigen. In dit geval kunt u met de AEM GraphQL API GraphQL-instructies gebruiken om het gedrag van uw query&#39;s te wijzigen op basis van de opgegeven criteria. Voor meer informatie over de richtlijnen van GraphQL, zie de [ documentatie van GraphQL ](https://graphql.org/learn/queries/#directives).
+Soms moet u bij het ontwikkelen van clienttoepassingen de structuur van uw query&#39;s voorwaardelijk wijzigen. In dit geval kunt u met de AEM GraphQL API GraphQL-instructies gebruiken om het gedrag van uw query&#39;s te wijzigen op basis van de opgegeven criteria. Voor meer informatie over de richtlijnen van GraphQL, zie de [&#x200B; documentatie van GraphQL &#x200B;](https://graphql.org/learn/queries/#directives).
 
-In de [ vorige sectie ](#query-rte-reference), leerde u hoe te voor gealigneerde verwijzingen binnen multi-line tekstgebieden vragen. De inhoud is opgehaald uit het `description` -veld in de `plaintext` -indeling. Vervolgens vouwen we die query uit en gebruiken we een instructie om `description` ook voorwaardelijk op te halen in de `json` -indeling.
+In de [&#x200B; vorige sectie &#x200B;](#query-rte-reference), leerde u hoe te voor gealigneerde verwijzingen binnen multi-line tekstgebieden vragen. De inhoud is opgehaald uit het `description` -veld in de `plaintext` -indeling. Vervolgens vouwen we die query uit en gebruiken we een instructie om `description` ook voorwaardelijk op te halen in de `json` -indeling.
 
 1. In GrahiQL winde, kleef de volgende vraag in het linkerpaneel:
 
@@ -409,7 +409,7 @@ In de [ vorige sectie ](#query-rte-reference), leerde u hoe te voor gealigneerde
    }
    ```
 
-1. Voer de vraag uit. U zou het zelfde resultaat zoals in de vorige sectie op [ moeten krijgen hoe te om voor gealigneerde verwijzingen binnen multi-line tekstgebieden ](#query-rte-reference) te vragen.
+1. Voer de vraag uit. U zou het zelfde resultaat zoals in de vorige sectie op [&#x200B; moeten krijgen hoe te om voor gealigneerde verwijzingen binnen multi-line tekstgebieden &#x200B;](#query-rte-reference) te vragen.
 
 1. Werk de aanwijzing `includeJson` bij naar `true` en voer de query opnieuw uit. Het resultaat moet er ongeveer als volgt uitzien:
 
@@ -726,4 +726,4 @@ Gefeliciteerd! U hebt nu geavanceerde query&#39;s getest om gegevens te verzamel
 
 ## Volgende stappen
 
-In het [ volgende hoofdstuk ](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md), zult u leren hoe te om de vragen van GraphQL voort te zetten en waarom het beste praktijken is om voortgeduurde vragen in uw toepassingen te gebruiken.
+In het [&#x200B; volgende hoofdstuk &#x200B;](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md), zult u leren hoe te om de vragen van GraphQL voort te zetten en waarom het beste praktijken is om voortgeduurde vragen in uw toepassingen te gebruiken.

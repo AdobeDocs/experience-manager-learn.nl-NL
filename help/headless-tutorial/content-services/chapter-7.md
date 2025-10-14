@@ -23,7 +23,7 @@ Hoofdstuk 7 van de zelfstudie gebruikt een native Android Mobile-app om inhoud v
 
 Dit leerprogramma gebruikt a **eenvoudige inheemse Android Mobile App** om de inhoud van de Gebeurtenis te verbruiken en te tonen die door AEM Diensten van de Inhoud wordt blootgesteld.
 
-Het gebruik van [ Android ](https://developer.android.com/) is grotendeels onbelangrijk, en de het verbruiken mobiele app zou in om het even welk kader voor om het even welk mobiel platform, bijvoorbeeld iOS kunnen worden geschreven.
+Het gebruik van [&#x200B; Android &#x200B;](https://developer.android.com/) is grotendeels onbelangrijk, en de het verbruiken mobiele app zou in om het even welk kader voor om het even welk mobiel platform, bijvoorbeeld iOS kunnen worden geschreven.
 
 Android wordt gebruikt voor zelfstudie omdat een Android Emulator in Windows, macOs en Linux kan worden uitgevoerd en omdat het populair is en kan worden geschreven als Java, een taal die AEM ontwikkelaars goed begrijpen.
 
@@ -31,7 +31,7 @@ Android wordt gebruikt voor zelfstudie omdat een Android Emulator in Windows, ma
 
 ### De manier waarop AEM Content Services de Mobile App Experience
 
-![ Mobiele Toepassing aan de Afbeelding van de Diensten van de Inhoud ](assets/chapter-7/content-services-mapping.png)
+![&#x200B; Mobiele Toepassing aan de Afbeelding van de Diensten van de Inhoud &#x200B;](assets/chapter-7/content-services-mapping.png)
 
 1. Het **embleem** zoals die door de [!DNL Events API] component van het Beeld van de pagina **&#x200B;**&#x200B;wordt bepaald.
 1. De **markeringslijn** zoals bepaald op de [!DNL Events API] component van de Tekst van de pagina **&#x200B;**.
@@ -49,8 +49,8 @@ Als AEM Publish niet op **http://localhost:4503** in werking wordt gesteld kunne
 
 ## De mobiele toepassing lokaal uitvoeren
 
-1. Download en installeer de [ Studio van Android ](https://developer.android.com/studio/install) om de Mededinger van Android te installeren.
-1. **Download** het dossier van Android [!DNL APK] [ GitHub > Assets > wknd-mobile.x.x.xapk ](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
+1. Download en installeer de [&#x200B; Studio van Android &#x200B;](https://developer.android.com/studio/install) om de Mededinger van Android te installeren.
+1. **Download** het dossier van Android [!DNL APK] [&#x200B; GitHub > Assets > wknd-mobile.x.x.xapk &#x200B;](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
 1. Open **de Studio van Android**
    * Bij de eerste keer dat Android Studio wordt gestart, verschijnt de vraag om [!DNL Android SDK] te installeren. Accepteer de standaardinstellingen en voltooi de installatie.
 1. Open Android Studio en selecteer **Profiel of zuivert APK**
@@ -159,7 +159,7 @@ public class LogoViewBinder implements ViewBinder {
 
 De eerste lijn van `bind(...)` navigeert onderaan de Reactie JSON via de sleutels **:punten → wortel → :items** die de AEM Container van de Lay-out vertegenwoordigt de componenten werden toegevoegd aan.
 
-Van hier wordt een controle gemaakt voor een zeer belangrijke genoemd **beeld**, dat de component van het Beeld vertegenwoordigt (opnieuw, is het belangrijk deze knoopnaam → sleutel JSON stabiel). Als dit voorwerp bestaat, leest het en in kaart gebracht aan [ POJO van het douanebeeld ](#image-pojo) via de bibliotheek van het Jackson `ObjectMapper`. De POJO van de afbeelding wordt hieronder besproken.
+Van hier wordt een controle gemaakt voor een zeer belangrijke genoemd **beeld**, dat de component van het Beeld vertegenwoordigt (opnieuw, is het belangrijk deze knoopnaam → sleutel JSON stabiel). Als dit voorwerp bestaat, leest het en in kaart gebracht aan [&#x200B; POJO van het douanebeeld &#x200B;](#image-pojo) via de bibliotheek van het Jackson `ObjectMapper`. De POJO van de afbeelding wordt hieronder besproken.
 
 Ten slotte wordt het logo `src` in de Android ImageView geladen met behulp van de [!DNL Glide] hulplijnbibliotheek.
 
@@ -167,7 +167,7 @@ U ziet dat we het AEM schema, de host en de poort (via `aemHost`) aan de AEM Pub
 
 #### De afbeeldingspo{#image-pojo}
 
-Terwijl facultatief, het gebruik van [ Jackson ObjectMapper ](https://fasterxml.github.io/jackson-databind/javadoc/2.9/com/fasterxml/jackson/databind/ObjectMapper.html) of gelijkaardige mogelijkheden die door andere bibliotheken zoals Gson worden verstrekt, helpt complexe structuren JSON aan POJOs van Java in kaart te brengen zonder het middel om direct met de inheemse JSON voorwerpen zelf te behandelen. In dit eenvoudige geval wijzen we de `src` -toets van het `image` JSON-object rechtstreeks via de `@JSONProperty` -annotatie toe aan het `src` -kenmerk in de afbeeldingspo.
+Terwijl facultatief, het gebruik van [&#x200B; Jackson ObjectMapper &#x200B;](https://fasterxml.github.io/jackson-databind/javadoc/2.9/com/fasterxml/jackson/databind/ObjectMapper.html) of gelijkaardige mogelijkheden die door andere bibliotheken zoals Gson worden verstrekt, helpt complexe structuren JSON aan POJOs van Java in kaart te brengen zonder het middel om direct met de inheemse JSON voorwerpen zelf te behandelen. In dit eenvoudige geval wijzen we de `src` -toets van het `image` JSON-object rechtstreeks via de `@JSONProperty` -annotatie toe aan het `src` -kenmerk in de afbeeldingspo.
 
 ```
 package com.adobe.aem.guides.wknd.mobile.android.models;
@@ -202,8 +202,8 @@ Na elke stap vernieuwt u de Mobile-app en controleert u de update van de mobiele
 
 Voor meer informatie over AEM Content Services en AEM als een Headless CMS raadpleegt u de andere documentatie en materialen voor activering van de Adobe:
 
-* [ Gebruikend Inhoudsfragmenten ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=nl-NL)
-* [ AEM WCM de Gids van de Gebruiker van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
-* [ AEM WCM de Bibliotheek van de Component van de Kern van Componenten ](https://opensource.adobe.com/aem-core-wcm-components/library.html)
-* [ AEM het Project van GitHub van de Componenten van de Kern WCM ](https://github.com/adobe/aem-core-wcm-components)
-* [ Steekproef van de Code van de Exporteur van de Component ](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/models/SampleComponentExporter.java)
+* [&#x200B; Gebruikend Inhoudsfragmenten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=nl-NL)
+* [&#x200B; AEM WCM de Gids van de Gebruiker van de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+* [&#x200B; AEM WCM de Bibliotheek van de Component van de Kern van Componenten &#x200B;](https://opensource.adobe.com/aem-core-wcm-components/library.html)
+* [&#x200B; AEM het Project van GitHub van de Componenten van de Kern WCM &#x200B;](https://github.com/adobe/aem-core-wcm-components)
+* [&#x200B; Steekproef van de Code van de Exporteur van de Component &#x200B;](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/models/SampleComponentExporter.java)

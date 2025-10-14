@@ -22,8 +22,8 @@ Meer informatie over het ontwikkelen met Output en Forms Service API in AEM Form
 
 In dit artikel zullen we het volgende bekijken:
 
-* [ de Dienst van de Output ](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) - typisch wordt deze dienst gebruikt om xml- gegevens met xdp malplaatje of pdf samen te voegen om samengevoegde pdf te produceren.
-* [ FormsService ](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html) - dit is de zeer veelzijdige dienst die u toestaat om xdp als pdf en uitvoer/invoergegevens van en in het dossier van PDF terug te geven.
+* [&#x200B; de Dienst van de Output &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) - typisch wordt deze dienst gebruikt om xml- gegevens met xdp malplaatje of pdf samen te voegen om samengevoegde pdf te produceren.
+* [&#x200B; FormsService &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html) - dit is de zeer veelzijdige dienst die u toestaat om xdp als pdf en uitvoer/invoergegevens van en in het dossier van PDF terug te geven.
 
 
 Het volgende codefragment exporteert gegevens uit het PDF-bestand
@@ -55,7 +55,7 @@ Regel 6 exporteert xmlData uit het PDF-bestand
 **nadat u het pakket installeert zult u volgende URLs in de Filter van Adobe moeten lijsten van gewenste personen Granite CSRF.**
 
 1. Volg de onderstaande stappen om de hierboven vermelde paden te lijsten van gewenste personen.
-1. [ Login aan configMgr ](http://localhost:4502/system/console/configMgr)
+1. [&#x200B; Login aan configMgr &#x200B;](http://localhost:4502/system/console/configMgr)
 1. Zoeken naar Adobe Granite CSRF-filter
 1. Voeg de volgende drie paden toe aan de uitgesloten secties en sla deze op
 1. /content/AemFormsSamples/mergedata

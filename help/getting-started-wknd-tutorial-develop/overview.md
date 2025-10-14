@@ -46,27 +46,27 @@ Er zijn twee basisbenaderingen voor het starten van een AEM Sites-project.
 
 ## Adobe XD UI-kit
 
-Om dit leerprogramma dichter aan een werkelijk-wereldscenario te maken Adobe getalenteerde ontwerpers van UX creeerde de modellen voor de plaats gebruikend [ Adobe XD ](https://www.adobe.com/products/xd.html). In de loop van de zelfstudie worden verschillende onderdelen van de ontwerpen geïmplementeerd in een volledig ontwikkelbare AEM-site. Speciale dank aan **Lorenzo Buosi** en **Kilian Amendola** die het mooie ontwerp voor de plaats WKND creeerde.
+Om dit leerprogramma dichter aan een werkelijk-wereldscenario te maken Adobe getalenteerde ontwerpers van UX creeerde de modellen voor de plaats gebruikend [&#x200B; Adobe XD &#x200B;](https://www.adobe.com/products/xd.html). In de loop van de zelfstudie worden verschillende onderdelen van de ontwerpen geïmplementeerd in een volledig ontwikkelbare AEM-site. Speciale dank aan **Lorenzo Buosi** en **Kilian Amendola** die het mooie ontwerp voor de plaats WKND creeerde.
 
 Download de XD UI-kits:
 
 * [UI-kit voor AEM Core Component](assets/overview/AEM-CoreComponents-UI-Kit.xd)
-* [ Kit van WKND UI ](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND.xd)
+* [&#x200B; Kit van WKND UI &#x200B;](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND.xd)
 
 ## Referentiesite {#reference-site}
 
-Een gebeëindigde versie van de Plaats WKND is ook beschikbaar als verwijzing: [ https://wknd.site/ ](https://wknd.site/)
+Een gebeëindigde versie van de Plaats WKND is ook beschikbaar als verwijzing: [&#x200B; https://wknd.site/ &#x200B;](https://wknd.site/)
 
 Het leerprogramma behandelt de belangrijkste ontwikkelingsvaardigheden nodig voor een ontwikkelaar van AEM maar zal ** niet de volledige plaats van begin tot eind bouwen. De voltooide verwijzingsplaats is een andere grote middel om meer van AEM uit de doosmogelijkheden te onderzoeken en te zien.
 
-Om de recentste code te testen alvorens in het leerprogramma te springen, download en installeer de **[recentste versie van GitHub ](https://github.com/adobe/aem-guides-wknd/releases/latest)**.
+Om de recentste code te testen alvorens in het leerprogramma te springen, download en installeer de **[recentste versie van GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd/releases/latest)**.
 
 ### Powered by Adobe Stock
 
-Vele van de beelden in de website van de Verwijzing WKND zijn van [ Adobe Stock ](https://stock.adobe.com/) en zijn het Materiaal van de Derde zoals die in de Aanvullende Termen van de Activa van de Demo in [ https://www.adobe.com/legal/terms.html ](https://www.adobe.com/legal/terms.html) wordt bepaald. Als u een Adobe Stock-afbeelding wilt gebruiken voor andere doeleinden dan het weergeven van deze demo-website, zoals het weergeven op een website of in marketingmaterialen, kunt u een licentie aanschaffen op Adobe Stock.
+Vele van de beelden in de website van de Verwijzing WKND zijn van [&#x200B; Adobe Stock &#x200B;](https://stock.adobe.com/) en zijn het Materiaal van de Derde zoals die in de Aanvullende Termen van de Activa van de Demo in [&#x200B; https://www.adobe.com/legal/terms.html &#x200B;](https://www.adobe.com/legal/terms.html) wordt bepaald. Als u een Adobe Stock-afbeelding wilt gebruiken voor andere doeleinden dan het weergeven van deze demo-website, zoals het weergeven op een website of in marketingmaterialen, kunt u een licentie aanschaffen op Adobe Stock.
 
 Met Adobe Stock hebt u toegang tot meer dan 140 miljoen hoogwaardige, royaltyvrije afbeeldingen, zoals foto&#39;s, afbeeldingen, video&#39;s en sjablonen om uw creatieve projecten snel te starten.
 
 ## Volgende stappen {#next-steps}
 
-Waar wacht u op?! Leer hoe te [ om een nieuw project van Adobe Experience Manager te produceren gebruikend het Archetype van het Project van AEM ](./project-archetype/overview.md) of [ creeer een plaats gebruikend een Malplaatje van de Plaats ](./site-template/create-site.md).
+Waar wacht u op?! Leer hoe te [&#x200B; om een nieuw project van Adobe Experience Manager te produceren gebruikend het Archetype van het Project van AEM &#x200B;](./project-archetype/overview.md) of [&#x200B; creeer een plaats gebruikend een Malplaatje van de Plaats &#x200B;](./site-template/create-site.md).

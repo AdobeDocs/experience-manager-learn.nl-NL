@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # AEM projectstructuur
 
-Onderzoek de beste praktijken om een [ AEM Gemaakt project ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL#developing) voor AEM as a Cloud Service te structureren.
+Onderzoek de beste praktijken om een [&#x200B; AEM Gemaakt project &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL#developing) voor AEM as a Cloud Service te structureren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330557?quality=12&learn=on)

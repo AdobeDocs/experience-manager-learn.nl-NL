@@ -23,13 +23,13 @@ De AEM Headless SDK is een verzameling bibliotheken die door clients kunnen word
 
 De AEM Headless SDK is beschikbaar voor verschillende platforms:
 
-+ [ AEM Headless SDK voor cliënt-zijbrowsers (JavaScript) ](https://github.com/adobe/aem-headless-client-js)
-+ [ AEM Headless SDK voor server-side/Node.js (JavaScript) ](https://github.com/adobe/aem-headless-client-nodejs)
-+ [ AEM Headless SDK voor Java™ ](https://github.com/adobe/aem-headless-client-java)
++ [&#x200B; AEM Headless SDK voor cliënt-zijbrowsers (JavaScript) &#x200B;](https://github.com/adobe/aem-headless-client-js)
++ [&#x200B; AEM Headless SDK voor server-side/Node.js (JavaScript) &#x200B;](https://github.com/adobe/aem-headless-client-nodejs)
++ [&#x200B; AEM Headless SDK voor Java™ &#x200B;](https://github.com/adobe/aem-headless-client-java)
 
 ## Blijvende GraphQL-query&#39;s
 
-Het vragen van AEM die GraphQL gebruiken die persisted vragen (in tegenstelling tot [ cliënt-bepaalde vragen van GraphQL ](#graphl-queries)) gebruikt staat ontwikkelaars toe om een vraag (maar niet zijn resultaten) in AEM voort te zetten, en dan de vraag te verzoeken om door naam worden uitgevoerd. De aangehouden vragen zijn gelijkaardig aan het concept opgeslagen procedures in SQL gegevensbestanden.
+Het vragen van AEM die GraphQL gebruiken die persisted vragen (in tegenstelling tot [&#x200B; cliënt-bepaalde vragen van GraphQL &#x200B;](#graphl-queries)) gebruikt staat ontwikkelaars toe om een vraag (maar niet zijn resultaten) in AEM voort te zetten, en dan de vraag te verzoeken om door naam worden uitgevoerd. De aangehouden vragen zijn gelijkaardig aan het concept opgeslagen procedures in SQL gegevensbestanden.
 
 Persisted query&#39;s zijn krachtiger dan door de client gedefinieerde GraphQL query&#39;s, aangezien persisted query&#39;s worden uitgevoerd met HTTP GET, dat in cache kan worden geplaatst op de CDN- en AEM Dispatcher-lagen. Blijvende query&#39;s zijn ook van kracht, definiëren een API en ontkoppelen de noodzaak voor de ontwikkelaar om de details van elk Content Fragment Model te begrijpen.
 
@@ -39,13 +39,13 @@ Hieronder volgen voorbeelden van code voor het uitvoeren van een GraphQL-query o
 
 +++ JavaScript-voorbeeld
 
-Installeer [@adobe/aem-headless-client-js ](https://github.com/adobe/aem-headless-client-js) door het `npm install` bevel van de wortel van uw project van Node.js in werking te stellen.
+Installeer [@adobe/aem-headless-client-js &#x200B;](https://github.com/adobe/aem-headless-client-js) door het `npm install` bevel van de wortel van uw project van Node.js in werking te stellen.
 
 ```
 $ npm i @adobe/aem-headless-client-js
 ```
 
-In dit codevoorbeeld ziet u hoe u een query op AEM kunt uitvoeren met de syntaxis [@adobe/aem-headless-client-js ](https://github.com/adobe/aem-headless-client-js) npm. `async/await` AEM Headless SDK voor JavaScript steunt ook [ Promise syntaxis ](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
+In dit codevoorbeeld ziet u hoe u een query op AEM kunt uitvoeren met de syntaxis [@adobe/aem-headless-client-js &#x200B;](https://github.com/adobe/aem-headless-client-js) npm. `async/await` AEM Headless SDK voor JavaScript steunt ook [&#x200B; Promise syntaxis &#x200B;](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
 
 Deze code gaat ervan uit dat er een voortgezette query met de naam `wknd/adventureNames` is gemaakt op AEM Author en gepubliceerd naar AEM Publish.
 
@@ -90,13 +90,13 @@ let { data, errors } = executePersistedQuery('wknd-shared/adventures-by-slug', {
 
 +++ Voorbeeld van React useEffect(..)
 
-Installeer [@adobe/aem-headless-cliënt-js ](https://github.com/adobe/aem-headless-client-js) door het `npm install` bevel van de wortel van uw React project in werking te stellen.
+Installeer [@adobe/aem-headless-cliënt-js &#x200B;](https://github.com/adobe/aem-headless-client-js) door het `npm install` bevel van de wortel van uw React project in werking te stellen.
 
 ```
 $ npm i @adobe/aem-headless-client-js
 ```
 
-Dit codevoorbeeld toont hoe te om [ React useEffect (..) te gebruiken haak ](https://reactjs.org/docs/hooks-effect.html) om een asynchrone vraag aan AEM GraphQL uit te voeren.
+Dit codevoorbeeld toont hoe te om [&#x200B; React useEffect (..) te gebruiken haak &#x200B;](https://reactjs.org/docs/hooks-effect.html) om een asynchrone vraag aan AEM GraphQL uit te voeren.
 
 Het gebruik van `useEffect` om de asynchrone GraphQL-aanroep in React te maken is nuttig omdat:
 
@@ -202,7 +202,7 @@ U kunt nieuwe `useEffect` haken maken voor elke doorlopende query die de React-a
 
 ## GraphQL-query&#39;s
 
-AEM steunt cliënt-bepaalde vragen van GraphQL, nochtans is het de beste praktijken van AEM om [ voortgeduurde vragen van GraphQL ](#persisted-graphql-queries) te gebruiken.
+AEM steunt cliënt-bepaalde vragen van GraphQL, nochtans is het de beste praktijken van AEM om [&#x200B; voortgeduurde vragen van GraphQL &#x200B;](#persisted-graphql-queries) te gebruiken.
 
 ## Webpack 5+
 

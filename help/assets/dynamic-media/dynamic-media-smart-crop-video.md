@@ -26,4 +26,4 @@ Dynamische slimme uitsnijding voor media voor video houdt op intelligente wijze 
 
 >[!NOTE]
 >
->In de bovenstaande video wordt ervan uitgegaan dat uw AEM-service wordt uitgevoerd in de Dynamic Media S7-modus. [ de Instructies bij vestiging AEM met Dynamische Media kunnen hier worden gevonden.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=nl-NL)
+>In de bovenstaande video wordt ervan uitgegaan dat uw AEM-service wordt uitgevoerd in de Dynamic Media S7-modus. [&#x200B; de Instructies bij vestiging AEM met Dynamische Media kunnen hier worden gevonden.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=nl-NL)

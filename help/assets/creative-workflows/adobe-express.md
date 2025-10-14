@@ -24,4 +24,4 @@ Ontdek hoe u eenvoudig inhoud kunt maken en bewerken in Adobe Experience Manager
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444082/?learn=on&captions=dut)
 
-Ook, leer hoe te opstelling de [ inheemse integratie van AEM Assets met Adobe Express ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/integration-adobe-express/native-integration-adobe-express) om tot AEM Assets van Adobe Express foutloos toegang te hebben.
+Ook, leer hoe te opstelling de [&#x200B; inheemse integratie van AEM Assets met Adobe Express &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/integration-adobe-express/native-integration-adobe-express) om tot AEM Assets van Adobe Express foutloos toegang te hebben.

@@ -27,7 +27,7 @@ Om de voorgelegde gegevens in gegevensbestand op te slaan, zullen wij een servle
 
 We hebben een aangepaste verzending gemaakt voor de verzending van het formulier. In deze aangepaste submit&#39;s post.POST.jsp sturen we het verzoek door naar onze servlet.
 
-Om meer over douane te leren voorlegt pleas dit [ artikel ](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html) lezen
+Om meer over douane te leren voorlegt pleas dit [&#x200B; artikel &#x200B;](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html) lezen
 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,&quot;/bin/storeafsubmission&quot;,null,null);
 
@@ -137,7 +137,7 @@ public class HandleAdaptiveFormSubmission extends SlingAllMethodsServlet {
 }
 ```
 
-![ connectionpool ](assets/connectionpooled.gif)
+![&#x200B; connectionpool &#x200B;](assets/connectionpooled.gif)
 
 Volg de volgende stappen om dit systeem te laten werken
 

@@ -47,4 +47,4 @@ De functie Paginaverschil kan ook worden gebruikt om het verschil tussen blauwdr
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ de Documentatie van Diff van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/page-diff.html?lang=nl-NL)
+* [&#x200B; de Documentatie van Diff van de Pagina &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/page-diff.html?lang=nl-NL)

@@ -28,7 +28,7 @@ Voorbeelden van gebruiksgevallen voor aangepaste Resource Status Providers zijn:
 * Auteurs ervan op de hoogte stellen dat een pagina in de afgelopen 15 minuten is geactiveerd
 * Auteurs ervan in kennis stellen dat een pagina in de laatste 5 minuten is bewerkt en door wie
 
-![ overzicht van het de redacteursmiddel van AEM ](assets/sample-editor-resource-status-screenshot.png)
+![&#x200B; overzicht van het de redacteursmiddel van AEM &#x200B;](assets/sample-editor-resource-status-screenshot.png)
 
 ## Resource Status Provider Framework {#resource-status-provider-framework}
 
@@ -37,7 +37,7 @@ Wanneer het ontwikkelen van de Statussen van het douaneMiddel, wordt het ontwikk
 1. De implementatie ResourceStatusProvider, die voor het bepalen of een status wordt vereist, en de basisinformatie over de status verantwoordelijk is: titel, bericht, prioriteit, variant, pictogram, en beschikbare acties.
 2. Naar keuze, JavaScript GraniteUI die de functionaliteit van om het even welke beschikbare acties uitvoert.
 
-   ![ architectuur van de middelstatus ](assets/sample-editor-resource-status-application-architecture.png)
+   ![&#x200B; architectuur van de middelstatus &#x200B;](assets/sample-editor-resource-status-application-architecture.png)
 
 3. Het statusmiddel dat als deel van de redacteurs van de Pagina, van het Fragment van de Ervaring en van het Malplaatje wordt verstrekt wordt een type via het bezit &quot;[!DNL statusType]&quot;van middelen gegeven.
 
@@ -84,9 +84,9 @@ Wanneer het ontwikkelen van de Statussen van het douaneMiddel, wordt het ontwikk
 
 ## De code weergeven {#view-the-code}
 
-[ zie code op GitHub ](https://github.com/Adobe-Consulting-Services/acs-aem-samples/tree/master/bundle/src/main/java/com/adobe/acs/samples/resourcestatus/impl/SampleEditorResourceStatusProvider.java)
+[&#x200B; zie code op GitHub &#x200B;](https://github.com/Adobe-Consulting-Services/acs-aem-samples/tree/master/bundle/src/main/java/com/adobe/acs/samples/resourcestatus/impl/SampleEditorResourceStatusProvider.java)
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [`com.adobe.granite.resourcestatus` JavaDocs ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/resourcestatus/package-summary.html)
-* [`com.day.cq.wcm.commons.status.EditorResourceStatus` JavaDocs ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/status/EditorResourceStatus.html)
+* [`com.adobe.granite.resourcestatus` JavaDocs &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/resourcestatus/package-summary.html)
+* [`com.day.cq.wcm.commons.status.EditorResourceStatus` JavaDocs &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/status/EditorResourceStatus.html)

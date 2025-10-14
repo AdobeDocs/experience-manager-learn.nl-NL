@@ -21,11 +21,11 @@ ht-degree: 0%
 
 # AEM Sites en Adobe Analytics integreren
 
-Leer hoe te om AEM Sites en Adobe Analytics met de etikettenuitbreiding van Adobe Analytics te integreren, gebruikend de ingebouwde eigenschappen van de [ Laag van de Gegevens van de Cliënt van Adobe met de Componenten van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL) om gegevens over een pagina in Adobe Experience Manager Sites te verzamelen. [ de Markeringen in Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl-NL) en de [ uitbreiding van Adobe Analytics ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=nl-NL) worden gebruikt om regels tot stand te brengen om paginagegevens naar Adobe Analytics te verzenden.
+Leer hoe te om AEM Sites en Adobe Analytics met de etikettenuitbreiding van Adobe Analytics te integreren, gebruikend de ingebouwde eigenschappen van de [&#x200B; Laag van de Gegevens van de Cliënt van Adobe met de Componenten van de Kern van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL) om gegevens over een pagina in Adobe Experience Manager Sites te verzamelen. [&#x200B; de Markeringen in Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl-NL) en de [&#x200B; uitbreiding van Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=nl-NL) worden gebruikt om regels tot stand te brengen om paginagegevens naar Adobe Analytics te verzenden.
 
 ## Wat u gaat bouwen {#what-build}
 
-![ het Volgen van de Gegevens van de Pagina ](assets/collect-data-analytics/analytics-page-data-tracking.png)
+![&#x200B; het Volgen van de Gegevens van de Pagina &#x200B;](assets/collect-data-analytics/analytics-page-data-tracking.png)
 
 In deze zelfstudie gaat u een labelregel activeren die is gebaseerd op een gebeurtenis in de Adobe Client Data Layer. Ook, voeg voorwaarden toe voor wanneer de regel zou moeten worden in brand gestoken, en verzend dan de **Naam van de Pagina** en **waarden van het Malplaatje van de Pagina** van een Pagina van AEM aan Adobe Analytics.
 
@@ -40,44 +40,44 @@ In deze zelfstudie gaat u een labelregel activeren die is gebaseerd op een gebeu
 Hiervoor is het volgende vereist:
 
 * **bezit van de Markering** in Experience Platform
-* **Adobe Analytics** test/dev- rapportreeks identiteitskaart en volgende server. Zie de volgende documentatie voor [ het creëren van een rapportreeks ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html?lang=nl-NL).
-* [ Debugger van Experience Platform ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=nl-NL) browser uitbreiding. Screenshots in deze zelfstudie werden vastgelegd vanuit de Chrome-browser.
-* (Facultatieve) Plaats van AEM met de [ toegelaten Laag van Gegevens van de Cliënt van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL#installation-activation). Dit leerprogramma gebruikt het publiek onder ogen ziet [ WKND ](https://wknd.site/us/en.html) plaats maar u bent welkom om uw eigen plaats te gebruiken.
+* **Adobe Analytics** test/dev- rapportreeks identiteitskaart en volgende server. Zie de volgende documentatie voor [&#x200B; het creëren van een rapportreeks &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html?lang=nl-NL).
+* [&#x200B; Debugger van Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=nl-NL) browser uitbreiding. Screenshots in deze zelfstudie werden vastgelegd vanuit de Chrome-browser.
+* (Facultatieve) Plaats van AEM met de [&#x200B; toegelaten Laag van Gegevens van de Cliënt van Adobe &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL#installation-activation). Dit leerprogramma gebruikt het publiek onder ogen ziet [&#x200B; WKND &#x200B;](https://wknd.site/us/en.html) plaats maar u bent welkom om uw eigen plaats te gebruiken.
 
 >[!NOTE]
 >
-> Hebt u hulp nodig bij het integreren van de eigenschap tag en de AEM-site? [ zie deze videoreeks ](../experience-platform/data-collection/tags/overview.md).
+> Hebt u hulp nodig bij het integreren van de eigenschap tag en de AEM-site? [&#x200B; zie deze videoreeks &#x200B;](../experience-platform/data-collection/tags/overview.md).
 
 ## Omgeving van Switch-tag voor WKND-site
 
-[ WKND ](https://wknd.site/us/en.html) is een publiek-onder ogen ziet plaats die op [ wordt gebouwd een open-bronproject ](https://github.com/adobe/aem-guides-wknd) als verwijzing wordt ontworpen en [ leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) voor een implementatie van AEM.
+[&#x200B; WKND &#x200B;](https://wknd.site/us/en.html) is een publiek-onder ogen ziet plaats die op [&#x200B; wordt gebouwd een open-bronproject &#x200B;](https://github.com/adobe/aem-guides-wknd) als verwijzing wordt ontworpen en [&#x200B; leerprogramma &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) voor een implementatie van AEM.
 
-In plaats van vestiging een milieu van AEM en het installeren van de WKND codebasis, kunt u debugger van Experience Platform aan **schakelaar** de levende [ Plaats WKND ](https://wknd.site/us/en.html) aan *gebruiken uw* markeringsbezit. Nochtans, kunt u uw eigen plaats van AEM gebruiken als het reeds de [ toegelaten Laag van Gegevens van de Cliënt van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL#installation-activation) heeft.
+In plaats van vestiging een milieu van AEM en het installeren van de WKND codebasis, kunt u debugger van Experience Platform aan **schakelaar** de levende [&#x200B; Plaats WKND &#x200B;](https://wknd.site/us/en.html) aan *gebruiken uw* markeringsbezit. Nochtans, kunt u uw eigen plaats van AEM gebruiken als het reeds de [&#x200B; toegelaten Laag van Gegevens van de Cliënt van Adobe &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL#installation-activation) heeft.
 
-1. Login aan Experience Platform en [ creeer een bezit van de Markering ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=nl-NL) (als u niet reeds hebt).
-1. Zorg ervoor dat een aanvankelijke markering JavaScript [ bibliotheek ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=nl-NL#create-a-library) is gecreeerd en aan het milieu van de markering [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=nl-NL) bevorderd.
+1. Login aan Experience Platform en [&#x200B; creeer een bezit van de Markering &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=nl-NL) (als u niet reeds hebt).
+1. Zorg ervoor dat een aanvankelijke markering JavaScript [&#x200B; bibliotheek &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=nl-NL#create-a-library) is gecreeerd en aan het milieu van de markering [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=nl-NL) bevorderd.
 1. Kopieer de JavaScript-insluitcode vanuit de tagomgeving waarin uw bibliotheek is gepubliceerd.
 
-   ![ het Bezit van de Markering van het Exemplaar bedt Code ](assets/collect-data-analytics/launch-environment-copy.png) in
+   ![&#x200B; het Bezit van de Markering van het Exemplaar bedt Code &#x200B;](assets/collect-data-analytics/launch-environment-copy.png) in
 
-1. In uw browser, open een nieuw lusje en navigeer aan [ Plaats WKND ](https://wknd.site/us/en.html)
+1. In uw browser, open een nieuw lusje en navigeer aan [&#x200B; Plaats WKND &#x200B;](https://wknd.site/us/en.html)
 1. De browserextensie van Experience Platform Debugger openen
 
-   ![ Debugger van Experience Platform ](assets/collect-data-analytics/experience-platform-debugger-extension.png)
+   ![&#x200B; Debugger van Experience Platform &#x200B;](assets/collect-data-analytics/experience-platform-debugger-extension.png)
 
 1. Navigeer aan **de Markeringen van Experience Platform** > **Configuratie** en onder **Ingeworpen bed Codes** vervangen de bestaande ingebedde code met *uw* ingebedde code die van stap 3 wordt gekopieerd.
 
-   ![ vervangt bed Code ](assets/collect-data-analytics/platform-debugger-replace-embed.png) in
+   ![&#x200B; vervangt bed Code &#x200B;](assets/collect-data-analytics/platform-debugger-replace-embed.png) in
 
 1. Laat **Logging van de Console** en **Slot** debugger op het lusje van WKND toe.
 
-   ![ Logboekregistratie van de Console ](assets/collect-data-analytics/console-logging-lock-debugger.png)
+   ![&#x200B; Logboekregistratie van de Console &#x200B;](assets/collect-data-analytics/console-logging-lock-debugger.png)
 
 ## Adobe Client Data Layer op WKND-site verifiëren
 
-Het [ WKND verwijzingsproject ](https://github.com/adobe/aem-guides-wknd) wordt gebouwd met de Componenten van de Kern van AEM en heeft de [ toegelaten Laag van Gegevens van de Cliënt van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL#installation-activation) door gebrek. Controleer vervolgens of de Adobe Client Data Layer is ingeschakeld.
+Het [&#x200B; WKND verwijzingsproject &#x200B;](https://github.com/adobe/aem-guides-wknd) wordt gebouwd met de Componenten van de Kern van AEM en heeft de [&#x200B; toegelaten Laag van Gegevens van de Cliënt van Adobe &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL#installation-activation) door gebrek. Controleer vervolgens of de Adobe Client Data Layer is ingeschakeld.
 
-1. Navigeer aan [ Plaats WKND ](https://wknd.site/us/en.html).
+1. Navigeer aan [&#x200B; Plaats WKND &#x200B;](https://wknd.site/us/en.html).
 1. Open de de ontwikkelaarshulpmiddelen van browser en navigeer aan de **Console**. Voer de volgende opdracht uit:
 
    ```js
@@ -86,7 +86,7 @@ Het [ WKND verwijzingsproject ](https://github.com/adobe/aem-guides-wknd) wordt 
 
    Met de bovenstaande code wordt de huidige status van de Adobe Client Data Layer geretourneerd.
 
-   ![ de staat van de Laag van Gegevens van Adobe ](assets/collect-data-analytics/adobe-data-layer-state.png)
+   ![&#x200B; de staat van de Laag van Gegevens van Adobe &#x200B;](assets/collect-data-analytics/adobe-data-layer-state.png)
 
 1. Breid de reactie uit en inspecteer de `page` ingang. U zou een gegevensschema als het volgende moeten zien:
 
@@ -104,11 +104,11 @@ Het [ WKND verwijzingsproject ](https://github.com/adobe/aem-guides-wknd) wordt 
 
    Als u paginagegevens naar Adobe Analytics wilt verzenden, gebruiken we de standaardeigenschappen zoals `dc:title` , `xdm:language` en `xdm:template` van de gegevenslaag.
 
-   Voor meer informatie, herzie het [ Schema van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL#page) van de Schema van de Gegevens van de Componenten van de Kern.
+   Voor meer informatie, herzie het [&#x200B; Schema van de Pagina &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL#page) van de Schema van de Gegevens van de Componenten van de Kern.
 
    >[!NOTE]
    >
-   > Als u het JavaScript-object `adobeDataLayer` niet ziet? Zorg ervoor dat de [ Laag van Gegevens van de Cliënt van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL#installation-activation) op uw plaats is toegelaten.
+   > Als u het JavaScript-object `adobeDataLayer` niet ziet? Zorg ervoor dat de [&#x200B; Laag van Gegevens van de Cliënt van Adobe &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL#installation-activation) op uw plaats is toegelaten.
 
 ## Een regel maken voor het laden van pagina&#39;s
 
@@ -117,13 +117,13 @@ De Laag van Gegevens van de Cliënt van Adobe is een **gebeurtenis-gedreven** ge
 1. Navigeer naar Experience Platform en naar de tageigenschap die is geïntegreerd met de AEM-site.
 1. Navigeer aan de **sectie van Regels** in het Bezit van de Markering UI en klik dan **creeer Nieuwe Regel**.
 
-   ![ creeer Regel ](assets/collect-data-analytics/analytics-create-rule.png)
+   ![&#x200B; creeer Regel &#x200B;](assets/collect-data-analytics/analytics-create-rule.png)
 
 1. Noem de regel **Geladen Pagina**.
 1. In de **subsection van Gebeurtenissen**, voegt de klik **&#x200B;**&#x200B;toe om de **tovenaar van de Configuratie van de Gebeurtenis** te openen.
 1. Voor **het Type van Gebeurtenis** gebied, uitgezochte **Code van de Douane**.
 
-   ![ Naam de regel en voeg de gebeurtenis van de douanecode toe ](assets/collect-data-analytics/custom-code-event.png)
+   ![&#x200B; Naam de regel en voeg de gebeurtenis van de douanecode toe &#x200B;](assets/collect-data-analytics/custom-code-event.png)
 
 1. Klik **Open Redacteur** in het belangrijkste paneel en ga het volgende codefragment in:
 
@@ -156,7 +156,7 @@ De Laag van Gegevens van de Cliënt van Adobe is een **gebeurtenis-gedreven** ge
    });
    ```
 
-   Het bovenstaande codefragment voegt een gebeurtenisluisteraar toe door [ een functie ](https://github.com/adobe/adobe-client-data-layer/wiki#pushing-a-function) in de gegevenslaag te duwen. Wanneer de gebeurtenis `cmp:show` wordt geactiveerd, wordt de functie `pageShownEventHandler` aangeroepen. In deze functie, worden een paar gezondheidscontroles toegevoegd en een nieuw `event` geconstrueerd met de recentste [ staat van de gegevenslaag ](https://github.com/adobe/adobe-client-data-layer/wiki#getstate) voor de component die de gebeurtenis teweegbracht.
+   Het bovenstaande codefragment voegt een gebeurtenisluisteraar toe door [&#x200B; een functie &#x200B;](https://github.com/adobe/adobe-client-data-layer/wiki#pushing-a-function) in de gegevenslaag te duwen. Wanneer de gebeurtenis `cmp:show` wordt geactiveerd, wordt de functie `pageShownEventHandler` aangeroepen. In deze functie, worden een paar gezondheidscontroles toegevoegd en een nieuw `event` geconstrueerd met de recentste [&#x200B; staat van de gegevenslaag &#x200B;](https://github.com/adobe/adobe-client-data-layer/wiki#getstate) voor de component die de gebeurtenis teweegbracht.
 
    Tot slot wordt de functie `trigger(event)` aangeroepen. De `trigger()` functie is een gereserveerde naam in het markeringsbezit en het **brengt** de regel teweeg. Het `event` -object wordt doorgegeven als een parameter die vervolgens weer wordt weergegeven door een andere gereserveerde naam in de eigenschap tag. Gegevenselementen in de eigenschap tag kunnen nu verwijzen naar verschillende eigenschappen met behulp van een codefragment, zoals `event.component['someKey']` .
 
@@ -164,7 +164,7 @@ De Laag van Gegevens van de Cliënt van Adobe is een **gebeurtenis-gedreven** ge
 1. Daarna onder **Acties** klik **&#x200B;**&#x200B;toevoegen om de **tovenaar van de Configuratie van de Actie** te openen.
 1. Voor **gebied van het Type van Actie 0&rbrace; &lbrace;, kies** de Code van de Douane **.**
 
-   ![ Type van de Actie van de Code van de Douane ](assets/collect-data-analytics/action-custom-code.png)
+   ![&#x200B; Type van de Actie van de Code van de Douane &#x200B;](assets/collect-data-analytics/action-custom-code.png)
 
 1. Klik **Open Redacteur** in het belangrijkste paneel en ga het volgende codefragment in:
 
@@ -177,15 +177,15 @@ De Laag van Gegevens van de Cliënt van Adobe is een **gebeurtenis-gedreven** ge
 
    Het object `event` wordt doorgegeven via de methode `trigger()` die in de aangepaste gebeurtenis wordt aangeroepen. Hier is de `component` -pagina de huidige pagina die wordt afgeleid van de gegevenslaag `getState` in de aangepaste gebeurtenis.
 
-1. Sparen de veranderingen en stel a [ in werking bouwt ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html?lang=nl-NL) in het markeringsbezit om de code aan het [ milieu ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=nl-NL) te bevorderen dat op uw Plaats van AEM wordt gebruikt.
+1. Sparen de veranderingen en stel a [&#x200B; in werking bouwt &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html?lang=nl-NL) in het markeringsbezit om de code aan het [&#x200B; milieu &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=nl-NL) te bevorderen dat op uw Plaats van AEM wordt gebruikt.
 
    >[!NOTE]
    >
-   > Het kan nuttig zijn om [ Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=nl-NL) te gebruiken om de ingebedde code aan het milieu van de a **Ontwikkeling** te schakelen.
+   > Het kan nuttig zijn om [&#x200B; Adobe Experience Platform Debugger &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=nl-NL) te gebruiken om de ingebedde code aan het milieu van de a **Ontwikkeling** te schakelen.
 
 1. Navigeer naar uw AEM-site en open de ontwikkelaarsgereedschappen om de console weer te geven. Vernieuw de pagina en u zou moeten zien dat de consoleberichten zijn geregistreerd:
 
-![ Pagina Geladen de Berichten van de Console ](assets/collect-data-analytics/page-show-event-console.png)
+![&#x200B; Pagina Geladen de Berichten van de Console &#x200B;](assets/collect-data-analytics/page-show-event-console.png)
 
 ## Gegevenselementen maken
 
@@ -200,7 +200,7 @@ Gegevenselementen worden toegewezen aan de eigenschappen `@type` , `dc:title` en
 1. Voor het **gebied van de Naam**, ga het **Type van Middel van de Component** in.
 1. Voor het **gebied van het Type van Gegevens 0&rbrace; &lbrace;, uitgezochte** Code van de Douane **.**
 
-   ![ Type van Middel van Component ](assets/collect-data-analytics/component-resource-type-form.png)
+   ![&#x200B; Type van Middel van Component &#x200B;](assets/collect-data-analytics/component-resource-type-form.png)
 
 1. Klik **Open de knoop van de Redacteur** en ga het volgende in de redacteur van de douanecode in:
 
@@ -248,7 +248,7 @@ Gegevenselementen worden toegewezen aan de eigenschappen `@type` , `dc:title` en
 
 1. U moet nu drie gegevenselementen hebben als onderdeel van uw regel:
 
-   ![ Elementen van Gegevens in Regel ](assets/collect-data-analytics/data-elements-page-rule.png)
+   ![&#x200B; Elementen van Gegevens in Regel &#x200B;](assets/collect-data-analytics/data-elements-page-rule.png)
 
 ## De extensie Analytics toevoegen
 
@@ -258,11 +258,11 @@ Voeg vervolgens de extensie Analytics toe aan de eigenschap Tag om gegevens naar
 1. Ga naar **Uitbreidingen** > **Catalogus**
 1. Bepaal de plaats van **Adobe Analytics** uitbreiding en klik **installeren**
 
-   ![ Uitbreiding van Adobe Analytics ](assets/collect-data-analytics/analytics-catalog-install.png)
+   ![&#x200B; Uitbreiding van Adobe Analytics &#x200B;](assets/collect-data-analytics/analytics-catalog-install.png)
 
 1. Onder **Suites van het Beheer van de Bibliotheek** > **Rapport**, ga de ids van de rapportreeks in u met elk markeringsmilieu zou willen gebruiken.
 
-   ![ ga rapportreeks ids ](assets/collect-data-analytics/analytics-config-reportSuite.png) in
+   ![&#x200B; ga rapportreeks ids &#x200B;](assets/collect-data-analytics/analytics-config-reportSuite.png) in
 
    >[!NOTE]
    >
@@ -274,11 +274,11 @@ Voeg vervolgens de extensie Analytics toe aan de eigenschap Tag om gegevens naar
 
 1. Controleer de doos om **Gebruik Activity Map** toe te laten.
 
-   ![ laat Gebruik Activity Map ](assets/track-clicked-component/analytic-track-click.png) toe
+   ![&#x200B; laat Gebruik Activity Map &#x200B;](assets/track-clicked-component/analytic-track-click.png) toe
 
 1. Onder **Algemeen** > **het Volgen Server**, ga uw het volgen server in, bijvoorbeeld, `tmd.sc.omtrdc.net`. Voer uw SSL-traceringsserver in als uw site ondersteuning biedt voor `https://`
 
-   ![ ga de volgende servers ](assets/collect-data-analytics/analytics-config-trackingServer.png) in
+   ![&#x200B; ga de volgende servers &#x200B;](assets/collect-data-analytics/analytics-config-trackingServer.png) in
 
 1. Klik **sparen** om de veranderingen te bewaren.
 
@@ -289,10 +289,10 @@ Daarna, werk de **Geladen Pagina** regel bij om het **het gegevenselement van he
 1. In het Bezit van de Markering UI, navigeer aan de **Geladen Pagina** regel eerder gecreeerd.
 1. Onder **Voorwaarden** klik **&#x200B;**&#x200B;toevoegen om de **tovenaar van de Configuratie van de Voorwaarde** te openen.
 1. Voor **gebied van het Type van Voorwaarde 0&rbrace; &lbrace;, de uitgezochte** optie van de Vergelijking van de Waarde **.**
-1. Stel de eerste waarde in het formulierveld in op `%Component Resource Type%` . U kunt het Pictogram van het Element van Gegevens gebruiken ![ gegeven-element pictogram ](assets/collect-data-analytics/cylinder-icon.png) om het **het gegevenselement van het Type van Middel van de Component** te selecteren. Laat het comparator ingesteld staan op `Equals` .
+1. Stel de eerste waarde in het formulierveld in op `%Component Resource Type%` . U kunt het Pictogram van het Element van Gegevens gebruiken ![&#x200B; gegeven-element pictogram &#x200B;](assets/collect-data-analytics/cylinder-icon.png) om het **het gegevenselement van het Type van Middel van de Component** te selecteren. Laat het comparator ingesteld staan op `Equals` .
 1. Stel de tweede waarde in op `wknd/components/page` .
 
-   ![ Configuratie van de Voorwaarde voor Pagina Geladen Regel ](assets/collect-data-analytics/condition-configuration-page-loaded.png)
+   ![&#x200B; Configuratie van de Voorwaarde voor Pagina Geladen Regel &#x200B;](assets/collect-data-analytics/condition-configuration-page-loaded.png)
 
    >[!NOTE]
    >
@@ -306,35 +306,35 @@ Momenteel voert de **Geladen Pagina** regel eenvoudig een consoleverklaring uit.
 
 1. In de Pagina Geladen regel, **verwijdert** de **Kern - de actie van de Code van de Douane** (de consoleverklaringen):
 
-   ![ verwijder de actie van de douanecode ](assets/collect-data-analytics/remove-console-statements.png)
+   ![&#x200B; verwijder de actie van de douanecode &#x200B;](assets/collect-data-analytics/remove-console-statements.png)
 
 1. Onder de onderafdeling van Acties, voegt de klik **&#x200B;**&#x200B;toe om een nieuwe actie toe te voegen.
 
 1. Plaats het **type van Uitbreiding** aan **Adobe Analytics** en plaats het **Type van Actie** aan **Vastgestelde Variabelen**
 
-   ![ plaats de Uitbreiding van de Actie aan Analytics plaatste Variabelen ](assets/collect-data-analytics/analytics-set-variables-action.png)
+   ![&#x200B; plaats de Uitbreiding van de Actie aan Analytics plaatste Variabelen &#x200B;](assets/collect-data-analytics/analytics-set-variables-action.png)
 
-1. In het belangrijkste paneel, selecteer een beschikbare **eVar** en reeks als waarde van het Malplaatje van de Pagina van het Element van Gegevens **&#x200B;**. Gebruik het pictogram van de Elementen van Gegevens ![ het elementenpictogram van Gegevens ](assets/collect-data-analytics/cylinder-icon.png) om het **element van het Malplaatje van de Pagina** te selecteren.
+1. In het belangrijkste paneel, selecteer een beschikbare **eVar** en reeks als waarde van het Malplaatje van de Pagina van het Element van Gegevens **&#x200B;**. Gebruik het pictogram van de Elementen van Gegevens ![&#x200B; het elementenpictogram van Gegevens &#x200B;](assets/collect-data-analytics/cylinder-icon.png) om het **element van het Malplaatje van de Pagina** te selecteren.
 
-   ![ Reeks als Malplaatje van de Pagina van eVar ](assets/collect-data-analytics/set-evar-page-template.png)
+   ![&#x200B; Reeks als Malplaatje van de Pagina van eVar &#x200B;](assets/collect-data-analytics/set-evar-page-template.png)
 
 1. Schuif neer, onder **Extra Montages** plaats **de Naam van de Pagina** aan het gegevenselement **Naam van de Pagina**:
 
-   ![ de Veranderlijke van het Milieu van de Naam van de Pagina reeks ](assets/collect-data-analytics/page-name-env-variable-set.png)
+   ![&#x200B; de Veranderlijke van het Milieu van de Naam van de Pagina reeks &#x200B;](assets/collect-data-analytics/page-name-env-variable-set.png)
 
 1. Sla de wijzigingen op.
 
 1. Daarna, voeg een extra Actie rechts van **Adobe Analytics toe - plaats Variabelen** door het **plus** pictogram te tikken:
 
-   ![ voeg een extra Actie van de Regel van de Markering toe ](assets/collect-data-analytics/add-additional-launch-action.png)
+   ![&#x200B; voeg een extra Actie van de Regel van de Markering toe &#x200B;](assets/collect-data-analytics/add-additional-launch-action.png)
 
 1. Plaats het **type van de Uitbreiding 0&rbrace; &lbrace;aan** Adobe Analytics **en plaats het** Type van Actie **aan** verzendt Baken **.** Aangezien deze handeling als een paginaweergave wordt beschouwd, laat u de standaardtekstspatiëring ingesteld op **`s.t()`** .
 
-   ![ verzendt de actie van Adobe Analytics Beacon ](assets/track-clicked-component/send-page-view-beacon-config.png)
+   ![&#x200B; verzendt de actie van Adobe Analytics Beacon &#x200B;](assets/track-clicked-component/send-page-view-beacon-config.png)
 
 1. Sla de wijzigingen op. De **Geladen Pagina** regel zou de volgende configuratie nu moeten hebben:
 
-   ![ Definitieve Configuratie van de Regel van de Markering ](assets/collect-data-analytics/final-page-loaded-config.png)
+   ![&#x200B; Definitieve Configuratie van de Regel van de Markering &#x200B;](assets/collect-data-analytics/final-page-loaded-config.png)
 
    * **1.** Luister naar de `cmp:show` -gebeurtenis.
    * **2.** Controleer of de gebeurtenis door een pagina is geactiveerd.
@@ -347,24 +347,24 @@ Momenteel voert de **Geladen Pagina** regel eenvoudig een consoleverklaring uit.
 
 Nu de **Geladen Pagina** regel het baken van Analytics verzendt, zou u de volgende variabelen van Analytics moeten kunnen zien gebruikend debugger van Experience Platform.
 
-1. Open de [ Plaats WKND ](https://wknd.site/us/en.html) in uw browser.
-1. Klik het Debugger pictogram ![ het platform Debugger van de Ervaring pictogram ](assets/collect-data-analytics/experience-cloud-debugger.png) om Debugger van Experience Platform te openen.
+1. Open de [&#x200B; Plaats WKND &#x200B;](https://wknd.site/us/en.html) in uw browser.
+1. Klik het Debugger pictogram ![&#x200B; het platform Debugger van de Ervaring pictogram &#x200B;](assets/collect-data-analytics/experience-cloud-debugger.png) om Debugger van Experience Platform te openen.
 1. Zorg ervoor dat Debugger het markeringsbezit aan *in kaart brengt uw* milieu van de Ontwikkeling, zoals vroeger beschreven en **het Registreren van de Console** wordt gecontroleerd.
 1. Open het menu van Analytics en verifieer dat de rapportreeks aan *uw* rapportreeks wordt geplaatst. De paginanaam moet ook worden ingevuld:
 
-   ![ het tabdebugger van de Analyse ](assets/collect-data-analytics/analytics-tab-debugger.png)
+   ![&#x200B; het tabdebugger van de Analyse &#x200B;](assets/collect-data-analytics/analytics-tab-debugger.png)
 
 1. De rol neer en breidt **Verzoeken van het Netwerk** uit. U zou **moeten kunnen vinden var** voor het **Malplaatje van de Pagina** wordt geplaatst:
 
-   ![ Gebeurtenis en de Reeks van de Naam van de Pagina ](assets/collect-data-analytics/evar-page-name-set.png)
+   ![&#x200B; Gebeurtenis en de Reeks van de Naam van de Pagina &#x200B;](assets/collect-data-analytics/evar-page-name-set.png)
 
 1. Ga terug naar de browser en open de ontwikkelaarsconsole. Klik door de **Carrousel** bij de bovenkant van de pagina.
 
-   ![ klik door carrouselpagina ](assets/collect-data-analytics/click-carousel-page.png)
+   ![&#x200B; klik door carrouselpagina &#x200B;](assets/collect-data-analytics/click-carousel-page.png)
 
 1. Neem in de browser console de consoleverklaring waar:
 
-   ![ Voorwaarde niet voldaan aan ](assets/collect-data-analytics/condition-not-met.png)
+   ![&#x200B; Voorwaarde niet voldaan aan &#x200B;](assets/collect-data-analytics/condition-not-met.png)
 
    Dit is omdat Carousel a `cmp:show` gebeurtenis *teweegbrengt maar* wegens onze controle van het **Type van Middel van de Component**, wordt geen gebeurtenis in brand gestoken.
 
@@ -372,7 +372,7 @@ Nu de **Geladen Pagina** regel het baken van Analytics verzendt, zou u de volgen
    >
    > Als u geen consolelogboeken ziet, zorg ervoor dat **het Registreren van de Console** onder **Tags van Experience Platform** in Debugger van Experience Platform wordt gecontroleerd.
 
-1. Navigeer aan een artikelpagina als [ West Australië ](https://wknd.site/us/en/magazine/western-australia.html). Bekijk de paginanaam en het sjabloontype worden gewijzigd.
+1. Navigeer aan een artikelpagina als [&#x200B; West Australië &#x200B;](https://wknd.site/us/en/magazine/western-australia.html). Bekijk de paginanaam en het sjabloontype worden gewijzigd.
 
 ## Gefeliciteerd!
 
@@ -380,4 +380,4 @@ U hebt zojuist de gebeurtenisgestuurde Adobe Client Data Layer en -tags in Exper
 
 ### Volgende stappen
 
-Controle uit het volgende leerprogramma leren hoe te om de gebeurtenis-gedreven laag van Gegevens van de Cliënt van Adobe te gebruiken aan [ spoor klikt van specifieke componenten op een plaats van Adobe Experience Manager ](track-clicked-component.md).
+Controle uit het volgende leerprogramma leren hoe te om de gebeurtenis-gedreven laag van Gegevens van de Cliënt van Adobe te gebruiken aan [&#x200B; spoor klikt van specifieke componenten op een plaats van Adobe Experience Manager &#x200B;](track-clicked-component.md).

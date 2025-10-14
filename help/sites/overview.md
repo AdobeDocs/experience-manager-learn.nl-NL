@@ -35,7 +35,7 @@ Alle drie de opties zijn sterke benaderingen, en de beste keus hangt van uw gebr
 
 In het volgende diagram worden de verschillende opties weergegeven voor het maken van ervaringen met AEM Sites:
 
-![ AEM-Sites-Content-Authoring-and-Experience-Delivery-Paths.png ](./assets/aem-sites-authoring-and-experience-delivery-paths.png){width="700" zoomable="yes"}
+![&#x200B; AEM-Sites-Content-Authoring-and-Experience-Delivery-Paths.png &#x200B;](./assets/aem-sites-authoring-and-experience-delivery-paths.png){width="700" zoomable="yes"}
 
 ### Vergelijk de manieren om te bouwen met AEM Sites
 
@@ -155,10 +155,10 @@ Ontdek de drie benaderingen om met AEM Sites samen te werken. In de onderstaande
 
 ## Aanvullende bronnen
 
-* [ AEM Sites Authoring documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/authoring/essentials/first-steps)
-* [ AEM Sites het Ontwikkelen documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/introduction/getting-started)
-* [ AEM Sites die documentatie beheren ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/administering/home)
-* [ AEM Sites die documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/introduction/platform) opstelt
+* [&#x200B; AEM Sites Authoring documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/authoring/essentials/first-steps)
+* [&#x200B; AEM Sites het Ontwikkelen documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/introduction/getting-started)
+* [&#x200B; AEM Sites die documentatie beheren &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/administering/home)
+* [&#x200B; AEM Sites die documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/introduction/platform) opstelt
 * [AEM as a Cloud Service-zelfstudies](/help/cloud-service/overview.md)
 * [AEM Assets-zelfstudies](/help/assets/overview.md)
 * [AEM Forms-zelfstudies](/help/forms/overview.md)

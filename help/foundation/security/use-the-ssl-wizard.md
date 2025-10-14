@@ -34,7 +34,7 @@ Leer hoe u SSL in Adobe Experience Manager instelt om deze via HTTPS uit te voer
 
 Navigeer aan __de Auteur van AEM > Hulpmiddelen > Veiligheid > SSL Configuratie__, en open de __SSL Tovenaar van de Configuratie__.
 
-![ SSL de Tovenaar van de Configuratie ](assets/use-the-ssl-wizard/ssl-config-wizard.png)
+![&#x200B; SSL de Tovenaar van de Configuratie &#x200B;](assets/use-the-ssl-wizard/ssl-config-wizard.png)
 
 ### Opslagreferenties maken
 
@@ -43,7 +43,7 @@ Om a _Zeer belangrijke Opslag_ te creëren verbonden aan de `ssl-service` systee
 1. Ga het wachtwoord in en bevestig wachtwoord voor de __Zeer belangrijke Opslag__ verbonden aan de `ssl-service` systeemgebruiker.
 1. Ga het wachtwoord in en bevestig wachtwoord voor de globale __Opslag van het Vertrouwen__. Het is een vertrouwde opslag voor het hele systeem. Als dit al gebeurt, wordt het ingevoerde wachtwoord genegeerd.
 
-   ![ SSL Opstelling - de Referenties van de Opslag ](assets/use-the-ssl-wizard/store-credentials.png)
+   ![&#x200B; SSL Opstelling - de Referenties van de Opslag &#x200B;](assets/use-the-ssl-wizard/store-credentials.png)
 
 ### Persoonlijke sleutel en certificaat uploaden
 
@@ -51,12 +51,12 @@ Om de _privé sleutel_ en _SSL certificaat_ te uploaden, gebruik de __Sleutel &a
 
 Typisch, verstrekt uw afdeling van IT het CA-Vertrouwde certificaat en de sleutel, nochtans zelf-ondertekend certificaat voor __ontwikkeling__ en __het testen__ doeleinden kan worden gebruikt.
 
-Om het zelf-ondertekende certificaat tot stand te brengen of te downloaden, zie de [ Zelfondertekende privé sleutel en het certificaat ](#self-signed-private-key-and-certificate).
+Om het zelf-ondertekende certificaat tot stand te brengen of te downloaden, zie de [&#x200B; Zelfondertekende privé sleutel en het certificaat &#x200B;](#self-signed-private-key-and-certificate).
 
 1. Upload de __Persoonlijke Sleutel__ in het DER (Distinguished Encoding Regels) formaat. In tegenstelling tot PEM bevatten DER-gecodeerde bestanden geen onbewerkte tekstinstructies zoals `-----BEGIN CERTIFICATE-----`
 1. Upload het bijbehorende __SSL Certificaat__ in het `.crt` formaat.
 
-   ![ SSL Opstelling - Persoonlijke Sleutel en Certificaat ](assets/use-the-ssl-wizard/privatekey-and-certificate.png)
+   ![&#x200B; SSL Opstelling - Persoonlijke Sleutel en Certificaat &#x200B;](assets/use-the-ssl-wizard/privatekey-and-certificate.png)
 
 ### SSL-verbindingsgegevens bijwerken
 
@@ -65,14 +65,14 @@ Om _hostname_ bij te werken en _haven_ gebruik de __SSL Schakelaar__ tovenaarsst
 1. Werk of verifieer de __HTTPS Hostname__ waarde bij, zou het `Common Name (CN)` van het certificaat moeten aanpassen.
 1. Werk of verifieer de __waarde van de Haven HTTPS__ bij.
 
-   ![ SSL Opstelling - SSL Verbindingsdetails ](assets/use-the-ssl-wizard/ssl-connector-details.png)
+   ![&#x200B; SSL Opstelling - SSL Verbindingsdetails &#x200B;](assets/use-the-ssl-wizard/ssl-connector-details.png)
 
 ### De SSL-instelling controleren
 
 1. Om SSL te verifiëren, klik __gaan naar HTTPS URL__ knoop.
 1. Als u een niet-geautoriseerd certificaat gebruikt, wordt een fout `Your connection is not private` weergegeven.
 
-   ![ SSL Opstelling - verifieer AEM over HTTPS ](assets/use-the-ssl-wizard/verify-aem-over-ssl.png)
+   ![&#x200B; SSL Opstelling - verifieer AEM over HTTPS &#x200B;](assets/use-the-ssl-wizard/verify-aem-over-ssl.png)
 
 ## Zelfondertekende persoonlijke sleutel en certificaat
 
@@ -88,7 +88,7 @@ Deze localhost - persoonlijke sleutel en zelfondertekend certificate.zip (verloo
 
 ### Persoonlijke sleutel en zelfondertekende certificaatgeneratie
 
-In de bovenstaande video ziet u de installatie en configuratie van SSL op een AEM-auteurinstantie met behulp van zelfondertekende certificaten. Met de onderstaande opdrachten in [[!DNL OpenSSL] ](https://www.openssl.org/) kunt u een persoonlijke sleutel en certificaat genereren voor gebruik in Stap 2 van de wizard.
+In de bovenstaande video ziet u de installatie en configuratie van SSL op een AEM-auteurinstantie met behulp van zelfondertekende certificaten. Met de onderstaande opdrachten in [[!DNL OpenSSL] &#x200B;](https://www.openssl.org/) kunt u een persoonlijke sleutel en certificaat genereren voor gebruik in Stap 2 van de wizard.
 
 ```shell
 ### Create Private Key

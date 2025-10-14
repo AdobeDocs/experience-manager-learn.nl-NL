@@ -27,14 +27,14 @@ Om dit te verwezenlijken het gebruikscase werd de volgende stappen gevolgd
 ## Databasetabel maken voor de formuliergegevens en de bijlage
 
 Er is een tabel met de naam NewWire gemaakt voor de opslag van de formuliergegevens. Bericht het beeld van de kolomnaam van type **LONGBLOB** om de vormgehechtheid op te slaan
-![ lijst-schema ](assets/insert-picture-table.png)
+![&#x200B; lijst-schema &#x200B;](assets/insert-picture-table.png)
 
 ## Formuliergegevensmodel maken
 
 Er is een formuliergegevensmodel gemaakt voor communicatie met de MySQL-database. U moet het volgende maken:
 
 * [JDBC-gegevensbron in AEM](./data-integration-technical-video-setup.md)
-* [ Model van de Gegevens van de Vorm dat op JDBC Datasource ](./jdbc-data-model-technical-video-use.md) wordt gebaseerd
+* [&#x200B; Model van de Gegevens van de Vorm dat op JDBC Datasource &#x200B;](./jdbc-data-model-technical-video-use.md) wordt gebaseerd
 
 ## Workflow maken
 
@@ -55,8 +55,8 @@ log.info("Employee Photo updated");
 ```
 
 De volgende stap in de workflow bestaat uit het invoegen van gegevens en de formulierbijlage in de tabel met de servicecomponent Formuliergegevensmodel aanroepen.
-![ tussenvoegsel-pic ](assets/fdm-insert-pic.png)
-[ het volledige werkschema met het manuscript van steekproefecma kan van hier worden gedownload ](assets/add-new-employee.zip).
+![&#x200B; tussenvoegsel-pic &#x200B;](assets/fdm-insert-pic.png)
+[&#x200B; het volledige werkschema met het manuscript van steekproefecma kan van hier worden gedownload &#x200B;](assets/add-new-employee.zip).
 
 >[!NOTE]
 > U moet een nieuw op JDBC gebaseerd formuliergegevensmodel maken en dat formuliergegevensmodel gebruiken in de workflow
@@ -64,4 +64,4 @@ De volgende stap in de workflow bestaat uit het invoegen van gegevens en de form
 ## Adaptief formulier maken
 
 Maak een adaptief formulier op basis van het formuliergegevensmodel dat u in de vorige stap hebt gemaakt. Sleep de elementen van het formuliergegevensmodel naar het formulier. Configureer de formulierverzending om de workflow te activeren en geef de volgende eigenschappen op, zoals hieronder weergegeven in de schermafbeelding.
-![ vorm-gehechtheid ](assets/form-attachments.png)
+![&#x200B; vorm-gehechtheid &#x200B;](assets/form-attachments.png)

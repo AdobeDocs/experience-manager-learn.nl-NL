@@ -29,12 +29,12 @@ ht-degree: 0%
 
 ## Configuratie
 
-De [ CI/CD configuratie van de Productiepijpleiding van de Productie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/pipelines/configuring-production-pipelines.html?lang=nl-NL) bepaalt de trekker die de pijpleiding, parameters zal in werking stellen die de de testparameters van de productieplaatsing en van de prestatietest controleren.
+De [&#x200B; CI/CD configuratie van de Productiepijpleiding van de Productie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/pipelines/configuring-production-pipelines.html?lang=nl-NL) bepaalt de trekker die de pijpleiding, parameters zal in werking stellen die de de testparameters van de productieplaatsing en van de prestatietest controleren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314?quality=12&learn=on)
 
 ### Uitvoering pijpleiding
 
-[ CI/CD de Pijpleiding van de Productie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=nl-NL) wordt gebruikt om code door Stadium aan het milieu van de Productie te bouwen en op te stellen, die tijd aan waarde verminderen.
+[&#x200B; CI/CD de Pijpleiding van de Productie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=nl-NL) wordt gebruikt om code door Stadium aan het milieu van de Productie te bouwen en op te stellen, die tijd aan waarde verminderen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317?quality=12&learn=on)

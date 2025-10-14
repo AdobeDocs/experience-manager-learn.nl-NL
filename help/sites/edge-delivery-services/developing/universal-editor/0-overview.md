@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Zelfstudie voor ontwikkelaars van Edge Delivery Services en Universal Editor
 
-![ Edge Delivery Services en Universele de ontwikkelaarsleerprogramma van de Redacteur ](./assets/0-overview/hero.png)
+![&#x200B; Edge Delivery Services en Universele de ontwikkelaarsleerprogramma van de Redacteur &#x200B;](./assets/0-overview/hero.png)
 
 In deze zelfstudie leert u de grondbeginselen van het bouwen van een AEM-website die krachtige authoring combineert met Universal Editor en bliksemsnelle levering met Edge Delivery Services. Tegen het eind, zult u basisinzicht in hoe te om een nieuw project tot stand te brengen, opstelling een lokale ontwikkelomgeving, en een nieuw blok bouwen.
 

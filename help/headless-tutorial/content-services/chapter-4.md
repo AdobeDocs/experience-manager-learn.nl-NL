@@ -33,7 +33,7 @@ Voor de [!DNL WKND Mobile] -toepassing maken we één bewerkbare sjabloon die wo
 
 Als u wilt weten hoe u ons API-eindpunt kunt samenstellen en begrijpen welke inhoud beschikbaar moet worden gesteld voor onze [!DNL WKND Mobile] -app, kunt u het ontwerp opnieuw bekijken.
 
-![ Gebeurtenissen API de Decompositie van de Pagina ](./assets/chapter-4/design-to-component-mapping.png)
+![&#x200B; Gebeurtenissen API de Decompositie van de Pagina &#x200B;](./assets/chapter-4/design-to-component-mapping.png)
 
 Zoals we kunnen zien, hebben we drie logische sets met inhoud die aan de mobiele app moeten worden geleverd.
 
@@ -51,7 +51,7 @@ Om dit te doen, kunnen wij deze vereisten aan AEM Componenten (en in ons geval, 
 >
 >Om AEM de uitvoer van JSON van de Dienst van de Inhoud van Pagina&#39;s en Componenten te steunen, moeten de Pagina&#39;s en de Componenten **uit AEM WCM de Componenten van de Kern voortkomen**.
 >
->[ AEM de Componenten van de Kern WCM ](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components) hebben ingebouwde functionaliteit om een genormaliseerd schema JSON van uitgevoerde Pagina&#39;s en Componenten te steunen. Alle mobiele WKND-componenten die in deze zelfstudie worden gebruikt (pagina, afbeelding, tekst en lijst met inhoudsfragmenten), zijn afgeleid van AEM WCM Core-componenten.
+>[&#x200B; AEM de Componenten van de Kern WCM &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components) hebben ingebouwde functionaliteit om een genormaliseerd schema JSON van uitgevoerde Pagina&#39;s en Componenten te steunen. Alle mobiele WKND-componenten die in deze zelfstudie worden gebruikt (pagina, afbeelding, tekst en lijst met inhoudsfragmenten), zijn afgeleid van AEM WCM Core-componenten.
 
 ## De API-sjabloon voor gebeurtenissen definiëren
 
@@ -99,6 +99,6 @@ Om dit te doen, kunnen wij deze vereisten aan AEM Componenten (en in ons geval, 
 
 ## Volgende stappen
 
-Naar keuze, installeer [ com.adobe.aem.guides.wknd-mobile.content.chapter-4.zip ](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) inhoudspakket op AEM Auteur via [ AEM de Manager van het Pakket ](http://localhost:4502/crx/packmgr/index.jsp). Dit pakket bevat de configuraties en inhoud die in dit en vorige hoofdstukken van de zelfstudie worden beschreven.
+Naar keuze, installeer [&#x200B; com.adobe.aem.guides.wknd-mobile.content.chapter-4.zip &#x200B;](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) inhoudspakket op AEM Auteur via [&#x200B; AEM de Manager van het Pakket &#x200B;](http://localhost:4502/crx/packmgr/index.jsp). Dit pakket bevat de configuraties en inhoud die in dit en vorige hoofdstukken van de zelfstudie worden beschreven.
 
 * [Hoofdstuk 5 - Pagina&#39;s met inhoudsservices ontwerpen](./chapter-5.md)

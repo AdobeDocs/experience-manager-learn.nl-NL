@@ -29,7 +29,7 @@ Leer hoe u de metagegevensfuncties voor importeren en exporteren van Adobe Exper
 
 >[!TIP]
 >
-> Wanneer het openen van meta-gegevens voer CSV- dossier in Excel, gebruik de [ importeur van Excel ](https://support.microsoft.com/en-us/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) eerder dan het tweemaal klikken van het dossier om kwesties met UTF-8 gecodeerde Csv- dossiers te vermijden.
+> Wanneer het openen van meta-gegevens voer CSV- dossier in Excel, gebruik de [&#x200B; importeur van Excel &#x200B;](https://support.microsoft.com/en-us/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) eerder dan het tweemaal klikken van het dossier om kwesties met UTF-8 gecodeerde Csv- dossiers te vermijden.
 >
 > Voer de volgende stappen uit om het CSV-bestand voor het exporteren van metagegevens te openen in Excel:
 > 
@@ -72,7 +72,7 @@ Leer hoe u de metagegevensfuncties voor importeren en exporteren van Adobe Exper
    * Onjuist: `Dc:Title {{String}}`
 
 * Type eigenschap is niet hoofdlettergevoelig
-* Alle geldige [ types van Bezit JCR ](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) worden gesteund
+* Alle geldige [&#x200B; types van Bezit JCR &#x200B;](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) worden gesteund
 
 * Opmaak eigenschap van meerdere waarden - `<metadata property name> {{<property type : MULTI }}`
 

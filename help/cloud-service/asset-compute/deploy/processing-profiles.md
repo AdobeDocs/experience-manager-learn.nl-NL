@@ -26,7 +26,7 @@ Asset Compute-workers kunnen alleen aangepaste uitvoeringen genereren in AEM as 
 
 Maak eerst een nieuw verwerkingsprofiel dat de worker aanroept met de configureerbare parameters.
 
-![ Profiel van de Verwerking ](./assets/processing-profiles/new-processing-profile.png)
+![&#x200B; Profiel van de Verwerking &#x200B;](./assets/processing-profiles/new-processing-profile.png)
 
 1. Login aan de dienst van de Auteur van AEM as a Cloud Service als __Beheerder van AEM__. Aangezien dit een leerprogramma is adviseren wij het gebruiken van een ontwikkelomgeving of een milieu in een Sandbox.
 1. Navigeer aan __Hulpmiddelen > Assets > de Profielen van de Verwerking__
@@ -65,23 +65,23 @@ Maak eerst een nieuw verwerkingsprofiel dat de worker aanroept met de configuree
 1. Tik __pas Profiel op Omslag(en)__ op de hoogste actiebar toe
 1. Selecteer een omslag om het Profiel van de Verwerking op toe te passen, zoals `WKND` en tikken __van toepassing is__
 1. Navigeer aan de omslag het Profiel van de Verwerking niet werd toegepast op via __AEM > Assets > Dossiers__ en tik in `WKND`.
-1. Upload sommige nieuwe beeldactiva ([ steekproef-1.jpg ](../assets/samples/sample-1.jpg), [ sample-2.jpg ](../assets/samples/sample-2.jpg), en [ sample-3.jpg ](../assets/samples/sample-3.jpg)) in om het even welke omslag onder de omslag met het toegepaste Profiel van de Verwerking, en wacht op de geuploade activa om worden verwerkt.
+1. Upload sommige nieuwe beeldactiva ([&#x200B; steekproef-1.jpg &#x200B;](../assets/samples/sample-1.jpg), [&#x200B; sample-2.jpg &#x200B;](../assets/samples/sample-2.jpg), en [&#x200B; sample-3.jpg &#x200B;](../assets/samples/sample-3.jpg)) in om het even welke omslag onder de omslag met het toegepaste Profiel van de Verwerking, en wacht op de geuploade activa om worden verwerkt.
 1. Tik op het element om de details te openen
    + Standaarduitvoeringen worden mogelijk sneller gegenereerd en weergegeven in AEM dan aangepaste uitvoeringen.
 1. Open de __mening van Vertoningen__ van de linkerzijbalk
 1. Tik op het element met de naam `Circle.png` en bekijk de gegenereerde uitvoering
 
-   ![ Gegenereerde vertoning ](./assets/processing-profiles/rendition.png)
+   ![&#x200B; Gegenereerde vertoning &#x200B;](./assets/processing-profiles/rendition.png)
 
 ## Voltooid!
 
-Gefeliciteerd! U hebt het [ leerprogramma ](../overview.md) geëindigd op hoe te om de microdiensten van AEM as a Cloud Service Asset Compute uit te breiden! U moet nu de mogelijkheid hebben om aangepaste Asset Compute-workers in te stellen, te ontwikkelen, te testen, te debuggen en te implementeren voor gebruik door uw AEM as a Cloud Service Author-service.
+Gefeliciteerd! U hebt het [&#x200B; leerprogramma &#x200B;](../overview.md) geëindigd op hoe te om de microdiensten van AEM as a Cloud Service Asset Compute uit te breiden! U moet nu de mogelijkheid hebben om aangepaste Asset Compute-workers in te stellen, te ontwikkelen, te testen, te debuggen en te implementeren voor gebruik door uw AEM as a Cloud Service Author-service.
 
 ### Bekijk de volledige broncode van het project op Github
 
 Het uiteindelijke Asset Compute-project is beschikbaar op Github op:
 
-+ [ aem-guides-wknd-asset-compute ](https://github.com/adobe/aem-guides-wknd-asset-compute)
++ [&#x200B; aem-guides-wknd-asset-compute &#x200B;](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
 _Github bevat is de definitieve staat van het project, volledig bevolkt met de arbeider en testgevallen, maar bevat geen geloofsbrieven, dat wil zeggen. `.env` , `.config.json` of `.aio` ._
 

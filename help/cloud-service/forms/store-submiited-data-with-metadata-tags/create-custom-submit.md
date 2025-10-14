@@ -21,7 +21,7 @@ ht-degree: 0%
 
 AEM Forms CS biedt een bewerking uit het vak om formuliergegevens in Azure op te slaan, maar het is niet mogelijk om blob-indexcodes te maken voor de blob. Om aan het gebruiksgeval te voldoen, is een aangepaste verzendservice gemaakt waarmee de verzonden gegevens worden opgeslagen in Azure en waarmee blob-indexgegevenstags worden gemaakt met de velden die zijn gemarkeerd als doorzoekbaar in het formulier.
 
-[ de steekproefdouane voorlegt manager voor kerncomponenten gebaseerde adaptieve vorm is hier beschikbaar ](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). De volgende aangepaste verzendmethode is geschreven voor het verzenden van het formulier
+[&#x200B; de steekproefdouane voorlegt manager voor kerncomponenten gebaseerde adaptieve vorm is hier beschikbaar &#x200B;](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). De volgende aangepaste verzendmethode is geschreven voor het verzenden van het formulier
 
 ```java
 package com.aemforms.saveandfecthfromazure.prefill;

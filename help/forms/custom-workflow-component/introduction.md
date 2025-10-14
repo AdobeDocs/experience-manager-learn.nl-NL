@@ -26,8 +26,8 @@ U hebt het volgende nodig:
 
 * Een werkexemplaar van AEM waarop het pakket Formulierinvoegtoepassing is geïnstalleerd
 
-* [ het milieu van de Ontwikkeling opstelling volgens dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=nl-NL)
+* [&#x200B; het milieu van de Ontwikkeling opstelling volgens dit document &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=nl-NL)
 
 ## Volgende stappen
 
-Schrijf uw [ douanecode java door interface WorkflowProcess uit te voeren ](./custom-process-step-aem-workflow.md)
+Schrijf uw [&#x200B; douanecode java door interface WorkflowProcess uit te voeren &#x200B;](./custom-process-step-aem-workflow.md)

@@ -28,4 +28,4 @@ Leer over technieken om de Grootste Inhoudelijke Verf (LCP) te verbeteren en de 
 
 ## Aanvullende bronnen
 
-Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 3 ](../cloud5-season-3.md) pagina.
+Bekijk verwante video&#39;s op de [&#x200B; Wolk 5 seizoen 3 &#x200B;](../cloud5-season-3.md) pagina.

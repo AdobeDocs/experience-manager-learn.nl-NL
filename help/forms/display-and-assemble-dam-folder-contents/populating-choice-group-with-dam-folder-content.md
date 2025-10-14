@@ -20,7 +20,7 @@ ht-degree: 0%
 
 In AEM Forms 6.5 is de mogelijkheid geïntroduceerd om items dynamisch toe te voegen aan een adaptieve Forms-keuzerondjesgroepcomponent, zoals CheckBox, Radio Button en Afbeeldingslijst. In dit artikel bekijken we of een keuzegroep kan worden gevuld met de DAM-mapinhoud. In het schermafbeelding bevinden de drie bestanden zich in de map Nieuwsbrief. Telkens wanneer een nieuwe nieuwsbrief aan de map wordt toegevoegd, wordt de groepscomponent Keuze bijgewerkt en wordt de inhoud ervan automatisch weergegeven. De gebruiker kan een of meer nieuwsbrieven selecteren om te downloaden.
 
-![ Redacteur van de Regel ](assets/newsletters-download.png)
+![&#x200B; Redacteur van de Regel &#x200B;](assets/newsletters-download.png)
 
 ## servlet maken om de inhoud van de DAM-map te retourneren
 
@@ -112,7 +112,7 @@ function getDAMFolderAssets(damFolder) {
 ## Adaptief formulier maken
 
 Creeer een adaptieve vorm en associeer de vorm met cliëntbibliotheek **listfolderAssets**. Voeg een component CheckBox toe aan het formulier. Gebruik de regelredacteur om de opties van checkbox zoals aangetoond in scherm-schot te bevolken
-![ plaats-opties ](assets/set-options-newsletter.png)
+![&#x200B; plaats-opties &#x200B;](assets/set-options-newsletter.png)
 
 Wij roepen functie javascript genoemd **getDAMFolderAssets** en overgaan de weg van de activa van de omslag DAM aan lijst in de vorm.
 

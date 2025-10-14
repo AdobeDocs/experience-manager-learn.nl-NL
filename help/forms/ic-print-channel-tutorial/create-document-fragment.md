@@ -29,7 +29,7 @@ Documentfragmenten bevatten de tekstinhoud van interactieve communicatiedocument
 
 De rijke tekstredacteur is intuïtief genoeg voor een bedrijfsgebruiker aan auteur tekst en neemt vormgegevenselementen op. Met de fragmenteditor van het document kunt u tekst opmaken, lettertypen en stijlen opgeven, speciale tekens invoegen en hyperlinks maken.
 
-De fragmentredacteur van het document heeft ook de capaciteit om inline voorwaarden in uw tekst op te nemen zoals aangetoond in deze [ video ](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
+De fragmentredacteur van het document heeft ook de capaciteit om inline voorwaarden in uw tekst op te nemen zoals aangetoond in deze [&#x200B; video &#x200B;](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
 
 >[!NOTE]
 >

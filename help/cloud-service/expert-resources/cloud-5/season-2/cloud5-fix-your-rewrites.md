@@ -25,8 +25,8 @@ In deel twee van de reeks verkennen we een aantal dingen die je kunt bekijken di
 ## Inhoud die in deze video wordt behandeld
 
 + mod_rewrite, overzicht
-+ [ mod_rewrite documenten ](https://httpd.apache.org/docs/current/mod/mod_rewrite.html)
++ [&#x200B; mod_rewrite documenten &#x200B;](https://httpd.apache.org/docs/current/mod/mod_rewrite.html)
 
 ## Aanvullende bronnen
 
-Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 2 ](../cloud5-season-2.md) pagina.
+Bekijk verwante video&#39;s op de [&#x200B; Wolk 5 seizoen 2 &#x200B;](../cloud5-season-2.md) pagina.

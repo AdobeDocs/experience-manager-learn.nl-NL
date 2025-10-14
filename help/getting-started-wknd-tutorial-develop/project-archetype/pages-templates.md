@@ -23,11 +23,11 @@ ht-degree: 0%
 
 {{edge-delivery-services-and-page-editor}}
 
-In dit hoofdstuk, onderzoeken wij de verhouding tussen een component van de basispagina en editable malplaatjes. Leer om een ongestileerd malplaatje van het Artikel te bouwen dat op sommige modellen van [ wordt gebaseerd Adobe XD ](https://helpx.adobe.com/nl/support/xd.html). In het proces om het malplaatje uit te bouwen, zijn de Componenten van de Kern en de geavanceerde beleidsconfiguraties van de Bewerkbare Malplaatjes behandeld.
+In dit hoofdstuk, onderzoeken wij de verhouding tussen een component van de basispagina en editable malplaatjes. Leer om een ongestileerd malplaatje van het Artikel te bouwen dat op sommige modellen van [&#x200B; wordt gebaseerd Adobe XD &#x200B;](https://helpx.adobe.com/nl/support/xd.html). In het proces om het malplaatje uit te bouwen, zijn de Componenten van de Kern en de geavanceerde beleidsconfiguraties van de Bewerkbare Malplaatjes behandeld.
 
 ## Vereisten {#prerequisites}
 
-Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikkelomgeving ](overview.md#local-dev-environment).
+Herzie het vereiste tooling en de instructies voor vestiging a [&#x200B; lokale ontwikkelomgeving &#x200B;](overview.md#local-dev-environment).
 
 ### Starter-project
 
@@ -37,7 +37,7 @@ Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikke
 
 Bekijk de basislijncode waarop de zelfstudie is gebaseerd:
 
-1. Controle uit de `tutorial/pages-templates-start` tak van [ GitHub ](https://github.com/adobe/aem-guides-wknd)
+1. Controle uit de `tutorial/pages-templates-start` tak van [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd)
 
    ```shell
    $ cd ~/code/aem-guides-wknd
@@ -58,7 +58,7 @@ Bekijk de basislijncode waarop de zelfstudie is gebaseerd:
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd/tree/tutorial/pages-templates-solution) altijd bekijken of de code plaatselijk controleren door aan de tak `tutorial/pages-templates-solution` te schakelen.
+U kunt de gebeëindigde code op [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd/tree/tutorial/pages-templates-solution) altijd bekijken of de code plaatselijk controleren door aan de tak `tutorial/pages-templates-solution` te schakelen.
 
 ## Doelstelling
 
@@ -70,25 +70,25 @@ U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-w
 
 In dit gedeelte van de zelfstudie maakt u een nieuwe artikelpaginasjabloon die u kunt gebruiken om artikelpagina&#39;s te maken en deze uit te lijnen met een gemeenschappelijke structuur. Het sjabloon voor artikelpagina is gebaseerd op ontwerpen en een UI-kit die in Adobe XD is gemaakt. Dit hoofdstuk is alleen gericht op het opbouwen van de structuur of het skelet van de sjabloon. Er worden geen stijlen geïmplementeerd, maar de sjabloon en pagina&#39;s zijn functioneel.
 
-![ het Ontwerp van de Pagina van het Artikel en unstyled versie ](assets/pages-templates/what-you-will-build.png)
+![&#x200B; het Ontwerp van de Pagina van het Artikel en unstyled versie &#x200B;](assets/pages-templates/what-you-will-build.png)
 
 ## UI-planning met Adobe XD {#adobexd}
 
-Gewoonlijk begint het plannen voor een nieuwe website met modellen en statische ontwerpen. [ Adobe XD ](https://helpx.adobe.com/nl/support/xd.html) is een ontwerphulpmiddel bouwend gebruikerservaring. Vervolgens inspecteren we een UI-kit en -modellen om de structuur van het sjabloon voor artikelpagina te plannen.
+Gewoonlijk begint het plannen voor een nieuwe website met modellen en statische ontwerpen. [&#x200B; Adobe XD &#x200B;](https://helpx.adobe.com/nl/support/xd.html) is een ontwerphulpmiddel bouwend gebruikerservaring. Vervolgens inspecteren we een UI-kit en -modellen om de structuur van het sjabloon voor artikelpagina te plannen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
-**Download het [ WKND Dossier van het Ontwerp van het Artikel ](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)**.
+**Download het [&#x200B; WKND Dossier van het Ontwerp van het Artikel &#x200B;](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)**.
 
 >[!NOTE]
 >
-> Een generische [ AEM Kit UI van de Componenten van de Kern is ook beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd?lang=nl-NL) als uitgangspunt voor douaneprojecten.
+> Een generische [&#x200B; AEM Kit UI van de Componenten van de Kern is ook beschikbaar &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd?lang=nl-NL) als uitgangspunt voor douaneprojecten.
 
 ## De sjabloon voor artikelpagina maken
 
 Wanneer u een pagina maakt, moet u een sjabloon selecteren die wordt gebruikt als basis voor het maken van de pagina. De sjabloon definieert de structuur van de resulterende pagina, de initiële inhoud en de toegestane componenten.
 
-Er zijn drie belangrijkste gebieden van [ Bewerkbare Malplaatjes ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=nl-NL):
+Er zijn drie belangrijkste gebieden van [&#x200B; Bewerkbare Malplaatjes &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=nl-NL):
 
 1. **Structuur** - bepaalt componenten die een deel van het malplaatje zijn. Deze kunnen niet worden bewerkt door de auteurs van de inhoud.
 1. **Aanvankelijke Inhoud** - bepaalt componenten die het malplaatjebegin met, deze kan worden uitgegeven en/of door inhoudauteurs worden geschrapt
@@ -152,15 +152,15 @@ Stappen op hoog niveau voor de bovenstaande video:
 
 ### De sjabloon inschakelen en een miniatuur toevoegen
 
-1. Bekijk het malplaatje in de console van het Malplaatje door aan [ http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd ](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd) te navigeren
+1. Bekijk het malplaatje in de console van het Malplaatje door aan [&#x200B; http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd &#x200B;](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd) te navigeren
 1. **laat** het malplaatje van de Pagina van het Artikel toe.
 1. Bewerk de eigenschappen van de sjabloon Artikelpagina en upload de volgende miniatuur om snel pagina&#39;s te identificeren die zijn gemaakt met de sjabloon Artikelpagina:
 
-   ![ de malplaatjeduimnagel van de Pagina van het Artikel ](assets/pages-templates/article-page-template-thumbnail.png)
+   ![&#x200B; de malplaatjeduimnagel van de Pagina van het Artikel &#x200B;](assets/pages-templates/article-page-template-thumbnail.png)
 
 ## Koptekst en voettekst bijwerken met ervaringsfragmenten {#experience-fragments}
 
-Een gemeenschappelijke praktijk wanneer het creëren van globale inhoud, zoals een kopbal of footer, moet een [ Fragment van de Ervaring gebruiken ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=nl-NL). Met de functie Fragmenten van ervaring kunnen gebruikers meerdere componenten combineren om één component te maken die geschikt is voor referentie. De Fragmenten van de ervaring hebben het voordeel om multi-site beheer en [ localisatie ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=nl-NL) te steunen.
+Een gemeenschappelijke praktijk wanneer het creëren van globale inhoud, zoals een kopbal of footer, moet een [&#x200B; Fragment van de Ervaring gebruiken &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=nl-NL). Met de functie Fragmenten van ervaring kunnen gebruikers meerdere componenten combineren om één component te maken die geschikt is voor referentie. De Fragmenten van de ervaring hebben het voordeel om multi-site beheer en [&#x200B; localisatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=nl-NL) te steunen.
 
 Het AEM Projectarchetype produceerde een Kopbal en Voettekst. Werk vervolgens de Experience Fragments bij zodat deze overeenkomen met de modellen. Voer de stappen in de onderstaande video uit:
 
@@ -169,15 +169,15 @@ Het AEM Projectarchetype produceerde een Kopbal en Voettekst. Werk vervolgens de
 Stappen op hoog niveau voor de bovenstaande video:
 
 1. Download het pakket van de steekproefinhoud **[WKND-PagesTemplates-Content-Assets.zip](assets/pages-templates/WKND-PagesTemplates-Content-Assets-1.1.zip)**.
-1. Upload en installeer het inhoudspakket gebruikend de Manager van het Pakket in [ http://localhost:4502/crx/packmgr/index.jsp ](http://localhost:4502/crx/packmgr/index.jsp)
-1. Werk het malplaatje van de Variatie van het Web bij, dat het malplaatje voor de Fragmenten van de Ervaring in [ http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/xf-web-variation/structure.html ](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/xf-web-variation/structure.html) wordt gebruikt
+1. Upload en installeer het inhoudspakket gebruikend de Manager van het Pakket in [&#x200B; http://localhost:4502/crx/packmgr/index.jsp &#x200B;](http://localhost:4502/crx/packmgr/index.jsp)
+1. Werk het malplaatje van de Variatie van het Web bij, dat het malplaatje voor de Fragmenten van de Ervaring in [&#x200B; http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/xf-web-variation/structure.html &#x200B;](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/xf-web-variation/structure.html) wordt gebruikt
    * Werk het beleid bij de **component van de Container** op het malplaatje.
    * Plaats het beleid aan **XF Wortel**.
    * Onder, **Toegelaten Componenten** selecteren de componentengroep **het Project van Plaatsen WKND - Structuur** om **Navigatie van de Taal**, **Navigatie**, en **Snelle componenten van het Onderzoek** te omvatten.
 
 ### Fragment voor koptekstervaring bijwerken
 
-1. Open het Fragment van de Ervaring dat de Kopbal in [ http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/header/master.html ](http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/header/master.html) teruggeeft
+1. Open het Fragment van de Ervaring dat de Kopbal in [&#x200B; http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/header/master.html &#x200B;](http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/header/master.html) teruggeeft
 1. Vorm de wortel **Container** van het fragment. Dit is de buitenste meest **Container**.
    * Plaats de **Lay-out** aan **Responsief Net**
 1. Voeg het **Donkere Logo van WKND** als beeld aan de bovenkant van de **Container** toe. Het logo is opgenomen in het pakket dat in een vorige stap is geïnstalleerd.
@@ -193,7 +193,7 @@ Stappen op hoog niveau voor de bovenstaande video:
 
 ### Fragment Voettekstervaring bijwerken
 
-1. Open het Fragment van de Ervaring dat de Voettekst in [ http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/footer/master.html ](http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/footer/master.html) teruggeeft
+1. Open het Fragment van de Ervaring dat de Voettekst in [&#x200B; http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/footer/master.html &#x200B;](http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/footer/master.html) teruggeeft
 1. Vorm de wortel **Container** van het fragment. Dit is de buitenste meest **Container**.
    * Plaats de **Lay-out** aan **Responsief Net**
 1. Voeg het **Lichte Logo van WKND** als beeld aan de bovenkant van de **Container** toe. Het logo is opgenomen in het pakket dat in een vorige stap is geïnstalleerd.
@@ -214,13 +214,13 @@ Maak vervolgens een pagina met de sjabloon Artikelpagina. Maak de inhoud van de 
 
 Stappen op hoog niveau voor de bovenstaande video:
 
-1. Navigeer aan de console van Plaatsen in [ http://localhost:4502/sites.html/content/wknd/us/en/magazine ](http://localhost:4502/sites.html/content/wknd/us/en/magazine).
+1. Navigeer aan de console van Plaatsen in [&#x200B; http://localhost:4502/sites.html/content/wknd/us/en/magazine &#x200B;](http://localhost:4502/sites.html/content/wknd/us/en/magazine).
 1. Creeer een pagina onder **WKND** > **V.S.** > **EN** > **Tijdschrift**.
    * Kies het **malplaatje van de Pagina van het Artikel**.
    * Onder **Eigenschappen** plaats de **Titel** aan &quot;Ultieme Gids aan LA Skateparks&quot;
    * Plaats de **Naam** aan &quot;gids-la-skateparks&quot;
 1. Vervang **door de Titel van de Auteur** met de tekst &quot;door Stacey Roswells&quot;.
-1. Werk de **component van de Tekst** bij om een paragraaf te omvatten om het artikel te bevolken. U kunt het volgende tekstdossier als exemplaar gebruiken: [ la-skate-parks-copy.txt ](assets/pages-templates/la-skateparks-copy.txt).
+1. Werk de **component van de Tekst** bij om een paragraaf te omvatten om het artikel te bevolken. U kunt het volgende tekstdossier als exemplaar gebruiken: [&#x200B; la-skate-parks-copy.txt &#x200B;](assets/pages-templates/la-skateparks-copy.txt).
 1. Voeg een andere **component van de Tekst** toe.
    * Werk de component bij om het aanhalingsteken op te nemen: &quot;Er is geen betere plaats om te delen dan Los Angeles.&quot;.
    * Bewerk de Rijke Redacteur van de Tekst op het volledig-schermwijze en wijzig het bovengenoemde citaat om het **element van het Blok van 0&rbrace; Citaat te gebruiken.**
@@ -240,11 +240,11 @@ Op dit punt is de artikelpagina duidelijk ongeopend. De basisstructuur is echter
 
 Gebruik het hulpmiddel CRXDE-Lite op een lokale AEM instantie om de onderliggende knoopstructuur te bekijken.
 
-1. Open [ CRXDE-Lite ](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent) en gebruik de boomnavigatie om aan `/content/wknd/us/en/magazine/guide-la-skateparks` te navigeren.
+1. Open [&#x200B; CRXDE-Lite &#x200B;](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent) en gebruik de boomnavigatie om aan `/content/wknd/us/en/magazine/guide-la-skateparks` te navigeren.
 
 1. Klik op het knooppunt `jcr:content` onder de pagina `la-skateparks` en bekijk de eigenschappen:
 
-   ![ eigenschappen van de Inhoud JCR ](assets/pages-templates/jcr-content-properties-CRXDELite.png)
+   ![&#x200B; eigenschappen van de Inhoud JCR &#x200B;](assets/pages-templates/jcr-content-properties-CRXDELite.png)
 
    Let op de waarde voor `cq:template` , die verwijst naar `/conf/wknd/settings/wcm/templates/article-page` , de sjabloon voor artikelpagina die u eerder hebt gemaakt.
 
@@ -252,17 +252,17 @@ Gebruik het hulpmiddel CRXDE-Lite op een lokale AEM instantie om de onderliggend
 
 1. Vouw het knooppunt `jcr:content` onder `/content/wknd/us/en/magazine/guide-la-skateparks/jcr:content` uit en bekijk de hiërarchie van het knooppunt:
 
-   ![ JCR Inhoud LA Skateparks ](assets/pages-templates/page-jcr-structure.png)
+   ![&#x200B; JCR Inhoud LA Skateparks &#x200B;](assets/pages-templates/page-jcr-structure.png)
 
    U zou elk van de knopen aan componenten moeten kunnen losjes in kaart brengen die werden authored. Controleer of u de verschillende containers voor lay-out kunt identificeren die worden gebruikt door de knooppunten te inspecteren die vooraf zijn ingesteld op `container` .
 
 1. Controleer vervolgens de paginacomponent bij `/apps/wknd/components/page` . De componenteigenschappen weergeven in CRXDE Lite:
 
-   ![ eigenschappen van de Component van de Pagina ](assets/pages-templates/page-component-properties.png)
+   ![&#x200B; eigenschappen van de Component van de Pagina &#x200B;](assets/pages-templates/page-component-properties.png)
 
    Er staan slechts twee HTML-scripts, `customfooterlibs.html` en `customheaderlibs.html` onder de paginacomponent. *zo hoe geeft deze component de pagina terug?*
 
-   De eigenschap `sling:resourceSuperType` verwijst naar `core/wcm/components/page/v2/page` . Dit bezit staat de de paginacomponent van WKND toe om **alle** de functionaliteit van de de paginacomponent van de Component van de Kern te erven. Dit is het eerste voorbeeld van iets genoemd het [ Patroon van de Component van de Volmacht ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=nl-NL#ProxyComponentPattern). Meer informatie kan [ hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=nl-NL) worden gevonden.
+   De eigenschap `sling:resourceSuperType` verwijst naar `core/wcm/components/page/v2/page` . Dit bezit staat de de paginacomponent van WKND toe om **alle** de functionaliteit van de de paginacomponent van de Component van de Kern te erven. Dit is het eerste voorbeeld van iets genoemd het [&#x200B; Patroon van de Component van de Volmacht &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=nl-NL#ProxyComponentPattern). Meer informatie kan [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=nl-NL) worden gevonden.
 
 1. Inspect een andere component binnen de WKND-componenten, de `Breadcrumb` -component van: `/apps/wknd/components/breadcrumb` . Dezelfde eigenschap `sling:resourceSuperType` kan worden gevonden, maar deze keer verwijst deze naar `core/wcm/components/breadcrumb/v2/breadcrumb` . Dit is een ander voorbeeld van het gebruiken van het de componentenpatroon van de Volmacht om een Component van de Kern te omvatten. In feite, zijn alle componenten in de WKND codebasis volmachten van AEMComponenten van de Kern (behalve de component van douane demo HelloWorld). Het is beste praktijken om zoveel mogelijk van de functionaliteit van de Componenten van de Kern te hergebruiken *alvorens* douanecode te schrijven.
 
@@ -272,7 +272,7 @@ Gebruik het hulpmiddel CRXDE-Lite op een lokale AEM instantie om de onderliggend
    >
    > In AEM 6.5/6.4 bevinden de Core Components zich onder `/apps/core/wcm/components`. In AEM as a Cloud Service bevinden de Core Components zich onder `/libs` en worden deze automatisch bijgewerkt.
 
-   ![ Pagina van de Component van de Kern ](assets/pages-templates/core-page-component-properties.png)
+   ![&#x200B; Pagina van de Component van de Kern &#x200B;](assets/pages-templates/core-page-component-properties.png)
 
    U ziet dat er veel scriptbestanden onder deze pagina staan. De pagina Core Component bevat een groot aantal functies. Deze functionaliteit is opgedeeld in meerdere scripts voor eenvoudiger onderhoud en leesbaarheid. U kunt de opname van de HTML-scripts overtrekken door de `page.html` te openen en naar `data-sly-include` te zoeken:
 
@@ -312,7 +312,7 @@ Gebruik het hulpmiddel CRXDE-Lite op een lokale AEM instantie om de onderliggend
 
    De andere reden om HTML in veelvoudige manuscripten uit te breken is de volmachtscomponenten toe te staan om individuele manuscripten met voeten te treden om douanebedrijfslogica uit te voeren. De HTML-scripts `customfooterlibs.html` en `customheaderlibs.html` worden gemaakt voor het expliciete doel dat moet worden overschreven door het implementeren van projecten.
 
-   U kunt meer over leren hoe de Bewerkbare factoren van het Malplaatje in het teruggeven van de [ inhoudspagina door dit artikel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=nl-NL) te lezen.
+   U kunt meer over leren hoe de Bewerkbare factoren van het Malplaatje in het teruggeven van de [&#x200B; inhoudspagina door dit artikel &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=nl-NL) te lezen.
 
 1. Inspect nog een Core-component, zoals de Breadcrumb op `/libs/core/wcm/components/breadcrumb/v2/breadcrumb` . Bekijk het `breadcrumb.html` manuscript om te begrijpen hoe de prijsverhoging voor de component Breadcrumb uiteindelijk wordt geproduceerd.
 
@@ -324,7 +324,7 @@ Vaak, vooral aan het begin van een AEM project is het waardevol om configuraties
 Voor nu, worden de malplaatjes behandeld als andere stukken van code en synchroniseer neer het **Malplaatje van de Pagina van het Artikel** als deel van het project.
 Tot nu toe wordt de code geduwd van het AEM project aan een lokaal geval van AEM. Het **Malplaatje van de Pagina van het Artikel** werd gecreeerd direct op een lokaal geval van AEM, zodat moet het **&#x200B;**&#x200B;het malplaatje in het AEM project invoeren. De {**module 0} ui.content is inbegrepen in het AEM project voor dit specifieke doel.**
 
-De volgende paar stappen worden gedaan in winde VSCode gebruikend [ VSCode AEM de stop van de Synchronisatie ](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync&amp;ssr=false#overview). Maar zij konden doen gebruikend om het even welke winde die u aan **invoert** of inhoud van een lokale instantie van AEM hebt gevormd.
+De volgende paar stappen worden gedaan in winde VSCode gebruikend [&#x200B; VSCode AEM de stop van de Synchronisatie &#x200B;](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync&ssr=false#overview). Maar zij konden doen gebruikend om het even welke winde die u aan **invoert** of inhoud van een lokale instantie van AEM hebt gevormd.
 
 1. In, opent VSCode het `aem-guides-wknd` project.
 
@@ -332,15 +332,15 @@ De volgende paar stappen worden gedaan in winde VSCode gebruikend [ VSCode AEM d
 
 1. [!UICONTROL Right+Click] de `templates` omslag en selecteer **Invoer van AEM Server**:
 
-   ![ VSCode het invoermalplaatje ](assets/pages-templates/vscode-import-templates.png)
+   ![&#x200B; VSCode het invoermalplaatje &#x200B;](assets/pages-templates/vscode-import-templates.png)
 
    De sjablonen `article-page` moeten worden geïmporteerd en `page-content` , `xf-web-variation` moeten ook worden bijgewerkt.
 
-   ![ Bijgewerkte malplaatjes ](assets/pages-templates/updated-templates.png)
+   ![&#x200B; Bijgewerkte malplaatjes &#x200B;](assets/pages-templates/updated-templates.png)
 
 1. Herhaal de stappen om inhoud in te voeren maar selecteer de **beleid** omslag van `/conf/wknd/settings/wcm/policies`.
 
-   ![ VSCode het invoerbeleid ](assets/pages-templates/policies-article-page-template.png)
+   ![&#x200B; VSCode het invoerbeleid &#x200B;](assets/pages-templates/policies-article-page-template.png)
 
 1. Inspect het `filter.xml` -bestand van `ui.content/src/main/content/META-INF/vault/filter.xml` .
 
@@ -355,7 +355,7 @@ De volgende paar stappen worden gedaan in winde VSCode gebruikend [ VSCode AEM d
    </workspaceFilter>
    ```
 
-   Het bestand `filter.xml` identificeert de paden van knooppunten die met het pakket zijn geïnstalleerd. Let op `mode="merge"` op elk van de filters die aangeeft dat bestaande inhoud niet moet worden gewijzigd, alleen nieuwe inhoud wordt toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing **&#x200B;**&#x200B;geen inhoud overschrijft. Zie de [ documentatie FileVault ](https://jackrabbit.apache.org/filevault/filter.html) voor meer details bij het werken met filterelementen.
+   Het bestand `filter.xml` identificeert de paden van knooppunten die met het pakket zijn geïnstalleerd. Let op `mode="merge"` op elk van de filters die aangeeft dat bestaande inhoud niet moet worden gewijzigd, alleen nieuwe inhoud wordt toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing **&#x200B;**&#x200B;geen inhoud overschrijft. Zie de [&#x200B; documentatie FileVault &#x200B;](https://jackrabbit.apache.org/filevault/filter.html) voor meer details bij het werken met filterelementen.
 
    Vergelijk `ui.content/src/main/content/META-INF/vault/filter.xml` en `ui.apps/src/main/content/META-INF/vault/filter.xml` om inzicht te krijgen in de verschillende knooppunten die door elke module worden beheerd.
 
@@ -369,9 +369,9 @@ U hebt een sjabloon en pagina met Adobe Experience Manager Sites gemaakt.
 
 ### Volgende stappen {#next-steps}
 
-Op dit punt is de artikelpagina duidelijk ongeopend. Volg de [ cliënt-Kant Bibliotheken en Voorste-end van het Werkschema ](client-side-libraries.md) leerprogramma om de beste praktijken voor het omvatten van CSS en JavaScript te leren om globale stijlen op de plaats toe te passen en een specifieke front-end bouwstijl te integreren.
+Op dit punt is de artikelpagina duidelijk ongeopend. Volg de [&#x200B; cliënt-Kant Bibliotheken en Voorste-end van het Werkschema &#x200B;](client-side-libraries.md) leerprogramma om de beste praktijken voor het omvatten van CSS en JavaScript te leren om globale stijlen op de plaats toe te passen en een specifieke front-end bouwstijl te integreren.
 
-Bekijk de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd) of herzie en stel plaatselijk de code bij de tak van het Git `tutorial/pages-templates-solution` op.
+Bekijk de gebeëindigde code op [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd) of herzie en stel plaatselijk de code bij de tak van het Git `tutorial/pages-templates-solution` op.
 
-1. Kloon de [ github.com/adobe/aem-wknd-guides ](https://github.com/adobe/aem-guides-wknd) bewaarplaats.
+1. Kloon de [&#x200B; github.com/adobe/aem-wknd-guides &#x200B;](https://github.com/adobe/aem-guides-wknd) bewaarplaats.
 1. Bekijk de `tutorial/pages-templates-solution` -vertakking.

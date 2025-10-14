@@ -19,15 +19,15 @@ ht-degree: 0%
 
 # Gelokaliseerde inhoud met AEM Headless
 
-AEM verstrekt het Kader van de Integratie van de a [ Vertaling ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html?lang=nl-NL) voor hoofdloze inhoud, toestaand de Fragmenten van de Inhoud en het steunen van activa om voor gebruik over scènes gemakkelijk worden vertaald. Dit is hetzelfde framework dat wordt gebruikt voor het vertalen van andere AEM-inhoud, zoals Pagina&#39;s, Experience Fragments, Assets en Forms. Zodra [ hoofdloze inhoud is vertaald ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=nl-NL), en gepubliceerd, is het klaar voor consumptie door hoofdloze toepassingen.
+AEM verstrekt het Kader van de Integratie van de a [&#x200B; Vertaling &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html?lang=nl-NL) voor hoofdloze inhoud, toestaand de Fragmenten van de Inhoud en het steunen van activa om voor gebruik over scènes gemakkelijk worden vertaald. Dit is hetzelfde framework dat wordt gebruikt voor het vertalen van andere AEM-inhoud, zoals Pagina&#39;s, Experience Fragments, Assets en Forms. Zodra [&#x200B; hoofdloze inhoud is vertaald &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=nl-NL), en gepubliceerd, is het klaar voor consumptie door hoofdloze toepassingen.
 
 ## Assets-mapstructuur{#assets-folder-structure}
 
-Zorg ervoor dat de gelokaliseerde Fragments van de Inhoud in AEM de [ geadviseerde localisatiestructuur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html?lang=nl-NL#recommended-structure) volgen.
+Zorg ervoor dat de gelokaliseerde Fragments van de Inhoud in AEM de [&#x200B; geadviseerde localisatiestructuur &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html?lang=nl-NL#recommended-structure) volgen.
 
-![ Gelokaliseerde de activaomslagen van AEM ](./assets/localized-content/asset-folders.jpg)
+![&#x200B; Gelokaliseerde de activaomslagen van AEM &#x200B;](./assets/localized-content/asset-folders.jpg)
 
-De scèneomslagen moeten siblings zijn, en de omslagnaam, eerder dan titel, moet een geldige [ ISO 639-1 code ](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) zijn die de scène van de inhoud vertegenwoordigt in de omslag.
+De scèneomslagen moeten siblings zijn, en de omslagnaam, eerder dan titel, moet een geldige [&#x200B; ISO 639-1 code &#x200B;](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) zijn die de scène van de inhoud vertegenwoordigt in de omslag.
 
 De landinstellingscode is ook de waarde die wordt gebruikt om de inhoudsfragmenten te filteren die door de GraphQL-query worden geretourneerd.
 
@@ -39,7 +39,7 @@ De landinstellingscode is ook de waarde die wordt gebruikt om de inhoudsfragment
 
 ## GraphQL-query voortgezet
 
-AEM biedt een `_locale` GraphQL-filter dat inhoud automatisch filtert op landinstellingscode. Bijvoorbeeld, die alle Engelse avonturen in het [ project van de Plaats WKND ](https://github.com/adobe/aem-guides-wknd) vragen kan met een nieuwe persisted vraag `wknd-shared/adventures-by-locale` worden gedaan die als wordt bepaald:
+AEM biedt een `_locale` GraphQL-filter dat inhoud automatisch filtert op landinstellingscode. Bijvoorbeeld, die alle Engelse avonturen in het [&#x200B; project van de Plaats WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) vragen kan met een nieuwe persisted vraag `wknd-shared/adventures-by-locale` worden gedaan die als wordt bepaald:
 
 ```graphql
 query($locale: String!) {
@@ -52,7 +52,7 @@ query($locale: String!) {
 }
 ```
 
-De `$locale` variabele die in de `_locale` filter wordt gebruikt vereist de scènecode (bijvoorbeeld `en`, `en_us`, of `de`) zoals die in [ wordt gespecificeerd AEM element omslag-basis localisatieovereenkomst ](#assets-folder-structure).
+De `$locale` variabele die in de `_locale` filter wordt gebruikt vereist de scènecode (bijvoorbeeld `en`, `en_us`, of `de`) zoals die in [&#x200B; wordt gespecificeerd AEM element omslag-basis localisatieovereenkomst &#x200B;](#assets-folder-structure).
 
 ## Voorbeeld Reageren
 
@@ -60,7 +60,7 @@ Laten we een eenvoudige React-toepassing maken die bepaalt welke Adventure-inhou
 
 Wanneer __Engels__ in de scèneselecteur wordt geselecteerd, dan zijn de Engelse Fragmenten van de Inhoud van het Avontuur onder `/content/dam/wknd/en` teruggekeerd, wanneer __Spaans__ wordt geselecteerd, dan de Spaanse Fragmenten van de Inhoud onder `/content/dam/wknd/es`, etc., etc.
 
-![ Gelokaliseerde Reactie voorbeeld app ](./assets/localized-content/react-example.png)
+![&#x200B; Gelokaliseerde Reactie voorbeeld app &#x200B;](./assets/localized-content/react-example.png)
 
 ### Een `LocaleContext` maken{#locale-context}
 
@@ -113,7 +113,7 @@ De component Adventures zoekt AEM naar alle avonturen per landinstelling en geef
 
 Deze benadering kan tot andere vragen in uw toepassing worden uitgebreid, die ervoor zorgt dat alle vragen slechts inhoud omvatten die door de scèneselectie van een gebruiker wordt gespecificeerd.
 
-Het vragen tegen AEM wordt uitgevoerd in de haken van het douaneantwoord [ getAdventuresByLocale, die in meer detail op de het vragen van AEM GraphQL documentatie ](./aem-headless-sdk.md) wordt beschreven.
+Het vragen tegen AEM wordt uitgevoerd in de haken van het douaneantwoord [&#x200B; getAdventuresByLocale, die in meer detail op de het vragen van AEM GraphQL documentatie &#x200B;](./aem-headless-sdk.md) wordt beschreven.
 
 ```javascript
 // src/Adventures.js
@@ -141,7 +141,7 @@ export default function Adventures() {
 
 ### Definieer de `App.js`{#app-js}
 
-Als laatste koppelt u de toepassing React aan elkaar door de toepassing React in de `LanguageContext.Provider` te plaatsen en de waarde voor de landinstelling in te stellen. Dit staat de andere componenten van het Reageren, [ LocaleSwitcher ](#locale-switcher), en [ avonturen ](#adventures) toe om de staat van de scèneselectie te delen.
+Als laatste koppelt u de toepassing React aan elkaar door de toepassing React in de `LanguageContext.Provider` te plaatsen en de waarde voor de landinstelling in te stellen. Dit staat de andere componenten van het Reageren, [&#x200B; LocaleSwitcher &#x200B;](#locale-switcher), en [&#x200B; avonturen &#x200B;](#adventures) toe om de staat van de scèneselectie te delen.
 
 ```javascript
 // src/App.js

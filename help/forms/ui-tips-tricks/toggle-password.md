@@ -21,7 +21,7 @@ ht-degree: 0%
 # Zichtbaarheid wachtwoordveld in-/uitschakelen
 
 Een veelvoorkomend geval is dat de invullers van het formulier kunnen schakelen naar de zichtbaarheid van de tekst die in het wachtwoordveld wordt ingevoerd.
-Om dit gebruiksgeval te verwezenlijken, heb ik het oogpictogram van de [ Font Awesome Bibliotheek ](https://fontawesome.com/) gebruikt. De vereiste CSS en eye.svg zijn opgenomen in de clientbibliotheek die voor deze demonstratie is gemaakt.
+Om dit gebruiksgeval te verwezenlijken, heb ik het oogpictogram van de [&#x200B; Font Awesome Bibliotheek &#x200B;](https://fontawesome.com/) gebruikt. De vereiste CSS en eye.svg zijn opgenomen in de clientbibliotheek die voor deze demonstratie is gemaakt.
 
 
 
@@ -68,8 +68,8 @@ Het volgende CSS werd gebruikt om het **oog** pictogram binnen het wachtwoordgeb
 
 ## Voorbeeld van wachtwoorden in-/uitschakelen implementeren
 
-* Download de [ cliëntbibliotheek ](assets/simple-ui-tips.zip)
-* Download de [ steekproefvorm ](assets/simple-ui-tricks-form.zip)
-* Importeer de cliëntbibliotheek gebruikend [ pakketmanager UI ](http://localhost:4502/crx/packmgr/index.jsp)
-* Importeer de steekproefvorm gebruikend [ Forms en Document ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [ Voorproef de vorm ](http://localhost:4502/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
+* Download de [&#x200B; cliëntbibliotheek &#x200B;](assets/simple-ui-tips.zip)
+* Download de [&#x200B; steekproefvorm &#x200B;](assets/simple-ui-tricks-form.zip)
+* Importeer de cliëntbibliotheek gebruikend [&#x200B; pakketmanager UI &#x200B;](http://localhost:4502/crx/packmgr/index.jsp)
+* Importeer de steekproefvorm gebruikend [&#x200B; Forms en Document &#x200B;](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [&#x200B; Voorproef de vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)

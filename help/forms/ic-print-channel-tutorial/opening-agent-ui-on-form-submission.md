@@ -57,12 +57,12 @@ Lijn 12-13: Door:sturen het verzoek aan servlet
 Deze mogelijkheid testen op uw server
 
 * [Importeer en installeer de aan dit artikel gerelateerde elementen met gebruik van pakketbeheer.](assets/launch-agent-ui.zip)
-* [ Login aan configMgr ](http://localhost:4502/system/console/configMgr)
+* [&#x200B; Login aan configMgr &#x200B;](http://localhost:4502/system/console/configMgr)
 * Onderzoek naar _Granite CSRF Filter van Adobe_
 * _/content/getprintchannel_ toevoegen aan de uitgesloten paden
 * Sla uw wijzigingen op.
-* [ Open POST.jsp ](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp). Zorg ervoor dat de tekenreeks die aan FormFieldRequestParameter is doorgegeven, geldig documentId is.(regel 19).
-* [ open webpage ](http://localhost:4502/content/OpenPrintChannel.html) en ga accountnummer in en verzend de vorm.
+* [&#x200B; Open POST.jsp &#x200B;](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp). Zorg ervoor dat de tekenreeks die aan FormFieldRequestParameter is doorgegeven, geldig documentId is.(regel 19).
+* [&#x200B; open webpage &#x200B;](http://localhost:4502/content/OpenPrintChannel.html) en ga accountnummer in en verzend de vorm.
 * De interface van de agent UI zou met de gegevens moeten openen pre-bevolkt specifiek voor het rekeningsaantal ingegaan in de vorm.
 
 >[!NOTE]

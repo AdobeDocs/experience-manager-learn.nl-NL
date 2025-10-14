@@ -23,19 +23,19 @@ AEM Forms 6.5 introduceerde de capaciteit om de functies van JavaScript te bepal
 AEM Forms biedt een aantal van dergelijke aangepaste functies uit de verpakking, maar u hebt de behoefte om uw eigen aangepaste functies te definiëren en deze in meerdere formulieren te gebruiken.
 
 Voer de volgende stappen uit om uw eerste aangepaste functie te definiëren:
-* [ Logboek in crx ](http://localhost:4502/crx/de/index.jsp#/apps/experience-league/clientlibs)
+* [&#x200B; Logboek in crx &#x200B;](http://localhost:4502/crx/de/index.jsp#/apps/experience-league/clientlibs)
 * Een nieuwe map maken onder de apps met de naam Experience-League (deze mapnaam kan een naam naar keuze zijn)
 * Sla uw wijzigingen op.
 * Maak in de map Experience-League een nieuw knooppunt van het type cq:ClientLibraryFolder genaamd clientlibs.
 * Selecteer de map Clientlibs die u net hebt gemaakt en voeg de eigenschappen allowProxy en category toe, zoals weergegeven in de schermafbeelding, en sla uw wijzigingen op.
 
-![ cliënt-lib ](assets/custom-functions.png)
+![&#x200B; cliënt-lib &#x200B;](assets/custom-functions.png)
 * Creeer een omslag genoemd **js** onder de **clientlibs** omslag
 * Creeer een dossier genoemd **functions.js** onder de **js** omslag
 * Creeer een dossier genoemd **js.txt** onder de **clientlibs** omslag. Sla uw wijzigingen op.
 * De mapstructuur moet eruitzien als de onderstaande schermafbeelding.
 
-![ Redacteur van de Regel ](assets/folder-structure.png)
+![&#x200B; Redacteur van de Regel &#x200B;](assets/folder-structure.png)
 
 * Dubbelklik op functions.js om de editor te openen.
 Kopieer de volgende code naar functions.js en sla uw wijzigingen op.
@@ -65,7 +65,7 @@ function convertUTC(strUTCString)
 }
 ```
 
-Gelieve te verwijzen [ naar jsdoc ](https://jsdoc.app/index.html) voor meer details bij het annoteren van functies javascript.
+Gelieve te verwijzen [&#x200B; naar jsdoc &#x200B;](https://jsdoc.app/index.html) voor meer details bij het annoteren van functies javascript.
 De bovenstaande code heeft twee functies:
 **getCountyNamesList** - keert een serie van koord terug
 **convertUTC** - zet UTC tijdstempel in lokale tijdzone om
@@ -80,7 +80,7 @@ functions.js
 De regel #base=js geeft aan in welke map de JavaScript-bestanden zich bevinden.
 De onderstaande regels geven de locatie van het JavaScript-bestand aan ten opzichte van de basislocatie.
 
-Als u in het creëren van de douanefuncties problemen hebt, voel vrij om [ dit pakket ](assets/custom-functions.zip) in uw instantie van AEM te downloaden en te installeren.
+Als u in het creëren van de douanefuncties problemen hebt, voel vrij om [&#x200B; dit pakket &#x200B;](assets/custom-functions.zip) in uw instantie van AEM te downloaden en te installeren.
 
 ## De aangepaste functies gebruiken
 

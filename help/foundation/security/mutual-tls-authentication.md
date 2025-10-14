@@ -35,7 +35,7 @@ javax.net.ssl.SSLHandshakeException: Received fatal alert: certificate_required
 
 Dit probleem doet zich voor wanneer de client geen certificaat voor verificatie presenteert.
 
-Leer hoe te met succes APIs roepen die mTLS authentificatie door [ Apache HttpClient ](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) en **AEM KeyStore en TrustStore** vereisen te gebruiken.
+Leer hoe te met succes APIs roepen die mTLS authentificatie door [&#x200B; Apache HttpClient &#x200B;](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) en **AEM KeyStore en TrustStore** vereisen te gebruiken.
 
 
 ## HttpClient en laad AEM KeyStore-materiaal
@@ -96,7 +96,7 @@ Voer de volgende stappen uit om een AEM-certificaat te importeren:
 
 1. Navigeer aan **Auteur van AEM > Hulpmiddelen > Veiligheid > Gebruikers > creëren of selecteren een bestaande gebruiker**.
 
-   ![ creeer of selecteer een bestaande gebruiker ](assets/mutual-tls-authentication/create-or-select-user.png)
+   ![&#x200B; creeer of selecteer een bestaande gebruiker &#x200B;](assets/mutual-tls-authentication/create-or-select-user.png)
 
    Voor demo-doeleinden wordt een nieuwe gebruiker met de naam `mtl-demo-user` gemaakt.
 
@@ -104,7 +104,7 @@ Voer de volgende stappen uit om een AEM-certificaat te importeren:
 
 1. Klik **Keystore** lusje en klik dan **creëren Keystore** knoop. Dan in de **Vastgestelde dialoog van het Wachtwoord van de Toegang KeyStore**, plaats een wachtwoord voor keystore van deze gebruiker en klik sparen.
 
-   ![ creeer Keystore ](assets/mutual-tls-authentication/create-keystore.png)
+   ![&#x200B; creeer Keystore &#x200B;](assets/mutual-tls-authentication/create-keystore.png)
 
 1. In het nieuwe scherm, onder **VOEG PRIVATE SLEUTEL VAN DER DOSSIER** sectie TOE, volg de hieronder stappen:
 
@@ -116,13 +116,13 @@ Voer de volgende stappen uit om een AEM-certificaat te importeren:
 
    1. Klik op Verzenden
 
-      ![ de Privé Sleutel van AEM van de Invoer &lbrace;](assets/mutual-tls-authentication/import-aem-private-key.png)
+      ![&#x200B; de Privé Sleutel van AEM van de Invoer &lbrace;](assets/mutual-tls-authentication/import-aem-private-key.png)
 
 1. Controleer of het certificaat is geïmporteerd.
 
-   ![ Geïmporteerde de Privé Sleutel en Certificaat van AEM ](assets/mutual-tls-authentication/aem-privatekey-cert-imported.png)
+   ![&#x200B; Geïmporteerde de Privé Sleutel en Certificaat van AEM &#x200B;](assets/mutual-tls-authentication/aem-privatekey-cert-imported.png)
 
-Als de API leverancier een zelfondertekend certificaat van CA gebruikt, voer het ontvangen certificaat in AEM TrustStore in, volg de stappen van [ hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html?lang=nl-NL#httpclient-and-load-aem-truststore-material).
+Als de API leverancier een zelfondertekend certificaat van CA gebruikt, voer het ontvangen certificaat in AEM TrustStore in, volg de stappen van [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html?lang=nl-NL#httpclient-and-load-aem-truststore-material).
 
 En als AEM een zelfondertekend CA-certificaat gebruikt, vraagt u de API-provider om dit te importeren.
 
@@ -215,18 +215,18 @@ private KeyStore getAEMTrustStore(KeyStoreService keyStoreService, ResourceResol
 - Injecteer de OOTB `com.adobe.granite.keystore.KeyStoreService` OSGi-service in uw OSGi-component.
 - Haal de AEM KeyStore van de gebruiker op met `KeyStoreService` en `ResourceResolver` , de methode `getAEMKeyStore(...)` doet dat.
 - Als de API-provider een zelfondertekend CA-certificaat gebruikt, haalt u de algemene AEM TrustStore op, de methode `getAEMTrustStore(...)` doet dat.
-- Creeer een voorwerp van `SSLContextBuilder`, zie Java™ [ API details ](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html).
+- Creeer een voorwerp van `SSLContextBuilder`, zie Java™ [&#x200B; API details &#x200B;](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html).
 - Laad de AEM KeyStore van de gebruiker in `SSLContextBuilder` gebruikend `loadKeyMaterial(final KeyStore keystore,final char[] keyPassword)` methode.
 - Het keystore wachtwoord is het wachtwoord dat toen het creëren van keystore werd geplaatst, zou het in OSGi config moeten worden opgeslagen, zie {de Waarden van de Configuratie 0} Geheime [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=nl-NL#secret-configuration-values).
 
 ## Wijzigingen in JVM-sleutelarchief vermijden
 
-Een conventionele benadering om mTLS APIs met privé certificaten effectief aan te halen impliceert het wijzigen van JVM Keystore. Het wordt bereikt door de privé certificaten in te voeren gebruikend het Java™ [ keytool ](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549) bevel.
+Een conventionele benadering om mTLS APIs met privé certificaten effectief aan te halen impliceert het wijzigen van JVM Keystore. Het wordt bereikt door de privé certificaten in te voeren gebruikend het Java™ [&#x200B; keytool &#x200B;](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549) bevel.
 
-Nochtans, wordt deze methode niet gericht op veiligheid beste praktijken en AEM biedt een superieure optie door het gebruik van **User-specific KeyStores en Global TrustStore** en [ KeyStoreService ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html) aan.
+Nochtans, wordt deze methode niet gericht op veiligheid beste praktijken en AEM biedt een superieure optie door het gebruik van **User-specific KeyStores en Global TrustStore** en [&#x200B; KeyStoreService &#x200B;](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html) aan.
 
 ## Oplossingspakket
 
-Het steekproefproject Node.js dat in de video wordt gedemoed kan van [ hier ](assets/internal-api-call/REST-APIs.zip) worden gedownload.
+Het steekproefproject Node.js dat in de video wordt gedemoed kan van [&#x200B; hier &#x200B;](assets/internal-api-call/REST-APIs.zip) worden gedownload.
 
-De servletcode van AEM is beschikbaar in de 0&rbrace; tak van het Project van Plaatsen WKND &lbrace;, [ zie ](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).`tutorial/web-api-invocation`
+De servletcode van AEM is beschikbaar in de 0&rbrace; tak van het Project van Plaatsen WKND &lbrace;, [&#x200B; zie &#x200B;](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).`tutorial/web-api-invocation`

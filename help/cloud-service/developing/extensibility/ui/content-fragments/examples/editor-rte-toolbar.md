@@ -37,7 +37,7 @@ Dit voorbeeld breidt zich tot uitbreidingspunt `rte` uit om douaneknoop aan RTE 
 
 | AEM-gebruikersinterface uitgebreid | Extensiepunt |
 | ------------------------ | --------------------- | 
-| [ de Redacteur van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [ rijke Toolbar van de Redacteur van de Tekst ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/) |
+| [&#x200B; de Redacteur van het Fragment van de Inhoud &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [&#x200B; rijke Toolbar van de Redacteur van de Tekst &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/) |
 
 ## Voorbeeldextensie
 

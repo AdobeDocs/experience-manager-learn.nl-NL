@@ -26,9 +26,9 @@ In dit hoofdstuk, onderzoeken wij de onderliggende technologie van een Component
 
 ## Vereisten {#prerequisites}
 
-Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikkelomgeving ](./overview.md#local-dev-environment).
+Herzie het vereiste tooling en de instructies voor vestiging a [&#x200B; lokale ontwikkelomgeving &#x200B;](./overview.md#local-dev-environment).
 
-winde in de video&#39;s wordt gebruikt is [ Code van Visual Studio ](https://code.visualstudio.com/) en de [ VSCode AEM 3&rbrace; insteekmodule die van de Synchronisatie &lbrace;.](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync)
+winde in de video&#39;s wordt gebruikt is [&#x200B; Code van Visual Studio &#x200B;](https://code.visualstudio.com/) en de [&#x200B; VSCode AEM 3&rbrace; insteekmodule die van de Synchronisatie &lbrace;.](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync)
 
 ## Doelstelling {#objective}
 
@@ -42,7 +42,7 @@ In dit hoofdstuk voert u verschillende wijzigingen uit in een eenvoudige `HelloW
 
 ## Hoofdstukstartproject {#starter-project}
 
-Dit hoofdstuk bouwt op een generisch project voort dat door het [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) wordt geproduceerd. Bekijk de hieronder video en herzie de [ eerste vereisten ](#prerequisites) om begonnen te worden!
+Dit hoofdstuk bouwt op een generisch project voort dat door het [&#x200B; Archetype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype) wordt geproduceerd. Bekijk de hieronder video en herzie de [&#x200B; eerste vereisten &#x200B;](#prerequisites) om begonnen te worden!
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Dit hoofdstuk bouwt op een generisch project voort dat door het [ Archetype van 
 
 Open een nieuwe opdrachtregelterminal en voer de volgende handelingen uit.
 
-1. In een lege folder, kloon de [ aem-gidsen-wint ](https://github.com/adobe/aem-guides-wknd) bewaarplaats:
+1. In een lege folder, kloon de [&#x200B; aem-gidsen-wint &#x200B;](https://github.com/adobe/aem-guides-wknd) bewaarplaats:
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd.git --branch tutorial/component-basics-start --single-branch
@@ -60,7 +60,7 @@ Open een nieuwe opdrachtregelterminal en voer de volgende handelingen uit.
 
    >[!NOTE]
    >
-   > Naar keuze, kunt u blijven gebruikend het project dat in het vorige hoofdstuk, [ de Opstelling van het Project ](./project-setup.md) wordt geproduceerd.
+   > Naar keuze, kunt u blijven gebruikend het project dat in het vorige hoofdstuk, [&#x200B; de Opstelling van het Project &#x200B;](./project-setup.md) wordt geproduceerd.
 
 1. Navigeer naar de map `aem-guides-wknd` .
 
@@ -82,7 +82,7 @@ Open een nieuwe opdrachtregelterminal en voer de volgende handelingen uit.
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. Importeer het project in uw aangewezen winde door de instructies te volgen aan opstelling a [ lokale ontwikkelomgeving ](overview.md#local-dev-environment).
+1. Importeer het project in uw aangewezen winde door de instructies te volgen aan opstelling a [&#x200B; lokale ontwikkelomgeving &#x200B;](overview.md#local-dev-environment).
 
 ## Componentontwerp {#component-authoring}
 
@@ -100,7 +100,7 @@ Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden 
 
 ## HTML (HTML Template Language) en dialoogvensters {#htl-dialogs}
 
-De Taal van het Malplaatje van HTML of **[HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html?lang=nl-NL)** is een licht-gewicht, server-zijhet bemonsteren taal die door de componenten van AEM wordt gebruikt om inhoud terug te geven.
+De Taal van het Malplaatje van HTML of **[HTML &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html?lang=nl-NL)** is een licht-gewicht, server-zijhet bemonsteren taal die door de componenten van AEM wordt gebruikt om inhoud terug te geven.
 
 **de Dialogen** bepalen de beschikbare configuraties die voor een component kunnen worden gemaakt.
 
@@ -112,7 +112,7 @@ Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden 
 
 1. Ga naar winde en open het project aan de `ui.apps` module.
 1. Open het `helloworld.html` -bestand en werk de HTML Markup bij.
-1. Gebruik de hulpmiddelen van winde zoals [ de Synchronisatie van AEM VSCode ](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) om de dossierverandering met de lokale instantie van AEM te synchroniseren.
+1. Gebruik de hulpmiddelen van winde zoals [&#x200B; de Synchronisatie van AEM VSCode &#x200B;](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) om de dossierverandering met de lokale instantie van AEM te synchroniseren.
 1. Ga terug naar de browser en bekijk hoe de component is gerenderd.
 1. Open het bestand `.content.xml` dat het dialoogvenster voor de `HelloWorld` -component definieert op:
 
@@ -262,7 +262,7 @@ Laten we nu enkele updates uitvoeren op het `HelloWorldModel` Sling-model om eni
 
    De modelinstantie `HelloWorld` is nu beschikbaar in de HTML via de variabele `model` met behulp van `HelloWord` . Deze methodeaanroepen kunnen bijvoorbeeld gebruik maken van een verkorte syntaxis: `${model.getTitle()}` kan worden ingekort tot `${model.title}` .
 
-   Op dezelfde manier worden alle manuscripten HTML geïnjecteerd met [ globale voorwerpen ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html?lang=nl-NL) die kunnen worden betreden gebruikend de zelfde syntaxis zoals de het Verdelen Modelvoorwerpen.
+   Op dezelfde manier worden alle manuscripten HTML geïnjecteerd met [&#x200B; globale voorwerpen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html?lang=nl-NL) die kunnen worden betreden gebruikend de zelfde syntaxis zoals de het Verdelen Modelvoorwerpen.
 
    ```html
    <div class="cmp-helloworld" data-cmp-is="helloworld" 
@@ -285,7 +285,7 @@ Laten we nu enkele updates uitvoeren op het `HelloWorldModel` Sling-model om eni
 
 Client-Side Libraries, `clientlibs` for short, biedt een mechanisme voor het organiseren en beheren van CSS- en JavaScript-bestanden die nodig zijn voor een AEM Sites-implementatie. Bibliotheken op de client zijn de standaardmanier om CSS en JavaScript op een pagina in AEM op te nemen.
 
-De {[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=nl-NL) module 0} ui.frontend is een ontkoppelde [ webpack ](https://webpack.js.org/) project dat in het bouwstijlproces wordt geïntegreerd.  Hiermee kunt u populaire front-end bibliotheken gebruiken, zoals Sass, LESS en TypeScript. De `ui.frontend` module wordt verkend in meer diepte in het [ Client-Side hoofdstuk van Bibliotheken ](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
+De {[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=nl-NL) module 0} ui.frontend is een ontkoppelde [&#x200B; webpack &#x200B;](https://webpack.js.org/) project dat in het bouwstijlproces wordt geïntegreerd.  Hiermee kunt u populaire front-end bibliotheken gebruiken, zoals Sass, LESS en TypeScript. De `ui.frontend` module wordt verkend in meer diepte in het [&#x200B; Client-Side hoofdstuk van Bibliotheken &#x200B;](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
 
 Werk vervolgens de CSS-stijlen voor de component `HelloWorld` bij.
 
@@ -295,7 +295,7 @@ Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden 
 
 1. Open een terminalvenster en navigeer in de map `ui.frontend`
 
-1. Het zijn in `ui.frontend` folder stelt het `npm install npm-run-all --save-dev` bevel in werking om [ npm-looppas-alle ](https://www.npmjs.com/package/npm-run-all) knoopmodule te installeren. Deze stap wordt **vereist op Archetype 39 geproduceerd AEM project**, in de aanstaande versie van Archetype dit wordt niet vereist.
+1. Het zijn in `ui.frontend` folder stelt het `npm install npm-run-all --save-dev` bevel in werking om [&#x200B; npm-looppas-alle &#x200B;](https://www.npmjs.com/package/npm-run-all) knoopmodule te installeren. Deze stap wordt **vereist op Archetype 39 geproduceerd AEM project**, in de aanstaande versie van Archetype dit wordt niet vereist.
 
 1. Voer vervolgens de opdracht `npm run watch` uit:
 
@@ -332,7 +332,7 @@ Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden 
 
 1. Ga terug naar de browser en controleer of de titelkleur is gewijzigd.
 
-   ![ update van de Basisbeginselen van de Component ](assets/component-basics/color-update.png)
+   ![&#x200B; update van de Basisbeginselen van de Component &#x200B;](assets/component-basics/color-update.png)
 
 ## Gefeliciteerd! {#congratulations}
 
@@ -340,6 +340,6 @@ Gefeliciteerd, u hebt de grondbeginselen van componentenontwikkeling in Adobe Ex
 
 ### Volgende stappen {#next-steps}
 
-Krijg vertrouwd met de pagina&#39;s en de malplaatjes van Adobe Experience Manager in het volgende hoofdstuk [ Pagina&#39;s en Malplaatjes ](pages-templates.md). Begrijp hoe de Componenten van de Kern in het project proxied zijn en geavanceerde beleidsconfiguraties van editable malplaatjes leren om een goed-gestructureerd malplaatje van de Pagina van het Artikel te bouwen.
+Krijg vertrouwd met de pagina&#39;s en de malplaatjes van Adobe Experience Manager in het volgende hoofdstuk [&#x200B; Pagina&#39;s en Malplaatjes &#x200B;](pages-templates.md). Begrijp hoe de Componenten van de Kern in het project proxied zijn en geavanceerde beleidsconfiguraties van editable malplaatjes leren om een goed-gestructureerd malplaatje van de Pagina van het Artikel te bouwen.
 
-Bekijk de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd) of herzie en stel plaatselijk de code bij de tak van het Git `tutorial/component-basics-solution` op.
+Bekijk de gebeëindigde code op [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd) of herzie en stel plaatselijk de code bij de tak van het Git `tutorial/component-basics-solution` op.

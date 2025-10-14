@@ -21,7 +21,7 @@ ht-degree: 0%
 # Inleiding
 
 In deze zelfstudie leert u hoe u een eenvoudig gebruik van het opslaan van formulierverzendingen in Azure-opslag met blob-indextags kunt implementeren. Blob-indextags bieden mogelijkheden voor gegevensbeheer en detectie met behulp van tagkenmerken voor sleutelwaarden-indextags. U kunt objecten in één container of in alle containers in uw opslagaccount categoriseren en zoeken.
-![ blob-index-markeringen ](assets/blob-with-index-tags.png)
+![&#x200B; blob-index-markeringen &#x200B;](assets/blob-with-index-tags.png)
 
 ## Voorwaarden
 
@@ -31,8 +31,8 @@ In deze zelfstudie leert u hoe u een eenvoudig gebruik van het opslaan van formu
 
 Voor het implementeren van het bovenstaande gebruiksgeval in AEM Forms CS hebt u het volgende nodig
 
-* [ AEM Forms CS wolk klaar instantie ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=nl-NL#set-up-aem-author-instance)
-* [ Azure poortrekening ](https://portal.azure.com/)
+* [&#x200B; AEM Forms CS wolk klaar instantie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=nl-NL#set-up-aem-author-instance)
+* [&#x200B; Azure poortrekening &#x200B;](https://portal.azure.com/)
 
 
 ### Volgende stappen

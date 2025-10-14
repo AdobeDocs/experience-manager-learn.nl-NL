@@ -66,7 +66,7 @@ De aangepaste verzendservice extraheert en slaat de bijlagen op in het Azure-por
 ```
 
 
-[ de steekproefdouane voorlegt manager voor kerncomponenten gebaseerde adaptieve vorm is hier beschikbaar ](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). De volgende aangepaste verzendmethode is geschreven voor het verzenden van het formulier
+[&#x200B; de steekproefdouane voorlegt manager voor kerncomponenten gebaseerde adaptieve vorm is hier beschikbaar &#x200B;](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). De volgende aangepaste verzendmethode is geschreven voor het verzenden van het formulier
 
 ```java
 package com.azuredemo.core;

@@ -78,10 +78,10 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 
 ## Aanvullende bronnen
 
-* [ AEM Sites Authoring documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html?lang=nl-NL)
-* [ AEM Sites het Ontwikkelen documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html?lang=nl-NL)
-* [ AEM Sites die documentatie beheren ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html?lang=nl-NL)
-* [ AEM Sites die documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html?lang=nl-NL) opstelt
+* [&#x200B; AEM Sites Authoring documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html?lang=nl-NL)
+* [&#x200B; AEM Sites het Ontwikkelen documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html?lang=nl-NL)
+* [&#x200B; AEM Sites die documentatie beheren &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html?lang=nl-NL)
+* [&#x200B; AEM Sites die documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html?lang=nl-NL) opstelt
 * [AEM as a Cloud Service-zelfstudies](/help/cloud-service/overview.md)
 * [AEM Assets-zelfstudies](/help/assets/overview.md)
 * [AEM Forms-zelfstudies](/help/forms/overview.md)

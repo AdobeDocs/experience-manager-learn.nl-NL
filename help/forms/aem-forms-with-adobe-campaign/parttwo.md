@@ -246,7 +246,7 @@ return null;
 
 Maak een aangepaste verzendhandler voor het verwerken van het verzenden van adaptieve formulieren. In deze douane verzend manager zullen wij een vraag aan de createProfile methode van CampaignService maken. De methode createProfile accepteert een JSONObject dat het profiel vertegenwoordigt dat moet worden gemaakt.
 
-Om meer over douane te leren voorlegt manager in AEM Forms, te volgen gelieve deze [ verbinding ](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
+Om meer over douane te leren voorlegt manager in AEM Forms, te volgen gelieve deze [&#x200B; verbinding &#x200B;](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
 
 Hier volgt de code in Aangepast verzenden
 
@@ -266,9 +266,9 @@ String pkey = addNewProfile.createProfile(profile);
 Zodra wij de dienst en de douane hebben bepaald voorlegt actie, zijn wij bereid om onze oplossing te testen. Voer de volgende stappen uit om de oplossing te testen
 
 
-* [ zorg ervoor u de hier beschreven stappen hebt gevolgd ](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [ de Aangepaste Vorm van de Invoer en de Behandelaar van de Douane verzenden gebruikend pakketmanager ](assets/create-acs-profile-on-af-submission.zip).Dit pakket bevat Aangepaste Vorm die wordt gevormd om aan douane voor te leggen actie voor te leggen.
-* Voorproef de [ vorm ](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
+* [&#x200B; zorg ervoor u de hier beschreven stappen hebt gevolgd &#x200B;](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [&#x200B; de Aangepaste Vorm van de Invoer en de Behandelaar van de Douane verzenden gebruikend pakketmanager &#x200B;](assets/create-acs-profile-on-af-submission.zip).Dit pakket bevat Aangepaste Vorm die wordt gevormd om aan douane voor te leggen actie voor te leggen.
+* Voorproef de [&#x200B; vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
 * Alle velden invullen en verzenden
 * Een nieuw profiel wordt gecreeerd in uw instantie ACS
 

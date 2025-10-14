@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # Basic Next.js, app
 
-Dit [ Next.js ](https://nextjs.org/) app toont aan hoe te om inhoud te vragen gebruikend AEM GraphQL APIs gebruikend persisted query. Deze toepassing geeft filterbaar van avonturen WKND terug, en na het selecteren van een avontuur, toont de avonturen volledige details.
+Dit [&#x200B; Next.js &#x200B;](https://nextjs.org/) app toont aan hoe te om inhoud te vragen gebruikend AEM GraphQL APIs gebruikend persisted query. Deze toepassing geeft filterbaar van avonturen WKND terug, en na het selecteren van een avontuur, toont de avonturen volledige details.
 
 Deze code:
 
@@ -32,4 +32,4 @@ Deze code:
 
 >[!IMPORTANT]
 >
-> Codesandbox.io biedt geen ondersteuning voor het bewerken van de toepassing Next.js in de ingesloten IDE. Om deze codesteekproef uit te geven, [ open direct Next.js app op codesandbox.io ](https://codesandbox.io/s/wknd-next-js-app-u8x5f8).
+> Codesandbox.io biedt geen ondersteuning voor het bewerken van de toepassing Next.js in de ingesloten IDE. Om deze codesteekproef uit te geven, [&#x200B; open direct Next.js app op codesandbox.io &#x200B;](https://codesandbox.io/s/wknd-next-js-app-u8x5f8).

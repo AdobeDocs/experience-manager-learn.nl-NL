@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # PDF versleutelen met een wachtwoord voor machtigingen
 
-Voor het kopiëren, bewerken of afdrukken van een PDF-document is een wachtwoord voor machtigingen vereist, dat ook bekend staat als een eigenaar- of hoofdwachtwoord. Leer om [ DocAssuranceService ](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/docassurance/client/api/DocAssuranceService.html) API te gebruiken om een toestemmingswachtwoord op PDF programmatically toe te passen.
+Voor het kopiëren, bewerken of afdrukken van een PDF-document is een wachtwoord voor machtigingen vereist, dat ook bekend staat als een eigenaar- of hoofdwachtwoord. Leer om [&#x200B; DocAssuranceService &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/docassurance/client/api/DocAssuranceService.html) API te gebruiken om een toestemmingswachtwoord op PDF programmatically toe te passen.
 
 Met de volgende JSP-code wordt een PDF versleuteld met een wachtwoord voor machtigingen:
 
@@ -65,7 +65,7 @@ Met de volgende JSP-code wordt een PDF versleuteld met een wachtwoord voor macht
 
 **nadat u het pakket installeert, voeg volgende URLs toe de OSGi van de configuratielijst van gewenste personen van de Filter OSGi van Adobe Granite CSRF:**
 
-1. [ Login aan configMgr ](http://localhost:4502/system/console/configMgr)
+1. [&#x200B; Login aan configMgr &#x200B;](http://localhost:4502/system/console/configMgr)
 1. Zoeken naar Adobe Granite CSRF-filter
 1. Het volgende pad toevoegen aan de uitgesloten secties en opslaan
 1. /content/AemFormsSamples/encrypt
@@ -74,4 +74,4 @@ Met de volgende JSP-code wordt een PDF versleuteld met een wachtwoord voor macht
 
 U kunt de voorbeeldcode op verschillende manieren testen. De snelste en eenvoudigste manier is om Postman-app te gebruiken. Met Postman kunt u POST-aanvragen indienen bij uw server. In de volgende schermafbeelding ziet u de parameters voor de aanvraag die nodig zijn om de aanvraag te verzenden. Zorg dat u het juiste machtigingstype opgeeft voordat u de aanvraag verzendt.
 
-![ encrypt-pdf-postman ](assets/encrypt-pdf-postman.png)
+![&#x200B; encrypt-pdf-postman &#x200B;](assets/encrypt-pdf-postman.png)

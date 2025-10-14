@@ -35,11 +35,11 @@ In deze videozelfstudie worden een InDesign-bestand en alle bijbehorende overweg
 
    Dan, creeer en pas een nieuwe Markering toe genoemd **Page2Heading.**
 
-4. Voeg het beeld van het Logo FPO ([ dat in ZIP ](assets/asset-templates-tutorial-video--supporting-files.zip) wordt verstrekt) aan het element van het Logo op de Hoofdpagina toe.
+4. Voeg het beeld van het Logo FPO ([&#x200B; dat in ZIP &#x200B;](assets/asset-templates-tutorial-video--supporting-files.zip) wordt verstrekt) aan het element van het Logo op de Hoofdpagina toe.
 
    * **klik met de rechtermuisknop** en selecteer **Aanpassen > Opties voor aanpassen aan kader.. > Inhoud aanpassen > Kader proportioneel vullen**
 
-   [ Leer meer over Kader het Aanpassen opties ](https://helpx.adobe.com/nl/indesign/using/frames-objects.html#fitting_objects_to_frames), en die voor uw gebruiksgeval juist is.
+   [&#x200B; Leer meer over Kader het Aanpassen opties &#x200B;](https://helpx.adobe.com/nl/indesign/using/frames-objects.html#fitting_objects_to_frames), en die voor uw gebruiksgeval juist is.
 
 5. Kopieer de koptekst (Logo en bedrijfsnaam) van de hoofdsjabloon naar Pagina en Pagina via Op plaats plakken.
 
@@ -60,9 +60,9 @@ In deze videozelfstudie worden een InDesign-bestand en alle bijbehorende overweg
 1. **Begin InDesign Server** op haven 8080.
 2. Verzeker de **instantie van de Auteur van AEM wordt gevormd om met uw InDesign Server** (en vice versa) in wisselwerking te staan.
 
-   * [ de Configuratie van Cloud Service van de Worker van IDS ](http://localhost:4502/etc/cloudservices/proxy/ids.html)
-   * [ de configuratie van Cloud Service van de Volmacht van de Wolk ](http://localhost:4502/etc/cloudservices/proxy.html)
-   * [ de configuratie van AEM externalizer OSGi ](http://localhost:4502/system/console/configMgr)
+   * [&#x200B; de Configuratie van Cloud Service van de Worker van IDS &#x200B;](http://localhost:4502/etc/cloudservices/proxy/ids.html)
+   * [&#x200B; de configuratie van Cloud Service van de Volmacht van de Wolk &#x200B;](http://localhost:4502/etc/cloudservices/proxy.html)
+   * [&#x200B; de configuratie van AEM externalizer OSGi &#x200B;](http://localhost:4502/system/console/configMgr)
 
 3. **uploadde het dossier van InDesign aan AEM Assets** en staat de Werkschema van AEM en InDesign Server toe om de activa volledig te verwerken.
 4. **creeer een nieuw Malplaatje** onder **Assets > Malplaatjes** en selecteer het dossier van InDesign dat aan AEM in Stap #4 wordt geupload.
@@ -74,7 +74,7 @@ In deze videozelfstudie worden een InDesign-bestand en alle bijbehorende overweg
 
 InDesign-sjabloonbestand en ondersteunende afbeeldingen
 
-Download [ het malplaatjedossier van InDesign en het steunen van Beelden ](assets/asset-templates-tutorial-video--supporting-files-1.zip)
+Download [&#x200B; het malplaatjedossier van InDesign en het steunen van Beelden &#x200B;](assets/asset-templates-tutorial-video--supporting-files-1.zip)
 
-* [ InDesign CC proefdownload ](https://creative.adobe.com/products/download/indesign)
-* De proef van InDesign Server kan van [ de plaats van de Prerelease van Adobe ](https://www.adobeprerelease.com/) worden gedownload of [ de klanten van de Onderneming van CC kunnen hun Uitvoerder van de Rekening contacteren om een de proefvergunning van InDesign Server te verzoeken ](https://www.adobe.com/products/indesignserver/faq.html)
+* [&#x200B; InDesign CC proefdownload &#x200B;](https://creative.adobe.com/products/download/indesign)
+* De proef van InDesign Server kan van [&#x200B; de plaats van de Prerelease van Adobe &#x200B;](https://www.adobeprerelease.com/) worden gedownload of [&#x200B; de klanten van de Onderneming van CC kunnen hun Uitvoerder van de Rekening contacteren om een de proefvergunning van InDesign Server te verzoeken &#x200B;](https://www.adobe.com/products/indesignserver/faq.html)

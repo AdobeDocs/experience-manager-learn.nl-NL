@@ -19,10 +19,10 @@ ht-degree: 0%
 
 # Elementen op uw systeem implementeren
 
-Stel [ samen vat-component ](assets/summarize-component.zip) op.
+Stel [&#x200B; samen vat-component &#x200B;](assets/summarize-component.zip) op.
 
-[ stel de steekproef aanpassende vorm ](assets/sample-adaptive-form.zip) op.
+[&#x200B; stel de steekproef aanpassende vorm &#x200B;](assets/sample-adaptive-form.zip) op.
 
-[ voorproef de steekproefvorm ](http://localhost:4502/content/dam/formsanddocuments/testsummary/jcr:content?wcmmode=disabled)
+[&#x200B; voorproef de steekproefvorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/testsummary/jcr:content?wcmmode=disabled)
 
 Vul de vormgebieden in en navigeer aan het summiere scherm door de **volgende** knoop te klikken om de vormgegevens te zien. U kunt de formuliergegevens ook bewerken door op het potloodpictogram te klikken.

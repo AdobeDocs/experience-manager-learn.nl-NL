@@ -21,9 +21,9 @@ ht-degree: 0%
 
 Een veelvoorkomend geval is dat meerdere PDF-documenten vóór verzending aan de gebruiker worden getoond.
 
-Om dit gebruiksgeval te verwezenlijken hebben wij [ Adobe PDF ingebed API ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) gebruikt.
+Om dit gebruiksgeval te verwezenlijken hebben wij [&#x200B; Adobe PDF ingebed API &#x200B;](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) gebruikt.
 
-[ A levende demo van deze steekproef kan hier worden ervaren.](https://forms.enablementadobe.com/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
+[&#x200B; A levende demo van deze steekproef kan hier worden ervaren.](https://forms.enablementadobe.com/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
 
 De volgende stappen zijn uitgevoerd om de integratie te voltooien
 
@@ -41,9 +41,9 @@ Een adaptief formulier maken op basis van sommige tabbladen (dit voorbeeld heeft
 Enkele adaptieve formuliercomponenten toevoegen op de eerste twee tabbladen
 De PDF-carrouselcomponent toevoegen op het derde tabblad
 De component pdf-carrousel configureren, zoals in de onderstaande schermafbeelding wordt getoond
-![ pdf-carousel ](assets/pdf-carousel-af-component.png)
+![&#x200B; pdf-carousel &#x200B;](assets/pdf-carousel-af-component.png)
 
-**bedt Sleutel PDF API** in - dit is de sleutel die u kunt gebruiken om pdf in te bedden. Deze sleutel werkt alleen met localhost. U kunt [ uw eigen sleutel ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) tot stand brengen en het associëren met ander domein.
+**bedt Sleutel PDF API** in - dit is de sleutel die u kunt gebruiken om pdf in te bedden. Deze sleutel werkt alleen met localhost. U kunt [&#x200B; uw eigen sleutel &#x200B;](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) tot stand brengen en het associëren met ander domein.
 
 **specificeer de Documenten van PDF** - hier kunt u de pdf- documenten specificeren die u in de carrousel wilt worden getoond.
 
@@ -52,9 +52,9 @@ De component pdf-carrousel configureren, zoals in de onderstaande schermafbeeldi
 
 Voer de volgende stappen uit om dit op uw lokale server te testen:
 
-1. [ voer de cliëntbibliotheek ](assets/pdf-carousel-client-lib.zip) in uw lokale instantie van AEM [ in gebruikend pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
-1. [ de Invoer van de pdf carrouselcomponent ](assets/pdf-carousel-component.zip) in uw lokale instantie van AEM [ gebruikend de pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
-1. [ voer de Aangepaste Vorm ](assets/adaptive-form-pdf-carousel.zip) in uw lokale instantie van AEM [ in gebruikend pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
-1. [ de Invoer van steekproef pdf&#39;s ](assets/pdf-carousel-sample-documents.zip) in uw lokale instantie van AEM [ gebruikend de verbinding van het activadossier uploadt ](http://localhost:4502/assets.html/content/dam)
-1. [ Voorproef Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
+1. [&#x200B; voer de cliëntbibliotheek &#x200B;](assets/pdf-carousel-client-lib.zip) in uw lokale instantie van AEM [&#x200B; in gebruikend pakketmanager &#x200B;](http://localhost:4502/crx/packmgr/index.jsp)
+1. [&#x200B; de Invoer van de pdf carrouselcomponent &#x200B;](assets/pdf-carousel-component.zip) in uw lokale instantie van AEM [&#x200B; gebruikend de pakketmanager &#x200B;](http://localhost:4502/crx/packmgr/index.jsp)
+1. [&#x200B; voer de Aangepaste Vorm &#x200B;](assets/adaptive-form-pdf-carousel.zip) in uw lokale instantie van AEM [&#x200B; in gebruikend pakketmanager &#x200B;](http://localhost:4502/crx/packmgr/index.jsp)
+1. [&#x200B; de Invoer van steekproef pdf&#39;s &#x200B;](assets/pdf-carousel-sample-documents.zip) in uw lokale instantie van AEM [&#x200B; gebruikend de verbinding van het activadossier uploadt &#x200B;](http://localhost:4502/assets.html/content/dam)
+1. [&#x200B; Voorproef Aangepaste Vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
 1. Tab naar het tabblad Documenten dat moet worden gecontroleerd. Er moeten drie PDF-documenten in de carrouselcomponent worden weergegeven.

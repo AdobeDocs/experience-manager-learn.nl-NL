@@ -22,5 +22,5 @@ Experience Hub is het centrale beginpunt voor het werken met Adobe Experience Ma
 
 >[!VIDEO](https://video.tv.adobe.com/v/3475252/?learn=on&enablevpops&captions=dut)
 
-Het worden begonnen is eenvoudig: ga naar [ experience.adobe.com ](https://experience.adobe.com), login met uw Adobe ID, en selecteer **Experience Manager** van het navigatiemenu. Vanaf dat moment ga je naar de Experience Hub, waar je snel toegang hebt tot alles wat je nodig hebt om met AEM te werken.
+Het worden begonnen is eenvoudig: ga naar [&#x200B; experience.adobe.com &#x200B;](https://experience.adobe.com), login met uw Adobe ID, en selecteer **Experience Manager** van het navigatiemenu. Vanaf dat moment ga je naar de Experience Hub, waar je snel toegang hebt tot alles wat je nodig hebt om met AEM te werken.
 

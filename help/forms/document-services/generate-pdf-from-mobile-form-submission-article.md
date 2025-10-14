@@ -79,7 +79,7 @@ $("#file1").click();
 });
 ```
 
-[ Profiel van de Douane ](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles). Met een aangepast profiel kunt u gemakkelijker HTML DOM-objecten van het mobiele formulier bewerken. Er wordt een verborgen bestandselement toegevoegd aan HTML.jsp. Wanneer de gebruiker op &quot;Uw foto toevoegen&quot; klikt, wordt de gebeurtenis click van het bestandselement geactiveerd. Op deze manier kan de gebruiker door de foto bladeren en de foto selecteren die u wilt bijvoegen. Vervolgens gebruiken we het Javascript FileReader-object om de base64-gecodeerde tekenreeks van de afbeelding op te halen. De base64-afbeeldingstekenreeks wordt opgeslagen in het tekstveld in het formulier. Wanneer het formulier wordt verzonden, extraheren wij deze waarde en voegen u deze in het img-element van de XML in. Deze XML wordt vervolgens gebruikt om samen te voegen met de xdp om de uiteindelijke PDF te genereren.
+[&#x200B; Profiel van de Douane &#x200B;](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles). Met een aangepast profiel kunt u gemakkelijker HTML DOM-objecten van het mobiele formulier bewerken. Er wordt een verborgen bestandselement toegevoegd aan HTML.jsp. Wanneer de gebruiker op &quot;Uw foto toevoegen&quot; klikt, wordt de gebeurtenis click van het bestandselement geactiveerd. Op deze manier kan de gebruiker door de foto bladeren en de foto selecteren die u wilt bijvoegen. Vervolgens gebruiken we het Javascript FileReader-object om de base64-gecodeerde tekenreeks van de afbeelding op te halen. De base64-afbeeldingstekenreeks wordt opgeslagen in het tekstveld in het formulier. Wanneer het formulier wordt verzonden, extraheren wij deze waarde en voegen u deze in het img-element van de XML in. Deze XML wordt vervolgens gebruikt om samen te voegen met de xdp om de uiteindelijke PDF te genereren.
 
 Het aangepaste profiel dat voor dit artikel wordt gebruikt, is beschikbaar gesteld als onderdeel van de elementen van dit artikel.
 
@@ -116,8 +116,8 @@ Voer de volgende stappen uit om deze mogelijkheid op uw eigen server te testen:
 
 * [Download en installeer het pakket dat aan dit artikel is gekoppeld.](assets/pdf-from-mobile-form-submission.zip)
 
-* Zorg voor verstuur URL en HTML teruggeeft profiel correct wordt geplaatst door de eigenschappen pagina van [ te bekijken xdp ](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
+* Zorg voor verstuur URL en HTML teruggeeft profiel correct wordt geplaatst door de eigenschappen pagina van [&#x200B; te bekijken xdp &#x200B;](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
 
-* [ Voorproef XDP als html ](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
+* [&#x200B; Voorproef XDP als html &#x200B;](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
 
 * Voeg een afbeelding toe aan het formulier en verzend deze. PDF moet terug met de afbeelding erin.

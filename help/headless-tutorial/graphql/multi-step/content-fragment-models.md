@@ -28,7 +28,7 @@ U kunt ook uw eigen model maken aan de hand van de basisstappen en de respectiev
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelig leerprogramma en het wordt verondersteld dat een [ het auteursmilieu van AEM ](./overview.md#prerequisites) beschikbaar is.
+Dit is een meerdelig leerprogramma en het wordt verondersteld dat een [&#x200B; het auteursmilieu van AEM &#x200B;](./overview.md#prerequisites) beschikbaar is.
 
 ## Doelstellingen {#objectives}
 
@@ -43,7 +43,7 @@ Een projectconfiguratie bevat alle modellen van het Fragment van de Inhoud verbo
 1. Login aan het milieu van de Auteur van AEM **&#x200B;**&#x200B;(zoals `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
 1. Van het scherm van het Begin van AEM, navigeer aan **Hulpmiddelen** > **Algemeen** > **Browser van de Configuratie**.
 
-   ![ ga aan Browser van de Configuratie ](assets/content-fragment-models/navigate-config-browser.png)
+   ![&#x200B; ga aan Browser van de Configuratie &#x200B;](assets/content-fragment-models/navigate-config-browser.png)
 1. Klik **creëren**, in de hoger-juiste hoek
 1. In het resulterende dialoogvenster voert u in:
 
@@ -52,7 +52,7 @@ Een projectconfiguratie bevat alle modellen van het Fragment van de Inhoud verbo
    * De Modellen van het Fragment van de controle **Inhoud**
    * Controle **de Blijvende Vragen van GraphQL**
 
-   ![ Mijn Configuratie van het Project ](assets/content-fragment-models/my-project-configuration.png)
+   ![&#x200B; Mijn Configuratie van het Project &#x200B;](assets/content-fragment-models/my-project-configuration.png)
 
 ## Modellen voor inhoudsfragmenten maken
 
@@ -64,7 +64,7 @@ Creeer een model voor a **Persoon**, dat het gegevensmodel is dat een persoon ve
 
 1. Van het scherm van het Begin van AEM, navigeer aan **Hulpmiddelen** > **Algemeen** > **Modellen van het Fragment van de Inhoud**.
 
-   ![ ga aan de Modellen van het Fragment van de Inhoud ](assets/content-fragment-models/navigate-cf-models.png)
+   ![&#x200B; ga aan de Modellen van het Fragment van de Inhoud &#x200B;](assets/content-fragment-models/navigate-cf-models.png)
 
 1. Navigeer in de **Mijn omslag van het Project**.
 1. Tik **creeer** in de hoger-juiste hoek om **te brengen creeer Model** tovenaar.
@@ -76,7 +76,7 @@ Creeer een model voor a **Persoon**, dat het gegevensmodel is dat een persoon ve
    * **de Naam van het Bezit**: `fullName`
    * Controle **Vereiste**
 
-   ![ Volledige het bezitsgebied van de Naam ](assets/content-fragment-models/full-name-property-field.png)
+   ![&#x200B; Volledige het bezitsgebied van de Naam &#x200B;](assets/content-fragment-models/full-name-property-field.png)
 
    De **Naam van het Bezit** bepaalt de naam van het bezit dat aan AEM wordt voortgeduurd. De **Naam van het Bezit** bepaalt ook de **zeer belangrijke** naam voor dit bezit als deel van het gegevensschema. Deze **sleutel** wordt gebruikt wanneer de gegevens van het Fragment van de Inhoud via GraphQL APIs worden blootgesteld.
 
@@ -96,7 +96,7 @@ Creeer een model voor a **Persoon**, dat het gegevensmodel is dat een persoon ve
 
 1. Voeg een bevestiging aan de **Verwijzing van het Beeld** toe zodat slechts inhoudstypes van **Beelden** kunnen worden gebruikt om het gebied te bevolken.
 
-   ![ Beperk tot Beelden ](assets/content-fragment-models/picture-reference-content-types.png)
+   ![&#x200B; Beperk tot Beelden &#x200B;](assets/content-fragment-models/picture-reference-content-types.png)
 
 1. Klik het **lusje van de Types van Gegevens 0&rbrace; &lbrace;en sleep en laat vallen een** Opsomming **gegevenstype onder het** **gebied van de Verwijzing van het Beeld.** Voer de volgende eigenschappen in:
 
@@ -110,7 +110,7 @@ Creeer een model voor a **Persoon**, dat het gegevensmodel is dat een persoon ve
 
 1. Het definitieve **model van de Persoon** zou als het volgende moeten kijken:
 
-   ![ Eind Person Model ](assets/content-fragment-models/final-author-model.png)
+   ![&#x200B; Eind Person Model &#x200B;](assets/content-fragment-models/final-author-model.png)
 
 1. Klik **sparen** om de veranderingen te bewaren.
 
@@ -155,13 +155,13 @@ Creeer een model voor a **Team**, dat het gegevensmodel voor een team van mensen
 
 1. Het definitieve **model van het Team** zou als het volgende moeten kijken:
 
-   ![ Definitief Model van het Team ](assets/content-fragment-models/final-team-model.png)
+   ![&#x200B; Definitief Model van het Team &#x200B;](assets/content-fragment-models/final-team-model.png)
 
 1. Klik **sparen** om de veranderingen te bewaren.
 
 1. U moet nu twee modellen hebben waaruit u kunt werken:
 
-   ![ Twee Modellen ](assets/content-fragment-models/two-new-models.png)
+   ![&#x200B; Twee Modellen &#x200B;](assets/content-fragment-models/two-new-models.png)
 
 ## Projectconfiguratie en modellen voor inhoudsfragmenten publiceren
 
@@ -171,7 +171,7 @@ Publiceer na revisie en verificatie de `Project Configuration` &amp; `Content Fr
 
 1. Tik checkbox naast **Mijn Project** en de Tik **publiceren**
 
-   ![ publiceer Project Config ](assets/content-fragment-models/publish-project-config.png)
+   ![&#x200B; publiceer Project Config &#x200B;](assets/content-fragment-models/publish-project-config.png)
 
 1. Van het scherm van het Begin van AEM, navigeer aan **Hulpmiddelen** > **Algemeen** > **Modellen van het Fragment van de Inhoud**.
 
@@ -179,7 +179,7 @@ Publiceer na revisie en verificatie de `Project Configuration` &amp; `Content Fr
 
 1. Tik **Persoon** en **Team** modellen en tik **publiceren**
 
-   ![ publiceer de Modellen van het Fragment van de Inhoud ](assets/content-fragment-models/publish-content-fragment-model.png)
+   ![&#x200B; publiceer de Modellen van het Fragment van de Inhoud &#x200B;](assets/content-fragment-models/publish-content-fragment-model.png)
 
 ## Gefeliciteerd! {#congratulations}
 
@@ -187,7 +187,7 @@ Gefeliciteerd, u hebt zojuist uw eerste modellen van inhoudsfragmenten gemaakt!
 
 ## Volgende stappen {#next-steps}
 
-In het volgende hoofdstuk, [ het Authoring Modellen van het Fragment van de Inhoud ](author-content-fragments.md), creeert en geeft u een nieuw die Fragment van de Inhoud uit op een Model van het Fragment van de Inhoud wordt gebaseerd. U leert ook hoe u variaties van inhoudsfragmenten kunt maken.
+In het volgende hoofdstuk, [&#x200B; het Authoring Modellen van het Fragment van de Inhoud &#x200B;](author-content-fragments.md), creeert en geeft u een nieuw die Fragment van de Inhoud uit op een Model van het Fragment van de Inhoud wordt gebaseerd. U leert ook hoe u variaties van inhoudsfragmenten kunt maken.
 
 ## Verwante documentatie
 

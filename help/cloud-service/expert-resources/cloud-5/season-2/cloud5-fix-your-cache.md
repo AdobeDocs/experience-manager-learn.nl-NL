@@ -24,9 +24,9 @@ In een tweedelige seizoen, twee reeksen, verkennen we enkele dingen die je kunt 
 
 ## Inhoud die in deze video wordt behandeld
 
-+ [ Caching &amp; de Levering van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=nl-NL)
-+ [ Lighthouse van Google ](https://developers.google.com/web/tools/lighthouse)
++ [&#x200B; Caching &amp; de Levering van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=nl-NL)
++ [&#x200B; Lighthouse van Google &#x200B;](https://developers.google.com/web/tools/lighthouse)
 
 ## Aanvullende bronnen
 
-Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 2 ](../cloud5-season-2.md) pagina.
+Bekijk verwante video&#39;s op de [&#x200B; Wolk 5 seizoen 2 &#x200B;](../cloud5-season-2.md) pagina.

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Een dankwoord bij het verzenden van een formulier is een doordachte manier om de gebruiker te bedanken en te bedanken voor het invullen en verzenden van een formulier. Zij vormt een bevestiging dat hun opmerkingen zijn ontvangen en beoordeeld. Het bedankbericht wordt geconfigureerd met het verzendtabblad van de hulplijncontainer van het adaptieve formulier
 
-![ dank-u-bericht ](assets/thank-you-message.png)
+![&#x200B; dank-u-bericht &#x200B;](assets/thank-you-message.png)
 
 Het gevormde dankwoodbericht kan in de onSuccess gebeurtenismanager van de super component worden betreden AdaptiveForm.
 De code voor het koppelen van de gebeurtenis onSuccess en de code voor de gebeurtenishandler onSuccess worden hieronder weergegeven
@@ -106,4 +106,4 @@ export default function Contact(){
 }
 ```
 
-De bovenstaande code gebruikt native HTML-componenten die zijn toegewezen aan de componenten die in het adaptieve formulier worden gebruikt. We wijzen bijvoorbeeld de adaptieve formuliercomponent voor tekstinvoer toe aan de component TextField. De inheemse componenten die in het artikel [ worden gebruikt kunnen van hier worden gedownload ](./assets/native-components.zip)
+De bovenstaande code gebruikt native HTML-componenten die zijn toegewezen aan de componenten die in het adaptieve formulier worden gebruikt. We wijzen bijvoorbeeld de adaptieve formuliercomponent voor tekstinvoer toe aan de component TextField. De inheemse componenten die in het artikel [&#x200B; worden gebruikt kunnen van hier worden gedownload &#x200B;](./assets/native-components.zip)

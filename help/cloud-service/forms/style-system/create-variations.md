@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Nadat het thema is gekloond, open het project gebruikend visuele studiocode. Een vergelijkbare weergave is vereist
 in visuele studiocode
-![ projectontdekkingsreiziger ](assets/easel-theme.png)
+![&#x200B; projectontdekkingsreiziger &#x200B;](assets/easel-theme.png)
 
 Open het bestand src->components->button->_button.scss. Wij zullen onze douanevariaties in dit dossier bepalen.
 
@@ -55,7 +55,7 @@ Dit betekent dat de uiteindelijke doelklasse .cmp-adaptiveform-button_widget is,
 
 Het bestand _mixins.scss wordt gedefinieerd onder de src->site, zoals hieronder in de schermafbeelding wordt getoond
 
-![ mixin.scss ](assets/mixins.png)
+![&#x200B; mixin.scss &#x200B;](assets/mixins.png)
 
 ## Handelswijziging
 

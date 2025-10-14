@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Selecteer een formulier dat u wilt invullen in een vervolgkeuzelijst
 
-Vervolgkeuzelijsten bieden een compacte en geordende manier om een lijst met opties weer te geven aan gebruikers. De punten in de drop-down lijst zullen met de resultaten van [ lijsten API ](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) worden bevolkt
+Vervolgkeuzelijsten bieden een compacte en geordende manier om een lijst met opties weer te geven aan gebruikers. De punten in de drop-down lijst zullen met de resultaten van [&#x200B; lijsten API &#x200B;](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) worden bevolkt
 
-![ kaart-mening ](./assets/forms-drop-down.png)
+![&#x200B; kaart-mening &#x200B;](./assets/forms-drop-down.png)
 
 ## Vervolgkeuzelijst
 
-De volgende code is gebruikt om de vervolgkeuzelijst te vullen met de resultaten van de API-aanroep van listforms. Op basis van de gebruikersselectie wordt het aangepaste formulier weergegeven zodat de gebruiker het kan invullen en verzenden. [ Materiële componenten UI ](https://mui.com/) zijn gebruikt in het creëren van deze interface
+De volgende code is gebruikt om de vervolgkeuzelijst te vullen met de resultaten van de API-aanroep van listforms. Op basis van de gebruikersselectie wordt het aangepaste formulier weergegeven zodat de gebruiker het kan invullen en verzenden. [&#x200B; Materiële componenten UI &#x200B;](https://mui.com/) zijn gebruikt in het creëren van deze interface
 
 ```javascript
 import * as React from 'react';
@@ -126,10 +126,10 @@ const getAFForms =async()=>
 
 De volgende twee API-aanroepen zijn gebruikt bij het maken van deze gebruikersinterface
 
-* [ ListForm ](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms). De aanroep om de formulieren op te halen wordt slechts eenmaal gedaan wanneer de component wordt gegenereerd. De resultaten van de API-aanroep worden opgeslagen in de variabele afForms.
+* [&#x200B; ListForm &#x200B;](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms). De aanroep om de formulieren op te halen wordt slechts eenmaal gedaan wanneer de component wordt gegenereerd. De resultaten van de API-aanroep worden opgeslagen in de variabele afForms.
 In de bovenstaande code doorlopen we de afForms met behulp van de kaartfunctie en voor elk item in de afForms-array wordt een MenuItem-component gemaakt en toegevoegd aan de Select-component.
 
-* De Vorm van de vangst - A krijgt vraag wordt gemaakt aan [ getForm ](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition), waar identiteitskaart identiteitskaart identiteitskaart van de geselecteerde adaptieve vorm door de gebruiker in de drop-down lijst is. Het resultaat van deze GET-aanroep wordt opgeslagen in selectedForm.
+* De Vorm van de vangst - A krijgt vraag wordt gemaakt aan [&#x200B; getForm &#x200B;](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition), waar identiteitskaart identiteitskaart identiteitskaart van de geselecteerde adaptieve vorm door de gebruiker in de drop-down lijst is. Het resultaat van deze GET-aanroep wordt opgeslagen in selectedForm.
 
 ```
 const resp = await fetch(`/adobe/forms/af/${formID}`);

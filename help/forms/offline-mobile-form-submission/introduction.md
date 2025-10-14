@@ -28,7 +28,7 @@ Voor dit gebruiksgeval moeten de volgende stappen worden uitgevoerd:
 * De PDF-verzending van Acrobat/Reader afhandelen
 * Trigger Adobe Experience Manager (AEM)-workflow om de verzonden PDF te bekijken
 
-Deze zelfstudie doorloopt de stappen die nodig zijn voor het uitvoeren van het bovenstaande gebruiksgeval. De code van de steekproef en de activa met betrekking tot dit leerprogramma zijn [ hier beschikbaar.](./deploy-assets.md)
+Deze zelfstudie doorloopt de stappen die nodig zijn voor het uitvoeren van het bovenstaande gebruiksgeval. De code van de steekproef en de activa met betrekking tot dit leerprogramma zijn [&#x200B; hier beschikbaar.](./deploy-assets.md)
 
 In de volgende video ziet u een overzicht van het gebruik
 

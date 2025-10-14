@@ -30,7 +30,7 @@ In dit leerprogramma, leert u hoe te om een eenvoudig gebruiksgeval uit te voere
 Voor het implementeren van het bovenstaande gebruiksgeval in AEM Forms hebt u het volgende nodig
 
 * AEM Forms 6.5.19 of hoger
-* [ Azure poortrekening ](https://portal.azure.com/)
+* [&#x200B; Azure poortrekening &#x200B;](https://portal.azure.com/)
 
 
 ### Volgende stappen

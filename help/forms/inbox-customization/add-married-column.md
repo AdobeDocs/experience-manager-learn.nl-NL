@@ -21,9 +21,9 @@ ht-degree: 0%
 
 Om werkschemagegevens in inbox te tonen, moeten wij variabelen in het werkschema bepalen en bevolken. De waarde van de variabele moet worden ingesteld voordat een taak aan een gebruiker wordt toegewezen. We hebben u een voorbeeldworkflow geboden die klaar is om te worden geïmplementeerd op uw AEM-server.
 
-* [ Login aan AEM ](http://localhost:4502/crx/de/index.jsp)
+* [&#x200B; Login aan AEM &#x200B;](http://localhost:4502/crx/de/index.jsp)
 * [De revisiewerkstroom importeren](assets/review-workflow.zip)
-* [ Herzie het werkschema ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
+* [&#x200B; Herzie het werkschema &#x200B;](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
 
 Deze workflow heeft twee gedefinieerde variabelen (isMarried en inkomen) en de waarden ervan worden ingesteld met behulp van de variabele-component set. Deze variabelen worden beschikbaar gesteld als kolommen die moeten worden toegevoegd aan AEM inbox
 
@@ -75,24 +75,24 @@ return isMarried(inboxItem);
 >
 >De bovenstaande code werkt alleen als u AEM 6.5.5 Uber.jar in uw project opneemt
 
-![ uber-jar ](assets/uber-jar.PNG)
+![&#x200B; uber-jar &#x200B;](assets/uber-jar.PNG)
 
 ## Testen op uw server
 
-* [ Login aan de Webconsole van AEM ](http://localhost:4502/system/console/bundles)
+* [&#x200B; Login aan de Webconsole van AEM &#x200B;](http://localhost:4502/system/console/bundles)
 * [Aanpassingsbundel inbox implementeren en starten](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
-* [ Open uw inbox ](http://localhost:4502/aem/inbox)
+* [&#x200B; Open uw inbox &#x200B;](http://localhost:4502/aem/inbox)
 * Open Controle Admin door _pictogram van de Mening van de Lijst_ naast _te klikken creeert_ knoop
 * Gehuwde kolom toevoegen aan Postvak IN en uw wijzigingen opslaan
-* [ ga naar FormsAndDocuments UI ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [ de Invoer de steekproefvorm ](assets/snap-form.zip) door _Dossier te selecteren uploadt_ van _creeert_ menu
-* [ Voorproef de vorm ](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
+* [&#x200B; ga naar FormsAndDocuments UI &#x200B;](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [&#x200B; de Invoer de steekproefvorm &#x200B;](assets/snap-form.zip) door _Dossier te selecteren uploadt_ van _creeert_ menu
+* [&#x200B; Voorproef de vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
 * Selecteer de _burgerlijke status_ en leg de vorm voor
-  [ mening inbox ](http://localhost:4502/aem/inbox)
+  [&#x200B; mening inbox &#x200B;](http://localhost:4502/aem/inbox)
 
 Als u het formulier verzendt, wordt de workflow geactiveerd en wordt een taak toegewezen aan de gebruiker van de &quot;beheerder&quot;. U zou een waarde onder de Getrouwde kolom zoals aangetoond in dit het schermschot moeten zien
 
-![ getrouwd-kolom ](assets/married-column.PNG)
+![&#x200B; getrouwd-kolom &#x200B;](assets/married-column.PNG)
 
 ## Volgende stappen
 

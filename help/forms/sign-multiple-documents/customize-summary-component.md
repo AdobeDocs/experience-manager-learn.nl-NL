@@ -26,13 +26,13 @@ Deze component wordt geïdentificeerd door het label Meerdere formulieren ondert
 
 Het volgende het schermschot toont de nieuwe component die werd gecreeerd om het bericht na de het ondertekenen ceremonie te tonen
 
-![ summiere component ](assets/summary.PNG)
+![&#x200B; summiere component &#x200B;](assets/summary.PNG)
 
 De nieuwe component is gebaseerd op de overzichtscomponent van het vak.
-![ component-prop ](assets/componentprop.PNG)
+![&#x200B; component-prop &#x200B;](assets/componentprop.PNG)
 
 Er is een knop toegevoegd waarmee u naar het volgende formulier kunt navigeren voor ondertekening
-![ malplaatje-code ](assets/template-code.PNG)
+![&#x200B; malplaatje-code &#x200B;](assets/template-code.PNG)
 
 De summary.jsp heeft de volgende code. Het heeft verwijzing naar de cliëntbibliotheek die door categorie identiteitskaart **wordt geïdentificeerd getnextform**
 
@@ -47,7 +47,7 @@ De summary.jsp heeft de volgende code. Het heeft verwijzing naar de cliëntbibli
 
 ## Assets
 
-De douane summiere component kan [ van hier worden gedownload ](assets/custom-summary-step.zip)
+De douane summiere component kan [&#x200B; van hier worden gedownload &#x200B;](assets/custom-summary-step.zip)
 
 ## Volgende stappen
 

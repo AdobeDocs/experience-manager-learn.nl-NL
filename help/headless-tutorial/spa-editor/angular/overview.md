@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Onthaal aan een multi-part leerprogramma dat voor ontwikkelaars nieuw aan de **eigenschap van de Redacteur van het KUUROORD** in Adobe Experience Manager (AEM) wordt ontworpen. In deze zelfstudie wordt de implementatie besproken van een Angular-toepassing voor een fictief levensstijlmerk, de WKND. De Angular-app is ontwikkeld en ontworpen voor implementatie met de AEM SPA Editor, die Angular-componenten toewijst aan AEM-componenten. De voltooide SPA, die aan AEM wordt opgesteld, kan dynamisch worden ontworpen met traditionele in-line het uitgeven hulpmiddelen van AEM.
 
-![ Definitief Uitgevoerde SPA ](assets/wknd-spa-implementation.png)
+![&#x200B; Definitief Uitgevoerde SPA &#x200B;](assets/wknd-spa-implementation.png)
 
 *WKND de Implementatie van het KUUROORD*
 
@@ -35,51 +35,51 @@ Het doel voor dit meerdelige leerprogramma is een ontwikkelaar te leren hoe te o
 
 Het leerprogramma wordt ontworpen om met **AEM as a Cloud Service** te werken en is achterwaarts compatibel met **AEM 6.5.4+** en **AEM 6.4.8+**. Het SPA wordt uitgevoerd gebruikend:
 
-* [ Gemaakt AEM Project Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL)
-* [ de Redacteur van AEM SPA ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-walkthrough.html?lang=nl-NL#content-editing-experience-with-spa)
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
-* [ Angular ](https://angular.io/)
+* [&#x200B; Gemaakt AEM Project Archetype &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL)
+* [&#x200B; de Redacteur van AEM SPA &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-walkthrough.html?lang=nl-NL#content-editing-experience-with-spa)
+* [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+* [&#x200B; Angular &#x200B;](https://angular.io/)
 
 *schat 1-2 uren om door elk deel van het leerprogramma te krijgen.*
 
 ## Laatste code
 
-Al leerprogramma code kan op [ GitHub ](https://github.com/adobe/aem-guides-wknd-spa) worden gevonden.
+Al leerprogramma code kan op [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd-spa) worden gevonden.
 
-De [ recentste codebasis ](https://github.com/adobe/aem-guides-wknd-spa/releases) is beschikbaar als downloadbare Pakketten van AEM.
+De [&#x200B; recentste codebasis &#x200B;](https://github.com/adobe/aem-guides-wknd-spa/releases) is beschikbaar als downloadbare Pakketten van AEM.
 
 ## Vereisten
 
 Voordat u deze zelfstudie start, hebt u het volgende nodig:
 
 * Basiskennis van HTML, CSS en JavaScript
-* Basis vertrouwdheid met [ Angular ](https://angular.io/)
-* [ AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL#download-the-aem-as-a-cloud-service-sdk), [ AEM 6.5.4+ ](https://helpx.adobe.com/nl/experience-manager/aem-releases-updates.html#65) of [ AEM 6.4.8+ ](https://helpx.adobe.com/nl/experience-manager/aem-releases-updates.html#64)
-* [ Java ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-* [ Apache Maven ](https://maven.apache.org/) (3.3.9 of nieuwer)
-* [ Node.js ](https://nodejs.org/en/) en [ npm ](https://www.npmjs.com/)
+* Basis vertrouwdheid met [&#x200B; Angular &#x200B;](https://angular.io/)
+* [&#x200B; AEM as a Cloud Service SDK &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL#download-the-aem-as-a-cloud-service-sdk), [&#x200B; AEM 6.5.4+ &#x200B;](https://helpx.adobe.com/nl/experience-manager/aem-releases-updates.html#65) of [&#x200B; AEM 6.4.8+ &#x200B;](https://helpx.adobe.com/nl/experience-manager/aem-releases-updates.html#64)
+* [&#x200B; Java &#x200B;](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
+* [&#x200B; Apache Maven &#x200B;](https://maven.apache.org/) (3.3.9 of nieuwer)
+* [&#x200B; Node.js &#x200B;](https://nodejs.org/en/) en [&#x200B; npm &#x200B;](https://www.npmjs.com/)
 
-*terwijl niet vereist, is het nuttig om een basisbegrip van [ het ontwikkelen van traditionele componenten van AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) te hebben.*
+*terwijl niet vereist, is het nuttig om een basisbegrip van [&#x200B; het ontwikkelen van traditionele componenten van AEM Sites &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) te hebben.*
 
 ## Lokale ontwikkelomgeving {#local-dev-environment}
 
-Er is een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. De schermafbeeldingen en de video worden gevangen gebruikend AEM as a Cloud Service SDK die op een milieu van Mac OS met [ Code van Visual Studio ](https://code.visualstudio.com/) als winde loopt. Opdrachten en code moeten onafhankelijk zijn van het lokale besturingssysteem, tenzij anders aangegeven.
+Er is een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. De schermafbeeldingen en de video worden gevangen gebruikend AEM as a Cloud Service SDK die op een milieu van Mac OS met [&#x200B; Code van Visual Studio &#x200B;](https://code.visualstudio.com/) als winde loopt. Opdrachten en code moeten onafhankelijk zijn van het lokale besturingssysteem, tenzij anders aangegeven.
 
 >[!NOTE]
 >
-> **Nieuw aan AEM as a Cloud Service?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL).
+> **Nieuw aan AEM as a Cloud Service?** Controle uit de [&#x200B; volgende gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL).
 >
-> **Nieuw aan AEM 6.5?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=nl-NL).
+> **Nieuw aan AEM 6.5?** Controle uit de [&#x200B; volgende gids aan vestiging een lokale ontwikkelomgeving &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=nl-NL).
 
 ## Volgende stappen {#next-steps}
 
-Waar wacht u op?! Begin het leerprogramma door aan het [ hoofdstuk van het Project van de Redacteur van het KUUROORD ](create-project.md) te navigeren en te leren hoe te om een Redacteur van het KUUROORD toegelaten project te produceren gebruikend het Archetype van het Project van AEM.
+Waar wacht u op?! Begin het leerprogramma door aan het [&#x200B; hoofdstuk van het Project van de Redacteur van het KUUROORD &#x200B;](create-project.md) te navigeren en te leren hoe te om een Redacteur van het KUUROORD toegelaten project te produceren gebruikend het Archetype van het Project van AEM.
 
 ## Achterwaartse compatibiliteit {#compatibility}
 
 De projectcode voor deze zelfstudie is gemaakt voor AEM as a Cloud Service. Om de projectcode achterwaarts compatibel te maken voor **6.5.4+** en **6.4.8+** zijn verscheidene wijzigingen aangebracht.
 
-[ UberJar ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=nl-NL#what-is-the-uberjar) **v6.4.4** is inbegrepen als gebiedsdeel:
+[&#x200B; UberJar &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=nl-NL#what-is-the-uberjar) **v6.4.4** is inbegrepen als gebiedsdeel:
 
 ```xml
 <!-- Adobe AEM 6.x Dependencies -->
@@ -112,4 +112,4 @@ Het profiel `classic` is standaard uitgeschakeld. Als u de zelfstudie met AEM 6.
 $ mvn clean install -PautoInstallSinglePackage -Pclassic
 ```
 
-Wanneer het produceren van een nieuw project voor een implementatie van AEM gebruikt altijd de recentste versie van [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) en werkt `aemVersion` bij om uw voorgenomen versie van AEM te richten.
+Wanneer het produceren van een nieuw project voor een implementatie van AEM gebruikt altijd de recentste versie van [&#x200B; Archetype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype) en werkt `aemVersion` bij om uw voorgenomen versie van AEM te richten.

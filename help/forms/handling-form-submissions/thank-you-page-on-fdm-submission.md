@@ -24,7 +24,7 @@ Wanneer u een adaptief formulier verzendt naar een REST-eindpunt, wilt u een bev
 
 De volgende het schermschot toont een vorm wordt voorgelegd gebruikend het Model van de Gegevens van de Vorm verzendt actie met een dank u gevormde pagina
 
-![ dank-u-pagina ](./assets/thank-you-page-fdm-submit.png)
+![&#x200B; dank-u-pagina &#x200B;](./assets/thank-you-page-fdm-submit.png)
 
 De POST van een formuliergegevensmodel retourneert altijd een JSON-object in de reactie. Dit JSON is beschikbaar in Dank u paginagurl als vraagparameter genoemd _fdmSubmitResult_. U kunt deze queryparameter parseren en de JSON-elementen weergeven in de pagina &quot;Bedankt&quot;.
 De volgende voorbeeldcode parseert de JSON-reactie om de waarde van het nummerveld te extraheren. Het juiste XML-bestand wordt vervolgens samengesteld en doorgegeven in de slingRequest om het formulier in te vullen. Deze code wordt doorgaans geschreven in de JSP van de paginacomponent die is gekoppeld aan de sjabloon Adaptief formulier.
@@ -45,9 +45,9 @@ U wordt aangeraden de pagina Hartelijk dank te baseren op een nieuwe adaptieve f
 ## De oplossing testen
 
 Maak een adaptief formulier en configureer dit om het formulier te verzenden met de verzendactie van het formuliergegevensmodel.
-[ stel het steekproef adaptieve vormmalplaatje ](assets/thank-you-page-template.zip) op
+[&#x200B; stel het steekproef adaptieve vormmalplaatje &#x200B;](assets/thank-you-page-template.zip) op
 Een bedankt-formulier maken op basis van deze sjabloon
 Deze pagina voor bedankt koppelen aan uw hoofdformulier
-Wijzig de jsp code in [ createXml.jsp ](http://localhost:4502/apps/thank-you-page-template/component/page/thankyoupage/createxml.jsp) om xml te bouwen nodig om uw adaptieve vorm vooraf in te vullen.
+Wijzig de jsp code in [&#x200B; createXml.jsp &#x200B;](http://localhost:4502/apps/thank-you-page-template/component/page/thankyoupage/createxml.jsp) om xml te bouwen nodig om uw adaptieve vorm vooraf in te vullen.
 Geef een voorbeeld van het aangepaste formulier weer en verzend het.
 De pagina Hartelijk dank moet worden weergegeven en vooraf worden gevuld met gegevens die zijn opgegeven in de XML

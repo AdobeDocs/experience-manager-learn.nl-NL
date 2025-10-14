@@ -47,7 +47,7 @@ Zorg ervoor dat er een `authoring` clientlib voor uw project bestaat op `/apps/m
 
 ### Aangepaste CSS opgeven {#provide-the-custom-css}
 
-Voeg aan de `authoring` clientlib a `css.txt` van het project toe dat naar minder dossier wijst dat de met voeten tredende stijlen zal verstrekken. [ Minder ](https://lesscss.org/) wordt aangewezen toe te schrijven aan zijn vele geschikte eigenschappen, met inbegrip van klasse-verpakken die in dit voorbeeld leveraged is.
+Voeg aan de `authoring` clientlib a `css.txt` van het project toe dat naar minder dossier wijst dat de met voeten tredende stijlen zal verstrekken. [&#x200B; Minder &#x200B;](https://lesscss.org/) wordt aangewezen toe te schrijven aan zijn vele geschikte eigenschappen, met inbegrip van klasse-verpakken die in dit voorbeeld leveraged is.
 
 ```shell
 base=./css
@@ -117,10 +117,10 @@ Deze stijlen moeten worden beperkt tot de modi [!UICONTROL Edit] en [!UICONTROL 
 
 Het eindresultaat van een diff&#39;d-pagina met de bovenstaande stijlen zou er als volgt uitzien (HTML toegevoegd en Component gewijzigd).
 
-![ verschil van de Pagina ](assets/page-diff.png)
+![&#x200B; verschil van de Pagina &#x200B;](assets/page-diff.png)
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ Download de wij.Retail steekproefplaats ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
-* [ Gebruikend de Bibliotheken van de Cliënt van AEM ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/clientlibs.html)
-* [ Minder CSS Documentatie ](https://lesscss.org/)
+* [&#x200B; Download de wij.Retail steekproefplaats &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
+* [&#x200B; Gebruikend de Bibliotheken van de Cliënt van AEM &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [&#x200B; Minder CSS Documentatie &#x200B;](https://lesscss.org/)

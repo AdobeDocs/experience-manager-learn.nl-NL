@@ -26,8 +26,8 @@ In deze video wordt getoond:
 
 - Een RDE toevoegen aan uw programma met Cloud Manager
 - RDE-aanmeldstroom met Adobe IMS, hoe vergelijkbaar met andere AEM as a Cloud Service-omgevingen
-- Opstelling van [ Extensible CLI van Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) ook gekend als `aio CLI`
-- Instellen en configureren van AEM RDE- en Cloud Manager `aio CLI` -insteekmodule in de niet-interactieve modus. Voor interactieve wijze, zie de [ opstellingsinstructies ](#setup-the-aem-rde-plugin)
+- Opstelling van [&#x200B; Extensible CLI van Adobe I/O Runtime &#x200B;](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) ook gekend als `aio CLI`
+- Instellen en configureren van AEM RDE- en Cloud Manager `aio CLI` -insteekmodule in de niet-interactieve modus. Voor interactieve wijze, zie de [&#x200B; opstellingsinstructies &#x200B;](#setup-the-aem-rde-plugin)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415490?quality=12&learn=on)
 
@@ -35,8 +35,8 @@ In deze video wordt getoond:
 
 Het volgende moet lokaal worden geïnstalleerd:
 
-- [ Node.js ](https://nodejs.org/en/) (LTS - steun op lange termijn)
-- [ npm 8+ ](https://docs.npmjs.com/)
+- [&#x200B; Node.js &#x200B;](https://nodejs.org/en/) (LTS - steun op lange termijn)
+- [&#x200B; npm 8+ &#x200B;](https://docs.npmjs.com/)
 
 ## Lokale instellingen
 
@@ -120,15 +120,15 @@ De insteekmodules van airCLI moeten worden gevormd om met uw RDE in wisselwerkin
 
    - Organisatie-id: Kopieer de waarde van **Beeld van het Profiel > (interne) Accountinfo > Modal Venster > Huidige organisatie-id**
 
-   ![ identiteitskaart van de Organisatie ](./assets/Org-ID.png)
+   ![&#x200B; identiteitskaart van de Organisatie &#x200B;](./assets/Org-ID.png)
 
    - Programma-id: kopieer de waarde uit **Program Overview > Environments > {ProgramName} Rand > Browser URI > numbers between `program/` en`/environment`**
 
-   ![ identiteitskaart van het Programma en van het Milieu ](./assets/Program-Environment-Id.png)
+   ![&#x200B; identiteitskaart van het Programma en van het Milieu &#x200B;](./assets/Program-Environment-Id.png)
 
    - Omgeving-id: kopieer de waarde uit **Program Overview > Environment > {ProgramName} -rd > Browser URI > numbers after`environment/`**
 
-   ![ identiteitskaart van het Programma en van het Milieu ](./assets/Program-Environment-Id.png)
+   ![&#x200B; identiteitskaart van het Programma en van het Milieu &#x200B;](./assets/Program-Environment-Id.png)
 
 1. Gebruik de opdracht `aio cli` `config:set` om deze waarden in te stellen met de volgende opdracht.
 
@@ -164,17 +164,17 @@ De RDE statusinformatie wordt getoond als milieustatus, de lijst van _uw het pro
 
 ## Volgende stap
 
-Leer [ hoe te om ](./how-to-use.md) RDE te gebruiken om code en inhoud van uw favoriete Geïntegreerde Milieu van de Ontwikkeling (winde) voor snellere ontwikkelingscycli op te stellen.
+Leer [&#x200B; hoe te om &#x200B;](./how-to-use.md) RDE te gebruiken om code en inhoud van uw favoriete Geïntegreerde Milieu van de Ontwikkeling (winde) voor snellere ontwikkelingscycli op te stellen.
 
 
 ## Aanvullende bronnen
 
-[ toelatend RDE in een programmadocumentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html?lang=nl-NL#enabling-rde-in-a-program)
+[&#x200B; toelatend RDE in een programmadocumentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html?lang=nl-NL#enabling-rde-in-a-program)
 
-Opstelling van [ Extensible CLI van Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) ook gekend als `aio CLI`
+Opstelling van [&#x200B; Extensible CLI van Adobe I/O Runtime &#x200B;](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) ook gekend als `aio CLI`
 
-[ het gebruik en bevelen van ATM CLI ](https://github.com/adobe/aio-cli#usage)
+[&#x200B; het gebruik en bevelen van ATM CLI &#x200B;](https://github.com/adobe/aio-cli#usage)
 
-[ de stop van Adobe I/O Runtime CLI voor interactie met de Milieu&#39;s van de Snelle Ontwikkeling van AEM ](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
+[&#x200B; de stop van Adobe I/O Runtime CLI voor interactie met de Milieu&#39;s van de Snelle Ontwikkeling van AEM &#x200B;](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[ de insteekmodule van Cloud Manager CLI ](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+[&#x200B; de insteekmodule van Cloud Manager CLI &#x200B;](https://github.com/adobe/aio-cli-plugin-cloudmanager)

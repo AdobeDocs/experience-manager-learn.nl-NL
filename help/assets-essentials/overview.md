@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Video&#39;s Assets Essentials
 
-![ Assets Essentials ](./assets/overview/hero.png)
+![&#x200B; Assets Essentials &#x200B;](./assets/overview/hero.png)
 
 Experience Manager Assets Essentials biedt een gestroomlijnde gebruikersinterface voor eenvoudig beheer van bedrijfsmiddelen en samenwerking.
 

@@ -24,7 +24,7 @@ Een AEM-workflowstartprogramma is geconfigureerd om elke keer dat een nieuwe res
 
 Als u de verzonden gegevens wilt opslaan onder het knooppunt &lt;node_to_store_submitted_data>, maken we gebruik van de `GetResolver` OSGi-service, waarmee we de verzonden gegevens kunnen opslaan met de `fd-service` -systeemgebruiker die beschikbaar is in elke AEM Forms-installatie.
 
-De knoop waaronder het voorgelegde gegeven wordt opgeslagen kan worden gevormd gebruikend ConfigMgr zoals die in [ wordt verklaard stelt steekproefactiva ](./deploy-assets.md) op
+De knoop waaronder het voorgelegde gegeven wordt opgeslagen kan worden gevormd gebruikend ConfigMgr zoals die in [&#x200B; wordt verklaard stelt steekproefactiva &#x200B;](./deploy-assets.md) op
 
 ```java
 package com.aemforms.mobileforms.core.servlets;

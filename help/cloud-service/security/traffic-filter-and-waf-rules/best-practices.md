@@ -27,18 +27,18 @@ Leer geadviseerde beste praktijken voor het vormen van de regels van de verkeers
 
 ## Algemene beste praktijken
 
-- Begin met de [ geadviseerde reeks ](./overview.md#adobe-recommended-rules) van standaard verkeersfilter en de regels van WAF die door Adobe worden verstrekt, en tweak hen die op de specifieke behoeften van uw toepassing en bedreigings landschap worden gebaseerd.
+- Begin met de [&#x200B; geadviseerde reeks &#x200B;](./overview.md#adobe-recommended-rules) van standaard verkeersfilter en de regels van WAF die door Adobe worden verstrekt, en tweak hen die op de specifieke behoeften van uw toepassing en bedreigings landschap worden gebaseerd.
 - Werk samen met uw veiligheidsteam om te bepalen welke regels zich op de de veiligheidshouding en nalevingsvereisten van uw organisatie richten.
 - Test altijd nieuwe of bijgewerkte regels in ontwikkelomgevingen voordat u ze promoot naar werkgebied en productie.
 - Wanneer u regels declareert en valideert, begint u met `action` type `log` om gedrag waar te nemen zonder legitiem verkeer te blokkeren.
 - Ga van `log` naar `block` alleen nadat u voldoende verkeersgegevens hebt geanalyseerd en hebt bevestigd dat er geen geldige aanvragen worden beïnvloed.
 - Introduceer regels incrementeel, die QA, prestaties, en veiligheidstestteams impliceren om onbedoelde bijwerkingen te identificeren.
-- Regelmatige overzicht en analyseer regeldoeltreffendheid gebruikend [ dashboard het tooling ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). De frequentie van de controle (dagelijks, wekelijks, maandelijks) dient overeen te stemmen met het verkeersvolume en het risicoprofiel van uw site.
+- Regelmatige overzicht en analyseer regeldoeltreffendheid gebruikend [&#x200B; dashboard het tooling &#x200B;](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). De frequentie van de controle (dagelijks, wekelijks, maandelijks) dient overeen te stemmen met het verkeersvolume en het risicoprofiel van uw site.
 - Verfijn onophoudelijk regels die op nieuwe bedreigingsintelligentie, verkeersgedrag, en controleresultaten worden gebaseerd.
 
 ## Beste werkwijzen voor verkeersfilterregels
 
-- Het gebruik Adobe [ geadviseerde standaardregels van de verkeersfilter ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules) als basislijn, die regels voor rand, oorsprongbescherming, en op OFAC-Gebaseerde beperkingen omvat.
+- Het gebruik Adobe [&#x200B; geadviseerde standaardregels van de verkeersfilter &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules) als basislijn, die regels voor rand, oorsprongbescherming, en op OFAC-Gebaseerde beperkingen omvat.
 - Herzie regelmatig alarm en logboeken om patronen van misbruik of misconfiguratie te identificeren.
 - Pas drempelwaarden voor tarieflimieten aan op basis van de verkeerspatronen en het gebruikersgedrag van uw toepassing.
 
@@ -49,15 +49,15 @@ Leer geadviseerde beste praktijken voor het vormen van de regels van de verkeers
   | Oorsprong | Neem de hoogste waarde van de Max Verzoeken van de Oorsprong per IP/POP onder **normale** verkeersvoorwaarden (namelijk niet het tarief op het tijdstip van een DDoS) en verhoog het met een veelvoud |
   | Edge | Neem de hoogste waarde van de Max Verzoeken van Edge per IP/POP onder **normale** verkeersvoorwaarden (namelijk niet het tarief op het tijdstip van een DDoS) en verhoog het met een veelvoud |
 
-  Zie ook [ het kiezen drempelwaarden ](../blocking-dos-attack-using-traffic-filter-rules.md#choosing-threshold-values) sectie voor meer details.
+  Zie ook [&#x200B; het kiezen drempelwaarden &#x200B;](../blocking-dos-attack-using-traffic-filter-rules.md#choosing-threshold-values) sectie voor meer details.
 
 - Ga pas naar `block` actie nadat u hebt bevestigd dat de `log` actie het legitieme verkeer niet beïnvloedt.
 
 ## Aanbevolen procedures voor WAF-regels
 
-- Begin met Adobe [ geadviseerde de regels van WAF ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules), die regels voor het blokkeren van bekende slechte IPs, het ontdekken van aanvallen DDoS, en het verlichten van beide misbruik omvatten.
+- Begin met Adobe [&#x200B; geadviseerde de regels van WAF &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules), die regels voor het blokkeren van bekende slechte IPs, het ontdekken van aanvallen DDoS, en het verlichten van beide misbruik omvatten.
 - De markering `ATTACK` WAF moet u waarschuwen voor mogelijke bedreigingen. Zorg ervoor dat er geen valse positieven zijn voordat u naar `block` gaat.
-- Als de aanbevolen WAF-regels geen betrekking hebben op specifieke bedreigingen, kunt u aangepaste regels maken op basis van de unieke vereisten van uw toepassing. Zie een volledige lijst van [ de vlaggen van WAF ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) in de documentatie.
+- Als de aanbevolen WAF-regels geen betrekking hebben op specifieke bedreigingen, kunt u aangepaste regels maken op basis van de unieke vereisten van uw toepassing. Zie een volledige lijst van [&#x200B; de vlaggen van WAF &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) in de documentatie.
 
 ## Uitvoeringsbepalingen
 
@@ -131,7 +131,7 @@ Leer hoe te om de regels van de verkeersfilter en WAF in AEM as a Cloud Service 
 
 ## Aanvullende bronnen
 
-- [ Regels van de Filter van het Verkeer met inbegrip van de Regels van WAF ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
-- [ Begrijpend preventie DoS/DDoS in AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/understanding-dos-and-prevention-approaches)
-- [ het Blokkeren Dos en aanvallen DDoS gebruikend de regels van de verkeersfilter ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules)
+- [&#x200B; Regels van de Filter van het Verkeer met inbegrip van de Regels van WAF &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
+- [&#x200B; Begrijpend preventie DoS/DDoS in AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/understanding-dos-and-prevention-approaches)
+- [&#x200B; het Blokkeren Dos en aanvallen DDoS gebruikend de regels van de verkeersfilter &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules)
 

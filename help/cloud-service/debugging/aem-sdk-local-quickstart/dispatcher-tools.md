@@ -29,7 +29,7 @@ Fouten opsporen in de logbestanden van Dispatcher Tools en de inhoud van het cac
 
 Logbestanden met Dispatcher-gereedschappen zijn beschikbaar via de opdracht `stdout` of `bin/docker_run` , of met meer details, beschikbaar in de Docker-container op `/etc/https/logs` .
 
-Zie [ de logboeken van Dispatcher ](./logs.md#dispatcher-logs) voor instructies op hoe te om tot de logboeken van de container van de Docker van Dispatcher van Hulpmiddelen direct toegang te hebben.
+Zie [&#x200B; de logboeken van Dispatcher &#x200B;](./logs.md#dispatcher-logs) voor instructies op hoe te om tot de logboeken van de container van de Docker van Dispatcher van Hulpmiddelen direct toegang te hebben.
 
 ## Dispatcher Tools-cache
 

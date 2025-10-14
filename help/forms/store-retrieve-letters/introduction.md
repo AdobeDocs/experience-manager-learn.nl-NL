@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Inleiding
 
-Met interactieve communicatie kunnen de agenten ad-hoccorrespondentie voorbereiden om gedeeltelijk voltooide correspondentie op te slaan en deze op te halen om te blijven werken. AEM Forms verstrekt u de [ Interface van de Dienstverlener ](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html). Van de klant wordt verwacht dat hij deze interface implementeert om de functionaliteit Opslaan en Hervatten te verkrijgen.
+Met interactieve communicatie kunnen de agenten ad-hoccorrespondentie voorbereiden om gedeeltelijk voltooide correspondentie op te slaan en deze op te halen om te blijven werken. AEM Forms verstrekt u de [&#x200B; Interface van de Dienstverlener &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html). Van de klant wordt verwacht dat hij deze interface implementeert om de functionaliteit Opslaan en Hervatten te verkrijgen.
 
 Dit artikel gebruikt MySQL-database om de metagegevens van de letter op te slaan. De lettergegevens worden opgeslagen in het bestandssysteem.
 

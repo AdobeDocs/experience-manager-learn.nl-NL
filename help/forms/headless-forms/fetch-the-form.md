@@ -78,7 +78,7 @@ export default function Contact(){
 }
 ```
 
-De bovenstaande code gebruikt native HTML-componenten die zijn toegewezen aan de componenten die in het adaptieve formulier worden gebruikt. We wijzen bijvoorbeeld de adaptieve formuliercomponent voor tekstinvoer toe aan de component TextField. De inheemse componenten die in het artikel [ worden gebruikt kunnen van hier worden gedownload ](./assets/native-components.zip)
+De bovenstaande code gebruikt native HTML-componenten die zijn toegewezen aan de componenten die in het adaptieve formulier worden gebruikt. We wijzen bijvoorbeeld de adaptieve formuliercomponent voor tekstinvoer toe aan de component TextField. De inheemse componenten die in het artikel [&#x200B; worden gebruikt kunnen van hier worden gedownload &#x200B;](./assets/native-components.zip)
 
 ## Volgende stappen
 

@@ -21,7 +21,7 @@ ht-degree: 0%
 Met Reader Extensions kunt u gebruiksrechten op PDF-documenten manipuleren. Gebruiksrechten hebben betrekking op functionaliteit die wel beschikbaar is in Acrobat, maar niet in Adobe Reader. De functionaliteit die wordt beheerd door Reader Extensions omvat de mogelijkheid om opmerkingen toe te voegen aan een document, formulieren in te vullen en het document op te slaan. PDF-documenten waaraan gebruiksrechten zijn toegevoegd, worden documenten met ingeschakelde rechten genoemd. Een gebruiker die een PDF-document met ingeschakelde rechten opent in Adobe Reader, kan de bewerkingen uitvoeren die voor dat document zijn ingeschakeld.
 
 Voor dit gebruiksgeval moeten we het volgende doen:
-* [ voeg het certificaat van de Uitbreidingen van Reader ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=nl-NL) aan `fd-service` gebruiker toe.
+* [&#x200B; voeg het certificaat van de Uitbreidingen van Reader &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=nl-NL) aan `fd-service` gebruiker toe.
 
 ## Aangepaste OSGi-service maken
 
@@ -203,11 +203,11 @@ Voer de volgende stappen uit om dit op uw lokale server te testen:
        DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 ```
 
-![ gebruiker-mapper ](assets/user-mapper-service.PNG)
-1. [ Download en installeer de bundel ares.ares.core-ares ](assets/ares.ares.core-ares.jar). Dit heeft de douanedienst en servlet om gebruiksrechten toe te passen en pdf terug te stromen.
+![&#x200B; gebruiker-mapper &#x200B;](assets/user-mapper-service.PNG)
+1. [&#x200B; Download en installeer de bundel ares.ares.core-ares &#x200B;](assets/ares.ares.core-ares.jar). Dit heeft de douanedienst en servlet om gebruiksrechten toe te passen en pdf terug te stromen.
 1. [Clientbibliotheken importeren en naar Aangepast verzenden](assets/applyaresdemo.zip)
 1. [Het adaptieve formulier importeren](assets/applyaresform.zip)
 1. Voeg het Reader Extensions-certificaat toe aan de gebruiker van de &quot;fd-service&quot;. Zorg ervoor alias is &quot;**aren**&quot;.
-1. [ Voorproef Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
+1. [&#x200B; Voorproef Aangepaste Vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
 1. Selecteer de juiste rechten en upload het PDF-bestand
 1. Klik op Verzenden om Reader Extended PDF op te halen

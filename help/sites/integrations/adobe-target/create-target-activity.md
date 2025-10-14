@@ -37,4 +37,4 @@ Voor het maken van Adobe Target-activiteiten met behulp van Experience Fragment-
 
 ## Ondersteunende koppelingen
 
-* [ Foutopsporing van Adobe Experience Cloud - Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [&#x200B; Foutopsporing van Adobe Experience Cloud - Chrome &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)

@@ -27,7 +27,7 @@ Een bundel OSGi is een Java™ archiefdossier dat code Java, middelen, en manife
 De ondersteunde versie van JDK installeren. Ik heb JDK1.8 gebruikt. Zorg ervoor u **JAVA_HOME** in uw milieuvariabelen hebt toegevoegd en aan de wortelomslag van uw installatie richt JDK.
 De %JAVA_HOME%/bin toevoegen aan het pad
 
-![ gegeven-bron ](assets/java-home.JPG)
+![&#x200B; gegeven-bron &#x200B;](assets/java-home.JPG)
 
 >[!NOTE]
 > Gebruik JDK 15 niet. Dit wordt niet ondersteund door AEM.
@@ -36,32 +36,32 @@ De %JAVA_HOME%/bin toevoegen aan het pad
 
 Open een nieuw opdrachtpromptvenster en typ: `java -version` . De JDK-versie die wordt aangeduid door de variabele `JAVA_HOME` , moet worden hersteld
 
-![ gegeven-bron ](assets/java-version.JPG)
+![&#x200B; gegeven-bron &#x200B;](assets/java-version.JPG)
 
 ## Gemaakt installeren
 
 Maven is een tool voor automatisering van build die voornamelijk wordt gebruikt voor Java-projecten. Voer de volgende stappen uit om te installeren op uw lokale systeem.
 
 * Maak een map met de naam `maven` in station C
-* Download het [ binaire zip archief ](http://maven.apache.org/download.cgi)
+* Download het [&#x200B; binaire zip archief &#x200B;](http://maven.apache.org/download.cgi)
 * De inhoud van het ZIP-archief extraheren naar `c:\maven`
 * Maak een omgevingsvariabele met de naam `M2_HOME` met de waarde `C:\maven\apache-maven-3.6.0` . In mijn geval, is de **mvn** versie 3.6.0. Op het moment dat dit artikel wordt geschreven, is de nieuwste versie 3.6.3
 * Voeg de `%M2_HOME%\bin` toe aan het pad
 * Uw wijzigingen opslaan
 * Open een nieuwe opdrachtprompt en typ in `mvn -version` . U zou de **mvn** versie moeten zien die zoals hieronder getoond in het schermschot wordt vermeld
 
-![ gegeven-bron ](assets/mvn-version.JPG)
+![&#x200B; gegeven-bron &#x200B;](assets/mvn-version.JPG)
 
 ## Settings.xml
 
 Een Maven `settings.xml` -bestand definieert waarden die de uitvoering Maven op verschillende manieren configureren. Meestal wordt het gebruikt om een lokale opslaglocatie, alternatieve externe opslagservers en verificatiegegevens voor privéopslagruimten te definiëren.
 
 Navigeren naar `C:\Users\<username>\.m2 folder`
-Extraheer de inhoud van [ settings.zip ](assets/settings.zip) dossier en plaats het in de `.m2` omslag.
+Extraheer de inhoud van [&#x200B; settings.zip &#x200B;](assets/settings.zip) dossier en plaats het in de `.m2` omslag.
 
 ## Eclipse installeren
 
-Installeer de recentste versie van [ eclipse ](https://www.eclipse.org/downloads/)
+Installeer de recentste versie van [&#x200B; eclipse &#x200B;](https://www.eclipse.org/downloads/)
 
 ## Uw eerste project maken
 
@@ -97,13 +97,13 @@ Met de bovenstaande opdracht leest u uw pombestand en maakt u Eclipse-projecten 
 
 Ga naar **Dossier -> de Invoer** en selecteer **Bestaande Gemaakte Projecten** zoals hier getoond
 
-![ gegeven-bron ](assets/import-mvn-project.JPG)
+![&#x200B; gegeven-bron &#x200B;](assets/import-mvn-project.JPG)
 
 Klik op Volgende
 
 Selecteer `c:\aemformsbundles\learningaemform` s door **te klikken doorbladert** knoop
 
-![ gegeven-bron ](assets/select-mvn-project.JPG)
+![&#x200B; gegeven-bron &#x200B;](assets/select-mvn-project.JPG)
 
 >[!NOTE]
 >U kunt desgewenst de geschikte modules importeren. Selecteer en importeer alleen de kernmodule als u alleen Java-code gaat maken in uw project.
@@ -114,11 +114,11 @@ Het project wordt geïmporteerd in Eclipse en u ziet een aantal `learningaemform
 
 Vouw `src/main/java` onder de map `learningaemforms.core` uit. Dit is de map waarin u het grootste deel van uw code schrijft.
 
-![ gegeven-bron ](assets/learning-core.JPG)
+![&#x200B; gegeven-bron &#x200B;](assets/learning-core.JPG)
 
 ## Uw project samenstellen
 
-Zodra u uw dienst OSGi, of servlet hebt geschreven, moet u uw project bouwen om de bundel te produceren OSGi die kan worden opgesteld gebruikend de het Webconsole van Felix. Gelieve te verwijzen [ AEMFD Cliënt SDK ](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) om de aangewezen cliëntSDK in uw Gemaakt project te omvatten. U moet de AEM FD Client SDK opnemen in de sectie voor afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder wordt weergegeven.
+Zodra u uw dienst OSGi, of servlet hebt geschreven, moet u uw project bouwen om de bundel te produceren OSGi die kan worden opgesteld gebruikend de het Webconsole van Felix. Gelieve te verwijzen [&#x200B; AEMFD Cliënt SDK &#x200B;](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) om de aangewezen cliëntSDK in uw Gemaakt project te omvatten. U moet de AEM FD Client SDK opnemen in de sectie voor afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder wordt weergegeven.
 
 ```xml
 <dependency>

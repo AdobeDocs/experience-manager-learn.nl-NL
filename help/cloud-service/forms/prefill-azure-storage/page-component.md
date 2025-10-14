@@ -24,7 +24,7 @@ Een paginacomponent is een reguliere component die verantwoordelijk is voor het 
 ## Pagina-component maken
 
 Meld u aan bij uw lokale AEM Forms-exemplaar dat klaar is voor de cloud. De volgende structuur maken in de map apps
-![ pagina-component ](./assets/page-component1.png)
+![&#x200B; pagina-component &#x200B;](./assets/page-component1.png)
 
 1. Klik met de rechtermuisknop op de paginamap en maak een knooppunt met de naam storeandfetch van het type cq:Component
 1. De wijzigingen opslaan
@@ -81,7 +81,7 @@ kopieer de volgende code naar azureportal.jsp en sla de wijzigingen op
 
 In deze code krijgen wij de waarde van de verzoekparameter **guid** en slaan het in een variabele genoemd BlobId op. Dit BlobId wordt dan overgegaan in het hellingsverzoek gebruikend het paramMap attribuut. Om deze code te laten werken, wordt aangenomen dat u een formulier hebt dat is gebaseerd op een Azure Storage-ondersteund formuliergegevensmodel en dat de leesservice van het formuliergegevensmodel is gebonden aan een aanvraagkenmerk met de naam BlobId, zoals hieronder in de schermafbeelding wordt getoond.
 
-![ fdm-verzoek-attribuut ](./assets/fdm-request-attribute.png)
+![&#x200B; fdm-verzoek-attribuut &#x200B;](./assets/fdm-request-attribute.png)
 
 ### Volgende stappen
 

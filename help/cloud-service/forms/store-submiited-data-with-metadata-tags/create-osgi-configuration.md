@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Er is een aangepaste OSGi-configuratie met de naam Azure Portal Configuration gemaakt om de Azure Storage URI en de SAS Token URI op te geven. Deze twee waarden worden gebruikt om de REST API samen te stellen voor communicatie met de Azure Storage
 
-![ azure-portaal-configuratie ](assets/azure-portal-configuration.png)
+![&#x200B; azure-portaal-configuratie &#x200B;](assets/azure-portal-configuration.png)
 
 De volledige code voor de configuratieservice wordt hieronder weergegeven
 

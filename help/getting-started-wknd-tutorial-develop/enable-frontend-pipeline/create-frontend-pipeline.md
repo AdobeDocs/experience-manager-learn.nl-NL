@@ -36,20 +36,20 @@ In dit hoofdstuk, creëren en leiden wij een front-end pijpleiding in Adobe Clou
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelig leerprogramma en men veronderstelt dat de stappen in het [ StandaardProject van AEM van de Update ](./update-project.md) worden geschetst zijn voltooid.
+Dit is een meerdelig leerprogramma en men veronderstelt dat de stappen in het [&#x200B; StandaardProject van AEM van de Update &#x200B;](./update-project.md) worden geschetst zijn voltooid.
 
-Verzeker u [ voorrechten hebt om, pijpleidingen in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=nl-NL#role-definitions) te creëren en op te stellen en [ toegang tot een milieu van AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL).
+Verzeker u [&#x200B; voorrechten hebt om, pijpleidingen in Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=nl-NL#role-definitions) te creëren en op te stellen en [&#x200B; toegang tot een milieu van AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL).
 
 ## Bestaande pijpleiding hernoemen
 
 Wijzig de bestaande pijpleiding van __opstellen aan Dev__ aan __FullStack WKND opstellen aan Dev__ door naar het __van de Configuratie__ lusje __niet-Productie van de Pijpleiding van de Configuratie__ gebied te gaan. Dit moet het uitdrukkelijk maken of een pijpleiding volledig-stapel of front-end door enkel zijn naam te bekijken is.
 
-![ noem Pijpleiding anders ](assets/fullstack-wknd-deploy-dev-pipeline.png)
+![&#x200B; noem Pijpleiding anders &#x200B;](assets/fullstack-wknd-deploy-dev-pipeline.png)
 
 
 Ook in het __lusje van de Code van Source__, zorg ervoor dat de het gebiedswaarden van de Tak van de Bewaarplaats en van de Plaats correct zijn en de tak uw front-end pijpleidingscontractveranderingen heeft.
 
-![ de Pijpleiding Config van de Code van Source ](assets/fullstack-wknd-source-code-config.png)
+![&#x200B; de Pijpleiding Config van de Code van Source &#x200B;](assets/fullstack-wknd-source-code-config.png)
 
 
 ## Een front-end pijplijn maken
@@ -60,19 +60,19 @@ __SLECHTS__ bouwt en stelt de front-end middelen van de `ui.frontend` module op,
 
 1. In __voeg de dialoog van de Pijpleiding van de Niet-Productie__ toe, als deel van de __3&rbrace; stappen van de Configuratie, selecteer de__ Optie van de Pijpleiding van de Plaatsing __, noem het als__ Op te stellen FrontEnd WKND __, en klik__ gaat __verder__
 
-![ creeer Voorste-Eind de Configuraties van de Pijpleiding ](assets/create-frontend-pipeline-configs.png)
+![&#x200B; creeer Voorste-Eind de Configuraties van de Pijpleiding &#x200B;](assets/create-frontend-pipeline-configs.png)
 
 1. Als deel van de __stappen van de Code van 0&rbrace; Source, selecteer de__ Voorste optie van de Code van het Eind __, en kies het milieu van__ In aanmerking komende Milieu&#39;s van de Plaatsing __.__ In de __sectie van de Code van Source__ zorgt ervoor dat de het gebiedswaarden van de Tak van de Bewaarplaats en van het Git correct zijn en de tak uw voorste veranderingen van het pijpleidingscontract heeft.
 En __het belangrijkst__ voor het __gebied van de Plaats van de Code__ is de waarde `/ui.frontend` en tenslotte, klik __sparen__.
 
-![ creeer Voorste-Eind de Code van Source van de Pijpleiding ](assets/create-frontend-pipeline-source-code.png)
+![&#x200B; creeer Voorste-Eind de Code van Source van de Pijpleiding &#x200B;](assets/create-frontend-pipeline-source-code.png)
 
 
 ## Implementatiereeks
 
 * Eerst in werking stelt nieuw anders genoemd __FullStack WKND opstelt om__ pijpleiding te ontwikkelen om de KND clientlib dossiers uit de bewaarplaats van AEM te verwijderen. En het belangrijkst bereidt AEM voor het front-end pijpleidingscontract voor door __het Sling config__ dossiers (`SiteConfig`, `HtmlPageItemsConfig`) toe te voegen.
 
-![ Unstyled WKND Plaats ](assets/unstyled-wknd-site.png)
+![&#x200B; Unstyled WKND Plaats &#x200B;](assets/unstyled-wknd-site.png)
 
 >[!WARNING]
 >
@@ -90,7 +90,7 @@ En __het belangrijkst__ voor het __gebied van de Plaats van de Code__ is de waar
 * Open om het even welke pagina van de Plaats WKND en u kunt de tekstkleur zien ons __Rood Adobe__ en de front-end middelen (CSS, JS) dossiers worden geleverd van CDN. De hostnaam van de bronaanvraag begint met `https://static-pXX-eYY.p123-e456.adobeaemcloud.com/$HASH_VALUE$/theme/site.css` en op dezelfde manier met site.js of andere statische bronnen waarnaar u verwijst in het `HtmlPageItemsConfig` -bestand.
 
 
-![ Nieuw gestileerde WKND Plaats ](assets/newly-styled-wknd-site.png)
+![&#x200B; Nieuw gestileerde WKND Plaats &#x200B;](assets/newly-styled-wknd-site.png)
 
 
 
@@ -99,7 +99,7 @@ En __het belangrijkst__ voor het __gebied van de Plaats van de Code__ is de waar
 >`$HASH_VALUE$` hier is het zelfde als wat u in __FrontEnd WKND ziet opstellen aan Dev__ 3&rbrace; HASH van de INHOUD van de pijpleiding &lbrace;__gebied.__ AEM wordt op de hoogte gebracht van CDN URL van het front-end middel, wordt de waarde opgeslagen bij `/conf/wknd/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/jcr:content` onder __prefixPath__ bezit.
 
 
-![ Correlatie van de Waarde van de knoeiboel ](assets/hash-value-correlartion.png)
+![&#x200B; Correlatie van de Waarde van de knoeiboel &#x200B;](assets/hash-value-correlartion.png)
 
 
 
@@ -109,4 +109,4 @@ Gefeliciteerd, creeerde u, in werking stelde, en verifieerde de voorste-Eind pij
 
 ## Volgende stappen {#next-steps}
 
-In het volgende hoofdstuk, [ Overwegingen ](considerations.md), zult u het effect op het front-end en back-end ontwikkelingsproces herzien.
+In het volgende hoofdstuk, [&#x200B; Overwegingen &#x200B;](considerations.md), zult u het effect op het front-end en back-end ontwikkelingsproces herzien.

@@ -22,7 +22,7 @@ Inhoudsfragmenten zijn een abstractie van inhoud in AEM waarbij op tekst gebasee
 
 AEM Content Fragments zijn tekstgebaseerde redactionele inhoud die mogelijk bepaalde gestructureerde gegevenselementen bevat die zijn gekoppeld, maar die wordt beschouwd als zuivere inhoud zonder ontwerp- of layoutinformatie. Inhoudsfragmenten worden doorgaans gemaakt als agnostische inhoud voor kanalen, die bestemd is voor gebruik en hergebruik via kanalen, waardoor de inhoud zelf wordt verpakt in een contextspecifieke ervaring.
 
-Deze videoreeks bestrijkt de levenscyclus van inhoudsfragmenten in AEM. De details over [ leverend de Fragments van de Inhoud kunnen hier ](content-fragments-delivery-feature-video-use.md) worden gevonden.
+Deze videoreeks bestrijkt de levenscyclus van inhoudsfragmenten in AEM. De details over [&#x200B; leverend de Fragments van de Inhoud kunnen hier &#x200B;](content-fragments-delivery-feature-video-use.md) worden gevonden.
 
 1. Modellen voor inhoudsfragmenten inschakelen en definiëren
 2. Inhoudsfragmenten ontwerpen
@@ -38,7 +38,7 @@ Deze videoreeks bestrijkt de levenscyclus van inhoudsfragmenten in AEM. De detai
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452?quality=12&learn=on)
 
-AEM Content Fragments Models, de gegevensschema&#39;s van Content Fragments, moet via AEM [[!UICONTROL Configuration Browser] ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=nl-NL) worden toegelaten, die toestaat dat de Modellen van het Fragment van de Inhoud op een per configuratiebasis worden bepaald.
+AEM Content Fragments Models, de gegevensschema&#39;s van Content Fragments, moet via AEM [[!UICONTROL Configuration Browser] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=nl-NL) worden toegelaten, die toestaat dat de Modellen van het Fragment van de Inhoud op een per configuratiebasis worden bepaald.
 
 ## Inhoudsfragmenten maken {#creating-content-fragments}
 
@@ -66,17 +66,17 @@ AEM-inhoudsfragmenten kunnen van de AEM-auteur worden gedownload als een ZIP-bes
 
 >[!NOTE]
 >
-> De aantekening en de versie vergelijken voor de Fragmenten van de Inhoud werden geïntroduceerd in [ AEM 6.4 Service Pack 2 ](https://helpx.adobe.com/nl/experience-manager/aem-releases-updates.html) en [ AEM 6.3 Service Pack 3 ](https://helpx.adobe.com/nl/experience-manager/6-3/release-notes/sp3-release-notes.html).
+> De aantekening en de versie vergelijken voor de Fragmenten van de Inhoud werden geïntroduceerd in [&#x200B; AEM 6.4 Service Pack 2 &#x200B;](https://helpx.adobe.com/nl/experience-manager/aem-releases-updates.html) en [&#x200B; AEM 6.3 Service Pack 3 &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/release-notes/sp3-release-notes.html).
 
 ## Volgende stappen
 
-Leer over [ leverend de Fragmenten van de Inhoud ](content-fragments-delivery-feature-video-use.md).
+Leer over [&#x200B; leverend de Fragmenten van de Inhoud &#x200B;](content-fragments-delivery-feature-video-use.md).
 
 ## Aanvullende bronnen {#additional-resources}
 
 * [Inhoudsfragmenten leveren](content-fragments-delivery-feature-video-use.md)
-* [ AEM WCM de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
-* [ AEM WCM de Component van het Fragment van de Inhoud van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=nl-NL)
+* [&#x200B; AEM WCM de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+* [&#x200B; AEM WCM de Component van het Fragment van de Inhoud van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=nl-NL)
 
 U kunt als volgt het pakket downloaden en installeren op een AEM 6.4+-instantie voor de uiteindelijke status van de videoreeks:
 

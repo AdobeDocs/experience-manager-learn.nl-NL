@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Inzicht in DoS/DDoS-preventie in AEM
 
-Leer over de opties beschikbaar om Dos en aanvallen van Dos en van DDoS op uw milieu van AEM te verhinderen en te verlichten. Alvorens in de preventiemechanismen te duiken, een kort overzicht van [ DoS ](https://developer.mozilla.org/en-US/docs/Glossary/DOS_attack) en [ DDoS ](https://developer.mozilla.org/en-US/docs/Glossary/Distributed_Denial_of_Service).
+Leer over de opties beschikbaar om Dos en aanvallen van Dos en van DDoS op uw milieu van AEM te verhinderen en te verlichten. Alvorens in de preventiemechanismen te duiken, een kort overzicht van [&#x200B; DoS &#x200B;](https://developer.mozilla.org/en-US/docs/Glossary/DOS_attack) en [&#x200B; DDoS &#x200B;](https://developer.mozilla.org/en-US/docs/Glossary/Distributed_Denial_of_Service).
 
 - DoS (Ontkenning van Dienst) en DDoS (Verspreid Ontkenning van de Dienst) aanvallen zijn beide kwaadwillige pogingen om het normale functioneren van een gerichte server, de dienst, of het netwerk te verstoren, die het ontoegankelijk maken voor zijn voorgenomen gebruikers maken.
 - De aanvallen van Dos komen typisch uit één enkele bron voort, terwijl de aanvallen DDoS uit veelvoudige bronnen komen.

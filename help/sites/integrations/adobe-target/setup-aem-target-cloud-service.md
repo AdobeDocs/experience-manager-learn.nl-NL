@@ -23,15 +23,15 @@ ht-degree: 0%
 
 In de volgende video ziet u hoe u AEM as a Cloud Service kunt verbinden met Adobe Target.
 
-Dankzij deze integratie kan de AEM Author-service direct communiceren met Adobe Target en de Experience Fragments van AEM naar Target uitvoeren als aanbiedingen.  Deze integratie voegt ** geen Adobe Target JavaScript (AT.js) aan de Web-pagina&#39;s van AEM Sites, voor die integratie [ AEM en markeringen toe gebruikend de uitbreiding van het Doel ](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md).
+Dankzij deze integratie kan de AEM Author-service direct communiceren met Adobe Target en de Experience Fragments van AEM naar Target uitvoeren als aanbiedingen.  Deze integratie voegt ** geen Adobe Target JavaScript (AT.js) aan de Web-pagina&#39;s van AEM Sites, voor die integratie [&#x200B; AEM en markeringen toe gebruikend de uitbreiding van het Doel &#x200B;](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md).
 
 >[!WARNING]
 >
->In de video wordt een verouderde JWT-verificatiemethode getoond voor het verbinden van AEM met Adobe Target. Nochtans, is de geadviseerde methode de server-aan-Server authentificatiemethode OAuth te gebruiken. Voor meer informatie, zie [ JWT-aan-OAuth credentiële migratie voor AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/authentication/jwt-to-oauth-migration). We werken aan het bijwerken van de video om deze wijziging te weerspiegelen.
+>In de video wordt een verouderde JWT-verificatiemethode getoond voor het verbinden van AEM met Adobe Target. Nochtans, is de geadviseerde methode de server-aan-Server authentificatiemethode OAuth te gebruiken. Voor meer informatie, zie [&#x200B; JWT-aan-OAuth credentiële migratie voor AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/authentication/jwt-to-oauth-migration). We werken aan het bijwerken van de video om deze wijziging te weerspiegelen.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/41244?quality=12&learn=on)
 
 >[!CAUTION]
 >
->Er is een bekend probleem met de configuratie van Adobe Target Cloud Services die in de video wordt weergegeven. Tot dit probleem wordt opgelost, volg de zelfde stappen in de video maar gebruik de [ configuratie van de Diensten van de Oudere Adobe Target Cloud ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html?lang=nl-NL).
+>Er is een bekend probleem met de configuratie van Adobe Target Cloud Services die in de video wordt weergegeven. Tot dit probleem wordt opgelost, volg de zelfde stappen in de video maar gebruik de [&#x200B; configuratie van de Diensten van de Oudere Adobe Target Cloud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html?lang=nl-NL).

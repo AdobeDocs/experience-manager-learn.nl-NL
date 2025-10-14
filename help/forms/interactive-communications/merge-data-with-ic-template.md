@@ -162,22 +162,22 @@ String params = arg2.get("PROCESS_ARGS","string").toString();
 
 Voer de volgende stappen uit om dit op uw server te testen:
 
-* [ vorm de Dienst van de Post van de Dag CQ.](https://helpx.adobe.com/nl/experience-manager/6-5/communities/using/email.html) Dit is nodig om e-mail te verzenden met het document dat als bijlage is gegenereerd.
+* [&#x200B; vorm de Dienst van de Post van de Dag CQ.](https://helpx.adobe.com/nl/experience-manager/6-5/communities/using/email.html) Dit is nodig om e-mail te verzenden met het document dat als bijlage is gegenereerd.
 * [Implementeer de Developing with Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * Controleer of u de volgende vermelding hebt toegevoegd in de configuratie van de service Gebruikerskaart van de Apache Sling Service
 * **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
 * [De aan dit artikel gerelateerde elementen downloaden en uitpakken naar uw bestandssysteem](assets/prefillservice.zip)
-* [ voer de volgende pakketten in gebruikend de het pakketManager van AEM ](http://localhost:4502/crx/packmgr/index.jsp)
+* [&#x200B; voer de volgende pakketten in gebruikend de het pakketManager van AEM &#x200B;](http://localhost:4502/crx/packmgr/index.jsp)
    1. beneficiaryconfirmationic.zip
    2. changeofbeneficiaryform.zip
    3. generatebeneficiaryworkflow.zip
-* [ stel het volgende op gebruikend de Console van het Web van AEM Felix ](http://localhost:4502/system/console/bundles)
+* [&#x200B; stel het volgende op gebruikend de Console van het Web van AEM Felix &#x200B;](http://localhost:4502/system/console/bundles)
 
    * GenerateIC.GenerateIC.core-1.0-SNAPSHOT.jar. Deze bundel bevat de code die in dit artikel wordt vermeld.
 
-* [ Open ChangeOfBeneficiaryForm ](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
+* [&#x200B; Open ChangeOfBeneficiaryForm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
 * Zorg ervoor dat het adaptieve formulier is geconfigureerd voor verzending naar de AEM Workflow, zoals hieronder wordt weergegeven
   ![afbeelding](assets/generateic.PNG)
-* [ vorm het werkschemamodel.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html) zorg ervoor de processtap en verzend e-mailcomponenten zoals per uw milieu worden gevormd
-* [ voorproef ChangeOfBeneficiaryForm.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) Vul enkele details in en verzend
+* [&#x200B; vorm het werkschemamodel.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html) zorg ervoor de processtap en verzend e-mailcomponenten zoals per uw milieu worden gevormd
+* [&#x200B; voorproef ChangeOfBeneficiaryForm.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) Vul enkele details in en verzend
 * De workflow moet worden aangeroepen en het document met het IC-afdrukkanaal moet worden verzonden naar de ontvanger die is opgegeven in het onderdeel E-mail verzenden als bijlage

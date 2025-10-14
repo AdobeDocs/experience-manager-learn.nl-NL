@@ -31,7 +31,7 @@ Gezien deze nadelen wordt het sterk geadviseerd om servers aan middeltypes eerde
 ## Servlet maken
 
 Start je aem-banking project in IntelliJ. Maak een servlet met de naam GetFieldChoices onder de servlets-map, zoals hieronder in de schermafbeelding wordt weergegeven.
-![ keuzen ](assets/fetchchoices.png)
+![&#x200B; keuzen &#x200B;](assets/fetchchoices.png)
 
 ## Sample Servlet
 
@@ -114,7 +114,7 @@ Het pad `/content/fetchchoices/jcr:content` is het pad van de bron en de extensi
 Dit knooppunt moet worden gesynchroniseerd van AEM naar uw lokale AEM-project.
 
 Uw AEM-projectstructuur moet er als volgt uitzien
-![ middel-resolver ](assets/mapping-servlet-resource.png)
+![&#x200B; middel-resolver &#x200B;](assets/mapping-servlet-resource.png)
 Filter.xml bijwerken in de map aem-banking-application\ui.content\src\main\content\META-INF\vault met de volgende vermelding
 
 ```xml

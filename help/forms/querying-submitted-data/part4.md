@@ -21,15 +21,15 @@ ht-degree: 0%
 
 De volgende stap is de voorgelegde gegevens te vragen en de resultaten in tabelvorm te tonen. Hiervoor gebruiken we de volgende software:
 
-[ QueryBuilder ](https://querybuilder.js.org/) - component UI om vragen tot stand te brengen
+[&#x200B; QueryBuilder &#x200B;](https://querybuilder.js.org/) - component UI om vragen tot stand te brengen
 
-[ Lijsten van Gegevens ](https://datatables.net/) - om de vraagresultaten in tabelvorm te tonen.
+[&#x200B; Lijsten van Gegevens &#x200B;](https://datatables.net/) - om de vraagresultaten in tabelvorm te tonen.
 
 De volgende UI werd gebouwd om het vragen van de voorgelegde gegevens toe te laten. Alleen de elementen die zijn gemarkeerd als vereist in het JSON-schema, worden beschikbaar gesteld voor query. In het onderstaande screenshot vragen we om alle inzendingen waar de bezorgpref SMS is.
 
 De steekproef UI om de voorgelegde gegevens te vragen gebruikt niet alle geavanceerde mogelijkheden beschikbaar in QueryBuilder. Je wordt aangemoedigd om ze zelf uit te proberen.
 
-![ querybuilder ](assets/querybuilderui.gif)
+![&#x200B; querybuilder &#x200B;](assets/querybuilderui.gif)
 
 >[!NOTE]
 >
@@ -68,10 +68,10 @@ Het resultaat van deze query wordt vervolgens geretourneerd om de tabel in de ge
 
 Voer de volgende stappen uit om dit voorbeeld op uw lokale systeem uit te voeren
 
-1. [ zorg ervoor u alle hier vermelde stappen hebt gevolgd ](part2.md)
-1. [ voer Dashboardv2.zip in gebruikend de Manager van het Pakket van AEM.](assets/dashboardv2.zip) Dit pakket bevat alle benodigde bundels, configuratie-instellingen, aangepaste verzendpagina en voorbeeldpagina voor querygegevens.
+1. [&#x200B; zorg ervoor u alle hier vermelde stappen hebt gevolgd &#x200B;](part2.md)
+1. [&#x200B; voer Dashboardv2.zip in gebruikend de Manager van het Pakket van AEM.](assets/dashboardv2.zip) Dit pakket bevat alle benodigde bundels, configuratie-instellingen, aangepaste verzendpagina en voorbeeldpagina voor querygegevens.
 1. Een adaptief formulier maken met het JSON-voorbeeldschema
 1. Configureer het adaptieve formulier voor verzending naar de aangepaste verzendactie &quot;custom submit&quot;
 1. Het formulier invullen en verzenden
-1. Punt uw browser aan [ dashboard.html ](http://localhost:4502/content/AemForms/dashboard.html)
+1. Punt uw browser aan [&#x200B; dashboard.html &#x200B;](http://localhost:4502/content/AemForms/dashboard.html)
 1. Selecteer het formulier en voer een eenvoudige query uit

@@ -20,7 +20,7 @@ ht-degree: 0%
 # Inleiding tot klikbare afbeeldingen
 
 Door klikbare afbeeldingen in Forms te gebruiken, kunt u een boeiender, intuïtiever en visueel aantrekkelijke gebruikerservaring creëren. In het kader van dit artikel hebben we SVG gebruikt voor klikbare afbeeldingen, omdat dit verschillende voordelen biedt, met name op het gebied van ontwerpflexibiliteit, prestaties en gebruikerservaring.
-SVG kan worden gemaakt met Adobe Illustrator of een van de gratis online tools. Ik heb de [ Kaart van de V.S. van ](https://simplemaps.com/resources/svg-us) vereenvoudigingen gebruikt om het gebruiksgeval aan te tonen.
+SVG kan worden gemaakt met Adobe Illustrator of een van de gratis online tools. Ik heb de [&#x200B; Kaart van de V.S. van &#x200B;](https://simplemaps.com/resources/svg-us) vereenvoudigingen gebruikt om het gebruiksgeval aan te tonen.
 
 ## Hoofdlettergebruik gebruiken voor het gebruik van een aanklikbare VS-kaart
 

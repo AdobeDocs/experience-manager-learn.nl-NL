@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Videoafspeellijsten voor de Assets-weergave
 
-![ de mening van Assets van AEM Assets ](./assets/assets-view.png){align="center"}
+![&#x200B; de mening van Assets van AEM Assets &#x200B;](./assets/assets-view.png){align="center"}
 
 Bekijk deze afspeellijsten om de AEM Assets as a Cloud Service Assets-weergave onder de knie te krijgen: configuratie, optimalisatie, gebruik en naadloze integratie met creatieve workflows. Bekijk de inzichten die je nodig hebt om te slagen met AEM Assets as a Cloud Service.
 

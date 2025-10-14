@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Machtigingen basislijn
 
-Het beheren van gebruikerstoegang op de [ omslagen van basislijnactiva ](./baseline-folders.md) is een kritiek aspect in bestuur, en verzekert de processen kunnen behoorlijk worden gesteund.
+Het beheren van gebruikerstoegang op de [&#x200B; omslagen van basislijnactiva &#x200B;](./baseline-folders.md) is een kritiek aspect in bestuur, en verzekert de processen kunnen behoorlijk worden gesteund.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37696?quality=12&learn=on)

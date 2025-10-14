@@ -20,11 +20,11 @@ De Dispatcher is een essentieel onderdeel van de meeste, zo niet alle AEM instal
 
 Deze zelfstudie bestaat uit drie onderdelen.
 
-1. [ Concepten, Patronen, en Antipatronen ](chapter-1.md)
+1. [&#x200B; Concepten, Patronen, en Antipatronen &#x200B;](chapter-1.md)
 Verstrekt een korte inleiding van de geschiedenis van Dispatcher, mechanica en bespreekt hoe dit beïnvloedt hoe een AEM ontwikkelaar zijn componenten zou ontwerpen.
 
-1. [ Patroon van de Infrastructuur ](chapter-2.md)
+1. [&#x200B; Patroon van de Infrastructuur &#x200B;](chapter-2.md)
 Bespreekt diverse topologieën op hoe te om een systeem van de AEM met een cluster van systemen van Publish en de geheime voorgeheugens van Dispatcher omhoog te schrapen.
 
-1. [ Geavanceerde Onderwerpen Caching ](chapter-3.md)
+1. [&#x200B; Geavanceerde Onderwerpen Caching &#x200B;](chapter-3.md)
 Waar de eerste twee delen zich richtten op het in cache plaatsen van onbewerkte http in de Dispatcher en welke beperkingen er zijn. In dit deel worden enkele ideeën besproken over hoe deze beperkingen kunnen worden overwonnen.

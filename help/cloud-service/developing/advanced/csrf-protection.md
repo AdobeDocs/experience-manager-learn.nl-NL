@@ -34,7 +34,7 @@ Als een CSRF-token niet wordt verzonden met een POST-, PUT- of DELETE-aanvraag, 
 [INFO][POST /path/to/aem/endpoint HTTP/1.1][com.adobe.granite.csrf.impl.CSRFFilter] doFilter: the provided CSRF token is invalid
 ```
 
-Zie de [ documentatie voor meer details over de bescherming van CSRF van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=nl-NL).
+Zie de [&#x200B; documentatie voor meer details over de bescherming van CSRF van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=nl-NL).
 
 
 ## CSRF-clientbibliotheek
@@ -45,7 +45,7 @@ Als u deze methode wilt gebruiken, voegt u `granite.csrf.standalone` toe als een
 
 ## Aangepast formulier verzenden met CSRF-beveiliging
 
-Als het gebruik van de [`granite.csrf.standalone` clientbibliotheek ](#csrf-client-library) niet geschikt is voor uw gebruiksscenario, kunt u handmatig een CSRF-token toevoegen aan een formulierverzending. In het volgende voorbeeld ziet u hoe u een CSRF-token toevoegt aan een formulierverzending.
+Als het gebruik van de [`granite.csrf.standalone` clientbibliotheek &#x200B;](#csrf-client-library) niet geschikt is voor uw gebruiksscenario, kunt u handmatig een CSRF-token toevoegen aan een formulierverzending. In het volgende voorbeeld ziet u hoe u een CSRF-token toevoegt aan een formulierverzending.
 
 Dit codefragment demonstreert hoe bij het verzenden van formulieren de CSRF-token kan worden opgehaald uit AEM en toegevoegd aan een formulierinvoer met de naam `:cq_csrf_token` . Omdat de token CSRF een korte levensduur heeft, is het beter om de token CSRF op te halen en in te stellen direct voordat het formulier wordt verzonden, zodat de geldigheid van de token gegarandeerd is.
 
@@ -74,7 +74,7 @@ document.querySelector('form').addEventListener('submit', async (event) => {
 
 ## Ophalen met KVP-beveiliging
 
-Als het gebruik van [`granite.csrf.standalone` cliëntbibliotheek ](#csrf-client-library) niet aan uw gebruiksgeval toegankelijk is, kunt u een symbolisch CSRF aan XHR manueel toevoegen of verzoeken halen. In het volgende voorbeeld ziet u hoe u een CSRF-token toevoegt aan een XHR die is gemaakt met ophalen.
+Als het gebruik van [`granite.csrf.standalone` cliëntbibliotheek &#x200B;](#csrf-client-library) niet aan uw gebruiksgeval toegankelijk is, kunt u een symbolisch CSRF aan XHR manueel toevoegen of verzoeken halen. In het volgende voorbeeld ziet u hoe u een CSRF-token toevoegt aan een XHR die is gemaakt met ophalen.
 
 Dit codefragment demonstreert hoe u een CSRF-token kunt ophalen van AEM en deze kunt toevoegen aan de HTTP-aanvraagheader van een ophaalaanvraag. `CSRF-Token` Omdat het teken CSRF een kort leven heeft, is het best om het teken terug te winnen en te plaatsen CSRF onmiddellijk alvorens het haalverzoek wordt gemaakt, die zijn geldigheid verzekeren.
 

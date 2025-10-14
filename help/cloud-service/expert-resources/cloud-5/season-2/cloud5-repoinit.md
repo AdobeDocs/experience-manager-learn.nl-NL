@@ -25,8 +25,8 @@ Aan de slag met REPOINIT — of de Sling Repository Initializer. Leer een paar t
 ## Inhoud die in deze video wordt behandeld
 
 + OVERZICHT VAN HERSTELLING
-+ [ Syntaxis VAN HERSTEL ](https://sling.apache.org/documentation/bundles/repository-initialization.html#appendix-a-repoinit-syntax-parser-test-scenarios-1)
++ [&#x200B; Syntaxis VAN HERSTEL &#x200B;](https://sling.apache.org/documentation/bundles/repository-initialization.html#appendix-a-repoinit-syntax-parser-test-scenarios-1)
 
 ## Aanvullende bronnen
 
-Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 2 ](../cloud5-season-2.md) pagina.
+Bekijk verwante video&#39;s op de [&#x200B; Wolk 5 seizoen 2 &#x200B;](../cloud5-season-2.md) pagina.

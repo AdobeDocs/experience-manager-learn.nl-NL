@@ -33,7 +33,7 @@ Aan het einde van dit zelfstudie-hoofdstuk hebt u een volledig functionele en be
 
 1. We moeten nu enkele aanbiedingsfragmenten en een component voor de afbeeldingenlijst maken.  Navigeer naar de contentfragmentconsole.
 
-   ![ creeer-imagelist-fragment ](./assets/3/create-imagelist-fragment.png)
+   ![&#x200B; creeer-imagelist-fragment &#x200B;](./assets/3/create-imagelist-fragment.png)
 
    We willen een fragment maken van het type `imagelist` (model is `imagelist` ) en geven het de titel `imagelist` .
 

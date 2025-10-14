@@ -28,7 +28,7 @@ Volg de onderstaande instructies om deze gebruiksaanwijzing op uw systeem te lat
 
 ## Database maken
 
-In dit voorbeeld wordt de MySQL-database gebruikt om de adaptieve formuliergegevens op te slaan. U zult het [ gegevensbestandschema moeten tot stand brengen door het schemadossier ](assets/data-base-schema.sql) in MySQL werkbank in te voeren.
+In dit voorbeeld wordt de MySQL-database gebruikt om de adaptieve formuliergegevens op te slaan. U zult het [&#x200B; gegevensbestandschema moeten tot stand brengen door het schemadossier &#x200B;](assets/data-base-schema.sql) in MySQL werkbank in te voeren.
 
 ## Gegevensbron maken
 
@@ -36,35 +36,35 @@ U moet een Apache het Schuiven Verbinding Pooled DataSource tot stand brengen ri
 
 ## Formuliergegevensmodel maken
 
-Het Model van de Gegevens van de vorm moet worden gecreeerd gebaseerd op deze gegevensbron genoemd **StoreAndRetrieveAfData**. Dit formuliergegevensmodel wordt gebruikt om het mobiele-telefoonnummer op te halen dat aan de toepassings-id is gekoppeld. Het model van vormgegevens kan [ van hier worden gedownload.](assets/2-Factor-Authentication-DataSource-and-FDM.zip)
+Het Model van de Gegevens van de vorm moet worden gecreeerd gebaseerd op deze gegevensbron genoemd **StoreAndRetrieveAfData**. Dit formuliergegevensmodel wordt gebruikt om het mobiele-telefoonnummer op te halen dat aan de toepassings-id is gekoppeld. Het model van vormgegevens kan [&#x200B; van hier worden gedownload.](assets/2-Factor-Authentication-DataSource-and-FDM.zip)
 
 ## Ontwikkelaarsaccount maken met nexmo
 
-Creeer een ontwikkelaarrekening met [ Nexmo ](https://dashboard.nexmo.com/) voor het verzenden van en het verifiëren van codes OTP. Noteer de API-sleutel en de API-beveiligingssleutel. Het gegevensbron- en formuliergegevensmodel zijn al voor u gemaakt op basis van deze service en worden opgenomen met de elementen die in de vorige stap zijn vermeld.
+Creeer een ontwikkelaarrekening met [&#x200B; Nexmo &#x200B;](https://dashboard.nexmo.com/) voor het verzenden van en het verifiëren van codes OTP. Noteer de API-sleutel en de API-beveiligingssleutel. Het gegevensbron- en formuliergegevensmodel zijn al voor u gemaakt op basis van deze service en worden opgenomen met de elementen die in de vorige stap zijn vermeld.
 
 ## De volgende OSGi-bundels implementeren
 
-Stel de bundel op die de [ code heeft om gegevens van gegevensbestand op te slaan en te halen ](assets/SaveAndResume.core-1.0.0-SNAPSHOT.jar)
-Download en decomprimeer [ het ontwikkelen withServiceUser.zip ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=nl-NL).
+Stel de bundel op die de [&#x200B; code heeft om gegevens van gegevensbestand op te slaan en te halen &#x200B;](assets/SaveAndResume.core-1.0.0-SNAPSHOT.jar)
+Download en decomprimeer [&#x200B; het ontwikkelen withServiceUser.zip &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=nl-NL).
 Implementeer het bestand DevelopingWithServiceUser.jar met behulp van de Felix-webconsole.
 
 ## De clientbibliotheek implementeren
 
-In het voorbeeld worden twee clientbibliotheken gebruikt. Importeer deze [ cliëntbibliotheken ](assets/store-af-with-attachments-client-lib.zip) in AEM.
+In het voorbeeld worden twee clientbibliotheken gebruikt. Importeer deze [&#x200B; cliëntbibliotheken &#x200B;](assets/store-af-with-attachments-client-lib.zip) in AEM.
 
 ## De aangepaste adaptieve formuliersjabloon importeren
 
-De voorbeeldformulieren die in deze demo worden gebruikt, zijn gebaseerd op een aangepaste sjabloon. Invoer het [ douanemalplaatje in AEM ](assets/custom-template-with-page-component.zip)
+De voorbeeldformulieren die in deze demo worden gebruikt, zijn gebaseerd op een aangepaste sjabloon. Invoer het [&#x200B; douanemalplaatje in AEM &#x200B;](assets/custom-template-with-page-component.zip)
 
 ## De adaptieve voorbeeldformulieren importeren
 
-De twee formulieren waaruit dit voorbeeld bestaat, moeten in AEM worden geïmporteerd. De steekproefvormen kunnen [ van hier worden gedownload ](assets/sample-forms.zip)
+De twee formulieren waaruit dit voorbeeld bestaat, moeten in AEM worden geïmporteerd. De steekproefvormen kunnen [&#x200B; van hier worden gedownload &#x200B;](assets/sample-forms.zip)
 
-Open [ MyAccountForm ](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) op geef wijze uit. Geef de waarden voor Vonage API Key en API Secret op in de juiste velden in het adaptieve formulier.
+Open [&#x200B; MyAccountForm &#x200B;](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) op geef wijze uit. Geef de waarden voor Vonage API Key en API Secret op in de juiste velden in het adaptieve formulier.
 
 ## De oplossing testen
 
-Voorproef [ StoreAFWithAttachments ](http://localhost:4502/content/dam/formsanddocuments/storeafwithattachments/jcr:content?wcmmode=disabled)
+Voorproef [&#x200B; StoreAFWithAttachments &#x200B;](http://localhost:4502/content/dam/formsanddocuments/storeafwithattachments/jcr:content?wcmmode=disabled)
 Voer uw mobiele nummer in, inclusief de landcode, vul uw gebruikersgegevens in en voeg enkele bijlagen toe. Klik op de knop &quot;Opslaan en afsluiten&quot; om het aangepaste formulier en de bijbehorende bijlagen op te slaan
 
 

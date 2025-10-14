@@ -27,13 +27,13 @@ Als u toegang krijgt tot de AEM SDK-logboeken, kunt u met de lokale QuickStart J
 
 Logs fungeert als frontline voor foutopsporing in AEM-toepassingen, maar is afhankelijk van een adequate aanmelding in de geïmplementeerde AEM-toepassing. Adobe raadt aan om de configuraties voor lokale ontwikkeling en AEM as a Cloud Service Dev-logboekregistratie zo vergelijkbaar mogelijk te houden, aangezien deze de zichtbaarheid van logbestanden in de lokale QuickStart- en AEM as a Cloud Service Dev-omgevingen van AEM SDK normaliseert, waardoor configuratie-tweeling en -herimplementatie worden beperkt.
 
-Het [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) vormt registreren op het niveau DEBUG voor de pakketten van Java van uw toepassing van AEM voor lokale ontwikkeling via de Sling Logger OSGi configuratie die bij wordt gevonden
+Het [&#x200B; Archetype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype) vormt registreren op het niveau DEBUG voor de pakketten van Java van uw toepassing van AEM voor lokale ontwikkeling via de Sling Logger OSGi configuratie die bij wordt gevonden
 
 `ui.apps/src/main/content/jcr_root/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
 
 die zich aanmeldt bij de `error.log` .
 
-Als het standaard registreren voor lokale ontwikkeling ontoereikend is, kan het ad hoc registreren via de lokale het Webconsole van de Steun van het Logboek van AEM SDK, bij ([/system/console/slinglog ](http://localhost:4502/system/console/slinglog)) worden gevormd, nochtans wordt het niet geadviseerd ad hoc veranderingen aan Git worden voortgeduurd tenzij deze zelfde logboekconfiguraties ook op de milieu&#39;s van AEM as a Cloud Service Dev nodig zijn. Wijzigingen via de Log Support-console blijven rechtstreeks doorgevoerd in de lokale QuickStart-opslagruimte van AEM SDK.
+Als het standaard registreren voor lokale ontwikkeling ontoereikend is, kan het ad hoc registreren via de lokale het Webconsole van de Steun van het Logboek van AEM SDK, bij ([/system/console/slinglog &#x200B;](http://localhost:4502/system/console/slinglog)) worden gevormd, nochtans wordt het niet geadviseerd ad hoc veranderingen aan Git worden voortgeduurd tenzij deze zelfde logboekconfiguraties ook op de milieu&#39;s van AEM as a Cloud Service Dev nodig zijn. Wijzigingen via de Log Support-console blijven rechtstreeks doorgevoerd in de lokale QuickStart-opslagruimte van AEM SDK.
 
 Java-loginstructies kunnen worden weergegeven in het bestand `error.log` :
 
@@ -45,7 +45,7 @@ Vaak is het handig om de `error.log` die de uitvoer naar de terminal stroomt, te
 
 + macOS/Linux
    + `$ tail -f ~/aem-sdk/author/crx-quickstart/logs/error.log`
-+ De vensters vereist [ toepassingen van de 3de partijstaart ](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) of het gebruik van [ Powershell bevel krijgen-Inhoud ](https://stackoverflow.com/a/46444596/133936).
++ De vensters vereist [&#x200B; toepassingen van de 3de partijstaart &#x200B;](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) of het gebruik van [&#x200B; Powershell bevel krijgen-Inhoud &#x200B;](https://stackoverflow.com/a/46444596/133936).
 
 ## Dispatcher-logboeken
 

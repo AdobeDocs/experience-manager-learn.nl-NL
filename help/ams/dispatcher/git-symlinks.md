@@ -29,7 +29,7 @@ Nadat u het eerste `.vhost` -bestand of het bovenste `farm.any` -bestand hebt ge
 
 ## Dispatcher Archetype
 
-De ontwikkelaar van AEM begint typisch hun project van [ AEM archetype ](https://github.com/adobe/aem-project-archetype)
+De ontwikkelaar van AEM begint typisch hun project van [&#x200B; AEM archetype &#x200B;](https://github.com/adobe/aem-project-archetype)
 
 Hier volgt een voorbeeld van het gebied van de broncode waar u de gebruikte symlinks kunt zien:
 
@@ -110,13 +110,13 @@ lrwxrwxrwx. 1 root root 35 Oct 13 21:38 aem_flush.vhost -> ../available_vhosts/a
 
 > `Note:` Geeft aan dat MS Windows (beter, NTFS) symbolische koppelingen ondersteunt sinds.. Windows Vista!
 
-![ Beeld van de Herinnering van het Bevel van Vensters die de hulpoutput van het mklink bevel tonen ](./assets/git-symlinks/windows-terminal-mklink.png)
+![&#x200B; Beeld van de Herinnering van het Bevel van Vensters die de hulpoutput van het mklink bevel tonen &#x200B;](./assets/git-symlinks/windows-terminal-mklink.png)
 
 > Voor het uitvoeren van de opdracht mklink voor het maken van symlinks zijn beheerdersrechten vereist. `Warning:` Zelfs als Admin-account, moet u de opdrachtprompt &quot;Als beheerder&quot; uitvoeren, tenzij de ontwikkelaarsmodus is ingeschakeld
 > <br/>Onjuiste machtigingen:
-> ![Beeld van de Herinnering van het Bevel van Vensters die het bevel tonen ontbreekt toe te schrijven aan toestemmingen ](./assets/git-symlinks/windows-mklink-underpriv.png)
+> ![Beeld van de Herinnering van het Bevel van Vensters die het bevel tonen ontbreekt toe te schrijven aan toestemmingen &#x200B;](./assets/git-symlinks/windows-mklink-underpriv.png)
 > <br/>Juiste machtigingen:
-> ![Beeld van de Herinnering van het Bevel van Vensters liep als Beheerder ](./assets/git-symlinks/windows-mklink-properpriv.png)
+> ![Beeld van de Herinnering van het Bevel van Vensters liep als Beheerder &#x200B;](./assets/git-symlinks/windows-mklink-properpriv.png)
 
 Hier volgt de opdracht(en) om de koppeling te maken:
 
@@ -136,7 +136,7 @@ symbolic link created for aem_flush.vhost <<===>> ..\available_vhosts\aem_flush.
 
 #### Modus Ontwikkelaar (Windows 10)
 
-Wanneer gezet in [ Wijze van de Ontwikkelaar ](https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development), staat Vensters 10 u toe om apps gemakkelijker te testen u ontwikkelt, het shell milieu van Ubuntu Bash gebruiken, een verscheidenheid van ontwikkelaar-gerichte montages veranderen, en andere dergelijke dingen doen.
+Wanneer gezet in [&#x200B; Wijze van de Ontwikkelaar &#x200B;](https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development), staat Vensters 10 u toe om apps gemakkelijker te testen u ontwikkelt, het shell milieu van Ubuntu Bash gebruiken, een verscheidenheid van ontwikkelaar-gerichte montages veranderen, en andere dergelijke dingen doen.
 
 Microsoft lijkt eigenschappen aan de Wijze van de Ontwikkelaar te blijven toevoegen, of sommige van die eigenschappen toe te laten door gebrek zodra zij een meer wijdverspreide goedkeuring bereiken en als stabiel (bijvoorbeeld met de Update van Scheppers, vereist het milieu van Ubuntu Bash Shell niet meer de Wijze van de Ontwikkelaar) worden beschouwd.
 
@@ -146,11 +146,11 @@ Hoe zit het met symlinks? Met INGESCHAKELDE Wijze van de Ontwikkelaar, is er gee
 
 Nu kunt u zonder als Beheerder te lopen zien het bevel werkt
 
-![ Beeld van de Herinnering van het Bevel van Vensters in werking gesteld als normale gebruiker met toegelaten de Wijze van de Ontwikkelaar ](./assets/git-symlinks/windows-mklink-devmode.png)
+![&#x200B; Beeld van de Herinnering van het Bevel van Vensters in werking gesteld als normale gebruiker met toegelaten de Wijze van de Ontwikkelaar &#x200B;](./assets/git-symlinks/windows-mklink-devmode.png)
 
 #### Alternatieve/programmatische aanpak
 
-Er is een specifiek beleid dat bepaalde gebruikers kan toestaan om symbolische verbindingen tot stand te brengen → [ creeer symbolische verbindingen (Vensters 10) - de veiligheid van Vensters | Microsoft Docs ](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links)
+Er is een specifiek beleid dat bepaalde gebruikers kan toestaan om symbolische verbindingen tot stand te brengen → [&#x200B; creeer symbolische verbindingen (Vensters 10) - de veiligheid van Vensters | Microsoft Docs &#x200B;](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links)
 
 PRO&#39;s:
 - Dit zou door klanten kunnen worden leveraged om symbolische verbindingen verwezenlijking aan alle ontwikkelaars binnen hun (d.w.z. Actieve Folder) programmatically toe te staan zonder het moeten de Wijze van de Ontwikkelaar op elk apparaat manueel toelaten.
@@ -163,13 +163,13 @@ CON&#39;s:
 
 Voer `gpedit.msc` uit, voeg gebruikers toe of wijzig gebruikers naar wens. Beheerders zijn er standaard
 
-![ het venster van de Redacteur van het Beleid van de Groep die toestemming toont om ](./assets/git-symlinks/windows-localpolicies-symlinks.png) aan te passen
+![&#x200B; het venster van de Redacteur van het Beleid van de Groep die toestemming toont om &#x200B;](./assets/git-symlinks/windows-localpolicies-symlinks.png) aan te passen
 
 #### Symbolen inschakelen in GIT
 
 De handvatten van de it volgens de core.symlinks optie
 
-Source: [ it - git-config Documentatie ](https://git-scm.com/docs/git-config#Documentation/git-config.txt-coresymlinks)
+Source: [&#x200B; it - git-config Documentatie &#x200B;](https://git-scm.com/docs/git-config#Documentation/git-config.txt-coresymlinks)
 
 *als core.symlinks vals is, worden de symbolische verbindingen gecontroleerd als kleine gewone dossiers die de verbindingstekst bevatten. `git-update-index[1]` en `git-add[1]` veranderen het opgenomen type niet in een normaal bestand. Nuttig op bestandssystemen zoals FAT die geen ondersteuning bieden voor symbolische koppelingen.
 Het gebrek is waar, behalve `git-clone[1]` of `git-init[1] will probe and set core.symlinks false if appropriate when the repository is created.` in de meeste gevallen, Git zal veronderstellen Vensters niet goed voor symlinks is en zal dit aan vals plaatsen.*
@@ -178,11 +178,11 @@ Het gedrag van Git op Vensters wordt duidelijk hier: Symbolische Verbindingen �
 
 > `Info`: De veronderstellingen die worden vermeld in de documentatie verbonden hierboven lijken o.k. met een mogelijke opstelling van de Ontwikkelaar van AEM op Vensters, met name NTFS en het feit dat wij slechts dossiersymlinks vs. de symlinks van de Folder hebben
 
-Hier is het goede nieuws, aangezien [ Git voor versie 2.10.2 van Vensters ](https://github.com/git-for-windows/git/releases/tag/v2.10.2.windows.1) de installateur een [ expliciete optie heeft om symbolische verbindingssteun toe te laten.](https://github.com/git-for-windows/git/issues/921)
+Hier is het goede nieuws, aangezien [&#x200B; Git voor versie 2.10.2 van Vensters &#x200B;](https://github.com/git-for-windows/git/releases/tag/v2.10.2.windows.1) de installateur een [&#x200B; expliciete optie heeft om symbolische verbindingssteun toe te laten.](https://github.com/git-for-windows/git/issues/921)
 
 > `Warning`: De optie core.symlink kan bij uitvoering worden opgegeven terwijl de gegevensopslagruimte wordt gekloond, of anders als een algemene configuratie worden opgeslagen.
 
-![ tonend de installateur van GIT die steun voor symlinks toont ](./assets/git-symlinks/windows-git-install-symlink.png)
+![&#x200B; tonend de installateur van GIT die steun voor symlinks toont &#x200B;](./assets/git-symlinks/windows-git-install-symlink.png)
 
 Git voor Windows slaat algemene voorkeuren op in `"C:\Program Files\Git\etc\gitconfig"` . Deze instellingen worden mogelijk niet in aanmerking genomen door andere Git-bureaubladclient-apps.
 Hier is vangst, niet zullen alle ontwikkelaars de inheemse cliënt van het Git (d.w.z. Cmd van het Git, Bash) gebruiken, en sommige van de Apps van de Desktop van het Git (b.v. Desktop GitHub, Atlassian Bronree) kunnen verschillende montages/gebreken hebben om Systeem of een ingebedde Git te gebruiken

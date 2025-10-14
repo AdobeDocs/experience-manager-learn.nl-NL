@@ -50,4 +50,4 @@ De video&#39;s en doorlopen die hieronder zijn gekoppeld, laten zien hoe een ext
 
 ## Adobe Developer-documentatie
 
-Adobe Developer bevat ontwikkelaarsdetails over de uitbreidbaarheid van de gebruikersinterface van AEM. Gelieve te herzien de [ inhoud van Adobe Developer voor verdere technische details ](https://developer.adobe.com/uix/docs/).
+Adobe Developer bevat ontwikkelaarsdetails over de uitbreidbaarheid van de gebruikersinterface van AEM. Gelieve te herzien de [&#x200B; inhoud van Adobe Developer voor verdere technische details &#x200B;](https://developer.adobe.com/uix/docs/).

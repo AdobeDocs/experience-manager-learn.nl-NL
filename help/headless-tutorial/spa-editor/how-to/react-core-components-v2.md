@@ -23,22 +23,22 @@ ht-degree: 0%
 
 {{spa-editor-deprecation}}
 
-AEM verstrekt [ AEM React Bewerkbare Componenten v2 ](https://www.npmjs.com/package/@adobe/aem-react-editable-components), een op Node.js-Gebaseerde SDK die de verwezenlijking van componenten van het Reageren toestaat, die in-context component het uitgeven gebruikend de Redacteur van AEM SPA steunen.
+AEM verstrekt [&#x200B; AEM React Bewerkbare Componenten v2 &#x200B;](https://www.npmjs.com/package/@adobe/aem-react-editable-components), een op Node.js-Gebaseerde SDK die de verwezenlijking van componenten van het Reageren toestaat, die in-context component het uitgeven gebruikend de Redacteur van AEM SPA steunen.
 
-* [ npm module ](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-* [ het project van Github ](https://github.com/adobe/aem-react-editable-components)
-* [ documentatie van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html?lang=nl-NL)
+* [&#x200B; npm module &#x200B;](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
+* [&#x200B; het project van Github &#x200B;](https://github.com/adobe/aem-react-editable-components)
+* [&#x200B; documentatie van Adobe &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html?lang=nl-NL)
 
 
 Raadpleeg de technische documentatie voor meer informatie en codevoorbeelden voor AEM React Editable Components v2:
 
-* [ Integratie met de documentatie van AEM ](https://github.com/adobe/aem-react-editable-components/tree/master/src/core)
-* [ Bewerkbare componentendocumentatie ](https://github.com/adobe/aem-react-editable-components/tree/master/src/components)
-* [ Helpers documentatie ](https://github.com/adobe/aem-react-editable-components/tree/master/src/api)
+* [&#x200B; Integratie met de documentatie van AEM &#x200B;](https://github.com/adobe/aem-react-editable-components/tree/master/src/core)
+* [&#x200B; Bewerkbare componentendocumentatie &#x200B;](https://github.com/adobe/aem-react-editable-components/tree/master/src/components)
+* [&#x200B; Helpers documentatie &#x200B;](https://github.com/adobe/aem-react-editable-components/tree/master/src/api)
 
 ## AEM-pagina&#39;s
 
-AEM React Editable Components werkt met zowel de Redacteur van het KUUROORD als de Verre Reactie apps van het KUUROORD. De inhoud die de editable componenten bevolkt van het Reageren, moet via de pagina&#39;s van AEM worden blootgesteld die de [ component van de Pagina van het KUUROORD ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html?lang=nl-NL) uitbreiden. De componenten van AEM, die kaarten aan editable componenten van het Reageren, moeten AEM [ kader van de Exporteur van de Component ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html?lang=nl-NL) uitvoeren - zoals [ de Componenten van WCM van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL).
+AEM React Editable Components werkt met zowel de Redacteur van het KUUROORD als de Verre Reactie apps van het KUUROORD. De inhoud die de editable componenten bevolkt van het Reageren, moet via de pagina&#39;s van AEM worden blootgesteld die de [&#x200B; component van de Pagina van het KUUROORD &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html?lang=nl-NL) uitbreiden. De componenten van AEM, die kaarten aan editable componenten van het Reageren, moeten AEM [&#x200B; kader van de Exporteur van de Component &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html?lang=nl-NL) uitvoeren - zoals [&#x200B; de Componenten van WCM van de Kern van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL).
 
 
 ## Afhankelijkheden
@@ -64,7 +64,7 @@ De minimale set afhankelijkheden die de React-app nodig heeft om AEM React Edita
 
 >[!WARNING]
 >
-> [ AEM Reageer de Basis van de Componenten WCM van de Kern WCM ](https://github.com/adobe/aem-react-core-wcm-components-base) en [ AEM Reageer de Componenten van WCM van de Kern SPA ](https://github.com/adobe/aem-react-core-wcm-components-spa) zijn niet compatibel met AEM React Editable Componenten v2.
+> [&#x200B; AEM Reageer de Basis van de Componenten WCM van de Kern WCM &#x200B;](https://github.com/adobe/aem-react-core-wcm-components-base) en [&#x200B; AEM Reageer de Componenten van WCM van de Kern SPA &#x200B;](https://github.com/adobe/aem-react-core-wcm-components-spa) zijn niet compatibel met AEM React Editable Componenten v2.
 
 ## SPA-editor
 

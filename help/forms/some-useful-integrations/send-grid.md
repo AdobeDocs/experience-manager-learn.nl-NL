@@ -31,9 +31,9 @@ Volg de stapsgewijze instructies in dit document om de kracht van dynamische Sen
 
 Voordat u verdergaat met het verzenden van e-mails met gebruik van dynamische SendGrid-sjablonen uit AEM Forms, moet u controleren of aan de volgende voorwaarden is voldaan:
 
-1. **SendGrid Rekening**: Teken omhoog voor een rekening SendGrid in [ https://sendgrid.com ](https://sendgrid.com) om tot hun e-mailleveringsdiensten toegang te hebben. U hebt de accountgegevens nodig om SendGrid te kunnen integreren met AEM Forms.
-1. **Familiariteit met het Creëren van Gegevensbronnen**: Heb een werkende kennis van het creëren van gegevensbronnen in AEM Forms. Indien nodig, verwijs naar de documentatie bij [ het creëren van gegevensbronnen ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=nl-NL) voor gedetailleerde instructies.
-1. **Familiariteit met het Model van de Gegevens van de Vorm**: Begrijp het concept het Model van de Gegevens van de Vorm in AEM Forms. Indien vereist, herzie de documentatie over [ het creëren van modellen van vormgegevens ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=nl-NL) om u het noodzakelijke begrip te verzekeren.
+1. **SendGrid Rekening**: Teken omhoog voor een rekening SendGrid in [&#x200B; https://sendgrid.com &#x200B;](https://sendgrid.com) om tot hun e-mailleveringsdiensten toegang te hebben. U hebt de accountgegevens nodig om SendGrid te kunnen integreren met AEM Forms.
+1. **Familiariteit met het Creëren van Gegevensbronnen**: Heb een werkende kennis van het creëren van gegevensbronnen in AEM Forms. Indien nodig, verwijs naar de documentatie bij [&#x200B; het creëren van gegevensbronnen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=nl-NL) voor gedetailleerde instructies.
+1. **Familiariteit met het Model van de Gegevens van de Vorm**: Begrijp het concept het Model van de Gegevens van de Vorm in AEM Forms. Indien vereist, herzie de documentatie over [&#x200B; het creëren van modellen van vormgegevens &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=nl-NL) om u het noodzakelijke begrip te verzekeren.
 
 Door aan deze voorwaarden te voldoen, beschikt u over de essentiële kennis en bronnen om e-mails effectief te verzenden met gebruik van dynamische SendGrid-sjablonen uit AEM Forms.
 
@@ -49,7 +49,7 @@ U kunt het aangeboden Swagger-bestand gebruiken als referentie of beginpunt voor
 
 Voer de volgende stappen uit om de in deze handleiding beschreven functionaliteit te testen:
 
-1. Download het [ die&rbrace; kwikdossier ](assets/SendGridWithDynamicTemplate.yaml) in de activa omslag wordt verstrekt.
+1. Download het [&#x200B; die&rbrace; kwikdossier &#x200B;](assets/SendGridWithDynamicTemplate.yaml) in de activa omslag wordt verstrekt.
 2. Maak een herstelbare gegevensbron met behulp van het gedownloade wagerbestand en uw SendGrid-referenties.
 3. Maak een formuliergegevensmodel op basis van de herstelde gegevensbron.
 4. Roep de `mail/send` POST-bewerking van het formuliergegevensmodel aan volgens uw vereisten. U kunt bijvoorbeeld de e-mail activeren door erop te klikken of deze opnemen in de AEM Forms-workflow.

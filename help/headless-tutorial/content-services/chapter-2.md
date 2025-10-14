@@ -28,19 +28,19 @@ In dit hoofdstuk wordt beschreven hoe u modellen van inhoudsfragmenten kunt insc
 
 ## Modellen van inhoudsfragmenten inschakelen
 
-De Modellen van het Fragment van de inhoud **moeten** worden toegelaten via **[AEM [!UICONTROL Configuration Browser] ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=nl-NL)**.
+De Modellen van het Fragment van de inhoud **moeten** worden toegelaten via **[AEM [!UICONTROL Configuration Browser] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=nl-NL)**.
 
 Als de Modellen van het Fragment van de Inhoud **&#x200B;**&#x200B;niet &lbrace;voor een configuratie worden toegelaten, **[!UICONTROL Create]>[!UICONTROL Content Fragment]** knoop zal niet voor de relevante AEM configuratie verschijnen.
 
 >[!NOTE]
 >
->AEM configuraties vertegenwoordigen een reeks [ context-bewuste huurdersconfiguraties ](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) die onder `/conf` worden opgeslagen. AEM configuraties correleren doorgaans met een bepaalde website die wordt beheerd in AEM Sites of een bedrijfseenheid die verantwoordelijk is voor een subset met inhoud (elementen, pagina&#39;s, enz.) in AEM.
+>AEM configuraties vertegenwoordigen een reeks [&#x200B; context-bewuste huurdersconfiguraties &#x200B;](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) die onder `/conf` worden opgeslagen. AEM configuraties correleren doorgaans met een bepaalde website die wordt beheerd in AEM Sites of een bedrijfseenheid die verantwoordelijk is voor een subset met inhoud (elementen, pagina&#39;s, enz.) in AEM.
 >
 >Een configuratie heeft alleen invloed op een inhoudshiërarchie als er naar de configuratie wordt verwezen via de eigenschap `cq:conf` in die inhoudshiërarchie. (Dit wordt bereikt voor de [!DNL WKND Mobile] configuratie in **Stap 5** hieronder).
 >
 >Wanneer de `global` -configuratie wordt gebruikt, geldt de configuratie voor alle inhoud en hoeft `cq:conf` niet te worden ingesteld.
 >
->Zie de [[!UICONTROL Configuration Browser] documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=nl-NL) voor meer informatie.
+>Zie de [[!UICONTROL Configuration Browser] documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=nl-NL) voor meer informatie.
 
 1. Meld u aan bij AEM auteur als een gebruiker met de juiste machtigingen om de relevante configuratie te wijzigen.
    * Voor dit leerprogramma, kan de **admin** gebruiker worden gebruikt.
@@ -54,7 +54,7 @@ Als de Modellen van het Fragment van de Inhoud **&#x200B;**&#x200B;niet &lbrace;
    >
    >Deze configuratiewijziging is niet omkeerbaar vanuit de [!UICONTROL AEM Configuration] webinterface. Deze configuratie ongedaan maken:
    >    
-   >    1. Open [ CRXDE Lite ](http://localhost:4502/crx/de)
+   >    1. Open [&#x200B; CRXDE Lite &#x200B;](http://localhost:4502/crx/de)
    >    1. Navigeren naar `/conf/wknd-mobile/settings/dam/cfm`
    >    1. Het knooppunt `models` verwijderen
    >    
@@ -81,7 +81,7 @@ Voordat u ons model voor inhoudsfragmenten definieert, moet u de ervaring die we
 
 De gegevenspunten die een gebeurtenis definiëren, kunnen als volgt worden verdeeld:
 
-![ Creërend het Model van het Fragment van de Inhoud ](assets/chapter-2/design-to-model-mapping.png)
+![&#x200B; Creërend het Model van het Fragment van de Inhoud &#x200B;](assets/chapter-2/design-to-model-mapping.png)
 
 Met de toewijzing kunnen we inhoudsfragment definiëren dat wordt gebruikt om de gebeurtenisgegevens te verzamelen en uiteindelijk beschikbaar te maken.
 
@@ -177,10 +177,10 @@ Herhaal deze stappen met behulp van de invoerdefinities die hieronder zijn gedef
 Nadat u het inhoudsfragmentmodel hebt gemaakt, krijgt u een definitie die er als volgt uitziet:
 
 
-![ Model van het Fragment van de Inhoud van de Gebeurtenis ](assets/chapter-2/event-content-fragment-model.png)
+![&#x200B; Model van het Fragment van de Inhoud van de Gebeurtenis &#x200B;](assets/chapter-2/event-content-fragment-model.png)
 
 ## Volgende stap
 
-Naar keuze, installeer [ com.adobe.aem.guides.wknd-mobile.content.chapter-2.zip ](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) inhoudspakket op AEM Auteur via [ AEM de Manager van het Pakket ](http://localhost:4502/crx/packmgr/index.jsp). Dit pakket bevat de configuraties en inhoud die in dit gedeelte van de zelfstudie worden beschreven.
+Naar keuze, installeer [&#x200B; com.adobe.aem.guides.wknd-mobile.content.chapter-2.zip &#x200B;](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) inhoudspakket op AEM Auteur via [&#x200B; AEM de Manager van het Pakket &#x200B;](http://localhost:4502/crx/packmgr/index.jsp). Dit pakket bevat de configuraties en inhoud die in dit gedeelte van de zelfstudie worden beschreven.
 
 * [Hoofdstuk 3 - Inhoudsfragmenten voor gebeurtenissen ontwerpen](./chapter-3.md)

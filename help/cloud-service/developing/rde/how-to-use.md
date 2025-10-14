@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Leer **hoe te om** het Snelle Milieu van de Ontwikkeling (RDE) in AEM as a Cloud Service te gebruiken. Stel code en inhoud voor snellere ontwikkelingscycli van uw bijna-definitieve code aan RDE, van uw favoriete Geïntegreerde Milieu van de Ontwikkeling (winde) op.
 
-Gebruikend [ AEM WKND Project van Plaatsen ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) leert u hoe te om diverse artefacten van AEM aan RDE op te stellen door AEM-RDE `install` bevel van uw favoriete winde in werking te stellen.
+Gebruikend [&#x200B; AEM WKND Project van Plaatsen &#x200B;](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) leert u hoe te om diverse artefacten van AEM aan RDE op te stellen door AEM-RDE `install` bevel van uw favoriete winde in werking te stellen.
 
 - Implementatie van AEM-code en -inhoudspakket (alle, ui.apps)
 - Implementatie van OSGi-bundel- en configuratiebestanden
@@ -34,7 +34,7 @@ Gebruikend [ AEM WKND Project van Plaatsen ](https://github.com/adobe/aem-guides
 
 ## Vereiste
 
-Kloon het [ WKND 1&rbrace; project van Plaatsen &lbrace;en open het in uw favoriete winde om de artefacten van AEM op RDE op te stellen.](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project)
+Kloon het [&#x200B; WKND 1&rbrace; project van Plaatsen &lbrace;en open het in uw favoriete winde om de artefacten van AEM op RDE op te stellen.](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project)
 
 ```shell
 $ git clone git@github.com:adobe/aem-guides-wknd.git
@@ -49,7 +49,7 @@ $ mvn clean package
 
 ## AEM-artefacten implementeren met de AEM-RDE-plug-in
 
-Eerst, zorg ervoor u de [ recentste geïnstalleerde `aio` CLI module ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli) hebt.
+Eerst, zorg ervoor u de [&#x200B; recentste geïnstalleerde `aio` CLI module &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli) hebt.
 
 Gebruik vervolgens de opdracht `aio aem:rde:install` om verschillende AEM-artefacten te implementeren.
 
@@ -191,7 +191,7 @@ Apache of Dispatcher config- dossiers **kunnen niet individueel** worden opgeste
    ...
    ```
 
-1. Verifieer de veranderingen plaatselijk, zie [ Looppas Dispatcher ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) voor meer details.
+1. Verifieer de veranderingen plaatselijk, zie [&#x200B; Looppas Dispatcher &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) voor meer details.
 1. Stel de veranderingen in RDE op door het volgende bevel in werking te stellen:
 
    ```shell
@@ -204,7 +204,7 @@ Apache of Dispatcher config- dossiers **kunnen niet individueel** worden opgeste
 
 ### Configuratiebestanden (YAML) implementeren
 
-De CDN, onderhoudstaken, het logboek door:sturen en de configuratiedossiers van de AEM API authentificatie kunnen aan RDE worden opgesteld gebruikend het `install` bevel. Deze configuraties worden beheerd als dossiers YAML in de `config` omslag van het project van AEM, zie [ Ondersteunde Configuraties ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations) voor meer details.
+De CDN, onderhoudstaken, het logboek door:sturen en de configuratiedossiers van de AEM API authentificatie kunnen aan RDE worden opgesteld gebruikend het `install` bevel. Deze configuraties worden beheerd als dossiers YAML in de `config` omslag van het project van AEM, zie [&#x200B; Ondersteunde Configuraties &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations) voor meer details.
 
 Om te leren hoe te om de configuratiedossiers op te stellen, verbeteren wij het `cdn` configuratiedossier en stellen het aan RDE op.
 
@@ -268,13 +268,13 @@ Met behulp van de bovenstaande opdrachten kan uw RDE worden beheerd vanaf uw fav
 
 ## Volgende stap
 
-Leer over de [ ontwikkeling/de cyclus van het plaatsingsleven gebruikend RDE ](./development-life-cycle.md) om eigenschappen met snelheid te leveren.
+Leer over de [&#x200B; ontwikkeling/de cyclus van het plaatsingsleven gebruikend RDE &#x200B;](./development-life-cycle.md) om eigenschappen met snelheid te leveren.
 
 
 ## Aanvullende bronnen
 
-[ RDE bevelen documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
+[&#x200B; RDE bevelen documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
 
-[ Adobe I/O Runtime CLI Insteekmodule voor interactie met de Milieu&#39;s van de Snelle Ontwikkeling van AEM ](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
+[&#x200B; Adobe I/O Runtime CLI Insteekmodule voor interactie met de Milieu&#39;s van de Snelle Ontwikkeling van AEM &#x200B;](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[ de opstelling van het Project van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
+[&#x200B; de opstelling van het Project van AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)

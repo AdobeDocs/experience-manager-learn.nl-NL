@@ -19,13 +19,13 @@ ht-degree: 0%
 
 # Een kop- en voettekst ontwikkelen
 
-![ Kopbal en footer ](./assets/header-and-footer/hero.png){align="center"}
+![&#x200B; Kopbal en footer &#x200B;](./assets/header-and-footer/hero.png){align="center"}
 
 Kop- en voetteksten spelen een unieke rol in Edge Delivery Services (EDS), omdat ze rechtstreeks zijn gebonden aan de HTML `<header>` - en `<footer>` -elementen. In tegenstelling tot gewone pagina-inhoud worden ze afzonderlijk beheerd en kunnen ze onafhankelijk worden bijgewerkt zonder dat de gehele paginacache moet worden gewist. Tijdens de implementatie ervan in het codeproject leven als blokken onder `blocks/header` en `blocks/footer` , kunnen auteurs hun inhoud bewerken via speciale AEM-pagina&#39;s die elke combinatie van blokken kunnen bevatten.
 
 ## Koptekstblok
 
-![ het blok van de Kopbal ](./assets/header-and-footer/header-local-development-preview.png){align="center"}
+![&#x200B; het blok van de Kopbal &#x200B;](./assets/header-and-footer/header-local-development-preview.png){align="center"}
 
 De header is een speciaal blok dat is gebonden aan het Edge Delivery Services HTML `<header>` -element.
 Het element `<header>` wordt leeg geleverd en via XHR (AJAX) gevuld naar een aparte AEM-pagina.
@@ -66,7 +66,7 @@ Voordat u het headerblok gaat ontwikkelen, moet u eerst de inhoud ervan in de Un
 
 De koptekstinhoud woont in een speciale AEM-pagina met de naam `nav` .
 
-![ Standaard kopbalpagina ](./assets/header-and-footer/header-page.png){align="center"}
+![&#x200B; Standaard kopbalpagina &#x200B;](./assets/header-and-footer/header-page.png){align="center"}
 
 De koptekst schrijven:
 
@@ -77,11 +77,11 @@ De koptekst schrijven:
    - Subnavigatie-items maken waar nodig
    - Alle koppelingen naar de startpagina (`/`) instellen
 
-![ de kopbalblok van de Auteur in Universele Redacteur ](./assets/header-and-footer/header-author.png){align="center"}
+![&#x200B; de kopbalblok van de Auteur in Universele Redacteur &#x200B;](./assets/header-and-footer/header-author.png){align="center"}
 
 ### Publiceren voor voorvertoning
 
-Met de pagina van de Kopbal die wordt bijgewerkt, [ publiceert de pagina aan voorproef ](../6-author-block.md).
+Met de pagina van de Kopbal die wordt bijgewerkt, [&#x200B; publiceert de pagina aan voorproef &#x200B;](../6-author-block.md).
 
 Aangezien de koptekstinhoud op een eigen pagina staat (de `nav` -pagina), moet u die pagina specifiek publiceren voordat de koptekstwijzigingen van kracht worden. Als u andere pagina&#39;s publiceert die de koptekst gebruiken, wordt de koptekstinhoud op Edge Delivery Services niet bijgewerkt.
 
@@ -143,14 +143,14 @@ Hier volgt de HTML van de koptekstpagina nadat deze is geladen met behulp van de
 
 Het element `<header>` van de pagina zoeken en inspecteren in de webbrowser-ontwikkelaarsgereedschappen.
 
-![ DOM van de Kopbal ](./assets/header-and-footer/header-dom.png){align="center"}
+![&#x200B; DOM van de Kopbal &#x200B;](./assets/header-and-footer/header-dom.png){align="center"}
 
 >[!ENDTABS]
 
 
 ## JavaScript blokkeren
 
-Het `/blocks/header/header.js` dossier van het [ AEM Boilerplate XWalk projectmalplaatje ](https://github.com/adobe-rnd/aem-boilerplate-xwalk) verstrekt JavaScript voor navigatie, met inbegrip van dropdown menu&#39;s en een ontvankelijke mobiele mening.
+Het `/blocks/header/header.js` dossier van het [&#x200B; AEM Boilerplate XWalk projectmalplaatje &#x200B;](https://github.com/adobe-rnd/aem-boilerplate-xwalk) verstrekt JavaScript voor navigatie, met inbegrip van dropdown menu&#39;s en een ontvankelijke mobiele mening.
 
 Hoewel het script van `header.js` vaak sterk is aangepast aan het ontwerp van een site, is het van essentieel belang dat de eerste regels in `decorate()` worden behouden, die het fragment van de koptekstpagina ophalen en verwerken.
 
@@ -324,11 +324,11 @@ header .header.block nav {
 
 Naarmate de CSS en JavaScript worden ontwikkeld, laadt de lokale ontwikkelomgeving van de AEM CLI de wijzigingen warm en gemakkelijk, zodat u snel en gemakkelijk kunt zien hoe code van invloed is op het blok. Houd de muisaanwijzer boven de CTA en controleer of de afbeelding van de taser in- en uitzoomt.
 
-![ Lokale ontwikkelingsvoorproef van kopbal gebruikend CSS en JS ](./assets/header-and-footer/header-local-development-preview.png){align="center"}
+![&#x200B; Lokale ontwikkelingsvoorproef van kopbal gebruikend CSS en JS &#x200B;](./assets/header-and-footer/header-local-development-preview.png){align="center"}
 
 ## Uw code plaatsen
 
-Zorg ervoor aan [ vaak ](../3-local-development-environment.md#linting) uw codescheidingen om het schoon en verenigbaar te houden. Regelmatige lijnen helpen vangstkwesties vroeg, die algemene ontwikkelingstijd verminderen. U kunt uw ontwikkelingswerk pas samenvoegen in de `main` -vertakking als alle problemen met koppelingen zijn opgelost.
+Zorg ervoor aan [&#x200B; vaak &#x200B;](../3-local-development-environment.md#linting) uw codescheidingen om het schoon en verenigbaar te houden. Regelmatige lijnen helpen vangstkwesties vroeg, die algemene ontwikkelingstijd verminderen. U kunt uw ontwikkelingswerk pas samenvoegen in de `main` -vertakking als alle problemen met koppelingen zijn opgelost.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -351,7 +351,7 @@ $ git push origin header-and-footer
 
 De wijzigingen zijn nu zichtbaar in de Universal Editor wanneer u de query-parameter `?ref=header-and-footer` gebruikt.
 
-![ Kopbal in Universele Redacteur ](./assets/header-and-footer/header-universal-editor-preview.png){align="center"}
+![&#x200B; Kopbal in Universele Redacteur &#x200B;](./assets/header-and-footer/header-universal-editor-preview.png){align="center"}
 
 ## Voettekst
 
@@ -368,7 +368,7 @@ De voettekst moet worden geïmplementeerd met een lay-out met drie kolommen die 
 - Een rechterkolom met koppelingen naar sociale media
 - Een rij onderaan die alle drie kolommen met het auteursrecht overspannen
 
-![ Voorproeven van de Voettekst ](./assets/header-and-footer/footer-preview.png){align="center"}
+![&#x200B; Voorproeven van de Voettekst &#x200B;](./assets/header-and-footer/footer-preview.png){align="center"}
 
 >[!TAB  Voettekstinhoud ]
 
@@ -379,7 +379,7 @@ Gebruik het kolomblok in de Voettekst om het effect met drie kolommen te maken.
 | Afbeelding | Kop 3 | Kop 3 |
 | Tekst | Lijst met koppelingen | Lijst met koppelingen |
 
-![ DOM van de Kopbal ](./assets/header-and-footer/footer-author.png){align="center"}
+![&#x200B; DOM van de Kopbal &#x200B;](./assets/header-and-footer/footer-author.png){align="center"}
 
 >[!TAB  Voettekstcode ]
 
@@ -471,4 +471,4 @@ U hebt nu onderzocht hoe kop- en voetteksten worden beheerd en ontwikkeld in Edg
 
 Dit patroon biedt een flexibele en onderhoudsvriendelijke aanpak voor het implementeren van voor de hele site geldende navigatiecomponenten.
 
-Voor meer beste praktijken en geavanceerde technieken, controleer de [ Universele documentatie van de Redacteur ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).
+Voor meer beste praktijken en geavanceerde technieken, controleer de [&#x200B; Universele documentatie van de Redacteur &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).

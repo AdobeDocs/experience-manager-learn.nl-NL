@@ -29,13 +29,13 @@ Maak eerst mediafrasterpunten in de CSS van het AEM-responsieve raster waar de r
 
 Maak in het bestand `/ui.apps/src/main/content/jcr_root/apps/[app name]/clientlibs/clientlib-grid/less/grid.less` de onderbrekingspunten die u samen met de mobiele emulator wilt gebruiken. Noteer `max-width` voor elk onderbrekingspunt, aangezien dit de CSS breekpunten aan de AEM responsieve onderbrekingspunten van de Redacteur van de Pagina in kaart brengt.
 
-![ creeer nieuwe ontvankelijke breekpunten ](./assets/responsive-breakpoints/create-new-breakpoints.jpg)
+![&#x200B; creeer nieuwe ontvankelijke breekpunten &#x200B;](./assets/responsive-breakpoints/create-new-breakpoints.jpg)
 
 ## De onderbrekingspunten van de sjabloon aanpassen
 
-Open het `ui.content/src/main/content/jcr_root/conf/<app name>/settings/wcm/templates/page-content/structure/.content.xml` -bestand en werk `cq:responsive/breakpoints` bij met de nieuwe definities voor onderbrekingspunten. Elk [ CSS breekpunt ](#create-new-css-breakpoints) zou een overeenkomstige knoop onder `breakpoints` met zijn `width` bezit moeten hebben dat aan CSS breekpunt `max-width` wordt geplaatst.
+Open het `ui.content/src/main/content/jcr_root/conf/<app name>/settings/wcm/templates/page-content/structure/.content.xml` -bestand en werk `cq:responsive/breakpoints` bij met de nieuwe definities voor onderbrekingspunten. Elk [&#x200B; CSS breekpunt &#x200B;](#create-new-css-breakpoints) zou een overeenkomstige knoop onder `breakpoints` met zijn `width` bezit moeten hebben dat aan CSS breekpunt `max-width` wordt geplaatst.
 
-![ pas de responsieve breekpunten van het malplaatje aan ](./assets/responsive-breakpoints/customize-template-breakpoints.jpg)
+![&#x200B; pas de responsieve breekpunten van het malplaatje aan &#x200B;](./assets/responsive-breakpoints/customize-template-breakpoints.jpg)
 
 ## Emulatoren maken
 
@@ -45,20 +45,20 @@ Emulatorknooppunten maken onder `/ui.apps/src/main/content/jcr_root/apps/<app na
 
 Bijvoorbeeld `/ui.apps/src/main/content/jcr_root/apps/wknd-examples/emulators/phone-landscape` . Kopieer een referentie-emulatorknooppunt van `/libs/wcm/mobile/components/emulators` in CRXDE Lite naar de kopie en werk deze bij om de definitie van het knooppunt te versnellen.
 
-![ creeer nieuwe mededingers ](./assets/responsive-breakpoints/create-new-emulators.jpg)
+![&#x200B; creeer nieuwe mededingers &#x200B;](./assets/responsive-breakpoints/create-new-emulators.jpg)
 
 ## Apparaatgroep maken
 
-Groepeer de mededingers om [ hen beschikbaar te maken in de Redacteur van de Pagina van AEM ](#update-the-templates-device-group).
+Groepeer de mededingers om [&#x200B; hen beschikbaar te maken in de Redacteur van de Pagina van AEM &#x200B;](#update-the-templates-device-group).
 
 Maak een knooppuntstructuur van `/apps/settings/mobile/groups/<name of device group>` onder `/ui.apps/src/main/content/jcr_root` .
 
-![ creeer nieuwe apparatengroep ](./assets/responsive-breakpoints/create-new-device-group.jpg)
+![&#x200B; creeer nieuwe apparatengroep &#x200B;](./assets/responsive-breakpoints/create-new-device-group.jpg)
 
 Maak een `.content.xml` -bestand in `/apps/settings/mobile/groups/<device group name>` en definieer
 de nieuwe emulators gebruiken code die vergelijkbaar is met de onderstaande code:
 
-![ creeer nieuw apparaat ](./assets/responsive-breakpoints/create-new-device.jpg)
+![&#x200B; creeer nieuw apparaat &#x200B;](./assets/responsive-breakpoints/create-new-device.jpg)
 
 ## De apparaatgroep van de sjabloon bijwerken
 

@@ -22,9 +22,9 @@ ht-degree: 0%
 
 # De regel definiëren
 
-In het bezit van Markeringen creeerden wij 2 nieuwe [ regels ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html?lang=nl-NL) (**de Fout van de Bevestiging van het Gebied en FormSubmit**).
+In het bezit van Markeringen creeerden wij 2 nieuwe [&#x200B; regels &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html?lang=nl-NL) (**de Fout van de Bevestiging van het Gebied en FormSubmit**).
 
-![ adaptive-form ](assets/rules.png)
+![&#x200B; adaptive-form &#x200B;](assets/rules.png)
 
 
 ## Veldvalidatiefout
@@ -35,11 +35,11 @@ De regel van de Fout van de Bevestiging van het Gebied wordt gevormd door de geb
 
 
 
-![ aanvrager-staat-verblijf ](assets/field_validation_error_rule.png)
+![&#x200B; aanvrager-staat-verblijf &#x200B;](assets/field_validation_error_rule.png)
 
 De Adobe Analytics - de Vastgestelde Variabelen worden gevormd als volgt
 
-![ vastgestelde actie ](assets/field_validation_action_rule.png)
+![&#x200B; vastgestelde actie &#x200B;](assets/field_validation_action_rule.png)
 
 ## Regel voor verzenden van formulier
 
@@ -47,14 +47,14 @@ De regel Formulier verzenden wordt geactiveerd telkens wanneer een adaptief form
 
 De Vorm legt regel voor wordt gevormd gebruikend _&#x200B;**Adobe Experience Manager Forms - voorlegt**&#x200B;_ gebeurtenis
 
-![ vorm-voorlegt-regel ](assets/form-submit-rule.png)
+![&#x200B; vorm-voorlegt-regel &#x200B;](assets/form-submit-rule.png)
 
 In de Vorm legt regel voor, wordt de waarde van het gegevenselement _&#x200B;**ApplicantsStateOfResidence**&#x200B;_ in kaart gebracht aan prop5 en de waarde van het gegevenselement FormTitle wordt in kaart gebracht aan prop8.
 
 De variabelen Adobe Analytics - Set zijn als volgt geconfigureerd.
-![ vorm-voorlegt-regel-reeks-variabelen ](assets/form-submit-set-variable.png)
+![&#x200B; vorm-voorlegt-regel-reeks-variabelen &#x200B;](assets/form-submit-set-variable.png)
 
-Wanneer u bereid bent om uw code van Markeringen te testen, [ publiceer uw veranderingen die aan de markeringen ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html?lang=nl-NL) worden aangebracht gebruikend de het publiceren stroom.
+Wanneer u bereid bent om uw code van Markeringen te testen, [&#x200B; publiceer uw veranderingen die aan de markeringen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html?lang=nl-NL) worden aangebracht gebruikend de het publiceren stroom.
 
 ## Volgende stappen
 

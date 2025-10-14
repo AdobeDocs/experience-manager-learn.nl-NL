@@ -27,7 +27,7 @@ We zullen de meest gangbare topologieën schetsen en de voordelen beschrijven en
 
 In de begindagen was het aantal potentiële bezoekers klein, was de hardware duur en werden de webservers niet zo kritisch gezien als vandaag de dag. Een algemene instelling zou zijn dat één Dispatcher als taakverdelingsmechanisme en cachegeheugen voor twee of meer Publish-systemen zou fungeren. De Apache-server in de kern van de Dispatcher was zeer stabiel en - in de meeste gevallen - in staat om een behoorlijke hoeveelheid verzoeken te doen.
 
-![ &quot;Verouderd&quot;Dispatcher Opstelling - niet zeer algemeen door de normen van vandaag ](assets/chapter-2/legacy-dispatcher-setup.png)
+![&#x200B; &quot;Verouderd&quot;Dispatcher Opstelling - niet zeer algemeen door de normen van vandaag &#x200B;](assets/chapter-2/legacy-dispatcher-setup.png)
 
 *&quot;Verouderd&quot;Dispatcher Opstelling - niet zeer algemeen door de normen van vandaag*
 
@@ -39,7 +39,7 @@ Dit is waar de verzender zijn naam van ontving: Het was eigenlijk verzendend ver
 
 Vandaag is een lichtjes verschillende topologie gemeenschappelijker. Een topologie met meerdere poten zou één Dispatcher per Publish-server hebben. Een speciaal taakverdelingsmechanisme (hardware) bevindt zich vóór de AEM-infrastructuur en verzendt de aanvragen naar deze twee (of meer) onderdelen:
 
-![ Moderne &quot;Standaard&quot;Opstelling van Dispatcher - Gemakkelijk te behandelen en te handhaven ](assets/chapter-2/modern-standard-dispatcher-setup.png)
+![&#x200B; Moderne &quot;Standaard&quot;Opstelling van Dispatcher - Gemakkelijk te behandelen en te handhaven &#x200B;](assets/chapter-2/modern-standard-dispatcher-setup.png)
 
 *Moderne &quot;Standaard&quot;Opstelling van Dispatcher - Gemakkelijk te behandelen en te handhaven*
 
@@ -61,7 +61,7 @@ Hier zijn de redenen voor dit soort opstelling,
 
 Apache-servers zijn goedkoop en eenvoudig in te richten. Duw daarom niet dat niveau iets verder uit te breiden. Waarom hebben twee of meer Dispatchers niet vóór elke Publish-server?
 
-![ &quot;Schaal uit&quot;Opstelling - heeft sommige toepassingsgebieden maar ook beperkingen en beveats ](assets/chapter-2/scale-out-setup.png)
+![&#x200B; &quot;Schaal uit&quot;Opstelling - heeft sommige toepassingsgebieden maar ook beperkingen en beveats &#x200B;](assets/chapter-2/scale-out-setup.png)
 
 *&quot;Schaal uit&quot;Opstelling - heeft sommige toepassingsgebieden maar ook beperkingen en beveats*
 
@@ -95,11 +95,11 @@ Zelfs in een lokaal datacenter heeft een &quot;schaal uit&quot;topologie die vee
 
 #### Beperkingen van de Topologie van de Schaal uit
 
-Het toevoegen van proxyservers zou normaal de prestaties moeten verhogen. Er zijn echter scenario&#39;s waarin het toevoegen van servers de prestaties kan verminderen. Hoe? Neem bijvoorbeeld een nieuwsportal, waar u elke minuut nieuwe artikelen en pagina&#39;s introduceert. Een Dispatcher maakt de validatie ongedaan door &quot;automatisch annuleren&quot;: wanneer een pagina wordt gepubliceerd, worden alle pagina&#39;s in de cache op dezelfde site ongeldig gemaakt. Dit is een nuttige eigenschap - wij behandelden dit in [ Hoofdstuk 1 ](chapter-1.md) van deze reeks - maar het betekent ook, dat wanneer u frequente veranderingen op uw website hebt u vrij vaak het geheime voorgeheugen ongeldig maakt. Als u slechts één Dispatcher per Publish-exemplaar hebt, activeert de eerste bezoeker die een pagina aanvraagt, een nieuwe caching van die pagina. De tweede bezoeker krijgt reeds de caching versie.
+Het toevoegen van proxyservers zou normaal de prestaties moeten verhogen. Er zijn echter scenario&#39;s waarin het toevoegen van servers de prestaties kan verminderen. Hoe? Neem bijvoorbeeld een nieuwsportal, waar u elke minuut nieuwe artikelen en pagina&#39;s introduceert. Een Dispatcher maakt de validatie ongedaan door &quot;automatisch annuleren&quot;: wanneer een pagina wordt gepubliceerd, worden alle pagina&#39;s in de cache op dezelfde site ongeldig gemaakt. Dit is een nuttige eigenschap - wij behandelden dit in [&#x200B; Hoofdstuk 1 &#x200B;](chapter-1.md) van deze reeks - maar het betekent ook, dat wanneer u frequente veranderingen op uw website hebt u vrij vaak het geheime voorgeheugen ongeldig maakt. Als u slechts één Dispatcher per Publish-exemplaar hebt, activeert de eerste bezoeker die een pagina aanvraagt, een nieuwe caching van die pagina. De tweede bezoeker krijgt reeds de caching versie.
 
 Als u twee Dispatcher hebt, heeft de tweede bezoeker een kans van 50% dat de pagina niet in het voorgeheugen ondergebracht is, en dan zou hij een grotere latentie ervaren wanneer die pagina opnieuw wordt teruggegeven. Door nog meer verzendingen per Publish wordt het nog erger. De Publish-server ontvangt meer belasting omdat de pagina voor elke Dispatcher afzonderlijk opnieuw moet worden weergegeven.
 
-![ Verminderde prestaties in een schaal-uit scenario met frequente geheim voorgeheugenflushes.](assets/chapter-2/decreased-performance.png)
+![&#x200B; Verminderde prestaties in een schaal-uit scenario met frequente geheim voorgeheugenflushes.](assets/chapter-2/decreased-performance.png)
 
 *Verminderde prestaties in een schaal-uit scenario met frequente geheim voorgeheugenflushes.*
 
@@ -115,13 +115,13 @@ We hebben enkele experimenten met NFS uitgevoerd - maar NFS introduceert enorme 
 
 Als u prestatieproblemen ondervindt, moet u Publish en Dispatcher even groot maken om piekbelasting op de instanties van Publisher te voorkomen. Er is geen gouden regel voor de verhouding Publish/Dispatcher - het hangt sterk af van de verspreiding van de verzoeken en de frequentie van publicaties en invalidaties in cache.
 
-Als u ook over de latentie een bezoekerservaring bezorgd bent, denk na gebruikend een netwerk van de inhoudslevering, geheime voorgeheugen het terugwinnen, preventieve geheim voorgeheugenopwarming, plaatsend een aflossingstijd zoals die in [ wordt beschreven Hoofdstuk 1 ](chapter-1.md) van deze reeks of verwijs naar sommige geavanceerde ideeën van [ Deel 3 ](chapter-3.md).
+Als u ook over de latentie een bezoekerservaring bezorgd bent, denk na gebruikend een netwerk van de inhoudslevering, geheime voorgeheugen het terugwinnen, preventieve geheim voorgeheugenopwarming, plaatsend een aflossingstijd zoals die in [&#x200B; wordt beschreven Hoofdstuk 1 &#x200B;](chapter-1.md) van deze reeks of verwijs naar sommige geavanceerde ideeën van [&#x200B; Deel 3 &#x200B;](chapter-3.md).
 
 ### De instelling &quot;Cross Connected&quot;
 
 Een andere instelling die we nu zien, is de &quot;cross-connected&quot; configuratie: de Publish-instanties hebben geen toegewijde Dispatchers, maar alle Dispatchers zijn verbonden met alle Publish-systemen.
 
-![ dwars-verbonden topologie: Verhoogde overtolligheid en meer ingewikkeldheid ](assets/chapter-2/cross-connected-setup.png)
+![&#x200B; dwars-verbonden topologie: Verhoogde overtolligheid en meer ingewikkeldheid &#x200B;](assets/chapter-2/cross-connected-setup.png)
 
 <br> 
 

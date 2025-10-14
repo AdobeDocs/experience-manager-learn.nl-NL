@@ -29,7 +29,7 @@ In het kader van dit artikel maken we een aangepaste sjabloon om de typen aangep
 1. Voeg een eigenschap &quot;title&quot; toe en stel de waarde ervan in op &quot;custom template&quot;. Dit is de naam die u zult zien in de vervolgkeuzelijst van de component Search and Lister
 1. Maak een &#39;&#39;template.html&#39;&#39; in deze map. Dit bestand bevat de code voor het opmaken en weergeven van de verschillende elementtypen.
 
-![ appsfolder ](assets/appsfolder_.png)
+![&#x200B; appsfolder &#x200B;](assets/appsfolder_.png)
 
 De volgende code geeft een overzicht van de verschillende typen elementen die de zoek- en bibliotheekcomponent gebruiken. Er worden afzonderlijke html-elementen gemaakt voor elk type element, zoals wordt weergegeven door het gegevenstype = &quot;video&quot;-tag. Voor middelentype van &quot;video&quot;gebruiken wij het &lt;video> element om de video inline te spelen. Voor het elementtype &quot;worddocuments&quot; gebruiken we een andere HTML-markering.
 
@@ -75,7 +75,7 @@ De volgende code geeft een overzicht van de verschillende typen elementen die de
 
 ## De component Search en Lister configureren {#configure-search-and-lister-component}
 
-Zodra wij het douanemalplaatje hebben bepaald, moeten wij dit douanemalplaatje met de component &quot;van het Onderzoek en van de Registratie&quot;associëren. Wijs uw browser [ aan dit url ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html) aan.
+Zodra wij het douanemalplaatje hebben bepaald, moeten wij dit douanemalplaatje met de component &quot;van het Onderzoek en van de Registratie&quot;associëren. Wijs uw browser [&#x200B; aan dit url &#x200B;](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html) aan.
 
 Schakel over naar de ontwerpmodus en configureer het alineasysteem om de component Zoeken en registreren op te nemen in de toegestane componentengroep. De component Search en Lister maakt deel uit van de groep Document Services.
 
@@ -86,13 +86,13 @@ Open de configuratie-eigenschappen van de component &quot;Search and Lister&quot
 * /content/dam/VideosAndWordDocuments
 * /content/dam/formsanddocuments/assettypes
 
-![ assetfolder ](assets/selectingassetfolders.png)
+![&#x200B; assetfolder &#x200B;](assets/selectingassetfolders.png)
 
 Tab naar het tabblad Weergave. Hier kiest u de sjabloon die u wilt weergeven in de zoekopdracht en de bibliotheekcomponent.
 
 Selecteer &#39;aangepaste sjabloon&#39; in de vervolgkeuzelijst, zoals hieronder wordt weergegeven.
 
-![ onderzoek andlister ](assets/searchandlistercomponent.gif)
+![&#x200B; onderzoek andlister &#x200B;](assets/searchandlistercomponent.gif)
 
 Vorm de types van activa die u in het portaal wilt een lijst maken. De typen elementen op het tabblad &quot;Lijst met elementen&quot; configureren en de typen elementen configureren. In dit voorbeeld zijn de volgende typen elementen geconfigureerd
 
@@ -103,13 +103,13 @@ Vorm de types van activa die u in het portaal wilt een lijst maken. De typen ele
 
 Het volgende het schermschot toont u de activa die voor lijst worden gevormd
 
-![ assettypes ](assets/assettypes.png)
+![&#x200B; assettypes &#x200B;](assets/assettypes.png)
 
-Nu u uw Onderzoek en de Kleine Component van het Portaal hebt gevormd, is het tijd om de lijst in actie te zien. Wijs uw browser [ aan dit url ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled) aan. De resultaten moeten ongeveer overeenkomen met de onderstaande afbeelding.
+Nu u uw Onderzoek en de Kleine Component van het Portaal hebt gevormd, is het tijd om de lijst in actie te zien. Wijs uw browser [&#x200B; aan dit url &#x200B;](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled) aan. De resultaten moeten ongeveer overeenkomen met de onderstaande afbeelding.
 
 >[!NOTE]
 >
 >Als uw portaal aangepaste elementtypen op een publicatieserver weergeeft, moet u &quot;read&quot;-machtigingen geven aan de gebruiker van de fd-service aan het knooppunt **/apps/fd/fp/extensions/querybuilder**
 
-![ assettypes ](assets/assettypeslistings.png)
-[ Download en installeer dit pakket met gebruik van pakketbeheer.](assets/customassettypekt1.zip) Dit bevat voorbeeld-MP4- en Word-documenten en xdp-bestanden die worden gebruikt als elementtypen om te worden weergegeven met de component search en lister
+![&#x200B; assettypes &#x200B;](assets/assettypeslistings.png)
+[&#x200B; Download en installeer dit pakket met gebruik van pakketbeheer.](assets/customassettypekt1.zip) Dit bevat voorbeeld-MP4- en Word-documenten en xdp-bestanden die worden gebruikt als elementtypen om te worden weergegeven met de component search en lister

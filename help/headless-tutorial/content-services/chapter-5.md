@@ -75,19 +75,19 @@ Als u dit contract niet toepast op een gepubliceerde API, kan dit leiden tot een
 
 1. Vraag de **gebeurtenissen API** pagina als **JSON** aan.
 
-   * [ http://localhost:4502/content/wknd-mobile/en/api/events.model.json](http://localhost:4502/content/wknd-mobile/en/api/events.model.tidy.json)
+   * [&#x200B; http://localhost:4502/content/wknd-mobile/en/api/events.model.json](http://localhost:4502/content/wknd-mobile/en/api/events.model.tidy.json)
 
    Het resultaat moet er ongeveer als volgt uitzien:
 
-![ AEM de Uitvoer van de Diensten JSON van de Inhoud ](assets/chapter-5/json-output.png)
+![&#x200B; AEM de Uitvoer van de Diensten JSON van de Inhoud &#x200B;](assets/chapter-5/json-output.png)
 
 >[!NOTE]
 >
 > Dit JSON kan output in a **tidy** (geformatteerde) wijze voor mens-leesbaarheid door de `.tidy` selecteur te gebruiken zijn:
-> * [ http://localhost:4502/content/wknd-mobile/en/api/events.model.tidy.json](http://localhost:4502/content/wknd-mobile/en/api/events.model.tidy.json)
+> * [&#x200B; http://localhost:4502/content/wknd-mobile/en/api/events.model.tidy.json](http://localhost:4502/content/wknd-mobile/en/api/events.model.tidy.json)
 
 ## Volgende stap
 
-Naar keuze, installeer [ com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip ](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) inhoudspakket op AEM Auteur via [ AEM de Manager van het Pakket ](http://localhost:4502/crx/packmgr/index.jsp). Dit pakket bevat de configuraties en inhoud die in dit en vorige hoofdstukken van de zelfstudie worden beschreven.
+Naar keuze, installeer [&#x200B; com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip &#x200B;](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) inhoudspakket op AEM Auteur via [&#x200B; AEM de Manager van het Pakket &#x200B;](http://localhost:4502/crx/packmgr/index.jsp). Dit pakket bevat de configuraties en inhoud die in dit en vorige hoofdstukken van de zelfstudie worden beschreven.
 
 * [Hoofdstuk 6 - De inhoud op AEM Publish beschikbaar maken als JSON](./chapter-6.md)

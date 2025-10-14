@@ -22,16 +22,16 @@ ht-degree: 0%
 
 De vorm **StoreAFWithAttachments** is de belangrijkste adaptieve vorm. Dit adaptieve formulier is het ingangspunt voor het gebruiksgeval. In dit formulier worden gebruikersgegevens, waaronder het mobiele nummer, vastgelegd. Dit formulier kan ook enkele bijlagen toevoegen. Wanneer op de knop Opslaan en afsluiten wordt geklikt, wordt de code aan de serverzijde uitgevoerd om de formuliergegevens in de database op te slaan en wordt een unieke toepassings-id gegenereerd en aan de gebruiker gepresenteerd voor een veilige bewaring. Deze toepassings-id wordt gebruikt om het mobiele nummer op te halen dat aan de toepassing is gekoppeld.
 
-![ belangrijkste toepassingsvorm ](assets/6552.JPG)
+![&#x200B; belangrijkste toepassingsvorm &#x200B;](assets/6552.JPG)
 
 Deze vorm wordt geassocieerd met **bootboxjs540, storeAFWithAttachments** cliëntbibliotheken die vroeger in de cursus en een werkschema van AEM worden gecreeerd die op vormvoorlegging teweeggebracht.
 
 
-* De steekproefvormen zijn gebaseerd op [ douane adaptieve vormmalplaatje ](assets/custom-template-with-page-component.zip) dat in AEM voor de steekproefvormen moet worden ingevoerd om correct terug te geven.
+* De steekproefvormen zijn gebaseerd op [&#x200B; douane adaptieve vormmalplaatje &#x200B;](assets/custom-template-with-page-component.zip) dat in AEM voor de steekproefvormen moet worden ingevoerd om correct terug te geven.
 
-* De voltooide [ Vorm StoreAfWithAttachments ](assets/store-af-with-attachments-form.zip) kan in uw instantie van AEM worden gedownload en worden ingevoerd.
+* De voltooide [&#x200B; Vorm StoreAfWithAttachments &#x200B;](assets/store-af-with-attachments-form.zip) kan in uw instantie van AEM worden gedownload en worden ingevoerd.
 
-* Het [ werkschema van AEM verbonden aan deze vorm ](assets/workflow-model-store-af-with-attachments.zip) moet in uw instantie van AEM voor de vorm worden ingevoerd om te werken.
+* Het [&#x200B; werkschema van AEM verbonden aan deze vorm &#x200B;](assets/workflow-model-store-af-with-attachments.zip) moet in uw instantie van AEM voor de vorm worden ingevoerd om te werken.
 
 
 ## Volgende stappen

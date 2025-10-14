@@ -25,10 +25,10 @@ Als een gebruiker bijvoorbeeld op XDP klikt in het formulierportaal van AEM Form
 
 Voor dit gebruiksgeval moeten we het volgende doen.
 
-* Voeg het Reader Extensions-certificaat toe aan de gebruiker &quot;fd-service&quot;. De stappen om de credentie van de Uitbreidingen van Reader toe te voegen zijn vermeld [ hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=nl-NL)
+* Voeg het Reader Extensions-certificaat toe aan de gebruiker &quot;fd-service&quot;. De stappen om de credentie van de Uitbreidingen van Reader toe te voegen zijn vermeld [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=nl-NL)
 
 
-* U kunt ook naar de video verwijzen bij [ het vormen van de geloofsbrieven van de Uitbreidingen van Reader ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=nl-NL)
+* U kunt ook naar de video verwijzen bij [&#x200B; het vormen van de geloofsbrieven van de Uitbreidingen van Reader &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=nl-NL)
 
 
 * Creeer de douanedienst OSGi die teruggeeft en gebruiksrechten toepast. De code om dit te bereiken wordt hieronder vermeld
@@ -85,7 +85,7 @@ Voor dit gebruiksgeval moeten we het volgende doen.
 
 Het volgende schermschot toont u de configuratieeigenschappen blootgesteld. De meeste algemene gebruiksrechten worden via deze configuratie weergegeven.
 
-![ Eigenschappen van de Configuratie ](assets/configurationproperties.gif)
+![&#x200B; Eigenschappen van de Configuratie &#x200B;](assets/configurationproperties.gif)
 
 De volgende code toont u de code die wordt gebruikt om de OSGi configuratiemontages te bouwen
 
@@ -204,5 +204,5 @@ Voer de volgende stappen uit om dit op uw lokale server te testen
 1. [De aan dit artikel gerelateerde elementen downloaden en importeren naar AEM met behulp van pakketbeheer](assets/renderandextendxdp.zip)
    * Dit pakket bevat voorbeeldportal en xdp-bestand
 1. Reader-extensiecertificaat toevoegen aan gebruiker van het type fd-service
-1. Punt uw browser aan [ portalwebpagina ](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
+1. Punt uw browser aan [&#x200B; portalwebpagina &#x200B;](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
 1. Klik op het pictogram pdf om de xdp te renderen als een PDF-bestand waarop gebruiksrechten zijn toegepast.

@@ -21,9 +21,9 @@ Een van de belangrijkste sterke punten van het Dynamic Media Classic-concept van
 
 Aan het einde van deze sectie van de zelfstudie leert u hoe u kunt:
 
-- Afbeeldingen uitsnijden in Dynamic Media Classic en opslaan als nieuwe hoofdbestanden of als virtuele afbeeldingen. [ leer meer ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html?lang=nl-NL).
-- Sla virtuele aangepaste afbeeldingen op en gebruik deze in plaats van de hoofdelementen. [ leer meer ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/adjusting-image.html?lang=nl-NL).
-- Maak Zoomdoelen op uw afbeeldingen om de hooglichten van de afbeeldingen te tonen. [ leer meer ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html?lang=nl-NL).
+- Afbeeldingen uitsnijden in Dynamic Media Classic en opslaan als nieuwe hoofdbestanden of als virtuele afbeeldingen. [&#x200B; leer meer &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html?lang=nl-NL).
+- Sla virtuele aangepaste afbeeldingen op en gebruik deze in plaats van de hoofdelementen. [&#x200B; leer meer &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/adjusting-image.html?lang=nl-NL).
+- Maak Zoomdoelen op uw afbeeldingen om de hooglichten van de afbeeldingen te tonen. [&#x200B; leer meer &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html?lang=nl-NL).
 
 ## Uitsnijden
 
@@ -42,8 +42,8 @@ Dynamic Media Classic beschikt over een aantal gereedschappen voor het bewerken 
 
 U kunt tot het hulpmiddel van het Gewas in Dynamic Media Classic van de pagina van Details voor een activa toegang hebben of door **te klikken geeft** knoop uit. U kunt het gereedschap op twee manieren uitsnijden:
 
-- De standaarduitsnijdmodus waarin u de grepen van het uitsnijdvenster of de tekstwaarden in het vak Grootte sleept. Leer hoe te [ manueel Uitsnijden ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html?lang=nl-NL#select-an-area-to-crop).
-- Bijsnijden. Gebruik deze optie om extra witruimte rond de afbeelding te verwijderen door het aantal pixels te berekenen dat niet overeenkomt met de afbeelding. Leer hoe te [ Uitsnijden door ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html?lang=nl-NL#crop-to-remove-white-space-around-an-image) in orde te maken.
+- De standaarduitsnijdmodus waarin u de grepen van het uitsnijdvenster of de tekstwaarden in het vak Grootte sleept. Leer hoe te [&#x200B; manueel Uitsnijden &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html?lang=nl-NL#select-an-area-to-crop).
+- Bijsnijden. Gebruik deze optie om extra witruimte rond de afbeelding te verwijderen door het aantal pixels te berekenen dat niet overeenkomt met de afbeelding. Leer hoe te [&#x200B; Uitsnijden door &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html?lang=nl-NL#crop-to-remove-white-space-around-an-image) in orde te maken.
 
 ### _Handmatig het Uitsnijden_
 
@@ -83,7 +83,7 @@ Hoewel dit niet voor de hand ligt in Dynamic Media Classic, kunt u puur uitsnijd
 
 Wanneer u het gereedschap Uitsnijden gebruikt, ziet u onder in het veld URL-waarden. U kunt deze waarden als URL-wijzigingstoetsen rechtstreeks op een afbeelding toepassen.
 
-![ beeld ](assets/crop-adjusted-zoom-targets/cropping-by-url.png)
+![&#x200B; beeld &#x200B;](assets/crop-adjusted-zoom-targets/cropping-by-url.png)
 _het bevelbepalingen van het Gewas bij de bodem van de Redacteur van het Gewas_
 
 ![afbeelding](assets/crop-adjusted-zoom-targets/uncropped-cropped.png)
@@ -94,7 +94,7 @@ Omdat de grootte per afbeelding moet worden berekend wanneer u bijsnijden door b
 
 Voorinstellingen afbeelding hebben een veld waarin u opdrachten voor het leveren van extra afbeeldingen kunt toevoegen. Als u dezelfde uitsnijding als hierboven aan uw voorinstelling voor afbeeldingen wilt toevoegen, bewerkt u de voorinstelling en plakt of typt u de waarden in het veld URL-wijzigingstoetsen en slaat u deze op en publiceert u ze.
 
-![ beeld ](assets/crop-adjusted-zoom-targets/cropping-in-image-preset.jpg)
+![&#x200B; beeld &#x200B;](assets/crop-adjusted-zoom-targets/cropping-in-image-preset.jpg)
 _voeg gewassenbevelen (of om het even welk bevel) aan de Modifiers URL van het Beeld toe vooraf ingesteld._
 
 Het uitsnijden maakt nu deel uit van de voorinstelling Afbeelding en wordt automatisch toegepast telkens wanneer het wordt gebruikt. Natuurlijk hangt deze methode af van alle afbeeldingen die dezelfde hoeveelheid uitsnijding nodig hebben. Als niet alle afbeeldingen op dezelfde manier zijn opgenomen, werkt deze methode niet voor u.
@@ -119,7 +119,7 @@ U maakt gewoonlijk aangepaste afbeeldingen met het gereedschap Uitsnijden, maar 
 
 Voor aangepaste afbeeldingen hebt u een unieke element-id nodig. Wanneer ze worden gepubliceerd (u moet publiceren zoals elk ander element), fungeren ze als elke andere afbeelding en worden ze via hun element-id op een URL aangeroepen. Op de pagina van het Detail, kunt u Aangepaste Beelden bekijken verbonden aan een hoofdbeeld onder **Bouwstijl &amp; Derivaten** tabel.
 
-![ beeld ](assets/crop-adjusted-zoom-targets/derivatives.jpg)
+![&#x200B; beeld &#x200B;](assets/crop-adjusted-zoom-targets/derivatives.jpg)
 _Aangepaste meningen voor hoofdbeeld ASIAN_BR_MAIN_
 
 ## Zoomdoelen
@@ -134,7 +134,7 @@ Het proces is heel eenvoudig: klik op de functie, geef deze een beschrijvende na
 
 U kunt ook zelf bepalen of u Zoomdoelen wilt gebruiken. Niet alle viewertypen kunnen zoomdoelen weergeven (deze worden bijvoorbeeld niet ondersteund door de uitvlieger).
 
-Leer hoe te [ de Doelen van het Gezoem ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html?lang=nl-NL#creating-and-editing-zoom-targets) creëren.
+Leer hoe te [&#x200B; de Doelen van het Gezoem &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html?lang=nl-NL#creating-and-editing-zoom-targets) creëren.
 
 ![afbeelding](assets/crop-adjusted-zoom-targets/zoom-targets.jpg)
 

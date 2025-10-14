@@ -119,7 +119,7 @@ Bij het uitbreiden van functionaliteit en configuraties in Apache Webserver die 
 
 ### Inclusief basislijn Apache
 
-![ de Web van HTTPD- Webserver basislijn omvat ](assets/explanation-config-files/Apache-Webserver-Baseline-Includes.png)
+![&#x200B; de Web van HTTPD- Webserver basislijn omvat &#x200B;](assets/explanation-config-files/Apache-Webserver-Baseline-Includes.png)
 
 Zoals in het diagram boven het httpd binaire getal wordt gezien kijkt slechts aan het httpd.conf- dossier aangezien het configuratiedossier is.  Dat bestand bevat de volgende instructies:
 
@@ -133,7 +133,7 @@ IncludeOptional conf.d/*.conf
 Toen wij onze norm toepasten, voegden wij enkele extra dossiertypes en van onze toe.
 
 Hier zijn de basislijnmappen van AMS en de bovenste include-bestanden op het niveau
-![ de Basislijn van AMS omvat begin met een dispatcher_vhost.conf die om het even welk dossier met *.vhost van de folder /etc/httpd/conf.d/enabled_vhosts/ zal omvatten.  De punten in /etc/httpd/conf.d/enabled_vhosts/ folder zijn symlinks naar het daadwerkelijke configuratiedossier dat in /etc/httpd/conf.d/available_vhosts/](assets/explanation-config-files/Apache-Webserver-AMS-Baseline-Includes.png " Apache-Webserver-AMS-Baseline-Includes ") leeft
+![&#x200B; de Basislijn van AMS omvat begin met een dispatcher_vhost.conf die om het even welk dossier met *.vhost van de folder /etc/httpd/conf.d/enabled_vhosts/ zal omvatten.  De punten in /etc/httpd/conf.d/enabled_vhosts/ folder zijn symlinks naar het daadwerkelijke configuratiedossier dat in /etc/httpd/conf.d/available_vhosts/](assets/explanation-config-files/Apache-Webserver-AMS-Baseline-Includes.png " Apache-Webserver-AMS-Baseline-Includes ") leeft
 
 Aan de hand van de basislijn van Apache laten we zien hoe AMS aanvullende mappen en include-bestanden op hoofdniveau heeft gemaakt voor `conf.d` -mappen en specifieke mappen die zijn genest onder `/etc/httpd/conf.dispatcher.d/`
 
@@ -191,7 +191,7 @@ Nadat het hoogste niveau omvat oplossen hebben zij andere sub omvat die het verm
 
 ### Inclusief virtuele AMS-host
 
-![ Dit beeld toont hoe één.vhost- dossier dossiers van variabelen, whitelists omvat, en omslagen ](assets/explanation-config-files/Apache-Webserver-AMS-Vhost-Includes.png " Apache-Webserver-AMS-Vhost-Omvat ") herschrijft
+![&#x200B; Dit beeld toont hoe één.vhost- dossier dossiers van variabelen, whitelists omvat, en omslagen &#x200B;](assets/explanation-config-files/Apache-Webserver-AMS-Vhost-Includes.png " Apache-Webserver-AMS-Vhost-Omvat ") herschrijft
 
 Wanneer een `.vhost` -bestand uit de map `/etc/httpd/conf.d/availabled_vhosts/` wordt gesymboliseerd in de map `/etc/httpd/conf.d/enabled_vhosts/` , wordt het gebruikt in de actieve configuratie.
 
@@ -249,11 +249,11 @@ RewriteRule ^/logo.jpg$ /content/dam/weretail/general/logo.jpg [NC,PT]
 
 ### Omvat AMS-landbouwbedrijf
 
-![&lt;FILENAME>_farm.any zal sub.any dossiers omvatten om een landbouwbedrijfconfiguratie te voltooien.  In dit beeld kunt u zien dat een landbouwbedrijf elk geheim voorgeheugen van hoogste niveausectiedossiers, klantheaders, filters, teruggeeft, en gastheren.any- dossiers ](assets/explanation-config-files/Apache-Webserver-AMS-Farm-Includes.png " Apache-Webserver-AMS-Farm-omvat ")
+![&lt;FILENAME>_farm.any zal sub.any dossiers omvatten om een landbouwbedrijfconfiguratie te voltooien.  In dit beeld kunt u zien dat een landbouwbedrijf elk geheim voorgeheugen van hoogste niveausectiedossiers, klantheaders, filters, teruggeeft, en gastheren.any- dossiers &#x200B;](assets/explanation-config-files/Apache-Webserver-AMS-Farm-Includes.png " Apache-Webserver-AMS-Farm-omvat ")
 
 Wanneer om het even welke FILENAME_farm.om het even welke dossiers van `/etc/httpd/conf.dispatcher.d/available_farms/` folder in de `/etc/httpd/conf.dispatcher.d/enabled_farms/` folder worden gesymboliseerd zullen zij in de lopende configuratie worden gebruikt.
 
-De landbouwbedrijfdossiers hebben sub omvat gebaseerd op [ hoogste niveausecties van het landbouwbedrijf ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#defining-farms-farms) als geheime voorgeheugen, klantheaders, filters, teruggeeft, en gastheren.
+De landbouwbedrijfdossiers hebben sub omvat gebaseerd op [&#x200B; hoogste niveausecties van het landbouwbedrijf &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#defining-farms-farms) als geheime voorgeheugen, klantheaders, filters, teruggeeft, en gastheren.
 
 De `FILENAME_farm.any` -bestanden bevatten instructies voor elk bestand op basis van de locatie waar de bestanden in het landbouwbedrijfsbestand moeten worden opgenomen.  Hier volgt een voorbeeld van de syntaxis van een `FILENAME_farm.any` -bestand als een goede referentie:
 

@@ -33,12 +33,12 @@ AEM biedt de volgende API&#39;s aan voor interactie met de auteur en voor het pu
 
 | AEM API-type | Beschrijving | Beschikbaarheid | Hoofdletters gebruiken | API-voorbeelden |
 | --- | --- | --- | --- | --- |
-| AEM API&#39;s die zijn gebaseerd op OpenAPI | Gestandaardiseerde, machineleesbare API&#39;s voor Assets, Sites en Forms. | **slechts AEM as a Cloud Service** | API-eerste ontwikkeling, moderne toepassingen | [ de Auteur API van Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/), [ Omslagen API ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/), [ AEM Sites API ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/), [ de Diensten API van het Document van Forms ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) en anderen |
-| RESTful-API&#39;s | Traditionele REST-eindpunten voor interactie met AEM-bronnen. | AEM 6.X, AEM as a Cloud Service | CRUD-bewerkingen, moderne toepassingen | [ HTTP API van Assets ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), [ het REST API van het Werkschema ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-program-interaction#using-the-workflow-rest-api), [ Exporter JSON voor de Diensten van de Inhoud ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter) en anderen |
-| GraphQL API&#39;s | Geoptimaliseerd voor het efficiënt ophalen van gestructureerde inhoud met flexibele query&#39;s. | AEM 6.X, AEM as a Cloud Service | CMS, SPA&#39;s, mobiele apps zonder koppen | [ GraphQL API ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments) |
-| Traditionele (niet-RESTful) API&#39;s | Oudere API&#39;s zoals JCR, Sling Models, Query Builder en andere. | AEM 6.X, AEM as a Cloud Service | Verouderde integratie, achterwaartse compatibiliteit | [ de Bouwer API van de Vraag ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api) en anderen |
+| AEM API&#39;s die zijn gebaseerd op OpenAPI | Gestandaardiseerde, machineleesbare API&#39;s voor Assets, Sites en Forms. | **slechts AEM as a Cloud Service** | API-eerste ontwikkeling, moderne toepassingen | [&#x200B; de Auteur API van Assets &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/), [&#x200B; Omslagen API &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/), [&#x200B; AEM Sites API &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/), [&#x200B; de Diensten API van het Document van Forms &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) en anderen |
+| RESTful-API&#39;s | Traditionele REST-eindpunten voor interactie met AEM-bronnen. | AEM 6.X, AEM as a Cloud Service | CRUD-bewerkingen, moderne toepassingen | [&#x200B; HTTP API van Assets &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), [&#x200B; het REST API van het Werkschema &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-program-interaction#using-the-workflow-rest-api), [&#x200B; Exporter JSON voor de Diensten van de Inhoud &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter) en anderen |
+| GraphQL API&#39;s | Geoptimaliseerd voor het efficiënt ophalen van gestructureerde inhoud met flexibele query&#39;s. | AEM 6.X, AEM as a Cloud Service | CMS, SPA&#39;s, mobiele apps zonder koppen | [&#x200B; GraphQL API &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments) |
+| Traditionele (niet-RESTful) API&#39;s | Oudere API&#39;s zoals JCR, Sling Models, Query Builder en andere. | AEM 6.X, AEM as a Cloud Service | Verouderde integratie, achterwaartse compatibiliteit | [&#x200B; de Bouwer API van de Vraag &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api) en anderen |
 
-Voor meer details, zie de [ Adobe Experience Manager as a Cloud Service APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) pagina.
+Voor meer details, zie de [&#x200B; Adobe Experience Manager as a Cloud Service APIs &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/) pagina.
 
 ## Welke API moet worden gekozen{#which-api-to-choose}
 
@@ -66,11 +66,11 @@ Vergelijk JSON Web Token (JWT) en OAuth 2.0, twee gemeenschappelijke authentific
 | Meest geschikt voor | Server-aan-server API vraag | Beveiligde, geoorloofde toegang voor apps en gebruikers |
 | Vereiste informatie | Persoonlijke sleutel voor ondertekening van JWT | Client ID and Client Secret for OAuth 2.0 |
 | Tokenvervaldatum | Kortstondig en vaak vernieuwbaar | Het toegangstoken is van korte duur. Vernieuwt-teken is lang en gebruikt om een nieuw toegang-token te krijgen |
-| Credentials Management | [ AEM Developer Console ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) | [ Adobe Developer Console ](https://developer.adobe.com/developer-console/) |
+| Credentials Management | [&#x200B; AEM Developer Console &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) | [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/developer-console/) |
 
 ## AEM API&#39;s die zijn gebaseerd op OpenAPI
 
-Leer meer over OpenAPI-Gebaseerde AEM APIs en de belangrijke concepten om tot Adobe APIs in de [ op OpenAPI-Gebaseerde gids van AEM toegang te hebben APIs ](./openapis/overview.md).
+Leer meer over OpenAPI-Gebaseerde AEM APIs en de belangrijke concepten om tot Adobe APIs in de [&#x200B; op OpenAPI-Gebaseerde gids van AEM toegang te hebben APIs &#x200B;](./openapis/overview.md).
 
 ### Gevallen gebruiken
 
@@ -168,7 +168,7 @@ Leer meer over OpenAPI-Gebaseerde AEM APIs en de belangrijke concepten om tot Ad
 
 ## GraphQL API&#39;s - Voorbeelden
 
-Leer meer over GraphQL APIs en hoe te om hen in [ te gebruiken die met de Zetel van AEM worden begonnen - GraphQL ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview)
+Leer meer over GraphQL APIs en hoe te om hen in [&#x200B; te gebruiken die met de Zetel van AEM worden begonnen - GraphQL &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview)
 
 ### Gevallen gebruiken
 
@@ -264,7 +264,7 @@ Leer meer over GraphQL APIs en hoe te om hen in [ te gebruiken die met de Zetel 
 
 ## RESTful-API&#39;s - Voorbeelden
 
-Leer meer over RESTful APIs, zoals [ HTTP API van Assets ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) en [ JSON Exporter ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter).
+Leer meer over RESTful APIs, zoals [&#x200B; HTTP API van Assets &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) en [&#x200B; JSON Exporter &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter).
 
 ### Gevallen gebruiken
 

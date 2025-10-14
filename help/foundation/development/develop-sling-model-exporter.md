@@ -51,8 +51,8 @@ U kunt [!DNL Exporter] -ondersteuning inschakelen voor een [!DNL Sling Model] ne
 
 [!DNL Jackson Exporter] -opties zijn:
 
-* [ de opties van de Eigenschap van de Mapper ](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/MapperFeature.html)
-* [ de opties van de Eigenschap van de Rangschikking ](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/SerializationFeature.html)
+* [&#x200B; de opties van de Eigenschap van de Mapper &#x200B;](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/MapperFeature.html)
+* [&#x200B; de opties van de Eigenschap van de Rangschikking &#x200B;](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/SerializationFeature.html)
 
 ## [!DNL Jackson] -annotaties toepassen
 
@@ -64,11 +64,11 @@ Exporters-implementaties kunnen ook annotaties ondersteunen die inline kunnen wo
 
 ## De code weergeven {#view-the-code}
 
-[ SampleSlingModelExporter.java ](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/models/SampleSlingModelExporter.java)
+[&#x200B; SampleSlingModelExporter.java &#x200B;](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/models/SampleSlingModelExporter.java)
 
 ## Ondersteunende materialen {#supporting-materials}
 
-* [[!DNL Jackson Mapper]  Eigenschap Javadoc ](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/MapperFeature.html)
-* [[!DNL Jackson Serialization]  Eigenschap Javadoc ](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/SerializationFeature.html)
+* [[!DNL Jackson Mapper]  Eigenschap Javadoc &#x200B;](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/MapperFeature.html)
+* [[!DNL Jackson Serialization]  Eigenschap Javadoc &#x200B;](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/SerializationFeature.html)
 
-* [[!DNL Jackson Annotations]  Dokken ](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)
+* [[!DNL Jackson Annotations]  Dokken &#x200B;](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)

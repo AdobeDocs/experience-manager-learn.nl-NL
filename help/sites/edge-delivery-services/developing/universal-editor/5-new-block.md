@@ -21,7 +21,7 @@ ht-degree: 0%
 
 In dit hoofdstuk wordt beschreven hoe u met de Universal Editor een nieuw, bewerkbaar teasblok voor een Edge Delivery Services-website maakt.
 
-![ Nieuw teaser blok ](./assets//5-new-block/teaser-block.png)
+![&#x200B; Nieuw teaser blok &#x200B;](./assets//5-new-block/teaser-block.png)
 
 In het blok met de naam `teaser` worden de volgende elementen weergegeven:
 
@@ -91,25 +91,25 @@ Het blokmodel is een kritiek deel van de configuratie van het blok, aangezien he
 
 1. De ontwerpervaring door de velden te definiëren die beschikbaar zijn voor bewerken.
 
-   ![ Universele gebieden van de Redacteur ](./assets/5-new-block/fields-in-universal-editor.png)
+   ![&#x200B; Universele gebieden van de Redacteur &#x200B;](./assets/5-new-block/fields-in-universal-editor.png)
 
 2. De manier waarop de waarden van het veld worden gerenderd naar Edge Delivery Services HTML.
 
-De modellen worden toegewezen een `id` die aan de [ definitie van het blok ](#block-definition) beantwoordt en een `fields` serie omvat om de editable gebieden te specificeren.
+De modellen worden toegewezen een `id` die aan de [&#x200B; definitie van het blok &#x200B;](#block-definition) beantwoordt en een `fields` serie omvat om de editable gebieden te specificeren.
 
 Elk veld in de array `fields` heeft een JSON-object dat de volgende vereiste eigenschappen bevat:
 
 | JSON, eigenschap | Beschrijving |
 |---------------|-----------------------------------------------------------------------------------------------------------------------|
-| `component` | Het [ gebiedstype ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#component-types), zoals `text`, `reference`, of `aem-content`. |
+| `component` | Het [&#x200B; gebiedstype &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#component-types), zoals `text`, `reference`, of `aem-content`. |
 | `name` | The name of the field, mapping to the JCR property where the value is stored in AEM. |
 | `label` | Het label dat aan auteurs in de Universele Redacteur wordt getoond. |
 
-Voor een uitvoerige lijst van eigenschappen, met inbegrip van facultatief, herzie de [ Universele de gebiedsdocumentatie van de Redacteur ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#fields).
+Voor een uitvoerige lijst van eigenschappen, met inbegrip van facultatief, herzie de [&#x200B; Universele de gebiedsdocumentatie van de Redacteur &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#fields).
 
 #### Blokontwerp
 
-![ het Blok van de Teaser ](./assets/5-new-block/block-design.png)
+![&#x200B; het Blok van de Teaser &#x200B;](./assets/5-new-block/block-design.png)
 
 Het teasblok bevat de volgende bewerkbare elementen:
 
@@ -132,16 +132,16 @@ Definieer de velden die nodig zijn voor het blok: afbeelding, alternatieve afbee
 
 De teaser bestaat uit twee logische gebieden: afbeelding en tekst. Om de code te vereenvoudigen die nodig is om de Edge Delivery Services HTML weer te geven als de gewenste webervaring, moet het blokmodel deze structuur weerspiegelen.
 
-- Groepeer het **beeld** en **beeld alt tekst** samen gebruikend [ gebiedsondergang ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
-- Groepeer de gebieden van de tekstinhoud samen gebruikend [ element groeperend ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping), en [ gebiedsondergang voor CTA ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
+- Groepeer het **beeld** en **beeld alt tekst** samen gebruikend [&#x200B; gebiedsondergang &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
+- Groepeer de gebieden van de tekstinhoud samen gebruikend [&#x200B; element groeperend &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping), en [&#x200B; gebiedsondergang voor CTA &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
 
-Als u niet vertrouwd met [ gebiedsondergang ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) bent, [ element groeperend ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping), of [ typegevolgtrekking ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) herziet de verbonden documentatie alvorens verder te gaan, aangezien zij essentieel aan het creëren van een goed-gestructureerd blokmodel zijn.
+Als u niet vertrouwd met [&#x200B; gebiedsondergang &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) bent, [&#x200B; element groeperend &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping), of [&#x200B; typegevolgtrekking &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) herziet de verbonden documentatie alvorens verder te gaan, aangezien zij essentieel aan het creëren van een goed-gestructureerd blokmodel zijn.
 
 In het onderstaande voorbeeld:
 
-- [ de conclusie van het Type ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) wordt gebruikt om een `<img>` element van HTML van het `image` gebied automatisch tot stand te brengen. Het samenvouwen van velden wordt samen met de velden `image` en `imageAlt` gebruikt om een HTML-element voor `<img>` te maken. Het kenmerk `src` wordt ingesteld op de waarde van het veld `image` , terwijl het kenmerk `alt` wordt ingesteld op de waarde van het veld `imageAlt` .
+- [&#x200B; de conclusie van het Type &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) wordt gebruikt om een `<img>` element van HTML van het `image` gebied automatisch tot stand te brengen. Het samenvouwen van velden wordt samen met de velden `image` en `imageAlt` gebruikt om een HTML-element voor `<img>` te maken. Het kenmerk `src` wordt ingesteld op de waarde van het veld `image` , terwijl het kenmerk `alt` wordt ingesteld op de waarde van het veld `imageAlt` .
 - `textContent` is een groepsnaam waarmee velden worden gecategoriseerd. Het zou semantisch moeten zijn, maar kan iets uniek voor dit blok zijn. Hiermee wordt de Universal Editor geïnformeerd alle velden met dit voorvoegsel in hetzelfde `<div>` -element in de uiteindelijke HTML-uitvoer te renderen.
-- Het samenvouwen van velden wordt ook toegepast binnen de `textContent` -groep voor de oproep tot actie (CTA). CTA wordt gecreeerd als a `<a>` via [ typegevolgtrekking ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference). Het veld `cta` wordt gebruikt om het kenmerk `href` van het element `<a>` in te stellen en het veld `ctaText` bevat de tekstinhoud voor de koppeling binnen de tags `<a ...>` .
+- Het samenvouwen van velden wordt ook toegepast binnen de `textContent` -groep voor de oproep tot actie (CTA). CTA wordt gecreeerd als a `<a>` via [&#x200B; typegevolgtrekking &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference). Het veld `cta` wordt gebruikt om het kenmerk `href` van het element `<a>` in te stellen en het veld `ctaText` bevat de tekstinhoud voor de koppeling binnen de tags `<a ...>` .
 
 [!BADGE &#x200B; /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
@@ -215,7 +215,7 @@ De resulterende Edge Delivery Services HTML voor dit blok plaatst de afbeelding 
 </div>        
 ```
 
-Zoals aangetoond [ in het volgende hoofdstuk ](./7a-block-css.md), vereenvoudigt deze structuur van HTML het stileren van het blok als samenhangende eenheid.
+Zoals aangetoond [&#x200B; in het volgende hoofdstuk &#x200B;](./7a-block-css.md), vereenvoudigt deze structuur van HTML het stileren van het blok als samenhangende eenheid.
 
 Om de gevolgen te begrijpen van het niet gebruiken van gebiedsondergang en element groeperen, zie **de verkeerde manier** hierboven tabel.
 
@@ -223,7 +223,7 @@ Om de gevolgen te begrijpen van het niet gebruiken van gebiedsondergang en eleme
 
 **dit lusje illustreert een suboptimale manier om het teaser blok te modelleren, en is slechts een juxtapositie aan de juiste manier.**
 
-Het bepalen van elk gebied als standalone gebied in het blokmodel zonder [ gebied te gebruiken doen ineenstorten ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) en [ element groeperen ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) kan verleidelijk lijken. Dit overzicht bemoeilijkt echter het opmaken van het blok als een samenhangend geheel.
+Het bepalen van elk gebied als standalone gebied in het blokmodel zonder [&#x200B; gebied te gebruiken doen ineenstorten &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) en [&#x200B; element groeperen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) kan verleidelijk lijken. Dit overzicht bemoeilijkt echter het opmaken van het blok als een samenhangend geheel.
 
 Bijvoorbeeld, kon het teaser model **zonder** gebiedsondergang of element groepering als volgt worden bepaald:
 
@@ -304,7 +304,7 @@ De Edge Delivery Services HTML voor het blok geeft de waarde van elk veld in een
 </div>        
 ```
 
-Elk veld wordt geïsoleerd in een eigen `div`, waardoor het moeilijk is om de afbeeldings- en tekstinhoud op te maken als een consistente eenheid. Het bereiken van het gewenste ontwerp met inspanning en creativiteit is mogelijk, maar het gebruiken van [ element groeperend ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) om de gebieden van de tekstinhoud en [ gebiedsondergang ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) te groeperen om authored waarden als elementenattributen toe te voegen is eenvoudiger, gemakkelijker, en semantisch correct.
+Elk veld wordt geïsoleerd in een eigen `div`, waardoor het moeilijk is om de afbeeldings- en tekstinhoud op te maken als een consistente eenheid. Het bereiken van het gewenste ontwerp met inspanning en creativiteit is mogelijk, maar het gebruiken van [&#x200B; element groeperend &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) om de gebieden van de tekstinhoud en [&#x200B; gebiedsondergang &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) te groeperen om authored waarden als elementenattributen toe te voegen is eenvoudiger, gemakkelijker, en semantisch correct.
 
 Zie **de schrijfmanier** hierboven voor hoe te om het teaser blok beter te modelleren.
 
@@ -322,7 +322,7 @@ De blokdefinitie registreert het blok in Universele Redacteur. Hier volgt een ui
 | `definition.plugins.xwalk.page.resourceType` | Bepaalt het het Verschuiven middeltype voor het teruggeven van de component in de Universele Redacteur. Gebruik altijd een `core/franklin/components/block/v#/block` resource type. |
 | `definition.plugins.xwalk.page.template.name` | De naam van het blok. De naam moet lager zijn en worden afgebroken, zodat deze overeenkomt met de mapnaam van het blok. Deze waarde wordt ook gebruikt om het exemplaar van het blok in de Universele Redacteur te etiketteren. |
 | `definition.plugins.xwalk.page.template.model` | Koppelt deze definitie aan de bijbehorende `model` -definitie, die de ontwerpvelden bepaalt die voor het blok in de Universal Editor worden weergegeven. De waarde hier moet overeenkomen met een `model.id` -waarde. |
-| `definition.plugins.xwalk.page.template.classes` | Optionele eigenschap, waarvan de waarde wordt toegevoegd aan het kenmerk `class` van het blok HTML-element. Dit maakt varianten van hetzelfde blok mogelijk. De `classes` waarde kan worden gemaakt editable door [ toevoegend een klassengebied ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options) aan het 3&rbrace; model van het blok [&#128279;](#block-model). |
+| `definition.plugins.xwalk.page.template.classes` | Optionele eigenschap, waarvan de waarde wordt toegevoegd aan het kenmerk `class` van het blok HTML-element. Dit maakt varianten van hetzelfde blok mogelijk. De `classes` waarde kan worden gemaakt editable door [&#x200B; toevoegend een klassengebied &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options) aan het 3&rbrace; model van het blok [&#128279;](#block-model). |
 
 
 Hier is een voorbeeld van JSON voor de blokdefinitie:
@@ -357,13 +357,13 @@ Hier is een voorbeeld van JSON voor de blokdefinitie:
 In dit voorbeeld:
 
 - Het blok heeft de naam &#39;Taser&#39; en gebruikt het `teaser` -model dat bepaalt welke velden beschikbaar zijn voor bewerking in de Universal Editor.
-- Het blok bevat standaardinhoud voor het veld `textContent_text` . Dit is een RTF-gebied voor de titel en de hoofdtekst en `textContent_cta` en `textContent_ctaText` voor de koppeling en het label voor de CTA-koppeling (call-to-action). De het gebiedsnamen van het malplaatje die aanvankelijke inhoud bevatten, passen de gebiedsnamen aan die in de [ de gebiedsserie van het inhoudsmodel ](#block-model) worden bepaald;
+- Het blok bevat standaardinhoud voor het veld `textContent_text` . Dit is een RTF-gebied voor de titel en de hoofdtekst en `textContent_cta` en `textContent_ctaText` voor de koppeling en het label voor de CTA-koppeling (call-to-action). De het gebiedsnamen van het malplaatje die aanvankelijke inhoud bevatten, passen de gebiedsnamen aan die in de [&#x200B; de gebiedsserie van het inhoudsmodel &#x200B;](#block-model) worden bepaald;
 
 Deze structuur zorgt ervoor dat het blok in de Universele Redacteur met de juiste gebieden, inhoudsmodel, en middeltype voor het teruggeven wordt opgesteld.
 
 ### Blokkeringsfilters
 
-De serie van het blok `filters` bepaalt, voor [ containerblokken ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container), welke andere blokken aan de container kunnen worden toegevoegd. Filters definiëren een lijst met blok-id&#39;s (`model.id`) die aan de container kunnen worden toegevoegd.
+De serie van het blok `filters` bepaalt, voor [&#x200B; containerblokken &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container), welke andere blokken aan de container kunnen worden toegevoegd. Filters definiëren een lijst met blok-id&#39;s (`model.id`) die aan de container kunnen worden toegevoegd.
 
 [!BADGE &#x200B; /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
@@ -375,9 +375,9 @@ De serie van het blok `filters` bepaalt, voor [ containerblokken ](https://exper
 }
 ```
 
-De lasercomponent is geen a [ containerblok ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container), betekenend kunt u geen andere blokken aan het toevoegen. Hierdoor blijft de array `filters` leeg. Voeg in plaats daarvan de teaser-id toe aan de filterlijst van het sectieblok, zodat het teaser-object aan een sectie kan worden toegevoegd.
+De lasercomponent is geen a [&#x200B; containerblok &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container), betekenend kunt u geen andere blokken aan het toevoegen. Hierdoor blijft de array `filters` leeg. Voeg in plaats daarvan de teaser-id toe aan de filterlijst van het sectieblok, zodat het teaser-object aan een sectie kan worden toegevoegd.
 
-![ de filters van het Blok ](./assets/5-new-block/filters.png)
+![&#x200B; de filters van het Blok &#x200B;](./assets/5-new-block/filters.png)
 
 In door Adobe verschafte blokken, zoals het sectieblok, worden filters opgeslagen in de map `models` van het project. Als u de instellingen wilt aanpassen, zoekt u het JSON-bestand voor het door Adobe opgegeven blok (bijvoorbeeld `/models/_section.json` ) en voegt u de id van het gummetje ( `teaser` ) toe aan de lijst met filters. De configuratie signaleert de Universele Redacteur dat de lasercomponent aan het blok van de sectiecontainer kan worden toegevoegd.
 
@@ -410,7 +410,7 @@ De definitie-id van het teasblok `teaser` wordt toegevoegd aan de array `compone
 
 ## JSON-bestanden plaatsen
 
-Zorg ervoor u [ vaak ](./3-local-development-environment.md#linting) kleint uw veranderingen om het schoon en verenigbaar te verzekeren. Door regelmatig te koppelen worden problemen vroegtijdig afgevangen en neemt de totale ontwikkelingstijd af. Met de opdracht `npm run lint:js` kunt u ook JSON-bestanden koppelen en syntaxisfouten afvangen.
+Zorg ervoor u [&#x200B; vaak &#x200B;](./3-local-development-environment.md#linting) kleint uw veranderingen om het schoon en verenigbaar te verzekeren. Door regelmatig te koppelen worden problemen vroegtijdig afgevangen en neemt de totale ontwikkelingstijd af. Met de opdracht `npm run lint:js` kunt u ook JSON-bestanden koppelen en syntaxisfouten afvangen.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -420,7 +420,7 @@ $ npm run lint:js
 
 ## Het JSON-project bouwen
 
-Nadat de JSON-blokbestanden (bijvoorbeeld `blocks/teaser/_teaser.json` , `models/_section.json` ) zijn geconfigureerd, worden deze automatisch gecompileerd in de `component-models.json` -, `component-definitions.json` - en `component-filters.json` -bestanden van het project. Deze compilatie wordt automatisch behandeld door a [ Echtgenoot ](https://typicode.github.io/husky/) precommit haak inbegrepen in het [ AEM Boilerplate XWalk projectmalplaatje ](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
+Nadat de JSON-blokbestanden (bijvoorbeeld `blocks/teaser/_teaser.json` , `models/_section.json` ) zijn geconfigureerd, worden deze automatisch gecompileerd in de `component-models.json` -, `component-definitions.json` - en `component-filters.json` -bestanden van het project. Deze compilatie wordt automatisch behandeld door a [&#x200B; Echtgenoot &#x200B;](https://typicode.github.io/husky/) precommit haak inbegrepen in het [&#x200B; AEM Boilerplate XWalk projectmalplaatje &#x200B;](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
 
 Bouwt kan ook manueel of programmatically worden teweeggebracht gebruikend de manuscripten JSON [&#128279;](./3-local-development-environment.md#build-json-fragments) NPM van het project  bouwen.
 
@@ -439,4 +439,4 @@ $ git commit -m "Add teaser block JSON files so it is available in Universal Edi
 $ git push origin teaser
 ```
 
-Wanneer de Universele Redacteur met de vraagparameter `?ref=teaser` wordt geopend, verschijnt het nieuwe `teaser` blok in het blokpalet. Merk op dat het blok geen het stileren heeft; het geeft de gebieden van het blok als semantische HTML terug, die slechts via [ globale CSS ](./4-website-branding.md#global-css) wordt gestileerd.
+Wanneer de Universele Redacteur met de vraagparameter `?ref=teaser` wordt geopend, verschijnt het nieuwe `teaser` blok in het blokpalet. Merk op dat het blok geen het stileren heeft; het geeft de gebieden van het blok als semantische HTML terug, die slechts via [&#x200B; globale CSS &#x200B;](./4-website-branding.md#global-css) wordt gestileerd.

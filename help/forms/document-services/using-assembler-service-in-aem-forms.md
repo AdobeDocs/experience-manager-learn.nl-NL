@@ -103,19 +103,19 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 Om deze functie te laten werken op uw AEM-server
 
-* Download [ AssembleMultipleFiles.zip ](assets/assemble-multiple-files.zip) aan uw lokaal systeem.
-* Upload en installeer het pakket gebruikend de [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
-* De Bundel van de Diensten van het Document van de Download [ Douane ](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* Download [ het Ontwikkelen met de Bundel van de Gebruiker van de Dienst ](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* Stel en begin de bundels op gebruikend de [ felix Webconsole ](http://localhost:4502/system/console/bundles)
-* Punt uw browser aan [ AssemblePdfs.html ](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
+* Download [&#x200B; AssembleMultipleFiles.zip &#x200B;](assets/assemble-multiple-files.zip) aan uw lokaal systeem.
+* Upload en installeer het pakket gebruikend de [&#x200B; pakketmanager &#x200B;](http://localhost:4502/crx/packmgr/index.jsp)
+* De Bundel van de Diensten van het Document van de Download [&#x200B; Douane &#x200B;](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* Download [&#x200B; het Ontwikkelen met de Bundel van de Gebruiker van de Dienst &#x200B;](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* Stel en begin de bundels op gebruikend de [&#x200B; felix Webconsole &#x200B;](http://localhost:4502/system/console/bundles)
+* Punt uw browser aan [&#x200B; AssemblePdfs.html &#x200B;](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
 * Enkele bestanden met PDF-bestanden slepen en neerzetten
 
 >[!NOTE]
 >
 >Zorg ervoor dat de AEM Forms-installatie is voltooid. Alle bundels moeten actief zijn.
 >
->Zorg ervoor u hebt toegevoegd - de bibliotheken van de afgevaardigde van de Laars RSA en BouncyCastle zoals vermeld in dit [ Installerend AEM Forms ](https://helpx.adobe.com/nl/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>Zorg ervoor u hebt toegevoegd - de bibliotheken van de afgevaardigde van de Laars RSA en BouncyCastle zoals vermeld in dit [&#x200B; Installerend AEM Forms &#x200B;](https://helpx.adobe.com/nl/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
 >**Beveats voor deze Demo**
 >

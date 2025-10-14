@@ -19,12 +19,12 @@ ht-degree: 0%
 
 # IntelliJ installeren
 
-Installeer [ IntelliJ communautaire uitgave ](https://www.jetbrains.com/idea/download/#section=windows). U kunt de standaardinstellingen accepteren terwijl u dit tijdens de installatie aanbeveelt.
+Installeer [&#x200B; IntelliJ communautaire uitgave &#x200B;](https://www.jetbrains.com/idea/download/#section=windows). U kunt de standaardinstellingen accepteren terwijl u dit tijdens de installatie aanbeveelt.
 
 ## AEM-project importeren
 
 * Start IntelliJ
-* Importeer het AEM-project dat u in de vorige stap hebt gemaakt. Nadat het project wordt ingevoerd zou uw scherm iets als dit ![ a-bank-app ](assets/aem-banking-app.png) moeten kijken. U zult typisch met kern,ui.apps, ui.config en ui.content subprojecten werken.
+* Importeer het AEM-project dat u in de vorige stap hebt gemaakt. Nadat het project wordt ingevoerd zou uw scherm iets als dit ![&#x200B; a-bank-app &#x200B;](assets/aem-banking-app.png) moeten kijken. U zult typisch met kern,ui.apps, ui.config en ui.content subprojecten werken.
 * Als u het gemaakte en terminalvenster niet ziet, gaat u naar view->Tools Window en selecteert u Maven en Terminal
 
 ## De module Lettertypen toevoegen
@@ -32,7 +32,7 @@ Installeer [ IntelliJ communautaire uitgave ](https://www.jetbrains.com/idea/dow
 Als u aangepaste lettertypen in uw PDF-bestand wilt gebruiken, moet u de aangepaste lettertypen naar de AEM Forms CS-instantie duwen. Voer de volgende stappen uit
 
 * Creeer een omslag genoemd **doopvonten** in C:\CloudManager\aem-banking-application
-* Extraheer de inhoud van [ font.zip ](assets/fonts.zip) in de pas gecreëerde doopvontenomslag
+* Extraheer de inhoud van [&#x200B; font.zip &#x200B;](assets/fonts.zip) in de pas gecreëerde doopvontenomslag
 * In de module Lettertypen bevat een aantal aangepaste lettertypen. U kunt aangepaste lettertypen van uw organisatie toevoegen aan de map C:\CloudManager\aem-banking-application\fonts\src\main\resources van de module Lettertypen
 * Het bestand C:\CloudManager\aem-banking-application\pom.xml openen
 * Voeg de volgende regel ```<module>fonts</module>``` toe in de sectie Modules van de pom.xml
@@ -40,10 +40,10 @@ Als u aangepaste lettertypen in uw PDF-bestand wilt gebruiken, moet u de aangepa
 * Vernieuw het aem-bank-toepassingsproject in IntelliJ
 
 Projectstructuur met de module Lettertypen
-![ doopvonten-module ](assets/fonts-module.png)
+![&#x200B; doopvonten-module &#x200B;](assets/fonts-module.png)
 
 De module Fonts die is opgenomen in de POM Projecten
-![ doopvonten-pom ](assets/fonts-module-pom.png)
+![&#x200B; doopvonten-pom &#x200B;](assets/fonts-module-pom.png)
 
 ## Volgende stappen
 

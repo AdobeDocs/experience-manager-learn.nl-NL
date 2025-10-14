@@ -30,11 +30,11 @@ Het Asset Compute Development Tool kan vanaf de basis van het Asset Compute-proj
 $ aio app run
 ```
 
-Dit zal het Hulpmiddel van de Ontwikkeling in __http://localhost:9000__ beginnen, en zal het automatisch in een browser venster openen. Voor het Te lopen Hulpmiddel van de Ontwikkeling, [ een geldig, auto-geproduceerde devToolToken moet via een vraagparameter ](#troubleshooting__devtooltoken) worden verstrekt.
+Dit zal het Hulpmiddel van de Ontwikkeling in __http://localhost:9000__ beginnen, en zal het automatisch in een browser venster openen. Voor het Te lopen Hulpmiddel van de Ontwikkeling, [&#x200B; een geldig, auto-geproduceerde devToolToken moet via een vraagparameter &#x200B;](#troubleshooting__devtooltoken) worden verstrekt.
 
 ## De interface Asset Compute Development Tools begrijpen{#interface}
 
-![ Asset Compute Development Tool ](./assets/development-tool/asset-compute-dev-tool.png)
+![&#x200B; Asset Compute Development Tool &#x200B;](./assets/development-tool/asset-compute-dev-tool.png)
 
 1. __het dossier van Source:__ de selectie van het brondossier wordt gebruikt om:
    + Geselecteerd het element binair dat fungeert als het `source` binaire getal dat aan de Asset Compute-worker wordt doorgegeven
@@ -54,7 +54,7 @@ Dit zal het Hulpmiddel van de Ontwikkeling in __http://localhost:9000__ beginnen
 _klik-door van het runnen van een werk van Asset Compute in het Hulpmiddel van de Ontwikkeling (Geen audio)_
 
 1. Zorg ervoor dat Asset Compute Development Tool is gestart vanuit de hoofdmap van het project met de opdracht `aio app run` .
-1. In het Hulpmiddel van de Ontwikkeling van Asset Compute, upload of selecteer het dossier van het a [ steekproefbeeld ](../assets/samples/sample-file.jpg)
+1. In het Hulpmiddel van de Ontwikkeling van Asset Compute, upload of selecteer het dossier van het a [&#x200B; steekproefbeeld &#x200B;](../assets/samples/sample-file.jpg)
    + Zorg ervoor het dossier in het __dossier van Source__ dropdown wordt geselecteerd
 1. Herzie het __het profieldefinitie van Asset Compute__ tekstgebied
    + De sleutel `worker` definieert de URL voor de geïmplementeerde Asset Compute-worker

@@ -29,19 +29,19 @@ AEM Forms biedt de volgende poortcomponenten uit de verpakking:
 
 ## Forms Portal-componenten inschakelen
 
-Start IntelliJ en open het BankingApplication-project dat in de [ vroegere stap is gemaakt.](./getting-started.md) De ui.apps->src->main->content->jcr_root->apps.bankingapplication->componenten uitbreiden
+Start IntelliJ en open het BankingApplication-project dat in de [&#x200B; vroegere stap is gemaakt.](./getting-started.md) De ui.apps->src->main->content->jcr_root->apps.bankingapplication->componenten uitbreiden
 
 Als u een kerncomponent (inclusief de componenten van de out-of-the-box portal) wilt gebruiken op een Adobe Experience Manager-site (AEM), moet u een proxycomponent maken en deze inschakelen voor uw site.
 De nieuwe proxycomponent moet naar de uitpunt van de box form component verwijzen, zodat deze alles van de component overerft. Dit wordt gedaan door resourceSuperType in content.xml van de volmachtscomponent te veranderen. In content.xml geven we ook de titel en de componentgroep op.
 >[!NOTE]
 >
-> U kunt het middel super type voor elk van [ deze componenten van hier construeren ](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/formsportal)
+> U kunt het middel super type voor elk van [&#x200B; deze componenten van hier construeren &#x200B;](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/formsportal)
 
 
 ### Concepten en verzendingen
 
 Maak een exemplaar van een bestaande component (bijvoorbeeld `button`) en noem het als _concepten en voorlegging_.
-![ concepten en voorlegging ](assets/forms-portal-components2.png)
+![&#x200B; concepten en voorlegging &#x200B;](assets/forms-portal-components2.png)
 Vervang de inhoud in de `.content.xml` door de volgende XML:
 
 ```xml

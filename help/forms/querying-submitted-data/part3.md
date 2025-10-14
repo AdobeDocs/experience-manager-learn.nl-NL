@@ -23,7 +23,7 @@ Als u een query wilt uitvoeren op de verzonden gegevens, moet u het JSON-schema 
 
 Wanneer een Adaptief formulier wordt verzonden, controleren we of het bijbehorende JSON-schema zich in de database bevindt. Als het JSON-schema niet bestaat, wordt het JSON-schema opgehaald en wordt het schema in de juiste tabel opgeslagen. De formuliernaam wordt ook gekoppeld aan het JSON-schema. In de volgende schermafbeelding ziet u de tabel waarin de JSON-schema&#39;s zijn opgeslagen.
 
-![ jsonschema ](assets/jsonschemas.gif)
+![&#x200B; jsonschema &#x200B;](assets/jsonschemas.gif)
 
 ```java
 public String getJSONSchema(String afPath) {

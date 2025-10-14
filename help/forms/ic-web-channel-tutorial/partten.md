@@ -55,7 +55,7 @@ ht-degree: 0%
 
 * Klik op het Assets-pictogram en pas het filter toe om elementen van het type &quot;Documentfragmenten&quot; weer te geven. Sleep RetirementIncomeOutlook-documentfragment naar het doelgebied van het linkerdeelvenster.
 
-* U kunt [ naar deze pagina ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html?lang=nl-NL) bij het toevoegen van documentfragment aan inhoudsgebieden verwijzen.
+* U kunt [&#x200B; naar deze pagina &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html?lang=nl-NL) bij het toevoegen van documentfragment aan inhoudsgebieden verwijzen.
 
 ## Geschatte maandelijkse inkomensgrafiek toevoegen {#adding-estimated-monthly-income-chart}
 
@@ -63,11 +63,11 @@ ht-degree: 0%
 
 **AEM Forms 6.4 - het Vormen Geschatte Maandelijkse Grafiek van de Kolom van het Inkomen**
 
-![ form64 ](assets/estimatedmonthlyincomechart.png)
+![&#x200B; form64 &#x200B;](assets/estimatedmonthlyincomechart.png)
 
 **AEM Forms 6.5 - het Vormen Geschatte Maandelijkse Grafiek van de Kolom van het Inkomen**
 
-![ forms65 ](assets/estimatedmonthlyincomechart65.PNG)
+![&#x200B; forms65 &#x200B;](assets/estimatedmonthlyincomechart65.PNG)
 
 ## Volgende stappen
 

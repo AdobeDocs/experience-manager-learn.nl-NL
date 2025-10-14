@@ -48,8 +48,8 @@ De URL voor de bovenstaande afbeeldingsset kan er als volgt uitzien:
 
 ![afbeelding](assets/media-sets/image-set-url-1.png)
 
-- Leer meer over de Reeksen van het Beeld met het [ Snelle Begin aan de Reeksen van het Beeld ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/quick-start-image-sets.html?lang=nl-NL).
-- Leer hoe te [ een Reeks van het Beeld ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/creating-image-set.html?lang=nl-NL#creating-an-image-set) creëren.
+- Leer meer over de Reeksen van het Beeld met het [&#x200B; Snelle Begin aan de Reeksen van het Beeld &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/quick-start-image-sets.html?lang=nl-NL).
+- Leer hoe te [&#x200B; een Reeks van het Beeld &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/creating-image-set.html?lang=nl-NL#creating-an-image-set) creëren.
 
 ### Staalset
 
@@ -67,8 +67,8 @@ De URL voor de bovenstaande stalenset kan er als volgt uitzien:
 
 ![afbeelding](assets/media-sets/image-set_url.png)
 
-- Leer meer over de Reeksen van het Monster met het [ Snelle Begin aan de Reeksen van het Monster ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html?lang=nl-NL).
-- Leer hoe te [ een Reeks van het Monster ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html?lang=nl-NL#creating-a-swatch-set) creëren.
+- Leer meer over de Reeksen van het Monster met het [&#x200B; Snelle Begin aan de Reeksen van het Monster &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html?lang=nl-NL).
+- Leer hoe te [&#x200B; een Reeks van het Monster &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html?lang=nl-NL#creating-a-swatch-set) creëren.
 
 ### Set draaien
 
@@ -84,8 +84,8 @@ De URL voor de bovenstaande centrifugeset kan er als volgt uitzien:
 
 ![afbeelding](assets/media-sets/spin-set.png)
 
-- Leer meer over de Reeksen van de Draai met het [ Snelle Begin om Reeksen ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html?lang=nl-NL) te draaien.
-- Leer hoe te om [ een Reeks van de Draai ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/creating-spin-set.html?lang=nl-NL#creating-a-spin-set) te creëren.
+- Leer meer over de Reeksen van de Draai met het [&#x200B; Snelle Begin om Reeksen &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html?lang=nl-NL) te draaien.
+- Leer hoe te om [&#x200B; een Reeks van de Draai &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/creating-spin-set.html?lang=nl-NL#creating-a-spin-set) te creëren.
 
 ## Gemengde mediaset
 
@@ -99,13 +99,13 @@ De URL voor de bovenstaande gemengde mediaset kan er als volgt uitzien:
 
 ![afbeelding](assets/media-sets/image-set-url-1.png)
 
-- Leer meer over Gemengde Reeksen van Media met het [ Snelle Begin aan Gemengde Reeksen van Media ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html?lang=nl-NL).
+- Leer meer over Gemengde Reeksen van Media met het [&#x200B; Snelle Begin aan Gemengde Reeksen van Media &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html?lang=nl-NL).
 
-- Leer hoe te [ een Gemengde Reeks van Media ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html?lang=nl-NL#creating-a-mixed-media-set) creëren.
+- Leer hoe te [&#x200B; een Gemengde Reeks van Media &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html?lang=nl-NL#creating-a-mixed-media-set) creëren.
 
 Als u een afbeelding wilt weergeven voor zoomen, een set of een video op uw website, roept u deze aan in een Dynamic Media Classic-viewer. Dynamic Media Classic bevat viewers voor veelzijdige media-elementen, zoals stalensets, spelersets, video en vele andere.
 
-Leer meer over [ Kijkers voor AEM Assets en Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=nl-NL).
+Leer meer over [&#x200B; Kijkers voor AEM Assets en Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=nl-NL).
 
 ## Voorinstellingen batchset
 
@@ -124,7 +124,7 @@ Voorinstellingen voor batchsets worden alleen tijdens het uploaden toegepast; ze
 
 Zodra vooraf instelt zijn gecreeerd, kan de Beheerder van het Bedrijf kiezen of zij actief of inactief zijn. De actieve middelen zullen zij op de uploadpagina onder **Opties van de Baan** verschijnen, terwijl inactieve voorinstellingen verborgen zullen blijven.
 
-Leer hoe te [ een Reeks van de Partij creëren vooraf instelt ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=nl-NL#creating-a-batch-set-preset).
+Leer hoe te [&#x200B; een Reeks van de Partij creëren vooraf instelt &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=nl-NL#creating-a-batch-set-preset).
 
 ### Batchvoorinstellingen gebruiken bij uploaden
 
@@ -135,4 +135,4 @@ Hieronder wordt beschreven hoe u voorinstellingen voor batchsets gebruikt bij he
 3. Open de **Reeks van de Partij vooraf instelt** optie, en controleer of uncheck vooraf ingesteld om het met te gebruiken uploadt.
 4. Nadat het uploaden is voltooid, kijkt u in uw map naar de voltooide sets.
 
-Leer meer over [ Reeks van de Partij vooraf instelt ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=nl-NL#batch-set-presets).
+Leer meer over [&#x200B; Reeks van de Partij vooraf instelt &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=nl-NL#batch-set-presets).

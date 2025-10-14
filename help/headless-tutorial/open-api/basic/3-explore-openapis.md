@@ -18,38 +18,38 @@ ht-degree: 0%
 
 # Op AEM OpenAPI gebaseerde API&#39;s voor het leveren van inhoudsfragmenten verkennen
 
-De [ Levering van het Fragment van de Inhoud van AEM met OpenAPIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/) in AEM verstrekt een krachtige manier om gestructureerde inhoud aan om het even welke toepassing of kanaal te leveren. In dit hoofdstuk, onderzoeken wij hoe te om OpenAPIs te gebruiken om de Fragmenten van de Inhoud via de documentatie **terug te winnen proberen het** functionaliteit.
+De [&#x200B; Levering van het Fragment van de Inhoud van AEM met OpenAPIs &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/) in AEM verstrekt een krachtige manier om gestructureerde inhoud aan om het even welke toepassing of kanaal te leveren. In dit hoofdstuk, onderzoeken wij hoe te om OpenAPIs te gebruiken om de Fragmenten van de Inhoud via de documentatie **terug te winnen proberen het** functionaliteit.
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelig leerprogramma en veronderstelt de stappen die in [ worden geschetst Authoring de Fragmenten van de Inhoud ](./2-author-content-fragments.md) zijn voltooid.
+Dit is een meerdelig leerprogramma en veronderstelt de stappen die in [&#x200B; worden geschetst Authoring de Fragmenten van de Inhoud &#x200B;](./2-author-content-fragments.md) zijn voltooid.
 
 Zorg ervoor dat u over het volgende beschikt:
 
-* Hostnaam van de AEM publiceer dienst (b.v., `https://publish-<PROGRAM_ID>-e<ENVIRONMENT_ID >.adobeaemcloud.com/`) de [ Fragmenten van de Inhoud worden gepubliceerd aan ](./2-author-content-fragments.md#publish-content-fragments). Als u de AEM Preview-service publiceert, moet u de hostnaam beschikbaar hebben (bijvoorbeeld `https://preview-<PROGRAM_ID>-e<ENVIRONMENT_ID>.adobeaemcloud.com/` ).
+* Hostnaam van de AEM publiceer dienst (b.v., `https://publish-<PROGRAM_ID>-e<ENVIRONMENT_ID >.adobeaemcloud.com/`) de [&#x200B; Fragmenten van de Inhoud worden gepubliceerd aan &#x200B;](./2-author-content-fragments.md#publish-content-fragments). Als u de AEM Preview-service publiceert, moet u de hostnaam beschikbaar hebben (bijvoorbeeld `https://preview-<PROGRAM_ID>-e<ENVIRONMENT_ID>.adobeaemcloud.com/` ).
 
 ## Doelstellingen {#objectives}
 
-* Vertrouwd met de [ Levering van het Fragment van de Inhoud van AEM met OpenAPIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/).
+* Vertrouwd met de [&#x200B; Levering van het Fragment van de Inhoud van AEM met OpenAPIs &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/).
 * Oproepen APIs gebruikend API dokken **probeert het** vermogen.
 
 ## Leverings-API&#39;s
 
-De AEM Content Fragment Delivery met OpenAPI&#39;s biedt een RESTful-interface voor het ophalen van inhoudsfragmenten. De API&#39;s die in deze zelfstudie worden besproken, zijn alleen beschikbaar op de services Publiceren en Voorvertonen van AEM en niet op de service Auteur. Andere OpenAPIs bestaat voor [ interactie met de Fragmenten van de Inhoud op de dienst van de Auteur van AEM ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
+De AEM Content Fragment Delivery met OpenAPI&#39;s biedt een RESTful-interface voor het ophalen van inhoudsfragmenten. De API&#39;s die in deze zelfstudie worden besproken, zijn alleen beschikbaar op de services Publiceren en Voorvertonen van AEM en niet op de service Auteur. Andere OpenAPIs bestaat voor [&#x200B; interactie met de Fragmenten van de Inhoud op de dienst van de Auteur van AEM &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
 
 ## API&#39;s verkennen
 
-[ de Levering van het Fragment van de Inhoud van AEM met de documentatie van OpenAPIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/) heeft &quot;uitproberen het&quot;eigenschap die u toestaat om APIs te onderzoeken en hen van browser direct te testen. Dit is een geweldige manier om uzelf bekend te maken met de API-eindpunten en hun mogelijkheden.
+[&#x200B; de Levering van het Fragment van de Inhoud van AEM met de documentatie van OpenAPIs &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/) heeft &quot;uitproberen het&quot;eigenschap die u toestaat om APIs te onderzoeken en hen van browser direct te testen. Dit is een geweldige manier om uzelf bekend te maken met de API-eindpunten en hun mogelijkheden.
 
-Open de [ API van AEM Sites ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/) documenten in uw browser.
+Open de [&#x200B; API van AEM Sites &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/) documenten in uw browser.
 
 APIs is vermeld op de linkernavigatie onder de **sectie van de Levering van het Fragment**. U kunt deze sectie uitvouwen om de beschikbare API&#39;s weer te geven. Het selecteren van API toont de API details in het belangrijkste paneel, en a **probeert het** sectie op het recht-spoor dat u toestaat om API van browser direct te testen en te onderzoeken.
 
-![ de Levering van het Fragment van de Inhoud van AEM met de docs van OpenAPIs ](./assets/3/docs-overview.png)
+![&#x200B; de Levering van het Fragment van de Inhoud van AEM met de docs van OpenAPIs &#x200B;](./assets/3/docs-overview.png)
 
 ## Inhoudsfragmenten weergeven
 
-1. Open de [ Levering van het Fragment van de Inhoud van AEM met ontwikkelaarsdocumenten OpenAPI ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/) in uw browser.
+1. Open de [&#x200B; Levering van het Fragment van de Inhoud van AEM met ontwikkelaarsdocumenten OpenAPI &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/) in uw browser.
 1. In de linkernavigatie, breid de **sectie van de Levering van het 0&rbrace; Fragment uit en selecteer** Lijst alle Fragmenten van de Inhoud **API**
 
 Met deze API kunt u een gepagineerde lijst met alle inhoudsfragmenten van AEM ophalen per map. De eenvoudigste manier om deze API te gebruiken, is het pad naar de map met de inhoudsfragmenten op te geven.
@@ -61,7 +61,7 @@ Aangezien wij de publicatieservice van AEM gebruiken, plaats het emmertje aan AE
 
 * **emmertje**: `publish-p138003-e1400351`
 
-![ probeer het emmertje ](./assets/3/try-it-bucket.png)
+![&#x200B; probeer het emmertje &#x200B;](./assets/3/try-it-bucket.png)
 
 Wanneer het emmertje wordt geplaatst, werkt het **server** gebied van het Doel automatisch aan volledige API URL van de publicatiedienst van AEM bij, zoals: `https://publish-p138003-e1400351.adobeaemcloud.com/adobe/contentFragments`
 
@@ -76,12 +76,12 @@ Wanneer het emmertje wordt geplaatst, werkt het **server** gebied van het Doel a
   >[!TIP]
   > Wanneer het ingaan van een weg, zorg ervoor zijn prefix `/content/dam/` is en **niet** met een het slepen schuine streep `/` beëindigt.
 
-  ![ probeer het parameters ](assets/3/try-it-parameters.png)
+  ![&#x200B; probeer het parameters &#x200B;](assets/3/try-it-parameters.png)
 
 1. Selecteer **verzenden** knoop om de API vraag uit te voeren.
 1. In het **lusje van de Reactie** in **probeert het** paneel, zou u een reactie JSON moeten zien die een lijst van Inhoudsfragmenten in de gespecificeerde omslag bevat. De reactie zal gelijkaardig aan het volgende kijken:
 
-   ![ probeer het reactie ](./assets/3/try-it-response.png)
+   ![&#x200B; probeer het reactie &#x200B;](./assets/3/try-it-response.png)
 
 1. De reactie bevat alle Fragmenten van de Inhoud onder de `path` omslag van de parameter 0&rbrace;, met inbegrip van subfolders, zowel `/content/dam/my-project` Persoon **als** de Fragmenten van de Inhoud van het Team **.**
 1. Klik door de array `items` en zoek de waarde `Team Alpha` item `id` . De id wordt gebruikt in de volgende sectie om de details van één inhoudsfragment op te halen.
@@ -138,5 +138,5 @@ Gefeliciteerd, creeerde en uitvoerde u verscheidene Levering van het Fragment va
 
 ## Volgende stappen
 
-In het volgende hoofdstuk, [ bouwt Reageren app ](./4-react-app.md), verkent u hoe een externe toepassing met de Levering van het Fragment van de Inhoud van AEM met OpenAPIs kan interactie aangaan.
+In het volgende hoofdstuk, [&#x200B; bouwt Reageren app &#x200B;](./4-react-app.md), verkent u hoe een externe toepassing met de Levering van het Fragment van de Inhoud van AEM met OpenAPIs kan interactie aangaan.
 

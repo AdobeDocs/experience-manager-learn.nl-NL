@@ -20,13 +20,13 @@ ht-degree: 0%
 
 Als u reeds opstelling de ontwikkelomgeving hebt, kunt u dit deel van het leerprogramma veilig overslaan.
 
-[ creeer Gemaakt project ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started)
+[&#x200B; creeer Gemaakt project &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started)
 
-[ installeer IntelliJ ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up) - u kunt overslaan toevoegend de doopvontenmodule voor dit leerprogramma.
+[&#x200B; installeer IntelliJ &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up) - u kunt overslaan toevoegend de doopvontenmodule voor dit leerprogramma.
 
-[ initialiseer Git ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git)
+[&#x200B; initialiseer Git &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git)
 
-[ Synchroniseer IntelliJ met lokale wolkenklare instantie van AEM Forms ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync)
+[&#x200B; Synchroniseer IntelliJ met lokale wolkenklare instantie van AEM Forms &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync)
 
 ## Volgende stappen
 

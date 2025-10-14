@@ -28,7 +28,7 @@ Maak een adaptief formulier met de volgende structuur. Het hoofddeelvenster beva
 
 Er wordt ook een werkbalk toegevoegd onder de FormContainer met de knoppen Vorige en Volgende
 
-![ toolbar-uit elkaar plaatsen ](assets/multiple-panels.png)
+![&#x200B; toolbar-uit elkaar plaatsen &#x200B;](assets/multiple-panels.png)
 
 
 

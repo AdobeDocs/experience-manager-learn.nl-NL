@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Instellen [!DNL Sling Dynamic Include]
 
-Een videolooppas-door van het installeren van en het gebruiken van [!DNL Apache Sling Dynamic Include] met [ AEM Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) lopend op [!DNL Apache HTTP Web Server].
+Een videolooppas-door van het installeren van en het gebruiken van [!DNL Apache Sling Dynamic Include] met [&#x200B; AEM Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) lopend op [!DNL Apache HTTP Web Server].
 
 >[!VIDEO](https://video.tv.adobe.com/v/17040?quality=12&learn=on)
 
@@ -27,7 +27,7 @@ Een videolooppas-door van het installeren van en het gebruiken van [!DNL Apache 
 >
 > Controleer of de nieuwste versie van AEM Dispatcher lokaal is geïnstalleerd.
 
-1. Download en installeer de [[!DNL Sling Dynamic Include]  bundel ](https://sling.apache.org/downloads.cgi).
+1. Download en installeer de [[!DNL Sling Dynamic Include]  bundel &#x200B;](https://sling.apache.org/downloads.cgi).
 1. Vorm [!DNL Sling Dynamic Include] via [!DNL OSGi Configuration Factory] in **http://&lt;host>:&lt;port>/system/console/configMgr/org.apache.sling.dynamicinclude.Configuration**.
 
    Of, om aan een code-basis van AEM toe te voegen, creeer de aangewezen **gooi:OsgiConfig** knoop bij:
@@ -54,7 +54,7 @@ Een videolooppas-door van het installeren van en het gebruiken van [!DNL Apache 
    -->
    ```
 
-1. (Facultatief) herhaal de laatste stap om voor componenten op [ gesloten (aanvankelijke) inhoud van editable malplaatjes ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/page-templates-editable.html) toe te staan om via [!DNL SDI] eveneens te worden gediend. De reden voor de extra configuratie is dat vergrendelde inhoud van bewerkbare sjablonen wordt aangeboden vanuit `/conf` in plaats van `/content` .
+1. (Facultatief) herhaal de laatste stap om voor componenten op [&#x200B; gesloten (aanvankelijke) inhoud van editable malplaatjes &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/page-templates-editable.html) toe te staan om via [!DNL SDI] eveneens te worden gediend. De reden voor de extra configuratie is dat vergrendelde inhoud van bewerkbare sjablonen wordt aangeboden vanuit `/conf` in plaats van `/content` .
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -131,7 +131,7 @@ Een videolooppas-door van het installeren van en het gebruiken van [!DNL Apache 
 
    >[!TIP]
    >
-   > Als u de `*` volgende regel in de algemene regel `*.nocache.html*` hierboven weglaat, kan dit resulteren in [ problemen in verzoeken om subresources ](https://github.com/AdobeDocs/experience-manager-learn.en/issues/16) .
+   > Als u de `*` volgende regel in de algemene regel `*.nocache.html*` hierboven weglaat, kan dit resulteren in [&#x200B; problemen in verzoeken om subresources &#x200B;](https://github.com/AdobeDocs/experience-manager-learn.en/issues/16) .
 
    ```shell
    /cache {
@@ -148,7 +148,7 @@ Een videolooppas-door van het installeren van en het gebruiken van [!DNL Apache 
 
 >[!NOTE]
 >
->Als u [!DNL Sling Dynamic Includes] voor het dienen van rand-zij omvat (ESI) gebruikt, dan zorg ervoor om relevante [ reactiekopballen in het berichtchermgeheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#CachingHTTPResponseHeaders) in het voorgeheugen onder te brengen. Mogelijke kopteksten zijn onder andere:
+>Als u [!DNL Sling Dynamic Includes] voor het dienen van rand-zij omvat (ESI) gebruikt, dan zorg ervoor om relevante [&#x200B; reactiekopballen in het berichtchermgeheime voorgeheugen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#CachingHTTPResponseHeaders) in het voorgeheugen onder te brengen. Mogelijke kopteksten zijn onder andere:
 >
 >* &quot;Cache-control&quot;
 >* &quot;Content-Disposition&quot;
@@ -162,5 +162,5 @@ Een videolooppas-door van het installeren van en het gebruiken van [!DNL Apache 
 
 ## Ondersteunende materialen
 
-* [ Download Sling Dynamische Include bundel ](https://sling.apache.org/downloads.cgi)
-* [ Apache Sling Dynamic Include documentatie ](https://github.com/Cognifide/Sling-Dynamic-Include)
+* [&#x200B; Download Sling Dynamische Include bundel &#x200B;](https://sling.apache.org/downloads.cgi)
+* [&#x200B; Apache Sling Dynamic Include documentatie &#x200B;](https://github.com/Cognifide/Sling-Dynamic-Include)

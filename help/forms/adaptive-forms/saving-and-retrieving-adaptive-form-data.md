@@ -38,7 +38,7 @@ Apache Sling Connection Pooled DataSource is geconfigureerd om te verwijzen naar
 
 * `JDBC Connection URL:jdbc:mysql://localhost:3306/aemformstutorial`
 
-![ connectionpool ](assets/storingdata.PNG)
+![&#x200B; connectionpool &#x200B;](assets/storingdata.PNG)
 
 ### Servlet maken {#create-servlet}
 

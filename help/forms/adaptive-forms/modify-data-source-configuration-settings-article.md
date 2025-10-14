@@ -26,6 +26,6 @@ De onderstaande schermafbeeldingen tonen de configuratie-instellingen voor de ge
 
 **Configuratie van Gegevens Source in AEM 6.4**
 
-![ 64DataSource Configuratie ](assets/64release.gif)
+![&#x200B; 64DataSource Configuratie &#x200B;](assets/64release.gif)
 **Bewerkbare Configuratie van Gegevens Source in AEM 6.5 en hierboven**
-![ 65DataSource Configuratie ](assets/modifiable_data_source.png)
+![&#x200B; 65DataSource Configuratie &#x200B;](assets/modifiable_data_source.png)

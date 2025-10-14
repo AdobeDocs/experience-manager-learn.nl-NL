@@ -34,7 +34,7 @@ In dit hoofdstuk, maken wij config veranderingen in het __project van Plaatsen W
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelig leerprogramma en men veronderstelt dat u [ &quot;ui.frontend&quot;Module ](./review-uifrontend-module.md) hebt herzien.
+Dit is een meerdelig leerprogramma en men veronderstelt dat u [&#x200B; &quot;ui.frontend&quot;Module &#x200B;](./review-uifrontend-module.md) hebt herzien.
 
 
 ## Wijzigingen in het AEM-project met volledige stapel
@@ -158,7 +158,7 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
 
    >[!TIP]
    >
-   >    Zie volledige [ HtmlPageItemsConfig ](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/.content.xml) in het __project van de Plaatsen van AEM WKND__.
+   >    Zie volledige [&#x200B; HtmlPageItemsConfig &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/.content.xml) in het __project van de Plaatsen van AEM WKND__.
 
 
    * Vervolgens wordt de waarde van `com.adobe.aem.wcm.site.manager.config.SiteConfig` met de waarde van `themePackageName` gelijk aan de waarde van de eigenschap `package.json` en `name` en `siteTemplatePath` gewijzigd, waarbij wordt verwezen naar de waarde van een `/libs/wcm/core/site-templates/aem-site-template-stub-2.0.0` stub-pad.
@@ -176,7 +176,7 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
 
    >[!TIP]
    >
-   >    Zie, volledige [ SiteConfig ](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.aem.wcm.site.manager.config.SiteConfig/.content.xml) in het __project van de Plaatsen van AEM WKND__.
+   >    Zie, volledige [&#x200B; SiteConfig &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.aem.wcm.site.manager.config.SiteConfig/.content.xml) in het __project van de Plaatsen van AEM WKND__.
 
 1. Als een thema of stijlen worden gewijzigd en via een front-end pijplijn voor een testrun worden geïmplementeerd, veranderen we `text-color` in Adobe rood (of u kunt uw eigen stijl kiezen) door de `ui.frontend/src/main/webpack/base/sass/_variables.scss` bij te werken.
 
@@ -190,14 +190,14 @@ Breng deze wijzigingen tot slot door naar de Adobe Git-opslagplaats van uw progr
 
 >[!AVAILABILITY]
 >
-> Deze veranderingen zijn beschikbaar op GitHub binnen de [__front-end pijpleiding__ ](https://github.com/adobe/aem-guides-wknd/tree/feature/frontend-pipeline) tak van het __project van de Plaatsen van AEM WKND__.
+> Deze veranderingen zijn beschikbaar op GitHub binnen de [__front-end pijpleiding__ &#x200B;](https://github.com/adobe/aem-guides-wknd/tree/feature/frontend-pipeline) tak van het __project van de Plaatsen van AEM WKND__.
 
 
 ## De voorzichtigheid - _laat Voorste Pijl van het Eind_ knoop toe
 
-De [ Selector van het Spoorspoor ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=nl-NL) &quot;s [ optie van de Plaats ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=nl-NL) toont **toelaten Voorste Pijpleiding van het Eind** op het selecteren van uw plaatswortel of plaatspagina. Het klikken **laat de Voorste knoop van het Eind toe** hierboven **het Schuiven vormt**, zorg ervoor **u** deze knoop na het opstellen boven veranderingen via de pijpleidingsuitvoering van Cloud Manager niet klikt.
+De [&#x200B; Selector van het Spoorspoor &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=nl-NL) &quot;s [&#x200B; optie van de Plaats &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=nl-NL) toont **toelaten Voorste Pijpleiding van het Eind** op het selecteren van uw plaatswortel of plaatspagina. Het klikken **laat de Voorste knoop van het Eind toe** hierboven **het Schuiven vormt**, zorg ervoor **u** deze knoop na het opstellen boven veranderingen via de pijpleidingsuitvoering van Cloud Manager niet klikt.
 
-![ laat Voorste knoop van de Pijl van het Eind toe ](assets/enable-front-end-Pipeline-button.png)
+![&#x200B; laat Voorste knoop van de Pijl van het Eind toe &#x200B;](assets/enable-front-end-Pipeline-button.png)
 
 Als er per ongeluk op wordt geklikt, moet u de pijpleidingen opnieuw uitvoeren om ervoor te zorgen dat het frontend pijpleidingscontract en de veranderingen worden hersteld.
 
@@ -207,4 +207,4 @@ Gefeliciteerd, hebt u het project van Plaatsen WKND bijgewerkt om het voor het f
 
 ## Volgende stappen {#next-steps}
 
-In het volgende hoofdstuk, [ opstelt gebruikend de Voorste-Eind Pijpleiding ](create-frontend-pipeline.md), zult u een front-end pijpleiding creëren en in werking stellen en zult verifiëren hoe wij __weg__ van de &quot;/etc.clientlibs&quot;gebaseerde front-end middelenlevering bewogen.
+In het volgende hoofdstuk, [&#x200B; opstelt gebruikend de Voorste-Eind Pijpleiding &#x200B;](create-frontend-pipeline.md), zult u een front-end pijpleiding creëren en in werking stellen en zult verifiëren hoe wij __weg__ van de &quot;/etc.clientlibs&quot;gebaseerde front-end middelenlevering bewogen.

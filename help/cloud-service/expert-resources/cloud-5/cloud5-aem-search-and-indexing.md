@@ -25,11 +25,11 @@ Een snelle duik in de diepe wateren van onderzoek en indexering. Een uitdagend o
 
 ## Inhoud die in deze video wordt behandeld
 
-+ Onderzoek en Index [ Overzicht ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=nl-NL)
-+ AEM [ Omzetter van de Index ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html?lang=nl-NL)
-+ De Deskundige Reeks [ Diep duiken ](../../../cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
++ Onderzoek en Index [&#x200B; Overzicht &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=nl-NL)
++ AEM [&#x200B; Omzetter van de Index &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html?lang=nl-NL)
++ De Deskundige Reeks [&#x200B; Diep duiken &#x200B;](../../../cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
 
 
 ## Aanvullende bronnen
 
-Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 1 ](cloud5-season-1.md) pagina.
+Bekijk verwante video&#39;s op de [&#x200B; Wolk 5 seizoen 1 &#x200B;](cloud5-season-1.md) pagina.

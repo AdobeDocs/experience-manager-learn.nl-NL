@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Het uitbreidbare OAuth werkingsgebied van Adobe Experience Manager staat voor toegangsbeheer voor middelen van een cliënttoepassing toe die door een eind - gebruiker wordt toegelaten. Het onderstaande diagram illustreert de aanvraagstroom in de context van AEM.
 
-![ Oauth Scopes Flow ](./assets/oauth-code-sample-develop/oauth-scopes-flow.png)
+![&#x200B; Oauth Scopes Flow &#x200B;](./assets/oauth-code-sample-develop/oauth-scopes-flow.png)
 
 AEM biedt drie bereikregels:
 
@@ -32,4 +32,4 @@ Door het uitbreidbare OAuth-bereik van AEM kunnen andere aangepaste bereiken wor
 
 OAuth is de voorkeursmethode voor het autoriseren van een clienttoepassing, aangezien deze een toegangstoken gebruikt in plaats van dat de referenties van een AEM-gebruiker naar die toepassing moeten worden verzonden.
 
-* [ Mening de code ](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/legacy/bundle/src/main/java/com/adobe/acs/samples/authentication/oauth/impl/SampleScopeWithPrivileges.java)
+* [&#x200B; Mening de code &#x200B;](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/legacy/bundle/src/main/java/com/adobe/acs/samples/authentication/oauth/impl/SampleScopeWithPrivileges.java)

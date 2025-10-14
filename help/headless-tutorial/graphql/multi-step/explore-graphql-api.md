@@ -22,11 +22,11 @@ ht-degree: 0%
 
 GraphQL API van AEM verstrekt een krachtige vraagtaal om gegevens van de Fragments van de Inhoud aan stroomafwaartse toepassingen bloot te stellen. De modellen van het Fragment van de inhoud bepalen het gegevensschema dat door de Fragmenten van de Inhoud wordt gebruikt. Wanneer een Content Fragment Model wordt gemaakt of bijgewerkt, wordt het schema vertaald en toegevoegd aan de &quot;grafiek&quot; die de GraphQL API vormt.
 
-In dit hoofdstuk, onderzoeken sommige gemeenschappelijke vragen van GraphQL om inhoud te verzamelen gebruikend winde genoemd [ GraphiQL ](https://github.com/graphql/graphiql). Met GraphiQL IDE kunt u snel de geretourneerde query&#39;s en gegevens testen en verfijnen. Het biedt ook eenvoudige toegang tot de documentatie, waardoor u gemakkelijk kunt leren en begrijpen welke methoden beschikbaar zijn.
+In dit hoofdstuk, onderzoeken sommige gemeenschappelijke vragen van GraphQL om inhoud te verzamelen gebruikend winde genoemd [&#x200B; GraphiQL &#x200B;](https://github.com/graphql/graphiql). Met GraphiQL IDE kunt u snel de geretourneerde query&#39;s en gegevens testen en verfijnen. Het biedt ook eenvoudige toegang tot de documentatie, waardoor u gemakkelijk kunt leren en begrijpen welke methoden beschikbaar zijn.
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelig leerprogramma en het wordt verondersteld dat de stappen die in [ worden geschetst de Begeleidende Fragmenten van de Inhoud ](./author-content-fragments.md) zijn voltooid.
+Dit is een meerdelig leerprogramma en het wordt verondersteld dat de stappen die in [&#x200B; worden geschetst de Begeleidende Fragmenten van de Inhoud &#x200B;](./author-content-fragments.md) zijn voltooid.
 
 ## Doelstellingen {#objectives}
 
@@ -42,14 +42,14 @@ Een eindpunt van GraphQL moet worden gevormd om GraphQL API vragen voor de Fragm
 
 1. Van het scherm van het Begin van AEM, navigeer aan **Hulpmiddelen** > **Algemeen** > **GraphQL**.
 
-   ![ ga aan het eindpunt van GraphQL ](assets/explore-graphql-api/navigate-to-graphql-endpoint.png)
+   ![&#x200B; ga aan het eindpunt van GraphQL &#x200B;](assets/explore-graphql-api/navigate-to-graphql-endpoint.png)
 
 1. Tik **creeer** in de hoger-juiste hoek, in de resulterende dialoog ga de volgende waarden in:
 
    * Naam*: **Mijn Eindpunt van het Project**.
    * Het schema van GraphQL van het gebruik door... * wordt verstrekt: **Mijn Project**
 
-   ![ creeer het eindpunt van GraphQL ](assets/explore-graphql-api/create-graphql-endpoint.png)
+   ![&#x200B; creeer het eindpunt van GraphQL &#x200B;](assets/explore-graphql-api/create-graphql-endpoint.png)
 
    Tik **creeer** om het eindpunt te bewaren.
 
@@ -61,25 +61,25 @@ Een eindpunt van GraphQL moet worden gevormd om GraphQL API vragen voor de Fragm
 
 1. Er moet nu één GraphQL-eindpunt worden weergegeven dat op uw omgeving is ingeschakeld.
 
-   ![ Toegelaten grafische eindpunten ](assets/explore-graphql-api/enabled-graphql-endpoints.png)
+   ![&#x200B; Toegelaten grafische eindpunten &#x200B;](assets/explore-graphql-api/enabled-graphql-endpoints.png)
 
 ## GraphiQL IDE gebruiken
 
-Het [ GraphiQL ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html?lang=nl-NL) hulpmiddel laat ontwikkelaars toe om vragen tegen inhoud op het huidige milieu van AEM tot stand te brengen en te testen. Het hulpmiddel GraphiQL laat ook gebruikers toe om **voort te zetten of** vragen te bewaren die door cliënttoepassingen in een productie het plaatsen moeten worden gebruikt.
+Het [&#x200B; GraphiQL &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html?lang=nl-NL) hulpmiddel laat ontwikkelaars toe om vragen tegen inhoud op het huidige milieu van AEM tot stand te brengen en te testen. Het hulpmiddel GraphiQL laat ook gebruikers toe om **voort te zetten of** vragen te bewaren die door cliënttoepassingen in een productie het plaatsen moeten worden gebruikt.
 
 Verken vervolgens de kracht van de AEM GraphQL API met behulp van de ingebouwde GraphiQL IDE.
 
 1. Van het scherm van het Begin van AEM, navigeer aan **Hulpmiddelen** > **Algemeen** > **de Redacteur van de Vraag van GraphQL**.
 
-   ![ navigeer aan GrahiQL winde ](assets/explore-graphql-api/navigate-graphql-query-editor.png)
+   ![&#x200B; navigeer aan GrahiQL winde &#x200B;](assets/explore-graphql-api/navigate-graphql-query-editor.png)
 
    >[!NOTE]
    >
-   > In de oudere versies van AEM is GraphiQL IDE mogelijk niet ingebouwd. Het kan manueel na deze [ instructies ](#install-graphiql) worden geïnstalleerd.
+   > In de oudere versies van AEM is GraphiQL IDE mogelijk niet ingebouwd. Het kan manueel na deze [&#x200B; instructies &#x200B;](#install-graphiql) worden geïnstalleerd.
 
 1. In de hoger-juiste hoek, zorg ervoor dat het Eindpunt aan **Mijn Eindpunt van het Project** wordt geplaatst.
 
-   ![ plaats GraphQL Eindpunt ](assets/explore-graphql-api/set-my-project-endpoint.png)
+   ![&#x200B; plaats GraphQL Eindpunt &#x200B;](assets/explore-graphql-api/set-my-project-endpoint.png)
 
 Dit zal werkingsgebied alle vragen aan modellen die in het **Mijn project van het Project** worden gecreeerd.
 
@@ -102,15 +102,15 @@ Een algemene vereiste is om te zoeken naar meerdere inhoudsfragmenten.
 
 1. Druk de **knoop van het Spel** in het hoogste menu om de vraag uit te voeren. De resultaten van de inhoudsfragmenten uit het vorige hoofdstuk worden weergegeven:
 
-   ![ Resultaten van de Lijst van de Persoon ](assets/explore-graphql-api/all-teams-list.png)
+   ![&#x200B; Resultaten van de Lijst van de Persoon &#x200B;](assets/explore-graphql-api/all-teams-list.png)
 
 1. Plaats de curseur onder de `title` tekst en ga **CTRL+Space** in om coderingstips teweeg te brengen. Voeg `shortname` en `description` toe aan de query.
 
-   ![ Vraag van de Update met code het hiting ](assets/explore-graphql-api/update-query-codehinting.png)
+   ![&#x200B; Vraag van de Update met code het hiting &#x200B;](assets/explore-graphql-api/update-query-codehinting.png)
 
 1. Voer opnieuw de vraag uit door de **Spel** knoop te drukken en u zou moeten zien dat de resultaten de extra eigenschappen van `shortname` en `description` omvatten.
 
-   ![ kortere naam en beschrijvingsresultaten ](assets/explore-graphql-api/updated-query-shortname-description.png)
+   ![&#x200B; kortere naam en beschrijvingsresultaten &#x200B;](assets/explore-graphql-api/updated-query-shortname-description.png)
 
    `shortname` is een eenvoudige eigenschap en `description` is een tekstveld met meerdere regels en met de GraphQL API kunnen we verschillende indelingen kiezen voor de resultaten zoals `html` , `markdown` , `json` of `plaintext` .
 
@@ -214,9 +214,9 @@ Daarna, kijken hoe het mogelijk is om de resultaten aan een ondergroep van Inhou
 
 1. Voer de vraag uit, wordt het verwacht dat slechts **het Fragment van de Inhoud van de Personen** met een waarde van `John Doe` is teruggekeerd.
 
-   ![ de Variabelen van de Vraag van het Gebruik aan filter ](assets/explore-graphql-api/using-query-variables-filter.png)
+   ![&#x200B; de Variabelen van de Vraag van het Gebruik aan filter &#x200B;](assets/explore-graphql-api/using-query-variables-filter.png)
 
-   Er zijn vele andere opties voor het filtreren en het creëren van complexe vragen, zie [ Lerend om GraphQL met AEM te gebruiken - de Inhoud van de Steekproef en Vragen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html?lang=nl-NL).
+   Er zijn vele andere opties voor het filtreren en het creëren van complexe vragen, zie [&#x200B; Lerend om GraphQL met AEM te gebruiken - de Inhoud van de Steekproef en Vragen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html?lang=nl-NL).
 
 1. Verbeter bovenstaande query om profielafbeelding op te halen
 
@@ -280,7 +280,7 @@ Het is ook mogelijk rechtstreeks een query uit te voeren op één inhoudsfragmen
 
 ## Zoekopdrachten behouden {#persist-queries}
 
-Zodra een ontwikkelaar met de vraag en resultaatgegevens tevreden is die van de vraag zijn teruggekeerd, moet de volgende stap de vraag opslaan of voortzetten aan AEM. De [ Verlengde vragen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=nl-NL) zijn het aangewezen mechanisme om GraphQL API aan cliënttoepassingen bloot te stellen. Zodra een vraag is voortgeduurd, kan het worden gevraagd gebruikend een verzoek van GET en caching bij de lagen van Dispatcher en CDN. De prestaties van de gepresteerde vragen zijn veel beter. Naast prestatievoordelen zorgen permanente query&#39;s ervoor dat extra gegevens niet per ongeluk aan clienttoepassingen worden blootgesteld. Meer details over [ Verblijfsde vragen kunnen hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=nl-NL) worden gevonden.
+Zodra een ontwikkelaar met de vraag en resultaatgegevens tevreden is die van de vraag zijn teruggekeerd, moet de volgende stap de vraag opslaan of voortzetten aan AEM. De [&#x200B; Verlengde vragen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=nl-NL) zijn het aangewezen mechanisme om GraphQL API aan cliënttoepassingen bloot te stellen. Zodra een vraag is voortgeduurd, kan het worden gevraagd gebruikend een verzoek van GET en caching bij de lagen van Dispatcher en CDN. De prestaties van de gepresteerde vragen zijn veel beter. Naast prestatievoordelen zorgen permanente query&#39;s ervoor dat extra gegevens niet per ongeluk aan clienttoepassingen worden blootgesteld. Meer details over [&#x200B; Verblijfsde vragen kunnen hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=nl-NL) worden gevonden.
 
 Daarna, persisteert twee eenvoudige vragen, worden zij gebruikt in het volgende hoofdstuk.
 
@@ -311,10 +311,10 @@ Daarna, persisteert twee eenvoudige vragen, worden zij gebruikt in het volgende 
 
    De vraag zou onder **Verlengde Vragen** in het linkerspoor moeten worden getoond.
 
-   ![ Alle Teams bleef Vraag ](assets/explore-graphql-api/all-teams-persisted-query.png)
+   ![&#x200B; Alle Teams bleef Vraag &#x200B;](assets/explore-graphql-api/all-teams-persisted-query.png)
 1. Tik daarna de ellipsen **...** naast de blijvende vraag en tik **Exemplaar URL** om de weg aan uw klembord te kopiëren.
 
-   ![ de Persistente Vraag URL van het Exemplaar ](assets/explore-graphql-api/copy-persistent-query-url.png)
+   ![&#x200B; de Persistente Vraag URL van het Exemplaar &#x200B;](assets/explore-graphql-api/copy-persistent-query-url.png)
 
 1. Open een nieuw tabblad en plak het gekopieerde pad in uw browser:
 
@@ -369,7 +369,7 @@ Daarna, persisteert twee eenvoudige vragen, worden zij gebruikt in het volgende 
 1. Sla de query op als: `person-by-name`.
 1. Er moeten twee doorlopende query&#39;s worden opgeslagen:
 
-   ![ Definitief voortgeduurde vragen ](assets/explore-graphql-api/final-persisted-queries.png)
+   ![&#x200B; Definitief voortgeduurde vragen &#x200B;](assets/explore-graphql-api/final-persisted-queries.png)
 
 
 ## GraphQL-eindpunt en doorlopende query&#39;s publiceren
@@ -380,23 +380,23 @@ Publiceer na revisie en verificatie de `GraphQL Endpoint` &amp; `Persisted Queri
 
 1. Tik checkbox naast **Mijn Eindpunt van het Project** en tik **publiceren**
 
-   ![ publiceer GraphQL Eindpunt ](assets/explore-graphql-api/publish-graphql-endpoint.png)
+   ![&#x200B; publiceer GraphQL Eindpunt &#x200B;](assets/explore-graphql-api/publish-graphql-endpoint.png)
 
 1. Van het scherm van het Begin van AEM, navigeer aan **Hulpmiddelen** > **Algemeen** > **de Redacteur van de Vraag van GraphQL**
 
 1. Tik **alle-teams** vraag van het Persisted paneel van Vragen en de Tik **publiceer**
 
-   ![ publiceer Gepersiste Vragen ](assets/explore-graphql-api/publish-persisted-query.png)
+   ![&#x200B; publiceer Gepersiste Vragen &#x200B;](assets/explore-graphql-api/publish-persisted-query.png)
 
 1. Bovenste stap herhalen voor `person-by-name` -query
 
 ## Oplossingsbestanden {#solution-files}
 
-Download de inhoud, de modellen, en de voortgezette vragen die in de laatste drie hoofdstukken worden gecreeerd: [ basis-tutorial-solution.content.zip ](assets/explore-graphql-api/basic-tutorial-solution.content.zip)
+Download de inhoud, de modellen, en de voortgezette vragen die in de laatste drie hoofdstukken worden gecreeerd: [&#x200B; basis-tutorial-solution.content.zip &#x200B;](assets/explore-graphql-api/basic-tutorial-solution.content.zip)
 
 ## Aanvullende bronnen
 
-Leer meer over de vragen van GraphQL bij [ het Leren om GraphQL met AEM te gebruiken - de Inhoud en Vragen van de Steekproef ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html?lang=nl-NL).
+Leer meer over de vragen van GraphQL bij [&#x200B; het Leren om GraphQL met AEM te gebruiken - de Inhoud en Vragen van de Steekproef &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html?lang=nl-NL).
 
 ## Gefeliciteerd! {#congratulations}
 
@@ -404,9 +404,9 @@ U hebt verschillende GraphQL-query&#39;s gemaakt en uitgevoerd.
 
 ## Volgende stappen {#next-steps}
 
-In het volgende hoofdstuk, [ bouwt Reageren app ](./graphql-and-react-app.md), verkent u hoe een externe toepassing AEM eindpunten van GraphQL kan vragen en deze twee voortgeduurde vragen gebruiken. Er is ook een aantal standaardfoutafhandeling geïntroduceerd tijdens het uitvoeren van GraphQL-query&#39;s.
+In het volgende hoofdstuk, [&#x200B; bouwt Reageren app &#x200B;](./graphql-and-react-app.md), verkent u hoe een externe toepassing AEM eindpunten van GraphQL kan vragen en deze twee voortgeduurde vragen gebruiken. Er is ook een aantal standaardfoutafhandeling geïntroduceerd tijdens het uitvoeren van GraphQL-query&#39;s.
 
 ## GraphiQL installeren (optioneel) {#install-graphiql}
 
-In, moeten sommige versies van AEM (6.X.X) het hulpmiddel van winde GraphiQL manueel worden geïnstalleerd, gebruik de [ instructies van hier ](../how-to/install-graphiql-aem-6-5.md).
+In, moeten sommige versies van AEM (6.X.X) het hulpmiddel van winde GraphiQL manueel worden geïnstalleerd, gebruik de [&#x200B; instructies van hier &#x200B;](../how-to/install-graphiql-aem-6-5.md).
 

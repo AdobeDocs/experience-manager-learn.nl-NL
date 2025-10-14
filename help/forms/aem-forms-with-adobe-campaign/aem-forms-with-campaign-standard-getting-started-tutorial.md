@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # AEM Forms en Adobe Campaign Standard integreren
 
-![ formsandcampagne ](assets/helpx-cards-forms.png)
+![&#x200B; formsandcampagne &#x200B;](assets/helpx-cards-forms.png)
 
 Leer hoe u AEM Forms kunt integreren met Adobe Campaign Standard (ACS).
 
@@ -28,7 +28,7 @@ ACS heeft een rijke reeks blootgestelde API&#39;s die ACS om met de technologie 
 
 Om AEM Forms met ACS te integreren zult u de volgende stappen moeten volgen:
 
-* [ de toegang van opstelling API op uw instantie ACS.](https://experienceleague.adobe.com/docs/campaign-standard/using/working-with-apis/get-started-apis.html?lang=nl-NL)
+* [&#x200B; de toegang van opstelling API op uw instantie ACS.](https://experienceleague.adobe.com/docs/campaign-standard/using/working-with-apis/get-started-apis.html?lang=nl-NL)
 * JSON-webtoken maken.
 * Wisselt het Token van het Web JSON met de Dienst van Adobe Identity Management voor een Token van de Toegang.
 * Neem dit toegangstoken op in HTTP-header voor autorisatie, samen met de X-API-sleutel in elke aanvraag voor een ACS-instantie.
@@ -36,11 +36,11 @@ Om AEM Forms met ACS te integreren zult u de volgende stappen moeten volgen:
 Volg de volgende instructies om aan de slag te gaan
 
 * [Download en decomprimeer de middelen die aan deze zelfstudie zijn gekoppeld.](assets/aem-forms-and-acs-bundles.zip)
-* Stel de bundels op gebruikend [ het Webconsole van de Felix ](http://localhost:4502/system/console/bundles)
+* Stel de bundels op gebruikend [&#x200B; het Webconsole van de Felix &#x200B;](http://localhost:4502/system/console/bundles)
 * Geef de juiste instellingen op voor Adobe Campaign in Felix OSGI Configuration.
-* [ creeer een de dienstgebruiker zoals vermeld in dit artikel ](/help/forms/adaptive-forms/service-user-tutorial-develop.md). Zorg ervoor om de bundel OSGi op te stellen verbonden aan het artikel.
+* [&#x200B; creeer een de dienstgebruiker zoals vermeld in dit artikel &#x200B;](/help/forms/adaptive-forms/service-user-tutorial-develop.md). Zorg ervoor om de bundel OSGi op te stellen verbonden aan het artikel.
 * Sla de persoonlijke ACS-sleutel op in etc/key/campaign/private.key. U moet een map maken met de naam Campagne onder e.d./key.
-* [ verstrek gelezen toegang tot de campagnemap aan de de dienstgebruiker &quot;gegevens&quot;.](http://localhost:4502/useradmin)
+* [&#x200B; verstrek gelezen toegang tot de campagnemap aan de de dienstgebruiker &quot;gegevens&quot;.](http://localhost:4502/useradmin)
 
 ## Volgende stappen
 

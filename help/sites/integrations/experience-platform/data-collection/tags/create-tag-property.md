@@ -30,7 +30,7 @@ Leer hoe te om een bezit van de Markering met de kale-minimumconfiguratie tot st
 
 Voer de volgende stappen uit om een eigenschap Tag te maken.
 
-1. In browser, navigeer aan het [ Huis van Adobe Experience Cloud ](https://experience.adobe.com/) pagina en login gebruikend u Adobe ID.
+1. In browser, navigeer aan het [&#x200B; Huis van Adobe Experience Cloud &#x200B;](https://experience.adobe.com/) pagina en login gebruikend u Adobe ID.
 
 1. Klik de **toepassing van de Inzameling van 0&rbrace; Gegevens van de _Snelle toegang_ sectie van de Homepage van Adobe Experience Cloud.**
 
@@ -38,11 +38,11 @@ Voer de volgende stappen uit om een eigenschap Tag te maken.
 
 1. Noem uw bezit van de Markering gebruikend het **Naam** vereiste gebied. Voor het gebied van Domeinen, ga uw domeinnaam in of als het gebruiken van het milieu van AEM as a Cloud Service `adobeaemcloud.com` ingaat en **sparen** klikt.
 
-   ![ Eigenschappen van de Markering ](assets/tag-properties.png)
+   ![&#x200B; Eigenschappen van de Markering &#x200B;](assets/tag-properties.png)
 
 ## Een nieuwe regel maken
 
-Open het onlangs gecreeerde bezit van de Markering door zijn naam in de **mening van de Eigenschappen van de Markering** te klikken. Ook onder _Mijn Recente rubriek van de Activiteit_ zou u moeten zien dat de uitbreiding van de Kern aan het werd toegevoegd. De de markeringsuitbreiding van de Kern is de standaarduitbreiding en het verstrekt fundamentele gebeurtenistypen zoals pagina-lading, browser, vorm, en andere gebeurtenistypen, zie [ de uitbreidingsoverzicht van de Kern ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=nl-NL) voor meer informatie.
+Open het onlangs gecreeerde bezit van de Markering door zijn naam in de **mening van de Eigenschappen van de Markering** te klikken. Ook onder _Mijn Recente rubriek van de Activiteit_ zou u moeten zien dat de uitbreiding van de Kern aan het werd toegevoegd. De de markeringsuitbreiding van de Kern is de standaarduitbreiding en het verstrekt fundamentele gebeurtenistypen zoals pagina-lading, browser, vorm, en andere gebeurtenistypen, zie [&#x200B; de uitbreidingsoverzicht van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=nl-NL) voor meer informatie.
 
 Met regels kunt u opgeven wat er moet gebeuren als de bezoeker communiceert met uw AEM site. Om dingen eenvoudig te houden, laten wij twee berichten aan de browser console registreren om aan te tonen hoe de integratie van de Markering van de gegevensverzameling JavaScript code in uw AEM plaats kan injecteren zonder AEM de code van het Project bij te werken.
 
@@ -65,7 +65,7 @@ Voer de volgende stappen uit om een regel te maken.
 
 1. Klik **sparen** om het proces van de regelverwezenlijking te beëindigen.
 
-   ![ Nieuwe Regel ](assets/new-rule.png)
+   ![&#x200B; Nieuwe Regel &#x200B;](assets/new-rule.png)
 
 ## Bibliotheek toevoegen en publiceren
 
@@ -81,7 +81,7 @@ Het bezit van de Markering _Regels_ wordt geactiveerd gebruikend een bibliotheek
 
 1. Dan in **Voorgelegde** zwemweg gebruikend _ellipsen_ selecteer **goedkeuren voor het Publiceren**, eveneens **Bouwstijl &amp; Publish aan Productie** in **Goedgekeurde** zwemweg.
 
-![ Gepubliceerde bibliotheek ](assets/published-library.png)
+![&#x200B; Gepubliceerde bibliotheek &#x200B;](assets/published-library.png)
 
 
 Met de bovenstaande stap wordt het maken van de eenvoudige eigenschap Tag met een regel voltooid voor het vastleggen van een bericht aan de browserconsole wanneer de pagina wordt geladen. De regel- en kernextensie worden ook gepubliceerd door een bibliotheek te maken.
@@ -93,4 +93,4 @@ Met de bovenstaande stap wordt het maken van de eenvoudige eigenschap Tag met ee
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ creeer een Bezit van de Markering ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=nl-NL)
+* [&#x200B; creeer een Bezit van de Markering &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=nl-NL)

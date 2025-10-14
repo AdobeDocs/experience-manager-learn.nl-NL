@@ -20,7 +20,7 @@ ht-degree: 0%
 
 De workflowcomponent legt informatie over de pagina met de elementen vast, zoals paginasjabloon, componentbrontype en de basismap voor het opslaan van de gegenereerde pagina&#39;s.
 
-![ werkschema-component ](assets/workflow-component.png)
+![&#x200B; werkschema-component &#x200B;](assets/workflow-component.png)
 
 ## Implementatie van workflowproces
 

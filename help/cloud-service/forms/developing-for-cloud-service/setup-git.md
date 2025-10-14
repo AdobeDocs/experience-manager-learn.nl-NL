@@ -20,7 +20,7 @@ ht-degree: 0%
 # Installatiegit
 
 
-[ installeer Git ](https://git-scm.com/downloads). U kunt de standaardinstellingen selecteren en het installatieproces voltooien.
+[&#x200B; installeer Git &#x200B;](https://git-scm.com/downloads). U kunt de standaardinstellingen selecteren en het installatieproces voltooien.
 Ga naar de opdrachtprompt
 Ga naar c:\cloudmanager\aem-banking-app
 type in git —version. U moet de versie van de GIT zien die op uw systeem is geïnstalleerd
@@ -52,9 +52,9 @@ Hierdoor worden de bestanden toegewezen aan de git-opslagplaats
 ## Registreer de cloudbeheeropslagplaats bij onze lokale Git-opslagplaats
 
 Toegang tot het rapport van de cloud Manager
-![ toegang tot rep info ](assets/cloud-manager-repo.png)
+![&#x200B; toegang tot rep info &#x200B;](assets/cloud-manager-repo.png)
 Geef de repo-gegevens van de cloud Manager op
-![ get-credentials ](assets/cloud-manager-repo1.png)
+![&#x200B; get-credentials &#x200B;](assets/cloud-manager-repo1.png)
 
 De gebruikersnaam opslaan in het configuratiebestand
 

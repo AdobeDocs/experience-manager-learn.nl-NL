@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Leer hoe u op OpenAPI gebaseerde AEM API&#39;s op AEM as a Cloud Service oproept met gebruikersgebaseerde verificatie van een aangepaste webapp die gebruikmaakt van OAuth Web App.
 
-De authentificatie van de Toepassing van het Web OAuth is ideaal voor Webtoepassingen met vooruitstrevende en _achterste_ componenten die **toegang moeten hebben tot AEM APIs namens een gebruiker**. Het gebruikt OAuth 2.0 _authentication_code_ verlenen type om een toegangstoken namens de gebruiker te verkrijgen om tot AEM APIs toegang te hebben. Voor meer informatie, zie [ Verschil tussen Server-aan-Server van OAuth vs Web App geloofsbrieven van de Enige Pagina App ](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
+De authentificatie van de Toepassing van het Web OAuth is ideaal voor Webtoepassingen met vooruitstrevende en _achterste_ componenten die **toegang moeten hebben tot AEM APIs namens een gebruiker**. Het gebruikt OAuth 2.0 _authentication_code_ verlenen type om een toegangstoken namens de gebruiker te verkrijgen om tot AEM APIs toegang te hebben. Voor meer informatie, zie [&#x200B; Verschil tussen Server-aan-Server van OAuth vs Web App geloofsbrieven van de Enige Pagina App &#x200B;](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
 
 ## Wat u leert{#what-you-learn}
 
@@ -38,7 +38,7 @@ In deze zelfstudie leert u hoe u:
 
 Controleer voordat u begint het volgende:
 
-- [ Toegang hebbend tot Adobe APIs en verwante concepten ](../overview.md#accessing-adobe-apis-and-related-concepts) sectie.
+- [&#x200B; Toegang hebbend tot Adobe APIs en verwante concepten &#x200B;](../overview.md#accessing-adobe-apis-and-related-concepts) sectie.
 - [&#128279;](../setup.md) artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.
 
 ## Voorbeeld van een web-app: WKND-PIM-overzicht en functionele flow
@@ -54,7 +54,7 @@ Het Adobe Developer Console-project (ADC) is geconfigureerd voor toegang tot de 
 
 Het volgende diagram illustreert de functionele stroom van WKND-PIM Web app _die gebruikerspecifieke toegangstokens krijgt om met de Auteur API van Assets in wisselwerking te staan_.
 
-![ WKND-PIM Web App Flow ](../assets/web-app/wknd-pim-web-app-flow.png)
+![&#x200B; WKND-PIM Web App Flow &#x200B;](../assets/web-app/wknd-pim-web-app-flow.png)
 
 1. De webtoepassing start het proces door de gebruiker om te leiden naar het Adobe Identity Management System (IMS) voor verificatie.
 1. Samen met redirect, gaat Web app vereiste _client_id_ en _redirect_uri_ tot IMS over.
@@ -63,13 +63,13 @@ Het volgende diagram illustreert de functionele stroom van WKND-PIM Web app _die
 1. Op succesvolle bevestiging, geeft IMS het user-specific _toegangstoken_ uit.
 1. Webapp gebruikt veilig het _toegangstoken_ om met de Auteur API van Assets in wisselwerking te staan, toelatend de gebruiker om de meta-gegevens van de productactiva terug te winnen of bij te werken.
 
-WKND-PIM Web app wordt ontwikkeld gebruikend [ Node.js ](https://nodejs.org/en) en [ Uitdrukkelijke ](https://expressjs.com/). Express handelt als de server die veilig persoonlijke geheimen en gebruikerspecifieke toegangstokens beheert.
+WKND-PIM Web app wordt ontwikkeld gebruikend [&#x200B; Node.js &#x200B;](https://nodejs.org/en) en [&#x200B; Uitdrukkelijke &#x200B;](https://expressjs.com/). Express handelt als de server die veilig persoonlijke geheimen en gebruikerspecifieke toegangstokens beheert.
 
 Andere webstapels (Java, Python, .NET-gebaseerd, enz.) kunnen worden gebruikt om webtoepassingen te maken die integreren met de Adobe API&#39;s met behulp van de benaderingen die in deze zelfstudie worden geïllustreerd.
 
 ## Deze zelfstudie gebruiken{#how-to-use-this-tutorial}
 
-U kunt of [ het Web van het Overzicht app zeer belangrijke codefragmenten ](#review-web-app-key-code-snippets) sectie &lbrace;om de de authentificatiestroom van de App van het Web te begrijpen OAuth en API codefragmenten roepen die in WKND-PIM Web worden gebruikt app. Of ga direct aan de [ Opstelling te werk en Web app ](#setup-run-web-app) sectie in werking te stellen aan opstelling en WKND-PIM Web app op uw lokale machine in werking te stellen om de OAuth de authentificatiestroom van de App en API vraag te begrijpen.
+U kunt of [&#x200B; het Web van het Overzicht app zeer belangrijke codefragmenten &#x200B;](#review-web-app-key-code-snippets) sectie &lbrace;om de de authentificatiestroom van de App van het Web te begrijpen OAuth en API codefragmenten roepen die in WKND-PIM Web worden gebruikt app. Of ga direct aan de [&#x200B; Opstelling te werk en Web app &#x200B;](#setup-run-web-app) sectie in werking te stellen aan opstelling en WKND-PIM Web app op uw lokale machine in werking te stellen om de OAuth de authentificatiestroom van de App en API vraag te begrijpen.
 
 ## Codefragmenten voor webapps bekijken{#review-web-app-key-code-snippets}
 
@@ -77,7 +77,7 @@ Laten we de belangrijkste codefragmenten bekijken die worden gebruikt in de WKND
 
 ### De WKND-PIM-webtoepassingscode downloaden
 
-1. Download het [ WKND-PIM Web app ](../assets/web-app/wknd-pim-demo-web-app.zip) .zip dossier en haal het uit.
+1. Download het [&#x200B; WKND-PIM Web app &#x200B;](../assets/web-app/wknd-pim-demo-web-app.zip) .zip dossier en haal het uit.
 
 1. Navigeer naar de uitgepakte map en open het bestand `.env.example` in uw favoriete code-editor. Controleer de vereiste configuratieparameters.
 
@@ -120,7 +120,7 @@ Controleer de code waarmee de IMS-gebruikersverificatie en -toepassingsautorisat
 
 Bij de allereerste aanmeldingspoging moet de gebruiker toestemming geven om de WKND-PIM-webapp namens hem toegang te geven tot de Assets Author API.
 
-![ Eerste Login en Toestemming ](../assets/web-app/first-login-consent.png)
+![&#x200B; Eerste Login en Toestemming &#x200B;](../assets/web-app/first-login-consent.png)
 
 1. Het `routes/update-product-attributes.js` dossier verifieert als de 1&rbrace; Uitdrukkelijke zitting van de gebruiker [&#128279;](https://www.npmjs.com/package/express-session) een toegangstoken heeft.  Als dat niet het geval is, leidt het de gebruiker om naar de `/auth` route.
 
@@ -233,7 +233,7 @@ router.get("/callback", async (req, res) => {
 });
 ```
 
-Het toegangstoken wordt opgeslagen in de [ Uitdrukkelijke zitting ](https://www.npmjs.com/package/express-session) voor verdere verzoeken aan de Auteur API van Assets.
+Het toegangstoken wordt opgeslagen in de [&#x200B; Uitdrukkelijke zitting &#x200B;](https://www.npmjs.com/package/express-session) voor verdere verzoeken aan de Auteur API van Assets.
 
 ### Toegang krijgen tot AEM API&#39;s die zijn gebaseerd op OpenAPI met behulp van het toegangstoken
 
@@ -424,15 +424,15 @@ U hebt het volgende nodig om deze zelfstudie te voltooien:
    - AEM Release `2024.10.18459.20241031T210302Z` of hoger.
    - Nieuwe stijlproductprofielen (als de omgeving vóór november 2024 is gemaakt)
 
-  Zie [ opstelling op OpenAPI-Gebaseerde AEM APIs ](../setup.md) artikel voor meer details.
+  Zie [&#x200B; opstelling op OpenAPI-Gebaseerde AEM APIs &#x200B;](../setup.md) artikel voor meer details.
 
-- Het steekproef [ WKND ](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) project van Plaatsen moet op het worden opgesteld.
+- Het steekproef [&#x200B; WKND &#x200B;](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) project van Plaatsen moet op het worden opgesteld.
 
-- Toegang tot [ Adobe Developer Console ](https://developer.adobe.com/developer-console/docs/guides/getting-started).
+- Toegang tot [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/developer-console/docs/guides/getting-started).
 
-- Installeer [ Node.js ](https://nodejs.org/en/) op uw lokale machine om de toepassing van steekproefNodeJS in werking te stellen.
+- Installeer [&#x200B; Node.js &#x200B;](https://nodejs.org/en/) op uw lokale machine om de toepassing van steekproefNodeJS in werking te stellen.
 
-- Installeer a [ lokaal-ssl-volmacht ](https://www.npmjs.com/package/local-ssl-proxy#local-ssl-proxy) op uw lokale machine om een lokale SSL HTTP- volmacht tot stand te brengen gebruikend een zelf-ondertekend certificaat.
+- Installeer a [&#x200B; lokaal-ssl-volmacht &#x200B;](https://www.npmjs.com/package/local-ssl-proxy#local-ssl-proxy) op uw lokale machine om een lokale SSL HTTP- volmacht tot stand te brengen gebruikend een zelf-ondertekend certificaat.
 
 
 ### Ontwikkelingsstappen
@@ -449,61 +449,61 @@ De ontwikkelingsstappen op hoog niveau zijn:
 
 ### ADC-project configureren
 
-Vorm ADC de stap van het Project wordt _herhaald_ van [ OpenAPI-Gebaseerde AEM APIs van de Opstelling ](../setup.md). De methode wordt herhaald om de Assets-auteur-API toe te voegen en de verificatiemethode te configureren als OAuth Web App.
+Vorm ADC de stap van het Project wordt _herhaald_ van [&#x200B; OpenAPI-Gebaseerde AEM APIs van de Opstelling &#x200B;](../setup.md). De methode wordt herhaald om de Assets-auteur-API toe te voegen en de verificatiemethode te configureren als OAuth Web App.
 
-1. Van [ Adobe Developer Console ](https://developer.adobe.com/console/projects), open het gewenste project.
+1. Van [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/console/projects), open het gewenste project.
 
 1. Om AEM APIs toe te voegen, klik op **voeg API** knoop toe.
 
-   ![ voeg API ](../assets/s2s/add-api.png) toe
+   ![&#x200B; voeg API &#x200B;](../assets/s2s/add-api.png) toe
 
 1. In _voeg API_ dialoog toe, filter door _Experience Cloud_ en selecteer **de Auteur API van AEM Assets** kaart en klik **daarna**.
 
-   ![ voeg AEM API ](../assets/s2s/add-aem-api.png) toe
+   ![&#x200B; voeg AEM API &#x200B;](../assets/s2s/add-aem-api.png) toe
 
    >[!TIP]
    >
-   >Als de gewenste **AEM API kaart** wordt onbruikbaar gemaakt en _waarom is dit gehandicapt?_ de informatie toont het **Vereiste Vergunning** bericht één van de redenen zou kunnen zijn dat u uw milieu van AEM as a Cloud Service NIET hebt gemoderniseerd, zie [ Modernisering van het milieu van AEM as a Cloud Service ](../setup.md#modernization-of-aem-as-a-cloud-service-environment) voor meer informatie.
+   >Als de gewenste **AEM API kaart** wordt onbruikbaar gemaakt en _waarom is dit gehandicapt?_ de informatie toont het **Vereiste Vergunning** bericht één van de redenen zou kunnen zijn dat u uw milieu van AEM as a Cloud Service NIET hebt gemoderniseerd, zie [&#x200B; Modernisering van het milieu van AEM as a Cloud Service &#x200B;](../setup.md#modernization-of-aem-as-a-cloud-service-environment) voor meer informatie.
 
 1. Daarna, in _vorm API_ dialoog, selecteer de **3&rbrace; authentificatieoptie van de Authentificatie van de Gebruiker &lbrace;en klik** daarna **.**
 
-   ![ vorm AEM API ](../assets/web-app/configure-aem-api.png)
+   ![&#x200B; vorm AEM API &#x200B;](../assets/web-app/configure-aem-api.png)
 
 1. In volgende _vorm API_ dialoog, selecteer de **OAuth de authentificatieoptie van de Toepassing van het Web** en klik **daarna**.
 
-   ![ vorm OAuth Web App ](../assets/web-app/configure-oauth-web-app.png)
+   ![&#x200B; vorm OAuth Web App &#x200B;](../assets/web-app/configure-oauth-web-app.png)
 
 1. In _vorm OAuth Web App_ dialoog, ga de volgende details in en klik **daarna**.
    - Standaard omleidings-URI: `https://localhost:3001/callback`
    - URI-patroon omleiden: `https://localhost:3001/callback`
 
-   ![ vorm OAuth Web App ](../assets/web-app/configure-oauth-web-app-details.png)
+   ![&#x200B; vorm OAuth Web App &#x200B;](../assets/web-app/configure-oauth-web-app-details.png)
 
 1. Herzie het beschikbare werkingsgebied en klik **sparen gevormde API**.
 
-   ![ sparen gevormde API ](../assets/web-app/save-configured-api.png)
+   ![&#x200B; sparen gevormde API &#x200B;](../assets/web-app/save-configured-api.png)
 
 1. Controleer de AEM API- en verificatieconfiguratie.
 
-   ![ de configuratie van AEM API ](../assets/web-app/aem-api-configuration.png)
+   ![&#x200B; de configuratie van AEM API &#x200B;](../assets/web-app/aem-api-configuration.png)
 
-   ![ configuratie van de Authentificatie ](../assets/web-app/authentication-configuration.png)
+   ![&#x200B; configuratie van de Authentificatie &#x200B;](../assets/web-app/authentication-configuration.png)
 
 ### AEM-instantie configureren om ADC-projectcommunicatie in te schakelen
 
-Volg de instructies van het [ op OpenAPI-Gebaseerde artikel van AEM APIs van de Opstelling ](../setup.md#configure-the-aem-instance-to-enable-adc-project-communication) om de instantie van AEM te vormen om de mededeling van het Project van ADC toe te laten.
+Volg de instructies van het [&#x200B; op OpenAPI-Gebaseerde artikel van AEM APIs van de Opstelling &#x200B;](../setup.md#configure-the-aem-instance-to-enable-adc-project-communication) om de instantie van AEM te vormen om de mededeling van het Project van ADC toe te laten.
 
 ### Metagegevensschema voor elementen maken en toepassen
 
 Door gebrek, heeft het project van Plaatsen WKND niet het vereiste schema van activa meta-gegevens om de productattributen te tonen. Laten we het metagegevensschema voor elementen maken en toepassen op een elementenmap in de AEM-instantie.
 
-1. Meld u aan bij de AEM as a Cloud Service Asset-instantie. Gebruikend de [ mening van Activa ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/authoring/switch-views) navigeert aan de `/content/dam/wknd-shared/en` omslag.
+1. Meld u aan bij de AEM as a Cloud Service Asset-instantie. Gebruikend de [&#x200B; mening van Activa &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/authoring/switch-views) navigeert aan de `/content/dam/wknd-shared/en` omslag.
 
-   ![ ga aan omslag ](../assets/web-app/navigate-to-folder.png)
+   ![&#x200B; ga aan omslag &#x200B;](../assets/web-app/navigate-to-folder.png)
 
-1. Creeer a **PIM** en binnen het leiden tot de **Camping** omslag, dan uploadt [ steekproefbeelden ](../assets/web-app/camping-gear-imgs.zip) in de **Camping** omslag.
+1. Creeer a **PIM** en binnen het leiden tot de **Camping** omslag, dan uploadt [&#x200B; steekproefbeelden &#x200B;](../assets/web-app/camping-gear-imgs.zip) in de **Camping** omslag.
 
-   ![ Omslag PIM ](../assets/web-app/pim-folder.png)
+   ![&#x200B; Omslag PIM &#x200B;](../assets/web-app/pim-folder.png)
 
 Daarna, creeer de attributen PIM specifiek meta-gegevensschema en pas het op de **PIM** omslag toe.
 
@@ -514,11 +514,11 @@ Daarna, creeer de attributen PIM specifiek meta-gegevensschema en pas het op de 
    - Bestaande formulierstructuur als sjabloon gebruiken: `Check`
    - Kiezen uit: `default`
 
-   ![ creeer de Vorm van Meta-gegevens ](../assets/web-app/create-metadata-form.png)
+   ![&#x200B; creeer de Vorm van Meta-gegevens &#x200B;](../assets/web-app/create-metadata-form.png)
 
 1. Klik het **+** pictogram om een nieuw **PIM** lusje toe te voegen en **Enige Tekst van de Lijn** componenten aan het toe te voegen. De namen van de metagegevenseigenschappen moeten beginnen met het voorvoegsel `pim:` .
 
-   ![ voeg PIM Lusje ](../assets/web-app/add-pim-tab.png) toe
+   ![&#x200B; voeg PIM Lusje &#x200B;](../assets/web-app/add-pim-tab.png) toe
 
    | Label | Plaatsaanduiding | Eigenschap Metadata |
    | --- | --- | --- |
@@ -533,13 +533,13 @@ Daarna, creeer de attributen PIM specifiek meta-gegevensschema en pas het op de 
 
 1. Tot slot pas het **PIM** meta-gegevensschema op de **PIM** omslag toe.
 
-   ![ pas het Schema van Meta-gegevens ](../assets/web-app/apply-metadata-schema.png) toe
+   ![&#x200B; pas het Schema van Meta-gegevens &#x200B;](../assets/web-app/apply-metadata-schema.png) toe
 
 Met de bovengenoemde stappen, zijn de activa van de **PIM** omslag klaar om de meta-gegevens van productattributen op te slaan.
 
 ### De WKND-PIM-webapp configureren en uitvoeren
 
-1. Download het [ WKND-PIM Web app ](../assets/web-app/wknd-pim-demo-web-app.zip) .zip dossier en haal het uit.
+1. Download het [&#x200B; WKND-PIM Web app &#x200B;](../assets/web-app/wknd-pim-demo-web-app.zip) .zip dossier en haal het uit.
 
 1. Navigeer naar de uitgepakte map en kopieer het `.env.example` -bestand naar `.env` .
 
@@ -577,7 +577,7 @@ Met de bovengenoemde stappen, zijn de activa van de **PIM** omslag klaar om de m
    EXPRESS_SESSION_SECRET=1234554321
    ```
 
-   `AEM_ASSET_IDS` is de `jcr:uuid` bezitswaarde van de geüploade beelden in de **3&rbrace; omslag van de Camping.** Verwijs naar deze [ sectie ](./invoke-api-using-oauth-s2s.md#review-the-api) voor meer details.
+   `AEM_ASSET_IDS` is de `jcr:uuid` bezitswaarde van de geüploade beelden in de **3&rbrace; omslag van de Camping.** Verwijs naar deze [&#x200B; sectie &#x200B;](./invoke-api-using-oauth-s2s.md#review-the-api) voor meer details.
 
 1. Open een terminal en navigeer naar de uitgepakte map. Installeer de vereiste gebiedsdelen gebruikend het volgende bevel.
 
@@ -603,7 +603,7 @@ Met de bovengenoemde stappen, zijn de activa van de **PIM** omslag klaar om de m
 
 1. Open een browser en navigeer naar `https://localhost:3001` om toegang te krijgen tot de WKND-PIM-webapp. Accepteer de zelfondertekende certificaatwaarschuwing.
 
-   ![ WKND-PIM Web App ](../assets/web-app/wknd-pim-web-app.png)
+   ![&#x200B; WKND-PIM Web App &#x200B;](../assets/web-app/wknd-pim-web-app.png)
 
 1. Klik **probeert nu** om de meta-gegevens van productattributen te herzien en bij te werken. De IMS-gebruikersverificatie en de autorisatiestroom van toepassingen worden gestart.
 
@@ -611,11 +611,11 @@ Met de bovengenoemde stappen, zijn de activa van de **PIM** omslag klaar om de m
 
 1. Van de `https://localhost:3001/update-product-attributes` route/pagina, klik de **Attributen van het Activum van AEM** tabel. Van **identiteitskaart van Activa** dropdown, selecteer een identiteitskaart van Activa om de activa meta-gegevens te bekijken.
 
-   ![ krijgt Metagegevens van Activa ](../assets/web-app/get-asset-metadata.png)
+   ![&#x200B; krijgt Metagegevens van Activa &#x200B;](../assets/web-app/get-asset-metadata.png)
 
 1. Werk de activameta-gegevens bij en klik **de Attributen van het Activum van AEM** bijwerken om de activa meta-gegevens bij te werken.
 
-   ![ Metagegevens van Activa van de Update ](../assets/web-app/update-asset-metadata.png)
+   ![&#x200B; Metagegevens van Activa van de Update &#x200B;](../assets/web-app/update-asset-metadata.png)
 
 >[!IMPORTANT]
 >
@@ -652,7 +652,7 @@ U kunt de zelfstudie gebruiken als referentie om de op OpenAPI gebaseerde AEM AP
 
 ## Aanvullende bronnen
 
-- [ Gids van de Implementatie van de Authentificatie van de Gebruiker ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation)
-- [ machtigt Verzoek ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/ims#authorize-request)
-- [ het Ophalen tokens van de Toegang ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/ims#fetching-access-tokens)
-- [ het Verfrissen van de tokens van de Toegang ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/ims#refreshing-access-tokens)
+- [&#x200B; Gids van de Implementatie van de Authentificatie van de Gebruiker &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation)
+- [&#x200B; machtigt Verzoek &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/ims#authorize-request)
+- [&#x200B; het Ophalen tokens van de Toegang &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/ims#fetching-access-tokens)
+- [&#x200B; het Verfrissen van de tokens van de Toegang &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/ims#refreshing-access-tokens)

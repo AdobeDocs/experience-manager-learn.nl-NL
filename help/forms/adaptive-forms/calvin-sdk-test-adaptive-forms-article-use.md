@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Automatisch testen van Adaptive Forms met Calvin SDK
 
-Calvin SDK is een hulpprogramma-API waarmee ontwikkelaars van Adaptive Forms Adaptive Forms kunnen testen. Calvin SDK wordt gebouwd bovenop het [ Hobbes.js testende kader ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL). Calvin SDK is verkrijgbaar met AEM Forms 6.3 en hoger.
+Calvin SDK is een hulpprogramma-API waarmee ontwikkelaars van Adaptive Forms Adaptive Forms kunnen testen. Calvin SDK wordt gebouwd bovenop het [&#x200B; Hobbes.js testende kader &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL). Calvin SDK is verkrijgbaar met AEM Forms 6.3 en hoger.
 
 In deze zelfstudie maakt u het volgende:
 
@@ -31,7 +31,7 @@ In deze zelfstudie maakt u het volgende:
 
 ## Aan de slag {#getting-started}
 
-[ Download en installeer Assets gebruikend de Manager van het Pakket ](assets/testingadaptiveformsusingcalvinsdk1.zip) Het pakket bevat steekproefmanuscripten en verscheidene Adaptieve Forms.Deze Aangepaste Forms wordt gebouwd gebruikend versie AEM Forms 6.3. Het wordt aanbevolen nieuwe formulieren te maken die specifiek zijn voor uw versie van AEM Forms als u deze test op AEM Forms 6.4 of hoger. De voorbeeldscripts tonen aan dat er verschillende Calvin SDK API&#39;s beschikbaar zijn om Adaptive Forms te testen. De algemene stappen voor het testen van AEM Adaptive Forms zijn:
+[&#x200B; Download en installeer Assets gebruikend de Manager van het Pakket &#x200B;](assets/testingadaptiveformsusingcalvinsdk1.zip) Het pakket bevat steekproefmanuscripten en verscheidene Adaptieve Forms.Deze Aangepaste Forms wordt gebouwd gebruikend versie AEM Forms 6.3. Het wordt aanbevolen nieuwe formulieren te maken die specifiek zijn voor uw versie van AEM Forms als u deze test op AEM Forms 6.4 of hoger. De voorbeeldscripts tonen aan dat er verschillende Calvin SDK API&#39;s beschikbaar zijn om Adaptive Forms te testen. De algemene stappen voor het testen van AEM Adaptive Forms zijn:
 
 * Navigeer naar het formulier dat u wilt testen
 * Waarde van veld instellen
@@ -78,9 +78,9 @@ Testgevallen kunnen worden toegevoegd aan een testsuite die kan worden uitgevoer
 
 ## De geautomatiseerde tests uitvoeren {#running-the-automated-tests}
 
-[ Openthetestsuite ](http://localhost:4502/libs/granite/testing/hobbes.html) breidt de Reeks van de Test uit en stelt de tests in werking. Als alles goed werkt, ziet u de volgende uitvoer.
+[&#x200B; Openthetestsuite &#x200B;](http://localhost:4502/libs/granite/testing/hobbes.html) breidt de Reeks van de Test uit en stelt de tests in werking. Als alles goed werkt, ziet u de volgende uitvoer.
 
-![ calvinsdk ](assets/calvinimage.png)
+![&#x200B; calvinsdk &#x200B;](assets/calvinimage.png)
 
 ## Probeer de testsuites van het monster uit {#try-out-the-sample-test-suites}
 

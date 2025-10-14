@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Leer hoe u de HTTP-respons in de cache kunt leegmaken of verwijderen uit de AEM as a Cloud Service CDN. Gebruikend de zelfbediening eigenschap genoemd **zuiveren API Token**, kunt u het geheime voorgeheugen voor een specifiek middel, een groep middelen, en het volledige geheime voorgeheugen ontruimen.
 
-In dit leerprogramma, leert u hoe te opstelling en de Schrapping API Token te gebruiken om het CDN geheime voorgeheugen van de steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) plaats te zuiveren gebruikend de zelfbediening eigenschap.
+In dit leerprogramma, leert u hoe te opstelling en de Schrapping API Token te gebruiken om het CDN geheime voorgeheugen van de steekproef [&#x200B; AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) plaats te zuiveren gebruikend de zelfbediening eigenschap.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3436934?quality=12&learn=on&captions=dut)
 
@@ -77,11 +77,11 @@ In de bovenstaande regel worden zowel `purgeKey1` als `purgeKey2` vanaf het begi
 
 Maak vervolgens de Cloud Manager-omgevingsvariabelen om de waarde van het token voor de zuiverings-API op te slaan.
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert uw organisatie en programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteert uw organisatie en programma.
 
 1. In de __sectie van Milieu&#39;s__, klik de **ellipsen** (...) naast het gewenste milieu en selecteer **Details van de Mening**.
 
-   ![ Details van de Mening ](../assets/how-to/view-env-details.png)
+   ![&#x200B; Details van de Mening &#x200B;](../assets/how-to/view-env-details.png)
 
 1. Dan selecteer het **lusje van de Configuratie** en klik **voeg Configuratie** knoop toe.
 
@@ -92,7 +92,7 @@ Maak vervolgens de Cloud Manager-omgevingsvariabelen om de waarde van het token 
    - **Type**: Selecteer de **Geheime** optie.
    - Klik **toevoegen** knoop.
 
-   ![ voeg Variabele ](../assets/how-to/add-cloud-manager-secrete-variable.png) toe
+   ![&#x200B; voeg Variabele &#x200B;](../assets/how-to/add-cloud-manager-secrete-variable.png) toe
 
 1. Herhaal bovenstaande stappen om de tweede omgevingsvariabele voor de `purgeKey2` -waarde te maken.
 
@@ -104,11 +104,11 @@ Tot slot stel de gevormde CDN regel aan het milieu van AEM as a Cloud Service op
 
 1. In Cloud Manager, navigeer aan de **sectie van de Pijpleidingen**.
 
-1. Creeer een nieuwe pijpleiding of selecteer de bestaande pijpleiding die slechts de **Config** dossiers opstelt. Voor gedetailleerde stappen, zie [ een config pijpleiding ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager) creëren.
+1. Creeer een nieuwe pijpleiding of selecteer de bestaande pijpleiding die slechts de **Config** dossiers opstelt. Voor gedetailleerde stappen, zie [&#x200B; een config pijpleiding &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager) creëren.
 
 1. Klik de **looppas** knoop om de CDN regel op te stellen.
 
-   ![ Looppas Pijpleiding ](../assets/how-to/run-config-pipeline.png)
+   ![&#x200B; Looppas Pijpleiding &#x200B;](../assets/how-to/run-config-pipeline.png)
 
 ## De token voor de wisse-API gebruiken
 
@@ -159,7 +159,7 @@ Na het leegmaken wordt een `200 OK` reactie geretourneerd met JSON-inhoud.
 
 ### De cache leegmaken voor een groep bronnen
 
-In dit voorbeeld leegt de opdracht `curl` de cache voor de groep met bronnen met de vervangende sleutel `wknd-assets` . De `Surrogate-Key` reactiekopbal wordt geplaatst in [`wknd.vhost` ](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L176), bijvoorbeeld:
+In dit voorbeeld leegt de opdracht `curl` de cache voor de groep met bronnen met de vervangende sleutel `wknd-assets` . De `Surrogate-Key` reactiekopbal wordt geplaatst in [`wknd.vhost` &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L176), bijvoorbeeld:
 
 ```http
 <VirtualHost *:80>
@@ -210,4 +210,4 @@ Na het leegmaken wordt een `200 OK` reactie geretourneerd met JSON-inhoud.
 
 Als u het leegmaken van de cache wilt controleren, opent u de URL van de bron in de webbrowser en bekijkt u de antwoordheaders. De headerwaarde `X-Cache` moet `MISS` zijn.
 
-![ x-Cacheheader ](../assets/how-to/x-cache-miss.png)
+![&#x200B; x-Cacheheader &#x200B;](../assets/how-to/x-cache-miss.png)

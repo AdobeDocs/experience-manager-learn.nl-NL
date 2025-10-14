@@ -23,14 +23,14 @@ Het formuliergegevensmodel kan worden gebaseerd op RDBMS-, RESTfull-, SOAP- of O
 
 * **newhire** lijst - Deze lijst slaat de nieuwe informatie op
 
-  ![ newhire ](assets/newhire-table.png)
+  ![&#x200B; newhire &#x200B;](assets/newhire-table.png)
 
 
 * **begunstigden** lijst - dit slaat willekeurige begunstigden op
 
-  ![ begunstigden ](assets/beneficiaries-table.png)
+  ![&#x200B; begunstigden &#x200B;](assets/beneficiaries-table.png)
 
-U kunt het [ sql- dossier ](assets/db-schema.sql) invoeren gebruikend werkbank MySQL om aan lijsten met sommige steekproefgegevens tot stand te brengen.
+U kunt het [&#x200B; sql- dossier &#x200B;](assets/db-schema.sql) invoeren gebruikend werkbank MySQL om aan lijsten met sommige steekproefgegevens tot stand te brengen.
 
 ## Volgende stappen
 

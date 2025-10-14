@@ -28,7 +28,7 @@ Het indexbevel van [!DNL oak-run.jar] consolideert een aantal eigenschappen om [
 
 >[!VIDEO](https://video.tv.adobe.com/v/21475?quality=12&learn=on)
 
-* De gebruikte versie van [[!DNL oak-run.jar] ](https://repository.apache.org/service/local/artifact/maven/redirect?r=releases&amp;g=org.apache.jackrabbit&amp;a=oak-run&amp;v=1.8.0) moet de versie van Oak aanpassen die op de instantie van AEM wordt gebruikt.
+* De gebruikte versie van [[!DNL oak-run.jar] &#x200B;](https://repository.apache.org/service/local/artifact/maven/redirect?r=releases&g=org.apache.jackrabbit&a=oak-run&v=1.8.0) moet de versie van Oak aanpassen die op de instantie van AEM wordt gebruikt.
 * Als u indexen beheert met [!DNL oak-run.jar], gebruikt u de opdracht **[!DNL index]** met verschillende markeringen om verschillende bewerkingen te ondersteunen.
 
    * `java -jar oak-run*.jar index ...`
@@ -74,7 +74,7 @@ Het indexbevel van [!DNL oak-run.jar] consolideert een aantal eigenschappen om [
 * Deze indexering hoeft alleen te worden uitgevoerd voor één AEM-instantie in de cluster.
 * Het online indexeren van [!DNL MongoMK] kan veilig worden uitgevoerd in combinatie met een actief AEM-cluster, aangezien de dataopslag slechts op één [!DNL MongoDB] -knooppunt wordt doorlopen, zodat de andere knooppunten aanvragen kunnen blijven doorgeven zonder dat dit van invloed is op de prestaties.
 
-Het [!DNL oak-run.jar] indexbevel om online het indexeren van [!DNL MongoMK] uit te voeren is het [ zelfde als  [!DNL TarMK]  Online het indexeren met  [!DNL oak-run.jar]](#tarmkonlineindexingwithoakrunjar) met het verschil dat de parameter van de segmentopslag aan de [!DNL MongoDB] instantie richt die de opslag van de Knoop bevat.
+Het [!DNL oak-run.jar] indexbevel om online het indexeren van [!DNL MongoMK] uit te voeren is het [&#x200B; zelfde als  [!DNL TarMK]  Online het indexeren met  [!DNL oak-run.jar]](#tarmkonlineindexingwithoakrunjar) met het verschil dat de parameter van de segmentopslag aan de [!DNL MongoDB] instantie richt die de opslag van de Knoop bevat.
 
 ```
 java -jar oak-run*.jar index
@@ -86,6 +86,6 @@ java -jar oak-run*.jar index
 
 ## Ondersteunende materialen
 
-* [ Download  [!DNL oak-run.jar] ](https://repository.apache.org/#nexus-search;gav~org.apache.jackrabbit~oak-run~~~~kw,versionexpand)
+* [&#x200B; Download  [!DNL oak-run.jar] &#x200B;](https://repository.apache.org/#nexus-search;gav~org.apache.jackrabbit~oak-run~~~~kw,versionexpand)
    * *verzeker de gedownloade versie de versie van Oak aanpast die op AEM zoals hierboven beschreven wordt geïnstalleerd*
-* [ Apache Jackrabbit Oak oak-run.jar de Documentatie van het Bevel van de Index ](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html)
+* [&#x200B; Apache Jackrabbit Oak oak-run.jar de Documentatie van het Bevel van de Index &#x200B;](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html)

@@ -47,7 +47,7 @@ Maak een bestand met de naam .content.xml onder het svg-knooppunt. Voeg de volge
 
 ## SVG.html maken
 
-Maak het bestand svg.html. Dit dossier zal SVG van de V.S. map.Copy de inhoud van [ svg.html ](assets/svg.html) in het pas gecreëerde dossier teruggeven. Wat je hebt gekopieerd, is de kaart van SVG of USA. Sla het bestand op.
+Maak het bestand svg.html. Dit dossier zal SVG van de V.S. map.Copy de inhoud van [&#x200B; svg.html &#x200B;](assets/svg.html) in het pas gecreëerde dossier teruggeven. Wat je hebt gekopieerd, is de kaart van SVG of USA. Sla het bestand op.
 
 ## Het project implementeren
 
@@ -61,4 +61,4 @@ mvn clean install -PautoInstallSinglePackage
 
 Hiermee wordt het project geïmplementeerd op uw lokale AEM Forms-instantie en is de component beschikbaar voor opname in uw adaptieve formulier
 
-![ usa-kaart ](./assets/usa-map.png)
+![&#x200B; usa-kaart &#x200B;](./assets/usa-map.png)

@@ -30,7 +30,7 @@ CRXDE Lite is een webinterface voor interactie met de gegevensopslagruimte van d
 CRXDE Lite bevindt zich in:
 
 + Gereedschappen > Algemeen > CRXDE Lite
-+ of direct bij [ http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
++ of direct bij [&#x200B; http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
 
 ### Fouten opsporen in inhoud
 
@@ -42,7 +42,7 @@ CRXDE Lite biedt directe toegang tot het JCR. De inhoud die via CRXDE Lite zicht
 + Als u dubbelklikt op een bestandsknooppunt in de linkernavigatie, wordt de inhoud van het bestand geopend in het rechterbovenvenster
 + Tik op de knop Alles opslaan linksboven om de wijzigingen te handhaven of op de pijl omlaag naast Alles opslaan om alle niet-opgeslagen wijzigingen te herstellen.
 
-![ CRXDE Lite - het Zuiveren Inhoud ](./assets/other-tools/crxde-lite__debugging-content.png)
+![&#x200B; CRXDE Lite - het Zuiveren Inhoud &#x200B;](./assets/other-tools/crxde-lite__debugging-content.png)
 
 Wijzigingen die rechtstreeks via CRXDE Lite in AEM SDK worden aangebracht, kunnen moeilijk te volgen en te besturen zijn. Indien nodig zorgt u ervoor dat wijzigingen die via CRXDE Lite zijn aangebracht, terugkeren naar de verwisselbare inhoudspakketten van het AEM-project (`ui.content`) en doorvoeren in Git. In het ideale geval komen alle wijzigingen in de toepassingsinhoud van de basis van de code en gaan deze via implementaties naar AEM SDK, in plaats van rechtstreeks wijzigingen aan te brengen in de AEM SDK via CRXDE Lite.
 
@@ -54,7 +54,7 @@ Ga naar:
 
 + CRXDE Lite > Extra > Toegangsbeheer testen...
 
-![ CRXDE Lite - de Controle van de Toegang van de Test ](./assets/other-tools/crxde-lite__test-access-control.png)
+![&#x200B; CRXDE Lite - de Controle van de Toegang van de Test &#x200B;](./assets/other-tools/crxde-lite__test-access-control.png)
 
 1. Selecteer in het veld Pad een JCR-pad dat u wilt evalueren
 1. Selecteer in het veld Hoofd de gebruiker of de groep aan de hand waarvan u het pad wilt beoordelen
@@ -70,21 +70,21 @@ De resultaten worden hieronder weergegeven:
 
 ## Query uitvoeren
 
-![ verklaart Vraag ](./assets/other-tools/explain-query.png)
+![&#x200B; verklaart Vraag &#x200B;](./assets/other-tools/explain-query.png)
 
 Verklaar het Web-based hulpmiddel van de Vraag in AEM SDK lokale quickstart, die zeer belangrijke inzichten in verstrekt hoe AEM interpreteert en vragen uitvoert, en een onschatbaar hulpmiddel om ervoor te zorgen vragen op een prestatieswijze door AEM worden uitgevoerd.
 
 Verklaar de Vraag wordt gevestigd bij:
 
 + Gereedschappen > Diagnose > Query-prestaties > Het tabblad Query uitvoeren
-+ [ http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) > verklaart het lusje van de Vraag
++ [&#x200B; http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html &#x200B;](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) > verklaart het lusje van de Vraag
 
 ## QueryBuilder-foutopsporing
 
-![ Foutopsporing QueryBuilder ](./assets/other-tools/query-debugger.png)
+![&#x200B; Foutopsporing QueryBuilder &#x200B;](./assets/other-tools/query-debugger.png)
 
-Foutopsporing van QueryBuilder is web-based hulpmiddel dat u helpt onderzoeksvragen zuiveren en begrijpen gebruikend de syntaxis van AEM [ QueryBuilder ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=nl-NL).
+Foutopsporing van QueryBuilder is web-based hulpmiddel dat u helpt onderzoeksvragen zuiveren en begrijpen gebruikend de syntaxis van AEM [&#x200B; QueryBuilder &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=nl-NL).
 
 Foutopsporing van QueryBuilder bevindt zich in:
 
-+ [ http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
++ [&#x200B; http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)

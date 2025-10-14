@@ -32,16 +32,16 @@ Zorg ervoor dat het volgende is geïnstalleerd voordat u deze zelfstudie gaat vo
 
 1. Toegang tot de omgeving van am AEM as a Cloud Service (bij voorkeur een ontwikkelomgeving of een Sandbox-programma)
 1. Lidmaatschap in AEM Administrator Product Profile van de AEM as a Cloud Service-omgeving
-1. Lidmaatschap in, of toegang, tot uw Beheerder van IMS van Adobe (zij zullen een eenmalige initialisering van de [ Referenties van de Dienst ](./service-credentials.md) moeten uitvoeren)
-1. De recentste [ plaats WKND ](https://github.com/adobe/aem-guides-wknd) die aan uw milieu van Cloud Service wordt opgesteld
+1. Lidmaatschap in, of toegang, tot uw Beheerder van IMS van Adobe (zij zullen een eenmalige initialisering van de [&#x200B; Referenties van de Dienst &#x200B;](./service-credentials.md) moeten uitvoeren)
+1. De recentste [&#x200B; plaats WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) die aan uw milieu van Cloud Service wordt opgesteld
 
 ## Overzicht van externe toepassing
 
-Dit leerprogramma gebruikt a [ eenvoudige toepassing Node.js ](./assets/aem-guides_token-authentication-external-application.zip) looppas van de bevellijn om activa meta-gegevens op AEM as a Cloud Service bij te werken gebruikend [ HTTP API van Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=nl-NL).
+Dit leerprogramma gebruikt a [&#x200B; eenvoudige toepassing Node.js &#x200B;](./assets/aem-guides_token-authentication-external-application.zip) looppas van de bevellijn om activa meta-gegevens op AEM as a Cloud Service bij te werken gebruikend [&#x200B; HTTP API van Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=nl-NL).
 
 De uitvoeringsstroom van de toepassing Node.js is als volgt:
 
-![ Externe Toepassing ](./assets/overview/external-application.png)
+![&#x200B; Externe Toepassing &#x200B;](./assets/overview/external-application.png)
 
 1. De toepassing Node.js wordt aangeroepen vanaf de opdrachtregel
 1. Parameters voor opdrachtregel definiëren:
@@ -73,5 +73,5 @@ De geloofsbrieven van de dienst zijn de bonafide geloofsbrieven die in om het ev
 
 + [De voorbeeldtoepassing downloaden](./assets/aem-guides_token-authentication-external-application.zip)
 + Andere codevoorbeelden van JWT maken en uitwisselen
-   + [ Node.js, Java, Python, C#.NET, en PHP codesteekproeven ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples)
-   + [ JavaScript/Axios-Gebaseerde codesteekproef ](https://github.com/adobe/aemcs-api-client-lib)
+   + [&#x200B; Node.js, Java, Python, C#.NET, en PHP codesteekproeven &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples)
+   + [&#x200B; JavaScript/Axios-Gebaseerde codesteekproef &#x200B;](https://github.com/adobe/aemcs-api-client-lib)

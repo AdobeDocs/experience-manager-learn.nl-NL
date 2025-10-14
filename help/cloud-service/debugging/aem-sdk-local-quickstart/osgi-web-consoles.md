@@ -32,7 +32,7 @@ De bundelconsole is een catalogus van de OSGi-bundels en hun gegevens, geïmplem
 De bundelconsole bevindt zich in:
 
 + Gereedschappen > Bewerkingen > Webconsole > OSGi > Bundels
-+ Of direct bij: [ http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
++ Of direct bij: [&#x200B; http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
 Klik in elke bundel, verstrekt details die met het zuiveren uw toepassing helpen.
 
@@ -49,7 +49,7 @@ De console van Componenten is een catalogus van alle componenten OSGi die aan AE
 De console van Componenten wordt gevestigd bij:
 
 + Gereedschappen > Bewerkingen > Webconsole > OSGi > Componenten
-+ Of direct bij: [ http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
++ Of direct bij: [&#x200B; http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
 
 Belangrijke aspecten die u helpen bij de foutopsporingsactiviteiten:
 
@@ -66,7 +66,7 @@ Belangrijke aspecten die u helpen bij de foutopsporingsactiviteiten:
 De Sling Models-console bevindt zich in:
 
 + Gereedschappen > Bewerkingen > Webconsole > Status > Modellen verkopen
-+ Of direct bij: [ http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
++ Of direct bij: [&#x200B; http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
 
 Belangrijke aspecten die u helpen bij de foutopsporingsactiviteiten:
 

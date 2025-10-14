@@ -22,7 +22,7 @@ Met de gebruikersinterface van de vertaalconfiguratie kan een gebruiker regels v
 
 >[!NOTE]
 >
-> De video hieronder is opgenomen op AEM 6.3. AEM 6.4+ introduceert een nieuwe opslagplaats voor het opslaan van het XML-bestand met vertaalregels. Wanneer u de gebruikersinterface van de vertaalconfiguratie in AEM 6.4+ gebruikt, worden de regels opgeslagen op de locatie `/conf/global/settings/translation/rules/translation_rules.xml` . Zie [ identificerend Inhoud ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/tc-rules.html) voor meer details te vertalen.
+> De video hieronder is opgenomen op AEM 6.3. AEM 6.4+ introduceert een nieuwe opslagplaats voor het opslaan van het XML-bestand met vertaalregels. Wanneer u de gebruikersinterface van de vertaalconfiguratie in AEM 6.4+ gebruikt, worden de regels opgeslagen op de locatie `/conf/global/settings/translation/rules/translation_rules.xml` . Zie [&#x200B; identificerend Inhoud &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/tc-rules.html) voor meer details te vertalen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18135?quality=12&learn=on)
 
@@ -36,7 +36,7 @@ De redacteur van vertaalregels die het vertaling xml- dossier zal bijwerken. De 
 
 Toegang tot de gebruikersinterface van de vertaalconfiguratie:
 
-* **[!UICONTROL AEM Start Menu]> [!UICONTROL Tools] > [!UICONTROL General] > [[!UICONTROL Translation Configuration] ](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
+* **[!UICONTROL AEM Start Menu]> [!UICONTROL Tools] > [!UICONTROL General] > [[!UICONTROL Translation Configuration] &#x200B;](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
 
 ## Vóór AEM 6.3 {#prior-to-aem}
 
@@ -44,7 +44,7 @@ In eerdere versies van AEM werden de vertaalregels handmatig bijgewerkt door een
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ identificerend Inhoud om te vertalen ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/tc-rules.html)
-* [ Vertaal Inhoud voor Meertalige Plaatsen ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/translation.html)
-* [ https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/tc-manage.html)
+* [&#x200B; identificerend Inhoud om te vertalen &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/tc-rules.html)
+* [&#x200B; Vertaal Inhoud voor Meertalige Plaatsen &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/translation.html)
+* [&#x200B; https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/tc-manage.html)
 * [&#128279;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/tc-bp.html) Beste praktijken van de Vertaling 0&rbrace;

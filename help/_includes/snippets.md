@@ -25,13 +25,13 @@ ht-degree: 1%
 >
 >**hebt u Edge Delivery Services voor AEM overwogen?**
 >
->U kunt de methoden die in dit document worden beschreven, blijven gebruiken voor bestaande projecten. Nochtans voor nieuwe projecten, adviseert Adobe leveraging [ Edge Delivery Services.](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/overview)
+>U kunt de methoden die in dit document worden beschreven, blijven gebruiken voor bestaande projecten. Nochtans voor nieuwe projecten, adviseert Adobe leveraging [&#x200B; Edge Delivery Services.](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/overview)
 
 ## Veroudering van SPA-editor{#spa-editor-deprecation}
 
 >[!IMPORTANT]
 >
->De redacteur van het KUUROORD [ is afgekeurd ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/spa-editor-deprecation) voor nieuwe projecten. Het blijft door Adobe ondersteund voor bestaande projecten, maar mag niet worden gebruikt voor nieuwe projecten. De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn nu:
+>De redacteur van het KUUROORD [&#x200B; is afgekeurd &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/spa-editor-deprecation) voor nieuwe projecten. Het blijft door Adobe ondersteund voor bestaande projecten, maar mag niet worden gebruikt voor nieuwe projecten. De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn nu:
 >
->* [ de Universele Redacteur ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring) voor visueel het uitgeven van hoofdloze inhoud.
->* [ de Redacteur van het Fragment van de Inhoud ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing) voor op vorm-gebaseerde het uitgeven van hoofdloze inhoud.
+>* [&#x200B; de Universele Redacteur &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring) voor visueel het uitgeven van hoofdloze inhoud.
+>* [&#x200B; de Redacteur van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing) voor op vorm-gebaseerde het uitgeven van hoofdloze inhoud.

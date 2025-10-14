@@ -25,7 +25,7 @@ Voor klanten met Dynamic Media en Adobe Analytics kunt u nu het gebruik van Dyna
 
 >[!NOTE]
 >
-> Adobe Experience Manager uitvoeren in Dynamic Media Scene7-modus voor deze functionaliteit. U moet ook [ markeringen met uw instantie van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=nl-NL) integreren.
+> Adobe Experience Manager uitvoeren in Dynamic Media Scene7-modus voor deze functionaliteit. U moet ook [&#x200B; markeringen met uw instantie van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=nl-NL) integreren.
 
 Met de introductie van de Dynamic Media Viewer-extensie biedt Adobe Experience Manager nu geavanceerde analyseondersteuning voor elementen die worden geleverd met Dynamic Media Viewer (5.13). Hierdoor hebt u meer gedetailleerde controle over het bijhouden van gebeurtenissen wanneer een Dynamic Media Viewer wordt gebruikt op een sitepagina.
 
@@ -166,6 +166,6 @@ In de volgende tabel worden de gebeurtenissen van de Dynamic Media Viewer en de 
 
 ## Aanvullende bronnen{#additional-resources}
 
-* [ Integrerend AEM met markeringen in Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=nl-NL)
-* [ lopende Adobe Experience Manager op Dynamische wijze Scene7 van Media ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=nl-NL)
-* [ Integrating Dynamic Media Viewers met Adobe Analytics gebruikend markeringen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html?lang=nl-NL)
+* [&#x200B; Integrerend AEM met markeringen in Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=nl-NL)
+* [&#x200B; lopende Adobe Experience Manager op Dynamische wijze Scene7 van Media &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=nl-NL)
+* [&#x200B; Integrating Dynamic Media Viewers met Adobe Analytics gebruikend markeringen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html?lang=nl-NL)

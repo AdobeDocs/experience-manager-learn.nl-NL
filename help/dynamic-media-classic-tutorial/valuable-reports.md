@@ -41,7 +41,7 @@ We hopen dat u de inhoud in deze handleiding met best practices hebt gevonden om
 
 Raadpleeg de volgende bronnen voor meer informatie over Dynamic Media Classic:
 
-- [ Dynamic Media Classic op Experience League - krijgt aan Waarde ](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
-- [ Dynamic Media Classic op Experience League - doe meer ](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
-- [ de Archives van de Nieuwsbrief van Dynamic Media ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html?lang=nl-NL)
-- [ Documentatie van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=nl-NL)
+- [&#x200B; Dynamic Media Classic op Experience League - krijgt aan Waarde &#x200B;](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
+- [&#x200B; Dynamic Media Classic op Experience League - doe meer &#x200B;](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
+- [&#x200B; de Archives van de Nieuwsbrief van Dynamic Media &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html?lang=nl-NL)
+- [&#x200B; Documentatie van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=nl-NL)

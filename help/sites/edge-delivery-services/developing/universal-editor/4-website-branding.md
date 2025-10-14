@@ -25,14 +25,14 @@ Begin met het instellen van de algemene branding door algemene stijlen bij te we
 
 Om alles georganiseerd te houden, gebruik GitHub om het werk te volgen. Eerst, creeer een kwestie GitHub voor dit lichaam van werk:
 
-1. Ga naar de bewaarplaats GitHub (verwijs naar [ creeer een hoofdstuk van het codeproject ](./1-new-code-project.md) voor details).
+1. Ga naar de bewaarplaats GitHub (verwijs naar [&#x200B; creeer een hoofdstuk van het codeproject &#x200B;](./1-new-code-project.md) voor details).
 2. Klik op het **lusje van Kwesties** en dan **Nieuwe kwestie**.
 3. Schrijf a **titel** en **beschrijving** voor het te doen werk.
 4. Klik **voorleggen nieuwe kwestie**.
 
-De kwestie GitHub wordt later gebruikt wanneer [ creërend een trekkingsverzoek ](#merge-code-changes).
+De kwestie GitHub wordt later gebruikt wanneer [&#x200B; creërend een trekkingsverzoek &#x200B;](#merge-code-changes).
 
-![ GitHub creeert nieuwe kwestie ](./assets/4-website-branding/github-issues.png)
+![&#x200B; GitHub creeert nieuwe kwestie &#x200B;](./assets/4-website-branding/github-issues.png)
 
 ## Een werkende vertakking maken
 
@@ -56,7 +56,7 @@ Houd er rekening mee dat algemene CSS-stijlen indien nodig kunnen worden oversch
 
 ### CSS-variabelen
 
-[ CSS variabelen ](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) zijn een grote manier om ontwerpmontages zoals kleuren, doopvonten, en grootte op te slaan. Door variabelen te gebruiken, kunt u deze elementen op één plaats veranderen en het hebben door de volledige plaats bijwerken.
+[&#x200B; CSS variabelen &#x200B;](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) zijn een grote manier om ontwerpmontages zoals kleuren, doopvonten, en grootte op te slaan. Door variabelen te gebruiken, kunt u deze elementen op één plaats veranderen en het hebben door de volledige plaats bijwerken.
 
 Ga als volgt te werk om de CSS-variabelen aan te passen:
 
@@ -250,7 +250,7 @@ Voeg aangepaste weblettertypen toe met CSS `@font-face` -declaraties in het `sty
 }
 ```
 
-De doopvonten die in dit leerprogramma worden gebruikt zijn afkomstig van de Doopvonten van Google, maar de Webdoopvonten kunnen van om het even welke doopvontleverancier, met inbegrip van [ Adobe Fonts ](https://fonts.adobe.com/) worden verkregen.
+De doopvonten die in dit leerprogramma worden gebruikt zijn afkomstig van de Doopvonten van Google, maar de Webdoopvonten kunnen van om het even welke doopvontleverancier, met inbegrip van [&#x200B; Adobe Fonts &#x200B;](https://fonts.adobe.com/) worden verkregen.
 
 +++Lokale bestanden met weblettertypen gebruiken
 
@@ -285,17 +285,17 @@ Werk ten slotte de CSS-variabelen van `styles/styles.css` bij om de nieuwe lette
 }
 ```
 
-`roboto-fallback` en `roboto-condensed-fallback` zijn fallback doopvonten die in de [ sectie van de Fallback doopvonten ](#fallback-fonts) worden bijgewerkt om zich te richten om de douane `Asar` en `Source Sans Pro` weblettertypen te steunen.
+`roboto-fallback` en `roboto-condensed-fallback` zijn fallback doopvonten die in de [&#x200B; sectie van de Fallback doopvonten &#x200B;](#fallback-fonts) worden bijgewerkt om zich te richten om de douane `Asar` en `Source Sans Pro` weblettertypen te steunen.
 
 ### Alternatieve lettertypen
 
 Weblettertypen zijn vaak van invloed op de prestaties vanwege hun grootte, waardoor Cumulatieve CLS-scores (Layout Shift) worden verhoogd en de totale Lightroom-scores afnemen. Edge Delivery Services-projecten gebruiken browsereigen fallback-lettertypen om ervoor te zorgen dat de tekst direct wordt weergegeven terwijl weblettertypen worden geladen. Deze aanpak zorgt voor een vloeiende gebruikerservaring terwijl het gewenste lettertype van toepassing is.
 
-Om de beste fallback doopvont te selecteren, gebruik Adobe [ de uitbreiding van Chrome van de Fallback van de Doopvont ](https://www.aem.live/developer/font-fallback), die een dicht passende doopvont voor browsers bepaalt om te gebruiken alvorens de douanedoopvont laadt. De resulterende fontdeclaraties voor fallback moeten aan het `styles/styles.css` -bestand worden toegevoegd om de prestaties te verbeteren en gebruikers een naadloze ervaring te bieden.
+Om de beste fallback doopvont te selecteren, gebruik Adobe [&#x200B; de uitbreiding van Chrome van de Fallback van de Doopvont &#x200B;](https://www.aem.live/developer/font-fallback), die een dicht passende doopvont voor browsers bepaalt om te gebruiken alvorens de douanedoopvont laadt. De resulterende fontdeclaraties voor fallback moeten aan het `styles/styles.css` -bestand worden toegevoegd om de prestaties te verbeteren en gebruikers een naadloze ervaring te bieden.
 
-![ de uitbreiding van Chrome van de Fallback van de Doopvont 1&rbrace; {align=center}](./assets/4-website-branding/font-fallback-chrome-plugin.png)
+![&#x200B; de uitbreiding van Chrome van de Fallback van de Doopvont 1&rbrace; {align=center}](./assets/4-website-branding/font-fallback-chrome-plugin.png)
 
-Om de [ extensie van Chrome van de Fontfallback van de Helix te gebruiken ](https://www.aem.live/developer/font-fallback), zorg ervoor dat de Web-pagina weblettertypen heeft die in de zelfde variaties worden toegepast die op de website van Edge Delivery Services worden gebruikt. Dit leerprogramma toont de uitbreiding op [ wknd.site ](http://wknd.site/us/en.html) aan. Wanneer het ontwikkelen van een website, pas de uitbreiding op de plaats toe die aan eerder dan aan [ wknd.site ](http://wknd.site/us/en.html) wordt gewerkt.
+Om de [&#x200B; extensie van Chrome van de Fontfallback van de Helix te gebruiken &#x200B;](https://www.aem.live/developer/font-fallback), zorg ervoor dat de Web-pagina weblettertypen heeft die in de zelfde variaties worden toegepast die op de website van Edge Delivery Services worden gebruikt. Dit leerprogramma toont de uitbreiding op [&#x200B; wknd.site &#x200B;](http://wknd.site/us/en.html) aan. Wanneer het ontwikkelen van een website, pas de uitbreiding op de plaats toe die aan eerder dan aan [&#x200B; wknd.site &#x200B;](http://wknd.site/us/en.html) wordt gewerkt.
 
 ```css
 /* styles/styles.css */
@@ -338,7 +338,7 @@ Voeg de fallback font-family namen toe aan de CSS-lettertypen in `styles/styles.
 
 Terwijl u CSS toevoegt, worden de wijzigingen automatisch opnieuw geladen in de lokale ontwikkelomgeving van de AEM CLI, zodat u snel en gemakkelijk kunt zien hoe de CSS het blok beïnvloedt.
 
-![ Voorproef van de Ontwikkeling van het merk CSS van WKND ](./assets/4-website-branding/preview.png)
+![&#x200B; Voorproef van de Ontwikkeling van het merk CSS van WKND &#x200B;](./assets/4-website-branding/preview.png)
 
 
 ## Definitieve CSS-bestanden downloaden
@@ -350,7 +350,7 @@ U kunt de bijgewerkte CSS-bestanden downloaden van de onderstaande koppelingen:
 
 ## De CSS-bestanden plaatsen
 
-Zorg ervoor aan [ vaak ](./3-local-development-environment.md#linting) uw codeveranderingen plukken om ervoor te zorgen zij schoon en verenigbaar zijn. Regelmatig koppelen helpt problemen vroegtijdig op te vangen en verkort de totale ontwikkelingstijd. U kunt uw werk pas samenvoegen met de hoofdvertakking als alle problemen met de koppeling zijn opgelost.
+Zorg ervoor aan [&#x200B; vaak &#x200B;](./3-local-development-environment.md#linting) uw codeveranderingen plukken om ervoor te zorgen zij schoon en verenigbaar zijn. Regelmatig koppelen helpt problemen vroegtijdig op te vangen en verkort de totale ontwikkelingstijd. U kunt uw werk pas samenvoegen met de hoofdvertakking als alle problemen met de koppeling zijn opgelost.
 
 ```bash
 $ npm run lint:css
@@ -368,7 +368,7 @@ $ git push origin wknd-styles
 
 Zodra de veranderingen aan de `wknd-styles` tak worden geduwd, creeer een trekkrachtverzoek op GitHub om hen in de `main` tak samen te voegen.
 
-1. Navigeer aan de bewaarplaats GitHub van [ tot een nieuw project ](./1-new-code-project.md) hoofdstuk.
+1. Navigeer aan de bewaarplaats GitHub van [&#x200B; tot een nieuw project &#x200B;](./1-new-code-project.md) hoofdstuk.
 2. Klik de **verzoeken van de Trek** tabel en selecteer **Nieuwe trekkingsverzoek**.
 3. Stel `wknd-styles` in als de bronvertakking en `main` als de doelvertakking.
 4. Herzie de veranderingen en klik **creeer trekkingsverzoek**.
@@ -388,7 +388,7 @@ Zodra de veranderingen aan de `wknd-styles` tak worden geduwd, creeer een trekkr
    * De test URLs vertelt de Synchronisatie van de Code van AEM welke takken voor bevestiging en vergelijking te gebruiken. De URL &quot;Na&quot; gebruikt de werkvertakking `wknd-styles` om te controleren hoe de wijzigingen in de code van invloed zijn op de prestaties van de website.
 
 6. Klik **creëren trektrekverzoek**.
-7. Wacht op de [ app van GitHub van de Synchronisatie van de Code van AEM ](./1-new-code-project.md) aan **volledige kwaliteitscontroles**. Als ze mislukken, lost u de fouten op en voert u de controles opnieuw uit.
+7. Wacht op de [&#x200B; app van GitHub van de Synchronisatie van de Code van AEM &#x200B;](./1-new-code-project.md) aan **volledige kwaliteitscontroles**. Als ze mislukken, lost u de fouten op en voert u de controles opnieuw uit.
 8. Zodra de controles overgaan, **voegt het trektrekkingsverzoek** in `main` samen.
 
 Als de wijzigingen zijn samengevoegd in `main`, worden ze niet beschouwd als geïmplementeerd voor de productie en kan de nieuwe ontwikkeling op basis van deze updates plaatsvinden.

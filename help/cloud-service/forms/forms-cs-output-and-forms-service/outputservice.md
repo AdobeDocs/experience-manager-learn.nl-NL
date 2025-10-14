@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # PDF-documenten genereren met behulp van uitvoerservice
 
-De [ dienst van de Output ](https://javadoc.io/static/com.adobe.aem/aem-forms-sdk-api/2024.07.31.00-240800/com/adobe/fd/output/api/OutputService.html) is de dienst OSGi die deel van de Diensten van het Document van AEM uitmaakt. Deze biedt ondersteuning voor verschillende uitvoerindelingen en ontwerpfuncties van AEM Forms Designer. De service Uitvoer converteert XFA-sjablonen en XML-gegevens om afdrukdocumenten in verschillende indelingen te genereren.
+De [&#x200B; dienst van de Output &#x200B;](https://javadoc.io/static/com.adobe.aem/aem-forms-sdk-api/2024.07.31.00-240800/com/adobe/fd/output/api/OutputService.html) is de dienst OSGi die deel van de Diensten van het Document van AEM uitmaakt. Deze biedt ondersteuning voor verschillende uitvoerindelingen en ontwerpfuncties van AEM Forms Designer. De service Uitvoer converteert XFA-sjablonen en XML-gegevens om afdrukdocumenten in verschillende indelingen te genereren.
 
 De Output-service in AEM Forms as a Cloud Service lijkt sterk op die in AEM Forms 6.5. Als u dus bekend bent met de Output-service in AEM Forms 6.5, is de overgang naar AEM Forms as a Cloud Service eenvoudig.
 

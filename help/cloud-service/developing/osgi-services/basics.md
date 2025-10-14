@@ -28,9 +28,9 @@ Leer de grondbeginselen van de dienstenontwikkeling OSGi, die omvatten:
 
 ## Bronnen
 
-+ [@Component JavaDocs ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/service/component/annotations/Component.html)
-+ [@ProviderType JavaDocs ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/ProviderType.html)
-+ [@Version JavaDocs ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/Version.html)
++ [@Component JavaDocs &#x200B;](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/service/component/annotations/Component.html)
++ [@ProviderType JavaDocs &#x200B;](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/ProviderType.html)
++ [@Version JavaDocs &#x200B;](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/Version.html)
 
 ## Code
 

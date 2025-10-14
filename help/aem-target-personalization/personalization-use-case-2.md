@@ -36,17 +36,17 @@ Voor deze oefening, moeten de volgende gebruikers worden betrokken en om sommige
 
 ### WKND-startpagina
 
-![ AEM Scenario 1 van het Doel ](assets/personalization-use-case-2/aem-target-use-case-2.png)
+![&#x200B; AEM Scenario 1 van het Doel &#x200B;](assets/personalization-use-case-2/aem-target-use-case-2.png)
 
 ### Vereisten
 
 * **AEM**
-   * [ AEM auteur en publiceer instantie ](./implementation.md#getting-aem) lopend op localhost 4502 en 4503.
+   * [&#x200B; AEM auteur en publiceer instantie &#x200B;](./implementation.md#getting-aem) lopend op localhost 4502 en 4503.
    * [AEM geïntegreerd met Adobe Target met tags](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
    * Toegang tot uw organisaties Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud voorzien van de volgende oplossingen
-      * [ Adobe Target ](https://experiencecloud.adobe.com)
+      * [&#x200B; Adobe Target &#x200B;](https://experiencecloud.adobe.com)
 
 ## Inhoudsbewerkingsactiviteiten
 
@@ -60,38 +60,38 @@ Voor deze oefening, moeten de volgende gebruikers worden betrokken en om sommige
    1. Van uw venster van Adobe Target, navigeer aan **Activiteiten** tabel.
    2. Klik **creeer de knoop van de Activiteit** en selecteer het activiteitstype als **Test A/B**
 
-      ![ Adobe Target - creeer Activiteit ](assets/personalization-use-case-2/create-ab-activity.png)
+      ![&#x200B; Adobe Target - creeer Activiteit &#x200B;](assets/personalization-use-case-2/create-ab-activity.png)
    3. Selecteer het **kanaal van het 0&rbrace; Web &lbrace;en kies** Visuele Composer van de Ervaring **.**
    4. Ga **Activiteit URL** in en klik **daarna** om de Visuele Composer van de Ervaring te openen.
 
-      ![ Adobe Target - creeer Activiteit ](assets/personalization-use-case-2/create-activity-ab-name.png)
+      ![&#x200B; Adobe Target - creeer Activiteit &#x200B;](assets/personalization-use-case-2/create-activity-ab-name.png)
    5. Voor **Visuele Composer van de Ervaring** om te laden, laat **toe Lading Onveilige manuscripten** op uw browser en herlaad uw pagina.
 
-      ![ Ervaring richtend Activiteit ](assets/personalization-use-case-1/load-unsafe-scripts.png)
+      ![&#x200B; Ervaring richtend Activiteit &#x200B;](assets/personalization-use-case-1/load-unsafe-scripts.png)
    6. Merk op de WKND homepage van de Plaats open in de redacteur van Composer van de Visuele Ervaring.
 
-      ![ VEC ](assets/personalization-use-case-2/vec.png)
+      ![&#x200B; VEC &#x200B;](assets/personalization-use-case-2/vec.png)
    7. Beweeg over **Ervaring B** en selecteer mening andere opties.
 
-      ![ Ervaring B ](assets/personalization-use-case-2/redirect-url.png)
+      ![&#x200B; Ervaring B &#x200B;](assets/personalization-use-case-2/redirect-url.png)
    8. Selecteer **Redirect aan URL** optie en ga URL aan de nieuwe WKND Homepage in. http://localhost:4503/content/wknd/en1.html)
 
-      ![ Ervaring B ](assets/personalization-use-case-2/redirect-url-2.png)
+      ![&#x200B; Ervaring B &#x200B;](assets/personalization-use-case-2/redirect-url-2.png)
    9. **sparen** uw veranderingen en ga met de volgende stappen van de Making van de Activiteit verder.
    10. Selecteer de **Methode van de Toewijzing van het Verkeer** als hand en wijs 100% verkeer aan **Ervaring B** toe.
 
-       ![ Ervaring B Verkeer ](assets/personalization-use-case-2/traffic.png)
+       ![&#x200B; Ervaring B Verkeer &#x200B;](assets/personalization-use-case-2/traffic.png)
    11. Klik op **Next**.
    12. Verstrek **Goal Metrics** voor uw Activiteit en sparen en sluit uw Test A/B.
 
-       ![ Metrisch van het Doel van de Test A/B ](assets/personalization-use-case-2/goal-metric.png)
+       ![&#x200B; Metrisch van het Doel van de Test A/B &#x200B;](assets/personalization-use-case-2/goal-metric.png)
    13. Verstrek een naam (**WKND het Herontwerp van de Homepage van het Huis**) voor uw Activiteit en sla uw veranderingen op.
    14. Van het scherm van de Details van de Activiteit, zorg ervoor **activeer** uw activiteit.
 
-       ![ activeer Activiteit ](assets/personalization-use-case-2/ab-activate.png)
+       ![&#x200B; activeer Activiteit &#x200B;](assets/personalization-use-case-2/ab-activate.png)
    15. Navigeer naar de startpagina van WKND (http://localhost:4503/content/wknd/en.html) en u wordt omgeleid naar de opnieuw ontworpen startpagina van de WKND-site (http://localhost:4503/content/wknd/en1.html).
 
-      ![ WKND Homepage opnieuw ontworpen ](assets/personalization-use-case-2/WKND-home-page-redesign.png)
+      ![&#x200B; WKND Homepage opnieuw ontworpen &#x200B;](assets/personalization-use-case-2/WKND-home-page-redesign.png)
 
 ## Samenvatting
 

@@ -28,9 +28,9 @@ Als onderdeel van dit artikel doorlopen we de volgende gebruikszaak:
 1. Bij het verzenden van formulieren wordt de AEM Workflow geactiveerd
 1. De AEM Workflow gebruikt de Send E-mailcomponent om een e-mail met het DoR als bijlage te verzenden
 
-Alvorens u gebruikt verzend E-mail stap zorg ervoor u de Dienst van de Post van Dag CQ van [ configMgr ](http://localhost:4502/system/console/configMgr) vormt. Geef de waarden op die specifiek zijn voor uw omgeving
+Alvorens u gebruikt verzend E-mail stap zorg ervoor u de Dienst van de Post van Dag CQ van [&#x200B; configMgr &#x200B;](http://localhost:4502/system/console/configMgr) vormt. Geef de waarden op die specifiek zijn voor uw omgeving
 
-![ vorm de Dienst van de Post van de Dag CQ ](assets/mailservice.png)
+![&#x200B; vorm de Dienst van de Post van de Dag CQ &#x200B;](assets/mailservice.png)
 
 Als onderdeel van de elementen die aan dit artikel zijn gekoppeld, krijgt u het volgende
 
@@ -42,13 +42,13 @@ Ga als volgt te werk om het voorbeeld op uw systeem uit te voeren:
 
 1. [De gebruikersbundel DevelopingWithService implementeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-1. [ Download en installeer setvalue bundel ](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) Deze bundel bevat de code voor het creëren van de meta-gegevenseigenschappen als deel van de processtap van het werkschema.
-1. [ vorm de Dienst van de Post van de Dag CQ ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/notification.html)
+1. [&#x200B; Download en installeer setvalue bundel &#x200B;](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) Deze bundel bevat de code voor het creëren van de meta-gegevenseigenschappen als deel van de processtap van het werkschema.
+1. [&#x200B; vorm de Dienst van de Post van de Dag CQ &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/notification.html)
 1. [De aan dit artikel gekoppelde elementen importeren en installeren met pakketbeheer in CRX](assets/emaildoraemformskt.zip)
-1. Lanceer de [ adaptieve vorm ](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled). Vul de vereiste velden in en verzend deze.
+1. Lanceer de [&#x200B; adaptieve vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled). Vul de vereiste velden in en verzend deze.
 1. U moet een e-mail ontvangen met DocumentOfRecord als bijlage
 
-Onderzoek het [ werkschemamodel ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/emaildor.html)
+Onderzoek het [&#x200B; werkschemamodel &#x200B;](http://localhost:4502/editor.html/conf/global/settings/workflow/models/emaildor.html)
 
 Bekijk de processtap van de workflow. De aangepaste code die aan de processtap is gekoppeld, maakt eigenschapnamen voor metagegevens en stelt de waarden ervan in op basis van de verzonden gegevens. Deze waarden worden vervolgens gebruikt door de component send email.
 
@@ -57,4 +57,4 @@ Bekijk de processtap van de workflow. De aangepaste code die aan de processtap i
 >In AEM Forms 6.5 en hoger hebt u deze aangepaste code niet nodig om eigenschappen van metagegevens te maken. Gebruik de functie voor variabelen in de AEM-workflow
 
 Controleer of het tabblad Bijlagen van de component E-mail verzenden is geconfigureerd volgens de onderstaande schermopname
-![ verzendt E-mail het Lusje van de Bijlage van de Bijlage ](assets/sendemailcomponentconfigure.jpg) &quot;DOR.pdf&quot;waarde moet de waarde aanpassen die in het Document van de Weg van het Verslag wordt gespecificeerd in de voorleggingsopties van uw adaptieve vorm.
+![&#x200B; verzendt E-mail het Lusje van de Bijlage van de Bijlage &#x200B;](assets/sendemailcomponentconfigure.jpg) &quot;DOR.pdf&quot;waarde moet de waarde aanpassen die in het Document van de Weg van het Verslag wordt gespecificeerd in de voorleggingsopties van uw adaptieve vorm.

@@ -32,8 +32,8 @@ Een dieptehandleiding voor het ophalen van een aanmeldingstoken voor Cloud Servi
 + Technische rekeningverificatie
 + Eenvoudig gebruik van een gegenereerde token
 
-Voor een meer gedetailleerde blik op dit onderwerp, kunt u het leerprogramma op [ op teken-gebaseerde authentificatie ](/help/headless-tutorial/authentication/overview.md) van verwijzingen voorzien.
+Voor een meer gedetailleerde blik op dit onderwerp, kunt u het leerprogramma op [&#x200B; op teken-gebaseerde authentificatie &#x200B;](/help/headless-tutorial/authentication/overview.md) van verwijzingen voorzien.
 
 ## Aanvullende bronnen
 
-Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 1 ](cloud5-season-1.md) pagina.
+Bekijk verwante video&#39;s op de [&#x200B; Wolk 5 seizoen 1 &#x200B;](cloud5-season-1.md) pagina.

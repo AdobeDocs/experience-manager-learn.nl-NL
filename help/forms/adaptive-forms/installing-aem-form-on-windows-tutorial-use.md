@@ -36,13 +36,13 @@ ht-degree: 0%
 >* Microsoft Visual C++ 2012 herdistribueerbaar
 >* Microsoft Visual C++ 2013 herdistribueerbaar (vanaf 6.5)
 
-Hoewel wij na de [ officiële documentatie ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) voor het installeren van AEM Forms adviseren. U kunt de volgende stappen volgen om AEM Forms in Windows-omgeving te installeren en configureren:
+Hoewel wij na de [&#x200B; officiële documentatie &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) voor het installeren van AEM Forms adviseren. U kunt de volgende stappen volgen om AEM Forms in Windows-omgeving te installeren en configureren:
 
 * Zorg ervoor dat de juiste JDK is geïnstalleerd
    * AEM 6.2 die u nodig hebt: Oracle SE 8 JDK 1.8.x (64-bits)
    * AEM 6.3 en AEM 6.4 hebt u nodig: Oracle SE 8 JDK 1.8.x (64-bits)
    * AEM 6.5 hebt u JDK 8 of JDK 11 nodig
-   * [ Officiële JDK Vereisten ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=nl-NL) zijn hier vermeld
+   * [&#x200B; Officiële JDK Vereisten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=nl-NL) zijn hier vermeld
 * Zorg ervoor JAVA_HOME wordt geplaatst om aan JDK te richten u hebt geïnstalleerd.
    * Volg onderstaande stappen om de JAVA_HOME-variabele in vensters te maken:
       * Klik met de rechtermuisknop op Deze computer en selecteer Eigenschappen
@@ -69,8 +69,8 @@ Hoewel wij na de [ officiële documentatie ](https://helpx.adobe.com/nl/experien
    * **sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.&#42;** **sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.&#42;**
 * Deze twee eigenschappen zijn vereist voor documentservices die werken
 * Het bestand sling.properties opslaan
-* [ Download de aangewezen vormen addon pakket ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL)
-* Installeer de vormen toevoegen op pakket gebruikend [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp).
+* [&#x200B; Download de aangewezen vormen addon pakket &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL)
+* Installeer de vormen toevoegen op pakket gebruikend [&#x200B; pakketmanager &#x200B;](http://localhost:4502/crx/packmgr/index.jsp).
 * Nadat u het pakket hebt geïnstalleerd, moet u de volgende stappen volgen
 
    * **zorg ervoor alle bundels in actieve staat zijn. (Met uitzondering van de AEMFD-bundel Handtekeningen).**
@@ -80,10 +80,10 @@ Hoewel wij na de [ officiële documentatie ](https://helpx.adobe.com/nl/experien
 
 ## sun.util.agenda-pakket aan de lijst van gewenste personen
 
-1. Open het Webconsole van Felix in uw [ browser venster ](http://localhost:4502/system/console/configMgr)
+1. Open het Webconsole van Felix in uw [&#x200B; browser venster &#x200B;](http://localhost:4502/system/console/configMgr)
 1. Firewall-configuratie deserialization zoeken en openen: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 1. `sun.util.calendar` toevoegen als een nieuw item onder `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
 1. Sla de wijzigingen op.
 
 Gefeliciteerd!! U hebt nu AEM Forms op uw systeem geïnstalleerd en geconfigureerd.
-Afhankelijk van uw behoeften kunt u [ Uitbreidingen van Reader ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=nl-NL) vormen of [ PDFG ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=nl-NL) op uw server
+Afhankelijk van uw behoeften kunt u [&#x200B; Uitbreidingen van Reader &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=nl-NL) vormen of [&#x200B; PDFG &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=nl-NL) op uw server

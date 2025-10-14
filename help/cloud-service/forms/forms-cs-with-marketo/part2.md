@@ -27,26 +27,26 @@ Marketo REST API&#39;s worden geverifieerd met OAuth 2.0 met twee poten. We kunn
 * Aanmelden bij AEM.
 * Klik op het hulpmiddelenmenu en dan **Browser van de Configuratie** zoals hieronder getoond
 
-* ![ hulpmiddelmenu ](assets/datasource3.png)
+* ![&#x200B; hulpmiddelmenu &#x200B;](assets/datasource3.png)
 
 * Klik op **creeer** en verstrek een betekenisvolle naam zoals hieronder getoond. Controleer of de optie Cloud Configurations (Cloud Configurations) is geselecteerd, zoals hieronder wordt weergegeven
 
-* ![ configuratiecontainer ](assets/datasource4.png)
+* ![&#x200B; configuratiecontainer &#x200B;](assets/datasource4.png)
 
 ## Cloudservices maken
 
 * Navigeer naar het menu Gereedschappen en klik vervolgens op cloudservices -> Gegevensbronnen
 
-* ![ wolk-diensten ](assets/datasource5.png)
+* ![&#x200B; wolk-diensten &#x200B;](assets/datasource5.png)
 
 * Selecteer de configuratiecontainer die in de vroegere stap wordt gecreeerd en klik op **creeer** om een nieuwe gegevensbron tot stand te brengen.Verstrek een betekenisvolle naam en de uitgezochte dienst RESTful van de drop-down lijst van het Type van de Dienst en klik **daarna**
-* ![ nieuw-gegeven-bron ](assets/datasource6.png)
+* ![&#x200B; nieuw-gegeven-bron &#x200B;](assets/datasource6.png)
 
 * Upload het wagerbestand en geef het giftype, de Client Id, de Client Secret en Access Token-URL op die specifiek zijn voor uw Marketo-instantie, zoals wordt weergegeven in de onderstaande schermafbeelding.
 
 * Test de verbinding en als de verbinding succesvol is zorg ervoor u op de blauwe **creeert** knoop klikt om het proces te beëindigen om de gegevensbron tot stand te brengen.
 
-* ![ gegeven-bron-config ](assets/datasource1.png)
+* ![&#x200B; gegeven-bron-config &#x200B;](assets/datasource1.png)
 
 
 ## Volgende stappen

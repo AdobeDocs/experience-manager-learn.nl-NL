@@ -24,7 +24,7 @@ In dit artikel bekijken we de volgende service
 
 * FormsService - Dit is een zeer veelzijdige service waarmee u gegevens kunt exporteren/importeren vanuit en naar een PDF-bestand en waarmee u ook interactieve pdf-bestanden kunt genereren door XML-gegevens samen te voegen in een xdp-sjabloon
 
-Officiële [ javadoc voor AEM Forms API is hier vermeld ](https://helpx.adobe.com/nl/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
+Officiële [&#x200B; javadoc voor AEM Forms API is hier vermeld &#x200B;](https://helpx.adobe.com/nl/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
 Het volgende codefragment geeft interactief pdf terug gebruikend de renderPDFForm verrichting van FormsService. Het bestand schengen.xdp wordt gebruikt om de XML-gegevens samen te voegen.
 
@@ -55,7 +55,7 @@ Regel 11: Keert geproduceerde interactieve pdf aan de roepende toepassing terug
 1. [Download en installeer de DocumentServices Sample Bundle met de Felix Web Console](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Download en installeer het pakket met behulp van AEM package Manager](assets/downloadinteractivepdffrommobileform.zip)
 
-1. [ Login aan configMgr ](http://localhost:4502/system/console/configMgr)
+1. [&#x200B; Login aan configMgr &#x200B;](http://localhost:4502/system/console/configMgr)
 1. Zoeken naar Adobe Granite CSRF-filter
 1. Het volgende pad toevoegen aan de uitgesloten secties en opslaan
 1. /bin/generateinteractivepdf
@@ -63,7 +63,7 @@ Regel 11: Keert geproduceerde interactieve pdf aan de roepende toepassing terug
    1. Klik op het pictogram *+* (plus) om de volgende servicetoewijzing toe te voegen
       * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
    1. Klik op Opslaan &#39;
-1. [ open de mobiele vorm ](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
+1. [&#x200B; open de mobiele vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
 1. Vul een paar gebieden in en klik dan de ***Download en vult...*** knop
 1. De interactieve pdf moet naar uw lokale systeem worden gedownload
 

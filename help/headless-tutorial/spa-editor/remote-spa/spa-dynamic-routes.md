@@ -26,7 +26,7 @@ ht-degree: 0%
 
 In dit hoofdstuk, laten wij twee dynamische routes van het Detail van het avontuur toe om editable componenten te steunen; __Bali Surf Camp__ en __Beervana in Portland__.
 
-![ Dynamische routes en editable componenten ](./assets/spa-dynamic-routes/intro.png)
+![&#x200B; Dynamische routes en editable componenten &#x200B;](./assets/spa-dynamic-routes/intro.png)
 
 De route van het KUUROORD van het Detail van het Avontuur wordt gedefinieerd als `/adventure/:slug` waar `slug` een unieke herkenningstekenbezit op het Fragment van de Inhoud van de Avontuur is.
 
@@ -51,11 +51,11 @@ Op basis van deze afbeelding moeten we dus twee nieuwe AEM-pagina&#39;s maken op
 
 ## Externe SPA-toewijzing
 
-De afbeelding voor verzoeken die het Verre KUUROORD verlaten wordt gevormd via de `setupProxy` configuratie die in [ Bootstrap wordt gedaan het KUUROORD ](./spa-bootstrap.md).
+De afbeelding voor verzoeken die het Verre KUUROORD verlaten wordt gevormd via de `setupProxy` configuratie die in [&#x200B; Bootstrap wordt gedaan het KUUROORD &#x200B;](./spa-bootstrap.md).
 
 ## SPA-editor toewijzen
 
-De afbeelding voor de verzoeken van het KUUROORD wanneer het KUUROORD via de Redacteur van het KUUROORD wordt geopend wordt gevormd via het Verdelen van de configuratie die in [ wordt gedaan vormt AEM ](./aem-configure.md).
+De afbeelding voor de verzoeken van het KUUROORD wanneer het KUUROORD via de Redacteur van het KUUROORD wordt geopend wordt gevormd via het Verdelen van de configuratie die in [&#x200B; wordt gedaan vormt AEM &#x200B;](./aem-configure.md).
 
 ## Inhoudspagina&#39;s maken in AEM
 
@@ -91,7 +91,7 @@ Deze twee pagina&#39;s van AEM houden de respectieve-authored inhoud voor hun pa
 
 ## De WKND-app bijwerken
 
-Plaats de `<ResponsiveGrid...>` component die in het [ laatste hoofdstuk ](./spa-container-component.md) wordt gecreeerd, in onze `AdventureDetail` component van het KUUROORD, die tot een editable container leiden.
+Plaats de `<ResponsiveGrid...>` component die in het [&#x200B; laatste hoofdstuk &#x200B;](./spa-container-component.md) wordt gecreeerd, in onze `AdventureDetail` component van het KUUROORD, die tot een editable container leiden.
 
 ### De SPA-component ResponsiveGrid plaatsen
 
@@ -141,7 +141,7 @@ function AdventureDetailRender(props) {
 
 Het bestand `AdventureDetail.js` moet er als volgt uitzien:
 
-![ AdventureDetail.js ](./assets/spa-dynamic-routes/adventure-detail-js.png)
+![&#x200B; AdventureDetail.js &#x200B;](./assets/spa-dynamic-routes/adventure-detail-js.png)
 
 ## Auteur van de container in AEM
 
@@ -163,12 +163,12 @@ Nu `<ResponsiveGrid...>` op zijn plaats is en de `pagePath` dynamisch is ingeste
 
    En creeer wat promotiemateriaal. Het zou er ongeveer als volgt kunnen uitzien:
 
-   ![ Bali Adventure Detail Authoring ](./assets/spa-dynamic-routes/adventure-detail-edit.png)
+   ![&#x200B; Bali Adventure Detail Authoring &#x200B;](./assets/spa-dynamic-routes/adventure-detail-edit.png)
 
 1. __Voorproef__ uw veranderingen in de Redacteur van de Pagina van AEM
-1. Vernieuw de WKND App die plaatselijk op [ http://localhost:3000 ](http://localhost:3000) loopt, navigeer aan de __Bali Surf Camp__ route om de authored veranderingen te zien!
+1. Vernieuw de WKND App die plaatselijk op [&#x200B; http://localhost:3000 &#x200B;](http://localhost:3000) loopt, navigeer aan de __Bali Surf Camp__ route om de authored veranderingen te zien!
 
-   ![ Verre SPA Bali ](./assets/spa-dynamic-routes/remote-spa-final.png)
+   ![&#x200B; Verre SPA Bali &#x200B;](./assets/spa-dynamic-routes/remote-spa-final.png)
 
 Wanneer het navigeren aan een avontuurdetailroute die geen in kaart gebrachte Pagina van AEM heeft, is er geen auteursbaarheid op die routeinstantie. Om auteursrecht op deze pagina&#39;s toe te laten, maak eenvoudig een Pagina van AEM met de passende naam onder de __pagina van het Vontuur__!
 

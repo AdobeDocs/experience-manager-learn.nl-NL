@@ -23,7 +23,7 @@ In het vorige hoofdstuk hebt u enkele geavanceerde GraphQL-query&#39;s onderzoch
 
 ## Vereisten {#prerequisites}
 
-Dit document is onderdeel van een zelfstudie met meerdere onderdelen. Gelieve te zorgen ervoor dat het [ vorige hoofdstuk ](explore-graphql-api.md) is voltooid alvorens met dit hoofdstuk te werk te gaan.
+Dit document is onderdeel van een zelfstudie met meerdere onderdelen. Gelieve te zorgen ervoor dat het [&#x200B; vorige hoofdstuk &#x200B;](explore-graphql-api.md) is voltooid alvorens met dit hoofdstuk te werk te gaan.
 
 ## Doelstellingen {#objectives}
 
@@ -40,7 +40,7 @@ Laat herzien dat _GraphQL de Verlengde Vragen_ voor het project van de Plaats WK
 
 1. Selecteer **Gedeelde WKND**, dan selecteren **Eigenschappen** in de hoogste navigatiebar om configuratieeigenschappen te openen. Op de pagina van de Eigenschappen van de Configuratie, zou u moeten zien dat de **Persistente Vragen van GraphQL** toestemming wordt toegelaten.
 
-   ![ Eigenschappen van de Configuratie ](assets/graphql-persisted-queries/configuration-properties.png)
+   ![&#x200B; Eigenschappen van de Configuratie &#x200B;](assets/graphql-persisted-queries/configuration-properties.png)
 
 ## Handhaaf GraphQL-query&#39;s met het gereedschap GraphiQL Explorer
 
@@ -159,7 +159,7 @@ In deze sectie, laten wij de vraag van GraphQL voortzetten die later in de clië
 
 1. Tik vervolgens op Opslaan als en voer `adventure-details-by-slug` in als naam voor de query.
 
-   ![ handhaaft de Vraag van GraphQL ](assets/graphql-persisted-queries/persist-graphql-query.png)
+   ![&#x200B; handhaaft de Vraag van GraphQL &#x200B;](assets/graphql-persisted-queries/persist-graphql-query.png)
 
 ## Doorlopende query uitvoeren met variabelen door speciale tekens te coderen
 
@@ -199,7 +199,7 @@ Door `getAllAdventureDetailsBySlug` vraag van de bevel-lijn terminal in werking 
        http://<AEM_HOST>/graphql/execute.json/wknd-shared/getAllAdventureDetailsBySlug%3Bslug%3Dyosemite-backpacking
    ```
 
-1. Open een bevel-lijn terminal en het gebruiken van [ Kromme ](https://curl.se/) stelt de vraag in werking
+1. Open een bevel-lijn terminal en het gebruiken van [&#x200B; Kromme &#x200B;](https://curl.se/) stelt de vraag in werking
 
    ```shell
    $ curl -X GET http://<AEM_HOST>/graphql/execute.json/wknd-shared/getAllAdventureDetailsBySlug%3Bslug%3Dyosemite-backpacking
@@ -207,9 +207,9 @@ Door `getAllAdventureDetailsBySlug` vraag van de bevel-lijn terminal in werking 
 
 >[!TIP]
 >
->    Als u de bovenstaande query uitvoert tegen de AEM Author-omgeving, moet u de gegevens verzenden. Zie [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html?lang=nl-NL) Token van de Toegang van de Lokale Ontwikkeling 1&rbrace; voor demonstratie van het en [ roepend AEM API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=nl-NL#calling-the-aem-api) voor documentatiedetails.
+>    Als u de bovenstaande query uitvoert tegen de AEM Author-omgeving, moet u de gegevens verzenden. Zie [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html?lang=nl-NL) Token van de Toegang van de Lokale Ontwikkeling 1&rbrace; voor demonstratie van het en [&#x200B; roepend AEM API &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=nl-NL#calling-the-aem-api) voor documentatiedetails.
 
-Ook, herzie [ hoe te om een Gepersisteerde vraag ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=nl-NL#execute-persisted-query) uit te voeren, [ Gebruikend vraagvariabelen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=nl-NL#query-variables), en [ Coderend vraag URL voor gebruik door app ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=nl-NL#encoding-query-url) om persisted vraaguitvoering door cliënttoepassingen te leren.
+Ook, herzie [&#x200B; hoe te om een Gepersisteerde vraag &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=nl-NL#execute-persisted-query) uit te voeren, [&#x200B; Gebruikend vraagvariabelen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=nl-NL#query-variables), en [&#x200B; Coderend vraag URL voor gebruik door app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=nl-NL#encoding-query-url) om persisted vraaguitvoering door cliënttoepassingen te leren.
 
 ## De cache-control parameters van de update in persistente query&#39;s {#cache-control-all-adventures}
 
@@ -219,19 +219,19 @@ Met de AEM GraphQL API kunt u de standaardparameters voor het beheren van cache 
 
 * 7200 seconden is het gebrek (s-maxage=7200) TTL voor Dispatcher en CDN; ook gekend als gedeelde geheime voorgeheugens
 
-Gebruik de query `adventures-all` om de cache-besturingsparameters bij te werken. De vraagreactie is groot en het is nuttig om zijn `age` in het geheime voorgeheugen te controleren. Deze voortgezette vraag wordt gebruikt later om de [ cliënttoepassing ](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md) bij te werken.
+Gebruik de query `adventures-all` om de cache-besturingsparameters bij te werken. De vraagreactie is groot en het is nuttig om zijn `age` in het geheime voorgeheugen te controleren. Deze voortgezette vraag wordt gebruikt later om de [&#x200B; cliënttoepassing &#x200B;](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md) bij te werken.
 
 1. Open de Ontdekkingsreiziger GraphiQL en klik de **ellipsen** (...) naast de blijvende vraag, dan klik **Kopballen** om **de Configuratie van het Geheime voorgeheugen** modaal te openen.
 
-   ![ handhaaft de Optie van de Kopbal van GraphQL ](assets/graphql-persisted-queries/persist-graphql-header-option.png)
+   ![&#x200B; handhaaft de Optie van de Kopbal van GraphQL &#x200B;](assets/graphql-persisted-queries/persist-graphql-header-option.png)
 
 
 1. In de **modaal van de Configuratie van het 0&rbrace; Geheime voorgeheugen, werk de `max-age` kopbalwaarde aan `600 ` seconden (10 mins) bij, dan klik** sparen **&#x200B;**
 
-   ![ handhaaft de Configuratie van het Geheime voorgeheugen van GraphQL ](assets/graphql-persisted-queries/persist-graphql-cache-config.png)
+   ![&#x200B; handhaaft de Configuratie van het Geheime voorgeheugen van GraphQL &#x200B;](assets/graphql-persisted-queries/persist-graphql-cache-config.png)
 
 
-Het overzicht [ Caching van uw voortgeduurde vragen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=nl-NL#caching-persisted-queries) voor meer informatie over gebrek cache-controle parameters.
+Het overzicht [&#x200B; Caching van uw voortgeduurde vragen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=nl-NL#caching-persisted-queries) voor meer informatie over gebrek cache-controle parameters.
 
 
 ## Gefeliciteerd!
@@ -240,4 +240,4 @@ Gefeliciteerd! U hebt nu geleerd hoe te om de vragen van GraphQL met parameters 
 
 ## Volgende stappen
 
-In het [ volgende hoofdstuk ](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md), zult u de verzoeken om voortgezette vragen in WKND uitvoeren app.
+In het [&#x200B; volgende hoofdstuk &#x200B;](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md), zult u de verzoeken om voortgezette vragen in WKND uitvoeren app.

@@ -65,15 +65,15 @@ Deze video biedt een overzicht van de ontwikkelingstopologie voor een Edge Deliv
 
 Installeer het volgende op uw computer voordat u de ontwikkeling start:
 
-1. [ Git ](https://git-scm.com/)
-1. [ Node.js &amp; npm ](https://nodejs.org)
-1. [ Code van Microsoft Visual Studio ](https://code.visualstudio.com/) (of gelijkaardige coderedacteur)
+1. [&#x200B; Git &#x200B;](https://git-scm.com/)
+1. [&#x200B; Node.js &amp; npm &#x200B;](https://nodejs.org)
+1. [&#x200B; Code van Microsoft Visual Studio &#x200B;](https://code.visualstudio.com/) (of gelijkaardige coderedacteur)
 
 ## Clone the GitHub repository
 
-Kloon de [ bewaarplaats GitHub die in het nieuwe hoofdstuk van het codeproject ](./1-new-code-project.md) wordt gecreeerd dat het de codeproject van AEM Edge Delivery Services aan uw lokale ontwikkelomgeving bevat.
+Kloon de [&#x200B; bewaarplaats GitHub die in het nieuwe hoofdstuk van het codeproject &#x200B;](./1-new-code-project.md) wordt gecreeerd dat het de codeproject van AEM Edge Delivery Services aan uw lokale ontwikkelomgeving bevat.
 
-![ GitHub bewaart kloon ](./assets/3-local-development-environment/github-clone.png)
+![&#x200B; GitHub bewaart kloon &#x200B;](./assets/3-local-development-environment/github-clone.png)
 
 ```bash
 $ cd ~/Code
@@ -125,13 +125,13 @@ info: Local AEM dev server up and running: http://localhost:3000/
 info: Enabled reverse proxy to https://main--aem-wknd-eds-ue--<YOUR_ORG>.aem.page
 ```
 
-De AEM CLI opent de website in uw browser op `http://localhost:3000/`. De veranderingen in het project worden automatisch heet-opnieuw geladen in Webbrowser, terwijl de inhoudsveranderingen [ het publiceren aan het voorproefmilieu ](./6-author-block.md) vereisen en Webbrowser verfrissen.
+De AEM CLI opent de website in uw browser op `http://localhost:3000/`. De veranderingen in het project worden automatisch heet-opnieuw geladen in Webbrowser, terwijl de inhoudsveranderingen [&#x200B; het publiceren aan het voorproefmilieu &#x200B;](./6-author-block.md) vereisen en Webbrowser verfrissen.
 
-Als de website met een 404 pagina opent, is het waarschijnlijk [ fstab.yaml of paths.json ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) bijgewerkt in [ nieuw codeproject ](./1-new-code-project.md) verkeerd gevormd, of de veranderingen zijn niet begaan aan aan de `main` tak.
+Als de website met een 404 pagina opent, is het waarschijnlijk [&#x200B; fstab.yaml of paths.json &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) bijgewerkt in [&#x200B; nieuw codeproject &#x200B;](./1-new-code-project.md) verkeerd gevormd, of de veranderingen zijn niet begaan aan aan de `main` tak.
 
 ## JSON-fragmenten maken
 
-De projecten van Edge Delivery Services, die gebruikend het [ malplaatje van AEM Boilerplate XWalk ](https://github.com/adobe-rnd/aem-boilerplate-xwalk) worden gecreeerd, baseren zich op configuraties JSON die blokauthoring in de Universele Redacteur toelaten.
+De projecten van Edge Delivery Services, die gebruikend het [&#x200B; malplaatje van AEM Boilerplate XWalk &#x200B;](https://github.com/adobe-rnd/aem-boilerplate-xwalk) worden gecreeerd, baseren zich op configuraties JSON die blokauthoring in de Universele Redacteur toelaten.
 
 - **JSON fragments**: Opgeslagen met hun bijbehorende blokken en bepalen de blokmodellen, de definities, en de filters.
    - **Modelfragmenten**: Opgeslagen bij `/blocks/example/_example.json`.
@@ -139,7 +139,7 @@ De projecten van Edge Delivery Services, die gebruikend het [ malplaatje van AEM
    - **de fragmenten van de Filter**: Opgeslagen bij `/blocks/example/_example.json`.
 
 
-Het [ AEM Boilerplate XWalk projectmalplaatje ](https://github.com/adobe-rnd/aem-boilerplate-xwalk) omvat a [ Eigen ](https://typicode.github.io/husky/) precommit haak die veranderingen in fragmenten JSON ontdekt en hen compileert in de aangewezen `component-*.json` dossiers op `git commit`.
+Het [&#x200B; AEM Boilerplate XWalk projectmalplaatje &#x200B;](https://github.com/adobe-rnd/aem-boilerplate-xwalk) omvat a [&#x200B; Eigen &#x200B;](https://typicode.github.io/husky/) precommit haak die veranderingen in fragmenten JSON ontdekt en hen compileert in de aangewezen `component-*.json` dossiers op `git commit`.
 
 Hoewel de volgende NPM-scripts handmatig via `npm run` kunnen worden uitgevoerd om de JSON-bestanden samen te stellen, is dit gewoonlijk niet nodig omdat deze automatisch door de husky pre-commit haak wordt afgehandeld.
 

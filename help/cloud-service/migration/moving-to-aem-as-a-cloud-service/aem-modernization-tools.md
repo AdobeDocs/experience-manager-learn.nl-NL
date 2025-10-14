@@ -40,16 +40,16 @@ Leer hoe AEM Modernization Tools wordt gebruikt om een bestaande AEM Sites-inhou
 
 ## AEM-moderniseringsgereedschappen gebruiken
 
-![ Levenscyclus van de Hulpmiddelen van de Modernisering van AEM ](./assets/aem-modernization-tools.png)
+![&#x200B; Levenscyclus van de Hulpmiddelen van de Modernisering van AEM &#x200B;](./assets/aem-modernization-tools.png)
 
 De hulpmiddelen van de Modernisering van AEM zetten automatisch bestaande Pagina&#39;s van AEM die uit erfenis statische malplaatjes, stichtingscomponenten, en parsys worden samengesteld om moderne benaderingen zoals editable malplaatjes, de Componenten van WCM van de Kern van AEM, en de Containers van de Lay-out te gebruiken.
 
 ## Belangrijkste activiteiten
 
 + Clone AEM 6.x-productie om AEM Moderniseringsgereedschappen uit te voeren tegen
-+ Download en installeer de [ recentste hulpmiddelen van de Modernisaties van AEM ](https://github.com/adobe/aem-modernize-tools/releases/latest) op AEM 6.x productiekleon via de Manager van het Pakket
++ Download en installeer de [&#x200B; recentste hulpmiddelen van de Modernisaties van AEM &#x200B;](https://github.com/adobe/aem-modernize-tools/releases/latest) op AEM 6.x productiekleon via de Manager van het Pakket
 
-+ [ de Omzetter van de Structuur van de Pagina ](https://opensource.adobe.com/aem-modernize-tools/pages/structure/about.html) werkt bestaande paginainhoud van statisch malplaatje aan een in kaart gebracht editable malplaatje gebruikend lay-outcontainers bij
++ [&#x200B; de Omzetter van de Structuur van de Pagina &#x200B;](https://opensource.adobe.com/aem-modernize-tools/pages/structure/about.html) werkt bestaande paginainhoud van statisch malplaatje aan een in kaart gebracht editable malplaatje gebruikend lay-outcontainers bij
    + Conversieregels definiëren met OSGi-configuratie
    + Paginastructuurconverter uitvoeren op bestaande pagina&#39;s
 
@@ -57,7 +57,7 @@ De hulpmiddelen van de Modernisering van AEM zetten automatisch bestaande Pagina
    + Conversieregels definiëren via definities van JCR-knooppunten/XML
    + Het gereedschap Componentconversie uitvoeren op bestaande pagina&#39;s
 
-+ [ Importeur van het Beleid ](https://opensource.adobe.com/aem-modernize-tools/pages/policy/about.html) leidt tot beleid van de configuratie van het Ontwerp
++ [&#x200B; Importeur van het Beleid &#x200B;](https://opensource.adobe.com/aem-modernize-tools/pages/policy/about.html) leidt tot beleid van de configuratie van het Ontwerp
    + Conversieregels definiëren met behulp van JCR-knooppuntdefinities/XML
    + Beleidsimporteur uitvoeren op basis van bestaande ontwerpdefinities
    + Geïmporteerd beleid toepassen op AEM-componenten en -containers
@@ -71,7 +71,7 @@ Voordat u de praktische oefening probeert, moet u controleren of u de bovenstaan
 + [AEM as a Cloud Service anders denken](./introduction.md)
 + [Modernisering opslagplaats](./repository-modernization.md)
 + [Meerdere en onveranderlijke inhoud](../../developing/basics/mutable-immutable.md)
-+ [ het projectstructuur van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL)
++ [&#x200B; het projectstructuur van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL)
 
 Zorg er ook voor dat u de vorige hands-on oefening hebt uitgevoerd:
 
@@ -101,9 +101,9 @@ Zorg er ook voor dat u de vorige hands-on oefening hebt uitgevoerd:
 
 ## Overige middelen
 
-+ [ de Hulpmiddelen van de Modernisaties van AEM van de Download ](https://github.com/adobe/aem-modernize-tools/releases/latest)
-+ [ documentatie van Hulpmiddelen van de Modernisering van AEM ](https://opensource.adobe.com/aem-modernize-tools/)
-+ [ AEM Gems - Introducerend de Reeks van de Modernisering van AEM ](https://helpx.adobe.com/nl/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
++ [&#x200B; de Hulpmiddelen van de Modernisaties van AEM van de Download &#x200B;](https://github.com/adobe/aem-modernize-tools/releases/latest)
++ [&#x200B; documentatie van Hulpmiddelen van de Modernisering van AEM &#x200B;](https://opensource.adobe.com/aem-modernize-tools/)
++ [&#x200B; AEM Gems - Introducerend de Reeks van de Modernisering van AEM &#x200B;](https://helpx.adobe.com/nl/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
 
 1. Implementeer de onlangs gemoderniseerde wint-legacy site op de lokale AEM SDK. AEM ASK kan hier worden gedownload:
-   + [ Portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).
+   + [&#x200B; Portaal van de Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).

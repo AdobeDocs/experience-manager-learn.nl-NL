@@ -28,7 +28,7 @@ Hieronder volgt een index met veelvoorkomende problemen en fouten, samen met de 
 
 + __Fout__: Vertoning geeft volledig (wanneer een beeld) terug of is corrupt en kan niet worden geopend.
 
-  ![ de Vertoning is gedeeltelijk teruggegeven getekend ](./assets/troubleshooting/develop__await.png)
+  ![&#x200B; de Vertoning is gedeeltelijk teruggegeven getekend &#x200B;](./assets/troubleshooting/develop__await.png)
 
 + __Oorzaak__: De functie van de worker `renditionCallback` bestaat alvorens de vertoning volledig aan `rendition.path` kan worden geschreven.
 + __Resolutie__: Herzie de code van de douanearbeider en zorg ervoor alle asynchrone vraag synchroon wordt gemaakt gebruikend `await`.
@@ -80,9 +80,9 @@ Het Hulpmiddel van de Ontwikkeling van Asset Compute kan een staat ingaan waar h
 
 + __Fout:__ Er is geen manier om toegevoegde brondossiers uit de UI van Hulpmiddelen van de Ontwikkeling te verwijderen
 + __Oorzaak:__ Deze functionaliteit is niet uitgevoerd
-+ __Resolutie:__ Login uw leverancier van de wolkenopslag gebruikend de geloofsbrieven die in `.env` worden bepaald. Bepaal de plaats van de container die door de Hulpmiddelen van de Ontwikkeling (ook in `.env` wordt gespecificeerd) wordt gebruikt, navigeer in de __bron__ omslag, en schrap om het even welke bronbeelden die. U kunt de stappen moeten uitvoeren die in [ worden geschetst Source dossiers dropdown onjuist ](#source-files-dropdown-incorrect) als de geschrapte brondossiers in dropdown blijven tonen aangezien zij plaatselijk in de &quot;toepassingsstaat van de Ontwikkeling hulpmiddelen&quot;kunnen worden in het voorgeheugen ondergebracht.
++ __Resolutie:__ Login uw leverancier van de wolkenopslag gebruikend de geloofsbrieven die in `.env` worden bepaald. Bepaal de plaats van de container die door de Hulpmiddelen van de Ontwikkeling (ook in `.env` wordt gespecificeerd) wordt gebruikt, navigeer in de __bron__ omslag, en schrap om het even welke bronbeelden die. U kunt de stappen moeten uitvoeren die in [&#x200B; worden geschetst Source dossiers dropdown onjuist &#x200B;](#source-files-dropdown-incorrect) als de geschrapte brondossiers in dropdown blijven tonen aangezien zij plaatselijk in de &quot;toepassingsstaat van de Ontwikkeling hulpmiddelen&quot;kunnen worden in het voorgeheugen ondergebracht.
 
-  ![ Microsoft Azure Blob Storage ](./assets/troubleshooting/dev-tool__remove-source-files.png)
+  ![&#x200B; Microsoft Azure Blob Storage &#x200B;](./assets/troubleshooting/dev-tool__remove-source-files.png)
 
 ## Testen{#test}
 
@@ -92,7 +92,7 @@ Het Hulpmiddel van de Ontwikkeling van Asset Compute kan een staat ingaan waar h
 + __Oorzaak:__ de worker slaagde erin om een vertoning te produceren wegens een onverwachte fout zoals een de syntaxisfout van JavaScript.
 + __Resolutie:__ herzie de 2&rbrace; van de testuitvoering bij `/build/test-results/test-worker/test.log`. `test.log` Zoek de sectie in dit bestand die overeenkomt met de testcase voor mislukken en controleer of er fouten zijn opgetreden.
 
-  ![ het Oplossen van problemen - Geen vertoning produceerde ](./assets/troubleshooting/test__no-rendition-generated.png)
+  ![&#x200B; het Oplossen van problemen - Geen vertoning produceerde &#x200B;](./assets/troubleshooting/test__no-rendition-generated.png)
 
 ### Test genereert onjuiste uitvoering, waardoor de test mislukt{#tests-generates-incorrect-rendition}
 
@@ -109,7 +109,7 @@ Het Hulpmiddel van de Ontwikkeling van Asset Compute kan een staat ingaan waar h
 
 + __Fout__: De verwerkingslancering van de fout: Fout: Kon niet verbinden met zuiveren doel bij..
 + __Oorzaak__: De Desktop van de Docker loopt niet op het lokale systeem. Verifieer dit door de Console van de Foutopsporing van de Code van VS (Mening > Debug Console) te herzien, bevestigend deze fout wordt gemeld.
-+ __Resolutie__: De Desktop van het Begin [ van de Dokker en bevestigt de vereiste beelden van de Dokker worden geïnstalleerd ](./set-up/development-environment.md#docker).
++ __Resolutie__: De Desktop van het Begin [&#x200B; van de Dokker en bevestigt de vereiste beelden van de Dokker worden geïnstalleerd &#x200B;](./set-up/development-environment.md#docker).
 
 ### Onderbrekingspunten worden niet gepauzeerd{#breakpoints-no-pausing}
 
@@ -128,8 +128,8 @@ Het Hulpmiddel van de Ontwikkeling van Asset Compute kan een staat ingaan waar h
 ### Worker-time-out tijdens foutopsporing{#worker-times-out-while-debugging}
 
 + __Fout__: Zuiver de rapporten van de Console &quot;Actie zal onderbreking in -XXX milliseconden&quot;of [&#128279;](./develop/development-tool.md) de vertoningsvoorproef van de vertoningen van het Hulpmiddel van de Ontwikkeling van Asset Compute  voor onbepaalde tijd of
-+ __Oorzaak__: De arbeidersonderbreking zoals bepaald in [ manifest.yml ](./develop/manifest.md) wordt overschreden tijdens het zuiveren.
-+ __Resolutie__: Verhoog tijdelijk de onderbreking van de worker in [ manifest.yml ](./develop/manifest.md) of versnelt het zuiveren activiteiten.
++ __Oorzaak__: De arbeidersonderbreking zoals bepaald in [&#x200B; manifest.yml &#x200B;](./develop/manifest.md) wordt overschreden tijdens het zuiveren.
++ __Resolutie__: Verhoog tijdelijk de onderbreking van de worker in [&#x200B; manifest.yml &#x200B;](./develop/manifest.md) of versnelt het zuiveren activiteiten.
 
 ### Kan foutopsporingsproces niet beëindigen{#cannot-terminate-debugger-process}
 
@@ -141,7 +141,7 @@ Het Hulpmiddel van de Ontwikkeling van Asset Compute kan een staat ingaan waar h
   $ aio update
   ```
 
-  ![ het Oplossen van problemen - de update van het a-gebouw ](./assets/troubleshooting/debug__terminate.png)
+  ![&#x200B; het Oplossen van problemen - de update van het a-gebouw &#x200B;](./assets/troubleshooting/debug__terminate.png)
 
 ## Implementeren{#deploy}
 
@@ -163,4 +163,4 @@ Het Hulpmiddel van de Ontwikkeling van Asset Compute kan een staat ingaan waar h
 
 + __Fout:__ Ontbroken symbool van de Verwerking van Activa dat op activa wordt getoond
 + __Oorzaak:__ een fout kwam in de uitvoering van de douanearbeider voor
-+ __Resolutie:__ volg de instructies op [ het zuiveren Adobe I/O Runtime actities ](./test-debug/debug.md#aio-app-logs) gebruikend `aio app logs`.
++ __Resolutie:__ volg de instructies op [&#x200B; het zuiveren Adobe I/O Runtime actities &#x200B;](./test-debug/debug.md#aio-app-logs) gebruikend `aio app logs`.

@@ -61,11 +61,11 @@ Deze volgorde is een algemene regel, wat betekent dat er uitzonderingen bestaan.
 
 ## AEM API&#39;s
 
-* [**AEM API JavaDocs** ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html)
+* [**AEM API JavaDocs** &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html)
 
 AEM API&#39;s bieden abstracties en functionaliteit die specifiek zijn voor gebruikssituaties die in productie zijn.
 
-Bijvoorbeeld, verstrekken AEM [ PageManager ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) en [ Pagina ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) APIs abstracties voor `cq:Page` knopen in AEM die Web-pagina&#39;s vertegenwoordigen.
+Bijvoorbeeld, verstrekken AEM [&#x200B; PageManager &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) en [&#x200B; Pagina &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) APIs abstracties voor `cq:Page` knopen in AEM die Web-pagina&#39;s vertegenwoordigen.
 
 Hoewel deze knooppunten beschikbaar zijn via [!DNL Sling] API&#39;s als bronnen en JCR API&#39;s als knooppunten, bieden AEM API&#39;s abstracties voor veelvoorkomende gebruiksgevallen. Het gebruik van de AEM API&#39;s zorgt voor een consistent gedrag tussen AEM en het product, en aanpassingen en extensies voor AEM.
 
@@ -85,60 +85,60 @@ Nieuwe abstracties zoals [!DNL Content Fragments] en [!DNL Experience Fragments]
 
 ### Query-API&#39;s
 
-AEM ondersteunt meerdere querytalen. De drie belangrijkste talen zijn [ JCR-SQL2 ](https://docs.jboss.org/jbossdna/0.7/manuals/reference/html/jcr-query-and-search.html), XPath, en [ de Bouwer van de Vraag van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=nl-NL).
+AEM ondersteunt meerdere querytalen. De drie belangrijkste talen zijn [&#x200B; JCR-SQL2 &#x200B;](https://docs.jboss.org/jbossdna/0.7/manuals/reference/html/jcr-query-and-search.html), XPath, en [&#x200B; de Bouwer van de Vraag van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=nl-NL).
 
 De belangrijkste zorg is het handhaven van een verenigbare vraagtaal over de codebasis, om ingewikkeldheid en kosten te verminderen om te begrijpen.
 
 Alle vraagtalen hebben in feite de zelfde prestatiesprofielen, aangezien [!DNL Apache Oak] hen aan JCR-SQL2 voor definitieve vraaguitvoering overstapt, en de omzettingstijd aan JCR-SQL2 verwaarloosbaar in vergelijking met de vraagtijd zelf is.
 
-De aangewezen API is [ de Bouwer van de Vraag van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=nl-NL), die de hoogste niveauabstractie is en robuuste API voor het construeren, het uitvoeren van, en het terugwinnen van resultaten voor vragen verstrekt, en het volgende verstrekt:
+De aangewezen API is [&#x200B; de Bouwer van de Vraag van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=nl-NL), die de hoogste niveauabstractie is en robuuste API voor het construeren, het uitvoeren van, en het terugwinnen van resultaten voor vragen verstrekt, en het volgende verstrekt:
 
 * Eenvoudige, parameterized vraagbouw (vraagparams die als Kaart worden gemodelleerd)
-* Eigen [ Java™ API en HTTP APIs ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL)
-* [ Debugger van de Vraag van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=nl-NL)
-* [ AEM voorspelt ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-predicate-reference.html?lang=nl-NL) ondersteunend gemeenschappelijke vraagvereisten
+* Eigen [&#x200B; Java™ API en HTTP APIs &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL)
+* [&#x200B; Debugger van de Vraag van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=nl-NL)
+* [&#x200B; AEM voorspelt &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-predicate-reference.html?lang=nl-NL) ondersteunend gemeenschappelijke vraagvereisten
 
-* Uitbreidbare API, die voor de ontwikkeling van douane [ vraagpredikaten ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) toestaat
-* JCR-SQL2 en XPath kunnen direct via [[!DNL Sling] worden uitgevoerd ](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) en [ JCR APIs ](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), terugkerend resultaten a [[!DNL Sling]  Middelen ](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) of [ Knooppunten JCR ](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html), respectievelijk.
+* Uitbreidbare API, die voor de ontwikkeling van douane [&#x200B; vraagpredikaten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) toestaat
+* JCR-SQL2 en XPath kunnen direct via [[!DNL Sling] worden uitgevoerd &#x200B;](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) en [&#x200B; JCR APIs &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), terugkerend resultaten a [[!DNL Sling]  Middelen &#x200B;](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) of [&#x200B; Knooppunten JCR &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html), respectievelijk.
 
 >[!CAUTION]
 >
->AEM QueryBuilder-API lekt een ResourceResolver-object. Om dit lek te verlichten, volg dit [ codesteekproef ](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/search/querybuilder/impl/SampleQueryBuilder.java#L164).
+>AEM QueryBuilder-API lekt een ResourceResolver-object. Om dit lek te verlichten, volg dit [&#x200B; codesteekproef &#x200B;](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/search/querybuilder/impl/SampleQueryBuilder.java#L164).
 >
 
 ## [!DNL Sling] API&#39;s
 
-* [**Apache [!DNL Sling] API JavaDocs** ](https://sling.apache.org/apidocs/sling10/)
+* [**Apache [!DNL Sling] API JavaDocs** &#x200B;](https://sling.apache.org/apidocs/sling10/)
 
-[ Apache  [!DNL Sling] ](https://sling.apache.org/) is het RESTful Webkader dat AEM steunt. [!DNL Sling] verstrekt HTTP- verzoek het verpletteren, modelleert knopen JCR als middelen, verstrekt veiligheidscontext, en veel meer.
+[&#x200B; Apache  [!DNL Sling] &#x200B;](https://sling.apache.org/) is het RESTful Webkader dat AEM steunt. [!DNL Sling] verstrekt HTTP- verzoek het verpletteren, modelleert knopen JCR als middelen, verstrekt veiligheidscontext, en veel meer.
 
 API&#39;s van [!DNL Sling] hebben het extra voordeel dat ze kunnen worden gemaakt voor extensies. Dit betekent dat het vaak eenvoudiger en veiliger is om het gedrag van toepassingen die met [!DNL Sling] API&#39;s zijn gemaakt, te verbeteren dan van minder uitbreidbare JCR API&#39;s.
 
 ### Veelvoorkomende toepassingen van API&#39;s van [!DNL Sling]
 
-* De toegang tot van knopen JCR als [[!DNL Sling Resources] ](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) en de toegang tot van hun gegevens via [ ValueMaps ](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ValueMap.html).
+* De toegang tot van knopen JCR als [[!DNL Sling Resources] &#x200B;](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) en de toegang tot van hun gegevens via [&#x200B; ValueMaps &#x200B;](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ValueMap.html).
 
-* Het verstrekken van veiligheidscontext via [ ResourceResolver ](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html).
-* Creërend en verwijderend middelen via ResourceResolver [ creeer/beweeg/exemplaar/schrapt methodes ](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html).
-* Het bijwerken eigenschappen via [ ModifyingValueMap ](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ModifiableValueMap.html).
+* Het verstrekken van veiligheidscontext via [&#x200B; ResourceResolver &#x200B;](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html).
+* Creërend en verwijderend middelen via ResourceResolver [&#x200B; creeer/beweeg/exemplaar/schrapt methodes &#x200B;](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html).
+* Het bijwerken eigenschappen via [&#x200B; ModifyingValueMap &#x200B;](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ModifiableValueMap.html).
 * Bouwstenen voor aanvraagverwerking maken
 
-   * [ Servlets ](https://sling.apache.org/documentation/the-sling-engine/servlets.html)
-   * [ de Filters van Servlet ](https://sling.apache.org/documentation/the-sling-engine/filters.html)
+   * [&#x200B; Servlets &#x200B;](https://sling.apache.org/documentation/the-sling-engine/servlets.html)
+   * [&#x200B; de Filters van Servlet &#x200B;](https://sling.apache.org/documentation/the-sling-engine/filters.html)
 
 * Asynchrone bouwstenen voor werkverwerking
 
-   * [ Gebeurtenis en de Handlers van de Baan ](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)
-   * [ Planner ](https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html)
-   * [ Sling Models ](https://sling.apache.org/documentation/bundles/models.html)
+   * [&#x200B; Gebeurtenis en de Handlers van de Baan &#x200B;](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)
+   * [&#x200B; Planner &#x200B;](https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html)
+   * [&#x200B; Sling Models &#x200B;](https://sling.apache.org/documentation/bundles/models.html)
 
-* [ de gebruikers van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=nl-NL)
+* [&#x200B; de gebruikers van de Dienst &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=nl-NL)
 
 ## JCR-API&#39;s
 
-* **[JCR 2.0 JavaDocs ](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)**
+* **[JCR 2.0 JavaDocs &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)**
 
-[ JCR (de Bewaarplaats van de Inhoud Java™) 2.0 APIs ](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) maakt deel uit van een specificatie voor de implementaties van JCR (in het geval van AEM, [ Apache Jackrabbit Oak ](https://jackrabbit.apache.org/oak/docs/)). Alle JCR-implementatie moet in overeenstemming zijn met deze API&#39;s en deze implementeren. Dit is dus de API op het laagste niveau voor interactie met AEM-inhoud.
+[&#x200B; JCR (de Bewaarplaats van de Inhoud Java™) 2.0 APIs &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) maakt deel uit van een specificatie voor de implementaties van JCR (in het geval van AEM, [&#x200B; Apache Jackrabbit Oak &#x200B;](https://jackrabbit.apache.org/oak/docs/)). Alle JCR-implementatie moet in overeenstemming zijn met deze API&#39;s en deze implementeren. Dit is dus de API op het laagste niveau voor interactie met AEM-inhoud.
 
 De JCR zelf is een hiërarchische/boomgebaseerde NoSQL datastore AEM gebruikt als opslagplaats voor inhoud. De JCR heeft een uitgebreide reeks ondersteunde API&#39;s, variërend van inhoud-CRUD tot het opvragen van inhoud. Ondanks deze robuuste API hebben ze maar zelden de voorkeur boven AEM en [!DNL Sling] -abstracties op een hoger niveau.
 
@@ -154,19 +154,19 @@ Hoewel de JCR een AEM-opslagplaats voor inhoud is, hebben de API&#39;s NIET de v
 
 ### Veelvoorkomende toepassingen van JCR API&#39;s
 
-* [ Toegangsbeheer ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=nl-NL)
-* [ Toegelaten beheer (gebruikers/groepen) ](https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/user/package-summary.html)
+* [&#x200B; Toegangsbeheer &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=nl-NL)
+* [&#x200B; Toegelaten beheer (gebruikers/groepen) &#x200B;](https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/user/package-summary.html)
 * JCR-observatie (luisteren naar JCR-gebeurtenissen)
 * Diepknoopstructuren maken
 
-   * Terwijl het Verdelen APIs de verwezenlijking van middelen steunt, heeft JCR APIs gemakmethodes in [ JcrUtils ](https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/commons/JcrUtils.html) en [ JcrUtil ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/jcr/JcrUtil.html) die het creëren van diepe structuren versnellen.
+   * Terwijl het Verdelen APIs de verwezenlijking van middelen steunt, heeft JCR APIs gemakmethodes in [&#x200B; JcrUtils &#x200B;](https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/commons/JcrUtils.html) en [&#x200B; JcrUtil &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/jcr/JcrUtil.html) die het creëren van diepe structuren versnellen.
 
 ## OSGi API&#39;s
 
-* [**OSGi R6 JavaDocs** ](https://docs.osgi.org/javadoc/r6/cmpn/index.html?overview-summary.html)
-* **[OSGi Verklarende Diensten 1.2 de Annotaties JavaDocs van de Component ](https://docs.osgi.org/javadoc/r6/cmpn/org/osgi/service/component/annotations/package-summary.html)**
-* **[OSGi de Verklarende Diensten 1.2 de Annotaties JavaDocs van Metatype ](https://docs.osgi.org/javadoc/r6/cmpn/org/osgi/service/metatype/annotations/package-summary.html)**
-* [**OSGi Kader JavaDocs** ](https://docs.osgi.org/javadoc/r6/core/org/osgi/framework/package-summary.html)
+* [**OSGi R6 JavaDocs** &#x200B;](https://docs.osgi.org/javadoc/r6/cmpn/index.html?overview-summary.html)
+* **[OSGi Verklarende Diensten 1.2 de Annotaties JavaDocs van de Component &#x200B;](https://docs.osgi.org/javadoc/r6/cmpn/org/osgi/service/component/annotations/package-summary.html)**
+* **[OSGi de Verklarende Diensten 1.2 de Annotaties JavaDocs van Metatype &#x200B;](https://docs.osgi.org/javadoc/r6/cmpn/org/osgi/service/metatype/annotations/package-summary.html)**
+* [**OSGi Kader JavaDocs** &#x200B;](https://docs.osgi.org/javadoc/r6/core/org/osgi/framework/package-summary.html)
 
 Er is weinig overlapping tussen de OSGi API&#39;s en de API&#39;s op hoger niveau (AEM, [!DNL Sling] en JCR), en de noodzaak om OSGi API&#39;s te gebruiken is zeldzaam en vereist een hoog niveau van AEM-ontwikkelingsexpertise.
 
@@ -180,9 +180,9 @@ OSGi bepaalt een specificatie alle containers OSGi moeten uitvoeren en met in ov
 
 * OSGi-annotaties voor het declareren van OSGi-diensten en -componenten.
 
-   * Voorkeur [ OSGi de Verklarende Diensten (DS) 1.2 Annotaties ](https://docs.osgi.org/javadoc/r6/cmpn/org/osgi/service/component/annotations/package-summary.html) over [ Felix SCR Annotations ](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html) voor het verklaren van de diensten OSGi en componenten
+   * Voorkeur [&#x200B; OSGi de Verklarende Diensten (DS) 1.2 Annotaties &#x200B;](https://docs.osgi.org/javadoc/r6/cmpn/org/osgi/service/component/annotations/package-summary.html) over [&#x200B; Felix SCR Annotations &#x200B;](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html) voor het verklaren van de diensten OSGi en componenten
 
-* OSGi APIs voor dynamisch in-code [ un/registering OSGi diensten/componenten ](https://docs.osgi.org/javadoc/r6/core/org/osgi/framework/package-summary.html).
+* OSGi APIs voor dynamisch in-code [&#x200B; un/registering OSGi diensten/componenten &#x200B;](https://docs.osgi.org/javadoc/r6/core/org/osgi/framework/package-summary.html).
 
    * Het gebruik van OSGi DS 1.2-annotaties verdient de voorkeur wanneer voorwaardelijk OSGi Service/Component management niet nodig is (wat meestal het geval is).
 
@@ -198,22 +198,22 @@ Let ook op dat de definitie van de OSGi-configuratienode de voorkeur geeft aan `
 
 ### AEM Asset-API&#39;s
 
-* De voorkeur [`com.day.cq.dam.api` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/dam/api/package-summary.html) over [`com.adobe.granite.asset.api` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/asset/api/package-summary.html).
+* De voorkeur [`com.day.cq.dam.api` &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/dam/api/package-summary.html) over [`com.adobe.granite.asset.api` &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/asset/api/package-summary.html).
 
    * Hoewel de Assets API&#39;s van `com.day.cq` meer gratis tools bieden voor het gebruik van AEM-middelen voor middelenbeheer.
    * De Assets API&#39;s van Granite ondersteunen gebruiksscenario&#39;s voor middelenbeheer op laag niveau (versie, relaties).
 
 ### Query-API&#39;s
 
-* AEM QueryBuilder steunt bepaalde vraagfuncties zoals [ suggesties ](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Suggestions), spellcheck, en indexwenken onder andere minder gemeenschappelijke functies niet. Om met deze functies te vragen wordt JCR-SQL2 geprefereerd.
+* AEM QueryBuilder steunt bepaalde vraagfuncties zoals [&#x200B; suggesties &#x200B;](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Suggestions), spellcheck, en indexwenken onder andere minder gemeenschappelijke functies niet. Om met deze functies te vragen wordt JCR-SQL2 geprefereerd.
 
 ### [!DNL Sling] Serverregistratie {#sling-servlet-registration}
 
-* [!DNL Sling] servlet registratie, verkies [ OSGi DS 1.2 aantekeningen met @SlingServletResourceTypes ](https://sling.apache.org/documentation/the-sling-engine/servlets.html) over `@SlingServlet`
+* [!DNL Sling] servlet registratie, verkies [&#x200B; OSGi DS 1.2 aantekeningen met @SlingServletResourceTypes &#x200B;](https://sling.apache.org/documentation/the-sling-engine/servlets.html) over `@SlingServlet`
 
 ### [!DNL Sling] Filterregistratie {#sling-filter-registration}
 
-* [!DNL Sling] filterregistratie, verkies [ OSGi DS 1.2 aantekeningen met @SlingServletFilter ](https://sling.apache.org/documentation/the-sling-engine/filters.html) over `@SlingFilter`
+* [!DNL Sling] filterregistratie, verkies [&#x200B; OSGi DS 1.2 aantekeningen met @SlingServletFilter &#x200B;](https://sling.apache.org/documentation/the-sling-engine/filters.html) over `@SlingFilter`
 
 ## Nuttige codefragmenten
 
@@ -223,7 +223,7 @@ Hieronder vindt u handige Java™-codefragmenten die tips en trucs weergeven voo
 
 #### Auto-closing Sling ResourceResolver
 
-Sinds AEM 6.2, is [!DNL Sling] ResourceResolver `AutoClosable` in a [ probeer-met-middelen ](https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html) verklaring. Met deze syntaxis is een expliciete aanroep van `resourceResolver .close()` niet nodig.
+Sinds AEM 6.2, is [!DNL Sling] ResourceResolver `AutoClosable` in a [&#x200B; probeer-met-middelen &#x200B;](https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html) verklaring. Met deze syntaxis is een expliciete aanroep van `resourceResolver .close()` niet nodig.
 
 ```java
 @Reference
@@ -356,7 +356,7 @@ Resource resource = asset.adaptTo(Resource.class);
 
 ### Eigenschappen schrijven met de functie ModisibleValueMap van [!DNL Sling]
 
-Het gebruik [ ModifyingValueMap ](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ModifiableValueMap.html) van [!DNL Sling] &lbrace;om eigenschappen aan knopen te schrijven. Dit kan alleen naar het huidige knooppunt worden geschreven (relatieve paden van eigenschappen worden niet ondersteund).
+Het gebruik [&#x200B; ModifyingValueMap &#x200B;](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ModifiableValueMap.html) van [!DNL Sling] &lbrace;om eigenschappen aan knopen te schrijven. Dit kan alleen naar het huidige knooppunt worden geschreven (relatieve paden van eigenschappen worden niet ondersteund).
 
 De aanroep van `.adaptTo(ModifiableValueMap.class)` vereist schrijfmachtigingen naar de bron, anders wordt null geretourneerd.
 

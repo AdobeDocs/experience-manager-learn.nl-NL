@@ -30,8 +30,8 @@ De componentconsole biedt de volgende functionaliteit:
 * [!UICONTROL Live Usage]: geeft een lijst weer van pagina&#39;s waarin de component is opgenomen
 
 U vindt de componentconsole onder **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Components]** .
-De Console URL van de component (lokale Auteur van AEM): [ http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)
+De Console URL van de component (lokale Auteur van AEM): [&#x200B; http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ Documentatie van de Console van Componenten ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/authoring/using/default-components-console.html)
+* [&#x200B; Documentatie van de Console van Componenten &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/authoring/using/default-components-console.html)

@@ -19,7 +19,7 @@ ht-degree: 0%
 # Een voorvertoning weergeven van een lokale extensie van Universal Editor
 
 >[!TIP]
-> Leer hoe te [ tot een Universele uitbreiding van de Redacteur ](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) leiden.
+> Leer hoe te [&#x200B; tot een Universele uitbreiding van de Redacteur &#x200B;](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) leiden.
 
 Als u een voorvertoning van de extensie Universal Editor wilt weergeven tijdens de ontwikkeling, moet u:
 
@@ -30,7 +30,7 @@ Als u een voorvertoning van de extensie Universal Editor wilt weergeven tijdens 
 
 ## De extensie lokaal uitvoeren
 
-Dit veronderstelt u reeds de uitbreiding van de Redacteur van de a [ Universele ](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) hebt gecreeerd en het willen voorproef terwijl het testen en het ontwikkelen plaatselijk.
+Dit veronderstelt u reeds de uitbreiding van de Redacteur van de a [&#x200B; Universele &#x200B;](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) hebt gecreeerd en het willen voorproef terwijl het testen en het ontwikkelen plaatselijk.
 
 Start de extensie Universal Editor met:
 
@@ -62,18 +62,18 @@ https://localhost:9080
 
 Er verschijnt een certificaatwaarschuwing in uw browser. Accepteer het certificaat om verder te gaan.
 
-![ Accepteer het zelf-ondertekende certificaat ](./assets/local-extension-preview/accept-certificate.png)
+![&#x200B; Accepteer het zelf-ondertekende certificaat &#x200B;](./assets/local-extension-preview/accept-certificate.png)
 
 Nadat de lokale extensie is geaccepteerd, ziet u de tijdelijke aanduiding voor de pagina:
 
-![ de Uitbreiding is toegankelijk ](./assets/local-extension-preview/extension-accessible.png)
+![&#x200B; de Uitbreiding is toegankelijk &#x200B;](./assets/local-extension-preview/extension-accessible.png)
 
 
 ## Een pagina openen in de Universal Editor
 
-Open Universele Redacteur via de [ Universele console van de Redacteur ](https://experience.adobe.com/#/@myOrg/aem/editor/canvas/) of door een pagina in AEM Sites uit te geven die Universele Redacteur gebruikt:
+Open Universele Redacteur via de [&#x200B; Universele console van de Redacteur &#x200B;](https://experience.adobe.com/#/@myOrg/aem/editor/canvas/) of door een pagina in AEM Sites uit te geven die Universele Redacteur gebruikt:
 
-![ open een pagina in Universele Redacteur ](./assets/local-extension-preview/open-page-in-ue.png)
+![&#x200B; open een pagina in Universele Redacteur &#x200B;](./assets/local-extension-preview/open-page-in-ue.png)
 
 
 ## De extensie laden
@@ -91,7 +91,7 @@ Voorbeeld:
 https://author-pXXX-eXXX.adobeaemcloud.com/content/aem-ue-wknd/index.html?devMode=true&ext=https://localhost:9080
 ```
 
-![ werk de Universele plaats URL van de Redacteur ](./assets/local-extension-preview/update-location-url.png) bij
+![&#x200B; werk de Universele plaats URL van de Redacteur &#x200B;](./assets/local-extension-preview/update-location-url.png) bij
 
 
 ## Voorvertoning van de extensie weergeven
@@ -102,5 +102,5 @@ De Universal Editor laadt nu uw lokale extensie, alleen in uw browsersessie.
 
 Wijzigingen die u lokaal aanbrengt, worden direct doorgevoerd.
 
-![ Lokale die uitbreiding ](./assets/local-extension-preview/extension-loaded.png) wordt geladen
+![&#x200B; Lokale die uitbreiding &#x200B;](./assets/local-extension-preview/extension-loaded.png) wordt geladen
 

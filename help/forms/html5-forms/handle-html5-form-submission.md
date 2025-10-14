@@ -26,7 +26,7 @@ HTML5-formulieren kunnen worden ingediend bij een servlet die in AEM wordt gehos
 
 ## Verzendhandler maken
 
-Een eenvoudige servlet kan de verzending van het HTML5-formulier afhandelen. Extraheer de verzonden gegevens met behulp van het volgende codefragment. Download [ servlet ](assets/html5-submit-handler.zip) die in dit leerprogramma wordt verstrekt. Installeer [ servlet ](assets/html5-submit-handler.zip) gebruikend de [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp).
+Een eenvoudige servlet kan de verzending van het HTML5-formulier afhandelen. Extraheer de verzonden gegevens met behulp van het volgende codefragment. Download [&#x200B; servlet &#x200B;](assets/html5-submit-handler.zip) die in dit leerprogramma wordt verstrekt. Installeer [&#x200B; servlet &#x200B;](assets/html5-submit-handler.zip) gebruikend de [&#x200B; pakketmanager &#x200B;](http://localhost:4502/crx/packmgr/index.jsp).
 
 ```java
 StringBuffer stringBuffer = new StringBuffer();
@@ -39,11 +39,11 @@ while ((line = reader.readLine()) != null) {
 System.out.println("The submitted form data is " + stringBuffer.toString());
 ```
 
-Verzeker u de [ Configuratie van SDK van de Cliënt LiveCycle van Adobe ](https://helpx.adobe.com/nl/aem-forms/6/submit-form-data-livecycle-process.html) hebt gevormd als u van plan bent om de code te gebruiken om een proces aan te halen J2EE.
+Verzeker u de [&#x200B; Configuratie van SDK van de Cliënt LiveCycle van Adobe &#x200B;](https://helpx.adobe.com/nl/aem-forms/6/submit-form-data-livecycle-process.html) hebt gevormd als u van plan bent om de code te gebruiken om een proces aan te halen J2EE.
 
 ## De verzendURL van het HTML5-formulier configureren
 
-![ voorlegt URL ](assets/submit-url.PNG)
+![&#x200B; voorlegt URL &#x200B;](assets/submit-url.PNG)
 
 - Open xdp en navigeer aan _Eigenschappen_ -> _Geavanceerd_.
 - Kopieer http://localhost:4502/content/AemFormsSamples/handlehml5formsubmission.html en plak het in het tekstveld URL verzenden.
@@ -51,7 +51,7 @@ Verzeker u de [ Configuratie van SDK van de Cliënt LiveCycle van Adobe ](https:
 
 ### Item toevoegen in Paden uitsluiten
 
-- Ga naar [ configMgr ](http://localhost:4502/system/console/configMgr).
+- Ga naar [&#x200B; configMgr &#x200B;](http://localhost:4502/system/console/configMgr).
 - Onderzoek naar _de GranietCSRF Filter van Adobe_.
 - Voeg de volgende vermelding toe in de sectie Uitgesloten paden: _/content/AemFormsSamples/handlehml5formsubmission_ .
 - Sla uw wijzigingen op.
@@ -65,5 +65,5 @@ Verzeker u de [ Configuratie van SDK van de Cliënt LiveCycle van Adobe ](https:
 
 ### Extra lezingen
 
-Voor meer informatie bij het produceren van PDFs van HTML5 vormvoorlegging, verwijs naar dit [ artikel ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html?lang=nl-NL).
+Voor meer informatie bij het produceren van PDFs van HTML5 vormvoorlegging, verwijs naar dit [&#x200B; artikel &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html?lang=nl-NL).
 

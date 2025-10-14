@@ -29,11 +29,11 @@ De meest elementaire vorm van foutopsporing voor Asset Compute-workers gebruikt 
 Deze loginstructies zijn beschikbaar voor review op een andere manier, afhankelijk van de manier waarop de Asset Compute-worker wordt uitgevoerd:
 
 + Van `aio app run`, drukken de logboeken aan standaard uit en de [&#128279;](../develop/development-tool.md) Logboeken van de Activering van het 1&rbrace; Hulpmiddel van de Ontwikkeling &lbrace;
-  ![ de looppasconsole.log van de AIR app (...) ](./assets/debug/console-log__aio-app-run.png)
+  ![&#x200B; de looppasconsole.log van de AIR app (...) &#x200B;](./assets/debug/console-log__aio-app-run.png)
 + Vanuit `aio app test` worden logbestanden afgedrukt naar `/build/test-results/test-worker/test.log`
-  ![ Ao app test console.log (...) ](./assets/debug/console-log__aio-app-test.png)
+  ![&#x200B; Ao app test console.log (...) &#x200B;](./assets/debug/console-log__aio-app-test.png)
 + Met `wskdebug` worden loginstructies afgedrukt naar de VS-console voor foutopsporing van code (Weergave > Foutopsporingsconsole), standaard uit
-  ![ wskdebug console.log (...) ](./assets/debug/console-log__wskdebug.png)
+  ![&#x200B; wskdebug console.log (...) &#x200B;](./assets/debug/console-log__wskdebug.png)
 + Loginstructies worden met `aio app logs` afgedrukt naar het activeringslogbestand.
 
 ## Foutopsporing op afstand via aangesloten foutopsporing
@@ -42,13 +42,13 @@ Deze loginstructies zijn beschikbaar voor review op een andere manier, afhankeli
 >
 >Microsoft Visual Studio Code 1.48.0 of groter van het gebruik voor verenigbaarheid met wskdebug
 
-[ wskdebug ](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module, steunt het vastmaken van debugger aan de arbeiders van Asset Compute, met inbegrip van de capaciteit om breekpunten in de Code van VS te plaatsen en door de code te stappen.
+[&#x200B; wskdebug &#x200B;](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module, steunt het vastmaken van debugger aan de arbeiders van Asset Compute, met inbegrip van de capaciteit om breekpunten in de Code van VS te plaatsen en door de code te stappen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40383?quality=12&learn=on)
 
 _klik-door van het zuiveren van een arbeider van Asset Compute die (Geen audio) gebruiken wskdebug_
 
-1. Verzeker [ wskdebug ](../set-up/development-environment.md#wskdebug) en [ ngrok ](../set-up/development-environment.md#ngork) npm modules worden geïnstalleerd
+1. Verzeker [&#x200B; wskdebug &#x200B;](../set-up/development-environment.md#wskdebug) en [&#x200B; ngrok &#x200B;](../set-up/development-environment.md#ngork) npm modules worden geïnstalleerd
 1. Verzeker {de Desktop van 0} Docker en de ondersteunende beelden van Docker [&#128279;](../set-up/development-environment.md#docker) geïnstalleerd en lopend zijn
 1. Sluit alle actieve actieve actieve uitvoeringsinstanties van Development Tool.
 1. Implementeer de nieuwste code met `aio app deploy` en neem de naam van de geïmplementeerde actie op (naam tussen de `[...]` ). Hiermee werkt u de `launch.json` in stap 8 bij.
@@ -93,16 +93,16 @@ _klik-door van het zuiveren van een arbeider van Asset Compute die (Geen audio) 
 
 ## Logbestanden openen vanuit Adobe I/O Runtime{#aio-app-logs}
 
-[ AEM as a Cloud Service hefboomwerkingen de arbeiders van Asset Compute via de Profielen van de Verwerking ](../deploy/processing-profiles.md) door hen in Adobe I/O Runtime direct aan te halen. Omdat deze aanroepen geen lokale ontwikkeling impliceren, kunnen hun uitvoeringen niet worden gezuiverd gebruikend lokale hulpmiddelen zoals het Hulpmiddel van de Ontwikkeling van Asset Compute of wskdebug. In plaats daarvan, kan CLI van Adobe I/O worden gebruikt om logboeken van de worker te halen die in een bepaalde werkruimte in Adobe I/O Runtime wordt uitgevoerd.
+[&#x200B; AEM as a Cloud Service hefboomwerkingen de arbeiders van Asset Compute via de Profielen van de Verwerking &#x200B;](../deploy/processing-profiles.md) door hen in Adobe I/O Runtime direct aan te halen. Omdat deze aanroepen geen lokale ontwikkeling impliceren, kunnen hun uitvoeringen niet worden gezuiverd gebruikend lokale hulpmiddelen zoals het Hulpmiddel van de Ontwikkeling van Asset Compute of wskdebug. In plaats daarvan, kan CLI van Adobe I/O worden gebruikt om logboeken van de worker te halen die in een bepaalde werkruimte in Adobe I/O Runtime wordt uitgevoerd.
 
-1. Verzeker de [ werkruimte-specifieke milieuvariabelen ](../deploy/runtime.md) via `AIO_runtime_namespace` en `AIO_runtime_auth` worden geplaatst, die op de werkruimte wordt gebaseerd die het zuiveren vereisen.
+1. Verzeker de [&#x200B; werkruimte-specifieke milieuvariabelen &#x200B;](../deploy/runtime.md) via `AIO_runtime_namespace` en `AIO_runtime_auth` worden geplaatst, die op de werkruimte wordt gebaseerd die het zuiveren vereisen.
 1. Uitvoeren vanaf de opdrachtregel `aio app logs`
    + Als er veel verkeer is in de werkruimte, vouwt u het aantal activeringslogboeken uit via de markering `--limit` :
 
      `$ aio app logs --limit=25`
 1. De meest recente (tot en met de meegeleverde `--limit` ) activeringslogboeken worden geretourneerd als uitvoer van de opdracht ter controle.
 
-   ![ de logboeken van de ao app ](./assets/debug/aio-app-logs.png)
+   ![&#x200B; de logboeken van de ao app &#x200B;](./assets/debug/aio-app-logs.png)
 
 ## Problemen oplossen
 

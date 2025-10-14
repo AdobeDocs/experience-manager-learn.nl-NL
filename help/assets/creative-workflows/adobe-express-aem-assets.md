@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Adobe Express-integratie met AEM Assets
 
-Leer hoe te om de [ Adobe Express ](https://www.adobe.com/express/) integratie met AEM Assets te gebruiken om de ketens van de inhoudslevering te optimaliseren en productiviteit en toegankelijkheid voor alle teamleden te verbeteren.
+Leer hoe te om de [&#x200B; Adobe Express &#x200B;](https://www.adobe.com/express/) integratie met AEM Assets te gebruiken om de ketens van de inhoudslevering te optimaliseren en productiviteit en toegankelijkheid voor alle teamleden te verbeteren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3453138/?learn=on&captions=dut)

@@ -38,12 +38,12 @@ CustomParameterRequest wrapperRequest = new CustomParameterRequest(slingRequest,
 wrapperRequest.getRequestDispatcher("/content/forms/af/401kstatement/irastatement/channels/web.html").include(wrapperRequest, response);
 ```
 
-![ omvat methodebenadering ](assets/includemethod.jpg)
+![&#x200B; omvat methodebenadering &#x200B;](assets/includemethod.jpg)
 
 Visuele weergave van regel 7-code
 
-![ de parameterconfiguratie van het Verzoek ](assets/requestparameter.png)
+![&#x200B; de parameterconfiguratie van het Verzoek &#x200B;](assets/requestparameter.png)
 
 Aanvraagkenmerk gedefinieerd voor leesservice van het modaal formulier voor gegevensverwerking
 
-[ Voorbeeld van het Pakket van AEM ](assets/webchanneldelivery.zip).
+[&#x200B; Voorbeeld van het Pakket van AEM &#x200B;](assets/webchanneldelivery.zip).

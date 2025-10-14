@@ -23,10 +23,10 @@ ht-degree: 0%
 
 # Eerste configuratie
 
-![ de DeskundigenReeks van AEM ](./assets/banner.png)
+![&#x200B; de DeskundigenReeks van AEM &#x200B;](./assets/banner.png)
 
 Leer hoe u de Workfront for Experience Manager verbeterde connector instelt en configureert, waardoor de gecombineerde kracht van AEM Assets en Workfront wordt ontgrendeld.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340331?quality=12&learn=on)
 
-_dit deel één van a [ vier deel deskundige reeksen op Workfront voor Experience Manager verbeterde schakelaar](./overview.md)_ is
+_dit deel één van a [&#x200B; vier deel deskundige reeksen op Workfront voor Experience Manager verbeterde schakelaar](./overview.md)_ is

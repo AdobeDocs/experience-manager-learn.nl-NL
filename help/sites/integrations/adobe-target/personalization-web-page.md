@@ -39,40 +39,40 @@ De WKND-site heeft zijn homepage opnieuw ontworpen en wil de bezoekers van hun h
 1. Aanmelden bij Adobe Target en navigeren naar het tabblad Activiteiten
 1. Klik **creëren de knoop van de Activiteit** en kies dan **A/B de Activiteit van de Test**
 
-   ![ Activiteit A/B ](assets/ab-target-activity.png)
+   ![&#x200B; Activiteit A/B &#x200B;](assets/ab-target-activity.png)
 
 1. Selecteer de **Visuele Composer van de Ervaring** optie, verstrek de Activiteit URL, en klik dan **daarna**
 
-   ![ Activiteit URL ](assets/ab-test-url.png)
+   ![&#x200B; Activiteit URL &#x200B;](assets/ab-test-url.png)
 
 1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een activiteit creeert: *Ervaring A* en *Ervaring B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen door **te gebruiken voeg Ervaring** knoop toe.
 
-   ![ de Opties van de Ervaring ](assets/experience-options.png)
+   ![&#x200B; de Opties van de Ervaring &#x200B;](assets/experience-options.png)
 
 1. De opties van de mening beschikbaar voor Ervaring A en selecteren dan de **Redirect aan URL** optie en verstrekken een URL voor de nieuwe WKND homepage van de Plaats.
 
-   ![ Redirect URL ](assets/redirect-url.png)
+   ![&#x200B; Redirect URL &#x200B;](assets/redirect-url.png)
 
 1. Naam *Ervaring A* aan *Nieuwe WKND Homepage* en *Ervaring B* aan *WKND Homepage* anders
 
-   ![ avonturen ](assets/new-experiences.png)
+   ![&#x200B; avonturen &#x200B;](assets/new-experiences.png)
 
 1. Klik **daarna** om zich aan het richten te bewegen en een Handmatige verkeerstoewijzing van 50-50 tussen de twee ervaringen te houden.
 
-   ![ gericht ](assets/targeting.png)
+   ![&#x200B; gericht &#x200B;](assets/targeting.png)
 
 1. Voor Doelstellingen en instellingen kiest u de rapportbron als Adobe Target en selecteert u de metrische waarde Doel als Omzetting met een paginaweergaveactie.
 
-   ![ Doelen ](assets/goals.png)
+   ![&#x200B; Doelen &#x200B;](assets/goals.png)
 
 1. Geef een naam op voor uw activiteiten en sla deze op.
 1. Activeer je opgeslagen activiteit om je wijzigingen live te zetten.
 
-   ![ Doelen ](assets/activate.png)
+   ![&#x200B; Doelen &#x200B;](assets/activate.png)
 
 1. Open uw sitepagina (Activiteit URL van stap 3) op een nieuw tabblad en u moet een van de ervaringen (WKND-startpagina of Nieuwe WKND-startpagina) kunnen bekijken vanaf onze testactiviteit A/B. `us/en.html` wordt omgeleid naar `us/home.html` .
 
-   ![ Doelen ](assets/redirect-test.png)
+   ![&#x200B; Doelen &#x200B;](assets/redirect-test.png)
 
 ## Samenvatting
 
@@ -80,4 +80,4 @@ Als markeerteken kunt u een activiteit maken om uw sitepagina&#39;s die op AEM w
 
 ## Ondersteunende koppelingen
 
-* [ Foutopsporing van Adobe Experience Cloud - Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [&#x200B; Foutopsporing van Adobe Experience Cloud - Chrome &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)

@@ -23,26 +23,26 @@ ht-degree: 0%
 
 Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze toepassing van de Component van Web toont aan hoe te om inhoud te vragen gebruikend AEM APIs gebruikend persisted vragen en een gedeelte van UI terug te geven, verwezenlijkt gebruikend zuivere code van JavaScript.
 
-![ Component van het Web met de Hoofdloze van AEM ](./assets/web-component/web-component.png)
+![&#x200B; Component van het Web met de Hoofdloze van AEM &#x200B;](./assets/web-component/web-component.png)
 
-Bekijk de [ broncode op GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/web-component)
+Bekijk de [&#x200B; broncode op GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/web-component)
 
 ## Vereisten {#prerequisites}
 
 De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 
-+ [ Node.js v18 ](https://nodejs.org/en/)
-+ [ Git ](https://git-scm.com/)
++ [&#x200B; Node.js v18 &#x200B;](https://nodejs.org/en/)
++ [&#x200B; Git &#x200B;](https://git-scm.com/)
 
 ## AEM-vereisten
 
 De component Web werkt met de volgende AEM-implementatieopties.
 
-+ [ AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=nl-NL)
-+ De lokale opstelling die [ AEM Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL) gebruikt
-   + Vereist [ JDK 11 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2fx jcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) (als het verbinden met lokale AEM 6.5 of AEM SDK)
++ [&#x200B; AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=nl-NL)
++ De lokale opstelling die [&#x200B; AEM Cloud Service SDK &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL) gebruikt
+   + Vereist [&#x200B; JDK 11 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2fx jcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) (als het verbinden met lokale AEM 6.5 of AEM SDK)
 
-Dit voorbeeld app baseert zich op [ basis-tutorial-solution.content.zip ](../multi-step/assets/explore-graphql-api/basic-tutorial-solution.content.zip) om worden geïnstalleerd en de vereiste [ plaatsingsconfiguraties ](../deployment/web-component.md) zijn op zijn plaats.
+Dit voorbeeld app baseert zich op [&#x200B; basis-tutorial-solution.content.zip &#x200B;](../multi-step/assets/explore-graphql-api/basic-tutorial-solution.content.zip) om worden geïnstalleerd en de vereiste [&#x200B; plaatsingsconfiguraties &#x200B;](../deployment/web-component.md) zijn op zijn plaats.
 
 
 >[!IMPORTANT]
@@ -93,12 +93,12 @@ Dit voorbeeld app baseert zich op [ basis-tutorial-solution.content.zip ](../mul
    $ npm start
    ```
 
-1. Een nieuw browser venster opent de statische pagina van HTML die de Component van het Web in [ http://localhost:8080 ](http://localhost:8080) inbedt.
+1. Een nieuw browser venster opent de statische pagina van HTML die de Component van het Web in [&#x200B; http://localhost:8080 &#x200B;](http://localhost:8080) inbedt.
 1. De _Component van het Web van Info van de Persoon_ wordt getoond op de Web-pagina.
 
 ## De code
 
-Hieronder volgt een overzicht van hoe de Component van het Web wordt gebouwd, hoe het met AEM Headless verbindt om inhoud terug te winnen gebruikend GraphQL voortgeduurde vragen, en hoe die gegevens worden voorgesteld. De volledige code kan op [ GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/web-component) worden gevonden.
+Hieronder volgt een overzicht van hoe de Component van het Web wordt gebouwd, hoe het met AEM Headless verbindt om inhoud terug te winnen gebruikend GraphQL voortgeduurde vragen, en hoe die gegevens worden voorgesteld. De volledige code kan op [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/web-component) worden gevonden.
 
 ### HTML-tag voor webcomponent
 
@@ -188,4 +188,4 @@ class PersonInfo extends HTMLElement {
 
 Deze Component van Web baseert zich op een op AEM-Gebaseerde configuratie CORS die op het milieu van doelAEM loopt en veronderstelt dat de gastheerpagina op `http://localhost:8080` op ontwikkelingswijze en hieronder een steekproefCORS OSGi configuratie voor de lokale dienst van de Auteur van AEM loopt.
 
-Gelieve te herzien [ plaatsingsconfiguraties ](../deployment/web-component.md) voor de respectieve dienst van AEM.
+Gelieve te herzien [&#x200B; plaatsingsconfiguraties &#x200B;](../deployment/web-component.md) voor de respectieve dienst van AEM.

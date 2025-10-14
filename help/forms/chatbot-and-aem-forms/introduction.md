@@ -20,9 +20,9 @@ ht-degree: 0%
 
 Welkom bij onze zelfstudie over het gebruik van een ChatBot om een PDF-formulier in te vullen met Adobe Experience Manager Forms (AEM Forms) en het te verzenden voor digitale ondertekening met Adobe Sign.
 
-ChatBot werd gecreeerd gebruikend [ praatbot ](https://www.chatbot.com/).
+ChatBot werd gecreeerd gebruikend [&#x200B; praatbot &#x200B;](https://www.chatbot.com/).
 
-Voor dit leerprogramma zullen wij gegevens samenvoegen die in ChatBot met a [ worden gevangen W-9 vorm ](assets/fw9.xdp)
+Voor dit leerprogramma zullen wij gegevens samenvoegen die in ChatBot met a [&#x200B; worden gevangen W-9 vorm &#x200B;](assets/fw9.xdp)
 
 In de volgende video ziet u hoe u het hoofdlettergebruik gebruikt.
 

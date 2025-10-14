@@ -20,24 +20,24 @@ ht-degree: 0%
 
 # Extensie, modaal
 
-![ de extensie van AEM UI modaal ](./assets/modal/modal.png){align="center"}
+![&#x200B; de extensie van AEM UI modaal &#x200B;](./assets/modal/modal.png){align="center"}
 
 Met de uitbreidingsmodus van AEM UI kunt u een aangepaste UI koppelen aan AEM UI-extensies.
 
-De modules zijn React toepassingen, die op [ worden gebaseerd Reageer Spectrum ](https://react-spectrum.adobe.com/react-spectrum/), en kunnen om het even welke douaneUI tot stand brengen die door de uitbreiding wordt vereist, die, maar niet beperkt tot:
+De modules zijn React toepassingen, die op [&#x200B; worden gebaseerd Reageer Spectrum &#x200B;](https://react-spectrum.adobe.com/react-spectrum/), en kunnen om het even welke douaneUI tot stand brengen die door de uitbreiding wordt vereist, die, maar niet beperkt tot:
 
 + Bevestigingsdialoogvensters
-+ [ de vormen van de Input ](https://react-spectrum.adobe.com/react-spectrum/#forms)
-+ [ de indicatoren van de Voortgang ](https://react-spectrum.adobe.com/react-spectrum/#status)
-+ [ Overzicht van Resultaten ](https://react-spectrum.adobe.com/react-spectrum/#collections)
++ [&#x200B; de vormen van de Input &#x200B;](https://react-spectrum.adobe.com/react-spectrum/#forms)
++ [&#x200B; de indicatoren van de Voortgang &#x200B;](https://react-spectrum.adobe.com/react-spectrum/#status)
++ [&#x200B; Overzicht van Resultaten &#x200B;](https://react-spectrum.adobe.com/react-spectrum/#collections)
 + Foutberichten
 + ... of zelfs een volledige, multiview React toepassing!
 
 ## Modale routes
 
-De modale ervaring wordt gedefinieerd door de extensie App Builder React die is gedefinieerd in de map `web-src` . Zoals met om het even welke Reageren app, wordt de volledige ervaring georkestreerd gebruikend [ Reageer routes ](https://reactrouter.com/en/main/components/routes) die [ Reageren componenten ](https://reactjs.org/docs/components-and-props.html) teruggeven.
+De modale ervaring wordt gedefinieerd door de extensie App Builder React die is gedefinieerd in de map `web-src` . Zoals met om het even welke Reageren app, wordt de volledige ervaring georkestreerd gebruikend [&#x200B; Reageer routes &#x200B;](https://reactrouter.com/en/main/components/routes) die [&#x200B; Reageren componenten &#x200B;](https://reactjs.org/docs/components-and-props.html) teruggeven.
 
-Ten minste één route is vereist om de eerste modale weergave te genereren. Deze aanvankelijke route wordt aangehaald in de [ functie van de uitbreidingsregistratie ](#extension-registration) `onClick(..)`, zoals hieronder getoond.
+Ten minste één route is vereist om de eerste modale weergave te genereren. Deze aanvankelijke route wordt aangehaald in de [&#x200B; functie van de uitbreidingsregistratie &#x200B;](#extension-registration) `onClick(..)`, zoals hieronder getoond.
 
 
 + `./src/aem-ui-extension/web-src/src/components/App.js`
@@ -84,7 +84,7 @@ function App(props) {
 Als u een modaal object wilt openen, wordt `guestConnection.host.modal.showUrl(..)` aangeroepen vanuit de functie `onClick(..)` van de extensie. `showUrl(..)` wordt doorgegeven aan een JavaScript-object met sleutel/waarden:
 
 + `title` bevat de naam van de titel van het modaal dat aan de gebruiker wordt weergegeven
-+ `url` is URL die de [ Reageer route ](#modal-routes) verantwoordelijk voor de aanvankelijke mening van modal aanhaalt.
++ `url` is URL die de [&#x200B; Reageer route &#x200B;](#modal-routes) verantwoordelijk voor de aanvankelijke mening van modal aanhaalt.
 
 Het is absoluut noodzakelijk dat de `url` die aan `guestConnection.host.modal.showUrl(..)` wordt doorgegeven, wordt omgezet in routebeschrijving in de extensie, anders wordt er niets weergegeven in het modaal.
 
@@ -109,7 +109,7 @@ function ExtensionRegistration() {
 
 ## Modal component
 
-Elke route van de uitbreiding, [ die niet de `index` route ](./extension-registration.md#app-routes) is, kaarten aan een React component die in de modaal van de uitbreiding kan teruggeven.
+Elke route van de uitbreiding, [&#x200B; die niet de `index` route &#x200B;](./extension-registration.md#app-routes) is, kaarten aan een React component die in de modaal van de uitbreiding kan teruggeven.
 
 Een modaal kan uit om het even welk aantal routes van React, van eenvoudig één-route modaal aan een complex, multi-routemodel worden samengesteld.
 
@@ -185,7 +185,7 @@ export default function MyModal() {
 
 ## Het modaal sluiten
 
-![ de extensie van AEM UI modaal sluiten knoop ](./assets/modal/close.png){align="center"}
+![&#x200B; de extensie van AEM UI modaal sluiten knoop &#x200B;](./assets/modal/close.png){align="center"}
 
 Modals moeten hun eigen dichte controle verstrekken. Dit gebeurt door `guestConnection.host.modal.close()` aan te roepen.
 

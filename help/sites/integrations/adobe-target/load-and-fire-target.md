@@ -32,7 +32,7 @@ De gegevenslaag van de Adobe-client is een gebeurtenisgestuurde gegevenslaag. Wa
 
 ### Aangepaste weergegeven pagina-gebeurtenis{#page-event}
 
-![ Pagina getoonde gebeurtenisconfiguratie en douanecode ](assets/load-and-fire-target-call.png)
+![&#x200B; Pagina getoonde gebeurtenisconfiguratie en douanecode &#x200B;](assets/load-and-fire-target-call.png)
 
 In het markeringsbezit, voeg een nieuwe **Gebeurtenis** aan de **Regel** toe
 
@@ -91,9 +91,9 @@ Als `trigger(...)` buiten de context van het gebeurtenistype van de Code van de 
 
 ### Gegevenselementen
 
-![ Elementen van Gegevens ](assets/data-elements.png)
+![&#x200B; Elementen van Gegevens &#x200B;](assets/data-elements.png)
 
-De Elementen van de Gegevens van markeringen brengen de gegevens van het gebeurtenisvoorwerp [ in de douanePagina in kaart getoonde gebeurtenis ](#page-event) aan variabelen beschikbaar in Adobe Target, via het Type van het Element van de Gegevens van de Code van de uitbreiding van de Kern.
+De Elementen van de Gegevens van markeringen brengen de gegevens van het gebeurtenisvoorwerp [&#x200B; in de douanePagina in kaart getoonde gebeurtenis &#x200B;](#page-event) aan variabelen beschikbaar in Adobe Target, via het Type van het Element van de Gegevens van de Code van de uitbreiding van de Kern.
 
 #### Pagina-ID-gegevenselement
 
@@ -105,7 +105,7 @@ if (event && event.id) {
 
 Deze code retourneert de unieke id van de Core Component genereren.
 
-![ identiteitskaart van de Pagina ](assets/pageid.png)
+![&#x200B; identiteitskaart van de Pagina &#x200B;](assets/pageid.png)
 
 ### Gegevenselement paginapad
 
@@ -117,7 +117,7 @@ if (event && event.component && event.component.hasOwnProperty('repo:path')) {
 
 Deze code retourneert het pad van de AEM-pagina.
 
-![ Pad van de Pagina ](assets/pagepath.png)
+![&#x200B; Pad van de Pagina &#x200B;](assets/pagepath.png)
 
 ### Gegevenselement paginatitel
 
@@ -129,7 +129,7 @@ if (event && event.component && event.component.hasOwnProperty('dc:title')) {
 
 Deze code retourneert de titel van de AEM-pagina.
 
-![ Titel van de Pagina ](assets/pagetitle.png)
+![&#x200B; Titel van de Pagina &#x200B;](assets/pagetitle.png)
 
 ## Problemen oplossen
 
@@ -137,7 +137,7 @@ Deze code retourneert de titel van de AEM-pagina.
 
 #### Foutbericht wanneer cookie niet is ingesteld
 
-![ Fout van het Domein van de Koekjestaal van het Doel ](assets/target-cookie-error.png)
+![&#x200B; Fout van het Domein van de Koekjestaal van het Doel &#x200B;](assets/target-cookie-error.png)
 
 ```
 > AT: [page-init] Adobe Target content delivery is disabled. Ensure that you can save cookies to your current domain, there is no "mboxDisable" cookie and there is no "mboxDisable" parameter in the query string.
@@ -160,7 +160,7 @@ window.targetGlobalSettings = {
 
 ## Ondersteunende koppelingen
 
-+ [ de Documentatie van de Laag van Gegevens van de Cliënt van Adobe ](https://github.com/adobe/adobe-client-data-layer/wiki)
-+ [ Foutopsporing van Adobe Experience Cloud - Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-+ [ Gebruikend de Laag van Gegevens van de Cliënt van Adobe en de Documentatie van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL)
-+ [ Inleiding aan Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=nl-NL)
++ [&#x200B; de Documentatie van de Laag van Gegevens van de Cliënt van Adobe &#x200B;](https://github.com/adobe/adobe-client-data-layer/wiki)
++ [&#x200B; Foutopsporing van Adobe Experience Cloud - Chrome &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
++ [&#x200B; Gebruikend de Laag van Gegevens van de Cliënt van Adobe en de Documentatie van de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL)
++ [&#x200B; Inleiding aan Adobe Experience Platform Debugger &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=nl-NL)

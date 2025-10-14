@@ -30,4 +30,4 @@ Om contextafhankelijke onderzoek voor alle gebruikers toe te laten of onbruikbaa
 
 Contextafhankelijke zoekopdrachten zijn standaard ingeschakeld voor alle gebruikers.
 
-![ laat Contextual Onderzoek ](./assets/contextual-search/enable-contextual-search.png) toe
+![&#x200B; laat Contextual Onderzoek &#x200B;](./assets/contextual-search/enable-contextual-search.png) toe

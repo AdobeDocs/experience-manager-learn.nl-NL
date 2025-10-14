@@ -26,7 +26,7 @@ Dit is een diepe duik in CDN die als deel van AEM as a Cloud Service wordt verst
 
 ## Inhoud van deel 1 van deze reeks
 
-+ AEM CDN [ Overzicht ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=nl-NL)
++ AEM CDN [&#x200B; Overzicht &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=nl-NL)
 + Mogelijkheden van Web Application Firewall (WAF)
 + IP-beperkingen
 + DDOS-beveiliging
@@ -35,4 +35,4 @@ Dit is een diepe duik in CDN die als deel van AEM as a Cloud Service wordt verst
 
 ## Aanvullende bronnen
 
-Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 1 ](cloud5-season-1.md) pagina.
+Bekijk verwante video&#39;s op de [&#x200B; Wolk 5 seizoen 1 &#x200B;](cloud5-season-1.md) pagina.

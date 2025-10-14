@@ -27,10 +27,10 @@ Darin en James bespreken de Dispatcher in de AEM Cloud, inclusief een aantal bes
 ## Inhoud die in deze video wordt behandeld
 
 + inzetten van verzenderbestanden in een cloudservice-omgeving
-   + [ Docs van de Migratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html?lang=nl-NL)
-   + [ Blog ](https://medium.com/adobetech/migrating-a-dispatcher-configuration-from-managed-services-to-aem-as-a-cloud-service-fa8a80d242ee)
-+ [ Hulpmiddelen van de Migratie ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)
+   + [&#x200B; Docs van de Migratie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html?lang=nl-NL)
+   + [&#x200B; Blog &#x200B;](https://medium.com/adobetech/migrating-a-dispatcher-configuration-from-managed-services-to-aem-as-a-cloud-service-fa8a80d242ee)
++ [&#x200B; Hulpmiddelen van de Migratie &#x200B;](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)
 
 ## Aanvullende bronnen
 
-Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 1 ](cloud5-season-1.md) pagina.
+Bekijk verwante video&#39;s op de [&#x200B; Wolk 5 seizoen 1 &#x200B;](cloud5-season-1.md) pagina.

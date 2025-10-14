@@ -127,7 +127,7 @@ public String getBlobData(String blobID) {
 
 Koppel de aangepaste Prefill-service aan het aangepaste formulier, zoals hieronder wordt weergegeven
 
-![ prefill-service ](assets/prefill-service.png)
+![&#x200B; prefill-service &#x200B;](assets/prefill-service.png)
 
 Geef een voorbeeld van het formulier weer door de guid-parameter in de URL op te nemen, zoals hieronder wordt weergegeven
 

@@ -23,10 +23,10 @@ ht-degree: 0%
 
 De eerste stap bij het maken van een formulier met RDBMS-ondersteuning is het configureren van Apache Sling Connection Pooled DataSource. Volg onderstaande stappen om de gegevensbron te configureren:
 
-* Wijs uw browser aan [ configMgr ](http://localhost:4502/system/console/configMgr) aan
+* Wijs uw browser aan [&#x200B; configMgr &#x200B;](http://localhost:4502/system/console/configMgr) aan
 * Onderzoek naar **Apache die Verbinding Pooled DataSource** schrapt
 * Voeg een nieuwe ingang toe en verstrek de waarden zoals aangetoond in het schermafbeelding.
-* ![ gegeven-bron ](assets/data-source.png)
+* ![&#x200B; gegeven-bron &#x200B;](assets/data-source.png)
 * Uw wijzigingen opslaan
 
 >[!NOTE]
@@ -35,7 +35,7 @@ De eerste stap bij het maken van een formulier met RDBMS-ondersteuning is het co
 
 ## Formuliergegevensmodel maken
 
-* Punt uw browser aan [ Integraties van Gegevens ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)
+* Punt uw browser aan [&#x200B; Integraties van Gegevens &#x200B;](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)
 * Klik _creëren_ -> _Model van de Gegevens van de Vorm_
 * Verstrek zinvolle naam en titel aan het model van vormgegevens zoals **Werknemer**
 * Klik _daarna_
@@ -55,7 +55,7 @@ De eerste stap bij het maken van een formulier met RDBMS-ondersteuning is het co
 * Selecteer get in de vervolgkeuzelijst Leesservice
 * Klik + pictogram om parameter aan de get dienst toe te voegen
 * Geef de waarden op die worden weergegeven in de schermafbeelding
-* ![ get-service ](assets/get-service.png)
+* ![&#x200B; get-service &#x200B;](assets/get-service.png)
 >[!NOTE]
 > De get-service verwacht een waarde die is toegewezen aan de empID-kolom van een nieuwe entiteit. Er zijn meerdere manieren om deze waarde door te geven en in deze zelfstudie wordt de empID doorgegeven via de aanvraagparameter empID.
 >* Klik _Gedaan_ om de argumenten voor de get dienst te bewaren
@@ -68,12 +68,12 @@ De volgende stappen zullen u door het proces lopen om de één-aan-vele verenigi
 
 * Selecteer nieuwe entiteit en klik op _toevoegen Vereniging_
 * Geef de koppeling en andere eigenschappen een betekenisvolle titel en id, zoals in de onderstaande schermafbeelding wordt getoond
-  ![ vereniging ](assets/association-entities-1.png)
+  ![&#x200B; vereniging &#x200B;](assets/association-entities-1.png)
 
 * Klik op _uitgeven_ pictogram onder de sectie van Argumenten
 
 * Waarden opgeven zoals deze schermafbeelding wordt weergegeven
-* ![ vereniging-2 ](assets/association-entities.png)
+* ![&#x200B; vereniging-2 &#x200B;](assets/association-entities.png)
 * **wij verbinden de twee entiteiten gebruikend de empID kolom van begunstigden en naburige entiteiten.**
 * Klik op _Gereed_ om uw veranderingen te bewaren
 
@@ -85,7 +85,7 @@ Ons model van vormgegevens heeft nu **_krijgen_** dienst die empID goedkeurt en 
 * Klik op _Modelvoorwerp van de Test_
 * Verstrek geldige empID en klik op _Test_
 * U zou resultaten moeten krijgen zoals aangetoond in het hieronder ontsproten scherm
-* ![ test-fdm ](assets/test-form-data-model.png)
+* ![&#x200B; test-fdm &#x200B;](assets/test-form-data-model.png)
 
 ## Volgende stappen
 

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Een veelvoorkomend geval is het weergeven van een PDF-document met de gegevens die de invuller van het formulier heeft ingevoerd.
 
-Om dit gebruiksgeval te verwezenlijken hebben wij [ Adobe PDF ingebed API ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) gebruikt.
+Om dit gebruiksgeval te verwezenlijken hebben wij [&#x200B; Adobe PDF ingebed API &#x200B;](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) gebruikt.
 
 De volgende stappen zijn uitgevoerd om de integratie te voltooien
 
@@ -93,11 +93,11 @@ $(document).ready(function() {
 
 ## XSD genereren op basis van de XML-gegevens
 
-U kunt om het even welke vrije online hulpmiddelen gebruiken om [ XSD ](https://www.freeformatter.com/xsd-generator.html) van de xmlgegevens te produceren die in de vorige stap worden geproduceerd.
+U kunt om het even welke vrije online hulpmiddelen gebruiken om [&#x200B; XSD &#x200B;](https://www.freeformatter.com/xsd-generator.html) van de xmlgegevens te produceren die in de vorige stap worden geproduceerd.
 
 ## De sjabloon uploaden
 
-Zorg ervoor u het xdp malplaatje in [ AEM Forms ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) uploadt gebruikend creeer knoop
+Zorg ervoor u het xdp malplaatje in [&#x200B; AEM Forms &#x200B;](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) uploadt gebruikend creeer knoop
 
 
 ## Adaptief formulier maken
@@ -106,9 +106,9 @@ Maak een adaptief formulier op basis van de XSD van de vorige stap.
 Voeg een nieuw tabblad toe aan het aanpassingsbestand. Een component selectievakje en een component embed-pdf toevoegen aan dit tabblad
 Geef het selectievakje de naam van de weergave-PDF.
 De component embed-pdf configureren, zoals hieronder in de schermafbeelding wordt weergegeven
-![ embed-pdf ](assets/embed-pdf-configuration.png)
+![&#x200B; embed-pdf &#x200B;](assets/embed-pdf-configuration.png)
 
-**bedt Sleutel PDF API** in - dit is de sleutel die u kunt gebruiken om pdf in te bedden. Deze sleutel werkt alleen met localhost. U kunt [ uw eigen sleutel ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) tot stand brengen en het associëren met ander domein.
+**bedt Sleutel PDF API** in - dit is de sleutel die u kunt gebruiken om pdf in te bedden. Deze sleutel werkt alleen met localhost. U kunt [&#x200B; uw eigen sleutel &#x200B;](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) tot stand brengen en het associëren met ander domein.
 
 **Eindpunt die pdf** terugkeren - dit is douaneserlet die de gegevens met het xdp malplaatje zal samenvoegen en pdf terugkeren.
 
@@ -118,7 +118,7 @@ De component embed-pdf configureren, zoals hieronder in de schermafbeelding word
 
 ## Aangepaste servlet maken
 
-Er is een aangepaste servlet gemaakt om de gegevens samen te voegen met de XDP-sjabloon en de PDF te retourneren. De code om dit te verwezenlijken is hieronder vermeld. De douaneserlet maakt deel uit van de [ ingebedde pdf- bundel ](assets/embedpdf.core-1.0-SNAPSHOT.jar)
+Er is een aangepaste servlet gemaakt om de gegevens samen te voegen met de XDP-sjabloon en de PDF te retourneren. De code om dit te verwezenlijken is hieronder vermeld. De douaneserlet maakt deel uit van de [&#x200B; ingebedde pdf- bundel &#x200B;](assets/embedpdf.core-1.0-SNAPSHOT.jar)
 
 ```java
 import java.io.ByteArrayInputStream;
@@ -228,11 +228,11 @@ public class StreamPDFToEmbed extends SlingAllMethodsServlet {
 
 Voer de volgende stappen uit om dit op uw lokale server te testen:
 
-1. [ Download en installeer de ingebedde pdf- bundel ](assets/embedpdf.core-1.0-SNAPSHOT.jar).
+1. [&#x200B; Download en installeer de ingebedde pdf- bundel &#x200B;](assets/embedpdf.core-1.0-SNAPSHOT.jar).
 Dit heeft servlet om de gegevens met het malplaatje XDP samen te voegen en pdf terug te stromen.
-1. Voeg de weg /bin/getPDFToEmbed in de uitgesloten wegensectie van de Filter toe van Adobe Granite CSRF gebruikend [ AEM ConfigMgr ](http://localhost:4502/system/console/configMgr). In uw productiemilieu wordt het geadviseerd om het [ CSRF beschermingskader ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=nl-NL) te gebruiken
+1. Voeg de weg /bin/getPDFToEmbed in de uitgesloten wegensectie van de Filter toe van Adobe Granite CSRF gebruikend [&#x200B; AEM ConfigMgr &#x200B;](http://localhost:4502/system/console/configMgr). In uw productiemilieu wordt het geadviseerd om het [&#x200B; CSRF beschermingskader &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=nl-NL) te gebruiken
 1. [De clientbibliotheek en de aangepaste component importeren](assets/embed-pdf.zip)
 1. [Het adaptieve formulier en de sjabloon importeren](assets/embed-pdf-form-and-xdp.zip)
-1. [ Voorproef Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)
+1. [&#x200B; Voorproef Aangepaste Vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)
 1. Enkele formuliervelden invullen
 1. Tab naar het tabblad View PDF. Schakel het selectievakje PDF weergeven in. Er wordt een PDF weergegeven in het formulier dat is gevuld met de aangepaste formuliergegevens

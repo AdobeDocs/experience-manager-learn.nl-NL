@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Workfront en AEM Assets integreren met de verbeterde connector
 
-![ de DeskundigenReeks van AEM ](./assets/banner.png)
+![&#x200B; de DeskundigenReeks van AEM &#x200B;](./assets/banner.png)
 
 Sluit u aan bij de Adobe Workfront en Experience Manager Assets-experts in deze videoreeks met vier delen, omdat ze de voordelen en uitgangen van de integratie van Workfront en AEM Assets met behulp van de verbeterde connector demonstreren en bespreken.
 

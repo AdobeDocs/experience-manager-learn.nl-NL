@@ -30,35 +30,35 @@ Het ontwerpen van een ontwikkelingsblok is om verschillende redenen belangrijk:
 ## Universal Editor openen met code uit de `teaser` -vertakking
 
 1. Meld u aan bij AEM Author.
-2. Navigeer aan **Plaatsen** en selecteer de plaats (WKND (Universele Redacteur)) die in het [ vorige hoofdstuk ](./2-new-aem-site.md) wordt gecreeerd.
+2. Navigeer aan **Plaatsen** en selecteer de plaats (WKND (Universele Redacteur)) die in het [&#x200B; vorige hoofdstuk &#x200B;](./2-new-aem-site.md) wordt gecreeerd.
 
    ![AEM Sites](./assets/6-author-block/open-new-site.png)
 
 3. Maak of bewerk een pagina om het nieuwe blok toe te voegen, zodat de context beschikbaar is voor ondersteuning van lokale ontwikkeling. Hoewel pagina&#39;s overal op de site kunnen worden gemaakt, is het vaak het beste om aparte pagina&#39;s te maken voor elk nieuw werkgebied. Creeer een nieuwe &quot;omslag&quot;pagina genoemd **Tanden**. Elke subpagina wordt gebruikt om de ontwikkeling van de zelfde-genoemde tak van de Git te steunen.
 
-   ![ AEM Sites - creeer de pagina van Tanden ](./assets/6-author-block/branches-page-3.png)
+   ![&#x200B; AEM Sites - creeer de pagina van Tanden &#x200B;](./assets/6-author-block/branches-page-3.png)
 
 4. Onder de **Tak** pagina van Tanden, creeer een nieuwe pagina genoemd **Taser**, die de naam van de ontwikkelingstak aanpassen, en klik **Open** om de pagina uit te geven.
 
-   ![ AEM Sites - creeer de pagina van het Taser ](./assets/6-author-block/teaser-page-3.png)
+   ![&#x200B; AEM Sites - creeer de pagina van het Taser &#x200B;](./assets/6-author-block/teaser-page-3.png)
 
 5. Werk de Universal Editor bij om de code vanuit de `teaser` -vertakking te laden door `?ref=teaser` aan de URL toe te voegen. Zorg ervoor om de vraagparameter **VÓÓR** toe te voegen het `#` symbool.
 
-   ![ Universele Redacteur - de Uitgezochte lasertak ](./assets/6-author-block/select-branch.png)
+   ![&#x200B; Universele Redacteur - de Uitgezochte lasertak &#x200B;](./assets/6-author-block/select-branch.png)
 
 6. Selecteer de eerste sectie onder **Hoofd**, klik **toevoegen** knoop, en kies het **Taser** blok.
 
-   ![ Universele Redacteur - voeg Blok ](./assets/6-author-block/add-teaser-2.png) toe
+   ![&#x200B; Universele Redacteur - voeg Blok &#x200B;](./assets/6-author-block/add-teaser-2.png) toe
 
 7. Selecteer op het canvas het net toegevoegde gummetje en maak de velden aan de rechterkant of via de inline bewerkingsfunctie.
 
-   ![ Universele Redacteur - het Blok van de Auteur ](./assets/6-author-block/author-block.png)
+   ![&#x200B; Universele Redacteur - het Blok van de Auteur &#x200B;](./assets/6-author-block/author-block.png)
 
 8. Na voltooiing creatie, selecteer **publiceren** knoop in het hoogste recht van Universele Redacteur, kies publiceren aan **Voorproef**, en publiceer de veranderingen in het voorproefmilieu. De wijzigingen worden vervolgens gepubliceerd naar het `aem.page` -domein voor de website.
-   ![ AEM Sites - publiceer of Voorproef ](./assets/6-author-block/publish-to-preview.png)
+   ![&#x200B; AEM Sites - publiceer of Voorproef &#x200B;](./assets/6-author-block/publish-to-preview.png)
 
-9. Wacht op de veranderingen om aan voorproef te publiceren, dan open webpage via [ AEM CLI ](./3-local-development-environment.md#install-the-aem-cli) in [ http://localhost:3000/branches/teaser ](http://localhost:3000/branches/teaser).
+9. Wacht op de veranderingen om aan voorproef te publiceren, dan open webpage via [&#x200B; AEM CLI &#x200B;](./3-local-development-environment.md#install-the-aem-cli) in [&#x200B; http://localhost:3000/branches/teaser &#x200B;](http://localhost:3000/branches/teaser).
 
-   ![ Lokale Plaats - verfrist zich ](./assets/6-author-block/preview.png)
+   ![&#x200B; Lokale Plaats - verfrist zich &#x200B;](./assets/6-author-block/preview.png)
 
 De inhoud en semantische HTML van het ontwerpblok zijn nu beschikbaar op de voorvertoningswebsite en zijn klaar voor ontwikkeling met de AEM CLI in de lokale ontwikkelomgeving.

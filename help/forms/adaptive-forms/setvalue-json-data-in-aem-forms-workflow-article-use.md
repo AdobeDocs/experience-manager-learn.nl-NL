@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Aangezien een adaptief formulier naar verschillende gebruikers wordt gerouteerd in de AEM-workflow, zijn er vereisten voor het verbergen of uitschakelen van bepaalde velden of deelvensters afhankelijk van de persoon die het formulier reviseert. Om aan deze gebruiksgevallen te voldoen, stellen wij typisch een waarde van een verborgen gebied in. Op basis van de waarde van dit verborgen veld kunnen bedrijfsregels worden ontworpen om de juiste deelvensters of velden te verbergen/uitschakelen.
 
-![ Plaatsende waarde van een element in jsgegevens ](assets/capture-3.gif)
+![&#x200B; Plaatsende waarde van een element in jsgegevens &#x200B;](assets/capture-3.gif)
 
 In AEM Forms OSGi - moeten we een aangepaste OSGi-bundel maken om de waarde van het JSON-gegevenselement in te stellen. De bundel wordt geleverd als onderdeel van deze zelfstudie.
 
@@ -42,27 +42,27 @@ De elementen op uw lokale systeem implementeren:
 
 * [DevelopingWithServiceUserBundle downloaden en implementeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [ Download en stel de setvalue bundel ](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) op. Dit is de aangepaste OSGI-bundel waarmee u de waarden van een element in de verzonden JSON-gegevens kunt instellen.
+* [&#x200B; Download en stel de setvalue bundel &#x200B;](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) op. Dit is de aangepaste OSGI-bundel waarmee u de waarden van een element in de verzonden JSON-gegevens kunt instellen.
 
 * [De inhoud van het ZIP-bestand downloaden en uitpakken](assets/set-value-jsondata.zip)
-   * Punt uw browser aan [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
+   * Punt uw browser aan [&#x200B; pakketmanager &#x200B;](http://localhost:4502/crx/packmgr/index.jsp)
       * Importeer en installeer de SetValueOfElementInJSONDataWorkflow.zip.This het pakket heeft het model van de steekproefwerkstroom en het Model van de Gegevens van de Vorm verbonden aan de vorm.
 
-* Punt uw browser aan [ Forms en Documenten ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Punt uw browser aan [&#x200B; Forms en Documenten &#x200B;](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Klik op Maken | Bestand uploaden
 * Het bestand TimeOffRequestForm.zip uploaden
   **Deze vorm werd gebouwd gebruikend AEM Forms 6.4. Zorg dat je op AEM Forms 6.4 of hoger staat**
-* Open de [ vorm ](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
+* Open de [&#x200B; vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
 * Vul de begin- en einddatum in en verzend het formulier.
-* Ga naar [ &quot;Inbox&quot;](http://localhost:4502/aem/inbox)
+* Ga naar [&#x200B; &quot;Inbox&quot;](http://localhost:4502/aem/inbox)
 * Open het formulier dat aan de taak is gekoppeld.
 * De velden in het eerste deelvenster zijn uitgeschakeld.
 * U ziet dat het deelvenster voor het goedkeuren of afwijzen van de aanvraag nu zichtbaar is.
 
 >[!NOTE]
 >
->Aangezien wij pre-bevolkt de Aangepaste Vorm gebruikend gebruikersprofiel, zorg de informatie van het admin [ gebruikersprofiel ](http://localhost:4502/security/users.html) ervoor. Zorg er minimaal voor dat u de veldwaarden FirstName, LastName en Email hebt ingesteld.
->U kunt zuivert registreren toelaten door registreerapparaat voor com.aemforms.setvalue.core.SetValueInJson [ van hier ](http://localhost:4502/system/console/slinglog) toe te laten
+>Aangezien wij pre-bevolkt de Aangepaste Vorm gebruikend gebruikersprofiel, zorg de informatie van het admin [&#x200B; gebruikersprofiel &#x200B;](http://localhost:4502/security/users.html) ervoor. Zorg er minimaal voor dat u de veldwaarden FirstName, LastName en Email hebt ingesteld.
+>U kunt zuivert registreren toelaten door registreerapparaat voor com.aemforms.setvalue.core.SetValueInJson [&#x200B; van hier &#x200B;](http://localhost:4502/system/console/slinglog) toe te laten
 
 >[!NOTE]
 >

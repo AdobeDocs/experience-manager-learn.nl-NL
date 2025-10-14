@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Hoofdloos adaptief formulier insluiten
 
-Dit [ leerprogramma zal de diverse hoofd APIs ](https://opensource.adobe.com/aem-forms-af-runtime/api/#section/Introduction) behandelen die u toestaan om van de vorm een lijst te maken, te tonen en voor te leggen.
+Dit [&#x200B; leerprogramma zal de diverse hoofd APIs &#x200B;](https://opensource.adobe.com/aem-forms-af-runtime/api/#section/Introduction) behandelen die u toestaan om van de vorm een lijst te maken, te tonen en voor te leggen.
 
 Dit artikel heeft betrekking op de verschillende API&#39;s zonder koppen die u worden aangeboden, zodat u adaptieve formulieren zonder kop kunt weergeven en verzenden.
 
@@ -26,7 +26,7 @@ In dit artikel wordt ervan uitgegaan dat u een bestaande app van één pagina he
 
 Het volgende schermschot toont een vorm van contactons die in SPA wordt ingebed
 
-![ contact-us-vorm ](./assets/contact-us-form.png)
+![&#x200B; contact-us-vorm &#x200B;](./assets/contact-us-form.png)
 
 ## Vereisten
 
@@ -34,7 +34,7 @@ Het volgende schermschot toont een vorm van contactons die in SPA wordt ingebed
 
 * Running instance of AEM Forms 6.5.16
 
-* [ laat hoofdloze vormen op uw auteur toe en publiceer instantie ](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=nl-NL)
+* [&#x200B; laat hoofdloze vormen op uw auteur toe en publiceer instantie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=nl-NL)
 
 ## Volgende stappen
 

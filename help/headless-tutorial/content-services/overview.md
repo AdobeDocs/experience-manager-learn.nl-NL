@@ -39,9 +39,9 @@ In deze zelfstudie worden de volgende onderwerpen behandeld:
 
 ## GitHub-project
 
-De broncode, en inhoudspakketten zijn beschikbaar op [ AEM Guides - het Mobiele Project van GitHub van WKND ](https://github.com/adobe/aem-guides-wknd-mobile).
+De broncode, en inhoudspakketten zijn beschikbaar op [&#x200B; AEM Guides - het Mobiele Project van GitHub van WKND &#x200B;](https://github.com/adobe/aem-guides-wknd-mobile).
 
-Als u een kwestie met het leerprogramma of de code vindt, gelieve de kwestie van a [ GitHub ](https://github.com/adobe/aem-guides-wknd-mobile/issues) te verlaten.
+Als u een kwestie met het leerprogramma of de code vindt, gelieve de kwestie van a [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd-mobile/issues) te verlaten.
 
 ## AEM GraphQL versus AEM Content Services
 

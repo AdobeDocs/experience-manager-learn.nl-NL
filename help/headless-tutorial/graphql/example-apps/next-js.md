@@ -24,20 +24,20 @@ ht-degree: 0%
 
 Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze toepassing Next.js demonstreert hoe u query&#39;s kunt uitvoeren op inhoud met AEM GraphQL API&#39;s met behulp van doorlopende query&#39;s. De AEM Headless-client voor JavaScript wordt gebruikt om de GraphQL-query&#39;s uit te voeren die de toepassing blijven activeren.
 
-![ Next.js app met AEM Headless ](./assets/next-js/next-js.png)
+![&#x200B; Next.js app met AEM Headless &#x200B;](./assets/next-js/next-js.png)
 
-Bekijk de [ broncode op GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js)
+Bekijk de [&#x200B; broncode op GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js)
 
 ## Vereisten {#prerequisites}
 
 De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 
-+ [ Node.js v18 ](https://nodejs.org/)
-+ [ Git ](https://git-scm.com/)
++ [&#x200B; Node.js v18 &#x200B;](https://nodejs.org/)
++ [&#x200B; Git &#x200B;](https://git-scm.com/)
 
 ## AEM-vereisten
 
-De app Next.js werkt met de volgende AEM-implementatieopties. Alle plaatsingen vereisen [ Gedeelde v3.0.0+ ](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) WKND van de Plaats v3.0.0+ [&#128279;](https://github.com/adobe/aem-guides-wknd/releases/latest) om op het milieu van AEM as a Cloud Service worden geïnstalleerd.
+De app Next.js werkt met de volgende AEM-implementatieopties. Alle plaatsingen vereisen [&#x200B; Gedeelde v3.0.0+ &#x200B;](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) WKND van de Plaats v3.0.0+ [&#128279;](https://github.com/adobe/aem-guides-wknd/releases/latest) om op het milieu van AEM as a Cloud Service worden geïnstalleerd.
 
 Dit voorbeeld Next.js app wordt ontworpen om met __AEM te verbinden publiceert__ dienst.
 
@@ -73,7 +73,7 @@ Next.js wordt ontworpen om met __te verbinden AEM publiceer__ dienst, en toegang
    AEM_AUTH_PASSWORD=password-for-the-aem-user-account
    ```
 
-   Om een [ AEM as a Cloud Service lokaal ontwikkelingstoken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=nl-NL#generating-the-access-token) te gebruiken plaats `AEM_AUTH_METHOD=dev-token` en de volledige dev symbolische waarde in het `AEM_AUTH_DEV_TOKEN` bezit te verstrekken.
+   Om een [&#x200B; AEM as a Cloud Service lokaal ontwikkelingstoken &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=nl-NL#generating-the-access-token) te gebruiken plaats `AEM_AUTH_METHOD=dev-token` en de volledige dev symbolische waarde in het `AEM_AUTH_DEV_TOKEN` bezit te verstrekken.
 
    ```plain
    ...
@@ -84,7 +84,7 @@ Next.js wordt ontworpen om met __te verbinden AEM publiceer__ dienst, en toegang
 
 1. Bewerk het `aem-guides-wknd-graphql/next-js/.env.local` -bestand en valideer `NEXT_PUBLIC_AEM_GRAPHQL_ENDPOINT` op het juiste AEM GraphQL-eindpunt.
 
-   Wanneer het gebruiken van [ Gedeelde WKND ](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) of [ Plaats WKND ](https://github.com/adobe/aem-guides-wknd/releases/latest), gebruik het `wknd-shared` GraphQL API eindpunt.
+   Wanneer het gebruiken van [&#x200B; Gedeelde WKND &#x200B;](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) of [&#x200B; Plaats WKND &#x200B;](https://github.com/adobe/aem-guides-wknd/releases/latest), gebruik het `wknd-shared` GraphQL API eindpunt.
 
    ```plain
    ...
@@ -100,12 +100,12 @@ Next.js wordt ontworpen om met __te verbinden AEM publiceer__ dienst, en toegang
    $ npm run dev
    ```
 
-1. Een nieuw browser venster opent Next.js app in [ http://localhost:3000](http://localhost:3000)
+1. Een nieuw browser venster opent Next.js app in [&#x200B; http://localhost:3000](http://localhost:3000)
 1. De app Next.js geeft een lijst met avonturen weer. Als u een avontuur selecteert, worden de details op een nieuwe pagina weergegeven.
 
 ## De code
 
-Hieronder vindt u een overzicht van de manier waarop de app Next.js is gemaakt, de manier waarop deze verbinding maakt met AEM Headless om inhoud op te halen met behulp van GraphQL persisted query&#39;s en de manier waarop deze gegevens worden gepresenteerd. De volledige code kan op [ GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js) worden gevonden.
+Hieronder vindt u een overzicht van de manier waarop de app Next.js is gemaakt, de manier waarop deze verbinding maakt met AEM Headless om inhoud op te halen met behulp van GraphQL persisted query&#39;s en de manier waarop deze gegevens worden gepresenteerd. De volledige code kan op [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js) worden gevonden.
 
 ### Blijvende query&#39;s
 
@@ -224,7 +224,7 @@ query ($slug: String!, $imageFormat:AssetTransformFormat=JPG, $imageSeoName: Str
 
 ### GraphQL-query uitgevoerd
 
-AEM voortgeduurde vragen worden uitgevoerd over HTTP GET en zo, wordt de [ Hoofdloze cliënt van AEM voor JavaScript ](https://github.com/adobe/aem-headless-client-js) gebruikt om [ de voortgeduurde vragen van GraphQL ](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) tegen AEM uit te voeren en de avontuurinhoud in app te laden.
+AEM voortgeduurde vragen worden uitgevoerd over HTTP GET en zo, wordt de [&#x200B; Hoofdloze cliënt van AEM voor JavaScript &#x200B;](https://github.com/adobe/aem-headless-client-js) gebruikt om [&#x200B; de voortgeduurde vragen van GraphQL &#x200B;](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) tegen AEM uit te voeren en de avontuurinhoud in app te laden.
 
 Elke voortgezette query heeft een corresponderende functie in `src/lib//aem-headless-client.js`, die het AEM GraphQL-eindpunt aanroept en de avontuurgegevens retourneert.
 
@@ -263,15 +263,15 @@ De app Next.js gebruikt twee pagina&#39;s om de avontuurgegevens te presenteren.
 
 + `src/pages/index.js`
 
-  Gebruikt [ Next.js getServerSideProps () ](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) om `getAllAdventures()` te roepen en toont elk avontuur als kaart.
+  Gebruikt [&#x200B; Next.js getServerSideProps () &#x200B;](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) om `getAllAdventures()` te roepen en toont elk avontuur als kaart.
 
   Het gebruik van `getServerSiteProps()` staat voor server-zij Rendering van deze pagina Next.js toe.
 
 + `src/pages/adventures/[...slug].js`
 
-  A [ Next.js Dynamische Route ](https://nextjs.org/docs/routing/dynamic-routes) die de details van één enkel avontuur toont. Deze dynamische route prefetches de gegevens van elk avontuur gebruikend [ Next.js getStaticProps () ](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) via een vraag aan `getAdventureBySlug(slug, queryVariables)` gebruikend `slug` param dat via de avontuurselectie op de `adventures/index.js` pagina wordt overgegaan, en `queryVariables` om het beeldformaat, de breedte, en de kwaliteit te controleren.
+  A [&#x200B; Next.js Dynamische Route &#x200B;](https://nextjs.org/docs/routing/dynamic-routes) die de details van één enkel avontuur toont. Deze dynamische route prefetches de gegevens van elk avontuur gebruikend [&#x200B; Next.js getStaticProps () &#x200B;](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) via een vraag aan `getAdventureBySlug(slug, queryVariables)` gebruikend `slug` param dat via de avontuurselectie op de `adventures/index.js` pagina wordt overgegaan, en `queryVariables` om het beeldformaat, de breedte, en de kwaliteit te controleren.
 
-  De dynamische route kan de details voor alle avonturen pre-halen door [ te gebruiken Next.js getStaticPaths () ](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) en het bevolken van alle mogelijke routepermutaties die op de volledige lijst van avonturen worden gebaseerd door de vraag van GraphQL `getAdventurePaths()` zijn teruggekeerd
+  De dynamische route kan de details voor alle avonturen pre-halen door [&#x200B; te gebruiken Next.js getStaticPaths () &#x200B;](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) en het bevolken van alle mogelijke routepermutaties die op de volledige lijst van avonturen worden gebaseerd door de vraag van GraphQL `getAdventurePaths()` zijn teruggekeerd
 
   Het gebruik van `getStaticPaths()` en `getStaticProps(..)` stond de Statische Generatie van de Plaats van deze pagina&#39;s toe Next.js.
 
@@ -279,4 +279,4 @@ De app Next.js gebruikt twee pagina&#39;s om de avontuurgegevens te presenteren.
 
 Voor Next.js-apps, met name in de context van server-side rendering (SSR) en server-side generation (SSG), zijn geen geavanceerde beveiligingsconfiguraties vereist, zoals Cross-origin Resource Sharing (CORS).
 
-Nochtans, als Next.js HTTP- verzoeken aan AEM van de context van de cliënt doet, kunnen de veiligheidsconfiguraties in AEM worden vereist. Herzie het [ Hoofdloze enige-pagina de plaatsingsleerprogramma van de app van AEM ](../deployment/spa.md) voor meer details.
+Nochtans, als Next.js HTTP- verzoeken aan AEM van de context van de cliënt doet, kunnen de veiligheidsconfiguraties in AEM worden vereist. Herzie het [&#x200B; Hoofdloze enige-pagina de plaatsingsleerprogramma van de app van AEM &#x200B;](../deployment/spa.md) voor meer details.

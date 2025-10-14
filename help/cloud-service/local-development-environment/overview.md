@@ -32,7 +32,7 @@ In deze zelfstudie wordt het opzetten van een lokale ontwikkelomgeving voor Adob
 
 >[!VIDEO](https://video.tv.adobe.com/v/32565?quality=12&learn=on)
 
-![ AEM as a Cloud Service de Stapel van de Technologie van de Milieu van de Lokale Ontwikkeling ](./assets/overview/aem-sdk-technology-stack.png)
+![&#x200B; AEM as a Cloud Service de Stapel van de Technologie van de Milieu van de Lokale Ontwikkeling &#x200B;](./assets/overview/aem-sdk-technology-stack.png)
 
 De lokale ontwikkelomgeving voor AEM kan worden opgesplitst in drie logische groepen:
 
@@ -56,7 +56,7 @@ In deze zelfstudie werden de locatie van de AEM as a Cloud Service SDK-artefacte
 
 ## Ontwikkelingsinstrumenten voor AEM-projecten
 
-Het AEM-project is de basis van de aangepaste code die de code, configuratie en inhoud bevat die via Cloud Manager naar AEM as a Cloud Service wordt geïmplementeerd. De basislijnprojectstructuur wordt geproduceerd via het [ Project van AEM Maven Archetype ](https://github.com/adobe/aem-project-archetype).
+Het AEM-project is de basis van de aangepaste code die de code, configuratie en inhoud bevat die via Cloud Manager naar AEM as a Cloud Service wordt geïmplementeerd. De basislijnprojectstructuur wordt geproduceerd via het [&#x200B; Project van AEM Maven Archetype &#x200B;](https://github.com/adobe/aem-project-archetype).
 
 In dit gedeelte van de zelfstudie wordt getoond hoe u:
 

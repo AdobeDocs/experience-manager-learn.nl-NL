@@ -27,7 +27,7 @@ Dit is deel 3 van een driedelige serie voor caching in AEM. Waar de eerste twee 
 
 ## Caching in het algemeen
 
-[ Hoofdstuk 1 ](chapter-1.md) en [ Hoofdstuk 2 ](chapter-2.md) van deze reeks concentreerde zich hoofdzakelijk op Dispatcher. We hebben de grondbeginselen, de beperkingen en waar u bepaalde compromissen moet maken uitgelegd.
+[&#x200B; Hoofdstuk 1 &#x200B;](chapter-1.md) en [&#x200B; Hoofdstuk 2 &#x200B;](chapter-2.md) van deze reeks concentreerde zich hoofdzakelijk op Dispatcher. We hebben de grondbeginselen, de beperkingen en waar u bepaalde compromissen moet maken uitgelegd.
 
 De complexiteit en complexiteit van caching zijn geen unieke problemen voor de Dispatcher. In cache plaatsen is in het algemeen moeilijk.
 
@@ -52,7 +52,7 @@ Deze dimensies zijn met elkaar verbonden in een vrij complex systeem. Er is geen
 
 Het leveren van een pagina van een server aan browser van een cliënt kruist een veelheid van systemen en subsystemen. Als je goed kijkt, is er een aantal hopgegevens nodig die van de bron naar de afvoer moeten gaan, die elk een potentiële kandidaat voor caching zijn.
 
-![ stroom van Gegevens van een typische toepassing CMS ](assets/chapter-3/data-flow-typical-cms-app.png)
+![&#x200B; stroom van Gegevens van een typische toepassing CMS &#x200B;](assets/chapter-3/data-flow-typical-cms-app.png)
 
 *stroom van Gegevens van een typische toepassing CMS*
 
@@ -132,7 +132,7 @@ Nu kunt u verschillende strategieën gebruiken op verschillende cachelagen, maar
 
 #### Op gebeurtenis gebaseerde validatie
 
-![ Zuivere op gebeurtenis gebaseerde ongeldigverklaring ](assets/chapter-3/event-based-invalidation.png)
+![&#x200B; Zuivere op gebeurtenis gebaseerde ongeldigverklaring &#x200B;](assets/chapter-3/event-based-invalidation.png)
 
 *Zuivere op gebeurtenis gebaseerde ongeldigverklaring: Valideer van het binnengeheime voorgeheugen aan de buitenlaag*
 
@@ -154,7 +154,7 @@ Met op gebeurtenis-gebaseerde ongeldigverklaring, zou u een rampenplan moeten he
 
 #### Zuiver op TTL gebaseerde ongeldigverklaring
 
-![ Unsynchronized TTL gebaseerde ongeldigverklaring ](assets/chapter-3/ttl-based-invalidation.png)
+![&#x200B; Unsynchronized TTL gebaseerde ongeldigverklaring &#x200B;](assets/chapter-3/ttl-based-invalidation.png)
 
 *Unsynchronized TTL gebaseerde ongeldigverklaring*
 
@@ -164,7 +164,7 @@ Dat is ook een heel gangbare regeling. U stapelt meerdere lagen caches, die elk 
 
 Het is gemakkelijk uit te voeren. Helaas is het moeilijk om de effectieve levensduur van een stuk gegevens te voorspellen.
 
-![ Buitenkant die het levenspan van een binnenvoorwerp verlengt ](assets/chapter-3/outer-cache.png)
+![&#x200B; Buitenkant die het levenspan van een binnenvoorwerp verlengt &#x200B;](assets/chapter-3/outer-cache.png)
 
 *Outer geheime voorgeheugen verlengend de levenspanwijdte van een binnenvoorwerp*
 
@@ -180,7 +180,7 @@ We zeggen niet dat het een slecht plan is. Je zou gewoon zijn grenzen moeten ken
 
 U krijgt een voorspelbaarder efficiënte levensduur, als u een specifieke datum op het binnenvoorwerp plaatst en dat aan de buitengeheime voorgeheugens verspreidt.
 
-![ synchroniserend vervaldata ](assets/chapter-3/synchronize-expiration-dates.png)
+![&#x200B; synchroniserend vervaldata &#x200B;](assets/chapter-3/synchronize-expiration-dates.png)
 
 *synchroniserend vervaldata*
 
@@ -190,7 +190,7 @@ Nochtans, kunnen niet alle geheime voorgeheugens de data verspreiden. Het kan ve
 
 #### Op gebeurtenissen gebaseerde en op TTL gebaseerde validatie mixen
 
-![ Mengend op gebeurtenis-gebaseerde en op TTL-Gebaseerde strategieën ](assets/chapter-3/mixing-event-ttl-strategies.png)
+![&#x200B; Mengend op gebeurtenis-gebaseerde en op TTL-Gebaseerde strategieën &#x200B;](assets/chapter-3/mixing-event-ttl-strategies.png)
 
 *Mengend op gebeurtenis-gebaseerde en op TTL-Gebaseerde strategieën*
 
@@ -204,7 +204,7 @@ Als u een laag van (korte) op TTL gebaseerde caching voor een Dispatcher hebt, k
 
 #### Het mengen van TTL - en op gebeurtenis-Gebaseerde Bevestiging
 
-![ Mixing TTL - en op gebeurtenis-gebaseerde Invalidatie ](assets/chapter-3/toxic.png)
+![&#x200B; Mixing TTL - en op gebeurtenis-gebaseerde Invalidatie &#x200B;](assets/chapter-3/toxic.png)
 
 *Toxisch: Het mengen van TTL - en op gebeurtenis-gebaseerde Invalidatie*
 
@@ -212,7 +212,7 @@ Als u een laag van (korte) op TTL gebaseerde caching voor een Dispatcher hebt, k
 
 Deze combinatie is toxisch. Plaats nooit cache op basis van gebeurtenissen en gebeurtenis na een TTL- of op Vervaldatum gebaseerde cache. Herinner dat spill-overeffect dat we hadden in de &quot;puur-TTL&quot;strategie? Hier kan hetzelfde effect worden waargenomen. Alleen dat de gebeurtenis voor ongeldigmaking van de buitenste cache al heeft plaatsgevonden, kan mogelijk niet meer plaatsvinden. Dit kan de levensduur van het object in de cache tot oneindig uitbreiden.
 
-![ op TTL-Gebaseerde en op gebeurtenis-gebaseerde gecombineerde: Spill-over aan oneindigheid ](assets/chapter-3/infinity.png)
+![&#x200B; op TTL-Gebaseerde en op gebeurtenis-gebaseerde gecombineerde: Spill-over aan oneindigheid &#x200B;](assets/chapter-3/infinity.png)
 
 *op TTL-Gebaseerde en op gebeurtenis-gebaseerde gecombineerde: Spill-over aan oneindigheid*
 
@@ -262,14 +262,14 @@ Deze reeks gaat over het begrijpen van concepten en het machtigen van u om een a
 
 Wij bevorderen geen enkel instrument in het bijzonder. Maar geef je aanwijzingen hoe je ze moet beoordelen. AEM heeft bijvoorbeeld een eenvoudige ingebouwde cache met een vaste TTL sinds versie 6.0. Zal je het gebruiken? Waarschijnlijk niet bij publiceren waar een op een gebeurtenis gebaseerd geheim voorgeheugen in de ketting (wenk: Dispatcher) volgt. Maar het zou een fatsoenlijke keuze kunnen zijn voor een auteur. Er is ook een geheime voorgeheugen van HTTP door Adobe ACS-bevelen die het overwegen waard zouden kunnen zijn.
 
-Of u bouwt uw die, op een matuur caching kader zoals [ Ehcache ](https://www.ehcache.org) wordt gebaseerd. Dit kan worden gebruikt om voorwerpen van Java en teruggegeven prijsverhoging (`String` voorwerpen) in het voorgeheugen onder te brengen.
+Of u bouwt uw die, op een matuur caching kader zoals [&#x200B; Ehcache &#x200B;](https://www.ehcache.org) wordt gebaseerd. Dit kan worden gebruikt om voorwerpen van Java en teruggegeven prijsverhoging (`String` voorwerpen) in het voorgeheugen onder te brengen.
 
 In sommige eenvoudige gevallen kunt u het ook gebruiken van gelijktijdige hash maps - u zult hier snel grenzen zien - of in het hulpmiddel of in uw vaardigheden. Gelijktijdige uitvoering is net zo moeilijk te beheersen als naamgeving en caching.
 
 #### Verwijzingen
 
-* [ ACS Commons http Cachegeheugen ](https://adobe-consulting-services.github.io/acs-aem-commons/features/http-cache/index.html)
-* [ Ehcache caching kader ](https://www.ehcache.org)
+* [&#x200B; ACS Commons http Cachegeheugen &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/http-cache/index.html)
+* [&#x200B; Ehcache caching kader &#x200B;](https://www.ehcache.org)
 
 ### Basisbegrippen
 
@@ -317,7 +317,7 @@ Welke objecten afhankelijk zijn van wat anderen in elke toepassing echt zijn. We
 
 ### HTML-fragmentcaching
 
-![ hergebruikt een teruggegeven fragment op verschillende pagina&#39;s ](assets/chapter-3/re-using-rendered-fragment.png)
+![&#x200B; hergebruikt een teruggegeven fragment op verschillende pagina&#39;s &#x200B;](assets/chapter-3/re-using-rendered-fragment.png)
 
 *hergebruikt een teruggegeven fragment op verschillende pagina&#39;s*
 
@@ -380,9 +380,9 @@ De fragmentcache wordt gebruikt als u een constante waarde (de navigatie) hebt i
 
 Maar u kunt ook het tegenovergestelde hebben, een relatief constante context (een pagina die zelden verandert) en sommige voortdurend veranderende fragmenten op die pagina (bijvoorbeeld, een levende ticker).
 
-In dit geval, zou u [ Verschuivende Dynamische omvat ](https://sling.apache.org/documentation/bundles/dynamic-includes.html) een kans kunnen geven. In wezen is dit een componentfilter, dat om de dynamische component loopt en in plaats van de component te renderen in de pagina die een verwijzing maakt. Deze verwijzing kan een vraag Ajax zijn - zodat de component door browser wordt omvat en zo kan de omringende pagina statisch in het voorgeheugen worden opgenomen. Of - alternatief - het Verkopen Dynamisch omvat kan een richtlijn van SSI (de Server zijomvatten) produceren. Deze instructie wordt uitgevoerd op de Apache-server. U kunt zelfs ESI - de Kant van Edge gebruiken omvat richtlijnen als u Vers of een CDN hefboomwerking die manuscripten ESI steunt.
+In dit geval, zou u [&#x200B; Verschuivende Dynamische omvat &#x200B;](https://sling.apache.org/documentation/bundles/dynamic-includes.html) een kans kunnen geven. In wezen is dit een componentfilter, dat om de dynamische component loopt en in plaats van de component te renderen in de pagina die een verwijzing maakt. Deze verwijzing kan een vraag Ajax zijn - zodat de component door browser wordt omvat en zo kan de omringende pagina statisch in het voorgeheugen worden opgenomen. Of - alternatief - het Verkopen Dynamisch omvat kan een richtlijn van SSI (de Server zijomvatten) produceren. Deze instructie wordt uitgevoerd op de Apache-server. U kunt zelfs ESI - de Kant van Edge gebruiken omvat richtlijnen als u Vers of een CDN hefboomwerking die manuscripten ESI steunt.
 
-![ Diagram van de Opeenvolging van een Verzoek gebruikend het Verschuiven Dynamisch omvat ](assets/chapter-3/sequence-diagram-sling-dynamic-include.png)
+![&#x200B; Diagram van de Opeenvolging van een Verzoek gebruikend het Verschuiven Dynamisch omvat &#x200B;](assets/chapter-3/sequence-diagram-sling-dynamic-include.png)
 
 *Diagram van de Opeenvolging van een Verzoek gebruikend het Verschuiven Dynamisch omvat*
 
@@ -400,15 +400,15 @@ We raden u aan de SDI-documentatie zorgvuldig te bestuderen. Er zijn nog een paa
 
 #### Verwijzingen
 
-* [ docs.oracle.com - hoe te om de markeringen van douaneJSP ](https://docs.oracle.com/cd/E11035_01/wls100/taglib/quickstart.html) te schrijven
-* [ Dominik Süß - Creërend en gebruikend componentenfilters ](https://www.slideshare.net/connectwebex/prsentation-dominik-suess)
-* [ sling.apache.org - het Verkopen Dynamische omvat ](https://sling.apache.org/documentation/bundles/dynamic-includes.html)
-* [ helpx.adobe.com - Vestiging het Verdelen van Dynamische Omvat in AEM ](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-dynamic-include-technical-video-setup.html)
+* [&#x200B; docs.oracle.com - hoe te om de markeringen van douaneJSP &#x200B;](https://docs.oracle.com/cd/E11035_01/wls100/taglib/quickstart.html) te schrijven
+* [&#x200B; Dominik Süß - Creërend en gebruikend componentenfilters &#x200B;](https://www.slideshare.net/connectwebex/prsentation-dominik-suess)
+* [&#x200B; sling.apache.org - het Verkopen Dynamische omvat &#x200B;](https://sling.apache.org/documentation/bundles/dynamic-includes.html)
+* [&#x200B; helpx.adobe.com - Vestiging het Verdelen van Dynamische Omvat in AEM &#x200B;](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-dynamic-include-technical-video-setup.html)
 
 
 #### Model in cache plaatsen
 
-![ Model gebaseerd caching: Één bedrijfsvoorwerp met twee verschillende teruggaven ](assets/chapter-3/model-based-caching.png)
+![&#x200B; Model gebaseerd caching: Één bedrijfsvoorwerp met twee verschillende teruggaven &#x200B;](assets/chapter-3/model-based-caching.png)
 
 *Model gebaseerd caching: Één bedrijfsvoorwerp met twee verschillende teruggaven*
 

@@ -27,7 +27,7 @@ AEM GraphQL API biedt een robuuste mogelijkheid om RTF-tekst te retourneren als 
 
 >[!VIDEO](https://video.tv.adobe.com/v/342104?quality=12&learn=on)
 
-In de Redacteur van het Fragment van de Inhoud, verstrekt de het menubar van het multi-line tekstgebied auteurs van standaard rijke tekst het formatteren mogelijkheden, zoals **gewaagd**, *cursief*, en onderstreept. Het openen van het multi-lijngebied op het volledige schermwijze laat [ extra het formatteren hulpmiddelen zoals het type van Paragraaf toe, vinden en vervangen, spellingcontrole, en meer ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html?lang=nl-NL).
+In de Redacteur van het Fragment van de Inhoud, verstrekt de het menubar van het multi-line tekstgebied auteurs van standaard rijke tekst het formatteren mogelijkheden, zoals **gewaagd**, *cursief*, en onderstreept. Het openen van het multi-lijngebied op het volledige schermwijze laat [&#x200B; extra het formatteren hulpmiddelen zoals het type van Paragraaf toe, vinden en vervangen, spellingcontrole, en meer &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html?lang=nl-NL).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ In de Redacteur van het Fragment van de Inhoud, verstrekt de het menubar van het
 
 Gebruik het **multi-line tekst** gegevenstype wanneer het bepalen van uw Model van het Fragment van de Inhoud om rijke tekst toe te laten creeert.
 
-![ Meerdere Lijn het type van rijke tekstgegevens ](assets/rich-text/multi-line-rich-text.png)
+![&#x200B; Meerdere Lijn het type van rijke tekstgegevens &#x200B;](assets/rich-text/multi-line-rich-text.png)
 
 Verschillende eigenschappen van het veld met meerdere regels kunnen worden geconfigureerd.
 
@@ -55,15 +55,15 @@ Het **StandaardType** kan aan worden geplaatst:
 
 De **optie StandaardType** beïnvloedt direct de het uitgeven ervaring en bepaalt als de rijke teksthulpmiddelen aanwezig zijn.
 
-U kunt [ ook toelaten in-line verwijzingen ](#insert-fragment-references) aan andere Fragmenten van de Inhoud door **te controleren toestaan Verwijzing van het Fragment** en het vormen van **Toegestane Modellen van het Fragment van de Inhoud**.
+U kunt [&#x200B; ook toelaten in-line verwijzingen &#x200B;](#insert-fragment-references) aan andere Fragmenten van de Inhoud door **te controleren toestaan Verwijzing van het Fragment** en het vormen van **Toegestane Modellen van het Fragment van de Inhoud**.
 
-Controleer het **Vertaalbare** vakje, als de inhoud moet worden gelokaliseerd. Alleen RTF en normale tekst kunnen worden gelokaliseerd. Zie [ werkend met gelokaliseerde inhoud voor meer details ](./localized-content.md).
+Controleer het **Vertaalbare** vakje, als de inhoud moet worden gelokaliseerd. Alleen RTF en normale tekst kunnen worden gelokaliseerd. Zie [&#x200B; werkend met gelokaliseerde inhoud voor meer details &#x200B;](./localized-content.md).
 
 ## Rijke tekstreactie met GraphQL API
 
 Wanneer ontwikkelaars een GraphQL-query maken, kunnen ze verschillende antwoordtypen kiezen in `html` , `plaintext` , `markdown` en `json` in een veld met meerdere regels.
 
-De ontwikkelaars kunnen de [ Voorproef JSON ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=nl-NL) in de redacteur van het Fragment van de Inhoud gebruiken om alle waarden van het huidige Fragment van de Inhoud te tonen dat kan worden teruggekeerd gebruikend GraphQL API.
+De ontwikkelaars kunnen de [&#x200B; Voorproef JSON &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=nl-NL) in de redacteur van het Fragment van de Inhoud gebruiken om alle waarden van het huidige Fragment van de Inhoud te tonen dat kan worden teruggekeerd gebruikend GraphQL API.
 
 ## GraphQL-query voortgezet
 
@@ -283,7 +283,7 @@ Hieronder ziet u een voorbeeld van een JSON-reactie van een tekstveld met meerde
 
 De eenvoudigste manier om de multiline `json` reactie te renderen is om elk object, of knooppunt, in de reactie te verwerken en vervolgens onderliggende knooppunten van het huidige knooppunt te verwerken. Een recursieve functie kan worden gebruikt om de JSON-boom te doorlopen.
 
-Hieronder ziet u voorbeeldcode die een recursieve traversale aanpak illustreert. De steekproeven zijn JavaScript gebaseerd en gebruiken React [ JSX ](https://reactjs.org/docs/introducing-jsx.html), nochtans kunnen de programmeringsconcepten op om het even welke taal worden toegepast.
+Hieronder ziet u voorbeeldcode die een recursieve traversale aanpak illustreert. De steekproeven zijn JavaScript gebaseerd en gebruiken React [&#x200B; JSX &#x200B;](https://reactjs.org/docs/introducing-jsx.html), nochtans kunnen de programmeringsconcepten op om het even welke taal worden toegepast.
 
 ```javascript
 // renderNodeList - renders a list of nodes
@@ -333,25 +333,25 @@ const nodeMap = {
 
 ### Voorbeeld van volledige code
 
-Een herbruikbaar rijke tekst-teruggevend nut kan in het [ WKND GraphQL React voorbeeld ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app) worden gevonden.
+Een herbruikbaar rijke tekst-teruggevend nut kan in het [&#x200B; WKND GraphQL React voorbeeld &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app) worden gevonden.
 
-* [ renderRichText.js ](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/utils/renderRichText.js) - herbruikbaar nut dat een functie `mapJsonRichText` blootstelt. Dit nut kan door componenten worden gebruikt die een rijke tekstJSON reactie als React JSX willen teruggeven.
-* [ AdventureDetail.js ](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) - de component van het Voorbeeld die een verzoek van GraphQL doet dat rijke tekst omvat. De component gebruikt het hulpprogramma `mapJsonRichText` om de tekst met opmaak en eventuele verwijzingen te renderen.
+* [&#x200B; renderRichText.js &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/utils/renderRichText.js) - herbruikbaar nut dat een functie `mapJsonRichText` blootstelt. Dit nut kan door componenten worden gebruikt die een rijke tekstJSON reactie als React JSX willen teruggeven.
+* [&#x200B; AdventureDetail.js &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) - de component van het Voorbeeld die een verzoek van GraphQL doet dat rijke tekst omvat. De component gebruikt het hulpprogramma `mapJsonRichText` om de tekst met opmaak en eventuele verwijzingen te renderen.
 
 
 ## In-line verwijzingen toevoegen aan RTF-tekst {#insert-fragment-references}
 
 In het veld Mutliline kunnen auteurs afbeeldingen of andere digitale elementen uit AEM Assets invoegen in de tekststroom met tekstopmaak.
 
-![ neem beeld ](assets/rich-text/insert-image.png) op
+![&#x200B; neem beeld &#x200B;](assets/rich-text/insert-image.png) op
 
 Het bovenstaande schermschot toont een beeld dat op het multi-lijngebied wordt opgenomen gebruikend de **activa van het Tussenvoegsel** knoop.
 
 De verwijzingen naar andere Fragmenten van de Inhoud kunnen ook op het multi-line gebied worden verbonden of worden opgenomen gebruikend de **knoop van het Fragment van de Inhoud van het Tussenvoegsel**.
 
-![ de verwijzing van het inhoudsfragment van het Tussenvoegsel ](assets/rich-text/insert-contentfragment.png)
+![&#x200B; de verwijzing van het inhoudsfragment van het Tussenvoegsel &#x200B;](assets/rich-text/insert-contentfragment.png)
 
-Bovenstaande schermafbeelding toont een ander Content Fragment, Ultimate Guide to LA Skate Parks, dat wordt ingevoegd in het veld met meerdere regels. De types van de Fragmenten van de Inhoud die in gebied kunnen worden opgenomen worden gecontroleerd door **Toegestane Modellen van het Fragment van de Inhoud** configuratie in het [ multi-line gegevenstype ](#multi-line-data-type) in het Model van het Fragment van de Inhoud.
+Bovenstaande schermafbeelding toont een ander Content Fragment, Ultimate Guide to LA Skate Parks, dat wordt ingevoegd in het veld met meerdere regels. De types van de Fragmenten van de Inhoud die in gebied kunnen worden opgenomen worden gecontroleerd door **Toegestane Modellen van het Fragment van de Inhoud** configuratie in het [&#x200B; multi-line gegevenstype &#x200B;](#multi-line-data-type) in het Model van het Fragment van de Inhoud.
 
 ## In-line zoekopdrachten uitvoeren met GraphQL
 
@@ -478,7 +478,7 @@ De JSON-reactie omvat de locatie waar de verwijzing is ingevoegd in de RTF-tekst
 
 ## Inline-verwijzingen renderen in RTF-tekst
 
-Om in-line verwijzingen terug te geven, kan de recursieve benadering die in [ wordt verklaard die een multi-lijn reactie JSON ](#render-multiline-json-richtext) teruggeven worden uitgebreid.
+Om in-line verwijzingen terug te geven, kan de recursieve benadering die in [&#x200B; wordt verklaard die een multi-lijn reactie JSON &#x200B;](#render-multiline-json-richtext) teruggeven worden uitgebreid.
 
 Waar `nodeMap` de kaart is die de JSON-knooppunten rendert.
 
@@ -529,7 +529,7 @@ Met `__typename` van het `_references` -object kunt u verschillende referentiety
 
 ### Voorbeeld van volledige code
 
-Een volledig voorbeeld van het schrijven van een renderer van douaneverwijzingen kan in [ AdventureDetail.js ](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) als deel van [ GraphQL React voorbeeld van WKND ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app) worden gevonden.
+Een volledig voorbeeld van het schrijven van een renderer van douaneverwijzingen kan in [&#x200B; AdventureDetail.js &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) als deel van [&#x200B; GraphQL React voorbeeld van WKND &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app) worden gevonden.
 
 ## Voorbeeld van begin tot einde
 
@@ -537,7 +537,7 @@ Een volledig voorbeeld van het schrijven van een renderer van douaneverwijzingen
 
 >[!NOTE]
 >
-> De bovenstaande video gebruikt `_publishUrl` om de afbeeldingsverwijzing te renderen. In plaats daarvan, verkies `_dynamicUrl` zoals die in [ wordt verklaard web-geoptimaliseerde beelden hoe te ](./images.md);
+> De bovenstaande video gebruikt `_publishUrl` om de afbeeldingsverwijzing te renderen. In plaats daarvan, verkies `_dynamicUrl` zoals die in [&#x200B; wordt verklaard web-geoptimaliseerde beelden hoe te &#x200B;](./images.md);
 
 
 De voorgaande video toont een voorbeeld van begin tot eind:

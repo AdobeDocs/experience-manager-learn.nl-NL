@@ -29,7 +29,7 @@ Als uw XDP- en Adaptief formulier niet zijn gebaseerd op een schema, voert u de 
 
 Maak een adaptief formulier en zorg ervoor dat de adaptieve namen van formuliervelden identiek zijn aan veldnamen in uw xdp-sjabloon.
 Noteer de naam van het hoofdelement van uw xdp-sjabloon.
-![ wortel-element ](assets/xfa-root-element.png)
+![&#x200B; wortel-element &#x200B;](assets/xfa-root-element.png)
 
 ### Clientbibliotheek
 
@@ -78,7 +78,7 @@ Als uw xdp niet is gebaseerd op XSD, voert u de volgende stappen uit om XSD(sche
 
 ### XSD genereren op basis van de XML-gegevens
 
-U kunt om het even welke vrije online hulpmiddelen gebruiken om [ XSD ](https://www.freeformatter.com/xsd-generator.html) van de xmlgegevens te produceren die in de vorige stap worden geproduceerd.
+U kunt om het even welke vrije online hulpmiddelen gebruiken om [&#x200B; XSD &#x200B;](https://www.freeformatter.com/xsd-generator.html) van de xmlgegevens te produceren die in de vorige stap worden geproduceerd.
 
 ### Adaptief formulier maken
 
@@ -118,7 +118,7 @@ $(document).ready(function() {
 
 ## Aangepaste servlet maken
 
-Maak een aangepaste servlet die de gegevens samenvoegt met een XDP-sjabloon en de PDF retourneert. De code om dit te verwezenlijken is hieronder vermeld. De douaneserlet maakt deel uit van [ AEMFormsDocumentServices.core-1.0-SNAPSHOT bundel ](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
+Maak een aangepaste servlet die de gegevens samenvoegt met een XDP-sjabloon en de PDF retourneert. De code om dit te verwezenlijken is hieronder vermeld. De douaneserlet maakt deel uit van [&#x200B; AEMFormsDocumentServices.core-1.0-SNAPSHOT bundel &#x200B;](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
 
 ```java
 public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
@@ -220,10 +220,10 @@ Voer de volgende stappen uit om dit op uw lokale server te testen:
 1. [Download en installeer de DevelopingWithServiceUser Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. Voeg het volgende item toe aan de Apache Sling Service User Mapper Service
 DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
-1. [ Download en installeer de bundel van douaneDocumentServices ](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Dit heeft servlet om de gegevens met het malplaatje XDP samen te voegen en pdf terug te stromen
+1. [&#x200B; Download en installeer de bundel van douaneDocumentServices &#x200B;](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Dit heeft servlet om de gegevens met het malplaatje XDP samen te voegen en pdf terug te stromen
 1. [De clientbibliotheek importeren](assets/generate-interactive-dor-client-lib.zip)
 1. [Het artikel Assets (Adaptief formulier,XDP-sjablonen en XSD) importeren](assets/generate-interactive-dor-sample-assets.zip)
-1. [ Voorproef Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
+1. [&#x200B; Voorproef Aangepaste Vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Vul slechts enkele formuliervelden in.
 1. Klik op PDF downloaden om de PDF op te halen. Mogelijk moet u een paar seconden wachten voordat de PDF wordt gedownload.
 
@@ -234,4 +234,4 @@ DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 
 >[!NOTE]
 >
->U kunt het zelfde gebruiksgeval met [ proberen niet op xsd gebaseerde adaptieve vorm ](http://localhost:4502/content/dam/formsanddocuments/two/jcr:content?wcmmode=disabled). Zorg ervoor dat u de juiste parameters doorgeeft aan het posteindpunt in streampdf.js in de irs clientlib.
+>U kunt het zelfde gebruiksgeval met [&#x200B; proberen niet op xsd gebaseerde adaptieve vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/two/jcr:content?wcmmode=disabled). Zorg ervoor dat u de juiste parameters doorgeeft aan het posteindpunt in streampdf.js in de irs clientlib.

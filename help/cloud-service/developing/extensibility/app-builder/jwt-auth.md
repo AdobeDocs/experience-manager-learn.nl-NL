@@ -25,7 +25,7 @@ Dit kan de actie van App Builder vereisen om zijn eigen toegangstoken JWT verbon
 
 >[!IMPORTANT]
 >
-> Het overzicht [ de veiligheidsdocumentatie van App Builder ](https://developer.adobe.com/app-builder/docs/guides/security/) om te begrijpen wanneer het aangewezen is om toegangstokens tegenover het gebruiken van verstrekte toegangstokens te produceren.
+> Het overzicht [&#x200B; de veiligheidsdocumentatie van App Builder &#x200B;](https://developer.adobe.com/app-builder/docs/guides/security/) om te begrijpen wanneer het aangewezen is om toegangstokens tegenover het gebruiken van verstrekte toegangstokens te produceren.
 >
 > De aangepaste actie moet mogelijk eigen beveiligingscontroles uitvoeren om ervoor te zorgen dat alleen gebruikers die toegang hebben tot de App Builder-actie en de Adobe-services die eraan ten grondslag liggen, toegang hebben tot deze actie.
 
@@ -34,7 +34,7 @@ Dit kan de actie van App Builder vereisen om zijn eigen toegangstoken JWT verbon
 
 Voeg in het `.env` -bestand van het App Builder-project aangepaste sleutels toe voor elk van de JWT-referenties van het Adobe Developer Console-project. De geloofsbrieven JWT kunnen van de geloofsbrieven van het Adobe Developer Console-project __worden verkregen >__ Rekening van de Dienst (JWT) __voor een bepaalde werkruimte.__
 
-![ Adobe Developer Console JWT de Credentials van de Dienst ](./assets/jwt-auth/jwt-credentials.png)
+![&#x200B; Adobe Developer Console JWT de Credentials van de Dienst &#x200B;](./assets/jwt-auth/jwt-credentials.png)
 
 ```
 ...
@@ -50,7 +50,7 @@ De waarden voor `JWT_CLIENT_ID` , `JWT_CLIENT_SECRET` , `JWT_TECHNICAL_ACCOUNT_I
 
 ### Metaretten
 
-Bepaal de Adobe API&#39;s en de bijbehorende metatomen waarmee de App Builder-actie communiceert. U kunt metatomen met komma&#39;s als scheidingsteken weergeven in de `JWT_METASCOPES` -toets. De geldige metarealen zijn vermeld in [ Adobe JWT Metascope documentatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/scopes).
+Bepaal de Adobe API&#39;s en de bijbehorende metatomen waarmee de App Builder-actie communiceert. U kunt metatomen met komma&#39;s als scheidingsteken weergeven in de `JWT_METASCOPES` -toets. De geldige metarealen zijn vermeld in [&#x200B; Adobe JWT Metascope documentatie &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/scopes).
 
 
 De volgende waarde kan bijvoorbeeld worden toegevoegd aan de `JWT_METASCOPES` -toets in de `.env` :
@@ -136,7 +136,7 @@ De sleutels die onder `inputs` worden gedefinieerd, zijn beschikbaar voor het `p
 
 ## JWT-referenties voor toegang tot token
 
-In de actie van App Builder, zijn de geloofsbrieven JWT beschikbaar in het `params` voorwerp, en door [`@adobe/jwt-auth` kunnen worden gebruikt ](https://www.npmjs.com/package/@adobe/jwt-auth) om een toegangstoken te produceren, die beurtelings tot andere Adobe APIs en de diensten kan toegang hebben.
+In de actie van App Builder, zijn de geloofsbrieven JWT beschikbaar in het `params` voorwerp, en door [`@adobe/jwt-auth` kunnen worden gebruikt &#x200B;](https://www.npmjs.com/package/@adobe/jwt-auth) om een toegangstoken te produceren, die beurtelings tot andere Adobe APIs en de diensten kan toegang hebben.
 
 ```javascript
 const fetch = require("node-fetch");

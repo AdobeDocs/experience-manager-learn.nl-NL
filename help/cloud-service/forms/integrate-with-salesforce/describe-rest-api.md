@@ -21,8 +21,8 @@ ht-degree: 0%
 
 # Waggerbestand maken
 
-Beschrijf Salesforce REST API gebruikend [ OPEN API 2.0 specificatie ](https://swagger.io/docs/specification/2-0/basic-structure/)
+Beschrijf Salesforce REST API gebruikend [&#x200B; OPEN API 2.0 specificatie &#x200B;](https://swagger.io/docs/specification/2-0/basic-structure/)
 
 >[!VIDEO](https://video.tv.adobe.com/v/331754?quality=12&learn=on)
 
-Het waggerdossier kan worden gedownload is [ hier beschikbaar ](assets/sfdc-rest-swagger.zip)
+Het waggerdossier kan worden gedownload is [&#x200B; hier beschikbaar &#x200B;](assets/sfdc-rest-swagger.zip)

@@ -28,8 +28,8 @@ Omdat AEM Content Services is samengesteld op basis van Configuratie (Content Fr
 * Workflow voor revisie en verwerking
 * en activering/deactivatie voor het duwen en trekken van inhoud van de AEM Publish AEM Content Services eindpunten
 
-1. Verzeker de **[!DNL WKND Mobile]Pakketten van de Toepassing**, die in [ Hoofdstuk 1 ](./chapter-1.md#wknd-mobile-application-packages) worden vermeld, geïnstalleerd op **AEM Publish** gebruikend [!UICONTROL Package Manager].
-   * [ http://localhost:4503/crx/packmgr](http://localhost:4503/crx/packmgr)
+1. Verzeker de **[!DNL WKND Mobile]Pakketten van de Toepassing**, die in [&#x200B; Hoofdstuk 1 &#x200B;](./chapter-1.md#wknd-mobile-application-packages) worden vermeld, geïnstalleerd op **AEM Publish** gebruikend [!UICONTROL Package Manager].
+   * [&#x200B; http://localhost:4503/crx/packmgr](http://localhost:4503/crx/packmgr)
 
 1. Publish the **[!DNL WKND Mobile Events API]Editable Template**
    1. Ga naar **[!UICONTROL AEM]> [!UICONTROL Tools] > [!UICONTROL General] > [!UICONTROL Templates] >[!DNL WKND Mobile]**
@@ -63,7 +63,7 @@ Omdat AEM Content Services is samengesteld op basis van Configuratie (Content Fr
 
 1. In nieuwe browser van het Web, zorg ervoor u uit AEM Publish wordt geregistreerd en verzoek volgende URLs (die `http://localhost:4503` voor om het even welke gastheer vervangt:haven AEM Publish loopt).
 
-   * [ http://localhost:4503/content/wknd-mobile/en/api/events.model.json](http://localhost:4503/content/wknd-mobile/en/api/events.model.tidy.json)
+   * [&#x200B; http://localhost:4503/content/wknd-mobile/en/api/events.model.json](http://localhost:4503/content/wknd-mobile/en/api/events.model.tidy.json)
 
    Deze verzoeken moeten dezelfde JSON-reactie retourneren als wanneer de overeenkomstige eindpunten van AEM auteur werden herzien. Als dat niet het geval is, zorgt u ervoor dat alle publicaties zijn geslaagd (controleer de Replication-wachtrijen), wordt het [!DNL WKND Mobile] `ui.apps` -pakket geïnstalleerd op AEM Publish en controleert u de `error.log` for AEM Publish.
 

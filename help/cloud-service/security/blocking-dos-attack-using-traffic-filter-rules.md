@@ -34,7 +34,7 @@ Laten we de standaard DoS-beveiliging voor uw AEM-website begrijpen:
 - **Caching:** met goed caching beleid, is het effect van een aanval DDoS beperkter omdat CDN de meeste verzoeken verhindert naar de oorsprong te gaan en prestatiesdegradatie te veroorzaken.
 - **Autoscaling:** de auteur en publiceert de diensten autoscale van AEM om verkeerspikes te behandelen, hoewel zij nog door plotselinge, massale verhogingen van verkeer kunnen worden beïnvloed.
 - **Blokkerend:** Adobe CDN blokkeert verkeer aan de oorsprong als het een Adobe-bepaald tarief van een bepaald IP adres, per CDN PoP (Punt van Aanwezigheid) overschrijdt.
-- **het Alarm:** het Centrum van Acties verzendt een verkeerspiek bij het bericht van de oorsprongsalarm wanneer het verkeer een bepaald tarief overschrijdt. Deze waakzame brand weg wanneer het verkeer aan om het even welk bepaalde CDN PoP een _Adobe-bepaalde_ verzoektarief per IP adres overschrijdt. Zie [ Alarm van de Regels van de Filter van het Verkeer ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) voor meer details.
+- **het Alarm:** het Centrum van Acties verzendt een verkeerspiek bij het bericht van de oorsprongsalarm wanneer het verkeer een bepaald tarief overschrijdt. Deze waakzame brand weg wanneer het verkeer aan om het even welk bepaalde CDN PoP een _Adobe-bepaalde_ verzoektarief per IP adres overschrijdt. Zie [&#x200B; Alarm van de Regels van de Filter van het Verkeer &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) voor meer details.
 
 Deze ingebouwde bescherming zou als basislijn voor de capaciteit van een organisatie moeten worden beschouwd om het prestatieseffect van een aanval te minimaliseren DDoS. Aangezien elke website verschillende prestatieskenmerken heeft en kan zien dat de prestatiesdegradatie alvorens de Adobe-bepaalde tariefgrens wordt voldaan, wordt het geadviseerd om de standaardbescherming door _klantenconfiguratie_ uit te breiden.
 
@@ -42,9 +42,9 @@ Deze ingebouwde bescherming zou als basislijn voor de capaciteit van een organis
 
 Laten we eens kijken naar enkele aanvullende, aanbevolen maatregelen die klanten kunnen nemen om hun websites te beschermen tegen aanvallen van Digital Publishing Suite:
 
-- Voer Adobe-geadviseerde [ standaardregels van de verkeersfilter ](./traffic-filter-and-waf-rules/use-cases/using-traffic-filter-rules.md) uit om potentieel kwaadwillige verkeerspatronen te identificeren door het registreren en het alarmerend op verdacht gedrag te registreren.
-- Gebruik de **bescherming van WAF-DDoS** of **Verbeterde Veiligheid** toe:voegen-op en voer Adobe-geadviseerde [ Regels van de Filter van het Verkeer van WAF ](./traffic-filter-and-waf-rules/use-cases/using-waf-rules.md) uit om tegen verfijnde aanvallen, met inbegrip van die te verdedigen gebruikend geavanceerd protocol of op nuttige lading-gebaseerde technieken.
-- Verhoog geheim voorgeheugendekking door [ verzoektransformaties ](./traffic-filter-and-waf-rules/how-to/request-transformation.md) te vormen om onnodige vraagparameters te negeren.
+- Voer Adobe-geadviseerde [&#x200B; standaardregels van de verkeersfilter &#x200B;](./traffic-filter-and-waf-rules/use-cases/using-traffic-filter-rules.md) uit om potentieel kwaadwillige verkeerspatronen te identificeren door het registreren en het alarmerend op verdacht gedrag te registreren.
+- Gebruik de **bescherming van WAF-DDoS** of **Verbeterde Veiligheid** toe:voegen-op en voer Adobe-geadviseerde [&#x200B; Regels van de Filter van het Verkeer van WAF &#x200B;](./traffic-filter-and-waf-rules/use-cases/using-waf-rules.md) uit om tegen verfijnde aanvallen, met inbegrip van die te verdedigen gebruikend geavanceerd protocol of op nuttige lading-gebaseerde technieken.
+- Verhoog geheim voorgeheugendekking door [&#x200B; verzoektransformaties &#x200B;](./traffic-filter-and-waf-rules/how-to/request-transformation.md) te vormen om onnodige vraagparameters te negeren.
 
 ## Aan de slag
 

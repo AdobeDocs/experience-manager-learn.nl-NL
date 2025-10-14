@@ -33,18 +33,18 @@ slingRequest.setAttribute(&quot;data&quot;, content);
 
 In dit voorbeeld stellen we het gegevenskenmerk in met de inhoud. De inhoud vertegenwoordigt de gegevens waarmee u het formulier vooraf wilt invullen. Typisch zou u de &quot;inhoud&quot;door een REST vraag aan de interne dienst halen.
 
-Voor dit gebruiksgeval moet u een aangepast profiel maken. De details bij het creëren van douaneprofiel worden duidelijk gedocumenteerd in [ documentatie van AEM Forms hier ](https://helpx.adobe.com/nl/aem-forms/6/html5-forms/custom-profile.html).
+Voor dit gebruiksgeval moet u een aangepast profiel maken. De details bij het creëren van douaneprofiel worden duidelijk gedocumenteerd in [&#x200B; documentatie van AEM Forms hier &#x200B;](https://helpx.adobe.com/nl/aem-forms/6/html5-forms/custom-profile.html).
 
 Zodra u uw douaneprofiel creeert, zult u dan een JSP dossier creëren dat de gegevens door vraag aan uw achterste deelsysteem zal halen. Nadat de gegevens zijn opgehaald, gebruikt u de slingRequest.setAttribute(&quot;data&quot;, inhoud); om het formulier vooraf in te vullen
 
 Wanneer XDP wordt teruggegeven, kunt u in sommige parameters tot xdp ook overgaan en op de waarde van de parameter gebaseerd u de gegevens van het achterste deelsysteem kunt halen.
 
-[ bijvoorbeeld heeft deze url naamparameter ](http://localhost:4502/content/dam/formsanddocuments/PrepopulateMobileForm.xdp/jcr:content?name=john)
+[&#x200B; bijvoorbeeld heeft deze url naamparameter &#x200B;](http://localhost:4502/content/dam/formsanddocuments/PrepopulateMobileForm.xdp/jcr:content?name=john)
 
 JSP die u schrijft zal toegang tot de naamparameter door request.getParameter (&quot;naam&quot;) hebben. Vervolgens kunt u de waarde van deze parameter doorgeven aan uw back-endproces om de vereiste gegevens op te halen.
 Volg de onderstaande stappen om deze functie aan uw systeem te laten werken:
 
-* [ Download en voer de activa in AEM in gebruikend pakketmanager ](assets/prepopulatemobileform.zip)
+* [&#x200B; Download en voer de activa in AEM in gebruikend pakketmanager &#x200B;](assets/prepopulatemobileform.zip)
 Het pakket installeert het volgende
 
    * CustomProfile
@@ -55,4 +55,4 @@ Het pakket installeert het volgende
 >
 >Als u uw vorm door werkbench proces wilt bevolken, kunt u callWorkbenchProcess.jsp in uw /apps/AEMFormsDemoListings/customprofiles/PrepopulateForm/html.jsp in plaats van setdata.jsp willen omvatten
 
-* [ Punt uw favoriete browser aan dit url ](http://localhost:4502/content/dam/formsanddocuments/PrepopulateMobileForm.xdp/jcr:content?name=Adobe%20Systems). Het formulier moet vooraf worden ingevuld met de waarde van de parameter name
+* [&#x200B; Punt uw favoriete browser aan dit url &#x200B;](http://localhost:4502/content/dam/formsanddocuments/PrepopulateMobileForm.xdp/jcr:content?name=Adobe%20Systems). Het formulier moet vooraf worden ingevuld met de waarde van de parameter name

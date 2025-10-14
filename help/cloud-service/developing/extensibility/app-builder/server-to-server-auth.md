@@ -31,17 +31,17 @@ Deze gids verklaart hoe te om een toegangstoken te produceren door _Server-aan-S
 
 Terwijl het toevoegen van de gewenste Adobe API aan het project van Adobe Developer Console, in _vorm API_ stap, selecteer het **Server-aan-Server** authentificatietype OAuth.
 
-![ Adobe Developer Console - OAuth server-aan-Server ](./assets/s2s-auth/oauth-server-to-server.png)
+![&#x200B; Adobe Developer Console - OAuth server-aan-Server &#x200B;](./assets/s2s-auth/oauth-server-to-server.png)
 
 Selecteer het gewenste productprofiel om het bovenstaande automatisch gemaakte serviceaccount voor integratie toe te wijzen. De machtigingen voor serviceaccounts worden dus via het productprofiel beheerd.
 
-![ Adobe Developer Console - het Profiel van het Product ](./assets/s2s-auth/select-product-profile.png)
+![&#x200B; Adobe Developer Console - het Profiel van het Product &#x200B;](./assets/s2s-auth/select-product-profile.png)
 
 ## .env-bestand
 
 Voeg in het bestand `.env` van het App Builder-project aangepaste sleutels toe voor de OAuth Server-to-Server-referenties van het Adobe Developer Console-project. De server-aan-Server van OAuth geloofswaarden kunnen van de geloofsbrieven van het project van Adobe Developer Console __worden verkregen >__ Server-aan-Server __voor een bepaalde werkruimte.__
 
-![ Adobe Developer Console OAuth Server-aan-Server Credentials ](./assets/s2s-auth/oauth-server-to-server-credentials.png)
+![&#x200B; Adobe Developer Console OAuth Server-aan-Server Credentials &#x200B;](./assets/s2s-auth/oauth-server-to-server-credentials.png)
 
 ```
 ...
@@ -87,7 +87,7 @@ De sleutels die onder `inputs` worden gedefinieerd, zijn beschikbaar voor het `p
 
 ## OAuth Server-aan-Server geloofsbrieven aan toegangstoken
 
-In de App Builder-actie zijn de OAuth Server-to-Server-referenties beschikbaar in het `params` -object. Gebruikend deze geloofsbrieven kan het toegangstoken worden geproduceerd gebruikend [ OAuth 2.0 bibliotheken ](https://oauth.net/code/). Of u kunt de [ bibliotheek van de Vetch van de Knoop ](https://www.npmjs.com/package/node-fetch) gebruiken om een POST- verzoek aan het symbolische eindpunt van Adobe te maken IMS om het toegangstoken te krijgen.
+In de App Builder-actie zijn de OAuth Server-to-Server-referenties beschikbaar in het `params` -object. Gebruikend deze geloofsbrieven kan het toegangstoken worden geproduceerd gebruikend [&#x200B; OAuth 2.0 bibliotheken &#x200B;](https://oauth.net/code/). Of u kunt de [&#x200B; bibliotheek van de Vetch van de Knoop &#x200B;](https://www.npmjs.com/package/node-fetch) gebruiken om een POST- verzoek aan het symbolische eindpunt van Adobe te maken IMS om het toegangstoken te krijgen.
 
 In het volgende voorbeeld wordt getoond hoe u de `node-fetch` -bibliotheek kunt gebruiken om een POST-aanvraag in te dienen bij het Adobe IMS-tokeneindpunt om het toegangstoken op te halen.
 

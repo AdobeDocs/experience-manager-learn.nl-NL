@@ -32,7 +32,7 @@ Wanneer AMS een systeem voorziet, ontwikkelen zij een basislijnconfiguratie die 
 De lay-out verhindert u niet hun gedrag te veranderen en om het even welke veranderingen te schrappen u wenst.  In plaats van deze bestanden te wijzigen, bedekt u uw eigen bestand dat het origineel vervangt.
 
 Op deze manier kunt u er zeker van zijn dat wanneer AMS de Dispatcher patches met de meest recente correcties en beveiligingsverbeteringen patcheert, deze uw bestanden niet zullen wijzigen.  Dan kunt u blijven profiteren van de verbeteringen en slechts de veranderingen goedkeuren u zou willen.
-![ toont een bowlingbaan met een bal die onderaan de weg rolt.  De bal heeft een pijl met het woord dat je toont.  De tegenstempels van de tussenruimte worden opgevoed en er staan de woorden onveranderlijke bestanden boven.](assets/immutable-files/bowling-file-immutability.png " bowling-dossier-onveranderbaarheid ")
+![&#x200B; toont een bowlingbaan met een bal die onderaan de weg rolt.  De bal heeft een pijl met het woord dat je toont.  De tegenstempels van de tussenruimte worden opgevoed en er staan de woorden onveranderlijke bestanden boven.](assets/immutable-files/bowling-file-immutability.png " bowling-dossier-onveranderbaarheid ")
 Zoals uit bovenstaande afbeelding blijkt, blokkeren onveranderlijke bestanden je niet om de game te spelen.  Ze houden je er gewoon van om je prestatiekracht te schaden en je in de rij te houden.  Met deze methode kunnen we de weinige sleutelfuncties gebruiken:
 
 - Aanpassingen worden verwerkt in hun eigen veilige ruimten

@@ -19,25 +19,25 @@ ht-degree: 0%
 
 # Een AEM-site maken
 
-Op de AEM-site wordt de inhoud van de website bewerkt, beheerd en gepubliceerd. Om een plaats tot stand te brengen van AEM die via Edge Delivery Services wordt geleverd en gebruikend Universele Redacteur wordt geschreven, gebruik [ Edge Delivery Services met het auteursplaatsmalplaatje van AEM ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) om een nieuwe plaats op de Auteur van AEM tot stand te brengen.
+Op de AEM-site wordt de inhoud van de website bewerkt, beheerd en gepubliceerd. Om een plaats tot stand te brengen van AEM die via Edge Delivery Services wordt geleverd en gebruikend Universele Redacteur wordt geschreven, gebruik [&#x200B; Edge Delivery Services met het auteursplaatsmalplaatje van AEM &#x200B;](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) om een nieuwe plaats op de Auteur van AEM tot stand te brengen.
 
-Op de AEM-site wordt de inhoud van de website opgeslagen en geschreven. De definitieve ervaring is een combinatie de plaatsinhoud van AEM met de [ code van de website ](./1-new-code-project.md).
+Op de AEM-site wordt de inhoud van de website opgeslagen en geschreven. De definitieve ervaring is een combinatie de plaatsinhoud van AEM met de [&#x200B; code van de website &#x200B;](./1-new-code-project.md).
 
-![ Nieuwe Plaats van AEM voor Edge Delivery Services en Universele Redacteur ](./assets/2-new-aem-site/new-site.png)
+![&#x200B; Nieuwe Plaats van AEM voor Edge Delivery Services en Universele Redacteur &#x200B;](./assets/2-new-aem-site/new-site.png)
 
-Volg de [ gedetailleerde stappen die in documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-aem-site) worden geschetst om een nieuwe plaats van AEM tot stand te brengen.  Hieronder vindt u een overzicht van de stappen, inclusief de waarden die in deze zelfstudie worden gebruikt.
+Volg de [&#x200B; gedetailleerde stappen die in documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-aem-site) worden geschetst om een nieuwe plaats van AEM tot stand te brengen.  Hieronder vindt u een overzicht van de stappen, inclusief de waarden die in deze zelfstudie worden gebruikt.
 1. **creeer een nieuwe plaats** in de Auteur van AEM. In deze zelfstudie wordt de volgende sitenaam gebruikt:
    * Titel van site: `WKND (Universal Editor)`
    * Sitenaam: `aem-wknd-eds-ue`
 
-      * De waarde van de plaatsnaam moet de naam van de plaatsweg [ aanpassen die aan `paths.json` ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/path-mapping) wordt toegevoegd.
+      * De waarde van de plaatsnaam moet de naam van de plaatsweg [&#x200B; aanpassen die aan `paths.json` &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/path-mapping) wordt toegevoegd.
 
-2. **de Invoer het recentste malplaatje** van [ Edge Delivery Services met AEM creërend plaatsmalplaatje ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+2. **de Invoer het recentste malplaatje** van [&#x200B; Edge Delivery Services met AEM creërend plaatsmalplaatje &#x200B;](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 3. **Naam de plaats** om de naam van de bewaarplaats aan te passen GitHub en plaats GitHub URL als URL van de bewaarplaats.
 
 ## Nieuwe site publiceren voor voorvertoning
 
-Na het creëren van de plaats in de Auteur van AEM, publiceer het aan de voorproef die van Edge Delivery Services de inhoud ter beschikking stelt van de [ lokale ontwikkelomgeving ](./3-local-development-environment.md).
+Na het creëren van de plaats in de Auteur van AEM, publiceer het aan de voorproef die van Edge Delivery Services de inhoud ter beschikking stelt van de [&#x200B; lokale ontwikkelomgeving &#x200B;](./3-local-development-environment.md).
 
 1. Login aan **Auteur van AEM** en navigeer aan **Plaatsen**.
 2. Selecteer de **nieuwe plaats** (`WKND (Universal Editor)`) en klik **leidt Publicaties**.

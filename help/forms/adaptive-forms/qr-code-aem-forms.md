@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Het insluiten van een QR-code in een adaptief formulier kan het voor gebruikers veel gemakkelijker en efficiënter maken om toegang te krijgen tot aanvullende informatie over het formulier.
 
-De steekproefcomponent maakt gebruik van [ QRCode.js ](https://davidshimjs.github.io/qrcodejs/).
+De steekproefcomponent maakt gebruik van [&#x200B; QRCode.js &#x200B;](https://davidshimjs.github.io/qrcodejs/).
 
 QRCode.js is een javascript bibliotheek voor het maken van QRCode, steunt het dwars-browser met HTML5 Canvas en lijstmarkering in DOM.
 
@@ -60,4 +60,4 @@ $(document).ready(function()
 
 * [Download en installeer de component QR-code met Package Manager.](assets/qrcode.zip)
 * [Download en installeer het voorbeeldadaptieve formulier met Package Manager.](assets/form-with-qr-code.zip)
-* [ voorproef de vorm ](http://localhost:4502/content/dam/formsanddocuments/qrcode/w9form/jcr:content?wcmmode=disabled). De Help-sectie van het formulier heeft de QR-code.
+* [&#x200B; voorproef de vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/qrcode/w9form/jcr:content?wcmmode=disabled). De Help-sectie van het formulier heeft de QR-code.

@@ -28,9 +28,9 @@ Hieronder vindt u een overzicht van de stappen op hoog niveau voor het maken van
 * Tweede basispagina maken met één inhoudsgebied (dit is de standaardinstelling)
 * Selecteer het tabblad Paginering (naamloos Subformulier) (pagina 1) en (naamloos Subformulier) (pagina2) en stel de eigenschappen in zoals weergegeven in de onderstaande schermafbeeldingen.
 
-![ page1 ](assets/untitledsubform_paginationproperties.gif)
+![&#x200B; page1 &#x200B;](assets/untitledsubform_paginationproperties.gif)
 
-![ page2 ](assets/untitled_subformpage2.gif)
+![&#x200B; page2 &#x200B;](assets/untitled_subformpage2.gif)
 
 Nadat de eigenschappen voor paginering zijn ingesteld, kunnen we subformulieren of doelgebieden toevoegen onder (naamloos subformulier) (Pagina 1).
 
@@ -39,4 +39,4 @@ Vervolgens kunnen documentfragmenten aan deze subformulieren of doelgebieden wor
 Download de aan dit artikel verwante elementen om dit op uw lokale server te testen. Omlaag naar de onderkant van deze pagina schuiven
 
 * [Voorbeeldafdrukkanaaldocument downloaden en installeren met pakketbeheer](assets/print-channel-with-two-column-layout.zip)
-* [ Voorproef het Document van het Kanaal van de Druk ](http://localhost:4502/content/dam/formsanddocuments/2columnlayout/jcr:content?channel=print&amp;mode=preview&amp;dataRef=service%3A%2F%2FFnDTestData&amp;wcmmode=disabled)
+* [&#x200B; Voorproef het Document van het Kanaal van de Druk &#x200B;](http://localhost:4502/content/dam/formsanddocuments/2columnlayout/jcr:content?channel=print&amp;mode=preview&amp;dataRef=service%3A%2F%2FFnDTestData&amp;wcmmode=disabled)

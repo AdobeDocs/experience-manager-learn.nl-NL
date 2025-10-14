@@ -29,4 +29,4 @@ In deel één van een reeks van drie delen, verkennen we de basisbeginselen van 
 
 ## Aanvullende bronnen
 
-Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 2 ](../cloud5-season-2.md) pagina.
+Bekijk verwante video&#39;s op de [&#x200B; Wolk 5 seizoen 2 &#x200B;](../cloud5-season-2.md) pagina.

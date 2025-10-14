@@ -24,28 +24,28 @@ In de vorige versie van AEM Form(6.5) moest aangepaste code worden geschreven na
 
 In dit artikel worden de stappen beschreven die nodig zijn om een adaptief formulier vooraf in te vullen of in te vullen met gegevens die uit de SharePoint-lijst zijn opgehaald met de service voor het vooraf invullen van het formuliergegevensmodel.
 
-Dit artikel veronderstelt u [ met succes gevormd adaptieve vorm hebt om gegevens naar de lijst van SharePoint voor te leggen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=nl-NL#connect-af-sharepoint-list)
+Dit artikel veronderstelt u [&#x200B; met succes gevormd adaptieve vorm hebt om gegevens naar de lijst van SharePoint voor te leggen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=nl-NL#connect-af-sharepoint-list)
 
 Hier volgt een overzicht van de gegevens in de SharePoint-lijst
-![ sharepoint-list ](assets/list-data.png)
+![&#x200B; sharepoint-list &#x200B;](assets/list-data.png)
 
 Als u een adaptief formulier vooraf wilt invullen met de gegevens die bij een bepaalde hulplijn horen, moeten de volgende stappen worden uitgevoerd
 
 ## Vorm de get dienst
 
 * Een get-service maken voor het object op het hoogste niveau van het formuliergegevensmodel met het kenmerk guid
-  ![ get-service ](assets/mapping-request-attribute.png)
+  ![&#x200B; get-service &#x200B;](assets/mapping-request-attribute.png)
 
 In deze schermafbeelding is de hulplijnkolom gebonden via een aanvraagkenmerk met de naam `submissionid` .
 
 De get dienst volledig gevormd kijkt als dit
 
-![ get-service ](assets/fdm-request-attribute.png)
+![&#x200B; get-service &#x200B;](assets/fdm-request-attribute.png)
 
 ## Het aangepaste formulier configureren voor het gebruik van de vooraf ingevulde service van het formuliergegevensmodel
 
 * Open een adaptief formulier op basis van het formuliergegevensmodel van de lijst met deelpunten. De service Prefill-up formuliergegevensmodel koppelen
-  ![ vorm-prefill-dienst ](assets/form-prefill-service.png)
+  ![&#x200B; vorm-prefill-dienst &#x200B;](assets/form-prefill-service.png)
 
 ## Het formulier testen
 

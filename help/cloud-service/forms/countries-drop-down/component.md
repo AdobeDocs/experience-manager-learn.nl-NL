@@ -41,7 +41,7 @@ U kunt als volgt het HTML-bestand voor de component Landen maken:
 5. Wijzig de code om het nieuwe tekenmodel te gebruiken, zoals weergegeven in de schermafbeelding
 6. Sla uw wijzigingen op.
 
-![ sling-model ](assets/countriesdropdown.png)
+![&#x200B; sling-model &#x200B;](assets/countriesdropdown.png)
 
 Tot slot synchroniseert u uw project met deze updates om ervoor te zorgen dat de wijzigingen in de CRX-opslagplaats worden weerspiegeld in uw AEM-project.
 

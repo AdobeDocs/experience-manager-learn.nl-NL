@@ -25,16 +25,16 @@ Leer hoe u AEM as a Cloud Service-zoekindexen gebruikt, hoe u AEM 6-indexdefinit
 
 ## Indexconversie
 
-![ het Hulpmiddel van de Convertor van de Index ](./assets/index-converter.png)
+![&#x200B; het Hulpmiddel van de Convertor van de Index &#x200B;](./assets/index-converter.png)
 
-Als deel van het refactoring van uw codebasis, gebruik het [ omzetter van de Index hulpmiddel ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) om de indexdefinities van douaneOak in AEM as a Cloud Service compatibele indexdefinities om te zetten.
+Als deel van het refactoring van uw codebasis, gebruik het [&#x200B; omzetter van de Index hulpmiddel &#x200B;](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) om de indexdefinities van douaneOak in AEM as a Cloud Service compatibele indexdefinities om te zetten.
 
-Herzie de [ documentatie van de indexomzetter ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html?lang=nl-NL) voor de volledige en huidige reeks mogelijkheden van de Convertor van de Index.
+Herzie de [&#x200B; documentatie van de indexomzetter &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html?lang=nl-NL) voor de volledige en huidige reeks mogelijkheden van de Convertor van de Index.
 
 ## Belangrijkste activiteiten
 
 + Gebruik het [&#128279;](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) hulpmiddel van de Migrator van het Werkschema van 0&rbrace; Adobe I/O &lbrace;om werkschema&#39;s van de activaverwerking te migreren om de microdiensten van Asset Compute te gebruiken.
-+ Opstelling a [ lokale ontwikkelomgeving ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL) en stel de aangepaste indexen op. Zorg ervoor dat de bijgewerkte indexen up-to-date zijn.
++ Opstelling a [&#x200B; lokale ontwikkelomgeving &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL) en stel de aangepaste indexen op. Zorg ervoor dat de bijgewerkte indexen up-to-date zijn.
 + Implementeer de bijgewerkte codebasis in een AEM as a Cloud Service-ontwikkelomgeving en blijf valideren.
 + Als het wijzigen van een uit de doos index **&#x200B;**&#x200B;altijd kopieert de recentste indexdefinitie van een milieu van AEM as a Cloud Service dat op de recentste versie loopt. Pas de gekopieerde indexdefinitie aan uw behoeften aan.
 

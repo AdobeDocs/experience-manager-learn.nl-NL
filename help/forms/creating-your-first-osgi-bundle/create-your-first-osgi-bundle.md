@@ -26,7 +26,7 @@ Een bundel OSGi is een Java™ archiefdossier dat code Java, middelen, en manife
 De ondersteunde versie van JDK installeren. Ik heb JDK1.8 gebruikt. Zorg ervoor u **JAVA_HOME** in uw milieuvariabelen hebt toegevoegd en aan de wortelomslag van uw installatie richt JDK.
 De %JAVA_HOME%/bin toevoegen aan het pad
 
-![ gegeven-bron ](assets/java-home.JPG)
+![&#x200B; gegeven-bron &#x200B;](assets/java-home.JPG)
 
 >[!NOTE]
 > Gebruik JDK 15 niet. Dit wordt niet ondersteund door AEM.
@@ -35,26 +35,26 @@ De %JAVA_HOME%/bin toevoegen aan het pad
 
 Open een nieuw opdrachtpromptvenster en typ: `java -version` . De JDK-versie die wordt aangeduid door de variabele `JAVA_HOME` , moet worden hersteld
 
-![ gegeven-bron ](assets/java-version.JPG)
+![&#x200B; gegeven-bron &#x200B;](assets/java-version.JPG)
 
 ## Gemaakt installeren
 
 Maven is een tool voor automatisering van build die voornamelijk wordt gebruikt voor Java-projecten. Voer de volgende stappen uit om te installeren op uw lokale systeem.
 
 * Maak een map met de naam `maven` in station C
-* Download het [ binaire zip archief ](https://maven.apache.org/download.cgi)
+* Download het [&#x200B; binaire zip archief &#x200B;](https://maven.apache.org/download.cgi)
 * De inhoud van het ZIP-archief extraheren naar `c:\maven`
 * Maak een omgevingsvariabele met de naam `M2_HOME` met de waarde `C:\maven\apache-maven-3.6.0` . In mijn geval, is de **mvn** versie 3.6.0. Op het moment dat dit artikel wordt geschreven, is de nieuwste versie 3.6.3
 * Voeg de `%M2_HOME%\bin` toe aan het pad
 * Uw wijzigingen opslaan
 * Open een nieuwe opdrachtprompt en typ in `mvn -version` . U zou de **mvn** versie moeten zien die zoals hieronder getoond in het schermschot wordt vermeld
 
-![ gegeven-bron ](assets/mvn-version.JPG)
+![&#x200B; gegeven-bron &#x200B;](assets/mvn-version.JPG)
 
 
 ## Eclipse installeren
 
-Installeer de recentste versie van [ eclipse ](https://www.eclipse.org/downloads/)
+Installeer de recentste versie van [&#x200B; eclipse &#x200B;](https://www.eclipse.org/downloads/)
 
 ## Uw eerste project maken
 
@@ -82,13 +82,13 @@ Na succesvolle voltooiing zou u een bericht van het bouwstijlsucces in uw bevelv
 
 Ga naar **Dossier -> de Invoer** en selecteer **Bestaande Gemaakte Projecten** zoals hier getoond
 
-![ gegeven-bron ](assets/import-mvn-project.JPG)
+![&#x200B; gegeven-bron &#x200B;](assets/import-mvn-project.JPG)
 
 Klik op Volgende
 
 Selecteer c:\aemformsbundles\mysite door **te klikken doorbladert** knoop
 
-![ gegeven-bron ](assets/mysite-eclipse-project.png)
+![&#x200B; gegeven-bron &#x200B;](assets/mysite-eclipse-project.png)
 
 >[!NOTE]
 >U kunt desgewenst de geschikte modules importeren. Selecteer en importeer alleen de kernmodule als u alleen Java-code gaat maken in uw project.
@@ -99,11 +99,11 @@ Het project wordt geïmporteerd in Eclipse en u ziet een aantal `mysite.xxxx` ma
 
 Vouw `src/main/java` onder de map `mysite.core` uit. Dit is de map waarin u het grootste deel van uw code schrijft.
 
-![ gegeven-bron ](assets/mysite-core-project.png)
+![&#x200B; gegeven-bron &#x200B;](assets/mysite-core-project.png)
 
 ## AEMFD Client SDK opnemen
 
-U moet de SDK van de AEMFD-client in uw project opnemen om te kunnen profiteren van verschillende services die bij AEM Forms worden geleverd. Gelieve te verwijzen [ AEMFD Cliënt SDK ](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) om de aangewezen cliëntSDK in uw Gemaakt project te omvatten. U moet de AEM FD Client SDK opnemen in de sectie voor afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder wordt weergegeven.
+U moet de SDK van de AEMFD-client in uw project opnemen om te kunnen profiteren van verschillende services die bij AEM Forms worden geleverd. Gelieve te verwijzen [&#x200B; AEMFD Cliënt SDK &#x200B;](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) om de aangewezen cliëntSDK in uw Gemaakt project te omvatten. U moet de AEM FD Client SDK opnemen in de sectie voor afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder wordt weergegeven.
 
 ```xml
 <dependency>
@@ -119,7 +119,7 @@ Voer de volgende stappen uit om uw project te maken:
 * Navigeren naar `c:\aemformsbundles\mysite\core`
 * De opdracht uitvoeren `mvn clean install -PautoInstallBundle`
 De bovenstaande opdracht bouwt en installeert de bundel op de AEM-server waarop `http://localhost:4502` wordt uitgevoerd. De bundel is ook beschikbaar in het bestandssysteem op
-  `C:\AEMFormsBundles\mysite\core\target` en kan worden opgesteld gebruikend [ het Webconsole van Felix ](http://localhost:4502/system/console/bundles)
+  `C:\AEMFormsBundles\mysite\core\target` en kan worden opgesteld gebruikend [&#x200B; het Webconsole van Felix &#x200B;](http://localhost:4502/system/console/bundles)
 
 ## Volgende stappen
 

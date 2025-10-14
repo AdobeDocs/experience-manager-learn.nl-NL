@@ -23,7 +23,7 @@ In Adobe Experience Manager (AEM) zijn componenten de bouwstenen die worden gebr
 
 In deze zelfstudie maken we een adresblokcomponent. De component van het adresblok zal gebieden hebben om het straatadres, de stad, de staat, en postcode te vangen.
 
-![ definitief-adres ](assets/final-address-component.png)
+![&#x200B; definitief-adres &#x200B;](assets/final-address-component.png)
 
 ## Vereisten
 

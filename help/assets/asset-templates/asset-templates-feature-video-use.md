@@ -24,7 +24,7 @@ Met AEM Assets Template kunnen marketers digitale middelen maken, beheren en lev
 
 >[!NOTE]
 >
->Voor stappen bij het vormen van InDesign Server gelieve te herzien [ de Malplaatjes van Assets van de Opstelling met InDesign Server ](asset-templates-technical-video-setup.md).
+>Voor stappen bij het vormen van InDesign Server gelieve te herzien [&#x200B; de Malplaatjes van Assets van de Opstelling met InDesign Server &#x200B;](asset-templates-technical-video-setup.md).
 
 ## Overzicht {#overview}
 

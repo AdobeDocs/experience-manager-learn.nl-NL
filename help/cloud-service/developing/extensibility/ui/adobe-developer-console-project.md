@@ -30,4 +30,4 @@ Maak een Adobe Developer Console-project dat de toegang tot andere Adobe-service
 >
 > In de bovenstaande video ziet u hoe u een extensie van een Content Fragment Console gebruikt om het maken van Adobe Developer Console-projecten te illustreren. Nochtans, is het belangrijk om op te merken dat de behandelde concepten op alle uitbreidingen van de gebruikersinterface van AEM kunnen worden toegepast.
 
-Zie de documentatie van Adobe Developer voor a [ gedetailleerde looppas-door van het creëren van een project van Adobe Developer Console ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console).
+Zie de documentatie van Adobe Developer voor a [&#x200B; gedetailleerde looppas-door van het creëren van een project van Adobe Developer Console &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console).

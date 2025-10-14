@@ -29,21 +29,21 @@ Leer hoe te om een bestaande Component van de Kern uit te breiden die met de Red
 
 1. Breid een bestaande Component van de Kern met extra eigenschappen en inhoud uit.
 2. Begrijp de basis van Componentovererving met het gebruik van `sling:resourceSuperType`.
-3. Leer hoe te hefboomwerking het [ Patroon van de Delegatie ](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) voor het Verdelen Modellen om bestaande logica en functionaliteit opnieuw te gebruiken.
+3. Leer hoe te hefboomwerking het [&#x200B; Patroon van de Delegatie &#x200B;](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) voor het Verdelen Modellen om bestaande logica en functionaliteit opnieuw te gebruiken.
 
 ## Wat u gaat maken
 
 In dit hoofdstuk wordt de aanvullende code weergegeven die nodig is om een extra eigenschap toe te voegen aan een standaard `Image` -component om te voldoen aan de vereisten voor een nieuwe `Banner` -component. De `Banner` component bevat alle zelfde eigenschappen zoals de standaard `Image` component maar omvat een extra bezit voor gebruikers om de **Tekst van de Banner** te bevolken.
 
-![ Definitief authored bannercomponent ](assets/extend-component/final-author-banner-component.png)
+![&#x200B; Definitief authored bannercomponent &#x200B;](assets/extend-component/final-author-banner-component.png)
 
 ## Vereisten
 
-Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikkelomgeving ](overview.md#local-dev-environment). Het wordt verondersteld op dit punt in de zelfstudie hebben de gebruikers een stevig inzicht in de eigenschap van de Redacteur van AEM SPA.
+Herzie het vereiste tooling en de instructies voor vestiging a [&#x200B; lokale ontwikkelomgeving &#x200B;](overview.md#local-dev-environment). Het wordt verondersteld op dit punt in de zelfstudie hebben de gebruikers een stevig inzicht in de eigenschap van de Redacteur van AEM SPA.
 
 ## Overerving met Sling Resource Super Type {#sling-resource-super-type}
 
-Als u een bestaande component wilt uitbreiden, stelt u een eigenschap met de naam `sling:resourceSuperType` in voor de definitie van de component.  `sling:resourceSuperType` is a [ bezit ](https://sling.apache.org/documentation/the-sling-engine/resources.html#resource-properties) dat op de definitie van een component van AEM kan worden geplaatst die aan een andere component richt. Hiermee wordt de component expliciet ingesteld om alle functionaliteit over te nemen van de component die wordt aangeduid als de `sling:resourceSuperType` .
+Als u een bestaande component wilt uitbreiden, stelt u een eigenschap met de naam `sling:resourceSuperType` in voor de definitie van de component.  `sling:resourceSuperType` is a [&#x200B; bezit &#x200B;](https://sling.apache.org/documentation/the-sling-engine/resources.html#resource-properties) dat op de definitie van een component van AEM kan worden geplaatst die aan een andere component richt. Hiermee wordt de component expliciet ingesteld om alle functionaliteit over te nemen van de component die wordt aangeduid als de `sling:resourceSuperType` .
 
 Als we de component `Image` in `wknd-spa-react/components/image` willen uitbreiden, moeten we de code in de module `ui.apps` bijwerken.
 
@@ -177,7 +177,7 @@ In het `_cq_editConfig.xml` -bestand wordt het gedrag voor slepen en neerzetten 
 
 ## Het dialoogvenster uitbreiden {#extend-dialog}
 
-De component `Banner` vereist een extra tekstveld in het dialoogvenster om het `bannerText` vast te leggen. Aangezien wij het Verdelen overerving gebruiken, kunnen wij eigenschappen van de [ Verschuivende Fusie van het Middel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html?lang=nl-NL) gebruiken om gedeelten van de dialoog met voeten te treden of uit te breiden. In dit voorbeeld is een nieuw tabblad toegevoegd aan het dialoogvenster om aanvullende gegevens van een auteur vast te leggen om de kaartcomponent te vullen.
+De component `Banner` vereist een extra tekstveld in het dialoogvenster om het `bannerText` vast te leggen. Aangezien wij het Verdelen overerving gebruiken, kunnen wij eigenschappen van de [&#x200B; Verschuivende Fusie van het Middel &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html?lang=nl-NL) gebruiken om gedeelten van de dialoog met voeten te treden of uit te breiden. In dit voorbeeld is een nieuw tabblad toegevoegd aan het dialoogvenster om aanvullende gegevens van een auteur vast te leggen om de kaartcomponent te vullen.
 
 1. Maak in de module `ui.apps` onder de map `banner` een map met de naam `_cq_dialog` .
 1. Onder `_cq_dialog` maakt u een definitiebestand voor het dialoogvenster `.content.xml` . Vul de selectie met de volgende code:
@@ -238,7 +238,7 @@ De component `Banner` vereist een extra tekstveld in het dialoogvenster om het `
 
 1. Het dialoogvenster ziet er als volgt uit:
 
-   ![ Banner definitieve dialoog ](assets/extend-component/banner-dialog.png)
+   ![&#x200B; Banner definitieve dialoog &#x200B;](assets/extend-component/banner-dialog.png)
 
    Merk op dat wij niet de lusjes voor **Activa** of **Meta-gegevens** moesten bepalen. Deze worden overgeërfd via de eigenschap `sling:resourceSuperType` .
 
@@ -320,7 +320,7 @@ Om de component van de Banner met de Redacteur van het KUUROORD te gebruiken, mo
 
 1. Navigeer naar een pagina van het KUUROORD en voeg de `Banner` component aan één van de pagina&#39;s van het KUUROORD toe:
 
-   ![ voeg component Banner ](assets/extend-component/add-banner-component.png) toe
+   ![&#x200B; voeg component Banner &#x200B;](assets/extend-component/add-banner-component.png) toe
 
    >[!NOTE]
    >
@@ -434,7 +434,7 @@ Implementeer vervolgens het Sling Model voor de interface `BannerModel` .
 
    Let op het gebruik van de `@Model` - en `@Exporter` -aantekeningen om ervoor te zorgen dat het Sling-model via de Sling Model Exporter met serienummering kan worden gecodeerd als JSON.
 
-   `BannerModelImpl.java` gebruikt het [ patroon van de Delegatie voor het Verdelen Modellen ](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) om te vermijden herschrijvend alle logica van de kerncomponent van het Beeld.
+   `BannerModelImpl.java` gebruikt het [&#x200B; patroon van de Delegatie voor het Verdelen Modellen &#x200B;](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) om te vermijden herschrijvend alle logica van de kerncomponent van het Beeld.
 
 1. Controleer de volgende regels:
 
@@ -467,19 +467,19 @@ Implementeer vervolgens het Sling Model voor de interface `BannerModel` .
 1. Ga terug naar AEM en open de pagina van het KUUROORD die de `Banner` component heeft.
 1. Werk de `Banner` component bij om **Tekst van de Banner** te omvatten:
 
-   ![ de Tekst van de Banner ](assets/extend-component/banner-text-dialog.png)
+   ![&#x200B; de Tekst van de Banner &#x200B;](assets/extend-component/banner-text-dialog.png)
 
 1. De component vullen met een afbeelding:
 
-   ![ voeg beeld aan bannerdialoog toe ](assets/extend-component/banner-dialog-image.png)
+   ![&#x200B; voeg beeld aan bannerdialoog toe &#x200B;](assets/extend-component/banner-dialog-image.png)
 
    Sla de dialoogupdates op.
 
 1. U zou nu de teruggegeven waarde van **Tekst van de Banner** moeten zien:
 
-![ getoonde Tekst van de Banner ](assets/extend-component/banner-text-displayed.png)
+![&#x200B; getoonde Tekst van de Banner &#x200B;](assets/extend-component/banner-text-displayed.png)
 
-1. Bekijk de JSON modelreactie bij: [ http://localhost:4502/content/wknd-spa-react/us/en.model.json ](http://localhost:4502/content/wknd-spa-react/us/en.model.json) en onderzoek naar `wknd-spa-react/components/card`:
+1. Bekijk de JSON modelreactie bij: [&#x200B; http://localhost:4502/content/wknd-spa-react/us/en.model.json &#x200B;](http://localhost:4502/content/wknd-spa-react/us/en.model.json) en onderzoek naar `wknd-spa-react/components/card`:
 
    ```json
    "banner": {

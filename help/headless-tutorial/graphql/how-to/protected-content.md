@@ -34,9 +34,9 @@ Deze Hoe kan ik-onderwerpen bestrijken niet:
 
 ## Gebruikersgroepen
 
-Eerst, moeten wij a [ gebruikersgroep ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions) bepalen die de gebruikers bevat die toegang tot de beschermde inhoud zouden moeten hebben.
+Eerst, moeten wij a [&#x200B; gebruikersgroep &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions) bepalen die de gebruikers bevat die toegang tot de beschermde inhoud zouden moeten hebben.
 
-![ AEM Hoofdloze beschermde de gebruikersgroep van de inhoudsgebruiker ](./assets/protected-content/user-groups.png){align="center"}
+![&#x200B; AEM Hoofdloze beschermde de gebruikersgroep van de inhoudsgebruiker &#x200B;](./assets/protected-content/user-groups.png){align="center"}
 
 Gebruikersgroepen wijzen toegang toe aan AEM Headless-inhoud, inclusief Content Fragments of andere middelen waarnaar wordt verwezen.
 
@@ -54,14 +54,14 @@ Als u verschillende toegangsniveaus nodig hebt, maakt u meerdere gebruikersgroep
 
 Als u AEM Headless GraphQL API-aanvragen toegang wilt geven tot beveiligde inhoud, kunt u de aanvraag zonder kop koppelen aan een gebruiker die tot een specifieke gebruikersgroep behoort. Hier volgen twee veelvoorkomende benaderingen:
 
-1. **AEM as a Cloud Service [ technische rekeningen ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials):**
+1. **AEM as a Cloud Service [&#x200B; technische rekeningen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials):**
    - Maak een technische rekening in de AEM as a Cloud Service Developer Console.
    - Meld u één keer aan bij de AEM-auteur met de technische account.
    - Voeg de technische rekening aan de gebruikersgroep via **Hulpmiddelen > Veiligheid > Groepen > de Koploze API van AEM gebruikers > Leden** toe.
    - **activeer** zowel de technische rekeningsgebruiker als de gebruikersgroep op AEM publiceren.
    - Deze methode is vereist dat de headless cliënt de Credentials van de Dienst niet aan de gebruiker blootstelt, aangezien zij geloofsbrieven voor een specifieke gebruiker zijn, en niet zouden moeten worden gedeeld.
 
-   ![ AEM Technical het groepsbeheer van de Rekening ](./assets/protected-content/group-membership.png){align="center"}
+   ![&#x200B; AEM Technical het groepsbeheer van de Rekening &#x200B;](./assets/protected-content/group-membership.png){align="center"}
 
 2. **Benoemde gebruikers:**
    - Verifieer genoemde gebruikers en voeg hen direct aan de gebruikersgroep toe bij Publiceren AEM.
@@ -71,9 +71,9 @@ Als u AEM Headless GraphQL API-aanvragen toegang wilt geven tot beveiligde inhou
 
 Het beveiligen van inhoudsfragmenten is van essentieel belang voor de beveiliging van uw AEM Headless-inhoud en wordt bereikt door de inhoud aan een CUG (Closed User Group) te koppelen. Wanneer een gebruiker een aanvraag indient bij de AEM Headless GraphQL API, wordt de geretourneerde inhoud gefilterd op basis van de CUG&#39;s van de gebruiker.
 
-![ AEM Headless CUGs ](./assets/protected-content/cugs.png){align="center"}
+![&#x200B; AEM Headless CUGs &#x200B;](./assets/protected-content/cugs.png){align="center"}
 
-Volg deze stappen om dit door [ gesloten Gebruikersgroepen (CUGs) ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/advanced/closed-user-groups) te bereiken.
+Volg deze stappen om dit door [&#x200B; gesloten Gebruikersgroepen (CUGs) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/advanced/closed-user-groups) te bereiken.
 
 1. Login aan de Auteur van AEM als a **DAM gebruiker**.
 2. Navigeer aan **Assets > Dossiers** en selecteer de **omslag** die de te beschermen Fragmenten van de Inhoud bevat. CUGs wordt toegepast hiërarchisch en effect subfolders tenzij met andere CUG met voeten getreden.
@@ -96,7 +96,7 @@ Afhankelijk van de inhoudsarchitectuur kan het nodig zijn CUG&#39;s toe te passe
 
 ## Het in cache plaatsen van beveiligde inhoud voorkomen
 
-AEM as a Cloud Service [ plaatst de reacties van HTTP door gebrek ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/caching/publish) voor prestatiesverbetering in het voorgeheugen. Dit kan echter problemen veroorzaken met het bedienen van beveiligde inhoud. Om caching van dergelijke inhoud te verhinderen, [ verwijdert geheim voorgeheugenkopballen voor specifieke eindpunten ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/caching/publish#how-to-customize-cache-rules-1) in de configuratie Apache van AEM publiceren instantie.
+AEM as a Cloud Service [&#x200B; plaatst de reacties van HTTP door gebrek &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/caching/publish) voor prestatiesverbetering in het voorgeheugen. Dit kan echter problemen veroorzaken met het bedienen van beveiligde inhoud. Om caching van dergelijke inhoud te verhinderen, [&#x200B; verwijdert geheim voorgeheugenkopballen voor specifieke eindpunten &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/caching/publish#how-to-customize-cache-rules-1) in de configuratie Apache van AEM publiceren instantie.
 
 Voeg de volgende regel toe aan het Apache-configuratiebestand van uw Dispatcher-project om cachekoppen voor specifieke eindpunten te verwijderen:
 
@@ -120,4 +120,4 @@ Merk op dat dit een prestatiesboete zal veroorzaken aangezien de inhoud niet doo
 
 ## AEM Headless GraphQL API-eindpunten beveiligen
 
-Deze gids richt zich niet het beveiligen van de [ AEM Headless GraphQL API eindpunten ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/headless/graphql-api/graphql-endpoint) zelf, maar eerder concentreert zich op het beveiligen van de inhoud die door hen wordt gediend. Alle gebruikers, inclusief anonieme gebruikers, hebben toegang tot de eindpunten die beveiligde inhoud bevatten. Alleen de inhoud die toegankelijk is voor de gesloten gebruikersgroepen van de gebruiker, wordt geretourneerd. Als er geen inhoud toegankelijk is, heeft de AEM Headless API-respons nog steeds een 200 HTTP-antwoordstatuscode, maar zijn de resultaten leeg. Doorgaans is het beveiligen van de inhoud voldoende, omdat de eindpunten zelf vertrouwelijke gegevens niet intrinsiek toegankelijk maken. Als u de eindpunten moet beveiligen, pas ACLs op hen op AEM toe publiceer via [ het Verschuiven van de Initialisatie van de Bewaarplaats van de Bewaarplaats (opnieuw richt) manuscripten ](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios).
+Deze gids richt zich niet het beveiligen van de [&#x200B; AEM Headless GraphQL API eindpunten &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/headless/graphql-api/graphql-endpoint) zelf, maar eerder concentreert zich op het beveiligen van de inhoud die door hen wordt gediend. Alle gebruikers, inclusief anonieme gebruikers, hebben toegang tot de eindpunten die beveiligde inhoud bevatten. Alleen de inhoud die toegankelijk is voor de gesloten gebruikersgroepen van de gebruiker, wordt geretourneerd. Als er geen inhoud toegankelijk is, heeft de AEM Headless API-respons nog steeds een 200 HTTP-antwoordstatuscode, maar zijn de resultaten leeg. Doorgaans is het beveiligen van de inhoud voldoende, omdat de eindpunten zelf vertrouwelijke gegevens niet intrinsiek toegankelijk maken. Als u de eindpunten moet beveiligen, pas ACLs op hen op AEM toe publiceer via [&#x200B; het Verschuiven van de Initialisatie van de Bewaarplaats van de Bewaarplaats (opnieuw richt) manuscripten &#x200B;](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios).

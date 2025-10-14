@@ -25,17 +25,17 @@ Vanaf AEM Forms 6.4 kunnen we nu het formuliergegevensmodel gebruiken als onderd
 >[!VIDEO](https://video.tv.adobe.com/v/21719?quality=12&learn=on)
 
 Volg onderstaande instructies om deze mogelijkheid op uw server te testen
-* [ Download en stel de setvalue bundel ](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) op. Dit is de aangepaste OSGI-bundel waarmee eigenschappen van metagegevens worden ingesteld.
-> in AEM Forms 6.5 en boven dit vermogen is beschikbaar uit de doos zoals [ hier ](form-data-model-service-as-step-in-aem65-workflow-video-use.md) beschrijft
+* [&#x200B; Download en stel de setvalue bundel &#x200B;](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) op. Dit is de aangepaste OSGI-bundel waarmee eigenschappen van metagegevens worden ingesteld.
+> in AEM Forms 6.5 en boven dit vermogen is beschikbaar uit de doos zoals [&#x200B; hier &#x200B;](form-data-model-service-as-step-in-aem65-workflow-video-use.md) beschrijft
 
-* Opstelling tomcat met het dossier SampleRest.war zoals die [ hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html?lang=nl-NL) wordt beschreven.Het oorlogsdossier in Tomcat wordt opgesteld heeft de code om de het creditscore van de aanvrager terug te keren. De creditscore is een willekeurig getal tussen 200 en 800
+* Opstelling tomcat met het dossier SampleRest.war zoals die [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html?lang=nl-NL) wordt beschreven.Het oorlogsdossier in Tomcat wordt opgesteld heeft de code om de het creditscore van de aanvrager terug te keren. De creditscore is een willekeurig getal tussen 200 en 800
 
-* [ de Invoer de activa in AEM gebruikend pakketmanager ](assets/invoke-fdm-as-service-step.zip).Het pakket bevat het volgende:
+* [&#x200B; de Invoer de activa in AEM gebruikend pakketmanager &#x200B;](assets/invoke-fdm-as-service-step.zip).Het pakket bevat het volgende:
 
    * Workflowmodel dat gebruikmaakt van FDM-stap.
    * Formuliergegevensmodel dat wordt gebruikt in de FDM-stap.
    * Aangepast formulier om de workflow bij verzending te activeren.
-* Open [ MortgaugeApplicationForm ](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Vul de gegevens in en verzend deze. Op de vormvoorlegging wordt het [ de werkschema van de leningentoepassing ](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) teweeggebracht.
+* Open [&#x200B; MortgaugeApplicationForm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Vul de gegevens in en verzend deze. Op de vormvoorlegging wordt het [&#x200B; de werkschema van de leningentoepassing &#x200B;](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) teweeggebracht.
 
-![ workflow ](assets/fdm-as-service-step-workflow.PNG) .
+![&#x200B; workflow &#x200B;](assets/fdm-as-service-step-workflow.PNG) .
 De workflow gebruikt de component Splitsen of Splitsen om de toepassing naar de beheerder te leiden als de creditscore hoger is dan 500. Als de creditscore lager is dan 500, wordt de toepassing gerouteerd naar cavery

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Account voor dynamiek maken en configureren
 
-[ Login ](https://dynamics.microsoft.com/en-us/) aan uw rekening van Microsoft Dynamics. U kunt a [ vrije proefrekening ](https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/) tot stand brengen als u geen rekening van de Dynamiek hebt.
+[&#x200B; Login &#x200B;](https://dynamics.microsoft.com/en-us/) aan uw rekening van Microsoft Dynamics. U kunt a [&#x200B; vrije proefrekening &#x200B;](https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/) tot stand brengen als u geen rekening van de Dynamiek hebt.
 
 >[!NOTE]
 >Vervang de server- en poortnummers in de URI hieronder om URI opnieuw te proberen. U zult dit opnieuw proberen URI nodig hebben wanneer het vormen van uw toepassing met Azure Actieve Folder.

@@ -25,15 +25,15 @@ Leer hoe de Analysator van Beste praktijken (BPA) en Cloud Acceleration Manager 
 
 ## BPA en CAM gebruiken
 
-![ BPA en CAM hoog niveaudiagram ](assets/bpa-cam-diagram.png)
+![&#x200B; BPA en CAM hoog niveaudiagram &#x200B;](assets/bpa-cam-diagram.png)
 
 Het BPA-pakket moet worden geïnstalleerd op een kloon van de AEM 6.x-productieomgeving. Het BPA zal een rapport produceren dat dan in CAM kan worden geupload, dat raad in de belangrijkste activiteiten zal verstrekken die moeten plaatsvinden om naar AEM as a Cloud Service te bewegen.
 
 ## Belangrijkste activiteiten
 
 + Maak een kloon van uw productie 6.x milieu. Tijdens het migreren van inhoud en refactorcode is het van belang een kloon van een productieomgeving te hebben om verschillende gereedschappen en wijzigingen te testen.
-+ Download het recentste BPA hulpmiddel van het [ Portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) en installeer op uw AEM 6.x gekloonde milieu.
-+ Gebruik het hulpmiddel BPA om een rapport te produceren dat aan Cloud Acceleration Manager (CAM) kan worden geupload. CAM wordt betreden door [ https://experience.adobe.com/ ](https://experience.adobe.com/) > **Experience Manager** > **Cloud Acceleration Manager**.
++ Download het recentste BPA hulpmiddel van het [&#x200B; Portaal van de Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) en installeer op uw AEM 6.x gekloonde milieu.
++ Gebruik het hulpmiddel BPA om een rapport te produceren dat aan Cloud Acceleration Manager (CAM) kan worden geupload. CAM wordt betreden door [&#x200B; https://experience.adobe.com/ &#x200B;](https://experience.adobe.com/) > **Experience Manager** > **Cloud Acceleration Manager**.
 + Gebruik CAM om richtlijnen te geven voor de updates die moeten worden uitgevoerd in de huidige codebasis en -omgeving om naar AEM as a Cloud Service te gaan.
 
 ## Handbeweging
@@ -43,10 +43,10 @@ Pas je kennis toe door uit te proberen wat je geleerd hebt met deze praktische o
 Voordat u de praktische oefening probeert, moet u controleren of u de bovenstaande video en de volgende materialen hebt bekeken en begrepen:
 
 + [AEM as a Cloud Service anders denken](./introduction.md)
-+ [ wat is AEM as a Cloud Service?](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html?lang=nl-NL)
++ [&#x200B; wat is AEM as a Cloud Service?](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html?lang=nl-NL)
 + [Architectuur van AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=nl-NL)
-+ [ Mutable en onveranderlijke inhoud ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/mutable-immutable.html?lang=nl-NL)
-+ [ Verschillen in het ontwikkelen voor AEM as a Cloud Service en AEM 6.x ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=nl-NL#developing)
++ [&#x200B; Mutable en onveranderlijke inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/mutable-immutable.html?lang=nl-NL)
++ [&#x200B; Verschillen in het ontwikkelen voor AEM as a Cloud Service en AEM 6.x &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=nl-NL#developing)
 
 <table style="border-width:0">
     <tr>
@@ -73,4 +73,4 @@ Voordat u de praktische oefening probeert, moet u controleren of u de bovenstaan
 
 ## Overige middelen
 
-+ [ Download de Analysator van Beste praktijken ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Best*+Practices*+Analyzer*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=1)
++ [&#x200B; Download de Analysator van Beste praktijken &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Best*+Practices*+Analyzer*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=1)

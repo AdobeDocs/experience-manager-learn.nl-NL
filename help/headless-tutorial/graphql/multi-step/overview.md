@@ -40,9 +40,9 @@ U hebt het volgende nodig om deze zelfstudie te volgen:
 
 * Basisvaardigheden voor HTML en JavaScript
 * De volgende gereedschappen moeten lokaal zijn geïnstalleerd:
-   * [ Node.js v18 ](https://nodejs.org/)
-   * [ Git ](https://git-scm.com/)
-   * IDE (bijvoorbeeld, [ Microsoft® Visual Studio Code ](https://code.visualstudio.com/))
+   * [&#x200B; Node.js v18 &#x200B;](https://nodejs.org/)
+   * [&#x200B; Git &#x200B;](https://git-scm.com/)
+   * IDE (bijvoorbeeld, [&#x200B; Microsoft® Visual Studio Code &#x200B;](https://code.visualstudio.com/))
 
 ### AEM-omgeving
 
@@ -50,10 +50,10 @@ Als u deze zelfstudie wilt voltooien, kunt u het beste AEM Administrator toegang
 
 ## Laten we beginnen!
 
-Begin het leerprogramma met [ het Bepalen Modellen van het Fragment van de Inhoud ](content-fragment-models.md).
+Begin het leerprogramma met [&#x200B; het Bepalen Modellen van het Fragment van de Inhoud &#x200B;](content-fragment-models.md).
 
 ## GitHub-project
 
-De broncode, en inhoudspakketten zijn beschikbaar op [ AEM Guides - het Project van GraphQL GitHub van WKND ](https://github.com/adobe/aem-guides-wknd-graphql).
+De broncode, en inhoudspakketten zijn beschikbaar op [&#x200B; AEM Guides - het Project van GraphQL GitHub van WKND &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql).
 
-Als u een kwestie met het leerprogramma of de code vindt, verlaat de kwestie van a [ GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/issues).
+Als u een kwestie met het leerprogramma of de code vindt, verlaat de kwestie van a [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/issues).

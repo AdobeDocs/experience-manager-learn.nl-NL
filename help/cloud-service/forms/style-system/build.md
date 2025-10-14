@@ -23,7 +23,7 @@ ht-degree: 0%
 Creeer een adaptieve vorm die op **&quot;Leeg met de malplaatje van de Componenten van de Kern&quot;wordt gebaseerd**. Sleep drie knoppen naar het formulier en geef deze het label &#39;&#39;Corporate&#39;&#39;, &#39;&#39;Marketing&#39;&#39; en &#39;&#39;Default&#39;&#39;.
 Wijs de juiste stijlvarianten toe aan de bedrijfs- en marketingknoppen door het penseel hieronder te selecteren.
 
-![ stijlen ](assets/marketing-variation.png)
+![&#x200B; stijlen &#x200B;](assets/marketing-variation.png)
 
 Op de derde knop wordt de standaardstijl toegepast.
 
@@ -31,7 +31,7 @@ Op de derde knop wordt de standaardstijl toegepast.
 
 De volgende stap is het themaproject te bouwen. Navigeer aan de wortelomslag van uw themaproject en stel in werking bevel _&#x200B;**npm looppas bouwt**&#x200B;_ zoals aangetoond in het hieronder ontsproten scherm.
 
-![ bouwstijl-thema ](assets/build-theme.png)
+![&#x200B; bouwstijl-thema &#x200B;](assets/build-theme.png)
 
 Zodra het themaproject met succes wordt gebouwd, zijn uw bereid om de veranderingen te testen.
 
@@ -45,8 +45,8 @@ Zodra het themaproject met succes wordt gebouwd, zijn uw bereid om de veranderin
 * Kopieer en plak de inhoud van theme.css die u in de vroegere stap bouwde.
 * De knoppen moeten worden bijgewerkt met de juiste stijlen, zoals hieronder wordt weergegeven.
 
-![ definitief-knopen ](assets/final-state-buttons.png)
+![&#x200B; definitief-knopen &#x200B;](assets/final-state-buttons.png)
 
 ## De wijzigingen verschuiven
 
-Als u met de veranderingen wordt tevredengesteld, kunt u de veranderingen in uw wolkeninstantie duwen gebruikend de [ front-end pijpleiding ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)
+Als u met de veranderingen wordt tevredengesteld, kunt u de veranderingen in uw wolkeninstantie duwen gebruikend de [&#x200B; front-end pijpleiding &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)

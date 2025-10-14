@@ -38,23 +38,23 @@ Leer hoe u AEM Experience Fragment exporteert als Adobe Target-aanbiedingen.
 
 Als u het fragment Experience naar Adobe Target exporteert zonder de juiste machtigingen in Adobe Admin Console, treedt de volgende fout op bij de AEM Author-service:
 
-![ de Fout van doel API UI ](assets/error-target-offer.png)
+![&#x200B; de Fout van doel API UI &#x200B;](assets/error-target-offer.png)
 
 ... en de volgende logberichten in het `aemerror` -logboek:
 
-![ Fout van de Console van het Doel API ](assets/target-console-error.png)
+![&#x200B; Fout van de Console van het Doel API &#x200B;](assets/target-console-error.png)
 
 #### Resolutie
 
-1. Login aan [ Admin Console ](https://adminconsole.adobe.com/) met administratieve rechten voor het Gebruikte Profiel van het Product van Adobe Target maar de integratie van AEM
+1. Login aan [&#x200B; Admin Console &#x200B;](https://adminconsole.adobe.com/) met administratieve rechten voor het Gebruikte Profiel van het Product van Adobe Target maar de integratie van AEM
 2. Selecteer __Producten > Adobe Target > het Profiel van het Product__
 3. Onder __Integraties__ lusje, selecteer de integratie voor uw milieu van AEM as a Cloud Service (zelfde naam zoals het project van Adobe Developer)
 4. Wijs __Redacteur__ toe of __Approver__ rol
 
-   ![ de Fout van doel API ](assets/target-permissions.png)
+   ![&#x200B; de Fout van doel API &#x200B;](assets/target-permissions.png)
 
 Als u de juiste machtigingen toevoegt aan de Adobe Target-integratie, wordt deze fout opgelost.
 
 ## Ondersteunende koppelingen
 
-+ [ Foutopsporing van Adobe Experience Cloud - Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
++ [&#x200B; Foutopsporing van Adobe Experience Cloud - Chrome &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)

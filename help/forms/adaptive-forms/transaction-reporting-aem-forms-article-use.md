@@ -24,7 +24,7 @@ Transactierapporten om het aantal verzonden formulieren, het weergeven van docum
 
 Standaard is het opnemen van transacties uitgeschakeld. Volg onderstaande stappen om het opnemen van transacties in te schakelen:
 
-* [ Open configMgr ](http://localhost:4502/system/console/configMgr)
+* [&#x200B; Open configMgr &#x200B;](http://localhost:4502/system/console/configMgr)
 * Zoeken naar &#39;Forms Transaction Reporting&#39;
 * Schakel het selectievakje Transacties opnemen in.
 * Uw wijzigingen opslaan
@@ -37,9 +37,9 @@ Meld u aan bij AEM Forms als beheerder om het transactierapport weer te geven. A
 
 Gereedschappen selecteren | Forms | Transactierapport weergeven
 
-of bekijk het transactierapport door [ hier te klikken ](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
+of bekijk het transactierapport door [&#x200B; hier te klikken &#x200B;](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
-![ TransctionReporting ](assets/transactionreporting.gif)
+![&#x200B; TransctionReporting &#x200B;](assets/transactionreporting.gif)
 
 In de schermafbeelding boven Document verwerkt is het aantal documenten dat met documentservices is gegenereerd. Gerenderde documenten is het aantal Interactieve die Communicatie documenten (Web en Druk) worden teruggegeven. Forms verzonden is het aantal Adaptief verzonden formulieren.
 
@@ -49,4 +49,4 @@ Handelingen als het verzenden van een PDF-formulier, het gebruik van de gebruike
 
 Als u het transactierapport over de auteursinstantie bekijkt, zorg ervoor de omgekeerde replicatie op alle publiceer instanties wordt gevormd.
 
-Meer over transactie het melden [ te leren gelieve te klikken hier ](https://helpx.adobe.com/nl/experience-manager/6-4/forms/using/transaction-reports-overview.html)
+Meer over transactie het melden [&#x200B; te leren gelieve te klikken hier &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-4/forms/using/transaction-reports-overview.html)

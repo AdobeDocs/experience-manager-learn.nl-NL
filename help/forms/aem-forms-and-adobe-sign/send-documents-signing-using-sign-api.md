@@ -23,10 +23,10 @@ In bepaalde gevallen hebt u mogelijk de verplichting om een document voor handte
 
 ## De voorbeeldbundel OSGi implementeren
 
-[ stelt de bundel OSGi ](assets/AdobeSignHelperMethods.core-1.0.0-SNAPSHOT.jar) via de Console van het Web van AEM OSGi op. Specificeer de API integratiesleutel en API gebruiker die de configuratie OSGi zoals hieronder getoond, via de Manager van de Configuratie van de Console van het Web van AEM OSGi gebruikt.
+[&#x200B; stelt de bundel OSGi &#x200B;](assets/AdobeSignHelperMethods.core-1.0.0-SNAPSHOT.jar) via de Console van het Web van AEM OSGi op. Specificeer de API integratiesleutel en API gebruiker die de configuratie OSGi zoals hieronder getoond, via de Manager van de Configuratie van de Console van het Web van AEM OSGi gebruikt.
 
  De `AdobeSignHelperMethods` OSGi-bundel wordt niet herkend als een Adobe Experience Manager-productcode (AEM) en wordt daarom niet ondersteund door ondersteuning voor Adoben.
-![ teken-configuratie ](assets/sign-configuration.png)
+![&#x200B; teken-configuratie &#x200B;](assets/sign-configuration.png)
 
 
 ## API-documentatie

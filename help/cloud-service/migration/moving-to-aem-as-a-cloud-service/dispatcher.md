@@ -28,13 +28,13 @@ Meer informatie over AEM Dispatcher for AEM as a Cloud Service, waarbij u zich r
 
 ![Dispatcher Converter](./assets/dispatcher-converter-diagram.png)
 
-Als deel van het refactoring van uw codebasis, gebruik de [ Convertor van AEM Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html?lang=nl-NL) aan refactor bestaande op-gebouw of Dispatcher van Adobe configuraties aan de compatibele configuratie van Dispatcher van AEM as a Cloud Service.
+Als deel van het refactoring van uw codebasis, gebruik de [&#x200B; Convertor van AEM Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html?lang=nl-NL) aan refactor bestaande op-gebouw of Dispatcher van Adobe configuraties aan de compatibele configuratie van Dispatcher van AEM as a Cloud Service.
 
 ## Belangrijkste activiteiten
 
-+ Gebruik het [ hulpmiddel van de Convertor van Adobe I/O Dispatcher ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#aio-aem-migrationdispatcher-converter) om een bestaande configuratie van Dispatcher te migreren.
-+ Verwijs de module van Dispatcher van het [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud) als beste praktijken.
-+ [ Opstelling lokale Hulpmiddelen van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=nl-NL) om verzender te bevestigen, alvorens in een milieu van Cloud Service te testen.
++ Gebruik het [&#x200B; hulpmiddel van de Convertor van Adobe I/O Dispatcher &#x200B;](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#aio-aem-migrationdispatcher-converter) om een bestaande configuratie van Dispatcher te migreren.
++ Verwijs de module van Dispatcher van het [&#x200B; Archetype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud) als beste praktijken.
++ [&#x200B; Opstelling lokale Hulpmiddelen van Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=nl-NL) om verzender te bevestigen, alvorens in een milieu van Cloud Service te testen.
 
 ## Handbeweging
 

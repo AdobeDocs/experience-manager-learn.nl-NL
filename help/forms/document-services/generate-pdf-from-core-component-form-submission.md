@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Hier is de herziene tekst met &quot;Core Components&quot; met hoofdletters:
 
-Een typisch scenario is dat een PDF wordt gegenereerd op basis van gegevens die zijn ingediend via een adaptief formulier op basis van kerncomponenten. Deze gegevens hebben altijd de JSON-indeling. Als u een PDF wilt genereren met de Render PDF API, moet u de JSON-gegevens converteren naar XML-indeling. De `toString` -methode van `org.json.XML` wordt gebruikt voor deze conversie. Voor meer details, verwijs naar de [ documentatie van `org.json.XML.toString` methode ](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-).
+Een typisch scenario is dat een PDF wordt gegenereerd op basis van gegevens die zijn ingediend via een adaptief formulier op basis van kerncomponenten. Deze gegevens hebben altijd de JSON-indeling. Als u een PDF wilt genereren met de Render PDF API, moet u de JSON-gegevens converteren naar XML-indeling. De `toString` -methode van `org.json.XML` wordt gebruikt voor deze conversie. Voor meer details, verwijs naar de [&#x200B; documentatie van `org.json.XML.toString` methode &#x200B;](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-).
 
 ## Adaptief, op basis van JSON-schema
 
@@ -39,7 +39,7 @@ Voer de volgende verfijnde stappen uit om het proces te stroomlijnen:
 
 ### JSON-schema genereren op basis van XML-gegevens
 
-U kunt om het even welk vrij online hulpmiddel gebruiken om [ XML in JSON ](https://jsonformatter.org/xml-to-jsonschema) om te zetten gebruikend de gegevens van XML die in de vorige stap worden geproduceerd.
+U kunt om het even welk vrij online hulpmiddel gebruiken om [&#x200B; XML in JSON &#x200B;](https://jsonformatter.org/xml-to-jsonschema) om te zetten gebruikend de gegevens van XML die in de vorige stap worden geproduceerd.
 
 ### Aangepast workflowproces voor conversie van JSON naar XML
 
@@ -112,17 +112,17 @@ Als u formulierverzendingen wilt verwerken, maakt u een workflow die twee stappe
 1. In de eerste stap wordt een aangepast proces gebruikt om de verzonden JSON-gegevens te transformeren in XML.
 1. De volgende stap genereert een PDF door de XML-gegevens te combineren met de XDP-sjabloon.
 
-![ json-aan-xml ](assets/json-to-xml-process-step.png)
+![&#x200B; json-aan-xml &#x200B;](assets/json-to-xml-process-step.png)
 
 
 ## De voorbeeldcode implementeren
 
 Voer de volgende gestroomlijnde stappen uit om dit op uw lokale server te testen:
 
-1. [ Download en installeer de douanebundel via de het Webconsole van AEM OSGi ](assets/convertJsonToXML.core-1.0.0-SNAPSHOT.jar).
-1. [ voer het werkschemapakket ](assets/workflow_to_render_pdf.zip) in.
-1. [ voer de steekproef Aangepaste Vorm en het malplaatje XDP ](assets/adaptive_form_and_xdp_template.zip) in.
-1. [ Voorproef de Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/f23/jcr:content?wcmmode=disabled).
+1. [&#x200B; Download en installeer de douanebundel via de het Webconsole van AEM OSGi &#x200B;](assets/convertJsonToXML.core-1.0.0-SNAPSHOT.jar).
+1. [&#x200B; voer het werkschemapakket &#x200B;](assets/workflow_to_render_pdf.zip) in.
+1. [&#x200B; voer de steekproef Aangepaste Vorm en het malplaatje XDP &#x200B;](assets/adaptive_form_and_xdp_template.zip) in.
+1. [&#x200B; Voorproef de Aangepaste Vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/f23/jcr:content?wcmmode=disabled).
 1. Vul een aantal formuliervelden in.
 1. Verzend het formulier om de AEM-workflow te starten.
 1. Zoek de gerenderde PDF in de payload-map van de workflow.

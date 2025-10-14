@@ -25,7 +25,7 @@ Leer hoe u AEM instelt en gebruikt als cloudservice voor het ondersteunen van pa
 
 ## Overzicht van oplossing
 
-+ Identificeer de variantsleutel en het aantal waarden het kan hebben. In ons voorbeeld variëren we per staat in de VS, dus het maximale aantal is 50. Dit is klein genoeg om geen problemen met de variantgrenzen bij CDN te veroorzaken. [ sectie van de de variantbeperkingen van het Overzicht &lbrace;](#variant-limitations).
++ Identificeer de variantsleutel en het aantal waarden het kan hebben. In ons voorbeeld variëren we per staat in de VS, dus het maximale aantal is 50. Dit is klein genoeg om geen problemen met de variantgrenzen bij CDN te veroorzaken. [&#x200B; sectie van de de variantbeperkingen van het Overzicht &lbrace;](#variant-limitations).
 
 + AEM code moet het koekje __&quot;x-aem-variant&quot;__ aan de aangewezen staat van de bezoeker (b.v. `Set-Cookie: x-aem-variant=NY` ) op de initiële HTTP-aanvraag die overeenkomt met de HTTP-respons.
 
@@ -41,7 +41,7 @@ Leer hoe u AEM instelt en gebruikt als cloudservice voor het ondersteunen van pa
 
 ## HTTP-aanvraagstroom
 
-![ de Stroom van het Verzoek van het Geheime voorgeheugen van de Variant ](./assets/variant-cache-request-flow.png)
+![&#x200B; de Stroom van het Verzoek van het Geheime voorgeheugen van de Variant &#x200B;](./assets/variant-cache-request-flow.png)
 
 >[!NOTE]
 >
@@ -49,9 +49,9 @@ Leer hoe u AEM instelt en gebruikt als cloudservice voor het ondersteunen van pa
 
 ## Gebruik
 
-1. Om de eigenschap aan te tonen, zullen wij [ implementatie van WKND ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) als voorbeeld gebruiken.
+1. Om de eigenschap aan te tonen, zullen wij [&#x200B; implementatie van WKND &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) als voorbeeld gebruiken.
 
-1. Voer a [ SlingServletFilter ](https://sling.apache.org/documentation/the-sling-engine/filters.html) in AEM uit om `x-aem-variant` koekje op de reactie van HTTP, met een variantwaarde te plaatsen.
+1. Voer a [&#x200B; SlingServletFilter &#x200B;](https://sling.apache.org/documentation/the-sling-engine/filters.html) in AEM uit om `x-aem-variant` koekje op de reactie van HTTP, met een variantwaarde te plaatsen.
 
 1. Als u CDN AEM, wordt de `x-aem-variant` -cookie automatisch getransformeerd naar een HTTP-header met dezelfde naam.
 
@@ -134,7 +134,7 @@ Leer hoe u AEM instelt en gebruikt als cloudservice voor het ondersteunen van pa
 
 ## Variantbeperkingen
 
-+ AEM CDN kan maximaal 200 variaties beheren. Dat betekent dat de header van `x-aem-variant` maximaal 200 unieke waarden kan hebben. Voor meer informatie, herzie de [ CDN configuratiegrenzen ](https://docs.fastly.com/en/guides/resource-limits).
++ AEM CDN kan maximaal 200 variaties beheren. Dat betekent dat de header van `x-aem-variant` maximaal 200 unieke waarden kan hebben. Voor meer informatie, herzie de [&#x200B; CDN configuratiegrenzen &#x200B;](https://docs.fastly.com/en/guides/resource-limits).
 
 + Zorg ervoor dat de gekozen variantsleutel dit aantal nooit overschrijdt.  Een gebruikers-id is bijvoorbeeld geen goede sleutel omdat deze voor de meeste websites gemakkelijk 200 waarden overschrijdt, terwijl de staten/gebieden in een land beter geschikt zijn als er minder dan 200 staten in dat land zijn.
 

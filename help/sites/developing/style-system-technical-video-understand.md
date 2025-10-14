@@ -184,13 +184,13 @@ jQuery(function ($) {
 
 >[!NOTE]
 >
->Het Systeem van de Stijl maakt een kleine technische divergentie van [ BEM ](https://en.bem.info/), in die zin dat `BLOCK` en `BLOCK--MODIFIER` niet op het zelfde element worden toegepast, zoals die door [ BEM ](https://en.bem.info/) wordt gespecificeerd.
+>Het Systeem van de Stijl maakt een kleine technische divergentie van [&#x200B; BEM &#x200B;](https://en.bem.info/), in die zin dat `BLOCK` en `BLOCK--MODIFIER` niet op het zelfde element worden toegepast, zoals die door [&#x200B; BEM &#x200B;](https://en.bem.info/) wordt gespecificeerd.
 >
 >Vanwege productbeperkingen wordt `BLOCK--MODIFIER` in plaats daarvan toegepast op het bovenliggende element van het element `BLOCK` .
 >
->Alle andere huurders van [ BEM ](https://en.bem.info/) zouden met moeten worden gericht.
+>Alle andere huurders van [&#x200B; BEM &#x200B;](https://en.bem.info/) zouden met moeten worden gericht.
 
-* De preprocessoren van het gebruik zoals [ LESS ](https://lesscss.org/) (die door AEM wordt gesteund) of [ SCSS ](https://sass-lang.com/) (vereist douane bouwt systeem) om voor duidelijke CSS definitie, en herbruikbaarheid toe te staan.
+* De preprocessoren van het gebruik zoals [&#x200B; LESS &#x200B;](https://lesscss.org/) (die door AEM wordt gesteund) of [&#x200B; SCSS &#x200B;](https://sass-lang.com/) (vereist douane bouwt systeem) om voor duidelijke CSS definitie, en herbruikbaarheid toe te staan.
 
 * Houd het gewicht/de specificiteit van de kiezer gelijk. Hiermee voorkomt en lost u conflicten met CSS-trapsgewijze opmaak op.
 * Elke stijl indelen in een afzonderlijk bestand.
@@ -256,8 +256,8 @@ De in deze sectie gedefinieerde aanbevolen procedures hebben betrekking op &quot
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ Documentatie van het Systeem van de Stijl ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/authoring/using/style-system.html)
-* [ Creërend de bibliotheken van de Cliënt van AEM ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/clientlibs.html)
-* [ BEM (de Modifier van het Element van het Blok) documentatiewebsite ](https://getbem.com/)
-* [ LESS de website van de Documentatie ](https://lesscss.org/)
-* [ jQuery website ](https://jquery.com/)
+* [&#x200B; Documentatie van het Systeem van de Stijl &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/authoring/using/style-system.html)
+* [&#x200B; Creërend de bibliotheken van de Cliënt van AEM &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [&#x200B; BEM (de Modifier van het Element van het Blok) documentatiewebsite &#x200B;](https://getbem.com/)
+* [&#x200B; LESS de website van de Documentatie &#x200B;](https://lesscss.org/)
+* [&#x200B; jQuery website &#x200B;](https://jquery.com/)

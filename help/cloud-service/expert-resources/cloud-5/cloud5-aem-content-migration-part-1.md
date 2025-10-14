@@ -28,10 +28,10 @@ Darin en James bespreken de Dispatcher in de AEM Cloud, inclusief een aantal bes
 + evaluatie van de exemplaren die u wilt migreren
    + BPA - analyse van best practices
    + CAM - beheer van cloudversnelling
-+ [ repostats ](https://github.com/chetanmeh/oak-console-scripts/tree/master/src/main/groovy/repostats)
++ [&#x200B; repostats &#x200B;](https://github.com/chetanmeh/oak-console-scripts/tree/master/src/main/groovy/repostats)
 + [AEM-moderniseringstools](https://opensource.adobe.com/aem-modernize-tools/)
-+ [ Hulpmiddelen van de Migratie van Cloud Service ](https://github.com/adobe/aem-cloud-service-source-migration)
++ [&#x200B; Hulpmiddelen van de Migratie van Cloud Service &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration)
 
 ## Aanvullende bronnen
 
-Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 1 ](cloud5-season-1.md) pagina.
+Bekijk verwante video&#39;s op de [&#x200B; Wolk 5 seizoen 1 &#x200B;](cloud5-season-1.md) pagina.

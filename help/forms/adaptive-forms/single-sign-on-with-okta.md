@@ -28,16 +28,16 @@ De eerste stap bestaat uit het configureren van uw app op de OKTA-portal. Nadat 
 * **Attributen**: Dit zijn de attributen u over de gebruiker in de reactie van SAML krijgt. Geef ze op naar wens.
 
 
-![ okta-application ](assets/okta-app-settings-blurred.PNG)
+![&#x200B; okta-application &#x200B;](assets/okta-app-settings-blurred.PNG)
 
 
 ## Het OKTA-certificaat (IdP) toevoegen aan de AEM Trust Store
 
 Aangezien de beweringen van SAML worden gecodeerd, moeten wij het certificaat IdP (OKTA) aan de vertrouwde opslag van AEM toevoegen, om veilige communicatie tussen OKTA en AEM toe te staan.
-[ initialiseert vertrouwensopslag ](http://localhost:4502/libs/granite/security/content/truststore.html), als niet reeds geïnitialiseerd.
+[&#x200B; initialiseert vertrouwensopslag &#x200B;](http://localhost:4502/libs/granite/security/content/truststore.html), als niet reeds geïnitialiseerd.
 Onthoud het wachtwoord voor de vertrouwde opslag. Dit wachtwoord moeten we later tijdens dit proces gebruiken.
 
-* Navigeer aan [ Globale Opslag van het Vertrouwen ](http://localhost:4502/libs/granite/security/content/truststore.html).
+* Navigeer aan [&#x200B; Globale Opslag van het Vertrouwen &#x200B;](http://localhost:4502/libs/granite/security/content/truststore.html).
 * Klik op Certificaat toevoegen uit CER-bestand. Voeg het IdP-certificaat toe dat door OKTA is opgegeven en klik op Verzenden.
 
   >[!NOTE]
@@ -46,13 +46,13 @@ Onthoud het wachtwoord voor de vertrouwde opslag. Dit wachtwoord moeten we later
 
 Als u het certificaat toevoegt aan de vertrouwde opslag, krijgt u de certificaatalias die wordt weergegeven in de onderstaande schermafbeelding. De naam van de alias kan in uw geval anders zijn.
 
-![ certificaat-alias ](assets/cert-alias.PNG)
+![&#x200B; certificaat-alias &#x200B;](assets/cert-alias.PNG)
 
 **maak een nota van het certificaat alias. U hebt dit in de recentere stappen nodig.**
 
 ### SAML-verificatiehandler configureren
 
-Navigeer aan [ configMgr ](http://localhost:4502/system/console/configMgr).
+Navigeer aan [&#x200B; configMgr &#x200B;](http://localhost:4502/system/console/configMgr).
 Zoek en open &quot;Adobe Granite SAML 2.0 Authentication Handler&quot;.
 Geef de volgende eigenschappen op, zoals hieronder gespecificeerd
 Hier volgen de belangrijkste eigenschappen die moeten worden opgegeven:
@@ -71,11 +71,11 @@ Hier volgen de belangrijkste eigenschappen die moeten worden opgegeven:
 * **NamedIDPopolicy**: Specificeert beperkingen op het naamherkenningsteken dat moet worden gebruikt om het gevraagde onderwerp te vertegenwoordigen. Kopieer en kleef het volgende benadrukte koord **urn :oasis: namen :tc: SAML:2.0 :nameidformat: emailAddress**
 * **Gesynchroniseerde Attributen** - dit zijn de attributen die van de bewering van SAML in het profiel van AEM worden opgeslagen
 
-![ voorbeeld-authentificatie-manager ](assets/saml-authentication-settings-blurred.PNG)
+![&#x200B; voorbeeld-authentificatie-manager &#x200B;](assets/saml-authentication-settings-blurred.PNG)
 
 ### Filter Apache Sling Reference configureren
 
-Navigeer aan [ configMgr ](http://localhost:4502/system/console/configMgr).
+Navigeer aan [&#x200B; configMgr &#x200B;](http://localhost:4502/system/console/configMgr).
 Zoek en open &quot;Apache Sling Referrer Filter&quot;.Stel de volgende eigenschappen in zoals hieronder opgegeven:
 
 * **staat Lege** toe: vals
@@ -83,7 +83,7 @@ Zoek en open &quot;Apache Sling Referrer Filter&quot;.Stel de volgende eigenscha
 * **staat Gastheer Regexp** toe: IdP hostname (Dit is verschillend in uw geval)
 Schermopname van de eigenschappen van de verwijzing Verwijzer van de Verkenner
 
-![ verwijzing-filter ](assets/okta-referrer.png)
+![&#x200B; verwijzing-filter &#x200B;](assets/okta-referrer.png)
 
 #### Logboekregistratie voor FOUTOPSPORING configureren voor de OKTA-integratie
 
@@ -93,7 +93,7 @@ Vergeet niet dit logger in het werkgebied en de productie te verwijderen of uit 
 
 Bij het instellen van de OKTA-integratie in AEM kan het handig zijn om DEBUG-logboeken te bekijken voor de AEM SAML-verificatiehandler. Als u het logniveau wilt instellen op DEBUG, maakt u een nieuwe configuratie voor Sling Logger via de AEM OSGi-webconsole.
 **Herinner me om dit registreerapparaat op Stadium en Productie te verwijderen of onbruikbaar te maken om logboek-lawaai te verminderen.**
-* Ga aan [ configMgr ](http://localhost:4502/system/console/configMgr)
+* Ga aan [&#x200B; configMgr &#x200B;](http://localhost:4502/system/console/configMgr)
 
 * Zoek en open &quot;Apache Sling Logging Logger Configuration&quot;
 * Maak een logger met de volgende configuratie:

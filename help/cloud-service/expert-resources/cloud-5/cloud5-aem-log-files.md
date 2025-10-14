@@ -24,13 +24,13 @@ Dit is een diepe duik in hoe te om tot logboeken in AEM as a Cloud Service toega
 
 ## Inhoud die in deze video wordt behandeld
 
-+ Logbestanden [ Overzicht ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=nl-NL)
++ Logbestanden [&#x200B; Overzicht &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=nl-NL)
 + Logbestanden openen via de gebruikersinterface
 + Adobe CLI gebruiken
-   + [ Adobe I/O Verlengbare CLI ](https://github.com/adobe/aio-cli)
-   + [ air-cli-stop-cloudmanager ](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
+   + [&#x200B; Adobe I/O Verlengbare CLI &#x200B;](https://github.com/adobe/aio-cli)
+   + [&#x200B; air-cli-stop-cloudmanager &#x200B;](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
 + Logbestanden bijhouden
 
 ## Aanvullende bronnen
 
-Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 1 ](cloud5-season-1.md) pagina.
+Bekijk verwante video&#39;s op de [&#x200B; Wolk 5 seizoen 1 &#x200B;](cloud5-season-1.md) pagina.

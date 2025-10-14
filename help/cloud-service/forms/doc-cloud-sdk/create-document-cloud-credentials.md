@@ -20,8 +20,8 @@ ht-degree: 0%
 
 # Een Adobe I/O-project maken
 
-1. De eerste stap in het creëren van de integratie is [ Adobe ID ](https://account.adobe.com/) te creëren
-1. Ga naar [ Adobe Developer Console ](https://console.adobe.io/home)
+1. De eerste stap in het creëren van de integratie is [&#x200B; Adobe ID &#x200B;](https://account.adobe.com/) te creëren
+1. Ga naar [&#x200B; Adobe Developer Console &#x200B;](https://console.adobe.io/home)
 1. Aanmelden met de Adobe ID die in Stap 1 is gemaakt
 1. Een nieuw project maken
 

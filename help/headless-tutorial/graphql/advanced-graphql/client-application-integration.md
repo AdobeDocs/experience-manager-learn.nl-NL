@@ -31,26 +31,26 @@ Dit document is onderdeel van een zelfstudie met meerdere onderdelen. Controleer
 * Geautoriseerde inhoudsfragmenten
 * GraphQL blijft vragen
 
-De _IDE screenshots in dit hoofdstuk komen uit [ Code van Visual Studio ](https://code.visualstudio.com/)_
+De _IDE screenshots in dit hoofdstuk komen uit [&#x200B; Code van Visual Studio &#x200B;](https://code.visualstudio.com/)_
 
 ### Hoofdstuk 1-4 Oplossingspakket (optioneel) {#solution-package}
 
 Er is een oplossingspakket beschikbaar dat de stappen in de AEM-gebruikersinterface voor hoofdstukken 1-4 voltooit. Dit pakket is **niet nodig** als de vorige hoofdstukken zijn voltooid.
 
-1. Download [ geavanceerd-GraphQL-Tutorial-Oplossing-Pakket-1.2.zip ](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip).
+1. Download [&#x200B; geavanceerd-GraphQL-Tutorial-Oplossing-Pakket-1.2.zip &#x200B;](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip).
 1. In AEM, navigeer aan **Hulpmiddelen** > **Plaatsing** > **Pakketten** om tot **de Manager van het Pakket** toegang te hebben.
 1. Upload en installeer het pakket (ZIP-bestand) dat u in de vorige stap hebt gedownload.
 1. Repliceer het pakket naar de AEM-publicatieservice
 
 ## Doelstellingen {#objectives}
 
-In dit leerprogramma, leert u hoe te om de verzoeken om voortgezette vragen in de steekproefWKND GraphQL React app te integreren gebruikend de [ Hoofdloze Cliënt van AEM voor JavaScript ](https://github.com/adobe/aem-headless-client-js).
+In dit leerprogramma, leert u hoe te om de verzoeken om voortgezette vragen in de steekproefWKND GraphQL React app te integreren gebruikend de [&#x200B; Hoofdloze Cliënt van AEM voor JavaScript &#x200B;](https://github.com/adobe/aem-headless-client-js).
 
 ## De voorbeeldclienttoepassing klonen en uitvoeren {#clone-client-app}
 
 Om de zelfstudie te versnellen, wordt een startapp van React JS geleverd.
 
-1. Kloon de [ adobe/aem-guides-wknd-grafisch ](https://github.com/adobe/aem-guides-wknd-graphql) bewaarplaats:
+1. Kloon de [&#x200B; adobe/aem-guides-wknd-grafisch &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql) bewaarplaats:
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
@@ -79,14 +79,14 @@ Om de zelfstudie te versnellen, wordt een startapp van React JS geleverd.
    REACT_APP_BASIC_AUTH_PASS=
    ```
 
-   ![ Reageer de Milieu van de Ontwikkeling van de Toepassing ](assets/client-application-integration/react-app-dev-env-settings.png)
+   ![&#x200B; Reageer de Milieu van de Ontwikkeling van de Toepassing &#x200B;](assets/client-application-integration/react-app-dev-env-settings.png)
 
 
    >[!NOTE]
    > 
    > De bovenstaande instructies moeten Reageren app met de **AEM verbinden publiceer dienst**, nochtans om met de **dienst van de Auteur van AEM** te verbinden een lokaal ontwikkelingsteken voor uw milieu van doelAEM as a Cloud Service verkrijgen.
    >
-   > Het is ook mogelijk om app met a [ lokale instantie van de Auteur te verbinden gebruikend AEMaaCS SDK ](/help/headless-tutorial/graphql/quick-setup/local-sdk.md) gebruikend basisauthentificatie.
+   > Het is ook mogelijk om app met a [&#x200B; lokale instantie van de Auteur te verbinden gebruikend AEMaaCS SDK &#x200B;](/help/headless-tutorial/graphql/quick-setup/local-sdk.md) gebruikend basisauthentificatie.
 
 
 1. Open een terminal en voer de opdrachten uit:
@@ -97,31 +97,31 @@ Om de zelfstudie te versnellen, wordt een startapp van React JS geleverd.
    $ npm start
    ```
 
-1. Een nieuw browser venster zou op [ http://localhost:3000 ](http://localhost:3000) moeten laden
+1. Een nieuw browser venster zou op [&#x200B; http://localhost:3000 &#x200B;](http://localhost:3000) moeten laden
 
 
 1. Tik **Camping** > **Yosemite Backpackaging** om de Yosemite details van het Backpackaging-avontuur te bekijken.
 
-   ![ Yosemite het BackpackagingScherm ](assets/client-application-integration/yosemite-backpacking-adventure.png)
+   ![&#x200B; Yosemite het BackpackagingScherm &#x200B;](assets/client-application-integration/yosemite-backpacking-adventure.png)
 
 1. Open de ontwikkelaarsgereedschappen van de browser en inspecteer de aanvraag `XHR`
 
-   ![ POST GraphQL ](assets/client-application-integration/graphql-persisted-query.png)
+   ![&#x200B; POST GraphQL &#x200B;](assets/client-application-integration/graphql-persisted-query.png)
 
    U zou `GET` verzoeken aan het eindpunt van GraphQL met project config naam (`wknd-shared`), voortgeduurde vraagnaam (`adventure-by-slug`), veranderlijke naam (`slug`), waarde (`yosemite-backpacking`), en speciale karaktercoderingen moeten zien.
 
 >[!IMPORTANT]
 >
->    Als u zich afvraagt waarom het GraphQL API verzoek tegen `http://localhost:3000` en NIET tegen AEM wordt gemaakt publiceer het domein van de Dienst, overzicht [ onder het Hood ](../multi-step/graphql-and-react-app.md#under-the-hood) van Basiszelfstudie.
+>    Als u zich afvraagt waarom het GraphQL API verzoek tegen `http://localhost:3000` en NIET tegen AEM wordt gemaakt publiceer het domein van de Dienst, overzicht [&#x200B; onder het Hood &#x200B;](../multi-step/graphql-and-react-app.md#under-the-hood) van Basiszelfstudie.
 
 
 ## De code controleren
 
-In het [ Basisleerprogramma - bouw een Reactie app die AEM APIs ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html?lang=nl-NL#review-the-aemheadless-object) stap gebruikt hadden wij herzien en verbeterd weinig zeer belangrijke dossiers om hands-on deskundigheid te krijgen. Controleer de belangrijkste bestanden voordat u de WKND-app verbetert.
+In het [&#x200B; Basisleerprogramma - bouw een Reactie app die AEM APIs &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html?lang=nl-NL#review-the-aemheadless-object) stap gebruikt hadden wij herzien en verbeterd weinig zeer belangrijke dossiers om hands-on deskundigheid te krijgen. Controleer de belangrijkste bestanden voordat u de WKND-app verbetert.
 
-* [ herzie het voorwerp AEMHeadless ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html?lang=nl-NL#review-the-aemheadless-object)
+* [&#x200B; herzie het voorwerp AEMHeadless &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html?lang=nl-NL#review-the-aemheadless-object)
 
-* [ Implementeer om AEM GraphQL in werking te stellen persisted query&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html?lang=nl-NL#implement-to-run-aem-graphql-persisted-queries)
+* [&#x200B; Implementeer om AEM GraphQL in werking te stellen persisted query&#39;s &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html?lang=nl-NL#implement-to-run-aem-graphql-persisted-queries)
 
 ### Component redigeren `Adventures` Reageren
 
@@ -304,12 +304,12 @@ In het vorige hoofdstuk, creeerden wij de `adventure-details-by-slug` voortgezet
 
 >[!TIP]
 >
->De bijgewerkte dossiers zijn beschikbaar onder **AEM Guides WKND - GraphQL** project, zie [ Geavanceerde sectie van het Leerprogramma ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/advanced-tutorial).
+>De bijgewerkte dossiers zijn beschikbaar onder **AEM Guides WKND - GraphQL** project, zie [&#x200B; Geavanceerde sectie van het Leerprogramma &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/advanced-tutorial).
 
 
 Nadat de bovenstaande verbeteringen zijn voltooid, ziet de WKND-app er als volgt uit en toont de ontwikkelaarsgereedschappen van de browser `adventure-details-by-slug` de voortgezette queryaanroep.
 
-![ Verbeterde APP van WKND ](assets/client-application-integration/Enhanced-WKND-APP.gif)
+![&#x200B; Verbeterde APP van WKND &#x200B;](assets/client-application-integration/Enhanced-WKND-APP.gif)
 
 ## Uitdaging voor uitbreiding (optioneel)
 

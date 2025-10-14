@@ -34,7 +34,7 @@ Maak de configuratie van de cloudservice met onderstaande stappen.
 1. Van het _Staging_ en _Productie_ lusje houden de standaardconfiguraties. Nochtans wordt het geadviseerd het herzien en de configuraties voor echte productie opstelling, specifiek de _wisselaar van de Lading Asynchroon_ schakelen die op uw prestaties en optimaliseringsvereisten wordt gebaseerd. Merk ook op dat de _waarde van 0&rbrace; Bibliotheek URI &lbrace;voor het Opvoeren en de Productie verschillend is._
 1. Tot slot klik **creeer** om de diensten van de etiketwolk te voltooien.
 
-   ![ de Configuratie van Cloud Servicen van markeringen ](assets/launch-cloud-services-config.png)
+   ![&#x200B; de Configuratie van Cloud Servicen van markeringen &#x200B;](assets/launch-cloud-services-config.png)
 
 ## Cloudservice voor tags toepassen op de site
 
@@ -44,7 +44,7 @@ Als u de eigenschap Tag en de bijbehorende bibliotheken op de AEM site wilt lade
 
 1. Selecteer de wortelpagina van de AEM Plaats, en klik **Eigenschappen**. Dan, navigeer aan het **Geavanceerde** lusje en onder **de sectie van de Configuratie**, verifieer dat de waarde van de Configuratie van de Wolk aan uw plaats-specifieke `conf` omslag richt.
 
-   ![ pas Configuratie van Cloud Servicen op Plaats ](assets/apply-cloud-services-config-to-site.png) toe
+   ![&#x200B; pas Configuratie van Cloud Servicen op Plaats &#x200B;](assets/apply-cloud-services-config-to-site.png) toe
 
 ## Laden van eigenschap Tag op pagina&#39;s van Auteur en Publish controleren
 
@@ -54,13 +54,13 @@ Nu is het tijd om te controleren dat de eigenschap Tag en de bijbehorende biblio
 
 1. Om op Publish te verifiëren, publiceer eerst uw **configuratie van de de wolkendienst van markeringen** en open de plaatspagina op de instantie van Publish.
 
-   ![ Bezit van de Markering op de Pagina&#39;s van de Auteur en van Publish ](assets/tag-property-on-author-publish-pages.png)
+   ![&#x200B; Bezit van de Markering op de Pagina&#39;s van de Auteur en van Publish &#x200B;](assets/tag-property-on-author-publish-pages.png)
 
 Gefeliciteerd! U hebt AEM en gegevensverzameling integratie van de Tag voltooid die de code van JavaScript in uw AEM plaats injecteert zonder de code van het AEM Project bij te werken.
 
 ## Uitdaging - regel bijwerken en publiceren in eigenschap Tag
 
-De lessen van het gebruik die van vorige [ worden geleerd leiden tot een Bezit van de Markering ](./create-tag-property.md) om de eenvoudige uitdaging te voltooien, werk de bestaande Regel bij om extra consoleverklaring toe te voegen en het gebruiken van _het Publiceren Stroom_ stelt het op de AEM plaats op.
+De lessen van het gebruik die van vorige [&#x200B; worden geleerd leiden tot een Bezit van de Markering &#x200B;](./create-tag-property.md) om de eenvoudige uitdaging te voltooien, werk de bestaande Regel bij om extra consoleverklaring toe te voegen en het gebruiken van _het Publiceren Stroom_ stelt het op de AEM plaats op.
 
 ## Volgende stappen
 

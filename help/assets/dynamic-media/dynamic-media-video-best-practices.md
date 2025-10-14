@@ -25,4 +25,4 @@ Leer meer over de beste werkwijzen voor het publiceren en optimaliseren van vide
 ## Bronnen ondersteunen
 
 * [ Gesimuleerde marketing video en kijker die in video ] wordt getoond (https://techsupport.scene7.com/s7viewers/html5/SmartCropVideoViewer.html?asset=ajhcom/smart premo vo preroll leader counter_1-AVS&amp;config=ajhcom/SmartCropVideo_social&amp;serverUrl=https://techsupport.scene7.com/is/image/&amp;contenturl=https://techsupport.scene7.com/is/content/&amp;videoserverurl=https://techsupport.scene7.com/is/content&amp;navigation=https://techsupport.scene7.com/is/content/ajhcom/brand%2Dcontent/brand11/video%2Dprocessing/video%2Dsupport%2Dfeatures%2Dbest%2Dpractices/sonomacountysmarttrainchapters.vtt)
-* [ AEM Assets Dynamische de videobeste praktijken van Media documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamicvideo#best-practice-using-the-html-video-viewer)
+* [&#x200B; AEM Assets Dynamische de videobeste praktijken van Media documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamicvideo#best-practice-using-the-html-video-viewer)

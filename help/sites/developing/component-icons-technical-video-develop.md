@@ -49,7 +49,7 @@ De afkorting kan via **[worden aangepast cq:Component ]@abbrelayback** bezit. Ho
 
 ### CoralUI-pictogrammen {#coralui-icons}
 
-CoralUI-pictogrammen, geleverd door AEM, kunnen worden gebruikt voor componentpictogrammen. Om een pictogram CoralUI te vormen, plaats a **[cq:Component ]@cq:pictogram** bezit aan de gewenste het pictogramkenmerkwaarde van HTML van het pictogram CoralUI (die in de [ documentatie CoralUI ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) wordt opgesomd.
+CoralUI-pictogrammen, geleverd door AEM, kunnen worden gebruikt voor componentpictogrammen. Om een pictogram CoralUI te vormen, plaats a **[cq:Component ]@cq:pictogram** bezit aan de gewenste het pictogramkenmerkwaarde van HTML van het pictogram CoralUI (die in de [&#x200B; documentatie CoralUI &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) wordt opgesomd.
 
 ```plain
 /apps/.../components/content/my-component
@@ -87,4 +87,4 @@ De beelden van SVG zouden een achtergrondkleur moeten hebben die aan **wordt gep
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ Beschikbare Pictogrammen CoralUI ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)
+* [&#x200B; Beschikbare Pictogrammen CoralUI &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)

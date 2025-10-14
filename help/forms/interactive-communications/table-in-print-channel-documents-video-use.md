@@ -44,7 +44,7 @@ Tabellen worden gebruikt om gegevens in tabelvorm weer te geven. De rijen in de 
    * Interactief communicatiedocument
    * sampleretirementaccountdata.json
 
-* Open het Interactieve Communicatie Document op [ geeft wijze ](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html) uit.
+* Open het Interactieve Communicatie Document op [&#x200B; geeft wijze &#x200B;](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html) uit.
 
 * Voeg het de lay-outfragment TableDemo aan de bijdragesectie toe.
 * De tabelcellen binden aan de juiste formuliergegevensmodelelementen, zoals in de video wordt getoond

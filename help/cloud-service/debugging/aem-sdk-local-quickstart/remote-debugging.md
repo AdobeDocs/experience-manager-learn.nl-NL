@@ -43,6 +43,6 @@ De meeste Java IDE&#39;s bieden ondersteuning voor foutopsporing op afstand van 
 
 ### Instructies instellen
 
-+ [ de Verre debugger opstelling van Java van de Code Java ](https://code.visualstudio.com/docs/java/java-debugging)
-+ [ IntelliJ IDEA Verre debugger opstelling ](https://www.jetbrains.com/help/idea/tutorial-remote-debug.html)
-+ [ Verre debugger opstelling van de Verduistering ](https://javapapers.com/core-java/java-remote-debug-with-eclipse/)
++ [&#x200B; de Verre debugger opstelling van Java van de Code Java &#x200B;](https://code.visualstudio.com/docs/java/java-debugging)
++ [&#x200B; IntelliJ IDEA Verre debugger opstelling &#x200B;](https://www.jetbrains.com/help/idea/tutorial-remote-debug.html)
++ [&#x200B; Verre debugger opstelling van de Verduistering &#x200B;](https://javapapers.com/core-java/java-remote-debug-with-eclipse/)

@@ -160,24 +160,24 @@ public class TagAndStoreDoRinDAM implements WorkflowProcess
 Volg onderstaande stappen om dit voorbeeld op uw systeem te laten werken:
 * [De gebruikersbundel DevelopingWithService implementeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [ Download en stel de setvalue bundel ](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) op. Dit is de aangepaste OSGI-bundel die de codes instelt van de verzonden formuliergegevens.
+* [&#x200B; Download en stel de setvalue bundel &#x200B;](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) op. Dit is de aangepaste OSGI-bundel die de codes instelt van de verzonden formuliergegevens.
 
 * [Download het voorbeeldadaptieve formulier](assets/tag-and-store-in-dam-adaptive-form.zip)
 
-* [ ga naar Forms en Documenten ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [&#x200B; ga naar Forms en Documenten &#x200B;](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
 * Klik op Maken | Bestand uploaden en uploaden van de tag-and-store-in-dam-adaptive-form.zip
 
-* [ voer de artikelactiva ](assets/tag-and-store-in-dam-assets.zip) in gebruikend het pakketmanager van AEM
-* Open de [ steekproefvorm op voorproefwijze ](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Vul alle gebieden** in en verzend de vorm.
-* [ navigeer aan de omslag van de Hoogte in DAM ](http://localhost:4502/assets.html/content/dam/Peak). U zou DoR in de Piekomslag moeten zien. Controleer de eigenschappen van het document. Het moet op passende wijze worden gelabeld.
+* [&#x200B; voer de artikelactiva &#x200B;](assets/tag-and-store-in-dam-assets.zip) in gebruikend het pakketmanager van AEM
+* Open de [&#x200B; steekproefvorm op voorproefwijze &#x200B;](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Vul alle gebieden** in en verzend de vorm.
+* [&#x200B; navigeer aan de omslag van de Hoogte in DAM &#x200B;](http://localhost:4502/assets.html/content/dam/Peak). U zou DoR in de Piekomslag moeten zien. Controleer de eigenschappen van het document. Het moet op passende wijze worden gelabeld.
 Gefeliciteerd! U hebt het voorbeeld op uw systeem geïnstalleerd
 
-* Verken het [ werkschema ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) dat op vormvoorlegging wordt teweeggebracht.
+* Verken het [&#x200B; werkschema &#x200B;](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) dat op vormvoorlegging wordt teweeggebracht.
 * De eerste stap in de workflow maakt een unieke bestandsnaam door de naam van de aanvrager en het land van verblijf samen te voegen.
 * De tweede stap van de workflow gaat over de taghiërarchie en de formulierveldelementen die moeten worden gecodeerd. De processtap extraheert de waarde uit de verzonden gegevens en bouwt de codetitel die het document moet labelen.
 * Als u DoR in een verschillende omslag in DAM wilt opslaan, specificeert u de omslagplaats gebruikend de configuratieeigenschappen zoals die in het hieronder screenshot worden gespecificeerd.
 
 De andere twee parameters zijn specifiek voor DoR en de Weg van het Dossier van Gegevens zoals die in de Adaptieve de indieningsopties van de Vorm worden gespecificeerd. Zorg ervoor dat de waarden die u hier opgeeft, overeenkomen met de waarden die u hebt opgegeven in de verzendopties voor Adaptief formulier.
 
-![ Markering Dor ](assets/tag_dor_service_configuration.gif)
+![&#x200B; Markering Dor &#x200B;](assets/tag_dor_service_configuration.gif)

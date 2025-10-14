@@ -32,6 +32,6 @@ AEM Core Components (Onderdelen van Core) zijn een standaardset onderdelen die m
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ Project GitHub ](https://github.com/adobe/aem-core-wcm-components)
-* [ Voorbeelden van de Component van de Kern ](https://www.aemcomponents.dev/)
-* [ Documentatie van de Component van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+* [&#x200B; Project GitHub &#x200B;](https://github.com/adobe/aem-core-wcm-components)
+* [&#x200B; Voorbeelden van de Component van de Kern &#x200B;](https://www.aemcomponents.dev/)
+* [&#x200B; Documentatie van de Component van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)

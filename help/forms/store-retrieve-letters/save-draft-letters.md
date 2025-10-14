@@ -168,4 +168,4 @@ U kunt de query aanpassen om de opgeslagen letter-instanties op te halen. In dit
 
 ### Eclipse Project
 
-Het eclipse- project met steekproefimplementatie kan [ van hier worden gedownload ](assets/icdrafts-eclipse-project.zip)
+Het eclipse- project met steekproefimplementatie kan [&#x200B; van hier worden gedownload &#x200B;](assets/icdrafts-eclipse-project.zip)

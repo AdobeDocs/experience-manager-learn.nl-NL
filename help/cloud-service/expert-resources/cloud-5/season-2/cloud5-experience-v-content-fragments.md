@@ -24,10 +24,10 @@ Een &#39;versus&#39;-benadering neemt de verschillen tussen een ervaringsfragmen
 
 ## Inhoud die in deze video wordt behandeld
 
-+ [ het Werken met inhoudsfragmenten ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments.html?lang=nl-NL)
++ [&#x200B; het Werken met inhoudsfragmenten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments.html?lang=nl-NL)
 + [Ervaringsfragmenten gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=nl-NL)
-+ [ Documentatie van het Fragment van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/experience-fragments.html?lang=nl-NL)
++ [&#x200B; Documentatie van het Fragment van de Ervaring &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/experience-fragments.html?lang=nl-NL)
 
 ## Aanvullende bronnen
 
-Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 2 ](../cloud5-season-2.md) pagina.
+Bekijk verwante video&#39;s op de [&#x200B; Wolk 5 seizoen 2 &#x200B;](../cloud5-season-2.md) pagina.

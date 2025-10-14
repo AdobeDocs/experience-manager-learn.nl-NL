@@ -21,13 +21,13 @@ ht-degree: 0%
 
 Haal automatisch gegevens uit een groot aantal door de overheid uitgegeven documenten om uw aangepaste formulieren in te vullen.
 
-Er zijn een aantal organisaties die deze service aanbieden en zolang deze beschikken over goed gedocumenteerde REST API&#39;s kunt u eenvoudig integreren met AEM Forms met behulp van de gegevensintegratiefunctie. Voor dit leerprogramma, heb ik [ Analysator van identiteitskaart ](https://www.idanalyzer.com/) gebruikt om de OCR gegevensextractie van geüploade documenten aan te tonen.
+Er zijn een aantal organisaties die deze service aanbieden en zolang deze beschikken over goed gedocumenteerde REST API&#39;s kunt u eenvoudig integreren met AEM Forms met behulp van de gegevensintegratiefunctie. Voor dit leerprogramma, heb ik [&#x200B; Analysator van identiteitskaart &#x200B;](https://www.idanalyzer.com/) gebruikt om de OCR gegevensextractie van geüploade documenten aan te tonen.
 
 De volgende stappen zijn uitgevoerd om de OCR-gegevensextractie te implementeren met AEM Forms via ID Analyzer-service.
 
 ## Ontwikkelaarsaccount maken
 
-Creeer een ontwikkelaarrekening met [ Analysator van identiteitskaart ](https://portal.idanalyzer.com/signin.html). Noteer de API-sleutel. Deze sleutel is nodig om REST API&#39;s van de ID Analyzer-service aan te roepen.
+Creeer een ontwikkelaarrekening met [&#x200B; Analysator van identiteitskaart &#x200B;](https://portal.idanalyzer.com/signin.html). Noteer de API-sleutel. Deze sleutel is nodig om REST API&#39;s van de ID Analyzer-service aan te roepen.
 
 ## Swagger/OpenAPI-bestand maken
 
@@ -39,12 +39,12 @@ Verificatiemethoden
 * Contactgegevens, licentie, gebruiksvoorwaarden en andere informatie.
 * API-specificaties kunnen worden geschreven in YAML of JSON. De indeling is gemakkelijk te leren en kan zowel voor mensen als voor machines worden gelezen.
 
-Om uw eerste swagger/OpenAPI dossier tot stand te brengen, te volgen gelieve de [ documentatie OpenAPI ](https://swagger.io/docs/specification/2-0/basic-structure/)
+Om uw eerste swagger/OpenAPI dossier tot stand te brengen, te volgen gelieve de [&#x200B; documentatie OpenAPI &#x200B;](https://swagger.io/docs/specification/2-0/basic-structure/)
 
 >[!NOTE]
 > AEM Forms ondersteunt OpenAPI Specification versie 2.0 (fka Swagger).
 
-Gebruik de [ kwikredacteur ](https://editor.swagger.io/) om uw kwikdossier tot stand te brengen om de verrichtingen te beschrijven die OTP verzonden code verzenden en verifiëren gebruikend SMS. Het wagerbestand kan in JSON- of YAML-indeling worden gemaakt. Het voltooide dossier van de wagger kan van [ hier ](assets/drivers-license-swagger.zip) worden gedownload
+Gebruik de [&#x200B; kwikredacteur &#x200B;](https://editor.swagger.io/) om uw kwikdossier tot stand te brengen om de verrichtingen te beschrijven die OTP verzonden code verzenden en verifiëren gebruikend SMS. Het wagerbestand kan in JSON- of YAML-indeling worden gemaakt. Het voltooide dossier van de wagger kan van [&#x200B; hier &#x200B;](assets/drivers-license-swagger.zip) worden gedownload
 
 ## Overwegingen bij het definiëren van het wagerbestand
 
@@ -83,18 +83,18 @@ Het volgende wordt ondersteund met een verwijzing naar requestBody-definitie
 
 ## Source voor gegevens maken
 
-Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [ gegevensbron ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=nl-NL) in de configuratie van de wolkendiensten tot stand brengen. Gelieve te gebruiken het [ wagerdossier ](assets/drivers-license-swagger.zip) om uw gegevensbron tot stand te brengen.
+Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [&#x200B; gegevensbron &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=nl-NL) in de configuratie van de wolkendiensten tot stand brengen. Gelieve te gebruiken het [&#x200B; wagerdossier &#x200B;](assets/drivers-license-swagger.zip) om uw gegevensbron tot stand te brengen.
 
 ## Formuliergegevensmodel maken
 
-De gegevensintegratie van AEM Forms verstrekt een intuïtief gebruikersinterface om tot stand te brengen en met [ modellen van vormgegevens ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=nl-NL) te werken. Baseer het model van vormgegevens op de gegevensbron die in de vroegere stap wordt gecreeerd.
+De gegevensintegratie van AEM Forms verstrekt een intuïtief gebruikersinterface om tot stand te brengen en met [&#x200B; modellen van vormgegevens &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=nl-NL) te werken. Baseer het model van vormgegevens op de gegevensbron die in de vroegere stap wordt gecreeerd.
 
-![ fdm ](assets/test-dl-fdm.PNG)
+![&#x200B; fdm &#x200B;](assets/test-dl-fdm.PNG)
 
 ## Clientbibliotheek maken
 
 Er moet een tekenreeks met base64-codering van het geüploade document worden opgehaald. Deze base64 gecodeerde tekenreeks wordt vervolgens doorgegeven als een van de parameters van onze REST-aanroep.
-De cliëntbibliotheek kan [ van hier worden gedownload.](assets/drivers-license-client-lib.zip)
+De cliëntbibliotheek kan [&#x200B; van hier worden gedownload.](assets/drivers-license-client-lib.zip)
 
 ## Adaptief formulier maken
 
@@ -104,13 +104,13 @@ Integreer de POST-aanroepen van het formuliergegevensmodel met het aangepaste fo
 
 Voer de volgende stappen uit als u de voorbeeldbestanden met uw API-sleutel wilt gebruiken:
 
-* [ Download de gegevensbron ](assets/drivers-license-source.zip) en de invoer in AEM gebruikend [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
-* [ Download het model van vormgegevens ](assets/drivers-license-fdm.zip) en de invoer in AEM gebruikend [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
+* [&#x200B; Download de gegevensbron &#x200B;](assets/drivers-license-source.zip) en de invoer in AEM gebruikend [&#x200B; pakketmanager &#x200B;](http://localhost:4502/crx/packmgr/index.jsp)
+* [&#x200B; Download het model van vormgegevens &#x200B;](assets/drivers-license-fdm.zip) en de invoer in AEM gebruikend [&#x200B; pakketmanager &#x200B;](http://localhost:4502/crx/packmgr/index.jsp)
 * [Clientbibliotheek downloaden](assets/drivers-license-client-lib.zip)
-* Download de steekproef adaptieve vorm kan [ van hier worden gedownload ](assets/adaptive-form-dl.zip). In dit voorbeeldformulier worden de serviceaanroepen van het formuliergegevensmodel gebruikt die als onderdeel van dit artikel worden aangeboden.
-* De vorm van de invoer in AEM van [ Forms en Document UI ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Open de vorm op [ geef wijze uit.](http://localhost:4502/editor.html/content/forms/af/driverslicenseandpassport.html)
+* Download de steekproef adaptieve vorm kan [&#x200B; van hier worden gedownload &#x200B;](assets/adaptive-form-dl.zip). In dit voorbeeldformulier worden de serviceaanroepen van het formuliergegevensmodel gebruikt die als onderdeel van dit artikel worden aangeboden.
+* De vorm van de invoer in AEM van [&#x200B; Forms en Document UI &#x200B;](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Open de vorm op [&#x200B; geef wijze uit.](http://localhost:4502/editor.html/content/forms/af/driverslicenseandpassport.html)
 * Geef uw API-sleutel op als standaardwaarde in het veld Toepassen en sla uw wijzigingen op
 * Open de regelredacteur voor Basis 64 gebied van het Koord. Let op de service-aanroep wanneer de waarde van dit veld wordt gewijzigd.
 * Het formulier opslaan
-* [ Voorproef de vorm ](http://localhost:4502/content/dam/formsanddocuments/driverslicenseandpassport/jcr:content?wcmmode=disabled), upload voorbeeld van uw bestuurdersvergunning
+* [&#x200B; Voorproef de vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/driverslicenseandpassport/jcr:content?wcmmode=disabled), upload voorbeeld van uw bestuurdersvergunning

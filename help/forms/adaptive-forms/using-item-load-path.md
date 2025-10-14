@@ -28,8 +28,8 @@ Voer de onderstaande stappen uit om een dergelijk knooppunt in crx te maken:
 * Opslaan
 * Klik op het nieuwe knooppunt met elementen en stel de eigenschappen ervan in zoals hieronder weergegeven
 * U zult een bezit van typeKoord genoemd activa moeten tot stand brengen (u kunt het volgens uw vereiste noemen).Zorg ervoor het bezit een multivalue is. Geef de gewenste waarden op en sla deze op.
-  ![ punt-lading-weg ](assets/item-load-path-crx.png)
+  ![&#x200B; punt-lading-weg &#x200B;](assets/item-load-path-crx.png)
 
 Als u deze waarden in de vervolgkeuzelijst wilt laden, geeft u het volgende pad op in de eigenschap voor het laden van het pad van het item **/content/assets/assets/assettypes**
 
-Het steekproefpakket kan [ van hier worden gedownload ](assets/item-load-path-package.zip)
+Het steekproefpakket kan [&#x200B; van hier worden gedownload &#x200B;](assets/item-load-path-package.zip)

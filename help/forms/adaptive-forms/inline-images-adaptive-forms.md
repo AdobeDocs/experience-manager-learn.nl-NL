@@ -65,7 +65,7 @@ function consumeImage (file) {
 
 ### Distribueren op uw server
 
-* Download en installeer de [ cliëntbibliotheek ](assets/inline-image-client-library.zip) op uw instantie van AEM gebruikend het pakketmanager van AEM.
-* Download en installeer de [ steekproefvorm ](assets/inline-image-af.zip) op u uw instantie van AEM gebruikend het pakketmanager van AEM.
-* Punt uw browser aan [ voegt het Beeld Inline ](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled) toe
+* Download en installeer de [&#x200B; cliëntbibliotheek &#x200B;](assets/inline-image-client-library.zip) op uw instantie van AEM gebruikend het pakketmanager van AEM.
+* Download en installeer de [&#x200B; steekproefvorm &#x200B;](assets/inline-image-af.zip) op u uw instantie van AEM gebruikend het pakketmanager van AEM.
+* Punt uw browser aan [&#x200B; voegt het Beeld Inline &#x200B;](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled) toe
 * Klik op de knop &quot;Foto koppelen&quot; om een afbeelding toe te voegen

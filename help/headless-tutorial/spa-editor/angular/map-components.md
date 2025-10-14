@@ -37,11 +37,11 @@ In dit hoofdstuk wordt dieper ingegaan op de API van het AEM JSON-model en wordt
 
 Dit hoofdstuk zal inspecteren hoe de verstrekte `Text` component van het KUUROORD aan de AEM `Text` component in kaart wordt gebracht. Er wordt een nieuwe `Image` SPA-component gemaakt die in de SPA kan worden gebruikt en in AEM kan worden geschreven. Uit de dooseigenschappen van de **Container van de Lay-out** en **Redacteur van het Malplaatje** beleid zal ook worden gebruikt om een mening tot stand te brengen die een weinig gevarieerder in verschijning is.
 
-![ de steekproef definitieve van het Hoofdstuk creatie ](./assets/map-components/final-page.png)
+![&#x200B; de steekproef definitieve van het Hoofdstuk creatie &#x200B;](./assets/map-components/final-page.png)
 
 ## Vereisten
 
-Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikkelomgeving ](overview.md#local-dev-environment).
+Herzie het vereiste tooling en de instructies voor vestiging a [&#x200B; lokale ontwikkelomgeving &#x200B;](overview.md#local-dev-environment).
 
 ### De code ophalen
 
@@ -59,34 +59,34 @@ Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikke
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   Als het gebruiken van [ AEM 6.x ](overview.md#compatibility) voeg het `classic` profiel toe:
+   Als het gebruiken van [&#x200B; AEM 6.x &#x200B;](overview.md#compatibility) voeg het `classic` profiel toe:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/map-components-solution) altijd bekijken of de code uit controleren plaatselijk door aan de tak `Angular/map-components-solution` te schakelen.
+U kunt de gebeëindigde code op [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/map-components-solution) altijd bekijken of de code uit controleren plaatselijk door aan de tak `Angular/map-components-solution` te schakelen.
 
 ## Toewijzingsmethode
 
 Het basisconcept is een Component van het KUUROORD aan een Component van AEM in kaart te brengen. AEM-componenten, serveronderdelen uitvoeren, inhoud exporteren als onderdeel van de JSON-model-API. De inhoud JSON wordt verbruikt door het KUUROORD, lopend cliënt-kant in browser. Een afbeelding 1:1 tussen de componenten van het KUUROORD en een component van AEM wordt gecreeerd.
 
-![ overzicht op hoog niveau van het in kaart brengen van een Component van AEM aan een Component van Angular ](./assets/map-components/high-level-approach.png)
+![&#x200B; overzicht op hoog niveau van het in kaart brengen van een Component van AEM aan een Component van Angular &#x200B;](./assets/map-components/high-level-approach.png)
 
 *overzicht op hoog niveau van het in kaart brengen van een Component van AEM aan een Component van Angular*
 
 ## De tekstcomponent controleren
 
-Het [ Archieftype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) verstrekt een `Text` component die aan de component van de Tekst van AEM [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=nl-NL) in kaart wordt gebracht. Dit is een voorbeeld van de component van de a **inhoud**, in die zin dat het *inhoud* van AEM teruggeeft.
+Het [&#x200B; Archieftype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype) verstrekt een `Text` component die aan de component van de Tekst van AEM [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=nl-NL) in kaart wordt gebracht. Dit is een voorbeeld van de component van de a **inhoud**, in die zin dat het *inhoud* van AEM teruggeeft.
 
 Laten we eens kijken hoe de component werkt.
 
 ### Het JSON-model controleren
 
-1. Alvorens in de code van het KUUROORD te springen, is het belangrijk om het model te begrijpen JSON dat AEM verstrekt. Navigeer aan de [ Bibliotheek van de Component van de Kern ](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html) en bekijk de pagina voor de component van de Tekst. De Core Component Library bevat voorbeelden van alle AEM Core Components.
+1. Alvorens in de code van het KUUROORD te springen, is het belangrijk om het model te begrijpen JSON dat AEM verstrekt. Navigeer aan de [&#x200B; Bibliotheek van de Component van de Kern &#x200B;](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html) en bekijk de pagina voor de component van de Tekst. De Core Component Library bevat voorbeelden van alle AEM Core Components.
 2. Selecteer het **JSON** lusje voor één van de voorbeelden:
 
-   ![ JSON van de Tekst model ](./assets/map-components/text-json.png)
+   ![&#x200B; JSON van de Tekst model &#x200B;](./assets/map-components/text-json.png)
 
    Er moeten drie eigenschappen worden weergegeven: `text` , `richText` en `:type` .
 
@@ -103,15 +103,15 @@ Laten we eens kijken hoe de component werkt.
    $ npm run start:mock
    ```
 
-   De `ui.frontend` module is momenteel opstelling om het [ modelJSON ](./integrate-spa.md#mock-json) te gebruiken.
+   De `ui.frontend` module is momenteel opstelling om het [&#x200B; modelJSON &#x200B;](./integrate-spa.md#mock-json) te gebruiken.
 
-2. U zou een nieuw browser venster moeten zien open aan [ http://localhost:4200/content/wknd-spa-angular/us/en/home.html ](http://localhost:4200/content/wknd-spa-angular/us/en/home.html)
+2. U zou een nieuw browser venster moeten zien open aan [&#x200B; http://localhost:4200/content/wknd-spa-angular/us/en/home.html &#x200B;](http://localhost:4200/content/wknd-spa-angular/us/en/home.html)
 
-   ![ WebPack dev server met mock inhoud ](assets/map-components/initial-start.png)
+   ![&#x200B; WebPack dev server met mock inhoud &#x200B;](assets/map-components/initial-start.png)
 
 3. In winde van uw keus open omhoog het Project van AEM voor het KND SPA. Breid de `ui.frontend` module uit en open het dossier **text.component.ts** onder `ui.frontend/src/app/components/text/text.component.ts`:
 
-   ![ Text.js Angular Component Source Code ](assets/map-components/vscode-ide-text-js.png)
+   ![&#x200B; Text.js Angular Component Source Code &#x200B;](assets/map-components/vscode-ide-text-js.png)
 
 4. Het eerste gebied dat moet worden geïnspecteerd, is de `class TextComponent` bij ~line 35:
 
@@ -132,9 +132,9 @@ Laten we eens kijken hoe de component werkt.
    }
    ```
 
-   [@Input () ](https://angular.io/api/core/Input) decorator wordt gebruikt om gebieden te verklaren die de waarden via het in kaart gebrachte voorwerp worden geplaatst JSON, eerder herzien.
+   [@Input () &#x200B;](https://angular.io/api/core/Input) decorator wordt gebruikt om gebieden te verklaren die de waarden via het in kaart gebrachte voorwerp worden geplaatst JSON, eerder herzien.
 
-   `@HostBinding('innerHtml') get content()` is een methode die de geschreven tekstinhoud weergeeft van de waarde van `this.text` . Als de inhoud tekst met opmaak is (bepaald door de markering `this.richText` ), wordt de ingebouwde beveiliging van Angular omzeild. Angular [ DomSanitizer ](https://angular.io/api/platform-browser/DomSanitizer) wordt gebruikt om &quot;ruwe HTML&quot;te schrobben en de kwetsbaarheid van Scripting van de dwars-Plaats te verhinderen. De methode is gebonden aan de eigenschap `innerHtml` met de decorator [@HostBinding ](https://angular.io/api/core/HostBinding) .
+   `@HostBinding('innerHtml') get content()` is een methode die de geschreven tekstinhoud weergeeft van de waarde van `this.text` . Als de inhoud tekst met opmaak is (bepaald door de markering `this.richText` ), wordt de ingebouwde beveiliging van Angular omzeild. Angular [&#x200B; DomSanitizer &#x200B;](https://angular.io/api/platform-browser/DomSanitizer) wordt gebruikt om &quot;ruwe HTML&quot;te schrobben en de kwetsbaarheid van Scripting van de dwars-Plaats te verhinderen. De methode is gebonden aan de eigenschap `innerHtml` met de decorator [@HostBinding &#x200B;](https://angular.io/api/core/HostBinding) .
 
 5. Controleer vervolgens de `TextEditConfig` op ~line 24:
 
@@ -172,7 +172,7 @@ Laten we eens kijken hoe de component werkt.
 
    Terugkeer aan browser om de gevolgen te zien die door de **webpack dev server** worden gediend:
 
-   ![ Bijgewerkt model van de Tekst ](assets/map-components/updated-text-model.png)
+   ![&#x200B; Bijgewerkt model van de Tekst &#x200B;](assets/map-components/updated-text-model.png)
 
    Probeer die het `richText` bezit tussen **&#x200B;**&#x200B;van een knevel voorzien **vals** om terug te zien logica in actie.
 
@@ -197,7 +197,7 @@ Laten we eens kijken hoe de component werkt.
    export class AppModule {}
    ```
 
-   **TextComponent** is niet uitdrukkelijk inbegrepen, maar eerder dynamisch via **AEMResponsiveGridComponent** die door de Redacteur JS SDK van AEM SPA wordt verstrekt. Daarom moet in **app.module.ts** [ entryComponents ](https://angular.io/guide/entry-components) serie worden vermeld.
+   **TextComponent** is niet uitdrukkelijk inbegrepen, maar eerder dynamisch via **AEMResponsiveGridComponent** die door de Redacteur JS SDK van AEM SPA wordt verstrekt. Daarom moet in **app.module.ts** [&#x200B; entryComponents &#x200B;](https://angular.io/guide/entry-components) serie worden vermeld.
 
 ## De afbeeldingscomponent maken
 
@@ -207,9 +207,9 @@ Daarna, creeer een `Image` component van Angular die aan de component van het Be
 
 Alvorens in de code van het KUUROORD te springen, inspecteer het model JSON dat door AEM wordt verstrekt.
 
-1. Navigeer aan de [ voorbeelden van het Beeld in de bibliotheek van de Component van de Kern ](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html).
+1. Navigeer aan de [&#x200B; voorbeelden van het Beeld in de bibliotheek van de Component van de Kern &#x200B;](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html).
 
-   ![ Component JSON van de Kern van het Beeld ](./assets/map-components/image-json.png)
+   ![&#x200B; Component JSON van de Kern van het Beeld &#x200B;](./assets/map-components/image-json.png)
 
    Eigenschappen van `src` , `alt` en `title` worden gebruikt om de component SPA `Image` te vullen.
 
@@ -246,11 +246,11 @@ Alvorens in de code van het KUUROORD te springen, inspecteer het model JSON dat 
 
    Het project omvat een steekproefbeeld bij `/mock-content/adobestock-140634652.jpeg` dat met **webpack dev server** wordt gebruikt.
 
-   U kunt volledige [ en.model.json hier bekijken ](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/map-components-solution/ui.frontend/src/mocks/json/en.model.json).
+   U kunt volledige [&#x200B; en.model.json hier bekijken &#x200B;](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/map-components-solution/ui.frontend/src/mocks/json/en.model.json).
 
 3. Voeg een stockfoto toe die door de component moet worden weergegeven.
 
-   Creeer een nieuwe omslag genoemd **beelden** onder `ui.frontend/src/mocks`. De download [ adobestock-140634652.jpeg ](assets/map-components/adobestock-140634652.jpeg) en plaatst het in de pas gecreëerde **beelden** omslag. Voel u vrij om desgewenst uw eigen afbeelding te gebruiken.
+   Creeer een nieuwe omslag genoemd **beelden** onder `ui.frontend/src/mocks`. De download [&#x200B; adobestock-140634652.jpeg &#x200B;](assets/map-components/adobestock-140634652.jpeg) en plaatst het in de pas gecreëerde **beelden** omslag. Voel u vrij om desgewenst uw eigen afbeelding te gebruiken.
 
 ### De component Image implementeren
 
@@ -346,7 +346,7 @@ Alvorens in de code van het KUUROORD te springen, inspecteer het model JSON dat 
    $ npm run start:mock
    ```
 
-   ![ Beeld dat aan het mock ](assets/map-components/image-added-mock.png) wordt toegevoegd
+   ![&#x200B; Beeld dat aan het mock &#x200B;](assets/map-components/image-added-mock.png) wordt toegevoegd
 
    *Beeld dat aan het KUUUROORD* wordt toegevoegd
 
@@ -365,23 +365,23 @@ De `ImageComponent` component is slechts zichtbaar in **webpack dev server**. Da
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-2. Van het scherm van het Begin van AEM navigeert aan **[!UICONTROL Tools]** > **[!UICONTROL Templates]** > **[WKND SPA Angular ](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-angular)**.
+2. Van het scherm van het Begin van AEM navigeert aan **[!UICONTROL Tools]** > **[!UICONTROL Templates]** > **[WKND SPA Angular &#x200B;](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-angular)**.
 
    Selecteer en geef de **Pagina van het KUUROORD** uit:
 
-   ![ geef het Malplaatje van de Pagina van het KUUROORD ](assets/map-components/edit-spa-page-template.png) uit
+   ![&#x200B; geef het Malplaatje van de Pagina van het KUUROORD &#x200B;](assets/map-components/edit-spa-page-template.png) uit
 
 3. Selecteer de **Container van de Lay-out** en klik het **beleid** pictogram om het beleid uit te geven:
 
-   ![ Beleid van de Container van de Lay-out ](./assets/map-components/layout-container-policy.png)
+   ![&#x200B; Beleid van de Container van de Lay-out &#x200B;](./assets/map-components/layout-container-policy.png)
 
 4. Onder **Toegestane Componenten** > **WKND SPA Angular - Inhoud** > controleer de **component van het Beeld**:
 
-   ![ Geselecteerde Component van het Beeld ](assets/map-components/check-image-component.png)
+   ![&#x200B; Geselecteerde Component van het Beeld &#x200B;](assets/map-components/check-image-component.png)
 
    Onder **StandaardComponenten** > **voeg afbeelding** toe en kies het **Beeld - WKND SPA Angular - Inhoud** component:
 
-   ![ plaats standaardcomponenten ](assets/map-components/default-components.png)
+   ![&#x200B; plaats standaardcomponenten &#x200B;](assets/map-components/default-components.png)
 
    Ga a **mime type** van `image/*` in.
 
@@ -389,31 +389,31 @@ De `ImageComponent` component is slechts zichtbaar in **webpack dev server**. Da
 
 5. In de **Container van de Lay-out** klik het **beleid** pictogram voor de **&#x200B;**&#x200B;component van de Tekst:
 
-   ![ pictogram van het componentenbeleid van de Tekst ](./assets/map-components/edit-text-policy.png)
+   ![&#x200B; pictogram van het componentenbeleid van de Tekst &#x200B;](./assets/map-components/edit-text-policy.png)
 
    Creeer een nieuw beleid genoemd **WKND Tekst van het KUUROORD**. Onder **Insteekmodules** > **Formatterend** > controleer alle dozen om extra het formatteren opties toe te laten:
 
-   ![ laat RTE het Formatteren ](assets/map-components/enable-formatting-rte.png) toe
+   ![&#x200B; laat RTE het Formatteren &#x200B;](assets/map-components/enable-formatting-rte.png) toe
 
    Onder **Insteekmodules** > **Stijlen van de Paragraaf** > controleer de doos **alineastijlen** toelaten:
 
-   ![ laat paragraafstijlen ](./assets/map-components/text-policy-enable-paragraphstyles.png) toe
+   ![&#x200B; laat paragraafstijlen &#x200B;](./assets/map-components/text-policy-enable-paragraphstyles.png) toe
 
    Klik **Gedaan** om de beleidsupdate te bewaren.
 
-6. Navigeer aan de **Homepage** [ http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html ](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html).
+6. Navigeer aan de **Homepage** [&#x200B; http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html &#x200B;](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html).
 
    U zou ook de `Text` component moeten kunnen uitgeven en extra paragraafstijlen op **volledig-scherm** wijze toevoegen.
 
-   ![ Volledig scherm Rich Text Editing ](assets/map-components/full-screen-rte.png)
+   ![&#x200B; Volledig scherm Rich Text Editing &#x200B;](assets/map-components/full-screen-rte.png)
 
 7. U zou ook een beeld van de **Vinder van Activa** moeten kunnen slepen en neerzetten:
 
-   ![ belemmering en het beeld van de Daling ](./assets/map-components/drag-drop-image.gif)
+   ![&#x200B; belemmering en het beeld van de Daling &#x200B;](./assets/map-components/drag-drop-image.gif)
 
-8. Voeg uw eigen beelden via [ AEM Assets ](http://localhost:4502/assets.html/content/dam) toe of installeer de gebeëindigde codebasis voor de standaard [ WKND verwijzingsplaats ](https://github.com/adobe/aem-guides-wknd/releases/latest). De [ WKND verwijzingsplaats ](https://github.com/adobe/aem-guides-wknd/releases/latest) omvat vele beelden die op het KND KUUROORD kunnen worden opnieuw gebruikt. Het pakket kan worden geïnstalleerd gebruikend [ de Manager van het Pakket van AEM ](http://localhost:4502/crx/packmgr/index.jsp).
+8. Voeg uw eigen beelden via [&#x200B; AEM Assets &#x200B;](http://localhost:4502/assets.html/content/dam) toe of installeer de gebeëindigde codebasis voor de standaard [&#x200B; WKND verwijzingsplaats &#x200B;](https://github.com/adobe/aem-guides-wknd/releases/latest). De [&#x200B; WKND verwijzingsplaats &#x200B;](https://github.com/adobe/aem-guides-wknd/releases/latest) omvat vele beelden die op het KND KUUROORD kunnen worden opnieuw gebruikt. Het pakket kan worden geïnstalleerd gebruikend [&#x200B; de Manager van het Pakket van AEM &#x200B;](http://localhost:4502/crx/packmgr/index.jsp).
 
-   ![ Manager van het Pakket installeert wknd.all ](./assets/map-components/package-manager-wknd-all.png)
+   ![&#x200B; Manager van het Pakket installeert wknd.all &#x200B;](./assets/map-components/package-manager-wknd-all.png)
 
 ## De container voor lay-out controleren
 
@@ -431,23 +431,23 @@ Controleer de container voor lay-out verder.
 
    `AEMResponsiveGridComponent` wordt geïmplementeerd als onderdeel van de AEM SPA Editor SDK en is opgenomen in het project via `import-components` .
 
-2. In browser navigeert aan [ http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json)
+2. In browser navigeert aan [&#x200B; http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json)
 
-   ![ JSON model API - het Responsieve Net ](./assets/map-components/responsive-grid-modeljson.png)
+   ![&#x200B; JSON model API - het Responsieve Net &#x200B;](./assets/map-components/responsive-grid-modeljson.png)
 
    De **component van de Container van de Lay-out** heeft a `sling:resourceType` van `wcm/foundation/components/responsivegrid` en door de Redacteur van het KUUROORD erkend gebruikend het `:type` bezit, enkel als `Text` en `Image` componenten.
 
-   De zelfde mogelijkheden om een component opnieuw te rangschikken gebruikend [ Wijze van de Lay-out ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=nl-NL#defining-layouts-layout-mode) zijn beschikbaar met de Redacteur van het KUUROORD.
+   De zelfde mogelijkheden om een component opnieuw te rangschikken gebruikend [&#x200B; Wijze van de Lay-out &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=nl-NL#defining-layouts-layout-mode) zijn beschikbaar met de Redacteur van het KUUROORD.
 
-3. Keer terug naar [ http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html ](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Voeg extra **componenten van het Beeld 0&rbrace; toe &lbrace;en probeer re-sizing hen gebruikend de** optie van de Lay-out **:**
+3. Keer terug naar [&#x200B; http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html &#x200B;](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Voeg extra **componenten van het Beeld 0&rbrace; toe &lbrace;en probeer re-sizing hen gebruikend de** optie van de Lay-out **:**
 
-   ![ resize beeld gebruikend de wijze van de Lay-out ](./assets/map-components/responsive-grid-layout-change.gif)
+   ![&#x200B; resize beeld gebruikend de wijze van de Lay-out &#x200B;](./assets/map-components/responsive-grid-layout-change.gif)
 
-4. Heropen het model JSON [ http://localhost:4502/content/wknd-spa-angular/us/en.model.json ](http://localhost:4502/content/wknd-spa-angular/us/en.model.json) en bekijk `columnClassNames` als deel van JSON:
+4. Heropen het model JSON [&#x200B; http://localhost:4502/content/wknd-spa-angular/us/en.model.json &#x200B;](http://localhost:4502/content/wknd-spa-angular/us/en.model.json) en bekijk `columnClassNames` als deel van JSON:
 
    {de namen van de Klasse van 0} Wolk ![&#128279;](./assets/map-components/responsive-grid-classnames.png)
 
-   De klassenaam `aem-GridColumn--default--4` geeft aan dat de component 4 kolommen breed moet zijn op basis van een raster van 12 kolommen. Meer details over het [ ontvankelijke net kunnen hier ](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) worden gevonden.
+   De klassenaam `aem-GridColumn--default--4` geeft aan dat de component 4 kolommen breed moet zijn op basis van een raster van 12 kolommen. Meer details over het [&#x200B; ontvankelijke net kunnen hier &#x200B;](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) worden gevonden.
 
 5. Keer terug naar winde en in de `ui.apps` module is er een cliënt-zijbibliotheek die bij `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/clientlibs/clientlib-grid` wordt bepaald. Open het bestand `less/grid.less` .
 
@@ -455,33 +455,33 @@ Controleer de container voor lay-out verder.
 
 6. U moet de responsieve mogelijkheden en het bijgewerkte rijke tekstbeleid van de `Text` component kunnen gebruiken om een mening als het volgende te ontwerpen:
 
-   ![ de steekproef definitieve van het Hoofdstuk creatie ](assets/map-components/final-page.png)
+   ![&#x200B; de steekproef definitieve van het Hoofdstuk creatie &#x200B;](assets/map-components/final-page.png)
 
 ## Gefeliciteerd! {#congratulations}
 
 U hebt geleerd hoe u SPA-componenten kunt toewijzen aan AEM Components en een nieuwe `Image` -component hebt geïmplementeerd. U hebt ook een kans om de ontvankelijke mogelijkheden van de **Container van de Lay-out** te onderzoeken.
 
-U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/map-components-solution) altijd bekijken of de code uit controleren plaatselijk door aan de tak `Angular/map-components-solution` te schakelen.
+U kunt de gebeëindigde code op [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/map-components-solution) altijd bekijken of de code uit controleren plaatselijk door aan de tak `Angular/map-components-solution` te schakelen.
 
 ### Volgende stappen {#next-steps}
 
-[ Navigatie en het Verpletteren ](navigation-routing.md) - leer hoe de veelvoudige meningen in het KUUROORD door afbeelding aan de Pagina&#39;s van AEM met de Redacteur SDK van het KUUROORD kunnen worden gesteund. De dynamische navigatie wordt uitgevoerd gebruikend de Router van Angular en toegevoegd aan een bestaande component van de Kopbal.
+[&#x200B; Navigatie en het Verpletteren &#x200B;](navigation-routing.md) - leer hoe de veelvoudige meningen in het KUUROORD door afbeelding aan de Pagina&#39;s van AEM met de Redacteur SDK van het KUUROORD kunnen worden gesteund. De dynamische navigatie wordt uitgevoerd gebruikend de Router van Angular en toegevoegd aan een bestaande component van de Kopbal.
 
 ## Bonus - configuraties aan broncontrole blijven {#bonus}
 
 In veel gevallen, vooral aan het begin van een project van AEM is het waardevol om configuraties, zoals malplaatjes en verwant inhoudsbeleid, aan broncontrole voort te zetten. Dit zorgt ervoor dat alle ontwikkelaars tegen de zelfde reeks inhoud en configuraties werken en extra consistentie tussen milieu&#39;s kunnen verzekeren. Wanneer een project een bepaald ontwikkelingsniveau heeft bereikt, kan het beheren van sjablonen worden overgedragen aan een speciale groep van energiegebruikers.
 
-De volgende weinige stappen zullen plaatsvinden gebruikend winde van de Code van Visual Studio en [ Synchronisatie van VSCode AEM ](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) maar zouden het gebruiken van om het even welk hulpmiddel en om het even welke winde kunnen doen die u aan **trek** of **invoert** inhoud van een lokale instantie van AEM hebt gevormd.
+De volgende weinige stappen zullen plaatsvinden gebruikend winde van de Code van Visual Studio en [&#x200B; Synchronisatie van VSCode AEM &#x200B;](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) maar zouden het gebruiken van om het even welk hulpmiddel en om het even welke winde kunnen doen die u aan **trek** of **invoert** inhoud van een lokale instantie van AEM hebt gevormd.
 
 1. In winde van de Code van Visual Studio, zorg ervoor dat u {de Synchronisatie van AEM van 0} VSCode **via de uitbreiding van de Marketplace geïnstalleerd hebt:**
 
-   ![ de Synchronisatie van AEM VSCode ](./assets/map-components/vscode-aem-sync.png)
+   ![&#x200B; de Synchronisatie van AEM VSCode &#x200B;](./assets/map-components/vscode-aem-sync.png)
 
 2. Breid **ui.content** module in de ontdekkingsreiziger van het Project uit en navigeer aan `/conf/wknd-spa-angular/settings/wcm/templates`.
 
 3. **Right+Click** de `templates` omslag en selecteer **Invoer van de Server van AEM**:
 
-   ![ VSCode het invoermalplaatje ](assets/map-components/import-aem-servervscode.png)
+   ![&#x200B; VSCode het invoermalplaatje &#x200B;](assets/map-components/import-aem-servervscode.png)
 
 4. Herhaal de stappen om inhoud in te voeren maar selecteer de **beleid** omslag die bij `/conf/wknd-spa-angular/settings/wcm/policies` wordt gevestigd.
 
@@ -498,6 +498,6 @@ De volgende weinige stappen zullen plaatsvinden gebruikend winde van de Code van
     </workspaceFilter>
    ```
 
-   Het bestand `filter.xml` identificeert de paden van knooppunten die met het pakket zijn geïnstalleerd. Let op `mode="merge"` op elk van de filters die aangeeft dat bestaande inhoud niet wordt gewijzigd, alleen nieuwe inhoud wordt toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing **&#x200B;**&#x200B;geen inhoud overschrijft. Zie de [ documentatie FileVault ](https://jackrabbit.apache.org/filevault/filter.html) voor meer details bij het werken met filterelementen.
+   Het bestand `filter.xml` identificeert de paden van knooppunten die met het pakket zijn geïnstalleerd. Let op `mode="merge"` op elk van de filters die aangeeft dat bestaande inhoud niet wordt gewijzigd, alleen nieuwe inhoud wordt toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing **&#x200B;**&#x200B;geen inhoud overschrijft. Zie de [&#x200B; documentatie FileVault &#x200B;](https://jackrabbit.apache.org/filevault/filter.html) voor meer details bij het werken met filterelementen.
 
    Vergelijk `ui.content/src/main/content/META-INF/vault/filter.xml` en `ui.apps/src/main/content/META-INF/vault/filter.xml` om inzicht te krijgen in de verschillende knooppunten die door elke module worden beheerd.

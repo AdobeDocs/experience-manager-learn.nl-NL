@@ -23,10 +23,10 @@ ht-degree: 0%
 Het ingesloten adaptieve formulier is volledig functioneel en gebruikers kunnen het formulier invullen en verzenden zonder de pagina te verlaten. Hierdoor kan de gebruiker in de context van andere elementen op de webpagina blijven en tegelijkertijd met het formulier communiceren.
 
 In de volgende video worden de stappen beschreven die nodig zijn om een adaptief of HTML5-formulier in te sluiten in een webpagina.
-Gelieve te verwijzen naar de [ documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=nl-NL) voor beste eerste vereisten, beste praktijken etc.
+Gelieve te verwijzen naar de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=nl-NL) voor beste eerste vereisten, beste praktijken etc.
 >[!VIDEO](https://video.tv.adobe.com/v/335893?quality=12&learn=on)
 
-U kunt de steekproefdossiers downloaden die in de video [ van hier worden gebruikt ](assets/embedding-af-web-page.zip)
+U kunt de steekproefdossiers downloaden die in de video [&#x200B; van hier worden gebruikt &#x200B;](assets/embedding-af-web-page.zip)
 
 Het volgende is de code wordt gebruikt om de adaptieve vorm te halen en de vorm in de container in te bedden die door de klassennaam **wordt geïdentificeerd recht**
 

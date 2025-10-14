@@ -26,15 +26,15 @@ Leer hoe u een low-code aanpak gebruikt om uw eerste site te maken in Adobe Expe
 
 >[!VIDEO](https://video.tv.adobe.com/v/333477?quality=12&learn=on)
 
-* [ Uitrusting van Adobe XD UI ](https://github.com/adobe/aem-site-template-basic/blob/main/files/wireframe.xd)
-* [ Malplaatje van de Plaats van AEM ](https://github.com/adobe/aem-site-template-basic)
+* [&#x200B; Uitrusting van Adobe XD UI &#x200B;](https://github.com/adobe/aem-site-template-basic/blob/main/files/wireframe.xd)
+* [&#x200B; Malplaatje van de Plaats van AEM &#x200B;](https://github.com/adobe/aem-site-template-basic)
 
 ## AEM as a Cloud Service-omgeving {#environment}
 
-De stappen in deze zelfstudie vinden plaats in een Adobe Experience Manager as a Cloud Service-omgeving. Zorg ervoor dat u beheertoegang hebt tot de AEM-omgeving. Het wordt geadviseerd om het programma van de a [ Sandbox ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html?lang=nl-NL) en [ Ontwikkeling milieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL) te gebruiken wanneer de voltooiing van dit leerprogramma.
+De stappen in deze zelfstudie vinden plaats in een Adobe Experience Manager as a Cloud Service-omgeving. Zorg ervoor dat u beheertoegang hebt tot de AEM-omgeving. Het wordt geadviseerd om het programma van de a [&#x200B; Sandbox &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html?lang=nl-NL) en [&#x200B; Ontwikkeling milieu &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL) te gebruiken wanneer de voltooiing van dit leerprogramma.
 
 ## Volgende stappen {#next-steps}
 
 Een stapsgewijze zelfstudie doorloopt de implementatie van een AEM-site voor een fictief levensstijlmerk van de WKND met behulp van de functie Snel site maken.
 
-Waar wacht u op?! Begin het leerprogramma door aan [ te navigeren creeer het hoofdstuk van de Plaats ](create-site.md) en leer hoe te om een nieuw project van Adobe Experience Manager te produceren gebruikend een Malplaatje van de Plaats.
+Waar wacht u op?! Begin het leerprogramma door aan [&#x200B; te navigeren creeer het hoofdstuk van de Plaats &#x200B;](create-site.md) en leer hoe te om een nieuw project van Adobe Experience Manager te produceren gebruikend een Malplaatje van de Plaats.

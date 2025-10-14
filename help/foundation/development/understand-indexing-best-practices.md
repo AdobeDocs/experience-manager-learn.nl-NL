@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Best practices indexeren in AEM
 
-Meer informatie over het indexeren van beste praktijken in Adobe Experience Manager (AEM). Apache [ Jackrabbit Oak ](https://jackrabbit.apache.org/oak/docs/query/query.html) bevoegdheden het inhoudsonderzoek in AEM en het volgende zijn zeer belangrijke punten:
+Meer informatie over het indexeren van beste praktijken in Adobe Experience Manager (AEM). Apache [&#x200B; Jackrabbit Oak &#x200B;](https://jackrabbit.apache.org/oak/docs/query/query.html) bevoegdheden het inhoudsonderzoek in AEM en het volgende zijn zeer belangrijke punten:
 
 - AEM biedt verschillende indexen om de zoek- en queryfunctionaliteit te ondersteunen, bijvoorbeeld `damAssetLucene` , `cqPageLucene` en meer.
 - Alle indexdefinities worden opgeslagen in de gegevensopslagruimte onder het knooppunt `/oak:index` .
@@ -39,23 +39,23 @@ Om een efficiënte en correcte onderzoeksfunctionaliteit te hebben die niet de p
 
 Soms moet u aangepaste indexen maken ter ondersteuning van uw zoekvereisten. Volg echter onderstaande richtlijnen voordat u aangepaste indexen maakt:
 
-- Begrijp de onderzoeksvereisten en controleer als de indexen OOTB de onderzoeksvereisten kunnen steunen. Het Hulpmiddel van de Prestaties van de Vraag van het gebruik **, beschikbaar bij** lokale SDK [ en AEMCS via Developer Console of ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html).`https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`
+- Begrijp de onderzoeksvereisten en controleer als de indexen OOTB de onderzoeksvereisten kunnen steunen. Het Hulpmiddel van de Prestaties van de Vraag van het gebruik **, beschikbaar bij** lokale SDK [&#x200B; en AEMCS via Developer Console of &#x200B;](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html).`https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`
 
-- Bepaal een optimale vraag, gebruik [ optimaliserend vragen ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) stroomdiagram en [ JCR de Controle van de Vraag Sheet ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=nl-NL) voor verwijzing.
+- Bepaal een optimale vraag, gebruik [&#x200B; optimaliserend vragen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) stroomdiagram en [&#x200B; JCR de Controle van de Vraag Sheet &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=nl-NL) voor verwijzing.
 
-- Als de OOTB-indexen de zoekvereisten niet ondersteunen, hebt u twee opties. Nochtans, herzie de [ Uiteinden voor het Creëren van Efficiënte Indexen ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
+- Als de OOTB-indexen de zoekvereisten niet ondersteunen, hebt u twee opties. Nochtans, herzie de [&#x200B; Uiteinden voor het Creëren van Efficiënte Indexen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
    - Pas de OOTB-index aan: voorkeursoptie omdat u deze eenvoudig kunt onderhouden en upgraden.
    - Volledig aangepaste index: alleen als de bovenstaande optie niet werkt.
 
 ### De OOTB-index aanpassen
 
-- In **AEMCS**, wanneer het aanpassen van het OTB indexgebruik **\ &lt;OOTBIndexName>-\ &lt;productVersion>-douane- \ &lt;customVersion>** noemende overeenkomst. Bijvoorbeeld `cqPageLucene-custom-1` of `damAssetLucene-8-custom-1` . Zo kunt u de aangepaste indexdefinitie samenvoegen wanneer de OTB-index wordt bijgewerkt. Zie [ Veranderingen in uit-van-de-Doos Indexen ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/indexing) voor meer details.
+- In **AEMCS**, wanneer het aanpassen van het OTB indexgebruik **\ &lt;OOTBIndexName>-\ &lt;productVersion>-douane- \ &lt;customVersion>** noemende overeenkomst. Bijvoorbeeld `cqPageLucene-custom-1` of `damAssetLucene-8-custom-1` . Zo kunt u de aangepaste indexdefinitie samenvoegen wanneer de OTB-index wordt bijgewerkt. Zie [&#x200B; Veranderingen in uit-van-de-Doos Indexen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/indexing) voor meer details.
 
 - In **AEM 6.X**, werkt het bovengenoemde noemen _niet_, echter werkt eenvoudig de index OTB met noodzakelijke eigenschappen in de `indexRules` knoop bij.
 
 - Kopieer altijd de nieuwste OOTB-indexdefinitie van de AEM-instantie met CRX DE Package Manager (/crx/packmgr/), wijzig de naam en voeg aanpassingen toe in het XML-bestand.
 
-- Sla indexdefinitie op in het AEM-project op `ui.apps/src/main/content/jcr_root/_oak_index` en implementeer deze met Cloud Manager CI/CD-leidingen. Zie [ het Opstellen van de Definities van de Index van de Douane ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/indexing) voor meer details.
+- Sla indexdefinitie op in het AEM-project op `ui.apps/src/main/content/jcr_root/_oak_index` en implementeer deze met Cloud Manager CI/CD-leidingen. Zie [&#x200B; het Opstellen van de Definities van de Index van de Douane &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/indexing) voor meer details.
 
 ### Volledig aangepaste index
 
@@ -63,13 +63,13 @@ Het maken van een volledig aangepaste index moet de laatste optie zijn en alleen
 
 - Gebruik **\&lt;prefix> wanneer u een volledig aangepaste index maakt.\&lt;customIndexName>-\&lt;version>-douane- \ &lt;customVersion>** noemende overeenkomst. Bijvoorbeeld `wknd.adventures-1-custom-1` . Zo voorkomt u naamconflicten. Hier is `wknd` het voorvoegsel en `adventures` de aangepaste indexnaam. Deze conventie geldt voor zowel AEM 6.X als AEMCS en helpt bij de voorbereiding op toekomstige migratie naar AEMCS.
 
-- AEMCS steunt slechts indexen van Lucene, zodat om voor toekomstige migratie aan AEMCS voor te bereiden, gebruik altijd indexen van Lucene. Zie [ Indexen van Lucene vs Indexen van het Bezit ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing) voor meer details.
+- AEMCS steunt slechts indexen van Lucene, zodat om voor toekomstige migratie aan AEMCS voor te bereiden, gebruik altijd indexen van Lucene. Zie [&#x200B; Indexen van Lucene vs Indexen van het Bezit &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing) voor meer details.
 
 - Maak geen aangepaste index op hetzelfde knooppunttype als de OOTB-index. Pas in plaats daarvan de OOTB-index aan met de benodigde eigenschappen in het knooppunt `indexRules` . Maak bijvoorbeeld geen aangepaste index voor het knooppunttype `dam:Asset` , maar pas de OOTB `damAssetLucene` -index aan. _het is een gemeenschappelijke worteloorzaak van prestaties en functionele kwesties_ geweest.
 
 - Vermijd ook het toevoegen van meerdere knooppunttypen, bijvoorbeeld `cq:Page` en `cq:Tag` onder het knooppunt indexeringsregels (`indexRules` ). Maak in plaats daarvan afzonderlijke indexen voor elk type knooppunt.
 
-- Zoals vermeld in bovenstaande sectie, sla indexdefinitie in het AEM project bij `ui.apps/src/main/content/jcr_root/_oak_index` op en stel het op gebruikend Cloud Manager CI/CD pijpleidingen. Zie [ het Opstellen van de Definities van de Index van de Douane ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/indexing) voor meer details.
+- Zoals vermeld in bovenstaande sectie, sla indexdefinitie in het AEM project bij `ui.apps/src/main/content/jcr_root/_oak_index` op en stel het op gebruikend Cloud Manager CI/CD pijpleidingen. Zie [&#x200B; het Opstellen van de Definities van de Index van de Douane &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/indexing) voor meer details.
 
 - De richtlijnen voor indexdefinitie zijn:
    - Het knooppunttype (`jcr:primaryType`) zou `oak:QueryIndexDefinition` moeten zijn
@@ -100,19 +100,19 @@ Om de beste praktijken te begrijpen, herzien enkele voorbeelden.
 
 Onder de afbeelding ziet u een aangepaste en OOTB-indexdefinitie, waarbij de eigenschap `tags` wordt gemarkeerd. Beide indexen gebruiken dezelfde `visualSimilaritySearch` -waarde.
 
-![ Onjuist gebruik van markeringsbezit ](./assets/understand-indexing-best-practices/incorrect-tags-property.png)
+![&#x200B; Onjuist gebruik van markeringsbezit &#x200B;](./assets/understand-indexing-best-practices/incorrect-tags-property.png)
 
 ##### Analyse
 
 Dit is een onjuist gebruik van de eigenschap `tags` op de aangepaste index. De Oak-query-engine selecteert de aangepaste index boven de OOTB-indexoorzaak van de laagste geschatte kosten.
 
-De juiste manier is om de OOTB-index aan te passen en de benodigde eigenschappen toe te voegen in het knooppunt `indexRules` . Zie [ Aanpassen van de index OOTB ](#customize-the-ootb-index) voor meer details.
+De juiste manier is om de OOTB-index aan te passen en de benodigde eigenschappen toe te voegen in het knooppunt `indexRules` . Zie [&#x200B; Aanpassen van de index OOTB &#x200B;](#customize-the-ootb-index) voor meer details.
 
 #### Index op het knooppunttype `dam:Asset`
 
 Onder de afbeelding ziet u een aangepaste index voor het knooppunttype `dam:Asset` , waarbij de eigenschap `includedPaths` is ingesteld op een specifiek pad.
 
-![ Index op de dam:Nodetype van Activa ](./assets/understand-indexing-best-practices/index-for-damAsset-type.png)
+![&#x200B; Index op de dam:Nodetype van Activa &#x200B;](./assets/understand-indexing-best-practices/index-for-damAsset-type.png)
 
 ##### Analyse
 
@@ -124,7 +124,7 @@ Maak geen aangepaste index voor het knooppunttype `dam:Asset` , maar pas de OOTB
 
 Onder de afbeelding ziet u een aangepaste index met meerdere knooppunttypen onder het knooppunt `indexRules` .
 
-![ Veelvoudige nodetypes onder de indexerende regels ](./assets/understand-indexing-best-practices/multiple-nodetypes-in-index.png)
+![&#x200B; Veelvoudige nodetypes onder de indexerende regels &#x200B;](./assets/understand-indexing-best-practices/multiple-nodetypes-in-index.png)
 
 ##### Analyse
 
@@ -136,7 +136,7 @@ Een geldige oplossing is om de OOTB `cqPageLucene` - en `damAssetLucene` -index 
 
 Onder de afbeelding ziet u een aangepaste index (niet alleen volgens de naamgevingsconventie) zonder de eigenschap `queryPaths` .
 
-![ Onzin van het bezit queryPaths ](./assets/understand-indexing-best-practices/absense-of-queryPaths-prop.png)
+![&#x200B; Onzin van het bezit queryPaths &#x200B;](./assets/understand-indexing-best-practices/absense-of-queryPaths-prop.png)
 
 ##### Analyse
 
@@ -146,7 +146,7 @@ Stel `queryPaths` altijd in op dezelfde waarde als `includedPaths` value. Stel d
 
 Onder de afbeelding ziet u een aangepaste index met de eigenschap `tags` en hoe u deze kunt gebruiken tijdens het opvragen van informatie.
 
-![ het Vragen met indexmarkering ](./assets/understand-indexing-best-practices/tags-prop-usage.png)
+![&#x200B; het Vragen met indexmarkering &#x200B;](./assets/understand-indexing-best-practices/tags-prop-usage.png)
 
 ```
 /jcr:root/content/dam//element(*,dam:Asset)[(jcr:content/@contentFragment = 'true' and jcr:contains(., '/content/sitebuilder/test/mysite/live/ja-jp/mypage'))]order by @jcr:created descending option (index tag assetPrefixNodeNameSearch)
@@ -160,15 +160,15 @@ Toont aan hoe te om niet-tegenstrijdige en correcte `tags` bezitswaarde op de in
 
 Onder de afbeelding ziet u een aangepaste index met het knooppunt `suggestion` voor het bereiken van de geavanceerde zoekfunctionaliteit.
 
-![ de index van de Douane ](./assets/understand-indexing-best-practices/custom-index-with-suggestion-node.png)
+![&#x200B; de index van de Douane &#x200B;](./assets/understand-indexing-best-practices/custom-index-with-suggestion-node.png)
 
 ##### Analyse
 
-Het is een geldig gebruiksgeval om een douaneindex voor de [ geavanceerde onderzoek ](https://jackrabbit.apache.org/oak/docs/query/lucene.html#advanced-search-features) functionaliteit tot stand te brengen. De indexnaam moet echter volgen op **\&lt;prefix>.\&lt;customIndexName>-\&lt;version>-douane- \ &lt;customVersion>** noemende overeenkomst.
+Het is een geldig gebruiksgeval om een douaneindex voor de [&#x200B; geavanceerde onderzoek &#x200B;](https://jackrabbit.apache.org/oak/docs/query/lucene.html#advanced-search-features) functionaliteit tot stand te brengen. De indexnaam moet echter volgen op **\&lt;prefix>.\&lt;customIndexName>-\&lt;version>-douane- \ &lt;customVersion>** noemende overeenkomst.
 
 ## Optimalisatie indexeren door Apache Tika uit te schakelen
 
-AEM gebruikt [ Tika van Apache ](https://tika.apache.org/) voor _het halen van meta-gegevens en tekstinhoud uit dossier_ types zoals PDF, Word, Excel, en meer. De geëxtraheerde inhoud wordt opgeslagen in de opslagplaats en geïndexeerd door de Oak Lucene-index.
+AEM gebruikt [&#x200B; Tika van Apache &#x200B;](https://tika.apache.org/) voor _het halen van meta-gegevens en tekstinhoud uit dossier_ types zoals PDF, Word, Excel, en meer. De geëxtraheerde inhoud wordt opgeslagen in de opslagplaats en geïndexeerd door de Oak Lucene-index.
 
 Soms hebben gebruikers de mogelijkheid om te zoeken binnen de inhoud van een bestand/middel niet nodig. In dergelijke gevallen kunt u de indexprestaties verbeteren door de Apache-trojka uit te schakelen. De voordelen zijn:
 
@@ -209,11 +209,11 @@ Ga als volgt te werk om Apache Tika op mime-type uit te schakelen:
 </properties>
 ```
 
-- Om de opgeslagen index te verfrissen, plaats het `refresh` bezit aan `true` onder de knoop van de indexdefinitie, zie [ Eigenschappen van de Definitie van de Index ](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition:~:text=Defaults%20to%2010000-,refresh,-Optional%20boolean%20property) voor meer details.
+- Om de opgeslagen index te verfrissen, plaats het `refresh` bezit aan `true` onder de knoop van de indexdefinitie, zie [&#x200B; Eigenschappen van de Definitie van de Index &#x200B;](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition:~:text=Defaults%20to%2010000-,refresh,-Optional%20boolean%20property) voor meer details.
 
 In de volgende afbeelding ziet u de OOTB `damAssetLucene` -index met het `tika` node- en `config.xml` -bestand waarmee de PDF en andere mime-typen worden uitgeschakeld.
 
-![ OOTB damAssetLucene index met tika knoop ](./assets/understand-indexing-best-practices/ootb-index-with-tika-node.png)
+![&#x200B; OOTB damAssetLucene index met tika knoop &#x200B;](./assets/understand-indexing-best-practices/ootb-index-with-tika-node.png)
 
 ### Volledig uitschakelen
 
@@ -221,7 +221,7 @@ Volg onderstaande stappen om Apache Tika volledig uit te schakelen:
 
 - Voeg de eigenschap `includePropertyTypes` toe op `/oak:index/<INDEX-NAME>/indexRules/<NODE-TYPE>` en stel de waarde in op `String` . In de onderste afbeelding wordt bijvoorbeeld de eigenschap `includePropertyTypes` toegevoegd voor het `dam:Asset` knooppunttype van de index OOBT `damAssetLucene` .
 
-![ IncludePropertyTypes bezit ](./assets/understand-indexing-best-practices/includePropertyTypes-prop.png)
+![&#x200B; IncludePropertyTypes bezit &#x200B;](./assets/understand-indexing-best-practices/includePropertyTypes-prop.png)
 
 - Voeg `data` toe met eigenschappen onder het knooppunt `properties` , controleer of dit het eerste knooppunt boven de eigenschapdefinitie is. Zie bijvoorbeeld de onderstaande afbeelding:
 
@@ -235,7 +235,7 @@ Volg onderstaande stappen om Apache Tika volledig uit te schakelen:
     - analyze = false
 ```
 
-![ het bezit van Gegevens ](./assets/understand-indexing-best-practices/data-prop.png)
+![&#x200B; het bezit van Gegevens &#x200B;](./assets/understand-indexing-best-practices/data-prop.png)
 
 - Wijzig de index van de bijgewerkte indexdefinitie door de eigenschap `reindex` in te stellen op `true` onder het indexdefinitieknooppunt.
 
@@ -245,15 +245,15 @@ Laten we enkele gereedschappen bekijken die u kunnen helpen de indexen te defini
 
 ### Gereedschap Index maken
 
-Het [ hulpmiddelhulp van de Generator van de Definitie van de Index van 0&rbrace; Oak ](https://oakutils.appspot.com/generate/index) om de indexdefinitie **te produceren die op de inputvragen wordt gebaseerd.** Het is een goed beginpunt om een aangepaste index te maken.
+Het [&#x200B; hulpmiddelhulp van de Generator van de Definitie van de Index van 0&rbrace; Oak &#x200B;](https://oakutils.appspot.com/generate/index) om de indexdefinitie **te produceren die op de inputvragen wordt gebaseerd.** Het is een goed beginpunt om een aangepaste index te maken.
 
 ### Gereedschap Index analyseren
 
-De [ hulpmiddelhulp van de Analysator van de Definitie van de Index ](https://oakutils.appspot.com/analyze/index) **om de indexdefinitie** te analyseren en aanbevelingen te verstrekken om de indexdefinitie te verbeteren.
+De [&#x200B; hulpmiddelhulp van de Analysator van de Definitie van de Index &#x200B;](https://oakutils.appspot.com/analyze/index) **om de indexdefinitie** te analyseren en aanbevelingen te verstrekken om de indexdefinitie te verbeteren.
 
 ### Gereedschap Query-prestaties
 
-Het Hulpmiddel van de Prestaties van de Vraag OTB _beschikbaar bij_ lokale SDK [ en AEMCS via Developer Console of ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) hulp `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell` om de vraagprestaties **en** JCR de Cheat Sheet van de Vraag te analyseren [ om de optimale vraag te bepalen.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=nl-NL)
+Het Hulpmiddel van de Prestaties van de Vraag OTB _beschikbaar bij_ lokale SDK [&#x200B; en AEMCS via Developer Console of &#x200B;](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) hulp `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell` om de vraagprestaties **en** JCR de Cheat Sheet van de Vraag te analyseren [&#x200B; om de optimale vraag te bepalen.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=nl-NL)
 
 ### Problemen met gereedschappen en tips oplossen
 
@@ -273,7 +273,7 @@ De meeste van de onderstaande opties zijn van toepassing voor AEM 6.X en lokale 
 
 Raadpleeg de volgende documentatie voor meer informatie:
 
-- [ de Vragen van Oak en het Indexeren ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/deploying/queries-and-indexing)
-- [ Vraag en het Indexeren Beste Praktijken ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
-- [ Beste praktijken voor Vragen en het Indexeren ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
+- [&#x200B; de Vragen van Oak en het Indexeren &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/deploying/queries-and-indexing)
+- [&#x200B; Vraag en het Indexeren Beste Praktijken &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
+- [&#x200B; Beste praktijken voor Vragen en het Indexeren &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
 

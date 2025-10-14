@@ -24,9 +24,9 @@ De jongens kijken hoe de moderator van de repository u helpt om over te stappen 
 
 ## Inhoud die in deze video wordt behandeld
 
-+ [ AIO CLI ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)
-+ [ Modernizer van de Bewaarplaats ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)
++ [&#x200B; AIO CLI &#x200B;](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)
++ [&#x200B; Modernizer van de Bewaarplaats &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)
 
 ## Aanvullende bronnen
 
-Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 2 ](../cloud5-season-2.md) pagina.
+Bekijk verwante video&#39;s op de [&#x200B; Wolk 5 seizoen 2 &#x200B;](../cloud5-season-2.md) pagina.

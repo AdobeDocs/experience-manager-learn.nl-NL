@@ -21,7 +21,7 @@ Adobe Experience Manager (AEM) beschikt over meerdere opties om eindpunten zonde
 
 >[!TIP]
 >
->Deze inzameling van leerprogramma&#39;s wordt ontworpen voor hen die verkiezen **te leren door** te doen. Als u het leren concepten van de grond omhoog verkiest, controleer de [ Hoofdloze Reis van de Ontwikkelaar van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html?lang=nl-NL). Deze set zelfstudies en de reis vullen elkaar aan.
+>Deze inzameling van leerprogramma&#39;s wordt ontworpen voor hen die verkiezen **te leren door** te doen. Als u het leren concepten van de grond omhoog verkiest, controleer de [&#x200B; Hoofdloze Reis van de Ontwikkelaar van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html?lang=nl-NL). Deze set zelfstudies en de reis vullen elkaar aan.
 
 ## Zelfstudies per API
 

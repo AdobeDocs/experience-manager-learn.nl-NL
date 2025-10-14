@@ -24,26 +24,26 @@ Een veelvoorkomend verzoek is om de opmerkingen die de taakcontroleur heeft inge
 
 Om aan dit vereiste te voldoen, wordt een bundel van steekproef OSGi verstrekt die kan worden gebruikt om commentaren vast te leggen en deze commentaren op te slaan als werkschemabezit.
 
-Het volgende screenshot toont u hoe te om processtap in [ Werkschema van AEM ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) te gebruiken om commentaren te vangen en hen op te slaan als meta-gegevensbezit. De &quot;Commentaar van het Werkschema van de Vangst&quot;is de naam van de klasse java die in de processtap moet worden gebruikt. U moet de naam van de metagegevenseigenschap doorgeven die de opmerkingen bevat. In de onderstaande schermafbeelding is managerComments de eigenschap metadata waarin de opmerkingen worden opgeslagen.
+Het volgende screenshot toont u hoe te om processtap in [&#x200B; Werkschema van AEM &#x200B;](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) te gebruiken om commentaren te vangen en hen op te slaan als meta-gegevensbezit. De &quot;Commentaar van het Werkschema van de Vangst&quot;is de naam van de klasse java die in de processtap moet worden gebruikt. U moet de naam van de metagegevenseigenschap doorgeven die de opmerkingen bevat. In de onderstaande schermafbeelding is managerComments de eigenschap metadata waarin de opmerkingen worden opgeslagen.
 
-![ workflowcomments1 ](assets/workflowcomments1.gif)
+![&#x200B; workflowcomments1 &#x200B;](assets/workflowcomments1.gif)
 
 Voer de volgende stappen uit om deze mogelijkheid op uw systeem te testen:
-* [ zorg ervoor de processtap in het werkschema wordt gevormd om de Commentaren van het Werkschema van de Vangst te gebruiken ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html)
+* [&#x200B; zorg ervoor de processtap in het werkschema wordt gevormd om de Commentaren van het Werkschema van de Vangst te gebruiken &#x200B;](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html)
 
 * [De gebruikersbundel DevelopingWithService implementeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [ stelt de bundel SetValue ](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) op. Deze bundel bevat de voorbeeldcode voor het vastleggen van de opmerkingen en het opslaan als eigenschap metadata
+* [&#x200B; stelt de bundel SetValue &#x200B;](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) op. Deze bundel bevat de voorbeeldcode voor het vastleggen van de opmerkingen en het opslaan als eigenschap metadata
 
-* [ Download en unzip de activa met betrekking tot dit artikel op uw dossiersysteem ](assets/capturecomments.zip) De activa bevatten werkschemamodel en steekproef Aangepaste Vorm.
+* [&#x200B; Download en unzip de activa met betrekking tot dit artikel op uw dossiersysteem &#x200B;](assets/capturecomments.zip) De activa bevatten werkschemamodel en steekproef Aangepaste Vorm.
 
 * De 2 zip-bestanden met pakketbeheer importeren in AEM
 
-* [ Voorproef de vorm door aan dit URL te doorbladeren ](http://localhost:4502/content/dam/formsanddocuments/capturecomments/jcr:content?wcmmode=disabled)
+* [&#x200B; Voorproef de vorm door aan dit URL te doorbladeren &#x200B;](http://localhost:4502/content/dam/formsanddocuments/capturecomments/jcr:content?wcmmode=disabled)
 
 * De formuliervelden invullen en het formulier verzenden
 
-* [ Controle uw AEM inbox ](http://localhost:4502/aem/inbox)
+* [&#x200B; Controle uw AEM inbox &#x200B;](http://localhost:4502/aem/inbox)
 
 * Open de taak vanuit het Postvak IN en verzend het formulier. Voer opmerkingen in wanneer hierom wordt gevraagd.
 

@@ -21,13 +21,13 @@ ht-degree: 0%
 
 
 Cygwin is een met POSIX compatibele programmeeromgeving en runtimeomgeving die native op Microsoft Windows wordt uitgevoerd.
-Installeer [ Cygwin ](https://www.cygwin.com/). Ik ben geïnstalleerd in de map C:\cygwin64
+Installeer [&#x200B; Cygwin &#x200B;](https://www.cygwin.com/). Ik ben geïnstalleerd in de map C:\cygwin64
 >[!NOTE]
 > Zorg ervoor dat u ZIP-, unzip-, curl- en synchronisatiepakketten installeert met uw cygwin-installatie
 
 Maak een map met de naam adoberepo onder de map c:\cloudmanager.
 
-[ installeer het repo hulpmiddel ](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) Installerend het repo hulpmiddel is niets behalve het kopiëren van het repo dossier en het plaatsen van het in uw c: \ cloudmanger \ adoberepo omslag.
+[&#x200B; installeer het repo hulpmiddel &#x200B;](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) Installerend het repo hulpmiddel is niets behalve het kopiëren van het repo dossier en het plaatsen van het in uw c: \ cloudmanger \ adoberepo omslag.
 
 Voeg het volgende toe aan de omgevingsvariabele Pad C:\cygwin64\bin;C:\CloudManager\adoberepo;
 
@@ -36,7 +36,7 @@ Voeg het volgende toe aan de omgevingsvariabele Pad C:\cygwin64\bin;C:\CloudMana
 * Start IntelliJ
 * Druk op Ctrl+Alt+S om het instellingenvenster te openen.
 * Selecteer Gereedschappen->Externe gereedschappen, klik op het plusteken (+) en voer het volgende in zoals in de schermafbeelding.
-  ![ rep ](assets/repo.png)
+  ![&#x200B; rep &#x200B;](assets/repo.png)
 * Zorg ervoor u een groep geroepen repo door in &quot;repo&quot;op het drop-down gebied van de Groep te typen en alle bevelen creeert die u tot de **repogroep** creeert
 
 
@@ -44,27 +44,27 @@ Voeg het volgende toe aan de omgevingsvariabele Pad C:\cygwin64\bin;C:\CloudMana
 **Programma**: C:\cygwin64\bin\bash
 **Arguments**: -l C:\CloudManager\adoberepo\repo put -f \$FilePath\$
 **Werkmap**: \$ProjectFileDir\$
-![ plaats-bevel ](assets/put-command.png)
+![&#x200B; plaats-bevel &#x200B;](assets/put-command.png)
 
 **krijgt Bevel**
 **Programma**: C:\cygwin64\bin\bash
 **Arguments**: -l C:\CloudManager\adoberepo\repo get -f \$FilePath\$
 **Werkmap**: \$ProjectFileDir\$
-![ get-command ](assets/get-command.png)
+![&#x200B; get-command &#x200B;](assets/get-command.png)
 
 **Bevel van de Status**
 **Programma**: C:\cygwin64\bin\bash
 **Arguments**: -l C:\CloudManager\adoberepo\repo st -f \$FilePath\$
 **Werkmap**: \$ProjectFileDir\$
-![ status-bevel ](assets/status-command.png)
+![&#x200B; status-bevel &#x200B;](assets/status-command.png)
 
 **Diff Bevel**
 **Programma**: C:\cygwin64\bin\bash
 **Arguments**: - l C:\CloudManager\adoberepo\repo diff - f $FilePath$
 **Werkmap**: \$ProjectFileDir\$
-![ diff-bevel ](assets/diff-command.png)
+![&#x200B; diff-bevel &#x200B;](assets/diff-command.png)
 
-Extraheer het .repo- dossier van [ repo.zip ](assets/repo.zip) en plaats het in uw de projectwortelomslag van AEM. (C:\CloudManager\aem-banking-application) Open het .repo-bestand en zorg ervoor dat de server en de aanmeldingsinstellingen overeenkomen met uw omgeving.
+Extraheer het .repo- dossier van [&#x200B; repo.zip &#x200B;](assets/repo.zip) en plaats het in uw de projectwortelomslag van AEM. (C:\CloudManager\aem-banking-application) Open het .repo-bestand en zorg ervoor dat de server en de aanmeldingsinstellingen overeenkomen met uw omgeving.
 Open het .gitignore-bestand en voeg het volgende toe onder aan het bestand en sla de wijzigingen op
 \# repo
 .repo
@@ -74,9 +74,9 @@ Selecteer elk project in uw em-bank-toepassingsproject, zoals ui.content en klik
 ## AEM Auteur-instantie instellen{#set-up-aem-author-instance}
 
 U kunt de volgende stappen volgen om snel een cloudinstantie op uw lokale systeem in te stellen.
-* [ Download recentste AEM SDK ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
+* [&#x200B; Download recentste AEM SDK &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
 
-* [ Download de recentste addon van AEM Forms ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
+* [&#x200B; Download de recentste addon van AEM Forms &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
 
 * De volgende mapstructuur maken
 c:\aemformscs\aem-sdk\author

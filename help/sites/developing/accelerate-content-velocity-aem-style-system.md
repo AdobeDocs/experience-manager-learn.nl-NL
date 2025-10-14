@@ -53,7 +53,7 @@ Stijlsystemen hebben een aantal verschillende kleuren:
 
 >[!NOTE]
 >
->Voor een demo van deze eigenschappen, adviseren wij het letten op ons [ Wbinar van het Succes van de Klant ](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) met Will Brisbane en Joseph Van Buskirk.
+>Voor een demo van deze eigenschappen, adviseren wij het letten op ons [&#x200B; Wbinar van het Succes van de Klant &#x200B;](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) met Will Brisbane en Joseph Van Buskirk.
 
 ## Aanbevolen procedures
 
@@ -91,6 +91,6 @@ Het is simpelweg schoner. De HTML binnen de kerncomponenten is zeer uitgebreid. 
 
 Tot slot is het gebruik van Stijlsystemen meer kunst dan wetenschap. Zoals wij hebben besproken, zijn er een aantal beste praktijken, maar u zult flexibiliteit in hoe te hebben de opstelling van uw organisatie aanpassen.
 
-Voor meer informatie, controleer ons [ Succes Webinar van de Klant ](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) met Will Brisbane en Joseph Van Buskirk.
+Voor meer informatie, controleer ons [&#x200B; Succes Webinar van de Klant &#x200B;](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) met Will Brisbane en Joseph Van Buskirk.
 
-Leer meer over strategie en gedachte leiderschap bij de [ hub van het Succes van de Klant ](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html?lang=nl-NL).
+Leer meer over strategie en gedachte leiderschap bij de [&#x200B; hub van het Succes van de Klant &#x200B;](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html?lang=nl-NL).

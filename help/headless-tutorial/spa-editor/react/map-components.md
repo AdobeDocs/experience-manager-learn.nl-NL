@@ -31,38 +31,38 @@ In dit hoofdstuk wordt dieper ingegaan op de API van het AEM JSON-model en wordt
 
 1. Leer hoe te om de componenten van AEM aan Componenten van het KUUROORD in kaart te brengen.
 1. Controleer hoe een component React dynamische eigenschappen gebruikt die van AEM worden overgegaan.
-1. Leer hoe te om uit de doos [ te gebruiken Reageer de Componenten van de Kern van AEM ](https://github.com/adobe/aem-react-core-wcm-components-examples).
+1. Leer hoe te om uit de doos [&#x200B; te gebruiken Reageer de Componenten van de Kern van AEM &#x200B;](https://github.com/adobe/aem-react-core-wcm-components-examples).
 
 ## Wat u gaat maken
 
 Dit hoofdstuk inspecteert hoe de verstrekte `Text` component van het KUUROORD aan de AEM `Text` component in kaart wordt gebracht. Reageer de Componenten van de Kern zoals de `Image` component van het KUUROORD wordt gebruikt in het KUUROORD en authored in AEM. Uit de dooseigenschappen van de **Container van de Lay-out** en **Redacteur van het Malplaatje** beleid worden ook gebruikt om een mening tot stand te brengen die een weinig gevarieerder in verschijning is.
 
-![ de steekproef definitieve van het Hoofdstuk creatie ](./assets/map-components/final-page.png)
+![&#x200B; de steekproef definitieve van het Hoofdstuk creatie &#x200B;](./assets/map-components/final-page.png)
 
 ## Vereisten
 
-Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikkelomgeving ](overview.md#local-dev-environment). Dit hoofdstuk is een voortzetting van [ integreer het hoofdstuk van het KUUROORD ](integrate-spa.md), nochtans om langs allen te volgen u een SPA-Toegelaten project van AEM nodig hebt.
+Herzie het vereiste tooling en de instructies voor vestiging a [&#x200B; lokale ontwikkelomgeving &#x200B;](overview.md#local-dev-environment). Dit hoofdstuk is een voortzetting van [&#x200B; integreer het hoofdstuk van het KUUROORD &#x200B;](integrate-spa.md), nochtans om langs allen te volgen u een SPA-Toegelaten project van AEM nodig hebt.
 
 ## Toewijzingsmethode
 
 Het basisconcept is een Component van het KUUROORD aan een Component van AEM in kaart te brengen. AEM-componenten, serveronderdelen uitvoeren, inhoud exporteren als onderdeel van de JSON-model-API. De inhoud JSON wordt verbruikt door het KUUROORD, lopend cliënt-kant in browser. Een afbeelding 1:1 tussen de componenten van het KUUROORD en een component van AEM wordt gecreeerd.
 
-![ overzicht op hoog niveau van het in kaart brengen van een Component van AEM aan een Component van het Reageren ](./assets/map-components/high-level-approach.png)
+![&#x200B; overzicht op hoog niveau van het in kaart brengen van een Component van AEM aan een Component van het Reageren &#x200B;](./assets/map-components/high-level-approach.png)
 
 *overzicht op hoog niveau van het in kaart brengen van een Component van AEM aan een Component van het Reageren*
 
 ## De tekstcomponent controleren
 
-Het [ Archieftype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) verstrekt een `Text` component die aan de component van de Tekst van AEM [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=nl-NL) in kaart wordt gebracht. Dit is een voorbeeld van de component van de a **inhoud**, in die zin dat het *inhoud* van AEM teruggeeft.
+Het [&#x200B; Archieftype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype) verstrekt een `Text` component die aan de component van de Tekst van AEM [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=nl-NL) in kaart wordt gebracht. Dit is een voorbeeld van de component van de a **inhoud**, in die zin dat het *inhoud* van AEM teruggeeft.
 
 Laten we eens kijken hoe de component werkt.
 
 ### Het JSON-model controleren
 
-1. Alvorens in de code van het KUUROORD te springen, is het belangrijk om het model te begrijpen JSON dat AEM verstrekt. Navigeer aan de [ Bibliotheek van de Component van de Kern ](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html) en bekijk de pagina voor de component van de Tekst. De Core Component Library bevat voorbeelden van alle AEM Core Components.
+1. Alvorens in de code van het KUUROORD te springen, is het belangrijk om het model te begrijpen JSON dat AEM verstrekt. Navigeer aan de [&#x200B; Bibliotheek van de Component van de Kern &#x200B;](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html) en bekijk de pagina voor de component van de Tekst. De Core Component Library bevat voorbeelden van alle AEM Core Components.
 1. Selecteer het **JSON** lusje voor één van de voorbeelden:
 
-   ![ JSON van de Tekst model ](./assets/map-components/text-json.png)
+   ![&#x200B; JSON van de Tekst model &#x200B;](./assets/map-components/text-json.png)
 
    Er moeten drie eigenschappen worden weergegeven: `text` , `richText` en `:type` .
 
@@ -70,7 +70,7 @@ Laten we eens kijken hoe de component werkt.
 
    `text` en `richText` zijn extra eigenschappen die aan de component SPA worden blootgesteld.
 
-1. Bekijk de output JSON in [ http://localhost:4502/content/wknd-spa-react/us/en.model.json ](http://localhost:4502/content/wknd-spa-react/us/en.model.json). U zou een ingang moeten kunnen vinden gelijkend op:
+1. Bekijk de output JSON in [&#x200B; http://localhost:4502/content/wknd-spa-react/us/en.model.json &#x200B;](http://localhost:4502/content/wknd-spa-react/us/en.model.json). U zou een ingang moeten kunnen vinden gelijkend op:
 
    ```json
    "text": {
@@ -111,7 +111,7 @@ Laten we eens kijken hoe de component werkt.
 
    `Text` is een standaardcomponent React. De component gebruikt `this.props.richText` om te bepalen of de inhoud die moet worden gerenderd RTF-tekst of tekst zonder opmaak is. De werkelijk gebruikte &quot;inhoud&quot; komt van `this.props.text`.
 
-   Om een potentiële aanval van XSS te vermijden, wordt de rijke tekst ontsnapt via `DOMPurify` alvorens [ gevaarlijkSetInnerHTML ](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml) te gebruiken om de inhoud terug te geven. Herhaal de eigenschappen `richText` en `text` van het JSON-model eerder in de oefening.
+   Om een potentiële aanval van XSS te vermijden, wordt de rijke tekst ontsnapt via `DOMPurify` alvorens [&#x200B; gevaarlijkSetInnerHTML &#x200B;](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml) te gebruiken om de inhoud terug te geven. Herhaal de eigenschappen `richText` en `text` van het JSON-model eerder in de oefening.
 
 1. Open `ui.frontend/src/components/import-components.js` en bekijk vervolgens de `TextEditConfig` bij ~line 86:
 
@@ -139,7 +139,7 @@ Laten we eens kijken hoe de component werkt.
 
 ## Reageren kerncomponenten gebruiken
 
-[ AEM WCM Componenten - Reageer de implementatie van de Kern ](https://github.com/adobe/aem-react-core-wcm-components-base) en [ de Componenten van WCM van AEM - de redacteur van de SPA - Reageer de implementatie van de Kern ](https://github.com/adobe/aem-react-core-wcm-components-spa). Dit is een set herbruikbare UI-componenten die worden toegewezen aan AEM-componenten die buiten de box vallen. De meeste projecten kunnen deze componenten als uitgangspunt voor hun eigen implementatie hergebruiken.
+[&#x200B; AEM WCM Componenten - Reageer de implementatie van de Kern &#x200B;](https://github.com/adobe/aem-react-core-wcm-components-base) en [&#x200B; de Componenten van WCM van AEM - de redacteur van de SPA - Reageer de implementatie van de Kern &#x200B;](https://github.com/adobe/aem-react-core-wcm-components-spa). Dit is een set herbruikbare UI-componenten die worden toegewezen aan AEM-componenten die buiten de box vallen. De meeste projecten kunnen deze componenten als uitgangspunt voor hun eigen implementatie hergebruiken.
 
 1. Open in de projectcode het bestand `import-components.js` op `ui.frontend/src/components` .
 Dit dossier voert alle componenten van het KUUROORD in die aan de componenten van AEM in kaart brengen. Gezien de dynamische aard van de implementatie van de Redacteur van het KUUROORD, moeten wij om het even welke componenten van het KUUROORD uitdrukkelijk van verwijzingen voorzien die aan auteur-able componenten van AEM verbonden zijn. Op deze manier kan een AEM-auteur ervoor kiezen om een component te gebruiken op de plaats waar hij of zij dat wil in de toepassing.
@@ -158,21 +158,21 @@ Dit dossier voert alle componenten van het KUUROORD in die aan de componenten va
 
 Het beleid is een eigenschap van de malplaatjes van AEM geeft ontwikkelaars en macht-gebruikers korrelige controle waarover de componenten beschikbaar zijn om te worden gebruikt. De React Componenten van de Kern zijn inbegrepen in de Code van het KUUROORD maar moeten via een beleid worden toegelaten alvorens zij in de toepassing kunnen worden gebruikt.
 
-1. Van het scherm van het Begin van AEM navigeert aan **Hulpmiddelen** > **Malplaatjes** > **[WKND SPA React ](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-react)**.
+1. Van het scherm van het Begin van AEM navigeert aan **Hulpmiddelen** > **Malplaatjes** > **[WKND SPA React &#x200B;](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-react)**.
 
 1. Selecteer en open het **malplaatje van de Pagina van het KUUROORD** voor het uitgeven.
 
 1. Selecteer de **Container van de Lay-out** en klik het **beleid** pictogram om het beleid uit te geven:
 
-   ![ lay-outcontainerbeleid ](assets/map-components/edit-spa-page-template.png)
+   ![&#x200B; lay-outcontainerbeleid &#x200B;](assets/map-components/edit-spa-page-template.png)
 
 1. Onder **Toegestane Componenten** > **WKND SPA Reageren - Inhoud** > controleer **Beeld**, **Taser**, en **Titel**.
 
-   ![ Bijgewerkte beschikbare Componenten ](assets/map-components/update-components-available.png)
+   ![&#x200B; Bijgewerkte beschikbare Componenten &#x200B;](assets/map-components/update-components-available.png)
 
    Onder **StandaardComponenten** > **voeg afbeelding** toe en kies het **Beeld - WKND SPA React - Inhoud** component:
 
-   ![ plaats standaardcomponenten ](./assets/map-components/default-components.png)
+   ![&#x200B; plaats standaardcomponenten &#x200B;](./assets/map-components/default-components.png)
 
    Ga a **mime type** van `image/*` in.
 
@@ -182,35 +182,35 @@ Het beleid is een eigenschap van de malplaatjes van AEM geeft ontwikkelaars en m
 
    Creeer een nieuw beleid genoemd **WKND Tekst van het KUUROORD**. Onder **Insteekmodules** > **Formatterend** > controleer alle dozen om extra het formatteren opties toe te laten:
 
-   ![ laat RTE het Formatteren ](assets/map-components/enable-formatting-rte.png) toe
+   ![&#x200B; laat RTE het Formatteren &#x200B;](assets/map-components/enable-formatting-rte.png) toe
 
    Onder **Insteekmodules** > **Stijlen van de Paragraaf** > controleer de doos **alineastijlen** toelaten:
 
-   ![ laat paragraafstijlen ](./assets/map-components/text-policy-enable-paragraphstyles.png) toe
+   ![&#x200B; laat paragraafstijlen &#x200B;](./assets/map-components/text-policy-enable-paragraphstyles.png) toe
 
    Klik **Gedaan** om de beleidsupdate te bewaren.
 
 ### Inhoud auteur
 
-1. Navigeer aan de **Homepage** [ http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html ](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html).
+1. Navigeer aan de **Homepage** [&#x200B; http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html &#x200B;](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html).
 
 1. U zou nu de extra componenten **Beeld**, **Taser**, en **Titel** op de pagina moeten kunnen gebruiken.
 
-   ![ Extra componenten ](assets/map-components/additional-components.png)
+   ![&#x200B; Extra componenten &#x200B;](assets/map-components/additional-components.png)
 
 1. U zou ook de `Text` component moeten kunnen uitgeven en extra paragraafstijlen op **volledig-scherm** wijze toevoegen.
 
-   ![ Volledig scherm Rich Text Editing ](assets/map-components/full-screen-rte.png)
+   ![&#x200B; Volledig scherm Rich Text Editing &#x200B;](assets/map-components/full-screen-rte.png)
 
 1. U zou ook een beeld van de **Vinder van Activa** moeten kunnen slepen en neerzetten:
 
-   ![ belemmering en het beeld van de Daling ](assets/map-components/drag-drop-image.png)
+   ![&#x200B; belemmering en het beeld van de Daling &#x200B;](assets/map-components/drag-drop-image.png)
 
 1. Ervaring met de **Titel** en **Taser** componenten.
 
-1. Voeg uw eigen beelden via [ AEM Assets ](http://localhost:4502/assets.html/content/dam) toe of installeer de gebeëindigde codebasis voor de standaard [ WKND verwijzingsplaats ](https://github.com/adobe/aem-guides-wknd/releases/latest). De [ WKND verwijzingsplaats ](https://github.com/adobe/aem-guides-wknd/releases/latest) omvat vele beelden die op het KND KUUROORD kunnen worden opnieuw gebruikt. Het pakket kan worden geïnstalleerd gebruikend [ de Manager van het Pakket van AEM ](http://localhost:4502/crx/packmgr/index.jsp).
+1. Voeg uw eigen beelden via [&#x200B; AEM Assets &#x200B;](http://localhost:4502/assets.html/content/dam) toe of installeer de gebeëindigde codebasis voor de standaard [&#x200B; WKND verwijzingsplaats &#x200B;](https://github.com/adobe/aem-guides-wknd/releases/latest). De [&#x200B; WKND verwijzingsplaats &#x200B;](https://github.com/adobe/aem-guides-wknd/releases/latest) omvat vele beelden die op het KND KUUROORD kunnen worden opnieuw gebruikt. Het pakket kan worden geïnstalleerd gebruikend [&#x200B; de Manager van het Pakket van AEM &#x200B;](http://localhost:4502/crx/packmgr/index.jsp).
 
-   ![ Manager van het Pakket installeert wknd.all ](./assets/map-components/package-manager-wknd-all.png)
+   ![&#x200B; Manager van het Pakket installeert wknd.all &#x200B;](./assets/map-components/package-manager-wknd-all.png)
 
 ## De container voor lay-out controleren
 
@@ -218,23 +218,23 @@ De steun voor de **Container van de Lay-out** wordt automatisch verstrekt door d
 
 Controleer de container voor lay-out verder.
 
-1. In browser navigeert aan [ http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json)
+1. In browser navigeert aan [&#x200B; http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json)
 
-   ![ JSON model API - het Responsieve Net ](./assets/map-components/responsive-grid-modeljson.png)
+   ![&#x200B; JSON model API - het Responsieve Net &#x200B;](./assets/map-components/responsive-grid-modeljson.png)
 
    De **component van de Container van de Lay-out** heeft a `sling:resourceType` van `wcm/foundation/components/responsivegrid` en door de Redacteur van het KUUROORD erkend gebruikend het `:type` bezit, enkel als `Text` en `Image` componenten.
 
-   De zelfde mogelijkheden om een component opnieuw te rangschikken gebruikend [ Wijze van de Lay-out ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=nl-NL#defining-layouts-layout-mode) zijn beschikbaar met de Redacteur van het KUUROORD.
+   De zelfde mogelijkheden om een component opnieuw te rangschikken gebruikend [&#x200B; Wijze van de Lay-out &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=nl-NL#defining-layouts-layout-mode) zijn beschikbaar met de Redacteur van het KUUROORD.
 
-2. Keer terug naar [ http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html ](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Voeg extra **componenten van het Beeld 0&rbrace; toe &lbrace;en probeer re-sizing hen gebruikend de** optie van de Lay-out **:**
+2. Keer terug naar [&#x200B; http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html &#x200B;](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Voeg extra **componenten van het Beeld 0&rbrace; toe &lbrace;en probeer re-sizing hen gebruikend de** optie van de Lay-out **:**
 
-   ![ resize beeld gebruikend de wijze van de Lay-out ](./assets/map-components/responsive-grid-layout-change.gif)
+   ![&#x200B; resize beeld gebruikend de wijze van de Lay-out &#x200B;](./assets/map-components/responsive-grid-layout-change.gif)
 
-3. Heropen het model JSON [ http://localhost:4502/content/wknd-spa-react/us/en.model.json ](http://localhost:4502/content/wknd-spa-react/us/en.model.json) en bekijk `columnClassNames` als deel van JSON:
+3. Heropen het model JSON [&#x200B; http://localhost:4502/content/wknd-spa-react/us/en.model.json &#x200B;](http://localhost:4502/content/wknd-spa-react/us/en.model.json) en bekijk `columnClassNames` als deel van JSON:
 
    {de namen van de Klasse van 0} Wolk ![&#128279;](./assets/map-components/responsive-grid-classnames.png)
 
-   De klassenaam `aem-GridColumn--default--4` geeft aan dat de component 4 kolommen breed moet zijn op basis van een raster van 12 kolommen. Meer details over het [ ontvankelijke net kunnen hier ](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) worden gevonden.
+   De klassenaam `aem-GridColumn--default--4` geeft aan dat de component 4 kolommen breed moet zijn op basis van een raster van 12 kolommen. Meer details over het [&#x200B; ontvankelijke net kunnen hier &#x200B;](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) worden gevonden.
 
 4. Keer terug naar winde en in de `ui.apps` module is er een cliënt-zijbibliotheek die bij `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/clientlibs/clientlib-grid` wordt bepaald. Open het bestand `less/grid.less` .
 
@@ -242,7 +242,7 @@ Controleer de container voor lay-out verder.
 
 5. U moet de responsieve mogelijkheden en het bijgewerkte rijke tekstbeleid van de `Text` component kunnen gebruiken om een mening als het volgende te ontwerpen:
 
-   ![ de steekproef definitieve van het Hoofdstuk creatie ](assets/map-components/final-page.png)
+   ![&#x200B; de steekproef definitieve van het Hoofdstuk creatie &#x200B;](assets/map-components/final-page.png)
 
 ## Gefeliciteerd! {#congratulations}
 
@@ -250,23 +250,23 @@ Gefeliciteerd, leerde u hoe te om de componenten van het KUUROORD aan de Compone
 
 ### Volgende stappen {#next-steps}
 
-[ Navigatie en het Verpletteren ](navigation-routing.md) - leer hoe de veelvoudige meningen in het KUUROORD door afbeelding aan de Pagina&#39;s van AEM met de Redacteur SDK van het KUUROORD kunnen worden gesteund. De dynamische navigatie wordt uitgevoerd gebruikend React Router en React de Componenten van de Kern.
+[&#x200B; Navigatie en het Verpletteren &#x200B;](navigation-routing.md) - leer hoe de veelvoudige meningen in het KUUROORD door afbeelding aan de Pagina&#39;s van AEM met de Redacteur SDK van het KUUROORD kunnen worden gesteund. De dynamische navigatie wordt uitgevoerd gebruikend React Router en React de Componenten van de Kern.
 
 ## (Bonus) zet configuraties aan broncontrole aan {#bonus-configs}
 
 In veel gevallen, vooral aan het begin van een project van AEM is het waardevol om configuraties, zoals malplaatjes en verwant inhoudsbeleid, aan broncontrole voort te zetten. Dit zorgt ervoor dat alle ontwikkelaars tegen de zelfde reeks inhoud en configuraties werken en extra consistentie tussen milieu&#39;s kunnen verzekeren. Wanneer een project een bepaald ontwikkelingsniveau heeft bereikt, kan het beheren van sjablonen worden overgedragen aan een speciale groep van energiegebruikers.
 
-De volgende weinige stappen zullen plaatsvinden gebruikend winde van de Code van Visual Studio en [ Synchronisatie van VSCode AEM ](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) maar zouden het gebruiken van om het even welk hulpmiddel en om het even welke winde kunnen doen die u aan **trek** of **invoert** inhoud van een lokale instantie van AEM hebt gevormd.
+De volgende weinige stappen zullen plaatsvinden gebruikend winde van de Code van Visual Studio en [&#x200B; Synchronisatie van VSCode AEM &#x200B;](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) maar zouden het gebruiken van om het even welk hulpmiddel en om het even welke winde kunnen doen die u aan **trek** of **invoert** inhoud van een lokale instantie van AEM hebt gevormd.
 
 1. In winde van de Code van Visual Studio, zorg ervoor dat u {de Synchronisatie van AEM van 0} VSCode **via de uitbreiding van de Marketplace geïnstalleerd hebt:**
 
-   ![ de Synchronisatie van AEM VSCode ](./assets/map-components/vscode-aem-sync.png)
+   ![&#x200B; de Synchronisatie van AEM VSCode &#x200B;](./assets/map-components/vscode-aem-sync.png)
 
 2. Breid **ui.content** module in de ontdekkingsreiziger van het Project uit en navigeer aan `/conf/wknd-spa-react/settings/wcm/templates`.
 
 3. **Right+Click** de `templates` omslag en selecteer **Invoer van de Server van AEM**:
 
-   ![ VSCode het invoermalplaatje ](./assets/map-components/import-aem-servervscode.png)
+   ![&#x200B; VSCode het invoermalplaatje &#x200B;](./assets/map-components/import-aem-servervscode.png)
 
 4. Herhaal de stappen om inhoud in te voeren maar selecteer de **beleid** omslag die bij `/conf/wknd-spa-react/settings/wcm/templates/policies` wordt gevestigd.
 
@@ -283,7 +283,7 @@ De volgende weinige stappen zullen plaatsvinden gebruikend winde van de Code van
     </workspaceFilter>
    ```
 
-   Het bestand `filter.xml` identificeert de paden van knooppunten die met het pakket zijn geïnstalleerd. Let op `mode="merge"` op elk van de filters die aangeeft dat bestaande inhoud niet wordt gewijzigd, alleen nieuwe inhoud wordt toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing **&#x200B;**&#x200B;geen inhoud overschrijft. Zie de [ documentatie FileVault ](https://jackrabbit.apache.org/filevault/filter.html) voor meer details bij het werken met filterelementen.
+   Het bestand `filter.xml` identificeert de paden van knooppunten die met het pakket zijn geïnstalleerd. Let op `mode="merge"` op elk van de filters die aangeeft dat bestaande inhoud niet wordt gewijzigd, alleen nieuwe inhoud wordt toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing **&#x200B;**&#x200B;geen inhoud overschrijft. Zie de [&#x200B; documentatie FileVault &#x200B;](https://jackrabbit.apache.org/filevault/filter.html) voor meer details bij het werken met filterelementen.
 
    Vergelijk `ui.content/src/main/content/META-INF/vault/filter.xml` en `ui.apps/src/main/content/META-INF/vault/filter.xml` om inzicht te krijgen in de verschillende knooppunten die door elke module worden beheerd.
 
@@ -295,9 +295,9 @@ Een component van het Beeld van het KUUROORD is reeds verstrekt door de React co
 
 Alvorens in de code van het KUUROORD te springen, inspecteer het model JSON dat door AEM wordt verstrekt.
 
-1. Navigeer aan de [ voorbeelden van het Beeld in de bibliotheek van de Component van de Kern ](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html).
+1. Navigeer aan de [&#x200B; voorbeelden van het Beeld in de bibliotheek van de Component van de Kern &#x200B;](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html).
 
-   ![ Component JSON van de Kern van het Beeld ](./assets/map-components/image-json.png)
+   ![&#x200B; Component JSON van de Kern van het Beeld &#x200B;](./assets/map-components/image-json.png)
 
    Eigenschappen van `src` , `alt` en `title` worden gebruikt om de component SPA `Image` te vullen.
 
@@ -310,7 +310,7 @@ Alvorens in de code van het KUUROORD te springen, inspecteer het model JSON dat 
 1. Maak vervolgens een nieuwe map met de naam `Image` onder `ui.frontend/src/components` .
 1. Onder de map `Image` maakt u een nieuw bestand met de naam `Image.js` .
 
-   ![ Image.js- dossier ](./assets/map-components/image-js-file.png)
+   ![&#x200B; Image.js- dossier &#x200B;](./assets/map-components/image-js-file.png)
 
 1. Voeg de volgende `import` instructies toe aan `Image.js` :
 

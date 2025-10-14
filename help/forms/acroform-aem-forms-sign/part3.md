@@ -17,12 +17,12 @@ ht-degree: 1%
 
 # Deze mogelijkheid testen op uw systeem
 
-[ Download en voer dit pakket in AEM ](assets/acro-form-aem-form.zip) in
+[&#x200B; Download en voer dit pakket in AEM &#x200B;](assets/acro-form-aem-form.zip) in
 Dit pakket bevat de voorbeeldworkflow en de HTML-pagina waarmee u het schema kunt maken van het geüploade Acrobat-formulier.
 
 ## Workflow configureren
 
-1. [ open het Model van het Werkschema op geef wijze ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/MergeAcroformData.html) uit.
+1. [&#x200B; open het Model van het Werkschema op geef wijze &#x200B;](http://localhost:4502/editor.html/conf/global/settings/workflow/models/MergeAcroformData.html) uit.
 2. Open de configuratie-eigenschappen van de stap MergeAcroformData.
 3. Klik op het tabblad Proces.
 4. Zorg ervoor dat de argumenten die u doorgeeft een geldige map op de server zijn.

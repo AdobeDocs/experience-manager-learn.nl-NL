@@ -26,11 +26,11 @@ ht-degree: 4%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=nl-NL" text="IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service"
 >additional-url="https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/identity.html" text="Door AEM verschafte gebruikersgroepen en hun machtigingen"
 
-Adobe Experience Manager bouwt verder op Adobe IMS-gebruikers, -gebruikersgroepen en -productprofielen om gebruikers aanpasbare toegang tot AEM te bieden. Leer hoe te om de groepen en de toestemmingen van AEM te bepalen, die op [ AEM voortbouwen verstrekte gebruikersgroepen ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/security#built-in-users-and-groups), en hoe zij in overleg met de abstracties van Adobe IMS werken om naadloze en klantgerichte toegang tot AEM te verlenen.
+Adobe Experience Manager bouwt verder op Adobe IMS-gebruikers, -gebruikersgroepen en -productprofielen om gebruikers aanpasbare toegang tot AEM te bieden. Leer hoe te om de groepen en de toestemmingen van AEM te bepalen, die op [&#x200B; AEM voortbouwen verstrekte gebruikersgroepen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/security#built-in-users-and-groups), en hoe zij in overleg met de abstracties van Adobe IMS werken om naadloze en klantgerichte toegang tot AEM te verlenen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39151?quality=12&learn=on)
 
 ## Aanvullende bronnen
 
-+ [ IMS Steun voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=nl-NL)
-+ [ AEM-Verstrekte gebruikersgroepen en hun toestemmingen ](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/security.html?lang=nl-NL)
++ [&#x200B; IMS Steun voor Adobe Experience Manager as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=nl-NL)
++ [&#x200B; AEM-Verstrekte gebruikersgroepen en hun toestemmingen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/security.html?lang=nl-NL)

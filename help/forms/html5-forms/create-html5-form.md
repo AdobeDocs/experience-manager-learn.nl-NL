@@ -25,12 +25,12 @@ HTML5-formulieren zijn een nieuwe functie in Adobe Experience Manager die XFA-fo
 
 ## Vereiste
 
-Controleer of je een werkende versie van AEM Forms hebt. Gelieve te volgen de [ installatiegids ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html?lang=nl-NL) om AEM Forms te installeren en te vormen
+Controleer of je een werkende versie van AEM Forms hebt. Gelieve te volgen de [&#x200B; installatiegids &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html?lang=nl-NL) om AEM Forms te installeren en te vormen
 
 ## Uw eerste HTML5-formulier maken
 
-1. [ Download en haalt de inhoud van zip dossier ](assets/assets.zip). Het ZIP-bestand bevat xdp en een gegevensbestand
-2. [ ga aan Forms en Documenten ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+1. [&#x200B; Download en haalt de inhoud van zip dossier &#x200B;](assets/assets.zip). Het ZIP-bestand bevat xdp en een gegevensbestand
+2. [&#x200B; ga aan Forms en Documenten &#x200B;](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 3. Klik op Maken -> Bestand uploaden
 4. Selecteer de xdp-sjabloon die u in stap 2 hebt gedownload
 
@@ -57,6 +57,6 @@ Met de geavanceerde eigenschappen van de xdp-sjabloon kunt u de publicatiedatum 
 
 **legt URL** voor - dit is URL die uw HTML5 vormvoorlegging zal behandelen. In de volgende les zullen we dit behandelen. Als hier geen verzendURL is opgegeven, wordt de standaardverzendhandler aangeroepen die de formuliergegevens retourneert naar de browser.
 
-**HTML geeft Profiel** terug - de vormen HTML5 hebben het begrip van Profielen die als Eindpunten van REST worden blootgesteld om Mobiele Rendering van de Malplaatjes van de Vorm toe te laten. De meeste keren dat het standaardrenderprofiel voldoende is om het formulier te genereren. Als het gebrek teruggeeft profiel niet aan uw behoeften voldoet, kan het a [ douaneprofiel ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/custom-profile.html?lang=nl-NL) worden gecreeerd en met de vorm worden geassocieerd.
+**HTML geeft Profiel** terug - de vormen HTML5 hebben het begrip van Profielen die als Eindpunten van REST worden blootgesteld om Mobiele Rendering van de Malplaatjes van de Vorm toe te laten. De meeste keren dat het standaardrenderprofiel voldoende is om het formulier te genereren. Als het gebrek teruggeeft profiel niet aan uw behoeften voldoet, kan het a [&#x200B; douaneprofiel &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/custom-profile.html?lang=nl-NL) worden gecreeerd en met de vorm worden geassocieerd.
 
 **de Vooraf ingevulde Dienst** - de Prefill dienst wordt typisch gebruikt om uw vorm met gegevens te bevolken die van een achterste gegevensbron worden gehaald.

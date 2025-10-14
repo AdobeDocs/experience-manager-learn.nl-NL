@@ -23,23 +23,23 @@ De laatste en laatste stap bestaat uit het maken van een AEM-workflow die een st
 
 In de volgende schermafbeelding worden de stappen weergegeven die bij de workflow horen.
 
-![ werkschema ](assets/workflow.PNG)
+![&#x200B; werkschema &#x200B;](assets/workflow.PNG)
 
 ## Niet-interactieve PDF-workflowstap genereren
 
 Hier worden de XDP-sjabloon en de gegevens die met de sjabloon moeten worden samengevoegd, opgegeven. De gegevens die moeten worden samengevoegd, zijn de ingediende gegevens van de PDF. Deze verzonden gegevens worden opgeslagen onder het knooppunt ```/content/formsubmissions```
 
-![ werkschema ](assets/generate-pdf1.PNG)
+![&#x200B; werkschema &#x200B;](assets/generate-pdf1.PNG)
 
 De gegenereerde PDF wordt toegewezen aan de workflowvariabele `submittedPDF` .
 
-![ werkschema ](assets/generate-pdf2.PNG)
+![&#x200B; werkschema &#x200B;](assets/generate-pdf2.PNG)
 
 ### De gegenereerde pdf ter controle en goedkeuring toewijzen
 
 De taakworkflowcomponent toewijzen wordt hier gebruikt om de gegenereerde PDF toe te wijzen voor revisie en goedkeuring. De variabele `submittedPDF` wordt gebruikt op het tabblad Forms en Documenten van de werkstroomcomponent Taak toewijzen.
 
-![ werkschema ](assets/assign-task.PNG)
+![&#x200B; werkschema &#x200B;](assets/assign-task.PNG)
 
 
 ## Volgende stappen

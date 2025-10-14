@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Adobe Experience Manager as a Cloud Service gebruikt AEM Publish Dispatcher filters om ervoor te zorgen slechts verzoeken die AEM zouden moeten bereiken AEM bereiken. Standaard worden alle aanvragen geweigerd en moeten patronen voor toegestane URL&#39;s expliciet worden toegevoegd.
 
-| Type client | [ Enige-pagina app (SPA) ](../spa.md) | [ Component/JS van het Web ](../web-component.md) | [ Mobiel ](../mobile.md) | [ server-aan-server ](../server-to-server.md) |
+| Type client | [&#x200B; Enige-pagina app (SPA) &#x200B;](../spa.md) | [&#x200B; Component/JS van het Web &#x200B;](../web-component.md) | [&#x200B; Mobiel &#x200B;](../mobile.md) | [&#x200B; server-aan-server &#x200B;](../server-to-server.md) |
 |------------------------------------------:|:---------------------:|:----------------:|:---------:|:----------------:|
 | Dispatcher-filterconfiguratie vereist | ✔ | ✔ | ✔ | ✔ |
 
@@ -55,4 +55,4 @@ Als u Experience Fragments gebruikt in uw AEM Headless-ervaring, doe dan hetzelf
 
 ### Voorbeeldfilterconfiguratie
 
-+ [ een voorbeeld van de filter van Dispatcher kan in het project worden gevonden WKND.](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.dispatcher.d/filters/filters.any#L28)
++ [&#x200B; een voorbeeld van de filter van Dispatcher kan in het project worden gevonden WKND.](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.dispatcher.d/filters/filters.any#L28)

@@ -32,9 +32,9 @@ U hebt het volgende nodig:
 
 * **het wordt verondersteld dat u versie 6.4 of hoger van AEM Forms op localhost in werking stelt:4502.**
 
-* [ Download cliënt-libs-en-embleem ](assets/client-libs-and-logo.zip) en [ begonnen-fragment ](assets/getting-started-fragment.zip) aan uw harde aandrijving.
+* [&#x200B; Download cliënt-libs-en-embleem &#x200B;](assets/client-libs-and-logo.zip) en [&#x200B; begonnen-fragment &#x200B;](assets/getting-started-fragment.zip) aan uw harde aandrijving.
 
-* Invoer de zip dossiers in AEM gebruikend [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
+* Invoer de zip dossiers in AEM gebruikend [&#x200B; pakketmanager &#x200B;](http://localhost:4502/crx/packmgr/index.jsp)
 
 ## Volgende stappen
 

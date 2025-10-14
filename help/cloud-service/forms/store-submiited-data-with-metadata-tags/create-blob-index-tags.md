@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Aangezien datasets groter worden, kan het vinden van een specifiek voorwerp in een zee van gegevens moeilijk zijn. Blob-indextags bieden mogelijkheden voor gegevensbeheer en detectie met behulp van tagkenmerken voor sleutelwaarden-indextags. U kunt objecten in één container of in alle containers in uw opslagaccount categoriseren en zoeken. Bijvoorbeeld, blob indexmarkering _&#x200B;**CustomerType=Platinum**&#x200B;_, waar Platinum de waarde van het gebied CustomerType is.
 
-![ index-markeringen ](assets/blob-with-index-tags1.png)
+![&#x200B; index-markeringen &#x200B;](assets/blob-with-index-tags1.png)
 Met de volgende code wordt de tekenreeks met de labels voor blob-indexgegevens gemaakt met de bijbehorende waarden uit de verzonden gegevens
 
 ```java

@@ -50,11 +50,11 @@ String data = request.getParameter(paramName);System.out.println("The data  is "
 }
 ```
 
-![ formsubmission ](assets/formsubmission.gif)
+![&#x200B; formsubmission &#x200B;](assets/formsubmission.gif)
 Ga als volgt te werk om dit op uw server te testen
 
-1. Installeer Tomcat als u dit nog niet hebt. [ Instructies om te installeren zijn hier beschikbaar ](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html)
-1. Download het [ zip dossier ](assets/aemformsenablement.zip) verbonden aan dit artikel. Pak het bestand uit om het oorlogsbestand op te halen.
+1. Installeer Tomcat als u dit nog niet hebt. [&#x200B; Instructies om te installeren zijn hier beschikbaar &#x200B;](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html)
+1. Download het [&#x200B; zip dossier &#x200B;](assets/aemformsenablement.zip) verbonden aan dit artikel. Pak het bestand uit om het oorlogsbestand op te halen.
 1. Implementeer het oorlogsbestand in uw tomcat-server.
 1. Maak een eenvoudig adaptief formulier met de component Bestandsbijlage en configureer de verzendactie zoals in de bovenstaande schermafbeelding wordt getoond. De POST-URL is <http://localhost:8080/AemFormsEnablement/HandleFormSubmission> . Als uw AEM en Tomcat niet worden uitgevoerd op localhost, wijzigt u de URL dienovereenkomstig.
 1. Als u het verzenden van formuliergegevens via meerdere delen wilt inschakelen, voegt u het volgende kenmerk toe aan het contextelement van de &lt;tomcatInstallDir>\conf\context.xml en start u de Tomcat-server opnieuw.

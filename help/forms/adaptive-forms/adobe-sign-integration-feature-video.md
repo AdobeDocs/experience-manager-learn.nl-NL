@@ -34,4 +34,4 @@ Acrobat Sign gebruiken met AEM Forms
 >
 >Deze functie is alleen beschikbaar vanaf AEM 6.3.
 
-Gelieve te bezoeken de [ steekproeven van AEM Forms ](https://forms.enablementadobe.com/content/samples/samples.html?query=0#formsandsign) pagina voor een verbinding aan een levende demo van dit vermogen.
+Gelieve te bezoeken de [&#x200B; steekproeven van AEM Forms &#x200B;](https://forms.enablementadobe.com/content/samples/samples.html?query=0#formsandsign) pagina voor een verbinding aan een levende demo van dit vermogen.

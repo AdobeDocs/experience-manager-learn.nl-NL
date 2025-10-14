@@ -22,14 +22,14 @@ ht-degree: 0%
 # Taakmelding toewijzen aanpassen
 
 De taakcomponent toewijzen wordt gebruikt om taken toe te wijzen aan workflowdeelnemers. Wanneer een taak aan een gebruiker of een groep wordt toegewezen, wordt een e-mailbericht verzonden naar de bepaalde gebruiker of groepsleden.
-Dit e-mailbericht bevat meestal dynamische gegevens die betrekking hebben op de taak. Dit dynamische gegeven wordt opgehaald gebruikend het systeem [ geproduceerde meta-gegevenseigenschappen ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html?lang=nl-NL#using-system-generated-metadata-in-an-email-notification).
+Dit e-mailbericht bevat meestal dynamische gegevens die betrekking hebben op de taak. Dit dynamische gegeven wordt opgehaald gebruikend het systeem [&#x200B; geproduceerde meta-gegevenseigenschappen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html?lang=nl-NL#using-system-generated-metadata-in-an-email-notification).
 Als u waarden uit de verzonden formuliergegevens wilt opnemen in het e-mailbericht, moet u een eigenschap voor aangepaste metagegevens maken en deze eigenschappen voor aangepaste metagegevens in de e-mailsjabloon gebruiken
 
 
 
 ## Aangepaste metagegevenseigenschap maken
 
-De geadviseerde benadering is een component tot stand te brengen OSGI die de methode getUserMetadata van [ WorkitemUserMetadataService ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--) uitvoert
+De geadviseerde benadering is een component tot stand te brengen OSGI die de methode getUserMetadata van [&#x200B; WorkitemUserMetadataService &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--) uitvoert
 
 De volgende code leidt tot 4 meta-gegevenseigenschappen (_firstName_, _lastName_, _reden_ en _amountRequested_) en plaatst zijn waarde van de voorgelegde gegevens. Bijvoorbeeld wordt de waarde van het meta-gegevensbezit _firstName_ geplaatst aan de waarde van het element riep firstName van de voorgelegde gegevens. De volgende code gaat ervan uit dat de verzonden gegevens van het adaptieve formulier de XML-indeling hebben. Adaptieve Forms op basis van JSON-schema of formuliergegevensmodel genereert gegevens in JSON-indeling.
 
@@ -120,24 +120,24 @@ In de e-mailsjabloon kunt u de eigenschap metadata opnemen door de volgende synt
 Nadat de component OSGi wordt gebouwd en in de server van AEM wordt opgesteld, vorm de Assign component van de Taak zoals hieronder getoond om de eigenschappen van douanemetagegevens te gebruiken.
 
 
-![ Bericht van de Taak ](assets/task-notification.PNG)
+![&#x200B; Bericht van de Taak &#x200B;](assets/task-notification.PNG)
 
 ## Het gebruik van aangepaste eigenschappen van metagegevens inschakelen
 
-![ eigenschappen van de Gegevens van Meta van de Douane ](assets/custom-meta-data-properties.PNG)
+![&#x200B; eigenschappen van de Gegevens van Meta van de Douane &#x200B;](assets/custom-meta-data-properties.PNG)
 
 ## Om dit op uw server te proberen
 
-* [ vorm de Dienst van de Post van de Dag CQ ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=nl-NL#configuring-the-mail-service)
-* Koppel een geldige e-mailidentiteitskaart met [ admin gebruiker ](http://localhost:4502/security/users.html)
-* De download en installeert [ werkschema-en-bericht-malplaatje ](assets/workflow-and-task-notification-template.zip) gebruikend [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
-* Download [ Aangepaste Vorm ](assets/request-travel-authorization.zip) en de invoer in AEM van de [ vormen en documenten ui ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-* Stel en begin de [ Bundel van de Douane ](assets/work-items-user-service-bundle.jar) op gebruikend de [ Webconsole ](http://localhost:4502/system/console/bundles)
-* [ Voorproef en verzend de vorm ](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
+* [&#x200B; vorm de Dienst van de Post van de Dag CQ &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=nl-NL#configuring-the-mail-service)
+* Koppel een geldige e-mailidentiteitskaart met [&#x200B; admin gebruiker &#x200B;](http://localhost:4502/security/users.html)
+* De download en installeert [&#x200B; werkschema-en-bericht-malplaatje &#x200B;](assets/workflow-and-task-notification-template.zip) gebruikend [&#x200B; pakketmanager &#x200B;](http://localhost:4502/crx/packmgr/index.jsp)
+* Download [&#x200B; Aangepaste Vorm &#x200B;](assets/request-travel-authorization.zip) en de invoer in AEM van de [&#x200B; vormen en documenten ui &#x200B;](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Stel en begin de [&#x200B; Bundel van de Douane &#x200B;](assets/work-items-user-service-bundle.jar) op gebruikend de [&#x200B; Webconsole &#x200B;](http://localhost:4502/system/console/bundles)
+* [&#x200B; Voorproef en verzend de vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
 
 Bij het verzenden van een formulier wordt het toewijzingsbericht verzonden naar de e-mailid die is gekoppeld aan de beheerder. De volgende schermafbeelding laat u het voorbeeld van een taaktoewijzingsmelding zien
 
-![ Bericht ](assets/task-nitification-email.png)
+![&#x200B; Bericht &#x200B;](assets/task-nitification-email.png)
 
 >[!NOTE]
 >De e-mailsjabloon voor het taakbericht toewijzen moet de volgende indeling hebben.
@@ -200,4 +200,4 @@ public class CaptureTaskComments implements WorkitemUserMetadataService {
 }
 ```
 
-De bundel met de bovengenoemde code kan [ van hier worden gedownload ](assets/samples.aemforms.taskcomments.taskcomments.core-1.0-SNAPSHOT.jar)
+De bundel met de bovengenoemde code kan [&#x200B; van hier worden gedownload &#x200B;](assets/samples.aemforms.taskcomments.taskcomments.core-1.0-SNAPSHOT.jar)

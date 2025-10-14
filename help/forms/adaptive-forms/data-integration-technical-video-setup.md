@@ -28,6 +28,6 @@ Gegevensverbinding instellen met een JDBC-gegevensbron
 
 ## Ondersteunende materialen {#supporting-materials}
 
-* [ Download MySQL JDBC OSGi Bundel ](https://dev.mysql.com/downloads/connector/j/)
+* [&#x200B; Download MySQL JDBC OSGi Bundel &#x200B;](https://dev.mysql.com/downloads/connector/j/)
 
-   * Download, unzip en installeer het JAR dossier via de [ Console van het Web van AEM ](http://localhost:4502/system/console/bundles)
+   * Download, unzip en installeer het JAR dossier via de [&#x200B; Console van het Web van AEM &#x200B;](http://localhost:4502/system/console/bundles)

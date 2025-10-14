@@ -21,7 +21,7 @@ ht-degree: 0%
 
 * Het project importeren
 
-   * Download en haal het [ steekproefproject ](./assets/formsdocumentservices.zip) uit
+   * Download en haal het [&#x200B; steekproefproject &#x200B;](./assets/formsdocumentservices.zip) uit
    * Open uw aangewezen **Milieu van de Ontwikkeling van Java** (IntelliJ IDEA, Eclipse of de Code van VS) en voer het project als Geweven project in
 * Referenties configureren
 

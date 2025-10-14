@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Blokken in Edge Delivery Services worden opgemaakt met CSS. Het CSS-bestand voor een blok wordt opgeslagen in de map van het blok en heeft dezelfde naam als het blok. Het CSS-bestand voor een blok met de naam `teaser` bevindt zich bijvoorbeeld op `blocks/teaser/teaser.css` .
 
-In het ideale geval heeft een blok alleen CSS voor opmaak nodig, zonder dat JavaScript de DOM moet wijzigen of CSS-klassen moet toevoegen. De behoefte aan JavaScript hangt van de inhoud van het blok [ modellering ](./5-new-block.md#block-model) en zijn ingewikkeldheid af. Indien nodig, [ blok JavaScript ](./7b-block-js-css.md) kan worden toegevoegd.
+In het ideale geval heeft een blok alleen CSS voor opmaak nodig, zonder dat JavaScript de DOM moet wijzigen of CSS-klassen moet toevoegen. De behoefte aan JavaScript hangt van de inhoud van het blok [&#x200B; modellering &#x200B;](./5-new-block.md#block-model) en zijn ingewikkeldheid af. Indien nodig, [&#x200B; blok JavaScript &#x200B;](./7b-block-js-css.md) kan worden toegevoegd.
 
 Met een CSS-benadering worden de (meestal) blote semantische HTML-elementen van het blok geactiveerd en vormgegeven.
 
@@ -75,7 +75,7 @@ Merk `<p class="button-container">...` op dat [&#128279;](./4-website-branding.m
 
 Als u het DOM wilt zoeken dat u opmaakt, opent u de pagina met het naamloze blok in uw lokale ontwikkelomgeving, selecteert u het blok en inspecteert u het DOM.
 
-![ blok DOM van de Inspectie ](./assets/7a-block-css/inspect-block-dom.png)
+![&#x200B; blok DOM van de Inspectie &#x200B;](./assets/7a-block-css/inspect-block-dom.png)
 
 >[!ENDTABS]
 
@@ -213,11 +213,11 @@ Dit CSS-bestand wordt automatisch geladen wanneer de JavaScript van Edge Deliver
 
 Aangezien CSS in het codeproject wordt geschreven, is het hete herladen van AEM CLI de veranderingen, die het snel en gemakkelijk maken om te begrijpen hoe CSS het blok beïnvloedt.
 
-![ CSS slechts voorproef ](./assets/7a-block-css/local-development-preview.png)
+![&#x200B; CSS slechts voorproef &#x200B;](./assets/7a-block-css/local-development-preview.png)
 
 ## Uw code plaatsen
 
-Zorg ervoor u [ vaak ](./3-local-development-environment.md#linting) uw codescheidingen plukt om het schoon en verenigbaar te verzekeren. Met koppelingen worden problemen vroegtijdig afgevangen en de totale ontwikkeltijd verkort. U kunt uw ontwikkelingswerk niet samenvoegen tot `main` totdat alle problemen met koppelingen zijn opgelost.
+Zorg ervoor u [&#x200B; vaak &#x200B;](./3-local-development-environment.md#linting) uw codescheidingen plukt om het schoon en verenigbaar te verzekeren. Met koppelingen worden problemen vroegtijdig afgevangen en de totale ontwikkeltijd verkort. U kunt uw ontwikkelingswerk niet samenvoegen tot `main` totdat alle problemen met koppelingen zijn opgelost.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -239,4 +239,4 @@ $ git push origin teaser
 
 U kunt nu een voorvertoning van de wijzigingen weergeven in de Universal Editor wanneer u de queryparameter `?ref=teaser` toevoegt.
 
-![ Taser in Universele Redacteur ](./assets/7a-block-css/universal-editor-preview.png)
+![&#x200B; Taser in Universele Redacteur &#x200B;](./assets/7a-block-css/universal-editor-preview.png)

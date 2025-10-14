@@ -23,25 +23,25 @@ ht-degree: 0%
 
 Leer hoe te om een naam van het douanedomein aan een website van AEM as a Cloud Service toe te voegen die a **klant-geleide CDN** gebruikt.
 
-In dit leerprogramma, wordt het branding van de steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) plaats verbeterd door een HTTPS-adresseerbare naam van het douanedomein `wkndviaawscdn.enablementadobe.com` met de Veiligheid van de Laag van het Vervoer (TLS) toe te voegen gebruikend een klant-beheerde CDN. In deze zelfstudie wordt AWS CloudFront gebruikt als door de klant beheerde CDN, maar elke CDN-provider moet compatibel zijn met AEM as a Cloud Service.
+In dit leerprogramma, wordt het branding van de steekproef [&#x200B; AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) plaats verbeterd door een HTTPS-adresseerbare naam van het douanedomein `wkndviaawscdn.enablementadobe.com` met de Veiligheid van de Laag van het Vervoer (TLS) toe te voegen gebruikend een klant-beheerde CDN. In deze zelfstudie wordt AWS CloudFront gebruikt als door de klant beheerde CDN, maar elke CDN-provider moet compatibel zijn met AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432561?quality=12&learn=on)
 
 De stappen op hoog niveau zijn:
 
-![ Naam van het Domein van de Douane met Klant CDN ](./assets/add-custom-domain-name-with-customer-CDN.png){width="800" zoomable="yes"}
+![&#x200B; Naam van het Domein van de Douane met Klant CDN &#x200B;](./assets/add-custom-domain-name-with-customer-CDN.png){width="800" zoomable="yes"}
 
 ## Vereisten
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432562?quality=12&learn=on)
 
-- [ OpenSSL ](https://www.openssl.org/) en [ graven ](https://www.isc.org/blogs/dns-checker/) zijn geïnstalleerd op uw lokale machine.
+- [&#x200B; OpenSSL &#x200B;](https://www.openssl.org/) en [&#x200B; graven &#x200B;](https://www.isc.org/blogs/dns-checker/) zijn geïnstalleerd op uw lokale machine.
 - Toegang tot diensten van derden:
-   - De Autoriteit van het certificaat (CA) - om het ondertekende certificaat voor uw plaatsdomein, als [ DigitCert ](https://www.digicert.com/) te verzoeken
+   - De Autoriteit van het certificaat (CA) - om het ondertekende certificaat voor uw plaatsdomein, als [&#x200B; DigitCert &#x200B;](https://www.digicert.com/) te verzoeken
    - CDN van de klant - aan opstelling CDN van de klant en voeg SSL certificaten en domeindetails toe, zoals AWS CloudFront, Azure CDN, of Akamai.
    - De het ontvangen dienst van het Systeem van de Naam van het domein (DNS) - om DNS verslagen voor uw douanedomein, zoals Azure DNS, of Route 53 van AWS toe te voegen.
-- De toegang tot [ Cloud Manager van Adobe ](https://my.cloudmanager.adobe.com/) om de bevestigingsregel CDN van de Kopbal van HTTP op te stellen aan het milieu van AEM as a Cloud Service.
-- De plaats van de steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) wordt opgesteld aan het milieu van AEM as a Cloud Service van [ het type van het productieprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
+- De toegang tot [&#x200B; Cloud Manager van Adobe &#x200B;](https://my.cloudmanager.adobe.com/) om de bevestigingsregel CDN van de Kopbal van HTTP op te stellen aan het milieu van AEM as a Cloud Service.
+- De plaats van de steekproef [&#x200B; AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) wordt opgesteld aan het milieu van AEM as a Cloud Service van [&#x200B; het type van het productieprogramma &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
 
 Als u geen toegang tot derdediensten hebt, _samenwerken met uw veiligheid of het ontvangen team om de stappen_ te voltooien.
 

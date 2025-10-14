@@ -27,12 +27,12 @@ Maak een kopie van het knooppunt ``/apps/bankingapplication/components/adaptiveF
 > ``bankingapplication`` is de appId die is opgegeven bij het maken van het Maven-project. Deze appID kan in uw omgeving anders zijn. U kunt een exemplaar van om het even welke component maken, toevallig maakte ik enkel een exemplaar van de knoopcomponent
 
 
-![ adres-blok ](assets/address-properties.png)
+![&#x200B; adres-blok &#x200B;](assets/address-properties.png)
 
 ## eigenschappen van cq-sjabloonknooppunten
 
 Selecteer het knooppunt ``cq-template`` onder het knooppunt ``addressblock`` en stel de eigenschappen ervan in zoals hieronder weergegeven. Het veldType is ingesteld op deelvenster
-![ cq-malplaatje ](assets/cq-template.png)
+![&#x200B; cq-malplaatje &#x200B;](assets/cq-template.png)
 
 ## Knooppunten toevoegen onder cq-sjabloon
 
@@ -52,22 +52,22 @@ Deze knopen vertegenwoordigen de gebieden van de component van het adresblok. De
 > De **_bankingapplication_** in de weg verwijst naar appId van het gemaakte project. Dit kan in uw omgeving anders zijn
 
 Selecteer het knooppunt ``streetaddress`` en stel de eigenschappen ervan in zoals hieronder weergegeven.
-![ straat-adres ](assets/streetaddress.png)
+![&#x200B; straat-adres &#x200B;](assets/streetaddress.png)
 
 ## Eigenschappen van stadsknooppunt instellen
 
 Selecteer het knooppunt ``city`` en stel de eigenschappen ervan in zoals hieronder weergegeven.
-![ plaats ](assets/city.png)
+![&#x200B; plaats &#x200B;](assets/city.png)
 
 ## Eigenschappen van ZIP-knooppunt instellen
 
 Selecteer het knooppunt ``zip`` en stel de eigenschappen ervan in zoals hieronder weergegeven.
-![ zip ](assets/zip.png)
+![&#x200B; zip &#x200B;](assets/zip.png)
 
 ## Eigenschappen van statusknooppunt instellen
 
 Selecteer het knooppunt ``state`` en stel de eigenschappen ervan in zoals hieronder weergegeven. Let op het fieldType van de status - deze is ingesteld op een vervolgkeuzelijst
-![ staat ](assets/state.png)
+![&#x200B; staat &#x200B;](assets/state.png)
 
 ## Opties instellen voor het statusveld
 
@@ -81,7 +81,7 @@ Selecteer het knooppunt ``state`` en voeg de volgende eigenschappen toe.
 
 De uiteindelijke adresblokcomponent ziet er als volgt uit
 
-![ definitief-adres ](assets/crx-address-block.png)
+![&#x200B; definitief-adres &#x200B;](assets/crx-address-block.png)
 
 ## Volgende stappen
 

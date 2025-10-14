@@ -30,6 +30,6 @@ ChangeBeneficiary.pdf,c:\confirmation
 Het eerste argument is de naam van het document dat u wilt opslaan in het bestandssysteem. Het tweede argument is de maplocatie waar u het document wilt opslaan. In het bovenstaande geval moet u het document bijvoorbeeld naar `c:\confirmation\ChangeBeneficiary.pdf` schrijven
 
 Het volgende het schermschot toont u de argumenten die u tot de stap van het douaneproces moet overgaan
-![ schrijven-lading-dossier-systeem ](assets/write-payload-file-system.png)
+![&#x200B; schrijven-lading-dossier-systeem &#x200B;](assets/write-payload-file-system.png)
 
 [U kunt hier aangepaste bundel downloaden](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)

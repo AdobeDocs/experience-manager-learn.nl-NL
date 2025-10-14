@@ -47,7 +47,7 @@ $ cd remote-spa-tutorial
 
 Maak een AEM-project waarin configuraties en basislijninhoud worden beheerd. Dit project wordt gegenereerd in de map `remote-spa-tutorial` van het gekloonde `aem-guides-wknd-graphql` project.
 
-_gebruik altijd de recentste versie van [ AEM Archetype ](https://github.com/adobe/aem-project-archetype)._
+_gebruik altijd de recentste versie van [&#x200B; AEM Archetype &#x200B;](https://github.com/adobe/aem-project-archetype)._
 
 ```
 $ cd ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial
@@ -106,7 +106,7 @@ Aangezien het KUUROORD een Verre KUUROORD is, veronderstel het buiten het projec
 
    Het bestand `pom.xml` moet er als volgt uitzien:
 
-   ![ verwijdert ui.frontend module uit reactorpom ](./assets/aem-project/uifrontend-reactor-pom.png)
+   ![&#x200B; verwijdert ui.frontend module uit reactorpom &#x200B;](./assets/aem-project/uifrontend-reactor-pom.png)
 
 1. De `ui.apps/pom.xml` openen
 1. Maak een opmerking over de `<dependency>` on `<artifactId>wknd-app.ui.frontend</artifactId>`
@@ -127,7 +127,7 @@ Aangezien het KUUROORD een Verre KUUROORD is, veronderstel het buiten het projec
 
    Het bestand `ui.apps/pom.xml` moet er als volgt uitzien:
 
-   ![ verwijdert ui.frontend gebiedsdeel uit ui.apps ](./assets/aem-project/uifrontend-uiapps-pom.png)
+   ![&#x200B; verwijdert ui.frontend gebiedsdeel uit ui.apps &#x200B;](./assets/aem-project/uifrontend-uiapps-pom.png)
 
 Als het AEM-project vóór deze wijzigingen is gemaakt, verwijdert u handmatig de `ui.frontend` gegenereerde clientbibliotheek uit het `ui.apps` project at `ui.apps/src/main/content/jcr_root/apps/wknd-app/clientlibs/clientlib-react` .
 
@@ -137,7 +137,7 @@ Voor AEM om het Verre KUUROORD in de Redacteur van het KUUROORD te laden, moeten
 
 Het belang van deze configuratie wordt later onderzocht.
 
-De afbeelding kan worden gedaan met [ het Schuiven Toewijzing ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#root-level-mappings-1) die in `/etc/map` wordt bepaald.
+De afbeelding kan worden gedaan met [&#x200B; het Schuiven Toewijzing &#x200B;](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#root-level-mappings-1) die in `/etc/map` wordt bepaald.
 
 1. Open het subproject `ui.content` in de IDE
 1. Navigeren naar `src/main/content/jcr_root`
@@ -202,19 +202,19 @@ De afbeelding kan worden gedaan met [ het Schuiven Toewijzing ](https://sling.ap
 
 De mapstructuur en `.context.xml` -bestanden moeten er als volgt uitzien:
 
-![ het Schuiven Toewijzing ](./assets/aem-project/sling-mapping.png)
+![&#x200B; het Schuiven Toewijzing &#x200B;](./assets/aem-project/sling-mapping.png)
 
 Het bestand `filter.xml` moet er als volgt uitzien:
 
-![ het Schuiven Toewijzing ](./assets/aem-project/sling-mapping-filter.png)
+![&#x200B; het Schuiven Toewijzing &#x200B;](./assets/aem-project/sling-mapping-filter.png)
 
 Nu, wanneer het project van AEM wordt opgesteld, zijn deze configuraties automatisch inbegrepen.
 
-De effecten voor het toewijzen van objecten aan AEM die op `http` en `localhost` worden uitgevoerd, ondersteunen dus alleen lokale ontwikkeling. Bij implementatie naar AEM as a Cloud Service moeten vergelijkbare Sling Mappings-objecten worden toegevoegd aan dat doel `https` en het juiste AEM as a Cloud Service-domein of de juiste-domeinen. Voor meer informatie, zie de [ Verschuivende documentatie van de Afbeelding ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html).
+De effecten voor het toewijzen van objecten aan AEM die op `http` en `localhost` worden uitgevoerd, ondersteunen dus alleen lokale ontwikkeling. Bij implementatie naar AEM as a Cloud Service moeten vergelijkbare Sling Mappings-objecten worden toegevoegd aan dat doel `https` en het juiste AEM as a Cloud Service-domein of de juiste-domeinen. Voor meer informatie, zie de [&#x200B; Verschuivende documentatie van de Afbeelding &#x200B;](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html).
 
 ## Beveiligingsbeleid voor het delen van bronnen tussen verschillende bronnen
 
-Configureer vervolgens AEM om de inhoud te beschermen, zodat alleen deze SPA toegang heeft tot de AEM-inhoud. Vorm [ het Delen van het Middel van de Cross-Origin in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=nl-NL).
+Configureer vervolgens AEM om de inhoud te beschermen, zodat alleen deze SPA toegang heeft tot de AEM-inhoud. Vorm [&#x200B; het Delen van het Middel van de Cross-Origin in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=nl-NL).
 
 1. Open het subproject `ui.config` Maven in uw IDE
 1. Navigeren `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`
@@ -257,7 +257,7 @@ Configureer vervolgens AEM om de inhoud te beschermen, zodat alleen deze SPA toe
 
 Het bestand `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-app_remote-spa.cfg.json` moet er als volgt uitzien:
 
-![ de Configuratie van CORS van de Redacteur van het KUUROORD ](./assets/aem-project/cors-configuration.png)
+![&#x200B; de Configuratie van CORS van de Redacteur van het KUUROORD &#x200B;](./assets/aem-project/cors-configuration.png)
 
 De belangrijkste configuratieelementen zijn:
 
@@ -309,7 +309,7 @@ De belangrijkste wijzigingen zijn updates van het knooppunt `jcr:content` :
 
 Het bestand `src/main/content/jcr_root/content/wknd-app/us/en/home/.content.xml` moet er als volgt uitzien:
 
-![ pagina van het Huis .content.xml- updates ](./assets/aem-project/home-content-xml.png)
+![&#x200B; pagina van het Huis .content.xml- updates &#x200B;](./assets/aem-project/home-content-xml.png)
 
 Deze veranderingen staan deze pagina toe, die de wortel van het KUUROORD in AEM handelt, om het Verre KUUROORD in de Redacteur van het KUUROORD te laden.
 
@@ -329,7 +329,7 @@ Deze pagina kon ook als Verre pagina van het KUUROORD in AEM zelf worden verwijd
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   ![ mvn schone installatie -PautoInstallSinglePackage ](./assets/aem-project/mvn-install.png)
+   ![&#x200B; mvn schone installatie -PautoInstallSinglePackage &#x200B;](./assets/aem-project/mvn-install.png)
 
 ## De AEM-basispagina configureren
 
@@ -339,14 +339,14 @@ Met het AEM opgestelde Project, is er één laatste stap om de Redacteur van het
 1. Navigeer aan **Plaatsen > App WKND > gebruiken > en**
 1. Selecteer de **WebND Pagina van het Huis van de App**, en tik **Eigenschappen**
 
-   ![ WKND App Home Page - Eigenschappen ](./assets/aem-content/edit-home-properties.png)
+   ![&#x200B; WKND App Home Page - Eigenschappen &#x200B;](./assets/aem-content/edit-home-properties.png)
 
 1. Navigeer aan het **SPA** lusje
 1. Vul de **Verre Configuratie van het KUUROORD** uit
    1. **URL van de Gastheer van het KUUROORD**: `http://localhost:3000`
       1. URL aan de wortel van het Verre KUUROORD
 
-   ![ WKND de Homepage van de App - Verre Configuratie van het KUUROORD ](./assets/aem-content/remote-spa-configuration.png)
+   ![&#x200B; WKND de Homepage van de App - Verre Configuratie van het KUUROORD &#x200B;](./assets/aem-content/remote-spa-configuration.png)
 
 1. Tik **sparen &amp; Sluiten**
 
@@ -366,4 +366,4 @@ U hebt nu AEM-configuraties voorbereid en deze geïmplementeerd op uw lokale AEM
 
 ## Volgende stappen
 
-Met gevormde AEM, kunnen wij op [ bootstrapping het Verre KUUROORD ](./spa-bootstrap.md) met steun voor editable gebieden gebruikend de Redacteur van het KUUROORD van AEM concentreren!
+Met gevormde AEM, kunnen wij op [&#x200B; bootstrapping het Verre KUUROORD &#x200B;](./spa-bootstrap.md) met steun voor editable gebieden gebruikend de Redacteur van het KUUROORD van AEM concentreren!

@@ -24,7 +24,7 @@ De volgende stappen worden vereist om de klasse te schrijven java en de klasse a
 
 ## Maven Project maken
 
-De eerste stap bestaat uit het maken van een gemaven project met behulp van het juiste Adobe Maven Archetype. De gedetailleerde stappen worden vermeld in dit [ artikel ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=nl-NL). Zodra u uw beproefd die project hebt in eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
+De eerste stap bestaat uit het maken van een gemaven project met behulp van het juiste Adobe Maven Archetype. De gedetailleerde stappen worden vermeld in dit [&#x200B; artikel &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=nl-NL). Zodra u uw beproefd die project hebt in eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
 
 
 ### Klasse maken die WorkflowProcess implementeert
@@ -124,7 +124,7 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
 
 Deze twee waarden worden als procesargumenten doorgegeven via het dialoogvenster van de workflowcomponent
 
-![ ProcessStep ](assets/custom-workflow-component.png)
+![&#x200B; ProcessStep &#x200B;](assets/custom-workflow-component.png)
 
 De dienst QueryBuilder wordt gebruikt aan vraagknopen van type nt:dossier onder de omslag attachmentsPath. De rest van de code doorloopt de zoekresultaten om een object Document te maken en op te slaan in het bestandssysteem
 
@@ -143,10 +143,10 @@ De dienst QueryBuilder wordt gebruikt aan vraagknopen van type nt:dossier onder 
 
 #### Samenstellen en implementeren
 
-[ bouwt de bundel zoals hier beschreven ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=nl-NL)
-[ zorg ervoor de bundel wordt opgesteld en in actieve staat ](http://localhost:4502/system/console/bundles)
+[&#x200B; bouwt de bundel zoals hier beschreven &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=nl-NL)
+[&#x200B; zorg ervoor de bundel wordt opgesteld en in actieve staat &#x200B;](http://localhost:4502/system/console/bundles)
 
 ## Volgende stappen
 
-Creeer uw [ component van het douanewerkschema ](./custom-workflow-component.md)
+Creeer uw [&#x200B; component van het douanewerkschema &#x200B;](./custom-workflow-component.md)
 

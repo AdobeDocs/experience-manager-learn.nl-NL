@@ -57,7 +57,7 @@ Lijnen 39-40 - Slaat het geproduceerde document aan het dossiersysteem op.
 
 Het REST-eindpunt van het Form Data Model verwacht een id als invoerparameter. deze id wordt in kaart gebracht aan een Attribuut van het Verzoek genoemd accountnummer zoals aangetoond in het hieronder schroevingsschot.
 
-![ requestAttribute ](assets/requestattributeprintchannel.gif)
+![&#x200B; requestAttribute &#x200B;](assets/requestattributeprintchannel.gif)
 
 ```java
 var interactiveCommunicationsDocument = "/content/forms/af/retirementstatementprint/channels/print/";
@@ -109,9 +109,9 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 
 **om dit op uw lokaal systeem te testen gelieve de volgende instructies te volgen:**
 
-* Opstelling Tomcat zoals die in dit [ artikel wordt beschreven.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat heeft het oorlogsdossier dat de steekproefgegevens produceert.
-* De dienst van de opstelling alias systeemgebruiker zoals die in dit [ wordt beschreven artikel ](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-Zorg ervoor dat deze systeemgebruiker lees toestemmingen op de volgende knoop heeft. Om de toestemmingenlogin aan [ gebruiker te geven admin ](https://localhost:4502/useradmin) en onderzoek naar de systeemgebruiker &quot;gegevens&quot;en de gelezen toestemmingen op de volgende knoop te geven door aan het toestemmingenlusje van labels te voorzien
+* Opstelling Tomcat zoals die in dit [&#x200B; artikel wordt beschreven.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat heeft het oorlogsdossier dat de steekproefgegevens produceert.
+* De dienst van de opstelling alias systeemgebruiker zoals die in dit [&#x200B; wordt beschreven artikel &#x200B;](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
+Zorg ervoor dat deze systeemgebruiker lees toestemmingen op de volgende knoop heeft. Om de toestemmingenlogin aan [&#x200B; gebruiker te geven admin &#x200B;](https://localhost:4502/useradmin) en onderzoek naar de systeemgebruiker &quot;gegevens&quot;en de gelezen toestemmingen op de volgende knoop te geven door aan het toestemmingenlusje van labels te voorzien
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af

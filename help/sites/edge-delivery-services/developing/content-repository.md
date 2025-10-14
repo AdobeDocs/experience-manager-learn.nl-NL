@@ -21,11 +21,11 @@ ht-degree: 0%
 
 # Inhoudsopslagplaats
 
-Om Adobe Experience Manager (AEM) met Edge Delivery Services te integreren, begin door [ SharePoint ](#sharepoint) of [ Aandrijving van Google ](#google-drive) als uw inhoudsbewaarplaats te vestigen. Beide platformen werken goed met AEM, waardoor u content probleemloos kunt beheren en leveren. Kies de voorkeuren die u wilt uitlijnen en volg de stappen om deze weer te geven en uit te voeren met AEM en Edge Delivery Services.
+Om Adobe Experience Manager (AEM) met Edge Delivery Services te integreren, begin door [&#x200B; SharePoint &#x200B;](#sharepoint) of [&#x200B; Aandrijving van Google &#x200B;](#google-drive) als uw inhoudsbewaarplaats te vestigen. Beide platformen werken goed met AEM, waardoor u content probleemloos kunt beheren en leveren. Kies de voorkeuren die u wilt uitlijnen en volg de stappen om deze weer te geven en uit te voeren met AEM en Edge Delivery Services.
 
 ## Opties voor het ontwerpen van documenten
 
-Er zijn twee gesteunde inhoudsbewaarplaatsen voor [ document authoring ](../../document-authoring/set-up.md), [ SharePoint ](#sharepoint) en [ Aandrijving van Google ](#google-drive).
+Er zijn twee gesteunde inhoudsbewaarplaatsen voor [&#x200B; document authoring &#x200B;](../../document-authoring/set-up.md), [&#x200B; SharePoint &#x200B;](#sharepoint) en [&#x200B; Aandrijving van Google &#x200B;](#google-drive).
 
 >[!BEGINTABS]
 

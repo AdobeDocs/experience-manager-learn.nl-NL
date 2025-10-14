@@ -20,9 +20,9 @@ ht-degree: 1%
 
 # Adobe I/O Runtime-actie
 
-![ de uitbreidingsruntime van AEM UI acties ](./assets/runtime-action/action-runtime-flow.png){align="center"}
+![&#x200B; de uitbreidingsruntime van AEM UI acties &#x200B;](./assets/runtime-action/action-runtime-flow.png){align="center"}
 
-De uitbreidingen van AEM UI kunnen naar keuze om het even welk aantal [ acties van Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/) omvatten.
+De uitbreidingen van AEM UI kunnen naar keuze om het even welk aantal [&#x200B; acties van Adobe I/O Runtime &#x200B;](https://developer.adobe.com/runtime/docs/) omvatten.
 
 Adobe I/O Runtime-handelingen zijn serverloze functies die door de extensie kunnen worden aangeroepen. Handelingen zijn handig voor het uitvoeren van werkzaamheden die interactie vereisen met AEM of andere Adobe-webservices. Handelingen zijn doorgaans het meest nuttig voor het uitvoeren van langdurige (iets langer dan een paar seconden) taken of het indienen van HTTP-aanvragen bij AEM of andere webservices.
 
@@ -45,11 +45,11 @@ Terwijl de AEM UI-extensie wordt weergegeven in specifieke UI&#39;s van AEM, kun
 Adobe I/O Runtime-handelingen worden voornamelijk aangeroepen vanuit twee plaatsen in een AEM UI-extensie:
 
 1. De [&#128279;](./extension-registration.md) `onClick(..)` manager van de de uitbreidingsregistratie  uitbreiding
-1. Binnen a [ modal ](./modal.md)
+1. Binnen a [&#x200B; modal &#x200B;](./modal.md)
 
 ### Vanaf uitbreidingsregistratie
 
-Adobe I/O Runtime-handelingen kunnen rechtstreeks vanuit de registratiecode voor extensies worden aangeroepen. Het gemeenschappelijkste gebruiksgeval moet een actie aan de knoop van het a [ kopbalmenu ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/header-menu/) binden die niet [ modals ](./modal.md) gebruikt.
+Adobe I/O Runtime-handelingen kunnen rechtstreeks vanuit de registratiecode voor extensies worden aangeroepen. Het gemeenschappelijkste gebruiksgeval moet een actie aan de knoop van het a [&#x200B; kopbalmenu &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/header-menu/) binden die niet [&#x200B; modals &#x200B;](./modal.md) gebruikt.
 
 + `./src/aem-ui-extension/web-src/src/components/ExtensionRegistration.js`
 
@@ -306,26 +306,26 @@ async function main (params) {
 
 De volgende AEM HTTP-API&#39;s worden vaak gebruikt voor interactie met AEM vanuit extensies:
 
-+ [ AEM GraphQL APIs ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
-+ [ HTTP API van AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=nl-NL)
++ [&#x200B; AEM GraphQL APIs &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
++ [&#x200B; HTTP API van AEM Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=nl-NL)
    + [Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=nl-NL)
-+ [ AEM QueryBuilder API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=nl-NL)
-+ [ Volledige verwijzing van AEM as a Cloud Service API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/reference-materials.html?lang=nl-NL)
++ [&#x200B; AEM QueryBuilder API &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=nl-NL)
++ [&#x200B; Volledige verwijzing van AEM as a Cloud Service API &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/reference-materials.html?lang=nl-NL)
 
 
 ## Adobe npm-modules
 
 Hieronder vindt u nuttige npm-modules voor het ontwikkelen van Adobe I/O Runtime-acties:
 
-+ [@adobe/aio-sdk ](https://www.npmjs.com/package/@adobe/aio-sdk)
-   + [ Kern SDK ](https://github.com/adobe/aio-sdk-core)
-   + [ Bibliotheek van de Staat ](https://github.com/adobe/aio-lib-state)
-   + [ Bibliotheek van Dossiers ](https://github.com/adobe/aio-lib-files)
-   + [ de Bibliotheek van Adobe Target ](https://github.com/adobe/aio-lib-target)
-   + [ de Bibliotheek van Adobe Analytics ](https://github.com/adobe/aio-lib-analytics)
-   + [ de Bibliotheek van Adobe Campaign Standard ](https://github.com/adobe/aio-lib-campaign-standard)
-   + [ de Bibliotheek van het Profiel van de Klant van Adobe ](https://github.com/adobe/aio-lib-customer-profile)
-   + [ de Bibliotheek van de Gegevens van de Klant van Adobe Audience Manager ](https://github.com/adobe/aio-lib-audience-manager-cd)
-   + [ Adobe I/O Events ](https://github.com/adobe/aio-lib-events)
-+ [@adobe/aio-lib-core-networking ](https://github.com/adobe/aio-lib-core-networking)
-+ [@adobe/node-httptransfer ](https://github.com/adobe/node-httptransfer)
++ [@adobe/aio-sdk &#x200B;](https://www.npmjs.com/package/@adobe/aio-sdk)
+   + [&#x200B; Kern SDK &#x200B;](https://github.com/adobe/aio-sdk-core)
+   + [&#x200B; Bibliotheek van de Staat &#x200B;](https://github.com/adobe/aio-lib-state)
+   + [&#x200B; Bibliotheek van Dossiers &#x200B;](https://github.com/adobe/aio-lib-files)
+   + [&#x200B; de Bibliotheek van Adobe Target &#x200B;](https://github.com/adobe/aio-lib-target)
+   + [&#x200B; de Bibliotheek van Adobe Analytics &#x200B;](https://github.com/adobe/aio-lib-analytics)
+   + [&#x200B; de Bibliotheek van Adobe Campaign Standard &#x200B;](https://github.com/adobe/aio-lib-campaign-standard)
+   + [&#x200B; de Bibliotheek van het Profiel van de Klant van Adobe &#x200B;](https://github.com/adobe/aio-lib-customer-profile)
+   + [&#x200B; de Bibliotheek van de Gegevens van de Klant van Adobe Audience Manager &#x200B;](https://github.com/adobe/aio-lib-audience-manager-cd)
+   + [&#x200B; Adobe I/O Events &#x200B;](https://github.com/adobe/aio-lib-events)
++ [@adobe/aio-lib-core-networking &#x200B;](https://github.com/adobe/aio-lib-core-networking)
++ [@adobe/node-httptransfer &#x200B;](https://github.com/adobe/node-httptransfer)

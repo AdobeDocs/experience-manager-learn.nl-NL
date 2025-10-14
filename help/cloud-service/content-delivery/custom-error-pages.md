@@ -61,7 +61,7 @@ De standaardfoutenpagina _wordt gediend_ van het _de diensttype van AEM_ (auteur
 
 Bijvoorbeeld, zijn de standaardfoutenpagina&#39;s die van het de diensttype van AEM en Adobe-Beheerde CDN worden gediend als volgt:
 
-![ Standaard de Pagina&#39;s van de Fout van AEM ](./assets/aem-default-error-pages.png)
+![&#x200B; Standaard de Pagina&#39;s van de Fout van AEM &#x200B;](./assets/aem-default-error-pages.png)
 
 Nochtans, kunt u zowel de diensttype van AEM als Adobe-Beheerde _CDN foutenpagina&#39;s aanpassen om uw merk aan te passen en een betere gebruikerservaring te verstrekken._
 
@@ -71,8 +71,8 @@ De volgende opties zijn beschikbaar om foutpagina&#39;s aan te passen:
 
 | Van toepassing op | Naam van optie | Beschrijving |
 |---------------------|:-----------------------:|:-----------------------:|
-| AEM-servicetypen - publiceren en voorvertonen | ErrorDocument, instructie | Gebruik de [ ErrorDocument ](https://httpd.apache.org/docs/2.4/custom-error.html) richtlijn in het Apache configuratiedossier om de weg aan de pagina van de douanefout te specificeren. Alleen van toepassing op de AEM-servicetypen - publiceren en voorvertonen. |
-| AEM-servicetypen - ontwerpen, publiceren, voorvertonen | ACS AEM Commons Error Page Handler | Gebruik [ ACS de Handler van de Pagina van de Fout van AEM Commons ](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html) om fout over alle de diensttypes van AEM aan te passen. |
+| AEM-servicetypen - publiceren en voorvertonen | ErrorDocument, instructie | Gebruik de [&#x200B; ErrorDocument &#x200B;](https://httpd.apache.org/docs/2.4/custom-error.html) richtlijn in het Apache configuratiedossier om de weg aan de pagina van de douanefout te specificeren. Alleen van toepassing op de AEM-servicetypen - publiceren en voorvertonen. |
+| AEM-servicetypen - ontwerpen, publiceren, voorvertonen | ACS AEM Commons Error Page Handler | Gebruik [&#x200B; ACS de Handler van de Pagina van de Fout van AEM Commons &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html) om fout over alle de diensttypes van AEM aan te passen. |
 | CDN met Adobe-beheer | CDN-foutpagina&#39;s | Gebruik de CDN-foutpagina&#39;s om de foutpagina&#39;s aan te passen wanneer de door Adobe beheerde CDN het AEM-servicetype (oorspronkelijke server) niet kan bereiken. |
 
 
@@ -80,9 +80,9 @@ De volgende opties zijn beschikbaar om foutpagina&#39;s aan te passen:
 
 In dit leerprogramma, leert u hoe te om foutenpagina&#39;s aan te passen gebruikend de _ErrorDocument_ richtlijn, de _ACS de Handler van de Pagina van de Fout van AEM_ en de _CDN pagina&#39;s van de Fout_ opties. Voor het volgen van deze zelfstudie hebt u het volgende nodig:
 
-- De [ lokale ontwikkelomgeving van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) of het milieu van AEM as a Cloud Service. De _CDN optie van de Pagina&#39;s van de Fout_ is toepasselijk op het milieu van AEM as a Cloud Service.
+- De [&#x200B; lokale ontwikkelomgeving van AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) of het milieu van AEM as a Cloud Service. De _CDN optie van de Pagina&#39;s van de Fout_ is toepasselijk op het milieu van AEM as a Cloud Service.
 
-- Het [ project van AEM WKND ](https://github.com/adobe/aem-guides-wknd) om foutenpagina&#39;s aan te passen.
+- Het [&#x200B; project van AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) om foutenpagina&#39;s aan te passen.
 
 ## Instellen
 
@@ -95,7 +95,7 @@ In dit leerprogramma, leert u hoe te om foutenpagina&#39;s aan te passen gebruik
   $ mvn clean install -PautoInstallSinglePackage -PautoInstallSinglePackagePublish
   ```
 
-- Voor het milieu van AEM as a Cloud Service, stel het project van AEM WKND door de [ volledig-stapelpijpleiding ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) in werking te stellen, zie de [ niet-productiepijpleiding ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-non-production-pipeline) voorbeeld.
+- Voor het milieu van AEM as a Cloud Service, stel het project van AEM WKND door de [&#x200B; volledig-stapelpijpleiding &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) in werking te stellen, zie de [&#x200B; niet-productiepijpleiding &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-non-production-pipeline) voorbeeld.
 
 - Controleer of de WKND-sitepagina&#39;s correct worden weergegeven.
 
@@ -105,12 +105,12 @@ Met de Apache-instructie `ErrorDocument` kunt u pagina&#39;s met door AEM bedien
 
 In AEM as a Cloud Service is de Apache-instructie-optie `ErrorDocument` alleen van toepassing op de servicetypen Publiceren en Voorvertonen. Het is niet van toepassing op het type van de auteursdienst aangezien Apache + Dispatcher geen deel van de plaatsingsarchitectuur uitmaakt.
 
-Laat herzien hoe het [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) project de `ErrorDocument` richtlijn Apache gebruikt om de pagina&#39;s van de douanefout te tonen.
+Laat herzien hoe het [&#x200B; AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) project de `ErrorDocument` richtlijn Apache gebruikt om de pagina&#39;s van de douanefout te tonen.
 
-- De `ui.content.sample` module bevat de brandde [ foutenpagina&#39;s ](https://github.com/adobe/aem-guides-wknd/tree/main/ui.content.sample/src/main/content/jcr_root/content/wknd/language-masters/en/errors) @ `/content/wknd/language-masters/en/errors`. Herzie hen in uw [ lokale milieu van AEM ](http://localhost:4502/sites.html/content/wknd/language-masters/en/errors) of van AEM as a Cloud Service `https://author-p<ID>-e<ID>.adobeaemcloud.com/ui#/aem/sites.html/content/wknd/language-masters/en/errors`.
+- De `ui.content.sample` module bevat de brandde [&#x200B; foutenpagina&#39;s &#x200B;](https://github.com/adobe/aem-guides-wknd/tree/main/ui.content.sample/src/main/content/jcr_root/content/wknd/language-masters/en/errors) @ `/content/wknd/language-masters/en/errors`. Herzie hen in uw [&#x200B; lokale milieu van AEM &#x200B;](http://localhost:4502/sites.html/content/wknd/language-masters/en/errors) of van AEM as a Cloud Service `https://author-p<ID>-e<ID>.adobeaemcloud.com/ui#/aem/sites.html/content/wknd/language-masters/en/errors`.
 
 - Het bestand `wknd.vhost` van de module `dispatcher` bevat:
-   - De [ richtlijn ErrorDocument ](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L139-L143) die aan de bovengenoemde [ foutenpagina&#39;s ](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/variables/custom.vars#L7-L8) richt.
+   - De [&#x200B; richtlijn ErrorDocument &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L139-L143) die aan de bovengenoemde [&#x200B; foutenpagina&#39;s &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/variables/custom.vars#L7-L8) richt.
    - De [&#128279;](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L133) waarde 0&rbrace; DispatcherPassError wordt geplaatst aan 1 zodat Dispatcher laat Apache alle fouten behandelen.
 
   ```
@@ -146,13 +146,13 @@ Laat herzien hoe het [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) proj
   ...
   ```
 
-- Herzie de pagina&#39;s van de douanefout van de plaats WKND door een onjuiste paginanaam of een weg in uw milieu in te gaan, bijvoorbeeld [ https://publish-p105881-e991000.adobeaemcloud.com/us/en/foo/bar.html ](https://publish-p105881-e991000.adobeaemcloud.com/us/en/foo/bar.html).
+- Herzie de pagina&#39;s van de douanefout van de plaats WKND door een onjuiste paginanaam of een weg in uw milieu in te gaan, bijvoorbeeld [&#x200B; https://publish-p105881-e991000.adobeaemcloud.com/us/en/foo/bar.html &#x200B;](https://publish-p105881-e991000.adobeaemcloud.com/us/en/foo/bar.html).
 
 ## ACS AEM Commons-Error Page Handler om door AEM bediende foutpagina&#39;s aan te passen{#acs-aem-commons}
 
-Om AEM aan te passen diende foutenpagina&#39;s over _alle de diensttypes van AEM_, kunt u de [ ACS de Handler van de Pagina van de Fout van de Commons AEM ](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html) optie gebruiken.
+Om AEM aan te passen diende foutenpagina&#39;s over _alle de diensttypes van AEM_, kunt u de [&#x200B; ACS de Handler van de Pagina van de Fout van de Commons AEM &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html) optie gebruiken.
 
-. Voor gedetailleerde geleidelijke instructies, zie [ hoe te ](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html#how-to-use) sectie gebruiken.
+. Voor gedetailleerde geleidelijke instructies, zie [&#x200B; hoe te &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html#how-to-use) sectie gebruiken.
 
 ## CDN-foutpagina&#39;s om door CDN bediende foutpagina&#39;s aan te passen{#cdn-error-pages}
 
@@ -208,7 +208,7 @@ Het HTML-fragment bevat de volgende plaatsaanduidingen:
 
 Laten we de inhoud van de WKND-foutpagina ontwikkelen als een Single Page Application (SPA).
 
-Voor demodoeleinden, laten wij gebruiken [ Reageren ](https://react.dev/), echter, kunt u om het even welk kader of bibliotheek van JavaScript gebruiken.
+Voor demodoeleinden, laten wij gebruiken [&#x200B; Reageren &#x200B;](https://react.dev/), echter, kunt u om het even welk kader of bibliotheek van JavaScript gebruiken.
 
 - Creeer een nieuw React project door het volgende bevel in werking te stellen:
 
@@ -292,9 +292,9 @@ Voor demodoeleinden, laten wij gebruiken [ Reageren ](https://react.dev/), echte
      }
      ```
 
-   - Voeg het bestand `wknd-logo.png` toe aan de map `src` . Kopieer het [ dossier ](https://github.com/adobe/aem-guides-wknd/blob/main/ui.frontend/src/main/webpack/resources/images/favicons/favicon-512.png) als `wknd-logo.png`.
+   - Voeg het bestand `wknd-logo.png` toe aan de map `src` . Kopieer het [&#x200B; dossier &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/ui.frontend/src/main/webpack/resources/images/favicons/favicon-512.png) als `wknd-logo.png`.
 
-   - Voeg het bestand `favicon.ico` toe aan de map `public` . Kopieer het [ dossier ](https://github.com/adobe/aem-guides-wknd/blob/main/ui.frontend/src/main/webpack/resources/images/favicons/favicon-32.png) als `favicon.ico`.
+   - Voeg het bestand `favicon.ico` toe aan de map `public` . Kopieer het [&#x200B; dossier &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/ui.frontend/src/main/webpack/resources/images/favicons/favicon-32.png) als `favicon.ico`.
 
    - Verifieer de van het brandmerk CDN van WKND de inhoud van de foutenpagina door het project in werking te stellen:
 
@@ -319,9 +319,9 @@ Vervolgens host u de bovenstaande statische bestanden op een openbaar toegankeli
 
 ### Statische bestanden van host vereist voor CDN-foutpagina
 
-Laten we de statische bestanden hosten in Azure Blob Storage. Nochtans, kunt u om het even welk statisch dossier gebruiken die de dienst als [ ontvangen ](https://www.netlify.com/), [ Vercel ](https://vercel.com/), of [ AWS S3 ](https://aws.amazon.com/s3/).
+Laten we de statische bestanden hosten in Azure Blob Storage. Nochtans, kunt u om het even welk statisch dossier gebruiken die de dienst als [&#x200B; ontvangen &#x200B;](https://www.netlify.com/), [&#x200B; Vercel &#x200B;](https://vercel.com/), of [&#x200B; AWS S3 &#x200B;](https://aws.amazon.com/s3/).
 
-- Volg de officiële [ Azure Blokopslag ](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) documentatie om een container te creëren en de statische dossiers te uploaden.
+- Volg de officiële [&#x200B; Azure Blokopslag &#x200B;](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) documentatie om een container te creëren en de statische dossiers te uploaden.
 
   >[!IMPORTANT]
   >
@@ -332,13 +332,13 @@ Laten we de statische bestanden hosten in Azure Blob Storage. Nochtans, kunt u o
    - **de Naam van de Rekening van de Opslag**: `aemcdnerrorpageresources`
    - **Naam van de Container**: `static-files`
 
-  ![ Azure Blob Storage ](./assets/azure-blob-storage-settings.png)
+  ![&#x200B; Azure Blob Storage &#x200B;](./assets/azure-blob-storage-settings.png)
 
 - In de container boven `static-files` worden de onderstaande bestanden uit de map `build` geüpload:
 
-   - `error.js`: Het `build/static/js/main.<hash>.js` dossier wordt anders genoemd aan `error.js` en [ openbaar toegankelijk ](https://aemcdnerrorpageresources.blob.core.windows.net/static-files/error.js).
-   - `error.css`: Het `build/static/css/main.<hash>.css` dossier wordt anders genoemd aan `error.css` en [ openbaar toegankelijk ](https://aemcdnerrorpageresources.blob.core.windows.net/static-files/error.css).
-   - `favicon.ico`: Het `build/favicon.ico` dossier wordt geupload zoals is en [ openbaar toegankelijk ](https://aemcdnerrorpageresources.blob.core.windows.net/static-files/favicon.ico).
+   - `error.js`: Het `build/static/js/main.<hash>.js` dossier wordt anders genoemd aan `error.js` en [&#x200B; openbaar toegankelijk &#x200B;](https://aemcdnerrorpageresources.blob.core.windows.net/static-files/error.js).
+   - `error.css`: Het `build/static/css/main.<hash>.css` dossier wordt anders genoemd aan `error.css` en [&#x200B; openbaar toegankelijk &#x200B;](https://aemcdnerrorpageresources.blob.core.windows.net/static-files/error.css).
+   - `favicon.ico`: Het `build/favicon.ico` dossier wordt geupload zoals is en [&#x200B; openbaar toegankelijk &#x200B;](https://aemcdnerrorpageresources.blob.core.windows.net/static-files/favicon.ico).
 
 Vervolgens configureert u de CDN-regel (errorPages) en verwijst u naar de bovenstaande statische bestanden.
 
@@ -375,25 +375,25 @@ Tot slot stel de gevormde CDN regel aan het milieu van AEM as a Cloud Service op
 
 1. In Cloud Manager, navigeer aan de **sectie van de Pijpleidingen**.
 
-1. Creeer een nieuwe pijpleiding of selecteer de bestaande pijpleiding die slechts de **Config** dossiers opstelt. Voor gedetailleerde stappen, zie [ een config pijpleiding ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager) creëren.
+1. Creeer een nieuwe pijpleiding of selecteer de bestaande pijpleiding die slechts de **Config** dossiers opstelt. Voor gedetailleerde stappen, zie [&#x200B; een config pijpleiding &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager) creëren.
 
 1. Klik de **looppas** knoop om de CDN regel op te stellen.
 
-![ stel CDN Regel ](./assets/deploy-cdn-rule-for-cdn-error-pages.png) op
+![&#x200B; stel CDN Regel &#x200B;](./assets/deploy-cdn-rule-for-cdn-error-pages.png) op
 
 ### CDN-foutpagina&#39;s testen
 
 Voer de volgende stappen uit om de CDN-foutpagina&#39;s te testen:
 
-- In browser, navigeer aan AEM as a Cloud Service publiceer URL, voeg `cdnstatus?code=404` aan URL, bijvoorbeeld, [ https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404 ](https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404) of toegang toe gebruikend [ douanedomein URL ](https://wknd.enablementadobe.com/cdnstatus?code=404)
+- In browser, navigeer aan AEM as a Cloud Service publiceer URL, voeg `cdnstatus?code=404` aan URL, bijvoorbeeld, [&#x200B; https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404 &#x200B;](https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404) of toegang toe gebruikend [&#x200B; douanedomein URL &#x200B;](https://wknd.enablementadobe.com/cdnstatus?code=404)
 
-  ![ WKND - CDN de Pagina van de Fout ](./assets/wknd-cdn-error-page.png)
+  ![&#x200B; WKND - CDN de Pagina van de Fout &#x200B;](./assets/wknd-cdn-error-page.png)
 
 - De volgende codes worden ondersteund: 403, 404, 406, 500 en 503.
 
 - Controleer het tabblad van het browsernetwerk om te zien hoe de statische bestanden worden geladen van de Azure Blob-opslag. Het HTML-document dat door de door Adobe beheerde CDN wordt geleverd, bevat de minimale inhoud en het JavaScript-bestand maakt dynamisch de inhoud van de pagina met foutmeldingen met branding.
 
-  ![ CDN het Lusje van het Netwerk van de Foutpagina van het Netwerk van de Pagina ](./assets/wknd-cdn-error-page-network-tab.png)
+  ![&#x200B; CDN het Lusje van het Netwerk van de Foutpagina van het Netwerk van de Pagina &#x200B;](./assets/wknd-cdn-error-page-network-tab.png)
 
 ## Samenvatting
 
@@ -401,6 +401,6 @@ In deze zelfstudie hebt u meer geleerd over standaardfoutpagina&#39;s, waar de f
 
 ## Aanvullende bronnen
 
-- [ Vormend CDN de Pagina&#39;s van de Fout ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
+- [&#x200B; Vormend CDN de Pagina&#39;s van de Fout &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
 
-- [ Cloud Manager - Config pijpleidingen ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)
+- [&#x200B; Cloud Manager - Config pijpleidingen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)

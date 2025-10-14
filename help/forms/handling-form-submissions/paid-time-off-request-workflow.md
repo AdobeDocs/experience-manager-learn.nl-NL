@@ -39,20 +39,20 @@ Om het bovengenoemde vereiste te verwezenlijken, gebruiken wij een verborgen geb
 
 **de mening van de Verzender van de Tijd van de Vorm van het Verzoek**
 
-![ initialstep ](assets/initialstep.gif)
+![&#x200B; initialstep &#x200B;](assets/initialstep.gif)
 
 **Approver mening van de vorm**
 
-![ Approverview ](assets/approversview.gif)
+![&#x200B; Approverview &#x200B;](assets/approversview.gif)
 
 In de fiattweergave kan de fiatteur de verzonden gegevens niet bewerken. Er is ook een nieuwe sectie die alleen voor fiatteurs is bedoeld.
 
 Volg onderstaande stappen om deze workflow op uw systeem te testen:
 * [DevelopingWithServiceUserBundle downloaden en implementeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [De SetValue Custom OSGI-bundel downloaden en implementeren](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)
-* [ voer de activa met betrekking tot dit artikel in AEM ](assets/helpxworkflow.zip) in
-* Open de [ Tijd van de Vorm van het Verzoek ](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* [&#x200B; voer de activa met betrekking tot dit artikel in AEM &#x200B;](assets/helpxworkflow.zip) in
+* Open de [&#x200B; Tijd van de Vorm van het Verzoek &#x200B;](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Vul de details in en verzend
-* Open [ inbox ](http://localhost:4502/mnt/overlay/cq/inbox/content/inbox.html). Er moet een nieuwe taak worden toegewezen. Open het formulier. De gegevens van de indiener moeten alleen-lezen zijn en er moet een nieuwe fiatteur-sectie zichtbaar zijn.
-* Onderzoek het [ werkschemamodel ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/helpxworkflow.html)
+* Open [&#x200B; inbox &#x200B;](http://localhost:4502/mnt/overlay/cq/inbox/content/inbox.html). Er moet een nieuwe taak worden toegewezen. Open het formulier. De gegevens van de indiener moeten alleen-lezen zijn en er moet een nieuwe fiatteur-sectie zichtbaar zijn.
+* Onderzoek het [&#x200B; werkschemamodel &#x200B;](http://localhost:4502/editor.html/conf/global/settings/workflow/models/helpxworkflow.html)
 * Verken de processtap. Dit is de stap die de waarde van eerste stap op Nee instelt.

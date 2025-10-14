@@ -32,15 +32,15 @@ In deze zelfstudie leert u:
 
 Wanneer u AEM API gebruikt, moet u het _Profiel van het Product_ aan _Geloofsbrieven_ in het project van Adobe Developer Console (of ADC) toewijzen. Het _Profiel van het Product_ (en de bijbehorende Dienst) verstrekt de _toestemmingen of de vergunning_ aan de geloofsbrieven om tot de middelen van AEM toegang te hebben. In het volgende screenshot, kunt u _Geloofsbrieven_ en _Profiel van het Product_ voor een Auteur API van AEM Assets zien:
 
-![ Geloofsbrieven en het Profiel van het Product ](../assets/how-to/API-Credentials-Product-Profile.png)
+![&#x200B; Geloofsbrieven en het Profiel van het Product &#x200B;](../assets/how-to/API-Credentials-Product-Profile.png)
 
 Een Profiel van het Product wordt geassocieerd met één of meerdere _Diensten_. In AEM as a Cloud Service, vertegenwoordigt de a _Dienst_ gebruikersgroepen met vooraf bepaalde Lijsten van het Toegangsbeheer (ACLs) voor gegevensopslagplaatsen, die korrelig toestemmingsbeheer toestaan.
 
-![ het Profiel van het Product van de Gebruiker van de Technische Rekening ](../assets/s2s/technical-account-user-product-profile.png)
+![&#x200B; het Profiel van het Product van de Gebruiker van de Technische Rekening &#x200B;](../assets/s2s/technical-account-user-product-profile.png)
 
 Na succesvolle API-aanroeping wordt een gebruiker die de referentie van het ADC-project vertegenwoordigt, in de AEM Auteur-service gemaakt, samen met de gebruikersgroepen die overeenkomen met de configuratie Productprofiel en Services.
 
-![ Technisch Lidmaatschap van de Gebruiker van de Rekening ](../assets/s2s/technical-account-user-membership.png)
+![&#x200B; Technisch Lidmaatschap van de Gebruiker van de Rekening &#x200B;](../assets/s2s/technical-account-user-membership.png)
 
 In het bovenstaande scenario wordt de gebruiker `1323d2...` gemaakt in de AEM Author-service en is deze een lid van de gebruikersgroepen `AEM Assets Collaborator Users - Service` en `AEM Assets Collaborator Users - author - Program XXX - Environment XXX` .
 
@@ -50,9 +50,9 @@ Het grootste deel van de _Diensten_ verstrekt _LEZEN_ toestemming aan de middele
 
 Er zijn tijden wanneer de geloofsbrieven (ook bekend als technische rekeningsgebruiker) extra toestemmingen zoals _creeer, Update, schrap_ (CUD) van de middelen van AEM nodig hebben. In dergelijke gevallen, kunt u de toestemmingen van de _gebruikersgroepen van de Diensten_ &lbrace;in de instantie van AEM bijwerken.
 
-Bijvoorbeeld, wanneer de aanroeping van de Auteur van AEM Assets API a [ 403 fout voor niet-GET verzoeken ](../use-cases/invoke-api-using-oauth-s2s.md#403-error-for-non-get-requests) ontvangt, kunt u de toestemmingen van de _Gebruikers van de Medewerker van AEM Assets - de gebruikersgroep van de Dienst_ in de instantie van AEM bijwerken.
+Bijvoorbeeld, wanneer de aanroeping van de Auteur van AEM Assets API a [&#x200B; 403 fout voor niet-GET verzoeken &#x200B;](../use-cases/invoke-api-using-oauth-s2s.md#403-error-for-non-get-requests) ontvangt, kunt u de toestemmingen van de _Gebruikers van de Medewerker van AEM Assets - de gebruikersgroep van de Dienst_ in de instantie van AEM bijwerken.
 
-Gebruikend het interface van de toestemmingengebruiker of [ Sling het manuscript van de Initialisatie van de Bewaarplaats van de Bewaarplaats ](https://sling.apache.org/documentation/bundles/repository-initialization.html), kunt u de toestemmingen van de uit-van-de-doos gebruikersgroepen in de instantie van AEM bijwerken.
+Gebruikend het interface van de toestemmingengebruiker of [&#x200B; Sling het manuscript van de Initialisatie van de Bewaarplaats van de Bewaarplaats &#x200B;](https://sling.apache.org/documentation/bundles/repository-initialization.html), kunt u de toestemmingen van de uit-van-de-doos gebruikersgroepen in de instantie van AEM bijwerken.
 
 ### Machtigingen bijwerken via de gebruikersinterface voor machtigingen
 
@@ -62,11 +62,11 @@ Voer de volgende stappen uit om de machtigingen van de gebruikersgroep services 
 
 - Zoek naar de groep van de dienstengebruiker (bijvoorbeeld `AEM Assets Collaborator Users - Service`).
 
-  ![ de gebruikersgroep van het Onderzoek ](../assets/how-to/search-user-group.png)
+  ![&#x200B; de gebruikersgroep van het Onderzoek &#x200B;](../assets/how-to/search-user-group.png)
 
 - Klik **ACE** toevoegen om een nieuw Ingang van het Toegangsbeheer (ACE) voor de gebruikersgroep toe te voegen.
 
-  ![ voegt ACE ](../assets/how-to/add-ace.png) toe
+  ![&#x200B; voegt ACE &#x200B;](../assets/how-to/add-ace.png) toe
 
 ### Machtigingen bijwerken met behulp van het Initialisatiescript in de repository
 
@@ -90,17 +90,17 @@ Voer de volgende stappen uit om de machtigingen van de gebruikersgroep services 
 
 - Leg de wijzigingen vast en duw deze naar de opslagplaats.
 
-- Stel de veranderingen in de instantie van AEM op gebruikend de [ volledig-stapelpijpleiding van Cloud Manager ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline).
+- Stel de veranderingen in de instantie van AEM op gebruikend de [&#x200B; volledig-stapelpijpleiding van Cloud Manager &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline).
 
 - U kunt de toestemmingen van de gebruikersgroep ook verifiëren gebruikend de **mening van Toestemmingen**. Navigeer aan de **Hulpmiddelen** > **Veiligheid** > **Toestemmingen** in de instantie van AEM.
 
-  ![ mening van Toestemmingen ](../assets/how-to/permissions-view.png)
+  ![&#x200B; mening van Toestemmingen &#x200B;](../assets/how-to/permissions-view.png)
 
 ### Machtigingen verifiëren
 
 Nadat u de machtigingen met een van de bovenstaande methoden hebt bijgewerkt, werkt de PATCH-aanvraag om de metagegevens van de elementen bij te werken nu zonder problemen.
 
-![ PATCH Verzoek ](../assets/how-to/patch-request.png)
+![&#x200B; PATCH Verzoek &#x200B;](../assets/how-to/patch-request.png)
 
 ## Samenvatting
 

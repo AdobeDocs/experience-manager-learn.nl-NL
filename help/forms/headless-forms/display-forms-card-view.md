@@ -21,9 +21,9 @@ ht-degree: 0%
 De indeling van de kaartweergave is een ontwerppatroon dat informatie of gegevens in de vorm van kaarten presenteert. Elke kaart vertegenwoordigt een afzonderlijk stuk van inhoud of gegevensingang en typisch bestaat uit een visueel verschillende container met specifieke elementen die daarin worden geschikt.
 De klikbare kaarten in React zijn interactieve componenten die op kaarten of tegels lijken en door de gebruiker kunnen worden geklikt of worden getikt. Wanneer een gebruiker op een klikbare kaart klikt of tikt, wordt een opgegeven handeling of gedrag geactiveerd, zoals navigeren naar een andere pagina, een modaal openen of de gebruikersinterface bijwerken.
 
-In dit artikel, zullen wij [ lijsten API ](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) gebruiken om de vormen te halen en de vormen in kaartformaat te tonen en de adaptieve vorm op de klikgebeurtenis te openen.
+In dit artikel, zullen wij [&#x200B; lijsten API &#x200B;](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) gebruiken om de vormen te halen en de vormen in kaartformaat te tonen en de adaptieve vorm op de klikgebeurtenis te openen.
 
-![ kaart-mening ](./assets/card-view-forms.png)
+![&#x200B; kaart-mening &#x200B;](./assets/card-view-forms.png)
 
 ## Kaartsjabloon
 

@@ -22,5 +22,5 @@ De volgende stap bestaat uit het samenvoegen van de XML-gegevens met de sjabloon
 
 ## De PDF genereren met OutputService
 
-De [ generatePDF ](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-) methode van OutputService werd gebruikt om PDF te produceren.
+De [&#x200B; generatePDF &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-) methode van OutputService werd gebruikt om PDF te produceren.
 De gegenereerde PDF is vervolgens voor handtekeningen verzonden met de Adobe Sign REST API.

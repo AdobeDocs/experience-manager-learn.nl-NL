@@ -24,7 +24,7 @@ Leer hoe AEM as a Cloud Service (AEMCS) integreert met Adobe Target en Adobe Exp
 
 ## Vereisten
 
-Om diverse verpersoonlijkingsscenario&#39;s aan te tonen, gebruikt dit leerprogramma het steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd/) project. U hebt de volgende stappen nodig:
+Om diverse verpersoonlijkingsscenario&#39;s aan te tonen, gebruikt dit leerprogramma het steekproef [&#x200B; AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd/) project. U hebt de volgende stappen nodig:
 
 - Een Adobe org met toegang tot:
    - **milieu van AEM as a Cloud Service** - om inhoud tot stand te brengen en te beheren
@@ -34,7 +34,7 @@ Om diverse verpersoonlijkingsscenario&#39;s aan te tonen, gebruikt dit leerprogr
 
 - Basiskennis van AEM-componenten en Experience Fragments
 
-- Het [ AEM WKND ](https://github.com/adobe/aem-guides-wknd/) project dat aan uw milieu van AEM as a Cloud Service wordt opgesteld.
+- Het [&#x200B; AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd/) project dat aan uw milieu van AEM as a Cloud Service wordt opgesteld.
 
 ## Aan de slag
 

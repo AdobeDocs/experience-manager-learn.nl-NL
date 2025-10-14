@@ -19,10 +19,10 @@ ht-degree: 0%
 
 De volgende stap bestaat uit het maken van een schema op basis van het Acrobat-formulier dat u in de vorige stap hebt gemaakt. Er is een voorbeeldtoepassing beschikbaar om het schema te maken als onderdeel van deze zelfstudie. Volg de volgende instructies om het schema te maken:
 
-1. Login aan [ CRXDE Lite ](http://localhost:4502/crx/de)
+1. Login aan [&#x200B; CRXDE Lite &#x200B;](http://localhost:4502/crx/de)
 2. Openen naar het bestand `/apps/AemFormsSamples/components/createxsd/POST.jsp`
 3. Wijzig `saveLocation` in een geschikte map op de vaste schijf. Zorg ervoor dat de map waarin u opslaat, al is gemaakt.
-4. Wijs uw browser aan [ XSD ](http://localhost:4502/content/DocumentServices/CreateXsd.html) pagina tot stand brengen die op AEM wordt ontvangen.
+4. Wijs uw browser aan [&#x200B; XSD &#x200B;](http://localhost:4502/content/DocumentServices/CreateXsd.html) pagina tot stand brengen die op AEM wordt ontvangen.
 5. Sleep de Acroform.
 6. Controleer de map die in Stap 3 is opgegeven. Het schemabestand wordt opgeslagen op deze locatie.
 

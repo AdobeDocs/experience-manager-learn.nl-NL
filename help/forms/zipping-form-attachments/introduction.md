@@ -28,13 +28,13 @@ Klanten zouden de formulierbijlagen meestal comprimeren of de bijlagen als afzon
 
 Om het gebruik te verwezenlijken werd een stap van het douanewerkschemaproces geschreven. In deze stap van het douaneproces een gecomprimeerd dossier met de vormgehechtheid in gecreeerd en opgeslagen onder de ladingsomslag in een dossier genoemd *zipped_attachments.zip*
 
-![ verzenden-vorm-gehechtheid ](assets/send-form-attachments.JPG)
+![&#x200B; verzenden-vorm-gehechtheid &#x200B;](assets/send-form-attachments.JPG)
 
 ## De formulierbijlagen afzonderlijk verzenden
 
 Voor dit doel is een stap voor een aangepast workflowproces geschreven. In deze stap van het douaneproces bevolken wij werkschemariabelen van type ArrayList van Documenten en ArrayList van Koorden.
 
-![ send-list-of-documents ](assets/send-list-of-documents.JPG)
+![&#x200B; send-list-of-documents &#x200B;](assets/send-list-of-documents.JPG)
 
 ## Volgende stappen
 

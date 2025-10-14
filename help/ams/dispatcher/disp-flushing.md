@@ -31,7 +31,7 @@ In dit document wordt uitgelegd hoe flushing optreedt en wordt uitgelegd hoe het
 ### Bewerkingsvolgorde
 
 De typische workflow wordt het best beschreven wanneer de auteur van de inhoud een pagina activeert, wanneer de uitgever de nieuwe inhoud ontvangt, wordt een aanvraag voor uitspoelen naar de Dispatcher geactiveerd, zoals in het volgende diagram wordt getoond:
-![ de auteur activeert inhoud, die uitgever teweegbrengt om een verzoek te verzenden om aan Dispatcher ](assets/disp-flushing/dispatcher-flushing-order-of-events.png " te flush-flushing-orde-van-gebeurtenissen ") te spoelen
+![&#x200B; de auteur activeert inhoud, die uitgever teweegbrengt om een verzoek te verzenden om aan Dispatcher &#x200B;](assets/disp-flushing/dispatcher-flushing-order-of-events.png " te flush-flushing-orde-van-gebeurtenissen ") te spoelen
 Deze ketting van gebeurtenissen, benadrukt dat wij slechts punten spoelen wanneer zij nieuw of veranderd zijn.  Dit zorgt ervoor dat de inhoud door de uitgever vóór het ontruimen van het geheime voorgeheugen is ontvangen om rasvoorwaarden te vermijden waar het bloeden kon voorkomen alvorens de veranderingen van uitgever kunnen worden opgepikt.
 
 ## Replication Agents
@@ -43,7 +43,7 @@ Wanneer de uitgever het dossier ontvangt heeft het een replicatieagent die wordt
 ### AUTEURREPLICATIE-AGENT
 
 Hier zijn sommige voorbeeldschermafbeeldingen van een gevormde standaardreplicatieagent
-![ schermafbeelding van standaard replicatieagent van AEM Web-pagina /etc/replication.html](assets/disp-flushing/author-rep-agent-example.png " auteur-rep-agent-voorbeeld ")
+![&#x200B; schermafbeelding van standaard replicatieagent van AEM Web-pagina /etc/replication.html](assets/disp-flushing/author-rep-agent-example.png " auteur-rep-agent-voorbeeld ")
 
 Er zijn typisch 1 of 2 replicatieagenten die op de auteur voor elke uitgever worden gevormd zij inhoud aan repliceren.
 
@@ -54,22 +54,22 @@ Ten tweede is de reverse agent.  Dit is optioneel en is ingesteld om elke uitge
 ### REPLICATIE-AGENT VOOR PUBLICATIE
 
 Hier is een voorbeeld screenshots van een gevormde standaard flush replicatieagent
-![ schermafbeelding van standaard flush replicatieagent van het Web-pagina van AEM /etc/replication.html](assets/disp-flushing/publish-flush-rep-agent-example.png " publish-flush-rep-agent-example ")
+![&#x200B; schermafbeelding van standaard flush replicatieagent van het Web-pagina van AEM /etc/replication.html](assets/disp-flushing/publish-flush-rep-agent-example.png " publish-flush-rep-agent-example ")
 
 ### DISPATCHER FLUSH REPLICATION ONTVANGT VIRTUELE HOST
 
 De module van Dispatcher zoekt naar bepaalde kopballen om te weten wanneer een POST- verzoek iets is om tot AEM over te gaan geeft terug of als het in series wordt vervaardigd als flush verzoek en door de manager van Dispatcher zelf moet worden behandeld.
 
 Hier is een schermafbeelding van de configuratiepagina met deze waarden:
-![ beeld van de belangrijkste montages van het configuratiescherm met het Type van Rangschikking dat wordt getoond om Dispatcher Flush ](assets/disp-flushing/disp-flush-agent1.png " disp-flush-agent1 ") te zijn
+![&#x200B; beeld van de belangrijkste montages van het configuratiescherm met het Type van Rangschikking dat wordt getoond om Dispatcher Flush &#x200B;](assets/disp-flushing/disp-flush-agent1.png " disp-flush-agent1 ") te zijn
 
 De standaardinstellingspagina toont de `Serialization Type` as `Dispatcher Flush` en stelt het foutniveau in
 
-![ Screenshot van vervoerlusje van de replicatieagent.  Dit toont URI aan post flush verzoek aan.  /dispatcher/invalidate.cache](assets/disp-flushing/disp-flush-agent2.png " disp-flush-agent2 ")
+![&#x200B; Screenshot van vervoerlusje van de replicatieagent.  Dit toont URI aan post flush verzoek aan.  /dispatcher/invalidate.cache](assets/disp-flushing/disp-flush-agent2.png " disp-flush-agent2 ")
 
 Op het tabblad `Transport` ziet u dat `URI` is ingesteld om het IP-adres te wijzen van de Dispatcher die de verzoeken om uitspoelen ontvangt.  Het pad `/dispatcher/invalidate.cache` is niet hoe de module bepaalt als het een flush is het slechts een duidelijk eindpunt is u in het toegangslogboek kunt zien om het te weten een flush verzoek is.  Op het tabblad `Extended` bespreken we de dingen die er zijn om te kwalificeren dat dit een aanvraag is om de Dispatcher-module leeg te maken.
 
-![ Schermafbeelding van het Uitgebreide lusje van de replicatieagent.  Noteer de kopballen die met het POST- verzoek worden verzonden om Dispatcher te vertellen om ](assets/disp-flushing/disp-flush-agent3.png " disp-flush-agent3 ") te spoelen
+![&#x200B; Schermafbeelding van het Uitgebreide lusje van de replicatieagent.  Noteer de kopballen die met het POST- verzoek worden verzonden om Dispatcher te vertellen om &#x200B;](assets/disp-flushing/disp-flush-agent3.png " disp-flush-agent3 ") te spoelen
 
 De `HTTP Method` for flush-aanvragen zijn slechts een `GET` -aanvraag met enkele speciale aanvraagheaders:
 - CQ-actie
@@ -81,7 +81,7 @@ De `HTTP Method` for flush-aanvragen zijn slechts een `GET` -aanvraag met enkele
 - Host
    - In dit geval wordt de header van `Host` gespoofd om een specifieke `VirtualHost` als doel in te stellen die is geconfigureerd op de Apache-webserver van de verzender (`/etc/httpd/conf.d/enabled_vhosts/aem_flush.vhost` ).  Het is een vaste gecodeerde waarde die overeenkomt met een item in de `aem_flush.vhost` -bestanden `ServerName` of `ServerAlias`
 
-![ Scherm van een standaardreplicatieagent die toont dat de replicatieagent met reageert en teweegbrengt wanneer de nieuwe punten van een replicatiegebeurtenis van de auteur het publiceren inhoud ](assets/disp-flushing/disp-flush-agent4.png " zijn ontvangen disp-flush-agent4 ")
+![&#x200B; Scherm van een standaardreplicatieagent die toont dat de replicatieagent met reageert en teweegbrengt wanneer de nieuwe punten van een replicatiegebeurtenis van de auteur het publiceren inhoud &#x200B;](assets/disp-flushing/disp-flush-agent4.png " zijn ontvangen disp-flush-agent4 ")
 
 Op het tabblad `Triggers` nemen we nota van de schakelbare triggers die we gebruiken en van wat ze zijn
 
@@ -121,7 +121,7 @@ $ find /mnt/var/www/html/ -type f -name ".stat"
 
 Hier is een diagram van hoe deze dossierstructuur eruit zal zien wanneer u punten in het geheime voorgeheugen hebt en een spoelverzoek hebben die door de module van Dispatcher wordt verzonden en verwerkt
 
-![ statfiles die met inhoud en data worden gemengd die met statusniveaus worden getoond ](assets/disp-flushing/dispatcher-statfiles.png " worden verzonden-statfiles ")
+![&#x200B; statfiles die met inhoud en data worden gemengd die met statusniveaus worden getoond &#x200B;](assets/disp-flushing/dispatcher-statfiles.png " worden verzonden-statfiles ")
 
 ### BESTANDSNIVEAU STATEN
 
@@ -175,7 +175,7 @@ Zoals u in dit voorbeeld kunt zien, is het bestand ouder dan het `.stat` -bestan
 
 ## Farm File Settings
 
-De documentatie is allen hier voor de volledige reeks configuratieopties: [ https://docs.adobe.com/content/help/nl-NL/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL)
+De documentatie is allen hier voor de volledige reeks configuratieopties: [&#x200B; https://docs.adobe.com/content/help/nl-NL/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL)
 
 We willen er een paar benadrukken die betrekking hebben op het leegmaken van de cache
 

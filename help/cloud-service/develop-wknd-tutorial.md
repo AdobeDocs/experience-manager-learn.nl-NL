@@ -43,4 +43,4 @@ De video toont hoe het project van de Plaats WKND kan zijn:
 2. Wordt gespoeld naar een Cloud Manager Git-opslagplaats voor een Adobe die bij een AEM as a Cloud Service-programma is geregistreerd
 3. Distributie via Cloud Manager-pijpleidingen naar AEM as a Cloud Service-omgevingen
 
-Voor een volledig overzicht van hoe te om AEM project op te stellen om als dienst van de Wolk te AEM, op de videoreeks te letten op hoe te [ Git met Adobe Cloud Manager ](https://docs.adobe.com/content/help/nl-NL/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html) integreren.
+Voor een volledig overzicht van hoe te om AEM project op te stellen om als dienst van de Wolk te AEM, op de videoreeks te letten op hoe te [&#x200B; Git met Adobe Cloud Manager &#x200B;](https://docs.adobe.com/content/help/nl-NL/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html) integreren.

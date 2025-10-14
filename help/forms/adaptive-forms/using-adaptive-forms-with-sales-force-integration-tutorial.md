@@ -27,11 +27,11 @@ Vereisten voor deze zelfstudie:
 * Blader naar de onderkant van deze pagina en download het wagerbestand en sla het op de vaste schijf op.
 * AEM Forms met SSL ingeschakeld
 
-   * [ Officiële Documentatie voor het toelaten van SSL op AEM 6.3 ](https://helpx.adobe.com/nl/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
-   * [ Officiële Documentatie voor het toelaten van SSL op AEM 6.4 ](https://helpx.adobe.com/nl/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
+   * [&#x200B; Officiële Documentatie voor het toelaten van SSL op AEM 6.3 &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
+   * [&#x200B; Officiële Documentatie voor het toelaten van SSL op AEM 6.4 &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
 * Je hebt een Salesforce-account nodig
-* U moet een verbonden app maken. De officiële documentatie van Salesforce voor het creëren van app is vermeld [ hier ](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
+* U moet een verbonden app maken. De officiële documentatie van Salesforce voor het creëren van app is vermeld [&#x200B; hier &#x200B;](https://help.salesforce.com/articleView?id=connected_app_create.htm&type=0).
 * Geef de juiste OAuth-oppervlakken op voor de app (ik heb alle beschikbare OAuth-oppervlakken geselecteerd voor testdoeleinden)
 * Geef de URL voor de callback op. De callback-URL in mijn geval was
 
@@ -73,7 +73,7 @@ De volgende stap is het maken van Data Source in AEM Forms. Voer de volgende sta
 * Verificatiehandler: houder van autorisatie
 * Klik op &quot;Verbinding maken met OAUTH&quot;. Als alles goed gaat, worden geen fouten weergegeven
 
-Nadat u het formuliergegevensmodel hebt gemaakt met Salesforce, kunt u vervolgens de formuliergegevensintegratie maken met de Data Source die u zojuist hebt gemaakt. De officiële documentatie voor het creëren van de Integratie van de Gegevens van de Vorm is [ hier ](https://helpx.adobe.com/nl/aem-forms/6-3/data-integration.html).
+Nadat u het formuliergegevensmodel hebt gemaakt met Salesforce, kunt u vervolgens de formuliergegevensintegratie maken met de Data Source die u zojuist hebt gemaakt. De officiële documentatie voor het creëren van de Integratie van de Gegevens van de Vorm is [&#x200B; hier &#x200B;](https://helpx.adobe.com/nl/aem-forms/6-3/data-integration.html).
 
 Zorg ervoor dat u het formuliergegevensmodel zo configureert dat de POST-service wordt gebruikt om een Lead-object in SFDC te maken.
 
@@ -85,7 +85,7 @@ Nadat u het formuliergegevensmodel hebt gemaakt, kunt u op dit model gebaseerde 
 
 * Source voor gegevens maken
 
-   * [ ga aan Gegevensbronnen ](http://localhost:4502/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/global)
+   * [&#x200B; ga aan Gegevensbronnen &#x200B;](http://localhost:4502/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/global)
 
    * Klik op de knop Maken
    * Geef enkele betekenisvolle waarden op
@@ -106,7 +106,7 @@ Nadat u het formuliergegevensmodel hebt gemaakt, kunt u op dit model gebaseerde 
    * Verificatiehandler: houder van autorisatie
    * Klik op &quot;Verbinding maken met OAuth&quot;. Als er fouten optreden, controleert u de voorgaande stappen om ervoor te zorgen dat alle gegevens correct zijn ingevoerd.
 
-Nadat u de Data Source met Salesforce hebt gemaakt, kunt u vervolgens de Form Data Integration maken met de Data Source die u zojuist hebt gemaakt. De documentatieverbinding voor dat is [ hier ](https://helpx.adobe.com/nl/experience-manager/6-4/forms/using/create-form-data-models.html)
+Nadat u de Data Source met Salesforce hebt gemaakt, kunt u vervolgens de Form Data Integration maken met de Data Source die u zojuist hebt gemaakt. De documentatieverbinding voor dat is [&#x200B; hier &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-4/forms/using/create-form-data-models.html)
 
 Zorg ervoor dat u het formuliergegevensmodel zo configureert dat de POST-service wordt gebruikt om een Lead-object in SFDC te maken.
 
@@ -118,8 +118,8 @@ Nadat u het formuliergegevensmodel hebt gemaakt, kunt u op dit model gebaseerde 
 >
 >Controleer of de URL in het wagerbestand overeenkomt met uw regio. De URL in het voorbeeldwagerbestand is bijvoorbeeld &quot;na46.salesforce.com&quot;, omdat het account in Noord-Amerika is gemaakt. De eenvoudigste manier is om u aan te melden bij uw Salesforce-account en de URL te controleren.
 
-![ sfdc1 ](assets/sfdc1.gif)
+![&#x200B; sfdc1 &#x200B;](assets/sfdc1.gif)
 
-![ sfdc2 ](assets/sfdc2.png)
+![&#x200B; sfdc2 &#x200B;](assets/sfdc2.png)
 
 [SampleSwaggerFile](assets/swagger-sales-force-lead.json)

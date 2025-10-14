@@ -24,27 +24,27 @@ Leer hoe te opstelling en gebruik specifiek uitgangIP adres, dat uitgaande verbi
 
 ## Wat is specifiek IP adres van de uitgang?
 
-Het specifieke IP adres van de uitgang staat verzoeken van AEM as a Cloud Service toe om een specifiek IP adres te gebruiken, dat de externe diensten toestaat om inkomende verzoeken door dit IP adres te filtreren. Als [ flexibele uitgang havens ](./flexible-port-egress.md), specifieke uitgang IP laat u op niet-standaardhavens binnendringen.
+Het specifieke IP adres van de uitgang staat verzoeken van AEM as a Cloud Service toe om een specifiek IP adres te gebruiken, dat de externe diensten toestaat om inkomende verzoeken door dit IP adres te filtreren. Als [&#x200B; flexibele uitgang havens &#x200B;](./flexible-port-egress.md), specifieke uitgang IP laat u op niet-standaardhavens binnendringen.
 
-Een programma van Cloud Manager kan het type van a __enige__ netwerkinfrastructuur slechts hebben. Verzeker specifiek adres van uitgangIP het meest [ aangewezen type van netwerkinfrastructuur ](./advanced-networking.md) voor uw AEM as a Cloud Service alvorens de volgende bevelen uit te voeren.
+Een programma van Cloud Manager kan het type van a __enige__ netwerkinfrastructuur slechts hebben. Verzeker specifiek adres van uitgangIP het meest [&#x200B; aangewezen type van netwerkinfrastructuur &#x200B;](./advanced-networking.md) voor uw AEM as a Cloud Service alvorens de volgende bevelen uit te voeren.
 
 >[!MORELIKETHIS]
 >
-> Lees de AEM as a Cloud Service [ geavanceerde documentatie van de netwerkconfiguratie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) voor meer details op specifiek uitgangIP adres.
+> Lees de AEM as a Cloud Service [&#x200B; geavanceerde documentatie van de netwerkconfiguratie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) voor meer details op specifiek uitgangIP adres.
 
 ## Vereisten
 
 Het volgende is vereist voor het instellen van een toegewezen IP-adres voor toegang via Cloud Manager API&#39;s:
 
-+ Cloud Manager API met [ de toestemmingen van de BedrijfsEigenaar van Cloud Manager ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
-+ Toegang tot [ de authentificatiegeloofsbrieven van Cloud Manager API ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
++ Cloud Manager API met [&#x200B; de toestemmingen van de BedrijfsEigenaar van Cloud Manager &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
++ Toegang tot [&#x200B; de authentificatiegeloofsbrieven van Cloud Manager API &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
    + Organisatie-id (ook bekend als IMS Org ID)
    + Client-id (ook bekend als API-sleutel)
    + Toegangstoken (ook bekend als Dragertoken)
 + Cloud Manager-programma-id
 + De milieu-id&#39;s van Cloud Manager
 
-Voor meer details [ overzicht hoe te opstelling, vorm, en verkrijg de geloofsbrieven van de Manager van de Wolk API ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), om hen te gebruiken om een Cloud Manager API vraag te maken.
+Voor meer details [&#x200B; overzicht hoe te opstelling, vorm, en verkrijg de geloofsbrieven van de Manager van de Wolk API &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), om hen te gebruiken om een Cloud Manager API vraag te maken.
 
 Deze zelfstudie gebruikt `curl` om de Cloud Manager API-configuraties te maken. De opgegeven `curl` -opdrachten nemen een Linux/macOS-syntaxis aan. Als u de Windows-opdrachtregel gebruikt, vervangt u het teken voor het `\` regeleinde door `^` .
 
@@ -58,24 +58,24 @@ Begin door het specifieke uitgang IP adres op AEM as a Cloud Service toe te late
 
 Het specifieke IP-adres van de uitgang kan worden ingeschakeld met Cloud Manager. In de volgende stappen wordt beschreven hoe u toegewezen IP-adres voor egress op AEM as a Cloud Service kunt inschakelen met behulp van de Cloud Manager.
 
-1. Login aan [ Adobe Experience Manager Cloud Manager ](https://experience.adobe.com/cloud-manager/) als Bedrijfseigenaar van Cloud Manager.
+1. Login aan [&#x200B; Adobe Experience Manager Cloud Manager &#x200B;](https://experience.adobe.com/cloud-manager/) als Bedrijfseigenaar van Cloud Manager.
 1. Navigeer naar het gewenste programma.
 1. In het linkermenu, navigeer aan __Diensten > de Infrastructuur van het Netwerk__.
 1. Selecteer __toevoegen netwerkinfrastructuur__ knoop.
 
-   ![ voeg netwerkinfrastructuur ](./assets/cloud-manager__add-network-infrastructure.png) toe
+   ![&#x200B; voeg netwerkinfrastructuur &#x200B;](./assets/cloud-manager__add-network-infrastructure.png) toe
 
 1. In __voeg de dialoog van de netwerkinfrastructuur__ toe, selecteer de __Specifieke IP van het uitgang adres__ optie, en selecteer het __Gebied__ om het specifieke uitgangIP adres tot stand te brengen.
 
-   ![ voeg specifiek uitgangIP adres ](./assets/dedicated-egress-ip-address/select-type.png) toe
+   ![&#x200B; voeg specifiek uitgangIP adres &#x200B;](./assets/dedicated-egress-ip-address/select-type.png) toe
 
 1. Selecteer __sparen__ om de toevoeging van het specifieke uitgangIP adres te bevestigen.
 
-   ![ bevestig specifieke uitgangIP adresverwezenlijking ](./assets/dedicated-egress-ip-address/confirmation.png)
+   ![&#x200B; bevestig specifieke uitgangIP adresverwezenlijking &#x200B;](./assets/dedicated-egress-ip-address/confirmation.png)
 
 1. Wacht op de netwerkinfrastructuur die moet worden gecreeerd en als __Klaar__ worden gemerkt. Dit proces kan tot 1 uur duren.
 
-   ![ Dedicated egress IP status van de adresverwezenlijking ](./assets/dedicated-egress-ip-address/ready.png)
+   ![&#x200B; Dedicated egress IP status van de adresverwezenlijking &#x200B;](./assets/dedicated-egress-ip-address/ready.png)
 
 Met het speciale IP-adres van de uitgang gemaakt, kunt u het nu configureren met de Cloud Manager API&#39;s, zoals hieronder beschreven.
 
@@ -84,9 +84,9 @@ Met het speciale IP-adres van de uitgang gemaakt, kunt u het nu configureren met
 Een specifiek IP-adres voor egress kan worden ingeschakeld met Cloud Manager API&#39;s. In de volgende stappen wordt beschreven hoe u het IP-adres van een specifiek egress-adres op AEM as a Cloud Service kunt inschakelen met de Cloud Manager API.
 
 
-1. Eerst, bepaal het gebied waarin het Geavanceerde Voorzien van een netwerk nodig is, door de Cloud Manager API [ listRegions ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting te gebruiken. `region name` is vereist om volgende Cloud Manager API-aanroepen te kunnen uitvoeren. Doorgaans wordt de regio waarin de productieomgeving zich bevindt, gebruikt.
+1. Eerst, bepaal het gebied waarin het Geavanceerde Voorzien van een netwerk nodig is, door de Cloud Manager API [&#x200B; listRegions &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting te gebruiken. `region name` is vereist om volgende Cloud Manager API-aanroepen te kunnen uitvoeren. Doorgaans wordt de regio waarin de productieomgeving zich bevindt, gebruikt.
 
-   Vind het gebied van uw milieu van AEM as a Cloud Service in [ Cloud Manager ](https://my.cloudmanager.adobe.com) onder de [ details van het milieu ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). De gebiedsnaam die in Cloud Manager wordt getoond kan [ aan de gebiedscode ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) worden in kaart gebracht die in Cloud Manager API wordt gebruikt.
+   Vind het gebied van uw milieu van AEM as a Cloud Service in [&#x200B; Cloud Manager &#x200B;](https://my.cloudmanager.adobe.com) onder de [&#x200B; details van het milieu &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). De gebiedsnaam die in Cloud Manager wordt getoond kan [&#x200B; aan de gebiedscode &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) worden in kaart gebracht die in Cloud Manager API wordt gebruikt.
 
    __listRegions HTTP- verzoek__
 
@@ -98,7 +98,7 @@ Een specifiek IP-adres voor egress kan worden ingeschakeld met Cloud Manager API
        -H 'Content-Type: application/json' 
    ```
 
-2. Laat specifiek uitgangIP adres voor een Programma van Cloud Manager toe gebruikend Cloud Manager API [ createNetworkInfrastructure ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting. Gebruik de juiste `region` -code die is verkregen via de Cloud Manager API `listRegions` -bewerking.
+2. Laat specifiek uitgangIP adres voor een Programma van Cloud Manager toe gebruikend Cloud Manager API [&#x200B; createNetworkInfrastructure &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting. Gebruik de juiste `region` -code die is verkregen via de Cloud Manager API `listRegions` -bewerking.
 
    __createNetworkInfrastructure HTTP- verzoek__
 
@@ -113,7 +113,7 @@ Een specifiek IP-adres voor egress kan worden ingeschakeld met Cloud Manager API
 
    Wacht 15 minuten op het Cloud Manager-programma om de netwerkinfrastructuur te voorzien.
 
-3. Controleer dat het programma __specifieke uitgangIP adres__ configuratie gebruikend de Cloud Manager API [ getNetworkInfrastructure ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) verrichting heeft gebeëindigd, gebruikend `id` teruggekeerd van het `createNetworkInfrastructure` HTTP- verzoek in de vorige stap.
+3. Controleer dat het programma __specifieke uitgangIP adres__ configuratie gebruikend de Cloud Manager API [&#x200B; getNetworkInfrastructure &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) verrichting heeft gebeëindigd, gebruikend `id` teruggekeerd van het `createNetworkInfrastructure` HTTP- verzoek in de vorige stap.
 
    __getNetworkInfrastructure HTTP- verzoek__
 
@@ -134,7 +134,7 @@ Met het speciale IP-adres van de uitgang gemaakt, kunt u het nu configureren met
 
 ## Vorm specifieke IP van de uitgang adresvolmachten per milieu
 
-1. Vorm de __specifieke IP adres van de uitgang__ configuratie op elk milieu van AEM as a Cloud Service gebruikend Cloud Manager API [ enableEnvironmentAdvancedNetworkingConfiguration ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting.
+1. Vorm de __specifieke IP adres van de uitgang__ configuratie op elk milieu van AEM as a Cloud Service gebruikend Cloud Manager API [&#x200B; enableEnvironmentAdvancedNetworkingConfiguration &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting.
 
    __enableEnvironmentAdvancedNetworkingConfiguration HTTP- verzoek__
 
@@ -149,7 +149,7 @@ Met het speciale IP-adres van de uitgang gemaakt, kunt u het nu configureren met
 
    Definieer de JSON-parameters in een `dedicated-egress-ip-address.json` en opgegeven voor krullen via `... -d @./dedicated-egress-ip-address.json` .
 
-   [ Download het voorbeeld specifiek-egress-ip-address.json ](./assets/dedicated-egress-ip-address.json). Dit bestand is slechts een voorbeeld. Vorm uw dossier zoals vereist gebaseerd op de facultatieve/vereiste gebieden die bij [ worden gedocumenteerd enableEnvironmentAdvancedNetworkingConfiguration ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
+   [&#x200B; Download het voorbeeld specifiek-egress-ip-address.json &#x200B;](./assets/dedicated-egress-ip-address.json). Dit bestand is slechts een voorbeeld. Vorm uw dossier zoals vereist gebaseerd op de facultatieve/vereiste gebieden die bij [&#x200B; worden gedocumenteerd enableEnvironmentAdvancedNetworkingConfiguration &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
    ```json
    {
@@ -172,7 +172,7 @@ Met het speciale IP-adres van de uitgang gemaakt, kunt u het nu configureren met
    }
    ```
 
-   De specifieke handtekening van HTTP van de IP adresconfiguratie van uitgang verschilt slechts van [ flexibele uitgang haven ](./flexible-port-egress.md#enable-dedicated-egress-ip-address-per-environment) in die het ook de facultatieve `nonProxyHosts` configuratie steunt.
+   De specifieke handtekening van HTTP van de IP adresconfiguratie van uitgang verschilt slechts van [&#x200B; flexibele uitgang haven &#x200B;](./flexible-port-egress.md#enable-dedicated-egress-ip-address-per-environment) in die het ook de facultatieve `nonProxyHosts` configuratie steunt.
 
    `nonProxyHosts` verklaart een reeks gastheren waarvoor haven 80 of 443 door de standaard gedeelde IP adreswaaiers eerder dan specifieke uitgang IP zou moeten worden verpletterd. `nonProxyHosts` kan nuttig zijn aangezien het verkeer dat door gedeelde IPs wordt behandeld automatisch door Adobe wordt geoptimaliseerd.
 
@@ -182,7 +182,7 @@ Met het speciale IP-adres van de uitgang gemaakt, kunt u het nu configureren met
    |---------------------------------|----------|----------------|------------------|----------|
    | `AEM_PROXY_HOST` | `portForwards.portOrig` | → | `portForwards.name` | `portForwards.portDest` |
 
-1. Voor elk milieu, bevestig de spelregels in feite gebruikend Cloud Manager API [ getEnvironmentAdvancedNetworkingConfiguration ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting.
+1. Voor elk milieu, bevestig de spelregels in feite gebruikend Cloud Manager API [&#x200B; getEnvironmentAdvancedNetworkingConfiguration &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting.
 
    __getEnvironmentAdvancedNetworkingConfiguration HTTP- verzoek__
 
@@ -194,9 +194,9 @@ Met het speciale IP-adres van de uitgang gemaakt, kunt u het nu configureren met
        -H 'Content-Type: application/json'
    ```
 
-1. De specifieke IP van de uitgang adresconfiguraties kunnen worden bijgewerkt gebruikend Cloud Manager API [ enableEnvironmentAdvancedNetworkingConfiguration ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting. Vergeet niet dat `enableEnvironmentAdvancedNetworkingConfiguration` een `PUT` -bewerking is. Alle regels moeten daarom bij elke aanroep van deze bewerking worden opgegeven.
+1. De specifieke IP van de uitgang adresconfiguraties kunnen worden bijgewerkt gebruikend Cloud Manager API [&#x200B; enableEnvironmentAdvancedNetworkingConfiguration &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting. Vergeet niet dat `enableEnvironmentAdvancedNetworkingConfiguration` een `PUT` -bewerking is. Alle regels moeten daarom bij elke aanroep van deze bewerking worden opgegeven.
 
-1. Verkrijg het __specifieke adres van uitgang IP__ door een DNS Resolver (zoals [ DNSChecker.org ](https://dnschecker.org/)) op de gastheer te gebruiken: `p{programId}.external.adobeaemcloud.com`, of door `dig` van de bevellijn in werking te stellen.
+1. Verkrijg het __specifieke adres van uitgang IP__ door een DNS Resolver (zoals [&#x200B; DNSChecker.org &#x200B;](https://dnschecker.org/)) op de gastheer te gebruiken: `p{programId}.external.adobeaemcloud.com`, of door `dig` van de bevellijn in werking te stellen.
 
    ```shell
    $ dig +short p{programId}.external.adobeaemcloud.com
@@ -221,7 +221,7 @@ HTTP/HTTPS-aanvragen van AEM op standaardpoorten (80/443) zijn standaard toegest
 
 >[!TIP]
 >
-> Zie AEM as a Cloud Service het specifieke IP van de uitgang adresdocumentatie voor [ de volledige reeks het verpletteren van regels ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
+> Zie AEM as a Cloud Service het specifieke IP van de uitgang adresdocumentatie voor [&#x200B; de volledige reeks het verpletteren van regels &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 
 ### HTTP/HTTPS

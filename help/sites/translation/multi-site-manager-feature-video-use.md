@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Beheer van meerdere sites gebruiken {#using-multi-site-manager-with-aem-sites}
 
-Het levende Overzicht van het Exemplaar en de Manager van de Configuratie van de Vervaging zijn de interfaces van de Auteur van AEM voor het werken met [ MultiManager van de Plaats ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html?lang=nl-NL) in Adobe Experience Manager Sites.
+Het levende Overzicht van het Exemplaar en de Manager van de Configuratie van de Vervaging zijn de interfaces van de Auteur van AEM voor het werken met [&#x200B; MultiManager van de Plaats &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html?lang=nl-NL) in Adobe Experience Manager Sites.
 
 ## Overzicht van live kopiëren {#live-copy-overview}
 
@@ -34,6 +34,6 @@ Het levende Overzicht van het Exemplaar en de Manager van de Configuratie van de
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ Levende Console van het Overzicht van het Exemplaar ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
-* [ Creërend en het Synchroniseren Actieve Exemplaren ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
-* [ MSM Beste praktijken ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/msm-best-practices.html)
+* [&#x200B; Levende Console van het Overzicht van het Exemplaar &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
+* [&#x200B; Creërend en het Synchroniseren Actieve Exemplaren &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
+* [&#x200B; MSM Beste praktijken &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/msm-best-practices.html)

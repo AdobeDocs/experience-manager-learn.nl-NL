@@ -28,8 +28,8 @@ Aangenomen wordt dat de stappen die in de vorige onderdelen van deze meerdelige 
 
 De volgende software moet worden geïnstalleerd:
 
-* [ Node.js v22+ ](https://nodejs.org/en)
-* [ Code van Visual Studio ](https://code.visualstudio.com/)
+* [&#x200B; Node.js v22+ &#x200B;](https://nodejs.org/en)
+* [&#x200B; Code van Visual Studio &#x200B;](https://code.visualstudio.com/)
 
 ## Doelstellingen
 
@@ -43,11 +43,11 @@ Leer hoe u:
 
 Dit voorbeeld React-app wordt lokaal uitgevoerd (op `http://localhost:3000` ) en maakt verbinding met de AEM Content Fragment Delivery van de AEM Publish-service met OpenAPI&#39;s. Om deze verbinding mogelijk te maken, moet CORS (Cross-Origin Resource Sharing) zijn geconfigureerd op de AEM-service Publiceren (of Voorvertoning).
 
-Volg de [ instructies bij het plaatsen van een KUUROORD die op `http://localhost:3000` loopt om verzoeken CORS aan AEM toe te staan publiceer dienst ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#different-domains).
+Volg de [&#x200B; instructies bij het plaatsen van een KUUROORD die op `http://localhost:3000` loopt om verzoeken CORS aan AEM toe te staan publiceer dienst &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#different-domains).
 
 ### Lokale CORS-proxy
 
-Alternatief, voor ontwikkeling, stel a [ Lokale Volmacht CORS ](https://www.npmjs.com/package/local-cors-proxy) in werking die faciliteiten een CORS-vriendschappelijke verbinding aan AEM.
+Alternatief, voor ontwikkeling, stel a [&#x200B; Lokale Volmacht CORS &#x200B;](https://www.npmjs.com/package/local-cors-proxy) in werking die faciliteiten een CORS-vriendschappelijke verbinding aan AEM.
 
 ```bash
 $ npm install --global lcp
@@ -62,11 +62,11 @@ Open de API&#39;s voor levering van AEM-inhoudsfragmenten op `http://localhost:8
 
 Er is een uitgelijnde voorbeeldtoepassing React geïmplementeerd met de code die vereist is voor interactie met AEM Content Fragment Delivery met OpenAPI&#39;s en de gegevens van het weergaveteam en de persoon die van hen zijn verkregen.
 
-De steekproef React app broncode is [ beschikbaar op Github.com ](https://github.com/adobe/aem-tutorials/tree/main/headless/open-api/basic).
+De steekproef React app broncode is [&#x200B; beschikbaar op Github.com &#x200B;](https://github.com/adobe/aem-tutorials/tree/main/headless/open-api/basic).
 
 Zo krijgt u de React-app:
 
-1. Kloon de steekproefWKND OpenAPI React app van [ Github.com ](https://github.com/adobe/aem-tutorials) van de [`headless_open-api_basic` markering ](https://github.com/adobe/aem-tutorials/tree/headless_open-api_basic).
+1. Kloon de steekproefWKND OpenAPI React app van [&#x200B; Github.com &#x200B;](https://github.com/adobe/aem-tutorials) van de [`headless_open-api_basic` markering &#x200B;](https://github.com/adobe/aem-tutorials/tree/headless_open-api_basic).
 
    ```shell
    $ cd ~/Code
@@ -91,7 +91,7 @@ Zo krijgt u de React-app:
    REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com
    ```
 
-   Wanneer het gebruiken van [ Lokale Volmacht CORS ](#local-cors-proxy), plaats `REACT_APP_HOST_URI` aan `http://localhost:8010/proxy`.
+   Wanneer het gebruiken van [&#x200B; Lokale Volmacht CORS &#x200B;](#local-cors-proxy), plaats `REACT_APP_HOST_URI` aan `http://localhost:8010/proxy`.
 
    ```
    # AEM Publish (or Preview) service that provides Content Fragments
@@ -106,7 +106,7 @@ Zo krijgt u de React-app:
    $ npm start
    ```
 
-1. React app begint op ontwikkelingswijze op [ http://localhost :3000/ ](http://localhost:3000/). Wijzigingen die tijdens de zelfstudie in de React-app worden aangebracht, worden direct in de webbrowser doorgevoerd.
+1. React app begint op ontwikkelingswijze op [&#x200B; http://localhost :3000/ &#x200B;](http://localhost:3000/). Wijzigingen die tijdens de zelfstudie in de React-app worden aangebracht, worden direct in de webbrowser doorgevoerd.
 
 >[!IMPORTANT]
 >
@@ -130,15 +130,15 @@ De voorbeeldtoepassing React bevat drie hoofdonderdelen die moeten worden bijgew
 
 Ontwikkel de functionaliteit om de Teams en hun leden op de belangrijkste mening van React te tonen app. Deze functionaliteit vereist:
 
-* Een nieuwe [ haak React useEffect ](https://react.dev/reference/react/useEffect#useeffect) die de **Lijst alle Fragmenten API van de Inhoud** via een haalverzoek aanhaalt, en krijgt dan de `fullName` waarde voor elke `teamMember` voor vertoning.
+* Een nieuwe [&#x200B; haak React useEffect &#x200B;](https://react.dev/reference/react/useEffect#useeffect) die de **Lijst alle Fragmenten API van de Inhoud** via een haalverzoek aanhaalt, en krijgt dan de `fullName` waarde voor elke `teamMember` voor vertoning.
 
 Zodra de app is voltooid, wordt de hoofdweergave van de app gevuld met de teamgegevens uit AEM.
 
-![ mening van Teams ](./assets/4/teams.png)
+![&#x200B; mening van Teams &#x200B;](./assets/4/teams.png)
 
 1. Open `src/components/Teams.js`.
 
-1. Voer de **component van Teams** uit om de lijst van teams van [ van de Lijst te halen alle Fragmenten API van de Inhoud ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/#operation/fragments/getFragments), en de teaminhoud terug te geven. Dit wordt opgedeeld in de volgende stappen:
+1. Voer de **component van Teams** uit om de lijst van teams van [&#x200B; van de Lijst te halen alle Fragmenten API van de Inhoud &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/#operation/fragments/getFragments), en de teaminhoud terug te geven. Dit wordt opgedeeld in de volgende stappen:
 
 1. Creeer a `useEffect` haak die AEM **oproept van alle Fragmenten van de Inhoud &lbrace;** API een lijst maken en de gegevens in de staat van de component van de Reactie opslaat.
 1. Voor elk **teruggekeerd de Fragment van de Inhoud van het Team**, haalt **een Fragment van de Inhoud** API aan om volledig gehydrateerde details van het team, met inbegrip van zijn leden en hun `fullNames` te halen.
@@ -253,15 +253,15 @@ Zodra de app is voltooid, wordt de hoofdweergave van de app gevuld met de teamge
 
 ## Functionaliteit van personen implementeren
 
-Met de [ functionaliteit van Teams ](#implement-teams-functionality) volledig, voer de functionaliteit uit om de vertoning op de details van een teamlid, of van de persoon te behandelen.
+Met de [&#x200B; functionaliteit van Teams &#x200B;](#implement-teams-functionality) volledig, voer de functionaliteit uit om de vertoning op de details van een teamlid, of van de persoon te behandelen.
 
-![ mening van de Persoon ](./assets/4/person.png)
+![&#x200B; mening van de Persoon &#x200B;](./assets/4/person.png)
 
 Dit doet u als volgt:
 
 1. Openen `src/components/Person.js`
 1. In de component `Person` React pareert u de parameter `id` route. Let op: de Routes van de React-app zijn eerder ingesteld om de `id` URL-parameter te accepteren (zie `/src/App.js` ).
-1. Vets de persoongegevens van AEM [ krijgen API van het Fragment van de Inhoud ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/#operation/fragments/getFragment).
+1. Vets de persoongegevens van AEM [&#x200B; krijgen API van het Fragment van de Inhoud &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/#operation/fragments/getFragment).
 
    ```javascript
    import "./Person.scss";
@@ -341,7 +341,7 @@ Dit doet u als volgt:
 
 ### De voltooide code ophalen
 
-De volledige broncode voor dit hoofdstuk is [ beschikbaar op Github.com ](https://github.com/adobe/aem-tutorials/tree/headless_open-api_basic_4-end).
+De volledige broncode voor dit hoofdstuk is [&#x200B; beschikbaar op Github.com &#x200B;](https://github.com/adobe/aem-tutorials/tree/headless_open-api_basic_4-end).
 
 ```bash
 $ git fetch --tags
@@ -351,7 +351,7 @@ $ git checkout tags/headless_open-api_basic_4-end
 
 ## Probeer de app
 
-Herzie app [ http://localhost :3000/ ](http://localhost:3000/) en klik _lid van het Team_ verbindingen. Ook kunt u meer teams en/of leden aan het Team Alpha toevoegen door de Fragments van de Inhoud in de dienst van de Auteur van AEM toe te voegen en hen te publiceren.
+Herzie app [&#x200B; http://localhost :3000/ &#x200B;](http://localhost:3000/) en klik _lid van het Team_ verbindingen. Ook kunt u meer teams en/of leden aan het Team Alpha toevoegen door de Fragments van de Inhoud in de dienst van de Auteur van AEM toe te voegen en hen te publiceren.
 
 ## Onder de kap
 

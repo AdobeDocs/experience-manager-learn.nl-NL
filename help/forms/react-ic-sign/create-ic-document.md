@@ -318,4 +318,4 @@ public String getWidgetURL(String widgetId) throws ClientProtocolException, IOEx
 
 ## Volgende stappen
 
-Schrijf een [ OSGi de dienstomslag om Acrobat Sign API ](./wrapper-sign-api.md) bloot te stellen
+Schrijf een [&#x200B; OSGi de dienstomslag om Acrobat Sign API &#x200B;](./wrapper-sign-api.md) bloot te stellen

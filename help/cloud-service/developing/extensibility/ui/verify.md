@@ -32,7 +32,7 @@ Het testen van een extensie gebeurt via een speciaal gemaakte URL die AEM de ins
 
 ## URL AEM-interface
 
-![ URL van de Console van het Fragment van AEM Inhoud ](./assets/verify/content-fragment-console-url.png){align="center"}
+![&#x200B; URL van de Console van het Fragment van AEM Inhoud &#x200B;](./assets/verify/content-fragment-console-url.png){align="center"}
 
 Als u een URL wilt maken die de extensie non-production in AEM koppelt, moet de URL van de AEM-interface waarin de extensie wordt geïnjecteerd, worden verkregen. Navigeer naar de AEM as a Cloud Service-omgeving om de extensie te controleren en open de gebruikersinterface waarin de extensie moet worden voorvertoond.
 
@@ -67,8 +67,8 @@ Deze URL wordt hieronder gebruikt bij het maken van de URL&#39;s voor ontwikkeli
 
 Noteer de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> https://localhost:9080`
 
-1. Aanvankelijk (en wanneer u een Fout van de Verbinding ziet) open `https://localhost:9080` (of wat uw lokale toepassings URL) in uw Webbrowser is, en keurt manueel [ het HTTPS certificaat ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) goed.
-1. Voeg de volgende twee vraagparams aan [ toe AEM UI URL ](#aem-ui-url)
+1. Aanvankelijk (en wanneer u een Fout van de Verbinding ziet) open `https://localhost:9080` (of wat uw lokale toepassings URL) in uw Webbrowser is, en keurt manueel [&#x200B; het HTTPS certificaat &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) goed.
+1. Voeg de volgende twee vraagparams aan [&#x200B; toe AEM UI URL &#x200B;](#aem-ui-url)
    + `&devMode=true`
    + `&ext=<LOCAL APPLICATION URL>` , meestal `&ext=https://localhost:9080` .
 
@@ -82,7 +82,7 @@ Noteer de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> 
 
 1. Kopieer en plak de URL van de voorvertoning in uw browser.
 
-   + U kunt moeten aanvankelijk, en dan periodiek, [ het certificaat HTTPS ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) voor de gastheer van de lokale toepassing (`https://localhost:9080`) goedkeuren.
+   + U kunt moeten aanvankelijk, en dan periodiek, [&#x200B; het certificaat HTTPS &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) voor de gastheer van de lokale toepassing (`https://localhost:9080`) goedkeuren.
 
 1. De gebruikersinterface van AEM wordt geladen met de lokale versie van de extensie die in de interface is geïnjecteerd voor verificatie.
 
@@ -117,7 +117,7 @@ Noteer de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> 
    Successful deployment 🏄
    ```
 
-1. Voeg de volgende twee vraagparams aan [ toe AEM UI URL ](#aem-ui-url)
+1. Voeg de volgende twee vraagparams aan [&#x200B; toe AEM UI URL &#x200B;](#aem-ui-url)
    + `&devMode=true`
    + `&ext=<DEPLOYED APPLICATION URL>`
 
@@ -141,7 +141,7 @@ Wanneer u deze methode gebruikt, wordt de extensie Staged alleen geïnjecteerd i
 
 Om het maken van URL&#39;s met voorvertoningen en voorvertoningen zoals hierboven beschreven, te vergemakkelijken, kunt u een JavaScript-bladwijzer maken die de extensie laadt.
 
-De referentie hieronder previews [ lokale ontwikkeling bouwt ](#verify-local-development-builds) van de uitbreiding op `https://localhost:9080`. Aan voorproef [ bouwt het stadium ](#verify-stage-builds), creeer een bookmarklet met de `previewApp` variabele die aan URL van opgestelde toepassing van App Builder wordt geplaatst.
+De referentie hieronder previews [&#x200B; lokale ontwikkeling bouwt &#x200B;](#verify-local-development-builds) van de uitbreiding op `https://localhost:9080`. Aan voorproef [&#x200B; bouwt het stadium &#x200B;](#verify-stage-builds), creeer een bookmarklet met de `previewApp` variabele die aan URL van opgestelde toepassing van App Builder wordt geplaatst.
 
 1. Maak een bladwijzer in uw browser.
 1. Bewerk de bladwijzer.

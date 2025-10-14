@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Clientbibliotheek maken
 
-Creeer [ cliënt lib ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=nl-NL) die de code zal omvatten om de methode `doAjaxSubmitWithFileAttachment` van `guideBridge` API op de klikgebeurtenis van de knoop aan te halen die door de CSS klasse **wordt geïdentificeerd sparen knoop**.  We geven de adaptieve formuliergegevens `fileMap` en de `mobileNumber` door aan het eindpunt dat luistert op `**/bin/storeafdatawithattachments`
+Creeer [&#x200B; cliënt lib &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=nl-NL) die de code zal omvatten om de methode `doAjaxSubmitWithFileAttachment` van `guideBridge` API op de klikgebeurtenis van de knoop aan te halen die door de CSS klasse **wordt geïdentificeerd sparen knoop**.  We geven de adaptieve formuliergegevens `fileMap` en de `mobileNumber` door aan het eindpunt dat luistert op `**/bin/storeafdatawithattachments`
 
 Nadat de formuliergegevens zijn opgeslagen, wordt een unieke toepassings-id gegenereerd en in een dialoogvenster aan de gebruiker getoond. Als de gebruiker het dialoogvenster sluit, wordt hij naar het formulier geleid waarmee hij het opgeslagen adaptieve formulier kan ophalen met de unieke toepassings-id.
 
@@ -68,9 +68,9 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> Wij hebben [ bootbox de bibliotheek van JavaScript ](https://bootboxjs.com/examples.html) gebruikt om dialoogdoos te tonen
+> Wij hebben [&#x200B; bootbox de bibliotheek van JavaScript &#x200B;](https://bootboxjs.com/examples.html) gebruikt om dialoogdoos te tonen
 
-De cliëntbibliotheken die in dit monster worden gebruikt kunnen [ van hier worden gedownload.](assets/store-af-with-attachments-client-lib.zip)
+De cliëntbibliotheken die in dit monster worden gebruikt kunnen [&#x200B; van hier worden gedownload.](assets/store-af-with-attachments-client-lib.zip)
 
 ## Volgende stappen
 

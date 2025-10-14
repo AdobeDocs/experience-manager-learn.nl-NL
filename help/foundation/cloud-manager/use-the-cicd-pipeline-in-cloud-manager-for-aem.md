@@ -54,7 +54,7 @@ Deze video raakt ook op de [!UICONTROL Activity] -console in Cloud Manager, die 
 
 ## Ondersteunende materialen
 
-* [ de Gids van de Gebruiker van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=nl-NL)
-* [ het aftasten van de code van de Download  [!DNL SonarQube]  regels ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html?lang=nl-NL)
+* [&#x200B; de Gids van de Gebruiker van Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=nl-NL)
+* [&#x200B; het aftasten van de code van de Download  [!DNL SonarQube]  regels &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html?lang=nl-NL)
    * *XLSX beschikbaar bij de bodem van de verbonden sectie*
-* [[!DNL SonarQube]  Java™ regelingenindex ](https://rules.sonarsource.com/java/)
+* [[!DNL SonarQube]  Java™ regelingenindex &#x200B;](https://rules.sonarsource.com/java/)

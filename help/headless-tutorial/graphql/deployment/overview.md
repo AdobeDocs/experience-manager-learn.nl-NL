@@ -32,7 +32,7 @@ Alvorens plaatsingsoverwegingen te onderzoeken, is het noodzakelijk om de logisc
 + __AEM publiceert__ is de dienst die de gepubliceerde Fragmenten van de Inhoud (en andere activa) voor algemene consumptie worden herhaald.
 + __de Voorproef van AEM__ is de dienst die AEM in gedrag mimiteert, maar inhoud heeft die aan het voor voorproef of overzichtsdoeleinden wordt gepubliceerd. AEM Preview is bedoeld voor intern publiek en niet voor de algemene levering van inhoud. Het gebruik van AEM Preview is optioneel op basis van de gewenste workflow.
 
-![ de dienstarchitectuur van AEM ](./assets/overview/aem-service-architecture.png)
+![&#x200B; de dienstarchitectuur van AEM &#x200B;](./assets/overview/aem-service-architecture.png)
 
 Typische AEM as a Cloud Service-implementatie zonder kop_
 

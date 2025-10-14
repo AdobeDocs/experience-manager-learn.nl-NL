@@ -26,15 +26,15 @@ De projecten van de asset compute zijn projecten Node.js, die gebruikend Adobe I
 
 _klik-door van het produceren van een project van de Asset compute (Geen audio)_
 
-Gebruik [ Adobe I/O CLI Asset compute stop-in ](../set-up/development-environment.md#aio-cli) om een nieuw, leeg project van de Asset compute te produceren.
+Gebruik [&#x200B; Adobe I/O CLI Asset compute stop-in &#x200B;](../set-up/development-environment.md#aio-cli) om een nieuw, leeg project van de Asset compute te produceren.
 
 1. Navigeer vanaf de opdrachtregel naar de map waarin u het project wilt plaatsen.
 1. Van de bevellijn, voer `aio app init` uit om met de interactieve projectgeneratie CLI te beginnen.
-   + Dit bevel kan browser van het Web kweken die voor authentificatie aan Adobe I/O ertoe aanzetten. Als het, uw geloofsbrieven van de Adobe verbonden aan de [ vereiste diensten en de producten van Adobe ](../set-up/accounts-and-services.md) verstrekt. Als u niet aan login kunt, volg [ deze instructies op hoe te om een project ](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user) te produceren.
+   + Dit bevel kan browser van het Web kweken die voor authentificatie aan Adobe I/O ertoe aanzetten. Als het, uw geloofsbrieven van de Adobe verbonden aan de [&#x200B; vereiste diensten en de producten van Adobe &#x200B;](../set-up/accounts-and-services.md) verstrekt. Als u niet aan login kunt, volg [&#x200B; deze instructies op hoe te om een project &#x200B;](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user) te produceren.
 1. __Uitgezochte Org__
    + Selecteer de Adobe die AEM as a Cloud Service heeft, App Builder is geregistreerd bij
 1. __Uitgezochte Project__
-   + Zoek en selecteer het project. Dit is de [ titel van het Project ](../set-up/app-builder.md) gecreeerd van het het projectmalplaatje van App Builder, in dit geval `WKND AEM Asset Compute`
+   + Zoek en selecteer het project. Dit is de [&#x200B; titel van het Project &#x200B;](../set-up/app-builder.md) gecreeerd van het het projectmalplaatje van App Builder, in dit geval `WKND AEM Asset Compute`
 1. __Uitgezochte Workspace__
    + De werkruimte `Development` selecteren
 1. __Welke eigenschappen van de Adobe I/O App wilt u voor dit project toelaten? Componenten selecteren om op te nemen__
@@ -70,6 +70,6 @@ Voor het hulpprogramma voor ontwikkelaars is een bestand met de naam `console.js
 
 Het definitieve project van de Asset compute is beschikbaar op GitHub bij:
 
-+ [ aem-guides-wknd-asset-compute ](https://github.com/adobe/aem-guides-wknd-asset-compute)
++ [&#x200B; aem-guides-wknd-asset-compute &#x200B;](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
 _GitHub bevat de definitieve staat van het project, volledig bevolkt met de arbeider en testgevallen, maar bevat geen geloofsbrieven, namelijk `.env`, `console.json` of `.aio`._

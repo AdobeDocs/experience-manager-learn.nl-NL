@@ -33,7 +33,7 @@ De widgets worden doorgaans gebruikt om de dynamische inhoud in te voegen die af
 
 Dit voorbeeld toont hoe te om een widget toe te voegen genoemd _Lijst van de Code van de Korting_ om, de adventure-specifieke de disconteringscode van WKND binnen een inhoud te vinden te selecteren en toe te voegen RTE. Deze kortingscodes kunnen worden beheerd in een extern systeem, zoals Order Management System (OMS), Product Information Management (PIM), een toepassing die op het thuisniveau wordt ontwikkeld of een Adobe AppBuilder-actie.
 
-Om dingen eenvoudig te houden, gebruikt dit voorbeeld [ Adobe React Spectrum ](https://react-spectrum.adobe.com/react-spectrum/index.html) kader om widget of dialoog UI en hard-gecodeerde WKND adventure naam, kortingscodegegevens te ontwikkelen.
+Om dingen eenvoudig te houden, gebruikt dit voorbeeld [&#x200B; Adobe React Spectrum &#x200B;](https://react-spectrum.adobe.com/react-spectrum/index.html) kader om widget of dialoog UI en hard-gecodeerde WKND adventure naam, kortingscodegegevens te ontwikkelen.
 
 ## Extensiepunt
 
@@ -41,7 +41,7 @@ Dit voorbeeld breidt zich tot uitbreidingspunt `rte` uit om een widget aan RTE i
 
 | AEM-gebruikersinterface uitgebreid | Extensiepunt |
 | ------------------------ | --------------------- | 
-| [ de Redacteur van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [ Rich Text Editor Widgets ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
+| [&#x200B; de Redacteur van het Fragment van de Inhoud &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [&#x200B; Rich Text Editor Widgets &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
 
 ## Voorbeeldextensie
 
@@ -116,11 +116,11 @@ Voeg in de hoofdcomponent React `App.js` de `discountCodes` -route toe om de geb
 
 ### Component `DiscountCodes` React maken{#create-widget-react-component}
 
-De widget of de dialoog UI wordt gecreeerd gebruikend het [ React Spectrum van Adobe ](https://react-spectrum.adobe.com/react-spectrum/index.html) kader. De componentcode `DiscountCodes` ziet er als volgt uit:
+De widget of de dialoog UI wordt gecreeerd gebruikend het [&#x200B; React Spectrum van Adobe &#x200B;](https://react-spectrum.adobe.com/react-spectrum/index.html) kader. De componentcode `DiscountCodes` ziet er als volgt uit:
 
-+ UI wordt teruggegeven gebruikend React de componenten van het Spectrum, als [ ComboBox ](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ ButtonGroup ](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [ Knoop ](https://react-spectrum.adobe.com/react-spectrum/Button.html)
++ UI wordt teruggegeven gebruikend React de componenten van het Spectrum, als [&#x200B; ComboBox &#x200B;](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [&#x200B; ButtonGroup &#x200B;](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [&#x200B; Knoop &#x200B;](https://react-spectrum.adobe.com/react-spectrum/Button.html)
 + De array `adventureDiscountCodes` heeft een hardcoded mapping van adventure-naam en kortingscode. In werkelijkheid kunnen deze gegevens worden opgehaald uit een Adobe AppBuilder-actie of externe systemen zoals PIM, OMS of home grow of API-gateway op basis van een cloud provider.
-+ `guestConnection` wordt geïnitialiseerd gebruikend `useEffect` [ Reageer haak ](https://react.dev/reference/react/useEffect) en geleid als componentenstaat. Deze wordt gebruikt om te communiceren met de AEM-host.
++ `guestConnection` wordt geïnitialiseerd gebruikend `useEffect` [&#x200B; Reageer haak &#x200B;](https://react.dev/reference/react/useEffect) en geleid als componentenstaat. Deze wordt gebruikt om te communiceren met de AEM-host.
 + De functie `handleDiscountCodeChange` krijgt de kortingscode voor de geselecteerde avontuurnaam en werkt de staatsvariabele bij.
 + De functie `addDiscountCode` die `guestConnection` gebruikt, biedt RTE-instructie die moet worden uitgevoerd. In dit geval moeten `insertContent` instructie en HTML-codefragment met de werkelijke kortingscode die in de RTE moet worden ingevoegd.
 

@@ -23,9 +23,9 @@ ht-degree: 1%
 
 | API | CORS-bescherming | Configuratie |
 | --- | --- | --- |
-| AEM Author APIS | Ja | [ vorm CORS voor de Auteur van AEM ](#configure-cors-for-aem-author) |
-| AEM Publish APIS | Ja | [ vorm CORS voor AEM publiceren ](#configure-cors-for-aem-publish) |
-| AEM OpenAPI&#39;s | Ja | [ vorm CORS voor AEM OpenAPIs ](#configure-cors-for-aem-openapis) |
+| AEM Author APIS | Ja | [&#x200B; vorm CORS voor de Auteur van AEM &#x200B;](#configure-cors-for-aem-author) |
+| AEM Publish APIS | Ja | [&#x200B; vorm CORS voor AEM publiceren &#x200B;](#configure-cors-for-aem-publish) |
+| AEM OpenAPI&#39;s | Ja | [&#x200B; vorm CORS voor AEM OpenAPIs &#x200B;](#configure-cors-for-aem-openapis) |
 | AEM ASSETS DYNAMIC MEDIA CLASSIC APIS | Nee | Niet configureerbaar |
 | AEM Assets Dynamic Media OpenAPI&#39;s | Nee | Niet configureerbaar |
 | Adobe IMS | Ja | Niet configureerbaar |

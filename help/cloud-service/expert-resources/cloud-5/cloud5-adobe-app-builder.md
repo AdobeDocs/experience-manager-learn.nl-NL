@@ -25,12 +25,12 @@ Amol Anand laat vallen om ons de ondergrens te geven van de integratie met Adobe
 
 ## Inhoud die in deze video wordt behandeld
 
-+ Overzicht van [ App Builder ](https://developer.adobe.com/app-builder/docs/overview/)
-+ [ Leerprogramma&#39;s en de Laboratoria van de Code ](https://developer.adobe.com/app-builder/docs/resources/)
-+ [ Logging en Controle ](https://adobedocs.github.io/adobeio-runtime/guides/logging_monitoring.html#retrieving-activations-for-blocking-successful-calls)
-+ Plaatsende [ Limieten van het Systeem ](https://adobedocs.github.io/adobeio-runtime/guides/system_settings.html)
-+ [ Lokale Ontwikkeling ](https://developer.adobe.com/app-builder/docs/resources/debugging/) Uiteinden
++ Overzicht van [&#x200B; App Builder &#x200B;](https://developer.adobe.com/app-builder/docs/overview/)
++ [&#x200B; Leerprogramma&#39;s en de Laboratoria van de Code &#x200B;](https://developer.adobe.com/app-builder/docs/resources/)
++ [&#x200B; Logging en Controle &#x200B;](https://adobedocs.github.io/adobeio-runtime/guides/logging_monitoring.html#retrieving-activations-for-blocking-successful-calls)
++ Plaatsende [&#x200B; Limieten van het Systeem &#x200B;](https://adobedocs.github.io/adobeio-runtime/guides/system_settings.html)
++ [&#x200B; Lokale Ontwikkeling &#x200B;](https://developer.adobe.com/app-builder/docs/resources/debugging/) Uiteinden
 
 ## Aanvullende bronnen
 
-Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 1 ](cloud5-season-1.md) pagina.
+Bekijk verwante video&#39;s op de [&#x200B; Wolk 5 seizoen 1 &#x200B;](cloud5-season-1.md) pagina.

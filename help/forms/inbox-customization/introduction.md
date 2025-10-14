@@ -32,10 +32,10 @@ U kunt een Experience Manager Inbox aanpassen om de standaardtitel van een kolom
 
 ## Kolomaanpassing
 
-[ Open AEM inbox ](http://localhost:4502/aem/inbox)
+[&#x200B; Open AEM inbox &#x200B;](http://localhost:4502/aem/inbox)
 Open de Controle Admin door op het _pictogram van de Mening van de Lijst_ te klikken en dan het selecteren van _Controle Admin_ zoals aangetoond in het scherm hieronder ontsproten
 
-![ admin-controle ](assets/open-customization.png)
+![&#x200B; admin-controle &#x200B;](assets/open-customization.png)
 
 In de UI van de kolomaanpassing kunt u de volgende verrichtingen uitvoeren
 
@@ -52,7 +52,7 @@ In de merkaanpassing kunt u het volgende doen
 * De Help-koppeling aanpassen
 * Navigatieopties verbergen
 
-![ inbox-branding ](assets/branding-customization.PNG)
+![&#x200B; inbox-branding &#x200B;](assets/branding-customization.PNG)
 
 ## Volgende stappen
 

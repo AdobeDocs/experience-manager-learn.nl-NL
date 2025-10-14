@@ -20,15 +20,15 @@ ht-degree: 0%
 
 # Source van gegevens configureren
 
-Er zijn veel manieren waarop AEM integratie met een externe database mogelijk maakt. Één van de gemeenschappelijkste &amp; standaardpraktijken van gegevensbestandintegratie is door Apache Te gebruiken die Verbinding Gepoolde eigenschappen van de Configuratie DataSource door [ configMgr ](http://localhost:4502/system/console/configMgr) ruilt.
-De eerste stap is de aangewezen [ bestuurders MySQL ](https://mvnrepository.com/artifact/mysql/mysql-connector-java) aan AEM te downloaden en op te stellen.
+Er zijn veel manieren waarop AEM integratie met een externe database mogelijk maakt. Één van de gemeenschappelijkste &amp; standaardpraktijken van gegevensbestandintegratie is door Apache Te gebruiken die Verbinding Gepoolde eigenschappen van de Configuratie DataSource door [&#x200B; configMgr &#x200B;](http://localhost:4502/system/console/configMgr) ruilt.
+De eerste stap is de aangewezen [&#x200B; bestuurders MySQL &#x200B;](https://mvnrepository.com/artifact/mysql/mysql-connector-java) aan AEM te downloaden en op te stellen.
 Vervolgens stelt u de specifieke eigenschappen voor de gegevensbron van uw database in voor de verzamelverbinding. In de volgende schermafbeelding ziet u de instellingen die voor deze zelfstudie worden gebruikt. Het databaseschema wordt als onderdeel van deze zelfstudie-elementen aan u verstrekt.
 
 >[!NOTE]
 >Gelieve te zorgen u uw gegevensbron `StoreAndRetrieveAfData` noemt aangezien dit de naam in de dienst OSGi wordt gebruikt.
 
 
-![ gegeven-bron ](assets/data-source.JPG)
+![&#x200B; gegeven-bron &#x200B;](assets/data-source.JPG)
 
 | Eigenschapnaam | Waarde van eigenschap |   |
 |---------------------|------------------------------------------------------------------------------------|---|
@@ -42,13 +42,13 @@ Vervolgens stelt u de specifieke eigenschappen voor de gegevensbron van uw datab
 
 
 De volgende database is gebruikt voor dit gebruiksgeval. De database heeft één tabel met de naam `formdatawithattachments` en de vier kolommen, zoals in de onderstaande schermafbeelding wordt weergegeven.
-![ gegeven-basis ](assets/table-schema.JPG)
+![&#x200B; gegeven-basis &#x200B;](assets/table-schema.JPG)
 
 * De kolom **afdata** zal de adaptieve vormgegevens houden.
 * De kolom **attachmentsInfo** zal de informatie over de vormgehechtheid houden.
 * De kolommen **phoneNumber** zullen het mobiele aantal van de persoon houden die de vorm invult.
 
-Gelieve te creëren het gegevensbestand door het [ gegevensbestandschema ](assets/data-base-schema.sql) in te voeren
+Gelieve te creëren het gegevensbestand door het [&#x200B; gegevensbestandschema &#x200B;](assets/data-base-schema.sql) in te voeren
 MySQL-workbench gebruiken.
 
 ## Formuliergegevensmodel maken
@@ -59,7 +59,7 @@ Zorg ervoor u geen serie in de **terugkeert krijgt** dienst.
 
 Het doel van deze **krijgt** dienst moet het telefoonaantal halen verbonden aan toepassings identiteitskaart.
 
-![ get-service ](assets/get-service.JPG)
+![&#x200B; get-service &#x200B;](assets/get-service.JPG)
 
 Dit model van vormgegevens zal dan in **MyAccountForm** worden gebruikt om het telefoonaantal te halen verbonden aan toepassings identiteitskaart.
 

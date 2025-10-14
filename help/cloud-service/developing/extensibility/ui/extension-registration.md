@@ -20,13 +20,13 @@ ht-degree: 0%
 
 # Registratie van extensies
 
-De uitbreidingen UI van AEM zijn gespecialiseerde toepassing van App Builder, die op Reageren wordt gebaseerd en gebruiken het [ React Spectrum ](https://react-spectrum.adobe.com/react-spectrum/) kader UI.
+De uitbreidingen UI van AEM zijn gespecialiseerde toepassing van App Builder, die op Reageren wordt gebaseerd en gebruiken het [&#x200B; React Spectrum &#x200B;](https://react-spectrum.adobe.com/react-spectrum/) kader UI.
 
 Om te bepalen waar en hoe de AEM UI-extensie wordt weergegeven, zijn twee configuraties vereist in de App Builder-app van de extensie: toepassingsroutering en de registratie van de extensie.
 
 ## Toepassingsroutes{#app-routes}
 
-De uitbreiding `App.js` verklaart de [ React router ](https://reactrouter.com/en/main) die een indexroute omvat die de uitbreiding in AEM UI registreert.
+De uitbreiding `App.js` verklaart de [&#x200B; React router &#x200B;](https://reactrouter.com/en/main) die een indexroute omvat die de uitbreiding in AEM UI registreert.
 
 De indexroute wordt aangehaald wanneer AEM UI aanvankelijk laadt, en het doel van deze route bepaalt hoe de uitbreiding in de console wordt blootgesteld.
 
@@ -55,7 +55,7 @@ function App(props) {
 
 `ExtensionRegistration.js` moet onmiddellijk worden geladen via de indexroute van de extensie en moet het registratiepunt van de extensie gebruiken.
 
-Gebaseerd op het geselecteerde de uitbreidingsmalplaatje van AEM UI wanneer [ initialiseert de de toepassingsuitbreiding van App Builder ](./app-initialization.md), worden de verschillende uitbreidingspunten gesteund.
+Gebaseerd op het geselecteerde de uitbreidingsmalplaatje van AEM UI wanneer [&#x200B; initialiseert de de toepassingsuitbreiding van App Builder &#x200B;](./app-initialization.md), worden de verschillende uitbreidingspunten gesteund.
 
 + [UI-extensiepunten voor inhoudsfragmenten](./content-fragments/overview.md#extension-points)
 
@@ -73,7 +73,7 @@ De meest gebruikte controles voor het laden van een extensie zijn:
 + Het gebruiken van de gastheer van AEM (`new URLSearchParams(window.location.search).get('repo')`) om te bepalen als de uitbreiding zou moeten laden.
    + Alleen de extensie weergeven in AEM-omgevingen die deel uitmaken van een specifiek programma (zoals in het onderstaande voorbeeld wordt getoond).
    + Alleen de extensie weergeven in een specifieke AEM-omgeving (AEM-host).
-+ Gebruikend een [ actie van Adobe I/O Runtime ](./runtime-action.md) om een vraag van HTTP aan AEM te maken om te bepalen als de huidige gebruiker de uitbreiding zou moeten zien.
++ Gebruikend een [&#x200B; actie van Adobe I/O Runtime &#x200B;](./runtime-action.md) om een vraag van HTTP aan AEM te maken om te bepalen als de huidige gebruiker de uitbreiding zou moeten zien.
 
 In het onderstaande voorbeeld ziet u hoe u de extensie beperkt tot alle omgevingen in het programma `p12345` .
 

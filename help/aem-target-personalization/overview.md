@@ -42,14 +42,14 @@ We hebben nu persoonlijke inhoud in de vorm van voorstellen van AEM in Target. M
 * Het doel &#x200B; gebruikt AEM de prijsverhoging van het Fragment van de Ervaring als Aanbiedingen in Activiteiten
 * Doel levert Experience Fragment HTML, AEM levert afbeeldingen waarnaar wordt verwezen
 
-  ![ Personalization die het diagram van de Fragmenten van de Ervaring gebruiken ](assets/personalization-use-case-1/use-case-1-diagram.png)
+  ![&#x200B; Personalization die het diagram van de Fragmenten van de Ervaring gebruiken &#x200B;](assets/personalization-use-case-1/use-case-1-diagram.png)
 
 **om dit scenario uit te voeren, moet u:**
 
 * [AEM en Adobe Target integreren met tags en Adobe I/O](./implementation.md#integrating-aem-target-options)
 * [AEM en Adobe Target met behulp van verouderde Cloud Servicen](./implementation.md#integrating-aem-target-options)
 
-***na het uitvoeren van de bovengenoemde integratie, laat het [ scenario in detail ](./personalization-use-case-1.md) onderzoeken.***
+***na het uitvoeren van de bovengenoemde integratie, laat het [&#x200B; scenario in detail &#x200B;](./personalization-use-case-1.md) onderzoeken.***
 
 ## Personalization die Visual Experience Composer gebruikt
 
@@ -63,13 +63,13 @@ VEC is een van de belangrijkste kenmerken van Adobe Target. Met VEC kunnen marke
 * Nieuwe inhoud maken met Adobe Target VEC
 * Is van toepassing op zowel AEM gehoste sites als niet-AEM gehoste sites
 
-  ![ Personalization die het diagram van Composer van de Ervaring gebruikt ](assets/personalization-use-case-3/use-case-diagram-3.png)
+  ![&#x200B; Personalization die het diagram van Composer van de Ervaring gebruikt &#x200B;](assets/personalization-use-case-3/use-case-diagram-3.png)
 
 **om dit scenario uit te voeren, moet u:**
 
 * [AEM en Adobe Target integreren met tags en Adobe I/O](./implementation.md#integrating-aem-target-options)
 
-***na het uitvoeren van de bovengenoemde integratie, laat het [ scenario in detail onderzoeken.](./personalization-use-case-3.md)***
+***na het uitvoeren van de bovengenoemde integratie, laat het [&#x200B; scenario in detail onderzoeken.](./personalization-use-case-3.md)***
 
 ## Personalization of Full Web Page Ervaringen
 
@@ -81,10 +81,10 @@ Door Adobe Experience Manager te integreren met Adobe Target kunt u uw sitegebru
 * Er wordt hier geen nieuwe inhoud gemaakt
 * Van toepassing op zowel AEM- als niet-AEM sites
 
-  ![ diagram ](assets/personalization-use-case-2/use-case-2-diagram.png)
+  ![&#x200B; diagram &#x200B;](assets/personalization-use-case-2/use-case-2-diagram.png)
 
 **om dit scenario uit te voeren, moet u:**
 
 * [AEM en Adobe Target integreren met tags en Adobe I/O](./implementation.md#integrating-aem-target-options)
 
-***na het uitvoeren van de bovengenoemde integratie, laat het [ scenario in detail onderzoeken.](./personalization-use-case-2.md)***
+***na het uitvoeren van de bovengenoemde integratie, laat het [&#x200B; scenario in detail onderzoeken.](./personalization-use-case-2.md)***

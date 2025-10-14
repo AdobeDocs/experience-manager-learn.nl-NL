@@ -25,22 +25,22 @@ HTTP/HTTPS-verbindingen op niet-standaardpoorten (niet 80/443) moeten vanuit AEM
 
 Het volgende codevoorbeeld wordt gesteund door de volgende geavanceerde voorzien van een netwerkopties.
 
-Verzeker [ aangewezen ](../advanced-networking.md#advanced-networking) geavanceerde voorzien van een netwerkconfiguratie voorafgaand aan het volgen van dit leerprogramma is opstelling.
+Verzeker [&#x200B; aangewezen &#x200B;](../advanced-networking.md#advanced-networking) geavanceerde voorzien van een netwerkconfiguratie voorafgaand aan het volgen van dit leerprogramma is opstelling.
 
-| Geen geavanceerde netwerken | [ Flexibele havenuitgang ](../flexible-port-egress.md) | [ Dedicated egress IP adres ](../dedicated-egress-ip-address.md) | [ Virtueel Privé Netwerk ](../vpn.md) |
+| Geen geavanceerde netwerken | [&#x200B; Flexibele havenuitgang &#x200B;](../flexible-port-egress.md) | [&#x200B; Dedicated egress IP adres &#x200B;](../dedicated-egress-ip-address.md) | [&#x200B; Virtueel Privé Netwerk &#x200B;](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✔ | ✘ | ✘ |
 
 >[!CAUTION]
 >
-> Dit codevoorbeeld is slechts voor [ de Flexibele Groepen van de Haven ](../flexible-port-egress.md). Een gelijkaardig, maar verschillend codevoorbeeld is beschikbaar voor [ verbindingen HTTP/HTTPS op niet-standaardhavens voor het Specifieke IP van de Gastheer adres en VPN ](./http-dedicated-egress-ip-vpn.md).
+> Dit codevoorbeeld is slechts voor [&#x200B; de Flexibele Groepen van de Haven &#x200B;](../flexible-port-egress.md). Een gelijkaardig, maar verschillend codevoorbeeld is beschikbaar voor [&#x200B; verbindingen HTTP/HTTPS op niet-standaardhavens voor het Specifieke IP van de Gastheer adres en VPN &#x200B;](./http-dedicated-egress-ip-vpn.md).
 
 ## Codevoorbeeld
 
 Dit Java™ codevoorbeeld is van de dienst OSGi die in AEM as a Cloud Service kan lopen die een verbinding van HTTP met een externe Webserver op 8080 maakt. Verbindingen met HTTPS-webservers gebruiken de omgevingsvariabelen `AEM_PROXY_HOST` en `AEM_HTTPS_PROXY_PORT` (standaard `proxy.tunnel:3128` in AEM-releases &lt; 6094).
 
 >[!NOTE]
-> Het wordt geadviseerd [ Java™ 11 HTTP APIs ](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) wordt gebruikt om HTTP/HTTPS vraag van AEM te maken.
+> Het wordt geadviseerd [&#x200B; Java™ 11 HTTP APIs &#x200B;](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) wordt gebruikt om HTTP/HTTPS vraag van AEM te maken.
 
 + `core/src/com/adobe/aem/wknd/examples/connections/impl/HttpExternalServiceImpl.java`
 

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Deze zelfstudie bouwt verder op de zelfstudie Edge Delivery Services en Universal Editor en begeleidt u bij het toevoegen van blokopties aan een blok. Door blokopties te definiëren, kunt u de weergave en functionaliteit van een blok aanpassen, zodat verschillende variaties kunnen worden aangepast aan de verschillende behoeften aan inhoud. Hierdoor is het ontwerpsysteem van uw site flexibeler en gebruiksvriendelijker.
 
-![ zij aan zij blokoptie ](./assets/block-options/main.png){align="center"}
+![&#x200B; zij aan zij blokoptie &#x200B;](./assets/block-options/main.png){align="center"}
 
 In dit leerprogramma, zult u blokopties aan het blok van het Teaser toevoegen, toestaand auteurs om tussen twee vertoningsopties te kiezen: **Gebrek** en **zij aan zij**. De **Standaard** optie toont het beeld hierboven en achter de tekst, terwijl de **zij aan zij** optie de beeld en de tekst zij aan zij toont.
 
@@ -43,7 +43,7 @@ Als u blokopties wilt toevoegen aan het blok Taser, opent u het JSON-fragment bi
 
 ### Veldconfiguraties
 
-In de onderstaande tabbladen ziet u verschillende manieren om blokopties in het blokmodel te configureren, waaronder enkele selectie met één CSS-klasse, één selectie met meerdere CSS-klassen en meerdere selecties met meerdere CSS-klassen. Dit leerprogramma [ voert de eenvoudigere benadering ](#field-configuration-for-this-tutorial) uit die in **wordt gebruikt uitgezocht met enige CSS klasse**.
+In de onderstaande tabbladen ziet u verschillende manieren om blokopties in het blokmodel te configureren, waaronder enkele selectie met één CSS-klasse, één selectie met meerdere CSS-klassen en meerdere selecties met meerdere CSS-klassen. Dit leerprogramma [&#x200B; voert de eenvoudigere benadering &#x200B;](#field-configuration-for-this-tutorial) uit die in **wordt gebruikt uitgezocht met enige CSS klasse**.
 
 >[!BEGINTABS]
 
@@ -51,7 +51,7 @@ In de onderstaande tabbladen ziet u verschillende manieren om blokopties in het 
 
 In deze zelfstudie wordt getoond hoe u een invoertype `select` (vervolgkeuzelijst) kunt gebruiken om auteurs één blokoptie te laten kiezen. Deze wordt vervolgens toegepast als één corresponderende CSS-klasse.
 
-![ Uitgezocht met enige CSS klasse ](./assets/block-options/tab-1.png){align="center"}
+![&#x200B; Uitgezocht met enige CSS klasse &#x200B;](./assets/block-options/tab-1.png){align="center"}
 
 #### Blokmodel
 
@@ -112,7 +112,7 @@ Op deze manier kunnen verschillende stijlen en voorwaardelijke JavaScript worden
 
 Met het invoertype `select` kunnen auteurs één blokoptie kiezen, die optioneel aan meerdere CSS-klassen kan worden toegewezen. Hiervoor geeft u de CSS-klassen op als door spaties gescheiden waarden.
 
-![ Uitgezocht met veelvoudige CSS klassen ](./assets/block-options/tab-2.png){align="center"}
+![&#x200B; Uitgezocht met veelvoudige CSS klassen &#x200B;](./assets/block-options/tab-2.png){align="center"}
 
 #### Blokmodel
 
@@ -185,7 +185,7 @@ Hierdoor kunnen verschillende stijlen en voorwaardelijke JavaScript worden toege
 
 Met het invoertype van `"component": "multiselect"` kan de auteur meerdere opties tegelijk selecteren. Dit maakt complexe permutaties van de weergave van het blok mogelijk door meerdere ontwerpkeuzes te combineren.
 
-![ Multi-select met veelvoudige CSS klassen ](./assets/block-options/tab-3.png){align="center"}
+![&#x200B; Multi-select met veelvoudige CSS klassen &#x200B;](./assets/block-options/tab-3.png){align="center"}
 
 ### Blokmodel
 
@@ -256,7 +256,7 @@ Om problemen te voorkomen en verwarring tussen auteurs te voorkomen bij het gebr
 
 **deze benadering wordt niet gebruikt in dit leerprogramma maar illustreert een alternatieve methode en geavanceerde blokopties.**
 
-Blokopties kunnen als standaardopties worden ingesteld wanneer u een nieuwe blokinstantie aan een pagina in de Universal Editor toevoegt. Dit wordt gedaan door de standaardwaarde van het `classes` bezit in de [ definitie van het blok ](../5-new-block.md#block-definition) te plaatsen.
+Blokopties kunnen als standaardopties worden ingesteld wanneer u een nieuwe blokinstantie aan een pagina in de Universal Editor toevoegt. Dit wordt gedaan door de standaardwaarde van het `classes` bezit in de [&#x200B; definitie van het blok &#x200B;](../5-new-block.md#block-definition) te plaatsen.
 
 #### Blokdefinitie
 
@@ -390,7 +390,7 @@ $ git push origin teaser
 
 ### Een testpagina maken
 
-Maak in de AEM Author-service een nieuwe pagina waaraan het Teaser-blok voor ontwikkeling moet worden toegevoegd. Na de overeenkomst in de [ Auteur a het hoofdstuk van het Blok ](../6-author-block.md) van het [ Edge Delivery Services en Universele leerprogramma van de Ontwikkelaar van de Redacteur ](../0-overview.md), creeer een testpagina onder a `branches` pagina, noemend het na de tak van het Git u aan werkt - in dit geval, `block-options`.
+Maak in de AEM Author-service een nieuwe pagina waaraan het Teaser-blok voor ontwikkeling moet worden toegevoegd. Na de overeenkomst in de [&#x200B; Auteur a het hoofdstuk van het Blok &#x200B;](../6-author-block.md) van het [&#x200B; Edge Delivery Services en Universele leerprogramma van de Ontwikkelaar van de Redacteur &#x200B;](../0-overview.md), creeer een testpagina onder a `branches` pagina, noemend het na de tak van het Git u aan werkt - in dit geval, `block-options`.
 
 ### Auteur van het blok
 
@@ -398,13 +398,13 @@ Bewerk de nieuwe **pagina van de Opties van het Blok** in Universele Redacteur e
 
 Het blokdialoog omvat nu a **Opties van het Teken** dropdown met **Gebrek** en **zij aan zij** selecties. Kies **zij aan zij** en voltooi de resterende inhoud creatie.
 
-![ Teaser met de dialoog van het optiesblok ](./assets/block-options/block-dialog.png){align="center"}
+![&#x200B; Teaser met de dialoog van het optiesblok &#x200B;](./assets/block-options/block-dialog.png){align="center"}
 
 Naar keuze, voeg twee **Taser** blokken-één reeks aan **Gebrek** en andere aan **zij aan zij** toe. Dit staat u toe om beide opties naast elkaar tijdens ontwikkeling voor te vertonen en ervoor te zorgen dat het uitvoeren van **zij aan zij** niet de **Standaard** optie beïnvloedt.
 
 ### Publiceren voor voorvertoning
 
-Zodra het blok van het Taser aan de pagina wordt toegevoegd, [ publiceert de pagina aan voorproef ](../6-author-block.md) gebruikend **publiceer** knoop en het kiezen publiceert aan **Voorproef** in Universele Redacteur.
+Zodra het blok van het Taser aan de pagina wordt toegevoegd, [&#x200B; publiceert de pagina aan voorproef &#x200B;](../6-author-block.md) gebruikend **publiceer** knoop en het kiezen publiceert aan **Voorproef** in Universele Redacteur.
 
 ## HTML blokkeren
 
@@ -455,7 +455,7 @@ Het volgende is DOM van het blok van het Taser, met de **zij aan zij** geselecte
 
 Als u het DOM voor decoratie wilt zoeken, opent u de pagina met het blok in uw lokale ontwikkelomgeving, selecteert u het blok met de ontwikkelaarsgereedschappen van uw webbrowser en inspecteert u het DOM. Zo kunt u de relevante elementen identificeren die u wilt versieren.
 
-![ blok DOM van de Inspectie ](./assets/block-options/dom.png){align="center"}
+![&#x200B; blok DOM van de Inspectie &#x200B;](./assets/block-options/dom.png){align="center"}
 
 >[!ENDTABS]
 
@@ -758,11 +758,11 @@ export default function decorate(block) {
 
 Terwijl de CSS en JavaScript worden toegevoegd, laadt de lokale ontwikkelomgeving van de AEM CLI de wijzigingen hot-reload, zodat u snel en gemakkelijk kunt zien hoe code van invloed is op het blok. Houd de muisaanwijzer boven de CTA en controleer of de afbeelding van de taser in- en uitzoomt.
 
-![ Lokale ontwikkelingsvoorproef van teaser gebruikend CSS en JS ](./assets/block-options//local-development-preview.png)
+![&#x200B; Lokale ontwikkelingsvoorproef van teaser gebruikend CSS en JS &#x200B;](./assets/block-options//local-development-preview.png)
 
 ## Uw code plaatsen
 
-Zorg ervoor aan [ vaak ](../3-local-development-environment.md#linting) uw codescheidingen om het schoon en verenigbaar te houden. Regelmatige lijnen helpen vangstkwesties vroeg, die algemene ontwikkelingstijd verminderen. U kunt uw ontwikkelingswerk pas samenvoegen in de `main` -vertakking als alle problemen met koppelingen zijn opgelost.
+Zorg ervoor aan [&#x200B; vaak &#x200B;](../3-local-development-environment.md#linting) uw codescheidingen om het schoon en verenigbaar te houden. Regelmatige lijnen helpen vangstkwesties vroeg, die algemene ontwikkelingstijd verminderen. U kunt uw ontwikkelingswerk pas samenvoegen in de `main` -vertakking als alle problemen met koppelingen zijn opgelost.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -785,11 +785,11 @@ $ git push origin block-options
 
 De wijzigingen zijn nu zichtbaar in de Universal Editor wanneer u de query-parameter `?ref=block-options` gebruikt.
 
-![ Taser in Universele Redacteur ](./assets/block-options/universal-editor-preview.png){align="center"}
+![&#x200B; Taser in Universele Redacteur &#x200B;](./assets/block-options/universal-editor-preview.png){align="center"}
 
 
 ## Gefeliciteerd!
 
 U hebt nu blokopties onderzocht in Edge Delivery Services en de Universele Redacteur, die u de hulpmiddelen geven om inhoud het uitgeven met grotere flexibiliteit aan te passen en te stroomlijnen. Begin deze opties in uw projecten toe te passen om efficiency te verbeteren en consistentie te handhaven.
 
-Voor meer beste praktijken en geavanceerde technieken, controleer de [ Universele documentatie van de Redacteur ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).
+Voor meer beste praktijken en geavanceerde technieken, controleer de [&#x200B; Universele documentatie van de Redacteur &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).

@@ -29,7 +29,7 @@ Er worden algemene patronen ontwikkeld in [!DNL Sling Models] die staan voor AEM
 
 ### Verzendmodel HTTP-aanvraagstroom
 
-![ het Verkopen ModelStroom van het Verzoek ](./assets/understand-sling-model-exporter/sling-model-request-flow.png)
+![&#x200B; het Verkopen ModelStroom van het Verzoek &#x200B;](./assets/understand-sling-model-exporter/sling-model-request-flow.png)
 
 1. [!DNL HTTP GET] Aanvraag wordt gedaan voor een resource in AEM.
 
@@ -51,7 +51,7 @@ Apache [!DNL Sling Model Exporter] wordt geleverd met een bij Sling geleverde Ja
 
 Door de directe serialisatie van [!DNL Sling Models] kunnen ze zowel normale webverzoeken uitvoeren met hun HTML-antwoorden die zijn gemaakt met de traditionele [!DNL Sling Model] request-flow (zie boven), als JSON-uitvoeringen die kunnen worden gebruikt door webservices of JavaScript-toepassingen, beschikbaar maken.
 
-![ het Verdelen van de stroom van het Verzoek van HTTP van de ModelExporter ](./assets/understand-sling-model-exporter/sling-model-exporter-request-flow.png)
+![&#x200B; het Verdelen van de stroom van het Verzoek van HTTP van de ModelExporter &#x200B;](./assets/understand-sling-model-exporter/sling-model-exporter-request-flow.png)
 
 *Deze stroom beschrijft de stroom gebruikend verstrekt Jackson Exporter om output te produceren JSON. Het gebruik van douaneExporteurs volgt de zelfde stroom maar met hun outputformaat.*
 
@@ -74,4 +74,4 @@ Door de directe serialisatie van [!DNL Sling Models] kunnen ze zowel normale web
 
 ## Ondersteunende materialen
 
-* [ Apache  [!DNL Sling Model Exporter]  documentatie van het Kader ](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
+* [&#x200B; Apache  [!DNL Sling Model Exporter]  documentatie van het Kader &#x200B;](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)

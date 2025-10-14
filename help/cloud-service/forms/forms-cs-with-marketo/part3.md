@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Na het vormen van de gegevensbron is de volgende stap een Model van de Gegevens van de Vorm te creëren dat op de gegevensbron wordt gebaseerd die in de vroegere stap wordt gevormd. Voer de volgende stappen uit om een formuliergegevensmodel te maken:
 
-Wijs uw browser aan de [ pagina van de gegevensintegratie.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Hier worden alle gegevensintegraties weergegeven die op uw AEM-instantie zijn gemaakt.
+Wijs uw browser aan de [&#x200B; pagina van de gegevensintegratie.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Hier worden alle gegevensintegraties weergegeven die op uw AEM-instantie zijn gemaakt.
 
 1. Klik op Maken | Formuliergegevensmodel
 1. Geef een betekenisvolle titel op, zoals FormsAndMarketo, en klik op Volgende
@@ -35,6 +35,6 @@ Wijs uw browser aan de [ pagina van de gegevensintegratie.](http://localhost:450
 1. Tab naar het tabblad Services
 1. Selecteer de enige dienst die wordt vermeld en klik op de Dienst van de Test
 1. Geef een geldige leadId op en klik op Testen. Als alles goed gaat, moet u de hoofddetails terugkrijgen, zoals hieronder in de schermafbeelding wordt getoond
-   ![ testresultaten ](assets/testresults.png)
+   ![&#x200B; testresultaten &#x200B;](assets/testresults.png)
 
 U kunt nu een adaptief formulier maken op basis van dit formuliergegevensmodel en Marketo-objecten invoegen en ophalen.

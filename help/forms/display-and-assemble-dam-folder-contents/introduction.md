@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Doorgaans wordt de inhoud van DAM-mappen (PDF-bestanden, Word-documenten, enz.) weergegeven met behulp van het selectievakje en kan de gebruiker bestanden selecteren om te downloaden. De geselecteerde bestanden worden geassembleerd in één bestand dat de gebruiker kan downloaden.
 
-![ gebruik-geval ](assets/newsletters-download1.png)
+![&#x200B; gebruik-geval &#x200B;](assets/newsletters-download1.png)
 
 ## Vereisten
 
@@ -28,7 +28,7 @@ U hebt het volgende nodig:
 
 * Een werkexemplaar van AEM waarop het pakket Formulierinvoegtoepassing is geïnstalleerd
 
-* [ het milieu van de Ontwikkeling opstelling volgens dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=nl-NL)
+* [&#x200B; het milieu van de Ontwikkeling opstelling volgens dit document &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=nl-NL)
 
 ## Volgende stappen
 

@@ -22,7 +22,7 @@ ht-degree: 0%
 
 AEM as a Cloud Service biedt geavanceerde netwerkfuncties waarmee u verbindingen met en van AEM as a Cloud Service-programma&#39;s nauwkeurig kunt beheren.
 
-|                                                   | [ Programma&#39;s van de Productie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html?lang=nl-NL) | [Sandbox-programma&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=nl-NL) |
+|                                                   | [&#x200B; Programma&#39;s van de Productie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html?lang=nl-NL) | [Sandbox-programma&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=nl-NL) |
 |---------------------------------------------------|:-----------------------:|:---------------------:|
 | Ondersteunt geavanceerd netwerken | ✔ | ✘ |
 
@@ -37,7 +37,7 @@ Geavanceerde netwerken van AEM bestaan uit drie opties voor het beheer van conne
 | [__Virtueel Privé Netwerk__](./vpn.md) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 
 
-Voor meer details op de betrokken overwegingen wanneer het selecteren van het aangewezen geavanceerde voorzien van een netwerktype, zie [ geavanceerde voorzien van een netwerkdocumentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html?lang=nl-NL).
+Voor meer details op de betrokken overwegingen wanneer het selecteren van het aangewezen geavanceerde voorzien van een netwerktype, zie [&#x200B; geavanceerde voorzien van een netwerkdocumentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html?lang=nl-NL).
 
 ## Geavanceerde zelfstudies voor netwerken
 
@@ -73,7 +73,7 @@ Zodra de meest aangewezen geavanceerde voorzien van een netwerkoptie die op de b
 
 Deze inzameling verstrekt voorbeelden van de configuratie en de code die aan hefboomwerking geavanceerde voorzien van een netwerkeigenschappen voor specifieke gebruiksgevallen wordt vereist.
 
-Verzeker de aangewezen [ geavanceerde voorzien van een netwerkconfiguratie ](#advanced-networking) opstelling voorafgaand aan het volgen van deze leerprogramma&#39;s is geweest.
+Verzeker de aangewezen [&#x200B; geavanceerde voorzien van een netwerkconfiguratie &#x200B;](#advanced-networking) opstelling voorafgaand aan het volgen van deze leerprogramma&#39;s is geweest.
 
 <table><tr>
    <td>

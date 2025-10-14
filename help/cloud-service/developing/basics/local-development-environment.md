@@ -25,4 +25,4 @@ Leer hoe u een lokale ontwikkelomgeving downloadt en instelt met de SDK van AEM 
 
 _`license.properties` getoond in deze video is niet meer nodig om AEM SDK in werking te stellen._
 
-Herzie deze instructies aan [ opstelling een volledige lokale ontwikkelomgeving gebruikend de AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL).
+Herzie deze instructies aan [&#x200B; opstelling een volledige lokale ontwikkelomgeving gebruikend de AEM SDK &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL).

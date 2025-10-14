@@ -25,13 +25,13 @@ Als onderdeel van Snel maken kunt u een nieuwe website genereren met de wizard S
 
 ## Vereisten {#prerequisites}
 
-De stappen in dit hoofdstuk vinden plaats in een Adobe Experience Manager as a Cloud Service-omgeving. Zorg ervoor dat u beheertoegang hebt tot de AEM-omgeving. Het wordt geadviseerd om het programma van de a [ Sandbox ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html?lang=nl-NL) en [ Ontwikkeling milieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL) te gebruiken wanneer de voltooiing van dit leerprogramma.
+De stappen in dit hoofdstuk vinden plaats in een Adobe Experience Manager as a Cloud Service-omgeving. Zorg ervoor dat u beheertoegang hebt tot de AEM-omgeving. Het wordt geadviseerd om het programma van de a [&#x200B; Sandbox &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html?lang=nl-NL) en [&#x200B; Ontwikkeling milieu &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL) te gebruiken wanneer de voltooiing van dit leerprogramma.
 
-[ het programma van de Productie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html?lang=nl-NL) milieu&#39;s kunnen voor dit leerprogramma eveneens worden gebruikt; nochtans, zorg ervoor dat de activiteiten van dit leerprogramma niet het werk zullen beïnvloeden dat op de doelmilieu&#39;s wordt uitgevoerd, aangezien dit leerprogramma inhoud en code aan het milieu van doelAEM opstelt.
+[&#x200B; het programma van de Productie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html?lang=nl-NL) milieu&#39;s kunnen voor dit leerprogramma eveneens worden gebruikt; nochtans, zorg ervoor dat de activiteiten van dit leerprogramma niet het werk zullen beïnvloeden dat op de doelmilieu&#39;s wordt uitgevoerd, aangezien dit leerprogramma inhoud en code aan het milieu van doelAEM opstelt.
 
-[ AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL) kan voor delen van dit leerprogramma worden gebruikt. De aspecten van dit leerprogramma die zich op de wolkendiensten baseren, zoals [ opstellend thema&#39;s met Cloud Manager front-end pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html?lang=nl-NL), kunnen niet op AEM SDK worden uitgevoerd.
+[&#x200B; AEM SDK &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL) kan voor delen van dit leerprogramma worden gebruikt. De aspecten van dit leerprogramma die zich op de wolkendiensten baseren, zoals [&#x200B; opstellend thema&#39;s met Cloud Manager front-end pijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html?lang=nl-NL), kunnen niet op AEM SDK worden uitgevoerd.
 
-Herzie [ op het instappen documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=nl-NL) voor meer details.
+Herzie [&#x200B; op het instappen documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=nl-NL) voor meer details.
 
 ## Doelstelling {#objective}
 
@@ -48,21 +48,21 @@ Meld u eerst aan bij uw AEM as a Cloud Service-omgeving. De milieu&#39;s van AEM
 
 Een meerderheid van het leerprogramma zal plaatsvinden gebruikend de **Dienst van de Auteur**.
 
-1. Navigeer aan Adobe Experience Cloud [ https://experience.adobe.com/ ](https://experience.adobe.com/). Meld u aan met uw persoonlijke account of een bedrijf-/schoolaccount.
+1. Navigeer aan Adobe Experience Cloud [&#x200B; https://experience.adobe.com/ &#x200B;](https://experience.adobe.com/). Meld u aan met uw persoonlijke account of een bedrijf-/schoolaccount.
 1. Zorg ervoor dat de correcte Organisatie in menu wordt geselecteerd en klik **Experience Manager**.
 
-   ![ Experience Cloud Huis ](assets/create-site/experience-cloud-home-screen.png)
+   ![&#x200B; Experience Cloud Huis &#x200B;](assets/create-site/experience-cloud-home-screen.png)
 
 1. Onder **Cloud Manager** klik **Lancering**.
 1. Beweeg over het Programma u wenst om het **pictogram van het Programma van Cloud Manager** te gebruiken en te klikken.
 
-   ![ het programmapictogram van Cloud Manager ](assets/create-site/cloud-manager-program-icon.png)
+   ![&#x200B; het programmapictogram van Cloud Manager &#x200B;](assets/create-site/cloud-manager-program-icon.png)
 
 1. In het hoogste menu klik **Milieu&#39;s** om de provisioned milieu&#39;s te bekijken.
 
 1. Vind het milieu u wenst om **Auteur URL** te gebruiken en te klikken.
 
-   ![ Toegang dev auteur ](assets/create-site/access-dev-environment.png)
+   ![&#x200B; Toegang dev auteur &#x200B;](assets/create-site/access-dev-environment.png)
 
    >[!NOTE]
    >
@@ -72,21 +72,21 @@ Een meerderheid van het leerprogramma zal plaatsvinden gebruikend de **Dienst va
 
 1. Nadat u bent omgeleid en geverifieerd, kunt u nu het AEM-beginscherm weergeven.
 
-   ![ het Begin van AEM scherm ](assets/create-site/aem-start-screen.png)
+   ![&#x200B; het Begin van AEM scherm &#x200B;](assets/create-site/aem-start-screen.png)
 
 >[!NOTE]
 >
-> Heb je problemen met Experience Manager? Herzie [ onboarding documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=nl-NL)
+> Heb je problemen met Experience Manager? Herzie [&#x200B; onboarding documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=nl-NL)
 
 ## De sjabloon Basissite downloaden
 
 Een Sjabloon voor site biedt een beginpunt voor een nieuwe site. Een Sjabloon van een site bevat enkele basisthema&#39;s, paginasjablonen, configuraties en voorbeeldinhoud. Precies wat in het Sjabloon van de Site is opgenomen, is aan de ontwikkelaar. Adobe verstrekt het Malplaatje van de a **Basis van de Plaats** om nieuwe implementaties te versnellen.
 
-1. Open een nieuw browser lusje en navigeer aan het Basis project van het Malplaatje van de Plaats op GitHub: [ https://github.com/adobe/aem-site-template-standard ](https://github.com/adobe/aem-site-template-standard). Het project is open-sourced en heeft een licentie om door iedereen te worden gebruikt.
-1. Klik **Versies** en navigeer aan de [ recentste versie ](https://github.com/adobe/aem-site-template-standard/releases/latest).
+1. Open een nieuw browser lusje en navigeer aan het Basis project van het Malplaatje van de Plaats op GitHub: [&#x200B; https://github.com/adobe/aem-site-template-standard &#x200B;](https://github.com/adobe/aem-site-template-standard). Het project is open-sourced en heeft een licentie om door iedereen te worden gebruikt.
+1. Klik **Versies** en navigeer aan de [&#x200B; recentste versie &#x200B;](https://github.com/adobe/aem-site-template-standard/releases/latest).
 1. Breid **Assets** dropdown uit en download het malplaatje zip dossier:
 
-   ![ Basis Zip van het Malplaatje van de Plaats ](assets/create-site/template-basic-zip-file.png)
+   ![&#x200B; Basis Zip van het Malplaatje van de Plaats &#x200B;](assets/create-site/template-basic-zip-file.png)
 
    Dit ZIP-bestand wordt gebruikt in de volgende oefening.
 
@@ -106,7 +106,7 @@ Daarna, produceer een nieuwe plaats gebruikend het Malplaatje van de Plaats van 
 
 1. Selecteer het **Basis Malplaatje van de Plaats van AEM** en klik **daarna**.
 
-   ![ Uitgezochte plaatsmalplaatje ](assets/create-site/select-site-template.png)
+   ![&#x200B; Uitgezochte plaatsmalplaatje &#x200B;](assets/create-site/select-site-template.png)
 
 1. Onder **Details van de Plaats** > **titel van de Plaats** gaat `WKND Site` binnen.
 
@@ -114,7 +114,7 @@ Daarna, produceer een nieuwe plaats gebruikend het Malplaatje van de Plaats van 
 
 1. Onder **naam van de Plaats** gaat `wknd` binnen.
 
-   ![ de details van het Malplaatje van de Plaats ](assets/create-site/site-template-details.png)
+   ![&#x200B; de details van het Malplaatje van de Plaats &#x200B;](assets/create-site/site-template-details.png)
 
    >[!NOTE]
    >
@@ -128,11 +128,11 @@ Daarna, produceer een nieuwe plaats gebruikend het Malplaatje van de Plaats van 
 1. Een nieuwe **Plaats WKND** is geproduceerd. Dit omvat een sitestructuur met een meertalige hiërarchie.
 1. Open de **Engelse** > **3&rbrace; pagina van het Huis door de pagina te selecteren en** te klikken geef **knoop in de menubar uit:**
 
-   ![ de Hiërarchie van de Plaats van WKND ](assets/create-site/wknd-site-starter-hierarchy.png)
+   ![&#x200B; de Hiërarchie van de Plaats van WKND &#x200B;](assets/create-site/wknd-site-starter-hierarchy.png)
 
 1. Starter-inhoud is al gemaakt en er zijn verschillende componenten beschikbaar die aan een pagina moeten worden toegevoegd. Experimenteer met deze componenten om een idee te krijgen van de functionaliteit. In het volgende hoofdstuk leert u de grondbeginselen van een component.
 
-   ![ homepage van het Begin ](assets/create-site/start-home-page.png)
+   ![&#x200B; homepage van het Begin &#x200B;](assets/create-site/start-home-page.png)
 
    *inhoud van de Steekproef die door het Malplaatje van de Plaats wordt verstrekt*
 
@@ -142,4 +142,4 @@ Je hebt zojuist je eerste AEM-site gemaakt.
 
 ### Volgende stappen {#next-steps}
 
-Gebruik de redacteur van de Pagina in Adobe Experience Manager, AEM, om inhoud van de plaats in de [ inhoud van de Auteur bij te werken en ](author-content-publish.md) hoofdstuk te publiceren. Leer hoe atoomcomponenten kunnen worden gevormd om inhoud bij te werken. Begrijp het verschil tussen een AEM-auteur- en -publicatieomgeving en leer hoe u updates voor de livesite publiceert.
+Gebruik de redacteur van de Pagina in Adobe Experience Manager, AEM, om inhoud van de plaats in de [&#x200B; inhoud van de Auteur bij te werken en &#x200B;](author-content-publish.md) hoofdstuk te publiceren. Leer hoe atoomcomponenten kunnen worden gevormd om inhoud bij te werken. Begrijp het verschil tussen een AEM-auteur- en -publicatieomgeving en leer hoe u updates voor de livesite publiceert.

@@ -25,7 +25,7 @@ ht-degree: 1%
 
 Welkom bij de meerdelige zelfstudie voor ontwikkelaars die een bestaande React-based (of Next.js) Verre SPAs met editable AEM inhoud willen uitbreiden gebruikend de Redacteur van AEM SPA.
 
-Dit leerprogramma bouwt op [ WKND GraphQL App ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL) voort, een React app die de inhoud van het Fragment van de Inhoud van AEM over AEM GraphQL APIs verbruikt, nochtans verstrekt geen in-context authoring van de inhoud van het KUUROORD.
+Dit leerprogramma bouwt op [&#x200B; WKND GraphQL App &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL) voort, een React app die de inhoud van het Fragment van de Inhoud van AEM over AEM GraphQL APIs verbruikt, nochtans verstrekt geen in-context authoring van de inhoud van het KUUROORD.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444853?quality=12&learn=on&captions=dut)
 
@@ -42,23 +42,23 @@ Het leerprogramma wordt ontworpen om met **AEM as a Cloud Service** te werken en
 
 ## Laatste code
 
-+ Het uitgangspunt van de code van dit leerprogramma kan op [ GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa-tutorial) in de `remote-spa-tutorial` omslag worden gevonden.
++ Het uitgangspunt van de code van dit leerprogramma kan op [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa-tutorial) in de `remote-spa-tutorial` omslag worden gevonden.
 
 ## Vereisten
 
 Voor deze zelfstudie is het volgende vereist:
 
 + [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL)
-+ [ Node.js v18 ](https://nodejs.org/en/)
-+ [ Java™ 11 ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-+ [ Gemaakt 3.6+ ](https://maven.apache.org/)
-+ [ Git ](https://git-scm.com/downloads)
-+ [ aem-guides-wknd.all-2.1.0.zip of groter ](https://github.com/adobe/aem-guides-wknd/releases)
-+ [ aem-guides-wknd-grafisch broncode ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main)
++ [&#x200B; Node.js v18 &#x200B;](https://nodejs.org/en/)
++ [&#x200B; Java™ 11 &#x200B;](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
++ [&#x200B; Gemaakt 3.6+ &#x200B;](https://maven.apache.org/)
++ [&#x200B; Git &#x200B;](https://git-scm.com/downloads)
++ [&#x200B; aem-guides-wknd.all-2.1.0.zip of groter &#x200B;](https://github.com/adobe/aem-guides-wknd/releases)
++ [&#x200B; aem-guides-wknd-grafisch broncode &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main)
 
 Deze zelfstudie gaat uit van:
 
-+ [ Microsoft® Visual Studio Code ](https://visualstudio.microsoft.com/) als winde
++ [&#x200B; Microsoft® Visual Studio Code &#x200B;](https://visualstudio.microsoft.com/) als winde
 + Een werkmap van `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial`
 + AEM SDK uitvoeren als een auteurservice op `http://localhost:4502`
 + AEM SDK uitvoeren met lokale `admin` account met wachtwoord `admin`
@@ -66,7 +66,7 @@ Deze zelfstudie gaat uit van:
 
 >[!NOTE]
 >
-> **Heb hulp bij vestiging uw lokale ontwikkelomgeving nodig?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL).
+> **Heb hulp bij vestiging uw lokale ontwikkelomgeving nodig?** Controle uit de [&#x200B; volgende gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL).
 
 ## &#x200B;1. Vorm AEM for SPA Editor
 
@@ -100,4 +100,4 @@ Ten slotte, gebruik de concepten die in vorige hoofdstukken aan dynamische route
 
 ## Aanvullende bronnen
 
-+ [ AEM SPA React Editable Componenten ](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
++ [&#x200B; AEM SPA React Editable Componenten &#x200B;](https://www.npmjs.com/package/@adobe/aem-react-editable-components)

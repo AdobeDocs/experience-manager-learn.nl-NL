@@ -22,16 +22,16 @@ ht-degree: 0%
 
 Volg de onderstaande stappen om deze toepassing geschikt te maken voor uw lokale server. Er wordt aangenomen dat uw AEM-exemplaar wordt uitgevoerd op localhost, 4502-poort.
 
-* [ installeer het pakket ](assets/azuredemo.all-1.0.0-SNAPSHOT.zip) gebruikend pakketmanager.
+* [&#x200B; installeer het pakket &#x200B;](assets/azuredemo.all-1.0.0-SNAPSHOT.zip) gebruikend pakketmanager.
 
 * Verstrek de Azure poortgeloofsbrieven gebruikend OSGi configMgr
-  ![ azure-portaal ](assets/azure-portal-config.png)
+  ![&#x200B; azure-portaal &#x200B;](assets/azure-portal-config.png)
 Zorg ervoor dat de opslag-URI eindigt in slash en dat het SAS-token begint met een ?
-* Navigeer aan [ AzureDemo ](http://localhost:4502/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/azuredemo)
+* Navigeer aan [&#x200B; AzureDemo &#x200B;](http://localhost:4502/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/azuredemo)
 
 * Geef de authentificatiemontages van de volgende 3 gegevensbronnen uit om uw milieu aan te passen
-  ![ gegevens-bronnen ](assets/fdm-data-sources.png)
+  ![&#x200B; gegevens-bronnen &#x200B;](assets/fdm-data-sources.png)
 
-* De voorproef en legt [ vorm ContactUs ](http://localhost:4502/content/dam/formsanddocuments/azureportal/contactus/jcr:content?wcmmode=disabled) voor
+* De voorproef en legt [&#x200B; vorm ContactUs &#x200B;](http://localhost:4502/content/dam/formsanddocuments/azureportal/contactus/jcr:content?wcmmode=disabled) voor
 
-* [ Vraag uw vormvoorlegging ](http://localhost:4502/content/dam/formsanddocuments/azureportal/queryformsubmissions/jcr:content?wcmmode=disabled)
+* [&#x200B; Vraag uw vormvoorlegging &#x200B;](http://localhost:4502/content/dam/formsanddocuments/azureportal/queryformsubmissions/jcr:content?wcmmode=disabled)

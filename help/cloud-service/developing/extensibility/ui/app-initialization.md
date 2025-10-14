@@ -30,4 +30,4 @@ Initialiseer een AEM UI-extensie App Builder-toepassing die definieert waar de e
 >
 > In de bovenstaande video ziet u het gebruik van een extensie van Content Fragment Console om de initialisatie van de App Builder-extensie-app te illustreren. Nochtans, is het belangrijk om op te merken dat de behandelde concepten op alle uitbreidingen van de gebruikersinterface van AEM kunnen worden toegepast.
 
-Zie de documentatie van Adobe Developer voor a [ gedetailleerde looppas-door van het app initialiseringsproces ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation/#launch-code-generation-during-project-initialization).
+Zie de documentatie van Adobe Developer voor a [&#x200B; gedetailleerde looppas-door van het app initialiseringsproces &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation/#launch-code-generation-during-project-initialization).

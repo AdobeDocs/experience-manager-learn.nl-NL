@@ -23,9 +23,9 @@ ht-degree: 0%
 OutputService biedt een aantal methoden om documenten te maken met behulp van een formulierontwerp en gegevens om samen te voegen met het formulierontwerp. In het volgende artikel wordt uitgelegd hoe u meerdere pdf&#39;s kunt genereren op basis van één groot XML-bestand met meerdere afzonderlijke records.
 Hier volgt een schermafbeelding van een XML-bestand dat meerdere records bevat.
 
-![ multi-record-xml ](assets/multi-record-xml.PNG)
+![&#x200B; multi-record-xml &#x200B;](assets/multi-record-xml.PNG)
 
-Data xml heeft 2 records. Elke record wordt vertegenwoordigd door het form1-element. Dit xml wordt overgegaan tot de methode OutputService [ generatePDFOutputBatch ](https://helpx.adobe.com/nl/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) wij krijgen lijst van pdf- documenten (één per verslag)
+Data xml heeft 2 records. Elke record wordt vertegenwoordigd door het form1-element. Dit xml wordt overgegaan tot de methode OutputService [&#x200B; generatePDFOutputBatch &#x200B;](https://helpx.adobe.com/nl/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) wij krijgen lijst van pdf- documenten (één per verslag)
 Voor de handtekening van de methode generatePDFOutputBatch worden de volgende parameters gebruikt
 
 * sjablonen - kaart met de sjabloon, geïdentificeerd door een sleutel
@@ -129,9 +129,9 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 
 Volg onderstaande instructies om deze mogelijkheid op uw server te testen:
 
-* [ Download de steekproefactiva ](assets/mult-records-template-and-xml-file.zip).Dit zip dossier bevat het malplaatje en xml- gegevensdossier.
-* [ Punt uw browser aan het Webconsole van Felix ](http://localhost:4502/system/console/bundles)
-* [ stelt DevelopingWithServiceUser Bundel ](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar) op.
+* [&#x200B; Download de steekproefactiva &#x200B;](assets/mult-records-template-and-xml-file.zip).Dit zip dossier bevat het malplaatje en xml- gegevensdossier.
+* [&#x200B; Punt uw browser aan het Webconsole van Felix &#x200B;](http://localhost:4502/system/console/bundles)
+* [&#x200B; stelt DevelopingWithServiceUser Bundel &#x200B;](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar) op.
 * Voeg de volgende ingang in de Dienst van het Mapper van de Gebruiker van de Dienst van Apache Sling toe gebruikend configMgr.
 
 ```java
@@ -140,12 +140,12 @@ DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 
 
 
-![ gebruiker-in kaart:brengen-dienst ](assets/user-mapper-service-fd-service.png)
+![&#x200B; gebruiker-in kaart:brengen-dienst &#x200B;](assets/user-mapper-service-fd-service.png)
 
-* [ stelt de Bundel van AEMFormsDocumentServices van de Douane AEMForms ](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar) op.De bundel van de Douane die pdf produceert gebruikend OutputService API
-* [ Punt uw browser aan pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
-* [ de Invoer en installeert het pakket ](assets/generate-multiple-pdf-from-xml.zip). Dit pakket bevat HTML-pagina waarmee u de sjabloon en gegevensbestanden kunt neerzetten.
-* [ Punt uw browser aan MultiRecords.html ](http://localhost:4502/content/DocumentServices/Multirecord.html?)
+* [&#x200B; stelt de Bundel van AEMFormsDocumentServices van de Douane AEMForms &#x200B;](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar) op.De bundel van de Douane die pdf produceert gebruikend OutputService API
+* [&#x200B; Punt uw browser aan pakketmanager &#x200B;](http://localhost:4502/crx/packmgr/index.jsp)
+* [&#x200B; de Invoer en installeert het pakket &#x200B;](assets/generate-multiple-pdf-from-xml.zip). Dit pakket bevat HTML-pagina waarmee u de sjabloon en gegevensbestanden kunt neerzetten.
+* [&#x200B; Punt uw browser aan MultiRecords.html &#x200B;](http://localhost:4502/content/DocumentServices/Multirecord.html?)
 * Sleep de sjabloon en het XML-gegevensbestand samen
 * Download het gemaakte zip-bestand. Dit ZIP-bestand bevat de PDF-bestanden die door de uitvoerservice zijn gegenereerd.
 

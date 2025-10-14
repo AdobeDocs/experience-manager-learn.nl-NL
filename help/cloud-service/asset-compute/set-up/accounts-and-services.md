@@ -25,11 +25,11 @@ Deze zelfstudie vereist dat de volgende services worden geleverd en toegankelijk
 Alle Adobe-services moeten toegankelijk zijn via dezelfde Adobe Org, die uw Adobe ID gebruikt.
 
 + [AEM as a Cloud Service](#aem-as-a-cloud-service)
-+ [ App Builder ](#app-builder)
++ [&#x200B; App Builder &#x200B;](#app-builder)
    + De levering kan tussen 2 - 10 dagen vergen
 + Cloud-opslag
-   + [ Azure Blob Storage ](https://azure.microsoft.com/en-us/services/storage/blobs/)
-   + of [ Amazon S3 ](https://aws.amazon.com/s3/?did=ft_card&amp;trk=ft_card)
+   + [&#x200B; Azure Blob Storage &#x200B;](https://azure.microsoft.com/en-us/services/storage/blobs/)
+   + of [&#x200B; Amazon S3 &#x200B;](https://aws.amazon.com/s3/?did=ft_card&trk=ft_card)
 
 >[!WARNING]
 >
@@ -47,13 +47,13 @@ Een lokale AEM SDK is onvoldoende om deze zelfstudie te voltooien, omdat de loka
 
 ## App Builder{#app-builder}
 
-Het [ App Builder ](https://developer.adobe.com/app-builder/) kader wordt gebruikt voor de bouw van en het opstellen van douaneacties aan Adobe I/O Runtime, Adobe serverless platform. AEM Asset Compute-projecten zijn speciaal gebouwde App Builder-projecten die met AEM Assets integreren via Process Profiles, en die toegang bieden tot en verwerking van asset binaries.
+Het [&#x200B; App Builder &#x200B;](https://developer.adobe.com/app-builder/) kader wordt gebruikt voor de bouw van en het opstellen van douaneacties aan Adobe I/O Runtime, Adobe serverless platform. AEM Asset Compute-projecten zijn speciaal gebouwde App Builder-projecten die met AEM Assets integreren via Process Profiles, en die toegang bieden tot en verwerking van asset binaries.
 
 Meld u aan voor de voorvertoning om toegang te krijgen tot App Builder.
 
-1. [ Teken omhoog voor de proef van App Builder ](https://developer.adobe.com/app-builder/trial/).
+1. [&#x200B; Teken omhoog voor de proef van App Builder &#x200B;](https://developer.adobe.com/app-builder/trial/).
 1. Wacht ongeveer 2 - 10 dagen tot u via e-mail op de hoogte wordt gebracht dat u provisioned bent alvorens met het leerprogramma verder te gaan.
-   + Als u onzeker bent als u provisioned bent geweest, ga met de volgende stappen verder en als u niet a __App Builder__ project in [ Adobe Developer Console ](https://developer.adobe.com/console/) kunt tot stand brengen u nog niet provisioned bent.
+   + Als u onzeker bent als u provisioned bent geweest, ga met de volgende stappen verder en als u niet a __App Builder__ project in [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/console/) kunt tot stand brengen u nog niet provisioned bent.
 
 ## Cloud-opslag
 
@@ -63,29 +63,29 @@ Wanneer Asset Compute-workers naar de Adobe I/O Runtime worden geïmplementeerd 
 
 ### Microsoft Azure Blob-opslag{#azure-blob-storage}
 
-Als u nog geen toegang tot de Opslag van Microsoft Azure Blob hebt, onderteken omhoog voor a [ vrije 12 maandrekening ](https://azure.microsoft.com/en-us/free/).
+Als u nog geen toegang tot de Opslag van Microsoft Azure Blob hebt, onderteken omhoog voor a [&#x200B; vrije 12 maandrekening &#x200B;](https://azure.microsoft.com/en-us/free/).
 
-Dit leerprogramma zal de opslag van Azure Blob gebruiken, nochtans [ Amazon S3 ](#amazon-s3) kan evenals slechts minder belangrijke variatie aan het leerprogramma worden gebruikt.
+Dit leerprogramma zal de opslag van Azure Blob gebruiken, nochtans [&#x200B; Amazon S3 &#x200B;](#amazon-s3) kan evenals slechts minder belangrijke variatie aan het leerprogramma worden gebruikt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40377?quality=12&learn=on)
 
 _klik-door van levering Azure BlobOpslag (Geen audio)_
 
-1. Login aan uw [ Microsoft Azure rekening ](https://azure.microsoft.com/en-us/account/).
+1. Login aan uw [&#x200B; Microsoft Azure rekening &#x200B;](https://azure.microsoft.com/en-us/account/).
 1. Navigeer aan de __Rekeningen van de Opslag__ Azure de dienstsectie
 1. Tik op __+ Toevoegen__ om een nieuwe Blob Storage-account te maken
 1. Creeer een nieuwe __groep van het Middel__ zoals nodig, bijvoorbeeld: `aem-as-a-cloud-service`
 1. Verstrek de naam van de a __rekening van de Opslag__, bijvoorbeeld: `aemguideswkndassetcomput`
-   + De __naam van de de rekeningsrekening van de Opslag__ die voor [ wordt gebruikt vormend wolkenopslag ](../develop/environment-variables.md) in het lokale Hulpmiddel van de Ontwikkeling van Asset Compute
-   + De __sleutels van de Toegang__ verbonden aan de opslagrekening worden ook vereist wanneer [ vormend wolkenopslag ](../develop/environment-variables.md).
+   + De __naam van de de rekeningsrekening van de Opslag__ die voor [&#x200B; wordt gebruikt vormend wolkenopslag &#x200B;](../develop/environment-variables.md) in het lokale Hulpmiddel van de Ontwikkeling van Asset Compute
+   + De __sleutels van de Toegang__ verbonden aan de opslagrekening worden ook vereist wanneer [&#x200B; vormend wolkenopslag &#x200B;](../develop/environment-variables.md).
 1. Laat alles anders als gebrek, en tik __Overzicht + creeer__ knoop
    + Naar keuze, selecteer de __plaats__ dicht bij u.
 1. Herzie het inrichtingsverzoek voor correctheid, en tik __creeer__ knoop indien tevreden
 
 ### Amazon S3{#amazon-s3}
 
-Het gebruiken van [ Microsoft Azure BlobOpslag ](#azure-blob-storage) wordt geadviseerd voor de voltooiing van dit leerprogramma, nochtans [ Amazon S3 ](https://aws.amazon.com/s3/?did=ft_card&amp;trk=ft_card) kan ook worden gebruikt.
+Het gebruiken van [&#x200B; Microsoft Azure BlobOpslag &#x200B;](#azure-blob-storage) wordt geadviseerd voor de voltooiing van dit leerprogramma, nochtans [&#x200B; Amazon S3 &#x200B;](https://aws.amazon.com/s3/?did=ft_card&trk=ft_card) kan ook worden gebruikt.
 
-Als het gebruiken van de opslag van Amazon S3, specificeer de geloofsbrieven van de de wolkenopslag van Amazon S3 wanneer [ het vormen van de het omgevingsvariabelen van het project ](../develop/environment-variables.md#amazon-s3).
+Als het gebruiken van de opslag van Amazon S3, specificeer de geloofsbrieven van de de wolkenopslag van Amazon S3 wanneer [&#x200B; het vormen van de het omgevingsvariabelen van het project &#x200B;](../develop/environment-variables.md#amazon-s3).
 
-Als u wolkenopslag speciaal voor dit leerprogramma moet verstrekken, adviseren wij gebruikend [ Azure BlobOpslag ](#azure-blob-storage).
+Als u wolkenopslag speciaal voor dit leerprogramma moet verstrekken, adviseren wij gebruikend [&#x200B; Azure BlobOpslag &#x200B;](#azure-blob-storage).

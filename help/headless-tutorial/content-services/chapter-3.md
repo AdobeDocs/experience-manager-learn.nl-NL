@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Hoofdstuk 3 - Inhoudsfragmenten voor gebeurtenissen ontwerpen
 
-Hoofdstuk 3 van het AEM Hoofdloze leerprogramma behandelt het creëren van en het ontwerpen van de Fragmenten van de Inhoud van Gebeurtenissen van het Model van het Fragment van de Inhoud dat in [ Hoofdstuk 2 ](./chapter-2.md) wordt gecreeerd.
+Hoofdstuk 3 van het AEM Hoofdloze leerprogramma behandelt het creëren van en het ontwerpen van de Fragmenten van de Inhoud van Gebeurtenissen van het Model van het Fragment van de Inhoud dat in [&#x200B; Hoofdstuk 2 &#x200B;](./chapter-2.md) wordt gecreeerd.
 
 ## Een gebeurtenisinhoudsfragment ontwerpen
 
@@ -45,9 +45,9 @@ Maak in deze stap een nieuwe [!DNL Event] for `Punkrock Fest` in de map met `/co
 
    Tik op **[!UICONTROL Save]** in de bovenste actiebalk om de wijzigingen op te slaan.
 
-1. Gebruikend [ AEM de Manager van het Pakket ](http://localhost:4502/crx/packmgr/index.jsp), installeer hieronder het pakket op AEM Auteur. Dit pakket bevat een aantal gebeurtenisinhoudsfragmenten.
+1. Gebruikend [&#x200B; AEM de Manager van het Pakket &#x200B;](http://localhost:4502/crx/packmgr/index.jsp), installeer hieronder het pakket op AEM Auteur. Dit pakket bevat een aantal gebeurtenisinhoudsfragmenten.
 
-   [ krijgt Dossier: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.content.chapter-3.zip ](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
+   [&#x200B; krijgt Dossier: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.content.chapter-3.zip &#x200B;](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
 
 >[!VIDEO](https://video.tv.adobe.com/v/28338?quality=12&learn=on)
 
@@ -55,17 +55,17 @@ Maak in deze stap een nieuwe [!DNL Event] for `Punkrock Fest` in de map met `/co
 
 *deze sectie is informationeel slechts en bedoeld om de onderliggende die structuur te socialiseren JCR van Inhoudsfragmenten van de Modellen van het Fragment van de Inhoud worden gemaakt.*
 
-1. Open **[CRXDE Lite ](http://localhost:4502/crx/de/index.jsp)** op AEM Auteur.
-1. In CRXDE Lite navigeert u in het hiërarchische menu links naar [ /content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content ](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content) . Dit is het knooppunt dat het [!DNL Punkrock Fest] [!DNL Event] Content Fragment in de JCR vertegenwoordigt.
-1. Breid de [ gegevens ](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content/data/master) knoop uit.
+1. Open **[CRXDE Lite &#x200B;](http://localhost:4502/crx/de/index.jsp)** op AEM Auteur.
+1. In CRXDE Lite navigeert u in het hiërarchische menu links naar [&#x200B; /content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content &#x200B;](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content) . Dit is het knooppunt dat het [!DNL Punkrock Fest] [!DNL Event] Content Fragment in de JCR vertegenwoordigt.
+1. Breid de [&#x200B; gegevens &#x200B;](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content/data/master) knoop uit.
 Het overzicht in de **ruit van Eigenschappen** dat het een bezit `cq:model` heeft dat aan de [!DNL Event] modeldefinitie van het Fragment van de Inhoud richt.
    * **`cq:model`**=**`/conf/settings/wknd-mobile/dam/cfm/models/event`**
-1. Onder de `data` knoop selecteer de [ hoofd ](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content/data/master) knoop en herzie de eigenschappen. Dit knooppunt bevat de inhoud die is verzameld tijdens het ontwerpen van een [!DNL Event] Content Fragment Model. De JCR-eigenschapsnamen komen overeen met de naam van de eigenschap van het Content Fragment Model en de waarden komen overeen met de geschreven waarden van het [!DNL Punkrock Fest] [!DNL Event] Content Fragment.
+1. Onder de `data` knoop selecteer de [&#x200B; hoofd &#x200B;](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content/data/master) knoop en herzie de eigenschappen. Dit knooppunt bevat de inhoud die is verzameld tijdens het ontwerpen van een [!DNL Event] Content Fragment Model. De JCR-eigenschapsnamen komen overeen met de naam van de eigenschap van het Content Fragment Model en de waarden komen overeen met de geschreven waarden van het [!DNL Punkrock Fest] [!DNL Event] Content Fragment.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28356?quality=12&learn=on)
 
 ## Volgende stap
 
-Het wordt geadviseerd, installeert u [ com.adobe.aem.guides.wknd-mobile.content.chapter-3.zip ](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) inhoudspakket op AEM Auteur via [ AEM [!UICONTROL Package Manager] ](http://localhost:4502/crx/packmgr/index.jsp). Dit pakket bevat de configuraties en inhoud die in dit en vorige hoofdstukken van de zelfstudie worden beschreven.
+Het wordt geadviseerd, installeert u [&#x200B; com.adobe.aem.guides.wknd-mobile.content.chapter-3.zip &#x200B;](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) inhoudspakket op AEM Auteur via [&#x200B; AEM [!UICONTROL Package Manager] &#x200B;](http://localhost:4502/crx/packmgr/index.jsp). Dit pakket bevat de configuraties en inhoud die in dit en vorige hoofdstukken van de zelfstudie worden beschreven.
 
 * [Hoofdstuk 4 - Templates voor AEM inhoudsdiensten definiëren](./chapter-4.md)

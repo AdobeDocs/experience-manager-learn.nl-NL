@@ -26,13 +26,13 @@ Leer hoe u met Content Transfer Tool inhoud van AEM 6.3+ naar AEM as a Cloud Ser
 
 ## Het gereedschap Inhoud overbrengen gebruiken
 
-![ Levenscyclus van het Hulpmiddel van de Overdracht van de Inhoud ](../assets/content-transfer-tool.png)
+![&#x200B; Levenscyclus van het Hulpmiddel van de Overdracht van de Inhoud &#x200B;](../assets/content-transfer-tool.png)
 
 De Content Transfer Tool is geïnstalleerd op AEM 6.3+ en verzendt inhoud naar AEM as a Cloud Service.
 
 ## Belangrijkste activiteiten
 
-+ Download het [ recentste Hulpmiddel van de Overdracht van de Inhoud ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list p.offset=0&amp;p.limit=2).
++ Download het [&#x200B; recentste Hulpmiddel van de Overdracht van de Inhoud &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list p.offset=0&amp;p.limit=2).
 + Breng de uiteindelijke AEM Author 6.3+-inhoud over naar de AEM as a Cloud Service Author-service.
    + Installeer het gereedschap Inhoud overbrengen op de AEM 6.3+-auteur met de uiteindelijke inhoud die u wilt overbrengen.
    + Voer het gereedschap Inhoud overbrengen in batches uit en breng sets inhoud over.
@@ -79,6 +79,6 @@ Zorg er ook voor dat u de vorige hands-on oefening hebt uitgevoerd:
 
 ## Overige middelen
 
-+ [ het Hulpmiddel van de Overdracht van de Inhoud van de Download ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list p.offset=0&amp;p.limit=2)
-+ [ Bulk de Dienst van de Invoer hoe te video ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/bulk-import.html?lang=nl-NL)
++ [&#x200B; het Hulpmiddel van de Overdracht van de Inhoud van de Download &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list p.offset=0&amp;p.limit=2)
++ [&#x200B; Bulk de Dienst van de Invoer hoe te video &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/bulk-import.html?lang=nl-NL)
 

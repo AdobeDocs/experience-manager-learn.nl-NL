@@ -27,7 +27,7 @@ De code die wordt gebruikt voor het uitvoeren van de functie voor automatisch aa
 
 ## Voorstellen voor adres
 
-![ land-suggesties ](assets/auto-complete2.png)
+![&#x200B; land-suggesties &#x200B;](assets/auto-complete2.png)
 
 
 
@@ -66,7 +66,7 @@ $(".streetAddress input").autocomplete({
 
 ## Suggesties met emoji&#39;s
 
-![ land-suggesties ](assets/auto-complete3.png)
+![&#x200B; land-suggesties &#x200B;](assets/auto-complete3.png)
 
 De volgende code is gebruikt om emoji&#39;s weer te geven in de lijst met suggesties
 
@@ -79,7 +79,7 @@ minLength: 1, source: values, delay: 0
 );
 ```
 
-De [ steekproefvorm kan ](assets/auto-complete-form.zip) van hier worden gedownload. Zorg ervoor dat u uw eigen gebruikersnaam/API-sleutel opgeeft met de code-editor voor de code om REST-aanroepen te kunnen uitvoeren.
+De [&#x200B; steekproefvorm kan &#x200B;](assets/auto-complete-form.zip) van hier worden gedownload. Zorg ervoor dat u uw eigen gebruikersnaam/API-sleutel opgeeft met de code-editor voor de code om REST-aanroepen te kunnen uitvoeren.
 
 >[!NOTE]
 >

@@ -22,6 +22,6 @@ ht-degree: 0%
 
 Cloud Manager geeft een geconsolideerd beeld van de activiteiten van een programma, waarin alle uitvoeringen van de CBI/CD-pijpleiding, zowel de productie als de niet-productie, worden vermeld. Dit staat gebruikers toe om het even welke pijpleidingen te bekijken momenteel lopend en vorige plaatsingen te herzien.
 
-Cloud Manager integreert ook op een per-gebruikersniveau met [ Meldingen van Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/notifications.html?lang=nl-NL), die een alomtegenwoordige mening in gebeurtenissen en acties van belang verstrekken.
+Cloud Manager integreert ook op een per-gebruikersniveau met [&#x200B; Meldingen van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/notifications.html?lang=nl-NL), die een alomtegenwoordige mening in gebeurtenissen en acties van belang verstrekken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26319?quality=12&learn=on)

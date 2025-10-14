@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Aangepaste naamruimten
 
-Leer hoe te om douane [ namespaces ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/4.5_Namespaces.html) aan AEM as a Cloud Service te bepalen en op te stellen.
+Leer hoe te om douane [&#x200B; namespaces &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/4.5_Namespaces.html) aan AEM as a Cloud Service te bepalen en op te stellen.
 
 Aangepaste naamruimten zijn het optionele deel van een JCR-eigenschap dat voorafgaat aan een `:` . AEM gebruikt verschillende naamruimten, zoals:
 
@@ -33,13 +33,13 @@ Aangepaste naamruimten zijn het optionele deel van een JCR-eigenschap dat vooraf
 
 Naamruimten kunnen worden gebruikt om het bereik en de intentie van een eigenschap aan te geven. Door een aangepaste naamruimte te maken, vaak uw bedrijfsnaam, kunt u knooppunten of eigenschappen die specifiek zijn voor uw AEM-implementatie duidelijk identificeren en gegevens bevatten die specifiek zijn voor uw bedrijf.
 
-De douane namespaces wordt beheerd in [ het Schipen van de Initialisatie van de Bewaarplaats (opnieuw richt) ](https://sling.apache.org/documentation/bundles/repository-initialization.html) manuscripten, en stelt aan AEM as a Cloud Service als configuraties OSGi op - en toegevoegd aan het [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) `ui.config` project van uw  AEM project.
+De douane namespaces wordt beheerd in [&#x200B; het Schipen van de Initialisatie van de Bewaarplaats (opnieuw richt) &#x200B;](https://sling.apache.org/documentation/bundles/repository-initialization.html) manuscripten, en stelt aan AEM as a Cloud Service als configuraties OSGi op - en toegevoegd aan het [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) `ui.config` project van uw  AEM project.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3412319?quality=12&learn=on)
 
 ## Bronnen
 
-+ [ het Sling Repository Initialization (repoinit) documentatie ](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios)
++ [&#x200B; het Sling Repository Initialization (repoinit) documentatie &#x200B;](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios)
 
 ## Code
 
@@ -58,4 +58,4 @@ De volgende code wordt gebruikt om een naamruimte `wknd` te configureren.
 }
 ```
 
-Hierdoor kunnen aangepaste eigenschappen die de naamruimte `wknd` gebruiken, zoals de eerste parameter na de instructie `register namespace` , in AEM worden gebruikt. Voor geavanceerdere manuscriptdefinities, herzie de voorbeelden in de [ Verschuivende Documentatie van de Initialisatie van de Bewaarplaats van de Bewaarplaats (repoinit) ](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios).
+Hierdoor kunnen aangepaste eigenschappen die de naamruimte `wknd` gebruiken, zoals de eerste parameter na de instructie `register namespace` , in AEM worden gebruikt. Voor geavanceerdere manuscriptdefinities, herzie de voorbeelden in de [&#x200B; Verschuivende Documentatie van de Initialisatie van de Bewaarplaats van de Bewaarplaats (repoinit) &#x200B;](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios).

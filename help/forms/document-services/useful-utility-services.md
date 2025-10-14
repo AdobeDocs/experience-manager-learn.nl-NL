@@ -35,7 +35,7 @@ public abstract String saveDocumentInCrx(String jcrPath,String fileExtension, Do
 }
 ```
 
-De steekproefbundel kan [ van hier worden gedownload ](assets/aemformsutilityfunctions.aemformsutilityfunctions.core-1.0-SNAPSHOT.jar)
+De steekproefbundel kan [&#x200B; van hier worden gedownload &#x200B;](assets/aemformsutilityfunctions.aemformsutilityfunctions.core-1.0-SNAPSHOT.jar)
 
 ## Voorbeeldcode voor het gebruik van de hulpprogrammaservice(s)
 
@@ -50,7 +50,7 @@ aemFormsUtilities.saveDocumentInCrx("/content/xmlfiles",".xml",xmlStringDoc);
 ## Vereisten
 
 
-U zult [ DevelopingWithServiceUserBundle ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar?lang=nl-NL) moeten opstellen en de bundel beginnen.
+U zult [&#x200B; DevelopingWithServiceUserBundle &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar?lang=nl-NL) moeten opstellen en de bundel beginnen.
 
 
-Als u documenten in de bewaarplaats van CRX gebruikend deze nutsdienst gaat bewaren, te volgen gelieve het [ ontwikkelen met het artikel van de de dienstgebruiker ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=nl-NL#adaptive-forms). Zorg ervoor u de [ vereiste toestemmingen ](http://localhost:4502/useradmin) op de aangewezen omslagen van CRX aan de fd-dienst gebruiker verstrekt.
+Als u documenten in de bewaarplaats van CRX gebruikend deze nutsdienst gaat bewaren, te volgen gelieve het [&#x200B; ontwikkelen met het artikel van de de dienstgebruiker &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=nl-NL#adaptive-forms). Zorg ervoor u de [&#x200B; vereiste toestemmingen &#x200B;](http://localhost:4502/useradmin) op de aangewezen omslagen van CRX aan de fd-dienst gebruiker verstrekt.

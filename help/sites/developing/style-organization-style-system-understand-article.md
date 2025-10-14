@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Gelieve te herzien de inhoud bij [ Begrip hoe te voor het Systeem van de Stijl ](style-system-technical-video-understand.md) te coderen, om een inzicht in de BEM-als overeenkomsten te verzekeren die door het Systeem van de Stijl van AEM worden gebruikt.
+>Gelieve te herzien de inhoud bij [&#x200B; Begrip hoe te voor het Systeem van de Stijl &#x200B;](style-system-technical-video-understand.md) te coderen, om een inzicht in de BEM-als overeenkomsten te verzekeren die door het Systeem van de Stijl van AEM worden gebruikt.
 
 Er zijn twee hoofdstijlen of stijlen die voor het Systeem van de Stijl van AEM worden uitgevoerd:
 
@@ -73,13 +73,13 @@ De [!UICONTROL Style Group] -namen en het aantal [!UICONTROL Style Groups] -name
 
 Bijvoorbeeld, kon de **naam van de de stijlgroep van de Vertoning** **Kleuren** genoemd zijn.
 
-![ de Groep van de Stijl van de Vertoning ](assets/style-config.png)
+![&#x200B; de Groep van de Stijl van de Vertoning &#x200B;](assets/style-config.png)
 
 ### Menu Stijlselectie {#style-selection-menu}
 
 In de onderstaande afbeelding ziet u de interactie tussen de auteurs van het menu [!UICONTROL Style] en de juiste stijlen voor de component. Let op: de namen [!UICONTROL Style Grpi] en Stijl worden allemaal weergegeven aan de auteur.
 
-![ de drop-down menu van de Stijl ](assets/style-menu.png)
+![&#x200B; de drop-down menu van de Stijl &#x200B;](assets/style-menu.png)
 
 ### Standaardstijl {#default-style}
 
@@ -87,7 +87,7 @@ De standaardstijl is vaak de meest gebruikte stijl van de component en de standa
 
 Afhankelijk van de standaardinstelling kan de CSS rechtstreeks worden toegepast op de `.cmp-teaser` (zonder wijzigingstoetsen) of op een `.cmp-teaser--default` .
 
-Als de standaardstijlregels vaker dan niet op alle variaties van toepassing zijn, kunt u `.cmp-teaser` het beste gebruiken als de CSS-klassen van de standaardstijl, aangezien alle variaties deze impliciet moeten overnemen, ervan uitgaande dat de BEM-achtige conventies worden gevolgd. Als niet, zouden zij via de standaardbepaling, zoals `.cmp-teaser--default` moeten worden toegepast, die beurtelings aan het [ gebied van de de stijlconfiguratie van de component de StandaardCSS Klassen ](#component-styles-configuration) moet worden toegevoegd, anders zullen deze stijlregels in elke variatie moeten worden met voeten getreden.
+Als de standaardstijlregels vaker dan niet op alle variaties van toepassing zijn, kunt u `.cmp-teaser` het beste gebruiken als de CSS-klassen van de standaardstijl, aangezien alle variaties deze impliciet moeten overnemen, ervan uitgaande dat de BEM-achtige conventies worden gevolgd. Als niet, zouden zij via de standaardbepaling, zoals `.cmp-teaser--default` moeten worden toegepast, die beurtelings aan het [&#x200B; gebied van de de stijlconfiguratie van de component de StandaardCSS Klassen &#x200B;](#component-styles-configuration) moet worden toegevoegd, anders zullen deze stijlregels in elke variatie moeten worden met voeten getreden.
 
 Het is zelfs mogelijk om een stijl &quot;benoemd&quot; als de standaardstijl toe te wijzen, bijvoorbeeld de hieronder gedefinieerde hoofdstijl `(.cmp-teaser--hero)` , maar het is duidelijker om de standaardstijl te implementeren in combinatie met de implementatie van de CSS-klasse `.cmp-teaser` of `.cmp-teaser--default` .
 
@@ -105,7 +105,7 @@ Het is zelfs mogelijk om een stijl &quot;benoemd&quot; als de standaardstijl toe
 >
 >In de **Bevordering (juist-gericht)** sectie hieronder zullen wij zien hoe te om ongewenste stijlcombinaties te verhinderen.
 
-![ standaardstijl ](assets/default.png)
+![&#x200B; standaardstijl &#x200B;](assets/default.png)
 
 * **de stijl van de Lay-out**
    * Standaard
@@ -121,7 +121,7 @@ Dit bereiken, a **lay-outstijl** van **Promo** en de **vertoningsstijlen** van *
 
 #### Standaardwaarde voor aanbieding
 
-![ bevorderingsgebrek ](assets/promo-default.png)
+![&#x200B; bevorderingsgebrek &#x200B;](assets/promo-default.png)
 
 * **de stijl van de Lay-out**
    * Stijlnaam: **Promo**
@@ -132,7 +132,7 @@ Dit bereiken, a **lay-outstijl** van **Promo** en de **vertoningsstijlen** van *
 
 #### Primaire aanbieding
 
-![ promo primary ](assets/promo-primary.png)
+![&#x200B; promo primary &#x200B;](assets/promo-primary.png)
 
 * **de stijl van de Lay-out**
    * Stijlnaam: **Promo**
@@ -144,7 +144,7 @@ Dit bereiken, a **lay-outstijl** van **Promo** en de **vertoningsstijlen** van *
 
 #### Secundaire aanbieding
 
-![ Secundaire Promo ](assets/promo-secondary.png)
+![&#x200B; Secundaire Promo &#x200B;](assets/promo-secondary.png)
 
 * **de stijl van de Lay-out**
    * Stijlnaam: **Promo**
@@ -162,7 +162,7 @@ De juiste uitlijning, in de kern, is een weergavestijl die u in het AEM Style Sy
 
 **stelt slechts stijlcombinaties bloot die een effect** hebben
 
-..die reeds in de [ Standaardstijl ](#default-style) werd geschonden.
+..die reeds in de [&#x200B; Standaardstijl &#x200B;](#default-style) werd geschonden.
 
 Omdat de juiste uitlijning alleen van invloed is op de stijl van de Promo-lay-out en niet op de andere twee lay-outstijlen: standaard en held, kunnen we een nieuwe lay-outstijlpromotie (rechts uitgelijnd) maken die de CSS-klasse bevat die de inhoud van de Promo-lay-outstijlen met de rechtermuisknop uitlijnt: `cmp -teaser--alternate` .
 
@@ -172,7 +172,7 @@ De naam van de CSS-klasse `cmp-teaser--alternate` hoeft niet overeen te komen me
 
 #### Standaard naar rechts uitgelijnde aanbieding
 
-![ bevordering rechts gericht ](assets/promo-alternate-default.png)
+![&#x200B; bevordering rechts gericht &#x200B;](assets/promo-alternate-default.png)
 
 * **de stijl van de Lay-out**
    * De naam van de stijl: **Bevordering (juist-gericht)**
@@ -183,7 +183,7 @@ De naam van de CSS-klasse `cmp-teaser--alternate` hoeft niet overeen te komen me
 
 #### Primaire aanbieding rechts uitgelijnd
 
-![ Bevordering juist-gericht Primair ](assets/promo-alternate-primary.png)
+![&#x200B; Bevordering juist-gericht Primair &#x200B;](assets/promo-alternate-primary.png)
 
 * **de stijl van de Lay-out**
    * De naam van de stijl: **Bevordering (juist-gericht)**
@@ -195,7 +195,7 @@ De naam van de CSS-klasse `cmp-teaser--alternate` hoeft niet overeen te komen me
 
 #### Secundaire promotie rechts uitgelijnd
 
-![ Bevordering rechts-gericht Secundair ](assets/promo-alternate-secondary.png)
+![&#x200B; Bevordering rechts-gericht Secundair &#x200B;](assets/promo-alternate-secondary.png)
 
 * **de stijl van de Lay-out**
    * De naam van de stijl: **Bevordering (juist-gericht)**
@@ -237,7 +237,7 @@ CSS voor het kleuren van de tekst van de **Hero** lay-outstijl met de primaire (
 
 #### Hero Default
 
-![ de Stijl van het hoofd ](assets/hero.png)
+![&#x200B; de Stijl van het hoofd &#x200B;](assets/hero.png)
 
 * **de stijl van de Lay-out**
    * Stijlnaam: **Hero**
@@ -248,7 +248,7 @@ CSS voor het kleuren van de tekst van de **Hero** lay-outstijl met de primaire (
 
 #### Primaire hoofdafbeelding van Hero
 
-![ Primaire Hero ](assets/hero-primary.png)
+![&#x200B; Primaire Hero &#x200B;](assets/hero-primary.png)
 
 * **de stijl van de Lay-out**
    * Stijlnaam: **Promo**
@@ -260,7 +260,7 @@ CSS voor het kleuren van de tekst van de **Hero** lay-outstijl met de primaire (
 
 #### Hero Secondary
 
-![ Secundaire Hero ](assets/hero-secondary.png)
+![&#x200B; Secundaire Hero &#x200B;](assets/hero-secondary.png)
 
 * **de stijl van de Lay-out**
    * Stijlnaam: **Promo**
@@ -272,8 +272,8 @@ CSS voor het kleuren van de tekst van de **Hero** lay-outstijl met de primaire (
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ Documentatie van het Systeem van de Stijl ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/authoring/using/style-system.html)
-* [ Creërend de bibliotheken van de Cliënt van AEM ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/clientlibs.html)
-* [ BEM (de Modifier van het Element van het Blok) documentatiewebsite ](https://getbem.com/)
-* [ LESS de website van de Documentatie ](https://lesscss.org/)
-* [ jQuery website ](https://jquery.com/)
+* [&#x200B; Documentatie van het Systeem van de Stijl &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/authoring/using/style-system.html)
+* [&#x200B; Creërend de bibliotheken van de Cliënt van AEM &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [&#x200B; BEM (de Modifier van het Element van het Blok) documentatiewebsite &#x200B;](https://getbem.com/)
+* [&#x200B; LESS de website van de Documentatie &#x200B;](https://lesscss.org/)
+* [&#x200B; jQuery website &#x200B;](https://jquery.com/)

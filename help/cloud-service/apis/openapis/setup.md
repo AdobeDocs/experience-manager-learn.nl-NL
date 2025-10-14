@@ -44,13 +44,13 @@ De modernisering van het milieu van AEM as a Cloud Service is een eenmalige mili
 
 ### AEM-instantie bijwerken{#update-aem-instance}
 
-Om de instantie van AEM bij te werken, in de Adobe [ Cloud Manager _van de Milieu_ sectie van 1&rbrace; &lbrace;, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **optie van de Update**.](https://my.cloudmanager.adobe.com/)
+Om de instantie van AEM bij te werken, in de Adobe [&#x200B; Cloud Manager _van de Milieu_ sectie van 1&rbrace; &lbrace;, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **optie van de Update**.](https://my.cloudmanager.adobe.com/)
 
-![ Update AEM instantie ](./assets/setup/update-aem-instance.png)
+![&#x200B; Update AEM instantie &#x200B;](./assets/setup/update-aem-instance.png)
 
 Dan klik **voorleggen** knoop en stel _gesuggereerde_ FullstackPipeline in werking.
 
-![ Uitgezochte recentste versie van de versie van AEM ](./assets/setup/select-latest-aem-release.png)
+![&#x200B; Uitgezochte recentste versie van de versie van AEM &#x200B;](./assets/setup/select-latest-aem-release.png)
 
 In mijn geval, wordt de FullstackPipeline genoemd **Dev:: Fullstack-Deploy**, en het milieu van AEM wordt genoemd **wknd-programma-dev**. Uw namen kunnen verschillen.
 
@@ -58,19 +58,19 @@ In mijn geval, wordt de FullstackPipeline genoemd **Dev:: Fullstack-Deploy**, en
 
 Om nieuwe Profielen van het Product aan de instantie van AEM toe te voegen, in de 2&rbrace; sectie van de Milieu&#39;s [&#128279;](https://my.cloudmanager.adobe.com/) van Adobe __, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **toevoegen de optie van de Profielen van het Product**.
 
-![ voeg nieuwe Profielen van het Product ](./assets/setup/add-new-product-profiles.png) toe
+![&#x200B; voeg nieuwe Profielen van het Product &#x200B;](./assets/setup/add-new-product-profiles.png) toe
 
 U kunt de onlangs toegevoegde Profielen van het Product herzien door op het _ellips_ pictogram naast de milieunaam te klikken en **te selecteren beheert Toegang** > **Profielen van de Auteur**.
 
 Het _Admin Console_ venster toont de onlangs toegevoegde Profielen van het Product.
 
-![ Herzie nieuwe Profielen van het Product ](./assets/setup/review-new-product-profiles.png)
+![&#x200B; Herzie nieuwe Profielen van het Product &#x200B;](./assets/setup/review-new-product-profiles.png)
 
 Met de bovenstaande stappen wordt de modernisering van de AEM as a Cloud Service-omgeving voltooid.
 
 ## Toegang tot AEM API&#39;s inschakelen{#enable-aem-apis-access}
 
-De aanwezigheid van de _nieuwe Profielen van het Product_ laat op OpenAPI-Gebaseerde toegang van AEM API in Adobe Developer Console (ADC) toe. Rappel dat [ Adobe Developer Console (ADC) ](./overview.md#accessing-adobe-apis-and-related-concepts) de ontwikkelaarshub voor de toegang tot van Adobe APIs, SDKs, gebeurtenissen in real time, serverless functies, en meer is.
+De aanwezigheid van de _nieuwe Profielen van het Product_ laat op OpenAPI-Gebaseerde toegang van AEM API in Adobe Developer Console (ADC) toe. Rappel dat [&#x200B; Adobe Developer Console (ADC) &#x200B;](./overview.md#accessing-adobe-apis-and-related-concepts) de ontwikkelaarshub voor de toegang tot van Adobe APIs, SDKs, gebeurtenissen in real time, serverless functies, en meer is.
 
 De onlangs toegevoegde Profielen van het Product worden geassocieerd met de _Diensten_ die _gebruikersgroepen van AEM met vooraf bepaalde Lijsten van het Toegangsbeheer (ACLs)_ vertegenwoordigen. De _Diensten_ worden gebruikt om het niveau van toegang tot AEM APIs te controleren.
 
@@ -84,7 +84,7 @@ Herzie de vereniging door op het _pictogram van de Details van de Mening_ naast 
 
 Door gebrek, wordt de **AEM Assets API Gebruikers** Dienst niet geassocieerd met om het even welk Profiel van het Product. Laat ons het met de onlangs toegevoegde **Gebruikers van de Medewerker van AEM Assets associëren - auteur - Programma XXX - het Profiel van het Product van het Milieu XXX** of een ander Profiel van het Product dat u voor de toegang van AEM Assets API wilt gebruiken.
 
-![ associeerde de Dienst van de Gebruikers van AEM Assets API met het Profiel van het Product ](./assets/setup/associate-aem-assets-api-users-service-with-product-profile.png)
+![&#x200B; associeerde de Dienst van de Gebruikers van AEM Assets API met het Profiel van het Product &#x200B;](./assets/setup/associate-aem-assets-api-users-service-with-product-profile.png)
 
 ### Server-naar-server verificatie inschakelen
 
@@ -92,7 +92,7 @@ Om de server-aan-server authentificatie voor de gewenste AEM APIs toe te laten, 
 
 Bijvoorbeeld, om de server-aan-server authentificatie voor AEM Assets API toe te laten, moet de gebruiker als Ontwikkelaar aan de **Gebruikers van de Medewerker van AEM Assets - auteur - Programma XXX - het Profiel van het Product van het Milieu XXX** worden toegevoegd.
 
-![ associeerde Ontwikkelaar aan het Profiel van het Product ](./assets/setup/associate-developer-to-product-profile.png)
+![&#x200B; associeerde Ontwikkelaar aan het Profiel van het Product &#x200B;](./assets/setup/associate-developer-to-product-profile.png)
 
 Na deze vereniging, kan de 20&rbrace; ActivaAuteur API van het Project ADC _opstelling de gewenste server-aan-Server authentificatie en de authentificatierekening van het Project associëren ADC (die in de volgende stap) met het Profiel van het Product wordt gecreeerd._
 
@@ -106,21 +106,21 @@ Het ADC-project wordt gebruikt om de gewenste API&#39;s toe te voegen, de verifi
 
 Een ADC-project maken:
 
-1. Login aan [ Adobe Developer Console ](https://developer.adobe.com/console) gebruikend uw Adobe ID.
+1. Login aan [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/console) gebruikend uw Adobe ID.
 
-   ![ Adobe Developer Console ](./assets/setup/adobe-developer-console.png)
+   ![&#x200B; Adobe Developer Console &#x200B;](./assets/setup/adobe-developer-console.png)
 
 1. Van de _Snelle sectie van het Begin_, klik op **creeer nieuwe project** knoop.
 
-   ![ creeer nieuw project ](./assets/setup/create-new-project.png)
+   ![&#x200B; creeer nieuw project &#x200B;](./assets/setup/create-new-project.png)
 
 1. Het leidt tot een nieuw project met de standaardnaam.
 
-   ![ Nieuw gecreeerd project ](./assets/setup/new-project-created.png)
+   ![&#x200B; Nieuw gecreeerd project &#x200B;](./assets/setup/new-project-created.png)
 
 1. Bewerk de projectnaam door **te klikken uitgeeft project** knoop in de hoogste juiste hoek. Verstrek een betekenisvolle naam en klik **sparen**.
 
-   ![ geef projectnaam ](./assets/setup/edit-project-name.png) uit
+   ![&#x200B; geef projectnaam &#x200B;](./assets/setup/edit-project-name.png) uit
 
 ## ADC-project configureren{#configure-adc-project}
 
@@ -128,40 +128,40 @@ Nadat u het ADC-project hebt gemaakt, moet u de gewenste AEM API&#39;s toevoegen
 
 1. Om AEM APIs toe te voegen, klik op **voeg API** knoop toe.
 
-   ![ voeg API ](./assets/s2s/add-api.png) toe
+   ![&#x200B; voeg API &#x200B;](./assets/s2s/add-api.png) toe
 
 1. In _voeg API_ dialoog toe, filter door _Experience Cloud_ en selecteer gewenste AEM API. Bijvoorbeeld, in dit geval, wordt _Auteur API van Activa_ geselecteerd.
 
-   ![ voeg AEM API ](./assets/s2s/add-aem-api.png) toe
+   ![&#x200B; voeg AEM API &#x200B;](./assets/s2s/add-aem-api.png) toe
 
    >[!TIP]
    >
-   >    Als de gewenste **AEM API kaart** wordt onbruikbaar gemaakt en _waarom is dit gehandicapt?_ de informatie toont het **Vereiste Vergunning** bericht één van de redenen zou kunnen zijn dat u uw milieu van AEM as a Cloud Service NIET hebt gemoderniseerd, zie [ Modernisering van het milieu van AEM as a Cloud Service ](#modernization-of-aem-as-a-cloud-service-environment) voor meer informatie.
+   >    Als de gewenste **AEM API kaart** wordt onbruikbaar gemaakt en _waarom is dit gehandicapt?_ de informatie toont het **Vereiste Vergunning** bericht één van de redenen zou kunnen zijn dat u uw milieu van AEM as a Cloud Service NIET hebt gemoderniseerd, zie [&#x200B; Modernisering van het milieu van AEM as a Cloud Service &#x200B;](#modernization-of-aem-as-a-cloud-service-environment) voor meer informatie.
 
 1. Daarna, in _vorm API_ dialoog, selecteer de gewenste authentificatieoptie. Bijvoorbeeld, in dit geval, wordt de **server-aan-Server** authentificatieoptie geselecteerd.
 
-   ![ Uitgezochte authentificatie ](./assets/s2s/select-authentication.png)
+   ![&#x200B; Uitgezochte authentificatie &#x200B;](./assets/s2s/select-authentication.png)
 
-   De server-aan-server authentificatie is ideaal voor de backenddiensten die API toegang zonder gebruikersinteractie vereisen. De opties Web App en Single Page App voor verificatie zijn geschikt voor toepassingen die API-toegang nodig hebben namens gebruikers. Zie [ Verschil tussen Server-aan-Server van OAuth vs Web App vs Één enkele geloofsbrieven van de Toepassing van de Pagina ](./overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials) voor meer informatie.
+   De server-aan-server authentificatie is ideaal voor de backenddiensten die API toegang zonder gebruikersinteractie vereisen. De opties Web App en Single Page App voor verificatie zijn geschikt voor toepassingen die API-toegang nodig hebben namens gebruikers. Zie [&#x200B; Verschil tussen Server-aan-Server van OAuth vs Web App vs Één enkele geloofsbrieven van de Toepassing van de Pagina &#x200B;](./overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials) voor meer informatie.
 
    >[!TIP]
    >
-   >Als u niet de server-aan-server authentificatieoptie ziet, betekent het dat de gebruiker die opstelling de integratie niet als Ontwikkelaar aan het Profiel van het Product wordt toegevoegd waar de Dienst wordt geassocieerd. Zie [ Server-aan-Server authentificatie ](#enable-server-to-server-authentication) voor meer informatie toelaten.
+   >Als u niet de server-aan-server authentificatieoptie ziet, betekent het dat de gebruiker die opstelling de integratie niet als Ontwikkelaar aan het Profiel van het Product wordt toegevoegd waar de Dienst wordt geassocieerd. Zie [&#x200B; Server-aan-Server authentificatie &#x200B;](#enable-server-to-server-authentication) voor meer informatie toelaten.
 
 
 1. Indien nodig kunt u de naam van de API wijzigen om deze gemakkelijker te kunnen identificeren. Voor demo-doeleinden wordt de standaardnaam gebruikt.
 
-   ![ noem referentie ](./assets/s2s/rename-credential.png) anders
+   ![&#x200B; noem referentie &#x200B;](./assets/s2s/rename-credential.png) anders
 
 1. In dit geval, is de authentificatiemethode **OAuth Server-aan-Server** zodat moet u de authentificatierekening met het Profiel van het Product associëren. Selecteer de **Gebruikers van de Medewerker van AEM Assets - auteur - Programma XXX - het Profiel van het Product van Milieu XXX** en klik **sparen**.
 
-   ![ Uitgezochte Profiel van het Product ](./assets/s2s/select-product-profile.png)
+   ![&#x200B; Uitgezochte Profiel van het Product &#x200B;](./assets/s2s/select-product-profile.png)
 
 1. Controleer de AEM API- en verificatieconfiguratie.
 
-   ![ de configuratie van AEM API ](./assets/s2s/aem-api-configuration.png)
+   ![&#x200B; de configuratie van AEM API &#x200B;](./assets/s2s/aem-api-configuration.png)
 
-   ![ configuratie van de Authentificatie ](./assets/s2s/authentication-configuration.png)
+   ![&#x200B; configuratie van de Authentificatie &#x200B;](./assets/s2s/authentication-configuration.png)
 
 Als u **of** OAuth App **authentificatiemethode van de Toepassing van de Toepassing van de enig-Pagina** kiest, wordt de vereniging van het Profiel van het Product niet veroorzaakt maar de toepassing richt URI wordt vereist. De URI voor omleiding van de toepassing wordt gebruikt om de gebruiker na verificatie met een machtigingscode om te leiden naar de toepassing. In de relevante zelfstudies voor gebruiksgevallen worden dergelijke configuraties beschreven.
 
@@ -173,7 +173,7 @@ Het wordt gedaan door de API configuratie in een dossier te bepalen YAML en het 
 
 1. Zoek in AEM Project het `api.yaml` -bestand in de map `config` of maak dit.
 
-   ![ plaats API YAML ](./assets/setup/locate-api-yaml.png){width="500" zoomable="no"}
+   ![&#x200B; plaats API YAML &#x200B;](./assets/setup/locate-api-yaml.png){width="500" zoomable="no"}
 
 1. Voeg de volgende configuratie toe aan het `api.yaml` dossier.
 
@@ -198,7 +198,7 @@ Het wordt gedaan door de API configuratie in een dossier te bepalen YAML en het 
 
 1. Implementeer de bovenstaande wijzigingen met behulp van de configuratiegids in de Cloud Manager. Het `api.yaml` -bestand kan ook worden geïnstalleerd in een RDE met behulp van opdrachtregelprogramma&#39;s.
 
-   ![ stel YAML ](./assets/setup/config-pipeline.png) op
+   ![&#x200B; stel YAML &#x200B;](./assets/setup/config-pipeline.png) op
 
 ## Volgende stappen
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 # De oplossing testen
 
 Nadat de code is geïmplementeerd, maakt u een adaptief formulier op basis van kerncomponenten. Koppel het adaptieve formulier aan de Prefill-service, zoals in de onderstaande schermafbeelding wordt getoond.
-![ prefill-service ](assets/pre-fill-service.png)
+![&#x200B; prefill-service &#x200B;](assets/pre-fill-service.png)
 
 Telkens wanneer het formulier wordt gegenereerd, wordt de bijbehorende Prefill-service uitgevoerd en wordt het formulier gevuld met de gegevens die door de Prefill-service worden geretourneerd.
 

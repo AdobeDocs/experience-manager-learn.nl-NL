@@ -23,16 +23,16 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3454459?quality=12&learn=on&captions=dut)
 
-Dit voorbeeld AEM de uitbreiding van de Console van het Fragment van de Inhoud is een [ uitbreiding van de actiebar ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) die bulkupdates een bezit van het Fragment van de Inhoud aan een gemeenschappelijke waarde.
+Dit voorbeeld AEM de uitbreiding van de Console van het Fragment van de Inhoud is een [&#x200B; uitbreiding van de actiebar &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) die bulkupdates een bezit van het Fragment van de Inhoud aan een gemeenschappelijke waarde.
 
 De functionele stroom van de voorbeeldextensie is als volgt:
 
-![ de actiestroom van Adobe I/O Runtime ](./assets/bulk-property-update/flow.png){align="center"}
+![&#x200B; de actiestroom van Adobe I/O Runtime &#x200B;](./assets/bulk-property-update/flow.png){align="center"}
 
-1. Selecteer de Fragmenten van de Inhoud en het klikken van de knoop van de uitbreiding in de [ actiebar ](#extension-registration) opent [ modaal ](#modal).
-2. [ modaal ](#modal) toont een vorm van de douanetoevoer die met [ wordt gebouwd Reageer Spectrum ](https://react-spectrum.adobe.com/react-spectrum/).
-3. Het voorleggen van de vorm verzendt de lijst van geselecteerde Fragmenten van de Inhoud, en de gastheer van AEM naar de [ actie van douaneAdobe I/O Runtime ](#adobe-io-runtime-action).
-4. De [ actie van Adobe I/O Runtime ](#adobe-io-runtime-action) bevestigt de input en doet de verzoeken van HTTP PUT aan AEM om de geselecteerde Fragmenten van de Inhoud bij te werken.
+1. Selecteer de Fragmenten van de Inhoud en het klikken van de knoop van de uitbreiding in de [&#x200B; actiebar &#x200B;](#extension-registration) opent [&#x200B; modaal &#x200B;](#modal).
+2. [&#x200B; modaal &#x200B;](#modal) toont een vorm van de douanetoevoer die met [&#x200B; wordt gebouwd Reageer Spectrum &#x200B;](https://react-spectrum.adobe.com/react-spectrum/).
+3. Het voorleggen van de vorm verzendt de lijst van geselecteerde Fragmenten van de Inhoud, en de gastheer van AEM naar de [&#x200B; actie van douaneAdobe I/O Runtime &#x200B;](#adobe-io-runtime-action).
+4. De [&#x200B; actie van Adobe I/O Runtime &#x200B;](#adobe-io-runtime-action) bevestigt de input en doet de verzoeken van HTTP PUT aan AEM om de geselecteerde Fragmenten van de Inhoud bij te werken.
 5. Een reeks HTTP PUTs voor elk Inhoudsfragment om het gespecificeerde bezit bij te werken.
 6. AEM as a Cloud Service gaat door met de eigenschappenupdates voor het inhoudsfragment en retourneert een geslaagde of mislukte reactie op de Adobe I/O Runtime-actie.
 7. Het modaal ontving de reactie van de actie van Adobe I/O Runtime, en toont een lijst van succesvolle bulkupdates.
@@ -43,7 +43,7 @@ In dit voorbeeld wordt het uitbreidingspunt `actionBar` uitgebreid om een aangep
 
 | AEM-gebruikersinterface uitgebreid | Extensiepunt |
 | ------------------------ | --------------------- | 
-| [ de Console van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [ de Bar van de Actie ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) |
+| [&#x200B; de Console van het Fragment van de Inhoud &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [&#x200B; de Bar van de Actie &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) |
 
 
 ## Voorbeeldextensie
@@ -66,11 +66,11 @@ De gegenereerde App Builder-extensie-app wordt bijgewerkt zoals hieronder wordt 
 
 ### Toepassingsroutes{#app-routes}
 
-`src/aem-cf-console-admin-1/web-src/src/components/App.js` bevat de [ React router ](https://reactrouter.com/en/main).
+`src/aem-cf-console-admin-1/web-src/src/components/App.js` bevat de [&#x200B; React router &#x200B;](https://reactrouter.com/en/main).
 
 Er zijn twee logische reeksen routes:
 
-1. De eerste routekaarten verzoeken aan `index.html`, die de component van het Reageren verantwoordelijk voor de [ uitbreidingsregistratie ](#extension-registration) aanhaalt.
+1. De eerste routekaarten verzoeken aan `index.html`, die de component van het Reageren verantwoordelijk voor de [&#x200B; uitbreidingsregistratie &#x200B;](#extension-registration) aanhaalt.
 
    ```javascript
    <Route index element={<ExtensionRegistration />} />
@@ -78,7 +78,7 @@ Er zijn twee logische reeksen routes:
 
 1. De tweede reeks routes brengt URLs in kaart om componenten te Reageren die de inhoud van de modaal van de uitbreiding teruggeven. De `:selection` -param vertegenwoordigt een pad met een als scheidingsteken weergegeven inhoudsfragment.
 
-   Als de uitbreiding veelvoudige knopen heeft om discrete acties aan te halen, elke [ uitbreidingsregistratie ](#extension-registration) kaarten aan een hier bepaalde route.
+   Als de uitbreiding veelvoudige knopen heeft om discrete acties aan te halen, elke [&#x200B; uitbreidingsregistratie &#x200B;](#extension-registration) kaarten aan een hier bepaalde route.
 
    ```javascript
    <Route
@@ -168,10 +168,10 @@ In deze voorbeeld-app is er een modale React-component (`BulkPropertyUpdateModal
 1. Het formulier voor updates van eigenschappen met opsommingstekens waarmee de gebruiker de naam en de waarde van de eigenschap kan opgeven voor bijwerken
 1. De reactie van de bulkeigenschapsupdate-bewerking, waarin de inhoudsfragmenten worden vermeld die zijn bijgewerkt en de fragmenten die niet konden worden bijgewerkt
 
-Belangrijk, zou om het even welke interactie met AEM van de uitbreiding aan een [ actie van Adobe I/O Runtime AppBuilder ](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) moeten worden gedelegeerd, die een afzonderlijk serverless proces is dat in [ Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/) loopt.
+Belangrijk, zou om het even welke interactie met AEM van de uitbreiding aan een [&#x200B; actie van Adobe I/O Runtime AppBuilder &#x200B;](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) moeten worden gedelegeerd, die een afzonderlijk serverless proces is dat in [&#x200B; Adobe I/O Runtime &#x200B;](https://developer.adobe.com/runtime/docs/) loopt.
 Het gebruik van Adobe I/O Runtime-acties om met AEM te communiceren, is om problemen met de connectiviteit van het delen van bronnen van verschillende oorsprong (CORS) te voorkomen.
 
-Wanneer de vorm van de Update van het Bezit van het Bulk wordt voorgelegd, roept een douane `onSubmitHandler()` de actie van Adobe I/O Runtime aan, die de huidige gastheer van AEM (domein) en het toegangstoken van AEM van de gebruiker overgaat, die beurtelings [ het Fragment API van de Inhoud van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=nl-NL) roept om de inhoudsfragmenten bij te werken.
+Wanneer de vorm van de Update van het Bezit van het Bulk wordt voorgelegd, roept een douane `onSubmitHandler()` de actie van Adobe I/O Runtime aan, die de huidige gastheer van AEM (domein) en het toegangstoken van AEM van de gebruiker overgaat, die beurtelings [&#x200B; het Fragment API van de Inhoud van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=nl-NL) roept om de inhoudsfragmenten bij te werken.
 
 Wanneer de reactie van de actie van Adobe I/O Runtime wordt ontvangen, wordt modal bijgewerkt om de resultaten van de bulkbezitsupdate verrichting te tonen.
 

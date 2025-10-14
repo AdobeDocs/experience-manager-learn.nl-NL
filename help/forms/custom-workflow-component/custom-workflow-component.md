@@ -21,8 +21,8 @@ ht-degree: 0%
 Deze zelfstudie is bedoeld voor AEM Forms-klanten die een aangepaste workflowcomponent moeten maken. De workflowcomponent wordt geconfigureerd om de code uit te voeren die in de vorige stap is geschreven. De workflowcomponent kan procesargumenten voor de code opgeven. In dit artikel bekijken we de workflowcomponent die aan de code is gekoppeld.
 
 
-[ Download de component van het douanewerkschema ](assets/saveFiles.zip)
-Invoer de werkschemacomponent [ gebruikend pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
+[&#x200B; Download de component van het douanewerkschema &#x200B;](assets/saveFiles.zip)
+Invoer de werkschemacomponent [&#x200B; gebruikend pakketmanager &#x200B;](http://localhost:4502/crx/packmgr/index.jsp)
 
 De aangepaste workflowcomponent bevindt zich in /apps/AEMFormsDemoListings/workflowcomponent/SaveFiles
 
@@ -35,36 +35,36 @@ Selecteer de knoop SaveFiles en onderzoek zijn eigenschappen
 **sling:resourceSuperType** De waarde van dit bezit zal de overerving van deze component bepalen. In dit geval nemen wij van de procescomponent over
 
 
-![ component-eigenschappen ](assets/component-properties1.png)
+![&#x200B; component-eigenschappen &#x200B;](assets/component-properties1.png)
 
 ## cq:dialoogvenster
 
 Dialogen worden gebruikt om auteur toe te staan om met de component in wisselwerking te staan. De cq:dialog bevindt zich onder het knooppunt SaveFiles
-![ cq-dialoog ](assets/cq-dialog.png)
+![&#x200B; cq-dialoog &#x200B;](assets/cq-dialog.png)
 
 De knopen onder de puntenknoop vertegenwoordigen de lusjes van de component waardoor de auteurs met de component zullen communiceren. De algemene tabbladen en procestabbladen zijn verborgen. De tabbladen Algemeen en Argumenten zijn zichtbaar.
 
 De procesargumenten voor het proces bevinden zich onder het procesknooppunt
 
-![ proces-args ](assets/process-arguments.png)
+![&#x200B; proces-args &#x200B;](assets/process-arguments.png)
 
 De auteur specificeert de argumenten zoals aangetoond in het hieronder ontsproten scherm
-![ werkschema-component ](assets/custom-workflow-component.png)
+![&#x200B; werkschema-component &#x200B;](assets/custom-workflow-component.png)
 
 De waarden worden opgeslagen als eigenschappen van het metagegevensknooppunt. Bijvoorbeeld de waarde **c:\formsattachments** zal in het bezit saveToLocation van de meta-gegevensknoop worden opgeslagen
-![ sparen-plaats ](assets/save-to-location.png)
+![&#x200B; sparen-plaats &#x200B;](assets/save-to-location.png)
 
 ## cq:editConfig
 
 Cq:EditConfig is eenvoudig een knoop met het primaire type cq:EditConfig en de naam cq:editConfig onder de componentenwortel
 Het bewerkingsgedrag van een component wordt geconfigureerd door een cq:editConfig-knooppunt van het type cq:EditConfig toe te voegen onder het componentknooppunt (van het type cq:Component)
 
-![ geef-config uit ](assets/cq-edit-config.png)
+![&#x200B; geef-config uit &#x200B;](assets/cq-edit-config.png)
 
 cq:formParameters (knooppunttype nt:unStructured): definieert aanvullende parameters die aan het dialoogvenster worden toegevoegd.
 
 
 De eigenschappen van het knooppunt cq:formParameters
-![ van-parameters-eigenschappen ](assets/form-parameters-properties.png)
+![&#x200B; van-parameters-eigenschappen &#x200B;](assets/form-parameters-properties.png)
 
 De waarde van de eigenschap PROCESS geeft de Java-code aan die aan de workflowcomponent wordt gekoppeld.

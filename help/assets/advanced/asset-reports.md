@@ -28,4 +28,4 @@ AEM Assets biedt een rapportagekader op bedrijfsniveau dat schaalt voor grote op
 
 >[!IMPORTANT]
 >
->AEM 6.5 verstrekt het vermogen om [ activarapporten ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=nl-NL#prerequisite-for-reporting) te vormen, toestaand beheerders om te bepalen wat wordt gevolgd en inbegrepen in de rapporten.
+>AEM 6.5 verstrekt het vermogen om [&#x200B; activarapporten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=nl-NL#prerequisite-for-reporting) te vormen, toestaand beheerders om te bepalen wat wordt gevolgd en inbegrepen in de rapporten.

@@ -30,11 +30,11 @@ De formuliergegevens die in Adobe Analytics zijn vastgelegd, worden in donut-ind
 
 **Voorleggen door Staat**
 
-![ applicantsbystate ](assets/donut.png)
+![&#x200B; applicantsbystate &#x200B;](assets/donut.png)
 
 Veldvalidatiefouten
 
-![ gebied-bevestiging-fout ](assets/donut-field-validation.png)
+![&#x200B; gebied-bevestiging-fout &#x200B;](assets/donut-field-validation.png)
 
 ## Foutopsporing
 
@@ -51,13 +51,13 @@ _satellite.setDebug(true)
 
 Communiceer met uw formulier terwijl u het consolevenster open houdt. Je moet zoiets zien
 
-![ console-debug ](assets/debug.png)
+![&#x200B; console-debug &#x200B;](assets/debug.png)
 
 ## Adobe Experience Platform Debugger gebruiken
 
-Voeg de [ debugger van AEP uitbreiding ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=nl-NL) aan uw browser (u wordt vereist om binnen te ondertekenen) toe om meer het zuiveren informatie te krijgen
+Voeg de [&#x200B; debugger van AEP uitbreiding &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=nl-NL) aan uw browser (u wordt vereist om binnen te ondertekenen) toe om meer het zuiveren informatie te krijgen
 
-![ platform-debugger ](assets/platform-debugger.png)
+![&#x200B; platform-debugger &#x200B;](assets/platform-debugger.png)
 
 ## Gefeliciteerd
 

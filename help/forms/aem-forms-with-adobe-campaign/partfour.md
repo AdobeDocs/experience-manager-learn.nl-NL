@@ -31,7 +31,7 @@ Bij het maken van Data Source met het gumerbestand ondersteunt AEM Forms de volg
 * API-sleutel
 * Aangepaste verificatie
 
-![ campagne fdm ](assets/campaignfdm.gif)
+![&#x200B; campagne fdm &#x200B;](assets/campaignfdm.gif)
 
 Wij zullen douaneauthentificatie moeten gebruiken om REST vraag aan Adobe Campaign Standard te maken.
 
@@ -113,7 +113,7 @@ Voorbeeldwagerbestand wordt aan u gegeven als onderdeel van het element dat betr
 ## De oplossing testen {#test-the-solution}
 
 Volg de volgende stappen om de oplossing te testen:
-* [ zorg ervoor u de hier beschreven stappen hebt gevolgd ](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [&#x200B; zorg ervoor u de hier beschreven stappen hebt gevolgd &#x200B;](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Download en decomprimeer dit bestand om het wagerbestand op te halen](assets/create-acs-profile-swagger-file.zip)
 * Source-gegevens maken met behulp van het wagerbestand
 Formuliergegevensmodel maken en dit baseren op de gegevens die in de vorige stap zijn gemaakt in de Source

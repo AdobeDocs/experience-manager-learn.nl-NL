@@ -32,7 +32,7 @@ Werk package.json bij om de volgende gebiedsdelen te omvatten. Op het moment van
 
 >[!NOTE]
 >
->De drop-down lijst en de kaartlay-out in dit leerprogramma werden gecreeerd gebruikend [ Materiële bibliotheek UI ](https://mui.com/). U moet de juiste Materiële UI-pakketten downloaden om de code op uw systeem te laten werken.
+>De drop-down lijst en de kaartlay-out in dit leerprogramma werden gecreeerd gebruikend [&#x200B; Materiële bibliotheek UI &#x200B;](https://mui.com/). U moet de juiste Materiële UI-pakketten downloaden om de code op uw systeem te laten werken.
 
 ## Proxy instellen
 

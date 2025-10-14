@@ -28,24 +28,24 @@ Het toevoegen van aangepaste pictogrammen aan tabbladen kan de gebruikerservarin
 * Visuele hiërarchie en focus: pictogrammen maken een duidelijker scheiding tussen tabbladen, waardoor de visuele hiërarchie wordt verbeterd. Hierdoor kunnen belangrijke tabbladen beter opvallen en de aandacht van de gebruikers effectief sturen.
 Als u dit artikel volgt, kunt u de pictogrammen zoals hieronder weergegeven plaatsen
 
-![ pictogrammen ](assets/icons.png)
+![&#x200B; pictogrammen &#x200B;](assets/icons.png)
 
 ## Vereisten
 
-Als u dit artikel wilt volgen, moet u vertrouwd zijn met Git, een AEM-project maken en implementeren met cloud Manager, een front-end-pijplijn instellen in AEM Cloud Manager en een beetje CSS. Als u niet vertrouwd met de bovengenoemde onderwerpen bent, te volgen gelieve [ gebruikend thema&#39;s aan de componenten van de stijlkern ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components#rename-env-file-theme-folder) artikel.
+Als u dit artikel wilt volgen, moet u vertrouwd zijn met Git, een AEM-project maken en implementeren met cloud Manager, een front-end-pijplijn instellen in AEM Cloud Manager en een beetje CSS. Als u niet vertrouwd met de bovengenoemde onderwerpen bent, te volgen gelieve [&#x200B; gebruikend thema&#39;s aan de componenten van de stijlkern &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components#rename-env-file-theme-folder) artikel.
 
 ## Pictogrammen toevoegen aan het thema
 
 Open het themaproject in visuele studiocode of een andere redacteur van uw keus.
 Voeg de gewenste pictogrammen toe aan de map met afbeeldingen.
 De rood gemarkeerde pictogrammen zijn de nieuwe pictogrammen die worden toegevoegd.
-![ nieuw-pictogrammen ](assets/newicons.png)
+![&#x200B; nieuw-pictogrammen &#x200B;](assets/newicons.png)
 
 ## Pictogramafbeelding maken om de pictogrammen op te slaan
 
 Maak de pictogramkaart in het bestand _variable.scss. De kaart SCSS $icon-map is een inzameling van zeer belangrijk-waardeparen, waar elke sleutel een pictogramnaam (zoals huis, familie, enz.) vertegenwoordigt, en elke waarde is de weg aan het beelddossier verbonden aan dat pictogram.
 
-![ veranderlijk-scss ](assets/variable_scss.png)
+![&#x200B; veranderlijk-scss &#x200B;](assets/variable_scss.png)
 
 ```css
 $icon-map: (
@@ -123,7 +123,7 @@ Ten behoeve van het artikel heb ik een nieuwe CSS-klasse (cmp-verticaltabs—mar
 ## De component verticaltabs wijzigen
 
 Kopieer het bestand verticaltabs.html vanuit ```/apps/core/fd/components/form/verticaltabs/v1/verticaltabs/verticaltabs.html``` en plak het onder de component verticaltabs van uw project. Voeg de volgende regel ```data-icon-name="${tab.name}"``` toe aan het gekopieerde bestand met de rol li, zoals in de onderstaande afbeelding wordt getoond
-![ gegeven-pictogram ](assets/data-icons.png)
+![&#x200B; gegeven-pictogram &#x200B;](assets/data-icons.png)
 wij plaatsen een attribuut van douanegegevens genoemd gegeven-pictogram-name met de waarde van de lusjenaam. Als de lusjenaam een beeldnaam in de pictogramkaart aanpast, wordt het overeenkomstige beeld geassocieerd met het lusje.
 
 
@@ -133,10 +133,10 @@ wij plaatsen een attribuut van douanegegevens genoemd gegeven-pictogram-name met
 Implementeer de bijgewerkte component verticaltabs in uw cloudinstantie.
 Stel het bijgewerkte thema op gebruikend de frontend pijpleiding.
 Maak een stijlvariatie voor de verticale tabcomponenten, zoals hieronder wordt weergegeven
-![ stijl-variatie ](assets/verticaltab-style-variation.png)
+![&#x200B; stijl-variatie &#x200B;](assets/verticaltab-style-variation.png)
 Wij hebben een stijlvariatie genoemd Marketing gecreeerd die met css klasse _&#x200B;**cmp-verticaltabs-marketing**&#x200B;_ wordt geassocieerd.
 Maak een adaptief formulier met een verticale tabcomponent. Koppel de verticale tabcomponent aan de variatie in de marketingstijl.
 Voeg een aantal tabbladen toe aan de verticale tabbladen en geef deze de naam die overeenkomt met de afbeeldingen die zijn gedefinieerd in de pictogramkaart, zoals home,family.
-![ huis-pictogram ](assets/tab-name.png)
+![&#x200B; huis-pictogram &#x200B;](assets/tab-name.png)
 
 Geef een voorbeeld van het formulier weer. De juiste pictogrammen worden aan het tabblad gekoppeld

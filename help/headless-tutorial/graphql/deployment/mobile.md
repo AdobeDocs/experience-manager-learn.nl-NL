@@ -29,9 +29,9 @@ De volgende implementatieconfiguratie moet op zijn plaats zijn voor mobiele apps
 
 | Mobiele app maakt verbinding met → | AEM-auteur | AEM Publiceren | AEM Preview |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [ de filters van Dispatcher ](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [&#x200B; de filters van Dispatcher &#x200B;](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Delen van bronnen van oorsprong (CORS) | ✘ | ✘ | ✘ |
-| [ de gastheren van AEM ](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| [&#x200B; de gastheren van AEM &#x200B;](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Voorbeeld van mobiele apps
 

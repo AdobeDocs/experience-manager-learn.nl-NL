@@ -25,15 +25,15 @@ Meer informatie over instaptoegang tot AEM as a Cloud Service vanaf de contractf
 
 ## Cloud Manager- en beheerconsole
 
-![ op het instappen hoog niveaudiagram ](assets/onboarding-diagram.png)
+![&#x200B; op het instappen hoog niveaudiagram &#x200B;](assets/onboarding-diagram.png)
 
-Een belangrijk onderdeel van instapweigering is het maken van AEM as a Cloud Service-programma&#39;s en het aanbieden van verschillende omgevingen met Adobe Cloud Manager. [ Admin Console ](https://adminconsole.adobe.com/) wordt gebruikt om rollen toe te wijzen en toegang voor gebruikers in uw organisatie aan de milieu&#39;s van AEM te verlenen.
+Een belangrijk onderdeel van instapweigering is het maken van AEM as a Cloud Service-programma&#39;s en het aanbieden van verschillende omgevingen met Adobe Cloud Manager. [&#x200B; Admin Console &#x200B;](https://adminconsole.adobe.com/) wordt gebruikt om rollen toe te wijzen en toegang voor gebruikers in uw organisatie aan de milieu&#39;s van AEM te verlenen.
 
 ## Belangrijkste activiteiten
 
-+ Een systeembeheerder gebruikt [ Admin Console ](https://adminconsole.adobe.com/) om één of meerdere gebruikers aan [ Cloud Manager toe te wijzen - BedrijfsEigenaar ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=nl-NL) productprofiel.
-+ Gebruiker(s) die aan het Profiel van het Product van de BedrijfsEigenaar worden toegewezen gebruikt de zelfbediening eigenschappen van [ Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=nl-NL) aan [ creeer programma(s) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=nl-NL) en [ voeg milieu&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL) toe
-+ Gebruik [ Admin Console ](https://adminconsole.adobe.com/) om Ontwikkelaars en gebruikers aan verschillende [ rollen van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=nl-NL) toe te wijzen en toestemming aan diverse milieu&#39;s van AEM te verlenen.
++ Een systeembeheerder gebruikt [&#x200B; Admin Console &#x200B;](https://adminconsole.adobe.com/) om één of meerdere gebruikers aan [&#x200B; Cloud Manager toe te wijzen - BedrijfsEigenaar &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=nl-NL) productprofiel.
++ Gebruiker(s) die aan het Profiel van het Product van de BedrijfsEigenaar worden toegewezen gebruikt de zelfbediening eigenschappen van [&#x200B; Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=nl-NL) aan [&#x200B; creeer programma(s) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=nl-NL) en [&#x200B; voeg milieu&#39;s &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL) toe
++ Gebruik [&#x200B; Admin Console &#x200B;](https://adminconsole.adobe.com/) om Ontwikkelaars en gebruikers aan verschillende [&#x200B; rollen van Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=nl-NL) toe te wijzen en toestemming aan diverse milieu&#39;s van AEM te verlenen.
 
 ## Handbeweging
 

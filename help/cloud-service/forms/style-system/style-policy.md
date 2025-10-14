@@ -25,11 +25,11 @@ ht-degree: 0%
 * Selecteer en open **Leeg met het malplaatje van de Componenten van de Kern** op geef wijze uit.
 * Klik op het beleidspictogram van de knoopcomponent om de beleidsredacteur te openen.
 
-* ![ knoop-beleid ](assets/button-policy.png)
+* ![&#x200B; knoop-beleid &#x200B;](assets/button-policy.png)
 
 Bepaal het beleid zoals hieronder getoond
 
-![ knoop-beleid-details ](assets/styling-policy.png)
+![&#x200B; knoop-beleid-details &#x200B;](assets/styling-policy.png)
 
 We hebben twee stijlen/variaties gedefinieerd: Marketing en Corporate. Deze variaties zijn gekoppeld aan corresponderende CSS-klassen.**gelieve ervoor te zorgen is er geen ruimte vóór en na de CSS klassennamen**.
 Sla uw wijzigingen op.

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Een blok ontwikkelen met CSS en JavaScript
 
-In het [ vorige hoofdstuk ](./7b-block-js-css.md), werd het stileren van een blok gebruikend slechts CSS behandeld. Nu gaat de focus naar het ontwikkelen van een blok met zowel JavaScript als CSS.
+In het [&#x200B; vorige hoofdstuk &#x200B;](./7b-block-js-css.md), werd het stileren van een blok gebruikend slechts CSS behandeld. Nu gaat de focus naar het ontwikkelen van een blok met zowel JavaScript als CSS.
 
 In dit voorbeeld wordt getoond hoe u een blok op drie manieren kunt verbeteren:
 
@@ -32,7 +32,7 @@ In dit voorbeeld wordt getoond hoe u een blok op drie manieren kunt verbeteren:
 Deze aanpak is met name handig in de volgende scenario&#39;s:
 
 - **Extern CSS beheer:** wanneer CSS van het blok buiten Edge Delivery Services wordt beheerd en niet met zijn structuur van HTML richt.
-- **Extra attributen:** wanneer de extra attributen, zoals [ ARIA ](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) voor toegankelijkheid of [ microgegevens ](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata), worden vereist.
+- **Extra attributen:** wanneer de extra attributen, zoals [&#x200B; ARIA &#x200B;](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) voor toegankelijkheid of [&#x200B; microgegevens &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata), worden vereist.
 - **de verhogingen van JavaScript:** wanneer de interactieve eigenschappen, zoals gebeurtenisluisteraars, noodzakelijk zijn.
 
 Deze methode is afhankelijk van native JavaScript DOM-manipulatie in de browser, maar vereist voorzichtigheid bij het wijzigen van de DOM, vooral bij het verplaatsen van elementen. Dergelijke wijzigingen kunnen de ontwerpervaring van de Universal Editor verstoren. Ideaal gezien, zou het de inhoudsmodel van het blok [&#128279;](./5-new-block.md#block-model) moeten worden bedacht om de behoefte aan uitgebreide DOM veranderingen te minimaliseren.
@@ -85,7 +85,7 @@ Hieronder ziet u het DOM van het teaserblok dat als doel heeft het versieren met
 
 Als u het DOM wilt zoeken om te versieren, opent u de pagina met het niet-versierde blok in uw lokale ontwikkelomgeving, selecteert u het blok en inspecteert u het DOM.
 
-![ blok DOM van de Inspectie ](./assets/7a-block-css/inspect-block-dom.png)
+![&#x200B; blok DOM van de Inspectie &#x200B;](./assets/7a-block-css/inspect-block-dom.png)
 
 >[!ENDTABS]
 
@@ -173,13 +173,13 @@ export default function decorate(block) {
 
 ## CSS blokkeren
 
-Als u a `teaser.css` in het [ vorige hoofdstuk ](./7a-block-css.md) creeerde schrap het, of noem het aan `teaser.css.bak` anders, aangezien dit hoofdstuk verschillende CSS voor het teaser blok uitvoert.
+Als u a `teaser.css` in het [&#x200B; vorige hoofdstuk &#x200B;](./7a-block-css.md) creeerde schrap het, of noem het aan `teaser.css.bak` anders, aangezien dit hoofdstuk verschillende CSS voor het teaser blok uitvoert.
 
 Maak een `teaser.css` -bestand in de map van het blok. Dit bestand bevat de CSS-code die het blok opmaakt. Deze CSS-code is gericht op de elementen van het blok en de specifieke, semantische CSS-klassen die door de JavaScript in `teaser.js` zijn toegevoegd.
 
 Zeldelementen kunnen nog steeds rechtstreeks worden vormgegeven, of met de aangepaste, toegepaste CSS-klassen. Voor complexere blokken, kan het toepassen van semantische CSS klassen helpen CSS begrijpelijker en houdbaar maken, vooral wanneer het werken met grotere teams over langere periodes.
 
-[ als vóór ](./7a-block-css.md#develop-a-block-with-css), werkingsgebied CSS aan `.block.teaser` gebruikend [ CSS het nesten ](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting) om conflict met andere blokken te vermijden.
+[&#x200B; als vóór &#x200B;](./7a-block-css.md#develop-a-block-with-css), werkingsgebied CSS aan `.block.teaser` gebruikend [&#x200B; CSS het nesten &#x200B;](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting) om conflict met andere blokken te vermijden.
 
 [!BADGE &#x200B; /blocks/teaser/teaser.css]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
@@ -298,7 +298,7 @@ Zeldelementen kunnen nog steeds rechtstreeks worden vormgegeven, of met de aange
 
 De bovenstaande implementatie voegt ondersteuning toe voor speciale opmaakalinea&#39;s die beginnen met de tekst `Terms and conditions:` . Als u deze functionaliteit wilt valideren, werkt u in de Universal Editor de tekstinhoud van het teasblok bij en voegt u de voorwaarden en bepalingen in.
 
-Volg de stappen in de [ auteur een blok ](./6-author-block.md), en geef de tekst uit om a **termijnen en voorwaarden** paragraaf aan het eind te omvatten:
+Volg de stappen in de [&#x200B; auteur een blok &#x200B;](./6-author-block.md), en geef de tekst uit om a **termijnen en voorwaarden** paragraaf aan het eind te omvatten:
 
 ```
 WKND Adventures
@@ -308,17 +308,17 @@ Join us on one of our next adventures. Browse our list of curated experiences an
 Terms and conditions: By signing up, you agree to the rules for participation and booking.
 ```
 
-Controleer of de alinea wordt gerenderd met de stijl van de voorwaarden en bepalingen in de lokale ontwikkelomgeving. Herinner me, wijzen deze codeveranderingen niet op in Universele Redacteur tot zij [ aan een tak op GitHub ](#preview-in-universal-editor) worden geduwd dat de Universele Redacteur aan gebruik is gevormd.
+Controleer of de alinea wordt gerenderd met de stijl van de voorwaarden en bepalingen in de lokale ontwikkelomgeving. Herinner me, wijzen deze codeveranderingen niet op in Universele Redacteur tot zij [&#x200B; aan een tak op GitHub &#x200B;](#preview-in-universal-editor) worden geduwd dat de Universele Redacteur aan gebruik is gevormd.
 
 ## Ontwikkelvoorbeeld
 
 Terwijl de CSS en JavaScript worden toegevoegd, laadt de lokale ontwikkelomgeving van de AEM CLI de wijzigingen hot-reload, zodat u snel en gemakkelijk kunt zien hoe code van invloed is op het blok. Houd de muisaanwijzer boven de CTA en controleer of de afbeelding van de taser in- en uitzoomt.
 
-![ Lokale ontwikkelingsvoorproef van teaser gebruikend CSS en JS ](./assets/7b-block-js-css/local-development-preview.png)
+![&#x200B; Lokale ontwikkelingsvoorproef van teaser gebruikend CSS en JS &#x200B;](./assets/7b-block-js-css/local-development-preview.png)
 
 ## Uw code plaatsen
 
-Zorg ervoor aan [ vaak ](./3-local-development-environment.md#linting) uw codescheidingen om het schoon en verenigbaar te houden. Regelmatige lijnen helpen vangstkwesties vroeg, die algemene ontwikkelingstijd verminderen. U kunt uw ontwikkelingswerk pas samenvoegen in de `main` -vertakking als alle problemen met koppelingen zijn opgelost.
+Zorg ervoor aan [&#x200B; vaak &#x200B;](./3-local-development-environment.md#linting) uw codescheidingen om het schoon en verenigbaar te houden. Regelmatige lijnen helpen vangstkwesties vroeg, die algemene ontwikkelingstijd verminderen. U kunt uw ontwikkelingswerk pas samenvoegen in de `main` -vertakking als alle problemen met koppelingen zijn opgelost.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -340,4 +340,4 @@ $ git push origin teaser
 
 U kunt nu een voorvertoning van de wijzigingen weergeven in de Universal Editor wanneer u de queryparameter `?ref=teaser` toevoegt.
 
-![ Taser in Universele Redacteur ](./assets/7b-block-js-css/universal-editor-preview.png)
+![&#x200B; Taser in Universele Redacteur &#x200B;](./assets/7b-block-js-css/universal-editor-preview.png)

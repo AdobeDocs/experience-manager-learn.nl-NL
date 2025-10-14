@@ -25,7 +25,7 @@ In AEM as a Cloud Service is het begrijpen van caching cruciaal. In cache plaats
 
 AEM as a Cloud Service heeft meerdere lagen in cache en strategieën die verschillen tussen de services Auteur en Publiceren.
 
-![ AEM as a Cloud Service caching overzicht ](./assets/overview/all.png){align="center"}
+![&#x200B; AEM as a Cloud Service caching overzicht &#x200B;](./assets/overview/all.png){align="center"}
 
 ## AEM caching
 

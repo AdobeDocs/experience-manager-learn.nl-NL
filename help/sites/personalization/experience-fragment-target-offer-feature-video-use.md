@@ -35,5 +35,5 @@ Adobe Experience Manager herstelt de personalisatieworkflow tussen AEM en Target
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ de Documentatie van Fragmenten van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=nl-NL)
+* [&#x200B; de Documentatie van Fragmenten van de Ervaring &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=nl-NL)
 * [Beleidsfragmenten gebruiken](/help/sites/experience-fragments/experience-fragments-feature-video-use.md)

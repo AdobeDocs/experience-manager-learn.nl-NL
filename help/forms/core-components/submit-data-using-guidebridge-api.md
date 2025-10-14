@@ -24,7 +24,7 @@ Leer hoe u de GuideBridge-API gebruikt om formuliergegevens te openen en te verz
 
 De formuliergegevens worden opgeslagen door een JavaScript-functie te activeren wanneer u op een knop in de regeleditor klikt.
 
-![ Redacteur van de Regel ](assets/rule-editor.png)
+![&#x200B; Redacteur van de Regel &#x200B;](assets/rule-editor.png)
 
 De JavaScript-functie hieronder laat zien hoe de formuliergegevens naar het opgegeven eindpunt worden verzonden:
 

@@ -18,14 +18,14 @@ ht-degree: 0%
 
 # Eclipproject importeren
 
-* Download en unzip het [ zip dossier ](./assets/pdf-manipulation.zip)
+* Download en unzip het [&#x200B; zip dossier &#x200B;](./assets/pdf-manipulation.zip)
 * Eclipse starten en het project importeren in Eclipse
 * Het project bevat de volgende mappen in de bronnenmap:
    * ddxFiles - Deze map bevat het ddx-bestand om de uitvoer te beschrijven die u wilt genereren
    * pdffiles - Deze map bevat de PDF-bestanden die u wilt samenstellen en pdf-bestanden om PDFA-hulpprogramma&#39;s te testen
    * credentials - Deze map bevat het bestand pdfa-options.json
 
-![ middelen-dossier ](./assets/resources.png)
+![&#x200B; middelen-dossier &#x200B;](./assets/resources.png)
 
 ## PDF-bestanden samenstellen testen
 
@@ -46,6 +46,6 @@ ht-degree: 0%
 
 
 >[!NOTE]
-> De allereerste keer dat u het Java-programma uitvoert, wordt een HTTP 403-fout gegenereerd. Om voorbij dit te krijgen zorg u de [ aangewezen toestemmingen aan de technische rekeningsgebruiker in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=nl-NL#configure-access-in-aem) geeft.
+> De allereerste keer dat u het Java-programma uitvoert, wordt een HTTP 403-fout gegenereerd. Om voorbij dit te krijgen zorg u de [&#x200B; aangewezen toestemmingen aan de technische rekeningsgebruiker in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=nl-NL#configure-access-in-aem) geeft.
 
 **de Gebruikers van AEM Forms** is de rol ik voor deze cursus heb gebruikt.

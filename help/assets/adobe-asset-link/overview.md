@@ -55,7 +55,7 @@ Adobe Asset Link biedt InDesign direct linkondersteuning tussen Adobe Asset Link
 
 >[!NOTE]
 >
->Gebruik alleen Adobe Creative Cloud Enterprise ID of Federated ID. Zorg ervoor u [ AEM voor de Verbinding van Activa van Adobe ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) vormt.
+>Gebruik alleen Adobe Creative Cloud Enterprise ID of Federated ID. Zorg ervoor u [&#x200B; AEM voor de Verbinding van Activa van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) vormt.
 
 U kunt een element op een van de volgende manieren in uw InDesign-lay-out plaatsen:
 
@@ -82,7 +82,7 @@ Als een FPO-uitvoering niet beschikbaar is voor een specifiek element in AEM, wo
 
 Hoe Adobe Asset Link-verificatie werkt in de context van Adobe Identity Management Services (IMS) en Adobe Experience Manager Author.
 
-![ Adobe Asset Link Architecture ](assets/adobe-asset-link-article-understand.png)
+![&#x200B; Adobe Asset Link Architecture &#x200B;](assets/adobe-asset-link-article-understand.png)
 
 1. De Adobe Asset Link-extensie vraagt via de Adobe Creative Cloud Desktop App om toestemming voor de Adobe Identity Manage Service (IMS) en ontvangt bij succes een token voor de gebruiker.
 1. De uitbreiding van de Verbinding van het Activa van Adobe verbindt met de Auteur van AEM over HTTP (S), met inbegrip van het token dat van de Drager in **wordt verkregen Stap 1**, gebruikend de regeling (HTTP/HTTPS), gastheer en haven die in de montages JSON van de uitbreiding wordt verstrekt.
@@ -96,4 +96,4 @@ Hoe Adobe Asset Link-verificatie werkt in de context van Adobe Identity Manageme
 
 ## Aanvullende bronnen
 
-+ [ de website van de Verbinding van Activa van Adobe ](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
++ [&#x200B; de website van de Verbinding van Activa van Adobe &#x200B;](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)

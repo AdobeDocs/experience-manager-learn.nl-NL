@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Het belangrijkste werkschema wordt teweeggebracht wanneer de gebruiker de aanvankelijke vorm (**RefinanceForm**) voorlegt. Hier volgt de workflow
 
-![ main-workflow ](assets/main-workflow.PNG)
+![&#x200B; main-workflow &#x200B;](assets/main-workflow.PNG)
 
 **Opslag Forms aan Ondertekenen** is een stap van het douaneproces.
 
@@ -118,7 +118,7 @@ public class StoreFormsToSignWorkflowStep implements WorkflowProcess {
 
 ## Assets
 
-Het Meerdere werkschema van Forms van het Teken dat in dit artikel wordt gebruikt kan [ van hier worden gedownload ](assets/sign-multiple-forms-workflows.zip)
+Het Meerdere werkschema van Forms van het Teken dat in dit artikel wordt gebruikt kan [&#x200B; van hier worden gedownload &#x200B;](assets/sign-multiple-forms-workflows.zip)
 
 >[!NOTE]
 > Zorg ervoor dat u de Day CQ Mail Service configureert om e-mailmeldingen te verzenden. Het e-mailsjabloon is ook beschikbaar in het bovenstaande pakket.

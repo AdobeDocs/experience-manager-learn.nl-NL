@@ -27,7 +27,7 @@ React is een populaire JavaScript-bibliotheek voor het bouwen van gebruikersinte
 
 Door gebruik te maken van AEM Headless API&#39;s kunt u inhoud, middelen en gegevens ophalen van uw AEM-instantie en deze gebruiken om uw React-toepassing aan te sturen. GraphQL, een flexibele querytaal voor API&#39;s, biedt een efficiënte en nauwkeurige manier om specifieke gegevens aan te vragen bij uw AEM-instantie, waardoor een naadloze integratie tussen React en AEM mogelijk wordt.
 
-![ Hoofdloze Eerste zelfstudie van AEM ](./assets/overview/overview.png)
+![&#x200B; Hoofdloze Eerste zelfstudie van AEM &#x200B;](./assets/overview/overview.png)
 
 In deze zelfstudie doorlopen we u stap voor stap een webervaring opbouwen met React en AEM Headless API&#39;s met GraphQL. U leert hoe u uw ontwikkelomgeving instelt, een verbinding tot stand brengt tussen React en AEM, inhoud ophaalt met behulp van GraphQL-query&#39;s en deze dynamisch rendert in uw webtoepassing.
 
@@ -49,17 +49,17 @@ Deze zelfstudie vereist beheerderstoegang tot een AEM as a Cloud Service-omgevin
 
 ### Software
 
-+ [ Node.js v16+ ](https://nodejs.org/en/)
++ [&#x200B; Node.js v16+ &#x200B;](https://nodejs.org/en/)
    + Controleer uw knooppuntversie door `node -v` van de bevellijn in werking te stellen
-+ [ npm 6+ ](https://www.npmjs.com/)
++ [&#x200B; npm 6+ &#x200B;](https://www.npmjs.com/)
    + Controleer uw npm-versie door `npm -v` vanaf de opdrachtregel uit te voeren
-+ [ Git ](https://git-scm.com/)
++ [&#x200B; Git &#x200B;](https://git-scm.com/)
    + Controleer uw it-versie door `git -v` uit te voeren vanaf de opdrachtregel
 
-De manager van de knoopversie van het gebruik [ (nvm) ](https://github.com/nvm-sh/nvm) om het hebben van veelvoudige versies van node.js op de zelfde machine te richten.
+De manager van de knoopversie van het gebruik [&#x200B; (nvm) &#x200B;](https://github.com/nvm-sh/nvm) om het hebben van veelvoudige versies van node.js op de zelfde machine te richten.
 
 Zorg ervoor dat u rechten hebt om software wereldwijd op uw computer te installeren.
 
 ## Volgende stap
 
-Nu uw milieu opstelling is, gaan op de volgende stap: [ Opstelling en auteursinhoud in AEM as a Cloud Service ](./1-content-modeling.md)
+Nu uw milieu opstelling is, gaan op de volgende stap: [&#x200B; Opstelling en auteursinhoud in AEM as a Cloud Service &#x200B;](./1-content-modeling.md)

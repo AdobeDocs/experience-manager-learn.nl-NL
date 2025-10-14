@@ -55,7 +55,7 @@ In de de basislijnconfiguratielandbouwbedrijven van AMS, zult u onze hieronder g
 ```
 
 
-Wanneer het creëren van de regels voor wat om al dan niet in het voorgeheugen onder te brengen, gelieve te verwijzen naar de documentatie [ hier ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#configuring-the-dispatcher-cache-cache)
+Wanneer het creëren van de regels voor wat om al dan niet in het voorgeheugen onder te brengen, gelieve te verwijzen naar de documentatie [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#configuring-the-dispatcher-cache-cache)
 
 
 ## Auteur in cache
@@ -159,7 +159,7 @@ Dit plaatsen kan in om het even welk landbouwbedrijf worden geplaatst maar slech
 >
 >Een van de normale gedragingen van de Dispatcher-module is dat als een aanvraag een queryparameter in de URI heeft (wordt meestal weergegeven als `/content/page.html?myquery=value` ), deze het cachebestand overslaat en rechtstreeks naar de AEM-instantie gaat. Het overweegt dit verzoek om een dynamische pagina en zou niet in het voorgeheugen ondergebracht moeten worden. Dit kan negatieve gevolgen voor geheim voorgeheugenefficiency veroorzaken.
 
-Zie dit [ artikel ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner) tonen hoe de belangrijke vraagparameters uw plaatsprestaties kunnen beïnvloeden.
+Zie dit [&#x200B; artikel &#x200B;](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner) tonen hoe de belangrijke vraagparameters uw plaatsprestaties kunnen beïnvloeden.
 
 Standaard wilt u de `ignoreUrlParams` -regels zo instellen dat `*` wordt toegestaan.  Betekenis dat alle vraagparameters worden genegeerd en alle pagina&#39;s om ongeacht de gebruikte parameters in het voorgeheugen worden geplaatst.
 
@@ -336,6 +336,6 @@ Hier is een voorbeeld van een basislijnconfiguratie waarvoor elementen op een ui
 
 We willen onze gepubliceerde site zo hebzuchtig mogelijk maken en alles in de cache plaatsen.
 
-Als er elementen zijn die de ervaring breken wanneer caching u regels kunt toevoegen om de optie te verwijderen om dat punt in het voorgeheugen onder te brengen. Zoals u in het voorbeeld hierboven ziet, mogen de csrf-tokens nooit in de cache worden geplaatst en zijn deze uitgesloten. De verdere details bij het schrijven van deze regels kunnen [ hier worden gevonden ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#configuring-the-dispatcher-cache-cache)
+Als er elementen zijn die de ervaring breken wanneer caching u regels kunt toevoegen om de optie te verwijderen om dat punt in het voorgeheugen onder te brengen. Zoals u in het voorbeeld hierboven ziet, mogen de csrf-tokens nooit in de cache worden geplaatst en zijn deze uitgesloten. De verdere details bij het schrijven van deze regels kunnen [&#x200B; hier worden gevonden &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#configuring-the-dispatcher-cache-cache)
 
 [Volgende -> Variabelen gebruiken en begrijpen](./variables.md)

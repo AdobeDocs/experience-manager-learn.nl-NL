@@ -26,9 +26,9 @@ Met de beoordeling van de rijpheid kunnen de normen en de beste praktijken worde
 
 Zie de volgende bronnen voor beste praktijken voor het beheren, ontwikkelen of ontwerpen van bestanden:
 
-* [ het Beheer beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/bestpractices/administer-best-practices.html?lang=nl-NL)
-* [ het Ontwikkelen van beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html?lang=nl-NL)
-* [ Authoring best practices ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/best-practices.html?lang=nl-NL)
+* [&#x200B; het Beheer beste praktijken &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/bestpractices/administer-best-practices.html?lang=nl-NL)
+* [&#x200B; het Ontwikkelen van beste praktijken &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html?lang=nl-NL)
+* [&#x200B; Authoring best practices &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/best-practices.html?lang=nl-NL)
 
 Elk van deze beste praktijkgebieden hierboven omvat ook verdere beste praktijken in creatie, het ontwikkelen en het opstellen van AEM.
 

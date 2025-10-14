@@ -123,7 +123,7 @@ Asset Compute-werknemers moeten in Adobe I/O Runtime worden ingezet om met AEM a
 
 ### Workers integreren via AEM-verwerkingsprofielen
 
-Zodra opgesteld aan Adobe I/O Runtime, kunnen de arbeiders van Asset Compute in AEM as a Cloud Service via [ de Profielen van de Verwerking van Assets ](../../assets/configuring/processing-profiles.md) worden geregistreerd. Verwerkingsprofielen worden op hun beurt toegepast op de mappen met elementen die op de elementen ervan van toepassing zijn.
+Zodra opgesteld aan Adobe I/O Runtime, kunnen de arbeiders van Asset Compute in AEM as a Cloud Service via [&#x200B; de Profielen van de Verwerking van Assets &#x200B;](../../assets/configuring/processing-profiles.md) worden geregistreerd. Verwerkingsprofielen worden op hun beurt toegepast op de mappen met elementen die op de elementen ervan van toepassing zijn.
 
 + [Integreren met AEM-verwerkingsprofielen](./deploy/processing-profiles.md)
 
@@ -131,15 +131,15 @@ Zodra opgesteld aan Adobe I/O Runtime, kunnen de arbeiders van Asset Compute in 
 
 Deze verkorte zelfstudies behandelen geavanceerdere gebruiksgevallen, voortbouwend op basiskennis die in de voorgaande hoofdstukken is vastgelegd.
 
-+ [ ontwikkelt een de meta-gegevensarbeider van Asset Compute ](./advanced/metadata.md) die meta-gegevens terug naar kan schrijven
++ [&#x200B; ontwikkelt een de meta-gegevensarbeider van Asset Compute &#x200B;](./advanced/metadata.md) die meta-gegevens terug naar kan schrijven
 
 ## Codebase op Github
 
 De zelfstudie is beschikbaar op Github op:
 
-+ [ adobe/aem-guides-wknd-asset-compute ](https://github.com/adobe/aem-guides-wknd-asset-compute) @ hoofdtak
++ [&#x200B; adobe/aem-guides-wknd-asset-compute &#x200B;](https://github.com/adobe/aem-guides-wknd-asset-compute) @ hoofdtak
 
-De broncode bevat niet de vereiste `.env` - of `config.json` -bestanden. Deze moeten worden toegevoegd en worden gevormd gebruikend uw [ rekeningen en de diensten ](#accounts-and-services) informatie.
+De broncode bevat niet de vereiste `.env` - of `config.json` -bestanden. Deze moeten worden toegevoegd en worden gevormd gebruikend uw [&#x200B; rekeningen en de diensten &#x200B;](#accounts-and-services) informatie.
 
 ## Aanvullende bronnen
 
@@ -147,15 +147,15 @@ Hieronder vindt u een aantal Adobe-bronnen die aanvullende informatie en nuttige
 
 ### Documentatie
 
-+ [ de documentatie van de Dienst van Asset Compute ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=nl-NL)
-+ [ het Hulpmiddel van de Ontwikkeling van Asset Compute readme ](https://github.com/adobe/asset-compute-devtool)
-+ [ Asset Compute voorbeeldarbeiders ](https://github.com/adobe/asset-compute-example-workers)
++ [&#x200B; de documentatie van de Dienst van Asset Compute &#x200B;](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=nl-NL)
++ [&#x200B; het Hulpmiddel van de Ontwikkeling van Asset Compute readme &#x200B;](https://github.com/adobe/asset-compute-devtool)
++ [&#x200B; Asset Compute voorbeeldarbeiders &#x200B;](https://github.com/adobe/asset-compute-example-workers)
 
 ### API&#39;s en SDK&#39;s
 
-+ [ Asset Compute SDK ](https://github.com/adobe/asset-compute-sdk)
-   + [ Asset Compute Commons ](https://github.com/adobe/asset-compute-commons)
-   + [ Asset Compute XMP ](https://github.com/adobe/asset-compute-xmp#readme)
-+ [ Adobe Cloud Blobstore Wrapper library ](https://github.com/adobe/node-cloud-blobstore-wrapper)
-+ [ de Vetch van de Knoop van Adobe probeert opnieuw bibliotheek ](https://github.com/adobe/node-fetch-retry)
-+ [ Asset Compute voorbeeldarbeiders ](https://github.com/adobe/asset-compute-example-workers)
++ [&#x200B; Asset Compute SDK &#x200B;](https://github.com/adobe/asset-compute-sdk)
+   + [&#x200B; Asset Compute Commons &#x200B;](https://github.com/adobe/asset-compute-commons)
+   + [&#x200B; Asset Compute XMP &#x200B;](https://github.com/adobe/asset-compute-xmp#readme)
++ [&#x200B; Adobe Cloud Blobstore Wrapper library &#x200B;](https://github.com/adobe/node-cloud-blobstore-wrapper)
++ [&#x200B; de Vetch van de Knoop van Adobe probeert opnieuw bibliotheek &#x200B;](https://github.com/adobe/node-fetch-retry)
++ [&#x200B; Asset Compute voorbeeldarbeiders &#x200B;](https://github.com/adobe/asset-compute-example-workers)

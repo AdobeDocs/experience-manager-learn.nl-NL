@@ -23,7 +23,7 @@ Vanaf AEM Forms 6.5 kunnen we nu workflowmodellen maken die niet zijn gekoppeld 
 Voer de volgende stappen uit om een dergelijke workflow te ontwerpen
 
 1. Aanmelden bij AEM
-1. Punt uw browser aan [ werkschemamodel ](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
+1. Punt uw browser aan [&#x200B; werkschemamodel &#x200B;](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
 1. Klik __creëren > Model__ creëren om een werkschemamodel toe te voegen
 1. Geef de juiste naam en titel op voor het workflowmodel en klik op Gereed
 1. Het nieuwe model openen in de bewerkingsmodus
@@ -39,4 +39,4 @@ Het formulierpad kan op drie manieren worden opgegeven
 1. Beschikbaar op een pad in een variabele - Dit betekent dat het aangepaste formulier wordt opgehaald uit de variabele met de workflow.
 In de volgende schermafbeelding ziet u de juiste optie die u moet kiezen voor de ontkoppelingsworkflow in een adaptief formulier
 
-![ herbruikbare modellen van het Werkschema van AEM Forms ](assets/workflomodel.PNG)
+![&#x200B; herbruikbare modellen van het Werkschema van AEM Forms &#x200B;](assets/workflomodel.PNG)

@@ -35,13 +35,13 @@ Begrijp hoe de broncode voor een Enige die Toepassing van de Pagina (SPA) in Ang
 
 Dit hoofdstuk zal een eenvoudige `Header` component aan het KUUROORD toevoegen. Tijdens het ontwikkelen van deze statische `Header` -component worden verschillende benaderingen voor AEM SPA-ontwikkeling gebruikt.
 
-![ Nieuwe Kopbal in AEM ](./assets/integrate-spa/final-header-component.png)
+![&#x200B; Nieuwe Kopbal in AEM &#x200B;](./assets/integrate-spa/final-header-component.png)
 
 *het KUUROORD wordt uitgebreid om een statische `Header` component* toe te voegen
 
 ## Vereisten
 
-Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikkelomgeving ](overview.md#local-dev-environment).
+Herzie het vereiste tooling en de instructies voor vestiging a [&#x200B; lokale ontwikkelomgeving &#x200B;](overview.md#local-dev-environment).
 
 ### De code ophalen
 
@@ -59,33 +59,33 @@ Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikke
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   Als het gebruiken van [ AEM 6.x ](overview.md#compatibility) voeg het `classic` profiel toe:
+   Als het gebruiken van [&#x200B; AEM 6.x &#x200B;](overview.md#compatibility) voeg het `classic` profiel toe:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/integrate-spa-solution) altijd bekijken of de code uit controleren plaatselijk door aan de tak `Angular/integrate-spa-solution` te schakelen.
+U kunt de gebeëindigde code op [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/integrate-spa-solution) altijd bekijken of de code uit controleren plaatselijk door aan de tak `Angular/integrate-spa-solution` te schakelen.
 
 ## Integratiebenadering {#integration-approach}
 
 Er zijn twee modules gemaakt als onderdeel van het AEM-project: `ui.apps` en `ui.frontend` .
 
-De `ui.frontend` module is a [ webpack ](https://webpack.js.org/) project dat alle broncode van het KUUROORD bevat. Een meerderheid van de ontwikkeling en het testen van SPA wordt gedaan in het webpack project. Wanneer een productie bouwt wordt teweeggebracht, wordt het KUUROORD gebouwd en gecompileerd gebruikend webpack. De gecompileerde artefacten (CSS en Javascript) worden gekopieerd in de module `ui.apps` die dan aan runtime van AEM wordt opgesteld.
+De `ui.frontend` module is a [&#x200B; webpack &#x200B;](https://webpack.js.org/) project dat alle broncode van het KUUROORD bevat. Een meerderheid van de ontwikkeling en het testen van SPA wordt gedaan in het webpack project. Wanneer een productie bouwt wordt teweeggebracht, wordt het KUUROORD gebouwd en gecompileerd gebruikend webpack. De gecompileerde artefacten (CSS en Javascript) worden gekopieerd in de module `ui.apps` die dan aan runtime van AEM wordt opgesteld.
 
-![ ui.frontend high-level architectuur ](assets/integrate-spa/ui-frontend-architecture.png)
+![&#x200B; ui.frontend high-level architectuur &#x200B;](assets/integrate-spa/ui-frontend-architecture.png)
 
 *A high-level afbeelding van de integratie van het KUUROORD.*
 
-De extra informatie over het front-end bouwt kan [ hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=nl-NL) worden gevonden.
+De extra informatie over het front-end bouwt kan [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=nl-NL) worden gevonden.
 
 ## Inspecteer de integratie van SPA {#inspect-spa-integration}
 
-Daarna, inspecteer de `ui.frontend` module om het KUUROORD te begrijpen dat door het [ archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=nl-NL) auto-geproduceerd is.
+Daarna, inspecteer de `ui.frontend` module om het KUUROORD te begrijpen dat door het [&#x200B; archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=nl-NL) auto-geproduceerd is.
 
-1. In winde van uw keus open omhoog het Project van AEM voor het KND SPA. Dit leerprogramma zal [ winde van de Code van Visual Studio ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#microsoft-visual-studio-code) gebruiken.
+1. In winde van uw keus open omhoog het Project van AEM voor het KND SPA. Dit leerprogramma zal [&#x200B; winde van de Code van Visual Studio &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#microsoft-visual-studio-code) gebruiken.
 
-   ![ VSCode - AEM WKND Project van het KUUROORD ](./assets/integrate-spa/vscode-ide-openproject.png)
+   ![&#x200B; VSCode - AEM WKND Project van het KUUROORD &#x200B;](./assets/integrate-spa/vscode-ide-openproject.png)
 
 2. Vouw de map `ui.frontend` uit en inspecteer deze. Het bestand openen `ui.frontend/package.json`
 
@@ -102,7 +102,7 @@ Daarna, inspecteer de `ui.frontend` module om het KUUROORD te begrijpen dat door
    "@angular/router": "~9.1.10",
    ```
 
-   De `ui.frontend` module is een [ toepassing van Angular ](https://angular.io) die door het [ CLI hulpmiddel van Angular te gebruiken ](https://angular.io/cli) wordt geproduceerd die het verpletteren omvat.
+   De `ui.frontend` module is een [&#x200B; toepassing van Angular &#x200B;](https://angular.io) die door het [&#x200B; CLI hulpmiddel van Angular te gebruiken &#x200B;](https://angular.io/cli) wordt geproduceerd die het verpletteren omvat.
 
 4. Er zijn ook drie afhankelijkheden voorafgegaan door `@adobe` :
 
@@ -112,7 +112,7 @@ Daarna, inspecteer de `ui.frontend` module om het KUUROORD te begrijpen dat door
    "@adobe/cq-spa-page-model-manager": "^1.1.3",
    ```
 
-   De bovengenoemde modules maken omhoog de [ Redacteur JS SDK van AEM SPA ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html?lang=nl-NL) en verstrekken de functionaliteit om het mogelijk te maken om de Componenten van het KUUROORD aan de Componenten van AEM in kaart te brengen.
+   De bovengenoemde modules maken omhoog de [&#x200B; Redacteur JS SDK van AEM SPA &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html?lang=nl-NL) en verstrekken de functionaliteit om het mogelijk te maken om de Componenten van het KUUROORD aan de Componenten van AEM in kaart te brengen.
 
 5. In het `package.json` -bestand zijn verschillende `scripts` gedefinieerd:
 
@@ -126,17 +126,17 @@ Daarna, inspecteer de `ui.frontend` module om het KUUROORD te begrijpen dat door
    }
    ```
 
-   Deze manuscripten zijn gebaseerd op gemeenschappelijke [ Angular CLI bevelen ](https://angular.io/cli/build) maar lichtjes gewijzigd om met het grotere project van AEM te werken.
+   Deze manuscripten zijn gebaseerd op gemeenschappelijke [&#x200B; Angular CLI bevelen &#x200B;](https://angular.io/cli/build) maar lichtjes gewijzigd om met het grotere project van AEM te werken.
 
    `start` - voert de Angular-toepassing lokaal uit met een lokale webserver. Deze is bijgewerkt om de inhoud van een lokale AEM-instantie te profileren.
 
-   `build` - compileert de Angular-app voor productiedistributie. De toevoeging van `&& clientlib` is de oorzaak van het kopiëren van gecompileerde SPA in de `ui.apps` module als cliënt-zijbibliotheek tijdens een bouwstijl. De npm module [ aem-clientlib-generator ](https://github.com/wcm-io-frontend/aem-clientlib-generator) wordt gebruikt om dit te vergemakkelijken.
+   `build` - compileert de Angular-app voor productiedistributie. De toevoeging van `&& clientlib` is de oorzaak van het kopiëren van gecompileerde SPA in de `ui.apps` module als cliënt-zijbibliotheek tijdens een bouwstijl. De npm module [&#x200B; aem-clientlib-generator &#x200B;](https://github.com/wcm-io-frontend/aem-clientlib-generator) wordt gebruikt om dit te vergemakkelijken.
 
-   Meer details over de beschikbare manuscripten kunnen [ hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=nl-NL) worden gevonden.
+   Meer details over de beschikbare manuscripten kunnen [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=nl-NL) worden gevonden.
 
-6. Controleer het bestand `ui.frontend/clientlib.config.js` . Dit configuratiedossier wordt gebruikt door [ aem-clientlib-generator ](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) om te bepalen hoe te om de cliëntbibliotheek te produceren.
+6. Controleer het bestand `ui.frontend/clientlib.config.js` . Dit configuratiedossier wordt gebruikt door [&#x200B; aem-clientlib-generator &#x200B;](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) om te bepalen hoe te om de cliëntbibliotheek te produceren.
 
-7. Controleer het bestand `ui.frontend/pom.xml` . Dit dossier zet de `ui.frontend` omslag in a [ Gemaakt module ](https://maven.apache.org/guides/mini/guide-multiple-modules.html) om. Het `pom.xml` dossier is bijgewerkt om [ te gebruiken front-maven-plugin ](https://github.com/eirslett/frontend-maven-plugin) aan **test** en **bouwt** het KUUROORD tijdens een Gemaakt bouwt.
+7. Controleer het bestand `ui.frontend/pom.xml` . Dit dossier zet de `ui.frontend` omslag in a [&#x200B; Gemaakt module &#x200B;](https://maven.apache.org/guides/mini/guide-multiple-modules.html) om. Het `pom.xml` dossier is bijgewerkt om [&#x200B; te gebruiken front-maven-plugin &#x200B;](https://github.com/eirslett/frontend-maven-plugin) aan **test** en **bouwt** het KUUROORD tijdens een Gemaakt bouwt.
 
 8. Inspecteer het bestand `app.component.ts` op `ui.frontend/src/app/app.component.ts` :
 
@@ -177,7 +177,7 @@ Daarna, voeg een nieuwe component aan SPA toe en stel de veranderingen in een lo
    $ cd aem-guides-wknd-spa/ui.frontend
    ```
 
-2. Installeer [ CLI van Angular ](https://angular.io/cli#installing-angular-cli) globaal dit wordt gebruikt om de componenten van Angular te produceren evenals de toepassing van Angular via het **ng** bevel te bouwen en te dienen.
+2. Installeer [&#x200B; CLI van Angular &#x200B;](https://angular.io/cli#installing-angular-cli) globaal dit wordt gebruikt om de componenten van Angular te produceren evenals de toepassing van Angular via het **ng** bevel te bouwen en te dienen.
 
    ```shell
    $ npm install -g @angular/cli
@@ -203,7 +203,7 @@ Daarna, voeg een nieuwe component aan SPA toe en stel de veranderingen in een lo
 
 4. Open het `aem-guides-wknd-spa` project in winde van uw keus. Navigeer naar de map `ui.frontend/src/app/components/header` .
 
-   ![ Weg van de Component van de Kopbal in winde ](assets/integrate-spa/header-component-path.png)
+   ![&#x200B; Weg van de Component van de Kopbal in winde &#x200B;](assets/integrate-spa/header-component-path.png)
 
 5. Open het bestand `header.component.html` en vervang de inhoud door:
 
@@ -241,7 +241,7 @@ Daarna, voeg een nieuwe component aan SPA toe en stel de veranderingen in een lo
 
 8. Navigeer naar de map `ui.apps` . Onder `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/clientlibs/clientlib-angular` zou u de gecompileerde dossiers van het KUUROORD van de `ui.frontend/build` omslag moeten zien zijn gekopieerd.
 
-   ![ de bibliotheek van de Cliënt die in ui.apps ](assets/integrate-spa/compiled-spa-uiapps.png) wordt geproduceerd
+   ![&#x200B; de bibliotheek van de Cliënt die in ui.apps &#x200B;](assets/integrate-spa/compiled-spa-uiapps.png) wordt geproduceerd
 
 9. Ga terug naar de terminal en navigeer naar de map `ui.apps` . Voer het volgende Geweven bevel uit:
 
@@ -259,9 +259,9 @@ Daarna, voeg een nieuwe component aan SPA toe en stel de veranderingen in een lo
 
    Hiermee wordt het `ui.apps` -pakket geïmplementeerd in een lokale actieve instantie van AEM.
 
-10. Open een browser lusje en navigeer aan [ http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html ](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). U zou nu de inhoud van de `Header` component moeten zien die in SPA wordt getoond.
+10. Open een browser lusje en navigeer aan [&#x200B; http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html &#x200B;](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). U zou nu de inhoud van de `Header` component moeten zien die in SPA wordt getoond.
 
-   ![ Aanvankelijke kopbalimplementatie ](assets/integrate-spa/initial-header-implementation.png)
+   ![&#x200B; Aanvankelijke kopbalimplementatie &#x200B;](assets/integrate-spa/initial-header-implementation.png)
 
    De stappen **7-9** worden uitgevoerd automatisch wanneer het teweegbrengen van een Maven bouwt van de wortel van het project (d.w.z. `mvn clean install -PautoInstallSinglePackage`). U zou nu de grondbeginselen van de integratie tussen het KUUROORD en de cliënt-zijbibliotheken van AEM moeten begrijpen. U kunt wel `Text` -componenten bewerken en toevoegen in AEM, maar de `Header` -component kan niet worden bewerkt.
 
@@ -269,7 +269,7 @@ Daarna, voeg een nieuwe component aan SPA toe en stel de veranderingen in een lo
 
 Zoals u in de vorige oefeningen hebt gezien, duurt het maken van een build en het synchroniseren van de clientbibliotheek naar een lokale instantie van AEM enkele minuten. Dit is aanvaardbaar voor het definitieve testen, maar is niet ideaal voor de meerderheid van de ontwikkeling van SPA.
 
-A [ webpack dev server ](https://webpack.js.org/configuration/dev-server/) kan worden gebruikt om het KUUROORD snel te ontwikkelen. De SPA wordt aangestuurd door een JSON-model dat door AEM wordt gegenereerd. In deze oefening is de inhoud JSON van een lopende instantie van AEM **proxied** in de ontwikkelingsserver die door het [ project van Angular ](https://angular.io/guide/build) wordt gevormd.
+A [&#x200B; webpack dev server &#x200B;](https://webpack.js.org/configuration/dev-server/) kan worden gebruikt om het KUUROORD snel te ontwikkelen. De SPA wordt aangestuurd door een JSON-model dat door AEM wordt gegenereerd. In deze oefening is de inhoud JSON van een lopende instantie van AEM **proxied** in de ontwikkelingsserver die door het [&#x200B; project van Angular &#x200B;](https://angular.io/guide/build) wordt gevormd.
 
 1. Terugkeer aan winde en open het dossier **proxy.conf.json** bij `ui.frontend/proxy.conf.json`.
 
@@ -287,11 +287,11 @@ A [ webpack dev server ](https://webpack.js.org/configuration/dev-server/) kan w
    ]
    ```
 
-   De [ app van Angular ](https://angular.io/guide/build#proxying-to-a-backend-server) verstrekt een gemakkelijk mechanisme aan volmacht API verzoeken. De patronen die u opgeeft in `context` , worden beschreven in `localhost:4502` , de lokale AEM quickstart.
+   De [&#x200B; app van Angular &#x200B;](https://angular.io/guide/build#proxying-to-a-backend-server) verstrekt een gemakkelijk mechanisme aan volmacht API verzoeken. De patronen die u opgeeft in `context` , worden beschreven in `localhost:4502` , de lokale AEM quickstart.
 
 2. Open het dossier **index.html** bij `ui.frontend/src/index.html`. Dit is het basisbestand van HTML dat door de Dev-server wordt gebruikt.
 
-   Er is een vermelding voor `base href="/"` . De [ basismarkering ](https://angular.io/guide/deployment#the-base-tag) is kritiek voor app om relatieve URLs op te lossen.
+   Er is een vermelding voor `base href="/"` . De [&#x200B; basismarkering &#x200B;](https://angular.io/guide/deployment#the-base-tag) is kritiek voor app om relatieve URLs op te lossen.
 
    ```html
    <base href="/">
@@ -313,16 +313,16 @@ A [ webpack dev server ](https://webpack.js.org/configuration/dev-server/) kan w
    ℹ ｢wds｣: 404s will fallback to //index.html
    ```
 
-4. Open een nieuw browser lusje (als niet reeds geopend) en navigeer aan [ http://localhost:4200/content/wknd-spa-angular/us/en/home.html ](http://localhost:4200/content/wknd-spa-angular/us/en/home.html).
+4. Open een nieuw browser lusje (als niet reeds geopend) en navigeer aan [&#x200B; http://localhost:4200/content/wknd-spa-angular/us/en/home.html &#x200B;](http://localhost:4200/content/wknd-spa-angular/us/en/home.html).
 
-   ![ Webpack dev server - volmacht json ](assets/integrate-spa/webpack-dev-server-1.png)
+   ![&#x200B; Webpack dev server - volmacht json &#x200B;](assets/integrate-spa/webpack-dev-server-1.png)
 
    Dezelfde inhoud moet worden weergegeven als in AEM, maar zonder dat een van de ontwerpmogelijkheden is ingeschakeld.
 
 5. Keer terug naar winde en creeer een nieuwe omslag genoemd `img` bij `ui.frontend/src/assets`.
 6. Download en voeg het volgende WKND-logo toe aan de map `img` :
 
-   ![ WKND embleem ](./assets/integrate-spa/wknd-logo-dk.png)
+   ![&#x200B; WKND embleem &#x200B;](./assets/integrate-spa/wknd-logo-dk.png)
 
 7. Open **header.component.html** bij `ui.frontend/src/app/components/header/header.component.html` en omvat het embleem:
 
@@ -340,7 +340,7 @@ A [ webpack dev server ](https://webpack.js.org/configuration/dev-server/) kan w
 
 8. Ga terug naar de browser. De wijzigingen in de app worden meteen weerspiegeld.
 
-   ![ Logo dat aan kopbal ](assets/integrate-spa/added-logo-localhost.png) wordt toegevoegd
+   ![&#x200B; Logo dat aan kopbal &#x200B;](assets/integrate-spa/added-logo-localhost.png) wordt toegevoegd
 
    U kunt inhoudsupdates in **AEM** blijven maken en hen zien die in **webpack dev server** worden weerspiegeld, aangezien wij de inhoud proxying. Merk op dat de inhoudsveranderingen slechts zichtbaar in **webpack dev server** zijn.
 
@@ -352,7 +352,7 @@ Een andere manier om snel te ontwikkelen is het gebruik van een statisch JSON-be
 
 De aanvankelijke opstelling van het model JSON **vereist een lokale instantie van AEM**.
 
-1. In browser navigeer aan [ http://localhost:4502/content/wknd-spa-angular/us/en.model.json ](http://localhost:4502/content/wknd-spa-angular/us/en.model.json).
+1. In browser navigeer aan [&#x200B; http://localhost:4502/content/wknd-spa-angular/us/en.model.json &#x200B;](http://localhost:4502/content/wknd-spa-angular/us/en.model.json).
 
    Dit is de JSON die door AEM wordt geëxporteerd en die de toepassing stuurt. Kopieer de JSON-uitvoer.
 
@@ -367,7 +367,7 @@ De aanvankelijke opstelling van het model JSON **vereist een lokale instantie va
 
 3. Creeer een nieuw dossier genoemd **en.model.json** hieronder `ui.frontend/public/mocks/json`. Plak de output JSON van **Stap 1** hier.
 
-   ![ Van het ModelJSON- dossier van het Model van het Mock ](assets/integrate-spa/mock-model-json-created.png)
+   ![&#x200B; Van het ModelJSON- dossier van het Model van het Mock &#x200B;](assets/integrate-spa/mock-model-json-created.png)
 
 4. Creeer een nieuw dossier **proxy.mock.conf.json** onder `ui.frontend`. Vul het bestand met het volgende:
 
@@ -405,7 +405,7 @@ De aanvankelijke opstelling van het model JSON **vereist een lokale instantie va
        },
    ```
 
-   ![ Angular JSON Dev Assets Update Folder ](assets/integrate-spa/dev-assets-update-folder.png)
+   ![&#x200B; Angular JSON Dev Assets Update Folder &#x200B;](assets/integrate-spa/dev-assets-update-folder.png)
 
    Creërend een specifieke **dev** configuratie zorgt ervoor dat de **mocks** omslag slechts tijdens ontwikkeling wordt gebruikt en nooit aan AEM in een productie wordt opgesteld bouwt.
 
@@ -422,7 +422,7 @@ De aanvankelijke opstelling van het model JSON **vereist een lokale instantie va
      ...
    ```
 
-   ![ Angular JSON bouwt dev update ](assets/integrate-spa/angular-json-build-dev-update.png)
+   ![&#x200B; Angular JSON bouwt dev update &#x200B;](assets/integrate-spa/angular-json-build-dev-update.png)
 
 7. Open het dossier `ui.frontend/package.json` en voeg een nieuw **begin toe:mock** bevel om het {**dossier 3} proxy.mock.conf.json van verwijzingen te voorzien.**
 
@@ -448,11 +448,11 @@ De aanvankelijke opstelling van het model JSON **vereist een lokale instantie va
    > ng serve --open --proxy-config ./proxy.mock.conf.json
    ```
 
-   Navigeer aan [ http://localhost:4200/content/wknd-spa-angular/us/en/home.html ](http://localhost:4200/content/wknd-spa-angular/us/en/home.html) en u zou het zelfde KUUROORD moeten zien maar de inhoud wordt nu getrokken uit het **mock** JSON- dossier.
+   Navigeer aan [&#x200B; http://localhost:4200/content/wknd-spa-angular/us/en/home.html &#x200B;](http://localhost:4200/content/wknd-spa-angular/us/en/home.html) en u zou het zelfde KUUROORD moeten zien maar de inhoud wordt nu getrokken uit het **mock** JSON- dossier.
 
 9. Maak een kleine verandering in het {**vroeger gecreeerd dossier 0} en.model.json.** De bijgewerkte inhoud zou onmiddellijk in de **webpack dev server** moeten worden weerspiegeld.
 
-   ![ modelmodel json update ](./assets/integrate-spa/webpack-mock-model.gif)
+   ![&#x200B; modelmodel json update &#x200B;](./assets/integrate-spa/webpack-mock-model.gif)
 
    Als u het JSON-model kunt manipuleren en de effecten op een live-SPA kunt zien, kan een ontwikkelaar de JSON-model-API beter begrijpen. Het maakt ook zowel front-end als back-end ontwikkeling parallel mogelijk.
 
@@ -627,7 +627,7 @@ Voeg daarna sommige merkspecifieke stijlen aan de **component van de Kopbal** to
 
 4. Terugkeer aan browser en **webpack dev server**:
 
-   ![ Stileerde Kopbal - webpack dev server ](assets/integrate-spa/styled-header.png)
+   ![&#x200B; Stileerde Kopbal - webpack dev server &#x200B;](assets/integrate-spa/styled-header.png)
 
    U zou de bijgewerkte stijlen nu moeten zien die aan de **worden toegevoegd van de Kopbal** component.
 
@@ -643,9 +643,9 @@ De veranderingen die aan de **Kopbal** worden aangebracht zijn momenteel slechts
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-3. Navigeer aan [ http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html ](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). U zou de bijgewerkte **Kopbal** met toegepast embleem en stijlen moeten zien:
+3. Navigeer aan [&#x200B; http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html &#x200B;](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). U zou de bijgewerkte **Kopbal** met toegepast embleem en stijlen moeten zien:
 
-   ![ Bijgewerkte Kopbal in AEM ](assets/integrate-spa/final-header-component.png)
+   ![&#x200B; Bijgewerkte Kopbal in AEM &#x200B;](assets/integrate-spa/final-header-component.png)
 
    Nu het bijgewerkte KUUROORD in AEM is, kan het ontwerpen verdergaan.
 
@@ -653,8 +653,8 @@ De veranderingen die aan de **Kopbal** worden aangebracht zijn momenteel slechts
 
 Gefeliciteerd, u hebt de SPA bijgewerkt en de integratie met AEM verkend! U kent nu twee verschillende benaderingen voor het ontwikkelen van het KUUROORD tegen AEM JSON model API gebruikend a **webpack dev server**.
 
-U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/integrate-spa-solution) altijd bekijken of de code uit controleren plaatselijk door aan de tak `Angular/integrate-spa-solution` te schakelen.
+U kunt de gebeëindigde code op [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/integrate-spa-solution) altijd bekijken of de code uit controleren plaatselijk door aan de tak `Angular/integrate-spa-solution` te schakelen.
 
 ### Volgende stappen {#next-steps}
 
-[ de componenten van het KaartKUUROORD aan de componenten van AEM ](map-components.md) - Leer hoe te om de componenten van Angular aan Adobe Experience Manager (AEM) componenten met de Redacteur JS SDK van AEM SPA in kaart te brengen. De afbeelding van de component laat auteurs toe om dynamische updates aan de componenten van het KUUROORD binnen de Redacteur van AEM te maken SPA, gelijkend op traditionele het auteursrecht van AEM.
+[&#x200B; de componenten van het KaartKUUROORD aan de componenten van AEM &#x200B;](map-components.md) - Leer hoe te om de componenten van Angular aan Adobe Experience Manager (AEM) componenten met de Redacteur JS SDK van AEM SPA in kaart te brengen. De afbeelding van de component laat auteurs toe om dynamische updates aan de componenten van het KUUROORD binnen de Redacteur van AEM te maken SPA, gelijkend op traditionele het auteursrecht van AEM.

@@ -38,7 +38,7 @@ We testen de integratie door een eenvoudige formulieropname te maken en een hoof
 
 Het volgende schermschot verklaart de montages van de regelredacteur
 
-![ ruleeditor ](assets/ruleeditor.png)
+![&#x200B; ruleeditor &#x200B;](assets/ruleeditor.png)
 
 
 ## Gefeliciteerd

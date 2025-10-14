@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Leer **hoe te opstelling** de regels van de verkeersfilter met inbegrip van de regels van de Firewall van de Toepassing van het Web (WAF). In deze zelfstudie stellen we de basis in voor volgende zelfstudies, waarbij u regels configureert en implementeert, gevolgd door het testen en analyseren van de resultaten.
 
-Om het opstellingsproces aan te tonen, gebruikt het leerprogramma het [ Project van de Plaatsen van AEM WKND ](https://github.com/adobe/aem-guides-wknd).
+Om het opstellingsproces aan te tonen, gebruikt het leerprogramma het [&#x200B; Project van de Plaatsen van AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3469395/?quality=12&learn=on)
 
@@ -55,26 +55,26 @@ data:
     rules:
 ```
 
-![ WKND het dossier en de omslag van de het projectregels van AEM ](./assets/setup/wknd-rules-file-and-folder.png)
+![&#x200B; WKND het dossier en de omslag van de het projectregels van AEM &#x200B;](./assets/setup/wknd-rules-file-and-folder.png)
 
-In het [ volgende leerprogramma ](#next-steps), leert u hoe te om Adobe toe te voegen **geadviseerde standaardverkeersfilter en de regels van WAF** aan het bovengenoemde dossier als stevige stichting voor uw implementatie.
+In het [&#x200B; volgende leerprogramma &#x200B;](#next-steps), leert u hoe te om Adobe toe te voegen **geadviseerde standaardverkeersfilter en de regels van WAF** aan het bovengenoemde dossier als stevige stichting voor uw implementatie.
 
 ## Regels implementeren met Adobe Cloud Manager
 
 Volg de volgende stappen om de regels te implementeren:
 
-1. Login aan [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert uw programma.
+1. Login aan [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteert uw programma.
 
 2. Van de **pagina van het Overzicht van het Programma**, ga naar de **Pijpleidingen** kaart en klik **+ voeg** toe om een nieuwe pijpleiding tot stand te brengen.
 
-   ![ de Pipelinekaart van Cloud Manager ](./assets/setup/cloud-manager-pipelines-card.png)
+   ![&#x200B; de Pipelinekaart van Cloud Manager &#x200B;](./assets/setup/cloud-manager-pipelines-card.png)
 
 3. In de pijplijntovenaar:
 
    - **Type**: De Pijpleiding van de Plaatsing
    - **Naam van de Pijpleiding**: Dev-Config
 
-   ![ Cloud Manager Config de dialoog van de Pijpleiding ](./assets/setup/cloud-manager-config-pipeline-step1-dialog.png)
+   ![&#x200B; Cloud Manager Config de dialoog van de Pijpleiding &#x200B;](./assets/setup/cloud-manager-config-pipeline-step1-dialog.png)
 
 4. Configuratie Source-code:
 
@@ -85,11 +85,11 @@ Volg de volgende stappen om de regels te implementeren:
    - **Tak van de Git**: Uw werkende tak
    - **Plaats van de Code**: `/config`
 
-   ![ Cloud Manager Config de dialoog van de Pijpleiding ](./assets/setup/cloud-manager-config-pipeline-step2-dialog.png)
+   ![&#x200B; Cloud Manager Config de dialoog van de Pijpleiding &#x200B;](./assets/setup/cloud-manager-config-pipeline-step2-dialog.png)
 
 5. Herzie de pijpleidingsconfiguratie en klik **sparen**.
 
-In het [ volgende leerprogramma ](#next-steps), leert u hoe te om de pijpleiding aan uw milieu van AEM op te stellen.
+In het [&#x200B; volgende leerprogramma &#x200B;](#next-steps), leert u hoe te om de pijpleiding aan uw milieu van AEM op te stellen.
 
 ## Regels testen met gereedschappen
 
@@ -97,9 +97,9 @@ Om de doeltreffendheid van uw standaardverkeersfilter en de regels van WAF te te
 
 Controleer of de volgende gereedschappen op uw lokale computer zijn geïnstalleerd of volg de instructies om ze te installeren:
 
-- [ Kromme ](https://curl.se/): De verzoek/de reactiestroom van de test.
-- [ Vegeta ](https://github.com/tsenart/vegeta): Simuleer hoge verzoeklading (het testen van Dos).
-- [ Nikto ](https://github.com/sullo/nikto/wiki): Scan voor kwetsbaarheid.
+- [&#x200B; Kromme &#x200B;](https://curl.se/): De verzoek/de reactiestroom van de test.
+- [&#x200B; Vegeta &#x200B;](https://github.com/tsenart/vegeta): Simuleer hoge verzoeklading (het testen van Dos).
+- [&#x200B; Nikto &#x200B;](https://github.com/sullo/nikto/wiki): Scan voor kwetsbaarheid.
 
 U kunt de installatie verifiëren gebruikend de volgende bevelen:
 
@@ -115,7 +115,7 @@ $ cd <PATH-OF-CLONED-REPO>/program
 $ ./nikto.pl -Version
 ```
 
-In het [ volgende leerprogramma ](#next-steps), leert u hoe te om deze hulpmiddelen te gebruiken om hoge verzoekladingen en kwaadwillige verzoeken te simuleren om de doeltreffendheid van uw verkeersfilter en de regels van WAF te testen.
+In het [&#x200B; volgende leerprogramma &#x200B;](#next-steps), leert u hoe te om deze hulpmiddelen te gebruiken om hoge verzoekladingen en kwaadwillige verzoeken te simuleren om de doeltreffendheid van uw verkeersfilter en de regels van WAF te testen.
 
 ## Resultaten analyseren
 
@@ -133,13 +133,13 @@ De Tooling van de Analyse van het Logboek van AEMCS CDN steunt twee observabilit
 
 Het is mogelijk om het Logboek te gebruiken door:sturen eigenschap om uw logboeken aan een ontvangen ELK of de dienst van het het logboekregistreren van het Splunk te stromen, waar u een dashboard kunt installeren om de standaardverkeersfilter en de regels van de het verkeersfilter van WAF te visualiseren en te analyseren. Voor deze zelfstudie stelt u het dashboard echter in op een lokale ELK-instantie die op uw computer is geïnstalleerd.
 
-1. Kloon de [ AEMCS-CDN-Logboek-Analyse-Tooling ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) bewaarplaats.
+1. Kloon de [&#x200B; AEMCS-CDN-Logboek-Analyse-Tooling &#x200B;](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) bewaarplaats.
 
-2. Volg de [ ELK handleiding van de de containeropstelling van de Dok ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) om de stapel van de ELK plaatselijk te installeren en te vormen.
+2. Volg de [&#x200B; ELK handleiding van de de containeropstelling van de Dok &#x200B;](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) om de stapel van de ELK plaatselijk te installeren en te vormen.
 
 3. Gebruikend de dashboards van ELK, kunt u metriek zoals IP verzoeken, geblokkeerd verkeer, de patronen van URI, en veiligheidsalarm onderzoeken.
 
-   ![ het Dashboard van de Regels van de Filterregels van het Verkeer van de ELK ](./assets/setup/elk-dashboard.png)
+   ![&#x200B; het Dashboard van de Regels van de Filterregels van het Verkeer van de ELK &#x200B;](./assets/setup/elk-dashboard.png)
 
 >[!NOTE]
 > 
@@ -149,9 +149,9 @@ Het is mogelijk om het Logboek te gebruiken door:sturen eigenschap om uw logboek
 
 Ga als volgt te werk om CDN-logbestanden in te voeren in de ELK-stapel:
 
-- Van [ Cloud Manager ](https://my.cloudmanager.adobe.com/) **de kaart van Milieu&#39;s**, download de **publiceren** CDN van de dienst van AEMCS logboeken.
+- Van [&#x200B; Cloud Manager &#x200B;](https://my.cloudmanager.adobe.com/) **de kaart van Milieu&#39;s**, download de **publiceren** CDN van de dienst van AEMCS logboeken.
 
-  ![ Cloud Manager CDN Logs Downloads ](./assets/setup/cloud-manager-cdn-log-downloads.png)
+  ![&#x200B; Cloud Manager CDN Logs Downloads &#x200B;](./assets/setup/cloud-manager-cdn-log-downloads.png)
 
   >[!TIP]
   >
@@ -159,18 +159,18 @@ Ga als volgt te werk om CDN-logbestanden in te voeren in de ELK-stapel:
 
 - Kopieer het gedownloade logbestand (bijvoorbeeld `publish_cdn_2025-06-06.log` in de onderstaande schermafbeelding) naar de map `logs/dev` van het project voor het gereedschap Elastisch dashboard.
 
-  ![ de Omslag van de Logboeken van het Hulpmiddel ELK ](./assets/setup/elk-tool-logs-folder.png){width="800" zoomable="yes"}
+  ![&#x200B; de Omslag van de Logboeken van het Hulpmiddel ELK &#x200B;](./assets/setup/elk-tool-logs-folder.png){width="800" zoomable="yes"}
 
 - Vernieuw de gereedschapspagina Elastic dashboard.
    - In de hoogste **Globale filter** sectie, geef de `aem_env_name.keyword` filter uit en selecteer de `dev` milieuwaarde.
 
-     ![ Globale Filter van het Hulpmiddel ELK ](./assets/setup/elk-tool-global-filter.png)
+     ![&#x200B; Globale Filter van het Hulpmiddel ELK &#x200B;](./assets/setup/elk-tool-global-filter.png)
 
    - Als u het tijdsinterval wilt wijzigen, klikt u op het kalenderpictogram in de rechterbovenhoek en selecteert u het gewenste tijdinterval.
 
-- In het [ volgende leerprogramma ](#next-steps), leert u hoe te om de resultaten van de standaardverkeersfilter en de regels van de het verkeersfilter van WAF te analyseren gebruikend de pre-gebouwde dashboards in de stapel van ELK.
+- In het [&#x200B; volgende leerprogramma &#x200B;](#next-steps), leert u hoe te om de resultaten van de standaardverkeersfilter en de regels van de het verkeersfilter van WAF te analyseren gebruikend de pre-gebouwde dashboards in de stapel van ELK.
 
-  ![ het Hulpmiddel van het ELK pre-Gebouwde Dashboards ](./assets/setup/elk-tool-pre-built-dashboards.png)
+  ![&#x200B; het Hulpmiddel van het ELK pre-Gebouwde Dashboards &#x200B;](./assets/setup/elk-tool-pre-built-dashboards.png)
 
 ## Samenvatting
 
@@ -335,4 +335,4 @@ Buiten de Adobe-geadviseerde standaard verkeersfilter en de regels van WAF, kunt
 
 ## Aanvullende bronnen
 
-- [ Regels van de Filter van het Verkeer met inbegrip van de Regels van WAF ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
+- [&#x200B; Regels van de Filter van het Verkeer met inbegrip van de Regels van WAF &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)

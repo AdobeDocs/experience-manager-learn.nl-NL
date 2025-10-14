@@ -23,6 +23,6 @@ ht-degree: 0%
 
 {{edge-delivery-services}}
 
-Leer hoe de [ insteekmodule van AEM Assets Sidekick ](https://www.hlx.live/developer/configuring-aem-assets-sidekick-plugin) kan worden gebruikt om beheerde activa in high-impact ervaringen op te nemen die door Edge Delivery Services worden geleverd.
+Leer hoe de [&#x200B; insteekmodule van AEM Assets Sidekick &#x200B;](https://www.hlx.live/developer/configuring-aem-assets-sidekick-plugin) kan worden gebruikt om beheerde activa in high-impact ervaringen op te nemen die door Edge Delivery Services worden geleverd.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435828/?learn=on&captions=dut)

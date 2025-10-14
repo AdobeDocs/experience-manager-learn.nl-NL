@@ -27,6 +27,6 @@ In deze video worden alle stukken beschreven die een ontwikkelaar nodig heeft om
 
 ## Node.js installeren
 
-Beginnen zich voor Edge Delivery Services te ontwikkelen, is het hebben [ Node.js ](https://nodejs.org) geïnstalleerd op uw systeem essentieel. U kunt controleren of Node.js reeds geïnstalleerd door `node -v` in uw bevellijn in werking te stellen, die de huidige versie zal tonen als het aanwezig is. Als Node.js niet op uw systeem is geïnstalleerd, raadpleegt u de bijgevoegde video hieronder voor gedetailleerde installatie-instructies.
+Beginnen zich voor Edge Delivery Services te ontwikkelen, is het hebben [&#x200B; Node.js &#x200B;](https://nodejs.org) geïnstalleerd op uw systeem essentieel. U kunt controleren of Node.js reeds geïnstalleerd door `node -v` in uw bevellijn in werking te stellen, die de huidige versie zal tonen als het aanwezig is. Als Node.js niet op uw systeem is geïnstalleerd, raadpleegt u de bijgevoegde video hieronder voor gedetailleerde installatie-instructies.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3438307/?learn=on&captions=dut)

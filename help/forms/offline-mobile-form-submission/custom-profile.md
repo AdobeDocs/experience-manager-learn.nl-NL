@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Aangepast profiel maken
 
-In dit deel zullen wij a [ douaneprofiel tot stand brengen.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Een profiel is verantwoordelijk voor het renderen van de XDP als HTML. Er wordt een standaardprofiel opgegeven in het vak voor het renderen van XDP&#39;s als HTML. Deze vertegenwoordigt een aangepaste versie van de Mobile Forms Rendition-service. Met de service Mobiele formulieruitvoering kunt u de weergave, het gedrag en de interacties van de Mobile Forms aanpassen. In ons aangepaste profiel leggen we de gegevens die in het mobiele formulier zijn ingevuld, vast met de API voor hulplijnen. Deze gegevens worden vervolgens verzonden naar een aangepaste servlet die vervolgens een interactieve PDF genereert en deze terugstuurt naar de aanroepende toepassing.
+In dit deel zullen wij a [&#x200B; douaneprofiel tot stand brengen.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Een profiel is verantwoordelijk voor het renderen van de XDP als HTML. Er wordt een standaardprofiel opgegeven in het vak voor het renderen van XDP&#39;s als HTML. Deze vertegenwoordigt een aangepaste versie van de Mobile Forms Rendition-service. Met de service Mobiele formulieruitvoering kunt u de weergave, het gedrag en de interacties van de Mobile Forms aanpassen. In ons aangepaste profiel leggen we de gegevens die in het mobiele formulier zijn ingevuld, vast met de API voor hulplijnen. Deze gegevens worden vervolgens verzonden naar een aangepaste servlet die vervolgens een interactieve PDF genereert en deze terugstuurt naar de aanroepende toepassing.
 
 Haal de formuliergegevens op met de `formBridge` JavaScript API. We maken gebruik van de methode `getDataXML()` :
 
@@ -127,7 +127,7 @@ public class GeneratePDFFromMobileFormData extends SlingAllMethodsServlet implem
 
 ### Interactieve PDF renderen
 
-De volgende code maakt gebruik van [ de Dienst API van Forms ](https://helpx.adobe.com/nl/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) interactieve PDF met de gegevens van de mobiele vorm terug te geven.
+De volgende code maakt gebruik van [&#x200B; de Dienst API van Forms &#x200B;](https://helpx.adobe.com/nl/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) interactieve PDF met de gegevens van de mobiele vorm terug te geven.
 
 ```java
 package com.aemforms.mobileforms.core.documentservices.impl;

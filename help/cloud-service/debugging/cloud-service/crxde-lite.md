@@ -45,7 +45,7 @@ Houd er rekening mee dat `/apps` , `/libs` en `/oak:index` onveranderbaar zijn. 
 + Als u dubbelklikt op een bestandsknooppunt in de linkernavigatie, wordt de inhoud van het bestand geopend in het rechterbovenvenster
 + Tik op de knop Alles opslaan linksboven om de wijzigingen te handhaven of op de pijl omlaag naast Alles opslaan om alle niet-opgeslagen wijzigingen te herstellen.
 
-![ CRXDE Lite - het Zuiveren Inhoud ](./assets/crxde-lite/debugging-content.png)
+![&#x200B; CRXDE Lite - het Zuiveren Inhoud &#x200B;](./assets/crxde-lite/debugging-content.png)
 
 Het aanbrengen van wijzigingen in veranderbare inhoud tijdens runtime in AEM as a Cloud Service-ontwikkelomgevingen via CRXDE Lite moet met de nodige voorzichtigheid gebeuren.
 Wijzigingen die rechtstreeks via CRXDE Lite in AEM worden aangebracht, kunnen moeilijk te volgen en te besturen zijn. Indien van toepassing, zorg ervoor dat de veranderingen die via CRXDE Lite worden aangebracht hun weg naar de veranderbare inhoudspakketten van het project van AEM (`ui.content`) en geëngageerd aan Git maken, om de kwestie te verzekeren wordt opgelost. In het ideale geval komen alle wijzigingen in de toepassingsinhoud van de basis van de code en gaan deze via implementaties naar AEM, in plaats van direct wijzigingen aan te brengen in de AEM via CRXDE Lite.
@@ -58,7 +58,7 @@ Ga naar:
 
 + CRXDE Lite > Extra > Toegangsbeheer testen...
 
-![ CRXDE Lite - de Controle van de Toegang van de Test ](./assets/crxde-lite/permissions__test-access-control.png)
+![&#x200B; CRXDE Lite - de Controle van de Toegang van de Test &#x200B;](./assets/crxde-lite/permissions__test-access-control.png)
 
 1. Selecteer in het veld Pad een JCR-pad dat u wilt evalueren
 1. Selecteer in het veld Hoofd de gebruiker of de groep aan de hand waarvan u het pad wilt beoordelen
@@ -80,4 +80,4 @@ Het volgende is het zuiveren activiteiten die __niet__ in CRXDE Lite kunnen word
 
 De opgestelde configuraties OSGi kunnen niet via CRXDE Lite worden herzien. OSGi-configuraties worden onderhouden in het codepakket `ui.apps` van het AEM Project op `/apps/example/config.xxx` . Bij implementatie in AEM as a Cloud Service-omgevingen worden de OSGi-configuratiebronnen echter niet gecontinueerd naar het JCR, zodat deze dus niet zichtbaar zijn via CRXDE Lite.
 
-In plaats daarvan, gebruik [ Developer Console > Configuraties ](./developer-console.md#configurations) om opgestelde configuraties te herzien OSGi.
+In plaats daarvan, gebruik [&#x200B; Developer Console > Configuraties &#x200B;](./developer-console.md#configurations) om opgestelde configuraties te herzien OSGi.

@@ -26,15 +26,15 @@ In dit artikel wordt uitgelegd hoe u verschillende typen PDF&#39;s kunt maken. H
 
 Hieronder ziet u een voorbeeld van een PDF/A-bestand in Acrobat DC.
 
-![ PDF ](assets/pdfa-file-in-acrobat.png)
+![&#x200B; PDF &#x200B;](assets/pdfa-file-in-acrobat.png)
 
-De dossiers van de steekproef kunnen [ van hier worden gedownload ](assets/pdf-file-types.zip)
+De dossiers van de steekproef kunnen [&#x200B; van hier worden gedownload &#x200B;](assets/pdf-file-types.zip)
 
 ## XML Forms Architecture PDF (XFA PDF)
 
 Adobe gebruikt de term XFA PDF-formulier om te verwijzen naar de interactieve en dynamische Forms die u met AEM Forms Designer maakt. De Forms en de bestanden die u met Designer maakt, zijn gebaseerd op de Adobe XML Forms Architecture (XFA). In veel opzichten is de XFA PDF-bestandsindeling dichter bij een HTML-bestand dan bij een traditioneel PDF-bestand. De volgende code toont bijvoorbeeld hoe een eenvoudig tekstobject eruitziet in een XFA PDF-bestand.
 
-![ tekst-gebied ](assets/text-field.JPG)
+![&#x200B; tekst-gebied &#x200B;](assets/text-field.JPG)
 
 XFA Forms is gebaseerd op XML. Met deze goed gestructureerde en flexibele indeling kan een AEM Forms Server uw Designer-bestanden transformeren in verschillende indelingen, zoals traditionele PDF, PDF/A en HTML. U kunt de volledige XML-structuur van uw Forms in Designer zien door het tabblad XML Source van de Indelingseditor te selecteren. U kunt zowel statische als dynamische XFA Forms maken in AEM Forms Designer.
 
@@ -61,7 +61,7 @@ Dynamische XFA PDF&#39;s kunnen hun indeling tijdens runtime wijzigen, zodat de 
 * Dynamische formulieren ondersteunen clientscripts die de indeling en paginering van het formulier wijzigen. Zo wordt Purchase Order.xdp uitgevouwen en gepagineerd voor een eindeloze hoeveelheid gegevens als u deze opslaat als een dynamisch formulier
 * Dynamische formulieren ondersteunen alle eigenschappen van het formulier tijdens runtime, terwijl statische formulieren alleen een subset ondersteunen
 
-* [ verwijs naar dit document om de verschillen tussen statische en dynamische pdf- vormen te begrijpen ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents.html?lang=nl-NL#:~:text=Dynamic%20forms%20support%20all%20the,forms%20support%20only%20a%20subset)
+* [&#x200B; verwijs naar dit document om de verschillen tussen statische en dynamische pdf- vormen te begrijpen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents.html?lang=nl-NL#:~:text=Dynamic%20forms%20support%20all%20the,forms%20support%20only%20a%20subset)
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ Een gecertificeerd document biedt ontvangers van PDF-documenten en formulieren e
 
 ### Acrovormen
 
-Acroforms zijn Adobe&#39;s oude interactieve formuliertechnologie; ze zijn terug te vinden in Acrobat versie 3. Adobe verstrekt de [ Verwijzing van Forms API van Acrobat ](assets/FormsAPIReference.pdf), gedateerd Mei 2003, om de technische details voor deze technologie te verstrekken. Acrovormen zijn een combinatie van de
+Acroforms zijn Adobe&#39;s oude interactieve formuliertechnologie; ze zijn terug te vinden in Acrobat versie 3. Adobe verstrekt de [&#x200B; Verwijzing van Forms API van Acrobat &#x200B;](assets/FormsAPIReference.pdf), gedateerd Mei 2003, om de technische details voor deze technologie te verstrekken. Acrovormen zijn een combinatie van de
 de volgende items:
 
 * Een traditionele PDF die de statische indeling en afbeeldingen van het formulier definieert.
@@ -116,7 +116,7 @@ Twee bestanden in de voorbeeldbestanden zijn gemaakt van hetzelfde Microsoft Wor
 
 Hoewel de documenten er hetzelfde uitzien, wordt het PDF/A-bestand geopend met een blauwe balk boven in het scherm, ten teken dat u dit document in de modus PDF/A weergeeft. Deze blauwe balk is een Acrobat-documentberichtenbalk die wordt weergegeven wanneer u bepaalde typen PDF-bestanden opent.
 
-![ PDF-img ](assets/pdfa-message.png)
+![&#x200B; PDF-img &#x200B;](assets/pdfa-message.png)
 
 De documentberichtenbalk bevat instructies en mogelijk knoppen waarmee u een taak kunt uitvoeren. De PDF heeft een kleurcodering en u ziet de blauwe kleur wanneer u speciale typen PDF&#39;s (zoals dit PDF/A-bestand) en gecertificeerde en digitaal ondertekende PDF&#39;s opent. De balk verandert van paars voor PDF forms en geel als je deelneemt aan een PDF-revisie.
 

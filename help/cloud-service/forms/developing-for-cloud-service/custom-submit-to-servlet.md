@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Start je aem-banking project in IntelliJ.
 Creeer een eenvoudige servlet om de voorgelegde gegevens aan het logboekdossier uit te voeren.Zorg ervoor de code in het kernproject zoals aangetoond in het het schermschot hieronder is
-![ creeer-servlet ](assets/create-servlet.png)
+![&#x200B; creeer-servlet &#x200B;](assets/create-servlet.png)
 
 ```java
 package com.aem.bankingapplication.core.servlets;
@@ -45,7 +45,7 @@ public class HandleFormSubmissison extends SlingAllMethodsServlet {
 
 ## Aangepaste verzendhandler maken
 
-Creeer uw douane voorlegt actie in de `apps/bankingapplication` omslag de zelfde manier u in de [ vroegere versies van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=nl-NL) creeerde. In het kader van deze zelfstudie maak ik een map met de naam SubmitToAEMServlet onder het knooppunt `apps/bankingapplication` in de CRX-opslagplaats.
+Creeer uw douane voorlegt actie in de `apps/bankingapplication` omslag de zelfde manier u in de [&#x200B; vroegere versies van AEM Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=nl-NL) creeerde. In het kader van deze zelfstudie maak ik een map met de naam SubmitToAEMServlet onder het knooppunt `apps/bankingapplication` in de CRX-opslagplaats.
 
 De volgende code in post.POST.jsp door:sturen eenvoudig het verzoek aan servlet op /bin/formstutorial. Dit is dezelfde servlet die in de vorige stap is gemaakt
 

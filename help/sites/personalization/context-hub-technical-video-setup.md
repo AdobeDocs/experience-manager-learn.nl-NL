@@ -24,7 +24,7 @@ ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorst
 
 >[!NOTE]
 >
->We gebruiken de WKND-referentiesite voor deze video en deze maakt geen deel uit van de AEM-release. U kunt de [ recentste versie hier downloaden ](https://github.com/adobe/aem-guides-wknd/releases).
+>We gebruiken de WKND-referentiesite voor deze video en deze maakt geen deel uit van de AEM-release. U kunt de [&#x200B; recentste versie hier downloaden &#x200B;](https://github.com/adobe/aem-guides-wknd/releases).
 
 Voeg ContextHub aan uw pagina&#39;s toe om de eigenschappen ContextHub toe te laten en aan de bibliotheken van JavaScript te verbinden ContextHub. De ContextHub JavaScript API verleent toegang tot de contextgegevens die ContextHub beheert.
 
@@ -39,7 +39,7 @@ Als u de ContextHub-functies wilt inschakelen en een koppeling wilt maken naar d
 
 ## De Configuratie van de plaats en Segmenten ContextHub {#site-configuration-and-contexthub-segments}
 
-ContextHub omvat een segmenteringsmotor die segmenten beheert en bepaalt welke segmenten voor de huidige context worden opgelost. Verschillende segmenten zijn gedefinieerd. U kunt Javascript API gebruiken om [ bepaalde opgeloste segmenten ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments) te bepalen. Laat de segmenten ContextHub voor uw plaats onder [[!UICONTROL Configuration Browser] toe ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=nl-NL).
+ContextHub omvat een segmenteringsmotor die segmenten beheert en bepaalt welke segmenten voor de huidige context worden opgelost. Verschillende segmenten zijn gedefinieerd. U kunt Javascript API gebruiken om [&#x200B; bepaalde opgeloste segmenten &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments) te bepalen. Laat de segmenten ContextHub voor uw plaats onder [[!UICONTROL Configuration Browser] toe &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=nl-NL).
 
 ## Segmenten maken {#create-segments}
 
@@ -53,7 +53,7 @@ Het toewijzen van de de configuratiepad van de Wolk, segmentatiepad en weg Conte
 
 U kunt meer over ContextHub en segmentatie hieronder lezen:
 
-* [ ContextHub ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/contexthub.html)
-* [ Toevoegend de Hub van de Context aan pagina en het Toegang hebben tot Sporen ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/ch-adding.html)
+* [&#x200B; ContextHub &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/contexthub.html)
+* [&#x200B; Toevoegend de Hub van de Context aan pagina en het Toegang hebben tot Sporen &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/ch-adding.html)
 * [Inzicht in segmentering](https://helpx.adobe.com/nl/experience-manager/6-5/sites/classic-ui-authoring/using/classic-personalization-campaigns-segmentation.html)
-* [ het Vormen Segmentatie met ContextHub ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/segmentation.html)
+* [&#x200B; het Vormen Segmentatie met ContextHub &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/segmentation.html)

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Document met opnamen (DOR) programmatisch genereren
 
-Dit artikel illustreert het gebruik van `com.adobe.aemds.guide.addon.dor.DoRService API` om **Document van Verslag** programmatically te produceren. [ Document van Verslag ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=nl-NL) is een versie van PDF van de gegevens die in AanpassingsVorm worden gevangen.
+Dit artikel illustreert het gebruik van `com.adobe.aemds.guide.addon.dor.DoRService API` om **Document van Verslag** programmatically te produceren. [&#x200B; Document van Verslag &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=nl-NL) is een versie van PDF van de gegevens die in AanpassingsVorm worden gevangen.
 
 1. Hier volgt het codefragment. De eerste regel krijgt de DOR-service.
 1. Stel de DoROptions in.
@@ -66,11 +66,11 @@ session.save();
 Voer de volgende stappen uit om dit op uw lokale systeem te proberen
 
 1. [Artikelelementen downloaden en installeren met pakketbeheer](assets/dor-with-api.zip)
-1. Zorg ervoor u geïnstalleerd en begonnen de bundel DevelopingWithServiceUser als deel van [ wordt verstrekt creeer het artikel van de Gebruiker van de Dienst ](service-user-tutorial-develop.md)
-1. [ Login aan configMgr ](http://localhost:4502/system/console/configMgr)
+1. Zorg ervoor u geïnstalleerd en begonnen de bundel DevelopingWithServiceUser als deel van [&#x200B; wordt verstrekt creeer het artikel van de Gebruiker van de Dienst &#x200B;](service-user-tutorial-develop.md)
+1. [&#x200B; Login aan configMgr &#x200B;](http://localhost:4502/system/console/configMgr)
 1. Zoeken naar Apache Sling Service User Mapper Service
 1. Zorg ervoor u de volgende ingang _DevelopingWithServiceUser.core:getformsresourceresolver=fd-dienst_ in de sectie van de Toewijzingen van de Dienst
-1. [ open de vorm ](http://localhost:4502/content/dam/formsanddocuments/sandbox/1201-borrower-payments/jcr:content?wcmmode=disabled)
+1. [&#x200B; open de vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/sandbox/1201-borrower-payments/jcr:content?wcmmode=disabled)
 1. Vul het formulier in en klik op &#39; View PDF &#39;
 1. U moet DOR zien op een nieuw tabblad in uw browser
 
@@ -82,4 +82,4 @@ PDF wordt niet weergegeven op het tabblad Nieuwe browser:
 1. Let erop dat u pop-ups in uw browser niet blokkeert
 1. Zorg ervoor dat u de AEM-server als beheerder start (tenminste in vensters)
 1. Zorg ervoor de &quot;DevelopingWithServiceUser&quot;bundel in *actieve staat* is
-1. [ zorg ervoor de systeemgebruiker ](http://localhost:4502/useradmin) &quot; fd-dienst&quot;gelezen heeft, wijzigt, en leidt toestemmingen op de volgende knoop `/content/usergenerated/content/aemformsenablement`
+1. [&#x200B; zorg ervoor de systeemgebruiker &#x200B;](http://localhost:4502/useradmin) &quot; fd-dienst&quot;gelezen heeft, wijzigt, en leidt toestemmingen op de volgende knoop `/content/usergenerated/content/aemformsenablement`

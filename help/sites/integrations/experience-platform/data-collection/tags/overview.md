@@ -34,9 +34,9 @@ Tags zijn Adobe Experience Platform van de volgende generatie technologie voor t
 Het volgende wordt vereist wanneer het integreren van de Markeringen van de Inzameling van de Gegevens van het Experience Platform.
 
 + Toegang AEM beheerder tot AEM as a Cloud Service-omgeving
-+ Een verwijzingsplaats als [ WKND ](https://github.com/adobe/aem-guides-wknd) op het wordt opgesteld dat.
++ Een verwijzingsplaats als [&#x200B; WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) op het wordt opgesteld dat.
 + Toegang tot Adobe Experience Platform-oplossing voor gegevensverzameling
-+ De toegang van de Beheerder van het systeem tot [ Adobe Developer Console ](https://developer.adobe.com/developer-console/)
++ De toegang van de Beheerder van het systeem tot [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/developer-console/)
 
 
 ## Stappen op hoog niveau
@@ -51,6 +51,6 @@ Het volgende wordt vereist wanneer het integreren van de Markeringen van de Inza
 
 ## Aanvullende bronnen {#additional-resources}
 
-+ [ Integraties van het Experience Platform met de Toepassingen van het Experience Cloud ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html?lang=nl-NL)
-+ [ Overzicht van Markeringen ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl-NL)
-+ [ Uitvoerend het Experience Cloud in Websites met Markeringen ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=nl-NL)
++ [&#x200B; Integraties van het Experience Platform met de Toepassingen van het Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html?lang=nl-NL)
++ [&#x200B; Overzicht van Markeringen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl-NL)
++ [&#x200B; Uitvoerend het Experience Cloud in Websites met Markeringen &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=nl-NL)

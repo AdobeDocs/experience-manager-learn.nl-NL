@@ -24,7 +24,7 @@ In de volgende stap wordt een service gemaakt waarmee u een nieuwe rij in de dat
 De volgende het schermschot toont een rij in het gegevensbestand.
 
 
-![ steekproefrij ](assets/sample-row.JPG)
+![&#x200B; steekproefrij &#x200B;](assets/sample-row.JPG)
 
 
 De volgende code voegt een nieuwe rij in het gegevensbestand met de aangewezen gegevens in

@@ -131,7 +131,7 @@ Adobe Experience Manager Content Fragments and Experience Fragments kunnen er on
 </td>
 </tr><tr><td><strong>Documentatie</strong></td>
 <td><ul>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=nl-NL&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js" target="_blank">Gebruikershandleiding voor AEM Content Fragments</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=nl-NL&topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js" target="_blank">Gebruikershandleiding voor AEM Content Fragments</a></li>
 <li><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=nl-NL" target="_blank">Inhoudsfragmenten in AEM gebruiken</a></li>
 </ul>
 </td>
@@ -158,7 +158,7 @@ Het volgende diagram illustreert de algemene architectuur voor AEM Content Fragm
 
 ## Architectuur van ervaringsfragmenten
 
-![ de architectuur van Fragmenten van de Ervaring ](./assets/experience-fragments-architecture.png)
+![&#x200B; de architectuur van Fragmenten van de Ervaring &#x200B;](./assets/experience-fragments-architecture.png)
 
 + **Bewerkbare Malplaatjes**, die beurtelings door **Bewerkbare Types van Malplaatje** en een **de componentenimplementatie van de Pagina van AEM** worden bepaald, bepalen de toegestane Componenten van AEM die kunnen worden gebruikt om een Fragment van de Ervaring samen te stellen.
 + Het **Fragment van de Ervaring** is een geval van een Bewerkbaar Malplaatje dat een logische ervaring vertegenwoordigt.
@@ -172,16 +172,16 @@ Het volgende diagram illustreert de algemene architectuur voor AEM Content Fragm
 
 ## De bron voor inhoudsfragmenten ondersteunen
 
-+ [ Gids van de Gebruiker van de Fragmenten van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=nl-NL&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
-+ [ Inleiding aan Adobe Experience Manager als Headless CMS ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=nl-NL)
-+ [ Gebruikend Inhoudsfragmenten in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=nl-NL)
-+ [ de component van het Fragment van de Inhoud van de Componenten van de Kern van AEM WCM &lbrace;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=nl-NL)
-+ [ Gebruikend de Fragmenten van de Inhoud en Hoofdloze AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)
-+ [ Begonnen het worden met de Diensten van de Inhoud van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=nl-NL)
++ [&#x200B; Gids van de Gebruiker van de Fragmenten van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=nl-NL&topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
++ [&#x200B; Inleiding aan Adobe Experience Manager als Headless CMS &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=nl-NL)
++ [&#x200B; Gebruikend Inhoudsfragmenten in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=nl-NL)
++ [&#x200B; de component van het Fragment van de Inhoud van de Componenten van de Kern van AEM WCM &lbrace;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=nl-NL)
++ [&#x200B; Gebruikend de Fragmenten van de Inhoud en Hoofdloze AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)
++ [&#x200B; Begonnen het worden met de Diensten van de Inhoud van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=nl-NL)
 
 ## Bronnen voor ervaringsfragmenten ondersteunen
 
-+ [ documentatie van Adobe over de Fragmenten van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=nl-NL)
-+ [ Begrijpingsfragmenten van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=nl-NL)
-+ [ Gebruikend de Fragmenten van de Ervaring van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=nl-NL)
-+ [ Gebruikend de Fragmenten van de Ervaring van AEM met Adobe Target ](https://medium.com/adobetech/experience-fragments-and-adobe-target-d8d74381b9b2)
++ [&#x200B; documentatie van Adobe over de Fragmenten van de Ervaring &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=nl-NL)
++ [&#x200B; Begrijpingsfragmenten van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=nl-NL)
++ [&#x200B; Gebruikend de Fragmenten van de Ervaring van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=nl-NL)
++ [&#x200B; Gebruikend de Fragmenten van de Ervaring van AEM met Adobe Target &#x200B;](https://medium.com/adobetech/experience-fragments-and-adobe-target-d8d74381b9b2)

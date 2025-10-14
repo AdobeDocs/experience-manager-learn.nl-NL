@@ -36,9 +36,9 @@ Bewerkbare sjablonen zijn de aanbevelingen voor het bouwen van nieuwe AEM Sites.
 * **Component van het Beeld** - capaciteit om eigenschappen zoals het bebouwen, Desktop dossier-upload met een nieuwe UI aan te zetten/uit te zetten en het beleid van het Beeld over malplaatjes opnieuw te gebruiken.
 
 Bewerkbare Malplaatjes kunnen onder **Hulpmiddelen** worden gevonden `>` **Algemene** `>` **Malplaatjes**.\
-Bewerkbare Templates URL (lokale instantie van AEM): [ http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+Bewerkbare Templates URL (lokale instantie van AEM): [&#x200B; http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ Bewerkbare Malplaatjes van de Pagina - Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=nl-NL)
-* [ Creërend de Malplaatjes van de Pagina - Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html?lang=nl-NL)
+* [&#x200B; Bewerkbare Malplaatjes van de Pagina - Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=nl-NL)
+* [&#x200B; Creërend de Malplaatjes van de Pagina - Documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html?lang=nl-NL)

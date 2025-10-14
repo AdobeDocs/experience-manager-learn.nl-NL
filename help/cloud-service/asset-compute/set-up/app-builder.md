@@ -28,10 +28,10 @@ Asset Compute-projecten zijn speciaal gedefinieerde App Builder-projecten en heb
 
 _klik-door van vestiging upApp Builder (Geen audio)_
 
-1. Login aan [ Adobe Developer Console ](https://console.adobe.io) gebruikend Adobe ID verbonden aan de provisioned [ rekeningen en de diensten ](./accounts-and-services.md). Verzeker u de Beheerder van het a __Systeem__ of in de __Rol van de Ontwikkelaar__ voor correcte Adobe Org.
+1. Login aan [&#x200B; Adobe Developer Console &#x200B;](https://console.adobe.io) gebruikend Adobe ID verbonden aan de provisioned [&#x200B; rekeningen en de diensten &#x200B;](./accounts-and-services.md). Verzeker u de Beheerder van het a __Systeem__ of in de __Rol van de Ontwikkelaar__ voor correcte Adobe Org.
 1. Creeer een project van App Builder door te tikken __creeer nieuw project > Project van malplaatje > App Builder__
 
-   _als of__ nieuw project __knoop of het__ App Builder __type niet beschikbaar is, betekent dit uw Org van Adobe niet [ provisioned met App Builder ](#request-adobe-project-app-builder)._
+   _als of__ nieuw project __knoop of het__ App Builder __type niet beschikbaar is, betekent dit uw Org van Adobe niet [&#x200B; provisioned met App Builder &#x200B;](#request-adobe-project-app-builder)._
 
    + __Titel van het Project__: `WKND AEM Asset Compute`
    + __App naam__: `wkndAemAssetCompute<YourName>`
@@ -44,7 +44,7 @@ _klik-door van vestiging upApp Builder (Geen audio)_
 1. Tik __+ voeg de Dienst > API__ toe om __te openen voeg een API__ tovenaar toe, gebruik deze benadering om volgende APIs toe te voegen:
 
    + __Experience Cloud > Asset Compute__
-      + Selecteer __produceer een zeer belangrijk paar__ en tik __sleutelpaar__ knoop, en sparen gedownloade `config.zip` aan een veilige plaats voor [ later gebruik ](#private-key)
+      + Selecteer __produceer een zeer belangrijk paar__ en tik __sleutelpaar__ knoop, en sparen gedownloade `config.zip` aan een veilige plaats voor [&#x200B; later gebruik &#x200B;](#private-key)
       + Tik __daarna__
       + Selecteer de het profiel van het Product __Integraties - Cloud Service__ en de Tik __sparen gevormde API__
    + __de Diensten van Adobe > I/O Gebeurtenissen__ en tikken __sparen gevormde API__
@@ -52,16 +52,16 @@ _klik-door van vestiging upApp Builder (Geen audio)_
 
 ## De toets private.key openen{#private-key}
 
-Toen vestiging werd de [ integratie van Asset Compute API ](#set-up) een nieuw zeer belangrijk paar geproduceerd en een `config.zip` dossier werd automatisch gedownload. Dit `config.zip` bevat het gegenereerde openbare certificaat en het overeenkomende `private.key` -bestand.
+Toen vestiging werd de [&#x200B; integratie van Asset Compute API &#x200B;](#set-up) een nieuw zeer belangrijk paar geproduceerd en een `config.zip` dossier werd automatisch gedownload. Dit `config.zip` bevat het gegenereerde openbare certificaat en het overeenkomende `private.key` -bestand.
 
-1. Unzip `config.zip` aan een veilige plaats op uw dossiersysteem aangezien `private.key` [ later ](../develop/environment-variables.md) wordt gebruikt
+1. Unzip `config.zip` aan een veilige plaats op uw dossiersysteem aangezien `private.key` [&#x200B; later &#x200B;](../develop/environment-variables.md) wordt gebruikt
    + Geheimen en persoonlijke sleutels mogen nooit als een kwestie van veiligheid aan Git worden toegevoegd.
 
 ## Controleer de referenties van de serviceaccount (JWT)
 
-De geloofsbrieven van dit Adobe I/O project worden gebruikt door het lokale [ Hulpmiddel van de Ontwikkeling van Asset Compute ](../develop/development-tool.md) om met Adobe I/O Runtime in wisselwerking te staan, en zullen in het project van Asset Compute moeten worden opgenomen. Verken uzelf met de JWT-referenties (Service Account).
+De geloofsbrieven van dit Adobe I/O project worden gebruikt door het lokale [&#x200B; Hulpmiddel van de Ontwikkeling van Asset Compute &#x200B;](../develop/development-tool.md) om met Adobe I/O Runtime in wisselwerking te staan, en zullen in het project van Asset Compute moeten worden opgenomen. Verken uzelf met de JWT-referenties (Service Account).
 
-![ de geloofsbrieven van de Rekening van de Dienst van Adobe Developer ](./assets/app-builder/service-account.png)
+![&#x200B; de geloofsbrieven van de Rekening van de Dienst van Adobe Developer &#x200B;](./assets/app-builder/service-account.png)
 
 1. Controleer in het Adobe I/O Project App Builder of de werkruimte van `Development` is geselecteerd
 1. Tik op __Rekening van de Dienst (JWT)__ onder __Referenties__

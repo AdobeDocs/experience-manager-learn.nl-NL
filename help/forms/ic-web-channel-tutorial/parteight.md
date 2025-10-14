@@ -39,11 +39,11 @@ Selecteer het juiste formuliergegevensmodel op de x- en y-as.
 
 **de Montages van de Grafiek van de Lijn in AEM Forms 6.4**
 
-![ linechart64 ](assets/linechart.png)
+![&#x200B; linechart64 &#x200B;](assets/linechart.png)
 
 **de Montages van de Grafiek van de Lijn in AEM Forms 6.5**
 
-![ linechart64 ](assets/linechart65.PNG)
+![&#x200B; linechart64 &#x200B;](assets/linechart65.PNG)
 
 ## Volgende stappen
 

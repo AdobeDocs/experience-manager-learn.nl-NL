@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Elementen exporteren
 
-Leer hoe u elementen naar uw lokale computer exporteert met een aanpasbaar Node.js-script. Dit de uitvoermanuscript verstrekt een voorbeeld van hoe te om activa van AEM programmatically te downloaden gebruikend [ AEM Assets HTTP APIs ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), specifiek het concentreren op de originele vertoningen om de hoogste kwaliteit te verzekeren. Deze is ontworpen om de mapstructuur van AEM Assets op uw lokale station te repliceren, zodat u eenvoudig back-ups kunt maken van middelen of deze kunt migreren.
+Leer hoe u elementen naar uw lokale computer exporteert met een aanpasbaar Node.js-script. Dit de uitvoermanuscript verstrekt een voorbeeld van hoe te om activa van AEM programmatically te downloaden gebruikend [&#x200B; AEM Assets HTTP APIs &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), specifiek het concentreren op de originele vertoningen om de hoogste kwaliteit te verzekeren. Deze is ontworpen om de mapstructuur van AEM Assets op uw lokale station te repliceren, zodat u eenvoudig back-ups kunt maken van middelen of deze kunt migreren.
 
 Het script downloadt alleen de oorspronkelijke uitvoeringen van het element, zonder de bijbehorende metagegevens, tenzij die metagegevens als XMP in het element zijn ingesloten. Dit betekent dat beschrijvende informatie, categorieën of tags die in AEM zijn opgeslagen maar niet in de elementbestanden zijn geïntegreerd, niet in de download zijn opgenomen. Andere vertoningen kunnen ook worden gedownload door het manuscript te wijzigen om hen te omvatten. Zorg ervoor dat u voldoende ruimte hebt om de geëxporteerde elementen op te slaan.
 
@@ -33,7 +33,7 @@ Voordat u het script uitvoert, moet u het configureren met de URL van de AEM-ins
 
 Het script, geschreven als een JavaScript-module, maakt deel uit van een Node.js-project omdat het afhankelijk is van `node-fetch` en `p-limit` . U kunt het onderstaande script kopiëren naar een leeg Node.js-project van het type `module` en `npm install node-fetch p-limit` uitvoeren om de afhankelijkheid te installeren.
 
-Met dit script wordt de mappenstructuur van AEM Assets doorlopen en worden elementen en mappen naar een lokale map op uw computer gedownload. Het gebruikt [ HTTP API van AEM Assets ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) om de omslag en activagegevens te halen, en de originele vertoningen van de activa te downloaden.
+Met dit script wordt de mappenstructuur van AEM Assets doorlopen en worden elementen en mappen naar een lokale map op uw computer gedownload. Het gebruikt [&#x200B; HTTP API van AEM Assets &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) om de omslag en activagegevens te halen, en de originele vertoningen van de activa te downloaden.
 
 ```javascript
 // export-assets.js
@@ -234,7 +234,7 @@ console.timeEnd('Download AEM assets');
 
 Werk de configuratievariabelen onder aan het script bij terwijl het script is gedownload.
 
-`AEM_ACCESS_TOKEN` kan worden verkregen gebruikend de stappen in de [ op token-gebaseerde authentificatie aan AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview) leerprogramma. Vaak volstaat het token voor ontwikkelaars van 24 uur, zolang het exporteren minder dan 24 uur duurt en de gebruiker die het token genereert leestoegang heeft tot de te exporteren middelen.
+`AEM_ACCESS_TOKEN` kan worden verkregen gebruikend de stappen in de [&#x200B; op token-gebaseerde authentificatie aan AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview) leerprogramma. Vaak volstaat het token voor ontwikkelaars van 24 uur, zolang het exporteren minder dan 24 uur duurt en de gebruiker die het token genereert leestoegang heeft tot de te exporteren middelen.
 
 ```javascript
 ...
@@ -261,7 +261,7 @@ const MAX_CONCURRENT_DOWNLOADS = 10;
 
 Voer het script uit met Node.js om de elementen naar uw lokale computer te exporteren.
 
-Afhankelijk van het aantal elementen en hun grootte kan het voltooien van het script enige tijd in beslag nemen. Aangezien het manuscript uitvoert, registreert het [ de vooruitgang ](#output) aan de console.
+Afhankelijk van het aantal elementen en hun grootte kan het voltooien van het script enige tijd in beslag nemen. Aangezien het manuscript uitvoert, registreert het [&#x200B; de vooruitgang &#x200B;](#output) aan de console.
 
 ```shell
 $ node export-assets.js
@@ -285,6 +285,6 @@ Downloaded asset: exported-assets/wknd-shared/en/magazine/western-australia/adob
 Download AEM assets: 24.770s
 ```
 
-De geëxporteerde elementen bevinden zich in de lokale map die is opgegeven in de configuratie `LOCAL_DOWNLOAD_FOLDER` . De mappenstructuur weerspiegelt de AEM Assets-mappenstructuur, waarbij de elementen naar de juiste submappen worden gedownload. Deze dossiers kunnen aan [ gesteunde leveranciers van de wolkenopslag ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view), voor [ bulkinvoer ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/migration/bulk-import) in andere instanties van AEM, of voor reservedoeleinden worden geupload.
+De geëxporteerde elementen bevinden zich in de lokale map die is opgegeven in de configuratie `LOCAL_DOWNLOAD_FOLDER` . De mappenstructuur weerspiegelt de AEM Assets-mappenstructuur, waarbij de elementen naar de juiste submappen worden gedownload. Deze dossiers kunnen aan [&#x200B; gesteunde leveranciers van de wolkenopslag &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view), voor [&#x200B; bulkinvoer &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/migration/bulk-import) in andere instanties van AEM, of voor reservedoeleinden worden geupload.
 
-![ Uitgevoerde activa ](./assets/export/exported-assets.png)
+![&#x200B; Uitgevoerde activa &#x200B;](./assets/export/exported-assets.png)

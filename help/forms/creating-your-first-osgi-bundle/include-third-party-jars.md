@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Bundels van derden opnemen in uw AEM-project
 
-In dit artikel zullen wij door de stappen betrokken bij het omvatten van de bundel van derde partij OSGi in uw project van AEM lopen.Voor dit artikel gaan wij [ jsch-0.1.55.jar ](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) in ons project van AEM omvatten.  ALS OSGi in een bepaalde bewaarplaats beschikbaar is omvat de gebiedsafhankelijkheid van de bundel in het POM.xml- dossier van het project.
+In dit artikel zullen wij door de stappen betrokken bij het omvatten van de bundel van derde partij OSGi in uw project van AEM lopen.Voor dit artikel gaan wij [&#x200B; jsch-0.1.55.jar &#x200B;](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) in ons project van AEM omvatten.  ALS OSGi in een bepaalde bewaarplaats beschikbaar is omvat de gebiedsafhankelijkheid van de bundel in het POM.xml- dossier van het project.
 
 >[!NOTE]
 > Aangenomen wordt dat de derde-partijpot een OSGi-bundel is
@@ -62,5 +62,5 @@ Noteer het basiskenmerk van het filterelement.
 mvn clean install -PautoInstallSinglePackage
 ```
 
-Als alles goed gaat, wordt het pakket samen met de bundel van derden in uw AEM-instantie geïnstalleerd. U kunt voor de bundel controleren gebruikend [ felix Webconsole ](http://localhost:4502/system/console/bundles). De bundel van derden is beschikbaar in de map /apps van de `crx` -opslagplaats, zoals hieronder wordt weergegeven
-![ derde ](assets/custom-bundle1.png)
+Als alles goed gaat, wordt het pakket samen met de bundel van derden in uw AEM-instantie geïnstalleerd. U kunt voor de bundel controleren gebruikend [&#x200B; felix Webconsole &#x200B;](http://localhost:4502/system/console/bundles). De bundel van derden is beschikbaar in de map /apps van de `crx` -opslagplaats, zoals hieronder wordt weergegeven
+![&#x200B; derde &#x200B;](assets/custom-bundle1.png)

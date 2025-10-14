@@ -80,5 +80,5 @@ Het Thema van de Bibliotheek van de Cliënt van de download [&#128279;](assets/a
 
 ## Aanvullende bronnen{#additional-resources}
 
-* [ de versiedownloads van de Commons van het Aandeel van activa ](https://github.com/Adobe-Marketing-Cloud/asset-share-commons/releases)
-* [ ACS AEM Commons 3.11.0+ versiedownloads ](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)
+* [&#x200B; de versiedownloads van de Commons van het Aandeel van activa &#x200B;](https://github.com/Adobe-Marketing-Cloud/asset-share-commons/releases)
+* [&#x200B; ACS AEM Commons 3.11.0+ versiedownloads &#x200B;](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)

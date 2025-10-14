@@ -130,7 +130,7 @@ Voorbeeld van logbestandvermelding:
 Fri Jul 20 23:00:19 2018 I pid 16004 (tid 140134145820416) Current cache hit ratio: 87.94 %
 ```
 
-Dit betekent dat het ophalen van gegevens uit het renderniveau versus uit de cache wordt gemeten. U wilt 80+ percenten van geheim voorgeheugen raken, en u zou de hulp [ hier ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=nl-NL) moeten volgen:
+Dit betekent dat het ophalen van gegevens uit het renderniveau versus uit de cache wordt gemeten. U wilt 80+ percenten van geheim voorgeheugen raken, en u zou de hulp [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=nl-NL) moeten volgen:
 
 Dit getal zo hoog mogelijk ophalen.
 
@@ -169,7 +169,7 @@ Thu Sep 27 17:35:11 2018 W pid 18936 Unable to fetch vanity URLs from 10.43.0.42
 
 Deze fout treedt op wanneer u de Dispatcher zodanig hebt geconfigureerd dat deze gebruikmaakt van de dynamische URL&#39;s met automatische filters. De installatie is echter nog niet voltooid door het pakket op de AEM-renderer te installeren.
 
-Als u dit wilt verhelpen, installeert u het URL-functiepakket voor ijdelheid op de AEM-instantie en laat u deze klaar zijn voor de anonieme gebruiker. Details [ hier ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html?lang=nl-NL)
+Als u dit wilt verhelpen, installeert u het URL-functiepakket voor ijdelheid op de AEM-instantie en laat u deze klaar zijn voor de anonieme gebruiker. Details [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html?lang=nl-NL)
 
 Een werkende vanity URL opstelling kijkt als dit:
 

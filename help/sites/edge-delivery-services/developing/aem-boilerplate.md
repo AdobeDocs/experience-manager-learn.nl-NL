@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # AEM boilerplate
 
-Opstelling de bewaarplaats van de Git van de code met het [ AEM boilerplate malplaatje ](https://github.com/adobe/aem-boilerplate) voor Edge Delivery Services.
+Opstelling de bewaarplaats van de Git van de code met het [&#x200B; AEM boilerplate malplaatje &#x200B;](https://github.com/adobe/aem-boilerplate) voor Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3434617/?learn=on&captions=dut)

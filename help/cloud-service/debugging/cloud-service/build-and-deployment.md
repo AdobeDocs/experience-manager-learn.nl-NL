@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Adobe Cloud Manager maakt het samenstellen van code en het implementeren van code naar AEM as a Cloud Service mogelijk. De mislukkingen kunnen tijdens stappen in het bouwstijlproces voorkomen, die actie vereisen om hen op te lossen. Deze gids loopt door het begrip gemeenschappelijke mislukkingen in de plaatsing, en hoe te om hen het best te benaderen.
 
-![ de Wolk beheert bouwstijlpijpleiding ](./assets/build-and-deployment/build-pipeline.png)
+![&#x200B; de Wolk beheert bouwstijlpijpleiding &#x200B;](./assets/build-and-deployment/build-pipeline.png)
 
 ## Validatie
 
@@ -31,14 +31,14 @@ De validatiestap zorgt er eenvoudig voor dat Cloud Manager-basisconfiguraties ge
 ### De omgeving heeft een ongeldige status
 
 + __het bericht van de Fout:__ het milieu is in een ongeldige staat.
-  ![ het milieu is in een ongeldige staat ](./assets/build-and-deployment/validation__invalid-state.png)
+  ![&#x200B; het milieu is in een ongeldige staat &#x200B;](./assets/build-and-deployment/validation__invalid-state.png)
 + __Oorzaak:__ het doelmilieu van de pijpleiding is in een overgangsstaat waarbij het geen nieuwe bouwt kan goedkeuren.
 + __Resolutie:__ wacht op de staat om aan een lopende (of update beschikbare) staat op te lossen. Als de omgeving wordt verwijderd, maakt u de omgeving opnieuw of kiest u een andere omgeving om aan te maken.
 
 ### Het milieu verbonden aan de pijpleiding kan niet worden gevonden
 
 + __het bericht van de Fout:__ het milieu wordt duidelijk zoals geschrapt.
-  ![ het milieu wordt duidelijk zoals geschrapt ](./assets/build-and-deployment/validation__environment-marked-as-deleted.png)
+  ![&#x200B; het milieu wordt duidelijk zoals geschrapt &#x200B;](./assets/build-and-deployment/validation__environment-marked-as-deleted.png)
 + __Oorzaak:__ het milieu de pijpleiding wordt gevormd om te gebruiken is geschrapt.
 Zelfs als een nieuw milieu van de zelfde naam opnieuw wordt gecreeerd, zal Cloud Manager niet automatisch de pijpleiding aan dat zelfde-genoemde milieu opnieuw associëren.
 + __Resolutie:__ geef de pijpleidingsconfiguratie uit, en herselecteer het milieu om op te stellen.
@@ -46,19 +46,19 @@ Zelfs als een nieuw milieu van de zelfde naam opnieuw wordt gecreeerd, zal Cloud
 ### De Git-vertakking die aan de pijplijn is gekoppeld, is niet gevonden
 
 + __het bericht van de Fout:__ Ongeldige pijpleiding: XXXXXX. Reason=Branch=xxxx niet gevonden in bewaarplaats.
-  ![ Ongeldige pijpleiding: XXXXXX. Reason=Branch=xxxx niet gevonden in bewaarplaats ](./assets/build-and-deployment/validation__branch-not-found.png)
+  ![&#x200B; Ongeldige pijpleiding: XXXXXX. Reason=Branch=xxxx niet gevonden in bewaarplaats &#x200B;](./assets/build-and-deployment/validation__branch-not-found.png)
 + __Oorzaak:__ de tak van het Git de pijpleiding wordt gevormd om te gebruiken is geschrapt.
 + __Resolutie:__ creeer de ontbrekende tak van het Git gebruikend de nauwkeurige zelfde naam, of vorm de pijpleiding opnieuw om van een verschillende, bestaande tak te bouwen.
 
 ## Testen van build en eenheid
 
-![ Bouwstijl en het Testen van de Eenheid ](./assets/build-and-deployment/build-and-unit-testing.png)
+![&#x200B; Bouwstijl en het Testen van de Eenheid &#x200B;](./assets/build-and-deployment/build-and-unit-testing.png)
 
 De bouw en de Testende fase van de Eenheid voert een Gemaakt bouwstijl (`mvn clean package`) van het project uit die uit de gevormde tak van het Git van de pijpleiding wordt gecontroleerd.
 
 De fouten die in deze fase zijn vastgesteld, moeten de lokale opbouw van het project kunnen heroveren, met de volgende uitzonderingen:
 
-+ Een beproefde gebiedsdeel niet beschikbaar op [ Gemaakt Centraal ](https://search.maven.org/) wordt gebruikt, en de Geweven bewaarplaats die het gebiedsdeel bevat is of:
++ Een beproefde gebiedsdeel niet beschikbaar op [&#x200B; Gemaakt Centraal &#x200B;](https://search.maven.org/) wordt gebruikt, en de Geweven bewaarplaats die het gebiedsdeel bevat is of:
    + Niet bereikbaar vanuit Cloud Manager, zoals een interne privéopslagplaats in Maven, of de Maven-opslagplaats vereist verificatie en de onjuiste referenties zijn opgegeven.
    + Niet expliciet geregistreerd in de map `pom.xml` van het project. Merk op dat het opnemen van Maven repositories wordt ontmoedigd omdat het de bouwtijden verhoogt.
 + Eenheidstests mislukken vanwege tijdproblemen. Dit kan zich voordoen wanneer eenheidstests timinggevoelig zijn. Een sterke indicator vertrouwt op `.sleep(..)` in de testcode.
@@ -66,19 +66,19 @@ De fouten die in deze fase zijn vastgesteld, moeten de lokale opbouw van het pro
 
 ## Codescannen
 
-![ Scannen van de Code ](./assets/build-and-deployment/code-scanning.png)
+![&#x200B; Scannen van de Code &#x200B;](./assets/build-and-deployment/code-scanning.png)
 
 Met codescannen wordt een statische codeanalyse uitgevoerd met behulp van een combinatie van Java- en AEM-specifieke aanbevolen procedures.
 
-Het aftasten van de code resulteert in een bouwstijlmislukking als de Kritieke kwetsbaarheid van de Veiligheid in de code bestaat. Minder overtredingen kunnen worden overschreven, maar het wordt aanbevolen dat deze worden gecorrigeerd. Merk op dat het codescannen onvolledig is en in [ valse positieven ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=nl-NL#dealing-with-false-positives) kan resulteren.
+Het aftasten van de code resulteert in een bouwstijlmislukking als de Kritieke kwetsbaarheid van de Veiligheid in de code bestaat. Minder overtredingen kunnen worden overschreven, maar het wordt aanbevolen dat deze worden gecorrigeerd. Merk op dat het codescannen onvolledig is en in [&#x200B; valse positieven &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=nl-NL#dealing-with-false-positives) kan resulteren.
 
 Om code die kwesties aftasten op te lossen, download het CSV-Geformatteerde rapport door Cloud Manager via de **knoop van de Details van de Download** wordt verstrekt en herzie om het even welke ingangen die.
 
-Voor meer details zie AEM specifieke regels, zie de documentaties van Cloud Manager [ douane AEM-specifieke regels van het codescannen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html?lang=nl-NL).
+Voor meer details zie AEM specifieke regels, zie de documentaties van Cloud Manager [&#x200B; douane AEM-specifieke regels van het codescannen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html?lang=nl-NL).
 
 ## Afbeeldingen samenstellen
 
-![ bouwt Beelden ](./assets/build-and-deployment/build-images.png)
+![&#x200B; bouwt Beelden &#x200B;](./assets/build-and-deployment/build-images.png)
 
 Build image is verantwoordelijk voor het combineren van de ingebouwde code-artefacten die in de stap Build &amp; Unit Testing zijn gemaakt met de AEM Release, en vormt zo één implementeerbaar artefact.
 
@@ -102,7 +102,7 @@ set the 'mergeConfigurations' flag to 'true' if you want to merge multiple confi
 #### Oorzaak 2
 
 + __Oorzaak:__ het project van AEM omvat verkeerd het zelfde codepakket tweemaal, resulterend in de duplicatie van om het even welke configuratie OSGi in genoemd pakket.
-+ __Resolutie:__ herzie alle pom.xml- pakketten ingebed in het al project, en zorg ervoor zij de `filevault-package-maven-plugin` [ configuratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL#cloud-manager-target) hebben die aan `<cloudManagerTarget>none</cloudManagerTarget>` wordt geplaatst.
++ __Resolutie:__ herzie alle pom.xml- pakketten ingebed in het al project, en zorg ervoor zij de `filevault-package-maven-plugin` [&#x200B; configuratie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL#cloud-manager-target) hebben die aan `<cloudManagerTarget>none</cloudManagerTarget>` wordt geplaatst.
 
 ### Onjuist geformuleerd script voor opnieuw aanwijzen
 
@@ -153,7 +153,7 @@ De stap Build Image mislukt met een ERROR-melding dat `com.adobe.cq.wcm.core.com
 
 Als de bovenstaande oplossingen het probleem niet oplossen, kunt u een Adobe Support-case maken via:
 
-+ [ Adobe Admin Console ](https://adminconsole.adobe.com) > het Lusje van de Steun > leidt tot Geval
++ [&#x200B; Adobe Admin Console &#x200B;](https://adminconsole.adobe.com) > het Lusje van de Steun > leidt tot Geval
 
   _als u een lid van veelvoudige Adobe Orgs bent, verzeker Adobe Org die ontbrekende pijpleiding heeft geselecteerd in Adobe Orgs schakelaar alvorens het geval tot stand te brengen._
 
@@ -161,16 +161,16 @@ Als de bovenstaande oplossingen het probleem niet oplossen, kunt u een Adobe Sup
 
 Deploy aan stap is verantwoordelijk voor het nemen van het codeartefact dat in de Beeld van de Bouwstijl wordt geproduceerd, de nieuwe auteur van AEM en de Publish diensten die van het gebruiken begint, en wanneer succes, verwijdert om het even welke oude Auteur en de Publish diensten van AEM. Ook in deze stap worden mobiele inhoudspakketten en indexen geïnstalleerd en bijgewerkt.
 
-Vertrouwd me met [ de logboeken van AEM as a Cloud Service ](./logs.md) voorafgaand aan het zuiveren van opstellen aan stap. Het logbestand van `aemerror` bevat informatie over het opstarten en afsluiten van pods die relevant kan zijn voor het implementeren van problemen. Het logbestand dat beschikbaar is via de knop Logbestand downloaden in de Cloud Manager-toepassing voor implementeren om de stap uit te voeren, is niet het `aemerror` -logbestand en bevat geen gedetailleerde informatie over het opstarten van uw toepassingen.
+Vertrouwd me met [&#x200B; de logboeken van AEM as a Cloud Service &#x200B;](./logs.md) voorafgaand aan het zuiveren van opstellen aan stap. Het logbestand van `aemerror` bevat informatie over het opstarten en afsluiten van pods die relevant kan zijn voor het implementeren van problemen. Het logbestand dat beschikbaar is via de knop Logbestand downloaden in de Cloud Manager-toepassing voor implementeren om de stap uit te voeren, is niet het `aemerror` -logbestand en bevat geen gedetailleerde informatie over het opstarten van uw toepassingen.
 
-![ opstellen aan ](./assets/build-and-deployment/deploy-to.png)
+![&#x200B; opstellen aan &#x200B;](./assets/build-and-deployment/deploy-to.png)
 
 De drie primaire redenen waarom Deploy aan stap kan ontbreken:
 
 ### De Cloud Manager-pijplijn bevat een oude AEM-versie
 
 + __Oorzaak:__ Een pijpleiding van Cloud Manager houdt een oudere versie van AEM dan wat aan het doelmilieu wordt opgesteld. Dit kan gebeuren wanneer een pijpleiding opnieuw wordt gebruikt en op een nieuw milieu richt dat een recentere versie van AEM in werking stelt. Dit kan worden geïdentificeerd door te controleren of de versie van AEM van het milieu groter is dan versie van AEM van de pijpleiding.
-  ![ de pijpleiding van Cloud Manager houdt een oude versie van AEM ](./assets/build-and-deployment/deploy-to__pipeline-holds-old-aem-version.png)
+  ![&#x200B; de pijpleiding van Cloud Manager houdt een oude versie van AEM &#x200B;](./assets/build-and-deployment/deploy-to__pipeline-holds-old-aem-version.png)
 + __Resolutie:__
    + Als het doelmilieu een Beschikbare Update heeft, uitgezochte Update van de acties van het milieu, en dan rerun de bouwstijl.
    + Als de doelomgeving geen Update Beschikbaar heeft, betekent dit dat de nieuwste versie van AEM wordt uitgevoerd. Om dit op te lossen, schrap de pijpleiding en creeer het opnieuw.
@@ -208,10 +208,10 @@ Om deze kwestie te bevestigen is de oorzaak van het falende gedrag:
 1. Verifieer de primaire (bolde) distributierij wordt geblokkeerd bij:
    + AEM Author > Tools > Deployment > Distribution
 
-     ![ Geblokkeerde distributierij ](./assets/build-and-deployment/deploy-to__var--distribution.png)
+     ![&#x200B; Geblokkeerde distributierij &#x200B;](./assets/build-and-deployment/deploy-to__var--distribution.png)
 1. Als de volgende implementatie mislukt, downloadt u logboeken van Cloud Manager &quot;Deploto&quot; met de knop Logbestand downloaden:
 
-   ![ opstellen van de Download aan logboeken ](./assets/build-and-deployment/deploy-to__var--download-logs.png)
+   ![&#x200B; opstellen van de Download aan logboeken &#x200B;](./assets/build-and-deployment/deploy-to__var--download-logs.png)
 
    ... en controleer of er ongeveer 60 minuten zijn tussen de loginstructies:
 
@@ -230,14 +230,14 @@ Om deze kwestie te bevestigen is de oorzaak van het falende gedrag:
 + __Oorzaak:__ de gebruiker van de replicatieservice van AEM die wordt gebruikt om inhoudspakketten aan de publicatieservice van AEM op te stellen kan niet aan `/var` op AEM publiceren schrijven. Dit betekent dat de implementatie van het inhoudspakket voor de AEM-publicatieservice mislukt.
 + __Resolutie:__ De volgende manieren om deze kwesties op te lossen zijn vermeld in de orde van voorkeur:
    1. Als de `/var` -bronnen niet nodig zijn, verwijdert u onder `/var` bronnen uit inhoudspakketten die als onderdeel van uw toepassing worden geïmplementeerd.
-   2. Als de `/var` middelen noodzakelijk zijn, bepaal de knoopstructuren gebruikend [ repoinit ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=nl-NL#repoinit). Scripts voor opnieuw aanwijzen kunnen worden gericht op AEM Author, AEM Publish of beide via OSGi runmodes.
-   3. Als de `/var` middelen slechts op de auteur van AEM worden vereist en redelijkerwijs niet kunnen worden gemodelleerd gebruikend [ repoinit ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=nl-NL#repoinit), hen naar een discrete inhoudspakket verplaatsen, dat slechts geïnstalleerd op de Auteur van AEM door [ inbeddend ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL#embeddeds) het in het `all` pakket in een de runmode omslag van de Auteur van AEM (`<target>/apps/example-packages/content/install.author</target>`) is.
-   4. Verstrek aangewezen ACLs aan de `sling-distribution-importer` dienstgebruiker zoals die in dit [ wordt beschreven Adobe KB ](https://helpx.adobe.com/in/experience-manager/kb/cm/cloudmanager-deploy-fails-due-to-sling-distribution-aem.html).
+   2. Als de `/var` middelen noodzakelijk zijn, bepaal de knoopstructuren gebruikend [&#x200B; repoinit &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=nl-NL#repoinit). Scripts voor opnieuw aanwijzen kunnen worden gericht op AEM Author, AEM Publish of beide via OSGi runmodes.
+   3. Als de `/var` middelen slechts op de auteur van AEM worden vereist en redelijkerwijs niet kunnen worden gemodelleerd gebruikend [&#x200B; repoinit &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=nl-NL#repoinit), hen naar een discrete inhoudspakket verplaatsen, dat slechts geïnstalleerd op de Auteur van AEM door [&#x200B; inbeddend &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL#embeddeds) het in het `all` pakket in een de runmode omslag van de Auteur van AEM (`<target>/apps/example-packages/content/install.author</target>`) is.
+   4. Verstrek aangewezen ACLs aan de `sling-distribution-importer` dienstgebruiker zoals die in dit [&#x200B; wordt beschreven Adobe KB &#x200B;](https://helpx.adobe.com/in/experience-manager/kb/cm/cloudmanager-deploy-fails-due-to-sling-distribution-aem.html).
 
 ### Een Adobe-ondersteuningsgeval maken
 
 Als de bovenstaande oplossingen het probleem niet oplossen, kunt u een Adobe Support-case maken via:
 
-+ [ Adobe Admin Console ](https://adminconsole.adobe.com) > het Lusje van de Steun > leidt tot Geval
++ [&#x200B; Adobe Admin Console &#x200B;](https://adminconsole.adobe.com) > het Lusje van de Steun > leidt tot Geval
 
   _als u een lid van veelvoudige Adobe Orgs bent, verzeker Adobe Org die ontbrekende pijpleiding heeft geselecteerd in Adobe Orgs schakelaar alvorens het geval tot stand te brengen._

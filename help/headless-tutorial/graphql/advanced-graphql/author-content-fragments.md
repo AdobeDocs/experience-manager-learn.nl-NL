@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # Inhoudsfragmenten auteur
 
-In het [ vorige hoofdstuk ](/help/headless-tutorial/graphql/advanced-graphql/create-content-fragment-models.md), creeerde u vijf Modellen van het Fragment van de Inhoud: Persoon, Team, Plaats, Adres, en Info van het Contact. Dit hoofdstuk doorloopt u de stappen om Inhoudsfragmenten tot stand te brengen die op die modellen worden gebaseerd. Ook wordt uitgelegd hoe u mapbeleid kunt maken om te beperken welke modellen van inhoudsfragmenten in de map kunnen worden gebruikt.
+In het [&#x200B; vorige hoofdstuk &#x200B;](/help/headless-tutorial/graphql/advanced-graphql/create-content-fragment-models.md), creeerde u vijf Modellen van het Fragment van de Inhoud: Persoon, Team, Plaats, Adres, en Info van het Contact. Dit hoofdstuk doorloopt u de stappen om Inhoudsfragmenten tot stand te brengen die op die modellen worden gebaseerd. Ook wordt uitgelegd hoe u mapbeleid kunt maken om te beperken welke modellen van inhoudsfragmenten in de map kunnen worden gebruikt.
 
 ## Vereisten {#prerequisites}
 
-Dit document is onderdeel van een zelfstudie met meerdere onderdelen. Gelieve te zorgen ervoor dat het [ vorige hoofdstuk ](create-content-fragment-models.md) is voltooid alvorens met dit hoofdstuk te werk te gaan.
+Dit document is onderdeel van een zelfstudie met meerdere onderdelen. Gelieve te zorgen ervoor dat het [&#x200B; vorige hoofdstuk &#x200B;](create-content-fragment-models.md) is voltooid alvorens met dit hoofdstuk te werk te gaan.
 
 ## Doelstellingen {#objectives}
 
@@ -38,11 +38,11 @@ Leer in dit hoofdstuk hoe te:
 
 Installeer een AEM-pakket dat meerdere mappen en voorbeeldafbeeldingen bevat die worden gebruikt om de zelfstudie te versnellen.
 
-1. Download [ geavanceerd-GraphQL-Tutorial-Starter-Pakket-1.1.zip ](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip)
+1. Download [&#x200B; geavanceerd-GraphQL-Tutorial-Starter-Pakket-1.1.zip &#x200B;](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip)
 1. In AEM, navigeer aan **Hulpmiddelen** > **Plaatsing** > **Pakketten** om tot **de Manager van het Pakket** toegang te hebben.
 1. Upload en installeer het pakket (ZIP-bestand) dat u in de vorige stap hebt gedownload.
 
-   ![ Pakket uploadde via pakketmanager ](assets/author-content-fragments/install-starter-package.png)
+   ![&#x200B; Pakket uploadde via pakketmanager &#x200B;](assets/author-content-fragments/install-starter-package.png)
 
 ## Mappen maken en limieten instellen met behulp van mapbeleid
 
@@ -56,11 +56,11 @@ Creeer een omslag voor de Fragmenten van de Inhoud van Instructeurs die op het M
 
 1. Van de pagina van avonturen, creeer **&#x200B;**&#x200B;> **Omslag** in de hoger-juiste hoek.
 
-   ![ creeer omslag ](assets/author-content-fragments/create-folder.png)
+   ![&#x200B; creeer omslag &#x200B;](assets/author-content-fragments/create-folder.png)
 
 1. In Create de modale van de Omslag die verschijnt, ga &quot;Instructeurs&quot;op het **gebied van de Titel** in. Noteer de &#39;s&#39; aan het einde. Titels van de mappen die veel fragmenten bevatten, moeten meervoudig zijn. Selecteer **creeer**.
 
-   ![ creeer omslag modaal ](assets/author-content-fragments/create-folder-modal.png)
+   ![&#x200B; creeer omslag modaal &#x200B;](assets/author-content-fragments/create-folder-modal.png)
 
    U hebt nu een map gemaakt voor de opslag van Adventure-instructeurs.
 
@@ -70,27 +70,27 @@ Met AEM kunt u machtigingen en beleid voor mappen met inhoudsfragmenten definië
 
 1. Selecteer de **omslag van Instructeurs** die u hebt gecreeerd, dan selecteren **Eigenschappen** van de hoogste navigatiebar.
 
-   ![ Eigenschappen ](assets/author-content-fragments/properties.png)
+   ![&#x200B; Eigenschappen &#x200B;](assets/author-content-fragments/properties.png)
 
 1. Selecteer het **Beleid** lusje, toen de-uitgezochte **Geërft van /content/dam/wknd-shared**. In het **Toegestane Modellen van het Fragment van de Inhoud door het gebied van de Weg**, selecteer het omslagpictogram.
 
-   ![ pictogram van de Omslag ](assets/author-content-fragments/folder-icon.png)
+   ![&#x200B; pictogram van de Omslag &#x200B;](assets/author-content-fragments/folder-icon.png)
 
 1. In de Uitgezochte dialoog van de Weg die opent, volg de weg **conf** > **Gedeelde WKND**. Het model van het Fragmentmodel van de Inhoud van de Persoon, dat in het vorige hoofdstuk wordt gecreeerd, bevat een verwijzing naar het Model van het Fragment van de Fragment van de Inhoud van het Contact van Info. Zowel moeten Person als de modellen van Info van het Contact in de omslag van Instructeurs worden toegestaan om een Fragment van de Inhoud van de Instructeur tot stand te brengen. Selecteer **Persoon** en **Info van het Contact**, dan pers **Uitgezocht** om de dialoog te sluiten.
 
-   ![ Uitgezochte weg ](assets/author-content-fragments/select-path.png)
+   ![&#x200B; Uitgezochte weg &#x200B;](assets/author-content-fragments/select-path.png)
 
 1. Selecteer **sparen en Sluiten** en selecteer **O.K.** in de succesdialoog die verschijnt.
 
 1. U hebt nu een omslagbeleid voor de omslag van Instructeurs gevormd. Navigeer in de **omslag van Instructeurs** en selecteer **creeer** > **het Fragment van de Inhoud**. De enige modellen die u kunt nu selecteren zijn **Persoon** en **Info van het Contact**.
 
-   ![ Beleid van de Omslag ](assets/author-content-fragments/folder-policies.png)
+   ![&#x200B; Beleid van de Omslag &#x200B;](assets/author-content-fragments/folder-policies.png)
 
 ## Inhoudsfragmenten auteur voor instructeurs
 
 Navigeer in de **omslag van Instructeurs**. Van hier, creëren wij een genestelde omslag om de contactinformatie van de Instructeurs op te slaan.
 
-Volg de stappen in de sectie over [ worden geschetst creërend omslagen ](#create-folders) om een omslag tot stand te brengen die &quot;Info van het Contact&quot;wordt genoemd. De geneste map overerft het mapbeleid van de bovenliggende map. Voel vrij om specifieker beleid te vormen zodat laat de pas gecreëerde omslag slechts het model van Info van het Contact toe worden gebruikt.
+Volg de stappen in de sectie over [&#x200B; worden geschetst creërend omslagen &#x200B;](#create-folders) om een omslag tot stand te brengen die &quot;Info van het Contact&quot;wordt genoemd. De geneste map overerft het mapbeleid van de bovenliggende map. Voel vrij om specifieker beleid te vormen zodat laat de pas gecreëerde omslag slechts het model van Info van het Contact toe worden gebruikt.
 
 ### Een instructiefragment maken
 
@@ -100,7 +100,7 @@ Laten we vier mensen maken die aan een team van Adventure-instructeurs kunnen wo
 
    Het nieuwe inhoudsfragment ziet er als volgt uit:
 
-   ![ Fragment van de Inhoud van de Persoon ](assets/author-content-fragments/person-content-fragment.png)
+   ![&#x200B; Fragment van de Inhoud van de Persoon &#x200B;](assets/author-content-fragments/person-content-fragment.png)
 
 1. Voer de volgende inhoud in de velden in:
 
@@ -118,19 +118,19 @@ Met AEM kunt u rechtstreeks vanuit de Inhoudsfragmenteditor een fragmentverwijzi
 
 1. Selecteer **Nieuw Fragment van de Inhoud** onder het **Info van het Contact** gebied.
 
-   ![ Nieuw Fragment van de Inhoud ](assets/author-content-fragments/new-content-fragment.png)
+   ![&#x200B; Nieuw Fragment van de Inhoud &#x200B;](assets/author-content-fragments/new-content-fragment.png)
 
 1. De modus Nieuw inhoudsfragment wordt geopend. Onder het Uitgezochte lusje van de Bestemming, volg de weg **avonturen** > **Instructeurs** en selecteer checkbox naast de **omslag van Info van het Contact**. Selecteer **daarna** om aan het lusje van Eigenschappen te werk te gaan.
 
-   ![ Nieuwe modale van het Fragment van de Inhoud ](assets/author-content-fragments/new-content-fragment-modal.png)
+   ![&#x200B; Nieuwe modale van het Fragment van de Inhoud &#x200B;](assets/author-content-fragments/new-content-fragment-modal.png)
 
 1. Onder het lusje van Eigenschappen, ga &quot;Info van het Contact van het Wester van Jacob&quot;op het **gebied van de Titel** in. Selecteer **creeer**, dan druk **Open** in de succesdialoog die verschijnt.
 
-   ![ Eigenschappen tabel ](assets/author-content-fragments/properties-tab.png)
+   ![&#x200B; Eigenschappen tabel &#x200B;](assets/author-content-fragments/properties-tab.png)
 
    Er worden nieuwe velden weergegeven waarmee u het inhoudsfragment Contactinfo kunt bewerken.
 
-   ![ het Fragment van de Inhoud van Info van het Contact ](assets/author-content-fragments/contact-info-content-fragment.png)
+   ![&#x200B; het Fragment van de Inhoud van Info van het Contact &#x200B;](assets/author-content-fragments/contact-info-content-fragment.png)
 
 1. Voer de volgende inhoud in de velden in:
 
@@ -141,17 +141,17 @@ Met AEM kunt u rechtstreeks vanuit de Inhoudsfragmenteditor een fragmentverwijzi
 
 1. Om terug naar het Fragment van de Inhoud van de Instructeur te navigeren, uitgezochte **Wester van de Jacob** in de hoogste-linkerhoek van de redacteur.
 
-   ![ navigeer terug naar origineel inhoudsfragment ](assets/author-content-fragments/back-to-jacob-wester.png)
+   ![&#x200B; navigeer terug naar origineel inhoudsfragment &#x200B;](assets/author-content-fragments/back-to-jacob-wester.png)
 
    Het **gebied van Info van het Contact** bevat nu de weg aan het referenced fragment van Info van het Contact. Dit is een geneste fragmentverwijzing. Het voltooide Fragment van de Inhoud van de Instructeur kijkt als dit:
 
-   ![ het Fragment van de Inhoud van het Wester van Jacob Wester ](assets/author-content-fragments/jacob-wester-content-fragment.png)
+   ![&#x200B; het Fragment van de Inhoud van het Wester van Jacob Wester &#x200B;](assets/author-content-fragments/jacob-wester-content-fragment.png)
 
 1. Selecteer **sparen en Sluiten** om het Fragment van de Inhoud te bewaren. U hebt nu een nieuw Fragment van de Inhoud van de Instructeur.
 
 ### Aanvullende fragmenten maken
 
-Volg door het zelfde proces zoals die in de [ vorige sectie ](#fragment-reference-from-editor) worden geschetst om drie meer Fragmenten van de Inhoud van Instructeurs en drie de Inhoudsfragmenten van Info van het Contact voor deze Instructeurs tot stand te brengen. Voeg de volgende inhoud in de fragmenten van Instructors toe:
+Volg door het zelfde proces zoals die in de [&#x200B; vorige sectie &#x200B;](#fragment-reference-from-editor) worden geschetst om drie meer Fragmenten van de Inhoud van Instructeurs en drie de Inhoudsfragmenten van Info van het Contact voor deze Instructeurs tot stand te brengen. Voeg de volgende inhoud in de fragmenten van Instructors toe:
 
 **Stacey Roswells**
 
@@ -205,7 +205,7 @@ U bent nu klaar om een Team te creëren!
 
 Navigeer in de **omslag van Plaatsen**. Hier ziet u twee geneste mappen die al zijn gemaakt: Yosemite National Park en Yosemite Valley Lodge.
 
-![ omslag van Plaatsen ](assets/author-content-fragments/locations-folder.png)
+![&#x200B; omslag van Plaatsen &#x200B;](assets/author-content-fragments/locations-folder.png)
 
 Negeer de map Yosemite Valley Lodge voorlopig. Wij keren aan het later in deze sectie terug wanneer wij een plaats creëren die als Basis van het Huis voor ons team van instructeurs dienst doet.
 
@@ -215,7 +215,7 @@ Navigeer in de **omslag van het Nationaal Park van 0&rbrace; Yosemite.** Op dit 
 
 Met AEM kunt u plaatsaanduidingen op tabbladen gebruiken om verschillende typen inhoud te groeperen en uw inhoudsfragmenten leesbaarder en eenvoudiger te beheren. In het vorige hoofdstuk hebt u tabplaatsaanduidingen toegevoegd aan het locatiemodel. Dientengevolge, heeft het Fragment van de Inhoud van de Plaats nu twee lusjesecties: **Details van de Plaats** en **Adres van de Plaats**.
 
-![ placeholders van het Lusje ](assets/author-content-fragments/tabs.png)
+![&#x200B; placeholders van het Lusje &#x200B;](assets/author-content-fragments/tabs.png)
 
 Het **lusje van de Details van de Plaats** bevat de **Naam**, **Beschrijving**, **Info van het Contact**, **Beeld van de Plaats**, en **Weer door de gebieden van de Seizoen**, terwijl het **Adres van de Plaats** lusje een verwijzing naar een Fragment van de Inhoud van het Adres bevat. Op de tabbladen wordt duidelijk aangegeven in welke typen inhoud de inhoud moet worden ingevuld. Het is dus gemakkelijker om inhoud te schrijven.
 
@@ -225,7 +225,7 @@ Het **Weather door Sason** gebied is een gegevenstype van Objecten JSON, zo bete
 
 U kunt de veldbeschrijving zien die in het vorige hoofdstuk is gemaakt door de muisaanwijzer op het informatiepictogram rechts van het veld te plaatsen.
 
-![ JSON Info pictogram van Objecten ](assets/author-content-fragments/json-object-info.png)
+![&#x200B; JSON Info pictogram van Objecten &#x200B;](assets/author-content-fragments/json-object-info.png)
 
 In dit geval moeten we het gemiddelde weer voor de locatie opgeven. Voer de volgende gegevens in:
 
@@ -240,7 +240,7 @@ In dit geval moeten we het gemiddelde weer voor de locatie opgeven. Voer de volg
 
 Het **Weather door Seizoen** gebied zou nu als dit moeten kijken:
 
-![ voorwerp JSON ](assets/author-content-fragments/json-object.png)
+![&#x200B; voorwerp JSON &#x200B;](assets/author-content-fragments/json-object.png)
 
 ### Inhoud toevoegen
 
@@ -251,7 +251,7 @@ Voeg de rest van de inhoud toe aan het fragment Locatie-inhoud om de informatie 
    * **Naam**: Yosemite Nationaal Park
    * **Beschrijving**: Het Nationale Park van Yosemite is in de bergen van Sierra Nevada van Californië. Het is beroemd om zijn prachtige watervallen, gigantische sequoia-bomen en iconische weergaven van El Capitan en Half Dome-kliffen. Wandelen en kamperen zijn de beste manieren om Josemite te ervaren. Talloze sporen bieden eindeloze kansen voor avontuur en exploratie.
 
-1. Van het **gebied van Info van het Contact**, creeer een Fragment van de Inhoud dat op het model van Info van het Contact wordt gebaseerd en titel het &quot;Informatie van het Contact van het Nationaal Park Yosemite&quot;. Volg het zelfde proces zoals die in de vorige sectie worden geschetst op [ creërend een fragmentverwijzing van de redacteur ](#fragment-reference-from-editor) en ga de volgende gegevens in de gebieden in:
+1. Van het **gebied van Info van het Contact**, creeer een Fragment van de Inhoud dat op het model van Info van het Contact wordt gebaseerd en titel het &quot;Informatie van het Contact van het Nationaal Park Yosemite&quot;. Volg het zelfde proces zoals die in de vorige sectie worden geschetst op [&#x200B; creërend een fragmentverwijzing van de redacteur &#x200B;](#fragment-reference-from-editor) en ga de volgende gegevens in de gebieden in:
 
    * **Telefoon**: 209-999-0000
    * **E-mail**: yosemite@wknd.com
@@ -262,9 +262,9 @@ Voeg de rest van de inhoud toe aan het fragment Locatie-inhoud om de informatie 
 
 1. Met alle toegevoegde informatie, kijkt het **lusje van de Details van de Plaats** nu als dit:
 
-   ![ Voltooide lusje van de Details van de Plaats ](assets/author-content-fragments/location-details-tab-completed.png)
+   ![&#x200B; Voltooide lusje van de Details van de Plaats &#x200B;](assets/author-content-fragments/location-details-tab-completed.png)
 
-1. Navigeer in het **Adres van de Plaats** lusje. Van het **gebied van het Adres**, creeer een Fragment van de Inhoud getiteld &quot;het Adres van het Nationaal Park Yosemite&quot;gebruikend het Model van het Fragment van de Inhoud van het Adres dat u in het vorige hoofdstuk creeerde. Volg het zelfde proces zoals die in de sectie op [ worden geschetst creërend een fragmentverwijzing van de redacteur ](#fragment-reference-from-editor) en ga de volgende gegevens in de gebieden in:
+1. Navigeer in het **Adres van de Plaats** lusje. Van het **gebied van het Adres**, creeer een Fragment van de Inhoud getiteld &quot;het Adres van het Nationaal Park Yosemite&quot;gebruikend het Model van het Fragment van de Inhoud van het Adres dat u in het vorige hoofdstuk creeerde. Volg het zelfde proces zoals die in de sectie op [&#x200B; worden geschetst creërend een fragmentverwijzing van de redacteur &#x200B;](#fragment-reference-from-editor) en ga de volgende gegevens in de gebieden in:
 
    * **Adres van de Straat**: 9010 Curry Village Drive
    * **Stad**: Yosemite Valley
@@ -274,7 +274,7 @@ Voeg de rest van de inhoud toe aan het fragment Locatie-inhoud om de informatie 
 
 1. Het voltooide **lusje van het Adres van de Plaats** van het fragment van het Nationaal Park van Yosemite kijkt als dit:
 
-   ![ Voltooid lusje van het Adres van de Plaats ](assets/author-content-fragments/location-address-tab-completed.png)
+   ![&#x200B; Voltooid lusje van het Adres van de Plaats &#x200B;](assets/author-content-fragments/location-address-tab-completed.png)
 
 1. Selecteer **sparen en Sluiten**.
 
@@ -287,14 +287,14 @@ Voeg de rest van de inhoud toe aan het fragment Locatie-inhoud om de informatie 
    * **Naam**: Josemite Valley Lodge
    * **Beschrijving**: Yosemite Valley Lodge is een hub voor groepsvergaderingen en allerlei activiteiten, zoals winkelen, dineren, vissen, wandelend, en vele meer.
 
-1. Van het **gebied van Info van het Contact**, creeer een Fragment van de Inhoud dat op het model van Info van het Contact wordt gebaseerd en titel het &quot;Info van het Contact van de Lodge van de Vallei Yosemite&quot;. Volg het zelfde proces zoals die in de sectie op [ worden geschetst creërend een fragmentverwijzing van de redacteur ](#fragment-reference-from-editor) en ga de volgende gegevens in de gebieden van het nieuwe Fragment van de Inhoud in:
+1. Van het **gebied van Info van het Contact**, creeer een Fragment van de Inhoud dat op het model van Info van het Contact wordt gebaseerd en titel het &quot;Info van het Contact van de Lodge van de Vallei Yosemite&quot;. Volg het zelfde proces zoals die in de sectie op [&#x200B; worden geschetst creërend een fragmentverwijzing van de redacteur &#x200B;](#fragment-reference-from-editor) en ga de volgende gegevens in de gebieden van het nieuwe Fragment van de Inhoud in:
 
    * **Telefoon**: 209-992-0000
    * **E-mail**: yosemitelodge@wknd.com
 
    Sla het nieuwe inhoudsfragment op.
 
-1. Navigeer terug naar **Yosemite Valley Lodge** en ga naar het **Adres van de Plaats** lusje. Van het **gebied van het Adres**, creeer een Fragment van de Inhoud getiteld &quot;het Adres van de Lodge van de Vallei van Yosemite&quot;gebruikend het Model van het Fragment van de Inhoud van het Adres dat u in het vorige hoofdstuk creeerde. Volg het zelfde proces zoals die in de sectie op [ worden geschetst creërend een fragmentverwijzing van de redacteur ](#fragment-reference-from-editor) en ga de volgende gegevens in de gebieden in:
+1. Navigeer terug naar **Yosemite Valley Lodge** en ga naar het **Adres van de Plaats** lusje. Van het **gebied van het Adres**, creeer een Fragment van de Inhoud getiteld &quot;het Adres van de Lodge van de Vallei van Yosemite&quot;gebruikend het Model van het Fragment van de Inhoud van het Adres dat u in het vorige hoofdstuk creeerde. Volg het zelfde proces zoals die in de sectie op [&#x200B; worden geschetst creërend een fragmentverwijzing van de redacteur &#x200B;](#fragment-reference-from-editor) en ga de volgende gegevens in de gebieden in:
 
    * **Adres van de Straat**: De Aandrijving van 9006 Yosemite
    * **Stad**: Nationaal Park Yosemite
@@ -306,13 +306,13 @@ Voeg de rest van de inhoud toe aan het fragment Locatie-inhoud om de informatie 
 
 1. Navigeer terug naar **Yosemite Valley Lodge**, dan uitgezocht **sparen en sluit**. De {**omslag van de Lodge van de Lodge van de Vallei 0} Yosemite bevat nu drie Fragments van de Inhoud: de Lodge van de Vallei van Yosemite, de Informatie van het Contact van de Lodge van de Lodge van Yosemite, en het Adres van de Lodge van de Lodge van de Vallei van Yosemite.**
 
-   ![ Yosemite Valley Lodge omslag ](assets/author-content-fragments/yosemite-valley-lodge-folder.png)
+   ![&#x200B; Yosemite Valley Lodge omslag &#x200B;](assets/author-content-fragments/yosemite-valley-lodge-folder.png)
 
 ## Auteur a Team Content Fragment
 
 Blader omslagen aan **Teams** > **Team Yosemite**. U ziet dat de map Yosemite Team momenteel alleen het teamlogo bevat.
 
-![ de omslag van het Team van Yosemite ](assets/author-content-fragments/yosemite-team-folder.png)
+![&#x200B; de omslag van het Team van Yosemite &#x200B;](assets/author-content-fragments/yosemite-team-folder.png)
 
 Laten we een inhoudsfragment maken met behulp van het model voor het fragment met teaminhoud en dit de titel &quot;Yosemite Team&quot; geven.
 
@@ -324,11 +324,11 @@ Met AEM kunt u inhoud en fragmentverwijzingen rechtstreeks toevoegen aan de teks
 
 1. Om een inhoudsverwijzing toe te voegen, selecteer het **activa van het Tussenvoegsel** pictogram in de toolbar van de multi-lijn tekstredacteur.
 
-   ![ de activapictogram van het Tussenvoegsel ](assets/author-content-fragments/insert-asset-icon.png)
+   ![&#x200B; de activapictogram van het Tussenvoegsel &#x200B;](assets/author-content-fragments/insert-asset-icon.png)
 
 1. In modaal die verschijnt, selecteer **team-yosemite-logo.png** en druk **Uitgezocht**.
 
-   ![ Uitgezochte beeld ](assets/author-content-fragments/select-image.png)
+   ![&#x200B; Uitgezochte beeld &#x200B;](assets/author-content-fragments/select-image.png)
 
    De inhoudsverwijzing wordt nu toegevoegd aan het **gebied van de Beschrijving**.
 
@@ -336,15 +336,15 @@ Herinner me, in het vorige hoofdstuk u fragmentverwijzingen toe om aan het **geb
 
 1. Selecteer het **pictogram van het Fragment van de Inhoud van het Tussenvoegsel** in de toolbar van de multi-lijn tekstredacteur.
 
-   ![ pictogram van het Fragment van de Inhoud van het Tussenvoegsel ](assets/author-content-fragments/insert-content-fragment-icon.png)
+   ![&#x200B; pictogram van het Fragment van de Inhoud van het Tussenvoegsel &#x200B;](assets/author-content-fragments/insert-content-fragment-icon.png)
 
 1. Blader aan **Gedeelde WKND** > **Engels** > **Vluchtelingen** > **Plaatsen** > **Yosemite Valley Lodge** > **Yosemite Valley Lodge**. Pers **Uitgezocht** om het Fragment van de Inhoud op te nemen.
 
-   ![ voeg de modale van het Fragment van de Inhoud ](assets/author-content-fragments/insert-content-fragment-modal.png) toe
+   ![&#x200B; voeg de modale van het Fragment van de Inhoud &#x200B;](assets/author-content-fragments/insert-content-fragment-modal.png) toe
 
    Het **gebied van de Beschrijving** kijkt nu als het volgende:
 
-   ![ gebied van de Beschrijving ](assets/author-content-fragments/description-field.png)
+   ![&#x200B; gebied van de Beschrijving &#x200B;](assets/author-content-fragments/description-field.png)
 
 U hebt nu de inhoud en fragmentverwijzingen rechtstreeks toegevoegd aan de teksteditor met meerdere regels.
 
@@ -352,7 +352,7 @@ U hebt nu de inhoud en fragmentverwijzingen rechtstreeks toegevoegd aan de tekst
 
 Laten we eens kijken naar het gegevenstype Datum en tijd. Selecteer het **pictogram van de Kalender** op de rechterkant van het **Begeleidende gebied van de Datum van het Team** om de kalendermening te openen.
 
-![ de kalendermening van de Datum ](assets/author-content-fragments/date-calendar-view.png)
+![&#x200B; de kalendermening van de Datum &#x200B;](assets/author-content-fragments/date-calendar-view.png)
 
 De datums in het verleden of in de toekomst kunnen worden ingesteld met de pijlen naar voren en naar achteren aan weerszijden van de maand. Laten we zeggen dat het team Yosemite op 24 mei 2016 is opgericht, dus we zullen de datum daarvoor vaststellen.
 
@@ -362,15 +362,15 @@ Laten wij Instructeurs aan de het fragmentverwijzing van de Leden van het Team t
 
 1. Selecteer **toevoegen** op het **3&rbrace; gebied van de Leden van het Team &lbrace;.**
 
-   ![ voeg knoop ](assets/author-content-fragments/add-button.png) toe
+   ![&#x200B; voeg knoop &#x200B;](assets/author-content-fragments/add-button.png) toe
 
 1. Selecteer in het nieuwe veld dat wordt weergegeven het mappictogram om het modaal pad selecteren te openen. Doorblader door omslagen aan **Gedeelde WKND** > **Engels** > **Vluchtelingen** > **Instructeurs**, dan selecteren checkbox naast **jangob-wester**. Pers **Uitgezocht** om de weg te bewaren.
 
-   ![ weg van de Verwijzing van het Fragment ](assets/author-content-fragments/fragment-reference-path.png)
+   ![&#x200B; weg van de Verwijzing van het Fragment &#x200B;](assets/author-content-fragments/fragment-reference-path.png)
 
 1. Selecteer **voeg** knoop nog drie keer toe. Gebruik de nieuwe gebieden om de resterende drie Instructeurs aan het team toe te voegen. Het **gebied van de Leden van het Team** kijkt nu als dit:
 
-   ![ het lidgebied van het Team ](assets/author-content-fragments/team-members-field.png)
+   ![&#x200B; het lidgebied van het Team &#x200B;](assets/author-content-fragments/team-members-field.png)
 
 1. Selecteer **sparen en Sluiten** om het Fragment van de Inhoud van het Team te bewaren.
 
@@ -388,7 +388,7 @@ Tot slot voegen onze pas gecreëerde Fragments van de Inhoud aan een Avontuur to
 
 1. U hebt nu drie fragmentverwijzingen toegevoegd aan een Adventure Content-fragment. De velden zien er als volgt uit:
 
-   ![ de fragmentverwijzingen van het Adventure ](assets/author-content-fragments/adventure-fragment-references.png)
+   ![&#x200B; de fragmentverwijzingen van het Adventure &#x200B;](assets/author-content-fragments/adventure-fragment-references.png)
 
 1. Selecteer **sparen en Sluiten** om uw inhoud te bewaren.
 
@@ -398,4 +398,4 @@ Gefeliciteerd! U hebt nu inhoudsfragmenten gemaakt op basis van de geavanceerde 
 
 ## Volgende stappen
 
-In het [ volgende hoofdstuk ](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md), leert u over het verzenden van geavanceerde vragen van GraphQL gebruikend GrahiQL Geïntegreerde Milieu van de Ontwikkeling (winde). Met deze query&#39;s kunnen we de gegevens bekijken die in dit hoofdstuk zijn gemaakt en deze query&#39;s uiteindelijk toevoegen aan de WKND-app.
+In het [&#x200B; volgende hoofdstuk &#x200B;](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md), leert u over het verzenden van geavanceerde vragen van GraphQL gebruikend GrahiQL Geïntegreerde Milieu van de Ontwikkeling (winde). Met deze query&#39;s kunnen we de gegevens bekijken die in dit hoofdstuk zijn gemaakt en deze query&#39;s uiteindelijk toevoegen aan de WKND-app.

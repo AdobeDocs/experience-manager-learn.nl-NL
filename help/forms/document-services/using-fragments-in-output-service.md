@@ -22,16 +22,16 @@ ht-degree: 0%
 In dit artikel gebruiken we de uitvoerservice om PDF-bestanden te genereren met xdp-fragmenten. De hoofd xdp en de fragmenten verblijven in de crx bewaarplaats. Het is belangrijk om de mapstructuur van het bestandssysteem in AEM na te bootsen. Bijvoorbeeld als u een fragment in fragmentomslag in uw xdp gebruikt moet u een omslag creëren genoemd **fragmenten** onder uw basisomslag in AEM. De basismap bevat uw basis-xdp-sjabloon. Bijvoorbeeld, als u de volgende structuur op uw dossiersysteem hebt
 * c:\xdptemplates - Deze bevat uw basis-xdp-sjabloon
 * c:\xdptemplates\fragments - Deze map bevat fragmenten en de hoofdsjabloon verwijst naar het fragment zoals hieronder wordt weergegeven
-  ![ fragment-xdp ](assets/survey-fragment.png).
+  ![&#x200B; fragment-xdp &#x200B;](assets/survey-fragment.png).
 * De omslag xdpdocuments zal uw basissjabloon en de fragmenten in **fragments** omslag bevatten
 
-U kunt de vereiste structuur tot stand brengen gebruikend [ vormen en document ui ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+U kunt de vereiste structuur tot stand brengen gebruikend [&#x200B; vormen en document ui &#x200B;](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
 Hier volgt de mapstructuur voor de voorbeeld-xdp die 2 fragmenten gebruikt
-![ vormen&amp;document ](assets/fragment-folder-structure-ui.png)
+![&#x200B; vormen&amp;document &#x200B;](assets/fragment-folder-structure-ui.png)
 
 
-* Uitvoerservice - Deze service wordt doorgaans gebruikt om XML-gegevens samen te voegen met de xdp-sjabloon of pdf om samengevoegde pdf te genereren. Voor meer details, gelieve te verwijzen naar [ javadoc ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) voor de dienst van de Output. In dit voorbeeld gebruiken we fragmenten die zich in de crx-opslagplaats bevinden.
+* Uitvoerservice - Deze service wordt doorgaans gebruikt om XML-gegevens samen te voegen met de xdp-sjabloon of pdf om samengevoegde pdf te genereren. Voor meer details, gelieve te verwijzen naar [&#x200B; javadoc &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) voor de dienst van de Output. In dit voorbeeld gebruiken we fragmenten die zich in de crx-opslagplaats bevinden.
 
 
 De volgende code is gebruikt om fragmenten in het PDF-bestand op te nemen
@@ -73,7 +73,7 @@ out.println("Document genreated and saved to " + filePath);
 **nadat u het pakket installeert zult u volgende URLs in de Filter van Adobe moeten lijsten van gewenste personen Granite CSRF.**
 
 1. Volg de onderstaande stappen om de hierboven vermelde paden te lijsten van gewenste personen.
-1. [ Login aan configMgr ](http://localhost:4502/system/console/configMgr)
+1. [&#x200B; Login aan configMgr &#x200B;](http://localhost:4502/system/console/configMgr)
 1. Zoeken naar Adobe Granite CSRF-filter
 1. Het volgende pad toevoegen aan de uitgesloten secties en opslaan
 1. /content/AemFormsSamples/usingfragments
@@ -85,7 +85,7 @@ Controleer of u &quot;POST&quot; hebt geselecteerd in de vervolgkeuzelijst
 http://localhost:4502/content/AemFormsSamples/usingfragments.html
 Zorg ervoor dat u &quot;Autorisatie&quot; opgeeft als &quot;Basic Auth&quot;. Geef de gebruikersnaam en het wachtwoord voor de AEM Server op
 Navigeer naar het tabblad Body en geef de aanvraagparameters op, zoals in de onderstaande afbeelding wordt getoond
-![ uitvoer ](assets/using-fragment-postman.png)
+![&#x200B; uitvoer &#x200B;](assets/using-fragment-postman.png)
 Klik vervolgens op Verzenden
 
 [U kunt deze postmanverzameling importeren om de API te testen](assets/usingfragments.postman_collection.json)

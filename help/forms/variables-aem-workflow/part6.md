@@ -179,5 +179,5 @@ public class LogWorkflowVariables implements WorkflowProcess {
 
 ## De voorbeeldbundel implementeren
 
-[ stel de veranderlijke logboekbundel ](assets/VariableLogger.core-1.0.0-SNAPSHOT.jar) op gebruikend de het Webconsole van Felix.
+[&#x200B; stel de veranderlijke logboekbundel &#x200B;](assets/VariableLogger.core-1.0.0-SNAPSHOT.jar) op gebruikend de het Webconsole van Felix.
 Koppel deze bundel aan een processtap in uw AEM-workflow om de waarde van de variabele String en Document te registreren.

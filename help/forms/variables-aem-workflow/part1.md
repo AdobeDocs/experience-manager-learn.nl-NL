@@ -56,7 +56,7 @@ De adaptieve formuliergegevens worden opgeslagen onder het gegevenselement, zoal
 Voer de volgende stappen uit om de middelen op uw systeem te laten werken:
 
 * [De middelen downloaden en importeren naar AEM met behulp van pakketbeheer](assets/xmlandstringvariable.zip)
-* [ Onderzoek het werkschemamodel ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) om de variabelen te begrijpen die in het werkschema worden gebruikt
-* [ vorm de E-maildienst ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
-* [ open de Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
+* [&#x200B; Onderzoek het werkschemamodel &#x200B;](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) om de variabelen te begrijpen die in het werkschema worden gebruikt
+* [&#x200B; vorm de E-maildienst &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
+* [&#x200B; open de Aangepaste Vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
 * Vul de gegevens in en verzend het formulier.

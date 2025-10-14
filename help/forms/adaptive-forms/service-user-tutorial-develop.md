@@ -21,16 +21,16 @@ In dit artikel wordt u door het proces geleid voor het maken van een servicegebr
 
 In vorige versies van Adobe Experience Manager (AEM) werd de beheerresourceoplosser gebruikt voor back-end verwerking, waarvoor toegang tot de opslagplaats was vereist. Het gebruik van de oplossing van de administratieve bron is afgekeurd in AEM 6.3. In plaats daarvan wordt een systeemgebruiker met specifieke machtigingen in de opslagplaats gebruikt.
 
-Leer meer over de details van [ het creëren van en het gebruiken van de dienstgebruikers in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html?lang=nl-NL).
+Leer meer over de details van [&#x200B; het creëren van en het gebruiken van de dienstgebruikers in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html?lang=nl-NL).
 
 Dit artikel doorloopt de verwezenlijking van een systeemgebruiker en het vormen van de eigenschappen van de gebruikerskaart.
 
-1. Navigeer aan [ http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)
+1. Navigeer aan [&#x200B; http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)
 1. Aanmelden als beheerder
 1. Klik op Gebruikersbeheer
 1. Klik op Systeemgebruiker maken
 1. Stel het type gebruikersnaam in als &#39; data &#39; en klik op het groene pictogram om het maken van de systeemgebruiker te voltooien
-1. [ Open configMgr ](http://localhost:4502/system/console/configMgr)
+1. [&#x200B; Open configMgr &#x200B;](http://localhost:4502/system/console/configMgr)
 1. Onderzoek naar _de Dienst van het Mapper van de Gebruiker van de Dienst van Apache Sling_ en klik om de eigenschappen te openen
 1. Klik op het pictogram *+* (plus) om de volgende servicetoewijzing toe te voegen
 
@@ -44,14 +44,14 @@ In de bovenstaande configuratie-instelling DevelopingWithServiceUser.core is de 
 We kunnen ook resourceresolver krijgen namens gebruikers van fd-service. Deze servicegebruiker wordt gebruikt voor documentservices. Als u bijvoorbeeld gebruiksrechten wilt certificeren/toepassen enz., gebruiken we resourceoploser van gebruikers van fd-service om de bewerkingen uit te voeren
 
 1. [Download en decomprimeer het ZIP-bestand dat aan dit artikel is gekoppeld.](assets/developingwithserviceuser.zip)
-1. Navigeer aan [ http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
+1. Navigeer aan [&#x200B; http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 1. Upload en start de OSGi-bundel
 1. Zorg ervoor dat de bundel actief is
 1. U hebt met succes a *Gebruiker van het Systeem* gecreeerd en ook de *bundel van de Gebruiker van de Dienst* opgesteld.
 
    Om toegang tot /content te verlenen, geef de systeemgebruiker (&#39; data &#39;) toestemmingen op de inhoudsknoop lezen.
 
-   1. Navigeer aan [ http://localhost:4502/useradmin ](http://localhost:4502/useradmin)
+   1. Navigeer aan [&#x200B; http://localhost:4502/useradmin &#x200B;](http://localhost:4502/useradmin)
    1. Zoeken naar gegevens van gebruiker &#39;. Dit is dezelfde systeemgebruiker die u in de vorige stap hebt gemaakt.
    1. Dubbelklik op de gebruiker en klik vervolgens op het tabblad Machtigingen
    1. &#39; read &#39; toegang geven tot de map &#39;content&#39;.

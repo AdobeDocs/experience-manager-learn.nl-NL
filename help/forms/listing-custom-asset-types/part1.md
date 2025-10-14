@@ -46,7 +46,7 @@ Stappen om het basispad te configureren
 
 Door het wegbezit aan **te specificeren &quot;/content/dam&quot;** plaatst u fundamenteel de Weg van de Basis aan /content/dam. Dit kan worden geverifieerd door de component Search and Lister te openen.
 
-![ basepath ](assets/basepath.png)
+![&#x200B; basepath &#x200B;](assets/basepath.png)
 
 ## Aangepaste elementtypen registreren {#register-custom-asset-types}
 
@@ -83,8 +83,8 @@ Er is een nieuw tabblad (Lijst met elementen) toegevoegd aan de zoek- en listerc
 
 Nadat u de bovenstaande stappen hebt uitgevoerd, wordt het nieuwe elementtype (Mp4-bestanden) weergegeven in de vervolgkeuzelijst met elementtypen van de component Zoeken en Registreren, zoals hieronder wordt weergegeven
 
-![ mp4files ](assets/mp4files.png)
+![&#x200B; mp4files &#x200B;](assets/mp4files.png)
 
-[ als u problemen hebt in het krijgen van dit aan het werk, kunt u het volgende pakket invoeren.](assets/assettypeskt1.zip) Voor het pakket zijn twee aangepaste elementtypen gedefinieerd. MP4-bestanden en WordDocuments. Stel dat u een blik werpt op **/apps/fd/fp/extensions/querybuilder/assettypes**
+[&#x200B; als u problemen hebt in het krijgen van dit aan het werk, kunt u het volgende pakket invoeren.](assets/assettypeskt1.zip) Voor het pakket zijn twee aangepaste elementtypen gedefinieerd. MP4-bestanden en WordDocuments. Stel dat u een blik werpt op **/apps/fd/fp/extensions/querybuilder/assettypes**
 
-[ installeer het aangepaste poortpakket ](assets/customportalpage.zip). Dit pakket bevat een voorbeeldportalpagina. Deze pagina wordt gebruikt in deel 2 van deze zelfstudie
+[&#x200B; installeer het aangepaste poortpakket &#x200B;](assets/customportalpage.zip). Dit pakket bevat een voorbeeldportalpagina. Deze pagina wordt gebruikt in deel 2 van deze zelfstudie

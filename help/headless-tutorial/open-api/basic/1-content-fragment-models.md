@@ -40,7 +40,7 @@ Een projectconfiguratie bevat alle Modellen van het Fragment van de Inhoud verbo
    * Naam: **my-project**
    * De Modellen van het Fragment van de inhoud: **Gecontroleerde**
 
-   ![ Mijn Configuratie van het Project ](assets/1/create-configuration.png)
+   ![&#x200B; Mijn Configuratie van het Project &#x200B;](assets/1/create-configuration.png)
 
 1. Selecteer **creeer** om de projectconfiguratie tot stand te brengen.
 
@@ -107,7 +107,7 @@ Creeer een Model van het Fragment van de Inhoud voor a **Persoon**, dat het gege
 
 1. Het definitieve **model van de Persoon** zou als het volgende moeten kijken:
 
-   ![ Model van het Fragment van de Inhoud van de Persoon ](assets/1/person-content-fragment-model.png)
+   ![&#x200B; Model van het Fragment van de Inhoud van de Persoon &#x200B;](assets/1/person-content-fragment-model.png)
 
 1. Klik **sparen** om de veranderingen te bewaren.
 
@@ -142,13 +142,13 @@ Creeer een Model van het Fragment van de Inhoud voor a **Team**, dat het gegeven
 
 1. Het definitieve **model van het Team** zou als het volgende moeten kijken:
 
-   ![ Definitief Model van het Fragment van de Inhoud van het Team ](assets/1/team-content-fragment-model.png)
+   ![&#x200B; Definitief Model van het Fragment van de Inhoud van het Team &#x200B;](assets/1/team-content-fragment-model.png)
 
 1. Klik **sparen** om de veranderingen te bewaren.
 
 1. U moet nu twee modellen hebben waaruit u kunt werken:
 
-   ![ Twee Modellen van het Fragment van de Inhoud ](assets/1/two-content-fragment-models.png)
+   ![&#x200B; Twee Modellen van het Fragment van de Inhoud &#x200B;](assets/1/two-content-fragment-models.png)
 
 ## Gefeliciteerd!
 
@@ -156,7 +156,7 @@ Gefeliciteerd, u hebt zojuist uw eerste modellen van inhoudsfragmenten gemaakt!
 
 ## Volgende stappen
 
-In het volgende hoofdstuk, [ het Authoring Modellen van het Fragment van de Inhoud ](2-author-content-fragments.md), creeert en geeft u een nieuw die Fragment van de Inhoud uit op een Model van het Fragment van de Inhoud wordt gebaseerd. U leert ook hoe u variaties van inhoudsfragmenten kunt maken.
+In het volgende hoofdstuk, [&#x200B; het Authoring Modellen van het Fragment van de Inhoud &#x200B;](2-author-content-fragments.md), creeert en geeft u een nieuw die Fragment van de Inhoud uit op een Model van het Fragment van de Inhoud wordt gebaseerd. U leert ook hoe u variaties van inhoudsfragmenten kunt maken.
 
 ## Gerelateerde documentatie
 

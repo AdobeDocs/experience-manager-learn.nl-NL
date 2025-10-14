@@ -31,8 +31,8 @@ Met het oog op deze cursus hebben we het volgende gemaakt en verstrekt
 
 Op deze manier wordt onze code in de aangepaste jsp alleen uitgevoerd wanneer het adaptieve formulier dat is gebaseerd op deze aangepaste sjabloon, wordt weergegeven
 
-* [ de Invoer het pakket ](assets/template-page-component.zip) gebruikend [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
-* [ Open fdmrequest.jsp ](http://localhost:4502/crx/de/index.jsp#/apps/fdmdemo/component/page/fdmdemo/fdmrequest.jsp)
+* [&#x200B; de Invoer het pakket &#x200B;](assets/template-page-component.zip) gebruikend [&#x200B; pakketmanager &#x200B;](http://localhost:4502/crx/packmgr/index.jsp)
+* [&#x200B; Open fdmrequest.jsp &#x200B;](http://localhost:4502/crx/de/index.jsp#/apps/fdmdemo/component/page/fdmdemo/fdmrequest.jsp)
 * Verwijder de commentaarregel.
 * Uw wijzigingen opslaan
 

@@ -31,7 +31,7 @@ In dit hoofdstuk wordt ook beschreven hoe u de validatieregels voor inhoudsverwi
 
 ## Vereisten {#prerequisites}
 
-Dit is een geavanceerde zelfstudie. Alvorens met dit hoofdstuk te werk te gaan, zorg ervoor dat u de [ snelle opstelling ](../quick-setup/cloud-service.md) hebt voltooid. Zorg ervoor dat u ook door het vorige [ overzicht ](../overview.md) hoofdstuk voor meer informatie over de opstelling voor het geavanceerde leerprogramma hebt gelezen.
+Dit is een geavanceerde zelfstudie. Alvorens met dit hoofdstuk te werk te gaan, zorg ervoor dat u de [&#x200B; snelle opstelling &#x200B;](../quick-setup/cloud-service.md) hebt voltooid. Zorg ervoor dat u ook door het vorige [&#x200B; overzicht &#x200B;](../overview.md) hoofdstuk voor meer informatie over de opstelling voor het geavanceerde leerprogramma hebt gelezen.
 
 ## Doelstellingen {#objectives}
 
@@ -47,11 +47,11 @@ De volgende video biedt een korte inleiding tot Modellen van inhoudsfragmenten e
 
 ## Modellen voor inhoudsfragmenten maken {#create-models}
 
-Laten we een aantal modellen van inhoudsfragmenten maken voor de WKND-app. Als u een basisinleiding aan het creëren van de Modellen van het Fragment van de Inhoud vereist, gelieve het aangewezen hoofdstuk in het [ basisleerprogramma ](../multi-step/content-fragment-models.md) te zien.
+Laten we een aantal modellen van inhoudsfragmenten maken voor de WKND-app. Als u een basisinleiding aan het creëren van de Modellen van het Fragment van de Inhoud vereist, gelieve het aangewezen hoofdstuk in het [&#x200B; basisleerprogramma &#x200B;](../multi-step/content-fragment-models.md) te zien.
 
 1. Navigeer aan **Hulpmiddelen** > **Algemene** > **Modellen van het Fragment van de Inhoud**.
 
-   ![ de Weg van Modellen van het Fragment van de Inhoud ](assets/define-content-fragment-models/content-fragment-models-path.png)
+   ![&#x200B; de Weg van Modellen van het Fragment van de Inhoud &#x200B;](assets/define-content-fragment-models/content-fragment-models-path.png)
 
 1. Selecteer **Gedeelde WKND** om de lijst van bestaande Modellen van het Fragment van de Inhoud voor de plaats te bekijken.
 
@@ -71,7 +71,7 @@ Adobe Experience Manager wordt geleverd met ingebouwde validatiemethoden. Met de
 
 Het voltooide fragmentmodel voor inhoud moet er als volgt uitzien:
 
-![ de modelweg van Info van het Contact ](assets/define-content-fragment-models/contact-info-model.png)
+![&#x200B; de modelweg van Info van het Contact &#x200B;](assets/define-content-fragment-models/contact-info-model.png)
 
 Zodra gedaan, uitgezocht **sparen** om uw veranderingen te bevestigen en de ModelRedacteur van het Fragment van de Inhoud te sluiten.
 
@@ -95,7 +95,7 @@ Maak vervolgens een model voor een adres.
 1. Selecteer **sparen** om de veranderingen in het model van het Adres te bewaren.
 
    Het voltooide fragmentmodel &quot;Adres&quot; moet er als volgt uitzien:
-   ![ model van het Adres ](assets/define-content-fragment-models/address-model.png)
+   ![&#x200B; model van het Adres &#x200B;](assets/define-content-fragment-models/address-model.png)
 
 ### Persmodel {#person-model}
 
@@ -107,7 +107,7 @@ Maak vervolgens een model dat informatie over een persoon bevat.
 
 1. Begin door a **Enige gebied van de lijntekst** op het model te slepen. Geef het a **Etiket van het Gebied** van &quot;Volledige Naam&quot;. De eigenschapsnaam wordt automatisch ingevuld als `fullName` . Selecteer checkbox om het gebied **Vereist** te maken.
 
-   ![ Volledige naamopties ](assets/define-content-fragment-models/full-name.png)
+   ![&#x200B; Volledige naamopties &#x200B;](assets/define-content-fragment-models/full-name.png)
 
 1. In andere modellen kunt u verwijzen naar modellen van inhoudsfragmenten. Navigeer aan het **lusje van de Types van Gegevens**, dan belemmering en laat vallen het **gebied van de Verwijzing van het Fragment** en geef het een etiket van &quot;Info van het Contact&quot;.
 
@@ -115,16 +115,16 @@ Maak vervolgens een model dat informatie over een persoon bevat.
 
 1. Voeg het gebied van de Verwijzing van de a **Inhoud** toe en geef het a **Etiket van het Gebied** van &quot;Beeld van het Profiel.&quot; Selecteer het omslagpictogram onder **Weg van de Wortel** om de modaal van de wegselectie te openen. Selecteer een wortelweg door **inhoud** te selecteren > **Assets**, dan selecterend checkbox voor **Gedeelde WKND**. Gebruik **Uitgezochte** knoop bij het hoogste recht om de weg te bewaren. Het uiteindelijke tekstpad moet `/content/dam/wknd-shared` lezen.
 
-   ![ de wortelweg van de inhoudsverwijzing ](assets/define-content-fragment-models/content-reference-root-path.png)
+   ![&#x200B; de wortelweg van de inhoudsverwijzing &#x200B;](assets/define-content-fragment-models/content-reference-root-path.png)
 
 1. Onder **keurt slechts gespecificeerde inhoudstypes** goed, uitgezochte &quot;Beeld&quot;.
 
-   ![ de beeldopties van het Profiel ](assets/define-content-fragment-models/profile-picture.png)
+   ![&#x200B; de beeldopties van het Profiel &#x200B;](assets/define-content-fragment-models/profile-picture.png)
 
 1. Als u de grootte en afmetingen van afbeeldingsbestanden wilt beperken, bekijkt u enkele validatieopties voor het veld met inhoudsverwijzing.
 
    Onder **keurt slechts gespecificeerde dossiergrootte** goed, uitgezocht &quot;minder dan of gelijk aan&quot;, en de extra gebieden verschijnen hieronder.
-   ![ keurt slechts gespecificeerde dossiergrootte ](assets/define-content-fragment-models/accept-specified-file-size.png) goed
+   ![&#x200B; keurt slechts gespecificeerde dossiergrootte &#x200B;](assets/define-content-fragment-models/accept-specified-file-size.png) goed
 
 1. Voor **Max**, ga &quot;5&quot;in, en voor **Uitgezochte Eenheid**, selecteer &quot;Megabytes (MB)&quot;. Bij deze validatie kunnen alleen afbeeldingen van de opgegeven grootte worden gekozen.
 
@@ -132,17 +132,17 @@ Maak vervolgens een model dat informatie over een persoon bevat.
 
    Deze validaties zorgen ervoor dat toegevoegde afbeeldingen de opgegeven waarden niet overschrijden. De validatieregels moeten er nu als volgt uitzien:
 
-   ![ de verwijzingsbevestigingsregels van de Inhoud ](assets/define-content-fragment-models/content-reference-validation.png)
+   ![&#x200B; de verwijzingsbevestigingsregels van de Inhoud &#x200B;](assets/define-content-fragment-models/content-reference-validation.png)
 
 1. Voeg a **Meerdere lijntekst** gebied toe en geef het a **Etiket van het Gebied** van &quot;Biografie&quot;. Verlaat het **StandaardType** dropdown als standaard &quot;Rijke Tekst&quot;optie.
 
-   ![ de opties van de Biografie ](assets/define-content-fragment-models/biography.png)
+   ![&#x200B; de opties van de Biografie &#x200B;](assets/define-content-fragment-models/biography.png)
 
 1. Navigeer aan de **Types van Gegevens** tabel, dan sleep een **Opsomming** gebied onder &quot;Biografie&quot;. In plaats van het gebrek **geeft terug als** optie, uitgezocht **Dropdown** en geeft het a **Etiket van het Gebied** van &quot;het Niveau van de Ervaring van de Instructeur&quot;. Ga een selectie van de opties van het de ervaringsniveau van de instructeur zoals _Expert, Geavanceerd in, Midden_.
 
 1. Daarna, sleep een ander **gebied van de Opsomming** onder &quot;het Niveau van de Ervaring van de Instructeur&quot;en kies &quot;checkboxes&quot;onder **teruggeven als** optie. Geef het a **Etiket van het Gebied** van &quot;Vaardigheden&quot;. Voer verschillende vaardigheden in, zoals het klimmen van rots, surfen, fietsen, skiën en backpackaging. Het label en de waarde van de optie moeten overeenkomen met de onderstaande waarden:
 
-   ![ Opsomming van Vaardigheden ](assets/define-content-fragment-models/skills-enum.png)
+   ![&#x200B; Opsomming van Vaardigheden &#x200B;](assets/define-content-fragment-models/skills-enum.png)
 
 1. Tot slot creeer een het gebiedsetiket van de &quot;Details van de Beheerder&quot;gebruikend a **multi-line tekst** gebied.
 
@@ -164,7 +164,7 @@ In het volgende inhoudsfragmentmodel wordt een fysieke locatie beschreven. Dit m
 
 1. Laten wij ook a **gebied van Objecten JSON** &lbrace;onder het Beeld van de Plaats toevoegen.&quot; Aangezien dit gegevenstype flexibel is, kan het worden gebruikt om het even welke gegevens te tonen u in uw inhoud wilt omvatten. In dit geval wordt het JSON-object gebruikt om informatie over het weer weer weer te geven. Geef het JSON-object het label &#39;Weer op seizoen&#39;. In het **lusje van Eigenschappen**, voeg a **Beschrijving** toe zodat is het duidelijk aan de gebruiker welke gegevens hier zouden moeten zijn ingegaan: &quot;JSON- gegevens betreffende het weerweer van de gebeurtenisplaats door seizoen (Lente, Zomer, Herfst, Winter).&quot;
 
-   ![ opties van Objecten JSON ](assets/define-content-fragment-models/json-object.png)
+   ![&#x200B; opties van Objecten JSON &#x200B;](assets/define-content-fragment-models/json-object.png)
 
 1. Om het lusje van het Adres van de Plaats tot stand te brengen, voeg Placeholder van het a **Lusje** gebied aan het model toe en etiketteer het &quot;Adres van de Plaats.&quot;
 
@@ -172,7 +172,7 @@ In het volgende inhoudsfragmentmodel wordt een fysieke locatie beschreven. Dit m
 
 1. Selecteer **sparen** om uw veranderingen te bevestigen en de Redacteur van het Model van het Fragment van de Inhoud te sluiten. Het voltooide model van de Plaats zou als hieronder moeten verschijnen:
 
-   ![ de verwijzingsopties van de Inhoud ](assets/define-content-fragment-models/location-model.png)
+   ![&#x200B; de verwijzingsopties van de Inhoud &#x200B;](assets/define-content-fragment-models/location-model.png)
 
 ### Teammodel {#team-model}
 
@@ -184,15 +184,15 @@ Tot slot creeer een model dat een team van mensen beschrijft.
 
 1. Voeg het gebied van de Datum en van de Tijd van de a **&#x200B;**&#x200B;aan het model toe en etiketteer het &quot;Team die Datum&quot;stichten. In dit geval, houd het standaard **Type** geplaatst aan &quot;Datum&quot;, maar merk op dat het ook mogelijk is om &quot;Datum &amp; Tijd&quot;of &quot;Tijd&quot;te gebruiken.
 
-   ![ de opties van de Datum en van de tijd ](assets/define-content-fragment-models/date-and-time.png)
+   ![&#x200B; de opties van de Datum en van de tijd &#x200B;](assets/define-content-fragment-models/date-and-time.png)
 
 1. Navigeer aan de **Types van Gegevens** tabel. Onder het &quot;Team dat Datum&quot;oprichtt, voeg de Verwijzing van het a **Fragment** toe. In **geef terug als** dropdown, uitgezocht &quot;multifield&quot;. Voor **Etiket van het Gebied**, ga &quot;Leden van het Team&quot;in. Dit gebied verbindt met het _model van de Persoon_ eerder gecreeerd. Aangezien het gegevenstype een multi-gebied is, kunnen de veelvoudige fragmenten van de Persoon worden toegevoegd, toelatend de verwezenlijking van een team van mensen.
 
-   ![ de verwijzingsopties van het Fragment ](assets/define-content-fragment-models/fragment-reference.png)
+   ![&#x200B; de verwijzingsopties van het Fragment &#x200B;](assets/define-content-fragment-models/fragment-reference.png)
 
 1. Onder **Toegestane Modellen van het Fragment van de Inhoud**, gebruik het omslagpictogram om de Uitgezochte modale Weg te openen, dan selecteer het **Person** model. Gebruik **Uitgezochte** knoop om de weg te bewaren.
 
-   ![ Uitgezochte model van de Persoon ](assets/define-content-fragment-models/select-person-model.png)
+   ![&#x200B; Uitgezochte model van de Persoon &#x200B;](assets/define-content-fragment-models/select-person-model.png)
 
 1. Selecteer **sparen** om uw veranderingen te bevestigen en de Redacteur van het Model van het Fragment van de Inhoud te sluiten.
 
@@ -202,19 +202,19 @@ Gelijkaardig aan hoe het model van het Team een fragmentverwijzing naar het mode
 
 1. Van de **Gedeelde WKND** pagina, selecteer het **model van het avontuur**, dan uitgezocht **geef** van de hoogste navigatie uit.
 
-   ![ Adventure geeft weg uit ](assets/define-content-fragment-models/adventure-edit-path.png)
+   ![&#x200B; Adventure geeft weg uit &#x200B;](assets/define-content-fragment-models/adventure-edit-path.png)
 
 1. Bij de bodem van de vorm, onder &quot;wat om&quot;te brengen, voeg het gebied van de Verwijzing van het a **Fragment** toe. Ga het Etiket van het a **Gebied** van &quot;Plaats in&quot;. Onder **Toegestane Modellen van het Fragment van de Inhoud**, selecteer het **3&rbrace; model van de Plaats &lbrace;.**
 
-   ![ het fragmentverwijzingsopties van de Plaats ](assets/define-content-fragment-models/location-fragment-reference.png)
+   ![&#x200B; het fragmentverwijzingsopties van de Plaats &#x200B;](assets/define-content-fragment-models/location-fragment-reference.png)
 
 1. Voeg één meer **gebied van de Verwijzing van het 0&rbrace; fragment toe &lbrace;en etiketteer het &quot;Team van de Instructeur&quot;.** Onder **Toegestane Modellen van het Fragment van de Inhoud**, selecteer het **Team** model.
 
-   ![ de verwijzingsopties van het fragment van het Team ](assets/define-content-fragment-models/team-fragment-reference.png)
+   ![&#x200B; de verwijzingsopties van het fragment van het Team &#x200B;](assets/define-content-fragment-models/team-fragment-reference.png)
 
 1. Voeg een ander **gebied van de Verwijzing van het 1&rbrace; fragment toe** en etiketteer het &quot;Beheerder.&quot;
 
-   ![ de verwijzingsopties van het fragment van de Beheerder ](assets/define-content-fragment-models/administrator-fragment-reference.png)
+   ![&#x200B; de verwijzingsopties van het fragment van de Beheerder &#x200B;](assets/define-content-fragment-models/administrator-fragment-reference.png)
 
 1. Selecteer **sparen** om uw veranderingen te bevestigen en de Redacteur van het Model van het Fragment van de Inhoud te sluiten.
 
@@ -234,7 +234,7 @@ Gefeliciteerd! U hebt nu tabbladen toegevoegd, de gegevenstypen date en time voo
 
 ## Volgende stappen {#next-steps}
 
-Het volgende hoofdstuk in deze reeks zal [ auteursinhoudsfragmenten ](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md) van de modellen behandelen u in dit hoofdstuk creeerde. Leer hoe u de gegevenstypen gebruikt die in dit hoofdstuk zijn geïntroduceerd en mapbeleid maakt om te beperken welke modellen van inhoudsfragmenten in een elementenmap kunnen worden gemaakt.
+Het volgende hoofdstuk in deze reeks zal [&#x200B; auteursinhoudsfragmenten &#x200B;](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md) van de modellen behandelen u in dit hoofdstuk creeerde. Leer hoe u de gegevenstypen gebruikt die in dit hoofdstuk zijn geïntroduceerd en mapbeleid maakt om te beperken welke modellen van inhoudsfragmenten in een elementenmap kunnen worden gemaakt.
 
 Hoewel dit optioneel is voor deze zelfstudie, dient u alle inhoud te publiceren in situaties waarin de inhoud in de praktijk wordt geproduceerd. Raadpleeg voor een overzicht van auteur- en publicatieomgevingen in AEM de
-[ AEM Headless en GraphQL videoreeks ](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md).
+[&#x200B; AEM Headless en GraphQL videoreeks &#x200B;](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md).

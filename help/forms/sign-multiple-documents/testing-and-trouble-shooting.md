@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Een voorbeeld van het herfinancieringsformulier bekijken
 
-Het gebruiksgeval wordt teweeggebracht wanneer de agent van de klantendienst vult en [ overlegt herfinanciert vorm ](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
+Het gebruiksgeval wordt teweeggebracht wanneer de agent van de klantendienst vult en [&#x200B; overlegt herfinanciert vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
 
 De workflow Meerdere Forms ondertekenen leidt tot het verzenden van dit formulier en de klant ontvangt een e-mailmelding met een koppeling om het invullen en ondertekenen van het formulier te starten.
 

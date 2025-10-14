@@ -23,7 +23,7 @@ In dit deel maken we een REST-gegevensbron.  De volgende video doorloopt de stap
 
 >[!VIDEO](https://video.tv.adobe.com/v/22344?quality=12&learn=on)
 
-Gebruik het wagerbestand dat u ontvangt als onderdeel van de elementen die aan deze zelfstudie zijn gekoppeld. De activa zijn beschikbaar in [ inleiding ](introduction.md) van dit leerprogramma.
+Gebruik het wagerbestand dat u ontvangt als onderdeel van de elementen die aan deze zelfstudie zijn gekoppeld. De activa zijn beschikbaar in [&#x200B; inleiding &#x200B;](introduction.md) van dit leerprogramma.
 
 ## Volgende stappen
 

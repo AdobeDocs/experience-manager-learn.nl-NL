@@ -35,7 +35,7 @@ Adobe Experience Manager (AEM) kan lokaal worden uitgevoerd met de AEM as a Clou
 
 Experience Manager is een Java™-toepassing en vereist daarom dat de Oracle Java™ SDK de ontwikkelingstool ondersteunt.
 
-1. [ Download en installeer recentste Java™ SDK 11 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2fx jcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
+1. [&#x200B; Download en installeer recentste Java™ SDK 11 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2fx jcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
 1. Controleer of Oracle Java™ 11 SDK is geïnstalleerd met de opdracht:
 
 >[!BEGINTABS]
@@ -60,13 +60,13 @@ $ java --version
 
 >[!ENDTABS]
 
-![ Java ](./assets/aem-runtime/java.png)
+![&#x200B; Java &#x200B;](./assets/aem-runtime/java.png)
 
 ## Download de AEM as a Cloud Service SDK
 
 De AEM as a Cloud Service SDK, of AEM SDK, bevat de Quickstart Jar die wordt gebruikt om AEM Author en Publish plaatselijk voor ontwikkeling, evenals de compatibele versie van de Hulpmiddelen van Dispatcher in werking te stellen.
 
-1. Login aan [ https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) met uw Adobe ID
+1. Login aan [&#x200B; https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) met uw Adobe ID
    + Merk op dat uw organisatie van Adobe ____ provisioned voor AEM as a Cloud Service moet zijn om AEM as a Cloud Service SDK te downloaden.
 1. Navigeer aan het __AEM as a Cloud Service__ lusje
 1. Soort door __Gepubliceerde Datum__ in __Aflopende__ orde
@@ -87,8 +87,8 @@ De lokale AEM Author Service biedt ontwikkelaars een lokale ervaring met auteurs
    + `java -jar aem-author-p4502.jar`
       + Geef het beheerderswachtwoord op als `admin` . Om het even welk admin wachtwoord is aanvaardbaar, nochtans adviseert het om het gebrek voor lokale ontwikkeling te gebruiken om de behoefte te verminderen om te vormen.
 
-   U *kunt niet* AEM beginnen als Cloud Service QuickStart Jar [ door ](#troubleshooting-double-click) tweemaal te klikken.
-1. Heb toegang tot de lokale Dienst van de Auteur van AEM in [ http://localhost:4502 ](http://localhost:4502) in browser van het Web
+   U *kunt niet* AEM beginnen als Cloud Service QuickStart Jar [&#x200B; door &#x200B;](#troubleshooting-double-click) tweemaal te klikken.
+1. Heb toegang tot de lokale Dienst van de Auteur van AEM in [&#x200B; http://localhost:4502 &#x200B;](http://localhost:4502) in browser van het Web
 
 >[!BEGINTABS]
 
@@ -124,7 +124,7 @@ $ java -jar aem-author-p4502.jar
 
 ## Lokale publicatieservice voor AEM instellen
 
-De lokale AEM-publicatieservice biedt ontwikkelaars de lokale ervaring die eindgebruikers van de AEM zullen hebben, zoals bladeren door de website die op AEM wordt gehost. Een lokale AEM publiceert Dienst is belangrijk aangezien het met AEM SDK [ hulpmiddelen van Dispatcher ](./dispatcher-tools.md) integreert en ontwikkelaars toestaat om de definitieve eindgebruiker te roken-test en te verfijnen die ervaring onder ogen ziet.
+De lokale AEM-publicatieservice biedt ontwikkelaars de lokale ervaring die eindgebruikers van de AEM zullen hebben, zoals bladeren door de website die op AEM wordt gehost. Een lokale AEM publiceert Dienst is belangrijk aangezien het met AEM SDK [&#x200B; hulpmiddelen van Dispatcher &#x200B;](./dispatcher-tools.md) integreert en ontwikkelaars toestaat om de definitieve eindgebruiker te roken-test en te verfijnen die ervaring onder ogen ziet.
 
 1. De map maken `~/aem-sdk/publish`
 1. Kopieer het __QuickStart JAR__ dossier aan `~/aem-sdk/publish` en noem het aan `aem-publish-p4503.jar` anders
@@ -132,8 +132,8 @@ De lokale AEM-publicatieservice biedt ontwikkelaars de lokale ervaring die eindg
    + `java -jar aem-publish-p4503.jar`
       + Geef het beheerderswachtwoord op als `admin` . Om het even welk admin wachtwoord is aanvaardbaar, nochtans adviseert het om het gebrek voor lokale ontwikkeling te gebruiken om de behoefte te verminderen om te vormen.
 
-   U *kunt niet* AEM beginnen als Cloud Service QuickStart Jar [ door ](#troubleshooting-double-click) tweemaal te klikken.
-1. Heb toegang tot lokale AEM publiceer Dienst in [ http://localhost:4503 ](http://localhost:4503) in browser van het Web
+   U *kunt niet* AEM beginnen als Cloud Service QuickStart Jar [&#x200B; door &#x200B;](#troubleshooting-double-click) tweemaal te klikken.
+1. Heb toegang tot lokale AEM publiceer Dienst in [&#x200B; http://localhost:4503 &#x200B;](http://localhost:4503) in browser van het Web
 
 >[!BEGINTABS]
 
@@ -169,7 +169,7 @@ $ java -jar aem-publish-p4503.jar
 
 ## Lokale AEM-services instellen in de pre-releasemodus
 
-De lokale runtime van AEM kan op [ pre-releasemodus ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL) worden begonnen toestaand een ontwikkelaar om tegen de volgende eigenschappen van de volgende versie van AEM as a Cloud Service te bouwen. Prerelease wordt ingeschakeld door het argument `-r prerelease` door te geven bij het eerste starten van de lokale AEM-runtime. Deze kan zowel met de lokale AEM Author als met de publicatieservices van AEM worden gebruikt.
+De lokale runtime van AEM kan op [&#x200B; pre-releasemodus &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL) worden begonnen toestaand een ontwikkelaar om tegen de volgende eigenschappen van de volgende versie van AEM as a Cloud Service te bouwen. Prerelease wordt ingeschakeld door het argument `-r prerelease` door te geven bij het eerste starten van de lokale AEM-runtime. Deze kan zowel met de lokale AEM Author als met de publicatieservices van AEM worden gebruikt.
 
 
 >[!BEGINTABS]
@@ -208,7 +208,7 @@ $ java -jar aem-publish-p4503.jar -r prerelease
 
 ## Inhoudsdistributie simuleren {#content-distribution}
 
-In ware Cloud Service wordt de milieu-inhoud van de Auteur aan de Publish Dienst verdeeld gebruikend [ het Verdelen van de Inhoud ](https://sling.apache.org/documentation/bundles/content-distribution.html) en de Pijpleiding van Adobe. [ de Pijpleiding van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=nl-NL#content-distribution) is een geïsoleerde microdienst beschikbaar slechts in het wolkenmilieu.
+In ware Cloud Service wordt de milieu-inhoud van de Auteur aan de Publish Dienst verdeeld gebruikend [&#x200B; het Verdelen van de Inhoud &#x200B;](https://sling.apache.org/documentation/bundles/content-distribution.html) en de Pijpleiding van Adobe. [&#x200B; de Pijpleiding van Adobe &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=nl-NL#content-distribution) is een geïsoleerde microdienst beschikbaar slechts in het wolkenmilieu.
 
 Tijdens de ontwikkeling, kan het wenselijk zijn om de distributie van inhoud te simuleren gebruikend de lokale auteur en de Publish dienst. Dit kan worden bereikt door de agenten van de erfenisReplicatie toe te laten.
 
@@ -216,7 +216,7 @@ Tijdens de ontwikkeling, kan het wenselijk zijn om de distributie van inhoud te 
 >
 > De agenten van de replicatie zijn slechts beschikbaar aan gebruik in lokale QuickStart JAR en verstrekken slechts een simulatie van inhoudsdistributie.
 
-1. Login aan de **dienst van de Auteur** en navigeer aan [ http://localhost:4502/etc/replication/agents.author.html ](http://localhost:4502/etc/replication/agents.author.html).
+1. Login aan de **dienst van de Auteur** en navigeer aan [&#x200B; http://localhost:4502/etc/replication/agents.author.html &#x200B;](http://localhost:4502/etc/replication/agents.author.html).
 1. Klik **StandaardAgent (publiceren)** om de agent van de standaardReplicatie te openen.
 1. Klik **uitgeven** om de configuratie van de agent te openen.
 1. Onder het **lusje van Montages**, werk de volgende gebieden bij:
@@ -224,7 +224,7 @@ Tijdens de ontwikkeling, kan het wenselijk zijn om de distributie van inhoud te 
    + **Toegelaten** - controle waar
    + **Gebruiker - identiteitskaart van de Agent** - verlaat dit gebied leeg
 
-   ![ Configuratie van de Agent van de Replicatie - Montages ](assets/aem-runtime/settings-config.png)
+   ![&#x200B; Configuratie van de Agent van de Replicatie - Montages &#x200B;](assets/aem-runtime/settings-config.png)
 
 1. Onder het **Vervoer** lusje, werk de volgende gebieden bij:
 
@@ -232,12 +232,12 @@ Tijdens de ontwikkeling, kan het wenselijk zijn om de distributie van inhoud te 
    + **Gebruiker** - `admin`
    + **Wachtwoord** - `admin`
 
-   ![ Configuratie van de Agent van de Replicatie - Vervoer ](assets/aem-runtime/transport-config.png)
+   ![&#x200B; Configuratie van de Agent van de Replicatie - Vervoer &#x200B;](assets/aem-runtime/transport-config.png)
 
 1. Klik **O.K.** om de configuratie te bewaren en de **Standaard** Agent van de Replicatie toe te laten.
 1. U kunt nu wijzigingen aanbrengen in de inhoud van de service Auteur en deze publiceren naar de service Publiceren.
 
-![ publiceer Pagina ](assets/aem-runtime/publish-page-changes.png)
+![&#x200B; publiceer Pagina &#x200B;](assets/aem-runtime/publish-page-changes.png)
 
 ## Snelstartmodi voor Jar
 
@@ -271,7 +271,7 @@ Als u een lokale AEM-runtime wilt stoppen (AEM Author of Publish service), opent
 
 ## Optionele lokale instellingstaken voor AEM-runtime
 
-+ __OSGi de variabelen van het configuratiemilieu en geheim variabelen__ zijn [ speciaal plaats voor lokale runtime van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=nl-NL#local-development), eerder dan het beheren van hen die air CLI gebruiken.
++ __OSGi de variabelen van het configuratiemilieu en geheim variabelen__ zijn [&#x200B; speciaal plaats voor lokale runtime van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=nl-NL#local-development), eerder dan het beheren van hen die air CLI gebruiken.
 
 ## Wanneer werkt u de QuickStart-jar bij
 
@@ -286,7 +286,7 @@ Werk de AEM SDK ten minste maandelijks bij op of kort na de laatste donderdag va
 Door de AEM SDK te upgraden wordt in feite een geheel nieuwe AEM-runtime gemaakt, waaronder een nieuwe opslagplaats. Dit betekent dat eventuele wijzigingen die zijn aangebracht in een eerdere AEM SDK-opslagplaats verloren gaan. Hieronder vindt u levensvatbare strategieën voor het ondersteunen van blijvende inhoud tussen AEM SDK-upgrades, die u op discrete wijze of in overleg kunt gebruiken:
 
 1. Maak een inhoudspakket dat gewijd is aan het bevatten van &#39;sample&#39;-inhoud voor hulp bij ontwikkeling en onderhoud dit in Git. Alle inhoud die door AEM SDK-upgrades moet worden gecontinueerd, blijft in dit pakket aanwezig en wordt opnieuw geïmplementeerd nadat de AEM SDK is bijgewerkt.
-1. Gebruik [ eiken-verbetering ](https://jackrabbit.apache.org/oak/docs/migration.html) met de `includepaths` richtlijn, om inhoud van de vroegere bewaarplaats van AEM SDK aan de nieuwe bewaarplaats van AEM SDK te kopiëren.
+1. Gebruik [&#x200B; eiken-verbetering &#x200B;](https://jackrabbit.apache.org/oak/docs/migration.html) met de `includepaths` richtlijn, om inhoud van de vroegere bewaarplaats van AEM SDK aan de nieuwe bewaarplaats van AEM SDK te kopiëren.
 1. Maak een back-up van alle inhoud met AEM Package Manager en inhoudspakketten op de eerdere AEM SDK en installeer deze opnieuw op de nieuwe AEM SDK.
 
 Houd er rekening mee dat met de bovenstaande methoden code wordt onderhouden tussen AEM SDK-upgrades en dat dit een anti-patroonontwikkelingstitel aangeeft. Niet-wegwerpcode moet afkomstig zijn uit uw ontwikkelings-IDE en via implementaties overstappen op AEM SDK.
@@ -297,7 +297,7 @@ Houd er rekening mee dat met de bovenstaande methoden code wordt onderhouden tus
 
 Wanneer u dubbelklikt op de Quickstart Jar om te starten, wordt een modaal foutbericht weergegeven om te voorkomen dat AEM lokaal wordt gestart.
 
-![ het Oplossen van problemen - klik het Jar dossier van QuickStart tweemaal ](./assets/aem-runtime/troubleshooting__double-click.png)
+![&#x200B; het Oplossen van problemen - klik het Jar dossier van QuickStart tweemaal &#x200B;](./assets/aem-runtime/troubleshooting__double-click.png)
 
 AEM as a Cloud Service Quickstart Jar biedt namelijk geen ondersteuning voor dubbelklikken op de QuickStart Jar om AEM lokaal te starten. In plaats daarvan moet u het Jar-bestand vanaf die opdrachtregel uitvoeren.
 
@@ -364,7 +364,7 @@ java.lang.Exception: Quickstart requires a Java Specification 11 VM, but your VM
 Quickstart: aborting
 ```
 
-AEM as a Cloud Service heeft Java™ SDK 11 nodig en u gebruikt een andere versie, waarschijnlijk Java™ 8. Om deze kwestie op te lossen, download en installeer [ Oracle Java™ SDK 11 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2fx jcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14).
+AEM as a Cloud Service heeft Java™ SDK 11 nodig en u gebruikt een andere versie, waarschijnlijk Java™ 8. Om deze kwestie op te lossen, download en installeer [&#x200B; Oracle Java™ SDK 11 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2fx jcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14).
 
 Nadat Oracle Java™ 11 SDK is geïnstalleerd, controleert u of dit de actieve versie is door de opdracht uit te voeren vanaf de opdrachtregel:
 
@@ -392,7 +392,7 @@ $ java --version
 
 ## Aanvullende bronnen
 
-+ [ Download AEM SDK ](https://experience.adobe.com/#/downloads)
-+ [ Adobe Cloud Manager ](https://my.cloudmanager.adobe.com/)
-+ [ Docker van de Download ](https://www.docker.com/)
-+ [ de Documentatie van Experience Manager Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL)
++ [&#x200B; Download AEM SDK &#x200B;](https://experience.adobe.com/#/downloads)
++ [&#x200B; Adobe Cloud Manager &#x200B;](https://my.cloudmanager.adobe.com/)
++ [&#x200B; Docker van de Download &#x200B;](https://www.docker.com/)
++ [&#x200B; de Documentatie van Experience Manager Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL)

@@ -33,7 +33,7 @@ Beheerders kunnen nu een **[!DNL Master Project]** maken en gebruikers toewijzen
 
 [!DNL Master Projects] kan worden gemaakt onder de map [!UICONTROL Masters] onder [!UICONTROL AEM Projects] . Zodra een HoofdProject wordt gecreeerd, toont het als optie naast beschikbare malplaatjes in de tovenaar wanneer de nieuwe Projecten worden gecreeerd.
 
-[!DNL Project Masters] URL (lokale instantie van de Auteur van AEM): [ http://localhost:4502/projects.html/content/projects/masters ](http://localhost:4502/projects.html/content/projects/masters)
+[!DNL Project Masters] URL (lokale instantie van de Auteur van AEM): [&#x200B; http://localhost:4502/projects.html/content/projects/masters &#x200B;](http://localhost:4502/projects.html/content/projects/masters)
 
 ## Verwijderen [!DNL Project Masters]
 
@@ -49,7 +49,7 @@ Om inactieve hoofdprojecten te tonen, knevel de &quot;show actieve&quot;filterkn
 
 ## Begrijpen [!DNL Project Masters]
 
-![ de meesters van het Project technische mening ](assets/use-project-masters/project-masters-architecture.png)
+![&#x200B; de meesters van het Project technische mening &#x200B;](assets/use-project-masters/project-masters-architecture.png)
 
 [!DNL Project Masters] definieert een set AEM-gebruikersgroepen (eigenaren, redacteuren en waarnemers) en staat afgeleide projecten toe om naar die centraal gedefinieerde gebruikersgroepen te verwijzen en deze opnieuw te gebruiken.
 

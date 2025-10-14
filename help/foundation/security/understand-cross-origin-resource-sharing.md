@@ -26,7 +26,7 @@ De configuratie OSGI die in dit document wordt beschreven is voldoende voor:
 1. Delen van bronnen van één oorsprong in AEM Publish
 2. Toegang tot AEM-auteur voor CORS
 
-Als de multi-oorsprong toegang van CORS op AEM wordt vereist publiceer, verwijs naar [ deze documentatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=nl-NL#dispatcher-configuration).
+Als de multi-oorsprong toegang van CORS op AEM wordt vereist publiceer, verwijs naar [&#x200B; deze documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=nl-NL#dispatcher-configuration).
 
 ## Adobe Granite Cross-Origin Resource Sharing Policy OSGi-configuratie
 
@@ -34,7 +34,7 @@ De configuraties CORS worden beheerd als OSGi- configuratiemachines in AEM, waar
 
 * `http://<host>:<port>/system/console/configMgr > Adobe Granite Cross Origin Resource Sharing Policy`
 
-![ Adobe Granite het Middel van de Cross-Origin het Delen van Beleid OSGi configuratie ](./assets/understand-cross-origin-resource-sharing/cors-osgi-config.png)
+![&#x200B; Adobe Granite het Middel van de Cross-Origin het Delen van Beleid OSGi configuratie &#x200B;](./assets/understand-cross-origin-resource-sharing/cors-osgi-config.png)
 
 [!DNL Adobe Granite Cross-Origin Resource Sharing Policy] (`com.adobe.granite.cors.impl.CORSPolicyImpl`)
 
@@ -187,7 +187,7 @@ Over het algemeen kunnen dezelfde overwegingen voor het in cache plaatsen van in
 
 ### CORS-aanvraagheaders toestaan
 
-Om de vereiste [ HTTP- verzoekkopballen toe te staan om tot AEM voor verwerking ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#specifying-the-http-headers-to-pass-through-clientheaders) over te gaan, moeten zij in de Dispatcher `/clientheaders` configuratie worden toegestaan.
+Om de vereiste [&#x200B; HTTP- verzoekkopballen toe te staan om tot AEM voor verwerking &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#specifying-the-http-headers-to-pass-through-clientheaders) over te gaan, moeten zij in de Dispatcher `/clientheaders` configuratie worden toegestaan.
 
 ```
 /clientheaders {
@@ -200,7 +200,7 @@ Om de vereiste [ HTTP- verzoekkopballen toe te staan om tot AEM voor verwerking 
 
 ### CORS-responsheaders in cache plaatsen
 
-Als u het in cache plaatsen en serveren van CORS-headers voor in cache opgeslagen inhoud wilt toestaan, voegt u de volgende [ /cache/headers-configuratie ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#caching-http-response-headers) toe aan het AEM Publish `dispatcher.any` -bestand.
+Als u het in cache plaatsen en serveren van CORS-headers voor in cache opgeslagen inhoud wilt toestaan, voegt u de volgende [&#x200B; /cache/headers-configuratie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#caching-http-response-headers) toe aan het AEM Publish `dispatcher.any` -bestand.
 
 ```
 /publishfarm {
@@ -247,6 +247,6 @@ Logboekregistratie is beschikbaar onder `com.adobe.granite.cors` :
 
 ## Ondersteunende materialen
 
-* [ de fabriek van de Configuratie van AEM OSGi voor het Delen van het Middel van de Cross-Origin Beleid ](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
-* [ het Delen van het Middel van de dwars-Oorsprong (W3C) ](https://www.w3.org/TR/cors/)
-* [ Controle van de Toegang van HTTP (Mozilla MDN) ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
+* [&#x200B; de fabriek van de Configuratie van AEM OSGi voor het Delen van het Middel van de Cross-Origin Beleid &#x200B;](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
+* [&#x200B; het Delen van het Middel van de dwars-Oorsprong (W3C) &#x200B;](https://www.w3.org/TR/cors/)
+* [&#x200B; Controle van de Toegang van HTTP (Mozilla MDN) &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)

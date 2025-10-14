@@ -29,7 +29,7 @@ In AEM as a Cloud Service biedt het beheren van geheimen via OSGi-services een s
 
 ### OSGi service implementation
 
-Wij zullen door de ontwikkeling van de douaneOSGi dienst lopen die [ geheimen van configuraties OSGi ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values) blootstelt.
+Wij zullen door de ontwikkeling van de douaneOSGi dienst lopen die [&#x200B; geheimen van configuraties OSGi &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values) blootstelt.
 
 De implementatie leest geheimen van de configuratie OSGi via de `@Activate` methode en stelt hen door de `getSecret(String secretName)` methode bloot. U kunt ook discrete methoden maken, zoals `getApiKey()` voor elk geheim, maar voor deze aanpak is meer onderhoud vereist omdat geheimen worden toegevoegd of verwijderd.
 
@@ -80,7 +80,7 @@ public interface SecretsManager {
 
 ## Toewijzing van geheimen aan configuratie OSGi
 
-Om geheime waarden in de dienst bloot te stellen OSGi, hen in kaart brengen aan configuraties OSGi gebruikend [ OSGi geheime configuratiewaarden ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values). Definieer de eigenschapnaam OSGi als sleutel om de geheime waarde van de `SecretsManager.getSecret()` methode terug te winnen.
+Om geheime waarden in de dienst bloot te stellen OSGi, hen in kaart brengen aan configuraties OSGi gebruikend [&#x200B; OSGi geheime configuratiewaarden &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values). Definieer de eigenschapnaam OSGi als sleutel om de geheime waarde van de `SecretsManager.getSecret()` methode terug te winnen.
 
 Definieer de geheimen in het OSGi-configuratiebestand `/apps/example/osgiconfig/config/com.example.core.util.impl.SecretsManagerImpl.cfg.json` in uw AEM Maven-project. Elke eigenschap vertegenwoordigt een geheim dat in AEM wordt weergegeven, met de waarde ingesteld via Cloud Manager. De sleutel is de OSGi bezitsnaam, die wordt gebruikt om de geheime waarde van de `SecretsManager` dienst terug te winnen.
 
@@ -151,11 +151,11 @@ public class ExampleSecretConsumerImpl implements ExampleSecretConsumer {
 
 Met de dienst OSGi en configuratie op zijn plaats, is de definitieve stap de geheime waarden in Cloud Manager te plaatsen.
 
-De waarden voor geheimen kunnen via [ Cloud Manager API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables) of, meer algemeen, via [ Cloud Manager UI ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables#overview) worden geplaatst. Een geheime variabele toepassen via de gebruikersinterface van Cloud Manager:
+De waarden voor geheimen kunnen via [&#x200B; Cloud Manager API &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables) of, meer algemeen, via [&#x200B; Cloud Manager UI &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables#overview) worden geplaatst. Een geheime variabele toepassen via de gebruikersinterface van Cloud Manager:
 
-![ Cloud Manager Secrets Configuratie ](./assets/secrets/cloudmanager-configuration.png)
+![&#x200B; Cloud Manager Secrets Configuratie &#x200B;](./assets/secrets/cloudmanager-configuration.png)
 
-1. Login aan [ Adobe Cloud Manager ](https://my.cloudmanager.adobe.com).
+1. Login aan [&#x200B; Adobe Cloud Manager &#x200B;](https://my.cloudmanager.adobe.com).
 1. Selecteer het AEM-programma en -omgeving waarvoor u het geheim wilt instellen.
 1. In de mening van de Details van het Milieu, selecteer het **1&rbrace; lusje van de Configuratie &lbrace;.**
 1. Selecteer **toevoegen**.

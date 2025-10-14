@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Meerdere en onveranderlijke inhoud
 
-Leer over het belang en de verschillen van [ veranderbare en onveranderlijke inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL) in de AEM als Wolk, en hoe het van invloed is hoe u zich ontwikkelt.
+Leer over het belang en de verschillen van [&#x200B; veranderbare en onveranderlijke inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL) in de AEM als Wolk, en hoe het van invloed is hoe u zich ontwikkelt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330555?quality=12&learn=on)

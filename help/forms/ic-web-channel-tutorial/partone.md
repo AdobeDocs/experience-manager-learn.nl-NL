@@ -25,7 +25,7 @@ Volg de volgende instructies om Tomcat in te stellen:
 
 1. Download en installeer JDK1.8.
 2. Stel JAVA_HOME in om naar JDK1.8 te wijzen.
-3. Download [ om ](https://tomcat.apache.org/) te kat. Dit oorlogsbestand is getest met Tomcat versie 8.5.x en 9.0.x.
+3. Download [&#x200B; om &#x200B;](https://tomcat.apache.org/) te kat. Dit oorlogsbestand is getest met Tomcat versie 8.5.x en 9.0.x.
 4. Download de nieuwste versie van uw voorkeur. U kunt de 64-bits Windows zip downloaden onder de kernsectie.
 5. Pak de inhoud uit tot aan uw c:\tomcat.
 6. U zou iets als dit in uw aandrijving van c **c moeten zien:\tomcat \ apache-tomcat-8.5.27** afhankelijk van de versie van uw tomcat
@@ -33,7 +33,7 @@ Volg de volgende instructies om Tomcat in te stellen:
 8. Kopieer het bestand SampleRest.war naar de map webapps van uw Tomcat-installatie
 9. Nieuw opdrachtpromptvenster starten.
 10. Navigeer naar &lt;tomcat install folder>\bin en voer het start.bat uit
-11. Zodra uw tomcat is begonnen, test het eindpunt dat door het Dossier van WAR door [ wordt blootgesteld hier te klikken ](http://localhost:8080/SampleRest/webapi/getStatement/9586)
+11. Zodra uw tomcat is begonnen, test het eindpunt dat door het Dossier van WAR door [&#x200B; wordt blootgesteld hier te klikken &#x200B;](http://localhost:8080/SampleRest/webapi/getStatement/9586)
 12. U zou steekproefgegevens als resultaat van deze vraag moeten krijgen.
 
 Gefeliciteerd!!! U kunt het bestand SampleRest.war instellen en implementeren.

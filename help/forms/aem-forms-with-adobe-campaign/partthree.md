@@ -21,7 +21,7 @@ ht-degree: 0%
 
 In dit deel, vullen wij Adaptief Vorm met profielinformatie die van ACS wordt gehaald. AEM Forms beschikt over deze krachtige mogelijkheden om adaptieve formulieren vooraf in te vullen.
 
-Meer over het vooraf invullen van adaptieve vormen te lezen gelieve dit [ leerprogramma ](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
+Meer over het vooraf invullen van adaptieve vormen te lezen gelieve dit [&#x200B; leerprogramma &#x200B;](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
 Om Aangepast Formulier vooraf in te vullen door gegevens van ACS te halen, veronderstellen wij dat er profiel in ACS is dat de zelfde e-mail zoals het programma geopende gebruiker van AEM heeft. Als de e-mailadres van de persoon die zich heeft aangemeld bij AEM bijvoorbeeld csimms@adobe.com is, verwachten we dat we een profiel in ACS vinden waarvan de e-mail csimms@adobe.com is.
 
@@ -33,7 +33,7 @@ De volgende stappen zijn nodig om profielinformatie van ACS te halen gebruikend 
 * XML-document maken met de profielgegevens
 * Hiermee wordt InputStream geretourneerd van het XML-document dat door AEM Forms wordt gebruikt
 
-![ prefillservice ](assets/prefillserviceaf.gif)
+![&#x200B; prefillservice &#x200B;](assets/prefillserviceaf.gif)
 
 Prefill-service koppelen aan adaptief formulier
 
@@ -233,10 +233,10 @@ return "Pre Fill Forms Using Campaign Profile";
 
 Volg de volgende instructies om dit op uw systeem te laten werken:
 
-* [ zorg ervoor u de hier beschreven stappen hebt gevolgd ](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [&#x200B; zorg ervoor u de hier beschreven stappen hebt gevolgd &#x200B;](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Voorbeeld van adaptief formulier importeren naar AEM met pakketbeheer](assets/pre-fill-af-from-campaign.zip)
 * Meld u aan bij AEM met een gebruiker wiens e-mailadres wordt gedeeld door een profiel in Adobe Campaign. Als de e-mailadres van de AEM-gebruiker bijvoorbeeld johndoe@adobe.com is, hebt u een profiel nodig in ACS waarvan de e-mail johndoe@adobe.com is.
-* [ voorproef de vorm ](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
+* [&#x200B; voorproef de vorm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
 
 ## Volgende stappen
 

@@ -22,16 +22,16 @@ ht-degree: 0%
 
 De vorm **MyAccountForm** wordt gebruikt om de gedeeltelijk voltooide adaptieve vorm terug te winnen nadat de gebruiker toepassings identiteitskaart en het mobiele aantal verbonden aan toepassings identiteitskaart heeft geverifieerd.
 
-![ mijn rekeningsvorm ](assets/6599.JPG)
+![&#x200B; mijn rekeningsvorm &#x200B;](assets/6599.JPG)
 
 Wanneer de gebruiker toepassingsidentiteitskaart ingaat en de **knoop FetchApplication** klikt, wordt het mobiele aantal verbonden aan toepassingsidentiteitskaart opgehaald van het gegevensbestand gebruikend de Get verrichting van het model van vormgegevens.
 
 In dit formulier wordt gebruikgemaakt van de POST-aanroep van het formuliergegevensmodel om het mobiele nummer te verifiëren met OTP. De verzendactie van het formulier wordt geactiveerd nadat het mobiele nummer met de volgende code is geverifieerd. Wij teweegbrengen de klikgebeurtenis van voorlegt genoemde knoop **submitForm**.
 
 >[!NOTE]
-> U zult API Sleutel en de API Geheime waarden specifiek voor uw [ Nexmo ](https://dashboard.nexmo.com/) rekening op de aangewezen gebieden van MyAccountForm moeten verstrekken
+> U zult API Sleutel en de API Geheime waarden specifiek voor uw [&#x200B; Nexmo &#x200B;](https://dashboard.nexmo.com/) rekening op de aangewezen gebieden van MyAccountForm moeten verstrekken
 
-![ trigger-submit ](assets/trigger-submit.JPG)
+![&#x200B; trigger-submit &#x200B;](assets/trigger-submit.JPG)
 
 
 
@@ -44,11 +44,11 @@ com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/r
 De code in servlet op **/bin/renderaf** door:sturen het verzoek om de storeafwithattachments aanpassende vorm terug te geven vooraf bevolkt met de bewaarde gegevens.
 
 
-* MyAccountForm kan [ van hier worden gedownload ](assets/my-account-form.zip)
+* MyAccountForm kan [&#x200B; van hier worden gedownload &#x200B;](assets/my-account-form.zip)
 
-* De vormen van de steekproef zijn gebaseerd op [ douane adaptieve vormmalplaatje ](assets/custom-template-with-page-component.zip) dat in AEM voor de steekproefvormen moet worden ingevoerd om correct terug te geven.
+* De vormen van de steekproef zijn gebaseerd op [&#x200B; douane adaptieve vormmalplaatje &#x200B;](assets/custom-template-with-page-component.zip) dat in AEM voor de steekproefvormen moet worden ingevoerd om correct terug te geven.
 
-* [ Douane legt manager ](assets/custom-submit-my-account-form.zip) verbonden aan de voorlegging MyAccountForm moet in AEM worden ingevoerd.
+* [&#x200B; Douane legt manager &#x200B;](assets/custom-submit-my-account-form.zip) verbonden aan de voorlegging MyAccountForm moet in AEM worden ingevoerd.
 
 ## Volgende stappen
 

@@ -37,51 +37,51 @@ Op de homepage van de WKND-site worden lokale activiteiten of de beste dingen di
 
 ## Stappen om een A/B-test te creëren met behulp van Visual Experience Composer (VEC)
 
-1. Login aan [ Adobe Experience Cloud ](https://experience.adobe.com/), ontvang op __Doel__, navigeer aan het __Activiteiten__ lusje
+1. Login aan [&#x200B; Adobe Experience Cloud &#x200B;](https://experience.adobe.com/), ontvang op __Doel__, navigeer aan het __Activiteiten__ lusje
 
-   + Als u niet __Doel__ op het dashboard van Experience Cloud ziet, zorg ervoor dat de correcte organisatie van Adobe in de organisatieschakelaar in het hoogste recht wordt geselecteerd, en dat de gebruiker toegang tot Doel in [ Adobe Admin Console ](https://adminconsole.adobe.com/) is verleend.
+   + Als u niet __Doel__ op het dashboard van Experience Cloud ziet, zorg ervoor dat de correcte organisatie van Adobe in de organisatieschakelaar in het hoogste recht wordt geselecteerd, en dat de gebruiker toegang tot Doel in [&#x200B; Adobe Admin Console &#x200B;](https://adminconsole.adobe.com/) is verleend.
 
 1. Klik **creëren de knoop van de Activiteit** en kies dan **A/B de Activiteit van de Test**
 
-   ![ Activiteit A/B ](assets/ab-target-activity.png)
+   ![&#x200B; Activiteit A/B &#x200B;](assets/ab-target-activity.png)
 
 1. Selecteer de **Visuele Composer van de Ervaring** optie, verstrek de Activiteit URL, en klik dan **daarna**
 
-   ![ Activiteit URL ](assets/ab-test-url.png)
+   ![&#x200B; Activiteit URL &#x200B;](assets/ab-test-url.png)
 
 1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een activiteit creeert: *Ervaring A* en *Ervaring B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen door **te gebruiken voeg Ervaring** knoop toe.
 
-   ![ Ervaring A ](assets/experience.png)
+   ![&#x200B; Ervaring A &#x200B;](assets/experience.png)
 
 1. Selecteer een afbeelding of tekst op de pagina die u wilt wijzigen of gebruik de code-editor om het HTML-element te selecteren en te selecteren.
 
-   ![ Element ](assets/select-element.png)
+   ![&#x200B; Element &#x200B;](assets/select-element.png)
 
 1. Verander de tekst van *Camping in West Australië* aan *avonturen van Australië*. Een lijst met wijzigingen die aan een ervaring zijn toegevoegd, wordt weergegeven onder Wijzigingen. U kunt op het gewijzigde item klikken en dit bewerken om de CSS-kiezer weer te geven en de nieuwe inhoud die eraan is toegevoegd.
 
-   ![ avonturen ](assets/adventures.png)
+   ![&#x200B; avonturen &#x200B;](assets/adventures.png)
 
 1. Verander *Ervaring A* aan *avontuur*
 1. Op dezelfde manier werk de tekst op *Ervaring B* van *Camping in West Australië* bij *ontdekken de Australische Wilderheid*.
 
-   ![ ontdekken ](assets/explore.png)
+   ![&#x200B; ontdekken &#x200B;](assets/explore.png)
 
 1. Klik **daarna** om zich aan het richten te bewegen en een Handmatige verkeerstoewijzing van 50-50 tussen de twee ervaringen te houden.
 
-   ![ gericht ](assets/targeting.png)
+   ![&#x200B; gericht &#x200B;](assets/targeting.png)
 
 1. Voor Doelstellingen en instellingen kiest u de rapportbron als Adobe Target en selecteert u de metrische waarde Doel als Omzetting met een paginaweergaveactie.
 
-   ![ Doelen ](assets/goals.png)
+   ![&#x200B; Doelen &#x200B;](assets/goals.png)
 
 1. Geef een naam op voor uw activiteiten en sla deze op.
 1. Activeer je opgeslagen activiteit om je wijzigingen live te zetten.
 
-   ![ Doelen ](assets/activate.png)
+   ![&#x200B; Doelen &#x200B;](assets/activate.png)
 
 1. Open uw sitepagina (Activiteit URL van stap 3) in een nieuw tabblad en u zou één van beide ervaringen (avontuur of Onderzoek) van onze testactiviteit A/B moeten kunnen bekijken.
 
-   ![ Doelen ](assets/publish.png)
+   ![&#x200B; Doelen &#x200B;](assets/publish.png)
 
 ## Samenvatting
 
@@ -89,4 +89,4 @@ In dit hoofdstuk kon een teller een ervaring tot stand brengen gebruikend Visual
 
 ## Ondersteunende koppelingen
 
-+ [ Foutopsporing van Adobe Experience Cloud - Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
++ [&#x200B; Foutopsporing van Adobe Experience Cloud - Chrome &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)

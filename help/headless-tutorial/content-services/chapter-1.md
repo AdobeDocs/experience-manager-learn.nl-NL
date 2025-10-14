@@ -21,9 +21,9 @@ De nieuwste versie van AEM en AEM WCM Core Components wordt altijd aanbevolen.
 
 * AEM 6.5 of hoger
 * AEM WCM Core Components 2.4.0 of hoger
-   * Omvat in het [ Mobiele Pakket van de Inhoud van de AEM van de Toepassing hieronder ](#wknd-mobile-application-packages)
+   * Omvat in het [&#x200B; Mobiele Pakket van de Inhoud van de AEM van de Toepassing hieronder &#x200B;](#wknd-mobile-application-packages)
 
-Voorafgaand aan de aanvang van dit leerprogramma zorgt ervoor dat de volgende AEM instanties [ geïnstalleerd en lopend op uw lokale machine ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install) zijn:
+Voorafgaand aan de aanvang van dit leerprogramma zorgt ervoor dat de volgende AEM instanties [&#x200B; geïnstalleerd en lopend op uw lokale machine &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install) zijn:
 
 * **AEM Auteur** op **haven 4502**
 * **AEM Publish** op **haven 4503**
@@ -32,16 +32,16 @@ Voorafgaand aan de aanvang van dit leerprogramma zorgt ervoor dat de volgende AE
 
 Installeer de volgende AEM Pakketten van de Inhoud op **zowel** AEM Auteur als AEM Publish, gebruikend [!DNL AEM Package Manager].
 
-* [ ui.apps: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.ui.apps-x.x.x.zip ](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
+* [&#x200B; ui.apps: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.ui.apps-x.x.x.zip &#x200B;](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
    * [!DNL WKND Mobile Empty Template Type]
    * [!DNL WKND Mobile] Proxycomponent voor AEM WCM Core-componenten
    * [!DNL WKND Mobile] CSS AEM Content Services-pagina&#39;s (voor kleine opmaakmodellen)
-* [ ui.content: GitHub > com.adobe.aem.guides.wknd-mobile.ui.content-x.x.x.zip ](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
+* [&#x200B; ui.content: GitHub > com.adobe.aem.guides.wknd-mobile.ui.content-x.x.x.zip &#x200B;](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
    * [!DNL WKND Mobile] Sitestructuur
    * [!DNL WKND Mobile] DAM-mapstructuur
    * [!DNL WKND Mobile] afbeeldingselementen
 
-In [ Hoofdstuk 7 ](./chapter-7.md) zullen wij [!DNL WKND Mobile] Android Mobile App in werking stellen gebruikend [ de Studio van Android ](https://developer.android.com/studio) en verstrekte APK (het Pakket van de Toepassing van Android):
+In [&#x200B; Hoofdstuk 7 &#x200B;](./chapter-7.md) zullen wij [!DNL WKND Mobile] Android Mobile App in werking stellen gebruikend [&#x200B; de Studio van Android &#x200B;](https://developer.android.com/studio) en verstrekte APK (het Pakket van de Toepassing van Android):
 
 * [[!DNL Android Mobile App: GitHub > Assets > wknd-mobile.x.x.x.apk]](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
 
@@ -49,16 +49,16 @@ In [ Hoofdstuk 7 ](./chapter-7.md) zullen wij [!DNL WKND Mobile] Android Mobile 
 
 Deze reeks inhoudspakketten leidt tot inhoud en configuratie die in het bijbehorende hoofdstuk, en alle voorafgaande hoofdstukken worden beschreven. Deze pakketten zijn optioneel, maar kunnen het maken van inhoud versnellen.
 
-* [ Hoofdstuk 2 Inhoud: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.content.chapter-2.zip ](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
-* [ Hoofdstuk 3 Inhoud: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.content.chapter-3.zip ](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
-* [ Hoofdstuk 4 Inhoud: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.content.chapter-4.zip ](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
-* [ Hoofdstuk 5 Inhoud: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip ](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
+* [&#x200B; Hoofdstuk 2 Inhoud: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.content.chapter-2.zip &#x200B;](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
+* [&#x200B; Hoofdstuk 3 Inhoud: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.content.chapter-3.zip &#x200B;](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
+* [&#x200B; Hoofdstuk 4 Inhoud: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.content.chapter-4.zip &#x200B;](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
+* [&#x200B; Hoofdstuk 5 Inhoud: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip &#x200B;](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
 
 ## Source-code
 
-De broncode voor zowel het AEM project als [!DNL Android Mobile App] is beschikbaar op [[!DNL AEM Guides - WKND Mobile GitHub Project] ](https://github.com/adobe/aem-guides-wknd-mobile). De broncode hoeft niet te worden samengesteld of gewijzigd voor deze zelfstudie, maar is bedoeld om volledige transparantie mogelijk te maken in de manier waarop alle aspecten van de zelfstudie worden opgebouwd.
+De broncode voor zowel het AEM project als [!DNL Android Mobile App] is beschikbaar op [[!DNL AEM Guides - WKND Mobile GitHub Project] &#x200B;](https://github.com/adobe/aem-guides-wknd-mobile). De broncode hoeft niet te worden samengesteld of gewijzigd voor deze zelfstudie, maar is bedoeld om volledige transparantie mogelijk te maken in de manier waarop alle aspecten van de zelfstudie worden opgebouwd.
 
-Als u een kwestie met het leerprogramma of de code vindt, gelieve de kwestie van a [ GitHub ](https://github.com/adobe/aem-guides-wknd-mobile/issues) te verlaten.
+Als u een kwestie met het leerprogramma of de code vindt, gelieve de kwestie van a [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd-mobile/issues) te verlaten.
 
 ## Overslaan naar het einde
 

@@ -30,7 +30,7 @@ Er is een aangepaste verzendhandler geschreven voor het verzenden van formuliere
 
 Het volgende schermschot toont u de blob indexmarkeringen in Azure portaal
 
-![ blob-index-markeringen ](assets/blob-index-tags.png)
+![&#x200B; blob-index-markeringen &#x200B;](assets/blob-index-tags.png)
 
 De douane legt code voor is in **_StoreFormDataWithBlobIndexTagsInAzure_** en de code voor het opslaan van en het terugwinnen van gegevens van Azure is in de component **_SaveAndFetchFromAzure_**
 

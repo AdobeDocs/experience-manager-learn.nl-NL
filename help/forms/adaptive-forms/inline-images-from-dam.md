@@ -83,8 +83,8 @@ async function createFile(imageName){
 
 ### Distribueren op uw server
 
-* Download en installeer de [ cliëntbibliotheek en steekproefbeelden ](assets/InlineDAMImage.zip) op uw instantie van AEM gebruikend de Manager van het Pakket van AEM.
-* Download en installeer de [ steekproefvorm ](assets/FieldInspectionForm.zip) op u uw instantie van AEM gebruikend het pakketmanager van AEM.
-* Punt uw browser aan [ FileInspectionForm ](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)
+* Download en installeer de [&#x200B; cliëntbibliotheek en steekproefbeelden &#x200B;](assets/InlineDAMImage.zip) op uw instantie van AEM gebruikend de Manager van het Pakket van AEM.
+* Download en installeer de [&#x200B; steekproefvorm &#x200B;](assets/FieldInspectionForm.zip) op u uw instantie van AEM gebruikend het pakketmanager van AEM.
+* Punt uw browser aan [&#x200B; FileInspectionForm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)
 * Selecteer een van de correcties
 * De afbeelding moet in het formulier worden weergegeven

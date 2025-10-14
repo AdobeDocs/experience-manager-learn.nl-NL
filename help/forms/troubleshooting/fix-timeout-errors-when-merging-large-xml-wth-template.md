@@ -36,12 +36,12 @@ aries.transaction.timeout=&quot;1200&quot;
 onder installatiemap. U kunt de time-outwaarde naar wens wijzigen. De time-outwaarde is in seconden
 
 >[!NOTE]
-> Zodra u de configuratie org.apache.aries.transaction creeert kunt u de waarden van de transactieduur uit [ configMgr ](http://localhost:4502/system/console/configMgr) in plaats van het uitgeven van het dossier uitgeven
+> Zodra u de configuratie org.apache.aries.transaction creeert kunt u de waarden van de transactieduur uit [&#x200B; configMgr &#x200B;](http://localhost:4502/system/console/configMgr) in plaats van het uitgeven van het dossier uitgeven
 
 
 ## De instellingen van de Jacorb ORB-provider wijzigen
 
-* [ Open OSGi ConfigMgr ](http://localhost:4502/system/console/configMgr)
+* [&#x200B; Open OSGi ConfigMgr &#x200B;](http://localhost:4502/system/console/configMgr)
 * Onderzoek naar **Jacorb ORB Provider**
 * De volgende vermelding toevoegen
 jacorb.connection.client.pending_response_timeout=600000

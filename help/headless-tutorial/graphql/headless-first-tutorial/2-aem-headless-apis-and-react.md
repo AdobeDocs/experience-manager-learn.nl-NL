@@ -34,7 +34,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
 ## De React-app klonen
 
-1. Kloon app van [ Github ](https://github.com/lamontacrook/headless-first/tree/main) door het volgende bevel op de bevellijn uit te voeren.
+1. Kloon app van [&#x200B; Github &#x200B;](https://github.com/lamontacrook/headless-first/tree/main) door het volgende bevel op de bevellijn uit te voeren.
 
    ```
    $ git clone git@github.com:lamontacrook/headless-first.git
@@ -58,9 +58,9 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
    REACT_APP_TOKEN=<developer token>
    ```
 
-1. U kunt een ontwikkelaarstoken in Cloud Manager terugwinnen. Login aan [ Adobe Cloud Manager ](https://experience.adobe.com/). Klik __Experience Manager > Cloud Manager__. Kies het aangewezen Programma en klik dan de ellipsen naast het Milieu.
+1. U kunt een ontwikkelaarstoken in Cloud Manager terugwinnen. Login aan [&#x200B; Adobe Cloud Manager &#x200B;](https://experience.adobe.com/). Klik __Experience Manager > Cloud Manager__. Kies het aangewezen Programma en klik dan de ellipsen naast het Milieu.
 
-   ![ AEM Developer Console ](./assets/2/developer-console.png)
+   ![&#x200B; AEM Developer Console &#x200B;](./assets/2/developer-console.png)
 
    1. Klik in het __lusje van de Integraties__
    1. Klik __Lokale Symbolische lusje &amp; krijg de Lokale Token van de Ontwikkeling__ knoop
@@ -68,7 +68,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
    1. Plak het gekopieerde token als de waarde voor `REACT_APP_TOKEN` in het `.env` -bestand.
    1. Laten we de app nu maken door `npm ci` uit te voeren op de opdrachtregel.
    1. Start nu de React-app en door `npm run start` uit te voeren op de opdrachtregel.
-   1. In [ ./src/utils ](https://github.com/lamontacrook/headless-first/tree/main/src/utils) een dossier genoemd `context.js` omvat de code om de waarden in het `.env` dossier in de context van app te plaatsen.
+   1. In [&#x200B; ./src/utils &#x200B;](https://github.com/lamontacrook/headless-first/tree/main/src/utils) een dossier genoemd `context.js` omvat de code om de waarden in het `.env` dossier in de context van app te plaatsen.
 
 ## De React-app uitvoeren
 
@@ -215,7 +215,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
    `<url to environment>/graphql/execute.json/pure-headless/teaser%3Bpath%3D%2Fcontent%2Fdam%2Fpure-headless%2Fhero`
 
-   ![ Chrome Dev Hulpmiddelen ](./assets/2/dev-tools.png)
+   ![&#x200B; Chrome Dev Hulpmiddelen &#x200B;](./assets/2/dev-tools.png)
 
    De AEM Headless SDK codeert de aanvraag voor GraphQL en voegt de opgegeven parameters toe. U kunt de aanvraag openen in de browser.
 

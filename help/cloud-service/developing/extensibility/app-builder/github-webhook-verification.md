@@ -69,7 +69,7 @@ Met webhooks kunt u integraties maken of instellen die zich abonneren op bepaald
 
 ## Verificatiecode toevoegen aan AppBuilder-actie
 
-Daarna, voeg de hieronder verstrekte code van JavaScript (die van [ wordt gekopieerd GitHub.com documentatie ](https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries#javascript-example)) aan uw actie AppBuilder toe. Exporteer de functie `verifySignature` .
+Daarna, voeg de hieronder verstrekte code van JavaScript (die van [&#x200B; wordt gekopieerd GitHub.com documentatie &#x200B;](https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries#javascript-example)) aan uw actie AppBuilder toe. Exporteer de functie `verifySignature` .
 
 ```javascript
 // src/dx-excshell-1/actions/generic/github-webhook-verification.js
@@ -212,6 +212,6 @@ Ga terug naar GitHub.com en geef GitHub.com dezelfde geheime waarde op wanneer u
 
 Ga in GitHub.com naar de instellingen van de opslagplaats en bewerk de webhaak. Geef in de instellingen van de webhaak de geheime waarde op in het veld `Secret` . Klik __WebHaak van de Update__ bij de bodem om de veranderingen te bewaren.
 
-![ Github Webhaak Geheim ](./assets/github-webhook-verification/github-webhook-settings.png)
+![&#x200B; Github Webhaak Geheim &#x200B;](./assets/github-webhook-verification/github-webhook-settings.png)
 
 Als u deze stappen uitvoert, zorgt u ervoor dat uw App Builder-actie veilig kan controleren of binnenkomende webhaanvragen afkomstig zijn van uw GitHub.com-webhaak.

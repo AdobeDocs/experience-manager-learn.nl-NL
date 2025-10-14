@@ -24,12 +24,12 @@ ht-degree: 0%
 
 In het bezit van Markeringen hebben wij twee nieuwe gegevenselementen (ApplicantsStateOfResidence en validationError) toegevoegd.
 
-![ adaptive-form ](assets/data_elements.png)
+![&#x200B; adaptive-form &#x200B;](assets/data_elements.png)
 
 ## Verzoekende partijStateOfResidence
 
 Het **ApplicationStateOfResidence** gegevenselement werd gevormd door **Kern** in de uitbreidingsdrop-down en **Douane Code** voor het Type van Element van Gegevens zoals aangetoond in het hieronder ontsproten scherm te selecteren
-![ aanvrager-staat-verblijf ](assets/applicantstateofresidence.png)
+![&#x200B; aanvrager-staat-verblijf &#x200B;](assets/applicantstateofresidence.png)
 
 De volgende douanecode werd gebruikt om de waarde van het **_staat_** adaptieve vormgebied te vangen.
 
@@ -45,7 +45,7 @@ return ApplicantsStateOfResidence;
 
 Het **ValidationError** gegevenselement werd gevormd door **Kern** in de uitbreidingsdrop-down en **Douane Code** voor het Type van Element van Gegevens zoals aangetoond in het scherm hieronder ontsproten
 
-![ bevestiging-fout ](assets/validation-error.png)
+![&#x200B; bevestiging-fout &#x200B;](assets/validation-error.png)
 
 De volgende aangepaste code is geschreven om de waarde van het gegevenselement `validationError` in te stellen.
 

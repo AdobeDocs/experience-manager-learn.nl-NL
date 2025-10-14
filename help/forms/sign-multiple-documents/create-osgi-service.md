@@ -205,7 +205,7 @@ public String getNextFormToSign(int customerID) {
 
 ## Assets
 
-De bundel OSGi met de bovengenoemde diensten kan [ van hier worden gedownload ](assets/sign-multiple-forms.jar)
+De bundel OSGi met de bovengenoemde diensten kan [&#x200B; van hier worden gedownload &#x200B;](assets/sign-multiple-forms.jar)
 
 ## Volgende stappen
 

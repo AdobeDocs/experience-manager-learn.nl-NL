@@ -28,4 +28,4 @@ Onderzoek vraagindexen en hoe te om de formules van Excel te schrijven voor het 
 
 ## Aanvullende bronnen
 
-Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 3 ](../cloud5-season-3.md) pagina.
+Bekijk verwante video&#39;s op de [&#x200B; Wolk 5 seizoen 3 &#x200B;](../cloud5-season-3.md) pagina.

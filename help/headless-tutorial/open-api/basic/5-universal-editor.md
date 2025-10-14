@@ -18,16 +18,16 @@ ht-degree: 0%
 
 # De React-app bewerken met de Universal Editor
 
-In dit hoofdstuk, leert u hoe te Reageren app maken die in het [ vorige hoofdstuk ](./4-react-app.md) bewerkbaar wordt gebouwd gebruikend de Universele Redacteur van AEM. Met de Universal Editor kunnen auteurs van inhoud inhoud inhoud rechtstreeks bewerken binnen de context van de React-app-ervaring, terwijl de foutloze ervaring van een toepassing zonder kop behouden blijft.
+In dit hoofdstuk, leert u hoe te Reageren app maken die in het [&#x200B; vorige hoofdstuk &#x200B;](./4-react-app.md) bewerkbaar wordt gebouwd gebruikend de Universele Redacteur van AEM. Met de Universal Editor kunnen auteurs van inhoud inhoud inhoud rechtstreeks bewerken binnen de context van de React-app-ervaring, terwijl de foutloze ervaring van een toepassing zonder kop behouden blijft.
 
-![ Universele Redacteur ](./assets/5/main.png)
+![&#x200B; Universele Redacteur &#x200B;](./assets/5/main.png)
 
 De Universal Editor biedt een krachtige manier om in-context bewerken in te schakelen voor elke webtoepassing, zodat auteurs inhoud kunnen bewerken zonder te schakelen tussen verschillende ontwerpinterfaces.
 
 ## Vereisten
 
-* De vorige stappen van dit leerprogramma zijn voltooid, specifiek [ bouwt een React app die AEM het Leveren OpenAPIs van het Fragment van de Inhoud gebruikt ](./4-react-app.md)
-* Een het werk kennis van [ om Universele Redacteur ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) te gebruiken en uit te voeren.
+* De vorige stappen van dit leerprogramma zijn voltooid, specifiek [&#x200B; bouwt een React app die AEM het Leveren OpenAPIs van het Fragment van de Inhoud gebruikt &#x200B;](./4-react-app.md)
+* Een het werk kennis van [&#x200B; om Universele Redacteur &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) te gebruiken en uit te voeren.
 
 ## Doelstellingen
 
@@ -39,14 +39,14 @@ Leer hoe u:
 
 ## Universal Editor-instrumenten
 
-De universele Redacteur vereist [ attributen van HTML en metatags ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) om editable inhoud te identificeren en de verbinding tussen de inhoud van UI en van AEM te vestigen.
+De universele Redacteur vereist [&#x200B; attributen van HTML en metatags &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) om editable inhoud te identificeren en de verbinding tussen de inhoud van UI en van AEM te vestigen.
 
 ### Universal Editor-tags toevoegen
 
 Voeg eerst de benodigde metatags toe om te bepalen dat de toepassing Reageren compatibel is met de Universal Editor.
 
 1. Open `public/index.html` in de React-app.
-1. Voeg de [ Universele metatags van de Redacteur en het manuscript van CORS ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) in de `<head>` sectie van React toe app:
+1. Voeg de [&#x200B; Universele metatags van de Redacteur en het manuscript van CORS &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) in de `<head>` sectie van React toe app:
 
    ```html
    <!DOCTYPE html>
@@ -88,7 +88,7 @@ Voeg eerst de benodigde metatags toe om te bepalen dat de toepassing Reageren co
 Voeg nu Universal Editor-kenmerken toe om de component Teams bewerkbaar te maken.
 
 1. Open `src/components/Teams.js`.
-1. Werk de `Team` component bij om [ Universele de gegevensattributen van de Redacteur ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) te omvatten:
+1. Werk de `Team` component bij om [&#x200B; Universele de gegevensattributen van de Redacteur &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) te omvatten:
 
    Wanneer u het kenmerk `data-aue-resource` instelt, moet u ervoor zorgen dat het AEM-pad naar het inhoudsfragment, dat wordt geretourneerd door de AEM Content Fragment Delivery with OpenAPIs, wordt gepost met het subpad naar de variatie van het inhoudsfragment; in dit geval `/jcr:content/data/master` .
 
@@ -214,7 +214,7 @@ Voeg nu Universal Editor-kenmerken toe om de component Teams bewerkbaar te maken
 U kunt ook Universal Editor-kenmerken toevoegen aan de component Person.
 
 1. Open `src/components/Person.js`.
-1. Werk de component bij om [ Universele de gegevensattributen van de Redacteur ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) te omvatten:
+1. Werk de component bij om [&#x200B; Universele de gegevensattributen van de Redacteur &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) te omvatten:
 
    Wanneer u het kenmerk `data-aue-resource` instelt, moet u ervoor zorgen dat het AEM-pad naar het inhoudsfragment, dat wordt geretourneerd door de AEM Content Fragment Delivery with OpenAPIs, wordt gepost met het subpad naar de variatie van het inhoudsfragment; in dit geval `/jcr:content/data/master` .
 
@@ -294,7 +294,7 @@ U kunt ook Universal Editor-kenmerken toevoegen aan de component Person.
 
 ### De voltooide code ophalen
 
-De volledige broncode voor dit hoofdstuk is [ beschikbaar op Github.com ](https://github.com/adobe/aem-tutorials/tree/headless_open-api_basic_5-end).
+De volledige broncode voor dit hoofdstuk is [&#x200B; beschikbaar op Github.com &#x200B;](https://github.com/adobe/aem-tutorials/tree/headless_open-api_basic_5-end).
 
 
 ```bash
@@ -323,7 +323,7 @@ Test nu de compatibiliteitsupdates van de Universal Editor door de React-app te 
 
 De Universal Editor vereist dat de bewerkbare toepassing via HTTPS wordt geladen.
 
-1. Om lokale Reactie app over HTTPS in werking te stellen, gebruik [ lokaal-ssl-volmacht ](https://www.npmjs.com/package/local-ssl-proxy) npm module van de bevellijn.
+1. Om lokale Reactie app over HTTPS in werking te stellen, gebruik [&#x200B; lokaal-ssl-volmacht &#x200B;](https://www.npmjs.com/package/local-ssl-proxy) npm module van de bevellijn.
 
    ```bash
    $ npm install -g local-ssl-proxy
@@ -336,9 +336,9 @@ De Universal Editor vereist dat de bewerkbare toepassing via HTTPS wordt geladen
 
 ### Openen in Universal Editor
 
-![ Open app in Universele Redacteur ](./assets/5/open-app-in-universal-editor.png)
+![&#x200B; Open app in Universele Redacteur &#x200B;](./assets/5/open-app-in-universal-editor.png)
 
-1. Navigeer aan [ Universele Redacteur ](https://experience.adobe.com/#/@myOrg/aem/editor/canvas/).
+1. Navigeer aan [&#x200B; Universele Redacteur &#x200B;](https://experience.adobe.com/#/@myOrg/aem/editor/canvas/).
 1. Op het **gebied van URL van de Plaats**, ga HTTPS Reageer app URL: `https://localhost:3001` in.
 1. Selecteer klik **Open**.
 
@@ -346,7 +346,7 @@ De Universal Editor moet uw React-app laden met de bewerkingsmogelijkheden inges
 
 ### Bewerkingsfunctionaliteit testen
 
-![ geef in Universele Redacteur uit ](./assets/5/edit-in-universal-editor.png)
+![&#x200B; geef in Universele Redacteur uit &#x200B;](./assets/5/edit-in-universal-editor.png)
 
 1. Houd de muisaanwijzer in de Universal Editor boven bewerkbare elementen in de React-app.
 
@@ -368,10 +368,10 @@ De Universal Editor moet uw React-app laden met de bewerkingsmogelijkheden inges
 
 ## Algemene gegevenskenmerken van de Editor
 
-Voor volledige documentatie bij het van instrumenten voorzien van een toepassing voor Universele Redacteur, verwijs naar de [ Universele documentatie van de Redacteur ](https://experience.adobe.com/#/@myOrg/aem/editor/canvas/).
+Voor volledige documentatie bij het van instrumenten voorzien van een toepassing voor Universele Redacteur, verwijs naar de [&#x200B; Universele documentatie van de Redacteur &#x200B;](https://experience.adobe.com/#/@myOrg/aem/editor/canvas/).
 
 ## Gefeliciteerd!
 
 Gefeliciteerd! U hebt Universal Editor geïntegreerd met uw React-app. Inhoudsauteurs kunnen inhoudsfragmenten nu rechtstreeks bewerken in de interface van de React-app. Hierdoor wordt een naadloze ontwerpervaring geboden terwijl de voordelen van een architectuur zonder kop behouden blijven.
 
-Herinner me, kunt u de definitieve broncode voor dit leerprogramma van de `main` tak van de [ GitHub.com bewaarplaats ](https://github.com/adobe/aem-tutorials/tree/main) altijd krijgen.
+Herinner me, kunt u de definitieve broncode voor dit leerprogramma van de `main` tak van de [&#x200B; GitHub.com bewaarplaats &#x200B;](https://github.com/adobe/aem-tutorials/tree/main) altijd krijgen.

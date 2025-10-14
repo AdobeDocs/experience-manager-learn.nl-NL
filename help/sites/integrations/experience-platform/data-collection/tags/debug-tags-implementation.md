@@ -40,7 +40,7 @@ Als u foutopsporing op de client wilt inschakelen, roept u de methode `setDebug(
 
 1. Laad de AEM sitepagina opnieuw, en verifieer consolelogboek toont _in brand gestoken regel_ bericht zoals hieronder.
 
-   ![ Bezit van de Markering op de Pagina&#39;s van de Auteur en van Publish ](assets/satellite-object-debugging.png)
+   ![&#x200B; Bezit van de Markering op de Pagina&#39;s van de Auteur en van Publish &#x200B;](assets/satellite-object-debugging.png)
 
 ## Foutopsporing via Adobe Experience Platform Debugger
 
@@ -50,10 +50,10 @@ Adobe verstrekt de uitbreiding van Chrome van het Adobe Experience Platform Debu
 
 2. In het **Adobe Experience Platform Debugger > Samenvatting > de sectie van de Markeringen van Adobe Experience Platform**, verifieer uw het bezitsdetails van de Markering zoals Naam, Versie, Bouwstijl Datum, Milieu, en Uitbreidingen.
 
-   ![ Adobe Experience Platform Debugger en de Details van het Bezit van de Markering ](assets/tag-property-details.png)
+   ![&#x200B; Adobe Experience Platform Debugger en de Details van het Bezit van de Markering &#x200B;](assets/tag-property-details.png)
 
 ## Aanvullende bronnen {#additional-resources}
 
-+ [ Inleiding aan het Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=nl-NL)
++ [&#x200B; Inleiding aan het Adobe Experience Platform Debugger &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=nl-NL)
 
-+ [ Satellite objecten verwijzing ](https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html?lang=nl-NL)
++ [&#x200B; Satellite objecten verwijzing &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html?lang=nl-NL)

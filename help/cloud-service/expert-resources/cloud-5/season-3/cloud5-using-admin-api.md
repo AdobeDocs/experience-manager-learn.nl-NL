@@ -22,10 +22,10 @@ ht-degree: 0%
 
 # De Admin API gebruiken met Edge Delivery Services
 
-Leer over het gebruiken van [ AEM Admin API ](https://www.aem.live/docs/admin.html) in Edge Delivery Services om de levenscyclus van inhoud en code, met Varun Mitra, de Architect van de Wolk te beheren.
+Leer over het gebruiken van [&#x200B; AEM Admin API &#x200B;](https://www.aem.live/docs/admin.html) in Edge Delivery Services om de levenscyclus van inhoud en code, met Varun Mitra, de Architect van de Wolk te beheren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433158/?learn=on)
 
 ## Aanvullende bronnen
 
-Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 3 ](../cloud5-season-3.md) pagina.
+Bekijk verwante video&#39;s op de [&#x200B; Wolk 5 seizoen 3 &#x200B;](../cloud5-season-3.md) pagina.

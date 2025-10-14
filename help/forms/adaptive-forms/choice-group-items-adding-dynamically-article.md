@@ -27,7 +27,7 @@ U kunt punten toevoegen gebruikend de visuele redacteur evenals de coderedacteur
 
 In het onderstaande schermafbeelding stellen we de opties voor de periode(jaren) van de lening in op de resultaten van een serviceoproep met de naam getLoanPeriods.
 
-![ Redacteur van de Regel ](assets/ruleeditor.png)
+![&#x200B; Redacteur van de Regel &#x200B;](assets/ruleeditor.png)
 
 **Gebruikend de coderedacteur**: Wanneer u de punten in de keuzevroep dynamisch wilt plaatsen die op de waarden in de vorm worden ingegaan. In het volgende codefragment worden bijvoorbeeld de items van het selectievakje ingesteld op de waarden die zijn ingevoerd in de velden Naam en Muis van de aanvrager van het adaptieve formulier.
 
@@ -78,9 +78,9 @@ U kunt dit als volgt op uw systeem testen:
 **Gebruikend de coderedacteur om punten** toe te voegen
 
 * [De middelen downloaden](assets/usingthecodeeditor.zip)
-* [ open Forms en documenten ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [&#x200B; open Forms en documenten &#x200B;](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Klik op &quot;Maken | Bestand uploaden&quot; en het bestand uploaden dat u in de vorige stap hebt gedownload
-* [ voorproef de vormen ](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
+* [&#x200B; voorproef de vormen &#x200B;](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
 * Voer de naam van de aanvrager in en selecteer de huwelijksstatus die gehuwd moet worden
 * Voer de naam van de echtgenoot in
 * Klik op Volgende
@@ -89,11 +89,11 @@ U kunt dit als volgt op uw systeem testen:
 **Gebruikend de visuele redacteur om punten** toe te voegen
 
 * [De middelen downloaden](assets/usingthevisualeditor.zip)
-* Installeer Tomcat als u dit nog niet hebt. [ Instructies om te installeren zijn hier beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html?lang=nl-NL)
+* Installeer Tomcat als u dit nog niet hebt. [&#x200B; Instructies om te installeren zijn hier beschikbaar &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html?lang=nl-NL)
 * [Het bestand SampleRest.war uit dit ZIP-bestand in uw Tomcat-bestand implementeren](assets/sample-rest.zip)
-* [ open Forms en documenten ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [&#x200B; open Forms en documenten &#x200B;](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Klik op &quot;Maken | Bestand uploaden&quot; en het bestand uploaden dat u in de vorige stap hebt gedownload
-* [ voorproef de vormen ](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
+* [&#x200B; voorproef de vormen &#x200B;](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
 * Voer de hoeveelheid leningen en de tab uit het veld in. Dit zal de regel teweegbrengen die het gebied van de leningsperiode toont.
 * Selecteer de toepasselijke leningsperiode (de posten voor de leningsperiode worden ingevuld van de rest van de oproep)
 * Selecteer de rentevoet en klik op &quot;Amortization-schema aanvragen&quot;

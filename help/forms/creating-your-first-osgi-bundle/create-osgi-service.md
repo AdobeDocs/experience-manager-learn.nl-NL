@@ -80,7 +80,7 @@ public class MyfirstInterfaceImpl implements MyfirstInterface {
 
 De aantekening `@Component(...)` op regel 10 maakt deze Java-klasse gemarkeerd als een OSGi-component en registreert deze als een OSGi-service.
 
-De `@Reference` aantekening maakt deel uit van de verklarende diensten OSGi, en wordt gebruikt om een verwijzing van [ OutputService ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) in veranderlijk `outputService` te injecteren.
+De `@Reference` aantekening maakt deel uit van de verklarende diensten OSGi, en wordt gebruikt om een verwijzing van [&#x200B; OutputService &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) in veranderlijk `outputService` te injecteren.
 
 
 ## De bundel maken en implementeren
@@ -90,7 +90,7 @@ De `@Reference` aantekening maakt deel uit van de verklarende diensten OSGi, en 
 * De opdracht uitvoeren `mvn clean install -PautoInstallBundle`
 * Met de bovenstaande opdracht wordt de bundel automatisch gegenereerd en geïmplementeerd op uw AEM-instantie die wordt uitgevoerd op localhost:4502
 
-De bundel is ook beschikbaar op de volgende locatie `C:\AEMFormsBundles\mysite\core\target` . De bundel kan ook in AEM worden opgesteld gebruikend de [ het Webconsole van de Felix.](http://localhost:4502/system/console/bundles)
+De bundel is ook beschikbaar op de volgende locatie `C:\AEMFormsBundles\mysite\core\target` . De bundel kan ook in AEM worden opgesteld gebruikend de [&#x200B; het Webconsole van de Felix.](http://localhost:4502/system/console/bundles)
 
 ## De service gebruiken
 
@@ -101,16 +101,16 @@ MyFirstAEMFormsService myFirstAEMFormsService = sling.getService(com.mysite.samp
 com.adobe.aemfd.docmanager.Document generatedDocument = myFirstAEMFormsService.mergeDataWithXDPTemplate(xdp_or_pdf_template,xmlDocument);
 ```
 
-Het steekproefpakket dat de JSP pagina bevat kan [ van hier worden gedownload ](assets/learning_aem_forms.zip)
+Het steekproefpakket dat de JSP pagina bevat kan [&#x200B; van hier worden gedownload &#x200B;](assets/learning_aem_forms.zip)
 
 [De volledige bundel kan worden gedownload](assets/mysite.core-1.0.0-SNAPSHOT.jar)
 
 ## De verpakking testen
 
-Invoer en installeer het pakket in AEM gebruikend de [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
+Invoer en installeer het pakket in AEM gebruikend de [&#x200B; pakketmanager &#x200B;](http://localhost:4502/crx/packmgr/index.jsp)
 
 Gebruik postman om een POST-aanroep te maken en de invoerparameters op te geven, zoals hieronder in de schermafbeelding wordt getoond
-![ postman ](assets/test-service-postman.JPG)
+![&#x200B; postman &#x200B;](assets/test-service-postman.JPG)
 
 ## Volgende stappen
 

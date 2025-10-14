@@ -105,13 +105,13 @@ Er zijn aanvullende onderdelen die veel voorkomen in Apache-configuraties en we 
 
 #### Map opnieuw schrijven
 
-Deze folder kan alle `_rewrite.rules` dossiers bevatten u creeert die uw typische RewriteRulesyntax bevatten die Apache Webservers [ mod_rewrite ](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) module in dienst nemen
+Deze folder kan alle `_rewrite.rules` dossiers bevatten u creeert die uw typische RewriteRulesyntax bevatten die Apache Webservers [&#x200B; mod_rewrite &#x200B;](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) module in dienst nemen
 
 - `/etc/httpd/conf.d/rewrites/`
 
 #### Map Whitelists
 
-Deze folder kan alle `_whitelist.rules` dossiers bevatten u creeert die uw typische `IP Allow` of `Require IP` syntaxis bevatten die Apache Webservers [ toegangscontroles ](https://httpd.apache.org/docs/2.4/howto/access.html) in dienst nemen
+Deze folder kan alle `_whitelist.rules` dossiers bevatten u creeert die uw typische `IP Allow` of `Require IP` syntaxis bevatten die Apache Webservers [&#x200B; toegangscontroles &#x200B;](https://httpd.apache.org/docs/2.4/howto/access.html) in dienst nemen
 
 - `/etc/httpd/conf.d/whitelists/`
 
@@ -151,7 +151,7 @@ Deze map bevat alle `_cache.any` , `_invalidate.any` -bestanden die u maakt en d
 
 #### Map met clientkoppen
 
-Deze map kan alle `_clientheaders.any` -bestanden bevatten die u maakt en die lijsten met clientheaders bevatten die u wilt doorgeven aan AEM wanneer een aanvraag wordt ingediend.  Meer details op deze sectie zijn [ hier ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL)
+Deze map kan alle `_clientheaders.any` -bestanden bevatten die u maakt en die lijsten met clientheaders bevatten die u wilt doorgeven aan AEM wanneer een aanvraag wordt ingediend.  Meer details op deze sectie zijn [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL)
 
 - `/etc/httpd/conf.dispatcher.d/clientheaders/`
 

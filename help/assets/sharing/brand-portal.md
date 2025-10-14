@@ -33,7 +33,7 @@ Brand Portal Asset Sourcing wordt gebruikt om middelen te verzamelen van externe
 
 &lbrace;6.5 SP2 (6.5.2) van de Auteur 6.5 van Experience Manager of groter wordt vereist om Activa te gebruiken die **
 
-Het overzicht [ laat de Auteur van Experience Manager voor Activa toe die ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=nl-NL) voor instructies op hoe te om de Levering van Activa op de Auteur van Experience Manager te vormen en te plaatsen.
+Het overzicht [&#x200B; laat de Auteur van Experience Manager voor Activa toe die &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=nl-NL) voor instructies op hoe te om de Levering van Activa op de Auteur van Experience Manager te vormen en te plaatsen.
 
 ## Functies en verbeteringen in Brand Portal februari 2019{#brand-portal-features-and-enhancements-644}
 
@@ -71,12 +71,12 @@ Op dezelfde manier specificeren:
 #### Maphiërarchie inschakelen
 
 Beheerders kunnen nu configureren hoe de mappen bij het aanmelden worden weergegeven aan gebruikers zonder beheer (Editors, Viewers en Gastgebruikers).
-[ laat de Configuratie van de Hiërarchie van de Omslag toe ](https://helpx.adobe.com/nl/experience-manager/brand-portal/using/brand-portal-general-configuration.html) wordt toegevoegd in Algemene Montages, in het admin hulpmiddelenpaneel. Als de configuratie:
+[&#x200B; laat de Configuratie van de Hiërarchie van de Omslag toe &#x200B;](https://helpx.adobe.com/nl/experience-manager/brand-portal/using/brand-portal-general-configuration.html) wordt toegevoegd in Algemene Montages, in het admin hulpmiddelenpaneel. Als de configuratie:
 
 * Als deze optie is ingeschakeld, is de mappenstructuur die begint in de hoofdmap zichtbaar voor gebruikers zonder beheerdersrechten. Aldus, die hen een navigatie ervaring gelijkend op beheerders verlenen.
 * Uitgeschakeld. Alleen de gedeelde mappen worden op de bestemmingspagina weergegeven.
 
-[ laat de functionaliteit van de Hiërarchie van de Omslag toe ](https://helpx.adobe.com/nl/experience-manager/brand-portal/using/brand-portal-general-configuration.html) (wanneer toegelaten) helpt u de omslagen met de zelfde namen onderscheiden die van verschillende hiërarchieën worden gedeeld. Bij het aanmelden zien niet-beheerders nu de virtuele bovenliggende mappen (en vooroudermappen) van de gedeelde mappen.
+[&#x200B; laat de functionaliteit van de Hiërarchie van de Omslag toe &#x200B;](https://helpx.adobe.com/nl/experience-manager/brand-portal/using/brand-portal-general-configuration.html) (wanneer toegelaten) helpt u de omslagen met de zelfde namen onderscheiden die van verschillende hiërarchieën worden gedeeld. Bij het aanmelden zien niet-beheerders nu de virtuele bovenliggende mappen (en vooroudermappen) van de gedeelde mappen.
 
 De gedeelde mappen worden in de desbetreffende directory&#39;s in virtuele mappen ingedeeld. U kunt deze virtuele mappen herkennen met een vergrendelingspictogram.
 
@@ -101,7 +101,7 @@ Dynamische videocodes voor media kunnen worden gedownload van:
 
 ### Gepland publiceren naar Brand Portal
 
-Assets (en omslagen) publiceren werkschema van [ AEM (6.4.2.0) ](https://helpx.adobe.com/nl/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) de instantie van de Auteur aan Brand Portal kan voor een recentere datum, tijd worden gepland.
+Assets (en omslagen) publiceren werkschema van [&#x200B; AEM (6.4.2.0) &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) de instantie van de Auteur aan Brand Portal kan voor een recentere datum, tijd worden gepland.
 
 Gepubliceerde middelen kunnen ook op een latere datum (tijd) uit het portaal worden verwijderd door de workflow Unpublish from Brand Portal te plannen.
 
@@ -112,7 +112,7 @@ Organisaties kunnen hun portaal-URL aanpassen door een alternatief voorvoegsel i
 Merk op dat alleen het voorvoegsel van de Brand Portal URL kan worden aangepast en niet de volledige URL.
 Zo kan een organisatie met een bestaand domein `wknd.brand-portal.adobe.com` op verzoek `wkndinc.brand-portal.adobe.com` maken.
 
-Nochtans, kan de instantie van de Auteur van AEM [ worden gevormd ](https://helpx.adobe.com/nl/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) slechts met huurder identiteitskaart URL en niet met huurder alias (afwisselend) URL.
+Nochtans, kan de instantie van de Auteur van AEM [&#x200B; worden gevormd &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) slechts met huurder identiteitskaart URL en niet met huurder alias (afwisselend) URL.
 
 **Geval van het Gebruik** : De organisaties kunnen aan hun brandingsbehoeften voldoen door portaal URL te krijgen aangepast, in plaats van aan URL te kleven die door Adobe wordt verstrekt.
 
@@ -128,8 +128,8 @@ AEM Brand Portal biedt gasttoegang tot het portaal. Een gastgebruiker vereist ge
 
 Brand Portal-gebruikers kunnen Aspera-gebaseerde snelle downloads gebruiken om snelheden tot 25x sneller te krijgen en genieten van een naadloze downloadervaring, ongeacht hun locatie over de hele wereld. Als gebruikers de elementen sneller van Brand Portal of een gedeelde koppeling willen downloaden, moeten ze de optie Downloadversnelling inschakelen selecteren in het dialoogvenster Downloaden, op voorwaarde dat downloadversnelling is ingeschakeld in hun organisatie.
 
-* [ Gids om downloads van Brand Portal te versnellen ](https://helpx.adobe.com/nl/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
-* [ de Server van de Test van Aspera Connect ](https://test-connect.asperasoft.com/)
+* [&#x200B; Gids om downloads van Brand Portal te versnellen &#x200B;](https://helpx.adobe.com/nl/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
+* [&#x200B; de Server van de Test van Aspera Connect &#x200B;](https://test-connect.asperasoft.com/)
 
 ### Rapport gebruikersaanmelding
 
@@ -159,7 +159,7 @@ Er worden zes nieuwe configuraties toegevoegd voor beheerders om de volgende fun
 
 ### Adobe I/O Hosts-gebruikersinterface voor het configureren van Auth-integratie
 
-Brand Portal gebruikt Adobe I/O [ https://legacy-oauth.cloud.adobe.io/ ](https://legacy-oauth.cloud.adobe.io/) interface om toepassing tot stand te brengen JWT, die het vormen de integratie van Auth toelaat om de integratie van AEM Assets met Brand Portal toe te staan. Eerder werd de interface voor het configureren van OAuth-integratie gehost in `https://marketing.adobe.com/developer/` . Meer over het integreren van AEM Assets met Brand Portal voor het publiceren van activa en inzamelingen aan Brand Portal verwijs [ de integratie van AEM Assets met Brand Portal ](https://helpx.adobe.com/nl/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html) vormen.
+Brand Portal gebruikt Adobe I/O [&#x200B; https://legacy-oauth.cloud.adobe.io/ &#x200B;](https://legacy-oauth.cloud.adobe.io/) interface om toepassing tot stand te brengen JWT, die het vormen de integratie van Auth toelaat om de integratie van AEM Assets met Brand Portal toe te staan. Eerder werd de interface voor het configureren van OAuth-integratie gehost in `https://marketing.adobe.com/developer/` . Meer over het integreren van AEM Assets met Brand Portal voor het publiceren van activa en inzamelingen aan Brand Portal verwijs [&#x200B; de integratie van AEM Assets met Brand Portal &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html) vormen.
 
 ## Functies en verbeteringen in Brand Portal februari 2018{#brand-portal-features-and-enhancements-632}
 
@@ -205,10 +205,10 @@ Nieuwe functies verbeteren de functionaliteit die gericht is op het uitlijnen va
 
 ## Aanvullende bronnen{#additional-resources}
 
-* [ wat in Brand Portal ](https://helpx.adobe.com/nl/experience-manager/brand-portal/using/whats-new.html) nieuw is
-* [ de replicatieagenten van de Auteur van AEM ](https://helpx.adobe.com/nl/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
-* [ Gids aan Versnelde Download ](https://helpx.adobe.com/nl/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
-* [ AEM Assets Brand Portal Adobe Docs ](https://helpx.adobe.com/nl/experience-manager/brand-portal/using/brand-portal.html)
-* [ AEM Assets Dynamic Media Adobe Docs ](https://experienceleague.adobe.com/docs/?lang=nl-NL)
-* [ download Aspera verbindt ](https://downloads.asperasoft.com/connect2/)
-* [ de Server van de Test van Aspera Connect ](https://test-connect.asperasoft.com/)
+* [&#x200B; wat in Brand Portal &#x200B;](https://helpx.adobe.com/nl/experience-manager/brand-portal/using/whats-new.html) nieuw is
+* [&#x200B; de replicatieagenten van de Auteur van AEM &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
+* [&#x200B; Gids aan Versnelde Download &#x200B;](https://helpx.adobe.com/nl/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
+* [&#x200B; AEM Assets Brand Portal Adobe Docs &#x200B;](https://helpx.adobe.com/nl/experience-manager/brand-portal/using/brand-portal.html)
+* [&#x200B; AEM Assets Dynamic Media Adobe Docs &#x200B;](https://experienceleague.adobe.com/docs/?lang=nl-NL)
+* [&#x200B; download Aspera verbindt &#x200B;](https://downloads.asperasoft.com/connect2/)
+* [&#x200B; de Server van de Test van Aspera Connect &#x200B;](https://test-connect.asperasoft.com/)

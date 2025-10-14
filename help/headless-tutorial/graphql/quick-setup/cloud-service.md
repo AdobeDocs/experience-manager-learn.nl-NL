@@ -30,9 +30,9 @@ U hebt het volgende nodig om deze snelle installatie te kunnen uitvoeren:
    + __de Beheerder van AEM__ toegang tot AEM as a Cloud Service
    + __Cloud Manager - de Toegang van de Manager van de Plaatsing__ tot Cloud Manager
 + De volgende gereedschappen moeten lokaal zijn geïnstalleerd:
-   + [ Node.js v18 ](https://nodejs.org/en/)
-   + [ Git ](https://git-scm.com/)
-   + IDE (bijvoorbeeld, [ Microsoft® Visual Studio Code ](https://code.visualstudio.com/))
+   + [&#x200B; Node.js v18 &#x200B;](https://nodejs.org/en/)
+   + [&#x200B; Git &#x200B;](https://git-scm.com/)
+   + IDE (bijvoorbeeld, [&#x200B; Microsoft® Visual Studio Code &#x200B;](https://code.visualstudio.com/))
 
 ## 1. Een Cloud Manager Git-opslagplaats maken
 
@@ -41,7 +41,7 @@ Maak eerst een Cloud Manager Git-opslagplaats die wordt gebruikt om de WKND-site
 _Screencast van stappen_
 >[!VIDEO](https://video.tv.adobe.com/v/339073?quality=12&learn=on)
 
-1. Navigeer aan [ https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+1. Navigeer aan [&#x200B; https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
 1. Selecteer het Cloud Manager __Programma__ dat het milieu van AEM as a Cloud Service aan gebruik voor deze snelle opstelling bevat
 1. Een Git-opslagplaats maken voor het WKND-siteproject
    1. Selecteer __Bewaarplaatsen__ in de hoogste navigatie
@@ -155,7 +155,7 @@ _Screencast van stappen_
    $ npm start
    ```
 
-1. React App, die plaatselijk loopt, begint op [ http://localhost:3000 ](http://localhost:3000) en toont een lijst van avonturen, die uit AEM as a Cloud Service gebruikend GraphQL APIs van AEM Headless worden voortgebracht.
+1. React App, die plaatselijk loopt, begint op [&#x200B; http://localhost:3000 &#x200B;](http://localhost:3000) en toont een lijst van avonturen, die uit AEM as a Cloud Service gebruikend GraphQL APIs van AEM Headless worden voortgebracht.
 
 ## 5. Inhoud bewerken in AEM
 
@@ -176,7 +176,7 @@ _Screencast van stappen_
    + Primaire afbeelding: `/content/dam/wknd-shared/en/activities/cycling/mountain-biking.jpg`
 1. Selecteer __sparen__ in de hoogste actiebar
 1. Selecteer __Snel publiceren__ van de hoogste actiebar __..__
-1. Vernieuw React App die op [ http://localhost:3000 ](http://localhost:3000) loopt.
+1. Vernieuw React App die op [&#x200B; http://localhost:3000 &#x200B;](http://localhost:3000) loopt.
 1. Selecteer in React App het nu bijgewerkte cyclusavontuur, en verifieer de inhoudsveranderingen die aan het Inhoudsfragment worden aangebracht.
 
 1. Dezelfde aanpak gebruiken in AEM Author-service:
@@ -191,7 +191,7 @@ _Screencast van stappen_
 
 Gefeliciteerd! U hebt AEM Headless met succes gebruikt om een React App aan te drijven!
 
-Om in detail te begrijpen hoe React App inhoud van AEM as a Cloud Service verbruikt, controleer uit [ het Hoofdloze leerprogramma van AEM ](../multi-step/overview.md). In de zelfstudie wordt onderzocht hoe inhoudsfragmenten in AEM zijn gemaakt en hoe deze React-app hun inhoud als JSON-inhoud gebruikt.
+Om in detail te begrijpen hoe React App inhoud van AEM as a Cloud Service verbruikt, controleer uit [&#x200B; het Hoofdloze leerprogramma van AEM &#x200B;](../multi-step/overview.md). In de zelfstudie wordt onderzocht hoe inhoudsfragmenten in AEM zijn gemaakt en hoe deze React-app hun inhoud als JSON-inhoud gebruikt.
 
 ### Volgende stappen
 

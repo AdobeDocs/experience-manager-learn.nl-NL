@@ -26,7 +26,7 @@ Leer hoe u gegenereerde voorbeeldcode kunt opschonen en verwijderen uit een AEM-
 
 ## Bronnen
 
-+ [ AEM Maven Archetype van het Project ](https://github.com/adobe/aem-project-archetype)
++ [&#x200B; AEM Maven Archetype van het Project &#x200B;](https://github.com/adobe/aem-project-archetype)
 
 ## Opdrachten
 

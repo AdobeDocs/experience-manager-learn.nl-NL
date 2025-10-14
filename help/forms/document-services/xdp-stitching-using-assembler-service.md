@@ -21,7 +21,7 @@ ht-degree: 0%
 In dit artikel vindt u de elementen waarmee u kunt aantonen dat u xdp-documenten kunt naaien met gebruik van de assembleerservice.
 De volgende jsp code werd geschreven om een subformulier genoemd **adres** van xdp- document genoemd address.xdp in een toevoegingspunt op te nemen genoemd **adres** in master.xdp- document. De resulterende xdp is opgeslagen in de hoofdmap van uw AEM-installatie.
 
-De vergaderingsdienst baseert zich op een geldige DX- documenten om de manipulatie van de documenten van PDF te beschrijven. U kunt naar het [ Dx- verwijzingsdocument hier ](assets/ddxRef.pdf) verwijzen.Pagina 40 heeft informatie over xdp het stitching.
+De vergaderingsdienst baseert zich op een geldige DX- documenten om de manipulatie van de documenten van PDF te beschrijven. U kunt naar het [&#x200B; Dx- verwijzingsdocument hier &#x200B;](assets/ddxRef.pdf) verwijzen.Pagina 40 heeft informatie over xdp het stitching.
 
 ```java
     javax.servlet.http.Part ddxFile = request.getPart("xdpstitching.ddx");
@@ -68,14 +68,14 @@ Het DDX-bestand dat fragmenten moet invoegen in een andere xdp, wordt hieronder 
 
 Om deze functie te laten werken op uw AEM-server
 
-* Download [ XDP het Plaatsen pakket ](assets/xdp-stitching.zip) aan uw lokaal systeem.
-* Upload en installeer het pakket gebruikend de [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
-* [ Extraheer de inhoud van dit ZIP dossier ](assets/xdp-and-ddx.zip) om het steekproef xdp en Dx- dossier te krijgen
+* Download [&#x200B; XDP het Plaatsen pakket &#x200B;](assets/xdp-stitching.zip) aan uw lokaal systeem.
+* Upload en installeer het pakket gebruikend de [&#x200B; pakketmanager &#x200B;](http://localhost:4502/crx/packmgr/index.jsp)
+* [&#x200B; Extraheer de inhoud van dit ZIP dossier &#x200B;](assets/xdp-and-ddx.zip) om het steekproef xdp en Dx- dossier te krijgen
 
 **nadat u het pakket installeert zult u volgende URLs in de Filter van Adobe moeten lijsten van gewenste personen Granite CSRF.**
 
 1. Volg de onderstaande stappen om de hierboven vermelde paden te lijsten van gewenste personen.
-1. [ Login aan configMgr ](http://localhost:4502/system/console/configMgr)
+1. [&#x200B; Login aan configMgr &#x200B;](http://localhost:4502/system/console/configMgr)
 1. Zoeken naar Adobe Granite CSRF-filter
 1. Voeg het volgende pad toe aan de uitgesloten secties en sla het op `/content/AemFormsSamples/assemblerservice`
 1. Zoeken naar het filter Verticale verwijzing
@@ -85,7 +85,7 @@ Start de app en voer de volgende URL in om de API voor exportgegevens te testen
 http://localhost:4502/content/AemFormsSamples/assemblerservice.html
 
 Geef de volgende invoerparameters op, zoals opgegeven in de schermafbeelding. U kunt de voorbeelddocumenten gebruiken die u eerder hebt gedownload,
-![ xdp-stitch-postman ](assets/xdp-stitching-postman.png)
+![&#x200B; xdp-stitch-postman &#x200B;](assets/xdp-stitching-postman.png)
 
 >[!NOTE]
 >

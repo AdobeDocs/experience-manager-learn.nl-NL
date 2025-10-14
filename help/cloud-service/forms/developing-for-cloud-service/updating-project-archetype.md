@@ -28,7 +28,7 @@ De volgende stappen werden gevolgd om het gemaakte project te migreren gebruiken
 
 * Opdrachtprompt openen en naar c:\cloudmanager navigeren
 * Gemaakt project maken met het nieuwste archetype.
-* Kopieer en kleef de inhoud van het [ tekstdossier ](assets/creating-maven-project.txt) in uw venster van de bevelherinnering. U kunt DarchetypeVersion=33 afhankelijk van de [ recentste versie ](https://github.com/adobe/aem-project-archetype/releases) moeten veranderen. Archetype 33 bevat nieuwe AEM Forms-thema&#39;s.
+* Kopieer en kleef de inhoud van het [&#x200B; tekstdossier &#x200B;](assets/creating-maven-project.txt) in uw venster van de bevelherinnering. U kunt DarchetypeVersion=33 afhankelijk van de [&#x200B; recentste versie &#x200B;](https://github.com/adobe/aem-project-archetype/releases) moeten veranderen. Archetype 33 bevat nieuwe AEM Forms-thema&#39;s.
 Aangezien wij het nieuwe geleide project in de cloudmanager omslag creëren die reeds a-bank-toepassing project heeft, zou u **DartifactId** van a-bank-toepassing in iets anders moeten veranderen. Ik heb voor dit artikel gebruik gemaakt van aem-banking-application1.
 
 >[!NOTE]

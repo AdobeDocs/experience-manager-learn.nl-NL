@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Videoafspeellijsten voor beheerweergave
 
-![ de Admin mening van AEM Assets ](./assets/admin-view.png){align="center"}
+![&#x200B; de Admin mening van AEM Assets &#x200B;](./assets/admin-view.png){align="center"}
 
 Bekijk deze afspeellijsten om de AEM Assets as a Cloud Service Admin-weergave onder de knie te krijgen: configuratie, optimalisatie, gebruik en naadloze integratie met creatieve workflows. Bekijk de inzichten die je nodig hebt om te slagen met AEM Assets as a Cloud Service.
 

@@ -22,9 +22,9 @@ ht-degree: 0%
 
 # Angular-app filteren
 
-Onderzoek AEM Headless GraphQL APIs capaciteit om gegevens te filtreren gebruikend a [ Angular ](https://angular.io/) app. Deze Angular-app maakt een lijst met WKND-avonturen die kunnen worden gefilterd op Type activiteit.
+Onderzoek AEM Headless GraphQL APIs capaciteit om gegevens te filtreren gebruikend a [&#x200B; Angular &#x200B;](https://angular.io/) app. Deze Angular-app maakt een lijst met WKND-avonturen die kunnen worden gefilterd op Type activiteit.
 
-Deze code toont het gebruiken van de Hoofdloze Cliënt van Adobe [ AEM voor JavaScript ](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) aan om voortgeduurde vragen van GraphQL van Angular aan te halen. Deze app gebruikt de `wknd-shared/adventures-all` aanhoudend vraag om alle avonturen te verzamelen, en een lijst van beschikbare Types van Activiteit af te leiden. Wanneer een gebruiker een Type van Activiteit selecteert, wordt het geselecteerde type overgegaan tot de `wknd-shared/adventures-by-activity` persisted vraag en wint de avontuurdetails voor slechts die avonturen van het gespecificeerde Type van Activiteit terug.
+Deze code toont het gebruiken van de Hoofdloze Cliënt van Adobe [&#x200B; AEM voor JavaScript &#x200B;](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) aan om voortgeduurde vragen van GraphQL van Angular aan te halen. Deze app gebruikt de `wknd-shared/adventures-all` aanhoudend vraag om alle avonturen te verzamelen, en een lijst van beschikbare Types van Activiteit af te leiden. Wanneer een gebruiker een Type van Activiteit selecteert, wordt het geselecteerde type overgegaan tot de `wknd-shared/adventures-by-activity` persisted vraag en wint de avontuurdetails voor slechts die avonturen van het gespecificeerde Type van Activiteit terug.
 
 Deze code:
 

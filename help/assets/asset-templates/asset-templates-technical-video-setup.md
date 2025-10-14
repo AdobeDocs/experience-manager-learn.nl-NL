@@ -28,7 +28,7 @@ Met Asset Templates kunnen marketers digitale middelen maken, beheren en leveren
 
 ## InDesign Server-proefversie downloaden {#download-indesign-server-trial}
 
-De download [ website van de proefdownload van InDesign Server ](https://www.adobeprerelease.com/)
+De download [&#x200B; website van de proefdownload van InDesign Server &#x200B;](https://www.adobeprerelease.com/)
 
 ## InDesign Server starten {#starting-indesign-server}
 

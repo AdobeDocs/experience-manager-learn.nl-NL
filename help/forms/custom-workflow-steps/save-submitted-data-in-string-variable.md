@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Met deze functie kunt u de verzonden gegevens in de tekst van uw e-mail opnemen. De stap van het douaneproces haalt de **gebonden gegevens** uit de adaptieve vormvoorlegging en bevolkt een variabele van typekoord met de gegevens. Vervolgens kunt u deze tekenreeksvariabele gebruiken om de gegevens in uw e-mailsjabloon in te voegen.
 Het volgende het schermschot toont u de argumenten die u tot de stap van het douaneproces moet overgaan
-![ proces-stap ](assets/save-submitted-data-string.png)
+![&#x200B; proces-stap &#x200B;](assets/save-submitted-data-string.png)
 
 Hieronder volgen de parameters
 

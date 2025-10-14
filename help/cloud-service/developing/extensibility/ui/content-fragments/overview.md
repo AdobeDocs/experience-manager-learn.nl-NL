@@ -27,9 +27,9 @@ De gebruikersinterface van AEM Content Fragments is een krachtige uitbreidbare g
 
 De Content Fragment Console in AEM (Adobe Experience Manager) is een gebruikersinterface die een gecentraliseerde locatie biedt voor het beheren en ordenen van inhoudsfragmenten. Het biedt een uitgebreide reeks hulpmiddelen en eigenschappen aan om inhoudsfragmenten tot stand te brengen, uit te geven, te publiceren en te volgen, die gebruikers machtigen om gestructureerde inhoud over diverse kanalen en touchpoints efficiënt te beheren.
 
-![ de Console van Fragmenten van de Inhoud ](./assets/overview/cfc.png)
+![&#x200B; de Console van Fragmenten van de Inhoud &#x200B;](./assets/overview/cfc.png)
 
-[ de Console van de Fragmenten van de Inhoud van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=nl-NL) is verlengbare UI voor het van een lijst maken van en het beheren van inhoudsfragmenten. [ de uitbreidingen van de Console van het Fragment van de Inhoud van AEM worden gecreeerd ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) gebruikend het `@adobe/aem-cf-admin-ui-ext-tpl` malplaatje van App Builder.
+[&#x200B; de Console van de Fragmenten van de Inhoud van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=nl-NL) is verlengbare UI voor het van een lijst maken van en het beheren van inhoudsfragmenten. [&#x200B; de uitbreidingen van de Console van het Fragment van de Inhoud van AEM worden gecreeerd &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) gebruikend het `@adobe/aem-cf-admin-ui-ext-tpl` malplaatje van App Builder.
 
 De volgende extensiepunten voor de Content Fragments Console zijn beschikbaar:
 
@@ -100,9 +100,9 @@ De volgende extensiepunten voor de Content Fragments Console zijn beschikbaar:
 
 De Content Fragment Editor in AEM (Adobe Experience Manager) is een gebruikersinterfacecomponent waarmee gebruikers inhoudsfragmenten kunnen maken, bewerken en beheren. Het biedt een visueel intuïtieve en gebruiksvriendelijke omgeving voor het werken met gestructureerde inhoud, waarmee gebruikers inhoudselementen kunnen definiëren en indelen, sjablonen kunnen toepassen, variaties kunnen beheren en een voorvertoning kunnen weergeven van de inhoud die op verschillende kanalen wordt weergegeven. De Inhoudsfragmenteditor stroomlijnt het proces van het maken van herbruikbare en modulaire inhoud die eenvoudig kan worden gedistribueerd en gepubliceerd over meerdere digitale ervaringen.
 
-![ de Redacteur van Fragmenten van de Inhoud ](./assets/overview/cfe.png)
+![&#x200B; de Redacteur van Fragmenten van de Inhoud &#x200B;](./assets/overview/cfe.png)
 
-De AEM Content Fragments Editor is de uitbreidbare UI voor het bewerken van inhoudsfragmenten. [ de uitbreidingen van de Redacteur van het Fragment van de Inhoud van AEM worden gecreeerd ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) gebruikend het `@adobe/aem-cf-editor-ui-ext-tpl` malplaatje van App Builder.
+De AEM Content Fragments Editor is de uitbreidbare UI voor het bewerken van inhoudsfragmenten. [&#x200B; de uitbreidingen van de Redacteur van het Fragment van de Inhoud van AEM worden gecreeerd &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) gebruikend het `@adobe/aem-cf-editor-ui-ext-tpl` malplaatje van App Builder.
 
 De volgende extensiepunten van de Content Fragments Editor zijn beschikbaar:
 

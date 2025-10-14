@@ -23,7 +23,7 @@ Adobe Experience Manager (AEM) biedt een robuust raamwerk voor het bouwen van dy
 
 In dit voorbeeld verzendt het HTML-script twee parameters naar het `ParameterizedModel` Sling Model. Het model manipuleert deze parameters in zijn `getValue()` methode en keert het resultaat voor vertoning terug.
 
-Dit voorbeeld gaat twee parameters van het Koord over, nochtans kunt u om het even welk type van waarde of voorwerp tot het het Schuiven Model overgaan, zolang het [ Verschuivende Model gebiedstype, dat met `@RequestAttribute`](#sling-model-implementation) wordt geannoteerd het type van voorwerp of waarde aanpast die van HTML wordt overgegaan.
+Dit voorbeeld gaat twee parameters van het Koord over, nochtans kunt u om het even welk type van waarde of voorwerp tot het het Schuiven Model overgaan, zolang het [&#x200B; Verschuivende Model gebiedstype, dat met `@RequestAttribute`](#sling-model-implementation) wordt geannoteerd het type van voorwerp of waarde aanpast die van HTML wordt overgegaan.
 
 ```html
 <sly data-sly-use.myModel="${'com.example.core.models.ParameterizedModel' @ myParameterOne='Hello', myParameterTwo='World'}"

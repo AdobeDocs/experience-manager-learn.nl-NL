@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Component maken om de formuliergegevens samen te vatten
 
-Er is een eenvoudige component gemaakt om de formuliergegevens voor revisie weer te geven. De [ het bezoekfunctie van de gidsAPI ](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html?q=visit) werd gebruikt om door de vormgebieden te herhalen. De code in de clientbibliotheek die aan deze component is gekoppeld, krijgt de deelvensters/tabelcomponenten op het formulier. Uit de onderliggende elementen van dit deelvenster/de tabelcomponenten waaruit de veldtitel, waarde en de SOM-expressie worden geëxtraheerd met de API-methoden van GuidBridge. Vervolgens wordt een eenvoudige HTML-tabel samengesteld met de titel, waarde en SOM-expressie waarmee de eindgebruiker de formuliergegevens kan bekijken of bewerken voordat het formulier wordt verzonden.
+Er is een eenvoudige component gemaakt om de formuliergegevens voor revisie weer te geven. De [&#x200B; het bezoekfunctie van de gidsAPI &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html?q=visit) werd gebruikt om door de vormgebieden te herhalen. De code in de clientbibliotheek die aan deze component is gekoppeld, krijgt de deelvensters/tabelcomponenten op het formulier. Uit de onderliggende elementen van dit deelvenster/de tabelcomponenten waaruit de veldtitel, waarde en de SOM-expressie worden geëxtraheerd met de API-methoden van GuidBridge. Vervolgens wordt een eenvoudige HTML-tabel samengesteld met de titel, waarde en SOM-expressie waarmee de eindgebruiker de formuliergegevens kan bekijken of bewerken voordat het formulier wordt verzonden.
 
 Bijvoorbeeld toont het hieronder ontsproten scherm u de lijst die wordt gecreeerd om van de gebieden en zijn waarden van **een lijst te maken YourDetails**. De laatste TD in de TR wordt gebruikt om de waarde van het veld te bewerken met de velden SOM-expressie.
 
-![ bezoek-func ](assets/visit-function.png)
+![&#x200B; bezoek-func &#x200B;](assets/visit-function.png)
 
 ## Volgende stappen
 

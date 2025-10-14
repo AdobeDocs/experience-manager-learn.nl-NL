@@ -28,4 +28,4 @@ Timewarp is een eigenschap van Adobe Experience Manager Sites die auteurs een sn
 
 ## Meer bronnen {#more-resources}
 
-* [ Werkend met de Versies van de Pagina - Timewarp ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/page-versions.html?lang=nl-NL)
+* [&#x200B; Werkend met de Versies van de Pagina - Timewarp &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/page-versions.html?lang=nl-NL)

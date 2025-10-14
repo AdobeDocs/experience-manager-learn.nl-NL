@@ -25,4 +25,4 @@ Met AEM 6.3 kunnen gebruikers een taalkopie maken van de hoofdtaal zonder dat ze
 ## Aanvullende bronnen {#additional-resources}
 
 * {de Documentatie van de Tovenaar van het Exemplaar van 0} Taal [&#128279;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/tc-wizard.html)
-* [ MSM Beste praktijken ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/msm-best-practices.html)
+* [&#x200B; MSM Beste praktijken &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/administering/using/msm-best-practices.html)

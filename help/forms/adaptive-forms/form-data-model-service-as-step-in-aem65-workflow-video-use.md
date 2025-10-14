@@ -28,7 +28,7 @@ Vanaf AEM Forms 6.4 kunnen we nu Form Data Model Service gebruiken als onderdeel
 
 Volg onderstaande instructies om deze mogelijkheid op uw server te testen
 
-* Opstelling tomcat met het dossier SampleRest.war zoals die [ hier ](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html) wordt beschreven.Het oorlogsdossier in Tomcat wordt opgesteld heeft de code om de het creditscore van de aanvrager terug te keren.De creditscore is willekeurig aantal tussen 200 en 800 die
+* Opstelling tomcat met het dossier SampleRest.war zoals die [&#x200B; hier &#x200B;](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html) wordt beschreven.Het oorlogsdossier in Tomcat wordt opgesteld heeft de code om de het creditscore van de aanvrager terug te keren.De creditscore is willekeurig aantal tussen 200 en 800 die
 
 * [Elementen importeren naar AEM met pakketbeheer](assets/aem65-loanapplication.zip)
 * Het pakket bevat het volgende:
@@ -36,7 +36,7 @@ Volg onderstaande instructies om deze mogelijkheid op uw server te testen
    * Workflowmodel dat gebruikmaakt van FDM-stap.
    * Formuliergegevensmodel dat wordt gebruikt in de FDM-stap.
    * Aangepast formulier om de workflow bij verzending te activeren.
-* Open [ MortgaugeApplicationForm ](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Vul de gegevens in en verzend deze. Op de vormvoorlegging wordt het [ de werkschema van de leningentoepassing ](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) teweeggebracht.
+* Open [&#x200B; MortgaugeApplicationForm &#x200B;](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Vul de gegevens in en verzend deze. Op de vormvoorlegging wordt het [&#x200B; de werkschema van de leningentoepassing &#x200B;](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) teweeggebracht.
 
-![ workflow ](assets/invokefdm651.PNG) .
+![&#x200B; workflow &#x200B;](assets/invokefdm651.PNG) .
 De workflow gebruikt de component Splitsen of Splitsen om de toepassing naar de beheerder te leiden als de creditscore hoger is dan 500. Als de creditscore lager is dan 500, wordt de toepassing naar cavery gerouteerd.

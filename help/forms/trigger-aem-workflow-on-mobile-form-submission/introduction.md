@@ -29,7 +29,7 @@ De volgende stappen zijn betrokken bij het gebruiksgeval
 * De server slaat de gegevens op in een vooraf gedefinieerde map in de opslagplaats van de AEM-verwerkingsinstantie.
 * Workflowstartprogramma is geconfigureerd om elke keer dat een nieuw bestand onder een bepaalde map wordt toegevoegd, een AEM-workflow te activeren.
 
-Deze zelfstudie doorloopt de stappen die nodig zijn voor het uitvoeren van het bovenstaande gebruiksgeval. De code van de steekproef en de activa met betrekking tot dit leerprogramma zijn [ hier beschikbaar.](./deploy-assets.md)
+Deze zelfstudie doorloopt de stappen die nodig zijn voor het uitvoeren van het bovenstaande gebruiksgeval. De code van de steekproef en de activa met betrekking tot dit leerprogramma zijn [&#x200B; hier beschikbaar.](./deploy-assets.md)
 
 
 ## Volgende stappen

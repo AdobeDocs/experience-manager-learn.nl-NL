@@ -37,8 +37,8 @@ Een voorinstelling voor afbeelding heeft een dollarteken ($) aan weerszijden van
 >
 >Maak één voorinstelling voor afbeeldingen per unieke afbeeldingsgrootte op uw site. Als u bijvoorbeeld een afbeelding van 350 x 350 nodig hebt voor de pagina met productdetails, een afbeelding van 120 x 120 voor de pagina&#39;s Bladeren/Zoeken en een afbeelding van 90 x 90 voor een cross-sell/aanbevolen item, hebt u drie voorinstellingen voor afbeeldingen nodig, of het nu gaat om 500 of 500.000 afbeeldingen.
 
-- Leer meer over [ Beeld vooraf instelt ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html?lang=nl-NL).
-- Leer hoe te [ een Beeld creëren vooraf instelt ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html?lang=nl-NL#creating-an-image-preset).
+- Leer meer over [&#x200B; Beeld vooraf instelt &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html?lang=nl-NL).
+- Leer hoe te [&#x200B; een Beeld creëren vooraf instelt &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html?lang=nl-NL#creating-an-image-preset).
 
 ## Voorinstellingen voor afbeeldingen en Verscherpen
 
@@ -60,10 +60,10 @@ In de volgende afbeelding ziet u drie verscherpingsniveaus. Van rechts naar link
 
 In Dynamic Media Classic kunt u drie typen verscherpen: Eenvoudig verscherpen, Nieuwe pixels berekenen en Onscherp masker.
 
-Leer meer over [ het Verscherpen van Dynamic Media Classic Opties ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html?lang=nl-NL#sharpening_an_image).
+Leer meer over [&#x200B; het Verscherpen van Dynamic Media Classic Opties &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html?lang=nl-NL#sharpening_an_image).
 
 ## Aanvullende bronnen
 
-[ Vooraf ingestelde Gids van het Beeld ](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf). Instellingen voor optimalisatie voor afbeeldingskwaliteit en laadsnelheid.
+[&#x200B; Vooraf ingestelde Gids van het Beeld &#x200B;](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf). Instellingen voor optimalisatie voor afbeeldingskwaliteit en laadsnelheid.
 
-[ Beeld is Alles Deel 2: Het is nooit enkel een Vervaging — Kwaliteit versus Snelheid ](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Een blogbericht waarin het gebruik van Voorinstellingen voor afbeeldingen wordt besproken voor het aanbieden van afbeeldingen van hoge kwaliteit die snel worden geladen.
+[&#x200B; Beeld is Alles Deel 2: Het is nooit enkel een Vervaging — Kwaliteit versus Snelheid &#x200B;](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Een blogbericht waarin het gebruik van Voorinstellingen voor afbeeldingen wordt besproken voor het aanbieden van afbeeldingen van hoge kwaliteit die snel worden geladen.

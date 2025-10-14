@@ -39,7 +39,7 @@ Er zijn twee bewerkingsstromen voor [!DNL AEM Sites] en [!DNL AEM Assets]:
 
 1. Strategie- en transformatiewerkzaamheden, zoals grote projecten met meerdere organisaties
 
-![ stromen van verrichting ](assets/streams-of-operationalization.png)
+![&#x200B; stromen van verrichting &#x200B;](assets/streams-of-operationalization.png)
 
 ### Rollen AEM bedrijfsmiddelen op hoog niveau
 
@@ -132,6 +132,6 @@ Hieronder volgen voorbeelden van rollen voor een licht en zwaar clientscenario:
 
 **interne middelen van de Leverage** - de Kaarten kunnen onverwacht komen. U kunt hen kunnen sneller vullen door interne teamleden te betrekken, in tegenstelling tot het zoeken buiten uw organisatie.
 
-Voor een meer diepgaande bespreking van Governance en het Personelen Modellen &amp; Archetypes, luister aan deze één-uurpaneelbespreking: [ De Archetypes van de Rol en het Creëren van een Operationeel Kader voor  [!DNL AEM Assets]  en  [!DNL Sites] ](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
+Voor een meer diepgaande bespreking van Governance en het Personelen Modellen &amp; Archetypes, luister aan deze één-uurpaneelbespreking: [&#x200B; De Archetypes van de Rol en het Creëren van een Operationeel Kader voor  [!DNL AEM Assets]  en  [!DNL Sites] &#x200B;](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
 
-Leer meer over strategie en gedachte leiderschap bij de [ hub van het Succes van de Klant ](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html?lang=nl-NL).
+Leer meer over strategie en gedachte leiderschap bij de [&#x200B; hub van het Succes van de Klant &#x200B;](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html?lang=nl-NL).

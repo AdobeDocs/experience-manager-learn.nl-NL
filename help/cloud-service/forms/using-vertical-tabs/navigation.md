@@ -46,8 +46,8 @@ Het volgende is de regelredacteur voor de Volgende en Vorige knopen
 
 **Volgende Knoop**
 
-![ next-button ](assets/next-button.png)
+![&#x200B; next-button &#x200B;](assets/next-button.png)
 
 **Vorige Knoop**
 
-![ prev-button ](assets/prev-button.png)
+![&#x200B; prev-button &#x200B;](assets/prev-button.png)
