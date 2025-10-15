@@ -207,7 +207,7 @@ De bovenstaande aanpak kan alleen worden gebruikt voor het meten van de migratie
 
 ## Aanvullende bronnen
 
-+ [&#x200B; Uiteinden en Tricks voor het Migreren aan Experience Manager in de Wolk (Top 2022) &#x200B;](https://business.adobe.com/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
++ [&#x200B; Uiteinden en Tricks voor het Migreren aan Experience Manager in de Wolk (Top 2022) &#x200B;](https://business.adobe.com/nl/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
 
 + [&#x200B; CTT de Video van de Reeks van de Deskundige &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.html?lang=nl-NL)
 
