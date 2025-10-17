@@ -24,13 +24,13 @@ AEM as a Cloud Service ondersteunt meerdere verificatieopties en varieert per se
 
 |                       | AEM-auteur | AEM Publiceren |
 |-----------------------|:----------:|:-----------:|
-| [ IMS van Adobe ](../accessing/overview.md) | ✔ | ✔ |
-| [ OpenID verbindt (OIDC) ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier) | ✘ | ✔ |
-| [ SAML 2.0 via Adobe IMS ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#how-to-set-up) | ✔ | ✔ |
-| [ SAML 2.0 ](./saml-2-0.md) | ✘ | ✔ |
-| [ enig-teken (SSO) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
-| [ OAuth ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
-| [ Symbolische authentificatie ](../../headless-tutorial/authentication/overview.md) | ✔ | ✔ |
+| [&#x200B; IMS van Adobe &#x200B;](../accessing/overview.md) | ✔ | ✔ |
+| [&#x200B; OpenID verbindt (OIDC) &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier) | ✘ | ✔ |
+| [&#x200B; SAML 2.0 via Adobe IMS &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#how-to-set-up) | ✔ | ✔ |
+| [&#x200B; SAML 2.0 &#x200B;](./saml-2-0.md) | ✘ | ✔ |
+| [&#x200B; enig-teken (SSO) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
+| [&#x200B; OAuth &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
+| [&#x200B; Symbolische authentificatie &#x200B;](../../headless-tutorial/authentication/overview.md) | ✔ | ✔ |
 | Basisverificatie | ✘ | ✘ |
 
 ## Verificatieopties
