@@ -11,20 +11,20 @@ last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18717
 thumbnail: null
 exl-id: c4fb11b9-b613-4522-b9da-18d7ae0826ec
-source-git-commit: 5b91e7409ff0735bab40d78ad98410ac2ab006ed
+source-git-commit: c367564acb6465d5f203e5db943c5470607b63c9
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
 
 # Personalization - Overzicht
 
-Leer hoe AEM as a Cloud Service (AEMCS) integreert met Adobe Target en Adobe Experience Platform (AEP). Ontdek hoe u persoonlijke ervaringen kunt bieden met behulp van A/B-tests, gebruikers kunt aanwijzen op basis van hun gedrag of inhoud kunt aanpassen met behulp van klantprofielen.
+Leer hoe AEM as a Cloud Service (AEMCS) integreert met Adobe Target en Adobe Experience Platform (AEP) om persoonlijke ervaringen te bieden. Gebruikend de Fragmenten van de Ervaring als gepersonaliseerde inhoud, ontdek hoe te om tests A/B in werking te stellen, doelgebruikers die op gedrag in real time worden gebaseerd, of verpersoonlijk inhoud gebruikend verenigde klantenprofielen die van gegevens over systemen worden gebouwd.
 
 ## Vereisten
 
-Om diverse verpersoonlijkingsscenario&#39;s aan te tonen, gebruikt dit leerprogramma het steekproef [&#x200B; AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd/) project. U hebt de volgende stappen nodig:
+Om diverse verpersoonlijkingsscenario&#39;s aan te tonen, gebruikt dit leerprogramma het steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd/) project. U hebt de volgende stappen nodig:
 
 - Een Adobe org met toegang tot:
    - **milieu van AEM as a Cloud Service** - om inhoud tot stand te brengen en te beheren
@@ -34,18 +34,18 @@ Om diverse verpersoonlijkingsscenario&#39;s aan te tonen, gebruikt dit leerprogr
 
 - Basiskennis van AEM-componenten en Experience Fragments
 
-- Het [&#x200B; AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd/) project dat aan uw milieu van AEM as a Cloud Service wordt opgesteld.
+- Het [ AEM WKND ](https://github.com/adobe/aem-guides-wknd/) project dat aan uw milieu van AEM as a Cloud Service wordt opgesteld.
 
 ## Aan de slag
 
-Voordat u specifieke gebruiksgevallen gaat verkennen, configureert u eerst AEM as a Cloud Service voor personalisatie. Begin door Adobe Target en Markeringen te integreren om cliënt-zijpersonalisatie toe te laten gebruikend het Web SDK van AEP. Met deze basisstappen ondersteunen uw AEM-pagina&#39;s experimenten, doelgroepen en realtime personalisatie.
+Voordat u specifieke gebruiksgevallen gaat verkennen, configureert u eerst AEM as a Cloud Service voor personalisatie. Begin door Adobe Target en Markeringen te integreren om cliënt-zijpersonalisatie toe te laten gebruikend het Web SDK. Met deze basisstappen ondersteunen uw AEM-pagina&#39;s experimenten, doelgroepen en realtime personalisatie.
 
 <!-- CARDS
 {target = _self}
 
 * ./setup/integrate-adobe-target.md
   {title = Integrate Adobe Target}
-  {description = Integrate AEMCS with Adobe Target to activate personalized content as Adobe Target offers.}
+  {description = Integrate AEMCS with Adobe Target to activate personalized content, such as Experience Fragments, as offers.}
   {image = ./assets/setup/integrate-target.png}
   {cta = Integrate Target}
 
@@ -54,6 +54,7 @@ Voordat u specifieke gebruiksgevallen gaat verkennen, configureert u eerst AEM a
   {description = Integrate AEMCS with Tags to inject the Web SDK and custom JavaScript for data collection and personalization.}
   {image = ./assets/setup/integrate-tags.png}
   {cta = Integrate Tags}
+  
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -72,7 +73,7 @@ Voordat u specifieke gebruiksgevallen gaat verkennen, configureert u eerst AEM a
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./setup/integrate-adobe-target.md" target="_self" rel="referrer" title="Adobe Target integreren"> integreer Adobe Target </a>
                     </p>
-                    <p class="is-size-6">Integreer AEMCS met Adobe Target om persoonlijke inhoud te activeren zoals Adobe Target biedt.</p>
+                    <p class="is-size-6">Integreer AEMCS met Adobe Target om gepersonaliseerde inhoud, zoals de Fragmenten van de Ervaring, als aanbiedingen te activeren.</p>
                 </div>
                 <a href="./setup/integrate-adobe-target.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> integreer Doel </span>
@@ -117,7 +118,7 @@ Ontdek de volgende veelvoorkomende gebruiksgevallen voor personalisatie die word
 
 * ./use-cases/experimentation.md
     {title = Experimentation (A/B Testing)}
-    {description = Learn how to test different content variations in AEMCS using Adobe Target for A/B testing.}
+    {description = Learn how to test different content variations on an AEMCS website using Adobe Target for A/B testing.}
     {image = ./assets/use-cases/experiment/experimentation.png}
     {cta = Learn Experimentation}
 
@@ -126,6 +127,12 @@ Ontdek de volgende veelvoorkomende gebruiksgevallen voor personalisatie die word
     {description = Learn how to personalize content based on user behavior using Adobe Experience Platform and Adobe Target.}
     {image = ./assets/use-cases/behavioral-targeting/behavioral-targeting.png}
     {cta = Learn Behavioral Targeting}
+
+* ./use-cases/known-user-personalization.md
+    {title = Known-user personalization}
+    {description = Learn how to personalize content based on known user data by stitching information from multiple systems into a complete customer profile.}
+    {image = ./assets/use-cases/known-user-personalization/known-user-personalization.png}
+    {cta = Learn Known-user personalization}
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -144,7 +151,7 @@ Ontdek de volgende veelvoorkomende gebruiksgevallen voor personalisatie die word
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./use-cases/experimentation.md" target="_self" rel="referrer" title="Experimentatie (A/B-test)"> Experimentatie (het Testen A/B) </a>
                     </p>
-                    <p class="is-size-6">Leer hoe u verschillende inhoudvariaties in AEMCS kunt testen met Adobe Target voor A/B-tests.</p>
+                    <p class="is-size-6">Leer hoe u verschillende inhoudvariaties op een AEMCS-website test met Adobe Target voor A/B-tests.</p>
                 </div>
                 <a href="./use-cases/experimentation.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leer Experimentatie </span>
@@ -171,6 +178,29 @@ Ontdek de volgende veelvoorkomende gebruiksgevallen voor personalisatie die word
                 </div>
                 <a href="./use-cases/behavioral-targeting.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leer Gedrag dat richt </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Known-user personalization">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./use-cases/known-user-personalization.md" title="Verpersoonlijking van bekende gebruikers" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/use-cases/known-user-personalization/known-user-personalization.png" alt="Verpersoonlijking van bekende gebruikers"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./use-cases/known-user-personalization.md" target="_self" rel="referrer" title="Verpersoonlijking van bekende gebruikers"> Bekende-gebruikersverpersoonlijking </a>
+                    </p>
+                    <p class="is-size-6">Leer hoe u inhoud kunt aanpassen op basis van bekende gebruikersgegevens door informatie van meerdere systemen te koppelen aan een volledig klantprofiel.</p>
+                </div>
+                <a href="./use-cases/known-user-personalization.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leer Bekende-gebruikersverpersoonlijking </span>
                 </a>
             </div>
         </div>
