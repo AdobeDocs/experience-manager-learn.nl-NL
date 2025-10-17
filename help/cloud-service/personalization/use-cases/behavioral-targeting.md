@@ -59,7 +59,7 @@ Voordat u verdergaat met de gedrags-gebruikscase, moet u het volgende voltooien:
 - [&#x200B; integreer Adobe Target &#x200B;](../setup/integrate-adobe-target.md): Laat teams toe om gepersonaliseerde inhoud centraal in AEM tot stand te brengen en te beheren en het als aanbiedingen in Adobe Target te activeren.
 - [&#x200B; integreer Markeringen in Adobe Experience Platform &#x200B;](../setup/integrate-adobe-tags.md): Staat teams toe om JavaScript voor verpersoonlijking en gegevensinzameling te beheren en op te stellen zonder het moeten AEM code opnieuw opstellen.
 
-Zijn ook vertrouwd met [&#x200B; de Identiteitsdienst van Adobe Experience Cloud (ECID) &#x200B;](https://experienceleague.adobe.com/en/docs/id-service/using/home) en [&#x200B; Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/landing/home) concepten, zoals Schema, Datastream, Soorten, Identiteiten, en Profielen.
+Zijn ook vertrouwd met [&#x200B; de Identiteitsdienst van Adobe Experience Cloud (ECID) &#x200B;](https://experienceleague.adobe.com/nl/docs/id-service/using/home) en [&#x200B; Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/landing/home) concepten, zoals Schema, Datastream, Soorten, Identiteiten, en Profielen.
 
 Hoewel u eenvoudig publiek kunt maken in Adobe Target, biedt Adobe Experience Platform (AEP) de moderne aanpak voor het maken en beheren van soorten publiek en het samenstellen van complete klantprofielen met behulp van diverse gegevensbronnen, zoals gedrags- en transactiegegevens.
 
@@ -659,9 +659,9 @@ Het eerste publiek gebruikt **Edge** evaluatie voor verpersoonlijking in real ti
 
 ## Aanvullende bronnen
 
-- [&#x200B; SDK van het Web van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
-- [&#x200B; Overzicht van gegevensstromen &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
-- [&#x200B; Visuele Composer van de Ervaring (VEC) &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer)
-- [&#x200B; de segmentatie van Edge &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [&#x200B; types van Publiek &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/overview)
-- [&#x200B; verbinding van Adobe Target &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+- [&#x200B; SDK van het Web van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/home)
+- [&#x200B; Overzicht van gegevensstromen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overview)
+- [&#x200B; Visuele Composer van de Ervaring (VEC) &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/experiences/vec/visual-experience-composer)
+- [&#x200B; de segmentatie van Edge &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [&#x200B; types van Publiek &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/segmentation/types/overview)
+- [&#x200B; verbinding van Adobe Target &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
