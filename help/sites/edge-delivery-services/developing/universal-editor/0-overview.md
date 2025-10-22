@@ -1,6 +1,7 @@
 ---
 title: Zelfstudie voor ontwikkelaars van Edge Delivery Services en Universal Editor
 description: Leer de basisbeginselen van het ontwikkelen van een nieuwe website die in AEM Universal Editor is ontworpen en die met Edge Delivery Services wordt geleverd.
+short-description: Een zelfstudie voor ontwikkelaars voor het bouwen van AEM-websites die krachtige authoring combineren met Universal Editor en snelle weergave met behulp van Edge Delivery Services. Leer hoe u een nieuw project maakt, een lokale ontwikkelomgeving instelt en aangepaste blokken bouwt.
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -10,16 +11,16 @@ doc-type: Catalog
 jira: KT-15832
 duration: 88
 exl-id: aeac08a2-75a0-4adb-b32e-0e7f85e7eb1d
-source-git-commit: f0ad5d66549970337118220156d7a6b0fd30fd57
+source-git-commit: f0b1b906e1ef04b53eca940f191e65d62a2e0bab
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
 
 # Zelfstudie voor ontwikkelaars van Edge Delivery Services en Universal Editor
 
-![&#x200B; Edge Delivery Services en Universele de ontwikkelaarsleerprogramma van de Redacteur &#x200B;](./assets/0-overview/hero.png)
+![ Edge Delivery Services en Universele de ontwikkelaarsleerprogramma van de Redacteur ](./assets/0-overview/hero.png)
 
 In deze zelfstudie leert u de grondbeginselen van het bouwen van een AEM-website die krachtige authoring combineert met Universal Editor en bliksemsnelle levering met Edge Delivery Services. Tegen het eind, zult u basisinzicht in hoe te om een nieuw project tot stand te brengen, opstelling een lokale ontwikkelomgeving, en een nieuw blok bouwen.
 
@@ -100,7 +101,7 @@ Leer hoe u uw lokale ontwikkelomgeving configureert voor een snelle ontwikkeling
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./3-local-development-environment.md" title="Een lokale ontwikkelomgeving instellen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443984/?format=jpeg&nocache=1753811862249&captions=dut" alt="Een lokale ontwikkelomgeving instellen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443978/?format=jpeg&nocache=1753811862249" alt="Een lokale ontwikkelomgeving instellen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
