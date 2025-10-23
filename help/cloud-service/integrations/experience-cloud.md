@@ -28,21 +28,21 @@ Klik op het Experience Cloud-product voor documentatie over het configureren en 
 
 |                                                                   | AEM Sites | AEM Assets | AEM Forms |
 |-------------------------------------------------------------------|:---------:|:----------:|:---------:|
-| [ Acrobat Sign ](#adobe-acrobat-sign) |           |            | ✔ |
+| [&#x200B; Acrobat Sign &#x200B;](#adobe-acrobat-sign) |           |            | ✔ |
 | Advertising |           |            |          |
-| [ Analytics ](#adobe-analytics) | ✔ | ✔ | ✔ |
+| [&#x200B; Analytics &#x200B;](#adobe-analytics) | ✔ | ✔ | ✔ |
 | Audience Manager |           |            |          |
 | Campaign Classic |           |            |          |
 | Campaign Standard |           |            |          |
-| [ Commerce ](#adobe-commerce) | ✔ | ✔ |          |
+| [&#x200B; Commerce &#x200B;](#adobe-commerce) | ✔ | ✔ |          |
 | Customer Journey Analytics |           |            |          |
-| [ de markeringen van Experience Platform ](#adobe-experience-platform-tags) | ✔ |            | ✔ |
-| [ Journey Optimizer ](#adobe-journey-optimizer) |           | ✔ |          |
-| [ Learning Manager ](#adobe-learning-manager) | ✔ |            |          |
+| [&#x200B; de markeringen van Experience Platform &#x200B;](#adobe-experience-platform-tags) | ✔ |            | ✔ |
+| [&#x200B; Journey Optimizer &#x200B;](#adobe-journey-optimizer) |           | ✔ |          |
+| [&#x200B; Learning Manager &#x200B;](#adobe-learning-manager) | ✔ |            |          |
 | Marketo Engage |           |            |          |
 | Real-time CDP |           |            |          |
-| [ Doel ](#adobe-target) | ✔ |            |          |
-| [ Workfront ](#adobe-workfront) |           | ✔ |          |
+| [&#x200B; Doel &#x200B;](#adobe-target) | ✔ |            |          |
+| [&#x200B; Workfront &#x200B;](#adobe-workfront) |           | ✔ |          |
 
 
 ## Adobe Acrobat Sign
@@ -51,8 +51,8 @@ Adobe Acrobat Sign (voorheen Acrobat Sign) maakt workflows voor e-handtekeningen
 
 ### AEM Forms
 
-+ [ vorm de integratie van Adobe Acrobat Sign ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adobe-sign-integration-adaptive-forms.html)
-+ [ AEM Forms en de zelfstudie van Adobe Acrobat Sign ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/forms-and-sign/introduction.html)
++ [&#x200B; vorm de integratie van Adobe Acrobat Sign &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adobe-sign-integration-adaptive-forms.html)
++ [&#x200B; AEM Forms en de zelfstudie van Adobe Acrobat Sign &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/forms-and-sign/introduction.html)
 
 ## Adobe Analytics
 
@@ -60,30 +60,30 @@ Dankzij de Adobe Analytics-integratie met AEM as a Cloud Service kunt u de activ
 
 ### AEM Sites
 
-+ [ vorm de integratie van Adobe Analytics ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-analytics.html)
-+ [ AEM Sites en het leerprogramma van Analytics ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/analytics/collect-data-analytics.html)
++ [&#x200B; vorm de integratie van Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-analytics.html)
++ [&#x200B; AEM Sites en het leerprogramma van Analytics &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/analytics/collect-data-analytics.html)
 + Adobe Client Data Layer (ACDL)
 
-   + [ breid ACDL in de Componenten van de Kern van AEM WCM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html) uit
-   + [ integreer ACDL met de Componenten van de Kern van AEM WCM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html)
-   + [ gebeurtenis-gedreven gegevens behandeling met ACDL ](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/adobe-client-data-layer.html)
-   + [ het leerprogramma van de Gegevens van de Cliënt van Adobe Laag (ACDL) ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
+   + [&#x200B; breid ACDL in de Componenten van de Kern van AEM WCM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html) uit
+   + [&#x200B; integreer ACDL met de Componenten van de Kern van AEM WCM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html)
+   + [&#x200B; gebeurtenis-gedreven gegevens behandeling met ACDL &#x200B;](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/adobe-client-data-layer.html)
+   + [&#x200B; het leerprogramma van de Gegevens van de Cliënt van Adobe Laag (ACDL) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
 
 ### AEM Assets
 
-+ [ overzicht van de Inzichten van Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html)
-+ [ vorm de Inzichten van Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html#configure-asset-insights)
-+ [ Assets Insights zelfstudie ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)
++ [&#x200B; overzicht van de Inzichten van Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html)
++ [&#x200B; vorm de Inzichten van Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html#configure-asset-insights)
++ [&#x200B; Assets Insights zelfstudie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)
 
 ### AEM Forms
 
-+ [ vorm de integratie van Adobe Analytics ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate-aem-forms-with-adobe-analytics.html)
++ [&#x200B; vorm de integratie van Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate-aem-forms-with-adobe-analytics.html)
 
 ### AEM Sites
 
-+ [ Integrerend met Adobe Campaign Classic ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-campaign-classic.html#configure-user)
-+ [ Creërend een Bulletin van Adobe Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/creating-newsletter.html)
-+ [ de documentatie van de Componenten van de Kern van AEM E-mailCore ](https://github.com/adobe/aem-core-email-components#aem-email-core-components)
++ [&#x200B; Integrerend met Adobe Campaign Classic &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-campaign-classic.html#configure-user)
++ [&#x200B; Creërend een Bulletin van Adobe Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/creating-newsletter.html)
++ [&#x200B; de documentatie van de Componenten van de Kern van AEM E-mailCore &#x200B;](https://github.com/adobe/aem-core-email-components#aem-email-core-components)
 
 ## Adobe Commerce
 
@@ -91,22 +91,22 @@ Dankzij de Adobe Commerce-integratie met AEM as a Cloud Service kunnen merken sn
 
 ### AEM Sites
 
-+ [ de Inhoud van AEM en de gebruikersgids van Commerce ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)
++ [&#x200B; de Inhoud van AEM en de gebruikersgids van Commerce &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)
 
 
 ## Tags in Adobe Experience Platform
 
-De markeringen in Adobe Experience Platform integreren naadloos met AEM, die een eenvoudige manier verstrekken om [ analyses ](#adobe-analytics) op te stellen en te beheren, [ richtend ](#adobe-target), marketing, en reclame markeringen noodzakelijk voor het in dienst nemen van klantenervaringen.
+De markeringen in Adobe Experience Platform integreren naadloos met AEM, die een eenvoudige manier verstrekken om [&#x200B; analyses &#x200B;](#adobe-analytics) op te stellen en te beheren, [&#x200B; richtend &#x200B;](#adobe-target), marketing, en reclame markeringen noodzakelijk voor het in dienst nemen van klantenervaringen.
 
 ### AEM Sites
 
-+ [ de markeringen van Experience Platform gebruikersgids ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [ de markeringsleerprogramma van Experience Platform ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
++ [&#x200B; de markeringen van Experience Platform gebruikersgids &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
++ [&#x200B; de markeringsleerprogramma van Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
 
 ### AEM Forms
 
-+ [ de markeringen van Experience Platform gebruikersgids ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [ de markeringsleerprogramma van Experience Platform ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
++ [&#x200B; de markeringen van Experience Platform gebruikersgids &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
++ [&#x200B; de markeringsleerprogramma van Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
 
 ## Adobe Journey Optimizer
 
@@ -114,7 +114,7 @@ Met Adobe Journey Optimizer kunt u omnichannel-campagnes en een-op-een-momenten 
 
 ### AEM Assets
 
-+ [ integreer de Hoofdzaak van AEM Assets met Adobe Journey Optimizer ](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html)
++ [&#x200B; integreer de Hoofdzaak van AEM Assets met Adobe Journey Optimizer &#x200B;](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html)
 
 ## Adobe Learning Manager
 
@@ -122,23 +122,23 @@ Adobe Learning Manager (voorheen Adobe Captivate Prime) biedt gepersonaliseerde 
 
 ### AEM Sites
 
-+ [ integreer AEM Sites met Adobe Learning Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-learning-manager.html)
++ [&#x200B; integreer AEM Sites met Adobe Learning Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-learning-manager.html)
 
 ### AEM Sites
 
-+ [ vat tekst in Inhoudsfragmenten ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#summarizing-text) samen
++ [&#x200B; vat tekst in Inhoudsfragmenten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#summarizing-text) samen
 
 ### AEM Assets
 
-+ [ Slimme markeringen voor beelden ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
-+ [ Slimme markeringen van de Douane voor beelden ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/custom-smart-tags.html)
-+ [ Slimme markeringen voor video&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/video-smart-tags.html)
-+ [ Slim gewas ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
-+ [ Visueel onderzoek ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search.html)
++ [&#x200B; Slimme markeringen voor beelden &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
++ [&#x200B; Slimme markeringen van de Douane voor beelden &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/custom-smart-tags.html)
++ [&#x200B; Slimme markeringen voor video&#39;s &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/video-smart-tags.html)
++ [&#x200B; Slim gewas &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
++ [&#x200B; Visueel onderzoek &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search.html)
 
 ### AEM Forms
 
-+ [ Geautomatiseerde Dienst van de Omzetting van Vormen ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
++ [&#x200B; Geautomatiseerde Dienst van de Omzetting van Vormen &#x200B;](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
 
 
 ## Adobe Target
@@ -147,16 +147,16 @@ Adobe Target integreert met AEM as a Cloud Service om geoptimaliseerde webervari
 
 ### AEM Sites
 
-+ [ vorm de integratie van Adobe Target ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-target)
++ [&#x200B; vorm de integratie van Adobe Target &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-target)
 
-+[ Gevallen van het Gebruik van Personalization ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
++[&#x200B; Gevallen van het Gebruik van Personalization &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
 
 + Ervaar doelfragmenten
 
-   + [ publiceer de Fragmenten van de Ervaring aan Doel ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
-   + [ publiceer de Fragmenten van de Ervaring als JSON aan Doel ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
+   + [&#x200B; publiceer de Fragmenten van de Ervaring aan Doel &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
+   + [&#x200B; publiceer de Fragmenten van de Ervaring als JSON aan Doel &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
 
-+ [ de Hub van de Context van AEM van het Gebruik met Doel ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/audiences.html#creating-an-adobe-target-audience-using-the-audience-console)
++ [&#x200B; de Hub van de Context van AEM van het Gebruik met Doel &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/audiences.html#creating-an-adobe-target-audience-using-the-audience-console)
 
 ## Adobe Workfront
 
@@ -164,9 +164,9 @@ Adobe Workfront-integratie met AEM als Cloud Service stroomlijnt het proces van 
 
 ### AEM Assets
 
-+ [ vorm de verbeterde schakelaar van Workfront ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html)
-+ [ Workfront verbeterde schakelaarvideo&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html)
++ [&#x200B; vorm de verbeterde schakelaar van Workfront &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html)
++ [&#x200B; Workfront verbeterde schakelaarvideo&#39;s &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html)
 + AEM Assets Essentials
 
-   + [ Adobe Workfront voor de gebruikersgids van de Hoofdzaak van Activa ](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2F_workfront-for-aem-asset-essentials.htm)
-   + [ de video&#39;s van de Hoofdzaak van Adobe Workfront en van Middelen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html)
+   + [&#x200B; Adobe Workfront voor de gebruikersgids van de Hoofdzaak van Activa &#x200B;](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2F_workfront-for-aem-asset-essentials.htm)
+   + [&#x200B; de video&#39;s van de Hoofdzaak van Adobe Workfront en van Middelen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html)
