@@ -33,7 +33,7 @@ Uw organisatie kan verschillende gebruiksgevallen voor bekende-gebruikersverpers
 
 ## Voorbeeld van gebruik
 
->[!VIDEO](https://video.tv.adobe.com/v/3476105/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476115/?captions=dut&learn=on&enablevpops)
 
 In dit leerprogramma, dat de [&#x200B; plaats van steekproefWKND &#x200B;](https://github.com/adobe/aem-guides-wknd) gebruikt, toont het proces aan hoe **het programma opende gebruikers** die om het even welk **Ski** avontuur hebben gekocht een gepersonaliseerde held op de **WKND homepage** zien.
 
