@@ -131,7 +131,7 @@ Een videolooppas-door van het installeren van en het gebruiken van [!DNL Apache 
 
    >[!TIP]
    >
-   > Als u de `*` volgende regel in de algemene regel `*.nocache.html*` hierboven weglaat, kan dit resulteren in [&#x200B; problemen in verzoeken om subresources &#x200B;](https://github.com/AdobeDocs/experience-manager-learn.en/issues/16) .
+   > Als u de `*` volgende regel in de algemene regel `*.nocache.html*` hierboven weglaat, kan dit resulteren in [&#x200B; problemen in verzoeken om subresources &#x200B;](https://github.com/AdobeDocs/experience-manager-learn.nl-NL/issues/16) .
 
    ```shell
    /cache {
