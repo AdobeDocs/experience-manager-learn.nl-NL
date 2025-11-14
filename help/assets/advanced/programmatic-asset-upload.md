@@ -50,7 +50,7 @@ De [&#x200B; aem-upload &#x200B;](https://github.com/adobe/aem-upload) Node.js b
 
 >[!CAUTION]
 >
->Er is GEEN equivalent van [&#x200B; a-upload &#x200B;](https://github.com/adobe/aem-upload) bibliotheek in Java. De cliënttoepassing moet in Node.js worden geschreven om de _directe binaire upload_ benadering te gebruiken. Voor extra informatie, zie [&#x200B; Experience Manager Assets APIs en verrichtingenpagina &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#use-cases-and-apis).
+>Er is GEEN equivalent van [&#x200B; a-upload &#x200B;](https://github.com/adobe/aem-upload) bibliotheek in Java. De cliënttoepassing moet in Node.js worden geschreven om de _directe binaire upload_ benadering te gebruiken. Voor extra informatie, zie [&#x200B; Experience Manager Assets APIs en verrichtingenpagina &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#use-cases-and-apis).
 
 ## Voorbeeldtoepassing
 
@@ -97,7 +97,7 @@ Alvorens de steekproeftoepassing in werking te stellen, moet u het met noodzakel
 
 Er zijn _veelvoudige authentificatiemethodes_ die door [&#x200B; worden gesteund aem-upload &#x200B;](https://github.com/adobe/aem-upload) Node.js bibliotheek. De volgende lijst vat de gesteunde _authentificatiemethodes_ en hun doel samen.
 
-| | Basisverificatie | [&#x200B; Lokale ontwikkelingstoken &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token) | [&#x200B; geloofsbrieven van de Dienst &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) | [&#x200B; OAuth S2S &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) | [&#x200B; OAuth Web App &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential) | [&#x200B; OAuth SPA &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential) |
+| | Basisverificatie | [&#x200B; Lokale ontwikkelingstoken &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token) | [&#x200B; geloofsbrieven van de Dienst &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) | [&#x200B; OAuth S2S &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) | [&#x200B; OAuth Web App &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential) | [&#x200B; OAuth SPA &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential) |
 |---|---|---|---|---|---|---|
 | Wordt ondersteund? | &check; | &check; | &check; | &cross; | &cross; | &cross; |
 | Doel | Lokale ontwikkeling | Lokale ontwikkeling | Productie | NVT | NVT | NVT |
@@ -176,7 +176,7 @@ Om de de dienstgeloofsbrieven te krijgen, moet u **AEM** Developer Console gebru
 
 1. Werk de omgevingsvariabele `AEM_SERVICE_CREDENTIALS_FILE` bij met het pad naar het bestand service-credentials.json.
 
-1. Zorg ervoor dat de gebruiker van de de dienstreferentie de noodzakelijke toestemmingen heeft om activa aan het milieu van AEM as a Cloud Service te uploaden. Voor meer informatie, zie [&#x200B; toegang in AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials#configure-access-in-aem) pagina vormen.
+1. Zorg ervoor dat de gebruiker van de de dienstreferentie de noodzakelijke toestemmingen heeft om activa aan het milieu van AEM as a Cloud Service te uploaden. Voor meer informatie, zie [&#x200B; toegang in AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials#configure-access-in-aem) pagina vormen.
 
 >[!ENDTABS]
 
