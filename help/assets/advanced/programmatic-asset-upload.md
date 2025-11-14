@@ -20,14 +20,14 @@ ht-degree: 0%
 
 # Programmatische middelen uploaden naar AEM as a Cloud Service
 
-Leer hoe te om activa aan het milieu van AEM as a Cloud Service te uploaden gebruikend de cliënttoepassing die [ aem-upload ](https://github.com/adobe/aem-upload) Node.js bibliotheek gebruikt.
+Leer hoe te om activa aan het milieu van AEM as a Cloud Service te uploaden gebruikend de cliënttoepassing die [&#x200B; aem-upload &#x200B;](https://github.com/adobe/aem-upload) Node.js bibliotheek gebruikt.
 
 ## Wat u leert
 
 In deze zelfstudie leert u:
 
-+ Hoe te om de _directe binaire upload_ benadering te gebruiken om activa aan het milieu van AEM as a Cloud Service (RDE, Dev, Stadium, Prod) te uploaden gebruikend [ aem-upload ](https://github.com/adobe/aem-upload) Node.js bibliotheek.
-+ Hoe te om te vormen en in werking te stellen [ aem-activa-upload-steekproef ](./assets/programmatic-asset-upload/aem-asset-upload-sample.zip) toepassing om activa aan het milieu van AEM as a Cloud Service te uploaden.
++ Hoe te om de _directe binaire upload_ benadering te gebruiken om activa aan het milieu van AEM as a Cloud Service (RDE, Dev, Stadium, Prod) te uploaden gebruikend [&#x200B; aem-upload &#x200B;](https://github.com/adobe/aem-upload) Node.js bibliotheek.
++ Hoe te om te vormen en in werking te stellen [&#x200B; aem-activa-upload-steekproef &#x200B;](./assets/programmatic-asset-upload/aem-asset-upload-sample.zip) toepassing om activa aan het milieu van AEM as a Cloud Service te uploaden.
 + Controleer de code van de voorbeeldtoepassing en begrijp de implementatiedetails.
 + Begrijp de beste praktijken voor programmatic activa uploadt aan het milieu van AEM as a Cloud Service.
 
@@ -39,22 +39,22 @@ Voordat u de voorbeeldtoepassing uitvoert, moeten we de directe binaire uploadfl
 
 In directe binaire uploadflow worden de binaire gegevens rechtstreeks geüpload naar cloudopslag met vooraf ondertekende URL&#39;s. De AEM as a Cloud Service is verantwoordelijk voor lichte verwerking, zoals het genereren van de vooraf ondertekende URL&#39;s en het op de hoogte brengen van de voltooiing van het uploaden aan AEM Asset Compute Service. Het volgende logische stroomdiagram illustreert de directe binaire upload stroom.
 
-![ Directe binaire upload stroom ](./assets/programmatic-asset-upload/direct-binary-asset-upload-flow.png)
+![&#x200B; Directe binaire upload stroom &#x200B;](./assets/programmatic-asset-upload/direct-binary-asset-upload-flow.png)
 
 ### De Aem-upload bibliotheek
 
-De [ aem-upload ](https://github.com/adobe/aem-upload) Node.js bibliotheek abstracts de implementatiedetails van _directe binaire upload_ benadering. Het verstrekt twee klassen om het uploadproces te ordenen:
+De [&#x200B; aem-upload &#x200B;](https://github.com/adobe/aem-upload) Node.js bibliotheek abstracts de implementatiedetails van _directe binaire upload_ benadering. Het verstrekt twee klassen om het uploadproces te ordenen:
 
 + **FileSystemUpload** - gebruik het wanneer het uploaden van dossiers van het lokale dossiersysteem, met inbegrip van steun voor folderstructuren
 + **DirectBinaryUpload** - gebruik het voor meer fijnkorrelige controle over het binaire uploadproces, zoals het uploaden van stromen of buffers
 
 >[!CAUTION]
 >
->Er is GEEN equivalent van [ a-upload ](https://github.com/adobe/aem-upload) bibliotheek in Java. De cliënttoepassing moet in Node.js worden geschreven om de _directe binaire upload_ benadering te gebruiken. Voor extra informatie, zie [ Experience Manager Assets APIs en verrichtingenpagina ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#use-cases-and-apis).
+>Er is GEEN equivalent van [&#x200B; a-upload &#x200B;](https://github.com/adobe/aem-upload) bibliotheek in Java. De cliënttoepassing moet in Node.js worden geschreven om de _directe binaire upload_ benadering te gebruiken. Voor extra informatie, zie [&#x200B; Experience Manager Assets APIs en verrichtingenpagina &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#use-cases-and-apis).
 
 ## Voorbeeldtoepassing
 
-Gebruik [ a-element-activa-upload-steekproef ](./assets/programmatic-asset-upload/aem-asset-upload-sample.zip) toepassing om het programmatic proces van de activaupload te leren. De steekproeftoepassing toont het gebruik van zowel `FileSystemUpload` als `DirectBinaryUpload` klassen van [ aan a-upload ](https://github.com/adobe/aem-upload) bibliotheek.
+Gebruik [&#x200B; a-element-activa-upload-steekproef &#x200B;](./assets/programmatic-asset-upload/aem-asset-upload-sample.zip) toepassing om het programmatic proces van de activaupload te leren. De steekproeftoepassing toont het gebruik van zowel `FileSystemUpload` als `DirectBinaryUpload` klassen van [&#x200B; aan a-upload &#x200B;](https://github.com/adobe/aem-upload) bibliotheek.
 
 ### Vereisten
 
@@ -70,7 +70,7 @@ Controleer voordat u de voorbeeldtoepassing uitvoert of aan de volgende voorwaar
 
 ### Download de voorbeeldtoepassing
 
-1. Download het [ aem-activa-upload-steekproef ](./assets/programmatic-asset-upload/aem-asset-upload-sample.zip) dossier van toepassingsZIP en haal het uit.
+1. Download het [&#x200B; aem-activa-upload-steekproef &#x200B;](./assets/programmatic-asset-upload/aem-asset-upload-sample.zip) dossier van toepassingsZIP en haal het uit.
 
    ```bash
    $ unzip aem-asset-upload-sample.zip
@@ -89,17 +89,17 @@ Controleer voordat u de voorbeeldtoepassing uitvoert of aan de volgende voorwaar
    $ npm install
    ```
 
-   ![ toepassing van de Steekproef ](./assets/programmatic-asset-upload/install-dependencies.png)
+   ![&#x200B; toepassing van de Steekproef &#x200B;](./assets/programmatic-asset-upload/install-dependencies.png)
 
 ### De voorbeeldtoepassing configureren
 
 Alvorens de steekproeftoepassing in werking te stellen, moet u het met noodzakelijke het omgevingsdetails van AEM as a Cloud Service zoals de Auteur URL van AEM, _authentificatiemethode_ en de weg van de activaomslag vormen.
 
-Er zijn _veelvoudige authentificatiemethodes_ die door [ worden gesteund aem-upload ](https://github.com/adobe/aem-upload) Node.js bibliotheek. De volgende lijst vat de gesteunde _authentificatiemethodes_ en hun doel samen.
+Er zijn _veelvoudige authentificatiemethodes_ die door [&#x200B; worden gesteund aem-upload &#x200B;](https://github.com/adobe/aem-upload) Node.js bibliotheek. De volgende lijst vat de gesteunde _authentificatiemethodes_ en hun doel samen.
 
-| | Basisverificatie | [ Lokale ontwikkelingstoken ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token) | [ geloofsbrieven van de Dienst ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) | [ OAuth S2S ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) | [ OAuth Web App ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential) | [ OAuth SPA ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential) |
+| | Basisverificatie | [&#x200B; Lokale ontwikkelingstoken &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token) | [&#x200B; geloofsbrieven van de Dienst &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) | [&#x200B; OAuth S2S &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) | [&#x200B; OAuth Web App &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential) | [&#x200B; OAuth SPA &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential) |
 |---|---|---|---|---|---|---|
-| Wordt ondersteund? | &amp;check; | &amp;check; | &amp;check; | &amp;cross; | &amp;cross; | &amp;cross; |
+| Wordt ondersteund? | &check; | &check; | &check; | &cross; | &cross; | &cross; |
 | Doel | Lokale ontwikkeling | Lokale ontwikkeling | Productie | NVT | NVT | NVT |
 
 Voer de volgende stappen uit om de voorbeeldtoepassing te configureren:
@@ -124,15 +124,15 @@ Om basisauthentificatie te gebruiken, moet u een gebruiker in het milieu van AEM
 
 1. Navigeer aan de **Hulpmiddelen** > **Veiligheid** > **Gebruikers** en klik **creeer** knoop.
 
-   ![ creeer gebruiker ](./assets/programmatic-asset-upload/create-user.png)
+   ![&#x200B; creeer gebruiker &#x200B;](./assets/programmatic-asset-upload/create-user.png)
 
 1. Voer de gebruikersgegevens in
 
-   ![ de details van de Gebruiker ](./assets/programmatic-asset-upload/user-details.png)
+   ![&#x200B; de details van de Gebruiker &#x200B;](./assets/programmatic-asset-upload/user-details.png)
 
 1. In het **lusje van Groepen**, voeg de **DAM Gebruikers** groep toe. Klik **sparen en sluit** knoop.
 
-   ![ voeg de Groep van Gebruikers DAM ](./assets/programmatic-asset-upload/add-dam-users-group.png) toe
+   ![&#x200B; voeg de Groep van Gebruikers DAM &#x200B;](./assets/programmatic-asset-upload/add-dam-users-group.png) toe
 
 1. Werk de omgevingsvariabelen `AEM_USERNAME` en `AEM_PASSWORD` bij met de gebruikersnaam en het wachtwoord van de gemaakte gebruiker.
 
@@ -140,7 +140,7 @@ Om basisauthentificatie te gebruiken, moet u een gebruiker in het milieu van AEM
 
 Om het lokale ontwikkelingstoken te krijgen, moet u **AEM** Developer Console gebruiken. Het gegenereerde token is van het type JSON Web Token (JWT).
 
-1. Login aan [ Adobe Cloud Manager ](https://experience.adobe.com/#/@aem/cloud-manager) en navigeer aan de gewenste **Milieu** detailspagina. Klik **&quot;...&quot;** en selecteer **Developer Console**.
+1. Login aan [&#x200B; Adobe Cloud Manager &#x200B;](https://experience.adobe.com/#/@aem/cloud-manager) en navigeer aan de gewenste **Milieu** detailspagina. Klik **&quot;...&quot;** en selecteer **Developer Console**.
 
    ![Developer Console](./assets/programmatic-asset-upload/developer-console.png)
 
@@ -148,7 +148,7 @@ Om het lokale ontwikkelingstoken te krijgen, moet u **AEM** Developer Console ge
 
 1. Van de **sectie van Hulpmiddelen**, uitgezochte **Integraties** en klik **krijgen lokale symbolische** knoop.
 
-   ![ krijg lokaal teken ](./assets/programmatic-asset-upload/get-local-token.png)
+   ![&#x200B; krijg lokaal teken &#x200B;](./assets/programmatic-asset-upload/get-local-token.png)
 
 1. Kopieer de tokenwaarde en werk de omgevingsvariabele `AEM_BEARER_TOKEN` bij met de tokenwaarde.
 
@@ -156,9 +156,9 @@ Het token voor lokale ontwikkeling is 24 uur geldig en wordt uitgegeven door de 
 
 >[!TAB  geloofsbrieven van de Dienst ]
 
-Om de de dienstgeloofsbrieven te krijgen, moet u **AEM** Developer Console gebruiken. Het wordt gebruikt om het teken van het Symbolische (JWT) type van het Web te produceren JSON gebruikend de [ jwt-auth ](https://www.npmjs.com/package/@adobe/jwt-auth) npm module.
+Om de de dienstgeloofsbrieven te krijgen, moet u **AEM** Developer Console gebruiken. Het wordt gebruikt om het teken van het Symbolische (JWT) type van het Web te produceren JSON gebruikend de [&#x200B; jwt-auth &#x200B;](https://www.npmjs.com/package/@adobe/jwt-auth) npm module.
 
-1. Login aan [ Adobe Cloud Manager ](https://experience.adobe.com/#/@aem/cloud-manager) en navigeer aan de gewenste **Milieu** detailspagina. Klik **&quot;...&quot;** en selecteer **Developer Console**.
+1. Login aan [&#x200B; Adobe Cloud Manager &#x200B;](https://experience.adobe.com/#/@aem/cloud-manager) en navigeer aan de gewenste **Milieu** detailspagina. Klik **&quot;...&quot;** en selecteer **Developer Console**.
 
    ![Developer Console](./assets/programmatic-asset-upload/developer-console.png)
 
@@ -166,17 +166,17 @@ Om de de dienstgeloofsbrieven te krijgen, moet u **AEM** Developer Console gebru
 
 1. Van de **sectie van Hulpmiddelen**, uitgezochte **Integraties** en klik **creëren nieuwe technische rekening** knoop.
 
-   ![ krijgt de dienstgeloofsbrieven ](./assets/programmatic-asset-upload/get-service-credentials.png)
+   ![&#x200B; krijgt de dienstgeloofsbrieven &#x200B;](./assets/programmatic-asset-upload/get-service-credentials.png)
 
 1. Klik de **optie van de Mening** om de de dienstgeloofsbrieven JSON te kopiëren.
 
-   ![ geloofsbrieven van de Dienst ](./assets/programmatic-asset-upload/service-credentials.png)
+   ![&#x200B; geloofsbrieven van de Dienst &#x200B;](./assets/programmatic-asset-upload/service-credentials.png)
 
 1. Maak een `service-credentials.json` -bestand in de hoofdmap van de voorbeeldtoepassing en plak de JSON-servicereferenties in het bestand.
 
 1. Werk de omgevingsvariabele `AEM_SERVICE_CREDENTIALS_FILE` bij met het pad naar het bestand service-credentials.json.
 
-1. Zorg ervoor dat de gebruiker van de de dienstreferentie de noodzakelijke toestemmingen heeft om activa aan het milieu van AEM as a Cloud Service te uploaden. Voor meer informatie, zie [ toegang in AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials#configure-access-in-aem) pagina vormen.
+1. Zorg ervoor dat de gebruiker van de de dienstreferentie de noodzakelijke toestemmingen heeft om activa aan het milieu van AEM as a Cloud Service te uploaden. Voor meer informatie, zie [&#x200B; toegang in AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials#configure-access-in-aem) pagina vormen.
 
 >[!ENDTABS]
 
@@ -224,7 +224,7 @@ DEBUG=false
 In de voorbeeldtoepassing worden drie verschillende manieren getoond om voorbeeldbestanden te uploaden naar de AEM as a Cloud Service-omgeving.
 
 1. **FileSystemUpload** - upload dossiers van een lokaal dossiersysteem met de steun van de folderstructuur en auto-omslagverwezenlijking
-1. **DirectBinaryUpload** - uploadt a [ ver dossier ](https://placehold.co/600x400/red/white?text=Adobe+Experience+Manager+Assets). Het binaire bestand wordt gebufferd in het geheugen voordat het bestand naar de AEM as a Cloud Service-omgeving wordt geüpload.
+1. **DirectBinaryUpload** - uploadt a [&#x200B; ver dossier &#x200B;](https://placehold.co/600x400/red/white?text=Adobe+Experience+Manager+Assets). Het binaire bestand wordt gebufferd in het geheugen voordat het bestand naar de AEM as a Cloud Service-omgeving wordt geüpload.
 1. **Geüpload de Partij** - uploadt veelvoudige dossiers van een lokaal dossiersysteem in partijen met automatische retry logica en foutenterugwinning. Achter de schermen wordt de klasse `FileSystemUpload` gebruikt om bestanden van het lokale bestandssysteem te uploaden.
 
 Te uploaden elementen bevinden zich in de map `sample-assets` en bevatten `img` , `video` en `doc` submappen die elk een paar voorbeeldelementen bevatten.
@@ -235,7 +235,7 @@ Te uploaden elementen bevinden zich in de map `sample-assets` en bevatten `img` 
 $ npm start
 ```
 
-1. Ga het gewenste optiesaantal _van de volgende keuzen in 0}:_
+1. Ga het gewenste optiesaantal _van de volgende keuzen in 0&rbrace;:_
 
 ```
 ╔════════════════════════════════════════════════════════════╗
@@ -274,7 +274,7 @@ All files uploaded successfully!
 
 1. Assets geüpload met de optie `FileSystemUpload` in de AEM as a Cloud Service-omgeving:
 
-   ![ Geüploade activa in het milieu van AEM as a Cloud Service gebruikend klasse FileSystemUpload ](./assets/programmatic-asset-upload/uploaded-assets-aem-file-system-upload.png)
+   ![&#x200B; Geüploade activa in het milieu van AEM as a Cloud Service gebruikend klasse FileSystemUpload &#x200B;](./assets/programmatic-asset-upload/uploaded-assets-aem-file-system-upload.png)
 
 >[!TAB  DirectBinaryUpload ]
 
@@ -298,7 +298,7 @@ All files uploaded successfully!
 
 1. Assets geüpload met de optie `DirectBinaryUpload` in de AEM as a Cloud Service-omgeving:
 
-![ Geüploade activa in het milieu van AEM as a Cloud Service gebruikend klasse DirectBinaryUpload ](./assets/programmatic-asset-upload/uploaded-assets-aem-direct-binary-upload.png)
+![&#x200B; Geüploade activa in het milieu van AEM as a Cloud Service gebruikend klasse DirectBinaryUpload &#x200B;](./assets/programmatic-asset-upload/uploaded-assets-aem-direct-binary-upload.png)
 
 >[!TAB  Partij uploaden ]
 
@@ -326,7 +326,7 @@ All files uploaded successfully!
 
 1. Assets geüpload met de optie `Batch Upload` in de AEM as a Cloud Service-omgeving:
 
-![ Geüploade activa in het milieu van AEM as a Cloud Service die klasse BatchUpload gebruiken ](./assets/programmatic-asset-upload/uploaded-assets-aem-batch-upload.png)
+![&#x200B; Geüploade activa in het milieu van AEM as a Cloud Service die klasse BatchUpload gebruiken &#x200B;](./assets/programmatic-asset-upload/uploaded-assets-aem-batch-upload.png)
 
 >[!ENDTABS]
 
