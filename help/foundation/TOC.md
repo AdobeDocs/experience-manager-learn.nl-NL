@@ -7,7 +7,7 @@ index: y
 source-git-commit: bc2f4655631f28323a39ed5b4c7878613296a0ba
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 11%
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 11%
 # AEM Foundation-video&#39;s en -tutorials {#foundation}
 
 + [Overzicht](./overview.md)
-+ Beheer {#administration}
++ Administratie {#administration}
    + [Redenen begrijpen voor upgrade van AEM](./administration/understand-reasons-to-upgrade.md)
    + [Gebruik oak-run.jar om indexen te beheren](./administration/use-oak-run-jar-to-manage-indexes.md)
    + [Onlinerevisie opschonen gebruiken](./administration/use-online-revision-clean-up.md)
@@ -28,7 +28,7 @@ ht-degree: 11%
    + [Verificatie](authentication/authentication-support-article-understand.md)
    + [IMS-verificatie begrijpen op AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
    + [JWT-To-OAuth-referentie-migratie](authentication/jwt-to-oauth-migration.md)
-+ Adobe Cloud Manager {#cloud-manager}
++ Adobe Cloud Manager{#cloud-manager}
    + [Adobe Cloud Manager begrijpen](./cloud-manager/understand-cloud-manager-for-aem.md)
    + [CI/CD-pijpleidingen](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
    + [Aangepaste machtigingen](./cloud-manager/cloud-permissions.md)
@@ -51,7 +51,7 @@ ht-degree: 11%
    + [ModSecurity CRS DoS-beveiliging tegen aanvallen](./security/modsecurity-crs-dos-attack-protection.md)
    + [HTTPS-verbindingen met API&#39;s met persoonlijke certificaten](./security/call-internal-apis-having-private-certificate.md)
    + [Mutual TLS (mTLS) Authentication from AEM](./security/mutual-tls-authentication.md)
-   + [&#x200B; JWT-aan-OAuth credential migratie](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/authentication/jwt-to-oauth-migration){target=_blank}
+   + [ JWT-aan-OAuth credential migratie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/authentication/jwt-to-oauth-migration){target=_blank}
 + Workflow {#workflow}
    + [De Workfloweditor gebruiken](./workflow/use-the-workflow-editor.md)
    + [Workflow gebruiken](./workflow/use-workflow.md)
