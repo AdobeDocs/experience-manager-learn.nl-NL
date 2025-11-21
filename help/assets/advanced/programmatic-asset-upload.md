@@ -23,7 +23,7 @@ ht-degree: 0%
 Leer hoe te om activa aan het milieu van AEM as a Cloud Service te uploaden gebruikend de cliënttoepassing die [&#x200B; aem-upload &#x200B;](https://github.com/adobe/aem-upload) Node.js bibliotheek gebruikt.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3476952?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3476958?captions=dut&quality=12&learn=on)
 
 
 ## Wat u leert
