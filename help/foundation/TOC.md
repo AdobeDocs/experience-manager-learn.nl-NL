@@ -51,7 +51,7 @@ ht-degree: 10%
    + [ModSecurity CRS DoS-beveiliging tegen aanvallen](./security/modsecurity-crs-dos-attack-protection.md)
    + [HTTPS-verbindingen met API&#39;s met persoonlijke certificaten](./security/call-internal-apis-having-private-certificate.md)
    + [Mutual TLS (mTLS) Authentication from AEM](./security/mutual-tls-authentication.md)
-   + [&#x200B; JWT-aan-OAuth credential migratie](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/authentication/jwt-to-oauth-migration){target=_blank}
+   + [&#x200B; JWT-aan-OAuth credential migratie](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/authentication/jwt-to-oauth-migration){target=_blank}
 + Workflow {#workflow}
    + [De Workfloweditor gebruiken](./workflow/use-the-workflow-editor.md)
    + [Workflow gebruiken](./workflow/use-workflow.md)

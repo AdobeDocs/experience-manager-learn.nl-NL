@@ -28,7 +28,7 @@ ht-degree: 7%
       + [4 - Een React-app ontwikkelen](./open-api/basic/4-react-app.md)
       + [5 - Integratie van Universal Editor](./open-api/basic/5-universal-editor.md)
 + GraphQL {#graphql}
-   + [&#x200B; AEM Headless Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html){target=_blank}
+   + [&#x200B; AEM Headless Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL){target=_blank}
    + [Overzicht](./graphql/overview.md)
    + Snelle installatie {#quick-setup}
       + [Cloud Service](./graphql/quick-setup/cloud-service.md)
