@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Een korte inleiding op de redacteur van het Fragment van de Inhoud van AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424373/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3477333/?captions=dut&learn=on)

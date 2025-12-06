@@ -71,7 +71,7 @@ Herzie de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/do
             <a href="./basics/content-fragment-editor.md" title="Editor-overzicht"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3424373?format=jpeg"
+                src="https://video.tv.adobe.com/v/3477333?captions=dut&format=jpeg"
                 alt="Editor-overzicht">
             </a>
           </figure>
@@ -138,7 +138,7 @@ Herzie de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/do
             <a href="./editor/new-editor-toggle.md" title="Nieuwe editor"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419312?format=jpeg" alt="Nieuw
+                src="https://video.tv.adobe.com/v/3477322?captions=dut&format=jpeg" alt="Nieuw
                 Editor-schakeloptie">
             </a>
           </figure>

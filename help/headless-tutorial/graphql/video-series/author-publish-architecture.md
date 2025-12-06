@@ -27,4 +27,4 @@ In deze video zult u:
 + Begrijp de AEM-auteur- en -publicatiearchitectuur en hoe inhoud wordt gepubliceerd
 + Leer de beste werkwijzen voor levering zonder kop met een AEM-publicatieomgeving
 
->[!VIDEO](https://video.tv.adobe.com/v/333296?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3450955?captions=dut&quality=12&learn=on)

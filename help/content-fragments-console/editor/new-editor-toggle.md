@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Leer hoe u met de schakeloptie Nieuwe editor moeiteloos kunt schakelen tussen de nieuwe standaardeditor voor inhoudsfragmenten en de klassieke editor.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419312/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3477322/?captions=dut&learn=on)

@@ -41,7 +41,7 @@ De mogelijkheden van AEM Sites voor het wijzigen van pagina&#39;s geven een snel
 
 ## Startpagina&#39;s vergelijken {#comparing-launch-pages}
 
->[!VIDEO](https://video.tv.adobe.com/v/17746?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3477344?captions=dut&quality=12&learn=on)
 
 De functie Paginaverschil kan ook worden gebruikt om het verschil tussen blauwdrukken en livecopies, en blauwdrukken en taalkopieën te identificeren.
 
