@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Integraties met Adobe Experience Manager (AEM) as a Cloud Service moeten veilig kunnen worden geverifieerd voor de AEM-service. AEM Developer Console verleent toegang tot Service Credentials, die worden gebruikt om externe toepassingen, systemen en diensten te vergemakkelijken om programmatically met de Auteur van AEM of de Publicatie diensten over HTTP in wisselwerking te staan.
 
-AEM integreert met andere producten van Adobe gebruikend [&#x200B; S2S OAuth die via Adobe Developer Console &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) wordt beheerd. Voor aangepaste integratie met serviceaccounts worden JWT-referenties gebruikt en beheerd in de AEM Developer Console.
+AEM integreert met andere producten van Adobe gebruikend [&#x200B; S2S OAuth die via Adobe Developer Console &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) wordt beheerd. Voor aangepaste integratie met serviceaccounts worden JWT-referenties gebruikt en beheerd in de AEM Developer Console.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
@@ -224,7 +224,7 @@ Zodra de gebruiker van de technische rekening AEM in AEM (na eerste HTTP- verzoe
 1. Ga aan __Hulpmiddelen__ > __Veiligheid__ > __Gebruikers__
 1. Plaats de gebruiker van AEM met de __Login Naam__ die in Stap 1 wordt geïdentificeerd, en open zijn __Eigenschappen__
 1. Navigeer aan de __Groepen__ tabel, en voeg de __Gebruikers DAM__ groep toe (die als toegang tot activa schrijven)
-   + [&#x200B; zie de lijst van AEM verstrekte gebruikersgroepen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups) om de de dienstgebruiker aan voor de optimale toestemmingen toe te voegen. Als geen door AEM opgegeven gebruikersgroep voldoende is, maakt u uw eigen gebruikersgroep en voegt u de juiste machtigingen toe.
+   + [&#x200B; zie de lijst van AEM verstrekte gebruikersgroepen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=nl-NL#built-in-users-and-groups) om de de dienstgebruiker aan voor de optimale toestemmingen toe te voegen. Als geen door AEM opgegeven gebruikersgroep voldoende is, maakt u uw eigen gebruikersgroep en voegt u de juiste machtigingen toe.
 1. Tik __sparen en Sluiten__
 
 Voer de toepassing opnieuw uit terwijl de technische account in AEM schrijfmachtigingen voor middelen toestaat:
