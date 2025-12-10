@@ -31,7 +31,7 @@ ht-degree: 6%
    + Procedure{#how-to}
       + [Documentcontrole](./document-authoring/how-to/document-audit.md)
       + [Documentmachtigingen](./document-authoring/how-to/document-permissions.md)
-      + [ de versies van het Document ](./document-authoring/how-to/document-versions.md)
+      + [&#x200B; de versies van het Document &#x200B;](./document-authoring/how-to/document-versions.md)
       + [Workflows voor documenten](./document-authoring/how-to/document-workflows.md)
       + [iFrames insluiten](./document-authoring/how-to/iframes.md)
       + [Alternatieve tekst voor afbeelding](./document-authoring/how-to/image-alt-text.md)
@@ -78,7 +78,7 @@ ht-degree: 6%
 + Generatieve AI {#generative-ai}
    + [Variaties genereren](./generative-ai/generate-variations.md)
 + Inhoudsfragmenten {#content-fragments}
-   + [ de console van Fragmenten van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
+   + [&#x200B; de console van Fragmenten van de Inhoud](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [Inhoudsfragmenten ontwerpen](content-fragments/content-fragments-feature-video-use.md)
    + [Inhoudsfragmenten leveren](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [Inhoudsfragmenten omzetten](content-fragments/content-fragments-translation-feature-video-use.md)
@@ -86,7 +86,7 @@ ht-degree: 6%
 + Ervaar fragmenten {#experience-fragments}
    + [Beleidsfragmenten gebruiken](experience-fragments/experience-fragments-feature-video-use.md)
    + [Bouwstenen](experience-fragments/building-blocks.md)
-   + [ de Fragmenten van de Inhoud tegenover de Fragmenten van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
+   + [&#x200B; de Fragmenten van de Inhoud tegenover de Fragmenten van de Ervaring](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [Overzicht](./edge-delivery-services/overview.md)
    + Ontwikkelen{#developing}
@@ -120,9 +120,9 @@ ht-degree: 6%
 + Ontwikkelen {#developing}
    + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [AEM Project Archetype](developing/aem-project-archetype.md)
-   + [ Begonnen het worden met AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
-   + [ Begonnen het worden met de Zetel van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html){target=_blank}
-   + [ Aan de slag met de Redacteur van AEM SPA en Reageer ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
+   + [&#x200B; Begonnen het worden met AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
+   + [&#x200B; Begonnen het worden met de Zetel van AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html){target=_blank}
+   + [&#x200B; Aan de slag met de Redacteur van AEM SPA en Reageer](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
    + [Pagina-eigenschappen uitbreiden](developing/page-properties-technical-video-develop.md)
    + [Responsieve onderbrekingspunten](developing/responsive-breakpoints.md)
    + [Ontwikkelen met het Stijlsysteem](developing/style-system-technical-video-understand.md)
@@ -133,7 +133,7 @@ ht-degree: 6%
    + [Delen van sociale media](developing/social-media-sharing-technical-video-use.md)
    + [Componentpictogrammen aanpassen](developing/component-icons-technical-video-develop.md)
 + Personalization {#personalization}
-   + [ Integratie met Adobe Target ](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html){target=_blank}
+   + [&#x200B; Integratie met Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html){target=_blank}
    + [Fragmenten voor Setup-ervaring en Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Experience Fragments gebruiken met Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [ContextHub instellen](personalization/context-hub-technical-video-setup.md)
@@ -146,7 +146,7 @@ ht-degree: 6%
    + [Sitemaps](./seo/sitemaps.md)
 + Toepassingen voor één pagina {#spa-editor}
    + [Het gebruiken van de Redacteur van het KUUROORD](spa-editor/spa-editor-framework-feature-video-use.md)
-   + [ Aan de slag met de Redacteur van AEM SPA en Reageer ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
+   + [&#x200B; Aan de slag met de Redacteur van AEM SPA en Reageer](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
 + Beheer van meerdere sites {#multi-site-management}
    + [Inleiding tot het kopiëren van talen](./multi-site-management/language-copy-overview.md)
    + [Live kopiëren en vervagen](./multi-site-management/live-copy-and-blueprint.md)
@@ -172,7 +172,7 @@ ht-degree: 6%
       + [FPID&#39;s genereren](integrations/platform/fpid.md)
       + [Web SDK](integrations/platform/web-sdk.md)
       + [Analyses met gebruik van Platform Web SDK](integrations/platform/analytics-using-web-sdk.md)
-      + [ Adobe Target ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
+      + [&#x200B; Adobe Target &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
    + Tags in Adobe Experience Platform {#experience-platform-data-collection-tags}
       + [Overzicht](integrations/experience-platform/data-collection/tags/overview.md)
       + [Een eigenschap voor een tag maken](integrations/experience-platform/data-collection/tags/create-tag-property.md)
@@ -188,8 +188,8 @@ ht-degree: 6%
       + [Gegevens analyseren met Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
       + [Overzicht](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
-      + [ Opstelling ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-tags)
-      + [ Gevallen van het Gebruik ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
+      + [&#x200B; Opstelling &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-tags)
+      + [&#x200B; Gevallen van het Gebruik &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
 + Leer van uw peers {#expert-resources}
    + [Overzicht](expert-resources/learn-from-your-peers-overview.md)
    + [Ontwerphandleiding maken in AEM Sites](expert-resources/authoring-guide-in-sites.md)
