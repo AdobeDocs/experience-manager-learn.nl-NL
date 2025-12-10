@@ -24,4 +24,4 @@ Ontdek hoe te om een de configuratiepijpleiding van Edge Delivery in Adobe [&#x2
 
 >[!VIDEO](https://video.tv.adobe.com/v/3458975/?learn=on&enablevpops)
 
-Zie de [&#x200B; de configuratiepijpleidingsdocumentatie van Edge Delivery &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#yamls-for-eds) voor een volledig overzicht van de configuratieopties en formaten.
+Zie de [&#x200B; de configuratiepijpleidingsdocumentatie van Edge Delivery &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/config-pipeline#yamls-for-eds) voor een volledig overzicht van de configuratieopties en formaten.
