@@ -210,11 +210,11 @@ Volg de stappen om de instantie van AEM te vormen om bovengenoemde mededeling va
 
 1. Leg de configuratiewijzigingen vast en duw de wijzigingen naar de externe Git-opslagplaats waar de Cloud Manager-pijplijn op is aangesloten.
 
-1. Stel de bovengenoemde veranderingen op gebruikend de [&#x200B; Pijpleiding Config &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline) in Cloud Manager.
+1. Stel de bovengenoemde veranderingen op gebruikend de [&#x200B; Pijpleiding Config &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline) in Cloud Manager.
 
    ![&#x200B; stel YAML &#x200B;](./assets/setup/config-pipeline.png) op
 
-Merk op dat het `api.yaml` dossier ook in [&#x200B; RDE &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview) kan worden geïnstalleerd, [&#x200B; gebruikend het hulpmiddel van de bevellijn &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files). Dit is nuttig om de configuratieveranderingen te testen alvorens hen aan het productiemilieu op te stellen.
+Merk op dat het `api.yaml` dossier ook in [&#x200B; RDE &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/overview) kan worden geïnstalleerd, [&#x200B; gebruikend het hulpmiddel van de bevellijn &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files). Dit is nuttig om de configuratieveranderingen te testen alvorens hen aan het productiemilieu op te stellen.
 
 ## Volgende stappen
 
