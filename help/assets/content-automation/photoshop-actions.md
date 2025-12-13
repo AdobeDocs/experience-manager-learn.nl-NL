@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Leer hoe inhoudsauteurs Photoshop-handelingen in AEM Assets kunnen uitvoeren met Creative Cloud API&#39;s met de add-on voor inhoudsautomatisering.
 
->[!VIDEO](https://video.tv.adobe.com/v/336539?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444074?captions=dut&quality=12&learn=on)

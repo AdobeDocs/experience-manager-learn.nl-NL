@@ -27,7 +27,7 @@ Leer hoe u uw SEO kunt verhogen door sitemaps voor AEM Sites te maken.
 >
 >Deze video demonstreert het gebruik van relatieve URL&#39;s in de sitemap. Sitemaps [&#x200B; zou absolute URLs &#x200B;](https://sitemaps.org/protocol.html) moeten gebruiken. Zie [&#x200B; Configuraties &#x200B;](#absolute-sitemap-urls) voor hoe te om absolute URLs toe te laten, aangezien dit niet in de video hieronder wordt behandeld.
 
->[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454367?captions=dut&quality=12&learn=on)
 
 ## Configuraties
 

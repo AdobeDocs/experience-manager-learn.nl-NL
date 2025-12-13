@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Leer hoe u het gereedschap AEM Importer kunt gebruiken en configureren om voor documenten gemaakte sites te migreren naar Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429595/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443702/?captions=dut&learn=on)

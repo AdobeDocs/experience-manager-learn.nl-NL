@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Een doorgelichte doorloop van Cloud Acceleration Manager-gereedschappen.
 
->[!VIDEO](https://video.tv.adobe.com/v/336699?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454676?captions=dut&quality=12&learn=on)

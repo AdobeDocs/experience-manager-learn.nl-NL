@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Leer hoe u de AEM Importer aanpast om de efficiëntie en nauwkeurigheid te maximaliseren tijdens een site-migratie naar documentontwerpen met Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429596/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444251/?captions=dut&learn=on)

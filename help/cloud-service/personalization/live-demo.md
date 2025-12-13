@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Bezoek de [&#x200B; website van Enablement WKND &#x200B;](https://wknd.enablementadobe.com/us/en.html){target="wknd"} om voorbeelden in real-world van het testen A/B, gedrag het richten, en bekende-gebruikersverpersoonlijking te zien.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476461/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476467/?captions=dut&learn=on&enablevpops)
 
 Deze pagina begeleidt u door hands-on demonstraties van elk verpersoonlijkingsscenario. Gebruik deze functie om te verkennen wat er mogelijk is voordat u deze mogelijkheden gaat ontwikkelen op uw eigen AEM-site.
 

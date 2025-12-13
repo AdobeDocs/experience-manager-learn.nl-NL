@@ -29,7 +29,7 @@ Met het gereedschap Bulk importeren in AEM as a Cloud Service kunnen beheerders 
 
 Leer hoe te om talrijke dossiers in AEM Assets in te voeren gebruikend de [&#x200B; mening van Activa &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html?lang=nl-NL) [&#x200B; BulkInvoer &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html?lang=nl-NL), met Dropbox die als leverancier van de de voorbeeldwolkenopslag voor een duidelijk en gemakkelijk-aan-volgt integratieproces dient.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3451965/?captions=dut&learn=on)
 
 >[!TAB  Admin mening ]
 

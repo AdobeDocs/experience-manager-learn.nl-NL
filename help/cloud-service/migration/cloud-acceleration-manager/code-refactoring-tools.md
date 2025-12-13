@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Leer hoe de Hulpmiddelen van de Refactoring van de Code van AEM de omzetting van bestaande projecten van AEM helpen automatiseren om compatibel met AEM as a Cloud Service te zijn.
 
->[!VIDEO](https://video.tv.adobe.com/v/336693?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444721?captions=dut&quality=12&learn=on)

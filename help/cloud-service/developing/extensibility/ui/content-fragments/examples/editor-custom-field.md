@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Leer hoe u aangepaste velden maakt in de AEM Content Fragment Editor.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437640?captions=dut&learn=on)
 
 De uitbreidingen UI van AEM zouden moeten worden ontwikkeld gebruikend het [&#x200B; kader van het Spectrum van de Reactie van Adobe &#x200B;](https://react-spectrum.adobe.com/react-spectrum/index.html), aangezien dit een verenigbaar blik en gevoel met de rest van AEM handhaaft, en ook een uitgebreide bibliotheek van pre-gebouwde functionaliteit heeft, dalende ontwikkelingstijd.
 

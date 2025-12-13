@@ -24,7 +24,7 @@ ht-degree: 0%
 Leer hoe u AEM-gebeurtenissen op een website kunt ontvangen en bekijk de gebeurtenisdetails zoals payload, headers en metagegevens.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449754?captions=dut&quality=12&learn=on)
 
 
 >[!IMPORTANT]

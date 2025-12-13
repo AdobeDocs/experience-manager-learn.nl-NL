@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Leer hoe u met AEM Content Fragment Console en Editor inhoud waarnaar wordt verwezen, gemakkelijk kunt begrijpen en beheren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3420950/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3432463/?captions=dut&learn=on)

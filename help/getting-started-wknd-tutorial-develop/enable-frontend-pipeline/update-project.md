@@ -30,7 +30,7 @@ In dit hoofdstuk, maken wij config veranderingen in het __project van Plaatsen W
 
 ## Overzicht van configuratieveranderingen in het full-stack AEM-project
 
->[!VIDEO](https://video.tv.adobe.com/v/3409419?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453615?captions=dut&quality=12&learn=on)
 
 ## Vereisten {#prerequisites}
 

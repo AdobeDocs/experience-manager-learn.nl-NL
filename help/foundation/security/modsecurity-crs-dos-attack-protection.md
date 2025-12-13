@@ -24,7 +24,7 @@ ht-degree: 0%
 Leer hoe te om ModSecurity toe te laten om uw plaats tegen Ontkenning van de aanvallen van de Dienst (Dos) te beschermen gebruikend de **Reeks van de Regel van de Kern van OWASP ModSecurity (CRS)** op Adobe Experience Manager (AEM) publiceer Dispatcher.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3422976?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452133?captions=dut&quality=12&learn=on)
 
 ## Overzicht
 

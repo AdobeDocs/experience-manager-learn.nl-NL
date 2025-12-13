@@ -21,4 +21,4 @@ ht-degree: 0%
 
 De belangrijkste implementatiefasen evalueren en begrijpen of met Cloud Acceleration Manager naar AEM as a Cloud Service gaan.
 
->[!VIDEO](https://video.tv.adobe.com/v/336691?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438285?captions=dut&quality=12&learn=on)

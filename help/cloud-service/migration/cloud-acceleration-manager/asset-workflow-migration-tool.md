@@ -21,4 +21,4 @@ ht-degree: 16%
 
 Leer hoe u met het hulpmiddel Asset Workflow Migration uw bestaande AEM Assets Workflows kunt migreren naar AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/336697?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438978?captions=dut&quality=12&learn=on)

@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Leer over de _Tooling van de Analyse van het Logboek van de Dienst CDN van de Wolk AEM Cloud die Adobe verstrekt en hoe het helpt om inzicht in zowel uw CDN prestaties als implementatie van AEM te krijgen.
  _
->[!VIDEO](https://video.tv.adobe.com/v/3429177?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446111?captions=dut&quality=12&learn=on)
 
 ## Overzicht
 

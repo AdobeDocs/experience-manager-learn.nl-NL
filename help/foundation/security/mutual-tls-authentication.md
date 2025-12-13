@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Leer hoe te om vraag HTTPS van AEM aan Web APIs te maken die de Wederzijdse authentificatie van de Veiligheid van de Laag van het Vervoer (mTLS) vereisen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424855?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447865?captions=dut&quality=12&learn=on)
 
 De mTLS of bidirectionele authentificatie van TLS verbetert de veiligheid van het protocol TLS door **zowel de cliënt als de server te vereisen om elkaar** voor authentiek te verklaren. Voor deze verificatie worden digitale certificaten gebruikt. Het wordt algemeen gebruikt in scenario&#39;s waar de sterke veiligheid en identiteitscontrole kritiek zijn.
 

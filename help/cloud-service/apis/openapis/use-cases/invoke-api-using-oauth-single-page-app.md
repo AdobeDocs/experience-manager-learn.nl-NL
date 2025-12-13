@@ -59,7 +59,7 @@ Het project van Adobe Developer Console (ADC) wordt gevormd om de authentificati
 >Het project ADC verstrekt niet a _client_geheime_. In plaats daarvan, produceert het KUUROORD a _code_verifier_ en _code_challenge_ om de vergunningscode voor een _toegangstoken_ veilig uit te wisselen. Het elimineert de behoefte om een cliëntgeheim op de cliëntkant op te slaan, die veiligheid verbetert.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3456964?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3456970?captions=dut&quality=12&learn=on)
 
 
 
