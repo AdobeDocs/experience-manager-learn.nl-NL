@@ -2,7 +2,7 @@
 title: Traversale waarschuwingen in AEM as a Cloud Service
 description: Leer hoe u waarschuwingen over het doorlopen in AEM as a Cloud Service kunt verminderen.
 feature: Migration
-role: Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-10427
 hidefromtoc: true
@@ -11,7 +11,7 @@ index: false
 thumbnail: kt-10427.jpg
 exl-id: 8fcc9364-b84c-4458-82e2-66b47429cd4b
 duration: 155
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 0%
@@ -25,12 +25,12 @@ ht-degree: 0%
 
 _wat zijn traversale waarschuwingen?_
 
-De traversale waarschuwingen zijn __aError__ logboekverklaringen die op slecht het uitvoeren van vragen wijzen worden uitgevoerd op de dienst van AEM Publish. Traversale waarschuwingen worden gewoonlijk op twee manieren AEM:
+De traversale waarschuwingen zijn __aError__ logboekverklaringen die op slecht het uitvoeren van vragen wijzen worden uitgevoerd op de publicatiedienst van AEM. Traversale waarschuwingen komen in AEM doorgaans op twee manieren voor:
 
 1. __Trage vragen__ die geen indexen gebruiken, resulterend in langzame reactietijden.
 1. __het Ontbreken vragen__, die a `RuntimeNodeTraversalException` werpen, resulterend in een gebroken ervaring.
 
-Door het ongecontroleerd laten van traversale waarschuwingen worden de AEM vertraagd en kunnen de ervaringen voor uw gebruikers worden verbroken.
+Het ongecontroleerd laten van traversale waarschuwingen vertraagt de prestaties van AEM, en kan in gebroken ervaringen voor uw gebruikers resulteren.
 
 ## Hoe te om traversale waarschuwingen op te lossen
 
@@ -106,11 +106,11 @@ Het verminderen van traversale waarschuwingen kan worden aangepakt gebruikend dr
 
 </div>
 
-## 1. Analyseren{#analyze}
+## &#x200B;1. Analyseren{#analyze}
 
-Eerst identificeert u welke AEM Publish-services waarschuwingen over de hele wereld tonen. Om dit, van Cloud Manager te doen, `aemerror` logboeken van de diensten van Publish van 0&rbrace; downloaden [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=nl-NL#cloud-manager){target="_blank"}  van alle milieu&#39;s (Dev, Stadium en Productie) voor het verleden __drie dagen__.
+Bepaal eerst welke AEM-publicatieservices waarschuwingen over de hele wereld weergeven. Om dit, van Cloud Manager te doen, [ download publiceer de dienstlogboeken `aemerror` ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"} van alle milieu&#39;s (Dev, Stadium en Productie) voor het verleden __drie dagen__.
 
-![&#x200B; Logboeken van AEM as a Cloud Service van de Download &#x200B;](./assets/traversals/download-logs.jpg)
+![ Logboeken van AEM as a Cloud Service van de Download ](./assets/traversals/download-logs.jpg)
 
 Open de logbestanden en zoek naar de Java™-klasse `org.apache.jackrabbit.oak.plugins.index.Cursors$TraversingCursor` . Het logboek met traversal waarschuwingen bevat een reeks instructies die er ongeveer als volgt uitzien:
 
@@ -151,7 +151,7 @@ org.apache.jackrabbit.oak.query.RuntimeNodeTraversalException:
     ...
 ```
 
-## 2. Aanpassen{#adjust}
+## &#x200B;2. Aanpassen{#adjust}
 
 Zodra de beledigende vragen en hun het aanhalen code worden ontdekt, moeten aanpassingen worden aangebracht. Er kunnen twee soorten aanpassingen worden aangebracht om de doorlopende waarschuwingen te beperken:
 
@@ -159,30 +159,30 @@ Zodra de beledigende vragen en hun het aanhalen code worden ontdekt, moeten aanp
 
 __verander de vraag__ om nieuwe vraagbeperkingen toe te voegen die aan bestaande indexbeperkingen oplossen. Wijzig indien mogelijk de query liever in indexen.
 
-+ [&#x200B; leer hoe te om vraagprestaties &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html?lang=nl-NL#query-performance-tuning){target="_blank"} te stemmen 
++ [ Leer hoe te om vraagprestaties ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"} te stemmen
 
 ### De index aanpassen
 
-__Verandering (of creeer) een AEM index__ dusdanig dat de bestaande vraagbeperkingen aan de indexupdates oplosbaar zijn.
+__Verandering (of creeer) een index van AEM__ dusdanig dat de bestaande vraagbeperkingen aan de indexupdates oplosbaar zijn.
 
-+ [&#x200B; leren hoe te om bestaande indexen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html?lang=nl-NL#query-performance-tuning){target="_blank"} te stemmen 
-+ [&#x200B; leren hoe te om indexen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html?lang=nl-NL#create-a-new-index){target="_blank"} tot stand te brengen 
++ [ Leer hoe te om bestaande indexen ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"} te stemmen
++ [ Leer hoe te om indexen ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#create-a-new-index){target="_blank"} tot stand te brengen
 
-## 3. Verifiëren{#verify}
+## &#x200B;3. Verifiëren{#verify}
 
 Aanpassingen aan de query&#39;s, indexen of beide moeten worden geverifieerd om ervoor te zorgen dat ze de doorlopende waarschuwingen verminderen.
 
-![&#x200B; verklaart vraag &#x200B;](./assets/traversals/verify.gif)
+![ verklaart vraag ](./assets/traversals/verify.gif)
 
-Als slechts [&#x200B; aanpassingen aan de vraag &#x200B;](#adjust-the-query) worden gemaakt, kan de vraag direct op AEM as a Cloud Service via Developer Console worden getest [&#x200B; verklaart Vraag &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=nl-NL#queries){target="_blank"} . Verklaar de looppas van de Vraag tegen de AEM dienst van de Auteur, echter aangezien de indexdefinities het zelfde over de Diensten van de Auteur en van Publish zijn, volstaat het bevestigen van vragen tegen de dienst van de AEMAuteur.
+Als slechts [ aanpassingen aan de vraag ](#adjust-the-query) worden gemaakt, kan de vraag direct op AEM as a Cloud Service via Developer Console worden getest [ verklaart Vraag ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target="_blank"}. Verklaar de looppas van de Vraag tegen de dienst van de Auteur van AEM, echter aangezien de indexdefinities het zelfde over de Auteur en de Publish diensten zijn, volstaat het bevestigen van vragen tegen de dienst van de Auteur van AEM.
 
-Als [&#x200B; aanpassingen aan de index &#x200B;](#adjust-the-index) worden gemaakt, moet de index aan AEM as a Cloud Service worden opgesteld. Met de opgestelde indexaanpassingen, verklaart Developer Console [&#x200B; Vraag &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=nl-NL#queries){target="_blank"}  kan worden gebruikt om de vraag verder uit te voeren en te stemmen.
+Als [ aanpassingen aan de index ](#adjust-the-index) worden gemaakt, moet de index aan AEM as a Cloud Service worden opgesteld. Met de opgestelde indexaanpassingen, verklaart Developer Console [ Vraag ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target="_blank"} kan worden gebruikt om de vraag verder uit te voeren en te stemmen.
 
 Uiteindelijk, worden alle veranderingen (vraag en code) geëngageerd aan Git en opgesteld aan AEM as a Cloud Service gebruikend Cloud Manager. Als u de code eenmaal hebt geïmplementeerd, test u de codepaden die aan de oorspronkelijke traversal-waarschuwingen zijn gekoppeld, opnieuw en controleert u of traversal-waarschuwingen niet meer voorkomen in het `aemerror` -logbestand.
 
 ## Overige middelen
 
-Bekijk deze andere nuttige bronnen voor het begrijpen van AEM indexen, zoekopdrachten en waarschuwingen voor het doorlopen.
+Bekijk deze andere handige bronnen voor een beter begrip van AEM-indexen, zoek- en traversale waarschuwingen.
 
 <div class="columns is-multiline">
 
@@ -191,14 +191,14 @@ Bekijk deze andere nuttige bronnen voor het begrijpen van AEM indexen, zoekopdra
    <div class="card">
        <div class="card-image">
            <figure class="image is-16by9">
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-search-and-indexing.html?lang=nl-NL" title="Wolk 5 - Zoeken en indexeren" tabindex="-1"><img class="is-bordered-r-small" src="../../../expert-resources/cloud-5/imgs/009-thumb.png" alt="Wolk 5 - Zoeken en indexeren"></a>
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-search-and-indexing.html" title="Wolk 5 - Zoeken en indexeren" tabindex="-1"><img class="is-bordered-r-small" src="../../../expert-resources/cloud-5/imgs/009-thumb.png" alt="Wolk 5 - Zoeken en indexeren"></a>
            </figure>
        </div>
        <div class="card-content is-padded-small">
            <div class="content">
-               <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-search-and-indexing.html?lang=nl-NL" title="Wolk 5 - Zoeken en indexeren">Wolk 5 - Zoeken en indexeren</a></p>
+               <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-search-and-indexing.html" title="Wolk 5 - Zoeken en indexeren">Wolk 5 - Zoeken en indexeren</a></p>
                <p class="is-size-6">Het team van Cloud 5 laat zien wat de voordelen en uitvallen zijn van het zoeken en indexeren op AEM as a Cloud Service.</p>
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-search-and-indexing.html?lang=nl-NL" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-search-and-indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leer meer </span>
                </a>
            </div>
@@ -212,16 +212,16 @@ Bekijk deze andere nuttige bronnen voor het begrijpen van AEM indexen, zoekopdra
    <div class="card">
        <div class="card-image">
            <figure class="image is-16by9">
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=nl-NL" title="Inhoud zoeken en indexeren" tabindex="-1">
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html" title="Inhoud zoeken en indexeren" tabindex="-1">
                    <img class="is-bordered-r-small" src="./assets/traversals/resources--docs.png" alt="Inhoud zoeken en indexeren">
                </a>
            </figure>
        </div>
        <div class="card-content is-padded-small">
            <div class="content">
-               <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=nl-NL" title="Inhoud zoeken en indexeren">Documentatie voor zoeken en indexeren van inhoud</a></p>
+               <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html" title="Inhoud zoeken en indexeren">Documentatie voor zoeken en indexeren van inhoud</a></p>
                <p class="is-size-6">Leer hoe u indexen maakt en beheert in AEM as a Cloud Service.</p>
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=nl-NL" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leer meer </span>
                </a>
            </div>
@@ -234,16 +234,16 @@ Bekijk deze andere nuttige bronnen voor het begrijpen van AEM indexen, zoekopdra
    <div class="card">
        <div class="card-image">
            <figure class="image is-16by9">
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html?lang=nl-NL" title="Oak-indexen moderniseren" tabindex="-1">
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html" title="Oak-indexen moderniseren" tabindex="-1">
                    <img class="is-bordered-r-small" src="./assets/traversals/resources--aem-experts-series.png" alt="Oak-indexen moderniseren">
                </a>
            </figure>
        </div>
        <div class="card-content is-padded-small">
            <div class="content">
-               <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html?lang=nl-NL" title="Oak-indexen moderniseren">Oak-indexen moderniseren</a></p>
-               <p class="is-size-6">Leer hoe u AEM 6 Oak-indexdefinities omzet in AEM as a Cloud Service-compatibiliteit en hoe u de indexen in de toekomst kunt bijhouden.</p>
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html?lang=nl-NL" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+               <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html" title="Oak-indexen moderniseren">Oak-indexen moderniseren</a></p>
+               <p class="is-size-6">Leer hoe u AEM 6 Oak-indexdefinities omzet in AEM as a Cloud Service-compatibiliteit en hoe u indexen in de toekomst kunt bijhouden.</p>
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leer meer </span>
                </a>
            </div>

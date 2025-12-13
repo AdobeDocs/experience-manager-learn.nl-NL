@@ -4,7 +4,7 @@ description: Overweeg de invloed op het front-end en back-end ontwikkelingsproce
 version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
-role: Developer, Architect, Admin
+role: Developer, Admin
 level: Intermediate
 jira: KT-10689
 mini-toc-levels: 1
@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: a3b27d5b-b167-4c60-af49-8f2e8d814c86
 duration: 79
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Nadat u de front-end pijplijn hebt ingeschakeld om alleen de front-end bronnen i
 
 ## Aangepaste ontwikkelingsaanpak
 
-* Voor de lokale ontwikkeling met AEM SDK heeft het back-end dev-team nog steeds clientlib-generatie via de module `ui.frontend` nodig, maar tijdens de Cloud Manager-implementatie naar de AEM as a Cloud Service-omgeving moet u deze overslaan. Dit oppervlakt een uitdaging op hoe te om de project te isoleren config veranderingen die in het [&#x200B; worden geschetst 1&rbrace; hoofdstuk van het Project van de Update &lbrace;worden geschetst.](update-project.md)
+* Voor de lokale ontwikkeling met AEM SDK heeft het back-end dev-team nog steeds clientlib-generatie via de module `ui.frontend` nodig, maar tijdens de Cloud Manager-implementatie naar de AEM as a Cloud Service-omgeving moet u deze overslaan. Dit oppervlakt een uitdaging op hoe te om de project te isoleren config veranderingen die in het [ worden geschetst 1} hoofdstuk van het Project van de Update {worden geschetst.](update-project.md)
 
 A __oplossing__ zou uw git vertakkend model kunnen aanpassen en ervoor zorgen de het projectconfig van AEM verandert nooit terugstroom naar de __lokale ontwikkeling__ tak het achterste-eindontwikkelaarsgebruik van AEM.
 

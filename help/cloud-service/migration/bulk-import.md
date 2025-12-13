@@ -7,12 +7,12 @@ feature: Migration
 jira: KT-6729, KT-14796
 thumbnail: 329680.jpg
 topic: Migration
-role: Architect, Developer
+role: Developer
 level: Beginner
 last-substantial-update: 2024-01-16T00:00:00Z
 exl-id: 28644af8-babc-467d-afdb-8538728dc176
 duration: 712
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
@@ -27,9 +27,9 @@ Met het gereedschap Bulk importeren in AEM as a Cloud Service kunnen beheerders 
 
 >[!TAB  de mening van Assets ]
 
-Leer hoe te om talrijke dossiers in AEM Assets in te voeren gebruikend de [&#x200B; mening van Activa &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html?lang=nl-NL) [&#x200B; BulkInvoer &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html?lang=nl-NL), met Dropbox die als leverancier van de de voorbeeldwolkenopslag voor een duidelijk en gemakkelijk-aan-volgt integratieproces dient.
+Leer hoe te om talrijke dossiers in AEM Assets in te voeren gebruikend de [ mening van Activa ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html) [ BulkInvoer ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html), met Dropbox die als leverancier van de de voorbeeldwolkenopslag voor een duidelijk en gemakkelijk-aan-volgt integratieproces dient.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451965/?learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on)
 
 >[!TAB  Admin mening ]
 
@@ -37,7 +37,7 @@ Leer hoe te om talrijke dossiers in AEM Assets in te voeren gebruikend de [&#x20
 
 >[!TIP]
 >
-> De inputbronnen in deze video tonen slechts Azure Blob Storage en Amazon S3; nochtans blijven de beschikbare bronnen in tijd groeien. Voor een volledige lijst van gesteunde inputbronnen, te verwijzen gelieve naar de beschikbare opties in product, of [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=nl-NL#bulk-upload).
+> De inputbronnen in deze video tonen slechts Azure Blob Storage en Amazon S3; nochtans blijven de beschikbare bronnen in tijd groeien. Voor een volledige lijst van gesteunde inputbronnen, te verwijzen gelieve naar de beschikbare opties in product, of [ documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
 
 ## Bulkimport plannen
 
@@ -46,6 +46,6 @@ Bulkimport ondersteunt geplande uitvoering van configuraties, waaronder:
 + Eén uitvoering op een gedefinieerde datum en tijd
 + Uitvoeringen per uur, dag of week
 
-![&#x200B; Bulk invoerschema &#x200B;](./assets/bulk-import/schedule.png)
+![ Bulk invoerschema ](./assets/bulk-import/schedule.png)
 
 >[!ENDTABS]

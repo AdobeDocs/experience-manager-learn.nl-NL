@@ -4,7 +4,7 @@ description: Leer hoe u op OpenAPI gebaseerde AEM API's op AEM as a Cloud Servic
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Intermediate
 doc-type: Tutorial
 jira: KT-17430
@@ -12,7 +12,7 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: 7c7c9070bb6061dc59530070dd32ca6b8c78bc8d
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Leer hoe te om op OpenAPI-Gebaseerde AEM APIs op AEM as a Cloud Service aan te h
 
 App-verificatie met één pagina is ideaal voor JavaScript-toepassingen die in de browser worden uitgevoerd. Of ze nu geen back-endserver hebben of toegangstokens moeten ophalen om namens een gebruiker te kunnen communiceren met AEM API&#39;s.
 
-De stroom PKCE breidt OAuth 2.0 _verlenen type van autorisatie_code uit, verbeterend veiligheid door de interceptie van de vergunningscode te verhinderen._ Voor meer informatie, zie het [&#x200B; Verschil tussen Server-aan-Server vs Web App vs Één enkele sectie van de Toepassing van de Pagina &#x200B;](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
+De stroom PKCE breidt OAuth 2.0 _verlenen type van autorisatie_code uit, verbeterend veiligheid door de interceptie van de vergunningscode te verhinderen._ Voor meer informatie, zie het [ Verschil tussen Server-aan-Server vs Web App vs Één enkele sectie van de Toepassing van de Pagina ](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
 
 ## Wat u leert{#what-you-learn}
 
@@ -40,8 +40,8 @@ In deze zelfstudie leert u hoe u:
 
 Controleer voordat u begint het volgende:
 
-- [&#x200B; Toegang hebbend tot Adobe APIs en verwante concepten &#x200B;](../overview.md#accessing-adobe-apis-and-related-concepts) sectie.
-- [&#x200B; artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.](../setup.md)
+- [ Toegang hebbend tot Adobe APIs en verwante concepten ](../overview.md#accessing-adobe-apis-and-related-concepts) sectie.
+- [ artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.](../setup.md)
 
 ## WKND SPA-overzicht en functionele stroom{#wknd-spa-overview-and-functional-flow}
 
@@ -59,13 +59,13 @@ Het project van Adobe Developer Console (ADC) wordt gevormd om de authentificati
 >Het project ADC verstrekt niet a _client_geheime_. In plaats daarvan, produceert het KUUROORD a _code_verifier_ en _code_challenge_ om de vergunningscode voor een _toegangstoken_ veilig uit te wisselen. Het elimineert de behoefte om een cliëntgeheim op de cliëntkant op te slaan, die veiligheid verbetert.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3456970?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3456964?quality=12&learn=on)
 
 
 
 Het volgende diagram illustreert de functionele stroom van het KND KUUROORD _die gebruikerspecifieke toegangstoken krijgt om op OpenAPI-Gebaseerde AEM APIs_ aan te halen:
 
-![&#x200B; WKND de Stroom van de Auteur van het KUUROORD &#x200B;](../assets/spa/wknd-spa-auth-flow.png)
+![ WKND de Stroom van de Auteur van het KUUROORD ](../assets/spa/wknd-spa-auth-flow.png)
 
 1. Het KUUROORD stelt de authentificatiestroom in werking door de gebruiker aan het Systeem van Adobe Identity Management (IMS) via een vergunningsverzoek te leiden.
 1. Als deel van het vergunningsverzoek, verzendt het KUUUROORD _client_id,_ redirect_uri _, en_ code_challenge _naar IMS, na de stroom van OAuth 2.0 PKCE._ Het KUUROORD produceert een willekeurige _code_verifier_, hakt het gebruikend SHA-256, en Base64 codeert het resultaat om _code_challenge_ tot stand te brengen.
@@ -74,7 +74,7 @@ Het volgende diagram illustreert de functionele stroom van het KND KUUROORD _die
 1. IMS bevestigt _code_verifier_ en keert het user-specific _toegangstoken_ terug.
 1. Het KUUROORD omvat het _toegangstoken_ in API verzoeken aan AEM om gebruiker-specifieke inhoud voor authentiek te verklaren en terug te winnen.
 
-Het KND KUUROORD is a [&#x200B; React &#x200B;](https://react.dev/) - gebaseerde toepassing en het gebruikt [&#x200B; Reageer Context &#x200B;](https://react.dev/reference/react/createContext) voor het beheer van de authentificatiestatus, [&#x200B; Reageer Router &#x200B;](https://reactrouter.com/home) voor navigatie.
+Het KND KUUROORD is a [ React ](https://react.dev/) - gebaseerde toepassing en het gebruikt [ Reageer Context ](https://react.dev/reference/react/createContext) voor het beheer van de authentificatiestatus, [ Reageer Router ](https://reactrouter.com/home) voor navigatie.
 
 Andere kaders van het KUUROORD zoals Angular, Vue, of vanilla JavaScript kunnen worden gebruikt om KUUROORD tot stand te brengen die met Adobe APIs gebruikend de benaderingen integreren die in dit leerprogramma worden geïllustreerd.
 
@@ -82,8 +82,8 @@ Andere kaders van het KUUROORD zoals Angular, Vue, of vanilla JavaScript kunnen 
 
 U kunt deze zelfstudie op twee manieren benaderen:
 
-- [&#x200B; de zeer belangrijke codefragmenten van het Overzicht SPA &#x200B;](#review-spa-key-code-snippets): Begrijp de OAuth Enige de authentificatiestroom van de Toepassing van de Pagina en onderzoek de zeer belangrijke API vraagimplementaties in het KND SPA.
-- [&#x200B; Opstelling en stel het KUUROORD &#x200B;](#setup-and-run-the-spa) in werking: Volg geleidelijke instructies om het KND KUUROORD op uw lokale machine te vormen en in werking te stellen.
+- [ de zeer belangrijke codefragmenten van het Overzicht SPA ](#review-spa-key-code-snippets): Begrijp de OAuth Enige de authentificatiestroom van de Toepassing van de Pagina en onderzoek de zeer belangrijke API vraagimplementaties in het KND SPA.
+- [ Opstelling en stel het KUUROORD ](#setup-and-run-the-spa) in werking: Volg geleidelijke instructies om het KND KUUROORD op uw lokale machine te vormen en in werking te stellen.
 
 Kies het pad dat het beste bij uw behoeften past.
 
@@ -99,7 +99,7 @@ Deze fragmenten helpen u het authentificatieproces en API interactie binnen het 
 
 ### De SPA-code downloaden{#download-the-spa-code}
 
-1. Download het [&#x200B; KND SPA &amp; AEM APIs - de Gids van de Toepassing van de Demo &#x200B;](../assets/spa/wknd-spa-with-aemapis-demo.zip) zip dossier en haalt het uit.
+1. Download het [ KND SPA &amp; AEM APIs - de Gids van de Toepassing van de Demo ](../assets/spa/wknd-spa-with-aemapis-demo.zip) zip dossier en haalt het uit.
 
 1. Navigeer naar de uitgepakte map en open het bestand `.env.example` in uw favoriete code-editor. Controleer de vereiste configuratieparameters.
 
@@ -142,7 +142,7 @@ Onderzoek de code die IMS gebruikersauthentificatie en de vergunning van het KUU
 
 Tijdens aanvankelijke login, wordt de gebruiker ertoe aangezet om toestemming te verstrekken, toestaand het KND SPA om tot de vereiste middelen veilig toegang te hebben.
 
-![&#x200B; WKND Eerste Login en Toestemming van het KUUROORD &#x200B;](../assets/spa/wknd-spa-first-login-consent.png)
+![ WKND Eerste Login en Toestemming van het KUUROORD ](../assets/spa/wknd-spa-first-login-consent.png)
 
 1. In het bestand `src/context/IMSAuthContext.js` start de functie `login` de gebruikersverificatie en de autorisatiestroom van de IMS-toepassing. Het genereert een willekeurige `code_verifier` en `code_challenge` om de `code` voor een toegangstoken veilig uit te wisselen. `code_verifier` wordt opgeslagen in de lokale opslag voor later gebruik. Zoals eerder vermeld, slaat de SPA de `client_secret` niet op of gebruikt deze, genereert deze er een ter plekke en gebruikt deze in twee stappen: `authorize` en `token` -verzoeken.
 
@@ -350,13 +350,13 @@ U hebt het volgende nodig om deze zelfstudie te voltooien:
    - AEM Release `2024.10.18459.20241031T210302Z` of hoger.
    - Nieuwe stijlproductprofielen (als de omgeving vóór november 2024 is gemaakt)
 
-  Zie [&#x200B; op open API-Gebaseerde AEM APIs van de Opstelling &#x200B;](../setup.md) artikel voor meer details.
+  Zie [ op open API-Gebaseerde AEM APIs van de Opstelling ](../setup.md) artikel voor meer details.
 
-- Het steekproef [&#x200B; WKND &#x200B;](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) project van Plaatsen moet op het worden opgesteld.
+- Het steekproef [ WKND ](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) project van Plaatsen moet op het worden opgesteld.
 
-- Toegang tot [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/developer-console/docs/guides/getting-started).
+- Toegang tot [ Adobe Developer Console ](https://developer.adobe.com/developer-console/docs/guides/getting-started).
 
-- Installeer [&#x200B; Node.js &#x200B;](https://nodejs.org/en/) op uw lokale machine om de toepassing van steekproefNodeJS in werking te stellen.
+- Installeer [ Node.js ](https://nodejs.org/en/) op uw lokale machine om de toepassing van steekproefNodeJS in werking te stellen.
 
 ### Ontwikkelingsstappen{#development-steps}
 
@@ -373,51 +373,51 @@ De ontwikkelingsstappen op hoog niveau zijn:
 
 ### ADC-project configureren{#configure-adc-project}
 
-Vorm ADC de stap van het Project wordt _herhaald_ van [&#x200B; OpenAPI-Gebaseerde AEM APIs van de Opstelling &#x200B;](../setup.md). De methode wordt herhaald om de Assets, de Sites-API toe te voegen en de verificatiemethode te configureren als OAuth Single Page App.
+Vorm ADC de stap van het Project wordt _herhaald_ van [ OpenAPI-Gebaseerde AEM APIs van de Opstelling ](../setup.md). De methode wordt herhaald om de Assets, de Sites-API toe te voegen en de verificatiemethode te configureren als OAuth Single Page App.
 
-1. Van [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/console/projects), open het gewenste project.
+1. Van [ Adobe Developer Console ](https://developer.adobe.com/console/projects), open het gewenste project.
 
 1. Om AEM APIs toe te voegen, klik op **voeg API** knoop toe.
 
-   ![&#x200B; voeg API &#x200B;](../assets/spa/add-api.png) toe
+   ![ voeg API ](../assets/spa/add-api.png) toe
 
 1. In _voeg API_ dialoog toe, filter door _Experience Cloud_ en selecteer de **kaart van het Beheer van de Inhoud van de Plaatsen van AEM CS** en klik **daarna**.
 
-   ![&#x200B; voeg AEM API &#x200B;](../assets/spa/add-aem-sites-api.png) toe
+   ![ voeg AEM API ](../assets/spa/add-aem-sites-api.png) toe
 
    >[!TIP]
    >
-   >Als de gewenste **AEM API kaart** wordt onbruikbaar gemaakt en _waarom is dit gehandicapt?_ de informatie toont het **Vereiste Vergunning** bericht één van de redenen zou kunnen zijn dat u uw milieu van AEM as a Cloud Service NIET hebt gemoderniseerd, zie [&#x200B; Modernisering van het milieu van AEM as a Cloud Service &#x200B;](../setup.md#modernization-of-aem-as-a-cloud-service-environment) voor meer informatie.
+   >Als de gewenste **AEM API kaart** wordt onbruikbaar gemaakt en _waarom is dit gehandicapt?_ de informatie toont het **Vereiste Vergunning** bericht één van de redenen zou kunnen zijn dat u uw milieu van AEM as a Cloud Service NIET hebt gemoderniseerd, zie [ Modernisering van het milieu van AEM as a Cloud Service ](../setup.md#modernization-of-aem-as-a-cloud-service-environment) voor meer informatie.
 
-1. Daarna, in _vorm API_ dialoog, selecteer de **3&rbrace; authentificatieoptie van de Authentificatie van de Gebruiker &lbrace;en klik** daarna **.**
+1. Daarna, in _vorm API_ dialoog, selecteer de **3} authentificatieoptie van de Authentificatie van de Gebruiker {en klik** daarna **.**
 
-   ![&#x200B; vorm AEM API &#x200B;](../assets/spa/configure-aem-api.png)
+   ![ vorm AEM API ](../assets/spa/configure-aem-api.png)
 
 1. In volgende _vorm API_ dialoog, selecteer de **OAuth enig-Pagina App** authentificatieoptie en klik **daarna**.
 
-   ![&#x200B; vorm OAuth enig-Pagina App &#x200B;](../assets/spa/configure-oauth-spa.png)
+   ![ vorm OAuth enig-Pagina App ](../assets/spa/configure-oauth-spa.png)
 
 1. In _vorm OAuth enig-Pagina App_ dialoog, ga de volgende details in en klik **daarna**.
    - Standaard omleidings-URI: `https://localhost:3001/callback`
    - URI-patroon omleiden: `https://localhost:3001/callback`
 
-   ![&#x200B; vorm OAuth enig-Pagina App &#x200B;](../assets/spa/configure-oauth-spa-details.png)
+   ![ vorm OAuth enig-Pagina App ](../assets/spa/configure-oauth-spa-details.png)
 
 1. Herzie het beschikbare werkingsgebied en klik **sparen gevormde API**.
 
-   ![&#x200B; sparen gevormde API &#x200B;](../assets/spa/save-configured-api.png)
+   ![ sparen gevormde API ](../assets/spa/save-configured-api.png)
 
 1. Herhaal de bovengenoemde stappen om **de Auteur API van AEM Assets toe te voegen**.
 
 1. Controleer de AEM API- en verificatieconfiguratie.
 
-   ![&#x200B; de configuratie van AEM API &#x200B;](../assets/spa/aem-api-configuration.png)
+   ![ de configuratie van AEM API ](../assets/spa/aem-api-configuration.png)
 
-   ![&#x200B; configuratie van de Authentificatie &#x200B;](../assets/spa/authentication-configuration.png)
+   ![ configuratie van de Authentificatie ](../assets/spa/authentication-configuration.png)
 
 ### AEM-instantie configureren om ADC-projectcommunicatie in te schakelen{#configure-aem-instance-to-enable-adc-project-communication}
 
-Volg de instructies van het [&#x200B; op OpenAPI-Gebaseerde artikel van AEM APIs van de Opstelling &#x200B;](../setup.md#configure-the-aem-instance-to-enable-adc-project-communication) om de instantie van AEM te vormen om de mededeling van het Project van ADC toe te laten.
+Volg de instructies van het [ op OpenAPI-Gebaseerde artikel van AEM APIs van de Opstelling ](../setup.md#configure-the-aem-instance-to-enable-adc-project-communication) om de instantie van AEM te vormen om de mededeling van het Project van ADC toe te laten.
 
 ### AEM CORS-configuratie{#aem-cors-configuration}
 
@@ -425,7 +425,7 @@ AEM as a Cloud Service Cross-Origin Resource Sharing (CORS) maakt het delen van 
 
 1. Zoek in AEM Project het `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql.cfg.json` -bestand in de map `/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author/` of maak dit.
 
-   ![&#x200B; plaats van CORS configuratiedossier &#x200B;](../assets/spa/locate-cors-config-file.png)
+   ![ plaats van CORS configuratiedossier ](../assets/spa/locate-cors-config-file.png)
 
 1. Voeg de volgende configuratie aan het dossier toe.
 
@@ -470,7 +470,7 @@ AEM as a Cloud Service Cross-Origin Resource Sharing (CORS) maakt het delen van 
 
 ### Vorm en stel SPA in werking{#configure-and-run-the-spa}
 
-1. Download het [&#x200B; KND SPA &amp; AEM APIs - de Gids van de Toepassing van de Demo &#x200B;](../assets/spa/wknd-spa-with-aemapis-demo.zip) zip dossier en haalt het uit.
+1. Download het [ KND SPA &amp; AEM APIs - de Gids van de Toepassing van de Demo ](../assets/spa/wknd-spa-with-aemapis-demo.zip) zip dossier en haalt het uit.
 
 1. Navigeer naar de uitgepakte map en kopieer het `.env.example` -bestand naar `.env` .
 
@@ -519,7 +519,7 @@ AEM as a Cloud Service Cross-Origin Resource Sharing (CORS) maakt het delen van 
 
 1. Open browser en navigeer aan `https://localhost:3001` om tot het KND SPA toegang te hebben. Accepteer de zelfondertekende certificaatwaarschuwing.
 
-   ![&#x200B; WKND Huis van het KUUROORD &#x200B;](../assets/spa/wknd-spa-home.png)
+   ![ WKND Huis van het KUUROORD ](../assets/spa/wknd-spa-home.png)
 
 1. Klik de **Login van Adobe IMS** knoop om de OAuth de authentificatiestroom van de App van de Enige Pagina in werking te stellen.
 
@@ -527,19 +527,19 @@ AEM as a Cloud Service Cross-Origin Resource Sharing (CORS) maakt het delen van 
 
 1. Op succesvolle authentificatie, wordt u opnieuw gericht terug naar de route WKND SPA `/invoke-aem-apis` en het toegangstoken wordt opgeslagen in de lokale opslag van browser.
 
-   ![&#x200B; WKND SPA roept AEM APIs &#x200B;](../assets/spa/wknd-spa-invoke-aem-apis.png) aan
+   ![ WKND SPA roept AEM APIs ](../assets/spa/wknd-spa-invoke-aem-apis.png) aan
 
 1. Van de `https://localhost:3001/invoke-aem-apis` route, klik de **Modellen van het Fragment van de Inhoud van de Vetch** knoop om de Modellen API van het Fragment van de Inhoud aan te halen. Het KUUROORD toont de lijst van de modellen van het inhoudsfragment.
 
-   ![&#x200B; de Modellen van CF van de Fetch van WKND SPA &#x200B;](../assets/spa/wknd-spa-fetch-cf-models.png)
+   ![ de Modellen van CF van de Fetch van WKND SPA ](../assets/spa/wknd-spa-fetch-cf-models.png)
 
 1. Eveneens, in **Assets - de Omslagen API** tabel, kunt u van DAM omslagen een lijst maken en schrappen.
 
-   ![&#x200B; WKND SPA Assets API &#x200B;](../assets/spa/wknd-spa-assets-api.png)
+   ![ WKND SPA Assets API ](../assets/spa/wknd-spa-assets-api.png)
 
 1. In de ontwikkelaarshulpmiddelen van browser, kunt u de netwerkverzoeken en de reacties inspecteren om de API vraag te begrijpen.
 
-   ![&#x200B; Verzoeken van het Netwerk van WKND SPA &#x200B;](../assets/spa/wknd-spa-network-requests.png)
+   ![ Verzoeken van het Netwerk van WKND SPA ](../assets/spa/wknd-spa-network-requests.png)
 
 >[!IMPORTANT]
 >
@@ -569,7 +569,7 @@ In deze zelfstudie hebt u geleerd hoe u op OpenAPI gebaseerde AEM API&#39;s op A
 
 ## Aanvullende bronnen{#additional-resources}
 
-- [&#x200B; Adobe Experience Manager as a Cloud Service APIs &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
-- [&#x200B; Gids van de Implementatie van de Authentificatie van de Gebruiker &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation)
-- [&#x200B; machtigt Verzoek &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/ims#authorize-request)
-- [&#x200B; het Ophalen tokens van de Toegang &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/ims#fetching-access-tokens)
+- [ Adobe Experience Manager as a Cloud Service APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
+- [ Gids van de Implementatie van de Authentificatie van de Gebruiker ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation)
+- [ machtigt Verzoek ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/ims#authorize-request)
+- [ het Ophalen tokens van de Toegang ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/ims#fetching-access-tokens)

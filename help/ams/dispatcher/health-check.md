@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 69b4e469-52cc-441b-b6e5-2fe7ef18da90
 duration: 247
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 0%
@@ -26,13 +26,13 @@ ht-degree: 0%
 Wanneer u een AMS-basislijnverzendingsprogramma hebt geïnstalleerd, wordt deze geleverd met een paar freebies.  Een van deze functies is een set scripts voor health check.
 Met deze scripts kan het taakverdelingsmechanisme waarmee de AEM-stapel wordt voorafgegaan, weten welke poten gezond zijn en in bedrijf blijven.
 
-![&#x200B; Geanimeerde GIF die de Stappen van de Controle van de verkeersstroom &#x200B;](assets/load-balancer-healthcheck/health-check.gif " tonen van de Controle van de Gezondheid ")
+![ Geanimeerde GIF die de Stappen van de Controle van de verkeersstroom ](assets/load-balancer-healthcheck/health-check.gif " tonen van de Controle van de Gezondheid ")
 
 ## Standaard taakverdelingscontrole
 
 Wanneer het klantenverkeer door Internet komt om uw instantie van AEM te bereiken zullen zij door een ladingsverdelingsmechanisme gaan
 
-![&#x200B; Beeld toont verkeersstroom van Internet om via een lading verdelingsmechanisme &#x200B;](assets/load-balancer-healthcheck/load-balancer-traffic-flow.png " lading-verdeler-verkeer-stroom ") te noemen
+![ Beeld toont verkeersstroom van Internet om via een lading verdelingsmechanisme ](assets/load-balancer-healthcheck/load-balancer-traffic-flow.png " lading-verdeler-verkeer-stroom ") te noemen
 
 Elke aanvraag die via het taakverdelingsmechanisme wordt ontvangen, leidt elke aanvraag tot een verwijzing.  Het taakverdelingsmechanisme beschikt over een mechanisme voor gezondheidscontrole dat is ingebouwd om ervoor te zorgen dat het verkeer naar een gezonde host stuurt.
 
@@ -44,7 +44,7 @@ De standaardcontrole is typisch een havencontrole om te zien of luisteren de ser
 
 Om te voorkomen dat verkeer naar een gezonde verzender wordt gestuurd die een ongezonde AEM-instantie voorgaat, heeft AMS een paar extra&#39;s gemaakt die de gezondheid van de poot evalueren en niet alleen van de Dispatcher.
 
-![&#x200B; Beeld toont de verschillende stukken voor de gezondheidscontrole om &#x200B;](assets/load-balancer-healthcheck/health-check-pieces.png " gezondheid-controle-stukken ") te werken
+![ Beeld toont de verschillende stukken voor de gezondheidscontrole om ](assets/load-balancer-healthcheck/health-check-pieces.png " gezondheid-controle-stukken ") te werken
 
 De gezondheidscontrole bestaat uit de volgende stukken:
 - 1 `Load balancer`
@@ -60,11 +60,11 @@ Wij zullen behandelen wat elk stuk aan opstelling en hun belang is
 
 Als u wilt aangeven of AEM werkt, hebt u het nodig om een basispagina-compilatie uit te voeren en de pagina te bedienen.  Adobe Managed Services heeft een basispakket gemaakt dat de testpagina bevat.  De pagina test dat de bewaarplaats omhoog is en dat de middelen en paginasjabloon kunnen teruggeven.
 
-![&#x200B; Beeld toont het Pakket AMS in het pakketmanager van CRX &#x200B;](assets/load-balancer-healthcheck/health-check-package.png " gezondheid-controle-pakket ")
+![ Beeld toont het Pakket AMS in het pakketmanager van CRX ](assets/load-balancer-healthcheck/health-check-package.png " gezondheid-controle-pakket ")
 
 Hier is de pagina.  De opslagplaats-id van de installatie wordt weergegeven
 
-![&#x200B; Beeld toont de pagina van het Regent van AMS &#x200B;](assets/load-balancer-healthcheck/health-check-page.png " gezondheid-controle-pagina ")
+![ Beeld toont de pagina van het Regent van AMS ](assets/load-balancer-healthcheck/health-check-page.png " gezondheid-controle-pagina ")
 
 > `Note:` We zorgen ervoor dat de pagina niet in cache kan worden opgeslagen.  Het zou niet de daadwerkelijke status controleren als het elke keer enkel een caching pagina terugkwam!
 
@@ -74,9 +74,9 @@ Dit is het lichtgewichteindpunt dat we kunnen testen om te zien dat AEM in gebru
 
 Wij vormen de ladingsbalansen om aan een CGI-BIN eindpunt in plaats van het gebruiken van een havencontrole te richten.
 
-![&#x200B; Beeld toont de de controleconfiguratie van de de gezondheid van het taakverdelingsmechanisme van AWS &#x200B;](assets/load-balancer-healthcheck/aws-settings.png " aws-lb-montages ")
+![ Beeld toont de de controleconfiguratie van de de gezondheid van het taakverdelingsmechanisme van AWS ](assets/load-balancer-healthcheck/aws-settings.png " aws-lb-montages ")
 
-![&#x200B; Beeld toont de Azure configuratie van de de gezondheidscontrole van het taakverdelingsmechanisme &#x200B;](assets/load-balancer-healthcheck/azure-settings.png " azure-lb-settings ")
+![ Beeld toont de Azure configuratie van de de gezondheidscontrole van het taakverdelingsmechanisme ](assets/load-balancer-healthcheck/azure-settings.png " azure-lb-settings ")
 
 ### Virtuele hosts voor Apache Health Check
 
@@ -87,7 +87,7 @@ Dit is het `<VirtualHost>` Apache-configuratiebestand waarmee de CGI-Bin-bestand
 ```
 Listen 81
 <VirtualHost *:81>
-    ServerName	"health"
+    ServerName "health"
     ...SNIP...
     ScriptAlias /health/ "/var/www/cgi-bin/health/"
 </VirtualHost>
@@ -128,6 +128,7 @@ RELOAD_MODE='author'
 ```
 
 Geldige opties:
+
 - auteur
    - Dit is de standaardoptie.
    - Hiermee wordt een onderhoudspagina voor de auteur geplaatst als deze ongezond is
@@ -142,27 +143,27 @@ Wanneer u de instelling `VirtualHost` voor deze instellingen bekijkt, ziet u dat
 
 ```
 <VirtualHost *:80>
-	ServerName	unhealthyauthor
-	ServerAlias	${AUTHOR_DEFAULT_HOSTNAME}
-	ErrorDocument	503 /error.html
-	DocumentRoot	/mnt/var/www/default
-	<Directory />
-		Options FollowSymLinks
-		AllowOverride None
-	</Directory>
-	<Directory "/mnt/var/www/default">
-		AllowOverride None
-		Require all granted
-	</Directory>
-	<IfModule mod_headers.c>
-		Header always add X-Dispatcher ${DISP_ID}
-		Header always add X-Vhost "unhealthy-author"
-	</IfModule>
-	<IfModule mod_rewrite.c>
-		ReWriteEngine   on
-		RewriteCond %{REQUEST_URI} !^/error.html$
-		RewriteRule ^/* /error.html [R=503,L,NC]
-	</IfModule>
+    ServerName    unhealthyauthor
+    ServerAlias    ${AUTHOR_DEFAULT_HOSTNAME}
+    ErrorDocument    503 /error.html
+    DocumentRoot    /mnt/var/www/default
+    <Directory />
+        Options FollowSymLinks
+        AllowOverride None
+    </Directory>
+    <Directory "/mnt/var/www/default">
+        AllowOverride None
+        Require all granted
+    </Directory>
+    <IfModule mod_headers.c>
+        Header always add X-Dispatcher ${DISP_ID}
+        Header always add X-Vhost "unhealthy-author"
+    </IfModule>
+    <IfModule mod_rewrite.c>
+        ReWriteEngine   on
+        RewriteCond %{REQUEST_URI} !^/error.html$
+        RewriteRule ^/* /error.html [R=503,L,NC]
+    </IfModule>
 </VirtualHost>
 ```
 
@@ -177,7 +178,7 @@ X-Vhost: unhealthy-author
 
 In plaats van een lege pagina krijgen ze deze pagina.
 
-![&#x200B; Beeld toont het standaardonderhoud pagina &#x200B;](assets/load-balancer-healthcheck/unhealthy-page.png " ongezond-pagina ")
+![ Beeld toont het standaardonderhoud pagina ](assets/load-balancer-healthcheck/unhealthy-page.png " ongezond-pagina ")
 
 ### CGI-Bin-scripts
 

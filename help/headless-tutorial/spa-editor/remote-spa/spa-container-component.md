@@ -3,7 +3,7 @@ title: Voeg editable React containercomponenten aan een Verre SPA toe
 description: Leer hoe te om editable containercomponenten aan verSPA toe te voegen die de auteurs van AEM toestaan om componenten in hen te slepen en te laten vallen.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7635
 thumbnail: kt-7635.jpeg
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
 duration: 306
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1112'
 ht-degree: 0%
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 {{spa-editor-deprecation}}
 
-[&#x200B; Vaste componenten &#x200B;](./spa-fixed-component.md) verstrekken wat flexibiliteit voor het ontwerpen van de inhoud van het KUUROORD, nochtans is deze benadering stijf en vereist ontwikkelaars om de nauwkeurige samenstelling van de editable inhoud te bepalen. Om de verwezenlijking van uitzonderlijke ervaringen door auteurs te steunen, steunt de Redacteur van het KUUROORD het gebruik van containercomponenten in het KUUROORD. Met containercomponenten kunnen auteurs toegestane componenten naar de container slepen en neerzetten, en ze ontwerpen, net als bij traditionele AEM Sites-ontwerpen!
+[ Vaste componenten ](./spa-fixed-component.md) verstrekken wat flexibiliteit voor het ontwerpen van de inhoud van het KUUROORD, nochtans is deze benadering stijf en vereist ontwikkelaars om de nauwkeurige samenstelling van de editable inhoud te bepalen. Om de verwezenlijking van uitzonderlijke ervaringen door auteurs te steunen, steunt de Redacteur van het KUUROORD het gebruik van containercomponenten in het KUUROORD. Met containercomponenten kunnen auteurs toegestane componenten naar de container slepen en neerzetten, en ze ontwerpen, net als bij traditionele AEM Sites-ontwerpen!
 
-![&#x200B; Bewerkbare containercomponenten &#x200B;](./assets/spa-container-component/intro.png)
+![ Bewerkbare containercomponenten ](./assets/spa-container-component/intro.png)
 
 In dit hoofdstuk, voegen wij een editable container aan de huismening toe die auteurs toestaat om rijke inhoudservaringen samen te stellen en te lay-out gebruikend de Bewerkbare componenten van het Reageren direct in het KUUROORD.
 
@@ -79,13 +79,13 @@ Een bewerkbaar gebied toevoegen aan de weergave Home:
 
 Het bestand `Home.js` moet er als volgt uitzien:
 
-![&#x200B; Home.js &#x200B;](./assets/spa-container-component/home-js.png)
+![ Home.js ](./assets/spa-container-component/home-js.png)
 
 ## Bewerkbare componenten maken
 
 Om het volledige effect van de flexibele auteurservaringscontainers te krijgen verstrekt in de Redacteur van het KUUROORD. We hebben al een bewerkbare component Titel gemaakt, maar laten we er nog een paar maken waarmee auteurs bewerkbare componenten Tekst en Afbeelding kunnen gebruiken in de zojuist toegevoegde component ResponsiveGrid.
 
-De nieuwe editable componenten van het Reageren van de Tekst en van het Beeld worden gecreeerd gebruikend het editable patroon van de componentendefinitie die in [&#x200B; wordt uitgevoerd editable vaste componenten &#x200B;](./spa-fixed-component.md).
+De nieuwe editable componenten van het Reageren van de Tekst en van het Beeld worden gecreeerd gebruikend het editable patroon van de componentendefinitie die in [ wordt uitgevoerd editable vaste componenten ](./spa-fixed-component.md).
 
 ### Bewerkbare tekstcomponent
 
@@ -150,7 +150,7 @@ De nieuwe editable componenten van het Reageren van de Tekst en van het Beeld wo
 
 De bewerkbare implementatie van de component Text moet er als volgt uitzien:
 
-![&#x200B; Editable tekstcomponent &#x200B;](./assets/spa-container-component/text-js.png)
+![ Editable tekstcomponent ](./assets/spa-container-component/text-js.png)
 
 ### Afbeeldingscomponent
 
@@ -258,7 +258,7 @@ export default EditableImage;
 
 De bewerkbare implementatie van de component Image moet er als volgt uitzien:
 
-![&#x200B; Bewerkbare beeldcomponent &#x200B;](./assets/spa-container-component/image-js.png)
+![ Bewerkbare beeldcomponent ](./assets/spa-container-component/image-js.png)
 
 
 ### De bewerkbare componenten importeren
@@ -279,7 +279,7 @@ De nieuwe `EditableText` - en `EditableImage` React-componenten worden vermeld i
 
 Het resultaat moet er als volgt uitzien:
 
-![&#x200B; Home.js &#x200B;](./assets/spa-container-component/home-js-imports.png)
+![ Home.js ](./assets/spa-container-component/home-js-imports.png)
 
 Als deze invoer _niet_ wordt toegevoegd, wordt de `EditableText` en `EditableImage` code niet aangehaald door SPA, en zo, worden de componenten niet in kaart gebracht aan de verstrekte middeltypes.
 
@@ -297,13 +297,13 @@ Om de Verre container van het malplaatje van de Pagina van het KUUROORD te vorme
 1. Navigeer aan __Hulpmiddelen > Algemeen > Malplaatjes > app WKND__
 1. Bewerk __Pagina van het Rapport SPA__
 
-   ![&#x200B; Responsief beleid van het Net &#x200B;](./assets/spa-container-component/templates-remote-spa-page.png)
+   ![ Responsief beleid van het Net ](./assets/spa-container-component/templates-remote-spa-page.png)
 
 1. Selecteer __Structuur__ op de wijzeschakelaar in het hoogste recht
 1. Tik om de __Container van de Lay-out__ te selecteren
 1. Tik het __pictogram van het Beleid__ in popup bar
 
-   ![&#x200B; Responsief beleid van het Net &#x200B;](./assets/spa-container-component/templates-policies-action.png)
+   ![ Responsief beleid van het Net ](./assets/spa-container-component/templates-policies-action.png)
 
 1. Op het recht, onder __Toegestane Componenten__ lusje, breid __APP WKND uit - INHOUD__
 1. Zorg ervoor dat alleen het volgende is geselecteerd:
@@ -311,7 +311,7 @@ Om de Verre container van het malplaatje van de Pagina van het KUUROORD te vorme
    1. Tekst
    1. Titel
 
-   ![&#x200B; Verre Pagina van het KUUROORD &#x200B;](./assets/spa-container-component/templates-allowed-components.png)
+   ![ Verre Pagina van het KUUROORD ](./assets/spa-container-component/templates-allowed-components.png)
 
 1. Tik __Gereed__
 
@@ -333,7 +333,7 @@ Nadat SPA wordt bijgewerkt om `<ResponsiveGrid...>` in te bedden, verpakt voor d
    1. Titel
    1. Afbeelding
    1. Tekst
-1. __Auteur__ de __3 component van de Titel &lbrace;__
+1. __Auteur__ de __3 component van de Titel {__
    1. Tik de component van de Titel, en tik het __moersleutelpictogram__ ____ de component van de Titel uitgeven
    1. Voeg de volgende tekst toe:
       1. Titel: __Zomer komt, laten we het meesten van het maken!__
@@ -352,21 +352,21 @@ Nadat SPA wordt bijgewerkt om `<ResponsiveGrid...>` in te bedden, verpakt voor d
 
 1. Uw componenten zijn nu ontworpen, maar worden verticaal gestapeld.
 
-   ![&#x200B; Authored componenten &#x200B;](./assets/spa-container-component/authored-components.png)
+   ![ Authored componenten ](./assets/spa-container-component/authored-components.png)
 
    Gebruik de AEM-lay-outmodus om de grootte en lay-out van de componenten aan te passen.
 
 1. Schakelaar aan __Wijze van de Lay-out__ gebruikend de wijze-selecteur in top-right
 1. __vergroot__ de componenten van het Beeld en van de Tekst, dusdanig dat zij zij aan zij zijn
-   1. __de component van het 1&rbrace; Beeld__ zou 8 kolommen breed __moeten zijn__
+   1. __de component van het 1} Beeld__ zou 8 kolommen breed __moeten zijn__
    1. __de component van de Tekst__ __3 kolommen breed__ zou moeten zijn
 
-   ![&#x200B; componenten van de Lay-out &#x200B;](./assets/spa-container-component/layout-components.png)
+   ![ componenten van de Lay-out ](./assets/spa-container-component/layout-components.png)
 
 1. __Voorproef__ uw veranderingen in de Redacteur van de Pagina van AEM
-1. Vernieuw de WKND App die plaatselijk op [&#x200B; http://localhost:3000 &#x200B;](http://localhost:3000) loopt om de authored veranderingen te zien!
+1. Vernieuw de WKND App die plaatselijk op [ http://localhost :3000 ](http://localhost:3000) loopt om de authored veranderingen te zien!
 
-   ![&#x200B; component van de Container in KUUROORD &#x200B;](./assets/spa-container-component/localhost-final.png)
+   ![ component van de Container in KUUROORD ](./assets/spa-container-component/localhost-final.png)
 
 
 ## Gefeliciteerd!
@@ -381,4 +381,4 @@ U hebt een containercomponent toegevoegd waarmee bewerkbare componenten door aut
 
 ## Volgende stappen
 
-De volgende stap gebruikt deze zelfde techniek om [&#x200B; een editable component aan een route van de Details van het Avontuur &#x200B;](./spa-dynamic-routes.md) in het KUUROORD toe te voegen.
+De volgende stap gebruikt deze zelfde techniek om [ een editable component aan een route van de Details van het Avontuur ](./spa-dynamic-routes.md) in het KUUROORD toe te voegen.

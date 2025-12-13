@@ -4,7 +4,7 @@ description: Leer hoe u ontvangen AEM-gebeurtenissen verwerkt met Adobe I/O Runt
 version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
-role: Architect, Developer
+role: Developer
 level: Beginner
 doc-type: Tutorial
 duration: 558
@@ -12,7 +12,7 @@ last-substantial-update: 2024-01-30T00:00:00Z
 jira: KT-14879
 thumbnail: KT-14879.jpeg
 exl-id: c362011e-89e4-479c-9a6c-2e5caa3b6e02
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # AEM Events processing using Adobe I/O Runtime Action
 
-Leer hoe te om ontvangen Gebeurtenissen van AEM te verwerken gebruikend [&#x200B; Adobe I/O Runtime &#x200B;](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) Actie. Dit voorbeeld verbetert het vroegere voorbeeld [&#x200B; Actie van Adobe I/O Runtime en de Gebeurtenissen van AEM &#x200B;](runtime-action.md), zorg ervoor u het alvorens met dit hebt voltooid.
+Leer hoe te om ontvangen Gebeurtenissen van AEM te verwerken gebruikend [ Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) Actie. Dit voorbeeld verbetert het vroegere voorbeeld [ Actie van Adobe I/O Runtime en de Gebeurtenissen van AEM ](runtime-action.md), zorg ervoor u het alvorens met dit hebt voltooid.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427054?quality=12&learn=on)
 
@@ -31,17 +31,17 @@ In dit voorbeeld worden de oorspronkelijke gebeurtenisgegevens en de ontvangen g
 
 U hebt het volgende nodig om deze zelfstudie te voltooien:
 
-- Het milieu van AEM as a Cloud Service met [&#x200B; toegelaten de Gebeurtenis van AEM &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Ook, moet het steekproef [&#128279;](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) project van de Plaatsen WKND  worden opgesteld aan het.
+- Het milieu van AEM as a Cloud Service met [ toegelaten de Gebeurtenis van AEM ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Ook, moet het steekproef [ project van de Plaatsen WKND ](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) worden opgesteld aan het.
 
-- Toegang tot [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/developer-console/docs/guides/getting-started).
+- Toegang tot [ Adobe Developer Console ](https://developer.adobe.com/developer-console/docs/guides/getting-started).
 
-- [&#x200B; Adobe Developer CLI &#x200B;](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) geïnstalleerd op uw lokale machine.
+- [ Adobe Developer CLI ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) geïnstalleerd op uw lokale machine.
 
-- Lokaal geïnitialiseerd project van het vroegere voorbeeld [&#x200B; de Actie van Adobe I/O Runtime en de Gebeurtenissen van AEM &#x200B;](./runtime-action.md#initialize-project-for-local-development).
+- Lokaal geïnitialiseerd project van het vroegere voorbeeld [ de Actie van Adobe I/O Runtime en de Gebeurtenissen van AEM ](./runtime-action.md#initialize-project-for-local-development).
 
 ## AEM Events Processor, actie
 
-In dit voorbeeld, voert de actie van de gebeurtenisbewerker [&#128279;](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) volgende taken uit:
+In dit voorbeeld, voert de actie van de gebeurtenisbewerker [ ](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) volgende taken uit:
 
 - Parseert ontvangen gebeurtenis in een activiteitenbericht.
 - Als de ontvangen gebeurtenis van _Gewijzigd van het Fragment van de Inhoud_ type is, vraag terug naar de auteursdienst van AEM om de wijzigingsdetails te vinden.
@@ -49,7 +49,7 @@ In dit voorbeeld, voert de actie van de gebeurtenisbewerker [&#128279;](https://
 
 Om bovengenoemde taken uit te voeren, laten wij beginnen door een actie aan het project toe te voegen, JavaScript modules te ontwikkelen om de bovengenoemde taken uit te voeren, en tenslotte de actiecode bij te werken om de ontwikkelde modules te gebruiken.
 
-Verwijs naar het in bijlage [&#x200B; WKND-AEM-Event-Runtime-Action.zip &#x200B;](../assets/examples/event-processing-using-runtime-action/WKND-AEM-Eventing-Runtime-Action.zip) dossier voor de volledige code, en onder sectie benadrukt de belangrijkste dossiers.
+Verwijs naar het in bijlage [ WKND-AEM-Event-Runtime-Action.zip ](../assets/examples/event-processing-using-runtime-action/WKND-AEM-Eventing-Runtime-Action.zip) dossier voor de volledige code, en onder sectie benadrukt de belangrijkste dossiers.
 
 ### Handeling toevoegen
 
@@ -61,7 +61,7 @@ Verwijs naar het in bijlage [&#x200B; WKND-AEM-Event-Runtime-Action.zip &#x200B;
 
 - Selecteer `@adobe/generator-add-action-generic` als actiesjabloon en geef de handeling de naam `aem-event-processor` .
 
-  ![&#x200B; voeg actie &#x200B;](../assets/examples/event-processing-using-runtime-action/add-action-template.png) toe
+  ![ voeg actie ](../assets/examples/event-processing-using-runtime-action/add-action-template.png) toe
 
 ### JavaScript-modules ontwikkelen
 
@@ -162,7 +162,7 @@ Om de hierboven vermelde taken uit te voeren, ontwikkelen de volgende modules va
   ...
   ```
 
-  Verwijs naar [&#x200B; zelfstudie van de Referenties van de Dienst van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=nl-NL) om meer over het te leren. Ook, de [&#x200B; Dossiers van de Configuratie van App Builder &#x200B;](https://developer.adobe.com/app-builder/docs/guides/configuration/) voor het beheren van geheimen en actieparameters.
+  Verwijs naar [ zelfstudie van de Referenties van de Dienst van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en) om meer over het te leren. Ook, de [ Dossiers van de Configuratie van App Builder ](https://developer.adobe.com/app-builder/docs/guides/configuration/) voor het beheren van geheimen en actieparameters.
 
 - In de module `src/dx-excshell-1/actions/aem-event-processor/storeEventData.js` worden de oorspronkelijke gebeurtenisgegevens, het activiteitenbericht en eventuele wijzigingsgegevens opgeslagen in Adobe I/O Runtime.
 

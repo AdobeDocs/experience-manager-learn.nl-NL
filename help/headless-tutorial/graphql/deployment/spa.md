@@ -4,14 +4,14 @@ description: Leer over plaatsingsoverwegingen voor enig-pagina app (SPA) AEM Hea
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-10587
 thumbnail: KT-10587.jpg
 mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
 duration: 136
-source-git-commit: 6425188da75f789b0661ec9bfb79624b5704c92b
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Hieronder zijn plaatsingsconfiguraties die voor de plaatsingen van de productie 
 
 | SPA verbindt met → | AEM-auteur | AEM Publiceren | AEM Preview |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [&#x200B; de filters van Dispatcher &#x200B;](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [ de filters van Dispatcher ](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Delen van bronnen van oorsprong (CORS) | ✘ | ✘ | ✘ |
 | AEM-hosts | ✘ | ✘ | ✘ |
 
@@ -66,29 +66,29 @@ Een SPA en AEM hebben verschillende domeinen wanneer zij door eind - gebruikers 
 + AEM is toegankelijk via: `https://wknd.site/`
 + SPA is toegankelijk via `https://wknd-app.site/`
 
-Aangezien AEM en het KUUROORD van verschillende domeinen worden betreden, dwingen Webbrowsers veiligheidspolitiek zoals [&#x200B; dwars-oorsprong middel het delen (CORS) &#x200B;](./configurations/cors.md) af, en verhinderen het delen van de koekjes van HTTP (zoals AEM `login-token` koekje).
+Aangezien AEM en het KUUROORD van verschillende domeinen worden betreden, dwingen Webbrowsers veiligheidspolitiek zoals [ dwars-oorsprong middel het delen (CORS) ](./configurations/cors.md) af, en verhinderen het delen van de koekjes van HTTP (zoals AEM `login-token` koekje).
 
 Hieronder zijn plaatsingsconfiguraties die voor de plaatsingen van de productie van het KUUROORD worden vereist, wanneer ontvangen op een verschillend domein dan AEM.
 
 | SPA verbindt met → | AEM-auteur | AEM Publiceren | AEM Preview |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [&#x200B; de filters van Dispatcher &#x200B;](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
-| [&#x200B; bron het delen van de kruis-oorsprong (CORS) &#x200B;](./configurations/cors.md) | ✔ | ✔ | ✔ |
-| [&#x200B; de gastheren van AEM &#x200B;](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| [ de filters van Dispatcher ](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [ bron het delen van de kruis-oorsprong (CORS) ](./configurations/cors.md) | ✔ | ✔ | ✔ |
+| [ de gastheren van AEM ](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 #### Voorbeeld-SPA-implementatie op verschillende domeinen
 
 In dit voorbeeld, wordt het KUUROORD opgesteld aan een Netlify domein (`https://main--sparkly-marzipan-b20bf8.netlify.app/`) en het KUUROORD gebruikt AEM GraphQL APIs van het AEM publiceer domein (`https://publish-p65804-e666805.adobeaemcloud.com`). In de onderstaande schermafbeeldingen wordt de vereiste CORS benadrukt.
 
-1. Het KUUROORD wordt gediend van een Netlify domein, maar maakt een XHR vraag aan AEM GraphQL APIs op een verschillend domein. Dit dwars-plaats verzoek vereist [&#x200B; CORS &#x200B;](./configurations/cors.md) om opstelling op AEM worden geplaatst om verzoek van het domein toe te staan Netlify om tot zijn inhoud toegang te hebben.
+1. Het KUUROORD wordt gediend van een Netlify domein, maar maakt een XHR vraag aan AEM GraphQL APIs op een verschillend domein. Dit dwars-plaats verzoek vereist [ CORS ](./configurations/cors.md) om opstelling op AEM worden geplaatst om verzoek van het domein toe te staan Netlify om tot zijn inhoud toegang te hebben.
 
-   ![&#x200B; verzoek van het KUUROORD van gastheren van SPA &amp; van AEM &#x200B;](assets/spa/cors-requirement.png)
+   ![ verzoek van het KUUROORD van gastheren van SPA &amp; van AEM ](assets/spa/cors-requirement.png)
 
 2. Wanneer de XHR-aanvraag wordt gecontroleerd op de AEM GraphQL API, is de `Access-Control-Allow-Origin` aanwezig en wordt aan de webbrowser doorgegeven dat AEM een aanvraag van dit Netlify-domein toestaat om toegang te krijgen tot de inhoud ervan.
 
-   Als AEM [&#x200B; CORS &#x200B;](./configurations/cors.md) ontbrak of niet het Netlify domein omvatte, zou Webbrowser het XHR- verzoek ontbreken, en een fout melden CORS.
+   Als AEM [ CORS ](./configurations/cors.md) ontbrak of niet het Netlify domein omvatte, zou Webbrowser het XHR- verzoek ontbreken, en een fout melden CORS.
 
-   ![&#x200B; de Kopbal van de Reactie van CORS AEM GraphQL API &#x200B;](assets/spa/cors-response-headers.png)
+   ![ de Kopbal van de Reactie van CORS AEM GraphQL API ](assets/spa/cors-response-headers.png)
 
 ## Voorbeeld-app van één pagina
 

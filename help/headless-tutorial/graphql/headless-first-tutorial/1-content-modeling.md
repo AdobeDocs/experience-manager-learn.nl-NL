@@ -12,7 +12,7 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: 6e5e3cb4-9a47-42af-86af-da33fd80cb47
 duration: 175
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
 1. Navigeer aan __Hulpmiddelen > Browser van de Configuratie__ om een configuratie voor de headless ervaring tot stand te brengen.
 
-   ![&#x200B; creeer omslag &#x200B;](./assets/1/create-configuration.png)
+   ![ creeer omslag ](./assets/1/create-configuration.png)
 
    Verstrek a __titel__ en __naam__, en controleer __GraphQL de Verlengde Vragen__ en __Modellen van het Fragment van de Inhoud__.
 
@@ -48,19 +48,19 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
 1. Navigeer aan __Hulpmiddelen > de Modellen van het Fragment van de Inhoud__ en selecteer de omslag met de naam van de configuratie die in stap 1 wordt gecreeerd.
 
-   ![&#x200B; Modelomslag &#x200B;](./assets/1/model-folder.png)
+   ![ Modelomslag ](./assets/1/model-folder.png)
 
-1. Binnen de omslag, creeert de uitgezochte ____ en noemt het model __Taser__. Voeg de volgende datatypes aan het __1&rbrace; model van het Taser &lbrace;toe.__
+1. Binnen de omslag, creeert de uitgezochte ____ en noemt het model __Taser__. Voeg de volgende datatypes aan het __1} model van het Taser {toe.__
 
    | Datatype | Naam | Vereist | Opties |
    |----------|------|----------|---------|
    | Content Reference | Element | ja | Voeg desgewenst een standaardafbeelding toe. Voorbeeld: /content/dam/wknd-headless/assets/AdobeStock_307513975.mp4 |
-   | Tekst met één regel | Titel | ja |
-   | Tekst met één regel | Voortitel | nee |
+   | Tekst met één regel | Titel | ja | |
+   | Tekst met één regel | Voortitel | nee | |
    | Tekst met meerdere regels | Beschrijving | nee | Zorg ervoor dat het standaardtype tekst met opmaak is |
    | Opsomming | Stijl | ja | Renderen als vervolgkeuzelijst. Opties zijn Hero -> hero en Topaanbieding -> aanbevolen |
 
-   ![&#x200B; model van de Taser &#x200B;](./assets/1/teaser-model.png)
+   ![ model van de Taser ](./assets/1/teaser-model.png)
 
 1. Binnen de omslag, creeer een tweede model genoemd __Aanbieding__. Klik op Maken en geef het model de naam &quot;Aanbieding&quot; en voeg de volgende datatypen toe:
 
@@ -70,7 +70,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
    | Tekst met meerdere regels | Beschrijving | nee |  |
    | Tekst met meerdere regels | Artikel | nee |  |
 
-   ![&#x200B; model van de Aanbieding &#x200B;](./assets/1/offer-model.png)
+   ![ model van de Aanbieding ](./assets/1/offer-model.png)
 
 1. Binnen de omslag, creeer een derde model genoemd __Lijst van het Beeld__. Klik op Maken en geef het model de naam &quot;Lijst van afbeeldingen&quot; en voeg de volgende datatypen toe:
 
@@ -78,18 +78,18 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
    |----------|------|----------|---------|
    | Fragmentverwijzing | Items weergeven | ja | Renderen als meerdere velden. Toegestaan inhoudsfragmentmodel is aangeboden. |
 
-   ![&#x200B; Model van de Lijst van het Beeld &#x200B;](./assets/1/imagelist-model.png)
+   ![ Model van de Lijst van het Beeld ](./assets/1/imagelist-model.png)
 
 ## Inhoudsfragmenten
 
 1. Navigeer nu naar Assets en maak een map voor de nieuwe site. Klik op Maken en geef de map een naam.
 
-   ![&#x200B; voeg omslag &#x200B;](./assets/1/create-folder.png) toe
+   ![ voeg omslag ](./assets/1/create-folder.png) toe
 
 1. Nadat de omslag wordt gecreeerd, selecteer de omslag en open zijn __Eigenschappen__.
-1. In het lusje van de Configuraties van de Wolk van de omslag ____, selecteer de configuratie [&#x200B; vroeger &#x200B;](#enable-content-fragments-and-graphql) gecreeerd.
+1. In het lusje van de Configuraties van de Wolk van de omslag ____, selecteer de configuratie [ vroeger ](#enable-content-fragments-and-graphql) gecreeerd.
 
-   ![&#x200B; de omslag van Activa AEM Headless wolkenconfiguratie &#x200B;](./assets/1/cloud-config.png)
+   ![ de omslag van Activa AEM Headless wolkenconfiguratie ](./assets/1/cloud-config.png)
 
    Klik in de nieuwe map en maak een teaser. Klik __creëren__ en __het Fragment van de Inhoud__ en selecteren het __Taser__ model. Noem het model __Hero__ en klik __creeer__.
 
@@ -101,17 +101,17 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
    | Beschrijving | Leeg laten |
    | Stijl | `Hero` |
 
-   ![&#x200B; heldfragment &#x200B;](./assets/1/teaser-model.png)
+   ![ heldfragment ](./assets/1/teaser-model.png)
 
 ## GraphQL-eindpunten
 
 1. Ga aan __Hulpmiddelen > GraphQL__
 
-   ![&#x200B; AEM GraphiQL &#x200B;](./assets/1/endpoint-nav.png)
+   ![ AEM GraphiQL ](./assets/1/endpoint-nav.png)
 
 1. Klik __creëren__ en geef het nieuwe eindpunt een naam en kies de pas gecreëerde configuratie.
 
-   ![&#x200B; AEM Hoofdloze eindpunt van GraphQL &#x200B;](./assets/1/endpoint.png)
+   ![ AEM Hoofdloze eindpunt van GraphQL ](./assets/1/endpoint.png)
 
 ## Aangehouden GraphQL-query&#39;s
 
@@ -130,7 +130,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
    }
    ```
 
-   U zou een lijst moeten krijgen die het enige gemaakte fragment [&#x200B; hierboven &#x200B;](#create-content) bevatten.
+   U zou een lijst moeten krijgen die het enige gemaakte fragment [ hierboven ](#create-content) bevatten.
 
    Voor deze oefening maakt u een volledige query die de AEM-app zonder kop gebruikt. Maak een query die één teaser per pad retourneert. Voer de volgende query in in de query-editor:
 

@@ -4,16 +4,16 @@ description: Meer informatie over geavanceerde netwerkopties van AEM as a Cloud 
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Integrations, Security
-role: Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-9354
 thumbnail: KT-9354.png
 last-substantial-update: 2022-10-13T00:00:00Z
 exl-id: d1c1a3cf-989a-4693-9e0f-c1b545643e41
 duration: 85
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 AEM as a Cloud Service biedt geavanceerde netwerkfuncties waarmee u verbindingen met en van AEM as a Cloud Service-programma&#39;s nauwkeurig kunt beheren.
 
-|                                                   | [&#x200B; Programma&#39;s van de Productie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html?lang=nl-NL) | [Sandbox-programma&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=nl-NL) |
+|                                                   | [ Programma&#39;s van de Productie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) | [Sandbox-programma&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) |
 |---------------------------------------------------|:-----------------------:|:---------------------:|
 | Ondersteunt geavanceerd netwerken | ✔ | ✘ |
 
@@ -37,7 +37,7 @@ Geavanceerde netwerken van AEM bestaan uit drie opties voor het beheer van conne
 | [__Virtueel Privé Netwerk__](./vpn.md) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 
 
-Voor meer details op de betrokken overwegingen wanneer het selecteren van het aangewezen geavanceerde voorzien van een netwerktype, zie [&#x200B; geavanceerde voorzien van een netwerkdocumentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html?lang=nl-NL).
+Voor meer details op de betrokken overwegingen wanneer het selecteren van het aangewezen geavanceerde voorzien van een netwerktype, zie [ geavanceerde voorzien van een netwerkdocumentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html).
 
 ## Geavanceerde zelfstudies voor netwerken
 
@@ -73,7 +73,7 @@ Zodra de meest aangewezen geavanceerde voorzien van een netwerkoptie die op de b
 
 Deze inzameling verstrekt voorbeelden van de configuratie en de code die aan hefboomwerking geavanceerde voorzien van een netwerkeigenschappen voor specifieke gebruiksgevallen wordt vereist.
 
-Verzeker de aangewezen [&#x200B; geavanceerde voorzien van een netwerkconfiguratie &#x200B;](#advanced-networking) opstelling voorafgaand aan het volgen van deze leerprogramma&#39;s is geweest.
+Verzeker de aangewezen [ geavanceerde voorzien van een netwerkconfiguratie ](#advanced-networking) opstelling voorafgaand aan het volgen van deze leerprogramma&#39;s is geweest.
 
 <table><tr>
    <td>
@@ -106,15 +106,15 @@ Verzeker de aangewezen [&#x200B; geavanceerde voorzien van een netwerkconfigurat
       </p>
     </td>   
     <td>
-      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html?lang=nl-NL"><img alt="Een IP-lijst van gewenste personen toepassen" src="./assets/code_examples__vpn-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html?lang=nl-NL"> Toepassend een IP lijst van gewenste personen </a></strong></div>
+      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html"><img alt="Een IP-lijst van gewenste personen toepassen" src="./assets/code_examples__vpn-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html"> Toepassend een IP lijst van gewenste personen </a></strong></div>
       <p>
             Vorm een IP lijst van gewenste personen dusdanig dat slechts het verkeer van VPN tot AEM kan toegang hebben.
       </p>
     </td>
    <td>
-      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html?lang=nl-NL#restrict-vpn-to-ingress-connections"><img alt="Op pad gebaseerde VPN-toegangsbeperkingen voor AEM Publish" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html?lang=nl-NL#restrict-vpn-to-ingress-connections"> Op weg-Gebaseerde de toegangsbeperkingen van VPN aan AEM publiceren </a></strong></div>
+      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="Op pad gebaseerde VPN-toegangsbeperkingen voor AEM Publish" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"> Op weg-Gebaseerde de toegangsbeperkingen van VPN aan AEM publiceren </a></strong></div>
       <p>
             Vereis de toegang van VPN voor specifieke wegen op AEM publiceren.
       </p>

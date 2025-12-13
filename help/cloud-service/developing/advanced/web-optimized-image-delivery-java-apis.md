@@ -4,7 +4,7 @@ description: Leer hoe u voor het web geoptimaliseerde AEM as a Cloud Service-bee
 version: Experience Manager as a Cloud Service
 feature: APIs, Sling Model, OSGI, HTL or HTML Template Language
 topic: Performance, Development
-role: Architect, Developer
+role: Developer
 level: Intermediate
 doc-type: Code Sample
 last-substantial-update: 2023-03-30T00:00:00Z
@@ -12,7 +12,7 @@ jira: KT-13014
 thumbnail: KT-13014.jpeg
 exl-id: c6bb9d6d-aef0-42d5-a189-f904bbbd7694
 duration: 352
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 0%
@@ -23,17 +23,17 @@ ht-degree: 0%
 
 Leer hoe u voor het web geoptimaliseerde Java™ API&#39;s voor het leveren van images kunt gebruiken voor het ontwikkelen van uiterst krachtige webervaringen.
 
-AEM as a Cloud Service steunt [&#x200B; Web-geoptimaliseerde beeldlevering &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=nl-NL) die automatisch geoptimaliseerde vertoningen van het beeldWeb van activa produceert. Voor webgeoptimaliseerde afbeeldingslevering kunt u drie manieren gebruiken:
+AEM as a Cloud Service steunt [ Web-geoptimaliseerde beeldlevering ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) die automatisch geoptimaliseerde vertoningen van het beeldWeb van activa produceert. Voor webgeoptimaliseerde afbeeldingslevering kunt u drie manieren gebruiken:
 
-1. [&#x200B; de Componenten van WCM van de Kern van het Gebruik AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
-2. Creeer douanecomponent die [&#x200B; de het beeldcomponent van de Component van de Kern van AEM WCM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html?lang=nl-NL#tackling-the-image-problem) uitbreidt
+1. [ de Componenten van WCM van de Kern van het Gebruik AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+2. Creeer douanecomponent die [ de het beeldcomponent van de Component van de Kern van AEM WCM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html#tackling-the-image-problem) uitbreidt
 3. Maak een aangepaste component die de AssetDelivery Java™-API gebruikt om voor het web geoptimaliseerde afbeeldings-URL&#39;s te genereren.
 
 In dit artikel wordt het gebruik van voor het web geoptimaliseerde Java™-API&#39;s voor afbeeldingen in een aangepaste component besproken, op een manier die het mogelijk maakt code te gebruiken op zowel AEM as a Cloud Service als de AEM SDK.
 
 ## Java™ API&#39;s
 
-[&#x200B; AssetDelivery API &#x200B;](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/cq/wcm/spi/AssetDelivery.html) is de dienst OSGi die Web-geoptimaliseerde levering URLs voor beeldactiva produceert. `AssetDelivery.getDeliveryURL(...)` toegestane opties worden [&#x200B; hier gedocumenteerd &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=nl-NL#can-i-use-web-optimized-image-delivery-with-my-own-component%3F).
+[ AssetDelivery API ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/cq/wcm/spi/AssetDelivery.html) is de dienst OSGi die Web-geoptimaliseerde levering URLs voor beeldactiva produceert. `AssetDelivery.getDeliveryURL(...)` toegestane opties worden [ hier gedocumenteerd ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html#can-i-use-web-optimized-image-delivery-with-my-own-component%3F).
 
 Aan de `AssetDelivery` OSGi-service wordt alleen voldaan wanneer deze wordt uitgevoerd in AEM as a Cloud Service. In AEM SDK verwijst dit naar het `AssetDelivery` retourneren van de OSGi-service `null` . U kunt het beste de voor het web geoptimaliseerde URL gebruiken als u op AEM as a Cloud Service werkt en een fallback-afbeeldings-URL gebruiken op de AEM SDK. De westratie van het element is doorgaans voldoende fallback.
 
@@ -81,13 +81,13 @@ Met de volgende code wordt een voorbeeldcomponent gemaakt die een lijst met afbe
 
 Wanneer de code op AEM as a Cloud Service wordt uitgevoerd, worden de webgeoptimaliseerde webafbeeldingsuitvoeringen gebruikt in de aangepaste component.
 
-![&#x200B; Web-geoptimaliseerde beelden op AEM as a Cloud Service &#x200B;](./assets/web-optimized-image-delivery-java-apis/cloud-service.png)
+![ Web-geoptimaliseerde beelden op AEM as a Cloud Service ](./assets/web-optimized-image-delivery-java-apis/cloud-service.png)
 
 _AEM as a Cloud Service steunt AssetDelivery API, zodat wordt de Web-geoptimaliseerde webp vertoning gebruikt_
 
 Wanneer de code op AEM SDK wordt uitgevoerd, worden de minder optimale statische webrengingen gebruikt, die voor de component toestaan om tijdens lokale ontwikkeling te functioneren.
 
-![&#x200B; Web-geoptimaliseerde fallback beelden op AEM SDK &#x200B;](./assets/web-optimized-image-delivery-java-apis/aem-sdk.png)
+![ Web-geoptimaliseerde fallback beelden op AEM SDK ](./assets/web-optimized-image-delivery-java-apis/aem-sdk.png)
 
 _AEM SDK steunt geen AssetDelivery API, zodat wordt de reserve statische Webvertoning (PNG of JPEG) gebruikt_
 

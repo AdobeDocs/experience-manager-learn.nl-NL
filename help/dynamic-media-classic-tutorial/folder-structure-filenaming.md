@@ -8,7 +8,7 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 15121896-9196-4ce0-aff2-9178563326b4
 duration: 253
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Dit is een heel eenvoudig systeem, en goed als u bescheiden behoeften hebt. Het 
 | AA123 | Alt-weergaven | AA123_1.tif AA123_2.tif AA123_3.tif | AA123_1 AA123_2 AA123_3 |
 |         | Kleurweergaven | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
 |         | Stalen | AA123_BLU_SW.tif | AA123_BLU_SW |
-|         | Afbeeldingsset of stalenset |                                             | AA123 of AA123_SET | — |
+|         | Afbeeldingsset of stalenset |                                             | AA123 of AA123_SET |
 
 Wanneer u werkt met ingestelde verzamelingen, zoals Afbeeldingssets en Staalsets, moet de set zelf ook een unieke naam hebben. In dit geval kan de set dus de basis-SKU als naam krijgen, of de SKU met de extensie &quot;_SET&quot;.
 

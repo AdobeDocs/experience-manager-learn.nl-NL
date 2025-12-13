@@ -4,7 +4,7 @@ description: Leer hoe u AEM Events ontvangt op een website en bekijk de gebeurte
 version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
-role: Architect, Developer
+role: Developer
 level: Beginner
 doc-type: Tutorial
 duration: 358
@@ -12,7 +12,7 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14732
 thumbnail: KT-14732.jpeg
 exl-id: 00954d74-c4c7-4dac-8d23-7140c49ae31f
-source-git-commit: 00301753eae983a17160b783a9b166537baf5ee0
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 Leer hoe u AEM-gebeurtenissen op een website kunt ontvangen en bekijk de gebeurtenisdetails zoals payload, headers en metagegevens.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3449754?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
 
 
 >[!IMPORTANT]
@@ -40,22 +40,22 @@ In plaats van gebruik te maken van een door Adobe verschafte webhaak, kunt u ook
 
 U hebt het volgende nodig om deze zelfstudie te voltooien:
 
-- Het milieu van AEM as a Cloud Service met [&#x200B; toegelaten de Gebeurtenis van AEM &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
+- Het milieu van AEM as a Cloud Service met [ toegelaten de Gebeurtenis van AEM ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
 
-- [&#x200B; Adobe Developer Console project dat voor de Gebeurtenissen van AEM &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console) wordt gevormd.
+- [ Adobe Developer Console project dat voor de Gebeurtenissen van AEM ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console) wordt gevormd.
 
 
 ## Toegang tot webhaak
 
 Voer de volgende stappen uit om toegang te krijgen tot de door Adobe verschafte webhaak:
 
-- Verifieer u tot [&#x200B; Adobe toegang hebt verstrekte steekproefwebhaak &#x200B;](https://aemeventing-webhook.azurewebsites.net/) in een nieuwe browser tabel.
+- Verifieer u tot [ Adobe toegang hebt verstrekte steekproefwebhaak ](https://aemeventing-webhook.azurewebsites.net/) in een nieuwe browser tabel.
 
-  ![&#x200B; Adobe verstrekte steekproefwebhaak &#x200B;](../assets/examples/webhook/adobe-provided-webhook.png)
+  ![ Adobe verstrekte steekproefwebhaak ](../assets/examples/webhook/adobe-provided-webhook.png)
 
 - Ga een unieke naam voor uw webhaak in, bijvoorbeeld `<YOUR_PETS_NAME>-aem-eventing` en klik **verbinden**. U moet `Connected to: ${YOUR-WEBHOOK-URL}` -bericht op het scherm zien.
 
-  ![&#x200B; creeer uw webhaakeindpunt &#x200B;](../assets/examples/webhook/create-webhook-endpoint.png)
+  ![ creeer uw webhaakeindpunt ](../assets/examples/webhook/create-webhook-endpoint.png)
 
 - Maak een nota van **Webhaak URL**. U hebt het later nodig in deze zelfstudie.
 
@@ -63,30 +63,30 @@ Voer de volgende stappen uit om toegang te krijgen tot de door Adobe verschafte 
 
 Voer de volgende stappen uit om AEM Events te ontvangen voor de bovenstaande URL van de webhaak:
 
-- In [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com), navigeer aan uw project en klik om het te openen.
+- In [ Adobe Developer Console ](https://developer.adobe.com), navigeer aan uw project en klik om het te openen.
 
 - Onder **Producten &amp; de diensten** sectie, klik ellipsen `...` naast de gewenste gebeurteniskaart die de gebeurtenissen van AEM naar webhaak zou moeten verzenden en **uitgezocht geef** uit.
 
-  ![&#x200B; het Project van Adobe Developer Console geeft uit &#x200B;](../assets/examples/webhook/adobe-developer-console-project-edit.png)
+  ![ het Project van Adobe Developer Console geeft uit ](../assets/examples/webhook/adobe-developer-console-project-edit.png)
 
 - In het onlangs geopende **vorm gebeurtenisregistratie** dialoog, klik **daarna** om aan **te werk te gaan hoe te gebeurtenissen** stap ontvangen.
 
-  ![&#x200B; Adobe Developer Console Project vormt &#x200B;](../assets/examples/webhook/adobe-developer-console-project-configure.png)
+  ![ Adobe Developer Console Project vormt ](../assets/examples/webhook/adobe-developer-console-project-configure.png)
 
 - In **hoe te om gebeurtenissen** stap te ontvangen, selecteer **WebHaak** optie en kleef **Webhaak URL** u vroeger van Adobe verstrekte steekproefwebhaak en klik **sparen gevormde gebeurtenissen**.
 
-  ![&#x200B; WebHaak van het Project van Adobe Developer Console &#x200B;](../assets/examples/webhook/adobe-developer-console-project-webhook.png)
+  ![ WebHaak van het Project van Adobe Developer Console ](../assets/examples/webhook/adobe-developer-console-project-webhook.png)
 
 - In de door Adobe verschafte voorbeeldwebhaakpagina ziet u een GET-aanvraag. Het is een challenge-aanvraag die door de Adobe I/O Events wordt verzonden om de URL van de webhaak te controleren.
 
-  ![&#x200B; Webhaak - vraag &#x200B;](../assets/examples/webhook/webhook-challenge-request.png)
+  ![ Webhaak - vraag ](../assets/examples/webhook/webhook-challenge-request.png)
 
 
 ## AEM-gebeurtenissen activeren
 
 Ga als volgt te werk om AEM-gebeurtenissen vanuit uw AEM as a Cloud Service-omgeving te activeren die zijn geregistreerd in het bovenstaande Adobe Developer Console-project:
 
-- De toegang en login aan uw het auteursmilieu van AEM as a Cloud Service via [&#x200B; Cloud Manager &#x200B;](https://my.cloudmanager.adobe.com/).
+- De toegang en login aan uw het auteursmilieu van AEM as a Cloud Service via [ Cloud Manager ](https://my.cloudmanager.adobe.com/).
 
 - Afhankelijk van uw **Geabonneerde Gebeurtenissen**, creeer, werk, schrap, publiceer of unpublish een Fragment van de Inhoud.
 
@@ -94,7 +94,7 @@ Ga als volgt te werk om AEM-gebeurtenissen vanuit uw AEM as a Cloud Service-omge
 
 Nadat u de bovenstaande stappen hebt uitgevoerd, ziet u dat de AEM Events aan de webhaak worden geleverd. Zoek naar het POST-verzoek in de door Adobe opgegeven webhaakpagina.
 
-![&#x200B; Webhaak - POST verzoek &#x200B;](../assets/examples/webhook/webhook-post-request.png)
+![ Webhaak - POST verzoek ](../assets/examples/webhook/webhook-post-request.png)
 
 Hier volgen enkele belangrijke details van de POST-aanvraag:
 
@@ -182,4 +182,4 @@ U ziet dat de AEM-gebeurtenisdetails alle benodigde informatie hebben om de gebe
 
 ## Aanvullende bronnen
 
-- [&#x200B; broncode 0&rbrace; AEM-Eventing Webhaak &lbrace;is beschikbaar voor uw verwijzing.](../assets/examples/webhook/aemeventing-webhook.tgz)
+- [ broncode 0} AEM-Eventing Webhaak {is beschikbaar voor uw verwijzing.](../assets/examples/webhook/aemeventing-webhook.tgz)

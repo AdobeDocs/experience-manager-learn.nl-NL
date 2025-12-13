@@ -4,15 +4,15 @@ description: Leer hoe u verbinding maakt met SQL-databases vanuit AEM as a Cloud
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
-role: Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-9355
 thumbnail: KT-9355.jpeg
 exl-id: c1a26dcb-b2ae-4015-b865-2ce32f4fa869
 duration: 117
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,9 @@ Verbindingen met SQL gegevensbestanden (en andere niet-HTTP/HTTPS diensten) moet
 
 Het volgende codevoorbeeld wordt gesteund door de volgende geavanceerde voorzien van een netwerkopties.
 
-Verzeker [&#x200B; aangewezen &#x200B;](../advanced-networking.md#advanced-networking) geavanceerde voorzien van een netwerkconfiguratie voorafgaand aan het volgen van dit leerprogramma is opstelling.
+Verzeker [ aangewezen ](../advanced-networking.md#advanced-networking) geavanceerde voorzien van een netwerkconfiguratie voorafgaand aan het volgen van dit leerprogramma is opstelling.
 
-| Geen geavanceerde netwerken | [&#x200B; Flexibele havenuitgang &#x200B;](../flexible-port-egress.md) | [&#x200B; Dedicated egress IP adres &#x200B;](../dedicated-egress-ip-address.md) | [&#x200B; Virtueel Privé Netwerk &#x200B;](../vpn.md) |
+| Geen geavanceerde netwerken | [ Flexibele havenuitgang ](../flexible-port-egress.md) | [ Dedicated egress IP adres ](../dedicated-egress-ip-address.md) | [ Virtueel Privé Netwerk ](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✔ | ✔ | ✔ |
 
@@ -35,7 +35,7 @@ Verzeker [&#x200B; aangewezen &#x200B;](../advanced-networking.md#advanced-netwo
 
 Het verbindingskoord van de configuratie OSGi gebruikt:
 
-+ `AEM_PROXY_HOST` waarde via de [&#x200B; OSGi variabele van het configuratiemilieu &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=nl-NL#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` als gastheer van de verbinding
++ `AEM_PROXY_HOST` waarde via de [ OSGi variabele van het configuratiemilieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` als gastheer van de verbinding
 + `30001` dat de `portOrig` waarde is voor de voorwaartse toewijzing van de Cloud Manager-poort `30001` → `mysql.example.com:3306`
 
 Aangezien geheimen niet in code moeten worden opgeslagen, zijn de gebruikersbenaming en het wachtwoord van de SQL verbinding best verstrekt via OSGi configuratievariabelen, plaatsen gebruikend AIO CLI, of Cloud Manager APIs.
@@ -61,7 +61,7 @@ $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONME
 ## Codevoorbeeld
 
 Dit Java™ codevoorbeeld is van de dienst OSGi die een verbinding met een extern gegevensbestand MySQL via de dienst van AEM DataSourcePool OSGi maakt.
-De DataSourcePool OSGi fabrieksconfiguratie specificeert beurtelings een haven (`30001`) die door de `portForwards` regel in de [&#x200B; enableEnvironmentAdvancedNetworkingConfiguration &#x200B;](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) verrichting aan de externe gastheer en haven, `mysql.example.com:3306` in kaart wordt gebracht.
+De DataSourcePool OSGi fabrieksconfiguratie specificeert beurtelings een haven (`30001`) die door de `portForwards` regel in de [ enableEnvironmentAdvancedNetworkingConfiguration ](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) verrichting aan de externe gastheer en haven, `mysql.example.com:3306` in kaart wordt gebracht.
 
 ```json
 ...

@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 6fd93d3b-6d56-43c5-86e6-2e2685deecc9
 duration: 345
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Leer hoe u een aangepaste knop toevoegt aan de Rich Text Editor (RTE)-werkbalk i
 
 De knopen van de douane kunnen aan de **toolbar van RTE** in de Redacteur van het Fragment van de Inhoud worden toegevoegd gebruikend het `rte` uitbreidingspunt. Dit voorbeeld toont hoe te om een douaneknoop toe te voegen genoemd _Uiteinde_ aan de toolbar van RTE en de inhoud binnen RTE te wijzigen.
 
-Het gebruiken van `getCustomButtons()` methode van het 0&rbrace; uitbreidingspunt van de uitbreiding één of vele douaneknopen kan aan de **toolbar van RTE** worden toegevoegd. `rte` Het is ook mogelijk om standaardRTE knopen zoals _Kopiëren, Deeg, Vet, en Cursief_ toe te voegen of te verwijderen gebruikend `getCoreButtons()` en `removeButtons)` methodes respectievelijk.
+Het gebruiken van `rte` methode van het 0} uitbreidingspunt van de uitbreiding één of vele douaneknopen kan aan de `getCustomButtons()` toolbar van RTE **worden toegevoegd.** Het is ook mogelijk om standaardRTE knopen zoals _Kopiëren, Deeg, Vet, en Cursief_ toe te voegen of te verwijderen gebruikend `getCoreButtons()` en `removeButtons)` methodes respectievelijk.
 
 Dit voorbeeld toont hoe te om een benadrukte nota of uiteinde op te nemen gebruikend douane _voeg de toolbarknoop van het Uiteinde_ toe. Voor de gemarkeerde notitie of de inhoud van het uiteinde is een speciale opmaak van toepassing via HTML-elementen en de bijbehorende CSS-klassen. De inhoud van de plaatsaanduiding en de HTML-code worden ingevoegd met de callbackmethode `onClick()` van de `getCustomButtons()` .
 
@@ -36,8 +36,8 @@ Dit voorbeeld toont hoe te om een benadrukte nota of uiteinde op te nemen gebrui
 Dit voorbeeld breidt zich tot uitbreidingspunt `rte` uit om douaneknoop aan RTE toolbar in de Redacteur van het Fragment van de Inhoud toe te voegen.
 
 | AEM-gebruikersinterface uitgebreid | Extensiepunt |
-| ------------------------ | --------------------- | 
-| [&#x200B; de Redacteur van het Fragment van de Inhoud &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [&#x200B; rijke Toolbar van de Redacteur van de Tekst &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/) |
+| ------------------------ | --------------------- |
+| [ de Redacteur van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [ rijke Toolbar van de Redacteur van de Tekst ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/) |
 
 ## Voorbeeldextensie
 

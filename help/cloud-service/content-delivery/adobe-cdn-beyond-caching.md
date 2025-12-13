@@ -4,7 +4,7 @@ description: Leer over geavanceerde eigenschappen van Adobe CDN voorbij caching,
 version: Experience Manager as a Cloud Service
 feature: Website Performance, CDN Cache
 topic: Architecture, Performance, Content Management
-role: Developer, Architect, User, Leader
+role: Developer, User, Leader
 level: Beginner
 doc-type: Article
 duration: 0
@@ -12,7 +12,7 @@ last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
 exl-id: 8948a900-01e9-49ed-9ce5-3a057f5077e4
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -31,7 +31,7 @@ De Adobe CDN is niet alleen bedoeld voor het in cache plaatsen van inhoud, maar 
 
 Deze eigenschappen zijn **zelfbediening** eigenschappen. Gevormd in het `cdn.yaml` dossier van uw project van AEM en opgesteld gebruikend de configuratiepijpleiding van Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440277?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
 
 ## Het vormen verkeer bij CDN
 
@@ -65,7 +65,7 @@ De implementatie van deze geavanceerde functies omvat twee stappen:
 
 1. **CDN config- dossier van de Update**: Werk het `cdn.yaml` dossier in uw project van AEM met de vereiste configuraties bij. De configuraties worden toegevoegd als regels en zij volgen een regelsyntaxis. De regel drie hoofdcomponenten: `name`, `when` en `action` .
 
-2. **stel CDN config- dossier** op: stel het bijgewerkte `cdn.yaml` dossier op gebruikend de Cloud Manager config pijpleiding. Voor meer informatie, zie [&#x200B; regels opstellen door Cloud Manager &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
+2. **stel CDN config- dossier** op: stel het bijgewerkte `cdn.yaml` dossier op gebruikend de Cloud Manager config pijpleiding. Voor meer informatie, zie [ regels opstellen door Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
 
 ### Voorbeeld
 
@@ -89,15 +89,15 @@ data:
 
 ## Verwante zelfstudies
 
-[&#x200B; Beschermend websites met de regels van de verkeersfilter &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
+[ Beschermend websites met de regels van de verkeersfilter ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
 
-[&#x200B; vorm en stel de regel van CDN van de bevestiging van de Kopbal van HTTP op &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)
+[ vorm en stel de regel van CDN van de bevestiging van de Kopbal van HTTP op ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)
 
-[&#x200B; hoe te om het CDN geheime voorgeheugen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) te zuiveren
+[ hoe te om het CDN geheime voorgeheugen ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) te zuiveren
 
-[&#x200B; Vormend CDN de Pagina&#39;s van de Fout &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)
+[ Vormend CDN de Pagina&#39;s van de Fout ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)
 
-[&#x200B; het Vormen Verkeer bij CDN &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors)
+[ het Vormen Verkeer bij CDN ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors)
 
-[&#x200B; het Vormen CDN geloofsbrieven en Authentificatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
+[ het Vormen CDN geloofsbrieven en Authentificatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 

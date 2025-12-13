@@ -3,14 +3,14 @@ title: Hoofdstuk 3 - Geavanceerde Dispatcher-onderwerpen in cache plaatsen
 description: Dit is deel 3 van een driedelige reeks naar caching in AEM. Waar de eerste twee delen zich richtten op het in cache plaatsen van onbewerkte http in de Dispatcher en welke beperkingen er zijn. In dit deel worden enkele ideeën besproken over hoe deze beperkingen kunnen worden overwonnen.
 feature: Dispatcher
 topic: Architecture
-role: Architect
+role: Developer
 level: Intermediate
 doc-type: Tutorial
 exl-id: 7c7df08d-02a7-4548-96c0-98e27bcbc49b
 duration: 1353
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '6172'
+source-wordcount: '6173'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 ## Overzicht
 
-Dit is deel 3 van een driedelige serie voor caching in AEM. Waar de eerste twee delen zich richtten op het in cache plaatsen van onbewerkte http in de Dispatcher en welke beperkingen er zijn. In dit deel worden enkele ideeën besproken over hoe deze beperkingen kunnen worden overwonnen.
+Dit is deel 3 van een driedelige reeks voor caching in AEM. Waar de eerste twee delen zich richtten op het in cache plaatsen van onbewerkte http in de Dispatcher en welke beperkingen er zijn. In dit deel worden enkele ideeën besproken over hoe deze beperkingen kunnen worden overwonnen.
 
 ## Caching in het algemeen
 
-[&#x200B; Hoofdstuk 1 &#x200B;](chapter-1.md) en [&#x200B; Hoofdstuk 2 &#x200B;](chapter-2.md) van deze reeks concentreerde zich hoofdzakelijk op Dispatcher. We hebben de grondbeginselen, de beperkingen en waar u bepaalde compromissen moet maken uitgelegd.
+[ Hoofdstuk 1 ](chapter-1.md) en [ Hoofdstuk 2 ](chapter-2.md) van deze reeks concentreerde zich hoofdzakelijk op Dispatcher. We hebben de grondbeginselen, de beperkingen en waar u bepaalde compromissen moet maken uitgelegd.
 
 De complexiteit en complexiteit van caching zijn geen unieke problemen voor de Dispatcher. In cache plaatsen is in het algemeen moeilijk.
 
@@ -38,7 +38,7 @@ In dit hoofdstuk willen wij onze visie op het in cache plaatsen uitbreiden en id
 U moet op deze gebieden compromissen sluiten,
 
 * Prestaties en latentie
-* Resourceverbruik / CPU-belasting / schijfgebruik
+* Resourceverbruik / CPU-belasting / Schijfgebruik
 * Nauwkeurigheid/valuta/stabiliteit/beveiliging
 * Eenvoud/complexiteit/kosten/onderhoudbaarheid/foutgevoeligheid
 
@@ -52,9 +52,9 @@ Deze dimensies zijn met elkaar verbonden in een vrij complex systeem. Er is geen
 
 Het leveren van een pagina van een server aan browser van een cliënt kruist een veelheid van systemen en subsystemen. Als je goed kijkt, is er een aantal hopgegevens nodig die van de bron naar de afvoer moeten gaan, die elk een potentiële kandidaat voor caching zijn.
 
-![&#x200B; stroom van Gegevens van een typische toepassing CMS &#x200B;](assets/chapter-3/data-flow-typical-cms-app.png)
+![ stroom van Gegevens van een typische toepassing van CMS ](assets/chapter-3/data-flow-typical-cms-app.png)
 
-*stroom van Gegevens van een typische toepassing CMS*
+*stroom van Gegevens van een typische toepassing van CMS*
 
 <br> 
 
@@ -98,7 +98,7 @@ Om u een globaal idee te geven van welke factoren u in overweging zou kunnen nem
 
 **Tijd om** te leven - als de voorwerpen een korte inherente levende tijd hebben (verkeersgegevens zouden een kortere levende dan weergegevens kunnen hebben) zou het niet het caching waard kunnen zijn.
 
-**Kosten van de Productie -** hoe duur (in termen van cycli van cpu en I/O) de herproductie en levering van een voorwerp is. Als het goedkoop in cache plaatsen is, is het misschien niet nodig.
+**Productiekosten -** hoe duur (in termen van de cycli van CPU en I/O) de herproductie en levering van een voorwerp is. Als het goedkoop in cache plaatsen is, is het misschien niet nodig.
 
 **Grootte** - de Grote voorwerpen vereisen meer middelen om in het voorgeheugen onder te brengen. Dat zou een beperkende factor kunnen zijn en moet worden afgewogen tegen het voordeel.
 
@@ -118,21 +118,21 @@ Opnieuw - caching is moeilijk. Laten we een aantal basisregels delen, die we heb
 
 #### Vermijd dubbele caching
 
-Elk van de lagen die in het laatste hoofdstuk zijn geïntroduceerd, biedt een bepaalde waarde in de cacheketen. Of door computercycli te besparen of door gegevens dichter bij de consument te brengen. Het is niet verkeerd om gegevens in meerdere fasen van de keten in de cache op te slaan, maar u moet altijd nadenken over de voordelen en kosten van de volgende fase. Het in cache plaatsen van een volledige pagina in het Publish-systeem levert meestal geen enkel voordeel op, zoals in de Dispatcher al gebeurt.
+Elk van de lagen die in het laatste hoofdstuk zijn geïntroduceerd, biedt een bepaalde waarde in de cacheketen. Of door computercycli te besparen of door gegevens dichter bij de consument te brengen. Het is niet verkeerd om gegevens in meerdere fasen van de keten in de cache op te slaan, maar u moet altijd nadenken over de voordelen en kosten van de volgende fase. Het in cache plaatsen van een volledige pagina in het publicatiesysteem biedt doorgaans geen voordelen, zoals dit al gebeurt in de Dispatcher.
 
 #### Bezig met mixen van validatiestrategieën
 
 Er zijn drie basisstrategieën voor validatie:
 
 * **TTL, Tijd om te leven:** een voorwerp verloopt na een vaste hoeveelheid tijd (b.v., &quot;2 uren van nu&quot;)
-* **Vervaldatum:** het voorwerp verloopt op bepaalde tijd in de toekomst (b.v., &quot;5:00 PM op 10 Juni, 2019&quot;)
+* **Datum van de Vervaldatum:** het voorwerp verloopt op bepaalde tijd in de toekomst (b.v., &quot;5 :00 PM op 10 Juni, 2019&quot;)
 * **Gebaseerde Gebeurtenis:** het voorwerp wordt ongeldig gemaakt uitdrukkelijk door een gebeurtenis die in het platform (bijvoorbeeld, wanneer een pagina wordt veranderd en geactiveerd) gebeurde
 
 Nu kunt u verschillende strategieën gebruiken op verschillende cachelagen, maar er zijn een paar &quot;toxische&quot; lagen.
 
 #### Op gebeurtenis gebaseerde validatie
 
-![&#x200B; Zuivere op gebeurtenis gebaseerde ongeldigverklaring &#x200B;](assets/chapter-3/event-based-invalidation.png)
+![ Zuivere op gebeurtenis gebaseerde ongeldigverklaring ](assets/chapter-3/event-based-invalidation.png)
 
 *Zuivere op gebeurtenis gebaseerde ongeldigverklaring: Valideer van het binnengeheime voorgeheugen aan de buitenlaag*
 
@@ -154,7 +154,7 @@ Met op gebeurtenis-gebaseerde ongeldigverklaring, zou u een rampenplan moeten he
 
 #### Zuiver op TTL gebaseerde ongeldigverklaring
 
-![&#x200B; Unsynchronized TTL gebaseerde ongeldigverklaring &#x200B;](assets/chapter-3/ttl-based-invalidation.png)
+![ Unsynchronized TTL gebaseerde ongeldigverklaring ](assets/chapter-3/ttl-based-invalidation.png)
 
 *Unsynchronized TTL gebaseerde ongeldigverklaring*
 
@@ -164,7 +164,7 @@ Dat is ook een heel gangbare regeling. U stapelt meerdere lagen caches, die elk 
 
 Het is gemakkelijk uit te voeren. Helaas is het moeilijk om de effectieve levensduur van een stuk gegevens te voorspellen.
 
-![&#x200B; Buitenkant die het levenspan van een binnenvoorwerp verlengt &#x200B;](assets/chapter-3/outer-cache.png)
+![ Buitenkant die het levenspan van een binnenvoorwerp verlengt ](assets/chapter-3/outer-cache.png)
 
 *Outer geheime voorgeheugen verlengend de levenspanwijdte van een binnenvoorwerp*
 
@@ -180,7 +180,7 @@ We zeggen niet dat het een slecht plan is. Je zou gewoon zijn grenzen moeten ken
 
 U krijgt een voorspelbaarder efficiënte levensduur, als u een specifieke datum op het binnenvoorwerp plaatst en dat aan de buitengeheime voorgeheugens verspreidt.
 
-![&#x200B; synchroniserend vervaldata &#x200B;](assets/chapter-3/synchronize-expiration-dates.png)
+![ synchroniserend vervaldata ](assets/chapter-3/synchronize-expiration-dates.png)
 
 *synchroniserend vervaldata*
 
@@ -190,21 +190,21 @@ Nochtans, kunnen niet alle geheime voorgeheugens de data verspreiden. Het kan ve
 
 #### Op gebeurtenissen gebaseerde en op TTL gebaseerde validatie mixen
 
-![&#x200B; Mengend op gebeurtenis-gebaseerde en op TTL-Gebaseerde strategieën &#x200B;](assets/chapter-3/mixing-event-ttl-strategies.png)
+![ Mengend op gebeurtenis-gebaseerde en op TTL-Gebaseerde strategieën ](assets/chapter-3/mixing-event-ttl-strategies.png)
 
 *Mengend op gebeurtenis-gebaseerde en op TTL-Gebaseerde strategieën*
 
 <br> 
 
-Een algemeen schema in de AEM wereld is ook om gebeurtenis gebaseerde ongeldigverklaring bij de binnengeheime voorgeheugens (b.v., in-geheugengeheime voorgeheugens waar de gebeurtenissen in dichtbij real time kunnen worden verwerkt) en op TTL-Gebaseerde geheime voorgeheugens op de buitenkant te gebruiken - waar u misschien geen toegang tot expliciete ongeldigverklaring hebt.
+Een algemeen schema in de wereld van AEM is ook om gebeurtenis gebaseerde ongeldigverklaring bij de binnengeheime voorgeheugens (b.v., in-geheugengeheime voorgeheugens waar de gebeurtenissen in dichtbij real time kunnen worden verwerkt) en op TTL-Gebaseerde geheime voorgeheugens op de buitenkant te gebruiken - waar u misschien geen toegang tot expliciete ongeldigverklaring hebt.
 
-In de AEM wereld zou u een in-geheugengeheime voorgeheugen voor bedrijfsvoorwerpen en de fragmenten van de HTML in de systemen van Publish hebben, die ongeldig wordt gemaakt, wanneer de onderliggende middelen veranderen en u deze veranderingsgebeurtenis aan de dispatcher verspreidt die ook op gebeurtenis-gebaseerd werkt. Voor dat zou u bijvoorbeeld op TTL-Gebaseerde CDN hebben.
+In de wereld van AEM zou u een in-geheugengeheime voorgeheugen voor bedrijfsvoorwerpen en de fragmenten van HTML in de Publish systemen hebben, die ongeldig wordt gemaakt, wanneer de onderliggende middelen veranderen en u deze veranderingsgebeurtenis aan de dispatcher verspreidt die ook op gebeurtenis-gebaseerd werkt. Voor dat zou u bijvoorbeeld op TTL-Gebaseerde CDN hebben.
 
 Als u een laag van (korte) op TTL gebaseerde caching voor een Dispatcher hebt, kan een piek die gewoonlijk na een auto-ongeldigverklaring zou voorkomen, effectief worden verzacht.
 
 #### Het mengen van TTL - en op gebeurtenis-Gebaseerde Bevestiging
 
-![&#x200B; Mixing TTL - en op gebeurtenis-gebaseerde Invalidatie &#x200B;](assets/chapter-3/toxic.png)
+![ Mixing TTL - en op gebeurtenis-gebaseerde Invalidatie ](assets/chapter-3/toxic.png)
 
 *Toxisch: Het mengen van TTL - en op gebeurtenis-gebaseerde Invalidatie*
 
@@ -212,7 +212,7 @@ Als u een laag van (korte) op TTL gebaseerde caching voor een Dispatcher hebt, k
 
 Deze combinatie is toxisch. Plaats nooit cache op basis van gebeurtenissen en gebeurtenis na een TTL- of op Vervaldatum gebaseerde cache. Herinner dat spill-overeffect dat we hadden in de &quot;puur-TTL&quot;strategie? Hier kan hetzelfde effect worden waargenomen. Alleen dat de gebeurtenis voor ongeldigmaking van de buitenste cache al heeft plaatsgevonden, kan mogelijk niet meer plaatsvinden. Dit kan de levensduur van het object in de cache tot oneindig uitbreiden.
 
-![&#x200B; op TTL-Gebaseerde en op gebeurtenis-gebaseerde gecombineerde: Spill-over aan oneindigheid &#x200B;](assets/chapter-3/infinity.png)
+![ op TTL-Gebaseerde en op gebeurtenis-gebaseerde gecombineerde: Spill-over aan oneindigheid ](assets/chapter-3/infinity.png)
 
 *op TTL-Gebaseerde en op gebeurtenis-gebaseerde gecombineerde: Spill-over aan oneindigheid*
 
@@ -226,9 +226,9 @@ U kunt het werkgebied van het renderingsproces in het cachegeheugen opnemen. Van
 
 #### Toegangsbeheer respecteren
 
-De hier beschreven technieken zijn vrij krachtig en a _moet-hebben_ in toolbox van elke AEM ontwikkelaar. Maar ga niet te enthousiast, gebruik ze verstandig. Door een voorwerp in een geheim voorgeheugen op te slaan en het te delen aan andere gebruikers in follow-upverzoeken betekent eigenlijk het ontwijken van toegangsbeheer. Dit is doorgaans geen probleem op openbare websites, maar wel wanneer een gebruiker zich moet aanmelden voordat toegang kan worden verkregen.
+De hier beschreven technieken zijn vrij krachtig en a _moet-hebben_ in toolbox van elke ontwikkelaar van AEM. Maar ga niet te enthousiast, gebruik ze verstandig. Door een voorwerp in een geheim voorgeheugen op te slaan en het te delen aan andere gebruikers in follow-upverzoeken betekent eigenlijk het ontwijken van toegangsbeheer. Dit is doorgaans geen probleem op openbare websites, maar wel wanneer een gebruiker zich moet aanmelden voordat toegang kan worden verkregen.
 
-U kunt de HTML-opmaakcodes van het hoofdmenu van een site ook opslaan in een cache in het geheugen om deze op verschillende pagina&#39;s te kunnen delen. In feite is dat een perfect voorbeeld voor het opslaan van gedeeltelijk gerenderde HTML als het creëren van een navigatie gewoonlijk duur aangezien het het oversteken van veel pagina&#39;s vereist.
+U kunt de HTML-opmaakcode van het hoofdmenu van een site in een cache in het geheugen opslaan om deze tussen verschillende pagina&#39;s te delen. Dat is eigenlijk een perfect voorbeeld om gedeeltelijk gerenderde HTML op te slaan als het creëren van een navigatie is gewoonlijk duur aangezien het het oversteken van veel pagina&#39;s vereist.
 
 U deelt niet dezelfde menustructuur tussen alle pagina&#39;s, maar ook met alle gebruikers, waardoor deze nog efficiënter wordt. Maar wacht ... maar misschien zijn er sommige punten in het menu die voor een bepaalde groep gebruikers slechts gereserveerd zijn. In dat geval kan caching een beetje complexer worden.
 
@@ -248,7 +248,7 @@ Wat betekent dat?
 
 3. Met name bij Sling kunt u (bijna) elk object aan elkaar aanpassen. Overweeg een middel in het geheime voorgeheugen. Het volgende verzoek (met verschillende toegangsrechten), haalt die middel en past het in een resourceResolver of een zitting aan om tot andere middelen toegang te hebben die hij geen toegang zou hebben tot.
 
-4. Zelfs als u een dunne &quot;omslag&quot;rond een middel van AEM creeert, moet u niet dat in het voorgeheugen onderbrengen - zelfs als het uw eigen en onveranderlijk is. Het omloopobject zou een referentie zijn (die we eerder hebben verboden) en als we er scherp uitzien, ontstaan er in feite dezelfde problemen als in het laatste item.
+4. Zelfs als u een dunne &quot;omslag&quot;rond een middel van AEM creeert, moet u dat niet in het voorgeheugen onderbrengen - zelfs als het uw eigen en onveranderlijk is. Het omloopobject zou een referentie zijn (die we eerder hebben verboden) en als we er scherp uitzien, ontstaan er in feite dezelfde problemen als in het laatste item.
 
 5. Als u in cache wilt plaatsen, maakt u uw eigen objecten door primitieve gegevens te kopiëren naar uw eigen onderliggende objecten. U wilt mogelijk een koppeling maken tussen uw eigen objecten via verwijzingen, bijvoorbeeld als u een boomstructuur met objecten in cache wilt plaatsen. Dat is prima - maar alleen cacheobjecten die u net in dezelfde aanvraag hebt gemaakt - en geen objecten die ergens anders zijn aangevraagd (zelfs als het &#39;naam-spatie&#39; van het &#39;jouw&#39; object is). _het Kopiëren voorwerpen_ is de sleutel. En zorg ervoor dat u de volledige structuur van gekoppelde objecten tegelijk leegmaakt en binnenkomende en uitgaande verwijzingen naar uw structuur voorkomt.
 
@@ -262,14 +262,14 @@ Deze reeks gaat over het begrijpen van concepten en het machtigen van u om een a
 
 Wij bevorderen geen enkel instrument in het bijzonder. Maar geef je aanwijzingen hoe je ze moet beoordelen. AEM heeft bijvoorbeeld een eenvoudige ingebouwde cache met een vaste TTL sinds versie 6.0. Zal je het gebruiken? Waarschijnlijk niet bij publiceren waar een op een gebeurtenis gebaseerd geheim voorgeheugen in de ketting (wenk: Dispatcher) volgt. Maar het zou een fatsoenlijke keuze kunnen zijn voor een auteur. Er is ook een geheime voorgeheugen van HTTP door Adobe ACS-bevelen die het overwegen waard zouden kunnen zijn.
 
-Of u bouwt uw die, op een matuur caching kader zoals [&#x200B; Ehcache &#x200B;](https://www.ehcache.org) wordt gebaseerd. Dit kan worden gebruikt om voorwerpen van Java en teruggegeven prijsverhoging (`String` voorwerpen) in het voorgeheugen onder te brengen.
+Of u bouwt uw die, op een matuur caching kader zoals [ Ehcache ](https://www.ehcache.org) wordt gebaseerd. Dit kan worden gebruikt om voorwerpen van Java en teruggegeven prijsverhoging (`String` voorwerpen) in het voorgeheugen onder te brengen.
 
 In sommige eenvoudige gevallen kunt u het ook gebruiken van gelijktijdige hash maps - u zult hier snel grenzen zien - of in het hulpmiddel of in uw vaardigheden. Gelijktijdige uitvoering is net zo moeilijk te beheersen als naamgeving en caching.
 
 #### Verwijzingen
 
-* [&#x200B; ACS Commons http Cachegeheugen &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/http-cache/index.html)
-* [&#x200B; Ehcache caching kader &#x200B;](https://www.ehcache.org)
+* [ ACS Commons http Cachegeheugen ](https://adobe-consulting-services.github.io/acs-aem-commons/features/http-cache/index.html)
+* [ Ehcache caching kader ](https://www.ehcache.org)
 
 ### Basisbegrippen
 
@@ -287,7 +287,7 @@ Preemptive Caching betekent het opnieuw creëren van de ingang met nieuwe inhoud
 
 De opwarming van de cache houdt nauw verband met preventieve caching. Alhoewel je die term niet zou gebruiken voor een levend systeem. En het is minder tijd beperkt dan het eerste. U kunt niet onmiddellijk na ongeldigverklaring opnieuw in het voorgeheugen onderbrengen, maar u vult geleidelijk het geheime voorgeheugen wanneer de tijd toestaat.
 
-Neem bijvoorbeeld een Publish/Dispatcher-gedeelte van het taakverdelingsmechanisme om het bij te werken. Voordat u de pagina opnieuw gaat integreren, horizontaal schuift u automatisch door de pagina&#39;s die het vaakst worden geopend, zodat deze weer in de cache worden geplaatst. Als de cache &quot;warm&quot; is, wordt het been weer geïntegreerd in het taakverdelingsmechanisme.
+U haalt bijvoorbeeld een deel Publiceren/Dispatcher uit het taakverdelingsmechanisme om het bij te werken. Voordat u de pagina opnieuw gaat integreren, horizontaal schuift u automatisch door de pagina&#39;s die het vaakst worden geopend, zodat deze weer in de cache worden geplaatst. Als de cache &quot;warm&quot; is, wordt het been weer geïntegreerd in het taakverdelingsmechanisme.
 
 Of misschien herintegreer je het been in één keer, maar je gooit het verkeer naar dat been zodat het de kans heeft om het in de cache op te warmen door regelmatig gebruik.
 
@@ -317,13 +317,13 @@ Welke objecten afhankelijk zijn van wat anderen in elke toepassing echt zijn. We
 
 ### HTML-fragmentcaching
 
-![&#x200B; hergebruikt een teruggegeven fragment op verschillende pagina&#39;s &#x200B;](assets/chapter-3/re-using-rendered-fragment.png)
+![ hergebruikt een teruggegeven fragment op verschillende pagina&#39;s ](assets/chapter-3/re-using-rendered-fragment.png)
 
 *hergebruikt een teruggegeven fragment op verschillende pagina&#39;s*
 
 <br> 
 
-HTML Fragmentcaching is een krachtig gereedschap. Het idee is om de HTML prijsverhoging in het voorgeheugen onder te brengen die door een component in een in-geheugen-geheime voorgeheugen werd geproduceerd. U vraagt zich misschien af waarom ik dat moet doen. Ik caching toch de prijsverhoging van de hele pagina in de verzender - met inbegrip van de prijsverhoging van die component. Wij zijn het daarmee eens. Dat doe je, maar één keer per pagina. U deelt die markering niet tussen de pagina&#39;s.
+HTML Fragmentcaching is een krachtig gereedschap. Het is de bedoeling om de HTML-opmaakcode die door een component is gegenereerd, in een cache in het geheugen onder te brengen. U vraagt zich misschien af waarom ik dat moet doen. Ik caching toch de prijsverhoging van de hele pagina in de verzender - met inbegrip van de prijsverhoging van die component. Wij zijn het daarmee eens. Dat doe je, maar één keer per pagina. U deelt die markering niet tussen de pagina&#39;s.
 
 Stel dat u een navigatie vóór elke pagina rendert. De markering ziet er op elke pagina hetzelfde uit. Maar u geeft het telkens weer voor elke pagina, dat is niet in de Dispatcher. Vergeet niet dat na automatische ongeldigmaking alle pagina&#39;s opnieuw moeten worden weergegeven. Dus eigenlijk heb je dezelfde code met dezelfde resultaten honderden keren.
 
@@ -337,7 +337,7 @@ Er zijn twee wonderlijke leugens van dat plan die makkelijk gemist worden:
 
 2. Ook ongeldigmaking is bijzonder eenvoudig. Wanneer uw website wordt gewijzigd, wilt u deze cachevermelding ongeldig maken. Herbouw is relatief goedkoop, aangezien het slechts eenmaal moet worden uitgevoerd en dan door alle honderden pagina&#39;s opnieuw wordt gebruikt.
 
-Dit is een groot voordeel voor uw Publish-servers.
+Dit is een groot voordeel voor uw publicatieservers.
 
 ### Implementatie van fragmentcages
 
@@ -380,9 +380,9 @@ De fragmentcache wordt gebruikt als u een constante waarde (de navigatie) hebt i
 
 Maar u kunt ook het tegenovergestelde hebben, een relatief constante context (een pagina die zelden verandert) en sommige voortdurend veranderende fragmenten op die pagina (bijvoorbeeld, een levende ticker).
 
-In dit geval, zou u [&#x200B; Verschuivende Dynamische omvat &#x200B;](https://sling.apache.org/documentation/bundles/dynamic-includes.html) een kans kunnen geven. In wezen is dit een componentfilter, dat om de dynamische component loopt en in plaats van de component te renderen in de pagina die een verwijzing maakt. Deze verwijzing kan een vraag Ajax zijn - zodat de component door browser wordt omvat en zo kan de omringende pagina statisch in het voorgeheugen worden opgenomen. Of - alternatief - het Verkopen Dynamisch omvat kan een richtlijn van SSI (de Server zijomvatten) produceren. Deze instructie wordt uitgevoerd op de Apache-server. U kunt zelfs ESI - de Kant van Edge gebruiken omvat richtlijnen als u Vers of een CDN hefboomwerking die manuscripten ESI steunt.
+In dit geval, zou u [ Verschuivende Dynamische omvat ](https://sling.apache.org/documentation/bundles/dynamic-includes.html) een kans kunnen geven. In wezen is dit een componentfilter, dat om de dynamische component loopt en in plaats van de component te renderen in de pagina die een verwijzing maakt. Deze verwijzing kan een vraag Ajax zijn - zodat de component door browser wordt omvat en zo kan de omringende pagina statisch in het voorgeheugen worden opgenomen. Of - alternatief - het Verkopen Dynamisch omvat kan een richtlijn van SSI (de Server zijomvatten) produceren. Deze instructie wordt uitgevoerd op de Apache-server. U kunt zelfs ESI - de Kant van Edge gebruiken omvat richtlijnen als u Vers of een CDN hefboomwerking die manuscripten ESI steunt.
 
-![&#x200B; Diagram van de Opeenvolging van een Verzoek gebruikend het Verschuiven Dynamisch omvat &#x200B;](assets/chapter-3/sequence-diagram-sling-dynamic-include.png)
+![ Diagram van de Opeenvolging van een Verzoek gebruikend het Verschuiven Dynamisch omvat ](assets/chapter-3/sequence-diagram-sling-dynamic-include.png)
 
 *Diagram van de Opeenvolging van een Verzoek gebruikend het Verschuiven Dynamisch omvat*
 
@@ -400,15 +400,15 @@ We raden u aan de SDI-documentatie zorgvuldig te bestuderen. Er zijn nog een paa
 
 #### Verwijzingen
 
-* [&#x200B; docs.oracle.com - hoe te om de markeringen van douaneJSP &#x200B;](https://docs.oracle.com/cd/E11035_01/wls100/taglib/quickstart.html) te schrijven
-* [&#x200B; Dominik Süß - Creërend en gebruikend componentenfilters &#x200B;](https://www.slideshare.net/connectwebex/prsentation-dominik-suess)
-* [&#x200B; sling.apache.org - het Verkopen Dynamische omvat &#x200B;](https://sling.apache.org/documentation/bundles/dynamic-includes.html)
-* [&#x200B; helpx.adobe.com - Vestiging het Verdelen van Dynamische Omvat in AEM &#x200B;](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-dynamic-include-technical-video-setup.html)
+* [ docs.oracle.com - hoe te om de markeringen van douaneJSP ](https://docs.oracle.com/cd/E11035_01/wls100/taglib/quickstart.html) te schrijven
+* [ Dominik Süß - Creërend en gebruikend componentenfilters ](https://www.slideshare.net/connectwebex/prsentation-dominik-suess)
+* [ sling.apache.org - het Verkopen Dynamische omvat ](https://sling.apache.org/documentation/bundles/dynamic-includes.html)
+* [ helpx.adobe.com - Vestiging het Verdelen van Dynamische Omvat in AEM ](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-dynamic-include-technical-video-setup.html)
 
 
 #### Model in cache plaatsen
 
-![&#x200B; Model gebaseerd caching: Één bedrijfsvoorwerp met twee verschillende teruggaven &#x200B;](assets/chapter-3/model-based-caching.png)
+![ Model gebaseerd caching: Één bedrijfsvoorwerp met twee verschillende teruggaven ](assets/chapter-3/model-based-caching.png)
 
 *Model gebaseerd caching: Één bedrijfsvoorwerp met twee verschillende teruggaven*
 
@@ -503,9 +503,9 @@ Een algemene fout, die we al te vaak hebben gezien, is dat de prestatietest slec
 
 Als u uw toepassing naar het actieve systeem promoot, verschilt de belasting volledig van wat u hebt getest.
 
-Op het actieve systeem is het toegangspatroon niet het kleine aantal gelijkmatig verdeelde pagina&#39;s dat u in tests hebt (homepage en weinig inhoudspagina&#39;s). Het aantal pagina&#39;s is veel groter en de aanvragen zijn zeer ongelijk verdeeld. En - natuurlijk - de levende pagina&#39;s kunnen niet 100% van geheim voorgeheugen worden gediend: Er zijn verzoeken van het systeem van Publish om ongeldigverklaring die een groot deel van uw kostbare middelen auto-ongeldig maken.
+Op het actieve systeem is het toegangspatroon niet het kleine aantal gelijkmatig verdeelde pagina&#39;s dat u in tests hebt (homepage en weinig inhoudspagina&#39;s). Het aantal pagina&#39;s is veel groter en de aanvragen zijn zeer ongelijk verdeeld. En - natuurlijk - de levende pagina&#39;s kunnen niet 100% van geheim voorgeheugen worden gediend: Er zijn verzoeken van het Publish systeem voor ongeldigverklaring die een groot deel van uw kostbare middelen auto-ongeldig maken.
 
-Ah ja - en wanneer u uw Dispatcher cache herbouwt, zult u erachter komen dat het Publish-systeem zich ook heel anders gedraagt, afhankelijk van het feit of u slechts een paar pagina&#39;s vraagt - of een groter aantal. Zelfs als alle pagina&#39;s even complex zijn - hun aantal speelt een rol. Herinner je wat we zeiden over ketting caching? Als u altijd om hetzelfde kleine aantal pagina&#39;s vraagt, is de kans groot dat de blokken met de onbewerkte gegevens zich in de cache van de harde schijf bevinden of dat de blokken door het besturingssysteem in de cache worden opgeslagen. Er is ook een goede kans dat de Repository het volgens segment in het hoofdgeheugen in de cache heeft geplaatst. Het renderen gaat dus veel sneller dan wanneer andere pagina&#39;s elkaar nu en dan uit verschillende cache hadden uitgezet.
+Ah ja - en wanneer u uw geheime voorgeheugen van Dispatcher herbouwt, zult u weten, dat het Publish systeem zich ook vrij verschillend gedraagt, afhankelijk van of u slechts een handvol pagina&#39;s - of een groter aantal vraagt. Zelfs als alle pagina&#39;s even complex zijn - hun aantal speelt een rol. Herinner je wat we zeiden over ketting caching? Als u altijd om hetzelfde kleine aantal pagina&#39;s vraagt, is de kans groot dat de blokken met de onbewerkte gegevens zich in de cache van de harde schijf bevinden of dat de blokken door het besturingssysteem in de cache worden opgeslagen. Er is ook een goede kans dat de Repository het volgens segment in het hoofdgeheugen in de cache heeft geplaatst. Het renderen gaat dus veel sneller dan wanneer andere pagina&#39;s elkaar nu en dan uit verschillende cache hadden uitgezet.
 
 Caching is moeilijk, en ook het testen van een systeem dat op caching baseert. Wat kan je doen om een nauwkeuriger real-life scenario te hebben?
 
@@ -513,7 +513,7 @@ Wij denken dat u meer dan één test zou moeten uitvoeren, en u zou meer dan é�
 
 Als u al een bestaande website hebt, meet dan het aantal verzoeken en de manier waarop deze worden verspreid. Probeer een test te modelleren die een gelijkaardige distributie van verzoeken gebruikt. Het toevoegen van enige willekeur kon geen pijn doen. U moet geen browser simuleren die statische middelen zoals JS en CSS zou laden - die niet echt van belang zijn. Ze worden uiteindelijk in de browser of in de Dispatcher in cache geplaatst en ze worden niet noemenswaardig geladen. Maar afbeeldingen waarnaar wordt verwezen, zijn belangrijk. Vind hun distributie in oude logboekdossiers evenals model een gelijkaardig verzoekpatroon.
 
-Voer nu een test uit waarbij je Dispatcher helemaal niet in cache plaatst. Dat is uw slechtst denkbare scenario. Kom te weten bij welke piekbelasting uw systeem onder deze ergste omstandigheden instabiel wordt. Je kunt het ook erger maken door een paar Dispatcher/Publish benen uit te nemen, als je dat wilt.
+Voer nu een test uit waarbij je Dispatcher helemaal niet in cache plaatst. Dat is uw slechtst denkbare scenario. Kom te weten bij welke piekbelasting uw systeem onder deze ergste omstandigheden instabiel wordt. U kunt het ook nog erger maken door een paar Dispatcher/Publish benen uit te nemen als u wilt.
 
 Voer vervolgens dezelfde test uit met alle vereiste cache-instellingen naar &quot;on&quot;. Maak uw parallelle aanvragen langzaam op om het cachegeheugen op te warmen en zie hoeveel uw systeem onder deze optimale omstandigheden kan innemen.
 
@@ -523,4 +523,4 @@ U kunt het laatste scenario variëren door de verzoeken tot ongeldigmaking te ve
 
 Dat is iets complexer dan een lineaire belastingstest - maar geeft veel meer vertrouwen in uw oplossing.
 
-Je kan je afschuw maken van de inspanning. Maar in ieder geval een test uitvoeren op het slechtst denkbare geval op het Publish-systeem met een groter aantal pagina&#39;s (gelijkelijk verdeeld) om de grenzen van het systeem te zien. Zorg ervoor dat u het aantal van de beste scenario&#39;s correct interpreteert en dat u uw systemen voldoende ruimte biedt.
+Je kan je afschuw maken van de inspanning. Maar voer in ieder geval een worst case-test uit op het publicatiesysteem met een groter aantal pagina&#39;s (gelijk verdeeld) om de grenzen van het systeem te zien. Zorg ervoor dat u het aantal van de beste scenario&#39;s correct interpreteert en dat u uw systemen voldoende ruimte biedt.

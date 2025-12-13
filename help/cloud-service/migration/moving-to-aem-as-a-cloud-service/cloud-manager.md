@@ -4,13 +4,13 @@ description: Meer informatie over Cloud Manager for AEM as a Cloud Service en de
 version: Experience Manager as a Cloud Service
 feature: Cloud Manager
 topic: Migration, Upgrade
-role: Architect, Developer
+role: Developer
 level: Intermediate, Experienced
 jira: KT-8632
 thumbnail: 336961.jpeg
 exl-id: 9c641a90-be62-49c1-b8c0-d45d26055b94
 duration: 843
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Meer informatie over Cloud Manager for AEM as a Cloud Service en de verschillen met Cloud Manager for AEM op Adobe Manage Services (AMS).
 
->[!VIDEO](https://video.tv.adobe.com/v/3453901?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/336961?quality=12&learn=on)
 
 ## Handbeweging
 

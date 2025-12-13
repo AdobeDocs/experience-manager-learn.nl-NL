@@ -4,22 +4,22 @@ description: Leer over plaatsingsoverwegingen voor de Component van het Web/zuiv
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-10797
 thumbnail: kt-10797.jpg
 exl-id: 9d4aab4c-82af-4917-8c1b-3935f19691e6
 duration: 31
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
 
 # Implementaties van AEM Headless Web Component
 
-De Plaatsingen van de Component 1&rbrace;/JS van de Component van het Web van AEM Headless [&#x200B; zijn zuivere JavaScript apps die in Webbrowser lopen, die op een krantenloze manier verbruiken en met inhoud in AEM in wisselwerking staan. &#x200B;](https://developer.mozilla.org/en-US/docs/Web/Web_Components) De plaatsingen van de Component/JS van het Web verschillen van [&#x200B; plaatsingen van het KUUROORD &#x200B;](./spa.md) in die zin dat zij geen robuust kader van het KUUROORD gebruiken, en worden verwacht om in de context van om het even welke website worden ingebed, leveren, aan oppervlakte inhoud van AEM.
+De Plaatsingen van de Component 1}/JS van de Component van het Web van AEM Headless [ zijn zuivere JavaScript apps die in Webbrowser lopen, die op een krantenloze manier verbruiken en met inhoud in AEM in wisselwerking staan. ](https://developer.mozilla.org/en-US/docs/Web/Web_Components) De plaatsingen van de Component/JS van het Web verschillen van [ plaatsingen van het KUUROORD ](./spa.md) in die zin dat zij geen robuust kader van het KUUROORD gebruiken, en worden verwacht om in de context van om het even welke website worden ingebed, leveren, aan oppervlakte inhoud van AEM.
 
 
 ## Implementatieconfiguraties
@@ -28,9 +28,9 @@ De volgende plaatsingsconfiguratie moet op zijn plaats voor de plaatsingen van d
 
 | Web Component/JS-toepassing maakt verbinding met → | AEM-auteur | AEM Publiceren | AEM Preview |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [&#x200B; de filters van Dispatcher &#x200B;](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
-| [&#x200B; bron het delen van de kruis-oorsprong (CORS) &#x200B;](./configurations/cors.md) | ✔ | ✔ | ✔ |
-| [&#x200B; de gastheren van AEM &#x200B;](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| [ de filters van Dispatcher ](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [ bron het delen van de kruis-oorsprong (CORS) ](./configurations/cors.md) | ✔ | ✔ | ✔ |
+| [ de gastheren van AEM ](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Voorbeeld van webcomponent
 

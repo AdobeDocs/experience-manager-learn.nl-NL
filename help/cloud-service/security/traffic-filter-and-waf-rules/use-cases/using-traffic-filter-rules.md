@@ -4,14 +4,14 @@ description: Leer hoe u AEM-websites kunt beschermen tegen Denial of Service (Do
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18307
 thumbnail: null
 exl-id: 5e235220-82f6-46e4-b64d-315f027a7024
-source-git-commit: b7f567da159865ff04cb7e9bd4dae0b140048e7d
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 0%
@@ -39,12 +39,12 @@ De implementatiestappen omvatten:
 - De standaardregels voor verkeersfilters toevoegen aan het AEM WKND-projectbestand `/config/cdn.yaml` .
 - De wijzigingen doorvoeren en doorvoeren in de Cloud Manager Git-opslagplaats.
 - Het opstellen van de veranderingen in het milieu van AEM gebruikend de Cloud Manager config pijpleiding.
-- Het testen van de regels door de aanval van Dos te simuleren gebruikend [&#x200B; Vegeta &#x200B;](https://github.com/tsenart/vegeta)
+- Het testen van de regels door de aanval van Dos te simuleren gebruikend [ Vegeta ](https://github.com/tsenart/vegeta)
 - De resultaten analyseren met de CDN-logboeken van AEMCS en het dashboard van de ELK.
 
 ## Vereisten
 
-Alvorens te werk te gaan, zorg u de vereiste grondwerk zoals die in [&#x200B; wordt beschreven hoe te opstellingsverkeersfilter en WAF regels &#x200B;](../setup.md) leerprogramma heeft voltooid. Ook, hebt u gekloond en opgesteld het [&#x200B; Project van de Plaatsen van AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) aan uw milieu van AEM.
+Alvorens te werk te gaan, zorg u de vereiste grondwerk zoals die in [ wordt beschreven hoe te opstellingsverkeersfilter en WAF regels ](../setup.md) leerprogramma heeft voltooid. Ook, hebt u gekloond en opgesteld het [ Project van de Plaatsen van AEM WKND ](https://github.com/adobe/aem-guides-wknd) aan uw milieu van AEM.
 
 ## Belangrijkste acties van de regels
 
@@ -126,7 +126,7 @@ Het attribuut `action` specificeert dat de regel de gebeurtenissen zou moeten re
 
 ### &#x200B;3. Blokkeringslanden
 
-Deze regel blokkeert toegang van specifieke landen die onder [&#x200B; OFAC &#x200B;](https://ofac.treasury.gov/sanctions-programs-and-country-information) beperkingen vallen.
+Deze regel blokkeert toegang van specifieke landen die onder [ OFAC ](https://ofac.treasury.gov/sanctions-programs-and-country-information) beperkingen vallen.
 U kunt de lijst met landen naar wens bekijken en wijzigen.
 
 ```yaml
@@ -156,7 +156,7 @@ Het attribuut `action` specificeert dat de regel toegang van de gespecificeerde 
 
 Het volledige `cdn.yaml` -bestand met de bovenstaande regels ziet er als volgt uit:
 
-![&#x200B; WKND CDN YAML Regels &#x200B;](../assets/use-cases/wknd-cdn-yaml-rules.png)
+![ WKND CDN YAML Regels ](../assets/use-cases/wknd-cdn-yaml-rules.png)
 
 ## Regels implementeren
 
@@ -164,13 +164,13 @@ Voer de volgende stappen uit om de bovenstaande regels te implementeren:
 
 - Leg de wijzigingen vast en duw deze naar de Cloud Manager Git-opslagplaats.
 
-- Stel de veranderingen in het milieu van AEM op gebruikend de Cloud Manager config pijpleiding [&#x200B; vroeger gecreeerd &#x200B;](../setup.md#deploy-rules-using-adobe-cloud-manager).
+- Stel de veranderingen in het milieu van AEM op gebruikend de Cloud Manager config pijpleiding [ vroeger gecreeerd ](../setup.md#deploy-rules-using-adobe-cloud-manager).
 
-  ![&#x200B; Cloud Manager Config Pipeline &#x200B;](../assets/use-cases/cloud-manager-config-pipeline.png)
+  ![ Cloud Manager Config Pipeline ](../assets/use-cases/cloud-manager-config-pipeline.png)
 
 ## Testregels
 
-Om de doeltreffendheid van de standaardregels van de verkeersfilter te verifiëren, bij zowel **CDN Edge** als de **Oorsprong**, hoog verzoekverkeer simuleren gebruikend [&#x200B; Vegeta &#x200B;](https://github.com/tsenart/vegeta), een veelzijdig HTTP lading testend hulpmiddel.
+Om de doeltreffendheid van de standaardregels van de verkeersfilter te verifiëren, bij zowel **CDN Edge** als de **Oorsprong**, hoog verzoekverkeer simuleren gebruikend [ Vegeta ](https://github.com/tsenart/vegeta), een veelzijdig HTTP lading testend hulpmiddel.
 
 - Test DoS Rule op de Edge (limiet van 500 rps). Met de volgende opdracht worden gedurende 15 seconden 200 verzoeken per seconde gesimuleerd. Dit overschrijdt de Edge-drempel (500 rps).
 
@@ -178,7 +178,7 @@ Om de doeltreffendheid van de standaardregels van de verkeersfilter te verifiër
   $echo "GET https://publish-p63947-e1249010.adobeaemcloud.com/us/en.html" | vegeta attack -rate=200 -duration=15s | vegeta report
   ```
 
-  ![&#x200B; Vegeta Dos aanval Edge &#x200B;](../assets/use-cases/vegeta-dos-attack-edge.png)
+  ![ Vegeta Dos aanval Edge ](../assets/use-cases/vegeta-dos-attack-edge.png)
 
   >[!IMPORTANT]
   >
@@ -196,7 +196,7 @@ Om de doeltreffendheid van de standaardregels van de verkeersfilter te verifiër
   $vegeta attack -rate=110 -duration=1s -targets=targets.txt | vegeta report
   ```
 
-  ![&#x200B; De aanvalsoorsprong van Dos van Vegeta &#x200B;](../assets/use-cases/vegeta-dos-attack-origin.png)
+  ![ De aanvalsoorsprong van Dos van Vegeta ](../assets/use-cases/vegeta-dos-attack-origin.png)
 
   >[!IMPORTANT]
   >
@@ -206,35 +206,35 @@ Om de doeltreffendheid van de standaardregels van de verkeersfilter te verifiër
 
 ## Waarschuwingen bekijken
 
-Het alarm wordt geproduceerd wanneer de regels van de verkeersfilter worden teweeggebracht. U kunt deze alarm in het [&#x200B; Centrum van Acties van AEM &#x200B;](https://experience.adobe.com/aem/actions-center) herzien.
+Het alarm wordt geproduceerd wanneer de regels van de verkeersfilter worden teweeggebracht. U kunt deze alarm in het [ Centrum van Acties van AEM ](https://experience.adobe.com/aem/actions-center) herzien.
 
-![&#x200B; WKND het Centrum van Acties van AEM &#x200B;](../assets/use-cases/wknd-aem-action-center.png)
+![ WKND het Centrum van Acties van AEM ](../assets/use-cases/wknd-aem-action-center.png)
 
 ## Resultaten analyseren
 
-Om de resultaten van de regels van de verkeersfilter te analyseren, kunt u de logboeken van AEMCS CDN en het dashboard van de ELK gebruiken. Volg de instructies van [&#x200B; CDN registreert opname &#x200B;](../setup.md#ingest-cdn-logs) opstellingssectie om de CDN- logboeken in de stapel van de ELK in te nemen.
+Om de resultaten van de regels van de verkeersfilter te analyseren, kunt u de logboeken van AEMCS CDN en het dashboard van de ELK gebruiken. Volg de instructies van [ CDN registreert opname ](../setup.md#ingest-cdn-logs) opstellingssectie om de CDN- logboeken in de stapel van de ELK in te nemen.
 
 In de volgende schermafbeelding ziet u de CDN-logbestanden van de AEM Dev-omgeving die in de ELK-stapel zijn opgenomen.
 
-![&#x200B; WKND CDN Logs ELK &#x200B;](../assets/use-cases/wknd-cdn-logs-elk.png)
+![ WKND CDN Logs ELK ](../assets/use-cases/wknd-cdn-logs-elk.png)
 
 Binnen de ELK toepassing, zou het **Dashboard van het Verkeer CDN** de piek bij **Edge** en **Oorsprong** tijdens de gesimuleerde aanvallen van Dos moeten tonen.
 
 De twee panelen, _Edge RPS per Cliënt IP en POP_ en _Oorsprong RPS per Cliënt IP en POP_, tonen de verzoeken per seconde (RPS) bij de rand en de oorsprong respectievelijk, die door cliëntIP en Punt van Aanwezigheid (POP) worden gegroepeerd.
 
-![&#x200B; WKND CDN het Dashboard van het Verkeer van Edge &#x200B;](../assets/use-cases/wknd-cdn-edge-traffic-dashboard.png)
+![ WKND CDN het Dashboard van het Verkeer van Edge ](../assets/use-cases/wknd-cdn-edge-traffic-dashboard.png)
 
 U kunt andere panelen in het Dashboard van het Verkeer CDN ook gebruiken om de verkeerspatronen, zoals _Bovenste Cliënt IPs_, _Hoogste Landen_, en _Hoogste Agenten van de Gebruiker_ te analyseren. Deze panelen helpen u potentiële bedreigingen identificeren en uw regels van de verkeersfilter dienovereenkomstig aanpassen.
 
 ### Splunk-integratie
 
-De klanten die [&#x200B; Logboek van de Splunk hebben toegelaten &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) kunnen nieuwe dashboards tot stand brengen om de verkeerspatronen te analyseren.
+De klanten die [ Logboek van de Splunk hebben toegelaten ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) kunnen nieuwe dashboards tot stand brengen om de verkeerspatronen te analyseren.
 
-Om dashboards in Splunk tot stand te brengen, volg [&#x200B; Splunk dashboards voor de Analyse van het Logboek AEMCS CDN &#x200B;](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis) stappen.
+Om dashboards in Splunk tot stand te brengen, volg [ Splunk dashboards voor de Analyse van het Logboek AEMCS CDN ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis) stappen.
 
 De volgende het schermschot toont een voorbeeld van een dashboard van het Splunk dat de maximumoorsprong en randverzoeken per IP toont, die u kunnen helpen potentiële aanvallen van Dos identificeren.
 
-![&#x200B; Splunk dashboard - Max oorsprong en randverzoeken per IP &#x200B;](../assets/use-cases/splunk-dashboard-max-origin-edge-requests.png)
+![ Splunk dashboard - Max oorsprong en randverzoeken per IP ](../assets/use-cases/splunk-dashboard-max-origin-edge-requests.png)
 
 ## Wanneer en hoe te om regels te verfijnen
 
@@ -251,7 +251,7 @@ In de volgende tabel vindt u een overzicht van de wijze waarop u de drempelwaard
   | Oorsprong | Neem de hoogste waarde van de Max Verzoeken van de Oorsprong per IP/POP onder **normale** verkeersvoorwaarden (namelijk niet het tarief op het tijdstip van een DDoS) en verhoog het met een veelvoud |
   | Edge | Neem de hoogste waarde van de Max Verzoeken van Edge per IP/POP onder **normale** verkeersvoorwaarden (namelijk niet het tarief op het tijdstip van een DDoS) en verhoog het met een veelvoud |
 
-  Zie ook de [&#x200B; Kiezen drempelwaarden &#x200B;](../../blocking-dos-attack-using-traffic-filter-rules.md#choosing-threshold-values) sectie voor meer details.
+  Zie ook de [ Kiezen drempelwaarden ](../../blocking-dos-attack-using-traffic-filter-rules.md#choosing-threshold-values) sectie voor meer details.
 
 - **Beweging aan het blokkeren van regels**: Zodra u de verkeerspatronen en de drempels hebt bevestigd, zou u de regels aan blok-wijze moeten overgaan.
 
@@ -391,4 +391,4 @@ Voor meer geavanceerde scenario&#39;s, kunt u de volgende gebruiksgevallen onder
 
 ## Aanvullende bronnen
 
-- [&#x200B; Aanbevolen starterregels &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)
+- [ Aanbevolen starterregels ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)

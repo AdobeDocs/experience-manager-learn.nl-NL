@@ -4,7 +4,7 @@ description: Leer hoe u artefacten van derden installeert die *niet beschikbaar 
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: OSGI
 topic: Development
-role: Architect, Developer
+role: Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 0
@@ -12,7 +12,7 @@ last-substantial-update: 2024-09-13T00:00:00Z
 jira: KT-16207
 thumbnail: KT-16207.jpeg
 exl-id: 0cec14b3-4be5-4666-a36c-968ea2fc634f
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 0%
@@ -25,25 +25,25 @@ Leer hoe te om derdeartefacten te installeren die *niet beschikbaar in de openba
 
 De **derdeartefacten** kunnen zijn:
 
-- [&#x200B; OSGi bundel &#x200B;](https://www.osgi.org/resources/architecture/): Een bundel OSGi is een Java™ archiefdossier dat de klassen, de middelen van Java bevat, en manifest die de bundel en zijn gebiedsdelen beschrijft.
-- [&#x200B; Java jar &#x200B;](https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html): Een Java™ archiefdossier dat de klassen en de middelen van Java bevat.
-- [&#x200B; Pakket &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#what-are-packages): Een pakket is een zip dossier dat bewaarplaats inhoud in dossier-systeem rangschikkingsvorm bevat.
+- [ OSGi bundel ](https://www.osgi.org/resources/architecture/): Een bundel OSGi is een Java™ archiefdossier dat de klassen, de middelen van Java bevat, en manifest die de bundel en zijn gebiedsdelen beschrijft.
+- [ Java jar ](https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html): Een Java™ archiefdossier dat de klassen en de middelen van Java bevat.
+- [ Pakket ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#what-are-packages): Een pakket is een zip dossier dat bewaarplaats inhoud in dossier-systeem rangschikkingsvorm bevat.
 
 ## Standaardscenario
 
-Typisch zou u de derdebundel installeren, pakket dat ** in de openbare GeMaven bewaarplaats als gebiedsdeel in het 2&rbrace; dossier van uw AEM project &lbrace;beschikbaar is.`pom.xml`
+Typisch zou u de derdebundel installeren, pakket dat ** in de openbare GeMaven bewaarplaats als gebiedsdeel in het 2} dossier van uw AEM project {beschikbaar is.`pom.xml`
 
 Bijvoorbeeld:
 
-- [&#128279;](https://github.com/adobe/aem-core-wcm-components) **de bundel van de Kern van AEM WCM** wordt toegevoegd als gebiedsdeel in het [&#x200B; WKND- project &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) `pom.xml` dossier.  Hier wordt het bereik `provided` gebruikt omdat de AEM WCM Core Components-bundel wordt geleverd door de AEM-runtime. Als de bundel niet door de runtime van AEM wordt verstrekt, zou u het `compile` werkingsgebied gebruiken en het is het standaardwerkingsgebied.
+- [ ](https://github.com/adobe/aem-core-wcm-components) de bundel van de Kern van AEM WCM **wordt toegevoegd als gebiedsdeel in het** WKND- project [ ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) dossier. `pom.xml` Hier wordt het bereik `provided` gebruikt omdat de AEM WCM Core Components-bundel wordt geleverd door de AEM-runtime. Als de bundel niet door de runtime van AEM wordt verstrekt, zou u het `compile` werkingsgebied gebruiken en het is het standaardwerkingsgebied.
 
-- [&#x200B; Gedeelde WKND &#x200B;](https://github.com/adobe/aem-guides-wknd-shared) **pakket** wordt toegevoegd als gebiedsdeel in het [&#x200B; WKND- project &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773) `pom.xml` dossier.
+- [ Gedeelde WKND ](https://github.com/adobe/aem-guides-wknd-shared) **pakket** wordt toegevoegd als gebiedsdeel in het [ WKND- project ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773) `pom.xml` dossier.
 
 
 
 ## Zeldzame scenario
 
-Af en toe, wanneer het bouwen van en het opstellen van een project van AEM, kunt u een derdebundel of jar of pakket **moeten installeren die niet** in [&#x200B; Gemaakt Centrale Bewaarplaats &#x200B;](https://mvnrepository.com/) of [&#x200B; Openbare Bewaarplaats van Adobe &#x200B;](https://repo.adobe.com/index.html) beschikbaar is.
+Af en toe, wanneer het bouwen van en het opstellen van een project van AEM, kunt u een derdebundel of jar of pakket **moeten installeren die niet** in [ Gemaakt Centrale Bewaarplaats ](https://mvnrepository.com/) of [ Openbare Bewaarplaats van Adobe ](https://repo.adobe.com/index.html) beschikbaar is.
 
 De redenen hiervoor zouden kunnen zijn:
 
@@ -57,9 +57,9 @@ De redenen hiervoor zouden kunnen zijn:
 
 Voor het volgen van deze zelfstudie hebt u het volgende nodig:
 
-- De [&#x200B; lokale ontwikkelomgeving van AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) of [&#x200B; Snelle Milieu van de Ontwikkeling (RDE) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/overview) opstelling.
+- De [ lokale ontwikkelomgeving van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) of [ Snelle Milieu van de Ontwikkeling (RDE) ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview) opstelling.
 
-- Het [&#x200B; project van AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) _om de derdebundel of jar of pakket_ toe te voegen en de veranderingen te verifiëren.
+- Het [ project van AEM WKND ](https://github.com/adobe/aem-guides-wknd) _om de derdebundel of jar of pakket_ toe te voegen en de veranderingen te verifiëren.
 
 ## Instellen
 
@@ -77,23 +77,23 @@ Voor het volgen van deze zelfstudie hebt u het volgende nodig:
 
 ## Een bundel van derden installeren in een AEM-project{#install-third-party-bundle}
 
-Laten wij een demo OSGi [&#x200B; mijn-voorbeeld-bundel &#x200B;](./assets/install-third-party-articafcts/my-example-bundle.zip) installeren en gebruiken dat _niet beschikbaar in de openbare GeMaven bewaarplaats_ aan het project van AEM WKND is.
+Laten wij een demo OSGi [ mijn-voorbeeld-bundel ](./assets/install-third-party-articafcts/my-example-bundle.zip) installeren en gebruiken dat _niet beschikbaar in de openbare GeMaven bewaarplaats_ aan het project van AEM WKND is.
 
 De **my-example-bundle** voert `HelloWorldService` dienst OSGi uit, zijn `sayHello()` methode keert `Hello Earth!` bericht terug.
 
-Voor meer details, verwijs naar het README.md- dossier in het {[&#128279;](./assets/install-third-party-articafcts/my-example-bundle.zip) dossier 0} my-example-bundle.zip.
+Voor meer details, verwijs naar het README.md- dossier in het {[ dossier 0} my-example-bundle.zip.](./assets/install-third-party-articafcts/my-example-bundle.zip)
 
 ### Voeg de bundel toe aan de module `all`
 
 De eerste stap bestaat uit het toevoegen van `my-example-bundle` aan de module `all` van het AEM WKND-project.
 
-- Download en haal het {[&#128279;](./assets/install-third-party-articafcts/my-example-bundle.zip) dossier 0} my-example-bundle.zip.
+- Download en haal het {[ dossier 0} my-example-bundle.zip.](./assets/install-third-party-articafcts/my-example-bundle.zip)
 
-- Maak de mappenstructuur van `all/src/main/content/jcr_root/apps/wknd-vendor-packages/container/install` in de module `all` van het AEM WKND-project. De map `/all/src/main/content` bestaat, u hoeft alleen de mappen `jcr_root/apps/wknd-vendor-packages/container/install` te maken.
+- Maak de mappenstructuur van `all` in de module `all/src/main/content/jcr_root/apps/wknd-vendor-packages/container/install` van het AEM WKND-project. De map `/all/src/main/content` bestaat, u hoeft alleen de mappen `jcr_root/apps/wknd-vendor-packages/container/install` te maken.
 
 - Kopieer het `my-example-bundle-1.0-SNAPSHOT.jar` -bestand uit de uitgepakte `target` -map naar de bovenstaande `all/src/main/content/jcr_root/apps/wknd-vendor-packages/container/install` -map.
 
-  ![&#x200B; derde-partij-bundel in alle module &#x200B;](./assets/install-third-party-articafcts/3rd-party-bundle-all-module.png)
+  ![ derde-partij-bundel in alle module ](./assets/install-third-party-articafcts/3rd-party-bundle-all-module.png)
 
 ### De service uit de bundel gebruiken
 
@@ -138,7 +138,7 @@ Laten we de `HelloWorldService` OSGi-service van `my-example-bundle` in het AEM 
   }
   ```
 
-- Voeg de `my-example-bundle` toe als afhankelijkheid in het hoofdbestand `pom.xml` van het AEM WKND-project.
+- Voeg de `pom.xml` toe als afhankelijkheid in het hoofdbestand `my-example-bundle` van het AEM WKND-project.
 
   ```xml
   ...
@@ -158,7 +158,7 @@ Laten we de `HelloWorldService` OSGi-service van `my-example-bundle` in het AEM 
    - `systemPath` is het pad naar het `my-example-bundle` -bestand in de module `all` van het AEM WKND-project.
    - `${maven.multiModuleProjectDirectory}` is een Maven bezit dat aan de wortelfolder van het multi-moduleproject richt.
 
-- Voeg in het bestand `core/pom.xml` van de module `core` van de AEM WKND-project de `my-example-bundle` als een afhankelijkheid toe.
+- Voeg in het bestand `core` van de module `core/pom.xml` van de AEM WKND-project de `my-example-bundle` als een afhankelijkheid toe.
 
   ```xml
   ...
@@ -180,15 +180,15 @@ Laten we de `HelloWorldService` OSGi-service van `my-example-bundle` in het AEM 
 
 - Leg bovenstaande wijzigingen vast in de opslagplaats van het AEM WKND-project. Dan verifieer de veranderingen in het milieu RDE of van AEM door de pijpleiding van Cloud Manager in werking te stellen.
 
-  ![&#x200B; verifieer de HaveHello servlet - de Dienst van de Bundel &#x200B;](./assets/install-third-party-articafcts/verify-sayhello-servlet-bundle-service.png)
+  ![ verifieer de HaveHello servlet - de Dienst van de Bundel ](./assets/install-third-party-articafcts/verify-sayhello-servlet-bundle-service.png)
 
-De [&#x200B; leerprogramma/installatie-3de partij-bundel &#x200B;](https://github.com/adobe/aem-guides-wknd/compare/main...tutorial/install-3rd-party-bundle) tak van het project van AEM WKND heeft de bovengenoemde veranderingen voor uw verwijzing.
+De [ leerprogramma/installatie-3de partij-bundel ](https://github.com/adobe/aem-guides-wknd/compare/main...tutorial/install-3rd-party-bundle) tak van het project van AEM WKND heeft de bovengenoemde veranderingen voor uw verwijzing.
 
 ### Belangrijke lessen{#key-learnings-bundle}
 
 De OSGi-bundels die niet beschikbaar zijn in de openbare Maven-opslagplaats kunnen in een AEM-project worden geïnstalleerd door de volgende stappen uit te voeren:
 
-- Kopieer de OSGi-bundel naar de map `jcr_root/apps/<PROJECT-NAME>-vendor-packages/container/install` van de module `all` . Deze stap is nodig om de bundel in een pakket te plaatsen en in te zetten op de AEM-instantie.
+- Kopieer de OSGi-bundel naar de map `all` van de module `jcr_root/apps/<PROJECT-NAME>-vendor-packages/container/install` . Deze stap is nodig om de bundel in een pakket te plaatsen en in te zetten op de AEM-instantie.
 
 - Werk de `pom.xml` -bestanden van de basis- en kernmodule bij om de OSGi-bundel toe te voegen als een afhankelijkheid met de `system` scope en `systemPath` die naar het bundelbestand wijzen. Deze stap is noodzakelijk om het project te compileren.
 
@@ -196,23 +196,23 @@ De OSGi-bundels die niet beschikbaar zijn in de openbare Maven-opslagplaats kunn
 
 In dit voorbeeld is `my-example-jar` geen OSGi-bundel, maar een Java-jar-bestand.
 
-Laten wij een demo [&#x200B; mijn-voorbeeld-jar &#x200B;](./assets/install-third-party-articafcts/my-example-jar.zip) installeren en gebruiken dat _niet beschikbaar in de openbare GeMaven bewaarplaats_ aan het project van AEM WKND is.
+Laten wij een demo [ mijn-voorbeeld-jar ](./assets/install-third-party-articafcts/my-example-jar.zip) installeren en gebruiken dat _niet beschikbaar in de openbare GeMaven bewaarplaats_ aan het project van AEM WKND is.
 
 **my-example-jar** is een Jar dossier van Java dat een `MyHelloWorldService` klasse met een `sayHello()` methode bevat die `Hello World!` bericht terugkeert.
 
-Voor meer details, verwijs naar het README.md- dossier in het [&#x200B; my-example-jar.zip &#x200B;](./assets/install-third-party-articafcts/my-example-jar.zip) dossier.
+Voor meer details, verwijs naar het README.md- dossier in het [ my-example-jar.zip ](./assets/install-third-party-articafcts/my-example-jar.zip) dossier.
 
 ### De jar toevoegen aan de module `all`
 
 De eerste stap bestaat uit het toevoegen van `my-example-jar` aan de module `all` van het AEM WKND-project.
 
-- Download en haal het {[&#128279;](./assets/install-third-party-articafcts/my-example-jar.zip) dossier 0} my-example-jar.zip.
+- Download en haal het {[ dossier 0} my-example-jar.zip.](./assets/install-third-party-articafcts/my-example-jar.zip)
 
-- Maak de mappenstructuur van `all/resource/jar` in de module `all` van het AEM WKND-project.
+- Maak de mappenstructuur van `all` in de module `all/resource/jar` van het AEM WKND-project.
 
 - Kopieer het `my-example-jar-1.0-SNAPSHOT.jar` -bestand uit de uitgepakte `target` -map naar de bovenstaande `all/resource/jar` -map.
 
-  ![&#x200B; derde-partij-jar in alle module &#x200B;](./assets/install-third-party-articafcts/3rd-party-JAR-all-module.png)
+  ![ derde-partij-jar in alle module ](./assets/install-third-party-articafcts/3rd-party-JAR-all-module.png)
 
 ### De service van de pot gebruiken
 
@@ -258,7 +258,7 @@ Laten we de `MyHelloWorldService` uit de `my-example-jar` gebruiken in het AEM W
   }    
   ```
 
-- Voeg de `my-example-jar` toe als afhankelijkheid in het hoofdbestand `pom.xml` van het AEM WKND-project.
+- Voeg de `pom.xml` toe als afhankelijkheid in het hoofdbestand `my-example-jar` van het AEM WKND-project.
 
   ```xml
   ...
@@ -278,7 +278,7 @@ Laten we de `MyHelloWorldService` uit de `my-example-jar` gebruiken in het AEM W
    - `systemPath` is het pad naar het `my-example-jar` -bestand in de module `all` van het AEM WKND-project.
    - `${maven.multiModuleProjectDirectory}` is een Maven bezit dat aan de wortelfolder van het multi-moduleproject richt.
 
-- Breng twee wijzigingen aan in het bestand `core/pom.xml` van de module `core` van AEM WKND:
+- Breng twee wijzigingen aan in het bestand `core` van de module `core/pom.xml` van AEM WKND:
 
    - Voeg de `my-example-jar` toe als afhankelijkheid.
 
@@ -329,9 +329,9 @@ Laten we de `MyHelloWorldService` uit de `my-example-jar` gebruiken in het AEM W
 
 - Leg bovenstaande wijzigingen vast in de opslagplaats van het AEM WKND-project. Dan verifieer de veranderingen in het milieu RDE of van AEM door de pijpleiding van Cloud Manager in werking te stellen.
 
-  ![&#x200B; verifieer de HaveHello servlet - de Dienst van JAR &#x200B;](./assets/install-third-party-articafcts/verify-sayhello-servlet-jar-service.png)
+  ![ verifieer de HaveHello servlet - de Dienst van JAR ](./assets/install-third-party-articafcts/verify-sayhello-servlet-jar-service.png)
 
-De [&#x200B; leerprogramma/installatie-3de-partij-jar &#x200B;](https://github.com/adobe/aem-guides-wknd/compare/main...tutorial/install-3rd-party-jar) tak van het project van AEM WKND heeft de bovengenoemde veranderingen voor uw verwijzing.
+De [ leerprogramma/installatie-3de-partij-jar ](https://github.com/adobe/aem-guides-wknd/compare/main...tutorial/install-3rd-party-jar) tak van het project van AEM WKND heeft de bovengenoemde veranderingen voor uw verwijzing.
 
 In scenario&#39;s waar het Jar dossier van Java _in de openbare Gemaakt bewaarplaats beschikbaar is maar GEEN bundel OSGi_ is, kunt u de bovengenoemde stappen volgen behalve `<dependency>` `system` werkingsgebied en `systemPath` elementen niet worden vereist.
 
@@ -343,25 +343,25 @@ De Java-potten die geen OSGi-bundels zijn en al dan niet beschikbaar zijn in de 
 
 De volgende stappen zijn alleen vereist als de Java-jar niet beschikbaar is in de openbare Maven-opslagplaats:
 
-- Kopieer de Java-jar naar de map `resource/jar` van de module `all` .
+- Kopieer de Java-jar naar de map `all` van de module `resource/jar` .
 
 - Werk de `pom.xml` -bestanden van de basis- en kernmodule bij om de Java-jar toe te voegen als een afhankelijkheid met de `system` scope en `systemPath` die naar het jar-bestand wijzen.
 
 ## Een pakket van derden installeren in een AEM-project
 
-Laat [&#x200B; ACS AEM Commons &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/) _SNAPSHOT_ versie installeren plaatselijk van de belangrijkste tak wordt gebouwd.
+Laat [ ACS AEM Commons ](https://adobe-consulting-services.github.io/acs-aem-commons/) _SNAPSHOT_ versie installeren plaatselijk van de belangrijkste tak wordt gebouwd.
 
 Dit is louter bedoeld om de stappen aan te tonen voor de installatie van een AEM-pakket dat niet beschikbaar is in de openbare Maven-opslagplaats.
 
-Het ACS AEM Commons-pakket is beschikbaar in de openbare Maven-opslagplaats. Verwijs [&#x200B; ACS AEM Commons aan uw AEM Gemaakt project &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) toevoegen om het aan uw project van AEM toe te voegen.
+Het ACS AEM Commons-pakket is beschikbaar in de openbare Maven-opslagplaats. Verwijs [ ACS AEM Commons aan uw AEM Gemaakt project ](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) toevoegen om het aan uw project van AEM toe te voegen.
 
 ### Het pakket toevoegen aan de module `all`
 
 De eerste stap bestaat uit het toevoegen van het pakket aan de module `all` van het AEM WKND-project.
 
-- Maak een opmerking over of verwijder de ACS AEM Commons-afhankelijkheid van het POM-bestand. Verwijs [&#x200B; ACS AEM Commons aan uw AEM Gemaakt project &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) toevoegen om het gebiedsdeel te identificeren.
+- Maak een opmerking over of verwijder de ACS AEM Commons-afhankelijkheid van het POM-bestand. Verwijs [ ACS AEM Commons aan uw AEM Gemaakt project ](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) toevoegen om het gebiedsdeel te identificeren.
 
-- Kloon de `master` tak van de [&#x200B; ACS AEM Commons bewaarplaats &#x200B;](https://github.com/Adobe-Consulting-Services/acs-aem-commons) aan uw lokale machine.
+- Kloon de `master` tak van de [ ACS AEM Commons bewaarplaats ](https://github.com/Adobe-Consulting-Services/acs-aem-commons) aan uw lokale machine.
 
 - Bouw de ACS AEM Commons SNAPSHOT versie gebruikend het volgende bevel:
 
@@ -371,7 +371,7 @@ De eerste stap bestaat uit het toevoegen van het pakket aan de module `all` van 
 
 - Het lokaal gebouwde pakket bevindt zich @ `all/target` , er zijn twee .zip-bestanden, het ene dat eindigt met `-cloud` is bedoeld voor AEM as a Cloud Service en het andere voor AEM 6.X.
 
-- Maak de mappenstructuur van `all/src/main/content/jcr_root/apps/wknd-vendor-packages/container/install` in de module `all` van het AEM WKND-project. De map `/all/src/main/content` bestaat, u hoeft alleen de mappen `jcr_root/apps/wknd-vendor-packages/container/install` te maken.
+- Maak de mappenstructuur van `all` in de module `all/src/main/content/jcr_root/apps/wknd-vendor-packages/container/install` van het AEM WKND-project. De map `/all/src/main/content` bestaat, u hoeft alleen de mappen `jcr_root/apps/wknd-vendor-packages/container/install` te maken.
 
 - Kopieer het lokaal gebouwde pakketbestand (.zip) naar de map `/all/src/main/content/jcr_root/apps/mysite-vendor-packages/container/install` .
 
@@ -385,11 +385,11 @@ De eerste stap bestaat uit het toevoegen van het pakket aan de module `all` van 
 
    - CRX Package Manager @ `http://localhost:4502/crx/packmgr/index.jsp`
 
-     ![&#x200B; ACS AEM Commons SNAPSHOT versiepakket &#x200B;](./assets/install-third-party-articafcts/acs-aem-commons-snapshot-package.png)
+     ![ ACS AEM Commons SNAPSHOT versiepakket ](./assets/install-third-party-articafcts/acs-aem-commons-snapshot-package.png)
 
    - De OSGi-console @ `http://localhost:4502/system/console/bundles`
 
-     ![&#x200B; ACS AEM Commons SNAPSHOT versiebundel &#x200B;](./assets/install-third-party-articafcts/acs-aem-commons-snapshot-bundle.png)
+     ![ ACS AEM Commons SNAPSHOT versiebundel ](./assets/install-third-party-articafcts/acs-aem-commons-snapshot-bundle.png)
 
 - Leg bovenstaande wijzigingen vast in de opslagplaats van het AEM WKND-project. Dan verifieer de veranderingen in het milieu RDE of van AEM door de pijpleiding van Cloud Manager in werking te stellen.
 
@@ -397,7 +397,7 @@ De eerste stap bestaat uit het toevoegen van het pakket aan de module `all` van 
 
 De AEM-pakketten die niet beschikbaar zijn in de openbare Maven-opslagplaats kunnen in een AEM-project worden geïnstalleerd door de volgende stappen uit te voeren:
 
-- Kopieer het pakket naar de map `jcr_root/apps/<PROJECT-NAME>-vendor-packages/container/install` van de module `all` . Deze stap is nodig om het pakket te verpakken en te implementeren in de AEM-instantie.
+- Kopieer het pakket naar de map `all` van de module `jcr_root/apps/<PROJECT-NAME>-vendor-packages/container/install` . Deze stap is nodig om het pakket te verpakken en te implementeren in de AEM-instantie.
 
 
 ## Samenvatting

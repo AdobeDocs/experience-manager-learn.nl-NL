@@ -1,13 +1,13 @@
 ---
 title: Transformaties met AEM Forms
 description: Deel 1 van de integratie van Acrobat met AEM Forms. Een adaptief formulier maken met Acrobat en de gegevens samenvoegen voor een PDF.
-feature: adaptive-forms
+feature: Adaptive Forms
 doc-type: Tutorial
 version: Experience Manager 6.5
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 144
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Acroformulieren zijn formulieren die zijn gemaakt met Acrobat. U kunt een geheel
 >
 >Als u een XFA-document verzendt, moet u het document afvlakken en moeten de Acrobat Sign-handtekeningcodes aanwezig zijn als statische tekst in het document.
 
-[&#x200B; het Document van de Markeringen van de Tekst van Acrobat Sign &#x200B;](https://helpx.adobe.com/nl/sign/using/text-tag.html)
+[ het Document van de Markeringen van de Tekst van Acrobat Sign ](https://helpx.adobe.com/sign/using/text-tag.html)
 
 >[!NOTE]
 >

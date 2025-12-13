@@ -4,7 +4,7 @@ description: Leer hoe u het in cache plaatsen van HTTP-reacties in AEM as a Clou
 version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2023-11-30T00:00:00Z
@@ -12,7 +12,7 @@ jira: KT-14224
 thumbnail: KT-14224.jpeg
 exl-id: 22b1869e-5bb5-437d-9cb5-2d27f704c052
 duration: 100
-source-git-commit: cf006f24abbc5aa4b91277b91d68538c41d33e15
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Deze cacheheaders worden doorgaans ingesteld in AEM Dispatcher-hostconfiguraties
 
 Het in cache plaatsen van HTTP-reacties in de CDN van AEM as a Cloud Service wordt bestuurd door de volgende HTTP-antwoordheaders vanaf de oorsprong `Cache-Control`, `Surrogate-Control` of `Expires` .  Oorspronkelijke reacties die `private` , `no-cache` of `no-store` in `Cache-Control` bevatten, worden niet in de cache geplaatst.
 
-Herzie het [&#x200B; standaardcaching gedrag &#x200B;](./enable-caching.md#default-caching-behavior) voor AEM publiceren en Auteur wanneer een project van de Archetype van het Project van AEM gebaseerd AEM wordt opgesteld.
+Herzie het [ standaardcaching gedrag ](./enable-caching.md#default-caching-behavior) voor AEM publiceren en Auteur wanneer een project van de Archetype van het Project van AEM gebaseerd AEM wordt opgesteld.
 
 
 ## Cache uitschakelen
@@ -88,7 +88,7 @@ Als u de bestaande CSS-cache wilt overslaan, moet u het CSS-bestand wijzigen om 
    ```
 
    De gastheerdossiers in `dispatcher/src/conf.d/enabled_vhosts` folder zijn **symlinks** aan de dossiers in `dispatcher/src/conf.d/available_vhosts` folder, zodat zorg ervoor om tot symlinks te leiden als niet aanwezig.
-1. Stel de vhost veranderingen in het gewenste milieu van AEM as a Cloud Service op gebruikend [&#x200B; Cloud Manager - de Pijpleiding van Config van de Rij van het Web &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=nl-NL&#web-tier-config-pipelines) of [&#x200B; RDE bevelen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=nl-NL#deploy-apache-or-dispatcher-configuration).
+1. Stel de vhost veranderingen in het gewenste milieu van AEM as a Cloud Service op gebruikend [ Cloud Manager - de Pijpleiding van Config van de Rij van het Web ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) of [ RDE bevelen ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
 
 ### Aangepaste Java™-code
 

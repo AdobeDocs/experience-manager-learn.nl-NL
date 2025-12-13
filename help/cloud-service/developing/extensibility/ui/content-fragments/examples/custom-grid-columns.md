@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-07T00:00:00Z
 exl-id: 87143cf9-e932-4ad6-afe2-cce093c520f4
 duration: 198
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Aangepaste rasterkolommen
 
-![&#x200B; de kolom van het het douaneraster van de Console van het Fragment van de Inhoud &#x200B;](./assets/custom-grid-columns/hero.png){align="center"}
+![ de kolom van het het douaneraster van de Console van het Fragment van de Inhoud ](./assets/custom-grid-columns/hero.png){align="center"}
 
 U kunt aangepaste rasterkolommen toevoegen aan de Content Fragment Console met het extensiepunt `contentFragmentGrid` . In dit voorbeeld ziet u hoe u een aangepaste kolom toevoegt waarmee de pagina Inhoudsfragmenten op basis van de laatste gewijzigde datum in een leesbare indeling wordt weergegeven.
 
@@ -30,8 +30,8 @@ U kunt aangepaste rasterkolommen toevoegen aan de Content Fragment Console met h
 In dit voorbeeld wordt het uitbreidingspunt `contentFragmentGrid` uitgebreid om een aangepaste kolom toe te voegen aan de Content Fragment Console.
 
 | AEM-gebruikersinterface uitgebreid | Extensiepunt |
-| ------------------------ | --------------------- | 
-| [&#x200B; de Console van het Fragment van de Inhoud &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [&#x200B; Kolommen van het Net &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/) |
+| ------------------------ | --------------------- |
+| [ de Console van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [ Kolommen van het Net ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/) |
 
 ## Voorbeeldextensie
 
@@ -39,7 +39,7 @@ In het volgende voorbeeld wordt een aangepaste kolom `Age` gemaakt waarmee de pa
 
 De code laat zien hoe de metagegevens van het inhoudsfragment kunnen worden verkregen in het registratiebestand van de extensie en hoe de JSON-inhoud van het inhoudsfragment kan worden getransformeerd.
 
-Dit voorbeeld gebruikt de [&#128279;](https://moment.github.io/luxon/) bibliotheek van de Luxon om de leeftijd van het Fragment van de Inhoud te berekenen, die via `npm i luxon` wordt geïnstalleerd.
+Dit voorbeeld gebruikt de [ ](https://moment.github.io/luxon/) bibliotheek van de Luxon om de leeftijd van het Fragment van de Inhoud te berekenen, die via `npm i luxon` wordt geïnstalleerd.
 
 ### Registratie van extensies
 
@@ -208,9 +208,9 @@ Als er andere gegevens nodig zijn om de aangepaste kolom te vullen, kunnen HTTP-
 
 >[!IMPORTANT]
 >
-> Zorg ervoor dat de instantie van de Auteur van AEM wordt gevormd om [&#x200B; verzoeken van de dwars-oorsprong &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=nl-NL) van de oorsprong toe te staan app AppBuilder loopt. Tot de toegestane oorsprong behoren `https://localhost:9080`, de oorsprong van het werkgebied van AppBuilder en de oorsprong van de AppBuilder-productie.
+> Zorg ervoor dat de instantie van de Auteur van AEM wordt gevormd om [ verzoeken van de dwars-oorsprong ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) van de oorsprong toe te staan app AppBuilder loopt. Tot de toegestane oorsprong behoren `https://localhost:9080`, de oorsprong van het werkgebied van AppBuilder en de oorsprong van de AppBuilder-productie.
 >
-> Alternatief, kan de uitbreiding een actie van douane [&#x200B; AppBuilder &#x200B;](../../runtime-action.md) roepen die het verzoek aan de Auteur van AEM namens de uitbreiding doet.
+> Alternatief, kan de uitbreiding een actie van douane [ AppBuilder ](../../runtime-action.md) roepen die het verzoek aan de Auteur van AEM namens de uitbreiding doet.
 
 
 ```javascript

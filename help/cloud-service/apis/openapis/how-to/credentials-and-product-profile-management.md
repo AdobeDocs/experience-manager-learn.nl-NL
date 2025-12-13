@@ -4,7 +4,7 @@ description: Leer hoe u Referenties en productprofielen voor AEM API's beheert.
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Beginner
 doc-type: Article
 jira: KT-17428
@@ -12,7 +12,7 @@ thumbnail: KT-17428.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 277b4789-b035-4904-b489-c827c970fb55
-source-git-commit: f125cffc72a6f0eb558492f8dde6f4f30bc074ec
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 0%
@@ -32,17 +32,17 @@ In deze zelfstudie leert u hoe u inhoud kunt toevoegen of verwijderen:
 
 Wanneer u AEM API gebruikt, moet u de _Geloofsbrieven_ en _Profiel van het Product_ in het project van Adobe Developer Console (of ADC) bepalen. In het volgende screenshot, kunt u _Geloofsbrieven_ en _Profiel van het Product_ voor een Auteur API van AEM Assets zien:
 
-![&#x200B; Geloofsbrieven en het Profiel van het Product &#x200B;](../assets/how-to/API-Credentials-Product-Profile.png)
+![ Geloofsbrieven en het Profiel van het Product ](../assets/how-to/API-Credentials-Product-Profile.png)
 
 De _Geloofsbrieven_ verstrekken het authentificatiemechanisme voor API. Het _Profiel van het Product_ verleent _toestemmingen (of vergunning)_ aan de geloofsbrieven, die toegang verlenen de middelen van AEM. De API-aanvraag kan namens een toepassing of een gebruiker worden ingediend.
 
 Een Profiel van het Product wordt geassocieerd met één of meerdere _Diensten_. In AEM as a Cloud Service, vertegenwoordigt de a _Dienst_ gebruikersgroepen met vooraf bepaalde Lijsten van het Toegangsbeheer (ACLs) voor gegevensopslagplaatsen, die korrelig toestemmingsbeheer toestaan.
 
-![&#x200B; het Profiel van het Product van de Gebruiker van de Technische Rekening &#x200B;](../assets/s2s/technical-account-user-product-profile.png)
+![ het Profiel van het Product van de Gebruiker van de Technische Rekening ](../assets/s2s/technical-account-user-product-profile.png)
 
 Na succesvolle API-aanroeping wordt een gebruiker die de referentie van het ADC-project vertegenwoordigt, in de AEM Auteur-service gemaakt, samen met de gebruikersgroepen die overeenkomen met de configuratie Productprofiel en Services.
 
-![&#x200B; Technisch Lidmaatschap van de Gebruiker van de Rekening &#x200B;](../assets/s2s/technical-account-user-membership.png)
+![ Technisch Lidmaatschap van de Gebruiker van de Rekening ](../assets/s2s/technical-account-user-membership.png)
 
 In het bovenstaande scenario wordt de gebruiker `1323d2...` gemaakt in de AEM Author-service en is deze een lid van de gebruikersgroepen `AEM Assets Collaborator Users - Service` en `AEM Assets Collaborator Users - author - Program XXX - Environment XXX` .
 
@@ -60,17 +60,17 @@ Alle geloofsbrieven worden beheerd in uw project ADC.
 
 >[!BEGINTABS]
 
->[!TAB voeg Referenties  toe]
+>[!TAB  voeg Referenties ] toe
 
 Om geloofsbrieven voor AEM API toe te voegen, ga naar de **APIs** sectie van uw project ADC en klik **verbind een andere referentie**. Volg vervolgens de instructies voor het specifieke type referentie.
 
-![&#x200B; verbind een andere referentie &#x200B;](../assets/how-to/connect-another-credential.png)
+![ verbind een andere referentie ](../assets/how-to/connect-another-credential.png)
 
 >[!TAB  verwijdert Referenties ]
 
 Om een referentie van AEM API te verwijderen, selecteer het in de **APIs** sectie van uw project ADC, dan klik **credential van de Schrapping**.
 
-![&#x200B; schrapping credential &#x200B;](../assets/how-to/delete-credential.png)
+![ schrapping credential ](../assets/how-to/delete-credential.png)
 
 
 >[!ENDTABS]
@@ -81,38 +81,38 @@ Het _Profiel van het Product_ verstrekt de _toestemmingen (of vergunning)_ aan d
 
 Er zijn tijden wanneer de geloofsbrieven (ook bekend als technische rekeningsgebruiker) extra toestemmingen zoals _creeer, Update, schrap_ (CUD) van de middelen van AEM nodig hebben. In dergelijke gevallen, moet u een nieuw _Profiel van het Product_ toevoegen dat met de _Diensten_ wordt geassocieerd die de vereiste toestemmingen verstrekken.
 
-Bijvoorbeeld, wanneer de aanroeping van de Auteur van AEM Assets API [&#x200B; 403 fout voor niet-GET verzoeken &#x200B;](../use-cases/invoke-api-using-oauth-s2s.md#403-error-for-non-get-requests) ontvangt, kunt u **Beheerders van AEM toevoegen - auteur - Programma XXX - Milieu XXX** _Profiel van het Product_ om de kwestie op te lossen.
+Bijvoorbeeld, wanneer de aanroeping van de Auteur van AEM Assets API [ 403 fout voor niet-GET verzoeken ](../use-cases/invoke-api-using-oauth-s2s.md#403-error-for-non-get-requests) ontvangt, kunt u **Beheerders van AEM toevoegen - auteur - Programma XXX - Milieu XXX** _Profiel van het Product_ om de kwestie op te lossen.
 
 >[!CAUTION]
 >
->De **dienst van de Beheerders van AEM 1&rbrace; verleent _VOLLEDIGE_ administratieve toegang tot Experience Manager.** Alternatief, kunt u {de toestemmingen van de Diensten 0} [&#128279;](./services-user-group-permission-management.md) bijwerken om slechts de vereiste toestemmingen te verstrekken.
+>De **dienst van de Beheerders van AEM 1} verleent** VOLLEDIGE _administratieve toegang tot Experience Manager._ Alternatief, kunt u {de toestemmingen van de Diensten 0} [ bijwerken om slechts de vereiste toestemmingen te verstrekken.](./services-user-group-permission-management.md)
 
 >[!BEGINTABS]
 
->[!TAB voeg de Profielen van het Product  toe]
+>[!TAB  voeg de Profielen van het Product ] toe
 
 Om de Profielen van het Product voor een AEM API toe te voegen, klik **productprofielen** in de **APIs** sectie van het project ADC, selecteer het gewenste Profiel van het Product in **vorm API** dialoog, en sparen uw veranderingen.
 
-![&#x200B; geef productprofielen &#x200B;](../assets/how-to/edit-product-profiles.png) uit
+![ geef productprofielen ](../assets/how-to/edit-product-profiles.png) uit
 
 Selecteer het gewenste Profiel van het Product (b.v., **de Beheerders van AEM - auteur - Programma XXX - Milieu XXX**) verbonden aan de vereiste diensten, dan sparen uw veranderingen.
 
-![&#x200B; Uitgezochte Profiel van het Product &#x200B;](../assets/how-to/select-product-profile.png)
+![ Uitgezochte Profiel van het Product ](../assets/how-to/select-product-profile.png)
 
 Merk op dat de **Beheerders van AEM - auteur - Programma XXX - het Profiel van het Product van het Milieu XXX** met zowel de **dienst van de Beheerders van AEM** als de **gebruikers van AEM Assets API** dienst wordt geassocieerd. Zonder deze laatste optie wordt het productprofiel niet weergegeven in de lijst met beschikbare productprofielen.
 
-{de Diensten van het Profiel van 0} Product ![&#128279;](../assets/how-to/product-profile-services.png)
+{de Diensten van het Profiel van 0} Product ![](../assets/how-to/product-profile-services.png)
 
 Het **PATCH** verzoek om de activa meta-gegevens bij te werken zou nu zonder kwesties moeten werken.
 
-![&#x200B; PATCH Verzoek &#x200B;](../assets/how-to/patch-request.png)
+![ PATCH Verzoek ](../assets/how-to/patch-request.png)
 
 
 >[!TAB  verwijder de Profielen van het Product ]
 
 Om de Profielen van het Product voor een AEM API te verwijderen, **te klikken geef productprofielen** in de **APIs** sectie van het project ADC uit, schrap het gewenste Profiel van het Product in **API** dialoog vormen, en sparen uw veranderingen.
 
-![&#x200B; schrap het Profiel van het Product &#x200B;](../assets/how-to/deselect-product-profile.png)
+![ schrap het Profiel van het Product ](../assets/how-to/deselect-product-profile.png)
 
 >[!ENDTABS]
 

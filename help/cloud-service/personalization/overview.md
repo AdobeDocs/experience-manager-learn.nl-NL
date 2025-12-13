@@ -4,14 +4,14 @@ description: Leer hoe u AEM as a Cloud Service-websites kunt personaliseren met 
 version: Experience Manager as a Cloud Service
 feature: Personalization, Integrations
 topic: Personalization, Integrations, Architecture
-role: Developer, Architect, Leader, Data Architect, User
+role: Developer, Leader, User
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18717
 thumbnail: null
 exl-id: c4fb11b9-b613-4522-b9da-18d7ae0826ec
-source-git-commit: 4d345ba7b10ea21d7bc7eee89157de782e1c4350
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Leer hoe AEM as a Cloud Service (AEMCS) integreert met Adobe Target en Adobe Exp
 
 ## Vereisten
 
-Om diverse verpersoonlijkingsscenario&#39;s aan te tonen, gebruikt dit leerprogramma het steekproef [&#x200B; AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd/) project. U hebt de volgende stappen nodig:
+Om diverse verpersoonlijkingsscenario&#39;s aan te tonen, gebruikt dit leerprogramma het steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd/) project. U hebt de volgende stappen nodig:
 
 - Een Adobe org met toegang tot:
    - **milieu van AEM as a Cloud Service** - om inhoud tot stand te brengen en te beheren
@@ -34,11 +34,11 @@ Om diverse verpersoonlijkingsscenario&#39;s aan te tonen, gebruikt dit leerprogr
 
 - Basiskennis van AEM-componenten en Experience Fragments
 
-- Het [&#x200B; AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd/) project dat aan uw milieu van AEM as a Cloud Service wordt opgesteld.
+- Het [ AEM WKND ](https://github.com/adobe/aem-guides-wknd/) project dat aan uw milieu van AEM as a Cloud Service wordt opgesteld.
 
 ## Live demo van Personalization-gebruiksgevallen
 
-De verpersoonlijking van de ervaring in actie op de [&#x200B; website van Enablement WKND &#x200B;](https://wknd.enablementadobe.com/us/en.html){target="wknd"}. De demo-site demonstreert drie typen personalisatie: A/B-tests, gedragsgericht gebruik en bekende gebruikersidentificatie.
+De verpersoonlijking van de ervaring in actie op de [ website van Enablement WKND ](https://wknd.enablementadobe.com/us/en.html){target="wknd"}. De demo-site demonstreert drie typen personalisatie: A/B-tests, gedragsgericht gebruik en bekende gebruikersidentificatie.
 
 >[!TIP]
 >

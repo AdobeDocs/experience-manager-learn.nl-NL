@@ -5,7 +5,7 @@ short-description: Leer hoe u de inhoud van een voorbeeld van een React-app bewe
 version: Experience Manager as a Cloud Service
 feature: Developer Tools, Headless
 topic: Development, Content Management
-role: Architect, Developer
+role: Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 87
@@ -13,7 +13,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 69ed610e-2eff-43b3-98f9-3dc40594e879
-source-git-commit: f0b1b906e1ef04b53eca940f191e65d62a2e0bab
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -51,14 +51,14 @@ De Universele Redacteur machtigt inhoudsauteurs en ontwikkelaars (front-end en b
 
 ## Voorbeeld van React-app
 
-Dit leerprogramma gebruikt [**WKND Teams** &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial#react-app---basic-tutorial---teampersons) als steekproef Reageer app. De **Teams van WKND** Reageer app toont een lijst van teamleden en hun details.
+Dit leerprogramma gebruikt [**WKND Teams** ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial#react-app---basic-tutorial---teampersons) als steekproef Reageer app. De **Teams van WKND** Reageer app toont een lijst van teamleden en hun details.
 
-De details van het Team zoals titel, beschrijving, en teamleden worden opgeslagen als _de Fragmenten van de Inhoud van 0&rbrace; Team &lbrace;in AEM._ Eveneens, worden de Persoon details zoals naam, biografie, en profielbeeld opgeslagen als _Persoon_ de Fragmenten van de Inhoud in AEM.
+De details van het Team zoals titel, beschrijving, en teamleden worden opgeslagen als _de Fragmenten van de Inhoud van 0} Team {in AEM._ Eveneens, worden de Persoon details zoals naam, biografie, en profielbeeld opgeslagen als _Persoon_ de Fragmenten van de Inhoud in AEM.
 
 De inhoud voor de React-app wordt geleverd door AEM met behulp van GraphQL API&#39;s en de gebruikersinterface is samengesteld met behulp van twee React-componenten, `Teams` en `Person` .
 
-Een overeenkomstige leerprogramma is beschikbaar om te leren hoe te om de **Teams van WKND** Reageren app te bouwen. U kunt het leerprogramma [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview) vinden.
+Een overeenkomstige leerprogramma is beschikbaar om te leren hoe te om de **Teams van WKND** Reageren app te bouwen. U kunt het leerprogramma [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview) vinden.
 
 ## Volgende stap
 
-Leer hoe te [&#x200B; opstelling de lokale ontwikkelomgeving &#x200B;](./local-development-setup.md).
+Leer hoe te [ opstelling de lokale ontwikkelomgeving ](./local-development-setup.md).

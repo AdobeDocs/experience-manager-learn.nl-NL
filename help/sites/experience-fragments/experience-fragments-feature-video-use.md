@@ -4,7 +4,7 @@ description: Met Experience Fragments kunnen auteurs van inhoud inhoud inhoud he
 sub-product: Experience Manager Sites
 feature: Experience Fragments
 topic: Content Management
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 level: Beginner
 doc-type: Feature Video
 version: Experience Manager as a Cloud Service
@@ -13,7 +13,7 @@ thumbnail: 331785.jpg
 last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 84d2b240-5ecc-4230-97a0-6c2faead8d1a
 duration: 228
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%
@@ -26,9 +26,9 @@ ht-degree: 0%
 
 Met Experience Fragments kunnen auteurs van inhoud inhoud inhoud hergebruiken via kanalen, waaronder sitepagina&#39;s en systemen van derden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445613?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/331785?quality=12&learn=on)
 
-Een ervaringsfragment is een gegroepeerde set componenten die bij het combineren een ervaring creëert. Bijvoorbeeld, a *Titel*, *Beeld*, *Beschrijving*, en *Vraag aan de Knoop van de Actie* kan worden gecombineerd om een laserervaring te vormen.
+Een ervaringsfragment is een gegroepeerde set componenten die bij het combineren een ervaring creëert. Bijvoorbeeld, a *Titel*, *Beeld*, *Beschrijving*, en *de Knoop van Call to action* kan worden gecombineerd om een laserervaring te vormen.
 
 Met Experience Fragments kunnen marketers:
 

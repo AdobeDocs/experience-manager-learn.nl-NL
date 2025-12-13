@@ -1,18 +1,18 @@
 ---
-title: Video's en zelfstudies voor AEM stichting
+title: Video's en zelfstudies over AEM Foundation
 description: Bekijk onze video's en zelfstudies voor hulp met Adobe Experience Manager Foundation.
-role: Leader, Architect, Developer, Admin, User
+role: Leader, Developer, Admin, User
 level: Beginner
 doc-type: Catalog
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
-source-git-commit: 6825b0a4c9770f77e5078c81154080e94d3fd5f4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
 
 ---
 
-# Video&#39;s en zelfstudies voor AEM stichting {#overview}
+# Video&#39;s en zelfstudies over AEM Foundation {#overview}
 
 {{edge-delivery-services}}
 
@@ -33,7 +33,7 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
 <tr>
   <td>
     <a href="./cloud-manager/understand-cloud-manager-for-aem.md">
-    <img alt="Cloud Manager for AEM begrijpen" src="./cloud-manager/assets/understand-cloud-manager-for-aem/thumbnail.png" />
+    <img alt="Cloud Manager voor AEM begrijpen" src="./cloud-manager/assets/understand-cloud-manager-for-aem/thumbnail.png" />
     </a>
     <div>
      <a href="./cloud-manager/understand-cloud-manager-for-aem.md">
@@ -41,7 +41,7 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
     </a>
     </div>
     <p>
-    <em> Cloud Manager voor AEM verstrekt een eenvoudige, maar robuuste oplossing die gemakkelijk beheer, inspectie, en zelfbediening van AEM milieu's toestaat.</em>
+    <em> Cloud Manager voor AEM verstrekt een eenvoudige, maar robuuste oplossing die gemakkelijk beheer, inspectie, en zelfbediening van de milieu's van AEM toestaat.</em>
     <p>
   </td>
    <td>
@@ -54,12 +54,12 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
     </a>
     </div>
     <p>
-    <em> Onderzoek hoe te opstelling het Verdelen Dynamisch omvat (SDI) en staat dynamische AEM componenten toe om altijd verse inhoud te dienen.</em>
+    <em> Onderzoek hoe te opstelling het Verdelen Dynamisch omvat (SDI) en staat dynamische componenten van AEM toe om altijd verse inhoud te dienen.</em>
     <p>
   </td>
   <td>
     <a href="./administration/understand-reasons-to-upgrade.md">
-    <img alt="Redenen voor upgrade-AEM begrijpen" src="./administration/assets/understand-reasons-to-upgrade/thumbnail.png" />
+    <img alt="Redenen voor upgrade van AEM" src="./administration/assets/understand-reasons-to-upgrade/thumbnail.png" />
     </a>
     <div>
     <a href="./administration/understand-reasons-to-upgrade.md">
@@ -67,7 +67,7 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
     </a>
     </div>
     <p>
-    <em> Een hoogtepunt van zeer belangrijke eigenschappen om te begrijpen, wanneer het overwegen van bevordering aan de recentste versie van AEM.</em>
+    <em> een hoogtepunt van zeer belangrijke eigenschappen om te begrijpen, wanneer het overwegen van bevordering aan de recentste versie van AEM.</em>
     </p>
   </td>
 </tr>

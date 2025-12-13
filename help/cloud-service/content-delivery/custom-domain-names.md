@@ -4,7 +4,7 @@ description: Leer hoe u aangepaste domeinnamen voor uw door AEM as a Cloud Servi
 version: Experience Manager as a Cloud Service
 feature: Cloud Manager, Custom Domain Names
 topic: Architecture, Migration
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 130
@@ -12,9 +12,9 @@ last-substantial-update: 2024-08-09T00:00:00Z
 jira: KT-15946
 thumbnail: KT-15946.jpeg
 exl-id: e11ff38c-e823-4631-a5b0-976c2d11353e
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Samengevat, zodra alle milieu&#39;s van AEM as a Cloud Service provisioned zijn,
 
 ### Door Adobe beheerde CDN versus door klant beheerde CDN
 
-AEM as a Cloud Service is geïntegreerd met een door Adobe beheerde Content Delivery Network (CDN) om de latentie te verminderen en de prestaties van de website te verbeteren. CDN met Adobe-beheer wordt automatisch ingeschakeld voor alle omgevingen. Zie [&#x200B; AEM as a Cloud Service caching &#x200B;](../caching/overview.md) voor meer details.
+AEM as a Cloud Service is geïntegreerd met een door Adobe beheerde Content Delivery Network (CDN) om de latentie te verminderen en de prestaties van de website te verbeteren. CDN met Adobe-beheer wordt automatisch ingeschakeld voor alle omgevingen. Zie [ AEM as a Cloud Service caching ](../caching/overview.md) voor meer details.
 
 Nochtans, kunnen de klanten hun eigen CDN ook gebruiken, die als **wordt bedoeld klant-geleide CDN**. Het is niet noodzakelijk maar weinig klanten gebruiken het voor collectieve beleid of andere redenen. In dit geval is de klant verantwoordelijk voor het beheer van de CDN-configuraties en -instellingen.
 
@@ -69,7 +69,7 @@ Typisch, gebruiken de klanten een naam van het douanedomein voor de milieu&#39;s
 
 Om domeinnamen uit te voeren gebruikend Adobe-geleide CDN of klant-beheerde CDN de volgende stroomdiagramgidsen u door het proces:
 
-![&#x200B; Stroomschema van het Beheer van de Naam van het Domein &#x200B;](./assets/domain-name-management-flowchart.png){width="800" zoomable="yes"}
+![ Stroomschema van het Beheer van de Naam van het Domein ](./assets/domain-name-management-flowchart.png){width="800" zoomable="yes"}
 
 In de volgende tabel vindt u ook een overzicht van de locaties waarop u de specifieke configuraties kunt beheren:
 

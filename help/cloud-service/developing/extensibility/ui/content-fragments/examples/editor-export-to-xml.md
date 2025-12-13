@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 70adb2c1-9e08-4a4b-b8f1-16bddd84c23d
 duration: 307
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Inhoudsfragment exporteren naar XML
 
-![&#x200B; het de kopbalmenuuitbreidingsvoorbeeld van de Redacteur van het Fragment van de Inhoud &#x200B;](./assets/export-to-xml/hero.png){align="center"}
+![ het de kopbalmenuuitbreidingsvoorbeeld van de Redacteur van het Fragment van de Inhoud ](./assets/export-to-xml/hero.png){align="center"}
 
 U kunt aangepaste knoppen toevoegen aan het kopmenu van de Content Fragment Editor met het extensiepunt `headerMenu` . In dit voorbeeld wordt getoond hoe u een knop aan het kopmenu toevoegt en hoe u de klikgebeurtenis verwerkt om het actieve inhoudsfragment als XML of CSV te exporteren.
 
@@ -32,8 +32,8 @@ Koptekstknoppen kunnen bestaan als één knop of als een knop met subitems. In d
 In dit voorbeeld wordt het uitbreidingspunt `headerBar` uitgebreid om een aangepaste knop toe te voegen aan de Inhoudsfragmenteditor.
 
 | AEM-gebruikersinterface uitgebreid | Extensiepunt |
-| ------------------------ | --------------------- | 
-| [&#x200B; de Redacteur van het Fragment van de Inhoud &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [&#x200B; Menu van de Kopbal &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/) |
+| ------------------------ | --------------------- |
+| [ de Redacteur van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [ Menu van de Kopbal ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/) |
 
 ## Voorbeeldextensie
 

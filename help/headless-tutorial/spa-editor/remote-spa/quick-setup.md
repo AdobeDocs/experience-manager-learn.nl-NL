@@ -3,7 +3,7 @@ title: Snelle de redacteur van opstellingsSPA en Verre SPA
 description: Leer hoe te om met een verre Redacteur van het KUUROORD van SPA en van AEM in 15 minuten in werking te stellen!
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7629
 thumbnail: 333181.jpg
@@ -13,9 +13,9 @@ doc-type: Tutorial
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
 duration: 647
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -36,20 +36,20 @@ _A videolooppas-door van de snelle opstelling_
 
 Voor deze zelfstudie is het volgende vereist:
 
-+ [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL)
-+ [&#x200B; Node.js v18 &#x200B;](https://nodejs.org/en/)
-+ [&#x200B; Java™ 11 &#x200B;](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-+ [&#x200B; Gemaakt 3.6+ &#x200B;](https://maven.apache.org/)
-+ [&#x200B; Git &#x200B;](https://git-scm.com/downloads)
++ [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en)
++ [ Node.js v18 ](https://nodejs.org/en/)
++ [ Java™ 11 ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
++ [ Gemaakt 3.6+ ](https://maven.apache.org/)
++ [ Git ](https://git-scm.com/downloads)
 + Alleen macOS-voorwaarden
-   + [&#x200B; Xcode &#x200B;](https://developer.apple.com/xcode/) of [&#x200B; Xcode bevel-lijn hulpmiddelen &#x200B;](https://developer.apple.com/xcode/resources/)
-+ [&#x200B; aem-guides-wknd.all-2.1.0.zip of groter &#x200B;](https://github.com/adobe/aem-guides-wknd/releases)
-+ [&#x200B; aem-gidsen-wknd-grafisch broncode (tak: eigenschap/spa-redacteur) &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/feature/spa-editor)
+   + [ Xcode ](https://developer.apple.com/xcode/) of [ Xcode bevel-lijn hulpmiddelen ](https://developer.apple.com/xcode/resources/)
++ [ aem-guides-wknd.all-2.1.0.zip of groter ](https://github.com/adobe/aem-guides-wknd/releases)
++ [ aem-gidsen-wknd-grafisch broncode (tak: eigenschap/spa-redacteur) ](https://github.com/adobe/aem-guides-wknd-graphql/tree/feature/spa-editor)
 
 
 Deze zelfstudie gaat uit van:
 
-+ [&#x200B; Microsoft® Visual Studio Code &#x200B;](https://visualstudio.microsoft.com/) als winde
++ [ Microsoft® Visual Studio Code ](https://visualstudio.microsoft.com/) als winde
 + Een werkmap van `~/Code/wknd-app`
 + AEM SDK uitvoeren als een auteurservice op `http://localhost:4502`
 + AEM SDK uitvoeren met lokale `admin` account met wachtwoord `admin`
@@ -59,7 +59,7 @@ Deze zelfstudie gaat uit van:
 
 Download en installeer de AEM SDK Quickstart op poort 4502, met standaard `admin/admin` referenties.
 
-1. [&#x200B; Download recentste AEM SDK &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=1)
+1. [ Download recentste AEM SDK ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=1)
 1. AEM SDK uitpakken naar `~/aem-sdk`
 1. AEM SDK Quickstart Jar uitvoeren
 
@@ -69,7 +69,7 @@ Download en installeer de AEM SDK Quickstart op poort 4502, met standaard `admin
    # Provide `admin` as the admin user's password
    ```
 
-AEM SDK begint en lanceert automatisch op [&#x200B; http://localhost:4502 &#x200B;](http://localhost:4502). Meld u aan met de volgende referenties:
+AEM SDK begint en lanceert automatisch op [ http://localhost :4502 ](http://localhost:4502). Meld u aan met de volgende referenties:
 
 + Gebruikersnaam: `admin`
 + Wachtwoord: `admin`
@@ -78,8 +78,8 @@ AEM SDK begint en lanceert automatisch op [&#x200B; http://localhost:4502 &#x200
 
 Dit leerprogramma heeft een gebiedsdeel op __WKND 2.1.0+__ project (voor inhoud).
 
-1. [&#x200B; Download de recentste versie van `aem-guides-wknd.all.x.x.x.zip` &#x200B;](https://github.com/adobe/aem-guides-wknd/releases)
-1. Login aan de Manager van het Pakket van AEM SDK op [&#x200B; http://localhost:4502/crx/packmgr &#x200B;](http://localhost:4502/crx/packmgr) met de `admin` geloofsbrieven.
+1. [ Download de recentste versie van `aem-guides-wknd.all.x.x.x.zip` ](https://github.com/adobe/aem-guides-wknd/releases)
+1. Login aan de Manager van het Pakket van AEM SDK op [ http://localhost :4502/crx/packmgr ](http://localhost:4502/crx/packmgr) met de `admin` geloofsbrieven.
 1. __uploadt__ `aem-guides-wknd.all.x.x.x.zip` gedownload in stap 1
 1. Tik __installeer__ knoop voor de ingang `aem-guides-wknd.all-x.x.x.zip`
 
@@ -87,9 +87,9 @@ Dit leerprogramma heeft een gebiedsdeel op __WKND 2.1.0+__ project (voor inhoud)
 
 Om een snelle opstelling uit te voeren, worden de pakketten van AEM hier verstrekt die de definitieve configuratie en de inhoud van AEM van het leerprogramma bevatten.
 
-1. [Downloaden &#x200B;](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
-1. [Downloaden &#x200B;](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
-1. Login aan de Manager van het Pakket van AEM SDK op [&#x200B; http://localhost:4502/crx/packmgr &#x200B;](http://localhost:4502/crx/packmgr) met de `admin` geloofsbrieven.
+1. [Downloaden ](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
+1. [Downloaden ](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
+1. Login aan de Manager van het Pakket van AEM SDK op [ http://localhost :4502/crx/packmgr ](http://localhost:4502/crx/packmgr) met de `admin` geloofsbrieven.
 1. __uploadt__ `wknd-app.all.x.x.x.zip` gedownload in stap 1
 1. Tik __installeer__ knoop voor de ingang `wknd-app.all.x.x.x.zip`
 1. __uploadt__ `wknd-app.ui.content.sample.x.x.x.zip` gedownload in stap 2
@@ -125,13 +125,13 @@ $ npm install --legacy-peer-deps
 $ npm run start
 ```
 
-Verifieer dat het KUUROORD in [&#x200B; http://localhost:3000 &#x200B;](http://localhost:3000) loopt.
+Verifieer dat het KUUROORD in [ http://localhost :3000 ](http://localhost:3000) loopt.
 
 ## Inhoud auteur in AEM SPA Editor
 
 Alvorens de auteursinhoud uw browser vensters zo schikt dat de Auteur van AEM (`http://localhost:4502`) op de linkerzijde is, en verre KUUROORD (`http://localhost:3000`) loopt op het recht. Deze regeling staat u toe om te zien hoe de veranderingen in op AEM-Gebaseerde inhoud onmiddellijk in het KUUROORD worden weerspiegeld.
 
-1. Login aan [&#x200B; de dienst van de Auteur van AEM SDK &#x200B;](http://localhost:4502) als `admin`
+1. Login aan [ de dienst van de Auteur van AEM SDK ](http://localhost:4502) als `admin`
 1. Navigeer aan __Plaatsen > App WKND > gebruiken > en__
 1. Bewerk __WKND App Home Page__
 1. Schakelaar aan __geeft__ wijze uit
@@ -155,7 +155,7 @@ Alvorens de auteursinhoud uw browser vensters zo schikt dat de Auteur van AEM (`
 
 1. Schakelaar aan __wijze van de Voorproef__ in de Redacteur van het KUUROORD
 1. Tik op de __kaart van de Camp van Surf van Bali__ en navigeer aan zijn dynamische route
-1. Voeg toe, verander, of verwijder componenten uit de containercomponent die plaatsen boven de __rubriek van de 1&rbrace; Reis__
+1. Voeg toe, verander, of verwijder componenten uit de containercomponent die plaatsen boven de __rubriek van de 1} Reis__
 1. Vernieuw SPA die op `http://localhost:3000` loopt en zie dat de gereflecteerde veranderingen
 
 De nieuwe pagina&#39;s van AEM onder de __WKND startpagina van de App > Avontuur__ _moet_ een de paginanaam hebben van AEM die de naam van het de inhoudsfragment van het overeenkomstige avontuur aanpast. Dit is omdat de route van het KUUROORD aan de afbeelding van de Pagina van AEM van het laatste segment van de route, die de naam van het Fragment van de Inhoud is.

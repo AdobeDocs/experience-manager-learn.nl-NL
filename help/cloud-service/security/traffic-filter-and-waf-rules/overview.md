@@ -4,14 +4,14 @@ description: Leer hoe te om uw websites van AEM tegen DoS, DDoS en kwaadwillig v
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-13148
 thumbnail: null
 exl-id: e6d67204-2f76-441c-a178-a34798fe266d
-source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 0%
@@ -55,7 +55,7 @@ De regelreeksen helpen klanten gemeenschappelijke en gesofisticeerde Webbedreigi
 
 De standaardregels van de verkeersfilter zijn nuttig om zaken-specifiek beleid, zoals tariefgrenzen of het blokkeren van specifieke gebieden af te dwingen, evenals het blokkeren van verkeer dat op verzoekeigenschappen en kopballen zoals IP adres, weg of gebruikersagent wordt gebaseerd.
 De WAF-regels voor verkeersfilters bieden daarentegen een uitgebreide proactieve bescherming voor bekende web-exploits en aanvalsvectoren, en beschikken over geavanceerde intelligentie om valse positieven te beperken (d.w.z. om legitiem verkeer te blokkeren).
-Om beide soorten regels te bepalen, gebruikt u de syntaxis YAML, zie [&#x200B; Syntaxis van de Regels van de Filterregel van 0&rbrace; Verkeer voor meer details.](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax)
+Om beide soorten regels te bepalen, gebruikt u de syntaxis YAML, zie [ Syntaxis van de Regels van de Filterregel van 0} Verkeer voor meer details.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax)
 
 ## Wanneer en waarom gebruiken ze
 
@@ -82,7 +82,7 @@ Adobe biedt aanbevolen regels voor standaardverkeersfilters en WAF-regels voor v
    - Het tarief dat IPs beperkt die meer dan 100 verzoeken/seconde _bij de oorsprong_ maakt
    - Blokkeren van verkeer uit landen die door het Office of Foreign Assets Control (OFAC) zijn vermeld
 
-- **de regels van de het verkeersfilter van WAF** (vereist toe:voegen-op vergunning): Verstrekt extra bescherming tegen verfijnde bedreigingen, met inbegrip van [&#x200B; Top tien van OWASP &#x200B;](https://owasp.org/www-project-top-ten/) bedreigingen zoals SQL injectie, dwars-plaats scripting (XSS), en andere aanvallen van de Webtoepassing.
+- **de regels van de het verkeersfilter van WAF** (vereist toe:voegen-op vergunning): Verstrekt extra bescherming tegen verfijnde bedreigingen, met inbegrip van [ Top tien van OWASP ](https://owasp.org/www-project-top-ten/) bedreigingen zoals SQL injectie, dwars-plaats scripting (XSS), en andere aanvallen van de Webtoepassing.
 Voorbeelden zijn:
    - Het blokkeren van verzoeken van bekende slechte IP adressen
    - Het registreren of het blokkeren van verdachte verzoeken die als aanvallen worden gemarkeerd
@@ -291,4 +291,4 @@ Voor meer geavanceerde scenario&#39;s, kunt u de volgende gebruiksgevallen onder
 
 ## Aanvullende bronnen
 
-- [&#x200B; Regels van de Filter van het Verkeer met inbegrip van de Regels van WAF &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
+- [ Regels van de Filter van het Verkeer met inbegrip van de Regels van WAF ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)

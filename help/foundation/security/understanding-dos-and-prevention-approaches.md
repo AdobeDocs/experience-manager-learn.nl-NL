@@ -4,14 +4,14 @@ description: Leer hoe u DoS- en DDoS-aanvallen op AEM kunt voorkomen en beperken
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Development
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Beginner
 doc-type: Article
 duration: 75
 last-substantial-update: 2024-03-30T00:00:00Z
 jira: KT-15219
 exl-id: 1d7dd829-e235-4884-a13f-b6ea8f6b4b0b
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Inzicht in DoS/DDoS-preventie in AEM
 
-Leer over de opties beschikbaar om Dos en aanvallen van Dos en van DDoS op uw milieu van AEM te verhinderen en te verlichten. Alvorens in de preventiemechanismen te duiken, een kort overzicht van [&#x200B; DoS &#x200B;](https://developer.mozilla.org/en-US/docs/Glossary/DOS_attack) en [&#x200B; DDoS &#x200B;](https://developer.mozilla.org/en-US/docs/Glossary/Distributed_Denial_of_Service).
+Leer over de opties beschikbaar om Dos en aanvallen van Dos en van DDoS op uw milieu van AEM te verhinderen en te verlichten. Alvorens in de preventiemechanismen te duiken, een kort overzicht van [ DoS ](https://developer.mozilla.org/en-US/docs/Glossary/DOS_attack) en [ DDoS ](https://developer.mozilla.org/en-US/docs/Glossary/Distributed_Denial_of_Service).
 
 - DoS (Ontkenning van Dienst) en DDoS (Verspreid Ontkenning van de Dienst) aanvallen zijn beide kwaadwillige pogingen om het normale functioneren van een gerichte server, de dienst, of het netwerk te verstoren, die het ontoegankelijk maken voor zijn voorgenomen gebruikers maken.
 - De aanvallen van Dos komen typisch uit één enkele bron voort, terwijl de aanvallen DDoS uit veelvoudige bronnen komen.
@@ -42,19 +42,19 @@ In de volgende tabel wordt beschreven hoe u DoS- en DDoS-aanvallen voorkomt en b
             <td>Web Application Firewall (WAF)</td>
             <td>Een veiligheidsoplossing die wordt ontworpen om Webtoepassingen tegen diverse soorten aanvallen te beschermen.</td>
             <td>
-            <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank"> WAF-DDoS de vergunning van de Bescherming </a></td>
+            <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank"> WAF-DDoS de vergunning van de Bescherming </a></td>
             <td><a href="https://docs.aws.amazon.com/waf/" target="_blank"> AWS </a> of <a href="https://azure.microsoft.com/en-us/products/web-application-firewall" target="_blank"> Azure </a> WAF via contract van AMS.</td>
             <td>WAF van uw voorkeur</td>
         </tr>
         <tr>
             <td>ModSecurity</td>
             <td>ModSecurity (ook bekend als de Apache-module 'mod_security') is een open-source, platformonafhankelijke oplossing die bescherming biedt tegen een reeks aanvallen op webtoepassingen.<br/> In AEM as a Cloud Service is dit alleen van toepassing op de AEM Publish-service, omdat er geen Apache-webserver en AEM Dispatcher aanwezig zijn vóór de AEM Author-service.</td>
-            <td colspan="3"><a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection" target="_blank">ModSecurity inschakelen </a></td>
+            <td colspan="3"><a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection" target="_blank">ModSecurity inschakelen </a></td>
         </tr>
         <tr>
             <td>Verkeersfilterregels</td>
             <td>De filterregels van het verkeer kunnen worden gebruikt om verzoeken bij de laag te blokkeren of toe te staan CDN.</td>
-            <td><a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis" target="_blank">Voorbeelden van filterregels voor het verkeer</a></td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis" target="_blank">Voorbeelden van filterregels voor het verkeer</a></td>
             <td><a href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-rate-based.html" target="_blank"> AWS </a> of <a href="https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/rate-limiting-overview" target="_blank"> Azure </a> regel beperkende eigenschappen.</td>
             <td>Uw voorkeursoplossing</td>
         </tr>

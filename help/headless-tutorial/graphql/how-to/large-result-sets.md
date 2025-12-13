@@ -4,7 +4,7 @@ description: Leer hoe u met grote resultaatsets werkt met AEM Headless.
 version: Experience Manager as a Cloud Service
 topic: Headless
 feature: GraphQL API
-role: Architect, Developer
+role: Developer
 level: Intermediate
 doc-type: Article
 last-substantial-update: 2023-04-14T00:00:00Z
@@ -12,7 +12,7 @@ jira: KT-13102
 thumbnail: 3418381.jpeg
 exl-id: 304b4d80-27bd-4336-b2ff-4b613a30f712
 duration: 308
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 AEM Headless GraphQL-query&#39;s kunnen grote resultaten opleveren. In dit artikel wordt beschreven hoe u met grote resultaten kunt werken in AEM Headless voor de beste prestaties voor uw toepassing.
 
-De Hoofdloze steunen van AEM a [&#x200B; verschuiving/grens &#x200B;](#list-query) en [&#x200B; op curseur-gebaseerde paginering &#x200B;](#paginated-query) vragen aan kleinere ondergroepen van een grotere resultaatreeks. Er kunnen meerdere verzoeken worden ingediend om zoveel resultaten te verzamelen als nodig is.
+De Hoofdloze steunen van AEM a [ verschuiving/grens ](#list-query) en [ op curseur-gebaseerde paginering ](#paginated-query) vragen aan kleinere ondergroepen van een grotere resultaatreeks. Er kunnen meerdere verzoeken worden ingediend om zoveel resultaten te verzamelen als nodig is.
 
 In de onderstaande voorbeelden worden kleine subsets van resultaten (vier records per aanvraag) gebruikt om de technieken aan te tonen. In een echte toepassing zou u een groter aantal records per aanvraag gebruiken om de prestaties te verbeteren. 50 records per verzoek is een goede basislijn.
 
@@ -65,7 +65,7 @@ query adventuresByOffetAndLimit($offset:Int!, $limit:Int) {
 
 #### GraphQL-reactie
 
-De resulterende JSON-respons bevat de tweede, derde, vierde en vijfde duurste avonturen. De eerste twee avonturen in de resultaten hebben de zelfde prijs (`4500` zodat specificeert de [&#x200B; lijstvraag &#x200B;](#list-queries) avonturen met de zelfde prijs dan door titel in het stijgen orde.)
+De resulterende JSON-respons bevat de tweede, derde, vierde en vijfde duurste avonturen. De eerste twee avonturen in de resultaten hebben de zelfde prijs (`4500` zodat specificeert de [ lijstvraag ](#list-queries) avonturen met de zelfde prijs dan door titel in het stijgen orde.)
 
 ```json
 {
@@ -134,7 +134,7 @@ query adventuresByPaginated($first:Int, $after:String) {
 
 #### GraphQL-reactie
 
-De resulterende JSON-respons bevat de tweede, derde, vierde en vijfde duurste avonturen. De eerste twee avonturen in de resultaten hebben de zelfde prijs (`4500` zodat specificeert de [&#x200B; lijstvraag &#x200B;](#list-queries) avonturen met de zelfde prijs dan door titel in het stijgen orde.)
+De resulterende JSON-respons bevat de tweede, derde, vierde en vijfde duurste avonturen. De eerste twee avonturen in de resultaten hebben de zelfde prijs (`4500` zodat specificeert de [ lijstvraag ](#list-queries) avonturen met de zelfde prijs dan door titel in het stijgen orde.)
 
 ```json
 {
@@ -190,7 +190,7 @@ De volgende set resultaten kan worden opgehaald met de parameter `after` en de w
 
 ## Voorbeelden Reageren
 
-Het volgende is React voorbeelden die aantonen hoe te om [&#x200B; te gebruiken verschuiven en te beperken &#x200B;](#offset-and-limit) en [&#x200B; op curseur-gebaseerde paginering &#x200B;](#cursor-based-pagination) benaderingen. Doorgaans is het aantal resultaten per aanvraag groter, maar voor deze voorbeelden is de limiet ingesteld op 5.
+Het volgende is React voorbeelden die aantonen hoe te om [ te gebruiken verschuiven en te beperken ](#offset-and-limit) en [ op curseur-gebaseerde paginering ](#cursor-based-pagination) benaderingen. Doorgaans is het aantal resultaten per aanvraag groter, maar voor deze voorbeelden is de limiet ingesteld op 5.
 
 ### Voorbeeld van verschuiven en beperken
 
@@ -303,7 +303,7 @@ export default function OffsetLimitAdventures() {
 
 ### Voorbeeld van paginering
 
-![&#x200B; Gepagineerd voorbeeld &#x200B;](./assets/large-results/paginated-example.png)
+![ Gepagineerd voorbeeld ](./assets/large-results/paginated-example.png)
 
 _Elk rood vakje vertegenwoordigt een discrete gepagineerde vraag van HTTP GraphQL._
 

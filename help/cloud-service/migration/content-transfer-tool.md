@@ -7,11 +7,11 @@ feature: Migration
 jira: KT-5352
 thumbnail: kt-5352.jpg
 topic: Migration
-role: Architect, Developer
+role: Developer
 level: Beginner
 exl-id: 0cefc336-2a46-4a11-a734-ba1cb63c5cbe
 duration: 1062
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 0%
@@ -26,4 +26,4 @@ Het gereedschap Inhoud overbrengen is de aanbevolen manier om inhoud van een op 
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [&#x200B; het Overzicht van het Hulpmiddel van de Overdracht van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=nl-NL)
+* [ het Overzicht van het Hulpmiddel van de Overdracht van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)

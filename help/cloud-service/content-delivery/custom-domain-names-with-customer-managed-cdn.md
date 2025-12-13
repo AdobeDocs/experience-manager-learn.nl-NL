@@ -4,7 +4,7 @@ description: Leer hoe te om een naam van het douanedomein aan de website van AEM
 version: Experience Manager as a Cloud Service
 feature: Cloud Manager, Operations
 topic: Administration, Architecture
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 0
@@ -12,7 +12,7 @@ last-substantial-update: 2024-06-21T00:00:00Z
 jira: KT-15945
 thumbnail: KT-15945.jpeg
 exl-id: fa9ee14f-130e-491b-91b6-594ba47a7278
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 0%
@@ -23,31 +23,31 @@ ht-degree: 0%
 
 Leer hoe te om een naam van het douanedomein aan een website van AEM as a Cloud Service toe te voegen die a **klant-geleide CDN** gebruikt.
 
-In dit leerprogramma, wordt het branding van de steekproef [&#x200B; AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) plaats verbeterd door een HTTPS-adresseerbare naam van het douanedomein `wkndviaawscdn.enablementadobe.com` met de Veiligheid van de Laag van het Vervoer (TLS) toe te voegen gebruikend een klant-beheerde CDN. In deze zelfstudie wordt AWS CloudFront gebruikt als door de klant beheerde CDN, maar elke CDN-provider moet compatibel zijn met AEM as a Cloud Service.
+In dit leerprogramma, wordt het branding van de steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) plaats verbeterd door een HTTPS-adresseerbare naam van het douanedomein `wkndviaawscdn.enablementadobe.com` met de Veiligheid van de Laag van het Vervoer (TLS) toe te voegen gebruikend een klant-beheerde CDN. In deze zelfstudie wordt AWS CloudFront gebruikt als door de klant beheerde CDN, maar elke CDN-provider moet compatibel zijn met AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432561?quality=12&learn=on)
 
 De stappen op hoog niveau zijn:
 
-![&#x200B; Naam van het Domein van de Douane met Klant CDN &#x200B;](./assets/add-custom-domain-name-with-customer-CDN.png){width="800" zoomable="yes"}
+![ Naam van het Domein van de Douane met Klant CDN ](./assets/add-custom-domain-name-with-customer-CDN.png){width="800" zoomable="yes"}
 
 ## Vereisten
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432562?quality=12&learn=on)
 
-- [&#x200B; OpenSSL &#x200B;](https://www.openssl.org/) en [&#x200B; graven &#x200B;](https://www.isc.org/blogs/dns-checker/) zijn geïnstalleerd op uw lokale machine.
+- [ OpenSSL ](https://www.openssl.org/) en [ graven ](https://www.isc.org/blogs/dns-checker/) zijn geïnstalleerd op uw lokale machine.
 - Toegang tot diensten van derden:
-   - De Autoriteit van het certificaat (CA) - om het ondertekende certificaat voor uw plaatsdomein, als [&#x200B; DigitCert &#x200B;](https://www.digicert.com/) te verzoeken
+   - De Autoriteit van het certificaat (CA) - om het ondertekende certificaat voor uw plaatsdomein, als [ DigitCert ](https://www.digicert.com/) te verzoeken
    - CDN van de klant - aan opstelling CDN van de klant en voeg SSL certificaten en domeindetails toe, zoals AWS CloudFront, Azure CDN, of Akamai.
    - De het ontvangen dienst van het Systeem van de Naam van het domein (DNS) - om DNS verslagen voor uw douanedomein, zoals Azure DNS, of Route 53 van AWS toe te voegen.
-- De toegang tot [&#x200B; Cloud Manager van Adobe &#x200B;](https://my.cloudmanager.adobe.com/) om de bevestigingsregel CDN van de Kopbal van HTTP op te stellen aan het milieu van AEM as a Cloud Service.
-- De plaats van de steekproef [&#x200B; AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) wordt opgesteld aan het milieu van AEM as a Cloud Service van [&#x200B; het type van het productieprogramma &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
+- De toegang tot [ Cloud Manager van Adobe ](https://my.cloudmanager.adobe.com/) om de bevestigingsregel CDN van de Kopbal van HTTP op te stellen aan het milieu van AEM as a Cloud Service.
+- De plaats van de steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) wordt opgesteld aan het milieu van AEM as a Cloud Service van [ het type van het productieprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
 
 Als u geen toegang tot derdediensten hebt, _samenwerken met uw veiligheid of het ontvangen team om de stappen_ te voltooien.
 
 ## SSL-certificaat genereren
 
->[!VIDEO](https://video.tv.adobe.com/v/3441490?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
 
 U hebt twee opties:
 
@@ -78,7 +78,7 @@ Het ondertekende certificaat kan de certificaatketen bevatten, die de basis- en 
 
 Adobe Cloud Manager keurt het eindentiteitcertificaat en de certificaatketting _in afzonderlijke vormgebieden_ goed, zodat moet u het eindentiteitcertificaat en de certificaatketting van het ondertekende certificaat halen.
 
-In dit leerprogramma, wordt het [&#128279;](https://www.digicert.com/) ondertekende certificaat DigitCert  dat tegen `*.enablementadobe.com` domein wordt uitgegeven gebruikt als voorbeeld. De eindentiteit- en certificaatketen wordt geëxtraheerd door het ondertekende certificaat te openen in een teksteditor en de inhoud te kopiëren tussen de markeringen `-----BEGIN CERTIFICATE-----` en `-----END CERTIFICATE-----` .
+In dit leerprogramma, wordt het [ ondertekende certificaat DigitCert ](https://www.digicert.com/) dat tegen `*.enablementadobe.com` domein wordt uitgegeven gebruikt als voorbeeld. De eindentiteit- en certificaatketen wordt geëxtraheerd door het ondertekende certificaat te openen in een teksteditor en de inhoud te kopiëren tussen de markeringen `-----BEGIN CERTIFICATE-----` en `-----END CERTIFICATE-----` .
 
 ## CDN met klantbeheer instellen
 
@@ -180,7 +180,7 @@ public class VerifyHeadersServlet extends SlingSafeMethodsServlet {
 }
 ```
 
-Als u de servlet wilt testen, werkt u het `../dispatcher/src/conf.dispatcher.d/filters/filters.any` -bestand bij met de volgende configuratie. Zorg ook ervoor dat CDN aan **NIET** `/bin/*` weg &lbrace;wordt gevormd in het voorgeheugen onderbrengen.
+Als u de servlet wilt testen, werkt u het `../dispatcher/src/conf.dispatcher.d/filters/filters.any` -bestand bij met de volgende configuratie. Zorg ook ervoor dat CDN aan **NIET** `/bin/*` weg {wordt gevormd in het voorgeheugen onderbrengen.
 
 ```plaintext
 # Testing purpose bin
@@ -222,7 +222,7 @@ Voer de volgende stappen uit om de CDN-regel voor HTTP-headervalidatie te config
 
 ## Geef het geheim door in de X-AEM-Edge-Key HTTP-header
 
->[!VIDEO](https://video.tv.adobe.com/v/3445051?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3432567?quality=12&learn=on)
 
 Werk de CDN van de klant bij om het geheim in de `X-AEM-Edge-Key` Kopbal van HTTP over te gaan. Het geheim wordt gebruikt door CDN van Adobe om te bevestigen het verzoek komt van CDN van de klant en zet de `Host` kopbalwaarde in de waarde van `X-Forwarded-Host` om die van CDN van de klant wordt ontvangen.
 

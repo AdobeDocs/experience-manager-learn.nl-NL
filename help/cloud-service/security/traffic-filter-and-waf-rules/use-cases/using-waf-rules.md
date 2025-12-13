@@ -4,7 +4,7 @@ description: Leer hoe u AEM-websites kunt beschermen tegen geavanceerde bedreigi
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
@@ -12,7 +12,7 @@ badgeLicense: label="Licentie vereist" type="positive" before-title="true"
 jira: KT-18308
 thumbnail: null
 exl-id: b87c27e9-b6ab-4530-b25c-a98c55075aef
-source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 0%
@@ -30,7 +30,7 @@ De gesofisticeerde aanvallen worden gekenmerkt door hoge vraagtarieven, complexe
 > De regels van de het verkeersfilter van WAF vereisen een extra **bescherming WAF-DDoS** of **Verbeterde vergunning van de Veiligheid**. De standaardregels van de verkeersfilter zijn beschikbaar aan de klanten van Plaatsen en van Forms door gebrek.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469436/?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
 
 ## Leerdoelstellingen
 
@@ -46,12 +46,12 @@ De implementatiestappen omvatten:
 - De WAF-regels toevoegen aan het AEM WKND-projectbestand `/config/cdn.yaml` .
 - De wijzigingen doorvoeren en doorvoeren in de Cloud Manager Git-opslagplaats.
 - Het opstellen van de veranderingen in het milieu van AEM gebruikend de Cloud Manager config pijpleiding.
-- Het testen van de regels door een aanval te simuleren DDoS gebruikend [&#x200B; Nikto &#x200B;](https://github.com/sullo/nikto/wiki).
+- Het testen van de regels door een aanval te simuleren DDoS gebruikend [ Nikto ](https://github.com/sullo/nikto/wiki).
 - De resultaten analyseren met de CDN-logboeken van AEMCS en het dashboard van de ELK.
 
 ## Vereisten
 
-Alvorens te werk te gaan, zorg ervoor u de vereiste opstelling zoals die in [&#x200B; wordt beschreven hoe te opstellings de filter van het verkeer en de regels van WAF &#x200B;](../setup.md) leerprogramma hebt voltooid. Ook, hebt u gekloond en opgesteld het [&#x200B; Project van de Plaatsen van AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) aan uw milieu van AEM.
+Alvorens te werk te gaan, zorg ervoor u de vereiste opstelling zoals die in [ wordt beschreven hoe te opstellings de filter van het verkeer en de regels van WAF ](../setup.md) leerprogramma hebt voltooid. Ook, hebt u gekloond en opgesteld het [ Project van de Plaatsen van AEM WKND ](https://github.com/adobe/aem-guides-wknd) aan uw milieu van AEM.
 
 ## Regels evalueren en definiëren
 
@@ -63,7 +63,7 @@ Laten we drie aanbevolen WAF-regels doornemen die moeten worden toegevoegd aan h
 
 Deze regel **blokkeert** verzoeken die zowel verdacht *kijken als* uit IP adressen voortkomen die als kwaadwillig worden gemarkeerd. Omdat aan beide criteria is voldaan, kunnen we erop vertrouwen dat het risico van valse positieven (het blokkeren van legitiem verkeer) zeer laag is. De bekende slechte IPs wordt geïdentificeerd gebaseerd op de feeds van de bedreigingsintelligentie en andere bronnen.
 
-De markering `ATTACK-FROM-BAD-IP` WAF wordt gebruikt om deze aanvragen te identificeren. Het voegt verscheidene van de vlaggen van WAF [&#x200B; samen die hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) worden vermeld.
+De markering `ATTACK-FROM-BAD-IP` WAF wordt gebruikt om deze aanvragen te identificeren. Het voegt verscheidene van de vlaggen van WAF [ samen die hier ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) worden vermeld.
 
 ```yaml
 kind: "CDN"
@@ -108,7 +108,7 @@ U kunt er ook voor kiezen om de `block` -modus direct te gebruiken als uw zakeli
 
 Deze geadviseerde regels van WAF verstrekken een extra laag van veiligheid tegen bekende en nieuwe bedreigingen.
 
-![&#x200B; WKND de Regels van WAF &#x200B;](../assets/use-cases/wknd-cdn-yaml-waf-rules.png)
+![ WKND de Regels van WAF ](../assets/use-cases/wknd-cdn-yaml-waf-rules.png)
 
 ## Migreren naar de meest recente door Adobe aanbevolen WAF-regels
 
@@ -167,54 +167,54 @@ Voer de volgende stappen uit om de bovenstaande regels te implementeren:
 
 - Leg de wijzigingen vast en duw deze naar de Cloud Manager Git-opslagplaats.
 
-- Stel de veranderingen in het milieu van AEM op gebruikend de Cloud Manager config pijpleiding [&#x200B; vroeger gecreeerd &#x200B;](../setup.md#deploy-rules-using-adobe-cloud-manager).
+- Stel de veranderingen in het milieu van AEM op gebruikend de Cloud Manager config pijpleiding [ vroeger gecreeerd ](../setup.md#deploy-rules-using-adobe-cloud-manager).
 
-  ![&#x200B; Cloud Manager Config Pipeline &#x200B;](../assets/use-cases/cloud-manager-config-pipeline.png)
+  ![ Cloud Manager Config Pipeline ](../assets/use-cases/cloud-manager-config-pipeline.png)
 
 ## Testregels
 
-Om de doeltreffendheid van de regels van WAF te verifiëren, simuleer een aanval gebruikend [&#x200B; Nikto &#x200B;](https://github.com/sullo/nikto), een scanner van de Webserver die kwetsbaarheid en misconfiguraties ontdekt. De volgende opdracht activeert SQL-injectieaanvallen op de AEM WKND-website, die wordt beveiligd door de WAF-regels.
+Om de doeltreffendheid van de regels van WAF te verifiëren, simuleer een aanval gebruikend [ Nikto ](https://github.com/sullo/nikto), een scanner van de Webserver die kwetsbaarheid en misconfiguraties ontdekt. De volgende opdracht activeert SQL-injectieaanvallen op de AEM WKND-website, die wordt beveiligd door de WAF-regels.
 
 ```shell
 $./nikto.pl -useragent "AttackSimulationAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html
 ```
 
-![&#x200B; Nikto de Simulatie van de Aanval &#x200B;](../assets/use-cases/nikto-attack.png)
+![ Nikto de Simulatie van de Aanval ](../assets/use-cases/nikto-attack.png)
 
-Om over aanvalsimulatie te leren, herzie [&#x200B; Nikto - Scannen &#x200B;](https://github.com/sullo/nikto/wiki/Scan-Tuning) documentatie, die u vertelt hoe te om het type van testaanvallen te specificeren om te omvatten of uit te sluiten.
+Om over aanvalsimulatie te leren, herzie [ Nikto - Scannen ](https://github.com/sullo/nikto/wiki/Scan-Tuning) documentatie, die u vertelt hoe te om het type van testaanvallen te specificeren om te omvatten of uit te sluiten.
 
 ## Waarschuwingen bekijken
 
-Het alarm wordt geproduceerd wanneer de regels van de verkeersfilter worden teweeggebracht. U kunt deze alarm in het [&#x200B; Centrum van Acties van AEM &#x200B;](https://experience.adobe.com/aem/actions-center) herzien.
+Het alarm wordt geproduceerd wanneer de regels van de verkeersfilter worden teweeggebracht. U kunt deze alarm in het [ Centrum van Acties van AEM ](https://experience.adobe.com/aem/actions-center) herzien.
 
-![&#x200B; WKND het Centrum van Acties van AEM &#x200B;](../assets/use-cases/wknd-aem-action-center.png)
+![ WKND het Centrum van Acties van AEM ](../assets/use-cases/wknd-aem-action-center.png)
 
 ## Resultaten analyseren
 
-Om de resultaten van de regels van de verkeersfilter te analyseren, kunt u de logboeken van AEMCS CDN en het dashboard van de ELK gebruiken. Volg de instructies van [&#x200B; CDN registreert opname &#x200B;](../setup.md#ingest-cdn-logs) opstellingssectie om de CDN- logboeken in de stapel van de ELK in te nemen.
+Om de resultaten van de regels van de verkeersfilter te analyseren, kunt u de logboeken van AEMCS CDN en het dashboard van de ELK gebruiken. Volg de instructies van [ CDN registreert opname ](../setup.md#ingest-cdn-logs) opstellingssectie om de CDN- logboeken in de stapel van de ELK in te nemen.
 
 In de volgende schermafbeelding ziet u de CDN-logbestanden van de AEM Dev-omgeving die in de ELK-stapel zijn opgenomen.
 
-![&#x200B; WKND CDN Logs ELK &#x200B;](../assets/use-cases/wknd-cdn-logs-elk-waf.png)
+![ WKND CDN Logs ELK ](../assets/use-cases/wknd-cdn-logs-elk-waf.png)
 
 Binnen de ELK toepassing zou het **dashboard van WAF** moeten tonen
 Gemarkeerde verzoeken en overeenkomstige waarden in cliëntIP (cli_ip), gastheer, url, actie (waf_action), en regel-naam (waf_match) kolommen.
 
-![&#x200B; WKND WAF Dashboard ELK &#x200B;](../assets/use-cases/elk-tool-dashboard-waf-flagged.png)
+![ WKND WAF Dashboard ELK ](../assets/use-cases/elk-tool-dashboard-waf-flagged.png)
 
 Ook, tonen de **distributie van de Vlaggen van WAF** en **Hoogste aanvallen** panelen extra details.
 
-![&#x200B; WKND WAF Dashboard ELK &#x200B;](../assets/use-cases/elk-tool-dashboard-waf-flagged-top-attacks-1.png)
+![ WKND WAF Dashboard ELK ](../assets/use-cases/elk-tool-dashboard-waf-flagged-top-attacks-1.png)
 
-![&#x200B; WKND WAF Dashboard ELK &#x200B;](../assets/use-cases/elk-tool-dashboard-waf-flagged-top-attacks-2.png)
+![ WKND WAF Dashboard ELK ](../assets/use-cases/elk-tool-dashboard-waf-flagged-top-attacks-2.png)
 
-![&#x200B; WKND WAF Dashboard ELK &#x200B;](../assets/use-cases/elk-tool-dashboard-waf-flagged-top-attacks-3.png)
+![ WKND WAF Dashboard ELK ](../assets/use-cases/elk-tool-dashboard-waf-flagged-top-attacks-3.png)
 
 ### Splunk-integratie
 
-De klanten die [&#x200B; Logboek van de Splunk hebben toegelaten &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) kunnen nieuwe dashboards tot stand brengen om de verkeerspatronen te analyseren.
+De klanten die [ Logboek van de Splunk hebben toegelaten ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) kunnen nieuwe dashboards tot stand brengen om de verkeerspatronen te analyseren.
 
-Om dashboards in Splunk tot stand te brengen, volg [&#x200B; Splunk dashboards voor de Analyse van het Logboek AEMCS CDN &#x200B;](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis) stappen.
+Om dashboards in Splunk tot stand te brengen, volg [ Splunk dashboards voor de Analyse van het Logboek AEMCS CDN ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis) stappen.
 
 ## Wanneer en hoe te om regels te verfijnen
 
@@ -224,7 +224,7 @@ Als u de regels wilt verfijnen, gaat u als volgt te werk:
 
 - **het verkeerspatronen van de Monitor**: Gebruik de CDN- logboeken en het dashboard van ELK om verkeerspatronen te controleren en om het even welke anomalieën of pieken in verkeer te identificeren. Besteed aandacht aan de _de vlagdistributie van WAF_ en _Hoogste aanvallen_ panelen in het dashboard van de ELK om de soorten aanvallen te begrijpen die worden ontdekt.
 - **Adjust wafFlags**: Als `ATTACK` vlaggen te vaak worden teweeggebracht of
-Als u de aanvalsvector wilt verfijnen, kunt u aangepaste regels maken met specifieke WAF-vlaggen. Zie een volledige lijst van [&#x200B; de vlaggen van WAF &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) in de documentatie. Probeer eerst nieuwe aangepaste regels in de modus `log` .
+Als u de aanvalsvector wilt verfijnen, kunt u aangepaste regels maken met specifieke WAF-vlaggen. Zie een volledige lijst van [ de vlaggen van WAF ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) in de documentatie. Probeer eerst nieuwe aangepaste regels in de modus `log` .
 - **Beweging aan het blokkeren van regels**: Zodra u de verkeerspatronen en de vlaggen van WAF hebt bevestigd, kunt u overwegen zich aan het blokkeren van regels te bewegen.
 
 ## Samenvatting
@@ -320,5 +320,5 @@ Voor meer geavanceerde scenario&#39;s, kunt u de volgende gebruiksgevallen onder
 
 ## Aanvullende bronnen
 
-- [&#x200B; Aanbevolen starterregels &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules)
-- [&#x200B; WAF vlaggen lijst &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list)
+- [ Aanbevolen starterregels ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules)
+- [ WAF vlaggen lijst ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list)

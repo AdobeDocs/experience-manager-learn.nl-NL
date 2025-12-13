@@ -4,7 +4,7 @@ description: Algemeen overzicht van AEM as a Cloud Service in cache plaatsen.
 version: Experience Manager as a Cloud Service
 feature: Dispatcher, Developer Tools
 topic: Performance
-role: Architect, Developer
+role: Developer
 level: Intermediate
 doc-type: Article
 last-substantial-update: 2023-08-28T00:00:00Z
@@ -12,7 +12,7 @@ jira: KT-13858
 thumbnail: KT-13858.jpeg
 exl-id: e76ed4c5-3220-4274-a315-a75e549f8b40
 duration: 36
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
@@ -25,7 +25,7 @@ In AEM as a Cloud Service is het begrijpen van caching cruciaal. In cache plaats
 
 AEM as a Cloud Service heeft meerdere lagen in cache en strategieën die verschillen tussen de services Auteur en Publiceren.
 
-![&#x200B; AEM as a Cloud Service caching overzicht &#x200B;](./assets/overview/all.png){align="center"}
+![ AEM as a Cloud Service caching overzicht ](./assets/overview/all.png){align="center"}
 
 ## AEM caching
 

@@ -9,9 +9,9 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
 duration: 2516
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '854'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ Deze videoreeks met meerdere delen geeft u een overzicht van hoe media-inhoud wo
 
 ## Live demo over dynamische media
 
-[![&#x200B; AEM Assets Dynamic Media live demo &#x200B;](./assets/overview/live-demo.png) &#x200B;](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+[![ AEM Assets Dynamic Media live demo ](./assets/overview/live-demo.png) ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
 
-Verken de mogelijkheden van de Dynamische Media van Adobe met onze [**Levende Demo** &#x200B;](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), waar de meest geavanceerde oplossingen aan het leven komen. Leer hoe [**Dynamische Assets** &#x200B;](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/dynamic-assets.html) werkschema&#39;s stroomlijnt en inhoudsbeheer opheft, en [**Interactieve Ervaringen** &#x200B;](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/interactive-experiences.html) ontdekt die publiek over elk kanaal fascineren. [&#x200B; zie hoe de Dynamische Media uw inhoudsstrategie &#x200B;](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) kunnen omzetten.
+Verken de mogelijkheden van de Dynamische Media van Adobe met onze [**Levende Demo** ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), waar de meest geavanceerde oplossingen aan het leven komen. Leer hoe [**Dynamische Assets** ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/dynamic-assets.html) werkschema&#39;s stroomlijnt en inhoudsbeheer opheft, en [**Interactieve Ervaringen** ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/interactive-experiences.html) ontdekt die publiek over elk kanaal fascineren. [ zie hoe de Dynamische Media uw inhoudsstrategie ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) kunnen omzetten.
 
 ## Dynamisch mediaoverzicht
 
@@ -115,4 +115,8 @@ U kunt eenvoudig Closed Captioning toevoegen aan dynamische media-video door de 
 
 In deze video wordt uitgelegd waarom het verscherpen van een afbeelding van essentieel belang is voor het behouden van de beeldkwaliteit en voor het gebruik van geavanceerde instellingen voor het maken van het perfecte beeld.
 
+<!--
+This link is broken
+
 >[!VIDEO](https://demos-pub.assetsadobe.com/etc/dam/viewers/s7viewers/html5/VideoViewer.html?asset=%2Fcontent%2Fdam%2Fdm-public-facing-upgrade-portal-video%2F04_DynamicImagery_AdvancedSettings_071917_BH.mp4&config=/etc/dam/presets/viewer/Video_social&serverUrl=https%3A%2F%2Fadobedemo62-h.assetsadobe.com%2Fis%2Fimage%2F&contenturl=%2F&config2=/etc/dam/presets/analytics&videoserverurl=https://gateway-na.assetsadobe.com/DMGateway/public/demoCo&posterimage=/content/dam/dm-public-facing-upgrade-portal-video/04_DynamicImagery_AdvancedSettings_071917_BH.mp4)
+-->

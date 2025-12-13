@@ -4,7 +4,7 @@ description: Meer informatie over AEM-gebeurtenissen, wat het is, waarom en wann
 version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
-role: Architect, Developer
+role: Developer
 level: Beginner
 doc-type: Tutorial
 duration: 540
@@ -12,7 +12,7 @@ last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Meer informatie over AEM-gebeurtenissen, wat het is, waarom en wanneer het wordt
 
 AEM Event is een &#39;cloud-native&#39; gebeurtenissysteem dat abonnementen op AEM Events inschakelt voor verwerking in externe systemen. Een AEM-gebeurtenis is een statuswijzigingsmelding die door AEM wordt verzonden wanneer een specifieke actie plaatsvindt. Dit kunnen bijvoorbeeld gebeurtenissen zijn wanneer een inhoudsfragment wordt gemaakt, bijgewerkt of verwijderd.
 
-![&#x200B; AEM die &#x200B;](./assets/aem-eventing.png) tot stand komt
+![ AEM die ](./assets/aem-eventing.png) tot stand komt
 
 Het bovenstaande diagram visualiseerde hoe AEM as a Cloud Service gebeurtenissen produceert en verzendt naar Adobe I/O Events, dat hen aan gebeurtenisabonnees beurtelt.
 
@@ -41,13 +41,13 @@ Samengevat zijn er drie hoofdonderdelen:
 
 ### Hoe anders
 
-De [&#x200B; Gebeurtenis Apache die &#x200B;](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html), OSGi gebeurtenis, en [&#x200B; JCR waarneming &#x200B;](https://jackrabbit.apache.org/oak/docs/features/observation.html) allen aanbiedt mechanismen om aan gebeurtenissen in te tekenen en te verwerken. Nochtans, zijn deze verschillend van AEM Event zoals die in deze documentatie wordt besproken.
+De [ Gebeurtenis Apache die ](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html), OSGi gebeurtenis, en [ JCR waarneming ](https://jackrabbit.apache.org/oak/docs/features/observation.html) allen aanbiedt mechanismen om aan gebeurtenissen in te tekenen en te verwerken. Nochtans, zijn deze verschillend van AEM Event zoals die in deze documentatie wordt besproken.
 
 Belangrijk onderscheid van AEM Event:
 
 - De code voor de gebeurtenisverbruiker wordt buiten AEM uitgevoerd en wordt niet in dezelfde JVM als AEM uitgevoerd.
 - De AEM-productcode is verantwoordelijk voor het definiëren van de gebeurtenissen en het verzenden ervan naar Adobe I/O Events.
-- Gebeurtenisgegevens worden gestandaardiseerd en verzonden in JSON-indeling. Voor meer details, verwijs naar [&#x200B; wolken &#x200B;](https://cloudevents.io/).
+- Gebeurtenisgegevens worden gestandaardiseerd en verzonden in JSON-indeling. Voor meer details, verwijs naar [ wolken ](https://cloudevents.io/).
 - Voor de communicatie met AEM gebruikt de gebruiker van de gebeurtenis de AEM as a Cloud Service API.
 
 
@@ -68,19 +68,19 @@ AEM Event is weliswaar krachtig, maar heeft bepaalde beperkingen die in overwegi
 
 - **Beschikbaarheid beperkt tot AEM as a Cloud Service**: Momenteel, is AEM Event exclusief beschikbaar voor AEM as a Cloud Service.
 
-- **Beschikbare gebeurtenistypen**: Herzie de huidige lijst van beschikbare gebeurtenistypen [&#x200B; hier &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#available-event-types).
+- **Beschikbare gebeurtenistypen**: Herzie de huidige lijst van beschikbare gebeurtenistypen [ hier ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#available-event-types).
 
 ## Hoe te om toe te laten
 
-Zie [&#x200B; de Gebeurtenissen van AEM op uw Milieu van de Dienst van de Wolk AEM &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment) voor volgende stappen toelaten.
+Zie [ de Gebeurtenissen van AEM op uw Milieu van de Dienst van de Wolk AEM ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment) voor volgende stappen toelaten.
 
 ## Abonneren
 
-Om aan de Gebeurtenissen van AEM in te tekenen, moet u geen code in AEM schrijven, maar eerder wordt een [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/) project gevormd. De Adobe Developer Console is een gateway naar Adobe APIs, SDKs, Gebeurtenissen, Runtime, en App Builder.
+Om aan de Gebeurtenissen van AEM in te tekenen, moet u geen code in AEM schrijven, maar eerder wordt een [ Adobe Developer Console ](https://developer.adobe.com/) project gevormd. De Adobe Developer Console is een gateway naar Adobe APIs, SDKs, Gebeurtenissen, Runtime, en App Builder.
 
 In dit geval, laat het a _project_ in Adobe Developer Console u toe om aan gebeurtenissen in te tekenen die van het milieu van AEM as a Cloud Service worden uitgegeven en de gebeurtenislevering aan externe systemen te vormen.
 
-Voor meer informatie, zie [&#x200B; hoe te aan de Gebeurtenissen van AEM in Adobe Developer Console &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console) intekenen.
+Voor meer informatie, zie [ hoe te aan de Gebeurtenissen van AEM in Adobe Developer Console ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console) intekenen.
 
 ## Hoe te verbruiken
 
@@ -89,7 +89,7 @@ Er zijn twee primaire methodes om de Gebeurtenissen van AEM te verbruiken: de _d
 - **methode van de Duw**: In deze benadering, wordt de gebeurtenisconsument proactief op de hoogte gebracht door Adobe I/O Events wanneer een gebeurtenis beschikbaar wordt. Tot de integratieopties behoren Webhooks, Adobe I/O Runtime en Amazon EventBridge.
 - **methode van de Trek**: Hier, pollt de gebeurtenisconsument actief Adobe I/O Events om nieuwe gebeurtenissen te controleren. De primaire integratieoptie voor deze methode is de Adobe Developer Journaling API.
 
-Voor meer informatie, zie [&#x200B; de verwerking van Gebeurtenissen van AEM via Adobe I/O Events &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#aem-events-processing-via-adobe-io).
+Voor meer informatie, zie [ de verwerking van Gebeurtenissen van AEM via Adobe I/O Events ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#aem-events-processing-via-adobe-io).
 
 ## Voorbeelden
 

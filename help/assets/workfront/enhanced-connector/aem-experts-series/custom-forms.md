@@ -4,7 +4,7 @@ description: Leer hoe u Workfront en AEM Assets configureert voor het beheren en
 version: Experience Manager as a Cloud Service
 topic: Content Management, Integrations
 feature: Asset Management
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Beginner
 jira: KT-9718
 thumbnail: 340332.jpeg
@@ -13,7 +13,7 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 40d76e0c-69f3-4003-9f34-f393e6fb8561
 duration: 3314
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%
@@ -22,10 +22,10 @@ ht-degree: 0%
 
 # Aangepaste Workfront-formulieren en toewijzing van metagegevens
 
-![&#x200B; de DeskundigenReeks van AEM &#x200B;](./assets/banner.png)
+![ de DeskundigenReeks van AEM ](./assets/banner.png)
 
 Leer hoe u Workfront en AEM Assets configureert voor het beheren en synchroniseren van metagegevens van elementen met behulp van aangepaste Workfront-formulieren en AEM-metagegevensschema&#39;s.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431497?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/340332?quality=12&learn=on)
 
-_Deel twee van a [&#x200B; vier deel deskundige reeksen op Workfront voor Experience Manager verbeterde schakelaar](./overview.md)_
+_Deel twee van a [ vier deel deskundige reeksen op Workfront voor Experience Manager verbeterde schakelaar](./overview.md)_

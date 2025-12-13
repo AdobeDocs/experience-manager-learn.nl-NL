@@ -4,7 +4,7 @@ description: Leer hoe u op OpenAPI gebaseerde AEM API's op AEM as a Cloud Servic
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Beginner
 doc-type: Tutorial
 jira: KT-16516
@@ -12,7 +12,7 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: 57da04874cfb37dcccbf605c65fbcba8f12849fb
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1811'
 ht-degree: 0%
@@ -35,8 +35,8 @@ In deze zelfstudie leert u hoe u:
 
 Controleer voordat u begint het volgende:
 
-- [&#x200B; Toegang hebbend tot Adobe APIs en verwante concepten &#x200B;](../overview.md#accessing-adobe-apis-and-related-concepts) sectie.
-- [&#x200B; artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.](../setup.md)
+- [ Toegang hebbend tot Adobe APIs en verwante concepten ](../overview.md#accessing-adobe-apis-and-related-concepts) sectie.
+- [ artikel van opstellingsOpenAPI-Gebaseerde AEM APIs.](../setup.md)
 
 ## Vereisten
 
@@ -46,13 +46,13 @@ U hebt het volgende nodig om deze zelfstudie te voltooien:
    - AEM Release `2024.10.18459.20241031T210302Z` of hoger.
    - Nieuwe stijlproductprofielen (als de omgeving vóór november 2024 is gemaakt)
 
-  Zie [&#x200B; opstelling op OpenAPI-Gebaseerde AEM APIs &#x200B;](../setup.md) artikel voor meer details.
+  Zie [ opstelling op OpenAPI-Gebaseerde AEM APIs ](../setup.md) artikel voor meer details.
 
-- Het steekproef [&#x200B; WKND &#x200B;](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) project van Plaatsen moet op het worden opgesteld.
+- Het steekproef [ WKND ](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) project van Plaatsen moet op het worden opgesteld.
 
-- Toegang tot [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/developer-console/docs/guides/getting-started).
+- Toegang tot [ Adobe Developer Console ](https://developer.adobe.com/developer-console/docs/guides/getting-started).
 
-- Installeer [&#x200B; Node.js &#x200B;](https://nodejs.org/en/) op uw lokale machine om de toepassing van steekproefNodeJS in werking te stellen.
+- Installeer [ Node.js ](https://nodejs.org/en/) op uw lokale machine om de toepassing van steekproefNodeJS in werking te stellen.
 
 ## Ontwikkelingsstappen
 
@@ -68,55 +68,55 @@ De ontwikkelingsstappen op hoog niveau zijn:
 
 ## ADC-project configureren
 
-Vorm ADC de stap van het Project wordt _herhaald_ van [&#x200B; OpenAPI-Gebaseerde AEM APIs van de Opstelling &#x200B;](../setup.md). De methode wordt herhaald om de Assets-auteur-API toe te voegen en de verificatiemethode te configureren als OAuth Server-to-Server.
+Vorm ADC de stap van het Project wordt _herhaald_ van [ OpenAPI-Gebaseerde AEM APIs van de Opstelling ](../setup.md). De methode wordt herhaald om de Assets-auteur-API toe te voegen en de verificatiemethode te configureren als OAuth Server-to-Server.
 
 >[!TIP]
 >
->Zorg ervoor u **de toegang van AEM APIs** stap van de [&#x200B; op OpenAPI-Gebaseerde AEM APIs van de Opstelling &#x200B;](../setup.md#enable-aem-apis-access) hebt voltooid. Zonder deze optie is de optie Server-naar-server verificatie niet beschikbaar.
+>Zorg ervoor u **de toegang van AEM APIs** stap van de [ op OpenAPI-Gebaseerde AEM APIs van de Opstelling ](../setup.md#enable-aem-apis-access) hebt voltooid. Zonder deze optie is de optie Server-naar-server verificatie niet beschikbaar.
 
 
-1. Van [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/console/projects), open het gewenste project.
+1. Van [ Adobe Developer Console ](https://developer.adobe.com/console/projects), open het gewenste project.
 
 1. Om AEM APIs toe te voegen, klik op **voeg API** knoop toe.
 
-   ![&#x200B; voeg API &#x200B;](../assets/s2s/add-api.png) toe
+   ![ voeg API ](../assets/s2s/add-api.png) toe
 
 1. In _voeg API_ dialoog toe, filter door _Experience Cloud_ en selecteer **de Auteur API van AEM Assets** kaart en klik **daarna**.
-Als u verschillende op OpenAPI-Gebaseerde AEM API nodig hebt, verwijs naar de [&#x200B; Documentatie van Adobe Developer &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) om te vinden die uw gebruiksgeval aanpast.
+Als u verschillende op OpenAPI-Gebaseerde AEM API nodig hebt, verwijs naar de [ Documentatie van Adobe Developer ](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) om te vinden die uw gebruiksgeval aanpast.
 
    Het voorbeeld hieronder loopt door het toevoegen van **AEM Assets Auteur API**.
 
-   ![&#x200B; voeg AEM API &#x200B;](../assets/s2s/add-aem-api.png) toe
+   ![ voeg AEM API ](../assets/s2s/add-aem-api.png) toe
 
    >[!TIP]
    >
-   >Als de gewenste **AEM API kaart** wordt onbruikbaar gemaakt en _waarom is dit gehandicapt?_ de informatie toont het **Vereiste Vergunning** bericht één van de redenen zou kunnen zijn dat u uw milieu van AEM as a Cloud Service NIET hebt gemoderniseerd, zie [&#x200B; Modernisering van het milieu van AEM as a Cloud Service &#x200B;](../setup.md#modernization-of-aem-as-a-cloud-service-environment) voor meer informatie.
+   >Als de gewenste **AEM API kaart** wordt onbruikbaar gemaakt en _waarom is dit gehandicapt?_ de informatie toont het **Vereiste Vergunning** bericht één van de redenen zou kunnen zijn dat u uw milieu van AEM as a Cloud Service NIET hebt gemoderniseerd, zie [ Modernisering van het milieu van AEM as a Cloud Service ](../setup.md#modernization-of-aem-as-a-cloud-service-environment) voor meer informatie.
 
 1. Daarna, in _vorm API_ dialoog, selecteer de **server-aan-server** authentificatieoptie en klik **daarna**. De server-aan-server authentificatie is ideaal voor de backenddiensten die API toegang zonder gebruikersinteractie vereisen.
 
-   ![&#x200B; Uitgezochte authentificatie &#x200B;](../assets/s2s/select-authentication.png)
+   ![ Uitgezochte authentificatie ](../assets/s2s/select-authentication.png)
 
    >[!TIP]
    >
-   >Als u niet de server-aan-server authentificatieoptie ziet, betekent het dat de gebruiker die opstelling de integratie niet als Ontwikkelaar aan het Profiel van het Product wordt toegevoegd waar de Dienst wordt geassocieerd. Zie [&#x200B; Server-aan-Server authentificatie &#x200B;](../setup.md#enable-server-to-server-authentication) voor meer informatie toelaten.
+   >Als u niet de server-aan-server authentificatieoptie ziet, betekent het dat de gebruiker die opstelling de integratie niet als Ontwikkelaar aan het Profiel van het Product wordt toegevoegd waar de Dienst wordt geassocieerd. Zie [ Server-aan-Server authentificatie ](../setup.md#enable-server-to-server-authentication) voor meer informatie toelaten.
 
 1. Wijzig de naam van de referentie voor gemakkelijkere identificatie (indien nodig) en klik **daarna**. Voor demo-doeleinden wordt de standaardnaam gebruikt.
 
-   ![&#x200B; noem referentie &#x200B;](../assets/s2s/rename-credential.png) anders
+   ![ noem referentie ](../assets/s2s/rename-credential.png) anders
 
 1. Selecteer de **Gebruikers van de Medewerker van AEM Assets - auteur - Programma XXX - het Profiel van het Product van Milieu XXX** en klik **sparen**. Zoals u ziet, is alleen het productprofiel dat is gekoppeld aan de AEM Assets API-gebruikersservice beschikbaar voor selectie.
 
-   ![&#x200B; Uitgezochte Profiel van het Product &#x200B;](../assets/s2s/select-product-profile.png)
+   ![ Uitgezochte Profiel van het Product ](../assets/s2s/select-product-profile.png)
 
 1. Controleer de AEM API- en verificatieconfiguratie.
 
-   ![&#x200B; de configuratie van AEM API &#x200B;](../assets/s2s/aem-api-configuration.png)
+   ![ de configuratie van AEM API ](../assets/s2s/aem-api-configuration.png)
 
-   ![&#x200B; configuratie van de Authentificatie &#x200B;](../assets/s2s/authentication-configuration.png)
+   ![ configuratie van de Authentificatie ](../assets/s2s/authentication-configuration.png)
 
 ## AEM-instantie configureren om ADC-projectcommunicatie in te schakelen
 
-Volg de instructies van het [&#x200B; op OpenAPI-Gebaseerde artikel van AEM APIs van de Opstelling &#x200B;](../setup.md#configure-the-aem-instance-to-enable-adc-project-communication) om de instantie van AEM te vormen om de mededeling van het Project van ADC toe te laten.
+Volg de instructies van het [ op OpenAPI-Gebaseerde artikel van AEM APIs van de Opstelling ](../setup.md#configure-the-aem-instance-to-enable-adc-project-communication) om de instantie van AEM te vormen om de mededeling van het Project van ADC toe te laten.
 
 ## Een voorbeeld van een NodeJS-toepassing ontwikkelen
 
@@ -124,11 +124,11 @@ Laten we een voorbeeld-NodeJS-toepassing ontwikkelen die de Assets-auteur-API aa
 
 U kunt andere programmeertalen zoals Java, Python, enz. gebruiken om de toepassing te ontwikkelen.
 
-Voor testende doeleinden, kunt u [&#x200B; Postman &#x200B;](https://www.postman.com/) gebruiken, [&#x200B; krullen &#x200B;](https://curl.se/), of een andere cliënt van de WEERSTING om AEM APIs aan te halen.
+Voor testende doeleinden, kunt u [ Postman ](https://www.postman.com/) gebruiken, [ krullen ](https://curl.se/), of een andere cliënt van de WEERSTING om AEM APIs aan te halen.
 
 ### De API controleren
 
-Alvorens de toepassing te ontwikkelen, laten wij overzicht [&#x200B; leveren het gespecificeerde meta-gegevens van activa &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/#operation/getAssetMetadata) eindpunt van de _Auteur API van Assets_. De API-syntaxis is:
+Alvorens de toepassing te ontwikkelen, laten wij overzicht [ leveren het gespecificeerde meta-gegevens van activa ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/#operation/getAssetMetadata) eindpunt van de _Auteur API van Assets_. De API-syntaxis is:
 
 ```http
 GET https://{bucket}.adobeaemcloud.com/adobe/../assets/{assetId}/metadata
@@ -142,18 +142,18 @@ De `assetId` is de JCR-UUID van het element met het voorvoegsel `urn:aaid:aem:` 
 
 - U kunt de `assetId` ook ophalen door het element te inspecteren in de elementencontrole van de browser. Zoek het kenmerk `data-id="urn:aaid:aem:..."` .
 
-  ![&#x200B; inspecteer activa &#x200B;](../assets/s2s/inspect-asset.png)
+  ![ inspecteer activa ](../assets/s2s/inspect-asset.png)
 
 ### De API aanroepen met de browser
 
-Alvorens de toepassing te ontwikkelen, laten wij API gebruiken aanhalen gebruikend **het** eigenschap in de [&#x200B; API documentatie &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/author/) uitproberen.
+Alvorens de toepassing te ontwikkelen, laten wij API gebruiken aanhalen gebruikend **het** eigenschap in de [ API documentatie ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/author/) uitproberen.
 
-1. Open de [&#x200B; documentatie van de AuteurAPI van Assets &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/author/) in browser.
+1. Open de [ documentatie van de AuteurAPI van Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/author/) in browser.
 
 1. Vouw de _sectie van Meta-gegevens_ uit en klik op **levert de gespecificeerde meta-gegevens van activa** optie.
 
 1. In de juiste ruit, klik op **probeer het** knoop.
-   ![&#x200B; API documentatie &#x200B;](../assets/s2s/api-documentation.png)
+   ![ API documentatie ](../assets/s2s/api-documentation.png)
 
 1. Voer de volgende waarden in:
 
@@ -165,13 +165,13 @@ Alvorens de toepassing te ontwikkelen, laten wij API gebruiken aanhalen gebruike
    | **Parameters** | assetId | De unieke id voor het element in AEM, bijvoorbeeld `urn:aaid:aem:a200faf1-6d12-4abc-bc16-1b9a21f870da` |
    | **Parameters** | X-Adobe-Accept-Experimental | 1 |
 
-   ![&#x200B; Oproep API - toegangstoken &#x200B;](../assets/s2s/generate-access-token.png)
+   ![ Oproep API - toegangstoken ](../assets/s2s/generate-access-token.png)
 
-   ![&#x200B; Oproep API - inputwaarden &#x200B;](../assets/s2s/invoke-api-input-values.png)
+   ![ Oproep API - inputwaarden ](../assets/s2s/invoke-api-input-values.png)
 
 1. Klik **verzenden** om API aan te halen, en de reactie in de **Reactie** tabel te herzien.
 
-   ![&#x200B; Oproep API - reactie &#x200B;](../assets/s2s/invoke-api-response.png)
+   ![ Oproep API - reactie ](../assets/s2s/invoke-api-response.png)
 
 De bovenstaande stappen bevestigen de modernisering van de AEM as a Cloud Service-omgeving, waardoor AEM API&#39;s toegang hebben. Het bevestigt ook de succesvolle configuratie van het Project ADC, en de server-aan-server communicatie van OAuth ClientID met de instantie van de Auteur van AEM.
 
@@ -185,7 +185,7 @@ Om de toepassing te ontwikkelen, kunt u of de _in werking stellen-steekproef-toe
 
 >[!TAB  looppas-de-steekproef-toepassing ]
 
-1. Download het steekproef [&#x200B; demo-nodejs-app-to-invoke-aem-openapi &#x200B;](../assets/s2s/demo-nodejs-app-to-invoke-aem-openapi.zip) toepassingsZIP dossier en haal het uit.
+1. Download het steekproef [ demo-nodejs-app-to-invoke-aem-openapi ](../assets/s2s/demo-nodejs-app-to-invoke-aem-openapi.zip) toepassingsZIP dossier en haal het uit.
 
 1. Navigeer naar de uitgepakte map en installeer de afhankelijkheden.
 
@@ -425,19 +425,19 @@ Voer de volgende stappen uit om te controleren of de technische gebruiker en geb
 
 - In het Project ADC, navigeer aan de **Server-aan-Server** credentiële configuratie. Noteer de **Technische waarde van E-mail van de Rekening**.
 
-  ![&#x200B; E-mail van de Technische Rekening &#x200B;](../assets/s2s/technical-account-email.png)
+  ![ E-mail van de Technische Rekening ](../assets/s2s/technical-account-email.png)
 
 - In de dienst van de Auteur van AEM, navigeer aan **Hulpmiddelen** > **Veiligheid** > **Gebruikers** en onderzoek naar de **Technische waarde van de Rekening E-mail**.
 
-  ![&#x200B; Gebruiker van de Technische Rekening &#x200B;](../assets/s2s/technical-account-user.png)
+  ![ Gebruiker van de Technische Rekening ](../assets/s2s/technical-account-user.png)
 
 - Klik op de technische rekeningsgebruiker om de gebruikersdetails, als **Groepen** lidmaatschap te bekijken. Zoals hieronder getoond, wordt de technische rekeningsgebruiker geassocieerd met de **Gebruikers van de Medewerker van AEM Assets - auteur - Programma XXX - Milieu XXX** en **Gebruikers van de Medewerker van AEM Assets - de gebruikersgroepen van de Dienst**.
 
-  ![&#x200B; Technisch Lidmaatschap van de Gebruiker van de Rekening &#x200B;](../assets/s2s/technical-account-user-membership.png)
+  ![ Technisch Lidmaatschap van de Gebruiker van de Rekening ](../assets/s2s/technical-account-user-membership.png)
 
 - Merk op dat de technische rekeningsgebruiker met de **Gebruikers van de Medewerker van AEM Assets - auteur - Programma XXX - Milieu XXX** Profiel van het Product wordt geassocieerd. Het Profiel van het Product wordt geassocieerd met de **gebruikers van AEM Assets API** en **de Gebruikers van de Medewerker van AEM Assets** Diensten.
 
-  ![&#x200B; het Profiel van het Product van de Gebruiker van de Technische Rekening &#x200B;](../assets/s2s/technical-account-user-product-profile.png)
+  ![ het Profiel van het Product van de Gebruiker van de Technische Rekening ](../assets/s2s/technical-account-user-product-profile.png)
 
 - De gebruikersvereniging van het Profiel van het Product en de technische rekening kunnen in de **Profiles van het Product** worden geverifieerd **API geloofsbrieven** tabel.
 
@@ -451,7 +451,7 @@ Nochtans, om _te creëren, bij te werken, schrapt_ (CUD) de activa meta-gegevens
 
 Laten wij het _PATCH_ verzoek aanhalen om de activa meta-gegevens bij te werken en de 403 foutenreactie waar te nemen.
 
-- Open de [&#x200B; documentatie van de AuteurAPI van Assets &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) in browser.
+- Open de [ documentatie van de AuteurAPI van Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) in browser.
 
 - Voer de volgende waarden in:
 
@@ -467,13 +467,13 @@ Laten wij het _PATCH_ verzoek aanhalen om de activa meta-gegevens bij te werken 
 
 - Klik **verzenden** om het _PATCH_ verzoek aan te halen en de 403 foutenreactie waar te nemen.
 
-  ![&#x200B; Oproep API - het verzoek van PATCH &#x200B;](../assets/s2s/invoke-api-patch-request.png)
+  ![ Oproep API - het verzoek van PATCH ](../assets/s2s/invoke-api-patch-request.png)
 
 U kunt de fout van 403 op twee manieren corrigeren:
 
-- In het Project van ADC, werk het Server-aan-Server bijbehorende Profiel van het Product van OAuth Server-aan-Server met een aangewezen Profiel van het Product bij dat de noodzakelijke toestemmingen heeft om _tot stand te brengen, bij te werken, schrapt_ (CUD) de activa meta-gegevens, bijvoorbeeld, **de Beheerders van AEM - auteur - Programma XXX - Milieu XXX**. Voor meer informatie, zie [&#x200B; hoe te - API verbonden geloofsbrieven en het het beheersartikel van het Profiel van het Product &#x200B;](../how-to/credentials-and-product-profile-management.md).
+- In het Project van ADC, werk het Server-aan-Server bijbehorende Profiel van het Product van OAuth Server-aan-Server met een aangewezen Profiel van het Product bij dat de noodzakelijke toestemmingen heeft om _tot stand te brengen, bij te werken, schrapt_ (CUD) de activa meta-gegevens, bijvoorbeeld, **de Beheerders van AEM - auteur - Programma XXX - Milieu XXX**. Voor meer informatie, zie [ hoe te - API verbonden geloofsbrieven en het het beheersartikel van het Profiel van het Product ](../how-to/credentials-and-product-profile-management.md).
 
-- Gebruikend het Project van AEM, werk de bijbehorende de gebruikersgroep van de Dienst van AEM (bijvoorbeeld, de Gebruikers van de Medewerker van AEM Assets - de Dienst) toestemmingen in de Auteur van AEM bij om _toe te staan creeer, Update, schrap_ (CUD) van de activa meta-gegevens. Voor meer informatie, zie [&#x200B; hoe te - het artikel van het de toestemmingsbeheer van de gebruikersgroep van de Dienst van AEM &#x200B;](../how-to/services-user-group-permission-management.md).
+- Gebruikend het Project van AEM, werk de bijbehorende de gebruikersgroep van de Dienst van AEM (bijvoorbeeld, de Gebruikers van de Medewerker van AEM Assets - de Dienst) toestemmingen in de Auteur van AEM bij om _toe te staan creeer, Update, schrap_ (CUD) van de activa meta-gegevens. Voor meer informatie, zie [ hoe te - het artikel van het de toestemmingsbeheer van de gebruikersgroep van de Dienst van AEM ](../how-to/services-user-group-permission-management.md).
 
 ## Samenvatting
 
@@ -482,5 +482,5 @@ In het ADC-project hebt u de AEM API&#39;s toegevoegd, het verificatietype van d
 
 ## Aanvullende bronnen
 
-- [&#x200B; OAuth Server-aan-Server de gids van de credentieimplementatie &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
+- [ OAuth Server-aan-Server de gids van de credentieimplementatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
