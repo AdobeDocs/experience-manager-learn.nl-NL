@@ -21,11 +21,11 @@ ht-degree: 0%
 
 # Het uitvoeren van pijpleidingsvrije URL richt
 
-Leer hoe te om [ pijpleiding-vrije URL uit te voeren richt ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) in AEM as a Cloud Service om het marketing team toe te laten om de omleidingen te beheren zonder een ontwikkelaar te hoeven.
+Leer hoe te om [&#x200B; pijpleiding-vrije URL uit te voeren richt &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) in AEM as a Cloud Service om het marketing team toe te laten om de omleidingen te beheren zonder een ontwikkelaar te hoeven.
 
-Er zijn veelvoudige opties om URL te beheren richt in AEM, voor meer informatie, zie [ opnieuw richt URL ](url-redirection.md).
+Er zijn veelvoudige opties om URL te beheren richt in AEM, voor meer informatie, zie [&#x200B; opnieuw richt URL &#x200B;](url-redirection.md).
 
-Het leerprogramma concentreert zich bij het creëren van URL richt zich als zeer belangrijk-waardeparen in een tekstdossier zoals [ Apache RewriteMap ](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) opnieuw en gebruikt AEM as a Cloud Service specifieke configuratie om hen in de module Apache/Dispatcher te laden.
+Het leerprogramma concentreert zich bij het creëren van URL richt zich als zeer belangrijk-waardeparen in een tekstdossier zoals [&#x200B; Apache RewriteMap &#x200B;](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) opnieuw en gebruikt AEM as a Cloud Service specifieke configuratie om hen in de module Apache/Dispatcher te laden.
 
 ## Vereisten
 
@@ -33,11 +33,11 @@ U hebt het volgende nodig om deze zelfstudie te voltooien:
 
 - Het milieu van AEM as a Cloud Service met versie **18311 of hoger**.
 
-- Het steekproef [ WKND ](https://github.com/adobe/aem-guides-wknd) project van Plaatsen moet op het worden opgesteld.
+- Het steekproef [&#x200B; WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) project van Plaatsen moet op het worden opgesteld.
 
 ## Gebruiksscenario voor zelfstudie
 
-Voor het demodoel, laten we veronderstellen dat het WKND marketing team een nieuwe skicampagne lanceert. Ze willen korte URL&#39;s maken voor de ski-avontuurpagina&#39;s en deze op hun eigen manier beheren, net zoals ze de inhoud beheren. Zij besloten om de [ pijpleiding-vrije URL te gebruiken herleidt ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) benadering om URL te beheren opnieuw richt.
+Voor het demodoel, laten we veronderstellen dat het WKND marketing team een nieuwe skicampagne lanceert. Ze willen korte URL&#39;s maken voor de ski-avontuurpagina&#39;s en deze op hun eigen manier beheren, net zoals ze de inhoud beheren. Zij besloten om de [&#x200B; pijpleiding-vrije URL te gebruiken herleidt &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) benadering om URL te beheren opnieuw richt.
 
 Gebaseerd op de vereisten van het marketing team, zijn het volgende URL omleidingen die moeten worden gecreeerd.
 
@@ -68,31 +68,31 @@ De bovenstaande URL-omleidingen kunnen bijvoorbeeld worden opgeslagen in een tek
 /ski/europe          /us/en/adventures/ski-touring-mont-blanc.html
 ```
 
-![ dossier van de Tekst in DAM ](./assets/pipeline-free-redirects/text-file-in-dam.png)
+![&#x200B; dossier van de Tekst in DAM &#x200B;](./assets/pipeline-free-redirects/text-file-in-dam.png)
 
 ### ACS-opdrachten - Kaartbeheer omleiden
 
-[ ACS Commons - richt de Manager van de Kaart ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) opnieuw om een gebruikersvriendelijke interface om URL te leiden richt.
+[&#x200B; ACS Commons - richt de Manager van de Kaart &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) opnieuw om een gebruikersvriendelijke interface om URL te leiden richt.
 
 Bijvoorbeeld, kan het marketing team een nieuwe *Redirect genoemde pagina van Kaarten* `SkiCampaign` tot stand brengen en bovengenoemde URL toe leidt opnieuw richt gebruikend **geeft Ingangen** tabel uit. De URL-omleidingen zijn beschikbaar via `/etc/acs-commons/redirect-maps/skicampaign/jcr:content.redirectmap.txt` .
 
-![ Redirect de Manager van de Kaart ](./assets/pipeline-free-redirects/redirect-map-manager.png)
+![&#x200B; Redirect de Manager van de Kaart &#x200B;](./assets/pipeline-free-redirects/redirect-map-manager.png)
 
 >[!IMPORTANT]
 >
->ACS de versie van de Bevelen **6.7.0 of hoger** wordt vereist om de Redirect Manager van de Kaart te gebruiken, voor meer informatie, zie de [ Bevelen ACS - Redirect Manager ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html).
+>ACS de versie van de Bevelen **6.7.0 of hoger** wordt vereist om de Redirect Manager van de Kaart te gebruiken, voor meer informatie, zie de [&#x200B; Bevelen ACS - Redirect Manager &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html).
 
 ### ACS-opdrachten - Omleidingsbeheer
 
-Alternatief, verstrekken de [ ACS Bevelen - Richt Manager ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) ook een gebruikersvriendelijke interface om URL te beheren richt.
+Alternatief, verstrekken de [&#x200B; ACS Bevelen - Richt Manager &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) ook een gebruikersvriendelijke interface om URL te beheren richt.
 
 Bijvoorbeeld, kan het marketing team een nieuwe configuratie tot stand brengen genoemd `/conf/wknd` en de bovengenoemde omleidingen toevoegen URL gebruikend de **+ knoop van de Configuratie van de Omleiding**. De URL-omleidingen zijn beschikbaar via `/conf/wknd/settings/redirects.txt` .
 
-![ Redirect Manager ](./assets/pipeline-free-redirects/redirect-manager.png)
+![&#x200B; Redirect Manager &#x200B;](./assets/pipeline-free-redirects/redirect-manager.png)
 
 >[!IMPORTANT]
 >
->ACS de versie van de Bevelen **6.10.0 of hoger** wordt vereist om de Redirect Manager te gebruiken, voor meer informatie, zie de [ Bevelen ACS - Redirect Manager ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html).
+>ACS de versie van de Bevelen **6.10.0 of hoger** wordt vereist om de Redirect Manager te gebruiken, voor meer informatie, zie de [&#x200B; Bevelen ACS - Redirect Manager &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html).
 
 ## De Dispatcher configureren
 
@@ -136,7 +136,7 @@ RewriteRule ^(.*)$ ${<MAPALIAS>:$1|/} [L,R=301]
 
 ### Voorbeelden van configuraties
 
-Laten wij de configuraties van Dispatcher voor elk van de hierboven vermelde opties van het omleidingsbeheer URL [ ](#manage-redirects) herzien.
+Laten wij de configuraties van Dispatcher voor elk van de hierboven vermelde opties van het omleidingsbeheer URL [&#x200B; &#x200B;](#manage-redirects) herzien.
 
 >[!BEGINTABS]
 
@@ -144,7 +144,7 @@ Laten wij de configuraties van Dispatcher voor elk van de hierboven vermelde opt
 
 Wanneer de URL-omleidingen worden beheerd als sleutelwaardeparen in een tekstbestand en worden geüpload naar de DAM, zijn de configuraties als volgt.
 
-[!BADGE  dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```yaml
 maps:
@@ -152,7 +152,7 @@ maps:
   path: /content/dam/wknd/redirects/skicampaign.txt
 ```
 
-[!BADGE  dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```
 ...
@@ -171,7 +171,7 @@ RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 
 Wanneer de URL-omleidingen worden beheerd met de ACS-opdrachten - Omleiding Kaartbeheer, zijn de configuraties als volgt.
 
-[!BADGE  dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```yaml
 maps:
@@ -179,7 +179,7 @@ maps:
   path: /etc/acs-commons/redirect-maps/skicampaign/jcr:content.redirectmap.txt
 ```
 
-[!BADGE  dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```
 ...
@@ -194,11 +194,11 @@ RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 ...
 ```
 
->[!TAB  ACS Commons - richt Manager ] opnieuw
+>[!TAB ACS Commons - richt Manager  opnieuw]
 
 Wanneer de omleiding URL gebruikend ACS Commons - de Manager van de Omleiding wordt beheerd, zijn de configuraties als volgt.
 
-[!BADGE  dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```yaml
 maps:
@@ -206,7 +206,7 @@ maps:
   path: /conf/wknd/settings/redirects.txt
 ```
 
-[!BADGE  dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+[!BADGE &#x200B; dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
 ```
 ...
@@ -229,9 +229,9 @@ RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 >
 >De *pijpleiding-vrije* termijn wordt gebruikt om te benadrukken dat de configuraties *slechts eenmaal* worden opgesteld en het marketing team kan URL omleiden door het tekstdossier bij te werken.
 
-Om de configuraties op te stellen, gebruik de [ volledig-stapel ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) of [ 3} pijpleiding van de Webrij config {in ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) Cloud Manager [.](https://my.cloudmanager.adobe.com/)
+Om de configuraties op te stellen, gebruik de [&#x200B; volledig-stapel &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) of [&#x200B; 3&rbrace; pijpleiding van de Webrij config &lbrace;in &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) Cloud Manager [.](https://my.cloudmanager.adobe.com/)
 
-![ Opname via volledig-stapelpijpleiding ](./assets/pipeline-free-redirects/deploy-full-stack-pipeline.png)
+![&#x200B; Opname via volledig-stapelpijpleiding &#x200B;](./assets/pipeline-free-redirects/deploy-full-stack-pipeline.png)
 
 
 Zodra de plaatsing succesvol is, zijn de omleidingen URL actief en het marketing team kan hen beheren zonder een ontwikkelaar te hebben nodig.
@@ -248,5 +248,5 @@ Het marketingteam kan de URL omleiden als sleutel-waardeparen in een tekstbestan
 
 ## Aanvullende bronnen
 
-- [ lijn-vrije URL richt zich opnieuw ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
+- [&#x200B; lijn-vrije URL richt zich opnieuw &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
 - [URL-omleidingen](url-redirection.md)

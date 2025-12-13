@@ -22,7 +22,7 @@ Een uitsplitsing op hoog niveau van de belangrijkste functies voor klanten die e
 
 ## Belangrijke functies voor de upgrade naar AEM 6.5
 
-+ [ Adobe Experience Manager 6.5 de Nota&#39;s van de Versie ](https://helpx.adobe.com/experience-manager/6-5/release-notes.html)
++ [&#x200B; Adobe Experience Manager 6.5 de Nota&#39;s van de Versie &#x200B;](https://helpx.adobe.com/experience-manager/6-5/release-notes.html)
 
 ### Verbeteringen in de Stichting
 
@@ -34,7 +34,7 @@ Adobe Experience Manager 6.5 blijft de stabiliteit, prestaties en draagbaarheid 
 
 AEM Sites introduceert een aantal functies die zijn ontworpen om het maken en ontwikkelen van websites te versnellen:
 
-+ **steun van de Redacteur van het KUUROORD** {staat KUUROORD (enig-paginatoepassingen) toe om volledig in AEM worden ontworpen, ondersteunend een rijke, Marketer-vriendschappelijke auteurservaring.
++ **steun van de Redacteur van het KUUROORD** &lbrace;staat KUUROORD (enig-paginatoepassingen) toe om volledig in AEM worden ontworpen, ondersteunend een rijke, Marketer-vriendschappelijke auteurservaring.
 +_ **JavaScript SDK**, een Uitrusting van het Begin van het Project van het KUUROORD en het steunen bouwt hulpmiddelen, staan front-end ontwikkelaars toe om SPA Redacteur-Compatibele enige pagina-toepassingen onafhankelijk van AEM te ontwikkelen.
 + **Componenten van de Kern** voegt een veelheid van nieuwe componenten, de Bibliotheek van de a **Component** evenals een verscheidenheid van verhogingen aan bestaande Componenten van de Kern toe.
 + Verdere **verbeteringen van de Vertalingen** stroomlijnen vertaling van AEM Sites.
@@ -71,7 +71,7 @@ AEM is beter in staat om te integreren met andere Adobe-services:
 
 ### AMS CLOUD MANAGER
 
-[ Cloud Manager ](https://adobe.ly/2HODmsv), exclusief aan Adobe Managed Services (AMS) klanten, biedt de volgende eigenschappen aan:
+[&#x200B; Cloud Manager &#x200B;](https://adobe.ly/2HODmsv), exclusief aan Adobe Managed Services (AMS) klanten, biedt de volgende eigenschappen aan:
 
 + Cloud Manager steunt breidt de plaatsingssteun van AEM van AEM Sites tot **AEM Assets** uit, met inbegrip van **geautomatiseerde prestaties het testen van activa verwerking**.
 + **auto-schrapt** van AEM publiceer rij bij vooraf bepaalde drempels, verzekert een optimale eindgebruikerervaring.
@@ -82,7 +82,7 @@ AEM is beter in staat om te integreren met andere Adobe-services:
 
 Hieronder ziet u een matrix van de belangrijkste basisfuncties die AEM biedt. Sommige van deze functies zijn geïntroduceerd in oudere versies van incrementele verbeteringen die in elke versie zijn toegevoegd.
 
-+ [ de versienota&#39;s van de Stichting van AEM ](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html)
++ [&#x200B; de versienota&#39;s van de Stichting van AEM &#x200B;](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html)
 
 ***✔<sup>+ </sup> significante verhogingen aan de eigenschap in deze versie.***
 
@@ -276,7 +276,7 @@ Hieronder ziet u een matrix van de belangrijkste basisfuncties die AEM biedt. So
 
 Hieronder vindt u een matrix met belangrijke beveiligingsfuncties die door AEM worden aangeboden. Sommige van deze functies zijn geïntroduceerd in oudere versies van incrementele verbeteringen die in elke versie zijn toegevoegd.
 
-+ [ de versienota&#39;s van de Veiligheid van de Veiligheid ](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html#Security)
++ [&#x200B; de versienota&#39;s van de Veiligheid van de Veiligheid &#x200B;](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html#Security)
 
 ***✔geeft aan dat de functie in deze versie aanzienlijk is verbeterd.***
 
@@ -426,7 +426,7 @@ Hieronder vindt u een matrix met belangrijke beveiligingsfuncties die door AEM w
 
 Hieronder ziet u een matrix van belangrijke Sites-functies die door AEM worden aangeboden. Sommige van deze functies zijn geïntroduceerd in oudere versies van incrementele verbeteringen die in elke versie zijn toegevoegd.
 
-+ [ de versienota&#39;s van AEM Sites ](https://helpx.adobe.com/experience-manager/6-5/release-notes/sites.html)
++ [&#x200B; de versienota&#39;s van AEM Sites &#x200B;](https://helpx.adobe.com/experience-manager/6-5/release-notes/sites.html)
 
 ***✔<sup>+ </sup> significante verhogingen aan de eigenschap in deze versie.***
 
@@ -674,7 +674,7 @@ Hieronder ziet u een matrix van belangrijke Sites-functies die door AEM worden a
 
 Hieronder vindt u een matrix met belangrijke Assets-functies die AEM biedt. Sommige van deze functies zijn geïntroduceerd in oudere versies van incrementele verbeteringen die in elke versie zijn toegevoegd.
 
-+ [ de versienota&#39;s van AEM Assets ](https://helpx.adobe.com/experience-manager/6-5/release-notes/assets.html)
++ [&#x200B; de versienota&#39;s van AEM Assets &#x200B;](https://helpx.adobe.com/experience-manager/6-5/release-notes/assets.html)
 
 ***✔geeft aan dat de functie in deze versie aanzienlijk is verbeterd.***
 

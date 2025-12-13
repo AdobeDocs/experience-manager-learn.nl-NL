@@ -34,7 +34,7 @@ Zorg ervoor de Weg van het Dossier van Gegevens aan **Data.xml** wordt geplaatst
 
 ## Assets
 
-De aanvankelijke vorm (de Vorm van de Verfijning) kan [ van hier worden gedownload ](assets/refinance-form.zip)
+De aanvankelijke vorm (de Vorm van de Verfijning) kan [&#x200B; van hier worden gedownload &#x200B;](assets/refinance-form.zip)
 
 ## Volgende stappen
 

@@ -24,7 +24,7 @@ Leer hoe u aangepaste velden maakt in de AEM Content Fragment Editor.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
 
-De uitbreidingen UI van AEM zouden moeten worden ontwikkeld gebruikend het [ kader van het Spectrum van de Reactie van Adobe ](https://react-spectrum.adobe.com/react-spectrum/index.html), aangezien dit een verenigbaar blik en gevoel met de rest van AEM handhaaft, en ook een uitgebreide bibliotheek van pre-gebouwde functionaliteit heeft, dalende ontwikkelingstijd.
+De uitbreidingen UI van AEM zouden moeten worden ontwikkeld gebruikend het [&#x200B; kader van het Spectrum van de Reactie van Adobe &#x200B;](https://react-spectrum.adobe.com/react-spectrum/index.html), aangezien dit een verenigbaar blik en gevoel met de rest van AEM handhaaft, en ook een uitgebreide bibliotheek van pre-gebouwde functionaliteit heeft, dalende ontwikkelingstijd.
 
 ## Extensiepunt
 
@@ -32,19 +32,19 @@ In dit voorbeeld wordt een bestaand veld in de Inhoudsfragmenteditor vervangen d
 
 | AEM-gebruikersinterface uitgebreid | Extensiepunt |
 | ------------------------ | --------------------- |
-| [ de Redacteur van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [ het vormelement teruggeven van de Douane ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/) |
+| [&#x200B; de Redacteur van het Fragment van de Inhoud &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [&#x200B; het vormelement teruggeven van de Douane &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/) |
 
 ## Voorbeeldextensie
 
 In dit voorbeeld ziet u hoe u veldwaarden in de Content Fragment Editor beperkt tot een vooraf ingestelde set door het standaardveld te vervangen door een aangepaste vervolgkeuzelijst met vooraf gedefinieerde SKU&#39;s. Auteurs kunnen uit deze specifieke SKU-lijst kiezen. Hoewel SKUs gewoonlijk uit een systeem van het Beheer van de Informatie van het Product (PIM) komt, vereenvoudigt dit voorbeeld door de SKUs statisch op te nemen.
 
-De broncode voor dit voorbeeld is [ beschikbaar voor download ](./assets/editor-custom-field/content-fragment-editor-custom-field-src.zip).
+De broncode voor dit voorbeeld is [&#x200B; beschikbaar voor download &#x200B;](./assets/editor-custom-field/content-fragment-editor-custom-field-src.zip).
 
 ### Definitie van inhoudsfragmentmodel
 
-Dit voorbeeld bindt aan om het even welk gebied van het Fragment van de Inhoud de waarvan naam `sku` is (via a [ regelmatige uitdrukkingsgelijke ](#extension-registration) van `^sku$`) en vervangt het met een douanegebied. Het voorbeeld gebruikt het model van het Fragment van de Inhoud van WKND Adventure van de Inhoud dat is bijgewerkt en de definitie is als volgt:
+Dit voorbeeld bindt aan om het even welk gebied van het Fragment van de Inhoud de waarvan naam `sku` is (via a [&#x200B; regelmatige uitdrukkingsgelijke &#x200B;](#extension-registration) van `^sku$`) en vervangt het met een douanegebied. Het voorbeeld gebruikt het model van het Fragment van de Inhoud van WKND Adventure van de Inhoud dat is bijgewerkt en de definitie is als volgt:
 
-![ Definitie van het Model van het Fragment van de Inhoud ](./assets/editor-custom-field/content-fragment-editor.png)
+![&#x200B; Definitie van het Model van het Fragment van de Inhoud &#x200B;](./assets/editor-custom-field/content-fragment-editor.png)
 
 Ondanks het gebied van douaneSKU dat als dropdown wordt getoond, wordt zijn onderliggend model gevormd als tekstgebied. De implementatie van het aangepaste veld hoeft alleen te worden uitgelijnd met de juiste naam en het juiste type eigenschap, waardoor het standaardveld gemakkelijker kan worden vervangen door de aangepaste vervolgkeuzelijst.
 
@@ -85,13 +85,13 @@ function App() {
 ...
 ```
 
-Deze douaneroute van `/sku-field` kaarten aan de `SkuField` component wordt gebruikt hieronder in de [ registratie van de Uitbreiding ](#extension-registration).
+Deze douaneroute van `/sku-field` kaarten aan de `SkuField` component wordt gebruikt hieronder in de [&#x200B; registratie van de Uitbreiding &#x200B;](#extension-registration).
 
 ### Registratie van extensies
 
 `ExtensionRegistration.js` , toegewezen aan de route index.html, is het ingangspunt voor de uitbreiding van AEM en bepaalt:
 
-+ De widgetdefinitie in de functie `getDefinitions()` met `fieldNameExp` - en `url` -kenmerken. De volledige lijst van beschikbare attributen is beschikbaar in [ het Element dat van de Vorm van de Douane API Verwijzing teruggeeft ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/#api-reference).
++ De widgetdefinitie in de functie `getDefinitions()` met `fieldNameExp` - en `url` -kenmerken. De volledige lijst van beschikbare attributen is beschikbaar in [&#x200B; het Element dat van de Vorm van de Douane API Verwijzing teruggeeft &#x200B;](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/#api-reference).
 + De waarde van het kenmerk `url` , een relatief URL-pad ( `/index.html#/skuField` ) om de interface van het veld te laden.
 
 `src/aem-cf-editor-1/web-src/src/components/ExtensionRegistration.js`

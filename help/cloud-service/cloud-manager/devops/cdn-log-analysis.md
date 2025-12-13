@@ -27,7 +27,7 @@ Leer over de _Tooling van de Analyse van het Logboek van de Dienst CDN van de Wo
 
 ## Overzicht
 
-De [ Tooling van de Analyse van het Logboek van AEM as a Cloud Service CDN ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) biedt pre-gebouwde dashboards aan die u met [ Splunk ](https://www.splunk.com/en_us/products/observability-cloud.html) of de [ ELK stapel ](https://www.elastic.co/elastic-stack) voor controle en analyse in real time van uw CDN logboeken kunt integreren.
+De [&#x200B; Tooling van de Analyse van het Logboek van AEM as a Cloud Service CDN &#x200B;](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) biedt pre-gebouwde dashboards aan die u met [&#x200B; Splunk &#x200B;](https://www.splunk.com/en_us/products/observability-cloud.html) of de [&#x200B; ELK stapel &#x200B;](https://www.elastic.co/elastic-stack) voor controle en analyse in real time van uw CDN logboeken kunt integreren.
 
 Met dit gereedschap kunt u real-time controle en proactieve probleemdetectie uitvoeren. Aldus, het verzekeren van geoptimaliseerde inhoudslevering en juiste veiligheidsmaatregelen tegen Ontkenning van de (Dos) en Verdeelde Ontkenning van de (DDoS) aanvallen van de Dienst.
 
@@ -46,25 +46,25 @@ Om de logboekanalyse snel te beginnen, verstrekt Adobe prebuilt dashboards voor 
 
 - **CDN de Verhouding van het Actief van het Geheime voorgeheugen CDN**: verstrekt inzichten in de totale verhouding van de geheim voorgeheugenslag en het totale aantal verzoeken door HIT, PASS, en status MISS. Het verstrekt ook hoogste HIT, PASS, en MISS URLs.
 
-  ![ CDN de Verhouding van de Actief van het Geheime voorgeheugen ](assets/CHR-dashboard.png)
+  ![&#x200B; CDN de Verhouding van de Actief van het Geheime voorgeheugen &#x200B;](assets/CHR-dashboard.png)
 
 - **Dashboard van het Verkeer CDN**: verstrekt inzichten in het verkeer via CDN en het verzoektarief van de Oorsprong, 4xx en 5xx foutentarieven, en niet in cache geplaatste verzoeken. Het verstrekt ook maximum CND en de verzoeken van de Oorsprong per seconde per cliëntIP adres en meer inzichten om de configuraties te optimaliseren CDN.
 
-  ![ Dashboard van het Verkeer CDN ](assets/Traffic-dashboard.png)
+  ![&#x200B; Dashboard van het Verkeer CDN &#x200B;](assets/Traffic-dashboard.png)
 
 - **WAF Dashboard**: verstrekt inzichten via geanalyseerde, gemarkeerde, en geblokkeerde verzoeken. Het verstrekt ook hoogste aanvallen door identiteitskaart van de Vlag van WAF, hoogste 100 aanvallers door cliënt IP, land, en gebruikersagent en meer inzichten om de configuraties van WAF te optimaliseren.
 
-  ![ WAF Dashboard ](assets/WAF-Dashboard.png)
+  ![&#x200B; WAF Dashboard &#x200B;](assets/WAF-Dashboard.png)
 
 ## Splunk-integratie
 
-Voor organisaties die [ Splunk ](https://www.splunk.com/en_us/products/observability-cloud.html) leveraging en die het logboek van AEMCS door:sturen aan hun instanties van de Splunk hebben toegelaten kunnen prebuilt dashboards snel invoeren. Deze opstelling vergemakkelijkt versnelde logboekanalyse, die actionable inzichten verstrekt om de implementaties van AEM te optimaliseren en veiligheidsbedreigingen zoals DOS aanvallen te verlichten.
+Voor organisaties die [&#x200B; Splunk &#x200B;](https://www.splunk.com/en_us/products/observability-cloud.html) leveraging en die het logboek van AEMCS door:sturen aan hun instanties van de Splunk hebben toegelaten kunnen prebuilt dashboards snel invoeren. Deze opstelling vergemakkelijkt versnelde logboekanalyse, die actionable inzichten verstrekt om de implementaties van AEM te optimaliseren en veiligheidsbedreigingen zoals DOS aanvallen te verlichten.
 
-U kunt begonnen worden gebruikend [ Splunk dashboards voor de Analyse van het Logboek AEMCS CDN ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis) gids.
+U kunt begonnen worden gebruikend [&#x200B; Splunk dashboards voor de Analyse van het Logboek AEMCS CDN &#x200B;](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis) gids.
 
 
 ## ELK-integratie
 
-De [ stapel ELK ](https://www.elastic.co/elastic-stack), die Elasticsearch, Logstash, en Kibana omvat, is een andere krachtige optie voor logboekanalyse. Het is nuttig voor organisaties die geen toegang tot een opstelling van de Splunk of logboek het door:sturen mogelijkheden hebben. Het lokaal instellen van de ELK-stapel is eenvoudig, dankzij de gereedschapset kunt u snel aan de slag met het bestand Docker Compose. Vervolgens kunt u de vooraf gebouwde dashboards importeren en de CDN-logboeken invoeren die worden gedownload met de Adobe Cloud Manager.
+De [&#x200B; stapel ELK &#x200B;](https://www.elastic.co/elastic-stack), die Elasticsearch, Logstash, en Kibana omvat, is een andere krachtige optie voor logboekanalyse. Het is nuttig voor organisaties die geen toegang tot een opstelling van de Splunk of logboek het door:sturen mogelijkheden hebben. Het lokaal instellen van de ELK-stapel is eenvoudig, dankzij de gereedschapset kunt u snel aan de slag met het bestand Docker Compose. Vervolgens kunt u de vooraf gebouwde dashboards importeren en de CDN-logboeken invoeren die worden gedownload met de Adobe Cloud Manager.
 
-U kunt begonnen worden gebruikend de [ ELK container van het Dok voor de Analyse van het Logboek AEMCS CDN ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#elk-docker-container-for-aemcs-cdn-log-analysis) gids.
+U kunt begonnen worden gebruikend de [&#x200B; ELK container van het Dok voor de Analyse van het Logboek AEMCS CDN &#x200B;](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#elk-docker-container-for-aemcs-cdn-log-analysis) gids.

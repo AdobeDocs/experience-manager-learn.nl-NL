@@ -30,7 +30,7 @@ Met CORS (Cross-Origin Resource Sharing) van Adobe Experience Manager as a Cloud
 
 CORS is vereist voor browsergebaseerde verbindingen met AEM GraphQL API&#39;s, wanneer de client die verbinding maakt met AEM NIET vanuit dezelfde oorsprong (ook wel host of domein genoemd) wordt aangeboden als AEM.
 
-| Type client | [ Enige-pagina app (SPA) ](../spa.md) | [ Component/JS van het Web ](../web-component.md) | [ Mobiel ](../mobile.md) | [ server-aan-server ](../server-to-server.md) |
+| Type client | [&#x200B; Enige-pagina app (SPA) &#x200B;](../spa.md) | [&#x200B; Component/JS van het Web &#x200B;](../web-component.md) | [&#x200B; Mobiel &#x200B;](../mobile.md) | [&#x200B; server-aan-server &#x200B;](../server-to-server.md) |
 |----------------------------:|:---------------------:|:-------------:|:---------:|:----------------:|
 | Vereist configuratie CORS | ✔ | ✔ | ✘ | ✘ |
 
@@ -59,7 +59,7 @@ De belangrijkste configuratieeigenschappen zijn:
 + `supportedheaders` bevat `"Authorization"` omdat aanvragen aan AEM Author geautoriseerd moeten zijn.
 + `supportscredentials` wordt ingesteld op `true` als de aanvraag aan de AEM-auteur moet worden geautoriseerd.
 
-[ leer meer over de configuratie CORS OSGi.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+[&#x200B; leer meer over de configuratie CORS OSGi.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
 
 In het volgende voorbeeld wordt het gebruik van AEM GraphQL-query&#39;s op AEM Author ondersteund. Als u door de client gedefinieerde GraphQL-query&#39;s wilt gebruiken, voegt u een GraphQL-eindpunt-URL toe in `allowedpaths` en `POST` aan `supportedmethods` .
 
@@ -98,16 +98,16 @@ In het volgende voorbeeld wordt het gebruik van AEM GraphQL-query&#39;s op AEM A
 
 #### Voorbeeld OSGi-configuratie
 
-+ [ een voorbeeld van de configuratie OSGi kan in het project worden gevonden WKND.](https://github.com/adobe/aem-guides-wknd/blob/main/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author/com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql.cfg.json)
++ [&#x200B; een voorbeeld van de configuratie OSGi kan in het project worden gevonden WKND.](https://github.com/adobe/aem-guides-wknd/blob/main/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author/com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql.cfg.json)
 
 ## AEM Publiceren
 
-Het inschakelen van CORS op AEM-services voor publiceren (en voorvertonen) verschilt van de AEM Author-service. Voor AEM Publish Service is een AEM Dispatcher-configuratie vereist die moet worden toegevoegd aan de Dispatcher-configuratie van AEM Publish. AEM publiceert gebruikt geen [ configuratie OSGi ](#osgi-configuration).
+Het inschakelen van CORS op AEM-services voor publiceren (en voorvertonen) verschilt van de AEM Author-service. Voor AEM Publish Service is een AEM Dispatcher-configuratie vereist die moet worden toegevoegd aan de Dispatcher-configuratie van AEM Publish. AEM publiceert gebruikt geen [&#x200B; configuratie OSGi &#x200B;](#osgi-configuration).
 
 Bij het configureren van CORS bij AEM-publicatie moet u ervoor zorgen dat:
 
 + De header van de `Origin` HTTP-aanvraag kan niet naar de AEM Publish-service worden verzonden door de `Origin` header (indien eerder toegevoegd) te verwijderen uit het `clientheaders.any` -bestand van het AEM Dispatcher-project. Alle `Access-Control-` -koppen moeten uit het `clientheaders.any` -bestand worden verwijderd en Dispatcher beheert deze, niet de AEM-publicatieservice.
-+ Als u om het even welke [ configuraties CORS OSGi ](#osgi-configuration) hebt die op uw AEM worden toegelaten publiceer dienst, moet u hen verwijderen en hun configuraties aan de [ hieronder geschetste 2} Dispatcher gastheerconfiguratie migreren ](#set-cors-headers-in-vhost).
++ Als u om het even welke [&#x200B; configuraties CORS OSGi &#x200B;](#osgi-configuration) hebt die op uw AEM worden toegelaten publiceer dienst, moet u hen verwijderen en hun configuraties aan de [&#x200B; hieronder geschetste 2&rbrace; Dispatcher gastheerconfiguratie migreren &#x200B;](#set-cors-headers-in-vhost).
 
 ### Dispatcher-configuratie
 
@@ -198,4 +198,4 @@ De Dispatcher van de AEM-service Publiceren (en Voorvertoning) moet zo zijn geco
 
 #### Voorbeeld-Dispatcher-configuratie
 
-+ [ een voorbeeld van de configuratie van Dispatcher kan in het project worden gevonden WKND.](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost)
++ [&#x200B; een voorbeeld van de configuratie van Dispatcher kan in het project worden gevonden WKND.](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost)

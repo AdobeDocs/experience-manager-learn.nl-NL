@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Bewerkbare React componenten kunnen &quot;vast&quot;zijn, of hard-gecodeerd in de meningen van het KUUROORD. Dit staat ontwikkelaars toe om SPA Editor-compatibele componenten in de meningen van het KUUROORD te plaatsen, en gebruikers toe te staan om de inhoud van de componenten&#39; in de Redacteur van AEM te schrijven SPA.
 
-![ Vaste componenten ](./assets/spa-fixed-component/intro.png)
+![&#x200B; Vaste componenten &#x200B;](./assets/spa-fixed-component/intro.png)
 
 In dit hoofdstuk vervangen we de titel &#39;Huidige avonturen&#39; van de weergave Home. Dit is een vaste, maar bewerkbare titel in `Home.js` . Vaste componenten garanderen de plaatsing van de titel, maar staan ook toe dat de tekst van de titel wordt geschreven en dat de titel buiten de ontwikkelingscyclus wordt gewijzigd.
 
@@ -43,7 +43,7 @@ In de mening van het Huis van het KUUROORD, vervang de hard-gecodeerde tekst `<h
 
 1. Een aangepaste component Title React maken
 1. Decoreer de component van de Titel van de douane gebruikend methodes van `@adobe/aem-react-editable-components` om het editable te maken.
-1. Registreer de editable component van de Titel met `MapTo` zodat kan het in [ containercomponent later ](./spa-container-component.md) worden gebruikt.
+1. Registreer de editable component van de Titel met `MapTo` zodat kan het in [&#x200B; containercomponent later &#x200B;](./spa-container-component.md) worden gebruikt.
 
 Dit doet u als volgt:
 
@@ -164,7 +164,7 @@ Nu de component EditableTitle React is geregistreerd in en beschikbaar is voor g
 
 Het bestand `Home.js` moet er als volgt uitzien:
 
-![ Home.js ](./assets/spa-fixed-component/home-js-update.png)
+![&#x200B; Home.js &#x200B;](./assets/spa-fixed-component/home-js-update.png)
 
 ## De component Title in AEM ontwerpen
 
@@ -175,19 +175,19 @@ Het bestand `Home.js` moet er als volgt uitzien:
 1. Houd de muisaanwijzer boven de standaardtiteltekst onder het WKND-logo en boven de lijst met avonturen totdat de omtrek voor blauwe bewerking wordt weergegeven
 1. Tik om de actiebar van de component bloot te stellen, en dan de __moersleutel__ te ontsteken om uit te geven
 
-   ![ de componentenactiebar van de Titel ](./assets/spa-fixed-component/title-action-bar.png)
+   ![&#x200B; de componentenactiebar van de Titel &#x200B;](./assets/spa-fixed-component/title-action-bar.png)
 
 1. Auteur van de component Title:
    1. Titel: __WKND avonturen__
    1. Type/Grootte: __H2__
 
-      ![ de componentendialoog van de Titel ](./assets/spa-fixed-component/title-dialog.png)
+      ![&#x200B; de componentendialoog van de Titel &#x200B;](./assets/spa-fixed-component/title-dialog.png)
 
 1. Tik __Gedaan__ om te bewaren
 1. Voorvertoning van uw wijzigingen weergeven in de AEM SPA Editor
-1. Vernieuw de WKND App die plaatselijk op [ http://localhost :3000 ](http://localhost:3000) loopt en zie de authored onmiddellijk weerspiegelde titelveranderingen.
+1. Vernieuw de WKND App die plaatselijk op [&#x200B; http://localhost :3000 &#x200B;](http://localhost:3000) loopt en zie de authored onmiddellijk weerspiegelde titelveranderingen.
 
-   ![ component van de Titel in KUUUROORD ](./assets/spa-fixed-component/title-final.png)
+   ![&#x200B; component van de Titel in KUUUROORD &#x200B;](./assets/spa-fixed-component/title-final.png)
 
 ## Gefeliciteerd!
 
@@ -199,4 +199,4 @@ U hebt een vaste, bewerkbare component toegevoegd aan de WKND-app! Nu weet u hoe
 
 ## Volgende stappen
 
-De volgende stappen moeten [ een de containercomponent van AEM ResponsiveGrid ](./spa-container-component.md) aan het KUUROORD toevoegen die auteur toestaat om en editable componenten aan het KUUROORD toe te voegen!
+De volgende stappen moeten [&#x200B; een de containercomponent van AEM ResponsiveGrid &#x200B;](./spa-container-component.md) aan het KUUROORD toevoegen die auteur toestaat om en editable componenten aan het KUUROORD toe te voegen!

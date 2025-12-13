@@ -47,7 +47,7 @@ Samengevat, zodra alle milieu&#39;s van AEM as a Cloud Service provisioned zijn,
 
 ### Door Adobe beheerde CDN versus door klant beheerde CDN
 
-AEM as a Cloud Service is geïntegreerd met een door Adobe beheerde Content Delivery Network (CDN) om de latentie te verminderen en de prestaties van de website te verbeteren. CDN met Adobe-beheer wordt automatisch ingeschakeld voor alle omgevingen. Zie [ AEM as a Cloud Service caching ](../caching/overview.md) voor meer details.
+AEM as a Cloud Service is geïntegreerd met een door Adobe beheerde Content Delivery Network (CDN) om de latentie te verminderen en de prestaties van de website te verbeteren. CDN met Adobe-beheer wordt automatisch ingeschakeld voor alle omgevingen. Zie [&#x200B; AEM as a Cloud Service caching &#x200B;](../caching/overview.md) voor meer details.
 
 Nochtans, kunnen de klanten hun eigen CDN ook gebruiken, die als **wordt bedoeld klant-geleide CDN**. Het is niet noodzakelijk maar weinig klanten gebruiken het voor collectieve beleid of andere redenen. In dit geval is de klant verantwoordelijk voor het beheer van de CDN-configuraties en -instellingen.
 
@@ -69,7 +69,7 @@ Typisch, gebruiken de klanten een naam van het douanedomein voor de milieu&#39;s
 
 Om domeinnamen uit te voeren gebruikend Adobe-geleide CDN of klant-beheerde CDN de volgende stroomdiagramgidsen u door het proces:
 
-![ Stroomschema van het Beheer van de Naam van het Domein ](./assets/domain-name-management-flowchart.png){width="800" zoomable="yes"}
+![&#x200B; Stroomschema van het Beheer van de Naam van het Domein &#x200B;](./assets/domain-name-management-flowchart.png){width="800" zoomable="yes"}
 
 In de volgende tabel vindt u ook een overzicht van de locaties waarop u de specifieke configuraties kunt beheren:
 

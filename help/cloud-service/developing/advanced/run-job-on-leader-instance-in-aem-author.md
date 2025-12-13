@@ -25,7 +25,7 @@ Leer hoe u een taak uitvoert op de instantie leader in de AEM Author-service als
 
 Het verkopen van Banen zijn asynchrone taken die op de achtergrond werken, die worden ontworpen om systeem of gebruiker-teweeggebrachte gebeurtenissen te behandelen. Deze taken worden standaard gelijkmatig over alle instanties (pods) in de cluster verdeeld.
 
-Voor meer informatie, zie [ Apache die Gebeurtenis en de Behandeling van de Baan {](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) schikt.
+Voor meer informatie, zie [&#x200B; Apache die Gebeurtenis en de Behandeling van de Baan &lbrace;](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) schikt.
 
 ## Taken maken en verwerken
 
@@ -80,7 +80,7 @@ public class SimpleJobCreaterImpl {
 De belangrijkste punten in de bovenstaande code zijn:
 
 - De taaklading heeft twee eigenschappen: `action` en `message` .
-- Gebruikend de [ methode van JobManager ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/apache/sling/event/jobs/JobManager.html) `addJob(...)`, wordt de baan toegevoegd aan het onderwerp `wknd/simple/job/topic`.
+- Gebruikend de [&#x200B; methode van JobManager &#x200B;](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/apache/sling/event/jobs/JobManager.html) `addJob(...)`, wordt de baan toegevoegd aan het onderwerp `wknd/simple/job/topic`.
 
 ### Een taak verwerken
 
@@ -134,11 +134,11 @@ De taak wordt uitgevoerd op elke instantie van AEM Auteur (pod) omdat de `wknd/s
 
 Dit is vaak problematisch als de baan voor het veranderen van staat, zoals het creëren van of het bijwerken van middelen of externe diensten verantwoordelijk is.
 
-Als u de baan slechts één keer op de dienst van de Auteur van AEM wilt lopen, voeg de [ configuratie van de baanrij ](#how-to-run-a-job-on-the-leader-instance) toe hieronder beschreven.
+Als u de baan slechts één keer op de dienst van de Auteur van AEM wilt lopen, voeg de [&#x200B; configuratie van de baanrij &#x200B;](#how-to-run-a-job-on-the-leader-instance) toe hieronder beschreven.
 
-U kunt het verifiëren door de logboeken van de dienst van de Auteur van AEM in [ Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager) te herzien.
+U kunt het verifiëren door de logboeken van de dienst van de Auteur van AEM in [&#x200B; Cloud Manager &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager) te herzien.
 
-![ Baan die door alle instanties wordt verwerkt ](./assets/run-job-once/job-processed-by-all-instances.png)
+![&#x200B; Baan die door alle instanties wordt verwerkt &#x200B;](./assets/run-job-once/job-processed-by-all-instances.png)
 
 
 U zou moeten zien:
@@ -155,7 +155,7 @@ Er zijn twee logitems, één voor elke AEM Auteur-instantie (`68775db964-nxxcx` 
 
 ## Een taak uitvoeren op de leaderinstantie
 
-Om een baan _in werking te stellen slechts eenmaal_ op de dienst van de Auteur van AEM, creeer een nieuwe het Verdelen baanrij van het type **** wordt bevolen, en associeer uw baanonderwerp (`wknd/simple/job/topic`) met deze rij. Met deze configuratie kan alleen de AEM Author-instantie (pod) voor leader de taak verwerken.
+Om een baan _in werking te stellen slechts eenmaal_ op de dienst van de Auteur van AEM, creeer een nieuwe het Verdelen baanrij van het type **&#x200B;**&#x200B;wordt bevolen, en associeer uw baanonderwerp (`wknd/simple/job/topic`) met deze rij. Met deze configuratie kan alleen de AEM Author-instantie (pod) voor leader de taak verwerken.
 
 Maak in de module `ui.config` van uw AEM-project een OSGi-configuratiebestand ( `org.apache.sling.event.jobs.QueueConfiguration~wknd.cfg.json` ) en sla dit op in de map `ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author` .
 

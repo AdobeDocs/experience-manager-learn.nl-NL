@@ -28,21 +28,21 @@ Leer hoe te om ModSecurity toe te laten om uw plaats tegen Ontkenning van de aan
 
 ## Overzicht
 
-De [ Open stichting van de Veiligheid Project® van de Toepassing van het Web (OWASP) ](https://owasp.org/) verstrekt de [**Hoogste 10 van OWASP** ](https://owasp.org/www-project-top-ten/) schetterend de tien meest kritieke veiligheidszorgen voor Webtoepassingen.
+De [&#x200B; Open stichting van de Veiligheid Project® van de Toepassing van het Web (OWASP) &#x200B;](https://owasp.org/) verstrekt de [**Hoogste 10 van OWASP** &#x200B;](https://owasp.org/www-project-top-ten/) schetterend de tien meest kritieke veiligheidszorgen voor Webtoepassingen.
 
 ModSecurity is een open-source oplossing voor meerdere platforms die bescherming biedt tegen een reeks aanvallen op webtoepassingen. Het staat ook voor het verkeer van HTTP controle, registreren, en analyse in real time toe.
 
-OWSAP® verstrekt ook de [ Reeks van de Regel van de Kern OWASP® ModSecurity (CRS) ](https://github.com/coreruleset/coreruleset). CRS is een reeks generische **aanvalsopsporing** regels voor gebruik met ModSecurity. CRS is er dus op gericht webtoepassingen te beschermen tegen een breed scala van aanvallen, waaronder de Top Ten van OWASP, met een minimum aan foute waarschuwingen.
+OWSAP® verstrekt ook de [&#x200B; Reeks van de Regel van de Kern OWASP® ModSecurity (CRS) &#x200B;](https://github.com/coreruleset/coreruleset). CRS is een reeks generische **aanvalsopsporing** regels voor gebruik met ModSecurity. CRS is er dus op gericht webtoepassingen te beschermen tegen een breed scala van aanvallen, waaronder de Top Ten van OWASP, met een minimum aan foute waarschuwingen.
 
 Dit leerprogramma toont aan hoe te om **DOS-BESCHERMING** regel van CRS toe te laten en te vormen om uw plaats tegen een potentiële aanval van Dos te beschermen.
 
 >[!TIP]
 >
->Het is belangrijk om nota te nemen, voldoet AEM as a Cloud Service [ beheerde CDN ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) aan de prestaties en de veiligheidsvereisten van de meeste klant. Nochtans, verstrekt ModSecurity een extra laag van veiligheid en staat klant-specifieke regels, en configuraties toe.
+>Het is belangrijk om nota te nemen, voldoet AEM as a Cloud Service [&#x200B; beheerde CDN &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) aan de prestaties en de veiligheidsvereisten van de meeste klant. Nochtans, verstrekt ModSecurity een extra laag van veiligheid en staat klant-specifieke regels, en configuraties toe.
 
 ## CRS toevoegen aan Dispatcher-projectmodule
 
-1. De download en haalt [ recentste Reeks van de Regel van de Kern van OWASP ModSecurity ](https://github.com/coreruleset/coreruleset/releases).
+1. De download en haalt [&#x200B; recentste Reeks van de Regel van de Kern van OWASP ModSecurity &#x200B;](https://github.com/coreruleset/coreruleset/releases).
 
    ```shell
    # Replace the X.Y.Z with relevent version numbers.
@@ -55,9 +55,9 @@ Dit leerprogramma toont aan hoe te om **DOS-BESCHERMING** regel van CRS toe te l
    $ tar -xvzf coreruleset-3.3.5.tar.gz
    ```
 
-1. Maak de `modsec/crs` mappen in `dispatcher/src/conf.d/` in de code van uw AEM-project. Bijvoorbeeld, in het lokale exemplaar van het [ project van de Plaatsen van AEM WKND ](https://github.com/adobe/aem-guides-wknd).
+1. Maak de `modsec/crs` mappen in `dispatcher/src/conf.d/` in de code van uw AEM-project. Bijvoorbeeld, in het lokale exemplaar van het [&#x200B; project van de Plaatsen van AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd).
 
-   ![ omslag CRS binnen het projectcode van AEM - ModSecurity ](assets/modsecurity-crs/crs-folder-in-aem-dispatcher-module.png){width="200" zoomable="yes"}
+   ![&#x200B; omslag CRS binnen het projectcode van AEM - ModSecurity &#x200B;](assets/modsecurity-crs/crs-folder-in-aem-dispatcher-module.png){width="200" zoomable="yes"}
 
 1. Kopieer de map `coreruleset-X.Y.Z/rules` van het gedownloade CRS-releasepakket naar de map `dispatcher/src/conf.d/modsec/crs` .
 1. Kopieer het `coreruleset-X.Y.Z/crs-setup.conf.example` -bestand van het gedownloade CRS-releasepakket naar de `dispatcher/src/conf.d/modsec/crs` -map en geef het bestand een andere naam in `crs-setup.conf` .
@@ -73,7 +73,7 @@ Dit leerprogramma toont aan hoe te om **DOS-BESCHERMING** regel van CRS toe te l
 
    Zie anders genoemd regels CRS en configuratiedossier in de WKND projectcode.
 
-   ![ Gehandicapte regels CRS binnen het projectcode van AEM - ModSecurity ](assets/modsecurity-crs/disabled-crs-rules.png){width="200" zoomable="yes"}
+   ![&#x200B; Gehandicapte regels CRS binnen het projectcode van AEM - ModSecurity &#x200B;](assets/modsecurity-crs/disabled-crs-rules.png){width="200" zoomable="yes"}
 
 ## De de beschermingsregel van de Ontkenning van de Dienst (Dos) toelaten en vormen
 
@@ -224,11 +224,11 @@ Voer de volgende stappen uit om ModSecurity (ook wel `mod_security` Apache-modul
    </VirtualHost>
    ```
 
-Al bovengenoemde _CRS ModSecurity_ en _DOS-BESCHERMING_ configuraties zijn beschikbaar op de 4} tutorial/enable-modsecurity-crs-bescherming van het Project van de Plaatsen van AEM WKND [ tak voor uw overzicht.](https://github.com/adobe/aem-guides-wknd/tree/tutorial/enable-modsecurity-crs-dos-protection)
+Al bovengenoemde _CRS ModSecurity_ en _DOS-BESCHERMING_ configuraties zijn beschikbaar op de 4&rbrace; tutorial/enable-modsecurity-crs-bescherming van het Project van de Plaatsen van AEM WKND [&#x200B; tak voor uw overzicht.](https://github.com/adobe/aem-guides-wknd/tree/tutorial/enable-modsecurity-crs-dos-protection)
 
 ### Dispatcher-configuratie valideren
 
-Wanneer het werken met AEM as a Cloud Service, alvorens uw _configuratie van Dispatcher_ veranderingen op te stellen, wordt het geadviseerd om hen plaatselijk te bevestigen gebruikend `validate` manuscript van [ AEM SDK Dispatcher Tools ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html).
+Wanneer het werken met AEM as a Cloud Service, alvorens uw _configuratie van Dispatcher_ veranderingen op te stellen, wordt het geadviseerd om hen plaatselijk te bevestigen gebruikend `validate` manuscript van [&#x200B; AEM SDK Dispatcher Tools &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html).
 
 ```
 # Go inside Dispatcher SDK 'bin' directory
@@ -240,41 +240,41 @@ $ ./validate.sh <YOUR-AEM-PROJECT-CODE-DIR>/dispatcher/src
 
 ## Implementeren
 
-Stel de plaatselijk bevestigde configuraties van Dispatcher op gebruikend de Cloud Manager [ Rij van het Web ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?#web-tier-config) of [ Volledige pijpleiding van de Stapel ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?#full-stack-code). U kunt het [ Snelle Milieu van de Ontwikkeling ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html) voor snellere het doorgeven tijd ook gebruiken.
+Stel de plaatselijk bevestigde configuraties van Dispatcher op gebruikend de Cloud Manager [&#x200B; Rij van het Web &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?#web-tier-config) of [&#x200B; Volledige pijpleiding van de Stapel &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?#full-stack-code). U kunt het [&#x200B; Snelle Milieu van de Ontwikkeling &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html) voor snellere het doorgeven tijd ook gebruiken.
 
 ## Verifiëren
 
-Om de bescherming van Dos, in dit voorbeeld te verifiëren, verzenden meer dan 50 verzoeken (25 verzoekdrempel keer twee voorkomen) binnen een spanwijdte van 60 seconden. Nochtans, zouden deze verzoeken door AEM as a Cloud Service [ moeten overgaan ingebouwd ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) of om het even welk [ andere CDN ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?#point-to-point-CDN) die uw website vooraf gaat.
+Om de bescherming van Dos, in dit voorbeeld te verifiëren, verzenden meer dan 50 verzoeken (25 verzoekdrempel keer twee voorkomen) binnen een spanwijdte van 60 seconden. Nochtans, zouden deze verzoeken door AEM as a Cloud Service [&#x200B; moeten overgaan ingebouwd &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) of om het even welk [&#x200B; andere CDN &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?#point-to-point-CDN) die uw website vooraf gaat.
 
 Één techniek om CDN over:geven-door te bereiken moet een vraagparameter met a **nieuwe willekeurige waarde op elk verzoek van de plaatspagina toevoegen**.
 
-Om een groter aantal verzoeken (50 of meer) binnen een korte periode (als 60 seconden) teweeg te brengen, kan Apache [ JMeter ](https://jmeter.apache.org/) of [ Benchmark of het hulpmiddel van Ab ](https://httpd.apache.org/docs/2.4/programs/ab.html) worden gebruikt.
+Om een groter aantal verzoeken (50 of meer) binnen een korte periode (als 60 seconden) teweeg te brengen, kan Apache [&#x200B; JMeter &#x200B;](https://jmeter.apache.org/) of [&#x200B; Benchmark of het hulpmiddel van Ab &#x200B;](https://httpd.apache.org/docs/2.4/programs/ab.html) worden gebruikt.
 
 ### DoS-aanval simuleren met JMeter-script
 
 Volg de onderstaande stappen om een DoS-aanval met JMeter te simuleren:
 
-1. [ download Apache JMeter ](https://jmeter.apache.org/download_jmeter.cgi) en [ installeer ](https://jmeter.apache.org/usermanual/get-started.html#install) het plaatselijk
-1. [ Looppas ](https://jmeter.apache.org/usermanual/get-started.html#running) het plaatselijk gebruikend het `jmeter` manuscript van de `<JMETER-INSTALL-DIR>/bin` folder.
-1. Open het steekproef [ WKND-DoS-Attack-Simulation-Test ](assets/modsecurity-crs/WKND-DoS-Attack-Simulation-Test.jmx) JMX manuscript in JMeter gebruikend het **Open** hulpmiddelmenu.
+1. [&#x200B; download Apache JMeter &#x200B;](https://jmeter.apache.org/download_jmeter.cgi) en [&#x200B; installeer &#x200B;](https://jmeter.apache.org/usermanual/get-started.html#install) het plaatselijk
+1. [&#x200B; Looppas &#x200B;](https://jmeter.apache.org/usermanual/get-started.html#running) het plaatselijk gebruikend het `jmeter` manuscript van de `<JMETER-INSTALL-DIR>/bin` folder.
+1. Open het steekproef [&#x200B; WKND-DoS-Attack-Simulation-Test &#x200B;](assets/modsecurity-crs/WKND-DoS-Attack-Simulation-Test.jmx) JMX manuscript in JMeter gebruikend het **Open** hulpmiddelmenu.
 
-   ![ open steekproefWKND JMX van de Test JMX- ModSecurity ](assets/modsecurity-crs/open-wknd-dos-attack-jmx-test-script.png)
+   ![&#x200B; open steekproefWKND JMX van de Test JMX- ModSecurity &#x200B;](assets/modsecurity-crs/open-wknd-dos-attack-jmx-test-script.png)
 
 1. Werk de **Naam van de Server of IP** gebiedswaarde in _de Pagina van het Huis_ en _de monsternemer van het Verzoek van de Pagina van het avontuur_ HTTP bij die uw milieu URL van de testAEM aanpassen. Bekijk andere details van het JMeter-voorbeeldscript.
 
-   ![ HTTP- Verzoek JMetere van de Naam van de Server van AEM - ModSecurity ](assets/modsecurity-crs/aem-server-name-http-request.png)
+   ![&#x200B; HTTP- Verzoek JMetere van de Naam van de Server van AEM - ModSecurity &#x200B;](assets/modsecurity-crs/aem-server-name-http-request.png)
 
 1. Voer het manuscript uit door de **knoop van het Begin** van het hulpmiddelmenu te drukken. Het manuscript verzendt 50 HTTP- verzoeken (5 gebruikers en 10 lijnaantallen) tegen de WebND- plaats _Pagina van het Huis_ en _Pagina van het avontuur_. Aldus een totaal van 100 verzoeken aan niet-statische dossiers, kwalificeert het de aanval van Dos per **DOS-BESCHERMING** de regeldouaneconfiguratie van CRS.
 
-   ![ voert Manuscript JMeter uit - ModSecurity ](assets/modsecurity-crs/execute-jmeter-script.png)
+   ![&#x200B; voert Manuscript JMeter uit - ModSecurity &#x200B;](assets/modsecurity-crs/execute-jmeter-script.png)
 
 1. De **Resultaten van de Mening in Lijst** JMeter luisteraar toont **Ontbroken** reactiestatus voor verzoekaantal ~ 53 en verder.
 
-   ![ Ontbroken Reactie in Resultaten van de Mening in Lijst JMeter - ModSecurity ](assets/modsecurity-crs/failed-response-jmeter.png)
+   ![&#x200B; Ontbroken Reactie in Resultaten van de Mening in Lijst JMeter - ModSecurity &#x200B;](assets/modsecurity-crs/failed-response-jmeter.png)
 
 1. De **503 code van de Reactie van HTTP** is teruggekeerd voor de ontbroken verzoeken, kunt u de details bekijken gebruikend de **boom van de Resultaten van de Mening** JMeter luisteraar.
 
-   ![ 503 Reactie JMeter - ModSecurity ](assets/modsecurity-crs/503-response-jmeter.png)
+   ![&#x200B; 503 Reactie JMeter - ModSecurity &#x200B;](assets/modsecurity-crs/503-response-jmeter.png)
 
 ### Revisielogboeken
 

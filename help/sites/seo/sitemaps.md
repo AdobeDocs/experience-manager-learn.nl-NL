@@ -25,7 +25,7 @@ Leer hoe u uw SEO kunt verhogen door sitemaps voor AEM Sites te maken.
 
 >[!WARNING]
 >
->Deze video demonstreert het gebruik van relatieve URL&#39;s in de sitemap. Sitemaps [ zou absolute URLs ](https://sitemaps.org/protocol.html) moeten gebruiken. Zie [ Configuraties ](#absolute-sitemap-urls) voor hoe te om absolute URLs toe te laten, aangezien dit niet in de video hieronder wordt behandeld.
+>Deze video demonstreert het gebruik van relatieve URL&#39;s in de sitemap. Sitemaps [&#x200B; zou absolute URLs &#x200B;](https://sitemaps.org/protocol.html) moeten gebruiken. Zie [&#x200B; Configuraties &#x200B;](#absolute-sitemap-urls) voor hoe te om absolute URLs toe te laten, aangezien dit niet in de video hieronder wordt behandeld.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
 
@@ -33,7 +33,7 @@ Leer hoe u uw SEO kunt verhogen door sitemaps voor AEM Sites te maken.
 
 ### Absolute sitemap-URL&#39;s{#absolute-sitemap-urls}
 
-De sitemap van AEM steunt absolute URL&#39;s door [ het Verdelen afbeelding ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) te gebruiken. Dit gebeurt door toewijzingsknooppunten te maken op de AEM-services die sitemaps genereren (doorgaans de AEM-publicatieservice).
+De sitemap van AEM steunt absolute URL&#39;s door [&#x200B; het Verdelen afbeelding &#x200B;](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) te gebruiken. Dit gebeurt door toewijzingsknooppunten te maken op de AEM-services die sitemaps genereren (doorgaans de AEM-publicatieservice).
 
 Een voorbeelddefinitie van het toewijzingsknooppunt voor `https://wknd.com` kan onder `/etc/map/https` als volgt worden gedefinieerd:
 
@@ -45,12 +45,12 @@ Een voorbeelddefinitie van het toewijzingsknooppunt voor `https://wknd.com` kan 
 
 De onderstaande schermafbeelding illustreert een vergelijkbare configuratie, maar voor `http://wknd.local` (een lokale hostnaamtoewijzing die wordt uitgevoerd op `http` ).
 
-![ Sitemap absolute configuratie URLs ](../assets/sitemaps/sitemaps-absolute-urls.jpg)
+![&#x200B; Sitemap absolute configuratie URLs &#x200B;](../assets/sitemaps/sitemaps-absolute-urls.jpg)
 
 
 ### OSGi-configuratie Sitemap-planner
 
-Bepaalt de [ OSGi fabrieksconfiguratie ](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) voor de frequentie (gebruikend [ cron uitdrukkingen ](https://cron.help/)) sitemaps wordt re/geproduceerd en in het voorgeheugen ondergebracht in AEM.
+Bepaalt de [&#x200B; OSGi fabrieksconfiguratie &#x200B;](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) voor de frequentie (gebruikend [&#x200B; cron uitdrukkingen &#x200B;](https://cron.help/)) sitemaps wordt re/geproduceerd en in het voorgeheugen ondergebracht in AEM.
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.author`
 
@@ -89,8 +89,8 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## Bronnen
 
-+ [ de Documentatie van AEM Sitemap ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
-+ [ Apache Sling Sitemap documentatie ](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
-+ [ Sitemap.org de documentatie van de Sitemap ](https://www.sitemaps.org/protocol.html)
-+ [ Sitemap.org de documentatie van het de indexdossier van de Sitemap ](https://www.sitemaps.org/protocol.html#index)
-+ [ Helper van het Gewas ](https://cron.help/)
++ [&#x200B; de Documentatie van AEM Sitemap &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
++ [&#x200B; Apache Sling Sitemap documentatie &#x200B;](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
++ [&#x200B; Sitemap.org de documentatie van de Sitemap &#x200B;](https://www.sitemaps.org/protocol.html)
++ [&#x200B; Sitemap.org de documentatie van het de indexdossier van de Sitemap &#x200B;](https://www.sitemaps.org/protocol.html#index)
++ [&#x200B; Helper van het Gewas &#x200B;](https://cron.help/)

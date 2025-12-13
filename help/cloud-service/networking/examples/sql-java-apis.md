@@ -21,21 +21,21 @@ ht-degree: 0%
 
 Verbindingen met SQL-databases (en andere niet-HTTP/HTTPS-services) moeten vanuit AEM worden uitgebreid.
 
-De uitzondering op deze regel is wanneer [ specifiek adres van de uitgang ip ](../dedicated-egress-ip-address.md) in gebruik is, en de dienst op Adobe of Azure is.
+De uitzondering op deze regel is wanneer [&#x200B; specifiek adres van de uitgang ip &#x200B;](../dedicated-egress-ip-address.md) in gebruik is, en de dienst op Adobe of Azure is.
 
 ## Geavanceerde netwerkondersteuning
 
 Het volgende codevoorbeeld wordt gesteund door de volgende geavanceerde voorzien van een netwerkopties.
 
-Verzeker [ aangewezen ](../advanced-networking.md#advanced-networking) geavanceerde voorzien van een netwerkconfiguratie voorafgaand aan het volgen van dit leerprogramma is opstelling.
+Verzeker [&#x200B; aangewezen &#x200B;](../advanced-networking.md#advanced-networking) geavanceerde voorzien van een netwerkconfiguratie voorafgaand aan het volgen van dit leerprogramma is opstelling.
 
-| Geen geavanceerde netwerken | [ Flexibele havenuitgang ](../flexible-port-egress.md) | [ Dedicated egress IP adres ](../dedicated-egress-ip-address.md) | [ Virtueel Privé Netwerk ](../vpn.md) |
+| Geen geavanceerde netwerken | [&#x200B; Flexibele havenuitgang &#x200B;](../flexible-port-egress.md) | [&#x200B; Dedicated egress IP adres &#x200B;](../dedicated-egress-ip-address.md) | [&#x200B; Virtueel Privé Netwerk &#x200B;](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✔ | ✔ | ✔ |
 
 ## OSGi-configuratie
 
-Aangezien de geheimen niet in code moeten worden opgeslagen, zijn de SQL gebruikersbenaming en het wachtwoord van de verbinding best verstrekt via [ geheime OSGi configuratievariabelen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), plaats gebruikend AIO CLI, of Cloud Manager APIs.
+Aangezien de geheimen niet in code moeten worden opgeslagen, zijn de SQL gebruikersbenaming en het wachtwoord van de verbinding best verstrekt via [&#x200B; geheime OSGi configuratievariabelen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), plaats gebruikend AIO CLI, of Cloud Manager APIs.
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/com.adobe.aem.wknd.examples.core.connections.impl.MySqlExternalServiceImpl.cfg.json`
 
@@ -54,7 +54,7 @@ $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONME
 
 ## Codevoorbeeld
 
-Dit Java™ codevoorbeeld is van de dienst OSGi die een verbinding met een externe SQL serverWebserver, als volgende Cloud Manager `portForwards` regel van de [ enableEnvironmentAdvancedNetworkingConfiguration ](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) verrichting maakt.
+Dit Java™ codevoorbeeld is van de dienst OSGi die een verbinding met een externe SQL serverWebserver, als volgende Cloud Manager `portForwards` regel van de [&#x200B; enableEnvironmentAdvancedNetworkingConfiguration &#x200B;](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) verrichting maakt.
 
 ```json
 ...

@@ -29,15 +29,15 @@ De volgende plaatsingsconfiguratie moet op zijn plaats voor server-aan-server to
 
 | Server-naar-server toepassing verbindt met → | AEM-auteur | AEM Publiceren | AEM Preview |
 |---------------------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [ de filters van Dispatcher ](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [&#x200B; de filters van Dispatcher &#x200B;](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Delen van bronnen van oorsprong (CORS) | ✘ | ✘ | ✘ |
-| [ de gastheren van AEM ](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| [&#x200B; de gastheren van AEM &#x200B;](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Vergunningsvereisten
 
-Erkende verzoeken aan AEM GraphQL APIs voorkomen zij typisch in de context van server-aan-server apps, aangezien andere app types, zoals [ single-page apps ](./spa.md), [ mobiele ](./mobile.md), of [ Componenten van het Web ](./web-component.md), typisch vergunning gebruiken aangezien het moeilijk is om de geloofsbrieven te beveiligen.
+Erkende verzoeken aan AEM GraphQL APIs voorkomen zij typisch in de context van server-aan-server apps, aangezien andere app types, zoals [&#x200B; single-page apps &#x200B;](./spa.md), [&#x200B; mobiele &#x200B;](./mobile.md), of [&#x200B; Componenten van het Web &#x200B;](./web-component.md), typisch vergunning gebruiken aangezien het moeilijk is om de geloofsbrieven te beveiligen.
 
-Wanneer het autoriseren van verzoeken aan AEM as a Cloud Service, gebruik [ de dienst op geloofsbrieven-gebaseerde symbolische authentificatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html). Meer over het voor authentiek verklaren van verzoeken aan AEM as a Cloud Service leren, herzie het [ op teken-gebaseerde authentificatieleerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html). Het leerprogramma verkent op teken-gebaseerde authentificatie gebruikend [ AEM Assets HTTP APIs ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html) maar de zelfde concepten en de benaderingen zijn van toepassing op apps die met AEM Headless GraphQL APIs in wisselwerking staan.
+Wanneer het autoriseren van verzoeken aan AEM as a Cloud Service, gebruik [&#x200B; de dienst op geloofsbrieven-gebaseerde symbolische authentificatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html). Meer over het voor authentiek verklaren van verzoeken aan AEM as a Cloud Service leren, herzie het [&#x200B; op teken-gebaseerde authentificatieleerprogramma &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html). Het leerprogramma verkent op teken-gebaseerde authentificatie gebruikend [&#x200B; AEM Assets HTTP APIs &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html) maar de zelfde concepten en de benaderingen zijn van toepassing op apps die met AEM Headless GraphQL APIs in wisselwerking staan.
 
 ## Voorbeeld van een server-naar-server-app
 

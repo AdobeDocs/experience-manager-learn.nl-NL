@@ -27,7 +27,7 @@ We zullen de meest gangbare topologieën schetsen en de voordelen beschrijven en
 
 In de begindagen was het aantal potentiële bezoekers klein, was de hardware duur en werden de webservers niet zo kritisch gezien als vandaag de dag. Een algemene instelling zou zijn dat één Dispatcher fungeert als taakverdelingsmechanisme en dat cachegeheugen wordt gebruikt voor twee of meer publicatiesystemen. De Apache-server in de kern van de Dispatcher was zeer stabiel en - in de meeste gevallen - in staat om een behoorlijke hoeveelheid verzoeken te doen.
 
-![ &quot;Verouderd&quot;Dispatcher Opstelling - niet zeer algemeen door de normen van vandaag ](assets/chapter-2/legacy-dispatcher-setup.png)
+![&#x200B; &quot;Verouderd&quot;Dispatcher Opstelling - niet zeer algemeen door de normen van vandaag &#x200B;](assets/chapter-2/legacy-dispatcher-setup.png)
 
 *&quot;Verouderd&quot;Dispatcher Opstelling - niet zeer algemeen door de normen van vandaag*
 
@@ -39,7 +39,7 @@ Dit is waar de verzender zijn naam van ontving: Het was eigenlijk verzendend ver
 
 Vandaag is een lichtjes verschillende topologie gemeenschappelijker. Een topologie met meerdere poten zou één Dispatcher per publicatieserver hebben. Een speciaal taakverdelingsmechanisme (hardware) bevindt zich vóór de AEM-infrastructuur en verzendt de aanvragen naar deze twee (of meer) onderdelen:
 
-![ Moderne &quot;Standaard&quot;Opstelling van Dispatcher - Gemakkelijk te behandelen en te handhaven ](assets/chapter-2/modern-standard-dispatcher-setup.png)
+![&#x200B; Moderne &quot;Standaard&quot;Opstelling van Dispatcher - Gemakkelijk te behandelen en te handhaven &#x200B;](assets/chapter-2/modern-standard-dispatcher-setup.png)
 
 *Moderne &quot;Standaard&quot;Opstelling van Dispatcher - Gemakkelijk te behandelen en te handhaven*
 
@@ -61,7 +61,7 @@ Hier zijn de redenen voor dit soort opstelling,
 
 Apache-servers zijn goedkoop en eenvoudig in te richten. Duw daarom niet dat niveau iets verder uit te breiden. Waarom hebben twee of meer Dispatchers niet vóór elke publicatieserver?
 
-![ &quot;Schaal uit&quot;Opstelling - heeft sommige toepassingsgebieden maar ook beperkingen en beveats ](assets/chapter-2/scale-out-setup.png)
+![&#x200B; &quot;Schaal uit&quot;Opstelling - heeft sommige toepassingsgebieden maar ook beperkingen en beveats &#x200B;](assets/chapter-2/scale-out-setup.png)
 
 *&quot;Schaal uit&quot;Opstelling - heeft sommige toepassingsgebieden maar ook beperkingen en beveats*
 
@@ -73,7 +73,7 @@ Dat kunt u absoluut doen! En er zijn veel geldige toepassingsscenario&#39;s voor
 
 Elk publicatiesysteem is verbonden met een groot aantal verzenders. Elke verzender moet ongeldig worden gemaakt wanneer de inhoud is gewijzigd.
 
-####  Onderhoud
+#### Onderhoud
 
 Het spreekt vanzelf dat de eerste configuratie van de Dispatcher- en Publish-systemen wat complexer is. Maar houd ook in mening dat de inspanning van een &quot;het rollen&quot;versie ook een beetje hoger is. AEM-systemen kunnen en moeten worden bijgewerkt tijdens de uitvoering. Maar het is verstandig om dat niet te doen terwijl ze actief verzoeken indienen. Meestal wilt u slechts een deel van de publicatiesystemen bijwerken - terwijl de andere nog actief verkeer en dan - na het testen - overschakelen naar het andere deel bedienen. Als u geluk hebt en u tot lading-stabilisator in uw plaatsingsproces kunt toegang hebben, kunt u het verpletteren aan de servers onbruikbaar maken onder onderhoud hier. Als u zich op een gedeeld taakverdelingsmechanisme zonder directe toegang bevindt, sluit u liever de verzenders van de Publish die u wilt bijwerken. Hoe meer er is, hoe meer je moet sluiten. Als er een groot aantal is en u regelmatig updates plant, wordt een zekere automatisering geadviseerd. Als u geen automatiseringsgereedschappen hebt, is schalen toch een slecht idee.
 
@@ -95,11 +95,11 @@ Zelfs in een lokaal datacenter heeft een &quot;schaal uit&quot;topologie die vee
 
 #### Beperkingen van de Topologie van de Schaal uit
 
-Het toevoegen van proxyservers zou normaal de prestaties moeten verhogen. Er zijn echter scenario&#39;s waarin het toevoegen van servers de prestaties kan verminderen. Hoe? Neem bijvoorbeeld een nieuwsportal, waar u elke minuut nieuwe artikelen en pagina&#39;s introduceert. Een Dispatcher maakt de validatie ongedaan door &quot;automatisch annuleren&quot;: wanneer een pagina wordt gepubliceerd, worden alle pagina&#39;s in de cache op dezelfde site ongeldig gemaakt. Dit is een nuttige eigenschap - wij behandelden dit in [ Hoofdstuk 1 ](chapter-1.md) van deze reeks - maar het betekent ook, dat wanneer u frequente veranderingen op uw website hebt u vrij vaak het geheime voorgeheugen ongeldig maakt. Als u slechts één Dispatcher per instantie Publiceren hebt, activeert de eerste bezoeker die een pagina aanvraagt, een nieuwe caching van die pagina. De tweede bezoeker krijgt reeds de caching versie.
+Het toevoegen van proxyservers zou normaal de prestaties moeten verhogen. Er zijn echter scenario&#39;s waarin het toevoegen van servers de prestaties kan verminderen. Hoe? Neem bijvoorbeeld een nieuwsportal, waar u elke minuut nieuwe artikelen en pagina&#39;s introduceert. Een Dispatcher maakt de validatie ongedaan door &quot;automatisch annuleren&quot;: wanneer een pagina wordt gepubliceerd, worden alle pagina&#39;s in de cache op dezelfde site ongeldig gemaakt. Dit is een nuttige eigenschap - wij behandelden dit in [&#x200B; Hoofdstuk 1 &#x200B;](chapter-1.md) van deze reeks - maar het betekent ook, dat wanneer u frequente veranderingen op uw website hebt u vrij vaak het geheime voorgeheugen ongeldig maakt. Als u slechts één Dispatcher per instantie Publiceren hebt, activeert de eerste bezoeker die een pagina aanvraagt, een nieuwe caching van die pagina. De tweede bezoeker krijgt reeds de caching versie.
 
 Als u twee Dispatcher hebt, heeft de tweede bezoeker een kans van 50% dat de pagina niet in het voorgeheugen ondergebracht is, en dan zou hij een grotere latentie ervaren wanneer die pagina opnieuw wordt teruggegeven. Door nog meer Dispatchers per Publish wordt het nog erger. De publicatieserver ontvangt meer belasting omdat de pagina voor elke Dispatcher afzonderlijk opnieuw moet worden weergegeven.
 
-![ Verminderde prestaties in een schaal-uit scenario met frequente geheim voorgeheugenflushes.](assets/chapter-2/decreased-performance.png)
+![&#x200B; Verminderde prestaties in een schaal-uit scenario met frequente geheim voorgeheugenflushes.](assets/chapter-2/decreased-performance.png)
 
 *Verminderde prestaties in een schaal-uit scenario met frequente geheim voorgeheugenflushes.*
 
@@ -115,13 +115,13 @@ We hebben enkele experimenten met NFS uitgevoerd - maar NFS introduceert enorme 
 
 Als u problemen ondervindt met de prestaties, schaalt u de schaal voor publiceren en verzenden even groot om piekbelasting op de instanties van Publisher te voorkomen. Er is geen gouden regel voor de verhouding Publiceren/Dispatcher - deze hangt sterk af van de verspreiding van de aanvragen en de frequentie van publicaties en cachevervalsingen.
 
-Als u ook over de latentie een bezoekerservaring bezorgd bent, denk na gebruikend een netwerk van de inhoudslevering, geheime voorgeheugen het terugwinnen, preventieve geheim voorgeheugenopwarming, plaatsend een aflossingstijd zoals die in [ wordt beschreven Hoofdstuk 1 ](chapter-1.md) van deze reeks of verwijs naar sommige geavanceerde ideeën van [ Deel 3 ](chapter-3.md).
+Als u ook over de latentie een bezoekerservaring bezorgd bent, denk na gebruikend een netwerk van de inhoudslevering, geheime voorgeheugen het terugwinnen, preventieve geheim voorgeheugenopwarming, plaatsend een aflossingstijd zoals die in [&#x200B; wordt beschreven Hoofdstuk 1 &#x200B;](chapter-1.md) van deze reeks of verwijs naar sommige geavanceerde ideeën van [&#x200B; Deel 3 &#x200B;](chapter-3.md).
 
 ### De instelling &quot;Cross Connected&quot;
 
 Een andere instelling die we nu hebben gezien, is de &quot;cross-connected&quot; instelling: de publicatie-instanties hebben geen speciale verzenders, maar alle verzenders zijn verbonden met alle publicatiesystemen.
 
-![ dwars-verbonden topologie: Verhoogde overtolligheid en meer ingewikkeldheid ](assets/chapter-2/cross-connected-setup.png)
+![&#x200B; dwars-verbonden topologie: Verhoogde overtolligheid en meer ingewikkeldheid &#x200B;](assets/chapter-2/cross-connected-setup.png)
 
 <br> 
 

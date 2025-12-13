@@ -23,13 +23,13 @@ ht-degree: 0%
 
 # AEM-tags, aan een project gekoppelde mappen en mapmetagegevens
 
-![ de DeskundigenReeks van AEM ](./assets/banner.png)
+![&#x200B; de DeskundigenReeks van AEM &#x200B;](./assets/banner.png)
 
 Leer hoe u AEM Tags kunt gebruiken voor elementen via Workfront-gegevens, hoe u projectgekoppelde mappen kunt instellen en gebruiken en hoe u Workfront-gegevens kunt gebruiken voor de metagegevensschema&#39;s van de map AEM Asset.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340333?quality=12&learn=on)
 
-_Deel drie van a [ vier Deel deskundige reeksen op Workfront voor Experience Manager verbeterde schakelaar](./overview.md)_
+_Deel drie van a [&#x200B; vier Deel deskundige reeksen op Workfront voor Experience Manager verbeterde schakelaar](./overview.md)_
 
 ## Correcties
 

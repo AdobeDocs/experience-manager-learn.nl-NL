@@ -25,7 +25,7 @@ Aangepaste OSGi-configuratie maken om de referenties van uw cloud-account voor d
 
 Om een aangepaste configuratie te maken OSGi, moeten wij eerst een interface tot stand brengen waarvan openbare methodes de gebieden in de configuratie zullen vertegenwoordigen.
 
-![ doc-cloud-config ](assets/doc-cloud-configuration.JPG)
+![&#x200B; doc-cloud-config &#x200B;](assets/doc-cloud-configuration.JPG)
 
 
 Maak een interface met de naam DocumentCloudConfiguration en plak daarin de volgende code.

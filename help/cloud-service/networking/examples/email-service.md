@@ -29,25 +29,25 @@ Omdat (de meeste) de postdiensten niet over HTTP/HTTPS lopen, moeten de verbindi
 + `smtp.port` wordt ingesteld op de `portForward.portOrig` -poort die wordt toegewezen aan de host en poort van de e-mailservice van het doel. In dit voorbeeld wordt de toewijzing `AEM_PROXY_HOST:30465` → `smtp.sendgrid.com:465` gebruikt.
    + `smpt.port` wordt geplaatst aan de `portForward.portOrig` haven, en NIET de daadwerkelijke haven van de server SMTP. De toewijzing tussen de `smtp.port` en de `portForward.portOrig` -poort wordt bepaald door de Cloud Manager `portForwards` -regel (zoals hieronder wordt getoond).
 
-Aangezien de geheimen niet in code moeten worden opgeslagen, worden de gebruikersbenaming en het wachtwoord van de e-maildienst best verstrekt gebruikend [ geheime OSGi configuratievariabelen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), geplaatst gebruikend AIO CLI, of Cloud Manager API.
+Aangezien de geheimen niet in code moeten worden opgeslagen, worden de gebruikersbenaming en het wachtwoord van de e-maildienst best verstrekt gebruikend [&#x200B; geheime OSGi configuratievariabelen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), geplaatst gebruikend AIO CLI, of Cloud Manager API.
 
-Typisch, [ flexibel havenuitgang ](../flexible-port-egress.md) wordt gebruikt om het integreren met de e-maildienst tevreden te stellen tenzij het aan `allowlist` Adobe IP noodzakelijk is, waarin [ specifiek adres van de uitgang ](../dedicated-egress-ip-address.md) kan worden gebruikt.
+Typisch, [&#x200B; flexibel havenuitgang &#x200B;](../flexible-port-egress.md) wordt gebruikt om het integreren met de e-maildienst tevreden te stellen tenzij het aan `allowlist` Adobe IP noodzakelijk is, waarin [&#x200B; specifiek adres van de uitgang &#x200B;](../dedicated-egress-ip-address.md) kan worden gebruikt.
 
-Bovendien, herzie de documentatie van AEM op [ verzendend e-mail ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+Bovendien, herzie de documentatie van AEM op [&#x200B; verzendend e-mail &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 ## Geavanceerde netwerkondersteuning
 
 Het volgende codevoorbeeld wordt gesteund door de volgende geavanceerde voorzien van een netwerkopties.
 
-Verzeker [ aangewezen ](../advanced-networking.md#advanced-networking) geavanceerde voorzien van een netwerkconfiguratie voorafgaand aan het volgen van dit leerprogramma is opstelling.
+Verzeker [&#x200B; aangewezen &#x200B;](../advanced-networking.md#advanced-networking) geavanceerde voorzien van een netwerkconfiguratie voorafgaand aan het volgen van dit leerprogramma is opstelling.
 
-| Geen geavanceerde netwerken | [ Flexibele havenuitgang ](../flexible-port-egress.md) | [ Dedicated egress IP adres ](../dedicated-egress-ip-address.md) | [ Virtueel Privé Netwerk ](../vpn.md) |
+| Geen geavanceerde netwerken | [&#x200B; Flexibele havenuitgang &#x200B;](../flexible-port-egress.md) | [&#x200B; Dedicated egress IP adres &#x200B;](../dedicated-egress-ip-address.md) | [&#x200B; Virtueel Privé Netwerk &#x200B;](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✔ | ✔ | ✔ |
 
 ## OSGi-configuratie
 
-Dit OSGi- configuratievoorbeeld vormt de Dienst van de Post OSGi van AEM om een externe postdienst, als volgende Cloud Manager `portForwards` regel van de [ enableEnvironmentAdvancedNetworkingConfiguration ](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) verrichting te gebruiken.
+Dit OSGi- configuratievoorbeeld vormt de Dienst van de Post OSGi van AEM om een externe postdienst, als volgende Cloud Manager `portForwards` regel van de [&#x200B; enableEnvironmentAdvancedNetworkingConfiguration &#x200B;](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) verrichting te gebruiken.
 
 ```json
 ...
@@ -61,7 +61,7 @@ Dit OSGi- configuratievoorbeeld vormt de Dienst van de Post OSGi van AEM om een 
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/config/com.day.cq.mailer.DefaultMailService.cfg.json`
 
-Vorm AEM [ DefaultMailService ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email) zoals vereist door uw e-mailleverancier (b.v. `smtp.ssl`, enz.).
+Vorm AEM [&#x200B; DefaultMailService &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email) zoals vereist door uw e-mailleverancier (b.v. `smtp.ssl`, enz.).
 
 ```json
 {
@@ -80,7 +80,7 @@ Vorm AEM [ DefaultMailService ](https://experienceleague.adobe.com/docs/experien
 
 De variabele `EMAIL_USERNAME` en `EMAIL_PASSWORD` OSGi en het geheim kunnen per milieu worden geplaatst, gebruikend één van beiden:
 
-+ [ de Configuratie van het Milieu van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html)
++ [&#x200B; de Configuratie van het Milieu van Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html)
 + of met de opdracht `aio CLI`
 
   ```shell

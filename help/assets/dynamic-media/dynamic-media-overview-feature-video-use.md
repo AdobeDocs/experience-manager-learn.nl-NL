@@ -22,9 +22,9 @@ Deze videoreeks met meerdere delen geeft u een overzicht van hoe media-inhoud wo
 
 ## Live demo over dynamische media
 
-[![ AEM Assets Dynamic Media live demo ](./assets/overview/live-demo.png) ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+[![&#x200B; AEM Assets Dynamic Media live demo &#x200B;](./assets/overview/live-demo.png) &#x200B;](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
 
-Verken de mogelijkheden van de Dynamische Media van Adobe met onze [**Levende Demo** ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), waar de meest geavanceerde oplossingen aan het leven komen. Leer hoe [**Dynamische Assets** ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/dynamic-assets.html) werkschema&#39;s stroomlijnt en inhoudsbeheer opheft, en [**Interactieve Ervaringen** ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/interactive-experiences.html) ontdekt die publiek over elk kanaal fascineren. [ zie hoe de Dynamische Media uw inhoudsstrategie ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) kunnen omzetten.
+Verken de mogelijkheden van de Dynamische Media van Adobe met onze [**Levende Demo** &#x200B;](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), waar de meest geavanceerde oplossingen aan het leven komen. Leer hoe [**Dynamische Assets** &#x200B;](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/dynamic-assets.html) werkschema&#39;s stroomlijnt en inhoudsbeheer opheft, en [**Interactieve Ervaringen** &#x200B;](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/interactive-experiences.html) ontdekt die publiek over elk kanaal fascineren. [&#x200B; zie hoe de Dynamische Media uw inhoudsstrategie &#x200B;](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) kunnen omzetten.
 
 ## Dynamisch mediaoverzicht
 

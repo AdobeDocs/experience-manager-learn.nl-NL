@@ -26,13 +26,13 @@ ht-degree: 0%
 Wanneer u een AMS-basislijnverzendingsprogramma hebt geïnstalleerd, wordt deze geleverd met een paar freebies.  Een van deze functies is een set scripts voor health check.
 Met deze scripts kan het taakverdelingsmechanisme waarmee de AEM-stapel wordt voorafgegaan, weten welke poten gezond zijn en in bedrijf blijven.
 
-![ Geanimeerde GIF die de Stappen van de Controle van de verkeersstroom ](assets/load-balancer-healthcheck/health-check.gif " tonen van de Controle van de Gezondheid ")
+![&#x200B; Geanimeerde GIF die de Stappen van de Controle van de verkeersstroom &#x200B;](assets/load-balancer-healthcheck/health-check.gif " tonen van de Controle van de Gezondheid ")
 
 ## Standaard taakverdelingscontrole
 
 Wanneer het klantenverkeer door Internet komt om uw instantie van AEM te bereiken zullen zij door een ladingsverdelingsmechanisme gaan
 
-![ Beeld toont verkeersstroom van Internet om via een lading verdelingsmechanisme ](assets/load-balancer-healthcheck/load-balancer-traffic-flow.png " lading-verdeler-verkeer-stroom ") te noemen
+![&#x200B; Beeld toont verkeersstroom van Internet om via een lading verdelingsmechanisme &#x200B;](assets/load-balancer-healthcheck/load-balancer-traffic-flow.png " lading-verdeler-verkeer-stroom ") te noemen
 
 Elke aanvraag die via het taakverdelingsmechanisme wordt ontvangen, leidt elke aanvraag tot een verwijzing.  Het taakverdelingsmechanisme beschikt over een mechanisme voor gezondheidscontrole dat is ingebouwd om ervoor te zorgen dat het verkeer naar een gezonde host stuurt.
 
@@ -44,7 +44,7 @@ De standaardcontrole is typisch een havencontrole om te zien of luisteren de ser
 
 Om te voorkomen dat verkeer naar een gezonde verzender wordt gestuurd die een ongezonde AEM-instantie voorgaat, heeft AMS een paar extra&#39;s gemaakt die de gezondheid van de poot evalueren en niet alleen van de Dispatcher.
 
-![ Beeld toont de verschillende stukken voor de gezondheidscontrole om ](assets/load-balancer-healthcheck/health-check-pieces.png " gezondheid-controle-stukken ") te werken
+![&#x200B; Beeld toont de verschillende stukken voor de gezondheidscontrole om &#x200B;](assets/load-balancer-healthcheck/health-check-pieces.png " gezondheid-controle-stukken ") te werken
 
 De gezondheidscontrole bestaat uit de volgende stukken:
 - 1 `Load balancer`
@@ -60,11 +60,11 @@ Wij zullen behandelen wat elk stuk aan opstelling en hun belang is
 
 Als u wilt aangeven of AEM werkt, hebt u het nodig om een basispagina-compilatie uit te voeren en de pagina te bedienen.  Adobe Managed Services heeft een basispakket gemaakt dat de testpagina bevat.  De pagina test dat de bewaarplaats omhoog is en dat de middelen en paginasjabloon kunnen teruggeven.
 
-![ Beeld toont het Pakket AMS in het pakketmanager van CRX ](assets/load-balancer-healthcheck/health-check-package.png " gezondheid-controle-pakket ")
+![&#x200B; Beeld toont het Pakket AMS in het pakketmanager van CRX &#x200B;](assets/load-balancer-healthcheck/health-check-package.png " gezondheid-controle-pakket ")
 
 Hier is de pagina.  De opslagplaats-id van de installatie wordt weergegeven
 
-![ Beeld toont de pagina van het Regent van AMS ](assets/load-balancer-healthcheck/health-check-page.png " gezondheid-controle-pagina ")
+![&#x200B; Beeld toont de pagina van het Regent van AMS &#x200B;](assets/load-balancer-healthcheck/health-check-page.png " gezondheid-controle-pagina ")
 
 > `Note:` We zorgen ervoor dat de pagina niet in cache kan worden opgeslagen.  Het zou niet de daadwerkelijke status controleren als het elke keer enkel een caching pagina terugkwam!
 
@@ -74,9 +74,9 @@ Dit is het lichtgewichteindpunt dat we kunnen testen om te zien dat AEM in gebru
 
 Wij vormen de ladingsbalansen om aan een CGI-BIN eindpunt in plaats van het gebruiken van een havencontrole te richten.
 
-![ Beeld toont de de controleconfiguratie van de de gezondheid van het taakverdelingsmechanisme van AWS ](assets/load-balancer-healthcheck/aws-settings.png " aws-lb-montages ")
+![&#x200B; Beeld toont de de controleconfiguratie van de de gezondheid van het taakverdelingsmechanisme van AWS &#x200B;](assets/load-balancer-healthcheck/aws-settings.png " aws-lb-montages ")
 
-![ Beeld toont de Azure configuratie van de de gezondheidscontrole van het taakverdelingsmechanisme ](assets/load-balancer-healthcheck/azure-settings.png " azure-lb-settings ")
+![&#x200B; Beeld toont de Azure configuratie van de de gezondheidscontrole van het taakverdelingsmechanisme &#x200B;](assets/load-balancer-healthcheck/azure-settings.png " azure-lb-settings ")
 
 ### Virtuele hosts voor Apache Health Check
 
@@ -178,7 +178,7 @@ X-Vhost: unhealthy-author
 
 In plaats van een lege pagina krijgen ze deze pagina.
 
-![ Beeld toont het standaardonderhoud pagina ](assets/load-balancer-healthcheck/unhealthy-page.png " ongezond-pagina ")
+![&#x200B; Beeld toont het standaardonderhoud pagina &#x200B;](assets/load-balancer-healthcheck/unhealthy-page.png " ongezond-pagina ")
 
 ### CGI-Bin-scripts
 

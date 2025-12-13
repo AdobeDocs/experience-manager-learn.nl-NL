@@ -23,10 +23,10 @@ ht-degree: 0%
 
 # Geavanceerde instellingen en workflows
 
-![ de DeskundigenReeks van AEM ](./assets/banner.png)
+![&#x200B; de DeskundigenReeks van AEM &#x200B;](./assets/banner.png)
 
 Leer hoe u geavanceerde instellingen voor de verbeterde Workfront for AEM-connector kunt gebruiken en hoe u geavanceerde workflows en draagraketten in AEM kunt configureren om de synchronisatie van gegevens tussen AEM en Workfront te beheren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340397?quality=12&learn=on)
 
-_Deel vier van a [ vier Deel deskundige reeksen op Workfront voor Experience Manager verbeterde schakelaar](./overview.md)_
+_Deel vier van a [&#x200B; vier Deel deskundige reeksen op Workfront voor Experience Manager verbeterde schakelaar](./overview.md)_

@@ -26,7 +26,7 @@ Maak een JSON-fragment dat het volgende definieert:
 + parameters
 + uitvoer.
 
-De details van deze [ vormparameter zijn hier beschikbaar.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
+De details van deze [&#x200B; vormparameter zijn hier beschikbaar.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
 
 De voorbeeldcode hieronder produceert het JSON-fragment voor alle Office 365-documenttypen.
 

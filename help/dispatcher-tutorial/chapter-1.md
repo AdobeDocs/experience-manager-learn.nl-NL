@@ -75,7 +75,7 @@ In de vroege dagen van het Web, zou u een paar honderd bezoekers aan een plaats 
 
 In dit artikel worden verschillende manieren weergegeven voor het instellen van Dispatcher- en Publish-systemen. Laten we beginnen met de basisbeginselen van http caching.
 
-![ Basisfunctionaliteit van het Geheime voorgeheugen van Dispatcher ](assets/chapter-1/basic-functionality-dispatcher.png)
+![&#x200B; Basisfunctionaliteit van het Geheime voorgeheugen van Dispatcher &#x200B;](assets/chapter-1/basic-functionality-dispatcher.png)
 
 *Basisfunctionaliteit van het Geheime voorgeheugen van Dispatcher*
 
@@ -106,7 +106,7 @@ Als alle bestanden in het cachegeheugen worden opgeslagen en dus statisch in de 
 
 Als u meer inzicht wilt krijgen in de Dispatcher, kunt u de structuur van een eenvoudige voorbeeld-URL herzien.  Kijk naar het onderstaande voorbeeld.
 
-`http://domain.com/path/to/resource/pagename.selectors.html/path/suffix.ext?parameter=value&amp;otherparameter=value#fragment`
+`http://domain.com/path/to/resource/pagename.selectors.html/path/suffix.ext?parameter=value&otherparameter=value#fragment`
 
 * `http` geeft het protocol aan
 
@@ -142,7 +142,7 @@ Als de URL een achtervoegsel `path/suffix.ext` heeft,
 
 * `suffix.ext` is een bestand in de map `path` . Opmerking: als het achtervoegsel geen extensie heeft, wordt het bestand niet in de cache opgeslagen.
 
-![ lay-out van het Bestandssysteem na het krijgen van URLs van Dispatcher ](assets/chapter-1/filesystem-layout-urls-from-dispatcher.png)
+![&#x200B; lay-out van het Bestandssysteem na het krijgen van URLs van Dispatcher &#x200B;](assets/chapter-1/filesystem-layout-urls-from-dispatcher.png)
 
 *lay-out van het Bestandssysteem na het krijgen van URLs van Dispatcher*
 
@@ -210,7 +210,7 @@ Als u `home.html` eerst aanvraagt, wordt deze gemaakt als een bestand.
 
 Volgende aanvragen om `home.html/suffix.html` retourneren geldige resultaten, maar aangezien het bestand de positie in het bestandssysteem `home.html` &#39;blokkeert&#39;, kan `home.html` niet nogmaals als een map worden gemaakt en wordt `home.html/suffix.html` dus niet in de cache opgeslagen.
 
-![ dossier dat positie in het filesystem blokkeert die sub-middelen verhinderen om in het voorgeheugen onder te brengen ](assets/chapter-1/file-blocking-position-in-filesystem.png)
+![&#x200B; dossier dat positie in het filesystem blokkeert die sub-middelen verhinderen om in het voorgeheugen onder te brengen &#x200B;](assets/chapter-1/file-blocking-position-in-filesystem.png)
 
 *dossier dat positie in het filesystem blokkeert die sub-middelen verhinderen om in het voorgeheugen onder te brengen*
 
@@ -218,7 +218,7 @@ Volgende aanvragen om `home.html/suffix.html` retourneren geldige resultaten, ma
 
 Als u dit andersom doet, wordt eerst een `home.html/suffix.html` -aanvraag ingediend en wordt `suffix.html` eerst in de cache geplaatst onder een map `/home.html` . Deze map wordt echter verwijderd en vervangen door een bestand `home.html` wanneer u vervolgens `home.html` als bron aanvraagt.
 
-![ Deleting a wegstructuur wanneer een ouder als middel ](assets/chapter-1/deleting-path-structure.png) wordt gehaald
+![&#x200B; Deleting a wegstructuur wanneer een ouder als middel &#x200B;](assets/chapter-1/deleting-path-structure.png) wordt gehaald
 
 *Deleting a wegstructuur wanneer een ouder als middel* wordt gehaald
 
@@ -353,7 +353,7 @@ Nu heeft de markator geleerd dat de teaskoppen actioneerbaar moeten zijn. Hij be
 
 Hij publiceert de bewerkte pagina &quot;Canada&quot; en reviseert de eerder gepubliceerde homepage om zijn wijzigingen te zien. Maar - daar is niets veranderd. Het geeft nog steeds de oude taser weer. Hij dubbelcheckt de &quot;Winter Special&quot;. Deze pagina is nog nooit eerder aangevraagd en is dus niet statisch in de Dispatcher opgeslagen. Deze pagina wordt dus nieuw weergegeven door Publiceren en deze pagina bevat nu de nieuwe taser &quot;Visit Canada&quot;.
 
-![ Dispatcher die stale inbegrepen inhoud in de homepage opslaat ](assets/chapter-1/dispatcher-storing-stale-content.png)
+![&#x200B; Dispatcher die stale inbegrepen inhoud in de homepage opslaat &#x200B;](assets/chapter-1/dispatcher-storing-stale-content.png)
 
 *Dispatcher die stale inbegrepen inhoud in de homepage opslaat*
 
@@ -393,7 +393,7 @@ Wij gebruiken het zelfde argument zoals in het laatste voorbeeld met tellers die
 
 In ons voorbeeld worden alle pagina&#39;s in de navigatie samengebracht met de navTitle van de doelpagina om een naam in de navigatie te renderen. De navigatitel voor &quot;IJsland&quot; wordt getekend op de pagina &quot;IJsland&quot; en weergegeven op elke pagina met een hoofdnavigatie.
 
-![ Belangrijkste navigatie onvermijdelijk makend inhoud van alle pagina&#39;s samen door hun &quot;NavTitles&quot;te trekken ](assets/chapter-1/nav-titles.png)
+![&#x200B; Belangrijkste navigatie onvermijdelijk makend inhoud van alle pagina&#39;s samen door hun &quot;NavTitles&quot;te trekken &#x200B;](assets/chapter-1/nav-titles.png)
 
 *Belangrijkste navigatie onvermijdelijk makend inhoud van alle pagina&#39;s samen door hun &quot;NavTitles&quot;te trekken*
 
@@ -407,7 +407,7 @@ Als u een grote site hebt met duizenden pagina&#39;s, duurt het behoorlijk lang 
 
 Alle bestanden in de dispatcher die een aanmaakdatum hebben die ouder is dan het bestand met de status, zijn gerenderd vóór de laatste activering (en ongeldigmaking) en worden daarom als &#39;ongeldig&#39; beschouwd. Ze zijn fysiek aanwezig in het bestandssysteem, maar de Dispatcher negeert ze. Ze zijn &#39;stale&#39;. Telkens wanneer een aanvraag voor een &#39;stale&#39; resource wordt gedaan, vraagt de Dispatcher het AEM-systeem om de pagina opnieuw te renderen. Die nieuw weergegeven pagina wordt vervolgens opgeslagen in het bestandssysteem - nu met een nieuwe aanmaakdatum en het is weer vers.
 
-![ de datum van de Verwezenlijking van het .stat dossier bepaalt welke inhoud stale is en die vers ](assets/chapter-1/creation-date.png) is
+![&#x200B; de datum van de Verwezenlijking van het .stat dossier bepaalt welke inhoud stale is en die vers &#x200B;](assets/chapter-1/creation-date.png) is
 
 *de datum van de Verwezenlijking van het .stat dossier bepaalt welke inhoud stale is en die vers* is
 
@@ -453,9 +453,9 @@ Het zou een beetje verder gaan dan deze handleiding om op details in te gaan, ma
 
 1. Weet echt wat je doet. Het is erg moeilijk om de validatie juist te krijgen. Dat is één van de redenen waarom de automatische ongeldigverklaring zo rigoureus is; om het leveren van verouderde inhoud te vermijden.
 
-2. Als uw agent een HTTP-header `CQ-Action-Scope: ResourceOnly` verzendt, betekent dit dat dit ene validatieverzoek geen automatische ongeldigmaking activeert. Dit ( [ https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle ](https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle)) stuk van code zou een goed uitgangspunt voor uw eigen replicatieagent kunnen zijn.
+2. Als uw agent een HTTP-header `CQ-Action-Scope: ResourceOnly` verzendt, betekent dit dat dit ene validatieverzoek geen automatische ongeldigmaking activeert. Dit ( [&#x200B; https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle &#x200B;](https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle)) stuk van code zou een goed uitgangspunt voor uw eigen replicatieagent kunnen zijn.
 
-3. `ResourceOnly` voorkomt alleen automatische ongeldigmaking. Om de noodzakelijke gebiedsdeel in feite te doen die en ongeldig maakt, moet u de ongeldigingsverzoeken teweegbrengen zelf. U kunt het pakket willen controleren Dispatcher spoelregels ([ https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html ](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html)) voor inspiratie op hoe dat eigenlijk kon gebeuren.
+3. `ResourceOnly` voorkomt alleen automatische ongeldigmaking. Om de noodzakelijke gebiedsdeel in feite te doen die en ongeldig maakt, moet u de ongeldigingsverzoeken teweegbrengen zelf. U kunt het pakket willen controleren Dispatcher spoelregels ([&#x200B; https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html)) voor inspiratie op hoe dat eigenlijk kon gebeuren.
 
 Wij adviseren niet dat u een gebiedsdeeloplossend regeling bouwt. Er is gewoon te veel moeite en weinig winst - en zoals al eerder is gezegd, is er te veel dat u het mis zult hebben.
 
@@ -504,7 +504,7 @@ De component heeft drie renderingscripts (geïmplementeerd in JSP, HTML of als s
 
 De component wordt geplaatst in parsys van de homepage. De resulterende structuur in de CRX wordt hieronder weergegeven.
 
-![ middel-structuur van het ontvankelijke beeld in CRX ](assets/chapter-1/responsive-image-crx.png)
+![&#x200B; middel-structuur van het ontvankelijke beeld in CRX &#x200B;](assets/chapter-1/responsive-image-crx.png)
 
 *middel-structuur van het ontvankelijke beeld in CRX*
 
@@ -538,7 +538,7 @@ en... we zijn klaar met onze mooie ingekapselde component.
 
 Nu vraagt een gebruiker om de pagina - en de middelen via de Dispatcher. Dit resulteert in bestanden in het Dispatcher-bestandssysteem, zoals hieronder wordt weergegeven,
 
-![ Caching structuur van de ingekapselde ontvankelijke beeldcomponent ](assets/chapter-1/cached-structure-encapsulated-image-comonent.png)
+![&#x200B; Caching structuur van de ingekapselde ontvankelijke beeldcomponent &#x200B;](assets/chapter-1/cached-structure-encapsulated-image-comonent.png)
 
 *Caching structuur van de ingekapselde ontvankelijke beeldcomponent*
 
@@ -554,7 +554,7 @@ en
 
 aan de Dispatcher. Deze verzoeken zijn echter tevergeefs. De inhoud is in de cache geplaatst als bestanden onder de substructuur van de component. Deze bestanden zijn nu verouderd, maar worden nog steeds op verzoek afgehandeld.
 
-![ de wanverhouding van de Structuur die aan de inhoud van de schaal ](assets/chapter-1/structure-mismatch.png) leidt
+![&#x200B; de wanverhouding van de Structuur die aan de inhoud van de schaal &#x200B;](assets/chapter-1/structure-mismatch.png) leidt
 
 *de wanverhouding van de Structuur die aan de inhoud van de schaal* leidt
 
@@ -636,7 +636,7 @@ In ons voorbeeld, werd de component teruggegeven en in het voorgeheugen ondergeb
 
 U zou kunnen denken het __.. maar het niet zou moeten. Aangezien alleen het binaire getal van de afbeelding is gewijzigd en de pagina met de inhoud niet is gewijzigd, hoeft de HTML-markering niet opnieuw te worden gerenderd. De Dispatcher bedient de pagina met de oude vingerafdruk, en dus de oude versie van de afbeelding.
 
-![ component van het Beeld recenter dan referenced beeld, geen verse gerenderde vingerprint.](assets/chapter-1/recent-image-component.png)
+![&#x200B; component van het Beeld recenter dan referenced beeld, geen verse gerenderde vingerprint.](assets/chapter-1/recent-image-component.png)
 
 *component van het Beeld recenter dan referenced beeld, geen verse gerenderde vingerprint.*
 
@@ -750,7 +750,7 @@ Dus... in plaats van de vingerafdruk alleen te gebruiken als een eenvoudige cach
 
 U kunt het schema voor vingerafdrukken niet alleen gebruiken voor elementen die afkomstig zijn van de DAM, maar ook voor JS- en CSS-bestanden en verwante bronnen.
 
-[ Versioned Clientlibs ](https://adobe-consulting-services.github.io/acs-aem-commons/features/versioned-clientlibs/index.html) is een module die deze benadering gebruikt.
+[&#x200B; Versioned Clientlibs &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/versioned-clientlibs/index.html) is een module die deze benadering gebruikt.
 
 Maar hier zou je een ander voorwendsel kunnen tegenkomen met URL-vingerafdrukken: het bindt de URL aan de inhoud. U kunt de inhoud niet wijzigen zonder ook de URL te wijzigen (de wijzigingsdatum wordt ook bijgewerkt). Daar zijn de vingerafdrukken in de eerste plaats voor bedoeld. Maar denk eraan dat u een nieuwe versie ontwikkelt, met nieuwe CSS- en JS-bestanden en dus nieuwe URL&#39;s met nieuwe vingerafdrukken. Al uw HTML-pagina&#39;s bevatten nog steeds verwijzingen naar de oude vingerafgedrukte URL&#39;s. Om de nieuwe release consistent te laten werken, moet u dus alle HTML-pagina&#39;s tegelijk invalideren om een nieuwe rendering met verwijzingen naar de nieuwe vingerafgedrukte bestanden te forceren. Als u meerdere sites hebt die op dezelfde bibliotheken vertrouwen, kan dat een aanzienlijke mate van renderen zijn - en hier kunt u de `statfiles` niet gebruiken. Wees daarom voorbereid om de pieken van de belasting op uw publicatiesystemen na een rollout te zien. U zou een blauw-groene plaatsing met geheim voorgeheugenopwarming kunnen overwegen of misschien een op TTL-Gebaseerde geheime voorgeheugen voor uw Dispatcher... de mogelijkheden zijn eindeloos.
 
@@ -800,7 +800,7 @@ Een veel elegantere manier om het afhankelijkheidsprobleem op te lossen is om he
 
 Ons voorbeeld is gemakkelijk op te lossen:
 
-![ het Spooling van het beeld met servlet die aan het beeld, niet de component verbindend is.](assets/chapter-1/spooling-image.png)
+![&#x200B; het Spooling van het beeld met servlet die aan het beeld, niet de component verbindend is.](assets/chapter-1/spooling-image.png)
 
 *het Spooling van het beeld met servlet die aan het beeld, niet de component verbindend is.*
 
@@ -838,7 +838,7 @@ Laten we een kleine uitbreiding introduceren van onze &quot;respi&quot;-componen
 
 De component respi2 is een component die een responsieve afbeelding weergeeft, net als de component respi. Maar het heeft een kleine toevoeging,
 
-![ structuur van CRX: component respi2 die een kwaliteitsbezit aan de levering toevoegt ](assets/chapter-1/respi2.png)
+![&#x200B; structuur van CRX: component respi2 die een kwaliteitsbezit aan de levering toevoegt &#x200B;](assets/chapter-1/respi2.png)
 
 *structuur van CRX: component respi2 die een kwaliteitsbezit aan de levering toevoegt*
 
@@ -886,7 +886,7 @@ Dit is een slecht idee. Herinner je? Verzoeken met queryparameters kunnen niet i
 >
 >Dit kan een antipatroon worden. Gebruik het zorgvuldig.
 
-![ het overgaan van de Eigenschappen van de Component als Kiezers ](assets/chapter-1/passing-component-properties.png)
+![&#x200B; het overgaan van de Eigenschappen van de Component als Kiezers &#x200B;](assets/chapter-1/passing-component-properties.png)
 
 *het overgaan van de Eigenschappen van de Component als Kiezers*
 
@@ -1098,7 +1098,7 @@ Het is een getal dat aangeeft vanaf welk niveau in het bestandssysteem twee subs
 
 Laten we eens kijken naar het standaardgeval waarin het statfilesniveau 0 is.
 
-![ /statfileslevel &quot;0&quot;: De __.stat_ _wordt gecreeerd in docroot. Het ongeldig makingsdomein overspant de volledige installatie met inbegrip van alle plaatsen ](assets/chapter-1/statfile-level-0.png)
+![&#x200B; /statfileslevel &quot;0&quot;: De __.stat_ _wordt gecreeerd in docroot. Het ongeldig makingsdomein overspant de volledige installatie met inbegrip van alle plaatsen &#x200B;](assets/chapter-1/statfile-level-0.png)
 
 `/statfileslevel "0":` Het `.stat` -bestand wordt gemaakt in de hoofdmap van het document. Het validatiedomein omvat de gehele installatie, inclusief alle sites.
 
@@ -1110,7 +1110,7 @@ Als u nu publiceert - en dus `/content/site-b/home` of een andere onderliggende 
 
 De inhoud onder `/content/site-a/` wordt niet gewijzigd. Deze inhoud wordt vergeleken met een `.stat` -bestand op `/content/site-a/` . Er zijn twee verschillende validatiedomeinen gemaakt.
 
-![ A statfileslevel &quot;1&quot;leidt tot verschillende invalidatiedomeinen ](assets/chapter-1/statfiles-level-1.png)
+![&#x200B; A statfileslevel &quot;1&quot;leidt tot verschillende invalidatiedomeinen &#x200B;](assets/chapter-1/statfiles-level-1.png)
 
 *A statfileslevel &quot;1&quot;leidt tot verschillende invalidatiedomeinen*
 
@@ -1165,7 +1165,7 @@ De beste oplossing is natuurlijk om de wortels van alle sites even diep te maken
 
 ### Koppeling tussen sites
 
-Wat is nu het juiste niveau? Dat hangt van het aantal gebiedsdelen af u tussen de plaatsen hebt. Opnamen die u oplost voor het weergeven van een pagina worden beschouwd als &#39;harde afhankelijkheden&#39;. Wij toonden zulk een _opneming_ toen wij de _3} component van het Taser {aan het begin van deze gids introduceerden._
+Wat is nu het juiste niveau? Dat hangt van het aantal gebiedsdelen af u tussen de plaatsen hebt. Opnamen die u oplost voor het weergeven van een pagina worden beschouwd als &#39;harde afhankelijkheden&#39;. Wij toonden zulk een _opneming_ toen wij de _3&rbrace; component van het Taser &lbrace;aan het begin van deze gids introduceerden._
 
 _Hyperlinks_ zijn een zachtere vorm van gebiedsdelen. Het is zeer waarschijnlijk dat u hyperlinks binnen één website... en het is niet onwaarschijnlijk dat u koppelingen tussen uw websites hebt. Met eenvoudige hyperlinks worden meestal geen afhankelijkheden tussen websites gemaakt. Denk aan een externe koppeling die u van uw site naar Facebook hebt ingesteld... U hoeft uw pagina niet te renderen als er iets verandert op Facebook en andersom, toch?
 
@@ -1208,7 +1208,7 @@ Alle sites hadden eigenlijk dezelfde inhoud. Het enige grote verschil was de taa
 
 Zoekprogramma&#39;s zoals Google beschouwen dezelfde inhoud als op verschillende URL&#39;s als &#39;misleidend&#39;. Een gebruiker kan proberen hoger gerangschikt of vaker vermeld te worden door landbouwbedrijven te creëren die identieke inhoud dienen. Zoekprogramma&#39;s herkennen deze pogingen en plaatsen pagina&#39;s lager die gewoon inhoud recyclen.
 
-U kunt voorkomen wordt onderaan door transparant te maken, dat u eigenlijk meer dan één pagina met de zelfde inhoud hebt, en dat u niet probeert om het systeem (zie [ &quot;Google over gelokaliseerde versies van uw pagina&quot;te &quot;vertellen&quot;](https://support.google.com/webmasters/answer/189077?hl=en)) door `<link rel="alternate">` markeringen aan elke verwante pagina in de kopbalsectie van elke pagina te plaatsen:
+U kunt voorkomen wordt onderaan door transparant te maken, dat u eigenlijk meer dan één pagina met de zelfde inhoud hebt, en dat u niet probeert om het systeem (zie [&#x200B; &quot;Google over gelokaliseerde versies van uw pagina&quot;te &quot;vertellen&quot;](https://support.google.com/webmasters/answer/189077?hl=en)) door `<link rel="alternate">` markeringen aan elke verwante pagina in de kopbalsectie van elke pagina te plaatsen:
 
 ```
 # URL: www.shiny-brand.fr/fr/home/produits.html
@@ -1246,7 +1246,7 @@ U kunt voorkomen wordt onderaan door transparant te maken, dat u eigenlijk meer 
 </head>
 ```
 
-![ inter-verbindt allen ](assets/chapter-1/inter-linking-all.png)
+![&#x200B; inter-verbindt allen &#x200B;](assets/chapter-1/inter-linking-all.png)
 
 *inter-verbindt allen*
 
@@ -1302,11 +1302,11 @@ Als u een auteur van AEM installeert en uit de doos publiceert, is de topologie 
 
 Als een klant ondertussen om die inhoud verzoekt, zal de Dispatcher om de inhoud van de schaal vragen en opslaan.
 
-Een meer betrouwbare opstelling verzendt het ongeldigingsverzoek van de Publish systemen _nadat_ zij de inhoud hebben ontvangen. Het artikel &quot;[ het Invalideren van het Geheime voorgeheugen van Dispatcher van een het Publiceren Instantie ](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot;beschrijft de details.
+Een meer betrouwbare opstelling verzendt het ongeldigingsverzoek van de Publish systemen _nadat_ zij de inhoud hebben ontvangen. Het artikel &quot;[&#x200B; het Invalideren van het Geheime voorgeheugen van Dispatcher van een het Publiceren Instantie &#x200B;](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot;beschrijft de details.
 
 **Verwijzingen**
 
-[ helpx.adobe.com - het Valideren van het Geheime voorgeheugen van Dispatcher van een het Publiceren Instantie ](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)
+[&#x200B; helpx.adobe.com - het Valideren van het Geheime voorgeheugen van Dispatcher van een het Publiceren Instantie &#x200B;](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)
 
 ### HTTP-koptekst en -koptekstcache
 
@@ -1322,7 +1322,7 @@ Zo voorkomt u dat u de headerlogica dupliceert in de Dispatcher en maakt u de vo
 
 **Verwijzingen**
 
-* [ helpx.adobe.com - de Kopballen van de Reactie van het Caching ](https://helpx.adobe.com/experience-manager/kb/dispatcher-cache-response-headers.html)
+* [&#x200B; helpx.adobe.com - de Kopballen van de Reactie van het Caching &#x200B;](https://helpx.adobe.com/experience-manager/kb/dispatcher-cache-response-headers.html)
 
 ### Uitzonderingen in cache afzonderlijk
 
@@ -1342,7 +1342,7 @@ Cache-Control en Pragma zijn officiële HTTP-headers, die worden doorgegeven aan
 
 **Verwijzingen**
 
-* [ Dispatcher - geen Geheime voorgeheugen ](https://helpx.adobe.com/experience-manager/kb/DispatcherNoCache.html)
+* [&#x200B; Dispatcher - geen Geheime voorgeheugen &#x200B;](https://helpx.adobe.com/experience-manager/kb/DispatcherNoCache.html)
 
 ### Browsercaching
 
@@ -1376,7 +1376,7 @@ Om dat tweede deel te laten werken, moet u de `Last-Modified` -datum naar de bro
 
 We hebben eerder uitgelegd dat wanneer de `Last-Modified` -datum door de Dispatcher wordt gegenereerd, deze tussen verschillende aanvragen kan verschillen, omdat het bestand in de cache - en de datum ervan - wordt gegenereerd wanneer het bestand door de browser wordt aangevraagd. Een alternatief zou zijn &quot;e-tags&quot; te gebruiken - dit zijn getallen die de werkelijke inhoud identificeren (bijvoorbeeld door een hash-code te genereren) in plaats van een datum.
 
-&quot;[ Etag Steun ](https://adobe-consulting-services.github.io/acs-aem-commons/features/etag/index.html)&quot;van het _ACS Pakket van Commons_ gebruikt deze benadering. Dit komt echter met een prijs: Aangezien de E-markering als kopbal moet worden verzonden, maar de berekening van de knoeiboelcode vereist volledig lezend de reactie, moet de reactie volledig in het belangrijkste geheugen worden gebufferd alvorens het kan worden geleverd. Dit kan een negatief effect hebben op de latentie wanneer uw website waarschijnlijk over resources beschikt die niet in het cachegeheugen zijn opgeslagen en u natuurlijk het geheugen dat uw AEM-systeem gebruikt in de gaten moet houden.
+&quot;[&#x200B; Etag Steun &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/etag/index.html)&quot;van het _ACS Pakket van Commons_ gebruikt deze benadering. Dit komt echter met een prijs: Aangezien de E-markering als kopbal moet worden verzonden, maar de berekening van de knoeiboelcode vereist volledig lezend de reactie, moet de reactie volledig in het belangrijkste geheugen worden gebufferd alvorens het kan worden geleverd. Dit kan een negatief effect hebben op de latentie wanneer uw website waarschijnlijk over resources beschikt die niet in het cachegeheugen zijn opgeslagen en u natuurlijk het geheugen dat uw AEM-systeem gebruikt in de gaten moet houden.
 
 Als u URL-vingerafdrukken gebruikt, kunt u zeer lange vervaldatums instellen. U kunt vingerafdrukbronnen altijd in de cache plaatsen in de browser. Een nieuwe versie wordt gemarkeerd met een nieuwe URL en oudere versies hoeven nooit te worden bijgewerkt.
 
@@ -1394,11 +1394,11 @@ In cache plaatsen van UI-bestanden, bestanden en afbeeldingen in uw sitemenu kan
 
 **Verwijzingen**
 
-*[ developer.mozilla.org - Caching ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching)
+*[&#x200B; developer.mozilla.org - Caching &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching)
 
-* [ apache.org - Mod verloopt ](https://httpd.apache.org/docs/current/mod/mod_expires.html)
+* [&#x200B; apache.org - Mod verloopt &#x200B;](https://httpd.apache.org/docs/current/mod/mod_expires.html)
 
-* [ ACS Commons - Etag Steun ](https://adobe-consulting-services.github.io/acs-aem-commons/features/etag/index.html)
+* [&#x200B; ACS Commons - Etag Steun &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/etag/index.html)
 
 ### URL&#39;s afkappen
 
@@ -1452,9 +1452,9 @@ Het hebben van één gemeenschappelijke docroot had ook een andere aardige eigen
 
 **Verwijzingen**
 
-* [ apache.org - Mod herschrijven ](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
+* [&#x200B; apache.org - Mod herschrijven &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
 
-* [ helpx.adobe.com - de Afbeelding van het Middel ](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/resource-mapping.html)
+* [&#x200B; helpx.adobe.com - de Afbeelding van het Middel &#x200B;](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/resource-mapping.html)
 
 ### Foutafhandeling
 
@@ -1483,7 +1483,7 @@ Ten tweede... wel, als we een interne serverfout zien - of nog erger, als we een
 
 **Verwijzingen**
 
-* [ apache.org - de Documenten van de Fout van de Douane ](https://httpd.apache.org/docs/2.4/custom-error.html)
+* [&#x200B; apache.org - de Documenten van de Fout van de Douane &#x200B;](https://httpd.apache.org/docs/2.4/custom-error.html)
 
 ### Beveiligde inhoud in cache plaatsen
 
@@ -1506,11 +1506,11 @@ En natuurlijk kun je je eigen mix van alle drie benaderingen toepassen.
 
 **Optie 2**. &quot;Niet in cache plaatsen&quot; is over het algemeen een slecht idee. Als u zo gaat, zorg ervoor de hoeveelheid verkeer en het aantal gevoelige middelen die worden uitgesloten klein zijn. Of zorg ervoor dat er een cache in het geheugen is geïnstalleerd in het publicatiesysteem, dat de publicatiesystemen de resulterende belasting kunnen verwerken - meer in die in deel III van deze reeks.
 
-**Optie 3**. &#39;Machtigingsgevoelige caching&#39; is een interessante aanpak. De Dispatcher slaat een bron in de cache op - maar voordat het wordt geleverd, vraagt het het AEM-systeem of het dat mag doen. Dit leidt tot een extra verzoek van Dispatcher aan Publish - maar het spares het Publish systeem gewoonlijk tegen het opnieuw teruggeven van een pagina als het reeds in het voorgeheugen ondergebracht is. Deze aanpak vereist echter enige aangepaste implementatie. Vind details hier in het artikel [ Vertrouwelijke caching van de Toestemming ](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html).
+**Optie 3**. &#39;Machtigingsgevoelige caching&#39; is een interessante aanpak. De Dispatcher slaat een bron in de cache op - maar voordat het wordt geleverd, vraagt het het AEM-systeem of het dat mag doen. Dit leidt tot een extra verzoek van Dispatcher aan Publish - maar het spares het Publish systeem gewoonlijk tegen het opnieuw teruggeven van een pagina als het reeds in het voorgeheugen ondergebracht is. Deze aanpak vereist echter enige aangepaste implementatie. Vind details hier in het artikel [&#x200B; Vertrouwelijke caching van de Toestemming &#x200B;](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html).
 
 **Verwijzingen**
 
-* [ helpx.adobe.com - de Bevoegdheden gevoelige caching ](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html)
+* [&#x200B; helpx.adobe.com - de Bevoegdheden gevoelige caching &#x200B;](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html)
 
 ### De respijtperiode instellen
 
@@ -1518,7 +1518,7 @@ Als u regelmatig kort na elkaar ongeldig maakt - bijvoorbeeld door een boomactiv
 
 In het onderstaande diagram ziet u een mogelijke timing bij het openen van één pagina.  Het probleem wordt natuurlijk alleen maar groter als het aantal verschillende gevraagde pagina&#39;s groter wordt.
 
-![ de Acties die van de Frequentie tot ongeldig geheime voorgeheugen voor het grootste deel van de tijd leiden ](assets/chapter-1/frequent-activations.png)
+![&#x200B; de Acties die van de Frequentie tot ongeldig geheime voorgeheugen voor het grootste deel van de tijd leiden &#x200B;](assets/chapter-1/frequent-activations.png)
 
 *de Acties die van de Frequentie tot ongeldig geheime voorgeheugen voor het grootste deel van de tijd leiden*
 
@@ -1564,7 +1564,7 @@ U gebruikt een &#39;Aangepast validatiescript&#39; (zie verwijzing) dat wordt ui
 
 Als u bijvoorbeeld de respijtperiode instelt op 30 sec, zou de Dispatcher de laatste gewijzigde datum van het bestand afronden naar de volgende 30 sec. De verzoeken van de ongeldigverklaring die binnen tussen enkel plaatsen de zelfde volgende volledige 30 sec gebeuren.
 
-![ het Postponing van de ongeldigverklaring aan volgende volledige 30 seconde verhoogt hit-rate.](assets/chapter-1/postponing-the-invalidation.png)
+![&#x200B; het Postponing van de ongeldigverklaring aan volgende volledige 30 seconde verhoogt hit-rate.](assets/chapter-1/postponing-the-invalidation.png)
 
 *het Postponing van de ongeldigverklaring aan volgende volledige 30 seconde verhoogt hit-rate.*
 
@@ -1576,7 +1576,7 @@ Deze aanpak zou kunnen helpen bij het definiëren van langere aflossingsvrije pe
 
 **Verwijzingen**
 
-[ helpx.adobe.com - de Configuratie van Dispatcher ](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)
+[&#x200B; helpx.adobe.com - de Configuratie van Dispatcher &#x200B;](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)
 
 ### Automatisch opnieuw ophalen
 
@@ -1590,13 +1590,13 @@ Aangezien deze pagina&#39;s zo populair zijn, zijn er nieuwe binnenkomende aanvr
 
 Aangezien nu het geheime voorgeheugen ongeldig is, door:sturen alle verzoeken aan de homepage die tezelfdertijd binnenkomen aan het Publish systeem dat een hoge lading produceert.
 
-![ Parallelle verzoeken aan zelfde middel op leeg geheime voorgeheugen: De verzoeken door:sturen aan Publish ](assets/chapter-1/parallel-requests.png)
+![&#x200B; Parallelle verzoeken aan zelfde middel op leeg geheime voorgeheugen: De verzoeken door:sturen aan Publish &#x200B;](assets/chapter-1/parallel-requests.png)
 
 *Parallelle verzoeken aan zelfde middel op leeg geheime voorgeheugen: De verzoeken door:sturen aan Publish*
 
 Met automatisch opnieuw ophalen kunt u dat tot op zekere hoogte beperken. De meeste ongeldig gemaakte pagina&#39;s worden na automatische validatie fysiek opgeslagen op de Dispatcher. Zij worden slechts _beschouwd_ als verkoop. _Automatisch die_ opnieuw plaatsen betekent, dat u nog deze stapelpagina&#39;s voor een paar seconden terwijl het in werking stellen van _één enkel_ verzoek aan het publicatiesysteem aandient om de schaalinhoud opnieuw op te halen:
 
-![ leverend stale inhoud terwijl het re-halen in de achtergrond ](assets/chapter-1/fetching-background.png)
+![&#x200B; leverend stale inhoud terwijl het re-halen in de achtergrond &#x200B;](assets/chapter-1/fetching-background.png)
 
 *leverend stale inhoud terwijl het re-halen in de achtergrond*
 
@@ -1635,7 +1635,7 @@ Als u de cachemap van Dispatcher bekijkt, ziet u tijdelijke bestanden gemarkeerd
 
 **Verwijzingen**
 
-[ helpx.adobe.com - het ongeldig maken van Cached Pagina&#39;s van AEM ](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)
+[&#x200B; helpx.adobe.com - het ongeldig maken van Cached Pagina&#39;s van AEM &#x200B;](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)
 
 ### Het publicatiesysteem beveiligen
 
@@ -1688,9 +1688,9 @@ Maar we stellen voor dat u overweegt de URL-ruimte zo vroeg mogelijk in de keten
 
 **Verwijzingen**
 
-[ apache.org- sethandler richtlijn ](https://httpd.apache.org/docs/2.4/mod/core.html#sethandler)
+[&#x200B; apache.org- sethandler richtlijn &#x200B;](https://httpd.apache.org/docs/2.4/mod/core.html#sethandler)
 
-[ helpx.adobe.com - het Vormen Toegang tot de Filter van de Inhoud ](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#ConfiguringAccesstoContentfilter)
+[&#x200B; helpx.adobe.com - het Vormen Toegang tot de Filter van de Inhoud &#x200B;](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#ConfiguringAccesstoContentfilter)
 
 ### Filteren met reguliere expressies en algemene weergaven
 
@@ -1843,7 +1843,7 @@ U zult waarschijnlijk een nieuwe regel toevoegen aan een van de groepen - of mis
 
 **Verwijzingen**
 
-[ helpx.adobe.com - het ontwerpen van Patronen voor globale Eigenschappen ](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#DesigningPatternsforglobProperties)
+[&#x200B; helpx.adobe.com - het ontwerpen van Patronen voor globale Eigenschappen &#x200B;](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#DesigningPatternsforglobProperties)
 
 ### Protocol Specificatie
 
@@ -1906,17 +1906,17 @@ Geef een lijst weer van de URL&#39;s die u na de validatie direct opnieuw wilt o
 
 ## Aanvullende bronnen
 
-Een goed overzicht en inleiding aan Dispatcher caching: [ https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
+Een goed overzicht en inleiding aan Dispatcher caching: [&#x200B; https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
 
-De documentatie van Dispatcher met alle verklaarde richtlijnen: [ https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)
+De documentatie van Dispatcher met alle verklaarde richtlijnen: [&#x200B; https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)
 
-Sommige vaak gestelde vragen: [ https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html)
+Sommige vaak gestelde vragen: [&#x200B; https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html)
 
-Opname van een webinar over Dispatcher optimalisering - hoogst geadviseerd: [ https://my.adobeconnect.com/p7th2gf8k43?proto=true ](https://my.adobeconnect.com/p7th2gf8k43?proto=true)
+Opname van een webinar over Dispatcher optimalisering - hoogst geadviseerd: [&#x200B; https://my.adobeconnect.com/p7th2gf8k43?proto=true &#x200B;](https://my.adobeconnect.com/p7th2gf8k43?proto=true)
 
-Presentatie &quot;de ondergewaardeerde macht van inhoudsafschrijving&quot;, &quot;adjustTo ()&quot;conferentie in Potsdam 2018 [ https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html ](https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html)
+Presentatie &quot;de ondergewaardeerde macht van inhoudsafschrijving&quot;, &quot;adjustTo ()&quot;conferentie in Potsdam 2018 [&#x200B; https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html &#x200B;](https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html)
 
-Het ongeldig maken van Cached Pagina&#39;s van AEM: [ https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)
+Het ongeldig maken van Cached Pagina&#39;s van AEM: [&#x200B; https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)
 
 ## Volgende stap
 

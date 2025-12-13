@@ -25,22 +25,22 @@ HTTP/HTTPS-verbindingen worden automatisch vanuit AEM as a Cloud Service met een
 
 Het volgende codevoorbeeld wordt gesteund door de volgende geavanceerde voorzien van een netwerkopties.
 
-Verzeker het [ specifieke IP adres van de uitgang of VPN ](../advanced-networking.md#advanced-networking) geavanceerde voorzien van een netwerkconfiguratie opstelling voorafgaand aan het volgen van dit leerprogramma is geweest.
+Verzeker het [&#x200B; specifieke IP adres van de uitgang of VPN &#x200B;](../advanced-networking.md#advanced-networking) geavanceerde voorzien van een netwerkconfiguratie opstelling voorafgaand aan het volgen van dit leerprogramma is geweest.
 
-| Geen geavanceerde netwerken | [ Flexibele havenuitgang ](../flexible-port-egress.md) | [ Dedicated egress IP adres ](../dedicated-egress-ip-address.md) | [ Virtueel Privé Netwerk ](../vpn.md) |
+| Geen geavanceerde netwerken | [&#x200B; Flexibele havenuitgang &#x200B;](../flexible-port-egress.md) | [&#x200B; Dedicated egress IP adres &#x200B;](../dedicated-egress-ip-address.md) | [&#x200B; Virtueel Privé Netwerk &#x200B;](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✘ | ✔ | ✔ |
 
 >[!CAUTION]
 >
-> Dit codevoorbeeld is slechts voor [ Speciale IP van de Eis adres ](../dedicated-egress-ip-address.md) en [ VPN ](../vpn.md). Een gelijkaardig, maar verschillend codevoorbeeld is beschikbaar voor [ verbindingen HTTP/HTTPS op niet-standaardhavens voor de Flexibele Nauw van de Haven ](./http-on-non-standard-ports-flexible-port-egress.md).
+> Dit codevoorbeeld is slechts voor [&#x200B; Speciale IP van de Eis adres &#x200B;](../dedicated-egress-ip-address.md) en [&#x200B; VPN &#x200B;](../vpn.md). Een gelijkaardig, maar verschillend codevoorbeeld is beschikbaar voor [&#x200B; verbindingen HTTP/HTTPS op niet-standaardhavens voor de Flexibele Nauw van de Haven &#x200B;](./http-on-non-standard-ports-flexible-port-egress.md).
 
 ## Codevoorbeeld
 
 Dit Java™ codevoorbeeld is van de dienst OSGi die in AEM as a Cloud Service kan lopen die een verbinding van HTTP met een externe Webserver op 8080 maakt. De HTTPS (of HTTP) verbindingen worden automatisch verlengd uit AEM as a Cloud Service, en vereisen geen speciale ontwikkeling.
 
 >[!NOTE]
-> Het wordt geadviseerd [ Java™ 11 HTTP APIs ](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) wordt gebruikt om HTTP/HTTPS vraag van AEM te maken.
+> Het wordt geadviseerd [&#x200B; Java™ 11 HTTP APIs &#x200B;](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) wordt gebruikt om HTTP/HTTPS vraag van AEM te maken.
 
 + `core/src/com/adobe/aem/wknd/examples/connections/impl/HttpExternalServiceImpl.java`
 
