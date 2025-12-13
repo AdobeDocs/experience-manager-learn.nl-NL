@@ -26,7 +26,7 @@ Inhoud die in de CDN is opgeslagen, verkleint de latentie die websitegebruikers 
 Leer hoe te om de AEM as a Cloud Service verstrekte **CDN logboeken** te analyseren en inzichten zoals **de verhouding van het geheim voorgeheugenhit**, en **bovenkant URLs van _MISS_ en _PASS_ geheim voorgeheugentypes**, voor optimalisatiedoeleinden.
 
 
-De CDN-logbestanden zijn beschikbaar in de JSON-indeling, die verschillende velden bevat, waaronder `url` , `cache` . Voor meer informatie, zie het [&#x200B; Formaat van het Logboek CDN &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=en#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs). Het `cache` gebied verstrekt informatie over _staat van het geheime voorgeheugen_ en zijn mogelijke waarden zijn HIT, MISS, of PASS. Laten we de details van mogelijke waarden bekijken.
+De CDN-logbestanden zijn beschikbaar in de JSON-indeling, die verschillende velden bevat, waaronder `url` , `cache` . Voor meer informatie, zie het [&#x200B; Formaat van het Logboek CDN &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=nl-NL#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs). Het `cache` gebied verstrekt informatie over _staat van het geheime voorgeheugen_ en zijn mogelijke waarden zijn HIT, MISS, of PASS. Laten we de details van mogelijke waarden bekijken.
 
 | Status van cache </br> Mogelijke waarde | Beschrijving |
 |------------------------------------|:-----------------------------------------------------:|
@@ -61,13 +61,13 @@ Als het gedownloade logboekdossier van _vandaag_ is de dossieruitbreiding `.log`
 
 ## Gedownloade CDN-logboeken analyseren
 
-Analyseer het gedownloade CDN-logbestand om inzicht te krijgen in bijvoorbeeld de verhouding van cachereeks en de URL&#39;s van de bovenste URL&#39;s van MISS- en PASS-cachetypen. Deze inzichten helpen om de [&#x200B; CDN geheim voorgeheugenconfiguratie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching) te optimaliseren en de plaatsprestaties te verbeteren.
+Analyseer het gedownloade CDN-logbestand om inzicht te krijgen in bijvoorbeeld de verhouding van cachereeks en de URL&#39;s van de bovenste URL&#39;s van MISS- en PASS-cachetypen. Deze inzichten helpen om de [&#x200B; CDN geheim voorgeheugenconfiguratie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching) te optimaliseren en de plaatsprestaties te verbeteren.
 
 In deze zelfstudie worden drie opties beschreven voor het analyseren van de CDN-logboeken:
 
 1. **Elasticsearch, Logstash, en Kibana (ELK)**: [&#x200B; het dashboard van de ELK tooling &#x200B;](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) kan plaatselijk worden geïnstalleerd.
-1. **Splunk**: Het [&#x200B; dashboard van het Splunk &#x200B;](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) vereist toegang tot Splunk en [&#x200B; AEMCS logboek door:sturen toegelaten &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) om de CDN- logboeken in te nemen.
-1. **Jupyter Notitieboekje**: Het kan ver als deel van [&#x200B; Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) worden betreden zonder extra software te installeren, voor klanten die Adobe Experience Platform in licentie hebben gegeven.
+1. **Splunk**: Het [&#x200B; dashboard van het Splunk &#x200B;](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) vereist toegang tot Splunk en [&#x200B; AEMCS logboek door:sturen toegelaten &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) om de CDN- logboeken in te nemen.
+1. **Jupyter Notitieboekje**: Het kan ver als deel van [&#x200B; Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) worden betreden zonder extra software te installeren, voor klanten die Adobe Experience Platform in licentie hebben gegeven.
 
 ### Optie 1: ELK-dashboard gebruiken
 
@@ -149,7 +149,7 @@ Om de belangrijkste details te identificeren, gebruiken wij het [&#x200B; AEMCS-
 
 Voor degenen die liever geen software lokaal installeren (dat wil zeggen het gereedschap voor het ELK-dashboard uit de vorige sectie), is er een andere optie, maar is een licentie voor Adobe Experience Platform vereist.
 
-Het [&#x200B; Jupyter Notitieboekje &#x200B;](https://jupyter.org/) is een open-bronWebtoepassing die u documenten laat creëren die code, tekst, en visualisatie bevatten. Het wordt gebruikt voor gegevenstransformatie, visualisatie, en statistische modellering. Het kan ver worden betreden [&#x200B; als deel van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data).
+Het [&#x200B; Jupyter Notitieboekje &#x200B;](https://jupyter.org/) is een open-bronWebtoepassing die u documenten laat creëren die code, tekst, en visualisatie bevatten. Het wordt gebruikt voor gegevenstransformatie, visualisatie, en statistische modellering. Het kan ver worden betreden [&#x200B; als deel van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data).
 
 #### Het interactieve Python-laptopbestand downloaden
 
@@ -200,6 +200,6 @@ U kunt het Notitieboekje van de Jupyter verbeteren om de logboeken te analyseren
 
 Nadat u de CDN-logboeken hebt geanalyseerd, kunt u de CDN-cacheconfiguratie optimaliseren om de siteprestaties te verbeteren. De beste manier van AEM is om een cache-raakverhouding van 90% of hoger te hebben.
 
-Voor meer informatie, zie [&#x200B; Optimize CDN de Configuratie van het Geheime voorgeheugen &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching).
+Voor meer informatie, zie [&#x200B; Optimize CDN de Configuratie van het Geheime voorgeheugen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching).
 
 Het project van AEM WKND heeft een verwijzingsCDN configuratie, voor meer informatie, zie [&#x200B; Configuratie 0&rbrace; CDN van het &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L137-L190) dossier.`wknd.vhost`

@@ -140,7 +140,7 @@ Om te bevestigen dat de integratie correct werkt, test de uitvoerfunctionaliteit
 
 ## Aanvullende bronnen
 
-- [&#x200B; overzicht van doel API &#x200B;](https://experienceleague.adobe.com/en/docs/target-dev/developer/api/target-api-overview)
-- [&#x200B; Aanbieding van het Doel &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/experiences/offers/manage-content)
+- [&#x200B; overzicht van doel API &#x200B;](https://experienceleague.adobe.com/nl/docs/target-dev/developer/api/target-api-overview)
+- [&#x200B; Aanbieding van het Doel &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/experiences/offers/manage-content)
 - [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/developer-console/docs/guides/)
-- [&#x200B; Fragmenten van de Ervaring in AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use)
+- [&#x200B; Fragmenten van de Ervaring in AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use)

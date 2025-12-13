@@ -208,7 +208,7 @@ Als er andere gegevens nodig zijn om de aangepaste kolom te vullen, kunnen HTTP-
 
 >[!IMPORTANT]
 >
-> Zorg ervoor dat de instantie van de Auteur van AEM wordt gevormd om [&#x200B; verzoeken van de dwars-oorsprong &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) van de oorsprong toe te staan app AppBuilder loopt. Tot de toegestane oorsprong behoren `https://localhost:9080`, de oorsprong van het werkgebied van AppBuilder en de oorsprong van de AppBuilder-productie.
+> Zorg ervoor dat de instantie van de Auteur van AEM wordt gevormd om [&#x200B; verzoeken van de dwars-oorsprong &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=nl-NL) van de oorsprong toe te staan app AppBuilder loopt. Tot de toegestane oorsprong behoren `https://localhost:9080`, de oorsprong van het werkgebied van AppBuilder en de oorsprong van de AppBuilder-productie.
 >
 > Alternatief, kan de uitbreiding een actie van douane [&#x200B; AppBuilder &#x200B;](../../runtime-action.md) roepen die het verzoek aan de Auteur van AEM namens de uitbreiding doet.
 

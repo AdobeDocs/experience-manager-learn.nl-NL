@@ -214,7 +214,7 @@ De effecten voor het toewijzen van objecten aan AEM die op `http` en `localhost`
 
 ## Beveiligingsbeleid voor het delen van bronnen tussen verschillende bronnen
 
-Configureer vervolgens AEM om de inhoud te beschermen, zodat alleen deze SPA toegang heeft tot de AEM-inhoud. Vorm [&#x200B; het Delen van het Middel van de Cross-Origin in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html).
+Configureer vervolgens AEM om de inhoud te beschermen, zodat alleen deze SPA toegang heeft tot de AEM-inhoud. Vorm [&#x200B; het Delen van het Middel van de Cross-Origin in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=nl-NL).
 
 1. Open het subproject `ui.config` Maven in uw IDE
 1. Navigeren `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`

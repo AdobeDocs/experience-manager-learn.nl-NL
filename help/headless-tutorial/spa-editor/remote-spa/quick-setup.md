@@ -36,7 +36,7 @@ _A videolooppas-door van de snelle opstelling_
 
 Voor deze zelfstudie is het volgende vereist:
 
-+ [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en)
++ [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL)
 + [&#x200B; Node.js v18 &#x200B;](https://nodejs.org/en/)
 + [&#x200B; Java™ 11 &#x200B;](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [&#x200B; Gemaakt 3.6+ &#x200B;](https://maven.apache.org/)

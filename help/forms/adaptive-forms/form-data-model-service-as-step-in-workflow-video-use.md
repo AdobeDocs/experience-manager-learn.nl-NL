@@ -32,7 +32,7 @@ Volg onderstaande instructies om deze mogelijkheid op uw server te testen
   >
   >In AEM Forms 6.5 en hierboven is dit vermogen beschikbaar uit de doos zoals [&#x200B; hier &#x200B;](form-data-model-service-as-step-in-aem65-workflow-video-use.md) beschrijven
 
-* Opstelling tomcat met het dossier SampleRest.war zoals die [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html) wordt beschreven.Het oorlogsdossier in Tomcat wordt opgesteld heeft de code om de het creditscore van de aanvrager terug te keren. De creditscore is een willekeurig getal tussen 200 en 800
+* Opstelling tomcat met het dossier SampleRest.war zoals die [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html?lang=nl-NL) wordt beschreven.Het oorlogsdossier in Tomcat wordt opgesteld heeft de code om de het creditscore van de aanvrager terug te keren. De creditscore is een willekeurig getal tussen 200 en 800
 
 * [&#x200B; de Invoer de activa in AEM gebruikend pakketmanager &#x200B;](assets/invoke-fdm-as-service-step.zip).Het pakket bevat het volgende:
 

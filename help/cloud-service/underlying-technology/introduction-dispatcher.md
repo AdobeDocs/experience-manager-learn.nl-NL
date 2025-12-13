@@ -26,4 +26,4 @@ Een inleiding tot de mogelijkheden en eigenschappen van [!DNL dispatcher] als de
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [[!DNL Dispatcher]  documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+* [[!DNL Dispatcher]  documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL)

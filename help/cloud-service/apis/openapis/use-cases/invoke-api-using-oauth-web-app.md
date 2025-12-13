@@ -497,7 +497,7 @@ Volg de instructies van het [&#x200B; op OpenAPI-Gebaseerde artikel van AEM APIs
 
 Door gebrek, heeft het project van Plaatsen WKND niet het vereiste schema van activa meta-gegevens om de productattributen te tonen. Laten we het metagegevensschema voor elementen maken en toepassen op een elementenmap in de AEM-instantie.
 
-1. Meld u aan bij de AEM as a Cloud Service Asset-instantie. Gebruikend de [&#x200B; mening van Activa &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views) navigeert aan de `/content/dam/wknd-shared/en` omslag.
+1. Meld u aan bij de AEM as a Cloud Service Asset-instantie. Gebruikend de [&#x200B; mening van Activa &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/authoring/switch-views) navigeert aan de `/content/dam/wknd-shared/en` omslag.
 
    ![&#x200B; ga aan omslag &#x200B;](../assets/web-app/navigate-to-folder.png)
 

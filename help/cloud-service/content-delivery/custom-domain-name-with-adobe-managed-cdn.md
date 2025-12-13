@@ -40,7 +40,7 @@ De stappen op hoog niveau zijn:
    - De Autoriteit van het certificaat (CA) - om het ondertekende certificaat voor uw plaatsdomein, als [&#x200B; DigitCert &#x200B;](https://www.digicert.com/) te verzoeken
    - De het ontvangen dienst van het Systeem van de Naam van het domein (DNS) - om DNS verslagen voor uw douanedomein, zoals Azure DNS, of Route 53 van AWS toe te voegen.
 - De toegang tot [&#x200B; Cloud Manager van Adobe &#x200B;](https://my.cloudmanager.adobe.com/) als **BedrijfsEigenaar** of **rol van de Manager van de Plaatsing**.
-- De plaats van de steekproef [&#x200B; AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) wordt opgesteld aan het milieu van AEM as a Cloud Service van [&#x200B; het type van het productieprogramma &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
+- De plaats van de steekproef [&#x200B; AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) wordt opgesteld aan het milieu van AEM as a Cloud Service van [&#x200B; het type van het productieprogramma &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
 
 Als u geen toegang tot derdediensten hebt, _samenwerken met uw veiligheid of het ontvangen team om de stappen_ te voltooien.
 
@@ -83,7 +83,7 @@ In dit leerprogramma, wordt het [&#x200B; ondertekende certificaat DigitCert &#x
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427906?quality=12&learn=on)
 
-Om het SSL certificaat in Cloud Manager toe te voegen, volg [&#x200B; SSL Certificaat &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate) documentatie toevoegen.
+Om het SSL certificaat in Cloud Manager toe te voegen, volg [&#x200B; SSL Certificaat &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate) documentatie toevoegen.
 
 ## Domeinnaamverificatie
 
@@ -91,8 +91,8 @@ Om het SSL certificaat in Cloud Manager toe te voegen, volg [&#x200B; SSL Certif
 
 Voer de volgende stappen uit om de domeinnaam te controleren:
 
-- Voeg een domeinnaam in Cloud Manager toe door [&#x200B; te volgen voeg de documentatie van de naam van het douanedomein &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name) toe.
-- Voeg een AEM-specifiek [&#x200B; TXT verslag &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-text-record) in uw DNS het ontvangen dienst toe.
+- Voeg een domeinnaam in Cloud Manager toe door [&#x200B; te volgen voeg de documentatie van de naam van het douanedomein &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name) toe.
+- Voeg een AEM-specifiek [&#x200B; TXT verslag &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-text-record) in uw DNS het ontvangen dienst toe.
 - Verifieer de bovenstaande stappen door de DNS servers te vragen gebruikend het `dig` bevel.
 
 ```bash
@@ -128,7 +128,7 @@ _aemverification.wknd.enablementadobe.com. 3600    IN TXT "adobe-aem-verificatio
 
 Deze zelfstudie gebruikt Azure DNS, maar elke DNS-provider kan worden gebruikt. Om het TXT- verslag toe te voegen, moet u de documentatie van uw DNS het ontvangen dienst volgen.
 
-Herzie [&#x200B; controlerend de status van de domeinnaam &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status) documentatie als er een kwestie is.
+Herzie [&#x200B; controlerend de status van de domeinnaam &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status) documentatie als er een kwestie is.
 
 ## DNS-record configureren
 
@@ -136,9 +136,9 @@ Herzie [&#x200B; controlerend de status van de domeinnaam &#x200B;](https://expe
 
 Om het DNS verslag voor uw douanedomein te vormen volg deze stappen:
 
-1. Bepaal het DNS verslagtype (CNAME of APEX) dat op het domeintype, zoals worteldomein (APEX) of subdomain (CNAME) wordt gebaseerd, en volg de [&#x200B; Vormende DNS documentatie van Montages &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings).
+1. Bepaal het DNS verslagtype (CNAME of APEX) dat op het domeintype, zoals worteldomein (APEX) of subdomain (CNAME) wordt gebaseerd, en volg de [&#x200B; Vormende DNS documentatie van Montages &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings).
 1. Voeg het DNS-record toe aan uw DNS-hostingservice.
-1. Trigger de DNS verslagbevestiging door de [&#x200B; controlerende DNS documentatie van de Status van het Verslag &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status) te volgen.
+1. Trigger de DNS verslagbevestiging door de [&#x200B; controlerende DNS documentatie van de Status van het Verslag &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status) te volgen.
 
 In dit leerprogramma, aangezien a **subdomain** `wknd.enablementadobe.com` wordt gebruikt, wordt het CNAME- verslagtype dat aan `cdn.adobeaemcloud.com` richt toegevoegd.
 

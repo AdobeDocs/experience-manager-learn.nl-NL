@@ -38,7 +38,7 @@ Dit leerprogramma toont aan hoe te om **DOS-BESCHERMING** regel van CRS toe te l
 
 >[!TIP]
 >
->Het is belangrijk om nota te nemen, voldoet AEM as a Cloud Service [&#x200B; beheerde CDN &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) aan de prestaties en de veiligheidsvereisten van de meeste klant. Nochtans, verstrekt ModSecurity een extra laag van veiligheid en staat klant-specifieke regels, en configuraties toe.
+>Het is belangrijk om nota te nemen, voldoet AEM as a Cloud Service [&#x200B; beheerde CDN &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=nl-NL) aan de prestaties en de veiligheidsvereisten van de meeste klant. Nochtans, verstrekt ModSecurity een extra laag van veiligheid en staat klant-specifieke regels, en configuraties toe.
 
 ## CRS toevoegen aan Dispatcher-projectmodule
 
@@ -228,7 +228,7 @@ Al bovengenoemde _CRS ModSecurity_ en _DOS-BESCHERMING_ configuraties zijn besch
 
 ### Dispatcher-configuratie valideren
 
-Wanneer het werken met AEM as a Cloud Service, alvorens uw _configuratie van Dispatcher_ veranderingen op te stellen, wordt het geadviseerd om hen plaatselijk te bevestigen gebruikend `validate` manuscript van [&#x200B; AEM SDK Dispatcher Tools &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html).
+Wanneer het werken met AEM as a Cloud Service, alvorens uw _configuratie van Dispatcher_ veranderingen op te stellen, wordt het geadviseerd om hen plaatselijk te bevestigen gebruikend `validate` manuscript van [&#x200B; AEM SDK Dispatcher Tools &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=nl-NL).
 
 ```
 # Go inside Dispatcher SDK 'bin' directory
@@ -240,11 +240,11 @@ $ ./validate.sh <YOUR-AEM-PROJECT-CODE-DIR>/dispatcher/src
 
 ## Implementeren
 
-Stel de plaatselijk bevestigde configuraties van Dispatcher op gebruikend de Cloud Manager [&#x200B; Rij van het Web &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?#web-tier-config) of [&#x200B; Volledige pijpleiding van de Stapel &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?#full-stack-code). U kunt het [&#x200B; Snelle Milieu van de Ontwikkeling &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html) voor snellere het doorgeven tijd ook gebruiken.
+Stel de plaatselijk bevestigde configuraties van Dispatcher op gebruikend de Cloud Manager [&#x200B; Rij van het Web &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=nl-NL&#web-tier-config) of [&#x200B; Volledige pijpleiding van de Stapel &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=nl-NL&#full-stack-code). U kunt het [&#x200B; Snelle Milieu van de Ontwikkeling &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html?lang=nl-NL) voor snellere het doorgeven tijd ook gebruiken.
 
 ## Verifiëren
 
-Om de bescherming van Dos, in dit voorbeeld te verifiëren, verzenden meer dan 50 verzoeken (25 verzoekdrempel keer twee voorkomen) binnen een spanwijdte van 60 seconden. Nochtans, zouden deze verzoeken door AEM as a Cloud Service [&#x200B; moeten overgaan ingebouwd &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) of om het even welk [&#x200B; andere CDN &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?#point-to-point-CDN) die uw website vooraf gaat.
+Om de bescherming van Dos, in dit voorbeeld te verifiëren, verzenden meer dan 50 verzoeken (25 verzoekdrempel keer twee voorkomen) binnen een spanwijdte van 60 seconden. Nochtans, zouden deze verzoeken door AEM as a Cloud Service [&#x200B; moeten overgaan ingebouwd &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=nl-NL) of om het even welk [&#x200B; andere CDN &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=nl-NL&#point-to-point-CDN) die uw website vooraf gaat.
 
 Één techniek om CDN over:geven-door te bereiken moet een vraagparameter met a **nieuwe willekeurige waarde op elk verzoek van de plaatspagina toevoegen**.
 

@@ -57,7 +57,7 @@ De details van het Team zoals titel, beschrijving, en teamleden worden opgeslage
 
 De inhoud voor de React-app wordt geleverd door AEM met behulp van GraphQL API&#39;s en de gebruikersinterface is samengesteld met behulp van twee React-componenten, `Teams` en `Person` .
 
-Een overeenkomstige leerprogramma is beschikbaar om te leren hoe te om de **Teams van WKND** Reageren app te bouwen. U kunt het leerprogramma [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview) vinden.
+Een overeenkomstige leerprogramma is beschikbaar om te leren hoe te om de **Teams van WKND** Reageren app te bouwen. U kunt het leerprogramma [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview) vinden.
 
 ## Volgende stap
 

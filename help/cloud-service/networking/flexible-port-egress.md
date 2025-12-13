@@ -30,7 +30,7 @@ Een programma van Cloud Manager kan het type van a __enige__ netwerkinfrastructu
 
 >[!MORELIKETHIS]
 >
-> Lees de AEM as a Cloud Service [&#x200B; geavanceerde documentatie van de netwerkconfiguratie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) voor meer details op flexibele havenuitgang.
+> Lees de AEM as a Cloud Service [&#x200B; geavanceerde documentatie van de netwerkconfiguratie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) voor meer details op flexibele havenuitgang.
 
 
 ## Vereisten
@@ -45,7 +45,7 @@ Het volgende is vereist wanneer u flexibele poorttoegang instelt of configureert
 + Cloud Manager-programma-id
 + De milieu-id&#39;s van Cloud Manager
 
-Voor meer details [&#x200B; overzicht hoe te opstelling, vorm, en verkrijg de geloofsbrieven van de Manager van de Wolk API &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), om hen te gebruiken om een Cloud Manager API vraag te maken.
+Voor meer details [&#x200B; overzicht hoe te opstelling, vorm, en verkrijg de geloofsbrieven van de Manager van de Wolk API &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), om hen te gebruiken om een Cloud Manager API vraag te maken.
 
 Deze zelfstudie gebruikt `curl` om de Cloud Manager API-configuraties te maken. De opgegeven `curl` -opdrachten nemen een Linux/macOS-syntaxis aan. Als u de Windows-opdrachtregel gebruikt, vervangt u het teken voor het `\` regeleinde door `^` .
 
@@ -87,7 +87,7 @@ Flexibele poortuitgang kan worden ingeschakeld met Cloud Manager API&#39;s. In d
 
 1. Eerst, bepaal het gebied Geavanceerd Voorzien van een netwerk binnen door de Cloud Manager API [&#x200B; listRegions &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) verrichting te gebruiken. `region name` is vereist om volgende Cloud Manager API-aanroepen te kunnen uitvoeren. Doorgaans wordt de regio waarin de productieomgeving zich bevindt, gebruikt.
 
-   Vind het gebied van uw milieu van AEM as a Cloud Service in [&#x200B; Cloud Manager &#x200B;](https://my.cloudmanager.adobe.com) onder de [&#x200B; details van het milieu &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). De gebiedsnaam die in Cloud Manager wordt getoond kan [&#x200B; aan de gebiedscode &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) worden in kaart gebracht die in Cloud Manager API wordt gebruikt.
+   Vind het gebied van uw milieu van AEM as a Cloud Service in [&#x200B; Cloud Manager &#x200B;](https://my.cloudmanager.adobe.com) onder de [&#x200B; details van het milieu &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). De gebiedsnaam die in Cloud Manager wordt getoond kan [&#x200B; aan de gebiedscode &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) worden in kaart gebracht die in Cloud Manager API wordt gebruikt.
 
    __listRegions HTTP- verzoek__
 
@@ -221,7 +221,7 @@ Wanneer u HTTP/HTTPS-aanroepen uitvoert naar externe services op niet-standaard 
 
 >[!TIP]
 >
-> Zie de flexibele documentatie van de havenuitgang van AEM as a Cloud Service voor [&#x200B; de volledige reeks het verpletteren van regels &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
+> Zie de flexibele documentatie van de havenuitgang van AEM as a Cloud Service voor [&#x200B; de volledige reeks het verpletteren van regels &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 #### Codevoorbeelden
 

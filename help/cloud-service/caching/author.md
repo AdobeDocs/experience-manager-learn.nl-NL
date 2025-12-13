@@ -35,7 +35,7 @@ De dienst van de Auteur van AEM gebruikt CDN, nochtans is zijn doel de levering 
 
 De AEM-auteur-CDN bevindt zich tussen de eindgebruiker, meestal een markteur of auteur van inhoud, en de AEM-auteur. Er worden onveranderlijke bestanden in het cachegeheugen opgeslagen, zoals statische elementen die de AEM-ontwerpervaring versterken, en niet geschreven inhoud.
 
-CDN van de Auteur van AEM leidt verscheidene types van middelen in het voorgeheugen op die van belang kunnen zijn, met inbegrip van a [&#x200B; klantgerichte TTL op Verlengde Vragen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?author-instances), en a [&#x200B; lange TTL op de Bibliotheken van de douaneCliënt &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#client-side-libraries).
+CDN van de Auteur van AEM leidt verscheidene types van middelen in het voorgeheugen op die van belang kunnen zijn, met inbegrip van a [&#x200B; klantgerichte TTL op Verlengde Vragen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=nl-NL&author-instances), en a [&#x200B; lange TTL op de Bibliotheken van de douaneCliënt &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=nl-NL#client-side-libraries).
 
 ### Standaardcache-levensduur
 
@@ -43,9 +43,9 @@ De volgende klant die middelen onder ogen ziet worden in het voorgeheugen onderg
 
 | Inhoudstype | Standaardlevensduur van CDN-cache |
 |:------------ |:---------- |
-| [&#x200B; Blijven vragen (JSON) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?author-instances) | 1 minuut |
-| [&#x200B; de bibliotheken van de Cliënt (JS/CSS) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#client-side-libraries) | dertig dagen |
-| [&#x200B; Al het andere &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content) | Niet in cache geplaatst |
+| [&#x200B; Blijven vragen (JSON) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=nl-NL&author-instances) | 1 minuut |
+| [&#x200B; de bibliotheken van de Cliënt (JS/CSS) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=nl-NL#client-side-libraries) | dertig dagen |
+| [&#x200B; Al het andere &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=nl-NL#other-content) | Niet in cache geplaatst |
 
 
 ## AEM Dispatcher

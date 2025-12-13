@@ -55,7 +55,7 @@ De regelreeksen helpen klanten gemeenschappelijke en gesofisticeerde Webbedreigi
 
 De standaardregels van de verkeersfilter zijn nuttig om zaken-specifiek beleid, zoals tariefgrenzen of het blokkeren van specifieke gebieden af te dwingen, evenals het blokkeren van verkeer dat op verzoekeigenschappen en kopballen zoals IP adres, weg of gebruikersagent wordt gebaseerd.
 De WAF-regels voor verkeersfilters bieden daarentegen een uitgebreide proactieve bescherming voor bekende web-exploits en aanvalsvectoren, en beschikken over geavanceerde intelligentie om valse positieven te beperken (d.w.z. om legitiem verkeer te blokkeren).
-Om beide soorten regels te bepalen, gebruikt u de syntaxis YAML, zie [&#x200B; Syntaxis van de Regels van de Filterregel van 0&rbrace; Verkeer voor meer details.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax)
+Om beide soorten regels te bepalen, gebruikt u de syntaxis YAML, zie [&#x200B; Syntaxis van de Regels van de Filterregel van 0&rbrace; Verkeer voor meer details.](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax)
 
 ## Wanneer en waarom gebruiken ze
 
@@ -291,4 +291,4 @@ Voor meer geavanceerde scenario&#39;s, kunt u de volgende gebruiksgevallen onder
 
 ## Aanvullende bronnen
 
-- [&#x200B; Regels van de Filter van het Verkeer met inbegrip van de Regels van WAF &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
+- [&#x200B; Regels van de Filter van het Verkeer met inbegrip van de Regels van WAF &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)

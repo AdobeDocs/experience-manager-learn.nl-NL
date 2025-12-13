@@ -333,7 +333,7 @@ OSGi-configuraties per omgeving (`config.publish.dev`, `config.publish.stage` en
 
 ### Codering gebruiken
 
-Wanneer [&#x200B; het coderen van de bevestiging AuthnRequest en SAML &#x200B;](#encrypting-the-authnrequest-and-saml-assertion), worden de volgende eigenschappen vereist: `useEncryption`, `spPrivateKeyAlias`, en `keyStorePassword`. `keyStorePassword` bevat een wachtwoord daarom moet de waarde niet in het OSGi configuratiedossier worden opgeslagen, maar eerder ingespoten gebruikend [&#x200B; geheime configuratiewaarden &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)
+Wanneer [&#x200B; het coderen van de bevestiging AuthnRequest en SAML &#x200B;](#encrypting-the-authnrequest-and-saml-assertion), worden de volgende eigenschappen vereist: `useEncryption`, `spPrivateKeyAlias`, en `keyStorePassword`. `keyStorePassword` bevat een wachtwoord daarom moet de waarde niet in het OSGi configuratiedossier worden opgeslagen, maar eerder ingespoten gebruikend [&#x200B; geheime configuratiewaarden &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=nl-NL#secret-configuration-values)
 
 +++Werk eventueel de configuratie OSGi bij om encryptie te gebruiken
 
@@ -366,7 +366,7 @@ Wanneer [&#x200B; het coderen van de bevestiging AuthnRequest en SAML &#x200B;](
 
 + `useEncryption` ingesteld op `true`
 + `spPrivateKeyAlias` bevat de alias van het sleutelarchiefitem voor de persoonlijke sleutel die door de integratie van SAML wordt gebruikt.
-+ `keyStorePassword` bevat een [&#x200B; OSGi geheime configuratievariabele &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values) die het `authentication-service` wachtwoord van het gebruikerssleutelarchief bevat.
++ `keyStorePassword` bevat een [&#x200B; OSGi geheime configuratievariabele &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=nl-NL#secret-configuration-values) die het `authentication-service` wachtwoord van het gebruikerssleutelarchief bevat.
 
 +++
 
@@ -452,7 +452,7 @@ Het dynamische Lidmaatschap van de Groep is een eigenschap in [&#x200B; Apache J
 ### Hoe te om Dynamisch Lidmaatschap van de Groep voor de Gebruikers van SAML in nieuwe milieu&#39;s toe te laten
 
 Om de prestaties van de groepsevaluatie in nieuwe AEM as a Cloud Service-omgevingen aanzienlijk te verbeteren, wordt de activering van de functie Dynamic Group Membership aanbevolen in nieuwe omgevingen.
-Dit is ook een noodzakelijke stap wanneer de gegevenssynchronisatie wordt geactiveerd. Meer details [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier).
+Dit is ook een noodzakelijke stap wanneer de gegevenssynchronisatie wordt geactiveerd. Meer details [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier).
 Hiervoor voegt u de volgende eigenschap toe aan het configuratiebestand van OSGI:
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
@@ -583,7 +583,7 @@ De SAML authentificatiestroom kan van een Web-pagina van de Plaats van AEM worde
 
 ## Beveiligd in cache plaatsen tijdens gebruik van SAML
 
-Op de AEM-publicatie-instantie worden de meeste pagina&#39;s doorgaans in cache geplaatst. Nochtans, voor SAML-Beschermde wegen, zou caching of moeten worden onbruikbaar gemaakt of beveiligd caching toegelaten gebruikend de configuratie auth_checker. Voor meer informatie, gelieve te verwijzen naar de details [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/permissions-cache) worden verstrekt
+Op de AEM-publicatie-instantie worden de meeste pagina&#39;s doorgaans in cache geplaatst. Nochtans, voor SAML-Beschermde wegen, zou caching of moeten worden onbruikbaar gemaakt of beveiligd caching toegelaten gebruikend de configuratie auth_checker. Voor meer informatie, gelieve te verwijzen naar de details [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/configuring/permissions-cache) worden verstrekt
 
 Houd er rekening mee dat als u beveiligde paden in de cache plaatst zonder de AUth_checker in te schakelen, dit onvoorspelbaar gedrag kan veroorzaken.
 

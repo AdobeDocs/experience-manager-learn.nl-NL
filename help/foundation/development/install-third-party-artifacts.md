@@ -27,7 +27,7 @@ De **derdeartefacten** kunnen zijn:
 
 - [&#x200B; OSGi bundel &#x200B;](https://www.osgi.org/resources/architecture/): Een bundel OSGi is een Java™ archiefdossier dat de klassen, de middelen van Java bevat, en manifest die de bundel en zijn gebiedsdelen beschrijft.
 - [&#x200B; Java jar &#x200B;](https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html): Een Java™ archiefdossier dat de klassen en de middelen van Java bevat.
-- [&#x200B; Pakket &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#what-are-packages): Een pakket is een zip dossier dat bewaarplaats inhoud in dossier-systeem rangschikkingsvorm bevat.
+- [&#x200B; Pakket &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#what-are-packages): Een pakket is een zip dossier dat bewaarplaats inhoud in dossier-systeem rangschikkingsvorm bevat.
 
 ## Standaardscenario
 
@@ -57,7 +57,7 @@ De redenen hiervoor zouden kunnen zijn:
 
 Voor het volgen van deze zelfstudie hebt u het volgende nodig:
 
-- De [&#x200B; lokale ontwikkelomgeving van AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) of [&#x200B; Snelle Milieu van de Ontwikkeling (RDE) &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview) opstelling.
+- De [&#x200B; lokale ontwikkelomgeving van AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) of [&#x200B; Snelle Milieu van de Ontwikkeling (RDE) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/overview) opstelling.
 
 - Het [&#x200B; project van AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) _om de derdebundel of jar of pakket_ toe te voegen en de veranderingen te verifiëren.
 

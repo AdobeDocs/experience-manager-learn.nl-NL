@@ -32,4 +32,4 @@ Ontdek deze tips van uw technische collega, Rakesh Pasupuleti. Rakesh is een Ado
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [&#x200B; AEM as a Cloud Service Onboarding Journey &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) - een geleidelijke gids voor een nieuwe systeembeheerder om wolkenmiddelen aanvankelijk te verstrekken en gebruikers aan rollen toe te wijzen die op hun baanverantwoordelijkheden worden gebaseerd zodat kan elk lid van het team login en tot hun nieuwe middelen van AEM as a Cloud Service toegang hebben
+* [&#x200B; AEM as a Cloud Service Onboarding Journey &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=nl-NL) - een geleidelijke gids voor een nieuwe systeembeheerder om wolkenmiddelen aanvankelijk te verstrekken en gebruikers aan rollen toe te wijzen die op hun baanverantwoordelijkheden worden gebaseerd zodat kan elk lid van het team login en tot hun nieuwe middelen van AEM as a Cloud Service toegang hebben

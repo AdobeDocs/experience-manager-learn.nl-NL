@@ -63,7 +63,7 @@ Laten we drie aanbevolen WAF-regels doornemen die moeten worden toegevoegd aan h
 
 Deze regel **blokkeert** verzoeken die zowel verdacht *kijken als* uit IP adressen voortkomen die als kwaadwillig worden gemarkeerd. Omdat aan beide criteria is voldaan, kunnen we erop vertrouwen dat het risico van valse positieven (het blokkeren van legitiem verkeer) zeer laag is. De bekende slechte IPs wordt geïdentificeerd gebaseerd op de feeds van de bedreigingsintelligentie en andere bronnen.
 
-De markering `ATTACK-FROM-BAD-IP` WAF wordt gebruikt om deze aanvragen te identificeren. Het voegt verscheidene van de vlaggen van WAF [&#x200B; samen die hier &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) worden vermeld.
+De markering `ATTACK-FROM-BAD-IP` WAF wordt gebruikt om deze aanvragen te identificeren. Het voegt verscheidene van de vlaggen van WAF [&#x200B; samen die hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) worden vermeld.
 
 ```yaml
 kind: "CDN"
@@ -212,7 +212,7 @@ Ook, tonen de **distributie van de Vlaggen van WAF** en **Hoogste aanvallen** pa
 
 ### Splunk-integratie
 
-De klanten die [&#x200B; Logboek van de Splunk hebben toegelaten &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) kunnen nieuwe dashboards tot stand brengen om de verkeerspatronen te analyseren.
+De klanten die [&#x200B; Logboek van de Splunk hebben toegelaten &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) kunnen nieuwe dashboards tot stand brengen om de verkeerspatronen te analyseren.
 
 Om dashboards in Splunk tot stand te brengen, volg [&#x200B; Splunk dashboards voor de Analyse van het Logboek AEMCS CDN &#x200B;](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis) stappen.
 
@@ -224,7 +224,7 @@ Als u de regels wilt verfijnen, gaat u als volgt te werk:
 
 - **het verkeerspatronen van de Monitor**: Gebruik de CDN- logboeken en het dashboard van ELK om verkeerspatronen te controleren en om het even welke anomalieën of pieken in verkeer te identificeren. Besteed aandacht aan de _de vlagdistributie van WAF_ en _Hoogste aanvallen_ panelen in het dashboard van de ELK om de soorten aanvallen te begrijpen die worden ontdekt.
 - **Adjust wafFlags**: Als `ATTACK` vlaggen te vaak worden teweeggebracht of
-Als u de aanvalsvector wilt verfijnen, kunt u aangepaste regels maken met specifieke WAF-vlaggen. Zie een volledige lijst van [&#x200B; de vlaggen van WAF &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) in de documentatie. Probeer eerst nieuwe aangepaste regels in de modus `log` .
+Als u de aanvalsvector wilt verfijnen, kunt u aangepaste regels maken met specifieke WAF-vlaggen. Zie een volledige lijst van [&#x200B; de vlaggen van WAF &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) in de documentatie. Probeer eerst nieuwe aangepaste regels in de modus `log` .
 - **Beweging aan het blokkeren van regels**: Zodra u de verkeerspatronen en de vlaggen van WAF hebt bevestigd, kunt u overwegen zich aan het blokkeren van regels te bewegen.
 
 ## Samenvatting
@@ -320,5 +320,5 @@ Voor meer geavanceerde scenario&#39;s, kunt u de volgende gebruiksgevallen onder
 
 ## Aanvullende bronnen
 
-- [&#x200B; Aanbevolen starterregels &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules)
-- [&#x200B; WAF vlaggen lijst &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list)
+- [&#x200B; Aanbevolen starterregels &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules)
+- [&#x200B; WAF vlaggen lijst &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list)

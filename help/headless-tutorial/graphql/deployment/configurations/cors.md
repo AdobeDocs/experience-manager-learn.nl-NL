@@ -59,7 +59,7 @@ De belangrijkste configuratieeigenschappen zijn:
 + `supportedheaders` bevat `"Authorization"` omdat aanvragen aan AEM Author geautoriseerd moeten zijn.
 + `supportscredentials` wordt ingesteld op `true` als de aanvraag aan de AEM-auteur moet worden geautoriseerd.
 
-[&#x200B; leer meer over de configuratie CORS OSGi.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+[&#x200B; leer meer over de configuratie CORS OSGi.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=nl-NL)
 
 In het volgende voorbeeld wordt het gebruik van AEM GraphQL-query&#39;s op AEM Author ondersteund. Als u door de client gedefinieerde GraphQL-query&#39;s wilt gebruiken, voegt u een GraphQL-eindpunt-URL toe in `allowedpaths` en `POST` aan `supportedmethods` .
 

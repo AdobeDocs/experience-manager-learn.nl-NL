@@ -178,7 +178,7 @@ export default App;
 
 ## Instrueer de React-componenten
 
-Om de inhoud van de Teams uit te geven WKND Reageer app zoals _teamtitel en teambeschrijving_, moet u de componenten van het Antwoord van instrumenten voorzien. De instrumentatie betekent het toevoegen van relevante gegevensattributen (`data-aue-*`) aan de elementen van HTML die u editable wilt maken gebruikend de Universele Redacteur. Voor meer informatie over gegevensattributen, zie [&#x200B; Attributen en Types &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types).
+Om de inhoud van de Teams uit te geven WKND Reageer app zoals _teamtitel en teambeschrijving_, moet u de componenten van het Antwoord van instrumenten voorzien. De instrumentatie betekent het toevoegen van relevante gegevensattributen (`data-aue-*`) aan de elementen van HTML die u editable wilt maken gebruikend de Universele Redacteur. Voor meer informatie over gegevensattributen, zie [&#x200B; Attributen en Types &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types).
 
 ### Bewerkbare elementen definiëren
 

@@ -42,7 +42,7 @@ U hebt de opstellingsstappen van **[voltooid integreren het Web SDK van Experien
 
 In **AEM als Cloud Service**:
 
-+ [&#x200B; toegang van de Beheerder van AEM tot het milieu van AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html)
++ [&#x200B; toegang van de Beheerder van AEM tot het milieu van AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=nl-NL)
 + Toegang tot Cloud Manager via Deployment Manager
 + Kloon en stel [&#x200B; WKND - het project van steekproefAdobe Experience Manager &#x200B;](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) aan uw milieu van AEM as a Cloud Service op.
 
@@ -76,7 +76,7 @@ Het SDR-document biedt een uitgebreid overzicht van het uitvoeringsplan, zodat a
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419874?quality=12&learn=on)
 
-Voor meer informatie over concepten en diverse elementen die in het SDR- document zouden moeten worden omvat bezoek [&#x200B; creeer en handhaaf een Document van het Ontwerp van de Oplossing van de Verwijzing (SDR) &#x200B;](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html). U kunt een malplaatje van steekproefExcel ook downloaden, nochtans is de WKND-Specifieke versie ook beschikbaar [&#x200B; hier &#x200B;](./assets/Initial-WKND-WebSDK-BRD-SDR.xlsx).
+Voor meer informatie over concepten en diverse elementen die in het SDR- document zouden moeten worden omvat bezoek [&#x200B; creeer en handhaaf een Document van het Ontwerp van de Oplossing van de Verwijzing (SDR) &#x200B;](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=nl-NL). U kunt een malplaatje van steekproefExcel ook downloaden, nochtans is de WKND-Specifieke versie ook beschikbaar [&#x200B; hier &#x200B;](./assets/Initial-WKND-WebSDK-BRD-SDR.xlsx).
 
 ## Analyses instellen - rapportenpakket, Analysis Workspace
 
@@ -90,10 +90,10 @@ Om die inzichten te analyseren, te verzamelen en te delen met anderen uit de ver
 
 Om meer over de opstelling en de concepten van Analytics te leren, worden de volgende middelen hoogst geadviseerd:
 
-+ [&#x200B; Reeks van het Rapport &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html)
-+ [&#x200B; Variabelen van de Omzetting &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html)
-+ [&#x200B; Gebeurtenissen van het Succes &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event)
-+ [&#x200B; Analysis Workspace &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)
++ [&#x200B; Reeks van het Rapport &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html?lang=nl-NL)
++ [&#x200B; Variabelen van de Omzetting &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=nl-NL)
++ [&#x200B; Gebeurtenissen van het Succes &#x200B;](https://experienceleague.adobe.com/nl/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event)
++ [&#x200B; Analysis Workspace &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=nl-NL)
 
 ## DataStream bijwerken - Analyseservice toevoegen
 
@@ -214,7 +214,7 @@ In het [&#x200B; vorige leerprogramma &#x200B;](./web-sdk.md), wordt een markeri
 
 +++
 
-Voor extra informatie bij het integreren van de Componenten van de Kern van AEM met de Laag van Gegevens van de Cliënt van Adobe, verwijs naar [&#x200B; Gebruikend de Laag van Gegevens van de Cliënt van Adobe met de gids van de Kern van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html).
+Voor extra informatie bij het integreren van de Componenten van de Kern van AEM met de Laag van Gegevens van de Cliënt van Adobe, verwijs naar [&#x200B; Gebruikend de Laag van Gegevens van de Cliënt van Adobe met de gids van de Kern van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=nl-NL).
 
 
 >[!INFO]
@@ -273,9 +273,9 @@ Door de geadviseerde stappen uit te voeren en de verstrekte middelen, zoals het 
 
 ## Aanvullende bronnen
 
-+ [&#x200B; integreren Experience Platform Web SDK &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html)
-+ [&#x200B; Gebruikend de Laag van Gegevens van de Cliënt van Adobe met de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
-+ [&#x200B; Integrating Experience Platform de Markeringen van de Inzameling van Gegevens en AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
-+ [&#x200B; het Web SDK van Adobe Experience Platform en het overzicht van Edge Network &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
-+ [&#x200B; leerprogramma&#39;s van de Inzameling van Gegevens &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
-+ [&#x200B; overzicht van Adobe Experience Platform Debugger &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [&#x200B; integreren Experience Platform Web SDK &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html?lang=nl-NL)
++ [&#x200B; Gebruikend de Laag van Gegevens van de Cliënt van Adobe met de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=nl-NL)
++ [&#x200B; Integrating Experience Platform de Markeringen van de Inzameling van Gegevens en AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=nl-NL)
++ [&#x200B; het Web SDK van Adobe Experience Platform en het overzicht van Edge Network &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=nl-NL)
++ [&#x200B; leerprogramma&#39;s van de Inzameling van Gegevens &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=nl-NL)
++ [&#x200B; overzicht van Adobe Experience Platform Debugger &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=nl-NL)

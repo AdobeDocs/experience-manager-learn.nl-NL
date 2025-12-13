@@ -122,7 +122,7 @@ Voer de volgende stappen uit om een AEM-certificaat te importeren:
 
    ![&#x200B; Geïmporteerde de Privé Sleutel en Certificaat van AEM &#x200B;](assets/mutual-tls-authentication/aem-privatekey-cert-imported.png)
 
-Als de API leverancier een zelfondertekend certificaat van CA gebruikt, voer het ontvangen certificaat in AEM TrustStore in, volg de stappen van [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html#httpclient-and-load-aem-truststore-material).
+Als de API leverancier een zelfondertekend certificaat van CA gebruikt, voer het ontvangen certificaat in AEM TrustStore in, volg de stappen van [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html?lang=nl-NL#httpclient-and-load-aem-truststore-material).
 
 En als AEM een zelfondertekend CA-certificaat gebruikt, vraagt u de API-provider om dit te importeren.
 
@@ -217,7 +217,7 @@ private KeyStore getAEMTrustStore(KeyStoreService keyStoreService, ResourceResol
 - Als de API-provider een zelfondertekend CA-certificaat gebruikt, haalt u de algemene AEM TrustStore op, de methode `getAEMTrustStore(...)` doet dat.
 - Creeer een voorwerp van `SSLContextBuilder`, zie Java™ [&#x200B; API details &#x200B;](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html).
 - Laad de AEM KeyStore van de gebruiker in `SSLContextBuilder` gebruikend `loadKeyMaterial(final KeyStore keystore,final char[] keyPassword)` methode.
-- Het keystore wachtwoord is het wachtwoord dat toen het creëren van keystore werd geplaatst, zou het in OSGi config moeten worden opgeslagen, zie {de Waarden van de Configuratie 0} Geheime [.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)
+- Het keystore wachtwoord is het wachtwoord dat toen het creëren van keystore werd geplaatst, zou het in OSGi config moeten worden opgeslagen, zie {de Waarden van de Configuratie 0} Geheime [.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=nl-NL#secret-configuration-values)
 
 ## Wijzigingen in JVM-sleutelarchief vermijden
 

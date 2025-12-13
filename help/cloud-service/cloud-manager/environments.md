@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Adobe Cloud Manager gebruiken - omgevingen
 
-[&#x200B; de Milieu&#39;s van Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html) zijn samengesteld uit de Auteur van AEM, publiceren AEM en de diensten van Dispatcher. Verschillende omgevingen ondersteunen rollen en kunnen worden gebruikt met behulp van verschillende CI/CD-pijplijnen. Cloud Manager-omgevingen hebben doorgaans één productieomgeving, één werkgebiedomgeving en één ontwikkelomgeving.
+[&#x200B; de Milieu&#39;s van Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=nl-NL) zijn samengesteld uit de Auteur van AEM, publiceren AEM en de diensten van Dispatcher. Verschillende omgevingen ondersteunen rollen en kunnen worden gebruikt met behulp van verschillende CI/CD-pijplijnen. Cloud Manager-omgevingen hebben doorgaans één productieomgeving, één werkgebiedomgeving en één ontwikkelomgeving.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318?quality=12&learn=on)

@@ -52,7 +52,7 @@ Een geconsolideerde weergave van de door AEM ondersteunde authenticatiemechanism
             <td>✔</td>
         </tr>
         <tr>
-            <td>Op token-gebaseerd (met <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank"> ingekapseld teken </a>)</td>
+            <td>Op token-gebaseerd (met <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html?lang=nl-NL" target="_blank"> ingekapseld teken </a>)</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
@@ -63,19 +63,19 @@ Een geconsolideerde weergave van de door AEM ondersteunde authenticatiemechanism
             <td></td>
             <td></td>
             <tr>
-                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ldap-config.html" target="_blank">LDAP</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ldap-config.html?lang=nl-NL" target="_blank">LDAP</a></td>
                 <td>✔</td>
                 <td>✔</td>
                 <td>✔</td>
             </tr>
             <tr>
-                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html" target="_blank">SSO</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html?lang=nl-NL" target="_blank">SSO</a></td>
                 <td>✔</td>
                 <td>✔</td>
                 <td>✔</td>
             </tr>
             <tr>
-                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html" target="_blank">SAML 2.0</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html?lang=nl-NL" target="_blank">SAML 2.0</a></td>
                 <td>✔</td>
                 <td>✔</td>
                 <td>✔</td>

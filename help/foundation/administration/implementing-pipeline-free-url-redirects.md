@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Het uitvoeren van pijpleidingsvrije URL richt
 
-Leer hoe te om [&#x200B; pijpleiding-vrije URL uit te voeren richt &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) in AEM as a Cloud Service om het marketing team toe te laten om de omleidingen te beheren zonder een ontwikkelaar te hoeven.
+Leer hoe te om [&#x200B; pijpleiding-vrije URL uit te voeren richt &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) in AEM as a Cloud Service om het marketing team toe te laten om de omleidingen te beheren zonder een ontwikkelaar te hoeven.
 
 Er zijn veelvoudige opties om URL te beheren richt in AEM, voor meer informatie, zie [&#x200B; opnieuw richt URL &#x200B;](url-redirection.md).
 
@@ -37,7 +37,7 @@ U hebt het volgende nodig om deze zelfstudie te voltooien:
 
 ## Gebruiksscenario voor zelfstudie
 
-Voor het demodoel, laten we veronderstellen dat het WKND marketing team een nieuwe skicampagne lanceert. Ze willen korte URL&#39;s maken voor de ski-avontuurpagina&#39;s en deze op hun eigen manier beheren, net zoals ze de inhoud beheren. Zij besloten om de [&#x200B; pijpleiding-vrije URL te gebruiken herleidt &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) benadering om URL te beheren opnieuw richt.
+Voor het demodoel, laten we veronderstellen dat het WKND marketing team een nieuwe skicampagne lanceert. Ze willen korte URL&#39;s maken voor de ski-avontuurpagina&#39;s en deze op hun eigen manier beheren, net zoals ze de inhoud beheren. Zij besloten om de [&#x200B; pijpleiding-vrije URL te gebruiken herleidt &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) benadering om URL te beheren opnieuw richt.
 
 Gebaseerd op de vereisten van het marketing team, zijn het volgende URL omleidingen die moeten worden gecreeerd.
 
@@ -229,7 +229,7 @@ RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 >
 >De *pijpleiding-vrije* termijn wordt gebruikt om te benadrukken dat de configuraties *slechts eenmaal* worden opgesteld en het marketing team kan URL omleiden door het tekstdossier bij te werken.
 
-Om de configuraties op te stellen, gebruik de [&#x200B; volledig-stapel &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) of [&#x200B; 3&rbrace; pijpleiding van de Webrij config &lbrace;in &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) Cloud Manager [.](https://my.cloudmanager.adobe.com/)
+Om de configuraties op te stellen, gebruik de [&#x200B; volledig-stapel &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) of [&#x200B; 3&rbrace; pijpleiding van de Webrij config &lbrace;in &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) Cloud Manager [.](https://my.cloudmanager.adobe.com/)
 
 ![&#x200B; Opname via volledig-stapelpijpleiding &#x200B;](./assets/pipeline-free-redirects/deploy-full-stack-pipeline.png)
 
@@ -248,5 +248,5 @@ Het marketingteam kan de URL omleiden als sleutel-waardeparen in een tekstbestan
 
 ## Aanvullende bronnen
 
-- [&#x200B; lijn-vrije URL richt zich opnieuw &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
+- [&#x200B; lijn-vrije URL richt zich opnieuw &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
 - [URL-omleidingen](url-redirection.md)
