@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: bf996405c360c77475d9f76d5de9bcd4fde3c163
+source-git-commit: a43bd7ae4e5b0a6793c52b5a8d0f36e3c1b260b1
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '472'
 ht-degree: 7%
 
 ---
@@ -52,14 +52,14 @@ ht-degree: 7%
 
 + Zoeken en detecteren{#search-and-discovery}
    + [Zoeken](./search-and-discovery/search.md)
-   + [&#x200B; Contextueel onderzoek &#x200B;](./search-and-discovery/contextual-search.md)
+   + [ Contextueel onderzoek ](./search-and-discovery/contextual-search.md)
    + [Adobe Firefly-integratie](./search-and-discovery/adobe-firefly.md)
-   + [&#x200B; Inzamelingen &#x200B;](./search-and-discovery/collections.md)
+   + [ Inzamelingen ](./search-and-discovery/collections.md)
    + [Zoekfunctie](./search-and-discovery/search-boost.md)
    + [Vergelijkbare afbeeldingen zoeken](./search-and-discovery/find-similar-images.md)
 
 + Geavanceerde mogelijkheden{#advanced}
-   + [&#x200B; 3D activa &#x200B;](./advanced/3d-assets.md)
+   + [ 3D activa ](./advanced/3d-assets.md)
    + [Annotaties PDF-uitvoer](./advanced/customizing-annotations-pdf-output.md)
    + [Assets-rapporten](./advanced/asset-reports.md)
    + [Inhoudsreferenties](./advanced/content-credentials.md)
@@ -96,7 +96,7 @@ ht-degree: 7%
    + [Sidekick-insteekmodule](./edge-delivery-services/sidekick-plugin.md)
 
 + Adobe GenStudio{#adobe-genstudio}
-   + [&#x200B; AEM Assets en GenStudio for Performance Marketing &#x200B;](https://experienceleague.adobe.com/nl/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
+   + [ AEM Assets en GenStudio for Performance Marketing ](https://experienceleague.adobe.com/en/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
 
 + Delen en distributie{#sharing}
    + [Elementen downloaden](./sharing/download.md)
@@ -144,12 +144,13 @@ ht-degree: 7%
    + [Dynamisch mediaoverzicht](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Dynamic Media Classic Desktop-toepassing](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Afbeeldingen {#images}
+      + [URL-syntaxis en voorinstellingen voor afbeeldingen](dynamic-media/dynamic-media-urls-and-image-presets.md)
       + [Afbeeldingsautomatisering](dynamic-media/dynamic-media-image-automation.md)
       + [Dynamische mediasjablonen](dynamic-media/dynamic-media-templates.md)
       + [Dynamische mediaopname](dynamic-media/dynamic-media-snapshot.md)
       + [Slim uitsnijden](dynamic-media/smart-crop-feature-video-use.md)
       + [Afbeelding verscherpen](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
-      + [&#x200B; het beheer van de Kleur &#x200B;](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
+      + [ het beheer van de Kleur ](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
    + Video {#video}
       + [Aanbevolen procedures](dynamic-media/dynamic-media-video-best-practices.md)
       + [360 video](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
@@ -206,4 +207,4 @@ ht-degree: 7%
 + Implementatie{#deployment}
    + [Meerdere huurders en gelijktijdige ontwikkeling](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [&#x200B; Hoofdzaak van Activa](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=nl-NL){target=_blank}
++ [ Hoofdzaak van Activa ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html){target=_blank}
