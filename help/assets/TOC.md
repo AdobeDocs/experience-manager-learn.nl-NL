@@ -52,14 +52,14 @@ ht-degree: 7%
 
 + Zoeken en detecteren{#search-and-discovery}
    + [Zoeken](./search-and-discovery/search.md)
-   + [ Contextueel onderzoek ](./search-and-discovery/contextual-search.md)
+   + [&#x200B; Contextueel onderzoek &#x200B;](./search-and-discovery/contextual-search.md)
    + [Adobe Firefly-integratie](./search-and-discovery/adobe-firefly.md)
-   + [ Inzamelingen ](./search-and-discovery/collections.md)
+   + [&#x200B; Inzamelingen &#x200B;](./search-and-discovery/collections.md)
    + [Zoekfunctie](./search-and-discovery/search-boost.md)
    + [Vergelijkbare afbeeldingen zoeken](./search-and-discovery/find-similar-images.md)
 
 + Geavanceerde mogelijkheden{#advanced}
-   + [ 3D activa ](./advanced/3d-assets.md)
+   + [&#x200B; 3D activa &#x200B;](./advanced/3d-assets.md)
    + [Annotaties PDF-uitvoer](./advanced/customizing-annotations-pdf-output.md)
    + [Assets-rapporten](./advanced/asset-reports.md)
    + [Inhoudsreferenties](./advanced/content-credentials.md)
@@ -96,7 +96,7 @@ ht-degree: 7%
    + [Sidekick-insteekmodule](./edge-delivery-services/sidekick-plugin.md)
 
 + Adobe GenStudio{#adobe-genstudio}
-   + [ AEM Assets en GenStudio for Performance Marketing ](https://experienceleague.adobe.com/en/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
+   + [&#x200B; AEM Assets en GenStudio for Performance Marketing &#x200B;](https://experienceleague.adobe.com/en/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
 
 + Delen en distributie{#sharing}
    + [Elementen downloaden](./sharing/download.md)
@@ -150,7 +150,7 @@ ht-degree: 7%
       + [Dynamische mediaopname](dynamic-media/dynamic-media-snapshot.md)
       + [Slim uitsnijden](dynamic-media/smart-crop-feature-video-use.md)
       + [Afbeelding verscherpen](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
-      + [ het beheer van de Kleur ](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
+      + [&#x200B; het beheer van de Kleur &#x200B;](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
    + Video {#video}
       + [Aanbevolen procedures](dynamic-media/dynamic-media-video-best-practices.md)
       + [360 video](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
@@ -207,4 +207,4 @@ ht-degree: 7%
 + Implementatie{#deployment}
    + [Meerdere huurders en gelijktijdige ontwikkeling](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [ Hoofdzaak van Activa ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html){target=_blank}
++ [&#x200B; Hoofdzaak van Activa](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html){target=_blank}
