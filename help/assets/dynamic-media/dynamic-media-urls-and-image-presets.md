@@ -21,6 +21,6 @@ ht-degree: 0%
 
 Ontdek de syntaxis van AEM Assets Dynamic Media URL en leer hoe u uw waarde kunt maximaliseren met Voorinstellingen afbeelding. Verbeter de mogelijkheden voor middelenbeheer en verbeter de efficiëntie van uw workflow.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477924/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477942/?captions=dut&learn=on&enablevpops)
 
 Bekijk deze korte video op [&#x200B; hoe te om beeld tot stand te brengen vooraf instelt in AEM Assets &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/tutorials/creating-image-presets).
