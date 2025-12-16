@@ -23,4 +23,4 @@ Ontdek de syntaxis van AEM Assets Dynamic Media URL en leer hoe u uw waarde kunt
 
 >[!VIDEO](https://video.tv.adobe.com/v/3477924/?learn=on&enablevpops)
 
-Bekijk deze korte video op [&#x200B; hoe te om beeld tot stand te brengen vooraf instelt in AEM Assets &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/tutorials/creating-image-presets).
+Bekijk deze korte video op [&#x200B; hoe te om beeld tot stand te brengen vooraf instelt in AEM Assets &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/tutorials/creating-image-presets).
