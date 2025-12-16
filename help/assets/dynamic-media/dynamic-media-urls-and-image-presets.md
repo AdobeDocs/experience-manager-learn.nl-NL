@@ -9,9 +9,9 @@ doc-type: Feature Video
 duration: 533
 last-substantial-update: 2025-12-15T00:00:00Z
 jira: KT-20006
-source-git-commit: a43bd7ae4e5b0a6793c52b5a8d0f36e3c1b260b1
+source-git-commit: 0a76e27af109b711b0ea1228018dbe811874939e
 workflow-type: tm+mt
-source-wordcount: '60'
+source-wordcount: '74'
 ht-degree: 0%
 
 ---
@@ -22,3 +22,5 @@ ht-degree: 0%
 Ontdek de syntaxis van AEM Assets Dynamic Media URL en leer hoe u uw waarde kunt maximaliseren met Voorinstellingen afbeelding. Verbeter de mogelijkheden voor middelenbeheer en verbeter de efficiëntie van uw workflow.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3477924/?learn=on&enablevpops)
+
+Bekijk deze korte video op [ hoe te om beeld tot stand te brengen vooraf instelt in AEM Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/tutorials/creating-image-presets).
