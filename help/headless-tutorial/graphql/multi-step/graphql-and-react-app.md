@@ -35,9 +35,9 @@ _winde screenshots in dit hoofdstuk komen uit [&#x200B; Code van Visual Studio &
 
 Als u deze zelfstudie wilt voltooien, kunt u het beste AEM Administrator toegang geven tot een van de volgende mogelijkheden:
 
-+ [&#x200B; AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ Lokale opstelling die [&#x200B; de Dienst SDK van de Wolk AEM gebruiken &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-+ [&#x200B; AEM 6.5 LTS &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/release-notes/release-notes.html) met [&#x200B; geïnstalleerd Pakket 1.0.5+ van de Index van GraphQL &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/graphql-api/graphql-endpoint.html)
++ [&#x200B; AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=nl-NL)
++ Lokale opstelling die [&#x200B; de Dienst SDK van de Wolk AEM gebruiken &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL)
++ [&#x200B; AEM 6.5 LTS &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/release-notes/release-notes.html?lang=nl-NL) met [&#x200B; geïnstalleerd Pakket 1.0.5+ van de Index van GraphQL &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/graphql-api/graphql-endpoint.html)
 
 ### Softwarevereisten
 
@@ -46,7 +46,7 @@ De volgende software moet worden geïnstalleerd:
 + [&#x200B; Node.js v18+ &#x200B;](https://nodejs.org/en)
 + [&#x200B; Code van Visual Studio &#x200B;](https://code.visualstudio.com/)
 + [&#x200B; Git &#x200B;](https://git-scm.com/)
-+ [&#x200B; Java JDK &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/introduction/technical-requirements) (als het verbinden met lokale AEM SDK of 6.5 instantie)
++ [&#x200B; Java JDK &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/introduction/technical-requirements) (als het verbinden met lokale AEM SDK of 6.5 instantie)
 
 ## Doelstellingen
 
