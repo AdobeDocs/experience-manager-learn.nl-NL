@@ -4,9 +4,9 @@ description: Gearchiveerde versies van de nieuwsbrief downloaden.
 hidefromtoc: true
 hide: true
 exl-id: 16133400-b4c6-4d86-9c28-d5e230d55839
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 42d1e4c0b2fa9413f57a27d4b247389f17fe9163
 workflow-type: tm+mt
-source-wordcount: '52'
+source-wordcount: '54'
 ht-degree: 0%
 
 ---
@@ -17,14 +17,16 @@ Onze maandelijkse Experience League Content Newsletters kunnen op deze pagina wo
 
 | 2025 - Nieuwsbrieven |
 |------------|
-| [&#x200B; Januari &#x200B;](assets/Jan-Newsletter.pdf) |
-| [&#x200B; Februari &#x200B;](assets/Feb-Newsletter.pdf) |
-| [&#x200B; Maart &#x200B;](assets/March-Newsletter.pdf) |
-| [&#x200B; April &#x200B;](assets/April-Newsletter.pdf) |
-| [&#x200B; Mei &#x200B;](assets/May-Newsletter.pdf) |
-| [&#x200B; Juni &#x200B;](assets/June-Newsletter.pdf) |
-| [&#x200B; Juli &#x200B;](assets/July-Newsletter.pdf) |
-| [&#x200B; Augustus &#x200B;](assets/August-Newsletter.pdf) |
-| [&#x200B; September &#x200B;](assets/Sept-Newsletter.pdf) |
-| [&#x200B; Oktober &#x200B;](assets/Oct-Newsletter.pdf) |
+| [ Januari ](assets/Jan-Newsletter.pdf) |
+| [ Februari ](assets/Feb-Newsletter.pdf) |
+| [ Maart ](assets/March-Newsletter.pdf) |
+| [ April ](assets/April-Newsletter.pdf) |
+| [ Mei ](assets/May-Newsletter.pdf) |
+| [ Juni ](assets/June-Newsletter.pdf) |
+| [ Juli ](assets/July-Newsletter.pdf) |
+| [ Augustus ](assets/August-Newsletter.pdf) |
+| [ September ](assets/Sept-Newsletter.pdf) |
+| [ Oktober ](assets/Oct-Newsletter.pdf) |
+| [ November ](assets/Nov-Newsletter.pdf) |
+| [ December ](assets/Dec-Newsletter.pdf) |
 
