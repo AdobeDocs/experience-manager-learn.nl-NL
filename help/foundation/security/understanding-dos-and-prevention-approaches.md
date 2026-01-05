@@ -42,19 +42,19 @@ In de volgende tabel wordt beschreven hoe u DoS- en DDoS-aanvallen voorkomt en b
             <td>Web Application Firewall (WAF)</td>
             <td>Een veiligheidsoplossing die wordt ontworpen om Webtoepassingen tegen diverse soorten aanvallen te beschermen.</td>
             <td>
-            <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank"> Uitgebreide vergunning van de Veiligheid (vroeger genoemd WAF-DDoS Bescherming) </a></td>
+            <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank"> Uitgebreide vergunning van de Veiligheid (vroeger genoemd WAF-DDoS Bescherming) </a></td>
             <td><a href="https://docs.aws.amazon.com/waf/" target="_blank"> AWS </a> of <a href="https://azure.microsoft.com/en-us/products/web-application-firewall" target="_blank"> Azure </a> WAF via contract van AMS.</td>
             <td>WAF van uw voorkeur</td>
         </tr>
         <tr>
             <td>ModSecurity</td>
             <td>ModSecurity (ook bekend als de Apache-module 'mod_security') is een open-source, platformonafhankelijke oplossing die bescherming biedt tegen een reeks aanvallen op webtoepassingen.<br/> In AEM as a Cloud Service is dit alleen van toepassing op de AEM Publish-service, omdat er geen Apache-webserver en AEM Dispatcher aanwezig zijn vóór de AEM Author-service.</td>
-            <td colspan="3"><a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection" target="_blank">ModSecurity inschakelen </a></td>
+            <td colspan="3"><a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection" target="_blank">ModSecurity inschakelen </a></td>
         </tr>
         <tr>
             <td>Verkeersfilterregels</td>
             <td>De filterregels van het verkeer kunnen worden gebruikt om verzoeken bij de laag te blokkeren of toe te staan CDN.</td>
-            <td><a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis" target="_blank">Voorbeelden van filterregels voor het verkeer</a></td>
+            <td><a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis" target="_blank">Voorbeelden van filterregels voor het verkeer</a></td>
             <td><a href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-rate-based.html" target="_blank"> AWS </a> of <a href="https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/rate-limiting-overview" target="_blank"> Azure </a> regel beperkende eigenschappen.</td>
             <td>Uw voorkeursoplossing</td>
         </tr>
