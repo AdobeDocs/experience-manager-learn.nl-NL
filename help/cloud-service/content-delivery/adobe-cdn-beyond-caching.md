@@ -31,7 +31,7 @@ De Adobe CDN is niet alleen bedoeld voor het in cache plaatsen van inhoud, maar 
 
 Deze eigenschappen zijn **zelfbediening** eigenschappen. Gevormd in het `cdn.yaml` dossier van uw project van AEM en opgesteld gebruikend de configuratiepijpleiding van Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440277?captions=dut&quality=12&learn=on)
 
 ## Het vormen verkeer bij CDN
 

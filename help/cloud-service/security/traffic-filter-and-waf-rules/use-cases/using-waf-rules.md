@@ -30,7 +30,7 @@ De gesofisticeerde aanvallen worden gekenmerkt door hoge vraagtarieven, complexe
 > De het verkeersfilterregels van WAF vereisen een extra Uitgebreide Beveiliging (vroeger genoemd Bescherming WAF-DDoS) of Uitgebreide Veiligheid voor Gezondheid (vroeger genoemd Uitgebreide Beveiliging) vergunning. De standaardregels van de verkeersfilter zijn beschikbaar aan de klanten van Plaatsen en van Forms door gebrek.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469436/?captions=dut&quality=12&learn=on)
 
 ## Leerdoelstellingen
 
