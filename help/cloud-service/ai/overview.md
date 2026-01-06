@@ -48,7 +48,7 @@ Experience Manager as a Cloud Service biedt geavanceerde AI-mogelijkheden om inh
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./setup.md" title="AI instellen in AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474066/?format=jpeg&nocache=1767634731991" alt="AI instellen in AEM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474072/?captions=dut&format=jpeg&nocache=1767634731991" alt="AI instellen in AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -71,7 +71,7 @@ Experience Manager as a Cloud Service biedt geavanceerde AI-mogelijkheden om inh
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./agents-in-aem.md" title="Medewerkers in AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475357/?format=jpeg&nocache=1767634731999" alt="Medewerkers in AEM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475364/?captions=dut&format=jpeg&nocache=1767634731999" alt="Medewerkers in AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
