@@ -28,7 +28,7 @@ Leer hoe te om toegang tot de Medewerker AI in Adobe Experience Manager te vorme
 
 ### Medewerkers in AEM
 
-Om Agenten in AEM te gebruiken, moet u [&#x200B; eerste gevormde toegang hebben van de Medewerker van AEM AI &#x200B;](#aem-ai-assistant). Medewerkers in AEM moeten door Adobe zijn ingericht. Om toegang tot Agenten in AEM te verzoeken, contacteer uw vertegenwoordiger van Adobe of [&#x200B; de Steun van Adobe &#x200B;](https://experienceleague.adobe.com/en/support).
+Om Agenten in AEM te gebruiken, moet u [&#x200B; eerste gevormde toegang hebben van de Medewerker van AEM AI &#x200B;](#aem-ai-assistant). Medewerkers in AEM moeten door Adobe zijn ingericht. Om toegang tot Agenten in AEM te verzoeken, contacteer uw vertegenwoordiger van Adobe of [&#x200B; de Steun van Adobe &#x200B;](https://experienceleague.adobe.com/nl/support).
 
 ## Afspeelplaats
 

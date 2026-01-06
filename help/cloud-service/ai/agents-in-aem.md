@@ -22,6 +22,6 @@ Leer hoe te om Agenten te gebruiken, die door de [&#x200B; Medewerker van AEM AI
 
 >[!VIDEO](https://video.tv.adobe.com/v/3478455/?learn=on&enablevpops)
 
-Voor een volledige lijst van beschikbare Agenten in AEM en hun functionaliteit, met inbegrip van steekproefherinneringen, verwijs naar de [&#x200B; Agenten in de documentatie van AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview).
+Voor een volledige lijst van beschikbare Agenten in AEM en hun functionaliteit, met inbegrip van steekproefherinneringen, verwijs naar de [&#x200B; Agenten in de documentatie van AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview).
 
 *om tot de Agenten in AEM toegang te hebben, verzeker u opstellingstoegang in uw milieu van AEM door de [&#x200B; opstellingsgids &#x200B;](./setup.md#agents-in-aem) te volgen.*
