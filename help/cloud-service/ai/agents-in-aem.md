@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Leer hoe te om Agenten te gebruiken, die door de [&#x200B; Medewerker van AEM AI &#x200B;](./ai-assistant.md) worden blootgesteld, om taken te automatiseren en werkschema&#39;s te stroomlijnen. Ontdek wat &#39;agents&#39; zijn, hoe ze werken en waar ze passen in het werk dat je doet in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478455/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3478461/?captions=dut&learn=on&enablevpops)
 
 Voor een volledige lijst van beschikbare Agenten in AEM en hun functionaliteit, met inbegrip van steekproefherinneringen, verwijs naar de [&#x200B; Agenten in de documentatie van AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview).
 

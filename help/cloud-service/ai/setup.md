@@ -24,7 +24,7 @@ Als u AEM AI Assistant en Agents in AEM wilt gebruiken, moet u toegang instellen
 
 Leer hoe te om toegang tot de Medewerker AI in Adobe Experience Manager te vormen gebruikend [&#x200B; Adobe Admin Console &#x200B;](https://adminconsole.adobe.com). Deze stap is nodig om gebruikers in staat te stellen reacties van de Medewerker te krijgen en automatische het creëren van kaartjes te gebruiken.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474066/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3474072/?captions=dut&learn=on&enablevpops)
 
 ### Medewerkers in AEM
 
