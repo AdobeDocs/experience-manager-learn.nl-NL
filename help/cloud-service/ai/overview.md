@@ -7,7 +7,7 @@ level: Beginner
 doc-type: Catalog
 duration: 30
 last-substantial-update: 2026-01-05T00:00:00Z
-source-git-commit: 96719e9f53324469927eee83840356833b5605a0
+source-git-commit: 9a2b7ee23132b5eac60f3eb2fd416fa26d0312db
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # AI in Experience Manager
 
-![&#x200B; AI in Experience Manager &#x200B;](./assets/overview/hero.png)
+![ AI in Experience Manager ](./assets/overview/hero.png)
 
 Experience Manager as a Cloud Service biedt geavanceerde AI-mogelijkheden om inhoudsbeheer te verbeteren, workflows te stroomlijnen en gebruikerservaring te verbeteren. Door functies van AI, zoals AEM AI Assistant en AEM AI Agents, te integreren, kunnen gebruikers taken automatiseren, inzicht krijgen en de levering van inhoud optimaliseren.
 
@@ -27,7 +27,7 @@ Experience Manager as a Cloud Service biedt geavanceerde AI-mogelijkheden om inh
     {title = Set up AI in AEM}
     {description = Learn what access is needed to use AI in AEM.}
     {cta = Set up}
-* ./aem-ai-assistant.md
+* ./ai-assistant.md
     {title = AEM AI Assistant}
     {description = Learn how AI Assistant provides product knowledge and support in AEM.}
     {cta = Watch}
@@ -48,7 +48,7 @@ Experience Manager as a Cloud Service biedt geavanceerde AI-mogelijkheden om inh
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./setup.md" title="AI instellen in AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474072/?captions=dut&format=jpeg&nocache=1767634731991" alt="AI instellen in AEM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474066/?format=jpeg&nocache=1767634731991" alt="AI instellen in AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -71,7 +71,7 @@ Experience Manager as a Cloud Service biedt geavanceerde AI-mogelijkheden om inh
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./agents-in-aem.md" title="Medewerkers in AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475364/?captions=dut&format=jpeg&nocache=1767634731999" alt="Medewerkers in AEM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475357/?format=jpeg&nocache=1767634731999" alt="Medewerkers in AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
