@@ -18,8 +18,8 @@ ht-degree: 0%
 
 # AEM AI Assistant
 
-Leer hoe de [ Medewerker van AEM AI ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#) uw werkschema&#39;s van Adobe Experience Manager vereenvoudigt. Van het vinden van eigenschappen, het leren over beste praktijken, het oplossen van problemenkwesties en zelfs het creëren van steunkaartjes, is het uw intelligente metgezel in AEM. Verhoog de productiviteit met door AI aangedreven begeleiding, inzicht, en steun - allen op één plaats.
+Leer hoe de [&#x200B; Medewerker van AEM AI &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#) uw werkschema&#39;s van Adobe Experience Manager vereenvoudigt. Van het vinden van eigenschappen, het leren over beste praktijken, het oplossen van problemenkwesties en zelfs het creëren van steunkaartjes, is het uw intelligente metgezel in AEM. Verhoog de productiviteit met door AI aangedreven begeleiding, inzicht, en steun - allen op één plaats.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
-*om tot de Medewerker van AEM toegang te hebben AI, zorg ervoor u opstellingstoegang in uw milieu van AEM door de [ opstellingsgids ](./setup.md#aem-ai-assistant) te volgen.*
+*om tot de Medewerker van AEM toegang te hebben AI, zorg ervoor u opstellingstoegang in uw milieu van AEM door de [&#x200B; opstellingsgids &#x200B;](./setup.md#aem-ai-assistant) te volgen.*

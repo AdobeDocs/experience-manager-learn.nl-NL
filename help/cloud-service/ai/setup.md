@@ -22,13 +22,13 @@ Als u AEM AI Assistant en Agents in AEM wilt gebruiken, moet u toegang instellen
 
 ## AEM AI Assistant
 
-Leer hoe te om toegang tot de Medewerker AI in Adobe Experience Manager te vormen gebruikend [ Adobe Admin Console ](https://adminconsole.adobe.com). Deze stap is nodig om gebruikers in staat te stellen reacties van de Medewerker te krijgen en automatische het creëren van kaartjes te gebruiken.
+Leer hoe te om toegang tot de Medewerker AI in Adobe Experience Manager te vormen gebruikend [&#x200B; Adobe Admin Console &#x200B;](https://adminconsole.adobe.com). Deze stap is nodig om gebruikers in staat te stellen reacties van de Medewerker te krijgen en automatische het creëren van kaartjes te gebruiken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3474066/?learn=on&enablevpops)
 
 ### Medewerkers in AEM
 
-Om Agenten in AEM te gebruiken, moet u [ eerste gevormde toegang hebben van de Medewerker van AEM AI ](#aem-ai-assistant). Medewerkers in AEM moeten door Adobe zijn ingericht. Om toegang tot Agenten in AEM te verzoeken, contacteer uw vertegenwoordiger van Adobe of [ de Steun van Adobe ](https://experienceleague.adobe.com/en/support).
+Om Agenten in AEM te gebruiken, moet u [&#x200B; eerste gevormde toegang hebben van de Medewerker van AEM AI &#x200B;](#aem-ai-assistant). Medewerkers in AEM moeten door Adobe zijn ingericht. Om toegang tot Agenten in AEM te verzoeken, contacteer uw vertegenwoordiger van Adobe of [&#x200B; de Steun van Adobe &#x200B;](https://experienceleague.adobe.com/en/support).
 
 ## Afspeelplaats
 
@@ -36,6 +36,6 @@ Als u geen toegang hebt tot of de mogelijkheid hebt om AEM AI Assistant of Agent
 
 AEM biedt een omgeving waarin gebruikers kunnen experimenteren met de mogelijkheden van de AI Assistant, inclusief de agents in AEM, zonder dat dit van invloed is op hun productieomgeving. Hierdoor kunnen gebruikers zichzelf in een veilige omgeving vertrouwd maken met de functies en functies van de AI Assistant.
 
-![ de Playground van AEM ](./assets/setup/playground.png)
+![&#x200B; de Playground van AEM &#x200B;](./assets/setup/playground.png)
 
-Om playground tot stand te brengen, navigeer aan [ Experience Hub ](https://experience.adobe.com/#/@AdobeOrg/experiencemanager/) en selecteer **Create Playground** in het **paneel van de Aankondigingen van het Product**. Nadat de afspeellocatie is ingesteld, ontvangt u een e-mail met de gegevens om deze te openen.
+Om playground tot stand te brengen, navigeer aan [&#x200B; Experience Hub &#x200B;](https://experience.adobe.com/#/@AdobeOrg/experiencemanager/) en selecteer **Create Playground** in het **paneel van de Aankondigingen van het Product**. Nadat de afspeellocatie is ingesteld, ontvangt u een e-mail met de gegevens om deze te openen.
