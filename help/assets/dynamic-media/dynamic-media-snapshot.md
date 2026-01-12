@@ -22,6 +22,6 @@ ht-degree: 0%
 
 Adobe Snapshot is een visueel demonstratieprogramma dat is ontworpen om de kracht van Dynamic Media te illustreren voor geoptimaliseerde en dynamische beeldlevering. Experimenteer met testbeelden of Dynamische Media URLs, om de output van diverse Dynamische het beeldbepalingen van Media, slimme gewassen, en Slimme optimalisaties van het Beeld voor dossiergrootte (met levering WebP en AVIF) visueel te waarnemen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419421/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445569/?captions=dut&learn=on)
 
 [&#x200B; Opname van Adobe van de Lancering &#x200B;](https://snapshot.scene7.com/)
