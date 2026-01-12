@@ -24,4 +24,4 @@ Adobe Snapshot is een visueel demonstratieprogramma dat is ontworpen om de krach
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419421/?learn=on)
 
-[ Opname van Adobe van de Lancering ](https://snapshot.scene7.com/)
+[&#x200B; Opname van Adobe van de Lancering &#x200B;](https://snapshot.scene7.com/)
