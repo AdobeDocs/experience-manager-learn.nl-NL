@@ -1,7 +1,7 @@
 ---
 title: Machtigingsdocumenten met AEM-documenten
 description: Leer hoe u inhoudsmachtigingen beheert met het ontwerpen van AEM-documenten.
-version: Experience Manager 6.5, Experience Manager as a Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User, Developer
@@ -12,7 +12,7 @@ jira: KT-14490
 thumbnail: 3425724.jpeg
 duration: 90
 exl-id: a8686bf8-b10a-4fbe-a8f6-d74c2c458d3a
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8323da7961c4b6ffeaad5f936b7b515bb08a616a
 workflow-type: tm+mt
 source-wordcount: '28'
 ht-degree: 0%
@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Leer hoe u documenten machtigt met AEM-documentontwerpen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3438107/?learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3425724/?learn=on)

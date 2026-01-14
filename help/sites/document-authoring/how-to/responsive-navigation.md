@@ -1,7 +1,7 @@
 ---
 title: Responsieve navigatie
 description: Ontdek hoe u responsieve navigatie kunt uitvoeren in Edge Delivery Document authoring.
-version: Experience Manager 6.5, Experience Manager as a Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User
@@ -12,7 +12,7 @@ jira: KT-14473
 thumbnail: 3425707.jpeg
 duration: 91
 exl-id: 58af7383-61eb-4df1-ac2b-6d7bafb999c3
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8323da7961c4b6ffeaad5f936b7b515bb08a616a
 workflow-type: tm+mt
 source-wordcount: '24'
 ht-degree: 0%
@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Ontdek hoe u responsieve navigatie kunt uitvoeren in het ontwerpen van documenten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3438173/?learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3425707/?learn=on)

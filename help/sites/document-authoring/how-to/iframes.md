@@ -1,7 +1,7 @@
 ---
 title: iFrames insluiten met AEM-documentontwerp
 description: Leer hoe u inhoud insluit met behulp van iFrames met AEM-documentontwerp.
-version: Experience Manager 6.5, Experience Manager as a Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User, Developer
@@ -12,7 +12,7 @@ jira: KT-14486
 thumbnail: 3425719.jpeg
 duration: 96
 exl-id: 59195777-e2fc-4654-8361-bd449cc19e5a
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8323da7961c4b6ffeaad5f936b7b515bb08a616a
 workflow-type: tm+mt
 source-wordcount: '32'
 ht-degree: 0%
@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Leer hoe u inhoud insluit met behulp van iFrames met AEM-documentontwerp.
 
->[!VIDEO](https://video.tv.adobe.com/v/3438395/?learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3425719/?learn=on)

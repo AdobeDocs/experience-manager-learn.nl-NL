@@ -1,7 +1,7 @@
 ---
 title: Alternatieve afbeeldingstekst toevoegen met AEM-documentontwerp
 description: Ontdek hoe u alternatieve tekst kunt gebruiken voor afbeeldingen in documentontwerp.
-version: Experience Manager 6.5, Experience Manager as a Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User, Developer
@@ -12,7 +12,7 @@ jira: KT-14488
 thumbnail: 3425721.jpeg
 duration: 101
 exl-id: 9577aa66-25a7-4092-984d-52eb2662c4ff
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8323da7961c4b6ffeaad5f936b7b515bb08a616a
 workflow-type: tm+mt
 source-wordcount: '37'
 ht-degree: 0%
@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Leer hoe u alt-tekst toevoegt aan afbeeldingen in pagina&#39;s die zijn gemaakt met behulp van AEM-documenten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3438681/?learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3425721/?learn=on)
