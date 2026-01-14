@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Ontdek hoe u documenten kunt ontwerpen met standaardinhoud, -blokken en meer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425701/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438817/?captions=dut&learn=on)

@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Ontdek hoe bulkmetagegevens worden verwerkt in documentontwerpen en hoe auteurs metagegevens in bulk zonder technische expertise kunnen bijwerken.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425705/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438424/?captions=dut&learn=on)

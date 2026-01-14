@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Een handleiding voor het instellen van documentauteurs.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425699/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438868/?captions=dut&learn=on)

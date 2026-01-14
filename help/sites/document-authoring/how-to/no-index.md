@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Onderzoek hoe te om Web-pagina&#39;s te verhinderen die gebruikend het document van AEM worden ontworpen door onderzoeksmotoren worden geïndexeerd.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425726/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438121/?captions=dut&learn=on)
