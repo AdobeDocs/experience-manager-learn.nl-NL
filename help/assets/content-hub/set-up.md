@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Leer hoe u de Experience Manager Assets Content Hub instelt met het Adobe Cloud Manager-programma en de add-on voor middelen. Leer ook hoe te om toegang voor gebruikers te vormen gebruikend productprofielen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3472941/?captions=dut&learn=on)
 
 
 ## AEM Assets Dynamic Media OpenAPI&#39;s instellen
