@@ -13,16 +13,16 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 4f279c0d-270f-433e-b047-88c02f5b1e78
 duration: 49
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 866dca32844a7185bdf3980e38570da1d44d8b83
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 # Workfront en AEM Assets integreren met de verbeterde connector
 
-![&#x200B; de DeskundigenReeks van AEM &#x200B;](./assets/banner.png)
+![ de DeskundigenReeks van AEM ](./assets/banner.png)
 
 Sluit u aan bij de Adobe Workfront en Experience Manager Assets-experts in deze videoreeks met vier delen, omdat ze de voordelen en uitgangen van de integratie van Workfront en AEM Assets met behulp van de verbeterde connector demonstreren en bespreken.
 
@@ -95,3 +95,9 @@ Deze vier deeldeskundigenreeksen volgen op een groep van Adobe-experts - van pro
    </td>
   </tr>  
 </tbody></table>
+
+## Verbinding maken via Workfront Fusion
+
+Als u Workfront Fusion gebruikt om Workfront en AEM Assets te koppelen, om het maken van projecten en workfloworchestratie te automatiseren, raadpleegt u de documentatie bij Workfron Fusion en AEM Assets Integration.
+
+[ de Fusie van Workfront van het Gebruik om een kwestie van Workfront in een project met de werkschema&#39;s van AEM om te zetten ](https://experienceleague.adobe.com/en/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/use-fusion-to-create-project-with-workflows)
