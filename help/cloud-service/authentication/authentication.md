@@ -11,9 +11,9 @@ thumbnail: KT-10436.png
 last-substantial-update: 2022-10-14T00:00:00Z
 exl-id: 4dba6c09-2949-4153-a9bc-d660a740f8f7
 duration: 28
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 447ce616f043a67cb493507fc3de593859a53cb9
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -24,13 +24,13 @@ AEM as a Cloud Service ondersteunt meerdere verificatieopties en varieert per se
 
 |                       | AEM-auteur | AEM Publiceren |
 |-----------------------|:----------:|:-----------:|
-| [&#x200B; IMS van Adobe &#x200B;](../accessing/overview.md) | ✔ | ✔ |
-| [&#x200B; OpenID verbindt (OIDC) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier) | ✘ | ✔ |
-| [&#x200B; SAML 2.0 via Adobe IMS &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=nl-NL#how-to-set-up) | ✔ | ✔ |
-| [&#x200B; SAML 2.0 &#x200B;](./saml-2-0.md) | ✘ | ✔ |
-| [&#x200B; enig-teken (SSO) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html?lang=nl-NL#integration-with-an-idp) | ✘ | ✔ |
-| [&#x200B; OAuth &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html?lang=nl-NL#integration-with-an-idp) | ✘ | ✔ |
-| [&#x200B; Symbolische authentificatie &#x200B;](../../headless-tutorial/authentication/overview.md) | ✔ | ✔ |
+| [ IMS van Adobe ](../accessing/overview.md)<br>*(de Voorproef van AEM steunt Adobe IMS niet)* | ✔ | ✔ |
+| [ OpenID verbindt (OIDC) ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier) | ✘ | ✔ |
+| [ SAML 2.0 via Adobe IMS ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#how-to-set-up) | ✔ | ✔ |
+| [ SAML 2.0 ](./saml-2-0.md) | ✘ | ✔ |
+| [ enig-teken (SSO) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
+| [ OAuth ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
+| [ Symbolische authentificatie ](../../headless-tutorial/authentication/overview.md) | ✔ | ✔ |
 | Basisverificatie | ✘ | ✘ |
 
 ## Verificatieopties
