@@ -68,9 +68,9 @@ Het volgende is vereist bij het instellen van SAML 2.0-authenticatie:
 + AEM Administrator toegang tot AEM as a Cloud Service-omgeving
 + Beheerderstoegang tot de IDP
 + Naar keuze, toegang tot openbaar/privé sleutelpaar wordt gebruikt aan encryptieSAML nuttige ladingen
-+ AEM Sites pagina&#39;s (of paginabomen), die aan AEM worden gepubliceerd, en [ beschermd door Gesloten Gebruikersgroepen (CUGs) ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
++ AEM Sites pagina&#39;s (of paginabomen), die aan AEM worden gepubliceerd, en [&#x200B; beschermd door Gesloten Gebruikersgroepen (CUGs) &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
 
-SAML 2.0 wordt alleen ondersteund voor het verifiëren van toepassingen voor publicatie of voorvertoning in AEM. Om de authentificatie van de Auteur van AEM te beheren die en IDP gebruiken, [ integreert IDP met Adobe IMS ](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html).
+SAML 2.0 wordt alleen ondersteund voor het verifiëren van toepassingen voor publicatie of voorvertoning in AEM. Om de authentificatie van de Auteur van AEM te beheren die en IDP gebruiken, [&#x200B; integreert IDP met Adobe IMS &#x200B;](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html).
 
 
 ## IDP openbaar certificaat installeren op AEM
@@ -116,7 +116,7 @@ Het publieke certificaat van de IDP wordt toegevoegd aan de Global Trust Store v
 
 De Global Trust Store wordt geconfigureerd met het openbare certificaat van IDP voor AEM-auteur, maar aangezien SAML alleen wordt gebruikt in AEM Publish, moet de Global Trust Store worden gerepliceerd naar AEM Publish om het openbare certificaat IDP daar toegankelijk te maken.
 
-![ Herhaal de Globale Opslag van het Vertrouwen aan AEM publiceren ](./assets/saml-2-0/global-trust-store-replicate.png)
+![&#x200B; Herhaal de Globale Opslag van het Vertrouwen aan AEM publiceren &#x200B;](./assets/saml-2-0/global-trust-store-replicate.png)
 
 1. Navigeer aan __Hulpmiddelen > Plaatsing > Pakketten__.
 1. Een pakket maken
@@ -131,7 +131,7 @@ De Global Trust Store wordt geconfigureerd met het openbare certificaat van IDP 
 
 ## Maak authenticatie-service keystore aan{#authentication-service-keystore}
 
-_Het aanmaken van een keystore voor authenticatie-service is vereist wanneer de OSGi-configuratieeigenschap [ van de `handleLogout`SAML 2.0-authenticatiehandler is ingesteld of `true`](#saml-20-authenticationsaml-2-0-authentication) wanneer [AuthnRequest-ondertekening/SAML-assertie-versleuteling](#install-aem-public-private-key-pair) vereist is_
+_Het aanmaken van een keystore voor authenticatie-service is vereist wanneer de OSGi-configuratieeigenschap [&#x200B; van de `handleLogout`SAML 2.0-authenticatiehandler is ingesteld of `true`](#saml-20-authenticationsaml-2-0-authentication) wanneer [AuthnRequest-ondertekening/SAML-assertie-versleuteling](#install-aem-public-private-key-pair) vereist is_
 
 1. Log in op AEM Author als AEM-beheerder om de privésleutel te uploaden.
 1. Navigeer naar __Tools > Security > Users__, selecteer __authenticatie-service__ user, en selecteer __Properties__ in de bovenste actiebalk.
@@ -181,7 +181,7 @@ Het AuthnRequest (het verzoek aan de IDP van AEM Publish dat het inlogproces sta
 
 Alle HTTP-communicatie tussen IDP en AEM Publiceren moet via HTTPS plaatsvinden en moet daarom standaard worden beveiligd. Nochtans, zoals vereist, kunnen de beweringen van SAML worden gecodeerd in het geval wordt de extra vertrouwelijkheid vereist bovenop die verstrekt door HTTPS. Om dit te doen, codeert IDP de gegevens van de Bevestiging van SAML gebruikend de privé sleutel, en AEM publiceert decrypteert de bewering van SAML gebruikend de privé sleutel.
 
-![ SAML 2.0 - de encryptie van de Assertion van SP SAML ](./assets/saml-2-0/sp-samlrequest-encryption-diagram.png)
+![&#x200B; SAML 2.0 - de encryptie van de Assertion van SP SAML &#x200B;](./assets/saml-2-0/sp-samlrequest-encryption-diagram.png)
 
 1. Gebruiker verifieert aan IDP.
 1. IDP genereert een SAML-assertie met de gegevens van de gebruiker en ondertekent deze met het privécertificaat van de IDP.
@@ -225,7 +225,7 @@ Zowel AuthnRequest-ondertekening als SAML-assertie-encryptie zijn optioneel, maa
       + Met de `openssl` bovenstaande methode is dit het `aem-public.crt` bestand
    + Selecteer __voorleggen__
 1. Het onlangs toegevoegde certificaat verschijnt boven __voegt certificaat van CRT dossier__ sectie toe.
-   + Maak nota van __alias__ aangezien dit in [ SAML 2.0 de configuratie van de authentificatiemanager OSGi ](#saml-20-authentication-handler-osgi-configuration) wordt gebruikt
+   + Maak nota van __alias__ aangezien dit in [&#x200B; SAML 2.0 de configuratie van de authentificatiemanager OSGi &#x200B;](#saml-20-authentication-handler-osgi-configuration) wordt gebruikt
 1. Selecteer __sparen &amp; Sluiten__.
 1. Maak een pakket aan met de bijgewerkte __authenticatie-servicegebruiker__ .
 
@@ -334,7 +334,7 @@ OSGi-configuraties per omgeving (`config.publish.dev`, `config.publish.stage` en
 
 ### Codering gebruiken
 
-Wanneer [ het coderen van de bevestiging AuthnRequest en SAML ](#encrypting-the-authnrequest-and-saml-assertion), worden de volgende eigenschappen vereist: `useEncryption`, `spPrivateKeyAlias`, en `keyStorePassword`. `keyStorePassword` bevat een wachtwoord daarom moet de waarde niet in het OSGi configuratiedossier worden opgeslagen, maar eerder ingespoten gebruikend [ geheime configuratiewaarden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)
+Wanneer [&#x200B; het coderen van de bevestiging AuthnRequest en SAML &#x200B;](#encrypting-the-authnrequest-and-saml-assertion), worden de volgende eigenschappen vereist: `useEncryption`, `spPrivateKeyAlias`, en `keyStorePassword`. `keyStorePassword` bevat een wachtwoord daarom moet de waarde niet in het OSGi configuratiedossier worden opgeslagen, maar eerder ingespoten gebruikend [&#x200B; geheime configuratiewaarden &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)
 
 +++Optioneel kunt u de OSGi-configuratie bijwerken om encryptie te gebruiken
 
@@ -458,14 +458,14 @@ Om dit te doen, voeg je de volgende eigenschap toe aan het OSGI-configuratiebest
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
 
-Met deze configuratie, worden de gebruikers en de groepen gecreeerd als [ Externe Gebruikers van Oak ](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). In AEM hebben externe gebruikers en groepen de standaardwaarde `rep:principalName` , die wordt samengesteld door `[user name];[idp]` of `[group name];[idp]` .
+Met deze configuratie, worden de gebruikers en de groepen gecreeerd als [&#x200B; Externe Gebruikers van Oak &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). In AEM hebben externe gebruikers en groepen de standaardwaarde `rep:principalName` , die wordt samengesteld door `[user name];[idp]` of `[group name];[idp]` .
 Merk op dat de Lijsten van het Toegangsbeheer (ACL) met PrincipalName van gebruikers of groepen worden geassocieerd.
-Wanneer het opstellen van deze configuratie in een bestaande plaatsing waar eerder `identitySyncType` niet werd gespecificeerd of aan `default` werd geplaatst, zullen de nieuwe gebruikers en de groepen worden gecreeerd en ACL moet op deze nieuwe gebruikers en groepen worden toegepast. Externe groepen kunnen geen lokale gebruikers bevatten. [ opnieuw richt ](https://sling.apache.org/documentation/bundles/repository-initialization.html) kan worden gebruikt om ACL voor Externe groepen van SAML tot stand te brengen, zelfs als zij slechts zullen worden gecreeerd wanneer de gebruiker login zal uitvoeren.
-Om dit refactoring op ACL te vermijden, is een standaard [ migratieeigenschap ](#automatic-migration-to-dynamic-group-membership-for-existing-environments) uitgevoerd.
+Wanneer het opstellen van deze configuratie in een bestaande plaatsing waar eerder `identitySyncType` niet werd gespecificeerd of aan `default` werd geplaatst, zullen de nieuwe gebruikers en de groepen worden gecreeerd en ACL moet op deze nieuwe gebruikers en groepen worden toegepast. Externe groepen kunnen geen lokale gebruikers bevatten. [&#x200B; opnieuw richt &#x200B;](https://sling.apache.org/documentation/bundles/repository-initialization.html) kan worden gebruikt om ACL voor Externe groepen van SAML tot stand te brengen, zelfs als zij slechts zullen worden gecreeerd wanneer de gebruiker login zal uitvoeren.
+Om dit refactoring op ACL te vermijden, is een standaard [&#x200B; migratieeigenschap &#x200B;](#automatic-migration-to-dynamic-group-membership-for-existing-environments) uitgevoerd.
 
 ### Hoe lidmaatschappen worden opgeslagen in lokale en externe groepen met dynamisch groepslidmaatschap
 
-Bij lokale groepen worden de groepsleden opgeslagen in het eikenattribuut: `rep:members`. Het attribuut bevat de lijst van uid van elk lid van de groep. Meer details zijn hier[ te vinden](https://jackrabbit.apache.org/oak/docs/security/user/membership.html#member-representation-in-the-repository).
+Bij lokale groepen worden de groepsleden opgeslagen in het eikenattribuut: `rep:members`. Het attribuut bevat de lijst van uid van elk lid van de groep. Meer details zijn hier[&#x200B; te vinden](https://jackrabbit.apache.org/oak/docs/security/user/membership.html#member-representation-in-the-repository).
 Voorbeeld:
 
 ```
@@ -483,7 +483,7 @@ Voorbeeld:
 ```
 
 Externe groepen met dynamisch groepslidmaatschap slaan geen lid op in de groepsentry.
-Het groepslidmaatschap wordt in plaats daarvan opgeslagen in de gebruikersvermeldingen. Aanvullende documentatie is hier[ te vinden](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html). Dit is bijvoorbeeld de OAK-knoop voor de groep:
+Het groepslidmaatschap wordt in plaats daarvan opgeslagen in de gebruikersvermeldingen. Aanvullende documentatie is hier[&#x200B; te vinden](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html). Dit is bijvoorbeeld de OAK-knoop voor de groep:
 
 ```
 {
@@ -598,7 +598,7 @@ en het verstrekken van vraagparameters:
 
 | Naam van query-parameter | Parameterwaarde voor query |
 |----------------------|-----------------------|
-| `resource` | Elk JCR-pad, of subpad, dat de SAML-authenticatiehandler is, luistert naar, zoals gedefinieerd in de[ ](#configure-saml-2-0-authentication-handler) eigenschap van de `path`Adobe Granite SAML 2.0 Authentication Handler OSGi-configuratie. |
+| `resource` | Elk JCR-pad, of subpad, dat de SAML-authenticatiehandler is, luistert naar, zoals gedefinieerd in de[&#x200B; &#x200B;](#configure-saml-2-0-authentication-handler) eigenschap van de `path`Adobe Granite SAML 2.0 Authentication Handler OSGi-configuratie. |
 | `saml_request_path` | Het URL-pad waar de gebruiker naartoe moet worden geleid na succesvolle SAML-authenticatie. |
 
 Deze HTML-link activeert bijvoorbeeld de SAML-inlogflow, en na succes brengt de gebruiker naar `/content/wknd/us/en/protected/page.html`. Deze queryparameters kunnen programmatisch worden ingesteld indien nodig.
@@ -619,7 +619,7 @@ en het aanleveren van de formuliergegevens:
 
 | Formuliergegevensnaam | Formuliergegevenswaarde |
 |----------------------|-----------------------|
-| `resource` | Elk JCR-pad, of subpad, dat de SAML-authenticatiehandler is, luistert naar, zoals gedefinieerd in de[ ](#configure-saml-2-0-authentication-handler) eigenschap van de `path`Adobe Granite SAML 2.0 Authentication Handler OSGi-configuratie. |
+| `resource` | Elk JCR-pad, of subpad, dat de SAML-authenticatiehandler is, luistert naar, zoals gedefinieerd in de[&#x200B; &#x200B;](#configure-saml-2-0-authentication-handler) eigenschap van de `path`Adobe Granite SAML 2.0 Authentication Handler OSGi-configuratie. |
 | `saml_request_path` | Het URL-pad waar de gebruiker naartoe moet worden geleid na succesvolle SAML-authenticatie. |
 
 
