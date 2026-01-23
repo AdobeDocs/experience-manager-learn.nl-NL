@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # AI in Experience Manager
 
-![ AI in Experience Manager ](./assets/overview/hero.png)
+![&#x200B; AI in Experience Manager &#x200B;](./assets/overview/hero.png)
 
 Experience Manager as a Cloud Service biedt geavanceerde AI-mogelijkheden om inhoudsbeheer te verbeteren, workflows te stroomlijnen en gebruikerservaring te verbeteren. Door functies van AI, zoals AEM AI Assistant en AEM AI Agents, te integreren, kunnen gebruikers taken automatiseren, inzicht krijgen en de levering van inhoud optimaliseren.
 
