@@ -7,9 +7,9 @@ level: Beginner
 doc-type: Catalog
 duration: 30
 last-substantial-update: 2026-01-05T00:00:00Z
-source-git-commit: 9a2b7ee23132b5eac60f3eb2fd416fa26d0312db
+source-git-commit: 51dafa4f3f89c1b3057b411cdf142fec04ab797e
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # AI in Experience Manager
 
-![&#x200B; AI in Experience Manager &#x200B;](./assets/overview/hero.png)
+![ AI in Experience Manager ](./assets/overview/hero.png)
 
 Experience Manager as a Cloud Service biedt geavanceerde AI-mogelijkheden om inhoudsbeheer te verbeteren, workflows te stroomlijnen en gebruikerservaring te verbeteren. Door functies van AI, zoals AEM AI Assistant en AEM AI Agents, te integreren, kunnen gebruikers taken automatiseren, inzicht krijgen en de levering van inhoud optimaliseren.
 
@@ -48,7 +48,7 @@ Experience Manager as a Cloud Service biedt geavanceerde AI-mogelijkheden om inh
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./setup.md" title="AI instellen in AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474072/?captions=dut&format=jpeg&nocache=1767634731991" alt="AI instellen in AEM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474066/?format=jpeg&nocache=1769184550491" alt="AI instellen in AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -66,12 +66,35 @@ Experience Manager as a Cloud Service biedt geavanceerde AI-mogelijkheden om inh
             </div>
         </div>
     </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="AEM AI Assistant">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./ai-assistant.md" title="AEM AI Assistant" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475357/?format=jpeg&nocache=1769184550481" alt="AEM AI Assistant"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./ai-assistant.md" target="_blank" rel="referrer" title="AEM AI Assistant"> de Medewerker van AEM AI </a>
+                    </p>
+                    <p class="is-size-6">Leer hoe AI Assistant productkennis en -ondersteuning biedt in AEM.</p>
+                </div>
+                <a href="./ai-assistant.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Controle </span>
+                </a>
+            </div>
+        </div>
+    </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Agents in AEM">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./agents-in-aem.md" title="Medewerkers in AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475364/?captions=dut&format=jpeg&nocache=1767634731999" alt="Medewerkers in AEM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3478455/?format=jpeg&nocache=1769184550500" alt="Medewerkers in AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -94,7 +117,7 @@ Experience Manager as a Cloud Service biedt geavanceerde AI-mogelijkheden om inh
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../sites/generative-ai/generate-variations.md" title="Variaties genereren" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3427946/?format=jpeg&nocache=1767634732009" alt="Variaties genereren"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3427946/?format=jpeg&nocache=1769184550510" alt="Variaties genereren"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
