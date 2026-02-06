@@ -27,4 +27,4 @@ ht-degree: 0%
 
  Adobe IMS-gebruikersgroepen stellen logische sets met gebruikers samen die aan AEM worden blootgesteld. Deze gebruikers kunnen hiermee de machtigingen voor AEM-gebruikers afstemmen.
 
->[!VIDEO](https://video.tv.adobe.com/v/39150?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3479632?captions=dut&quality=12&learn=on)
