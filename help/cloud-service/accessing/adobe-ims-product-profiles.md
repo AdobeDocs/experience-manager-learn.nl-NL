@@ -23,7 +23,7 @@ ht-degree: 0%
 >id="aemcloud_adobeims_productprofiles"
 >title="Adobe IMS-productprofielen"
 >abstract="Met Adobe IMS-productprofielen kunnen gebruikers zich aanmelden bij een AEM Author-service en een basislijn voor toegang opgeven, afhankelijk van het productprofiel waarvan ze lid zijn. Meer informatie over Adobe IMS-productprofielen."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#introduction" text="Producten en gebruikerstoegang beheren in Admin Console"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=nl-NL#introduction" text="Producten en gebruikerstoegang beheren in Admin Console"
 
 Met Adobe IMS-productprofielen kunnen gebruikers zich aanmelden bij een AEM Author-service en een basislijn voor toegang opgeven, afhankelijk van het productprofiel waarvan ze lid zijn.
 
@@ -31,4 +31,4 @@ Met Adobe IMS-productprofielen kunnen gebruikers zich aanmelden bij een AEM Auth
 
 ## Aanvullende bronnen
 
-+ [&#x200B; het Leiden Producten en Toegang van de Gebruiker in de documentatie van Admin Console &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#managing-products-and-user-access-in-admin-console)
++ [&#x200B; het Leiden Producten en Toegang van de Gebruiker in de documentatie van Admin Console &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=nl-NL#managing-products-and-user-access-in-admin-console)
