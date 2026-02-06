@@ -25,7 +25,7 @@ De agent van de Ontwikkeling van AEM helpt technische teams, met inbegrip van on
 
 >[!TIP]
 >
-> Zie ook [&#x200B; Overzicht van Agenten in AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview) voor een volledige lijst van beschikbare Agenten in AEM as a Cloud Service, hun functionaliteit, en hoe u toegang tot hen kunt krijgen.
+> Zie ook [&#x200B; Overzicht van Agenten in AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview) voor een volledige lijst van beschikbare Agenten in AEM as a Cloud Service, hun functionaliteit, en hoe u toegang tot hen kunt krijgen.
 
 
 ## Overzicht
@@ -41,9 +41,9 @@ Voor de eenvoud introduceert deze zelfstudie een fout met een eenheidstest in he
 Voor het volgen van deze zelfstudie hebt u het volgende nodig:
 
 - AI Assistant en Agents in AEM ingeschakeld. Zie [&#x200B; Opstelling AI in AEM &#x200B;](./setup.md) voor details, en merk op dat playareas die in dat artikel worden vermeld geen mogelijkheden van de Agent van de Ontwikkeling van AEM zullen hebben.
-- De toegang tot Adobe [&#x200B; Cloud Manager &#x200B;](https://my.cloudmanager.adobe.com/) met een rol van de Manager van de Ontwikkelaar of van de Manager van het Programma. Zie [&#x200B; roldefinities &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles#role-definitions) voor meer informatie.
+- De toegang tot Adobe [&#x200B; Cloud Manager &#x200B;](https://my.cloudmanager.adobe.com/) met een rol van de Manager van de Ontwikkelaar of van de Manager van het Programma. Zie [&#x200B; roldefinities &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/requirements/users-and-roles#role-definitions) voor meer informatie.
 - Een AEM as a Cloud Service-omgeving
-- Toegang tot Agenten in AEM via het [&#x200B; programma van Beta &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)
+- Toegang tot Agenten in AEM via het [&#x200B; programma van Beta &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)
 - Het [&#x200B; WKND Project van Plaatsen &#x200B;](https://github.com/adobe/aem-guides-wknd) gekloond aan uw lokale machine
 
 ### Huidige mogelijkheden van AEM Development Agent
@@ -122,7 +122,7 @@ In deze zelfstudie wordt de vertakking `tutorial/dev-agent/unit-test-failure` va
 
 ### Creeer en vorm een Pijpleiding van de Kwaliteit van de Code
 
-Dit leerprogramma gebruikt een pijpleiding van de Kwaliteit van de Code (niet-productie) om de pijpleidingsmislukking voor het oplossen van problemen teweeg te brengen. Zie [&#x200B; Inleiding aan CI/CD pijpleidingen &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#introduction) voor meer informatie over de pijpleidingen van de Kwaliteit van de Code.
+Dit leerprogramma gebruikt een pijpleiding van de Kwaliteit van de Code (niet-productie) om de pijpleidingsmislukking voor het oplossen van problemen teweeg te brengen. Zie [&#x200B; Inleiding aan CI/CD pijpleidingen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#introduction) voor meer informatie over de pijpleidingen van de Kwaliteit van de Code.
 
 - In Cloud Manager, navigeer aan de **sectie van de Pijpleidingen** en selecteer **&#x200B;**&#x200B;toevoegen > **toevoegen niet-Productiepijpleiding**.
 - In **voeg de dialoog van de Pijpleiding van de Niet-Productie** toe, vorm het volgende:
@@ -210,17 +210,17 @@ Het project van Plaatsen WKND omvat extra voorbeelden van gebroken code en confi
 
 ![&#x200B; vertakkingen &#x200B;](./assets/dev-agent/compare-branches.png) vergelijken
 
-Zie ook de [&#x200B; herinneringen van de Steekproef &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/development/overview#sample-prompts) om meer ideeën op te krijgen hoe te om de Agent van de Ontwikkeling van AEM te gebruiken.
+Zie ook de [&#x200B; herinneringen van de Steekproef &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/agents/development/overview#sample-prompts) om meer ideeën op te krijgen hoe te om de Agent van de Ontwikkeling van AEM te gebruiken.
 
 ## Samenvatting
 
 In dit leerprogramma, leerde u hoe te om de Agent van de Ontwikkeling van AEM te gebruiken om een ontbroken pijpleiding problemen op te lossen en te bevestigen CI/CD gebruikend de Medewerker AI. U hebt ook geleerd hoe de technische workflows worden versneld door middel van actioneerbare inzichten en wijzigingen in de code.
 
-Begin gebruikend de Agent van de Ontwikkeling van AEM en andere Agenten in AEM om uw werkschema&#39;s te versnellen, zie [&#x200B; Overzicht van Agenten in AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview) voor meer informatie.
+Begin gebruikend de Agent van de Ontwikkeling van AEM en andere Agenten in AEM om uw werkschema&#39;s te versnellen, zie [&#x200B; Overzicht van Agenten in AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview) voor meer informatie.
 
 ## Aanvullende bronnen
 
 - [AI in Experience Manager](./overview.md)
-- [&#x200B; Overzicht van Agenten in AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)
-- [&#x200B; Overzicht van de Agent van de Ontwikkeling &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/development/overview)
-- [&#x200B; Overzicht van Agenten in AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)
+- [&#x200B; Overzicht van Agenten in AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)
+- [&#x200B; Overzicht van de Agent van de Ontwikkeling &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/agents/development/overview)
+- [&#x200B; Overzicht van Agenten in AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)
