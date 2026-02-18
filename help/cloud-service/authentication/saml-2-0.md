@@ -56,7 +56,7 @@ De typische stroom van een AEM Publish SAML integratie is als volgt:
 
 ## Configuratie doorlopen
 
->[!VIDEO](https://video.tv.adobe.com/v/343040?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3455347?captions=dut&quality=12&learn=on)
 
 Deze video doorloopt het opzetten van SAML 2.0 integratie met de publicatieservice van AEM as a Cloud Service en het gebruik van Okta als IDP.
 
