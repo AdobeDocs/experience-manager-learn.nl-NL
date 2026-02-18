@@ -27,7 +27,7 @@ ht-degree: 0%
 
 Met Adobe IMS-productprofielen kunnen gebruikers zich aanmelden bij een AEM Author-service en een basislijn voor toegang opgeven, afhankelijk van het productprofiel waarvan ze lid zijn.
 
->[!VIDEO](https://video.tv.adobe.com/v/39156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3479635?captions=dut&quality=12&learn=on)
 
 ## Aanvullende bronnen
 
