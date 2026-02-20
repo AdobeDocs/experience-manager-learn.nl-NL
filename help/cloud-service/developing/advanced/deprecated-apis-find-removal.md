@@ -10,9 +10,9 @@ jira: KT-20288
 thumbnail: KT-20288.png
 last-substantial-update: 2026-02-09T00:00:00Z
 exl-id: 287894ea-9cc1-4c27-ac7e-967ad46f4789
-source-git-commit: effacd58725dab502f6fb6a4750646c1ea956de2
+source-git-commit: 08dd5006ebf4ebd94e8bc60594f8f1541feb810f
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,29 @@ Leer hoe u verouderde API&#39;s kunt zoeken en verwijderen in AEM as a Cloud Ser
 
 ## Overzicht
 
-AEM as a Cloud Service **Centrum van Acties** brengt u over _afgekeurde APIs_ in uw project op de hoogte. Om ervoor te zorgen dat uw toepassing veilig en uitvoerbaar is en dat u code kunt blijven implementeren met behulp van Cloud Manager-pijpleidingen, verwijdert u verouderde API&#39;s uit uw project.
+Om ervoor te zorgen dat uw toepassing veilig en uitvoerbaar is en dat u code kunt blijven implementeren met behulp van Cloud Manager-pijpleidingen, verwijdert u verouderde API&#39;s uit uw project.
 
-In dit leerprogramma, leert u hoe te om verouderde APIs in uw milieu van AEM as a Cloud Service te vinden en te verwijderen gebruikend de [&#x200B; Analysator Maven Insteekmodule van AEM &#x200B;](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md).
+In dit leerprogramma, leert u hoe te om verouderde APIs in uw milieu van AEM as a Cloud Service te vinden en te verwijderen gebruikend de [ Analysator Maven Insteekmodule van AEM ](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md).
+
+## Meldingen over verouderde API&#39;s
+
+Het verouderde gebruik van APIs en de aandacht om het te bevestigen wordt regelmatig gemeld, herzien sommige voorbeelden.
+
+- AEM as a Cloud Service **Centrum van Acties** brengt u over _afgekeurde APIs_ in uw project op de hoogte.
+  ![ Vervangen APIs in het Centrum van Acties ](./assets/deprecated-apis/actions-center-deprecated-apis.png)
+
+- De **Scannen van de Code** stap in de pijpleidingsrapporten van Cloud Manager verouderde APIs in uw project, herzie het **rapport van de Details van de Download** om de volledige lijst van verouderde APIs te zien.
+  ![ Vervangen APIs in het Scannen van de Code ](./assets/deprecated-apis/code-scanning-summary.png)
+
+- De **stap van de Voorbereiding van het Artefact in de pijpleidingsrapporten van Cloud Manager verouderde APIs in uw project,** Logboek van de Download **en kijkt** waarschuwingen van de Analysator _in het logboekdossier._
+
+  ```
+  2026-02-20 15:40:48.376 Analyser warnings have been found 
+  2026-02-20 15:40:48.376 The analyser found the following warnings for author and publish : 
+  2026-02-20 15:40:48.376 [region-deprecated-api] com.adobe.aem.guides:aem-guides-wknd.core:4.0.5-SNAPSHOT: Usage of deprecated package found : org.apache.commons.lang : Commons Lang 2 is in maintenance mode. Commons Lang 3 should be used instead. Deprecated since 2021-04-30 For removal : 2021-12-31 (com.adobe.aem.guides:aem-guides-wknd.all:4.0.5-SNAPSHOT)
+  2026-02-20 15:40:56.458 Convert Merge Analyse finished.
+  ```
+
 
 ## Vervangen API&#39;s zoeken
 
@@ -33,13 +53,13 @@ Voer de volgende stappen uit om verouderde API&#39;s te zoeken in uw AEM as a Cl
 
 1. **Gebruik de recentste Insteekmodule van de Analysator van AEM Gemaakt**
 
-   In uw project van AEM, gebruik de recentste versie van de [&#x200B; Gebruikte Insteekmodule van de Analysator van AEM &#x200B;](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md).
+   In uw project van AEM, gebruik de recentste versie van de [ Gebruikte Insteekmodule van de Analysator van AEM ](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md).
 
-   - In de hoofdmap `pom.xml` wordt de versie van de plug-in meestal gedeclareerd. Vergelijk uw versie met de recentste [&#x200B; vrijgegeven versie &#x200B;](https://mvnrepository.com/artifact/com.adobe.aem/aemanalyser-maven-plugin).
+   - In de hoofdmap `pom.xml` wordt de versie van de plug-in meestal gedeclareerd. Vergelijk uw versie met de recentste [ vrijgegeven versie ](https://mvnrepository.com/artifact/com.adobe.aem/aemanalyser-maven-plugin).
 
      ```xml
      ...
-     <aemanalyser.version>1.6.14</aemanalyser.version> <!-- Latest released version as of 09-Feb-2026 -->
+     <aemanalyser.version>1.6.16</aemanalyser.version> <!-- Latest released version as of 20-Feb-2026 -->
      ...
      <!-- AEM Analyser Plugin -->
      <plugin>
@@ -55,7 +75,7 @@ Voer de volgende stappen uit om verouderde API&#39;s te zoeken in uw AEM as a Cl
 
      ```xml
      ...
-     <aem.sdk.api>2026.2.24288.20260204T121510Z-260100</aem.sdk.api> <!-- Latest available AEM SDK version as of 09-Feb-2026 -->
+     <aem.sdk.api>2026.2.24464.20260214T050318Z-260100</aem.sdk.api> <!-- Latest available AEM SDK version as of 20-Feb-2026 -->
      ...
      ```
 
@@ -117,11 +137,11 @@ De Analysator van AEM rapporteert **wat** wordt afgekeurd en verstrekt de **aanb
 
 | Waarschuwingstype Analyzer | Wat het aangeeft | Aanbevolen actie | Referentie |
 | --------------------- | ----------------- | ------------------ | --------- |
-| Verouderde AEM API | API moet uit AEM as a Cloud Service worden verwijderd | Gebruik vervangen door de ondersteunde openbare API | [&#x200B; API de Begeleiding van de Verwijdering &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
-| Vervangen AEM-pakket of -klasse | Pakket of klasse wordt niet meer ondersteund | Refactorcode om het aanbevolen alternatief te gebruiken | [&#x200B; Vervangen APIs &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#aem-apis) |
-| Vervangen bibliotheek van derden | Bibliotheek wordt niet ondersteund in toekomstige SDK&#39;s | Verbetering van het gebruik van afhankelijkheid en refactor | [&#x200B; Algemene Richtlijnen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
-| Vervangen Sling/OSGi-patronen | Oudere annotaties of API&#39;s gedetecteerd | Migreren naar moderne Sling- en OSGi-API&#39;s | [&#x200B; Verwijdering van de Patronen Sling/OSGi &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
-| Geplande verwijdering (datum in de toekomst) | API werkt nog wel, maar verwijdering wordt later afgedwongen | Opschonen van plannen vóór handhaving van de pijpleiding | [&#x200B; de nota&#39;s van de Versie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/home) |
+| Verouderde AEM API | API moet uit AEM as a Cloud Service worden verwijderd | Gebruik vervangen door de ondersteunde openbare API | [ API de Begeleiding van de Verwijdering ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
+| Vervangen AEM-pakket of -klasse | Pakket of klasse wordt niet meer ondersteund | Refactorcode om het aanbevolen alternatief te gebruiken | [ Vervangen APIs ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#aem-apis) |
+| Vervangen bibliotheek van derden | Bibliotheek wordt niet ondersteund in toekomstige SDK&#39;s | Verbetering van het gebruik van afhankelijkheid en refactor | [ Algemene Richtlijnen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
+| Vervangen Sling/OSGi-patronen | Oudere annotaties of API&#39;s gedetecteerd | Migreren naar moderne Sling- en OSGi-API&#39;s | [ Verwijdering van de Patronen Sling/OSGi ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
+| Geplande verwijdering (datum in de toekomst) | API werkt nog wel, maar verwijdering wordt later afgedwongen | Opschonen van plannen vóór handhaving van de pijpleiding | [ de nota&#39;s van de Versie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home) |
 
 ### Praktische aanwijzingen
 
@@ -133,5 +153,5 @@ Het bevestigen afgekeurde APIs houdt vroeg uw project **verbetering-veilig en pl
 
 ## Aanvullende bronnen
 
-- [&#x200B; AEM Analyser Maven Insteekmodule &#x200B;](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md)
-- [&#x200B; Vervangen en Verwijderde Eigenschappen en APIs &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance)
+- [ AEM Analyser Maven Insteekmodule ](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md)
+- [ Vervangen en Verwijderde Eigenschappen en APIs ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance)
