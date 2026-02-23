@@ -23,7 +23,7 @@ Een Forms-gegevensmodel maken om externe gegevensbronnen te integreren met inter
 
 Er is een modelAPI-server geïmplementeerd die de besteldienst simuleert voor ontwikkelings- en testdoeleinden. Het stelt een eindpunt bloot om orden voor een bepaalde gebruiker (b.v., door gebruiker - identiteitskaart) te halen, terugkerend vooraf bepaalde of dynamisch geproduceerde ordegegevens in het zelfde schema zoals productie API.
 
-Het dossier van de wagger dat in verwezenlijking van het model van vormgegevens wordt gebruikt kan [ van hier worden gedownload ](assets/UsersAndOrders.json)
+Het dossier van de wagger dat in verwezenlijking van het model van vormgegevens wordt gebruikt kan [&#x200B; van hier worden gedownload &#x200B;](assets/UsersAndOrders.json)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3480005/?learn=on&enablevpops)
 
