@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Ontdek hoe u interactieve communicatiesjablonen kunt maken om uitgaande communicatie te standaardiseren. Deze malplaatjes verzekeren consistentie, bestuur, en merkgroepering in klantenmededelingen. Leer het proces van malplaatjeverwezenlijking, het uitgeven, en het toelaten voor toekomstig gebruik, gebruikend hulpmiddelen zoals het Web Designer van IC en de Bibliotheek van Objecten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480029/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480048/?captions=dut&learn=on&enablevpops)
 
 ## Volgende stappen
 

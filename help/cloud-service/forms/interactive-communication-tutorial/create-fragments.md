@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Leer hoe u herbruikbare fragmenten voor interactieve communicatiedocumenten kunt ontwikkelen. Optimaliseer lay-outs en verzeker dynamische gegevensband voor de secties van het klantenadres en van de brievenbus. Verbeter documentontwerp met het formatteren, plaatsen, en margecontroles.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480042/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480060/?captions=dut&learn=on&enablevpops)
 
 ## Volgende stappen
 

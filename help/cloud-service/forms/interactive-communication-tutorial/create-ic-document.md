@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Maak interactieve communicatiedocumenten met vooraf gedefinieerde sjablonen en herbruikbare fragmenten. Dit zorgt voor consistentie en efficiëntie bij het maken van documenten. Dynamische gegevens insluiten door het juiste FDM (Form Data Model) te selecteren en fragmenten in bepaalde doelgebieden in te voegen. Test de uiteindelijke uitvoer voor nauwkeurigheid en opmaak.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480054/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480071/?captions=dut&learn=on&enablevpops)
 
 ## Volgende stappen
 

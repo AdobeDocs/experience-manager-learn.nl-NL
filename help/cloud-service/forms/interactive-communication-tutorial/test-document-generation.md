@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Leer hoe u interactieve communicatiedocumenten kunt genereren met de API en de Postman. Dit proces omvat het verkrijgen van de document-id, het verifiëren van aanvragen en het gebruik van vooraf ingevulde configuraties om PDF&#39;s te renderen. Ontdek hoe deze API kan worden geïntegreerd in toepassingen voor het doorgeven van dynamische runtimeparameters en beveiligde verificatie.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480017/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480035/?captions=dut&learn=on&enablevpops)
