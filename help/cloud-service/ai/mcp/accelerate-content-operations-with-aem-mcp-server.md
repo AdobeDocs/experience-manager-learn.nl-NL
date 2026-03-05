@@ -92,7 +92,7 @@ Daarna, opstelling de [&#x200B; WKND Adventures React App &#x200B;](https://gith
    $ git clone git@github.com:adobe/aem-guides-wknd.git
    ```
 
-1. Stel het [&#x200B; 1&rbrace; project van de Plaats WKND &lbrace;aan uw RDE op. &#x200B;](https://github.com/adobe/aem-guides-wknd) Voor gedetailleerde stappen, zie [&#x200B; hoe te om het Snelle Milieu van de Ontwikkeling &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-aem-artifacts-using-the-aem-rde-plugin) te gebruiken.
+1. Stel het [&#x200B; 1&rbrace; project van de Plaats WKND &lbrace;aan uw RDE op. &#x200B;](https://github.com/adobe/aem-guides-wknd) Voor gedetailleerde stappen, zie [&#x200B; hoe te om het Snelle Milieu van de Ontwikkeling &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-aem-artifacts-using-the-aem-rde-plugin) te gebruiken.
 
 1. Open de map `react-app` in uw IDE.
 
