@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Leer hoe AI Assistant de AEM-workflows versnelt door directe hulp, codefragmenten en stappen voor het oplossen van problemen te bieden. Dit vermindert supportinspanningen en helpt teams inhoud sneller en met hogere kwaliteit te leveren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480858/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480865/?captions=dut&learn=on&enablevpops)

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Met AI Assistant worden AEM-taken versneld, direct antwoorden gegeven, functies voor hulplijnen gebruikt, problemen opgelost en ondersteuningstickets gemaakt (allemaal via de Experience Manager-interface). Het helpt teams inhoud sneller leveren, op documentatieonderzoeken besnoeien, en operationele efficiency verbeteren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480859/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480876/?captions=dut&learn=on&enablevpops)
