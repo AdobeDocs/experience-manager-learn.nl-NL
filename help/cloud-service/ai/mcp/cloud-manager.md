@@ -24,4 +24,4 @@ Cloud Manager MCP de Server laat de Ontwikkelaars van AEM pijpleidingen in werki
 >
 > Cloud Manager MCP Server is nu bètaversie. Om toegang te verzoeken, e-mail [&#x200B; aemcs-mcp-feedback@adobe.com &#x200B;](mailto:aemcs-mcp-feedback@adobe.com) met een beschrijving van uw gebruiksgeval.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480340/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480348/?captions=dut&learn=on&enablevpops)
