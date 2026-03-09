@@ -8,27 +8,29 @@ doc-type: tutorial
 duration: null
 last-substantial-update: 2026-03-04T00:00:00Z
 jira: KT-20474
-source-git-commit: c5f1c7f57181b1e9de6dd91aa2428f2fe1a04893
+exl-id: 843209cb-2f31-466c-b5b1-a9fb26965bc0
+source-git-commit: 6a0eb6e8f5fa9d7152f46d6b8054dc89ff656507
 workflow-type: tm+mt
 source-wordcount: '850'
 ht-degree: 0%
 
 ---
 
-
 # Bewerkingen voor AEM-inhoud versnellen met de Content MCP-server
 
-Gebruik de **Server MCP van de Inhoud** van een AI-Gedreven winde zoals [&#x200B; winde van de Curseur &#x200B;](https://www.cursor.com/) om met de inhoud van AEM in natuurlijke taal, geen laag-niveau API code of navigatie UI te werken.
+Gebruik de **Server MCP van de Inhoud** van een AI-Gedreven winde zoals [ winde van de Curseur ](https://www.cursor.com/) om met de inhoud van AEM in natuurlijke taal, geen laag-niveau API code of navigatie UI te werken.
 
-In dit leerprogramma herziet u _de fragmentdetails van de Adventure-inhoud,_ update _een fragment (bijvoorbeeld, de prijs van een avontuur), en_ verifieert _de verandering in de_ WKND avonturen Reageren app [&#x200B; allen van uw winde tegen a &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app) lagere milieu van AEM _(RDE of Ontwikkeling) zonder de stroom te verlaten MCP._
+In dit leerprogramma herziet u _de fragmentdetails van de Adventure-inhoud,_ update _een fragment (bijvoorbeeld, de prijs van een avontuur), en_ verifieert _de verandering in de_ WKND avonturen Reageren app [ allen van uw winde tegen a ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app) lagere milieu van AEM _(RDE of Ontwikkeling) zonder de stroom te verlaten MCP._
+
+>[!VIDEO](https://video.tv.adobe.com/v/3480895/?learn=on&enablevpops)
 
 ## Overzicht
 
-AEM as a Cloud Service verstrekt _MCP Servers_ zodat kan uw winde of praatjeapp veilig met AEM werken. De **Server MCP van de Inhoud** steunt pagina&#39;s, fragmenten, en activa. Zie [&#x200B; MCP Servers in AEM &#x200B;](./overview.md) voor meer informatie.
+AEM as a Cloud Service verstrekt _MCP Servers_ zodat kan uw winde of praatjeapp veilig met AEM werken. De **Server MCP van de Inhoud** steunt pagina&#39;s, fragmenten, en activa. Zie [ MCP Servers in AEM ](./overview.md) voor meer informatie.
 
 ## Hoe ontwikkelaars het kunnen gebruiken
 
-Verbind [&#x200B; winde van de Curseur &#x200B;](https://www.cursor.com/) met de Server van Inhoud MCP en stel het scenario hieronder in werking.
+Verbind [ winde van de Curseur ](https://www.cursor.com/) met de Server van Inhoud MCP en stel het scenario hieronder in werking.
 
 ### Setup - Content MCP Server in Cursor
 
@@ -37,10 +39,10 @@ Opstelling de Server MCP van de Inhoud in Curseur met deze stappen.
 1. Open de cursor op uw computer.
 
 1. Ga naar **Montages** > **de Montages van de Curseur** van het menu van de Curseur om het montagevenster te openen.
-   ![&#x200B; de Montages van de Curseur &#x200B;](../assets/content-mcp-server/cursor-settings.png)
+   ![ de Montages van de Curseur ](../assets/content-mcp-server/cursor-settings.png)
 
 1. In linkerzijbalk, klik **Hulpmiddelen &amp; MCP** om dat paneel te openen.
-   ![&#x200B; Hulpmiddelen &amp; MCP &#x200B;](../assets/content-mcp-server/tools-mcp.png)
+   ![ Hulpmiddelen &amp; MCP ](../assets/content-mcp-server/tools-mcp.png)
 
 1. Klik **Voeg Douane MCP** of **Nieuwe Server MCP** toe om `mcp.json` te openen, dan deeg in deze configuratie:
 
@@ -66,21 +68,21 @@ Opstelling de Server MCP van de Inhoud in Curseur met deze stappen.
    >
    > Als u om het even welke mogelijkheid wilt vermijden om, inhoud tot stand te brengen te wijzigen of te schrappen, slechts **Inhoud (read-only) vormen** (`/content-readonly`) en **Inhoud** weglaten (`/content`). Op die manier vermijdt u onbedoelde veranderingen.
 
-   ![&#x200B; voeg de Server van AEM MCP &#x200B;](../assets/content-mcp-server/mcp-json-file.png) toe
+   ![ voeg de Server van AEM MCP ](../assets/content-mcp-server/mcp-json-file.png) toe
 
 1. Van het venster van de Montages van de Curseur, klik **verbinden** om het authentificatieproces in werking te stellen. Het gebruikt de stroom van OAuth 2.0 PKCE om het **Token van de Toegang van de Gebruiker Specifieke** te krijgen om tot de Server van AEM toegang te hebben MCP.
-   ![&#x200B; verbind met de Server van AEM MCP &#x200B;](../assets/content-mcp-server/connect-to-aem-mcp-server.png)
+   ![ verbind met de Server van AEM MCP ](../assets/content-mcp-server/connect-to-aem-mcp-server.png)
 
 1. Meld u aan met uw Adobe ID en kom vervolgens terug naar het venster Cursorinstellingen.
-   ![&#x200B; Login met Adobe ID &#x200B;](../assets/content-mcp-server/login-with-adobe-id.png)
+   ![ Login met Adobe ID ](../assets/content-mcp-server/login-with-adobe-id.png)
 
 1. Bevestig dat **AEM-RDE-Content-Read-Only** en **AEM-RDE-Inhoud** als verbonden tonen. U kunt elke server uitbreiden om zijn hulpmiddelen te zien.
 
-   ![&#x200B; de Servers van AEM MCP &#x200B;](../assets/content-mcp-server/connected-aem-mcp-servers.png)
+   ![ de Servers van AEM MCP ](../assets/content-mcp-server/connected-aem-mcp-servers.png)
 
 ### Setup - WKND Adventures React App
 
-Daarna, opstelling de [&#x200B; WKND Adventures React App &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app) in Cursor.
+Daarna, opstelling de [ WKND Adventures React App ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app) in Cursor.
 
 1. Deze twee reacties klonen op uw computer:
 
@@ -92,7 +94,7 @@ Daarna, opstelling de [&#x200B; WKND Adventures React App &#x200B;](https://gith
    $ git clone git@github.com:adobe/aem-guides-wknd.git
    ```
 
-1. Stel het [&#x200B; 1&rbrace; project van de Plaats WKND &lbrace;aan uw RDE op. &#x200B;](https://github.com/adobe/aem-guides-wknd) Voor gedetailleerde stappen, zie [&#x200B; hoe te om het Snelle Milieu van de Ontwikkeling &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-aem-artifacts-using-the-aem-rde-plugin) te gebruiken.
+1. Stel het [ 1} project van de Plaats WKND {aan uw RDE op. ](https://github.com/adobe/aem-guides-wknd) Voor gedetailleerde stappen, zie [ hoe te om het Snelle Milieu van de Ontwikkeling ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-aem-artifacts-using-the-aem-rde-plugin) te gebruiken.
 
 1. Open de map `react-app` in uw IDE.
 
@@ -109,13 +111,13 @@ Daarna, opstelling de [&#x200B; WKND Adventures React App &#x200B;](https://gith
    $ npm start
    ```
 
-1. In uw browser, ga naar [&#x200B; http://localhost :3000 &#x200B;](http://localhost:3000) om WKND te bekijken avonturen app.
+1. In uw browser, ga naar [ http://localhost :3000 ](http://localhost:3000) om WKND te bekijken avonturen app.
 
-   ![&#x200B; Reageer app - WKND avonturen &#x200B;](../assets/content-mcp-server/react-app-wknd-adventures.png)
+   ![ Reageer app - WKND avonturen ](../assets/content-mcp-server/react-app-wknd-adventures.png)
 
 ### Productiviteitsscenario - AEM Content review en update
 
-Veronderstel u a _HOT_ banner van de VERKLARING van de VERKLARING moet tonen &lbrace;wanneer een eenvoudige regel wordt voldaan. De gebruikelijke aanpak zou zijn:
+Veronderstel u a _HOT_ banner van de VERKLARING van de VERKLARING moet tonen {wanneer een eenvoudige regel wordt voldaan. De gebruikelijke aanpak zou zijn:
 
 - Bekijk de de componentencode van Adventure cards
 - De logica toevoegen voor wanneer de banner moet worden weergegeven
@@ -132,7 +134,7 @@ Omdat React app zijn gegevens van uw milieu van RDE krijgt, moet u het model van
    I want to review my Content Fragment Models from AEM RDE, can you list the Adventure Content Fragment details.
    ```
 
-   ![&#x200B; Modellen van het Fragment van de Inhoud van het Overzicht &#x200B;](../assets/content-mcp-server/review-content-fragment-models-prompt-response.png)
+   ![ Modellen van het Fragment van de Inhoud van het Overzicht ](../assets/content-mcp-server/review-content-fragment-models-prompt-response.png)
 
 
    Alvorens de Server van Inhoud MCP aan te halen, vraagt het om bevestiging om te werk te gaan. Zo blijft u de inhoudsbewerkingen beheren.
@@ -145,13 +147,13 @@ Omdat React app zijn gegevens van uw milieu van RDE krijgt, moet u het model van
    Can you update adventure Beervana in Portland's price to 99.99
    ```
 
-   ![&#x200B; Prijs van het Adventure van de Update &#x200B;](../assets/content-mcp-server/update-adventure-price-prompt-response.png)
+   ![ Prijs van het Adventure van de Update ](../assets/content-mcp-server/update-adventure-price-prompt-response.png)
 
    Op dezelfde manier vraagt de AI om bevestiging om te werk te gaan alvorens de inhoud bij te werken. Hierin wordt ook een overzicht gegeven van de inhoudsbewerking voor en na de update.
 
 1. In React app, bevestig dat de kaart Beervana nu de _BALANS VAN DE HOT_ banner toont.
 
-   ![&#x200B; verifieer HOT DEAL Banner &#x200B;](../assets/content-mcp-server/verify-hot-deal-banner.png)
+   ![ verifieer HOT DEAL Banner ](../assets/content-mcp-server/verify-hot-deal-banner.png)
 
 ### Aanvullende vragen
 
