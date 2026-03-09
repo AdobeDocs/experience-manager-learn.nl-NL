@@ -22,7 +22,7 @@ Gebruik de **Server MCP van de Inhoud** van een AI-Gedreven winde zoals [&#x200B
 
 In dit leerprogramma herziet u _de fragmentdetails van de Adventure-inhoud,_ update _een fragment (bijvoorbeeld, de prijs van een avontuur), en_ verifieert _de verandering in de_ WKND avonturen Reageren app [&#x200B; allen van uw winde tegen a &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app) lagere milieu van AEM _(RDE of Ontwikkeling) zonder de stroom te verlaten MCP._
 
->[!VIDEO](https://video.tv.adobe.com/v/3480895/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480901/?captions=dut&learn=on&enablevpops)
 
 ## Overzicht
 
