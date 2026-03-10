@@ -24,7 +24,7 @@ ht-degree: 0%
 >id="aemcloud_localdev_aemruntime"
 >title="Lokale AEM Runtime"
 >abstract="Adobe Experience Manager (AEM) kan lokaal worden uitgevoerd met de AEM as a Cloud Service SDK QuickStart Jar. Dit staat ontwikkelaars toe om op te stellen aan, en douanecode, configuratie, en inhoud te testen alvorens het aan broncontrole te bevestigen, en het op te stellen aan een milieu van AEM as a Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html" text="AEM as a Cloud Service SDK"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=nl-NL" text="AEM as a Cloud Service SDK"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="AEM as a Cloud Service SDK downloaden"
 
 Adobe Experience Manager (AEM) kan lokaal worden uitgevoerd met de AEM as a Cloud Service SDK QuickStart Jar. Dit staat ontwikkelaars toe om op te stellen aan, en douanecode, configuratie, en inhoud te testen alvorens het aan broncontrole te bevestigen, en het op te stellen aan een milieu van AEM as a Cloud Service.
@@ -176,7 +176,7 @@ $ java -jar aem-publish-p4503.jar
 
 ## Inhoudsdistributie simuleren {#content-distribution}
 
-In ware Cloud Service wordt de milieu-inhoud van de Auteur aan de Publish Dienst verdeeld gebruikend [&#x200B; het Verdelen van de Inhoud &#x200B;](https://sling.apache.org/documentation/bundles/content-distribution.html) en de Pijpleiding van Adobe. [&#x200B; de Pijpleiding van Adobe &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=en#content-distribution) is een geïsoleerde microdienst beschikbaar slechts in het wolkenmilieu.
+In ware Cloud Service wordt de milieu-inhoud van de Auteur aan de Publish Dienst verdeeld gebruikend [&#x200B; het Verdelen van de Inhoud &#x200B;](https://sling.apache.org/documentation/bundles/content-distribution.html) en de Pijpleiding van Adobe. [&#x200B; de Pijpleiding van Adobe &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=nl-NL#content-distribution) is een geïsoleerde microdienst beschikbaar slechts in het wolkenmilieu.
 
 Tijdens de ontwikkeling, kan het wenselijk zijn om de distributie van inhoud te simuleren gebruikend de lokale auteur en de Publish dienst. Dit kan worden bereikt door de agenten van de erfenisReplicatie toe te laten.
 
@@ -211,7 +211,7 @@ Tijdens de ontwikkeling, kan het wenselijk zijn om de distributie van inhoud te 
 
 ## Lokale AEM-services instellen in de pre-releasemodus
 
-De lokale runtime van AEM kan op [&#x200B; pre-releasemodus &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html) worden begonnen toestaand een ontwikkelaar om tegen de volgende eigenschappen van de volgende versie van AEM as a Cloud Service te bouwen. Prerelease wordt ingeschakeld door het argument `-r prerelease` door te geven bij het eerste starten van de lokale AEM-runtime. Deze kan zowel met de lokale AEM Author als met de publicatieservices van AEM worden gebruikt.
+De lokale runtime van AEM kan op [&#x200B; pre-releasemodus &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL) worden begonnen toestaand een ontwikkelaar om tegen de volgende eigenschappen van de volgende versie van AEM as a Cloud Service te bouwen. Prerelease wordt ingeschakeld door het argument `-r prerelease` door te geven bij het eerste starten van de lokale AEM-runtime. Deze kan zowel met de lokale AEM Author als met de publicatieservices van AEM worden gebruikt.
 
 
 >[!BEGINTABS]
@@ -280,7 +280,7 @@ Als u een lokale AEM-runtime wilt stoppen (AEM Author of Publish service), opent
 
 ## Optionele lokale instellingstaken voor AEM-runtime
 
-+ __OSGi de variabelen van het configuratiemilieu en geheim variabelen__ zijn [&#x200B; speciaal plaats voor lokale runtime van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development), eerder dan het beheren van hen die air CLI gebruiken.
++ __OSGi de variabelen van het configuratiemilieu en geheim variabelen__ zijn [&#x200B; speciaal plaats voor lokale runtime van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=nl-NL#local-development), eerder dan het beheren van hen die air CLI gebruiken.
 
 ## Wanneer werkt u de QuickStart-jar bij
 
@@ -404,4 +404,4 @@ $ java --version
 + [&#x200B; Download AEM SDK &#x200B;](https://experience.adobe.com/#/downloads)
 + [&#x200B; Adobe Cloud Manager &#x200B;](https://my.cloudmanager.adobe.com/)
 + [&#x200B; Docker van de Download &#x200B;](https://www.docker.com/)
-+ [&#x200B; de Documentatie van Experience Manager Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
++ [&#x200B; de Documentatie van Experience Manager Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL)
