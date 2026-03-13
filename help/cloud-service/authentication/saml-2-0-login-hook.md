@@ -81,7 +81,7 @@ public void postSyncUserProcess(
 **Belangrijk:** om gebruikerseigenschappen in de bewaarplaats te wijzigen, vereist de hakenimplementatie:
 
 + Een `SlingRepository` referentie ingespoten via `@Reference`
-+ Een gevormde [ de dienstgebruiker ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) met aangewezen toestemmingen (die in &quot;het Wijziging van de Dienst van het Mapper van de Dienst van Apache Sling wordt gevormd)
++ Een gevormde [&#x200B; de dienstgebruiker &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) met aangewezen toestemmingen (die in &quot;het Wijziging van de Dienst van het Mapper van de Dienst van Apache Sling wordt gevormd)
 + Correct sessiebeheer met blokken try-catch-finally
 
 ## Een aangepaste SAML-haak implementeren
@@ -267,7 +267,7 @@ Het `aem-sdk-api` -artefact bevat alle benodigde Adobe Granite SAML-interfaces, 
 
 ### Servicegebruiker configureren (optioneel)
 
-Als de haak SAML inhoud in de bibliotheek van AEM JCR, zoals gebruikerseigenschappen moet wijzigen, (zoals aangetoond in het `postSyncUserProcess` voorbeeld), a [ de dienstgebruiker ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) moet worden gevormd:
+Als de haak SAML inhoud in de bibliotheek van AEM JCR, zoals gebruikerseigenschappen moet wijzigen, (zoals aangetoond in het `postSyncUserProcess` voorbeeld), a [&#x200B; de dienstgebruiker &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) moet worden gevormd:
 
 1. Creeer een afbeelding van de de dienstgebruiker in het project bij `/ui.config/src/main/content/jcr_root/apps/myproject/osgiconfig/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~saml.cfg.json`:
 
@@ -310,7 +310,7 @@ Implementeer de aangepaste SAML-haak naar AEM as a Cloud Service:
 + **het Testen**: De haken van de Test grondig in lagere milieu&#39;s alvorens aan productie op te stellen
 + **Veelvoudige haken**: De veelvoudige SAML hakenimplementaties kunnen worden gevormd; alle passende haken zullen worden uitgevoerd. Gebruik het `service.ranking` bezit in de component OSGi om de uitvoeringsorde (de hogere rangschikkingswaarden voeren eerst uit) te controleren. Om een haak SAML over veelvoudige de fabrieksconfiguraties van de Handler van de Authentificatie van SAML (`com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>`) opnieuw te gebruiken, creeer veelvoudige haken configuraties (OSGi fabrieksconfiguraties), elk met een verschillende `idpIdentifier` aanpassing van de respectieve Handler van de Authentificatie van SAML
 + **Veiligheid**: Valideer en ontsmet alle gegevens van de beweringen van SAML alvorens hen in bedrijfslogica te gebruiken
-+ **Toegang van de Bewaarplaats**: Wanneer het wijzigen van gebruikerseigenschappen in `postSyncUserProcess`, gebruik altijd a [ de dienstgebruiker ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) met aangewezen toestemmingen eerder dan administratieve zittingen
-+ **de gebruikerstoestemmingen van de Dienst**: Verleen minimale vereiste toestemmingen aan de [ de dienstgebruiker ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) (b.v., slechts `jcr:read` en `rep:write` op `/home/users`, niet volledige admin rechten)
++ **Toegang van de Bewaarplaats**: Wanneer het wijzigen van gebruikerseigenschappen in `postSyncUserProcess`, gebruik altijd a [&#x200B; de dienstgebruiker &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) met aangewezen toestemmingen eerder dan administratieve zittingen
++ **de gebruikerstoestemmingen van de Dienst**: Verleen minimale vereiste toestemmingen aan de [&#x200B; de dienstgebruiker &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) (b.v., slechts `jcr:read` en `rep:write` op `/home/users`, niet volledige admin rechten)
 + **Sessiebeheer**: Gebruik altijd blokken try-catch-finally om te zorgen dat de sessies in de opslagplaats correct gesloten zijn, zelfs als er uitzonderingen optreden
 + **de synchronisatietiming van de Gebruiker**: De `postSyncUserProcess` haak voert uit nadat de gebruiker aan OAK is gesynchroniseerd, zodat is het gebruikersvoorwerp gewaarborgd om in de bewaarplaats op dat punt te bestaan
