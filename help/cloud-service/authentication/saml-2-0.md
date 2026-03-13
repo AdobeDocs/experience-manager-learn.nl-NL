@@ -8,21 +8,19 @@ role: Developer
 level: Intermediate
 jira: KT-9351
 thumbnail: 343040.jpeg
-last-substantial-update: 2024-05-15T00:00:00Z
+last-substantial-update: 2025-03-11T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 4a8d97d8d65f0ff9b256cb233db5dd6a70fd2a8a
+source-git-commit: 34f098de6bd15875e5534250b28c08bdb62e74fa
 workflow-type: tm+mt
-source-wordcount: '5215'
+source-wordcount: '4423'
 ht-degree: 0%
 
 ---
 
-# SAML 2.0-verificatie{#saml-2-0-authentication}
+# SAML 2.0-verificatie
 
 Leer hoe u eindgebruikers (niet AEM-auteurs) instelt en verifieert op een door u gewenste SAML 2.0 compatibele IDP.
-
-## Welke SAML voor AEM as a Cloud Service?
 
 Dankzij SAML 2.0-integratie met AEM Publish (of Preview) kunnen eindgebruikers van een op AEM gebaseerde webervaring zich verifiëren bij een niet-Adobe IDP (Identity Provider) en hebben ze toegang tot AEM als een benoemde, geautoriseerde gebruiker.
 
@@ -56,7 +54,7 @@ De typische stroom van een AEM Publish SAML integratie is als volgt:
 
 ## Configuratie doorlopen
 
->[!VIDEO](https://video.tv.adobe.com/v/3455347?captions=dut&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343040?quality=12&learn=on)
 
 Deze video doorloopt het opzetten van SAML 2.0 integratie met de publicatieservice van AEM as a Cloud Service en het gebruik van Okta als IDP.
 
@@ -68,10 +66,15 @@ Het volgende wordt vereist wanneer vestiging SAML 2.0 authentificatie:
 + AEM Administrator toegang tot AEM as a Cloud Service-omgeving
 + Beheerderstoegang tot de IDP
 + Naar keuze, toegang tot openbaar/privé sleutelpaar wordt gebruikt aan encryptieSAML nuttige ladingen
-+ AEM Sites pagina&#39;s (of paginabomen), die aan AEM worden gepubliceerd, en [&#x200B; beschermd door Gesloten Gebruikersgroepen (CUGs) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
++ AEM Sites pagina&#39;s (of paginabomen), die aan AEM worden gepubliceerd, en [ beschermd door Gesloten Gebruikersgroepen (CUGs) ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
 
-SAML 2.0 wordt alleen ondersteund voor het verifiëren van toepassingen voor publicatie of voorvertoning in AEM. Om de authentificatie van de Auteur van AEM te beheren die en IDP gebruiken, [&#x200B; integreert IDP met Adobe IMS &#x200B;](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html).
+SAML 2.0 wordt alleen ondersteund voor het verifiëren van toepassingen voor publicatie of voorvertoning in AEM. Om de authentificatie van de Auteur van AEM te beheren die en IDP gebruiken, [ integreert IDP met Adobe IMS ](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html).
 
+### Ondersteuning voor AEM as a Cloud Service Preview-services
+
+SAML 2.0 wordt ondersteund op AEM as a Cloud Service, waaronder AEM Preview. Nochtans, baseren de configuraties van SAML in AEM zich op configuraties OSGi, en zowel publiceren de Voorproef van AEM als AEM de zelfde OSGi runmode resolutie (`config.publish`). U kunt daarom geen afzonderlijke SAML-configuratiebestanden maken voor Voorvertonen en Publiceren.
+
+In plaats daarvan, gebruik [ milieu-specifieke configuratiewaarden ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#environment-specific-configuration-values) binnen uw configuraties OSGi, en [ plaats de aangewezen veranderlijke waarden ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#cloud-manager-api-format-for-setting-properties) voor de Voorproef en publiceer milieu&#39;s.
 
 ## IDP-certificaat voor iedereen installeren op AEM
 
@@ -79,7 +82,7 @@ Het openbare certificaat van IDP wordt toegevoegd aan de Globale Opslag van het 
 
 +++SAML-ondertekeningsstroom voor beweringen
 
-![&#x200B; SAML 2.0 - de Assertion die van IDP SAML &#x200B;](./assets/saml-2-0/idp-signing-diagram.png) ondertekent
+![ SAML 2.0 - de Assertion die van IDP SAML ](./assets/saml-2-0/idp-signing-diagram.png) ondertekent
 
 1. Gebruiker verifieert aan IDP.
 1. IDP produceert een bevestiging van SAML die de gegevens van de gebruiker bevat.
@@ -89,7 +92,7 @@ Het openbare certificaat van IDP wordt toegevoegd aan de Globale Opslag van het 
 
 +++
 
-![&#x200B; voeg het openbare certificaat IDP aan de Globale Opslag van het Vertrouwen toe &#x200B;](./assets/saml-2-0/global-trust-store.png)
+![ voeg het openbare certificaat IDP aan de Globale Opslag van het Vertrouwen toe ](./assets/saml-2-0/global-trust-store.png)
 
 1. Verkrijg het __openbare certificaat__ dossier van IDP. Met dit certificaat kan AEM de SAML-bevestiging valideren die door de IDP aan AEM wordt verstrekt.
 
@@ -111,12 +114,12 @@ Het openbare certificaat van IDP wordt toegevoegd aan de Globale Opslag van het 
 1. Verlaat __Certificaat van de Kaart aan Gebruiker__ leeg.
 1. Selecteer __voorleggen__.
 1. Het onlangs toegevoegde certificaat verschijnt boven __voegt certificaat van CRT dossier__ sectie toe.
-1. Maak nota van __alias__, aangezien deze waarde in de [&#x200B; SAML 2.0 Configuratie OSGi van de Handler van de Authentificatie OSGi &#x200B;](#saml-2-0-authentication-handler-osgi-configuration) wordt gebruikt.
+1. Maak nota van __alias__, aangezien deze waarde in de [ SAML 2.0 Configuratie OSGi van de Handler van de Authentificatie OSGi ](#saml-2-0-authentication-handler-osgi-configuration) wordt gebruikt.
 1. Selecteer __sparen &amp; Sluiten__.
 
 De Global Trust Store wordt geconfigureerd met het openbare certificaat van IDP voor AEM-auteur, maar aangezien SAML alleen wordt gebruikt in AEM Publish, moet de Global Trust Store worden gerepliceerd naar AEM Publish om het openbare certificaat IDP daar toegankelijk te maken.
 
-![&#x200B; Herhaal de Globale Opslag van het Vertrouwen aan AEM publiceren &#x200B;](./assets/saml-2-0/global-trust-store-replicate.png)
+![ Herhaal de Globale Opslag van het Vertrouwen aan AEM publiceren ](./assets/saml-2-0/global-trust-store-replicate.png)
 
 1. Navigeer aan __Hulpmiddelen > Plaatsing > Pakketten__.
 1. Een pakket maken
@@ -131,13 +134,13 @@ De Global Trust Store wordt geconfigureerd met het openbare certificaat van IDP 
 
 ## Het sleutelarchief voor de verificatieservice maken{#authentication-service-keystore}
 
-_Creërend een sleutelarchief voor authentificatie-dienst wordt vereist wanneer [&#x200B; SAML 2.0 het configuratiebezit OSGi van de authentificatiemanager `handleLogout` aan `true`](#saml-20-authenticationsaml-2-0-authentication) wordt geplaatst of wanneer [&#x200B; AuthnRequest het ondertekenen/SAML- assertieecryptie &#x200B;](#install-aem-public-private-key-pair) wordt vereist_
+_Creërend een sleutelarchief voor authentificatie-dienst wordt vereist wanneer [ SAML 2.0 het configuratiebezit OSGi van de authentificatiemanager `handleLogout` aan `true`](#saml-20-authenticationsaml-2-0-authentication) wordt geplaatst of wanneer [ AuthnRequest het ondertekenen/SAML- assertieecryptie ](#install-aem-public-private-key-pair) wordt vereist_
 
 1. Meld u aan bij AEM Author als AEM Administrator om de persoonlijke sleutel te uploaden.
 1. Navigeer aan __Hulpmiddelen > Veiligheid > Gebruikers__, en selecteer __authentificatie-dienst__ gebruiker, en selecteer __Eigenschappen__ van de hoogste actiebar.
 1. Selecteer __Keystore__ tabel.
 1. Maak of open het sleutelarchief. Houd het wachtwoord veilig als u een sleutelarchief maakt.
-   + A [&#x200B; openbaar/privé keystore wordt geïnstalleerd in dit keystore &#x200B;](#install-aem-public-private-key-pair) slechts als AuthnRequest het ondertekenen/SAML beweringsencryptie wordt vereist.
+   + A [ openbaar/privé keystore wordt geïnstalleerd in dit keystore ](#install-aem-public-private-key-pair) slechts als AuthnRequest het ondertekenen/SAML beweringsencryptie wordt vereist.
    + Als deze integratie SAML logout steunt, maar niet AuthnRequest het ondertekenen/SAML bewering, dan is een leeg sleutelarchief voldoende.
 1. Selecteer __sparen &amp; Sluiten__.
 1. Creeer een pakket dat de bijgewerkte __authentificatie-dienst__ gebruiker bevat.
@@ -166,7 +169,7 @@ AEM Publish kan worden gevormd om AuthnRequests (aan IDP) te ondertekenen, en de
 
 De AuthnRequest (de aanvraag aan IDP vanuit AEM Publish die het aanmeldingsproces initieert) kan worden ondertekend door AEM Publish. Hiertoe ondertekent AEM Publish het AuthnRequest met behulp van de persoonlijke sleutel, die IDP dan de handtekening gebruikend de openbare sleutel bevestigt. Dit garandeert aan de IDP dat AuthnRequest is gestart en aangevraagd door AEM Publish, en niet door een kwaadwillige derde.
 
-![&#x200B; SAML 2.0 - het ondertekenen van SP AuthnRequest &#x200B;](./assets/saml-2-0/sp-authnrequest-signing-diagram.png)
+![ SAML 2.0 - het ondertekenen van SP AuthnRequest ](./assets/saml-2-0/sp-authnrequest-signing-diagram.png)
 
 1. De gebruiker doet een HTTP- verzoek aan AEM publiceren die in een de authentificatieverzoek van SAML aan IDP resulteert.
 1. AEM Publish produceert het SAML- verzoek om naar IDP te verzenden.
@@ -181,7 +184,7 @@ De AuthnRequest (de aanvraag aan IDP vanuit AEM Publish die het aanmeldingsproce
 
 Alle HTTP-communicatie tussen IDP en AEM Publiceren moet via HTTPS plaatsvinden en moet daarom standaard worden beveiligd. Nochtans, zoals vereist, kunnen de beweringen van SAML worden gecodeerd in het geval wordt de extra vertrouwelijkheid vereist bovenop die verstrekt door HTTPS. Om dit te doen, codeert IDP de gegevens van de Bevestiging van SAML gebruikend de privé sleutel, en AEM publiceert decrypteert de bewering van SAML gebruikend de privé sleutel.
 
-![&#x200B; SAML 2.0 - de encryptie van de Assertion van SP SAML &#x200B;](./assets/saml-2-0/sp-samlrequest-encryption-diagram.png)
+![ SAML 2.0 - de encryptie van de Assertion van SP SAML ](./assets/saml-2-0/sp-samlrequest-encryption-diagram.png)
 
 1. Gebruiker verifieert aan IDP.
 1. IDP produceert een bevestiging van SAML die de gegevens van de gebruiker bevat, en ondertekent het gebruikend het privé certificaat van IDP.
@@ -192,9 +195,9 @@ Alle HTTP-communicatie tussen IDP en AEM Publiceren moet via HTTPS plaatsvinden 
 
 +++
 
-Zowel AuthnRequest het ondertekenen, als de bevestiging van SAML encryptie zijn facultatief, nochtans worden zij allebei toegelaten, gebruikend het [&#x200B; SAML 2.0 de configuratiebezit OSGi van de authentificatiemanager OSGi `useEncryption`](#saml-20-authenticationsaml-2-0-authentication), betekenend allebei of geen kunnen worden gebruikt.
+Zowel AuthnRequest het ondertekenen, als de bevestiging van SAML encryptie zijn facultatief, nochtans worden zij allebei toegelaten, gebruikend het [ SAML 2.0 de configuratiebezit OSGi van de authentificatiemanager OSGi `useEncryption`](#saml-20-authenticationsaml-2-0-authentication), betekenend allebei of geen kunnen worden gebruikt.
 
-![&#x200B; de authentificatie-dienst van AEM belangrijkste opslag &#x200B;](./assets/saml-2-0/authentication-service-key-store.png)
+![ de authentificatie-dienst van AEM belangrijkste opslag ](./assets/saml-2-0/authentication-service-key-store.png)
 
 1. Verkrijg de openbare sleutel, de privé sleutel (PKCS#8 in formaat DER), en het dossier van de certificaatketting (dit kan de openbare sleutel zijn) die wordt gebruikt om AuthnRequest te ondertekenen, en de bewering van SAML te coderen. De sleutels worden typisch verstrekt door het de veiligheidsteam van de organisatie van IT.
 
@@ -225,7 +228,7 @@ Zowel AuthnRequest het ondertekenen, als de bevestiging van SAML encryptie zijn 
       + Met de bovenstaande methode `openssl` is dit het `aem-public.crt` -bestand
    + Selecteer __voorleggen__
 1. Het onlangs toegevoegde certificaat verschijnt boven __voegt certificaat van CRT dossier__ sectie toe.
-   + Maak nota van __alias__ aangezien dit in [&#x200B; SAML 2.0 de configuratie van de authentificatiemanager OSGi &#x200B;](#saml-20-authentication-handler-osgi-configuration) wordt gebruikt
+   + Maak nota van __alias__ aangezien dit in [ SAML 2.0 de configuratie van de authentificatiemanager OSGi ](#saml-20-authentication-handler-osgi-configuration) wordt gebruikt
 1. Selecteer __sparen &amp; Sluiten__.
 1. Creeer een pakket dat de bijgewerkte __authentificatie-dienst__ gebruiker bevat.
 
@@ -268,7 +271,7 @@ De configuratie is een OSGi fabrieksconfiguratie, die één enkele dienst van de
 | Kenmerk Gebruikersnaam | `userIDAttribute` | ✘ | String | `uid` | The name of the SAML assertion attribute containing the user ID of the AEM user. Laat leeg om de `Subject:NameId` te gebruiken. |
 | AEM-gebruikers automatisch maken | `createUser` | ✘ | Boolean | `true` | Geeft aan of AEM-gebruikers zijn gemaakt op geslaagde verificatie. |
 | Tussentijdse pad voor AEM-gebruiker | `userIntermediatePath` | ✘ | String |                           | Wanneer u AEM-gebruikers maakt, wordt deze waarde gebruikt als het tussenliggende pad (bijvoorbeeld `/home/users/<userIntermediatePath>/jane@wknd.com` ). `createUser` moet worden ingesteld op `true` . |
-| AEM-gebruikerskenmerken | `synchronizeAttributes` | ✘ | Tekenreeksarray |                           | Lijst met SAML-kenmerktoewijzingen die moeten worden opgeslagen op de AEM-gebruiker, in de indeling `[ "saml-attribute-name=path/relative/to/user/node" ]` (bijvoorbeeld `[ "firstName=profile/givenName" ]` ). Zie de [&#x200B; volledige lijst van inheemse attributen van AEM &#x200B;](#aem-user-attributes). |
+| AEM-gebruikerskenmerken | `synchronizeAttributes` | ✘ | Tekenreeksarray |                           | Lijst met SAML-kenmerktoewijzingen die moeten worden opgeslagen op de AEM-gebruiker, in de indeling `[ "saml-attribute-name=path/relative/to/user/node" ]` (bijvoorbeeld `[ "firstName=profile/givenName" ]` ). Zie de [ volledige lijst van inheemse attributen van AEM ](#aem-user-attributes). |
 | Gebruiker toevoegen aan AEM-groepen | `addGroupMemberships` | ✘ | Boolean | `true` | Geeft aan of een AEM-gebruiker automatisch wordt toegevoegd aan AEM-gebruikersgroepen nadat de verificatie is voltooid. |
 | AEM-kenmerk voor groepslidmaatschap | `groupMembershipAttribute` | ✘ | String | `groupMembership` | De naam van het SAML-assertiekenmerk met een lijst van AEM-gebruikersgroepen waaraan de gebruiker moet worden toegevoegd. `addGroupMemberships` moet worden ingesteld op `true` . |
 | Standaard AEM-groepen | `defaultGroups` | ✘ | Tekenreeksarray |                           | Er wordt altijd een lijst met AEM-gebruikersgroepen waaraan geverifieerde gebruikers zijn toegevoegd (bijvoorbeeld `[ "wknd-user" ]` ). `addGroupMemberships` moet worden ingesteld op `true` . |
@@ -334,7 +337,7 @@ OSGi-configuraties per omgeving (`config.publish.dev`, `config.publish.stage` en
 
 ### Codering gebruiken
 
-Wanneer [&#x200B; het coderen van de bevestiging AuthnRequest en SAML &#x200B;](#encrypting-the-authnrequest-and-saml-assertion), worden de volgende eigenschappen vereist: `useEncryption`, `spPrivateKeyAlias`, en `keyStorePassword`. `keyStorePassword` bevat een wachtwoord daarom moet de waarde niet in het OSGi configuratiedossier worden opgeslagen, maar eerder ingespoten gebruikend [&#x200B; geheime configuratiewaarden &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=nl-NL#secret-configuration-values)
+Wanneer [ het coderen van de bevestiging AuthnRequest en SAML ](#encrypting-the-authnrequest-and-saml-assertion), worden de volgende eigenschappen vereist: `useEncryption`, `spPrivateKeyAlias`, en `keyStorePassword`. `keyStorePassword` bevat een wachtwoord daarom moet de waarde niet in het OSGi configuratiedossier worden opgeslagen, maar eerder ingespoten gebruikend [ geheime configuratiewaarden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)
 
 +++Werk eventueel de configuratie OSGi bij om encryptie te gebruiken
 
@@ -367,7 +370,7 @@ Wanneer [&#x200B; het coderen van de bevestiging AuthnRequest en SAML &#x200B;](
 
 + `useEncryption` ingesteld op `true`
 + `spPrivateKeyAlias` bevat de alias van het sleutelarchiefitem voor de persoonlijke sleutel die door de integratie van SAML wordt gebruikt.
-+ `keyStorePassword` bevat een [&#x200B; OSGi geheime configuratievariabele &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=nl-NL#secret-configuration-values) die het `authentication-service` wachtwoord van het gebruikerssleutelarchief bevat.
++ `keyStorePassword` bevat een [ OSGi geheime configuratievariabele ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values) die het `authentication-service` wachtwoord van het gebruikerssleutelarchief bevat.
 
 +++
 
@@ -448,24 +451,24 @@ Als URL die bij de Apache webserver herschrijft (`dispatcher/src/conf.d/rewrites
 
 ## Dynamisch groepslidmaatschap
 
-Het dynamische Lidmaatschap van de Groep is een eigenschap in [&#x200B; Apache Jackrabbit Oak &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html) die de prestaties van groepsevaluatie en levering verhoogt. Deze sectie beschrijft hoe de gebruikers en de groepen worden opgeslagen wanneer deze eigenschap wordt toegelaten en hoe te om de configuratie van de Handler van de Authentificatie van SAML te wijzigen om het voor nieuwe of bestaande milieu&#39;s toe te laten.
+Het dynamische Lidmaatschap van de Groep is een eigenschap in [ Apache Jackrabbit Oak ](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html) die de prestaties van groepsevaluatie en levering verhoogt. Deze sectie beschrijft hoe de gebruikers en de groepen worden opgeslagen wanneer deze eigenschap wordt toegelaten en hoe te om de configuratie van de Handler van de Authentificatie van SAML te wijzigen om het voor nieuwe of bestaande milieu&#39;s toe te laten.
 
 ### Hoe te om Dynamisch Lidmaatschap van de Groep voor de Gebruikers van SAML in nieuwe milieu&#39;s toe te laten
 
 Om de prestaties van de groepsevaluatie in nieuwe AEM as a Cloud Service-omgevingen aanzienlijk te verbeteren, wordt de activering van de functie Dynamic Group Membership aanbevolen in nieuwe omgevingen.
-Dit is ook een noodzakelijke stap wanneer de gegevenssynchronisatie wordt geactiveerd. Meer details [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier).
+Dit is ook een noodzakelijke stap wanneer de gegevenssynchronisatie wordt geactiveerd. Meer details [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier).
 Hiervoor voegt u de volgende eigenschap toe aan het configuratiebestand van OSGI:
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
 
-Met deze configuratie, worden de gebruikers en de groepen gecreeerd als [&#x200B; Externe Gebruikers van Oak &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). In AEM hebben externe gebruikers en groepen de standaardwaarde `rep:principalName` , die wordt samengesteld door `[user name];[idp]` of `[group name];[idp]` .
+Met deze configuratie, worden de gebruikers en de groepen gecreeerd als [ Externe Gebruikers van Oak ](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). In AEM hebben externe gebruikers en groepen de standaardwaarde `rep:principalName` , die wordt samengesteld door `[user name];[idp]` of `[group name];[idp]` .
 Merk op dat de Lijsten van het Toegangsbeheer (ACL) met PrincipalName van gebruikers of groepen worden geassocieerd.
-Wanneer het opstellen van deze configuratie in een bestaande plaatsing waar eerder `identitySyncType` niet werd gespecificeerd of aan `default` werd geplaatst, zullen de nieuwe gebruikers en de groepen worden gecreeerd en ACL moet op deze nieuwe gebruikers en groepen worden toegepast. Externe groepen kunnen geen lokale gebruikers bevatten. [&#x200B; opnieuw richt &#x200B;](https://sling.apache.org/documentation/bundles/repository-initialization.html) kan worden gebruikt om ACL voor Externe groepen van SAML tot stand te brengen, zelfs als zij slechts zullen worden gecreeerd wanneer de gebruiker login zal uitvoeren.
-Om dit refactoring op ACL te vermijden, is een standaard [&#x200B; migratieeigenschap &#x200B;](#automatic-migration-to-dynamic-group-membership-for-existing-environments) uitgevoerd.
+Wanneer het opstellen van deze configuratie in een bestaande plaatsing waar eerder `identitySyncType` niet werd gespecificeerd of aan `default` werd geplaatst, zullen de nieuwe gebruikers en de groepen worden gecreeerd en ACL moet op deze nieuwe gebruikers en groepen worden toegepast. Externe groepen kunnen geen lokale gebruikers bevatten. [ opnieuw richt ](https://sling.apache.org/documentation/bundles/repository-initialization.html) kan worden gebruikt om ACL voor Externe groepen van SAML tot stand te brengen, zelfs als zij slechts zullen worden gecreeerd wanneer de gebruiker login zal uitvoeren.
+Om dit refactoring op ACL te vermijden, is een standaard [ migratieeigenschap ](#automatic-migration-to-dynamic-group-membership-for-existing-environments) uitgevoerd.
 
 ### Hoe de lidmaatschappen in lokale en externe groepen met dynamisch groepslidmaatschap worden opgeslagen
 
-In lokale groepen worden de groepsleden opgeslagen in het oak-kenmerk: `rep:members` . Het attribuut bevat de lijst van uid van elk lid van de groep. De extra details kunnen [&#x200B; hier &#x200B;](https://jackrabbit.apache.org/oak/docs/security/user/membership.html#member-representation-in-the-repository) worden gevonden.
+In lokale groepen worden de groepsleden opgeslagen in het oak-kenmerk: `rep:members` . Het attribuut bevat de lijst van uid van elk lid van de groep. De extra details kunnen [ hier ](https://jackrabbit.apache.org/oak/docs/security/user/membership.html#member-representation-in-the-repository) worden gevonden.
 Voorbeeld:
 
 ```
@@ -483,7 +486,7 @@ Voorbeeld:
 ```
 
 Externe groepen met dynamisch groepslidmaatschap slaan geen leden op in het groepsitem.
-Het groepslidmaatschap wordt in plaats daarvan opgeslagen in de gebruikersingangen. De extra documentatie kan [&#x200B; hier &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html) worden gevonden. Dit is bijvoorbeeld het OAK-knooppunt voor de groep:
+Het groepslidmaatschap wordt in plaats daarvan opgeslagen in de gebruikersingangen. De extra documentatie kan [ hier ](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html) worden gevonden. Dit is bijvoorbeeld het OAK-knooppunt voor de groep:
 
 ```
 {
@@ -563,299 +566,11 @@ Het groepslidmaatschap voor externe groepen wordt opgeslagen in het gebruikerspr
 
 Als u meerdere SAML-configuraties wilt migreren, moeten er meerdere OSGi-fabrieksconfiguraties voor `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration` worden gemaakt. Elke configuratie geeft een `idpIdentifier` op die moet worden gemigreerd.
 
-## Aangepaste SAML-haken voor geavanceerde gebruiksgevallen
+## Aangepaste SAML-aanmeldhaken
 
-Als IDP niet de gegevens van het gebruikersprofiel en het lidmaatschap van de gebruikersgroep in de bevestiging van SAML kan verzenden, of als de gegevens vóór synchronisatie aan AEM moeten worden omgezet, kunnen de haken van douaneSAML worden uitgevoerd om het authentificatieproces van SAML uit te breiden. Met SAML-koppelingen kunt u de toewijzing van groepslidmaatschap aanpassen, gebruikersprofielkenmerken wijzigen en aangepaste bedrijfslogica toevoegen tijdens de verificatiestroom.
+Voor gevorderde gebruikte gevallen, steunt AEM de ontwikkeling van douaneSAML login haken, die de diensten OSGi die de `com.adobe.granite.auth.saml.SamlLoginHook` interface uitvoeren zijn. Deze haken worden uitgevoerd tijdens het de authentificatieproces van SAML, en zij kunnen worden gebruikt om douanelogica, zoals extra gebruikerslevering of douaneregistreren uit te voeren.
 
->[!NOTE]
->De haken van SAML van de douane worden gesteund op **AEM as a Cloud Service** en **AEM LTS**. Deze functie is niet beschikbaar in oudere AEM-versies.
-
-### Wanneer moet u aangepaste SAML-haken gebruiken?
-
-De haken van SAML van de douane zijn nuttig wanneer het noodzakelijk is:
-
-+ Wijs dynamisch groepslidmaatschap toe dat op douanebedrijfslogica voorbij wordt gebaseerd wat in de beweringen van SAML wordt verstrekt
-+ Gebruikersprofielgegevens transformeren of verrijken voordat deze worden gesynchroniseerd met AEM
-+ Complexe SAML-kenmerkstructuren toewijzen aan AEM-gebruikerseigenschappen
-+ Aangepaste machtigingsregels of voorwaardelijke groepstoewijzingen implementeren
-+ Aangepast registreren of controleren toevoegen tijdens SAML-verificatie
-+ Integreren met externe systemen tijdens het verificatieproces
-
-### De SamlHook-interface begrijpen
-
-De interface `com.adobe.granite.auth.saml.spi.SamlHook` biedt twee haakmethoden die in verschillende stadia van het SAML-verificatieproces worden aangeroepen:
-
-#### 1. postSamlValidationProcess
-
-Deze methode wordt geroepen **nadat** de reactie van SAML is bevestigd maar **vóór** het proces van de gebruikerssynchronisatie begint. Dit is de ideale plaats om de beweringsgegevens van SAML, zoals het toevoegen van of het transformeren van attributen te wijzigen.
-
-```java
-public void postSamlValidationProcess(
-    HttpServletRequest request, 
-    Assertion assertion, 
-    Message samlResponse)
-```
-
-**gevallen van het Gebruik:**
-+ Extra groepslidmaatschappen aan de bewering toevoegen
-+ Kenmerkwaarden transformeren voordat deze worden gesynchroniseerd
-+ Verrijk de bewering met gegevens uit externe bronnen
-+ Aangepaste bedrijfsregels valideren
-
-#### 2. postSyncUserProcess
-
-Deze methode wordt geroepen **nadat** het proces van de gebruikerssynchronisatie is voltooid. Deze haak kan worden gebruikt om extra bewerkingen uit te voeren nadat de AEM-gebruiker is gemaakt of bijgewerkt.
-
-```java
-public void postSyncUserProcess(
-    HttpServletRequest request, 
-    HttpServletResponse response, 
-    Assertion assertion,
-    AuthenticationInfo authenticationInfo, 
-    String samlResponse)
-```
-
-**gevallen van het Gebruik:**
-+ Extra eigenschappen van gebruikersprofielen bijwerken die niet door standaardsynchronisatie worden gedekt
-+ Aangepaste gebruikersgerelateerde bronnen maken of bijwerken in AEM
-+ Workflows of meldingen activeren na gebruikersverificatie
-+ Aangepaste verificatiegebeurtenissen registreren
-
-**Belangrijk:** om gebruikerseigenschappen in de bewaarplaats te wijzigen, vereist de hakenimplementatie:
-+ Een `SlingRepository` referentie ingespoten via `@Reference`
-+ Een gevormde [&#x200B; de dienstgebruiker &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) met aangewezen toestemmingen (die in &quot;het Wijziging van de Dienst van het Mapper van de Dienst van Apache Sling wordt gevormd)
-+ Correct sessiebeheer met blokken try-catch-finally
-
-### Een aangepaste SAML-haak implementeren
-
-De volgende stappen schetsen hoe te om een haak van douaneSAML tot stand te brengen en op te stellen:
-
-#### Stap 1: Creeer de SAML haak implementatie
-
-Maak een nieuwe Java-klasse in het AEM-project die de interface `com.adobe.granite.auth.saml.spi.SamlHook` implementeert:
-
-```java
-package com.mycompany.aem.saml;
-
-import com.adobe.granite.auth.saml.spi.Assertion;
-import com.adobe.granite.auth.saml.spi.Attribute;
-import com.adobe.granite.auth.saml.spi.Message;
-import com.adobe.granite.auth.saml.spi.SamlHook;
-import org.apache.jackrabbit.api.JackrabbitSession;
-import org.apache.jackrabbit.api.security.user.Authorizable;
-import org.apache.jackrabbit.api.security.user.UserManager;
-import org.apache.sling.auth.core.spi.AuthenticationInfo;
-import org.apache.sling.jcr.api.SlingRepository;
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.Reference;
-import org.osgi.service.component.annotations.ReferenceCardinality;
-import org.osgi.service.metatype.annotations.AttributeDefinition;
-import org.osgi.service.metatype.annotations.Designate;
-import org.osgi.service.metatype.annotations.ObjectClassDefinition;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import javax.annotation.Nonnull;
-import javax.jcr.RepositoryException;
-import javax.jcr.Session;
-import javax.jcr.ValueFactory;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-@Component
-@Designate(ocd = SampleImpl.Configuration.class, factory = true)
-public class SampleImpl implements SamlHook {
-    @ObjectClassDefinition(name = "Saml Sample Authentication Handler Hook Configuration")
-    @interface Configuration {
-        @AttributeDefinition(
-                name = "idpIdentifier",
-                description = "Identifier of SAML Idp. Match the idpIdentifier property's value configured in the SAML Authentication Handler OSGi factory configuration (com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>) this SAML hook will hook into"
-        )
-        String idpIdentifier();
-
-    }
-
-    private static final String SAMPLE_SERVICE_NAME = "sample-saml-service";
-    private static final String CUSTOM_LOGIN_COUNT = "customLoginCount";
-
-    private final Logger log = LoggerFactory.getLogger(getClass());
-
-    private SlingRepository repository;
-
-    @SuppressWarnings("UnusedDeclaration")
-    @Reference(name = "repository", cardinality = ReferenceCardinality.MANDATORY)
-    public void bindRepository(SlingRepository repository) {
-        this.repository = repository;
-    }
-
-    /**
-     * This method is called after the user sync process is completed.
-     * At this point, the user has already been synchronized in OAK (created or updated).
-     * Example: Track login count by adding custom attributes to the user in the repository
-     *
-     * @param request
-     * @param response
-     * @param assertion
-     * @param authenticationInfo
-     * @param samlResponse
-     */
-    @Override
-    public void postSyncUserProcess(HttpServletRequest request, HttpServletResponse response, Assertion assertion,
-                                    AuthenticationInfo authenticationInfo, String samlResponse) {
-        log.info("Custom Audit Log: user {} successfully logged in", authenticationInfo.getUser());
-
-        // This code executes AFTER the user has been synchronized in OAK
-        // The user object already exists in the repository at this point
-        Session serviceSession = null;
-        try {
-            // Get a service session - requires "sample-saml-service" to be configured as system user
-            // Configure in: "Apache Sling Service User Mapper Service Amendment"
-            serviceSession = repository.loginService(SAMPLE_SERVICE_NAME, null);
-
-            // Get the UserManager to work with users and groups
-            UserManager userManager = ((JackrabbitSession) serviceSession).getUserManager();
-
-            // Get the authorizable (user) that just logged in
-            Authorizable user = userManager.getAuthorizable(authenticationInfo.getUser());
-
-            if (user != null && !user.isGroup()) {
-                ValueFactory valueFactory = serviceSession.getValueFactory();
-
-                // Increment login count
-                long loginCount = 1;
-                if (user.hasProperty(CUSTOM_LOGIN_COUNT)) {
-                    loginCount = user.getProperty(CUSTOM_LOGIN_COUNT)[0].getLong() + 1;
-                }
-                user.setProperty(CUSTOM_LOGIN_COUNT, valueFactory.createValue(loginCount));
-                log.debug("Set {} property to {} for user {}", CUSTOM_LOGIN_COUNT, loginCount, user.getID());
-
-                // Save all changes to the repository
-                if (serviceSession.hasPendingChanges()) {
-                    serviceSession.save();
-                    log.debug("Successfully saved custom attributes for user {}", user.getID());
-                }
-            } else {
-                log.warn("User {} not found or is a group", authenticationInfo.getUser());
-            }
-
-        } catch (RepositoryException e) {
-            log.error("Error adding custom attributes to user repository for user: {}",
-                     authenticationInfo.getUser(), e);
-        } finally {
-            if (serviceSession != null) {
-                serviceSession.logout();
-            }
-        }
-    }
-
-    /**
-     * This method is called after the SAML response is validated but before the user sync process starts.
-     * We can modify the assertion here to add custom attributes.
-     *
-     * @param request
-     * @param assertion
-     * @param samlResponse
-     */
-    @Override
-    public void postSamlValidationProcess(@Nonnull HttpServletRequest request, @Nonnull Assertion assertion, @Nonnull Message samlResponse) {
-        // Add the attribute "memberOf" with value "sample-group" to the assertion
-        // In this example "memberOf" is a multi-valued attribute that contains the groups from the Saml Idp
-        log.debug("Inside postSamlValidationProcess");
-        Attribute groupsAttr = assertion.getAttributes().get("groups");
-        if (groupsAttr != null) {
-            groupsAttr.addAttributeValue("sample-group-from-hook");
-        } else {
-            groupsAttr = new Attribute();
-            groupsAttr.setName("groups");
-            groupsAttr.addAttributeValue("sample-group-from-hook");
-            assertion.getAttributes().put("groups", groupsAttr);
-        }
-    }
-
-}
-```
-
-#### Stap 2: Vorm de haak SAML
-
-De SAML haak gebruikt configuratie OSGi om te specificeren op welke IDP het zou moeten van toepassing zijn. Creeer een OSGi configuratiedossier in het project bij:
-
-`/ui.config/src/main/content/jcr_root/wknd-examples/osgiconfig/config.publish/com.mycompany.aem.saml.CustomSamlHook~okta.cfg.json`
-
-```json
-{
-  "idpIdentifier": "$[env:SAML_IDP_ID;default=http://www.okta.com/exk4z55r44Jz9C6am5d7]",
-  "service.ranking": 100
-}
-```
-
-De `idpIdentifier` moet overeenkomen met de `idpIdentifier` -waarde die is geconfigureerd in de overeenkomstige OSGi-fabrieksconfiguratie (PID: `com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>.cfg.json` ) van de SAML-verificatiehandler. Deze overeenkomst is kritiek: de haak SAML zal slechts voor de instantie van de Handler van de Authentificatie van SAML worden aangehaald die de zelfde `idpIdentifier` waarde heeft. De SAML-verificatiehandler is een fabrieksconfiguratie. Dit houdt in dat u meerdere instanties kunt hebben (bijvoorbeeld `com.adobe.granite.auth.saml.SamlAuthenticationHandler~okta.cfg.json` , `com.adobe.granite.auth.saml.SamlAuthenticationHandler~azure.cfg.json` ) en dat elke haak via de `idpIdentifier` aan een specifieke handler is gekoppeld. De eigenschap `service.ranking` bepaalt de uitvoeringsvolgorde wanneer meerdere haken zijn geconfigureerd (hogere waarden worden het eerst uitgevoerd).
-
-#### Stap 3: Geweven afhankelijkheden toevoegen
-
-Voeg de vereiste SAML SPI-afhankelijkheid toe aan het AEM Maven-kernproject `pom.xml` .
-
-**voor de projecten van AEM as a Cloud Service**, gebruik het AEM SDK API gebiedsdeel dat de interfaces SAML omvat:
-
-```xml
-<dependency>
-    <groupId>com.adobe.aem</groupId>
-    <artifactId>aem-sdk-api</artifactId>
-    <version>${aem.sdk.api}</version>
-    <scope>provided</scope>
-</dependency>
-```
-
-Het `aem-sdk-api` -artefact bevat alle benodigde Adobe Granite SAML-interfaces, inclusief `com.adobe.granite.auth.saml.spi.SamlHook` .
-
-#### Stap 4: De dienstgebruiker vormen (als het wijzigen van bewaarplaats)
-
-Als de haak SAML gebruikerseigenschappen in de bewaarplaats (zoals aangetoond in het `postSyncUserProcess` voorbeeld) moet wijzigen, moet de a [&#x200B; dienstgebruiker &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) worden gevormd:
-
-1. Creeer een afbeelding van de de dienstgebruiker in het project bij `/ui.config/src/main/content/jcr_root/apps/myproject/osgiconfig/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~saml.cfg.json`:
-
-```json
-{
-  "user.mapping": [
-    "com.mycompany.aem.core:sample-saml-service=saml-hook-service"
-  ]
-}
-```
-
-1. Maak een herpointscript om de servicegebruiker en -machtigingen op `/ui.config/src/main/content/jcr_root/apps/myproject/osgiconfig/config/org.apache.sling.jcr.repoinit.RepositoryInitializer~saml.cfg.json` te definiëren:
-
-```
-create service user saml-hook-service with path system/saml
-
-set ACL for saml-hook-service
-    allow jcr:read,rep:write,rep:userManagement on /home/users
-end
-```
-
-Dit verleent de toestemmingen van de de dienstgebruiker om gebruikerseigenschappen in de bewaarplaats te lezen en te wijzigen.
-
-#### Stap 5: Distribueren naar AEM
-
-Implementeer de aangepaste SAML-haak naar AEM as a Cloud Service:
-
-1. Het AEM-project bouwen
-1. De code toewijzen aan de Cloud Manager Git-opslagplaats
-1. Implementeren met behulp van een volledige stapeldistributiepijplijn
-1. De SAML-haak wordt automatisch geactiveerd wanneer een gebruiker via SAML verifieert
-
-
-### Belangrijke overwegingen
-
-+ **Identifier die** zoekt: `idpIdentifier` in de haak SAML wordt gevormd moet `idpIdentifier` in de de fabrieksconfiguratie van de Handler van de Authentificatie van SAML (`com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>`) precies aanpassen
-+ **de namen van Attributen**: Verzeker de attributennamen die in de haak (b.v., `groupMembership` worden van verwijzingen voorzien) passen de attributen aan die in de Handler van de Authentificatie SAML worden gevormd
-+ **Prestaties**: Houd hakimplementaties lichtgewichtaangezien zij tijdens elke authentificatie SAML worden uitgevoerd
-+ **de behandeling van de Fout**: De haakimplementaties van SAML zouden `com.adobe.granite.auth.saml.spi.SamlHookException` moeten werpen wanneer de kritieke fouten voorkomen die de authentificatie zouden moeten ontbreken. De SAML-verificatiehandler zal deze uitzonderingen afvangen en `AuthenticationInfo.FAIL_AUTH` retourneren. Voor repository-bewerkingen vangt u altijd de juiste fouten op `RepositoryException` en registreert u de fouten. Gebruik blokken met de &#39;try-catch-finally&#39; om te zorgen voor een correcte opschoning van bronnen
-+ **het Testen**: De haken van de Test grondig in lagere milieu&#39;s alvorens aan productie op te stellen
-+ **Veelvoudige haken**: De veelvoudige SAML hakenimplementaties kunnen worden gevormd; alle passende haken zullen worden uitgevoerd. Gebruik het `service.ranking` bezit in de component OSGi om de uitvoeringsorde (de hogere rangschikkingswaarden voeren eerst uit) te controleren. Om een haak SAML over veelvoudige de fabrieksconfiguraties van de Handler van de Authentificatie van SAML (`com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>`) opnieuw te gebruiken, creeer veelvoudige haken configuraties (OSGi fabrieksconfiguraties), elk met een verschillende `idpIdentifier` aanpassing van de respectieve Handler van de Authentificatie van SAML
-+ **Veiligheid**: Valideer en ontsmet alle gegevens van de beweringen van SAML alvorens hen in bedrijfslogica te gebruiken
-+ **Toegang van de Bewaarplaats**: Wanneer het wijzigen van gebruikerseigenschappen in `postSyncUserProcess`, gebruik altijd a [&#x200B; de dienstgebruiker &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) met aangewezen toestemmingen eerder dan administratieve zittingen
-+ **de gebruikerstoestemmingen van de Dienst**: Verleen minimale vereiste toestemmingen aan de [&#x200B; de dienstgebruiker &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) (b.v., slechts `jcr:read` en `rep:write` op `/home/users`, niet volledige admin rechten)
-+ **Sessiebeheer**: Gebruik altijd blokken try-catch-finally om te zorgen dat de sessies in de opslagplaats correct gesloten zijn, zelfs als er uitzonderingen optreden
-+ **de synchronisatietiming van de Gebruiker**: De `postSyncUserProcess` haak voert uit nadat de gebruiker aan OAK is gesynchroniseerd, zodat is het gebruikersvoorwerp gewaarborgd om in de bewaarplaats op dat punt te bestaan
+Voor meer informatie over hoe te om een douaneSAML login haak te ontwikkelen en te registreren, gelieve te verwijzen naar de [ Login Hook van SAML van de Douane ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/custom-saml-login-hook.html) documentatie.
 
 ## SAML-configuratie implementeren
 
@@ -878,7 +593,7 @@ De SAML authentificatiestroom kan van een Web-pagina van de Plaats van AEM worde
 
 ## Beveiligd in cache plaatsen tijdens gebruik van SAML
 
-Op de AEM-publicatie-instantie worden de meeste pagina&#39;s doorgaans in cache geplaatst. Nochtans, voor SAML-Beschermde wegen, zou caching of moeten worden onbruikbaar gemaakt of beveiligd caching toegelaten gebruikend de configuratie auth_checker. Voor meer informatie, gelieve te verwijzen naar de details [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/configuring/permissions-cache) worden verstrekt
+Op de AEM-publicatie-instantie worden de meeste pagina&#39;s doorgaans in cache geplaatst. Nochtans, voor SAML-Beschermde wegen, zou caching of moeten worden onbruikbaar gemaakt of beveiligd caching toegelaten gebruikend de configuratie auth_checker. Voor meer informatie, gelieve te verwijzen naar de details [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/permissions-cache) worden verstrekt
 
 Houd er rekening mee dat als u beveiligde paden in de cache plaatst zonder de AUth_checker in te schakelen, dit onvoorspelbaar gedrag kan veroorzaken.
 
@@ -892,7 +607,7 @@ en het verstrekken van vraagparameters:
 
 | Naam van query-parameter | Parameterwaarde voor query |
 |----------------------|-----------------------|
-| `resource` | Om het even welke weg JCR, of sub-weg, die de authentificatiemanager van SAML is luistert, zoals bepaald in [&#x200B; Adobe Granite SAML 2.0 de Handler OSGi van de Authentificatie 1&rbrace; &#x200B;](#configure-saml-2-0-authentication-handler) bezit.`path` |
+| `resource` | Om het even welke weg JCR, of sub-weg, die de authentificatiemanager van SAML is luistert, zoals bepaald in [ Adobe Granite SAML 2.0 de Handler OSGi van de Authentificatie 1} ](#configure-saml-2-0-authentication-handler) bezit.`path` |
 | `saml_request_path` | Het URL-pad waar de gebruiker naartoe moet gaan nadat de SAML-verificatie is voltooid. |
 
 Deze HTML-koppeling activeert bijvoorbeeld de SAML-aanmeldstroom en als de gebruiker hiermee slaagt, gaat u naar `/content/wknd/us/en/protected/page.html` . Deze vraagparameters kunnen programmatic worden geplaatst zoals nodig.
@@ -913,7 +628,7 @@ en het verstrekken van de formuliergegevens:
 
 | Naam van formuliergegevens | Waarde van formuliergegevens |
 |----------------------|-----------------------|
-| `resource` | Om het even welke weg JCR, of sub-weg, die de authentificatiemanager van SAML is luistert, zoals bepaald in [&#x200B; Adobe Granite SAML 2.0 de Handler OSGi van de Authentificatie 1&rbrace; &#x200B;](#configure-saml-2-0-authentication-handler) bezit.`path` |
+| `resource` | Om het even welke weg JCR, of sub-weg, die de authentificatiemanager van SAML is luistert, zoals bepaald in [ Adobe Granite SAML 2.0 de Handler OSGi van de Authentificatie 1} ](#configure-saml-2-0-authentication-handler) bezit.`path` |
 | `saml_request_path` | Het URL-pad waar de gebruiker naartoe moet gaan nadat de SAML-verificatie is voltooid. |
 
 
