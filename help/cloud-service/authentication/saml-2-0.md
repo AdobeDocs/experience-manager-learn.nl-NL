@@ -66,7 +66,7 @@ Het volgende wordt vereist wanneer vestiging SAML 2.0 authentificatie:
 + AEM Administrator toegang tot AEM as a Cloud Service-omgeving
 + Beheerderstoegang tot de IDP
 + Naar keuze, toegang tot openbaar/privé sleutelpaar wordt gebruikt aan encryptieSAML nuttige ladingen
-+ AEM Sites pagina&#39;s (of paginabomen), die aan AEM worden gepubliceerd, en [&#x200B; beschermd door Gesloten Gebruikersgroepen (CUGs) &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
++ AEM Sites pagina&#39;s (of paginabomen), die aan AEM worden gepubliceerd, en [&#x200B; beschermd door Gesloten Gebruikersgroepen (CUGs) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
 
 SAML 2.0 wordt alleen ondersteund voor het verifiëren van toepassingen voor publicatie of voorvertoning in AEM. Om de authentificatie van de Auteur van AEM te beheren die en IDP gebruiken, [&#x200B; integreert IDP met Adobe IMS &#x200B;](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html).
 
@@ -74,7 +74,7 @@ SAML 2.0 wordt alleen ondersteund voor het verifiëren van toepassingen voor pub
 
 SAML 2.0 wordt ondersteund op AEM as a Cloud Service, waaronder AEM Preview. Nochtans, baseren de configuraties van SAML in AEM zich op configuraties OSGi, en zowel publiceren de Voorproef van AEM als AEM de zelfde OSGi runmode resolutie (`config.publish`). U kunt daarom geen afzonderlijke SAML-configuratiebestanden maken voor Voorvertonen en Publiceren.
 
-In plaats daarvan, gebruik [&#x200B; milieu-specifieke configuratiewaarden &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#environment-specific-configuration-values) binnen uw configuraties OSGi, en [&#x200B; plaats de aangewezen veranderlijke waarden &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#cloud-manager-api-format-for-setting-properties) voor de Voorproef en publiceer milieu&#39;s.
+In plaats daarvan, gebruik [&#x200B; milieu-specifieke configuratiewaarden &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#environment-specific-configuration-values) binnen uw configuraties OSGi, en [&#x200B; plaats de aangewezen veranderlijke waarden &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#cloud-manager-api-format-for-setting-properties) voor de Voorproef en publiceer milieu&#39;s.
 
 ## IDP-certificaat voor iedereen installeren op AEM
 
@@ -337,7 +337,7 @@ OSGi-configuraties per omgeving (`config.publish.dev`, `config.publish.stage` en
 
 ### Codering gebruiken
 
-Wanneer [&#x200B; het coderen van de bevestiging AuthnRequest en SAML &#x200B;](#encrypting-the-authnrequest-and-saml-assertion), worden de volgende eigenschappen vereist: `useEncryption`, `spPrivateKeyAlias`, en `keyStorePassword`. `keyStorePassword` bevat een wachtwoord daarom moet de waarde niet in het OSGi configuratiedossier worden opgeslagen, maar eerder ingespoten gebruikend [&#x200B; geheime configuratiewaarden &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)
+Wanneer [&#x200B; het coderen van de bevestiging AuthnRequest en SAML &#x200B;](#encrypting-the-authnrequest-and-saml-assertion), worden de volgende eigenschappen vereist: `useEncryption`, `spPrivateKeyAlias`, en `keyStorePassword`. `keyStorePassword` bevat een wachtwoord daarom moet de waarde niet in het OSGi configuratiedossier worden opgeslagen, maar eerder ingespoten gebruikend [&#x200B; geheime configuratiewaarden &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=nl-NL#secret-configuration-values)
 
 +++Werk eventueel de configuratie OSGi bij om encryptie te gebruiken
 
@@ -370,7 +370,7 @@ Wanneer [&#x200B; het coderen van de bevestiging AuthnRequest en SAML &#x200B;](
 
 + `useEncryption` ingesteld op `true`
 + `spPrivateKeyAlias` bevat de alias van het sleutelarchiefitem voor de persoonlijke sleutel die door de integratie van SAML wordt gebruikt.
-+ `keyStorePassword` bevat een [&#x200B; OSGi geheime configuratievariabele &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values) die het `authentication-service` wachtwoord van het gebruikerssleutelarchief bevat.
++ `keyStorePassword` bevat een [&#x200B; OSGi geheime configuratievariabele &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=nl-NL#secret-configuration-values) die het `authentication-service` wachtwoord van het gebruikerssleutelarchief bevat.
 
 +++
 
@@ -456,7 +456,7 @@ Het dynamische Lidmaatschap van de Groep is een eigenschap in [&#x200B; Apache J
 ### Hoe te om Dynamisch Lidmaatschap van de Groep voor de Gebruikers van SAML in nieuwe milieu&#39;s toe te laten
 
 Om de prestaties van de groepsevaluatie in nieuwe AEM as a Cloud Service-omgevingen aanzienlijk te verbeteren, wordt de activering van de functie Dynamic Group Membership aanbevolen in nieuwe omgevingen.
-Dit is ook een noodzakelijke stap wanneer de gegevenssynchronisatie wordt geactiveerd. Meer details [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier).
+Dit is ook een noodzakelijke stap wanneer de gegevenssynchronisatie wordt geactiveerd. Meer details [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier).
 Hiervoor voegt u de volgende eigenschap toe aan het configuratiebestand van OSGI:
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
@@ -593,7 +593,7 @@ De SAML authentificatiestroom kan van een Web-pagina van de Plaats van AEM worde
 
 ## Beveiligd in cache plaatsen tijdens gebruik van SAML
 
-Op de AEM-publicatie-instantie worden de meeste pagina&#39;s doorgaans in cache geplaatst. Nochtans, voor SAML-Beschermde wegen, zou caching of moeten worden onbruikbaar gemaakt of beveiligd caching toegelaten gebruikend de configuratie auth_checker. Voor meer informatie, gelieve te verwijzen naar de details [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/permissions-cache) worden verstrekt
+Op de AEM-publicatie-instantie worden de meeste pagina&#39;s doorgaans in cache geplaatst. Nochtans, voor SAML-Beschermde wegen, zou caching of moeten worden onbruikbaar gemaakt of beveiligd caching toegelaten gebruikend de configuratie auth_checker. Voor meer informatie, gelieve te verwijzen naar de details [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/configuring/permissions-cache) worden verstrekt
 
 Houd er rekening mee dat als u beveiligde paden in de cache plaatst zonder de AUth_checker in te schakelen, dit onvoorspelbaar gedrag kan veroorzaken.
 
