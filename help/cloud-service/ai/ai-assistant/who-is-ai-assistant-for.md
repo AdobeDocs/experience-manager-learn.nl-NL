@@ -20,5 +20,5 @@ ht-degree: 0%
 
 AI Assistant verbetert de productiviteit van verschillende rollen in Adobe Experience Manager. Inhoudsauteurs stroomlijnen het maken en leveren van inhoud, technische teams vereenvoudigen workflows en probleemoplossing en managers nemen beslissingen met kennis van zaken sneller. Met functies zoals stapsgewijze begeleiding, onmiddellijke antwoorden en vooraf samengestelde vragen zorgt AI Assistant ervoor dat teams efficiënt werken en op de voorgrond blijven. Kijk hoe AI Assistant uw rol en teamdoelen ondersteunt.
 
->[!VIDEO](https://video.tv.adobe.com/v/3481163/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3481169/?captions=dut&learn=on&enablevpops)
 
