@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Leer hoe u een cloudconfiguratie instelt in AEM Forms en deze veilig integreert met Adobe Experience Platform. Gebruik Adobe Developer Console-referenties om het verzenden en ophalen van gegevens voor uw formulieren naadloos in te schakelen. Deze gids verstrekt geleidelijke instructies om de verbinding efficiënt te vormen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3481496/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3481502/?captions=dut&learn=on&enablevpops)
 
 
 ## Volgende stappen

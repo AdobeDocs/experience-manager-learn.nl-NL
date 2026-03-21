@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Leer hoe u profielen maakt en beheert in Adobe Experience Platform via AEM Forms-verzendingen. Deze integratie stroomlijnt gegevensbeheer en verbetert gebruikerservaring.
 
->[!VIDEO](https://video.tv.adobe.com/v/3481508/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3481515/?captions=dut&learn=on&enablevpops)
