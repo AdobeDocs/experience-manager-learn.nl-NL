@@ -19,5 +19,5 @@ Afbeeldingsbestanden moeten in de map `assets` naast dit bestand worden geplaats
 
 Elk afbeeldingsbestand dat moet worden gepubliceerd, moet via de syntaxis aan dit bestand worden gekoppeld:
 
-![ Proefversie klaar de persoonlijke rekening van het e-mailbeeld ](./assets/select-personal-account.png)
-![ Slack e-mailbeeld ](./assets/Slack-email-image.png)
+![&#x200B; Proefversie klaar de persoonlijke rekening van het e-mailbeeld &#x200B;](./assets/select-personal-account.png)
+![&#x200B; Slack e-mailbeeld &#x200B;](./assets/Slack-email-image.png)

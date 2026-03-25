@@ -55,7 +55,7 @@ Hieronder zijn plaatsingsconfiguraties die voor de plaatsingen van de productie 
 
 | SPA verbindt met → | AEM-auteur | AEM Publiceren | AEM Preview |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [ de filters van Dispatcher ](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [&#x200B; de filters van Dispatcher &#x200B;](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Delen van bronnen van oorsprong (CORS) | ✘ | ✘ | ✘ |
 | AEM-hosts | ✘ | ✘ | ✘ |
 
@@ -66,29 +66,29 @@ Een SPA en AEM hebben verschillende domeinen wanneer zij door eind - gebruikers 
 + AEM is toegankelijk via: `https://wknd.site/`
 + SPA is toegankelijk via `https://wknd-app.site/`
 
-Aangezien AEM en het KUUROORD van verschillende domeinen worden betreden, dwingen Webbrowsers veiligheidspolitiek zoals [ dwars-oorsprong middel het delen (CORS) ](./configurations/cors.md) af, en verhinderen het delen van de koekjes van HTTP (zoals AEM `login-token` koekje).
+Aangezien AEM en het KUUROORD van verschillende domeinen worden betreden, dwingen Webbrowsers veiligheidspolitiek zoals [&#x200B; dwars-oorsprong middel het delen (CORS) &#x200B;](./configurations/cors.md) af, en verhinderen het delen van de koekjes van HTTP (zoals AEM `login-token` koekje).
 
 Hieronder zijn plaatsingsconfiguraties die voor de plaatsingen van de productie van het KUUROORD worden vereist, wanneer ontvangen op een verschillend domein dan AEM.
 
 | SPA verbindt met → | AEM-auteur | AEM Publiceren | AEM Preview |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [ de filters van Dispatcher ](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
-| [ bron het delen van de kruis-oorsprong (CORS) ](./configurations/cors.md) | ✔ | ✔ | ✔ |
-| [ de gastheren van AEM ](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| [&#x200B; de filters van Dispatcher &#x200B;](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [&#x200B; bron het delen van de kruis-oorsprong (CORS) &#x200B;](./configurations/cors.md) | ✔ | ✔ | ✔ |
+| [&#x200B; de gastheren van AEM &#x200B;](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 #### Voorbeeld-SPA-implementatie op verschillende domeinen
 
 In dit voorbeeld, wordt het KUUROORD opgesteld aan een Netlify domein (`https://main--sparkly-marzipan-b20bf8.netlify.app/`) en het KUUROORD gebruikt AEM GraphQL APIs van het AEM publiceer domein (`https://publish-p65804-e666805.adobeaemcloud.com`). In de onderstaande schermafbeeldingen wordt de vereiste CORS benadrukt.
 
-1. Het KUUROORD wordt gediend van een Netlify domein, maar maakt een XHR vraag aan AEM GraphQL APIs op een verschillend domein. Dit dwars-plaats verzoek vereist [ CORS ](./configurations/cors.md) om opstelling op AEM worden geplaatst om verzoek van het domein toe te staan Netlify om tot zijn inhoud toegang te hebben.
+1. Het KUUROORD wordt gediend van een Netlify domein, maar maakt een XHR vraag aan AEM GraphQL APIs op een verschillend domein. Dit dwars-plaats verzoek vereist [&#x200B; CORS &#x200B;](./configurations/cors.md) om opstelling op AEM worden geplaatst om verzoek van het domein toe te staan Netlify om tot zijn inhoud toegang te hebben.
 
-   ![ verzoek van het KUUROORD van gastheren van SPA &amp; van AEM ](assets/spa/cors-requirement.png)
+   ![&#x200B; verzoek van het KUUROORD van gastheren van SPA &amp; van AEM &#x200B;](assets/spa/cors-requirement.png)
 
 2. Wanneer de XHR-aanvraag wordt gecontroleerd op de AEM GraphQL API, is de `Access-Control-Allow-Origin` aanwezig en wordt aan de webbrowser doorgegeven dat AEM een aanvraag van dit Netlify-domein toestaat om toegang te krijgen tot de inhoud ervan.
 
-   Als AEM [ CORS ](./configurations/cors.md) ontbrak of niet het Netlify domein omvatte, zou Webbrowser het XHR- verzoek ontbreken, en een fout melden CORS.
+   Als AEM [&#x200B; CORS &#x200B;](./configurations/cors.md) ontbrak of niet het Netlify domein omvatte, zou Webbrowser het XHR- verzoek ontbreken, en een fout melden CORS.
 
-   ![ de Kopbal van de Reactie van CORS AEM GraphQL API ](assets/spa/cors-response-headers.png)
+   ![&#x200B; de Kopbal van de Reactie van CORS AEM GraphQL API &#x200B;](assets/spa/cors-response-headers.png)
 
 ## Voorbeeld-app van één pagina
 

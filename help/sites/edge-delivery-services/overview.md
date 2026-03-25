@@ -24,7 +24,7 @@ Leer hoe u websites snel kunt maken met Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
 
-Herzie de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) voor volledige details van Edge Delivery Services en zijn mogelijkheden.
+Herzie de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) voor volledige details van Edge Delivery Services en zijn mogelijkheden.
 
 
 ## Zelfstudies voor Edge Delivery Services-ontwikkelaars

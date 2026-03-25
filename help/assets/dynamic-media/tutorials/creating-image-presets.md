@@ -23,4 +23,4 @@ Deze video doorloopt de stappen om Voorinstellingen afbeelding te maken in Dynam
 
 >[!VIDEO](https://video.tv.adobe.com/v/335459?quality=12&learn=on)
 
-Leer de beste werkwijzen voor het maken van dynamische media-URL&#39;s en voorinstellingen voor afbeeldingen in AEM Assets en begrijp hoe alles werkt! [ bekijk hier de video ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-urls-and-image-presets).
+Leer de beste werkwijzen voor het maken van dynamische media-URL&#39;s en voorinstellingen voor afbeeldingen in AEM Assets en begrijp hoe alles werkt! [&#x200B; bekijk hier de video &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-urls-and-image-presets).

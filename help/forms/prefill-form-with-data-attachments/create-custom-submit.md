@@ -40,7 +40,7 @@ Om aan het gebruiksgeval te voldoen, is een aangepaste verzendservice gemaakt vo
 }
 ```
 
-Het element _**contractexemplaar**_ vertegenwoordigt een component van de dossiergehechtheid en wordt gebruikt om gehechtheid te vangen die met de vorm wordt voorgelegd.
+Het element _&#x200B;**contractexemplaar**&#x200B;_ vertegenwoordigt een component van de dossiergehechtheid en wordt gebruikt om gehechtheid te vangen die met de vorm wordt voorgelegd.
 Als u het aangepaste formulier vooraf wilt kunnen invullen met de gegevens en de bijlagen, worden de verzonden bijlagen opgeslagen in het Azure-portaal en wordt het gegevenselement van het contractkopieerobject bijgewerkt met de URL van de opgeslagen bijlage.
 De aangepaste verzendservice extraheert en slaat de bijlagen op in de Azure-portal.  De bijgewerkte ingediende gegevens zien er als volgt uit
 
@@ -64,7 +64,7 @@ De aangepaste verzendservice extraheert en slaat de bijlagen op in de Azure-port
 }
 ```
 
-[ de steekproefdouane voorlegt manager voor kerncomponenten gebaseerde adaptieve vorm is hier beschikbaar ](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). De volgende aangepaste verzendmethode is geschreven voor het verzenden van het formulier
+[&#x200B; de steekproefdouane voorlegt manager voor kerncomponenten gebaseerde adaptieve vorm is hier beschikbaar &#x200B;](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). De volgende aangepaste verzendmethode is geschreven voor het verzenden van het formulier
 
 ```java
 package com.azuredemo.core;

@@ -391,7 +391,7 @@ ht-degree: 1%
    + [PDFG: Stappen om PDFG-conversie voor meerdere gebruikers in vensters op te lossen](troubleshooting/steps-to-troubleshoot-multi-user-pdfg-conversion-on-windows.md)
    + [PDFG: Stappen om OpenOffice-specifieke problemen met Unix op te lossen](troubleshooting/steps-to-troubleshoot-openoffice-specific-issues-on-unix.md)
    + [PDFG: Stappen om OpenOffice-specifieke problemen met vensters op te lossen](troubleshooting/steps-to-troubleshoot-openoffice-specific-issues-on-windows.md)
-   + [ Veiligheid van het Document: Hoe te om beleid toe te passen dat gebruikend de module van de documentveiligheid in Acrobat ](troubleshooting/how-to-apply-policy-created-using-document-security-module-in-acrobat.md) wordt gecreeerd
+   + [&#x200B; Veiligheid van het Document: Hoe te om beleid toe te passen dat gebruikend de module van de documentveiligheid in Acrobat  wordt gecreeerd](troubleshooting/how-to-apply-policy-created-using-document-security-module-in-acrobat.md)
    + [Gebruikersbeheer: Gebruikers of groepen toevoegen in AEM Forms JEE](troubleshooting/how-to-add-users-or-groups-in-aem-forms-jee.md)
    + [Gebruikersbeheer: De time-out voor een UM-sessie verhogen](troubleshooting/how-to-increase-um-session-timeout.md)
    + [Workbench: Workbench aansluiten met https](troubleshooting/connecting-workbench-using-https.md)

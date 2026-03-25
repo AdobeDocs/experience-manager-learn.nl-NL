@@ -27,21 +27,21 @@ ht-degree: 0%
 
 Leer meer over de op OpenAPI gebaseerde AEM API&#39;s, waaronder verificatieondersteuning, sleutelconcepten en toegang tot Adobe API&#39;s.
 
-De [ Specificatie OpenAPI ](https://swagger.io/specification/) (die vroeger als Swagger wordt bekend) is een wijd gebruikte norm voor het bepalen van RESTful APIs. AEM as a Cloud Service biedt verschillende API&#39;s op basis van OpenAPI-specificaties (of gewoon AEM API&#39;s op basis van OpenAPI), waardoor het eenvoudiger wordt aangepaste toepassingen te maken die communiceren met de auteur van AEM of servicetypen publiceren. Hieronder volgen enkele voorbeelden:
+De [&#x200B; Specificatie OpenAPI &#x200B;](https://swagger.io/specification/) (die vroeger als Swagger wordt bekend) is een wijd gebruikte norm voor het bepalen van RESTful APIs. AEM as a Cloud Service biedt verschillende API&#39;s op basis van OpenAPI-specificaties (of gewoon AEM API&#39;s op basis van OpenAPI), waardoor het eenvoudiger wordt aangepaste toepassingen te maken die communiceren met de auteur van AEM of servicetypen publiceren. Hieronder volgen enkele voorbeelden:
 
 **Plaatsen**
 
-- [ Plaatsen API ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/): APIs voor het werken met de Fragmenten van de Inhoud.
+- [&#x200B; Plaatsen API &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/): APIs voor het werken met de Fragmenten van de Inhoud.
 
 **Assets**
 
-- [ Mappen API ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/): APIs voor het werken met omslagen zoals creeer, lijst en schrap omslagen.
+- [&#x200B; Mappen API &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/): APIs voor het werken met omslagen zoals creeer, lijst en schrap omslagen.
 
-- [ de Auteur API van Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/): APIs voor het werken met activa en zijn meta-gegevens.
+- [&#x200B; de Auteur API van Assets &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/): APIs voor het werken met activa en zijn meta-gegevens.
 
 **Forms**
 
-- [ Communicatie APIs van Forms ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/): APIs voor het werken met vormen en documenten.
+- [&#x200B; Communicatie APIs van Forms &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/): APIs voor het werken met vormen en documenten.
 
 In toekomstige versies worden meer op OpenAPI gebaseerde AEM API&#39;s toegevoegd ter ondersteuning van extra gebruiksgevallen.
 
@@ -49,17 +49,17 @@ In toekomstige versies worden meer op OpenAPI gebaseerde AEM API&#39;s toegevoeg
 
 De op OpenAPI gebaseerde AEM API&#39;s ondersteunen OAuth 2.0-verificatie, inclusief de volgende typen subsidies:
 
-- **OAuth Server-aan-Server credential**: Ideaal voor backend diensten die API toegang zonder gebruikersinteractie vereisen. Het gebruikt _client_credentials_ giftype, toelatend veilig toegangsbeheer op het serverniveau. Voor meer informatie, zie [ Server-aan-Server referentie ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/#oauth-server-to-server-credential).
+- **OAuth Server-aan-Server credential**: Ideaal voor backend diensten die API toegang zonder gebruikersinteractie vereisen. Het gebruikt _client_credentials_ giftype, toelatend veilig toegangsbeheer op het serverniveau. Voor meer informatie, zie [&#x200B; Server-aan-Server referentie &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/#oauth-server-to-server-credential).
 
 - **OAuth App credential van het Web**: Geschikt voor Webtoepassingen met front-end en _achterste_ componenten die tot AEM APIs namens gebruikers toegang hebben. Het gebruikt het _authentication_code_ subsidietype, waar de backendserver veilig geheimen en tokens beheert. Voor meer informatie, zie {de referentie van de App van 0} OAuth Web [.](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential)
 
-- **Voor één enkele Pagina App credential**: Ontworpen voor SPAs die in browser lopen, die tot APIs namens een gebruiker zonder een achtergrondserver moet toegang hebben. Het gebruikt _authentication_code_ verlenen type en baseert zich op cliënt-zijveiligheidsmechanismen gebruikend PKCE (Sleutel van het Bewijs voor de Uitwisseling van de Code) om de stroom van de vergunningscode te beveiligen. Voor meer informatie, zie [ OAuth Enige de credentie van de Pagina App ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential).
+- **Voor één enkele Pagina App credential**: Ontworpen voor SPAs die in browser lopen, die tot APIs namens een gebruiker zonder een achtergrondserver moet toegang hebben. Het gebruikt _authentication_code_ verlenen type en baseert zich op cliënt-zijveiligheidsmechanismen gebruikend PKCE (Sleutel van het Bewijs voor de Uitwisseling van de Code) om de stroom van de vergunningscode te beveiligen. Voor meer informatie, zie [&#x200B; OAuth Enige de credentie van de Pagina App &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential).
 
 ## Welke verificatiemethode moet worden gebruikt?{#auth-method-decision}
 
 Wanneer het beslissen welke authentificatiemethode te gebruiken, overweeg het volgende:
 
-![ Welke methode van de Authentificatie om te gebruiken?](./assets/overview/which-authentication-method-to-use.png)
+![&#x200B; Welke methode van de Authentificatie om te gebruiken?](./assets/overview/which-authentication-method-to-use.png)
 
 Gebruikersverificatie (Web App of App met één pagina) moet de standaardkeuze zijn wanneer er een AEM-gebruikerscontext in het spel is. Dit zorgt ervoor dat alle handelingen in de gegevensopslagruimte correct worden toegewezen aan de geverifieerde gebruiker en dat de gebruiker beperkt is tot alleen de machtigingen waartoe hij of zij gemachtigd is.
 Het gebruiken van server-aan-server (of de technische systeemrekening) om acties namens een individuele gebruiker uit te voeren overslaat het veiligheidsmodel en introduceert risico&#39;s zoals voorrechtescalatie en onnauwkeurige controle.
@@ -76,17 +76,17 @@ De volgende tabel geeft een overzicht van de verschillen tussen de drie OAuth-ve
 | **Overwegingen van de Veiligheid** | Sla gevoelige gegevens (`client_id`, `client_secret` ) veilig op in back-endsystemen. | Na gebruikersauthentificatie, worden zij verleend hun eigen _tijdelijk toegangstoken via een achterste vraag_. Sla gevoelige gegevens (`client_id`, `client_secret` ) veilig op in back-endsystemen om machtigingscode voor toegangstoken uit te wisselen. | Na gebruikersauthentificatie, worden zij verleend hun eigen _tijdelijk toegangstoken via een frontend vraag_. Hierbij wordt `client_secret` niet gebruikt, omdat het onveilig is om deze in frontend-apps op te slaan. Verantwoordt op PKCE om vergunningscode voor toegangstoken uit te wisselen. |
 | **Type van Verlening** | _client_credentials_ | _authentication_code_ | _authentication_code_ met **PKCE** |
 | **het Referentietype van Adobe Developer Console** | OAuth Server-to-Server | OAuth Web App | OAuth-app met één pagina |
-| **Leerprogramma** | [ Oproep API gebruikend Server-aan-Server authentificatie ](./use-cases/invoke-api-using-oauth-s2s.md) | [ Oproep API gebruikend de authentificatie van de App van het Web ](./use-cases/invoke-api-using-oauth-web-app.md) | [ Oproep API gebruikend de Enige authentificatie van de Toepassing van de Pagina ](./use-cases/invoke-api-using-oauth-single-page-app.md) |
+| **Leerprogramma** | [&#x200B; Oproep API gebruikend Server-aan-Server authentificatie &#x200B;](./use-cases/invoke-api-using-oauth-s2s.md) | [&#x200B; Oproep API gebruikend de authentificatie van de App van het Web &#x200B;](./use-cases/invoke-api-using-oauth-web-app.md) | [&#x200B; Oproep API gebruikend de Enige authentificatie van de Toepassing van de Pagina &#x200B;](./use-cases/invoke-api-using-oauth-single-page-app.md) |
 
 ## Toegang tot Adobe API&#39;s en verwante concepten{#accessing-adobe-apis-and-related-concepts}
 
 Voordat u Adobe API&#39;s opent, is het van essentieel belang dat u de volgende belangrijke elementen begrijpt:
 
-- **[Adobe Developer Console ](https://developer.adobe.com/)**: De ontwikkelaarshub voor de toegang tot van Adobe APIs, SDKs, gebeurtenissen in real time, serverless functies, en meer. Merk op dat het van _AEM_ Developer Console verschillend is, die voor het zuiveren van de toepassingen van AEM wordt gebruikt.
+- **[Adobe Developer Console &#x200B;](https://developer.adobe.com/)**: De ontwikkelaarshub voor de toegang tot van Adobe APIs, SDKs, gebeurtenissen in real time, serverless functies, en meer. Merk op dat het van _AEM_ Developer Console verschillend is, die voor het zuiveren van de toepassingen van AEM wordt gebruikt.
 
-- **[Project van Adobe Developer Console ](https://developer.adobe.com/developer-console/docs/guides/projects/)**: Centrale plaats voor het beheren van API integratie, gebeurtenissen, en runtime functies. Hier, vormt u APIs, plaatst authentificatie, en produceert vereiste geloofsbrieven.
+- **[Project van Adobe Developer Console &#x200B;](https://developer.adobe.com/developer-console/docs/guides/projects/)**: Centrale plaats voor het beheren van API integratie, gebeurtenissen, en runtime functies. Hier, vormt u APIs, plaatst authentificatie, en produceert vereiste geloofsbrieven.
 
-- **[Profielen van het Product ](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)**: De Profielen van het product verstrekken een toestemmingsvooraf ingesteld die u toestaat om gebruiker of toepassingstoegang tot de producten van Adobe zoals AEM, Adobe Target, Adobe Analytics, en anderen te controleren. Elk Adobe-product heeft vooraf gedefinieerde productprofielen.
+- **[Profielen van het Product &#x200B;](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)**: De Profielen van het product verstrekken een toestemmingsvooraf ingesteld die u toestaat om gebruiker of toepassingstoegang tot de producten van Adobe zoals AEM, Adobe Target, Adobe Analytics, en anderen te controleren. Elk Adobe-product heeft vooraf gedefinieerde productprofielen.
 
 - **de Diensten**: De diensten bepalen de daadwerkelijke toestemmingen en worden geassocieerd met het Profiel van het Product. Als u de voorinstelling voor machtigingen wilt beperken of vergroten, kunt u de services die aan het productprofiel zijn gekoppeld, deselecteren of selecteren. Zo kunt u het toegangsniveau voor het product en de bijbehorende API&#39;s bepalen. In AEM as a Cloud Service, vertegenwoordigen de diensten gebruikersgroepen met vooraf bepaalde Lijsten van het Toegangsbeheer (ACLs) voor bewaargegevensopslagknopen, die korrelig toestemmingsbeheer toestaan.
 

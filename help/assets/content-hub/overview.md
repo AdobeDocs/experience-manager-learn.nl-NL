@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # AEM Assets Content Hub
 
-![ AEM Assets Content Hub ](./assets/overview/hero.png){align=center}
+![&#x200B; AEM Assets Content Hub &#x200B;](./assets/overview/hero.png){align=center}
 
 Leer hoe u elementen kunt uploaden, tags kunt toepassen en de goedkeuringsworkflow in Adobe Experience Manager Assets as a Cloud Service Content Hub kunt begrijpen.
 

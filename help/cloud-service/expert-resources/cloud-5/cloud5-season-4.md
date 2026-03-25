@@ -22,7 +22,7 @@ Welkom bij seizoen vier van de Cloud 5-serie van AEM Engineering. Een van de bel
 
 ## Suggestievak
 
-Bezoek het [ Vak van de Suggestie ](https://forms.office.com/r/74P5Xz4UH0) voor het voorleggen van onderwerpideeën.
+Bezoek het [&#x200B; Vak van de Suggestie &#x200B;](https://forms.office.com/r/74P5Xz4UH0) voor het voorleggen van onderwerpideeën.
 
 ## Seizoen 4
 
