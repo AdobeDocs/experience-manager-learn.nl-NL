@@ -11,7 +11,7 @@ last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-13148
 thumbnail: null
 exl-id: e6d67204-2f76-441c-a178-a34798fe266d
-source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 0%
@@ -55,7 +55,7 @@ De regelreeksen helpen klanten gemeenschappelijke en gesofisticeerde Webbedreigi
 
 De standaardregels van de verkeersfilter zijn nuttig om zaken-specifiek beleid, zoals tariefgrenzen of het blokkeren van specifieke gebieden af te dwingen, evenals het blokkeren van verkeer dat op verzoekeigenschappen en kopballen zoals IP adres, weg of gebruikersagent wordt gebaseerd.
 De WAF-regels voor verkeersfilters bieden daarentegen een uitgebreide proactieve bescherming voor bekende web-exploits en aanvalsvectoren, en beschikken over geavanceerde intelligentie om valse positieven te beperken (d.w.z. om legitiem verkeer te blokkeren).
-Om beide soorten regels te bepalen, gebruikt u de syntaxis YAML, zie [&#x200B; Syntaxis van de Regels van de Filterregel van 0&rbrace; Verkeer voor meer details.](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax)
+Om beide soorten regels te bepalen, gebruikt u de syntaxis YAML, zie [ Syntaxis van de Regels van de Filterregel van 0} Verkeer voor meer details.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax)
 
 ## Wanneer en waarom gebruiken ze
 
@@ -82,7 +82,7 @@ Adobe biedt aanbevolen regels voor standaardverkeersfilters en WAF-regels voor v
    - Het tarief dat IPs beperkt die meer dan 100 verzoeken/seconde _bij de oorsprong_ maakt
    - Blokkeren van verkeer uit landen die door het Office of Foreign Assets Control (OFAC) zijn vermeld
 
-- **de regels van de het verkeersfilter van WAF** (vereist toe:voegen-op vergunning): Verstrekt extra bescherming tegen verfijnde bedreigingen, met inbegrip van [&#x200B; Top tien van OWASP &#x200B;](https://owasp.org/www-project-top-ten/) bedreigingen zoals SQL injectie, dwars-plaats scripting (XSS), en andere aanvallen van de Webtoepassing.
+- **de regels van de het verkeersfilter van WAF** (vereist toe:voegen-op vergunning): Verstrekt extra bescherming tegen verfijnde bedreigingen, met inbegrip van [ Top tien van OWASP ](https://owasp.org/www-project-top-ten/) bedreigingen zoals SQL injectie, dwars-plaats scripting (XSS), en andere aanvallen van de Webtoepassing.
 Voorbeelden zijn:
    - Het blokkeren van verzoeken van bekende slechte IP adressen
    - Het registreren of het blokkeren van verdachte verzoeken die als aanvallen worden gemarkeerd
@@ -95,7 +95,8 @@ Voorbeelden zijn:
 
 Leer hoe te om de regels van de verkeersfilter, met inbegrip van de regels van WAF, in AEM as a Cloud Service te bepalen, op te stellen, te testen en te analyseren door de opstellingsgids en gebruiksgevallen hieronder te volgen. Dit geeft u de achtergrondkennis zodat kunt u de Adobe-geadviseerde regels later vertrouwend toepassen.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./setup.md
@@ -136,7 +137,8 @@ Leer hoe te om de regels van de verkeersfilter, met inbegrip van de regels van W
 
 Deze gids verstrekt geleidelijke instructies aan opstelling en opstelling van Adobe-geadviseerde standaardverkeersfilter en de regels van de de verkeersfilter van WAF in uw milieu van AEM as a Cloud Service.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./use-cases/using-traffic-filter-rules.md
@@ -206,7 +208,8 @@ Deze gids verstrekt geleidelijke instructies aan opstelling en opstelling van Ad
 
 Voor meer geavanceerde scenario&#39;s, kunt u de volgende gebruiksgevallen onderzoeken die aantonen hoe te om de regels van de filter van het douaneverkeer uit te voeren die op specifieke bedrijfsvereisten worden gebaseerd:
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./how-to/request-logging.md
@@ -291,4 +294,4 @@ Voor meer geavanceerde scenario&#39;s, kunt u de volgende gebruiksgevallen onder
 
 ## Aanvullende bronnen
 
-- [&#x200B; Regels van de Filter van het Verkeer met inbegrip van de Regels van WAF &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
+- [ Regels van de Filter van het Verkeer met inbegrip van de Regels van WAF ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)

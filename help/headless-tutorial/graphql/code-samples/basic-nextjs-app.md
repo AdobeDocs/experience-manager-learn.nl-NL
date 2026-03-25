@@ -14,7 +14,7 @@ hide: true
 hidefromtoc: true
 exl-id: 2d4396dc-2346-4561-b040-eba0ab62a96f
 duration: 22
-source-git-commit: 6425188da75f789b0661ec9bfb79624b5704c92b
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # Basic Next.js, app
 
-Dit [&#x200B; Next.js &#x200B;](https://nextjs.org/) app toont aan hoe te om inhoud te vragen gebruikend AEM GraphQL APIs gebruikend persisted query. Deze toepassing geeft filterbaar van avonturen WKND terug, en na het selecteren van een avontuur, toont de avonturen volledige details.
+Dit [ Next.js ](https://nextjs.org/) app toont aan hoe te om inhoud te vragen gebruikend AEM GraphQL APIs gebruikend persisted query. Deze toepassing geeft filterbaar van avonturen WKND terug, en na het selecteren van een avontuur, toont de avonturen volledige details.
 
 Deze code:
 
@@ -32,4 +32,4 @@ Deze code:
 
 >[!IMPORTANT]
 >
-> Codesandbox.io biedt geen ondersteuning voor het bewerken van de toepassing Next.js in de ingesloten IDE. Om deze codesteekproef uit te geven, [&#x200B; open direct Next.js app op codesandbox.io &#x200B;](https://codesandbox.io/s/wknd-next-js-app-u8x5f8).
+> Codesandbox.io biedt geen ondersteuning voor het bewerken van de toepassing Next.js in de ingesloten IDE. Om deze codesteekproef uit te geven, [ open direct Next.js app op codesandbox.io ](https://codesandbox.io/s/wknd-next-js-app-u8x5f8).

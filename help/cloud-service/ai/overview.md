@@ -8,7 +8,7 @@ doc-type: Catalog
 duration: 30
 last-substantial-update: 2026-01-05T00:00:00Z
 exl-id: cc255744-bb86-49cb-88ca-1266d28985a5
-source-git-commit: bf6a6f467c3ded713552e0077b13c41fb45511cb
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -17,11 +17,12 @@ ht-degree: 0%
 
 # AI in Experience Manager
 
-![&#x200B; AI in Experience Manager &#x200B;](./assets/overview/hero.png)
+![ AI in Experience Manager ](./assets/overview/hero.png)
 
 Experience Manager as a Cloud Service biedt geavanceerde AI-mogelijkheden om inhoudsbeheer te verbeteren, workflows te stroomlijnen en gebruikerservaring te verbeteren. Door functies van AI, zoals AEM AI Assistant en AEM AI Agents, te integreren, kunnen gebruikers taken automatiseren, inzicht krijgen en de levering van inhoud optimaliseren.
 
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ./ai-assistant/overview.md
     {title = AEM AI Assistant}
@@ -55,7 +56,7 @@ Experience Manager as a Cloud Service biedt geavanceerde AI-mogelijkheden om inh
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./ai-assistant/overview.md" title="AEM AI Assistant" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475364/?captions=dut&format=jpeg&nocache=1773082651757" alt="AEM AI Assistant"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475357/?format=jpeg&nocache=1773082651757" alt="AEM AI Assistant"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -3,8 +3,8 @@ user-guide-title: AEM Foundation-video's en -tutorials
 breadcrumb-title: Tutorials voor AEM Foundation
 user-guide-description: Een verzameling video's en tutorials voor Adobe Experience Manager Foundation.
 sub-product: Experience Manager
-index: y
-source-git-commit: bc2f4655631f28323a39ed5b4c7878613296a0ba
+index: true
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 10%
@@ -51,7 +51,7 @@ ht-degree: 10%
    + [ModSecurity CRS DoS-beveiliging tegen aanvallen](./security/modsecurity-crs-dos-attack-protection.md)
    + [HTTPS-verbindingen met API&#39;s met persoonlijke certificaten](./security/call-internal-apis-having-private-certificate.md)
    + [Mutual TLS (mTLS) Authentication from AEM](./security/mutual-tls-authentication.md)
-   + [&#x200B; JWT-aan-OAuth credential migratie](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/authentication/jwt-to-oauth-migration){target=_blank}
+   + [ JWT-aan-OAuth credential migratie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/authentication/jwt-to-oauth-migration){target=_blank}
 + Workflow {#workflow}
    + [De Workfloweditor gebruiken](./workflow/use-the-workflow-editor.md)
    + [Workflow gebruiken](./workflow/use-workflow.md)

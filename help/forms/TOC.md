@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Forms
 breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: Experience Manager 6.4, Experience Manager 6.5
-index: y
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+index: true
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '2104'
 ht-degree: 1%
@@ -391,7 +391,7 @@ ht-degree: 1%
    + [PDFG: Stappen om PDFG-conversie voor meerdere gebruikers in vensters op te lossen](troubleshooting/steps-to-troubleshoot-multi-user-pdfg-conversion-on-windows.md)
    + [PDFG: Stappen om OpenOffice-specifieke problemen met Unix op te lossen](troubleshooting/steps-to-troubleshoot-openoffice-specific-issues-on-unix.md)
    + [PDFG: Stappen om OpenOffice-specifieke problemen met vensters op te lossen](troubleshooting/steps-to-troubleshoot-openoffice-specific-issues-on-windows.md)
-   + [&#x200B; Veiligheid van het Document: Hoe te om beleid toe te passen dat gebruikend de module van de documentveiligheid in Acrobat  wordt gecreeerd](troubleshooting/how-to-apply-policy-created-using-document-security-module-in-acrobat.md)
+   + [ Veiligheid van het Document: Hoe te om beleid toe te passen dat gebruikend de module van de documentveiligheid in Acrobat ](troubleshooting/how-to-apply-policy-created-using-document-security-module-in-acrobat.md) wordt gecreeerd
    + [Gebruikersbeheer: Gebruikers of groepen toevoegen in AEM Forms JEE](troubleshooting/how-to-add-users-or-groups-in-aem-forms-jee.md)
    + [Gebruikersbeheer: De time-out voor een UM-sessie verhogen](troubleshooting/how-to-increase-um-session-timeout.md)
    + [Workbench: Workbench aansluiten met https](troubleshooting/connecting-workbench-using-https.md)

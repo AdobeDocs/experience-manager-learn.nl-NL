@@ -1,6 +1,6 @@
 ---
 title: Aangepaste verzending maken voor verwerking van formulieren op basis van kerncomponenten
-description: Aangepaste verzending maken om de formuliergegevens met bijlagen in Azure op te slaan
+description: Aangepaste verzending maken om de formuliergegevens op te slaan met bijlagen in Azure
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -10,7 +10,7 @@ topic: Integrations
 jira: KT-14794
 exl-id: c4257567-76bd-417e-a1a2-38a0647767d9
 duration: 147
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Aangepaste verzending maken voor verwerking van het formulier
 
-Om aan het gebruiksgeval te voldoen, werd een douane verzend dienst gecreeerd om de voorgelegde gegevens en de gehechtheid in Azure op te slaan. Als het basisformulier voor componenten wordt verzonden, hebben de gegevens de volgende indeling
+Om aan het gebruiksgeval te voldoen, is een aangepaste verzendservice gemaakt voor het opslaan van de verzonden gegevens en bijlagen in Azure. Als het basisformulier voor componenten wordt verzonden, hebben de gegevens de volgende indeling
 
 ```json
 {
@@ -40,9 +40,9 @@ Om aan het gebruiksgeval te voldoen, werd een douane verzend dienst gecreeerd om
 }
 ```
 
-Het element _&#x200B;**contractexemplaar**&#x200B;_ vertegenwoordigt een component van de dossiergehechtheid en wordt gebruikt om gehechtheid te vangen die met de vorm wordt voorgelegd.
-Als u het adaptieve formulier vooraf wilt kunnen invullen met de gegevens en de bijlagen, worden de verzonden bijlagen opgeslagen in het Azure-portaal en wordt het gegevenselement van het contractkopieobject bijgewerkt met de URL van de opgeslagen bijlage.
-De aangepaste verzendservice extraheert en slaat de bijlagen op in het Azure-portaal.  De bijgewerkte ingediende gegevens zien er als volgt uit
+Het element _**contractexemplaar**_ vertegenwoordigt een component van de dossiergehechtheid en wordt gebruikt om gehechtheid te vangen die met de vorm wordt voorgelegd.
+Als u het aangepaste formulier vooraf wilt kunnen invullen met de gegevens en de bijlagen, worden de verzonden bijlagen opgeslagen in het Azure-portaal en wordt het gegevenselement van het contractkopieerobject bijgewerkt met de URL van de opgeslagen bijlage.
+De aangepaste verzendservice extraheert en slaat de bijlagen op in de Azure-portal.  De bijgewerkte ingediende gegevens zien er als volgt uit
 
 
 ```json
@@ -62,11 +62,9 @@ De aangepaste verzendservice extraheert en slaat de bijlagen op in het Azure-por
     },
     "Message": "We would like to renew our annual contract "
 }
-``
 ```
 
-
-[&#x200B; de steekproefdouane voorlegt manager voor kerncomponenten gebaseerde adaptieve vorm is hier beschikbaar &#x200B;](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). De volgende aangepaste verzendmethode is geschreven voor het verzenden van het formulier
+[ de steekproefdouane voorlegt manager voor kerncomponenten gebaseerde adaptieve vorm is hier beschikbaar ](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). De volgende aangepaste verzendmethode is geschreven voor het verzenden van het formulier
 
 ```java
 package com.azuredemo.core;

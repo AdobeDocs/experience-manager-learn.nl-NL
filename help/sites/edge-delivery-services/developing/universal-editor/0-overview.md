@@ -11,7 +11,7 @@ doc-type: Catalog
 jira: KT-15832
 duration: 88
 exl-id: aeac08a2-75a0-4adb-b32e-0e7f85e7eb1d
-source-git-commit: f0b1b906e1ef04b53eca940f191e65d62a2e0bab
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Zelfstudie voor ontwikkelaars van Edge Delivery Services en Universal Editor
 
-![&#x200B; Edge Delivery Services en Universele de ontwikkelaarsleerprogramma van de Redacteur &#x200B;](./assets/0-overview/hero.png)
+![ Edge Delivery Services en Universele de ontwikkelaarsleerprogramma van de Redacteur ](./assets/0-overview/hero.png)
 
 In deze zelfstudie leert u de grondbeginselen van het bouwen van een AEM-website die krachtige authoring combineert met Universal Editor en bliksemsnelle levering met Edge Delivery Services. Tegen het eind, zult u basisinzicht in hoe te om een nieuw project tot stand te brengen, opstelling een lokale ontwikkelomgeving, en een nieuw blok bouwen.
 
@@ -28,7 +28,8 @@ In deze zelfstudie leert u de grondbeginselen van het bouwen van een AEM-website
 
 Leer hoe u een codeproject maakt en een nieuwe site configureert in AEM as a Cloud Service. Met deze setup kunt u naadloos ontwikkelen met de Universal Editor voor het maken van inhoud en het snel leveren van inhoud via Edge Delivery Services.
 
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ./1-new-code-project.md
 * ./2-new-aem-site.md
@@ -88,7 +89,8 @@ Leer hoe u een codeproject maakt en een nieuwe site configureert in AEM as a Clo
 ## Ontwikkelinstellingen
 
 Leer hoe u uw lokale ontwikkelomgeving configureert voor een snelle ontwikkeling van websites. Met deze setup kunt u probleemloos sites maken met de Universal Editor en content op efficiënte wijze leveren via Edge Delivery Services, waardoor een soepele en geoptimaliseerde ontwikkelingsworkflow wordt gegarandeerd.
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ./3-local-development-environment.md
 * ./4-website-branding.md
@@ -101,7 +103,7 @@ Leer hoe u uw lokale ontwikkelomgeving configureert voor een snelle ontwikkeling
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./3-local-development-environment.md" title="Een lokale ontwikkelomgeving instellen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443984/?captions=dut&format=jpeg&nocache=1753811862249" alt="Een lokale ontwikkelomgeving instellen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443978/?format=jpeg&nocache=1753811862249" alt="Een lokale ontwikkelomgeving instellen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -149,7 +151,8 @@ Leer hoe u uw lokale ontwikkelomgeving configureert voor een snelle ontwikkeling
 
 Leer hoe u een nieuw blok kunt maken door het inhoudsmodel te definiëren en voorbeeldinhoud in te stellen voor testen en ontwikkelen. Bekijk twee methoden om het blok te renderen en begrijp hoe u het kunt structureren voor optimale prestaties en flexibiliteit in AEM en Edge Delivery Services.
 
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ./5-new-block.md {image = ./assets/5-new-block/card.png}
 * ./6-author-block.md {image = ./assets/6-author-block/card.png}
@@ -258,7 +261,8 @@ Leer hoe u een nieuw blok kunt maken door het inhoudsmodel te definiëren en voo
 
 Nu u deze zelfstudie hebt voltooid, bouwt u voort op wat u hebt geleerd met deze gefocuste Hoe-kan-ik&#39;s. Deze gidsen breiden zich op de code en de concepten uit die hier worden behandeld, het onderzoeken van rol-specifieke gebruiksgevallen, geavanceerde technieken, en extra uiteinden om Edge Delivery Services en Universele redacteur ontwikkelingsvaardigheden te verbeteren.
 
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ./how-to/block-options.md
 * ./how-to/header-and-footer.md

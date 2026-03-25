@@ -6,11 +6,11 @@ level: Intermediate
 version: Experience Manager as a Cloud Service
 feature: Image Presets
 topic: Development
-index: y
+index: true
 doc-type: Tutorial
 exl-id: e76c50da-e7a8-4560-bc53-02cdb13619bb
 duration: 93
-source-git-commit: 3cadf95ab2a17e17c6c52801cf285a57f6f1e286
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 0%
@@ -23,4 +23,4 @@ Deze video doorloopt de stappen om Voorinstellingen afbeelding te maken in Dynam
 
 >[!VIDEO](https://video.tv.adobe.com/v/335459?quality=12&learn=on)
 
-Leer de beste werkwijzen voor het maken van dynamische media-URL&#39;s en voorinstellingen voor afbeeldingen in AEM Assets en begrijp hoe alles werkt! [&#x200B; bekijk hier de video &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-urls-and-image-presets).
+Leer de beste werkwijzen voor het maken van dynamische media-URL&#39;s en voorinstellingen voor afbeeldingen in AEM Assets en begrijp hoe alles werkt! [ bekijk hier de video ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-urls-and-image-presets).

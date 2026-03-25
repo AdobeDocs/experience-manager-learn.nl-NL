@@ -11,7 +11,7 @@ last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18717
 thumbnail: null
 exl-id: c4fb11b9-b613-4522-b9da-18d7ae0826ec
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Leer hoe AEM as a Cloud Service (AEMCS) integreert met Adobe Target en Adobe Exp
 
 ## Vereisten
 
-Om diverse verpersoonlijkingsscenario&#39;s aan te tonen, gebruikt dit leerprogramma het steekproef [&#x200B; AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd/) project. U hebt de volgende stappen nodig:
+Om diverse verpersoonlijkingsscenario&#39;s aan te tonen, gebruikt dit leerprogramma het steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd/) project. U hebt de volgende stappen nodig:
 
 - Een Adobe org met toegang tot:
    - **milieu van AEM as a Cloud Service** - om inhoud tot stand te brengen en te beheren
@@ -34,17 +34,18 @@ Om diverse verpersoonlijkingsscenario&#39;s aan te tonen, gebruikt dit leerprogr
 
 - Basiskennis van AEM-componenten en Experience Fragments
 
-- Het [&#x200B; AEM WKND &#x200B;](https://github.com/adobe/aem-guides-wknd/) project dat aan uw milieu van AEM as a Cloud Service wordt opgesteld.
+- Het [ AEM WKND ](https://github.com/adobe/aem-guides-wknd/) project dat aan uw milieu van AEM as a Cloud Service wordt opgesteld.
 
 ## Live demo van Personalization-gebruiksgevallen
 
-De verpersoonlijking van de ervaring in actie op de [&#x200B; website van Enablement WKND &#x200B;](https://wknd.enablementadobe.com/us/en.html){target="wknd"}. De demo-site demonstreert drie typen personalisatie: A/B-tests, gedragsgericht gebruik en bekende gebruikersidentificatie.
+De verpersoonlijking van de ervaring in actie op de [ website van Enablement WKND ](https://wknd.enablementadobe.com/us/en.html){target="wknd"}. De demo-site demonstreert drie typen personalisatie: A/B-tests, gedragsgericht gebruik en bekende gebruikersidentificatie.
 
 >[!TIP]
 >
 > Door de live demo te verkennen, begrijpt u eerst de waarde en mogelijkheden van elke personalisatietechniek voordat u tijd investeert in installatie en implementatie.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./live-demo.md
@@ -85,7 +86,8 @@ De verpersoonlijking van de ervaring in actie op de [&#x200B; website van Enable
 
 Voordat u specifieke gebruiksgevallen gaat verkennen, configureert u eerst AEM as a Cloud Service voor personalisatie. Begin door Adobe Target en Markeringen te integreren om cliënt-zijpersonalisatie toe te laten gebruikend het Web SDK. Met deze basisstappen ondersteunen uw AEM-pagina&#39;s experimenten, doelgroepen en realtime personalisatie.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./setup/integrate-adobe-target.md
@@ -158,7 +160,8 @@ Voordat u specifieke gebruiksgevallen gaat verkennen, configureert u eerst AEM a
 
 Ontdek de volgende veelvoorkomende gebruiksgevallen voor personalisatie die worden ondersteund door AEMCS, Adobe Target en Adobe Experience Platform.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./use-cases/experimentation.md

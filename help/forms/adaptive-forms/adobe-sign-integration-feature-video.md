@@ -9,12 +9,12 @@ topic-tags: forms, adaptive_forms
 topic: Integrations
 discoiquuid: aec562a4-4405-4e6f-9ad5-7477fa1d078f
 targetaudience: target-audience advanced
-index: y
+index: true
 internal: n
 snippet: y
 last-substantial-update: 2020-10-20T00:00:00Z
 duration: 628
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 0%
@@ -28,10 +28,10 @@ Acrobat Sign gebruiken met AEM Forms
 
 >[!VIDEO](https://video.tv.adobe.com/v/18696?quality=12&learn=on)
 
-*Deze video loopt door het proces om de de wolkendienst van Acrobat Sign te vestigen en veelvoudige handtekeningsgebieden toe te voegen aan een AEM Aangepaste Vorm.*
+*Deze video loopt door het proces om de de wolkendienst van Acrobat Sign te vestigen en veelvoudige handtekeningsgebieden aan een Aangepaste Vorm van AEM toe te voegen.*
 
 >[!NOTE]
 >
->Deze functie is alleen beschikbaar vanaf AEM 6.3.
+>Deze functie is alleen beschikbaar bij AEM 6.3 en hoger.
 
-Gelieve te bezoeken de [&#x200B; steekproeven van AEM Forms &#x200B;](https://forms.enablementadobe.com/content/samples/samples.html?query=0#formsandsign) pagina voor een verbinding aan een levende demo van dit vermogen.
+Gelieve te bezoeken de [ steekproeven van AEM Forms ](https://forms.enablementadobe.com/content/samples/samples.html?query=0#formsandsign) pagina voor een verbinding aan een levende demo van dit vermogen.
