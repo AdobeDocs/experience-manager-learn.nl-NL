@@ -56,14 +56,14 @@ Hieronder is een vertegenwoordiging op hoog niveau van de __ontwikkeling, plaats
 
 Tijdens de ontwikkelingsfase worden front-end wijzigingen zoals opmaak en herbranding uitgevoerd door de CSS- en JS-bestanden uit de map `ui.frontend/src/main/webpack` bij te werken. Dan tijdens bouwstijl-tijd, [&#x200B; webpack &#x200B;](https://webpack.js.org/) module-bundelaar en maven stop zet deze dossiers in geoptimaliseerde AEM clientlibs onder `ui.apps` module.
 
-Voorste-eindveranderingen worden opgesteld aan het milieu van AEM as a Cloud Service wanneer het runnen van de [__volledig-stapel__ pijpleiding in Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html).
+Voorste-eindveranderingen worden opgesteld aan het milieu van AEM as a Cloud Service wanneer het runnen van de [__volledig-stapel__ pijpleiding in Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=nl-NL).
 
 De front-end bronnen worden aan de webbrowsers geleverd via URI-paden die beginnen met `/etc.clientlibs/` en worden doorgaans in cache geplaatst op AEM Dispatcher en CDN.
 
 
 >[!NOTE]
 >
-> Op dezelfde manier in de __Reis van de Aanmaak van de Plaats van AEM Snelle__, [&#x200B; front-end veranderingen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/customize-theme.html) worden opgesteld aan het milieu van AEM as a Cloud Service door de __voor-Eind__ pijpleiding in werking te stellen, zie [&#x200B; Opstelling Uw Pijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup.html)
+> Op dezelfde manier in de __Reis van de Aanmaak van de Plaats van AEM Snelle__, [&#x200B; front-end veranderingen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/customize-theme.html?lang=nl-NL) worden opgesteld aan het milieu van AEM as a Cloud Service door de __voor-Eind__ pijpleiding in werking te stellen, zie [&#x200B; Opstelling Uw Pijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup.html?lang=nl-NL)
 
 ### Webpack van het overzicht vormt in het project van Plaatsen WKND {#development-frontend-webpack-clientlib}
 
@@ -134,7 +134,7 @@ De front-end bronnen worden aan de webbrowsers geleverd via URI-paden die beginn
 
 ### Implementatie naar AEM as a Cloud Service {#deployment-frontend-aemaacs}
 
-De [__volledig-stapel__ pijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#full-stack-pipeline) stelt deze veranderingen in een milieu van AEM as a Cloud Service op.
+De [__volledig-stapel__ pijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=nl-NL&#full-stack-pipeline) stelt deze veranderingen in een milieu van AEM as a Cloud Service op.
 
 
 ### Levering vanuit AEM as a Cloud Service {#delivery-frontend-aemaacs}

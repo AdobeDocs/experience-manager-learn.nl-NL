@@ -22,7 +22,7 @@ Leer hoe te om de Servers van de Context van het ModelProtocol van de AEM _(MCP)
 
 ## Lijst met AEM MCP-servers
 
-Alle AEM MCP-servers zijn beschikbaar onder `https://mcp.adobeaemcloud.com/adobe/mcp/` . Zie [&#x200B; Gebruikend MCP met AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) voor meer informatie.
+Alle AEM MCP-servers zijn beschikbaar onder `https://mcp.adobeaemcloud.com/adobe/mcp/` . Zie [&#x200B; Gebruikend MCP met AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) voor meer informatie.
 
 - **Inhoud** (`/content`) — Volledige toegang tot creeer, lees, update, en schrap pagina&#39;s, fragmenten, en activa.
 - **Inhoud (read-only)** (`/content-readonly`) — read-only om pagina&#39;s, fragmenten, en activa (geen veranderingen) te maken en te krijgen.
@@ -71,7 +71,7 @@ Eenvoudig gezet, **Gastheer** is uw winde of op Chat-Gebaseerde toepassing, **de
 ## Instellen
 
 AEM MCP-servers zijn ontworpen voor gebruik met een gedefinieerde set MCP-compatibele toepassingen.
-Om de Servers van AEM MCP in uw aangewezen winde of op Chat-Gebaseerde toepassing te plaatsen, zie [&#x200B; Gesteunde Toepassingen MCP &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service#supported-mcp-applications) voor meer informatie.
+Om de Servers van AEM MCP in uw aangewezen winde of op Chat-Gebaseerde toepassing te plaatsen, zie [&#x200B; Gesteunde Toepassingen MCP &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service#supported-mcp-applications) voor meer informatie.
 
 ## Gevallen gebruiken
 
