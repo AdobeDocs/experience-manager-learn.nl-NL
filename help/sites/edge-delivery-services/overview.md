@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Leer hoe u websites snel kunt maken met Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453455/?captions=dut&learn=on)
 
 Herzie de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/overview) voor volledige details van Edge Delivery Services en zijn mogelijkheden.
 
@@ -109,7 +109,7 @@ CARDS
             <a href="./developing/prerequisites.md" title="Vereisten"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425709/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3434590/?captions=dut&format=jpeg"
                 alt="Vereisten">
             </a>
           </figure>
@@ -141,7 +141,7 @@ CARDS
             <a href="./developing/aem-boilerplate.md" title="Boilerplate-sjabloon gebruiken"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="Instellen
+                src="https://video.tv.adobe.com/v/3434617/?captions=dut&format=jpeg" alt="Instellen
                 Boilerplate">
             </a>
           </figure>
@@ -173,7 +173,7 @@ CARDS
             <a href="./developing/content-repository.md" title="Google Drive koppelen"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425711/?format=jpeg" alt="Google Drive koppelen">
+                src="https://video.tv.adobe.com/v/3434726/?captions=dut&format=jpeg" alt="Google Drive koppelen">
             </a>
           </figure>
         </div>
@@ -203,7 +203,7 @@ CARDS
           <figure class="image is-16by9">
             <a href="./developing/content-repository.md" title="Sharepoint koppelen" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425712/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3446034/?captions=dut&format=jpeg"
                 alt="Sharepoint koppelen">
             </a>
           </figure>
@@ -235,7 +235,7 @@ CARDS
             <a href="./developing/preview-and-publish.md" title="Inhoud voorvertonen en publiceren"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Inhoud voorvertonen en publiceren">
+                src="https://video.tv.adobe.com/v/3434715/?captions=dut&format=jpeg" alt="Inhoud voorvertonen en publiceren">
             </a>
           </figure>
         </div>
@@ -266,7 +266,7 @@ CARDS
             <a href="./developing/sidekick.md" title="De Sidekick gebruiken"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425715/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441292/?captions=dut&format=jpeg"
                 alt="De Sidekick gebruiken">
             </a>
           </figure>
@@ -298,7 +298,7 @@ CARDS
             <a href="./developing/document-structure.md" title="Documentstructuur"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425716/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3445195/?captions=dut&format=jpeg"
                 alt="Documentstructuur">
             </a>
           </figure>
@@ -330,7 +330,7 @@ CARDS
             <a href="./developing/local-development.md" title="Lokale ontwikkeling"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425717/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3434737/?captions=dut&format=jpeg"
                 alt="Lokale ontwikkeling">
             </a>
           </figure>
@@ -362,7 +362,7 @@ CARDS
             <a href="./developing/git.md" title="Integreren met Git"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425718/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441832/?captions=dut&format=jpeg"
                 alt="Integreren met Git">
             </a>
           </figure>
@@ -399,7 +399,7 @@ CARDS
             <a href="./how-to/rss.md" title="RSS-feeds maken"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425725/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438005/?captions=dut&format=jpeg"
                 alt="RSS-feeds maken">
             </a>
           </figure>
@@ -431,7 +431,7 @@ CARDS
             <a href="./how-to/social-media-sharing.md" title="Delen van sociale media"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425974/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3439443/?captions=dut&format=jpeg"
                 alt="Delen van sociale media">
             </a>
           </figure>
@@ -463,7 +463,7 @@ CARDS
             <a href="./how-to/delete-page.md" title="Pagina&apos;s verwijderen"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425973/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438096/?captions=dut&format=jpeg"
                 alt="Pagina&apos;s verwijderen">
             </a>
           </figure>
