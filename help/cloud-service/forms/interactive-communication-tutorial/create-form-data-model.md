@@ -25,7 +25,7 @@ Er is een modelAPI-server geïmplementeerd die de besteldienst simuleert voor on
 
 Het dossier van de wagger dat in verwezenlijking van het model van vormgegevens wordt gebruikt kan [&#x200B; van hier worden gedownload &#x200B;](assets/UsersAndOrders.json)
 
->[!VIDEO](https://video.tv.adobe.com/v/3480005/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480023/?captions=dut&learn=on&enablevpops)
 
 ## Volgende stappen
 
