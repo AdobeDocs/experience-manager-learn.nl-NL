@@ -76,5 +76,5 @@ InDesign-sjabloonbestand en ondersteunende afbeeldingen
 
 Download [&#x200B; het malplaatjedossier van InDesign en het steunen van Beelden &#x200B;](assets/asset-templates-tutorial-video--supporting-files-1.zip)
 
-* [&#x200B; InDesign CC proefdownload &#x200B;](https://creative.adobe.com/products/download/indesign)
-* De proef van InDesign Server kan van [&#x200B; de plaats van de Prerelease van Adobe &#x200B;](https://www.adobeprerelease.com/) worden gedownload of [&#x200B; de klanten van de Onderneming van CC kunnen hun Uitvoerder van de Rekening contacteren om een de proefvergunning van InDesign Server te verzoeken &#x200B;](https://www.adobe.com/products/indesignserver/faq.html)
+* [&#x200B; InDesign CC proefdownload &#x200B;](https://creative.adobe.com/nl/products/download/indesign)
+* De proef van InDesign Server kan van [&#x200B; de plaats van de Prerelease van Adobe &#x200B;](https://www.adobeprerelease.com/) worden gedownload of [&#x200B; de klanten van de Onderneming van CC kunnen hun Uitvoerder van de Rekening contacteren om een de proefvergunning van InDesign Server te verzoeken &#x200B;](https://www.adobe.com/nl/products/indesignserver/faq.html)

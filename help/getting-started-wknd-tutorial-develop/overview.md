@@ -46,7 +46,7 @@ Er zijn twee basisbenaderingen voor het starten van een AEM Sites-project.
 
 ## Adobe XD UI-kit
 
-Om dit leerprogramma dichter aan een werkelijk-wereldscenario te maken Adobe getalenteerde ontwerpers van UX creeerde de modellen voor de plaats gebruikend [&#x200B; Adobe XD &#x200B;](https://www.adobe.com/products/xd.html). In de loop van de zelfstudie worden verschillende onderdelen van de ontwerpen geïmplementeerd in een volledig ontwikkelbare AEM-site. Speciale dank aan **Lorenzo Buosi** en **Kilian Amendola** die het mooie ontwerp voor de plaats WKND creeerde.
+Om dit leerprogramma dichter aan een werkelijk-wereldscenario te maken Adobe getalenteerde ontwerpers van UX creeerde de modellen voor de plaats gebruikend [&#x200B; Adobe XD &#x200B;](https://www.adobe.com/nl/products/xd.html). In de loop van de zelfstudie worden verschillende onderdelen van de ontwerpen geïmplementeerd in een volledig ontwikkelbare AEM-site. Speciale dank aan **Lorenzo Buosi** en **Kilian Amendola** die het mooie ontwerp voor de plaats WKND creeerde.
 
 Download de XD UI-kits:
 

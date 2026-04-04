@@ -21,13 +21,13 @@ ht-degree: 0%
 
 # UI-planning met Adobe XD {#ui-planning-adobe-xd}
 
-In de meeste gevallen begint de planning voor een nieuwe website met modellen en statische ontwerpen. [&#x200B; Adobe XD &#x200B;](https://www.adobe.com/products/xd.html) is een best-in-klasse ontwerphulpmiddel om gebruikerservaring op te bouwen. Adobe raadt u aan de implementatie van Sites te plannen met behulp van UI-modellen die Adobe XD of een ander hulpprogramma gebruiken.
+In de meeste gevallen begint de planning voor een nieuwe website met modellen en statische ontwerpen. [&#x200B; Adobe XD &#x200B;](https://www.adobe.com/nl/products/xd.html) is een best-in-klasse ontwerphulpmiddel om gebruikerservaring op te bouwen. Adobe raadt u aan de implementatie van Sites te plannen met behulp van UI-modellen die Adobe XD of een ander hulpprogramma gebruiken.
 
 ## Vereisten {#prerequisites}
 
 Dit is een meerdelige zelfstudie en er wordt van uitgegaan dat de in het vorige hoofdstuk beschreven stappen zijn voltooid. Dit hoofdstuk is gewoon een &#39;watch &amp; learn&#39;-gedeelte. Er is geen actie vereist om verder te kunnen gaan met volgende hoofdstukken.
 
-Om samen met de video&#39;s te volgen zult u [&#x200B; geïnstalleerde Adobe XD &#x200B;](https://www.adobe.com/products/xd/pricing/free-trial.html) nodig hebben, is de a [&#x200B; vrije proef beschikbaar &#x200B;](https://www.adobe.com/products/xd/pricing/free-trial.html).
+Om samen met de video&#39;s te volgen zult u [&#x200B; geïnstalleerde Adobe XD &#x200B;](https://www.adobe.com/nl/products/xd/pricing/free-trial.html) nodig hebben, is de a [&#x200B; vrije proef beschikbaar &#x200B;](https://www.adobe.com/nl/products/xd/pricing/free-trial.html).
 
 ## Doelstelling
 
@@ -62,7 +62,7 @@ Stappen op hoog niveau:
 
 Gefeliciteerd, u hebt geleerd hoe de Uitrustingen van UI van Adobe XD kunnen worden gebruikt om een implementatie van AEM Sites in kaart te brengen en te plannen.
 
-De extra [&#x200B; Uitrustingen UI zijn beschikbaar &#x200B;](https://www.adobe.com/products/xd/features/ui-kits.html) om te inspecteren en te downloaden.
+De extra [&#x200B; Uitrustingen UI zijn beschikbaar &#x200B;](https://www.adobe.com/nl/products/xd/features/ui-kits.html) om te inspecteren en te downloaden.
 
 ### Volgende stappen {#next-steps}
 

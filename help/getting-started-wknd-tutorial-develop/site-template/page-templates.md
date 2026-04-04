@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Paginasjablonen {#page-templates}
 
-In dit hoofdstuk onderzoeken we de relatie tussen een paginasjabloon en een pagina. Wij zullen een niet-gestileerde malplaatje van het Artikel van het Tijdschrift bouwen dat op sommige modellen van [&#x200B; wordt gebaseerd AdobeXD &#x200B;](https://www.adobe.com/products/xd.html). In het proces om het malplaatje uit te bouwen, zijn de Componenten van de Kern en de geavanceerde beleidsconfiguraties behandeld.
+In dit hoofdstuk onderzoeken we de relatie tussen een paginasjabloon en een pagina. Wij zullen een niet-gestileerde malplaatje van het Artikel van het Tijdschrift bouwen dat op sommige modellen van [&#x200B; wordt gebaseerd AdobeXD &#x200B;](https://www.adobe.com/nl/products/xd.html). In het proces om het malplaatje uit te bouwen, zijn de Componenten van de Kern en de geavanceerde beleidsconfiguraties behandeld.
 
 ## Vereisten {#prerequisites}
 
