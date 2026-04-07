@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Cloud Manager MCP de Server laat de Ontwikkelaars van AEM pijpleidingen in werking stellen, zuivert mislukkingen, en heeft toegang tot de hulpmiddelen van Cloud Manager direct in hun winde - geen contextomschakeling.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480340/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480348/?captions=dut&learn=on&enablevpops)
