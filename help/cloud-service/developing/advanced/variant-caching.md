@@ -51,7 +51,7 @@ Op een hoog niveau, impliceert de benadering de code die van uw project een bezo
 
 ## Gebruik
 
-1. Om de eigenschap aan te tonen, zullen wij [&#x200B; implementatie van WKND &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) als voorbeeld gebruiken.
+1. Om de eigenschap aan te tonen, zullen wij [&#x200B; implementatie van WKND &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) als voorbeeld gebruiken.
 
 1. Voer a [&#x200B; SlingServletFilter &#x200B;](https://sling.apache.org/documentation/the-sling-engine/filters.html) in AEM uit om `x-aem-variant` koekje op de reactie van HTTP, met een variantwaarde te plaatsen.
 
