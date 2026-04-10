@@ -27,7 +27,7 @@ Op een hoog niveau, impliceert de benadering de code die van uw project een bezo
 
 ## Overzicht van oplossing
 
-+ Identificeer de variantsleutel en het aantal waarden het kan hebben. In ons voorbeeld variëren we per staat in de VS, dus het maximale aantal is 50. Dit is klein genoeg om geen problemen met de variantgrenzen bij CDN te veroorzaken. [ sectie van de de variantbeperkingen van het Overzicht {](#variant-limitations).
++ Identificeer de variantsleutel en het aantal waarden het kan hebben. In ons voorbeeld variëren we per staat in de VS, dus het maximale aantal is 50. Dit is klein genoeg om geen problemen met de variantgrenzen bij CDN te veroorzaken. [&#x200B; sectie van de de variantbeperkingen van het Overzicht &lbrace;](#variant-limitations).
 
 + De code van het project moet het koekje __&quot;x-aem-variant&quot;__ aan de aangewezen staat van de bezoeker (b.v. `Set-Cookie: x-aem-variant=NY` ) op de initiële HTTP-aanvraag die overeenkomt met de HTTP-respons. AEM en de door Adobe beheerde CDN bepalen of instellen niet automatisch `x-aem-variant`. Als deze header/cookie aanwezig is, komt dat doordat de toepassing deze heeft ingesteld. Deze header kan worden ingesteld via een aangepast AEM Servlet- of AEM Servlet-filter (zoals in het onderstaande codevoorbeeld wordt getoond).
 
@@ -43,7 +43,7 @@ Op een hoog niveau, impliceert de benadering de code die van uw project een bezo
 
 ## HTTP-aanvraagstroom
 
-![ de Stroom van het Verzoek van het Geheime voorgeheugen van de Variant ](./assets/variant-cache-request-flow.png)
+![&#x200B; de Stroom van het Verzoek van het Geheime voorgeheugen van de Variant &#x200B;](./assets/variant-cache-request-flow.png)
 
 >[!NOTE]
 >
@@ -51,9 +51,9 @@ Op een hoog niveau, impliceert de benadering de code die van uw project een bezo
 
 ## Gebruik
 
-1. Om de eigenschap aan te tonen, zullen wij [ implementatie van WKND ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) als voorbeeld gebruiken.
+1. Om de eigenschap aan te tonen, zullen wij [&#x200B; implementatie van WKND &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) als voorbeeld gebruiken.
 
-1. Voer a [ SlingServletFilter ](https://sling.apache.org/documentation/the-sling-engine/filters.html) in AEM uit om `x-aem-variant` koekje op de reactie van HTTP, met een variantwaarde te plaatsen.
+1. Voer a [&#x200B; SlingServletFilter &#x200B;](https://sling.apache.org/documentation/the-sling-engine/filters.html) in AEM uit om `x-aem-variant` koekje op de reactie van HTTP, met een variantwaarde te plaatsen.
 
 1. AEM CDN transformeert `x-aem-variant` cookie automatisch naar een HTTP-header met dezelfde naam.
 
@@ -136,7 +136,7 @@ Op een hoog niveau, impliceert de benadering de code die van uw project een bezo
 
 ## Variantbeperkingen
 
-+ CDN voor AEM kan maximaal 200 variaties beheren. Dat betekent dat de header van `x-aem-variant` maximaal 200 unieke waarden kan hebben. Voor meer informatie, herzie de [ CDN configuratiegrenzen ](https://docs.fastly.com/en/guides/resource-limits).
++ CDN voor AEM kan maximaal 200 variaties beheren. Dat betekent dat de header van `x-aem-variant` maximaal 200 unieke waarden kan hebben. Voor meer informatie, herzie de [&#x200B; CDN configuratiegrenzen &#x200B;](https://docs.fastly.com/en/guides/resource-limits).
 
 + Zorg ervoor dat de gekozen variantsleutel dit aantal nooit overschrijdt.  Een gebruikers-id is bijvoorbeeld geen goede sleutel omdat deze voor de meeste websites gemakkelijk 200 waarden overschrijdt, terwijl de staten/gebieden in een land beter geschikt zijn als er minder dan 200 staten in dat land zijn.
 
