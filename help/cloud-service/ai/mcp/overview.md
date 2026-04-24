@@ -9,9 +9,9 @@ duration: 0
 last-substantial-update: 2026-03-04T00:00:00Z
 jira: KT-20473
 exl-id: 7f2e4e37-6440-423e-9ba9-9228fe03600b
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: 794a0109e4b28b452c462c5cab37e2d094ab4897
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,10 @@ Leer hoe te om de Servers van de Context van het ModelProtocol van de AEM _(MCP)
 
 ## Lijst met AEM MCP-servers
 
-Alle AEM MCP-servers zijn beschikbaar onder `https://mcp.adobeaemcloud.com/adobe/mcp/` . Zie [&#x200B; Gebruikend MCP met AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) voor meer informatie.
+Alle AEM MCP-servers zijn beschikbaar onder `https://mcp.adobeaemcloud.com/adobe/mcp/` . Zie [ Gebruikend MCP met AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) voor meer informatie.
 
-- **Inhoud** (`/content`) — Volledige toegang tot creeer, lees, update, en schrap pagina&#39;s, fragmenten, en activa.
-- **Inhoud (read-only)** (`/content-readonly`) — read-only om pagina&#39;s, fragmenten, en activa (geen veranderingen) te maken en te krijgen.
+- **Inhoud** (`/content`) — De verrichtingen van de inhoud met inbegrip van creëren, lezen, bijwerken, en schrappen (CRUD) voor pagina&#39;s en inhoudsfragmenten, plus activa het invoeren.
+- **Inhoud (read-only)** (`/content-readonly`) — Read-only inhoudsverrichtingen (krijgen, Lijst/Onderzoek) voor pagina&#39;s en inhoudsfragmenten.
 - **Cloud Manager** (`/cloudmanager`) - om de programma&#39;s, milieu&#39;s, bewaarplaatsen en pijpleidingen van Adobe Cloud Manager te beheren.
 
 >[!TIP]
@@ -43,7 +43,7 @@ Hieronder wordt beschreven hoe deze twee gebruikspatronen worden vergeleken:
 
 | Verhouding | Menselijk-centrisch | Agentic |
 | ------ | ------------- | ------- |
-| **die acties** aandrijft | Jij. <br> De AI stelt gereedschappen voor of voert deze voor u uit in de IDE- of chattoepassing. | De AI. <br> Hierbij wordt bepaald welke gereedschappen moeten worden gebruikt en blijven zo weinig mogelijk instructies aan de slag. |
+| **die acties** aandrijft | Jij. <br> AI stelt of stelt hulpmiddelen voor u in werking in winde of op Chat-Gebaseerde toepassing. | De AI. <br> Het kiest welke hulpmiddelen te gebruiken en blijft met minimale begeleiding gaan. |
 | **het gezag van het Besluit** | Je blijft de controle houden. U keurt elke stap goed of activeert deze. | De AI heeft meer vrijheid. Voor de acties met een hoog effect kunnen voorzorgsmaatregelen of goedkeuringen nodig zijn. |
 | **Typisch gebruikspatroon** | **per-ontwikkelaar**, gebruikt u het van uw eigen winde of op Chat-Gebaseerde toepassing, één ontwikkelaar per zitting, goed voor dagelijks dev werk. | **Gedeeld** via een agentische toepassing, als gedeelde diensten en gateways voor vele gebruikers of agenten. |
 | **het meest geschikt voor** | Inhoud reviseren, begeleidende updates uitvoeren, taken verkennen of herhalen terwijl u in de lus blijft. | Agentische workflows, batchtaken, pijpleidingen en doelen waar het systeem met minimale tussenkomst moet werken. |
@@ -58,7 +58,7 @@ Voer runtime ontdekking via `tools/list` uit, handvat hulpmiddel-lijst veranderi
 
 ## MCP-entiteiten en hun toewijzing
 
-MCP wordt gebouwd rond drie entiteiten, **gastheer**, **cliënt**, en **server**. De [&#x200B; specificatie MCP &#x200B;](https://modelcontextprotocol.io/docs/getting-started/intro) bepaalt formeel hen. In de onderstaande tabel worden de afzonderlijke tabellen echter in duidelijke termen uitgelegd en in kaart gebracht bij gebruik van AEM MCP-servers.
+MCP wordt gebouwd rond drie entiteiten, **gastheer**, **cliënt**, en **server**. De [ specificatie MCP ](https://modelcontextprotocol.io/docs/getting-started/intro) bepaalt formeel hen. In de onderstaande tabel worden de afzonderlijke tabellen echter in duidelijke termen uitgelegd en in kaart gebracht bij gebruik van AEM MCP-servers.
 
 | Component | Standaarddefinitie | Bij gebruik van AEM MCP-servers |
 | --------- | ------------------- | ---------------- |
@@ -71,7 +71,7 @@ Eenvoudig gezet, **Gastheer** is uw winde of op Chat-Gebaseerde toepassing, **de
 ## Instellen
 
 AEM MCP-servers zijn ontworpen voor gebruik met een gedefinieerde set MCP-compatibele toepassingen.
-Om de Servers van AEM MCP in uw aangewezen winde of op Chat-Gebaseerde toepassing te plaatsen, zie [&#x200B; Gesteunde Toepassingen MCP &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service#supported-mcp-applications) voor meer informatie.
+Om de Servers van AEM MCP in uw aangewezen winde of op Chat-Gebaseerde toepassing te plaatsen, zie [ Gesteunde Toepassingen MCP ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service#supported-mcp-applications) voor meer informatie.
 
 ## Gevallen gebruiken
 
