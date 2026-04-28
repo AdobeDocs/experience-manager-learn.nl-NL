@@ -1,20 +1,20 @@
 ---
-user-guide-title: Tutorials voor Adobe Experience Manager as a Cloud Service
-user-guide-description: Een verzameling tutorials voor Adobe Experience Manager as a Cloud Service.
-breadcrumb-title: Tutorials voor AEM as a Cloud Service
+user-guide-title: Adobe Experience Manager as a Cloud Service-zelfstudies
+user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manager as a Cloud Service.
+breadcrumb-title: AEM as a Cloud Service-zelfstudies
 solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 2eb26576a0308d8b74c2d1ce7db61c148936d076
+source-git-commit: e3ef450cfe9005ba940ff1897c216681654341b3
 workflow-type: tm+mt
-source-wordcount: '1505'
-ht-degree: 6%
+source-wordcount: '1642'
+ht-degree: 2%
 
 ---
 
 
-# Tutorials voor Adobe Experience Manager as a Cloud Service {#cloud-service}
+# Adobe Experience Manager as a Cloud Service-zelfstudies {#cloud-service}
 
 + [Overzicht](./overview.md)
 + AEM-proefversies {#aem-trials}
@@ -44,8 +44,14 @@ ht-degree: 6%
       + [Overzicht](./ai/mcp/overview.md)
       + [Versnelt AEM-inhoudsbewerkingen met de MCP-server](./ai/mcp/accelerate-content-operations-with-aem-mcp-server.md)
       + [Cloud Manager MCP Server](./ai/mcp/cloud-manager.md)
-+ Experience Cloud-integraties{#integrations}
-   + [Integrations](./integrations/experience-cloud.md)
+   + Ontwikkeling met behulp van AI {#ai-assisted-development}
+      + [Overzicht](./ai/ai-assited-development/overview.md)
+      + Instellen{#setup}
+         + [Agent Skills](./ai/ai-assited-development/setup/agent-skills.md)
+      + Gevallen gebruiken{#use-cases}
+         + [Component Development](./ai/ai-assited-development/use-cases/component-development.md)
++ Experience Cloud-integratie{#integrations}
+   + [Integraties](./integrations/experience-cloud.md)
    + [AEM Headless en Target](./integrations/target.md)
 + Onderliggende technologie {#underlying-technology}
    + [AEM-architectuur](./underlying-technology/introduction-architecture.md)
@@ -55,7 +61,7 @@ ht-degree: 6%
    + [Auteur- en publicatieservices](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Edge Delivery Services {#edge-delivery-services}
-   + [&#x200B; AEM Assets Sidekick plugin](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html?lang=nl-NL){target=_blank}
+   + [AEM Assets Sidekick-insteekmodule](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
 + Cloud Manager {#cloud-manager}
    + [Programma&#39;s](./cloud-manager/programs.md)
    + [Omgevingen](./cloud-manager/environments.md)
@@ -63,8 +69,8 @@ ht-degree: 6%
    + [Productiepijpleiding CI/CD](./cloud-manager/cicd-production-pipeline.md)
    + [Niet-productiepijpleiding CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Activiteit](./cloud-manager/activity.md)
-   + [&#x200B; Namen van het Domein van 0 Douane](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names){target=_blank}
-   + [&#x200B; Inhoud herstelt &#x200B;](./cloud-manager/content-restore.md)
+   + [Aangepaste domeinnamen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names){target=_blank}
+   + [ Inhoud herstelt ](./cloud-manager/content-restore.md)
    + Dev OPS{#devops}
       + [Code implementeren](./cloud-manager/devops/deploy-code.md)
       + [Projecten samenvoegen](./cloud-manager/devops/merge-projects.md)
@@ -123,7 +129,7 @@ ht-degree: 6%
       + [Basisprincipes van OSGi-configuraties](./developing/osgi-services/configurations.md)
       + [OSGi Configurations die OCD gebruiken](./developing/osgi-services/configurations-ocd.md)
    + Geavanceerd{#advanced}
-      + [&#x200B; Caching de Varianten van de Pagina &#x200B;](./developing/advanced/variant-caching.md)
+      + [ Caching de Varianten van de Pagina ](./developing/advanced/variant-caching.md)
       + [CSRF-beveiliging](./developing/advanced/csrf-protection.md)
       + [Aangepaste naamruimten](./developing/advanced/custom-namespaces.md)
       + [Sling-modellen parametereren op basis van HTML](./developing/advanced/sling-model-parameters.md)
@@ -142,7 +148,7 @@ ht-degree: 6%
          + [Overzicht](./developing/universal-editor/react-app/overview.md)
          + [Instelling voor lokale ontwikkeling](./developing/universal-editor/react-app/local-development-setup.md)
          + [Instrument React App](./developing/universal-editor/react-app/instrument-to-edit-content.md)
-   + [&#x200B; AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
+   + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
 + Foutopsporing in AEM{#debugging}
    + Fouten opsporen in de AEM SDK{#debugging-aem-sdk}
       + [Overzicht](./debugging/aem-sdk-local-quickstart/overview.md)
@@ -184,10 +190,10 @@ ht-degree: 6%
    + [Aangepaste domeinnaam](./content-delivery/custom-domain-names.md)
    + [Aangepaste domeinnaam met door Adobe beheerde CDN](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)
    + [Aangepaste domeinnaam met CDN van klant](./content-delivery/custom-domain-names-with-customer-managed-cdn.md)
-   + [&#x200B; Caching](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
-   + [&#x200B; Adobe CDN - voorbij caching &#x200B;](./content-delivery/adobe-cdn-beyond-caching.md)
+   + [Caching](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
+   + [ Adobe CDN - voorbij caching ](./content-delivery/adobe-cdn-beyond-caching.md)
    + [Aangepaste foutpagina&#39;s](./content-delivery/custom-error-pages.md)
-   + [&#x200B; opnieuw richt URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html?lang=nl-NL){target=_blank}
+   + [URL-omleidingen](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
 + Caching{#caching}
    + [Overzicht](./caching/overview.md)
    + [AEM-publicatieservice](./caching/publish.md)
@@ -269,40 +275,40 @@ ht-degree: 6%
       + [Modernizer van opslagplaats voor code](./migration/cloud-acceleration-manager/code-repository-modernizer.md)
       + [Dispatcher Converter](./migration/cloud-acceleration-manager/dispatcher-converter.md)
       + [Indexconversie](./migration/cloud-acceleration-manager/index-converter.md)
-      + [De tool Asset Workflow Migration](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
+      + [Hulpprogramma voor migratie van workflows](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Navigeren door de Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
       + [De Cloud Acceleration Manager gebruiken](./migration/cloud-acceleration-manager/using.md)
-+ [Contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=nl-NL){target=_blank}
++ [Inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
 + Forms{#forms}
    + Ontwikkelen voor Forms as a Cloud Service{#developing-for-cloud-service}
       + [1 - Aan de slag](./forms/developing-for-cloud-service/getting-started.md)
       + [2 - Installeer IntelliJ](./forms/developing-for-cloud-service/intellij-set-up.md)
       + [3 - Instellingsopening](./forms/developing-for-cloud-service/setup-git.md)
-      + [4 - Synchroniseer IntelliJ met AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
-      + [5 - Een formulier maken](./forms/developing-for-cloud-service/deploy-your-first-form.md)
-      + [6 - Aangepaste verzendhandler](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
-      + [7 - servlet registreren met behulp van brontype](./forms/developing-for-cloud-service/registering-servlet-using-resourcetype.md)
-      + [8 - Forms Portal-componenten inschakelen](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [9 - Inclusief cloudservices en FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
-      + [10 - cloudconfiguratie met behoud van context](./forms/developing-for-cloud-service/context-aware-fdm.md)
+      + [4 - Sync IntelliJ with AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
+      + [5 - Build a form](./forms/developing-for-cloud-service/deploy-your-first-form.md)
+      + [6 - Custom Submit Handler](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
+      + [7 - Registering servlet using resource type](./forms/developing-for-cloud-service/registering-servlet-using-resourcetype.md)
+      + [8 - Enable Forms Portal Components](./forms/developing-for-cloud-service/forms-portal-components.md)
+      + [9 - Include Cloud Services and FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [10 - Context aware cloud configuration](./forms/developing-for-cloud-service/context-aware-fdm.md)
       + [11 - Push to Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
-      + [12 - Distribueren naar ontwikkelomgeving](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
-      + [13 - Gemaakt archetype bijwerken](./forms/developing-for-cloud-service/updating-project-archetype.md)
-   + Adaptief formulier maken{#create-first-af}
+      + [12 - Deploy to development environment](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
+      + [13 - Updating maven archetype](./forms/developing-for-cloud-service/updating-project-archetype.md)
+   + Create Adaptive Form{#create-first-af}
       + [Inleiding](./forms/create-first-af/introduction.md)
-      + [Thema maken](./forms/create-first-af/create-theme.md)
+      + [Create Theme](./forms/create-first-af/create-theme.md)
       + [Sjabloon maken](./forms/create-first-af/create-template.md)
-      + [Fragment maken](./forms/create-first-af/create-fragments.md)
+      + [Create Fragment](./forms/create-first-af/create-fragments.md)
       + [Formulier maken](./forms/create-first-af/create-af.md)
-      + [Hoofddeelvenster configureren](./forms/create-first-af/configure-root-panel.md)
-      + [Deelvenster Personen configureren](./forms/create-first-af/configure-people-panel.md)
-      + [Deelvenster Inkomsten configureren](./forms/create-first-af/configure-income-panel.md)
-      + [Deelvenster Elementen configureren](./forms/create-first-af/configure-assets-panel.md)
-      + [Deelvenster Start configureren](./forms/create-first-af/configure-start-panel.md)
-      + [Werkbalk Toevoegen en configureren](./forms/create-first-af/add-configure-toolbar.md)
-   + Aangepaste verzendservice met headless-formulier{#custom-submit-headless-forms}
+      + [Configure root panel](./forms/create-first-af/configure-root-panel.md)
+      + [Configure people panel](./forms/create-first-af/configure-people-panel.md)
+      + [Configure income panel](./forms/create-first-af/configure-income-panel.md)
+      + [Configure assets panel](./forms/create-first-af/configure-assets-panel.md)
+      + [Configure start panel](./forms/create-first-af/configure-start-panel.md)
+      + [Add and Configure toolbar](./forms/create-first-af/add-configure-toolbar.md)
+   + Custom submit service with headless form{#custom-submit-headless-forms}
       + [1 - Inleiding](./forms/custom-submit-headless-forms/introduction.md)
-      + [2 - Een aangepaste verzendservice maken](./forms/custom-submit-headless-forms/custom-submit-service.md)
+      + [2 - Create custom submit service](./forms/custom-submit-headless-forms/custom-submit-service.md)
       + [3 - Het antwoord weergeven](./forms/custom-submit-headless-forms/handle-response-react-app.md)
    + Adresblokcomponent maken{#create-address-block}
       + [1 - Inleiding](./forms/create-address-block-component/introduction.md)
@@ -457,11 +463,11 @@ ht-degree: 6%
    + [Problemen oplossen](./asset-compute/troubleshooting.md)
 
 + Zelfstudies met meerdere stappen{#multi-step-tutorials}
-   + [&#x200B; de ontwikkeling van AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL){target=_blank}
-   + [&#x200B; GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL){target=_blank}
-   + [&#x200B; Redacteur van het KUUROORD (Reageren)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
-   + [&#x200B; AEM Sites en Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html?lang=nl-NL){target=_blank}
-   + [&#x200B; Op token-gebaseerde authentificatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=nl-NL){target=_blank}
+   + [AEM Sites-ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
+   + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html){target=_blank}
+   + [SPA-editor (reageren)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
+   + [AEM Sites en Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
+   + [Op token gebaseerde verificatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html){target=_blank}
 + Expertbronnen {#expert-resources}
    + AEM Champions {#aem-champions}
       + [Cloud Manager on boarding Playbook](./expert-resources/aem-champions/onboarding-playbook.md)
