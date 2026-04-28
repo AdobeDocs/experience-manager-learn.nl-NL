@@ -119,7 +119,7 @@ CARDS
 
 ## Aanvullende bronnen
 
-- [Lokale ontwikkeling met AI-tools](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
+- [Lokale ontwikkeling met AI-tools](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
 
 - [Adobe Skills voor AI-coderingsagents](https://github.com/adobe/skills)
 

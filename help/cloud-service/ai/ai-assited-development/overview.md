@@ -69,8 +69,8 @@ De servers MCP stellen hulpmiddelen en gegevens aan de coderende agent door het 
 
 Voor **lokale ontwikkeling** tegen AEM SDK en Dispatcher, installeer deze **lokale servers MCP** van het [&#x200B; portaal van de Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3):
 
-- **AEM Quickstart Lokale server MCP**: stelt levende runtime gegevens van een lokale instantie van AEM SDK bloot om het oplossen van problemen en ontwikkeling te steunen. Voor meer informatie, zie [&#x200B; de Server van QuickStart MCP van AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#aem-quickstart-mcp-server).
-- **de Lokale server MCP van Dispatcher**: Laat runtime bevestiging en inspectie van een lokale instantie van Dispatcher toe. Voor meer informatie, zie {de Server van 0} Dispatcher MCP [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#dispatcher-mcp-server).
+- **AEM Quickstart Lokale server MCP**: stelt levende runtime gegevens van een lokale instantie van AEM SDK bloot om het oplossen van problemen en ontwikkeling te steunen. Voor meer informatie, zie [&#x200B; de Server van QuickStart MCP van AEM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#aem-quickstart-mcp-server).
+- **de Lokale server MCP van Dispatcher**: Laat runtime bevestiging en inspectie van een lokale instantie van Dispatcher toe. Voor meer informatie, zie {de Server van 0} Dispatcher MCP [&#128279;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#dispatcher-mcp-server).
 
 Voor Adobe-ontvangen servers van AEM MCP (bijvoorbeeld, inhoud, read-only inhoud, en Cloud Manager), zie [&#x200B; Servers MCP in AEM &#x200B;](../mcp/overview.md).
 
@@ -157,7 +157,7 @@ CARDS
 
 ## Aanvullende bronnen
 
-- [Lokale ontwikkeling met AI-gereedschappen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
+- [Lokale ontwikkeling met AI-gereedschappen](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
 
 - [Adobe Skills voor AI-coderingsagents](https://github.com/adobe/skills)
 
