@@ -42,14 +42,14 @@ Voor deze zelfstudie is het volgende vereist:
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
 + Alleen macOS-voorwaarden
-   + [ Xcode ](https://developer.apple.com/xcode/) of [ Xcode bevel-lijn hulpmiddelen ](https://developer.apple.com/xcode/resources/)
+   + [&#x200B; Xcode &#x200B;](https://developer.apple.com/xcode/) of [&#x200B; Xcode bevel-lijn hulpmiddelen &#x200B;](https://developer.apple.com/xcode/resources/)
 + [aem-guides-wknd.all-2.1.0.zip of hoger](https://github.com/adobe/aem-guides-wknd/releases)
 + [aem-guides-wknd-graphic broncode (vertakking: feature/spa-editor)](https://github.com/adobe/aem-guides-wknd-graphql/tree/feature/spa-editor)
 
 
 Deze zelfstudie gaat uit van:
 
-+ [ Microsoft® Visual Studio Code ](https://visualstudio.microsoft.com/) als winde
++ [&#x200B; Microsoft® Visual Studio Code &#x200B;](https://visualstudio.microsoft.com/) als winde
 + Een werkmap van `~/Code/wknd-app`
 + AEM SDK uitvoeren als een auteurservice op `http://localhost:4502`
 + AEM SDK uitvoeren met lokale `admin` account met wachtwoord `admin`
@@ -69,7 +69,7 @@ Download en installeer de AEM SDK Quickstart op poort 4502, met standaard `admin
    # Provide `admin` as the admin user's password
    ```
 
-AEM SDK begint en lanceert automatisch op [ http://localhost :4502 ](http://localhost:4502). Meld u aan met de volgende referenties:
+AEM SDK begint en lanceert automatisch op [&#x200B; http://localhost :4502 &#x200B;](http://localhost:4502). Meld u aan met de volgende referenties:
 
 + Gebruikersnaam: `admin`
 + Wachtwoord: `admin`
@@ -79,7 +79,7 @@ AEM SDK begint en lanceert automatisch op [ http://localhost :4502 ](http://loca
 Dit leerprogramma heeft een gebiedsdeel op __WKND 2.1.0+__ project (voor inhoud).
 
 1. [Download de nieuwste versie van `aem-guides-wknd.all.x.x.x.zip`](https://github.com/adobe/aem-guides-wknd/releases)
-1. Login aan de Manager van het Pakket van AEM SDK op [ http://localhost :4502/crx/packmgr ](http://localhost:4502/crx/packmgr) met de `admin` geloofsbrieven.
+1. Login aan de Manager van het Pakket van AEM SDK op [&#x200B; http://localhost :4502/crx/packmgr &#x200B;](http://localhost:4502/crx/packmgr) met de `admin` geloofsbrieven.
 1. __uploadt__ `aem-guides-wknd.all.x.x.x.zip` gedownload in stap 1
 1. Tik __installeer__ knoop voor de ingang `aem-guides-wknd.all-x.x.x.zip`
 
@@ -89,7 +89,7 @@ Om een snelle opstelling uit te voeren, worden de pakketten van AEM hier verstre
 
 1. [Downloaden `wknd-app.all.x.x.x.zip`](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
 1. [Downloaden `wknd-app.ui.content.sample.x.x.x.zip`](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
-1. Login aan de Manager van het Pakket van AEM SDK op [ http://localhost :4502/crx/packmgr ](http://localhost:4502/crx/packmgr) met de `admin` geloofsbrieven.
+1. Login aan de Manager van het Pakket van AEM SDK op [&#x200B; http://localhost :4502/crx/packmgr &#x200B;](http://localhost:4502/crx/packmgr) met de `admin` geloofsbrieven.
 1. __uploadt__ `wknd-app.all.x.x.x.zip` gedownload in stap 1
 1. Tik __installeer__ knoop voor de ingang `wknd-app.all.x.x.x.zip`
 1. __uploadt__ `wknd-app.ui.content.sample.x.x.x.zip` gedownload in stap 2
@@ -125,13 +125,13 @@ $ npm install --legacy-peer-deps
 $ npm run start
 ```
 
-Verifieer dat het KUUROORD in [ http://localhost :3000 ](http://localhost:3000) loopt.
+Verifieer dat het KUUROORD in [&#x200B; http://localhost :3000 &#x200B;](http://localhost:3000) loopt.
 
 ## Inhoud auteur in AEM SPA Editor
 
 Alvorens de auteursinhoud uw browser vensters zo schikt dat de Auteur van AEM (`http://localhost:4502`) op de linkerzijde is, en verre KUUROORD (`http://localhost:3000`) loopt op het recht. Deze regeling staat u toe om te zien hoe de veranderingen in op AEM-Gebaseerde inhoud onmiddellijk in het KUUROORD worden weerspiegeld.
 
-1. Login aan [ de dienst van de Auteur van AEM SDK ](http://localhost:4502) als `admin`
+1. Login aan [&#x200B; de dienst van de Auteur van AEM SDK &#x200B;](http://localhost:4502) als `admin`
 1. Navigeer aan __Plaatsen > App WKND > gebruiken > en__
 1. Bewerk __WKND App Home Page__
 1. Schakelaar aan __geeft__ wijze uit
@@ -155,7 +155,7 @@ Alvorens de auteursinhoud uw browser vensters zo schikt dat de Auteur van AEM (`
 
 1. Schakelaar aan __wijze van de Voorproef__ in de Redacteur van het KUUROORD
 1. Tik op de __kaart van de Camp van Surf van Bali__ en navigeer aan zijn dynamische route
-1. Voeg toe, verander, of verwijder componenten uit de containercomponent die plaatsen boven de __rubriek van de 1} Reis__
+1. Voeg toe, verander, of verwijder componenten uit de containercomponent die plaatsen boven de __rubriek van de 1&rbrace; Reis__
 1. Vernieuw SPA die op `http://localhost:3000` loopt en zie dat de gereflecteerde veranderingen
 
 De nieuwe pagina&#39;s van AEM onder de __WKND startpagina van de App > Avontuur__ _moet_ een de paginanaam hebben van AEM die de naam van het de inhoudsfragment van het overeenkomstige avontuur aanpast. Dit is omdat de route van het KUUROORD aan de afbeelding van de Pagina van AEM van het laatste segment van de route, die de naam van het Fragment van de Inhoud is.
