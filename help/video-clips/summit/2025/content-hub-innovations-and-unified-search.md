@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Ontdek de nieuwe functies van Content Hub, waaronder op kenmerken gebaseerde toegangscontrole, branded landingspagina&#39;s en uniforme zoekacties op verschillende platforms.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459223/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461816/?captions=dut&learn=on&enablevpops)

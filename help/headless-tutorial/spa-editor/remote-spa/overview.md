@@ -27,7 +27,7 @@ Welkom bij de meerdelige zelfstudie voor ontwikkelaars die een bestaande React-b
 
 Dit leerprogramma bouwt op [&#x200B; WKND GraphQL App &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL) voort, een React app die de inhoud van het Fragment van de Inhoud van AEM over AEM GraphQL APIs verbruikt, nochtans verstrekt geen in-context authoring van de inhoud van het KUUROORD.
 
->[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444853?captions=dut&quality=12&learn=on)
 
 ## Over de zelfstudie
 

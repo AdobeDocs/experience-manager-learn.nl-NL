@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Leer hoe metagegevens workflows, zoekfuncties en inzichten sturen en hoe automatisering metagegevens kan verrijken om deze aan te passen aan de merkstandaarden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459218/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461971/?captions=dut&learn=on&enablevpops)
