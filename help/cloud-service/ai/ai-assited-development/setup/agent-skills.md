@@ -22,31 +22,31 @@ ht-degree: 0%
 
 Leer hoe u AEM Agent Skills instelt voor AI-ondersteunde ontwikkeling.
 
-Wanneer u een coderingsagent door een op AI-Gebaseerde winde vraagt om aan de ontwikkelingstaken van AEM te werken, kan het **procedurebegeleiding van de Vaardigheden van de Agent van 0} AEM van Adobe gebruiken in plaats van zich alleen op generische modelopleiding te baseren of wat het van uw bewaarplaats alleen kan afleiden.**
+Wanneer u een coderingsagent door een op AI-Gebaseerde winde vraagt om aan de ontwikkelingstaken van AEM te werken, kan het **procedurebegeleiding van de Vaardigheden van de Agent van 0&rbrace; AEM van Adobe gebruiken in plaats van zich alleen op generische modelopleiding te baseren of wat het van uw bewaarplaats alleen kan afleiden.**
 
-Adobe verstrekt de Vaardigheden van de Agent van AEM via [ Adobe Skills ](https://github.com/adobe/skills) bewaarplaats. Zie ook de [ AI-Gesteunde ontwikkeling ](../overview.md) voor hoe Adobe met AI-Gesteunde ontwikkeling helpt.
+Adobe verstrekt de Vaardigheden van de Agent van AEM via [&#x200B; Adobe Skills &#x200B;](https://github.com/adobe/skills) bewaarplaats. Zie ook de [&#x200B; AI-Gesteunde ontwikkeling &#x200B;](../overview.md) voor hoe Adobe met AI-Gesteunde ontwikkeling helpt.
 
-In dit leerprogramma, installeert u de vaardigheden op een lokale kloon van het [ Project van Plaatsen WKND ](https://github.com/adobe/aem-guides-wknd). U kunt dezelfde stappen gebruiken voor uw eigen AEM as a Cloud Service-project.
+In dit leerprogramma, installeert u de vaardigheden op een lokale kloon van het [&#x200B; Project van Plaatsen WKND &#x200B;](https://github.com/adobe/aem-guides-wknd). U kunt dezelfde stappen gebruiken voor uw eigen AEM as a Cloud Service-project.
 
 ## Vereisten
 
 Voor het volgen van deze zelfstudie hebt u het volgende nodig:
 
-- Een lokale kloon van het [ Project van de Plaatsen WKND ](https://github.com/adobe/aem-guides-wknd) of uw eigen project van AEM as a Cloud Service.
+- Een lokale kloon van het [&#x200B; Project van de Plaatsen WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) of uw eigen project van AEM as a Cloud Service.
 - Een IDE van AI-Aangedreven zoals Cursor, of Code van Visual Studio met Kopilot GitHub.
 
 ## AEM Agent-vaardigheden installeren
 
-Installeer de Vaardigheden van de Agent van AEM met het `npx` bevel (vereist [ Node.js ](https://nodejs.org/) zodat `npx` beschikbaar is). Voor andere installeer opties, bijvoorbeeld, de stoppen van de Code van Claude of de uitbreiding GitHub CLI, zie de [ sectie van de Installatie ](https://github.com/adobe/skills/tree/main#installation) in de bewaarplaats van de Vaardigheden van Adobe.
+Installeer de Vaardigheden van de Agent van AEM met het `npx` bevel (vereist [&#x200B; Node.js &#x200B;](https://nodejs.org/) zodat `npx` beschikbaar is). Voor andere installeer opties, bijvoorbeeld, de stoppen van de Code van Claude of de uitbreiding GitHub CLI, zie de [&#x200B; sectie van de Installatie &#x200B;](https://github.com/adobe/skills/tree/main#installation) in de bewaarplaats van de Vaardigheden van Adobe.
 
-1. Kloon het [ Project van Plaatsen WKND ](https://github.com/adobe/aem-guides-wknd) plaatselijk:
+1. Kloon het [&#x200B; Project van Plaatsen WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) plaatselijk:
 
    ```shell
    $ git clone https://github.com/adobe/aem-guides-wknd.git
    ```
 
 1. Open het gekloonde project in uw op AI-Gebaseerde winde (bijvoorbeeld, Cursor) en open de geïntegreerde terminal.
-   ![ open de terminal ](../assets/agent-skills/wknd-in-cursor-ide-open-terminal.png)
+   ![&#x200B; open de terminal &#x200B;](../assets/agent-skills/wknd-in-cursor-ide-open-terminal.png)
 
 1. Voer het volgende bevel in werking om de Vaardigheden van de Agent van AEM voor Cursor toe te voegen:
 
@@ -54,20 +54,20 @@ Installeer de Vaardigheden van de Agent van AEM met het `npx` bevel (vereist [ N
    $ npx skills add https://github.com/adobe/skills/tree/main/plugins/aem/cloud-service --agent cursor
    ```
 
-   Voor andere agententypes, zie de [ sectie van de Installatie ](https://github.com/adobe/skills/tree/main#installation) in de bewaarplaats van de Vaardigheden van Adobe.
+   Voor andere agententypes, zie de [&#x200B; sectie van de Installatie &#x200B;](https://github.com/adobe/skills/tree/main#installation) in de bewaarplaats van de Vaardigheden van Adobe.
 
 1. Kies bij de aanwijzing welke AEM Agent Skills u wilt installeren.
-   ![ Uitgezocht welke de Vaardigheden van de Agent van AEM ](../assets/agent-skills/select-aem-agent-skills-to-install.png) te installeren
+   ![&#x200B; Uitgezocht welke de Vaardigheden van de Agent van AEM &#x200B;](../assets/agent-skills/select-aem-agent-skills-to-install.png) te installeren
 
    Selecteer de **verzekeren-agenten-md** vaardigheid zodat kan het installatieprogramma **AGENTS.md** en **CLAUDE.md** dossiers bij de bewaarplaatshouder tot stand brengen. Die bootstrap vaardigheid inspecteert uw project, bijvoorbeeld, de wortel `pom.xml` en modules, en produceert op maat gemaakte agentenbegeleiding.
 
    Als **AGENTS.md** reeds bestaat, wordt het **niet** beschreven.
 
-1. Kies het installatiebereik. Voor deze analyse, is het **1} werkingsgebied van het Project {typisch zo vaardigheidsdossiers in de repo leven.**
-   ![ selecteer het installatiewerkingsgebied ](../assets/agent-skills/select-installation-scope.png)
+1. Kies het installatiebereik. Voor deze analyse, is het **1&rbrace; werkingsgebied van het Project &lbrace;typisch zo vaardigheidsdossiers in de repo leven.**
+   ![&#x200B; selecteer het installatiewerkingsgebied &#x200B;](../assets/agent-skills/select-installation-scope.png)
 
 1. Bevestig de installatie onder `.agents/skills` . U zou **SKILLS.md** en verwante verwijzing en activaomslagen moeten zien.
-   ![ herzie de geïnstalleerde vaardigheden ](../assets/agent-skills/review-installed-skills.png)
+   ![&#x200B; herzie de geïnstalleerde vaardigheden &#x200B;](../assets/agent-skills/review-installed-skills.png)
 
 1. Wanneer Adobe vaardigheden toevoegt of bijwerkt, gebruik CLI om, hen toe te voegen bij te werken, te verwijderen of te vermelden. Alle opdrachten weergeven:
 
@@ -75,7 +75,7 @@ Installeer de Vaardigheden van de Agent van AEM met het `npx` bevel (vereist [ N
    $ npx skills --help
    ```
 
-   ![ herzie de beschikbare vaardigheidsbevelen ](../assets/agent-skills/review-available-skills-commands.png)
+   ![&#x200B; herzie de beschikbare vaardigheidsbevelen &#x200B;](../assets/agent-skills/review-available-skills-commands.png)
 
 ## Gevallen gebruiken
 

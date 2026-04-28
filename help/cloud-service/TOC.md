@@ -70,7 +70,7 @@ ht-degree: 2%
    + [Niet-productiepijpleiding CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Activiteit](./cloud-manager/activity.md)
    + [Aangepaste domeinnamen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names){target=_blank}
-   + [ Inhoud herstelt ](./cloud-manager/content-restore.md)
+   + [&#x200B; Inhoud herstelt &#x200B;](./cloud-manager/content-restore.md)
    + Dev OPS{#devops}
       + [Code implementeren](./cloud-manager/devops/deploy-code.md)
       + [Projecten samenvoegen](./cloud-manager/devops/merge-projects.md)
@@ -129,7 +129,7 @@ ht-degree: 2%
       + [Basisprincipes van OSGi-configuraties](./developing/osgi-services/configurations.md)
       + [OSGi Configurations die OCD gebruiken](./developing/osgi-services/configurations-ocd.md)
    + Geavanceerd{#advanced}
-      + [ Caching de Varianten van de Pagina ](./developing/advanced/variant-caching.md)
+      + [&#x200B; Caching de Varianten van de Pagina &#x200B;](./developing/advanced/variant-caching.md)
       + [CSRF-beveiliging](./developing/advanced/csrf-protection.md)
       + [Aangepaste naamruimten](./developing/advanced/custom-namespaces.md)
       + [Sling-modellen parametereren op basis van HTML](./developing/advanced/sling-model-parameters.md)
@@ -191,7 +191,7 @@ ht-degree: 2%
    + [Aangepaste domeinnaam met door Adobe beheerde CDN](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)
    + [Aangepaste domeinnaam met CDN van klant](./content-delivery/custom-domain-names-with-customer-managed-cdn.md)
    + [Caching](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
-   + [ Adobe CDN - voorbij caching ](./content-delivery/adobe-cdn-beyond-caching.md)
+   + [&#x200B; Adobe CDN - voorbij caching &#x200B;](./content-delivery/adobe-cdn-beyond-caching.md)
    + [Aangepaste foutpagina&#39;s](./content-delivery/custom-error-pages.md)
    + [URL-omleidingen](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
 + Caching{#caching}

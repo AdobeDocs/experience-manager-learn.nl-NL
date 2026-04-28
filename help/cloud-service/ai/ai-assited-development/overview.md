@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Bij de AI-ondersteunde ontwikkeling wordt gebruik gemaakt van een IDE of coderingsagent die op AI werkt, samen met `AGENTS.md` , Agent Skills en MCP-servers, om kwalitatief hoogwaardige code te produceren die klaar is voor productie voor AEM as a Cloud Service-projecten.
 
-De hulpmiddelen zoals ](https://www.cursor.com/) Curseur [, [ Copilot GitHub in de Code van Visual Studio ](https://code.visualstudio.com/docs/copilot/overview), [ Claude Code ](https://code.claude.com/docs/en/overview), en gelijkaardige AI-Aangedreven IDEs en coderende agenten helpen op een paar zeer belangrijke manieren:
+De hulpmiddelen zoals [&#128279;](https://www.cursor.com/) Curseur , [&#x200B; Copilot GitHub in de Code van Visual Studio &#x200B;](https://code.visualstudio.com/docs/copilot/overview), [&#x200B; Claude Code &#x200B;](https://code.claude.com/docs/en/overview), en gelijkaardige AI-Aangedreven IDEs en coderende agenten helpen op een paar zeer belangrijke manieren:
 
 - **Snellere herhaling**: produceer of refactorcode van natuurlijke taalherinneringen die de gewenste eigenschap of de verandering beschrijven.
 - **het Leren hulp**: verklaar onbekende codewegen, configuratie, concepten, of beste praktijken wanneer ertoe aangezet.
@@ -43,21 +43,21 @@ Dit hiaat is waar _gestructureerde context_ (de Vaardigheden van de Agent en AGE
 
 Voor AEM as a Cloud Service-projecten biedt Adobe:
 
-- De Vaardigheden van de agent en AGENTS.md via [ Vaardigheden van Adobe voor AI Coding Agenten ](https://github.com/adobe/skills)
-- Lokale MCP servers voor AEM SDK en lokale Dispatcher via het ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3) portaal van de Distributie van de Software 0}[
-- Adobe-ontvangen servers van AEM MCP voor inhoud en de werkschema&#39;s van Cloud Manager van uw winde of praatjetoepassing - zie [ Servers MCP in AEM ](../mcp/overview.md)
+- De Vaardigheden van de agent en AGENTS.md via [&#x200B; Vaardigheden van Adobe voor AI Coding Agenten &#x200B;](https://github.com/adobe/skills)
+- Lokale MCP servers voor AEM SDK en lokale Dispatcher via het [&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3) portaal van de Distributie van de Software 0&rbrace;
+- Adobe-ontvangen servers van AEM MCP voor inhoud en de werkschema&#39;s van Cloud Manager van uw winde of praatjetoepassing - zie [&#x200B; Servers MCP in AEM &#x200B;](../mcp/overview.md)
 
 In de volgende secties wordt elk item samengevat. Gebruik de **secties van de Opstelling** en **Gevallen van het Gebruik** aan het eind van deze pagina voor installatie en analyses voor AI-bijgewoonde ontwikkeling.
 
 ## Wat de Vaardigheden van de Agent zijn
 
-De Vaardigheden van de agent zijn _procedurekennis of deskundigheid_ om coderingsagenten _te helpen echt werk betrouwbaar uitvoeren_. Voor meer informatie, zie de [ Vaardigheden van de Agent ](https://agentskills.io).
+De Vaardigheden van de agent zijn _procedurekennis of deskundigheid_ om coderingsagenten _te helpen echt werk betrouwbaar uitvoeren_. Voor meer informatie, zie de [&#x200B; Vaardigheden van de Agent &#x200B;](https://agentskills.io).
 
-Voor een project van AEM as a Cloud Service, zijn de Vaardigheden van de Agent beschikbaar in de [ Vaardigheden van Adobe voor AI Coding Agents ](https://github.com/adobe/skills) bewaarplaats.
+Voor een project van AEM as a Cloud Service, zijn de Vaardigheden van de Agent beschikbaar in de [&#x200B; Vaardigheden van Adobe voor AI Coding Agents &#x200B;](https://github.com/adobe/skills) bewaarplaats.
 
 ## Wat is AGENTS.md
 
-AGENTS.md verstrekt de _context en instructies_ om coderingsagenten _werk op uw project_ te helpen. Voor meer informatie, zie [ AGENTS.md ](https://agents.md/).
+AGENTS.md verstrekt de _context en instructies_ om coderingsagenten _werk op uw project_ te helpen. Voor meer informatie, zie [&#x200B; AGENTS.md &#x200B;](https://agents.md/).
 
 Voor een project van AEM as a Cloud Service, leidt de `ensure-agents-md` bootstrap vaardigheid **AGENTS.md** bij de bewaarplaatswortel **wanneer het** mist. De vaardigheid inspecteert uw project (bijvoorbeeld, de wortel `pom.xml` en modules) en produceert op maat gemaakte begeleiding in plaats van het gebruiken van een statisch dossier. Als **AGENTS.md** reeds bestaat, wordt het **niet** beschreven.
 
@@ -65,14 +65,14 @@ Nadat het bestand bestaat, kunt u het bewerken en zo meer context en instructies
 
 ## Wat zijn MCP-servers
 
-De servers MCP stellen hulpmiddelen en gegevens aan de coderende agent door het [ ModelProtocol van de Context ](https://modelcontextprotocol.io/) bloot, dat acties zoals het zuiveren, inspectie, uitvoering, en bevestiging van veranderingen steunt. Een server MCP kan op uw werkstation (**lokaal**) of als ontvangen dienst (**ver**) lopen.
+De servers MCP stellen hulpmiddelen en gegevens aan de coderende agent door het [&#x200B; ModelProtocol van de Context &#x200B;](https://modelcontextprotocol.io/) bloot, dat acties zoals het zuiveren, inspectie, uitvoering, en bevestiging van veranderingen steunt. Een server MCP kan op uw werkstation (**lokaal**) of als ontvangen dienst (**ver**) lopen.
 
-Voor **lokale ontwikkeling** tegen AEM SDK en Dispatcher, installeer deze **lokale servers MCP** van het [ portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3):
+Voor **lokale ontwikkeling** tegen AEM SDK en Dispatcher, installeer deze **lokale servers MCP** van het [&#x200B; portaal van de Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3):
 
-- **AEM Quickstart Lokale server MCP**: stelt levende runtime gegevens van een lokale instantie van AEM SDK bloot om het oplossen van problemen en ontwikkeling te steunen. Voor meer informatie, zie [ de Server van QuickStart MCP van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#aem-quickstart-mcp-server).
-- **de Lokale server MCP van Dispatcher**: Laat runtime bevestiging en inspectie van een lokale instantie van Dispatcher toe. Voor meer informatie, zie {de Server van 0} Dispatcher MCP ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#dispatcher-mcp-server).[
+- **AEM Quickstart Lokale server MCP**: stelt levende runtime gegevens van een lokale instantie van AEM SDK bloot om het oplossen van problemen en ontwikkeling te steunen. Voor meer informatie, zie [&#x200B; de Server van QuickStart MCP van AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#aem-quickstart-mcp-server).
+- **de Lokale server MCP van Dispatcher**: Laat runtime bevestiging en inspectie van een lokale instantie van Dispatcher toe. Voor meer informatie, zie {de Server van 0} Dispatcher MCP [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#dispatcher-mcp-server).
 
-Voor Adobe-ontvangen servers van AEM MCP (bijvoorbeeld, inhoud, read-only inhoud, en Cloud Manager), zie [ Servers MCP in AEM ](../mcp/overview.md).
+Voor Adobe-ontvangen servers van AEM MCP (bijvoorbeeld, inhoud, read-only inhoud, en Cloud Manager), zie [&#x200B; Servers MCP in AEM &#x200B;](../mcp/overview.md).
 
 ## Instellen
 

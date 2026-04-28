@@ -20,23 +20,23 @@ ht-degree: 0%
 
 # Componentontwikkeling met AEM Agent Skills
 
-Leer hoe te om een component van AEM te ontwikkelen gebruikend de Vaardigheden van de Agent van AEM als deel van [ AI-bijgewoonde ontwikkeling ](../overview.md).
+Leer hoe te om een component van AEM te ontwikkelen gebruikend de Vaardigheden van de Agent van AEM als deel van [&#x200B; AI-bijgewoonde ontwikkeling &#x200B;](../overview.md).
 
-In deze analyse, gebruikt u natuurlijke taal in een AI-Gerichte winde (bijvoorbeeld, Curseur) om a **component van de Banner van de Banner van 0} Promo in het [ Project van de Plaatsen WKND ](https://github.com/adobe/aem-guides-wknd) te ontwikkelen.** De coderingsagent past de `create-component` Vaardigheid van de Agent van AEM toe om de implementatie te produceren.
+In deze analyse, gebruikt u natuurlijke taal in een AI-Gerichte winde (bijvoorbeeld, Curseur) om a **component van de Banner van de Banner van 0&rbrace; Promo in het [&#x200B; Project van de Plaatsen WKND &#x200B;](https://github.com/adobe/aem-guides-wknd) te ontwikkelen.** De coderingsagent past de `create-component` Vaardigheid van de Agent van AEM toe om de implementatie te produceren.
 
 ## Vereisten
 
 Voor het volgen van deze zelfstudie hebt u het volgende nodig:
 
 - Een IDE van AI-Aangedreven zoals Cursor, of Code van Visual Studio met Kopilot GitHub.
-- Een lokale kloon van het [ Project van Plaatsen WKND ](https://github.com/adobe/aem-guides-wknd), gebouwd en opgesteld aan a _lokale AEM SDK_ instantie.
-- _de Vaardigheden van de Agent van AEM_ die in dat project worden geïnstalleerd. Als u dat nog niet hebt gedaan, voltooi [ de Vaardigheden van de Agent van AEM van de Opstelling ](../setup/agent-skills.md).
+- Een lokale kloon van het [&#x200B; Project van Plaatsen WKND &#x200B;](https://github.com/adobe/aem-guides-wknd), gebouwd en opgesteld aan a _lokale AEM SDK_ instantie.
+- _de Vaardigheden van de Agent van AEM_ die in dat project worden geïnstalleerd. Als u dat nog niet hebt gedaan, voltooi [&#x200B; de Vaardigheden van de Agent van AEM van de Opstelling &#x200B;](../setup/agent-skills.md).
 
 ## Onderdeelvereiste
 
 Laten we aannemen dat het WKND-team een promotiebanner op de homepage wil weergeven. De ontwerpreferentie ziet er als volgt uit:
 
-![ Verwijzing van het Ontwerp van de Banner van de Bevordering ](../assets/component-development/promo-banner-design-reference.png)
+![&#x200B; Verwijzing van het Ontwerp van de Banner van de Bevordering &#x200B;](../assets/component-development/promo-banner-design-reference.png)
 
 De auteurs moeten _etiket van de Promo_, _CTA etiket_, en _de verbindingsgebieden van CTA_ in de componentendialoog kunnen plaatsen.
 
@@ -45,7 +45,7 @@ De ontwerpverwijzing is een schermafbeelding die is verkregen via draadframe, mo
 ## De component ontwikkelen
 
 1. Open het WKND project in uw winde. Bevestig dat de Vaardigheden van de Agent van AEM aanwezig zijn (bijvoorbeeld, onder `.agents/skills`), dan een nieuw agentenpraatje begint.
-   ![ verifieer de Vaardigheden van de Agent van AEM geïnstalleerd zijn ](../assets/component-development/verify-aem-agent-skills-installed.png)
+   ![&#x200B; verifieer de Vaardigheden van de Agent van AEM geïnstalleerd zijn &#x200B;](../assets/component-development/verify-aem-agent-skills-installed.png)
 
 1. Voer een soortgelijke vraag in. Bevestig het het schermschot van het componentenontwerp (dat via draadframe wordt verkregen, mockup of statische prijsverhoging vangt) als uw winde beelden in praatje steunt:
 
@@ -60,11 +60,11 @@ De ontwerpverwijzing is een schermafbeelding die is verkregen via draadframe, mo
    ```
 
 1. De coderingsagent gebruikt de `create-component` Vaardigheid van de Agent van AEM om de component te produceren. Bekijk de voorgestelde HTML-, Sling-model-, dialoogvenster-XML- en verwante bestanden.
-   ![ herzie de geproduceerde code ](../assets/component-development/review-generated-code.png)
+   ![&#x200B; herzie de geproduceerde code &#x200B;](../assets/component-development/review-generated-code.png)
 
 >[!TIP]
 >
->In plaats van het verstrekken van de ontwerpverwijzing als screenshot, kunt u een ontwerp van het Cijfer via de [ server MCP van het Cijfer ](https://www.figma.com/mcp-catalog/) ook verstrekken om de component te produceren. De `create-component` vaardigheid steunt de [ het ontwerpintegratie van Figma ](https://github.com/adobe/skills/blob/main/plugins/aem/cloud-service/skills/create-component/references/figma-design-rules.md)
+>In plaats van het verstrekken van de ontwerpverwijzing als screenshot, kunt u een ontwerp van het Cijfer via de [&#x200B; server MCP van het Cijfer &#x200B;](https://www.figma.com/mcp-catalog/) ook verstrekken om de component te produceren. De `create-component` vaardigheid steunt de [&#x200B; het ontwerpintegratie van Figma &#x200B;](https://github.com/adobe/skills/blob/main/plugins/aem/cloud-service/skills/create-component/references/figma-design-rules.md)
 
 
 1. Implementeer de component in de lokale AEM-instantie/SDK.
@@ -74,10 +74,10 @@ De ontwerpverwijzing is een schermafbeelding die is verkregen via draadframe, mo
    ```
 
 1. Plaats in de ontwerpfase de Banner Promo op de startpagina en valideer het gedrag. Verfijn de implementatie als deze nog steeds afwijkt van de ontwerpreferentie.
-   ![ Auteur de component van de Banner van de Bevordering ](../assets/component-development/author-promo-banner-component.png)
+   ![&#x200B; Auteur de component van de Banner van de Bevordering &#x200B;](../assets/component-development/author-promo-banner-component.png)
 
 1. Controleer de nieuwe component door de pagina of de weergave te publiceren zoals deze is gepubliceerd.
-   ![ herzie de pas gecreëerde component ](../assets/component-development/review-newly-created-component.png)
+   ![&#x200B; herzie de pas gecreëerde component &#x200B;](../assets/component-development/review-newly-created-component.png)
 
 Gefeliciteerd. U hebt met succes een nieuwe component van AEM gecreeerd gebruikend de Vaardigheden van de Agent van AEM als deel van AI-bijgewoonde ontwikkeling.
 
@@ -91,17 +91,17 @@ Deze analyse gebruikt een eenvoudige component. Dezelfde `create-component` vaar
 
 Lees voor veldtypen, dialoogvensterpatronen, figuurregels en voorbeelden `SKILL.md` in de installatiemap voor vaardigheden, bijvoorbeeld `.agents/skills/create-component/SKILL.md` .
 
-Voor een overzicht, installatiepaden door winde, en het oplossen van problemen, zie {de Agent van de Ontwikkeling van de Component van 0} AEM ](https://github.com/adobe/skills/blob/main/plugins/aem/cloud-service/skills/create-component/README.md) in de bewaarplaats van de Vaardigheden van Adobe.[
+Voor een overzicht, installatiepaden door winde, en het oplossen van problemen, zie {de Agent van de Ontwikkeling van de Component van 0} AEM [&#128279;](https://github.com/adobe/skills/blob/main/plugins/aem/cloud-service/skills/create-component/README.md) in de bewaarplaats van de Vaardigheden van Adobe.
 
 ## AGENTS.md
 
 Alvorens wij samenvatten, begrijpen wij hoe AGENTS.md als deel van het creëren van de component werd geproduceerd.
 
-Voor de projecten van AEM as a Cloud Service, leidt de `ensure-agents-md` bootstrap vaardigheid (die tijdens [ de Vaardigheden van de Agent van AEM van de Opstelling ](../setup/agent-skills.md) wordt geselecteerd) `AGENTS.md` bij de bewaarplaatswortel wanneer het **** mist. Het gebruikt wat het uit uw projectlay-out leert.
+Voor de projecten van AEM as a Cloud Service, leidt de `ensure-agents-md` bootstrap vaardigheid (die tijdens [&#x200B; de Vaardigheden van de Agent van AEM van de Opstelling &#x200B;](../setup/agent-skills.md) wordt geselecteerd) `AGENTS.md` bij de bewaarplaatswortel wanneer het **&#x200B;**&#x200B;mist. Het gebruikt wat het uit uw projectlay-out leert.
 
-Het **** overschrijft geen bestaand `AGENTS.md` dossier.
+Het **&#x200B;**&#x200B;overschrijft geen bestaand `AGENTS.md` dossier.
 
-![ de verwezenlijking van AGENTS.md ](../assets/component-development/agents-md-creation.png)
+![&#x200B; de verwezenlijking van AGENTS.md &#x200B;](../assets/component-development/agents-md-creation.png)
 
 ## Aanvullende bronnen
 
