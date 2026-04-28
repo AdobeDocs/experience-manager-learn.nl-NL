@@ -33,7 +33,7 @@ Learn how multiple views in the SPA can be supported by mapping to AEM Pages wit
 
 ## Wat u gaat maken
 
-Dit hoofdstuk zal navigatie aan een KUUROORD in AEM toevoegen. Het navigatiemenu wordt gedreven door de de paginahiërarchie van AEM en zal gebruik maken van het model JSON dat door de [&#x200B; Component van de Kern van de Navigatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html) wordt verstrekt.
+Dit hoofdstuk zal navigatie aan een KUUROORD in AEM toevoegen. Het navigatiemenu wordt gedreven door de de paginahiërarchie van AEM en zal gebruik maken van het model JSON dat door de [&#x200B; Component van de Kern van de Navigatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=nl-NL) wordt verstrekt.
 
 ![&#x200B; toegevoegde Navigatie &#x200B;](assets/navigation-routing/navigation-added.png)
 

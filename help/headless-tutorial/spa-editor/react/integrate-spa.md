@@ -54,13 +54,13 @@ De `ui.frontend` module is a [&#x200B; webpack &#x200B;](https://webpack.js.org/
 
 *A high-level afbeelding van de integratie van het KUUROORD.*
 
-De extra informatie over het front-end bouwt kan [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html) worden gevonden.
+De extra informatie over het front-end bouwt kan [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=nl-NL) worden gevonden.
 
 ## Inspecteer de integratie van SPA {#inspect-spa-integration}
 
-Daarna, inspecteer de `ui.frontend` module om het KUUROORD te begrijpen dat door het [&#x200B; archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html) auto-geproduceerd is.
+Daarna, inspecteer de `ui.frontend` module om het KUUROORD te begrijpen dat door het [&#x200B; archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=nl-NL) auto-geproduceerd is.
 
-1. Open uw AEM-project in de IDE van uw keuze. Dit leerprogramma zal [&#x200B; winde van de Code van Visual Studio &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code) gebruiken.
+1. Open uw AEM-project in de IDE van uw keuze. Dit leerprogramma zal [&#x200B; winde van de Code van Visual Studio &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#microsoft-visual-studio-code) gebruiken.
 
    ![&#x200B; VSCode - AEM WKND Project van het KUUROORD &#x200B;](./assets/integrate-spa/vscode-ide-openproject.png)
 
@@ -80,7 +80,7 @@ Daarna, inspecteer de `ui.frontend` module om het KUUROORD te begrijpen dat door
    "@adobe/aem-core-components-react-spa": "1.1.7",
    ```
 
-   De bovengenoemde modules maken omhoog de [&#x200B; Redacteur JS SDK van AEM SPA &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html) en verstrekken de functionaliteit om het mogelijk te maken om de Componenten van het KUUROORD aan de Componenten van AEM in kaart te brengen.
+   De bovengenoemde modules maken omhoog de [&#x200B; Redacteur JS SDK van AEM SPA &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html?lang=nl-NL) en verstrekken de functionaliteit om het mogelijk te maken om de Componenten van het KUUROORD aan de Componenten van AEM in kaart te brengen.
 
    Ook inbegrepen zijn [&#x200B; de Componenten van AEM WCM - Reageer de implementatie van de Kern &#x200B;](https://github.com/adobe/aem-react-core-wcm-components-base) en [&#x200B; componenten WCM van AEM - de redacteur van de SPA - Reageer de implementatie van de Kern &#x200B;](https://github.com/adobe/aem-react-core-wcm-components-spa). Dit is een set herbruikbare UI-componenten die worden toegewezen aan AEM-componenten die buiten de box vallen. Deze zijn ontworpen om ongewijzigd te worden gebruikt en worden vormgegeven om aan de behoeften van uw project te voldoen.
 
