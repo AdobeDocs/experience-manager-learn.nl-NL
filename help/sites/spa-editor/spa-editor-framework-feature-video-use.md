@@ -12,9 +12,9 @@ doc-type: Feature Video
 exl-id: 645b6986-830f-4409-b46c-ddf15c33e84c
 duration: 473
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -39,8 +39,8 @@ De Redacteur van het KUUROORD van AEM verstrekt auteurs de capaciteit om inhoud 
 
 De implementatie WKND SPA verleent slechts steun voor AEM 6.4.8+, AEM 6.5.5+ en AEM as a Cloud Service.
 
-De download en installeert het aangewezen [&#x200B; pakket van het KND SPA &#x200B;](https://github.com/adobe/aem-guides-wknd-spa/releases) dat op uw versie van AEM wordt gebaseerd. Er zijn afzonderlijke versies voor **Reageren**.
+De download en installeert het aangewezen [ pakket van het KND SPA ](https://github.com/adobe/aem-guides-wknd-spa/releases) dat op uw versie van AEM wordt gebaseerd. Er zijn afzonderlijke versies voor **Reageren**.
 
 Voor een gedetailleerde zelfstudie bij het ontwikkelen met de Redacteur van het KUUROORD zie:
 
-* [&#x200B; Begonnen het Worden met de Redacteur van AEM SPA en Reageer &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=nl-NL)
+* [Aan de slag met de AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)

@@ -14,7 +14,7 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: 885dd083-79f1-49c4-88cc-7594aaa3fdbf
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 0%
@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Zie hoe u met Content AI snel en efficiënt aantrekkelijke inhoudvariaties kunt maken.
 
->[!VIDEO](https://video.tv.adobe.com/v/3461883/?captions=dut&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3459227/?learn=on&enablevpops)

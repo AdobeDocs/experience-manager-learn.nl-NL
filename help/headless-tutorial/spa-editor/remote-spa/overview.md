@@ -12,9 +12,9 @@ doc-type: Tutorial
 exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
 duration: 294
 hide: true
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '667'
 ht-degree: 1%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 1%
 
 Welkom bij de meerdelige zelfstudie voor ontwikkelaars die een bestaande React-based (of Next.js) Verre SPAs met editable AEM inhoud willen uitbreiden gebruikend de Redacteur van AEM SPA.
 
-Dit leerprogramma bouwt op [&#x200B; WKND GraphQL App &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL) voort, een React app die de inhoud van het Fragment van de Inhoud van AEM over AEM GraphQL APIs verbruikt, nochtans verstrekt geen in-context authoring van de inhoud van het KUUROORD.
+Dit leerprogramma bouwt op [ WKND GraphQL App ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) voort, een React app die de inhoud van het Fragment van de Inhoud van AEM over AEM GraphQL APIs verbruikt, nochtans verstrekt geen in-context authoring van de inhoud van het KUUROORD.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444853?captions=dut&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
 ## Over de zelfstudie
 
@@ -42,23 +42,23 @@ Het leerprogramma wordt ontworpen om met **AEM as a Cloud Service** te werken en
 
 ## Laatste code
 
-+ Het uitgangspunt van de code van dit leerprogramma kan op [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa-tutorial) in de `remote-spa-tutorial` omslag worden gevonden.
++ Het uitgangspunt van de code van dit leerprogramma kan op [ GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa-tutorial) in de `remote-spa-tutorial` omslag worden gevonden.
 
 ## Vereisten
 
 Voor deze zelfstudie is het volgende vereist:
 
-+ [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL)
-+ [&#x200B; Node.js v18 &#x200B;](https://nodejs.org/en/)
-+ [&#x200B; Java™ 11 &#x200B;](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-+ [&#x200B; Gemaakt 3.6+ &#x200B;](https://maven.apache.org/)
-+ [&#x200B; Git &#x200B;](https://git-scm.com/downloads)
-+ [&#x200B; aem-guides-wknd.all-2.1.0.zip of groter &#x200B;](https://github.com/adobe/aem-guides-wknd/releases)
-+ [&#x200B; aem-guides-wknd-grafisch broncode &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main)
++ [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en)
++ [Node.js v18](https://nodejs.org/en/)
++ [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
++ [Maven 3.6+](https://maven.apache.org/)
++ [Git](https://git-scm.com/downloads)
++ [aem-guides-wknd.all-2.1.0.zip of hoger](https://github.com/adobe/aem-guides-wknd/releases)
++ [aem-guides-wknd-graphql broncode](https://github.com/adobe/aem-guides-wknd-graphql/tree/main)
 
 Deze zelfstudie gaat uit van:
 
-+ [&#x200B; Microsoft® Visual Studio Code &#x200B;](https://visualstudio.microsoft.com/) als winde
++ [ Microsoft® Visual Studio Code ](https://visualstudio.microsoft.com/) als winde
 + Een werkmap van `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial`
 + AEM SDK uitvoeren als een auteurservice op `http://localhost:4502`
 + AEM SDK uitvoeren met lokale `admin` account met wachtwoord `admin`
@@ -66,15 +66,15 @@ Deze zelfstudie gaat uit van:
 
 >[!NOTE]
 >
-> **Heb hulp bij vestiging uw lokale ontwikkelomgeving nodig?** Controle uit de [&#x200B; volgende gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL).
+> **Hulp van de behoefte bij vestiging uw lokale ontwikkelomgeving?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
-## &#x200B;1. Vorm AEM for SPA Editor
+## &#x200B;1. AEM for SPA Editor configureren
 
 De configuraties van AEM worden vereist om het KUUROORD met de Redacteur van AEM te integreren SPA. Deze configuraties worden beheerd en geïmplementeerd via een AEM-project. In dit hoofdstuk, leer over welke configuraties noodzakelijk zijn en hoe te om hen te bepalen.
 
 + [Leer hoe te om AEM voor de Redacteur van het KUUROORD te vormen](./aem-configure.md)
 
-## &#x200B;2. Bootstrap de SPA
+## 2. Bootstrap the SPA
 
 Voor de Redacteur van AEM SPA om een KUUROORD in het auteurskader te integreren, moeten een paar toevoegingen aan het KUUROORD worden gemaakt.
 
@@ -100,4 +100,4 @@ Ten slotte, gebruik de concepten die in vorige hoofdstukken aan dynamische route
 
 ## Aanvullende bronnen
 
-+ [&#x200B; AEM SPA React Editable Componenten &#x200B;](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
++ [ AEM SPA React Editable Componenten ](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
